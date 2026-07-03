@@ -330,9 +330,9 @@ export function QuestoesPage() {
             )}
           </div>
         </>
-      ) : atual ? (
+      ) : atual && !ehMCQ(atual) ? (
         <FlashcardPlayer
-          card={atual}
+          card={atual as any}
           aoAvaliar={(nota) => avaliarFlash(atual.id, nota)}
           numero={indice + 1}
           total={itens.length}
