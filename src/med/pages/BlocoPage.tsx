@@ -147,7 +147,12 @@ export function BlocoPage() {
         <div style={{ display: 'flex', gap: 8, marginBottom: 12, flexWrap: 'wrap', alignItems: 'center' }}>
           <Badge cor="var(--color-accent)">{b.metadata.disciplina}</Badge>
           {b.metadata.nivel && <Badge cor="var(--color-accent-dim)">{b.metadata.nivel}</Badge>}
-          <span style={{ fontSize: 11, color: 'var(--color-text-muted)' }}>{b.resumo_id}</span>
+          {b.metadata.tempo_leitura_minutos ? (
+            <span style={{ fontSize: 11, color: 'var(--color-text-muted)' }}>
+              {b.metadata.tempo_leitura_minutos} min de leitura
+            </span>
+          ) : null}
+          <span style={{ fontSize: 11, color: 'var(--color-text-faint)' }}>{b.resumo_id}</span>
         </div>
         <h1 style={{ margin: '0 0 8px', fontSize: 30, fontWeight: 700, color: 'var(--color-text-primary)', lineHeight: 1.3 }}>
           {b.metadata.titulo}
@@ -162,9 +167,14 @@ export function BlocoPage() {
         </p>
       </header>
 
-      {/* Modo Palpite — a inversão pedagógica */}
+      {/* Modo Palpite — a inversão pedagógica (a pergunta antes do nome) */}
       {temPalpite && palpite && (
-        <ModoPalpite pergunta={palpite.pergunta} dica={palpite.dica} onRevelar={revelar} />
+        <>
+          <p style={{ margin: '0 0 10px', fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--color-accent)' }}>
+            A pergunta primeiro
+          </p>
+          <ModoPalpite pergunta={palpite.pergunta} dica={palpite.dica} onRevelar={revelar} />
+        </>
       )}
 
       {/* Enfermaria de Sanguessugas — bloco resiste ao SRS repetidamente */}

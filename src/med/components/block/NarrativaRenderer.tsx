@@ -23,15 +23,30 @@ function Secao({ titulo }: { titulo: string }) {
   return (
     <h2
       style={{
-        fontSize: 17,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 12,
+        fontSize: 18,
         fontWeight: 700,
         color: 'var(--color-text-primary)',
-        marginTop: '2.5rem',
-        marginBottom: '1rem',
-        paddingBottom: 6,
+        marginTop: '2.75rem',
+        marginBottom: '1.25rem',
+        paddingBottom: 10,
         borderBottom: '1px solid var(--color-border)',
       }}
     >
+      {/* Nó da espinha — a progressão viva do bloco (bioluminescência, estático p/ performance) */}
+      <span
+        aria-hidden="true"
+        style={{
+          width: 10,
+          height: 10,
+          minWidth: 10,
+          borderRadius: '50%',
+          background: 'var(--color-accent)',
+          boxShadow: '0 0 0 4px var(--color-accent-glow)',
+        }}
+      />
       {titulo}
     </h2>
   )
@@ -61,19 +76,23 @@ function Highlight({ conteudo }: { conteudo: string }) {
   return (
     <div
       style={{
+        display: 'flex',
+        gap: 12,
+        alignItems: 'flex-start',
         background: 'var(--color-accent-glow)',
-        border: '1px solid var(--color-accent-dim)',
-        borderRadius: 'var(--radius-md)',
-        padding: '14px 18px',
-        margin: '1.5rem 0',
-        fontSize: 14,
+        border: '1px solid var(--color-border-accent)',
+        borderLeft: '3px solid var(--color-accent)',
+        borderRadius: 'var(--radius-lg)',
+        padding: '16px 20px',
+        margin: '1.75rem 0',
+        fontSize: 15,
         color: 'var(--color-text-primary)',
         fontWeight: 500,
-        lineHeight: 1.6,
+        lineHeight: 1.65,
       }}
     >
-      <span style={{ color: 'var(--color-accent)', marginRight: 8 }}>✦</span>
-      {conteudo}
+      <span aria-hidden="true" style={{ color: 'var(--color-accent)', fontSize: 18, flexShrink: 0, marginTop: 1 }}>✦</span>
+      <span>{conteudo}</span>
     </div>
   )
 }
