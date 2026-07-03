@@ -1,0 +1,1741 @@
+{
+  "disciplina_id": "mi1",
+  "disciplina_nome": "Medicina Interna I",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s7-mi1-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "modulos": {
+      "10": "Doença Reumática e Febre Reumática",
+      "11": "Endocardite Infecciosa",
+      "12": "Doenças da Aorta e Aneurismas",
+      "13": "Doença Arterial Obstrutiva Periférica (DAOP)",
+      "14": "Doença Venosa: Trombose Venosa Profunda e Tromboembolismo Pulmonar",
+      "15": "Doença Pericárdica (integrada ao eixo cardiovascular clínico)",
+      "00": "Fundamentos: raiz + o método da clínica médica (problema clínico -> síndrome -> fisiopatologia -> diagnóstico -> conduta) + integração com S4/S5",
+      "01": "Semiologia Cardiovascular Aplicada (revisão integrada: dor torácica, dispneia, edema, sopros, ECG, biomarcadores) — ponte S4/S5",
+      "02": "Aterosclerose e Fatores de Risco Cardiovascular (o solo comum das doenças cardiovasculares)",
+      "03": "Hipertensão Arterial Sistêmica (HAS)",
+      "04": "Dislipidemia e Risco Cardiovascular",
+      "05": "Doença Arterial Coronariana (Angina Estável e Síndromes Coronarianas Agudas)",
+      "06": "Insuficiência Cardíaca",
+      "07": "Arritmias (Fibrilação Atrial, Bloqueios, Taquiarritmias Ventriculares)",
+      "08": "Valvopatias",
+      "09": "Cardiomiopatias"
+    },
+    "lente_da_disciplina": "problema/síndrome clínica -> fisiopatologia -> apresentação clínica -> diagnóstico/exames -> conduta/tratamento. Cada doença parte do PROBLEMA CLÍNICO real (o que o paciente sente/traz), nunca do nome. Integra fisiopatologia (S4-S5) e farmacologia clínica (S5).",
+    "criterio_de_folha": "Nó é folha quando sustenta as 8 etapas E >=1 flashcard contrafactual/clínico legítimo. Doença cujo fisiopatologia + clínica + diagnóstico + conduta têm peso próprio vira visão_geral com folhas por lente. Se não sustentar as 8 etapas, vira seção do pai.",
+    "profundidade": "campo profundidade = profundidade na árvore (raiz da disciplina = 1).",
+    "nota_curriculo": "O currículo oficial de mi1 (Cap. 6, Disc. 7.1) é Cardiologia + Doenças Vasculares. Endocrinologia/reumatologia estão em mi2/mi3. Este mapa segue o currículo oficial e aprofunda cada doença ao nível-folha do padrão histologia."
+  },
+  "blocos": [
+    {
+      "id": "s7-mi1-00-000",
+      "titulo": "Medicina Interna I — Pensar a Doença do Problema para o Nome",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Por que a clínica raciocina do sintoma e do mecanismo até a conduta",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia",
+        "etimologia"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s7-mi1-00-001",
+      "titulo": "O Método Clínico — Da Queixa ao Diagnóstico e à Conduta",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "visao_geral",
+      "escopo": "Cadeia problema -> síndrome -> fisiopatologia -> diagnóstico -> tratamento como coluna da disciplina",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-00-002",
+      "titulo": "Sintoma, Sinal, Síndrome e Doença — Quatro Níveis de Abstração",
+      "no_pai_id": "s7-mi1-00-001",
+      "nivel": "tema",
+      "escopo": "Distinção entre o que o paciente sente, o observado, o padrão e a entidade",
+      "lentes": [
+        "raciocinio_clinico",
+        "etimologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-00-003",
+      "titulo": "Fatores de Risco, Prevenção Primária e Secundária no Coração",
+      "no_pai_id": "s7-mi1-00-001",
+      "nivel": "tema",
+      "escopo": "A lógica de agir antes e depois do evento; base da cardiologia preventiva",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-01-000",
+      "titulo": "Semiologia Cardiovascular Aplicada",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "As ferramentas semiológicas e complementares que traduzem sintoma em mecanismo cardiovascular",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-01-001",
+      "titulo": "Panorama — Como o Coração Fala Quando Adoece",
+      "no_pai_id": "s7-mi1-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Os grandes sintomas cardiovasculares e o que cada um denuncia",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-01-002",
+      "titulo": "Dor Torácica — Anginosa, Pleurítica, Aórtica e Não Cardíaca",
+      "no_pai_id": "s7-mi1-01-000",
+      "nivel": "folha",
+      "escopo": "Como diferenciar a origem da dor no peito pelo caráter, gatilho e alívio",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-01-003",
+      "titulo": "Dispneia Cardíaca — Esforço, Ortopneia e Dispneia Paroxística Noturna",
+      "no_pai_id": "s7-mi1-01-000",
+      "nivel": "folha",
+      "escopo": "Por que o coração falho gera falta de ar e como o padrão a caracteriza",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-01-004",
+      "titulo": "Edema, Turgência Jugular e Sinais de Congestão",
+      "no_pai_id": "s7-mi1-01-000",
+      "nivel": "folha",
+      "escopo": "A semiologia da retenção volêmica e da pressão venosa elevada",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-01-005",
+      "titulo": "Palpitações e Síncope — O Sintoma das Arritmias",
+      "no_pai_id": "s7-mi1-01-000",
+      "nivel": "folha",
+      "escopo": "Como a queixa aponta para distúrbio de ritmo ou baixo débito súbito",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-01-006",
+      "titulo": "Ausculta Cardíaca — Bulhas, Sopros e Ritmos de Galope",
+      "no_pai_id": "s7-mi1-01-000",
+      "nivel": "folha",
+      "escopo": "O que cada som revela sobre valvas, ventrículos e fluxo",
+      "lentes": [
+        "apresentacao_clinica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-01-007",
+      "titulo": "Eletrocardiograma — A Leitura Sistemática do Traçado",
+      "no_pai_id": "s7-mi1-01-000",
+      "nivel": "folha",
+      "escopo": "Ritmo, eixo, ondas e intervalos; como o ECG lê a eletrofisiologia",
+      "lentes": [
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-01-008",
+      "titulo": "Biomarcadores Cardíacos — Troponina, BNP e a Bioquímica do Dano",
+      "no_pai_id": "s7-mi1-01-000",
+      "nivel": "folha",
+      "escopo": "O que a troponina e os peptídeos natriuréticos medem e quando pedir",
+      "lentes": [
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-01-009",
+      "titulo": "Ecocardiograma e Exames de Imagem Cardíaca",
+      "no_pai_id": "s7-mi1-01-000",
+      "nivel": "folha",
+      "escopo": "Como o eco, a cintilografia e a angiotomografia mostram função e anatomia",
+      "lentes": [
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-02-000",
+      "titulo": "Aterosclerose e Fatores de Risco Cardiovascular",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "O processo comum que subjaz coronariopatia, DAOP, AVC e aneurismas",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-02-001",
+      "titulo": "Aterosclerose — Visão Geral do Solo Comum",
+      "no_pai_id": "s7-mi1-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que uma única doença de parede arterial gera tantas síndromes",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-02-002",
+      "titulo": "Disfunção Endotelial — O Primeiro Passo da Placa",
+      "no_pai_id": "s7-mi1-02-000",
+      "nivel": "folha",
+      "escopo": "Como a agressão ao endotélio inicia a cascata aterosclerótica",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-02-003",
+      "titulo": "Formação da Placa Ateromatosa — Da Estria Gordurosa à Placa Madura",
+      "no_pai_id": "s7-mi1-02-000",
+      "nivel": "folha",
+      "escopo": "LDL oxidado, macrófagos, células espumosas e capa fibrosa",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-02-004",
+      "titulo": "Placa Estável vs Instável — Por Que Umas Rompem",
+      "no_pai_id": "s7-mi1-02-000",
+      "nivel": "folha",
+      "escopo": "Capa fina, núcleo lipídico e inflamação como determinantes de ruptura",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-02-005",
+      "titulo": "Fatores de Risco Não Modificáveis — Idade, Sexo e Genética",
+      "no_pai_id": "s7-mi1-02-000",
+      "nivel": "folha",
+      "escopo": "O que não se muda e por que ainda importa na estratificação",
+      "lentes": [
+        "raciocinio_clinico",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-02-006",
+      "titulo": "Fatores de Risco Modificáveis — Tabagismo, Sedentarismo, Dieta",
+      "no_pai_id": "s7-mi1-02-000",
+      "nivel": "folha",
+      "escopo": "Os alvos onde a intervenção reduz eventos",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-02-007",
+      "titulo": "Estratificação de Risco Cardiovascular — Escores e Decisão",
+      "no_pai_id": "s7-mi1-02-000",
+      "nivel": "folha",
+      "escopo": "Como escores (Framingham, ASCVD) traduzem fatores em decisão de tratar",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-000",
+      "titulo": "Hipertensão Arterial Sistêmica (HAS)",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "A doença crônica mais prevalente do sistema cardiovascular",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-03-001",
+      "titulo": "HAS — Visão Geral do Inimigo Silencioso",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que uma pressão cronicamente elevada destrói órgãos sem sintoma",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-03-002",
+      "titulo": "Determinantes da Pressão Arterial — Débito Cardíaco e Resistência",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "A equação PA = DC x RVP como base para entender e tratar",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-003",
+      "titulo": "Sistema Renina-Angiotensina-Aldosterona na Gênese da HAS",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "Como o SRAA regula volume e tônus e por que é alvo terapêutico",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-004",
+      "titulo": "HAS Primária (Essencial) — Fisiopatologia Multifatorial",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "Genética, sódio, sistema nervoso simpático e envelhecimento vascular",
+      "lentes": [
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-005",
+      "titulo": "HAS Secundária — Quando Suspeitar e Rastrear",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "Causas renais, endócrinas e vasculares; pistas que quebram o padrão essencial",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-006",
+      "titulo": "Diagnóstico e Classificação da HAS — Medida, MAPA e MRPA",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "Como confirmar HAS, evitar jaleco branco e classificar por estágios",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-007",
+      "titulo": "Lesão de Órgão-Alvo — Coração, Rim, Retina e Cérebro",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "Como a HAS lesa cada órgão e por que rastrear o dano silencioso",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-008",
+      "titulo": "Tratamento Não Farmacológico da HAS — Mudança de Estilo de Vida",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "Sódio, peso, álcool, exercício e dieta DASH como primeira linha",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-009",
+      "titulo": "Tratamento Farmacológico da HAS — As Classes e Como Escolher",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "Diuréticos, IECA/BRA, BCC, betabloqueadores; lógica da combinação",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-010",
+      "titulo": "HAS Resistente — Definição, Investigação e Manejo",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "PA não controlada com três drogas; adesão, secundárias e espironolactona",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-03-011",
+      "titulo": "Urgência e Emergência Hipertensiva",
+      "no_pai_id": "s7-mi1-03-000",
+      "nivel": "folha",
+      "escopo": "A distinção crucial pela lesão de órgão-alvo aguda e a velocidade de redução",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-04-000",
+      "titulo": "Dislipidemia e Risco Cardiovascular",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "O metabolismo lipídico como combustível da aterosclerose e alvo de tratamento",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-04-001",
+      "titulo": "Dislipidemia — Visão Geral do Colesterol como Fator de Risco",
+      "no_pai_id": "s7-mi1-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que colesterol circulante vira placa e por que baixá-lo salva vidas",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-04-002",
+      "titulo": "Metabolismo das Lipoproteínas — LDL, HDL, VLDL e Triglicérides",
+      "no_pai_id": "s7-mi1-04-000",
+      "nivel": "folha",
+      "escopo": "As vias exógena, endógena e reversa que transportam lipídios",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-04-003",
+      "titulo": "Classificação das Dislipidemias e a Hipercolesterolemia Familiar",
+      "no_pai_id": "s7-mi1-04-000",
+      "nivel": "folha",
+      "escopo": "Padrões laboratoriais e a causa genética que exige tratamento precoce",
+      "lentes": [
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-04-004",
+      "titulo": "Metas de LDL por Risco e Estatinas",
+      "no_pai_id": "s7-mi1-04-000",
+      "nivel": "folha",
+      "escopo": "Como o risco define o alvo e por que a estatina é a base",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-04-005",
+      "titulo": "Terapias Além da Estatina — Ezetimiba, iPCSK9 e Hipertrigliceridemia",
+      "no_pai_id": "s7-mi1-04-000",
+      "nivel": "folha",
+      "escopo": "Quando somar drogas e como manejar triglicérides muito altos",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-000",
+      "titulo": "Doença Arterial Coronariana",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "O desequilíbrio entre oferta e demanda de oxigênio no miocárdio",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-05-001",
+      "titulo": "Isquemia Miocárdica — Visão Geral do Desequilíbrio Oferta-Demanda",
+      "no_pai_id": "s7-mi1-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que o coronariano sente dor: o miocárdio sem oxigênio suficiente",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-05-002",
+      "titulo": "Circulação Coronariana e Reserva de Fluxo",
+      "no_pai_id": "s7-mi1-05-000",
+      "nivel": "folha",
+      "escopo": "Como o coração se irriga e por que a estenose limita a demanda de esforço",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-010",
+      "titulo": "Angina Estável — Visão Geral",
+      "no_pai_id": "s7-mi1-05-000",
+      "nivel": "visao_geral",
+      "escopo": "A dor previsível do esforço por estenose fixa",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-05-011",
+      "titulo": "Fisiopatologia da Angina Estável — Estenose Fixa e Limiar de Isquemia",
+      "no_pai_id": "s7-mi1-05-010",
+      "nivel": "folha",
+      "escopo": "Por que a dor aparece no esforço e cede no repouso",
+      "lentes": [
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-012",
+      "titulo": "Apresentação e Classificação da Angina (CCS)",
+      "no_pai_id": "s7-mi1-05-010",
+      "nivel": "folha",
+      "escopo": "Características típicas, equivalentes anginosos e graduação funcional",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-013",
+      "titulo": "Diagnóstico da Angina Estável — Testes de Isquemia e Coronariografia",
+      "no_pai_id": "s7-mi1-05-010",
+      "nivel": "folha",
+      "escopo": "Teste ergométrico, cintilografia, angioTC e cateterismo; probabilidade pré-teste",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-014",
+      "titulo": "Tratamento da Angina Estável — Fármacos Antianginosos e Prevenção",
+      "no_pai_id": "s7-mi1-05-010",
+      "nivel": "folha",
+      "escopo": "Nitratos, betabloqueador, BCC; antiplaquetário e estatina que mudam prognóstico",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-015",
+      "titulo": "Revascularização Miocárdica — Angioplastia vs Cirurgia",
+      "no_pai_id": "s7-mi1-05-010",
+      "nivel": "folha",
+      "escopo": "Quando indicar stent ou ponte e o que cada um resolve",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-020",
+      "titulo": "Síndromes Coronarianas Agudas — Visão Geral",
+      "no_pai_id": "s7-mi1-05-000",
+      "nivel": "visao_geral",
+      "escopo": "A emergência da placa que rompe e tromba a coronária",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-05-021",
+      "titulo": "Fisiopatologia da SCA — Ruptura de Placa e Trombose Coronariana",
+      "no_pai_id": "s7-mi1-05-020",
+      "nivel": "folha",
+      "escopo": "Como a placa instável desencadeia o trombo que fecha a artéria",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-022",
+      "titulo": "Angina Instável e IAM Sem Supra (SCASSST)",
+      "no_pai_id": "s7-mi1-05-020",
+      "nivel": "folha",
+      "escopo": "Oclusão subtotal; diagnóstico pela troponina e estratificação de risco",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-023",
+      "titulo": "IAM Com Supradesnível de ST (SCACSST)",
+      "no_pai_id": "s7-mi1-05-020",
+      "nivel": "folha",
+      "escopo": "Oclusão total; o ECG que exige reperfusão imediata",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-024",
+      "titulo": "Diagnóstico do IAM — ECG, Curva de Troponina e Definição Universal",
+      "no_pai_id": "s7-mi1-05-020",
+      "nivel": "folha",
+      "escopo": "Territórios eletrocardiográficos e o critério de infarto agudo",
+      "lentes": [
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-025",
+      "titulo": "Terapia de Reperfusão — Angioplastia Primária e Trombólise",
+      "no_pai_id": "s7-mi1-05-020",
+      "nivel": "folha",
+      "escopo": "Tempo é músculo; quando cateterizar e quando trombolizar",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-026",
+      "titulo": "Terapia Farmacológica na SCA — Antiplaquetários, Anticoagulantes e Adjuvantes",
+      "no_pai_id": "s7-mi1-05-020",
+      "nivel": "folha",
+      "escopo": "Dupla antiagregação, heparina, betabloqueador, estatina; o pacote inicial",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-05-027",
+      "titulo": "Complicações do IAM — Mecânicas, Elétricas e Insuficiência Cardíaca",
+      "no_pai_id": "s7-mi1-05-020",
+      "nivel": "folha",
+      "escopo": "Arritmias, choque cardiogênico, ruptura e as complicações que matam",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-000",
+      "titulo": "Insuficiência Cardíaca",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "A via final comum de quase toda doença cardíaca: a bomba que falha",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-06-001",
+      "titulo": "Insuficiência Cardíaca — Visão Geral da Bomba que Falha",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que o coração incapaz de suprir a demanda gera congestão e baixo débito",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-06-002",
+      "titulo": "Mecanismos Compensatórios — Frank-Starling, Neuro-hormonal e Remodelamento",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "Por que a compensação inicial vira o motor da progressão",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-003",
+      "titulo": "IC com Fração de Ejeção Reduzida (ICFEr) — Disfunção Sistólica",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "O ventrículo que não contrai o suficiente; base do tratamento moderno",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-004",
+      "titulo": "IC com Fração de Ejeção Preservada (ICFEp) — Disfunção Diastólica",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "O ventrículo rígido que não relaxa; por que o eco é normal na sístole",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-005",
+      "titulo": "IC Esquerda, Direita e Congestão — A Origem dos Sintomas",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "Por que a IC esquerda congestiona o pulmão e a direita, o sistêmico",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-006",
+      "titulo": "Diagnóstico da IC — Critérios, BNP e Ecocardiograma",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "Framingham, peptídeos natriuréticos e a fração de ejeção que classifica",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-007",
+      "titulo": "Classificação Funcional (NYHA) e Estágios (ACC/AHA)",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "Como sintomas e evolução guiam a intensidade do tratamento",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-008",
+      "titulo": "Tratamento da ICFEr — Os Quatro Pilares que Prolongam a Vida",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "IECA/BRA/sacubitril, betabloqueador, antagonista de aldosterona e iSGLT2",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-009",
+      "titulo": "Diuréticos e Controle de Sintomas na IC",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "Como aliviar a congestão sem alterar mortalidade e evitar a hipovolemia",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-010",
+      "titulo": "IC Aguda Descompensada e Edema Agudo de Pulmão",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "A descompensação súbita e o manejo da emergência congestiva",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-06-011",
+      "titulo": "Choque Cardiogênico — Quando a Bomba Colapsa",
+      "no_pai_id": "s7-mi1-06-000",
+      "nivel": "folha",
+      "escopo": "Hipoperfusão por falência de bomba; inotrópicos e suporte mecânico",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-000",
+      "titulo": "Arritmias Cardíacas",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "Distúrbios de formação e condução do impulso elétrico do coração",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-07-001",
+      "titulo": "Arritmias — Visão Geral da Eletrofisiologia que Deu Errado",
+      "no_pai_id": "s7-mi1-07-000",
+      "nivel": "visao_geral",
+      "escopo": "Automatismo, reentrada e gatilho como os três mecanismos-base",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-07-002",
+      "titulo": "Sistema de Condução e Potencial de Ação Cardíaco",
+      "no_pai_id": "s7-mi1-07-000",
+      "nivel": "folha",
+      "escopo": "Nó SA, nó AV, His-Purkinje e as fases do potencial que o ECG lê",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-003",
+      "titulo": "Mecanismos de Arritmia — Reentrada, Automatismo e Atividade Deflagrada",
+      "no_pai_id": "s7-mi1-07-000",
+      "nivel": "folha",
+      "escopo": "Por que o circuito elétrico se descontrola; base do tratamento",
+      "lentes": [
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-010",
+      "titulo": "Fibrilação Atrial — Visão Geral",
+      "no_pai_id": "s7-mi1-07-000",
+      "nivel": "visao_geral",
+      "escopo": "A arritmia sustentada mais comum e a fonte de embolias",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-07-011",
+      "titulo": "Fisiopatologia da FA — Reentrada Atrial e Perda do Ritmo Sinusal",
+      "no_pai_id": "s7-mi1-07-010",
+      "nivel": "folha",
+      "escopo": "Veias pulmonares, remodelamento atrial e a resposta ventricular irregular",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-012",
+      "titulo": "Diagnóstico e Classificação da FA (Paroxística, Persistente, Permanente)",
+      "no_pai_id": "s7-mi1-07-010",
+      "nivel": "folha",
+      "escopo": "O ECG sem onda P e a classificação temporal que guia a conduta",
+      "lentes": [
+        "diagnostico_exames",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-013",
+      "titulo": "Anticoagulação na FA — CHA2DS2-VASc e a Prevenção do AVC",
+      "no_pai_id": "s7-mi1-07-010",
+      "nivel": "folha",
+      "escopo": "Como estratificar risco embólico e escolher anticoagulante",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-014",
+      "titulo": "Controle de Ritmo vs Controle de Frequência na FA",
+      "no_pai_id": "s7-mi1-07-010",
+      "nivel": "folha",
+      "escopo": "As duas estratégias, cardioversão, ablação e quando escolher cada uma",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-020",
+      "titulo": "Flutter Atrial e Taquicardias Supraventriculares",
+      "no_pai_id": "s7-mi1-07-000",
+      "nivel": "visao_geral",
+      "escopo": "As taquicardias de origem acima do ventrículo e seus circuitos",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-07-021",
+      "titulo": "Flutter Atrial — O Macrocircuito em Dente de Serra",
+      "no_pai_id": "s7-mi1-07-020",
+      "nivel": "folha",
+      "escopo": "A reentrada no átrio direito e o padrão eletrocardiográfico típico",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-022",
+      "titulo": "TRN, TRAV e Wolff-Parkinson-White",
+      "no_pai_id": "s7-mi1-07-020",
+      "nivel": "folha",
+      "escopo": "Reentrada nodal, via acessória e a pré-excitação do delta",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-023",
+      "titulo": "Manejo das Taquicardias Supraventriculares — Manobras, Adenosina e Ablação",
+      "no_pai_id": "s7-mi1-07-020",
+      "nivel": "folha",
+      "escopo": "Vagais, drogas AV-nodais e a cura definitiva por ablação",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-030",
+      "titulo": "Bradiarritmias e Bloqueios — Visão Geral",
+      "no_pai_id": "s7-mi1-07-000",
+      "nivel": "visao_geral",
+      "escopo": "Quando o impulso não nasce ou não conduz",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-07-031",
+      "titulo": "Disfunção do Nó Sinusal e Bradicardia Sinusal",
+      "no_pai_id": "s7-mi1-07-030",
+      "nivel": "folha",
+      "escopo": "O marca-passo natural que falha; síndrome bradi-taqui",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-032",
+      "titulo": "Bloqueios Atrioventriculares — 1º, 2º e 3º Graus",
+      "no_pai_id": "s7-mi1-07-030",
+      "nivel": "folha",
+      "escopo": "Do PR alargado à dissociação AV completa; onde está o bloqueio",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-033",
+      "titulo": "Bloqueios de Ramo e Distúrbios de Condução Intraventricular",
+      "no_pai_id": "s7-mi1-07-030",
+      "nivel": "folha",
+      "escopo": "BRD, BRE, hemibloqueios e o QRS alargado",
+      "lentes": [
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-034",
+      "titulo": "Marca-passo Cardíaco — Indicações e Princípios",
+      "no_pai_id": "s7-mi1-07-030",
+      "nivel": "folha",
+      "escopo": "Quando a bradiarritmia exige estimulação artificial",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-040",
+      "titulo": "Taquiarritmias Ventriculares — Visão Geral",
+      "no_pai_id": "s7-mi1-07-000",
+      "nivel": "visao_geral",
+      "escopo": "As arritmias que originam a morte súbita cardíaca",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-07-041",
+      "titulo": "Extrassístoles e Taquicardia Ventricular",
+      "no_pai_id": "s7-mi1-07-040",
+      "nivel": "folha",
+      "escopo": "TV sustentada e não sustentada; o QRS largo que ameaça",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-042",
+      "titulo": "Fibrilação Ventricular e Morte Súbita Cardíaca",
+      "no_pai_id": "s7-mi1-07-040",
+      "nivel": "folha",
+      "escopo": "O caos elétrico terminal e a base da desfibrilação",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-043",
+      "titulo": "Torsades de Pointes e QT Longo",
+      "no_pai_id": "s7-mi1-07-040",
+      "nivel": "folha",
+      "escopo": "A TV polimórfica dependente de repolarização e suas causas reversíveis",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-07-044",
+      "titulo": "Cardiodesfibrilador Implantável e Antiarrítmicos",
+      "no_pai_id": "s7-mi1-07-040",
+      "nivel": "folha",
+      "escopo": "Prevenção da morte súbita: CDI e o papel limitado das drogas",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-08-000",
+      "titulo": "Valvopatias",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "As doenças das válvulas: estenoses que obstruem e insuficiências que refluem",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-08-001",
+      "titulo": "Valvopatias — Visão Geral de Estenose e Insuficiência",
+      "no_pai_id": "s7-mi1-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que obstruir ou refluir sobrecarrega câmaras de formas diferentes",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-08-002",
+      "titulo": "Sobrecarga de Pressão vs Volume — A Lógica das Valvopatias",
+      "no_pai_id": "s7-mi1-08-000",
+      "nivel": "folha",
+      "escopo": "Por que estenose hipertrofia e insuficiência dilata a câmara",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-08-003",
+      "titulo": "Estenose Aórtica",
+      "no_pai_id": "s7-mi1-08-000",
+      "nivel": "folha",
+      "escopo": "A tríade angina-síncope-dispneia e a válvula que não abre",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-08-004",
+      "titulo": "Insuficiência Aórtica",
+      "no_pai_id": "s7-mi1-08-000",
+      "nivel": "folha",
+      "escopo": "O refluxo diastólico, o pulso amplo e a sobrecarga de volume do VE",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-08-005",
+      "titulo": "Estenose Mitral",
+      "no_pai_id": "s7-mi1-08-000",
+      "nivel": "folha",
+      "escopo": "A herança reumática, a congestão pulmonar e a fibrilação atrial",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-08-006",
+      "titulo": "Insuficiência Mitral e Prolapso da Valva Mitral",
+      "no_pai_id": "s7-mi1-08-000",
+      "nivel": "folha",
+      "escopo": "O refluxo sistólico, o sopro apical e a dilatação do átrio esquerdo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-08-007",
+      "titulo": "Valvopatias Tricúspide e Pulmonar",
+      "no_pai_id": "s7-mi1-08-000",
+      "nivel": "folha",
+      "escopo": "As valvopatias direitas e seu papel na congestão sistêmica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-08-008",
+      "titulo": "Diagnóstico das Valvopatias — Ausculta e Ecocardiograma",
+      "no_pai_id": "s7-mi1-08-000",
+      "nivel": "folha",
+      "escopo": "Como o sopro e o eco graduam a gravidade e definem o momento cirúrgico",
+      "lentes": [
+        "diagnostico_exames",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-08-009",
+      "titulo": "Tratamento das Valvopatias — Cirurgia, TAVI e Próteses",
+      "no_pai_id": "s7-mi1-08-000",
+      "nivel": "folha",
+      "escopo": "Quando trocar ou reparar a válvula e a escolha da prótese",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-09-000",
+      "titulo": "Cardiomiopatias",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "As doenças primárias do músculo cardíaco por padrão estrutural",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-09-001",
+      "titulo": "Cardiomiopatias — Visão Geral dos Três Padrões",
+      "no_pai_id": "s7-mi1-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Dilatada, hipertrófica e restritiva: como a forma prediz a disfunção",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-09-002",
+      "titulo": "Cardiomiopatia Dilatada",
+      "no_pai_id": "s7-mi1-09-000",
+      "nivel": "folha",
+      "escopo": "O ventrículo dilatado e hipocontrátil; a via para a IC sistólica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-09-003",
+      "titulo": "Cardiomiopatia Hipertrófica",
+      "no_pai_id": "s7-mi1-09-000",
+      "nivel": "folha",
+      "escopo": "A hipertrofia assimétrica, a obstrução dinâmica e a morte súbita do jovem",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-09-004",
+      "titulo": "Cardiomiopatia Restritiva",
+      "no_pai_id": "s7-mi1-09-000",
+      "nivel": "folha",
+      "escopo": "O ventrículo rígido que enche mal; amiloidose e infiltração",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-09-005",
+      "titulo": "Miocardites e Cardiomiopatias Específicas",
+      "no_pai_id": "s7-mi1-09-000",
+      "nivel": "folha",
+      "escopo": "Inflamação miocárdica, Chagas, periparto e takotsubo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-10-000",
+      "titulo": "Febre Reumática e Cardiopatia Reumática",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "A sequela cardíaca da resposta imune à estreptococcia de garganta",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-10-001",
+      "titulo": "Febre Reumática — Visão Geral do Erro Imunológico",
+      "no_pai_id": "s7-mi1-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que uma faringite estreptocócica pode atacar o próprio coração",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-10-002",
+      "titulo": "Mimetismo Molecular e Patogênese da Febre Reumática",
+      "no_pai_id": "s7-mi1-10-000",
+      "nivel": "folha",
+      "escopo": "Como anticorpos contra o estreptococo reagem com tecidos próprios",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-10-003",
+      "titulo": "Critérios de Jones e Manifestações Clínicas",
+      "no_pai_id": "s7-mi1-10-000",
+      "nivel": "folha",
+      "escopo": "Cardite, artrite, coreia, nódulos e eritema; o diagnóstico sindrômico",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-10-004",
+      "titulo": "Tratamento e Profilaxia Secundária da Febre Reumática",
+      "no_pai_id": "s7-mi1-10-000",
+      "nivel": "folha",
+      "escopo": "Erradicar o estreptococo e a penicilina benzatina que previne recidiva",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-11-000",
+      "titulo": "Endocardite Infecciosa",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "A infecção do endocárdio e das válvulas por microrganismos na corrente sanguínea",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-11-001",
+      "titulo": "Endocardite Infecciosa — Visão Geral da Vegetação",
+      "no_pai_id": "s7-mi1-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Como micróbios colonizam a válvula e formam a vegetação embolizante",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-11-002",
+      "titulo": "Patogênese e Agentes da Endocardite",
+      "no_pai_id": "s7-mi1-11-000",
+      "nivel": "folha",
+      "escopo": "Endocárdio lesado, bacteremia e os principais microrganismos por cenário",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-11-003",
+      "titulo": "Manifestações Clínicas e Fenômenos Embólicos e Imunes",
+      "no_pai_id": "s7-mi1-11-000",
+      "nivel": "folha",
+      "escopo": "Febre, sopro novo, êmbolos, Janeway, Osler e Roth",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-11-004",
+      "titulo": "Diagnóstico — Critérios de Duke, Hemocultura e Ecocardiograma",
+      "no_pai_id": "s7-mi1-11-000",
+      "nivel": "folha",
+      "escopo": "Como confirmar a endocardite combinando micro e imagem",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-11-005",
+      "titulo": "Tratamento, Profilaxia e Indicação Cirúrgica",
+      "no_pai_id": "s7-mi1-11-000",
+      "nivel": "folha",
+      "escopo": "Antibioticoterapia prolongada, quando operar e quando prevenir",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-12-000",
+      "titulo": "Doenças da Aorta e Aneurismas",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "A dilatação, a dissecção e a ruptura da maior artéria do corpo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-12-001",
+      "titulo": "Doenças da Aorta — Visão Geral da Parede que Enfraquece",
+      "no_pai_id": "s7-mi1-12-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a aorta dilata, disseca e rompe, e o que compartilham",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-12-002",
+      "titulo": "Aneurisma da Aorta Abdominal",
+      "no_pai_id": "s7-mi1-12-000",
+      "nivel": "folha",
+      "escopo": "A dilatação silenciosa, o rastreamento e o risco de ruptura fatal",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-12-003",
+      "titulo": "Aneurisma da Aorta Torácica",
+      "no_pai_id": "s7-mi1-12-000",
+      "nivel": "folha",
+      "escopo": "A dilatação torácica, sua ligação com Marfan e válvula bicúspide",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-12-004",
+      "titulo": "Dissecção Aórtica Aguda",
+      "no_pai_id": "s7-mi1-12-000",
+      "nivel": "folha",
+      "escopo": "A dor dilacerante, a classificação de Stanford e a emergência cirúrgica",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-13-000",
+      "titulo": "Doença Arterial Obstrutiva Periférica (DAOP)",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "A aterosclerose das artérias dos membros e a isquemia que gera",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-13-001",
+      "titulo": "DAOP — Visão Geral da Isquemia dos Membros",
+      "no_pai_id": "s7-mi1-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a placa nas pernas gera dor ao caminhar e ameaça o membro",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-13-002",
+      "titulo": "Claudicação Intermitente e Classificação de Fontaine/Rutherford",
+      "no_pai_id": "s7-mi1-13-000",
+      "nivel": "folha",
+      "escopo": "A dor previsível da caminhada e a graduação da gravidade isquêmica",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-13-003",
+      "titulo": "Diagnóstico da DAOP — Índice Tornozelo-Braquial e Imagem",
+      "no_pai_id": "s7-mi1-13-000",
+      "nivel": "folha",
+      "escopo": "Como o ITB confirma a doença e a imagem localiza a lesão",
+      "lentes": [
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-13-004",
+      "titulo": "Isquemia Crítica de Membro e Isquemia Aguda",
+      "no_pai_id": "s7-mi1-13-000",
+      "nivel": "folha",
+      "escopo": "A dor de repouso, a úlcera isquêmica e a oclusão arterial súbita (6 P)",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-13-005",
+      "titulo": "Tratamento da DAOP — Clínico e Revascularização",
+      "no_pai_id": "s7-mi1-13-000",
+      "nivel": "folha",
+      "escopo": "Cessar tabagismo, exercício, antiplaquetário, estatina e quando revascularizar",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-14-000",
+      "titulo": "Trombose Venosa Profunda e Tromboembolismo Pulmonar",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "O tromboembolismo venoso: coágulo na perna que migra para o pulmão",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-14-001",
+      "titulo": "Tromboembolismo Venoso — Visão Geral de um Continuum",
+      "no_pai_id": "s7-mi1-14-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que TVP e TEP são a mesma doença em dois estágios",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-14-002",
+      "titulo": "Tríade de Virchow e Trombofilias",
+      "no_pai_id": "s7-mi1-14-000",
+      "nivel": "folha",
+      "escopo": "Estase, lesão endotelial e hipercoagulabilidade; quem trombosa e por quê",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-14-003",
+      "titulo": "Trombose Venosa Profunda — Apresentação e Diagnóstico",
+      "no_pai_id": "s7-mi1-14-000",
+      "nivel": "folha",
+      "escopo": "A perna edemaciada e dolorosa; Wells, D-dímero e ultrassom",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-14-004",
+      "titulo": "Tromboembolismo Pulmonar — Fisiopatologia e Apresentação",
+      "no_pai_id": "s7-mi1-14-000",
+      "nivel": "folha",
+      "escopo": "Como o êmbolo obstrui o pulmão e gera dispneia, dor e instabilidade",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-14-005",
+      "titulo": "Diagnóstico e Estratificação de Risco do TEP",
+      "no_pai_id": "s7-mi1-14-000",
+      "nivel": "folha",
+      "escopo": "AngioTC, escores de probabilidade e a divisão entre TEP maciço e submaciço",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-14-006",
+      "titulo": "Tratamento do Tromboembolismo Venoso — Anticoagulação e Trombólise",
+      "no_pai_id": "s7-mi1-14-000",
+      "nivel": "folha",
+      "escopo": "Heparina, DOACs, quando trombolisar e a duração do tratamento",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-15-000",
+      "titulo": "Doença Pericárdica",
+      "no_pai_id": "s7-mi1-00-000",
+      "nivel": "modulo",
+      "escopo": "As doenças do saco que envolve o coração: inflamação, derrame e constrição",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-mi1-15-001",
+      "titulo": "Doença Pericárdica — Visão Geral do Saco que Envolve o Coração",
+      "no_pai_id": "s7-mi1-15-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a inflamação ou o líquido no pericárdio comprometem o enchimento",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-mi1-15-002",
+      "titulo": "Pericardite Aguda",
+      "no_pai_id": "s7-mi1-15-000",
+      "nivel": "folha",
+      "escopo": "A dor pleurítica que melhora sentado, o atrito e o supra difuso de ST",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-15-003",
+      "titulo": "Derrame Pericárdico e Tamponamento Cardíaco",
+      "no_pai_id": "s7-mi1-15-000",
+      "nivel": "folha",
+      "escopo": "O líquido que comprime; tríade de Beck e pulso paradoxal",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-mi1-15-004",
+      "titulo": "Pericardite Constritiva",
+      "no_pai_id": "s7-mi1-15-000",
+      "nivel": "folha",
+      "escopo": "O pericárdio rígido que estrangula o enchimento; diferencial com restritiva",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    }
+  ]
+}

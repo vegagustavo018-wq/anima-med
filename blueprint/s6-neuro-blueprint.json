@@ -1,0 +1,1953 @@
+{
+  "disciplina_id": "neuro",
+  "disciplina_nome": "Neurologia",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s6-neuro-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "modulos": {
+      "10": "Neuropatias Periféricas",
+      "11": "Infecções do SNC",
+      "12": "Tumores do SNC (clínica)",
+      "13": "Traumatismo Cranioencefálico",
+      "14": "Coma e Distúrbios da Consciência",
+      "00": "Fundamentos: raiz + o método neurológico (localização antes de nomear)",
+      "01": "Anatomia Funcional do SNC (Revisão Integrada) — ponte S2/S3",
+      "02": "Síndromes Neurológicas Clássicas (piramidal, extrapiramidal, cerebelar, sensitiva, medulares, tronco, corticais)",
+      "03": "Cefaleias (primárias e secundárias)",
+      "04": "AVC (isquêmico, hemorrágico, AIT)",
+      "05": "Demências",
+      "06": "Doenças do Movimento",
+      "07": "Epilepsias e Crises",
+      "08": "Doenças Desmielinizantes",
+      "09": "Doenças Neuromusculares e da Junção"
+    },
+    "lente_da_disciplina": "síndrome/localização -> mecanismo -> apresentação clínica -> diagnóstico -> conduta. Cada síndrome/doença parte de ONDE está a lesão e POR QUE gera o quadro, nunca do nome.",
+    "criterio_de_folha": "Nó é folha quando sustenta as 8 etapas E >=1 flashcard contrafactual/clínico legítimo. Se não sustentar, vira seção do pai; se empilha mecanismo+clínica+conduta próprios, divide.",
+    "profundidade": "campo profundidade = profundidade na árvore (raiz disciplina = 1)."
+  },
+  "blocos": [
+    {
+      "id": "s6-neuro-00-000",
+      "titulo": "Neurologia — A Arte de Localizar Antes de Nomear",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Por que a neurologia raciocina por localização da lesão antes da etiologia",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico",
+        "etimologia"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s6-neuro-00-001",
+      "titulo": "O Método Neurológico — Onde Está a Lesão?",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "visao_geral",
+      "escopo": "Diagnóstico topográfico antes do etiológico; o eixo do raciocínio neurológico",
+      "lentes": [
+        "raciocinio_clinico",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-00-002",
+      "titulo": "Neurônio Motor Superior vs Inferior — A Grande Dicotomia",
+      "no_pai_id": "s6-neuro-00-001",
+      "nivel": "tema",
+      "escopo": "O contraste que organiza toda semiologia motora: padrão central vs periférico",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-00-003",
+      "titulo": "Níveis do Neuroeixo — Córtex, Subcortical, Tronco, Medula, Nervo, Junção, Músculo",
+      "no_pai_id": "s6-neuro-00-001",
+      "nivel": "tema",
+      "escopo": "Os sete andares onde uma lesão pode se instalar e a assinatura de cada um",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-00-004",
+      "titulo": "Tempo de Instalação como Pista Etiológica",
+      "no_pai_id": "s6-neuro-00-001",
+      "nivel": "tema",
+      "escopo": "Súbito=vascular, dias=inflamatório, meses=tumor/degenerativo; a curva temporal",
+      "lentes": [
+        "raciocinio_clinico",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-01-000",
+      "titulo": "Anatomia Funcional do SNC — Revisão Integrada",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "O mapa funcional que transforma sintoma em localização",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-01-001",
+      "titulo": "Homúnculo Motor e Sensitivo — O Corpo Desenhado no Córtex",
+      "no_pai_id": "s6-neuro-01-000",
+      "nivel": "folha",
+      "escopo": "Somatotopia do giro pré e pós-central; por que face e mão dominam",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-01-002",
+      "titulo": "Vias Longas — Corticoespinhal, Espinotalâmica e Cordão Posterior",
+      "no_pai_id": "s6-neuro-01-000",
+      "nivel": "folha",
+      "escopo": "As três vias cujo cruzamento e trajeto explicam a semiologia da lesão",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-01-003",
+      "titulo": "Circulação Cerebral — Territórios Arteriais e Polígono de Willis",
+      "no_pai_id": "s6-neuro-01-000",
+      "nivel": "folha",
+      "escopo": "ACA, ACM, ACP e circulação posterior; base territorial do AVC",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-01-004",
+      "titulo": "Nervos Cranianos — Núcleos, Trajetos e Função em Blocos Funcionais",
+      "no_pai_id": "s6-neuro-01-000",
+      "nivel": "folha",
+      "escopo": "Os XII pares agrupados por função; base do exame de tronco",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-01-005",
+      "titulo": "Sistema Ventricular e Liquor — Produção, Circulação e Absorção",
+      "no_pai_id": "s6-neuro-01-000",
+      "nivel": "folha",
+      "escopo": "Fluxo do LCR e o cenário para hidrocefalia e hipertensão intracraniana",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-01-006",
+      "titulo": "Barreira Hematoencefálica e Doutrina de Monro-Kellie",
+      "no_pai_id": "s6-neuro-01-000",
+      "nivel": "folha",
+      "escopo": "Compartimento fechado; volume constante e a lógica da PIC",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-02-000",
+      "titulo": "Síndromes Neurológicas Clássicas",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Os grandes padrões sindrômicos que localizam a lesão",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-02-001",
+      "titulo": "Panorama das Grandes Síndromes — Como o Padrão Aponta o Andar",
+      "no_pai_id": "s6-neuro-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Como cada síndrome mapeia um nível do neuroeixo",
+      "lentes": [
+        "sindrome_localizacao",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-02-010",
+      "titulo": "Síndrome Piramidal — Visão Geral",
+      "no_pai_id": "s6-neuro-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Lesão do trato corticoespinhal: o padrão do NMS",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-02-011",
+      "titulo": "Mecanismo da Espasticidade e Hiper-reflexia",
+      "no_pai_id": "s6-neuro-02-010",
+      "nivel": "folha",
+      "escopo": "Perda da inibição descendente; velocidade-dependência e canivete",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-012",
+      "titulo": "Sinal de Babinski e Reflexos Patológicos",
+      "no_pai_id": "s6-neuro-02-010",
+      "nivel": "folha",
+      "escopo": "Extensão do hálux como liberação de reflexo primitivo; valor localizatório",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-013",
+      "titulo": "Padrões Topográficos de Fraqueza Central — Hemiparesia, Monoparesia, Para/Tetraparesia",
+      "no_pai_id": "s6-neuro-02-010",
+      "nivel": "folha",
+      "escopo": "Como a distribuição da fraqueza aponta cápsula, medula ou córtex",
+      "lentes": [
+        "sindrome_localizacao",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-020",
+      "titulo": "Síndrome Extrapiramidal — Visão Geral",
+      "no_pai_id": "s6-neuro-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Disfunção dos núcleos da base: hipo e hipercinesias",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-02-021",
+      "titulo": "Síndrome Parkinsoniana (Hipocinética) — Tremor, Rigidez, Bradicinesia",
+      "no_pai_id": "s6-neuro-02-020",
+      "nivel": "folha",
+      "escopo": "A tríade rígido-acinética e a rigidez em roda denteada",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-022",
+      "titulo": "Síndromes Hipercinéticas — Coreia, Atetose, Balismo, Distonia",
+      "no_pai_id": "s6-neuro-02-020",
+      "nivel": "folha",
+      "escopo": "O espectro do movimento excessivo e seus correlatos anatômicos",
+      "lentes": [
+        "apresentacao_clinica",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-030",
+      "titulo": "Síndrome Cerebelar — Visão Geral",
+      "no_pai_id": "s6-neuro-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Perda do comparador do movimento: ataxia e dismetria",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-02-031",
+      "titulo": "Síndrome Cerebelar Hemisférica (Apendicular)",
+      "no_pai_id": "s6-neuro-02-030",
+      "nivel": "folha",
+      "escopo": "Dismetria, disdiadococinesia, tremor de intenção ipsilaterais",
+      "lentes": [
+        "apresentacao_clinica",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-032",
+      "titulo": "Síndrome Cerebelar Vermiana (Axial) e Marcha Atáxica",
+      "no_pai_id": "s6-neuro-02-030",
+      "nivel": "folha",
+      "escopo": "Ataxia de tronco e marcha ebriosa; Romberg cerebelar",
+      "lentes": [
+        "apresentacao_clinica",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-040",
+      "titulo": "Síndrome Sensitiva — Visão Geral",
+      "no_pai_id": "s6-neuro-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Como a topografia da perda sensitiva localiza a via lesada",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-02-041",
+      "titulo": "Dissociação Sensitiva — Termoalgésica vs Proprioceptiva",
+      "no_pai_id": "s6-neuro-02-040",
+      "nivel": "folha",
+      "escopo": "Vias separadas explicam perda seletiva de dor/temperatura ou vibração/posição",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-042",
+      "titulo": "Padrões de Perda Sensitiva — Nível, Suspenso, Luva-e-Bota, Hemi",
+      "no_pai_id": "s6-neuro-02-040",
+      "nivel": "folha",
+      "escopo": "Como o desenho da anestesia distingue nervo, medula, tálamo e córtex",
+      "lentes": [
+        "sindrome_localizacao",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-050",
+      "titulo": "Síndromes Medulares — Visão Geral",
+      "no_pai_id": "s6-neuro-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a organização em tratos gera síndromes transversais tão específicas",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-02-051",
+      "titulo": "Síndrome de Secção Medular Completa e Choque Medular",
+      "no_pai_id": "s6-neuro-02-050",
+      "nivel": "folha",
+      "escopo": "Nível sensitivo, para/tetraplegia e a fase flácida inicial",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-052",
+      "titulo": "Síndrome de Brown-Séquard (Hemisecção)",
+      "no_pai_id": "s6-neuro-02-050",
+      "nivel": "folha",
+      "escopo": "Dissociação cruzada: motor/proprioceptivo ipsi, termoalgésico contra",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-053",
+      "titulo": "Síndrome Centromedular (Siringomielia e Hiperextensão)",
+      "no_pai_id": "s6-neuro-02-050",
+      "nivel": "folha",
+      "escopo": "Perda suspensa termoalgésica; fraqueza maior em MMSS",
+      "lentes": [
+        "sindrome_localizacao",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-054",
+      "titulo": "Síndrome da Artéria Espinhal Anterior",
+      "no_pai_id": "s6-neuro-02-050",
+      "nivel": "folha",
+      "escopo": "Poupa cordão posterior; paraplegia com dissociação e disfunção autonômica",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-055",
+      "titulo": "Síndrome do Cordão Posterior e Degeneração Combinada",
+      "no_pai_id": "s6-neuro-02-050",
+      "nivel": "folha",
+      "escopo": "Ataxia sensitiva por B12/tabes; Romberg positivo",
+      "lentes": [
+        "sindrome_localizacao",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-056",
+      "titulo": "Síndrome do Cone Medular vs Cauda Equina",
+      "no_pai_id": "s6-neuro-02-050",
+      "nivel": "folha",
+      "escopo": "Distinguir a emergência esfincteriana simétrica da radicular assimétrica",
+      "lentes": [
+        "sindrome_localizacao",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-060",
+      "titulo": "Síndromes do Tronco Encefálico — Visão Geral",
+      "no_pai_id": "s6-neuro-02-000",
+      "nivel": "visao_geral",
+      "escopo": "A regra do cruzado: par craniano ipsi, via longa contra",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-02-061",
+      "titulo": "Síndrome de Wallenberg (Bulbar Lateral)",
+      "no_pai_id": "s6-neuro-02-060",
+      "nivel": "folha",
+      "escopo": "PICA/vertebral: dissociação facial cruzada, Horner, disfagia, vertigem",
+      "lentes": [
+        "sindrome_localizacao",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-062",
+      "titulo": "Síndromes Mesencefálicas e Pontinas Clássicas (Weber, Millard-Gubler)",
+      "no_pai_id": "s6-neuro-02-060",
+      "nivel": "folha",
+      "escopo": "Hemiplegias cruzadas com III ou VII/VI ipsilaterais",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-063",
+      "titulo": "Síndrome do Encarceramento (Locked-in) e Mutismo Acinético",
+      "no_pai_id": "s6-neuro-02-060",
+      "nivel": "folha",
+      "escopo": "Lesão pontina ventral: consciência preservada, tetraplegia, só olhar vertical",
+      "lentes": [
+        "sindrome_localizacao",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-070",
+      "titulo": "Síndromes Corticais — Visão Geral",
+      "no_pai_id": "s6-neuro-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Funções superiores localizadas: quando a lesão fala uma língua cortical",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-02-071",
+      "titulo": "Afasias — Broca, Wernicke, Condução e Global",
+      "no_pai_id": "s6-neuro-02-070",
+      "nivel": "folha",
+      "escopo": "Fluência, compreensão e repetição como eixos para localizar a lesão",
+      "lentes": [
+        "sindrome_localizacao",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-072",
+      "titulo": "Apraxias e Agnosias",
+      "no_pai_id": "s6-neuro-02-070",
+      "nivel": "folha",
+      "escopo": "Perda do gesto aprendido e do reconhecimento com vias sensoriais íntegras",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-073",
+      "titulo": "Síndrome de Heminegligência e do Lobo Parietal Não Dominante",
+      "no_pai_id": "s6-neuro-02-070",
+      "nivel": "folha",
+      "escopo": "Negligência do hemiespaço contralateral; anosognosia",
+      "lentes": [
+        "sindrome_localizacao",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-02-074",
+      "titulo": "Síndromes dos Lobos Frontal e Temporal — Desinibição, Memória e Comportamento",
+      "no_pai_id": "s6-neuro-02-070",
+      "nivel": "folha",
+      "escopo": "Funções executivas e mnésicas; a personalidade como sinal localizatório",
+      "lentes": [
+        "sindrome_localizacao",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-03-000",
+      "titulo": "Cefaleias",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Da dor benigna primária à sentinela de doença grave",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-03-001",
+      "titulo": "Cefaleia — Visão Geral e a Divisão Primária vs Secundária",
+      "no_pai_id": "s6-neuro-03-000",
+      "nivel": "visao_geral",
+      "escopo": "O que gera dor de cabeça e por que só algumas estruturas doem",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-03-002",
+      "titulo": "Sinais de Alarme (Red Flags) e a Regra SNNOOP10",
+      "no_pai_id": "s6-neuro-03-000",
+      "nivel": "folha",
+      "escopo": "Quando a cefaleia deixa de ser sintoma e vira emergência",
+      "lentes": [
+        "diagnostico",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-03-100",
+      "titulo": "Cefaleias Primárias — Visão Geral",
+      "no_pai_id": "s6-neuro-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Dor como a própria doença, sem lesão estrutural",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-03-110",
+      "titulo": "Enxaqueca (Migrânea) — Visão Geral",
+      "no_pai_id": "s6-neuro-03-100",
+      "nivel": "visao_geral",
+      "escopo": "Cefaleia neurovascular recorrente e incapacitante",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-03-111",
+      "titulo": "Fisiopatologia da Enxaqueca — Depressão Alastrante e CGRP",
+      "no_pai_id": "s6-neuro-03-110",
+      "nivel": "folha",
+      "escopo": "Onda cortical, ativação trigeminovascular e o papel do CGRP",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s6-neuro-03-112",
+      "titulo": "Enxaqueca com e sem Aura — Clínica e Fases",
+      "no_pai_id": "s6-neuro-03-110",
+      "nivel": "folha",
+      "escopo": "Pródromo, aura visual, dor pulsátil, fotofobia; critérios ICHD",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s6-neuro-03-113",
+      "titulo": "Tratamento da Enxaqueca — Abortivo e Profilático",
+      "no_pai_id": "s6-neuro-03-110",
+      "nivel": "folha",
+      "escopo": "Triptanos, gepantes, anti-CGRP; profilaxia e cefaleia por rebote",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s6-neuro-03-120",
+      "titulo": "Cefaleia Tensional",
+      "no_pai_id": "s6-neuro-03-100",
+      "nivel": "folha",
+      "escopo": "Dor em peso, banda bilateral; a cefaleia mais comum",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-03-130",
+      "titulo": "Cefaleias Trigêmino-Autonômicas — Cluster e Correlatas",
+      "no_pai_id": "s6-neuro-03-100",
+      "nivel": "folha",
+      "escopo": "Dor em salvas periorbital com disautonomia; hemicrania e SUNCT",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-03-200",
+      "titulo": "Cefaleias Secundárias — Visão Geral",
+      "no_pai_id": "s6-neuro-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Dor como sintoma de doença subjacente potencialmente grave",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-03-210",
+      "titulo": "Cefaleia da Hemorragia Subaracnóidea (Thunderclap)",
+      "no_pai_id": "s6-neuro-03-200",
+      "nivel": "folha",
+      "escopo": "A pior cefaleia da vida em segundos; investigação de aneurisma",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-03-220",
+      "titulo": "Arterite de Células Gigantes (Temporal)",
+      "no_pai_id": "s6-neuro-03-200",
+      "nivel": "folha",
+      "escopo": "Cefaleia do idoso com risco de cegueira; VHS e corticoide urgente",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-03-230",
+      "titulo": "Hipertensão Intracraniana Idiopática (Pseudotumor Cerebral)",
+      "no_pai_id": "s6-neuro-03-200",
+      "nivel": "folha",
+      "escopo": "Papiledema em mulher jovem obesa; risco visual e punção diagnóstica",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-03-240",
+      "titulo": "Cefaleia por Uso Excessivo de Analgésicos",
+      "no_pai_id": "s6-neuro-03-200",
+      "nivel": "folha",
+      "escopo": "Transformação de cefaleia episódica em crônica diária",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-000",
+      "titulo": "Acidente Vascular Cerebral (AVC)",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Interrupção do fluxo cerebral: a emergência tempo-dependente por excelência",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-04-001",
+      "titulo": "AVC — Visão Geral e a Lógica 'Tempo é Cérebro'",
+      "no_pai_id": "s6-neuro-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Isquêmico vs hemorrágico; penumbra e a janela terapêutica",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-04-002",
+      "titulo": "Reconhecimento Pré-Hospitalar e Escalas (NIHSS, FAST)",
+      "no_pai_id": "s6-neuro-04-000",
+      "nivel": "folha",
+      "escopo": "Como quantificar o déficit e ativar a cadeia do AVC",
+      "lentes": [
+        "diagnostico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-04-100",
+      "titulo": "AVC Isquêmico — Visão Geral",
+      "no_pai_id": "s6-neuro-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Oclusão arterial e a cascata isquêmica; núcleo e penumbra",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-04-101",
+      "titulo": "Classificação TOAST — Os Cinco Mecanismos do AVC Isquêmico",
+      "no_pai_id": "s6-neuro-04-100",
+      "nivel": "folha",
+      "escopo": "Aterotrombótico, cardioembólico, lacunar, outras e indeterminada",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-102",
+      "titulo": "Síndromes Vasculares por Território — ACM, ACA e ACP",
+      "no_pai_id": "s6-neuro-04-100",
+      "nivel": "folha",
+      "escopo": "Como cada território dá um quadro clínico reconhecível",
+      "lentes": [
+        "sindrome_localizacao",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-103",
+      "titulo": "Infartos Lacunares e as Síndromes Lacunares Clássicas",
+      "no_pai_id": "s6-neuro-04-100",
+      "nivel": "folha",
+      "escopo": "Doença de pequenos vasos; motor puro, sensitivo puro, atáxico-hemiparético",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-104",
+      "titulo": "AVC de Circulação Posterior e Vertebrobasilar",
+      "no_pai_id": "s6-neuro-04-100",
+      "nivel": "folha",
+      "escopo": "Vertigem, diplopia, ataxia; os 5 Ds e o desafio diagnóstico",
+      "lentes": [
+        "sindrome_localizacao",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-105",
+      "titulo": "Neuroimagem no AVC Agudo — TC, ASPECTS e Perfusão",
+      "no_pai_id": "s6-neuro-04-100",
+      "nivel": "folha",
+      "escopo": "Excluir hemorragia, estimar núcleo e selecionar para reperfusão",
+      "lentes": [
+        "diagnostico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-106",
+      "titulo": "Trombólise Endovenosa (Alteplase/Tenecteplase)",
+      "no_pai_id": "s6-neuro-04-100",
+      "nivel": "folha",
+      "escopo": "Janela, critérios de inclusão/exclusão e risco hemorrágico",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-107",
+      "titulo": "Trombectomia Mecânica e Oclusão de Grande Vaso",
+      "no_pai_id": "s6-neuro-04-100",
+      "nivel": "folha",
+      "escopo": "Recanalização por cateter; janela estendida por mismatch",
+      "lentes": [
+        "conduta_tratamento",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-108",
+      "titulo": "Prevenção Secundária e Investigação Etiológica",
+      "no_pai_id": "s6-neuro-04-100",
+      "nivel": "folha",
+      "escopo": "Antiagregação, anticoagulação na FA, estatina, controle de fatores",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-200",
+      "titulo": "Ataque Isquêmico Transitório (AIT)",
+      "no_pai_id": "s6-neuro-04-000",
+      "nivel": "folha",
+      "escopo": "Déficit transitório sem infarto; escore ABCD2 e urgência preventiva",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-04-300",
+      "titulo": "AVC Hemorrágico — Visão Geral",
+      "no_pai_id": "s6-neuro-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Sangramento no parênquima ou no espaço subaracnóideo",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-04-301",
+      "titulo": "Hemorragia Intraparenquimatosa — Hipertensiva e Amiloide",
+      "no_pai_id": "s6-neuro-04-300",
+      "nivel": "folha",
+      "escopo": "Localizações profundas vs lobares; expansão do hematoma",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-302",
+      "titulo": "Hemorragia Subaracnóidea Aneurismática",
+      "no_pai_id": "s6-neuro-04-300",
+      "nivel": "folha",
+      "escopo": "Ruptura de aneurisma; vasoespasmo, ressangramento e Hunt-Hess",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-303",
+      "titulo": "Manejo Agudo da Hemorragia — PA, Reversão e Neurocirurgia",
+      "no_pai_id": "s6-neuro-04-300",
+      "nivel": "folha",
+      "escopo": "Controle pressórico, reversão de anticoagulante, indicação cirúrgica",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-04-400",
+      "titulo": "Trombose Venosa Cerebral",
+      "no_pai_id": "s6-neuro-04-000",
+      "nivel": "folha",
+      "escopo": "Obstrução de seio venoso; cefaleia, crises e infarto venoso",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-05-000",
+      "titulo": "Demências",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Declínio cognitivo adquirido e progressivo; neurodegeneração",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-05-001",
+      "titulo": "Demência — Visão Geral e o Conceito de Declínio Cognitivo",
+      "no_pai_id": "s6-neuro-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Definir demência; distinguir de delirium e do envelhecimento normal",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-05-002",
+      "titulo": "Avaliação Cognitiva e Rastreio (MEEM, MoCA)",
+      "no_pai_id": "s6-neuro-05-000",
+      "nivel": "folha",
+      "escopo": "Domínios cognitivos e ferramentas de triagem à beira do leito",
+      "lentes": [
+        "diagnostico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-05-003",
+      "titulo": "Comprometimento Cognitivo Leve e Demências Reversíveis",
+      "no_pai_id": "s6-neuro-05-000",
+      "nivel": "folha",
+      "escopo": "O estágio pré-demência e as causas tratáveis a excluir sempre",
+      "lentes": [
+        "diagnostico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-05-100",
+      "titulo": "Doença de Alzheimer",
+      "no_pai_id": "s6-neuro-05-000",
+      "nivel": "folha",
+      "escopo": "Amiloide e tau; amnésia hipocampal progressiva; anticolinesterásicos",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-05-200",
+      "titulo": "Demência Vascular",
+      "no_pai_id": "s6-neuro-05-000",
+      "nivel": "folha",
+      "escopo": "Declínio em degraus por doença cerebrovascular; perfil disexecutivo",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-05-300",
+      "titulo": "Demência por Corpos de Lewy",
+      "no_pai_id": "s6-neuro-05-000",
+      "nivel": "folha",
+      "escopo": "Flutuação, alucinações visuais, parkinsonismo e sensibilidade a antipsicóticos",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-05-400",
+      "titulo": "Demência Frontotemporal",
+      "no_pai_id": "s6-neuro-05-000",
+      "nivel": "folha",
+      "escopo": "Variante comportamental e afásica; desinibição precoce em jovem",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-05-500",
+      "titulo": "Hidrocefalia de Pressão Normal",
+      "no_pai_id": "s6-neuro-05-000",
+      "nivel": "folha",
+      "escopo": "A tríade de Hakim; demência tratável por derivação",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-06-000",
+      "titulo": "Doenças do Movimento",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Distúrbios dos gânglios da base: movimento a menos ou a mais",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-06-001",
+      "titulo": "Circuito dos Núcleos da Base — Vias Direta e Indireta",
+      "no_pai_id": "s6-neuro-06-000",
+      "nivel": "visao_geral",
+      "escopo": "O balanço dopaminérgico que separa hipo de hipercinesia",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-06-100",
+      "titulo": "Doença de Parkinson — Visão Geral",
+      "no_pai_id": "s6-neuro-06-000",
+      "nivel": "visao_geral",
+      "escopo": "Degeneração da substância negra; a síndrome hipocinética prototípica",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-06-101",
+      "titulo": "Fisiopatologia da DP — Substância Negra e Alfa-Sinucleína",
+      "no_pai_id": "s6-neuro-06-100",
+      "nivel": "folha",
+      "escopo": "Corpos de Lewy, perda dopaminérgica e o limiar de sintomas",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-06-102",
+      "titulo": "Clínica da DP — Sinais Cardinais e Sintomas Não Motores",
+      "no_pai_id": "s6-neuro-06-100",
+      "nivel": "folha",
+      "escopo": "Tremor de repouso, rigidez, bradicinesia; anosmia, constipação, REM",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-06-103",
+      "titulo": "Tratamento da DP — Levodopa, Agonistas e Complicações Motoras",
+      "no_pai_id": "s6-neuro-06-100",
+      "nivel": "folha",
+      "escopo": "Reposição dopaminérgica; flutuações, discinesias e DBS",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-06-104",
+      "titulo": "Parkinsonismos Atípicos e Secundários",
+      "no_pai_id": "s6-neuro-06-100",
+      "nivel": "folha",
+      "escopo": "PSP, AMS, degeneração corticobasal e parkinsonismo medicamentoso",
+      "lentes": [
+        "diagnostico",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-06-200",
+      "titulo": "Tremores — Visão Geral e Tremor Essencial",
+      "no_pai_id": "s6-neuro-06-000",
+      "nivel": "folha",
+      "escopo": "Tremor de ação bilateral; distinguir do parkinsoniano; betabloqueador",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-06-300",
+      "titulo": "Coreias e Doença de Huntington",
+      "no_pai_id": "s6-neuro-06-000",
+      "nivel": "folha",
+      "escopo": "Expansão CAG; coreia, distúrbio psiquiátrico e demência",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-06-400",
+      "titulo": "Distonias",
+      "no_pai_id": "s6-neuro-06-000",
+      "nivel": "folha",
+      "escopo": "Contração sustentada e posturas anormais; toxina botulínica",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-06-500",
+      "titulo": "Tiques e Síndrome de Tourette",
+      "no_pai_id": "s6-neuro-06-000",
+      "nivel": "folha",
+      "escopo": "Movimentos supressíveis com urgência premonitória; comorbidades",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-07-000",
+      "titulo": "Epilepsias e Crises",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Descarga neuronal hipersíncrona: da crise única à epilepsia",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-07-001",
+      "titulo": "Crise Epiléptica — Visão Geral e Fisiopatologia da Hiperexcitabilidade",
+      "no_pai_id": "s6-neuro-07-000",
+      "nivel": "visao_geral",
+      "escopo": "Desequilíbrio excitação/inibição; foco e sincronização",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-07-002",
+      "titulo": "Classificação ILAE — Crises Focais vs Generalizadas",
+      "no_pai_id": "s6-neuro-07-000",
+      "nivel": "folha",
+      "escopo": "Início, consciência e o esquema atual de classificação",
+      "lentes": [
+        "diagnostico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-07-010",
+      "titulo": "Crises Focais — Perceptivas, Disperceptivas e com Evolução Bilateral",
+      "no_pai_id": "s6-neuro-07-000",
+      "nivel": "folha",
+      "escopo": "Aura, automatismos e a marcha jacksoniana como pistas de foco",
+      "lentes": [
+        "apresentacao_clinica",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-07-020",
+      "titulo": "Crises Generalizadas — Tônico-Clônicas, Ausência e Mioclônicas",
+      "no_pai_id": "s6-neuro-07-000",
+      "nivel": "folha",
+      "escopo": "Envolvimento bilateral de início; padrões EEG característicos",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-07-030",
+      "titulo": "Síndromes Epilépticas Idade-Dependentes",
+      "no_pai_id": "s6-neuro-07-000",
+      "nivel": "folha",
+      "escopo": "Ausência infantil, mioclônica juvenil, West e mesial temporal",
+      "lentes": [
+        "diagnostico",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-07-040",
+      "titulo": "Diagnóstico Diferencial das Crises — Síncope e Crise Não Epiléptica",
+      "no_pai_id": "s6-neuro-07-000",
+      "nivel": "folha",
+      "escopo": "Como não confundir síncope convulsiva e CNEP com epilepsia",
+      "lentes": [
+        "diagnostico",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-07-050",
+      "titulo": "Tratamento — Fármacos Anticrise e Princípios de Escolha",
+      "no_pai_id": "s6-neuro-07-000",
+      "nivel": "folha",
+      "escopo": "Monoterapia por tipo de crise; interações e teratogenicidade",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-07-060",
+      "titulo": "Estado de Mal Epiléptico",
+      "no_pai_id": "s6-neuro-07-000",
+      "nivel": "folha",
+      "escopo": "Emergência tempo-dependente; escalonamento benzodiazepínico e UTI",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-08-000",
+      "titulo": "Doenças Desmielinizantes",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Ataque à mielina central; falha de condução disseminada no tempo e espaço",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-08-001",
+      "titulo": "Desmielinização — Visão Geral e o Custo da Perda de Mielina",
+      "no_pai_id": "s6-neuro-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que perder mielina bloqueia condução e gera sintomas dispersos",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-08-100",
+      "titulo": "Esclerose Múltipla — Visão Geral",
+      "no_pai_id": "s6-neuro-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Doença autoimune com lesões disseminadas no tempo e no espaço",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-08-101",
+      "titulo": "Clínica e Formas Evolutivas da EM",
+      "no_pai_id": "s6-neuro-08-100",
+      "nivel": "folha",
+      "escopo": "Neurite óptica, mielite, Lhermitte, Uhthoff; surto-remissão vs progressiva",
+      "lentes": [
+        "apresentacao_clinica",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-08-102",
+      "titulo": "Diagnóstico da EM — Critérios de McDonald, RM e Líquor",
+      "no_pai_id": "s6-neuro-08-100",
+      "nivel": "folha",
+      "escopo": "Disseminação no espaço/tempo; bandas oligoclonais",
+      "lentes": [
+        "diagnostico",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-08-103",
+      "titulo": "Tratamento da EM — Surto e Terapias Modificadoras",
+      "no_pai_id": "s6-neuro-08-100",
+      "nivel": "folha",
+      "escopo": "Corticoide no surto; imunomoduladores e imunossupressores de fundo",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-08-200",
+      "titulo": "Neuromielite Óptica (Espectro NMO/anti-AQP4)",
+      "no_pai_id": "s6-neuro-08-000",
+      "nivel": "folha",
+      "escopo": "Mielite longa e neurite grave; distinguir da EM muda o tratamento",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-08-300",
+      "titulo": "Encefalomielite Disseminada Aguda (ADEM)",
+      "no_pai_id": "s6-neuro-08-000",
+      "nivel": "folha",
+      "escopo": "Desmielinização monofásica pós-infecciosa; encefalopatia na criança",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-09-000",
+      "titulo": "Doenças Neuromusculares e da Junção",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Do neurônio motor à fibra: fraqueza sem lesão central",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-09-001",
+      "titulo": "Abordagem da Fraqueza Neuromuscular — Localizar no Arco Motor",
+      "no_pai_id": "s6-neuro-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Corno anterior, nervo, junção ou músculo: a assinatura de cada nível",
+      "lentes": [
+        "sindrome_localizacao",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-09-100",
+      "titulo": "Miastenia Gravis",
+      "no_pai_id": "s6-neuro-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Autoanticorpos anti-AChR; fatigabilidade flutuante e crise miastênica",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-09-101",
+      "titulo": "Fisiopatologia e Clínica da Miastenia",
+      "no_pai_id": "s6-neuro-09-100",
+      "nivel": "folha",
+      "escopo": "Bloqueio pós-sináptico; ptose, diplopia, fraqueza que piora ao esforço",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-09-102",
+      "titulo": "Diagnóstico e Tratamento da Miastenia",
+      "no_pai_id": "s6-neuro-09-100",
+      "nivel": "folha",
+      "escopo": "Anticorpos, eletroneuromiografia, anticolinesterásicos, timectomia, crise",
+      "lentes": [
+        "diagnostico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-09-200",
+      "titulo": "Síndrome de Eaton-Lambert",
+      "no_pai_id": "s6-neuro-09-000",
+      "nivel": "folha",
+      "escopo": "Defeito pré-sináptico paraneoplásico; facilitação e canais de cálcio",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-09-300",
+      "titulo": "Esclerose Lateral Amiotrófica (ELA)",
+      "no_pai_id": "s6-neuro-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Degeneração combinada de NMS e NMI; fraqueza progressiva sem sensitivo",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-09-301",
+      "titulo": "Clínica e Diagnóstico da ELA",
+      "no_pai_id": "s6-neuro-09-300",
+      "nivel": "folha",
+      "escopo": "Coexistência de sinais altos e baixos; critérios de El Escorial",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-09-302",
+      "titulo": "Manejo e Prognóstico da ELA",
+      "no_pai_id": "s6-neuro-09-300",
+      "nivel": "folha",
+      "escopo": "Riluzol, suporte respiratório/nutricional, cuidado multidisciplinar",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-09-400",
+      "titulo": "Miopatias — Visão Geral",
+      "no_pai_id": "s6-neuro-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Fraqueza proximal, CK elevada; padrão muscular puro",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-09-401",
+      "titulo": "Miopatias Inflamatórias — Dermatomiosite e Polimiosite",
+      "no_pai_id": "s6-neuro-09-400",
+      "nivel": "folha",
+      "escopo": "Fraqueza proximal com CK alta; heliótropo e Gottron",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-09-402",
+      "titulo": "Distrofias Musculares — Duchenne e Miotônica",
+      "no_pai_id": "s6-neuro-09-400",
+      "nivel": "folha",
+      "escopo": "Distrofina e expansão CTG; Gowers e o fenômeno miotônico",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-10-000",
+      "titulo": "Neuropatias Periféricas",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Lesão do nervo periférico: da mononeuropatia à polineuropatia difusa",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-10-001",
+      "titulo": "Neuropatia — Visão Geral e Padrões (Mono, Múltipla, Poli)",
+      "no_pai_id": "s6-neuro-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Axonal vs desmielinizante; distribuição como pista etiológica",
+      "lentes": [
+        "sindrome_localizacao",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-10-002",
+      "titulo": "Eletroneuromiografia — Como o Nervo é Interrogado",
+      "no_pai_id": "s6-neuro-10-000",
+      "nivel": "folha",
+      "escopo": "Distinguir axonal de desmielinizante e localizar o bloqueio",
+      "lentes": [
+        "diagnostico",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-10-100",
+      "titulo": "Polineuropatia Diabética e Metabólica",
+      "no_pai_id": "s6-neuro-10-000",
+      "nivel": "folha",
+      "escopo": "Padrão comprimento-dependente em luva e bota; dor neuropática",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-10-200",
+      "titulo": "Síndrome de Guillain-Barré (Polirradiculoneuropatia Aguda)",
+      "no_pai_id": "s6-neuro-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Paralisia ascendente pós-infecciosa; emergência respiratória",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-10-201",
+      "titulo": "Clínica e Diagnóstico da SGB",
+      "no_pai_id": "s6-neuro-10-200",
+      "nivel": "folha",
+      "escopo": "Arreflexia ascendente, dissociação albumino-citológica, variantes",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-10-202",
+      "titulo": "Tratamento e Monitorização da SGB",
+      "no_pai_id": "s6-neuro-10-200",
+      "nivel": "folha",
+      "escopo": "Imunoglobulina/plasmaférese; vigilância ventilatória e disautonômica",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-10-300",
+      "titulo": "Mononeuropatias Compressivas — Túnel do Carpo e Paralisias Focais",
+      "no_pai_id": "s6-neuro-10-000",
+      "nivel": "folha",
+      "escopo": "Mediano, ulnar, radial, fibular; anatomia do aprisionamento",
+      "lentes": [
+        "sindrome_localizacao",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-10-400",
+      "titulo": "Paralisia Facial Periférica (Bell)",
+      "no_pai_id": "s6-neuro-10-000",
+      "nivel": "folha",
+      "escopo": "VII periférico completo vs central; corticoide precoce",
+      "lentes": [
+        "sindrome_localizacao",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-11-000",
+      "titulo": "Infecções do Sistema Nervoso Central",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Invasão de um compartimento imunoprivilegiado; emergências infecciosas",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-11-001",
+      "titulo": "Neuroinfecção — Visão Geral e a Análise do Líquor",
+      "no_pai_id": "s6-neuro-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Como o padrão liquórico separa bacteriano, viral, fúngico e TB",
+      "lentes": [
+        "diagnostico",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-11-100",
+      "titulo": "Meningite Bacteriana Aguda",
+      "no_pai_id": "s6-neuro-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Inflamação meníngea purulenta; emergência com antibiótico imediato",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-11-101",
+      "titulo": "Clínica e Diagnóstico da Meningite Bacteriana",
+      "no_pai_id": "s6-neuro-11-100",
+      "nivel": "folha",
+      "escopo": "Tríade, Kernig/Brudzinski; quando a TC precede a punção",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-11-102",
+      "titulo": "Tratamento Empírico e Profilaxia da Meningite",
+      "no_pai_id": "s6-neuro-11-100",
+      "nivel": "folha",
+      "escopo": "Antibiótico por faixa etária, dexametasona e quimioprofilaxia de contatos",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-neuro-11-200",
+      "titulo": "Meningites Virais e Subagudas (TB, Fúngica)",
+      "no_pai_id": "s6-neuro-11-000",
+      "nivel": "folha",
+      "escopo": "Meningite linfocítica benigna vs a meningite arrastada do imunossuprimido",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-11-300",
+      "titulo": "Encefalites Virais — Herpética e Autoimune",
+      "no_pai_id": "s6-neuro-11-000",
+      "nivel": "folha",
+      "escopo": "HSV temporal com aciclovir precoce; encefalites por anticorpos",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-11-400",
+      "titulo": "Abscesso Cerebral e Empiema",
+      "no_pai_id": "s6-neuro-11-000",
+      "nivel": "folha",
+      "escopo": "Lesão com efeito de massa e anel; drenagem e antibiótico prolongado",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-11-500",
+      "titulo": "Neuroinfecções do Imunossuprimido e Regionais",
+      "no_pai_id": "s6-neuro-11-000",
+      "nivel": "folha",
+      "escopo": "Toxoplasmose, criptococose, neurocisticercose e neurossífilis",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-12-000",
+      "titulo": "Tumores do Sistema Nervoso Central (Clínica)",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Massa em compartimento fechado: sintomas focais e de hipertensão",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "diagnostico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-12-001",
+      "titulo": "Tumores do SNC — Visão Geral e Apresentação Clínica",
+      "no_pai_id": "s6-neuro-12-000",
+      "nivel": "visao_geral",
+      "escopo": "Déficit focal progressivo, crise e HIC; a lógica da localização",
+      "lentes": [
+        "apresentacao_clinica",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-12-100",
+      "titulo": "Gliomas — do Astrocitoma ao Glioblastoma",
+      "no_pai_id": "s6-neuro-12-000",
+      "nivel": "folha",
+      "escopo": "Tumor intrínseco infiltrativo; graduação e prognóstico",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-12-200",
+      "titulo": "Meningioma e Tumores Extra-axiais",
+      "no_pai_id": "s6-neuro-12-000",
+      "nivel": "folha",
+      "escopo": "Massa extra-axial de crescimento lento; compressão e cauda dural",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-12-300",
+      "titulo": "Metástases Cerebrais",
+      "no_pai_id": "s6-neuro-12-000",
+      "nivel": "folha",
+      "escopo": "Lesões múltiplas na junção; a causa mais comum de tumor cerebral no adulto",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-12-400",
+      "titulo": "Síndromes de Herniação e Emergência Oncológica",
+      "no_pai_id": "s6-neuro-12-000",
+      "nivel": "folha",
+      "escopo": "Uncal, subfalcina, tonsilar; corticoide e descompressão",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-13-000",
+      "titulo": "Traumatismo Cranioencefálico",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Lesão primária e a cascata de lesão secundária evitável",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-13-001",
+      "titulo": "TCE — Visão Geral, Lesão Primária vs Secundária e Escala de Glasgow",
+      "no_pai_id": "s6-neuro-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Classificar gravidade; evitar hipóxia e hipotensão que matam o cérebro",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-13-100",
+      "titulo": "Hematomas Intracranianos — Epidural, Subdural e Contusão",
+      "no_pai_id": "s6-neuro-13-000",
+      "nivel": "folha",
+      "escopo": "Intervalo lúcido vs sangramento venoso lento; padrão na TC",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-13-200",
+      "titulo": "Lesão Axonal Difusa e Concussão",
+      "no_pai_id": "s6-neuro-13-000",
+      "nivel": "folha",
+      "escopo": "Coma sem massa; síndrome pós-concussional e retorno ao esporte",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-13-300",
+      "titulo": "Manejo do TCE Grave e Controle da PIC",
+      "no_pai_id": "s6-neuro-13-000",
+      "nivel": "folha",
+      "escopo": "Pressão de perfusão cerebral; medidas escalonadas e craniectomia",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-14-000",
+      "titulo": "Coma e Distúrbios da Consciência",
+      "no_pai_id": "s6-neuro-00-000",
+      "nivel": "modulo",
+      "escopo": "Falência da consciência: substrato anatômico e abordagem sistemática",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "sindrome_localizacao",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-neuro-14-001",
+      "titulo": "Consciência — Visão Geral, SARA e os Dois Componentes",
+      "no_pai_id": "s6-neuro-14-000",
+      "nivel": "visao_geral",
+      "escopo": "Alerta (tronco) e conteúdo (córtex); onde a lesão gera coma",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-14-002",
+      "titulo": "Exame Neurológico do Comatoso — Pupilas, Tronco e Padrão Motor",
+      "no_pai_id": "s6-neuro-14-000",
+      "nivel": "folha",
+      "escopo": "Reflexos de tronco que localizam a lesão no paciente inconsciente",
+      "lentes": [
+        "diagnostico",
+        "sindrome_localizacao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-14-003",
+      "titulo": "Abordagem Etiológica do Coma — Estrutural vs Tóxico-Metabólico",
+      "no_pai_id": "s6-neuro-14-000",
+      "nivel": "folha",
+      "escopo": "Separar a causa cirúrgica da difusa; a sistemática de urgência",
+      "lentes": [
+        "diagnostico",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-neuro-14-004",
+      "titulo": "Morte Encefálica e Estados de Consciência Alterada",
+      "no_pai_id": "s6-neuro-14-000",
+      "nivel": "folha",
+      "escopo": "Critérios de morte encefálica; estado vegetativo e minimamente consciente",
+      "lentes": [
+        "diagnostico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    }
+  ]
+}

@@ -1,0 +1,2077 @@
+{
+  "disciplina_id": "infecto",
+  "disciplina_nome": "Infectologia",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s8-infecto-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "modulos": {
+      "10": "Hepatites Virais",
+      "11": "Infeccoes Sexualmente Transmissiveis (ISTs)",
+      "12": "Arboviroses (Dengue, Zika, Chikungunya, Febre Amarela)",
+      "13": "Doencas Tropicais e Negligenciadas (Malaria, Leishmanioses, Chagas, Esquistossomose, Hanseniase, Leptospirose)",
+      "14": "Infeccoes em Imunocomprometidos e Relacionadas a Assistencia (IRAS)",
+      "15": "Antimicrobianos, Resistencia e Imunizacao do Adulto e do Viajante",
+      "00": "Fundamentos: raiz + lente da infectologia (agente -> transmissao -> fisiopatologia -> clinica -> diagnostico -> tratamento) + integracao com Microbiologia (S3) e Imunologia (S2)",
+      "01": "Sindromes Infecciosas Gerais: Febre de Origem Indeterminada, Sepse, Choque Septico, Sepse Hospitalar",
+      "02": "Infeccoes do Trato Respiratorio (visao infectologica)",
+      "03": "Infeccoes do Trato Gastrointestinal",
+      "04": "Infeccoes do Trato Geniturinario",
+      "05": "Infeccoes de Pele e Partes Moles",
+      "06": "Infeccoes Osteoarticulares",
+      "07": "Infeccoes do Sistema Nervoso Central",
+      "08": "HIV/AIDS e Infeccoes Oportunistas",
+      "09": "Tuberculose (Visao Infectologica)"
+    },
+    "lente_da_disciplina": "doenca infecciosa -> agente etiologico -> reservatorio/transmissao -> fisiopatologia (virulencia x hospedeiro) -> apresentacao clinica/sindrome -> diagnostico/exames -> conduta/tratamento antimicrobiano. Cada doenca parte do PROBLEMA (o paciente febril, o quadro sindromico) e aplica a microbiologia (S3) e a imunologia (S2). Prioriza epidemiologia regional Paraguai/Brasil.",
+    "criterio_de_folha": "No e folha quando sustenta as 8 etapas E >=1 flashcard contrafactual/clinico legitimo. Doenca cuja agente + fisiopatologia + clinica + diagnostico + conduta tem peso proprio vira visao_geral com folhas por lente. Se nao sustenta as 8 etapas, vira secao do pai.",
+    "profundidade": "campo profundidade = profundidade na arvore (raiz da disciplina = 1).",
+    "nota_curriculo": "Segue o curriculo oficial 8.6 (Cap. 6). Aprofunda cada agente/doenca ao nivel-folha do padrao histologia. Expansoes alem do literal registradas em temas_expandidos."
+  },
+  "blocos": [
+    {
+      "id": "s8-infecto-00-000",
+      "titulo": "Infectologia — Pensar a Doenca do Agente ao Hospedeiro",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Por que a infectologia raciocina do agente, da transmissao e do terreno ate a conduta",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia",
+        "etimologia"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s8-infecto-00-001",
+      "titulo": "O Metodo em Infectologia — Agente, Terreno e Ambiente",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "visao_geral",
+      "escopo": "A triade agente-hospedeiro-ambiente como coluna do raciocinio infeccioso",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-00-002",
+      "titulo": "Colonizacao, Infeccao e Doenca — Tres Estados Diferentes",
+      "no_pai_id": "s8-infecto-00-001",
+      "nivel": "tema",
+      "escopo": "Distincao entre habitar, invadir e adoecer; base para decidir tratar ou nao",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico",
+        "etimologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-00-003",
+      "titulo": "Virulencia, Inoculo e Porta de Entrada — Por Que Alguns Adoecem",
+      "no_pai_id": "s8-infecto-00-001",
+      "nivel": "tema",
+      "escopo": "Fatores do agente que determinam se a exposicao vira doenca",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-00-004",
+      "titulo": "O Terreno do Hospedeiro — Imunidade, Idade e Comorbidade",
+      "no_pai_id": "s8-infecto-00-001",
+      "nivel": "tema",
+      "escopo": "Como o estado imune define quem adoece e com qual gravidade",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-00-005",
+      "titulo": "Cadeia de Transmissao — Reservatorio, Veiculo e Suscetivel",
+      "no_pai_id": "s8-infecto-00-001",
+      "nivel": "tema",
+      "escopo": "Os elos da transmissao e onde a intervencao a interrompe",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-00-006",
+      "titulo": "A Sindrome Febril — Como o Corpo Fala Que Ha Infeccao",
+      "no_pai_id": "s8-infecto-00-001",
+      "nivel": "tema",
+      "escopo": "Febre como sintoma-sentinela, seus padroes e o que denunciam",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-00-007",
+      "titulo": "Panorama dos Agentes — Bacteria, Virus, Fungo, Protozoario, Helminto",
+      "no_pai_id": "s8-infecto-00-001",
+      "nivel": "tema",
+      "escopo": "Mapa dos grandes grupos e como cada um se articula com a microbiologia S3",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-01-000",
+      "titulo": "Sindromes Infecciosas Gerais",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Febre indeterminada, sepse e choque septico como sindromes transversais",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-01-001",
+      "titulo": "Febre de Origem Indeterminada (FOI) — Visao Geral",
+      "no_pai_id": "s8-infecto-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Febre persistente sem foco: quando a busca vira investigacao sistematica",
+      "lentes": [
+        "raciocinio_clinico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-01-002",
+      "titulo": "FOI — Definicao Classica e Categorias Atuais",
+      "no_pai_id": "s8-infecto-01-001",
+      "nivel": "folha",
+      "escopo": "Criterios de tempo e contexto; FOI classica, nosocomial, imunodeprimida",
+      "lentes": [
+        "raciocinio_clinico",
+        "etimologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-003",
+      "titulo": "FOI — As Grandes Causas: Infeccao, Neoplasia, Inflamatoria",
+      "no_pai_id": "s8-infecto-01-001",
+      "nivel": "folha",
+      "escopo": "Os tres grandes grupos etiologicos e como orientam a investigacao",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-004",
+      "titulo": "FOI — Roteiro de Investigacao Escalonada",
+      "no_pai_id": "s8-infecto-01-001",
+      "nivel": "folha",
+      "escopo": "Pistas da anamnese/exame que direcionam exames e evitam empirismo cego",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-010",
+      "titulo": "Sepse e Choque Septico — Visao Geral",
+      "no_pai_id": "s8-infecto-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a resposta do hospedeiro a infeccao pode matar mais que o germe",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-01-011",
+      "titulo": "Sepse — Definicao Sepsis-3 e a Disfuncao Organica",
+      "no_pai_id": "s8-infecto-01-010",
+      "nivel": "folha",
+      "escopo": "Infeccao + disfuncao organica; SOFA, qSOFA e o abandono do SIRS",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-012",
+      "titulo": "Fisiopatologia da Sepse — Tempestade Imune e Disfuncao Endotelial",
+      "no_pai_id": "s8-infecto-01-010",
+      "nivel": "folha",
+      "escopo": "PAMPs, citocinas, vasoplegia e coagulopatia que geram a falencia",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-013",
+      "titulo": "Choque Septico — Vasoplegia, Lactato e Hipoperfusao",
+      "no_pai_id": "s8-infecto-01-010",
+      "nivel": "folha",
+      "escopo": "O subtipo de choque distributivo definido por vasopressor e lactato",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-014",
+      "titulo": "Pacote da Primeira Hora — Cultura, Antibiotico, Fluido, Lactato",
+      "no_pai_id": "s8-infecto-01-010",
+      "nivel": "folha",
+      "escopo": "As intervencoes tempo-dependentes que mudam a mortalidade",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-015",
+      "titulo": "Ressuscitacao Volemica e Vasopressores na Sepse",
+      "no_pai_id": "s8-infecto-01-010",
+      "nivel": "folha",
+      "escopo": "Cristaloides, noradrenalina e metas de perfusao no choque septico",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-016",
+      "titulo": "Controle do Foco Infeccioso — Drenar, Retirar, Desobstruir",
+      "no_pai_id": "s8-infecto-01-010",
+      "nivel": "folha",
+      "escopo": "Por que o antibiotico falha sem eliminar a fonte do germe",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-020",
+      "titulo": "Sepse Hospitalar e Infeccao de Corrente Sanguinea",
+      "no_pai_id": "s8-infecto-01-000",
+      "nivel": "visao_geral",
+      "escopo": "A sepse que nasce dentro do hospital, com germes e resistencia proprios",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-01-021",
+      "titulo": "Bacteremia Associada a Cateter Venoso Central",
+      "no_pai_id": "s8-infecto-01-020",
+      "nivel": "folha",
+      "escopo": "Como o dispositivo vira porta de entrada e biofilme; quando retirar",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-01-022",
+      "titulo": "Cobertura Empirica da Sepse Hospitalar — Pensar em Resistencia",
+      "no_pai_id": "s8-infecto-01-020",
+      "nivel": "folha",
+      "escopo": "MRSA, gram-negativos MDR e quando cobri-los empiricamente",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-02-000",
+      "titulo": "Infeccoes do Trato Respiratorio",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Do resfriado a pneumonia grave, sob a lente do agente e do local acometido",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-02-001",
+      "titulo": "Infeccoes Respiratorias — Panorama por Nivel Anatomico",
+      "no_pai_id": "s8-infecto-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Vias aereas altas x baixas: como o local muda agente e gravidade",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-02-002",
+      "titulo": "Infeccoes de Vias Aereas Superiores — Resfriado, Faringite, Sinusite",
+      "no_pai_id": "s8-infecto-02-000",
+      "nivel": "folha",
+      "escopo": "Quadros virais autolimitados x faringite estreptococica que exige antibiotico",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-02-010",
+      "titulo": "Pneumonia Adquirida na Comunidade (PAC) — Visao Geral",
+      "no_pai_id": "s8-infecto-02-000",
+      "nivel": "visao_geral",
+      "escopo": "A infeccao do parenquima pulmonar adquirida fora do hospital",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-02-011",
+      "titulo": "PAC — Agentes Tipicos e Atipicos",
+      "no_pai_id": "s8-infecto-02-010",
+      "nivel": "folha",
+      "escopo": "Pneumococo, Mycoplasma, Chlamydia, Legionella e o que cada padrao sugere",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-02-012",
+      "titulo": "PAC — Apresentacao Clinica e Radiologica",
+      "no_pai_id": "s8-infecto-02-010",
+      "nivel": "folha",
+      "escopo": "Tosse, febre, consolidacao; como a imagem confirma e localiza",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-02-013",
+      "titulo": "PAC — Estratificacao de Gravidade (CURB-65, ambulatorial x internar)",
+      "no_pai_id": "s8-infecto-02-010",
+      "nivel": "folha",
+      "escopo": "Escores que decidem local de tratamento e intensidade",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-02-014",
+      "titulo": "PAC — Tratamento Empirico e Descalonamento",
+      "no_pai_id": "s8-infecto-02-010",
+      "nivel": "folha",
+      "escopo": "Beta-lactamico, macrolideo e quinolona conforme gravidade e sitio",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-02-020",
+      "titulo": "Pneumonia Hospitalar e Associada a Ventilacao (PAV)",
+      "no_pai_id": "s8-infecto-02-000",
+      "nivel": "visao_geral",
+      "escopo": "A pneumonia que surge apos 48h de internacao, com germes resistentes",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-02-021",
+      "titulo": "PAV — Agentes MDR e Cobertura Empirica",
+      "no_pai_id": "s8-infecto-02-020",
+      "nivel": "folha",
+      "escopo": "Pseudomonas, Acinetobacter, MRSA e a logica da cobertura ampla",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-02-022",
+      "titulo": "Prevencao da PAV — Bundle de Ventilacao",
+      "no_pai_id": "s8-infecto-02-020",
+      "nivel": "folha",
+      "escopo": "Cabeceira elevada, higiene oral, sedacao minima; a IRAS que se evita",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-02-030",
+      "titulo": "Derrame Pleural Parapneumonico e Empiema",
+      "no_pai_id": "s8-infecto-02-000",
+      "nivel": "folha",
+      "escopo": "Quando a pneumonia extravasa para a pleura e exige drenagem",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-02-031",
+      "titulo": "Abscesso Pulmonar e Pneumonia Aspirativa",
+      "no_pai_id": "s8-infecto-02-000",
+      "nivel": "folha",
+      "escopo": "Anaerobios, aspiracao e a cavidade com nivel hidroaereo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-03-000",
+      "titulo": "Infeccoes do Trato Gastrointestinal",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Diarreias infecciosas e infeccoes intra-abdominais sob a lente do agente",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-03-001",
+      "titulo": "Diarreia Infecciosa Aguda — Visao Geral",
+      "no_pai_id": "s8-infecto-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a maioria e autolimitada e quando investigar/tratar",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-03-002",
+      "titulo": "Diarreia Aquosa vs Disenteria — Dois Mecanismos",
+      "no_pai_id": "s8-infecto-03-000",
+      "nivel": "folha",
+      "escopo": "Enterotoxina x invasao da mucosa; como o padrao aponta o agente",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-03-003",
+      "titulo": "Diarreia Bacteriana — Salmonella, Shigella, Campylobacter, E. coli",
+      "no_pai_id": "s8-infecto-03-000",
+      "nivel": "folha",
+      "escopo": "Os principais agentes bacterianos e suas particularidades clinicas",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-03-004",
+      "titulo": "Colera — A Enterotoxina Que Esvazia o Intestino",
+      "no_pai_id": "s8-infecto-03-000",
+      "nivel": "folha",
+      "escopo": "Vibrio cholerae, diarreia em agua de arroz e reidratacao como cura",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-03-005",
+      "titulo": "Diarreia Viral — Rotavirus e Norovirus",
+      "no_pai_id": "s8-infecto-03-000",
+      "nivel": "folha",
+      "escopo": "As viroses entericas mais comuns e o papel da vacina",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-03-006",
+      "titulo": "Reidratacao e Uso Racional de Antibiotico na Diarreia",
+      "no_pai_id": "s8-infecto-03-000",
+      "nivel": "folha",
+      "escopo": "Terapia de reidratacao oral; quando o antibiotico ajuda ou prejudica",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-03-007",
+      "titulo": "Colite por Clostridioides difficile",
+      "no_pai_id": "s8-infecto-03-000",
+      "nivel": "folha",
+      "escopo": "A diarreia induzida por antibiotico e a disbiose; vancomicina oral",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-03-010",
+      "titulo": "Febre Tifoide — A Salmonella Que Invade o Sangue",
+      "no_pai_id": "s8-infecto-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Salmonella Typhi: doenca sistemica febril de transmissao fecal-oral",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-03-011",
+      "titulo": "Febre Tifoide — Clinica em Semanas e Complicacoes",
+      "no_pai_id": "s8-infecto-03-010",
+      "nivel": "folha",
+      "escopo": "Febre em escada, roseolas, perfuracao ileal e o estado de portador",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-03-012",
+      "titulo": "Febre Tifoide — Diagnostico e Tratamento",
+      "no_pai_id": "s8-infecto-03-010",
+      "nivel": "folha",
+      "escopo": "Hemocultura, sorologia e antibioticoterapia; resistencia crescente",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-03-020",
+      "titulo": "Infeccoes Intra-abdominais — Peritonite e Abscessos",
+      "no_pai_id": "s8-infecto-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Quando a barreira intestinal rompe e a flora invade a cavidade",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-03-021",
+      "titulo": "Peritonite Bacteriana Espontanea (PBE)",
+      "no_pai_id": "s8-infecto-03-020",
+      "nivel": "folha",
+      "escopo": "A infeccao do liquido ascitico no cirrotico; diagnostico por PMN",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-03-022",
+      "titulo": "Peritonite Secundaria e Abscesso Abdominal",
+      "no_pai_id": "s8-infecto-03-020",
+      "nivel": "folha",
+      "escopo": "Perfuracao de viscera, flora mista e a necessidade de controle do foco",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-04-000",
+      "titulo": "Infeccoes do Trato Geniturinario",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Da cistite a pielonefrite e prostatite sob a lente do agente e do local",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-04-001",
+      "titulo": "Infeccao do Trato Urinario (ITU) — Visao Geral",
+      "no_pai_id": "s8-infecto-04-000",
+      "nivel": "visao_geral",
+      "escopo": "A ascensao de germes pela uretra e a defesa do trato urinario",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-04-002",
+      "titulo": "Cistite — ITU Baixa Nao Complicada",
+      "no_pai_id": "s8-infecto-04-000",
+      "nivel": "folha",
+      "escopo": "Disuria, urgencia; E. coli e o tratamento curto ambulatorial",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-04-003",
+      "titulo": "Pielonefrite — ITU Alta e Risco Sistemico",
+      "no_pai_id": "s8-infecto-04-000",
+      "nivel": "folha",
+      "escopo": "Febre, dor lombar; a infeccao que pode evoluir para sepse urinaria",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-04-004",
+      "titulo": "ITU Complicada, Recorrente e Associada a Cateter",
+      "no_pai_id": "s8-infecto-04-000",
+      "nivel": "folha",
+      "escopo": "Fatores estruturais, sonda vesical e germes resistentes; a IRAS urinaria",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-04-005",
+      "titulo": "Bacteriuria Assintomatica — Quando Nao Tratar",
+      "no_pai_id": "s8-infecto-04-000",
+      "nivel": "folha",
+      "escopo": "A colonizacao urinaria e as unicas indicacoes de tratar (gestante, pre-procedimento)",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-04-006",
+      "titulo": "Prostatite Infecciosa Aguda e Cronica",
+      "no_pai_id": "s8-infecto-04-000",
+      "nivel": "folha",
+      "escopo": "A infeccao prostatica, sua penetracao antibiotica dificil e tratamento prolongado",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-05-000",
+      "titulo": "Infeccoes de Pele e Partes Moles",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Da erisipela a fasceite necrosante, por profundidade e agressividade",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-05-001",
+      "titulo": "Infeccoes de Pele — Panorama por Camada Acometida",
+      "no_pai_id": "s8-infecto-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Epiderme, derme, subcutaneo e fascia: profundidade define gravidade",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-05-002",
+      "titulo": "Impetigo, Foliculite e Furunculo",
+      "no_pai_id": "s8-infecto-05-000",
+      "nivel": "folha",
+      "escopo": "Infeccoes superficiais por S. aureus e estreptococo; papel do MRSA-comunitario",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-05-003",
+      "titulo": "Erisipela e Celulite",
+      "no_pai_id": "s8-infecto-05-000",
+      "nivel": "folha",
+      "escopo": "Infeccao da derme x subcutaneo; estreptococo, porta de entrada e recorrencia",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-05-004",
+      "titulo": "Fasceite Necrosante — A Emergencia Cirurgica",
+      "no_pai_id": "s8-infecto-05-000",
+      "nivel": "folha",
+      "escopo": "Infeccao fulminante da fascia; dor desproporcional e desbridamento urgente",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-05-005",
+      "titulo": "Pe Diabetico Infectado",
+      "no_pai_id": "s8-infecto-05-000",
+      "nivel": "folha",
+      "escopo": "Neuropatia, isquemia e infeccao polimicrobiana; classificacao e conduta",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-05-006",
+      "titulo": "Mordeduras e Infeccoes de Feridas",
+      "no_pai_id": "s8-infecto-05-000",
+      "nivel": "folha",
+      "escopo": "Flora oral de animais/humanos; profilaxia antirrabica e antitetanica",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-05-007",
+      "titulo": "Tetano — A Toxina Que Contrai o Corpo",
+      "no_pai_id": "s8-infecto-05-000",
+      "nivel": "folha",
+      "escopo": "Clostridium tetani, tetanospasmina e trismo; a doenca 100% evitavel por vacina",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-06-000",
+      "titulo": "Infeccoes Osteoarticulares",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Osso e articulacao infectados: diagnostico dificil e tratamento prolongado",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-06-001",
+      "titulo": "Osteomielite — A Infeccao Que Corroi o Osso",
+      "no_pai_id": "s8-infecto-06-000",
+      "nivel": "visao_geral",
+      "escopo": "Como o germe chega ao osso e por que o tratamento e longo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-06-002",
+      "titulo": "Osteomielite — Hematogenica, Contigua e por Insuficiencia Vascular",
+      "no_pai_id": "s8-infecto-06-001",
+      "nivel": "folha",
+      "escopo": "As tres rotas de infeccao ossea e como mudam agente e conduta",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-06-003",
+      "titulo": "Osteomielite — Diagnostico por Imagem e Biopsia",
+      "no_pai_id": "s8-infecto-06-001",
+      "nivel": "folha",
+      "escopo": "RM, cintilografia e a biopsia ossea que orienta o antibiotico",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-06-010",
+      "titulo": "Artrite Septica — A Emergencia da Articulacao",
+      "no_pai_id": "s8-infecto-06-000",
+      "nivel": "folha",
+      "escopo": "Infeccao intra-articular que destroi cartilagem; artrocentese urgente",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-07-000",
+      "titulo": "Infeccoes do Sistema Nervoso Central",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Meningites e encefalites: onde minutos definem sequela e morte",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-07-001",
+      "titulo": "Meningite Aguda — Visao Geral",
+      "no_pai_id": "s8-infecto-07-000",
+      "nivel": "visao_geral",
+      "escopo": "A inflamacao das meninges: por que exige antibiotico em minutos",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-07-002",
+      "titulo": "Meningite Bacteriana — Agentes por Faixa Etaria",
+      "no_pai_id": "s8-infecto-07-000",
+      "nivel": "folha",
+      "escopo": "Meningococo, pneumococo, Haemophilus; qual predomina em cada idade",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-07-003",
+      "titulo": "Sindrome Meningea — Rigidez de Nuca, Kernig e Brudzinski",
+      "no_pai_id": "s8-infecto-07-000",
+      "nivel": "folha",
+      "escopo": "Os sinais clinicos da irritacao meningea e sua sensibilidade",
+      "lentes": [
+        "apresentacao_clinica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-07-004",
+      "titulo": "Analise do Liquor — Distinguir Bacteriana, Viral e Fungica",
+      "no_pai_id": "s8-infecto-07-000",
+      "nivel": "folha",
+      "escopo": "Celularidade, glicose, proteina; o LCR como mapa etiologico",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-07-005",
+      "titulo": "Meningite Bacteriana — Antibiotico Empirico e Corticoide",
+      "no_pai_id": "s8-infecto-07-000",
+      "nivel": "folha",
+      "escopo": "Ceftriaxona, vancomicina, dexametasona; a corrida contra o tempo",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-07-006",
+      "titulo": "Doenca Meningococica — Meningite e Meningococcemia",
+      "no_pai_id": "s8-infecto-07-000",
+      "nivel": "folha",
+      "escopo": "Neisseria meningitidis, petequias, Waterhouse-Friderichsen; profilaxia de contatos",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-07-007",
+      "titulo": "Meningite Viral e Encefalite Herpetica",
+      "no_pai_id": "s8-infecto-07-000",
+      "nivel": "folha",
+      "escopo": "Enterovirus benigno x HSV que destroi o lobo temporal; aciclovir empirico",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-07-008",
+      "titulo": "Abscesso Cerebral",
+      "no_pai_id": "s8-infecto-07-000",
+      "nivel": "folha",
+      "escopo": "Colecao encapsulada no parenquima; origem contigua/hematogenica e drenagem",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-08-000",
+      "titulo": "HIV/AIDS e Infeccoes Oportunistas",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Do virus que destroi o CD4 as doencas que emergem na imunossupressao",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-08-001",
+      "titulo": "HIV — O Virus Que Ataca a Imunidade",
+      "no_pai_id": "s8-infecto-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Retrovirus, tropismo por CD4 e a logica da destruicao imune progressiva",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-08-002",
+      "titulo": "Ciclo Replicativo do HIV — Onde os Antirretrovirais Agem",
+      "no_pai_id": "s8-infecto-08-000",
+      "nivel": "folha",
+      "escopo": "Entrada, transcricao reversa, integracao e maturacao como alvos de TARV",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-08-003",
+      "titulo": "Historia Natural do HIV — Da Infeccao Aguda a AIDS",
+      "no_pai_id": "s8-infecto-08-000",
+      "nivel": "folha",
+      "escopo": "Sindrome retroviral aguda, latencia clinica e queda do CD4",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-08-004",
+      "titulo": "Transmissao e Prevencao do HIV — PrEP e PEP",
+      "no_pai_id": "s8-infecto-08-000",
+      "nivel": "folha",
+      "escopo": "Vias de transmissao, profilaxia pre e pos-exposicao e preven combinada",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-08-005",
+      "titulo": "Diagnostico do HIV — Testagem, Janela e Carga Viral",
+      "no_pai_id": "s8-infecto-08-000",
+      "nivel": "folha",
+      "escopo": "Testes de 4a geracao, fluxograma, contagem de CD4 e carga viral",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-08-006",
+      "titulo": "Terapia Antirretroviral (TARV) — Classes e Esquemas",
+      "no_pai_id": "s8-infecto-08-000",
+      "nivel": "folha",
+      "escopo": "Inibidores de integrase, TR e protease; tratar todos, indetectavel = intransmissivel",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-08-010",
+      "titulo": "Infeccoes Oportunistas na AIDS — Visao Geral por CD4",
+      "no_pai_id": "s8-infecto-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Como a contagem de CD4 preve qual oportunista surge",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-08-011",
+      "titulo": "Pneumocistose (P. jirovecii)",
+      "no_pai_id": "s8-infecto-08-010",
+      "nivel": "folha",
+      "escopo": "A pneumonia definidora de AIDS; hipoxemia, SMX-TMP e profilaxia",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-08-012",
+      "titulo": "Neurotoxoplasmose",
+      "no_pai_id": "s8-infecto-08-010",
+      "nivel": "folha",
+      "escopo": "Lesao cerebral com realce anelar; a reativacao de Toxoplasma no SNC",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-08-013",
+      "titulo": "Criptococose Meningea",
+      "no_pai_id": "s8-infecto-08-010",
+      "nivel": "folha",
+      "escopo": "Meningite fungica subaguda; tinta da China, antigeno e anfotericina",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-08-014",
+      "titulo": "Candidiase, Tuberculose e Micobacterioses no HIV",
+      "no_pai_id": "s8-infecto-08-010",
+      "nivel": "folha",
+      "escopo": "Candidiase esofagica, TB como principal oportunista no Brasil e MAC",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-08-015",
+      "titulo": "Sindrome de Reconstituicao Imune (SIRI)",
+      "no_pai_id": "s8-infecto-08-010",
+      "nivel": "folha",
+      "escopo": "A piora paradoxal quando a TARV restaura a imunidade",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-09-000",
+      "titulo": "Tuberculose (Visao Infectologica)",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "O bacilo, a infeccao latente, a doenca e o tratamento supervisionado",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-09-001",
+      "titulo": "Tuberculose — Visao Geral do Bacilo e da Doenca",
+      "no_pai_id": "s8-infecto-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Mycobacterium tuberculosis, parede cerea e a infeccao de curso lento",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-09-002",
+      "titulo": "Infeccao Latente x Doenca Ativa — Dois Destinos do Bacilo",
+      "no_pai_id": "s8-infecto-09-000",
+      "nivel": "folha",
+      "escopo": "Granuloma, contencao imune e reativacao; PPD e IGRA",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-09-003",
+      "titulo": "Tuberculose Pulmonar — Clinica e Radiologia",
+      "no_pai_id": "s8-infecto-09-000",
+      "nivel": "folha",
+      "escopo": "Tosse cronica, sudorese, emagrecimento; cavitacao em apice",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-09-004",
+      "titulo": "Tuberculose Extrapulmonar",
+      "no_pai_id": "s8-infecto-09-000",
+      "nivel": "folha",
+      "escopo": "Pleural, ganglionar, meningea, miliar e a associacao com HIV",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-09-005",
+      "titulo": "Diagnostico da TB — Baciloscopia, TRM-TB e Cultura",
+      "no_pai_id": "s8-infecto-09-000",
+      "nivel": "folha",
+      "escopo": "BAAR, teste rapido molecular (GeneXpert) e deteccao de resistencia",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-09-006",
+      "titulo": "Tratamento da TB — Esquema RIPE e TDO",
+      "no_pai_id": "s8-infecto-09-000",
+      "nivel": "folha",
+      "escopo": "Rifampicina, isoniazida, pirazinamida, etambutol; tratamento diretamente observado",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-09-007",
+      "titulo": "Tuberculose Multirresistente (TB-MDR/XDR)",
+      "no_pai_id": "s8-infecto-09-000",
+      "nivel": "folha",
+      "escopo": "Resistencia a rifampicina/isoniazida; a ameaca a saude publica regional",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-09-008",
+      "titulo": "Tratamento da Infeccao Latente e Vacina BCG",
+      "no_pai_id": "s8-infecto-09-000",
+      "nivel": "folha",
+      "escopo": "Isoniazida/rifapentina na ILTB e o papel protetor da BCG",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-10-000",
+      "titulo": "Hepatites Virais",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Os virus hepatotropicos A a E: aguda, cronica e suas consequencias",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-10-001",
+      "titulo": "Hepatites Virais — Visao Geral e Sindrome Ictericia",
+      "no_pai_id": "s8-infecto-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Como o dano hepatico viral gera ictericia, e a divisao aguda x cronica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-10-002",
+      "titulo": "Hepatites A e E — Transmissao Fecal-oral",
+      "no_pai_id": "s8-infecto-10-000",
+      "nivel": "folha",
+      "escopo": "Hepatite aguda autolimitada; risco de fulminante (E na gestante)",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-10-003",
+      "titulo": "Hepatite B — Do Contagio a Cronificacao",
+      "no_pai_id": "s8-infecto-10-000",
+      "nivel": "folha",
+      "escopo": "Transmissao parenteral/sexual/vertical; risco de cirrose e hepatocarcinoma",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-10-004",
+      "titulo": "Interpretacao Sorologica da Hepatite B",
+      "no_pai_id": "s8-infecto-10-000",
+      "nivel": "folha",
+      "escopo": "HBsAg, anti-HBs, anti-HBc, HBeAg; distinguir fase, cura e vacinado",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-10-005",
+      "titulo": "Hepatite D (Delta) — O Virus Que Depende do B",
+      "no_pai_id": "s8-infecto-10-000",
+      "nivel": "folha",
+      "escopo": "Coinfeccao/superinfeccao com HBV e a gravidade amazonica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-10-006",
+      "titulo": "Hepatite C — A Epidemia Silenciosa",
+      "no_pai_id": "s8-infecto-10-000",
+      "nivel": "folha",
+      "escopo": "Cronificacao alta, cirrose e a cura pelos antivirais de acao direta",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-10-007",
+      "titulo": "Tratamento e Prevencao das Hepatites Virais",
+      "no_pai_id": "s8-infecto-10-000",
+      "nivel": "folha",
+      "escopo": "Antivirais para B e C, vacinas A e B, profilaxia pos-exposicao",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-11-000",
+      "titulo": "Infeccoes Sexualmente Transmissiveis (ISTs)",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Abordagem sindromica e por agente das infeccoes de transmissao sexual",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-11-001",
+      "titulo": "ISTs — Abordagem Sindromica",
+      "no_pai_id": "s8-infecto-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Corrimento, ulcera e verruga como portas de entrada do raciocinio",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-11-002",
+      "titulo": "Sifilis — A Grande Imitadora",
+      "no_pai_id": "s8-infecto-11-000",
+      "nivel": "folha",
+      "escopo": "Treponema pallidum, estagios primario a terciario e sifilis congenita",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-11-003",
+      "titulo": "Sifilis — Diagnostico Sorologico e Tratamento",
+      "no_pai_id": "s8-infecto-11-000",
+      "nivel": "folha",
+      "escopo": "VDRL, testes treponemicos e a penicilina benzatina",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-11-004",
+      "titulo": "Gonorreia e Clamidia — Corrimento Uretral e Cervical",
+      "no_pai_id": "s8-infecto-11-000",
+      "nivel": "folha",
+      "escopo": "Neisseria gonorrhoeae e Chlamydia; tratamento combinado e resistencia",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-11-005",
+      "titulo": "Ulceras Genitais — Cancro Mole, Herpes e Linfogranuloma",
+      "no_pai_id": "s8-infecto-11-000",
+      "nivel": "folha",
+      "escopo": "Diferenciar as ulceras alem da sifilis pelo aspecto e agente",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-11-006",
+      "titulo": "HPV e Condiloma Acuminado",
+      "no_pai_id": "s8-infecto-11-000",
+      "nivel": "folha",
+      "escopo": "Verrugas anogenitais, oncogenese cervical e a vacina",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-11-007",
+      "titulo": "Doenca Inflamatoria Pelvica (DIP)",
+      "no_pai_id": "s8-infecto-11-000",
+      "nivel": "folha",
+      "escopo": "Ascensao de ISTs ao trato superior; risco de infertilidade",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-12-000",
+      "titulo": "Arboviroses",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Viroses transmitidas por vetores: dengue, zika, chikungunya, febre amarela",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-12-001",
+      "titulo": "Arboviroses — Visao Geral do Aedes e da Sindrome Febril Aguda",
+      "no_pai_id": "s8-infecto-12-000",
+      "nivel": "visao_geral",
+      "escopo": "O vetor Aedes aegypti e a sobreposicao clinica dengue/zika/chikungunya",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-12-002",
+      "titulo": "Dengue — Fisiopatologia e Fases da Doenca",
+      "no_pai_id": "s8-infecto-12-000",
+      "nivel": "folha",
+      "escopo": "Extravasamento plasmatico, 4 sorotipos e as fases febril/critica/recuperacao",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-12-003",
+      "titulo": "Dengue — Sinais de Alarme e Classificacao de Gravidade",
+      "no_pai_id": "s8-infecto-12-000",
+      "nivel": "folha",
+      "escopo": "Os sinais que preveem a fase critica e a dengue grave",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-12-004",
+      "titulo": "Dengue — Manejo por Grupo de Risco (A, B, C, D)",
+      "no_pai_id": "s8-infecto-12-000",
+      "nivel": "folha",
+      "escopo": "Hidratacao guiada, prova do laco e o estadiamento do Ministerio da Saude",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-12-005",
+      "titulo": "Zika — Doenca Febril e Sindrome Congenita",
+      "no_pai_id": "s8-infecto-12-000",
+      "nivel": "folha",
+      "escopo": "Exantema, microcefalia congenita e Guillain-Barre associado",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-12-006",
+      "titulo": "Chikungunya — A Virose da Artralgia",
+      "no_pai_id": "s8-infecto-12-000",
+      "nivel": "folha",
+      "escopo": "Poliartralgia intensa e a cronificacao articular",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-12-007",
+      "titulo": "Febre Amarela — Silvestre e Urbana",
+      "no_pai_id": "s8-infecto-12-000",
+      "nivel": "folha",
+      "escopo": "Ciclo silvestre, forma hepato-renal grave e a vacina; risco no Paraguai/Brasil",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-000",
+      "titulo": "Doencas Tropicais e Negligenciadas",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Parasitoses e zoonoses endemicas do Cone Sul: agente, vetor e clinica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-13-001",
+      "titulo": "Malaria — Visao Geral do Plasmodium e do Ciclo",
+      "no_pai_id": "s8-infecto-13-000",
+      "nivel": "visao_geral",
+      "escopo": "O parasito, o Anopheles e o ciclo eritrocitario que gera a febre",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-13-002",
+      "titulo": "Malaria — Especies e Padrao Febril",
+      "no_pai_id": "s8-infecto-13-001",
+      "nivel": "folha",
+      "escopo": "P. vivax, falciparum, malariae; hipnozoitos e periodicidade da febre",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-003",
+      "titulo": "Malaria Grave — Falciparum e Complicacoes",
+      "no_pai_id": "s8-infecto-13-001",
+      "nivel": "folha",
+      "escopo": "Malaria cerebral, sequestro capilar e falencia organica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-004",
+      "titulo": "Malaria — Diagnostico e Tratamento",
+      "no_pai_id": "s8-infecto-13-001",
+      "nivel": "folha",
+      "escopo": "Gota espessa, teste rapido, artemisininas e primaquina para vivax",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-010",
+      "titulo": "Leishmanioses — Visao Geral do Parasito e do Vetor",
+      "no_pai_id": "s8-infecto-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Leishmania, flebotomineo e as formas tegumentar e visceral",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-13-011",
+      "titulo": "Leishmaniose Tegumentar — Cutanea e Mucosa",
+      "no_pai_id": "s8-infecto-13-010",
+      "nivel": "folha",
+      "escopo": "Ulcera de bordas elevadas e destruicao mucosa tardia",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-012",
+      "titulo": "Leishmaniose Visceral (Calazar)",
+      "no_pai_id": "s8-infecto-13-010",
+      "nivel": "folha",
+      "escopo": "Febre, hepatoesplenomegalia, pancitopenia; letal sem tratamento",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-013",
+      "titulo": "Leishmanioses — Diagnostico e Tratamento",
+      "no_pai_id": "s8-infecto-13-010",
+      "nivel": "folha",
+      "escopo": "Parasitologico, sorologia e antimoniais/anfotericina",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-020",
+      "titulo": "Doenca de Chagas — Visao Geral do T. cruzi",
+      "no_pai_id": "s8-infecto-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Trypanosoma cruzi, o barbeiro e as vias de transmissao regionais",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-13-021",
+      "titulo": "Chagas Aguda — Sinal de Romana e Chagoma",
+      "no_pai_id": "s8-infecto-13-020",
+      "nivel": "folha",
+      "escopo": "Fase aguda geralmente oligossintomatica e a transmissao oral",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-022",
+      "titulo": "Chagas Cronica — Cardiopatia e Megasvisceras",
+      "no_pai_id": "s8-infecto-13-020",
+      "nivel": "folha",
+      "escopo": "Miocardiopatia dilatada, arritmia, megaesofago e megacolon",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-023",
+      "titulo": "Chagas — Diagnostico e Tratamento Antiparasitario",
+      "no_pai_id": "s8-infecto-13-020",
+      "nivel": "folha",
+      "escopo": "Sorologia, parasitemia na fase aguda e benznidazol",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-030",
+      "titulo": "Esquistossomose Mansonica",
+      "no_pai_id": "s8-infecto-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Schistosoma mansoni, o caramujo e a doenca hepatoesplenica",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-13-031",
+      "titulo": "Esquistossomose — Aguda (Katayama) e Cronica Hepatoesplenica",
+      "no_pai_id": "s8-infecto-13-030",
+      "nivel": "folha",
+      "escopo": "Dermatite cercariana, febre de Katayama e fibrose de Symmers",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-032",
+      "titulo": "Esquistossomose — Diagnostico e Praziquantel",
+      "no_pai_id": "s8-infecto-13-030",
+      "nivel": "folha",
+      "escopo": "Ovos nas fezes, sorologia e o tratamento com praziquantel",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-040",
+      "titulo": "Hanseniase — Visao Geral do M. leprae",
+      "no_pai_id": "s8-infecto-13-000",
+      "nivel": "visao_geral",
+      "escopo": "O bacilo, o tropismo neural e o espectro imunologico da doenca",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-13-041",
+      "titulo": "Hanseniase — Formas Clinicas no Espectro Tuberculoide-Virchowiano",
+      "no_pai_id": "s8-infecto-13-040",
+      "nivel": "folha",
+      "escopo": "Como a resposta imune define paucibacilar x multibacilar",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-042",
+      "titulo": "Hanseniase — Lesoes Cutaneas, Neurais e Estados Reacionais",
+      "no_pai_id": "s8-infecto-13-040",
+      "nivel": "folha",
+      "escopo": "Manchas hipoestesicas, espessamento neural e reacoes tipo 1 e 2",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-043",
+      "titulo": "Hanseniase — Diagnostico e Poliquimioterapia (PQT)",
+      "no_pai_id": "s8-infecto-13-040",
+      "nivel": "folha",
+      "escopo": "Baciloscopia, prova de sensibilidade e rifampicina/dapsona/clofazimina",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-050",
+      "titulo": "Leptospirose — A Zoonose das Enchentes",
+      "no_pai_id": "s8-infecto-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Leptospira, urina de roedor e a doenca febril ictero-hemorragica",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-13-051",
+      "titulo": "Leptospirose — Fase Anicterica e Sindrome de Weil",
+      "no_pai_id": "s8-infecto-13-050",
+      "nivel": "folha",
+      "escopo": "Febre com mialgia de panturrilha; ictericia rubinica, IRA e hemorragia",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-052",
+      "titulo": "Leptospirose — Diagnostico e Tratamento",
+      "no_pai_id": "s8-infecto-13-050",
+      "nivel": "folha",
+      "escopo": "Contexto epidemiologico, sorologia e penicilina/doxiciclina",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-13-060",
+      "titulo": "Outras Zoonoses Regionais — Raiva, Hantavirose e Febre Maculosa",
+      "no_pai_id": "s8-infecto-13-000",
+      "nivel": "folha",
+      "escopo": "Zoonoses letais do Cone Sul: encefalite rabica, sindrome pulmonar, riquetsiose",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-14-000",
+      "titulo": "Infeccoes em Imunocomprometidos e Relacionadas a Assistencia (IRAS)",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Infeccoes do paciente sem defesa e as adquiridas dentro do servico de saude",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-14-001",
+      "titulo": "O Hospedeiro Imunocomprometido — Visao Geral",
+      "no_pai_id": "s8-infecto-14-000",
+      "nivel": "visao_geral",
+      "escopo": "Como o tipo de defeito imune preve o espectro de agentes",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-14-002",
+      "titulo": "Neutropenia Febril",
+      "no_pai_id": "s8-infecto-14-000",
+      "nivel": "folha",
+      "escopo": "A emergencia do paciente oncologico; antibiotico empirico imediato",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-14-003",
+      "titulo": "Infeccoes no Transplantado e Micoses Invasivas",
+      "no_pai_id": "s8-infecto-14-000",
+      "nivel": "folha",
+      "escopo": "Aspergilose, candidemia e reativacao de CMV sob imunossupressao",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-14-010",
+      "titulo": "IRAS — Visao Geral das Infeccoes Relacionadas a Assistencia",
+      "no_pai_id": "s8-infecto-14-000",
+      "nivel": "visao_geral",
+      "escopo": "As quatro grandes IRAS e por que carregam germes resistentes",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-14-011",
+      "titulo": "Cadeia Epidemiologica das IRAS e Precaucoes",
+      "no_pai_id": "s8-infecto-14-000",
+      "nivel": "folha",
+      "escopo": "Contato, goticula, aerossol; higiene das maos como intervencao central",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-14-012",
+      "titulo": "Patogenos Multirresistentes Hospitalares (MRSA, VRE, KPC, Acinetobacter)",
+      "no_pai_id": "s8-infecto-14-000",
+      "nivel": "folha",
+      "escopo": "Os principais germes MDR, mecanismos de resistencia e isolamento",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-14-013",
+      "titulo": "Comissao de Controle de Infeccao Hospitalar (CCIH)",
+      "no_pai_id": "s8-infecto-14-000",
+      "nivel": "folha",
+      "escopo": "Vigilancia, indicadores e o papel institucional no controle de IRAS",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-15-000",
+      "titulo": "Antimicrobianos, Resistencia e Imunizacao",
+      "no_pai_id": "s8-infecto-00-000",
+      "nivel": "modulo",
+      "escopo": "Uso racional de antimicrobianos, resistencia e prevencao por vacina",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-infecto-15-001",
+      "titulo": "Principios do Uso Racional de Antimicrobianos",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "visao_geral",
+      "escopo": "Espectro, foco, dose, duracao: a logica que evita dano e resistencia",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-15-002",
+      "titulo": "Classes de Antibioticos e Alvos Bacterianos",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "folha",
+      "escopo": "Parede, ribossomo, DNA, folato; como cada classe mata a bacteria",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-15-003",
+      "titulo": "Farmacocinetica/Farmacodinamica (PK/PD) dos Antimicrobianos",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "folha",
+      "escopo": "Tempo-dependente x concentracao-dependente; por que a dose importa",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-15-004",
+      "titulo": "Terapia Empirica vs Dirigida e Descalonamento",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "folha",
+      "escopo": "Comecar amplo, culturar, estreitar; a arte de ajustar pelo antibiograma",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-15-005",
+      "titulo": "Mecanismos de Resistencia Bacteriana",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "folha",
+      "escopo": "Beta-lactamases, bomba de efluxo, alteracao de alvo; ESBL, carbapenemase",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-15-006",
+      "titulo": "Stewardship de Antimicrobianos e a Ameaca Global da Resistencia",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "folha",
+      "escopo": "Programas de gerenciamento; a resistencia como problema de saude publica",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-15-007",
+      "titulo": "Antifungicos e Antivirais — Panorama",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "folha",
+      "escopo": "Azois, polienos, equinocandinas e antivirais; alvos e indicacoes principais",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-15-010",
+      "titulo": "Imunizacao do Adulto e do Viajante — Visao Geral",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "visao_geral",
+      "escopo": "Como a vacina previne infeccao e a logica do calendario do adulto",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-infecto-15-011",
+      "titulo": "Calendario Vacinal do Adulto e Situacoes Especiais",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "folha",
+      "escopo": "Influenza, dupla adulto, hepatite B, pneumococica; gestante e idoso",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-15-012",
+      "titulo": "Vacinacao do Viajante e Profilaxias Regionais",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "folha",
+      "escopo": "Febre amarela, quimioprofilaxia de malaria e orientacoes para o Cone Sul",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-infecto-15-013",
+      "titulo": "Vacinas em Imunocomprometidos — O Que Pode e o Que Nao Pode",
+      "no_pai_id": "s8-infecto-15-000",
+      "nivel": "folha",
+      "escopo": "Contraindicacao de vacinas vivas e a protecao do rebanho ao redor",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    }
+  ]
+}

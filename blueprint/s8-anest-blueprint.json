@@ -1,0 +1,1789 @@
+{
+  "disciplina_id": "anest",
+  "disciplina_nome": "Anestesiologia",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s8-anest-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "modulos": {
+      "10": "Anestesia Regional (neuroeixo: raqui e peridural; bloqueios periféricos guiados por USG)",
+      "11": "Monitorização Intraoperatória (SpO2, capnografia, PA invasiva/não invasiva, ECG, BIS, TOF, temperatura)",
+      "12": "Manejo Perioperatório de Comorbidades (DM, HAS, ICC, DPOC, IRC, obesidade, anticoagulação)",
+      "13": "Fluidoterapia, Reposição e Transfusão Perioperatória",
+      "14": "Complicações e Emergências Anestésicas (hipertermia maligna, anafilaxia, broncoaspiração, broncoespasmo, laringoespasmo, despertar intraoperatório)",
+      "15": "Dor Aguda e Analgesia Pós-Operatória (analgesia multimodal, PCA, dor crônica pós-cirúrgica)",
+      "16": "Recuperação Pós-Anestésica (SRPA, critérios de alta, NVPO, tremores)",
+      "17": "Reanimação Cardiopulmonar e Suporte de Vida (ACLS aplicado ao intraoperatório, PCR anestésica)",
+      "00": "Fundamentos: raiz + o que a anestesia resolve (a tríade abolir dor/consciência/movimento) + o método perioperatório + integração S5 (farmacologia clínica)",
+      "01": "Avaliação Pré-Anestésica e Estratificação de Risco (ASA, MET, Lee, jejum, via aérea prevista, consentimento)",
+      "02": "Farmacologia Anestésica — Princípios Aplicados (dose por kg, contexto-sensível, MAC, sinergia hipnótico-opioide)",
+      "03": "Anestésicos Inalatórios (halogenados e óxido nitroso — MAC/CAM, farmacocinética, órgãos-alvo)",
+      "04": "Anestésicos Venosos / Hipnóticos IV (propofol, etomidato, cetamina, dexmedetomidina, tiopental, benzodiazepínicos)",
+      "05": "Opioides em Anestesia (analgesia perioperatória, controle simpático, farmacocinética contexto-sensível)",
+      "06": "Bloqueadores Neuromusculares e Reversão (despolarizante x adespolarizante, sugammadex, neostigmina, TOF)",
+      "07": "Anestésicos Locais (mecanismo em canal de sódio, farmacologia, toxicidade sistêmica - LAST)",
+      "08": "Manejo da Via Aérea (avaliação, IOT, dispositivos supraglóticos, via aérea difícil, extubação)",
+      "09": "Anestesia Geral — Condução (indução, manutenção, despertar, planos, TIVA x balanceada)"
+    },
+    "lente_da_disciplina": "princípio (o que é preciso abolir/controlar) -> técnica (como fazer) -> manejo/segurança (como não matar o paciente). Cada fármaco parte do PROBLEMA que resolve; cada técnica parte da necessidade clínica, nunca do nome. Integra farmacologia clínica (S5), fisiologia cardiorrespiratória (S2-S3) e medicina interna (S7-S8).",
+    "criterio_de_folha": "Nó é folha quando sustenta as 8 etapas E >=1 flashcard contrafactual/clínico legítimo. Fármaco ou técnica com farmacologia + indicação + técnica + risco próprios vira folha individual. Grupo com muitos representantes vira visao_geral com folhas por representante. Se não sustenta as 8 etapas, vira seção do pai.",
+    "profundidade": "campo profundidade = profundidade na árvore (raiz da disciplina = 1).",
+    "nota_curriculo": "Segue o currículo oficial 8.5 (Cap. 6). Aprofunda cada item ao nível-folha do padrão histologia: cada halogenado, cada hipnótico IV, cada BNM, cada técnica regional e cada emergência é bloco próprio. Expande além do currículo literal com módulos de opioides, anestésicos locais, fluidoterapia/transfusão, recuperação pós-anestésica (SRPA/NVPO) e RCP intraoperatória, todos exigidos pela nota específica da disciplina."
+  },
+  "blocos": [
+    {
+      "id": "s8-anest-00-000",
+      "titulo": "Anestesiologia — A Medicina de Suspender e Devolver a Consciência com Segurança",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Por que existe uma especialidade dedicada a abolir dor e consciência reversivelmente",
+      "lentes": [
+        "principio",
+        "fisiopatologia",
+        "etimologia"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s8-anest-00-001",
+      "titulo": "O Problema Central da Anestesia — Operar um Corpo Vivo e Consciente",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "visao_geral",
+      "escopo": "Dor, consciência, movimento e reflexos autonômicos como barreiras à cirurgia",
+      "lentes": [
+        "principio",
+        "fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-00-002",
+      "titulo": "A Tríade Anestésica — Hipnose, Analgesia e Imobilidade",
+      "no_pai_id": "s8-anest-00-001",
+      "nivel": "tema",
+      "escopo": "Os três alvos independentes que definem a anestesia geral moderna",
+      "lentes": [
+        "principio",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-00-003",
+      "titulo": "Segurança como Especialidade — Por Que o Anestesiologista é um Guardião Fisiológico",
+      "no_pai_id": "s8-anest-00-001",
+      "nivel": "tema",
+      "escopo": "O paciente anestesiado perde reflexos protetores; a vigilância os substitui",
+      "lentes": [
+        "principio",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-00-004",
+      "titulo": "História e Etimologia da Anestesia — do Éter à Anestesia Moderna",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "tema",
+      "escopo": "Morton, o éter, e o nome cunhado por Oliver Wendell Holmes",
+      "lentes": [
+        "etimologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-00-005",
+      "titulo": "O Fluxo Perioperatório — Pré, Intra e Pós-Operatório",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "tema",
+      "escopo": "As três fases do cuidado anestésico e o que cada uma resolve",
+      "lentes": [
+        "principio",
+        "manejo_seguranca"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-01-000",
+      "titulo": "Avaliação Pré-Anestésica e Estratificação de Risco",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Como prever e reduzir o risco antes de anestesiar",
+      "lentes": [
+        "diagnostico_exames",
+        "manejo_seguranca",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-01-001",
+      "titulo": "Consulta Pré-Anestésica — Por Que Conhecer o Paciente Antes de Adormecê-lo",
+      "no_pai_id": "s8-anest-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Objetivos, anamnese dirigida e otimização pré-operatória",
+      "lentes": [
+        "raciocinio_clinico",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-01-002",
+      "titulo": "Classificação ASA — Estratificar o Estado Físico",
+      "no_pai_id": "s8-anest-01-000",
+      "nivel": "folha",
+      "escopo": "As classes ASA I-VI e o sufixo E; o que cada uma prediz",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-01-003",
+      "titulo": "Capacidade Funcional e METs — Medir a Reserva Cardiorrespiratória",
+      "no_pai_id": "s8-anest-01-000",
+      "nivel": "folha",
+      "escopo": "Equivalentes metabólicos como proxy de tolerância ao estresse cirúrgico",
+      "lentes": [
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-01-004",
+      "titulo": "Índice de Risco Cardíaco Revisado de Lee — Prever Evento Cardíaco Perioperatório",
+      "no_pai_id": "s8-anest-01-000",
+      "nivel": "folha",
+      "escopo": "Os seis preditores de Lee e a estratificação de risco cardíaco não cardíaco",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-01-005",
+      "titulo": "Avaliação de Via Aérea Prevista — Prever a Intubação Difícil",
+      "no_pai_id": "s8-anest-01-000",
+      "nivel": "folha",
+      "escopo": "Mallampati, distância tireomentoniana, abertura bucal, mobilidade cervical",
+      "lentes": [
+        "diagnostico_exames",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-01-006",
+      "titulo": "Jejum Pré-Operatório — Por Que e Quanto Tempo",
+      "no_pai_id": "s8-anest-01-000",
+      "nivel": "folha",
+      "escopo": "Prevenir broncoaspiração; regras 2-4-6-8 e exceções (protocolos ERAS)",
+      "lentes": [
+        "manejo_seguranca",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-01-007",
+      "titulo": "Exames Complementares Pré-Operatórios — Pedir com Racionalidade",
+      "no_pai_id": "s8-anest-01-000",
+      "nivel": "folha",
+      "escopo": "Quando o exame muda a conduta; evitar solicitações reflexas",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-01-008",
+      "titulo": "Manejo Pré-Operatório de Medicações de Uso Contínuo",
+      "no_pai_id": "s8-anest-01-000",
+      "nivel": "folha",
+      "escopo": "O que suspender, manter ou substituir (IECA, hipoglicemiantes, anticoagulantes)",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-01-009",
+      "titulo": "Consentimento Informado e Escolha da Técnica Anestésica",
+      "no_pai_id": "s8-anest-01-000",
+      "nivel": "folha",
+      "escopo": "Geral x regional x sedação; riscos, benefícios e decisão compartilhada",
+      "lentes": [
+        "raciocinio_clinico",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-02-000",
+      "titulo": "Farmacologia Anestésica — Princípios Aplicados",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "As regras farmacocinéticas e farmacodinâmicas que governam toda anestesia",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-02-001",
+      "titulo": "Por Que a Anestesia Exige Farmacologia de Precisão",
+      "no_pai_id": "s8-anest-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Janela terapêutica estreita, efeito rápido e reversível, titulação contínua",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "principio"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-02-002",
+      "titulo": "Dose por Quilograma e Peso Corrigido — Acertar a Quantidade",
+      "no_pai_id": "s8-anest-02-000",
+      "nivel": "folha",
+      "escopo": "Peso real, ideal e magro; por que o obeso não recebe dose linear",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-02-003",
+      "titulo": "Farmacocinética do Bolus — Redistribuição e Despertar Rápido",
+      "no_pai_id": "s8-anest-02-000",
+      "nivel": "folha",
+      "escopo": "Por que o efeito de um bolus termina por redistribuição, não por metabolismo",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-02-004",
+      "titulo": "Meia-Vida Contexto-Sensível — Por Que a Infusão Muda o Despertar",
+      "no_pai_id": "s8-anest-02-000",
+      "nivel": "folha",
+      "escopo": "Como a duração da infusão determina o tempo de recuperação",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-02-005",
+      "titulo": "Concentração Alvo-Controlada (TCI) — Modelos Farmacocinéticos na Prática",
+      "no_pai_id": "s8-anest-02-000",
+      "nivel": "folha",
+      "escopo": "Bombas que miram concentração plasmática/efeito; modelos Marsh e Schnider",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-02-006",
+      "titulo": "Sinergia Hipnótico-Opioide — Por Que Combinar Reduz Dose",
+      "no_pai_id": "s8-anest-02-000",
+      "nivel": "folha",
+      "escopo": "A interação que permite anestesia com menos de cada fármaco",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-03-000",
+      "titulo": "Anestésicos Inalatórios",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Gases e vapores que produzem e mantêm hipnose pela via pulmonar",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-03-001",
+      "titulo": "Anestésicos Inalatórios — Visão Geral e Por Que Respirar um Anestésico",
+      "no_pai_id": "s8-anest-03-000",
+      "nivel": "visao_geral",
+      "escopo": "A vantagem do pulmão como via de administração e controle",
+      "lentes": [
+        "principio",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-03-002",
+      "titulo": "MAC / CAM — A Potência Medida em Fração de Concentração Alveolar",
+      "no_pai_id": "s8-anest-03-000",
+      "nivel": "folha",
+      "escopo": "Concentração alveolar mínima; o que aumenta e reduz a MAC",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-03-003",
+      "titulo": "Farmacocinética Inalatória — Coeficientes de Partição e Velocidade de Indução",
+      "no_pai_id": "s8-anest-03-000",
+      "nivel": "folha",
+      "escopo": "Solubilidade sangue/gás, efeito do débito cardíaco e da ventilação",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-03-004",
+      "titulo": "Sevoflurano — O Halogenado da Indução Suave",
+      "no_pai_id": "s8-anest-03-000",
+      "nivel": "folha",
+      "escopo": "Baixa irritação, indução inalatória, cuidado com composto A",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-03-005",
+      "titulo": "Desflurano — Despertar Rápido e Suas Armadilhas",
+      "no_pai_id": "s8-anest-03-000",
+      "nivel": "folha",
+      "escopo": "Baixa solubilidade, taquicardia com aumento rápido, vaporizador aquecido",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-03-006",
+      "titulo": "Isoflurano — O Halogenado de Referência",
+      "no_pai_id": "s8-anest-03-000",
+      "nivel": "folha",
+      "escopo": "Estabilidade, custo, efeitos hemodinâmicos e uso em manutenção",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-03-007",
+      "titulo": "Óxido Nitroso — O Gás Analgésico Coadjuvante",
+      "no_pai_id": "s8-anest-03-000",
+      "nivel": "folha",
+      "escopo": "Segundo gás, expansão de cavidades, hipóxia difusional, inativação de B12",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-03-008",
+      "titulo": "Efeitos Sistêmicos dos Halogenados — Coração, Cérebro e Útero",
+      "no_pai_id": "s8-anest-03-000",
+      "nivel": "folha",
+      "escopo": "Depressão miocárdica, vasodilatação cerebral, relaxamento uterino",
+      "lentes": [
+        "fisiopatologia",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-04-000",
+      "titulo": "Anestésicos Venosos / Hipnóticos Intravenosos",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Fármacos IV que induzem hipnose em um braço-cérebro de tempo",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-04-001",
+      "titulo": "Hipnóticos IV — Visão Geral e o Alvo GABA",
+      "no_pai_id": "s8-anest-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a maioria potencia o GABA-A; exceções e escolha por perfil",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "principio"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-04-002",
+      "titulo": "Propofol — O Hipnótico Universal",
+      "no_pai_id": "s8-anest-04-000",
+      "nivel": "folha",
+      "escopo": "Indução, TIVA, antiemese, hipotensão, dor à injeção, síndrome da infusão",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-04-003",
+      "titulo": "Etomidato — O Hipnótico do Paciente Instável",
+      "no_pai_id": "s8-anest-04-000",
+      "nivel": "folha",
+      "escopo": "Estabilidade hemodinâmica, supressão adrenal, mioclonias",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-04-004",
+      "titulo": "Cetamina — O Anestésico Dissociativo",
+      "no_pai_id": "s8-anest-04-000",
+      "nivel": "folha",
+      "escopo": "Antagonismo NMDA, analgesia, broncodilatação, estímulo simpático, delírio",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-04-005",
+      "titulo": "Dexmedetomidina — Sedação com Paciente Cooperativo",
+      "no_pai_id": "s8-anest-04-000",
+      "nivel": "folha",
+      "escopo": "Agonista alfa-2, sedação sem depressão respiratória, bradicardia",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-04-006",
+      "titulo": "Tiopental — O Barbitúrico Clássico e o Neuroanestésico",
+      "no_pai_id": "s8-anest-04-000",
+      "nivel": "folha",
+      "escopo": "Proteção cerebral, redução da PIC, acúmulo, porfiria como contraindicação",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-04-007",
+      "titulo": "Benzodiazepínicos em Anestesia — Midazolam e a Ansiólise",
+      "no_pai_id": "s8-anest-04-000",
+      "nivel": "folha",
+      "escopo": "Pré-medicação, amnésia anterógrada, co-indução, reversão com flumazenil",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-05-000",
+      "titulo": "Opioides em Anestesia",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Analgesia perioperatória e controle da resposta simpática à cirurgia",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-05-001",
+      "titulo": "Opioides no Intraoperatório — Visão Geral e o Receptor Mu",
+      "no_pai_id": "s8-anest-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a analgesia potente atenua a resposta ao estresse cirúrgico",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "principio"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-05-002",
+      "titulo": "Fentanil — O Opioide de Referência Intraoperatório",
+      "no_pai_id": "s8-anest-05-000",
+      "nivel": "folha",
+      "escopo": "Potência, início rápido, redistribuição, rigidez torácica em bolus",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-05-003",
+      "titulo": "Remifentanil — O Opioide de Meia-Vida Ultracurta",
+      "no_pai_id": "s8-anest-05-000",
+      "nivel": "folha",
+      "escopo": "Metabolismo por esterases, offset previsível, hiperalgesia, ponte analgésica",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-05-004",
+      "titulo": "Morfina e Opioides de Ação Prolongada no Perioperatório",
+      "no_pai_id": "s8-anest-05-000",
+      "nivel": "folha",
+      "escopo": "Analgesia pós-operatória, metabólito ativo, cuidado em insuficiência renal",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-05-005",
+      "titulo": "Efeitos Adversos dos Opioides e Reversão com Naloxona",
+      "no_pai_id": "s8-anest-05-000",
+      "nivel": "folha",
+      "escopo": "Depressão respiratória, bradicardia, prurido, íleo; antagonismo mu",
+      "lentes": [
+        "manejo_seguranca",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-06-000",
+      "titulo": "Bloqueadores Neuromusculares e Reversão",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Abolir o movimento para intubar e operar; devolver a força com segurança",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-06-001",
+      "titulo": "Bloqueio Neuromuscular — Visão Geral e a Junção Neuromuscular",
+      "no_pai_id": "s8-anest-06-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que paralisar; receptor nicotínico e os dois mecanismos de bloqueio",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "principio"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-06-002",
+      "titulo": "Succinilcolina — O Despolarizante de Ação Ultrarrápida",
+      "no_pai_id": "s8-anest-06-000",
+      "nivel": "folha",
+      "escopo": "Sequência rápida, fasciculações, hipercalemia, gatilho de hipertermia maligna",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-06-003",
+      "titulo": "Rocurônio — O Adespolarizante de Início Rápido",
+      "no_pai_id": "s8-anest-06-000",
+      "nivel": "folha",
+      "escopo": "Alternativa à succinilcolina em sequência rápida; reversão por sugammadex",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-06-004",
+      "titulo": "Atracúrio e Cisatracúrio — Eliminação Independente de Órgão",
+      "no_pai_id": "s8-anest-06-000",
+      "nivel": "folha",
+      "escopo": "Degradação de Hofmann, uso em insuficiência hepática/renal, liberação de histamina",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-06-005",
+      "titulo": "Vecurônio e Pancurônio — Aminosteroides de Duração Intermediária e Longa",
+      "no_pai_id": "s8-anest-06-000",
+      "nivel": "folha",
+      "escopo": "Perfil hemodinâmico, dependência de excreção, taquicardia do pancurônio",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-06-006",
+      "titulo": "Reversão com Neostigmina — Inibir a Acetilcolinesterase",
+      "no_pai_id": "s8-anest-06-000",
+      "nivel": "folha",
+      "escopo": "Acúmulo de acetilcolina, teto de reversão, necessidade de antimuscarínico",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-06-007",
+      "titulo": "Sugammadex — A Reversão por Encapsulamento",
+      "no_pai_id": "s8-anest-06-000",
+      "nivel": "folha",
+      "escopo": "Quelação do rocurônio/vecurônio, reversão profunda, interação com contraceptivo",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-06-008",
+      "titulo": "Curarização Residual — O Bloqueio que Não Se Vê",
+      "no_pai_id": "s8-anest-06-000",
+      "nivel": "folha",
+      "escopo": "Bloqueio residual pós-operatório, risco respiratório, TOF como guarda",
+      "lentes": [
+        "manejo_seguranca",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-07-000",
+      "titulo": "Anestésicos Locais",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Bloquear a condução nervosa de forma reversível e local",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-07-001",
+      "titulo": "Anestésicos Locais — Visão Geral e o Bloqueio do Canal de Sódio",
+      "no_pai_id": "s8-anest-07-000",
+      "nivel": "visao_geral",
+      "escopo": "Como impedir o potencial de ação; por que a dor cessa localmente",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "principio"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-07-002",
+      "titulo": "Ésteres x Amidas — Duas Químicas, Dois Metabolismos",
+      "no_pai_id": "s8-anest-07-000",
+      "nivel": "folha",
+      "escopo": "Estrutura, alergia, metabolismo plasmático x hepático (a regra dos dois i)",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-07-003",
+      "titulo": "Lidocaína — O Anestésico Local Versátil",
+      "no_pai_id": "s8-anest-07-000",
+      "nivel": "folha",
+      "escopo": "Infiltração, tópico, uso IV, antiarrítmico, início rápido e duração média",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-07-004",
+      "titulo": "Bupivacaína e Ropivacaína — Longa Duração e Cardiotoxicidade",
+      "no_pai_id": "s8-anest-07-000",
+      "nivel": "folha",
+      "escopo": "Bloqueio neuroaxial e periférico prolongado; risco cardíaco da bupivacaína",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-07-005",
+      "titulo": "Vasoconstritor Associado e Dose Máxima Segura",
+      "no_pai_id": "s8-anest-07-000",
+      "nivel": "folha",
+      "escopo": "Adrenalina para prolongar e reduzir absorção; calcular o teto por peso",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-07-006",
+      "titulo": "Toxicidade Sistêmica dos Anestésicos Locais (LAST) e Emulsão Lipídica",
+      "no_pai_id": "s8-anest-07-000",
+      "nivel": "folha",
+      "escopo": "Neuro e cardiotoxicidade por injeção intravascular; resgate com lipídio",
+      "lentes": [
+        "manejo_seguranca",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-000",
+      "titulo": "Manejo da Via Aérea",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Garantir oxigenação e ventilação quando o paciente não respira sozinho",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-08-001",
+      "titulo": "Via Aérea em Anestesia — Visão Geral e Por Que É a Prioridade Absoluta",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Perda de reflexos e tônus; a via aérea como o A do ABC",
+      "lentes": [
+        "principio",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-002",
+      "titulo": "Ventilação sob Máscara Facial — A Habilidade de Base",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "folha",
+      "escopo": "Posicionamento, selo, cânula de Guedel, preditores de ventilação difícil",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-003",
+      "titulo": "Dispositivos Supraglóticos — A Máscara Laríngea",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "folha",
+      "escopo": "Indicações, limitações, papel no algoritmo de resgate, gerações da MLa",
+      "lentes": [
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-004",
+      "titulo": "Laringoscopia e Intubação Orotraqueal — A Técnica Padrão",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "folha",
+      "escopo": "Laringoscópio direto, visão de Cormack-Lehane, confirmação por capnografia",
+      "lentes": [
+        "conduta_tecnica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-005",
+      "titulo": "Videolaringoscopia e Dispositivos Ópticos",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "folha",
+      "escopo": "Como a câmera contorna a via aérea difícil prevista",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-006",
+      "titulo": "Indução em Sequência Rápida — Proteger o Paciente com Estômago Cheio",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "folha",
+      "escopo": "Pré-oxigenação, hipnótico e paralítico em bolus, minimizar aspiração",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-007",
+      "titulo": "Algoritmo da Via Aérea Difícil — Quando o Plano A Falha",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "folha",
+      "escopo": "Sequência de resgate, cenário 'não intubo, não ventilo', via aérea invasiva",
+      "lentes": [
+        "raciocinio_clinico",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-008",
+      "titulo": "Intubação Acordada com Fibroscópio — A Via Aérea Difícil Antecipada",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "folha",
+      "escopo": "Manter ventilação espontânea; anestesia tópica de via aérea",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-009",
+      "titulo": "Cricotireoidostomia de Emergência — O Acesso Cirúrgico Final",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "folha",
+      "escopo": "A saída invasiva no cenário 'não intubo, não ventilo'",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-08-010",
+      "titulo": "Extubação Segura — O Momento Tão Crítico Quanto a Intubação",
+      "no_pai_id": "s8-anest-08-000",
+      "nivel": "folha",
+      "escopo": "Critérios, laringoespasmo, extubação da via aérea difícil",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-09-000",
+      "titulo": "Anestesia Geral — Condução",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Levar o paciente à inconsciência, mantê-lo e devolvê-lo com segurança",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca",
+        "fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-09-001",
+      "titulo": "As Fases da Anestesia Geral — Visão Geral",
+      "no_pai_id": "s8-anest-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Indução, manutenção e despertar como um continuum controlado",
+      "lentes": [
+        "conduta_tecnica",
+        "principio"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-09-002",
+      "titulo": "Indução Anestésica — Cruzar a Linha da Consciência",
+      "no_pai_id": "s8-anest-09-000",
+      "nivel": "folha",
+      "escopo": "Pré-oxigenação, hipnótico, opioide, paralisia, controle da via aérea",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-09-003",
+      "titulo": "Planos de Anestesia e os Sinais de Guedel",
+      "no_pai_id": "s8-anest-09-000",
+      "nivel": "folha",
+      "escopo": "Estágios da profundidade anestésica e sinais clínicos históricos",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-09-004",
+      "titulo": "Manutenção — Anestesia Balanceada x TIVA",
+      "no_pai_id": "s8-anest-09-000",
+      "nivel": "folha",
+      "escopo": "Manter hipnose/analgesia/relaxamento por via inalatória ou venosa total",
+      "lentes": [
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-09-005",
+      "titulo": "Despertar e Emergência da Anestesia",
+      "no_pai_id": "s8-anest-09-000",
+      "nivel": "folha",
+      "escopo": "Reverter fármacos, restaurar ventilação espontânea, prevenir delírio",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-09-006",
+      "titulo": "Sedação Consciente e Anestesia Monitorada",
+      "no_pai_id": "s8-anest-09-000",
+      "nivel": "folha",
+      "escopo": "O espectro sedação leve-profunda; riscos da fronteira com anestesia geral",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-10-000",
+      "titulo": "Anestesia Regional",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Anestesiar uma região sem abolir a consciência",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas",
+        "manejo_seguranca"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-10-001",
+      "titulo": "Anestesia Regional — Visão Geral e Por Que Evitar a Anestesia Geral",
+      "no_pai_id": "s8-anest-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Vantagens analgésicas e respiratórias; neuroeixo x bloqueio periférico",
+      "lentes": [
+        "principio",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-10-002",
+      "titulo": "Bloqueio do Neuroeixo — Visão Geral e Anatomia Aplicada",
+      "no_pai_id": "s8-anest-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Espaços subaracnóideo e peridural; camadas atravessadas pela agulha",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-10-003",
+      "titulo": "Raquianestesia — O Bloqueio Subaracnóideo",
+      "no_pai_id": "s8-anest-10-002",
+      "nivel": "folha",
+      "escopo": "Injeção no LCR, dose baixa, início rápido, nível controlado por baricidade",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-anest-10-004",
+      "titulo": "Anestesia Peridural — O Bloqueio do Espaço Epidural",
+      "no_pai_id": "s8-anest-10-002",
+      "nivel": "folha",
+      "escopo": "Cateter, dose maior, início lento, analgesia contínua, perda de resistência",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-anest-10-005",
+      "titulo": "Raqui x Peridural — Escolher entre os Dois Neuroeixos",
+      "no_pai_id": "s8-anest-10-002",
+      "nivel": "folha",
+      "escopo": "Comparação de início, controle, cateter, uso obstétrico e cirúrgico",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-anest-10-006",
+      "titulo": "Complicações do Neuroeixo — Hipotensão, Cefaleia Pós-Punção e Bloqueio Alto",
+      "no_pai_id": "s8-anest-10-002",
+      "nivel": "folha",
+      "escopo": "Bloqueio simpático, cefaleia por vazamento de LCR, raqui total, hematoma",
+      "lentes": [
+        "fisiopatologia",
+        "manejo_seguranca"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-anest-10-007",
+      "titulo": "Anestesia Regional e Anticoagulação — A Regra do Hematoma Espinhal",
+      "no_pai_id": "s8-anest-10-002",
+      "nivel": "folha",
+      "escopo": "Intervalos seguros para punção e retirada de cateter sob antitrombóticos",
+      "lentes": [
+        "manejo_seguranca",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-anest-10-008",
+      "titulo": "Bloqueios de Nervos Periféricos Guiados por Ultrassom — Visão Geral",
+      "no_pai_id": "s8-anest-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Ver o nervo e o anestésico em tempo real; princípios do bloqueio periférico",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-10-009",
+      "titulo": "Bloqueio do Plexo Braquial — Anestesiar o Membro Superior",
+      "no_pai_id": "s8-anest-10-008",
+      "nivel": "folha",
+      "escopo": "Abordagens interescalênica, supraclavicular, axilar e suas indicações",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-anest-10-010",
+      "titulo": "Bloqueios do Membro Inferior — Femoral, Ciático e Adutor",
+      "no_pai_id": "s8-anest-10-008",
+      "nivel": "folha",
+      "escopo": "Analgesia de joelho e perna; poupar opioide em ortopedia",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-anest-10-011",
+      "titulo": "Bloqueios de Parede Abdominal e Torácica — TAP e Similares",
+      "no_pai_id": "s8-anest-10-008",
+      "nivel": "folha",
+      "escopo": "Analgesia de incisão abdominal; bloqueios de plano fascial",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-anest-11-000",
+      "titulo": "Monitorização Intraoperatória",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Ver a fisiologia em tempo real para agir antes do dano",
+      "lentes": [
+        "diagnostico_exames",
+        "manejo_seguranca",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-11-001",
+      "titulo": "Monitorização — Visão Geral e o Padrão Mínimo Obrigatório",
+      "no_pai_id": "s8-anest-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que se monitora; padrões ASA de monitorização básica",
+      "lentes": [
+        "principio",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-11-002",
+      "titulo": "Oximetria de Pulso — Medir a Oxigenação a Cada Batimento",
+      "no_pai_id": "s8-anest-11-000",
+      "nivel": "folha",
+      "escopo": "Princípio da espectrofotometria, limitações, atraso na dessaturação",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-11-003",
+      "titulo": "Capnografia — O Monitor que Confirma a Ventilação",
+      "no_pai_id": "s8-anest-11-000",
+      "nivel": "folha",
+      "escopo": "CO2 expirado, confirmação de intubação, formato da curva como diagnóstico",
+      "lentes": [
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-11-004",
+      "titulo": "Pressão Arterial Não Invasiva — Oscilometria na Prática",
+      "no_pai_id": "s8-anest-11-000",
+      "nivel": "folha",
+      "escopo": "Como o manguito mede, limitações, frequência de aferição",
+      "lentes": [
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-11-005",
+      "titulo": "Pressão Arterial Invasiva — A Linha Arterial Batimento a Batimento",
+      "no_pai_id": "s8-anest-11-000",
+      "nivel": "folha",
+      "escopo": "Indicações, transdutor, curva, variação da pressão de pulso e volemia",
+      "lentes": [
+        "diagnostico_exames",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-11-006",
+      "titulo": "Eletrocardiografia Intraoperatória — Isquemia e Arritmia em Tempo Real",
+      "no_pai_id": "s8-anest-11-000",
+      "nivel": "folha",
+      "escopo": "Derivações de monitorização, detecção de isquemia e distúrbios de ritmo",
+      "lentes": [
+        "diagnostico_exames",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-11-007",
+      "titulo": "Monitorização da Profundidade Anestésica — o BIS e o Índice Bispectral",
+      "no_pai_id": "s8-anest-11-000",
+      "nivel": "folha",
+      "escopo": "Processar o EEG para estimar hipnose e prevenir despertar",
+      "lentes": [
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-11-008",
+      "titulo": "Monitorização Neuromuscular — o TOF e o Grau de Bloqueio",
+      "no_pai_id": "s8-anest-11-000",
+      "nivel": "folha",
+      "escopo": "Estímulo train-of-four, razão T4/T1, guia de reversão segura",
+      "lentes": [
+        "diagnostico_exames",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-11-009",
+      "titulo": "Monitorização da Temperatura e o Balanço Térmico Intraoperatório",
+      "no_pai_id": "s8-anest-11-000",
+      "nivel": "folha",
+      "escopo": "Hipotermia perioperatória, sítios de medida, aquecimento ativo",
+      "lentes": [
+        "diagnostico_exames",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-12-000",
+      "titulo": "Manejo Perioperatório de Comorbidades",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Adaptar a anestesia às doenças crônicas do paciente",
+      "lentes": [
+        "raciocinio_clinico",
+        "manejo_seguranca",
+        "fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-12-001",
+      "titulo": "Comorbidades e Anestesia — Visão Geral do Risco Sistêmico",
+      "no_pai_id": "s8-anest-12-000",
+      "nivel": "visao_geral",
+      "escopo": "Como cada doença crônica muda a fisiologia sob anestesia",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-12-002",
+      "titulo": "Paciente Hipertenso — Estabilidade Hemodinâmica na Indução",
+      "no_pai_id": "s8-anest-12-000",
+      "nivel": "folha",
+      "escopo": "Labilidade pressórica, IECA no dia, resposta exagerada à laringoscopia",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-12-003",
+      "titulo": "Paciente Diabético — Controle Glicêmico e Jejum Perioperatório",
+      "no_pai_id": "s8-anest-12-000",
+      "nivel": "folha",
+      "escopo": "Manejo de insulina e hipoglicemiantes, hipoglicemia oculta, gastroparesia",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-12-004",
+      "titulo": "Paciente com Insuficiência Cardíaca — Preservar o Débito",
+      "no_pai_id": "s8-anest-12-000",
+      "nivel": "folha",
+      "escopo": "Escolha de fármacos, controle de pré e pós-carga, monitorização ampliada",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-12-005",
+      "titulo": "Paciente com DPOC / Asma — Proteger a Via Aérea Reativa",
+      "no_pai_id": "s8-anest-12-000",
+      "nivel": "folha",
+      "escopo": "Broncoespasmo perioperatório, escolha de agentes, ventilação protetora",
+      "lentes": [
+        "fisiopatologia",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-12-006",
+      "titulo": "Paciente com Insuficiência Renal — Fármacos e Eliminação",
+      "no_pai_id": "s8-anest-12-000",
+      "nivel": "folha",
+      "escopo": "Evitar acúmulo, hipercalemia, escolha de BNM e opioide, volemia",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-12-007",
+      "titulo": "Paciente Obeso — Farmacocinética, Via Aérea e Ventilação",
+      "no_pai_id": "s8-anest-12-000",
+      "nivel": "folha",
+      "escopo": "Dose por peso corrigido, apneia do sono, posicionamento, dessaturação rápida",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-12-008",
+      "titulo": "Manejo Perioperatório da Anticoagulação e Antiagregação",
+      "no_pai_id": "s8-anest-12-000",
+      "nivel": "folha",
+      "escopo": "Ponte, suspensão e retomada; equilibrar sangramento e trombose",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-13-000",
+      "titulo": "Fluidoterapia, Reposição e Transfusão Perioperatória",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Manter volume, perfusão e transporte de oxigênio durante a cirurgia",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-13-001",
+      "titulo": "Fluidoterapia Perioperatória — Visão Geral e o Balanço Volêmico",
+      "no_pai_id": "s8-anest-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Perdas, manutenção e ressuscitação; conceito de fluidorresponsividade",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-13-002",
+      "titulo": "Cristaloides x Coloides — Escolher o Fluido de Reposição",
+      "no_pai_id": "s8-anest-13-000",
+      "nivel": "folha",
+      "escopo": "Distribuição, expansão volêmica, riscos e indicações de cada classe",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-13-003",
+      "titulo": "Perda Sanguínea e Indicação de Transfusão",
+      "no_pai_id": "s8-anest-13-000",
+      "nivel": "folha",
+      "escopo": "Estimar perda, gatilho transfusional, hemocomponentes básicos",
+      "lentes": [
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-13-004",
+      "titulo": "Reações Transfusionais e Segurança Hemoterápica",
+      "no_pai_id": "s8-anest-13-000",
+      "nivel": "folha",
+      "escopo": "Hemolítica aguda, TRALI, TACO; reconhecer e agir no intraoperatório",
+      "lentes": [
+        "manejo_seguranca",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-14-000",
+      "titulo": "Complicações e Emergências Anestésicas",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Reconhecer e tratar os eventos que ameaçam a vida na sala",
+      "lentes": [
+        "fisiopatologia",
+        "manejo_seguranca",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-14-001",
+      "titulo": "Emergências na Sala de Cirurgia — Visão Geral do Raciocínio de Crise",
+      "no_pai_id": "s8-anest-14-000",
+      "nivel": "visao_geral",
+      "escopo": "Reconhecer o padrão, priorizar oxigenação, pedir ajuda, usar checklist",
+      "lentes": [
+        "raciocinio_clinico",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-14-002",
+      "titulo": "Hipertermia Maligna — A Emergência Farmacogenética",
+      "no_pai_id": "s8-anest-14-000",
+      "nivel": "folha",
+      "escopo": "Receptor de rianodina, gatilhos, hipermetabolismo, dantroleno",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-14-003",
+      "titulo": "Anafilaxia Perioperatória — o Choque na Sala",
+      "no_pai_id": "s8-anest-14-000",
+      "nivel": "folha",
+      "escopo": "Culpados frequentes (BNM, látex, antibiótico), diagnóstico, adrenalina",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-14-004",
+      "titulo": "Broncoaspiração — Quando o Conteúdo Gástrico Invade o Pulmão",
+      "no_pai_id": "s8-anest-14-000",
+      "nivel": "folha",
+      "escopo": "Fisiopatologia da síndrome de Mendelson, prevenção e manejo",
+      "lentes": [
+        "fisiopatologia",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-14-005",
+      "titulo": "Broncoespasmo Intraoperatório — A Via Aérea que Fecha",
+      "no_pai_id": "s8-anest-14-000",
+      "nivel": "folha",
+      "escopo": "Gatilhos, diagnóstico diferencial de alta pressão, tratamento imediato",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-14-006",
+      "titulo": "Laringoespasmo — O Fechamento Reflexo da Glote",
+      "no_pai_id": "s8-anest-14-000",
+      "nivel": "folha",
+      "escopo": "Estímulo em plano superficial, manobra de Larson, edema pós-obstrutivo",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-14-007",
+      "titulo": "Despertar Intraoperatório — Consciência sob Anestesia",
+      "no_pai_id": "s8-anest-14-000",
+      "nivel": "folha",
+      "escopo": "Causas, fatores de risco, prevenção com BIS, consequências psicológicas",
+      "lentes": [
+        "fisiopatologia",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-14-008",
+      "titulo": "Hipotensão e Hipertensão Intraoperatória — as Descompensações Comuns",
+      "no_pai_id": "s8-anest-14-000",
+      "nivel": "folha",
+      "escopo": "Causas frequentes, algoritmo diagnóstico rápido, vasopressores e vasodilatadores",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-14-009",
+      "titulo": "Hipoxemia e Hipercapnia Intraoperatórias — Falha na Troca Gasosa",
+      "no_pai_id": "s8-anest-14-000",
+      "nivel": "folha",
+      "escopo": "Diagnóstico diferencial de dessaturação, intubação seletiva, pneumotórax",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-15-000",
+      "titulo": "Dor Aguda e Analgesia Pós-Operatória",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Controlar a dor cirúrgica com o mínimo de efeitos adversos",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-15-001",
+      "titulo": "Dor Pós-Operatória — Visão Geral e Por Que Tratar Bem Importa",
+      "no_pai_id": "s8-anest-15-000",
+      "nivel": "visao_geral",
+      "escopo": "Sensibilização, impacto na recuperação, cronificação evitável",
+      "lentes": [
+        "fisiopatologia",
+        "principio"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-15-002",
+      "titulo": "Analgesia Multimodal — Atacar a Dor por Vários Alvos",
+      "no_pai_id": "s8-anest-15-000",
+      "nivel": "folha",
+      "escopo": "Combinar mecanismos para reduzir opioide e efeitos adversos",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-15-003",
+      "titulo": "Analgesia Controlada pelo Paciente (PCA) — O Paciente no Comando",
+      "no_pai_id": "s8-anest-15-000",
+      "nivel": "folha",
+      "escopo": "Bolus sob demanda, lockout, segurança, titulação individual",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-15-004",
+      "titulo": "Analgesia Regional Pós-Operatória — Peridural e Cateteres Perineurais",
+      "no_pai_id": "s8-anest-15-000",
+      "nivel": "folha",
+      "escopo": "Bloqueio contínuo para grandes cirurgias; vantagens funcionais",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-15-005",
+      "titulo": "Adjuvantes Analgésicos — AINEs, Paracetamol, Gabapentinoides e Cetamina",
+      "no_pai_id": "s8-anest-15-000",
+      "nivel": "folha",
+      "escopo": "O papel de cada classe poupadora de opioide na multimodalidade",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-15-006",
+      "titulo": "Dor Crônica Pós-Cirúrgica — Quando a Dor Aguda Não Cede",
+      "no_pai_id": "s8-anest-15-000",
+      "nivel": "folha",
+      "escopo": "Fatores de risco, sensibilização central, prevenção perioperatória",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-16-000",
+      "titulo": "Recuperação Pós-Anestésica",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Vigiar o paciente até que recupere reflexos e estabilidade",
+      "lentes": [
+        "manejo_seguranca",
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-16-001",
+      "titulo": "Sala de Recuperação Pós-Anestésica (SRPA) — Visão Geral",
+      "no_pai_id": "s8-anest-16-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a recuperação exige vigilância; riscos das primeiras horas",
+      "lentes": [
+        "principio",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-16-002",
+      "titulo": "Náusea e Vômito Pós-Operatórios (NVPO) — Prevenir e Tratar",
+      "no_pai_id": "s8-anest-16-000",
+      "nivel": "folha",
+      "escopo": "Fatores de risco (Apfel), profilaxia multimodal, antieméticos",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-16-003",
+      "titulo": "Tremores e Hipotermia na Recuperação",
+      "no_pai_id": "s8-anest-16-000",
+      "nivel": "folha",
+      "escopo": "Consumo de oxigênio aumentado, causas, aquecimento e tratamento",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-16-004",
+      "titulo": "Delírio e Disfunção Cognitiva Pós-Operatória",
+      "no_pai_id": "s8-anest-16-000",
+      "nivel": "folha",
+      "escopo": "Idoso vulnerável, fatores de risco, prevenção e manejo",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-16-005",
+      "titulo": "Critérios de Alta da Recuperação — Quando o Paciente Pode Sair",
+      "no_pai_id": "s8-anest-16-000",
+      "nivel": "folha",
+      "escopo": "Escores de Aldrete e de alta ambulatorial; segurança do transporte",
+      "lentes": [
+        "diagnostico_exames",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-17-000",
+      "titulo": "Reanimação Cardiopulmonar e Suporte de Vida em Anestesia",
+      "no_pai_id": "s8-anest-00-000",
+      "nivel": "modulo",
+      "escopo": "Responder à parada cardiorrespiratória no contexto anestésico",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca",
+        "fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-anest-17-001",
+      "titulo": "Parada Cardiorrespiratória no Intraoperatório — Visão Geral",
+      "no_pai_id": "s8-anest-17-000",
+      "nivel": "visao_geral",
+      "escopo": "Particularidades da PCR na sala; causas anestésicas reversíveis",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-17-002",
+      "titulo": "Suporte Básico de Vida — Compressões e Ventilação de Qualidade",
+      "no_pai_id": "s8-anest-17-000",
+      "nivel": "folha",
+      "escopo": "RCP de alta qualidade, ciclo, minimizar interrupções",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-17-003",
+      "titulo": "Suporte Avançado de Vida (ACLS) — Ritmos e Algoritmo",
+      "no_pai_id": "s8-anest-17-000",
+      "nivel": "folha",
+      "escopo": "Chocáveis x não chocáveis, adrenalina, amiodarona, desfibrilação",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-17-004",
+      "titulo": "Causas Reversíveis de Parada — os 5H e 5T no Perioperatório",
+      "no_pai_id": "s8-anest-17-000",
+      "nivel": "folha",
+      "escopo": "Hipóxia, hipovolemia, potássio, tamponamento, tensão, toxicidade anestésica",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-anest-17-005",
+      "titulo": "Cuidados Pós-Parada e Retorno da Circulação Espontânea",
+      "no_pai_id": "s8-anest-17-000",
+      "nivel": "folha",
+      "escopo": "Estabilização, controle de temperatura, causa de base, prognóstico",
+      "lentes": [
+        "conduta_tecnica",
+        "manejo_seguranca"
+      ],
+      "profundidade": 3
+    }
+  ]
+}

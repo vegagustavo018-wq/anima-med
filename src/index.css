@@ -1,0 +1,318 @@
+@import "tailwindcss";
+
+/* ── Deep Ocean Palette ─────────────────────────────────────── */
+:root {
+  /* Fundos */
+  --color-bg-base:       #0a0e1a;
+  --color-bg-elevated:   #111827;
+  --color-bg-card:       #1a2234;
+  --color-bg-hover:      #1e2a40;
+
+  /* Texto */
+  --color-text-primary:  #e8edf5;
+  --color-text-secondary:#9aa8c2;
+  --color-text-muted:    #7d8ca8; /* ~5:1 sobre o fundo base — passa WCAG AA (antes #4a5568 = 2.6:1) */
+  --color-text-faint:    #5a6885; /* só decorativo/não-informativo */
+
+  /* Acento — bioluminescência */
+  --color-accent:        #4fd1c5;
+  --color-accent-dim:    #2c7a7b;
+  --color-accent-glow:   rgba(79, 209, 197, 0.15);
+
+  /* Semântica */
+  --color-success:       #68d391;
+  --color-warning:       #f6ad55;
+  --color-danger:        #fc8181;
+  --color-info:          #63b3ed;
+
+  /* Disciplinas */
+  --color-disc-histologia:  #9f7aea;
+  --color-disc-anatomia:    #4fd1c5;
+  --color-disc-fisiologia:  #68d391;
+  --color-disc-bioquimica:  #f6ad55;
+  --color-disc-patologia:   #fc8181;
+  --color-disc-farmaco:     #63b3ed;
+  --color-disc-clinica:     #76e4f7;
+
+  /* Bordas */
+  --color-border:        #1e2a40;
+  --color-border-accent: #2c7a7b;
+
+  /* Tipografia */
+  --font-sans:    'Inter', system-ui, sans-serif;
+  --font-serif:   'Source Serif 4', Georgia, serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Raios */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+}
+
+/* ── Reset & Base ───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-base); }
+::-webkit-scrollbar-thumb { background: var(--color-bg-hover); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-accent-dim); }
+
+/* ── Selection ──────────────────────────────────────────────── */
+::selection {
+  background: var(--color-accent-glow);
+  color: var(--color-accent);
+}
+
+/* ── Focus ──────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ── Narrativa (prose dos blocos) ───────────────────────────── */
+.narrativa {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--color-text-primary);
+}
+.narrativa p { margin-bottom: 1rem; }
+.narrativa strong { color: var(--color-accent); font-weight: 600; }
+.narrativa em { color: var(--color-text-secondary); }
+.narrativa code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--color-bg-card);
+  padding: 0.1em 0.4em;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Movimento reduzido (acessibilidade — WCAG 2.3.3) ───────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ── Foco visível global ────────────────────────────────────── */
+button, a, [tabindex] {
+  outline-offset: 2px;
+}
+
+/* ── Animações nomeadas ─────────────────────────────────────── */
+@keyframes pulso {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+@keyframes respirar {
+  0%, 100% { transform: scale(0.94); opacity: 0.75; }
+  50% { transform: scale(1.06); opacity: 1; }
+}
+@keyframes entrarBaixo {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes entrarSuave {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes crescer {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes brilhar {
+  0%, 100% { filter: brightness(1) drop-shadow(0 0 0 transparent); }
+  50% { filter: brightness(1.25) drop-shadow(0 0 8px var(--color-accent)); }
+}
+
+/* ── Bloco 10 — Tipografia Viva (dislexia definida na Fase D, abaixo) ──── */
+html[data-fonte="serifada"] body {
+  font-family: var(--font-serif);
+}
+
+/* ── Bloco 10 — Paletas de acessibilidade ────────────────────── */
+html[data-paleta="protanopia"] {
+  --color-accent: #4d96e0;
+  --color-accent-dim: #2c5a8a;
+  --color-accent-glow: rgba(77, 150, 224, 0.18);
+  --color-success: #4d96e0;
+  --color-danger: #e0a63f;
+  --color-warning: #e0c93f;
+}
+html[data-paleta="deuteranopia"] {
+  --color-accent: #4fb8d6;
+  --color-accent-dim: #2c7488;
+  --color-accent-glow: rgba(79, 184, 214, 0.18);
+  --color-success: #4fb8d6;
+  --color-danger: #d68f3f;
+  --color-warning: #d6c23f;
+}
+html[data-paleta="tritanopia"] {
+  --color-accent: #e05f8f;
+  --color-accent-dim: #8a3a58;
+  --color-accent-glow: rgba(224, 95, 143, 0.18);
+  --color-success: #5fbf6f;
+  --color-danger: #e05f5f;
+  --color-warning: #e0965f;
+}
+html[data-paleta="alto-contraste"] {
+  --color-bg-base: #000000;
+  --color-bg-elevated: #0a0a0a;
+  --color-bg-card: #141414;
+  --color-bg-hover: #1f1f1f;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #a0a0a0;
+  --color-accent: #00f5d4;
+  --color-accent-dim: #00b8a0;
+  --color-border: #4a4a4a;
+  --color-border-accent: #00b8a0;
+}
+
+/* ── Bloco 10 — Largura de coluna ─────────────────────────────── */
+html[data-largura="estreita"] .narrativa { max-width: 52ch; margin: 0 auto; }
+html[data-largura="larga"] .narrativa { max-width: 90ch; }
+
+/* ══════════════════════════════════════════════════════════════
+   FASE D — Fluidez, beleza, animações e micro-interações
+   ══════════════════════════════════════════════════════════════ */
+
+/* Skip-link (a11y): invisível até receber foco */
+.anima-skip-link {
+  position: fixed;
+  top: -60px;
+  left: 12px;
+  z-index: 200;
+  padding: 10px 16px;
+  background: var(--color-accent);
+  color: var(--color-bg-base);
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.anima-skip-link:focus { top: 12px; }
+
+/* Micro-interação universal: todo botão ganha um leve feedback de hover/press
+   (sem tocar nos ~88 botões inline — filter/transform não são setados neles). */
+button:not(:disabled) { transition: filter 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease; }
+button:not(:disabled):hover { filter: brightness(1.08); }
+button:not(:disabled):active { transform: translateY(1px) scale(0.99); }
+a { transition: color 0.15s ease, background 0.15s ease; }
+
+/* Novas animações nomeadas */
+@keyframes deslizarEntrar { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes pulsoLuz {
+  0% { box-shadow: 0 0 0 0 var(--color-accent-glow); }
+  70% { box-shadow: 0 0 0 14px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+@keyframes contarSurgir { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes brilhoVarredura { from { background-position: -180% 0; } to { background-position: 180% 0; } }
+@keyframes girar { to { transform: rotate(360deg); } }
+@keyframes aurora {
+  0%, 100% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(14deg); }
+}
+
+/* Utilitárias de animação (aplicáveis por className) */
+.anima-aurora {
+  background: radial-gradient(circle at 30% 30%, var(--color-accent), transparent 55%),
+              radial-gradient(circle at 70% 60%, var(--color-accent-dim), transparent 50%);
+  animation: aurora 8s ease-in-out infinite;
+}
+.anima-respira { animation: respirar 3.4s ease-in-out infinite; }
+.anima-flutua { animation: flutuar 5s ease-in-out infinite; }
+.anima-brilha { animation: brilhar 2.6s ease-in-out infinite; }
+.anima-entra { animation: entrarBaixo 0.28s cubic-bezier(0.22,1,0.36,1) both; }
+.anima-surge { animation: entrarSuave 0.3s ease both; }
+.anima-desliza { animation: deslizarEntrar 0.26s ease both; }
+.anima-pulso-luz { animation: pulsoLuz 1.4s ease-out; }
+.anima-gira { animation: girar 0.9s linear infinite; }
+
+/* Reveal escalonado: filhos entram em cascata */
+.anima-stagger > * { animation: entrarBaixo 0.34s cubic-bezier(0.22,1,0.36,1) both; }
+.anima-stagger > *:nth-child(1) { animation-delay: 0.02s; }
+.anima-stagger > *:nth-child(2) { animation-delay: 0.06s; }
+.anima-stagger > *:nth-child(3) { animation-delay: 0.10s; }
+.anima-stagger > *:nth-child(4) { animation-delay: 0.14s; }
+.anima-stagger > *:nth-child(5) { animation-delay: 0.18s; }
+.anima-stagger > *:nth-child(6) { animation-delay: 0.22s; }
+.anima-stagger > *:nth-child(7) { animation-delay: 0.26s; }
+.anima-stagger > *:nth-child(8) { animation-delay: 0.30s; }
+.anima-stagger > *:nth-child(n+9) { animation-delay: 0.34s; }
+
+/* Cartão que levita ao hover (para superfícies clicáveis) */
+.anima-lift { transition: transform 0.18s cubic-bezier(0.22,1,0.36,1), box-shadow 0.18s ease, border-color 0.18s ease; }
+.anima-lift:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.28); }
+
+/* Skeleton de carregamento (organismo respirando, não texto cru) */
+.anima-skeleton {
+  background: linear-gradient(100deg, var(--color-bg-card) 30%, var(--color-bg-hover) 50%, var(--color-bg-card) 70%);
+  background-size: 200% 100%;
+  animation: brilhoVarredura 1.4s ease-in-out infinite;
+  border-radius: var(--radius-md);
+}
+
+/* Transição suave de troca de rota (aplicada no <main>) */
+@keyframes rotaEntra { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── Variações de tema (além das paletas de daltonismo) ──────── */
+html[data-tema="oled"] {
+  --color-bg-base: #000000;
+  --color-bg-elevated: #060a12;
+  --color-bg-card: #0c1220;
+  --color-bg-hover: #131c2e;
+}
+html[data-tema="sepia"] {
+  --color-bg-base: #16120c;
+  --color-bg-elevated: #1e1810;
+  --color-bg-card: #271f14;
+  --color-bg-hover: #322818;
+  --color-text-primary: #f0e6d2;
+  --color-text-secondary: #c9b896;
+  --color-text-muted: #a08f6f;
+  --color-accent: #e0a95f;
+  --color-accent-dim: #8a6a35;
+  --color-accent-glow: rgba(224, 169, 95, 0.16);
+  --color-border: #322818;
+  --color-border-accent: #8a6a35;
+}
+
+/* Fonte de dislexia baseada em evidência (Atkinson Hyperlegible, carregada via index.html) */
+html[data-fonte="dislexia"] body,
+html[data-fonte="dislexia"] .narrativa {
+  font-family: 'Atkinson Hyperlegible', 'Lexend', 'Verdana', var(--font-sans);
+  letter-spacing: 0.02em;
+  word-spacing: 0.1em;
+}

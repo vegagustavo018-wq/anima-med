@@ -1,0 +1,431 @@
+{
+  "resumo_id": "s1-biol-01-002-03",
+  "no_pai_id": "s1-biol-01-002",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [],
+  "metadata": {
+    "titulo": "Deriva Genética, Fluxo Gênico e Equilíbrio de Hardy-Weinberg",
+    "subtitulo": "Toda mudança na frequência de um alelo significa vantagem evolutiva — ou existem populações que mudam por puro acaso?",
+    "semestre": 1,
+    "disciplina": "biologia",
+    "profundidade_arvore": 3,
+    "importancia": 3,
+    "dificuldade": 2,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-01",
+    "data_ultima_revisao": "2026-07-03",
+    "versao": "1.0",
+    "tags": [
+      "biologia",
+      "evolucao",
+      "deriva-genetica",
+      "fluxo-genico",
+      "hardy-weinberg",
+      "genetica-de-populacoes",
+      "core"
+    ],
+    "nivel": "CORE",
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
+  },
+  "resumo_conciso": "Você já viu, nos dois blocos anteriores, que a mutação fornece a matéria-prima da evolução e que a seleção natural filtra essa variação segundo a aptidão de cada indivíduo num ambiente específico. Mas existe uma pergunta desconfortável escondida nessa história: será que toda vez que a frequência de um alelo muda numa população, isso significa que aquele alelo trouxe alguma vantagem? A resposta é não — e este bloco apresenta duas forças evolutivas que mudam populações sem qualquer relação com aptidão. A deriva genética é a mudança na frequência de alelos por puro acaso de amostragem entre quem sobrevive e se reproduz, um efeito tanto mais forte quanto menor for a população — e que se manifesta de forma dramática quando poucos indivíduos fundam uma população nova (efeito fundador) ou quando um evento catastrófico reduz drasticamente uma população já estabelecida (gargalo populacional). O fluxo gênico, por sua vez, é a troca de alelos entre populações antes separadas, através da migração e do cruzamento — uma força que trabalha na direção oposta da deriva, homogeneizando populações em vez de diferenciá-las ao acaso. E como saber, diante de uma população real, se ela está sendo puxada por alguma dessas forças — ou pela seleção — ou se está, momentaneamente, em repouso evolutivo? A resposta é o Equilíbrio de Hardy-Weinberg: um modelo matemático que descreve exatamente as frequências genotípicas esperadas quando nenhuma força evolutiva está agindo. Ele não descreve o que a evolução faz — descreve o que aconteceria se ela não estivesse acontecendo, e é justamente esse 'estado nulo' hipotético que permite a um geneticista médico detectar, por comparação, que alguma força real está em ação numa população de pacientes reais.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine um grupo de pouco mais de cem colonizadores que deixa a Europa e funda, em outro continente, uma comunidade isolada, que por gerações seguidas casa quase sempre dentro do próprio grupo. Duas centenas de anos depois, um geneticista percebe algo estranho: uma doença rara, hereditária, que na população de origem europeia afeta uma fração muito pequena das pessoas, nessa comunidade isolada chega a ser dezenas de vezes mais comum `[⚠️ VERIFICAR números de referência populacional; usados aqui como cenário ilustrativo]`. Ninguém nessa comunidade foi exposto a um agente ambiental que causasse a doença. Nenhuma vantagem reprodutiva parece explicar por que ela ficou tão mais comum ali do que em qualquer outro lugar do mundo. Alguma coisa mudou a frequência desse alelo — mas o quê?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nos dois blocos anteriores, toda mudança na composição de uma população tinha uma explicação clara: mutação e recombinação criavam a diferença, e a seleção natural filtrava essa diferença segundo a aptidão de cada indivíduo naquele ambiente específico. Mas repare que o cenário dos colonizadores não encaixa nessa história. Ninguém disse que o alelo raro conferia qualquer vantagem reprodutiva — e, ainda assim, sua frequência mudou drasticamente. Se nem toda mudança evolutiva depende de vantagem, então a seleção natural não pode ser a única força que move a frequência de um alelo numa população. Existe pelo menos mais uma força em jogo — e ela tem a ver, paradoxalmente, com pura sorte."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que uma população pode mudar sem que nada nela seja vantajoso?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Toda vez que uma geração produz a próxima, apenas uma fração dos alelos presentes nos pais realmente chega aos filhos — porque nem todo indivíduo se reproduz, e porque cada gameta carrega apenas metade do material genético de quem o produziu. Esse processo é, em essência, uma amostragem: como sortear bolinhas de um pote sem repor todas de volta antes do próximo sorteio. Numa população enorme, com milhões de indivíduos, esse sorteio tende a refletir bem fielmente as proporções originais de alelos — o acaso se dilui na multidão. Mas numa população pequena, um punhado de nascimentos, mortes, ou simplesmente quem cruza com quem, por puro acaso, pode alterar a frequência de um alelo de forma desproporcional — sem que esse alelo tenha feito absolutamente nada de especial por seu portador."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Quanto **menor** a população, mais forte é o efeito do acaso puro sobre a frequência de um alelo — e mais fraco, proporcionalmente, é o efeito visível da seleção natural. Numa população de milhões, um punhado de nascimentos ao acaso quase não move a agulha; numa população de algumas dezenas, pode redefinir a população inteira em poucas gerações."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Volte ao grupo de colonizadores do início deste bloco. Se, por puro acaso, um dos pouco mais de cem fundadores daquela comunidade carregava o alelo raro da doença — e a proporção de portadores entre os fundadores não representava fielmente a proporção da população europeia de origem —, a frequência desse alelo na comunidade nova já nasceu, no dia zero, muito mais alta do que deveria ser, simplesmente porque a amostra inicial de fundadores era pequena. Gerações de casamento dentro do próprio grupo, sem muita troca com o mundo exterior, mantiveram essa frequência elevada. Esse fenômeno — quando uma população nova é fundada por um número pequeno de indivíduos que não representa fielmente a diversidade genética da população de origem — chama-se **efeito fundador**."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existe uma segunda forma de o mesmo acaso agir, e ela não exige fundar uma população nova: basta que uma população já estabelecida seja reduzida drasticamente — por uma epidemia, uma catástrofe ambiental, uma caça predatória intensa — e depois se recupere a partir dos poucos sobreviventes. A diversidade genética dos sobreviventes raramente reflete fielmente a diversidade da população original; alelos raros podem desaparecer por completo só porque, por acaso, nenhum dos sobreviventes os carregava, e alelos antes raros podem se tornar comuns só porque, por acaso, alguns sobreviventes os tinham. Esse estrangulamento populacional seguido de recuperação chama-se **gargalo populacional**, e é uma das explicações propostas para a baixíssima diversidade genética observada em algumas populações de espécies que já estiveram à beira da extinção `[⚠️ VERIFICAR exemplos específicos de espécies e magnitude do gargalo citados na literatura — variam conforme a fonte]`."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas formas do mesmo acaso: efeito fundador e gargalo populacional",
+      "descricao": "Diagrama comparativo em dois painéis. Painel esquerdo, 'Efeito fundador': uma população grande e geneticamente diversa (muitos círculos coloridos variados) da qual um pequeno grupo de indivíduos (poucos círculos, cores não representativas do todo) parte e funda uma nova população isolada, mostrada crescendo ao longo de gerações com a proporção de cores herdada apenas daquele pequeno grupo inicial, diferente da proporção original. Painel direito, 'Gargalo populacional': uma população grande e diversa que sofre um evento drástico (ícone de raio ou ondulação representando catástrofe) reduzindo-a a poucos sobreviventes, mostrados repovoando a população depois com proporção de cores diferente da original. Faixa inferior de síntese: 'nos dois casos, a amostra pequena não representa fielmente a população original — e nenhum alelo precisou ser vantajoso'. Fundo neutro adaptativo ao tema do app.",
+      "origem": "esquema",
+      "url": null,
+      "prompt_ia": "Gere um diagrama científico vetorial didático, fundo transparente, estilo de livro didático moderno, comparando efeito fundador e gargalo populacional em dois painéis lado a lado. Painel esquerdo rotulado 'Efeito fundador': uma população grande com muitos círculos de cores variadas representando diversidade genética, da qual um pequeno subgrupo de círculos (cores não representativas do conjunto original) se separa com uma seta e funda, ao longo de gerações sucessivas mostradas em miniatura, uma nova população cuja proporção de cores reflete apenas o pequeno grupo fundador. Painel direito rotulado 'Gargalo populacional': uma população grande e diversa atingida por um ícone de evento catastrófico (raio ou onda de choque), reduzida drasticamente a poucos sobreviventes, que depois repovoam a população em gerações seguintes com uma proporção de cores diferente da original. Faixa inferior com frase-síntese: 'nos dois casos, a amostra pequena não representa fielmente a população original — nenhum alelo precisou ser vantajoso'. Setas finas, caixas discretas, legendas curtas e corretas em português, cores suaves, alto contraste, sem texturas fotorrealistas, aparência de material de estudo premium. Evite imagem poluída, texto ilegível, excesso de informações, letras distorcidas, anatomia errada, estruturas inventadas, estilo infantil, cores muito fortes, fundo escuro, baixa resolução, setas confusas, legendas longas, cartoon exagerado, órgãos deformados, células irreais, erros de português, mistura de idiomas e decoração sem função didática. A imagem deve ser limpa, precisa, organizada, acadêmica, bonita e realmente útil para estudar medicina."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome dessa força, e por que ele é emprestado da navegação"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "deriva genética",
+      "origem": "do inglês genetic drift, tradução literal de drift ('deriva', 'ir à deriva'), termo náutico que descreve o movimento de uma embarcação sem propulsão própria, empurrada apenas pela correnteza e pelo vento",
+      "significado": "mudança na frequência de um alelo determinada pelo acaso da amostragem reprodutiva, sem qualquer direção imposta por vantagem adaptativa",
+      "explicacao": "O termo foi consolidado pelo geneticista americano Sewall Wright, na primeira metade do século XX, como parte do que ficou conhecido como 'efeito Sewall Wright' `[⚠️ VERIFICAR datação exata e prioridade de cunhagem do termo, disputada entre Wright e outros fundadores da genética de populações, como Ronald Fisher]`. A metáfora náutica é precisa: um barco à deriva não está parado, ele se move — mas seu movimento não é guiado por um leme, é ditado pela correnteza e pelo vento, sem direção escolhida. Do mesmo jeito, a frequência de um alelo sob deriva genética muda, geração após geração, mas sem 'leme' nenhum apontando para maior aptidão — quem dita a direção é o acaso da amostragem reprodutiva, que pode empurrar o alelo tanto para a fixação (100% da população) quanto para o desaparecimento completo, com chances que dependem só do tamanho da população, não de qualquer vantagem real."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: a deriva genética muda a frequência de um alelo pelo acaso puro da amostragem reprodutiva — mais forte quanto menor a população —, seja fundando uma população nova (efeito fundador), seja reduzindo drasticamente uma população já estabelecida (gargalo populacional). Em nenhum dos dois casos o alelo precisou ser vantajoso. Agora, uma pergunta na direção oposta: o que acontece quando duas populações que vinham divergindo voltam a se encontrar?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "E se duas populações separadas voltarem a trocar genes?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine duas populações da mesma espécie, separadas há gerações por uma barreira geográfica — um rio que mudou de curso, uma cordilheira, uma estrada. Cada uma foi acumulando, por deriva genética e por seleção natural agindo em ambientes ligeiramente diferentes, seu próprio conjunto de frequências alélicas. Agora imagine que a barreira desaparece, ou que alguns indivíduos de uma população migram para a outra e lá se reproduzem. Cada migrante que se reproduz na nova população carrega consigo os alelos da população de origem, misturando-os aos da população que o recebeu. Repita esse processo por várias gerações, com migração constante, e as duas populações — antes divergindo — passam a ficar cada vez mais parecidas uma com a outra. Essa força trabalha, portanto, na direção **oposta** à da deriva genética: enquanto a deriva tende a diferenciar populações pequenas e isoladas por puro acaso, essa segunda força tende a homogeneizar populações que voltam a trocar indivíduos reprodutivamente ativos entre si."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Migração entre populações: o efeito oposto da deriva",
+      "descricao": "Diagrama mostrando duas populações circulares separadas por uma barreira geográfica esquemática (rio ou cordilheira), cada uma com uma proporção diferente de cores representando frequências alélicas divergentes acumuladas ao longo de gerações. Uma seta bidirecional atravessando a barreira, rotulada 'migração de indivíduos reprodutivamente ativos', com pequenos círculos individuais cruzando de um lado para o outro. Painel seguinte mostrando as duas populações após várias gerações de migração, agora com proporções de cores muito mais parecidas entre si. Faixa inferior de síntese: 'a migração não cria alelos novos — apenas os transporta de onde já existem para onde ainda não existiam'. Fundo neutro adaptativo ao tema do app.",
+      "origem": "esquema",
+      "url": null,
+      "prompt_ia": "Gere um diagrama científico vetorial didático, fundo transparente, estilo de livro didático moderno, mostrando a migração e a troca reprodutiva de indivíduos entre duas populações da mesma espécie. Painel inicial: duas populações circulares separadas por uma barreira geográfica esquemática (rio ondulado ou cordilheira estilizada), cada população composta por pequenos círculos de cores diferentes representando frequências alélicas divergentes acumuladas ao longo de gerações. Seta bidirecional atravessando a barreira, rotulada 'migração de indivíduos reprodutivamente ativos', com alguns pequenos círculos individuais em trânsito de um lado para o outro. Painel seguinte, à direita, mostrando as duas populações depois de várias gerações de migração constante, agora com proporções de cores visivelmente mais parecidas entre si do que no painel inicial. Faixa inferior com frase-síntese: 'a migração não cria alelos novos — apenas os transporta de onde já existem para onde ainda não existiam'. Setas finas, caixas discretas, legendas curtas e corretas em português, cores suaves, alto contraste, sem texturas fotorrealistas, aparência de material de estudo premium. Evite imagem poluída, texto ilegível, excesso de informações, letras distorcidas, anatomia errada, estruturas inventadas, estilo infantil, cores muito fortes, fundo escuro, baixa resolução, setas confusas, legendas longas, cartoon exagerado, órgãos deformados, células irreais, erros de português, mistura de idiomas e decoração sem função didática. A imagem deve ser limpa, precisa, organizada, acadêmica, bonita e realmente útil para estudar medicina."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "fluxo gênico",
+      "origem": "do latim fluxus (fluir, correr) + genico (relativo ao gene)",
+      "significado": "o movimento de alelos de uma população para outra, através da migração de indivíduos reprodutivamente ativos e do cruzamento subsequente",
+      "explicacao": "O termo entrou no vocabulário da genética de populações ao longo do século XX, junto com o amadurecimento da síntese evolutiva moderna, para nomear com precisão algo que os naturalistas já observavam informalmente havia muito tempo: populações vizinhas de uma mesma espécie raramente são tão diferentes quanto poderiam ser, porque migração e cruzamento ocasional entre elas funcionam como um cimento genético, impedindo que a deriva e a seleção local as levem a se diferenciar completamente `[⚠️ VERIFICAR cronologia exata de consolidação do termo na literatura de genética de populações]`. É por isso que 'fluxo' é a palavra certa: como um rio que conecta dois lagos antes isolados, o fluxo gênico não cria alelos novos — apenas os transporta de onde eles já existem para onde ainda não existiam, equalizando aos poucos as duas margens."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como saber se uma população está mesmo evoluindo — ou parada no seu estado de repouso genético?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você já viu três forças que mudam a frequência de um alelo numa população — mutação, seleção natural e, agora, deriva genética e fluxo gênico. Mas diante de uma população real, como saber se alguma delas está de fato agindo? Um físico, para saber se uma força está atuando sobre um objeto, compara o movimento real desse objeto com o que aconteceria se nenhuma força estivesse presente — um objeto em repouso continuaria em repouso. A genética de populações precisava exatamente do mesmo tipo de referência: uma descrição matemática do que aconteceria com as frequências genotípicas de uma população se **nenhuma** força evolutiva estivesse agindo sobre ela. Essa referência existe, e depende de cinco condições sendo satisfeitas ao mesmo tempo: população infinitamente grande (sem deriva genética), ausência de novas mutações, ausência de migração (sem fluxo gênico), ausência de seleção natural (nenhum genótipo com vantagem reprodutiva sobre outro) e cruzamento ao acaso entre os indivíduos, sem preferência por parceiros de um genótipo específico. Satisfeitas as cinco condições, a matemática é simples: se p é a frequência de um alelo numa população e q é a frequência do alelo alternativo (com p + q = 1), as frequências esperadas dos três genótipos possíveis, geração após geração, sem qualquer mudança, são p² (homozigoto para o primeiro alelo), 2pq (heterozigoto) e q² (homozigoto para o segundo alelo) — e a soma dos três é sempre 1."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Usando o modelo para calcular o que não se vê direto: a frequência de portadores",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "O dado que se conhece",
+          "explicacao": "Um levantamento populacional mostra que uma doença autossômica recessiva rara afeta 1 em cada 10.000 recém-nascidos numa determinada população `[⚠️ exemplo hipotético para fins didáticos — a frequência real de qualquer doença específica deve ser verificada em fonte epidemiológica atual]`. Esse número corresponde à frequência de homozigotos afetados: q² = 1/10.000 = 0,0001."
+        },
+        {
+          "numero": 2,
+          "titulo": "Isolando a frequência do alelo raro",
+          "explicacao": "Se q² = 0,0001, então q (a frequência do alelo recessivo na população) é a raiz quadrada desse valor: q = 0,01, ou 1%."
+        },
+        {
+          "numero": 3,
+          "titulo": "Calculando a frequência do alelo comum",
+          "explicacao": "Como p + q = 1, a frequência do alelo dominante é p = 1 − 0,01 = 0,99."
+        },
+        {
+          "numero": 4,
+          "titulo": "Chegando ao número que realmente importa na clínica",
+          "explicacao": "A frequência de heterozigotos — portadores assintomáticos, que carregam uma cópia do alelo recessivo sem manifestar a doença — é 2pq = 2 × 0,99 × 0,01 ≈ 0,0198, quase 2% da população. Ou seja: para cada recém-nascido afetado (1 em 10.000), existem cerca de 198 portadores assintomáticos na população — um número quase 200 vezes maior do que a incidência da doença, e completamente invisível sem esse cálculo."
+        }
+      ]
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O modelo de repouso genético: cinco condições e a equação",
+      "descricao": "Diagrama em duas partes. Parte superior: cinco caixas dispostas em círculo ao redor de um selo central com o rótulo 'população em repouso evolutivo', cada caixa com um ícone e frase curta: 'população infinitamente grande', 'sem novas mutações', 'sem migração', 'sem seleção natural', 'cruzamento ao acaso'. Parte inferior: a equação p² + 2pq + q² = 1 em destaque tipográfico, com pequenos rótulos abaixo de cada termo — 'p² = homozigoto AA', '2pq = heterozigoto Aa', 'q² = homozigoto aa' — e uma barra visual mostrando a soma das três frequências completando 100%. Rodapé de síntese: 'se as cinco condições valem, essas frequências não mudam de geração em geração — é o estado de referência contra o qual se mede a evolução real'. Fundo neutro adaptativo ao tema do app.",
+      "origem": "esquema",
+      "url": null,
+      "prompt_ia": "Gere um diagrama científico vetorial didático, fundo transparente, estilo de livro didático moderno, sobre o modelo de repouso genético de uma população, em duas partes. Parte superior: cinco caixas pequenas dispostas em formato circular ao redor de um selo central com o texto 'população em repouso evolutivo', cada caixa com um ícone simples e uma frase curta em português — 'população infinitamente grande', 'sem novas mutações', 'sem migração', 'sem seleção natural', 'cruzamento ao acaso'. Parte inferior: a equação matemática 'p² + 2pq + q² = 1' em destaque tipográfico grande e legível, com pequenos rótulos logo abaixo de cada termo explicando 'p² = homozigoto AA', '2pq = heterozigoto Aa', 'q² = homozigoto aa', e uma barra horizontal segmentada mostrando visualmente a soma das três frequências completando 100% da população. Rodapé com frase-síntese: 'se as cinco condições valem, essas frequências não mudam de geração em geração — é o estado de referência contra o qual se mede a evolução real'. Setas finas, caixas discretas, legendas curtas e corretas em português, cores suaves, alto contraste, sem texturas fotorrealistas, aparência de material de estudo premium. Evite imagem poluída, texto ilegível, excesso de informações, letras distorcidas, anatomia errada, estruturas inventadas, estilo infantil, cores muito fortes, fundo escuro, baixa resolução, setas confusas, legendas longas, cartoon exagerado, órgãos deformados, células irreais, erros de português, mistura de idiomas e decoração sem função didática. A imagem deve ser limpa, precisa, organizada, acadêmica, bonita e realmente útil para estudar medicina."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Equilíbrio de Hardy-Weinberg",
+      "origem": "nome próprio duplo, em homenagem ao matemático britânico Godfrey Harold Hardy e ao médico e geneticista alemão Wilhelm Weinberg",
+      "significado": "o princípio matemático que descreve as frequências genotípicas esperadas numa população que não está evoluindo",
+      "explicacao": "Os dois formularam, de forma independente, exatamente o mesmo princípio no mesmo ano, 1908 `[⚠️ VERIFICAR detalhes exatos da publicação simultânea e independente]`. A história de Hardy é a mais contada: ele era um matemático puro, sem interesse particular em biologia, que teria derivado essa relação quase como resposta a uma pergunta feita por um colega biólogo `[⚠️ VERIFICAR veracidade e detalhes exatos dessa anedota, frequentemente repetida mas de origem incerta]`, e publicou o resultado considerando-o matematicamente trivial demais para grande interesse. A ironia é que essa relação 'trivial' se tornou uma das ferramentas mais usadas da genética médica moderna. Weinberg, trabalhando de forma independente na Alemanha, chegou à mesma fórmula estudando genética humana e teve reconhecimento mais tardio no mundo de língua inglesa — por isso o nome, hoje, presta homenagem aos dois."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "⚖️",
+      "conteudo": "Pense num carrinho de brinquedo perfeitamente parado sobre uma superfície sem nenhum atrito, sem vento, sem ninguém empurrando. A primeira lei de Newton diz que, nessas condições ideais, esse carrinho continuaria parado (ou em movimento constante, se já estivesse se movendo) para sempre — não porque essa situação seja comum no mundo real, mas porque ela funciona como **referência**: sempre que um físico observa o carrinho acelerando, ele sabe, por comparação com essa referência, que alguma força real está agindo, mesmo sem precisar vê-la diretamente. O Equilíbrio de Hardy-Weinberg cumpre exatamente esse papel para uma população: descreve as frequências genotípicas que ela teria se nenhuma força evolutiva estivesse agindo — nenhuma mutação, nenhuma seleção, nenhuma deriva, nenhum fluxo gênico, cruzamento sempre ao acaso. Quase nenhuma população real satisfaz essas cinco condições perfeitamente, do mesmo jeito que quase nenhum objeto real está livre de todo atrito. Mas é exatamente por servir de referência ideal, e não de descrição literal do mundo, que o modelo permite a um geneticista comparar frequências genotípicas reais com as esperadas e dizer, com precisão matemática: 'aqui há uma força evolutiva real agindo — e o desvio calculado indica seu tamanho.'"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essas três forças — deriva genética, fluxo gênico e o modelo de equilíbrio que serve de referência para todas — dependem do mesmo vocabulário de alelo, genótipo e frequência gênica que você vai formalizar no módulo de Leis de Mendel, logo adiante nesta disciplina; sem ele, a equação p² + 2pq + q² = 1 seria só símbolos sem significado. Elas também se conectam diretamente com a seleção natural do bloco anterior: as quatro forças (mutação, seleção, deriva, fluxo) competem e cooperam, ao mesmo tempo, na mesma população real — raramente apenas uma delas age sozinha. Em **Genética Médica**, o cálculo de frequência de portadores que você acabou de ver é rotina em aconselhamento genético e em programas de rastreamento populacional de doenças recessivas. Em **Farmacologia**, a frequência de variantes genéticas que alteram o metabolismo de fármacos varia entre populações humanas por efeito fundador e deriva genética histórica, o que ajuda a explicar por que a dose ideal de um mesmo medicamento pode diferir entre grupos populacionais `[⚠️ VERIFICAR exemplos específicos de polimorfismos farmacogenômicos e suas frequências populacionais documentadas]`. E em **Biologia da Conservação e Saúde Única**, a perda de fluxo gênico entre populações fragmentadas de uma espécie — por desmatamento, por exemplo — reduz a diversidade genética disponível para enfrentar novas doenças, exatamente o contrafactual final deste bloco."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se uma população real satisfizesse perfeitamente, geração após geração, as cinco condições do Equilíbrio de Hardy-Weinberg — população infinita, sem mutação, sem seleção, sem migração, cruzamento sempre ao acaso —, ela jamais poderia evoluir. Isso é apenas uma curiosidade teórica, ou existe alguma população real que chegue perto disso?",
+      "resposta": "Nenhuma população real satisfaz as cinco condições com perfeição — e é exatamente por isso que, tecnicamente, toda população real está evoluindo, mesmo que muito lentamente e de forma imperceptível numa única geração: mutações sempre acontecem em alguma taxa residual, toda população finita sofre algum grau de deriva genética, cruzamento raramente é totalmente aleatório (parceiros próximos geograficamente, socialmente ou culturalmente semelhantes tendem a se encontrar mais), e migração completamente zero é rara em espécies móveis. O valor do modelo não está em descrever uma população real com exatidão — está em fornecer a régua contra a qual qualquer desvio pode ser medido e atribuído a uma causa específica: se as frequências observadas se afastam do esperado por p² + 2pq + q² = 1, algo está agindo, e o padrão do desvio (excesso de homozigotos? déficit de um alelo específico? diferença entre subgrupos geográficos?) ajuda a identificar qual das forças — mutação, seleção, deriva ou fluxo gênico — é a mais provável responsável. É a mesma lógica de usar a lei da inércia para detectar uma força invisível: o modelo nulo não descreve o mundo real, ele é a ferramenta que revela, por contraste, o que está realmente acontecendo nele."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Resumo visual — Deriva Genética, Fluxo Gênico e Equilíbrio de Hardy-Weinberg",
+      "descricao": "Página-resumo de estudo. Título 'Deriva Genética, Fluxo Gênico e Equilíbrio de Hardy-Weinberg'. Bloco com as duas forças 'além da seleção': deriva genética (acaso de amostragem, mais forte em populações pequenas, com efeito fundador e gargalo populacional) e fluxo gênico (migração homogeneíza populações, efeito oposto ao da deriva). Bloco central com a equação de Hardy-Weinberg em destaque e as cinco condições do 'estado de repouso genético'. Caixa de exemplo clínico: cálculo de frequência de portadores a partir da incidência de uma doença recessiva. Caixa de atenção para prova: 'nenhuma dessas mudanças depende de vantagem adaptativa — só a seleção natural exige aptidão'. Rodapé com etimologia curta (deriva = do inglês drift, termo náutico; Hardy-Weinberg = nomes dos dois cientistas que chegaram ao mesmo resultado, independentemente, em 1908). Estética de material de estudo premium, fundo claro.",
+      "origem": "ia",
+      "url": null,
+      "prompt_ia": "Gere uma imagem de estudo no padrão preferido: bonita, limpa, didática, aparência acadêmica e médica, fundo claro, cores suaves, alta nitidez, setas finas, caixas discretas, legendas em português e conteúdo realmente útil para prova. Tema: Deriva Genética, Fluxo Gênico e Equilíbrio de Hardy-Weinberg. Bloco com as duas forças 'além da seleção natural': 'deriva genética — mudança por acaso de amostragem, mais forte em populações pequenas, com dois casos especiais: efeito fundador e gargalo populacional' e 'fluxo gênico — migração e cruzamento entre populações homogeneízam frequências alélicas, efeito oposto ao da deriva'. Bloco central com a equação de Hardy-Weinberg em destaque tipográfico 'p² + 2pq + q² = 1' e as cinco condições do 'estado de repouso genético evolutivo': população infinita, sem mutação, sem migração, sem seleção, cruzamento ao acaso. Caixa de exemplo clínico com um pequeno cálculo: 'incidência de doença recessiva 1/10.000 → frequência de portadores heterozigotos ≈ 2% da população'. Caixa de atenção para prova: 'nenhuma dessas mudanças depende de vantagem adaptativa — só a seleção natural exige aptidão; deriva e fluxo gênico mudam a população por acaso ou por migração'. Rodapé com etimologia curta: 'deriva genética = do inglês genetic drift, termo náutico; Hardy-Weinberg = nomes de dois cientistas que chegaram ao mesmo resultado, de forma independente, em 1908'. Setas finas, caixas discretas, cores suaves, alto contraste. Evite imagem poluída, texto ilegível, excesso de informações, letras distorcidas, anatomia errada, estruturas inventadas, estilo infantil, cores muito fortes, fundo escuro, baixa resolução, setas confusas, legendas longas, cartoon exagerado, órgãos deformados, células irreais, erros de português, mistura de idiomas e decoração sem função didática. A imagem deve ser limpa, precisa, organizada, acadêmica, bonita e realmente útil para estudar medicina."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biol-01-002",
+        "titulo": "Evolução e Seleção Natural — Visão Geral",
+        "disciplina": "biologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A visão geral anuncia explicitamente que a seleção não é a única força que muda populações e promete este bloco como a 'terceira frente' — deriva genética, fluxo gênico e Hardy-Weinberg. Este bloco cumpre essa promessa e é o verdadeiro bloco-dono desses três conceitos."
+      },
+      {
+        "bloco_id": "s1-biol-01-002-01",
+        "titulo": "Variação, Mutação e Recombinação — a Matéria-Prima",
+        "disciplina": "biologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Deriva genética e fluxo gênico agem sobre a mesma variação hereditária cuja origem foi explicada nesse bloco. Sem entender que a variação já existe antes de qualquer força evolutiva atuar, não faz sentido falar em 'mudar a frequência de um alelo por acaso' ou 'trocar alelos entre populações'."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "genetica_medica",
+        "semestre_futuro": 4,
+        "topico": "Aconselhamento genético e cálculo de frequência de portadores em doenças recessivas",
+        "mecanismo_conexao": "O cálculo de frequência de heterozigotos a partir da incidência de homozigotos afetados, ensinado aqui com a equação de Hardy-Weinberg, é a ferramenta padrão usada em aconselhamento genético para estimar o risco de um casal ter um filho afetado antes mesmo de qualquer teste genético direto."
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Variabilidade populacional na resposta a fármacos (farmacogenômica)",
+        "mecanismo_conexao": "A frequência de variantes genéticas que alteram o metabolismo de medicamentos difere entre populações humanas por efeito fundador e deriva genética histórica — o mesmo mecanismo estudado aqui explica por que protocolos de dose podem precisar de ajuste conforme a origem populacional do paciente."
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "saude_coletiva",
+        "semestre_futuro": 5,
+        "topico": "Programas de rastreamento genético populacional dirigidos a comunidades de alto risco",
+        "mecanismo_conexao": "Comunidades que passaram por efeito fundador ou isolamento reprodutivo prolongado têm frequência de portadores mais alta para certas doenças recessivas específicas. Reconhecer esse padrão, calculável por Hardy-Weinberg, justifica programas de rastreamento populacional dirigidos, em vez de rastreamento genérico e menos custo-efetivo."
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biol-01-002-02",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "A seleção natural muda populações porque algumas variantes têm mais sucesso reprodutivo real. Deriva genética e fluxo gênico, vistos aqui, mudam populações sem que nenhuma vantagem esteja envolvida — o contraste essencial para não tratar toda mudança evolutiva como sinônimo de adaptação."
+      },
+      {
+        "bloco_id": "s1-biol-01-003",
+        "tipo_relacao": "COMPLEMENTO",
+        "explicacao": "A equação de Hardy-Weinberg usa diretamente o vocabulário de alelo, genótipo e dominância formalizado no módulo de Leis de Mendel. Um módulo dá o vocabulário da herança; este bloco usa esse vocabulário para descrever populações inteiras, não indivíduos isolados."
+      },
+      {
+        "bloco_id": "s1-biol-01-002-05",
+        "tipo_relacao": "APROFUNDAMENTO_CLINICO",
+        "explicacao": "O bloco de Medicina Evolutiva, mais à frente, aprofunda a aplicação clínica direta desses conceitos — incluindo como a heterogeneidade populacional (produzida também por deriva e fluxo gênico) influencia a resposta de populações bacterianas e tumorais a tratamentos."
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "card_id": "s1-biol-01-002-03-fc01",
+      "pergunta": "Por que o efeito da deriva genética é muito mais forte em populações pequenas do que em populações grandes, mesmo que o processo de amostragem reprodutiva seja, em princípio, o mesmo nas duas?",
+      "resposta": "A deriva genética é, matematicamente, um efeito de amostragem estatística: quanto menor a amostra (o número de indivíduos que efetivamente se reproduzem numa geração), maior a variação aleatória esperada entre a frequência alélica dessa amostra e a frequência da população da qual ela veio — exatamente como uma pesquisa de opinião com 20 entrevistados tem margem de erro muito maior do que uma com 20 mil. Numa população de milhões, o acaso de quem se reproduz e quem não se reproduz tende a se cancelar estatisticamente, e a frequência alélica muda muito pouco de uma geração para outra só por sorte. Numa população de algumas dezenas ou centenas, o mesmo acaso não se dilui: um punhado de nascimentos ao acaso pode alterar a frequência de um alelo em vários pontos percentuais numa única geração, sem que isso reflita vantagem nenhuma daquele alelo.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "deriva-genetica",
+        "tamanho-populacional",
+        "amostragem"
+      ]
+    },
+    {
+      "card_id": "s1-biol-01-002-03-fc02",
+      "pergunta": "Diferencie efeito fundador e gargalo populacional quanto ao mecanismo que produz a mudança de frequência alélica, e dê um exemplo de cada situação.",
+      "resposta": "Nos dois casos, uma amostra pequena de indivíduos não representa fielmente a diversidade genética da população maior — mas a origem da amostra pequena é diferente. No efeito fundador, a amostra pequena FUNDA uma população inteiramente nova: por exemplo, um grupo reduzido de colonizadores que se estabelece isoladamente em um novo território e, por gerações, mantém a frequência alélica herdada apenas daquele pequeno grupo original, mesmo que ela seja muito diferente da população de origem. No gargalo populacional, não há fundação de nada novo: uma população JÁ ESTABELECIDA é reduzida drasticamente por um evento catastrófico (epidemia, desastre ambiental, caça intensa) e depois se recupera a partir dos poucos sobreviventes, cuja composição genética raramente reflete fielmente a da população original antes do evento. Em ambos os casos, alelos raros podem desaparecer ou se tornar comuns por puro acaso da amostra pequena, sem qualquer relação com vantagem adaptativa.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "efeito-fundador",
+        "gargalo-populacional",
+        "deriva-genetica"
+      ]
+    },
+    {
+      "card_id": "s1-biol-01-002-03-fc03",
+      "pergunta": "Se uma população tivesse tamanho efetivamente infinito, a deriva genética ainda teria algum efeito mensurável sobre a frequência de seus alelos ao longo de gerações?",
+      "resposta": "Não — e é exatamente por isso que 'população infinitamente grande' é uma das cinco condições do Equilíbrio de Hardy-Weinberg, o modelo que descreve uma população sem nenhuma força evolutiva agindo. A deriva genética é, por definição, um erro de amostragem: quanto maior a amostra reprodutiva de cada geração, menor a chance de que ela se desvie, por acaso, das frequências alélicas da geração anterior. Numa população verdadeiramente infinita, esse erro de amostragem tenderia matematicamente a zero, e a frequência de cada alelo permaneceria constante de geração em geração, a menos que outra força (mutação, seleção, migração) estivesse agindo. Nenhuma população real é infinita, mas populações muito grandes se aproximam desse comportamento — é por isso que a deriva genética raramente é a força evolutiva dominante em espécies com populações numerosas, e é frequentemente decisiva em populações pequenas, isoladas ou ameaçadas.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "deriva-genetica",
+        "hardy-weinberg",
+        "contrafactual"
+      ]
+    },
+    {
+      "card_id": "s1-biol-01-002-03-fc04",
+      "pergunta": "Um programa de triagem neonatal mostra que uma doença autossômica recessiva afeta 1 em cada 2.500 recém-nascidos numa determinada população `[⚠️ exemplo hipotético]`. Usando o Equilíbrio de Hardy-Weinberg, calcule a frequência estimada de portadores heterozigotos nessa população e explique por que esse número, e não apenas a incidência da doença, é o que mais importa para o planejamento de um programa de aconselhamento genético.",
+      "resposta": "A incidência de homozigotos afetados corresponde a q² = 1/2.500 = 0,0004. Logo, q (frequência do alelo recessivo) = √0,0004 = 0,02, e p (frequência do alelo dominante) = 1 − 0,02 = 0,98. A frequência de heterozigotos é 2pq = 2 × 0,98 × 0,02 ≈ 0,0392, ou aproximadamente 1 em cada 25 pessoas na população. Esse número importa mais do que a incidência da doença porque os portadores são clinicamente invisíveis — não têm sintomas, não são identificados por triagem clínica de rotina — mas são exatamente quem, ao se casar com outro portador, tem 25% de risco por gestação de gerar um filho afetado. Um programa de aconselhamento genético que planeje testes populacionais, capacidade de aconselhamento e comunicação de risco precisa dimensionar seus recursos para essa população de portadores (cerca de 1 em 25 pessoas), não apenas para a população de afetados (1 em 2.500), quase 100 vezes menor.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "hardy-weinberg",
+        "aconselhamento-genetico",
+        "frequencia-de-portadores",
+        "clinico"
+      ]
+    },
+    {
+      "card_id": "s1-biol-01-002-03-fc05",
+      "pergunta": "Compare deriva genética e fluxo gênico quanto à direção do efeito que cada uma produz sobre a diferença genética entre duas populações vizinhas da mesma espécie.",
+      "resposta": "As duas forças atuam em direções opostas. A deriva genética, agindo de forma independente e ao acaso em cada população (com efeito tanto mais forte quanto menor for cada uma delas), tende a fazer com que duas populações separadas se tornem geneticamente cada vez mais DIFERENTES entre si ao longo de gerações, mesmo sem qualquer diferença ambiental entre elas — basta que estejam reprodutivamente isoladas. O fluxo gênico, ao transportar alelos de uma população para outra através da migração e do cruzamento, tende a fazer com que duas populações se tornem cada vez mais PARECIDAS entre si, contrariando tanto a diferenciação por deriva quanto a diferenciação por seleção local. O resultado real, numa dupla de populações vizinhas, depende do equilíbrio entre essas duas forças opostas: populações pequenas com pouquíssima migração entre si tendem a divergir (deriva vence); populações que trocam muitos migrantes reprodutivos por geração tendem a permanecer geneticamente parecidas, mesmo com pressões seletivas locais diferentes (fluxo gênico vence).",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "deriva-genetica",
+        "fluxo-genico",
+        "comparacao"
+      ]
+    },
+    {
+      "card_id": "s1-biol-01-002-03-fc06",
+      "pergunta": "O nome 'Equilíbrio de Hardy-Weinberg' carrega dois sobrenomes de cientistas que chegaram ao mesmo resultado de forma independente, no mesmo ano. O que essa história revela sobre como um resultado matemático considerado 'trivial' por um dos autores se tornou uma das ferramentas mais usadas da genética médica atual?",
+      "resposta": "Godfrey Harold Hardy era um matemático puro, sem interesse particular em biologia, que derivou essa relação praticamente como resposta a uma pergunta pontual de um colega biólogo e publicou o resultado considerando-o simples demais para merecer grande destaque `[⚠️ VERIFICAR detalhes exatos dessa anedota, frequentemente repetida mas de origem incerta]`. Wilhelm Weinberg, trabalhando de forma totalmente independente na Alemanha, chegou à mesma equação estudando genética humana, mas teve reconhecimento mais tardio no mundo de língua inglesa. A ironia central da história é que aquilo que um matemático de altíssimo nível considerou 'trivial' — uma simples aplicação de probabilidade a frequências alélicas — acabou se tornando a ferramenta de referência que, mais de um século depois, permite a um geneticista médico estimar a frequência de portadores de uma doença rara sem precisar testar a população inteira. Isso revela algo comum na história da ciência: o valor prático de um resultado nem sempre é evidente para quem o descobre primeiro, e muitas vezes depende de outra área (aqui, a medicina clínica) encontrar uma aplicação que o autor original não havia imaginado.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "hardy-weinberg",
+        "etimologia",
+        "historia-da-ciencia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biol-01-002-03-caso01",
+      "titulo": "Um casal, dois portadores e uma comunidade com história genética própria",
+      "apresentacao": "Casal jovem, ambos oriundos da mesma comunidade de colonização antiga e historicamente endogâmica [⚠️ VERIFICAR formulação apropriada e não estigmatizante ao adaptar este caso para uso real; usar exemplo genérico de comunidade isolada, sem apontar grupo étnico ou religioso específico salvo quando pedagogicamente necessário e revisado], procura aconselhamento genético pré-concepcional depois de saber que uma doença metabólica grave, rara na população geral, é reconhecidamente mais frequente nessa comunidade específica. O teste de portador, oferecido a ambos, revela que os dois são heterozigotos (portadores assintomáticos) do mesmo alelo recessivo causador da doença.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Gerações atrás, a comunidade foi fundada por um número reduzido de famílias, e o hábito histórico de casamentos dentro do próprio grupo manteve baixo o fluxo gênico com populações vizinhas por muito tempo. Se, por acaso, um dos fundadores originais carregava o alelo recessivo em questão, a frequência desse alelo na comunidade — via efeito fundador, reforçado pela baixa migração reprodutiva ao longo de gerações — pode ter permanecido muito mais alta do que na população geral, sem que o alelo tenha conferido qualquer vantagem reprodutiva a seus portadores."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A frequência alélica populacional nessa comunidade específica — um conceito de genética de populações, não uma alteração celular isolada. Concretamente, ambos os membros do casal carregam uma cópia do alelo recessivo (genótipo heterozigoto), sem manifestar a doença."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Usando o princípio de Hardy-Weinberg, o geneticista já sabia, antes mesmo de testar o casal individualmente, que a frequência esperada de portadores nessa comunidade seria mais alta do que na população geral — o que justificou oferecer o teste de portador a ambos. Confirmados os dois como heterozigotos, cada gestação do casal passa a ter 25% de chance de gerar um homozigoto afetado, 50% de chance de gerar outro portador assintomático e 25% de chance de gerar um indivíduo sem o alelo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Se a criança nascer homozigota, desenvolverá as manifestações clínicas da doença metabólica em questão `[⚠️ VERIFICAR curso clínico e idade de início típica, que variam conforme a doença específica usada no exemplo]`. Os pais, heterozigotos, permanecem assintomáticos ao longo da vida — a única forma de identificá-los como portadores é o teste genético direcionado."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O casal recebe aconselhamento sobre as opções reprodutivas disponíveis (diagnóstico pré-natal, diagnóstico genético pré-implantacional, entre outras, conforme protocolo e legislação locais `[⚠️ VERIFICAR opções e legislação vigentes]`). Em escala mais ampla, o mesmo raciocínio de Hardy-Weinberg justifica que programas de rastreamento de portadores sejam direcionados a comunidades com histórico de efeito fundador e baixo fluxo gênico, em vez de aplicados de forma genérica e menos custo-efetiva à população como um todo."
+        }
+      ],
+      "conexao_com_bloco": "O caso amarra os três conceitos do bloco numa única decisão clínica: o efeito fundador e o baixo fluxo gênico históricos da comunidade explicam por que a frequência do alelo ali é mais alta do que na população geral; e é o Equilíbrio de Hardy-Weinberg — comparando a frequência observada de afetados com a esperada numa população em repouso genético — que permite calcular, com precisão matemática, tanto a frequência de portadores na comunidade quanto o risco específico deste casal.",
+      "disciplinas_relacionadas": [
+        "biologia",
+        "genetica_medica",
+        "saude_coletiva"
+      ],
+      "diagnostico_revelado": "Casal heterozigoto (portador assintomático) para o mesmo alelo autossômico recessivo, com frequência de portador elevada na comunidade de origem por efeito fundador e baixo fluxo gênico histórico.",
+      "tratamento_resumido": "Aconselhamento genético estruturado sobre o risco de 25% por gestação, discussão das opções reprodutivas disponíveis conforme protocolo e legislação locais, e recomendação de que a comunidade de origem seja considerada para programas de rastreamento populacional dirigido de portadores, dado o cálculo de frequência alélica elevada obtido por Hardy-Weinberg. `[⚠️ VERIFICAR protocolo de aconselhamento genético atualizado aplicável]`."
+    }
+  ],
+  "midia": {
+    "imagens": [
+      {
+        "id": "s1-biol-01-002-03-img01",
+        "origem": "esquema",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no item narrativa.tipo=imagem 'Duas formas do mesmo acaso: efeito fundador e gargalo populacional' acima.",
+        "status": "pendente"
+      },
+      {
+        "id": "s1-biol-01-002-03-img02",
+        "origem": "esquema",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no item narrativa.tipo=imagem 'Migração entre populações: o efeito oposto da deriva' acima.",
+        "status": "pendente"
+      },
+      {
+        "id": "s1-biol-01-002-03-img03",
+        "origem": "esquema",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no item narrativa.tipo=imagem 'O modelo de repouso genético: cinco condições e a equação' acima.",
+        "status": "pendente"
+      },
+      {
+        "id": "s1-biol-01-002-03-img04",
+        "origem": "ia",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no item narrativa.tipo=imagem 'Resumo visual — Deriva Genética, Fluxo Gênico e Equilíbrio de Hardy-Weinberg' acima.",
+        "status": "pendente"
+      }
+    ],
+    "videos": [],
+    "audios": []
+  },
+  "horizonte_validade": "estavel",
+  "procedencia": {
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-03",
+    "revisado_por": "claude-sonnet-4.5 (corretor adversarial contra anti-padroes.md, glossario-s1.md e dependencias-s1.md; verificado não-duplicação com s1-biol-01-002-01 e s1-biol-01-002-02; corrigidas duas ocorrências do anti-padrão 1.1 — nomes técnicos 'fluxo gênico' e 'Equilíbrio de Hardy-Weinberg' apareciam em titulo/descricao/prompt_ia de itens de imagem antes da respectiva etimologia; textos de imagem reescritos para usar linguagem genérica até a etapa ⑥)",
+    "data_revisao": "2026-07-03",
+    "nivel_confianca": "estudo"
+  },
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Sadava D, Hillis DM, Heller HC, Hacker SD. Vida: A Ciência da Biologia. [⚠️ VERIFICAR ed./ano]. Artmed. Capítulo sobre genética de populações, deriva genética e fluxo gênico.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Griffiths AJF, Wessler SR, Carroll SB, Doebley J. Introdução à Genética. [⚠️ VERIFICAR ed./ano]. Guanabara Koogan. Capítulo sobre Equilíbrio de Hardy-Weinberg e forças evolutivas.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genética Médica. [⚠️ VERIFICAR ed./ano]. Elsevier. Capítulo sobre genética de populações e cálculo de frequência de portadores.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
+}

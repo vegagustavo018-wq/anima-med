@@ -1,0 +1,1616 @@
+{
+  "disciplina_id": "pneumo",
+  "disciplina_nome": "Pneumologia",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s7-pneumo-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "modulos": {
+      "10": "Doenças Pulmonares Intersticiais (DPID)",
+      "11": "Câncer de Pulmão (abordagem clínica)",
+      "12": "Apneia Obstrutiva do Sono e Distúrbios do Sono",
+      "13": "Insuficiência Respiratória e SDRA",
+      "14": "Hipertensão Pulmonar e Circulação Pulmonar Patológica",
+      "00": "Fundamentos: raiz + o método pneumológico (fluxo vs troca) + revisão integrada da fisiologia respiratória (ponte S2/S3)",
+      "01": "Sintomas e Síndromes Respiratórias (dispneia, tosse, hemoptise, dor pleurítica, hipoxemia, padrões obstrutivo/restritivo)",
+      "02": "Ferramentas Diagnósticas (espirometria, gasometria, imagem, broncoscopia, oximetria)",
+      "03": "Asma",
+      "04": "DPOC",
+      "05": "Bronquiectasias e Fibrose Cística",
+      "06": "Pneumonias (PAC, PAH/PAV, aspiração, atípicas, imunossuprimido)",
+      "07": "Tuberculose e Micobacterioses",
+      "08": "Tromboembolismo Pulmonar (visão pneumológica)",
+      "09": "Doenças da Pleura e Derrame Pleural"
+    },
+    "lente_da_disciplina": "doenca respiratoria -> fisiopatologia (obstrucao de fluxo vs falha de troca gasosa) -> apresentacao clinica/sindrome -> diagnostico (funcao pulmonar/imagem/gases) -> conduta. Cada entidade parte de QUAL passo da respiracao falhou (ventilacao, difusao, perfusao, mecanica) antes de nomear a doenca, ancorando na fisiologia S2/S3.",
+    "criterio_de_folha": "No e folha quando sustenta as 8 etapas E >=1 flashcard contrafactual/clinico legitimo. Se nao sustentar, vira secao do pai; se empilha fisiopatologia+clinica+conduta proprias, divide.",
+    "profundidade": "campo profundidade = profundidade na arvore (raiz disciplina = 1).",
+    "ancoras_fisiologia": "S2/S3: curva O2-Hb, efeito Bohr, transporte de CO2, vasoconstricao hipoxica pulmonar, Lei de Fick, mecanica ventilatoria, relacao V/Q."
+  },
+  "blocos": [
+    {
+      "id": "s7-pneumo-00-000",
+      "titulo": "Pneumologia — Quando o Ar Não Chega ou a Troca Falha",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Por que a pneumologia raciocina por qual etapa da respiração falhou antes de nomear a doença",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico",
+        "etimologia"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s7-pneumo-00-001",
+      "titulo": "O Método Pneumológico — Ventilar, Difundir, Perfundir",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "visao_geral",
+      "escopo": "As três etapas da respiração e como cada doença ataca uma delas",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-00-002",
+      "titulo": "Obstrução ao Fluxo vs Falha na Troca — A Grande Dicotomia",
+      "no_pai_id": "s7-pneumo-00-001",
+      "nivel": "tema",
+      "escopo": "O contraste que organiza a pneumologia: doença de tubo vs doença de membrana",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-00-003",
+      "titulo": "Padrão Obstrutivo vs Restritivo — Onde Mora a Resistência",
+      "no_pai_id": "s7-pneumo-00-001",
+      "nivel": "tema",
+      "escopo": "As duas assinaturas funcionais e o que cada uma revela sobre a mecânica",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-00-010",
+      "titulo": "Fisiologia Respiratória Integrada — Revisão para a Clínica",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "A fisiologia S2/S3 relida pela ótica da doença",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-00-011",
+      "titulo": "Mecânica Ventilatória — Complacência, Resistência e Trabalho Respiratório",
+      "no_pai_id": "s7-pneumo-00-010",
+      "nivel": "folha",
+      "escopo": "Pressões, elasticidade e resistência das vias; base de obstrutivo/restritivo",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-00-012",
+      "titulo": "Relação Ventilação-Perfusão (V/Q) — O Casamento do Ar e do Sangue",
+      "no_pai_id": "s7-pneumo-00-010",
+      "nivel": "folha",
+      "escopo": "V/Q normal, alto (espaço morto) e baixo (shunt); base da hipoxemia",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-00-013",
+      "titulo": "Difusão Alvéolo-Capilar e a Lei de Fick",
+      "no_pai_id": "s7-pneumo-00-010",
+      "nivel": "folha",
+      "escopo": "Membrana alvéolo-capilar, DLCO e o que espessa a barreira",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-00-014",
+      "titulo": "Transporte de O2 e CO2 e a Curva de Dissociação (Revisão Aplicada)",
+      "no_pai_id": "s7-pneumo-00-010",
+      "nivel": "folha",
+      "escopo": "Curva O2-Hb, efeito Bohr, CO2 como bicarbonato; leitura da gasometria",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-00-015",
+      "titulo": "Circulação Pulmonar e Vasoconstrição Hipóxica",
+      "no_pai_id": "s7-pneumo-00-010",
+      "nivel": "folha",
+      "escopo": "Baixa pressão, reflexo de von Euler; base da hipertensão e do cor pulmonale",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-00-016",
+      "titulo": "Controle da Respiração — Quimiorreceptores e o Drive Ventilatório",
+      "no_pai_id": "s7-pneumo-00-010",
+      "nivel": "folha",
+      "escopo": "Centro respiratório, resposta a CO2/O2; base da narcose e do drive hipóxico",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-00-017",
+      "titulo": "Defesas das Vias Aéreas — Muco, Cílios e o Escalador Mucociliar",
+      "no_pai_id": "s7-pneumo-00-010",
+      "nivel": "folha",
+      "escopo": "Clearance mucociliar e imunidade local; base de infecção e bronquiectasia",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-01-000",
+      "titulo": "Sintomas e Síndromes Respiratórias",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "Os sintomas cardinais e o que cada um denuncia sobre a mecânica",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-01-001",
+      "titulo": "Panorama dos Sintomas Respiratórios — Do Sintoma ao Compartimento",
+      "no_pai_id": "s7-pneumo-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Como dispneia, tosse e dor mapeiam via aérea, parênquima ou pleura",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-01-002",
+      "titulo": "Dispneia — A Fome de Ar e Seus Mecanismos",
+      "no_pai_id": "s7-pneumo-01-000",
+      "nivel": "folha",
+      "escopo": "Fisiopatologia da dispneia; aguda vs crônica; escalas e origens",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-01-003",
+      "titulo": "Tosse — O Reflexo Protetor Que Vira Sintoma",
+      "no_pai_id": "s7-pneumo-01-000",
+      "nivel": "folha",
+      "escopo": "Arco reflexo da tosse; aguda, subaguda, crônica e suas causas",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-01-004",
+      "titulo": "Hemoptise — Quando o Sangue Vem do Pulmão",
+      "no_pai_id": "s7-pneumo-01-000",
+      "nivel": "folha",
+      "escopo": "Origem brônquica vs pulmonar; maciça vs não-maciça; diferencial e risco",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-01-005",
+      "titulo": "Dor Torácica Pleurítica e Sibilância — Semiologia Localizatória",
+      "no_pai_id": "s7-pneumo-01-000",
+      "nivel": "folha",
+      "escopo": "Dor que muda com respiração; sibilo, estridor e roncos como pistas",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-01-006",
+      "titulo": "Hipoxemia e Cianose — Os Cinco Mecanismos da Falta de Oxigênio",
+      "no_pai_id": "s7-pneumo-01-000",
+      "nivel": "folha",
+      "escopo": "Shunt, V/Q baixo, hipoventilação, difusão, baixa FiO2; gradiente A-a",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-01-007",
+      "titulo": "Baqueteamento Digital e Sinais Sistêmicos da Doença Pulmonar",
+      "no_pai_id": "s7-pneumo-01-000",
+      "nivel": "folha",
+      "escopo": "Hipocratismo, tiragem, uso de acessórios; a leitura à beira do leito",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-02-000",
+      "titulo": "Ferramentas Diagnósticas em Pneumologia",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "Os exames que traduzem sintoma em número e imagem",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-02-001",
+      "titulo": "Panorama do Diagnóstico Funcional e por Imagem",
+      "no_pai_id": "s7-pneumo-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Qual exame responde qual pergunta: função, troca ou anatomia",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-02-010",
+      "titulo": "Espirometria — Visão Geral",
+      "no_pai_id": "s7-pneumo-02-000",
+      "nivel": "visao_geral",
+      "escopo": "O exame que mede fluxo e volume e classifica obstrução vs restrição",
+      "lentes": [
+        "diagnostico_exames",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-02-011",
+      "titulo": "VEF1, CVF e a Relação de Tiffeneau",
+      "no_pai_id": "s7-pneumo-02-010",
+      "nivel": "folha",
+      "escopo": "Os três números-chave e como VEF1/CVF define obstrução",
+      "lentes": [
+        "diagnostico_exames",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-02-012",
+      "titulo": "Curva Fluxo-Volume e Seus Padrões",
+      "no_pai_id": "s7-pneumo-02-010",
+      "nivel": "folha",
+      "escopo": "A forma da alça denunciando obstrução alta, baixa e restrição",
+      "lentes": [
+        "diagnostico_exames",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-02-013",
+      "titulo": "Teste de Broncodilatação e Prova de Reversibilidade",
+      "no_pai_id": "s7-pneumo-02-010",
+      "nivel": "folha",
+      "escopo": "Resposta ao broncodilatador; separa asma de DPOC",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-02-014",
+      "titulo": "Volumes Pulmonares, Pletismografia e DLCO",
+      "no_pai_id": "s7-pneumo-02-010",
+      "nivel": "folha",
+      "escopo": "CPT, VR, hiperinsuflação e a capacidade de difusão",
+      "lentes": [
+        "diagnostico_exames",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-02-020",
+      "titulo": "Gasometria Arterial — Lendo a Química do Sangue",
+      "no_pai_id": "s7-pneumo-02-000",
+      "nivel": "folha",
+      "escopo": "pH, PaO2, PaCO2, HCO3; distúrbios ácido-base respiratórios",
+      "lentes": [
+        "diagnostico_exames",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-02-021",
+      "titulo": "Oximetria de Pulso — Vantagens e Armadilhas",
+      "no_pai_id": "s7-pneumo-02-000",
+      "nivel": "folha",
+      "escopo": "SpO2, a curva O2-Hb e quando a oximetria engana",
+      "lentes": [
+        "diagnostico_exames",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-02-022",
+      "titulo": "Radiografia de Tórax — A Primeira Imagem",
+      "no_pai_id": "s7-pneumo-02-000",
+      "nivel": "folha",
+      "escopo": "Leitura sistemática; consolidação, infiltrado, derrame, pneumotórax",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-02-023",
+      "titulo": "Tomografia de Tórax — Alta Resolução e Angio-TC",
+      "no_pai_id": "s7-pneumo-02-000",
+      "nivel": "folha",
+      "escopo": "TCAR nas intersticiais e angio-TC no TEP; padrões-chave",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-02-024",
+      "titulo": "Broncoscopia, Lavado e Biópsia Pulmonar",
+      "no_pai_id": "s7-pneumo-02-000",
+      "nivel": "folha",
+      "escopo": "Acesso à via aérea; LBA, biópsia transbrônquica e indicações",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-03-000",
+      "titulo": "Asma",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "Inflamação e hiper-reatividade brônquica reversível",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-03-001",
+      "titulo": "Asma — Visão Geral e o Problema da Via Aérea Inflamada",
+      "no_pai_id": "s7-pneumo-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a via aérea se estreita de forma reversível e recorrente",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-03-002",
+      "titulo": "Fisiopatologia da Asma — Inflamação Th2, Broncoespasmo e Remodelamento",
+      "no_pai_id": "s7-pneumo-03-000",
+      "nivel": "folha",
+      "escopo": "Eosinófilos, IgE, mastócitos; broncoconstrição, edema e hipersecreção",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-03-003",
+      "titulo": "Fenótipos e Endótipos da Asma",
+      "no_pai_id": "s7-pneumo-03-000",
+      "nivel": "folha",
+      "escopo": "Alérgica, eosinofílica, neutrofílica, obesa; asma T2-alto vs T2-baixo",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-03-004",
+      "titulo": "Apresentação Clínica e Diagnóstico da Asma",
+      "no_pai_id": "s7-pneumo-03-000",
+      "nivel": "folha",
+      "escopo": "Sibilância, dispneia, tosse; espirometria com reversibilidade e variabilidade",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-03-005",
+      "titulo": "Classificação de Controle e Gravidade da Asma",
+      "no_pai_id": "s7-pneumo-03-000",
+      "nivel": "folha",
+      "escopo": "Controlada, parcial, não controlada; degraus GINA de gravidade",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-03-006",
+      "titulo": "Tratamento de Manutenção — Escada de Degraus e o CI como Pilar",
+      "no_pai_id": "s7-pneumo-03-000",
+      "nivel": "folha",
+      "escopo": "Corticoide inalatório, LABA, LAMA; estratégia MART/anti-inflamatória",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-03-007",
+      "titulo": "Terapias Biológicas na Asma Grave",
+      "no_pai_id": "s7-pneumo-03-000",
+      "nivel": "folha",
+      "escopo": "Anti-IgE, anti-IL5, anti-IL4/13; alvo molecular do fenótipo",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-03-008",
+      "titulo": "Crise Asmática Aguda — Manejo da Exacerbação",
+      "no_pai_id": "s7-pneumo-03-000",
+      "nivel": "folha",
+      "escopo": "SABA, corticoide sistêmico, O2; sinais de gravidade e asma quase-fatal",
+      "lentes": [
+        "conduta_tratamento",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-000",
+      "titulo": "DPOC — Doença Pulmonar Obstrutiva Crônica",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "Obstrução crônica e pouco reversível por bronquite e enfisema",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-04-001",
+      "titulo": "DPOC — Visão Geral e o Pulmão que Não Esvazia",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Limitação ao fluxo persistente; tabaco, inflamação e aprisionamento aéreo",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-002",
+      "titulo": "Enfisema — Destruição dos Alvéolos e Perda de Recolhimento Elástico",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "folha",
+      "escopo": "Desequilíbrio protease-antiprotease; colapso expiratório e hiperinsuflação",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-003",
+      "titulo": "Bronquite Crônica — Inflamação e Hipersecreção das Vias",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "folha",
+      "escopo": "Hiperplasia mucosa, tosse produtiva crônica; definição clínica",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-004",
+      "titulo": "Deficiência de Alfa-1 Antitripsina — O Enfisema Genético",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "folha",
+      "escopo": "Perda do inibidor de protease; enfisema panacinar precoce e hepatopatia",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-005",
+      "titulo": "Apresentação Clínica e Diagnóstico da DPOC",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "folha",
+      "escopo": "Dispneia progressiva, tosse; espirometria pós-BD VEF1/CVF <0,7",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-006",
+      "titulo": "Classificação GOLD, Grupos e Avaliação de Risco",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "folha",
+      "escopo": "Sintomas (mMRC/CAT), exacerbações e grupos A-B-E",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-007",
+      "titulo": "Tratamento de Manutenção da DPOC",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "folha",
+      "escopo": "LAMA, LABA, CI seletivo; broncodilatação e redução de exacerbação",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-008",
+      "titulo": "Exacerbação Aguda da DPOC — Manejo",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "folha",
+      "escopo": "Broncodilatador, corticoide, antibiótico, VNI; gatilhos infecciosos",
+      "lentes": [
+        "conduta_tratamento",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-009",
+      "titulo": "Oxigenoterapia Domiciliar e Medidas Não Farmacológicas",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "folha",
+      "escopo": "O2 crônico, cessação do tabaco, reabilitação e vacinação",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-04-010",
+      "titulo": "Cor Pulmonale e Complicações Sistêmicas da DPOC",
+      "no_pai_id": "s7-pneumo-04-000",
+      "nivel": "folha",
+      "escopo": "Falência de VD por hipertensão pulmonar hipóxica; caquexia e comorbidades",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-05-000",
+      "titulo": "Bronquiectasias e Fibrose Cística",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "Vias aéreas dilatadas e o ciclo infecção-inflamação-destruição",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-05-001",
+      "titulo": "Bronquiectasias — Visão Geral e o Brônquio Que Se Rende",
+      "no_pai_id": "s7-pneumo-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Dilatação irreversível por falha de defesa e infecção crônica",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-05-002",
+      "titulo": "Fisiopatologia das Bronquiectasias — O Círculo Vicioso de Cole",
+      "no_pai_id": "s7-pneumo-05-000",
+      "nivel": "folha",
+      "escopo": "Infecção, inflamação, dano estrutural e clearance prejudicado",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-05-003",
+      "titulo": "Etiologias e Diagnóstico das Bronquiectasias",
+      "no_pai_id": "s7-pneumo-05-000",
+      "nivel": "folha",
+      "escopo": "Pós-infecciosa, imunodeficiência, ABPA; TCAR com trilho de trem",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-05-004",
+      "titulo": "Manejo das Bronquiectasias e Exacerbações",
+      "no_pai_id": "s7-pneumo-05-000",
+      "nivel": "folha",
+      "escopo": "Higiene brônquica, antibiótico dirigido, tratamento da causa",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-05-005",
+      "titulo": "Fibrose Cística — Visão Geral e o Canal de Cloro Defeituoso",
+      "no_pai_id": "s7-pneumo-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Mutação CFTR; muco espesso multissistêmico e doença pulmonar",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-05-006",
+      "titulo": "Fisiopatologia da Fibrose Cística — CFTR, Muco e Infecção Crônica",
+      "no_pai_id": "s7-pneumo-05-000",
+      "nivel": "folha",
+      "escopo": "Transporte iônico defeituoso; Pseudomonas, pâncreas e suor salgado",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-05-007",
+      "titulo": "Diagnóstico e Manejo da Fibrose Cística",
+      "no_pai_id": "s7-pneumo-05-000",
+      "nivel": "folha",
+      "escopo": "Teste do suor, genética; moduladores CFTR, antibióticos e reabilitação",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-06-000",
+      "titulo": "Pneumonias",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "Infecção do parênquima e o alvéolo preenchido por exsudato",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-06-001",
+      "titulo": "Pneumonia — Visão Geral e o Alvéolo Inundado",
+      "no_pai_id": "s7-pneumo-06-000",
+      "nivel": "visao_geral",
+      "escopo": "Como o preenchimento alveolar gera shunt, febre e consolidação",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-06-002",
+      "titulo": "Fisiopatologia da Pneumonia — Fases da Consolidação",
+      "no_pai_id": "s7-pneumo-06-000",
+      "nivel": "folha",
+      "escopo": "Congestão, hepatização vermelha e cinza, resolução; correlato do shunt",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-06-010",
+      "titulo": "Pneumonia Adquirida na Comunidade (PAC) — Visão Geral",
+      "no_pai_id": "s7-pneumo-06-000",
+      "nivel": "visao_geral",
+      "escopo": "A pneumonia do dia a dia; agentes típicos e apresentação",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-06-011",
+      "titulo": "Agentes e Apresentação Clínica da PAC",
+      "no_pai_id": "s7-pneumo-06-010",
+      "nivel": "folha",
+      "escopo": "Pneumococo e outros; febre, tosse produtiva, dor pleurítica, crepitações",
+      "lentes": [
+        "apresentacao_clinica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-06-012",
+      "titulo": "Diagnóstico e Estratificação de Gravidade da PAC",
+      "no_pai_id": "s7-pneumo-06-010",
+      "nivel": "folha",
+      "escopo": "Radiografia, CURB-65/PSI; decisão de internação",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-06-013",
+      "titulo": "Tratamento Antibiótico da PAC",
+      "no_pai_id": "s7-pneumo-06-010",
+      "nivel": "folha",
+      "escopo": "Esquemas ambulatorial, internado e UTI; cobertura empírica racional",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-06-020",
+      "titulo": "Pneumonia Atípica — O Padrão Que Foge da Regra",
+      "no_pai_id": "s7-pneumo-06-000",
+      "nivel": "folha",
+      "escopo": "Mycoplasma, Chlamydophila, Legionella; dissociação clínico-radiológica",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-06-030",
+      "titulo": "Pneumonia Hospitalar e Associada à Ventilação (PAH/PAV)",
+      "no_pai_id": "s7-pneumo-06-000",
+      "nivel": "folha",
+      "escopo": "Germes resistentes, >48h de internação; risco no ventilado e cobertura ampliada",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-06-040",
+      "titulo": "Pneumonia Aspirativa e Abscesso Pulmonar",
+      "no_pai_id": "s7-pneumo-06-000",
+      "nivel": "folha",
+      "escopo": "Aspiração de anaeróbios; segmentos dependentes, necrose e cavitação",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-06-050",
+      "titulo": "Pneumonia no Imunossuprimido — Oportunistas do Pulmão",
+      "no_pai_id": "s7-pneumo-06-000",
+      "nivel": "folha",
+      "escopo": "Pneumocystis, fungos, CMV; raciocínio pelo tipo de imunodeficiência",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-06-060",
+      "titulo": "Derrame Parapneumônico e Empiema",
+      "no_pai_id": "s7-pneumo-06-000",
+      "nivel": "folha",
+      "escopo": "Complicação pleural da pneumonia; drenagem e critérios de Light aplicados",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-07-000",
+      "titulo": "Tuberculose e Micobacterioses",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "A infecção granulomatosa crônica e as micobactérias",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-07-001",
+      "titulo": "Tuberculose — Visão Geral e o Granuloma Como Estratégia",
+      "no_pai_id": "s7-pneumo-07-000",
+      "nivel": "visao_geral",
+      "escopo": "Como o bacilo sobrevive dentro do macrófago e a doença se instala",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-07-002",
+      "titulo": "Patogênese da TB — Primoinfecção, Latência e Reativação",
+      "no_pai_id": "s7-pneumo-07-000",
+      "nivel": "folha",
+      "escopo": "Complexo de Ghon, contenção imune Th1 e a queda que reativa",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-07-003",
+      "titulo": "Tuberculose Pulmonar Ativa — Apresentação Clínica",
+      "no_pai_id": "s7-pneumo-07-000",
+      "nivel": "folha",
+      "escopo": "Tosse >3 semanas, febre vespertina, sudorese, emagrecimento, hemoptise",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-07-004",
+      "titulo": "Diagnóstico da TB — Baciloscopia, TRM-TB e Cultura",
+      "no_pai_id": "s7-pneumo-07-000",
+      "nivel": "folha",
+      "escopo": "BAAR, teste molecular rápido, cultura; radiografia com cavitação apical",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-07-005",
+      "titulo": "Tratamento da TB — Esquema RIPE e Adesão",
+      "no_pai_id": "s7-pneumo-07-000",
+      "nivel": "folha",
+      "escopo": "Fase intensiva e de manutenção; TDO e efeitos adversos",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-07-006",
+      "titulo": "TB Latente e TB Resistente",
+      "no_pai_id": "s7-pneumo-07-000",
+      "nivel": "folha",
+      "escopo": "PPD/IGRA, tratamento da ILTB; MDR/XDR e implicações",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-07-007",
+      "titulo": "TB Extrapulmonar e Formas Disseminadas",
+      "no_pai_id": "s7-pneumo-07-000",
+      "nivel": "folha",
+      "escopo": "Pleural, ganglionar, miliar, meníngea; disseminação hematogênica",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-07-008",
+      "titulo": "Micobacterioses Não Tuberculosas (MNT)",
+      "no_pai_id": "s7-pneumo-07-000",
+      "nivel": "folha",
+      "escopo": "MAC e outras; hospedeiro com pulmão prévio e diferenciação da TB",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-08-000",
+      "titulo": "Tromboembolismo Pulmonar (Visão Pneumológica)",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "O coágulo que bloqueia a perfusão e cria espaço morto",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-08-001",
+      "titulo": "TEP — Visão Geral e a Perfusão Interrompida",
+      "no_pai_id": "s7-pneumo-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a obstrução arterial gera hipoxemia sem consolidação",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-08-002",
+      "titulo": "Fisiopatologia do TEP — Espaço Morto e Sobrecarga de VD",
+      "no_pai_id": "s7-pneumo-08-000",
+      "nivel": "folha",
+      "escopo": "Aumento de espaço morto, hipertensão pulmonar aguda, cor pulmonale agudo",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-08-003",
+      "titulo": "Tríade de Virchow e Fatores de Risco do TEP",
+      "no_pai_id": "s7-pneumo-08-000",
+      "nivel": "folha",
+      "escopo": "Estase, lesão endotelial, hipercoagulabilidade; origem na TVP",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-08-004",
+      "titulo": "Apresentação Clínica e Probabilidade Pré-Teste do TEP",
+      "no_pai_id": "s7-pneumo-08-000",
+      "nivel": "folha",
+      "escopo": "Dispneia súbita, dor pleurítica, taquicardia; escores de Wells/Genebra",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-08-005",
+      "titulo": "Diagnóstico do TEP — D-dímero e Angio-TC",
+      "no_pai_id": "s7-pneumo-08-000",
+      "nivel": "folha",
+      "escopo": "Estratégia por probabilidade; D-dímero, angio-TC, cintilografia V/Q",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-08-006",
+      "titulo": "Tratamento do TEP — Anticoagulação e Trombólise",
+      "no_pai_id": "s7-pneumo-08-000",
+      "nivel": "folha",
+      "escopo": "Anticoagulantes, estratificação de risco, trombólise no TEP maciço",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-09-000",
+      "titulo": "Doenças da Pleura e Derrame Pleural",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "O espaço pleural, o líquido e o ar que não deveriam estar lá",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-09-001",
+      "titulo": "Pleura — Visão Geral e o Espaço Virtual",
+      "no_pai_id": "s7-pneumo-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Pleura parietal e visceral, líquido pleural fisiológico e sua dinâmica",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-09-002",
+      "titulo": "Derrame Pleural — Fisiopatologia da Formação de Líquido",
+      "no_pai_id": "s7-pneumo-09-000",
+      "nivel": "folha",
+      "escopo": "Desequilíbrio de Starling e permeabilidade; acúmulo no espaço pleural",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-09-003",
+      "titulo": "Transudato vs Exsudato — Os Critérios de Light",
+      "no_pai_id": "s7-pneumo-09-000",
+      "nivel": "folha",
+      "escopo": "Análise do líquido pleural; a bifurcação diagnóstica fundamental",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-09-004",
+      "titulo": "Apresentação, Toracocentese e Manejo do Derrame",
+      "no_pai_id": "s7-pneumo-09-000",
+      "nivel": "folha",
+      "escopo": "Dispneia, macicez, MV reduzido; punção diagnóstica e terapêutica",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-09-005",
+      "titulo": "Pneumotórax — O Ar no Espaço Pleural",
+      "no_pai_id": "s7-pneumo-09-000",
+      "nivel": "folha",
+      "escopo": "Espontâneo primário/secundário e traumático; colapso pulmonar",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-09-006",
+      "titulo": "Pneumotórax Hipertensivo — Emergência Torácica",
+      "no_pai_id": "s7-pneumo-09-000",
+      "nivel": "folha",
+      "escopo": "Mecanismo valvular, desvio de mediastino, choque; descompressão imediata",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-10-000",
+      "titulo": "Doenças Pulmonares Intersticiais (DPID)",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "O interstício espessado e o pulmão que enrijece",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-10-001",
+      "titulo": "DPID — Visão Geral e o Interstício Como Campo de Batalha",
+      "no_pai_id": "s7-pneumo-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Inflamação/fibrose do interstício; padrão restritivo e DLCO baixa",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-10-002",
+      "titulo": "Fisiopatologia das DPID — Restrição, Difusão e Hipoxemia ao Esforço",
+      "no_pai_id": "s7-pneumo-10-000",
+      "nivel": "folha",
+      "escopo": "Espessamento da membrana; queda de complacência e da capacidade de difusão",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-10-003",
+      "titulo": "Abordagem Diagnóstica das DPID — TCAR e Padrões",
+      "no_pai_id": "s7-pneumo-10-000",
+      "nivel": "folha",
+      "escopo": "Faveolamento, vidro fosco, reticulado; classificação por padrão",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-10-004",
+      "titulo": "Fibrose Pulmonar Idiopática — Visão Geral e Manejo",
+      "no_pai_id": "s7-pneumo-10-000",
+      "nivel": "folha",
+      "escopo": "Padrão PIU, progressão inexorável; antifibróticos e transplante",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-10-005",
+      "titulo": "Sarcoidose — A Doença Granulomatosa Multissistêmica",
+      "no_pai_id": "s7-pneumo-10-000",
+      "nivel": "folha",
+      "escopo": "Granuloma não caseoso, adenopatia hilar bilateral; ECA e curso variável",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-10-006",
+      "titulo": "Pneumonite de Hipersensibilidade",
+      "no_pai_id": "s7-pneumo-10-000",
+      "nivel": "folha",
+      "escopo": "Reação imune a antígeno inalado; formas aguda e crônica fibrosante",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-10-007",
+      "titulo": "Pneumoconioses — Silicose, Asbestose e o Pulmão Ocupacional",
+      "no_pai_id": "s7-pneumo-10-000",
+      "nivel": "folha",
+      "escopo": "Poeiras inorgânicas; fibrose por exposição e associação com câncer/TB",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-10-008",
+      "titulo": "DPID Associada a Doenças do Tecido Conjuntivo",
+      "no_pai_id": "s7-pneumo-10-000",
+      "nivel": "folha",
+      "escopo": "Esclerose sistêmica, AR, dermatomiosite; o pulmão como órgão-alvo",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-11-000",
+      "titulo": "Câncer de Pulmão (Abordagem Clínica)",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "A neoplasia mais letal do tórax: da suspeita ao estadiamento",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-11-001",
+      "titulo": "Câncer de Pulmão — Visão Geral e o Peso do Tabaco",
+      "no_pai_id": "s7-pneumo-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Carcinogênese, tipos histológicos e por que se apresenta tarde",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-11-002",
+      "titulo": "Tipos Histológicos — Pequenas Células vs Não-Pequenas Células",
+      "no_pai_id": "s7-pneumo-11-000",
+      "nivel": "folha",
+      "escopo": "Adeno, escamoso, grandes células vs oat cell; comportamento e localização",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-11-003",
+      "titulo": "Apresentação Clínica e Síndromes Paraneoplásicas",
+      "no_pai_id": "s7-pneumo-11-000",
+      "nivel": "folha",
+      "escopo": "Tosse, hemoptise, perda de peso; SIADH, Cushing, hipercalcemia, Pancoast",
+      "lentes": [
+        "apresentacao_clinica",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-11-004",
+      "titulo": "Nódulo Pulmonar Solitário — Abordagem do Achado Incidental",
+      "no_pai_id": "s7-pneumo-11-000",
+      "nivel": "folha",
+      "escopo": "Estimar risco de malignidade; seguimento vs investigação",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-11-005",
+      "titulo": "Diagnóstico, Estadiamento TNM e Princípios de Tratamento",
+      "no_pai_id": "s7-pneumo-11-000",
+      "nivel": "folha",
+      "escopo": "Biópsia, PET-TC, TNM; cirurgia, quimio/radio, alvo e imunoterapia",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-11-006",
+      "titulo": "Rastreamento e Prevenção do Câncer de Pulmão",
+      "no_pai_id": "s7-pneumo-11-000",
+      "nivel": "folha",
+      "escopo": "TC de baixa dose em alto risco; cessação do tabaco como prevenção",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-12-000",
+      "titulo": "Apneia Obstrutiva do Sono e Distúrbios Respiratórios do Sono",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "A via aérea que colapsa quando o corpo dorme",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-12-001",
+      "titulo": "AOS — Visão Geral e o Colapso da Faringe no Sono",
+      "no_pai_id": "s7-pneumo-12-000",
+      "nivel": "visao_geral",
+      "escopo": "Obstrução repetida das vias superiores; hipóxia intermitente e despertares",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-12-002",
+      "titulo": "Fisiopatologia da AOS e Consequências Cardiovasculares",
+      "no_pai_id": "s7-pneumo-12-000",
+      "nivel": "folha",
+      "escopo": "Fragmentação do sono, ativação simpática; HAS, arritmia e risco metabólico",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-12-003",
+      "titulo": "Apresentação Clínica, Polissonografia e IAH",
+      "no_pai_id": "s7-pneumo-12-000",
+      "nivel": "folha",
+      "escopo": "Ronco, apneias, sonolência (Epworth); polissonografia e índice apneia-hipopneia",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-12-004",
+      "titulo": "Tratamento da AOS — CPAP e Medidas Associadas",
+      "no_pai_id": "s7-pneumo-12-000",
+      "nivel": "folha",
+      "escopo": "Pressão positiva, perda de peso, aparelhos intraorais e cirurgia",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-12-005",
+      "titulo": "Síndrome de Hipoventilação da Obesidade e Apneia Central",
+      "no_pai_id": "s7-pneumo-12-000",
+      "nivel": "folha",
+      "escopo": "Hipoventilação diurna, retenção de CO2; apneia central e drive respiratório",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-13-000",
+      "titulo": "Insuficiência Respiratória e SDRA",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "Quando os pulmões deixam de sustentar a troca gasosa",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-13-001",
+      "titulo": "Insuficiência Respiratória — Visão Geral e as Duas Falências",
+      "no_pai_id": "s7-pneumo-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Falha de oxigenação (tipo I) vs de ventilação (tipo II); definição gasométrica",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-13-002",
+      "titulo": "Insuficiência Respiratória Tipo I — Falha de Oxigenação",
+      "no_pai_id": "s7-pneumo-13-000",
+      "nivel": "folha",
+      "escopo": "Hipoxemia por shunt/V-Q baixo; gradiente A-a alargado e causas",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-13-003",
+      "titulo": "Insuficiência Respiratória Tipo II — Falha de Ventilação",
+      "no_pai_id": "s7-pneumo-13-000",
+      "nivel": "folha",
+      "escopo": "Hipercapnia por hipoventilação; drive, bomba e via aérea; gradiente normal",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-13-004",
+      "titulo": "Oxigenoterapia e Suporte Ventilatório — VNI e VMI",
+      "no_pai_id": "s7-pneumo-13-000",
+      "nivel": "folha",
+      "escopo": "Escada de O2, cateter de alto fluxo, VNI e indicações de intubação",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-13-005",
+      "titulo": "SDRA — Visão Geral e o Pulmão Inundado pela Inflamação",
+      "no_pai_id": "s7-pneumo-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Lesão alvéolo-capilar difusa; edema não cardiogênico e hipoxemia refratária",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-13-006",
+      "titulo": "Fisiopatologia e Critérios de Berlim da SDRA",
+      "no_pai_id": "s7-pneumo-13-000",
+      "nivel": "folha",
+      "escopo": "Fase exsudativa/proliferativa; PaO2/FiO2 e definição de gravidade",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-13-007",
+      "titulo": "Ventilação Protetora e Manejo da SDRA",
+      "no_pai_id": "s7-pneumo-13-000",
+      "nivel": "folha",
+      "escopo": "Baixo volume corrente, PEEP, prona; tratar a causa e minimizar VILI",
+      "lentes": [
+        "conduta_tratamento",
+        "mecanismo_fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s7-pneumo-14-000",
+      "titulo": "Hipertensão Pulmonar e Circulação Pulmonar Patológica",
+      "no_pai_id": "s7-pneumo-00-000",
+      "nivel": "modulo",
+      "escopo": "A pressão que sobe no circuito de baixa pressão e sobrecarrega o VD",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s7-pneumo-14-001",
+      "titulo": "Hipertensão Pulmonar — Visão Geral e o VD Sob Pressão",
+      "no_pai_id": "s7-pneumo-14-000",
+      "nivel": "visao_geral",
+      "escopo": "Definição hemodinâmica; por que a circulação pulmonar não tolera pressão alta",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-14-002",
+      "titulo": "Classificação em Cinco Grupos da Hipertensão Pulmonar",
+      "no_pai_id": "s7-pneumo-14-000",
+      "nivel": "folha",
+      "escopo": "HAP, cardíaca, hipóxica/pulmonar, tromboembólica crônica, multifatorial",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-14-003",
+      "titulo": "Fisiopatologia da HAP e Remodelamento Vascular",
+      "no_pai_id": "s7-pneumo-14-000",
+      "nivel": "folha",
+      "escopo": "Endotelina, óxido nítrico, prostaciclina; proliferação vascular",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-14-004",
+      "titulo": "Diagnóstico, Cateterismo e Tratamento da HAP",
+      "no_pai_id": "s7-pneumo-14-000",
+      "nivel": "folha",
+      "escopo": "Ecocardiograma, cateterismo direito; vasodilatadores específicos",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s7-pneumo-14-005",
+      "titulo": "Cor Pulmonale — A Falência do Coração Direito de Origem Pulmonar",
+      "no_pai_id": "s7-pneumo-14-000",
+      "nivel": "folha",
+      "escopo": "Sobrecarga crônica de VD; edema, turgência jugular e hepatomegalia",
+      "lentes": [
+        "mecanismo_fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    }
+  ]
+}

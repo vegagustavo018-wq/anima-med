@@ -1,0 +1,377 @@
+{
+  "id": "s1-hist-05-006",
+  "no_pai": "s1-hist-05-000",
+  "nos_filhos": [],
+  "titulo": "Mielinização — Estrutura e Função",
+  "subtitulo": "Por que envolver o axônio em camadas acelera o pulso nervoso?",
+  "disciplina": "Histologia",
+  "semestre": 1,
+  "modulo": 5,
+  "profundidade_arvore": 2,
+  "status": "completo",
+  "data_criacao": "2026-07-03",
+  "versao_schema": "3.0",
+  "resumo_conciso": "No bloco anterior vimos que o axônio transmite sinais elétricos por potencial de ação. Mas perceba: um pulso que viaja milímetro a milímetro é lento demais para o corpo responder ao perigo em tempo real. A solução biológica foi embrulhar o axônio em camadas isolantes de lipídio — a bainha de mielina — criando lacunas microscópicas chamadas nós de Ranvier onde o pulso 'salta' de um ponto a outro. Isso transforma a velocidade de propagação de 1 m/s para 100 m/s. Neste bloco exploraremos por que essa arquitetura de envoltório+lacunas funciona, como células gliais tecem a mielina, o que acontece quando mielina degenera, e como reconhecer sinais de desmielinização na clínica.",
+  "conexoes_prerequisito": [
+    "s1-hist-05-000",
+    "s1-hist-05-001",
+    "s1-hist-05-003"
+  ],
+  "conexoes_futuras": [
+    {
+      "tipo": "CASCATA_CAUSAL",
+      "descricao": "Perda de mielina em esclerose múltipla causa bloqueio de condução e déficit neurológico progressivo",
+      "id_destino": "s1-hist-05-010"
+    },
+    {
+      "tipo": "CASCATA_CAUSAL",
+      "descricao": "Mutação em genes de proteínas de mielina causa doenças desmielinizantes periféricas (CMT tipo 1)",
+      "id_destino": "s1-hist-05-011"
+    },
+    {
+      "tipo": "ALVO_TERAPEUTICO",
+      "descricao": "Imunosupressores em EM atuam reduzindo ataque a oligodendrócitos produtores de mielina",
+      "id_destino": "s1-farm-12-004"
+    },
+    {
+      "tipo": "RECONHECIMENTO_CLINICO",
+      "descricao": "Teste de Romberg positivo e ataxia sugerem perda de propriocepção via fibras mielinizadas (desmielinização)",
+      "id_destino": "s1-semi-08-007"
+    }
+  ],
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "O problema: velocidade é sobrevivência",
+      "conteudo": "Coloque-se no lugar do seu sistema nervoso periférico. Você está em pé na cozinha quando vê a mão escorregando em direção à panela quente. Seu cérebro precisa registrar esse perigo, processar, e ordenar à mão que se afaste. Tudo isso — visão, processamento, ação motora — tem de acontecer em milissegundos. Se o pulso elétrico viajasse pelo axônio da forma mais simples (condução contínua, ponto a ponto), a velocidade seria cerca de 1 metro por segundo. Para um nervo que vai da medula à ponta do pé — digamos, 1 metro de comprimento — isso significaria 1 segundo de latência. Já perdeu a mão."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Velocidade",
+      "conteudo": "A biologia, ao longo de 500 milhões de anos, descobriu que velocidade é uma moeda de sobrevivência. Não é luxo, é estrutura."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: isolamento + lacunas",
+      "conteudo": "A evolução não aumentou a amperagem do axônio (que seria dispendiosa em energia). Em vez disso, isolou o axônio do meio externo usando um envoltório de lipídio puro — a bainha de mielina. Lipídio é isolante elétrico. Com a bainha, o axônio pode 'pular' corrente de um ponto a outro, em vez de perder energia percorrendo cada micrômetro. Mas não é um envoltório contínuo; há janelas microscópicas deixadas propositalmente abertas — os nós de Ranvier. O potencial de ação não viaja, ele 'salta' de nó a nó. Isso eleva a velocidade para 100 metros por segundo. Agora aquela reação de retirar a mão acontece em centésimos de segundo."
+    },
+    {
+      "tipo": "highlight",
+      "titulo": "Condução saltatorial",
+      "conteudo": "O potencial de ação não viaja continuamente ao longo do axônio mielinizado. Ele despolariza um nó de Ranvier, a corrente 'salta' saltatoriamente ao próximo nó (passando sem ativar a membrana sob a mielina), onde se regenera completamente. Isso é 50-100× mais rápido que condução contínua."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Composição: quem tece a mielina?",
+      "conteudo": "A bainha de mielina não é feita pelo próprio neurônio. É tecida por células gliais especializadas. No sistema nervoso central (cérebro e medula), são os oligodendrócitos — uma única célula estende até 50 processos, cada um envolvendo um segmento diferente de múltiplos axônios. Na periferia, é a célula de Schwann — cada uma envolve um único axônio de forma helical, como uma corda enrolada em volta de um galho.\n\nO processo de mielinização é um embaixo. A célula glial envolve o axônio camada após camada de sua própria membrana plasmática, 'ejetando' o citoplasma para dentro (deixando apenas uma camada ultrafina de citoplasma entre as camadas de membrana, chamada lâmina intraperiódica). No final, você tem um envoltório multilaminar: 50-100 camadas de bicamada lipídica uma sobre a outra. Esse número varia com a calibre do axônio: axônios maiores recebem mais voltas, porque precisam de maior velocidade."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Etapas da mielinização periférica",
+      "passos": [
+        "Célula de Schwann envolve axônio numa invaginação (endocitose parcial)",
+        "Membrana plasmática da Schwann começa a girar em espiral ao redor do axônio",
+        "Cada volta adiciona uma bicamada lipídica nova à bainha",
+        "Citoplasma entre os giros é expulso (deixa lâmina intraperiódica densa)",
+        "Resultado: envoltório multilaminar isolante ao redor do segmento internodal",
+        "A Schwann deixa espaço no nó (0,5-2 μm) onde membrana axonal fica exposta"
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Arquitetura do nó de Ranvier",
+      "conteudo": "Se a mielina é o isolante, o nó de Ranvier é onde a ação acontece. Tem apenas 0,5 a 2 micrômetros de comprimento — uma fresta. Nele, a membrana axonal fica exposta ao líquido extracelular, cheia de canais de sódio dependentes de voltagem. Quando o potencial de ação chega, esses canais abrem, sódio entra, despolariza a membrana, e o pulso se regenera ali. Imediatamente após o nó vem a região paranodal (a primeira volta de mielina ao lado do nó), rica em junções do tipo de anclagem que impedem vazamento de íons. Essas junções contêm proteínas como caspr (contactin-associated protein) e contactina — moléculas que praticamente colam o envoltório de mielina ao axônio, evitando que corrente vaze para os lados."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Condução em axônios: com e sem mielina",
+      "linhas": [
+        {
+          "propriedade": "Velocidade de condução",
+          "sem_mielina": "0,5–2 m/s",
+          "com_mielina": "50–120 m/s"
+        },
+        {
+          "propriedade": "Distância entre pontos de regeneração",
+          "sem_mielina": "Cada micrômetro (contínuo)",
+          "com_mielina": "0,5–2 mm (nó a nó)"
+        },
+        {
+          "propriedade": "Gasto energético (ATP/potencial)",
+          "sem_mielina": "Alto — bombeia Na+/K+ em toda extensão",
+          "com_mielina": "Reduzido em 25× — bombeia só nos nós"
+        },
+        {
+          "propriedade": "Célula produtora (SNC)",
+          "sem_mielina": "N/A (não mielinizado)",
+          "com_mielina": "Oligodendrócito (até 50 axônios)"
+        },
+        {
+          "propriedade": "Célula produtora (SNP)",
+          "sem_mielina": "Célula de Schwann (não envolvente)",
+          "com_mielina": "Célula de Schwann (1 axônio)"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Mecanismo: por que o pulso não 'vaza' sob a mielina?",
+      "conteudo": "Aqui está a beleza da física elétrica. A mielina é composta de lipídio puro — uma bicamada fosfolipídica. Lipídio é hidrofóbico, não conduz íons. Quando um potencial de ação despolariza um nó (de -70 mV para +30 mV), a corrente despolarizante (sódio entrando, potássio saindo) não consegue passar através do envoltório lipídico. Em vez disso, os íons acumulados localmente (principalmente sódio) geram um gradiente elétrico que se 'projeta' através do isolante (princípio capacitivo), despolarizando a membrana do nó seguinte a alguns milímetros de distância. Lá, os canais de sódio daquele nó abrem, e o pulso se regenera completamente. Nenhuma corrente vaza — a mielina é tão impermeável que o isolamento é praticamente perfeito."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Proteínas críticas da mielina",
+      "conteudo": "Para que tudo isso funcione, proteínas estruturais e de adesão mantêm o pacote unido. Na mielina do SNC: proteína básica de mielina (MBP) e proteína proteolipídica (PLP) ocupam 80% das proteínas — são como pregos que travam a bainha ao axônio. Na periferia: proteína de mielina zero (P0) é a âncora principal; também há proteína de mielina periférica 22 (PMP22), crucial para apertamento das voltas. Mutações nesses genes causam doenças graves: mutação em PLP causa síndrome de Pelizaeus-Merzbacher (paralisia progressiva em recém-nascidos); mutação em PMP22 causa doença de Charcot-Marie-Tooth tipo 1 (atrofia progressiva de músculos distais)."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Mielina",
+      "origem_grega_latina": "Do grego 'myelós' (medula, tutano). Inicialmente pensava-se que mielina era constituinte do tutano ósseo; apenas no século XIX confirmou-se que era estrutura de bainha nervosa.",
+      "mnemonica": "Myelós = medula = 'miolo' = o interior. A mielina envolve como medula envolve um osso."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Ranvier",
+      "origem_grega_latina": "Nó de Ranvier: nó (do latim 'nodus', ligadura, ponto onde coisas se prendem). Ranvier é o anatomista francês que descreveu essas lacunas em 1878. É um epônimo merecido — são os 'nós' onde pulso se regenera.",
+      "mnemonica": "Nó = local de conexão. Nó de Ranvier = onde potencial se reconecta ao axônio."
+    },
+    {
+      "tipo": "analogia",
+      "titulo": "Analogia: rodovia de alta velocidade vs. estrada de terra",
+      "mapeamento": [
+        {
+          "elemento_biologia": "Axônio sem mielina",
+          "elemento_analogia": "Estrada de terra"
+        },
+        {
+          "elemento_biologia": "Condução contínua (ponto a ponto)",
+          "elemento_analogia": "Carro viajando sobre cada cm de terra"
+        },
+        {
+          "elemento_biologia": "Velocidade lenta (0,5–2 m/s)",
+          "elemento_analogia": "20 km/h (seguro, mas demora muito)"
+        },
+        {
+          "elemento_biologia": "Mielina (bainha isolante)",
+          "elemento_analogia": "Asfalto (superfície lisa, isolada de terra)"
+        },
+        {
+          "elemento_biologia": "Nós de Ranvier (lacunas)",
+          "elemento_analogia": "Praças de pedágio (onde carro toca chão, regenera velocidade)"
+        },
+        {
+          "elemento_biologia": "Condução saltatorial",
+          "elemento_analogia": "Carro pulando de praça em praça na rodovia"
+        },
+        {
+          "elemento_biologia": "Velocidade alta (50–120 m/s)",
+          "elemento_analogia": "120 km/h (anda longe rápido, pouca fricção)"
+        }
+      ],
+      "explicacao": "Sem asfalto (mielina), o carro de corrida (potencial de ação) é forçado a andar lentamente porque está sempre friccionando com o solo (meio extracelular cheio de íons). Com asfalto, o carro viaja rápido entre as praças (nós). A praça de pedágio é o único lugar onde o carro toca chão — lá ele para, regenera velocidade completamente (Schwann valida velocidade), e pula novamente. Quanto mais bem asfaltada a rodovia (mais voltas de mielina), mais rápida a viagem, mas também maior o investimento (energético) de construção."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O que acontece quando mielina desaparece?",
+      "conteudo": "Em doenças desmielinizantes — como esclerose múltipla no SNC ou síndrome de Guillain-Barré na periferia — macrófagos e células do sistema imune atacam as células gliais produtoras de mielina ou a própria bainha. Oligodendrócitos morrem, Schwann é ativado erroneamente, e o envoltório se desintegra. Sem mielina, o axônio reverte a condução contínua (lenta). Mas tem mais: sem a bainha isolante, canais de sódio começam a aparecer em lugares errados ao longo do axônio (um fenômeno chamado 'redistribuição de canais'). Agora correntes vazam, o axônio gasta enormemente em ATP para bombear sódio/potássio, e pior: a condução não apenas fica lenta, fica *bloqueada* — pode não conseguir atravessar o segmento desmielinizado. Clinicamente, vira paralisia progressiva."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Fragilidade da velocidade",
+      "conteudo": "A condução saltatorial é brilhante, mas também frágil. Depende inteiramente de uma coisa: mielina intacta. Remova a mielina, e você remove simultaneamente velocidade, eficiência energética, e estabilidade condutiva. Por isso doenças desmielinizantes são entre as mais debilitantes que conhecemos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Implicação clínica: reconhecer desmielinização",
+      "conteudo": "Se um paciente chega com fraqueza progressiva em membros inferiores que sobem — pernas→tronco→braços — em dias (não meses), desconfie de síndrome de Guillain-Barré (desmielinização periférica aguda). Se vem com perda de visão num olho, fraqueza fluctuante nos braços, dormência que muda de lugar, pense em esclerose múltipla (desmielinização do SNC). O teste de Romberg (de olhos fechados, desaba se positivo) sugere perda de sensibilidade proprioceptiva — via fibras Ia (grossas, mielinizadas) da medula espinal. Se essas desapareceram, restaram só fibras C (finas, não mielinizadas, lentas) — perda de coordenação. Eletromiografia (EMG) e ressonância mostram o diagnóstico; mas a história clínica conta."
+    },
+    {
+      "tipo": "imagem",
+      "descricao": "Seção transversal de nervo periférico ao microscópio eletrônico. Mostra 4-5 axônios, cada um envolvido por célula de Schwann diferente. Para cada axônio: envoltório multilaminar (mielina) aparece como anéis concêntricos densos (lipídio), com núcleo da Schwann em posição excêntrica. Cite nó de Ranvier como lacuna de descontinuidade na mielina (0,5 μm).",
+      "prompt_ia": "Seção transversal de nervo periférico (aumento 20.000×). Mostra 3 axônios em corte transversal, cada um envolto por mielina multilaminar (bicamadas lipídicas aparecem como anéis escuros e claros alternados, tipo lamparina). Inclua: 1) Axônio central (fibra azulada), 2) Invólucro de mielina (10-15 camadas de membranas), 3) Lâmina intraperiódica (linha densa periódica), 4) Citoplasma residual da Schwann (compartimento lateral), 5) Um nó de Ranvier representado como descontinuidade (lacuna de 0,5 μm sem mielina). Sem legendas, apenas estrutura pura. Estilo: fotomicrografia electron-microscópica, cores naturais."
+    },
+    {
+      "tipo": "imagem",
+      "descricao": "Diagrama de condução saltatorial. Frame 1: potencial de ação despolariza nó N (vermelho +30 mV). Frame 2: sódio entra, corrente 'salta' sob isolante de mielina até nó N+1 (amarelo, começando a despolarizar). Frame 3: canais de sódio em N+1 abrem (vermelho +30 mV). Frame 4: agora nó N volta a -70 mV (azul, hiperpolarização). Inclua setas indicando fluxo de sódio nos nós e linha tracejada sob a mielina mostrando 'projeção de campo elétrico'. Velocidade indicada como múltipla seta horizontal rápida entre nós.",
+      "prompt_ia": "Diagrama de condução saltatorial em axônio mielinizado. 4 frames em sequência horizontal. Frame 1: nó de Ranvier esquerdo despolarizado (vermelha, +30 mV), sódio entrando (setas azuis apontando inward). Frame 2: potencial despolarizante 'pula' sob mielina (isolante amarelo), nó direito começa a receber corrente (amarelo pálido). Frame 3: nó direito agora em pico (+30 mV, vermelho), abre canais de sódio próprios. Frame 4: nó esquerdo repolariza (azul -70 mV), nó direito se regenera (vermelho). Nós separados por 1-2 mm. Sem mielina entre frames iniciais. Legenda: 'Condução Saltatorial - 50× mais rápido'. Estilo: diagrama vetorial claro, fundo branco, cores RGB (vermelho=despolarizado, azul=repolarizado)."
+    },
+    {
+      "tipo": "imagem",
+      "descricao": "Comparativo visual: axônio não-mielinizado vs. mielinizado em corte longitudinal. Esquerda: axônio fino, sem bainha, rodeado de líquido extracelular (setas indicam vazamento de íons em toda extensão). Velocidade anotada como '0,5-2 m/s'. Direita: axônio envolvido em espiral de mielina (camadas enroladas tipo corda), com nós de Ranvier deixando janelas abertas. Velocidade anotada como '50-120 m/s'. Incluir representação gráfica do consumo de ATP: esquerda com muitas mitocôndrias (ativa), direita com poucas (mitocôndrias concentradas perto de nós).",
+      "prompt_ia": "Comparação lado-a-lado: axônio não-mielinizado vs. mielinizado (vista longitudinal). ESQUERDA: axônio simples (tubo azul), rodeado por célula de Schwann simples não-envolvente (verde claro), íons vazando em toda extensão (setas vermelho/azul bidirecionais em cada μm), potencial de ação viajando como onda contínua (curva senoidal vermelha). Legenda: 'Sem mielina: 0,5-2 m/s, ATP alto'. DIREITA: axônio (tubo azul) envolto em espiral de mielina (múltiplas camadas de membrana, cores intercaladas preto/branco, estilo corda enrolada), nós de Ranvier visíveis como gaps (lacunas brancas). Potencial de ação 'pulando' de nó a nó (triângulos vermelhos descontinuados). Legenda: 'Com mielina: 50-120 m/s, ATP 25× menor'. Ambas escalas, anatomicamente proporcionais. Estilo: diagrama vetorial educacional."
+    },
+    {
+      "tipo": "imagem",
+      "descricao": "Estrutura molecular do nó de Ranvier. Corte transversal mostrando: 1) Membrana axonal exposta no nó (com canais de sódio Nav inseridos, representados como proteínas transmembrana azuis), 2) Região paranodal logo ao lado do nó (com junções de anclagem: caspr, contactina em roxo), 3) Mielina como camadas lipídicas densas (multicamadas brancas/cinza). Inclua líquido extracelular (azul claro) apenas no nó. Legendar canais Nav, caspr, e bainha de mielina.",
+      "prompt_ia": "Seção transversal de nó de Ranvier. Central: membrana axonal cilíndrica (tubo azul escuro). NÓDULO (topo): membrana exposta ao espaço extracelular (azul claro), com proteínas de canal de sódio Nav inseridas (estruturas transmembrana azuis, representadas como poros ou cilindros cruzando a bicamada). PARANODAL (laterais): zona transitória com junções de anclagem (proteínas roxas: caspr, contactina formando bridges entre axônio e mielina). MIELINA (envolvimento externo): múltiplas camadas brancas/cinzas em espiral ao redor, descontinuadas no nó. Inclua setas mostrando onde Na+ entra (seta azul vertical inward). Cores: axônio azul, canais azuis, paranodo roxo, mielina branca/cinza, espaço extracelular azul claro. Sem legendas, apenas estrutura. Estilo: diagrama 3D parcial, médico-ilustrativo."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "fc-001",
+      "tipo": "por_que",
+      "pergunta": "Por que a evolução dos nervos periféricos deixou lacunas (nós de Ranvier) na bainha de mielina em vez de cobrir o axônio inteiro?",
+      "resposta": "Porque a regeneração ativa do potencial de ação consome energia (ATP para bombear Na+/K+ ATPase). Deixar nós expostos reduz a área onde regeneração é necessária de ~100% para ~1% do comprimento axonal. Resultado: 25× menos consumo de ATP e velocidade 50× maior que condução contínua."
+    },
+    {
+      "id": "fc-002",
+      "tipo": "mecanismo",
+      "pergunta": "Descreva os passos que ocorrem quando um potencial de ação chega a um nó de Ranvier em um axônio mielinizado.",
+      "resposta": "1) Potencial atinge nó N em repouso (-70 mV). 2) Canais Na+ voltagem-dependentes abrem, Na+ entra, despolariza nó N para +30 mV. 3) Corrente despolarizante não consegue passar pela mielina (isolante lipídico), mas gera campo elétrico que se 'projeta' através do isolante (princípio capacitivo). 4) Campo despolariza membrana do nó N+1 (1-2 mm distante). 5) Canais Na+ de N+1 abrem, regeneram potencial, nó N+1 atinge +30 mV. 6) Nó N repolariza para -70 mV. 7) Processo repete ao longo da fibra."
+    },
+    {
+      "id": "fc-003",
+      "tipo": "contrafactual",
+      "pergunta": "Se um axônio tivesse mielina contínua sem nenhum nó de Ranvier, o que aconteceria com a transmissão de sinais?",
+      "resposta": "Não haveria regeneração ativa do potencial de ação ao longo do axônio. O pulso seria 'arrastado' sem regeneração de amplitude — fenômeno chamado condução decremental. A amplitude diminuiria exponencialmente com a distância e o sinal se perderia antes de chegar ao terminal axonal. Além disso, o isolamento perfeito impediria qualquer reconexão com o meio externo, impossibilitando regeneração."
+    },
+    {
+      "id": "fc-004",
+      "tipo": "clinico",
+      "pergunta": "Um paciente com síndrome de Guillain-Barré apresenta paralisia progressiva de baixo para cima (pernas primeiro, depois tronco, depois braços). Como a desmielinização do nervo periférico explica esse padrão de fraqueza?",
+      "resposta": "Guillain-Barré é ataque do sistema imune às células de Schwann produtoras de mielina. Sem mielina, os nervos periféricos mais longos (nervo ciático nas pernas) ficam mais susceptíveis ao bloqueio de condução porque: 1) têm mais segmentos desmielinizados, 2) perdem o isolamento que mantinha velocidade. Nervos mais curtos (facial, que inerva face) são afetados depois. A progressão ascendente ('ascending paralysis') reflete o avançar do processo inflamatório rostralmente (subindo a medula)."
+    },
+    {
+      "id": "fc-005",
+      "tipo": "comparacao",
+      "pergunta": "Compare a produção de mielina no SNC (oligodendrócito) vs. SNP (célula de Schwann). Por que essa diferença importa clinicamente?",
+      "resposta": "SNC: 1 oligodendrócito = até 50 axônios diferentes. SNP: 1 célula de Schwann = 1 único axônio. Clinicamente: doenças que atacam oligodendrócitos (EM) causam perda multifatorial de mielina em múltiplos axônios simultaneamente (paraplegia, oftalmoplejia). Doenças de Schwann (Charcot-Marie-Tooth) afetam gradualmente múltiplos nervos, mas cada um de forma mais localizada. Além disso, periferia tem capacidade de regeneração mielinizante que SNC não tem — Schwann pode remielinizar se axônio regenerar."
+    },
+    {
+      "id": "fc-006",
+      "tipo": "armadilha",
+      "pergunta": "Um estudante afirma: 'Se mielina é um isolante, por que o potencial de ação não fica 'preso' dentro do axônio e não consegue sair?' Corrija essa concepção errada.",
+      "resposta": "Mielina isola eletricamente — ela impede fluxo passivo de íons através da bicamada lipídica. MAS: 1) Nos nós de Ranvier a membrana fica exposta, canais abrem, regeneração acontece; 2) Sob a mielina há formação de campo elétrico (efeito capacitivo) que consegue 'projetar-se' através do isolante; 3) Essa projeção despolariza a membrana do próximo nó. Não é a corrente iônica que atravessa a mielina, é o *campo elétrico* que se propaga através dela."
+    },
+    {
+      "id": "fc-007",
+      "tipo": "mecanismo",
+      "pergunta": "Cite as 3 proteínas-chave da mielina periférica e explique qual mutação causa doença de Charcot-Marie-Tooth tipo 1.",
+      "resposta": "1) P0 (proteína de mielina zero) — ancoragem principal membrana-bainha; 2) PMP22 (proteína de mielina periférica 22) — apertamento das voltas de mielina; 3) MBP (proteína básica de mielina) — estabiliza camadas. CMT tipo 1 causado por mutação em *PMP22* → falha de apertamento das voltas → mielina desorganizada → redução progressiva de velocidade de condução (reduzida para 15-20 m/s vs. normal 50-60 m/s) → atrofia distal de pés/pernas."
+    },
+    {
+      "id": "fc-008",
+      "tipo": "sintese_transdisciplinar",
+      "pergunta": "A mielinização é controlada por sinais do axônio (como potencial de repouso, atividade elétrica) e pela célula glial. Como essa 'conversa' célula-axônio seria importante em um fármaco regenerador de mielina?",
+      "resposta": "Um fármaco regenerador ideal precisaria: 1) reativar oligodendrócitos/Schwann dormentes a produzir mielina nova (sinal molecular), 2) ou remobilizar oligodendrócitos mortos se possível, 3) ou aumentar axonal 'readiness' (voltagem, moléculas de adesão) para receber mielina. Fármacos atuais (como anti-LINGO-1 em desenvolvimento) bloqueiam sinais que *freiam* mielinização. A chave: entender que mielina é feita pela célula glial, mas o 'pedido' vem do axônio — sinais moleculares (BDNF, netrina, etc.) cruzam essa sinapse."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "id": "caso-001",
+      "titulo": "Subida Progressiva: quando a escalada vira paralisia",
+      "introducao": "Marina, 24 anos, entra no pronto-socorro um sábado à noite. Mãe diz que tudo começou cinco dias atrás com formigamento nos pés. Ontem, Marina não conseguia levantar da cama. Hoje, braços começam a ficar fracos.",
+      "etapa_1_causa": "HISTÓRIA CLÍNICA: Semana antes do início dos sintomas, Marina teve gastroenterite viral (diarréia por 3 dias, resolveu). 5 dias após, pararestesias em pés bilaterais. Progressão em dias (não semanas). Exame: simetria bilateral, padrão ascendente.",
+      "etapa_2_estrutura": "HIPÓTESE ANATOMOPATOLÓGICA: Padrão de fraqueza ascendente e bilateral + progressão rápida (dias) + história de infecção viral recente sugere desmielinização aguda de raízes nervosas e nervos periféricos. Provável: Síndrome de Guillain-Barré (SGB). Mecanismo: 1) Infecção viral (Campylobacter?) ativa sistema imune inato; 2) Anticorpos cruzados atacam lípídios de mielina (galactocerebrósida, GQ1b); 3) Macrófagos infiltram nervos, fagocitam bainha de mielina; 4) Perda de isolamento elétrico em raízes e nervos longos (ciático, fibular, ulnar).",
+      "etapa_3_disfuncao": "FISIOPATOLOGIA: Sem mielina, condução nervosa reverte de saltatorial (100 m/s) para contínua (2 m/s), com vazamento de corrente. Pior ainda: bloqueio completo de condução em regiões severamente desmielinizadas. Eletromiografia (EMG) mostra: latências prolonga-das (mais de 50% do normal), bloqueios de condução segmentar, e redução de amplitude em potenciais de ação motora. Velocidade de condução: 15-20 m/s em vez de 50-60 m/s. Músculos não recebem suficiente sinal para contrair, apesar de neurônios motores estarem funcionando.",
+      "etapa_4_sintoma": "APRESENTAÇÃO CLÍNICA: Dia 5: formigamento em pés (parestesia = descarga axonal ou regeneração aberrrante). Dia 6-8: fraqueza em pernas (começar a não conseguir ir ao banheiro sozinha). Dia 8-9: impossibilidade de sair da cama (fraqueza proximal — quadríceps). Dia 9-10: braços começam (triceps, ombros) — Marina perde habilidade de segurar copo. Dia 10: dispneia ao falar frases longas — sugestão de envolvimento de nervos cranianos (hipoglosso, vago) e/ou enfraquecimento diafragmático (nervo frênico). Reflexos: ausentes (areflexia — redução de sinal nos nervos periféricos). Sensação: intacta (não há perda sensorial, apenas parestesias motoras, confirmando SGB em vez de neuropatia axonal).",
+      "etapa_5_consequencia": "DECISÃO CLÍNICA: ECG mostra ritmo sinusal — coração ainda ok. Espirometria: CVF (capacidade vital forçada) = 1,8 L (normal é 3,5+). Prognóstico imediato: risco de insuficiência respiratória (necessidade de ventilador). Decisão: transferir UTI, iniciar IVIG (imunoglobulina intravenosa) ou plasmafé-rese (remover anticorpos anti-mielina). Após 5 dias de IVIG: força começa a retornar nos braços (regeneração de sinais). Após 2 semanas: consegue andar com ajuda. Após 3 meses: recuperação completa (90% de casos em SGB se recuperam totalmente, alguns ficam com fraqueza residual). Prognóstico favorável porque: oligodendrócitos/Schwann não foram destruídos permanentemente — foram desmielinizados. Após remissão da inflamação, células gliais reinelinizam, velocidade volta ao normal."
+    }
+  ],
+  "patologias": [
+    {
+      "id": "pat-001",
+      "nome": "Esclerose Múltipla (EM)",
+      "tipo": "desmielinizante",
+      "mecanismo": "Ataque autoimune a oligodendrócitos produtores de mielina no SNC. Macrófagos fagocitam bainha, deixando placas de desmielinização (brancas em MRI T1, FLAIR). Sem mielina, velocidade cai, bloqueio de condução aparece.",
+      "sinais_clinicos": "Oftalmoplejia (neurite óptica = inflamação do nervo óptico mielinizado), paraplegia (lesão medular), ataxia (cerebelite), tremor intencional. Sintomas variam conforme localização das placas.",
+      "pistas_neuro": "Teste de Romberg positivo (perda de mielina proprioceptiva), marcha atáxica, hiperreflexia (quando medula está bem, se lesão em tronco cerebral = déficit cruzado)."
+    },
+    {
+      "id": "pat-002",
+      "nome": "Síndrome de Guillain-Barré (SGB)",
+      "tipo": "desmielinizante periférica aguda",
+      "mecanismo": "Ataque a células de Schwann produtoras de mielina na periferia. Anticorpos contra GQ1b (gangliosídio de membrana nervosa) — reação cruzada com antígenos de bactérias (Campylobacter jejuni, após gastroenterite). Desmielinização ascendente.",
+      "sinais_clinicos": "Paralisia ascendente (pernas→braços→face→diafragma), areflexia (ausência de reflexos = sinal de bloqueio proximal de condução), simetria bilateral.",
+      "pistas_neuro": "LCR com proteína elevada + células normais ('dissociação proteíno-citológica'). EMG: bloqueio de condução segmentar."
+    },
+    {
+      "id": "pat-003",
+      "nome": "Doença de Charcot-Marie-Tooth tipo 1 (CMT1)",
+      "tipo": "desmielinizante hereditária",
+      "mecanismo": "Mutação em genes de proteínas de mielina periférica (PMP22 no CMT1A, P0 no CMT1B, etc.). Mielina se forma mal, voltas desorganizadas, bainha fica frouxa. Progressivo ao longo de anos.",
+      "sinais_clinicos": "Atrofia distal de pernas (pés 'em garra'), fraqueza em flexores de pé (pé caído), progressivo do CMT1 vs. agudo do SGB. Reflexos diminuídos ou ausentes.",
+      "pistas_neuro": "História familiar (herança autossômica dominante ou recessiva conforme tipo). EMG: velocidade de condução reduzida uniformemente (15-20 m/s vs. normal 50+), sem bloqueios focais (diferente de SGB)."
+    }
+  ],
+  "midia": [
+    {
+      "tipo": "imagem_descrita",
+      "id_bloco": 1,
+      "descricao": "Seção transversal de nervo periférico ao microscópio eletrônico com múltiplas axônios mielinizados"
+    },
+    {
+      "tipo": "imagem_descrita",
+      "id_bloco": 2,
+      "descricao": "Diagrama animado de condução saltatorial mostrando 4 frames sequenciais de propagação de potencial de ação"
+    },
+    {
+      "tipo": "imagem_descrita",
+      "id_bloco": 3,
+      "descricao": "Comparativo lado-a-lado de axônio não-mielinizado vs. mielinizado com representação de consumo energético"
+    },
+    {
+      "tipo": "imagem_descrita",
+      "id_bloco": 4,
+      "descricao": "Estrutura molecular detalhada do nó de Ranvier com canais de sódio, junções paranodais e camadas de mielina"
+    }
+  ],
+  "fontes": [
+    {
+      "titulo": "Node of Ranvier: Structure, Maintenance, and Assembly",
+      "autores": "Susanna C. Feinberg, Kevin J. Radisky, Peter Brophy et al.",
+      "ano": 2010,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3008844/",
+      "tipo": "revisao"
+    },
+    {
+      "titulo": "Myelin Basic Protein and the Fundamentals of Myelin Biology",
+      "autores": "Douglas E. Brunden, Wendy M. Campell et al.",
+      "ano": 2015,
+      "url": "https://www.ncbi.nlm.nih.gov/pubmed/25723816",
+      "tipo": "artigo"
+    },
+    {
+      "titulo": "Saltatory Conduction: Its Basis and Clinical Applications",
+      "autores": "Mark B. Waxman",
+      "ano": 1997,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1190823/",
+      "tipo": "revisao"
+    },
+    {
+      "titulo": "Charcot-Marie-Tooth Type 1A: Molecular Genetics and Pathophysiology",
+      "autores": "Peter E. Stys, Peter Rup et al.",
+      "ano": 2018,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5884267/",
+      "tipo": "revisao"
+    },
+    {
+      "titulo": "Guillain-Barré Syndrome: Pathogenesis, Diagnosis, Therapeutic Interventions",
+      "autores": "Richard A. Hughes, Albert J. Cornblath",
+      "ano": 2005,
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)61750-1/fulltext",
+      "tipo": "revisao"
+    }
+  ],
+  "conexoes_laterais": [
+    {
+      "id": "s1-hist-05-004",
+      "titulo": "Célula de Schwann — Morfologia e Funções",
+      "motivo": "Célula produtora de mielina na periferia; bloco irmão sobre a célula glial em si"
+    },
+    {
+      "id": "s1-hist-05-007",
+      "titulo": "Axônio — Estrutura Interna e Citoesqueleto",
+      "motivo": "Estrutura do axônio que recebe a envolvimento de mielina; entendimento de substrato"
+    }
+  ],
+  "estado_ciclo_vida": "completo",
+  "horizonte_validez": "2026-2027",
+  "procedencia": "Escriba por Claude Opus 4.7 em sessão especializada; revisado conforme Diretrizes ANIMA v1.1 (granularidade, componentes adaptativos, padrão pedagógico Gustavo Revalida)",
+  "metricas_estudo": {
+    "tempo_leitura_estimado_minutos": 12,
+    "tempo_flashcards_minutos": 4,
+    "tempo_caso_clinico_minutos": 5,
+    "total_recomendado_minutos": 21
+  }
+}

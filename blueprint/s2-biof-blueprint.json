@@ -1,0 +1,1469 @@
+{
+  "disciplina_id": "biof",
+  "disciplina_nome": "Biofísica",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s2-biof-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "lente_central": "Princípio físico APLICADO à biologia/medicina. Cada princípio contextualizado pelo problema fisiológico que explica.",
+    "modulos": {
+      "00": "Fundamentos — O que é Biofísica e as grandezas físicas do corpo (raiz da disciplina, pré-módulos)",
+      "01": "Biofísica de Membranas (Módulo 2.4.1) — potenciais, Nernst, GHK, PA, propagação",
+      "02": "Biofísica da Circulação (Módulo 2.4.2) — Poiseuille, Laplace, pressão/fluxo/resistência, Starling",
+      "03": "Biofísica da Respiração (Módulo 2.4.3) — Boyle, Dalton, Henry, Fick, tensão superficial",
+      "04": "Biofísica Renal (Módulo 2.4.4) — filtração, osmolaridade/tonicidade, contracorrente",
+      "05": "Bioacústica e Biofísica dos Sentidos (Módulo 2.4.5) — som, audição, óptica/visão, radiação",
+      "06": "Biofísica da Radiação e Imagem (Módulo 2.4.6) — RX, TC, RM, US, medicina nuclear"
+    },
+    "criterio_de_folha": "Um nó é folha quando sustenta as 8 etapas E um princípio físico com correlação clínica própria. Se for só resumo/lista, vira seção do pai.",
+    "profundidade": "campo profundidade = profundidade na árvore (raiz disciplina = 0)."
+  },
+  "blocos": [
+    {
+      "id": "s2-biof-00-000",
+      "titulo": "Biofísica — O Que É e Por Que Existe",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Por que a medicina precisa da física; o corpo como sistema regido por leis físicas",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 0
+    },
+    {
+      "id": "s2-biof-00-001",
+      "titulo": "As Grandezas Físicas do Corpo — Pressão, Fluxo, Potencial, Energia",
+      "no_pai_id": "s2-biof-00-000",
+      "nivel": "visao_geral",
+      "escopo": "O vocabulário de grandezas e unidades que a fisiologia toma emprestado da física",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s2-biof-00-002",
+      "titulo": "Gradiente — O Motor Universal dos Processos Biológicos",
+      "no_pai_id": "s2-biof-00-001",
+      "nivel": "tema",
+      "escopo": "Por que quase tudo no corpo flui a favor de um gradiente; energia potencial biológica",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-00-003",
+      "titulo": "Difusão — O Movimento Espontâneo pelo Acaso Térmico",
+      "no_pai_id": "s2-biof-00-001",
+      "nivel": "tema",
+      "escopo": "Movimento browniano, entropia e por que soluto se espalha sem gastar energia",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-00-004",
+      "titulo": "Membrana como Barreira Seletiva — O Problema Físico Central",
+      "no_pai_id": "s2-biof-00-001",
+      "nivel": "tema",
+      "escopo": "Por que a bicamada lipídica separa cargas e concentrações; capacitor biológico",
+      "lentes": [
+        "morfologia",
+        "bioquimica",
+        "funcao"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-01-000",
+      "titulo": "Biofísica de Membranas — Visão Geral",
+      "no_pai_id": "s2-biof-00-000",
+      "nivel": "modulo",
+      "escopo": "Como a célula transforma gradientes iônicos em sinais elétricos",
+      "lentes": [
+        "funcao",
+        "morfologia"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s2-biof-01-001",
+      "titulo": "Potencial de Repouso — Por Que a Célula é Uma Pilha",
+      "no_pai_id": "s2-biof-01-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: manter diferença de carga através da membrana em repouso",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-01-001-01",
+      "titulo": "Gradientes Iônicos de Repouso — Na+, K+, Cl-, Ca2+",
+      "no_pai_id": "s2-biof-01-001",
+      "nivel": "folha",
+      "escopo": "As concentrações intra e extracelulares que criam a energia elétrica",
+      "lentes": [
+        "bioquimica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-001-02",
+      "titulo": "Bomba Na+/K+-ATPase — Quem Paga a Conta Energética",
+      "no_pai_id": "s2-biof-01-001",
+      "nivel": "folha",
+      "escopo": "Transporte ativo primário eletrogênico que mantém os gradientes; 3Na+/2K+",
+      "lentes": [
+        "bioquimica",
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-001-03",
+      "titulo": "Permeabilidade Seletiva ao K+ e Canais de Vazamento",
+      "no_pai_id": "s2-biof-01-001",
+      "nivel": "folha",
+      "escopo": "Por que a membrana em repouso é dominada pelo potássio; canais de leak",
+      "lentes": [
+        "morfologia",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-001-04",
+      "titulo": "Potencial de Equilíbrio — A Trégua entre Difusão e Elétrica",
+      "no_pai_id": "s2-biof-01-001",
+      "nivel": "folha",
+      "escopo": "Quando a força química empata com a elétrica; conceito que Nernst quantifica",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-002",
+      "titulo": "Equação de Nernst — Calcular o Equilíbrio de Um Íon",
+      "no_pai_id": "s2-biof-01-000",
+      "nivel": "tema",
+      "escopo": "A equação que traduz razão de concentração em voltagem de equilíbrio",
+      "lentes": [
+        "bioquimica",
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-01-002-01",
+      "titulo": "Termodinâmica por Trás de Nernst — RT/zF",
+      "no_pai_id": "s2-biof-01-002",
+      "nivel": "folha",
+      "escopo": "De onde vêm os termos: energia térmica, carga e constante de Faraday",
+      "lentes": [
+        "bioquimica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-002-02",
+      "titulo": "Aplicando Nernst — E_K, E_Na e a Leitura Clínica do K+ Sérico",
+      "no_pai_id": "s2-biof-01-002",
+      "nivel": "folha",
+      "escopo": "Cálculos práticos e por que hiper/hipocalemia mudam a excitabilidade",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-003",
+      "titulo": "Equação de Goldman-Hodgkin-Katz — Vários Íons de Uma Vez",
+      "no_pai_id": "s2-biof-01-000",
+      "nivel": "tema",
+      "escopo": "Por que uma membrana real precisa ponderar permeabilidades de múltiplos íons",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-01-003-01",
+      "titulo": "Permeabilidade como Peso — Por Que o Íon Mais Permeável Domina",
+      "no_pai_id": "s2-biof-01-003",
+      "nivel": "folha",
+      "escopo": "Como P_Na/P_K desloca o potencial; a chave para entender o PA",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-003-02",
+      "titulo": "Nernst vs GHK — Quando Usar Cada Uma",
+      "no_pai_id": "s2-biof-01-003",
+      "nivel": "folha",
+      "escopo": "Contrafactual: um íon em equilíbrio vs membrana real com fugas simultâneas",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-004",
+      "titulo": "Potencial de Ação — O Pulso Elétrico Tudo-ou-Nada",
+      "no_pai_id": "s2-biof-01-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: enviar sinal rápido e sem perda por longa distância",
+      "lentes": [
+        "funcao",
+        "morfologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-01-004-01",
+      "titulo": "Limiar e a Lei do Tudo-ou-Nada",
+      "no_pai_id": "s2-biof-01-004",
+      "nivel": "folha",
+      "escopo": "Por que abaixo do limiar nada acontece e acima o pulso é sempre máximo",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-004-02",
+      "titulo": "Fase de Despolarização — A Avalanche de Na+",
+      "no_pai_id": "s2-biof-01-004",
+      "nivel": "folha",
+      "escopo": "Retroalimentação positiva do influxo de sódio; a subida do pico",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-004-03",
+      "titulo": "Fase de Repolarização — O Retorno pelo K+",
+      "no_pai_id": "s2-biof-01-004",
+      "nivel": "folha",
+      "escopo": "Inativação do Na+ e efluxo tardio de potássio que restaura o repouso",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-004-04",
+      "titulo": "Hiperpolarização e o Undershoot",
+      "no_pai_id": "s2-biof-01-004",
+      "nivel": "folha",
+      "escopo": "Por que o potencial ultrapassa o repouso antes de voltar; canais de K+ lentos",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-005",
+      "titulo": "Canais Voltagem-Dependentes — Portas que Sentem Campo Elétrico",
+      "no_pai_id": "s2-biof-01-004",
+      "nivel": "tema",
+      "escopo": "Como uma proteína detecta voltagem e abre; o transdutor do PA",
+      "lentes": [
+        "morfologia",
+        "bioquimica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-005-01",
+      "titulo": "Canal de Na+ Voltagem-Dependente — Ativação e Inativação",
+      "no_pai_id": "s2-biof-01-005",
+      "nivel": "folha",
+      "escopo": "Comportas m e h; por que ele se fecha sozinho após abrir",
+      "lentes": [
+        "morfologia",
+        "funcao"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s2-biof-01-005-02",
+      "titulo": "Canal de K+ Voltagem-Dependente — A Comporta Lenta",
+      "no_pai_id": "s2-biof-01-005",
+      "nivel": "folha",
+      "escopo": "Abertura retardada que repolariza; contraste cinético com o Na+",
+      "lentes": [
+        "morfologia",
+        "funcao"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s2-biof-01-005-03",
+      "titulo": "Farmacologia dos Canais — Anestésicos Locais e Toxinas",
+      "no_pai_id": "s2-biof-01-005",
+      "nivel": "folha",
+      "escopo": "Lidocaína, tetrodotoxina: bloquear o canal para abolir o PA",
+      "lentes": [
+        "bioquimica",
+        "correlacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s2-biof-01-006",
+      "titulo": "Período Refratário — Por Que o Neurônio Precisa Descansar",
+      "no_pai_id": "s2-biof-01-004",
+      "nivel": "tema",
+      "escopo": "O problema: garantir direção única e frequência máxima do sinal",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-006-01",
+      "titulo": "Refratário Absoluto vs Relativo",
+      "no_pai_id": "s2-biof-01-006",
+      "nivel": "folha",
+      "escopo": "Inativação total do Na+ vs necessidade de estímulo mais forte",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s2-biof-01-007",
+      "titulo": "Propagação do Potencial de Ação — Levar o Sinal Longe",
+      "no_pai_id": "s2-biof-01-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema físico: como o pulso viaja sem se apagar pelo axônio",
+      "lentes": [
+        "funcao",
+        "morfologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-01-007-01",
+      "titulo": "Propriedades de Cabo — Constante de Espaço e de Tempo",
+      "no_pai_id": "s2-biof-01-007",
+      "nivel": "folha",
+      "escopo": "Por que o sinal decai com a distância; resistência e capacitância do axônio",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-007-02",
+      "titulo": "Condução Contínua no Axônio Amielínico",
+      "no_pai_id": "s2-biof-01-007",
+      "nivel": "folha",
+      "escopo": "Regeneração ponto a ponto; por que é lenta e cara energeticamente",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-008",
+      "titulo": "Mielina — O Isolante que Acelera o Sinal",
+      "no_pai_id": "s2-biof-01-007",
+      "nivel": "tema",
+      "escopo": "Solução física: envolver o axônio para reduzir capacitância e vazamento",
+      "lentes": [
+        "morfologia",
+        "bioquimica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-008-01",
+      "titulo": "Ultraestrutura da Bainha — Células de Schwann e Oligodendrócitos",
+      "no_pai_id": "s2-biof-01-008",
+      "nivel": "folha",
+      "escopo": "Como camadas de membrana criam isolamento elétrico; SNP vs SNC",
+      "lentes": [
+        "morfologia",
+        "citologia",
+        "embriologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s2-biof-01-008-02",
+      "titulo": "Nódulos de Ranvier — Onde o Sinal Salta",
+      "no_pai_id": "s2-biof-01-008",
+      "nivel": "folha",
+      "escopo": "Concentração de canais de Na+ nas interrupções da bainha",
+      "lentes": [
+        "morfologia",
+        "funcao"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s2-biof-01-009",
+      "titulo": "Condução Saltatória — O Salto entre Nódulos",
+      "no_pai_id": "s2-biof-01-007",
+      "nivel": "folha",
+      "escopo": "Por que o PA pula de nódulo em nódulo; ganho de velocidade e economia",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-01-010",
+      "titulo": "Desmielinização — Quando o Isolante Falha (Esclerose Múltipla)",
+      "no_pai_id": "s2-biof-01-008",
+      "nivel": "folha",
+      "escopo": "Correlação clínica: perda de mielina desacelera e bloqueia a condução",
+      "lentes": [
+        "correlacao_clinica",
+        "funcao"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s2-biof-02-000",
+      "titulo": "Biofísica da Circulação — Visão Geral",
+      "no_pai_id": "s2-biof-00-000",
+      "nivel": "modulo",
+      "escopo": "O sangue como fluido regido pela hidrodinâmica; pressão move, resistência freia",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s2-biof-02-001",
+      "titulo": "Pressão, Fluxo e Resistência — A Lei de Ohm Hemodinâmica",
+      "no_pai_id": "s2-biof-02-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: mover sangue exige diferença de pressão vencendo resistência",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-02-001-01",
+      "titulo": "Fluxo = ΔP/R — Analogia Elétrica da Circulação",
+      "no_pai_id": "s2-biof-02-001",
+      "nivel": "folha",
+      "escopo": "Como pressão, débito e resistência se relacionam como tensão, corrente e ohm",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-001-02",
+      "titulo": "Fluxo Laminar vs Turbulento — Número de Reynolds",
+      "no_pai_id": "s2-biof-02-001",
+      "nivel": "folha",
+      "escopo": "Quando o fluxo vira turbilhão; sopros, bruits e a origem do som de Korotkoff",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-001-03",
+      "titulo": "Viscosidade do Sangue e Hematócrito",
+      "no_pai_id": "s2-biof-02-001",
+      "nivel": "folha",
+      "escopo": "Por que sangue não é água; policitemia, anemia e efeito Fåhraeus-Lindqvist",
+      "lentes": [
+        "bioquimica",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-002",
+      "titulo": "Lei de Poiseuille — O Poder Tirânico do Raio",
+      "no_pai_id": "s2-biof-02-000",
+      "nivel": "tema",
+      "escopo": "Por que o raio elevado à quarta potência domina a resistência vascular",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-02-002-01",
+      "titulo": "A Potência de Quarta do Raio — Vasoconstrição e Vasodilatação",
+      "no_pai_id": "s2-biof-02-002",
+      "nivel": "folha",
+      "escopo": "Como uma pequena mudança de calibre altera drasticamente o fluxo",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-002-02",
+      "titulo": "Aplicação Clínica — Estenose Arterial e Fármacos Vasoativos",
+      "no_pai_id": "s2-biof-02-002",
+      "nivel": "folha",
+      "escopo": "Placa que estreita o raio; por que vasodilatadores baixam a pressão",
+      "lentes": [
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-002-03",
+      "titulo": "Limitações de Poiseuille no Corpo Real",
+      "no_pai_id": "s2-biof-02-002",
+      "nivel": "folha",
+      "escopo": "Contrafactual: vasos elásticos, fluxo pulsátil e sangue não-newtoniano",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-003",
+      "titulo": "Lei de Laplace — A Tensão na Parede de Um Tubo",
+      "no_pai_id": "s2-biof-02-000",
+      "nivel": "tema",
+      "escopo": "Por que raio e pressão determinam a tensão que a parede precisa suportar",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-02-003-01",
+      "titulo": "Aneurisma — Quando o Raio Cresce e a Tensão Dispara",
+      "no_pai_id": "s2-biof-02-003",
+      "nivel": "folha",
+      "escopo": "Ciclo vicioso de dilatação e por que aneurismas grandes rompem",
+      "lentes": [
+        "correlacao_clinica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-003-02",
+      "titulo": "Laplace no Coração — Hipertrofia e Dilatação Ventricular",
+      "no_pai_id": "s2-biof-02-003",
+      "nivel": "folha",
+      "escopo": "Por que o ventrículo dilatado gasta mais para gerar a mesma pressão",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-003-03",
+      "titulo": "Laplace no Alvéolo — A Ponte com o Surfactante",
+      "no_pai_id": "s2-biof-02-003",
+      "nivel": "folha",
+      "escopo": "Por que esferas pequenas colapsariam sem surfactante; elo com respiração",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-004",
+      "titulo": "Pressão Hidrostática vs Oncótica — As Forças que Empurram e Puxam",
+      "no_pai_id": "s2-biof-02-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: decidir se o líquido sai ou entra no capilar",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-02-004-01",
+      "titulo": "Pressão Hidrostática — A Força que Expulsa Água do Vaso",
+      "no_pai_id": "s2-biof-02-004",
+      "nivel": "folha",
+      "escopo": "Pressão do sangue empurrando plasma para fora; gradiente ao longo do capilar",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-004-02",
+      "titulo": "Pressão Oncótica (Coloidosmótica) — As Proteínas que Retêm Água",
+      "no_pai_id": "s2-biof-02-004",
+      "nivel": "folha",
+      "escopo": "Albumina como esponja osmótica; por que hipoalbuminemia causa edema",
+      "lentes": [
+        "bioquimica",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-005",
+      "titulo": "Lei de Starling dos Capilares — O Balanço que Decide o Edema",
+      "no_pai_id": "s2-biof-02-000",
+      "nivel": "tema",
+      "escopo": "Como as quatro forças de Starling determinam filtração e reabsorção",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-02-005-01",
+      "titulo": "As Quatro Forças de Starling e o Coeficiente de Filtração",
+      "no_pai_id": "s2-biof-02-005",
+      "nivel": "folha",
+      "escopo": "Pc, Pi, πc, πi e como somá-las na equação; sentido do fluxo líquido",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-005-02",
+      "titulo": "Fisiopatologia do Edema — Cada Mecanismo pelas Forças de Starling",
+      "no_pai_id": "s2-biof-02-005",
+      "nivel": "folha",
+      "escopo": "IC, cirrose, síndrome nefrótica, linfedema, inflamação vistos por Starling",
+      "lentes": [
+        "correlacao_clinica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-02-005-03",
+      "titulo": "Sistema Linfático — A Válvula de Segurança da Filtração",
+      "no_pai_id": "s2-biof-02-005",
+      "nivel": "folha",
+      "escopo": "Por que o excedente filtrado precisa de dreno; linfedema quando falha",
+      "lentes": [
+        "funcao",
+        "morfologia",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-000",
+      "titulo": "Biofísica da Respiração — Visão Geral",
+      "no_pai_id": "s2-biof-00-000",
+      "nivel": "modulo",
+      "escopo": "Como gases se movem por leis físicas para oxigenar o sangue",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s2-biof-03-001",
+      "titulo": "Lei de Boyle — Como o Tórax Puxa o Ar",
+      "no_pai_id": "s2-biof-03-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: mover ar sem bomba; volume e pressão inversamente proporcionais",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-03-001-01",
+      "titulo": "Mecânica Ventilatória — Diafragma, Volume e Pressão Intrapleural",
+      "no_pai_id": "s2-biof-03-001",
+      "nivel": "folha",
+      "escopo": "Como expandir a caixa torácica cria pressão negativa que atrai o ar",
+      "lentes": [
+        "funcao",
+        "morfologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-001-02",
+      "titulo": "Pneumotórax — Quando Boyle Trabalha Contra o Pulmão",
+      "no_pai_id": "s2-biof-03-001",
+      "nivel": "folha",
+      "escopo": "Ar no espaço pleural abole a pressão negativa e colapsa o pulmão",
+      "lentes": [
+        "correlacao_clinica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-002",
+      "titulo": "Lei de Dalton — Pressões Parciais e o Gradiente que Move o O2",
+      "no_pai_id": "s2-biof-03-000",
+      "nivel": "tema",
+      "escopo": "Por que cada gás tem sua própria pressão; do ar ambiente ao alvéolo",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-03-002-01",
+      "titulo": "Da Pressão Atmosférica ao Ar Alveolar — Equação do Gás Alveolar",
+      "no_pai_id": "s2-biof-03-002",
+      "nivel": "folha",
+      "escopo": "Como umidade, CO2 e altitude reduzem a PO2 até o alvéolo",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-002-02",
+      "titulo": "Altitude e Hipóxia — Dalton no Extremo",
+      "no_pai_id": "s2-biof-03-002",
+      "nivel": "folha",
+      "escopo": "Por que menos pressão total significa menos O2 disponível; mal das montanhas",
+      "lentes": [
+        "correlacao_clinica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-003",
+      "titulo": "Lei de Henry — Quanto Gás Se Dissolve no Sangue",
+      "no_pai_id": "s2-biof-03-000",
+      "nivel": "tema",
+      "escopo": "Solubilidade proporcional à pressão parcial; O2 e CO2 dissolvidos",
+      "lentes": [
+        "bioquimica",
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-03-003-01",
+      "titulo": "Por Que Precisamos de Hemoglobina — O Limite de Henry",
+      "no_pai_id": "s2-biof-03-003",
+      "nivel": "folha",
+      "escopo": "O2 dissolvido é insuficiente; a solução evolutiva do transportador",
+      "lentes": [
+        "bioquimica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-003-02",
+      "titulo": "Doença Descompressiva e Oxigenoterapia Hiperbárica",
+      "no_pai_id": "s2-biof-03-003",
+      "nivel": "folha",
+      "escopo": "Bolhas de N2 ao subir rápido; Henry aplicado ao mergulho e à câmara",
+      "lentes": [
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-004",
+      "titulo": "Lei de Fick da Difusão — A Velocidade da Troca Gasosa",
+      "no_pai_id": "s2-biof-03-000",
+      "nivel": "visao_geral",
+      "escopo": "O que governa quão rápido o gás cruza a membrana alvéolo-capilar",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-03-004-01",
+      "titulo": "As Variáveis de Fick — Área, Espessura, Gradiente e Solubilidade",
+      "no_pai_id": "s2-biof-03-004",
+      "nivel": "folha",
+      "escopo": "Cada termo da equação e como a membrana respiratória é otimizada",
+      "lentes": [
+        "funcao",
+        "morfologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-004-02",
+      "titulo": "Distúrbios da Difusão — Fibrose, Edema e Enfisema",
+      "no_pai_id": "s2-biof-03-004",
+      "nivel": "folha",
+      "escopo": "Como espessar a barreira ou perder área prejudica a troca gasosa",
+      "lentes": [
+        "correlacao_clinica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-004-03",
+      "titulo": "Por Que o CO2 Difunde 20x Mais que o O2",
+      "no_pai_id": "s2-biof-03-004",
+      "nivel": "folha",
+      "escopo": "Solubilidade e por que hipoxemia surge antes de hipercapnia na fibrose",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-005",
+      "titulo": "Tensão Superficial e Surfactante — Manter o Alvéolo Aberto",
+      "no_pai_id": "s2-biof-03-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: a água que reveste o alvéolo quer colapsá-lo",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-03-005-01",
+      "titulo": "Tensão Superficial — A Coesão da Água que Fecha Bolhas",
+      "no_pai_id": "s2-biof-03-005",
+      "nivel": "folha",
+      "escopo": "Física da interface ar-líquido e como se combina com Laplace no alvéolo",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-005-02",
+      "titulo": "Surfactante — O Detergente Biológico dos Pneumócitos II",
+      "no_pai_id": "s2-biof-03-005",
+      "nivel": "folha",
+      "escopo": "Como fosfolipídio quebra a tensão e estabiliza alvéolos de tamanhos diferentes",
+      "lentes": [
+        "bioquimica",
+        "citologia",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-005-03",
+      "titulo": "Síndrome do Desconforto Respiratório do Recém-Nascido",
+      "no_pai_id": "s2-biof-03-005",
+      "nivel": "folha",
+      "escopo": "Prematuro sem surfactante; por que os alvéolos colapsam; correlação clínica",
+      "lentes": [
+        "correlacao_clinica",
+        "embriologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-03-006",
+      "titulo": "Complacência Pulmonar — A Elasticidade do Pulmão",
+      "no_pai_id": "s2-biof-03-005",
+      "nivel": "folha",
+      "escopo": "Relação volume-pressão do pulmão; fibrose enrijece, enfisema afrouxa",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-000",
+      "titulo": "Biofísica Renal — Visão Geral",
+      "no_pai_id": "s2-biof-00-000",
+      "nivel": "modulo",
+      "escopo": "Como o rim usa pressão e osmose para filtrar e concentrar",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s2-biof-04-001",
+      "titulo": "Filtração Glomerular — Starling Aplicado ao Rim",
+      "no_pai_id": "s2-biof-04-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: filtrar plasma em grande escala usando pressão hidrostática",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-04-001-01",
+      "titulo": "As Forças de Starling no Glomérulo",
+      "no_pai_id": "s2-biof-04-001",
+      "nivel": "folha",
+      "escopo": "Por que aqui a hidrostática vence sempre; ausência de reabsorção capilar",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-001-02",
+      "titulo": "Barreira de Filtração — Tamanho e Carga",
+      "no_pai_id": "s2-biof-04-001",
+      "nivel": "folha",
+      "escopo": "Três camadas seletivas; por que albumina normalmente não passa",
+      "lentes": [
+        "morfologia",
+        "bioquimica",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-001-03",
+      "titulo": "Taxa de Filtração Glomerular e Autorregulação",
+      "no_pai_id": "s2-biof-04-001",
+      "nivel": "folha",
+      "escopo": "Como arteríolas aferente/eferente ajustam a pressão de filtração",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-001-04",
+      "titulo": "Síndrome Nefrótica — Quando a Barreira Falha",
+      "no_pai_id": "s2-biof-04-001",
+      "nivel": "folha",
+      "escopo": "Perda de carga/tamanho deixa albumina escapar; elo com edema por oncótica",
+      "lentes": [
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-002",
+      "titulo": "Osmolaridade e Tonicidade — A Força que Move Água",
+      "no_pai_id": "s2-biof-04-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: prever para onde a água vai entre compartimentos",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-04-002-01",
+      "titulo": "Osmose e Pressão Osmótica — Equação de van't Hoff",
+      "no_pai_id": "s2-biof-04-002",
+      "nivel": "folha",
+      "escopo": "Como número de partículas gera pressão; osmol como unidade biológica",
+      "lentes": [
+        "bioquimica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-002-02",
+      "titulo": "Osmolaridade vs Tonicidade — O Papel do Soluto Efetivo",
+      "no_pai_id": "s2-biof-04-002",
+      "nivel": "folha",
+      "escopo": "Por que ureia não conta e NaCl conta; coeficiente de reflexão",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-002-03",
+      "titulo": "Soluções Iso, Hipo e Hipertônicas — Efeito na Célula",
+      "no_pai_id": "s2-biof-04-002",
+      "nivel": "folha",
+      "escopo": "Crenação e hemólise; escolha de fluidos IV; hidratação clínica",
+      "lentes": [
+        "correlacao_clinica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-003",
+      "titulo": "Mecanismo Multiplicador Contracorrente — Como o Rim Concentra a Urina",
+      "no_pai_id": "s2-biof-04-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: criar urina mais concentrada que o plasma; economizar água",
+      "lentes": [
+        "funcao",
+        "morfologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-04-003-01",
+      "titulo": "A Alça de Henle como Multiplicador — Geometria e Permeabilidade",
+      "no_pai_id": "s2-biof-04-003",
+      "nivel": "folha",
+      "escopo": "Ramo descendente permeável à água, ascendente que bombeia sal; o truque físico",
+      "lentes": [
+        "morfologia",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-003-02",
+      "titulo": "Gradiente Osmótico Medular e a Ureia",
+      "no_pai_id": "s2-biof-04-003",
+      "nivel": "folha",
+      "escopo": "Como se constrói o gradiente de 300 a 1200 mOsm na medula",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-003-03",
+      "titulo": "Vasa Recta — Trocador Contracorrente que Preserva o Gradiente",
+      "no_pai_id": "s2-biof-04-003",
+      "nivel": "folha",
+      "escopo": "Por que o fluxo sanguíneo em U evita lavar o gradiente medular",
+      "lentes": [
+        "morfologia",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-04-003-04",
+      "titulo": "ADH e Ducto Coletor — Ajustar a Água Final",
+      "no_pai_id": "s2-biof-04-003",
+      "nivel": "folha",
+      "escopo": "Aquaporinas reguladas pelo hormônio; diabetes insipidus como contrafactual",
+      "lentes": [
+        "bioquimica",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-000",
+      "titulo": "Bioacústica e Biofísica dos Sentidos — Visão Geral",
+      "no_pai_id": "s2-biof-00-000",
+      "nivel": "modulo",
+      "escopo": "Como energia física vira sinal sensorial; som, luz e radiação transduzidos",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s2-biof-05-001",
+      "titulo": "Som — As Propriedades Físicas da Onda Sonora",
+      "no_pai_id": "s2-biof-05-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: o que é som e como o corpo o mede",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-05-001-01",
+      "titulo": "Frequência, Amplitude e a Escala em Decibéis",
+      "no_pai_id": "s2-biof-05-001",
+      "nivel": "folha",
+      "escopo": "Tom vs intensidade; por que dB é logarítmico; limiar auditivo",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-001-02",
+      "titulo": "Impedância Acústica — Por Que o Som Precisa Ser Casado",
+      "no_pai_id": "s2-biof-05-001",
+      "nivel": "folha",
+      "escopo": "Reflexão ar-líquido e o problema que o ouvido médio resolve",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-002",
+      "titulo": "Transdução Auditiva — Do Som ao Potencial de Ação",
+      "no_pai_id": "s2-biof-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Como a onda mecânica vira sinal elétrico na cóclea",
+      "lentes": [
+        "funcao",
+        "morfologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-05-002-01",
+      "titulo": "Ouvido Médio — Casamento de Impedância pela Alavanca Ossicular",
+      "no_pai_id": "s2-biof-05-002",
+      "nivel": "folha",
+      "escopo": "Como martelo-bigorna-estribo amplificam pressão para vencer o líquido coclear",
+      "lentes": [
+        "morfologia",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-002-02",
+      "titulo": "Cóclea e Membrana Basilar — Tonotopia como Análise de Fourier",
+      "no_pai_id": "s2-biof-05-002",
+      "nivel": "folha",
+      "escopo": "Por que cada frequência ressoa num ponto; mapa de tons ao longo da membrana",
+      "lentes": [
+        "morfologia",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-002-03",
+      "titulo": "Células Ciliadas — O Transdutor Mecanoelétrico",
+      "no_pai_id": "s2-biof-05-002",
+      "nivel": "folha",
+      "escopo": "Estereocílios abrem canais ao dobrar; perda causa surdez neurossensorial",
+      "lentes": [
+        "citologia",
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-003",
+      "titulo": "Óptica e Visão — A Física da Formação da Imagem",
+      "no_pai_id": "s2-biof-05-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: focar luz numa retina e converter fótons em sinal",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-05-003-01",
+      "titulo": "Refração e o Sistema de Lentes do Olho",
+      "no_pai_id": "s2-biof-05-003",
+      "nivel": "folha",
+      "escopo": "Córnea e cristalino como lentes convergentes; poder dióptrico",
+      "lentes": [
+        "funcao",
+        "morfologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-003-02",
+      "titulo": "Acomodação — Focar de Perto e de Longe",
+      "no_pai_id": "s2-biof-05-003",
+      "nivel": "folha",
+      "escopo": "Como o cristalino muda de forma; presbiopia como falha física com a idade",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-003-03",
+      "titulo": "Erros de Refração — Miopia, Hipermetropia, Astigmatismo",
+      "no_pai_id": "s2-biof-05-003",
+      "nivel": "folha",
+      "escopo": "Onde a imagem cai fora da retina e como a lente corretiva resolve",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-003-04",
+      "titulo": "Fototransdução — Do Fóton ao Sinal no Fotorreceptor",
+      "no_pai_id": "s2-biof-05-003",
+      "nivel": "folha",
+      "escopo": "Rodopsina, cascata do GMPc e a curiosa hiperpolarização do bastonete",
+      "lentes": [
+        "bioquimica",
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-004",
+      "titulo": "Radiação Ionizante e Não-Ionizante — A Fronteira da Energia",
+      "no_pai_id": "s2-biof-05-000",
+      "nivel": "tema",
+      "escopo": "O que separa radiação que quebra moléculas da que só aquece; base para imagem",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-05-004-01",
+      "titulo": "Espectro Eletromagnético — Energia, Frequência e Efeito Biológico",
+      "no_pai_id": "s2-biof-05-004",
+      "nivel": "folha",
+      "escopo": "Do rádio ao gama; onde começa o poder de ionizar tecido",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-004-02",
+      "titulo": "Radiação Ionizante — Como Danifica o DNA",
+      "no_pai_id": "s2-biof-05-004",
+      "nivel": "folha",
+      "escopo": "Ionização direta e radicais livres; base do risco e da radioterapia",
+      "lentes": [
+        "bioquimica",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-05-004-03",
+      "titulo": "Dose, Proteção Radiológica e o Princípio ALARA",
+      "no_pai_id": "s2-biof-05-004",
+      "nivel": "folha",
+      "escopo": "Gray, Sievert; tempo, distância e blindagem; segurança em imagem",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-06-000",
+      "titulo": "Biofísica da Radiação e Imagem — Visão Geral",
+      "no_pai_id": "s2-biof-00-000",
+      "nivel": "modulo",
+      "escopo": "Como cada modalidade de imagem explora um princípio físico distinto",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s2-biof-06-001",
+      "titulo": "Raio-X — Ver Através do Corpo pela Atenuação",
+      "no_pai_id": "s2-biof-06-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: produzir imagem do interior sem abrir; sombras por densidade",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-06-001-01",
+      "titulo": "Produção de Raios-X — Tubo, Anodo e Bremsstrahlung",
+      "no_pai_id": "s2-biof-06-001",
+      "nivel": "folha",
+      "escopo": "Como elétrons acelerados geram fótons de alta energia",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-06-001-02",
+      "titulo": "Atenuação Diferencial — Por Que Osso é Branco e Ar é Preto",
+      "no_pai_id": "s2-biof-06-001",
+      "nivel": "folha",
+      "escopo": "Como densidade e número atômico criam as cinco densidades radiológicas",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-06-002",
+      "titulo": "Tomografia Computadorizada — Cortes a Partir de Muitos Raios-X",
+      "no_pai_id": "s2-biof-06-000",
+      "nivel": "tema",
+      "escopo": "Como girar a fonte e reconstruir remove a sobreposição do RX plano",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-06-002-01",
+      "titulo": "Reconstrução e Unidades Hounsfield",
+      "no_pai_id": "s2-biof-06-002",
+      "nivel": "folha",
+      "escopo": "Escala de atenuação calibrada; janelas de visualização e dose vs RX",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-06-003",
+      "titulo": "Ressonância Magnética — Imagem Sem Radiação Ionizante",
+      "no_pai_id": "s2-biof-06-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: contraste de tecidos moles usando o próton de hidrogênio",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-06-003-01",
+      "titulo": "Spin, Campo Magnético e Ressonância do Próton",
+      "no_pai_id": "s2-biof-06-003",
+      "nivel": "folha",
+      "escopo": "Como alinhar spins e excitá-los com radiofrequência",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-06-003-02",
+      "titulo": "Relaxamento T1 e T2 — A Origem do Contraste",
+      "no_pai_id": "s2-biof-06-003",
+      "nivel": "folha",
+      "escopo": "Por que gordura, água e patologia aparecem diferentes conforme a ponderação",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-06-004",
+      "titulo": "Ultrassom — Imagem por Eco Sonoro",
+      "no_pai_id": "s2-biof-06-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: ver em tempo real e sem radiação usando som e sua reflexão",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-06-004-01",
+      "titulo": "Piezoeletricidade, Eco e Impedância Acústica",
+      "no_pai_id": "s2-biof-06-004",
+      "nivel": "folha",
+      "escopo": "Como o transdutor emite e recebe; por que o eco depende de interfaces",
+      "lentes": [
+        "funcao"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-06-004-02",
+      "titulo": "Efeito Doppler — Medir Fluxo Sanguíneo",
+      "no_pai_id": "s2-biof-06-004",
+      "nivel": "folha",
+      "escopo": "Deslocamento de frequência revela velocidade e direção do sangue",
+      "lentes": [
+        "funcao",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-06-005",
+      "titulo": "Medicina Nuclear — Imagem Funcional pela Radiação Interna",
+      "no_pai_id": "s2-biof-06-000",
+      "nivel": "visao_geral",
+      "escopo": "O problema: ver função/metabolismo, não só anatomia; radiofármacos emissores",
+      "lentes": [
+        "funcao",
+        "etimologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s2-biof-06-005-01",
+      "titulo": "Radiofármacos e Detecção — Cintilografia e Câmara Gama",
+      "no_pai_id": "s2-biof-06-005",
+      "nivel": "folha",
+      "escopo": "Traçador emissor gama e como o detector monta a imagem funcional",
+      "lentes": [
+        "funcao",
+        "bioquimica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s2-biof-06-005-02",
+      "titulo": "PET — Aniquilação de Pósitrons e Metabolismo da Glicose",
+      "no_pai_id": "s2-biof-06-005",
+      "nivel": "folha",
+      "escopo": "FDG e detecção em coincidência; por que tumores acendem no PET",
+      "lentes": [
+        "funcao",
+        "bioquimica",
+        "correlacao_clinica"
+      ],
+      "profundidade": 3
+    }
+  ]
+}

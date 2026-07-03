@@ -1,0 +1,1955 @@
+{
+  "disciplina_id": "ped1",
+  "disciplina_nome": "Pediatria I",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s8-ped1-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "lente_da_disciplina": "problema pediatrico -> mecanismo -> clinica -> conduta, sempre com o filtro do que e ESPECIFICO da crianca (faixa etaria, fisiologia propria, anatomia, doses).",
+    "criterio_de_folha": "No e folha quando sustenta as 8 etapas E >=1 flashcard contrafactual/clinico legitimo. Doenca com fisiopatologia + clinica + diagnostico + conduta de peso proprio vira visao_geral com folhas por lente.",
+    "profundidade": "campo profundidade = profundidade na arvore (raiz da disciplina = 1).",
+    "nota_curriculo": "Segue o curriculo oficial 8.2 (Cap. 6): Crescimento e Desenvolvimento, Aleitamento, Imunizacoes, Neonatologia (Cuidados ao RN, Asfixia, Disturbios Respiratorios, Ictericia, Sepse, EIM/Triagem), Doencas Comuns na Infancia (Inf. Respiratorias, Diarreias, Otite, Faringoamigdalites, Exantematicas) e Adolescencia. Cada tema aprofundado ao nivel-folha do padrao histologia.",
+    "modulos": {
+      "10": "Sepse Neonatal e Infeccoes Congenitas (TORCH)",
+      "11": "Erros Inatos do Metabolismo e Triagem Neonatal",
+      "12": "Infeccoes Respiratorias da Infancia (crupe, bronquiolite, pneumonia)",
+      "13": "Asma e Sibilancia na Infancia",
+      "14": "Diarreia Aguda e Desidratacao (reidratacao, planos A/B/C)",
+      "15": "Doencas Exantematicas",
+      "16": "Otite Media e Faringoamigdalites",
+      "17": "Adolescencia (puberdade, Tanner, consulta do adolescente)",
+      "00": "Fundamentos: a crianca nao e adulto pequeno; metodo, faixas etarias, fisiologia propria",
+      "01": "Crescimento e Desenvolvimento (antropometria, curvas, DNPM, marcos)",
+      "02": "Puericultura (consulta da crianca sadia, triagens, suplementacao, prevencao)",
+      "03": "Aleitamento Materno e Nutricao Infantil (lactacao, introducao alimentar, desnutricao/obesidade)",
+      "04": "Imunizacoes (bases, tipos, calendario PNI, eventos adversos)",
+      "05": "Neonatologia — RN normal e adaptacao a vida extrauterina",
+      "06": "Asfixia Perinatal e Reanimacao Neonatal",
+      "07": "Prematuridade e RN de risco",
+      "08": "Disturbios Respiratorios do RN (DMH, TTRN, aspiracao meconial)",
+      "09": "Ictericia Neonatal (fisiologica/patologica, hemolitica, kernicterus)"
+    }
+  },
+  "blocos": [
+    {
+      "id": "s8-ped1-00-000",
+      "titulo": "Pediatria I — A Criança Não é um Adulto Pequeno",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Por que a pediatria raciocina pela fase do desenvolvimento e não só pela doença",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia",
+        "etimologia"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s8-ped1-00-001",
+      "titulo": "O Método em Pediatria — Do Problema à Fase do Desenvolvimento",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "visao_geral",
+      "escopo": "Cadeia problema pediátrico -> mecanismo -> clínica -> conduta com filtro da idade",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-00-002",
+      "titulo": "As Faixas Etárias Pediátricas — RN, Lactente, Pré-escolar, Escolar, Adolescente",
+      "no_pai_id": "s8-ped1-00-001",
+      "nivel": "tema",
+      "escopo": "Por que cada faixa etária muda diagnóstico diferencial e conduta",
+      "lentes": [
+        "raciocinio_clinico",
+        "etimologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-00-003",
+      "titulo": "Particularidades Fisiológicas da Criança — Água, Superfície, Metabolismo",
+      "no_pai_id": "s8-ped1-00-001",
+      "nivel": "tema",
+      "escopo": "Por que a criança desidrata, resfria e metaboliza fármacos de modo próprio",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-00-004",
+      "titulo": "A Consulta Pediátrica e a Tríade Criança-Família-Médico",
+      "no_pai_id": "s8-ped1-00-001",
+      "nivel": "tema",
+      "escopo": "Como a anamnese indireta e o cuidado centrado na família moldam a consulta",
+      "lentes": [
+        "raciocinio_clinico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-01-000",
+      "titulo": "Crescimento e Desenvolvimento",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "Como medir e interpretar o corpo que cresce e a mente que amadurece",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-01-001",
+      "titulo": "Crescimento e Desenvolvimento — Visão Geral",
+      "no_pai_id": "s8-ped1-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que crescer (tamanho) e desenvolver (função) são eixos distintos e complementares",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-01-002",
+      "titulo": "Fases do Crescimento — Intrauterino, Infantil, Pré-puberal e Puberal",
+      "no_pai_id": "s8-ped1-01-000",
+      "nivel": "folha",
+      "escopo": "As velocidades de crescimento e o que controla cada fase (nutrição, GH, esteroides)",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-01-003",
+      "titulo": "Antropometria — Peso, Estatura, Perímetro Cefálico e IMC",
+      "no_pai_id": "s8-ped1-01-000",
+      "nivel": "folha",
+      "escopo": "As medidas básicas e a técnica correta de aferição por faixa etária",
+      "lentes": [
+        "diagnostico_exames",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-01-004",
+      "titulo": "Curvas de Crescimento e Escore-Z — Ler os Gráficos da OMS",
+      "no_pai_id": "s8-ped1-01-000",
+      "nivel": "folha",
+      "escopo": "Como percentis e desvios-padrão traduzem se a criança cresce bem",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-01-005",
+      "titulo": "Velocidade de Crescimento e Canal de Crescimento",
+      "no_pai_id": "s8-ped1-01-000",
+      "nivel": "folha",
+      "escopo": "Por que a trajetória (canal) vale mais que um ponto isolado",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-01-006",
+      "titulo": "Baixa Estatura — Abordagem do Crescimento Insuficiente",
+      "no_pai_id": "s8-ped1-01-000",
+      "nivel": "folha",
+      "escopo": "Variantes normais vs patológicas; quando investigar a estatura baixa",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-01-007",
+      "titulo": "Falência de Crescimento (Failure to Thrive)",
+      "no_pai_id": "s8-ped1-01-000",
+      "nivel": "folha",
+      "escopo": "Ganho ponderal insuficiente: causas orgânicas e ambientais",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-01-008",
+      "titulo": "Desenvolvimento Neuropsicomotor — Os Quatro Domínios",
+      "no_pai_id": "s8-ped1-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Motor grosso, motor fino, linguagem e social-adaptativo como eixos do DNPM",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-01-009",
+      "titulo": "Marcos do Desenvolvimento por Idade — Do Sorriso ao Andar",
+      "no_pai_id": "s8-ped1-01-008",
+      "nivel": "folha",
+      "escopo": "Os marcos-chave por faixa e o que cada um denota do SNC em maturação",
+      "lentes": [
+        "apresentacao_clinica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-01-010",
+      "titulo": "Reflexos Primitivos e sua Involução",
+      "no_pai_id": "s8-ped1-01-008",
+      "nivel": "folha",
+      "escopo": "Moro, preensão, sucção; por que aparecem e por que devem sumir",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-01-011",
+      "titulo": "Sinais de Alerta e Atraso do Desenvolvimento",
+      "no_pai_id": "s8-ped1-01-008",
+      "nivel": "folha",
+      "escopo": "Red flags que exigem investigação de atraso ou regressão",
+      "lentes": [
+        "raciocinio_clinico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-01-012",
+      "titulo": "Dentição, Fontanelas e Maturação Óssea",
+      "no_pai_id": "s8-ped1-01-000",
+      "nivel": "folha",
+      "escopo": "Cronologia da erupção dentária, fechamento de fontanelas e idade óssea",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-02-000",
+      "titulo": "Puericultura — O Cuidado da Criança Saudável",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "A consulta de rotina que vigia crescimento, desenvolvimento e prevenção",
+      "lentes": [
+        "conduta_tratamento",
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-02-001",
+      "titulo": "Puericultura — Visão Geral",
+      "no_pai_id": "s8-ped1-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que acompanhar a criança sadia previne doença e detecta desvios cedo",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-02-002",
+      "titulo": "Calendário de Consultas de Puericultura",
+      "no_pai_id": "s8-ped1-02-000",
+      "nivel": "folha",
+      "escopo": "A periodicidade das consultas do primeiro ano à adolescência",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-02-003",
+      "titulo": "Triagens Neonatais — Teste do Pezinho, Olhinho, Orelhinha, Coraçãozinho",
+      "no_pai_id": "s8-ped1-02-000",
+      "nivel": "folha",
+      "escopo": "As triagens universais do RN e o que cada uma detecta precocemente",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-02-004",
+      "titulo": "Suplementação Profilática — Vitamina K, D e Ferro",
+      "no_pai_id": "s8-ped1-02-000",
+      "nivel": "folha",
+      "escopo": "Por que o lactente precisa de vitamina K, D e ferro suplementares",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-02-005",
+      "titulo": "Prevenção de Acidentes por Faixa Etária",
+      "no_pai_id": "s8-ped1-02-000",
+      "nivel": "folha",
+      "escopo": "Como o risco de acidente muda com a mobilidade e como orientar",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-02-006",
+      "titulo": "Sono Seguro e Prevenção da Morte Súbita do Lactente",
+      "no_pai_id": "s8-ped1-02-000",
+      "nivel": "folha",
+      "escopo": "Posição supina, ambiente do berço e fatores de risco da SMSL",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-02-007",
+      "titulo": "Higiene Bucal e Saúde Dental na Infância",
+      "no_pai_id": "s8-ped1-02-000",
+      "nivel": "folha",
+      "escopo": "Prevenção de cárie precoce e flúor na criança",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-000",
+      "titulo": "Aleitamento Materno e Nutrição Infantil",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "Como alimentar a criança de forma ótima do nascimento à alimentação da família",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-03-001",
+      "titulo": "Aleitamento Materno — Visão Geral",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que o leite humano é padrão-ouro: proteção, nutrição e vínculo",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-03-002",
+      "titulo": "Fisiologia da Lactação — Prolactina, Ocitocina e Apojadura",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "Como a mama produz e ejeta leite sob controle hormonal",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-003",
+      "titulo": "Composição do Leite Humano — Colostro, Leite de Transição e Maduro",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "O que há no leite e por que muda na mamada e nos dias",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-004",
+      "titulo": "Benefícios do Aleitamento — Imunológicos, Nutricionais e Cognitivos",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "Anticorpos, microbiota e vínculo; por que reduz infecção e mortalidade",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-005",
+      "titulo": "Técnica de Amamentação — Pega, Posição e Livre Demanda",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "A pega correta e a livre demanda como base do sucesso",
+      "lentes": [
+        "conduta_tratamento",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-006",
+      "titulo": "Problemas da Amamentação — Fissura, Ingurgitamento e Mastite",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "As intercorrências comuns da lactação e seu manejo",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-007",
+      "titulo": "Contraindicações ao Aleitamento e Fármacos na Lactação",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "As poucas situações que impedem amamentar e o uso de medicamentos",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-008",
+      "titulo": "Fórmulas Infantis — Quando e Como Usar",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "Indicações, tipos de fórmula e riscos do desmame precoce",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-009",
+      "titulo": "Introdução Alimentar e Alimentação Complementar",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "Quando e como iniciar sólidos aos 6 meses e evoluir a consistência",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-010",
+      "titulo": "Desnutrição Energético-Proteica — Marasmo e Kwashiorkor",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "Os dois espectros da desnutrição grave: mecanismo, clínica e manejo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-011",
+      "titulo": "Deficiências de Micronutrientes — Ferro, Vitamina A e D",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "Anemia ferropriva, hipovitaminose A e raquitismo na infância",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-03-012",
+      "titulo": "Obesidade Infantil — A Outra Face da Má Nutrição",
+      "no_pai_id": "s8-ped1-03-000",
+      "nivel": "folha",
+      "escopo": "Excesso de peso na criança: risco metabólico e abordagem",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-000",
+      "titulo": "Imunizações",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "Como as vacinas protegem a criança e a coletividade",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-04-001",
+      "titulo": "Imunizações — Visão Geral",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que vacinar cedo: janela de vulnerabilidade e memória imune",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-04-002",
+      "titulo": "Bases Imunológicas da Vacinação — Ativa vs Passiva",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "Memória imune, imunidade de rebanho e diferença de imunização ativa/passiva",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-003",
+      "titulo": "Tipos de Vacina — Atenuadas, Inativadas, Toxoides e Conjugadas",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "Como a plataforma vacinal define eficácia, doses e contraindicações",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-004",
+      "titulo": "Calendário Vacinal Infantil do PNI — Do Nascimento aos 4 Anos",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "O esquema oficial brasileiro por idade e as doses de reforço",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-005",
+      "titulo": "Vacinas do Recém-Nascido — BCG e Hepatite B",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "As duas vacinas da maternidade: alvo, técnica e evolução da cicatriz BCG",
+      "lentes": [
+        "conduta_tratamento",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-006",
+      "titulo": "Pentavalente, Poliomielite e Rotavírus",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "As vacinas do 2-4-6 meses e as doenças que previnem",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-007",
+      "titulo": "Pneumocócica e Meningocócica Conjugadas",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "Por que conjugar polissacarídeo a proteína protege o lactente",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-008",
+      "titulo": "Tríplice Viral e Varicela",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "As vacinas atenuadas contra sarampo, caxumba, rubéola e varicela",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-009",
+      "titulo": "Febre Amarela, Hepatite A e HPV",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "As demais vacinas do calendário e suas faixas-alvo",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-010",
+      "titulo": "Contraindicações, Falsas Contraindicações e Adiamentos",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "Quando não vacinar e os mitos que atrasam a vacinação",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-011",
+      "titulo": "Eventos Adversos Pós-Vacinais e sua Notificação",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "Reações esperadas vs graves e o dever de notificar",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-04-012",
+      "titulo": "Vacinação da Criança Imunocomprometida e de Situações Especiais",
+      "no_pai_id": "s8-ped1-04-000",
+      "nivel": "folha",
+      "escopo": "Como adaptar o esquema na imunodepressão, prematuridade e atraso vacinal",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-05-000",
+      "titulo": "Neonatologia — O Recém-Nascido Normal e a Adaptação à Vida Extrauterina",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "Como o RN sai do útero e se adapta, e como cuidá-lo ao nascer",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-05-001",
+      "titulo": "Adaptação à Vida Extrauterina — Visão Geral",
+      "no_pai_id": "s8-ped1-05-000",
+      "nivel": "visao_geral",
+      "escopo": "As grandes transições ao nascer: pulmão, circulação e termorregulação",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-05-002",
+      "titulo": "Transição Cardiorrespiratória — Primeira Respiração e Fechamento dos Shunts",
+      "no_pai_id": "s8-ped1-05-000",
+      "nivel": "folha",
+      "escopo": "Como o pulmão insufla e o forame oval e o canal arterial se fecham",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-05-003",
+      "titulo": "Termorregulação do RN e o Risco de Hipotermia",
+      "no_pai_id": "s8-ped1-05-000",
+      "nivel": "folha",
+      "escopo": "Por que o RN esfria: superfície, gordura marrom e perdas de calor",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-05-004",
+      "titulo": "Cuidados na Sala de Parto — Clampeamento, Contato Pele a Pele e Golden Hour",
+      "no_pai_id": "s8-ped1-05-000",
+      "nivel": "folha",
+      "escopo": "A sequência de cuidados imediatos ao RN vigoroso",
+      "lentes": [
+        "conduta_tratamento",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-05-005",
+      "titulo": "Boletim de Apgar — O Que Mede e o Que Não Mede",
+      "no_pai_id": "s8-ped1-05-000",
+      "nivel": "folha",
+      "escopo": "Os cinco sinais, a leitura no 1º e 5º minuto e seus limites",
+      "lentes": [
+        "diagnostico_exames",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-05-006",
+      "titulo": "Classificação do RN — Idade Gestacional e Peso ao Nascer",
+      "no_pai_id": "s8-ped1-05-000",
+      "nivel": "folha",
+      "escopo": "AIG, PIG, GIG; a termo, pré e pós-termo; por que a classe muda o risco",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-05-007",
+      "titulo": "Exame Físico do Recém-Nascido — Da Cabeça aos Pés",
+      "no_pai_id": "s8-ped1-05-000",
+      "nivel": "folha",
+      "escopo": "O exame sistemático do RN e os achados normais transitórios",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-05-008",
+      "titulo": "Cuidados com o Coto Umbilical e a Pele do RN",
+      "no_pai_id": "s8-ped1-05-000",
+      "nivel": "folha",
+      "escopo": "Higiene do coto, onfalite e particularidades da pele neonatal",
+      "lentes": [
+        "conduta_tratamento",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-06-000",
+      "titulo": "Asfixia Perinatal e Reanimação Neonatal",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "O RN que não respira: mecanismo da asfixia e como reanimar",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-06-001",
+      "titulo": "Asfixia Perinatal — Visão Geral",
+      "no_pai_id": "s8-ped1-06-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a falta de oxigênio no parto lesa o cérebro e outros órgãos",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-06-002",
+      "titulo": "Fisiopatologia da Hipóxia-Isquemia — Apneia Primária e Secundária",
+      "no_pai_id": "s8-ped1-06-000",
+      "nivel": "folha",
+      "escopo": "A cascata da asfixia e por que ela define a resposta à reanimação",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-06-003",
+      "titulo": "Algoritmo da Reanimação Neonatal — Os Passos Iniciais",
+      "no_pai_id": "s8-ped1-06-000",
+      "nivel": "folha",
+      "escopo": "Aquecer, posicionar, aspirar, secar e a decisão dos 60 segundos",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-06-004",
+      "titulo": "Ventilação com Pressão Positiva e Suporte Avançado no RN",
+      "no_pai_id": "s8-ped1-06-000",
+      "nivel": "folha",
+      "escopo": "VPP, massagem cardíaca e adrenalina quando a FC não sobe",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-06-005",
+      "titulo": "Encefalopatia Hipóxico-Isquêmica e Hipotermia Terapêutica",
+      "no_pai_id": "s8-ped1-06-000",
+      "nivel": "folha",
+      "escopo": "A lesão cerebral pós-asfixia e a neuroproteção pelo resfriamento",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-07-000",
+      "titulo": "Prematuridade e o Recém-Nascido de Risco",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "Por que nascer cedo demais é perigoso e como cuidar do prematuro",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-07-001",
+      "titulo": "Prematuridade — Visão Geral",
+      "no_pai_id": "s8-ped1-07-000",
+      "nivel": "visao_geral",
+      "escopo": "A imaturidade de cada órgão como fonte comum das complicações",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-07-002",
+      "titulo": "Classificação e Causas da Prematuridade",
+      "no_pai_id": "s8-ped1-07-000",
+      "nivel": "folha",
+      "escopo": "Prematuro tardio, moderado e extremo; fatores de risco do parto prematuro",
+      "lentes": [
+        "diagnostico_exames",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-07-003",
+      "titulo": "Complicações do Prematuro — Panorama por Sistema",
+      "no_pai_id": "s8-ped1-07-000",
+      "nivel": "folha",
+      "escopo": "Como a imaturidade gera problemas respiratórios, neurológicos e digestivos",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-07-004",
+      "titulo": "Enterocolite Necrosante",
+      "no_pai_id": "s8-ped1-07-000",
+      "nivel": "folha",
+      "escopo": "A emergência intestinal do prematuro: mecanismo, clínica e conduta",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-07-005",
+      "titulo": "Hemorragia Peri-Intraventricular e Retinopatia da Prematuridade",
+      "no_pai_id": "s8-ped1-07-000",
+      "nivel": "folha",
+      "escopo": "As lesões de vasos imaturos no cérebro e na retina",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-07-006",
+      "titulo": "Cuidados com o Prematuro — Método Canguru e Nutrição",
+      "no_pai_id": "s8-ped1-07-000",
+      "nivel": "folha",
+      "escopo": "Termorregulação, vínculo e aporte nutricional do bebê prematuro",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-08-000",
+      "titulo": "Distúrbios Respiratórios do Recém-Nascido",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "O RN com desconforto respiratório: as causas e como diferenciá-las",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-08-001",
+      "titulo": "Desconforto Respiratório do RN — Visão Geral",
+      "no_pai_id": "s8-ped1-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Como reconhecer o esforço respiratório e organizar o diferencial",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-08-002",
+      "titulo": "Boletim de Silverman-Andersen — Graduar o Desconforto",
+      "no_pai_id": "s8-ped1-08-000",
+      "nivel": "folha",
+      "escopo": "Os cinco sinais do esforço respiratório e a leitura invertida do escore",
+      "lentes": [
+        "diagnostico_exames",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-08-003",
+      "titulo": "Doença da Membrana Hialina (Síndrome do Desconforto Respiratório)",
+      "no_pai_id": "s8-ped1-08-000",
+      "nivel": "folha",
+      "escopo": "Deficiência de surfactante no prematuro: mecanismo, clínica e surfactante",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-08-004",
+      "titulo": "Taquipneia Transitória do Recém-Nascido",
+      "no_pai_id": "s8-ped1-08-000",
+      "nivel": "folha",
+      "escopo": "O pulmão úmido do RN a termo/cesárea: reabsorção lenta e curso benigno",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-08-005",
+      "titulo": "Síndrome de Aspiração Meconial",
+      "no_pai_id": "s8-ped1-08-000",
+      "nivel": "folha",
+      "escopo": "O mecônio nas vias aéreas do pós-termo: obstrução, pneumonite e hipertensão pulmonar",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-08-006",
+      "titulo": "Pneumonia Neonatal e Escape de Ar (Pneumotórax)",
+      "no_pai_id": "s8-ped1-08-000",
+      "nivel": "folha",
+      "escopo": "Infecção pulmonar precoce/tardia e as complicações de escape aéreo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-08-007",
+      "titulo": "Hipertensão Pulmonar Persistente Neonatal",
+      "no_pai_id": "s8-ped1-08-000",
+      "nivel": "folha",
+      "escopo": "A circulação que não transiciona: shunt persistente e hipoxemia refratária",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-09-000",
+      "titulo": "Icterícia Neonatal",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "Por que o RN amarela e quando isso vira perigo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-09-001",
+      "titulo": "Icterícia Neonatal — Visão Geral",
+      "no_pai_id": "s8-ped1-09-000",
+      "nivel": "visao_geral",
+      "escopo": "A bilirrubina que se acumula: fronteira entre fisiológico e patológico",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-09-002",
+      "titulo": "Metabolismo da Bilirrubina no Recém-Nascido",
+      "no_pai_id": "s8-ped1-09-000",
+      "nivel": "folha",
+      "escopo": "Produção aumentada e conjugação imatura como base da icterícia",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-09-003",
+      "titulo": "Icterícia Fisiológica vs Patológica — A Distinção Central",
+      "no_pai_id": "s8-ped1-09-000",
+      "nivel": "folha",
+      "escopo": "Tempo de início, velocidade e níveis que separam benigno de grave",
+      "lentes": [
+        "raciocinio_clinico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-09-004",
+      "titulo": "Icterícia por Incompatibilidade ABO e Rh (Doença Hemolítica)",
+      "no_pai_id": "s8-ped1-09-000",
+      "nivel": "folha",
+      "escopo": "A hemólise imune materno-fetal como causa de icterícia precoce e grave",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-09-005",
+      "titulo": "Icterícia Associada ao Aleitamento e Icterícia do Leite Materno",
+      "no_pai_id": "s8-ped1-09-000",
+      "nivel": "folha",
+      "escopo": "Dois padrões distintos ligados à amamentação e seu manejo",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-09-006",
+      "titulo": "Icterícia Colestática (Hiperbilirrubinemia Direta)",
+      "no_pai_id": "s8-ped1-09-000",
+      "nivel": "folha",
+      "escopo": "Quando a fração direta sobe: atresia de vias biliares e outras causas",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-09-007",
+      "titulo": "Kernicterus — A Encefalopatia Bilirrubínica",
+      "no_pai_id": "s8-ped1-09-000",
+      "nivel": "folha",
+      "escopo": "Por que a bilirrubina livre lesa o cérebro e como preveni-lo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-09-008",
+      "titulo": "Tratamento da Icterícia — Fototerapia e Exsanguineotransfusão",
+      "no_pai_id": "s8-ped1-09-000",
+      "nivel": "folha",
+      "escopo": "Como a luz converte a bilirrubina e quando trocar o sangue",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-10-000",
+      "titulo": "Sepse Neonatal e Infecções Congênitas",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "O RN infectado: sepse precoce/tardia e as infecções adquiridas no útero",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-10-001",
+      "titulo": "Sepse Neonatal — Visão Geral",
+      "no_pai_id": "s8-ped1-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que o RN infecta fácil e por que os sinais são sutis",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-10-002",
+      "titulo": "Imaturidade Imune do Recém-Nascido",
+      "no_pai_id": "s8-ped1-10-000",
+      "nivel": "folha",
+      "escopo": "As barreiras e defesas incompletas que tornam o RN vulnerável",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-10-003",
+      "titulo": "Sepse Precoce vs Tardia — Agentes e Rotas de Infecção",
+      "no_pai_id": "s8-ped1-10-000",
+      "nivel": "folha",
+      "escopo": "Estreptococo do grupo B, E. coli e os germes de cada janela temporal",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-10-004",
+      "titulo": "Apresentação Clínica e Diagnóstico da Sepse Neonatal",
+      "no_pai_id": "s8-ped1-10-000",
+      "nivel": "folha",
+      "escopo": "Os sinais inespecíficos, os fatores de risco e a investigação (culturas, LCR)",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-10-005",
+      "titulo": "Tratamento e Prevenção da Sepse Neonatal",
+      "no_pai_id": "s8-ped1-10-000",
+      "nivel": "folha",
+      "escopo": "Antibioticoterapia empírica e profilaxia intraparto do EGB",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-10-006",
+      "titulo": "Infecções Congênitas (TORCH) — Visão Geral",
+      "no_pai_id": "s8-ped1-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Como agentes atravessam a placenta e lesam o embrião/feto",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-10-007",
+      "titulo": "Sífilis Congênita",
+      "no_pai_id": "s8-ped1-10-000",
+      "nivel": "folha",
+      "escopo": "Transmissão vertical do treponema: clínica precoce, tardia e conduta",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-10-008",
+      "titulo": "Toxoplasmose Congênita",
+      "no_pai_id": "s8-ped1-10-000",
+      "nivel": "folha",
+      "escopo": "A tríade de Sabin e o risco por trimestre da infecção",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-10-009",
+      "titulo": "Citomegalovírus, Rubéola, Zika e Herpes Congênitos",
+      "no_pai_id": "s8-ped1-10-000",
+      "nivel": "folha",
+      "escopo": "As demais infecções congênitas e suas marcas (microcefalia, surdez)",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-11-000",
+      "titulo": "Erros Inatos do Metabolismo e Triagem Neonatal",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "Doenças metabólicas hereditárias e como o teste do pezinho as detecta",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-11-001",
+      "titulo": "Erros Inatos do Metabolismo — Visão Geral",
+      "no_pai_id": "s8-ped1-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que um bloqueio enzimático adoece: acúmulo, falta e desvio de via",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-11-002",
+      "titulo": "Quando Suspeitar de um EIM — Sinais de Alerta no RN e Lactente",
+      "no_pai_id": "s8-ped1-11-000",
+      "nivel": "folha",
+      "escopo": "Deterioração pós-jejum, acidose e o RN que piora sem infecção",
+      "lentes": [
+        "raciocinio_clinico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-11-003",
+      "titulo": "Triagem Neonatal (Teste do Pezinho) — O Que Rastreia",
+      "no_pai_id": "s8-ped1-11-000",
+      "nivel": "folha",
+      "escopo": "As doenças do painel básico brasileiro e a lógica do rastreio universal",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-11-004",
+      "titulo": "Fenilcetonúria e Hipotireoidismo Congênito",
+      "no_pai_id": "s8-ped1-11-000",
+      "nivel": "folha",
+      "escopo": "Dois alvos clássicos da triagem: mecanismo, dano e tratamento precoce",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-11-005",
+      "titulo": "Fibrose Cística, Anemia Falciforme e Hiperplasia Adrenal Congênita",
+      "no_pai_id": "s8-ped1-11-000",
+      "nivel": "folha",
+      "escopo": "As demais doenças do teste do pezinho ampliado",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-12-000",
+      "titulo": "Infecções Respiratórias da Infância",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "As doenças que mais levam a criança ao pronto-socorro: via aérea alta e baixa",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-12-001",
+      "titulo": "Infecções Respiratórias na Criança — Visão Geral",
+      "no_pai_id": "s8-ped1-12-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a via aérea curta e estreita da criança agrava a infecção",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-12-002",
+      "titulo": "Resfriado Comum e Rinofaringite Viral",
+      "no_pai_id": "s8-ped1-12-000",
+      "nivel": "folha",
+      "escopo": "A infecção mais frequente da infância: vírus, curso benigno e sinais de alerta",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-12-003",
+      "titulo": "Rinossinusite Aguda na Criança",
+      "no_pai_id": "s8-ped1-12-000",
+      "nivel": "folha",
+      "escopo": "Quando o resfriado vira sinusite bacteriana e como tratar",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-12-004",
+      "titulo": "Laringite Aguda (Crupe Viral)",
+      "no_pai_id": "s8-ped1-12-000",
+      "nivel": "folha",
+      "escopo": "A tosse ladrante e o estridor: edema subglótico e manejo com corticoide",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-12-005",
+      "titulo": "Epiglotite Aguda",
+      "no_pai_id": "s8-ped1-12-000",
+      "nivel": "folha",
+      "escopo": "A emergência da via aérea: criança toxemiada, sialorreia e posição de tripé",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-12-006",
+      "titulo": "Coqueluche (Tosse Comprida)",
+      "no_pai_id": "s8-ped1-12-000",
+      "nivel": "folha",
+      "escopo": "A tríade da coqueluche e o perigo no lactente jovem",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-12-007",
+      "titulo": "Bronquiolite Viral Aguda",
+      "no_pai_id": "s8-ped1-12-000",
+      "nivel": "folha",
+      "escopo": "O VSR no lactente: obstrução dos bronquíolos, sibilância e suporte",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-12-008",
+      "titulo": "Pneumonia Adquirida na Comunidade — Visão Geral",
+      "no_pai_id": "s8-ped1-12-000",
+      "nivel": "visao_geral",
+      "escopo": "A infecção do parênquima pulmonar na criança e sua abordagem",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-12-009",
+      "titulo": "Etiologia da Pneumonia por Faixa Etária",
+      "no_pai_id": "s8-ped1-12-008",
+      "nivel": "folha",
+      "escopo": "Por que o agente muda com a idade: do RN ao escolar",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-12-010",
+      "titulo": "Diagnóstico e Classificação de Gravidade da Pneumonia",
+      "no_pai_id": "s8-ped1-12-008",
+      "nivel": "folha",
+      "escopo": "Taquipneia como marcador da OMS, radiografia e sinais de gravidade",
+      "lentes": [
+        "diagnostico_exames",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-12-011",
+      "titulo": "Tratamento da Pneumonia e Critérios de Internação",
+      "no_pai_id": "s8-ped1-12-008",
+      "nivel": "folha",
+      "escopo": "Antibiótico empírico por idade e quando internar a criança",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-12-012",
+      "titulo": "Derrame Pleural e Complicações da Pneumonia",
+      "no_pai_id": "s8-ped1-12-008",
+      "nivel": "folha",
+      "escopo": "Empiema e outras complicações do pulmão infectado na criança",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 5
+    },
+    {
+      "id": "s8-ped1-13-000",
+      "titulo": "Asma e Sibilância na Infância",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "A criança que sibila de repetição: da bronquiolite à asma",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-13-001",
+      "titulo": "Sibilância Recorrente e Asma na Criança — Visão Geral",
+      "no_pai_id": "s8-ped1-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que nem todo lactente sibilante é asmático e como diferenciar",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-13-002",
+      "titulo": "Fisiopatologia da Asma — Inflamação, Broncoespasmo e Hiper-reatividade",
+      "no_pai_id": "s8-ped1-13-000",
+      "nivel": "folha",
+      "escopo": "Os três componentes da obstrução asmática e a base atópica",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-13-003",
+      "titulo": "Diagnóstico da Asma na Criança",
+      "no_pai_id": "s8-ped1-13-000",
+      "nivel": "folha",
+      "escopo": "História, padrão de sintomas e prova de função pulmonar quando possível",
+      "lentes": [
+        "diagnostico_exames",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-13-004",
+      "titulo": "Crise Asmática Aguda — Avaliação e Manejo",
+      "no_pai_id": "s8-ped1-13-000",
+      "nivel": "folha",
+      "escopo": "Graduar a gravidade e tratar com broncodilatador, corticoide e oxigênio",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-13-005",
+      "titulo": "Tratamento de Manutenção e Controle da Asma",
+      "no_pai_id": "s8-ped1-13-000",
+      "nivel": "folha",
+      "escopo": "Corticoide inalatório, controle ambiental e educação da família",
+      "lentes": [
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-14-000",
+      "titulo": "Diarreia Aguda e Desidratação",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "A doença diarreica na criança: mecanismo, avaliação de hidratação e reidratação",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-14-001",
+      "titulo": "Doença Diarreica Aguda — Visão Geral",
+      "no_pai_id": "s8-ped1-14-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a diarreia mata a criança por desidratação e como interromper isso",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-14-002",
+      "titulo": "Mecanismos da Diarreia — Osmótica, Secretora e Invasiva",
+      "no_pai_id": "s8-ped1-14-000",
+      "nivel": "folha",
+      "escopo": "Como cada mecanismo gera perda de água e eletrólitos",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-14-003",
+      "titulo": "Etiologia da Diarreia Aguda — Rotavírus e Bactérias",
+      "no_pai_id": "s8-ped1-14-000",
+      "nivel": "folha",
+      "escopo": "Os agentes mais comuns e as pistas clínicas de cada um",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-14-004",
+      "titulo": "Avaliação do Estado de Hidratação — Os Graus de Desidratação",
+      "no_pai_id": "s8-ped1-14-000",
+      "nivel": "folha",
+      "escopo": "Como classificar sem, com e com desidratação grave pelos sinais clínicos",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-14-005",
+      "titulo": "Planos A, B e C de Reidratação (OMS/AIDPI)",
+      "no_pai_id": "s8-ped1-14-000",
+      "nivel": "folha",
+      "escopo": "A conduta de reidratação por grau: casa, TRO supervisionada e endovenosa",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-14-006",
+      "titulo": "Terapia de Reidratação Oral e o Papel do Zinco",
+      "no_pai_id": "s8-ped1-14-000",
+      "nivel": "folha",
+      "escopo": "Por que o co-transporte sódio-glicose salva vidas e o zinco encurta a diarreia",
+      "lentes": [
+        "conduta_tratamento",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-14-007",
+      "titulo": "Distúrbios Hidroeletrolíticos na Desidratação",
+      "no_pai_id": "s8-ped1-14-000",
+      "nivel": "folha",
+      "escopo": "Desidratação hipo, iso e hipernatrêmica e o risco na correção",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-14-008",
+      "titulo": "Diarreia Persistente e Diarreia com Sangue (Disenteria)",
+      "no_pai_id": "s8-ped1-14-000",
+      "nivel": "folha",
+      "escopo": "Quando a diarreia se prolonga ou tem sangue: causas e conduta específica",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-15-000",
+      "titulo": "Doenças Exantemáticas da Infância",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "A criança com febre e manchas na pele: reconhecer cada exantema",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-15-001",
+      "titulo": "Exantemas na Infância — Visão Geral",
+      "no_pai_id": "s8-ped1-15-000",
+      "nivel": "visao_geral",
+      "escopo": "Como o padrão, a progressão e o pródromo diferenciam os exantemas",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-15-002",
+      "titulo": "Sarampo",
+      "no_pai_id": "s8-ped1-15-000",
+      "nivel": "folha",
+      "escopo": "As manchas de Koplik, a progressão craniocaudal e as complicações graves",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-15-003",
+      "titulo": "Rubéola",
+      "no_pai_id": "s8-ped1-15-000",
+      "nivel": "folha",
+      "escopo": "O exantema leve, a linfadenopatia retroauricular e o risco na gravidez",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-15-004",
+      "titulo": "Eritema Infeccioso (Quinta Doença)",
+      "no_pai_id": "s8-ped1-15-000",
+      "nivel": "folha",
+      "escopo": "A face esbofeteada do parvovírus B19 e o exantema rendilhado",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-15-005",
+      "titulo": "Exantema Súbito (Roséola)",
+      "no_pai_id": "s8-ped1-15-000",
+      "nivel": "folha",
+      "escopo": "Febre alta que cede e só então surge o exantema, típico do lactente",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-15-006",
+      "titulo": "Varicela (Catapora)",
+      "no_pai_id": "s8-ped1-15-000",
+      "nivel": "folha",
+      "escopo": "O exantema polimórfico em ondas e suas complicações",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-15-007",
+      "titulo": "Escarlatina",
+      "no_pai_id": "s8-ped1-15-000",
+      "nivel": "folha",
+      "escopo": "O exantema em lixa da toxina estreptocócica e a língua em framboesa",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-15-008",
+      "titulo": "Doença de Kawasaki",
+      "no_pai_id": "s8-ped1-15-000",
+      "nivel": "folha",
+      "escopo": "A vasculite febril de critérios e o risco de aneurisma coronariano",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-15-009",
+      "titulo": "Doença Mão-Pé-Boca e Mononucleose Infecciosa",
+      "no_pai_id": "s8-ped1-15-000",
+      "nivel": "folha",
+      "escopo": "Outros exantemas comuns: enterovírus e Epstein-Barr",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-16-000",
+      "titulo": "Otite Média e Faringoamigdalites",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "As infecções de ouvido e garganta que dominam a pediatria ambulatorial",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-16-001",
+      "titulo": "Infecções de Ouvido e Garganta — Visão Geral",
+      "no_pai_id": "s8-ped1-16-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a anatomia da criança predispõe a otite e amigdalite",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-16-002",
+      "titulo": "Otite Média Aguda — Fisiopatologia e Diagnóstico",
+      "no_pai_id": "s8-ped1-16-000",
+      "nivel": "folha",
+      "escopo": "A tuba auditiva curta, a otoscopia e os critérios diagnósticos",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-16-003",
+      "titulo": "Tratamento da Otite Média Aguda e Conduta Expectante",
+      "no_pai_id": "s8-ped1-16-000",
+      "nivel": "folha",
+      "escopo": "Quando antibiótico e quando observar; complicações como mastoidite",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-16-004",
+      "titulo": "Otite Média com Efusão e Otite Externa",
+      "no_pai_id": "s8-ped1-16-000",
+      "nivel": "folha",
+      "escopo": "O ouvido com líquido sem infecção aguda e a otite do nadador",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-16-005",
+      "titulo": "Faringoamigdalite — Viral vs Bacteriana",
+      "no_pai_id": "s8-ped1-16-000",
+      "nivel": "folha",
+      "escopo": "Como diferenciar o vírus do estreptococo (escore de Centor/McIsaac)",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-16-006",
+      "titulo": "Faringoamigdalite Estreptocócica e a Prevenção da Febre Reumática",
+      "no_pai_id": "s8-ped1-16-000",
+      "nivel": "folha",
+      "escopo": "Por que tratar o EBHGA: evitar febre reumática e complicações supurativas",
+      "lentes": [
+        "conduta_tratamento",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-17-000",
+      "titulo": "Adolescência",
+      "no_pai_id": "s8-ped1-00-000",
+      "nivel": "modulo",
+      "escopo": "A transição da infância à vida adulta: corpo, mente e cuidado próprio",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tratamento"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-ped1-17-001",
+      "titulo": "Adolescência — Visão Geral",
+      "no_pai_id": "s8-ped1-17-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que o adolescente exige uma medicina própria entre pediatria e adulto",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-ped1-17-002",
+      "titulo": "Puberdade — Fisiologia e Estágios de Tanner",
+      "no_pai_id": "s8-ped1-17-000",
+      "nivel": "folha",
+      "escopo": "O eixo hipotálamo-hipófise-gônada e a graduação do desenvolvimento sexual",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-17-003",
+      "titulo": "Estirão do Crescimento e Maturação Sexual",
+      "no_pai_id": "s8-ped1-17-000",
+      "nivel": "folha",
+      "escopo": "A sequência de eventos puberais no menino e na menina",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-17-004",
+      "titulo": "Puberdade Precoce e Puberdade Atrasada",
+      "no_pai_id": "s8-ped1-17-000",
+      "nivel": "folha",
+      "escopo": "Quando a puberdade sai do tempo esperado e como investigar",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-17-005",
+      "titulo": "Consulta do Adolescente — Confidencialidade e Abordagem",
+      "no_pai_id": "s8-ped1-17-000",
+      "nivel": "folha",
+      "escopo": "Como conduzir a consulta, o sigilo e a entrevista HEEADSSS",
+      "lentes": [
+        "conduta_tratamento",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-ped1-17-006",
+      "titulo": "Saúde do Adolescente — Sexualidade, Comportamento e Vulnerabilidades",
+      "no_pai_id": "s8-ped1-17-000",
+      "nivel": "folha",
+      "escopo": "Prevenção, saúde mental, uso de substâncias e riscos próprios da faixa",
+      "lentes": [
+        "conduta_tratamento",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    }
+  ]
+}

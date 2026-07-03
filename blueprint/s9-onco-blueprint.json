@@ -1,0 +1,1255 @@
+{
+  "disciplina_id": "onco",
+  "disciplina_nome": "Oncologia",
+  "gerado_em": "corrigido-auditoria",
+  "blocos": [
+    {
+      "id": "s9-onco-00-000",
+      "titulo": "Oncologia — Visão Geral",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Câncer como doença: diagnóstico, estadiamento e tratamento por entidade",
+      "lentes": ["apresentacao_clinica", "diagnostico", "conduta"],
+      "profundidade": 0
+    },
+
+    {
+      "id": "s9-onco-01-000",
+      "titulo": "Princípios Clínicos da Oncologia",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Da biologia à conduta: como o câncer se comporta, se dissemina e se rastreia geneticamente",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 1,
+      "nota_revisao_espiral": "A biologia molecular geral do câncer (hallmarks conceituais, oncogenes/supressores, reparo do DNA, carcinogênese, paraneoplasia mecanística, marcadores como conceito) já foi construída em patol1 (S4, Módulo 4.1.7 Neoplasias). Este módulo NÃO re-deriva esses conceitos: revisita cada um pela lente clínica/terapêutica (implicação diagnóstica, escolha de terapia-alvo, seguimento, conduta) e aponta para patol1 como prerequisito."
+    },
+    {
+      "id": "s9-onco-01-001",
+      "titulo": "O Câncer na Prática Clínica — Visão Geral",
+      "no_pai_id": "s9-onco-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Do conceito de neoplasia ao paciente real; por que a biologia vira decisão",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2,
+      "prerequisito_id": "s4-patol1-07-020",
+      "prerequisito_titulo": "O Problema do Crescimento Descontrolado — O Que É uma Neoplasia (patol1)"
+    },
+    {
+      "id": "s9-onco-01-002",
+      "titulo": "Comportamento Biológico do Tumor que Muda a Conduta",
+      "no_pai_id": "s9-onco-01-000",
+      "nivel": "folha",
+      "escopo": "Diferenciação, ritmo de crescimento e agressividade traduzidos em decisão terapêutica",
+      "lentes": ["correlacao_clinica", "conduta"],
+      "profundidade": 2,
+      "prerequisito_id": "s4-patol1-07-030",
+      "prerequisito_titulo": "Bases Moleculares do Câncer — oncogenes e supressores (patol1)"
+    },
+    {
+      "id": "s9-onco-01-003",
+      "titulo": "Hallmarks do Câncer como Alvos Terapêuticos",
+      "no_pai_id": "s9-onco-01-000",
+      "nivel": "tema",
+      "escopo": "Cada capacidade maligna vista como vulnerabilidade explorável por fármaco",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 2,
+      "prerequisito_id": "s4-patol1-07-040",
+      "prerequisito_titulo": "Os Hallmarks do Câncer — Visão Geral molecular (patol1)",
+      "nota_revisao_espiral": "Lente NOVA: patol1 explica O QUE são os hallmarks (Hanahan-Weinberg, molecular). Aqui cada hallmark é revisitado só como porta de entrada terapêutica — qual droga o explora e em que paciente."
+    },
+    {
+      "id": "s9-onco-01-003-01",
+      "titulo": "Angiogênese como Alvo — Antiangiogênicos na Clínica",
+      "no_pai_id": "s9-onco-01-003",
+      "nivel": "folha",
+      "escopo": "Bloquear o VEGF: bevacizumabe e TKIs antiangiogênicos; quando e por quê",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 3,
+      "prerequisito_id": "s4-patol1-07-043",
+      "prerequisito_titulo": "Angiogênese Sustentada — mecanismo (patol1)"
+    },
+    {
+      "id": "s9-onco-01-003-02",
+      "titulo": "Evasão da Apoptose e Imortalidade como Alvo Farmacológico",
+      "no_pai_id": "s9-onco-01-003",
+      "nivel": "folha",
+      "escopo": "Inibidores de BCL-2 (venetoclax) e a telomerase como alvo emergente na conduta",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 3,
+      "prerequisito_id": "s4-patol1-07-042",
+      "prerequisito_titulo": "Evasão da Apoptose e Imortalidade Replicativa — mecanismo (patol1)",
+      "nota_revisao_espiral": "Re-escopo explícito: patol1 (07-042/07-035) já esgota o mecanismo BCL-2/telomerase. Aqui o ângulo é exclusivamente terapêutico — que doença trata, que resposta esperar."
+    },
+    {
+      "id": "s9-onco-01-003-03",
+      "titulo": "Evasão Imune como Alvo — A Racionalidade da Imunoterapia",
+      "no_pai_id": "s9-onco-01-003",
+      "nivel": "folha",
+      "escopo": "PD-L1 e checkpoints como hallmark que abre a porta do inibidor de checkpoint",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 3,
+      "prerequisito_id": "s4-patol1-07-045",
+      "prerequisito_titulo": "Evasão da Destruição Imune — mecanismo (patol1)"
+    },
+    {
+      "id": "s9-onco-01-003-04",
+      "titulo": "Metabolismo Tumoral como Ferramenta Diagnóstica e Alvo",
+      "no_pai_id": "s9-onco-01-003",
+      "nivel": "folha",
+      "escopo": "Efeito Warburg que sustenta o PET-FDG e inspira novos alvos metabólicos",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 3,
+      "prerequisito_id": "s4-patol1-07-044",
+      "prerequisito_titulo": "Reprogramação Metabólica — Efeito Warburg (patol1)"
+    },
+    {
+      "id": "s9-onco-01-004",
+      "titulo": "Padrões de Disseminação e Sítios Metastáticos — Implicação Clínica",
+      "no_pai_id": "s9-onco-01-000",
+      "nivel": "folha",
+      "escopo": "Onde cada câncer metastatiza e como isso guia rastreio de estadiamento e sintomas",
+      "lentes": ["correlacao_clinica", "diagnostico"],
+      "profundidade": 2,
+      "prerequisito_id": "s4-patol1-07-050",
+      "prerequisito_titulo": "Invasão e Metástase — cascata mecanística (patol1)",
+      "nota_revisao_espiral": "Re-escopo: patol1 ensina a cascata metastática (EMT, intravasamento, semente-solo). Aqui a lente é clínica — tropismo órgão-específico que dita qual exame de estadiamento pedir e que sintoma antecipar."
+    },
+    {
+      "id": "s9-onco-01-005",
+      "titulo": "Epidemiologia do Câncer e Fatores de Risco Modificáveis",
+      "no_pai_id": "s9-onco-01-000",
+      "nivel": "folha",
+      "escopo": "Incidência, mortalidade e cânceres mais frequentes no Brasil e no mundo",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-01-006",
+      "titulo": "Síndromes de Câncer Hereditário e Aconselhamento Genético",
+      "no_pai_id": "s9-onco-01-000",
+      "nivel": "folha",
+      "escopo": "Lynch, BRCA, Li-Fraumeni, PAF; quando testar, quando rastrear, quando operar",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2,
+      "prerequisito_id": "s4-patol1-07-034",
+      "prerequisito_titulo": "Genes de Reparo do DNA e Instabilidade Genômica — molecular (patol1)",
+      "nota_revisao_espiral": "Absorve o ângulo clínico do antigo bloco 'Genes de Reparo/Instabilidade Genômica'. A base molecular (MMR, MSI, mutador) fica em patol1 (07-034); aqui só a consequência acionável — teste genético, rastreamento intensivo, cirurgia redutora e ligação a MSI-alto → imunoterapia."
+    },
+    {
+      "id": "s9-onco-01-007",
+      "titulo": "Síndromes Paraneoplásicas como Pista Diagnóstica",
+      "no_pai_id": "s9-onco-01-000",
+      "nivel": "folha",
+      "escopo": "Manifestação à distância que denuncia câncer oculto e sinaliza recidiva",
+      "lentes": ["diagnostico", "apresentacao_clinica"],
+      "profundidade": 2,
+      "prerequisito_id": "s4-patol1-07-082",
+      "prerequisito_titulo": "Síndromes Paraneoplásicas — mecanismo hormonal/imune (patol1)",
+      "nota_revisao_espiral": "Re-escopo explícito: patol1 (07-082) já explica o mecanismo (hormônios/anticorpos ectópicos, SIADH, Cushing, hipercalcemia). Aqui a lente é clínica pura — a síndrome como bandeira que motiva a busca de primário oculto e como marcador de resposta/recidiva no seguimento."
+    },
+
+    {
+      "id": "s9-onco-02-000",
+      "titulo": "Diagnóstico e Estadiamento",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Como o câncer é diagnosticado, graduado e estadiado; base da decisão terapêutica",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-02-001",
+      "titulo": "Abordagem Diagnóstica do Câncer — Visão Geral",
+      "no_pai_id": "s9-onco-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Do sinal de alerta à confirmação histológica; princípio do tecido é o diagnóstico",
+      "lentes": ["diagnostico", "apresentacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-02-002",
+      "titulo": "Biópsia e Métodos de Amostragem Tecidual",
+      "no_pai_id": "s9-onco-02-000",
+      "nivel": "folha",
+      "escopo": "PAAF, core, incisional, excisional; congelação; quando e qual escolher",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-02-003",
+      "titulo": "Patologia Diagnóstica em Oncologia",
+      "no_pai_id": "s9-onco-02-000",
+      "nivel": "tema",
+      "escopo": "Como o patologista define diagnóstico, grau e origem do tumor",
+      "lentes": ["diagnostico", "correlacao_ciencias_basicas"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-02-003-01",
+      "titulo": "Grau Histológico e Diferenciação Tumoral",
+      "no_pai_id": "s9-onco-02-003",
+      "nivel": "folha",
+      "escopo": "Bem/moderado/pouco diferenciado; anaplasia; grau como fator prognóstico",
+      "lentes": ["diagnostico", "correlacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-02-003-02",
+      "titulo": "Imuno-histoquímica e Marcadores Tumorais Teciduais",
+      "no_pai_id": "s9-onco-02-003",
+      "nivel": "folha",
+      "escopo": "Citoqueratinas, receptores hormonais, Ki-67; definir origem e alvo",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-02-003-03",
+      "titulo": "Patologia Molecular e Sequenciamento Tumoral",
+      "no_pai_id": "s9-onco-02-003",
+      "nivel": "folha",
+      "escopo": "Mutações acionáveis, NGS, biópsia líquida; medicina de precisão",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-02-004",
+      "titulo": "Marcadores Tumorais Séricos na Decisão de Seguimento",
+      "no_pai_id": "s9-onco-02-000",
+      "nivel": "folha",
+      "escopo": "PSA, CEA, CA-125, AFP, beta-hCG para monitorar resposta e flagrar recidiva",
+      "lentes": ["conduta", "diagnostico"],
+      "profundidade": 2,
+      "prerequisito_id": "s4-patol1-07-092",
+      "prerequisito_titulo": "Marcadores Tumorais Séricos — o que são e armadilhas (patol1)",
+      "nota_revisao_espiral": "Re-escopo explícito: patol1 (07-092) apresenta os marcadores e suas armadilhas conceituais. Aqui a lente é de conduta — usar a curva do marcador para medir resposta terapêutica, disparar reestadiamento e detectar recidiva no follow-up, sem repetir o rol descritivo."
+    },
+    {
+      "id": "s9-onco-02-005",
+      "titulo": "Imagem em Oncologia",
+      "no_pai_id": "s9-onco-02-000",
+      "nivel": "tema",
+      "escopo": "TC, RM, PET-CT, cintilografia; estadiamento e avaliação de resposta",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-02-005-01",
+      "titulo": "PET-CT e Imagem Metabólica",
+      "no_pai_id": "s9-onco-02-005",
+      "nivel": "folha",
+      "escopo": "FDG-glicose; avidez metabólica; estadiamento e resposta terapêutica",
+      "lentes": ["diagnostico", "correlacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-02-005-02",
+      "titulo": "Critérios de Resposta (RECIST)",
+      "no_pai_id": "s9-onco-02-005",
+      "nivel": "folha",
+      "escopo": "Resposta completa, parcial, estável, progressão; medir eficácia do tratamento",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-02-006",
+      "titulo": "Estadiamento TNM — Visão Geral",
+      "no_pai_id": "s9-onco-02-000",
+      "nivel": "tema",
+      "escopo": "Sistema TNM: por que estadiar; linguagem universal do câncer",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2,
+      "prerequisito_id": "s4-patol1-07-072",
+      "prerequisito_titulo": "Estadiamento TNM — Quão Longe Chegou o Tumor (patol1)"
+    },
+    {
+      "id": "s9-onco-02-006-01",
+      "titulo": "Tumor Primário (T) e Extensão Local",
+      "no_pai_id": "s9-onco-02-006",
+      "nivel": "folha",
+      "escopo": "Tamanho e invasão local; T0 a T4; significado prognóstico",
+      "lentes": ["diagnostico"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-02-006-02",
+      "titulo": "Linfonodos Regionais (N) e Metástase (M)",
+      "no_pai_id": "s9-onco-02-006",
+      "nivel": "folha",
+      "escopo": "Comprometimento nodal e à distância; ponto de virada prognóstico",
+      "lentes": ["diagnostico", "correlacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-02-006-03",
+      "titulo": "Agrupamento por Estádios e Estadiamento Clínico vs Patológico",
+      "no_pai_id": "s9-onco-02-006",
+      "nivel": "folha",
+      "escopo": "Estádios 0-IV; cTNM vs pTNM; como TNM vira decisão terapêutica",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-02-007",
+      "titulo": "Performance Status e Avaliação Funcional do Paciente Oncológico",
+      "no_pai_id": "s9-onco-02-000",
+      "nivel": "folha",
+      "escopo": "ECOG, Karnofsky; capacidade funcional guia intensidade do tratamento",
+      "lentes": ["conduta", "apresentacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-02-008",
+      "titulo": "Carcinoma de Sítio Primário Desconhecido",
+      "no_pai_id": "s9-onco-02-000",
+      "nivel": "folha",
+      "escopo": "Metástase sem primário identificado; investigação e conduta empírica",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-03-000",
+      "titulo": "Quimioterapia (Princípios)",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Bases da terapia citotóxica sistêmica: classes, cinética e toxicidades",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-03-001",
+      "titulo": "Princípios da Quimioterapia — Visão Geral",
+      "no_pai_id": "s9-onco-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Ciclo celular como alvo; cinética log-kill; por que quimio existe",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-03-002",
+      "titulo": "Ciclo Celular e Quimioterapia Ciclo-Específica",
+      "no_pai_id": "s9-onco-03-000",
+      "nivel": "folha",
+      "escopo": "Fases G1/S/G2/M; fármacos fase-específicos vs fase-inespecíficos",
+      "lentes": ["correlacao_ciencias_basicas", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-03-003",
+      "titulo": "Classes de Quimioterápicos — Visão Geral",
+      "no_pai_id": "s9-onco-03-000",
+      "nivel": "tema",
+      "escopo": "Panorama das famílias de citotóxicos por mecanismo de ação",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-03-003-01",
+      "titulo": "Agentes Alquilantes",
+      "no_pai_id": "s9-onco-03-003",
+      "nivel": "folha",
+      "escopo": "Ciclofosfamida, platinas; ligação cruzada do DNA; toxicidade específica",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-03-003-02",
+      "titulo": "Antimetabólitos",
+      "no_pai_id": "s9-onco-03-003",
+      "nivel": "folha",
+      "escopo": "Metotrexato, 5-FU, gencitabina; falso substrato da síntese de DNA",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-03-003-03",
+      "titulo": "Antibióticos Antitumorais e Inibidores de Topoisomerase",
+      "no_pai_id": "s9-onco-03-003",
+      "nivel": "folha",
+      "escopo": "Antraciclinas, etoposídeo, irinotecano; quebra do DNA; cardiotoxicidade",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-03-003-04",
+      "titulo": "Agentes Antimicrotúbulos",
+      "no_pai_id": "s9-onco-03-003",
+      "nivel": "folha",
+      "escopo": "Taxanos e alcaloides da vinca; bloqueio do fuso; neurotoxicidade",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-03-004",
+      "titulo": "Intenções e Regimes de Tratamento",
+      "no_pai_id": "s9-onco-03-000",
+      "nivel": "folha",
+      "escopo": "Neoadjuvante, adjuvante, paliativa; poliquimioterapia e sinergia",
+      "lentes": ["conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-03-005",
+      "titulo": "Toxicidades da Quimioterapia — Visão Geral",
+      "no_pai_id": "s9-onco-03-000",
+      "nivel": "tema",
+      "escopo": "Por que a quimio agride tecidos normais; padrão de toxicidade em tecidos proliferativos",
+      "lentes": ["conduta", "apresentacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-03-005-01",
+      "titulo": "Mielossupressão e Neutropenia",
+      "no_pai_id": "s9-onco-03-005",
+      "nivel": "folha",
+      "escopo": "Nadir, anemia, plaquetopenia; risco infeccioso; fatores de crescimento",
+      "lentes": ["conduta", "apresentacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-03-005-02",
+      "titulo": "Toxicidade Gastrointestinal e Mucosite",
+      "no_pai_id": "s9-onco-03-005",
+      "nivel": "folha",
+      "escopo": "Náusea, vômito, mucosite, diarreia; profilaxia antiemética",
+      "lentes": ["conduta", "apresentacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-03-005-03",
+      "titulo": "Toxicidades de Órgão-Alvo e Tardias",
+      "no_pai_id": "s9-onco-03-005",
+      "nivel": "folha",
+      "escopo": "Cardio, neuro, nefro, infertilidade, segundas neoplasias",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-03-006",
+      "titulo": "Terapia Hormonal em Oncologia",
+      "no_pai_id": "s9-onco-03-000",
+      "nivel": "folha",
+      "escopo": "Tumores hormônio-dependentes; tamoxifeno, inibidores da aromatase, bloqueio androgênico",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-04-000",
+      "titulo": "Radioterapia (Princípios)",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Uso terapêutico da radiação ionizante: radiobiologia, técnicas e efeitos",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-04-001",
+      "titulo": "Princípios da Radioterapia — Visão Geral",
+      "no_pai_id": "s9-onco-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Radiação ionizante como arma local; por que e quando irradiar",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-04-002",
+      "titulo": "Radiobiologia e os 4 R",
+      "no_pai_id": "s9-onco-04-000",
+      "nivel": "folha",
+      "escopo": "Dano ao DNA, reparo, reoxigenação, repopulação, redistribuição; fracionamento",
+      "lentes": ["correlacao_ciencias_basicas", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-04-003",
+      "titulo": "Modalidades e Técnicas de Radioterapia",
+      "no_pai_id": "s9-onco-04-000",
+      "nivel": "tema",
+      "escopo": "Teleterapia, braquiterapia, IMRT, radiocirurgia; conformação da dose",
+      "lentes": ["conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-04-003-01",
+      "titulo": "Teleterapia e Radioterapia Conformacional",
+      "no_pai_id": "s9-onco-04-003",
+      "nivel": "folha",
+      "escopo": "Feixe externo, IMRT/IGRT, radiocirurgia estereotáxica; poupar tecido são",
+      "lentes": ["conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-04-003-02",
+      "titulo": "Braquiterapia",
+      "no_pai_id": "s9-onco-04-003",
+      "nivel": "folha",
+      "escopo": "Fonte radioativa intracavitária/intersticial; próstata, colo uterino",
+      "lentes": ["conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-04-004",
+      "titulo": "Intenções da Radioterapia e Toxicidade",
+      "no_pai_id": "s9-onco-04-000",
+      "nivel": "folha",
+      "escopo": "Curativa, adjuvante, paliativa; efeitos agudos vs tardios; radiodermite",
+      "lentes": ["conduta", "apresentacao_clinica"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-05-000",
+      "titulo": "Terapia Alvo",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Fármacos dirigidos a alterações moleculares específicas do tumor",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-05-001",
+      "titulo": "Princípios da Terapia Alvo — Visão Geral",
+      "no_pai_id": "s9-onco-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Vulnerabilidade molecular; biomarcador preditivo; da citotoxina à precisão",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-05-002",
+      "titulo": "Inibidores de Tirosina-Quinase",
+      "no_pai_id": "s9-onco-05-000",
+      "nivel": "folha",
+      "escopo": "Imatinibe, EGFR, ALK; bloqueio de vias de sinalização; -inibe",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-05-003",
+      "titulo": "Anticorpos Monoclonais Terapêuticos",
+      "no_pai_id": "s9-onco-05-000",
+      "nivel": "folha",
+      "escopo": "Trastuzumabe, cetuximabe, bevacizumabe; sufixo -mabe e alvos",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-05-004",
+      "titulo": "Inibidores de Angiogênese e Novas Classes Alvo",
+      "no_pai_id": "s9-onco-05-000",
+      "nivel": "folha",
+      "escopo": "Anti-VEGF, inibidores de PARP e de CDK4/6; letalidade sintética",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-05-005",
+      "titulo": "Resistência à Terapia Alvo",
+      "no_pai_id": "s9-onco-05-000",
+      "nivel": "folha",
+      "escopo": "Mutações de escape, vias alternativas; por que a resposta é temporária",
+      "lentes": ["correlacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-06-000",
+      "titulo": "Imunoterapia",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Reativar o sistema imune contra o tumor: checkpoints, CAR-T e toxicidades imunes",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-06-001",
+      "titulo": "Princípios da Imunoterapia — Visão Geral",
+      "no_pai_id": "s9-onco-06-000",
+      "nivel": "visao_geral",
+      "escopo": "Imunovigilância e imunoedição; por que o tumor escapa e como reverter",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-06-002",
+      "titulo": "Inibidores de Checkpoint Imunológico",
+      "no_pai_id": "s9-onco-06-000",
+      "nivel": "folha",
+      "escopo": "Anti-PD-1/PD-L1 e anti-CTLA-4; soltar o freio do linfócito T",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-06-003",
+      "titulo": "Terapia Celular Adotiva e CAR-T",
+      "no_pai_id": "s9-onco-06-000",
+      "nivel": "folha",
+      "escopo": "Linfócitos T engenheirados; sucesso em neoplasias hematológicas",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-06-004",
+      "titulo": "Eventos Adversos Imunorrelacionados",
+      "no_pai_id": "s9-onco-06-000",
+      "nivel": "folha",
+      "escopo": "Colite, pneumonite, endocrinopatias, síndrome de liberação de citocinas",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-07-000",
+      "titulo": "Câncer de Mama",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Neoplasia mamária: subtipos moleculares, estadiamento e tratamento",
+      "lentes": ["diagnostico", "conduta", "correlacao_clinica"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-07-001",
+      "titulo": "Câncer de Mama — Visão Geral",
+      "no_pai_id": "s9-onco-07-000",
+      "nivel": "visao_geral",
+      "escopo": "Epidemiologia, fatores de risco, apresentação; câncer mais comum na mulher",
+      "lentes": ["apresentacao_clinica", "diagnostico"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-07-002",
+      "titulo": "Patologia e Subtipos Moleculares do Câncer de Mama",
+      "no_pai_id": "s9-onco-07-000",
+      "nivel": "tema",
+      "escopo": "Ductal/lobular; luminal A/B, HER2, triplo-negativo; RE/RP/HER2",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-07-002-01",
+      "titulo": "Carcinoma Ductal in situ e Lesões Precursoras",
+      "no_pai_id": "s9-onco-07-002",
+      "nivel": "folha",
+      "escopo": "CDIS, hiperplasia atípica; doença pré-invasiva e continuum de risco",
+      "lentes": ["diagnostico", "correlacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-07-002-02",
+      "titulo": "Carcinomas Invasivos e Classificação Molecular",
+      "no_pai_id": "s9-onco-07-002",
+      "nivel": "folha",
+      "escopo": "Ductal e lobular invasivos; luminal, HER2, triplo-negativo e prognóstico",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-07-003",
+      "titulo": "Diagnóstico e Estadiamento do Câncer de Mama",
+      "no_pai_id": "s9-onco-07-000",
+      "nivel": "folha",
+      "escopo": "Mamografia, USG, RM, biópsia, linfonodo sentinela; TNM da mama",
+      "lentes": ["diagnostico"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-07-004",
+      "titulo": "Tratamento do Câncer de Mama",
+      "no_pai_id": "s9-onco-07-000",
+      "nivel": "tema",
+      "escopo": "Cirurgia, radio, sistêmico guiado por subtipo; abordagem multimodal",
+      "lentes": ["conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-07-004-01",
+      "titulo": "Cirurgia e Radioterapia na Mama",
+      "no_pai_id": "s9-onco-07-004",
+      "nivel": "folha",
+      "escopo": "Conservadora vs mastectomia; sentinela vs axilar; radio adjuvante",
+      "lentes": ["conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-07-004-02",
+      "titulo": "Terapia Sistêmica no Câncer de Mama",
+      "no_pai_id": "s9-onco-07-004",
+      "nivel": "folha",
+      "escopo": "Hormonioterapia, anti-HER2, quimio; escolha por subtipo molecular",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-07-005",
+      "titulo": "Câncer de Mama Hereditário e BRCA",
+      "no_pai_id": "s9-onco-07-000",
+      "nivel": "folha",
+      "escopo": "Mutações BRCA1/2; risco, rastreamento intensivo e cirurgia redutora",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-08-000",
+      "titulo": "Câncer de Pulmão",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Neoplasias pulmonares: pequenas e não-pequenas células, molecular e conduta",
+      "lentes": ["diagnostico", "conduta", "correlacao_clinica"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-08-001",
+      "titulo": "Câncer de Pulmão — Visão Geral",
+      "no_pai_id": "s9-onco-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Tabaco, epidemiologia, principal causa de morte por câncer; apresentação",
+      "lentes": ["apresentacao_clinica", "diagnostico"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-08-002",
+      "titulo": "Carcinoma de Pequenas Células (CPPC)",
+      "no_pai_id": "s9-onco-08-000",
+      "nivel": "folha",
+      "escopo": "Origem neuroendócrina, doença sistêmica precoce, paraneoplasias; quimio-radio",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-08-003",
+      "titulo": "Carcinoma Não-Pequenas Células (CPNPC)",
+      "no_pai_id": "s9-onco-08-000",
+      "nivel": "tema",
+      "escopo": "Adeno, escamoso, grandes células; molecular e cirurgia como pilar",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-08-003-01",
+      "titulo": "Subtipos Histológicos e Alterações Moleculares Acionáveis",
+      "no_pai_id": "s9-onco-08-003",
+      "nivel": "folha",
+      "escopo": "Adeno vs escamoso; EGFR, ALK, ROS1, PD-L1; testagem obrigatória",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-08-003-02",
+      "titulo": "Estadiamento e Tratamento do CPNPC",
+      "no_pai_id": "s9-onco-08-003",
+      "nivel": "folha",
+      "escopo": "TNM, cirurgia, radio, alvo e imunoterapia por estádio molecular",
+      "lentes": ["conduta", "diagnostico"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-08-004",
+      "titulo": "Nódulo Pulmonar Solitário e Rastreamento",
+      "no_pai_id": "s9-onco-08-000",
+      "nivel": "folha",
+      "escopo": "Investigação do nódulo; TC de baixa dose em tabagistas de alto risco",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-08-005",
+      "titulo": "Tumores Torácicos: Mesotelioma e Mediastino",
+      "no_pai_id": "s9-onco-08-000",
+      "nivel": "folha",
+      "escopo": "Mesotelioma pleural (asbesto); massas mediastinais e timoma",
+      "lentes": ["diagnostico", "apresentacao_clinica"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-09-000",
+      "titulo": "Câncer Gastrointestinal",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Neoplasias do trato digestivo, fígado, pâncreas e vias biliares",
+      "lentes": ["diagnostico", "conduta", "correlacao_clinica"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-09-001",
+      "titulo": "Câncer Gastrointestinal — Visão Geral",
+      "no_pai_id": "s9-onco-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Eixo tubo digestivo-glândulas anexas; sequências adenoma-carcinoma",
+      "lentes": ["apresentacao_clinica", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-09-002",
+      "titulo": "Câncer Colorretal",
+      "no_pai_id": "s9-onco-09-000",
+      "nivel": "tema",
+      "escopo": "Sequência adenoma-carcinoma, rastreamento, estadiamento e tratamento",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-09-002-01",
+      "titulo": "Sequência Adenoma-Carcinoma e Vias Moleculares",
+      "no_pai_id": "s9-onco-09-002",
+      "nivel": "folha",
+      "escopo": "APC-KRAS-TP53; via serrilhada; instabilidade de microssatélites",
+      "lentes": ["correlacao_clinica", "diagnostico"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-09-002-02",
+      "titulo": "Diagnóstico, Estadiamento e Tratamento do Câncer Colorretal",
+      "no_pai_id": "s9-onco-09-002",
+      "nivel": "folha",
+      "escopo": "Colonoscopia, CEA, TNM; cirurgia, quimio adjuvante e alvo (RAS/BRAF)",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-09-003",
+      "titulo": "Câncer Gástrico e Esofágico",
+      "no_pai_id": "s9-onco-09-000",
+      "nivel": "folha",
+      "escopo": "H. pylori, Barrett; adeno vs escamoso; HER2; conduta multimodal",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-09-004",
+      "titulo": "Câncer de Pâncreas e Vias Biliares",
+      "no_pai_id": "s9-onco-09-000",
+      "nivel": "folha",
+      "escopo": "Adenocarcinoma pancreático, colangiocarcinoma; CA 19-9; prognóstico ruim",
+      "lentes": ["diagnostico", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-09-005",
+      "titulo": "Carcinoma Hepatocelular",
+      "no_pai_id": "s9-onco-09-000",
+      "nivel": "folha",
+      "escopo": "Cirrose, HBV/HCV; AFP, imagem diagnóstica; BCLC e tratamento",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-09-006",
+      "titulo": "Tumores Neuroendócrinos e GIST",
+      "no_pai_id": "s9-onco-09-000",
+      "nivel": "folha",
+      "escopo": "Carcinoides, síndrome carcinoide; GIST com c-KIT e imatinibe",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-10-000",
+      "titulo": "Câncer Geniturinário",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Neoplasias de próstata, rim, bexiga e testículo",
+      "lentes": ["diagnostico", "conduta", "correlacao_clinica"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-10-001",
+      "titulo": "Câncer Geniturinário — Visão Geral",
+      "no_pai_id": "s9-onco-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Trato urinário e órgãos sexuais masculinos; panorama das entidades",
+      "lentes": ["apresentacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-10-002",
+      "titulo": "Câncer de Próstata",
+      "no_pai_id": "s9-onco-10-000",
+      "nivel": "tema",
+      "escopo": "PSA, Gleason, rastreamento controverso; vigilância a bloqueio androgênico",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-10-002-01",
+      "titulo": "Diagnóstico e Escore de Gleason",
+      "no_pai_id": "s9-onco-10-002",
+      "nivel": "folha",
+      "escopo": "PSA, toque retal, biópsia, Gleason/ISUP; estratificação de risco",
+      "lentes": ["diagnostico"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-10-002-02",
+      "titulo": "Tratamento do Câncer de Próstata",
+      "no_pai_id": "s9-onco-10-002",
+      "nivel": "folha",
+      "escopo": "Vigilância ativa, prostatectomia, radio; bloqueio androgênico na doença avançada",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-10-003",
+      "titulo": "Câncer Renal",
+      "no_pai_id": "s9-onco-10-000",
+      "nivel": "folha",
+      "escopo": "Carcinoma de células claras; tríade clássica; nefrectomia e antiangiogênicos",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-10-004",
+      "titulo": "Câncer de Bexiga e Urotelial",
+      "no_pai_id": "s9-onco-10-000",
+      "nivel": "folha",
+      "escopo": "Hematúria, tabaco; superficial vs invasivo; RTU, BCG, cistectomia",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-10-005",
+      "titulo": "Câncer de Testículo",
+      "no_pai_id": "s9-onco-10-000",
+      "nivel": "folha",
+      "escopo": "Tumores germinativos, marcadores AFP/hCG/LDH; câncer curável do jovem",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-11-000",
+      "titulo": "Câncer Ginecológico",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Neoplasias de colo uterino, endométrio, ovário e trato genital feminino",
+      "lentes": ["diagnostico", "conduta", "correlacao_clinica"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-11-001",
+      "titulo": "Câncer Ginecológico — Visão Geral",
+      "no_pai_id": "s9-onco-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Trato genital feminino; papel do HPV e do rastreamento organizado",
+      "lentes": ["apresentacao_clinica", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-11-002",
+      "titulo": "Câncer de Colo Uterino",
+      "no_pai_id": "s9-onco-11-000",
+      "nivel": "tema",
+      "escopo": "HPV, lesões precursoras, rastreamento; câncer prevenível por excelência",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-11-002-01",
+      "titulo": "HPV, Lesões Precursoras e Prevenção",
+      "no_pai_id": "s9-onco-11-002",
+      "nivel": "folha",
+      "escopo": "NIC, citologia, colposcopia; vacina e rastreamento como prevenção",
+      "lentes": ["conduta", "correlacao_clinica"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-11-002-02",
+      "titulo": "Câncer Invasivo do Colo: Estadiamento e Tratamento",
+      "no_pai_id": "s9-onco-11-002",
+      "nivel": "folha",
+      "escopo": "Estadiamento clínico FIGO; cirurgia vs quimiorradioterapia",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-onco-11-003",
+      "titulo": "Câncer de Endométrio",
+      "no_pai_id": "s9-onco-11-000",
+      "nivel": "folha",
+      "escopo": "Sangramento pós-menopausa, hiperestrogenismo; tipos I e II; cirurgia",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-11-004",
+      "titulo": "Câncer de Ovário",
+      "no_pai_id": "s9-onco-11-000",
+      "nivel": "folha",
+      "escopo": "Diagnóstico tardio, CA-125, BRCA; citorredução e platina",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-11-005",
+      "titulo": "Doença Trofoblástica Gestacional",
+      "no_pai_id": "s9-onco-11-000",
+      "nivel": "folha",
+      "escopo": "Mola, coriocarcinoma; beta-hCG como marcador; tumor curável por quimio",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-12-000",
+      "titulo": "Tumores de Cabeça e Pescoço",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Carcinomas escamosos e outros da via aerodigestiva alta e tireoide",
+      "lentes": ["diagnostico", "conduta", "correlacao_clinica"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-12-001",
+      "titulo": "Tumores de Cabeça e Pescoço — Visão Geral",
+      "no_pai_id": "s9-onco-12-000",
+      "nivel": "visao_geral",
+      "escopo": "Via aerodigestiva alta; tabaco-álcool e HPV; campo de cancerização",
+      "lentes": ["apresentacao_clinica", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-12-002",
+      "titulo": "Carcinoma Escamoso de Cavidade Oral, Faringe e Laringe",
+      "no_pai_id": "s9-onco-12-000",
+      "nivel": "folha",
+      "escopo": "Fatores de risco, papel do HPV na orofaringe; multimodalidade",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-12-003",
+      "titulo": "Câncer de Tireoide",
+      "no_pai_id": "s9-onco-12-000",
+      "nivel": "folha",
+      "escopo": "Papilífero, folicular, medular, anaplásico; nódulo, PAAF, radioiodo",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-13-000",
+      "titulo": "Linfomas e Leucemias (Oncologia)",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Neoplasias hematológicas sob a ótica oncológica: diagnóstico e tratamento",
+      "lentes": ["diagnostico", "conduta", "correlacao_clinica"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-13-001",
+      "titulo": "Neoplasias Hematológicas — Visão Geral",
+      "no_pai_id": "s9-onco-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Linfoide vs mieloide; leucemia vs linfoma; câncer do sangue e linfonodos",
+      "lentes": ["diagnostico", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-13-002",
+      "titulo": "Linfoma de Hodgkin",
+      "no_pai_id": "s9-onco-13-000",
+      "nivel": "folha",
+      "escopo": "Célula de Reed-Sternberg, disseminação contígua; alta curabilidade",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-13-003",
+      "titulo": "Linfomas Não-Hodgkin",
+      "no_pai_id": "s9-onco-13-000",
+      "nivel": "folha",
+      "escopo": "Indolentes vs agressivos; difuso de grandes células B; R-CHOP",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-13-004",
+      "titulo": "Leucemias Agudas",
+      "no_pai_id": "s9-onco-13-000",
+      "nivel": "folha",
+      "escopo": "LMA e LLA; falência medular, blastos; indução e emergência oncológica",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-13-005",
+      "titulo": "Leucemias Crônicas e Mieloma Múltiplo",
+      "no_pai_id": "s9-onco-13-000",
+      "nivel": "folha",
+      "escopo": "LMC (BCR-ABL, imatinibe), LLC; mieloma com CRAB e lesões ósseas",
+      "lentes": ["diagnostico", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-13-006",
+      "titulo": "Transplante de Células-Tronco Hematopoéticas",
+      "no_pai_id": "s9-onco-13-000",
+      "nivel": "folha",
+      "escopo": "Autólogo vs alogênico; enxerto vs hospedeiro; efeito enxerto-vs-tumor",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-14-000",
+      "titulo": "Câncer Pediátrico (Visão Oncológica)",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Neoplasias da infância: biologia embrionária distinta e alta curabilidade",
+      "lentes": ["diagnostico", "conduta", "correlacao_clinica"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-14-001",
+      "titulo": "Câncer na Infância — Visão Geral",
+      "no_pai_id": "s9-onco-14-000",
+      "nivel": "visao_geral",
+      "escopo": "Tumores embrionários vs adultos; sinais de alerta; por que diferem",
+      "lentes": ["apresentacao_clinica", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-14-002",
+      "titulo": "Leucemias e Linfomas na Infância",
+      "no_pai_id": "s9-onco-14-000",
+      "nivel": "folha",
+      "escopo": "LLA como câncer mais comum da criança; linfomas pediátricos",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-14-003",
+      "titulo": "Tumores Sólidos Embrionários",
+      "no_pai_id": "s9-onco-14-000",
+      "nivel": "folha",
+      "escopo": "Neuroblastoma, tumor de Wilms, retinoblastoma; blastomas da infância",
+      "lentes": ["diagnostico", "correlacao_clinica"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-14-004",
+      "titulo": "Tumores do SNC e Ósseos na Infância",
+      "no_pai_id": "s9-onco-14-000",
+      "nivel": "folha",
+      "escopo": "Meduloblastoma, gliomas; osteossarcoma e sarcoma de Ewing",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-15-000",
+      "titulo": "Emergências Oncológicas",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Complicações agudas do câncer e do tratamento que ameaçam a vida",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-15-001",
+      "titulo": "Emergências Oncológicas — Visão Geral",
+      "no_pai_id": "s9-onco-15-000",
+      "nivel": "visao_geral",
+      "escopo": "Metabólicas, estruturais e do tratamento; reconhecer e agir rápido",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-15-002",
+      "titulo": "Síndrome de Lise Tumoral",
+      "no_pai_id": "s9-onco-15-000",
+      "nivel": "folha",
+      "escopo": "Hipercalemia, hiperuricemia, hiperfosfatemia; rasburicase e hidratação",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-15-003",
+      "titulo": "Hipercalcemia da Malignidade",
+      "no_pai_id": "s9-onco-15-000",
+      "nivel": "folha",
+      "escopo": "PTHrP e lesões osteolíticas; hidratação e bisfosfonatos",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-15-004",
+      "titulo": "Síndrome de Compressão Medular Metastática",
+      "no_pai_id": "s9-onco-15-000",
+      "nivel": "folha",
+      "escopo": "Dor, déficit neurológico; corticoide, RM e radio/cirurgia urgentes",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-15-005",
+      "titulo": "Síndrome da Veia Cava Superior",
+      "no_pai_id": "s9-onco-15-000",
+      "nivel": "folha",
+      "escopo": "Obstrução por massa mediastinal; edema em esclavina; manejo",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-15-006",
+      "titulo": "Neutropenia Febril",
+      "no_pai_id": "s9-onco-15-000",
+      "nivel": "folha",
+      "escopo": "Febre em neutropênico; antibioticoterapia empírica imediata",
+      "lentes": ["apresentacao_clinica", "conduta"],
+      "profundidade": 2
+    },
+
+    {
+      "id": "s9-onco-16-000",
+      "titulo": "Cuidados Paliativos e de Suporte em Oncologia — Ponteiro",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "folha",
+      "escopo": "Controle de sintomas e cuidado ao paciente oncológico avançado; conteúdo em geri-pali-reab",
+      "lentes": ["conduta"],
+      "profundidade": 1,
+      "conexao_lateral_id": "geri-pali-reab",
+      "conexao_lateral_titulo": "Cuidados Paliativos — dor oncológica (escada OMS), náusea/caquexia, sedação paliativa, comunicação de más notícias (SPIKES), fim de vida e reabilitação oncológica (geri-pali-reab, S9)",
+      "nota_revisao_espiral": "Ponteiro único conforme auditoria: os cuidados paliativos e de suporte oncológicos são desenvolvidos integralmente na disciplina geri-pali-reab (blocos de dor, sintomas não-dor, sedação paliativa, SPIKES, agonia e reabilitação oncológica). Oncologia apenas referencia para evitar duplicação."
+    },
+
+    {
+      "id": "s9-onco-17-000",
+      "titulo": "Rastreamento e Prevenção do Câncer",
+      "no_pai_id": "s9-onco-00-000",
+      "nivel": "modulo",
+      "escopo": "Detecção precoce e prevenção primária dos principais cânceres",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-onco-17-001",
+      "titulo": "Princípios do Rastreamento Oncológico — Visão Geral",
+      "no_pai_id": "s9-onco-17-000",
+      "nivel": "visao_geral",
+      "escopo": "Critérios de rastreamento, vieses de lead-time e sobrediagnóstico",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-17-002",
+      "titulo": "Rastreamento de Mama, Colo Uterino e Colorretal",
+      "no_pai_id": "s9-onco-17-000",
+      "nivel": "folha",
+      "escopo": "Mamografia, citologia/HPV, colonoscopia/FIT; programas organizados",
+      "lentes": ["conduta"],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-onco-17-003",
+      "titulo": "Prevenção Primária e Vacinação Antitumoral",
+      "no_pai_id": "s9-onco-17-000",
+      "nivel": "folha",
+      "escopo": "Cessação do tabaco, vacina HPV e HBV; quimioprevenção",
+      "lentes": ["conduta", "correlacao_ciencias_basicas"],
+      "profundidade": 2
+    }
+  ]
+}

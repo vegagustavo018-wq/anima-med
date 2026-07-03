@@ -1,0 +1,240 @@
+{
+  "disciplina_id": "bioq1",
+  "disciplina_nome": "Bioquímica I — Bases Moleculares",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s2-bioq1-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "modulos": {
+      "00": "Raiz da disciplina — por que a química é linguagem da vida e da doença",
+      "01": "Água, pH, Tampões (Modulo 2.3.1)",
+      "02": "Aminoácidos e Proteínas (Modulo 2.3.2)",
+      "03": "Enzimas (Modulo 2.3.3)",
+      "04": "Carboidratos (Modulo 2.3.4)",
+      "05": "Lipídios (Modulo 2.3.5)",
+      "06": "Ácidos Nucleicos (Modulo 2.3.6)"
+    },
+    "lente_central": "mecanismo molecular; cada via, enzima-chave, regulacao e erro inato tende a virar bloco",
+    "criterio_de_folha": "Folha quando sustenta as 8 etapas E pelo menos 1 flashcard contrafactual legitimo (R1). Se nao sustentar, vira secao do pai.",
+    "profundidade": "campo profundidade = profundidade na arvore (raiz disciplina = 0)."
+  },
+  "blocos": [
+
+    { "id": "s2-bioq1-00-000", "titulo": "Bioquímica — A Química Que Explica a Vida e a Doença", "no_pai_id": null, "nivel": "disciplina", "escopo": "Porta de entrada: por que reduzir fisiologia e patologia a moléculas", "lentes": ["funcao","etimologia"], "profundidade": 0 },
+    { "id": "s2-bioq1-00-001", "titulo": "As Quatro Classes de Biomoléculas — Visão Panorâmica", "no_pai_id": "s2-bioq1-00-000", "nivel": "visao_geral", "escopo": "Proteínas, carboidratos, lipídios e ácidos nucleicos: a lógica de reduzir a vida a quatro polímeros", "lentes": ["morfologia","funcao"], "profundidade": 1 },
+    { "id": "s2-bioq1-00-002", "titulo": "Grupos Funcionais da Bioquímica", "no_pai_id": "s2-bioq1-00-001", "nivel": "folha", "escopo": "Hidroxila, carbonila, carboxila, amino, fosfato, tiol: o alfabeto químico do corpo", "lentes": ["bioquimica","etimologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-00-003", "titulo": "Ligações Químicas na Vida — Covalente vs Não-Covalente", "no_pai_id": "s2-bioq1-00-001", "nivel": "folha", "escopo": "Por que a vida usa interações fracas reversíveis para reconhecimento e forte covalência para estrutura", "lentes": ["bioquimica","funcao"], "profundidade": 2 },
+    { "id": "s2-bioq1-00-004", "titulo": "Isomeria e Quiralidade — Por Que a Forma no Espelho Importa", "no_pai_id": "s2-bioq1-00-001", "nivel": "folha", "escopo": "Estereoisomeria; por que o corpo distingue D de L e a tragédia da talidomida", "lentes": ["bioquimica","correlacao_clinica","etimologia"], "profundidade": 2 },
+
+    { "id": "s2-bioq1-01-000", "titulo": "Água, pH e Tampões — Visão do Módulo", "no_pai_id": "s2-bioq1-00-000", "nivel": "modulo", "escopo": "O solvente da vida e o controle do equilíbrio ácido-base", "lentes": ["bioquimica","fisiologia"], "profundidade": 1 },
+
+    { "id": "s2-bioq1-01-001", "titulo": "Propriedades da Água — Visão Geral", "no_pai_id": "s2-bioq1-01-000", "nivel": "visao_geral", "escopo": "Por que a água é o meio universal onde toda bioquímica acontece", "lentes": ["bioquimica","funcao"], "profundidade": 2 },
+    { "id": "s2-bioq1-01-001-01", "titulo": "A Molécula de Água — Polaridade e Dipolo", "no_pai_id": "s2-bioq1-01-001", "nivel": "folha", "escopo": "Geometria angular e distribuição de carga que tornam a água polar", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-001-02", "titulo": "Ligações de Hidrogênio", "no_pai_id": "s2-bioq1-01-001", "nivel": "folha", "escopo": "A ponte fraca e transitória que dá coesão, tensão superficial e alto calor específico", "lentes": ["bioquimica","funcao"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-001-03", "titulo": "A Água Como Solvente Universal", "no_pai_id": "s2-bioq1-01-001", "nivel": "folha", "escopo": "Hidratação de íons e polares; por que 'semelhante dissolve semelhante'", "lentes": ["bioquimica","funcao"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-001-04", "titulo": "O Efeito Hidrofóbico", "no_pai_id": "s2-bioq1-01-001", "nivel": "folha", "escopo": "Por que moléculas apolares se agrupam; motor do dobramento e das membranas", "lentes": ["bioquimica","funcao"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-001-05", "titulo": "Propriedades Térmicas da Água e Homeotermia", "no_pai_id": "s2-bioq1-01-001", "nivel": "folha", "escopo": "Calor específico e de vaporização; sudorese e termorregulação", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-001-06", "titulo": "Osmose e Osmolaridade", "no_pai_id": "s2-bioq1-01-001", "nivel": "folha", "escopo": "Movimento da água por gradiente; tonicidade e edema/desidratação celular", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-01-002", "titulo": "Ionização da Água — Visão Geral", "no_pai_id": "s2-bioq1-01-000", "nivel": "visao_geral", "escopo": "Como a própria água se dissocia e define a escala de acidez", "lentes": ["bioquimica"], "profundidade": 2 },
+    { "id": "s2-bioq1-01-002-01", "titulo": "Autoionização da Água e o Produto Iônico Kw", "no_pai_id": "s2-bioq1-01-002", "nivel": "folha", "escopo": "H2O ⇌ H+ + OH-; por que Kw = 10^-14 define o ponto neutro", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-002-02", "titulo": "Ácidos e Bases de Brønsted-Lowry", "no_pai_id": "s2-bioq1-01-002", "nivel": "folha", "escopo": "Doador vs receptor de próton; pares conjugados como base do tamponamento", "lentes": ["bioquimica","etimologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-002-03", "titulo": "Força de Ácidos — Ka e pKa", "no_pai_id": "s2-bioq1-01-002", "nivel": "folha", "escopo": "Quantificar a tendência de doar próton; por que pKa prediz protonação", "lentes": ["bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-01-003", "titulo": "pH e Equilíbrio Ácido-Base — Visão Geral", "no_pai_id": "s2-bioq1-01-000", "nivel": "visao_geral", "escopo": "A escala logarítmica do H+ e por que a vida vive numa faixa estreita", "lentes": ["bioquimica","fisiologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-01-003-01", "titulo": "A Escala de pH — Por Que Logarítmica", "no_pai_id": "s2-bioq1-01-003", "nivel": "folha", "escopo": "pH = -log[H+]; por que uma unidade significa dez vezes mais acidez", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-003-02", "titulo": "pH Fisiológico e a Faixa da Vida", "no_pai_id": "s2-bioq1-01-003", "nivel": "folha", "escopo": "Por que o sangue exige 7,35–7,45 e o que muda com o desvio", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-003-03", "titulo": "Acidose e Alcalose — Correlação Clínica", "no_pai_id": "s2-bioq1-01-003", "nivel": "folha", "escopo": "Distúrbios metabólicos e respiratórios; efeito do pH sobre proteínas", "lentes": ["correlacao_clinica","fisiologia"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-01-004", "titulo": "Tampões Biológicos — Visão Geral", "no_pai_id": "s2-bioq1-01-000", "nivel": "visao_geral", "escopo": "O problema de resistir a variações de pH e a solução dos pares conjugados", "lentes": ["bioquimica","fisiologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-01-004-01", "titulo": "Como Funciona um Tampão", "no_pai_id": "s2-bioq1-01-004", "nivel": "folha", "escopo": "Par ácido-fraco/base-conjugada absorvendo H+ ou OH+; capacidade tamponante", "lentes": ["bioquimica","funcao"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-004-02", "titulo": "Equação de Henderson-Hasselbalch", "no_pai_id": "s2-bioq1-01-004", "nivel": "folha", "escopo": "Relação pH–pKa–razão base/ácido; por que o tampão é ótimo perto do pKa", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-004-03", "titulo": "Sistema Tampão Bicarbonato", "no_pai_id": "s2-bioq1-01-004", "nivel": "folha", "escopo": "H2CO3/HCO3-; tampão aberto acoplado a pulmão e rim; o principal do sangue", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-004-04", "titulo": "Tampão Fosfato", "no_pai_id": "s2-bioq1-01-004", "nivel": "folha", "escopo": "H2PO4-/HPO4=; tampão intracelular e urinário", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-01-004-05", "titulo": "Proteínas e Hemoglobina Como Tampões", "no_pai_id": "s2-bioq1-01-004", "nivel": "folha", "escopo": "Histidina e o efeito de tamponamento do sangue; transporte de CO2", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-02-000", "titulo": "Aminoácidos e Proteínas — Visão do Módulo", "no_pai_id": "s2-bioq1-00-000", "nivel": "modulo", "escopo": "Dos monômeros aos polímeros funcionais que executam a vida", "lentes": ["bioquimica","funcao"], "profundidade": 1 },
+
+    { "id": "s2-bioq1-02-001", "titulo": "Aminoácidos — Visão Geral", "no_pai_id": "s2-bioq1-02-000", "nivel": "visao_geral", "escopo": "As 20 peças com que toda proteína é construída", "lentes": ["bioquimica","etimologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-02-001-01", "titulo": "Estrutura Geral do Aminoácido — O Carbono Alfa", "no_pai_id": "s2-bioq1-02-001", "nivel": "folha", "escopo": "Amino, carboxila, H e cadeia R no mesmo carbono; por que R define tudo", "lentes": ["bioquimica","etimologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-001-02", "titulo": "Estereoquímica — Aminoácidos L e D", "no_pai_id": "s2-bioq1-02-001", "nivel": "folha", "escopo": "Por que as proteínas usam só L-aminoácidos e onde aparecem D na natureza", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-001-03", "titulo": "Ionização dos Aminoácidos e Ponto Isoelétrico", "no_pai_id": "s2-bioq1-02-001", "nivel": "folha", "escopo": "Zwitterion, curva de titulação e pI; base da eletroforese", "lentes": ["bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-02-002", "titulo": "Classificação por Cadeia Lateral — Visão Geral", "no_pai_id": "s2-bioq1-02-001", "nivel": "tema", "escopo": "Como a natureza química de R agrupa os 20 aminoácidos", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-002-01", "titulo": "Aminoácidos Apolares (Alifáticos e Aromáticos)", "no_pai_id": "s2-bioq1-02-002", "nivel": "folha", "escopo": "Gly, Ala, Val, Leu, Ile, Pro, Phe, Met, Trp; núcleo hidrofóbico das proteínas", "lentes": ["bioquimica","funcao"], "profundidade": 4 },
+    { "id": "s2-bioq1-02-002-02", "titulo": "Aminoácidos Polares Não-Carregados", "no_pai_id": "s2-bioq1-02-002", "nivel": "folha", "escopo": "Ser, Thr, Cys, Tyr, Asn, Gln; superfície e alvos de modificação", "lentes": ["bioquimica","funcao"], "profundidade": 4 },
+    { "id": "s2-bioq1-02-002-03", "titulo": "Aminoácidos Ácidos (Carregados Negativamente)", "no_pai_id": "s2-bioq1-02-002", "nivel": "folha", "escopo": "Aspartato e glutamato; carga negativa, catálise e ligação de metais", "lentes": ["bioquimica","funcao"], "profundidade": 4 },
+    { "id": "s2-bioq1-02-002-04", "titulo": "Aminoácidos Básicos (Carregados Positivamente)", "no_pai_id": "s2-bioq1-02-002", "nivel": "folha", "escopo": "Lisina, arginina, histidina; ligação a DNA e tamponamento", "lentes": ["bioquimica","funcao"], "profundidade": 4 },
+    { "id": "s2-bioq1-02-002-05", "titulo": "Aminoácidos Especiais — Prolina, Glicina, Cisteína", "no_pai_id": "s2-bioq1-02-002", "nivel": "folha", "escopo": "Rigidez da prolina, flexibilidade da glicina, ponte dissulfeto da cisteína", "lentes": ["bioquimica","morfologia"], "profundidade": 4 },
+
+    { "id": "s2-bioq1-02-003", "titulo": "Aminoácidos Essenciais vs Não-Essenciais", "no_pai_id": "s2-bioq1-02-001", "nivel": "folha", "escopo": "Quais o corpo não sintetiza e por que; implicação nutricional e clínica", "lentes": ["fisiologia","correlacao_clinica","etimologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-004", "titulo": "Aminoácidos Não-Proteicos e Modificados", "no_pai_id": "s2-bioq1-02-001", "nivel": "folha", "escopo": "GABA, ornitina, hidroxiprolina, homocisteína; funções fora das proteínas", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-02-005", "titulo": "Ligação Peptídica", "no_pai_id": "s2-bioq1-02-000", "nivel": "visao_geral", "escopo": "A amida que une aminoácidos e define a espinha da proteína", "lentes": ["bioquimica"], "profundidade": 2 },
+    { "id": "s2-bioq1-02-005-01", "titulo": "Formação e Hidrólise da Ligação Peptídica", "no_pai_id": "s2-bioq1-02-005", "nivel": "folha", "escopo": "Condensação com perda de água; direção N→C; custo energético", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-005-02", "titulo": "Caráter Parcial de Dupla Ligação e Planaridade", "no_pai_id": "s2-bioq1-02-005", "nivel": "folha", "escopo": "Ressonância que impede rotação; ângulos phi/psi e o gráfico de Ramachandran", "lentes": ["bioquimica","morfologia"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-02-006", "titulo": "Níveis Estruturais das Proteínas — Visão Geral", "no_pai_id": "s2-bioq1-02-000", "nivel": "visao_geral", "escopo": "A hierarquia primária→quaternária que gera função a partir de sequência", "lentes": ["bioquimica","morfologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-02-006-01", "titulo": "Estrutura Primária", "no_pai_id": "s2-bioq1-02-006", "nivel": "folha", "escopo": "A sequência linear; por que uma troca de resíduo pode mudar tudo (anemia falciforme)", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-006-02", "titulo": "Estrutura Secundária — Visão Geral", "no_pai_id": "s2-bioq1-02-006", "nivel": "tema", "escopo": "Padrões locais estabilizados por pontes de hidrogênio do esqueleto", "lentes": ["bioquimica","morfologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-006-02-01", "titulo": "Alfa-Hélice", "no_pai_id": "s2-bioq1-02-006-02", "nivel": "folha", "escopo": "Geometria helicoidal, passo e resíduos que a favorecem/quebram", "lentes": ["bioquimica","morfologia"], "profundidade": 4 },
+    { "id": "s2-bioq1-02-006-02-02", "titulo": "Folha Beta", "no_pai_id": "s2-bioq1-02-006-02", "nivel": "folha", "escopo": "Fitas paralelas e antiparalelas; folhas pregueadas e amiloide", "lentes": ["bioquimica","morfologia","correlacao_clinica"], "profundidade": 4 },
+    { "id": "s2-bioq1-02-006-02-03", "titulo": "Voltas, Alças e Estruturas Suprassecundárias", "no_pai_id": "s2-bioq1-02-006-02", "nivel": "folha", "escopo": "Turns beta e motivos que conectam hélices e folhas", "lentes": ["bioquimica","morfologia"], "profundidade": 4 },
+    { "id": "s2-bioq1-02-006-03", "titulo": "Estrutura Terciária", "no_pai_id": "s2-bioq1-02-006", "nivel": "folha", "escopo": "O dobramento 3D global; forças que o estabilizam e domínios", "lentes": ["bioquimica","morfologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-006-04", "titulo": "Estrutura Quaternária", "no_pai_id": "s2-bioq1-02-006", "nivel": "folha", "escopo": "Múltiplas subunidades; cooperatividade (hemoglobina) como propriedade emergente", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-006-05", "titulo": "Forças que Estabilizam a Estrutura Proteica", "no_pai_id": "s2-bioq1-02-006", "nivel": "folha", "escopo": "Efeito hidrofóbico, pontes salinas, H, van der Waals e dissulfeto", "lentes": ["bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-02-007", "titulo": "Dobramento de Proteínas — Visão Geral", "no_pai_id": "s2-bioq1-02-000", "nivel": "visao_geral", "escopo": "Como a sequência linear encontra sua forma funcional (paradoxo de Levinthal)", "lentes": ["bioquimica","funcao"], "profundidade": 2 },
+    { "id": "s2-bioq1-02-007-01", "titulo": "O Problema do Enovelamento e o Funil de Energia", "no_pai_id": "s2-bioq1-02-007", "nivel": "folha", "escopo": "Por que o dobramento não é busca aleatória; paisagem energética", "lentes": ["bioquimica","funcao"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-007-02", "titulo": "Chaperonas Moleculares", "no_pai_id": "s2-bioq1-02-007", "nivel": "folha", "escopo": "Hsp70 e chaperoninas evitando agregação; dobramento assistido", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-007-03", "titulo": "Desnaturação de Proteínas", "no_pai_id": "s2-bioq1-02-007", "nivel": "folha", "escopo": "Calor, pH, ureia; perda de função reversível e irreversível", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-007-04", "titulo": "Doenças do Misfolding — Panorama", "no_pai_id": "s2-bioq1-02-007", "nivel": "tema", "escopo": "Quando o dobramento errado gera patologia por agregação ou perda de função", "lentes": ["correlacao_clinica","bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-007-04-01", "titulo": "Amiloidoses e Doenças Neurodegenerativas", "no_pai_id": "s2-bioq1-02-007-04", "nivel": "folha", "escopo": "Alzheimer, Parkinson; folhas beta agregadas insolúveis", "lentes": ["correlacao_clinica"], "profundidade": 4 },
+    { "id": "s2-bioq1-02-007-04-02", "titulo": "Príons — A Proteína Infecciosa", "no_pai_id": "s2-bioq1-02-007-04", "nivel": "folha", "escopo": "Conformação anômala que se propaga; doença sem ácido nucleico", "lentes": ["correlacao_clinica","etimologia"], "profundidade": 4 },
+
+    { "id": "s2-bioq1-02-008", "titulo": "Funções das Proteínas — Visão Geral", "no_pai_id": "s2-bioq1-02-000", "nivel": "visao_geral", "escopo": "A diversidade funcional que faz da proteína a operária da célula", "lentes": ["funcao"], "profundidade": 2 },
+    { "id": "s2-bioq1-02-008-01", "titulo": "Proteínas Estruturais — Colágeno e Elastina", "no_pai_id": "s2-bioq1-02-008", "nivel": "folha", "escopo": "Tripla hélice do colágeno, hidroxiprolina; escorbuto e Ehlers-Danlos", "lentes": ["morfologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-008-02", "titulo": "Proteínas Transportadoras — Hemoglobina e Mioglobina", "no_pai_id": "s2-bioq1-02-008", "nivel": "folha", "escopo": "Ligação cooperativa ao O2, curva sigmoide, efeito Bohr; hemoglobinopatias", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-008-03", "titulo": "Proteínas de Defesa — Anticorpos", "no_pai_id": "s2-bioq1-02-008", "nivel": "folha", "escopo": "Imunoglobulinas; especificidade e o problema do reconhecimento", "lentes": ["funcao","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-008-04", "titulo": "Proteínas Motoras — Actina, Miosina, Cinesina", "no_pai_id": "s2-bioq1-02-008", "nivel": "folha", "escopo": "Conversão de ATP em movimento; contração e transporte intracelular", "lentes": ["funcao","fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-008-05", "titulo": "Proteínas Hormonais e Receptoras", "no_pai_id": "s2-bioq1-02-008", "nivel": "folha", "escopo": "Insulina, receptores de membrana; sinalização como função proteica", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-008-06", "titulo": "Enzimas Como Função Proteica — Ponte para o Módulo 3", "no_pai_id": "s2-bioq1-02-008", "nivel": "folha", "escopo": "A catálise como a função proteica que merece módulo próprio", "lentes": ["funcao"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-02-009", "titulo": "Métodos de Estudo de Proteínas — Visão Geral", "no_pai_id": "s2-bioq1-02-000", "nivel": "visao_geral", "escopo": "Como separar, purificar e identificar proteínas no laboratório e na clínica", "lentes": ["funcao","correlacao_clinica"], "profundidade": 2 },
+    { "id": "s2-bioq1-02-009-01", "titulo": "Eletroforese de Proteínas", "no_pai_id": "s2-bioq1-02-009", "nivel": "folha", "escopo": "Separação por carga/tamanho; SDS-PAGE e eletroforese de proteínas séricas", "lentes": ["funcao","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-009-02", "titulo": "Cromatografia", "no_pai_id": "s2-bioq1-02-009", "nivel": "folha", "escopo": "Troca iônica, afinidade, filtração em gel; purificação por propriedade", "lentes": ["funcao"], "profundidade": 3 },
+    { "id": "s2-bioq1-02-009-03", "titulo": "Espectrometria de Massa e Sequenciamento", "no_pai_id": "s2-bioq1-02-009", "nivel": "folha", "escopo": "Identificação de proteínas por massa; proteômica", "lentes": ["funcao"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-03-000", "titulo": "Enzimas — Visão do Módulo", "no_pai_id": "s2-bioq1-00-000", "nivel": "modulo", "escopo": "Os catalisadores que tornam a vida quimicamente possível em tempo útil", "lentes": ["bioquimica","funcao"], "profundidade": 1 },
+
+    { "id": "s2-bioq1-03-001", "titulo": "Catalisador Biológico — Visão Geral", "no_pai_id": "s2-bioq1-03-000", "nivel": "visao_geral", "escopo": "O problema da lentidão das reações e a solução da catálise", "lentes": ["bioquimica","funcao"], "profundidade": 2 },
+    { "id": "s2-bioq1-03-001-01", "titulo": "Energia de Ativação e Estado de Transição", "no_pai_id": "s2-bioq1-03-001", "nivel": "folha", "escopo": "Por que a enzima acelera abaixando a barreira, sem mudar o equilíbrio", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-001-02", "titulo": "Como as Enzimas Reduzem a Energia de Ativação", "no_pai_id": "s2-bioq1-03-001", "nivel": "folha", "escopo": "Estabilização do estado de transição, proximidade, catálise ácido-base", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-001-03", "titulo": "Especificidade Enzimática", "no_pai_id": "s2-bioq1-03-001", "nivel": "folha", "escopo": "Por que uma enzima reconhece um substrato; estereoespecificidade", "lentes": ["bioquimica","funcao"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-03-002", "titulo": "Sítio Ativo — Visão Geral", "no_pai_id": "s2-bioq1-03-000", "nivel": "visao_geral", "escopo": "O bolso onde a química acontece e como o substrato é reconhecido", "lentes": ["bioquimica","morfologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-03-002-01", "titulo": "Modelos Chave-Fechadura e Encaixe Induzido", "no_pai_id": "s2-bioq1-03-002", "nivel": "folha", "escopo": "Do reconhecimento rígido ao ajuste conformacional dinâmico", "lentes": ["bioquimica","funcao"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-002-02", "titulo": "Resíduos Catalíticos e a Tríade Catalítica", "no_pai_id": "s2-bioq1-03-002", "nivel": "folha", "escopo": "Ser-His-Asp das proteases; como poucos resíduos fazem a química", "lentes": ["bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-03-003", "titulo": "Cinética Enzimática — Visão Geral", "no_pai_id": "s2-bioq1-03-000", "nivel": "visao_geral", "escopo": "Medir a velocidade para entender e comparar enzimas", "lentes": ["bioquimica"], "profundidade": 2 },
+    { "id": "s2-bioq1-03-003-01", "titulo": "Equação de Michaelis-Menten", "no_pai_id": "s2-bioq1-03-003", "nivel": "folha", "escopo": "Modelo E+S⇌ES→E+P; a hipérbole de velocidade vs substrato", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-003-02", "titulo": "Vmax e o Número de Turnover (kcat)", "no_pai_id": "s2-bioq1-03-003", "nivel": "folha", "escopo": "Velocidade máxima e eficiência catalítica; kcat/Km", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-003-03", "titulo": "Constante de Michaelis (Km)", "no_pai_id": "s2-bioq1-03-003", "nivel": "folha", "escopo": "O que Km diz sobre afinidade; significado fisiológico da isoenzima", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-003-04", "titulo": "Gráfico de Lineweaver-Burk", "no_pai_id": "s2-bioq1-03-003", "nivel": "folha", "escopo": "Linearização do duplo-recíproco; leitura de Km e Vmax e dos inibidores", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-003-05", "titulo": "Cinética de Enzimas Alostéricas (Sigmoide)", "no_pai_id": "s2-bioq1-03-003", "nivel": "folha", "escopo": "Por que a curva foge de Michaelis-Menten; cooperatividade", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-03-004", "titulo": "Inibição Enzimática — Visão Geral", "no_pai_id": "s2-bioq1-03-000", "nivel": "visao_geral", "escopo": "Como moléculas freiam enzimas; base de metade da farmacologia", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 2 },
+    { "id": "s2-bioq1-03-004-01", "titulo": "Inibição Competitiva", "no_pai_id": "s2-bioq1-03-004", "nivel": "folha", "escopo": "Compete pelo sítio ativo; Km aparente sobe, Vmax igual; metotrexato", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-004-02", "titulo": "Inibição Não-Competitiva", "no_pai_id": "s2-bioq1-03-004", "nivel": "folha", "escopo": "Liga sítio alostérico; Vmax cai, Km igual; independe da concentração de substrato", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-004-03", "titulo": "Inibição Incompetitiva", "no_pai_id": "s2-bioq1-03-004", "nivel": "folha", "escopo": "Liga só ao complexo ES; Vmax e Km caem juntos", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-004-04", "titulo": "Inibição Irreversível e Fármacos-Suicidas", "no_pai_id": "s2-bioq1-03-004", "nivel": "folha", "escopo": "Ligação covalente; aspirina, penicilina, organofosforados", "lentes": ["correlacao_clinica","bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-03-005", "titulo": "Regulação Enzimática — Visão Geral", "no_pai_id": "s2-bioq1-03-000", "nivel": "visao_geral", "escopo": "Como a célula liga e desliga vias no tempo certo", "lentes": ["bioquimica","fisiologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-03-005-01", "titulo": "Regulação Alostérica e Feedback", "no_pai_id": "s2-bioq1-03-005", "nivel": "folha", "escopo": "Efetores no sítio alostérico; inibição por produto final da via", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-005-02", "titulo": "Modificação Covalente — Fosforilação", "no_pai_id": "s2-bioq1-03-005", "nivel": "folha", "escopo": "Quinases e fosfatases ligando/desligando enzimas; cascata da adrenalina", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-005-03", "titulo": "Zimogênios — Ativação por Clivagem", "no_pai_id": "s2-bioq1-03-005", "nivel": "folha", "escopo": "Enzimas inativas ativadas por corte; digestão e coagulação; pancreatite", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-005-04", "titulo": "Compartimentalização e Isoenzimas", "no_pai_id": "s2-bioq1-03-005", "nivel": "folha", "escopo": "Separar reações por local; isoenzimas como marcadores (CK-MB, LDH)", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-03-006", "titulo": "Cofatores e Coenzimas — Visão Geral", "no_pai_id": "s2-bioq1-03-000", "nivel": "visao_geral", "escopo": "Os ajudantes químicos que ampliam o que os aminoácidos sozinhos fazem", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 2 },
+    { "id": "s2-bioq1-03-006-01", "titulo": "Íons Metálicos Como Cofatores", "no_pai_id": "s2-bioq1-03-006", "nivel": "folha", "escopo": "Zn, Mg, Fe, Cu na catálise; metaloenzimas", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-006-02", "titulo": "Coenzimas Derivadas de Vitaminas", "no_pai_id": "s2-bioq1-03-006", "nivel": "folha", "escopo": "NAD/FAD, coenzima A, TPP, PLP; por que faltar vitamina adoece", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-03-007", "titulo": "Classificação das Enzimas (EC) — As 6 Classes", "no_pai_id": "s2-bioq1-03-000", "nivel": "visao_geral", "escopo": "A lógica funcional que nomeia e organiza toda enzima", "lentes": ["bioquimica","etimologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-03-007-01", "titulo": "Oxidorredutases", "no_pai_id": "s2-bioq1-03-007", "nivel": "folha", "escopo": "Transferência de elétrons; desidrogenases e oxidases", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-007-02", "titulo": "Transferases", "no_pai_id": "s2-bioq1-03-007", "nivel": "folha", "escopo": "Transferem grupos; quinases e aminotransferases (AST/ALT)", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-007-03", "titulo": "Hidrolases", "no_pai_id": "s2-bioq1-03-007", "nivel": "folha", "escopo": "Quebram ligações com água; proteases, lipases, nucleases", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-007-04", "titulo": "Liases", "no_pai_id": "s2-bioq1-03-007", "nivel": "folha", "escopo": "Adicionam/removem grupos sem hidrólise nem oxidação; aldolases", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-007-05", "titulo": "Isomerases", "no_pai_id": "s2-bioq1-03-007", "nivel": "folha", "escopo": "Rearranjo intramolecular; mutases e epimerases", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-03-007-06", "titulo": "Ligases", "no_pai_id": "s2-bioq1-03-007", "nivel": "folha", "escopo": "Unem moléculas gastando ATP; sintetases e DNA ligase", "lentes": ["bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-03-008", "titulo": "Enzimas Como Marcadores e Alvos Clínicos", "no_pai_id": "s2-bioq1-03-000", "nivel": "folha", "escopo": "Enzimas séricas no diagnóstico e enzimas como alvos de fármacos", "lentes": ["correlacao_clinica"], "profundidade": 2 },
+
+    { "id": "s2-bioq1-04-000", "titulo": "Carboidratos — Visão do Módulo", "no_pai_id": "s2-bioq1-00-000", "nivel": "modulo", "escopo": "O açúcar como combustível rápido e material de reconhecimento", "lentes": ["bioquimica","funcao"], "profundidade": 1 },
+
+    { "id": "s2-bioq1-04-001", "titulo": "Monossacarídeos — Visão Geral", "no_pai_id": "s2-bioq1-04-000", "nivel": "visao_geral", "escopo": "As unidades simples de açúcar e sua química", "lentes": ["bioquimica","etimologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-04-001-01", "titulo": "Classificação dos Monossacarídeos", "no_pai_id": "s2-bioq1-04-001", "nivel": "folha", "escopo": "Aldoses/cetoses, trioses a hexoses; nomenclatura", "lentes": ["bioquimica","etimologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-001-02", "titulo": "Estereoisomeria — D/L, Epímeros e Enantiômeros", "no_pai_id": "s2-bioq1-04-001", "nivel": "folha", "escopo": "Glicose vs galactose vs manose; por que o corpo distingue", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-001-03", "titulo": "Ciclização e Anômeros (Alfa/Beta)", "no_pai_id": "s2-bioq1-04-001", "nivel": "folha", "escopo": "Forma de anel de Haworth; carbono anomérico e mutarrotação", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-001-04", "titulo": "Monossacarídeos de Importância Médica", "no_pai_id": "s2-bioq1-04-001", "nivel": "folha", "escopo": "Glicose, frutose, galactose, ribose; papéis e destinos metabólicos", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-001-05", "titulo": "Derivados de Monossacarídeos", "no_pai_id": "s2-bioq1-04-001", "nivel": "folha", "escopo": "Aminoaçúcares, açúcares-ácido, desoxiaçúcares (desoxirribose)", "lentes": ["bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-04-002", "titulo": "Dissacarídeos — Visão Geral", "no_pai_id": "s2-bioq1-04-000", "nivel": "visao_geral", "escopo": "Dois açúcares unidos pela ligação glicosídica", "lentes": ["bioquimica"], "profundidade": 2 },
+    { "id": "s2-bioq1-04-002-01", "titulo": "A Ligação Glicosídica", "no_pai_id": "s2-bioq1-04-002", "nivel": "folha", "escopo": "Alfa vs beta 1→4; por que a orientação decide digestibilidade", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-002-02", "titulo": "Sacarose, Lactose e Maltose", "no_pai_id": "s2-bioq1-04-002", "nivel": "folha", "escopo": "Composição de cada um; intolerância à lactose como correlação clínica", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-04-003", "titulo": "Polissacarídeos — Visão Geral", "no_pai_id": "s2-bioq1-04-000", "nivel": "visao_geral", "escopo": "Polímeros de açúcar para reserva e estrutura", "lentes": ["bioquimica","funcao"], "profundidade": 2 },
+    { "id": "s2-bioq1-04-003-01", "titulo": "Amido — Reserva Vegetal", "no_pai_id": "s2-bioq1-04-003", "nivel": "folha", "escopo": "Amilose e amilopectina; principal carboidrato da dieta", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-003-02", "titulo": "Glicogênio — Reserva Animal", "no_pai_id": "s2-bioq1-04-003", "nivel": "folha", "escopo": "Estrutura ramificada; por que a ramificação acelera mobilização; glicogenoses", "lentes": ["bioquimica","fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-003-03", "titulo": "Celulose e Fibras — O Que Não Digerimos", "no_pai_id": "s2-bioq1-04-003", "nivel": "folha", "escopo": "Ligação beta-1,4 indigerível; papel da fibra na saúde", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-04-004", "titulo": "Glicosaminoglicanos e Proteoglicanos", "no_pai_id": "s2-bioq1-04-000", "nivel": "visao_geral", "escopo": "Açúcares da matriz extracelular; hidratação e amortecimento", "lentes": ["bioquimica","morfologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-04-004-01", "titulo": "Tipos de GAGs — Ácido Hialurônico, Heparina, Sulfatos", "no_pai_id": "s2-bioq1-04-004", "nivel": "folha", "escopo": "Repetição dissacarídica sulfatada; funções na cartilagem e coagulação", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-004-02", "titulo": "Mucopolissacaridoses", "no_pai_id": "s2-bioq1-04-004", "nivel": "folha", "escopo": "Erros no catabolismo de GAGs; Hurler, Hunter como erros inatos", "lentes": ["correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-004-03", "titulo": "Glicoproteínas e Glicosilação", "no_pai_id": "s2-bioq1-04-004", "nivel": "folha", "escopo": "Açúcar ligado a proteína; N e O-glicosilação; grupos sanguíneos", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-04-005", "titulo": "Digestão e Absorção de Carboidratos — Visão Geral", "no_pai_id": "s2-bioq1-04-000", "nivel": "visao_geral", "escopo": "Do amido na boca à glicose no sangue", "lentes": ["fisiologia","bioquimica"], "profundidade": 2 },
+    { "id": "s2-bioq1-04-005-01", "titulo": "Enzimas Digestivas — Amilase e Dissacaridases", "no_pai_id": "s2-bioq1-04-005", "nivel": "folha", "escopo": "Amilase salivar/pancreática e borda em escova; deficiência de dissacaridase", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-005-02", "titulo": "Absorção Intestinal de Monossacarídeos", "no_pai_id": "s2-bioq1-04-005", "nivel": "folha", "escopo": "SGLT1 e GLUT2/5; transporte ativo e facilitado; reidratação oral", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-04-005-03", "titulo": "Índice Glicêmico e Glicemia — Correlação Clínica", "no_pai_id": "s2-bioq1-04-005", "nivel": "folha", "escopo": "Como a estrutura do carboidrato afeta a resposta glicêmica; diabetes", "lentes": ["correlacao_clinica","fisiologia"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-05-000", "titulo": "Lipídios — Visão do Módulo", "no_pai_id": "s2-bioq1-00-000", "nivel": "modulo", "escopo": "As moléculas hidrofóbicas: reserva de energia, membrana e sinal", "lentes": ["bioquimica","funcao"], "profundidade": 1 },
+
+    { "id": "s2-bioq1-05-001", "titulo": "Ácidos Graxos — Visão Geral", "no_pai_id": "s2-bioq1-05-000", "nivel": "visao_geral", "escopo": "A unidade básica de quase todos os lipídios", "lentes": ["bioquimica","etimologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-05-001-01", "titulo": "Estrutura e Nomenclatura dos Ácidos Graxos", "no_pai_id": "s2-bioq1-05-001", "nivel": "folha", "escopo": "Cauda hidrofóbica + carboxila; nomenclatura ômega e delta", "lentes": ["bioquimica","etimologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-001-02", "titulo": "Ácidos Graxos Saturados", "no_pai_id": "s2-bioq1-05-001", "nivel": "folha", "escopo": "Sem duplas; empacotamento denso; relação com aterosclerose", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-001-03", "titulo": "Ácidos Graxos Insaturados — Cis e Trans", "no_pai_id": "s2-bioq1-05-001", "nivel": "folha", "escopo": "Dobra cis fluidifica; trans industrial e risco cardiovascular", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-001-04", "titulo": "Ácidos Graxos Essenciais — Ômega-3 e Ômega-6", "no_pai_id": "s2-bioq1-05-001", "nivel": "folha", "escopo": "Linoleico e alfa-linolênico; precursores de eicosanoides", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-001-05", "titulo": "Eicosanoides — Sinais Derivados de Ácidos Graxos", "no_pai_id": "s2-bioq1-05-001", "nivel": "folha", "escopo": "Prostaglandinas, tromboxanos, leucotrienos; alvo de AINEs", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-05-002", "titulo": "Triacilgliceróis — Reserva de Energia", "no_pai_id": "s2-bioq1-05-000", "nivel": "visao_geral", "escopo": "Glicerol + 3 ácidos graxos; a bateria mais densa do corpo", "lentes": ["bioquimica","fisiologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-05-002-01", "titulo": "Estrutura e Função dos Triacilgliceróis", "no_pai_id": "s2-bioq1-05-002", "nivel": "folha", "escopo": "Por que o TAG estoca mais energia por grama que glicogênio; tecido adiposo", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-05-003", "titulo": "Lipídios de Membrana — Visão Geral", "no_pai_id": "s2-bioq1-05-000", "nivel": "visao_geral", "escopo": "Os lipídios anfipáticos que formam a fronteira celular", "lentes": ["bioquimica","morfologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-05-003-01", "titulo": "Fosfolipídios (Glicerofosfolipídios)", "no_pai_id": "s2-bioq1-05-003", "nivel": "folha", "escopo": "Cabeça polar fosfatada; a base da bicamada; surfactante pulmonar", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-003-02", "titulo": "Esfingolipídios", "no_pai_id": "s2-bioq1-05-003", "nivel": "folha", "escopo": "Base de esfingosina; esfingomielina da bainha de mielina", "lentes": ["bioquimica","morfologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-003-03", "titulo": "Glicolipídios", "no_pai_id": "s2-bioq1-05-003", "nivel": "folha", "escopo": "Cerebrosídeos e gangliosídeos; reconhecimento e antígenos de superfície", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-003-04", "titulo": "Esfingolipidoses — Erros de Degradação", "no_pai_id": "s2-bioq1-05-003", "nivel": "folha", "escopo": "Tay-Sachs, Gaucher, Niemann-Pick como erros inatos lisossômicos", "lentes": ["correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-05-004", "titulo": "Esteroides — Visão Geral", "no_pai_id": "s2-bioq1-05-000", "nivel": "visao_geral", "escopo": "O núcleo de quatro anéis que gera colesterol e hormônios", "lentes": ["bioquimica","fisiologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-05-004-01", "titulo": "Colesterol — Estrutura e Função", "no_pai_id": "s2-bioq1-05-004", "nivel": "folha", "escopo": "Modulador de fluidez e precursor universal; por que é indispensável e perigoso", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-004-02", "titulo": "Hormônios Esteroides", "no_pai_id": "s2-bioq1-05-004", "nivel": "folha", "escopo": "Cortisol, aldosterona, sexuais; do colesterol ao sinal endócrino", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-004-03", "titulo": "Sais Biliares", "no_pai_id": "s2-bioq1-05-004", "nivel": "folha", "escopo": "Detergentes derivados do colesterol; emulsificação e absorção de gordura", "lentes": ["fisiologia","bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-004-04", "titulo": "Vitaminas Lipossolúveis (A, D, E, K)", "no_pai_id": "s2-bioq1-05-004", "nivel": "folha", "escopo": "Lipídios com função vitamínica; deficiências e toxicidades", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-05-005", "titulo": "Lipoproteínas — Visão Geral", "no_pai_id": "s2-bioq1-05-000", "nivel": "visao_geral", "escopo": "O problema de transportar gordura no sangue aquoso e sua solução", "lentes": ["bioquimica","fisiologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-05-005-01", "titulo": "Estrutura Geral de uma Lipoproteína", "no_pai_id": "s2-bioq1-05-005", "nivel": "folha", "escopo": "Núcleo apolar + casca anfipática + apolipoproteínas", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-005-02", "titulo": "Quilomícrons", "no_pai_id": "s2-bioq1-05-005", "nivel": "folha", "escopo": "Transporte de gordura da dieta a partir do intestino", "lentes": ["fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-005-03", "titulo": "VLDL e IDL", "no_pai_id": "s2-bioq1-05-005", "nivel": "folha", "escopo": "Exportação hepática de triglicérides; conversão a LDL", "lentes": ["fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-005-04", "titulo": "LDL — O Colesterol 'Ruim'", "no_pai_id": "s2-bioq1-05-005", "nivel": "folha", "escopo": "Entrega de colesterol; receptor de LDL; hipercolesterolemia familiar", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-005-05", "titulo": "HDL — O Colesterol 'Bom'", "no_pai_id": "s2-bioq1-05-005", "nivel": "folha", "escopo": "Transporte reverso de colesterol; por que protege o vaso", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-05-005-06", "titulo": "Aterosclerose — A Doença das Lipoproteínas", "no_pai_id": "s2-bioq1-05-005", "nivel": "folha", "escopo": "Como LDL oxidada gera placa; base bioquímica do infarto e das estatinas", "lentes": ["correlacao_clinica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-05-006", "titulo": "Digestão e Absorção de Lipídios", "no_pai_id": "s2-bioq1-05-000", "nivel": "folha", "escopo": "Emulsificação, lipase, micelas e reesterificação intestinal", "lentes": ["fisiologia","correlacao_clinica"], "profundidade": 2 },
+
+    { "id": "s2-bioq1-06-000", "titulo": "Ácidos Nucleicos — Visão do Módulo", "no_pai_id": "s2-bioq1-00-000", "nivel": "modulo", "escopo": "As moléculas que guardam e transmitem a informação da vida", "lentes": ["bioquimica","funcao"], "profundidade": 1 },
+
+    { "id": "s2-bioq1-06-001", "titulo": "Nucleotídeos — Visão Geral", "no_pai_id": "s2-bioq1-06-000", "nivel": "visao_geral", "escopo": "As unidades de informação e energia da célula", "lentes": ["bioquimica","etimologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-06-001-01", "titulo": "Composição do Nucleotídeo — Base, Açúcar, Fosfato", "no_pai_id": "s2-bioq1-06-001", "nivel": "folha", "escopo": "As três peças; distinção nucleosídeo vs nucleotídeo", "lentes": ["bioquimica","etimologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-06-001-02", "titulo": "Bases Nitrogenadas — Purinas e Pirimidinas", "no_pai_id": "s2-bioq1-06-001", "nivel": "folha", "escopo": "A, G, C, T, U; estrutura de anel e complementaridade", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-06-001-03", "titulo": "Nucleotídeos de Função Não-Genética", "no_pai_id": "s2-bioq1-06-001", "nivel": "folha", "escopo": "ATP (energia), cAMP (sinal), NAD/FAD (coenzimas); a molécula multiuso", "lentes": ["bioquimica","fisiologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-06-001-04", "titulo": "Metabolismo de Purinas e Ácido Úrico — Correlação Clínica", "no_pai_id": "s2-bioq1-06-001", "nivel": "folha", "escopo": "Catabolismo de purina; gota e Lesch-Nyhan como erros do metabolismo", "lentes": ["correlacao_clinica","bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-06-002", "titulo": "Estrutura do DNA — Visão Geral", "no_pai_id": "s2-bioq1-06-000", "nivel": "visao_geral", "escopo": "A dupla hélice que resolve o problema de armazenar e copiar informação", "lentes": ["bioquimica","morfologia"], "profundidade": 2 },
+    { "id": "s2-bioq1-06-002-01", "titulo": "A Dupla Hélice e o Pareamento de Bases", "no_pai_id": "s2-bioq1-06-002", "nivel": "folha", "escopo": "Watson-Crick, A-T e G-C, antiparalelismo; por que a forma guarda a mensagem", "lentes": ["bioquimica","morfologia","etimologia"], "profundidade": 3 },
+    { "id": "s2-bioq1-06-002-02", "titulo": "Empacotamento do DNA — Nucleossomos e Cromatina", "no_pai_id": "s2-bioq1-06-002", "nivel": "folha", "escopo": "Histonas e enrolamento; caber 2 metros de DNA no núcleo", "lentes": ["morfologia","bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-06-002-03", "titulo": "Estabilidade e Desnaturação do DNA", "no_pai_id": "s2-bioq1-06-002", "nivel": "folha", "escopo": "Temperatura de fusão, conteúdo GC; base da PCR", "lentes": ["bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-06-003", "titulo": "Estrutura e Tipos de RNA", "no_pai_id": "s2-bioq1-06-000", "nivel": "visao_geral", "escopo": "A molécula versátil: mensageiro, transportador, ribossômico e regulador", "lentes": ["bioquimica","funcao"], "profundidade": 2 },
+    { "id": "s2-bioq1-06-003-01", "titulo": "DNA vs RNA — As Diferenças Que Importam", "no_pai_id": "s2-bioq1-06-003", "nivel": "folha", "escopo": "Ribose vs desoxirribose, U vs T, fita simples; por que RNA é menos estável", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-06-003-02", "titulo": "mRNA, tRNA e rRNA", "no_pai_id": "s2-bioq1-06-003", "nivel": "folha", "escopo": "Os três RNAs clássicos e seus papéis na expressão gênica", "lentes": ["bioquimica","funcao"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-06-004", "titulo": "Replicação do DNA — Visão Bioquímica", "no_pai_id": "s2-bioq1-06-000", "nivel": "visao_geral", "escopo": "Como a célula copia fielmente a informação antes de dividir", "lentes": ["bioquimica","funcao"], "profundidade": 2 },
+    { "id": "s2-bioq1-06-004-01", "titulo": "Replicação Semiconservativa e a Forquilha", "no_pai_id": "s2-bioq1-06-004", "nivel": "folha", "escopo": "Cada fita é molde; helicase, primase, DNA polimerase; fita líder e tardia", "lentes": ["bioquimica","funcao"], "profundidade": 3 },
+    { "id": "s2-bioq1-06-004-02", "titulo": "Fidelidade e Revisão (Proofreading)", "no_pai_id": "s2-bioq1-06-004", "nivel": "folha", "escopo": "Atividade exonuclease 3'→5'; por que o erro é raríssimo", "lentes": ["bioquimica"], "profundidade": 3 },
+
+    { "id": "s2-bioq1-06-005", "titulo": "Reparo de DNA e Mutações — Visão Geral", "no_pai_id": "s2-bioq1-06-000", "nivel": "visao_geral", "escopo": "Como a célula corrige o dano e o que acontece quando falha", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 2 },
+    { "id": "s2-bioq1-06-005-01", "titulo": "Tipos de Dano e Mutação no DNA", "no_pai_id": "s2-bioq1-06-005", "nivel": "folha", "escopo": "Substituição, inserção/deleção, dímeros de timina; agentes mutagênicos", "lentes": ["bioquimica","correlacao_clinica"], "profundidade": 3 },
+    { "id": "s2-bioq1-06-005-02", "titulo": "Mecanismos de Reparo", "no_pai_id": "s2-bioq1-06-005", "nivel": "folha", "escopo": "Excisão de base/nucleotídeo, mismatch repair; visão bioquímica", "lentes": ["bioquimica"], "profundidade": 3 },
+    { "id": "s2-bioq1-06-005-03", "titulo": "Falhas de Reparo e Câncer — Correlação Clínica", "no_pai_id": "s2-bioq1-06-005", "nivel": "folha", "escopo": "Xeroderma pigmentoso, Lynch; por que reparo defeituoso causa neoplasia", "lentes": ["correlacao_clinica"], "profundidade": 3 }
+
+  ]
+}

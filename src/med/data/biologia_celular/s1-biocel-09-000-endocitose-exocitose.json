@@ -1,0 +1,524 @@
+{
+  "resumo_id": "s1-biocel-09-000",
+  "no_pai_id": "s1-biocel-01-003-06",
+  "nos_filhos_ids": [
+    "s1-biocel-09-001",
+    "s1-biocel-09-002"
+  ],
+  "conexoes_laterais_ids": [
+    "s1-hist-02-001",
+    "s1-biocel-02-005"
+  ],
+  "metadata": {
+    "titulo": "Endocitose e Exocitose — Engolfamento e Liberação",
+    "subtitulo": "Por que uma célula precisa engoler o mundo e depois expeli-lo?",
+    "semestre": 1,
+    "disciplina": "biologia-celular",
+    "sistema_corporal": "celular",
+    "regiao_anatomica": null,
+    "profundidade_arvore": 3,
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 18,
+    "status": "completo",
+    "data_criacao": "2026-07-03",
+    "data_ultima_revisao": "2026-07-03",
+    "versao": "1.0",
+    "tags": [
+      "biologia-celular",
+      "transporte-em-massa",
+      "membrana",
+      "vesiculas",
+      "fagocitose",
+      "exocitose",
+      "endocitose-mediada-por-receptor",
+      "core"
+    ],
+    "nivel": "CORE",
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
+  },
+  "resumo_conciso": "Nem tudo que uma célula precisa absorver cabe em um canal iônico ou em um transportador molecular. E nem tudo que ela precisa expedir passa por exocitose tradicional. O transporte em massa resolve esse problema de uma forma elegante e antiga: a célula invagina sua membrana para engolfar um objeto (endocitose) e depois expele-o fusionando vesículas (exocitose). Fagocitose devora patógenos; pinocitose bebe fluido; endocitose mediada por receptor captura moléculas específicas. Do outro lado, exocitose regulada libera neurotransmissores e hormônios em resposta a sinais; exocitose constitutiva renova continuamente a membrana. Todo esse tráfego vesicular é controlado por proteínas específicas (SNAREs, Rab GTPases, clatrina) que garantem que a vesícula certa chegue ao destino certo. Entender endocitose e exocitose é entender como a célula negoceia com seu ambiente — quem entra, quando sai, e por quais portas.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma célula como um apartamento. Portas e janelas (canais e transportadores) deixam entrar e sair o que é pequeno — ar, água, alguns nutrientes. Mas um dia chega uma encomenda grande demais para qualquer porta. E dentro do apartamento, há coisas que precisam sair todo o dia em quantidade: lixo, cartas, embalagens. Como fazer? Você não abre a parede (isso seria morte). Você desenvolve um mecanismo especial: uma abertura na parede que se fecha depois que a encomenda passa, e uma porta que se abre periodicamente para jogar lixo para fora sem deixar toda a sujeira cair no chão."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa é a estratégia da célula também. Para absorver coisas grandes — uma bactéria, uma gota de fluido, um complexo proteico pesado — ela não usa canais. Ela faz algo mais ousado: **invagina sua membrana**, envolve o objeto, e depois se fecha, criando uma vesícula interna. Depois inverte o processo: funde a vesícula com a membrana de fora, liberando o conteúdo. São dois processos complementares: **endocitose** (trazer para dentro) e **exocitose** (expelir para fora)."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa. Lembre-se de um princípio crítico: a célula precisa de dois mecanismos porque um único transportador nunca resolveria tudo. Moléculas pequenas têm canais e bombas. Macromoléculas e partículas têm vesículas. É a evolução dizendo: para cada problema, um instrumento."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a célula não consegue viver só de transportadores?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um transportador é uma proteína que muda de forma para mover uma molécula através da membrana. É eficiente para coisas pequenas — glicose, íons, aminoácidos. Mas tem um limite de tamanho: quanto maior o objeto, menor a chance de caber no buraco da proteína. E tem um limite de quantidade: uma proteína transportadora, por mais ocupada que esteja, não consegue mover bilhões de cópias por segundo. Se a célula precisasse absorver uma bactéria ou lipoprotéinas complexas, transportadores não bastam. A solução? Deixar a bactéria (ou a gota de fluido) do lado de fora da membrana, e a membrana se encarrega de envolvê-la inteira. Isso é endocitose."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "E do outro lado, quando a célula quer secretar algo — um hormônio, uma proteína de defesa, um neurotransmissor — ela não consegue empurrar tudo através da membrana de um de cada vez. Ela empacota centenas de moléculas numa vesícula (um pacotinho de membrana), e depois funde a vesícula inteira com a membrana plasmática, despejando o conteúdo para fora de uma só vez. Isso é exocitose."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "**Regra fundamental:** endocitose e exocitose são o mecanismo de transporte em massa da célula. São usadas quando a quantidade ou o tamanho das moléculas torna os canais e transportadores inadequados. Juntas, permitem que a célula converse com seu ambiente em volumes inteiros, não em moléculas individuais."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula engole o mundo: endocitose"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existem três tipos principais de endocitose, cada um resolvendo um problema diferente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Fagocitose** (literalmente, 'alimentação por células') é endocitose de partículas grandes — bactérias, vírus, fragmentos de tecido morto, qualquer coisa acima de 1 micrômetro. Uma célula fagocitária (macrófago, neutrófilo, célula dendrítica) estende pseudópodos ao redor do alvo e o envolve inteiro. A membrana se fusa por baixo, criando uma vesícula gigante chamada **fagossomo**. É como abraçar algo grande e depois apertar até ficar dentro de você."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Pinocitose** (literalmente, 'beber por células') é endocitose de fluido. A membrana não envolve uma partícula específica — envolve um pouco de fluido do lado de fora, com tudo que estiver nele dissolvido. Moléculas pequenas, proteínas solúveis, íons — tudo entra junto. A vesícula é menor (50-100 nanômetros) e se forma continuamente, sem sinal específico. É como a célula estar constantemente probando o ambiente, trazendo amostras para dentro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Endocitose mediada por receptor** é o tipo sofisticado. Aqui, a célula não engole aleatoriamente. Ela tem receptores específicos na membrana que se ligam a moléculas específicas (como LDL, transferrina, hormônios). Quando um receptor se liga ao seu alvo, ele desce para uma região especial da membrana chamada **fossa coberta de clatrina** — uma invaginação de membrana já revestida de clatrina (uma proteína estrutural). A vesícula se forma só quando há cargo — é um sistema sob demanda. A célula reconhece o que quer, chama especificamente, e engole só isso."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Caminhos de Endocitose Mediada por Receptor",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Reconhecimento",
+          "explicacao": "O receptor específico (ex: receptor de LDL) na membrana se liga à sua proteína-alvo (ex: LDL). Essa ligação é específica — o receptor só reconhece LDL, não outras lipoproteínas. A célula está 'escolhendo' ativamente o que engolir."
+        },
+        {
+          "numero": 2,
+          "titulo": "Recrutamento para a Fossa",
+          "explicacao": "O complexo receptor-ligante é puxado para uma fossa da membrana já revestida de clatrina (proteína que forma uma rede tipo gaiola). Outras proteínas adaptadoras facilitam essa movimentação, como uma moeda caindo numa máquina."
+        },
+        {
+          "numero": 3,
+          "titulo": "Formação de Vesícula Revestida",
+          "explicacao": "A fossa se aprofunda, mais clatrina é adicionada, até que ela se fecha completamente sobre o cargo. Forma-se uma vesícula revestida de clatrina — um pacote blindado com receptor, ligante e clatrina por fora."
+        },
+        {
+          "numero": 4,
+          "titulo": "Desprendimento",
+          "explicacao": "A dinâmica (uma proteína que funciona como 'cortador') corta a vesícula do resto da membrana. A vesícula revestida se solta e flutua no citoplasma. Ela ainda tem a gaiola de clatrina, que será removida segundos depois."
+        },
+        {
+          "numero": 5,
+          "titulo": "Desrevestimento",
+          "explicacao": "Proteínas chamadas Hsc70 e auxiliares removem a clatrina. A clatrina é reciclada e volta para a membrana. A vesícula agora está nua — pronta para conversar com outras vesículas e organelas."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que endocitose mediada por receptor importa? Porque é o mecanismo que colesterol usa para entrar na célula. Sem ele, colesterol não seria absorvido, e as células morreriam de fome de esteroides. Na **hipercolesterolemia familiar**, o gene que codifica o receptor de LDL é quebrado. As células não conseguem reconhecer e engolir LDL. Colesterol fica circulando no sangue — daí os níveis patológicos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula expele o mundo: exocitose"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Exocitose é o processo inverso. A célula empacota conteúdo em uma vesícula, move a vesícula até a membrana, e funde a vesícula com a membrana, despejando o conteúdo para fora. Existem dois modos principais."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Exocitose constitutiva** é o fluxo contínuo, não regulado. Proteínas recém-sintetizadas no retículo endoplasmático viajam em vesículas pelo aparelho de Golgi e depois descem em vesículas até a membrana. Essas vesículas fusionam de forma constante — 24 horas por dia, com ou sem sinal. É a célula renovando sua membrana continuamente: a membrana tem 'idade' e precisa ser substituída. Além disso, proteínas secretadas (como colágeno, anticorpos) saem dessa forma — lentamente, mas continuamente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Exocitose regulada** é diferente. Aqui, vesículas se acumulam no citoplasma, esperando um sinal. Quando o sinal vem (geralmente **aumento de cálcio intracelular**), todas as vesículas fundo-ligadas disparam de uma só vez. É como um gatilho. Neurônios usam isso: uma vesícula de neurotransmissor fica presa perto da zona ativa esperando. Quando o potencial de ação chega, cálcio entra, e a vesícula funde com a membrana, liberando o neurotransmissor em milissegundos. Qualquer delay se traduziria em lentidão de reflexo — uma questão de sobrevivência."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚚",
+      "conteudo": "Pense em endocitose como um **caminhão de entrega que pára na porta e descarrega caixas**. O tamanho da caixa não importa — tudo entra de uma vez. Pinocitose é beber do poço: pega tudo que estiver aí. Endocitose mediada por receptor é **encomenda no e-commerce**: você encomendasua marca específica, e o caminhão traz só aquilo para você — preciso, rápido, só o que você pediu. Exocitose constitutiva é a **coleta de lixo regular diária**: a lixeira sai todo dia, à mesma hora, independentemente de estar cheia ou vazia. Exocitose regulada é a **ambulância**: só sai quando há emergência (o sinal de cálcio dispara o alarme)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "As proteínas que fazem tudo funcionar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Endocitose e exocitose não acontecem sozinhas. Proteínas específicas coordenam tudo: formação de vesículas, transporte, e fusão final."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Clatrina** é o revestimento mais famoso. Forma uma rede tipo gaiola ao redor da vesícula em formação. Não é só estrutura — é um sinal: quando a clatrina está ali, a vesícula é endocítica e vai para o endossomo. Sem clatrina, seria diferente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Dinâmica** é a tesoura molecular que corta a vesícula do resto da membrana. Sem dinâmica, a vesícula fica pendurada — não consegue se desprender. A toxina da varíola ataca dinâmica, interrompendo a endocitose."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Rab GTPases** são as bússolas. Cada compartimento celular — membrana plasmática, endossomo inicial, endossomo tardio, lisossomo — tem seu próprio tipo de Rab (Rab5, Rab7, etc.). A Rab diz à vesícula: 'você pertence aqui'. É como um código postal molecular."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**SNAREs** são os acopladores finais. v-SNARE fica na vesícula; t-SNARE fica na membrana de destino. Quando se encontram, formam uma 'espiral' que puxa as duas membranas uma contra a outra até fundirem. A toxina botulínica e a toxina tetânica cortam SNAREs — é por isso que o botulismo causa paralisia: sem SNARE funcional, exocitose não acontece, neurotransmissor não é liberado."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "**Síntese:** clatrina recruta e forma; dinâmica corta; Rab endereça; SNARE funde. Cada proteína faz seu trabalho numa sequência orquestrada. Uma falha em qualquer uma delas quebra todo o sistema."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Energia: quem paga a conta?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Endocitose e exocitose parecem processos mecânicos — só de 'lembrar' a membrana de se mover. Mas custam energia. ATP é queimado em vários pontos: montagem de clatrina, remoção de clatrina, movimento de vesículas ao longo de microtúbulos (via cinesina ou dineína), e fusão final via SNAREs (cada SNARE forma ligações que depois precisam ser quebradas)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por isso uma célula que fica sem ATP — por isquemia, por exemplo — logo perde capacidade de endocitar e exocitar. A membrana congela. Íons começam a vazar. A célula morre. A paralisia de um neurônio isquêmico não é só porque falhou a bomba Na+/K+: é também porque exocitose falhou e sinapses foram destruídas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Falhas que viram doença"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando os mecanismos de endocitose e exocitose quebram, doenças aparecem."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Hipercolesterolemia familiar:** receptor de LDL quebrado → sem endocitose mediada por receptor → colesterol circula descontrolado → infarto prematuro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Doença de Gaucher:** enzima lisossômica ausente → lisossomos não conseguem digerir seu cargo → vesículas de endocitose acumulam e nunca esvaziam → órgãos incham (hepatoesplenomegalia)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Botulismo:** toxina botulínica cliva SNARE → exocitose regulada falha → neurotransmissor não é liberado → paralisia flácida → morte por parada respiratória."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Miastenia grave:** anticorpos destroem receptores de acetilcolina na placa motora → menos acetilcolina é capturada na sinapse → fraqueza muscular progressiva. Não é exatamente um defeito de exocitose, mas envolve tráfego de receptores na membrana."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e a história"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "endocitose",
+      "origem": "grego endon (dentro) + kýtos (célula) + -osis (processo)",
+      "significado": "literalmente, 'processo de trazer algo para dentro da célula'",
+      "explicacao": "O termo foi cunhado na década de 1960 para descrever a invaginação de membrana observada em microscopia eletrônica. Antes disso, o fenômeno era descrito de forma fragmentada — 'fagocitose' (para partículas grandes), 'pinocitose' (para fluido). O termo geral 'endocitose' chegou para unificar: qualquer processo onde a célula tira uma extensão de sua membrana e a invagina para trazer material para dentro. A história revela o padrão da biologia: fenômenos eram observados antes de ter nome, depois os nomes chegavam para ordenar o caos observacional."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "exocitose",
+      "origem": "grego exo (fora) + kýtos (célula) + -osis (processo)",
+      "significado": "literalmente, 'processo de trazer algo para fora da célula'",
+      "explicacao": "Perfeitamente simétrico a endocitose. Se endocitose é 'trazer para dentro', exocitose é 'expelir para fora'. O termo reflete a beleza da evolução: para cada problema (trazer coisas grandes para dentro), existe uma solução complementar (expelir coisas em volume para fora). A simetria dos nomes reflete a simetria do mecanismo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para encerrar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um neurônio não tivesse exocitose regulada — se só tivesse exocitose constitutiva — qual seria a primeira consequência clínica?",
+      "resposta": "O neurônio não conseguiria controlar o timing de liberação de neurotransmissor. Exocitose constitutiva libera neurotransmissor continuamente (dia e noite) em quantidade lenta e constante. Mas sinapse precisa de **precisão de milissegundos**: um potencial de ação chega, cálcio entra, exocitose dispara. Sem esse acoplamento rápido, o neurônio seria 'surdo' aos sinais. O resultado clínico seria semelhante ao botulismo: paralisia, porque músculos não receberiam sinais rápidos o suficiente para contrair. A diferença é que no botulismo a exocitose é *bloqueada*; aqui ela seria *desritmada* — em funcionamento, mas fora do tempo. Ambos resultam em disfunção. É mais uma evidência de que a célula é um sistema de coordenação no tempo, não só no espaço: não basta o sinal estar lá, precisa estar no momento certo."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Endocitose, Transporte Vesicular e Exocitose: O Ciclo Completo",
+      "descricao": "Diagrama esquemático em corte transversal mostrando: (1) membrana plasmática com receptores de LDL; (2) invaginação da membrana com clatrina formando fossa coberta; (3) destacamento de vesícula revestida; (4) remoção de clatrina; (5) vesícula nu alcançando endossomo inicial; (6) tráfego de vesículas entre compartimentos (endossomo, aparelho de Golgi); (7) no lado oposto, vesículas saindo do trans-Golgi em direção à membrana; (8) fusão de vesícula com membrana liberando conteúdo (exocitose). Legendar clatrina (vermelha), dinâmica (amarela), Rab5 (azul), Rab7 (roxo), SNARE (verde). Incluir setas indicando caminho de ida e volta. Fundo neutro, estilo didático.",
+      "prompt_ia": "Diagrama científico em corte transversal, fundo transparente, estilo de livro didático moderno. Mostrar sequência completa de endocitose e exocitose: membrana plasmática superior com 5 receptores de LDL em vermelho; invaginação progressiva da membrana formando fossa com rede de clatrina em laranja-avermelhado; vesícula revestida de clatrina desprendendo; clatrina sendo removida (proteína Hsc70 em pequenas marcas amarelas); vesícula nua (azul pálido) movendo-se para um endossomo inicial (esfera com Rab5 em azul escuro); vesículas menores brotando do endossomo para o aparelho de Golgi (representado como pilhas de cisternas, cada uma mais clara que a anterior); no lado direito do diagrama, vesícula com conteúdo de proteína secretória (bolinhas verdes representando cargo) saindo do Golgi trans; movimento dessa vesícula em direção à membrana plasmática; fusão final com SNARE (dupla de espiras em verde brilhante) e liberação de cargo. Toda a sequência deve fluir da esquerda para a direita, em um ciclo. Legendas em português para cada estrutura e seta com direção do fluxo. Cores suaves, sem texturas fotorrealistas, alto contraste para legibilidade."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-01-002",
+        "titulo": "Membrana Plasmática — Visão Geral",
+        "disciplina": "biologia-celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Para entender como endocitose invagina a membrana, é preciso saber que a membrana é fluida e dinâmica, não rígida."
+      },
+      {
+        "bloco_id": "s1-biocel-01-003",
+        "titulo": "Transporte Transmembrana — Visão Geral",
+        "disciplina": "biologia-celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Endocitose é apresentada como solução para o problema de transportar moléculas grandes — contexto que só faz sentido após ver transportadores simples."
+      },
+      {
+        "bloco_id": "s1-biocel-02-001",
+        "titulo": "Sistema de Endomembranas — Panorama Integrado",
+        "disciplina": "biologia-celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Vesículas de endocitose entram no sistema de endomembranas — retículo, Golgi, lisossomos. Esse panorama é essencial."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "topico": "Falhas de endocitose em hipercolesterolemia familiar",
+        "mecanismo_conexao": "O mecanismo molecular (receptor de LDL, clatrina, endocitose mediada por receptor) visto aqui torna-se critério diagnóstico e alvo terapêutico em patologia."
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Toxinas bacterianas que bloqueiam exocitose (botulismo, tétano)",
+        "mecanismo_conexao": "Toxina botulínica cliva SNARE → exocitose regulada falha → paralisia. A fisiopatologia só faz sentido quando se entende o mecanismo normal de exocitose."
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "fisiologia",
+        "semestre_futuro": 3,
+        "topico": "Transmissão sináptica neuromuscular",
+        "mecanismo_conexao": "Exocitose regulada é o mecanismo central: potencial de ação → Ca2+ → fusão de vesícula → liberação de neurotransmissor. Qualquer alteração aqui quebra a sinapse."
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clínica",
+        "semestre_futuro": 6,
+        "topico": "Uso de toxina botulínica em espasticidade e cosmetologia",
+        "mecanismo_conexao": "A paralisia induzida pela toxina é aplicada terapeuticamente: bloqueia exocitose seletivamente em fibra muscular hiperativa. Mecanismo de ação entendido aqui."
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-02-001",
+        "tipo_relacao": "INTEGRAÇÃO",
+        "explicacao": "Tecido epitelial é a primeira linha de contato com o mundo externo. Muita fagocitose e pinocitose acontece em epitélios (intestino, vias aéreas). Entender endocitose lá reforça o padrão aqui."
+      },
+      {
+        "bloco_id": "s1-biocel-02-005",
+        "tipo_relacao": "CONVERGÊNCIA",
+        "explicacao": "Lisossomos são o destino final de muitas vesículas endocíticas. Não se entende tráfego lisossômico sem saber como material chega via endocitose."
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-09-000-fc01",
+      "pergunta": "Por que uma célula precisa de dois processos distintos — transportadores para moléculas pequenas E endocitose/exocitose para moléculas grandes — em vez de apenas um sistema único?",
+      "resposta": "Porque um único sistema não consegue atender aos dois requisitos simultâneos: velocidade e volume. Um transportador é eficiente para mover moléculas individuais através da membrana, mas é inviável para bilhões de moléculas por segundo ou para macromoléculas que não cabem em seu poro. Endocitose/exocitose resolve volume e tamanho: uma vesícula engole ou expele milhares de moléculas de uma vez. Mas seria lenta demais para absorver glicose em concentração relevante se usada para nutrição rápida. A evolução mantém os dois: transportadores para nutrição e sinalização rápida; vesículas para carga pesada e limpeza.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "endocitose",
+        "exocitose",
+        "transporte",
+        "economia-celular"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-09-000-fc02",
+      "pergunta": "Diferencie fagocitose, pinocitose e endocitose mediada por receptor em termos de: (1) o que entra, (2) tamanho de vesícula, (3) seletividade, e (4) célula que mais a usa.",
+      "resposta": "(1) **Fagocitose**: partículas grandes (bactérias, vírus, 1+ micrômetro); **Pinocitose**: fluido e tudo dissolvido nele; **Endocitose-receptor**: moléculas específicas reconhecidas por receptor. (2) **Fagocitose**: vesículas gigantes (micrômetros); **Pinocitose**: pequenas (50-100 nanômetros); **Endocitose-receptor**: pequenas-médias (100-200 nm). (3) **Fagocitose**: não seletiva (eng ole tudo); **Pinocitose**: não seletiva (bebe tudo); **Endocitose-receptor**: alta seletividade (só o ligante do receptor). (4) **Fagocitose**: macrófagos, neutrófilos, células dendríticas (imunidade); **Pinocitose**: praticamente todas as células (contínua); **Endocitose-receptor**: fibroblastos absorvendo colesterol (LDL), neurônios captando neurotrofinas, todas as células renovando receptores.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "endocitose",
+        "fagocitose",
+        "pinocitose",
+        "receptor-mediada"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-09-000-fc03",
+      "pergunta": "Trace o destino de uma vesícula endocítica de LDL do momento em que a vesícula se despende da membrana até o colesterol dentro dela ser entregue à célula. Nomeie as Rab GTPases principais e o papel de cada compartimento.",
+      "resposta": "1) **Vesícula revestida** sai da membrana com Rab4 — endereça para reciclagem rápida de receptores. 2) **Desrevestimento**: clatrina removida; Rab5 ativada. 3) **Endossomo inicial** (Rab5+): primeira estação. Aqui começa a acidificação. Receptores de LDL podem ser reciclados de volta à membrana (Rab4/Rab11). 4) **Endossomo tardio** (Rab7+): ambiente mais ácido. Ligantes separados de receptores. 5) **Lisossomo**: a vesícula ácida contendo LDL funde com lisossomo. Enzimas lisossômicas hidrolisam LDL em colesterol livre + resíduo proteico. 6) **Colesterol** é absorvido pela membrana do lisossomo e transportado para o retículo endoplasmático (Niemann-Pick C1 faz isso). Colesterol livre agora alimenta a célula: para síntese de membrana, esteroides, mielina. A simetria é notável: Rab5→Rab7 é a progressão através da via endocítica; mudanças de pH marcam cada passo.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "endocitose",
+        "ldl",
+        "rab-gtpase",
+        "endossomo",
+        "colesterol"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-09-000-fc04",
+      "pergunta": "Se um neurônio perdesse função de SNARE (como na toxina botulínica), qual seria o passo específico da exocitose regulada que falharia, e qual seria o efeito imediato no neurônio e no músculo?",
+      "resposta": "**Passo que falha**: a fusão final de membrana entre a vesícula de neurotransmissor e a membrana pré-sináptica. SNAREs (v-SNARE na vesícula, t-SNARE na membrana) formam a hélice que puxa as membranas juntas e permite fusão. Sem SNAREs funcionais, essa atração não acontece — as membranas fica longe demais para se fundir. **Efeito imediato no neurônio**: exocitose regulada não dispara mesmo quando Ca2+ entra. Vesículas de neurotransmissor se acumulam no terminal pré-sináptico sem conseguir liberar seu cargo. **Efeito no músculo**: sem neurotransmissor na fenda sináptica, receptores nicotínicos no músculo não são ativados. Potencial de placa motora não atinge limiar. Musculatura não se contrai. Resultado: paralisia flácida — característica do botulismo. É por isso que toxina botulínica causa paralisia sem afetar condução do potencial de ação (o nervo ainda 'fala', mas a sinapse está muda).",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "exocitose",
+        "snare",
+        "botulismo",
+        "sinapse",
+        "paralisia"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-09-000-fc05",
+      "pergunta": "A hipercolesterolemia familiar pode ser causada por duas mutações muito diferentes: (1) receptor LDL quebrado, ou (2) proteína adaptadora da clatrina (AP2) quebrada. Por que ambas causam o mesmo fenótipo — colesterol circulante alto?",
+      "resposta": "Ambas quebram a **primeira etapa da endocitose mediada por receptor**: o reconhecimento e recrutamento do cargo. (1) Receptor quebrado: célula não reconhece LDL, mesmo que haja clatrina perfeita para engolir. É como tentar pedir um táxi quando o taxista não entende seu idioma. (2) AP2 quebrada: célula reconhece LDL via receptor funcional, mas não consegue arrastá-lo para a fossa de clatrina — a máquina que puxa não funciona. Resultado: LDL fica do lado de fora mesmo que tudo mais funcione. Ambas têm o mesmo efeito fenotípico: LDL não entra na célula → colesterol circula descontrolado → risco de aterosclerose precoce. É um exemplo de como caminhos moleculares diferentes podem convergir no mesmo sintoma clínico.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "hipercolesterolemia-familiar",
+        "receptor-ldl",
+        "endocitose",
+        "genetica"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-09-000-fc06",
+      "pergunta": "Por que exocitose regulada usa cálcio como sinal, enquanto a maioria dos outros processos celulares usa ATP ou fosforilação por proteína quinase?",
+      "resposta": "Porque cálcio oferece **velocidade incomparável**: a ligação de Ca2+ a proteínas como calmodulina ou sinaptotagmina é instantânea (milissegundos), enquanto fosforilação requer recrutamento de quinase, que é mais lenta. Na sinapse, se levasse 100 milissegundos para liberar neurotransmissor, o reflexo seria perdido — animais lentos morrem em predação. O cérebro evoluiu para usar cálcio como sensor rápido: quando chega um potencial de ação, cálcio entra (rápido), ligase a sinaptotagmina (rápido), vesículas fundem (rápido). Tudo em <1 milissegundo. A fosforilação é mais flexível (liga/desliga mais facilmente) e é usada em processos que podem esperar: metabólicos, gênicos, de memória. Exocitose regulada é o oposto — precisa ser *rápida*, não flexível. É uma escolha evolutiva de ferramental bioquímico para cada problema.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "exocitose",
+        "calcium",
+        "sinapse",
+        "sinalização"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-09-000-fc07",
+      "pergunta": "Uma célula sofre isquemia (falta de oxigênio e glicose). ATP desaparece. Qual seria a sequência de eventos no tráfego vesicular celular, e qual seria a causa de morte?",
+      "resposta": "**Sequência de eventos:** 1) ATP desaparece → bomba Na+/K+ falha → Na+ interno sobe, K+ interno cai. 2) Citoplasma fica hiperosmolar → água entra → célula incha (edema celular). 3) SNAREs não conseguem manter sua conformação (requer energia) → exocitose regulada falha completamente. 4) Vesículas acumulam — nem conseguem sair, nem conseguem entrar na membrana. Tráfego vesicular trava. 5) Se for neurônio: sinapses são destruídas porque o neurônio não consegue liberar neurotransmissor e também não consegue reciclá-lo via endocitose. 6) Lisossomos não conseguem digerir seu cargo (requer bombas de prótons que usam ATP) → accumula resíduo autofágico. **Causa de morte:** formalmente, o neurônio morre de necrose (inchaço catastrófico, ruptura de membrana). Mas histologicamente, a primeira evidência é perda de sinapses (vacuolização, acúmulo de vesículas pré-sinápticas, degeneração de espinhas dendríticas). É mais uma evidência de que a célula é uma máquina de compartimentos em constante movimento — congela os compartimentos, congela a célula.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "isquemia",
+        "atp",
+        "necrose",
+        "vesicular-trafficking",
+        "sinapse"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-09-000-fc08",
+      "pergunta": "Se você pudesse 'desligar' completamente a pinocitose em uma célula (sem afetar fagocitose ou endocitose-receptor), qual seria o efeito no controle de pH extracelular e por quê?",
+      "resposta": "**Efeito:** o pH extracelular se tornaria mais ácido (acidose extracelular), porque a célula perderia a capacidade de 'beber' prótons e bicarbonatos do ambiente extracelular e neutralizá-los via lisossomos. **Por quê:** pinocitose é **contínua e não seletiva** — a célula traz constantemente amostras do fluido extracelular (incluindo buffers como bicarbonato, proteínas tamponadoras, prótons). Lisossomos acidificam este conteúdo e depois neutralizam via bombas de prótons que enviam H+ de volta para fora. Sem pinocitose, esse ciclo de tamponamento local desaparece. Em tecidos com alta atividade (músculos durante exercício, neurônios durante ativação), prótons acumulam rapidamente do exterior — normalmente a pinocitose os remove antes que causem acidose. Sem ela, acidose externa fica incontrolável. Isso seria especialmente ruim no cérebro e músculo, que dependem de pH extracelular finamente calibrado.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "pinocitose",
+        "ph-buffer",
+        "acidose",
+        "fisiologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-09-000-caso01",
+      "titulo": "Fraqueza muscular progressiva em paciente com antecedente de injeção de toxina botulínica",
+      "apresentacao": "Mulher de 42 anos, submetida a aplicação de toxina botulínica para cosmetologia facial (remoção de rugas) há 8 meses. Inicialmente, resultado cosmético satisfatório. Mas 6 meses após, começou com fraqueza nos músculos do pescoço, depois nos ombros, e agora (em 8 meses) tem ptose (queda de pálpebra) bilateral e dificuldade para mastigar. Refere que começou a notar dificuldade em subir escadas. Força muscular grau 4/5 (diminuída). Eletromiografia (EMG) mostra padrão de 'bloqueio neuromuscular' — potencial de ação normal, mas amplitude de contração muscular muito reduzida. Estudos de imagem (TC, RMN) do pescoço e cérebro normais. Sem febre, sem dificuldade respiratória ainda.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A toxina botulínica é uma endopeptidase que cliva SNARE na membrana pré-sináptica, bloqueando especificamente a exocitose regulada. A injeção foi local (facial), mas em doses que alcançaram circulação e disseminaram para outros sítios neuromusculares."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "**Terminal pré-sináptico** da junção neuromuscular. SNAREs (v-SNARE e t-SNARE) que normalmente formam a hélice de fusão foram clivados. A vesícula de acetilcolina não consegue mais fusiionar com a membrana, mesmo quando Ca2+ entra em resposta ao potencial de ação."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Exocitose regulada falha completamente nos terminais afetados. Vesículas de acetilcolina se acumulam no terminal pré-sináptico sem conseguir liberar seu cargo. A fenda sináptica fica vazia de neurotransmissor — nunca ativa os receptores nicotínicos no lado pós-sináptico."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "**Paralisia flácida local que se tornou progressiva e generalizada.** Começou como paralisia cosmética (músculos da face), mas disseminou para pescoço, ombro, olho. Paciente tem força normal, mas a contração muscular tem amplitude mínima — é como tentar gritar mas a voz não sai. EMG confirma: estímulo nervoso normal, mas resposta muscular baixa."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Se a disseminação continuar, pode alcançar terminais de nervos para músculos respiratórios (diafragma, intercostais) — resultaria em insuficiência respiratória e morte. Felizmente, exocitose de SNARE se recupera gradualmente à medida que a célula sintetiza novo SNARE (leva semanas a meses). A maioria dos pacientes com intoxicação botulínica iatrogênica se recupera espontaneamente em 3-6 meses."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra a importância **crítica e específica** da exocitose regulada na sinapse. Não é apenas um mecanismo — é a única forma de liberar neurotransmissor. Qualquer falha nele (toxina, mutação, falta de ATP) resulta em paralisia. O caso também mostra que exocitose regulada está sob controle fino de moléculas específicas (SNAREs) — atacar uma proteína específica quebra toda a cascata. É aplicação clínica de um conceito de biologia celular pura.",
+      "disciplinas_relacionadas": [
+        "biologia-celular",
+        "fisiologia",
+        "neurologia",
+        "toxicologia"
+      ],
+      "diagnostico_revelado": "Intoxicação botulínica iatrogênica — disseminação sistêmica de toxina botulínica após injeção local cosmética.",
+      "tratamento_resumido": "Suporte sintomático (se necessário, ventilação se atingir músculos respiratórios). Imunoglobulina botulínica intravenosa pode ter algum efeito se dada nos primeiros dias. Recuperação espontânea esperada em 3-6 meses à medida que novo SNARE é sintetizado. Nenhum antídoto específico. Prevenção: respeitar doses e limitações de disseminação ao injetar toxina botulínica."
+    }
+  ],
+  "midia": {
+    "imagens": [
+      {
+        "id": "s1-biocel-09-000-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
+    "videos": [],
+    "audios": []
+  },
+  "horizonte_validade": "estavel",
+  "procedencia": {
+    "gerado_por": "claude-haiku-4.5",
+    "data_geracao": "2026-07-03",
+    "revisado_por": null,
+    "data_revisao": null,
+    "nivel_confianca": "estudo"
+  },
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 6th ed. Garland Science; 2022. Chapter 13 — Membrane Transport of Small Molecules, Chapter 15 — Vesicular Traffic.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Lodish H, Berk A, Kaiser CA, et al. Molecular Cell Biology. 8th ed. W.H. Freeman; 2020. Chapter 17 — Vesicular Trafficking, Chapter 18 — Endocytosis.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Junqueira LC, Carneiro J. Histologia Básica: Texto e Atlas. 13ª ed. Guanabara Koogan; 2017. Capítulo 1 — A Célula.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    },
+    {
+      "tipo": "artigo",
+      "citacao": "McMahon HT, Boucrot E. Molecular mechanism and physiological functions of clathrin-mediated endocytosis. Nature Rev Mol Cell Biol. 2011;12(8):517-533.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
+}

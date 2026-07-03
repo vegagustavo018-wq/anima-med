@@ -1,0 +1,1954 @@
+{
+  "disciplina_id": "ped2",
+  "disciplina_nome": "Pediatria II",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s9-ped2-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "lente_da_disciplina": "problema pediatrico especializado -> mecanismo -> apresentacao clinica -> diagnostico -> conduta, sempre com o filtro do que e ESPECIFICO da crianca (fisiologia propria da faixa etaria, doses por kg, janelas de desenvolvimento, prognostico ao longo do crescimento).",
+    "criterio_de_folha": "No e folha quando sustenta as 8 etapas E >=1 flashcard contrafactual/clinico legitimo. Entidade com fisiopatologia + clinica + diagnostico + conduta de peso proprio vira visao_geral/tema com folhas por lente (fisiopato, quadro, dx, conduta) ou por subtipo.",
+    "profundidade": "campo profundidade = profundidade na arvore (raiz da disciplina = 1).",
+    "nota_curriculo": "Segue o curriculo oficial 9.1 (Cap. 6): Cardiopatias Congenitas, Doencas Respiratorias Cronicas Pediatricas, Endocrinopatias Pediatricas, Oncologia Pediatrica, Hematologia Pediatrica, Reumatologia Pediatrica, Neurologia Pediatrica, Disturbios do Crescimento e Puberdade, Maus-Tratos Infantis, Adolescente. Continuacao de Pediatria I (s8-ped1): pressupoe crescimento/desenvolvimento, aleitamento, imunizacoes, neonatologia e doencas comuns ja cobertos la; aqui foca as ESPECIALIDADES pediatricas. Cada tema aprofundado ao nivel-folha do padrao histologia.",
+    "modulos": {
+      "10": "Neurologia Pediatrica — convulsao febril, epilepsias, cefaleia, paralisia cerebral, TEA, TDAH, atraso/regressao, neurocutaneas",
+      "11": "Maus-Tratos Infantis — tipos, sinais de alerta, sindrome do bebe sacudido, Munchausen por procuracao, notificacao",
+      "12": "Adolescente — consulta HEEADSSS, saude sexual/reprodutiva, saude mental, abuso de substancias, transtornos alimentares",
+      "13": "Emergencias Pediatricas — PCR/RCP, choque, insuficiencia respiratoria, cetoacidose, status epilepticus, sepse, TRIANGULO",
+      "00": "Fundamentos: a especialidade pediatrica; encaminhar vs manejar; doenca cronica na infancia; adesao e familia",
+      "01": "Cardiologia Pediatrica — Cardiopatias Congenitas (transicao circulatoria, acianoticas, cianoticas, IC, sopro, cardiopatia adquirida)",
+      "02": "Pneumologia Pediatrica — Doencas Respiratorias Cronicas (asma cronica, fibrose cistica, DBP, bronquiectasia, SAOS, tuberculose)",
+      "03": "Endocrinologia Pediatrica — Endocrinopatias (DM1, tireoide, suprarrenal/HAC, hipoglicemia, diabetes insipidus, obesidade)",
+      "04": "Disturbios do Crescimento e Puberdade (baixa estatura, alta estatura, puberdade precoce e tardia, ambiguidade genital)",
+      "05": "Nefrologia Pediatrica — ITU, refluxo, sindrome nefrotica, GNDA, SHU, LRA/DRC, enurese, disturbios miccionais",
+      "06": "Hematologia Pediatrica — anemias, ferropriva, hemolíticas/falciforme, talassemia, PTI, hemofilia, pancitopenias",
+      "07": "Oncologia Pediatrica — leucemias, linfomas, tumores do SNC, neuroblastoma, tumor de Wilms, sinais de alerta",
+      "08": "Reumatologia Pediatrica — AIJ, febre reumatica, LES juvenil, vasculites (Kawasaki, PHS), dores de crescimento",
+      "09": "Gastroenterologia e Hepatologia Pediatrica — DRGE, APLV, doenca celiaca, DII, constipacao, hepatites, colestase"
+    }
+  },
+  "blocos": [
+    {
+      "id": "s9-ped2-00-000",
+      "titulo": "Pediatria II — As Especialidades da Criança",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Por que a criança precisa de especialistas próprios e não do especialista do adulto",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia",
+        "etimologia"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s9-ped2-00-001",
+      "titulo": "A Especialidade Pediátrica — Quando o Generalista Encaminha",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "visao_geral",
+      "escopo": "Sinais de alerta que tiram um problema da puericultura e o levam ao especialista",
+      "lentes": [
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-00-002",
+      "titulo": "A Doença Crônica na Infância — Um Paciente que Cresce com a Doença",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "tema",
+      "escopo": "Impacto de doença crônica sobre crescimento, escola, família e transição para adulto",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-00-003",
+      "titulo": "Adesão, Família e Transição de Cuidado do Pediátrico ao Adulto",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "folha",
+      "escopo": "Como sustentar tratamento longo em criança e transferir o cuidado na adolescência",
+      "lentes": [
+        "conduta",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-01-000",
+      "titulo": "Cardiologia Pediátrica — Cardiopatias Congênitas",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Defeitos estruturais do coração formados na embriogênese e sua expressão pós-natal",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-01-001",
+      "titulo": "A Transição Circulatória do Feto ao Recém-Nascido",
+      "no_pai_id": "s9-ped2-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Circulação fetal, shunts, fechamento do canal e forame, e por que cardiopatias se manifestam depois",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_com_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-01-002",
+      "titulo": "Como Classificar uma Cardiopatia Congênita — Cianótica vs Acianótica",
+      "no_pai_id": "s9-ped2-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Lógica do shunt esquerda-direita, direita-esquerda e obstrutivo como eixo de classificação",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-01-003",
+      "titulo": "O Sopro Cardíaco na Infância — Inocente vs Patológico",
+      "no_pai_id": "s9-ped2-01-000",
+      "nivel": "folha",
+      "escopo": "Características que distinguem sopro funcional benigno de sopro que exige investigação",
+      "lentes": [
+        "clinica",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-01-010",
+      "titulo": "Cardiopatias Acianóticas com Hiperfluxo Pulmonar",
+      "no_pai_id": "s9-ped2-01-000",
+      "nivel": "tema",
+      "escopo": "Shunts esquerda-direita que sobrecarregam a circulação pulmonar",
+      "lentes": [
+        "fisiopatologia",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-01-011",
+      "titulo": "Comunicação Interventricular (CIV)",
+      "no_pai_id": "s9-ped2-01-010",
+      "nivel": "folha",
+      "escopo": "Defeito septal ventricular: shunt, sopro holossistólico, IC, evolução e correção",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-012",
+      "titulo": "Comunicação Interatrial (CIA)",
+      "no_pai_id": "s9-ped2-01-010",
+      "nivel": "folha",
+      "escopo": "Defeito septal atrial: desdobramento fixo de B2, sobrecarga direita, fechamento tardio",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-013",
+      "titulo": "Persistência do Canal Arterial (PCA)",
+      "no_pai_id": "s9-ped2-01-010",
+      "nivel": "folha",
+      "escopo": "Canal que não fecha: sopro contínuo em maquinaria, prematuro, indometacina vs cirurgia",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-014",
+      "titulo": "Defeito do Septo Atrioventricular (DSAV)",
+      "no_pai_id": "s9-ped2-01-010",
+      "nivel": "folha",
+      "escopo": "Canal AV total, associação com síndrome de Down, IC precoce e correção cirúrgica",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-020",
+      "titulo": "Cardiopatias Acianóticas Obstrutivas",
+      "no_pai_id": "s9-ped2-01-000",
+      "nivel": "tema",
+      "escopo": "Obstruções ao fluxo sem shunt: sobrecarga de pressão ventricular",
+      "lentes": [
+        "fisiopatologia",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-01-021",
+      "titulo": "Coarctação da Aorta",
+      "no_pai_id": "s9-ped2-01-020",
+      "nivel": "folha",
+      "escopo": "Estreitamento aórtico: diferença de pulsos/PA braço-perna, choque canal-dependente no RN",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-022",
+      "titulo": "Estenose Pulmonar e Estenose Aórtica Congênitas",
+      "no_pai_id": "s9-ped2-01-020",
+      "nivel": "folha",
+      "escopo": "Obstrução das vias de saída ventriculares: sopro ejetivo, valvoplastia por balão",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-030",
+      "titulo": "Cardiopatias Cianóticas",
+      "no_pai_id": "s9-ped2-01-000",
+      "nivel": "tema",
+      "escopo": "Shunt direita-esquerda com dessaturação: mnemônica dos 5 T",
+      "lentes": [
+        "fisiopatologia",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-01-031",
+      "titulo": "Tetralogia de Fallot",
+      "no_pai_id": "s9-ped2-01-030",
+      "nivel": "folha",
+      "escopo": "Quatro defeitos, crises hipoxêmicas, posição de cócoras, coração em bota, correção",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-032",
+      "titulo": "Transposição das Grandes Artérias (TGA)",
+      "no_pai_id": "s9-ped2-01-030",
+      "nivel": "folha",
+      "escopo": "Circulações em paralelo, cianose grave ao nascer, prostaglandina e cirurgia de Jatene",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-033",
+      "titulo": "Atresia Tricúspide e Ventrículo Único",
+      "no_pai_id": "s9-ped2-01-030",
+      "nivel": "folha",
+      "escopo": "Ausência de conexão AV, cianose, paliação estagiada de Fontan",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-034",
+      "titulo": "Truncus Arteriosus e Drenagem Venosa Pulmonar Anômala Total",
+      "no_pai_id": "s9-ped2-01-030",
+      "nivel": "folha",
+      "escopo": "Duas cianóticas com hiperfluxo: tronco único e retorno venoso aberrante",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-035",
+      "titulo": "Síndrome do Coração Esquerdo Hipoplásico",
+      "no_pai_id": "s9-ped2-01-030",
+      "nivel": "folha",
+      "escopo": "Ventrículo esquerdo inviável, dependência do canal, Norwood estagiado",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-01-040",
+      "titulo": "A Cardiopatia Canal-Dependente e o Recém-Nascido em Choque",
+      "no_pai_id": "s9-ped2-01-000",
+      "nivel": "folha",
+      "escopo": "Por que fechar o canal descompensa: teste da oxigenação, prostaglandina E1 de resgate",
+      "lentes": [
+        "fisiopatologia",
+        "conduta",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-01-041",
+      "titulo": "Insuficiência Cardíaca na Criança",
+      "no_pai_id": "s9-ped2-01-000",
+      "nivel": "folha",
+      "escopo": "Sinais próprios do lactente: sudorese às mamadas, taquipneia, hepatomegalia, ganho ponderal falho",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-01-050",
+      "titulo": "Cardiopatias Adquiridas — Miocardite e Endocardite Infecciosa Pediátrica",
+      "no_pai_id": "s9-ped2-01-000",
+      "nivel": "folha",
+      "escopo": "Inflamação miocárdica viral e infecção valvar em criança de risco",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-02-000",
+      "titulo": "Pneumologia Pediátrica — Doenças Respiratórias Crônicas",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Doenças pulmonares persistentes ou recorrentes que ultrapassam o quadro agudo",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-02-001",
+      "titulo": "A Criança que Sibila e Tosse Cronicamente — Abordagem Geral",
+      "no_pai_id": "s9-ped2-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Raciocínio diante de sibilância e tosse persistentes: quando pensar além da asma",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-02-010",
+      "titulo": "Asma na Infância",
+      "no_pai_id": "s9-ped2-02-000",
+      "nivel": "tema",
+      "escopo": "Doença inflamatória crônica das vias aéreas: a doença crônica mais comum da infância",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-02-011",
+      "titulo": "Fisiopatologia da Asma — Inflamação, Hiper-reatividade e Remodelamento",
+      "no_pai_id": "s9-ped2-02-010",
+      "nivel": "folha",
+      "escopo": "Cascata Th2, broncoconstrição, edema e por que se torna crônica",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_com_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-02-012",
+      "titulo": "Diagnóstico e Classificação da Asma na Criança",
+      "no_pai_id": "s9-ped2-02-010",
+      "nivel": "folha",
+      "escopo": "Critérios clínicos, espirometria quando possível, níveis de controle GINA",
+      "lentes": [
+        "diagnostico",
+        "clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-02-013",
+      "titulo": "Tratamento de Manutenção da Asma Pediátrica",
+      "no_pai_id": "s9-ped2-02-010",
+      "nivel": "folha",
+      "escopo": "Corticoide inalatório, controle ambiental, escalonamento por etapas, técnica inalatória",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-02-014",
+      "titulo": "Crise Asmática Aguda na Criança",
+      "no_pai_id": "s9-ped2-02-010",
+      "nivel": "folha",
+      "escopo": "Gravidade, beta-2 e corticoide sistêmico, sinais de falência respiratória",
+      "lentes": [
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-02-020",
+      "titulo": "Fibrose Cística",
+      "no_pai_id": "s9-ped2-02-000",
+      "nivel": "tema",
+      "escopo": "Doença genética do canal CFTR: secreções espessas em pulmão, pâncreas e intestino",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-02-021",
+      "titulo": "CFTR e a Fisiopatologia Multissistêmica da Fibrose Cística",
+      "no_pai_id": "s9-ped2-02-020",
+      "nivel": "folha",
+      "escopo": "Defeito do canal de cloro, secreção desidratada, dano pulmonar e pancreático",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_com_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-02-022",
+      "titulo": "Diagnóstico da Fibrose Cística — Triagem, Teste do Suor e Genética",
+      "no_pai_id": "s9-ped2-02-020",
+      "nivel": "folha",
+      "escopo": "Teste do pezinho (IRT), teste do suor confirmatório, painel de mutações",
+      "lentes": [
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-02-023",
+      "titulo": "Manejo Crônico da Fibrose Cística",
+      "no_pai_id": "s9-ped2-02-020",
+      "nivel": "folha",
+      "escopo": "Fisioterapia, enzimas pancreáticas, nutrição, antibióticos e moduladores CFTR",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-02-030",
+      "titulo": "Displasia Broncopulmonar",
+      "no_pai_id": "s9-ped2-02-000",
+      "nivel": "folha",
+      "escopo": "Doença pulmonar crônica do prematuro por oxigênio e ventilação: sequela da neonatologia",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-02-040",
+      "titulo": "Bronquiectasias e Supuração Pulmonar Crônica na Infância",
+      "no_pai_id": "s9-ped2-02-000",
+      "nivel": "folha",
+      "escopo": "Dilatação brônquica irreversível: tosse produtiva crônica, causas subjacentes",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-02-050",
+      "titulo": "Apneia Obstrutiva do Sono na Criança",
+      "no_pai_id": "s9-ped2-02-000",
+      "nivel": "folha",
+      "escopo": "Hipertrofia adenoamigdaliana, ronco, impacto cognitivo e cardiovascular, polissonografia",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-02-060",
+      "titulo": "Tuberculose Pulmonar na Infância",
+      "no_pai_id": "s9-ped2-02-000",
+      "nivel": "folha",
+      "escopo": "Particularidades da TB pediátrica: paucibacilar, contágio adulto, escore, PPD/IGRA",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-03-000",
+      "titulo": "Endocrinologia Pediátrica — Endocrinopatias",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Distúrbios hormonais que afetam metabolismo, crescimento e maturação na criança",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-03-010",
+      "titulo": "Diabetes Mellitus Tipo 1",
+      "no_pai_id": "s9-ped2-03-000",
+      "nivel": "tema",
+      "escopo": "Destruição autoimune das células beta: a endocrinopatia crônica clássica da infância",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-03-011",
+      "titulo": "Fisiopatologia e Apresentação do DM1 na Criança",
+      "no_pai_id": "s9-ped2-03-010",
+      "nivel": "folha",
+      "escopo": "Autoimunidade, poliúria/polidipsia/emagrecimento, cetoacidose como estreia frequente",
+      "lentes": [
+        "fisiopatologia",
+        "clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-03-012",
+      "titulo": "Manejo Crônico do DM1 — Insulinoterapia e Automonitoramento",
+      "no_pai_id": "s9-ped2-03-010",
+      "nivel": "folha",
+      "escopo": "Esquema basal-bolus, contagem de carboidratos, metas, hipoglicemia, escola",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-03-020",
+      "titulo": "Cetoacidose Diabética na Criança",
+      "no_pai_id": "s9-ped2-03-000",
+      "nivel": "folha",
+      "escopo": "Emergência metabólica: hidratação cuidadosa, insulina, risco de edema cerebral",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-03-030",
+      "titulo": "Doenças da Tireoide na Infância",
+      "no_pai_id": "s9-ped2-03-000",
+      "nivel": "tema",
+      "escopo": "Hipo e hipertireoidismo congênito e adquirido e seu impacto no desenvolvimento",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-03-031",
+      "titulo": "Hipotireoidismo Congênito",
+      "no_pai_id": "s9-ped2-03-030",
+      "nivel": "folha",
+      "escopo": "Causa evitável de deficiência intelectual, triagem neonatal, levotiroxina precoce",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-03-032",
+      "titulo": "Tireoidite de Hashimoto e Hipertireoidismo (Graves) na Criança",
+      "no_pai_id": "s9-ped2-03-030",
+      "nivel": "folha",
+      "escopo": "Autoimunidade tireoidiana adquirida: bócio, disfunção, tratamento",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-03-040",
+      "titulo": "Hiperplasia Adrenal Congênita",
+      "no_pai_id": "s9-ped2-03-000",
+      "nivel": "folha",
+      "escopo": "Deficiência de 21-hidroxilase: virilização, crise perdedora de sal, ambiguidade genital",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-03-050",
+      "titulo": "Hipoglicemia na Infância",
+      "no_pai_id": "s9-ped2-03-000",
+      "nivel": "folha",
+      "escopo": "Causas por faixa etária, hiperinsulinismo, cetóticas, abordagem da emergência",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-03-060",
+      "titulo": "Diabetes Insipidus e Distúrbios da Água na Criança",
+      "no_pai_id": "s9-ped2-03-000",
+      "nivel": "folha",
+      "escopo": "Poliúria por falta ou resistência ao ADH: central vs nefrogênico, prova de restrição",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-03-070",
+      "titulo": "Obesidade Infantil e Síndrome Metabólica",
+      "no_pai_id": "s9-ped2-03-000",
+      "nivel": "folha",
+      "escopo": "Adiposidade patológica, resistência insulínica, comorbidades e abordagem familiar",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-03-080",
+      "titulo": "Raquitismo e Distúrbios do Metabolismo Ósseo na Criança",
+      "no_pai_id": "s9-ped2-03-000",
+      "nivel": "folha",
+      "escopo": "Deficiência de vitamina D/fosfato: deformidades ósseas, tipos, prevenção e tratamento",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-04-000",
+      "titulo": "Distúrbios do Crescimento e da Puberdade",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Desvios do crescimento estatural e do timing puberal e sua investigação",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "diagnostico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-04-001",
+      "titulo": "O Eixo do Crescimento — GH, IGF-1 e a Placa de Crescimento",
+      "no_pai_id": "s9-ped2-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Como hormônios, nutrição e cartilagem epifisária determinam a altura final",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_com_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-04-010",
+      "titulo": "Baixa Estatura",
+      "no_pai_id": "s9-ped2-04-000",
+      "nivel": "tema",
+      "escopo": "Criança abaixo do esperado: distinguir variantes normais de patologia",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-04-011",
+      "titulo": "Baixa Estatura Variante do Normal — Familiar e Constitucional",
+      "no_pai_id": "s9-ped2-04-010",
+      "nivel": "folha",
+      "escopo": "Baixa familiar e atraso constitucional: idade óssea, alvo genético, prognóstico",
+      "lentes": [
+        "diagnostico",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-04-012",
+      "titulo": "Baixa Estatura Patológica e Deficiência de GH",
+      "no_pai_id": "s9-ped2-04-010",
+      "nivel": "folha",
+      "escopo": "Causas endócrinas, sindrômicas e sistêmicas, investigação e reposição de GH",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-04-020",
+      "titulo": "Alta Estatura e Crescimento Excessivo",
+      "no_pai_id": "s9-ped2-04-000",
+      "nivel": "folha",
+      "escopo": "Alta familiar, síndromes de crescimento excessivo e gigantismo: quando investigar",
+      "lentes": [
+        "diagnostico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-04-030",
+      "titulo": "Puberdade Normal e Estadiamento de Tanner",
+      "no_pai_id": "s9-ped2-04-000",
+      "nivel": "folha",
+      "escopo": "Sequência e cronologia puberal como referência para definir precoce e tardia",
+      "lentes": [
+        "fisiopatologia",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-04-040",
+      "titulo": "Puberdade Precoce",
+      "no_pai_id": "s9-ped2-04-000",
+      "nivel": "tema",
+      "escopo": "Caracteres sexuais antes da idade esperada: central vs periférica",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-04-041",
+      "titulo": "Puberdade Precoce Central (Dependente de GnRH)",
+      "no_pai_id": "s9-ped2-04-040",
+      "nivel": "folha",
+      "escopo": "Ativação precoce do eixo, causas, teste de GnRH, análogos que freiam o eixo",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-04-042",
+      "titulo": "Puberdade Precoce Periférica e Variantes Benignas",
+      "no_pai_id": "s9-ped2-04-040",
+      "nivel": "folha",
+      "escopo": "Fontes independentes de gonadotrofina; telarca e pubarca isoladas benignas",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-04-050",
+      "titulo": "Puberdade Tardia e Hipogonadismo",
+      "no_pai_id": "s9-ped2-04-000",
+      "nivel": "folha",
+      "escopo": "Ausência de puberdade na idade esperada: atraso constitucional vs hipogonadismo",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-04-060",
+      "titulo": "Distúrbios da Diferenciação Sexual e Ambiguidade Genital",
+      "no_pai_id": "s9-ped2-04-000",
+      "nivel": "folha",
+      "escopo": "Genitália atípica no RN como urgência diagnóstica e social, abordagem multidisciplinar",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-05-000",
+      "titulo": "Nefrologia e Urologia Pediátrica",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Doenças do rim e do trato urinário próprias da criança",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-05-010",
+      "titulo": "Infecção do Trato Urinário na Criança",
+      "no_pai_id": "s9-ped2-05-000",
+      "nivel": "tema",
+      "escopo": "ITU pediátrica: apresentação inespecífica no lactente, coleta, tratamento, investigação",
+      "lentes": [
+        "clinica",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-05-011",
+      "titulo": "Diagnóstico e Tratamento da ITU Pediátrica",
+      "no_pai_id": "s9-ped2-05-010",
+      "nivel": "folha",
+      "escopo": "Métodos de coleta, urocultura, antibiótico empírico, quando internar",
+      "lentes": [
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-05-012",
+      "titulo": "Refluxo Vesicoureteral e Investigação Pós-ITU",
+      "no_pai_id": "s9-ped2-05-010",
+      "nivel": "folha",
+      "escopo": "USG, uretrocistografia, DMSA, graduação do refluxo e cicatriz renal",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-05-020",
+      "titulo": "Síndrome Nefrótica na Infância",
+      "no_pai_id": "s9-ped2-05-000",
+      "nivel": "tema",
+      "escopo": "Proteinúria maciça, edema, hipoalbuminemia: lesão mínima como causa dominante",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-05-021",
+      "titulo": "Doença de Lesão Mínima e Corticoterapia",
+      "no_pai_id": "s9-ped2-05-020",
+      "nivel": "folha",
+      "escopo": "Fisiopatologia podocitária, resposta a corticoide, recaídas e complicações",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-05-030",
+      "titulo": "Glomerulonefrite Difusa Aguda Pós-Estreptocócica",
+      "no_pai_id": "s9-ped2-05-000",
+      "nivel": "folha",
+      "escopo": "Síndrome nefrítica pós-infecção: hematúria, hipertensão, edema, complemento baixo",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-05-040",
+      "titulo": "Síndrome Hemolítico-Urêmica",
+      "no_pai_id": "s9-ped2-05-000",
+      "nivel": "folha",
+      "escopo": "Anemia hemolítica + plaquetopenia + LRA pós-diarreia por E. coli produtora de toxina",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-05-050",
+      "titulo": "Lesão Renal Aguda e Doença Renal Crônica na Criança",
+      "no_pai_id": "s9-ped2-05-000",
+      "nivel": "folha",
+      "escopo": "Causas por idade, impacto no crescimento, indicações de diálise e transplante",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-05-060",
+      "titulo": "Enurese e Distúrbios Miccionais Funcionais",
+      "no_pai_id": "s9-ped2-05-000",
+      "nivel": "folha",
+      "escopo": "Enurese noturna monossintomática vs bexiga hiperativa: alarme, desmopressina, uroterapia",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-06-000",
+      "titulo": "Hematologia Pediátrica",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Distúrbios das séries vermelha, branca e da hemostasia na criança",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-06-001",
+      "titulo": "A Criança Anêmica — Abordagem por Índices e Idade",
+      "no_pai_id": "s9-ped2-06-000",
+      "nivel": "visao_geral",
+      "escopo": "VCM, reticulócitos e faixa etária como bússola diante da anemia infantil",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-06-010",
+      "titulo": "Anemia Ferropriva na Infância",
+      "no_pai_id": "s9-ped2-06-000",
+      "nivel": "folha",
+      "escopo": "A anemia mais comum: leite de vaca precoce, microcitose, ferro, prevenção",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-06-020",
+      "titulo": "Anemias Hemolíticas Hereditárias",
+      "no_pai_id": "s9-ped2-06-000",
+      "nivel": "tema",
+      "escopo": "Destruição precoce das hemácias por defeito da membrana, enzima ou hemoglobina",
+      "lentes": [
+        "fisiopatologia",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-06-021",
+      "titulo": "Anemia Falciforme e Doença Falciforme",
+      "no_pai_id": "s9-ped2-06-020",
+      "nivel": "folha",
+      "escopo": "HbS, vaso-oclusão, crises, sequestro esplênico, triagem e profilaxias",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-06-022",
+      "titulo": "Talassemias",
+      "no_pai_id": "s9-ped2-06-020",
+      "nivel": "folha",
+      "escopo": "Defeito de síntese das cadeias de globina: microcitose grave, transfusão, quelação",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-06-023",
+      "titulo": "Esferocitose Hereditária e Deficiência de G6PD",
+      "no_pai_id": "s9-ped2-06-020",
+      "nivel": "folha",
+      "escopo": "Defeito de membrana e defeito enzimático: hemólise, gatilhos e diagnóstico",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-06-030",
+      "titulo": "Púrpura Trombocitopênica Imune (PTI) na Infância",
+      "no_pai_id": "s9-ped2-06-000",
+      "nivel": "folha",
+      "escopo": "Plaquetopenia autoimune pós-viral: petéquias, criança bem, conduta expectante",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-06-040",
+      "titulo": "Distúrbios da Coagulação — Hemofilias e Doença de von Willebrand",
+      "no_pai_id": "s9-ped2-06-000",
+      "nivel": "folha",
+      "escopo": "Sangramento por deficiência de fator: hemartrose, reposição, herança",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-06-050",
+      "titulo": "Pancitopenias e Falência Medular na Criança",
+      "no_pai_id": "s9-ped2-06-000",
+      "nivel": "folha",
+      "escopo": "Anemia aplásica e infiltração medular: quando a pancitopenia é sinal de alarme",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-07-000",
+      "titulo": "Oncologia Pediátrica",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Cânceres da infância: diferentes dos do adulto em tipo, biologia e prognóstico",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-07-001",
+      "titulo": "Sinais de Alerta do Câncer na Criança",
+      "no_pai_id": "s9-ped2-07-000",
+      "nivel": "visao_geral",
+      "escopo": "Sintomas que exigem excluir malignidade: dor óssea, massa, pancitopenia, adenomegalia",
+      "lentes": [
+        "raciocinio_clinico",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-07-010",
+      "titulo": "Leucemias Agudas na Infância",
+      "no_pai_id": "s9-ped2-07-000",
+      "nivel": "tema",
+      "escopo": "O câncer pediátrico mais frequente: proliferação de blastos na medula",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-07-011",
+      "titulo": "Leucemia Linfoblástica Aguda (LLA)",
+      "no_pai_id": "s9-ped2-07-010",
+      "nivel": "folha",
+      "escopo": "Pancitopenia, dor óssea, mielograma, boa resposta ao tratamento, prognóstico",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-07-012",
+      "titulo": "Leucemia Mieloide Aguda e Emergências Oncológicas",
+      "no_pai_id": "s9-ped2-07-010",
+      "nivel": "folha",
+      "escopo": "LMA, síndrome de lise tumoral, hiperleucocitose e neutropenia febril",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-07-020",
+      "titulo": "Linfomas na Criança e no Adolescente",
+      "no_pai_id": "s9-ped2-07-000",
+      "nivel": "folha",
+      "escopo": "Hodgkin e não-Hodgkin: adenomegalia, massa mediastinal, sintomas B",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-07-030",
+      "titulo": "Tumores do Sistema Nervoso Central na Infância",
+      "no_pai_id": "s9-ped2-07-000",
+      "nivel": "folha",
+      "escopo": "Tumores sólidos mais comuns: fossa posterior, hipertensão intracraniana, ataxia",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-07-040",
+      "titulo": "Neuroblastoma",
+      "no_pai_id": "s9-ped2-07-000",
+      "nivel": "folha",
+      "escopo": "Tumor da crista neural do lactente: massa abdominal, catecolaminas, comportamento variável",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-07-050",
+      "titulo": "Tumor de Wilms (Nefroblastoma)",
+      "no_pai_id": "s9-ped2-07-000",
+      "nivel": "folha",
+      "escopo": "Massa renal do pré-escolar: massa abdominal indolor, não palpar demais, bom prognóstico",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-07-060",
+      "titulo": "Tumores Ósseos e de Partes Moles — Osteossarcoma, Ewing, Rabdomiossarcoma",
+      "no_pai_id": "s9-ped2-07-000",
+      "nivel": "folha",
+      "escopo": "Dor óssea e massa no adolescente, imagem sugestiva, biópsia, abordagem multimodal",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-07-070",
+      "titulo": "Retinoblastoma",
+      "no_pai_id": "s9-ped2-07-000",
+      "nivel": "folha",
+      "escopo": "Leucocoria no lactente: reflexo branco, gene RB1, urgência de encaminhamento",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-08-000",
+      "titulo": "Reumatologia Pediátrica",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Doenças inflamatórias e autoimunes de articulações, vasos e tecido conjuntivo na criança",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-08-001",
+      "titulo": "A Criança com Dor Articular — Inflamatório vs Mecânico vs Alarme",
+      "no_pai_id": "s9-ped2-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Diferenciar artralgia benigna, artrite e sinais de infecção ou malignidade",
+      "lentes": [
+        "raciocinio_clinico",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-08-010",
+      "titulo": "Artrite Idiopática Juvenil",
+      "no_pai_id": "s9-ped2-08-000",
+      "nivel": "tema",
+      "escopo": "Artrite crônica antes dos 16 anos: subtipos, uveíte, tratamento por gravidade",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-08-011",
+      "titulo": "Subtipos e Diagnóstico da AIJ",
+      "no_pai_id": "s9-ped2-08-010",
+      "nivel": "folha",
+      "escopo": "Oligoarticular, poliarticular, sistêmica (Still): critérios, uveíte, prognóstico",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-08-012",
+      "titulo": "Tratamento da AIJ",
+      "no_pai_id": "s9-ped2-08-010",
+      "nivel": "folha",
+      "escopo": "AINE, metotrexato, biológicos, rastreio oftalmológico, reabilitação",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-08-020",
+      "titulo": "Febre Reumática",
+      "no_pai_id": "s9-ped2-08-000",
+      "nivel": "tema",
+      "escopo": "Sequela imune da faringite estreptocócica: critérios de Jones, cardite, prevenção",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-08-021",
+      "titulo": "Fisiopatologia e Critérios de Jones da Febre Reumática",
+      "no_pai_id": "s9-ped2-08-020",
+      "nivel": "folha",
+      "escopo": "Mimetismo molecular, cardite, coreia, artrite migratória, critérios diagnósticos",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-08-022",
+      "titulo": "Tratamento e Profilaxia Secundária da Febre Reumática",
+      "no_pai_id": "s9-ped2-08-020",
+      "nivel": "folha",
+      "escopo": "Erradicação, anti-inflamatório, penicilina benzatina de longa duração",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-08-030",
+      "titulo": "Doença de Kawasaki",
+      "no_pai_id": "s9-ped2-08-000",
+      "nivel": "folha",
+      "escopo": "Vasculite febril do lactente: critérios, aneurisma coronariano, imunoglobulina e AAS",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-08-040",
+      "titulo": "Púrpura de Henoch-Schönlein (Vasculite por IgA)",
+      "no_pai_id": "s9-ped2-08-000",
+      "nivel": "folha",
+      "escopo": "Púrpura palpável, artralgia, dor abdominal, nefrite: a vasculite mais comum da infância",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-08-050",
+      "titulo": "Lúpus Eritematoso Sistêmico Juvenil",
+      "no_pai_id": "s9-ped2-08-000",
+      "nivel": "folha",
+      "escopo": "Autoimunidade multissistêmica mais agressiva na criança: critérios, nefrite lúpica",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-08-060",
+      "titulo": "Dores de Crescimento e Síndromes de Amplificação da Dor",
+      "no_pai_id": "s9-ped2-08-000",
+      "nivel": "folha",
+      "escopo": "Dor noturna benigna dos membros vs dor crônica idiopática: diagnóstico de exclusão",
+      "lentes": [
+        "clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-09-000",
+      "titulo": "Gastroenterologia e Hepatologia Pediátrica",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Doenças digestivas e hepáticas crônicas e recorrentes da criança",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-09-010",
+      "titulo": "Doença do Refluxo Gastroesofágico na Infância",
+      "no_pai_id": "s9-ped2-09-000",
+      "nivel": "folha",
+      "escopo": "Distinguir refluxo fisiológico do lactente da doença: sinais de alarme, medidas, IBP",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-09-020",
+      "titulo": "Alergia à Proteína do Leite de Vaca",
+      "no_pai_id": "s9-ped2-09-000",
+      "nivel": "folha",
+      "escopo": "Reação imune ao leite: manifestações digestivas/cutâneas, dieta de exclusão, teste de provocação",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-09-030",
+      "titulo": "Doença Celíaca",
+      "no_pai_id": "s9-ped2-09-000",
+      "nivel": "folha",
+      "escopo": "Enteropatia autoimune ao glúten: má absorção, sorologia, biópsia, dieta sem glúten",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-09-040",
+      "titulo": "Doença Inflamatória Intestinal na Criança",
+      "no_pai_id": "s9-ped2-09-000",
+      "nivel": "folha",
+      "escopo": "Crohn e retocolite pediátricas: repercussão no crescimento, diagnóstico, terapia",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-09-050",
+      "titulo": "Constipação Crônica Funcional e Encoprese",
+      "no_pai_id": "s9-ped2-09-000",
+      "nivel": "folha",
+      "escopo": "Ciclo de retenção fecal, escape, desimpactação e manutenção; sinais de organicidade",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-09-060",
+      "titulo": "Dor Abdominal Crônica e Recorrente na Infância",
+      "no_pai_id": "s9-ped2-09-000",
+      "nivel": "folha",
+      "escopo": "Distúrbios funcionais (Roma) vs sinais de alarme orgânico; abordagem biopsicossocial",
+      "lentes": [
+        "raciocinio_clinico",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-09-070",
+      "titulo": "Colestase Neonatal e Atresia de Vias Biliares",
+      "no_pai_id": "s9-ped2-09-000",
+      "nivel": "folha",
+      "escopo": "Icterícia colestática do lactente como urgência: acolia, cirurgia de Kasai no tempo certo",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-09-080",
+      "titulo": "Hepatites e Insuficiência Hepática na Criança",
+      "no_pai_id": "s9-ped2-09-000",
+      "nivel": "folha",
+      "escopo": "Hepatites virais, autoimune e metabólicas; reconhecer falência hepática aguda",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-10-000",
+      "titulo": "Neurologia Pediátrica",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Doenças neurológicas e do neurodesenvolvimento próprias da infância",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-10-010",
+      "titulo": "Crise Febril",
+      "no_pai_id": "s9-ped2-10-000",
+      "nivel": "tema",
+      "escopo": "Convulsão associada à febre no lactente: simples vs complexa, prognóstico benigno",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-10-011",
+      "titulo": "Crise Febril Simples vs Complexa e Conduta",
+      "no_pai_id": "s9-ped2-10-010",
+      "nivel": "folha",
+      "escopo": "Critérios de simples, quando investigar/puncionar, orientação e prognóstico à família",
+      "lentes": [
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-10-020",
+      "titulo": "Epilepsias da Infância",
+      "no_pai_id": "s9-ped2-10-000",
+      "nivel": "tema",
+      "escopo": "Crises não provocadas recorrentes: síndromes eletroclínicas por idade",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-10-021",
+      "titulo": "Tipos de Crise e Classificação das Epilepsias",
+      "no_pai_id": "s9-ped2-10-020",
+      "nivel": "folha",
+      "escopo": "Focal vs generalizada, papel do EEG e da neuroimagem, semiologia da crise",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-10-022",
+      "titulo": "Síndromes Epilépticas Pediátricas — Ausência, Rolândica, West",
+      "no_pai_id": "s9-ped2-10-020",
+      "nivel": "folha",
+      "escopo": "Epilepsias-idade específicas: ausência, benigna rolândica e espasmos infantis",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-10-023",
+      "titulo": "Tratamento das Epilepsias na Criança",
+      "no_pai_id": "s9-ped2-10-020",
+      "nivel": "folha",
+      "escopo": "Escolha do antiepiléptico por síndrome, monoterapia, refratariedade, dieta cetogênica",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-10-030",
+      "titulo": "Cefaleia na Criança e no Adolescente",
+      "no_pai_id": "s9-ped2-10-000",
+      "nivel": "folha",
+      "escopo": "Enxaqueca e tensional vs sinais de alarme de cefaleia secundária/hipertensão intracraniana",
+      "lentes": [
+        "clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-10-040",
+      "titulo": "Paralisia Cerebral",
+      "no_pai_id": "s9-ped2-10-000",
+      "nivel": "folha",
+      "escopo": "Distúrbio motor por lesão encefálica precoce não progressiva: tipos, comorbidades, reabilitação",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-10-050",
+      "titulo": "Transtorno do Espectro Autista",
+      "no_pai_id": "s9-ped2-10-000",
+      "nivel": "tema",
+      "escopo": "Alteração da comunicação social e comportamento: rastreio precoce e intervenção",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-10-051",
+      "titulo": "Rastreio, Diagnóstico e Intervenção no TEA",
+      "no_pai_id": "s9-ped2-10-050",
+      "nivel": "folha",
+      "escopo": "M-CHAT, sinais precoces, diagnóstico clínico, intervenção comportamental, apoio familiar",
+      "lentes": [
+        "clinica",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s9-ped2-10-060",
+      "titulo": "Transtorno de Déficit de Atenção e Hiperatividade",
+      "no_pai_id": "s9-ped2-10-000",
+      "nivel": "folha",
+      "escopo": "Desatenção/hiperatividade/impulsividade: critérios, comorbidades, manejo comportamental e farmacológico",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-10-070",
+      "titulo": "Atraso e Regressão do Neurodesenvolvimento",
+      "no_pai_id": "s9-ped2-10-000",
+      "nivel": "folha",
+      "escopo": "Distinguir atraso de regressão; quando pensar em erro metabólico ou doença degenerativa",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-10-080",
+      "titulo": "Doença Neuromuscular na Criança",
+      "no_pai_id": "s9-ped2-10-000",
+      "nivel": "folha",
+      "escopo": "Hipotonia/fraqueza progressiva: distrofia de Duchenne, AME, sinais e investigação",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-10-090",
+      "titulo": "Síndromes Neurocutâneas (Facomatoses)",
+      "no_pai_id": "s9-ped2-10-000",
+      "nivel": "folha",
+      "escopo": "Neurofibromatose, esclerose tuberosa, Sturge-Weber: pele e sistema nervoso juntos",
+      "lentes": [
+        "fisiopatologia",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-11-000",
+      "titulo": "Maus-Tratos Infantis",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Reconhecer, manejar e notificar violência contra a criança",
+      "lentes": [
+        "clinica",
+        "raciocinio_clinico",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-11-001",
+      "titulo": "Tipos de Maus-Tratos e o Dever de Suspeitar",
+      "no_pai_id": "s9-ped2-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Físico, sexual, negligência e psicológico; por que a suspeita é responsabilidade médica",
+      "lentes": [
+        "clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-11-010",
+      "titulo": "Sinais de Alerta de Abuso Físico e Lesões Sentinela",
+      "no_pai_id": "s9-ped2-11-000",
+      "nivel": "folha",
+      "escopo": "Lesões incompatíveis com a história/idade, padrões, discrepância anamnese-exame",
+      "lentes": [
+        "clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-11-020",
+      "titulo": "Síndrome do Bebê Sacudido (Trauma Craniano Abusivo)",
+      "no_pai_id": "s9-ped2-11-000",
+      "nivel": "folha",
+      "escopo": "Tríade de hemorragia subdural, retiniana e encefalopatia; mecanismo e gravidade",
+      "lentes": [
+        "fisiopatologia",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-11-030",
+      "titulo": "Abuso Sexual Infantil — Reconhecimento e Manejo Inicial",
+      "no_pai_id": "s9-ped2-11-000",
+      "nivel": "folha",
+      "escopo": "Indicadores, escuta protegida, exame cuidadoso, profilaxias e cadeia de proteção",
+      "lentes": [
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-11-040",
+      "titulo": "Negligência e Síndrome de Munchausen por Procuração",
+      "no_pai_id": "s9-ped2-11-000",
+      "nivel": "folha",
+      "escopo": "Privação de cuidados e doença fabricada pelo cuidador: sinais e risco de dano",
+      "lentes": [
+        "clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-11-050",
+      "titulo": "Notificação Compulsória e Rede de Proteção",
+      "no_pai_id": "s9-ped2-11-000",
+      "nivel": "folha",
+      "escopo": "Conselho tutelar, ECA, dever legal de notificar, documentação e segurança da criança",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-12-000",
+      "titulo": "Medicina do Adolescente",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "A saúde do adolescente e suas necessidades próprias de abordagem e confidencialidade",
+      "lentes": [
+        "clinica",
+        "conduta",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-12-001",
+      "titulo": "A Consulta do Adolescente — Confidencialidade e HEEADSSS",
+      "no_pai_id": "s9-ped2-12-000",
+      "nivel": "visao_geral",
+      "escopo": "Como conduzir a consulta, sigilo e seus limites, avaliação psicossocial estruturada",
+      "lentes": [
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-12-010",
+      "titulo": "Saúde Sexual e Reprodutiva do Adolescente",
+      "no_pai_id": "s9-ped2-12-000",
+      "nivel": "folha",
+      "escopo": "Contracepção, ISTs, gravidez na adolescência e orientação sem julgamento",
+      "lentes": [
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-12-020",
+      "titulo": "Saúde Mental do Adolescente — Depressão, Ansiedade e Risco de Suicídio",
+      "no_pai_id": "s9-ped2-12-000",
+      "nivel": "folha",
+      "escopo": "Rastreio de humor, sinais de risco, avaliação de suicídio e encaminhamento",
+      "lentes": [
+        "clinica",
+        "raciocinio_clinico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-12-030",
+      "titulo": "Uso e Abuso de Substâncias na Adolescência",
+      "no_pai_id": "s9-ped2-12-000",
+      "nivel": "folha",
+      "escopo": "Rastreio (CRAFFT), álcool/tabaco/maconha, entrevista motivacional, redução de danos",
+      "lentes": [
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-12-040",
+      "titulo": "Transtornos Alimentares no Adolescente",
+      "no_pai_id": "s9-ped2-12-000",
+      "nivel": "folha",
+      "escopo": "Anorexia e bulimia: reconhecimento, complicações clínicas, risco de refeeding, equipe",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-13-000",
+      "titulo": "Emergências Pediátricas",
+      "no_pai_id": "s9-ped2-00-000",
+      "nivel": "modulo",
+      "escopo": "Reconhecimento e estabilização da criança gravemente enferma",
+      "lentes": [
+        "raciocinio_clinico",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s9-ped2-13-001",
+      "titulo": "O Triângulo de Avaliação Pediátrica e a Criança Gravemente Enferma",
+      "no_pai_id": "s9-ped2-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Impressão rápida (aparência, respiração, circulação) e abordagem ABCDE pediátrica",
+      "lentes": [
+        "raciocinio_clinico",
+        "clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-13-010",
+      "titulo": "Insuficiência Respiratória Aguda na Criança",
+      "no_pai_id": "s9-ped2-13-000",
+      "nivel": "folha",
+      "escopo": "Do desconforto à falência: sinais, oxigenação, quando ventilar, causas por idade",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-13-020",
+      "titulo": "Choque na Criança",
+      "no_pai_id": "s9-ped2-13-000",
+      "nivel": "folha",
+      "escopo": "Choque compensado vs descompensado, tipos, expansão volêmica, sinais precoces",
+      "lentes": [
+        "fisiopatologia",
+        "clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-13-030",
+      "titulo": "Sepse e Choque Séptico Pediátrico",
+      "no_pai_id": "s9-ped2-13-000",
+      "nivel": "folha",
+      "escopo": "Reconhecimento precoce, primeira hora, antibiótico, ressuscitação e vasoativos",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-13-040",
+      "titulo": "Parada Cardiorrespiratória e Reanimação Pediátrica (PALS)",
+      "no_pai_id": "s9-ped2-13-000",
+      "nivel": "folha",
+      "escopo": "Etiologia respiratória predominante, sequência de RCP, doses e ritmos na criança",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-13-050",
+      "titulo": "Estado de Mal Epiléptico na Criança",
+      "no_pai_id": "s9-ped2-13-000",
+      "nivel": "folha",
+      "escopo": "Crise prolongada como emergência: benzodiazepínico, escalonamento, causas subjacentes",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s9-ped2-13-060",
+      "titulo": "Desidratação Grave e Distúrbios Hidroeletrolíticos na Emergência",
+      "no_pai_id": "s9-ped2-13-000",
+      "nivel": "folha",
+      "escopo": "Estimar perdas, reidratação parenteral, distúrbios do sódio e do potássio na criança",
+      "lentes": [
+        "fisiopatologia",
+        "conduta"
+      ],
+      "profundidade": 3
+    }
+  ]
+}

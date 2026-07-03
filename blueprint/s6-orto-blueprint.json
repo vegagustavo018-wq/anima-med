@@ -1,0 +1,1870 @@
+{
+  "disciplina_id": "orto",
+  "disciplina_nome": "Ortopedia",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s6-orto-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "lente_central": "lesao/mecanismo -> apresentacao clinica -> diagnostico por imagem -> conduta/tratamento. Cada entidade parte do MECANISMO DE LESAO (energia, vetor, faixa etaria vulneravel) antes de nomear fratura/luxacao/doenca. Ortopedia = fisica aplicada ao osso e a articulacao.",
+    "modulos": {
+      "10": "Ortopedia Pediatrica",
+      "11": "Infeccoes Osteoarticulares",
+      "12": "Tumores Osseos e de Partes Moles (abordagem clinica)",
+      "13": "Reumatologia Ortopedica e Doencas Articulares Degenerativas",
+      "00": "Raiz da disciplina + o osso e a articulacao como orgaos que falham por carga",
+      "01": "Principios da Traumatologia e Biologia da Fratura (linguagem, classificacao, consolidacao, complicacoes gerais)",
+      "02": "Fraturas por Regiao Anatomica (membro superior, cintura, membro inferior, pelve, axial)",
+      "03": "Luxacoes e Instabilidades Articulares",
+      "04": "Entorses, Lesoes Ligamentares, Meniscais e Tendineas",
+      "05": "Patologias do Ombro",
+      "06": "Patologias do Quadril (adulto)",
+      "07": "Patologias do Joelho (nao-traumaticas/degenerativas)",
+      "08": "Pe e Tornozelo",
+      "09": "Afecoes da Coluna Vertebral"
+    },
+    "criterio_de_folha": "No e folha quando sustenta as 8 etapas E >=1 flashcard contrafactual/clinico legitimo, com mecanismo+apresentacao+conduta proprios. Cada fratura por padrao/regiao, cada luxacao, cada entidade pediatrica e cada doenca articular vira bloco. Classificacoes (Gustilo, Garden, Salter-Harris, Neer) viram folha quando ESTRUTURAM a conduta, nao lista solta. Se so listaria, vira secao do pai; se empilha mecanismo+clinica+conduta distintos, divide.",
+    "profundidade": "campo profundidade = profundidade na arvore (raiz disciplina = 1).",
+    "expansoes_alem_do_curriculo": "O curriculo lista topicos amplos (Fraturas, Patologias do Quadril etc.). Cada um virou subarvore por regiao E por padrao de lesao. Expandido: fraturas nomeadas classicas (Colles, Smith, Barton, Monteggia, Galeazzi, Bennett, escafoide, colo do femur, diafisaria do femur, planalto tibial, tornozelo por Weber, calcaneo, marcha); classificacoes que guiam conduta (Gustilo-Anderson, Garden, Salter-Harris, Weber, Neer, Frankel/ASIA, Gartland); complicacoes especificas (sindrome compartimental, embolia gordurosa, necrose avascular, pseudartrose, consolidacao viciosa, distrofia simpatico-reflexa); ortopedia pediatrica completa (DDQ, Perthes, epifisiolise, pe torto congenito, escoliose, fraturas fisarias, cotovelo pediatrico, pronacao dolorosa, osteocondroses); infeccoes (osteomielite aguda/cronica, artrite septica, espondilodiscite, pe diabetico osteomielitico); tumores por abordagem clinica (lesao osea benigna vs maligna, osteossarcoma, Ewing, condrossarcoma, metastases, mieloma, tumor de celulas gigantes, cisto osseo); coluna (lombalgia mecanica, hernia de disco, estenose de canal, espondilolistese, cervicalgia, fratura vertebral osteoporotica); reumatologia ortopedica (artrose por articulacao, artrite reumatoide - visao ortopedica, gota, tendinopatias, sindromes compressivas de nervo periferico como tunel do carpo). Adicionados blocos-ponte de exame (leitura de radiografia do trauma, principios de imobilizacao/gesso, principios de osteossintese, ATLS aplicado ao trauma ortopedico) e de correlacao com ciencias basicas (histologia ossea/cartilagem, consolidacao, fisiologia da dor)."
+  },
+  "blocos": [
+    {
+      "id": "s6-orto-00-000",
+      "titulo": "Ortopedia e Traumatologia — Quando o Esqueleto Falha sob Carga",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "O osso e a articulacao como orgaos mecanicos que quebram, luxam ou degeneram",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s6-orto-00-001",
+      "titulo": "O Osso é um Órgão Vivo, Não uma Viga Morta",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "visao_geral",
+      "escopo": "Osso remodela, sente carga, sangra e consolida; ponte com histologia ossea",
+      "lentes": [
+        "correlacao_basica",
+        "mecanismo"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-00-002",
+      "titulo": "A Articulação como Máquina — Cartilagem, Cápsula, Ligamento, Menisco",
+      "no_pai_id": "s6-orto-00-001",
+      "nivel": "folha",
+      "escopo": "Componentes que dao movimento e estabilidade e como cada um falha",
+      "lentes": [
+        "correlacao_basica",
+        "mecanismo"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-00-003",
+      "titulo": "Energia, Vetor e Faixa Etária — As Três Perguntas de Todo Trauma",
+      "no_pai_id": "s6-orto-00-001",
+      "nivel": "folha",
+      "escopo": "Como a fisica do trauma e a idade preveem o padrao de lesao",
+      "lentes": [
+        "mecanismo",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-00-004",
+      "titulo": "Como Ler uma Radiografia do Trauma — Rotina que Não Deixa Passar Fratura",
+      "no_pai_id": "s6-orto-00-001",
+      "nivel": "folha",
+      "escopo": "Duas incidencias, articulacao acima/abaixo, linhas corticais, partes moles",
+      "lentes": [
+        "tecnica_de_exame",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-00-005",
+      "titulo": "O Paciente Traumatizado Antes do Osso — ATLS Aplicado à Ortopedia",
+      "no_pai_id": "s6-orto-00-001",
+      "nivel": "folha",
+      "escopo": "Salvar a vida antes do membro; fraturas que matam (pelve, femur, expostas)",
+      "lentes": [
+        "conduta",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-01-000",
+      "titulo": "Módulo 1 — Princípios da Traumatologia e Biologia da Fratura",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "A linguagem da fratura, como o osso consolida e o que pode dar errado",
+      "lentes": [
+        "mecanismo",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-01-001",
+      "titulo": "O que é uma Fratura — Solução de Continuidade do Osso",
+      "no_pai_id": "s6-orto-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Definicao, quando o osso cede, energia versus resistencia ossea",
+      "lentes": [
+        "mecanismo",
+        "etimologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-01-002",
+      "titulo": "A Linguagem da Fratura — Descrevendo o Traço",
+      "no_pai_id": "s6-orto-01-000",
+      "nivel": "tema",
+      "escopo": "Vocabulario que todo laudo de fratura usa e por que importa a conduta",
+      "lentes": [
+        "diagnostico",
+        "etimologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-01-003",
+      "titulo": "Traço da Fratura — Transverso, Oblíquo, Espiral, Cominutivo",
+      "no_pai_id": "s6-orto-01-002",
+      "nivel": "folha",
+      "escopo": "Como o padrao do traco revela o mecanismo (flexao, torcao, compressao)",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-004",
+      "titulo": "Desvio, Angulação, Encurtamento e Rotação — A Geometria do Fragmento",
+      "no_pai_id": "s6-orto-01-002",
+      "nivel": "folha",
+      "escopo": "Parametros de deslocamento que definem se reduz e como",
+      "lentes": [
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-005",
+      "titulo": "Fratura Completa, Incompleta e os Padrões da Criança",
+      "no_pai_id": "s6-orto-01-002",
+      "nivel": "folha",
+      "escopo": "Galho verde, toro/torus, deformacao plastica; osso infantil e diferente",
+      "lentes": [
+        "mecanismo",
+        "correlacao_basica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-006",
+      "titulo": "Fratura Fechada vs Exposta — A Pele Muda Tudo",
+      "no_pai_id": "s6-orto-01-000",
+      "nivel": "tema",
+      "escopo": "Comunicacao com o meio externo, risco de infeccao e urgencia",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-01-007",
+      "titulo": "Classificação de Gustilo-Anderson — Graduando a Fratura Exposta",
+      "no_pai_id": "s6-orto-01-006",
+      "nivel": "folha",
+      "escopo": "Tamanho da ferida, contaminacao e lesao de partes moles guiam conduta",
+      "lentes": [
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-008",
+      "titulo": "Conduta na Fratura Exposta — Antibiótico, Limpeza e Tempo",
+      "no_pai_id": "s6-orto-01-006",
+      "nivel": "folha",
+      "escopo": "Profilaxia antitetanica, ATB precoce, desbridamento, cobertura, fixacao",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-009",
+      "titulo": "Fraturas Patológicas e por Estresse — Osso que Cede Sem Trauma",
+      "no_pai_id": "s6-orto-01-000",
+      "nivel": "tema",
+      "escopo": "Osso doente (tumor, osteoporose) ou fadiga por sobrecarga repetida",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-01-010",
+      "titulo": "Fratura por Estresse — A Fadiga do Metal Aplicada ao Osso",
+      "no_pai_id": "s6-orto-01-009",
+      "nivel": "folha",
+      "escopo": "Microtrauma repetitivo do atleta/recruta; tibia, metatarso, colo femoral",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-011",
+      "titulo": "Fratura Patológica — Quando o Osso Já Estava Doente",
+      "no_pai_id": "s6-orto-01-009",
+      "nivel": "folha",
+      "escopo": "Metastase, mieloma, osteoporose; trauma minimo com fratura despropocional",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-012",
+      "titulo": "Como o Osso Consolida — As Fases da Reparação",
+      "no_pai_id": "s6-orto-01-000",
+      "nivel": "tema",
+      "escopo": "Hematoma, inflamacao, calo mole, calo duro, remodelamento",
+      "lentes": [
+        "mecanismo",
+        "correlacao_basica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-01-013",
+      "titulo": "Consolidação Primária vs Secundária — Rigidez Muda o Calo",
+      "no_pai_id": "s6-orto-01-012",
+      "nivel": "folha",
+      "escopo": "Compressao absoluta sem calo vs micromovimento com calo; base da osteossintese",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-014",
+      "titulo": "Princípios de Imobilização — Gesso, Tala e Tração",
+      "no_pai_id": "s6-orto-01-000",
+      "nivel": "tema",
+      "escopo": "Como e por que imobilizar; riscos do gesso circular precoce",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-01-015",
+      "titulo": "Princípios da Osteossíntese — Reduzir, Fixar, Reabilitar",
+      "no_pai_id": "s6-orto-01-000",
+      "nivel": "tema",
+      "escopo": "Placa, parafuso, haste intramedular, fixador externo; estabilidade x biologia",
+      "lentes": [
+        "conduta",
+        "mecanismo"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-01-016",
+      "titulo": "Complicações das Fraturas — Visão Geral",
+      "no_pai_id": "s6-orto-01-000",
+      "nivel": "tema",
+      "escopo": "O que pode dar errado antes, durante e depois da consolidacao",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-01-017",
+      "titulo": "Síndrome Compartimental — A Emergência que Não Pode Esperar",
+      "no_pai_id": "s6-orto-01-016",
+      "nivel": "folha",
+      "escopo": "Pressao no compartimento fechado, dor desproporcional, 5 Ps, fasciotomia",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-018",
+      "titulo": "Embolia Gordurosa — Gordura Medular no Pulmão e no Cérebro",
+      "no_pai_id": "s6-orto-01-016",
+      "nivel": "folha",
+      "escopo": "Fraturas de ossos longos, triade respiratoria/neurologica/petequial",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-019",
+      "titulo": "Lesão Vascular e Nervosa Associada à Fratura",
+      "no_pai_id": "s6-orto-01-016",
+      "nivel": "folha",
+      "escopo": "Fraturas que ameacam vasos/nervos por proximidade anatomica",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-020",
+      "titulo": "Retardo de Consolidação e Pseudartrose",
+      "no_pai_id": "s6-orto-01-016",
+      "nivel": "folha",
+      "escopo": "Osso que nao consolida; hipertrofica x atrofica, fatores de risco",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-021",
+      "titulo": "Consolidação Viciosa — Osso que Uniu Torto",
+      "no_pai_id": "s6-orto-01-016",
+      "nivel": "folha",
+      "escopo": "Uniao em ma posicao; deformidade, encurtamento, disfuncao",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-022",
+      "titulo": "Necrose Avascular Pós-Traumática",
+      "no_pai_id": "s6-orto-01-016",
+      "nivel": "folha",
+      "escopo": "Morte ossea por interrupcao vascular; colo femoral, escafoide, talo",
+      "lentes": [
+        "mecanismo",
+        "correlacao_basica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-01-023",
+      "titulo": "Síndrome Dolorosa Regional Complexa (Distrofia Simpático-Reflexa)",
+      "no_pai_id": "s6-orto-01-016",
+      "nivel": "folha",
+      "escopo": "Dor desproporcional, alteracoes autonomicas e troficas pos-lesao",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-000",
+      "titulo": "Módulo 2 — Fraturas por Região Anatômica",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "As fraturas nomeadas classicas, cada uma partindo do seu mecanismo",
+      "lentes": [
+        "mecanismo",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-02-001",
+      "titulo": "Por Que Cada Osso Quebra do Seu Jeito",
+      "no_pai_id": "s6-orto-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Anatomia local + vetor de forca preveem o traco e a conduta",
+      "lentes": [
+        "mecanismo",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-02-010",
+      "titulo": "Fraturas do Membro Superior — Visão Geral",
+      "no_pai_id": "s6-orto-02-000",
+      "nivel": "tema",
+      "escopo": "Da clavicula aos dedos; queda sobre a mao como mecanismo dominante",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-02-011",
+      "titulo": "Fratura de Clavícula",
+      "no_pai_id": "s6-orto-02-010",
+      "nivel": "folha",
+      "escopo": "Terco medio, deformidade em tenda, tratamento conservador x cirurgico",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-012",
+      "titulo": "Fratura do Úmero Proximal",
+      "no_pai_id": "s6-orto-02-010",
+      "nivel": "folha",
+      "escopo": "Idoso osteoporotico, classificacao de Neer, risco de necrose da cabeca",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-013",
+      "titulo": "Fratura da Diáfise do Úmero e o Nervo Radial",
+      "no_pai_id": "s6-orto-02-010",
+      "nivel": "folha",
+      "escopo": "Traco espiral, mao caida por lesao do radial, tala funcional de Sarmiento",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-014",
+      "titulo": "Fratura Supracondiliana do Úmero (adulto)",
+      "no_pai_id": "s6-orto-02-010",
+      "nivel": "folha",
+      "escopo": "Cotovelo complexo, risco vascular/nervoso, distincao do padrao pediatrico",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-015",
+      "titulo": "Fratura da Cabeça do Rádio e do Olécrano",
+      "no_pai_id": "s6-orto-02-010",
+      "nivel": "folha",
+      "escopo": "Trauma do cotovelo, sinal do coxim gorduroso, bloqueio a supinacao",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-016",
+      "titulo": "Fraturas do Antebraço — Monteggia e Galeazzi",
+      "no_pai_id": "s6-orto-02-010",
+      "nivel": "folha",
+      "escopo": "Fratura de um osso + luxacao da articulacao radioulnar do outro extremo",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-017",
+      "titulo": "Fratura do Rádio Distal — Colles, Smith e Barton",
+      "no_pai_id": "s6-orto-02-010",
+      "nivel": "folha",
+      "escopo": "A fratura mais comum; dorso de garfo, mecanismo em extensao vs flexao",
+      "lentes": [
+        "mecanismo",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-018",
+      "titulo": "Fratura do Escafoide — A Armadilha da Tabaqueira Anatômica",
+      "no_pai_id": "s6-orto-02-010",
+      "nivel": "folha",
+      "escopo": "Rx inicial normal, risco de necrose e pseudartrose, imobilizar na duvida",
+      "lentes": [
+        "mecanismo",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-019",
+      "titulo": "Fraturas da Mão — Metacarpo do Boxeador e Bennett",
+      "no_pai_id": "s6-orto-02-010",
+      "nivel": "folha",
+      "escopo": "Fratura do 5o metacarpo por soco; Bennett intra-articular do polegar",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-020",
+      "titulo": "Fraturas do Membro Inferior — Visão Geral",
+      "no_pai_id": "s6-orto-02-000",
+      "nivel": "tema",
+      "escopo": "Do quadril ao pe; alto impacto no jovem, baixo impacto no idoso",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-02-021",
+      "titulo": "Fratura do Colo do Fêmur — A Fratura do Idoso",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Queda da propria altura, membro encurtado e rodado, mortalidade elevada",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-022",
+      "titulo": "Classificação de Garden e a Decisão Fixar vs Prótese",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Desvio prediz necrose; artroplastia no idoso, fixar no jovem",
+      "lentes": [
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-023",
+      "titulo": "Fratura Transtrocantérica (Extracapsular) do Fêmur",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Fora da capsula, boa vascularizacao, fixacao com DHS/haste cefalomedular",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-024",
+      "titulo": "Fratura da Diáfise do Fêmur — Alta Energia e Perda Sanguínea",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Jovem politraumatizado, choque, haste intramedular precoce",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-025",
+      "titulo": "Fraturas do Fêmur Distal e Patela",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Joelho traumatizado, perda do aparelho extensor na patela",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-026",
+      "titulo": "Fratura do Planalto Tibial",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Impacto axial/valgo, afundamento articular, hemartrose com gordura",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-027",
+      "titulo": "Fratura da Diáfise da Tíbia — A Mais Exposta dos Ossos Longos",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Subcutanea na face medial, alto risco de exposicao e sindrome compartimental",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-028",
+      "titulo": "Fraturas do Tornozelo — Classificação de Weber",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Nivel da fratura fibular x sindesmose define estabilidade e cirurgia",
+      "lentes": [
+        "mecanismo",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-029",
+      "titulo": "Fratura do Calcâneo e do Tálus",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Queda de altura, angulo de Bohler, necrose do talo, lesoes associadas",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-030",
+      "titulo": "Fratura por Marcha (Jones) e do Antepé",
+      "no_pai_id": "s6-orto-02-020",
+      "nivel": "folha",
+      "escopo": "Metatarsos por estresse e a fratura da base do 5o com ma consolidacao",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-040",
+      "titulo": "Fraturas da Pelve e do Acetábulo",
+      "no_pai_id": "s6-orto-02-000",
+      "nivel": "tema",
+      "escopo": "Anel pelvico, hemorragia retroperitoneal, alta energia que ameaca a vida",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-02-041",
+      "titulo": "Fratura do Anel Pélvico — Estabilidade e Hemorragia",
+      "no_pai_id": "s6-orto-02-040",
+      "nivel": "folha",
+      "escopo": "Livro aberto, compressao lateral/vertical, cinta pelvica no ATLS",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-042",
+      "titulo": "Fratura do Acetábulo",
+      "no_pai_id": "s6-orto-02-040",
+      "nivel": "folha",
+      "escopo": "Impacto pela cabeca femoral, colunas anterior/posterior, artrose futura",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-050",
+      "titulo": "Fraturas da Coluna Vertebral — Visão Geral Traumática",
+      "no_pai_id": "s6-orto-02-000",
+      "nivel": "tema",
+      "escopo": "Estabilidade, teoria das colunas, risco medular; ver modulo coluna",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-02-051",
+      "titulo": "Fratura Vertebral por Compressão e por Explosão (Burst)",
+      "no_pai_id": "s6-orto-02-050",
+      "nivel": "folha",
+      "escopo": "Carga axial, cunha estavel vs burst com retropulsao e risco neurologico",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-02-052",
+      "titulo": "Fratura Vertebral Osteoporótica por Fragilidade",
+      "no_pai_id": "s6-orto-02-050",
+      "nivel": "folha",
+      "escopo": "Idoso, cunha dorsal, dor aguda, vertebroplastia x conservador",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-03-000",
+      "titulo": "Módulo 3 — Luxações e Instabilidades Articulares",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "Perda de congruencia articular; reduzir cedo, avaliar nervo/vaso",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-03-001",
+      "titulo": "O que é uma Luxação — Quando as Superfícies Perdem o Contato",
+      "no_pai_id": "s6-orto-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Luxacao vs subluxacao, urgencia da reducao, lesao capsuloligamentar",
+      "lentes": [
+        "mecanismo",
+        "etimologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-03-002",
+      "titulo": "Luxação do Ombro (Glenoumeral) — Anterior e Posterior",
+      "no_pai_id": "s6-orto-03-000",
+      "nivel": "folha",
+      "escopo": "A luxacao mais comum, lesao de Bankart/Hill-Sachs, nervo axilar",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-03-003",
+      "titulo": "Luxação Acromioclavicular",
+      "no_pai_id": "s6-orto-03-000",
+      "nivel": "folha",
+      "escopo": "Queda sobre o ombro, sinal da tecla, classificacao de Rockwood",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-03-004",
+      "titulo": "Luxação do Cotovelo",
+      "no_pai_id": "s6-orto-03-000",
+      "nivel": "folha",
+      "escopo": "Posterior, triade terrivel, avaliar arteria braquial e nervos",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-03-005",
+      "titulo": "Luxação do Quadril — Emergência pela Necrose Avascular",
+      "no_pai_id": "s6-orto-03-000",
+      "nivel": "folha",
+      "escopo": "Posterior no painel do carro, membro em rotacao interna, reducao urgente",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-03-006",
+      "titulo": "Luxação da Patela",
+      "no_pai_id": "s6-orto-03-000",
+      "nivel": "folha",
+      "escopo": "Lateral, mulher jovem, apreensao, ruptura do ligamento patelofemoral medial",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-03-007",
+      "titulo": "Luxações do Joelho e do Tornozelo — Alta Energia",
+      "no_pai_id": "s6-orto-03-000",
+      "nivel": "folha",
+      "escopo": "Luxacao do joelho ameaca a arteria poplitea; fratura-luxacao do tornozelo",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-03-008",
+      "titulo": "Pronação Dolorosa (Cotovelo de Babá)",
+      "no_pai_id": "s6-orto-03-000",
+      "nivel": "folha",
+      "escopo": "Subluxacao da cabeca do radio na crianca por tracao; reducao no consultorio",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-03-009",
+      "titulo": "Instabilidade Articular Recidivante",
+      "no_pai_id": "s6-orto-03-000",
+      "nivel": "folha",
+      "escopo": "Luxacoes de repeticao por lesao ligamentar nao cicatrizada; ombro/patela",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-000",
+      "titulo": "Módulo 4 — Entorses, Lesões Ligamentares, Meniscais e Tendíneas",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "Lesao dos estabilizadores moles da articulacao sem quebra ossea",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-04-001",
+      "titulo": "Entorse, Estiramento e Ruptura — Graduando a Lesão de Tecido Mole",
+      "no_pai_id": "s6-orto-04-000",
+      "nivel": "visao_geral",
+      "escopo": "Graus I-III, o que cicatriza sozinho e o que precisa de cirurgia",
+      "lentes": [
+        "mecanismo",
+        "etimologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-002",
+      "titulo": "Entorse do Tornozelo — A Lesão Ortopédica Mais Comum",
+      "no_pai_id": "s6-orto-04-000",
+      "nivel": "folha",
+      "escopo": "Inversao, ligamento talofibular anterior, criterios de Ottawa para Rx",
+      "lentes": [
+        "mecanismo",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-003",
+      "titulo": "Lesão do Ligamento Cruzado Anterior (LCA)",
+      "no_pai_id": "s6-orto-04-000",
+      "nivel": "folha",
+      "escopo": "Rotacao com pe fixo, estalido, hemartrose, teste de Lachman/gaveta",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-004",
+      "titulo": "Lesão do Ligamento Cruzado Posterior (LCP)",
+      "no_pai_id": "s6-orto-04-000",
+      "nivel": "folha",
+      "escopo": "Trauma direto na tibia (painel), gaveta posterior, mais conservador",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-005",
+      "titulo": "Lesões dos Ligamentos Colaterais e a Tríade Infeliz",
+      "no_pai_id": "s6-orto-04-000",
+      "nivel": "folha",
+      "escopo": "Colateral medial por valgo; triade de O'Donoghue (LCA+LCM+menisco)",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-006",
+      "titulo": "Lesão Meniscal",
+      "no_pai_id": "s6-orto-04-000",
+      "nivel": "folha",
+      "escopo": "Torcao, bloqueio articular, McMurray, degenerativa vs traumatica",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-007",
+      "titulo": "Ruptura do Tendão de Aquiles",
+      "no_pai_id": "s6-orto-04-000",
+      "nivel": "folha",
+      "escopo": "Atleta de fim de semana, pedrada na panturrilha, teste de Thompson",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-008",
+      "titulo": "Ruptura do Tendão do Bíceps e do Quadríceps/Patelar",
+      "no_pai_id": "s6-orto-04-000",
+      "nivel": "folha",
+      "escopo": "Sinal de Popeye no braco; perda do aparelho extensor do joelho",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-009",
+      "titulo": "Tendinopatias por Sobrecarga — Visão Geral",
+      "no_pai_id": "s6-orto-04-000",
+      "nivel": "tema",
+      "escopo": "Degeneracao por microtrauma repetitivo, nao inflamacao pura",
+      "lentes": [
+        "mecanismo",
+        "correlacao_basica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-04-010",
+      "titulo": "Epicondilite Lateral e Medial (Cotovelo de Tenista/Golfista)",
+      "no_pai_id": "s6-orto-04-009",
+      "nivel": "folha",
+      "escopo": "Tendinose dos extensores/flexores do punho na origem do epicondilo",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-04-011",
+      "titulo": "Tendinopatia Patelar, do Aquiles e Fascite Plantar",
+      "no_pai_id": "s6-orto-04-009",
+      "nivel": "folha",
+      "escopo": "Joelho do saltador, dor calcanea matinal, sobrecarga por impacto",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-04-012",
+      "titulo": "Tenossinovite de De Quervain e Dedo em Gatilho",
+      "no_pai_id": "s6-orto-04-009",
+      "nivel": "folha",
+      "escopo": "Estenose de bainha tendinea do polegar; travamento em flexao dos dedos",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-05-000",
+      "titulo": "Módulo 5 — Patologias do Ombro",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "A articulacao mais movel e mais instavel; dor por manguito e impacto",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-05-001",
+      "titulo": "O Ombro — Mobilidade Comprada com Instabilidade",
+      "no_pai_id": "s6-orto-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Manguito rotador, labrum e bursa; por que o ombro doi tanto",
+      "lentes": [
+        "correlacao_basica",
+        "mecanismo"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-05-002",
+      "titulo": "Síndrome do Impacto Subacromial",
+      "no_pai_id": "s6-orto-05-000",
+      "nivel": "folha",
+      "escopo": "Compressao do manguito sob o acromio, arco doloroso, testes de Neer/Hawkins",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-05-003",
+      "titulo": "Lesão do Manguito Rotador",
+      "no_pai_id": "s6-orto-05-000",
+      "nivel": "folha",
+      "escopo": "Ruptura degenerativa/traumatica do supraespinal, fraqueza a abducao",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-05-004",
+      "titulo": "Capsulite Adesiva (Ombro Congelado)",
+      "no_pai_id": "s6-orto-05-000",
+      "nivel": "folha",
+      "escopo": "Rigidez progressiva, diabetico, fases de congelamento/descongelamento",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-05-005",
+      "titulo": "Tendinite Calcária e Bursite do Ombro",
+      "no_pai_id": "s6-orto-05-000",
+      "nivel": "folha",
+      "escopo": "Deposito de calcio no manguito; dor aguda intensa, imagem caracteristica",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-06-000",
+      "titulo": "Módulo 6 — Patologias do Quadril (Adulto)",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "Dor e claudicacao no adulto; artrose, necrose, impacto femoroacetabular",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-06-001",
+      "titulo": "O Quadril — Estabilidade que Sustenta o Peso do Corpo",
+      "no_pai_id": "s6-orto-06-000",
+      "nivel": "visao_geral",
+      "escopo": "Congruencia profunda, vascularizacao precaria da cabeca, dor referida",
+      "lentes": [
+        "correlacao_basica",
+        "mecanismo"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-06-002",
+      "titulo": "Coxartrose (Artrose do Quadril)",
+      "no_pai_id": "s6-orto-06-000",
+      "nivel": "folha",
+      "escopo": "Dor inguinal, rigidez, perda de rotacao interna, artroplastia total",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-06-003",
+      "titulo": "Necrose Avascular da Cabeça do Fêmur (Não Traumática)",
+      "no_pai_id": "s6-orto-06-000",
+      "nivel": "folha",
+      "escopo": "Corticoide/alcool, sinal do crescente, colapso da cabeca femoral",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-06-004",
+      "titulo": "Impacto Femoroacetabular (CAM e Pincer)",
+      "no_pai_id": "s6-orto-06-000",
+      "nivel": "folha",
+      "escopo": "Conflito osseo na flexao, dor no jovem esportista, precursor de artrose",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-06-005",
+      "titulo": "Bursite Trocantérica e Dor Lateral do Quadril",
+      "no_pai_id": "s6-orto-06-000",
+      "nivel": "folha",
+      "escopo": "Dor a palpacao do trocanter, tendinopatia do gluteo medio",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-07-000",
+      "titulo": "Módulo 7 — Patologias do Joelho (Não Traumáticas)",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "Dor cronica do joelho por degeneracao, sobrecarga e desalinhamento",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-07-001",
+      "titulo": "O Joelho — A Dobradiça que Suporta e Estabiliza",
+      "no_pai_id": "s6-orto-07-000",
+      "nivel": "visao_geral",
+      "escopo": "Alinhamento, cartilagem, aparelho extensor; fontes comuns de dor",
+      "lentes": [
+        "correlacao_basica",
+        "mecanismo"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-07-002",
+      "titulo": "Gonartrose (Artrose do Joelho)",
+      "no_pai_id": "s6-orto-07-000",
+      "nivel": "folha",
+      "escopo": "Dor mecanica, crepitacao, varo/valgo, do conservador a artroplastia",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-07-003",
+      "titulo": "Síndrome Femoropatelar (Dor Anterior do Joelho)",
+      "no_pai_id": "s6-orto-07-000",
+      "nivel": "folha",
+      "escopo": "Mau rastreamento da patela, dor ao subir escada, sinal do cinema",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-07-004",
+      "titulo": "Cisto de Baker e Bursites do Joelho",
+      "no_pai_id": "s6-orto-07-000",
+      "nivel": "folha",
+      "escopo": "Cisto poplite, bursite pre-patelar (joelho da empregada) e anserina",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-08-000",
+      "titulo": "Módulo 8 — Pé e Tornozelo",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "Deformidades e dores do apoio; hallux, fascia, neuroma, pe diabetico",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-08-001",
+      "titulo": "O Pé — Alavanca, Amortecedor e Sensor do Solo",
+      "no_pai_id": "s6-orto-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Arcos, apoio tripode e como o desalinhamento gera doenca",
+      "lentes": [
+        "correlacao_basica",
+        "mecanismo"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-08-002",
+      "titulo": "Hálux Valgo (Joanete)",
+      "no_pai_id": "s6-orto-08-000",
+      "nivel": "folha",
+      "escopo": "Desvio do 1o dedo, calcado, dor na bursa, correcao cirurgica",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-08-003",
+      "titulo": "Fascite Plantar e Esporão do Calcâneo",
+      "no_pai_id": "s6-orto-08-000",
+      "nivel": "folha",
+      "escopo": "Dor plantar nos primeiros passos, sobrecarga da fascia, tratamento conservador",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-08-004",
+      "titulo": "Neuroma de Morton e Metatarsalgia",
+      "no_pai_id": "s6-orto-08-000",
+      "nivel": "folha",
+      "escopo": "Dor em queimacao entre os dedos, sinal de Mulder, calcado estreito",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-08-005",
+      "titulo": "Pé Diabético — Neuropatia, Isquemia e Osteomielite",
+      "no_pai_id": "s6-orto-08-000",
+      "nivel": "folha",
+      "escopo": "Ulcera neuropatica, Charcot, quando pensar em infeccao ossea",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-09-000",
+      "titulo": "Módulo 9 — Afecções da Coluna Vertebral",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "Dor axial e radicular; do mecanico ao red flag que exige investigacao",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-09-001",
+      "titulo": "A Coluna — Sustentar, Mover e Proteger a Medula",
+      "no_pai_id": "s6-orto-09-000",
+      "nivel": "visao_geral",
+      "escopo": "Disco, faceta, canal e raiz; anatomia que explica cada sindrome",
+      "lentes": [
+        "correlacao_basica",
+        "mecanismo"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-09-002",
+      "titulo": "Lombalgia Mecânica e os Sinais de Alarme (Red Flags)",
+      "no_pai_id": "s6-orto-09-000",
+      "nivel": "folha",
+      "escopo": "A dor mais comum; quando é benigna e quando esconde algo grave",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-09-003",
+      "titulo": "Hérnia de Disco Lombar e Ciática",
+      "no_pai_id": "s6-orto-09-000",
+      "nivel": "folha",
+      "escopo": "Compressao radicular, Lasegue, deficit por raiz, historia natural favoravel",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-09-004",
+      "titulo": "Síndrome da Cauda Equina — A Emergência da Coluna",
+      "no_pai_id": "s6-orto-09-000",
+      "nivel": "folha",
+      "escopo": "Anestesia em sela, retencao urinaria, cirurgia de urgencia",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-09-005",
+      "titulo": "Estenose do Canal Lombar e Claudicação Neurogênica",
+      "no_pai_id": "s6-orto-09-000",
+      "nivel": "folha",
+      "escopo": "Idoso, dor ao andar que alivia sentado/inclinado, sinal do carrinho",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-09-006",
+      "titulo": "Espondilólise e Espondilolistese",
+      "no_pai_id": "s6-orto-09-000",
+      "nivel": "folha",
+      "escopo": "Defeito da pars, escorregamento vertebral, dor no adolescente atleta",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-09-007",
+      "titulo": "Cervicalgia e Cervicobraquialgia (Hérnia Cervical)",
+      "no_pai_id": "s6-orto-09-000",
+      "nivel": "folha",
+      "escopo": "Dor cervical, radiculopatia braquial, mielopatia como red flag",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-09-008",
+      "titulo": "Escoliose do Adulto e Deformidades da Coluna",
+      "no_pai_id": "s6-orto-09-000",
+      "nivel": "folha",
+      "escopo": "Curva coronal degenerativa, cifose; distincao da escoliose do adolescente",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-000",
+      "titulo": "Módulo 10 — Ortopedia Pediátrica",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "O esqueleto em crescimento: fise vulneravel, deformidades e fraturas proprias",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-10-001",
+      "titulo": "Por Que a Criança Não é um Adulto Pequeno — A Fise",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "visao_geral",
+      "escopo": "Placa de crescimento, remodelamento, deformidade progressiva e potencial",
+      "lentes": [
+        "correlacao_basica",
+        "mecanismo"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-002",
+      "titulo": "Displasia do Desenvolvimento do Quadril (DDQ)",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "folha",
+      "escopo": "Recem-nascido, Ortolani/Barlow, USG, suspensorio de Pavlik",
+      "lentes": [
+        "mecanismo",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-003",
+      "titulo": "Doença de Legg-Calvé-Perthes",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "folha",
+      "escopo": "Necrose idiopatica da cabeca femoral 4-8 anos, claudicacao, contencao",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-004",
+      "titulo": "Epifisiólise (Escorregamento da Epífise Femoral Proximal)",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "folha",
+      "escopo": "Adolescente obeso, dor no joelho, rotacao externa, fixacao urgente in situ",
+      "lentes": [
+        "mecanismo",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-005",
+      "titulo": "Pé Torto Congênito (Equinovaro)",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "folha",
+      "escopo": "Deformidade ao nascer, componentes CAVE, metodo de Ponseti",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-006",
+      "titulo": "Escoliose Idiopática do Adolescente",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "folha",
+      "escopo": "Teste de Adams, angulo de Cobb, observar/colete/cirurgia por magnitude",
+      "lentes": [
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-007",
+      "titulo": "Classificação de Salter-Harris — Fraturas da Placa de Crescimento",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "folha",
+      "escopo": "Tipos I-V, risco de dano fisario e deformidade tardia",
+      "lentes": [
+        "mecanismo",
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-008",
+      "titulo": "Fratura Supracondiliana do Úmero na Criança",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "folha",
+      "escopo": "Queda com cotovelo estendido, Gartland, arteria braquial/nervos, urgencia",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-009",
+      "titulo": "Osteocondroses — Osgood-Schlatter e Sever",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "folha",
+      "escopo": "Apofisites de tracao no adolescente ativo; joelho e calcaneo",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-10-010",
+      "titulo": "Deformidades Angulares e Rotacionais Fisiológicas",
+      "no_pai_id": "s6-orto-10-000",
+      "nivel": "folha",
+      "escopo": "Geno varo/valgo, marcha em rotacao, o que é normal e o que investigar",
+      "lentes": [
+        "mecanismo",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-11-000",
+      "titulo": "Módulo 11 — Infecções Osteoarticulares",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "Micro-organismo no osso ou na articulacao; urgencia para salvar funcao",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-11-001",
+      "titulo": "Como o Micro-organismo Chega ao Osso e à Articulação",
+      "no_pai_id": "s6-orto-11-000",
+      "nivel": "visao_geral",
+      "escopo": "Hematogenica, contiguidade, inoculacao direta; ponte com microbiologia",
+      "lentes": [
+        "mecanismo",
+        "correlacao_basica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-11-002",
+      "titulo": "Osteomielite Aguda",
+      "no_pai_id": "s6-orto-11-000",
+      "nivel": "folha",
+      "escopo": "Metafise da crianca, S. aureus, dor/febre, antibiotico precoce",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-11-003",
+      "titulo": "Osteomielite Crônica — Sequestro, Involucro e Fístula",
+      "no_pai_id": "s6-orto-11-000",
+      "nivel": "folha",
+      "escopo": "Osso morto que abriga bacteria, drenagem cronica, cirurgia + ATB prolongado",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-11-004",
+      "titulo": "Artrite Séptica — A Articulação que Não Pode Esperar",
+      "no_pai_id": "s6-orto-11-000",
+      "nivel": "folha",
+      "escopo": "Articulacao quente/dolorosa, artrocentese obrigatoria, drenagem cirurgica",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-11-005",
+      "titulo": "Espondilodiscite e Abscesso Epidural Vertebral",
+      "no_pai_id": "s6-orto-11-000",
+      "nivel": "folha",
+      "escopo": "Dor axial com febre, VHS/PCR altas, risco neurologico, RM precoce",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-12-000",
+      "titulo": "Módulo 12 — Tumores Ósseos e de Partes Moles (Abordagem Clínica)",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "Reconhecer a lesao ossea, separar benigno de maligno, encaminhar certo",
+      "lentes": [
+        "diagnostico",
+        "raciocinio_clinico",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-12-001",
+      "titulo": "A Lesão Óssea — Como o Ortopedista Pensa Diante de uma Imagem",
+      "no_pai_id": "s6-orto-12-000",
+      "nivel": "visao_geral",
+      "escopo": "Idade, localizacao, padrao de destruicao, reacao periostal, matriz",
+      "lentes": [
+        "diagnostico",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-12-002",
+      "titulo": "Benigno vs Maligno — Os Sinais Radiográficos que Alarmam",
+      "no_pai_id": "s6-orto-12-000",
+      "nivel": "folha",
+      "escopo": "Margem, zona de transicao, reacao periostal agressiva, massa de partes moles",
+      "lentes": [
+        "diagnostico",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-12-003",
+      "titulo": "Lesões Ósseas Benignas Comuns",
+      "no_pai_id": "s6-orto-12-000",
+      "nivel": "folha",
+      "escopo": "Osteocondroma, cisto osseo, encondroma, osteoma osteoide, defeito fibroso",
+      "lentes": [
+        "diagnostico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-12-004",
+      "titulo": "Tumor de Células Gigantes — O Limítrofe",
+      "no_pai_id": "s6-orto-12-000",
+      "nivel": "folha",
+      "escopo": "Epifise do jovem adulto, localmente agressivo, imagem em bolha de sabao",
+      "lentes": [
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-12-005",
+      "titulo": "Osteossarcoma",
+      "no_pai_id": "s6-orto-12-000",
+      "nivel": "folha",
+      "escopo": "Adolescente, metafise do joelho, triangulo de Codman, quimio + cirurgia",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-12-006",
+      "titulo": "Sarcoma de Ewing",
+      "no_pai_id": "s6-orto-12-000",
+      "nivel": "folha",
+      "escopo": "Crianca/jovem, diafise, casca de cebola, dor com febre simulando infeccao",
+      "lentes": [
+        "mecanismo",
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-12-007",
+      "titulo": "Condrossarcoma",
+      "no_pai_id": "s6-orto-12-000",
+      "nivel": "folha",
+      "escopo": "Adulto mais velho, matriz condral, radio/quimiorresistente, ressecar",
+      "lentes": [
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-12-008",
+      "titulo": "Metástases Ósseas e Mieloma Múltiplo — O Tumor Ósseo Mais Comum",
+      "no_pai_id": "s6-orto-12-000",
+      "nivel": "folha",
+      "escopo": "Mama/prostata/pulmao/rim/tireoide, lesao litica, fratura patologica",
+      "lentes": [
+        "diagnostico",
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-13-000",
+      "titulo": "Módulo 13 — Reumatologia Ortopédica e Doenças Articulares Degenerativas",
+      "no_pai_id": "s6-orto-00-000",
+      "nivel": "modulo",
+      "escopo": "A interface com a reumatologia: artrose, artrites e compressoes nervosas",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s6-orto-13-001",
+      "titulo": "Dor Articular — Mecânica vs Inflamatória",
+      "no_pai_id": "s6-orto-13-000",
+      "nivel": "visao_geral",
+      "escopo": "O par de perguntas que separa artrose de artrite; rigidez matinal, horario",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-13-002",
+      "titulo": "Osteoartrose — A Doença Articular Degenerativa",
+      "no_pai_id": "s6-orto-13-000",
+      "nivel": "tema",
+      "escopo": "Falencia da cartilagem por sobrecarga/idade; visao geral e principios",
+      "lentes": [
+        "mecanismo",
+        "correlacao_basica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-13-003",
+      "titulo": "Patogênese da Artrose — Da Cartilagem ao Osso Subcondral",
+      "no_pai_id": "s6-orto-13-002",
+      "nivel": "folha",
+      "escopo": "Degradacao da matriz, osteofito, esclerose subcondral, cisto",
+      "lentes": [
+        "mecanismo",
+        "correlacao_basica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-13-004",
+      "titulo": "Radiografia da Artrose — Os Quatro Sinais Clássicos",
+      "no_pai_id": "s6-orto-13-002",
+      "nivel": "folha",
+      "escopo": "Reducao do espaco articular, osteofitos, esclerose, cistos subcondrais",
+      "lentes": [
+        "diagnostico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-13-005",
+      "titulo": "Manejo da Artrose — Do Conservador à Artroplastia",
+      "no_pai_id": "s6-orto-13-002",
+      "nivel": "folha",
+      "escopo": "Perda de peso, exercicio, analgesia, infiltracao, protese quando falha",
+      "lentes": [
+        "conduta"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s6-orto-13-006",
+      "titulo": "Artrite Reumatoide — Visão Ortopédica",
+      "no_pai_id": "s6-orto-13-000",
+      "nivel": "folha",
+      "escopo": "Poliartrite simetrica, deformidades da mao, instabilidade cervical C1-C2",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-13-007",
+      "titulo": "Gota e Artrites por Cristais",
+      "no_pai_id": "s6-orto-13-000",
+      "nivel": "folha",
+      "escopo": "Podagra, cristais de urato, tofo, pseudogota por pirofosfato",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-13-008",
+      "titulo": "Osteoporose e o Risco de Fratura por Fragilidade",
+      "no_pai_id": "s6-orto-13-000",
+      "nivel": "folha",
+      "escopo": "Densitometria, fraturas sentinela, prevencao; o osso que ficou fraco",
+      "lentes": [
+        "mecanismo",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-13-009",
+      "titulo": "Síndrome do Túnel do Carpo e Compressões Nervosas Periféricas",
+      "no_pai_id": "s6-orto-13-000",
+      "nivel": "folha",
+      "escopo": "Mediano no punho, Tinel/Phalen; ulnar no cotovelo, fibular no joelho",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica",
+        "conduta"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s6-orto-13-010",
+      "titulo": "Contratura de Dupuytren",
+      "no_pai_id": "s6-orto-13-000",
+      "nivel": "folha",
+      "escopo": "Espessamento da fascia palmar, contratura em flexao dos dedos",
+      "lentes": [
+        "mecanismo",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    }
+  ]
+}

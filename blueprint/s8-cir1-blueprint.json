@@ -1,0 +1,2175 @@
+{
+  "disciplina_id": "cir1",
+  "disciplina_nome": "Cirurgia I",
+  "gerado_em": "rascunho-mapa",
+  "notas_do_mapa": {
+    "convencao_id": "s8-cir1-{modulo 2 dig}-{sequencial 3 dig}[-{sub 2 dig}]",
+    "modulos": {
+      "10": "Abdome Agudo Perfurativo (ulcera perfurada, perfuracao de viscera oca)",
+      "11": "Abdome Agudo Vascular/Isquemico (isquemia mesenterica)",
+      "12": "Abdome Agudo Hemorragico (hemorragia intraperitoneal e retroperitoneal nao traumatica)",
+      "13": "Hernias da Parede Abdominal",
+      "14": "Doencas Cirurgicas do Esofago",
+      "15": "Doencas Cirurgicas do Estomago e Duodeno",
+      "16": "Doencas Cirurgicas do Intestino Delgado",
+      "17": "Doencas Cirurgicas do Colon, Reto e Anus",
+      "18": "Doencas Cirurgicas do Figado e Vias Biliares",
+      "19": "Doencas Cirurgicas do Pancreas e Baco",
+      "20": "Cirurgia Bariatrica e Metabolica (Principios)",
+      "21": "Trauma — Principios do ATLS e Atendimento Inicial",
+      "22": "Trauma por Sistema (TCE, torax, abdome, vascular, ortopedico, urologico)",
+      "23": "Atendimento ao Queimado",
+      "00": "Fundamentos: raiz + a lente cirúrgica (afeccao cirurgica -> indicacao -> principios de conduta/tecnica -> complicacoes) + o que torna uma doenca 'cirurgica'",
+      "01": "Resposta Metabolica e Endocrina ao Trauma (a reacao sistemica que todo operado sofre)",
+      "02": "Cicatrizacao de Feridas (Visao Cirurgica)",
+      "03": "Pre-Operatorio (avaliacao, risco e preparo do paciente cirurgico)",
+      "04": "Pos-Operatorio (recuperacao, monitorizacao e complicacoes gerais)",
+      "05": "Principios Cirurgicos Gerais (assepsia, hemostasia, tecnica, fios, drenos, vias de acesso)",
+      "06": "Infeccao em Cirurgia (ISC, antibioticoprofilaxia, infeccoes de partes moles, sepse cirurgica)",
+      "07": "Abdome Agudo — Visao Geral e Abordagem Sindromica (as 5 categorias)",
+      "08": "Abdome Agudo Inflamatorio (apendicite, colecistite, pancreatite, diverticulite)",
+      "09": "Abdome Agudo Obstrutivo (adesoes, hernias encarceradas, volvo, tumores, ileo)"
+    },
+    "lente_da_disciplina": "afeccao cirurgica -> indicacao operatoria -> principios de conduta/tecnica -> complicacoes. Cada tema parte do PROBLEMA CIRURGICO (o que ameaca o paciente e por que so a cirurgia resolve), nunca do nome da tecnica. Integra fisiopatologia (S4/S5), anatomia (S1) e microbiologia/farmacologia clinica.",
+    "criterio_de_folha": "No e folha quando sustenta as 8 etapas E >=1 flashcard contrafactual/clinico legitimo. Doenca cirurgica cuja fisiopatologia + apresentacao + diagnostico + conduta tem peso proprio vira visao_geral com folhas por lente. Se nao sustentar as 8 etapas, vira secao do pai (nao entra como bloco).",
+    "profundidade": "campo profundidade = profundidade na arvore (raiz da disciplina = 1).",
+    "nota_curriculo": "Segue o curriculo oficial 8.3 (Cap. 6). Trauma, ATLS, infeccao em cirurgia e queimado sao acrescidos conforme a nota da disciplina (fundamentos + cirurgia geral). Aprofunda cada afeccao ao nivel-folha do padrao histologia.",
+    "temas_expandidos_alem_do_curriculo_literal": "Trauma/ATLS por sistema, Infeccao em cirurgia (ISC, fasciite necrosante, sepse), Queimado, Principios cirurgicos (fios/drenos/hemostasia), Baco cirurgico, e ramificacao por lente (fisiopatologia/clinica/diagnostico/conduta) de cada afeccao — nao explicitos como bullets no curriculo mas exigidos pela lente da disciplina e pela nota."
+  },
+  "blocos": [
+    {
+      "id": "s8-cir1-00-000",
+      "titulo": "Cirurgia I — Quando o Bisturi Passa a Ser a Resposta",
+      "no_pai_id": null,
+      "nivel": "disciplina",
+      "escopo": "Por que certas doencas so se resolvem removendo, reparando ou drenando tecido",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica",
+        "etimologia"
+      ],
+      "profundidade": 1
+    },
+    {
+      "id": "s8-cir1-00-001",
+      "titulo": "A Logica da Doenca Cirurgica — Afeccao, Indicacao, Tecnica, Complicacao",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "visao_geral",
+      "escopo": "A cadeia de raciocinio que estrutura toda a disciplina",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-00-002",
+      "titulo": "O Que Torna uma Doenca 'Cirurgica' — Indicacao Absoluta, Relativa e Eletiva",
+      "no_pai_id": "s8-cir1-00-001",
+      "nivel": "tema",
+      "escopo": "Como decidir que operar e melhor que nao operar",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-00-003",
+      "titulo": "Urgencia, Emergencia e Cirurgia Eletiva — O Tempo Como Variavel",
+      "no_pai_id": "s8-cir1-00-001",
+      "nivel": "tema",
+      "escopo": "Por que o momento da operacao muda risco, tecnica e desfecho",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-00-004",
+      "titulo": "Cirurgia, Bisturi e Cirurgiao — A Etimologia do Trabalho das Maos",
+      "no_pai_id": "s8-cir1-00-001",
+      "nivel": "tema",
+      "escopo": "Origem grega de kheir+ergon e o vocabulario nuclear da cirurgia",
+      "lentes": [
+        "etimologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-01-000",
+      "titulo": "Resposta Metabolica e Endocrina ao Trauma",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "A reacao sistemica organizada que todo agredido/operado desencadeia",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-01-001",
+      "titulo": "Resposta ao Trauma — Visao Geral de uma Reacao de Sobrevivencia",
+      "no_pai_id": "s8-cir1-01-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que o corpo entra em modo de emergencia apos agressao",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-01-002",
+      "titulo": "Fases da Resposta — Ebb (Refluxo) e Flow (Fluxo)",
+      "no_pai_id": "s8-cir1-01-000",
+      "nivel": "folha",
+      "escopo": "As duas fases temporais de Cuthbertson e o que muda em cada uma",
+      "lentes": [
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-01-003",
+      "titulo": "Eixo Neuroendocrino do Estresse — Cortisol, Catecolaminas e ADH",
+      "no_pai_id": "s8-cir1-01-000",
+      "nivel": "folha",
+      "escopo": "Como o SNC e a hipofise-adrenal comandam a resposta ao trauma",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-01-004",
+      "titulo": "Resposta Metabolica — Hiperglicemia, Catabolismo Proteico e Lipolise",
+      "no_pai_id": "s8-cir1-01-000",
+      "nivel": "folha",
+      "escopo": "Por que o paciente cirurgico degrada musculo e sobe glicemia",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-01-005",
+      "titulo": "Resposta Inflamatoria — Citocinas, SIRS e CARS",
+      "no_pai_id": "s8-cir1-01-000",
+      "nivel": "folha",
+      "escopo": "A cascata inflamatoria/anti-inflamatoria e seus extremos perigosos",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-01-006",
+      "titulo": "Modulando a Resposta — Nutricao, Analgesia e Cirurgia Minimamente Invasiva",
+      "no_pai_id": "s8-cir1-01-000",
+      "nivel": "folha",
+      "escopo": "Como reduzir o custo metabolico da agressao cirurgica",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-01-007",
+      "titulo": "Protocolos ERAS — Recuperacao Acelerada Pos-Cirurgica",
+      "no_pai_id": "s8-cir1-01-000",
+      "nivel": "folha",
+      "escopo": "Pacote de medidas que atenua a resposta e acelera a alta",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-02-000",
+      "titulo": "Cicatrizacao de Feridas (Visao Cirurgica)",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Como o corpo repara a solucao de continuidade criada pelo bisturi ou trauma",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-02-001",
+      "titulo": "Cicatrizacao — Visao Geral do Reparo Tecidual",
+      "no_pai_id": "s8-cir1-02-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que toda ferida segue um programa biologico ordenado",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-02-002",
+      "titulo": "Fase Inflamatoria — Hemostasia e Limpeza da Ferida",
+      "no_pai_id": "s8-cir1-02-000",
+      "nivel": "folha",
+      "escopo": "Coagulo, neutrofilos e macrofagos nos primeiros dias",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-02-003",
+      "titulo": "Fase Proliferativa — Fibroblastos, Angiogenese e Tecido de Granulacao",
+      "no_pai_id": "s8-cir1-02-000",
+      "nivel": "folha",
+      "escopo": "Como o tecido novo preenche a lacuna",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-02-004",
+      "titulo": "Fase de Maturacao — Remodelamento do Colageno e Forca Tensil",
+      "no_pai_id": "s8-cir1-02-000",
+      "nivel": "folha",
+      "escopo": "Por que a cicatriz continua mudando por meses",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-02-005",
+      "titulo": "Tipos de Cicatrizacao — Primeira, Segunda e Terceira Intencao",
+      "no_pai_id": "s8-cir1-02-000",
+      "nivel": "folha",
+      "escopo": "Quando aproximar, quando deixar granular, quando fechar depois",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-02-006",
+      "titulo": "Fatores Que Prejudicam a Cicatrizacao — Locais e Sistemicos",
+      "no_pai_id": "s8-cir1-02-000",
+      "nivel": "folha",
+      "escopo": "Isquemia, infeccao, diabetes, corticoide, desnutricao e tabaco",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-02-007",
+      "titulo": "Cicatrizacao Patologica — Queloide, Cicatriz Hipertrofica e Deiscencia",
+      "no_pai_id": "s8-cir1-02-000",
+      "nivel": "folha",
+      "escopo": "Quando o reparo erra por excesso ou por falha mecanica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-03-000",
+      "titulo": "Pre-Operatorio",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Avaliar, estratificar risco e preparar o paciente antes de operar",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico_exames",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-03-001",
+      "titulo": "Avaliacao Pre-Operatoria — Visao Geral",
+      "no_pai_id": "s8-cir1-03-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a operacao comeca dias antes, na consulta",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-03-002",
+      "titulo": "Risco Cirurgico — Classificacao ASA e Estratificacao Cardiaca",
+      "no_pai_id": "s8-cir1-03-000",
+      "nivel": "folha",
+      "escopo": "Como quantificar o risco e decidir quem pode operar",
+      "lentes": [
+        "raciocinio_clinico",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-03-003",
+      "titulo": "Avaliacao de Risco Cardiovascular e Pulmonar Perioperatorio",
+      "no_pai_id": "s8-cir1-03-000",
+      "nivel": "folha",
+      "escopo": "Indices (Lee/RCRI), capacidade funcional e otimizacao",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-03-004",
+      "titulo": "Exames Complementares Pre-Operatorios — Quando Pedir e Quando Nao",
+      "no_pai_id": "s8-cir1-03-000",
+      "nivel": "folha",
+      "escopo": "A logica de exames dirigidos versus rotina indiscriminada",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-03-005",
+      "titulo": "Manejo de Medicacoes no Perioperatorio — Anticoagulantes e Antidiabeticos",
+      "no_pai_id": "s8-cir1-03-000",
+      "nivel": "folha",
+      "escopo": "O que suspender, o que manter e como fazer ponte",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-03-006",
+      "titulo": "Jejum, Preparo de Colon e Tricotomia — Preparo Fisico do Paciente",
+      "no_pai_id": "s8-cir1-03-000",
+      "nivel": "folha",
+      "escopo": "As medidas de preparo e as evidencias que as sustentam ou refutam",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-03-007",
+      "titulo": "Profilaxia de Tromboembolismo Venoso Perioperatorio",
+      "no_pai_id": "s8-cir1-03-000",
+      "nivel": "folha",
+      "escopo": "Estratificacao de risco de TEV e escolha da profilaxia",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-03-008",
+      "titulo": "Consentimento Informado e Checklist de Seguranca Cirurgica",
+      "no_pai_id": "s8-cir1-03-000",
+      "nivel": "folha",
+      "escopo": "A etica e a seguranca antes da incisao (OMS)",
+      "lentes": [
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-04-000",
+      "titulo": "Pos-Operatorio",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Conduzir a recuperacao e reconhecer complicacoes precoces e tardias",
+      "lentes": [
+        "raciocinio_clinico",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-04-001",
+      "titulo": "Pos-Operatorio — Visao Geral do Cuidado Apos a Cirurgia",
+      "no_pai_id": "s8-cir1-04-000",
+      "nivel": "visao_geral",
+      "escopo": "O que monitorar e por que a recuperacao e ativa",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-04-002",
+      "titulo": "Cuidados Pos-Operatorios Imediatos — Dor, Volume e Diurese",
+      "no_pai_id": "s8-cir1-04-000",
+      "nivel": "folha",
+      "escopo": "As primeiras horas: analgesia, fluidos, controle de sinais vitais",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-04-003",
+      "titulo": "Febre Pos-Operatoria — Os 5 W e a Cronologia das Causas",
+      "no_pai_id": "s8-cir1-04-000",
+      "nivel": "folha",
+      "escopo": "Como a temporalidade da febre aponta a causa",
+      "lentes": [
+        "raciocinio_clinico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-04-004",
+      "titulo": "Complicacoes Pulmonares Pos-Operatorias — Atelectasia e Pneumonia",
+      "no_pai_id": "s8-cir1-04-000",
+      "nivel": "folha",
+      "escopo": "Por que o pulmao sofre apos cirurgia abdominal/toracica",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-04-005",
+      "titulo": "Ileo Paralitico Pos-Operatorio",
+      "no_pai_id": "s8-cir1-04-000",
+      "nivel": "folha",
+      "escopo": "A parada funcional do transito e como diferenciar de obstrucao",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-04-006",
+      "titulo": "Complicacoes da Ferida Operatoria — Deiscencia, Seroma e Evisceracao",
+      "no_pai_id": "s8-cir1-04-000",
+      "nivel": "folha",
+      "escopo": "Quando a parede reparada falha",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-04-007",
+      "titulo": "Fistula e Deiscencia de Anastomose",
+      "no_pai_id": "s8-cir1-04-000",
+      "nivel": "folha",
+      "escopo": "A complicacao mais temida da cirurgia digestiva e seu manejo",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-04-008",
+      "titulo": "Complicacoes Tromboembolicas — TVP e TEP no Pos-Operatorio",
+      "no_pai_id": "s8-cir1-04-000",
+      "nivel": "folha",
+      "escopo": "Reconhecer e tratar a trombose no paciente operado",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-05-000",
+      "titulo": "Principios Cirurgicos Gerais",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "As tecnicas e materiais fundamentais compartilhados por toda cirurgia",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-05-001",
+      "titulo": "Principios Cirurgicos — Visao Geral do Oficio",
+      "no_pai_id": "s8-cir1-05-000",
+      "nivel": "visao_geral",
+      "escopo": "Os pilares que tornam uma operacao segura e reprodutivel",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-05-002",
+      "titulo": "Assepsia e Antissepsia — A Barreira Contra a Infeccao",
+      "no_pai_id": "s8-cir1-05-000",
+      "nivel": "folha",
+      "escopo": "Esterilizacao, degermacao e campo cirurgico; heranca de Lister",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-05-003",
+      "titulo": "Hemostasia Cirurgica — Controle do Sangramento no Ato Operatorio",
+      "no_pai_id": "s8-cir1-05-000",
+      "nivel": "folha",
+      "escopo": "Ligadura, eletrocauterio e hemostaticos; a base da cirurgia limpa",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-05-004",
+      "titulo": "Fios e Suturas — Materiais, Absorcao e Escolha",
+      "no_pai_id": "s8-cir1-05-000",
+      "nivel": "folha",
+      "escopo": "Absorviveis versus inabsorviveis; mono versus multifilamentar",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-05-005",
+      "titulo": "Drenos Cirurgicos — Tipos, Indicacoes e Cuidados",
+      "no_pai_id": "s8-cir1-05-000",
+      "nivel": "folha",
+      "escopo": "Passivos versus ativos; quando drenar e quando nao",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-05-006",
+      "titulo": "Vias de Acesso — Incisoes Abdominais e Suas Racionais",
+      "no_pai_id": "s8-cir1-05-000",
+      "nivel": "folha",
+      "escopo": "Mediana, transversa, McBurney; escolha pela exposicao e integridade",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-05-007",
+      "titulo": "Cirurgia Aberta versus Videolaparoscopica — Principios e Trade-offs",
+      "no_pai_id": "s8-cir1-05-000",
+      "nivel": "folha",
+      "escopo": "Pneumoperitonio, magnificacao e o custo/beneficio da minimamente invasiva",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-06-000",
+      "titulo": "Infeccao em Cirurgia",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Prevenir, reconhecer e tratar a infeccao no contexto cirurgico",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-06-001",
+      "titulo": "Infeccao Cirurgica — Visao Geral",
+      "no_pai_id": "s8-cir1-06-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que o ato cirurgico abre porta para infeccao",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-06-002",
+      "titulo": "Classificacao das Feridas Cirurgicas — Limpa a Infectada",
+      "no_pai_id": "s8-cir1-06-000",
+      "nivel": "folha",
+      "escopo": "Os quatro potenciais de contaminacao e o risco de ISC",
+      "lentes": [
+        "raciocinio_clinico",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-06-003",
+      "titulo": "Infeccao do Sitio Cirurgico (ISC) — Incisional e de Orgao/Espaco",
+      "no_pai_id": "s8-cir1-06-000",
+      "nivel": "folha",
+      "escopo": "Diagnostico, fatores de risco e manejo da ISC",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-06-004",
+      "titulo": "Antibioticoprofilaxia Cirurgica — Momento, Escolha e Duracao",
+      "no_pai_id": "s8-cir1-06-000",
+      "nivel": "folha",
+      "escopo": "Como reduzir ISC sem gerar resistencia",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-06-005",
+      "titulo": "Abscesso e Colecoes — O Principio 'Ubi Pus, Ibi Evacua'",
+      "no_pai_id": "s8-cir1-06-000",
+      "nivel": "folha",
+      "escopo": "Por que pus precisa de drenagem, nao so antibiotico",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-06-006",
+      "titulo": "Infeccoes de Partes Moles — Celulite, Erisipela e Abscesso",
+      "no_pai_id": "s8-cir1-06-000",
+      "nivel": "folha",
+      "escopo": "O espectro das infeccoes de pele e subcutaneo em cirurgia",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-06-007",
+      "titulo": "Fasciite Necrosante e Infeccoes Necrotizantes — A Emergencia Cirurgica",
+      "no_pai_id": "s8-cir1-06-000",
+      "nivel": "folha",
+      "escopo": "A infeccao que mata em horas e exige desbridamento imediato",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-06-008",
+      "titulo": "Sepse de Foco Cirurgico — Reconhecimento e Controle da Fonte",
+      "no_pai_id": "s8-cir1-06-000",
+      "nivel": "folha",
+      "escopo": "O principio do source control como pilar do tratamento",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-06-009",
+      "titulo": "Tetano e Profilaxia Antitetanica em Ferimentos",
+      "no_pai_id": "s8-cir1-06-000",
+      "nivel": "folha",
+      "escopo": "Quando indicar vacina e imunoglobulina no ferido",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-07-000",
+      "titulo": "Abdome Agudo — Visao Geral e Abordagem Sindromica",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Como abordar a dor abdominal aguda que pode exigir cirurgia",
+      "lentes": [
+        "raciocinio_clinico",
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-07-001",
+      "titulo": "Abdome Agudo — Visao Geral das Cinco Categorias",
+      "no_pai_id": "s8-cir1-07-000",
+      "nivel": "visao_geral",
+      "escopo": "Inflamatorio, obstrutivo, perfurativo, vascular e hemorragico",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-07-002",
+      "titulo": "Dor Abdominal — Visceral, Somatica e Referida",
+      "no_pai_id": "s8-cir1-07-000",
+      "nivel": "folha",
+      "escopo": "Por que a dor migra e muda de carater; base neuroanatomica",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-07-003",
+      "titulo": "Exame Fisico do Abdome Agudo — Irritacao Peritoneal e Sinais Classicos",
+      "no_pai_id": "s8-cir1-07-000",
+      "nivel": "folha",
+      "escopo": "Descompressao, defesa, Blumberg, Murphy, Rovsing e seu significado",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-07-004",
+      "titulo": "Peritonite — Localizada e Difusa",
+      "no_pai_id": "s8-cir1-07-000",
+      "nivel": "folha",
+      "escopo": "A resposta do peritonio a agressao e o abdome em tabua",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-07-005",
+      "titulo": "Investigacao do Abdome Agudo — Laboratorio e Imagem",
+      "no_pai_id": "s8-cir1-07-000",
+      "nivel": "folha",
+      "escopo": "Quando pedir US, TC ou levar direto ao centro cirurgico",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-07-006",
+      "titulo": "Abdome Agudo na Gestante, Idoso e Imunossuprimido",
+      "no_pai_id": "s8-cir1-07-000",
+      "nivel": "folha",
+      "escopo": "Por que a apresentacao classica falha nesses grupos",
+      "lentes": [
+        "raciocinio_clinico",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-000",
+      "titulo": "Abdome Agudo Inflamatorio",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "As afeccoes onde a inflamacao de uma viscera desencadeia o quadro",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-08-001",
+      "titulo": "Apendicite Aguda — Visao Geral",
+      "no_pai_id": "s8-cir1-08-000",
+      "nivel": "visao_geral",
+      "escopo": "A causa cirurgica mais comum de abdome agudo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-08-002",
+      "titulo": "Apendicite — Fisiopatologia da Obstrucao Luminal",
+      "no_pai_id": "s8-cir1-08-001",
+      "nivel": "folha",
+      "escopo": "Fecalito, distensao, isquemia e perfuracao progressivas",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-003",
+      "titulo": "Apendicite — Apresentacao Clinica e Evolucao da Dor",
+      "no_pai_id": "s8-cir1-08-001",
+      "nivel": "folha",
+      "escopo": "Migracao periumbilical para FID, anorexia e febre",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-004",
+      "titulo": "Apendicite — Diagnostico, Escores e Imagem",
+      "no_pai_id": "s8-cir1-08-001",
+      "nivel": "folha",
+      "escopo": "Alvarado, US e TC; quando o diagnostico e clinico",
+      "lentes": [
+        "diagnostico_exames",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-005",
+      "titulo": "Apendicectomia — Tecnica, Timing e Manejo do Apendice Complicado",
+      "no_pai_id": "s8-cir1-08-001",
+      "nivel": "folha",
+      "escopo": "Laparoscopica versus aberta; abscesso e plastrao apendicular",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-006",
+      "titulo": "Colelitiase e Colecistite Aguda — Visao Geral",
+      "no_pai_id": "s8-cir1-08-000",
+      "nivel": "visao_geral",
+      "escopo": "Do calculo silencioso a vesicula inflamada",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-08-007",
+      "titulo": "Litogenese — Como se Forma o Calculo Biliar",
+      "no_pai_id": "s8-cir1-08-006",
+      "nivel": "folha",
+      "escopo": "Colesterol, estase e os 4 F; base da doenca litiasica",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-008",
+      "titulo": "Colelitiase Sintomatica e Colica Biliar",
+      "no_pai_id": "s8-cir1-08-006",
+      "nivel": "folha",
+      "escopo": "A dor biliar por obstrucao transitoria do ducto cistico",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-009",
+      "titulo": "Colecistite Aguda — Fisiopatologia e Diagnostico",
+      "no_pai_id": "s8-cir1-08-006",
+      "nivel": "folha",
+      "escopo": "Obstrucao persistente, Murphy e US; criterios de Tokyo",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-010",
+      "titulo": "Colecistectomia e Complicacoes Biliares — Conduta",
+      "no_pai_id": "s8-cir1-08-006",
+      "nivel": "folha",
+      "escopo": "Timing da cirurgia, lesao de via biliar e colecistite alitiasica",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-011",
+      "titulo": "Pancreatite Aguda — Visao Geral",
+      "no_pai_id": "s8-cir1-08-000",
+      "nivel": "visao_geral",
+      "escopo": "A autodigestao do pancreas e seu espectro de gravidade",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-08-012",
+      "titulo": "Pancreatite — Fisiopatologia da Ativacao Enzimatica Intraglandular",
+      "no_pai_id": "s8-cir1-08-011",
+      "nivel": "folha",
+      "escopo": "Tripsina ativada precocemente e a cascata de autodigestao",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-013",
+      "titulo": "Pancreatite — Etiologia Biliar e Alcoolica e Diagnostico",
+      "no_pai_id": "s8-cir1-08-011",
+      "nivel": "folha",
+      "escopo": "As duas grandes causas, lipase e criterios diagnosticos",
+      "lentes": [
+        "diagnostico_exames",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-014",
+      "titulo": "Pancreatite — Gravidade, Complicacoes e Papel da Cirurgia",
+      "no_pai_id": "s8-cir1-08-011",
+      "nivel": "folha",
+      "escopo": "Necrose, coleccoes, escores e quando operar",
+      "lentes": [
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-015",
+      "titulo": "Diverticulite Aguda — Visao Geral",
+      "no_pai_id": "s8-cir1-08-000",
+      "nivel": "visao_geral",
+      "escopo": "A inflamacao do diverticulo colonico e suas complicacoes",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-08-016",
+      "titulo": "Doenca Diverticular — Formacao dos Diverticulos e Fisiopatologia",
+      "no_pai_id": "s8-cir1-08-015",
+      "nivel": "folha",
+      "escopo": "Pressao intraluminal, fibra e a herniacao da mucosa",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-017",
+      "titulo": "Diverticulite — Apresentacao, Classificacao de Hinchey e Diagnostico",
+      "no_pai_id": "s8-cir1-08-015",
+      "nivel": "folha",
+      "escopo": "Dor em FIE, TC e a gradacao da gravidade",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-08-018",
+      "titulo": "Diverticulite — Conduta Clinica e Cirurgica por Estagio",
+      "no_pai_id": "s8-cir1-08-015",
+      "nivel": "folha",
+      "escopo": "Do tratamento ambulatorial a cirurgia de Hartmann",
+      "lentes": [
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-09-000",
+      "titulo": "Abdome Agudo Obstrutivo",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Quando o transito intestinal para por obstaculo mecanico",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-09-001",
+      "titulo": "Obstrucao Intestinal — Visao Geral",
+      "no_pai_id": "s8-cir1-09-000",
+      "nivel": "visao_geral",
+      "escopo": "A sindrome comum a todas as causas de parada mecanica do transito",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-09-002",
+      "titulo": "Fisiopatologia da Obstrucao — Distensao, Terceiro Espaco e Estrangulamento",
+      "no_pai_id": "s8-cir1-09-000",
+      "nivel": "folha",
+      "escopo": "Por que a alca sofre e evolui para isquemia",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-09-003",
+      "titulo": "Obstrucao de Delgado versus Grosso — Clinica e Radiologia",
+      "no_pai_id": "s8-cir1-09-000",
+      "nivel": "folha",
+      "escopo": "Niveis hidroaereos, vomito precoce/tardio e o padrao no RX/TC",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-09-004",
+      "titulo": "Bridas e Aderencias — A Causa Mais Comum de Obstrucao de Delgado",
+      "no_pai_id": "s8-cir1-09-000",
+      "nivel": "folha",
+      "escopo": "Por que a cirurgia previa causa obstrucao e como conduzir",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-09-005",
+      "titulo": "Volvo (Sigmoide e Ceco) — Torcao com Alca Fechada",
+      "no_pai_id": "s8-cir1-09-000",
+      "nivel": "folha",
+      "escopo": "A rotacao do colon, o sinal do grao de cafe e a descompressao",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-09-006",
+      "titulo": "Obstrucao por Tumor Colonico e Intussuscepcao",
+      "no_pai_id": "s8-cir1-09-000",
+      "nivel": "folha",
+      "escopo": "A neoplasia como causa de obstrucao de grosso; invaginacao",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-09-007",
+      "titulo": "Ileo Biliar e Corpos Estranhos — Obstrucoes Intraluminais",
+      "no_pai_id": "s8-cir1-09-000",
+      "nivel": "folha",
+      "escopo": "Causas intraluminais e a triade de Rigler",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-09-008",
+      "titulo": "Manejo da Obstrucao Intestinal — Conservador versus Cirurgico",
+      "no_pai_id": "s8-cir1-09-000",
+      "nivel": "folha",
+      "escopo": "Sonda, reposicao e os sinais que obrigam a operar",
+      "lentes": [
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-10-000",
+      "titulo": "Abdome Agudo Perfurativo",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Quando uma viscera oca se rompe e o conteudo cai na cavidade",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-10-001",
+      "titulo": "Perfuracao de Viscera Oca — Visao Geral",
+      "no_pai_id": "s8-cir1-10-000",
+      "nivel": "visao_geral",
+      "escopo": "O pneumoperitonio e a peritonite quimica/bacteriana",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-10-002",
+      "titulo": "Ulcera Peptica Perfurada — A Perfuracao Classica",
+      "no_pai_id": "s8-cir1-10-000",
+      "nivel": "folha",
+      "escopo": "Dor subita em punhalada, abdome em tabua e o ar sob a cupula",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-10-003",
+      "titulo": "Diagnostico da Perfuracao — Pneumoperitonio no RX e na TC",
+      "no_pai_id": "s8-cir1-10-000",
+      "nivel": "folha",
+      "escopo": "Como confirmar ar livre e localizar o sitio",
+      "lentes": [
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-10-004",
+      "titulo": "Conduta na Perfuracao — Rafia, Ressecao e Lavagem da Cavidade",
+      "no_pai_id": "s8-cir1-10-000",
+      "nivel": "folha",
+      "escopo": "Controle da fonte e tratamento da peritonite",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-11-000",
+      "titulo": "Abdome Agudo Vascular / Isquemico",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Quando o intestino perde suprimento sanguineo",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-11-001",
+      "titulo": "Isquemia Mesenterica — Visao Geral",
+      "no_pai_id": "s8-cir1-11-000",
+      "nivel": "visao_geral",
+      "escopo": "A catastrofe abdominal de alta mortalidade e diagnostico tardio",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-11-002",
+      "titulo": "Isquemia Mesenterica Aguda — Embolica, Trombotica e Nao Oclusiva",
+      "no_pai_id": "s8-cir1-11-000",
+      "nivel": "folha",
+      "escopo": "Os mecanismos arteriais e a dor desproporcional ao exame",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-11-003",
+      "titulo": "Trombose Venosa Mesenterica e Isquemia Cronica",
+      "no_pai_id": "s8-cir1-11-000",
+      "nivel": "folha",
+      "escopo": "A causa venosa e a angina mesenterica pos-prandial",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-11-004",
+      "titulo": "Isquemia Mesenterica — Diagnostico e Conduta de Revascularizacao/Ressecao",
+      "no_pai_id": "s8-cir1-11-000",
+      "nivel": "folha",
+      "escopo": "AngioTC, lactato e a corrida contra o tempo",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-12-000",
+      "titulo": "Abdome Agudo Hemorragico",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Sangramento intracavitario nao traumatico que ameaca a vida",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-12-001",
+      "titulo": "Hemorragia Intra-Abdominal Nao Traumatica — Visao Geral",
+      "no_pai_id": "s8-cir1-12-000",
+      "nivel": "visao_geral",
+      "escopo": "Choque hipovolemico de origem abdominal sem trauma",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-12-002",
+      "titulo": "Gravidez Ectopica Rota e Cisto Ovariano Hemorragico",
+      "no_pai_id": "s8-cir1-12-000",
+      "nivel": "folha",
+      "escopo": "As causas ginecologicas de abdome agudo hemorragico",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-12-003",
+      "titulo": "Aneurisma de Aorta Abdominal Roto e Outras Fontes",
+      "no_pai_id": "s8-cir1-12-000",
+      "nivel": "folha",
+      "escopo": "A ruptura vascular e a hemorragia hepatica/esplenica espontanea",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-13-000",
+      "titulo": "Hernias da Parede Abdominal",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "A protrusao de conteudo por defeito da parede e seu risco",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-13-001",
+      "titulo": "Hernias — Visao Geral e Terminologia",
+      "no_pai_id": "s8-cir1-13-000",
+      "nivel": "visao_geral",
+      "escopo": "Anel, saco e conteudo; redutivel, encarcerada, estrangulada",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-13-002",
+      "titulo": "Anatomia da Regiao Inguinal — Trigono de Hesselbach e Canal Inguinal",
+      "no_pai_id": "s8-cir1-13-000",
+      "nivel": "folha",
+      "escopo": "A base anatomica que distingue hernia direta de indireta",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-13-003",
+      "titulo": "Hernia Inguinal — Direta e Indireta",
+      "no_pai_id": "s8-cir1-13-000",
+      "nivel": "folha",
+      "escopo": "As hernias mais comuns e a diferenciacao clinica/anatomica",
+      "lentes": [
+        "apresentacao_clinica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-13-004",
+      "titulo": "Hernia Femoral — Por Que Encarcera Mais",
+      "no_pai_id": "s8-cir1-13-000",
+      "nivel": "folha",
+      "escopo": "O anel estreito, o predominio feminino e o risco elevado",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-13-005",
+      "titulo": "Hernias Umbilical, Epigastrica e Incisional",
+      "no_pai_id": "s8-cir1-13-000",
+      "nivel": "folha",
+      "escopo": "As hernias da linha media e as pos-operatorias",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-13-006",
+      "titulo": "Complicacoes das Hernias — Encarceramento e Estrangulamento",
+      "no_pai_id": "s8-cir1-13-000",
+      "nivel": "folha",
+      "escopo": "A urgencia cirurgica quando a hernia deixa de reduzir",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-13-007",
+      "titulo": "Herniorrafia e Hernioplastia — Tecnicas e Uso de Tela",
+      "no_pai_id": "s8-cir1-13-000",
+      "nivel": "folha",
+      "escopo": "Lichtenstein, laparoscopica e o principio livre de tensao",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-14-000",
+      "titulo": "Doencas Cirurgicas do Esofago",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Afeccoes esofagicas que exigem abordagem cirurgica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-14-001",
+      "titulo": "Esofago Cirurgico — Visao Geral",
+      "no_pai_id": "s8-cir1-14-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a disfagia e um sinal de alarme cirurgico",
+      "lentes": [
+        "apresentacao_clinica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-14-002",
+      "titulo": "DRGE Cirurgica e Hernia de Hiato",
+      "no_pai_id": "s8-cir1-14-000",
+      "nivel": "folha",
+      "escopo": "Quando o refluxo vira indicacao de fundoplicatura",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-14-003",
+      "titulo": "Acalasia e Disturbios Motores do Esofago",
+      "no_pai_id": "s8-cir1-14-000",
+      "nivel": "folha",
+      "escopo": "A falha do relaxamento do EEI e a miotomia de Heller",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-14-004",
+      "titulo": "Cancer de Esofago — Escamoso e Adenocarcinoma",
+      "no_pai_id": "s8-cir1-14-000",
+      "nivel": "folha",
+      "escopo": "Fatores de risco, Barrett e principios da esofagectomia",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-14-005",
+      "titulo": "Perfuracao Esofagica e Sindrome de Boerhaave",
+      "no_pai_id": "s8-cir1-14-000",
+      "nivel": "folha",
+      "escopo": "A emergencia da ruptura esofagica e a mediastinite",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-15-000",
+      "titulo": "Doencas Cirurgicas do Estomago e Duodeno",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Afeccoes gastroduodenais com indicacao cirurgica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-15-001",
+      "titulo": "Estomago Cirurgico — Visao Geral",
+      "no_pai_id": "s8-cir1-15-000",
+      "nivel": "visao_geral",
+      "escopo": "As grandes indicacoes cirurgicas gastricas",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-15-002",
+      "titulo": "Doenca Ulcerosa Peptica — Fisiopatologia e Complicacoes Cirurgicas",
+      "no_pai_id": "s8-cir1-15-000",
+      "nivel": "folha",
+      "escopo": "H. pylori, AINE e as complicacoes que exigem cirurgia",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-15-003",
+      "titulo": "Hemorragia Digestiva Alta de Origem Ulcerosa",
+      "no_pai_id": "s8-cir1-15-000",
+      "nivel": "folha",
+      "escopo": "A HDA, endoscopia terapeutica e o papel da cirurgia",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-15-004",
+      "titulo": "Cancer Gastrico — Fatores de Risco, Diagnostico e Gastrectomia",
+      "no_pai_id": "s8-cir1-15-000",
+      "nivel": "folha",
+      "escopo": "Adenocarcinoma, linfadenectomia e principios ressectivos",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-16-000",
+      "titulo": "Doencas Cirurgicas do Intestino Delgado",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Afeccoes do delgado com repercussao cirurgica",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-16-001",
+      "titulo": "Intestino Delgado Cirurgico — Visao Geral",
+      "no_pai_id": "s8-cir1-16-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que o delgado adoece pouco mas grave",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-16-002",
+      "titulo": "Diverticulo de Meckel — O Remanescente Onfalomesenterico",
+      "no_pai_id": "s8-cir1-16-000",
+      "nivel": "folha",
+      "escopo": "A regra dos 2 e suas complicacoes cirurgicas",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-16-003",
+      "titulo": "Doenca de Crohn — Indicacoes Cirurgicas e Suas Complicacoes",
+      "no_pai_id": "s8-cir1-16-000",
+      "nivel": "folha",
+      "escopo": "Estenose, fistula e abscesso; a cirurgia poupadora",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-16-004",
+      "titulo": "Tumores do Delgado e Sindrome do Intestino Curto",
+      "no_pai_id": "s8-cir1-16-000",
+      "nivel": "folha",
+      "escopo": "Neoplasias raras e as consequencias da ressecao extensa",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-17-000",
+      "titulo": "Doencas Cirurgicas do Colon, Reto e Anus",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "A coloproctologia cirurgica de rotina",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-17-001",
+      "titulo": "Colon, Reto e Anus Cirurgicos — Visao Geral",
+      "no_pai_id": "s8-cir1-17-000",
+      "nivel": "visao_geral",
+      "escopo": "As grandes doencas colorretais e anais operatorias",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-17-002",
+      "titulo": "Cancer Colorretal — Sequencia Adenoma-Carcinoma e Rastreio",
+      "no_pai_id": "s8-cir1-17-000",
+      "nivel": "folha",
+      "escopo": "A carcinogenese, a colonoscopia e a prevencao",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-17-003",
+      "titulo": "Cancer Colorretal — Estadiamento e Principios Cirurgicos",
+      "no_pai_id": "s8-cir1-17-000",
+      "nivel": "folha",
+      "escopo": "Colectomia, margens, linfadenectomia e TME no reto",
+      "lentes": [
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-17-004",
+      "titulo": "Hemorragia Digestiva Baixa — Abordagem Cirurgica",
+      "no_pai_id": "s8-cir1-17-000",
+      "nivel": "folha",
+      "escopo": "Diverticulos, angiodisplasia e a investigacao do sangramento baixo",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-17-005",
+      "titulo": "Doenca Hemorroidaria — Classificacao e Tratamento",
+      "no_pai_id": "s8-cir1-17-000",
+      "nivel": "folha",
+      "escopo": "Interna/externa, graus e do conservador a hemorroidectomia",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-17-006",
+      "titulo": "Fissura Anal — Fisiopatologia e Conduta",
+      "no_pai_id": "s8-cir1-17-000",
+      "nivel": "folha",
+      "escopo": "Hipertonia esfincteriana, o ciclo de dor e a esfincterotomia",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-17-007",
+      "titulo": "Abscesso e Fistula Anorretal — A Doenca Criptoglandular",
+      "no_pai_id": "s8-cir1-17-000",
+      "nivel": "folha",
+      "escopo": "Da glandula infectada ao trajeto fistuloso; regra de Goodsall",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-17-008",
+      "titulo": "Doenca Pilonidal e Outras Afeccoes Perianais",
+      "no_pai_id": "s8-cir1-17-000",
+      "nivel": "folha",
+      "escopo": "Cisto pilonidal, condiloma e prolapso retal em resumo",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-18-000",
+      "titulo": "Doencas Cirurgicas do Figado e Vias Biliares",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Afeccoes hepatobiliares que demandam cirurgia",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-18-001",
+      "titulo": "Figado e Vias Biliares Cirurgicos — Visao Geral",
+      "no_pai_id": "s8-cir1-18-000",
+      "nivel": "visao_geral",
+      "escopo": "A anatomia segmentar e as grandes indicacoes cirurgicas",
+      "lentes": [
+        "correlacao_ciencias_basicas",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-18-002",
+      "titulo": "Coledocolitiase e Colangite Aguda",
+      "no_pai_id": "s8-cir1-18-000",
+      "nivel": "folha",
+      "escopo": "O calculo no coledoco, a triade de Charcot e a CPRE",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-18-003",
+      "titulo": "Ictericia Obstrutiva — Abordagem Cirurgica",
+      "no_pai_id": "s8-cir1-18-000",
+      "nivel": "folha",
+      "escopo": "Diferenciar causa benigna de maligna da obstrucao biliar",
+      "lentes": [
+        "fisiopatologia",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-18-004",
+      "titulo": "Tumores Hepaticos e Metastases — Principios de Ressecao",
+      "no_pai_id": "s8-cir1-18-000",
+      "nivel": "folha",
+      "escopo": "CHC, metastases colorretais e a hepatectomia",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-18-005",
+      "titulo": "Abscesso Hepatico e Cisto Hidatico",
+      "no_pai_id": "s8-cir1-18-000",
+      "nivel": "folha",
+      "escopo": "As colecoes hepaticas piogenica, amebiana e parasitaria",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-18-006",
+      "titulo": "Tumor de Vesicula e Colangiocarcinoma",
+      "no_pai_id": "s8-cir1-18-000",
+      "nivel": "folha",
+      "escopo": "As neoplasias biliares e o tumor de Klatskin",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-19-000",
+      "titulo": "Doencas Cirurgicas do Pancreas e Baco",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "Afeccoes pancreaticas e esplenicas de tratamento cirurgico",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-19-001",
+      "titulo": "Pancreas e Baco Cirurgicos — Visao Geral",
+      "no_pai_id": "s8-cir1-19-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que operar orgaos de acesso dificil e alto risco",
+      "lentes": [
+        "raciocinio_clinico",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-19-002",
+      "titulo": "Cancer de Pancreas — Adenocarcinoma e a Cirurgia de Whipple",
+      "no_pai_id": "s8-cir1-19-000",
+      "nivel": "folha",
+      "escopo": "O tumor de cabeca de pancreas e a duodenopancreatectomia",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-19-003",
+      "titulo": "Pancreatite Cronica e Pseudocisto — Indicacoes Cirurgicas",
+      "no_pai_id": "s8-cir1-19-000",
+      "nivel": "folha",
+      "escopo": "Dor intratavel, obstrucao ductal e o manejo do pseudocisto",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-19-004",
+      "titulo": "Esplenectomia — Indicacoes, Trauma e Sepse Pos-Esplenectomia",
+      "no_pai_id": "s8-cir1-19-000",
+      "nivel": "folha",
+      "escopo": "Quando retirar o baco e a profilaxia contra OPSI",
+      "lentes": [
+        "conduta_tecnica",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-20-000",
+      "titulo": "Cirurgia Bariatrica e Metabolica (Principios)",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "A cirurgia que trata obesidade e doenca metabolica",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-20-001",
+      "titulo": "Cirurgia Bariatrica — Visao Geral e Indicacoes",
+      "no_pai_id": "s8-cir1-20-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que operar a obesidade grave; criterios de IMC",
+      "lentes": [
+        "raciocinio_clinico",
+        "fisiopatologia"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-20-002",
+      "titulo": "Tecnicas Bariatricas — Restritivas, Disabsortivas e Mistas",
+      "no_pai_id": "s8-cir1-20-000",
+      "nivel": "folha",
+      "escopo": "Sleeve, bypass em Y de Roux e seus mecanismos",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-20-003",
+      "titulo": "Mecanismos Metabolicos e Complicacoes da Bariatrica",
+      "no_pai_id": "s8-cir1-20-000",
+      "nivel": "folha",
+      "escopo": "Efeito incretinico, dumping e deficiencias nutricionais",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-21-000",
+      "titulo": "Trauma — Principios do ATLS e Atendimento Inicial",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "A abordagem sistematizada do doente traumatizado grave",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-21-001",
+      "titulo": "Atendimento ao Trauma — Visao Geral e a Filosofia ATLS",
+      "no_pai_id": "s8-cir1-21-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que tratar primeiro o que mata primeiro",
+      "lentes": [
+        "conduta_tecnica",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-21-002",
+      "titulo": "Avaliacao Primaria — O ABCDE do Trauma",
+      "no_pai_id": "s8-cir1-21-000",
+      "nivel": "folha",
+      "escopo": "A sequencia de prioridades que organiza o atendimento",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-21-003",
+      "titulo": "Via Aerea e Ventilacao no Trauma (A e B)",
+      "no_pai_id": "s8-cir1-21-000",
+      "nivel": "folha",
+      "escopo": "Controle da via aerea com protecao cervical e as ameacas toracicas",
+      "lentes": [
+        "conduta_tecnica",
+        "fisiopatologia"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-21-004",
+      "titulo": "Choque Hemorragico no Trauma (C) — Classes e Reposicao",
+      "no_pai_id": "s8-cir1-21-000",
+      "nivel": "folha",
+      "escopo": "As classes de hemorragia e a ressuscitacao com controle de danos",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-21-005",
+      "titulo": "Avaliacao Neurologica e Exposicao (D e E)",
+      "no_pai_id": "s8-cir1-21-000",
+      "nivel": "folha",
+      "escopo": "Glasgow, pupilas e a prevencao da hipotermia",
+      "lentes": [
+        "conduta_tecnica",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-21-006",
+      "titulo": "Avaliacao Secundaria e Exames no Trauma — FAST, RX e TC",
+      "no_pai_id": "s8-cir1-21-000",
+      "nivel": "folha",
+      "escopo": "O exame de cabeca aos pes e os exames dirigidos",
+      "lentes": [
+        "diagnostico_exames",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-21-007",
+      "titulo": "Cirurgia de Controle de Danos e Triade Letal do Trauma",
+      "no_pai_id": "s8-cir1-21-000",
+      "nivel": "folha",
+      "escopo": "Acidose, hipotermia e coagulopatia; operar em etapas",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-22-000",
+      "titulo": "Trauma por Sistema",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "As lesoes especificas por segmento corporal e sua conduta",
+      "lentes": [
+        "fisiopatologia",
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-22-001",
+      "titulo": "Trauma por Sistema — Visao Geral e Mecanismos de Lesao",
+      "no_pai_id": "s8-cir1-22-000",
+      "nivel": "visao_geral",
+      "escopo": "Contuso versus penetrante e como o mecanismo prediz a lesao",
+      "lentes": [
+        "fisiopatologia",
+        "raciocinio_clinico"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-22-002",
+      "titulo": "Traumatismo Cranioencefalico — Do Leve ao Grave",
+      "no_pai_id": "s8-cir1-22-000",
+      "nivel": "folha",
+      "escopo": "Lesao primaria/secundaria, hematomas e a hipertensao intracraniana",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-22-003",
+      "titulo": "Trauma Toracico — As Lesoes Que Matam no ABCDE",
+      "no_pai_id": "s8-cir1-22-000",
+      "nivel": "folha",
+      "escopo": "Pneumotorax hipertensivo, tamponamento, torax instavel e hemotorax",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-22-004",
+      "titulo": "Trauma Abdominal — Contuso e Penetrante",
+      "no_pai_id": "s8-cir1-22-000",
+      "nivel": "folha",
+      "escopo": "Quando indicar laparotomia; conduta nao operatoria de solidos",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-22-005",
+      "titulo": "Trauma Vascular e da Pelve",
+      "no_pai_id": "s8-cir1-22-000",
+      "nivel": "folha",
+      "escopo": "Hemorragia exsanguinante, sinais de lesao arterial e fratura de pelve",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-22-006",
+      "titulo": "Trauma Musculoesqueletico e Sindrome Compartimental",
+      "no_pai_id": "s8-cir1-22-000",
+      "nivel": "folha",
+      "escopo": "Fraturas expostas, lesoes que ameacam o membro e a fasciotomia",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-22-007",
+      "titulo": "Trauma Urogenital e Trauma na Gestante",
+      "no_pai_id": "s8-cir1-22-000",
+      "nivel": "folha",
+      "escopo": "Lesao renal/vesical/uretral e as particularidades da gravida traumatizada",
+      "lentes": [
+        "apresentacao_clinica",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-23-000",
+      "titulo": "Atendimento ao Queimado",
+      "no_pai_id": "s8-cir1-00-000",
+      "nivel": "modulo",
+      "escopo": "A abordagem do paciente com queimadura, do local ao grande queimado",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica",
+        "apresentacao_clinica"
+      ],
+      "profundidade": 2
+    },
+    {
+      "id": "s8-cir1-23-001",
+      "titulo": "Queimaduras — Visao Geral e Fisiopatologia",
+      "no_pai_id": "s8-cir1-23-000",
+      "nivel": "visao_geral",
+      "escopo": "Por que a queimadura e uma doenca sistemica, nao so da pele",
+      "lentes": [
+        "fisiopatologia",
+        "correlacao_ciencias_basicas"
+      ],
+      "profundidade": 3
+    },
+    {
+      "id": "s8-cir1-23-002",
+      "titulo": "Classificacao das Queimaduras — Profundidade e Extensao",
+      "no_pai_id": "s8-cir1-23-000",
+      "nivel": "folha",
+      "escopo": "Graus, regra dos nove e a estimativa da SCQ",
+      "lentes": [
+        "apresentacao_clinica",
+        "diagnostico_exames"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-23-003",
+      "titulo": "Reanimacao Volemica do Grande Queimado — Formula de Parkland",
+      "no_pai_id": "s8-cir1-23-000",
+      "nivel": "folha",
+      "escopo": "Por que e como repor volume nas primeiras 24 horas",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-23-004",
+      "titulo": "Via Aerea, Lesao Inalatoria e Queimadura Eletrica/Quimica",
+      "no_pai_id": "s8-cir1-23-000",
+      "nivel": "folha",
+      "escopo": "As ameacas ocultas: inalacao, corrente eletrica e agentes quimicos",
+      "lentes": [
+        "fisiopatologia",
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    },
+    {
+      "id": "s8-cir1-23-005",
+      "titulo": "Tratamento da Ferida do Queimado — Curativos, Escarotomia e Enxertos",
+      "no_pai_id": "s8-cir1-23-000",
+      "nivel": "folha",
+      "escopo": "Cuidado local, liberacao da constricao e cobertura cutanea",
+      "lentes": [
+        "conduta_tecnica"
+      ],
+      "profundidade": 4
+    }
+  ]
+}
