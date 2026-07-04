@@ -67,6 +67,23 @@ body {
   line-height: 1.6;
 }
 
+/* Luz ambiente bioluminescente — dá ao vidro fosco algo colorido para refratar.
+   Sem isso, glassmorphism sobre fundo escuro plano fica invisível. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(58% 48% at 12% 8%,  rgba(79, 209, 197, 0.14), transparent 62%),
+    radial-gradient(52% 46% at 92% 88%, rgba(159, 122, 234, 0.11), transparent 60%),
+    radial-gradient(46% 40% at 82% 12%, rgba(99, 179, 237, 0.08), transparent 60%),
+    radial-gradient(50% 44% at 20% 92%, rgba(104, 211, 145, 0.07), transparent 60%);
+}
+/* O conteúdo do app fica acima da luz ambiente */
+#root { position: relative; z-index: 1; }
+
 #root {
   width: 100%;
   min-height: 100svh;
