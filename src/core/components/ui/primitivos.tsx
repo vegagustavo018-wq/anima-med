@@ -82,14 +82,16 @@ export function Cartao({
 }) {
   const base: React.CSSProperties = {
     display: 'block',
-    // Vidro fosco — deixa a bioluminescência do fundo vazar por trás
-    background: 'rgba(26, 34, 52, 0.55)',
-    backdropFilter: 'blur(16px) saturate(125%)',
-    WebkitBackdropFilter: 'blur(16px) saturate(125%)',
-    border: '1px solid rgba(140, 160, 190, 0.12)',
-    borderTop: cor ? `3px solid ${cor}` : '1px solid rgba(140, 160, 190, 0.12)',
+    // Vidro fosco — sheen estático (não depende do backdrop-filter, que muitas
+    // GPUs degradam ao vivo) + blur por cima quando o navegador consegue render.
+    background:
+      'linear-gradient(140deg, rgba(140,185,205,0.12) 0%, rgba(26,34,52,0.46) 42%, rgba(20,27,42,0.5) 100%)',
+    backdropFilter: 'blur(20px) saturate(135%)',
+    WebkitBackdropFilter: 'blur(20px) saturate(135%)',
+    border: '1px solid rgba(150, 170, 200, 0.16)',
+    borderTop: cor ? `3px solid ${cor}` : '1px solid rgba(255, 255, 255, 0.10)',
     borderRadius: 'var(--radius-lg)',
-    boxShadow: '0 8px 32px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.05)',
+    boxShadow: '0 10px 36px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.09)',
     padding: 18,
     cursor: onClick || to ? 'pointer' : 'default',
     textAlign: 'left',
@@ -99,7 +101,9 @@ export function Cartao({
     ...style,
   }
   const hover = (e: React.MouseEvent<HTMLElement>, on: boolean) => {
-    e.currentTarget.style.background = on ? 'rgba(30, 42, 64, 0.7)' : 'rgba(26, 34, 52, 0.55)'
+    e.currentTarget.style.background = on
+      ? 'linear-gradient(140deg, rgba(160,205,225,0.16) 0%, rgba(32,44,68,0.58) 42%, rgba(26,34,52,0.6) 100%)'
+      : 'linear-gradient(140deg, rgba(140,185,205,0.12) 0%, rgba(26,34,52,0.46) 42%, rgba(20,27,42,0.5) 100%)'
     e.currentTarget.style.transform = on ? 'translateY(-2px)' : 'translateY(0)'
     e.currentTarget.style.boxShadow = on
       ? '0 14px 40px rgba(0,0,0,0.34), inset 0 1px 0 rgba(255,255,255,0.07)'
