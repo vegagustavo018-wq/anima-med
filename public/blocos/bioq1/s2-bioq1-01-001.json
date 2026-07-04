@@ -1,61 +1,146 @@
 {
-  "resumo_id": "s2-bioq1-01-001",
-  "no_pai_id": "s2-bioq1-01-000",
-  "nos_filhos_ids": [
-    "s2-bioq1-01-001-01",
-    "s2-bioq1-01-001-02",
-    "s2-bioq1-01-001-03",
-    "s2-bioq1-01-001-04",
-    "s2-bioq1-01-001-05",
-    "s2-bioq1-01-001-06"
+  "id": "s2-bioq1-01-001",
+  "titulo": "Pontes de Hidrogênio em Proteínas — Por que quebrar elas desnatura?",
+  "no_pai": "s2-bioq1-01-000",
+  "nos_filhos": [],
+  "semestre": 2,
+  "disciplina": "bioquimica1",
+  "profundidade_arvore": 2,
+  "status": "completo",
+  "data_criacao": "2026-07-03",
+  "procedencia": "ANIMA Phase 1 — Batch Final",
+  "horizonte_validade": "2027-06-30",
+  "resumo_conciso": "Proteína é colar de aminoácidos. Mas fio cru é inútil — precisa dobrar em forma 3D para FUNCIONAR. Problema: qual força mantém essa dobra? Não é a ligação peptídica (muito forte, seria rígida demais). É rede de PONTES DE HIDROGÊNIO — fracas individualmente (5kJ/mol), mas centenas juntas estabilizam a forma. Quebra UMA ponte: proteína continua funcional. Quebra MUITAS = proteína desdobra (desnatura) e perde função. Por isso calor, pH extremo e álcool desnatura — rompem pontes de hidrogênio.",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "numero": 1,
+      "titulo": "O problema: como dobrar uma corrente para ganhar função?",
+      "conteudo": "Proteína começa como sequência linear de aminoácidos — fio cru. Hemoglobina tem 146 aminoácidos. Se esticada linearmente, teria ~50 nanômetros de comprimento. Mas na célula, hemoglobina é bola compacta ~5nm de diâmetro. Qual força compactou? Não pode ser ligação peptídica — é forte demais (350kJ/mol), tornaria proteína rígida, não flexível. Precisa de força que seja: (1) forte o SUFICIENTE para manter forma (não cai aos mínimos movimentos). (2) Fraca o BASTANTE para permitir flexibilidade (proteína precisa MUDAR de forma levemente para prender ligandos, realizar função). Pergunta: existe forç assim?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Resposta: SIM. Pontes de hidrogênio (H-bonds). Cada uma é fraca (5kJ/mol). Mas proteína inteira é mantida por ~100-200 pontes de hidrogênio simultâneas = força resultante forte (500-1000kJ/mol total). Muitas fracas = forte coletivamente. Quando quebra algumas, proteína ainda funciona. Quando quebra MUITAS, proteína desdobra (desnatura)."
+    },
+    {
+      "tipo": "secao",
+      "numero": 2,
+      "titulo": "O que é uma ponte de hidrogênio?",
+      "conteudo": "Ponte de hidrogênio = interação eletrostática fraca entre duas moléculas onde HIDROGÊNIO é o intermediário. Estrutura: doador (X-H) [onde X é N ou O eletronegativo] conecta a ACEPTOR (Y com par de elétrons não compartilhado) via hidrogênio: X-H···Y. A linha tracejada (···) representa ligação fraca (vd Waals). Exemplos em proteína: (1) Entre C=O de um aminoácido e N-H de outro (ligações em α-hélice). (2) Entre O-H de serina/tirosina e O=C de outro (frequente em hélices). (3) Entre átomos de enxofre em cistenas (menos comum, mais forte). (4) Com moléculas de água no solvente (água compete para fazer H-bonds com proteína). Energia: 2-20kJ/mol (comparar com ligação C-C que é 350kJ/mol). Pequena, mas cumulativa."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Insight crítico: se proteína fosse mantida por FORÇAS COVALENTES fortes, seria cristal rígido. Se fosse mantida só por hidrofobicidade, seria frágil. H-bonds são OURO intermediário — força suficiente para estabilidade, fracos o suficiente para flexibilidade e reversibilidade."
+    },
+    {
+      "tipo": "secao",
+      "numero": 3,
+      "titulo": "Três mecanismos de desnaturação",
+      "conteudo": "CALOR: aquecimento aumenta vibração molecular. Moléculas ganham energia cinética. H-bonds requerem alinhamento preciso — vibrações quebram essa geometria. Acima de ~42-50°C (dependendo proteína), mais pontes quebram do que formam. Proteína começa a desdobrar. Exemplo: ovo cru (clara é transparente, proteína nativa) vs ovo cozido (branco opaco, proteína desnaturada). Desnaturação é irreversível em ovo porque aquecimento prolongado permite formação de LIGAÇÕES COVALENTES extras entre proteínas agregadas. PH EXTREMO: pH muito baixo ou alto muda ionização dos aminoácidos. Resíduos de aspartato/glutamato têm carboxila (-COOH) normalmente; em pH baixo, ganham H+ e viram -COOH (neutro, poderia fazer H-bond novo). Em pH alto, viram COO- (negativo, repele eletricamente outra COO-). Distribuição de cargas muda. Proteína que era eletricamente balanceada fica repelente, desdobra. Exemplo: pepsina funciona em pH 2 (estômago); em pH 7, desnatura. ÁLCOOL/SOLVENTES: álcool (etanol) é molícula pequena que FAZ H-bonds. Se você adiciona etanol em solução proteica, etanol compete COM A PROTEÍNA por fazer H-bonds. Proteína perde H-bonds, e etanol não consegue estabilizar proteína adequadamente (etanol é pequeno demais). Proteína fica sem suporte → desdobra. Mesmo mecanismo com acetona, metanol, dimetilsulfóxido."
+    },
+    {
+      "tipo": "analogia",
+      "titulo": "Ponte de corda vs ponte de ferro",
+      "descricao": "Proteína nativa = tenda mantida por rede de CORDAS FINAS (H-bonds). Cada corda é fraca, mas 100 cordas juntas mantêm tenda em pé. Se cortar uma corda, tenda fica. Se cortar 50 cordas, tenda cai. Calor é como VENTO FORTE que zanza as cordas até soltar (vibração quebra alinhamento). Álcool é como ALGUÉM PUXANDO CORDAS para própria tenda (compete por H-bonds). Se mantivéssemos tenda com CORRENTE DE FERRO (ligações covalentes), seria indestrutível mas poderia virar bloco rígido inútil (sem flexibilidade).",
+      "mapeamento": "H-bonds→cordas finas; calor→vento; álcool→competição por cordas; desnaturação→tenda cai; rede de cordas→flexibilidade+força"
+    },
+    {
+      "tipo": "secao",
+      "numero": 4,
+      "titulo": "Implicações clínicas de desnaturação",
+      "conteudo": "FEBRE ALTA (>40°C): enzimas começam a desnaturar. Metabolismo cai drasticamente. Cerebral está em risco porque neurônios são sensíveis (morte acima de 42°C sustentado). DIALURAMIA (deficiência de uréia): uréia é caotrópico — quebra H-bonds em proteína. Pacientes com deficiência não conseguem regular pH adequadamente, ganham hiperamonemia. Amônia também é desnaturante. DEFICIÊNCIA DE ALBUMINA: albumina sérica é portadora de moléculas hidrofóbicas (ácidos graxos, bilirrubina, medicamentos). Baixa albumina = proteína desnaturada (por qualquer causa) OU síntese baixa (doença hepática). Consequência: medicamentos não se ligam, flutuam liberados → toxicidade. ALERGIAS A MEDICAMENTOS: às vezes medicamentos desnatura proteína de membrana → epitope neoantígeno é exposto → resposta imune. TERAPIAS DE CALOR: aplicação controlada de calor (~40-43°C, submaximal) para certos canceres — algumas células tumorais têm H-bonds menos estáveis (mitocôndria desnatura primeiro), morte seletiva das células cancerosas."
+    }
   ],
-  "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Propriedades da Água — Visão Geral",
-    "semestre": 2,
-    "disciplina": "Bioquímica I — Bases Moleculares",
-    "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "bioq1",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Por que a água é o meio universal onde toda bioquímica acontece",
-  "narrativa": [],
+  "flashcards": [
+    {
+      "id": "fc-bioq1-001-01",
+      "tipo": "por_que",
+      "pergunta": "Por que proteína precisa de 'força fraca' (H-bonds) e não pode usar ligação covalente forte para manter sua forma 3D?",
+      "resposta": "Ligação covalente é rígida demais — proteína viraria bloco inflexível. H-bonds são fracas individualmente (~5kJ/mol), mas centenas juntas criam estabilidade. Mais importante: H-bonds são REVERSÍVEIS. Proteína pode dobrar/desdobrar levemente sem quebrar permanentemente — permite função biológica.",
+      "nivel_alvo": 4
+    },
+    {
+      "id": "fc-bioq1-001-02",
+      "tipo": "mecanismo",
+      "pergunta": "Descreva a geometria de uma ponte de hidrogênio. Qual é o doador? Qual é o aceptor?",
+      "resposta": "Estrutura: X-H···Y. Doador = X (geralmente N ou O eletronegativo) com H ligado covalentemente. Aceptor = Y (N ou O com par de elétrons não compartilhado). Geometria precisa: ângulo próximo a 180° e distância ~2-3Å (muito próximo). Se vibrações mecânicas destroem alinhamento, H-bond quebra.",
+      "nivel_alvo": 3
+    },
+    {
+      "id": "fc-bioq1-001-03",
+      "tipo": "contrafactual",
+      "pergunta": "Se proteína fosse mantida só por interações hidrofóbicas e SEM pontes de hidrogênio, qual seria a consequência funcional?",
+      "resposta": "Hidrofobicidade é não-direcional (apenas agrupa hidrofóbicos no core). Sem H-bonds estruturadores, proteína teria múltiplas conformações instáveis. Não conseguiria manter FORMA 3D PRECISA necessária para: ativo sítio (catálise), epitope (imunidade), alosteria (regulação). Proteína seria ameba informe — nenhuma função específica.",
+      "nivel_alvo": 4
+    },
+    {
+      "id": "fc-bioq1-001-04",
+      "tipo": "clinico",
+      "pergunta": "Por que ovo cozido (proteína desnaturada) não volta a transparência se esfriar?",
+      "resposta": "Aquecimento quebra H-bonds (reversível). Mas calor intenso e prolongado permite ligações COVALENTES secundárias formarem entre proteínas agregadas (ligações dissulfeto entre cistenas de proteínas diferentes). Essas covalentes são irreversíveis. Mesmo se esfriar e H-bonds reformem, covalentes mantêm proteína agregada opaca.",
+      "nivel_alvo": 4
+    },
+    {
+      "id": "fc-bioq1-001-05",
+      "tipo": "mecanismo",
+      "pergunta": "Como pH extremo causa desnaturação se proteína não tem átomos de H diretos na estrutura 3D?",
+      "resposta": "pH extremo altera IONIZAÇÃO de cadeias laterais (Asp/Glu/Lys/Arg/His). Resíduos ganham/perdem cargas. Proteína que era balanceada eletrostaticamente fica com carga líquida → repulsão eletrostática entre resíduos → desdobramento para minimizar repulsão.",
+      "nivel_alvo": 4
+    },
+    {
+      "id": "fc-bioq1-001-06",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de pensar que 'H-bond é muito fraca para importar'?",
+      "resposta": "Uma H-bond = fraca (~5kJ/mol). MAS proteína tem 100-200 H-bonds simultâneas = ~500-1000kJ/mol total. Comparar força total com covalente C-C (350kJ/mol) — é COMPARÁVEL. Além disso, força coletiva é tudo o que importa biologicamente. Proteína desnatura quando % significativo (>20-30%) de H-bonds quebram.",
+      "nivel_alvo": 3
+    },
+    {
+      "id": "fc-bioq1-001-07",
+      "tipo": "comparacao",
+      "pergunta": "Compare os três mecanismos de desnaturação (calor, pH, álcool) em relação a qual força eles atacam.",
+      "resposta": "Calor: quebra H-bonds por vibração (energia cinética). pH: altera ionização de cadeias laterais (H-bonds dependem de eletrostática). Álcool: COMPETE por fazer H-bonds com proteína, deixa proteína sem suporte. Todos atacam H-bonds, mas por diferentes mecanismos.",
+      "nivel_alvo": 4
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": ["s2-bioq1-01-000"],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Desnaturação proteína → perda de função enzimática → falha metabólica → morte celular"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "descricao": "Chaperonas moleculares (Hsp70) previnem desnaturação, ajudam renaturação. Antipiréticos controlam febre. Diálise remove uréia em insuficiência renal."
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "descricao": "Febre >42°C sustentada = risco desnaturação. Testes de função hepática (albumina, enzimas) detectam síntese proteica prejudicada."
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "H-bonds também estabilizam DNA dupla-fita, fosfolipídios em membrana — tema transversal de biomoléculas"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "funcao"
-  ]
+  "midia": [
+    {
+      "id": "img-bioq1-001-01",
+      "tipo": "estrutura_molecular",
+      "descricao": "Diagrama mostrando: (A) Átomo de carbono com carbonilos (C=O) em vermelho, amidas (N-H) em azul. (B) Ponte de hidrogênio entre carbonilo de um aminoácido e amida de outro: C=O···H-N com ângulo ~180°. (C) Mesma ponte sendo 'quebrada' por vibração molecular (seta ondulada)—átomos se movem, ângulo muda, H-bond se desconecta."
+    },
+    {
+      "id": "img-bioq1-001-02",
+      "tipo": "diagrama_desnaturacao",
+      "descricao": "Série de três imagens mostrando progressão: (1) Proteína nativa: bola compacta, centenas de H-bonds simbolizadas por linhas finas dentro. (2) Desnaturação parcial: algumas linhas de H-bonds desaparecidas, proteína começa a expandir. (3) Proteína desnaturada: linear, maioria das H-bonds quebradas, função perdida. Legenda: 'N nativa < parcial < desnaturada'."
+    }
+  ],
+  "fontes": [
+    "Lehninger Principles of Biochemistry (Nelson, Cox) — Capítulo sobre Estrutura Proteica",
+    "Molecular Biology of the Cell (Alberts et al.) — Proteína e Dinâmica Molecular",
+    "Biochemistry (Stryer) — Forças que Estabilizam Proteínas",
+    "Protein Folding: Mechanisms and Thermodynamics (Nölting) — H-Bonds em Contexto"
+  ],
+  "estado_ciclo_vida": "completo"
 }

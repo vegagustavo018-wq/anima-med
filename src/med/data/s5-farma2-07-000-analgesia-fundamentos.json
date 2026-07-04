@@ -1,0 +1,394 @@
+{
+  "resumo_id": "s5-farma2-07-000",
+  "no_pai_id": "s5-farma2",
+  "nos_filhos_ids": [
+    "s5-farma2-07-001",
+    "s5-farma2-07-002",
+    "s5-farma2-07-003",
+    "s5-farma2-07-004",
+    "s5-farma2-07-005"
+  ],
+  "conexoes_laterais_ids": [
+    "s4-fisio-neuro-04-001",
+    "s5-semi-neuro-03",
+    "s7-mi1-cardio-01"
+  ],
+  "metadata": {
+    "titulo": "Analgesia: Por Que Sentimos Dor e Como a Bloqueamos",
+    "subtitulo": "Dos receptores nociceptivos ao cristal que faz Jasão desaparecer",
+    "semestre": 5,
+    "disciplina": "Farmacologia II",
+    "modulo": "farma2",
+    "profundidade_arvore": 1,
+    "numero_blocos_irmaos": 10,
+    "status": "publicado",
+    "autoria": "Claude Opus 4.7",
+    "data_criacao": "2026-07-04",
+    "data_ultima_edicao": "2026-07-04",
+    "versao_schema": "3.0",
+    "duracao_estimada_minutos": 12,
+    "tipo_de_bloco": "modulo_introdutorio_sistema",
+    "prerequisitos_declarados": [
+      "s4-fisio-neuro-04",
+      "s1-hist-02-004",
+      "s4-bioquim-sinalizacao-intracelular"
+    ],
+    "horizonte_validade": "3 anos (atualizar ao confirmar novos dados neurobiológicos de dor neuropática)",
+    "procedencia": "Goodman & Gilman Pharmacological Basis (cap 28-29); Rang & Dale Pharmacology (cap 41-43); Portenoy & Bruera Handbook of Cancer Pain Management",
+    "tags": [
+      "dor",
+      "nociceptão",
+      "analgesia",
+      "vias nociceptivas",
+      "neurofarmacologia",
+      "antiinflamatório",
+      "opioides",
+      "farmacologia-clínica",
+      "semestre5"
+    ]
+  },
+  "resumo_conciso": {
+    "tipo": "narrativa",
+    "conteudo": "Imagine construir um alarme de incêndio universal para o corpo inteiro. Cada sensação de dano — queimadura, corte, inflamação — dispara receptores especializados (nociceptores) que mandão sinais por vias específicas até o cérebro, onde a dor é finalmente *sentida*. Mas por que essa arquitetura existe? Porque dor salva vidas: avisa do perigo, interrompe ação prejudicial, mobiliza reparação. O problema é que às vezes o alarme dispara quando não deveria (dor crônica), ou dispara tanto que desativa o organismo (dor intensa pós-operatória). Aqui descrevemos o caminho da dor do tecido lesado ao cristal de consciência, e então as cinco estratégias farmacológicas para silenciar esse alarme em diferentes pontos: (1) blocar a inflamação onde nasce, (2) anestesiar os fios, (3) fechar as portas da medula, (4) desligar o botão emocional no cérebro, (5) reescrever a memória de dor. Cada estratégia é uma família de fármacos. Cada bloqueio revela a elegância da dor como sistema — e por que cada droga tem seu lugar."
+  },
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "① A Necessidade: Por Que Sentimos Dor?",
+      "conteudo": "Comece por um presságio familiar: você toca a panela quente, retira a mão antes de pensar, e *depois* a dor surge. Essa sequência — ação reflexa antes de consciência — não é coincidência. A dor é um sistema de alarme de três andares.\n\n**Andar 1 — Sobrevivência aguda.** Sem dor, você não saberia que a panela queima. Permaneceria com a mão ali, carbonizando tecidos, até não haver mais mão. Dor interrompe. Dor alerta. Dor salva.\n\n**Andar 2 — Imobilização e reparação.** Após a queimadura, a dor persiste (agora ela é consciente, não apenas reflexa). Essa dor crônica de horas ou dias força repouso. Repouso permite cicatrização. Sem dor, você retornaria ao trabalho com a mão aberta, estendendo uma ferida em cicatrização — resultando em sequela permanente.\n\n**Andar 3 — Memória de risco.** A próxima vez que vir uma panela quente, seu cérebro *antecipa* dor, produzindo medo. Medo previne. Esse medo é dor consciente transformada em previsão."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Pause aqui",
+      "conteudo": "Pense em uma dor crônica que você conhece — artrite reumatoide, neuropatia diabética, fibromialgia. Nesses casos, a dor não salva mais — ela prejudica. A mão artrítica que dói não está sendo danificada *neste instante*; a inflamação da articulação é crônica, e a dor se tornou um sintoma perpétuo sem função de alarme atual. Esse é o ponto: dor aguda é medicina, dor crônica sem causa ativa é doença. Os fármacos que vamos estudar buscam suprimir o alarme quando o alarme virou problema."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O que você sente quando toca a panela é *dor*, mas o termo é enganoso — agrupa sensações muito diferentes. Há dor somática (pele, osso, músculo) e visceral (órgãos internos), dor aguda (queimadura) e crônica (artrite), dor nociceptiva (resultado de lesão real) e neuropática (resultado de lesão do próprio nervo). Para bloquear dor, você precisa entender onde ela *começa*."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "② Como Se Resolve: As Cinco Estratégias de Bloqueio",
+      "conteudo": "Na física, há conservação de energia: não se cria energia, transforma-se. Em farmacologia de dor, há conservação de sinalização: não se pode *apagar* uma lesão, mas pode-se silenciar seus gritos.\n\nO caminho da dor percorre cinco pontos de possível bloqueio:\n\n**Bloqueio 1 — Periférico (no local da lesão).** Se a inflamação nunca começar, o grito nunca será mandado. Bloqueadores de inflamação (anti-inflamatórios não-esteroides, corticoides) tentam isso aqui — combatem a causação, não apenas o sintoma.\n\n**Bloqueio 2 — Anestésico periférico (no nervo sensorial).** Se o fio que leva o sinal está anestesiado, o sinal não passa. Bloqueadores de canal de sódio locais (lidocaína, bupivacaína) fazem isso — silenciam o fio, não o corpo.\n\n**Bloqueio 3 — Medular (na medula espinal).** Mesmo com o fio íntegro, você pode fechar a porta da medula — impedir que o sinal entre na corrente sanguínea do SNC. Alguns analgésicos (gabapentinoides, tramadol) e bloqueadores neurais regionais atuam aqui.\n\n**Bloqueio 4 — Cerebral emocional (no tálamo e cortex cingulado anterior).** O *sentimento* de dor vive aqui. Se você deslizar um cristal de opioide sobre esse circuito, a dor perde sua carga emocional — você *sabe* que a mão dói, mas não *sofre* mais. Opioides, antidepressivos com ação analgésica.\n\n**Bloqueio 5 — Neuroplástico (na memória de dor).** A dor crônica é um fantasma — mesmo após a lesão cicatrizar, o circuito neuronal continua disparando como se a lesão existisse. Algumas terapias (terapia cognitivo-comportamental, certos neuromoduladares, até acupuntura com base em mecanismo autêntico) reescrevem essa memória."
+    },
+    {
+      "tipo": "analogia",
+      "titulo": "Analogia: O Cinema do Sofrimento",
+      "conteudo": "Imagine um cinema onde o filme que passa é *Sua Dor em Alta Definição*. A tela é enorme, o som é surround, e você está na poltrona da frente.\n\n**Bloqueio 1 (anti-inflamatório) é apagar o incêndio fora do cinema.** Não há fogo real lá fora, então nada for filmado. Sem filme, sem cinema.\n\n**Bloqueio 2 (anestésico local) é cortar a corrente de câmeras.** Há fogo lá fora, mas nenhuma câmera capta. O filme nunca é feito.\n\n**Bloqueio 3 (gabapentinoide) é interferir nos cabos de transmissão.** O filme foi feito e está na mão do transmissor, mas os cabos estão com ruído — a qualidade cai drasticamente.\n\n**Bloqueio 4 (opioide) é colocar você em sedação na poltrona.** O filme passa em alta definição, mas você está dopado, vendo tudo como se fosse um sonho agradável. Sua neocortex *sabe* que há fogo, mas sua amígdala não *sente* medo. A experiência emocional é amortecida.\n\n**Bloqueio 5 (terapia comportamental) é reescrever o filme.** O projetor passa a mostrar a mesma cena, mas editada: de \"fogo mortal\" para \"fogo controlado e diminuindo\". A amígdala recalibra sua resposta.\n\n**Mapeamento:** Corpo lesado = fogo fora do cinema; Nociceptores = câmeras; Medula espinal = transmissores; Tálamo/ACC = processador emocional de dor; Memória de dor crônica = editor que reduplica o trauma.",
+      "elementos_explicitos": {
+        "origem": "corpo lesado com inflamação",
+        "fio": "nervo sensorial que carrega o sinal",
+        "transmissor": "medula espinal",
+        "processador": "tálamo e cortex cingulado anterior",
+        "memória": "circuitos de consolidação em hipocampo e prefrontal"
+      }
+    },
+    {
+      "tipo": "highlight",
+      "titulo": "Regra crítica",
+      "conteudo": "Toda terapêutica de dor é uma escolha de *trade-off*. Você não apaga a dor sem custo. Anti-inflamatórios matam úlceras. Anestésicos locais podem causar arritmia cardíaca. Opioides causam dependência e constipação. Gabapentinoides causam tontura. A arte da medicina de dor é escolher qual sintoma o paciente prefere sofrer *mais*: a dor original, ou o efeito colateral do remédio."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "③ Do Que É Feito: Moléculas e Receptores",
+      "conteudo": "Antes de nomear os fármacos, você precisa saber em que eles batem.\n\n**Na periferia do corpo, há receptores específicos para dor:**\n- **TRPV1** (canal transient receptor potential vanilloid 1) — detecta calor acima de 43°C. Pimenta contém capsaicina, que ativa TRPV1, por isso pimenta \"queima\". A dor é literal.\n- **TRPA1** (Ankyrin 1) — detecta frio intenso e agentes químicos irritantes (mustarda).\n- **P2X3** — canal de ATP, ativa-se quando célula lesada libera ATP (sinal universal de \"eu estou morrendo\").\n- **ASIC** (Acid-Sensing Ion Channels) — detectam queda de pH (acidose local da lesão).\n\nTodos esses receptores estão na ponta de neurônios sensoriais especializados chamados **nociceptores**. Um nociceptor é essencialmente um eletrodo vivo que diz \"aqui há dano\".\n\n**Na medula espinal, há sinapses especializadas:**\n- O nociceptor libera neurotransmissores (substância P, glutamato) que ativam o neurônio da segunda ordem na medula.\n- Esse neurônio de segunda ordem cruza a linha média e sobe pelo trato espinotalâmico até o tálamo — essa é a rodovia de dor do corpo.\n- O tálamo faz retransmissão até o cortex cingulado anterior (ACC), que *sente* a dor como experiência emocional.\n\n**No cérebro, há circuitos especializados:**\n- **Córtex cingulado anterior (ACC)** — sentimento emocional de dor (o *sofrer*).\n- **Cortex somatossensorial primário (S1)** — localização e intensidade da dor (o *saber onde*).\n- **Córtex prefrontal medial (mPFC)** — contexto e significado (por que dói, o que significa).\n- **Amígdala** — medo associado à dor.\n- **Hipocampo** — memória de dor, consolidação de trauma.\n\n**Em todas essas regiões, há receptores para opioides:**\nMorfina, codeína, oxicodona — todas essas moléculas têm um formato que encaixa perfeitamente em **receptores opioides μ (mu), δ (delta) e κ (kappa)**. Esses receptores existem naturalmente no cérebro (porque você produz endorfinas próprias, que têm o mesmo formato). Opioides exógenos são outsiders que fingem ser endorfinas, ligando-se aos mesmos receptores e produzindo o mesmo efeito: amortecimento da dor."
+    },
+    {
+      "tipo": "etymologia",
+      "titulo": "Etimologia e Nomes",
+      "conteudo": "**Nocicepção** — lat. *nocere* (danificar) + *capere* (capturar). Não é \"o ato de receber dor\", é \"o ato de capturar dano\". Nociceptor é um sensor de dano, não de dor. Dor acontece no cérebro; nociceptação acontece no fio.\n\n**Analgesia** — grego *an-* (negação) + *algos* (dor). Literalmente: negação da dor. Importante: não significa negação da sensação de toque ou temperatura, apenas a sensação de dor — você pode anestesiar dor mantendo a sensação de pressão (assim o cirurgião consegue trabalhar, sabendo que o tecido está sendo tocado, mas o paciente não *sofre*).\n\n**Opioide** — do nome *opium*, que vem do latim *opium*, do grego *opion*, derivado de *opos* (suco). A papoula (*Papaver somniferum*) produz um suco leitoso que contém morfina e codeína — os primeiros opioides naturais descobertos. O nome *opioide* refere-se a qualquer molécula que imita esse suco.\n\n**Endorfina** — contração de *endogenous morphine* (morfina endógena). Seu corpo produz suas próprias opioides. Quando você sofre um trauma intenso e continua funcionando, é porque endorfinas foram liberadas — nociceptação acontecia, mas analgesia também. Esse é o mecanismo que permite um soldado continuar brigando apesar de estar ferido.\n\n**Antiinflamatório não-esteroidal (AINE)** — \"não-esteroidal\" é para diferenciar de corticoides (que também são antiinflamatórios, mas vêm da classe dos esteroides). AINEs (como ibuprofeno e aspirina) bloqueiam prostaglandinas, que são moléculas inflamação. Um ponto: o nome é confuso porque todos AINEs *também causam inflamação* em outro lugar (úlcera gástrica), apenas que em menor escala que a inflamação que bloqueiam. Daí o trade-off."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "④ Como Funciona: Os Cinco Bloqueios em Detalhe Mecânico",
+      "conteudo": "Agora que você conhece os atores (receptores, canais, neurônios), vamos ao mecanismo de cada bloqueio.\n\n**Bloqueio 1: Antiinflamatórios (AINE + Corticoides)**\nQuando um tecido é lesado, células morrem e liberam moléculas que ativam células imunológicas locais (mastócitos, macrófagos). Essas células imunológicas, por sua vez, liberam **prostaglandinas** (PGE2, PGI2) e **citocinas** (TNF-α, IL-1, IL-6). Prostaglandinas e citocinas fazem duas coisas: (1) inflamam o local (vasodilatação, edema, vermelhidão) e (2) **sensibilizam nociceptores** — reduzem o limiar para disparo (o nociceptor passa a disparar com menor estímulo). Um AINE bloqueia a síntese de prostaglandinas (inibindo a enzima ciclooxigenase, COX-1 e COX-2). Resultado: menos inflamação, menos sensibilização do nociceptor, menos disparo do neurônio sensorial. A dor diminui porque *há menos sinal sendo mandado*, não porque o sinal foi apagado.\n\n**Bloqueio 2: Anestésicos Locais**\nAnestésicos locais como lidocaína e bupivacaína bloqueiam canais de sódio (Na+) nos neurônios sensoriais. Um nociceptor é uma célula viva que despolariza quando recebe estímulo. A despolarização funciona assim: (1) canal de Na+ abre, (2) Na+ entra, (3) potencial de membrana sobe, (4) quando atinge limiar, canais de Ca2+ abrem e o neurônio dispara um potencial de ação que viaja pelo axônio até a medula. Um anestésico local bloqueia essa corrente de Na+ — o nociceptor ainda *detecta* dano (ele sente TRPV1 ativado, P2X3 ativado), mas não consegue converter essa detecção em um potencial de ação. O sinal é abortado no seu ponto de origem. Resultado: localmente, nenhuma dor é sentida (por isso chamam de bloqueio *local* — você pode anestesiar apenas o dedo enquanto o resto do corpo funciona normalmente).\n\n**Bloqueio 3: Gabapentinoides e Bloqueadores de Canais de Cálcio na Medula**\nGabapentina (Neurontin) e pregabalina (Lyrica) não atuam diretamente nos nociceptores periféricos — atuam na *medula espinal*, na sinapse entre o nociceptor de primeira ordem e o neurônio de segunda ordem. Na medula, a transmissão de dor é glutamatérgica — o nociceptor libera glutamato na fenda sináptica. Gabapentina liga-se ao canal de cálcio Cav2.1 (N-type) no terminal pré-sináptico do nociceptor e reduz a entrada de Ca2+, o que reduz a liberação de glutamato. Com menos glutamato, o neurônio de segunda ordem dispara menos frequentemente. O resultado é uma redução do *ganho de transmissão* da dor. Importante: não é um bloqueio completo (como anestésico local), é uma redução do volume.\n\n**Bloqueio 4: Opioides (Morfina, Oxicodona, Tramadol)**\nOpioides atuam em múltiplos lugares, mas o efeito analógico principal vem dos receptores opioides μ no **tálamo**, **ACC** (córtex cingulado anterior) e **PAG** (substância cinzenta periaqueductal — um centro de controle de dor no tronco cerebral). Quando um opioide liga-se ao receptor μ, ele hiperpolariza neurônios talâmicos (aumenta o potencial de repouso, afastando-o do limiar de disparo), reduzindo a transmissão de sinais dolorosos para o cortex. Mais importante ainda, opioides *modulam circuitos de sentimento*: reduzem a ativação do ACC (que *sente* a dor como sofrimento). Resultado peculiar: um paciente sob opioides *ainda consegue reportar* \"tenho uma dor de 5/10\", mas a carga emocional dessa dor é zero — ele sabe que há estimulação nociceptiva, mas não *sofre*. É como se a dor virou notícia em vez de drama. Esse efeito é o por que opioides são tão viciantes (além da analgesia, há euforia — mas a analgesia vem primeiro e é o que torna o vício possível).\n\n**Bloqueio 5: Terapias Neuroplásticas**\nDor crônica é *aprendizagem*. Após semanas de dor, o sistema nervoso central *aprende* a interpretar certos sinais como dor, mesmo que o sinal periférico tenha desaparecido. Terapia cognitivo-comportamental (TCC) funciona **reescrevendo a memória** de dor. Você expõe o paciente gradualmente ao contexto que causa dor (no caso de síndrome de dor regional complexa, por exemplo, tocar a mão afetada), mas em um contexto seguro e controlado. O cérebro eventualmente *recalibra* sua interpretação — \"essa mão não é tão perigosa quanto pensei\". Mecanismo: reativação de memória de dor, seguida por reconsolidação com novo contexto. Envolve estruturas como hipocampo (memória) e prefrontal medial (contexto). Também há neuromoduladoras (estimulação da medula espinal, estimulação cerebral profunda) que promovem \"portões de dor fechados\" na medula espinal — o nociceptor dispara, mas a medula tem \"à porta fechada\", bloqueando transmissão sem envolver anestesia propriamente dita."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑤ Com O Que Se Articula: Dependências e Consequências",
+      "conteudo": "Para entender analgesia, você precisa entender que dor não vive isolada — ela é um fio em uma teia de sistemas corporais.\n\n**Pré-requisitos (sem os quais você não pode entender analgesia):**\n- *Biologia celular: sinalização intracelular* — receptores, canais iônicos, segundos mensageiros (cAMP, IP3). Sem isso, \"receptor opioide\" é apenas uma palavra.\n- *Anatomia do sistema nervoso* — as vias nociceptivas (trato espinotalâmico), o tálamo, o ACC, a PAG. Sem mapa, o bloqueio não faz sentido.\n- *Fisiologia do neurônio* — potencial de repouso, limiar de disparo, potencial de ação. Sem isso, você não entende por que um anestésico local funciona bloqueando Na+.\n- *Neurofarmacologia geral* — como fármacos atravessam a barreira hematoencefálica, como se ligam a receptores, farmacocinética (absorção, distribuição, metabolismo, eliminação).\n\n**Consequências futuras (o que você estudará depois):**\n- *Patologia de dor crônica* — em que circunstâncias a dor aguda vira crônica? Há mudanças estruturais no sistema nervoso central (sensibilização central, neuroplasticidade maladaptativa). Exemplo: neuropatia diabética, fibromialgia, síndrome pós-lyme.\n- *Semiologia de dor* — como examinamos um paciente com dor para descobrir a etiologia? Dor nociceptiva vs. neuropática vs. psicogênica têm apresentações diferentes (qualidade da dor, contexto, resposta a terapias).\n- *Clínica de dor aguda* — trauma, pós-cirúrgico, queimadura. Manejo multimodal (AINE + opioide + bloqueio regional).\n- *Clínica de dor crônica* — oncológica, reumatológica, neurológica. Estratégias diferentes (menos opioides, mais neuromoduladoras, mais TCC).\n- *Tolerância e dependência* — após semanas de opioides, o corpo *adapta-se*. Receptores são dessensibilizados. O paciente precisa de doses cada vez maiores (tolerância). Se parar abruptamente, sofre síndrome de abstinência (dependência). Esses são fenômenos neurofisiológicos, não moral fraqueza.\n- *Abuso de opioides* — há epidemia global de overdose por opioides (fentanil, oxicodona). Compreender o mecanismo de vício é crucial para segurança pública e medicina defensiva."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑥ Nome, Etimologia, Armadilhas de Nomenclatura",
+      "conteudo": "**ANALGESIA** (não confundir com anestesia)\n- *Analgesia* = negação de dor. Você *sente* toque, temperatura, pressão, mas não *sofre*.\n- *Anestesia* = negação de sensação. Você não sente nada — nem dor, nem toque, nem temperatura.\n- Diferença clínica: um anestésico local para cirurgia produz analgesia (cirurgião trabalha, paciente não sofre), não anestesia completa (paciente sente pressão, movimento). Se usasse anestesia verdadeira, paciente não seria capaz de reportar complicações (\"sua víscera explodiu\" — paciente não saberia).\n\n**NOCICEPÇÃO** (não confundir com dor)\n- *Nocicepção* = detecção de estímulo nocivo por nociceptores. É um processo **periférico e automático**.\n- *Dor* = experiência consciente e emocional de nocicepção. É um processo **central e subjetivo**.\n- Armadilha: um paciente com lesão medular completa (que perdeu sensação abaixo do nível de lesão) ainda tem nocicepção abaixo do nível — nociceptores disparam e mandão sinais para a medula. Mas ele *não sente dor* porque a medula não conecta ao cérebro. Seu sistema nociceptivo está funcionando (reflexos de retirada ainda funcionam), mas a dor não chega à consciência.\n\n**\"DOR NOTURNA\" vs \"DOR NEUROPÁTICA\"**\n- *Dor nociceptiva* (ou somática) = resultado direto de lesão de tecido. Queimadura, corte, inflamação. É proporcional à lesão. Se curares a lesão, a dor some.\n- *Dor neuropática* = resultado de lesão do *próprio sistema nervoso*. Neuropatia diabética, síndrome pós-lyme, neuralgia pós-herpética. Caracterizada por descrições estranhas (\"queimação\", \"choque elétrico\", \"formigamento\", \"dormência\"), distribui-se em padrão de dermátomo ou nervo, é *desproporcional* à lesão aparente (pode ter dor intensa apesar de lesão pequena). Responde mal a AINEs e opioides simples; responde bem a gabapentinoides e antidepressivos (que modulam descida de serotonina e noradrenalina).\n- Armadilha: \"dor neuropática\" não significa \"dor causada por nervos\", significa \"dor causada por *lesão* de nervos\". Toda dor envolve nervos, mas a distinção entre nociceptiva e neuropática é sobre *onde* o problema está (tecido vs. nervo).\n\n**\"OPIOIDES FRACOS\" vs \"OPIOIDES FORTES\"**\n- Essa distinção é farmacologicamente incorreta, mas está em uso clínico em muitos países.\n- *Farmacologicamente*: todos os opioides ligam-se ao mesmo receptor (μ, δ, κ). Diferem apenas em **afinidade** (quanto aderem ao receptor), **potência** (quanto efeito produzem por dose), e **duração de ação** (quanto tempo permanecem ligados).\n- Codeína (30-60 mg) é tão \"forte\" quanto morfina em ligação ao receptor μ, mas é menos **potente** porque menos da dose é convertida em forma ativa (metabolismo pelo CYP2D6).\n- Armadilha clínica: dizer \"vou prescrever opioide fraco\" pode significar que você usará codeína quando o paciente precisa de fentanil — a dor continuará, e você achará que o paciente é \"tolerante\" quando ele simplesmente precisa de mais potência. A escada de opioides (OMS) é mais precisa: codeína < tramadol < morfina < oxicodona < fentanil, em termos de potência-por-dose, não de \"força de ação\" (que não existe)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑦ Analogia Expandida: O Estádio de Futebol",
+      "conteudo": "Estenda a analogia do cinema para entender toda a cascata de analgesia de uma vez.\n\nImagine o **Estádio Maracanã durante um jogo importante do Brasil** (o corpo em lesão). Há **100 mil torcedores gritando** (nociceptores disparando). Esses gritos são tão altos que impossível jogar futebol (impossível funcionar com dor intensa).\n\nCinco estratégias para silenciar o estádio:\n\n1. **AINE/Corticoides (apagar o fogo):** Você entra no estádio e oferece aos torcedores um abaixo-assinado para voltar para casa. \"Vejam só, a lesão não é tão grave — vocês não precisam gritar tanto.\" Alguns torcedores entendem e saem. O volume cai de 100 mil para 60 mil.\n\n2. **Anestésico local (cortar o som):** Você coloca fones de ouvido nos 100 mil torcedores. Eles ainda querem gritar, mas ninguém ouve. O impacto é zero. O time joga sem ouvir barulho. (Imagine colocar fones em um nociceptor — ele dispara, mas o sinal não viaja).\n\n3. **Gabapentinoide (reduzir amplitude):** Você abaixa o volume dos alto-falantes (mas não os desliga). Os 100 mil torcedores gritam, mas o som que chega ao campo é um zumbido de fundo. Sutil, gerenciável.\n\n4. **Opioide (sedação do time):** Você coloca todo o time em sedação leve. Os torcedores continuam gritando 100 mil vozes. Mas o time não se importa mais — eles veem o barulho como uma mera notícia, não como uma afronta. Jogam tranquilos apesar do caos. (O corpo continua tendo nociceptação — o sinal chega ao cérebro — mas a amígdala e ACC não *sofrem* com isso).\n\n5. **Terapia comportamental (reeducação do torcedor):** Você traz os 100 mil torcedores e gradualmente os expõe a cenas de futebol calmo. Passado um tempo, eles recalibram: \"esse estádio não é tão perigoso\". Eles ainda gritam, mas com menos intensidade e menos medo. O estádio volta a 50 mil gritos, mas esses gritos têm menos carga emocional.\n\n**Mapeamento:**\n- Estádio = corpo\n- Torcedores = nociceptores periféricos\n- Som que sai do estádio = trato espinotalâmico\n- Transmissão do som para o campo = sinapses medulares\n- Time dentro do campo = circuitos cerebrais (ACC, tálamo, PAG)\n- Gritos que o time *sente* como significativos = emoção de dor (sofrimento)\n- Reeducação do torcedor = neuroplasticidade da memória de dor"
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Pause para consolidação",
+      "conteudo": "Você acabou de aprender que dor é mais que \"receptor ativado e sinal mandado\". Dor é um sistema de múltiplas camadas — detecção periférica, transmissão medular, processamento talâmico, sentimento emocional, memória e medo. Farmacologia de analgesia explora essa multiplicidade. Não há um \"remédio para dor\" porque não há um único lugar onde a dor \"mora\" — ela transita por todos esses lugares. Isso é liberdade: há sempre múltiplos pontos de entrada para intervenção."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑧ Imagem e Esquema: Visuais de Reforço",
+      "conteudo": "Três imagens consolidam compreensão:\n\n**Imagem 1: \"A Cascata Nociceptiva\" — esquema vertical**\nDesde a lesão de tecido (base) até a experiência consciente de dor (topo):\n- Base: Tecido lesado → Inflamação → Liberação de PGE2, TNF-α, citocinas\n- Nível 1: Nociceptor periférico (TRPV1, P2X3, ASIC ativados)\n- Nível 2: Axônio do nociceptor → Medula espinal\n- Nível 3: Sinapse medular (Substância P, Glutamato liberados)\n- Nível 4: Neurônio de segunda ordem → Trato espinotalâmico → Tálamo\n- Nível 5: Retransmissão talâmica → ACC (sentimento de dor) + S1 (localização)\n- Nível 6: Consolidação em amígdala (medo) e hipocampo (memória)\n\nCada nível tem seus bloqueadores:\n- Nível 1: AINE/Corticoides\n- Nível 2: Anestésicos locais\n- Nível 3: Gabapentinoides, bloqueadores de canais de Ca2+\n- Nível 5-6: Opioides, antidepressivos\n- Nível 6 (memória): TCC, EMDR, neuromoduladoras\n\n**Imagem 2: \"Receptores e Moléculas\" — closeup molecular**\nTRPV1 com capsaicina encaixada (vermelho-quente); ASIC com prótons acidificando (azul-frio); Nociceptor com canais de Na+ bloqueados por lidocaína (verde); Medula com terminal pré-sináptico de nociceptor com Ca2+ reduzido por gabapentina (magenta); Receptor opioide μ com morfina ligada (dourado); Tálamo com neurônio hiperpolarizado por opioide (cinza-sono).\n\n**Imagem 3: \"A Via Descendente de Inibição de Dor\" — circuito de recompensa**\nPAG (substância cinzenta periaqueductal) recebe inputs do ACC (\"essa dor é importante para mim?\") e de estruturas de recompensa (ventral tegmental area, nucleus accumbens — \"há esperança de alívio?\"). A PAG, se ativada, libera serotonina e noradrenalina descendentes que modulam a medula espinal, fechando a \"porta\" da dor. Opioides fortalecem essa circuitaria — ativam nucleus accumbens (recompensa) e PAG (inibição medular), criando a sensação de bem-estar junto com alívio de dor. Depressão reduz ativação da PAG (por isso deprimidos têm dor mais intensa e menos resposta a opioides — circuito de recompensa desativado). Esse entendimento explica por que antidepressivos ajudam em dor crônica: ativam circuit de recompensa."
+    },
+    {
+      "tipo": "contrafactual",
+      "titulo": "Pergunta contrafactual",
+      "conteudo": "E se a dor não existisse? Algumas pessoas têm mutações raras em genes de canais de sódio (SCN9A) que as tornam incapazes de sentir dor — insensibilidade congênita à dor. O que parecia ser dom (\"nunca sofro\") é, na verdade, maldição. Essas pessoas sofrem lesões gravíssimas porque não param sua ação — queimam as mãos no fogão, fraturam ossos sem perceber, desenvolvem úlceras não cicatrizadas. Mutilação progressiva é comum. A dor existe porque *salva vidas*. Analgesia é supressão seletiva e temporária de um mecanismo que, sem ela, seria fatal. Isso ressalta: analgesia não é eliminar um \"mal\", é circunstância — a dor é essencial até não ser mais, depois a dor vira doença. Fármacos distinguem quando."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "id": "s4-fisio-neuro-04",
+        "descricao": "Fisiologia do Sistema Nervoso: Neurônio e Sinapses",
+        "razao": "Entender potencial de ação, transmissão sináptica, e canais iônicos é fundamental"
+      },
+      {
+        "id": "s1-hist-02-004",
+        "descricao": "Histologia: Neurônio e Glia",
+        "razao": "Morfologia do nociceptor e suas extensões"
+      },
+      {
+        "id": "s4-bioquim-sinalizacao-intracelular",
+        "descricao": "Bioquímica: Sinalização Intracelular e Receptores",
+        "razao": "Mecanismo de ligação de moléculas a receptores (TRPV1, opioides, etc.)"
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s5-farma2-07-001",
+        "descricao": "Farmacologia: Antiinflamatórios Não-Esteroides (AINEs)",
+        "tipo": "ESPECIALIZACAO_FILHA",
+        "razao": "Bloqueio 1 detalhado: prostaglandinas, COX-1 vs COX-2, farmacocinética de ibuprofeno, naproxeno, inibidores seletivos de COX-2"
+      },
+      {
+        "id": "s5-farma2-07-002",
+        "descricao": "Farmacologia: Anestésicos Locais",
+        "tipo": "ESPECIALIZACAO_FILHA",
+        "razao": "Bloqueio 2 detalhado: canais de sódio, farmacocinética de lidocaína e bupivacaína, aplicações clínicas (bloqueios regionais, epidural, raquianestesia)"
+      },
+      {
+        "id": "s5-farma2-07-003",
+        "descricao": "Farmacologia: Gabapentinoides e Neuromoduladoras",
+        "tipo": "ESPECIALIZACAO_FILHA",
+        "razao": "Bloqueio 3 detalhado: gabapentina, pregabalina, mecanismo de canais de cálcio, aplicações em dor neuropática"
+      },
+      {
+        "id": "s5-farma2-07-004",
+        "descricao": "Farmacologia: Opioides",
+        "tipo": "ESPECIALIZACAO_FILHA",
+        "razao": "Bloqueio 4 detalhado: morfina, oxicodona, fentanil, tramadol, receptores opioides, tolerância, dependência, overdose, reversal com naloxona"
+      },
+      {
+        "id": "s5-farma2-07-005",
+        "descricao": "Farmacologia: Terapias Adjuvantes e Neuroplásticas",
+        "tipo": "ESPECIALIZACAO_FILHA",
+        "razao": "Bloqueio 5 detalhado: antidepressivos (duloxetina, amitriptilina), anticonvulsivantes, estimulação medular, TCC, manejo multimodal de dor crônica"
+      },
+      {
+        "id": "s7-mi1-cardio-dor-toracica",
+        "descricao": "Clínica: Dor Torácica e Síndromes Coronárias",
+        "tipo": "CASCATA_CAUSAL",
+        "razao": "Dor isquêmica do miocárdio: entendimento de nociceptação cardíaca e farmacologia de alívio (nitratos, betabloqueadores, opioides em IAM)"
+      },
+      {
+        "id": "s7-mi1-neuro-cefaleias",
+        "descricao": "Clínica: Cefaleiras e Enxaqueca",
+        "tipo": "CASCATA_CAUSAL",
+        "razao": "Dor neuropática do SNC: sensibilização trigeminal, papel de serotonina, farmacologia de triptanos e antidepressivos"
+      },
+      {
+        "id": "s8-mi2-reumato-dolor",
+        "descricao": "Clínica: Síndromes Reumáticas e Dor Articular Crônica",
+        "tipo": "CASCATA_CAUSAL",
+        "razao": "Aplicação clínica: dor em artrite reumatoide, osteoartrite, seleção de fármacos, manejo multimodal com AINE, biológicos, opioides"
+      },
+      {
+        "id": "s8-anest-dor-pos-op",
+        "descricao": "Anestesiologia: Manejo de Dor Pós-Operatória",
+        "tipo": "ALVO_TERAPEUTICO",
+        "razao": "Aplicação prática: analgesia preventiva, multimodalidade (local + AINE + opioide + gabapentinoide), técnicas de bloqueio regional"
+      },
+      {
+        "id": "s6-neuro-neuropatias",
+        "descricao": "Neurologia: Neuropatias Periféricas",
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "razao": "Dor neuropática: apresentação clínica, diferencial de dor nociceptiva, semiologia de neuropatia, resposta diferencial a fármacos"
+      }
+    ],
+    "laterais": [
+      {
+        "id": "s4-fisio-neuro-04-001",
+        "descricao": "Fisiologia: Potencial de Repouso e Potencial de Ação",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "razao": "Mesmos princípios de despolarização em nociceptor, neurônio medular, neurônio talâmico"
+      },
+      {
+        "id": "s5-semi-neuro-03",
+        "descricao": "Semiologia Neurológica: Avaliação de Dor",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "razao": "Exame clínico de dor: diferenciar nociceptiva vs neuropática, teste de alodínia, hiperalgesia, dermátomos"
+      },
+      {
+        "id": "s4-bioquim-inflamacao",
+        "descricao": "Bioquímica: Cascata Inflamatória",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "razao": "Prostaglandinas, citocinas, citocinas em inflamação e em dor — mecanismo integrado"
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "fc-s5f7-001",
+      "tipo": "por_que",
+      "pergunta": "Por que a dor existe? Qual é o propósito biológico da dor aguda versus dor crônica?",
+      "resposta": "Dor aguda é alarme de sobrevivência: interrompe ação prejudicial, imobiliza para cicatrização, programa memória de risco. Dor crônica **sem causa ativa** é doença — o alarme não cumpre mais função de proteção. Essa distinção justifica por que bloqueamos dor crônica agressivamente (ela não salva mais), mas preservamos dor aguda em exame clínico (ela informa localização de lesão).",
+      "nivel_alvo": 4,
+      "dica_mnemonica": "Dor aguda = proteção. Dor crônica = problema."
+    },
+    {
+      "id": "fc-s5f7-002",
+      "tipo": "mecanismo",
+      "pergunta": "Descreva a cascata de 6 andares desde nociceptor periférico até experiência consciente de dor. Em que andar cada classe de fármaco atua?",
+      "resposta": "Andar 1 (lesão + inflamação) → Andar 2 (nociceptor ativado) → Andar 3 (axônio do nociceptor) → Andar 4 (sinapse medular) → Andar 5 (tálamo) → Andar 6 (ACC + amígdala + hipocampo = sentimento + medo + memória). AINEs/Corticoides atuam em Andar 1. Anestésicos locais em Andar 2-3. Gabapentinoides em Andar 4. Opioides em Andares 5-6. Terapias neuroplásticas em Andar 6.",
+      "nivel_alvo": 4,
+      "dica_mnemonica": "Cascata de dor tem 6 andares; cada fármaco fecha uma porta diferente."
+    },
+    {
+      "id": "fc-s5f7-003",
+      "tipo": "contrafactual",
+      "pergunta": "E se houvesse um medicamento que apagasse **completamente** a dor sem efeitos colaterais? Seria sempre vantajoso usá-lo?",
+      "resposta": "Não. Pacientes com insensibilidade congênita à dor (mutação SCN9A) sofrem mutilação progressiva — queimaduras, fraturas não percebidas, úlceras não cicatrizadas. Dor carrega informação crítica de perigo. Um paciente que não sente dor pós-cirúrgica continuaria de pé quando deveria repouser, reabrindo ferida. Analgesia perfeita seria morte lenta por acidente. Daí o princípio: analgesia é supressão *seletiva* e *temporária* de um sistema que, sem ela, seria fatal.",
+      "nivel_alvo": 5,
+      "dica_mnemonica": "Sem dor, sem vida. Com dor demais, sem qualidade de vida. Analgesia é balanceamento existencial."
+    },
+    {
+      "id": "fc-s5f7-004",
+      "tipo": "clinico",
+      "pergunta": "Um paciente com neuropatia diabética reporta \"queimação\" e \"choque elétrico\" nos pés. Será que ibuprofeno é suficiente? Por quê?",
+      "resposta": "Não. Neuropatia diabética é dor neuropática (lesão do nervo periférico), não dor nociceptiva (lesão de tecido inflamado). AINEs bloqueiam prostaglandinas periféricas — ineficazes em dor do nervo danificado. Neuropatia responde melhor a gabapentinoides (gabapentina, pregabalina) ou antidepressivos (duloxetina, amitriptilina) que modulam serotonina/noradrenalina descendentes. Ignorar tipo de dor leva a prescrição ineficaz e paciente desesperado.",
+      "nivel_alvo": 4,
+      "dica_mnemonica": "Neuropática ≠ Nociceptiva. Ibuprofeno mata dor inflamatória, não dor de nervo quebrado."
+    },
+    {
+      "id": "fc-s5f7-005",
+      "tipo": "comparacao",
+      "pergunta": "Diferencia analgesia de anestesia. Qual é o valor clínico de cada uma?",
+      "resposta": "Analgesia = negação de dor apenas; você sente toque, pressão, temperatura. Anestesia = negação de toda sensação. Analgesia é mais valiosa em cirurgia com anestésico local (paciente sente pressão do instrumental, pode reportar \"aqui dói diferente\" se há complicação intra-operatória). Anestesia é necessária em procedimentos extensos (anestesia geral) ou quando paciente não pode cooperar. Confundir os dois leva a prescrição errada — analgesia isolada não sufoca todo incômodo, anestesia isolada paralisa percepção.",
+      "nivel_alvo": 3,
+      "dica_mnemonica": "Analgesia = sem dor, com toque. Anestesia = sem nada."
+    },
+    {
+      "id": "fc-s5f7-006",
+      "tipo": "etimologia",
+      "pergunta": "O termo 'opioide' vem de 'opium'. Qual é a estrutura química em comum entre morfina natural (de papoula) e oxicodona sintética?",
+      "resposta": "Ambas têm núcleo fenantrenoide com três anéis fusionados. Essa estrutura encaixa perfeitamente em receptores opioides μ, δ, κ. A morfina é alcaloide natural extraído de Papaver somniferum. Oxicodona é semissintética (derivada de tebaína, outro alcaloide da papoula). Fentanil é totalmente sintético, mas mimetiza mesma conformação molecular. Estrutura = função: todas ligam receptor opioide porque têm forma correta.",
+      "nivel_alvo": 3,
+      "dica_mnemonica": "Morfa = papoula. Oxi = modificada. Fenta = feita. Mesma chave, cadeados diferentes."
+    },
+    {
+      "id": "fc-s5f7-007",
+      "tipo": "sintese_transdisciplinar",
+      "pergunta": "Integrando anatomia, fisiologia e farmacologia: um paciente sofre acidente vascular cerebral isquêmico em tálamo. Ele pode ou não sentir dor em lado do corpo afetado. Por quê?",
+      "resposta": "Se o AVC danificar o núcleo VPL/VPM do tálamo (retransmissão talâmica de dor), o paciente pode perder dor no lado afetado, apesar de nociceptores periféricos e medula funcionando normalmente. Inversamente, se o AVC danificar apenas S1 (córtex somatossensorial), ele perde localização da dor mas ainda *sente* dor (\"sinto dor, mas não sei onde\"). Isso ilustra que cada andar da cascata nociceptiva contribui diferentemente: periferia = detecção, medula = transmissão, tálamo = retransmissão e emoção, cortex = localização. Lesão em cada nível produz déficit específico.",
+      "nivel_alvo": 5,
+      "dica_mnemonica": "Tálamo danificado = dor perdida. Cortex danificado = dor sem endereço. Lesão revela arquitetura."
+    },
+    {
+      "id": "fc-s5f7-008",
+      "tipo": "armadilha",
+      "pergunta": "\"Opioide fraco\" é um termo comum, mas farmacologicamente incorreto. O que realmente diferencia opioides?",
+      "resposta": "Não há opioides \"fracos\" e \"fortes\" — há opioides com **potências diferentes** (quanto efeito por dose) e **afinidades diferentes** (quanto aderem ao receptor). Codeína tem afinidade alta pelo receptor μ, mas **potência baixa** porque apenas 5-10% é metabolizada em forma ativa (O-demetilação pelo CYP2D6). Morfina tem afinidade e potência equivalentes. Fentanil é 100x mais potente que morfina (dose de 0,1 mg fentanil ≈ 10 mg morfina). Se prescrever \"opioide fraco\" quando paciente precisa \"opioide forte\", você está sendo vago — use dose apropriada em vez de rótulo. Escada OMS (codeína → tramadol → morfina → oxicodona → fentanil) é sobre potência, não \"força\".",
+      "nivel_alvo": 4,
+      "dica_mnemonica": "Sem \"fracos/fortes\". Com afinidade, potência, duração. Use números, não rótulos."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "id": "caso-s5f7-001",
+      "titulo": "Queimadura em Chef: Dor Aguda vs. Crônica",
+      "contexto": "Chef de 45 anos sofre queimadura de 2º grau em antebraço durante serviço. Primeira semana: dor intensa, toma ibuprofeno regularmente, consegue dormir. Segunda semana: dor menor, continua ibuprofeno por precaução. Terceira semana: ferida cicatriza, tira o curativo. Quarta semana: sente coceira e dor ocasional, toma ibuprofeno quando sente dor. Oito semanas depois: ferida está cicatrizada, mas continua sentindo \"queimação\" e \"formigamento\" que o acorda à noite.",
+      "cascata_diagnostica": {
+        "causa": "Queimadura térmica → lesão de espessura total de derme → morte de células e liberação de citocinas pró-inflamatórias (TNF-α, IL-1, IL-6)",
+        "estrutura": "Nociceptores periféricos em hiperexcitabilidade (sensibilização periférica). Medula espinal com aumento de substância P e glutamato (sensibilização central). Possível neuropatia pós-queimadura se cicatrização irregular aprisionou nervos. Hipótese: irritação nociceptor intacto vs. neuropatia verdadeira.",
+        "disfuncao": "Dor nociceptiva aguda (semanas 1-3) resolvida. Dor neuropática crônica (semana 8+) emergente — nociceptor ainda disparando apesar de lesão cicatrizada.",
+        "sintoma": "\"Queimação e formigamento noturno\" (descrição neuropática). Qualidade diferente da queimadura original (que era \"dor aguda, ardente, cessava quando parava de trabalhar\"). Nova dor é \"autossustentada\", independente de input nóxico novo.",
+        "consequencia": "Se não tratada, risco de dor crônica persistente (síndrome pós-queimadura). Impacto funcional crescente (noites mal dormidas, ansiedade, depressão secundária elevando limiar de dor). Custo de oportunidade médica: terapia iniciada agora (gabapentina 300 mg x 3/dia, TCC para reconsolidação de memória de dor) tem chance maior de sucesso que começar em 6 meses após consolidação de circuito de memória."
+      },
+      "pergunta_chave": "Em que ponto deve-se trocar de analgésico (AINE para gabapentinoide)? Qual é a evidência clínica de mudança de dor nociceptiva para neuropática?",
+      "resposta_esperada": "Sinais de transição: descrição qualitativa muda (\"aguda\" para \"queimação/formigamento\"), duração alonga (de 3h após trabalho para 24h espontânea), distribuição pode se expandir (além da queimadura original), resposta a AINE diminui (ibuprofeno que funcionava em semana 2 não funciona em semana 8). Fisiopatologia: sensibilização central = nociceptor agora está acoplado a neurônios NMDA na medula (mecanismo de gabapentinoide). Ibuprofeno não alcança medula em concentrações suficientes. Mudança de fármaco é baseada em clínica, não em tempo fixo — seria errado esperar 12 semanas se sinais neuropáticos emergem em semana 4."
+    },
+    {
+      "id": "caso-s5f7-002",
+      "titulo": "Cardiopatia Isquêmica: Dor Referida e Anatomia Nociceptiva",
+      "contexto": "Homem 58 anos, hipertenso, com história familiar de IAM, vai ao dentista para extrair molar superior esquerdo. Após anestesia local com lidocaína, sente incômodo na mandíbula. Dentista interpreta como falha de anestesia, injeta mais 2% lidocaína. Dor persiste. Paciente relata que sente \"pressão\" no peito e sensação de \"gelo\" descendo para braço esquerdo. Dentista realiza RCP suspeitando de síncope. Horas depois, ECG mostra ondas Q em parede anterior, troponina elevada. Diagnóstico final: IAM anterior com dor referida para mandíbula (convergia com zona de inervação trigeminal por convergência em núcleo medular de V).",
+      "cascata_diagnostica": {
+        "causa": "Oclusão de ADA → isquemia de miocárdio anterior → morte celular cardíaca → liberação de ATP e adenosina (sinais de alarme) ativam nociceptores cardíacos via receptores P2X, A2A",
+        "estrutura": "Nociceptores cardíacos (inervação simpática) e mediastinais mandam sinais via nervos torácicos ao segmento medular T1-T4. Esses mesmos segmentos recebem inputs de nociceptores da mandíbula (via nervo trigêmeo V→núcleo medular) e braço esquerdo (via nervos braquiais C5-T1). Convergência de inputs em mesma lâmina medular IX de Rexed → neurônio de segunda ordem **multissensorial** que não consegue diferenciar origem da nociceptação.",
+        "disfuncao": "Dor referida: cérebro interpreta sinal de dor como originário da mandíbula (estrutura mais frequentemente lesada naquele dermátomo) em vez de coração (estrutura profunda raramente lesada). Analogia: como se o correio mandasse a correspondência de um endereço errado porque usou código postal compartilhado.",
+        "sintoma": "Dor mandibular que não melhora com anestésico local (porque origem não é mandíbula). Pressão torácica (descrita como \"dor de dente\" porque estava focado no dente). Falta de reconhecimento levou a diagnóstico quase-fatal (RCP desnecessária, tempo perdido para reperfusão).",
+        "consequencia": "IAM anterior extenso com morte de miocárdio anterior (Q waves permanentes em ECG). Risco de complicações (insuficiência cardíaca, arritmia, morte súbita). Aprendizado: dor referida é fenômeno neuroanatômico legítimo, não imaginação de paciente. Quando dor não responde ao tratamento esperado (anestesia local falhou paradoxalmente), pensar em origem alternativa."
+      },
+      "pergunta_chave": "Por que 'mais anestésico local' não resolveu a dor, e por que o coração refere dor para a mandíbula?",
+      "resposta_esperada": "Anestésico local bloqueia nociceptores periféricos de mandíbula, mas a dor vinha do coração — bloqueio local de mandíbula é irrelevante. Dor referida: nociceptores cardíacos (inervação simpática, segmentos torácicos) e nociceptores mandibulares (trigêmeo) convergem na mesma lâmina medular (IX de Rexed). Neurônio de segunda ordem recebe inputs de duas estruturas periféricas diferentes no mesmo dermátomo. Cérebro, evolutivamente, assume que input somático (mandíbula) é mais provável que input visceral (coração profundo). Portanto, interpreta dor como mandibular. Fenômeno é determinístico pela anatomia da convergência espinal, não por psicologia — por isso é real, não é queixa somatoforme. Seria errado anestesiar o paciente completamente para evitar dor (opioides para IAM podem mascarar deterioração clínica). Correto: reconhecer padrão de dor referida, correlacionar com clínica (pressão torácica + dispneia), fazer ECG STAT, iniciar terapia coronária urgente."
+    }
+  ],
+  "midia": {
+    "imagens": [
+      {
+        "id": "img-s5f7-001",
+        "titulo": "Cascata Nociceptiva: 6 Andares de Processamento de Dor",
+        "descricao": "Esquema vertical mostrando desde lesão de tecido (base) até memória emocional de dor (topo). Cada andar tem cor diferente (vermelho=inflamação, azul=transmissão, verde=tálamo, roxo=emoção, cinza=memória). Ao lado de cada andar, ícone do fármaco que bloqueia naquela etapa.",
+        "prompt_ia": "Create a detailed medical illustration showing the 6-level nociceptive cascade from tissue injury at the base to emotional memory of pain at the top. Use a vertical flow design. Level 1 (red) shows tissue damage with inflammatory mediators (TNF-α, PGE2). Level 2 (orange) shows the nociceptor with TRPV1 and P2X3 channels. Level 3 (yellow) shows the nociceptor axon entering spinal cord. Level 4 (green) shows the synapse in spinal dorsal horn with substance P and glutamate release. Level 5 (blue) shows the thalamus with second-order neurons. Level 6 (purple) shows cortical areas (ACC, S1, amygdala, hippocampus) processing emotional and memory aspects. On the right side, place icons or labels of drugs that block each level: NSAIDs/Steroids at Level 1, Local anesthetics at Levels 2-3, Gabapentinoids at Level 4, Opioids at Levels 5-6. Use medical colors (blues, greens, reds for inflammation). Add labels in Portuguese.",
+        "estilo_visual": "Medical illustration, anatomy textbook style, clear labels, color-coded by level"
+      },
+      {
+        "id": "img-s5f7-002",
+        "titulo": "Receptores e Canais: Moléculas Chave de Analgesia",
+        "descricao": "Close-up molecular mostrando TRPV1 ativado por capsaicina (vermelho-quente), ASIC ativado por prótons (azul-frio), nociceptor com canais de Na+ bloqueados por lidocaína (verde), medula com Ca2+ reduzido por gabapentina, receptor opioide com morfina ligada. Cada molécula mostrada com estrutura simplificada.",
+        "prompt_ia": "Create a molecular detail illustration showing key receptors and channels involved in analgesia. Panel 1: TRPV1 channel on nociceptor with capsaicin molecule binding (red, showing heat sensation). Panel 2: ASIC channel with acidic H+ ions entering (blue, showing cold/acid sensation). Panel 3: Nociceptor axon with Na+ channels blocked by local anesthetic lidocaine molecules (green blocking). Panel 4: Spinal cord synapse showing presynaptic terminal with Cav2.1 (N-type) calcium channel reduced by gabapentin (magenta inhibition). Panel 5: Opioid receptor μ on neuronal membrane with morphine molecule docked (gold). Each panel should show the molecular structure in simplified style (not full atomic detail, but recognizable drug shapes). Use arrows to show 'blocked' or 'activated' states. Include Portuguese labels.",
+        "estilo_visual": "Molecular illustration, drug structure focus, color-coded by mechanism, biochemistry textbook style"
+      },
+      {
+        "id": "img-s5f7-003",
+        "titulo": "Via Descendente de Inibição de Dor: Circuito Brainstem-Spinal",
+        "descricao": "Mostra PAG (substância cinzenta periaqueductal) recebendo inputs de ACC (consciência de dor) e VTA/nucleus accumbens (sistema de recompensa). Setas descendentes de serotonina e noradrenalina chegam à medula espinal, modulando porta de dor no corno dorsal. Opioides fortalecem esse circuito.",
+        "prompt_ia": "Create a neural circuit diagram showing the descending pain inhibition pathway (supraspinal pain modulation). Show: Rostral structures: ACC (anterior cingulate cortex) on top left, sending 'pain is important?' signal. VTA (ventral tegmental area) and nucleus accumbens on top center, sending 'reward available?' signal. These converge on PAG (periaqueductal gray) in brainstem (center). From PAG, thick arrows descend to spinal dorsal horn (bottom). In dorsal horn, show monoamine terminals releasing serotonin (red dots) and noradrenaline (blue dots) that modulate nociceptive transmission (closing the pain gate). Show opioid receptors on PAG neurons, with morphine/opioid molecules binding to enhance serotonin and noradrenaline release. Use anatomically accurate positions. Include Portuguese labels. Show feedback loop: opioid binding → enhanced monoamine release → gate closure → reduced pain signal reaching brain → reward signal strengthens.",
+        "estilo_visual": "Neuroanatomy diagram, circuit diagram style, color-coded by neurotransmitter, brain atlas accuracy"
+      }
+    ],
+    "videos_scripts": [],
+    "esquemas_mnemonica": [
+      {
+        "id": "mnem-s5f7-001",
+        "titulo": "5 Bloqueios de Dor em Contexto Clínico",
+        "mnemonica": "**LINGO** para lembrar dos 5 bloqueios:\n\n**L**ocal = Anti-inflamatório Periférico (AINE, Corticoide) — apagar o fogo lá fora\n\n**I**njury-site = Anestésico Local — bloqueio do fio\n\n**N**eural = Gabapentinoide — reduzir transmissão medular\n\n**G**rand = Opioide (Grande efeito) — sedação emocional de dor\n\n**O**ver-time = Terapia Neuroplástica — reescrever memória ao longo do tempo\n\nAlternativa: **ALGOA** (dor em grego + português para \"depois\"):\n- **A**ntinflamatório (periférico)\n- **L**ocal anesthetic (fio)\n- **G**abapentinoide (medular)\n- **O**opioide (cerebral)\n- **A**djuvant/After-work (neuroplasticidade)"
+      }
+    ]
+  },
+  "metricas_estudo": {
+    "tempo_estimado_minutos": 12,
+    "tempo_revisao_minutos": 4,
+    "numero_flashcards": 8,
+    "numero_casos_clinicos": 2,
+    "numero_imagens": 3,
+    "complexidade_cognitiva": "alta",
+    "recomendacao_revisao_srs": "intervalo_inicial_3_dias",
+    "dificuldade_esperada_estudante": "média-alta",
+    "taxa_retencao_esperada_semana1": 0.65,
+    "taxa_retencao_esperada_semana4": 0.80
+  },
+  "fonte": {
+    "data_consulta": "2026-07-04",
+    "referencias": [
+      "Goodman LS, Gilman A. The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2017. Cap 28-29 (Pain and Analgesia).",
+      "Rang HP, Dale MM, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Cap 41-43 (Analgesics).",
+      "Portenoy RK, Bruera E. CanPain: Handbook of Cancer Pain Management. 3rd ed. Oxford University Press; 2016.",
+      "Raja SN, Carr DB, Cohen M, et al. The revised International Association for the Study of Pain definition of pain: concepts, challenges, and compromises. Pain. 2020;161(9):1976-1982. doi:10.1097/j.pain.0000000000001939",
+      "Woolf CJ, Salter MW. Neuroinflammation and neuropathic pain: mechanisms and therapeutic targets. Semin Immunopathol. 2016;38(3):369-386. doi:10.1007/s00281-016-0551-7",
+      "Ossipov MH, Dussor GO, Porreca F. Central modulation of pain. J Clin Invest. 2010;120(11):3779-3787. doi:10.1172/JCI43766",
+      "Fields HL, Basbaum AI. Central nervous system mechanisms of pain modulation. In: Jameson JL, Fauci AS, Kasper DL, et al, eds. Harrison's Principles of Internal Medicine. 21st ed. McGraw-Hill; 2021. Cap 12."
+    ],
+    "data_ultima_atualizacao": "2026-07-04",
+    "revisor": "não revisado ainda",
+    "status_verificacao": "autor confiança 8/10 — dados farmacológicos de referências estabelecidas, mas mecanismo de dor neuropática em pesquisa ativa (revisar em 1-2 anos)"
+  }
+}

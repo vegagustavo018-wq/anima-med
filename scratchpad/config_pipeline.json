@@ -1,0 +1,34 @@
+{
+  "pipeline": "ped2_lote1_completo",
+  "data": "2026-07-03",
+  "total_blocos": 12,
+  "fases": {
+    "producao": {
+      "status": "em_execucao",
+      "agentes": 3,
+      "blocos_por_agente": 4,
+      "arquivos_esperados": [
+        "ped2_lote1_blocos_001-004.json",
+        "ped2_lote1_blocos_005-008.json",
+        "ped2_lote1_blocos_009-012.json"
+      ]
+    },
+    "revisao": {
+      "status": "aguardando_producao",
+      "juizes": 3,
+      "adversarios": 1,
+      "total_avaliacoes": 48,
+      "escalação": "paralela_por_bloco"
+    },
+    "integracao": {
+      "status": "aguardando_revisao",
+      "responsavel": "integrador_unico",
+      "output_final": "ped2_lote1_final.json"
+    }
+  },
+  "metricas_esperadas": {
+    "aprovacao_minima": 0.85,
+    "blocos_sem_revisao": 10,
+    "blocos_com_revisao": 2
+  }
+}

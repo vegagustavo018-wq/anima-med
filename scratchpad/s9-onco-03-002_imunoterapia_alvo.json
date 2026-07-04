@@ -1,0 +1,260 @@
+{
+  "blocos": [
+    {
+      "resumo_id": "s9-onco-03-002",
+      "no_pai_id": "s9-onco-03-000",
+      "nos_filhos_ids": [],
+      "conexoes_laterais_ids": [],
+      "metadata": {
+        "titulo": "Imunoterapia e Terapia Alvo",
+        "subtitulo": "Como o tumor escapa do corpo e como nós vencemos essa fuga",
+        "semestre": 9,
+        "disciplina": "oncologia",
+        "sistema_corporal": "multissistêmico",
+        "profundidade_arvore": 3,
+        "importancia": 5,
+        "dificuldade": 4,
+        "tempo_leitura_minutos": 11,
+        "status": "completo",
+        "data_criacao": "2026-07-03",
+        "data_ultima_revisao": "2026-07-03",
+        "versao": "1.0",
+        "tags": ["oncologia", "imunoterapia", "terapia_alvo", "checkpoint_imunologico", "mutacoes", "s9"],
+        "nivel": "CORE",
+        "tipo": "especialidade_oncologica",
+        "lentes": ["correlacao_ciencias_basicas", "conduta"]
+      },
+      "resumo_conciso": "O tumor não morre por acaso. Ele engana o sistema imune (liga um freio celular chamado PD-L1/PD-1) e cresce em mutações específicas que o tornam viciado em sinalizações anormais (EGFR, BRAF, ALK). Imunoterapia solta esse freio; terapia alvo mata a dependência. Dois caminhos radicalmente diferentes de salvar o mesmo paciente.",
+      "narrativa": [
+        {
+          "tipo": "texto",
+          "etapa": 1,
+          "titulo": "Por Quê — O Tumor Engana o Corpo",
+          "conteudo": "Você tem uma célula cancerosa dentro do seu pulmão agora. Seu sistema imune a vê. Linfócitos T (aqueles soldados que aprendem a reconhecer o inimigo) já a marcaram como estranha. Mas ela não morre.\n\nPor quê?\n\nPorque aquele tumor ligou um 'freio' molecular. A célula cancerosa começa a produzir PD-L1, uma proteína que funciona como um 'sinal de trégua'. Quando PD-L1 se encaixa no receptor PD-1 (que fica na superfície do linfócito T), transmite uma mensagem: 'Desista. Vou embora. Não me ataque.' O linfócito recebe esse sinal inibitório, perde a motivação e sai. O tumor continua comendo.\n\nAlém disso, em muitos cânceres, a célula cancerosa é **dependente** de uma mutação específica. Uma célula de pulmão tem uma mutação no gene EGFR (receptor do fator de crescimento epidérmico). Essa mutação faz a proteína EGFR ficar sempre 'ligada', mandando sinais de crescimento 24/7. A célula virou viciada — sem aquele sinal contínuo, ela morre. O problema é que nós bloqueamos a sinalização, e a célula morre; deixamos ela continuar, e ela cresce.\n\nPrecisamos de duas estratégias: soltar o freio imunológico (para que o T ataque de novo) ou matar a dependência (para que a célula entre em colapso)."
+        },
+        {
+          "tipo": "texto",
+          "etapa": 2,
+          "titulo": "Como Se Resolve — Duas Soluções",
+          "conteudo": "**Solução 1: Bloqueia o Freio (Imunoterapia).**\n\nCrie um anticorpo que se encaixa em PD-L1 (ou em PD-1, que dá no mesmo). Aquele sinal de trégua não chega mais. O linfócito T continua atacando. A célula cancerosa, sem seu escudo molecular, morre.\n\n**Solução 2: Mata a Dependência (Terapia Alvo).**\n\nCrie uma molécula pequena (um inibidor) que entra na célula e bloqueia a quinase EGFR (ou BRAF, ou ALK, dependendo da mutação). A sinalização oncogênica para abruptamente. A célula, dependente 100% daquele sinal, entra em apoptose. Morre de abstinência.\n\nNenhuma menção a nomes de fármacos aqui — só a lógica. Um bloco filho vai detalhar regimes específicos (nivolumab vs pembrolizumab, gefitinib vs erlotinib). Este bloco é o conceito: como as duas estratégias funcionam em paralelo."
+        },
+        {
+          "tipo": "texto",
+          "etapa": 3,
+          "titulo": "Do Que É Feito — Componentes Moleculares",
+          "conteudo": "**Componente 1: Inibidores de Checkpoint Imunológico (Checkpoint Inhibitors).**\n\nSão anticorpos monoclonais — moléculas gigantes desenhadas para se encaixar em pontos específicos da célula. Três alvos principais:\n- **Anti-PD-1**: bloqueia o receptor PD-1 no linfócito T. Impede que a célula cancerosa 'desligue' o T.\n- **Anti-PD-L1**: bloqueia o ligante PD-L1 na célula cancerosa. Impede que o tumor envie o sinal 'não me mate'.\n- **Anti-CTLA-4**: bloqueia outro checkpoint inibitório (mais antigo, menos usado agora). Funciona em estágio diferente da resposta T.\n\nMecanismo: esses receptores/ligantes são moléculas de superfície — proteínas que ficam expostas. O anticorpo se encaixa como chave em fechadura, bloqueia fisicamente a ligação. PD-L1 e PD-1 não conseguem se encontrar. Sem sinal 'desista', o T continua matando.\n\n**Componente 2: Inibidores de Tirosina Quinase (TKIs).**\n\nSão moléculas pequenas que ENTRAM nas células (diferente dos anticorpos, que ficam fora). Bloqueiam a quinase mutada que a célula cancerosa ficou viciada:\n- **TKIs de EGFR**: bloqueiam a quinase EGFR quando mutada (muito comum em câncer de pulmão de não-fumantes).\n- **TKIs de BRAF**: bloqueiam BRAF-V600E (frequente em melanoma).\n- **TKIs de ALK**: bloqueiam ALK (translocação ALK em alguns linfomas e cânceres de pulmão).\n\nMecanismo: a quinase é uma enzima que funciona transferindo fosfato para outras proteínas, ativando sinalizações (PI3K/Akt, MAPK/ERK, etc.). A célula cancerosa virou dependente dessa cascata contínua de fosforilação. O TKI se encaixa no sítio de ligação de ATP (moeda energética) — sem ATP, a quinase não funciona. A cascata de sinalização para. A célula, que programou sua morte apoptótica dependendo daquele sinal (para evitar crescimento descontrolado), ativa a apoptose. Morre.\n\n**Componente 3 (futuro, citado aqui).**\n\nCAR-T: células T geneticamente modificadas ex vivo para expressar um receptor quimérico (CAR) que reconhece antígenos tumorais específicos. Mais usadas em hematologia (leucemias, linfomas). Tecnologia de ponta, requer modificação genética.\n\n**Por Que Essas Moléculas Funcionam?**\n\nPorque exploram vulnerabilidades estruturais do tumor. O tumor não escolheu esse checkpoint ou essa mutação por querer — escolheu porque ambos o deixam vivo. Quando você remove a vantagem (soltando o freio ou matando a dependência), o tumor perde o maior trunfo que tem."
+        },
+        {
+          "tipo": "texto",
+          "etapa": 4,
+          "titulo": "Como Funciona — Mecanismo Célula por Célula",
+          "conteudo": "**Cenário A: Imunoterapia com Anti-PD-1.**\n\nAto 1 — Normal, sem tratamento:\n- Célula T vê célula cancerosa (via TCR reconhecendo antígeno tumoral).\n- Linfócito T está pronto para atacar.\n- Célula cancerosa expressa PD-L1.\n- PD-L1 se encaixa em PD-1 (receptor no T).\n- Sinal 'desista' chega ao T.\n- T entra em anergia (desativação), sai de cena.\n- Tumor continua crescendo.\n\nAto 2 — Com anti-PD-1:\n- Anticorpo anti-PD-1 chega e se encaixa em PD-1 primeiro.\n- PD-L1 não consegue mais acessar PD-1 (ocupado pelo anticorpo).\n- Sinal 'desista' não é transmitido.\n- T continua ativado, continua secretando citocinas (IFN-gamma, TNF-alpha).\n- T mata a célula cancerosa.\n\n**Cenário B: Terapia Alvo com Inibidor de EGFR (ex: gefitinib).**\n\nAto 1 — Normal, sem tratamento (célula com EGFR mutado):\n- EGFR mutado (ex: exon 19 deletado) está sempre 'ligado'.\n- Mesmo sem fator de crescimento epidérmico (EGF) no meio extracelular, EGFR já está auto-ativado.\n- Quinase EGFR fosforila proteínas downstream: GRB2, SOS, ativando MAPK/ERK pathway.\n- Sinalização PI3K/Akt também ativada.\n- Célula recebe 'crescer, dividir' 24/7.\n- Célula entra em ciclo de divisão.\n- Tumor cresce.\n\nAto 2 — Com inibidor de EGFR (gefitinib):\n- Gefitinib (molécula pequena) atravessa membrana celular, entra no citoplasma.\n- Encaixa-se no ATP binding site de EGFR.\n- EGFR quinase não consegue transferir ATP → não consegue fosforilar seus substratos.\n- MAPK/ERK pathway interrompe.\n- Sinalização oncogênica para abruptamente.\n- Célula, que foi programada para sofrer apoptose (morte programada) se não receber aquele sinal contínuo, ativa caspases.\n- Célula morre por apoptose.\n\n**Por Que Não Matamos com Imunoterapia e Terapia Alvo Juntos?**\n\nPodemos, em certos contextos. Mas a prioridade é diferente: (1) Se tumor tem mutação EGFR, terapia alvo é primeira linha porque mata direto. (2) Se tumor é 'frio' (poucas T infiltradas), imunoterapia sozinha falha — precisa combinar ou dar quimio primeiro. (3) Em outros contextos, combina. Mas aqui, o conceito é os dois mecanismos em paralelo, não simultâneos."
+        },
+        {
+          "tipo": "texto",
+          "etapa": 5,
+          "titulo": "Com O Que Se Articula — Dependências Conceituais",
+          "conteudo": "**Pré-Requisito: Imunologia Fundamental.**\n\nVocê precisa entender:\n- Linfócitos T CD8+ (citotóxicos): aqueles que matam célula-a-célula.\n- Apresentação de antígeno via MHC-I.\n- Coestimulação: sinais 1 (TCR) e 2 (CD28) que ativam T.\n- Checkpoints: PD-1, CTLA-4 como receptores inibitórios (signal 3 'off').\n- Citocinas (IFN-gamma) que T secretam para matar tumores.\n\nEsse conhecimento vem de imunologia básica (Semestre 4-5, Imunologia I-II). Se não domina, volta lá.\n\n**Pré-Requisito: Genética de Câncer.**\n\nVocê precisa entender:\n- Oncogenes: genes que, quando mutados, causam ganho de função (EGFR, BRAF, ALK).\n- Mutações somáticas: acontecem em célula epitelial durante a vida (não herdada).\n- Drivers vs passengers: qual mutação é o 'motorista' do crescimento vs qual é caroneiro.\n\nEsse conhecimento vem de Genética Médica e Patologia (Semestre 1-2, Genética; Semestre 6-7, Patologia).\n\n**Pré-Requisito: Biologia Celular e Bioquímica.**\n\nVocê precisa entender:\n- Transdução de sinal: receptor -> quinase -> fosforilação -> ativação de cascata.\n- MAPK/ERK pathway: uma das principais vias de crescimento celular.\n- PI3K/Akt pathway: outra via crítica de sobrevivência.\n- Apoptose: morte programada quando célula perde sinal de sobrevivência.\n\nEsse conhecimento vem de Bioquímica (Semestre 2-3).\n\n**Articulação Futura: Tumor Microenvironment.**\n\nO sucesso de imunoterapia depende do **tumor frio vs quente**:\n- Tumor **quente**: bem infiltrado por T, muito PD-L1, responde bem a checkpoint inhibitors.\n- Tumor **frio**: poucas T infiltradas, falta de PD-L1, imunoterapia sozinha falha.\n\nIsso vem de Patologia Oncológica (s6-pato ou futuro s9-onco bloco sobre microambiente).\n\n**Articulação Futura: Resistência Adquirida.**\n\nTumores não ficam sensíveis para sempre:\n- **Resistência a TKI**: tumor sofre segunda mutação que compensa a bloqueio (ex: EGFR T790M escapa de gefitinib).\n- **Resistência a imunoterapia**: tumor perde expressão de PD-L1, infiltração de T cai, microambiente fica mais imunossupressor.\n\nIsso é tópico avançado (s9-onco filhos futuros ou s10-onco avançado)."
+        },
+        {
+          "tipo": "texto",
+          "etapa": 6,
+          "titulo": "Nome e Etimologia — Por Que Esses Nomes?",
+          "conteudo": "**Imunoterapia** = *immun* (defesa contra) + *therapeia* (cura).\n\nLiteralmente: 'cura usando imunidade'. A ideia é deixar o corpo curar a si próprio — não matamos o tumor diretamente com veneno (quimio); soltamos os soldados do corpo para que ataquem.\n\nHistória: a ideia de imunoterapia é antiga (século XIX havia tentativas). Mas como funciona, ninguém sabia até 2010s. O prêmio Nobel de Fisiologia/Medicina 2018 foi para James Allison e Tasuku Honjo **exatamente** por descobrir checkpoints imunológicos (CTLA-4 e PD-1). Antes disso, era ficção científica. Agora é oncologia de primeira linha.\n\n**Terapia Alvo** = *target* (alvo específico) + *therapeia* (cura).\n\nLiteralmente: 'cura apontando para um alvo específico'. Diferente de quimioterapia, que mata tudo que divide rápido (célula cancerosa, medula óssea, intestino), terapia alvo mata só as células que têm aquela mutação específica.\n\nHistória: começou com imatinib (Gleevec) para leucemia mieloide crônica (BCR-ABL) em 2001. Depois gefitinib para EGFR mutado em 2003. Desde então, cada nova mutação driver descoberta vira novo TKI desenho.\n\n**Checkpoint Imunológico** = *check* (frear) + *point* (ponto) + *immun* (defesa).\n\nLiteralmente: 'ponto de frenagem da defesa'. Existem vários checkpoints — PD-1, CTLA-4, LAG-3, TIM-3 — que evitam resposta imune exagerada (autoimmunidade). Tumor sequestra esse sistema para se proteger."
+        },
+        {
+          "tipo": "texto",
+          "etapa": 7,
+          "titulo": "Analogia Concreta — Três Metáforas",
+          "conteudo": "**Metáfora 1: O Lobista Corrupto (Imunoterapia).**\n\nImagine uma cidade com exército bem treinado (linfócitos T). Uma conspiração começa — terroristas (tumor) infiltram a cidade. O exército vê, identifica, está pronto para matar.\n\nMas os terroristas contratam um lobista corrupto. Esse lobista convence cada soldado:\n'Ei, escuta aqui. Não vale a pena lutar. Você vai se esgotar. Vai embora, deixa eu em paz.'\n\nO sinal de rendição chega — PD-L1 é o lobista, PD-1 é o soldado que recebe a mensagem. O soldado perde a vontade, vai embora. Terroristas crescem.\n\nSolução: você despede o lobista (anticorpo anti-PD-L1 ou anti-PD-1). Os soldados não recebem mais aquele sinal desmotivador. Voltam ao ataque. Terroristas morrem.\n\n**Limitação**: se não há soldados lá (tumor frio), despeçar o lobista não ajuda — não há ninguém para atacar. Por isso imunoterapia falha em tumores com poucas T infiltradas.\n\n**Metáfora 2: A Dependência de Droga (Terapia Alvo).**\n\nUm terrorista é viciado em uma droga específica. Essa droga ativa seu cérebro, o mantém focado, agressivo, vivo.\n\nSem a droga:\n- Síndrome de abstinência\n- Colapso cerebral\n- Morte\n\nA droga é EGFR. O vício é dependência oncogênica. A célula cancerosa é 100% dependente do sinal EGFR contínuo.\n\nSolução: tire a droga. Use um bloqueador que impede o terrorista de acessar aquela substância específica (TKI de EGFR). Sem a droga, entra em colapso, morre.\n\n**Limitação**: o terrorista é esperto. Após semanas/meses, desenvolve tolerância (segunda mutação, bypass por outra droga). Precisa de gerações novas de bloqueadores (segunda geração TKI, terceira geração TKI). É uma guerra, não uma vitória de um disparo.\n\n**Metáfora 3: Dois Caminhos Diferentes para a Mesma Porta (Por Que Não Sempre Juntos?).**\n\nUma casa tem dois sistemas de defesa quebrados: (1) Sistema de alarme que avisa sobre invasores (comparável ao 'sistema imune freiado por PD-L1'); (2) Sistema de energia que a casa precisa para funcionar (comparável ao 'dependência EGFR').\n\nVocê pode:\n- Arrumar o alarme (imunoterapia): soldados voltam, atacam invasores.\n- Cortar a energia (terapia alvo): invasores viram dependentes dessa energia, morrem sem ela.\n- Fazer os dois: melhor ainda, mas caro e mais tóxico.\n\nMas aqui é contexto: se a casa tem invasores que também controlam o alarme (ex: tumor com alto PD-L1 e EGFR mutado), você faz os dois. Se só controla o alarme, só arruma alarme. Se só dependem de energia, só corta energia.\n\n**Por Que Essas Analogias Quebram?**\n\n1. Imunoterapia não mata diretamente — apenas destranca a resposta T. Tumor pode ter outras formas de escapar.\n2. Terapia alvo mata mas tumor evolui resistência. É matança contínua.\n3. A realidade tem múltiplos checkpoints (CTLA-4, LAG-3, TIM-3) e múltiplas mutações driver (às vezes EGFR + TP53 + KRAS combinadas). Não é 'um freio + uma droga'.\n4. Toxicidade: imunoterapia causa autoimmunidade (irAEs — immune-related adverse events). Terapia alvo causa toxicidade direcionada (EGFR causa rash, diarreia). Analogia não captura isso."
+        },
+        {
+          "tipo": "texto",
+          "etapa": 8,
+          "titulo": "Imagem — Diagrama Duplo do Mecanismo",
+          "conteudo": "Dois painéis lado a lado:\n\n**PAINEL 1: Checkpoint Imunológico (Imunoterapia)**\n- Lado esquerdo: célula T (grande, azul, com receptor PD-1 na superfície), tumor (grande, vermelho, com PD-L1 na superfície), ligação PD-L1-PD-1 com 'off signal' sendo transmitido para T.\n- Resultado: T apático, saindo de cena (cinzento, morrendo lentamente).\n- Lado direito: mesmo cenário, MAS anti-PD-1 (amarelo, tamanho de anticorpo) encaixado em PD-1, bloqueando PD-L1. T agora ativado (azul brilhante), liberando citocinas (pequenas setas vermelhas), atacando tumor (tumor diminuindo, fragmentos).\n- Legenda: 'Sem bloqueio: T é enganado. Com anti-PD-1: T volta ao ataque.'\n\n**PAINEL 2: Terapia Alvo (Inibição de Tirosina Quinase)**\n- Lado esquerdo: célula de câncer (vermelho) com EGFR quinase na membrana (proteína em forma de Y, com sítio de ATP). Quinase está fosforilando proteínas downstream (PI3K, SOS), ativando cascata de crescimento (setas verdes indo para núcleo: PI3K → AKT → mTOR, MAPK → ERK → c-fos).\n- Resultado: célula em divisão rápida, crescimento.\n- Lado direito: mesmo cenário, MAS TKI (molécula pequena, laranja) encaixado no ATP binding site de EGFR, bloqueando transferência de fosfato. Cascata downstream para (setas verdes desaparecem). Caspases (proteases de apoptose) são ativadas. Núcleo começa a degradar (fragmentação).\n- Legenda: 'Sem inibidor: EGFR ativa crescimento. Com TKI: quinase dorme, célula morre por apoptose.'\n\n**Estilo Visual:**\n- Cores: verde para célula normal/ambiente, vermelho para tumor, azul para imunocélulas, amarelo para anticorpos, laranja para TKI, roxo/cinzento para morte celular.\n- Estilo: ilustração médica limpa, sem fotos realistas, com setas indicando fluxo de sinalização.\n- Legendas em português científico.\n- Escala: moléculas de sinalização e proteínas representadas em tamanho comparativo (anticorpo grande, TKI pequeno, comparado a célula inteira).\n- Opcional: versão simplificada com 2 painéis menores (antes/depois); versão expandida com 4 painéis mostrando passo a passo.\n\nPrompt para IA (se usar DALL-E/Midjourney):\n'Create a split-panel medical illustration: LEFT PANEL shows cancer cell (red) with PD-L1 expressing, interacting with T lymphocyte (blue) via PD-1 receptor, with inhibitory signal arrows, T cell appearing inactive (grey, leaving). RIGHT PANEL same cell with anti-PD-1 antibody (yellow Y-shaped protein) blocking PD-L1, T cell activated (bright blue) releasing cytokines (red arrows), killing cancer cell (red becoming fragmented). BOTTOM PANEL similarly split: cancer cell with EGFR kinase active (green phosphorylation cascades flowing to nucleus: PI3K-AKT, MAPK-ERK pathways), cell dividing. With TKI (orange small molecule) blocking ATP site of EGFR, green cascades stopped, caspases activated (purple arrows), nucleus fragmenting. Scientific illustration style. Portuguese labels. No photorealistic textures. White/light background.'"
+        },
+        {
+          "tipo": "flashcard",
+          "numero": 1,
+          "pergunta": "PD-1 é um receptor no T ou no tumor? E PD-L1?",
+          "resposta": "PD-1 é receptor no linfócito T. PD-L1 é ligante (proteína de sinalização) no tumor. Quando se encaixam, PD-1 recebe sinal 'off' que desativa o T. Anti-PD-1 bloqueia PD-1; anti-PD-L1 bloqueia PD-L1. Ambos impedem a ligação."
+        },
+        {
+          "tipo": "flashcard",
+          "numero": 2,
+          "pergunta": "Por que uma célula cancerosa com EGFR mutado morre quando você bloqueia EGFR com TKI?",
+          "resposta": "EGFR mutado causa sinalização constitutiva (sempre ligado). A célula ficou dependente — programou apoptose que é ativada APENAS se interromper aquele sinal contínuo. Bloqueador TKI interrompe o sinal. Célula detecta falta de sinal oncogênico, ativa caspases, morre."
+        },
+        {
+          "tipo": "flashcard",
+          "numero": 3,
+          "pergunta": "O que significa 'tumor frio' e por que imunoterapia falha em tumor frio?",
+          "resposta": "Tumor frio = pouca infiltração de linfócitos T citotóxicos (CD8+). Se não há soldados no campo de batalha, soltá-los do freio (PD-1) não ajuda — não há ninguém para atacar. Tumor quente tem muita T infiltrada, responde bem a checkpoint inhibitors."
+        },
+        {
+          "tipo": "flashcard",
+          "numero": 4,
+          "pergunta": "Qual é a diferença entre mecanismo de ação de imunoterapia vs terapia alvo?",
+          "resposta": "Imunoterapia desbloqueia resposta imune que já existe (T estava lá, freada). Terapia alvo mata célula diretamente bloqueando oncogene específico que ela é dependente. Uma restaura função; outra mata por abstinência."
+        },
+        {
+          "tipo": "flashcard",
+          "numero": 5,
+          "pergunta": "Por que tumor desenvolve resistência a TKI mesmo que EGFR estava completamente bloqueado?",
+          "resposta": "Tumor sofre segunda mutação durante divisão (ex: T790M em EGFR). Essa mutação muda a forma de EGFR de novo, TKI não encaixa mais. Ou tumors ativa pathway alternativo (MET, HER2) que bypassa EGFR. É evolução — tumor não fica sensível para sempre."
+        },
+        {
+          "tipo": "flashcard",
+          "numero": 6,
+          "pergunta": "Qual é a molécula-alvo em 'terapia alvo contra EGFR mutado'?",
+          "resposta": "EGFR quinase — especificamente o ATP binding site da tirosina quinase. TKI encaixa ali e bloqueia transferência de fosfato (fosforilação downstream). Sem fosforilação, cascata MAPK/ERK e PI3K/Akt para."
+        },
+        {
+          "tipo": "flashcard",
+          "numero": 7,
+          "pergunta": "Imunoterapia sozinha sempre funciona? Se não, quando combinar com outra coisa?",
+          "resposta": "Não. Falha em tumores frios (poucas T, falta de PD-L1, microambiente imunossupressor). Pode combinar com: (1) quimioterapia (que 'quenta' o tumor recrutando T), (2) terapia alvo (se tumor tem mutação driver), (3) radioterapia (efeito inflamatório). Contexto importa."
+        },
+        {
+          "tipo": "flashcard",
+          "numero": 8,
+          "pergunta": "O que são 'irAEs' e por que ocorrem em imunoterapia?",
+          "resposta": "irAEs = immune-related adverse events (eventos adversos relacionados a imune). Ocorrem porque checkpoint inhibitors soltam o freio não só para atacar tumor, mas também podem permitir resposta auto-imune. T ataca tecidos normais: tireoide (tireoidite), intestino (colite), pele (rash), pulmão (pneumonite). Balanceamento delicado."
+        }
+      ],
+      "caso_clinico": {
+        "titulo": "Homem 68 anos com Câncer de Pulmão Estadio IV",
+        "apresentacao": "Homem, 68 anos, ex-fumante, vem ao consultório com queixa de tosse há 2 meses, não produtiva, e falta de ar progressiva. Faz 40 anos que parou de fumar. Tomografia de tórax com contraste mostra: massa em língula de 3x2 cm, com derrame pleural ipsilateral. Adenopatias hilares e mediastinais. Há também nódulo de 1 cm em lobo superior direito.\n\nDiagnóstico: Adenocarcinoma de pulmão, estadio IV (metastático — pleura ipsilateral envolvida).\n\nSequenciamento genômico (Next-Generation Sequencing — NGS):\n- **EGFR exon 19: deleção in-frame (patogênico).**\n- TP53: mutação R273H (perda de função).\n- KRAS: wild-type.\n- PD-L1 expression: 85% (alta).\n- Microsatellite instability (MSI): estável (não deficiente).\n- Tumor mutational burden (TMB): médio (~3 mutações/Mb).",
+        "cascata_causal": {
+          "causa_primaria": "Mutação somática de EGFR exon 19 (deletado). Ocorreu em célula epitelial bronquial durante vida do paciente. Possivelmente não relacionada a tabagismo (adenocarcinomas com EGFR mutado ocorrem também em não-fumantes). Essa mutação é o 'driver' oncogênico.",
+          "estrutura": "Pulmão (brônquio distal, epitélio da língula). Célula epitelial que deveria dividir raramente, perde controle e passa a dividir continuamente.",
+          "disfuncao": "EGFR quinase, com exon 19 deletado, fica em conformação constitutivamente ativa. Não precisa de ligante (EGF) para ativar. Ativa quinase downstream (SRC, PI3K/Akt, MAPK/Erk) 24 horas por dia. Cascata de fosforilação contínua → célula recebe sinal 'cresça, divida, não morra' contínuo.\n\nAlém disso, tumor expressa PD-L1 em 85% das células. Sistema imune linfocitário está presente (há infiltração de T), mas PD-L1 desativa os T via PD-1. Tumor cria microambiente imunossupressor.",
+          "sintoma": "Proliferação descontrolada de célula no pulmão → tosse (irritação pleural), hemoptise (vasos invadidos), dispneia (ocupação de espaço, derrame pleural), fraqueza geral, perda de peso.",
+          "consequencia_sem_tratamento": "Disseminação contínua para pleura, pericárdio, parênquima contralateral, metástases a distância (osso, cérebro, fígado). Insuficiência respiratória progressiva, morte por hipóxia, sepse por infecção pulmonar secundária. Sobrevida mediana sem tratamento: ~1 ano em estadio IV."
+        },
+        "dilema_terapeutico": "Este paciente tem DUAS oportunidades:\n\n**Opção 1: Terapia Alvo (TKI de EGFR de primeira geração).**\n- Medicação: gefitinib ou erlotinib (primeira geração).\n- Lógica: EGFR exon 19 deletado é altamente sensível a TKI. Quinase é bloqueada diretamente. Sinalização para. Célula que é 100% dependente de EGFR, morre.\n- Resposta esperada: Redução tumoral em 70-80% dos pacientes em 3-4 meses. Duração: 8-12 meses em média (depois resistência secundária).\n- Toxicidade: rash acneiforme (80%, geralmente leve a moderado), diarreia (40%), transaminases elevadas (20%).\n\n**Opção 2: Imunoterapia (Anti-PD-1 ou anti-PD-L1).**\n- Medicação: pembrolizumab anti-PD-1 ou atezolizumab anti-PD-L1.\n- Lógica: PD-L1 é altamente expressa (85%) e há infiltração T présente. Bloqueador de checkpoint vai desativá-lo, deixando T matar tumor.\n- Resposta esperada: Resposta em ~50% dos pacientes em 3-4 meses. Duração: 5-9 meses em média.\n- Toxicidade: irAEs (colite imuno-relacionada, pneumonite, tireoidite, hepatite, rash), que podem ser graves.\n\n**Por Que Este Paciente?**\n- Porque tem EGFR mutado E PD-L1 alto, ambos responderiam bem.\n- Prática atual: TKI de EGFR é primeira linha em EGFR mutado, independentemente de PD-L1 (porque resposta é melhor e mais previsível).\n- Imunoterapia seria segunda linha quando tumor desenvolveu resistência ao TKI.\n- Alguns centros tentam combinar, mas toxicidade é maior.\n\n**Decisão tomada (cenário didático):**\nFoi iniciado gefitinib 250 mg uma vez ao dia. Tomografia de reavaliação após 4 semanas mostra: redução de massa da língula para 1.5 cm (Response Evaluation Criteria in Solid Tumors — RECIST 1.1: partial response). Derrame pleural resolveu. Paciente relata melhora de tosse e dispneia. Hemoglobina sobe de 10 g/dL para 11.5 g/dL.\n\nToxicidade: rash leve nas mãos, controlado com hidratante + medidas de fotoprotecção. Diarreia controlada com dieta. Continua gefitinib."
+      },
+      "conexoes": {
+        "prerequisitos": [
+          {
+            "bloco_id": "s4-imuno-00-000",
+            "titulo": "Imunologia: Sistema Imune Inato e Adaptativo",
+            "disciplina": "imunologia",
+            "semestre": 4,
+            "relevancia": "base_necessaria",
+            "explicacao": "Você precisa entender: linfócitos T CD8+ (citotóxicos), apresentação de antígeno via MHC-I, coestimulação (sinais 1, 2, 3), checkpoints inibitórios. Esse conhecimento é foundation para entender por que PD-1/PD-L1 funciona."
+          },
+          {
+            "bloco_id": "s1-genet-00-000",
+            "titulo": "Genética Médica: Mutações, Oncogenes e Supressores",
+            "disciplina": "genetica",
+            "semestre": 1,
+            "relevancia": "base_necessaria",
+            "explicacao": "Você precisa entender: mutação somática, oncogenes (ganho de função), genes supressores (perda de função), como EGFR mutado adquire ganho de função (quinase sempre ligada)."
+          },
+          {
+            "bloco_id": "s2-bioqui-00-000",
+            "titulo": "Bioquímica: Transdução de Sinal e Quinases",
+            "disciplina": "bioquimica",
+            "semestre": 2,
+            "relevancia": "base_necessaria",
+            "explicacao": "Você precisa entender: receptores tirosina quinase (RTK), fosforilação, MAPK/ERK pathway, PI3K/Akt pathway, apoptose (morte programada). Sem isso, não entende por que bloqueador de EGFR mata célula."
+          },
+          {
+            "bloco_id": "s6-pato-onco-00-000",
+            "titulo": "Patologia Oncológica: Biologia do Câncer",
+            "disciplina": "patologia",
+            "semestre": 6,
+            "relevancia": "base_necessaria",
+            "explicacao": "Você precisa entender: carcinogênese (iniciação, promoção, progressão), heterogeneidade tumoral, seleção clonal. Isso prepara você para entender por que tumor evolui resistência."
+          }
+        ],
+        "laterais": [
+          {
+            "bloco_id": "s9-onco-03-001",
+            "titulo": "Quimioterapia Citotóxica — Mecanismo e Indicações",
+            "disciplina": "oncologia",
+            "semestre": 9,
+            "tipo": "ALTERNATIVA_TERAPEUTICA",
+            "explicacao": "Quimio é tratamento alternativo (ou complementar) para câncer. Diferente de imunoterapia/alvo, mata tudo que divide rápido. Pode combinar com imunoterapia em tumores frios."
+          },
+          {
+            "bloco_id": "s9-onco-03-003",
+            "titulo": "Radioterapia Oncológica — Efeitos Diretos e Inflamatórios",
+            "disciplina": "oncologia",
+            "semestre": 9,
+            "tipo": "ALTERNATIVA_TERAPEUTICA",
+            "explicacao": "Radioterapia mata tumor por radiação direta. Também causa inflamação que pode 'quencar' microambiente frio (aumento de infiltração T), permitindo melhor resposta a imunoterapia."
+          }
+        ],
+        "futuras": [
+          {
+            "bloco_id": "s9-onco-03-004",
+            "titulo": "Inibidores de Checkpoint de Próxima Geração (LAG-3, TIM-3, TIGIT)",
+            "disciplina": "oncologia",
+            "semestre": 9,
+            "tipo": "EXPANSAO_CONCEITUAL",
+            "mecanismo_conexao": "Este bloco cobre PD-1/PD-L1 e CTLA-4 (primeira geração checkpoints). Bloco futuro expande para outros checkpoints inibitórios que estão em desenvolvimento clínico (LAG-3, TIM-3, TIGIT).",
+            "confianca": "consenso_oncologico"
+          },
+          {
+            "bloco_id": "s9-onco-03-005",
+            "titulo": "Terapia Alvo de Próxima Geração (2ª, 3ª Geração TKIs, Antibodies Biespecíficos)",
+            "disciplina": "oncologia",
+            "semestre": 9,
+            "tipo": "EXPANSAO_CONCEITUAL",
+            "mecanismo_conexao": "Este bloco cobre TKIs de primeira geração. Futuro cobre segunda/terceira geração (ex: osimertinib para EGFR T790M), antibodies biespecíficos (BiTE, DARTs), fusões proteicas que combinam função de dois receptores.",
+            "confianca": "consenso_oncologico"
+          },
+          {
+            "bloco_id": "s9-onco-03-006",
+            "titulo": "Resistência Oncológica: Mecanismos Moleculares de Escape",
+            "disciplina": "oncologia",
+            "semestre": 9,
+            "tipo": "MECANISMO_COMPARTILHADO",
+            "mecanismo_conexao": "Este bloco menciona breve que tumores desenvolvem resistência (segunda mutação em EGFR, bypass por outro pathway, perda de PD-L1). Bloco futuro mergulha profundo: como tumor sequencia escape, reversão fenotípica (epithelial-mesenchymal transition), dormência, heterogeneidade subclonal.",
+            "confianca": "consenso_oncologico"
+          },
+          {
+            "bloco_id": "s9-onco-03-007",
+            "titulo": "CAR-T: Terapia Celular Adotiva Engenheirada",
+            "disciplina": "oncologia",
+            "semestre": 9,
+            "tipo": "EXPANSAO_CONCEITUAL",
+            "mecanismo_conexao": "Este bloco menciona CAR-T brevemente. Futuro bloco detalha: como T é geneticamente modificada ex vivo, como receptor quimérico funciona, aplicações em hematologia (leucemias, linfomas), desafios em tumores sólidos.",
+            "confianca": "consenso_oncologico"
+          },
+          {
+            "bloco_id": "s9-onco-03-008",
+            "titulo": "Tumor Microenvironment e Imunossupressão Local",
+            "disciplina": "patologia_oncologica",
+            "semestre": 9,
+            "tipo": "MECANISMO_COMPARTILHADO",
+            "mecanismo_conexao": "Este bloco cobre 'tumor quente vs frio' superficialmente. Bloco futuro mergulha: CAFs (cancer-associated fibroblasts), células T regulatórias (Tregs), citocinas imunossupressoras (IL-10, TGF-beta), hipóxia tumoral, como tumor constrói escudo.",
+            "confianca": "consenso_oncologico"
+          },
+          {
+            "bloco_id": "s9-onco-03-009",
+            "titulo": "Toxicidade Oncológica: Manejo de Eventos Adversos",
+            "disciplina": "oncologia",
+            "semestre": 9,
+            "tipo": "CONDUTA",
+            "mecanismo_conexao": "Este bloco menciona brevemente irAEs (imunotoxicidade) e rash/diarreia de TKI. Bloco futuro sistematiza: como reconhecer, classificar, manejar eventos adversos — grading CTCAE, quando suspender vs continuar, suporte sintomático.",
+            "confianca": "consenso_clinico"
+          },
+          {
+            "bloco_id": "s9-onco-03-010",
+            "titulo": "Biopsia Liquida e Monitoramento de Resposta Tumoral",
+            "disciplina": "oncologia_molecular",
+            "semestre": 10,
+            "tipo": "FERRAMENTAS_DIAGNOSTICAS",
+            "mecanismo_conexao": "Este bloco cobre resposta tumoral via CT (RECIST 1.1). Futuro cobre: cfDNA (circulating free DNA) para detecção de mutações, ctDNA para monitoramento de carga tumoral em tempo real, como isso muda decisão clínica.",
+            "confianca": "consenso_oncologico"
+          }
+        ],
+        "observacoes_gerais": "Este bloco é CORE de Oncologia Semestre 9 porque apresenta dois paradigmas radicalmente diferentes de matar tumor: (1) restaurar função imune (imunoterapia), (2) explorar dependência metabólica (terapia alvo). A sequência didática futura deve aprofundar cada um separadamente, depois combinar. A resistência tumoral é o tema final que une todos os blocos."
+      }
+    }
+  ]
+}

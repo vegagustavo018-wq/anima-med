@@ -1,59 +1,154 @@
-{
-  "resumo_id": "s2-biof-03-000",
-  "no_pai_id": "s2-biof-00-000",
-  "nos_filhos_ids": [
-    "s2-biof-03-001",
-    "s2-biof-03-002",
-    "s2-biof-03-003",
-    "s2-biof-03-004",
-    "s2-biof-03-005"
-  ],
-  "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Biofísica da Respiração — Visão Geral",
-    "semestre": 2,
-    "disciplina": "Biofísica",
-    "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biof",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Como gases se movem por leis físicas para oxigenar o sangue",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "funcao"
-  ]
+﻿{
+    "resumo_id":  "s2-biof-03-000",
+    "no_pai_id":  "s1-biof-03-000",
+    "nos_filhos_ids":  [
+                           "s2-biof-03-001"
+                       ],
+    "conexoes_laterais_ids":  [
+                                  "s2-biof-01-000",
+                                  "s2-biof-04-000"
+                              ],
+    "titulo":  "BiomecÃ¢nica dos Fluidos: PressÃ£o e Fluxo",
+    "semestre":  2,
+    "disciplina":  "biofÃ­sica",
+    "profundidade_arvore":  2,
+    "status":  "em_producao",
+    "author":  "Claude",
+    "data_criacao":  "2026-07-03",
+    "horizon_validade":  "2030-12-31",
+    "procedencia":  "produtor_agente_biof",
+    "estado_ciclo_vida":  "bloco_estavel",
+    "tempo_estimado_minutos":  10,
+    "nivel_alvo":  2,
+    "dificuldade":  "intermediaria",
+    "resumo":  "Sangue fluindo nas artÃ©rias nÃ£o Ã© simplesmente empurrado; segue leis de fÃ­sica de fluidos que determinam pressÃ£o, velocidade e resistÃªncia. Esse capÃ­tulo explora como o coraÃ§Ã£o gera pressÃ£o (120/80 mmHg, o que significa?), como vasos estreitos oferecem resistÃªncia (reduzindo fluxo), e como a Lei de Hagen-Poiseuille diz que reduzir raio em 2x reduz fluxo em 16x. VocÃª entenderÃ¡ por que hipertensÃ£o danifica vasos e por que um entupimento pequeno em artÃ©ria coronÃ¡ria causa infarto. Ao final, saberÃ¡ calcular fluxo sanguÃ­neo, entender capacitÃ¢ncia venosa e por que turbelÃªncias podem danificar cÃ©lulas.",
+    "narrativa":  [
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Ãgua nÃ£o pensa onde quer ir â€” vai para onde a pressÃ£o Ã© menor. A pressÃ£o Ã© forÃ§a por Ã¡rea. O coraÃ§Ã£o bombeia com forÃ§a, criando pressÃ£o alta nas artÃ©rias (sistÃ³lica ~120 mmHg). Essa pressÃ£o empurra sangue para toda parte, mas conforme o sangue viaja por artÃ©rias progressivamente menores, atrito com as paredes consome pressÃ£o. Nos capilares, pressÃ£o Ã© sÃ³ ~30 mmHg. Nas veias de volta, ~5 mmHg. Esse gradiente de pressÃ£o dirige o fluxo: quanto maior a diferenÃ§a entre pressÃ£o aorta e pressÃ£o atrial direita, mais sangue flui. Simples demais? HÃ¡ mais: a resistÃªncia do vaso depende nÃ£o sÃ³ de seu comprimento, mas tambÃ©m (e muito!) do raio. A Lei de Hagen-Poiseuille diz: reduzir o raio de um vaso em 2 vezes reduz o fluxo em 16 vezes. Fator 2^4."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "Por que um entupimento pequeno mata?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Uma artÃ©ria coronÃ¡ria normal tem ~3 mm de diÃ¢metro. Uma placa aterosclerÃ³tica cresce lentamente, reduzindo diÃ¢metro em 1 mm (70% de estreitamento). Usando a Lei de Hagen-Poiseuille, fluxo cai a aproximadamente 9% do normal. Mas sangue jÃ¡ estÃ¡ em limite mÃ¡ximo durante exercÃ­cio â€” o coraÃ§Ã£o pede 5x mais sangue durante corrida, as artÃ©rias nÃ£o conseguem entregar. MÃºsculo cardÃ­aco entra em hipÃ³xia (falta de oxigÃªnio). CÃ©lulas morrem. Infarto do miocÃ¡rdio. Aquela pessoa que \u0027teve um ataque\u0027 apÃ³s subir escada? NÃ£o era a placa que bloqueou de repente, era o desequilÃ­brio demanda-fornecimento."
+                      },
+                      {
+                          "tipo":  "highlight",
+                          "conteudo":  "Fluxo sanguÃ­neo Ã© inversamente proporcional Ã  4Âª potÃªncia do raio do vaso. Pequenas mudanÃ§as de diÃ¢metro causam grandes mudanÃ§as de fluxo."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "PressÃ£o arterial: o que significam os nÃºmeros?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "120/80 mmHg. O nÃºmero maior (sistÃ³lica) Ã© a pressÃ£o no pico da contraÃ§Ã£o cardÃ­aca. O menor (diastÃ³lica) Ã© a pressÃ£o entre batidas, quando o coraÃ§Ã£o relaxa. A diferenÃ§a (40 mmHg) Ã© o pulso de pressÃ£o â€” aquilo que vocÃª sente pulsando no pescoÃ§o. Um vaso rÃ­gido (arteriosclerose) nÃ£o amortece esse pulso bem, entÃ£o sistÃ³lica sobe e diastÃ³lica fica alta â€” hipertensÃ£o. Um vaso normal Ã© elÃ¡stico, absorve o pulso. Mas pressÃ£o alta crÃ´nica danifica esse tecido elÃ¡stico, causa inflamaÃ§Ã£o, favorece aterosclerose. DaÃ­ por que hypertensÃ£o Ã© \u0027assassino silencioso\u0027 â€” danifica sem dor."
+                      },
+                      {
+                          "tipo":  "pausa",
+                          "conteudo":  "Imagine seus vasos como mangueiras de jardim. Com pressÃ£o constante moderada (80 mmHg), duram anos. Com pressÃ£o alta e pulsatÃ³ria (160/100 mmHg), a mangueira fica rÃ­gida, racha, vaza. Se nÃ£o substituir, nÃ£o hÃ¡ mais fluxo uniforme â€” hÃ¡ turbulÃªncia, coÃ¡gulos formam, bloqueios crescem. PressÃ£o nÃ£o Ã© sÃ³ nÃºmero num monitor; Ã© estresse mecÃ¢nico no seu tecido."
+                      },
+                      {
+                          "tipo":  "etimologia",
+                          "conteudo":  "Hagen-Poiseuille: nomeada pelos fÃ­sicos que derivaram a equaÃ§Ã£o no sÃ©culo XIX. PressÃ£o vem do latim pressare (apertar). Arterosclerose: arterio- (artÃ©ria) + sclerosis (endurecimento, do grego sklerÃ³s)."
+                      },
+                      {
+                          "tipo":  "analogia",
+                          "conteudo":  "Imagine uma mangueira de Ã¡gua em seu jardim. Se vocÃª reduz o diÃ¢metro de 10 mm para 5 mm (metade), qual Ã© o efeito no fluxo? NÃ£o Ã© metade â€” Ã© 1/16 do fluxo original. Por quÃª? Porque a Ã¡gua tem que vencer atrito nÃ£o sÃ³ ao longo do comprimento (proporcional a L), mas contra as paredes (proporcional a Ã¡rea, que Ã© Ï€ rÂ²). Quando r reduz, a proporÃ§Ã£o perÃ­metro/seÃ§Ã£o fica mais favorÃ¡vel ao atrito. Vaso sanguÃ­neo entupido Ã© como essa mangueira aberta â€” comeÃ§a pequeno, cresce, fluxo cai exponencialmente."
+                      },
+                      {
+                          "tipo":  "imagem",
+                          "id":  "s2-biof-03-img-001",
+                          "tipo_midia":  "ilustracao_didatica",
+                          "descricao":  "GrÃ¡fico mostrando Lei de Hagen-Poiseuille: duas colunas de barras lado a lado. Esquerda: diÃ¢metro normal (raio 2 unidades) = fluxo 16 unidades. Direita: diÃ¢metro reduzido 50% (raio 1 unidade) = fluxo 1 unidade. FÃ³rmula Î”Q = (Ï€Î”P râ´)/(8Î·L) em canto superior. Abaixo: representaÃ§Ã£o visual do vaso normal (rosa, diÃ¢metro amplo) vs entupido (rosa escuro com placa aterosclerÃ³tica, diÃ¢metro reduzido), com setas vermelhas de fluxo mais finas no segundo.",
+                          "prompt_ia":  "Diagrama educacional estilo ANIMA com duas seÃ§Ãµes lado a lado. Esquerda (NORMAL): vaso cilÃ­ndrico rosa claro, diÃ¢metro 4 unidades, setas de fluxo (4 setas vermelhas largas) representando fluxo 16. Direita (ENTUPIDO): vaso rosa escuro com placa aterosclerÃ³tica (cinza/amarela) reduzindo diÃ¢metro para 2 unidades, setas de fluxo muito finas (1 seta vermelha fina) representando fluxo 1. EquaÃ§Ã£o de Hagen-Poiseuille acima. TÃ­tulo: \u0027Reduzir raio em 2 = fluxo em 16\u0027. Fundo branco."
+                      }
+                  ],
+    "flashcards":  [
+                       {
+                           "tipo":  "por_que",
+                           "pergunta":  "Por que a pressÃ£o arterial varia entre sistÃ³lica e diastÃ³lica?",
+                           "resposta":  "Porque o coraÃ§Ã£o Ã© uma bomba cÃ­clica. Na sÃ­stole, contrai e forÃ§a sangue para artÃ©rias (pressÃ£o mÃ¡xima). Na diÃ¡stole, relaxa e as artÃ©rias elÃ¡sticas descarregam sua pressÃ£o (mÃ­nima). A diferenÃ§a reflete a elasticidade do vaso e a forÃ§a do batimento."
+                       },
+                       {
+                           "tipo":  "mecanismo",
+                           "pergunta":  "Descreva como a Lei de Hagen-Poiseuille explica por que um vaso entupido 50% reduz fluxo em 16 vezes.",
+                           "resposta":  "Lei: Q = (Î”P Ï€ râ´)/(8Î·L). Fluxo Ã© proporcional a râ´. Se r reduz para metade, râ´ reduz para (1/2)â´ = 1/16. PressÃ£o (Î”P) e viscosidade (Î·) constantes, logo Q reduz 16 vezes."
+                       },
+                       {
+                           "tipo":  "contrafactual",
+                           "pergunta":  "Se a Lei de Hagen-Poiseuille nÃ£o existisse (fluxo fosse linear com raio, nÃ£o râ´), qual seria o impacto clÃ­nico?",
+                           "resposta":  "Entupimentos pequenos seriam inÃ³cuos â€” reduÃ§Ã£o 50% de raio = reduÃ§Ã£o 50% de fluxo, compensada facilmente pelo corpo. Infarto seria raro. Mas porque a lei existe, pequenos blockades podem ser fatais."
+                       },
+                       {
+                           "tipo":  "clinico",
+                           "pergunta":  "Por que pacientes com hipertensÃ£o tÃªm risco aumentado de acidente vascular cerebral?",
+                           "resposta":  "PressÃ£o alta danifica intima vascular. ArtÃ©rias cerebrais desenvolvem aterosclerose mais rÃ¡pido. AlÃ©m disso, pressÃ£o pulsÃ¡til (sistÃ³lica - diastÃ³lica grande) causa turbulÃªncias que ativam plaquetas. CombinaÃ§Ã£o: trombo pode soltar e entupir artÃ©ria cerebral."
+                       },
+                       {
+                           "tipo":  "comparacao",
+                           "pergunta":  "Qual Ã© a diferenÃ§a entre resistÃªncia vascular e capacitÃ¢ncia vascular?",
+                           "resposta":  "ResistÃªncia: propriedade de vasos que se opÃµe ao fluxo (artÃ©rias, capilares); depende de diÃ¢metro e comprimento. CapacitÃ¢ncia: habilidade de veias de expandir e armazenar volume de sangue; veias tÃªm alta capacitÃ¢ncia, artÃ©rias baixa."
+                       },
+                       {
+                           "tipo":  "etimologia",
+                           "pergunta":  "De onde vem \u0027aterosclerose\u0027?",
+                           "resposta":  "Do grego athero (papa/mingau, referindo-se ao material cremoso da placa) + sclerosis (endurecimento). Originalmente descrevia a textura da placa: mole no centro, dura fora."
+                       },
+                       {
+                           "tipo":  "armadilha",
+                           "pergunta":  "Muitos pensam \u0027pressÃ£o 140/90 Ã© sÃ³ um pouco acima de 120/80, entÃ£o risco Ã© pequeno\u0027. Por que isso subestima o risco?",
+                           "resposta":  "Porque trabalho cardÃ­aco Ã© proporcional Ã  pressÃ£o. E dano vascular Ã© proporcional ao estresse mecÃ¢nico (forÃ§a/Ã¡rea). Aumentar 20 mmHg aumenta trabalho e dano exponencialmente. AlÃ©m disso, o corpo se desensibiliza â€” pressÃ£o alta passa a ser \u0027normal\u0027, mas danifica continuamente."
+                       },
+                       {
+                           "tipo":  "sintese",
+                           "pergunta":  "Como pressÃ£o, resistÃªncia e fluxo (Lei de Ohm hemodinÃ¢mico: Î”P = Q Ã— R) conectam-se ao conceito anterior de transporte ativo?",
+                           "resposta":  "Transporte ativo mantÃ©m gradientes iÃ´nicos (energia), que criam potenciais. Potencial de aÃ§Ã£o faz coraÃ§Ã£o contrair (mecanismo). ContraÃ§Ã£o gera pressÃ£o, que empurra sangue (fluxo = Î”P/R). Energia quÃ­mica â†’ elÃ©trica â†’ mecÃ¢nica â†’ fluidodinÃ¢mica. Cascata integrada."
+                       }
+                   ],
+    "caso_clinico":  {
+                         "titulo":  "Homem de 58 anos com pressÃ£o 180/110, pede ajuda apÃ³s dor no peito",
+                         "cascata_5_etapas":  {
+                                                  "causa":  "HipertensÃ£o nÃ£o tratada por 10 anos (nunca tomou remÃ©dio). Fuma 30 cigarros/dia (nicotina constringe vasos, aumenta pressÃ£o). Dieta rica em sal.",
+                                                  "estrutura_afetada":  "ArtÃ©rias coronÃ¡rias (vasos que alimentam coraÃ§Ã£o); miocÃ¡rdio (mÃºsculo cardÃ­aco)",
+                                                  "disfuncao":  "PressÃ£o alta crÃ´nica danificou intima das artÃ©rias coronÃ¡rias, favorecendo aterosclerose. JÃ¡ hÃ¡ placa ocluindo 80% de uma artÃ©ria. PressÃ£o excessiva causa inflamaÃ§Ã£o, placa ruptura, trombo forma.",
+                                                  "sintoma":  "Homem relata dor no peito (opressiva, irradiando para braÃ§o), suor frio, falta de ar. Aconteceu ao tentar correr para pegar Ã´nibus.",
+                                                  "consequencia":  "Sem reperfusÃ£o rÃ¡pida (angioplastia, trombolÃ­tico): infarto transmural (necrose de toda espessura miocÃ¡rdica), fibrilaÃ§Ã£o ventricular, morte dentro de horas."
+                                              },
+                         "diagnostico_revelado":  "Infarto agudo do miocÃ¡rdio anterior. ECG mostra elevaÃ§Ã£o ST. Troponina elevada. Angiografia revela oclusÃ£o de artÃ©ria coronÃ¡ria anterior esquerda por trombo. Tratamento: angioplastia emergencial com stent (resgata fluxo) + dupla antiagregaÃ§Ã£o (aspirina + ticagrelor).",
+                         "implicacao_biofisica":  "Demonstra cadeia causal: hipertensÃ£o â†’ lesÃ£o vascular â†’ aterosclerose â†’ trombo â†’ oclusÃ£o â†’ isquemia â†’ necrose. Toda ela governada por leis de pressÃ£o-fluxo-resistÃªncia. Sem entender a fÃ­sica, parece acaso."
+                     },
+    "midias":  [
+                   {
+                       "id":  "s2-biof-03-img-002",
+                       "tipo":  "fotografia_clinica",
+                       "descricao":  "Angiografia coronÃ¡ria mostrando artÃ©ria normal (esquerda, lÃºmen amplo, rosa) vs artÃ©ria com estenose (direita, lÃºmen reduzido por placa aterosclerÃ³tica cinzenta). Fluxo sanguÃ­neo coloreado em vermelho nas duas, mas claramente mais lento no lado direito.",
+                       "prompt_ia":  "Imagem de angiografia coronÃ¡ria estilo educacional (nÃ£o foto real de paciente, mas diagrama realista). Esquerda: artÃ©ria coronÃ¡ria normal, lÃºmen amplo (rosado), sangue em vermelho brilhante fluindo rapidamente (setas vermelhas largas). Direita: mesma artÃ©ria com estenose 70%, placa aterosclerÃ³tica (amarela/cinza) reduzindo lÃºmen, sangue em vermelho escuro fluindo lentamente (setas vermelhas finas). Cite \u0027Normal\u0027 e \u0027Estenose 70%\u0027 abaixo. Estilo de diagrama educacional mÃ©dico realista, mas claramente didÃ¡tico."
+                   }
+               ],
+    "prerequisitos":  [
+                          "s1-biof-01-000",
+                          "s1-fis-02-000"
+                      ],
+    "futuras_conexoes":  [
+                             {
+                                 "tipo":  "CASCATA_CAUSAL",
+                                 "descricao":  "MicrocirculaÃ§Ã£o: capilares sÃ£o onde pressÃ£o hidrostÃ¡tica forÃ§a nutrientes para fora, pressÃ£o coloidosmÃ³tica puxa de volta"
+                             },
+                             {
+                                 "tipo":  "ALVO_TERAPEUTICO",
+                                 "descricao":  "Inibidores ACE (reduzem resistÃªncia vascular), nitratos (reduzem pressÃ£o), betabloqueadores (reduzem frequÃªncia/contraÃ§Ã£o)"
+                             },
+                             {
+                                 "tipo":  "RECONHECIMENTO_CLINICO",
+                                 "descricao":  "HipertensÃ£o graus 1-3; insuficiÃªncia cardÃ­aca por sobrecarga de pressÃ£o; infarto miocÃ¡rdio"
+                             },
+                             {
+                                 "tipo":  "MECANISMO_COMPARTILHADO",
+                                 "descricao":  "Mesmos princÃ­pios aplicam-se a fluxo cerebral (autorregulaÃ§Ã£o), fluxo glomerular renal (filtragem)"
+                             }
+                         ]
 }

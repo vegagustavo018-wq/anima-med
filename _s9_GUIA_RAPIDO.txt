@@ -1,0 +1,161 @@
+================================================================================
+SEMESTRE 9 — GUIA RÁPIDO DE PRODUÇÃO
+================================================================================
+
+Data: 2026-07-03
+Status: PRONTO PARA PRODUÇÃO
+
+================================================================================
+ARQUIVOS GERADOS
+================================================================================
+
+1. _s9_trabalho_lotes.json (548 KB) — ARQUIVO PRINCIPAL
+   - JSON completo com todos os 1.246 blocos
+   - Organizados em 93 lotes por disciplina
+   - Ordem de hierarquia respeitada
+   - USE ESTE ARQUIVO para pipeline de produção
+
+2. _s9_trabalho_index.json (8 KB) — ÍNDICE RÁPIDO
+   - Versão compacta sem blocos
+   - Apenas metadados por lote
+   - Útil para navegação rápida
+
+3. _s9_trabalho_preview.json (7 KB) — AMOSTRA
+   - Resumo executivo + 1 lote exemplo completo
+   - Ótimo para visualizar estrutura sem ler 548 KB
+
+4. _s9_trabalho_summary.html (8 KB) — VISUALIZAÇÃO
+   - Tabelas interativas
+   - Estatísticas por disciplina
+   - Abrir em navegador
+
+5. _s9_LEIAME.md (6 KB) — DOCUMENTAÇÃO
+   - Explicação completa da estrutura JSON
+   - Como usar cada arquivo
+   - Troubleshooting
+
+6. _s9_BRIEFING_EXEMPLO.md (7 KB) — MODELO DE BRIEFING
+   - Exemplo de como briefar um agente
+   - Com 14 blocos da Lote 1 do cir2 descrita completamente
+   - Copiar este formato para outras lotes
+
+7. Este arquivo: _s9_GUIA_RAPIDO.txt
+
+================================================================================
+ESTATÍSTICAS GERAIS
+================================================================================
+
+Disciplinas: 9
+Blocos: 1.246
+Lotes: 93
+Blocos/lote: 13,4 (média)
+
+Por disciplina:
+  cir2              146 blocos em 11 lotes (12%)
+  emerg             185 blocos em 14 lotes (15%)
+  geri-pali-reab    174 blocos em 13 lotes (14%)
+  mi3                82 blocos em  6 lotes ( 7%)
+  onco              133 blocos em 10 lotes (11%)
+  orl               134 blocos em 10 lotes (11%)
+  ped2              153 blocos em 11 lotes (12%)
+  saude-avancada    117 blocos em  9 lotes ( 9%)
+  saude-coletiva    122 blocos em  9 lotes (10%)
+
+================================================================================
+COMO COMEÇAR
+================================================================================
+
+OPÇÃO A: Usar JSON completo
+  1. Abrir _s9_trabalho_lotes.json em um editor
+  2. Procurar pela disciplina desejada (ex: "cir2")
+  3. Extrair primeiro lote
+  4. Passar para agente de produção com instrução do BRIEFING_EXEMPLO.md
+
+OPÇÃO B: Usar índice para navegar
+  1. Abrir _s9_trabalho_index.json (menor, mais rápido)
+  2. Ver estrutura de lotes de cada disciplina
+  3. Extrair lote específico do _s9_trabalho_lotes.json
+
+OPÇÃO C: Ver amostra primeiro
+  1. Abrir _s9_trabalho_preview.json
+  2. Visualizar estrutura de um bloco
+  3. Decidir se está conforme esperado
+  4. Proceder com arquivo completo
+
+================================================================================
+ESTRUCTURA DE UM BLOCO
+================================================================================
+
+{
+  "id": "s9-cir2-01-001",
+  "titulo": "A Decisão de Operar — Indicação Cirúrgica",
+  "pai": "s9-cir2-01-000",
+  "nivel": "tema",
+  "contexto": "Quando operar vs tratar clínico: risco-benefício, urgência vs eletivo",
+  "lentes": ["conduta"],
+  "profundidade": 3
+}
+
+Campos:
+  id          = Identificador único (s9-{disciplina}-{modulo}-{tema})
+  titulo      = Nome legível do bloco
+  pai         = ID do bloco pai (null se raiz)
+  nivel       = tipo: disciplina, modulo, tema, visao_geral, folha
+  contexto    = Escopo/objetivo (extraído do blueprint)
+  lentes      = Array de lentes pedagógicas
+  profundidade = Nível na hierarquia (1=raiz, 2=módulo, 3=tema, 4+=folhas)
+
+Lentes disponíveis:
+  visao_geral
+  fisiopatologia
+  apresentacao_clinica
+  diagnostico
+  conduta
+  correlacao_basica
+
+================================================================================
+GARANTIAS
+================================================================================
+
+✓ Ordem de hierarquia respeitada (pais SEMPRE antes de filhos)
+✓ Divisão em lotes uniforme (~13-14 blocos)
+✓ Contexto preservado do blueprint
+✓ Lentes mapeadas corretamente
+✓ JSON validado e pronto para parsing
+
+================================================================================
+PRÓXIMOS PASSOS
+================================================================================
+
+1. Validação com Gustavo (ler briefing exemplo + 1 lote amostra)
+2. Se aprovado: iniciar com disciplina piloto (ex: cir2)
+3. Usar agentes especializados para produção paralela
+4. Escalar para demais disciplinas conforme validação
+
+================================================================================
+REFERÊNCIAS E DIRETRIZES
+================================================================================
+
+Leia ANTES de produzir:
+  - anima_filosofia.md (pedagogia)
+  - anima_diretrizes_producao.md (como escrever)
+  - anima_bloco_canonico.md (template/referência)
+
+Consulte durante produção:
+  - _s9_BRIEFING_EXEMPLO.md (formato do que passar para agentes)
+  - _s9_LEIAME.md (dúvidas sobre estrutura JSON)
+
+================================================================================
+CONTATO & SUPORTE
+================================================================================
+
+Gerado por: Agente de Organização S9
+Data: 2026-07-03 22:37 UTC
+Blueprint: blueprint/_MESTRE-s9.json
+
+Para dúvidas:
+  - Estrutura JSON → leia _s9_LEIAME.md
+  - Como briefar agente → leia _s9_BRIEFING_EXEMPLO.md
+  - Pedagogia/conteúdo → consulte diretrizes ANIMA
+
+================================================================================

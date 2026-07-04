@@ -9,53 +9,296 @@
     "s2-ana2-01-125",
     "s2-ana2-01-126"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s2-hist2-00-000",
+    "s2-emb-00-000"
+  ],
   "metadata": {
     "titulo": "Válvulas Cardíacas — Visão Geral",
     "semestre": 2,
-    "disciplina": "Anatomia II — Vísceras, Pelve e Neuroanatomia",
+    "disciplina": "Anatomia II",
     "profundidade_arvore": 4,
+    "eh_raiz": false,
+    "status": "pronto",
+    "lentes": ["funcao_fisiologia", "morfologia_forma"],
+    "escopo": "Por que o fluxo precisa de portas que impeçam refluxo",
+    "tempo_estimado_min": 12,
+    "versao_schema": "3.0",
+    "gerado_por": "produtor-bloco-anima",
+    "data_geracao": "2026-07-03",
+    "data_ultima_revisao": "2026-07-03",
+    "versao": "1.0",
+    "tags": ["ana2", "cardiovascular", "coracao", "valvulas", "atrioventricular", "semilunar", "refluxo", "sopro"],
+    "nivel": "CORE",
+    "tipo": "conceito",
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "ana2",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
+    "horizonte_validade": "estavel",
+    "estado_ciclo_vida": "pronto",
+    "nivel_aceitacao": "completo"
   },
-  "resumo_conciso": "Por que o fluxo precisa de portas que impeçam refluxo",
-  "narrativa": [],
+  "resumo_conciso": "No nó pai, você viu por que a bomba precisa de câmaras separadas: dois circuitos que não podem se misturar, todo o sangue passando pelo pulmão antes de ir ao corpo. Mas guarde uma pergunta incômoda que aquele bloco deixou aberta. Uma bomba aperta e relaxa, aperta e relaxa. Quando o ventrículo se contrai e empurra o sangue para a frente com força, o que impede esse mesmo sangue de simplesmente voltar por onde veio quando a pressão cai no instante seguinte? Uma seringa sem agulha, se você aperta e solta, só chacoalha o líquido para lá e para cá — não bombeia nada para lugar nenhum. O coração resolveria esse problema com o quê? A resposta são as válvulas cardíacas: quatro portas de mão única, feitas de tecido finíssimo, posicionadas nos pontos exatos onde o sangue poderia refluir. Elas não têm músculo, não gastam energia, não 'decidem' nada — abrem e fecham sozinhas, empurradas apenas pela diferença de pressão dos dois lados. E é essa passividade elegante que faz do coração uma bomba de verdade, e não uma bolsa que chacoalha líquido.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pegue uma seringa comum, sem agulha, e mergulhe a ponta num copo d'água. Empurre o êmbolo: a água sai. Agora puxe: a água entra de volta pelo mesmo furo. Empurre de novo, puxe de novo — e repare no que aconteceu ao final de dez ciclos: a água está exatamente onde começou. Você gastou força apertando e soltando, mas não transportou nada de um lugar para outro. Só fez o líquido chacoalhar para frente e para trás pelo mesmo buraco. Esse é o destino de qualquer bomba que aperta e relaxa por um único orifício: ela agita, mas não impulsiona."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O coração tem exatamente esse problema, e em dose dupla. Um ventrículo é uma câmara muscular que se contrai com força para expulsar o sangue e depois relaxa para se encher de novo. No momento da contração (sístole), a pressão lá dentro dispara e o sangue é lançado para a frente, rumo à artéria. Mas assim que o músculo relaxa (diástole), a pressão dentro do ventrículo despenca — e agora ela fica menor do que a pressão na artéria que acabou de receber aquele jato. A física é implacável: fluido sempre corre da pressão maior para a menor. Sem nada para impedir, todo o sangue recém-expulso desabaria de volta para dentro do ventrículo, e o esforço da contração seguinte só o expulsaria outra vez, num vaivém inútil. Some a isso a outra fronteira: quando o ventrículo relaxa e se enche vindo do átrio acima dele, o que impede que a próxima contração jogue o sangue de volta para o átrio, em vez de para a artéria?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Se a bomba precisa apertar e relaxar pelo mesmo caminho, como garantir que o sangue só ande para frente e nunca volte?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução não é gastar mais energia nem apertar mais forte — é instalar portas de mão única nos pontos de passagem. Uma porta de mão única é qualquer estrutura que se abre facilmente quando o fluido empurra num sentido e se fecha sozinha quando ele tenta voltar no sentido oposto. Não precisa de músculo, não precisa de comando, não precisa 'saber' o que fazer: basta que a própria diferença de pressão dos dois lados a movimente. Quando a pressão de trás é maior, ela empurra a porta e abre; quando a pressão da frente fica maior e o fluido tenta refluir, esse mesmo refluxo empurra a porta contra sua sede e a sela. O truque genial é que a força que fecha a porta é a própria força que tentaria fazer o sangue voltar. O refluxo se autoboicota."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O coração instala quatro dessas portas, uma em cada ponto onde o sangue poderia refluir. Duas ficam entre os átrios e os ventrículos — são as valvas atrioventriculares (AV), que impedem o sangue de voltar do ventrículo para o átrio durante a contração. Outras duas ficam na saída dos ventrículos para as grandes artérias — são as valvas semilunares, que impedem o sangue de desabar da artéria de volta para o ventrículo quando ele relaxa. Quatro válvulas, quatro pontos de refluxo possível, cada uma vigiando a sua fronteira. Elas nunca abrem ao mesmo tempo que as outras da série: quando as AV abrem para encher o ventrículo, as semilunares estão fechadas; quando as semilunares abrem para ejetar, as AV se fecham. É esse revezamento que transforma um músculo que apenas aperta e relaxa numa bomba que de fato empurra o sangue sempre para frente."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O detalhe que muita gente não percebe: as válvulas cardíacas são absolutamente passivas. Não têm músculo próprio, não recebem ordem de nervo nenhum para abrir ou fechar, não gastam energia. Cada abertura e cada fechamento é comandado unicamente pela diferença de pressão entre os dois lados da válvula, instante a instante. O coração não 'abre' suas válvulas — ele muda as pressões nas câmaras, e as válvulas obedecem à física sozinhas. Entender isso dissolve metade da confusão sobre o ciclo cardíaco: você nunca precisa decorar 'quando cada válvula abre', basta perguntar de que lado a pressão está maior naquele momento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Agora entra a segunda lente deste bloco: a forma de cada tipo de válvula denuncia a pressão que ela enfrenta. Olhe primeiro as valvas atrioventriculares. Elas ficam entre átrio e ventrículo, e precisam aguentar a pressão brutal da contração ventricular empurrando o sangue contra elas para não deixá-lo voltar ao átrio. Se fossem só folhetos soltos, a pressão as viraria do avesso para dentro do átrio, como um guarda-chuva no vento — e o sangue vazaria. A natureza resolveu isso com cordas: cada folheto da valva AV é preso por fios tendíneos finos (as cordas tendíneas) que descem até pequenos músculos salientes na parede do ventrículo (os músculos papilares). Essas cordas funcionam como os cabos de um paraquedas: deixam a válvula fechar até certo ponto e então travam, impedindo que ela se everta. Forma esculpida pela pressão que precisa suportar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Agora olhe as valvas semilunares, na saída para as artérias. Elas não têm cordas nenhuma — e por um bom motivo. Cada uma é feita de três pequenas bolsas em forma de meia-lua (daí 'semilunar'), viradas para cima como três conchas. Quando o sangue tenta refluir da artéria, ele cai dentro dessas três bolsas e as enche, empurrando-as umas contra as outras no centro até selarem a passagem por completo — exatamente como três copinhos que se enchem e se encostam. Aqui a própria geometria da bolsa faz o trabalho que as cordas fazem do outro lado: o refluxo que tentaria abrir a válvula é justamente o que a fecha, ao encher as conchas. Duas soluções diferentes de engenharia para o mesmo problema, cada uma moldada pela posição e pela pressão que enfrenta. Onde a forma parecer arbitrária, pergunte qual pressão a esculpiu."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, ancore o essencial. As válvulas não existem porque 'todo coração tem válvulas'. Elas existem para resolver um problema mecânico específico: uma bomba que aperta e relaxa pelo mesmo caminho só chacoalha o líquido, a menos que portas de mão única forcem o sangue a andar num sentido só. Quatro portas, quatro pontos de refluxo, todas passivas, todas comandadas por pressão. Se você guardar essa pergunta — 'o que impede o sangue de voltar?' —, cada folheto, cada corda e cada bolsa em forma de lua vai parecer inevitável, e não uma lista de nomes para decorar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "E há um bônus que caiu no colo do médico por causa dessa mecânica: as válvulas fazem barulho. Quando uma porta se fecha de repente contra uma coluna de sangue sob pressão, ela vibra e produz um som — os dois sons do coração (as bulhas) que você ouve com o estetoscópio. O primeiro som ('tum') é o fechamento das valvas atrioventriculares no começo da sístole; o segundo ('tá') é o fechamento das valvas semilunares no fim da sístole. Ou seja: cada batida que você escuta é literalmente o som de portas se fechando na ordem certa. E quando uma válvula está doente — não fecha direito e deixa vazar, ou não abre direito e obstrui —, o sangue passa turbulento por ela e produz um ruído extra e prolongado: o sopro. Auscultar o coração é, em boa parte, escutar se as portas estão trabalhando bem. A anatomia deste bloco vira exame físico à beira do leito."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vêm as palavras que dão nome a essas portas?"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Válvula (valva)",
+      "origem": "Do latim 'valva', que designava cada uma das folhas de uma porta de dois batentes — aquelas portas antigas que se abriam ao meio, com duas folhas girando para os lados.",
+      "explicacao": "O nome não poderia ser mais preciso: uma valva é, literalmente, a folha de uma porta. E é exatamente isso que a estrutura faz no coração — é uma porta que se abre e se fecha para deixar o sangue passar num sentido só. Cada 'folheto' de uma valva é uma dessas folhas. O nome já entrega a função: porta. Na terminologia anatômica atual usa-se 'valva' para a estrutura; 'válvula' é a forma mais coloquial. Ambas vêm da mesma folha de porta romana."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Semilunar",
+      "origem": "Do latim 'semi' (metade) e 'luna' (lua). Literalmente, 'meia-lua'.",
+      "explicacao": "As três bolsas de cada valva de saída têm o formato de uma meia-lua — uma concha curva. Mas o nome esconde a função: é justamente esse formato de concha virada para cima que permite que o refluxo caia dentro dela e a encha, selando a passagem. A forma de lua não é enfeite; é o que faz a válvula fechar sozinha sem precisar de cordas. O nome descreve a forma, e a forma existe por causa da função."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚪",
+      "conteudo": "Pense numa antiga eclusa de canal, dessas que permitem que barcos subam e desçam entre trechos de rio de níveis diferentes. Em cada comporta há portões que só cedem num sentido: a água de montante empurra o portão e ele abre para deixar o barco e a água passarem; mas se a água de jusante tenta voltar, ela empurra o portão contra o batente e ele se sela sozinho, mais firme quanto mais forte for o empurrão de retorno. Ninguém precisa segurar o portão — a própria água que tentaria voltar é o que o mantém fechado. **Mapeamento explícito:** cada portão da eclusa = uma válvula cardíaca; a água de montante que empurra e abre = o sangue vindo de trás sob maior pressão (átrio enchendo o ventrículo, ou ventrículo ejetando para a artéria); a água de jusante que tenta voltar e sela o portão = o refluxo que fecha a válvula; o fato de o portão não ter motor e ser movido só pela água = a passividade total das válvulas, comandadas apenas pela diferença de pressão; os batentes robustos que impedem o portão de ser arrancado = as cordas tendíneas e os músculos papilares que impedem a valva AV de everter. **Onde a analogia quebra:** numa eclusa, um operador controla o enchimento e o esvaziamento de cada trecho deliberadamente; no coração não há operador — quem cria as diferenças de pressão é a própria contração e o relaxamento do músculo, sem decisão consciente. Além disso, a eclusa trabalha devagar, em minutos, enquanto as válvulas cardíacas abrem e fecham cerca de uma vez por segundo, a vida inteira, sem nunca serem lubrificadas ou trocadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Com esse mapa na cabeça, tudo o que vem depois sobre o coração deixa de ser lista e vira consequência. Quando você estudar o ciclo cardíaco na fisiologia, vai reencontrar essas quatro portas abrindo e fechando na ordem ditada pelas pressões — e o famoso 'tum-tá' será só o som delas trabalhando. Quando estudar as doenças valvares, vai reconhecer os dois modos de uma porta falhar: a que não fecha e deixa vazar (insuficiência) e a que não abre direito e obstrui (estenose). E quando encostar o estetoscópio num paciente pela primeira vez, vai estar literalmente auscultando as portas deste bloco. Os nós filhos deste bloco vão abrir cada uma dessas quatro portas em detalhe — mitral, tricúspide, aórtica e pulmonar — mais o aparato de cordas e papilares e a mecânica das bulhas. Em cada um, as mesmas duas perguntas do nó pai reaparecem afiadas: para que serve esta peça — impedir o refluxo — e por que ela tem exatamente esta forma — a pressão que enfrenta a esculpiu."
+    },
+    {
+      "tipo": "imagem",
+      "id": "s2-ana2-01-120-img-01",
+      "titulo": "Por que uma bomba sem portas não bombeia: seringa versus válvula",
+      "descricao": "Uma imagem conceitual em duas metades comparando duas bombas. À esquerda, uma seringa sem agulha mergulhada num copo, com uma seta dupla (ida e volta) mostrando a água entrando e saindo pelo mesmo furo, e a legenda 'sem porta: o líquido só chacoalha, não avança'. À direita, o mesmo esquema de bomba, mas agora com uma pequena porta de mão única no orifício: na fase de empurrar, a porta está aberta e uma seta única aponta para fora ('abre e deixa sair'); num detalhe abaixo, na fase de puxar, a porta está fechada selando o furo e o refluxo é barrado ('fecha e impede voltar'), com a legenda 'com porta: o líquido só anda para frente'. O contraste fixa de imediato por que a válvula é o que transforma agitação em bombeamento.",
+      "prompt_ia": "Conceptual educational illustration split in two halves side by side comparing two pumps. Left half: a needleless syringe dipped in a glass of water with a double-headed arrow (in and out) through the same hole showing water sloshing back and forth, labeled 'no door: fluid just sloshes, does not advance'. Right half: the same pump but now with a small one-way flap valve at the opening; during the push phase the flap is open with a single arrow pointing out ('opens, lets out'), and in a small inset below during the pull phase the flap is closed sealing the hole with backflow blocked ('closes, prevents return'), labeled 'with door: fluid only moves forward'. Clean modern textbook style, muted scientific palette, neutral background, Brazilian Portuguese labels, high clarity.",
+      "origem": "esquema"
+    },
+    {
+      "tipo": "imagem",
+      "id": "s2-ana2-01-120-img-02",
+      "titulo": "As quatro portas do coração e suas duas engenharias",
+      "descricao": "Um esquema frontal simplificado do coração aberto mostrando as quatro válvulas e a lógica de cada tipo. Entre cada átrio e ventrículo, uma valva atrioventricular representada por folhetos presos por fios finos (cordas tendíneas) que descem até pequenas saliências musculares na parede ventricular (músculos papilares), com um chamamento 'valvas AV: cordas impedem a eversão sob a alta pressão da sístole'. Na saída de cada ventrículo para a grande artéria, uma valva semilunar representada em vista de cima como três bolsas em meia-lua encostadas no centro, com um chamamento 'valvas semilunares: três conchas que o refluxo enche e sela, sem cordas'. Setas indicam o sentido único do fluxo em cada porta. Uma pequena legenda lembra: 'todas passivas — abrem e fecham só pela diferença de pressão'.",
+      "prompt_ia": "Clean simplified frontal diagram of an opened heart, textbook style, showing the four cardiac valves and the logic of each type. Between each atrium and ventricle an atrioventricular valve drawn as leaflets tethered by thin fibrous strings (chordae tendineae) descending to small muscular bumps on the ventricular wall (papillary muscles), with a callout 'AV valves: cords prevent eversion under the high pressure of systole'. At each ventricular outflow into the great artery a semilunar valve shown in top view as three half-moon pockets meeting in the center, with a callout 'semilunar valves: three cups that backflow fills and seals, no cords'. Arrows indicate one-way flow direction at each door. A small note reads 'all passive — open and close only by pressure difference'. Muted anatomical palette, neutral background, Brazilian Portuguese labels, educational clarity, not overly detailed.",
+      "origem": "esquema"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s2-ana2-01-120-fc1",
+      "tipo": "por_que",
+      "pergunta": "Por que uma bomba que aperta e relaxa por um único orifício não consegue transportar líquido sem válvulas?",
+      "resposta": "Porque o fluido corre sempre da pressão maior para a menor. Ao apertar, a bomba lança o líquido para a frente; ao relaxar, a pressão interna despenca e fica menor que a do lado de saída, então o mesmo líquido reflui pelo mesmo caminho. O resultado é um vaivém: o líquido chacoalha para frente e para trás e termina onde começou, sem ser transportado. É o que acontece com uma seringa sem agulha. Só uma porta de mão única impede o refluxo e converte a agitação em bombeamento real.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["refluxo", "fundacao", "bomba"]
+    },
+    {
+      "card_id": "s2-ana2-01-120-fc2",
+      "tipo": "mecanismo",
+      "pergunta": "As válvulas cardíacas têm músculo ou recebem comando nervoso para abrir e fechar? O que de fato as movimenta?",
+      "resposta": "Não. As válvulas cardíacas são estruturas passivas: não têm músculo próprio, não recebem ordem de nervo e não gastam energia. Cada abertura e cada fechamento é comandado unicamente pela diferença de pressão entre os dois lados da válvula naquele instante. Quando a pressão de trás é maior, ela empurra a válvula e abre; quando o fluido tenta refluir, esse próprio refluxo empurra a válvula contra sua sede e a fecha. O coração não abre as válvulas — ele muda as pressões nas câmaras, e as válvulas obedecem à física sozinhas.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["passividade", "pressao", "mecanismo"]
+    },
+    {
+      "card_id": "s2-ana2-01-120-fc3",
+      "tipo": "mecanismo",
+      "pergunta": "Quais são os quatro pontos onde o coração instala válvulas e o que cada grupo impede?",
+      "resposta": "São quatro válvulas em quatro pontos de refluxo possível. Duas valvas atrioventriculares (AV), entre cada átrio e seu ventrículo, impedem o sangue de voltar do ventrículo para o átrio durante a contração (sístole). Duas valvas semilunares, na saída de cada ventrículo para a grande artéria, impedem o sangue de desabar da artéria de volta para o ventrículo quando ele relaxa (diástole). Elas se revezam: quando as AV abrem para encher o ventrículo, as semilunares estão fechadas, e vice-versa. Esse revezamento força o sangue a andar sempre num sentido só.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["atrioventricular", "semilunar", "topografia"]
+    },
+    {
+      "card_id": "s2-ana2-01-120-fc4",
+      "tipo": "por_que",
+      "pergunta": "Por que as valvas atrioventriculares precisam de cordas tendíneas e músculos papilares, mas as semilunares não?",
+      "resposta": "Porque enfrentam pressões e posições diferentes. As valvas AV são fechadas de baixo pela pressão brutal da contração ventricular; sem apoio, seriam viradas do avesso para dentro do átrio, como um guarda-chuva no vento, e o sangue vazaria. As cordas tendíneas prendem seus folhetos aos músculos papilares da parede ventricular e travam a válvula no ponto certo, impedindo a eversão. As semilunares, na saída, dispensam cordas porque sua própria forma de três bolsas em meia-lua faz o trabalho: o refluxo cai dentro das conchas, enche-as e sela a passagem. Duas engenharias diferentes para o mesmo problema, moldadas pela pressão de cada local.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["forma-funcao", "cordas-tendineas", "morfologia"]
+    },
+    {
+      "card_id": "s2-ana2-01-120-fc5",
+      "tipo": "mecanismo",
+      "pergunta": "Como uma valva semilunar consegue se fechar completamente sem ter cordas que a segurem?",
+      "resposta": "Pela geometria das suas três bolsas em forma de meia-lua, viradas para cima como três conchas. Quando o sangue tenta refluir da artéria para o ventrículo, ele cai dentro dessas três bolsas e as enche; cheias, elas se empurram umas contra as outras no centro até selarem a passagem por completo, como três copinhos que se enchem e se encostam. O próprio refluxo que tentaria abrir a válvula é o que a fecha. A forma da bolsa é a solução mecânica, dispensando qualquer corda.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["semilunar", "mecanismo", "geometria"]
+    },
+    {
+      "card_id": "s2-ana2-01-120-fc6",
+      "tipo": "mecanismo",
+      "pergunta": "Por que o coração faz dois sons ('tum-tá') e o que exatamente produz cada um?",
+      "resposta": "Cada som é o fechamento de um par de válvulas contra uma coluna de sangue sob pressão, que faz a válvula vibrar. O primeiro som ('tum', primeira bulha) é o fechamento das valvas atrioventriculares no início da sístole, quando o ventrículo se contrai. O segundo som ('tá', segunda bulha) é o fechamento das valvas semilunares no fim da sístole, quando o ventrículo relaxa e a pressão arterial tenta empurrar o sangue de volta. Ou seja, cada batida ouvida ao estetoscópio é literalmente o som das portas do coração se fechando na ordem certa.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["bulhas", "ausculta", "clinica"]
+    },
+    {
+      "card_id": "s2-ana2-01-120-fc7",
+      "tipo": "comparacao",
+      "pergunta": "Quais são os dois modos de uma válvula cardíaca falhar, e como cada um afeta o fluxo?",
+      "resposta": "Uma válvula pode falhar por insuficiência ou por estenose. Na insuficiência (regurgitação), a porta não fecha direito e deixa o sangue vazar de volta no sentido errado — o refluxo que ela deveria impedir acontece, e a bomba perde eficiência. Na estenose, a porta não abre direito e obstrui a passagem para a frente, forçando a câmara de trás a trabalhar muito mais para empurrar o sangue pelo estreitamento. Em ambos os casos o sangue passa turbulento pela válvula doente e produz um ruído extra e prolongado — o sopro — audível ao estetoscópio.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["insuficiencia", "estenose", "sopro"]
+    },
+    {
+      "card_id": "s2-ana2-01-120-fc8",
+      "tipo": "etimologia",
+      "pergunta": "A palavra 'valva' vem do latim 'valva', a folha de uma porta de dois batentes. Como esse nome resume a função da estrutura?",
+      "resposta": "Uma valva romana era cada uma das folhas de uma porta que se abria ao meio, com dois batentes girando para os lados. O nome captura exatamente o que a estrutura faz no coração: é uma porta que se abre e se fecha para deixar o sangue passar num sentido só. Cada 'folheto' de uma valva é uma dessas folhas de porta. O nome, portanto, não descreve a forma por acaso — ele já entrega a função: uma porta de mão única para o sangue.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["etimologia", "valva", "forma-funcao"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s2-ana2-01-120-caso-01",
+      "titulo": "A corda que arrebentou",
+      "apresentacao": "Um homem de 62 anos chega ao pronto-socorro com falta de ar súbita e intensa, que começou há duas horas de forma abrupta, quando ele fazia um pequeno esforço em casa. Ele não consegue se deitar sem sentir que sufoca e está com a respiração acelerada. Ao auscultar o tórax, o médico ouve um sopro forte e novo sobre a região do coração, que não existia num exame de rotina feito meses antes. A pressão está baixa e ele parece à beira de um colapso.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Uma das cordas tendíneas que prendiam um folheto de uma valva atrioventricular se rompeu de repente (ruptura de corda tendínea), possivelmente sobre um tecido já enfraquecido ao longo do tempo. Sem aquela corda ancorando o folheto, ele perdeu o ponto de travamento que o impedia de virar do avesso."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A estrutura afetada é a valva atrioventricular e seu aparato de sustentação — o folheto, a corda tendínea rota e o músculo papilar que a ancorava. Lembre da lógica do bloco: essa corda existia justamente para segurar o folheto contra a pressão brutal da contração ventricular. Sem ela, na sístole o folheto everte para dentro do átrio, como um guarda-chuva que o vento virou, e a porta deixa de vedar."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a válvula sem vedar, cada contração do ventrículo agora empurra uma parte do sangue de volta para o átrio, no exato sentido que a válvula deveria impedir (insuficiência valvar aguda). A bomba perde eficiência: parte da força de cada batida se desperdiça empurrando sangue para trás. O sangue represa para trás, no átrio e nos vasos que vêm do pulmão, e o líquido começa a se acumular nos pulmões."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Daí a falta de ar súbita e a impossibilidade de se deitar: os pulmões estão se enchendo de líquido represado (congestão pulmonar), e deitar piora esse acúmulo. O sopro novo e forte é o som do sangue passando turbulento pela válvula que não fecha mais — é literalmente o ruído do refluxo que a porta deveria barrar. A pressão baixa reflete a queda no volume de sangue efetivamente empurrado para a frente."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Entender que o problema é uma porta que deixou de vedar orienta toda a conduta: é preciso estabilizar a congestão e, com urgência, reparar ou substituir a válvula para restaurar o sentido único do fluxo. A lógica de 'uma bomba só empurra de verdade se suas portas impedem o refluxo' é literalmente o que está falhando à beira do leito — e o que precisa ser reconstruído."
+        }
+      ],
+      "diagnostico_revelado": "O quadro corresponde a uma **insuficiência mitral aguda por ruptura de corda tendínea** — a valva atrioventricular esquerda (mitral) perdeu o suporte que a mantinha competente e passou a deixar o sangue refluir para o átrio a cada sístole, causando edema agudo dos pulmões. É a falha, no coração, exatamente do princípio deste bloco: a porta de mão única que impede o refluxo deixou de fechar.",
+      "tratamento_resumido": "Estabilizar a congestão pulmonar (oxigênio, medicamentos que reduzem a sobrecarga e a pressão nos pulmões) e encaminhar com urgência para cirurgia de reparo ou troca da válvula, restaurando a competência da porta. Compreender que uma única corda tendínea rota basta para desfazer o sentido único do fluxo — e derrubar a eficiência da bomba inteira — é o que torna a gravidade do quadro inteligível."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s2-ana2-01-100",
+        "titulo": "Coração — Visão Geral",
+        "relevancia": "base_necessaria"
+      },
+      {
+        "bloco_id": "s2-ana2-01-000",
+        "titulo": "Sistema Cardiovascular — Visão Geral",
+        "relevancia": "base_necessaria"
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Ciclo cardíaco (sístole, diástole e curvas de pressão)",
+        "mecanismo_conexao": "A abertura e o fechamento passivos das quatro válvulas por diferença de pressão são o esqueleto do ciclo cardíaco: cada fase é definida por qual válvula está aberta ou fechada, o que só se entende sabendo que elas obedecem à pressão"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Ausculta cardíaca (bulhas e focos de ausculta)",
+        "mecanismo_conexao": "As bulhas 'tum-tá' são o som direto do fechamento das válvulas deste bloco; localizar cada foco de ausculta é ouvir cada porta em seu ponto de projeção no tórax"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Valvopatias (estenose e insuficiência)",
+        "mecanismo_conexao": "Os dois modos de falha de uma porta — não fechar (insuficiência) e não abrir (estenose) — decorrem diretamente da mecânica montada aqui, e explicam a origem dos sopros"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Febre reumática e endocardite infecciosa",
+        "mecanismo_conexao": "Doenças que lesam os folhetos valvares mostram, na prática, o que acontece quando o tecido finíssimo das portas é danificado por inflamação ou infecção"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s2-hist2-00-000",
+        "titulo": "Histologia II — Tecido conjuntivo dos folhetos valvares e endocárdio",
+        "relevancia": "complementar"
+      },
+      {
+        "bloco_id": "s2-emb-00-000",
+        "titulo": "Embriologia dos sistemas — formação dos coxins endocárdicos e das valvas",
+        "relevancia": "explicativa"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s2-ana2-01-120-img-01",
+        "titulo": "Por que uma bomba sem portas não bombeia: seringa versus válvula",
+        "origem": "esquema"
+      },
+      {
+        "id": "s2-ana2-01-120-img-02",
+        "titulo": "As quatro portas do coração e suas duas engenharias",
+        "origem": "esquema"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "pronto",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "produtor-bloco-anima",
+    "data_geracao": "2026-07-03",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "completo"
   },
-  "fontes": [],
-  "_lentes": [
-    "funcao-fisiologia",
-    "morfologia/forma"
-  ]
+  "fontes": []
 }

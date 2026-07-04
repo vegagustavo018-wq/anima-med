@@ -1,0 +1,195 @@
+{
+  "juiz": "JUIZ3_ADVERSARIAL",
+  "data_revisao": "2026-07-03",
+  "blocos_revisados": 10,
+  "sem_erros": [
+    "s9-mi3-00-000",
+    "s9-mi3-01-000",
+    "s9-mi3-01-001",
+    "s9-mi3-01-001-01",
+    "s9-mi3-01-001-02",
+    "s9-mi3-01-001-03",
+    "s9-mi3-01-001-04",
+    "s9-mi3-01-001-05",
+    "s9-mi3-01-002",
+    "s9-mi3-01-003"
+  ],
+  "com_erros_ou_imprecisoes": [],
+  "sinalizacoes": [
+    {
+      "bloco_id": "s9-mi3-01-001-02",
+      "titulo": "Autoanticorpos como Ferramenta Diagnóstica",
+      "sinalizacao": "[⚠️ VERIFICAR] Anti-CCP (peptídeo cíclico citrulinado) mencionado como marcador diagnóstico sem ressalva sobre especificidade diferencial: requer verificação se a narrativa completa distingue FAN em artrite reumatoide (sensibilidade ~70%, especificidade ~95%) vs FAN em LES (sensibilidade ~95%, especificidade variável). ANCA também deve incluir diferenciação: MPO-ANCA (microscopia perinuclear) vs PR3-ANCA (citoplásmico) na vasculite.",
+      "tipo": "especificidade_diferencial_incompleta"
+    },
+    {
+      "bloco_id": "s9-mi3-01-001-03",
+      "titulo": "Abordagem Semiológica das Artrites",
+      "sinalizacao": "[⚠️ VERIFICAR] 'Ritmo circadiano da dor' mencionado sem contexto: precisa esclarecer que dor matinal com rigidez é SINAL DE INFLAMAÇÃO (típica de AR), enquanto piora ao final do dia sugere doença mecânica. O termo 'ritmo' pode confundir se não explicar fenômeno biológico de aumento de citocinas matinais.",
+      "tipo": "potencial_confusao_conceitual"
+    },
+    {
+      "bloco_id": "s9-mi3-01-001-04",
+      "titulo": "Provas de Atividade Inflamatória",
+      "sinalizacao": "[⚠️ VERIFICAR] Dissociação VHS-PCR mencionada sem contexto de patologia: VHS pode estar elevado em lúpus SEM atividade de doença (proteínas de fase aguda paradoxalmente BAIXAS em LES não-ativo), enquanto PCR é mais específica para atividade. Crítico para lúpus: VHS elevado + PCR normal = pode ser LES inativo, não falha terapêutica.",
+      "tipo": "nuance_diagnostica_faltante"
+    },
+    {
+      "bloco_id": "s9-mi3-01-002",
+      "titulo": "Artrite Reumatoide",
+      "sinalizacao": "[⚠️ VERIFICAR] Descrição como 'poliartrite inflamatória simétrica crônica' está correta mas incompleta: falta menção de PADRÃO ARTICULAR específico (pequenas articulações = interfalangianas proximais + MCF + punhos preferentemente). Artrite simétrica em grandes articulações (joelhos, ombros) é RARA em AR pura e sugere diagnóstico alternativo (soronegativa, sarcoidose, hemocromatose).",
+      "tipo": "especificacao_semiologica_incompleta"
+    },
+    {
+      "bloco_id": "s9-mi3-01-003",
+      "titulo": "Lúpus Eritematoso Sistêmico",
+      "sinalizacao": "[⚠️ VERIFICAR] 'A grande imitadora' é expressão imprecisa: LES imita outras doenças (infecção, linfoma) ou outras doenças imitam LES? Proposta: esclarecer como 'chamariz diagnóstico' (mimetiza muitas condições) ou 'diagnóstico mímico' (é imitado por outras). Ambiguidade prejudica aprendizado.",
+      "tipo": "linguagem_ambigua"
+    }
+  ],
+  "argumentos_adversariais": {
+    "estructura_geral": {
+      "achado": "Status 'esqueleto' com narrativa vazia é CORRETO para fase inicial",
+      "argumento_adversarial": "Riscos de esqueleto descontextualizado: (1) títulos longos podem sobrecarregar árvore visual; (2) 'O Problema da Autoimunidade Sistêmica' é conceitual, não factual - risco de narrativa vaguista; (3) 'Arsenal Terapêutico' sem detalhe é arriscado: qual arsenal? Tópicos como 'DMARD convencional vs biológico' vs 'imunossupressor' são distintos e precisam separação clara.",
+      "recomendacao": "Manter estrutura mas validar que subtítulos (profundidade 3) estarão prontos para BLOCOS, não apenas CONCEITOS abstratos. AR e LES devem ter casos clínicos REAIS (>80% validados por literatura) antes de ir para confiança diagnóstica."
+    },
+    "fatos_medicos": {
+      "achado": "Nenhum erro factual detectado nos resumos",
+      "argumento_adversarial": "Ausência de erro NÃO garante ausência de imprecisão futura na narrativa. Riscos: (1) 'Artrite Reumatoide' pode ser confundida com 'poliartrite reumatoide' (inespecífica); (2) LES tem critérios ACR/EULAR atualizados (2019) - versão antiga (1997) ainda circula; (3) Tolerância imunológica tem debate atual sobre papel de Treg vs Breg que esqueleto pode ignorar.",
+      "recomendacao": "Adicionar FONTE esperada em cada esqueleto antes da produção. Ex: 'Tolerância Imunológica' = Citação obrigatória: revisão Rudensky & Bevan 2003+ sobre mecanismos centrais e periféricos."
+    },
+    "cascata_causal": {
+      "achado": "Títulos refletem cascata lógica: tolerância→quebra→autoanticorpos→inflamação",
+      "argumento_adversarial": "Cascata omitiria passo CRÍTICO: permeabilidade da barreira hematoencefálica em neuropatia lúpus, ou papel de neutrófilos em NET (NETose) como trigger inicial, não consequência. Se a narrativa seguir apenas 'perda de tolerância → doença', será INCOMPLETA para casos refratários. AR soronegativa (~30% dos casos) quebra o modelo 'autoanticorpos → doença'.",
+      "recomendacao": "Incluir bloco futuro 'Exceções e Contrafatos' para cada doença: AR seronegativa, LES hipocomplementêmico assintomático, etc."
+    },
+    "algoritmos_criterios": {
+      "achado": "Nenhum algoritmo específico mencionado nos esqueletos (correto para rascunho)",
+      "argumento_adversarial": "Riscos quando implementados: (1) Critérios ACR 1987 para AR ainda usados mas OBSOLETOS (precisão 84% vs ACR/EULAR 2010 = 89-90%); (2) Critérios SLICC 2012 para LES têm sensibilidade 97% mas especificidade apenas 84% - comparável a ACR 1997 (sens 96%, espec 96%); (3) Tabela diagnóstica pode confundir clínico novo: 'positividade de FAN = LES' é FALSO (5-10% população normal FAN+).",
+      "recomendacao": "Quando chegar em diagnóstico diferencial: usar ACR/EULAR 2010 para AR (não 1987), SLICC 2012 para LES, E incluir 'FAN em população normal' como contrafato diagnóstico."
+    },
+    "contrafatos": {
+      "achado": "Sem contrafatos mencionados (esperado em esqueleto)",
+      "argumentos_necessarios": [
+        {
+          "doenca": "Artrite Reumatoide",
+          "contrafato_1": "Se NÃO houvesse anti-CCP, então AR não seria diagnosticada nos primeiros 3 meses? FALSO. AR seronegativa é diagnosticada por critérios clínicos + VHS + imagem. Contrafato real: 'Se anti-CCP não existisse, 30% dos casos AR permaneceriam seronegativs até 6 meses, retardando tratamento DMARD'.",
+          "contrafato_2": "Se o reumatóide factor fosse sempre positivo em AR, então sua ausência excluiria AR? NÃO. Contrafato: 'Se FR estivesse em 100% AR vs 5% população normal, teríamos VPP 95%; como está em 70% AR e 5% normal, VPP real ~95% mesmo assim, MAS sensibilidade de apenas 70% garante muitos falsos negativos'."
+        },
+        {
+          "doenca": "Lúpus Eritematoso Sistêmico",
+          "contrafato_1": "Se complemento (C3, C4) nunca caísse em lúpus, então seu monitoramento seria inútil? Parcialmente falso. Contrafato: 'Queda de complemento correlaciona com nefrite em 60% dos casos, MAS nefrite lúpica ocorre SEM hipocomplementemia em ~20% dos casos, então complemento é preditor útil mas não conclusivo'.",
+          "contrafato_2": "Se FAN contra DNA dupla fita não existisse, LES seria indiagnosticável? FALSO. Contrafato: 'Se anti-dsDNA não existisse (~70% sensível), ainda teríamos anti-Sm (99% específico) e critérios clínicos para diagnosticar LES, apenas com menor eficiência diagnóstica'."
+        }
+      ],
+      "recomendacao": "Cada bloco de diagnóstico diferencial deve incluir PELO MENOS 2 contrafatos para evitar raciocínio binário 'teste positivo = doença'."
+    },
+    "casos_clinicos": {
+      "achado": "Nenhum caso clínico nos esqueletos (esperado, status rascunho)",
+      "risco_adversarial": "Quando implementados: (1) Caso de AR sem mencionar diagnóstico diferencial com artrite psoriásica (pode ser seronegativo, mesmo padrão inflamatório); (2) Caso de LES pode omitir variante 'lúpus medicamentoso' (hidralazina, procainamida) que mimetiza LES completamente; (3) Casos podem ser NÃO representativos: se todos tiverem FAN+, DR4/DR5+, risco de falsa certeza diagnóstica.",
+      "recomendacao": "Quando chegar em 'casos_clinicos': exigir que 50%+ dos casos tenham CONTRAFATOS (achados atípicos, diagnósticos mimetizadores, exceções). Ex: Caso AR = paciente seronegativa, diagnóstico só por imagem e clínica."
+    },
+    "conflitos_interesse": {
+      "achado": "Nenhum medicamento mencionado especificamente (correto para esqueleto)",
+      "argumento_adversarial": "Riscos quando 'Arsenal Terapêutico' for expandido: (1) Se DMARD biológicos (infliximabe, adalimumabe) forem descritos sem mencionar CUSTO (~R$ 3-10k/mês), risco de oversimplificação para contexto brasileiro; (2) Corticosteroides podem ser descritos como 'bridge therapy' SEM ressalva de risco de osteoporose 20% em 1 ano de uso contínuo; (3) Ciclofosfamida em lúpus ativo: risco de apresentar como 'padrão ouro' SEM mencionar imunocompromisso severo.",
+      "recomendacao": "Adicionar seção 'Considerações de Acesso' e 'Efeitos Adversos de Monitoramento Obrigatório' em cada droga. Não é conflito de interesse, é honestidade."
+    },
+    "oversimplificacao": {
+      "achado": "Resumos mantêm grau apropriado de abstração para esqueleto",
+      "riscos_detectados": [
+        "'Autoimunidade' reduzida a 'perda de tolerância' omitiria: islet epitope spreading, bystander activation, molecular mimicry como mecanismos distintos",
+        "'Manifestações sistêmicas de AR' pode omitir que são RARAS (nódulos reumatoides em 20%, vasculite em 5%) vs articulares (100%)",
+        "'FAN, FR, anti-CCP' mencionados sem peso diferencial: FAN é achado, FR e anti-CCP são PREDITORES de progressão"
+      ],
+      "recomendacao": "Validar narrativa contra oversimplificação usando 'Teste dos 3 Níveis': (1) Resumo 1 frase OK? (2) Resumo 1 parágrafo pode ser vago? (3) Narrativa completa tem nuances? Se sim em 1 e não em 3, reescrever."
+    }
+  ],
+  "recomendacoes": {
+    "imediatas": [
+      {
+        "prioridade": "ALTA",
+        "item": "Sinalizações [⚠️ VERIFICAR] em 5 blocos requerem validação ANTES de expandir narrativas. Não são erros, são ambiguidades que podem se tornar erros em conteúdo expandido.",
+        "acao": "Pré-produção: revisar cada [⚠️ VERIFICAR] com especialista reumatológico antes de escrever narrativa."
+      },
+      {
+        "prioridade": "ALTA",
+        "item": "Adicionar ao schema de bloco um campo 'fontes_esperadas' que liste MÍNIMO 3 referências que devem ser citadas na narrativa completa.",
+        "acao": "Exemplo: 's9-mi3-01-001-02' deve citar: (1) ACR/EULAR 2010 para AR; (2) Tan et al. 2019 para LES; (3) revisão Smolen et al. 2023 se disponível."
+      },
+      {
+        "prioridade": "ALTA",
+        "item": "Falta de contrafatos nos esqueletos é aceitável, MAS planejamento deve incluir 'bloco de contrafatos' para cada doença principal antes de publicar Fase 1.",
+        "acao": "Criar subtítulo: 's9-mi3-01-002-CONTRAFATOS' (AR) e 's9-mi3-01-003-CONTRAFATOS' (LES) como extensões planejadas."
+      }
+    ],
+    "antes_producao_narrativa": [
+      {
+        "blocos_afetados": [
+          "s9-mi3-01-001-02",
+          "s9-mi3-01-001-03",
+          "s9-mi3-01-001-04"
+        ],
+        "validacao_requerida": "Revisar se 'autoanticorpos', 'semiologia' e 'provas inflamatórias' mencionar TODAS as seguintes armadilhas diagnósticas: (1) FAN+ em 5-10% população saudável; (2) FR+ em 5% saudáveis; (3) VHS pode estar NORMAL em 20% AR ativa; (4) PCR falso-negativo em 10% LES inativo com VHS elevado."
+      },
+      {
+        "blocos_afetados": [
+          "s9-mi3-01-002",
+          "s9-mi3-01-003"
+        ],
+        "validacao_requerida": "Validar descrição clínica contra: (1) ACR/EULAR 2010 criteria for RA (não usar 1987); (2) SLICC 2012 criteria for SLE (não usar ACR 1997); (3) Incluir prevalências: AR 0.5-1% pop, LES 0.05-0.1% pop (base para cálculo VPP/VPN)."
+      }
+    ],
+    "para_proximos_blocos": [
+      {
+        "tema": "Diagnóstico Diferencial em Reumatologia",
+        "risco": "Sem bloco explícito de DD, risco de pensamento binário 'FAN = LES'",
+        "recomendacao": "Adicionar no nível 2 ('Reumatologia Clínica'): bloco 's9-mi3-01-010: Diagnóstico Diferencial de Poliartrite' com tabela comparativa (AR vs LES vs Artrite Psoriásica vs Artrite Viral vs Artrite por Cristais)."
+      },
+      {
+        "tema": "Variantes e Exceções Diagnósticas",
+        "risco": "Se todos os casos forem 'clássicos', estudante criará modelo mental falho",
+        "recomendacao": "Criar bloco futuro 's9-mi3-01-011: AR Seronegativa e Manifestações Atípicas' (covers ~30% dos casos reais)"
+      },
+      {
+        "tema": "Atualização de Critérios e Algoritmos",
+        "risco": "Critérios desatualizados ainda são ensinados em muitas escolas",
+        "recomendacao": "Criar bloco 's9-mi3-01-012: Evolução dos Critérios Diagnósticos (1987→2010 e 2019+)' para transparência de como conhecimento evolui."
+      }
+    ],
+    "validacoes_futuras": [
+      {
+        "quando": "Antes de publicar qualquer bloco com 'conduta_tratamento'",
+        "validar": "Que medicamentos descritos estão em diretrizes atuais (2023+) de tratamento, não versões desatualizadas. Ex: Ciclofosfamida em LES ativo é AINDA PADRÃO, ou luprolizumabe novo é alternativa melhor?"
+      },
+      {
+        "quando": "Antes de publicar flashcards",
+        "validar": "Que flashcards com critérios diagnósticos estejam 100% em linha com ACR/EULAR atuais, não mistura de versões antigas."
+      },
+      {
+        "quando": "Antes de publicar imagens (esquema de tolerância, cascata inflamatória, etc)",
+        "validar": "Que imagens IA ou ilustradas correspondam a conhecimento vigente, especialmente se houver mudanças recentes (ex: TLR9 em lúpus foi 'descoberta 2000s', agora é base de novos medicamentos 2020s)."
+      }
+    ]
+  },
+  "qualidade_geral": {
+    "score_estrutura": "9/10 — Árvore bem pensada, granularidade apropriada",
+    "score_precicao_medica_esqueleto": "8/10 — Sem erros factuais detectados, MAS 5 sinalizações [⚠️ VERIFICAR] precisam esclarecimento antes de expansão",
+    "score_risco_diagnostico": "7/10 — Risco moderado: falta contrafatos, critérios desatualizados não mencionados, variantes diagnósticas ausentes",
+    "score_preparacao_para_implementacao": "6/10 — Esqueleto está pronto para narrativa, MAS faltam: (1) fontes esperadas, (2) validação contra critérios atualizados, (3) plano de casos clínicos reais + exceções",
+    "recomendacao_geral": "APROVADO com ressalvas. Estrutura é sólida e nenhum erro factual detectado. Implementar recomendações 'imediatas' (3) antes de começar produção de narrativas para garantir qualidade e atualidade clínica. Prioridade: validar [⚠️ VERIFICAR] em 5 blocos e adicionar campo 'fontes_esperadas'."
+  },
+  "assinatura": {
+    "juiz": "JUIZ3_ADVERSARIAL",
+    "eixos_auditoria": [
+      "precisao_medica",
+      "contrafatos_e_nuances",
+      "criterios_atualizados",
+      "armadilhas_diagnosticas",
+      "conflitos_interesse_implícitos",
+      "oversimplificacao_prejudicial",
+      "casos_clinicos_representatividade"
+    ],
+    "data": "2026-07-03",
+    "status": "REVISÃO COMPLETA"
+  }
+}

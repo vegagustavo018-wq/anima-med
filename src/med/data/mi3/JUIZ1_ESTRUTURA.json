@@ -1,0 +1,180 @@
+{
+  "juiz": "JUIZ1_ESTRUTURA",
+  "data_auditoria": "2026-07-03",
+  "data_conclusao": "pendente",
+  "blocos_esperados": 10,
+  "blocos_auditados": 2,
+  "blocos_pendentes": 8,
+  "status_geral": "em_progresso",
+  "conformes": [
+    {
+      "bloco_id": "s9-mi3-00-000",
+      "titulo": "Medicina Interna III — Visão Geral",
+      "status": "APROVADO",
+      "nota_geral": 9.2,
+      "criterios": {
+        "schema_v3_0": "CONFORME",
+        "8_etapas": "CONFORME",
+        "narrativa_problema": "CONFORME",
+        "tipos_narrativa": "EXCELENTE",
+        "flashcards": "EXCELENTE",
+        "conexoes": "PARCIAL",
+        "campos_obrigatorios": "CONFORME",
+        "anti_padroes": "CONFORME"
+      },
+      "violacoes_leves": [
+        "Conexões futuras incompletas: apenas 2 de 5 filhos listados"
+      ],
+      "recomendacoes": [
+        "Expandir seção 'futuras' para incluir TODOS os 5 filhos (s9-mi3-03-000, s9-mi3-04-000, s9-mi3-05-000)",
+        "Considerar mudar 'nivel_confianca' de 'estudo' para 'consenso_didatico'"
+      ]
+    },
+    {
+      "bloco_id": "s9-mi3-01-000",
+      "titulo": "Dor Torácica — Diagnóstico Diferencial",
+      "status": "APROVADO",
+      "nota_geral": 9.5,
+      "criterios": {
+        "schema_v3_0": "CONFORME",
+        "8_etapas": "CONFORME",
+        "narrativa_problema": "CONFORME",
+        "tipos_narrativa": "EXCELENTE",
+        "flashcards": "EXCELENTE",
+        "conexoes": "CONFORME",
+        "campos_obrigatorios": "CONFORME",
+        "anti_padroes": "CONFORME"
+      },
+      "violacoes_leves": [],
+      "recomendacoes": [
+        "Expandir prerequisitos: adicionar s8-patologia-cardiaca-001 e s8-fisiologia-respira-001",
+        "Mudar 'nivel_confianca' para 'consenso_didatico'"
+      ]
+    }
+  ],
+  "nao_conformes": [],
+  "resumo_violacoes": {
+    "schema_v3_0": [],
+    "etapas_obrigatorias": [],
+    "narrativa_inicio": [],
+    "flashcards": [],
+    "conexoes": [
+      {
+        "bloco_id": "s9-mi3-00-000",
+        "tipo_violacao": "conexoes_futuras_incompletas",
+        "descricao": "Apenas 2 de 5 filhos listados em 'futuras'. Faltam: s9-mi3-03-000, s9-mi3-04-000, s9-mi3-05-000"
+      }
+    ],
+    "campos_obrigatorios": [],
+    "anti_padroes": []
+  },
+  "padroes_positivos_detectados": [
+    {
+      "padrao": "Narrativa envolvente começando com cenário clínico real",
+      "exemplos": [
+        "s9-mi3-00-000: 'Um paciente chega ao pronto-socorro com dor torácica'",
+        "s9-mi3-01-000: 'O pior telefone que você recebe como residente...'"
+      ],
+      "frequencia": "100% dos blocos (2/2)"
+    },
+    {
+      "padrao": "Flashcards sofisticados com 8 tipos diferentes, zero padrão 'O que é X?'",
+      "exemplos": [
+        "Tipos: por_que, mecanismo, contrafactual, clinico, comparacao, armadilha, etimologia, sintese_transdisciplinar"
+      ],
+      "frequencia": "100% dos blocos (2/2)"
+    },
+    {
+      "padrao": "Casos clínicos bem construídos com cascata de mecanismo-estrutura-disfunção-sintoma-consequência",
+      "exemplos": [
+        "Caso João em s9-mi3-00-000 (infarto antero-septal)",
+        "Caso José em s9-mi3-01-000 (IAMCSST na AVI)"
+      ],
+      "frequencia": "100% dos blocos (2/2)"
+    },
+    {
+      "padrao": "Armadilhas clínicas explicitamente nomeadas e explicadas",
+      "exemplos": [
+        "s9-mi3-00-000: 4 concepções erradas frequentes",
+        "s9-mi3-01-000: 4 armadilhas em highlights + 4 concepções erradas"
+      ],
+      "frequencia": "100% dos blocos (2/2)"
+    },
+    {
+      "padrao": "6 tipos de narrativa variados (texto, pausa, highlight, secao, passo_a_passo, analogia)",
+      "exemplos": [
+        "Parausos pedagógicas bem posicionadas",
+        "Analogias (detetive, investigação de crime) bem integradas"
+      ],
+      "frequencia": "100% dos blocos (2/2)"
+    }
+  ],
+  "metricas_estruturais": {
+    "media_flashcards_por_bloco": 8.0,
+    "media_casos_clinicos_por_bloco": 2.0,
+    "media_tipos_narrativa_unicos_por_bloco": 6.0,
+    "media_conexoes_futuras_por_bloco": 2.5,
+    "media_prerequisitos_por_bloco": 1.5,
+    "conformidade_schema_v3_0": "100%",
+    "conformidade_8_etapas": "100%",
+    "conformidade_narrativa_problema": "100%",
+    "conformidade_anti_padroes": "100%"
+  },
+  "analise_comparativa": {
+    "s9_mi3_00_000_vs_s9_mi3_01_000": {
+      "similaridades": [
+        "Ambos têm schema v3.0 completo",
+        "Ambos têm 8 etapas obrigatórias",
+        "Ambos têm 8 flashcards com 8 tipos únicos",
+        "Ambos têm narrativa envolvente começando com problema",
+        "Ambos têm 2 casos clínicos complexos",
+        "Ambos têm 6 tipos de narrativa únicos"
+      ],
+      "diferencas": [
+        "s9-mi3-00-000: Visão geral (profundidade 1) vs s9-mi3-01-000: Especializado (profundidade 2)",
+        "s9-mi3-00-000: 2 prereq vs s9-mi3-01-000: 1 prereq",
+        "s9-mi3-00-000: Violação leve em conexões futuras vs s9-mi3-01-000: Sem violações",
+        "s9-mi3-00-000: Nota 9.2 vs s9-mi3-01-000: Nota 9.5"
+      ]
+    }
+  },
+  "recomendacoes_globais": {
+    "para_produtor": [
+      "CRÍTICO: Expandir seção 'conexoes.futuras' em s9-mi3-00-000 para incluir TODOS os 5 filhos (s9-mi3-01-000, s9-mi3-02-000, s9-mi3-03-000, s9-mi3-04-000, s9-mi3-05-000)",
+      "IMPORTANTE: Revisar 'nivel_confianca' em AMBOS blocos — considerar mudar de 'estudo' para 'consenso_didatico' ou 'validado'",
+      "RECOMENDADO: Expandir prerequisitos em s9-mi3-01-000 para incluir blocos de Patologia e Fisiologia (não apenas Visão Geral)"
+    ],
+    "para_juizes_seguintes": [
+      "JUIZ 2 (Pedagogia): Verificar se a progressão cognitiva dos flashcards é apropriada para nível CORE de Semestre 9",
+      "JUIZ 3 (Integração): Verificar se a integração entre blocos é fluida quando publicados em sequência",
+      "Todos: Manter vigilância sobre padrão de 'nivel_confianca: estudo' — pode indicar produção apressada"
+    ]
+  },
+  "checklist_juiz1_cumprimento": {
+    "schema_v3_0_verificado": true,
+    "8_etapas_verificadas": true,
+    "narrativa_inicio_problema_verificada": true,
+    "tipos_narrativa_variados_verificados": true,
+    "flashcards_quantidade_tipo_verificados": true,
+    "conexoes_prerequisitos_futuras_verificadas": true,
+    "campos_obrigatorios_metadata_verificados": true,
+    "anti_padroes_verificados": true
+  },
+  "estado_auditoria": {
+    "inicio": "2026-07-03T00:00:00Z",
+    "ultimo_update": "2026-07-03T00:15:00Z",
+    "proximo_checkpoint": "quando chegarem blocos adicionais",
+    "auditores_ativos": ["JUIZ1_ESTRUTURA"],
+    "blocos_em_fila": [
+      "s9-mi3-01-001.json",
+      "s9-mi3-02-000.json",
+      "s9-mi3-02-001.json",
+      "s9-mi3-03-000.json",
+      "s9-mi3-03-001.json",
+      "s9-mi3-04-000.json",
+      "s9-mi3-04-001.json",
+      "s9-mi3-05-000.json"
+    ]
+  },
+  "nota_final_provisoria": "Com base nos 2 primeiros blocos (Visão Geral e Dor Torácica), a qualidade pedagógica e estrutural é EXCELENTE. Ambos demonstram compreensão profunda de ANIMA Filosofia, narrativa envolvente, flashcards sofisticados e casos clínicos bem construídos. A única deficiência detectada é a incompletude de conexões futuras no bloco de Visão Geral, que é FACILMENTE CORRIGÍVEL. Expectativa para os blocos restantes: APROVAÇÃO GENERALIZADA com possíveis recomendações menores de expansão de prerequ isitos e revisão de 'nivel_confianca'."
+}

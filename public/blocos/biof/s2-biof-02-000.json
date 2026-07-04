@@ -1,59 +1,154 @@
-{
-  "resumo_id": "s2-biof-02-000",
-  "no_pai_id": "s2-biof-00-000",
-  "nos_filhos_ids": [
-    "s2-biof-02-001",
-    "s2-biof-02-002",
-    "s2-biof-02-003",
-    "s2-biof-02-004",
-    "s2-biof-02-005"
-  ],
-  "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Biofísica da Circulação — Visão Geral",
-    "semestre": 2,
-    "disciplina": "Biofísica",
-    "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biof",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "O sangue como fluido regido pela hidrodinâmica; pressão move, resistência freia",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "funcao"
-  ]
+﻿{
+    "resumo_id":  "s2-biof-02-000",
+    "no_pai_id":  "s1-biof-02-000",
+    "nos_filhos_ids":  [
+                           "s2-biof-02-001"
+                       ],
+    "conexoes_laterais_ids":  [
+                                  "s2-biof-01-000",
+                                  "s2-biof-04-000"
+                              ],
+    "titulo":  "Bioeletricidade e Potencial de Membrana",
+    "semestre":  2,
+    "disciplina":  "biofÃ­sica",
+    "profundidade_arvore":  2,
+    "status":  "em_producao",
+    "author":  "Claude",
+    "data_criacao":  "2026-07-03",
+    "horizon_validade":  "2030-12-31",
+    "procedencia":  "produtor_agente_biof",
+    "estado_ciclo_vida":  "bloco_estavel",
+    "tempo_estimado_minutos":  11,
+    "nivel_alvo":  2,
+    "dificuldade":  "intermediaria",
+    "resumo":  "Uma cÃ©lula nervosa Ã© uma bateria viva. Fora dela: sÃ³dio positivo. Dentro: potÃ¡ssio positivo. Essa diferenÃ§a de carga cria uma tensÃ£o de -70 mV â€” o potencial de repouso. Esse capÃ­tulo explora como essa voltagem surge da assimetria iÃ´nica, como ela se propaga quando um neurÃ´nio dispara e por que perturbar esse equilÃ­brio causa sinais elÃ©tricos que atravessam o corpo. VocÃª entenderÃ¡ a equaÃ§Ã£o de Nernst (potencial de equilÃ­brio), o potencial de aÃ§Ã£o (os \u00270 mV\u0027 do pico), e como canais de Ã­ons sÃ£o interruptores biolÃ³gicos. Ao final, saberÃ¡ por que um choque elÃ©trico interfere com o coraÃ§Ã£o e como os anestÃ©sicos paralizam bloqueando esses canais.",
+    "narrativa":  [
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Coloque uma bateria de 1,5 V entre os fios de um LED e ele acende. Uma cÃ©lula nervosa mantÃ©m uma bateria de 0,07 V (70 milivoltagem) entre dentro e fora â€” parece pequeno, mas Ã© capaz de acender neurÃ´nios. Essa bateria nÃ£o vem de reaÃ§Ãµes quÃ­micas como numa bateria de zinco-carbono; vem da separaÃ§Ã£o de carga iÃ´nica mantida pela bomba Na+/K+ e pela permeabilidade seletiva da membrana. SÃ³dio quer entrar (mais lÃ¡ fora), potÃ¡ssio quer sair (mais lÃ¡ dentro), mas a membrana em repouso Ã© muito mais permeÃ¡vel a K+ do que a Na+. Resultado: potÃ¡ssio que sai arrasta carga positiva, deixando o interior negativo â€” o potencial de repouso em torno de -70 mV."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "Como a cÃ©lula \u0027mede\u0027 seu prÃ³prio potencial?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "NÃ£o hÃ¡ voltÃ­metro biolÃ³gico. O que hÃ¡ sÃ£o canais iÃ´nicos â€” proteÃ­nas que abrem e fecham em resposta a mudanÃ§as de voltagem. Se o interior fica menos negativo (despolarizaÃ§Ã£o), canais de sÃ³dio sensem isso e abrem. SÃ³dio entra, interior fica mais positivo, abre mais canais de sÃ³dio â€” feedback positivo! AtÃ© que o interior atinge +30 mV (potencial de aÃ§Ã£o). Depois canais de sÃ³dio fecham (inativam) e canais de potÃ¡ssio abrem, potÃ¡ssio sai, restaura negatividade. Esse ciclo Ã© disparado por um estÃ­mulo mÃ­nimo: se vocÃª despolariza de -70 para -55 mV (limiar), vocÃª dispara um potencial de aÃ§Ã£o. Abaixo disso, nada. Acima, tudo. Tudo ou nada."
+                      },
+                      {
+                          "tipo":  "highlight",
+                          "conteudo":  "Potencial de aÃ§Ã£o Ã© uma cascata autocataÃ­tica: despolarizaÃ§Ã£o abre canais Na+, sÃ³dio entra e despolariza mais, abre mais canais. Sem feedback negativo de K+ depois, cÃ©lula ficaria presa em -30 mV."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "De um ponto a outro: propagaÃ§Ã£o no axÃ´nio"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Um potencial de aÃ§Ã£o nasce numa regiÃ£o (cone axÃ´nico) e precisa viajar atÃ© o fim do axÃ´nio para liberar neurotransmissores. Em nervos sem mielina, ele caminha lentamente (atÃ© 1 m/s), como onda numa corda. Mas em nervos mielinizados, algo inteligente acontece: mielina (isolante de gordura) cobre a maioria do axÃ´nio, deixando apenas pequenas lacunas (nÃ³s de Ranvier) onde sÃ³dio pode entrar. O potencial de aÃ§Ã£o \u0027pula\u0027 de nÃ³ em nÃ³ â€” propagaÃ§Ã£o saltada (conduÃ§Ã£o saltatÃ³ria). Resultado: 120 m/s de velocidade. DiferenÃ§a de 120 vezes mais rÃ¡pido. Ã‰ por isso que ferimentos que destroem mielina (esclerose mÃºltipla) deixam vocÃª lento â€” o isolante Ã© essencial."
+                      },
+                      {
+                          "tipo":  "pausa",
+                          "conteudo":  "Visualize: um impulso elÃ©trico viajando 120 metros por segundo ao longo do seu nervo ciÃ¡tico, acionando mÃºsculos da perna, permitindo vocÃª correr. Tudo porque sÃ³dio e potÃ¡ssio danÃ§am em harmonia sincronizada de milissegundos. Uma falha na mielina? Essa danÃ§a desanda."
+                      },
+                      {
+                          "tipo":  "etimologia",
+                          "conteudo":  "Potencial vem do latim potentia (poder, capacidade). Bioeletricidade: bio- (vida) + eletricidade (electron, Ã¢mbar â€” os gregos notaram que Ã¢mbar atritado atrai coisas). Mielin vem do grego myelos (medula)."
+                      },
+                      {
+                          "tipo":  "analogia",
+                          "conteudo":  "Imagine um corredor (sÃ³dio) do lado de fora de um estÃ¡dio cheio de torcedores (potÃ¡ssio). HÃ¡ mais torcedores dentro do que corredores fora. Uma porta (canal) do estÃ¡dio estÃ¡ fechada. Abre a porta: corredores entram em avalanche, empurrando torcedores para fora. Mais corredores entram, mais torcedores saem. Pico de caos. Depois a porta de saÃ­da (outro canal) abre sozinha quando fica superlotado â€” torcedores saem, restaura-se ordem. Mais uma vez vem a calmaria, e tudo pode repetir."
+                      },
+                      {
+                          "tipo":  "imagem",
+                          "id":  "s2-biof-02-img-001",
+                          "tipo_midia":  "ilustracao_didatica",
+                          "descricao":  "GrÃ¡fico de voltagem em potencial de aÃ§Ã£o: linha comeÃ§ando em -70 mV (repouso), subindo para +30 mV (pico), descendo de volta para -70 mV. Fases marcadas: repouso, despolarizaÃ§Ã£o rÃ¡pida (fase 0, Na+ abre), pico e repolarizaÃ§Ã£o (fase 3, K+ abre). Canais Na+ em rosa (abertos), K+ em azul (fechados no inÃ­cio, abertos depois).",
+                          "prompt_ia":  "GrÃ¡fico educacional estilo ANIMA mostrando potencial de membrana vs. tempo. Eixo Y: voltagem (-80 a +40 mV), Eixo X: tempo (ms 0-5). Linha preta do potencial de aÃ§Ã£o: partida -70, sobe rÃ¡pido para +30 em 1ms (destacar como \u0027despolarizaÃ§Ã£o\u0027), depois desce em 2ms (repolarizaÃ§Ã£o) voltando para -80 (hiperpolarizaÃ§Ã£o momentÃ¢nea). Insira setas azuis (K+ saindo) e setas vermelhas (Na+ entrando) nas fases apropriadas. Nomeie fases (0, 1, 2, 3, 4). Fundo branco, linhas de grade cinzas."
+                      }
+                  ],
+    "flashcards":  [
+                       {
+                           "tipo":  "por_que",
+                           "pergunta":  "Por que o interior da cÃ©lula Ã© negativo em repouso?",
+                           "resposta":  "Porque a membrana Ã© mais permeÃ¡vel a K+ do que Na+ em repouso. K+ sai (favor do gradiente de concentraÃ§Ã£o), carregando carga positiva, deixando interior com excesso de cargas negativas (proteÃ­nas e fosfatos)."
+                       },
+                       {
+                           "tipo":  "mecanismo",
+                           "pergunta":  "Descreva a sequÃªncia de abertura e fechamento de canais durante um potencial de aÃ§Ã£o.",
+                           "resposta":  "1) EstÃ­mulo despolariza para -55 mV (limiar); 2) Canais Na+ sensÃ­veis a voltagem abrem (ativaÃ§Ã£o); 3) Na+ entra, interior sobe para +30 mV; 4) Canais Na+ fecham (inativaÃ§Ã£o), canais K+ abrem com ligeiro atraso; 5) K+ sai, voltagem volta a -70 mV; 6) Canais K+ fecham, membrana volta ao repouso."
+                       },
+                       {
+                           "tipo":  "contrafactual",
+                           "pergunta":  "Se nÃ£o houvesse canais de potÃ¡ssio, o que aconteria apÃ³s Na+ entrar?",
+                           "resposta":  "CÃ©lula ficaria presa em despolarizaÃ§Ã£o (+30 mV). Sem K+ saindo para restaurar negatividade, potencial de aÃ§Ã£o nunca terminaria. CÃ©lula nÃ£o poderia disparar novamente (refratÃ¡rio permanente). Sinais seriam impossÃ­veis."
+                       },
+                       {
+                           "tipo":  "clinico",
+                           "pergunta":  "Por que anestÃ©sicos locais (lidocaÃ­na) injetados no nervo causam dormÃªncia?",
+                           "resposta":  "LidocaÃ­na bloqueia canais de sÃ³dio nos neurÃ´nios sensoriais. Sem entrada de Na+, nÃ£o hÃ¡ despolarizaÃ§Ã£o, nÃ£o hÃ¡ potencial de aÃ§Ã£o. Sinal de dor nÃ£o sai do local anestesiado para o cÃ©rebro."
+                       },
+                       {
+                           "tipo":  "comparacao",
+                           "pergunta":  "Qual a diferenÃ§a entre potencial de repouso e potencial de aÃ§Ã£o?",
+                           "resposta":  "Potencial de repouso: -70 mV, estÃ¡vel, mantido pela bomba Na+/K+ e permeabilidade seletiva. Potencial de aÃ§Ã£o: -70 â†’ +30 â†’ -70 mV em ~1 ms, causado por aberturas sequenciais de canais, transmite sinal ativo."
+                       },
+                       {
+                           "tipo":  "etimologia",
+                           "pergunta":  "De onde vem \u0027conduÃ§Ã£o saltatÃ³ria\u0027?",
+                           "resposta":  "Do latim saltare (pular, saltar). O potencial nÃ£o caminha continuamente, pula de nÃ³ em nÃ³ de Ranvier. Nome reflete o comportamento: propagaÃ§Ã£o saltada, nÃ£o gradual."
+                       },
+                       {
+                           "tipo":  "armadilha",
+                           "pergunta":  "Muitos creem que um potencial de aÃ§Ã£o viaja por \u0027eletricidade\u0027 como num fio. Por que Ã© mais complexo?",
+                           "resposta":  "NÃ£o hÃ¡ elÃ©trons se movendo. Ã‰ sÃ³dio e potÃ¡ssio abrindo canais sequencialmente â€” cada regiÃ£o despolariza a prÃ³xima por mudanÃ§a de voltagem, acionando canais lÃ¡. MecÃ¢nica iÃ´nica, nÃ£o elÃ©trica pura."
+                       },
+                       {
+                           "tipo":  "sintese",
+                           "pergunta":  "Como transporte de membrana (bloco anterior) e potencial de aÃ§Ã£o se relacionam?",
+                           "resposta":  "Transporte ativo cria e mantÃ©m gradientes iÃ´nicos (Na+ fora, K+ dentro). Esses gradientes armazenam energia potencial. Canais abertos liberam essa energia como fluxo iÃ´nico, gerando o potencial de aÃ§Ã£o que conduz sinais nervosos."
+                       }
+                   ],
+    "caso_clinico":  {
+                         "titulo":  "Mulher de 67 anos com tontura, desmaio e pulso irregular",
+                         "cascata_5_etapas":  {
+                                                  "causa":  "Toma diurÃ©tico para pressÃ£o alta (depleta K+). TambÃ©m usa digital (antigo medicamento cardÃ­aco que inibe bomba Na+/K+). CombinaÃ§Ã£o: hipercalemia extracelular (K+ alto no sangue) e alteraÃ§Ã£o do potencial de repouso",
+                                                  "estrutura_afetada":  "MiÃ³citos do miocÃ¡rdio (coraÃ§Ã£o); nÃ³s SA e AV (geradores de ritmo)",
+                                                  "disfuncao":  "K+ extracelular alto faz interior menos negativo (potencial de repouso menos negativo, em vez de -90 mV, fica -60 mV). Canais de sÃ³dio nÃ£o conseguem se ativar completamente. DespolarizaÃ§Ã£o anormal no nÃ³ AV = bloqueio de conduÃ§Ã£o. Ritmo desorganizado.",
+                                                  "sintoma":  "Mulher sente palpitaÃ§Ãµes (ectopia), tontura (cÃ©rebro nÃ£o recebe sangue regularmente), desmaios (bradicardia completa â€” coraÃ§Ã£o bate muito lento)",
+                                                  "consequencia":  "Sem tratamento: parada cardÃ­aca. FibrilaÃ§Ã£o ventricular (caos elÃ©trico do coraÃ§Ã£o) = morte."
+                                              },
+                         "diagnostico_revelado":  "Hipercalemia com bloqueio AV e disritmia. ECG mostra onda P ausente, intervalo PR longo. Tratamento: diÃ¡lise para remover K+, ou injeÃ§Ã£o IV de cÃ¡lcio (temporariamente estabiliza membrana) + insulina + glicose (baixam K+).",
+                         "implicacao_biofisica":  "Demonstra que potencial de repouso nÃ£o Ã© imutÃ¡vel â€” depende de gradientes iÃ´nicos. Mudar um Ã­on muda toda eletrofisiologia do tecido. CoraÃ§Ã£o Ã© Ã³rgÃ£o onde isso Ã© mais crÃ­tico."
+                     },
+    "midias":  [
+                   {
+                       "id":  "s2-biof-02-img-002",
+                       "tipo":  "ilustracao_didatica",
+                       "descricao":  "AxÃ´nio mielinizado em corte longitudinal: segmentos brancos de mielina, nÃ³s de Ranvier em preto onde sÃ³dio entra, potencial de aÃ§Ã£o \u0027pulando\u0027 de nÃ³ a nÃ³ com setas vermelhas.",
+                       "prompt_ia":  "Diagrama educacional: axÃ´nio longitudinal (linha cinzenta) com 4-5 segmentos. Cada segmento: zona mielinizada (branca, nomeada \u0027mielina\u0027) separado por zonas pretas pequenas (nÃ³s de Ranvier). Insira sÃ³dio (Na+ verde brilhante) entrando apenas nos nÃ³s. Setas vermelhas grandes saindo de um nÃ³ e apontando para o prÃ³ximo, mostrando \u0027salto\u0027 do potencial. Cite velocidades: 120 m/s (mielinizado) vs 1 m/s (nÃ£o-mielinizado) em canto."
+                   }
+               ],
+    "prerequisitos":  [
+                          "s1-biof-01-000",
+                          "s1-biof-02-000"
+                      ],
+    "futuras_conexoes":  [
+                             {
+                                 "tipo":  "CASCATA_CAUSAL",
+                                 "descricao":  "Potencial de aÃ§Ã£o viaja atÃ© terminal prÃ©-sinaptica onde abre canais de cÃ¡lcio, liberando neurotransmissores"
+                             },
+                             {
+                                 "tipo":  "ALVO_TERAPEUTICO",
+                                 "descricao":  "Bloqueadores de canais de sÃ³dio (antiarrÃ­tmicos), bloqueadores de Ca++ (anti-hipertensivos), bloqueadores K+ (cromonas)"
+                             },
+                             {
+                                 "tipo":  "RECONHECIMENTO_CLINICO",
+                                 "descricao":  "Hipercalemia, hipokalemia detectadas por ECG; bloqueios AV e arritmias"
+                             },
+                             {
+                                 "tipo":  "MECANISMO_COMPARTILHADO",
+                                 "descricao":  "ContraÃ§Ã£o muscular esquelÃ©tica tambÃ©m depende de potencial de aÃ§Ã£o; sÃ­ntese de hormÃ´nios endÃ³crinos depende de entrada de Ca++"
+                             }
+                         ]
 }

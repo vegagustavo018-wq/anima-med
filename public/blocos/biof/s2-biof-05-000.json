@@ -1,58 +1,154 @@
-{
-  "resumo_id": "s2-biof-05-000",
-  "no_pai_id": "s2-biof-00-000",
-  "nos_filhos_ids": [
-    "s2-biof-05-001",
-    "s2-biof-05-002",
-    "s2-biof-05-003",
-    "s2-biof-05-004"
-  ],
-  "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Bioacústica e Biofísica dos Sentidos — Visão Geral",
-    "semestre": 2,
-    "disciplina": "Biofísica",
-    "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biof",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Como energia física vira sinal sensorial; som, luz e radiação transduzidos",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "funcao"
-  ]
+﻿{
+    "resumo_id":  "s2-biof-05-000",
+    "no_pai_id":  "s1-biof-05-000",
+    "nos_filhos_ids":  [
+                           "s2-biof-05-001"
+                       ],
+    "conexoes_laterais_ids":  [
+                                  "s2-biof-04-000",
+                                  "s2-biof-01-000"
+                              ],
+    "titulo":  "RadiaÃ§Ã£o e Luz na Biologia: BiofotÃ´nica",
+    "semestre":  2,
+    "disciplina":  "biofÃ­sica",
+    "profundidade_arvore":  2,
+    "status":  "em_producao",
+    "author":  "Claude",
+    "data_criacao":  "2026-07-03",
+    "horizon_validade":  "2030-12-31",
+    "procedencia":  "produtor_agente_biof",
+    "estado_ciclo_vida":  "bloco_estavel",
+    "tempo_estimado_minutos":  10,
+    "nivel_alvo":  2,
+    "dificuldade":  "intermediaria",
+    "resumo":  "Luz nÃ£o Ã© sÃ³ para ver â€” Ã© energia que molÃ©culas usam para fazer trabalho. Esse capÃ­tulo explora como fÃ³tons (pacotes de energia luminosa) sÃ£o absorvidos por pigmentos â€” retinal nos olhos, clorofila em plantas, bilirrubina na pele. Cada fÃ³ton tem energia = hf (constante de Planck vezes frequÃªncia), e quando absorvido, eleva elÃ©tron a nÃ­vel energÃ©tico maior. A cÃ©lula entÃ£o converte esse estado excitado em sinal biolÃ³gico: visÃ£o, fotossÃ­ntese, ou dano fotodinÃ¢mico. VocÃª entenderÃ¡ por que radiaÃ§Ã£o ultravioleta (frequÃªncia alta) danifica DNA enquanto luz vermelha (frequÃªncia baixa) aquece apenas. Ao final, saberÃ¡ sobre fototerapia, lesÃµes foto-induzidas e biofÃ­sica da luz em tecidos.",
+    "narrativa":  [
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Um fÃ³ton bate na molÃ©cula de retinal (pigmento no olho). Energia do fÃ³ton Ã© E = hf, onde h Ã© constante de Planck (6.626 Ã— 10^-34 Jâ‹…s) e f Ã© frequÃªncia. Luz azul (frequÃªncia alta) tem mais energia que luz vermelha (frequÃªncia baixa). O fÃ³ton com energia exata faz o retinal \u0027saltar\u0027 â€” um elÃ©tron passa de orbital de baixa energia para alto. MolÃ©cula agora estÃ¡ \u0027excitada\u0027. Esse estado nÃ£o dura â€” em nanossegundos, elÃ©tron cai de volta, liberando energia de volta como fÃ³ton (fluorescÃªncia) ou calor. Mas Ã s vezes, antes disso, a cÃ©lula captura essa energia, a usa para gerar sinal. VisÃ£o, fotossÃ­ntese, comunicaÃ§Ã£o luminescente de bactÃ©rias â€” tudo comeÃ§a com absorÃ§Ã£o de fÃ³ton."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "Por que UV danifica, mas luz vermelha nÃ£o?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "DNA absorve luz principalmente na regiÃ£o ultravioleta (200-300 nm, frequÃªncia muito alta). Um fÃ³ton UV tem energia ~5-6 eV, o suficiente para quebrar ligaÃ§Ãµes covalentes entre bases ou entre fitas. Resultado: mutaÃ§Ã£o ou morte celular. Protege-nos da maioria do UV o escudo da camada de ozÃ´nio (acima) e melanina na pele (absorve UV, protege nÃºcleo). Luz vermelha (700 nm) tem energia ~1.8 eV â€” insuficiente para quebrar ligaÃ§Ã£o covalente, apenas aquece (vibraÃ§Ã£o tÃ©rmica). Por isso vocÃª nÃ£o fica com cÃ¢ncer de ver luz vermelha, mas sim de radiaÃ§Ã£o solar desprotegida."
+                      },
+                      {
+                          "tipo":  "highlight",
+                          "conteudo":  "Energia do fÃ³ton (E = hf) determina qual processo biolÃ³gico ele pode disparar. UV quebra DNA, visÃ­vel excita pigmentos, infravermelho aquece."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "VisÃ£o: captura de fÃ³ton em nanossegundos"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Luz entra no olho, atinge retina. FÃ³ton Ã© absorvido por molÃ©cula de 11-cis-retinal dentro de cÃ©lula fotorreceptora (bastonete ou cone). FÃ³ton faz retinal \u0027isomerizar\u0027 â€” forma torna-se 11-trans-retinal em ~200 femtossegundos (0.0000002 milissegundos). Essa mudanÃ§a causa cascata: retinal ativa proteÃ­na opina, ativa proteÃ­na G transducina, ativa fosfodiesterase, reduz cGMP. Menos cGMP = canais de cÃ¡lcio fecham = cÃ©lula hiperpolariza = neurÃ´nio sensÃ³rio envia sinal. Tudo isso em menos de 1 milissegundo. Um fÃ³ton causou uma reaÃ§Ã£o em cadeia que viaja ao cÃ©rebro como \u0027aqui hÃ¡ luz\u0027. IncrÃ­vel eficiÃªncia."
+                      },
+                      {
+                          "tipo":  "pausa",
+                          "conteudo":  "Pause: um fÃ³ton single â€” uma partÃ­cula discreta de luz â€” consegue ser detectado por seu olho. NÃ£o porque vocÃª captura um fÃ³ton cada vez, mas porque cada fÃ³ton desencadeia cascata que amplifica sinal. Uma cÃ©lula fotorreceptora pode ser acionada por fÃ³ton Ãºnico e disparar neurÃ´nio. Essa amplificaÃ§Ã£o biolÃ³gica nÃ£o existe em tecnologia â€” cÃ¢meras precisam de milhÃµes de fÃ³tons para formar imagem. Seu olho consegue com um."
+                      },
+                      {
+                          "tipo":  "etimologia",
+                          "conteudo":  "FÃ³ton vem do grego phÃ´tos (luz). BiofotÃ´nica: bio- (vida) + photonics (ciÃªncia de fÃ³tons). Retinal do latim \u0027retina\u0027 (rede) â€” forma de tapeÃ§aria na parte posterior do olho. IsomerizaÃ§Ã£o: isomero (mesma fÃ³rmula, estrutura diferente) + -izaÃ§Ã£o (processo)."
+                      },
+                      {
+                          "tipo":  "analogia",
+                          "conteudo":  "Imagine um dominÃ³ muito pesado que ninguÃ©m consegue derrubar. Agora coloque um tijolo delicado em cima dele â€” tÃ£o leve que um vento forte Ã© suficiente para derrubÃ¡-lo, e ele cai exatamente sobre o dominÃ³, derrubando-o. Essa cascata continua. Um fÃ³ton Ã© o vento (muito fraco), tijolo Ã© opina (acionada por fÃ³ton), dominÃ³s sÃ£o proteÃ­nas da cascata visual. Energia do fÃ³ton + amplificaÃ§Ã£o biolÃ³gica = detecÃ§Ã£o."
+                      },
+                      {
+                          "tipo":  "imagem",
+                          "id":  "s2-biof-05-img-001",
+                          "tipo_midia":  "ilustracao_didatica",
+                          "descricao":  "Espectro eletromagnÃ©tico: do infravermelho (direita, comprimento de onda longo, baixa energia, aquece) passando por visÃ­vel (cores: violeta atÃ© vermelho) atÃ© ultravioleta (esquerda, comprimento de onda curto, alta energia, danifica DNA). Indique frequÃªncia, comprimento de onda e exemplo de energia para cada regiÃ£o.",
+                          "prompt_ia":  "Espectro eletromagnÃ©tico educacional estilo ANIMA, horizontal, da esquerda (UV) para direita (IV). Esquerda: UV (200-400 nm, roxo escuro), \u0027E~5-6 eV, quebra DNA\u0027. Centro-esquerda: Violeta (400 nm), Ãndigo, Azul. Centro: Verde (550 nm). Centro-direita: Amarelo, Laranja, Vermelho (700 nm), \u0027E~1.8 eV, visÃ­vel\u0027. Direita: IV (\u003e700 nm), vermelho escuro, \u0027E~0.1 eV, aquece\u0027. Para cada regiÃ£o, mostre exemplo: DNA (UV), clorofila/retinal (visÃ­vel), calor (IV). Cite E=hf acima. Fundo branco."
+                      }
+                  ],
+    "flashcards":  [
+                       {
+                           "tipo":  "por_que",
+                           "pergunta":  "Por que a absorÃ§Ã£o de um fÃ³ton comeÃ§a com um elÃ©tron \u0027saltando\u0027 para nÃ­vel de energia mais alto?",
+                           "resposta":  "Porque energia do fÃ³ton (E = hf) Ã© quantizada â€” vem em pacotes discretos. Apenas fÃ³tons com frequÃªncia exata para a diferenÃ§a entre nÃ­veis de energia do elÃ©tron conseguem ser absorvidos. ElÃ©tron nÃ£o pode estar \u0027meio excitado\u0027 â€” ou estÃ¡ abaixo, ou acima."
+                       },
+                       {
+                           "tipo":  "mecanismo",
+                           "pergunta":  "Descreva passo a passo como um fÃ³ton de luz vermelha gera sinal de visÃ£o no olho.",
+                           "resposta":  "1) FÃ³ton (Î»~650 nm) entra no olho, atinge bastonete; 2) Absorvido por 11-cis-retinal; 3) Isomeriza para 11-trans em 200 fs; 4) Ativa opina; 5) Opina ativa transducina (proteÃ­na G); 6) Transducina ativa fosfodiesterase; 7) Fosfodiesterase degrada cGMP; 8) ReduÃ§Ã£o de cGMP fecha canais Ca++; 9) CÃ©lula hiperpolariza (fica mais negativa); 10) Transmite sinal para neurÃ´nio sensÃ³rio."
+                       },
+                       {
+                           "tipo":  "contrafactual",
+                           "pergunta":  "Se elÃ©trons nÃ£o pudessem ser excitados por fÃ³tons (absorÃ§Ã£o nÃ£o existisse), qual seria o impacto?",
+                           "resposta":  "Sem absorÃ§Ã£o de fÃ³tons, nenhuma reaÃ§Ã£o fotossintÃ©tica (plantas nÃ£o cresceriam). Sem visÃ£o (nÃ£o conseguÃ­amos capturar fÃ³tons no olho). Sem fotossÃ­ntese, cadeia alimentar colapsa. RadiaÃ§Ã£o UV nÃ£o danificaria DNA (nÃ£o seria absorvida). Vida dependente de luz seria impossÃ­vel."
+                       },
+                       {
+                           "tipo":  "clinico",
+                           "pergunta":  "Por que pacientes com degeneraÃ§Ã£o macular relacionada Ã  idade perdem a visÃ£o central?",
+                           "resposta":  "MÃ¡cula Ã© regiÃ£o de mÃ¡xima densidade de cones (receptores de luz) na retina. Com idade, acumula lipofuscina (material de resÃ­duo) em cÃ©lulas de suporte (RPE). Isso bloqueia luz, reduz chegada de fÃ³tons aos cones. Cones morrem por isquemia. Resultado: perda de visÃ£o central (onde imagem Ã© nÃ­tida)."
+                       },
+                       {
+                           "tipo":  "comparacao",
+                           "pergunta":  "Qual Ã© a diferenÃ§a entre absorÃ§Ã£o de fÃ³ton UV vs fÃ³ton visÃ­vel em DNA?",
+                           "resposta":  "UV (200-300 nm): frequÃªncia alta, E = 5-6 eV, quebra ligaÃ§Ã£o covalente entre bases ou entre fitas. Causa mutaÃ§Ã£o ou morte. VisÃ­vel (400-700 nm): frequÃªncia mÃ©dia, E = 1.8-3 eV, insuficiente para quebrar ligaÃ§Ã£o. NÃ£o danifica DNA diretamente (mas pode causar dano indireto via radicais livres)."
+                       },
+                       {
+                           "tipo":  "etimologia",
+                           "pergunta":  "De onde vem \u0027fÃ³ton\u0027?",
+                           "resposta":  "Do grego \u0027phÃ´tos\u0027 (luz). Einstein usou o termo para descrever quanta (pacotes discretos) de luz. Antes pensava-se luz era onda contÃ­nua; fÃ³ton Ã© a ideia de quantizaÃ§Ã£o de Einstein."
+                       },
+                       {
+                           "tipo":  "armadilha",
+                           "pergunta":  "Muitos creem que \u0027luz infravermelha Ã© invisÃ­vel porque Ã© muito fraca\u0027. Por que estÃ¡ errado?",
+                           "resposta":  "IV nÃ£o Ã© invisÃ­vel por ser fraca â€” Ã© invisÃ­vel porque frequÃªncia Ã© baixa (E = hf pequeno), insuficiente para excitar eletrÃµes no retinal. IV aquece por vibraÃ§Ã£o tÃ©rmica, nÃ£o porque Ã© \u0027fraca visualmente\u0027. FÃ³ton IV Ãºnico tem menos energia que fÃ³ton azul Ãºnico."
+                       },
+                       {
+                           "tipo":  "sintese",
+                           "pergunta":  "Como energia do fÃ³ton (biofotÃ´nica) conecta-se aos blocos anteriores de energia celular e eletrÃ´nica?",
+                           "resposta":  "FÃ³ton traz energia (E = hf) que excita elÃ©tron. ElÃ©tron excitado Ã© estado de alta energia potencial. CÃ©lula captura essa energia via cascata (visÃ£o) ou usa direto (fotossÃ­ntese) para movimentar elÃ©trons, gerando potencial ou ATP. RadiaÃ§Ã£o UV danifica porque energia Ã© suficiente para quebrar ligaÃ§Ãµes (termodinÃ¢mica bioquÃ­mica). Tudo energÃ©tica."
+                       }
+                   ],
+    "caso_clinico":  {
+                         "titulo":  "CrianÃ§a de 8 anos com queimadura solar grave e alergia Ã  luz (erupÃ§Ã£o cutÃ¢nea apÃ³s exposiÃ§Ã£o UV)",
+                         "cascata_5_etapas":  {
+                                                  "causa":  "CrianÃ§a com fototipo I (pele muito clara, pouca melanina). AusÃªncia de proteÃ§Ã£o solar (nÃ£o reaplicou protetor). ExposiÃ§Ã£o intensa a UV entre 10am-4pm (pico UV). PredisposiÃ§Ã£o genÃ©tica a dermatite atÃ³pica (imunidade de pele exagerada).",
+                                                  "estrutura_afetada":  "QueratinÃ³citos epidÃ©rmicos; cÃ©lulas de Langerhans (imunidade cutÃ¢nea); DNA em nÃºcleo de cÃ©lulas de pele",
+                                                  "disfuncao":  "UV-B absorvido por DNA pirimidina â†’ formaÃ§Ã£o de dÃ­mero timina (T-T) ligado. CÃ©lula tenta reparar (excisÃ£o de nucleotÃ­deo) mas falha parcialmente. AlÃ©m disso, UV causa necrose de queratinÃ³citos (morte sunburn), liberando antÃ­genos. Sistema imune reage (Th1 e citocinas inflamatÃ³rias â†’ IL-2, TNF-Î±). VasodilataÃ§Ã£o e infiltrado inflamatÃ³rio.",
+                                                  "sintoma":  "CrianÃ§a relata queimaÃ§Ã£o e dor (ativaÃ§Ã£o de nociceptores por bradicinina liberada). Horas depois: vermelhidÃ£o, inchaÃ§o, bolhas. Dias depois: descamaÃ§Ã£o (remoÃ§Ã£o de cÃ©lulas danificadas).",
+                                                  "consequencia":  "Sem prevenÃ§Ã£o futura: acÃºmulo de mutaÃ§Ãµes (xeroderma pigmentosum se houvesse defeito de reparo). Risco aumentado de melanoma e carcinoma de cÃ©lulas escamosas. InflamaÃ§Ã£o crÃ´nica envelhece pele."
+                                              },
+                         "diagnostico_revelado":  "Queimadura solar de segundo grau (eritema + bolhas). Fototipo I com sensibilidade cutÃ¢nea aumentada (limiado UV baixo). Dermatite fototÃ³xica. Tratamento: hidrataÃ§Ã£o, analgÃ©sicos (ibuprofeno reduz inflamaÃ§Ã£o), evitar UV por 2-3 semanas, educaÃ§Ã£o: SPF 50+, reaplicar a cada 2h, proteÃ§Ã£o mecÃ¢nica (roupa, chapÃ©u).",
+                         "implicacao_biofisica":  "Demonstra que energia eletromagnÃ©tica (UV) Ã© bem-absorbida por molÃ©culas biolÃ³gicas (DNA), causa dano irreversÃ­vel em nÃ­vel molecular. FenÃ³tipo (pele clara) determina absorÃ§Ã£o relativa de UV â€” fototipo claro absorve mais UV nos queratinÃ³citos, escuro absorve na melanina (barreira protetora). Respeitar energÃ©tica da radiaÃ§Ã£o Ã© questÃ£o de sobrevivÃªncia."
+                     },
+    "midias":  [
+                   {
+                       "id":  "s2-biof-05-img-002",
+                       "tipo":  "ilustracao_didatica",
+                       "descricao":  "Cascata visual molecular: fÃ³ton bate em molÃ©cula 11-cis-retinal (mostrada em estrutura 3D), causa isomerizaÃ§Ã£o para 11-trans-retinal. SequÃªncia de proteÃ­nas acionadas: opina, transducina, fosfodiesterase. ReduÃ§Ã£o de cGMP fecha canal de cÃ¡lcio. Resultado: hiperpolarizaÃ§Ã£o da cÃ©lula (potencial muda de -40mV para -60mV). Cada etapa nomeada, com setas de ativaÃ§Ã£o.",
+                       "prompt_ia":  "Cascata visual estilo ANIMA, vertical, de cima para baixo. Topo: fÃ³ton (amarelo brilhante, seta) bate em 11-cis-retinal (mostrada como molÃ©cula 3D renderizada, forma de L). Abaixo: flecha para 11-trans-retinal (forma diferente, renderizada). Abaixo: opina (proteÃ­na, rosa), seta de ativaÃ§Ã£o. Abaixo: transducina (proteÃ­na G, azul), seta. Abaixo: fosfodiesterase (proteÃ­na cinzenta), seta. Abaixo: reduÃ§Ã£o de cGMP (mostrada como grÃ¡fico de concentraÃ§Ã£o caindo de 1Î¼M para 0.1Î¼M). Abaixo: canal de cÃ¡lcio fechando (Ã­cone de porta fechada). Abaixo: hiperpolarizaÃ§Ã£o (grÃ¡fico mostrando voltagem de -40mV para -60mV). Citar \u0027AmplificaÃ§Ã£o: 1 fÃ³ton ativa 1000+ transducina\u0027 no canto. Cores altas contraste. Fundo branco."
+                   }
+               ],
+    "prerequisitos":  [
+                          "s1-biof-01-000",
+                          "s1-fis-04-000"
+                      ],
+    "futuras_conexoes":  [
+                             {
+                                 "tipo":  "CASCATA_CAUSAL",
+                                 "descricao":  "Sinais visuais processados em retina â†’ transmitidos ao cÃ©rebro â†’ percepÃ§Ã£o; fotossÃ­ntese usa fÃ³tons para reduzir CO2 em glicose"
+                             },
+                             {
+                                 "tipo":  "ALVO_TERAPEUTICO",
+                                 "descricao":  "Fototerapia (luz vermelha/IR para cicatrizaÃ§Ã£o), terapia fotodinÃ¢mica (fotossensibilizador + luz UV mata cÃ©lulas cancerosas), proteÃ§Ã£o solar"
+                             },
+                             {
+                                 "tipo":  "RECONHECIMENTO_CLINICO",
+                                 "descricao":  "Queimadura solar, cÃ¢ncer de pele (melanoma, carcinoma espinocelular), catarata (UV danifica cristalino), cegueira relacionada Ã  idade"
+                             },
+                             {
+                                 "tipo":  "MECANISMO_COMPARTILHADO",
+                                 "descricao":  "SincronizaÃ§Ã£o circadiana (fÃ³tons regula relÃ³gio biolÃ³gico), fototaxis em bactÃ©rias, bioluminescÃªncia em organismos marinhos"
+                             }
+                         ]
 }

@@ -1,0 +1,513 @@
+{
+  "resumo_id": "s9-onco-01-001",
+  "no_pai_id": "s9-onco-01-000",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [
+    "s1-bio-cel-02-001",
+    "s2-bio-cel-03-001",
+    "s5-pato-mol-01-001"
+  ],
+  "metadata": {
+    "titulo": "Biologia Tumoral Essencial",
+    "semestre": 9,
+    "disciplina": "oncologia",
+    "modulo": 1,
+    "topico": 1,
+    "profundidade_arvore": 2,
+    "lentes": ["fisiopatologia"],
+    "tipo_conteudo": "conceitual",
+    "status": "publicado",
+    "data_criacao": "2026-07-03",
+    "data_revisao": "2026-07-03",
+    "autor": "Agente Produtor ANIMA",
+    "nivel": "CORE",
+    "tempo_estudo_minutos": 12,
+    "palavras_chave": [
+      "hallmark",
+      "malignidade",
+      "transformação",
+      "RAS",
+      "Rb",
+      "BCL-2",
+      "telomerase",
+      "VEGF",
+      "E-caderina"
+    ]
+  },
+  "resumo_conciso": "Uma célula normal vira tumor quando ganha certas capacidades que a permitem ignorar as regras do corpo: parar de obedecer sinais (RAS hiperativo), ignorar freios de parada (Rb desfeito), escapar da morte programada (BCL-2 super-expresso), virar imortal (telomerase ligada), atrair vasos novos (VEGF secretado), e se soltar dos vizinhos (E-caderina perdida). Essas 6 capacidades — as características hallmark de Hanahan e Weinberg — não são listas para memorizar: são respostas a perguntas: qual é exatamente a diferença entre uma célula mutante isolada e um tumor que mata o paciente? Como um tumor consegue fazer 6 coisas que uma célula normal nunca conseguiria? Este bloco desfaz essa caixa-preta: mostrando como cada hallmark resolve um problema específico de sobrevivência celular, qual molécula a implementa, e por que o tumor precisa de todas as 6.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você está construindo um organismo a partir do zero, e precisa de uma regra que evite tumores. Que regra seria? Provavelmente algo como: 'nenhuma célula pode se dividir sem permissão'. E é isso que o corpo faz — com rigor extraordinário. Uma célula normal só se divide quando recebe o sinal certo, no momento certo, e mesmo assim, não mais de 50 vezes na vida (limite de Hayflick). Mas e se uma célula ignorasse essa regra? E se, além disso, ignorasse também a regra 'você deve morrer quando danificado', a regra 'você deve permanecer ancorada ao seu tecido de origem', e a regra 'você não pode roubar vasos sanguíneos do vizinho'? Naquele momento, você não teria mais uma célula — teria o germe de um tumor."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "A Pergunta Central",
+      "conteudo": "Qual é a diferença, em nível molecular, entre uma célula com uma mutação aleatória (RAS mutado, por exemplo) e um tumor real que mata o paciente? A resposta é a diferença entre ter 1 ou 2 características hallmark e ter todas as 6."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tumor é como uma corporação clandestina dentro do corpo. Para ser viável, precisa não de uma regra quebrada, mas de seis regras quebradas ao mesmo tempo. Uma célula RAS-mutada isolada pode se dividir sem permissão (ótimo para o tumor), mas vai morrer de apoptose em poucos dias (péssimo). Uma célula RAS-mutada + BCL-2 super-expresso vai se dividir sem permissão E não vai morrer (ainda melhor), mas vai parar de se dividir aos 50 anos de vida celular (péssimo novamente). Uma célula com RAS + BCL-2 + telomerase ativa vai se dividir infinitamente, mas se asfixia porque não tem vasos suficientes perto dela (ruim). Uma célula com todas as 6 características? Essa é imortal, eterna, viciada em crescimento, e consegue até atrair vasos novos e se espalhar para longe. Essa é maligna."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra inviolável: maligno = presença simultânea de TODAS (ou quase todas) as 6 características hallmark. Ausência de 1 ou 2 caracteres geralmente bloqueia o tumor em algum ponto."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "As 6 Características Hallmark (Hanahan & Weinberg, 2011)",
+      "conteudo": ""
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A bióloga Francesca Favaro, estudando cânceres de pâncreas há anos, observou algo intrigante: tumores completamente diferentes (melanoma, câncer de mama, leucemia) compartilhavam capacidades quase idênticas. Como era possível que doenças tão distintas em origem tivessem o mesmo padrão molecular? A resposta veio em 2011, quando Hanahan e Weinberg publicaram um framework que mudou a oncologia: **6 características comuns a quase todo tumor maligno**. Não são sequência obrigatória (alguns tumores ganham a #3 antes da #1). Não são invioláveis (alguns tumores deslizam com 5). Mas aparecem tão consistentemente que se tornaram a linguagem universal da biologia tumoral."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "① Auto-suficiência em Sinais de Crescimento",
+      "conteudo": ""
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma célula normal pede permissão. 'Posso crescer?' pergunta ao vizinho via receptor de fator de crescimento (EGF, FGF). O vizinho responde: 'Sim, agora pode', e envia a molécula de fator de crescimento. A célula recebe, inicia a cascata de sinalização, e se divide. Parece simples. Mas é também o ponto de controle mais importante: nenhuma divisão sem autorização."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A primeira característica hallmark quebra isso: a célula **não pede mais permissão**. Ela ativa sozinha a cascata de crescimento, como se estivesse simulando um sinal que nunca chegou. Como? A proteína **RAS** faz isso. RAS é como um interruptor de luz: em estado basal (RAS-GDP), está desligada. Um sinal chegando (fator de crescimento) muda para RAS-GTP (ligada), iniciando a cascata. Mas se RAS sofre uma mutação pontual (91% das vezes é a mutação K-RAS G12V), ela **fica presa em GTP — sempre ligada, como um interruptor com mola quebrada**. O sinal agora vem de dentro, não de fora."
+    },
+    {
+      "tipo": "destaque_molecular",
+      "titulo": "RAS mutado (K-RAS G12V típico)",
+      "conteudo": "Proteína: RAS (pequena GTPase, 21 kDa, cromossomo 12, 11 ou 13)\nMutação: G → V na posição 12 do codon\nEfeito: RAS-GTP não reverte para RAS-GDP; sinalização constitutiva\nFrequência: ~90% em câncer de pâncreas, ~40% em colorrectal, ~30% em pulmão"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A consequência é brutal: a célula se divide mesmo sem sinal externo. Mas nota a sutileza: isso NÃO a torna maligna sozinho. Uma célula RAS-mutada isolada se divide, sim, mas num organismo normal, vizinhos sadios a cercam, enviam sinais ANTI-crescimento (TGF-β, INF-γ), e ela para. Ou sofre apoptose (morte programada) porque o corpo detecta divisão anômala. RAS mutado é necessário para tumor, mas não é suficiente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "② Insensibilidade a Freios de Parada (Bloqueio do Ciclo Celular)",
+      "conteudo": ""
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O corpo tem um mecanismo de freio: a proteína **Rb** (retinoblastoma). Rb é como um porteiro na entrada do ciclo celular. Quando inativa (hipofosforilada), ela bloqueia a transcrição de genes necessários para fase S (replicação de DNA). Mensagem: 'Espere, não sai da G1 ainda'. Um sinal de crescimento chega, **ciclina-CDK** fosforila Rb, Rb se solta, o porteiro sai da entrada, e a célula entra em S. Perfeito."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas se Rb é perdida (deletada ou mutada em ~90% de retinoblastomas, ~50% de tumores colorrectais), o porteiro desapareceu. A célula entra em S sem freio. Sem parada. Sem permissão. Uma RAS-mutada com Rb perdida agora tem **duas características hallmark juntas**: pede a si mesma para crescer (RAS), E ignora os sinais de parada (Rb)."
+    },
+    {
+      "tipo": "destaque_molecular",
+      "titulo": "Rb inativado (deleção ou mutação em E1B)",
+      "conteudo": "Proteína: Rb (proteína do retinoblastoma, 105 kDa, cromossomo 13q14)\nMecanismo: Ligação a E2F quando hipofosforilada; bloqueio de S phase\nInativação típica: Deleção em retinoblastoma, mutação em câncer colorretal\nEfeito: Célula entra em S sem validação, ciclo contínuo"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "③ Evasão de Apoptose",
+      "conteudo": ""
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma célula com RAS hiperativo + Rb perdido é perigosa — pode se dividir infinitamente sem consentimento. Mas o corpo tem outro porteiro: **apoptose** (morte programada celular). Se uma célula se comporta de forma anômala (mutação, sinal discordante, dano em DNA), proteínas p53 e outros sensores soam o alarme: 'Mate a célula, é mais seguro'. O mecanismo é engenhoso. Proteínas **BAX e BAK** abrem poros nas mitocôndrias, liberando citocromo C, ativando caspases, e a célula morre em minutos, desintegrando-se sem sangrar (morte 'limpa')."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas se **BCL-2** (B-cell lymphoma 2) é super-expresso, ela bloqueia BAX e BAK. Resgata a célula da morte. É como um salvavidas: mesmo que o sistema imune ordenasse 'morra', BCL-2 diz 'não, fique aqui comigo, é seguro'. Uma célula RAS + Rb perdido + BCL-2 super-expresso agora é **imortal em apoptose — indiferente às ordens de morte**."
+    },
+    {
+      "tipo": "destaque_molecular",
+      "titulo": "BCL-2 super-expresso (translocação t(14;18))",
+      "conteudo": "Proteína: BCL-2 (anti-apoptótico, 26 kDa, cromossomo 18)\nMecanismo: Bloqueia BAX/BAK; sequestra BID; inibe caspases\nAtivação típica: Translocação t(14;18) em linfoma B folicular (coloca BCL-2 sob controle de imunoglobulina, super-expressa)\nEfeito: Morte programada silenciada; célula imortal"
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Pausa para Reflexão",
+      "conteudo": "Neste ponto, uma célula com as 3 primeiras características é um monstro: se pede para crescer, ignora freios, e não morre. Mas o corpo ainda tem um limite: limite de Hayflick. Toda célula mortal, mesmo super-expressa em BCL-2, só se divide ~50 vezes. Depois, telômeros (as pontas dos cromossomos) se encurtam até o ponto de quebra, e a célula para ou morre. Para ser verdadeiramente tumoral, precisa virar **imortal em tempo**, não apenas em apoptose."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "④ Potencial Replicativo Ilimitado",
+      "conteudo": ""
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os cromossomos têm capas nas pontas chamadas **telômeros** — sequências repetidas (TTAGGG em humanos) que protegem o DNA. A cada divisão, telômeros perdem ~50-200 pares de base. Após ~50-70 divisões, telômeros ficam tão curtos que ativam p53 ('senescência replicativa'). A célula para de se dividir ou morre. É o mecanismo de relógio molecular do corpo: 'Você viveu sua vida útil. Fim.'"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas se **telomerase** é ativada, ela reconstrói telômeros a cada divisão. Telomerase é uma enzima especial (ribonucleoproteína) que copia um template de RNA (TERC, telomerase RNA component) e o cola na ponta do cromossomo. RAS + Rb perdido + BCL-2 + telomerase ativo = **célula imortal, infinitamente divisível, dentro do corpo**."
+    },
+    {
+      "tipo": "destaque_molecular",
+      "titulo": "Telomerase ativada (TERT super-expresso)",
+      "conteudo": "Proteína: Telomerase (holoenzima com TERT + TERC, RNA component)\nMecanismo: Copia TTAGGG na ponta do cromossomo; reconstrói telômeros\nAtivação típica: Super-expressão de TERT via promoter mutations (70-90% de tumores)\nEfeito: Senescência replicativa desligada; célula divide-se indefinidamente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Aqui vem uma pergunta inquietante: se uma célula é imortal, se cresce sem parada, se ignora apoptose, por que o tumor ainda é fraco demais para matar rápido? Por que leva anos? A resposta é hipóxia. Uma célula isolada com essas 4 características se divide, cria uma população de célula-filhas (agora 2, depois 4, depois 8), mas todas amontoadas num espaço pequeno, longe dos capilares. Elas hipoxiam — falta oxigênio. E hipóxia, por paradoxal que pareça, **ativa p53 novamente**, ordenando morte ou parada. O tumor fica preso em seu próprio peso, a menos que consiga fazer a próxima magia: atrair vasos sanguíneos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑤ Angiogênese Sustentada (Atração de Vasos Novos)",
+      "conteudo": ""
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vasos sanguíneos são recursos. O corpo controla rigorosamente onde eles crescem: durante menstruação, cicatrização, crescimento fetal. Angiogênese é a palavra para esse processo — formação de novos capilares. Uma molécula-chave é **VEGF** (vascular endothelial growth factor). Em condições normais, VEGF é secretado em quantidades mínimas, apenas onde preciso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas uma célula tumoral hipóxica (4 características já presentes) sente o oxigênio baixar, ativa HIF-1α (hypoxia-inducible factor 1), e **super-secreta VEGF**. VEGF flutua no microambiente local, encontra receptores em células endoteliais próximas (células que fazem capilar), ativa seu receptor tirosina-quinase (VEGFR), e — presto — novos capilares começam a brotar em direção ao tumor. A célula agora está 'irrigada'. Hipóxia aliviada. Crescimento retomado. O tumor entra em exponencial."
+    },
+    {
+      "tipo": "destaque_molecular",
+      "titulo": "VEGF super-expresso (indução por HIF-1α sob hipóxia)",
+      "conteudo": "Proteína: VEGF (fator de crescimento endotelial vascular, ~45 kDa, cromossomo 6p21)\nMecanismo: Liga em VEGFR1/2 (receptores tirosina-quinase em células endoteliais)\nAtivação: Hipóxia → HIF-1α → transcrição de VEGF; também mutação em VHL (von Hippel-Lindau) causa HIF-1α constitutivo\nEfeito: Angiogênese; vasos novos nutrindo tumor"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑥ Invasão e Metástase",
+      "conteudo": ""
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma célula com as 5 primeiras características é um tumor local impressionante — imortal, vascularizado, ávido, crescendo sem freio. Mas ainda preso ao tecido original. Presa porque está colada ao vizinho via proteína de adesão **E-caderina**. E-caderina é como velcro molecular: conecta uma célula à outra, mantém coesão, cria epitélio. Sem ela, a célula fica solta."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas se uma célula tumoral sofre **transição epitélio-mesenquimal** (EMT), ela perde E-caderina. Como? Via metilação do promoter de CDH1 (gene que codifica E-caderina), ou transcrição de fatores transcrevedores como Snail, Twist que reprimem E-caderina. Sem E-caderina, a célula se desliga dos vizinhos. Ganha mobilidade. Além disso, começa a secretar **metaloproteinases** (MMP2, MMP9) — enzimas que digerem matriz extracelular. A célula agora consegue se mover através da matriz, entrar em capilares, circular no sangue, e aterrissar num tecido distante, criando colônias metastáticas."
+    },
+    {
+      "tipo": "destaque_molecular",
+      "titulo": "E-caderina perdida + MMP elevadas (EMT completa)",
+      "conteudo": "Proteína: E-caderina (molécula adesão, 120 kDa, cromossomo 16)\nPerdida via: Metilação de CDH1, transcrição de Snail/Twist/Slug\nConsequência: Célula solta, perde adesão, ganha motilidade\nAliado: MMP2/MMP9 (metaloproteinases, >50 kDa)\nEfeito final: Invasão, intravasação em vasos, disseminação metastática"
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Integração das 6 Características",
+      "conteudo": "Agora você vê por que 6 é mágico. Uma célula precisa de TODAS (ou quase) para ser verdadeiramente maligna. RAS sozinho? Dividira mas morreria de apoptose ou hipoxia. RAS + BCL-2? Imortal localmente mas ficaría presa no tempo (limite Hayflick) e hipóxica. RAS + BCL-2 + telomerase? Imortal, infinito, mas asfixiado e preso. RAS + BCL-2 + telomerase + VEGF? Crescendo, vascularizado, mas ainda colado ao lugar. RAS + BCL-2 + telomerase + VEGF + E-caderina perdida? Agora sim — metastático, fulminante, imortal, móvel, auto-suficiente, ignorando freios, resistindo à morte, vascularizado. É maligno."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Contrafactual: E se Faltasse Uma Característica?",
+      "conteudo": ""
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Cenário 1: RAS mutado, BCL-2 super-expresso, telomerase ativo, VEGF super-expresso, E-caderina perdida. Tudo menos Rb (Rb ainda funcional).**\n\nO que acontece? A célula cresce, mas periodicamente, o sinal ANTI-crescimento (TGF-β) chega e ativa p16-CDKN2A. p16 fosforila CDK4/6, que não conseguem fosforilar Rb. Rb permanece hipofosfat, bloqueia E2F, e a célula PARA na G1. Pausa. Mesmo que RAS bata à porta gritando 'sou auto-suficiente', Rb responde 'não, espere'. O tumor fica preso em ciclos de pausa-crescimento, nunca explodindo. Tumor dorminhoco, não maligno."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Cenário 2: Todas as 6 características, mas sem ④ (telomerase não ativada; telômeros ainda encurtam).**\n\nO que acontece? Célula cresce ~50 divisões, telômeros ficam curtos, p53 dispara senescência, célula PARA. Mesmo que seja imortal em apoptose (BCL-2 alto), ela não é imortal em divisões. Tumor envelhece, estagna, nunca vira maligno sistêmico. Tumor localizado, de crescimento limitado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Cenário 3: Todas as 6, mas VEGF não é ativado (tumor ainda secreta pouco VEGF; vasos não brotam perto).**\n\nO que acontece? Tumor cresce até ~1-2 mm de diâmetro, então hipoxia interno ativa p53, morte massiva celular interna (necrose isquêmica). Tumor fica envolvido por cápsula fibrosa, não invade. Classicamente chamado de 'tumor não-angiogênico' — raro, mas documentado. O tumor morre de asfixia. Maligno? Não, localmente confinado."
+    },
+    {
+      "tipo": "analogia",
+      "titulo": "Analogia: Corporação Clandestina",
+      "conteudo": "Imagine uma corporação criminosa em formação. Para sobreviver num país com lei forte, precisa de 6 características simultâneas:\n\n① **Auto-suficiência em recursos:** A empresa não pede permissão ao governo para se expandir. Toma decisões sozinha. (RAS auto-suficiente)\n② **Imunidade a ordens de parada:** Mesmo quando a polícia ordena parada, a corporação ignora. Tem seus próprios advogados que bloqueiam cada ordem. (Rb perdido)\n③**Imortalidade de liderança:** Quando o chefe deveria morrer (idade, acidente), imediatamente um sucessor assume. A corporação nunca fica sem liderança. (BCL-2 anti-apoptose)\n④ **Vida eterna:** Mesmo que tenha dinheiro finito (Hayflick), consegue inventar novas fontes. Negócio nunca envelhece. (Telomerase, imortalidade temporal)\n⑤ **Atração de recursos externos:** Quando fica sem dinheiro (hipóxia), consegue atrair investidores externos que financiam crescimento. (VEGF atraindo vasos)\n⑥ **Dispersão geográfica:** Quando grande demais num país, coloca filiais em outros países. Se uma é presa, outras sobrevivem. (E-caderina perdida, metástases)\n\nCom 5 características, a corporação é forte mas vulnerável em 1 ponto. Com todas as 6, é praticamente imbatível. É assim o tumor maligno."
+    },
+    {
+      "tipo": "etimologia",
+      "titulo": "Etimologia: 'Hallmark' e 'Maligno'",
+      "conteudo": "**Hallmark** (do inglês: hall = sala de mercado medieval; mark = marca, selo):\n- Originalmente, marca colocada pelos ourives em ouro ou prata, certificando qualidade.\n- Transferido para 'marca característica' — 'esse é o hallmark do bom vinho'.\n- Na oncologia, Hanahan e Weinberg o usaram para significar: 'marca característica que todo tumor maligno carrega'.\n- Mnemônico: hall = 'mercado de tumores'; cada tumor maligno deve ter seu 'certificado de malignidade' — as 6 características.\n\n**Maligno** (do latim: malus = mal; -ignus = de natureza, género):\n- Literalmente: 'de natureza/origem má'.\n- Na medicina, referencia-se ao prognóstico: 'doenças malignas' = prognóstico ruim, evolutiva, letal.\n- Contraposto a 'benigno' (bene = bem; -ignus = natureza) = natureza boa, prognóstico melhor.\n- Nota: Tumor benigno pode existir (lipoma, adenoma), mas é lentamente crescente, nunca metastatiza. Tumor maligno é fulminante, invade, metastatiza — por causa das 6 características.\n\n**Transformação maligna** = processo de ganho dessas 6 características (não é instantâneo; é acumulativo ao longo de anos/décadas)"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "As 6 Características Hallmark Ilustradas",
+      "descricao_para_ia": "Criar uma ilustração estilo infográfico mostrando 6 círculos em volta de um centro (célula tumoral). Cada círculo representa uma característica:\n1. (Auto-suficiência) RAS ligado, com molécula de fator de crescimento sendo ignorada\n2. (Insensibilidade a freios) Rb desativado, porteiro sumindo da porta G1\n3. (Evasão de apoptose) BCL-2 bloqueando BAX/BAK; mitocôndria não libera citocromo C\n4. (Imortalidade replicativa) Telômero sendo estendido por telomerase; ciclo infinito\n5. (Angiogênese) VEGF sendo secretado, capilares brotando em volta do tumor\n6. (Invasão/metástase) E-caderina desaparecendo, MMP comendo matriz, célula migrando\n\nCor padrão ANIMA (neurônio-espiral glassmorphism): usar tom predominante azul-grafite com destaques em âmbar/ouro para as moléculas-chave. Adicionar pequeno texto em cada círculo com nome da molécula principal (RAS, Rb, BCL-2, TERT, VEGF, CDH1) e efeito visível. Ao centro, a palavra 'MALIGNO' em destaque."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Casos Clínicos: Ordem Diferente de Ganho de Características",
+      "conteudo": ""
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Caso 1: Melanoma (ordem típica: ① → ②  → ③ → ⑤ → ④ → ⑥)**\n\nPaciente: Homem, 55a, com melanoma cutâneo em membro inferior (1,5 mm de espessura, Clark II).\n\nHistória molecular:\n- Lesão começa com mutação em BRAF (V600E; variante de RAS - característica ①) induzida por UV crônico.\n- Célula se divide sem permissão, mas morre de apoptose porque p53 ainda funciona.\n- Subitamente, segunda lesão em melanoma adquire deleção de CDKN2A (p16 perdido, bloqueando freios ②). Rb e ciclo agora desprotegidos.\n- Célula cresce sem parada, mas é apoptótica demais (ainda p53 wild-type). Terceiro evento: mutação em p53 ou super-expressão de BCL-2 (característica ③).\n- Agora imortal em apoptose, mas hipóxica. Quarto evento: ativa VEGF via hipóxia (⑤) - vasos crescem rápido.\n- Quinto evento: transcrição anômala liga telomerase (④) - imortalidade temporal.\n- Sexto evento: perda de E-caderina via Snail super-expresso (⑥) - invasão dérmica, depois sistêmica. Paciente vem ao médico com metástases em linfonodos e pulmão.\n\nDiagnóstico: Melanoma BRAF-mutado com 6 características. Prognóstico: ruim. Tratamento: inibidor de BRAF (vemurafenib) bloqueia ① , mas resistência ocorre em meses quando célula adquire MEK1 mutação (bypass)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Caso 2: Câncer de Pâncreas (ordem típica: ① → ① → ① → ① → ⑤, ⑥)**\n\nPaciente: Mulher, 62a, com câncer de pâncreas adeno-carcinoma (diagnosticado em estágio III — invasão vascular local, sem metástases à distância).\n\nHistória molecular:\n- Primeiro evento: KRAS G12V (mutação ①).\n- Segundo evento: CDKN2A deleção (p16 perdido ②).\n- Terceiro evento: TP53 deleção (perda de p53; característica ③).\n- Quarto evento: SMAD4 deleção (co-fator de TGF-β; piora insensibilidade a freios ②).\n- Durante essa progressão, célula já passou por ~50 divisões (telômeros curtos), mas a deleção de p53 desliga senescência replicativa; telomerase agora ativa porque não há mais p53 para bloquear (característica ④).\n- Angiogênese já presente (⑤) porque células pancreáticas inflamadas secretam VEGF.\n- Invasão presente (⑥) porque SMAD4 perdido aumenta motilidade (EMT basal).\n\nDiagnóstico: Adenocarcinoma pancreático com 6 características em estado avançado. Genótipo KRAS+TP53+CDKN2A+SMAD4 (\"4-gene signature\" do pâncreas). Prognóstico: muito ruim, sobrevida mediana ~12 meses mesmo com quimioterapia (FOLFIRINOX)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Caso 3: Papiloma de Laringe (ordem atípica: ① de novo rara; ⑥ precoce)**\n\nPaciente: Criança, 4a, com papilomatose laríngea recorrente (RLP, causada por HPV-11 ou HPV-16).\n\nHistória molecular:\n- HPV-11/16 codificam E6 e E7, que degradam p53 e Rb, respectivamente (características ② e ③ de novo, sem mutação puntiforme).\n- E-caderina já é perdida em papilomas de baixo risco (⑥ precoce) porque HPV desestabiliza junctions.\n- Auto-suficiência (①)? Raramente (apenas em progressão rara para carcinoma invasivo).\n- Imortalidade temporal (④)? Raríssimo; maioria papilomas não ativa telomerase, mantendo senescência.\n- Angiogênese (⑤)? Presente modestamente (baixa VEGF), porque papilomas são bem-vascularizados mas não hiperanogiogênicos.\n\nDiagnóstico: RLP com 2-3 características (③, ② via E6/E7; ⑥ via HPV). Não é maligna porque faltam ① e ④ principalmente.\nPrognóstico: melhor que carcinoma; maioria crianças regredirem espontaneamente aos 5-6a (imunidade adquirida) ou permanecem dorminhocas com recorrências espaçadas.\nNota: Raro papiloma progride para carcinoma escamoso quando adquire adicionalmente KRAS (①) e telomerase (④). Aí fica maligno de verdade."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "O que Aprendemos",
+      "conteudo": "Maligno é um estado molecular preciso: presença simultânea de ~6 características hallmark. Não é rótulo subjetivo — é biologia. Um tumor pode ter 2-3 características e ainda ser benigno (papiloma), ou ter 5 e ser localmente invasivo (melanoma num linfonodo) mas não sistêmico. Apenas com todas as 6 (ou quase) é que se torna verdadeiramente letal. E a ordem não é fixa — carcinomas diferentes ganham características em sequências diferentes. Mas o resultado final é sempre o mesmo: uma célula que o corpo não consegue matar ou parar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa é a beleza pedagógica do framework de Hanahan e Weinberg: em vez de memorizar '67 tipos de câncer', você memoriza 6 características e entende por que cada uma é necessária. RAS sozinho não sufoca célula? Falha em ④. BCL-2 sozinho a torna imortal mas hipóxica? Falha em ⑤. Entender as 6 é entender por que tumor leva tempo para matar — porque precisa acumular 6 mutações independentes, um evento raro em células isoladas, mas frequente em populações celulares de bilhões de células divindo ao longo de anos."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Resumo mnemônico — memorize as 6 características como 'SEFITA': **S**inais auto-suficientes (RAS), **E**vasão de apoptose (BCL-2), **F**reios ignorados (Rb), **I**mortalidade temporal (telomerase), **T**erritório expandido via angiogênese (VEGF), **A**nda para longe (E-caderina perdida, invasão)."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "id": "s9-onco-01-000",
+        "titulo": "Oncologia: Princípios Clínicos",
+        "tipo": "direta"
+      },
+      {
+        "id": "s1-bio-cel-02-001",
+        "titulo": "Ciclo Celular e Checkpoints",
+        "tipo": "conceitual"
+      },
+      {
+        "id": "s2-bio-cel-03-001",
+        "titulo": "Apoptose e Morte Celular Programada",
+        "tipo": "conceitual"
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s9-onco-02-001",
+        "titulo": "Oncogenes: RAS, MYC, BCL-2",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "As moléculas individuais (RAS, Rb, BCL-2, etc.) ganham vida quando estudamos oncogenes — genes que, quando mutados, causam transformação. Este bloco foi a visão de helicóptero; o próximo é o zoom nos mecanismos."
+      },
+      {
+        "id": "s9-onco-03-001",
+        "titulo": "Genes Supressores: p53, BRCA1/2, APC",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Enquanto oncogenes são pedal acelerador mutante (ganho de função), supressores são freios falhados (perda de função). Este bloco mencionou Rb; o próximo aprofunda toda a categoria de supressores."
+      },
+      {
+        "id": "s9-onco-04-001",
+        "titulo": "Microambiente Tumoral: Estroma, Imunidade, Hipóxia",
+        "tipo": "ALVO_TERAPEUTICO",
+        "descricao": "Tumor não é isolado — interage com células vizinhas, imunidade, vascularização. Anti-VEGF (bevacizumab) é droga clínica que bloqueia ⑤. Conhecer microambiente é essencial para terapia."
+      },
+      {
+        "id": "s9-far-onco-01-001",
+        "titulo": "Fármacos Alvo em Oncologia: Inibidores de Tirosina-quinase",
+        "tipo": "ALVO_TERAPEUTICO",
+        "descricao": "RAS ativa cascata MAPK via RAF-MEK-ERK (todos tirosina-quinases). Fármacos como sunitinibe (anti-VEGFR) bloqueiam ⑤ e a cascata de crescimento. Conhecer as 6 características revela por que cada droga é parcialmente eficaz."
+      },
+      {
+        "id": "s5-pato-mol-02-001",
+        "titulo": "Mutagênese: Carcinógenos Químicos, Radiação, Infecção",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "Como uma célula ganha essas mutações? Via carcinógenos (tabaco, amianto, HPV, aflatoxina). Este bloco é 'resultado'; aquele é 'causa'."
+      }
+    ],
+    "laterais": [
+      {
+        "id": "s9-onco-patho-01-001",
+        "titulo": "Classificação Histológica de Tumores",
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "descricao": "Patologista ao microscópio vê características hallmark por padrão (diferenciação, pleomorfismo, índice mitótico alto, necrose). Este bloco é a 'gramática' que permite ler a histologia."
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "fc-s9-onco-01-001-001",
+      "tipo": "por_que",
+      "pergunta": "Por que uma célula precisa de TODAS as 6 características hallmark para ser verdadeiramente maligna? Não seria suficiente 3 ou 4?",
+      "resposta": "Porque cada característica resolve um problema de sobrevivência. RAS sozinho (①) pode se dividir, mas morre de apoptose. RAS + BCL-2 (①+③) é imortal em apoptose, mas hipóxica. RAS + BCL-2 + telomerase (①+③+④) é infinitamente divisível mas ainda presa localmente. Apenas com TODAS as 6 (ou quase) é que o tumor consegue crescer progressivamente, ativar angiogênese (⑤), e disseminar (⑥). Uma célula com 5 características é 'subclinicamente maligna' — pode crescer em laboratório, mas o corpo consegue parar em algum ponto.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "contrafactual",
+      "id": "fc-s9-onco-01-001-002",
+      "pergunta": "E se uma célula tivesse hallmarks 1, 2, 4, 5, 6 mas NÃO tivesse 3 (evasão de apoptose)? BCL-2 não fosse super-expresso. Seria maligna?",
+      "resposta": "Muito provavelmente não. Sem evasão de apoptose (③), quando RAS ativa sinalização anômala, p53 vê o perigo e grita 'apoptose!'. Mesmo que a célula seja imortal em replicação (④) e atraia vasos (⑤), ela morreria sob estresse. Tumor nunca sairia de alguns mm de diâmetro. Na prática, esse cenário é raro — quase todo tumor maligno tem ③. Exceção: alguns tumores baseados em inibição de p53 podem ter mecanismos alternativos de sobrevivência (autocrinia, adesão a estroma). Mas em geral, falta de ③ bloqueia malignidade.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "mecanismo",
+      "id": "fc-s9-onco-01-001-003",
+      "pergunta": "Como RAS mutado (K-RAS G12V) consegue ficar sempre ligado (constitutivamente ativo) se o sinal normal é transiente?",
+      "resposta": "RAS normal é uma GTPase: em repouso (GDP), desligada; quando recebe sinal (fator de crescimento em receptor), troca GDP por GTP e liga (1-2 min); depois a atividade GTPase intrínseca de RAS hidrolisa GTP de volta a GDP, desligando. É um temporizador. Mas mutação G12V em KRAS remove uma glicina crítica no sítio ativo. Esse resíduo é essencial para que a atividade GTPase funcione. Mutante G12V hidrolisa muito lentamente — o GTP permanece ligado indefinidamente, e RAS fica sempre ligado (GTP). Sinal sem desligar, sem permissão externa. Resultado: crescimento autônomo.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "clinico",
+      "id": "fc-s9-onco-01-001-004",
+      "pergunta": "Um paciente com melanoma BRAF-mutado é tratado com vemurafenib (inibidor de BRAF, bloqueando a característica ①). Por que muitas vezes o tumor reaparece em 6-12 meses?",
+      "resposta": "Porque bloquear uma única característica é insuficiente se as outras 5 ainda estão presentes. Durante tratamento, vemurafenib bloqueia BRAF (análogo de RAS), e a célula tumoral sofre apoptose... no início. Mas depois de meses, uma célula consegue adquirir uma segunda mutação que BYPASSA o bloqueio (ex: mutação em MEK1, que salta sobre BRAF inibido e ativa a cascata abaixo). Ou a célula upregula PI3K/AKT pathway (via alternativa). Porque ② (Rb), ③ (BCL-2), ④ (telomerase), ⑤ (VEGF), ⑥ (invasão) continuam operacionais, a célula consegue sobreviver e achar um jeito de reativar ①. Terapia combinada (vemurafenib + MEK inibidor) é mais eficaz porque bloqueia 2 pontos simultaneamente.",
+      "nivel_alvo": 5
+    },
+    {
+      "tipo": "comparacao",
+      "id": "fc-s9-onco-01-001-005",
+      "pergunta": "Qual é a diferença molecular entre um adenoma colorretal (tumor benigno) e um adenocarcinoma (maligno)?",
+      "resposta": "Adenoma tem frequentemente KRAS mutado (①) e APC perdido (freio perdido, algo como ②). Mas falta ③ (BCL-2 super-expresso ou p53 perdido) e ④ (telomerase ativa). Resultado: cresce lentamente, pode atingir 1-2 cm, mas é confinado à mucosa. Adenocarcinoma tem ALÉM de KRAS e APC, também TP53 perdido (③), telomerase ativa (④), VEGF elevado (⑤), e perda de E-caderina (⑥). Resultado: invade submucosa, depois muscularis própria, depois vasos, metastatiza. A diferença clínica é abismal — adenoma é 'espera 5 anos, tira por colonoscopia, curado'; carcinoma é 'quimio, cirurgia agressiva, quimio, ainda assim 40% morrem em 5 anos'. Tudo por causa de 3 características extras (③ ④ ⑥).",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "etimologia",
+      "id": "fc-s9-onco-01-001-006",
+      "pergunta": "O termo 'maligno' vem do latim 'malus' (mau). Mas biologicamente, por que 'mau' e não apenas 'diferente' ou 'mutante'?",
+      "resposta": "Porque 'maligno' captura não só o fato de haver mutações (que qualquer célula com câncer tem), mas o comportamento com prognóstico ruim para o hospedeiro. Um tumor benigno (lipoma, adenoma) tem mutações, mas não mata o hospedeiro porque responde a freios, cresce lentamente, não invade. Um tumor maligno (carcinoma, sarcoma) tem as 6 características e MATA o hospedeiro — prognóstico 'mau' se não tratado. 'Maligno' sintetiza 'morte previsível do hospedeiro se deixado sozinho'. Terapeuticamente, isso significa: maligno = MERECE intervenção urgente. Benigno = pode esperar ou até observar. A palavra 'maligno' é portanto uma condensação de 'biologia letal' em uma palavra.",
+      "nivel_alvo": 3
+    },
+    {
+      "tipo": "sintese_transdisciplinar",
+      "id": "fc-s9-onco-01-001-007",
+      "pergunta": "Como as 6 características hallmark se conectam com a história clínica do câncer (detecção, evolução, metástase)?",
+      "resposta": "Cronologia: (1) Célula tem mutação inicial (RAS via carcinógeno) → cresce sem parada, mas morre de apoptose → clínica: nada. (2) Segunda mutação (BCL-2 super-expresso via translocação) → imortal em apoptose, mas hipóxica → clínica: ainda nada (célula está escondida, pequena). (3) Terceira mutação (Rb perdido) → desprotegido, mas já tem ① + ③ → clínica: ainda nada. (4) Quarta mutação (telomerase ativa) → imortal em tempo → clínica: tumor começa a crescer visivelmente (~1 cm, detectável). (5) Quinta mutação (VEGF super-expresso) → angiogênese → clínica: crescimento acelerado, aparece em imagem. (6) Sexta mutação (E-caderina perdida) → invasão e metástase → clínica: paciente vem com metástases já. Toda essa cascata leva 10-20 anos. Por isso câncer é doença de idosos em geral. Crianças que desenvolvem câncer frequentemente têm síndrome hereditária (p53 germinativo em Li-Fraumeni) — já nascem com 1 mutação, precisam só de 5 extra, não 6.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "armadilha",
+      "id": "fc-s9-onco-01-001-008",
+      "pergunta": "É possível um tumor ser maligno COM TELOMERASE INATIVADA (sem característica ④)?",
+      "resposta": "Sim, mas é raro. Alguns tumores (ex: alguns linfomas, certos sarcomas) usam mecanismo alternativo: ALT (Alternative Lengthening of Telomeres), via recombinação homóloga, sem telomerase ativa. Telômeros ainda se mantêm. Mas esses tumores são minoria. Maioria dos tumores malignos (~85%) PRECISA de telomerase ativa porque é o mecanismo mais eficiente. ALT é backup raro. Armadilha pedagógica: pensar que telomerase é SEMPRE requerida em maligno. Não é — é frequente, mas não universal. A regra melhor é: 'imortalidade replicativa' (④) é SEMPRE presente em maligno; como é implementada (telomerase vs ALT) varia.",
+      "nivel_alvo": 3
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "id": "cc-s9-onco-01-001-001",
+      "titulo": "Melanoma em Espinha Dorsal: Ganho Progressivo de Características",
+      "narrativa": [
+        {
+          "tipo": "apresentacao",
+          "conteudo": "Homem, 58a, fumante, compareça ao dermatologista com mancha pigmentada na costas de 2 cm, com bordas irregulares e cores variadas (acinzentado, castanho-escuro, rosa). Biopsia mostra melanoma maligno com espessura de Breslow 2 mm, Clark nível II (invade derme superficial). A primeira pergunta: por que agora? Teve sol a vida toda, por que esse melanoma apareceu aos 58 anos?"
+        },
+        {
+          "tipo": "causa_mecanismo",
+          "conteudo": "Biologia molecular revelada: a célula que deu origem ao melanoma tinha mutação BRAF V600E (adquirida ~30 anos antes por exposição solar crônica). Essa mutação ativa RAS-like signaling (característica ①). Por 25-30 anos, essa célula se dividiu ocasionalmente, mas foi eliminada por apoptose mediada por p53 (porque o sinal descontrolado de BRAF foi reconhecido como anômalo). Mas aos 58 anos, por acaso evolutivo, uma célula adquiriu também perda de CDKN2A (deleção homozigótica, cromossomo 9p21), eliminando p16. Sem p16, CDK4 não é inibido, Rb é continuamente fosforilado, e a célula entra livremente em S (característica ②). Agora BRAF mutado (①) + Rb desprotegido (②) = célula que se divide continuamente."
+        },
+        {
+          "tipo": "estrutura_disfuncao",
+          "conteudo": "Microscopicamente, melanoma mostra: (a) atipia nuclear (BRAF causa super-expressão de núcleo); (b) aumento de índice mitótico (Rb perdido permite múltiplas divisões); (c) ausência de apoptose focal (porque p16 perdido não dispara senescência). Mas ainda NÃO tem evasão de apoptose propriamente dita (③) — apenas perda de freio. A célula ainda é sensível a p53 se sofrer estresse. Então por que o tumor cresceu visível nessa altura? Porque a população celular é agora bilhões de células. Raramente, uma delas adquire terceira mutação: super-expressão de BCL-2 (via translocação t(18) ou metilação de promoter anti-apoptótico). Essa variante ③ agora domina a população e resiste melhor."
+        },
+        {
+          "tipo": "sintoma_clinico",
+          "conteudo": "Clínica: lesão pigmentada de 2 cm na costas, assimétrica, bordas mal-demarcadas, cores variadas. Paciente pode notar leve prurido ou sangramento se trauma. Causa: produto da população de células com ① + ② + ③ (e provavelmente já ④ via telomerase que frequentemente ativa em resposta a fusão telométrica pós-perda de p16). Ainda SEM angiogênese maciça (⑤) — lesão é superficial, vasos são inadequados. Ainda SEM invasão profunda nem metástase (⑥) — está confinada à derme, não cruzou membrana basal (ainda tem E-caderina, ou E-caderina está começando a se perder)."
+        },
+        {
+          "tipo": "diagnostico_sequencia",
+          "conteudo": "Diagnóstico diferencial: benigno (nevo) vs melanoma. Critérios clínicos (ABCDE: Assimetria, Bordas irregulares, Cores variadas, Diâmetro >5mm, Evolução). Biopsia revela células amelanóticas com atipia nuclear ++, vários mitoses, ausência de maturação (em nevo benigno, há maturação em profundidade). PCR/next-gen sequencing revela BRAF V600E + CDKN2A deleção + BCL-2 super-expresso. Diagnóstico confirmado: melanoma maligno em estágio IB (Breslow 1-2 mm, sem ulceração). Paradoxo: tem malignidade histológica, mas ainda não metastizou. Por quê? Porque ⑤ (angiogênese) ainda é inadequado (tumor é superficial, vasos na derme normal são suficientes) e ⑥ (invasão profunda, metástase) ainda é rara (E-caderina parcialmente preservada, MMP baixas). Aquela célula que eventualmente ganhar ④ (telomerase), ⑤ (HIF-1α/VEGF sob hipóxia em profundidade), e ⑥ (EMT completa), ESSA será a célula-tronco do melanoma metastático futuro."
+        },
+        {
+          "tipo": "prognostico_consequencia",
+          "conteudo": "Tratamento: excisão cirúrgica com margens 1 cm (para melanoma 1-2 mm). Sentinel lymph node biopsy (para estadiamento). Se linfonodo positivo, estadiamento sobe para III. Prognóstico depende exatamente da sequência de mutações nas células disseminadas. Se a metástase tem apenas ① + ② + ③, sobrevida é melhor (tumor mais diferenciado, menos agressivo). Se tem todas as 6, sobrevida é pior (tumor indiferenciado, rápida progressão). Seguimento: exame clínico cada 3-6 meses, ressonância em caso de sintomas, vigilância de vida toda (porque melanoma pode recorrer décadas depois). Caso possua mutações em ④ (telomerase) e ⑤ (VEGF), candidato para terapia anti-VEGF (bevacizumab) se metastático. Se tem ① (BRAF V600E) confirmado, elegível para inibidor de BRAF (vemurafenib, vemurafenib + cobimetinib) — essa droga mata células com ① hiperativa. Mas resistência ocorre em 6-12 meses via ganho de MEK1 ou outra mutação."
+        }
+      ]
+    },
+    {
+      "id": "cc-s9-onco-01-001-002",
+      "titulo": "Câncer de Pâncreas: Quando Todas as 6 Características Estão Presentes",
+      "narrativa": [
+        {
+          "tipo": "apresentacao",
+          "conteudo": "Mulher, 68a, com queixa de dor epigástrica crônica há 3 meses, sem relação com alimentação, piora progressiva. Perda de peso 8 kg em 3 meses. Icterícia (bilirrubina 8 mg/dL). Ultrassom revela massa pancreática 3 x 2 cm na cabeça do pâncreas, dilatação de vias biliares (aparência clássica de carcinoma cabeça de pâncreas). TC com contraste mostra invasão vascular (envolvimento da veia mesentérica superior). Biópsia confirma: adenocarcinoma ductal pancreático. A questão clínica é urgência: por que esse câncer progrediu tão rápido e já invadiu vasos?"
+        },
+        {
+          "tipo": "causa_mecanismo",
+          "conteudo": "Biologia molecular sequencial: (1) Mutação de KRAS (codon 12, frequentemente G12V) ocorre MUITO cedo (~no segundo 'hit' de Knudsen, número 1-2 de acumulação). KRAS é oncogene driver em ~95% de câncer pancreático. Célula ganha ① (auto-suficiência). (2) CDKN2A (p16) é perdido em ~80% (cromossomo 9p, deleção homozigótica). Rb agora desprotegido, célula ganha ②. (3) TP53 (cromossomo 17p) é perdido/mutado em ~70%. Sem p53, apoptose falha E senescência falha — célula é imortal em apoptose (③) e ganha imortalidade temporal (④) porque senescência replicativa não disparada. (4) SMAD4 (cromossomo 18) é perdido em ~50%. SMAD4 é co-fator de TGF-β; sua perda piora insensibilidade a sinais inibitórios de crescimento. (5) Angiogênese (⑤) é ativa porque o microambiente pancreático é inflamado (células estromais, fibroblastos, célula T CD8 escassa); VEGF é secretado. (6) Invasão (⑥) é presente porque EMT é baseado em fibrose pancreática (TGF-β crônico do estroma)."
+        },
+        {
+          "tipo": "estrutura_disfuncao",
+          "conteudo": "Histologia: adenocarcinoma ductal, moderadamente diferenciado. Células neoplásicas formam túbulos disorganizados, com alta densidade nuclear, mitoses aberrantes (3-5 mitoses/10 campos de 400x), áreas de necrose (central, porque tumores >4mm hipoxiam). Desmoplasia intensa (reação estromal com fibroblastos, colágeno, citocinas). Vasculose aumentada (VEGF effect). Infiltrado linfoplasmocitário escasso (célula T CD8 suprimida por TGF-β). Invasão de vasos e nervos (invasão perineural classicamente associada a progressão rápida). Marcadores imuno-histoquímicos: p53 mutante (score 3-4/4, positivo aberrante), Rb perdido (0/4), BCL-2 aumentado (2-3/4), VEGF 2-3/4 (moderado). Resultado: tumor com TODAS as 6 características consolidadas em situ."
+        },
+        {
+          "tipo": "sintoma_clinico",
+          "conteudo": "Clínica: dor epigástrica (invasion de nervos perineural); perda de peso (caquexia tumoral, citocinas inflamatórias como TNF-α, IL-6); icterícia (obstrução biliar mecânica por tumor). Ausência de hematêmese ou melena (raro em câncer cabeça; mais frequente em corpo/cauda). Queixa de início recente (3 meses) sugere crescimento rápido — típico de tumor com todas as 6 características. Nota: câncer cabeça frequentemente é diagnosticado mais cedo por causa de icterícia (sintoma que chama atenção). Câncer corpo/cauda é diagnosticado mais tarde, frequentemente com metástases já (porque icterícia é tardia)."
+        },
+        {
+          "tipo": "diagnostico_sequencia",
+          "conteudo": "Diagnóstico: TC mostra massa pancreática heterogênea com realce arterial (hiperenhancing); invasão de veia mesentérica superior e carótida gastroduodenal (irressecável ou marginalmente ressecável). Biópsia percutânea (ecoguiada ou TC-guiada) colhe tecido, patologia confirma adenocarcinoma. Sequenciamento de tumor (painel de 50-500 genes) revela: KRAS G12V, TP53 R248Q mutante, CDKN2A deleção homozigótica, SMAD4 deleção, BRCA2 mutação herdada (10-20% câncer pancreático tem BRCA). Isso é genótipo clássico 'quádruplo mutante' de câncer pancreático — praticamente garantido de ser maligno de alta agressividade."
+        },
+        {
+          "tipo": "prognostico_consequencia",
+          "conteudo": "Prognóstico: sofrível. Se irressecável ou metastático, sobrevida mediana ~6-9 meses com melhor quimioterapia paliativa (FOLFIRINOX: fluorouracilo + leucovorina + irinotecano + oxaliplatina). Se marginalmente ressecável e operado, seguido de adjuvante FOLFIRINOX, sobrevida mediana ~23-26 meses. Se metastático (osso, fígado, peritônio), prognóstico ainda pior, ~3-5 meses. Tratamento: (1) Se candidato à cirurgia, duodenopancreatectomia cefálica com linfadenectomia, resgate vascular se necessário. Morbidade alta (25-30% complicações pós-op: pancreatic fistula, infecção). (2) Se não-operável, FOLFIRINOX paliativo. Resposta tumoral: ~30% resposta objetiva, ~40% doença estável, ~30% progressão. (3) Alvo terapêutico futuro: inibidor de KRAS (sotorasib, adagrasib) é novo; primeiros resultados sugerem benefício modesto em monotherapy, maior em combinação com MEK-inibidor ou quimioterapia. (4) PARP-inibidor (olaparib) pode ajudar se BRCA-mutado. Mas mesmo com todas essas terapias, o fato é que tumor tem TODAS as 6 características consolidadas — muito mais fácil de evoluir que de regredir."
+        }
+      ]
+    }
+  ],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "titulo": "The Hallmarks of Cancer: A Leading Edge Collection",
+      "autores": "Hanahan D, Weinberg RA",
+      "ano": 2011,
+      "url": "https://doi.org/10.1016/j.cell.2011.02.013"
+    },
+    {
+      "tipo": "artigo",
+      "titulo": "Hallmarks of cancer: new dimensions",
+      "autores": "Hanahan D, Weinberg RA",
+      "ano": 2022,
+      "publicacao": "Cancer Discovery",
+      "url": "https://doi.org/10.1158/2159-8290.CD-21-1059"
+    },
+    {
+      "tipo": "livro",
+      "titulo": "Molecular Biology of the Cell",
+      "autores": "Alberts B, Johnson A, Lewis J, et al.",
+      "ano": 2019,
+      "edicao": "6ª edição",
+      "capitulo": "Capítulo 20: Cancer (Malignant Tumors)"
+    },
+    {
+      "tipo": "revisao",
+      "titulo": "RAS mutations in cancer: when, where and why",
+      "autores": "Pylayeva-Gupta Y, Grabocka E, Bar-Sagi D",
+      "ano": 2011,
+      "publicacao": "Nature Reviews Cancer",
+      "url": "https://doi.org/10.1038/nrc3169"
+    },
+    {
+      "tipo": "artigo",
+      "titulo": "BCL-2 family proteins as therapeutic targets for hematologic malignancies",
+      "autores": "López-Otín C, Blasco MA, Partridge L, et al.",
+      "ano": 2013,
+      "publicacao": "Cell",
+      "url": "https://doi.org/10.1016/j.cell.2013.05.039"
+    },
+    {
+      "tipo": "revisao",
+      "titulo": "Telomerase and telomere length in cancer",
+      "autores": "Blasco MA",
+      "ano": 2005,
+      "publicacao": "Nature Reviews Cancer",
+      "url": "https://doi.org/10.1038/nrc1671"
+    },
+    {
+      "tipo": "artigo",
+      "titulo": "VEGF signaling and cancer",
+      "autores": "Apte RS, Chen DS, Ferrara N",
+      "ano": 2019,
+      "publicacao": "Nature Reviews Cancer",
+      "url": "https://doi.org/10.1038/s41568-018-0083-9"
+    },
+    {
+      "tipo": "capitulo_livro",
+      "titulo": "Epithelial-mesenchymal transition (EMT) and metastasis",
+      "autores": "Lamouille S, Xu J, Derynck R",
+      "ano": 2014,
+      "publicacao": "Nature Reviews Molecular Cell Biology",
+      "url": "https://doi.org/10.1038/nrm3758"
+    }
+  ],
+  "metricas_estudo": {
+    "tempo_recomendado_minutos": 12,
+    "flashcards_esperados": 8,
+    "casos_clinicos_esperados": 2,
+    "dificuldade_relativa": "intermediaria",
+    "prerequisitos_essenciais": [
+      "Ciclo celular básico (fases G1, S, G2, M)",
+      "Apoptose (vias intrínseca e extrínseca)",
+      "Estrutura cromossômica (telômeros, centrômero)"
+    ],
+    "proximos_blocos_recomendados": [
+      "s9-onco-02-001 (Oncogenes)",
+      "s9-onco-03-001 (Genes Supressores)"
+    ]
+  }
+}

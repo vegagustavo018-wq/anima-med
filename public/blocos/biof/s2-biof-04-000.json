@@ -1,57 +1,154 @@
-{
-  "resumo_id": "s2-biof-04-000",
-  "no_pai_id": "s2-biof-00-000",
-  "nos_filhos_ids": [
-    "s2-biof-04-001",
-    "s2-biof-04-002",
-    "s2-biof-04-003"
-  ],
-  "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Biofísica Renal — Visão Geral",
-    "semestre": 2,
-    "disciplina": "Biofísica",
-    "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biof",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Como o rim usa pressão e osmose para filtrar e concentrar",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "funcao"
-  ]
+﻿{
+    "resumo_id":  "s2-biof-04-000",
+    "no_pai_id":  "s1-biof-04-000",
+    "nos_filhos_ids":  [
+                           "s2-biof-04-001"
+                       ],
+    "conexoes_laterais_ids":  [
+                                  "s2-biof-02-000",
+                                  "s2-biof-03-000"
+                              ],
+    "titulo":  "TermodinÃ¢mica Celular e Metabolismo EnergÃ©tico",
+    "semestre":  2,
+    "disciplina":  "biofÃ­sica",
+    "profundidade_arvore":  2,
+    "status":  "em_producao",
+    "author":  "Claude",
+    "data_criacao":  "2026-07-03",
+    "horizon_validade":  "2030-12-31",
+    "procedencia":  "produtor_agente_biof",
+    "estado_ciclo_vida":  "bloco_estavel",
+    "tempo_estimado_minutos":  11,
+    "nivel_alvo":  2,
+    "dificuldade":  "intermediaria",
+    "resumo":  "Vida Ã© um sistema aberto que constantemente luta contra o caos. A segunda lei da termodinÃ¢mica diz: entropia (desordem) sempre aumenta. Mas cÃ©lulas criam ordem â€” proteÃ­nas dobradas, DNA organizado, gradientes mantidos. Como? Usando energia. Esse capÃ­tulo explora como ATP Ã© a moeda de energia celular, como reaÃ§Ãµes acopladas usam energia de uma para dirigir a outra, e por que a cÃ©lula Ã© um \u0027demÃ´nio de Maxwell\u0027 microscÃ³pico. VocÃª entenderÃ¡ o conceito de energia livre de Gibbs (Î”G), por que algumas reaÃ§Ãµes sÃ£o espontÃ¢neas e outras precisam de energia, e por que metabolismo nunca para â€” porque parar Ã© morrer.",
+    "narrativa":  [
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "VocÃª Ã© um prisioneiro tentando escapar de uma cela bloqueada. VocÃª nÃ£o consegue. Mas um amigo do lado de fora empurra a porta de um jeito que empurra vocÃª para fora pelo mesmo tempo. VocÃª sai. A porta do seu amigo fecha. Sua saÃ­da foi possÃ­vel apenas porque acoplada a outra aÃ§Ã£o. ReaÃ§Ãµes quÃ­micas sÃ£o assim. Uma reaÃ§Ã£o que a cÃ©lula quer fazer (como carregar Na+ contra gradiente) Ã© energeticamente desfavorÃ¡vel â€” Ã© como tentar empurrar uma bolinha morro acima. Mas a cÃ©lula acopla essa reaÃ§Ã£o Ã  hidrÃ³lise de ATP (quebra de ATP em ADP + fosfato), que libera muita energia â€” como descer uma montanha. Juntas, a bolinha sobe e o ATP desidrata. Ambos acontecem."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "O que torna uma reaÃ§Ã£o \u0027possÃ­vel\u0027?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "A termodinÃ¢mica usa a quantidade Î”G â€” energia livre de Gibbs. Se Î”G \u003c 0, reaÃ§Ã£o Ã© espontÃ¢nea. Se Î”G \u003e 0, reaÃ§Ã£o nÃ£o acontece sozinha, precisa de energia. A equaÃ§Ã£o Ã© Î”G = Î”H - TÎ”S, onde Î”H Ã© entalpia (calor), T Ã© temperatura absoluta, Î”S Ã© entropia (desordem). Uma reaÃ§Ã£o pode ser desfavorÃ¡vel em entalpia (absorve calor, Î”H \u003e 0) mas se aumentar entropia o suficiente (Î”S \u003e\u003e 0), Î”G fica negativo e acontece. Exemplo: sal dissolvendo em Ã¡gua. Absorve calor (endotÃ©rmico) mas aumenta muito a desordem (Î”S \u003e\u003e 0), entÃ£o Î”G \u003c 0 e dissolve espontaneamente. ContrÃ¡rio: cristal se formando â€” libera calor (Î”H \u003c 0) mas diminui desordem (Î”S \u003c 0). Qual vence? Depende da temperatura."
+                      },
+                      {
+                          "tipo":  "highlight",
+                          "conteudo":  "Î”G determina se reaÃ§Ã£o Ã© espontÃ¢nea (Î”G \u003c 0) ou nÃ£o (Î”G \u003e 0). CÃ©lulas fazem isso parecer ao acoplar reaÃ§Ãµes desfavorÃ¡veis a reaÃ§Ãµes muito favorÃ¡veis."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "ATP: moeda de energia universal"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Por que ATP, nÃ£o outra molÃ©cula? Porque a hidrÃ³lise de ATP (ATP â†’ ADP + Pi) libera ~30.5 kJ/mol sob condiÃ§Ãµes biolÃ³gicas â€” mais que o suficiente para dirigir a maioria das reaÃ§Ãµes que a cÃ©lula precisa (tÃ­pica reaÃ§Ã£o desfavorÃ¡vel precisa ~20 kJ/mol). ATP Ã© como uma moeda de valor Ãºnico: nem muito grande (desperdiÃ§aria energia), nem muito pequena (nÃ£o chegaria). O corpo produz prÃ³prio peso em ATP por dia â€” 70 kg de pessoa produz 70 kg de ATP, o qual Ã© reciclado 200-300 vezes. Por isso as mitocÃ´ndrias trabalham sem parar. Se pararem, ATP acaba em segundos, cÃ©lula morre. CÃ©rebro usa 20% da energia corporal. CoraÃ§Ã£o bate incessantemente. Ambos dependem de mitocÃ´ndrias."
+                      },
+                      {
+                          "tipo":  "pausa",
+                          "conteudo":  "Visualize: seu corpo em repouso gasta ~1700 calorias/dia â€” metade disso sÃ³ em manter temperatura (40% dissipado como calor), proteger gradientes iÃ´nicos (20%), sÃ­ntese de proteÃ­nas (10%). VocÃª nÃ£o pensa, nÃ£o sente, sÃ³ mantÃ©m as mÃ¡quinas rodando. ExercÃ­cio Ã© luxo que seu corpo faz apenas apÃ³s garantir que cÃ©lula nÃ£o morra."
+                      },
+                      {
+                          "tipo":  "etimologia",
+                          "conteudo":  "Entropia vem do grego entropÃ­a (virada para dentro, mudanÃ§a). TermodinÃ¢mica: thermo (calor) + dynamis (forÃ§a). Gibbs: nomeada pelo fÃ­sico Josiah Willard Gibbs (sÃ©culo XIX). ATP: adenosina trifosfato â€” adenina (base) + ribose (aÃ§Ãºcar) + 3 grupos fosfato."
+                      },
+                      {
+                          "tipo":  "analogia",
+                          "conteudo":  "Imagine vocÃª tentando empurrar uma caixa morro acima (reaÃ§Ã£o desfavorÃ¡vel). ImpossÃ­vel sozinho. Mas se um caminhÃ£o descendo a montanha estÃ¡ preso Ã  sua caixa por uma corda, quando ele desce, puxa a caixa para cima. Essa energia estÃ¡ \u0027acoplada\u0027. ATP Ã© o caminhÃ£o descendo â€” sempre estÃ¡ descendo (sendo usado), e as reaÃ§Ãµes que ele puxa para cima sÃ£o as reaÃ§Ãµes que a cÃ©lula precisa."
+                      },
+                      {
+                          "tipo":  "imagem",
+                          "id":  "s2-biof-04-img-001",
+                          "tipo_midia":  "ilustracao_didatica",
+                          "descricao":  "Diagrama de energia livre: eixo Y (energia), eixo X (caminho da reaÃ§Ã£o). Duas curvas lado a lado. Esquerda: reaÃ§Ã£o desfavorÃ¡vel (Î”G \u003e 0), linha comeÃ§ando baixa, subindo para pico alto, descendo pouco abaixo do inicial â€” nunca termina abaixo do comeÃ§o. Direita: reaÃ§Ã£o acoplada ATP, pico menor, e mostrando como ATP desidrata descendo enquanto outro sobe. Setas de energia transferÃªncia entre as duas reaÃ§Ãµes.",
+                          "prompt_ia":  "Diagrama termodinÃ¢mico estilo ANIMA. Eixo X horizontal (progresso da reaÃ§Ã£o), Eixo Y vertical (energia livre G). Lado esquerdo: curva de reaÃ§Ã£o desfavorÃ¡vel (azul), comeÃ§a em 0, sobe para pico +25 (barreira de ativaÃ§Ã£o), termina em +15 (Î”G \u003e 0, desfavorÃ¡vel, linha horizontal hachurada). Lado direito: sobreposiÃ§Ã£o de duas reaÃ§Ãµes: (1) reaÃ§Ã£o desfavorÃ¡vel (mesma curva azul) + (2) ATP hidrolisis (curva vermelha, descendo de +30 para 0), mostrando acoplamento, resultado final em -5 (Î”G total \u003c 0, favorÃ¡vel). Citar \u0027ReaÃ§Ã£o isolada = desfavorÃ¡vel\u0027 vs \u0027Acoplada a ATP = favorÃ¡vel\u0027. Fundo branco, linhas de grade cinzas."
+                      }
+                  ],
+    "flashcards":  [
+                       {
+                           "tipo":  "por_que",
+                           "pergunta":  "Por que a cÃ©lula usa ATP e nÃ£o outro composto de alta energia?",
+                           "resposta":  "ATP libera ~30.5 kJ/mol na hidrÃ³lise â€” valor Ã³timo. Suficiente para dirigir reaÃ§Ãµes tÃ­picas (15-20 kJ/mol) sem desperdÃ­cio grande. AlÃ©m disso, Ã© facilmente sintetizÃ¡vel, estÃ¡vel o suficiente, e pode ser rapidamente reciclado. Ã‰ a moeda de valor perfeito."
+                       },
+                       {
+                           "tipo":  "mecanismo",
+                           "pergunta":  "Descreva como uma reaÃ§Ã£o desfavorÃ¡vel Ã© acoplada a ATP para se tornar favorÃ¡vel.",
+                           "resposta":  "1) ReaÃ§Ã£o A (desfavorÃ¡vel, Î”G_A \u003e 0) precisa ocorrer; 2) ATP â†’ ADP (favorÃ¡vel, Î”G_ATP \u003c 0, libera ~30.5 kJ/mol); 3) Ambas as reaÃ§Ãµes sÃ£o catalisadas pela mesma enzima; 4) Enzima transfere fosfato do ATP para intermediÃ¡ria na reaÃ§Ã£o A; 5) Agora Î”G_total = Î”G_A + Î”G_ATP \u003c 0, reaÃ§Ã£o A prossegue."
+                       },
+                       {
+                           "tipo":  "contrafactual",
+                           "pergunta":  "Se nÃ£o houvesse ATP (cÃ©lulas usassem sÃ³ reaÃ§Ãµes espontÃ¢neas), qual seria o destino da vida?",
+                           "resposta":  "CÃ©lulas sÃ³ poderiam realizar reaÃ§Ãµes que naturalmente liberam energia â€” basicamente combustÃ£o. NÃ£o poderiam construir estruturas complexas (sÃ­ntese de proteÃ­nas, DNA), manter gradientes iÃ´nicos, armazenar informaÃ§Ã£o. Vida complexa seria impossÃ­vel. Seria quÃ­mica simples, nÃ£o biologia."
+                       },
+                       {
+                           "tipo":  "clinico",
+                           "pergunta":  "Por que cianeto (inibidor de mitocÃ´ndrias) causa morte tÃ£o rÃ¡pida?",
+                           "resposta":  "Cianeto bloqueia cadeia de transporte de elÃ©trons, impedindo sÃ­ntese de ATP. Sem ATP, bomba Na+/K+ para. NeurÃ´nios e coraÃ§Ã£o (maiores consumidores) entram em falha em minutos. Morte por falta de ordem mantida â€” entropia vence."
+                       },
+                       {
+                           "tipo":  "comparacao",
+                           "pergunta":  "Qual a diferenÃ§a entre Î”H (entalpia) e Î”G (energia livre)?",
+                           "resposta":  "Î”H = mudanÃ§a de calor (absorve ou libera). Î”G = Î”H - TÎ”S (mudanÃ§a de energia disponÃ­vel para trabalho). Î”H \u003e 0 (endotÃ©rmico) pode ter Î”G \u003c 0 (espontÃ¢neo) se Î”S Ã© grande o suficiente. Î”G determina espontaneidade, nÃ£o Î”H."
+                       },
+                       {
+                           "tipo":  "etimologia",
+                           "pergunta":  "De onde vem \u0027entropia\u0027?",
+                           "resposta":  "Do grego \u0027entropÃ­a\u0027: en- (em) + trepein (virar/converter). Reflete a ideia de \u0027mudanÃ§a irreversÃ­vel\u0027 â€” uma vez que despeja energia em calor, nÃ£o pode recuperar. Sempre aumenta."
+                       },
+                       {
+                           "tipo":  "armadilha",
+                           "pergunta":  "Muitos creem que \u0027cÃ©lula viva viola segunda lei da termodinÃ¢mica porque cria ordem\u0027. Por que estÃ¡ errado?",
+                           "resposta":  "Segunda lei vale para sistemas isolados. CÃ©lula Ã© aberta â€” recebe energia (alimento, luz), exporta calor e resÃ­duos. Essa energia entra permite cÃ©lulas criar ordem localmente. Entropia do universo ainda aumenta (calor dissipado \u003e ordem criada)."
+                       },
+                       {
+                           "tipo":  "sintese",
+                           "pergunta":  "Como termodinÃ¢mica celular conecta-se aos blocos anteriores de difusÃ£o, potencial e fluxo?",
+                           "resposta":  "DifusÃ£o Ã© espontÃ¢nea (Î”G \u003c 0 favor gradiente). Potencial de aÃ§Ã£o libera energia armazenada em gradientes (energia potencial â†’ cinÃ©tica). Fluxo sanguÃ­neo gasta energia (trabalho para mover sangue). Tudo Ã© sustentado por ATP das mitocÃ´ndrias. Vida = conversÃ£o constante de energia quÃ­mica em ordem e movimento."
+                       }
+                   ],
+    "caso_clinico":  {
+                         "titulo":  "Homem de 45 anos com cansaÃ§o extremo, falta de ar ao menor esforÃ§o, taquicardia",
+                         "cascata_5_etapas":  {
+                                                  "causa":  "Miopatia mitocondrial genÃ©tica (mutaÃ§Ã£o no DNA mitocondrial herdado da mÃ£e). MitocÃ´ndrias nÃ£o conseguem sintetizar ATP eficientemente.",
+                                                  "estrutura_afetada":  "MÃºsculo esquelÃ©tico (maior consumidor de ATP no corpo); coraÃ§Ã£o; cÃ©rebro",
+                                                  "disfuncao":  "CÃ©lulas produzem ATP em quantidade insuficiente. DÃ©ficit energÃ©tico. MÃºsculos lacteiam (Ã¡cido lÃ¡tico acumula da combustÃ£o anaerÃ³bica como compensaÃ§Ã£o). CoraÃ§Ã£o tenta compensar com taquicardia mas sem ATP suficiente, falha bomba sÃ³dio-potÃ¡ssio, potencial falha.",
+                                                  "sintoma":  "Paciente cansa ao subir escada (mÃºsculos nÃ£o recebem ATP suficiente para contraÃ§Ã£o sustentada). Falta de ar (coraÃ§Ã£o falha em manter dÃ©bito). Taquicardia (compensaÃ§Ã£o falha). Acidose lÃ¡ctica (mÃºsculos fazem fermentaÃ§Ã£o anaerÃ³bica).",
+                                                  "consequencia":  "Sem tratamento: progressÃ£o para insuficiÃªncia cardÃ­aca congestiva, morte por falha de mÃºltiplos Ã³rgÃ£os. Expectativa de vida reduzida."
+                                              },
+                         "diagnostico_revelado":  "Miopatia mitocondrial. Biopsia muscular mostra mitocÃ´ndrias anormais (\u0027ragged red fibers\u0027). Sequenciamento genÃ©tico confirma mutaÃ§Ã£o m.3243A\u003eG (gene MTTL1). Tratamento: suporte sintomÃ¡tico, coenzima Q10 (melhora funÃ§Ã£o mitocondrial em alguns casos), evitar fatores estressores (depleÃ§Ã£o energÃ©tica, infecÃ§Ãµes).",
+                         "implicacao_biofisica":  "Demonstra que ordem celular (proteÃ­nas dobradas, gradientes, sinal) Ã© luxo energÃ©tico. Sem ATP, nÃ£o hÃ¡ ordem â€” cÃ©lulas tÃªm que escolher: viver lentamente ou morrer rÃ¡pido."
+                     },
+    "midias":  [
+                   {
+                       "id":  "s2-biof-04-img-002",
+                       "tipo":  "ilustracao_didatica",
+                       "descricao":  "Ciclo de ATP: ADP + fosfato + energia (seta verde brilhante mostrando entrada de energia da mitocÃ´ndria) â†’ ATP (molÃ©cula inteira). Seta invertida: ATP â†’ ADP + fosfato + energia liberada (seta vermelha brilhante mostrando energia saindo para cÃ©lula). RepresentaÃ§Ã£o de 200 reciclagens por dia.",
+                       "prompt_ia":  "Diagrama cÃ­clico estilo ANIMA mostrando ciclo ADP-ATP. Esquerda: ADP (adenosina + 2 fosfatos, azul) + Pi fosfato inorgÃ¢nico (verde). Seta para cima (verde brilhante, rotulado \u0027Energia da mitocÃ´ndria ~2000 kcal/dia\u0027). Centro-topo: ATP (adenosina + 3 fosfatos, vermelho brilhante). Seta para baixo (vermelho, rotulado \u0027Energia gasta em reaÃ§Ãµes ~2000 kcal/dia\u0027). Abaixo: ADP novamente. Citar no canto \u0027200-300 reciclagens/dia\u0027 e \u0027EquilÃ­brio dinÃ¢mico\u0027. Fundo branco, setas animadas (representadas por padrÃ£o)."
+                   }
+               ],
+    "prerequisitos":  [
+                          "s1-biof-01-000",
+                          "s1-quim-04-000"
+                      ],
+    "futuras_conexoes":  [
+                             {
+                                 "tipo":  "CASCATA_CAUSAL",
+                                 "descricao":  "Acoplamento energÃ©tico permite sÃ­ntese de molÃ©culas grandes (proteÃ­nas, Ã¡cidos nucleicos) â€” biossÃ­ntese anabÃ³lica"
+                             },
+                             {
+                                 "tipo":  "ALVO_TERAPEUTICO",
+                                 "descricao":  "Inibidores de ATP synthase (venenos mitocÃ´ndrias como cianeto); desacopladores (termogÃªnese); suplementos energÃ©ticos (CoQ10, carnitina)"
+                             },
+                             {
+                                 "tipo":  "RECONHECIMENTO_CLINICO",
+                                 "descricao":  "Hipoglicemia (sem substrato), miopatia mitocondrial (ATP insuficiente), fadiga crÃ´nica, morte sÃºbita inexplicada"
+                             },
+                             {
+                                 "tipo":  "MECANISMO_COMPARTILHADO",
+                                 "descricao":  "Toda cÃ©lula usa ATP; sÃ­ntese hormonal, contraÃ§Ã£o muscular, secreÃ§Ã£o, movimento celular"
+                             }
+                         ]
 }

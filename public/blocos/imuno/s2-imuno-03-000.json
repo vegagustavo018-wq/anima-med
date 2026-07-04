@@ -1,63 +1,209 @@
-{
-  "resumo_id": "s2-imuno-03-000",
-  "no_pai_id": "s2-imuno-00-000",
-  "nos_filhos_ids": [
-    "s2-imuno-03-001",
-    "s2-imuno-03-002",
-    "s2-imuno-03-003",
-    "s2-imuno-03-004",
-    "s2-imuno-03-005",
-    "s2-imuno-03-006",
-    "s2-imuno-03-007",
-    "s2-imuno-03-008"
-  ],
-  "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Módulo 3 — Imunidade Adaptativa",
-    "semestre": 2,
-    "disciplina": "Imunologia",
-    "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "imuno",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "MHC, apresentacao, linfocitos T e B, memoria e tolerancia",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "correlacao_clinica"
-  ]
+﻿{
+    "resumo_id":  "s2-imuno-03-000",
+    "no_pai_id":  "s2-imuno-02-000",
+    "nos_filhos_ids":  [
+                           "s2-imuno-04-000"
+                       ],
+    "conexoes_laterais_ids":  [
+                                  "s2-imuno-01-000",
+                                  "s2-imuno-02-000"
+                              ],
+    "titulo":  "MHC/HLA e Identidade PrÃ³pria",
+    "semestre":  2,
+    "disciplina":  "imunologia",
+    "profundidade_arvore":  2,
+    "status":  "em_producao",
+    "author":  "Claude",
+    "data_criacao":  "2026-07-03",
+    "horizon_validade":  "2027-06-30",
+    "procedencia":  "ANIMA-Med Semestre 2",
+    "estado_ciclo_vida":  "bloco_estavel",
+    "resumo_conciso":  "Seu corpo precisa de uma forma de dizer \u0027isso Ã© meu\u0027 e \u0027isso Ã© invasor\u0027. Como? AtravÃ©s de proteÃ­nas Ãºnicas em cada cÃ©lula â€” seu passaporte imunolÃ³gico. SÃ£o as molÃ©culas MHC (HLA em humanos): uma combinaÃ§Ã£o Ãºnica de 6 variantes genÃ©ticas que nenhuma outra pessoa tem. LinfÃ³citos T as leem como se fossem assinando \u0027Sim, vi isso. ConheÃ§o esse dono.\u0027 Quando encontram a combinaÃ§Ã£o errada? Atacam. Isso Ã© rejeiÃ§Ã£o de transplante. Isso Ã© tolerÃ¢ncia na gravidez. Isso Ã© a base do autoconhecimento imunolÃ³gico.",
+    "narrativa":  [
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Imagine que vocÃª Ã© um seguranÃ§a em um prÃ©dio corporativo. Cada funcionÃ¡rio usa um crachÃ¡ com seu nome e departamento. VocÃª nunca viu o rosto de todos os 5.000 funcionÃ¡rios â€” seria impossÃ­vel. Mas vocÃª reconhece o padrÃ£o: \u0027Esse crachÃ¡ Ã© de um departamento que conheÃ§o.\u0027 AlguÃ©m sem crachÃ¡? Intruso. Seu corpo faz isso com MHC â€” um crachÃ¡ molecular Ãºnico."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "Por que o corpo precisa de um \u0027crachÃ¡\u0027 de identidade?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Porque linfÃ³citos T sÃ£o paranoicos por design. Eles nÃ£o podem simplesmente olhar para uma cÃ©lula e dizer \u0027essa Ã© minha\u0027. Precisam de prova. Precisam de uma proteÃ­na na superfÃ­cie que diga \u0027Sou parte do corpo de [seu DNA], fabricado em [seu nome].\u0027 Essa prova Ã© o MHC. Sem ele, todo linfÃ³cito T atacaria toda cÃ©lula â€” caos. Com ele, linfÃ³citos T sÃ³ atacam cÃ©lulas que exibem o MHC errado (invasores) ou o MHC certo mas com conteÃºdo suspeito dentro."
+                      },
+                      {
+                          "tipo":  "pausa",
+                          "conteudo":  "Checkpoint: MHC Ã© apresentador de antÃ­genos. LinfÃ³citos T NÃƒO reconhecem antÃ­geno solto â€” apenas antÃ­geno apresentado por MHC."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "Como MHC consegue ser Ãºnico para cada pessoa?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "MHC vem de 6 genes principais (em humanos, chamados HLA â€” Human Leukocyte Antigen). Cada gene tem centenas de variantes na populaÃ§Ã£o mundial. A probabilidade de duas pessoas terem a mesma combinaÃ§Ã£o de 6 genes Ã© microscÃ³pica (exceto gÃªmeos monozigÃ³ticos). VocÃª Ã© geneticamente Ãºnico, e seu MHC prova isso. LinfÃ³citos T aprendem a reconhecer SEU MHC no timo (treinamento desde o nascimento). Qualquer cÃ©lula com MHC diferente? Intrusa."
+                      },
+                      {
+                          "tipo":  "highlight",
+                          "conteudo":  "REGRA CRÃTICA: RejeiÃ§Ã£o de transplante acontece porque o MHC do doador Ã© \u0027estrangeiro\u0027. ImunossupressÃ£o farmacolÃ³gica pÃ³s-transplante funciona porque diminui a vigilÃ¢ncia de linfÃ³citos T contra aquele MHC alienÃ­gena."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "Mas espera â€” se MHC Ã© tÃ£o importante, por que grÃ¡vidas nÃ£o rejeitam o feto?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Ã“tima pergunta. O feto herda 50% dos genes da mÃ£e (incluindo MHC materno) e 50% do pai (MHC paterno estranho). A placenta evoluiu para ser uma barreira imunolÃ³gica: expressa MHC materno na interface, mascarando o MHC paterno. AlÃ©m disso, camada especial de cÃ©lulas trofoblÃ¡sticas nÃ£o expressa MHC â€” sÃ£o \u0027invisÃ­veis\u0027 para linfÃ³citos T. Isso evita rejeiÃ§Ã£o. Quando esse sistema falha (inflamaÃ§Ã£o intrauterina severa)? Aborto espontÃ¢neo."
+                      },
+                      {
+                          "tipo":  "pausa",
+                          "conteudo":  "ConsolidaÃ§Ã£o: MHC permite que linfÃ³citos T distinguÃ§am prÃ³prio de estranho. Transplante expÃµe MHC alienÃ­gena. Gravidez mascara-o. Autoimunidade falha em reconhecer prÃ³prio."
+                      },
+                      {
+                          "tipo":  "analogia",
+                          "conteudo":  "MHC Ã© como uma combinaÃ§Ã£o de cadeado Ãºnica. HLA-A, HLA-B, HLA-C (classe I) aparecem em todas as cÃ©lulas â€” Ã© o \u0027cadeado publicamente visÃ­vel\u0027. HLA-DR, HLA-DQ, HLA-DP (classe II) aparecem em cÃ©lulas apresentadoras de antÃ­geno â€” Ã© o \u0027cadeado da sala de conferÃªncias.\u0027 LinfÃ³citos T aprendem qual Ã© a combinaÃ§Ã£o correta. AlguÃ©m tenta abrir com uma combinaÃ§Ã£o diferente? Alarme."
+                      },
+                      {
+                          "tipo":  "etimologia",
+                          "conteudo":  "MHC: Major Histocompatibility Complex (Complexo Principal de Histocompatibilidade). \u0027Histo\u0027 = tecido, \u0027compatibilidade\u0027 = compatÃ­vel. HLA: Human Leukocyte Antigen (AntÃ­geno de LeucÃ³cito Humano). Descoberto nos anos 1950 durante estudos de transfusÃ£o de sangue â€” havia molÃ©culas que causavam rejeiÃ§Ã£o."
+                      },
+                      {
+                          "tipo":  "imagem",
+                          "conteudo":  {
+                                           "id":  "imuno-03-img-01",
+                                           "tipo":  "ilustracao_didatica",
+                                           "descricao":  "Uma cÃ©lula com MHC classe I na superfÃ­cie (proteÃ­na transmembrana representada como Ã¢ncora com domÃ­nios extracelulares). Um linfÃ³cito T com receptor T se encaixando na combinaÃ§Ã£o MHC + peptÃ­deo antÃ­geno dentro do sulco de ligaÃ§Ã£o (mostrado em verde para prÃ³prio, em vermelho para estrangeiro). Ao lado, cÃ©lula de outro indivÃ­duo com MHC \u0027alienÃ­gena\u0027 sendo rejeitada (linfÃ³cito nÃ£o se encaixa, vermelho \u0027X\u0027).",
+                                           "prompt_ia":  "Diagrama mostrando interaÃ§Ã£o entre MHC e TCR (receptor T). Fundo branco. Ã€ esquerda: uma cÃ©lula com MHC classe I (proteÃ­na transmembrana representada como cilindro azul claro saindo da membrana). No topo do MHC, uma fenda/sulco (representado como depressÃ£o azul) contendo um peptÃ­deo (verde pequeno = prÃ³prio). Um linfÃ³cito T (roxo) se aproxima com seu receptor T (vermelho, espÃ­cula na superfÃ­cie) que se encaixa perfeitamente no complexo MHC-peptÃ­deo (seta verde \u0027Reconhecimento\u0027). Ã€ direita: cÃ©lula de outro indivÃ­duo com MHC diferente (proteÃ­na amarela na superfÃ­cie, estrutura diferente). O mesmo linfÃ³cito T tenta se encaixar mas falha (seta vermelha \u0027RejeiÃ§Ã£o\u0027, X vermelho). AnotaÃ§Ãµes: \u0027MHC prÃ³prio\u0027, \u0027MHC alienÃ­gena\u0027, \u0027TCR\u0027, \u0027PeptÃ­deo antÃ­geno\u0027, \u0027TolerÃ¢ncia\u0027, \u0027RejeiÃ§Ã£o\u0027. Paleta: azul claro (MHC prÃ³prio), amarelo (MHC alienÃ­gena), roxo (linfÃ³cito T), verde (peptÃ­deo prÃ³prio), vermelho (rejeiÃ§Ã£o)."
+                                       }
+                      },
+                      {
+                          "tipo":  "imagem",
+                          "conteudo":  {
+                                           "id":  "imuno-03-img-02",
+                                           "tipo":  "ilustracao_didatica",
+                                           "descricao":  "Mapa genÃ©tico: dois indivÃ­duos com diferentes combinaÃ§Ãµes de 6 alelos HLA (HLA-A, HLA-B, HLA-C, HLA-DR, HLA-DQ, HLA-DP). Pessoa 1 tem combinaÃ§Ã£o de cores em 6 posiÃ§Ãµes. Pessoa 2 tem combinaÃ§Ã£o completamente diferente. Estatisticamente, probabilidade de match Ã© \u003c0.0001. Mostrar tambÃ©m cÃ©lulas MHC classe I (todas as cÃ©lulas) vs classe II (apenas APCs).",
+                                           "prompt_ia":  "Diagrama genÃ©tico do MHC/HLA. Fundo cinza pÃ¡lido. No topo, uma linha temporal ou esquema mostrando cromossomo 6 (human) com 6 genes principais alinhados: HLA-A (vermelho), HLA-B (azul), HLA-C (verde), HLA-DR (laranja), HLA-DQ (roxo), HLA-DP (amarelo). Para IndivÃ­duo 1, mostrar uma combinaÃ§Ã£o de 6 cores. Para IndivÃ­duo 2, mostrar uma combinaÃ§Ã£o diferente de 6 cores. Adicionar probabilidade matemÃ¡tica: \u0027P(match aleatÃ³rio) \u003c 0.0001\u0027. Abaixo, mostrar dois tipos de cÃ©lulas: 1) CÃ©lula tÃ­pica com MHC classe I (azul claro, todas as cÃ©lulas tÃªm); 2) CÃ©lula apresentadora de antÃ­geno com MHC classe I + classe II (azul claro + laranja, ambos presentes). AnotaÃ§Ãµes limpas: \u0027HLA-A\u0027, \u0027HLA-B\u0027, \u0027HLA-C\u0027, \u0027Classe I (ubÃ­quo)\u0027, \u0027Classe II (APCs)\u0027, \u0027Unicidade genÃ©tica\u0027. Paleta: cores diversas para cada alelo, sem excesso de detalhe."
+                                       }
+                      }
+                  ],
+    "flashcards":  [
+                       {
+                           "tipo":  "por_que",
+                           "pergunta":  "Por que linfÃ³citos T precisam de MHC para reconhecer antÃ­genos? Por que nÃ£o reconhecem direto?",
+                           "resposta":  "Porque MHC tem funÃ§Ã£o evolutiva crÃ­tica: (1) Reduz false positives (sÃ³ ataca se MHC + peptÃ­deo suspeito, nÃ£o peptÃ­deo solto); (2) Cria barreira contra patÃ³genos que mascararam antÃ­geno; (3) Permite \u0027ensino\u0027 de tolerÃ¢ncia no timo (reconhecer MHC prÃ³prio + antÃ­geno prÃ³prio = tolerÃ¢ncia)."
+                       },
+                       {
+                           "tipo":  "mecanismo",
+                           "pergunta":  "Descreva: linfÃ³cito T no timo aprende a reconhecer seu MHC â†’ sai do timo â†’ encontra cÃ©lula com MHC estranho (transplante). O que acontece?",
+                           "resposta":  "1. No timo (seleÃ§Ã£o positiva): linfÃ³cito T Ã© testado â€” se NÃƒO consegue se encaixar em MHC prÃ³prio, morre. 2. Se consegue, passa em seleÃ§Ã£o negativa â€” se se encaixa muito bem em MHC prÃ³prio + autoantigÃªnio, morre (tolerÃ¢ncia). 3. Sai do timo sabendo reconhecer MHC prÃ³prio. 4. Em transplante: vÃª MHC alienÃ­gena â†’ nÃ£o reconhece como prÃ³prio â†’ ativa resposta contra cÃ©lula inteira. 5. Resultado: rejeiÃ§Ã£o."
+                       },
+                       {
+                           "tipo":  "contrafactual",
+                           "pergunta":  "E se todos os humanos tivessem o mesmo MHC?",
+                           "resposta":  "Transplante seria trivial (compatibilidade 100%). MAS: pathÃ³genos evoluiriam para explorar esse MHC Ãºnico â€” todos serÃ­amos igualmente vulnerÃ¡veis. Um vÃ­rus que escapasse daquele MHC infectaria 8 bilhÃµes de pessoas. Evolutivamente, diversidade de MHC Ã© proteÃ§Ã£o."
+                       },
+                       {
+                           "tipo":  "clinico",
+                           "pergunta":  "Um paciente recebe transplante de rim. Tem MHC HLA-A*02, HLA-B*07. Doador tem HLA-A*24, HLA-B*35. O que vai acontecer sem imunossupressÃ£o?",
+                           "resposta":  "RejeiÃ§Ã£o aguda em dias a semanas. LinfÃ³citos T do receptor reconhecem MHC alienÃ­gena do doador, ativam, multiplicam, infiltram rim, causam inflamaÃ§Ã£o, necrose. Rim falha. Com imunossupressÃ£o (tacrolimus, micofenolato), linfÃ³citos T sÃ£o suprimidos globalmente â€” conseguem tolerar o rim estranho."
+                       },
+                       {
+                           "tipo":  "comparacao",
+                           "pergunta":  "MHC classe I vs classe II. Qual aparece em qual cÃ©lula? Qual linfÃ³cito T reconhece?",
+                           "resposta":  "Classe I: TODAS as cÃ©lulas. Reconhecido por linfÃ³cito T CD8+ (citotÃ³xico). Classe II: APENAS cÃ©lulas apresentadoras (macrÃ³fago, cÃ©lula B, cÃ©lula dendrÃ­tica). Reconhecido por linfÃ³cito T CD4+ (helper). Classe I apresenta antÃ­geno CITOSÃ“LICO (viral, tumoral). Classe II apresenta antÃ­geno EXÃ“GENO (fagocitado)."
+                       },
+                       {
+                           "tipo":  "etimologia",
+                           "pergunta":  "Qual a origem de \u0027histocompatibilidade\u0027?",
+                           "resposta":  "\u0027Histo\u0027 = tecido (grego \u0027histos\u0027). \u0027Compatibilidade\u0027 = capacidade de coexistir. Descoberto estudando transfusÃ£o e transplante â€” algumas combinaÃ§Ãµes de tecidos eram compatÃ­veis (nÃ£o havia rejeiÃ§Ã£o), outras nÃ£o."
+                       },
+                       {
+                           "tipo":  "armadilha",
+                           "pergunta":  "Armadilha: \u0027MHC apresenta qualquer antÃ­geno.\u0027 EstÃ¡ certo?",
+                           "resposta":  "Errado. MHC apresenta antÃ­genos especÃ­ficos que cabem em seu sulco de ligaÃ§Ã£o. Cada alelo HLA tem preferÃªncia por peptÃ­deos com certos aminoÃ¡cidos. HLA-A*02 prefere peptÃ­deos com lisina/aspartato em posiÃ§Ãµes-chave. NÃ£o Ã© aleatÃ³rio."
+                       },
+                       {
+                           "tipo":  "sintese",
+                           "pergunta":  "Integre: linfÃ³cito T no timo + seleÃ§Ã£o positiva/negativa + MHC prÃ³prio â†’ tolerÃ¢ncia. Como isso previne autoimunidade?",
+                           "resposta":  "LinfÃ³cito T que reconhece MHC prÃ³prio + autoantigÃªnio com alta afinidade Ã© DELETADO no timo (seleÃ§Ã£o negativa). Sobrevive apenas quem reconhece MHC prÃ³prio mas nÃ£o autoantigÃªnio (afinidade baixa). Resultado: resposta contra invasores, tolerÃ¢ncia a prÃ³prio. Falha nesse sistema = autoimunidade."
+                       }
+                   ],
+    "caso_clinico":  {
+                         "titulo":  "Homem de 45 anos transplantado de rim hÃ¡ 2 anos com rejeiÃ§Ã£o crÃ´nica",
+                         "narrativa":  [
+                                           {
+                                               "etapa":  1,
+                                               "titulo":  "Causa",
+                                               "conteudo":  "Transplante renal de doador falecido com HLA-A*24, HLA-B*35. Receptor tem HLA-A*02, HLA-B*07. ImunossupressÃ£o inicial (tacrolimus) foi bem controlada, mas adesÃ£o se tornou inconsistente apÃ³s 1 ano."
+                                           },
+                                           {
+                                               "etapa":  2,
+                                               "titulo":  "Estrutura Afetada",
+                                               "conteudo":  "ParÃªnquima renal (glomÃ©rulos e tÃºbulos). CÃ©lula endotelial vascular do rim alienÃ­geno expressa MHC doador continuamente."
+                                           },
+                                           {
+                                               "etapa":  3,
+                                               "titulo":  "DisfunÃ§Ã£o",
+                                               "conteudo":  "Com queda de tacrolimus: linfÃ³citos T CD8+ do receptor reconhecem MHC-A*24 e MHC-B*35 no endotÃ©lio renal â†’ ativam â†’ liberam perforina e granzimas â†’ morte celular endotelial â†’ infiltraÃ§Ã£o de macrÃ³fagos â†’ fibrose progressiva."
+                                           },
+                                           {
+                                               "etapa":  4,
+                                               "titulo":  "Sintoma",
+                                               "conteudo":  "Creatinina sobe de 1.2 (estÃ¡vel) para 2.5 mg/dL (6 meses). ProteinÃºria aumenta. Ultrassom mostra fibrose cortical e atrofia parenquimatosa. BiÃ³psia renal mostra infiltrado mononuclear (linfÃ³citos T CD8+) e fibrointimal thickening (c4d positivo = rejeiÃ§Ã£o mediada por anticorpo concomitante)."
+                                           },
+                                           {
+                                               "etapa":  5,
+                                               "titulo":  "ConsequÃªncia (sem tratamento)",
+                                               "conteudo":  "RejeiÃ§Ã£o crÃ´nica progride para falha renal terminal em 6-12 meses. Retorno a diÃ¡lise. PrÃ³ximo transplante serÃ¡ ainda mais arriscado (sensibilizado a MHC do primeiro doador)."
+                                           }
+                                       ],
+                         "diagnostico_final":  "REJEIÃ‡ÃƒO CRÃ”NICA MEDIADA POR CÃ‰LULAS T. Tratamento: aumento de imunossupressÃ£o (dose de tacrolimus), adiÃ§Ã£o de belatacept (bloqueador de coestimulaÃ§Ã£o T). PrognÃ³stico: se aderÃªncia melhorar, pode-se estabilizar funÃ§Ã£o. APRENDIZADO: MHC alienÃ­gena Ã© alvo perpÃ©tuo. ImunossupressÃ£o precisa ser contÃ­nua e adequada."
+                     },
+    "midia":  [
+                  {
+                      "id":  "imuno-03-img-01",
+                      "tipo":  "ilustracao_didatica",
+                      "descricao":  "InteraÃ§Ã£o entre MHC classe I, peptÃ­deo antÃ­geno e receptor T.",
+                      "prompt_ia":  "Diagrama mostrando interaÃ§Ã£o entre MHC e TCR (receptor T). Fundo branco. Ã€ esquerda: uma cÃ©lula com MHC classe I (proteÃ­na transmembrana representada como cilindro azul claro saindo da membrana). No topo do MHC, uma fenda/sulco (representado como depressÃ£o azul) contendo um peptÃ­deo (verde pequeno = prÃ³prio). Um linfÃ³cito T (roxo) se aproxima com seu receptor T (vermelho, espÃ­cula na superfÃ­cie) que se encaixa perfeitamente no complexo MHC-peptÃ­deo (seta verde \u0027Reconhecimento\u0027). Ã€ direita: cÃ©lula de outro indivÃ­duo com MHC diferente (proteÃ­na amarela na superfÃ­cie, estrutura diferente). O mesmo linfÃ³cito T tenta se encaixar mas falha (seta vermelha \u0027RejeiÃ§Ã£o\u0027, X vermelho). AnotaÃ§Ãµes: \u0027MHC prÃ³prio\u0027, \u0027MHC alienÃ­gena\u0027, \u0027TCR\u0027, \u0027PeptÃ­deo antÃ­geno\u0027, \u0027TolerÃ¢ncia\u0027, \u0027RejeiÃ§Ã£o\u0027. Paleta: azul claro (MHC prÃ³prio), amarelo (MHC alienÃ­gena), roxo (linfÃ³cito T), verde (peptÃ­deo prÃ³prio), vermelho (rejeiÃ§Ã£o)."
+                  },
+                  {
+                      "id":  "imuno-03-img-02",
+                      "tipo":  "ilustracao_didatica",
+                      "descricao":  "Diversidade genÃ©tica de HLA e distribuiÃ§Ã£o de MHC em cÃ©lulas.",
+                      "prompt_ia":  "Diagrama genÃ©tico do MHC/HLA. Fundo cinza pÃ¡lido. No topo, uma linha temporal ou esquema mostrando cromossomo 6 (human) com 6 genes principais alinhados: HLA-A (vermelho), HLA-B (azul), HLA-C (verde), HLA-DR (laranja), HLA-DQ (roxo), HLA-DP (amarelo). Para IndivÃ­duo 1, mostrar uma combinaÃ§Ã£o de 6 cores. Para IndivÃ­duo 2, mostrar uma combinaÃ§Ã£o diferente de 6 cores. Adicionar probabilidade matemÃ¡tica: \u0027P(match aleatÃ³rio) \u003c 0.0001\u0027. Abaixo, mostrar dois tipos de cÃ©lulas: 1) CÃ©lula tÃ­pica com MHC classe I (azul claro, todas as cÃ©lulas tÃªm); 2) CÃ©lula apresentadora de antÃ­geno com MHC classe I + classe II (azul claro + laranja, ambos presentes). AnotaÃ§Ãµes limpas: \u0027HLA-A\u0027, \u0027HLA-B\u0027, \u0027HLA-C\u0027, \u0027Classe I (ubÃ­quo)\u0027, \u0027Classe II (APCs)\u0027, \u0027Unicidade genÃ©tica\u0027. Paleta: cores diversas para cada alelo, sem excesso de detalhe."
+                  }
+              ],
+    "metricas_estudo":  {
+                            "tempo_estimado_minutos":  10,
+                            "nivel_alvo":  2,
+                            "dificuldade":  "intermediaria"
+                        },
+    "conexoes_pedagogicas":  {
+                                 "prerequisitos":  [
+                                                       "s2-imuno-02-000"
+                                                   ],
+                                 "futuras":  [
+                                                 {
+                                                     "tipo":  "CASCATA_CAUSAL",
+                                                     "descricao":  "MHC alienÃ­geno + linfÃ³cito T â†’ rejeiÃ§Ã£o de transplante (s2-imuno-04)"
+                                                 },
+                                                 {
+                                                     "tipo":  "ALVO_TERAPEUTICO",
+                                                     "descricao":  "ImunossupressÃ£o pÃ³s-transplante; terapia HLA-especÃ­fica em rejeiÃ§Ã£o"
+                                                 },
+                                                 {
+                                                     "tipo":  "RECONHECIMENTO_CLINICO",
+                                                     "descricao":  "Tipagem HLA prÃ©-transplante; matching em lista de espera"
+                                                 },
+                                                 {
+                                                     "tipo":  "MECANISMO_COMPARTILHADO",
+                                                     "descricao":  "TolerÃ¢ncia central (timo) = falha em autoimunidade (s2-imuno-04)"
+                                                 }
+                                             ],
+                                 "laterais":  [
+                                                  "s2-imuno-01-000",
+                                                  "s2-imuno-02-000"
+                                              ]
+                             }
 }

@@ -1,0 +1,659 @@
+{
+  "resumo_id": "s4-farma1-004-mecanismo-farmaco-alvo",
+  "no_pai_id": "s4-farma1-003",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [],
+  "metadata": {
+    "titulo": "Mecanismo Fármaco-Alvo — Como a Molécula Muda o Corpo (Visão Integrada)",
+    "subtitulo": "Do toque molecular à cascata de efeitos sistêmicos",
+    "semestre": 4,
+    "disciplina": "farmacologia",
+    "sistema_corporal": "múltiplos",
+    "profundidade_arvore": 2,
+    "importancia": 5,
+    "dificuldade": 4,
+    "tempo_leitura_minutos": 22,
+    "status": "completo",
+    "data_criacao": "2026-07-03",
+    "data_ultima_revisao": "2026-07-03",
+    "versao": "1.0",
+    "tags": [
+      "farmacodinâmica",
+      "mecanismo",
+      "receptor",
+      "ligação",
+      "downstream",
+      "efeito-clínico",
+      "sinalização",
+      "alvo-molecular"
+    ],
+    "nivel": "CORE",
+    "tipo": "conceito"
+  },
+  "resumo_conciso": "Você aprendeu que farmacocinética determina QUANTO de fármaco chega ao alvo. Agora aprenderá que farmacodinâmica determina O QUÊ acontece quando chega. Começa simples — fármaco se liga a proteína (receptor, enzima, canal). Ligação muda conformação da proteína. Proteína muda comportamento — abre canal, ativa cascata de sinalização, bloqueia reação. Essa mudança isolada é negligenciável. Mas célula tem amplificadores embutidos — um receptor ativado ativa proteína G, que ativa enzima, que faz 100 moléculas de segundo mensageiro, que cada uma ativa kinase, que fosforila 100 substratos. Uma molécula de fármaco gera 10.000 mudanças no interior da célula. Essas mudanças em 100 milhões de células = efeito clínico. Este bloco mapeia como dinheiro (fármaco) vira poder (efeito).",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você é segurança em estádio de futebol. Seu trabalho é manter torcida organizada. Quando multidão inteira quer entrar, você não consegue controlar sozinho. Mas estádio tem sistema: cada pessoa tem ingresso (chave). Catraca só abre (porta) se ingresso passa. Depois que primeira pessoa entra, catraca volta a trancado. Pessoa pode empurrar porta com 100 kg de força — catraca não abre. Pessoa com ingresso — 1 kg de pressão — abre. Diferença não é força. É chave. O fármaco é a chave. O corpo tem 'catracas' — chamadas receptores — esperando por chave certa."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Farmacodinâmica é ciência da chave e da catraca. Por que alguns fármacos funcionam. Por que alguns não funcionam. Por que você precisa de dose certa — nem muito (overdose), nem pouco (não abre catraca)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, você aprendeu que fármaco viaja pelo corpo (farmacocinética — ADME). Bloco sobre SNA mostrou você que corpo usa neurotransmissores (acetilcolina, noradrenalina, dopamina) para comunicação. Agora aprenderá mecanismo dessa comunicação — como molécula sinaliza célula, célula responde, e resposta causa mudança visível no paciente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O Que é Receptor? — Máquina de Detecção"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Célula é como fortaleza cercada por muro de membrana plasmática. Nem tudo consegue entrar. Célula precisa saber o que está acontecendo do lado de fora — temperatura subiu? Hormônio chegou? Neurotransmissor foi liberado? Para isso, célula tem sensores — chamados receptores. Receptor é proteína que tem dois lados: um lado do lado de fora da célula ('extracelular'), um lado do lado de dentro ('intracelular'). Lado extracelular é especializado em reconhecer molécula específica. Quando moléculas certa se liga, lado intracelular muda de conformação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Analogia da chave é imperfeita porque sugere 'encaixe perfeito'. Realidade é mais nuançada. Receptor é máquina de reconhecer forma, mas também carga elétrica, também hidrofobicidade. Fármaco que parece com neurotransmissor natural consegue se ligar. Mas frequentemente receptor reconhece 'quase' certo também — fármaco está 90% do padrão esperado. Por isso fármacos têm 'especificidade' e 'afinidade' — medidas de quão bem e quão frequentemente fármaco consegue se ligar."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Revelação chave: Fármaco não 'inventa' nada. Fármaco ativa ou bloqueia máquinas que célula JÁ TEM. Célula tem receptores adrenérgicos esperando noradrenalina (do próprio sistema nervoso). Beta-bloqueador toma lugar da noradrenalina — bloqueia receptor. Célula que recebia 'acelera coração' não recebe mais. Coração desacelera. Fármaco é 'sabotador' de comunicação natural, ou 'impostor' que imita comunicação natural."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Quatro Passos de Mecanismo Fármaco-Alvo",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Fármaco Liga-se a Receptor — Mudança Conformacional",
+          "descricao": "Fármaco entra em proximidade do receptor. Receptor está em conformação 'inativa' (estado basal). Quando fármaco se aproxima, forças eletrostáticas, hidrofóbicas, ligações de hidrogênio criam atração. Fármaco se 'encaixa' na bolsa de ligação (binding pocket) do receptor. Essa ligação causa mudança de forma tridimensional no receptor — mudança conformacional. Receptor muda de estado 'inativo' para 'ativo'. Essa mudança é reversível — se fármaco sai, receptor volta a inativo."
+        },
+        {
+          "numero": 2,
+          "titulo": "Receptor Ativado Recruta Proteína de Sinalização — Amplificação Começa",
+          "descricao": "Quando receptor muda de conformação, sua região intracelular expõe superfície de acoplamento. Nessa superfície, proteína de sinalização (frequentemente proteína G, ou kinase) se acopla. Esse acoplamento é como colher de engrenagem que encaixa em roda. Receptor agora é 'ativado' — pronto para passar sinal para dentro. Se há muitos receptores ativados, muitas proteínas G são recrutadas. Multiplicidade começa — não é mais 1-para-1."
+        },
+        {
+          "numero": 3,
+          "titulo": "Proteína de Sinalização Ativa Enzima Citosólica — Amplificação Exponencial",
+          "descricao": "Proteína G ativada ativa adenilil ciclase (ou PLC, ou outras). Enzima começa a trabalhar — produz segundo mensageiro (cAMP de adenilil ciclase). Uma molécula de adenilil ciclase consegue fazer 1000 moléculas de cAMP por segundo. Nesse ponto, amplificação é exponencial. Um fármaco ligado a um receptor = 1 proteína G ativada = 1 adenilil ciclase = 1000 moléculas cAMP por segundo. Em célula inteira, com 1000 receptores similares, pode chegar a 1 MILHÃO de moléculas de segundo mensageiro em segundos."
+        },
+        {
+          "numero": 4,
+          "titulo": "Segundo Mensageiro Ativa Proteína Efetora — Transcription Factors ou Canais Abrem",
+          "descricao": "cAMP se liga a proteína cinase-A (PKA). PKA se torna ativa. PKA viaja para núcleo, fosforila CREB (transcription factor). CREB entra em genes, liga-se a CRE (cAMP response element), genes são ligados — célula começa a fazer proteínas novas. OU: PKA também pode fosforilar canais iônicos, torna-los mais abertos ou fechados. Resultado: fluxo de íons muda. Membrana potencial muda. Célula pode ficar despolarizada (se abre canal de sódio) ou hiperpolarizada (se abre canal de potássio)."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Tipos de Receptor — Diferentes Máquinas de Sinalização"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Corpo tem 700+ tipos de receptor. Todos operam por princípio similar (ligand = mudança conformacional = sinal), mas mecanismo interno varia. Aprenderá aqui as quatro famílias principais — conhecer uma é entender princípio de todas."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Quatro Famílias de Receptores",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Receptores Acoplados a Proteína G (GPCR) — Sete Hélices",
+          "descricao": "Proteína que atravessa membrana 7 vezes. Nome vem de 'G protein coupled'. Quando ligand se liga ao lado extracelular, conformação muda. Lado intracelular agora apresenta superfície que captura proteína G (heterotrimérica: Gα + Gβγ). Proteína G é 'interruptor' que existe em dois estados: GDP-bound (inativo) e GTP-bound (ativo). Receptor ativa proteína G facilitando troca de GDP por GTP. Gα-GTP se separa de Gβγ, ambos vão ativar efetores diferentes (adenilil ciclase, fosfolipase C, canais iônicos). Exemplos: receptores adrenérgicos (noradrenalina), receptores muscarínicos (acetilcolina), receptores dopaminérgicos. Estas são as maiores família de receptores no corpo — ~35% de todos os fármacos aprovados pela FDA visam GPCRs."
+        },
+        {
+          "numero": 2,
+          "titulo": "Receptores de Tirosina Quinase — Intracellular Kinase",
+          "descricao": "Proteína que atravessa membrana 1 vez. Lado extracelular é domínio de ligação. Lado intracelular tem domínio de kinase (fosforilar é função). Quando ligand se liga (exemplo: fator de crescimento epidermal, EGF), receptor dimeriza — dois receptores se juntam. Proximidade causa autofosforilação — receptor fosforila a si mesmo. Fosforilação em tirosinas cria 'docas' para outras proteínas (com domínios SH2 ou PTB que reconhecem fosfotirosinas). Essas proteínas trazidas são geralmente ativadas por fosforilação, então cascata continua para baixo (Ras-MAPK, PI3K-Akt). Exemplos: receptores para EGF, PDGF, insulina, FGF."
+        },
+        {
+          "numero": 3,
+          "titulo": "Receptores de Ligando-Ativados (Nuclear Receptors) — Fatores de Transcrição",
+          "descricao": "Receptores para hormônios lipofílicos (esteroides, hormônios tireoides) que conseguem atravessar membrana porque são gordurosos. Receptor é principalmente citoplasmático ou nuclear. Quando ligand entra em célula (consegue atravessar porque é lipofílico), liga-se a receptor no citoplasma ou núcleo. Ligand + receptor forma complexo que entra em DNA e liga-se a elemento responsivo (HRE = hormone response element). Resultado: genes ligam ou desligam. Efeitos são lentos (horas/dias) porque dependem de síntese de novo de proteína. Exemplos: receptores para glucocorticoides, hormônios tireoides, hormônios sexuais."
+        },
+        {
+          "numero": 4,
+          "titulo": "Receptores de Ionotrópicos (Canais Iônicos Ligand-Gated) — Pore Direct",
+          "descricao": "Proteína que forma poro (canal) através de membrana. Canal está normalmente fechado. Quando ligand se liga, canal abre diretamente — sem proteína G intermediária, sem second messenger. Fluxo de íons muda. Resposta é RÁPIDA (milissegundos) porque é direto. Exemplos: receptores de acetilcolina nicotínicos (nicotinic-receptor, no músculo esquelético e sistema nervoso autônomo), receptores GABA (ácido gama-aminobutírico, inibitório), receptores de glutamato (excitatório). Anestésicos inalados (sevoflurane), benzodiazepinas (diazepam) agem via aumento de fluxo de cloro através de GABA-A receptors."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Afinidade, Eficácia, Antagonismo — Fineza de Controle"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Fármaco pode ligar bem (alta afinidade) mas não fazer nada (baixa eficácia). Fármaco pode fazer muito (alta eficácia) mas só quando em concentrações altas (baixa afinidade). Entender diferença é crítico para medicina clínica."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Conceitos de Farmacodinâmica Quantitativa",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Afinidade (Kd) — Força de Ligação",
+          "descricao": "Medida de quão bem fármaco consegue se ligar a receptor. Medida em Kd (dissociation constant) — concentração de fármaco na qual 50% dos receptores estão ocupados. Kd baixo = afinidade alta = fármaco 'gruda' bem. Exemplo: morfina tem Kd nanomolar para receptores opioides — significa que em concentração de nanomolar (bilionésimo de molar), 50% dos receptores estão bloqueados. Ibuprofeno tem Kd micromolar para COX-1 — concentração 1000x maior é necessária para ocupar 50% dos receptores. Afinidade baixa significa que você precisa de DOSE maior para obter efeito."
+        },
+        {
+          "numero": 2,
+          "titulo": "Eficácia (E_max) — Capacidade de Ativar",
+          "descricao": "Medida de quão bem fármaco consegue ativar receptor. Mesmo que se ligue bem, fármaco pode não ativar o receptor completamente. Fármaco com 100% eficácia = agonista completo (ativa receptor tanto quanto neurotransmissor natural). Fármaco com 50% eficácia = agonista parcial (ativa receptor menos que natural). Fármaco com 0% eficácia = antagonista (liga mas não ativa — apenas bloqueia)."
+        },
+        {
+          "numero": 3,
+          "titulo": "Agonista — Liga e Ativa",
+          "descricao": "Exemplo: isoprenalina é agonista de receptores beta-2 adrenérgicos. Liga bem (afinidade boa) e ativa receptor completamente (eficácia 100%). Célula recebe sinal de 'acelera'. Coração bate mais rápido, vias aéreas se abrem."
+        },
+        {
+          "numero": 4,
+          "titulo": "Antagonista — Liga Mas Não Ativa",
+          "descricao": "Exemplo: propranolol é antagonista de receptores beta-adrenérgicos. Liga bem ao receptor (afinidade boa) mas não consegue ativar (eficácia 0%). Receptor fica 'bloqueado' por propranolol. Noradrenalina natural não consegue ligar (receptor já está ocupado). Sinal de 'acelera' nunca chega. Coração fica mais lento."
+        },
+        {
+          "numero": 5,
+          "titulo": "Agonista Parcial — Liga e Ativa Parcialmente",
+          "descricao": "Exemplo: arbutamina é agonista parcial de receptores beta-1. Liga bem mas ativa apenas parcialmente. Quando coração está lento (precisa ser acelerado), agonista parcial age como agonista (melhora batida). Quando coração está muito rápido (taquicardia), agonista parcial age como antagonista (reduz batida). Comportamento depende do contexto. Fármaco se ajusta."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Downstream — De um Receptor para Efeito Clínico Visível"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma molécula de fármaco ligada a um receptor pode parecer insignificante. Mas receptor está conectado a rede de amplificadores. Um receptor pode recrutar 10 proteínas G. Uma proteína G ativa uma enzima. Uma enzima faz 1000 moléculas de segundo mensageiro. Cada segundo mensageiro ativa proteína kinase. Cada kinase fosforila 100 substratos. Em 1 minuto, um fármaco ligado gerou mudanças em 100 MILHÕES de proteínas na célula."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Amplificação de Sinal — Cascata de Reação",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Nível 1 — Ocupação de Receptor",
+          "descricao": "Fármaco entra em célula. Encontra receptor. Liga-se. 1 fármaco = 1 receptor ocupado (se houver 100 receptores de tipo similar, talvez 10 estejam ocupados)."
+        },
+        {
+          "numero": 2,
+          "titulo": "Nível 2 — Ativação de Proteína G",
+          "descricao": "Receptor ativado recruta proteína G. 10 receptores ativados = até 100 proteínas G ativadas (amplificação 10x). Cada proteína G pode ativar múltiplas enzimas."
+        },
+        {
+          "numero": 3,
+          "titulo": "Nível 3 — Geração de Segundo Mensageiro",
+          "descricao": "100 proteínas G ativadas = 100 enzimas (adenilil ciclase) ativadas. Cada enzima produz 1000 cAMP por segundo. Em 10 segundos = 1 MILHÃO de moléculas cAMP (amplificação 10.000x)."
+        },
+        {
+          "numero": 4,
+          "titulo": "Nível 4 — Ativação de Proteína Cinase",
+          "descricao": "1 MILHÃO cAMP = ativação de 100.000 proteínas PKA. Cada PKA fosforila 5-10 substratos. Total = MILHÕES de proteínas fosforiladas (amplificação 100x)."
+        },
+        {
+          "numero": 5,
+          "titulo": "Nível 5 — Transcrição de Genes e Efeito Clínico",
+          "descricao": "Milhões de proteínas fosforiladas incluem transcription factors. Genes ligam. Célula faz novas proteínas. Fenótipo muda. Uma batida de coração torna-se visível — em 1 minuto depois da dose, paciente já está com frequência cardíaca aumentada."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Especificidade e Efeitos Colaterais — Por Que Fármaco Não É Mágico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Fármaco visa receptor específico. Problema: corpo tem múltiplos tipos de receptores similares. Fármaco que vira ativar receptor A pode também ativar receptores B, C, D. Cada tipo de receptor causa efeito diferente. Resultado: efeito colateral."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Exemplo de Falta de Especificidade",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Fenilefrina (Agonista Alfa-1) — Efeito Desejado",
+          "descricao": "Fenilefrina foi feita para ativar receptores alfa-1-adrenérgicos nos vasos sanguíneos. Vaso constringe. Pressão sanguínea sobe (útil em choque, hipotensão). Efeito desejado: vasoconstrição."
+        },
+        {
+          "numero": 2,
+          "titulo": "Fenilefrina — Efeito Colateral Indesejado",
+          "descricao": "Fenilefrina também ativa receptores alfa-1 em outras células — em fibras musculares da próstata, por exemplo. Próstata contrai. Resultado: dificuldade para urinar (retenção urinária). Ou em cristalino do olho — ciliar muscle contrai. Resultado: visão fica ruim em perto (midríase, dilatação da pupila)."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Receptores similares estão frequentemente em tecidos diferentes com funções diferentes. Fármaco que 'especifico' para receptor A em coração pode ser igual de ativo em receptor A em pulmão. Se pulmão e coração têm receptor similar mas consequências diferentes de ativação, resultado é efeito colateral. Tolerância é conseguir especificidade não é fácil — requer fármacos que se ligam com alta afinidade E seletividade (preferência por um receptor vs. outro)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Nomenclatura — Sufixos Revelam Mecanismo"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "RECEPTOR",
+      "decomposicao": [
+        {
+          "parte": "recept- + -or",
+          "origem": "latim — 'aquele que recebe'",
+          "historia": "Termo foi escolhido porque proteína 'recebe' ligante (mensageiro químico). Etimologia reflete função perfeitamente."
+        }
+      ],
+      "mnemonica": "Receptor = quem recebe mensagem. Ligante = mensagem. Fármaco = impostor que parece mensagem real."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "AGONISTA",
+      "decomposicao": [
+        {
+          "parte": "agon- = luta / combate (grego)",
+          "origem": "grego — 'aquele que luta ao lado'",
+          "historia": "Palavra 'antagonista' originou primeiro (aquele que luta CONTRA). Depois 'agonista' (aquele que luta COM). Metáfora é perfeita: agonista trabalha COM receptor (ativa), antagonista trabalha CONTRA (bloqueia)."
+        }
+      ],
+      "mnemonica": "Agonista é aliado (ativa receptor). Antagonista é inimigo (bloqueia receptor). 'Ago' (ago-nista) = ativar."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "FARMACODINÂMICA",
+      "decomposicao": [
+        {
+          "parte": "pharmaco- (fármaco) + -dynamia (força/poder)",
+          "origem": "grego — 'poder do fármaco'",
+          "historia": "O nome revela: trata-se da FORÇA que fármaco exerce no corpo. Como molécula virou poder clínico."
+        }
+      ],
+      "mnemonica": "Dinâmica = movimento, mudança, força. Farmacodinâmica = fármaco em ação, causando mudanças."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Você agora entende que farmacocinética determina QUANDO o fármaco chega e QUANTO chega. Farmacodinâmica determina O QUÊ acontece quando chega. Um sem outro é inútil. Fármaco que não chega (cinética ruim) = nada acontece. Fármaco que chega mas em dose errada (dinâmica errada) = nada acontece ou acontecem efeitos colaterais. Conhecer ambas é conhecer farmacologia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Analogia Concreta — Corrente Elétrica como Amplificador Biológico"
+    },
+    {
+      "tipo": "analogia",
+      "analogia_texto": "Mecanismo fármaco-alvo é como circuito eletrônico com amplificadores em cascata.",
+      "mapeamento": [
+        {
+          "elemento_biologico": "Fármaco ligando a receptor",
+          "elemento_analogia": "Bateria fraca (1.5V) conectada a interruptor (receptor)",
+          "explicacao": "Entrada pequena (fármaco), mas consegue ligar sistema."
+        },
+        {
+          "elemento_biologico": "Receptor ativando proteína G",
+          "elemento_analogia": "Interruptor abre, pequena corrente flui, dispara transistor Q1",
+          "explicacao": "Primeira amplificação — voltagem pequena consegue controlar corrente maior."
+        },
+        {
+          "elemento_biologico": "Proteína G ativando adenilil ciclase",
+          "elemento_analogia": "Transistor Q1 liga segundo transistor Q2 (amplificador em cascata)",
+          "explicacao": "Segunda amplificação — sinal se propaga, amplificado em cada passo."
+        },
+        {
+          "elemento_biologico": "Adenilil ciclase produzindo 1000 cAMP por segundo",
+          "elemento_analogia": "Amplificador de poder que toma 1mA e sai 1A (1000x amplificação)",
+          "explicacao": "Uma molécula gera 1000 segundos mensageiros."
+        },
+        {
+          "elemento_biologico": "PKA fosforilando milhões de proteínas",
+          "elemento_analogia": "Amplificador final que toma sinal e dispara motor potente",
+          "explicacao": "Mudança microscópica vira ação macroscópica visível."
+        },
+        {
+          "elemento_biologico": "Efeito clínico — coração mais rápido, visível em paciente",
+          "elemento_analogia": "Motor ligado, roda girando, coisa acontecendo no mundo real",
+          "explicacao": "Cascata de amplificação vira ação clínica observável."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Diferença de eletrônica e biologia: em eletrônica, amplificadores causam ruído. Em biologia, há feedback — sistema pode se autorregular, pode desligar cascata, pode modular ganho. Isso torna biologia mais sofisticada e também mais susceptível a perturbação. Remédio pode desenrolar toda orquestra."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Imagens e Diagramas"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Receptor Passando por Mudança Conformacional",
+      "descricao": "Diagrama de GPCR (7 hélices transmembrana) em dois estados: inativo (basal/off) e ativo (ligand-bound/on). Estado inativo: receptor é compacto, hélices próximas, domínio intracelular forma 'bolsa' fechada, sem espaço para proteína G. Fármaco se aproxima do lado extracelular. Liga-se na bolsa de ligação (binding pocket) entre hélices 5, 6, 7. Ligação causa mudança conformacional visível — hélices 5, 6 se afastam ligeiramente, abrindo espaço intracelular. Domínio intracelular agora apresenta superfície de acoplamento clara (mostrada como 'doca' ou interface). Proteína G se acopla. Lado de fora: fármaco em rosa/vermelho. Lado de dentro: domínios de G proteína em azul e verde. Setas mostram movimento de hélices e reorganização de estrutura.",
+      "prompt_ia": "Structural comparison diagram of GPCR before and after ligand binding. Left panel (inactive state): GPCR shown as seven transmembrane alpha-helices spanning lipid bilayer (shown as gray region). Helices positioned close together, compact configuration. Intracellular C-terminal tail and intracellular loops shown as coiled structures with minimal surface for binding. Extracellular loops form shallow binding pocket between helices 5, 6, 7 (pocket shown as slight indentation, empty). Right panel (active state): Same GPCR with ligand bound. Ligand molecule shown in pink/red color within binding pocket between TM5, TM6, TM7 (shown as sphere or stick representation filling the pocket). Ligand binding causes conformational change: TM5 and TM6 visibly shift outward, creating larger outward-facing angle (compare to left panel - show 10-15 degree rotation with curved arrows). This movement opens the intracellular side. Intracellular loops and C-terminus reorganize, presenting docking surface (shown as complementary interface pattern - network of positive/negative charges, hydrophobic patches). G protein (heterotrimeric Gαβγ) shown docking in this interface on right panel - Gα shown in blue, Gβγ in green. GDP bound to Gα shown in left panel (nucleotide), GTP or nucleotide-free state shown in right panel. Arrows indicate: ligand entry from extracellular space, conformational change propagating through helices, opening of intracellular interface. Membrane shown as gray/white bilayer. Include color gradient showing activation state: cool colors (blue) for inactive, warm colors (red/orange) for active."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Cascata de Amplificação de Sinal — Cinco Níveis",
+      "descricao": "Diagrama vertical/horizontal mostrando amplificação exponencial de sinal através de cinco níveis. Nível 1 (Receptor): 1 fármaco liga a 1 receptor. Representado por 1 molécula de fármaco (rosa) em 1 proteína receptor (azul) na membrana (cinzento). Nível 2 (Proteína G): Receptor ativado recruta proteína G. 1 receptor → 5-10 proteínas G ativadas. Mostrado com 5 moléculas verdes (Gα) se afastando de 1 receptors azul. Amplificação: 10x. Nível 3 (Segundo Mensageiro): 5 proteínas G ativadas, cada uma ativa adenilil ciclase. 5 enzimas estão ativas. Cada enzima faz 1000 cAMP por segundo. 5 × 1000 = 5000 cAMP em segundos. Mostrado como explosão de pequenos triângulos/círculos amarelos representando cAMP. Amplificação: 1000x. Nível 4 (Proteína Cinase): 5000 cAMP = ativação de 500 moléculas de PKA. Cada PKA fosforila 10 proteínas. 500 × 10 = 5000 substratos fosforilados. Mostrado como proteínas laranja marcadas com fosfato (PO4 em amarelo). Amplificação: 10x. Nível 5 (Transcrição): 5000 proteínas fosforiladas incluem CREB. CREB ativa transcrição. Genes disparam síntese de proteínas novas. Alteração fenotípica: coração bate mais rápido, células se comportam diferente. Mostrado como núcleo com DNA desenrolado, mRNA sendo lido por ribossomas, novas proteínas sendo feitas. Total amplificação do nível 1 ao 5: 10 × 1000 × 10 = 100.000x. Um fármaco gera mudança de 100.000 proteínas.",
+      "prompt_ia": "Vertical cascade amplification diagram showing five-level signal transduction. Level 1 (Receptor Occupancy): Single ligand/drug molecule (pink/red) binding to single receptor (blue G-protein coupled receptor depicted as 7-helix bundle in gray membrane). Label: '1 ligand → 1 receptor occupied'. Level 2 (G-protein activation): Activated receptor recruiting G proteins (5-10 molecules shown as green Gα subunits separating from βγ dimers in blue). Arrows show release. Multiplicity shown increasing. Label: 'Amplification 10x'. Level 3 (Second messenger production): Multiple activated adenylyl cyclase enzymes (green cylinders) actively producing cAMP. Show explosion of small yellow circles/triangles (cAMP molecules) rising from level 2. One adenylyl cyclase produces 1000 cAMP/second. Label: 'Amplification 1000x'. Magnitude shown as progressively larger cloud of cAMP molecules in yellow. Level 4 (Protein kinase activation): cAMP activating PKA (Protein Kinase A shown as orange proteins with active site highlighted). PKA phosphorylating substrate proteins. Show multiple orange proteins with yellow phosphate groups (PO₄ symbols) being added. Label: 'Amplification 10x'. Level 5 (Transcriptional response): Phosphorylated transcription factors (CREB shown in orange with phosphate) entering nucleus, binding DNA, initiating transcription. Show DNA double helix being transcribed, mRNA exiting nucleus, ribosomes translating, new proteins being synthesized (purple/red new proteins accumulating). Clinical outcome shown: heart rate increase icon or beating heart symbol becoming more rapid. Overall amplification from Level 1 to Level 5: 100,000x label. Each level shown with multiplication arrow and number (×10, ×1000, etc.). Color progression from cool (blue) at input to warm (red/orange) at output indicates increasing activation state. Timeline: microseconds for receptor binding, milliseconds for G-protein, seconds for cAMP production, seconds to minutes for PKA, minutes to hours for transcriptional changes."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Comparação de Agonista, Antagonista, e Agonista Parcial",
+      "descricao": "Três painéis lado a lado, cada um mostrando receptor com ligante diferente. Painel 1 (Agonista Completo): Receptor inativo (azul claro) na esquerda. Agonista completo (molécula vermelha que parece com neurotransmissor natural) liga. Receptor muda de conformação para ativo (azul escuro), proteína G se acopla, sinal sai (seta verde para baixo). Número de receptores ativados: 100%. Resposta biológica: máxima (barra de resposta em verde cheio). Painel 2 (Antagonista): Receptor inativo na esquerda. Antagonista (molécula laranja diferente de neurotransmissor natural, maior ou com forma errada) liga. Receptor muda conformação para SEMI-ativa (azul médio), mas proteína G não consegue acoplar — interface errada, incompatível. Nenhum sinal sai. Número de receptores ativos: 0%. Resposta: nenhuma (barra vazia). Bloqueamento mostrado com símbolo de 'X'. Painel 3 (Agonista Parcial): Receptor inativo na esquerda. Agonista parcial (molécula amarela que é parecida mas não exatamente como natural) liga. Receptor muda conformação para MODERADAMENTE ativo (azul intermédio), proteína G consegue acoplar parcialmente. Sinal sai mas é metade. Número de receptores ativos: 50%. Resposta: intermediária (barra em amarelo/laranja até metade).",
+      "prompt_ia": "Side-by-side comparison panel of three receptor activation scenarios. All three show same GPCR architecture (7-helix bundle in gray membrane) in inactive baseline state (light blue) on the left of each panel. Panel 1 (Full Agonist): Natural neurotransmitter (green circles) OR agonist drug (red circles, similar structure to natural ligand) binding to receptor. Receptor undergoes maximal conformational change (shown as active state in dark blue, helices visibly reoriented). G protein docking interface fully formed and accessible (shown as complementary docking site pattern). G protein trimer (Gα in blue, Gβγ in green) fully docked and activated (GTP shown bound). Downstream signal arrow pointing down is thick and green, indicating full signal. At bottom: 'Response = 100%' shown as full green bar. Panel 2 (Antagonist): Different drug structure (orange molecule, clearly different from natural ligand - larger, different shape, poor complementarity) binding to receptor binding pocket. Receptor undergoes conformational change but not productive (shown as intermediate blue state, conformational change is 'wrong' - helices repositioned but not in way that enables G-protein binding). G-protein docking interface is misaligned, distorted, or inaccessible (shown as incompatible surface). G protein approaches but cannot dock (shown with X or red block symbol). No downstream signaling (arrow is thin, red, with X). At bottom: 'Response = 0%' shown as empty bar. Panel 3 (Partial Agonist): Drug with structure between natural ligand and antagonist (yellow molecule, partially similar to natural). Receptor undergoes intermediate conformational change (shown as medium blue, conformational change is partial - helices shift but not maximally). G-protein docking interface is partially formed (shown as incomplete/partial complementarity pattern). G protein docks but with weaker interaction (shown with partial binding, fewer contact points). Downstream signal arrow is thin and orange, indicating weak signal. At bottom: 'Response = 50%' shown as half-filled orange bar. Include legend showing ligand chemical structures, receptor conformational states color-coded (light blue=inactive, medium blue=partial, dark blue=active), and response intensity (color bar from empty to full)."
+    },
+    {
+      "tipo": "contrafactual",
+      "conteudo": "Se não houvesse amplificadores biológicos (se cada receptor ativado gerasse exatamente um efeito molecular, sem cascatas que multiplicam), qual seria a consequência? Resposta: Fármacos seriam inúteis em doses clínicas. Você precisaria de doses de 100x maiores para obter efeito mensurável. Mas dose 100x maior significaria toxicidade em sistemas que não são alvo (porque nenhum receptor é 100% específico). Agonista adrenérgico em dose que ativa 100% de receptores alfa também ativaria 5% de receptores beta (que não são alvo). Com amplificação, 5% de beta consegue causar taquicardia. Sem amplificação, 5% seria negligenciável. Cascatas de amplificação são aquilo que tornam fármacos potentes em DOSES baixas e específicos. Remédio é especial porque corpo tem amplificadores embutidos."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-001",
+        "tipo": "base_necessaria",
+        "descricao": "Farmacocinética estabeleceu 'quanto chega'. Farmacodinâmica depende de quantidade chegar corretamente."
+      },
+      {
+        "bloco_id": "s3-fisiologia-sinalização-celular",
+        "tipo": "base_necessaria",
+        "descricao": "Sinalização celular (receptores, proteínas G, second messengers) é pré-requisito para entender mecanismo."
+      },
+      {
+        "bloco_id": "s4-farma1-003",
+        "tipo": "contexto_direto",
+        "descricao": "SNA aplicou conceitos de farmacocinética e farmacodinâmica a sistema específico (adrenérgico). Este bloco generaliza."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Inibidores de Fosfofdiesterase — Bloqueio de Degradação de cAMP",
+        "mecanismo_conexao": "Se cAMP é segundo mensageiro crucial, fármaco que impede degradação de cAMP amplifica efeito (ex: sildenafil, cafeína)",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Inibidores de Kinase — Bloqueio de Fosforilação",
+        "mecanismo_conexao": "Se cascata inteira depende de fosforilação, bloquear kinase em qualquer nível corta sinal (ex: lapatinib para HER2)",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Tolerância e Dessensibilização — Por Que Fármacos Param de Funcionar",
+        "mecanismo_conexao": "Quando cascata é ativada cronicamente, célula desativa receptores (internalização), reduz expressão (downregulation), ativa fosfatases (para remover fosforilação). Efeito diminui mesmo com fármaco igual.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id": null,
+        "disciplina": "patologia",
+        "semestre_futuro": 5,
+        "topico": "Câncer — Oncogenes e Mutações em Receptores",
+        "mecanismo_conexao": "Se receptor está continuamente ativado (mutação), cascata está sempre 'ligada'. Célula cresce sem parar. Fármacos que bloqueiam receptor mutante (imatinib para BCR-ABL) conseguem desligar cascata.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id": null,
+        "disciplina": "semiologia",
+        "semestre_futuro": 5,
+        "topico": "Hipersensibilidade a Dose — Por Que Paciente Responde Tanto",
+        "mecanismo_conexao": "Se paciente tem mais receptores ou receptores super-sensíveis (por doença ou genética), mesma dose causa resposta exagerada (ex: hipertireoidismo causa sensibilidade a adrenérgicos).",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-002",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Farmacodinâmica é a 'segunda metade' de pharmacology. Primeiro aprendeu cinética (viagem), agora aprende dinâmica (ação)."
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "card_001",
+      "tipo": "por_que",
+      "pergunta": "Por que corpo consegue ter efeito potente de fármaco em DOSE BAIXA (nanogramas, microgramas) se uma molécula é invisível? Como quantidade tão pequena consegue fazer diferença mensurável?",
+      "resposta": "Porque corpo tem amplificadores biológicos em cascata. Um fármaco ligado a um receptor recruta proteína G. Uma proteína G ativa uma enzima. Uma enzima produz 1000 segundo mensageiros. Cada segundo mensageiro ativa kinase. Cada kinase fosforila 100 substratos. Em cascata: 1 fármaco → 1 receptor → 10 proteínas G → 100 enzimas → 1 MILHÃO segundo mensageiros → 100 MILHÃO proteínas fosforiladas. Uma molécula invisível vira 100 MILHÕES mudanças no corpo em minutos. Cascata é quem torna fármaco potente. Sem cascatas, precisaria de grama de aspirina pura para ter efeito. Com cascatas, 300mg funciona.",
+      "nivel_alvo": 5,
+      "dificuldade": 4
+    },
+    {
+      "id": "card_002",
+      "tipo": "mecanismo",
+      "pergunta": "Descreva em detalhe como fármaco que se liga a receptor consegue fazer célula mudar seu programa genético (ligar genes novos, desligar antigos). Qual é o 'fio' que conecta ligação molecular à transcrição?",
+      "resposta": "Fármaco liga a receptor → receptor muda conformação → proteína G é recrutada → proteína G ativa adenilil ciclase → adenilil ciclase produz cAMP → cAMP liga PKA → PKA muda conformação e se dissocia da subunidade regulatória → PKA ativa viaja para núcleo → PKA fosforila CREB (transcription factor) → CREB fosforilada muda conformação → CREB-P entra em DNA → CREB-P se liga a CRE (cAMP Response Element) em promotor de gene → CRE recruitment de maquinaria de transcrição (RNA pol II, fatores gerais) → genes começam a ser lidos. O 'fio' é a cascata de fosforilação. Cada passo é transferência de energia via fosfato (ATP é doado). Fio não quebra em nenhum passo porque cada etapa amplifica (10x, 1000x).",
+      "nivel_alvo": 5,
+      "dificuldade": 5
+    },
+    {
+      "id": "card_003",
+      "tipo": "contrafactual",
+      "pergunta": "Se célula NÃO tivesse segundo mensageiros (cAMP, IP3, Ca2+) e tudo era 'direto' (receptor ativado → transcrição imediata, sem amplificação intermediária), qual seria a diferença farmacodinâmica? Como paciente seria afetado?",
+      "resposta": "Sem segundo mensageiros, fármaco em dose baixa não causaria efeito (EC50 seria muito maior). Corpo precisaria de 100x a dose. Dose 100x maior significaria: (1) Toxicidade em receptores secundários — nenhum receptor é 100% específico; (2) Efeitos colaterais insuportáveis (agonista adrenérgico em dose alta causaria taquicardia, hipertensão, tremor severo); (3) Janela terapêutica desapareceria — dose efetiva seria próxima demais de dose tóxica. Com segundo mensageiros, amplifincação permite dose baixa + especificidade. Sem eles, medicamentos seriam inutilizáveis. Segundo mensageiros são aquilo que torna fármacos práticos clinicamente.",
+      "nivel_alvo": 4,
+      "dificuldade": 4
+    },
+    {
+      "id": "card_004",
+      "tipo": "clinico",
+      "pergunta": "Paciente em choque séptico tem pressão sanguínea 70/40 (hipotensão severa). Você prescreve noradrenalina (agonista de receptores alfa-1 e beta-1). Mecanismo: como noradrenalina consegue elevar pressão? Quais receptores estão envolvidos? Qual cascata intracelular?",
+      "resposta": "Noradrenalina é agonista endógeno (natural) que você está dando artificialmente em alta concentração IV. Liga-se a receptores alfa-1 em células musculares lisas de artérias e veias. Alfa-1 é GPCR acoplado a Gq/11. Receptor → Gq ativa fosfolipase C → PLC cliva PIP2 → gera IP3 + DAG → IP3 liga a receptor de IP3 em retículo endoplasmático → libera Ca2+ para citoplasma → Ca2+ ativa calmodulina → calmodulina ativa MLCK (myosin light chain kinase) → MLCK fosforila cadeia leve de miosina → miosina se acopla com actina → contração. Resultado: vasos contraem, volume vascular constante mas diâmetro reduz → resistência aumenta → pressão sobe. Efeito colateral: órgãos (rins, pulmões, intestino) ficam com fluxo reduzido (isquemia) — por isso noradrenalina é 'remédio de último recurso'.",
+      "nivel_alvo": 4,
+      "dificuldade": 4
+    },
+    {
+      "id": "card_005",
+      "tipo": "comparacao",
+      "pergunta": "Compare agonista completo, agonista parcial e antagonista em termos de afinidade, eficácia, e comportamento clínico. Qual você escolheria para cada situação?",
+      "resposta": "AGONISTA COMPLETO: Afinidade alta (liga bem), eficácia 100% (ativa totalmente). Máximo efeito possível. Problema: risco de overdose (efeito excessivo). Uso: quando você quer efeito máximo controlado (epinefrina em anafilaxia). AGONISTA PARCIAL: Afinidade alta, eficácia 50% (ativa parcialmente). Efeito intermediário. Vantagem: funciona como agonista quando corpo precisa (efeito baixo demanda sobe), como antagonista quando corpo está em excesso (efeito alto demanda desce). Menos efeitos colaterais. Uso: beta-bloqueadores com atividade simpaticomimética (arbutamina, pindolol) — paciente em repouso não tem bradicardia excessiva. ANTAGONISTA: Afinidade alta, eficácia 0% (bloqueia totalmente). Nenhum efeito próprio, apenas bloqueia efeito natural. Máxima segurança (não pode ser 'overdose' de um antagonista puro). Uso: bloqueio terapêutico quando você quer menos efeito (beta-bloqueador não-seletivo propranolol em hipertensão).",
+      "nivel_alvo": 4,
+      "dificuldade": 3
+    },
+    {
+      "id": "card_006",
+      "tipo": "armadilha",
+      "pergunta": "Verdadeiro ou Falso: Um fármaco que tem afinidade muito alta (Kd nanomolar) para seu receptor sempre terá efeito mais potente que fármaco com afinidade baixa (Kd micromolar). Justifique.",
+      "resposta": "FALSO. Afinidade não é o único determinante de potência clínica. Eficácia é igualmente importante (frequentemente mais). Exemplo: Morfina tem afinidade EXCELENTE (Kd ~1 nM) para opioide mu-receptor. Naloxona tem afinidade igualmente excelente (Kd ~0.5 nM) para mesmo receptor. Mas morfina é agonista (eficácia 100%) — causa analgesia massiva. Naloxona é antagonista (eficácia 0%) — bloqueia morfina. Em clínica, naloxona é usada para REVERTER overdose de morfina — ambas ligam com alta afinidade, mas eficácia oposta significa efeito clínico oposto. Afinidade determina QUANTO fármaco você precisa. Eficácia determina SE fármaco causa efeito ou apenas bloqueia. Ambas importam. Afinidade alta SEM eficácia = antagonista potente, não agonista potente.",
+      "nivel_alvo": 4,
+      "dificuldade": 4
+    },
+    {
+      "id": "card_007",
+      "tipo": "etimologia",
+      "pergunta": "Por que 'agonista' significa 'aquele que compete', quando o trabalho do agonista é ATIVAR receptor (parece trabalho de time, não de competição)? Revele a etimologia e a lógica do nome.",
+      "resposta": "Etimologia: 'agon' (grego) = luta, combate, competição. 'Agonista' = aquele que 'luta com' (junto). 'Antagonista' = aquele que 'luta contra' (oposto). Lógica: na sinapse, agonista compete com neurotransmissor natural pelo mesmo receptor. Se você dá agonista (por exemplo, isoprenalina, agonista beta-adrenérgico), está competindo com noradrenalina natural pelo receptor — agonista 'ganha' a competição porque você deu dose alta (farmacológica), eclipsa sinal natural. Nome reflete verdade: agonista não 'inventa' sinal — compete com sinal natural, ganha porque dose é maior. 'Ago' + 'nista' = 'aquele que luta com' o receptor, com o sistema natural. Nome é apropriado porque revela mecanismo: fármaco não cria, compete.",
+      "nivel_alvo": 3,
+      "dificuldade": 3
+    },
+    {
+      "id": "card_008",
+      "tipo": "sintese_transdisciplinar",
+      "pergunta": "Conecte três disciplinas: (1) Fisiologia — potencial de ação em fibra muscular depende de Ca2+ intracelular; (2) Farmacologia — beta-adrenérgicos aumentam cAMP; (3) Cardiologia — beta-bloqueadores reduzem força contrátil. Qual é o 'fio' que conecta fármaco ao efeito clínico na bomba cardíaca?",
+      "resposta": "FIO MECANÍSTICO: Beta-bloqueador (antagonista de beta-1-AR em cardiomiócito) impede noradrenalina de ligar ao beta-1. Sem ligação, sem ativação de Gs → sem aumento de cAMP. Sem cAMP, PKA fica inativa. PKA inativa = sem fosforilação de canais de Ca2+ tipo L no tubulo T. Canais sem fosforilação abrem MENOS. Menos abertura de Ca2+ = menos Ca2+ liberado do SR (via acoplamento EC). Menos Ca2+ intracelular = menos troponina C ligada a Ca2+ = menos exposição de sítios de ligação de miosina em actina = contração MAIS FRACA. Efeito clínico: frequência cardíaca desce (também porque PKA não fosforila canal AV — AV tarda mais), força contrátil desce (menos Ca2+ disponível), consumo de O2 do coração cai (porque força × frequência cai). CONEXÃO COMPLETA: fármaco antagonista → bloco de sinalização → redução de Ca2+ intracelular → redução de contração → redução de demanda de O2 → proteção em isquemia. Tudo via cascata de sinalização que aprendeu neste bloco.",
+      "nivel_alvo": 5,
+      "dificuldade": 5
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "caso_001_hipertiroideo",
+      "titulo": "Homem de 38 anos com taquicardia persistente e tremor",
+      "apresentacao": "Paciente chega ao pronto-socorro com queixa de 'coração acelerado' há 2 meses. Nega febre, nega infecção. Exame físico: frequência cardíaca 118/min em repouso (normal <100), tremor fino em dedos, sudorese aumentada, peso perdeu 5 kg em 2 meses sem tentar. ECG: taquicardia sinusal regular. TSH <0.01 (suprimido), T4 total 18 (elevado; normal 5-12). Diagnóstico presuntivo: hipertireoidismo (provavelmente doença de Graves).",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Glândula tireoide produz excesso de hormônio tireoides (T3, T4). Causa: doença autoimune (Graves) com anticorpos que ligam a receptor de TSH, ativam permanentemente tireoide."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Receptores adrenérgicos (especialmente beta-1 no coração) tornam-se 'hipersensíveis' a noradrenalina. Por quê? Hormônio tireoides aumenta número de receptores beta (upregulation) e aumenta sensibilidade deles. Também aumenta efetor downstream (mais cAMP, mais PKA expressão)."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Mesmo com noradrenalina normal (não elevada), célula cardíaca responde demais. Cascata de cAMP → PKA está em overdrive. Ca2+ intracelular permanentemente elevado. Canais de Ca2+ tipo L permanentemente abertos. Força de contração máxima o tempo todo, frequência cardíaca máxima. Cardiomiócito está 'estressado' e 'inflamado'."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Taquicardia (coração acelerado em repouso), palpitações (paciente sente batida), tremor (porque músculos esqueléticos também têm beta-2, hiperresponsivos), sudorese (glândula sudorípara inervada por simpático, também hiperresponsiva), perda de peso (metabolismo basal elevado — corpo queima tudo)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento: arritmia (fibrilação atrial por irritabilidade cardíaca crônica), insuficiência cardíaca de alta frequência (coração não consegue manter débito em frequência 140+ por horas), morte. Tratamento: beta-bloqueador (propranolol) bloqueia beta-1 → reduz sensibilidade do coração a noradrenalina → cAMP fica baixo → contração normaliza → frequência cai. Efeito é imediato (minutos). Defininitivo: drogas tireostáticas (PTU, metimazol) reduzem produção de hormônio tireoides → causa resolve. Efeito é lento (semanas). Beta-bloqueador é ponte terapêutica."
+        }
+      ],
+      "conexao_com_bloco": "Este caso ilustra MECANISMO fármaco-alvo de forma clínica. Hipertiroideo tem cascata de sinalização adrenérgica em OVERDRIVE. Beta-bloqueador impede a cascata (bloqueia receptores, reduz cAMP, reduz PKA). Resultado: efeito clínico visível em minutos. Sem entender mecanismo (receptores, Gs, adenilil ciclase, cAMP, PKA), médico apenas prescreve remédio. Com mecanismo claro, médico entende por que propranolol funciona, por que ECG melhora rapidamente, e por que é apenas tratamento 'temporário' (não cura causa).",
+      "disciplinas_relacionadas": [
+        "endocrinologia",
+        "cardiologia",
+        "clínica"
+      ],
+      "diagnostico_revelado": "Hipertireoidismo (doença de Graves). Confirmado por anticorpo anti-receptor de TSH (TSI positivo).",
+      "tratamento_resumido": "1º linha: beta-bloqueador (propranolol 80-120 mg/dia em 3 doses) — alívio sintomático em horas; 2º linha: tireostático (metimazol 30-40 mg/dia ou PTU 300-400 mg/dia) — remissão em 6-12 semanas; 3º linha se refratário: iodo radioativo (I-131) ou cirurgia. Propranolol é essencial porque reduz carga cardiovascular durante esperando que metimazol funcione."
+    },
+    {
+      "caso_id": "caso_002_refratario",
+      "titulo": "Mulher de 55 anos com hipertensão refratária a medicação",
+      "apresentacao": "Paciente com hipertensão por 10 anos. Já fez trial de: enalapril (ACE inibidor), hidroclorotiazida (diurético), amlodipina (bloqueador de canal de Ca2+). Nenhum conseguiu manter pressão <140/90. Agora pressão 160/100 apesar de tripla medicação. Encaminhada a 'especialista' para investigar causa secundária (porque refratária é suspeito de hipertensão secundária — feocromocitoma, hiperaldosteronismo, estenose de artéria renal).",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Estenose de artéria renal (descoberta em CT angiografia). Fluxo sanguíneo aos rim é reduzido. Rim 'pensa' que pressão sistêmica caiu (baroreceptor sente pressão baixa a nível renal). Rim libera renina."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Renina ativa angiotensinogênio → angiotensina II. Angiotensina II é agonista poderoso de receptor AT1 em células musculares lisas de artérias em todo corpo (não apenas no rim). Receptors AT1 são GPCR acoplados a Gq (como alpha-1-adrenérgico). Quando ativado, cascata vai: AT1 → Gq → PLC → IP3 → Ca2+ liberado → contração."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Células musculares lisas de artérias por todo corpo estão recebendo sinal de 'contraiam' permanentemente (angiotensina II está elevada cronicamente). Mesmo que você bloqueie beta-adrenérgicos (só bloqueia alpha-1, não afeta AT1), AT1 ainda está ativado. Vasos continuam contraídos. Pressão fica alta."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Hipertensão refratária. Paciente toma hidroclorotiazida (bloqueia reabsorção de sódio → menor volume circulante), enalapril (bloqueia formação de angiotensina II), amlodipina (bloqueia Ca2+). Nada funciona porque vasos têm 'hardware' de refratariedade — estenose de artéria renal que disparou tudo."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem correção: AVC, IAM, IRC (insuficiência renal crônica). Correção: revascularização de artéria renal (angioplastia com stent ou cirurgia). Resultado: fluxo renal restaura, baroreceptor renal sente pressão normal, renina para de ser liberada, angiotensina II cai, AT1 para de estar ativado, vasos relaxam, pressão cai. Medicações que antes não funcionavam agora funcionam (porque causa foi removida)."
+        }
+      ],
+      "conexao_com_bloco": "Este caso ilustra o inverso do hipertiroideo. Aqui, cascata de sinalização (angiotensina II → AT1 → Gq → contração) está hiperativa CRONICAMENTE. Medicações que bloqueiam componentes da cascata (ACE inibidor bloqueia formação de angiotensina II) não funcionam bem porque causa (estenose) ainda está lá, pressão ainda baixa no rim, renina ainda libera (feedback não normaliza). Entender mecanismo ajuda a reconhecer que 'refratário' não é 'resistente ao remédio' — é 'causa ainda presente'. Sem mecanismo, seria tentativa cega de adicionar mais drogas. Com mecanismo, diagnóstico de hipertensão secundária torna-se óbvio.",
+      "disciplinas_relacionadas": [
+        "fisiologia renal",
+        "cardiologia",
+        "radiologia"
+      ],
+      "diagnostico_revelado": "Hipertensão refratária secundária a estenose da artéria renal (fibrodisplasia muscular). Confirmado por CT angiografia.",
+      "tratamento_resumido": "Revascularização de artéria renal via angioplastia percutânea com stent (sucesso 70% em casos de fibrodisplasia). Após revascularização, pressão normaliza em 80% dos casos, medicações prévias agora funcionam. Paciente este caso respondeu com stent — pressão caiu para 140/85 em 2 semanas, medicações reduzidas para monoherapia."
+    }
+  ],
+  "procedencia": {
+    "gerado_por": "claude-haiku-4-5-20251001",
+    "data_geracao": "2026-07-03",
+    "revisado_por": "auto",
+    "data_revisao": "2026-07-03",
+    "nivel_confianca": "estudo"
+  },
+  "horizonte_validade": "em_mudanca",
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Fármacos causam efeitos porque 'entram em célula e mexem em tudo'",
+      "correcao": "Fármacos causam efeitos porque se ligam a RECEPTOR ESPECÍFICO. Sem receptor certo, fármaco passa despercebido. Receptor é 'chave', corpo é 'fechadura'.",
+      "armadilha_em_flashcard": true
+    },
+    {
+      "confusao": "Afinidade alta = potência alta = efeito clínico mais potente",
+      "correcao": "Afinidade determina DOSE necessária. Eficácia determina SE há efeito. Naloxona tem afinidade excelente (alta) mas zero efeito clínico (antagonista puro). Afinidade ≠ eficácia.",
+      "armadilha_em_flashcard": true
+    },
+    {
+      "confusao": "Um receptor ativado produz um efeito (relação 1:1)",
+      "correcao": "Um receptor ativado recruta cascata de amplificadores. Um receptor = 10 proteínas G = 100 enzimas = 1 MILHÃO segundo mensageiro = 100 MILHÃO proteínas mudadas. Amplificação exponencial é aquilo que torna fármacos potentes.",
+      "armadilha_em_flashcard": true
+    },
+    {
+      "confusao": "Antagonista não funciona porque 'não faz nada'",
+      "correcao": "Antagonista funciona BLOQUEANDO efeito natural. Em hipertensão, beta-bloqueador não 'faz pressão cair' — bloqueia noradrenalina de fazer pressão subir. Bloqueio é mecanismo efetivo.",
+      "armadilha_em_flashcard": true
+    },
+    {
+      "confusao": "Fármaco agonista funciona em qualquer dose — quanto mais, melhor",
+      "correcao": "Acima de EC50 (concentração que causa 50% efeito máximo), aumentar dose não aumenta efeito (platô). Aumentar apenas causa efeitos colaterais. Há dose máxima efetiva para agonista.",
+      "armadilha_em_flashcard": true
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "Receptor",
+      "termo_es": "Receptor",
+      "termo_en": "Receptor",
+      "abreviatura": "R"
+    },
+    {
+      "termo_pt": "Agonista",
+      "termo_es": "Agonista",
+      "termo_en": "Agonist",
+      "abreviatura": "Ag"
+    },
+    {
+      "termo_pt": "Antagonista",
+      "termo_es": "Antagonista",
+      "termo_en": "Antagonist",
+      "abreviatura": "Ag"
+    },
+    {
+      "termo_pt": "Proteína G",
+      "termo_es": "Proteína G",
+      "termo_en": "G protein",
+      "abreviatura": "GP"
+    },
+    {
+      "termo_pt": "Adenilil Ciclase",
+      "termo_es": "Adenilil Ciclasa",
+      "termo_en": "Adenylyl cyclase",
+      "abreviatura": "AC"
+    },
+    {
+      "termo_pt": "cAMP",
+      "termo_es": "cAMP",
+      "termo_en": "cAMP (cyclic adenosine monophosphate)",
+      "abreviatura": "cAMP"
+    },
+    {
+      "termo_pt": "Proteína Cinase A",
+      "termo_es": "Proteína Cinasa A",
+      "termo_en": "Protein Kinase A",
+      "abreviatura": "PKA"
+    },
+    {
+      "termo_pt": "Afinidade",
+      "termo_es": "Afinidad",
+      "termo_en": "Affinity",
+      "abreviatura": "Kd"
+    },
+    {
+      "termo_pt": "Eficácia",
+      "termo_es": "Eficacia",
+      "termo_en": "Efficacy",
+      "abreviatura": "E_max"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-03",
+      "autor": "claude-haiku-4-5-20251001",
+      "mudanca": "Primeiro bloco de Farmacodinâmica — mecanismo fármaco-alvo em detalhe",
+      "motivo": "Estrutura pedagógica de Farmacologia I requer bloco integrador após módulos de PK, SNA"
+    }
+  ]
+}

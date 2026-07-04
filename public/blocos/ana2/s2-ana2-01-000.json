@@ -7,53 +7,297 @@
     "s2-ana2-01-300",
     "s2-ana2-01-400"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s2-hist2-00-000",
+    "s2-emb-00-000",
+    "s1-ana1-00-000"
+  ],
   "metadata": {
     "titulo": "Sistema Cardiovascular — Visão Geral",
     "semestre": 2,
-    "disciplina": "Anatomia II — Vísceras, Pelve e Neuroanatomia",
+    "disciplina": "Anatomia II",
     "profundidade_arvore": 2,
+    "eh_raiz": false,
+    "status": "pronto",
+    "lentes": ["funcao_fisiologia", "morfologia_forma"],
+    "escopo": "Por que um corpo grande precisa de bomba e rede fechada de tubos",
+    "tempo_estimado_min": 11,
+    "versao_schema": "3.0",
+    "gerado_por": "produtor-bloco-anima",
+    "data_geracao": "2026-07-03",
+    "data_ultima_revisao": "2026-07-03",
+    "versao": "1.0",
+    "tags": ["ana2", "cardiovascular", "visao-geral", "circulacao", "bomba"],
+    "nivel": "CORE",
+    "tipo": "conceito",
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "ana2",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
+    "horizonte_validade": "estavel",
+    "estado_ciclo_vida": "pronto",
+    "nivel_aceitacao": "completo"
   },
-  "resumo_conciso": "Por que um corpo grande precisa de bomba e rede fechada de tubos",
-  "narrativa": [],
+  "resumo_conciso": "No nó pai, o tórax era a 'usina de energia' e a bomba da cidade murada. Agora entramos na primeira dessas máquinas. Comece por um fato desconfortável: cada célula do seu corpo precisa receber oxigênio e nutrientes e se livrar do lixo que produz — a cada segundo, sem pausa. Numa criatura minúscula, isso se resolve sozinho: as moléculas simplesmente atravessam a superfície e chegam onde precisam por difusão. Mas você não é minúsculo. Você tem dezenas de trilhões de células, muitas delas a mais de um metro do ar e da comida. A difusão, sozinha, levaria anos para atravessar essa distância — e suas células morreriam em minutos. Aí está o problema que dá origem a todo o sistema cardiovascular: como abastecer trilhões de células que estão longe demais para se abastecerem sozinhas? A resposta dos vertebrados foi construir uma rede de entrega — canos fechados que levam um fluido carregado até a porta de cada célula — e colocar no centro dela uma bomba que nunca desliga. Este bloco monta essa lógica de baixo para cima, antes de você dar nome a qualquer artéria.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Faça uma experiência mental. Pingue uma gota de tinta na beira de um copo de água parada e cronometre quanto tempo ela leva para colorir o lado oposto sozinha, sem você mexer. Numa distância de poucos centímetros já são minutos; numa banheira, seriam horas. Esse espalhamento lento e espontâneo, movido apenas pelo empurra-empurra das moléculas, é a difusão. E é exatamente assim que o oxigênio precisaria chegar até uma célula lá no fundo da sua coxa se não houvesse mais nada ajudando."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Agora o dado que transforma isso num problema de vida ou morte: a difusão funciona muito bem em distâncias curtíssimas, da ordem de frações de milímetro, e fica desastrosamente lenta à medida que a distância cresce. Uma bactéria ou uma pequena larva se vira só com difusão — toda a sua superfície toca a água, e nenhuma célula está longe do lado de fora. Mas o seu corpo tem cerca de um metro e meio de comprimento e trilhões de células empilhadas em camadas espessas. A célula no centro de um músculo da sua panturrilha está a uma distância monstruosa, em escala molecular, do próximo bolsão de ar nos pulmões. Se ela dependesse da difusão pura para receber oxigênio, morreria em poucos minutos de asfixia interna, muito antes de a primeira molécula chegar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Se cada célula precisa de entrega e nenhuma consegue buscar sozinha, como abastecer um corpo grande inteiro?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A saída não é acelerar a difusão — não dá para trapacear a física. A saída é encurtar a distância que ela precisa vencer. E o truque para isso é levar a fonte até perto de cada célula, em vez de esperar que a célula alcance a fonte. Imagine que, em vez de deixar a tinta se espalhar sozinha pelo copo, você a bombeasse por dentro de milhares de tubinhos finíssimos que passam a menos de um fio de cabelo de cada ponto do líquido. Agora a difusão só precisa atravessar essa última fração de milímetro — e nisso ela é rapidíssima. Foi essa a solução dos vertebrados: um sistema de transporte por convecção (fluido empurrado em massa) que faz o trabalho pesado da longa distância, entregando o fluido bem na vizinhança de cada célula, onde a difusão então fecha o último passo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para esse esquema funcionar, três peças precisam existir ao mesmo tempo, e nenhuma serve sem as outras duas. Primeiro, um fluido de carga — o sangue — capaz de dissolver e transportar oxigênio, nutrientes, hormônios, calor e resíduos. Segundo, uma rede de canos que leve esse fluido a todo canto do corpo e o traga de volta, sem deixá-lo se perder pelo caminho: é a rede vascular, fechada em circuito. Terceiro, algo que empurre o fluido com força suficiente para vencer o atrito dos canos e completar a volta inteira: uma bomba, o coração. Fluido, tubos e bomba: tire qualquer um e o sistema todo para."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O detalhe que muita gente não percebe: nos vertebrados, a rede é fechada. O sangue nunca sai dos vasos para banhar os tecidos diretamente — ele fica sempre dentro dos canos, e a troca com as células acontece através das paredes finíssimas dos menores deles, os capilares. Rede fechada significa pressão controlada, direção garantida e entrega dirigida a quem precisa, em vez de um fluido solto encharcando tudo ao acaso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que fechada e não aberta? Alguns animais, como muitos insetos, têm sistema aberto: o coração joga o líquido numa cavidade e ele escorre por entre os órgãos, banhando-os por fora antes de voltar. Funciona para bichos pequenos e de metabolismo modesto. Mas um sistema aberto é lento e tem pressão baixa — não há como direcionar mais sangue para o músculo que está trabalhando e menos para o intestino que está em repouso. Um corpo grande, quente e faminto por oxigênio como o seu precisa de pressão alta e de controle fino de para onde o sangue vai a cada instante. Só uma rede fechada e pressurizada entrega isso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Agora repare como a forma de cada peça já denuncia a função dela — esta é a segunda lente deste bloco. Os canos não são todos iguais: os que saem da bomba, sob pressão alta, têm paredes grossas e elásticas para aguentar o tranco e não estourar — são as artérias. Os que voltam, sob pressão baixa, têm paredes finas e são mais fáceis de espremer — são as veias. E os do meio, onde acontece a entrega, têm parede de uma célula só de espessura, justamente para que a difusão vença o último passo sem obstáculo — são os capilares. A parede de cada vaso é a resposta física à pressão e à tarefa que ele enfrenta. Você vai reencontrar essa lógica em cada nó filho: sempre que a forma parecer arbitrária, pergunte qual pressão ou qual tarefa a esculpiu."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, ancore o essencial. O sistema cardiovascular não existe porque 'todo corpo tem um coração'. Ele existe para resolver um problema de escala: trilhões de células longe demais da fonte para se abastecerem por difusão. Bomba, tubos e sangue são a resposta a esse problema — não um enfeite anatômico. Se você guardar a pergunta, cada peça que vier depois vai parecer inevitável, e não uma lista para decorar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "E por que uma bomba com quatro câmaras, e não uma bolsa simples que aperta? Porque o seu sangue faz, na verdade, dois trajetos diferentes que não podem se misturar: um curto, até os pulmões, para pegar oxigênio e largar gás carbônico; e um longo, até o corpo inteiro, para entregar esse oxigênio. Se houvesse uma câmara só, o sangue já oxigenado se misturaria ao que ainda precisa de oxigênio, e a entrega seria medíocre. Ter câmaras separadas — um lado que manda o sangue para o pulmão e outro que o manda para o corpo — mantém os dois circuitos limpos e em série, de modo que todo o sangue passa pelo pulmão antes de ir ao corpo. Guarde essa ideia dos dois circuitos: é a espinha dorsal do nó filho sobre o coração."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vêm as palavras que dão nome a tudo isso?"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Cardiovascular",
+      "origem": "Do grego 'kardía' (καρδία, coração) somado ao latim 'vasculum', diminutivo de 'vas' (vaso, recipiente). Literalmente, 'do coração e dos vasinhos'.",
+      "explicacao": "O próprio nome do sistema já carrega suas duas peças inseparáveis: a bomba (kardía) e a rede de tubos (vascular). Não existe um sem o outro — um coração sem canos não entrega nada, e canos sem bomba não movem nada. A palavra é, ela mesma, um resumo da solução: bomba mais rede."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Capilar",
+      "origem": "Do latim 'capillaris', 'relativo ao cabelo', de 'capillus' (cabelo, fio).",
+      "explicacao": "Os menores vasos foram batizados assim porque são finos como um fio de cabelo. Mas o nome esconde a razão de existirem: é justamente por serem tão finos, com parede de uma célula só, que permitem à difusão vencer o último passo até a célula. A finura não é acaso estético — é a condição física da entrega. O nome descreve a forma; a forma existe por causa da função."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚚",
+      "conteudo": "Pense numa cidade grande demais para que cada morador vá ele mesmo até o campo buscar comida e água. A solução é uma rede de entrega: caminhões carregados saem de um centro de distribuição, correm por avenidas largas até os bairros, entram em ruas cada vez mais estreitas e finalmente param em becos onde deixam a encomenda na porta de cada casa — e só o último metro é feito a pé. Sem essa rede, a cidade morre de fome mesmo com comida de sobra a poucos quilômetros. **Mapeamento explícito:** o centro de distribuição que impulsiona tudo = o coração; os caminhões carregados = o sangue e o que ele transporta; as avenidas largas de saída, sob tráfego intenso = as artérias; os becos estreitos onde a encomenda é entregue na porta = os capilares; as ruas de retorno, vazias, levando os caminhões de volta = as veias; a entrega final a pé, no último metro = a difusão através da parede do capilar até a célula. **Onde a analogia quebra:** numa cidade, cada caminhão escolhe seu destino; no corpo, o sangue não 'decide' para onde ir — quem controla a distribuição é o calibre dos vasos e a abertura de esfíncteres, ajustados por sinais nervosos e hormonais que não têm equivalente num motorista com GPS. Além disso, o coração empurra o sangue em pulsos rítmicos, não num fluxo constante como uma frota saindo o dia inteiro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Com esse mapa na cabeça, os quatro nós filhos deste bloco deixam de ser tópicos soltos e viram partes de uma mesma máquina. Um deles abre a bomba — o coração e suas quatro câmaras. Outro percorre os canos de saída sob pressão — as artérias. Outro, os canos de retorno e os becos de entrega — veias e capilares. E o último costura os dois circuitos, o pulmonar curto e o sistêmico longo, mostrando como o sangue faz a volta completa. Em cada um, as mesmas duas perguntas do nó pai reaparecem, agora afiadas: para que serve esta peça, e por que ela tem exatamente esta forma?"
+    },
+    {
+      "tipo": "imagem",
+      "id": "s2-ana2-01-000-img-01",
+      "titulo": "O problema da escala: difusão versus rede de entrega",
+      "descricao": "Uma imagem conceitual em duas metades. À esquerda, um organismo minúsculo (uma célula ou pequena larva) imerso em água, com setas curtas mostrando o oxigênio atravessando sua superfície diretamente por difusão — legenda 'pequeno: a difusão basta'. À direita, uma silhueta humana com um único músculo profundo destacado bem no centro do corpo, e uma seta longa e vermelha atravessada por um 'X', indicando que a difusão pura não alcança essa distância a tempo — legenda 'grande: a difusão sozinha falha'. O contraste fixa de imediato por que só um corpo grande precisa de sistema de transporte.",
+      "prompt_ia": "Conceptual biology illustration split in two halves side by side, left half shows a tiny single-celled organism or small larva immersed in water with short arrows of oxygen diffusing directly across its surface, labeled 'small: diffusion is enough', right half shows a human silhouette with a single deep muscle highlighted in the center of the body and a long red arrow crossed out with an X showing pure diffusion cannot reach it in time, labeled 'large: diffusion alone fails', clean modern educational style, muted scientific palette, neutral background, Brazilian Portuguese labels, high clarity",
+      "origem": "esquema"
+    },
+    {
+      "tipo": "imagem",
+      "id": "s2-ana2-01-000-img-02",
+      "titulo": "As três peças e o circuito fechado",
+      "descricao": "Um esquema simplificado do circuito cardiovascular fechado, sem detalhes anatômicos excessivos. No centro, uma bomba estilizada de quatro câmaras (o coração). Dela saem canos de parede grossa e vermelha (artérias) que se ramificam progressivamente até virarem uma malha finíssima de vasos (capilares) onde pequenas setas mostram a troca com as células dos tecidos. Da malha partem canos de parede fina e azul (veias) que retornam à bomba. Um pequeno desvio no topo passa pelos pulmões, evidenciando os dois circuitos. Rótulos apontam as três peças essenciais: bomba, rede de tubos e sangue, mais os três calibres de vaso (artéria, capilar, veia) com a espessura de parede visível em cada um.",
+      "prompt_ia": "Clean simplified diagram of the closed cardiovascular circuit, textbook style, central stylized four-chambered heart pump, thick-walled red arteries branching progressively into a fine mesh of thin capillaries where small arrows show exchange with tissue cells, thin-walled blue veins returning to the pump, a small loop at the top passing through the lungs to show the two circuits (pulmonary and systemic), labels pointing to the three essential parts: pump, tube network, blood, plus the three vessel calibers (artery, capillary, vein) with visible wall thickness differences, muted anatomical palette, neutral background, Brazilian Portuguese labels, educational clarity, not overly detailed",
+      "origem": "esquema"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s2-ana2-01-000-fc1",
+      "tipo": "por_que",
+      "pergunta": "Por que um organismo minúsculo dispensa sistema cardiovascular, mas um corpo humano não?",
+      "resposta": "Porque a difusão só é eficiente em distâncias curtíssimas (frações de milímetro) e fica desastrosamente lenta em distâncias maiores. Num organismo minúsculo, toda célula está perto da superfície, e a difusão basta. No corpo humano, células no centro de tecidos espessos estão a distâncias enormes, em escala molecular, da fonte de oxigênio — morreriam de asfixia interna antes de a difusão pura alcançá-las. O problema não é biológico, é de escala.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["escala", "difusao", "fundacao"]
+    },
+    {
+      "card_id": "s2-ana2-01-000-fc2",
+      "tipo": "mecanismo",
+      "pergunta": "Como o sistema cardiovascular contorna a lentidão da difusão, já que não é possível acelerá-la?",
+      "resposta": "Ele não acelera a difusão — encurta a distância que ela precisa vencer. Um transporte por convecção (fluido empurrado em massa pela bomba) faz o trabalho pesado da longa distância, entregando o sangue bem na vizinhança de cada célula. Ali, nos capilares, a difusão só precisa atravessar uma fração de milímetro, tarefa em que é rapidíssima. A difusão fecha apenas o último passo; a convecção cobre todo o resto.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["mecanismo", "conveccao", "difusao"]
+    },
+    {
+      "card_id": "s2-ana2-01-000-fc3",
+      "tipo": "mecanismo",
+      "pergunta": "Quais são as três peças essenciais do sistema cardiovascular e por que nenhuma funciona sem as outras?",
+      "resposta": "Um fluido de carga (o sangue), que transporta oxigênio, nutrientes, hormônios, calor e resíduos; uma rede fechada de tubos (os vasos), que leva o fluido a todo canto e o traz de volta sem perdê-lo; e uma bomba (o coração), que empurra o fluido com força suficiente para vencer o atrito e completar o circuito. Tire o fluido e não há o que transportar; tire os tubos e o fluido se perde; tire a bomba e nada se move. As três são interdependentes.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["componentes", "integracao", "bomba-tubos-fluido"]
+    },
+    {
+      "card_id": "s2-ana2-01-000-fc4",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença entre um sistema circulatório aberto e um fechado, e por que um corpo grande e ativo exige o fechado?",
+      "resposta": "No sistema aberto (comum em insetos), o coração joga o líquido numa cavidade e ele escorre banhando os órgãos por fora antes de voltar — funciona com pressão baixa e sem direcionamento. No sistema fechado (vertebrados), o sangue permanece sempre dentro dos vasos, com pressão controlada e direção garantida, trocando com os tecidos apenas através das paredes finas dos capilares. Um corpo grande, quente e faminto por oxigênio precisa de pressão alta e de controle fino de para onde o sangue vai — só a rede fechada e pressurizada entrega isso.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["comparacao", "aberto-fechado", "pressao"]
+    },
+    {
+      "card_id": "s2-ana2-01-000-fc5",
+      "tipo": "por_que",
+      "pergunta": "Por que a parede de uma artéria é grossa e elástica, a de uma veia é fina, e a de um capilar tem só uma célula de espessura?",
+      "resposta": "A forma responde à tarefa física de cada vaso. A artéria sai da bomba sob pressão alta, então precisa de parede grossa e elástica para aguentar o tranco sem estourar. A veia retorna sob pressão baixa, então parede fina basta. O capilar é o local da entrega: a parede de uma célula só existe justamente para que a difusão vença o último passo até a célula sem obstáculo. Em cada caso, a espessura da parede é a resposta à pressão e à função — nunca arbitrária.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["forma-funcao", "vasos", "morfologia"]
+    },
+    {
+      "card_id": "s2-ana2-01-000-fc6",
+      "tipo": "por_que",
+      "pergunta": "Por que a bomba cardíaca tem câmaras separadas em vez de ser uma bolsa única que aperta?",
+      "resposta": "Porque o sangue percorre dois trajetos que não podem se misturar: um curto, até os pulmões, para captar oxigênio e largar gás carbônico; e um longo, até o corpo, para entregar esse oxigênio. Uma câmara única misturaria o sangue já oxigenado com o que ainda precisa de oxigênio, tornando a entrega medíocre. Câmaras separadas — um lado para o pulmão, outro para o corpo — mantêm os dois circuitos limpos e em série, garantindo que todo o sangue passe pelo pulmão antes de ir ao corpo.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["coracao", "dois-circuitos", "camaras"]
+    },
+    {
+      "card_id": "s2-ana2-01-000-fc7",
+      "tipo": "contrafactual",
+      "pergunta": "Se a rede vascular fosse aberta em vez de fechada, o que o corpo perderia mesmo mantendo bomba e sangue?",
+      "resposta": "Perderia pressão alta e controle de destino. Com o sangue solto banhando os tecidos ao acaso, não haveria como direcionar mais fluxo ao músculo em esforço e menos ao intestino em repouso, nem como manter a pressão necessária para atravessar rapidamente distâncias longas. A entrega seria lenta e indiscriminada — inviável para um corpo grande, quente e de alta demanda metabólica, que depende de ajustar a distribuição instante a instante.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["contrafactual", "rede-fechada", "controle"]
+    },
+    {
+      "card_id": "s2-ana2-01-000-fc8",
+      "tipo": "etimologia",
+      "pergunta": "A palavra 'capilar' vem do latim 'capillus' (cabelo). Como esse nome, além de descrever a forma, aponta para a função do vaso?",
+      "resposta": "O nome descreve a forma — o vaso é fino como um fio de cabelo. Mas essa finura extrema não é acaso estético: é a condição física da entrega. Só uma parede de uma célula de espessura permite que a difusão vença o último passo do sangue até a célula sem obstáculo. Assim, a mesma característica que dá nome ao vaso (ser finíssimo) é a que o habilita a cumprir sua função (permitir a troca). Forma e função coincidem no próprio nome.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["etimologia", "capilar", "forma-funcao"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s2-ana2-01-000-caso-01",
+      "titulo": "O músculo que gritou por sangue",
+      "apresentacao": "Um homem de 58 anos, fumante de longa data, procura o pronto-socorro com dor forte e em aperto no peito que começou há 40 minutos enquanto ele subia uma ladeira carregando compras. A dor não passou com o repouso e se irradia para o braço esquerdo. Ele está pálido, suado e ansioso.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Uma placa de gordura acumulada ao longo dos anos estreitou uma das artérias que alimentam o próprio músculo do coração (artéria coronária). Sobre esse estreitamento, formou-se um coágulo que bloqueou quase por completo a passagem do sangue naquele cano."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A estrutura afetada é uma artéria coronária — um cano de saída, sob pressão, que deveria entregar sangue oxigenado a uma região do músculo cardíaco. Lembre da lógica do bloco: é justamente por ser uma rede fechada e ramificada que cada pedaço do coração depende de um ramo específico; se aquele ramo entope, só a difusão restaria para socorrer as células, e ela não alcança a tempo."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem o fluxo por convecção, as células musculares daquele território ficam a uma distância impossível da fonte de oxigênio. A difusão sozinha não dá conta, e elas entram em sofrimento por falta de oxigênio (isquemia). O músculo, privado de combustível, começa a falhar e a acumular resíduos que irritam suas terminações sensitivas."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Daí a dor em aperto no peito, desencadeada pelo esforço (quando a demanda de oxigênio do coração sobe e o cano estreitado não dá conta) e que não cede com o repouso quando o bloqueio é grave. A irradiação para o braço esquerdo reflete o modo como o cérebro interpreta os sinais de dor vindos do coração."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Entender que o problema é uma falha de entrega — sangue que não chega porque o cano fechou — orienta toda a conduta: é preciso reabrir ou contornar o cano com urgência para restaurar o fluxo por convecção antes que aquele pedaço de músculo morra de vez. A lógica de 'bomba, tubos e a distância que a difusão não vence' é literalmente o que está em jogo à beira do leito."
+        }
+      ],
+      "diagnostico_revelado": "O quadro corresponde a um **infarto agudo do miocárdio** — a morte de uma parte do músculo cardíaco por bloqueio de uma artéria coronária. É a falha, no órgão mais central do sistema, exatamente do princípio deste bloco: a entrega de sangue por uma rede fechada e pressurizada.",
+      "tratamento_resumido": "Restabelecer o fluxo com urgência — por medicamentos que dissolvem o coágulo ou por um cateter que reabre o cano (angioplastia). Compreender que o coração, apesar de ser a bomba, também é um músculo que precisa ser abastecido pela mesma lógica de convecção que ele impõe ao resto do corpo é o que torna o quadro inteligível."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s2-ana2-00-000",
+        "titulo": "Anatomia II — Visão Geral da Disciplina",
+        "relevancia": "base_necessaria"
+      },
+      {
+        "bloco_id": "s1-ana1-00-000",
+        "titulo": "Anatomia I — Sistema Locomotor e terminologia de posição",
+        "relevancia": "base_necessaria"
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Fisiologia Cardiovascular (pressão, débito, resistência)",
+        "mecanismo_conexao": "A lógica de bomba, tubos e pressão montada aqui é o alicerce direto sobre o qual a fisiologia constrói débito cardíaco, resistência vascular e regulação da pressão arterial"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Aterosclerose e doença coronariana",
+        "mecanismo_conexao": "Doença de um cano de entrega: entender que cada território depende de um ramo específico de uma rede fechada explica por que o entupimento de uma artéria mata um pedaço preciso de tecido"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Semiologia cardiovascular (pulso, pressão arterial, ausculta)",
+        "mecanismo_conexao": "Medir pulso e pressão é ler diretamente o comportamento da bomba e dos canos pressurizados descritos neste bloco"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Sistema respiratório e a hematose",
+        "mecanismo_conexao": "O circuito pulmonar curto só faz sentido acoplado ao pulmão; a troca de gases nos capilares pulmonares é o encontro dos dois sistemas 'usina' do nó pai"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s2-hist2-00-000",
+        "titulo": "Histologia II — Parede dos vasos e músculo cardíaco",
+        "relevancia": "complementar"
+      },
+      {
+        "bloco_id": "s2-emb-00-000",
+        "titulo": "Embriologia dos sistemas — formação do coração e dos vasos",
+        "relevancia": "explicativa"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s2-ana2-01-000-img-01",
+        "titulo": "O problema da escala: difusão versus rede de entrega",
+        "origem": "esquema"
+      },
+      {
+        "id": "s2-ana2-01-000-img-02",
+        "titulo": "As três peças e o circuito fechado",
+        "origem": "esquema"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "pronto",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "produtor-bloco-anima",
+    "data_geracao": "2026-07-03",
+    "revisado_por": "integrador-anima",
+    "data_revisao": "2026-07-03",
+    "nivel_confianca": "completo"
   },
-  "fontes": [],
-  "_lentes": [
-    "funcao-fisiologia",
-    "morfologia/forma"
-  ]
+  "fontes": []
 }

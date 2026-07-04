@@ -1,62 +1,209 @@
-{
-  "resumo_id": "s2-imuno-01-000",
-  "no_pai_id": "s2-imuno-00-000",
-  "nos_filhos_ids": [
-    "s2-imuno-01-001",
-    "s2-imuno-01-002",
-    "s2-imuno-01-003",
-    "s2-imuno-01-004",
-    "s2-imuno-01-005",
-    "s2-imuno-01-006",
-    "s2-imuno-01-007"
-  ],
-  "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Módulo 1 — Visão Geral do Sistema Imune",
-    "semestre": 2,
-    "disciplina": "Imunologia",
-    "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "imuno",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Panorama: o problema da defesa, divisoes da imunidade e orgaos linfoides",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "correlacao_clinica"
-  ]
+﻿{
+    "resumo_id":  "s2-imuno-01-000",
+    "no_pai_id":  "s1-intro-sistema-imune",
+    "nos_filhos_ids":  [
+                           "s2-imuno-02-000",
+                           "s2-imuno-03-000"
+                       ],
+    "conexoes_laterais_ids":  [
+                                  "s2-imuno-04-000"
+                              ],
+    "titulo":  "Barreiras Naturais e Imunidade Inata",
+    "semestre":  2,
+    "disciplina":  "imunologia",
+    "profundidade_arvore":  2,
+    "status":  "em_producao",
+    "author":  "Claude",
+    "data_criacao":  "2026-07-03",
+    "horizon_validade":  "2027-06-30",
+    "procedencia":  "ANIMA-Med Semestre 2",
+    "estado_ciclo_vida":  "bloco_estavel",
+    "resumo_conciso":  "Seu corpo nÃ£o espera por inimigos â€” ele jÃ¡ estÃ¡ fechado. Antes mesmo de qualquer defensor celular entrar em aÃ§Ã£o, hÃ¡ muros invisÃ­veis que barram bactÃ©rias, vÃ­rus e toxinas. Pele, muco, enzimas, flora bacteriana: camadas simples mas impenetrÃ¡veis. E quando algo consegue furar esse cerco? MastÃ³citos, macrÃ³fagos teciduais e proteÃ­nas do complemento acordam instantaneamente, sem aviso prÃ©vio, sem preparaÃ§Ã£o. Essa Ã© a imunidade inata: rÃ¡pida, genÃ©rica, sempre de guarda.",
+    "narrativa":  [
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "Imagine que vocÃª Ã© o guardiÃ£o de um castelo. VocÃª poderia patrulhar cada corredor constantemente, esperando intrusos. Mas seria cansativo, caro, ineficiente. EntÃ£o vocÃª constrÃ³i muros altos, portas reforÃ§adas, fossos profundos. A maioria dos inimigos nunca chega perto. Os que conseguem escalar? Seus soldados mais prÃ³ximos os enfrentam imediatamente, sem consultar o rei. Seu corpo faz exatamente isso."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "Por que o corpo nÃ£o apenas confia em linfÃ³citos?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "LinfÃ³citos sÃ£o precisos mas lentos. Levam dias para ativar. Enquanto isso, uma bactÃ©ria que penetrou a pele jÃ¡ se multiplicaria milhÃµes de vezes. A imunidade inata foi a soluÃ§Ã£o evolutiva: defesas instantÃ¢neas que funcionam contra padrÃµes moleculares que praticamente todo invasor possui. NÃ£o precisa de memÃ³ria, nÃ£o precisa de aprendizado. Funciona na primeira exposiÃ§Ã£o."
+                      },
+                      {
+                          "tipo":  "pausa",
+                          "conteudo":  "Checkpoint: as barreiras fÃ­sicas (pele, muco) sÃ£o a primeira linha. Se um patÃ³geno as atravessar, a imunidade inata â€” cÃ©lulas teciduais e proteÃ­nas circulantes â€” Ã© a segunda."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "Como a pele consegue ser impermeÃ¡vel apesar de ser flexÃ­vel?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "A epiderme forma uma barreira de queratina que seca rapidamente. BactÃ©rias nÃ£o podem penetrar seco; precisam de umidade. AlÃ©m disso, hÃ¡ lipÃ­dios naturais na superfÃ­cie que repelem Ã¡gua â€” e micro-organismos aquosos nÃ£o conseguem atravessar. A pele tambÃ©m se regenera: qualquer lesÃ£o Ã© selada em horas. JÃ¡ o muco das mucosas (boca, pulmÃ£o, intestino) contÃ©m lisozima, uma enzima que quebra as paredes bacterianas. Ã‰ como ter uma linha de defesa que nÃ£o sÃ³ bloqueia, como corrÃ³i o inimigo."
+                      },
+                      {
+                          "tipo":  "highlight",
+                          "conteudo":  "REGRA CRÃTICA: 99% dos patÃ³genos nunca penetram as barreiras naturais. InfecÃ§Ãµes sÃ©rias comeÃ§am sempre com um rombo nela â€” ferida, aspiraÃ§Ã£o, inserÃ§Ã£o de cateter."
+                      },
+                      {
+                          "tipo":  "secao",
+                          "conteudo":  "E se o invasor conseguir passar da barreira?"
+                      },
+                      {
+                          "tipo":  "texto",
+                          "conteudo":  "MastÃ³citos e macrÃ³fagos residentes jÃ¡ estÃ£o esperando nos tecidos. Eles reconhecem molÃ©culas que diferenciam \u0027prÃ³prio\u0027 de \u0027estranho\u0027: lipopolissacarÃ­deos bacterianos, paredes fÃºngicas, RNA viral dupla-fita. Quando um desses padrÃµes Ã© detectado, mastÃ³citos liberam histamina (causa inflamaÃ§Ã£o local), macrÃ³fagos engolem o invasor. Simultaneamente, uma proteÃ­na chamada complemento Ã© ativada no sangue â€” uma cascata de reaÃ§Ãµes que marca o patÃ³geno para destruiÃ§Ã£o e recruta mais defensores."
+                      },
+                      {
+                          "tipo":  "pausa",
+                          "conteudo":  "ConsolidaÃ§Ã£o: barreiras fÃ­sicas â†’ detecÃ§Ã£o rÃ¡pida â†’ inflamaÃ§Ã£o local â†’ morte do invasor. Tudo acontece em minutos, sem memÃ³ria imunolÃ³gica."
+                      },
+                      {
+                          "tipo":  "analogia",
+                          "conteudo":  "A imunidade inata Ã© como um sistema de alarme sensÃ­vel: toca alto, chama os bombeiros, extingue o fogo. A pele Ã© o muro. MastÃ³citos e macrÃ³fagos sÃ£o os bombeiros. Complemento Ã© a Ã¡gua do caminhÃ£o. O alarme (inflamaÃ§Ã£o) avisa que algo aconteceu."
+                      },
+                      {
+                          "tipo":  "etimologia",
+                          "conteudo":  "INATA: do latim \u0027innatus\u0027 (in = dentro, natus = nascido). Significa \u0027nascida dentro\u0027 â€” nÃ£o aprendida, jÃ¡ presente desde o nascimento. MASTÃ“CITO: \u0027mastÃ³s\u0027 (grego, mama/seio) + \u0027kÃ½tos\u0027 (cÃ©lula). O nome vem de uma mÃ¡ interpretaÃ§Ã£o antiga de que essas cÃ©lulas armazenavam alimento; na verdade armazenam grÃ¢nulos cheios de mediadores inflamatÃ³rios. COMPLEMENTO: chamado assim porque \u0027completa\u0027 a destruiÃ§Ã£o de patÃ³genos marcados por anticorpos â€” um nome do sÃ©c. XIX que pegou."
+                      },
+                      {
+                          "tipo":  "imagem",
+                          "conteudo":  {
+                                           "id":  "imuno-01-img-01",
+                                           "tipo":  "ilustracao_didatica",
+                                           "descricao":  "Corte transversal da pele mostrando as camadas (epiderme queratinizada em rosa claro, derme vascularizada em rosa mais escuro) com mastÃ³citos espalhados (cÃ©lulas roxas com grÃ¢nulos vermelhos). Uma bactÃ©ria em forma de bastonete tenta penetrar a epiderme mas fica bloqueada pelas cÃ©lulas queratinizadas. Setas indicam \u0027lisozima no suor\u0027, \u0027lipÃ­dios repelentes\u0027, \u0027queratina impermeÃ¡vel\u0027.",
+                                           "prompt_ia":  "Diagrama educacional mÃ©dico da epiderme humana em corte transversal. Mostrar: epiderme (camadas finas, rosa pÃ¡lido com textura de queratina), derme (rosa mais saturado com vasos sanguÃ­neos em vermelho, nervos em amarelo). Adicionar 3-4 mastÃ³citos roxos distribuÃ­dos na derme, com grÃ¢nulos vermelhos visÃ­veis. Uma bactÃ©ria em forma de bastonete (azul) tentando penetrar a epiderme deve ser bloqueada visualmente. AnotaÃ§Ãµes laterais em fontes limpas: \u0027Lisozima\u0027, \u0027LipÃ­dios\u0027, \u0027Queratina\u0027. Paleta: rosa, roxo, vermelho, azul, amarelo pastel. Sem excesso de detalhe histolÃ³gico; foco na funÃ§Ã£o de barreira."
+                                       }
+                      },
+                      {
+                          "tipo":  "imagem",
+                          "conteudo":  {
+                                           "id":  "imuno-01-img-02",
+                                           "tipo":  "ilustracao_didatica",
+                                           "descricao":  "Cascata em tempo real: um patÃ³geno penetra a barreira (mostrado em vermelho escuro). MastÃ³cito prÃ³ximo Ã© ativado (roxo brilhante com grÃ¢nulos explodindo em amarelo = histamina). MacrÃ³fago (laranja) envolve o patÃ³geno com pseudÃ³podos. ProteÃ­nas complemento (azul pÃ¡lido, forma de \u0027C\u0027) se alinham na superfÃ­cie do patÃ³geno. Setas cinzas indicam direÃ§Ã£o do processo.",
+                                           "prompt_ia":  "Diagrama de aÃ§Ã£o imediata da imunidade inata. Fundo branco ou cinza muito claro. Ã€ esquerda, uma bactÃ©ria (bastonete azul-escuro) penetra uma barreira rosada (seÃ§Ã£o simplificada de pele). Imediatamente acima, mastÃ³cito (cÃ©lula roxa com nÃºcleo escuro) em processo de degranulaÃ§Ã£o: mostrar grÃ¢nulos (bolinhas vermelhas) sendo liberados na forma de histamina (nuvem amarela/laranja ao redor). Ã€ direita, macrÃ³fago (cÃ©lula laranja-clara, forma ameboide) englobando patÃ³geno com pseudÃ³podos (extensÃµes citoplasmÃ¡ticas). Abaixo, molÃ©culas de complemento (forma de \u0027C\u0027 ou cilindro curvado, azul pÃ¡lido) se depositando na superfÃ­cie do patÃ³geno. Setas direcionais cinzas conectando os eventos. Estilo cientÃ­fico limpo, sem 3D excessivo. Paleta: azul escuro (patÃ³geno), roxo (mastÃ³cito), laranja (macrÃ³fago), amarelo (histamina), azul pÃ¡lido (complemento), rosa (barreira)."
+                                       }
+                      }
+                  ],
+    "flashcards":  [
+                       {
+                           "tipo":  "por_que",
+                           "pergunta":  "Por que o corpo investe em barreiras fÃ­sicas antes de cÃ©lulas imunolÃ³gicas?",
+                           "resposta":  "Porque bloquear Ã© 10 vezes mais barato (em energia) que lutar. Barreiras previnem 99% das infecÃ§Ãµes. Se cada patÃ³geno precisasse ser morto por linfÃ³citos, gastarÃ­amos recursos demais."
+                       },
+                       {
+                           "tipo":  "mecanismo",
+                           "pergunta":  "Descreva o passo a passo: bactÃ©ria na pele â†’ mastÃ³cito ativado â†’ histamina liberada. O que acontece em seguida?",
+                           "resposta":  "1. BactÃ©ria toca queratina e consegue aderir ao suor. 2. Pele estÃ¡ seca mas teve uma lesÃ£o microscÃ³pica. 3. MastÃ³cito sensivelmente detecta lipopolissacarÃ­deo bacteriano via receptor TLR4. 4. MastÃ³cito deflagra liberaÃ§Ã£o de histamina (causa vasodilataÃ§Ã£o, inchaÃ§o, coceira). 5. Vasos dilatam, sangue com mais leucÃ³citos chega ao local. 6. MacrÃ³fago circulante Ã© atraÃ­do pela histamina."
+                       },
+                       {
+                           "tipo":  "contrafactual",
+                           "pergunta":  "E se nÃ£o existissem barreiras fÃ­sicas e o corpo confiasse 100% em cÃ©lulas e molÃ©culas?",
+                           "resposta":  "VocÃª teria infecÃ§Ãµes contÃ­nuas porque linfÃ³citos levam 3-7 dias para ativar. Morreria de sepse por qualquer ferida. Evolutivamente, organismos sem barreiras fÃ­sicas competentes nÃ£o sobrevivem."
+                       },
+                       {
+                           "tipo":  "clinico",
+                           "pergunta":  "Um paciente com queimadura de 3Âº grau tem maior risco de infecÃ§Ã£o. Por que?",
+                           "resposta":  "Porque a epiderme foi destruÃ­da â€” a barreira principal se foi. MastÃ³citos e macrÃ³fagos teciduais tentam compensar, mas sem barreira, o volume de patÃ³genos Ã© imenso. Clinicamente, queimaduras exigem profilaxia antibiÃ³tica agressiva justamente por isso."
+                       },
+                       {
+                           "tipo":  "comparacao",
+                           "pergunta":  "Qual a diferenÃ§a entre mastÃ³cito e macrÃ³fago? Ambos sÃ£o da imunidade inata?",
+                           "resposta":  "MastÃ³cito reside em tecidos (pele, pulmÃ£o, intestino) e libera mediadores (histamina, triptase). MacrÃ³fago engole patÃ³genos. Ambos sÃ£o inatos. MastÃ³cito Ã© \u0027alarme\u0027, macrÃ³fago Ã© \u0027limpeza\u0027."
+                       },
+                       {
+                           "tipo":  "etimologia",
+                           "pergunta":  "Por que \u0027complemento\u0027 tem esse nome estranho?",
+                           "resposta":  "Descoberto no sÃ©c. XIX como uma substÃ¢ncia que \u0027complementava\u0027 a aÃ§Ã£o de anticorpos. NÃ£o Ã© um nome anatomicamente lÃ³gico, mas pegou. Hoje sabemos que complemento funciona tambÃ©m sem anticorpos (via inato)."
+                       },
+                       {
+                           "tipo":  "armadilha",
+                           "pergunta":  "Armadilha: \u0027MastÃ³citos atacam patÃ³genos.\u0027 EstÃ¡ certo?",
+                           "resposta":  "Errado. MastÃ³citos liberam mediadores (histamina), nÃ£o atacam diretamente. Eles desencadeiam inflamaÃ§Ã£o que atrai macrÃ³fagos e neutrÃ³filos â€” sÃ£o esses que atacam."
+                       },
+                       {
+                           "tipo":  "sintese",
+                           "pergunta":  "Integre: barreiras fÃ­sicas + mastÃ³citos + macrÃ³fagos + complemento. Como esses 4 componentes trabalham juntos?",
+                           "resposta":  "Barreira bloqueia. Se penetrada: mastÃ³cito libera sinal (histamina). MacrÃ³fago Ã© atraÃ­do e engole invasor. Complemento marca o invasor para destruiÃ§Ã£o adicional e recruta mais defensores. Sistema em cascata."
+                       }
+                   ],
+    "caso_clinico":  {
+                         "titulo":  "Menina de 7 anos com celulite pÃ³s-varicela",
+                         "narrativa":  [
+                                           {
+                                               "etapa":  1,
+                                               "titulo":  "Causa",
+                                               "conteudo":  "Varicela (catapora) = infecÃ§Ã£o viral que causa erupÃ§Ã£o cutÃ¢nea. A crianÃ§a coÃ§ou obsessivamente as lesÃµes, rasgando a pele. BactÃ©ria *Streptococcus pyogenes* (normalmente da flora) entrou pelos ferimentos."
+                                           },
+                                           {
+                                               "etapa":  2,
+                                               "titulo":  "Estrutura Afetada",
+                                               "conteudo":  "Epiderme e derme da perna esquerda foram inoculadas com bactÃ©rias. MastÃ³citos e macrÃ³fagos teciduais na derme foram os primeiros alertados."
+                                           },
+                                           {
+                                               "etapa":  3,
+                                               "titulo":  "DisfunÃ§Ã£o",
+                                               "conteudo":  "MastÃ³citos liberaram histamina demais (inflamaÃ§Ã£o excessiva). MacrÃ³fagos foram superados pela carga bacteriana. Complemento ativado nÃ£o foi suficiente para limpar. BactÃ©rias se multiplicaram dentro de poucas horas."
+                                           },
+                                           {
+                                               "etapa":  4,
+                                               "titulo":  "Sintoma",
+                                               "conteudo":  "InchaÃ§o quente (vermelhidÃ£o), dor Ã  palpaÃ§Ã£o, febre (38.5Â°C). MÃ£e notou que a inflamaÃ§Ã£o se estendia alÃ©m da lesÃ£o original â€” sinal de que bactÃ©rias estavam se espalhando pela derme."
+                                           },
+                                           {
+                                               "etapa":  5,
+                                               "titulo":  "ConsequÃªncia (sem tratamento)",
+                                               "conteudo":  "Sem antibiÃ³ticos: linfÃ³citos levam 3-5 dias para ativar. Nesse tempo, bactÃ©rias invadem vasos (bacteremia), alcanÃ§am corrente sanguÃ­nea, sepse, choque. Risco de morte em 48-72h em crianÃ§a."
+                                           }
+                                       ],
+                         "diagnostico_final":  "CELULITE BACTERIANA. Tratamento: antibiÃ³tico Î²-lactÃ¢mico (amoxicilina + Ã¡cido clavulÃ¢nico) 7 dias. Melhora clÃ­nica em 48-72h (quando imunidade inata + antibiÃ³tico conseguem controlar). CicatrizaÃ§Ã£o em 2 semanas. APRENDIZADO: barreiras naturais intactas = imunidade inata controlava tudo. Barreira rompida = necessÃ¡rio reforÃ§o farmacolÃ³gico."
+                     },
+    "midia":  [
+                  {
+                      "id":  "imuno-01-img-01",
+                      "tipo":  "ilustracao_didatica",
+                      "descricao":  "Corte transversal da pele mostrando barreiras fÃ­sicas e mastÃ³citos.",
+                      "prompt_ia":  "Diagrama educacional mÃ©dico da epiderme humana em corte transversal. Mostrar: epiderme (camadas finas, rosa pÃ¡lido com textura de queratina), derme (rosa mais saturado com vasos sanguÃ­neos em vermelho, nervos em amarelo). Adicionar 3-4 mastÃ³citos roxos distribuÃ­dos na derme, com grÃ¢nulos vermelhos visÃ­veis. Uma bactÃ©ria em forma de bastonete (azul) tentando penetrar a epiderme deve ser bloqueada visualmente. AnotaÃ§Ãµes laterais em fontes limpas: \u0027Lisozima\u0027, \u0027LipÃ­dios\u0027, \u0027Queratina\u0027. Paleta: rosa, roxo, vermelho, azul, amarelo pastel. Sem excesso de detalhe histolÃ³gico; foco na funÃ§Ã£o de barreira."
+                  },
+                  {
+                      "id":  "imuno-01-img-02",
+                      "tipo":  "ilustracao_didatica",
+                      "descricao":  "Cascata em tempo real: ativaÃ§Ã£o de mastÃ³cito, engolfamento por macrÃ³fago, deposiÃ§Ã£o de complemento.",
+                      "prompt_ia":  "Diagrama de aÃ§Ã£o imediata da imunidade inata. Fundo branco ou cinza muito claro. Ã€ esquerda, uma bactÃ©ria (bastonete azul-escuro) penetra uma barreira rosada (seÃ§Ã£o simplificada de pele). Imediatamente acima, mastÃ³cito (cÃ©lula roxa com nÃºcleo escuro) em processo de degranulaÃ§Ã£o: mostrar grÃ¢nulos (bolinhas vermelhas) sendo liberados na forma de histamina (nuvem amarela/laranja ao redor). Ã€ direita, macrÃ³fago (cÃ©lula laranja-clara, forma ameboide) englobando patÃ³geno com pseudÃ³podos (extensÃµes citoplasmÃ¡ticas). Abaixo, molÃ©culas de complemento (forma de \u0027C\u0027 ou cilindro curvado, azul pÃ¡lido) se depositando na superfÃ­cie do patÃ³geno. Setas direcionais cinzas conectando os eventos. Estilo cientÃ­fico limpo, sem 3D excessivo. Paleta: azul escuro (patÃ³geno), roxo (mastÃ³cito), laranja (macrÃ³fago), amarelo (histamina), azul pÃ¡lido (complemento), rosa (barreira)."
+                  }
+              ],
+    "metricas_estudo":  {
+                            "tempo_estimado_minutos":  10,
+                            "nivel_alvo":  2,
+                            "dificuldade":  "intermediaria"
+                        },
+    "conexoes_pedagogicas":  {
+                                 "prerequisitos":  [
+                                                       "s1-hist-01-001",
+                                                       "s1-hist-02-001"
+                                                   ],
+                                 "futuras":  [
+                                                 {
+                                                     "tipo":  "CASCATA_CAUSAL",
+                                                     "descricao":  "MastÃ³citos â†’ inflamaÃ§Ã£o â†’ linfÃ³citos atraÃ­dos â†’ s2-imuno-02-000"
+                                                 },
+                                                 {
+                                                     "tipo":  "ALVO_TERAPEUTICO",
+                                                     "descricao":  "Anti-histamÃ­nicos em alergias; bloqueadores de mastÃ³citos em anafilaxia"
+                                                 },
+                                                 {
+                                                     "tipo":  "RECONHECIMENTO_CLINICO",
+                                                     "descricao":  "DeficiÃªncia de complemento â†’ infecÃ§Ãµes recorrentes por bactÃ©rias encapsuladas"
+                                                 },
+                                                 {
+                                                     "tipo":  "MECANISMO_COMPARTILHADO",
+                                                     "descricao":  "PadrÃµes moleculares reconhecidos aqui (TLRs) serÃ£o fundamentais em s2-imuno-03 (MHC)"
+                                                 }
+                                             ],
+                                 "laterais":  [
+                                                  "s2-imuno-04-000"
+                                              ]
+                             }
 }

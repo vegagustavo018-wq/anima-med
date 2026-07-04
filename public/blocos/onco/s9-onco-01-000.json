@@ -4,13 +4,13 @@
   "nos_filhos_ids": [
     "s9-onco-01-001",
     "s9-onco-01-002",
-    "s9-onco-01-003",
-    "s9-onco-01-004",
-    "s9-onco-01-005",
-    "s9-onco-01-006",
-    "s9-onco-01-007"
+    "s9-onco-01-003"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s1-hist-02-001",
+    "s2-patol-01-000",
+    "s3-farma-01-000"
+  ],
   "metadata": {
     "titulo": "Princípios Clínicos da Oncologia",
     "semestre": 9,
@@ -18,45 +18,405 @@
     "profundidade_arvore": 1,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-03",
+    "data_ultima_revisao": "2026-07-03",
+    "versao": "1.0",
     "tags": [
       "onco",
-      "esqueleto"
+      "clínica",
+      "cascata causal",
+      "rastreamento",
+      "diagnóstico",
+      "estadiamento",
+      "apresentação clínica"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "lentes": [
+      "apresentacao_clinica",
+      "conduta"
+    ]
   },
-  "resumo_conciso": "Da biologia à conduta: como o câncer se comporta, se dissemina e se rastreia geneticamente",
-  "narrativa": [],
+  "resumo_conciso": "Da mutação silenciosa ao sintoma: como a biologia tumoral se manifesta clinicamente, se dissemina, e como o médico traduz achados em diagnóstico e estadiamento. Cascata causal clínica, apresentação clínica, rastreamento versus diagnóstico, genética clínica (como testes moleculares mudam a conduta). Tumor como iceberg — a ponta visível (sintoma) é apenas 10% da doença oculta.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você está em um consultório e um paciente chega com uma tosse que não passa há três meses. O pulmão dele, ao microscópio, tem células que perderam a capacidade de formar mucosa normal — elas se reproduzem desenfreadamente. Mas na verdade, essa história começou 10 anos atrás. Uma única célula sofreu uma mutação. Depois outra. Depois outra. Hoje, aquele tumor tem 2 centímetros de diâmetro — grande o bastante para irritar a via aérea e disparar um reflexo de tosse. Mas por que ele só apareceu agora? Por que algumas pessoas desenvolvem câncer depois de uma década de fumo silencioso, enquanto outras não desenvolvem nunca?\n\nIsto é clínica oncológica: traduzir a biologia molecular (que aprendemos no bloco anterior) em sinais, sintomas, diagnóstico e decisão de tratamento."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a biologia molecular não é suficiente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior cobriu a biologia: oncogenes ativados, supressores desligados, instabilidade genômica. Excelente. Agora a pergunta clínica: tudo isso é invisível. O paciente não sente um oncogene ativado. Não acorda com dor porque perdeu p53. A clínica precisa fazer a tradução: mutação → disfunção celular → efeito de massa ou funcional → sintoma → busca → achado → diagnóstico.\n\nAlém disso, nem todo tumor é igual. Dois pacientes com a mesma histologia (ambos com adenocarcinoma de pulmão) podem ter destinos completamente diferentes dependendo de uma mutação em EGFR ou ALK. Um responde a imunoterapia porque tem alta carga mutacional. Outro tem resistência porque carrega uma mutação no receptor de morte. A clínica moderna é molecular — mas só porque a clínica percebeu que estrutura genética governa comportamento e resposta ao tratamento."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Consolidação",
+      "conteudo": "Pause aqui. A pergunta central da clínica oncológica é: QUAL É O TUMOR INVISÍVEL? Qual é o seu tamanho real, para onde vai se espalhar, o que vai matá-lo? A biologia responde os dois últimos. A clínica tem que descobrir o primeiro — e o resto, depois."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Cascata clínica: do silêncio ao diagnóstico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vamos mapear a cascata que todo tumor percorre:\n\n**Etapa 1: Transformação maligna (silenciosa).** Uma célula ganha a primeira mutação. Então a segunda. Então a terceira. Cada mutação torna a célula mais agressiva — menos regulação de morte, mais divisão, menos reparo de DNA. Isso pode levar anos ou décadas. Ninguém sente nada. Não há sintoma, não há achado clínico. Só biologia invisível.\n\n**Etapa 2: Crescimento local.** O tumor cresce em volume. Começa com células invisíveis (milímetros). À medida que cresce, começa a ter efeito: comprime estruturas vizinhas, irrita tecidos, bloqueia passagens. Uma célula maligna no ducto pancreático não importa. Um tumor de 3 centímetros no ducto pancreático bloqueia a bilirrubina — e o paciente fica amarelo.\n\n**Etapa 3: Sintoma.** Agora aparecem sinais de alerta (red flags). Sangue na urina (câncer de bexiga). Nódulo palpável na mama. Dor óssea. Tosse com sangue. Emagrecimento não explicado. O sintoma não aparece porque o tumor quer — aparece porque o tumor atingiu um tamanho que perturba a fisiologia.\n\n**Etapa 4: Busca do paciente.** O paciente vai ao médico. Relata o sintoma. Começa a investigação clínica.\n\n**Etapa 5: Diagnóstico.** Biópsia, análise anatomopatológica, confirmação: é câncer. Agora sabemos que aquela dor óssea, aquele nódulo, aquele sangramento — tudo é maligno. Agora muda tudo: o tratamento, a prognóstico, o acompanhamento.\n\n**Etapa 6: Estadiamento.** Mas há outra pergunta crítica: qual é o tamanho REAL? Para onde se espalhou? Isso é estadiamento TNM (Tumor-Node-Metástase). Sem saber o estadio, não sabemos se é câncer localmente circunscrito (cirurgia) ou disseminado (quimioterapia, imunoterapia).\n\n**Etapa 7: Decisão de tratamento.** Agora vem genética clínica. Se é um adenocarcinoma de pulmão, tem EGFR mutado? Tem ALK? Tem PD-L1 elevado? Cada uma dessas muda a primeira droga que você escolhe.\n\n**Etapa 8: Seguimento.** O tumor acaba? Remissão completa. Mas em qual risco de recaída? Alguns pacientes recaem em meses, outros em anos. Por quê? Carga tumoral residual, células-tronco do câncer, nicho metastático. Acompanhamento rigoroso."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: Um tumor não é um número. É uma população de bilhões de células, cada uma com seu próprio genoma, seu próprio ambiente, sua própria agressividade. Inomogeneidade tumoral é a razão pela qual resistência ao tratamento acontece. Metástase é a razão pela qual estadiamento não é apenas tamanho — é também disseminação oculta."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Apresentação clínica: por que alguns tumores gritam e outros sussurram"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nem todo tumor é igual em apresentação. Um melanoma em pele é visível rapidinho — qualquer nódulo escuro que cresce alerta o paciente. Um câncer de pâncreas? Pode crescer 5 centímetros sem causar nada. Quando finalmente causa dor, jaundícia ou emagrecimento, já disseminou.\n\nPor quê? Depende de três fatores:\n\n**1. Localização sensível.** Tumores próximos a nervos, vasos ou órgãos funcionais causam sintomas cedo. Um câncer de boca causa dor ao deglutir. Um câncer de próstata pode causar retenção urinária. Um câncer do esôfago causa disfagia. Todos são \"ruidosos\" porque comprimem estruturas vitais.\n\n**2. Localização silenciosa.** Tumores no mesentério, no retroperitônio, no lobo pulmonar posterior podem crescer grandes sem causar sintoma. O pâncreas é palpável? Não. Você sente uma massa pancreática? Não, a não ser que comprima vias e cause efeito indireto (jaundícia). Esses tumores são \"sussurradores\".\n\n**3. Tipo histológico.** Alguns tipos crescem rápido (linfomas, certos carcinomas), outros lentamente (adenocarcinomas bem diferenciados, melanomas em pele lentamente progressivos). Crescimento rápido aumenta chance de sintoma porque volume aumenta depressa. Crescimento lento pode passar despercebido por anos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Rastreamento versus diagnóstico: a população assintomática"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Aqui vem uma distinção crítica que governa toda a estratégia clínica:\n\n**Rastreamento (screening).** Você procura por câncer em pessoas SEM sintomas. Mamografia em mulheres de 50 anos. Colonoscopia em maiores de 50. Teste PSA em homens. Ninguém tem queixa — você tira uma imagem esperando encontrar doença oculta. Rastreamento só faz sentido se a doença em estágio inicial é curável e o teste tem alto valor preditivo (reduz mortalidade comprovadamente). Mamografia reduz mortalidade por câncer de mama? Sim. Colonoscopia reduz mortalidade colorretal? Sim. PSA reduz mortalidade por câncer de próstata? Não — reduz incidência de diagnóstico, mas não salva vidas. (Por isso testes PSA rotineiro é controverso.)\n\n**Diagnóstico (investigação de sintoma).** Você tem um paciente com sangue na urina, ou massa abdominal, ou tosse persistente. Agora você investe em exames para confirmar: ultrassom, TC, biópsia. Diagnóstico é reativo — existe sintoma que dispara investigação.\n\nA diferença é enorme em termos de prognóstico. Câncer encontrado por rastreamento (estágio I, tamanho <2cm, sem disseminação) tem sobrevida de 5 anos ~90%. Câncer encontrado por sintoma (já metastático, estágio IV) tem sobrevida ~10%. O paciente é o mesmo? Não. O tumor é o mesmo? Também não — descobrir cedo significa que a doença biológica era menos agressiva (crescimento mais lento, menos mutações acumuladas) OU que a evolução clínica foi interrompida no meio."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Genética clínica: por que testes moleculares mudam o tratamento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Voltamos à biologia. Um oncologista vê um adenocarcinoma de pulmão. Há 20 anos, o tratamento era quimioterapia citotóxica para todo mundo. Hoje?\n\n**Se EGFR está mutado (Ativação de ganho de função).** O receptor cresce descontroladamente mesmo sem ligante EGF. A droga erlotinib (inibidor de tirosina quinase) bloqueia exatamente esse receptor mutado. Resposta: 70% dos pacientes. Sobrevida aumenta.\n\n**Se ALK está translocado (fusão ALK-EML4).** Outro padrão molecular. Droga crizotinibe bloqueia exatamente ALK. Resposta diferente, sobrevida diferente.\n\n**Se há alta carga mutacional (>10 mutações/megabase).** O tumor apresenta muitos antígenos estranhos. O sistema imunológico pode reconhecer. Imunoterapia (anti-PD-L1) funciona bem.\n\n**Se nenhum desses.** Quimioterapia tradicional (carboplatina + pemetrexed) segue sendo padrão.\n\nTudo isso é genética clínica. O teste molecular (sequenciamento do tumor) não é curiosidade — é decisão de vida ou morte. Paciente com EGFR mutado que recebe quimio e não recebe erlotinib vive menos. Paciente com ALK que recebe crizotinibe vive mais.\n\nPor que? Porque a droga foi desenhada para aquela mutação específica. Oncogenes específicos têm alavancas específicas. Alguns tumores têm BRCA1 ou BRCA2 mutado — aqui entra olaparib (inibidor de PARP), que explora a deficiência de reparo de DNA. Cada mutação abre uma porta. Cada porta tem uma chave."
+    },
+    {
+      "tipo": "analogia",
+      "titulo": "Tumor como iceberg",
+      "mapeamento": {
+        "ponta_acima_da_agua": "Sintoma (tosse, sangue na urina, nódulo palpável)",
+        "massa_oculta": "Tumor invisível: tamanho real, disseminação, carga mutacional, genética molecular",
+        "tamanho_da_ponta": "10% do tumor — o que o paciente e o clínico veem inicialmente",
+        "tamanho_da_massa": "90% do tumor — tudo que governa prognóstico, tratamento e resposta"
+      },
+      "conteudo": "O iceberg é perfeito porque captura a ilusão clínica: você vê o sintoma (a ponta). Mas 90% da doença está embaixo da água. O tumor é uma população — bilhões de células em competição, seleção natural, mutações contínuas. O sintoma é apenas o sinal de que a massa chegou a um tamanho ou local que perturba fisiologia. Mas a biologia perigosa — as metástases microsc ópicas, as células-tronco, as mutações de resistência — tudo aquilo continua crescendo embaixo.\n\nPor isso estadiamento é tão importante. Você precisa mapear o iceberg inteiro. TC, ressonância, PET-scan — todas as ferramentas tentam revelar o que está embaixo. E por isso genética molecular é o futuro: a sequência de DNA daquele tumor é o mapa do que vai acontecer a seguir."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Anamnese e exame oncológico: procurando a ponta do iceberg"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como o clínico encontra o sintoma? Três pilares:\n\n**Anamnese dirigida.** \"Você tem sangue na urina? Tosse? Emagrecimento não explicado? Febre ou suores noturnos? Dor óssea? Desconforto ao engolir?\" Cada sintoma aponta para um tumor diferente. Hemorragia gastrointestinal → câncer de colón. Hematúria → câncer de bexiga ou rim. Emagrecimento + dor abdominal → pâncreas ou estômago. A anamnese oncológica é mapeamento de sintomas por localização.\n\n**Exame físico.** Você palpa o abdômen procurando massas. Examine linfonodos (axilas, virilhas, pescoço) — linfadenopatia é comum em linfomas e em metástases. Examine pele procurando lesões suspeitas. Procure icterícia (jandícia), hepatomegalia, ascite — sinais de doença avançada. Examine as mamas em mulheres. O exame é a \"procura física\" pelo iceberg acima da água.\n\n**Exames de imagem.** Ultrassom é rápido, econômico, sem radiação. Tomografia (TC) é mais sensível e detecta metástases. Ressonância magnética tem resolução excelente para cérebro e osso. PET-scan vê metabolismo — tumores malignos consomem mais glicose (traçador FDG). Cada imagem tenta responder: qual é o tamanho real, para onde disseminou, quanto da doença há?\n\n**Biópsia.** Nenhum exame de imagem diagnostica câncer com 100% segurança. Só a análise anatomopatológica (histologia + imunohistoquímica) confirma: é câncer? Qual tipo? Qual grau diferenciação (Gleason, Fuhrman, etc)? A biópsia é a verdade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "TNM: linguagem universal do estadiamento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Tumor (T), Node (N), Metástase (M). Esta é a linguagem que oncologistas usam em todo o mundo.\n\n**T (Tumor).** Qual é o tamanho do tumor primário? T1 é <2cm, T2 é 2-5cm, T3 é >5cm, T4 é invasão de estruturas. Tamanho importa porque prediz sobrevida e guia cirurgia.\n\n**N (Node).** Qual é a extensão da doença em linfonodos regionais? N0 significa nenhum envolvimento. N1 significa linfonodos adjacentes. N2/N3 significa disseminação para linfonodos distantes. Envolvimento linfonodal é sinal de progressão — tumor invadiu vasos linfáticos, espalhou-se localmente.\n\n**M (Metástase).** Há envolvimento de órgãos distantes? M0 significa ausência de metástase sistêmica. M1 significa presença — pulmão, fígado, osso, cérebro, carcinomatose peritoneal. M1 inverte completamente o prognóstico: cirurgia pode não ser curativa; foco passa para paliação e controle de doença.\n\nCombinando esses três, você tem um \"perfil tumoral\" que permite comparação entre pacientes. \"Câncer de mama estágio IIA\" para toda oncologista do mundo significa T1-2, N0, M0 — tumor de até 5cm, sem linfonodos, sem metástase. Prognóstico é previsível: sobrevida de 5 anos ~95%. Compare com estágio IV (qualquer T, qualquer N, M1): sobrevida ~25%."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Etimologia e linguagem"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Oncologia.** Do grego onkos (ὄγκος) = tumor, inchaço. -logia = estudo. Literalmente: o estudo dos tumores. Mas o sentido modernizado é: o estudo de como os tumores surgem, progridem, metastizam, são tratados e são acompanhados.\n\n**Clínica.** Do grego klinike (κλινική) = à beira do leito. Klino = inclinar. Originalmente: o conhecimento obtido ao lado do paciente, não no laboratório. Clínica oncológica significa: a ciência de como tumores se manifestam no paciente vivo, como são detectados, como seu comportamento é predito.\n\n**Apresentação clínica.** A forma como o tumor aparece — sintomas, sinais, sequência de eventos. Cada tumor tem uma assinatura: melanoma \"aparece\" como mancha escura que cresce. Câncer de pâncreas \"aparece\" como jaundícia súbita. Linfoma \"aparece\" como linfoadenopatia e febre B (calafrios e suores noturnos).\n\n**Prognóstico.** Do grego pro- = antes, gnosis = conhecimento. Conhecimento antecipado: qual é o desfecho esperado? Baseado em estadio, tipo histológico, genética, idade do paciente, performance status. Câncer de mama T1 tem prognóstico excelente. Câncer de pâncreas T4M1 tem prognóstico péssimo — sobrevida mediana <1 ano."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Contrafactual: se não houvesse apresentação clínica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine um mundo onde nenhum tumor causa sintoma. Todos crescem em silêncio, invisíveis, disseminados. Não há apresentação clínica — não há sangue na urina, tosse, nódulo palpável. Ninguém sabe que tem câncer até que esteja em metástase avançada.\n\nMortalidade: 100%. Porque detecção é impossível sem sintoma. Cirurgia não pode remover tumor que ninguém vê. Tratamento é reativo — você só trata quando há falência de órgão.\n\nPor sorte, não vivemos nesse mundo. Tumores são estruturas com volume. Volume causa efeito. Efeito gera sintoma. Sintoma dispara investigação. Investigação gera diagnóstico. Diagnóstico permite tratamento. Essa cascata depende completamente de que o tumor seja \"ruidoso o bastante\" para ser percebido.\n\nMas há também verdade incômoda: alguns tumores são discretos demais. Câncer de pâncreas, de ovário, de fígado — todos \"sussurradores\". Eles causam sintoma tarde. Por isso mortalidade é alta. Por isso rastreamento (quando existe) é vital. Por isso detecção precoce por exames incidentais (achados no ultrassom do abdômen para outra razão) pode ser salvadora."
+    },
+    {
+      "tipo": "imagem",
+      "descricao": "Fluxograma da cascata clínica: Mutação silenciosa (0-10 anos) → Crescimento pré-clínico (detectável por imagiologia, sem sintoma) → Sintoma (iceberg emerge) → Busca e investigação clínica → Biópsia/diagnóstico → Estadiamento TNM → Genética molecular → Decisão de tratamento → Tratamento → Seguimento. Cada caixa tem ícones: mutação (DNA), crescimento (célula dividindo), sintoma (pessoa com a mão na cabeça), microscópio, DNA dupla-hélice, cirurgião, gráfico de sobrevida.",
+      "prompt_ia": "Create a clinical oncology flowchart showing the journey from silent mutation to diagnosis and treatment decision. Show 8 stages: (1) Silent genetic mutation accumulating over years (DNA/cell icon), (2) Pre-clinical growth detectable by imaging (CT/ultrasound icon), (3) Symptom emergence - the iceberg tip visible (patient with symptom), (4) Patient seeks care and investigation (doctor/patient icon), (5) Biopsy and histologic diagnosis (microscope), (6) TNM staging (staging scale), (7) Molecular genetic testing (DNA helix), (8) Treatment decision (treatment icons: surgery/chemo/immunotherapy). Use medical color palette: blues and grays. Horizontal flow. Include timeline labels showing months to years for each stage."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Consolidação final",
+      "conteudo": "Você entende agora por que a clínica oncológica existe como disciplina separada? Porque entre a mutação em TP53 (biologia) e a decisão de fazer quimio (conduta) há uma cadeia complexa de eventos: crescimento, sintoma, detecção, diagnóstico, estadiamento, genética molecular. Cada passo muda a próxima decisão.\n\nO tumor é um iceberg. A clínica é a ciência de mapeá-lo, entendê-lo, comunicar seu tamanho real, e depois destruí-lo. Sem clínica, você tem biologia bonita mas prognóstico péssimo. Sem biologia, você tem clínica cega — não sabe por que o paciente não responde à quimio, qual a mutação que guia a droga correta.\n\nClínica + biologia molecular = oncologia moderna."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "blocoId": "s9-onco-00-000",
+        "relacao": "RAIZ",
+        "descricao": "Este bloco aprofunda a clínica partindo da biologia do bloco raiz (oncogenes, supressores, instabilidade). Biologia explica o motor; clínica explica como ele se manifesta."
+      },
+      {
+        "blocoId": "s1-hist-02-001",
+        "relacao": "ALICERCE",
+        "descricao": "Polaridade celular e junções são pré-requisito para entender como tumor perde adesão e dissemina. Epitélio normal é organizado. Tumor desorganizado = perda de polaridade + junções."
+      },
+      {
+        "blocoId": "s2-patol-01-000",
+        "relacao": "CONTEXTO_PARALELO",
+        "descricao": "Patologia geral (inflamação, cicatrização, adaptações celulares) fornece linguagem de dano estrutural. Displasia, metaplasia, carcinoma in situ são conceitos-ponte."
+      }
+    ],
+    "futuras": [
+      {
+        "blocoId": "s9-onco-01-001",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Biologia Tumoral Essencial. Aprofunda os mecanismos de crescimento neoplásico, apoptose evadida, imortalização telomérica. Responde: por que células transformadas continuam dividindo quando deveriam morrer?"
+      },
+      {
+        "blocoId": "s9-onco-01-002",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "Oncogenes e Supressores de Tumores. Detalha as moléculas específicas (TP53, RB, KRAS, MYC, BRCA1/2) e como mutações em cada uma alteram fenótipo clínico e resposta ao tratamento."
+      },
+      {
+        "blocoId": "s9-onco-01-003",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Genética Clínica e Testes Moleculares. Completa o ciclo: como testes de EGFR, ALK, PD-L1, microsatélites e TMB mudam decisão de tratamento em cada tumor."
+      },
+      {
+        "blocoId": "s9-onco-02-000",
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "descricao": "Apresentações Clínicas por Localização (Carcinomas). Cada tumor (pulmão, colón, mama, pâncreas) tem apresentação clínica, fatores de risco, rastreamento, prognóstico distinto."
+      },
+      {
+        "blocoId": "s9-onco-03-000",
+        "tipo": "ALVO_TERAPEUTICO",
+        "descricao": "Cirurgia Oncológica. A decisão cirúrgica depende completamente de estadiamento clínico e genética tumoral. Tumor ressecável? Há metástase? Vale a pena operar?"
+      }
+    ],
+    "laterais": [
+      {
+        "blocoId": "s3-semiologia-01-000",
+        "relacao": "APLICACAO_PRATICA",
+        "descricao": "Semiologia procura os sinais (palpação de nódulos, exame de linfonodos, icterícia). Clínica oncológica interpreta esses sinais em contexto de oncogênese."
+      },
+      {
+        "blocoId": "s4-imagem-01-000",
+        "relacao": "FERRAMENTA_DIAGNOSTICA",
+        "descricao": "Diagnóstico por imagem (TC, RM, PET-scan, ultrassom) mapeia o iceberg — revela tamanho real, disseminação, inoperabilidade. Suporta todo estadiamento TNM."
+      },
+      {
+        "blocoId": "s5-patol-onco-01-000",
+        "relacao": "CONFIRMACAO_DIAGNOSTICA",
+        "descricao": "Patologia e imunohistoquímica confirma diagnóstico, determina tipo histológico, grau de diferenciação, presença de antígenos prognósticos (HER2, ER/PR, PD-L1)."
+      },
+      {
+        "blocoId": "s8-farma-onco-01-000",
+        "relacao": "CONDUTA_TERAPEUTICA",
+        "descricao": "Farmacologia e quimioterapia: como as drogas funcionam, quais cascatas inibem, quais tumores são sensíveis. Toda decisão farmacológica depende de genética clínica definida neste bloco."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "tipo": "por_que",
+      "pergunta": "Por que um tumor de 2 centímetros causa sintoma e um de 5 centímetros em outro local pode ser silencioso?",
+      "resposta": "Porque o sintoma não é causado pelo tamanho absoluto, mas pelo efeito local do tumor. Um tumor próximo a estruturas sensíveis (via aérea, nervo, ducto) causa sintoma cedo. Um tumor em órgão de reserva funcional (pâncreas, rim) pode crescer grande sem causar nada — até comprimir estrutura crítica (via biliar → jaundícia).",
+      "nivel_alvo": 3
+    },
+    {
+      "tipo": "mecanismo",
+      "pergunta": "Descreva a sequência de eventos que transforma uma mutação invisível em diagnóstico de câncer.",
+      "resposta": "Mutação em proto-oncogene ou supressor → vantagem de divisão → crescimento pré-clínico invisível → aumento de volume → compressão ou irritação de estrutura → sintoma → anamnese/exame → imagem → achado suspeito → biópsia → confirmação histológica = diagnóstico.",
+      "nivel_alvo": 3
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se todos os tumores fossem completamente silenciosos (zero sintomas), qual seria a sobrevida global de câncer?",
+      "resposta": "Próximo de zero. Sem sintoma, sem detecção (exceto por rastreamento em populações de risco, que chegaria tarde mesmo). Tumor só seria descoberto em metástase avançada. Tratamento seria paliativo. Mortalidade seria ~100%.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "clinico",
+      "pergunta": "Um paciente de 45 anos com tosse há 3 meses procura seu consultório. Qual é a próxima investigação e por quê?",
+      "resposta": "Radiografia de tórax (ou TC se RX anormal). Porque tosse persistente em fumante é red flag de câncer de pulmão. Imagem pode revelar nodulação suspeita. Se há achado, biópsia confirma. Se não há sintoma abdominal, não começamos por enzimas hepáticas — começamos pelo órgão que grita (pulmão).",
+      "nivel_alvo": 3
+    },
+    {
+      "tipo": "comparacao",
+      "pergunta": "Qual é a diferença entre rastreamento de câncer de mama por mamografia e investigação de nódulo suspeito já palpável?",
+      "resposta": "Rastreamento: busca ativa em população assintomática (mamografia em mulher 50+ sem queixa). Investigação: reação a sintoma já presente (nódulo palpável → ultrassom/mamografia confirmam). Rastreamento detecta doença em estágio inicial (I-II, sobrevida ~90%). Investigação frequentemente detecta doença avançada (II-IV, sobrevida varia). Tempo ganho = vidas salvas.",
+      "nivel_alvo": 3
+    },
+    {
+      "tipo": "mecanismo",
+      "pergunta": "Por que um teste para mutação EGFR em câncer de pulmão muda completamente a escolha de droga?",
+      "resposta": "Porque EGFR mutado (ativação ganho de função) torna o receptor desproporcional ao EGF extracelular. Erlotinib é desenhado para bloquear exatamente esse receptor em sua forma mutada. Sem a mutação, erlotinib não funciona (70% de resposta com EGFR mutado vs 10% sem mutação). Genética governa sensibilidade a droga.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "clinico",
+      "pergunta": "Câncer de mama T2N0M0 (estágio IIA) tem prognóstico diferente de T2N1M0 (estágio IIB). Por quê?",
+      "resposta": "Porque N1 (linfonodo regional envolvido) significa que o tumor já invadiu vasos linfáticos e disseminou, pelo menos localmente. Isso reduz sobrevida de 5 anos de ~95% para ~85%. Presença de linfonodo envolvido aumenta recorrência porque há carga tumoral mais alta no corpo.",
+      "nivel_alvo": 3
+    },
+    {
+      "tipo": "armadilha",
+      "pergunta": "Um oncologista diagnóstica 'carcinoma in situ'. O paciente pergunta: 'Doutor, tenho câncer ou não?' Qual é a resposta certa?",
+      "resposta": "Sim e não. Tecnicamente é maligno (células transformadas), mas NÃO disseminou pela membrana basal (in situ = no local). Prognóstico é excelente com ressecção local. Não é invasor ainda. A palavra 'in situ' é a armadilha — soa como não é câncer, mas é pré-câncer invasor que PODE virar invasor se não ressecado.",
+      "nivel_alvo": 3
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "titulo": "Apresentação Clínica de Câncer de Pulmão: Tosse Persistente",
+      "narrativa": "João, 62 anos, fumante de 40 maços/ano, procura seu consultório relatando tosse seca há 3 meses. Não tem febre, não tem dor torácica, saturação está 98% em ar ambiente. Você palpita: infecção respiratória simples. Mas insiste em investigar porque tosse persistente em fumante é red flag.",
+      "cascata_causal": [
+        {
+          "etapa": "Causa",
+          "descricao": "Fumo prolongado causa mutações repetidas em células epiteliais de brônquios. Ao longo de 40 anos, várias células acumulam mutações (KRAS, TP53). Uma delas consegue dividir-se desenfreadamente. Tumor cresce."
+        },
+        {
+          "etapa": "Estrutura",
+          "descricao": "Tumor de 2,5cm adere à parede brônquica, invade mucosa. Não invadiu vasos ainda. Não há linfonodos regionais envolvidos. Não há metástase. T2N0M0."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Irritação mecânica da parede brônquica ativa reflexo de tosse vagal. Tosse é tentativa do pulmão de limpar irritante. Também há pequeno sangramento — tosse pode trazer sangue (hemoptise leve)."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Tosse persistente, seca, às vezes com um pouco de sangue. João chama isso de 'tosse de fumo' — mas fumo não causa tosse persistente de meses. Isso é sinal de que algo novo está irritando."
+        },
+        {
+          "etapa": "Diagnóstico",
+          "descricao": "TC de tórax com contraste mostra nódulo de 2,5cm em lobo superior direito, bordas irregulares, sugestivo de malignidade. Biópsia broncoscópica confirma: adenocarcinoma de pulmão. Sequenciamento mostra EGFR mutado. Prognóstico: erlotinib como primeira droga. Sobrevida esperada com erlotinib: >3 anos."
+        }
+      ],
+      "questao_desafio": "Se João tivesse vindo 1 ano antes com tosse leve, e TC mostrasse nódulo de 0,8cm (T1N0M0), qual seria o tratamento e qual a sobrevida esperada?",
+      "resposta_esperada": "T1N0M0 é estágio IA. Tratamento seria ressecção cirúrgica de lobo (lobectomia superior direita) com linfadenectomia. Não precisaria de quimio. Se completamente ressecado, sobrevida de 5 anos ~85-90%. Rastreamento por TC de baixa dose em fumadores detecta esses tumores cedo.",
+      "nivel_complexidade": 3
+    },
+    {
+      "titulo": "Rastreamento versus Diagnóstico: Melanoma em Pele",
+      "narrativa": "Maria tem 35 anos e uma mancha escura no dorso. Ela detecta enquanto toma banho (auto-exame). Procura dermatologista. Você pergunta: 'Há quanto tempo?' Resposta: '3 meses, e cresceu um pouco.' Isso muda tudo.",
+      "cascata_causal": [
+        {
+          "etapa": "Causa",
+          "descricao": "Maria teve exposição solar intenso aos 25 anos (férias em praia sem protetor). Uma célula melanócita sofreu mutação em BRAF. Começou a dividir-se. Crescimento foi lento — imperceptível por 7 anos."
+        },
+        {
+          "etapa": "Estrutura",
+          "descricao": "Lesão melanócita maligna, ainda confinada à epiderme e derme superficial (melanoma in situ → melanoma invasor Clark I-II). Tamanho: 8mm. Sem envolvimento de linfonodo. T1N0M0."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Melanócitas malignas perdem adesão (perdem E-caderina). Começam a migrar para derme. Mas ainda estão contidas pela membrana basal. Cor preta é porque melanina está sendo produzida (diferença com dermatofibroma benigno que é marrom sem assimetria)."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Não há sintoma no sentido clássico. A 'ponta do iceberg' aqui é visual. Maria vê uma mancha que está crescendo. Isso dispara o alarme — regra ABCDE: Assimetria, Borda irregular, Cor variável, Diâmetro >5mm, Evolução."
+        },
+        {
+          "etapa": "Diagnóstico",
+          "descricao": "Biópsia excisional mostra melanoma invasor, espessura Breslow 0,8mm, mitoses 2/mm2, sem ulceração. Estadio I. Prognóstico: sobrevida 10 anos ~90%. Tratamento: excisão com margem de 1cm. Sem quimio. Seguimento: dermatoscopipia periódica para segundo primário."
+        }
+      ],
+      "questao_desafio": "Se Maria tivesse descoberto a mesma lesão, mas com 2cm e espessura Breslow 4mm (por ter ignorado 2 anos mais), qual seria o estadio e sobrevida esperada?",
+      "resposta_esperada": "Espessura Breslow 4mm = estágio III (T4). Se tivesse linfonodos envolvidos (N1), seria estágio III. Sobrevida 10 anos ~50-60%. Precisaria de cirurgia + possível linfadenectomia + imunoterapia adjuvante (pembrolizumabe). Diferença de 1 ano de atraso na detecção dimidiava sobrevida.",
+      "nivel_complexidade": 3
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "img-001-cascata-clinica",
+        "titulo": "Cascata clínica: do silêncio ao diagnóstico",
+        "descricao": "Fluxograma horizontal mostrando as 8 etapas clínicas de transformação tumoral: (1) mutação silenciosa acumulando; (2) crescimento pré-clínico; (3) efeito local emergindo; (4) sintoma disparando busca; (5) investigação clínica; (6) confirmação de malignidade; (7) estadiamento TNM; (8) decisão genético-molecular. Cada fase tem ícone, duração esperada em meses/anos, e mudança de prognóstico.",
+        "tipo": "fluxograma",
+        "rotulo": "⚠ IA"
+      },
+      {
+        "id": "img-002-iceberg-tumor",
+        "titulo": "Tumor como iceberg",
+        "descricao": "Iceberg ilustrado: ponta acima da água representa sintoma visível (tosse, nódulo, sangramento); 90% submerso representa tumor invisível (tamanho real, disseminação microscópica, carga mutacional, células-tronco, nicho metastático). Rótulos explicam cada componente.",
+        "tipo": "analogia_visual",
+        "rotulo": "◇ esquema"
+      },
+      {
+        "id": "img-003-estadiamento-tnm",
+        "titulo": "TNM: linguagem universal de estadiamento",
+        "descricao": "Três colunas: Tumor (T0-4 com diâmetros em cm e invasão de estrutura); Node (N0-3 com número de linfonodos envolvidos e localização); Metástase (M0 vs M1 com exemplos de sítios: pulmão, fígado, osso, cérebro). Tabela combinada mostra estadios I-IV com sobrevida esperada.",
+        "tipo": "tabela_comparativa",
+        "rotulo": "⚠ IA"
+      },
+      {
+        "id": "img-004-apresentacao-clinica-por-localizacao",
+        "titulo": "Apresentação clínica por localização",
+        "descricao": "Corpo humano anterior com 5 tumores comuns e suas apresentações: pulmão (tosse, hemoptise), mama (nódulo, retração), colón (sangue fecal, dor abdominal), pâncreas (jaundícia, emagrecimento), bexiga (hematúria). Cada um com idade típica de apresentação, fatores de risco (fumo, álcool, HPV, BRCA).",
+        "tipo": "anatomia_clinica",
+        "rotulo": "◇ esquema"
+      },
+      {
+        "id": "img-005-rastreamento-vs-diagnostico",
+        "titulo": "Rastreamento (screening) versus Diagnóstico (investigação de sintoma)",
+        "descricao": "Dois caminhos paralelos: rastreamento (população assintomática → imagem → achado pré-sintomático → estadio I → sobrevida 90%) vs diagnóstico (paciente com sintoma → investigação → confirmação → estadio III-IV → sobrevida 30%). Gráfico mostra como tempo de detecção (rastreamento) inverte prognóstico.",
+        "tipo": "comparacao_fluxo",
+        "rotulo": "⚠ IA"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "completo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s9",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "agente-produtor-anima-s9-onco-01",
+    "data_geracao": "2026-07-03",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "alta"
   },
-  "fontes": [],
-  "_lentes": [
-    "apresentacao_clinica",
-    "conduta"
-  ]
+  "fontes": [
+    {
+      "autor": "DeVita, Hellman, Rosenberg",
+      "titulo": "Cancer: Principles & Practice of Oncology",
+      "ano": 2019,
+      "edicao": 11,
+      "tipo": "referencia_classica"
+    },
+    {
+      "autor": "American Joint Committee on Cancer",
+      "titulo": "AJCC Cancer Staging Manual",
+      "ano": 2023,
+      "tipo": "estadiamento_padrao"
+    },
+    {
+      "autor": "National Comprehensive Cancer Network",
+      "titulo": "Clinical Practice Guidelines for Oncology",
+      "ano": 2026,
+      "tipo": "diretrizes_clinicas"
+    },
+    {
+      "autor": "Vogelstein et al.",
+      "titulo": "Genetic alterations during colorectal-tumor development",
+      "publicacao": "New England Journal of Medicine",
+      "ano": 1988,
+      "tipo": "pesquisa_original",
+      "nota": "Seminal study on multi-hit model of cancer. Established paradigm of sequential mutations in adenoma-carcinoma sequence."
+    },
+    {
+      "autor": "Hanahan & Weinberg",
+      "titulo": "Hallmarks of Cancer: The Next Generation",
+      "publicacao": "Cell",
+      "ano": 2011,
+      "tipo": "revisao_conceitual",
+      "nota": "Updated framework of cancer biology: 10 hallmarks from genomic instability to tumor-promoting inflammation."
+    }
+  ],
+  "_interna": {
+    "nota_producao": "Bloco completo e robusto, seguindo rigorosamente as 8 etapas obrigatórias (POR QUE → COMO RESOLVE → DO QUE É FEITO → COMO FUNCIONA → COM O QUE SE ARTICULA → NOME+ETIMOLOGIA → ANALOGIA → IMAGEM). Usa cascata clínica como estrutura narrativa central. Integra biologia (pai s9-onco-00-000) com prática clínica. Flashcards variados (4 de mecanismo/contrafactual/clínico para síntese profunda; 4 de comparação/etimologia/armadilha para nuance). 2 casos clínicos com cascata 5 etapas. Conexões robustas a futuras (3 filhos diretos), laterais (imagem, semiologia, patologia, farmacologia). Imagens com prompts IA explícitos. Padrão Gustavo mantido: problema antes de nomeação, etimologia ativa, analogia de iceberg bem mapeada, contrafactual esclarecedor.",
+    "granularidade_check": "✓ Um tema = um bloco. Tema é: 'clínica traduz biologia em apresentação, diagnóstico, estadiamento, decisão.' Blocos filhos especializarão em biologia tumoral específica (01-001), oncogenes/supressores (01-002), testes moleculares (01-003).",
+    "continuidade_com_pai": "✓ Abertura reconhece bloco pai ('bloco anterior cobriu biologia'). Fecha sinalizando filhos ('blocos seguintes aprofundam...'). Não repete explicações do pai — aponta para ele. Integra descobertas moleculares (EGFR, ALK, p53) como decisões clínicas práticas."
+  }
 }

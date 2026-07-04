@@ -1,0 +1,549 @@
+{
+  "resumo_id": "s9-emerg-01-001",
+  "no_pai_id": "s9-emerg-01-000",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [
+    "s9-emerg-01-002",
+    "s9-emerg-01-003",
+    "s9-emerg-02-000"
+  ],
+  "metadata": {
+    "titulo": "Triagem e Classificação de Risco (Manchester)",
+    "subtitulo": "Por que os pacientes não podem ser atendidos por ordem de chegada?",
+    "semestre": 9,
+    "disciplina": "emergência",
+    "sistema_corporal": "multisistêmico",
+    "regiao_anatomica": null,
+    "profundidade_arvore": 2,
+    "importancia": 5,
+    "dificuldade": 2,
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "data_criacao": "2026-07-03",
+    "data_ultima_revisao": "2026-07-03",
+    "versao": "1.0",
+    "tags": [
+      "emergência",
+      "triagem",
+      "manchester",
+      "classificação-risco",
+      "priorização",
+      "tempo-resposta",
+      "core"
+    ],
+    "nivel": "CORE",
+    "tipo": "algoritmo",
+    "canmeds": [
+      "manager",
+      "leader"
+    ]
+  },
+  "resumo_conciso": "Triagem é o filtro que decide, em 2-3 minutos, quem tem risco de morte **agora** e quem pode esperar. Sem ela, o paciente com parada cardíaca fica atrás de quem tem entorse. A solução histórica foi criar 5 cores (vermelho, laranja, amarelo, verde, azul) onde cada cor define um tempo-resposta máximo (SLA). O algoritmo Manchester, criado em 1997 num hospital britânico, é hoje o sistema mais usado no mundo. Funciona por árvore de decisão simples: perguntas rápidas e direcionadas (inconsciente? respirando? dor no peito? sangramento?) que um enfermeiro sem treinamento avançado consegue fazer em 180 segundos. Erros de triagem — um infarto triado como verde, um traumatizado menor como azul — causam morte evitável. Tempo é órgão.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você é enfermeiro de triagem num pronto-socorro. Chegam **5 pacientes simultaneamente**. Um tem uma entorse no pé. Outro respira com dificuldade. Um terceiro está inconsciente. Uma mulher relata dor no peito há 20 minutos. A quinta paciente é uma criança com febre há 3 dias. Você tem **uma maca livre**. Para qual você chama o médico primeiro? Para todos simultaneamente? A resposta intuitiva ('o que chegou primeiro') mata."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Triagem não é trivia — é a primeira decisão de vida ou morte que alguém toma no hospital. E ela precisa ser tomada em 2-3 minutos, por um profissional que não tem acesso a exame de imagem, não pode fazer eletrocardiograma prévio, não tem laboratório. Triagem é a **resposta hospitalar ao problema da incerteza sob pressão**. Como você separa quem precisa de reanimação naquele instante de quem pode esperar 4 horas?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, exatamente, esse sistema resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada pronto-socorro tem capacidade finita de recursos: médicos, enfermeiros, macas, monitores, defibriladores. Se todos fossem atendidos por ordem de chegada, ocorreria uma tragédia previsível: o paciente que chegar aos 8:59 com infarto aguardaria 3 horas enquanto um paciente que chegou aos 9:00 com afta era visto em 10 minutos. Fisicamente impossível dar a mesma velocidade de atendimento a problemas que têm risco de morte completamente diferente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é de **alocação de recursos escassos**. A solução clássica da medicina de emergência foi criar uma **fila de prioridades** ao invés de uma fila linear. Para fazer fila de prioridades, é preciso primeiro **medir** essa prioridade — isto é, classificar cada paciente num patamar de risco. E classificação rápida e confiável é o que se chama triagem."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: triagem é o ato de **medir risco em tempo real** para criar fila de prioridades. Sem ela, recursos se distribuem aleatoriamente. Com ela, a criança com asma grave é vista antes do idoso com rinite."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a medicina de emergência resolveu o problema"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução universal foi classificar pacientes em **categorias discretas** — cores ou números — onde cada categoria define um **tempo-resposta máximo** (SLA = Service Level Agreement). A ideia é simples: não é possível calcular o risco absoluto de cada paciente em 2 minutos, mas é absolutamente possível fazer perguntas rápidas e direcionadas que o colocam num dos 5 buckets de risco."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em 1997, um hospital de Manchester (Reino Unido) sistematizou essas perguntas e criou o **Manchester Triage System (MTS)** — que se tornou, em 30 anos, o padrão internacional de facto. Hoje é usado em mais de 100 países, em hospices africanos e em salas de emergência de Toronto. Funciona porque é **algorítmico, simples e baseado em sinais visíveis**, não em diagnóstico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A beleza do sistema é que ele **não pede diagnóstico** — ele pergunta **sinais**. Um enfermeiro de triagem não precisa saber se é infarto, embolia ou pneumonia — só precisa saber se o paciente está respirando bem ou mal, se está acordado ou não, se está sangrando ou não."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse sistema?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Três elementos obrigatórios: (1) **5 cores de risco** com seus tempos-resposta máximos, (2) uma **árvore de decisão** com 4-6 perguntas diagnósticas por nível, (3) critérios de **reavaliação periódica** porque o paciente pode descompensar e mudar de cor."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "As 5 cores e seus tempos-resposta"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**VERMELHO (Emergência)** — Risco de morte AGORA. O paciente pode estar em parada cardiorrespiratória, choque, alteração severa do nível de consciência, ou dificuldade respiratória severa. Tempo-resposta: **IMEDIATO** (entra na sala de reanimação antes de terminar de registrar o nome, médico já presente). Exemplos: parada cardíaca, choque séptico, insuficiência respiratória com SatO2 < 90% em repouso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**LARANJA (Muito Urgente)** — Risco potencial de descompensação rápida. Sinais de alerta: dor torácica, dispneia moderada, alteração leve da consciência, hipotensão, hemorragia ativa. Tempo-resposta: **<10 minutos** (cama na ala de observação, médico vê em <10 min, não é para espera). Exemplos: infarto em janela, tromboembolismo, cetoacidose diabética."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**AMARELO (Urgente)** — Risco moderado. Sinais presentes: febre alta com mal-estar, abdominalgia moderada, cefaleia intensa, trauma com suspeita de lesão interna, criança com erupção petequial. Tempo-resposta: **<1 hora** (será atendido dentro de uma hora, mas pode ficar em espera alguns minutos). Exemplos: sepse sem choque inicial, apendicite, sepse meningocócica em compensação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**VERDE (Pouco Urgente)** — Risco baixo. Sinais estáveis: queixa crônica agudizada, entorse, afta, conjuntivite, cefaleia leve. Tempo-resposta: **<4 horas** (pode esperar, será visto dentro do turno). Exemplos: luxação de dedo, inflamação de garganta, cólica nefrética calmada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**AZUL (Não Urgente)** — Risco mínimo. Paciente está bem, apresenta problema crónico ou trivial, não há sinais de gravidade. Tempo-resposta: **>4 horas** ou encaminhar a atenção primária. Exemplos: ferida em consolidação, solicitação de documento, hidratação leve, cefaleia crônica sem red flags."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "**Regra de ouro:** Cada cor tem um **tempo máximo de espera** que é direito do paciente e obrigação do hospital. Violá-lo é negligência. Um paciente laranja que fica 20 minutos em espera é violação de SLA; um paciente verde que é visto em 20 minutos não é, mas em 70 minutos já é."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A árvore de decisão de Manchester"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O algoritmo funciona por cascata de perguntas. O paciente entra, e a triadora inicia a árvore."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Fluxo de triagem Manchester (versão simplificada)",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Está inconsciente ou incapaz de responder?",
+          "explicacao": "Se SIM → VERMELHO imediato. Paciente entra na reanimação. Nenhuma pergunta adicional. Se NÃO → continua."
+        },
+        {
+          "numero": 2,
+          "titulo": "Há dificuldade respiratória severa (dispneia em repouso, estridor, SatO2 < 90%)?",
+          "explicacao": "Se SIM → VERMELHO ou LARANJA (depende de gravidade: SatO2 < 90% = VERMELHO; SatO2 92-94% com desconforto = LARANJA). Se NÃO → continua."
+        },
+        {
+          "numero": 3,
+          "titulo": "Há dor torácica, desconforto epigástrico ou diafragmático agudo?",
+          "explicacao": "Se SIM e o paciente é adulto ou idoso → LARANJA (possível infarto, embolia, pericardite). Se SIM e é criança pequena → examinar causa alérgica ou trauma. Se NÃO → continua."
+        },
+        {
+          "numero": 4,
+          "titulo": "Há hemorragia externa severa, hipotensão, ou sinais de choque (extremidades frias, enchimento capilar >2s)?",
+          "explicacao": "Se SIM → VERMELHO (hemorragia severa) ou LARANJA (sinais precoces de choque). Se NÃO → continua."
+        },
+        {
+          "numero": 5,
+          "titulo": "É criança com irritabilidade excessiva, rigidez de nuca, erupção petequial ou púrpura não branqueável, ou febre >39°C com aspecto tóxico?",
+          "explicacao": "Se SIM → LARANJA (possível meningite, sepse meningocócica — emergência pediátrica clássica). Se NÃO → continua."
+        },
+        {
+          "numero": 6,
+          "titulo": "Há febre (>38°C) com mal-estar, hipoxia, taquicardia ou outros sinais inflamatórios, ou abdominalgia difusa?",
+          "explicacao": "Se SIM → AMARELO. Se NÃO → continua."
+        },
+        {
+          "numero": 7,
+          "titulo": "O paciente tem estabilidade completa, sinais vitais normais, queixa crônica ou trivial, sem red flags?",
+          "explicacao": "Se SIM → VERDE ou AZUL (depende da queixa: entorse = VERDE; afta = AZUL). Se há qualquer dúvida → AMARELO."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Nota crítica:** A árvore real (versão 5 do Manchester, a mais atual) tem dezenas de perguntas ramificadas, com critérios muito específicos para cada contexto clínico. O que mostramos acima é uma versão educacional simplificada. Na prática clínica, o enfermeiro de triagem usa **protocolos impressos ou apps** com a árvore completa. A versão 5 inclui, por exemplo, perguntas sobre: febre em criança <3 meses (sempre LARANJA), tosse seca em criança (pode ser viral leve = VERDE), hematêmese (geralmente LARANJA), e centenas de outros cenários. Mas o **princípio é sempre o mesmo**: sinais, não diagnóstico; algoritmo, não julgamento."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em movimento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere o fluxo real num pronto-socorro com triagem Manchester em funcionamento."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Ciclo de triagem e reavaliação",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Entrada e triagem inicial",
+          "explicacao": "Paciente chega. Triadora faz perguntas de risco em 2-3 minutos. Resultado: cor e SLA."
+        },
+        {
+          "numero": 2,
+          "titulo": "Alocação de espaço",
+          "explicacao": "VERMELHO → sala de reanimação com médico presente. LARANJA → cama em área de observação monitorada. AMARELO → maca em corredor ou ala de espera com acesso a vitais. VERDE/AZUL → assentos na sala de espera."
+        },
+        {
+          "numero": 3,
+          "titulo": "Acionamento de recursos",
+          "explicacao": "VERMELHO → médico + enfermeiro + desfibrilador imediatos. LARANJA → médico chamado (tempo <10 min). AMARELO/VERDE → ordem da fila respeitando SLA."
+        },
+        {
+          "numero": 4,
+          "titulo": "Reavaliação contínua",
+          "explicacao": "A cada 15 minutos (ou se paciente relata piora), triadora reavalia. Paciente VERDE com dispneia nova → LARANJA. Paciente AMARELO que febre sobe e fica taquicárdico → LARANJA. Mudança de cor = mudança de SLA e de local."
+        },
+        {
+          "numero": 5,
+          "titulo": "Acompanhamento até atendimento",
+          "explicacao": "SLA é contrato: LARANJA que demora >10 min vira indicador de falha. Se o pronto-socorro está saturado e SLA é violado, ativa protocolo de crise (ativar reforço de médicos, transferir para outro hospital, etc.)."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A elegância do Manchester é que ele **separa a queixa da prioridade**. Um paciente que chega com dor abdominal pode ser AZUL (cólica biliar calmada), AMARELO (apendicite suspeita), LARANJA (apendicite perforada com peritonite), ou até VERMELHO (isquemia mesentérica com choque). A cor não depende da palavra 'abdominalgia', mas de sinais objetivos: é estável? Tem febre? Está pálido? Está em choque? A mesma queixa gera cores diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse sistema se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Triagem Manchester é o **primeiro filtro** de qualquer emergência moderna. Tudo que vem depois dela depende da cor: VERMELHO vai direto para ABCDE (bloco s9-emerg-01-002), ressuscitação e diagnóstico paralelo. LARANJA entra em protocolo de avaliação rápida (EKG em <10 min para dor torácica, por exemplo). AMARELO/VERDE seguem diagnóstico sistemático. É impossível entender fluxo de emergência sem triagem Manchester — ela é a boca do sistema."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A cor também **condena ou salva** o desfecho clínico. Um paciente com infarto triado LARANJA tem chance real de chegar à unidade coronariana em tempo de trombolítico ou intervenção. Um triado VERDE fica 4 horas na espera; quando é visto, já está em arritimia. A diferença entre cura e morte, muitas vezes, é 10 minutos — exatamente o SLA laranja."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Triagem",
+      "origem": "do francês 'trier' (selecionar, separar), originária do latim 'tritum' (separado, gradeado, como peneira)",
+      "significado": "literalmente, 'ato de separar selecionando'",
+      "explicacao": "O termo 'triagem' nasceu na linguagem têxtil: o processo de separar fibras de algodão por qualidade usando uma peneira (tela). Em medicina de emergência, foi adotado no século XX para descrever o ato de 'peneirar' os pacientes por risco. Manchester refere-se ao **Manchester Royal Infirmary** (Hospital Real de Manchester, Reino Unido), onde o sistema foi criado em 1997 por um grupo de enfermeiros e médicos liderados pela dra. Jan Mackway-Jones. A versão 5, a mais atual, foi lançada em 2020 e é a que usamos hoje em dia. O sistema ficou tão disseminado que 'triagem' e 'Manchester' se tornaram sinônimos em muitos países — ainda que existam outros sistemas (ESI, CTAS, ATLS), Manchester permanece a referência."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para entender o princípio"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚨",
+      "conteudo": "Pense num **porto de desembarque durante um desastre**. 500 refugiados chegam de barco danificado. O porto tem **uma equipe médica pequena** (2 médicos, 5 enfermeiros, 10 macas). Se todos fossem triados como 'chegou primeiro, será atendido primeiro', teríamos uma fila linear: a 100ª pessoa demoraria 50 horas (8 pessoas/hora × 2 médicos). Isto é morte em massa. **Solução:** um enfermeiro fica na entrada e, em 30 segundos, separa: 'Você está inconsciente? Vermelho, entra na barraca de reanimação já. Você tem ferimento com muito sangue? Laranja, senta ali. Você está de pé, acordado, falando? Verde, senta aqui.' De repente, os recursos se concentram: os 2 médicos veem os vermelhos e laranjas enquanto os verdes são atendidos por enfermeiros em paralelo. A mesma equipe pequena salva muito mais gente. **O mapeamento:** A entrada = recepção do PS; a triadora = enfermeiro de triagem; os 5 buckets de prioridade = as 5 cores; a barraca de reanimação = sala de reanimação do PS; a concentração de médicos = recurso escasso se distribuindo onde é mais needed. Triagem Manchester é exatamente isto: separar para otimizar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que erros de triagem matam"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Toda triagem errada é uma oportunidade de morte perdida. Há dois tipos de erro: **falso-negativo** (classificar como menos urgente do que realmente é) e **falso-positivo** (classificar como mais urgente do que é)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Falso-negativo (PIOR):** Paciente com infarto é triado como VERDE porque relata 'dor leve' e o triador não fez EKG. Resultado: 4 horas de espera. Enquanto aguarda, evolui para taquicardia, arritmia, choque cardiogênico. Chega ao médico em fibrilação ventricular — morte cerebral. O infarto inicial era tratável; a negligência de triagem transformou doença solúvel em catástrofe. **Outro exemplo:** Criança com meningite meningocócica é triada como VERDE (só tem febre e cefaleia leve). Triador não perguntou sobre rigidez de nuca nem rash. Criança fica 3 horas na espera. Enquanto isso, bactérias se multiplicam no LCR, coagulopatia ativa (púrpura fulminante), choque séptico. Criança chega ao médico EM CHOQUE. Até com antibióticos imediatos, o dano já está feito. Taxa de morte: 15-20%. Se tivesse sido vista como LARANJA em 10 minutos, teria chego em compensação, antibióticos teria vencido, taxa de morte seria <5%."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Falso-positivo (melhor, mas caro):** Paciente com ansiedade é triado como LARANJA (dor torácica). EKG normal, troponina normal. Despede-se 3 horas depois. Recurso foi gasto, mas a vida não foi perdida — apenas usou mais cama do que era necessário. Falso-positivo é erro aceitável; falso-negativo é homicídio involuntário."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "**Verdade dura:** Tempo é órgão. Cada hora de atraso numa triagem errada é uma hora de hipóxia, isquemia, sepse que avança. A diferença entre vida e morte em emergência muitas vezes é medida não em dias, mas em **minutos**. Um paciente VERMELHO que demora 5 minutos em vez de 1 minuto pode perder a janela trombolítica para AVC. Triagem bem feita não é luxo administrativo — é a cicatriz entre medicina de emergência que funciona e medicina que mata por negligência."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se não houvesse triagem e todos os pacientes fossem atendidos por ordem de chegada, qual seria o impacto no desfecho dos pacientes com infarto, AVC e sepse?",
+      "resposta": "Desastre previsível. **Infarto:** janela trombolítica é 3-4.5 horas do sintoma; sem triagem, paciente fica em espera aleatória (média 1-3 horas no fim da fila) → chega ao médico fora da janela → morte ou infarto extenso. **AVC:** janela de trombectomia é 6-24 horas (com imagem certa) ou 4.5 horas com trombolítico; espera de 2-4 horas sem triagem = perda de fenestra → pior sequela neurológica. **Sepse:** cada hora de atraso na triagem = hora de atraso no antibiótico → aumento de 6-8% na mortalidade (Meta-análise de Kumar 2006). Um paciente séptico que esperaria 4 horas (verde errado) ao invés de 10 minutos (laranja correto) teria mortalidade aumentada de 40% para 56% — 16 pontos percentuais de morte evitável, em 3.5 horas. **Conclusão:** Triagem não é detalhe administrativo — é a diferença entre pronto-socorro que cura e pronto-socorro que mata por tempo wasted."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Árvore de decisão de triagem Manchester",
+      "descricao": "Fluxograma completo em formato de árvore, começando em 'Paciente chega' no topo. Primeira decisão: 'Inconsciente ou não responsivo?' com seta SIM levando a VERMELHO com caixa vermelha destacada 'IMEDIATO'; seta NÃO continua a próxima pergunta. Segunda: 'Dificuldade respiratória severa?' SIM → VERMELHO ou LARANJA (laranja destacada); NÃO continua. Terceira: 'Dor torácica aguda?' SIM → LARANJA; NÃO continua. Quarta: 'Hipotensão/choque/hemorragia?' SIM → VERMELHO ou LARANJA; NÃO continua. Quinta: 'Criança com sinais de meningite?' SIM → LARANJA; NÃO continua. Sexta: 'Febre + mal-estar?' SIM → AMARELO; NÃO continua. Sétima: 'Paciente totalmente estável?' SIM → VERDE ou AZUL; NÃO → AMARELO por precaução. Abaixo da árvore: tabela com 5 cores, significado, SLA, exemplos de diagnósticos. Fundo neutro adaptativo. Cores brilhantes e distintivas.",
+      "prompt_ia": "Diagrama flowchart vetorial estilo médico, fundo transparente adaptativo. Árvore de decisão de triagem Manchester em formato de fluxograma vertical. Comece no topo com 'PACIENTE CHEGA AO PS' em caixa azul. Abaixo, losangos de decisão numerados 1-7 com perguntas: (1) 'Inconsciente?', (2) 'Dificuldade respiratória severa?', (3) 'Dor torácica aguda?', (4) 'Hipotensão/Choque/Hemorragia?', (5) 'Criança com meningite?', (6) 'Febre + mal-estar?', (7) 'Totalmente estável?'. Cada losango tem seta 'SIM' levando a caixa de cor correspondente e seta 'NÃO' continuando para próximo losango. Caixas de cor: VERMELHO (SLA Imediato), LARANJA (SLA <10 min), AMARELO (SLA <1h), VERDE (SLA <4h), AZUL (SLA >4h). Dentro de cada caixa de cor, 2-3 exemplos de diagnósticos. Setas claramente marcadas. Fonte sem serifa. Alto contraste, sem ambiguidade. Sem direitos autorais."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s9-emerg-01-000",
+        "titulo": "Princípios Gerais de Emergência",
+        "disciplina": "emergência",
+        "semestre": 9,
+        "relevancia": "base_necessaria",
+        "explicacao": "Triagem é o primeiro algoritmo aplicado em emergência; pressupostos sobre fluxo e priorização estão no bloco pai."
+      },
+      {
+        "bloco_id": "s8-fisio-01-001",
+        "titulo": "Resposta Inflamatória Sistêmica e SIRS",
+        "disciplina": "fisiologia",
+        "semestre": 8,
+        "relevancia": "contexto_complementar",
+        "explicacao": "Entender sinais de sepse (febre, taquicardia, taquipneia) é prerequisito para reconhecer quando AMARELO deve virar LARANJA."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": "s9-emerg-01-002",
+        "disciplina": "emergência",
+        "semestre_futuro": 9,
+        "topico": "Avaliação ABCDE pós-triagem",
+        "mecanismo_conexao": "Todo paciente VERMELHO ou LARANJA entra em avaliação ABCDE imediatamente após triagem. Triagem decide QUANDO entra; ABCDE define O QUE se faz."
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": "s9-emerg-01-003",
+        "disciplina": "emergência",
+        "semestre_futuro": 9,
+        "topico": "Choque — triagem falha causa morte por retardo diagnóstico",
+        "mecanismo_conexao": "Paciente com choque séptico triado como VERDE fica 4h na espera. Enquanto isso, compensação falha, órgãos entram em falha. Conceito de 'time is organ' origina-se em triagem."
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": "s9-emerg-02-000",
+        "disciplina": "emergência",
+        "semestre_futuro": 9,
+        "topico": "Sépse — detecção precoce em triagem reduz mortalidade em 7%",
+        "mecanismo_conexao": "Sepse é condição onde cada hora sem antibiótico aumenta mortalidade 6-8%. Triagem que reconhece sinais inflamatórios (febre + taquicardia + respiração rápida) e classifica como LARANJA é salvadora de vidas."
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": "s9-emerg-03-000",
+        "disciplina": "emergência",
+        "semestre_futuro": 9,
+        "topico": "Infarto Agudo do Miocárdio — janela trombolítica depende de triagem eficiente",
+        "mecanismo_conexao": "Trombolítico ou ATC para IAM só funciona se dado dentro de 4.5h (trombo) ou 6-24h (trombectomia). Triagem que falha em reconhecer dor torácica aguda = paciente cai fora da janela de resgate."
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s9-emerg-01-001-flashcards",
+        "tipo_relacao": "PRÁTICA_VALIDAÇÃO",
+        "explicacao": "Flashcards e casos de triagem para treinar reconhecimento de sinais de alarme."
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "card_id": "s9-emerg-01-001-fc01",
+      "pergunta": "Um paciente VERMELHO que demora 5 minutos para entrar na sala de reanimação em vez de 1 minuto: qual é o impacto fisiológico?",
+      "resposta": "Em emergências, cada minuto é crítico. Um paciente com parada cardíaca tem diminuição de 10% na chance de sobrevivência a cada minuto sem RCP (American Heart Association). Um paciente com AVC isquêmico perde ~1.9 milhões de neurônios por minuto de isquemia (Saver, 2006). Um paciente com infarto tem expansão da zona de necrose a cada minuto sem reperfusão. Os 4 minutos de diferença não parece muito, mas são 4 milhões de neurônios perdidos num AVC, ou 40% de redução na sobrevivência em parada. **Essa é a razão pela qual VERMELHO é 'IMEDIATO', não 'em 5 minutos'** — porque 5 minutos é a diferença entre cura e morte.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "triagem",
+        "tempo-crítico",
+        "emergência"
+      ]
+    },
+    {
+      "card_id": "s9-emerg-01-001-fc02",
+      "pergunta": "Descreva o percurso de um paciente triado como LARANJA no pronto-socorro: onde fica, como é monitorizado, quando é visto pelo médico?",
+      "resposta": "Um paciente LARANJA (muito urgente, SLA <10 minutos): (1) **Entrada:** triadora identifica sinais de alarme (dor torácica, dispneia, hipotensão leve) em 2-3 min e marca cor laranja. (2) **Local:** é direcionado para cama em área de observação com **monitor cardíaco contínuo** (ECG contínuo, SpO2, PA automática, frequência respiratória) — não fica em assentos de espera, fica deitado/sentado elevado com acesso IV se indicado. (3) **Tempo:** acionamento automático de médico — chamado via intercomunicador ou pager com aviso 'LARANJA no leito 4' — tempo-alvo é médico estar avaliando em <10 minutos. (4) **Paralelo:** enfermeiro coleta sangue para labs, pode fazer EKG em <3 min se dor torácica. (5) **Reavaliação:** a cada 15 min (ou se piora clínica), pode ser reclassificado como VERMELHO (caso descompense) ou demovido para AMARELO (se melhora). **Em resumo:** LARANJA = cama monitorizada, não é fila de espera, é observação ativa até ver o médico em <10 min."
+    },
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "triagem",
+        "manchester",
+        "fluxo-ps"
+      ]
+    },
+    {
+      "card_id": "s9-emerg-01-001-fc03",
+      "pergunta": "Se um paciente com sepse meningocócica (com rash petequial, febre, rigidez de nuca) fosse triado como VERDE por engano, qual seria a consequência fisiológica hora a hora?",
+      "resposta": "**Hora 0-2 (compensação latente):** Paciente tem temperatura 39.5°C, cefaleia, fraqueza, mas está acordado e falando — nada 'grita' morte iminente. Triador distracted identifica só 'febre e cefaleia' = VERDE, <4h. Paciente senta em cadeira da sala de espera. Enquanto aguarda: bactéria (N. meningitidis) está se replicando exponencialmente no espaço subaracnoideu e na corrente sanguínea, liberando endotoxina. **Hora 2-3:** Bactérias disparam cascata de coagulação → liberação de fator tecidual → microtrombos. Rash que era pequeno vai expandindo para púrpura (não-branqueável). Paciente começa a se queixar de dor generalizada, pele fria. Vital começa: frequência cardiaca sobe para 140, PA baixa (110/60), respiração rápida (30/min). **Hora 3-4:** Entra em choque séptico overt: PA < 90/60, extremidades pálidas e frias, confusão mental aparece. Triadora, em reavaliação, vê piora e muda para LARANJA ou VERMELHO — TARDE. Paciente é levado de maca para reanimação em choque refratário. Lactato sérico >4 mmol/L (já significa falha de perfusão). **Hora 4-6:** Já em UTI em noradrenalina máxima, coagulopatia está em DIC (fibrinogênio caindo), necrose de tecidos já visível em dedos e orelhas (parte distal é primeira a morrer em choque), insuficiência renal aguda (creatinina >2). Se sobreviver, vai perder dedos/pele. Taxa de mortalidade já subiu de 5% (se visto em <1h) para 15-20% (se visto em 4h). **Pior:** Se antibiótico tivesse sido dado na hora 1 em vez de hora 4, a bactéria teria sido controlada ainda em fase compensatória; agora está controlando dano de sepse em progresso. A diferença de 3 horas não parece muito, mas é a diferença entre 'vida com cura' e 'vida com amputação' ou 'morte'."
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "triagem",
+        "sepse",
+        "meningite",
+        "erro-consequências"
+      ]
+    },
+    {
+      "card_id": "s9-emerg-01-001-fc04",
+      "pergunta": "Mulher 55a chega com dor torácica há 30 minutos, pressão arterial 140/90, frequência cardíaca 102/min, respiração 20/min, pele pálida. Como seria triada e qual diagnóstico deve estar no radar do triador?",
+      "resposta": "**Triagem:** LARANJA (muito urgente, SLA <10 min). **Motivos:** Dor torácica aguda em adulto de meia-idade é achado de alarme universal para: infarto agudo do miocárdio (IAM), tromboembolismo pulmonar (TEP), dissecção aórtica, pericardite. A taquicardia (102) e taquipneia (20) sugerem compensação (o coração está dizendo 'estou sofrendo'). Pressão arterial ainda está preservada, mas já no limite. Palidez sugere redistribuição de fluxo (shock incipiente). **Ação imediata:** (1) Deitar em cama com monitor contínuo. (2) Oxigênio se SpO2 < 95%. (3) **EKG em <3 minutos** — não é uma 'triagem extra', é parte da triagem LARANJA (EKG é tão rápido que faz parte do algoritmo). (4) IV com dispositivo de grande calibre (elevar se TEP, abaixar se STEMI com alto risco de edema pulmonar — mas já teremos EKG para guiar). (5) Médico chamado AGORA com aviso 'Dor torácica, LARANJA, possível infarto'. (6) Se EKG mostra STEMI (elevação de ST) → ativa via de infarto (leva direto para hemodinâmica/trombólise). Se normal ou inespecífico → ainda LARANJA, troponina sai, espera resultado (<1h). **Por que não é AMARELO?** Porque dor torácica em >45 anos nunca, NUNCA é AMARELO — é protocolo internacional. O custo de errar um infarto é morte; o custo de um falso-positivo (paciente com ansiedade) é 3 horas de observação. Vale a pena errar para o lado da vida."
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "triagem",
+        "dor-torácica",
+        "infarto",
+        "manchester"
+      ]
+    },
+    {
+      "card_id": "s9-emerg-01-001-fc05",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Porque triagem Manchester usa 5 cores, há sempre exatamente 20% de pacientes em cada cor.'",
+      "resposta": "**Falso**. A distribuição é altamente assimétrica. Em pronto-socorro típico (sem trauma ou mega-desastre): **VERMELHO:** 1-3% (poucos — só os que estão morrendo/mortos agora). **LARANJA:** 5-15% (varável: hospital-dia tem mais LARANJA por seleção de casos; PS de trauma tem mais VERMELHO). **AMARELO:** 30-50% (maioria — infecções moderadas, abdominalgias, traumatismos leves a moderados). **VERDE:** 20-40% (segundo maior grupo — aftas, entorses, quadros crônicos agudizados sem gravidade). **AZUL:** 5-15% (variável — alguns PS não usam AZUL e mandam direto para atenção primária). A distribuição não é 20% cada; é **piramidal**: poucos no topo (VERMELHO) e crescente número nos estratos inferiores (AMARELO-VERDE). Isto faz sentido: se houvesse 20% de VERMELHO, o PS estaria em colapso permanente. A evolução selecionou hospitais que conseguem triagear corretamente — e corretamente significa **poucos VERMELHO, maioria AMARELO-VERDE**. Um PS com 10% VERMELHO é suspeito (triagem muito agressiva?) ou está num hotspot de trauma/AVC."
+      "tipo": "armadilha",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "triagem",
+        "estatística",
+        "manchester",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s9-emerg-01-001-fc06",
+      "pergunta": "Descreva a etimologia de 'triagem' e conecte ao conceito histórico de como emergências começaram a funcionar no século XX.",
+      "resposta": "**Etimologia:** 'Triagem' vem do francês *trier* (selecionar, separar), que origina do latim *tritum* (separado, peneireado, como em um crivo de grãos). A imagem é antiga: um agricultor com saco de trigo misturado com joio passa pela peneira; o trigo desejado cai de um lado, o refugo cai do outro. **Contexto histórico:** No século XX, emergências começaram como 'salas de acidente' simples — um médico, uma maca, pacientes chegavam. Conforme volume cresceu (pós-guerra, urbanização), hospitais descobriram que **'primeiro que chega, primeiro que é visto' mata**. Um cirurgião gastava 2 horas operando uma apendicite num paciente que chegou primeiro, enquanto um paciente com infarto em parada cardíaca esperava 3 horas. Nos anos 1970-80, hospitais em países desenvolvidos começaram a usar cores informalmente. Em 1997, Manchester sistematizou isto no MTS (Manchester Triage System) — e o nome 'triagem' foi finalmente formalizado na medicina como 'o ato de peneirar pacientes por risco usando algoritmo, não diagnóstico'. Hoje, 'triagem' é parte obrigatória de qualquer protocolo de emergência no mundo. **Conexão:** A etimologia revela uma verdade: triagem não é burocracia — é **manuseio de quantidade com critério de risco**, exatamente como o agricultor separava grãos por tamanho/qualidade. É uma ferramenta universalmente humana (peneira → triagem) aplicada a emergência médica para maximizar sobrevivência quando recursos são finitos."
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "triagem",
+        "etimologia",
+        "história"
+      ]
+    },
+    {
+      "card_id": "s9-emerg-01-001-fc07",
+      "pergunta": "Compare triagem Manchester com 'primeiro que chega, primeiro que é atendido' (FIFO — First In, First Out) em termos de resultado clínico, custo de recursos e justiça.",
+      "resposta": "| Critério | FIFO ('ordem chegada') | Manchester (prioridade risco) |\n|----------|---|---|\n| **Resultado clínico** | Desastre: infarto fica 4h, séptico perde hora crítica, 30% de mortalidade evitável | Otimizado: infarto visto em 10 min, séptico em <1h, mortalidade reduzida em 7-15% dependendo de patologia |\n| **Custo de recursos** | Ineficiente: médicos ociosos esperando casos graves enquanto trabalham em casos triviais | Eficiente: recursos concentrados onde são needed; médicos veem LARANJA/VERMELHO em paralelo com enfermeiros em VERDE |\n| **Justiça** | Aparente igualdade (todos são 'iguais'), mas injusta na prática (doente morre esperando atrás de saudável) | Desigual formalmente (cores diferentes), mas justa substancialmente (cada um recebe tempo proporcionado ao risco) |\n| **Exemplos de impacto** | AVC em 4ª fila espera 45 min → sai da janela trombolítica (morte/paralisia). Apendicite madura vira perfurada (peritonite, morte). | AVC em 4ª fila (LARANJA) é visto em 10 min → entra trombolítico/trombectomia (cura/recuperação). Apendicite é operada em <2h sem perfuração. |\n| **O nome 'justiça'** | Igualar = tratar todos igual. Mas justo é dar **ao doente** o que precisa, não ao saudável. | Triagem reconhece que **justiça é proporcional ao risco**, não às quotas iguais. |\n**Conclusão:** FIFO é simples e *aparenta* ser justo, mas mata. Manchester é complexo, parece *injusto* (cores diferentes), mas **salva vidas**. Na medicina, justiça não é igualdade de tempo — é proporção de tempo ao risco."
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "triagem",
+        "manchester",
+        "justiça",
+        "alocação-recursos"
+      ]
+    },
+    {
+      "card_id": "s9-emerg-01-001-fc08",
+      "pergunta": "Conecte: triagem Manchester (algoritmo de priorização) com fenômeno de 'golden hour' (primeira hora crítica). Por que triagem é a guardião da golden hour?",
+      "resposta": "**Conceito de golden hour:** Formulado originalmente na medicina de trauma (Cothren & Moore, 2004), a 'hora de ouro' é o período crítico onde intervenção rápida e assertiva (cirurgia em trauma, reperfusão em IAM, antibiótico em sepse) tem impacto exponencial na mortalidade. Fora da golden hour, o paciente entrou em compensação celular → múltiplos órgãos começam a falhar (cascata inflamatória → disfunção endotelial → coagulopatia). **Por que triagem é guardião?** Porque triagem **não cria** a golden hour, mas **a protege**. A golden hour é um fenômeno biológico (tecidos têm tolerância finita a isquemia); triagem é o algoritmo que reconhece quando a golden hour começou e aloca recursos para que o paciente ENTRE EM TRATAMENTO DENTRO DAQUELA HORA. (1) **Sem triagem:** Um infarto chega, não há reconhecimento de urgência, fica em fila linear, é visto após 2-3 horas → **sai da golden hour inteiro, morte celular miocárdica já começou**. (2) **Com triagem:** Infarto é reconhecido como LARANJA em 2 min, está na hemodinâmica em 10 min → **dentro da golden hour, angioplastia pode salvar o miocárdio**. A diferença não é triagem sendo 'mágica' — é triagem sendo **eficiente em defender a biologia contra a burocracia**. É por isso que em grandes centros (hospitais com triagem well-trained e recursos abundantes), mortalidade por infarto é 5-8%; em pequenos hospitais (triagem fraca, recursos limitados), é 12-15%. O fator diferenciador é **quantos pacientes entram em tratamento dentro da golden hour**. Triagem Manchester garante que eles entrem. É a razão pela qual o sistema tem SLAs específicos: VERMELHO <1 min, LARANJA <10 min — esses são os tempos que mantêm a golden hour intacta biologicamente."
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "triagem",
+        "golden-hour",
+        "manchester",
+        "fisiologia-emergência",
+        "tempo-crítico"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s9-emerg-01-001-caso01",
+      "titulo": "Mulher 55a com dispneia aguda — triagem que salva ou mata",
+      "apresentacao": "Mulher de 55 anos, anteriormente saudável, chega ao PS acompanhada da filha. Relata que acordou com falta de ar há 2 horas, começou leve e foi piorando. Sem dor torácica, sem tosse, sem febre. A filha acha que pode ser ansiedade. Triadora tem 2-3 minutos para decidir.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mulher tem histórico de viagem de avião há 1 semana (imobilidade prolongada), relata dor leve nas pernas dias atrás (nunca deu importância). Realidade: trombose venosa profunda em membro inferior → deslocamento de êmbolo para artérias pulmonares → embolia pulmonar aguda (EP). Não é ansiedade."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Leito vascular pulmonar: êmbolo(s) ocluem parcialmente ramos de artéria pulmonar → ventilação sem perfusão (V/Q mismatch) → hipoxemia refratária. Coração direito enfrenta sobrecarga súbita (aumento de pós-carga)."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Saturação de O2 cai de 98% para 88% (hipoxemia moderada). Frequência respiratória compensa subindo para 26/min (taquipneia reflexa). Frequência cardíaca sobe para 115/min (compensação cardíaca). Corpo está em alerta vermelho, mas ainda em compensação."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente relata dispneia (falta de ar quando respira fundo), leveza peito, mas está conversando normalmente. Palidez discreta. Sem queda de pressão (ainda está 110/70). Ao exame: pele um pouco úmida (sudorese por estresse), sem crepitações pulmonares, sem sinais de TVP evidentes à inspeção."
+        },
+        {
+          "etapa": "Consequência e Triagem",
+          "descricao": "**Erro de triagem comum:** Triadora ouve 'falta de ar há 2 horas' sem dor, sem febre, sem crepitações → pensa 'ansiedade', classifica como AMARELO (espera <1h para EKG e radiografia). Paciente senta em cadeira. **O que acontece enquanto aguarda 45 minutos:** Êmbolo cresce (cascata de coagulação ainda está ativa), V/Q piora, SatO2 cai para 82%, frequência cardíaca sobe para 130, paciente começa a ficar confusa. Quando vira chamar para o médico, colapsa — BP cai para 78/50 (choque cardiogênico por coração direito falho). Agora entra como VERMELHO em choque. **Resultado:** Se EP for confirmada, paciente precisa de trombolítico em regime de risco (sangramento). Se não trombolisado rápido, morte. Se sobreviver, fica com sequela de hipertensão pulmonar crônica. **Triagem correta:** Triadora reconhece **'dispneia aguda de início' = vermelho flag universal** (poderia ser também ACV, infarto, pneumonia, asma, pneumotórax). Classifica como LARANJA (SLA <10 min). Coloca em cama com O2, monitor contínuo. EKG em <3 min (pode mostrar sinus tachycardia ou discreto padrão S1Q3T3 de EP). Radiografia de tórax normal (não exclui EP). **D-dímero ou CT angiografia** já saem em paralelo. Médico a vê em <10 min, confirma suspeita de EP (história + hipoxemia + taquicardia), ativa protocolo anticoagulação ± trombolítico de acordo com estabilidade. Paciente entra em tratamento antes de descompensar. Sobrevive, recuperação completa."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra por que **triagem não pode usar diagnóstico**. Triadora não sabia se era ansiedade ou embolia — e é justamente por isto que usa **SINAIS**: dispneia aguda + taquicardia + hipoxemia = LARANJA independentemente do rótulo. Se esperar diagnóstico confirmado, morre. Triagem Manchester reconhece que **velocidade > precisão inicial** — o objetivo é colocar o paciente na rede segura de monitorização antes de descompensar. O diagnóstico vem depois (dentro de 1-2 horas, via lab e imaging), mas o paciente já está sob vigilância."
+      "disciplinas_relacionadas": [
+        "emergência",
+        "triagem",
+        "respiratória",
+        "cardiologia"
+      ],
+      "diagnostico_revelado": "Embolia pulmonar aguda (EP) com insuficiência cardíaca direita compensada — apresentação como dispneia isolada.",
+      "tratamento_resumido": "Anticoagulação imediata (heparina IV), oxigenoterapia titulada para SpO2 > 90%, monitorização cardíaca contínua. Se sinais de instabilidade hemodinâmica evoluirem (BP <90 mmHg por mais de 15 min) → trombolítico (alteplase ou tenecteplase) ou trombectomia percutânea. Avaliação de causa de TVP (estudo de trombofilia se caso recorrente). Suspensão de anticoncepcionais se estava em uso (risco adicional). Segue para unidade de cuidados progressivos (não precisa UTI se mantiver estável, mas precisa monitorização contínua)."
+    }
+  ],
+  "midia": {
+    "imagens": [
+      {
+        "id": "s9-emerg-01-001-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem — Árvore de decisão Manchester.",
+        "status": "pendente"
+      }
+    ],
+    "videos": [],
+    "audios": []
+  },
+  "horizonte_validade": "estavel",
+  "procedencia": {
+    "gerado_por": "claude-haiku-4-5",
+    "data_geracao": "2026-07-03",
+    "revisado_por": null,
+    "data_revisao": null,
+    "nivel_confianca": "estudo"
+  },
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Mackway-Jones K, Marsden J, Windle J (editors). Emergency Triage: Manchester Triage System. 5th ed. Wiley-Blackwell; 2020. Chapters 1-4 (Overview and Algorithm).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    },
+    {
+      "tipo": "journal",
+      "citacao": "Cooke MW, Wilson S, Pearson S. Safety and effectiveness of the Manchester Triage System in adults with minor injuries: cluster randomised controlled trial. BMJ. 2002;325(7373):1058.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    },
+    {
+      "tipo": "journal",
+      "citacao": "Saver JL. Time is brain: quantified. Stroke. 2006 Feb;37(2):263-266. doi:10.1161/01.STR.0000196957.55928.ab",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    },
+    {
+      "tipo": "journal",
+      "citacao": "Kumar A, Roberts D, Wood KE, et al. Duration of hypotension before initiation of effective antimicrobial therapy is the critical determinant of survival in human septic shock. Crit Care Med. 2006;34(6):1589-1596.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "American Heart Association (AHA) Guidelines for CPR and ECC. Highlights of the 2020 American Heart Association Guidelines Update for CPR and ECC. Circulation. 2020;142(16 Suppl 2). Section on Cardiac Arrest Time Sensitivity.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-03"
+    }
+  ],
+  "estado_ciclo_vida": "completo",
+  "nivel_aceitacao": "completo"
+}

@@ -1,0 +1,523 @@
+{
+  "resumo_id": "s9-onco-01-002",
+  "no_pai_id": "s9-onco-01-000",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [],
+  "metadata": {
+    "titulo": "Oncogenes e Genes Supressores",
+    "subtitulo": "Acelerador preso vs freio quebrado — por que dois tipos de mutação causam a mesma doença?",
+    "semestre": 9,
+    "disciplina": "Oncologia",
+    "sistema_corporal": "Geral (aplicável a todos)",
+    "profundidade_arvore": 2,
+    "importancia": 5,
+    "dificuldade": 4,
+    "tempo_leitura_minutos": 25,
+    "status": "rascunho_revisado",
+    "data_criacao": "2026-07-03",
+    "data_ultima_revisao": "2026-07-03",
+    "versao": "1.0",
+    "tags": ["oncogene", "supressor_tumor", "ganho_de_funcao", "perda_de_funcao", "p53", "RB", "BRAF", "mutacao", "genetica_molecular"],
+    "objetivos_aprendizado": [
+      "Explicar a dicotomia entre oncogenes (ganho de função) e supressores (perda de função)",
+      "Compreender por que o mesmo câncer pode nascer de mecanismos moleculares opostos",
+      "Aplicar o conhecimento genético a terapias-alvo reais (BRAF inibidor, reativação de p53)",
+      "Integrar herança mendeliana com evolução somática em câncer"
+    ]
+  },
+
+  "resumo_conciso": "Um câncer nasce de duas categorias de genes defeituosos, e entender a diferença entre elas explica por que dois cânceres idênticos clinicamente podem exigir tratamentos completamente diferentes. Um oncogene é uma versão de um gene normal que ficou hiperativa — como um acelerador preso no fundo. Um gene supressor é a perda de uma proteína que normalmente freia — como um freio destruído. Ambos levam o carro a 200 km/h e matam o motorista. O mecanismo é oposto, mas a morte é a mesma. Este bloco desvenda por que essa distinção salva vidas.",
+
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No consultório de oncologia, você vê dois pacientes com melanoma com o mesmo estadiamento, mesma localização, mesma idade. A biópsia de um deles mostra BRAF V600E mutado. A biópsia do outro mostra BRAF selvagem, mas Neurofibromin (NF1) perdida. Clinicamente parecem câncer idêntico. Geneticamente são opostos. O paciente 1 recebe BRAF inibidor vemurafenib. O paciente 2 não se beneficia. Por quê? Porque o oncogene e o supressor são duas moedas diferentes do mesmo crime. Neste bloco você entenderá por que."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "① POR QUE EXISTEM DOIS TIPOS DE GENE CAUSADOR DE CÂNCER?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Antes de nomear genes, preciso que você reconheça um problema biológico: toda célula saudável é um equilíbrio de duas forças opostas. Uma força diz 'cresça, divida-se, multiplique-se'. A outra diz 'pare, diferencie-se, ou morra se errar'. Câncer é perda deste equilíbrio. Mas como perde? Há exatamente dois caminhos. Primeiro: a célula hiperativa o sinal de crescimento — a voz que grita 'cresça!' fica presa no modo ligado, gritando eternamente. Segundo: a célula silencia o freio — a voz que sussurra 'pare, verifique, ou morra' desaparece. Dois mecanismos opostos. Mesmo resultado: célula descontrolada. Entender qual mecanismo está funcionando é crítico para derrotá-lo — porque você não derrota um acelerador preso da mesma forma que derrota um freio quebrado."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Faça o teste: imagine um carro. Se o acelerador fica preso, você tira o pé fora? Não consegue — ele fica no fundo. Se o freio quebra, você pressiona mais? Faz pior. Para cada tipo de defeito, existe uma solução diferente. Câncer funciona assim. Descobrir qual 'defeito' o carro tem é o primeiro passo para consertá-lo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "② COMO SE RESOLVE — A DICOTOMIA GANHO vs PERDA DE FUNÇÃO"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um gene normal é como um dímero que liga-desliga, liga-desliga. É um ritmo. Um oncogene ativa quando você força o dímmer para a posição 'ligado' e cola ele lá — a célula recebe sinal de crescimento forever, nenhuma pausa. Uma mutação de ganho de função em um proto-oncogene (um gene normal que controla crescimento) transforma o gene em uma versão hiperativa. Exemplos: RAS selvagem usa GTP como combustível, hidrolisa-o para GDP e desliga. RAS V12 mutante tem uma mutação que impede a hidrólise — GTP fica preso, sinal fica ligado 24/7. BCL-2 normal nivela morte programada no nível certo. BCL-2 amplificado (cópia extra do gene) nega morte sempre — nenhuma apoptose mesmo se dano crítico. Ganho de função = versão supercharged de um gene de crescimento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um gene supressor é uma proteína de freio. TP53 selvagem: se DNA está danificado, p53 detecta, liga a fatores de transcrição, ativa genes de apoptose. Célula morre. Limpa-se o erro. TP53 mutado ou perdido: dano de DNA chega, p53 não está lá ou está quebrado. Sem freio, célula sobrevive mesmo com mutações. RB selvagem: segura a célula na fase G1 até ter certeza de que está pronta para replicar. RB perdido: célula passa direto para fase S, replica sem verificação. BRCA1/2 selvagem: reparam quebras de dupla fita de DNA com precisão laser. BRCA1/2 mutado: erros de reparo vão se acumulando — instabilidade genômica exponencial. Perda de função = remoção de uma proteína crítica que freia o crescimento ou repara dano."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: Oncogenes funcionam como dominantes (uma cópia mutante é suficiente para o efeito). Supressores funcionam como recessivos — você precisa perder AMBAS as cópias ('two-hit hypothesis'). Razão: acelerador preso em uma cópia = carro já corre. Freio quebrado em uma cópia = a outra cópia compensa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "③ DO QUE É FEITO — EXEMPLARES MOLECULARES"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "RAS (protooncogene): pequena GTPase de ~21 kDa. Tem duas formas: RAS·GTP (ligado, sinal ON) e RAS·GDP (desligado, sinal OFF). Mutações em códons 12, 13 ou 61 impedem a hidrólise de GTP, então RAS·GTP acumula. Continua mandando sinais de crescimento para a célula. Mutação pontual de 1 nucleotídeo. Uma letra errada no código genético inteiro. Frequente em: pâncreas, cólon, pulmão. MYC (protooncogene): fator de transcrição de ~67 kDa. Liga a DNA e ativa genes de proliferação. Selvagem: regulado por sinais de crescimento, liga-desliga. Amplificado (20, 50, 100 cópias extras): MYC está sempre ligado, células dividem descontroladamente. Frequente em: linfomas de Burkitt (translocação cromossômica que coloca MYC ao lado de promotor forte do gene da imunoglobulina)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "BCL-2 (protooncogene de apoptose): proteína de ~26 kDa na membrana mitocondrial. Liga-se a proteínas pró-apoptóticas (BAX, BAK) e as bloqueia — impede a liberação de citocromo c, freia apoptose. Selvagem: equilibra sinais pró e anti-apoptóticos. Amplificado (translocação em linfomas): BCL-2 está em excesso, bloqueia apoptose sempre — as células que deveriam morrer vivem. BRAF (protooncogene): quinase de ~94 kDa na via MAPK. V600E é uma mutação espontânea (valina 600 → ácido glutâmico) que destabiliza a configuração basal, deixando a quinase sempre ativa. Uma letra errada no códon 600 muda tudo. Frequente em: melanoma (50%), cancro colorretal (10%), câncer papilar de tireoide (45%)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "TP53 (supressor clássico): proteína de ~53 kDa, fator de transcrição. Tem domínio de ligação a DNA, domínio de tetromerização, domínio de ativação de transcrição. Selvagem: detecta dano de DNA (via ATM/ATR), liga-se a sequências específicas no promotor de genes de apoptose (BAX, PUMA, NOXA) e de parada de ciclo (p21). RB (supressor clássico): proteína de ~110 kDa no núcleo. Fosforilada = inativa, célula passa. Desfosforilada = ativa, liga a E2F (fator de transcrição), bloqueia genes S-phase. TP53 e RB perdidos = sem vigilância de dano, sem parada de ciclo. BRCA1/2 (supressores de reparo): proteínas gigantes (~220 kDa cada) envolvidas em reparo de quebra de dupla fita por recombinação homóloga. BRCA1 recruta RAD51, BRCA2 o estabiliza. Sem BRCA: recombinação homóloga não funciona, célula usa mecanismo errorprone (NHEJ), acumula variantes. NF1 (supressor em neurofibromatose): proteína de ~320 kDa, GAP para RAS. A função dela: converte RAS·GTP em RAS·GDP, desligando sinais. NF1 mutado = RAS fica preso em GTP, parecido com RAS V12 mutado mas por mecanismo inverso."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "④ COMO FUNCIONA — MECANISMO LADO-A-LADO"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Tomemos RAS como exemplo de oncogene. RAS selvagem é uma máquina de GTP-ase. Aqui está o ciclo normal: Célula recebe sinal de crescimento → fator de crescimento liga a receptor → receptor ativa SOS (fator trocador de nucleotídeos) → SOS entra em RAS, remove GDP → GTP entra em RAS (GTP é mais abundante na célula que GDP) → RAS·GTP ativa efetores (RAF, PI3K) → estes mandam sinais internos de 'cresça!' → enzima GAP entra em RAS, hidrolisa GTP em GDP → RAS·GDP desativa, sinal desliga. Assim, RAS·GTP dura segundos a minutos — é um pulso, não um estado permanente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "RAS V12 mutante muda uma coisa: a GAP não consegue hidrolisar o GTP de V12 tão bem. GTP fica preso. RAS·GTP permanece ligado, ativa RAF e PI3K continuamente, sem nunca retornar a GDP. A célula recebe sinal de crescimento 24/7, mesmo sem fator de crescimento ligado. É como um acelerador travado — o carro corre porque a posição do pedal mudou, não porque você está pisando nele."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Agora tomemos TP53 como exemplo de supressor. TP53 selvagem é uma sentinela de dano. Aqui está o ciclo normal: Dano de DNA ocorre (radiação, carcinógeno) → ATM/ATR quinase detecta quebra → fosforila TP53 → TP53 se estabiliza (normalmente é degradado rapidamente por MDM2) → TP53 liga a DNA → TP53 ativa BAX (pró-apoptótico) ou p21 (parador de ciclo) → se dano é irreparável, apoptose; se reparável, parada permite reparo. Célula saudável. Dano reparado, TP53 volta a basal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "TP53 mutado (ou perdido, deleção total): quando dano de DNA chega, ATM/ATR ativa, mas TP53 está quebrado ou ausente. Sem TP53 ativo, sem ligação a BAX, sem ativação de p21, sem apoptose, sem parada. A célula repara (ou não) com erros acumulados. Mutações caem para a próxima divisão. É como um freio que não responde — você pode pisar, mas nada acontece."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚗",
+      "conteudo": "Pense em um carro antigo em uma estrada de montanha. O acelerador (RAS) controla velocidade. O freio (TP53) detém. Um carro saudável: acelerador liga-desliga conforme necessário, freio responde quando você pisa. RAS V12 é acelerador preso no fundo — o carro corre de verdade, pedal está fisicamente preso na posição 'cheio'. TP53 mutado é freio cortado — você pisa na pedal, ela vem ao chão, nada acontece. Ambos chegam a 200 km/h e caem do penhasco. O mecanismo é oposto (hiperatividade vs inatividade), mas o destino é idêntico (morte). E aqui está o ponto clínico: você derrota o acelerador preso colocando um reboque no carro que o atura (BRAF inibidor reboca RAS V12). Você não derrota um freio cortado com um reboque — precisa ativar paradas de segurança automática (restaurar p53, induzir apoptose por outra via)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑤ COM O QUE SE ARTICULA — CASCATA DE HALLMARKS"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os 8 hallmarks do câncer (Hanahan & Weinberg 2011, refinado 2022) agora fazem sentido quando você vê quem os causa. Sustain proliferative signaling: alcançado por RAS, MYC, BRAF, HER2 oncogenes (ganho de função). Evade growth suppressors: alcançado por TP53, RB, PTEN, NF1 supressores (perda de função). Resist cell death: alcançado por BCL-2, survivin oncogenes OU por TP53, PTEN supressores (perda de função). Replicate indefinitely: alcançado por TERT/telomerase oncogenes OU por TP53, RB, p16 supressores (perda de função). Induce angiogenesis: alcançado por VEGF, HIF1α oncogenes. Tissue invasion: alcançado por E-caderina supressor (perda) OU SRC, ZEB1 oncogenes (ganho). Sustained inflammation: TNF, IL-6 oncogenes. Genome instability: alcançado por BRCA1/2, TP53, MLH1 supressores (perda). Cada hallmark é uma missão do câncer, cada missão é atribuída a um tipo de gene."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A implicação clínica é direta: BRAF V600E mutado em melanoma ativa sinal de proliferação (hallmark 1). Terapia: bloqueia BRAF com vemurafenib, interrompe sinal. TP53 mutado em câncer colorretal perde controle de apoptose e parada (hallmarks 2+3). Terapia: não adianta bloquear um oncogene — ele não está ativo. Precisa reativar p53 (realmente difícil) ou induzir apoptose por outra via (BH3 mimetizador, inibidor de MDM2). BRCA1 mutado (herdado ou somático) em câncer de mama perde reparo homólogo (hallmark 8). Terapia: explorar essa fraqueza — inibidor de PARP bloqueia NHEJ compensatório, deixa célula indefesa contra seus próprios erros."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑥ NOME + ETIMOLOGIA — QUANDO DESCOBRE-SE O QUE ELES SÃO"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Proto-oncogene: 'proto' (grego πρῶτο-, 'primeiro, primitivo') + 'oncogene' (grego ὄγκος 'onkos' tumor + γένος 'genos' origem). Literalmente: 'gene originário de tumor'. Mas 'originário' é enganoso — o gene não causa tumor por natureza. É um gene normal que, quando mutado em direção específica (ganho de função), se torna causador de tumor. Então o termo completo é protooncogene (normal) → oncogene (mutante). Supressor de tumor (ou supressor): do latim 'supprimere' (sub 'embaixo' + premere 'pressionar'). Literalmente: 'gene que pressiona embaixo', isto é, reprime. A célula quer crescer; supressor diz 'não'. TP53 é também chamado 'proteína do tumor 53' porque descoberta em 1979 num complexo com proteína T do SV40 (vírus), de forma que parecia estar 'ligada ao tumor'. Nome irônico: é protetora contra tumor, não causadora."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑦ ANALOGIA CONCRETA E MAPEAMENTO"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎯",
+      "conteudo": "Imagine uma fábrica que produz carros. A fábrica tem dois sistemas: (1) linha de produção (oncogene), (2) setor de controle de qualidade (supressor). Linha de produção normal: ativa quando ordem chega, produz carros, desativa quando atingir meta. Oncogene RAS V12 é linha de produção que recebeu ordem permanente — produze carros 24/7 mesmo ninguém pedindo, máquina está travada. Supressor normal: setor de QC inspeciona cada carro, tira da linha se defeituoso. Supressor TP53 mutado é setor de QC desmantelado — defeituosos passam, vão para rua. Ambos resultam em carros com defeito saindo da fábrica. Resultado idêntico. Mecanismo oposto. Solução oposta: para linha travada, você joga areia na engrenagem (inibidor de quinase). Para QC desmantelado, você precisa voltar a inspecionar (restaurar p53, impossível hoje) ou destruir carros defeituosos na linha (induzir apoptose). E aqui está o mapeamento: Gene normal = máquina normal; Oncogene = máquina supercharged; Supressor = guarda de segurança; Perda de supressor = guarda desapareceu."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "⑧ IMAGEM — O CONTRASTE MOLECULAR"
+    },
+    {
+      "tipo": "imagem",
+      "descricao": "Diagrama lado-a-lado: PAINEL A (RAS selvagem): molécula RAS em conformação basal, ligada a GDP (cinza), com domínio de ligação a efetores desativado (vermelho pálido). Seta: 'sinal de crescimento' liga receptor, SOS ativa, GDP sai, GTP entra (amarelo brilhante), RAS muda conformação, domínio de efetores ativa (vermelho vivo). Seta: GAP entra, GTP vira GDP, RAS volta a basal. PAINEL B (RAS V12): mutação na posição 12 (G12V, glicina→valina, representada por círculo vermelho na região P-loop). RAS permanece em conformação ativa mesmo com GDP. Quando GTP entra, fica preso — GAP não consegue hidrolisar. RAS·GTP permanente = sinal sempre ON. Célula recebe crescimento 24/7. PAINEL C (TP53 selvagem): Quando dano (raio duplo na heliça) choca DNA, ATM/ATR fosforila TP53 (PO4 anexado), TP53 se liga a MDM2 (inibidor) vira inativo, TP53 estabiliza, sai do núcleo ligado a DNA, ativa BAX, apoptose. PAINEL D (TP53 mutado): X substituindo a 273 (mutação R273H mais comum em câncer). TP53 perde contato com DNA, não liga a sequências específicas, BAX não ativa, apoptose não dispara. Dano permanece, célula divide com mutações."
+    },
+    {
+      "tipo": "imagem",
+      "descricao": "Tabela comparativa visual: (linha 1) ONCOGENE RAS V12 vs SUPRESSOR NF1 PERDIDO — ambos deixam RAS·GTP ativo. Mas mecanismo oposto. (linha 2) ONCOGENE BCL-2 amplificado vs SUPRESSOR p53 perdido — ambos levam a apoptose bloqueada. Mecanismo oposto. (linha 3) ONCOGENE MYC amplificado vs SUPRESSOR RB perdido — ambos levam a proliferação descontrolada. Mecanismo oposto. A chave: clinicamente parecem idênticos, geneticamente são opostos, terapeuticamente exigem estratégias opostas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "CONTRAFACTUAIS — TESTANDO A COMPREENSÃO"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se você herdasse uma mutação TP53 germinativa (síndrome de Li-Fraumeni), mas nunca sofresse uma segunda mutação somática em nenhuma célula, ainda assim desenvolveria câncer?",
+      "resposta": "Não imediatamente. TP53 funciona como supressor recessivo — você tem duas cópias, uma normal, uma mutada. A cópia normal ainda trabalha. Você teria risco altíssimo se qualquer célula sofrer dano (radiação, carcinógeno) porque sem vigilância rigorosa em ambas as cópias, apoptose falha. Mas não é automático. A segunda 'hit' (perda da cópia normal por deleção, mutação, ou metilação) é necessária em cada célula que vira câncer. Por isso síndrome de Li-Fraumeni é predisposição, não determinismo."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se tivesse RAS V12 herdado, mesmo risco que TP53 herdado? (ambos predisposição?)",
+      "resposta": "Não. RAS V12 é raro herdado (embora possível em síndrome de Costello, uma condição muito rara). Se herdado, uma cópia já é suficiente porque oncogenes funcionam como dominantes — uma cópia V12 = sinal de crescimento sempre ativo naquela célula. Risco é altíssimo logo cedo. TP53 herdado deixa uma cópia normal compensando. Risco é altíssimo com tempo (segundo hit), mas permite infância/adolescência normal. TP53 herdado = predisposição. RAS V12 herdado = doença (Costello)."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Por que BRAF inibidor (vemurafenib) funciona em BRAF V600E mas não em TP53 mutado?",
+      "resposta": "BRAF inibidor bloqueia a quinase BRAF mutante hiperativa. Se o problema é 'acelerador preso', freio o acelerador funciona. Mas se o problema é 'freio destruído' (TP53 mutado), freiar o acelerador deixa a célula ainda sem vigilância de apoptose, sem parada de ciclo. Ela apenas cresce mais lentamente enquanto acumula mais mutações. Você não está derrotando o problema biológico, está apenas demorando-o. TP53 mutado precisa de estratégia diferente: reativar apoptose por outra via (inibidor de MDM2, BH3 mimetizador), ou explorar dependência metabólica (metabolite starvation), ou usar imunoterapia se o câncer ficou imunogênico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "CLÍNICA — IMPORTÂNCIA DE CONHECER O GENÓTIPO"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em 2011, FDA aprova vemurafenib para melanoma BRAF V600E. Pacientes com melanoma metastático que tinham TP53 selvagem e BRAF V600E tinham resposta remarcável — taxa de resposta >50%, sobrevida aumentada em meses. Pacientes sem BRAF V600E não se beneficiavam. Por quê? Porque a droga foi desenhada para bloquear especificamente a mutação em BRAF — ganho de função. Sem a mutação, a droga é inútil. Sem conhecer o genótipo, você tentaria a droga em ambos e acharia que 'melanoma é resistente a vemurafenib' — completamente errado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em 2012, FDA aprova olaparib para câncer de mama BRCA1/2 mutado. BRCA1/2 são supressores de reparo homólogo. Quando perdidos, célula depende de NHEJ (mecanismo de reparo errorprone) para quebras de DNA. Olaparib bloqueia PARP (outro mecanismo de reparo). Sem PARP, célula com BRCA perdido fica completamente indefesa — morre. Mas célula com BRCA selvagem? PARP não é crítica, há redundância. Olaparib não funciona. Novamente, terapia-alvo dirigida a supressor exploração de fraqueza, não bloqueio de ganho."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em 2015, foi descoberta mutação TP53 em 50% dos cânceres. Nenhum TP53 inibidor aprovado ainda (porque você não inibe uma proteína que já está inibida — está ausente ou quebrada). Estratégia muda: 'restauração de p53' via inibidores de MDM2 (remove a proteína que degrada TP53), ou 'bypassing TP53' via indutores de apoptose (BH3 mimetizadores como venetoclax bloqueiam BCL-2, forçam apoptose mesmo sem p53). Conhecer que TP53 está perdido te manda para uma estratégia completamente diferente de conhecer que BRAF está ativado."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Resumo clínico crítico: Oncogenes ativados = bloqueia o oncogene (inibidor de quinase, anticorpo). Supressores perdidos = explorar dependência da célula (inibidor de PARP em BRCA perdido, inibidor de MDM2 em p53 perdido) ou forçar apoptose por outra via (imunoterapia, BH3 mimetizador). O genótipo não é curiosidade — é o mapa que diz onde está a vulnerabilidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "FECHAMENTO — DOIS CAMINHOS, MESMO DESTINO"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Volte ao consultório. Dois pacientes, mesmo melanoma clinicamente. Um tem BRAF V600E (oncogene ativado, acelerador preso). Outro tem NF1 perdido (supressor perdido, freio cortado). Ambos têm RAS·GTP ativo permanentemente — um porque BRAF o ativa diretamente, outro porque NF1 (que normalmente desativa RAS) desapareceu. Clinicamente, idêntico. Molecularmente, oposto. Terapeuticamente, diferentes. O paciente BRAF V600E recebe vemurafenib — bloqueia BRAF, reduz sinal. O paciente NF1 perdido não se beneficia — não há BRAF mutado para bloquear. Ele pode receber MEK inibidor (bloqueia a próxima proteína na cascata, RAF → MEK → ERK), porque a via está ativa DOWNSTREAM, não em BRAF. Ou pode receber imunoterapia se o tumor ficar imunogênico (por acúmulo de mutações). Ou pode receber drogas contra hallmarks secundários se TP53 também estiver perdido. A pista genética é tudo."
+    }
+  ],
+
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "id": "s9-onco-01-000",
+        "titulo": "Oncologia — Princípios Clínicos",
+        "justificativa": "Este bloco assume compreensão de estadiamento, causas de câncer e overview clínico"
+      },
+      {
+        "id": "s4-bioquim-01-001",
+        "titulo": "Proteínas e Estrutura Proteica",
+        "justificativa": "Necessário para entender proteínas de sinalização (RAS, p53, RB) como estruturas 3D"
+      },
+      {
+        "id": "s3-celular-01-005",
+        "titulo": "Ciclo Celular e Checkpoints",
+        "justificativa": "TP53 e RB atuam em checkpoints do ciclo celular; sem esse conhecimento, mecanismo fica vago"
+      },
+      {
+        "id": "s5-genet-01-003",
+        "titulo": "Herança Mendeliana e Genética Molecular",
+        "justificativa": "Conceitos de herança dominante vs recessiva, mutação somática vs germinativa"
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "id_relacionado": "s9-onco-02-001",
+        "titulo": "Quando escrever: Iniciação, Promoção e Progressão Tumoral",
+        "descricao": "Este bloco fornece os atores (oncogenes e supressores). O próximo bloco mostra o drama (como essas mutações se acumulam ao longo de estágios de iniciação, promoção, progressão).",
+        "peso": "alta"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "id_relacionado": "s9-farma-onc-01-002",
+        "titulo": "Quando escrever: Terapias-Alvo em Oncologia Molecular",
+        "descricao": "Este bloco é a base para entender por que BRAF inibidor, MEK inibidor, inibidor de MDM2, BH3 mimetizador funcionam — cada um é uma arma contra um tipo de defeito molecular (ganho vs perda de função).",
+        "peso": "alta"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "id_relacionado": "s9-onco-patol-001",
+        "titulo": "Quando escrever: Sequenciamento de Tumores e Diagnóstico Molecular",
+        "descricao": "Na prática, como você descobre qual oncogene está ativado e qual supressor foi perdido? Testes: PCR (amplificação MYC), sequenciamento (BRAF V600E), fluorescência in situ (BRCA deletado).",
+        "peso": "alta"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "id_relacionado": "s5-celular-checkpoint-apoptose",
+        "titulo": "Quando escrever: Apoptose em Profundidade",
+        "descricao": "p53 e BCL-2 são atores em apoptose. Compreender apoptose em detalhe (BAX/BAK, mitocondrial vs extrínseca) aprofunda compreensão de por que perder p53 ou ganhar BCL-2 têm o mesmo efeito final.",
+        "peso": "media"
+      }
+    ],
+    "laterais": [
+      {
+        "id": "s9-onco-01-001",
+        "titulo": "Mutações em Câncer — Tipos e Mecanismos",
+        "justificativa": "Irmão de escopo: enquanto este bloco explora QUAIS genes mutam e POR QUÊ funcionam diferente, aquele bloco explora COMO surgem as mutações (carcinógenos, mecanismos de erro de reparo)"
+      },
+      {
+        "id": "s9-onco-01-003",
+        "titulo": "Oncogenes Específicos Aprofundados",
+        "justificativa": "Este bloco é visão geral. Oncogenes específicos (RAS/BRAF/HER2, cada um) merecem blocos filhos com estrutura molecular completa, patologias associadas"
+      }
+    ]
+  },
+
+  "flashcards": [
+    {
+      "id": "card_001",
+      "tipo": "por_que",
+      "pergunta": "Por que existem dois tipos de genes causadores de câncer (oncogenes e supressores) em vez de apenas um?",
+      "resposta": "Porque o crescimento celular é controlado por dois sistema opostos: sinais que promovem crescimento (acelerador) e sinais que freiam (freio). Câncer pode nascer de ambos os sistemas estarem desregulados — acelerador hiperativo OU freio quebrado — e por isso precisa de dois nomes e duas estratégias terapêuticas diferentes.",
+      "nivel_alvo": 4
+    },
+    {
+      "id": "card_002",
+      "tipo": "mecanismo",
+      "pergunta": "Descreva o mecanismo molecular de RAS V12 mutante que deixa o sinal de crescimento permanentemente ativado.",
+      "resposta": "RAS selvagem alterna entre RAS·GTP (ativo) e RAS·GDP (inativo). A enzima GAP (GTPase-activating protein) hidrolisa GTP em GDP, desativando RAS. A mutação V12 está no sítio de ligação para GAP, impedindo a hidrólise. GTP fica preso, RAS permanece em forma ativa, efetores (RAF, PI3K) são continuamente ativados, célula recebe sinal de crescimento 24/7.",
+      "nivel_alvo": 5
+    },
+    {
+      "id": "card_003",
+      "tipo": "contrafactual",
+      "pergunta": "Se você herdasse uma mutação TP53 germinativa (uma cópia do gene mutada), mas nunca sofresse segunda mutação em nenhuma célula do corpo, desenvolveria câncer?",
+      "resposta": "Não automaticamente. TP53 funciona como supressor recessivo — a segunda cópia normal ainda trabalha e fornece vigilância suficiente para a maioria das situações. Você teria altíssimo risco se qualquer célula sofrer dano (radiação, carcinógeno), porque a vigilância é menos rigorosa. Mas sem a segunda 'hit' (perda da cópia normal por deleção, mutação, ou metilação), câncer é raro. Por isso síndrome de Li-Fraumeni é predisposição com penetração alta, não determinismo.",
+      "nivel_alvo": 4
+    },
+    {
+      "id": "card_004",
+      "tipo": "clinico",
+      "pergunta": "Por que vemurafenib (BRAF inibidor) funciona em melanoma BRAF V600E mas não em melanoma com TP53 perdido?",
+      "resposta": "Vemurafenib bloqueia a quinase BRAF mutante hiperativa, interrompendo sinal de crescimento. Em BRAF V600E, isso é suficiente para remissão do câncer. Em TP53 perdido, o problema não é sinal de crescimento excessivo — é falta de freio (apoptose bloqueada, sem parada de ciclo). Bloquear o acelerador deixa a célula ainda descontrolada, apenas mais lentamente. TP53 perdido precisa de estratégia diferente: restaurar apoptose (inibidor de MDM2, BH3 mimetizador) ou explorar dependência metabólica.",
+      "nivel_alvo": 5
+    },
+    {
+      "id": "card_005",
+      "tipo": "comparacao",
+      "pergunta": "Compare o padrão de herança de um oncogene (ex: RAS V12 herdado) vs um supressor (ex: TP53 herdado) em famílias com predisposição a câncer.",
+      "resposta": "Oncogene herdado: uma cópia mutante é suficiente para efeito (dominante). RAS V12 em uma cópia = sinal de crescimento sempre ativo naquela célula. Risco é altíssimo e precoce (síndromes como Costello aparecem em infância). Supressor herdado: uma cópia normal compensa (recessivo). TP53 em uma cópia normal + uma mutada = vigilância ainda presente. Risco é altíssimo com tempo e estímulo (segunda mutação somática necessária). Síndrome de Li-Fraumeni (TP53 herdado) permite infância normal, câncer em adolescência/adultez. Costello (RAS V12 herdado) manifesta logo.",
+      "nivel_alvo": 4
+    },
+    {
+      "id": "card_006",
+      "tipo": "etimologia",
+      "pergunta": "Qual a etimologia de 'oncogene' e 'supressor', e por que 'supressor' é um nome irônico para p53?",
+      "resposta": "Oncogene: grego 'ὄγκος' (onkos = tumor) + 'γένος' (genos = origem). Literalmente 'gene que origina tumor'. Supressor: latim 'supprimere' (sub = embaixo, premere = pressionar), literalmente 'gene que pressiona para baixo', i.e., reprime. P53 é chamado 'proteína do tumor 53' porque descoberto em 1979 em complexo com proteína T viral — parecia 'tumor-associated'. Nome irônico: p53 não causa tumor, previne. É verdadeiro supressor (freia), não causador.",
+      "nivel_alvo": 3
+    },
+    {
+      "id": "card_007",
+      "tipo": "sintese_transdisciplinar",
+      "pergunta": "Como a distinção oncogene vs supressor conecta geneticista, bioquímico, patologista e oncologista clínico a descrever exatamente o mesmo câncer?",
+      "resposta": "Geneticista: 'TP53 deletado, BRAF V600E mutado'. Bioquímico: 'p53 ausente, BRAF-MEK-ERK constitutivamente ativo'. Patologista: 'melanoma com alto índice mitótico, pleomorfismo, sem apoptose visível'. Oncologista: 'câncer agressivo, responde a vemurafenib no início, após 6 meses adquire resistência por TP53 perda adicional'. Todos descrevem o mesmo objeto: um acelerador preso (BRAF) combinado com freio quebrado (TP53). Cada disciplina vê por ângulo diferente, mas a verdade molecular é idêntica.",
+      "nivel_alvo": 5
+    },
+    {
+      "id": "card_008",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha conceitual comum ao confundir 'oncogene herdado' com 'predisposição a câncer'?",
+      "resposta": "A armadilha: pensar que oncogene herdado é apenas 'predisposição' (aumenta risco). Verdade: oncogene herdado em forma dominante É DOENÇA, não predisposição. Exemplos reais: Síndrome de Costello (HRAS ativação germinativa) = RAS V12 herdado = nanismo, desenvolvimento retardado, câncer precoce. É uma doença genética dominante, não 'predisposição'. TP53 herdado SIM é predisposição (Li-Fraumeni) porque supressor precisa de dois hits. A confusão vem de misturar 'risco aumentado' com 'determinismo'. Oncogene dominante herdado = determinismo (praticamente certo de manifestar). Supressor herdado = predisposição (alto risco, mas não certo sem segunda mutação).",
+      "nivel_alvo": 4
+    }
+  ],
+
+  "casos_clinicos": [
+    {
+      "id": "caso_001",
+      "titulo": "Melanoma BRAF V600E vs BRAF selvagem com NF1 perdido",
+      "descricao": "Dois pacientes em consulta de oncologia. Ambos com melanoma metastático estadio IV, mesma localização (dorso), mesma aparência histológica. Biópsias encaminhadas para sequenciamento.",
+      "etapas": [
+        {
+          "etapa": "CAUSA",
+          "conteudo": "Paciente A: Achado genético — BRAF V600E presente em homozigose funcional (uma cópia mutada). RAS ativado pelo BRAF mutante. Paciente B: Achado genético — BRAF selvagem, NF1 deletado (ambas as cópias perdidas). RAS ativado porque NF1 não consegue inativá-lo."
+        },
+        {
+          "etapa": "ESTRUTURA_MOLECULAR",
+          "conteudo": "Paciente A: BRAF-MEK-ERK ativados continuamente. p53 presente e funcional. BCL-2 normal. Paciente B: RAS-RAF-MEK-ERK ativados continuamente (mesmo destino, via diferente). p53 frequentemente também perdido (co-ocorrência). BCL-2 frequentemente amplificado."
+        },
+        {
+          "etapa": "DISFUNCAO_CELULAR",
+          "conteudo": "Paciente A: Proliferação aumentada via BRAF. Apoptose presente se p53 intacto. Paciente B: Proliferação aumentada via RAS. Apoptose bloqueada (TP53 perdido, BCL-2 amplificado). Instabilidade genômica alta (NF1 perdido = erro de reparo de DNA)."
+        },
+        {
+          "etapa": "SINTOMA_CLINICO",
+          "conteudo": "Ambos apresentam melanoma metastático agressivo. Diferença: Paciente A pode ter história de exposição solar documentada (UV é carcinógeno clássico que causa BRAF V600E). Paciente B pode ter mutações múltiplas não explicadas apenas por UV (NF1 perdido + TP53 perdido sugerem exposição cumulativa ou predisposição genética)."
+        },
+        {
+          "etapa": "CONSEQUENCIA_TERAPEUTICA",
+          "conteudo": "Paciente A: Vemurafenib (BRAF inibidor) é opção. Taxa de resposta inicial ~50%, sobrevida aumentada de 7 para ~18 meses. Resistência emerge em 6-12 meses (frequentemente por TP53 perda secundária). Paciente B: Vemurafenib NÃO funciona (BRAF não é mutado). MEK inibidor pode funcionar (RAS-MEK ainda sensível). Imunoterapia com anti-PD-1 pode funcionar se tumor imunogênico (alta carga mutacional de NF1 perdido). Prognóstico mais sombrio (múltiplas mutações)."
+        }
+      ],
+      "pergunta_diagnostica": "Por que o mesmo inibidor de quinase (vemurafenib) funciona em um paciente mas não no outro, apesar de ambos terem melanoma metastático clinicamente idêntico?"
+    },
+    {
+      "id": "caso_002",
+      "titulo": "Carcinoma de Mama BRCA1 Mutado — Exploração de Dependência Metabólica",
+      "descricao": "Paciente mulher, 38 anos, antecedente familiar de câncer de mama (mãe falecida aos 45 anos com câncer de mama triplo-negativo). Diagnosticada com câncer de mama triplo-negativo (ER-, PR-, HER2-). Teste genético: BRCA1 c.68_69delAG mutação (frameshift, perda de função).",
+      "etapas": [
+        {
+          "etapa": "CAUSA",
+          "conteudo": "Genética: BRCA1 herdado mutado (uma cópia perdida desde nascimento). Somática: segunda cópia de BRCA1 perdida por deleção somática no tumor. Reparo homólogo de DNA não funciona."
+        },
+        {
+          "etapa": "ESTRUTURA_MOLECULAR",
+          "conteudo": "BRCA1 é proteína de 220 kDa que recruta RAD51 para reparo de quebra de dupla fita de DNA por recombinação homóloga. Sem BRCA1: quebras de dupla fita são reparadas por NHEJ (mecanismo errorprone), ou deixadas sem reparo. Instabilidade genômica exponencial. Célula depende de PARP (poly-ADP-ribose polymerase) para reparo de quebra de fita simples — PARP ajuda a sinalizar quebras e ativa resposta."
+        },
+        {
+          "etapa": "DISFUNCAO_CELULAR",
+          "conteudo": "Tumor BRCA1 perdido: instabilidade genômica alta (centenas de mutações). Célula sobrevive porque Apoptose está bloqueada (frequentemente TP53 também perdido, BCL-2 amplificado). Célula é DEPENDENTE de PARP — se PARP desligado, célula fica completamente indefesa contra seus próprios erros de reparo."
+        },
+        {
+          "etapa": "SINTOMA_CLINICO",
+          "conteudo": "Apresenta câncer de mama triplo-negativo agressivo (metástases em linfonodos, envolvimento da pele). Imunofenótipo negativo (ER-, PR-, HER2-) significa que HER2 inibidor e terapia hormonal NÃO funcionam. Opções: quimioterapia citotóxica, imunoterapia, terapias-alvo específicas para supressores perdidos."
+        },
+        {
+          "etapa": "CONSEQUENCIA_TERAPEUTICA",
+          "conteudo": "Olaparib (inibidor de PARP) é aprovado para BRCA1/2 mutado. Mecanismo: bloqueia PARP, deixa célula sem defesa contra quebras. Célula morre. Paciente responde bem (taxa de resposta ~40%, sobrevida progressão-livre aumentada). Importante: PARP inibidor é apenas eficaz em BRCA1/2 perdido, NÃO em BRCA selvagem. E só funciona porque célula com BRCA perdido é dependente de PARP — é uma 'fraqueza' explorada."
+        }
+      ],
+      "pergunta_diagnostica": "Como o inibidor de PARP (olaparib) explora especificamente a perda de BRCA1, mas não funcionaria em um tumor de mama BRCA1 selvagem?"
+    }
+  ],
+
+  "midia": {
+    "imagens_prompts": [
+      {
+        "id": "img_001",
+        "titulo": "RAS Selvagem vs RAS V12 Mutante",
+        "descricao_para_ia": "Diagrama esquemático mostrando RAS selvagem em ciclo normal (GDP → GTP → GDP) com momentos de atividade pulsada, vs RAS V12 mutante preso em GTP permanentemente. Use cores: GDP=cinza, GTP=amarelo brilhante, RAS basal=vermelho pálido, RAS ativo=vermelho vivo. Inclua GAP chegando e falhando em V12. Mostrar efetores (RAF, PI3K) ativando apenas em contexto selvagem com pulso, vs V12 com ativação contínua.",
+        "tipo": "diagrama_molecular",
+        "estilo": "científico_didático",
+        "dimensoes": "1200x800"
+      },
+      {
+        "id": "img_002",
+        "titulo": "TP53 Selvagem vs TP53 Mutado — Resposta a Dano de DNA",
+        "descricao_para_ia": "Painel A: TP53 selvagem — dano de DNA (raios duplos) ativa ATM/ATR, TP53 é fosforilado e estabilizado, liga-se a DNA, ativa BAX (pró-apoptótico) e p21 (parador). Célula sofre apoptose ou parada de ciclo. Painel B: TP53 mutado (mostrar X ou mutação frameshift no domínio de ligação a DNA) — mesmo dano, TP53 não liga a DNA, BAX não ativa, apoptose falha. Célula continua dividindo com mutações. Use cores: DNA íntegro=verde, DNA danificado=vermelho, TP53 ativo=azul brilhante, TP53 mutado=cinza.",
+        "tipo": "diagrama_molecular",
+        "estilo": "científico_didático",
+        "dimensoes": "1200x800"
+      },
+      {
+        "id": "img_003",
+        "titulo": "Tabela Comparativa — Oncogenes vs Supressores",
+        "descricao_para_ia": "Tabela lado-a-lado com 2 colunas (Oncogenes | Supressores), 6 linhas (Função normal | Mutação | Tipo de mutação | Padrão herança | Exemplos | Terapia). Preecha com: | Promovem crescimento | Freiam crescimento | Ganho de função (hiperativo) | Perda de função (inativo) | Pontual, amplificação | Deleção, mutação frameshift | Dominante (1 cópia suficiente) | Recessivo (2 cópias perdidas) | RAS, MYC, BCL-2, BRAF | p53, RB, BRCA1/2, NF1 | Bloqueio (inibidor de quinase) | Exploração de dependência ou reativação |",
+        "tipo": "tabela_didatica",
+        "estilo": "infográfico_colorido",
+        "dimensoes": "1400x600"
+      },
+      {
+        "id": "img_004",
+        "titulo": "Cascata de Hallmarks — Quem Causa Quem?",
+        "descricao_para_ia": "Diagrama radial com 8 hallmarks (sustain proliferação, evade suppressors, resist death, replicate indefinitely, induce angiogenesis, tissue invasion, sustained inflammation, genome instability) no centro. Para cada hallmark, setas apontando tanto para exemplos de oncogenes que o causam (em vermelho, lado direito) quanto supressores perdidos que o causam (em azul, lado esquerdo). Exemplo: 'Resist cell death' tem BCL-2 amplificado (vermelho, acima) e TP53/PTEN perdidos (azul, abaixo). Mostrar que cada hallmark pode ser alcançado por dois caminhos opostos.",
+        "tipo": "diagrama_integrador",
+        "estilo": "infográfico_colorido",
+        "dimensoes": "1200x1200"
+      }
+    ],
+    "videos_sugeridos": [
+      {
+        "titulo": "RAS GTPase — Estrutura e Ciclo de Ativação",
+        "duracao_aproximada": "5-7 min",
+        "tipo": "animação_3d",
+        "conteudo_sugerido": "Animação de RAS em estrutura 3D, mostrando mudança conformacional de GDP-bound para GTP-bound, localização de mutações comuns (códons 12, 13, 61), falha de GAP em V12"
+      },
+      {
+        "titulo": "p53 como Guardião do Genoma",
+        "duracao_aproximada": "8-10 min",
+        "tipo": "animação_didática",
+        "conteudo_sugerido": "Sequência de eventos de dano a DNA → ATM/ATR → TP53 → ligação a DNA → ativação de BAX/PUMA ou p21, mostrando estrutura de p53 ligado a DNA (PDB 1TUP), transcrição de alvo"
+      }
+    ]
+  },
+
+  "fontes": [
+    {
+      "id": "ref_001",
+      "tipo": "livro",
+      "autores": ["Hanahan, D.", "Weinberg, R. A."],
+      "titulo": "Hallmarks of cancer: the next generation",
+      "publicacao": "Cell",
+      "ano": 2011,
+      "volume": "144(5)",
+      "paginas": "646-674",
+      "doi": "10.1016/j.cell.2011.02.013",
+      "observacao": "Definição clássica dos 8 (depois 10) hallmarks do câncer; mapa para integração entre oncogenes/supressores e fenótipos."
+    },
+    {
+      "id": "ref_002",
+      "tipo": "livro",
+      "autores": ["Vogelstein, B.", "Kinzler, K. W."],
+      "titulo": "Cancer genes and the pathways they control",
+      "publicacao": "Nature Medicine",
+      "ano": 2004,
+      "volume": "10(8)",
+      "paginas": "789-799",
+      "doi": "10.1038/nm1087",
+      "observacao": "Seminal paper diferenciando oncogenes (dominantes) vs supressores (recessivos) do ponto de vista molecular e clínico."
+    },
+    {
+      "id": "ref_003",
+      "tipo": "capitulo",
+      "autores": ["Sever, R.", "Brugge, J. S."],
+      "titulo": "Signal transduction in cancer",
+      "em": "Molecular Biology of the Cell (6th ed.)",
+      "editores": ["Alberts, B.", "et al."],
+      "ano": 2014,
+      "paginas": "1065-1100",
+      "observacao": "Explicação detalhada de cascata MAPK (RAS-RAF-MEK-ERK) e como mutações em cada nível causam câncer."
+    },
+    {
+      "id": "ref_004",
+      "tipo": "artigo",
+      "autores": ["Chapman, P. B.", "et al."],
+      "titulo": "Improved survival with vemurafenib in melanoma with BRAF V600E mutation",
+      "publicacao": "The New England Journal of Medicine",
+      "ano": 2011,
+      "volume": "364(26)",
+      "paginas": "2507-2516",
+      "doi": "10.1056/NEJMoa1103782",
+      "observacao": "Estudo clínico Phase III aprovação de vemurafenib; exemplo real de terapia-alvo dirigida a oncogene específico."
+    },
+    {
+      "id": "ref_005",
+      "tipo": "artigo",
+      "autores": ["Audeh, M. W.", "et al."],
+      "titulo": "Oral poly(ADP-ribose) polymerase inhibitor olaparib in patients with BRCA1 or BRCA2 mutations and recurrent ovarian cancer: a proof-of-concept trial",
+      "publicacao": "The Lancet",
+      "ano": 2010,
+      "volume": "376(9737)",
+      "paginas": "245-251",
+      "doi": "10.1016/S0140-6736(10)60893-8",
+      "observacao": "Exemplo clínico de exploração de supressor perdido (BRCA1/2) via inibidor de PARP; prototípico de estratégia 'synthetic lethality'."
+    },
+    {
+      "id": "ref_006",
+      "tipo": "review",
+      "autores": ["Lane, D. P."],
+      "titulo": "Cancer. p53, guardian of the genome",
+      "publicacao": "Nature",
+      "ano": 1992,
+      "volume": "358(6381)",
+      "paginas": "15-16",
+      "doi": "10.1038/358015a0",
+      "observacao": "Paper histórico que cunhou 'guardiã do genoma' para p53; prévio ao reconhecimento massivo do TP53 como supressor mais mutado em câncer."
+    },
+    {
+      "id": "ref_007",
+      "tipo": "livro",
+      "autores": ["Weinberg, R. A."],
+      "titulo": "The Biology of Cancer (2nd ed.)",
+      "publicacao": "Garland Science",
+      "ano": 2013,
+      "isbn": "978-0815342205",
+      "capitulos": ["Cap. 3: Oncogenes, Cap. 4: Supressores", "Cap. 5: Cascata MAPK"],
+      "observacao": "Livro-texto abrangente; leitura complementar em profundidade para todos os tópicos deste bloco."
+    }
+  ],
+
+  "procedencia": {
+    "autor": "AGENTE PRODUTOR ANIMA",
+    "data_producao": "2026-07-03",
+    "horizonte_validade": "2027-01-31",
+    "ciclo_vida": "rascunho_revisado",
+    "rastreabilidade": "s9-onco-01-002_2026-07-03_opus"
+  }
+}

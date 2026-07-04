@@ -8,53 +8,315 @@
     "s2-ana2-01-114",
     "s2-ana2-01-115"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s2-ana2-01-120",
+    "s2-ana2-01-115"
+  ],
   "metadata": {
     "titulo": "Câmaras Cardíacas — Visão Geral",
     "semestre": 2,
-    "disciplina": "Anatomia II — Vísceras, Pelve e Neuroanatomia",
+    "disciplina": "Anatomia II",
     "profundidade_arvore": 4,
+    "eh_raiz": false,
+    "status": "pronto",
+    "lentes": ["funcao_fisiologia", "morfologia_forma"],
+    "escopo": "Por que quatro câmaras: separar a circulação pulmonar da sistêmica",
+    "tempo_estimado_min": 12,
+    "versao_schema": "3.0",
+    "gerado_por": "produtor-bloco-anima",
+    "data_geracao": "2026-07-03",
+    "data_ultima_revisao": "2026-07-03",
+    "versao": "1.0",
+    "tags": ["ana2", "coracao", "camaras", "atrio", "ventriculo", "dois-circuitos", "septo"],
+    "nivel": "CORE",
+    "tipo": "conceito",
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "ana2",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
+    "horizonte_validade": "estavel",
+    "estado_ciclo_vida": "pronto",
+    "nivel_aceitacao": "completo"
   },
-  "resumo_conciso": "Por que quatro câmaras: separar circulação pulmonar da sistêmica",
-  "narrativa": [],
+  "resumo_conciso": "No nó pai (Coração — Visão Geral), você viu a bomba dupla e a promessa de que ela teria câmaras separadas. Agora abrimos a caixa e enfrentamos a pergunta que dá nome a este bloco: por que quatro câmaras, e não uma, nem duas, nem três? A resposta não é decoração anatômica — é a única maneira de manter dois trajetos de sangue completamente separados ao mesmo tempo. O sangue que volta do corpo, pobre em oxigênio, e o sangue que volta dos pulmões, rico em oxigênio, jamais podem se misturar; e cada um precisa de uma estação de recepção (um átrio, de parede fina) e uma estação de bombeamento (um ventrículo, de parede grossa). Dois circuitos, cada um com receber e empurrar, dão exatamente quatro compartimentos. Este bloco monta essa lógica antes de você abrir cada câmara uma a uma nos nós filhos.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Retome o que ficou pendente no nó pai. Lá você fechou o raciocínio de que o coração é uma bomba dupla: um lado manda o sangue para o pulmão, o outro manda para o corpo. Ficou no ar uma promessa — a de que essa bomba teria compartimentos separados. Agora é hora de cobrar essa promessa e contar exatamente quantos compartimentos, e por quê. Porque, à primeira vista, quatro câmaras parecem exagero. Uma bolsa muscular que aperta já moveria sangue. Duas já separariam ida e volta. De onde vem a insistência da natureza em construir quatro?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vamos montar a resposta somando exigências, uma de cada vez, e vendo quantas câmaras cada exigência força. Comece com a mais básica: o sangue precisa ser empurrado. Isso pede, no mínimo, uma câmara que se contrai — um ventrículo. Se o corpo fosse minúsculo e o sangue fizesse um trajeto só, talvez uma câmara bastasse, como acontece no coração de um peixe, que é essencialmente uma bomba única em série. Mas o seu sangue, você já sabe do nó pai, faz dois trajetos que não podem se misturar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Se o sangue faz dois trajetos que não podem se misturar, quantos bombeamentos separados isso exige?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Dois trajetos separados exigem dois empurrões separados. Um trajeto é curto: do coração até os pulmões e de volta — a circulação pulmonar, onde o sangue larga gás carbônico e pega oxigênio. O outro é longo: do coração até a ponta dos dedos do pé e de volta — a circulação sistêmica, onde o sangue entrega oxigênio a cada célula do corpo. Se um único ventrículo tivesse de servir aos dois, o sangue que acabou de voltar do pulmão (oxigenado) se misturaria com o que acabou de voltar do corpo (desoxigenado), e o corpo receberia uma mistura morna dos dois — entrega medíocre, exatamente o problema que a bomba dupla existe para evitar. Logo, são precisos dois ventrículos: um que empurra só para o pulmão (ventrículo direito) e outro que empurra só para o corpo (ventrículo esquerdo). Já temos duas câmaras — mas ainda faltam duas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que não parar em dois? Porque um ventrículo tem um problema de logística. Ele é uma câmara de força: precisa se contrair com vigor, esvaziar-se quase por completo e depois relaxar para encher de novo. Se ele tivesse de puxar o sangue diretamente das grandes veias enquanto se enche, perderia tempo e força — encher uma câmara muscular grossa, sugando sangue de longe, é lento. A solução é colocar antes de cada ventrículo uma pequena câmara de recepção que já vai acumulando o sangue que chega e, no momento certo, dá um empurrãozinho para completar o enchimento do ventrículo. Essa antessala é o átrio. Cada ventrículo ganha o seu: o átrio direito recebe o sangue que volta do corpo e o entrega ao ventrículo direito; o átrio esquerdo recebe o sangue que volta do pulmão e o entrega ao ventrículo esquerdo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A conta fecha assim: dois circuitos que não podem se misturar × duas funções por circuito (receber e empurrar) = quatro câmaras. Dois átrios (recepção, parede fina, baixa pressão) e dois ventrículos (bombeamento, parede grossa, alta pressão). Não é um número arbitrário nem um capricho evolutivo — é a menor arquitetura que separa dois trajetos e otimiza o enchimento de cada bomba ao mesmo tempo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Agora entra a segunda lente deste bloco: a forma de cada câmara denuncia sua função. Repare que os átrios têm paredes finas e delicadas — não é falha de projeto, é economia. Um átrio só precisa vencer a curtíssima distância até o ventrículo logo abaixo dele; empurrar sangue por alguns centímetros, morro abaixo, não exige músculo grosso. Já os ventrículos têm paredes espessas, porque precisam gerar pressão de verdade. E, entre os dois ventrículos, há uma diferença gritante que você vai reencontrar no nó filho correspondente: a parede do ventrículo esquerdo é muito mais grossa que a do direito."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Se os dois ventrículos bombeiam o mesmo volume, por que o esquerdo tem parede tão mais grossa que o direito?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Porque eles bombeiam contra resistências muito diferentes. O ventrículo direito manda sangue para os pulmões, que ficam logo ao lado, num circuito curto e de baixa pressão — não precisa de muita força. O ventrículo esquerdo manda sangue para o corpo inteiro, vencendo o atrito de toda a rede sistêmica e a gravidade até os pés — precisa de pressão alta. Mesma quantidade de sangue por batimento, forças completamente diferentes: por isso o esquerdo é uma câmara de parede robusta, quase cônica e potente, e o direito, uma câmara de parede mais delgada, meia-lua encostada no esquerdo. Guarde este princípio, porque é uma regra de ouro do coração: a espessura da parede de uma câmara é a medida da pressão que ela precisa gerar. Nunca decore 'esquerdo é grosso' — entenda 'esquerdo empurra o corpo todo, logo precisa ser grosso'."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Falta amarrar uma peça que segura tudo isso de pé: a parede que separa o lado direito do esquerdo. De nada adiantaria ter quatro câmaras se o sangue vazasse livremente de um lado para o outro. Existe, portanto, uma divisória contínua e completa no meio do coração — o septo — com uma parte entre os átrios (septo interatrial) e outra entre os ventrículos (septo interventricular). É essa parede que garante, fisicamente, a separação entre o sangue desoxigenado (à direita) e o oxigenado (à esquerda). Quando ela tem um furo de nascença, os dois lados se comunicam e a lógica inteira desanda — é o que os cardiopediatras chamam de comunicação interatrial ou interventricular, um dos defeitos congênitos mais comuns. O nó filho sobre o septo trata disso em detalhe; aqui basta fixar que a separação em quatro câmaras só é real porque há uma parede que a sustenta."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Ancore o essencial antes de seguir. Quatro câmaras não são quatro tópicos para decorar — são a resposta a uma exigência: dois circuitos que não podem se misturar, cada um precisando receber e empurrar. Átrio = recepção, parede fina, baixa pressão. Ventrículo = bombeamento, parede grossa, alta pressão. Lado direito = sangue do corpo indo para o pulmão. Lado esquerdo = sangue do pulmão indo para o corpo. Septo = a parede que mantém os dois lados separados. Com esse mapa, cada câmara que você abrir a seguir vai parecer inevitável."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma última orientação espacial, para você não se perder quando abrir cada câmara. Os nomes 'direito' e 'esquerdo' são do dono do coração, não de quem olha de frente — o átrio direito fica à sua direita se você fosse o paciente. E há uma pegadinha clássica: o coração é torcido dentro do tórax, de modo que o ventrículo direito ocupa boa parte da face anterior (a que encosta no esterno), enquanto o átrio esquerdo é a câmara mais posterior, quase colada à coluna. Ou seja, 'direito' não quer dizer 'à direita e para frente' de maneira simples. O nó filho sobre situação e orientação do coração no tórax detalha essa torção; por ora, guarde que a nomenclatura segue o corpo, não o observador."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vêm as palavras 'átrio', 'ventrículo' e 'septo'?"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Átrio",
+      "origem": "Do latim 'atrium', o pátio ou salão de entrada da casa romana — o primeiro cômodo por onde se entrava, um espaço de recepção antes de se alcançar os aposentos internos.",
+      "explicacao": "O nome é uma descrição perfeita da função. O átrio cardíaco é literalmente a 'sala de entrada' do sangue: é por ele que o sangue chega ao coração, e é ali que ele espera antes de passar ao ventrículo, o aposento interno. Assim como o pátio romano era amplo e de paredes leves (não era ali que se guardava o cofre), o átrio tem parede fina — é lugar de receber e passar adiante, não de gerar força."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Ventrículo",
+      "origem": "Do latim 'ventriculus', diminutivo de 'venter' (ventre, barriga). Literalmente, 'barriguinha' ou 'pequena bolsa'.",
+      "explicacao": "O termo aponta para a forma de bolsa muscular que se enche e se esvazia — um pequeno ventre que aperta seu conteúdo para fora. Diferente do átrio, palavra de recepção, 'ventrículo' evoca a musculatura que faz o trabalho de expulsão. É a mesma palavra usada para as cavidades do cérebro, também bolsas cheias de líquido; no coração, a bolsa é muscular e existe para bombear."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Septo",
+      "origem": "Do latim 'saeptum', 'cerca', 'muro' ou 'recinto fechado', do verbo 'saepire' (cercar, murar).",
+      "explicacao": "O septo é, literalmente, o muro interno do coração. A palavra carrega a ideia de uma barreira que separa e delimita — exatamente o que essa parede faz entre os dois lados. Sem o 'saeptum', não haveria dois recintos: haveria uma cavidade só, com o sangue dos dois circuitos se misturando. O nome é a própria função: cercar para separar."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏭",
+      "conteudo": "Pense numa fábrica com duas linhas de produção que não podem cruzar seus materiais, cada uma organizada em duas estações. Na linha da esquerda chega a matéria-prima já refinada e ela precisa ser despachada com força para clientes espalhados por todo o país. Na linha da direita chega o material bruto, que só precisa ser enviado a curta distância, para a refinaria vizinha, e voltar. **Mapeamento explícito:** as duas linhas que não podem cruzar materiais = os dois circuitos (pulmonar e sistêmico); a esteira de recepção de cada linha, onde o material chega e se acumula = os átrios (parede fina, só recebem e passam adiante); a prensa de despacho de cada linha, que empurra o material para fora = os ventrículos (parede grossa, geram pressão); a prensa potente da esquerda, que despacha para o país inteiro = o ventrículo esquerdo (parede espessa, alta pressão sistêmica); a prensa leve da direita, que só manda para a refinaria ao lado = o ventrículo direito (parede fina, baixa pressão pulmonar); e o muro que corre pelo meio do galpão impedindo que as duas linhas se misturem = o septo. **Onde a analogia quebra:** numa fábrica, as quatro estações podem operar em ritmos independentes; no coração, os dois átrios se contraem juntos e os dois ventrículos se contraem juntos, num compasso rigorosamente sincronizado pelo sistema de condução — não há gerente humano decidindo o tempo, e sim um marca-passo elétrico. Além disso, na fábrica o material poderia parar e esperar; no coração, o fluxo nunca cessa, batida após batida, a vida inteira."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Com esse mapa montado, os cinco nós filhos deste bloco deixam de ser cinco fichas soltas. Quatro deles abrem, uma a uma, as câmaras: o átrio direito (que recebe o sangue do corpo), o ventrículo direito (que o manda ao pulmão), o átrio esquerdo (que recebe o sangue do pulmão) e o ventrículo esquerdo (que o manda ao corpo, com sua parede robusta). O quinto trata do septo, a parede que sustenta a separação inteira. Em cada um, volte às duas perguntas deste bloco: o que esta câmara recebe ou empurra, e por que sua parede tem exatamente esta espessura? Se você guardar isso, não vai precisar decorar nada — vai reconstruir."
+    },
+    {
+      "tipo": "imagem",
+      "id": "s2-ana2-01-110-img-01",
+      "titulo": "A conta das quatro câmaras: dois circuitos × duas funções",
+      "descricao": "Um esquema conceitual em forma de matriz simples, montando visualmente a lógica das quatro câmaras. Duas colunas: 'Lado Direito' (sangue do corpo → pulmão, tons azulados) e 'Lado Esquerdo' (sangue do pulmão → corpo, tons avermelhados). Duas linhas: 'Receber' (em cima, células de átrio, com paredes desenhadas finas) e 'Empurrar' (embaixo, células de ventrículo, com paredes desenhadas grossas). Nas quatro células da matriz aparecem, respectivamente, átrio direito, átrio esquerdo, ventrículo direito e ventrículo esquerdo — este último com a parede visivelmente mais espessa que os demais. Uma divisória vertical central representa o septo separando as duas colunas. Setas curtas indicam o fluxo átrio→ventrículo em cada lado. O objetivo é que a imagem faça o leitor 'ver' por que 2 × 2 = 4 câmaras.",
+      "prompt_ia": "Clean conceptual 2x2 matrix diagram explaining the four heart chambers, textbook educational style, two columns labeled 'Right Side' (blood from body to lungs, bluish tones) and 'Left Side' (blood from lungs to body, reddish tones), two rows labeled 'Receive' (top, thin-walled atria) and 'Pump' (bottom, thick-walled ventricles), the four cells showing right atrium, left atrium, right ventricle and left ventricle, with the left ventricle drawn with a visibly thicker wall than the others, a central vertical divider representing the septum separating the two columns, short arrows showing atrium-to-ventricle flow on each side, muted anatomical palette, neutral background, Brazilian Portuguese labels, high clarity, not overly detailed",
+      "origem": "esquema"
+    },
+    {
+      "tipo": "imagem",
+      "id": "s2-ana2-01-110-img-02",
+      "titulo": "As quatro câmaras no coração real, em corte frontal",
+      "descricao": "Um corte coronal (frontal) esquemático do coração mostrando as quatro câmaras em suas posições reais, para o leitor conectar a matriz abstrata da imagem anterior à anatomia verdadeira. No alto, os dois átrios de parede fina: átrio direito à direita do paciente, recebendo as grandes veias que trazem o sangue do corpo; átrio esquerdo à esquerda, recebendo as veias que trazem o sangue dos pulmões. Embaixo, os dois ventrículos: ventrículo direito com parede mais fina, em formato de meia-lua; ventrículo esquerdo com parede nitidamente mais espessa, ocupando a ponta do coração. No centro, o septo interatrial acima e o septo interventricular abaixo, como uma parede contínua dividindo os dois lados. Um código de cor sutil (azul à direita, vermelho à esquerda) reforça a separação sangue desoxigenado/oxigenado. Rótulos nomeiam cada câmara e o septo.",
+      "prompt_ia": "Schematic coronal (frontal) section of the human heart showing the four chambers in their true anatomical positions, textbook style, top: two thin-walled atria (right atrium on the patient's right receiving large veins from the body, left atrium on the patient's left receiving pulmonary veins from the lungs), bottom: two ventricles (right ventricle with thinner crescent-shaped wall, left ventricle with a clearly thicker wall forming the apex of the heart), central continuous septum dividing the two sides (interatrial septum above, interventricular septum below), subtle color coding blue on the right side and red on the left side to reinforce deoxygenated versus oxygenated blood separation, labels naming each chamber and the septum, muted anatomical palette, neutral background, Brazilian Portuguese labels, educational clarity",
+      "origem": "esquema"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s2-ana2-01-110-fc1",
+      "tipo": "por_que",
+      "pergunta": "Por que o coração humano tem exatamente quatro câmaras, e não uma, duas ou três?",
+      "resposta": "Porque o sangue faz dois trajetos que não podem se misturar (a circulação pulmonar, curta, e a sistêmica, longa) e cada trajeto exige duas funções: receber o sangue que chega e empurrá-lo adiante. Dois circuitos × duas funções (receber e empurrar) = quatro câmaras. Dois átrios de recepção (parede fina) e dois ventrículos de bombeamento (parede grossa). O número não é arbitrário: é a menor arquitetura que separa os dois trajetos e ainda otimiza o enchimento de cada bomba.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["quatro-camaras", "dois-circuitos", "fundacao"]
+    },
+    {
+      "card_id": "s2-ana2-01-110-fc2",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença funcional e morfológica entre um átrio e um ventrículo?",
+      "resposta": "O átrio é a câmara de recepção: recebe o sangue que chega ao coração e o entrega ao ventrículo logo abaixo. Como só precisa empurrar sangue por uma curtíssima distância (morro abaixo até o ventrículo), tem parede fina e trabalha em baixa pressão. O ventrículo é a câmara de bombeamento: gera a pressão que lança o sangue para o pulmão ou para o corpo, então tem parede muscular grossa e trabalha em alta pressão. Regra: átrio recebe (parede fina), ventrículo empurra (parede grossa).",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["atrio-ventriculo", "forma-funcao", "comparacao"]
+    },
+    {
+      "card_id": "s2-ana2-01-110-fc3",
+      "tipo": "por_que",
+      "pergunta": "Se ambos os ventrículos bombeiam o mesmo volume de sangue por batimento, por que a parede do ventrículo esquerdo é muito mais grossa que a do direito?",
+      "resposta": "Porque eles bombeiam contra resistências completamente diferentes. O ventrículo direito manda sangue para os pulmões, que ficam ao lado, num circuito curto e de baixa pressão — pouca força basta. O ventrículo esquerdo manda sangue para o corpo inteiro, vencendo o atrito de toda a rede sistêmica e a gravidade até os pés — exige pressão alta. Mesma quantidade de sangue, forças muito diferentes: a espessura da parede é a medida da pressão que a câmara precisa gerar.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["ventriculo-esquerdo", "pressao", "forma-funcao"]
+    },
+    {
+      "card_id": "s2-ana2-01-110-fc4",
+      "tipo": "mecanismo",
+      "pergunta": "Por que colocar um átrio antes de cada ventrículo, em vez de o ventrículo puxar o sangue diretamente das grandes veias?",
+      "resposta": "Porque o ventrículo é uma câmara muscular grossa e sugar sangue de longe, das grandes veias, enquanto se enche seria lento e custoso. O átrio funciona como uma antessala de recepção: vai acumulando o sangue que chega continuamente e, no momento certo, dá um empurrão que completa o enchimento do ventrículo. Assim o ventrículo já encontra a câmara quase cheia e pode se dedicar à sua tarefa de força — gerar pressão de saída — sem perder tempo puxando sangue de longe.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["atrio", "enchimento", "mecanismo"]
+    },
+    {
+      "card_id": "s2-ana2-01-110-fc5",
+      "tipo": "por_que",
+      "pergunta": "Qual é a função do septo cardíaco, e o que acontece quando ele apresenta um defeito de nascença?",
+      "resposta": "O septo é a parede contínua que separa o lado direito do esquerdo do coração (septo interatrial entre os átrios, septo interventricular entre os ventrículos). É ele que garante fisicamente que o sangue desoxigenado (à direita) e o oxigenado (à esquerda) não se misturem. Quando tem um furo congênito (comunicação interatrial ou interventricular), os dois lados passam a se comunicar e o sangue mistura-se entre os circuitos, quebrando a separação que justifica a arquitetura de quatro câmaras — um dos defeitos cardíacos congênitos mais comuns.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["septo", "congenito", "separacao"]
+    },
+    {
+      "card_id": "s2-ana2-01-110-fc6",
+      "tipo": "contrafactual",
+      "pergunta": "Se um único ventrículo tivesse de bombear tanto para o pulmão quanto para o corpo, o que aconteceria com a entrega de oxigênio?",
+      "resposta": "O sangue que acabou de voltar do pulmão (oxigenado) se misturaria com o que acabou de voltar do corpo (desoxigenado) dentro da mesma câmara. O corpo receberia uma mistura parcialmente oxigenada, com muito menos oxigênio do que se recebesse sangue vindo diretamente do pulmão. A entrega de oxigênio aos tecidos cairia drasticamente — exatamente o problema que a separação em dois ventrículos, um só para o pulmão e outro só para o corpo, existe para evitar.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["contrafactual", "mistura", "dois-circuitos"]
+    },
+    {
+      "card_id": "s2-ana2-01-110-fc7",
+      "tipo": "etimologia",
+      "pergunta": "A palavra 'átrio' vem do latim 'atrium', o pátio de entrada da casa romana. Como esse nome descreve a função da câmara?",
+      "resposta": "O átrio da casa romana era o salão de entrada, o primeiro cômodo, amplo e de paredes leves — espaço de recepção, não de guardar valores. O átrio cardíaco é exatamente isso: a 'sala de entrada' do sangue no coração, onde ele chega e espera antes de passar ao ventrículo (o aposento interno). E, como o pátio romano, tem parede fina — é lugar de receber e passar adiante, não de gerar força. O nome descreve tanto a posição (entrada) quanto a natureza leve da parede.",
+      "dificuldade": 1,
+      "nivel_alvo": 2,
+      "tags": ["etimologia", "atrio", "forma-funcao"]
+    },
+    {
+      "card_id": "s2-ana2-01-110-fc8",
+      "tipo": "aplicacao",
+      "pergunta": "Os nomes 'direito' e 'esquerdo' das câmaras seguem a perspectiva de quem? E por que o ventrículo direito ocupa a face anterior do coração?",
+      "resposta": "Seguem a perspectiva do dono do coração, não do observador: o átrio direito fica à direita do paciente. Além disso, o coração é torcido dentro do tórax, de modo que o ventrículo direito acaba ocupando boa parte da face anterior (a que encosta no esterno), enquanto o átrio esquerdo é a câmara mais posterior, quase colada à coluna. Por isso 'direito' não significa simplesmente 'à direita e para a frente' — a nomenclatura segue o corpo, e a torção do órgão redistribui as câmaras no espaço torácico.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["orientacao", "posicao", "aplicacao"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s2-ana2-01-110-caso-01",
+      "titulo": "O bebê azul e o furo na parede",
+      "apresentacao": "Uma recém-nascida de 3 dias é levada ao pediatra porque a mãe notou que os lábios e as pontas dos dedos dela ficam com um tom arroxeado, sobretudo quando chora. Ao exame, o médico ausculta um sopro cardíaco — um ruído extra entre as batidas — e a saturação de oxigênio no sangue está mais baixa do que o esperado para uma criança saudável.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Durante a formação do coração no útero, a parede que deveria separar completamente os dois lados não fechou por inteiro, deixando um orifício. Nesta bebê, o furo está na parede entre os dois ventrículos — uma comunicação interventricular, um defeito no septo."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A estrutura afetada é o septo interventricular, a parede que, segundo a lógica deste bloco, é o que sustenta fisicamente a separação entre o sangue desoxigenado (à direita) e o oxigenado (à esquerda). Com um furo nele, os dois recintos que deveriam ficar isolados passam a se comunicar."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Retome a conta das quatro câmaras: ela só funciona porque os dois lados não se misturam. Com o furo no septo, parte do sangue oxigenado do ventrículo esquerdo (que está sob pressão mais alta) atravessa para o direito e volta ao pulmão sem necessidade; e, dependendo das pressões, sangue desoxigenado pode passar para o lado esquerdo e seguir para o corpo. A separação limpa entre os dois circuitos — a razão de existirem quatro câmaras — está quebrada."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O sopro que o médico ouve é o barulho do sangue passando pelo furo, em turbulência, de uma câmara de pressão maior para uma de pressão menor. O tom arroxeado da pele (cianose) aparece porque parte do sangue que chega ao corpo não passou pela oxigenação completa — é a mistura dos circuitos, a mesma que a arquitetura de quatro câmaras existe para impedir, se manifestando na cor da criança."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Compreender que o problema é uma falha da parede separadora orienta toda a conduta: alguns furos pequenos fecham sozinhos com o crescimento; outros, maiores, precisam ser corrigidos cirurgicamente para restaurar a separação entre os dois lados. A pergunta do bloco — por que quatro câmaras separadas? — deixa de ser abstrata e vira, literalmente, a explicação da cor da pele do bebê à beira do berço."
+        }
+      ],
+      "diagnostico_revelado": "O quadro corresponde a uma **comunicação interventricular (CIV)** — um defeito congênito no septo interventricular, um dos defeitos cardíacos de nascença mais comuns. É a falha exata do princípio deste bloco: a parede que garante a separação em quatro câmaras não se completou, e os dois circuitos, que deveriam ser independentes, passam a se comunicar.",
+      "tratamento_resumido": "Depende do tamanho do defeito: furos pequenos frequentemente fecham espontaneamente nos primeiros anos e apenas se acompanha a criança; furos maiores, que sobrecarregam o coração e os pulmões, exigem correção cirúrgica ou por cateter para restaurar a integridade do septo. Entender que o alvo do tratamento é reconstruir a parede que separa os dois lados torna o raciocínio clínico transparente."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s2-ana2-01-100",
+        "titulo": "Coração — Visão Geral",
+        "relevancia": "base_necessaria"
+      },
+      {
+        "bloco_id": "s2-ana2-01-000",
+        "titulo": "Sistema Cardiovascular — Visão Geral",
+        "relevancia": "base_necessaria"
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "DECOMPOSICAO",
+        "topico": "Átrio Direito (nó filho s2-ana2-01-111)",
+        "mecanismo_conexao": "Abre a primeira câmara de recepção: onde e como o sangue do corpo entra no coração, aplicando a lógica de 'átrio = recepção de parede fina' montada aqui"
+      },
+      {
+        "tipo": "DECOMPOSICAO",
+        "topico": "Ventrículo Esquerdo (nó filho s2-ana2-01-114)",
+        "mecanismo_conexao": "Detalha a câmara de parede mais espessa e o porquê morfológico da alta pressão sistêmica antecipado neste bloco pela regra 'a espessura da parede é a medida da pressão'"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Septo Interatrial e Interventricular (nó filho s2-ana2-01-115)",
+        "mecanismo_conexao": "Aprofunda a parede que sustenta a separação em quatro câmaras e os defeitos congênitos (CIV, CIA) que surgem quando ela falha"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Válvulas Cardíacas — Visão Geral (nó irmão s2-ana2-01-120)",
+        "mecanismo_conexao": "Entre átrios e ventrículos, e entre ventrículos e artérias de saída, existem válvulas que garantem o fluxo de mão única; a separação em câmaras só funciona acoplada às portas que impedem o refluxo"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Sistema de Condução — Visão Geral (nó irmão s2-ana2-01-140)",
+        "mecanismo_conexao": "As quatro câmaras precisam se contrair em compasso rigoroso (átrios juntos, depois ventrículos juntos); é o sistema de condução elétrico que impõe essa sincronia mencionada na análise da analogia"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s2-ana2-01-101",
+        "titulo": "Situação e Orientação do Coração no Tórax",
+        "relevancia": "complementar"
+      },
+      {
+        "bloco_id": "s2-ana2-01-102",
+        "titulo": "Morfologia Externa — Faces e Margens",
+        "relevancia": "complementar"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s2-ana2-01-110-img-01",
+        "titulo": "A conta das quatro câmaras: dois circuitos × duas funções",
+        "origem": "esquema"
+      },
+      {
+        "id": "s2-ana2-01-110-img-02",
+        "titulo": "As quatro câmaras no coração real, em corte frontal",
+        "origem": "esquema"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "pronto",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s2",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "produtor-bloco-anima",
+    "data_geracao": "2026-07-03",
+    "revisado_por": "integrador-anima",
+    "data_revisao": "2026-07-03",
+    "nivel_confianca": "completo"
   },
-  "fontes": [],
-  "_lentes": [
-    "funcao-fisiologia",
-    "morfologia/forma"
-  ]
+  "fontes": []
 }
