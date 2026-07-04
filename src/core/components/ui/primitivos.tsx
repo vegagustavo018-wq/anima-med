@@ -82,20 +82,28 @@ export function Cartao({
 }) {
   const base: React.CSSProperties = {
     display: 'block',
-    background: 'var(--color-bg-card)',
-    border: '1px solid var(--color-border)',
-    borderTop: cor ? `3px solid ${cor}` : '1px solid var(--color-border)',
+    // Vidro fosco — deixa a bioluminescência do fundo vazar por trás
+    background: 'rgba(26, 34, 52, 0.55)',
+    backdropFilter: 'blur(16px) saturate(125%)',
+    WebkitBackdropFilter: 'blur(16px) saturate(125%)',
+    border: '1px solid rgba(140, 160, 190, 0.12)',
+    borderTop: cor ? `3px solid ${cor}` : '1px solid rgba(140, 160, 190, 0.12)',
     borderRadius: 'var(--radius-lg)',
+    boxShadow: '0 8px 32px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.05)',
     padding: 18,
     cursor: onClick || to ? 'pointer' : 'default',
     textAlign: 'left',
     textDecoration: 'none',
-    transition: 'border-color 0.15s, background 0.15s',
+    transition: 'border-color 0.18s, background 0.18s, transform 0.18s, box-shadow 0.18s',
     width: '100%',
     ...style,
   }
   const hover = (e: React.MouseEvent<HTMLElement>, on: boolean) => {
-    e.currentTarget.style.background = on ? 'var(--color-bg-hover)' : 'var(--color-bg-card)'
+    e.currentTarget.style.background = on ? 'rgba(30, 42, 64, 0.7)' : 'rgba(26, 34, 52, 0.55)'
+    e.currentTarget.style.transform = on ? 'translateY(-2px)' : 'translateY(0)'
+    e.currentTarget.style.boxShadow = on
+      ? '0 14px 40px rgba(0,0,0,0.34), inset 0 1px 0 rgba(255,255,255,0.07)'
+      : '0 8px 32px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.05)'
     if (cor) e.currentTarget.style.borderTopColor = cor
   }
   if (to)
@@ -140,9 +148,12 @@ export function FalaAnima({ texto, grande = false }: { texto: string; grande?: b
         gap: 14,
         alignItems: 'flex-start',
         padding: grande ? '20px 24px' : '14px 18px',
-        background: 'var(--color-accent-glow)',
+        background: 'rgba(79, 209, 197, 0.10)',
+        backdropFilter: 'blur(14px) saturate(120%)',
+        WebkitBackdropFilter: 'blur(14px) saturate(120%)',
         border: '1px solid var(--color-border-accent)',
         borderRadius: 'var(--radius-lg)',
+        boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.05)',
       }}
     >
       <span

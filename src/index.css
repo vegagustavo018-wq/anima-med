@@ -203,6 +203,29 @@ html[data-largura="estreita"] .narrativa { max-width: 52ch; margin: 0 auto; }
 html[data-largura="larga"] .narrativa { max-width: 90ch; }
 
 /* ══════════════════════════════════════════════════════════════
+   GLASSMORPHISM — superfícies de vidro fosco (identidade "organismo de luz")
+   Vidro translúcido que deixa a bioluminescência do fundo vazar por trás.
+   ══════════════════════════════════════════════════════════════ */
+.anima-glass {
+  background: rgba(26, 34, 52, 0.55);
+  -webkit-backdrop-filter: blur(16px) saturate(125%);
+  backdrop-filter: blur(16px) saturate(125%);
+  border: 1px solid rgba(140, 160, 190, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+.anima-glass-forte {
+  background: rgba(17, 24, 39, 0.62);
+  -webkit-backdrop-filter: blur(22px) saturate(130%);
+  backdrop-filter: blur(22px) saturate(130%);
+  border: 1px solid rgba(140, 160, 190, 0.14);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+/* Navegadores sem backdrop-filter: cai para superfície sólida (nunca vira vidro invisível) */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .anima-glass, .anima-glass-forte { background: var(--color-bg-card); }
+}
+
+/* ══════════════════════════════════════════════════════════════
    FASE D — Fluidez, beleza, animações e micro-interações
    ══════════════════════════════════════════════════════════════ */
 
