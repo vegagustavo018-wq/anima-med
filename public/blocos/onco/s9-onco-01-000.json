@@ -149,70 +149,63 @@
     }
   ],
   "conexoes": {
-    "prerequisitos": [
-      {
-        "blocoId": "s9-onco-00-000",
-        "relacao": "RAIZ",
-        "descricao": "Este bloco aprofunda a clínica partindo da biologia do bloco raiz (oncogenes, supressores, instabilidade). Biologia explica o motor; clínica explica como ele se manifesta."
-      },
-      {
-        "blocoId": "s1-hist-02-001",
-        "relacao": "ALICERCE",
-        "descricao": "Polaridade celular e junções são pré-requisito para entender como tumor perde adesão e dissemina. Epitélio normal é organizado. Tumor desorganizado = perda de polaridade + junções."
-      },
-      {
-        "blocoId": "s2-patol-01-000",
-        "relacao": "CONTEXTO_PARALELO",
-        "descricao": "Patologia geral (inflamação, cicatrização, adaptações celulares) fornece linguagem de dano estrutural. Displasia, metaplasia, carcinoma in situ são conceitos-ponte."
-      }
-    ],
+    "prerequisitos": [],
     "futuras": [
       {
         "blocoId": "s9-onco-01-001",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Biologia Tumoral Essencial. Aprofunda os mecanismos de crescimento neoplásico, apoptose evadida, imortalização telomérica. Responde: por que células transformadas continuam dividindo quando deveriam morrer?"
+        "descricao": "Biologia Tumoral Essencial. Aprofunda os mecanismos de crescimento neoplásico, apoptose evadida, imortalização telomérica. Responde: por que células transformadas continuam dividindo quando deveriam morrer?",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "blocoId": "s9-onco-01-002",
         "tipo": "MECANISMO_COMPARTILHADO",
-        "descricao": "Oncogenes e Supressores de Tumores. Detalha as moléculas específicas (TP53, RB, KRAS, MYC, BRCA1/2) e como mutações em cada uma alteram fenótipo clínico e resposta ao tratamento."
+        "descricao": "Oncogenes e Supressores de Tumores. Detalha as moléculas específicas (TP53, RB, KRAS, MYC, BRCA1/2) e como mutações em cada uma alteram fenótipo clínico e resposta ao tratamento.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "blocoId": "s9-onco-01-003",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Genética Clínica e Testes Moleculares. Completa o ciclo: como testes de EGFR, ALK, PD-L1, microsatélites e TMB mudam decisão de tratamento em cada tumor."
+        "descricao": "Genética Clínica e Testes Moleculares. Completa o ciclo: como testes de EGFR, ALK, PD-L1, microsatélites e TMB mudam decisão de tratamento em cada tumor.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "blocoId": "s9-onco-02-000",
         "tipo": "RECONHECIMENTO_CLINICO",
-        "descricao": "Apresentações Clínicas por Localização (Carcinomas). Cada tumor (pulmão, colón, mama, pâncreas) tem apresentação clínica, fatores de risco, rastreamento, prognóstico distinto."
+        "descricao": "Apresentações Clínicas por Localização (Carcinomas). Cada tumor (pulmão, colón, mama, pâncreas) tem apresentação clínica, fatores de risco, rastreamento, prognóstico distinto.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "blocoId": "s9-onco-03-000",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Cirurgia Oncológica. A decisão cirúrgica depende completamente de estadiamento clínico e genética tumoral. Tumor ressecável? Há metástase? Vale a pena operar?"
+        "descricao": "Cirurgia Oncológica. A decisão cirúrgica depende completamente de estadiamento clínico e genética tumoral. Tumor ressecável? Há metástase? Vale a pena operar?",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
       {
         "blocoId": "s3-semiologia-01-000",
         "relacao": "APLICACAO_PRATICA",
-        "descricao": "Semiologia procura os sinais (palpação de nódulos, exame de linfonodos, icterícia). Clínica oncológica interpreta esses sinais em contexto de oncogênese."
+        "descricao": "Semiologia procura os sinais (palpação de nódulos, exame de linfonodos, icterícia). Clínica oncológica interpreta esses sinais em contexto de oncogênese.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       },
       {
         "blocoId": "s4-imagem-01-000",
         "relacao": "FERRAMENTA_DIAGNOSTICA",
-        "descricao": "Diagnóstico por imagem (TC, RM, PET-scan, ultrassom) mapeia o iceberg — revela tamanho real, disseminação, inoperabilidade. Suporta todo estadiamento TNM."
+        "descricao": "Diagnóstico por imagem (TC, RM, PET-scan, ultrassom) mapeia o iceberg — revela tamanho real, disseminação, inoperabilidade. Suporta todo estadiamento TNM.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       },
       {
         "blocoId": "s5-patol-onco-01-000",
         "relacao": "CONFIRMACAO_DIAGNOSTICA",
-        "descricao": "Patologia e imunohistoquímica confirma diagnóstico, determina tipo histológico, grau de diferenciação, presença de antígenos prognósticos (HER2, ER/PR, PD-L1)."
+        "descricao": "Patologia e imunohistoquímica confirma diagnóstico, determina tipo histológico, grau de diferenciação, presença de antígenos prognósticos (HER2, ER/PR, PD-L1).",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       },
       {
         "blocoId": "s8-farma-onco-01-000",
         "relacao": "CONDUTA_TERAPEUTICA",
-        "descricao": "Farmacologia e quimioterapia: como as drogas funcionam, quais cascatas inibem, quais tumores são sensíveis. Toda decisão farmacológica depende de genética clínica definida neste bloco."
+        "descricao": "Farmacologia e quimioterapia: como as drogas funcionam, quais cascatas inibem, quais tumores são sensíveis. Toda decisão farmacológica depende de genética clínica definida neste bloco.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -268,15 +261,16 @@
   ],
   "casos_clinicos": [
     {
+      "caso_id": "s9-onco-01-000-cc1",
       "titulo": "Apresentação Clínica de Câncer de Pulmão: Tosse Persistente",
-      "narrativa": "João, 62 anos, fumante de 40 maços/ano, procura seu consultório relatando tosse seca há 3 meses. Não tem febre, não tem dor torácica, saturação está 98% em ar ambiente. Você palpita: infecção respiratória simples. Mas insiste em investigar porque tosse persistente em fumante é red flag.",
-      "cascata_causal": [
+      "apresentacao": "João, 62 anos, fumante de 40 maços/ano, procura seu consultório relatando tosse seca há 3 meses. Não tem febre, não tem dor torácica, saturação está 98% em ar ambiente. Você palpita: infecção respiratória simples. Mas insiste em investigar porque tosse persistente em fumante é red flag.",
+      "cascata": [
         {
           "etapa": "Causa",
           "descricao": "Fumo prolongado causa mutações repetidas em células epiteliais de brônquios. Ao longo de 40 anos, várias células acumulam mutações (KRAS, TP53). Uma delas consegue dividir-se desenfreadamente. Tumor cresce."
         },
         {
-          "etapa": "Estrutura",
+          "etapa": "Estrutura Afetada",
           "descricao": "Tumor de 2,5cm adere à parede brônquica, invade mucosa. Não invadiu vasos ainda. Não há linfonodos regionais envolvidos. Não há metástase. T2N0M0."
         },
         {
@@ -288,24 +282,28 @@
           "descricao": "Tosse persistente, seca, às vezes com um pouco de sangue. João chama isso de 'tosse de fumo' — mas fumo não causa tosse persistente de meses. Isso é sinal de que algo novo está irritando."
         },
         {
-          "etapa": "Diagnóstico",
+          "etapa": "Consequência",
           "descricao": "TC de tórax com contraste mostra nódulo de 2,5cm em lobo superior direito, bordas irregulares, sugestivo de malignidade. Biópsia broncoscópica confirma: adenocarcinoma de pulmão. Sequenciamento mostra EGFR mutado. Prognóstico: erlotinib como primeira droga. Sobrevida esperada com erlotinib: >3 anos."
         }
       ],
-      "questao_desafio": "Se João tivesse vindo 1 ano antes com tosse leve, e TC mostrasse nódulo de 0,8cm (T1N0M0), qual seria o tratamento e qual a sobrevida esperada?",
-      "resposta_esperada": "T1N0M0 é estágio IA. Tratamento seria ressecção cirúrgica de lobo (lobectomia superior direita) com linfadenectomia. Não precisaria de quimio. Se completamente ressecado, sobrevida de 5 anos ~85-90%. Rastreamento por TC de baixa dose em fumadores detecta esses tumores cedo.",
-      "nivel_complexidade": 3
+      "conexao_com_bloco": "Ilustra a cascata biológica completa do câncer discutida neste bloco: do acúmulo de mutações à apresentação clínica, com a questão-desafio mostrando como o estadiamento no momento do diagnóstico determina radicalmente o prognóstico.",
+      "disciplinas_relacionadas": [
+        "Oncologia"
+      ],
+      "diagnostico_revelado": "Adenocarcinoma de pulmão, estágio T2N0M0, com mutação ativadora de EGFR.",
+      "tratamento_resumido": "Adenocarcinoma de pulmão EGFR-mutado, estágio T2N0M0: erlotinib (inibidor de tirosina-quinase do EGFR) como primeira linha — sobrevida esperada superior a 3 anos. Diagnóstico precoce (T1N0M0) permitiria lobectomia com linfadenectomia, sem quimioterapia, com sobrevida em 5 anos de 85-90%."
     },
     {
+      "caso_id": "s9-onco-01-000-cc2",
       "titulo": "Rastreamento versus Diagnóstico: Melanoma em Pele",
-      "narrativa": "Maria tem 35 anos e uma mancha escura no dorso. Ela detecta enquanto toma banho (auto-exame). Procura dermatologista. Você pergunta: 'Há quanto tempo?' Resposta: '3 meses, e cresceu um pouco.' Isso muda tudo.",
-      "cascata_causal": [
+      "apresentacao": "Maria tem 35 anos e uma mancha escura no dorso. Ela detecta enquanto toma banho (auto-exame). Procura dermatologista. Você pergunta: 'Há quanto tempo?' Resposta: '3 meses, e cresceu um pouco.' Isso muda tudo.",
+      "cascata": [
         {
           "etapa": "Causa",
           "descricao": "Maria teve exposição solar intenso aos 25 anos (férias em praia sem protetor). Uma célula melanócita sofreu mutação em BRAF. Começou a dividir-se. Crescimento foi lento — imperceptível por 7 anos."
         },
         {
-          "etapa": "Estrutura",
+          "etapa": "Estrutura Afetada",
           "descricao": "Lesão melanócita maligna, ainda confinada à epiderme e derme superficial (melanoma in situ → melanoma invasor Clark I-II). Tamanho: 8mm. Sem envolvimento de linfonodo. T1N0M0."
         },
         {
@@ -317,13 +315,16 @@
           "descricao": "Não há sintoma no sentido clássico. A 'ponta do iceberg' aqui é visual. Maria vê uma mancha que está crescendo. Isso dispara o alarme — regra ABCDE: Assimetria, Borda irregular, Cor variável, Diâmetro >5mm, Evolução."
         },
         {
-          "etapa": "Diagnóstico",
+          "etapa": "Consequência",
           "descricao": "Biópsia excisional mostra melanoma invasor, espessura Breslow 0,8mm, mitoses 2/mm2, sem ulceração. Estadio I. Prognóstico: sobrevida 10 anos ~90%. Tratamento: excisão com margem de 1cm. Sem quimio. Seguimento: dermatoscopipia periódica para segundo primário."
         }
       ],
-      "questao_desafio": "Se Maria tivesse descoberto a mesma lesão, mas com 2cm e espessura Breslow 4mm (por ter ignorado 2 anos mais), qual seria o estadio e sobrevida esperada?",
-      "resposta_esperada": "Espessura Breslow 4mm = estágio III (T4). Se tivesse linfonodos envolvidos (N1), seria estágio III. Sobrevida 10 anos ~50-60%. Precisaria de cirurgia + possível linfadenectomia + imunoterapia adjuvante (pembrolizumabe). Diferença de 1 ano de atraso na detecção dimidiava sobrevida.",
-      "nivel_complexidade": 3
+      "conexao_com_bloco": "Ilustra a cascata biológica completa do câncer discutida neste bloco: do acúmulo de mutações à apresentação clínica, com a questão-desafio mostrando como o estadiamento no momento do diagnóstico determina radicalmente o prognóstico.",
+      "disciplinas_relacionadas": [
+        "Oncologia"
+      ],
+      "diagnostico_revelado": "Melanoma cutâneo invasor, espessura Breslow 0,8mm, estágio I, sem envolvimento linfonodal.",
+      "tratamento_resumido": "Melanoma invasor, espessura Breslow 0,8mm, estágio I: excisão cirúrgica com margem de 1cm, sem quimioterapia, seguimento com dermatoscopia periódica — sobrevida em 10 anos de aproximadamente 90%. Diagnóstico tardio (Breslow 4mm, estágio III) exigiria cirurgia mais ampla, possível linfadenectomia e imunoterapia adjuvante, com sobrevida em 10 anos caindo para 50-60%."
     }
   ],
   "midia": {

@@ -5,50 +5,284 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Curva Graduada e Ocupação de Receptores",
+    "subtitulo": "Se cada receptor só pode estar ocupado ou livre, como isso vira uma curva contínua e suave?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "curva-dose-resposta",
+      "teoria-da-ocupacao",
+      "emax",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Efeito proporcional à ocupação; Emax; teoria da ocupação",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior mostrou que existem dois tipos de curva dose-resposta — graduada e quantal — e que ambas assumem formato em S por razões diferentes. Este bloco entra especificamente na curva graduada e responde a uma pergunta que ficou em aberto: por que ela é suave e contínua, se cada receptor individual só pode estar ocupado ou livre, um evento binário? A resposta é a teoria da ocupação: um tecido não tem um receptor, tem milhões, e o efeito observado é proporcional à fração desses receptores ocupada pelo fármaco a cada instante, não ao estado de qualquer receptor isolado. Como a soma de milhões de eventos binários independentes se comporta como uma variável contínua, a curva de efeito em função da concentração aparece suave. Só que a proporcionalidade não é infinita: existe um teto, chamado de efeito máximo ou Emax, correspondente ao estado em que praticamente todos os receptores relevantes já estão ocupados. Depois desse ponto, aumentar ainda mais a dose deixa de aumentar o efeito, porque não sobra receptor livre para ocupar. Essa combinação — proporcionalidade parcial seguida de platô — é a assinatura da teoria da ocupação e a base racional para comparar fármacos pela potência e pela eficácia máxima nos próximos blocos.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já sabe que a curva graduada relaciona dose (ou concentração) com a intensidade de um efeito medido num único tecido ou sujeito, e que ela assume formato em S. Falta responder uma pergunta que parece simples, mas não é: cada receptor, isoladamente, só admite dois estados — ocupado pelo fármaco ou livre. Não existe meio-receptor ocupado. Como uma soma de eventos que são, cada um, tudo-ou-nada, produz uma curva contínua e suave de efeito?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: o receptor é binário, mas o efeito observado não é"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se você olhasse para um único receptor sob um microscópio hipotético capaz de ver moléculas, veria apenas dois estados possíveis a cada instante: com fármaco encaixado ou vazio. Não há posição intermediária. Se o efeito farmacológico dependesse do comportamento de um receptor isolado, a curva dose-resposta seria um degrau — nada até uma certa concentração, efeito total a partir dela. Mas não é isso que se observa experimentalmente: o efeito cresce em graus, suavemente, à medida que a concentração sobe. Existe uma contradição aparente entre o binarismo da molécula e a continuidade do gráfico."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar o problema: o mistério não é se o fármaco ocupa o receptor — isso já é sabido desde o bloco sobre ligação fármaco-receptor. O mistério é por que a soma desses encaixes binários aparece, no gráfico, como uma curva contínua."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução, sem nomear: contar receptores, não perguntar a um só"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A saída para essa aparente contradição é trocar a pergunta. Em vez de perguntar 'este receptor está ocupado?', a farmacologia pergunta 'que fração do total de receptores está ocupada agora?'. Um tecido tem, tipicamente, milhares a milhões de cópias do mesmo receptor espalhadas pelas células. Cada cópia individual continua sendo binária — mas a fração ocupada, entre milhões de unidades, pode assumir qualquer valor entre 0% e 100%, tão suavemente quanto a maré sobe na areia, grão a grão, ainda que cada grão de areia seja uma unidade discreta."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O efeito farmacológico observado é proporcional à **fração de receptores ocupados** no tecido, não ao estado de qualquer receptor individual. É essa mudança de escala — de uma molécula para milhões delas — que transforma um evento binário em uma curva contínua."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essa proporcionalidade é feita"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa ideia tem nome técnico: teoria da ocupação. Ela postula que o efeito de um fármaco agonista é função direta do número de receptores que ele ocupa a cada concentração, e que essa ocupação segue a mesma lógica de qualquer reação reversível de ligação — quanto mais fármaco disponível, maior a chance de qualquer receptor livre encontrar uma molécula e se encaixar, até que a maioria dos receptores esteja ocupada a maior parte do tempo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Só que 'proporcional' não significa 'ilimitado'. Existe um teto estrutural: o número total de receptores daquele tipo, naquele tecido, é finito. Quando a concentração de fármaco fica alta o suficiente para que praticamente todos os receptores relevantes estejam ocupados a maior parte do tempo, aumentar ainda mais a dose não tem mais nenhum receptor livre adicional para recrutar. O efeito para de crescer e a curva se achata num platô. Esse teto tem nome: **efeito máximo**, ou **Emax** — a maior resposta que aquele sistema biológico é capaz de produzir, não importa quanto fármaco a mais seja adicionado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essa combinação — crescimento proporcional à ocupação enquanto há receptor livre, seguido de platô quando a ocupação satura — que desenha o formato em S da curva graduada. A porção inicial, achatada, corresponde a poucos receptores ocupados dentro de uma população ainda majoritariamente livre. A porção íngreme, no meio, corresponde à faixa de concentração em que a ocupação varia mais rapidamente. E o platô final corresponde à saturação: quase todo receptor ocupado, sem mais capacidade de resposta adicional a extrair do sistema."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Neste ponto você já tem o essencial: efeito proporcional à fração de receptores ocupados, até o teto de Emax, quando a ocupação satura. É essa lógica de ocupação progressiva — não uma propriedade misteriosa da curva em si — que gera o S."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em consequência prática"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma implicação direta da teoria da ocupação é que o Emax de um fármaco é uma propriedade do próprio composto e do sistema receptor-efetor, não uma escolha do prescritor. Se um paciente não atinge o efeito desejado na dose que já está próxima ao platô, aumentar ainda mais a dose tende a agregar pouco ou nenhum benefício adicional — porque não sobra receptor livre para ocupar — e, em vez disso, aumenta a chance de efeitos adversos ligados a outros alvos moleculares que o fármaco passa a atingir em concentrações mais altas. Reconhecer que a curva está no platô, e não na porção ainda ascendente, é o que orienta a decisão entre aumentar a dose ou trocar de estratégia terapêutica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A teoria da ocupação também explica por que fármacos diferentes que atuam no mesmo receptor podem ter Emax diferentes entre si: um agonista pleno consegue, ao se ligar, produzir a resposta máxima que o receptor é capaz de gerar quando totalmente ocupado; um agonista parcial, mesmo ocupando 100% dos receptores, não consegue extrair do sistema a mesma resposta máxima — o teto dele é mais baixo. Esse detalhe sobre tipos de agonista será aprofundado à frente; aqui basta reter que o platô observado na curva graduada é, ele mesmo, uma medida direta da capacidade do fármaco de converter ocupação em efeito."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa ideia se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A teoria da ocupação é o elo causal entre o bloco sobre ligação fármaco-receptor — que descreveu o encaixe individual — e o bloco anterior sobre curvas dose-resposta, que descreveu o formato em S sem explicar sua origem molecular. Ela também é o alicerce sobre o qual os próximos blocos vão construir os conceitos de potência (que depende de quanta concentração é necessária para ocupar uma dada fração de receptores) e eficácia máxima (que é, literalmente, o valor do Emax). Sem entender que o efeito reflete fração ocupada, e não estado de um receptor isolado, esses dois conceitos ficariam sem fundamento mecanístico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, essa lógica aparece toda vez que um médico titula a dose de um broncodilatador, de um analgésico opioide ou de um anti-hipertensivo observando resposta crescente até um ponto em que doses adicionais deixam de agregar benefício proporcional. Esse platô clínico, percebido à beira do leito, é a mesma saturação de ocupação de receptores descrita aqui em termos moleculares — a ponte entre o consultório e o receptor é direta."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Emax",
+      "origem": "abreviação do inglês 'maximal Effect', notação consolidada na farmacologia quantitativa a partir de meados do século XX",
+      "significado": "o efeito máximo que um fármaco é capaz de produzir num sistema biológico, independentemente de quanto a dose seja aumentada além do ponto de saturação",
+      "explicacao": "A notação Emax se popularizou junto com a formalização matemática da teoria da ocupação, quando pesquisadores como Alfred J. Clark, nas décadas de 1920 e 1930, tentaram descrever a ação de fármacos com a mesma lógica usada para reações químicas reversíveis — massa agindo sobre massa. O símbolo condensa, em três caracteres, uma ideia central: todo sistema biológico tem um teto de resposta, e esse teto é mensurável e comparável entre fármacos diferentes. Antes dessa formalização, 'efeito máximo' era uma noção qualitativa; depois dela, virou um número no eixo Y de um gráfico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎟️",
+      "conteudo": "Pense numa fila de cadeiras numeradas, todas vazias, num teatro com lotação de mil lugares — cada cadeira é um receptor, e uma pessoa sentando nela é o fármaco se ligando. Cada cadeira, isoladamente, só tem dois estados: ocupada ou vazia, nunca meio ocupada. Mas se você for contando, a cada minuto, quantas das mil cadeiras já têm alguém sentado, essa contagem sobe suavemente: 3%, 15%, 47%, 82%, sem nenhum salto abrupto — porque, embora cada cadeira seja binária, a **fração ocupada entre mil delas** varia em graus finos. Quando praticamente todas as mil cadeiras já estão ocupadas, deixar entrar mais gente na fila não aumenta mais nada: não há cadeira livre sobrando. Esse é o Emax — a plateia lotada, o teatro no seu limite físico de lugares. A analogia quebra num ponto importante: encher uma cadeira de teatro é definitivo dentro da sessão, enquanto a ligação fármaco-receptor é dinâmica e reversível, com moléculas entrando e saindo constantemente — o que está fixo não é 'quem' está sentado a cada instante, mas a fração média de cadeiras ocupadas numa dada concentração de fármaco no sangue."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um tecido tivesse apenas dez receptores do tipo relevante, em vez de milhões, a curva dose-resposta ainda apareceria como uma linha suave em S?",
+      "resposta": "Não da mesma forma. Com poucos receptores, a fração ocupada só pode assumir valores discretos e bem espaçados — 1 em 10 (10%), 2 em 10 (20%), e assim por diante — e pequenas variações de concentração fariam a curva saltar em degraus visíveis, em vez de subir suavemente. A aparência contínua da curva graduada depende de o número de receptores ser grande o bastante para que a lei dos grandes números suavize os saltos individuais em uma tendência gradual. É por isso que a teoria da ocupação funciona bem para tecidos com populações receptoras numerosas — o caso da imensa maioria dos sistemas farmacológicos reais — mas seria uma aproximação grosseira num sistema hipotético com pouquíssimos receptores."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ocupação de receptores e o platô de Emax",
+      "descricao": "Gráfico único com eixo horizontal de concentração do fármaco (escala logarítmica) e eixo vertical de efeito, mostrando a curva sigmoide clássica dividida em três regiões sombreadas sutilmente distintas: região inicial achatada rotulada 'poucos receptores ocupados', região central íngreme rotulada 'ocupação variando rapidamente', e região final em platô rotulada 'quase todos os receptores ocupados — Emax'. Uma linha horizontal tracejada no nível do platô indica o valor de Emax. Pequenos ícones esquemáticos de receptores (círculos) com fármaco encaixado (preenchidos) ou vazios, mostrados em três momentos ao longo do eixo X, ilustram visualmente a fração crescente de ocupação. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. Um único gráfico grande: eixo X 'Concentração do fármaco (escala log)', eixo Y 'Efeito (% do máximo)'. Curva sigmoide (formato S) clássica e suave. Três zonas da curva sutilmente sombreadas em tons diferentes de uma mesma cor, com legendas pequenas: zona inicial achatada 'poucos receptores ocupados', zona central íngreme 'ocupação variando rapidamente', zona final em platô 'quase todos os receptores ocupados'. Linha horizontal tracejada no nível do platô com rótulo 'Emax'. Acima do gráfico, três pequenos grupos de círculos esquemáticos representando receptores (alguns preenchidos em cor sólida indicando 'ocupado pelo fármaco', outros vazios indicando 'livre'), posicionados alinhados a três pontos ao longo do eixo X correspondentes às três zonas, mostrando visualmente o aumento da fração preenchida da esquerda para a direita. Cores suaves e consistentes, alto contraste, sem texturas fotorrealistas, texto apenas nas legendas indicadas, em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-002",
+        "titulo": "Curva Dose-Resposta — Medir o Efeito (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume que o aluno já sabe que a curva graduada mede intensidade contínua de efeito num único sujeito e já viu o formato em S; aqui se explica a origem molecular desse formato especificamente para a curva graduada, sem revisitar a curva quantal."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Potência e EC50",
+        "mecanismo_conexao": "A potência será definida como a concentração necessária para ocupar uma fração de referência dos receptores (tipicamente 50%) — um refinamento direto da fração de ocupação apresentada aqui.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Agonistas plenos, parciais e antagonistas",
+        "mecanismo_conexao": "A diferença entre um agonista pleno e um parcial é definida pelo Emax que cada um consegue produzir mesmo em ocupação total dos receptores — conceito que só faz sentido depois de entender o platô descrito aqui.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Titulação de dose e reconhecimento do platô terapêutico",
+        "mecanismo_conexao": "Reconhecer clinicamente que um paciente já está próximo do Emax de um fármaco — e que aumentar a dose trará mais risco que benefício — é a aplicação direta, à beira do leito, da teoria da ocupação vista aqui.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-002-01-fc01",
+      "pergunta": "Se cada receptor individual só pode estar ocupado ou livre, por que a curva dose-resposta graduada aparece como uma linha contínua e suave, e não como um degrau abrupto?",
+      "resposta": "Porque o efeito observado não depende do estado de um único receptor, e sim da fração do total de receptores do tecido que está ocupada a cada concentração. Como um tecido tem tipicamente milhares a milhões de cópias do mesmo receptor, essa fração pode variar em incrementos muito finos, e a soma de eventos binários independentes se comporta, na prática, como uma variável contínua — daí a suavidade da curva.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "teoria-da-ocupacao",
+        "curva-graduada",
+        "receptores"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-01-fc02",
+      "pergunta": "O que define o Emax de um fármaco segundo a teoria da ocupação, e por que aumentar a dose além desse ponto não aumenta mais o efeito?",
+      "resposta": "O Emax é o efeito produzido quando praticamente todos os receptores relevantes daquele tecido já estão ocupados pelo fármaco a maior parte do tempo. Como o número total de receptores é finito, não existe mais receptor livre para recrutar além desse ponto — logo, adicionar mais fármaco não amplia a fração ocupada de forma relevante, e a curva se achata em platô.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "emax",
+        "teoria-da-ocupacao",
+        "saturacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-01-fc03",
+      "pergunta": "Um paciente em uso de um fármaco já parece estar na porção em platô da curva dose-resposta, mas o médico aumenta ainda mais a dose na esperança de mais efeito terapêutico. Segundo a teoria da ocupação, o que provavelmente vai acontecer?",
+      "resposta": "O benefício terapêutico adicional tende a ser mínimo ou nulo, porque não sobra receptor livre relevante para ocupar — o sistema já está próximo do seu teto de resposta (Emax). Em contrapartida, a dose extra tende a atingir outros alvos moleculares em concentrações mais altas, aumentando a probabilidade de efeitos adversos sem ganho terapêutico proporcional. Reconhecer o platô é o que deveria orientar a troca de estratégia, em vez de simplesmente aumentar a dose.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "emax",
+        "titulacao-de-dose",
+        "decisao-clinica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-01-fc04",
+      "pergunta": "Se um sistema biológico hipotético tivesse apenas dez receptores do tipo relevante, em vez de milhões, a curva dose-resposta ainda apareceria suave?",
+      "resposta": "Não. Com poucos receptores, a fração ocupada só assume valores discretos e bem espaçados (por exemplo, saltos de 10% em 10%), e a curva apareceria em degraus visíveis em vez de uma subida suave. A suavidade da curva graduada depende de o número de receptores ser grande o suficiente para que variações individuais se dissolvam numa tendência gradual — o que é o caso da imensa maioria dos sistemas farmacológicos reais.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "teoria-da-ocupacao",
+        "numero-de-receptores",
+        "curva-graduada"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Este bloco descreve um princípio quantitativo da farmacodinâmica — a teoria da ocupação de receptores e a origem molecular do platô de Emax — e não uma estrutura anatômica ou molecular cuja disfunção produza uma síndrome clínica isolada e reconhecível. A titulação de dose e o reconhecimento de um platô terapêutico são mencionados como aplicação prática do conceito, mas não configuram uma cascata causal Causa→Estrutura Afetada→Disfunção própria de uma doença; forçar um caso aqui duplicaria, de forma artificial, exemplos que pertencem aos fármacos e às doenças específicas estudados mais adiante."
+  },
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-002-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

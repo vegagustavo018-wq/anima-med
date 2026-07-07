@@ -5,50 +5,336 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Inclusão em Parafina",
+    "subtitulo": "Como transformamos um tecido mole e aquoso em um bloco de corte perfeito?",
     "semestre": 1,
     "disciplina": "histologia",
-    "profundidade_arvore": 4,
-    "importancia": 3,
+    "sistema_corporal": "geral",
+    "regiao_anatomica": null,
+    "profundidade_arvore": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "hist",
-      "esqueleto"
+      "histotecnica",
+      "preparacao-de-laminas",
+      "microscopia-optica",
+      "processamento-de-tecidos",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": ["expert"]
   },
-  "resumo_conciso": "Desidratação, diafanização, impregnação; padrão para microscopia óptica",
-  "narrativa": [],
+  "resumo_conciso": "Um tecido já fixado ainda não pode ser cortado em fatias finas o bastante para o microscópio óptico — ele continua sendo, em sua maior parte, água, e um material aquoso se desfaz sob a lâmina do micrótomo. A inclusão em parafina resolve esse problema por meio de uma sequência de três trocas de fase: a desidratação retira progressivamente a água (substituída por álcool), a diafanização substitui o álcool por um solvente miscível tanto com álcool quanto com parafina, e a impregnação final substitui esse solvente por parafina fundida, que solidifica ao esfriar. O resultado é um bloco sólido e homogêneo capaz de ser fatiado em cortes de 3 a 5 micrômetros sem esmagar a arquitetura celular — a base física de toda lâmina histológica de rotina.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em fatiar um tomate maduro com uma faca muito fina, tentando obter fatias translúcidas de menos de um milímetro. O tomate, cheio de água e polpa mole, esmaga e escorre antes que a lâmina consiga produzir um corte limpo. Agora pense em fatiar, com a mesma faca, um bloco de queijo parmesão bem curado e seco. As fatias saem nítidas, uniformes, sem esmagar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tecido humano fixado é, estruturalmente, muito mais parecido com o tomate do que com o queijo: mesmo depois da fixação, ele continua sendo majoritariamente água. Para conseguir cortá-lo em fatias de 3 a 5 micrômetros — a espessura necessária para que a luz do microscópio atravesse e revele detalhes celulares nítidos — é preciso primeiro transformá-lo em algo com a consistência do queijo curado, não do tomate."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a natureza aquosa do tecido é um problema mecânico tão sério?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um corte ultrafino de tecido mole simplesmente não sustenta sua própria forma sob a pressão da lâmina do micrótomo — ele se rasga, se dobra ou se despedaça. Precisamos, portanto, de um meio de suporte que preencha cada espaço intersticial da célula e, ao solidificar, confira rigidez suficiente para resistir ao corte, mantendo ao mesmo tempo a fidelidade da arquitetura microscópica que a fixação já preservou."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, fixe o problema: fixação preserva a arquitetura molecular, mas não resolve a consistência física do tecido. A inclusão é o passo seguinte, que resolve especificamente o problema mecânico do corte."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a engenharia histológica resolve essa fragilidade — três trocas de fase sequenciais"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é uma substituição gradual e completa da água por um material sólido à temperatura ambiente. O processo tem três etapas obrigatórias, e cada uma resolve uma incompatibilidade química específica com a etapa seguinte. Primeiro, a desidratação: o tecido passa por uma bateria de álcoois em concentração crescente (geralmente 70%, 80%, 95%, 100%), cada concentração puxando progressivamente mais água para fora das células. A subida gradual é deliberada — uma retirada brusca de água causaria retração e distorção celular severas."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "As três etapas da inclusão em parafina",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Desidratação",
+          "explicacao": "O tecido passa por álcoois de concentração crescente, que extraem progressivamente a água presente nas células. A gradação evita o choque osmótico brusco que retração excessiva causaria."
+        },
+        {
+          "numero": 2,
+          "titulo": "Diafanização",
+          "explicacao": "Como a parafina (hidrofóbica) não se mistura diretamente com o álcool, é preciso um solvente intermediário — geralmente o xilol — que seja miscível tanto com álcool quanto com parafina. O tecido, ao absorver o xilol, torna-se visivelmente translúcido, sinal prático de que a etapa está completa."
+        },
+        {
+          "numero": 3,
+          "titulo": "Impregnação",
+          "explicacao": "O tecido diafanizado é imerso em parafina fundida, geralmente a cerca de 56-60°C — temperatura suficiente para manter a parafina líquida, mas baixa o bastante para não desnaturar excessivamente as proteínas já fixadas. A parafina penetra em cada espaço antes ocupado por xilol."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Depois da impregnação, o tecido é posicionado em um molde e a parafina é deixada esfriar e solidificar, formando o bloco final — sólido, homogêneo, pronto para ser preso ao micrótomo e fatiado em cortes ultrafinos e contínuos."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A parafina não é escolhida ao acaso: ela é sólida à temperatura ambiente, funde numa faixa de temperatura que não desnatura excessivamente as proteínas já fixadas, e sua consistência uniforme permite cortes contínuos sem esmagar o tecido — três propriedades que, juntas, nenhum outro material barato reunia tão bem quando a técnica foi consolidada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "diafanização",
+      "origem": "do grego diá (através) + phaínein (brilhar, aparecer, tornar visível)",
+      "significado": "literalmente 'tornar transparente' ou 'fazer aparecer através'",
+      "explicacao": "O nome descreve exatamente o sinal visual que o técnico usa para saber que a etapa está completa: ao substituir o álcool opaco pelo xilol, o tecido se torna translúcido, permitindo que a luz o atravesse — daí o nome, cunhado diretamente da observação prática do fenômeno, sem relação com nenhum mecanismo bioquímico mais profundo."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a etapa de desidratação fosse esquecida por completo, e o tecido fosse levado diretamente do fixador aquoso para a parafina fundida, o que aconteceria?",
+      "resposta": "A parafina, sendo hidrofóbica, simplesmente não penetraria no tecido ainda repleto de água — as duas substâncias não se misturam. O resultado seria um bloco heterogêneo, com o tecido permanecendo úmido e mal impregnado no centro, mesmo que a parafina ao redor tivesse solidificado normalmente. Na hora do corte, o micrótomo encontraria uma resistência desigual: as regiões impregnadas cortariam bem, mas as regiões ainda úmidas se despedaçariam ou produziriam fatias com buracos e distorções severas — tornando a lâmina final inutilizável para diagnóstico."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🕯️",
+      "conteudo": "Pense em mergulhar uma vela de cera em água para tentar 'protegê-la' antes de guardá-la. A cera derretida (a parafina) e a água não se misturam de jeito nenhum — a vela sairia da água exatamente como entrou, sem nenhuma camada protetora aderida. Agora pense num artesão que primeiro seca completamente um objeto de madeira, depois aplica um selante intermediário compatível tanto com a madeira seca quanto com o verniz final, e só então aplica o verniz — cada camada adere perfeitamente à anterior porque as substâncias envolvidas são quimicamente compatíveis em sequência. Mapeamento explícito: objeto de madeira úmida = tecido recém-fixado, ainda repleto de água; processo de secagem completa = desidratação por álcoois; selante intermediário compatível com os dois materiais = diafanização por xilol; verniz final = parafina fundida; peça de madeira envernizada e pronta = bloco de parafina solidificado, pronto para corte."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O fluxo sequencial da inclusão em parafina",
+      "descricao": "Esquema mostrando quatro estágios em sequência: um fragmento de tecido entrando em frascos de álcool crescente (desidratação), depois tornando-se translúcido em xilol (diafanização), depois imerso em parafina fundida quente (impregnação), e finalmente um bloco cúbico sólido de parafina com o tecido incluído no centro, pronto para o micrótomo.",
+      "prompt_ia": "Diagrama técnico educacional em estilo infográfico limpo, fundo neutro adaptativo, mostrando quatro estágios sequenciais horizontais de processamento histológico. Estágio 1, rotulado 'Desidratação': fragmento de tecido em frascos com gradiente de concentração alcoólica crescente. Estágio 2, rotulado 'Diafanização': tecido tornando-se translúcido em líquido claro (xilol). Estágio 3, rotulado 'Impregnação': tecido imerso em parafina líquida quente em recipiente metálico. Estágio 4, rotulado 'Bloco Final': um bloco cúbico de parafina sólida com o tecido incluído visível no centro, pronto para corte no micrótomo. Setas conectando os estágios, design minimalista, cores sóbrias, legendas em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-hist-01-002",
+        "titulo": "Fixação — Por Que Parar a Autólise",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A fixação precede a inclusão na sequência de processamento: um tecido mal fixado continuaria sofrendo autólise durante as longas horas de desidratação e impregnação da inclusão em parafina."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "topico": "Diagnóstico de tumores por corte histológico de rotina",
+        "mecanismo_conexao": "A qualidade da inclusão em parafina determina diretamente a nitidez de núcleos e citoplasma nos cortes usados para diagnóstico de tumores — uma inclusão malfeita produz artefatos que dificultam a avaliação de atipia celular.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s1-hist-01-003-02",
+        "disciplina": "histologia",
+        "semestre_futuro": 1,
+        "topico": "Comparação com inclusão em resina epóxi",
+        "mecanismo_conexao": "O mesmo princípio geral de substituir água por um meio sólido de suporte se aplica à inclusão em resina para microscopia eletrônica, mas com exigência de rigidez muito maior — comparar os dois métodos consolida o conceito geral de inclusão.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "patologia",
+        "semestre_futuro": 5,
+        "topico": "Exame intraoperatório por congelação",
+        "mecanismo_conexao": "Em situações de urgência cirúrgica, a inclusão em parafina (lenta, de horas) é substituída pelo congelamento rápido em criostato, uma técnica alternativa mais veloz porém com qualidade morfológica inferior.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-01-003-02",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "A parafina é rápida de processar e permite cortes de 3-5 micrômetros suficientes para microscopia óptica de rotina; a resina epóxi é mais lenta e trabalhosa, mas permite cortes de dezenas de nanômetros exigidos pela microscopia eletrônica."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-hist-01-003-01-fc01",
+      "pergunta": "Por que o álcool deve ser utilizado em concentrações crescentes (por exemplo, 70%, 80%, 95%, 100%) durante a desidratação, em vez de usar álcool absoluto desde o início?",
+      "resposta": "Porque uma remoção brusca e total da água causaria retração osmótica severa e distorção da arquitetura celular, comprometendo a fidelidade morfológica que a fixação havia acabado de preservar. A gradação de concentrações permite que a água saia progressivamente das células, mantendo o equilíbrio osmótico controlado a cada etapa e minimizando os artefatos de retração que uma troca abrupta produziria.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["desidratacao", "artefatos", "inclusao"]
+    },
+    {
+      "card_id": "s1-hist-01-003-01-fc02",
+      "pergunta": "O que aconteceria se a parafina de impregnação fosse aquecida a uma temperatura muito superior ao seu ponto de fusão recomendado?",
+      "resposta": "O calor excessivo causaria desnaturação térmica adicional das proteínas já fixadas, endurecendo demais certas estruturas e alterando os sítios de ligação disponíveis para os corantes histológicos posteriores. Isso comprometeria tanto a morfologia fina quanto a qualidade da coloração final, além de poder causar retração adicional do tecido pelo calor excessivo — motivo pelo qual a temperatura de impregnação (geralmente 56-60°C) é rigorosamente controlada, e não apenas 'quente o suficiente para derreter a parafina'.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["artefatos", "temperatura", "parafina"]
+    },
+    {
+      "card_id": "s1-hist-01-003-01-fc03",
+      "pergunta": "Qual é a função química específica da diafanização, e por que ela não pode ser pulada?",
+      "resposta": "A parafina é hidrofóbica e não se mistura diretamente com o álcool que desidratou o tecido — as duas substâncias são quimicamente incompatíveis. A diafanização usa um solvente intermediário (geralmente o xilol) que tem a propriedade de ser miscível tanto com álcool quanto com parafina, funcionando como uma 'ponte' química que permite a substituição gradual e completa de um meio pelo outro. Sem essa etapa intermediária, a parafina não conseguiria penetrar adequadamente no tecido ainda impregnado de álcool.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["diafanizacao", "quimica", "xilol"]
+    },
+    {
+      "card_id": "s1-hist-01-003-01-fc04",
+      "pergunta": "Como a inclusão em parafina permite fisicamente que se realizem cortes de 3 a 5 micrômetros de espessura?",
+      "resposta": "A parafina, ao solidificar dentro e ao redor de cada célula, cria uma matriz de suporte uniforme e rígida que preenche completamente os espaços antes ocupados por água e depois por xilol. Essa rigidez homogênea resiste à força de cisalhamento exercida pela lâmina do micrótomo durante o corte, permitindo que a fatia se mantenha íntegra, contínua e sem esmagamento — o que seria impossível se o tecido ainda contivesse água livre ou espaços não preenchidos.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["corte", "micrótomo", "parafina"]
+    },
+    {
+      "card_id": "s1-hist-01-003-01-fc05",
+      "pergunta": "Verdadeiro ou falso e justifique: 'A inclusão em parafina é sempre superior ao congelamento em criostato, pois produz cortes de melhor qualidade morfológica.'",
+      "resposta": "Verdadeiro quanto à qualidade morfológica, mas incompleto como afirmação geral. A inclusão em parafina realmente produz cortes com preservação morfológica superior e mais consistente, sendo o padrão da rotina diagnóstica. No entanto, ela é um processo lento (geralmente 12 a 24 horas), incompatível com situações de urgência cirúrgica em que o cirurgião precisa de um diagnóstico em minutos, ainda no centro cirúrgico — por exemplo, para decidir a extensão de uma ressecção tumoral durante a própria cirurgia. Nesses casos, usa-se o congelamento rápido em criostato, que sacrifica qualidade morfológica (por formação de cristais de gelo) em troca de velocidade. A armadilha está em transformar 'superior em qualidade' em 'superior em toda situação' — a escolha correta depende do contexto clínico, não apenas da qualidade técnica isolada.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["comparacao", "criostato", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s1-hist-01-003-01-fc06",
+      "pergunta": "A palavra 'diafanização' vem do grego diá (através) e phaínein (brilhar, aparecer). O que essa etimologia revela sobre como o técnico de laboratório sabe que essa etapa terminou?",
+      "resposta": "A etimologia registra o próprio critério visual usado na prática: 'tornar transparente' ou 'fazer aparecer através'. Ao substituir progressivamente o álcool opaco pelo xilol, o fragmento de tecido — antes esbranquiçado e opaco pela desidratação — torna-se visivelmente translúcido, permitindo que a luz o atravesse. Esse é literalmente o sinal prático que o técnico observa para confirmar que a etapa está completa e que o tecido está pronto para a impregnação por parafina — um raro caso em que o nome de uma técnica descreve exatamente o teste visual usado para verificá-la.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["etimologia", "diafanizacao", "xilol"]
+    },
+    {
+      "card_id": "s1-hist-01-003-01-fc07",
+      "pergunta": "Um laboratório de patologia recebe uma peça cirúrgica grande (ressecção intestinal de 15 cm) e a submete ao protocolo automatizado padrão de inclusão em parafina, com tempos de imersão calculados para fragmentos de até 3 mm de espessura. Dois dias depois, ao cortar o bloco, o técnico observa que a região central do fragmento se esfarela e não produz cortes contínuos, enquanto a periferia corta perfeitamente. Explique o que provavelmente ocorreu.",
+      "resposta": "O protocolo automatizado foi calibrado para fragmentos pequenos (até 3 mm), mas a peça recebida era muito maior. Isso significa que o tempo de imersão em cada banho de álcool, xilol e parafina — insuficiente para a espessura real da peça — permitiu que apenas a periferia fosse completamente desidratada, diafanizada e impregnada dentro do prazo do protocolo. O centro da peça provavelmente reteve resíduos de água (não completamente desidratado) e, consequentemente, a parafina não conseguiu impregná-lo adequadamente nessa região central — resultando em uma zona de suporte mecânico insuficiente que se esfarela sob a lâmina do micrótomo, exatamente o padrão descrito (periferia boa, centro ruim). A lição prática é que peças maiores exigem seccionamento em fragmentos menores antes do processamento, ou protocolos com tempos de imersão estendidos proporcionalmente à espessura.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["inclusao", "artefatos", "protocolo-laboratorial"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-hist-01-003-01-caso01",
+      "titulo": "Bloco de parafina com região central de corte irregular em peça de colectomia",
+      "apresentacao": "Paciente de 68 anos é submetido a colectomia segmentar por adenocarcinoma de cólon previamente diagnosticado por colonoscopia com biópsia. A peça cirúrgica, de 14 cm de comprimento, é seccionada de forma incompleta antes da fixação (apenas dois cortes superficiais, sem abrir totalmente o segmento) e processada em protocolo automatizado padrão calibrado para fragmentos pequenos. Ao tentar realizar os cortes histológicos no micrótomo, o técnico relata que a região central da peça, correspondente à margem profunda do tumor, se esfarela repetidamente e não produz fitas contínuas de corte, enquanto a periferia e a mucosa superficial cortam normalmente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Seccionamento inicial insuficiente da peça cirúrgica combinado a tempos de processamento automatizado (desidratação, diafanização, impregnação) calculados para fragmentos muito menores que a espessura real da região central da peça."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A região central e profunda do tumor, correspondente exatamente à margem cirúrgica de maior interesse diagnóstico, que não recebeu tempo suficiente de exposição aos reagentes de cada etapa da inclusão."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Água residual permaneceu retida no tecido central, impedindo a impregnação completa por parafina nessa região — o resultado é um bloco com suporte mecânico heterogêneo: periferia bem impregnada e rígida, centro mal impregnado e friável."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "No momento do corte, a região central se esfarela sob a lâmina do micrótomo, produzindo fragmentos descontínuos e inutilizáveis, exatamente na área histologicamente mais crítica: a margem profunda de ressecção, decisiva para saber se o tumor foi completamente removido."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem uma lâmina adequada da margem profunda, a equipe cirúrgica e oncológica fica sem informação confiável sobre o status dessa margem, exigindo reprocessamento com novo seccionamento e tempos de imersão estendidos — atraso que pode adiar decisões sobre necessidade de terapia adjuvante."
+        }
+      ],
+      "conexao_com_bloco": "Este caso demonstra na prática cirúrgica exatamente o problema previsto na narrativa: a inclusão em parafina depende de tempo suficiente de exposição a cada reagente proporcional à espessura real do tecido. Peças grandes processadas com protocolos calibrados para fragmentos pequenos sofrem impregnação incompleta justamente nas regiões mais profundas e clinicamente mais relevantes.",
+      "disciplinas_relacionadas": ["histologia", "patologia", "cirurgia-geral", "oncologia"],
+      "diagnostico_revelado": "Artefato de inclusão incompleta por subdimensionamento do protocolo de processamento em relação à espessura real da peça cirúrgica — não é uma doença, mas uma falha evitável de processo técnico.",
+      "tratamento_resumido": "Reprocessamento da peça com seccionamento adequado em fragmentos de espessura padronizada (idealmente 3 a 4 mm) antes da inclusão, e ajuste do protocolo automatizado para tempos de imersão compatíveis com a espessura real do material, permitindo avaliação confiável da margem cirúrgica profunda."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-hist-01-003-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "funcao",
-    "correlacao-clinica"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Bancroft JD, Layton C. Bancroft's Theory and Practice of Histological Techniques. 8th ed. Elsevier; 2019. Chapter 4 — Tissue Processing.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "A inclusão em parafina é sempre superior ao congelamento em criostato, em qualquer situação clínica",
+      "correcao": "A parafina tem qualidade morfológica superior, mas é lenta (horas); o congelamento é usado quando velocidade é prioritária, como em exames intraoperatórios urgentes",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "O tempo de processamento padrão serve para qualquer tamanho de peça cirúrgica",
+      "correcao": "O tempo de imersão em cada etapa (desidratação, diafanização, impregnação) precisa ser proporcional à espessura real do tecido, sob risco de impregnação incompleta no centro de peças grandes",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "inclusão em parafina",
+      "termo_es": "inclusión en parafina",
+      "termo_en": "paraffin embedding",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "diafanização",
+      "termo_es": "diafanización",
+      "termo_en": "clearing",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "gemini-3.1-flash-lite",
+      "mudanca": "Criação inicial do bloco",
+      "motivo": "Produção em massa S1"
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-5",
+      "mudanca": "Reescrita completa da narrativa (socrática genuína), troca de analogia repetitiva de resina/fruta por analogia de vela versus artesão que seca madeira antes de envernizar, adição de caso clínico (colectomia com margem profunda mal processada), correção de prerequisito (era 'Fixação Histológica' como bloco_id inválido, corrigido para 's1-hist-01-002'), expansão para 7 flashcards, preenchimento de todos os campos estruturais do schema v3.0",
+      "motivo": "Conformidade com ANIMA_FILOSOFIA.md — narrativa fachada-socrática, prerequisito com título em vez de ID técnico, e ausência de caso clínico identificadas em auditoria"
+    }
   ]
 }

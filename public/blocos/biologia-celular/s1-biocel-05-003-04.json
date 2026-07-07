@@ -1,53 +1,313 @@
 {
+  "metadata": {
+    "titulo": "Via PLCgamma a Jusante de RTK",
+    "subtitulo": "Como um receptor de crescimento aciona um alarme de cálcio no citosol?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 11,
+    "nivel": "CORE",
+    "tags": [
+      "RTK",
+      "PLC-gamma",
+      "IP3",
+      "DAG",
+      "sinalização celular",
+      "segundo mensageiro"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "Um receptor de tirosina quinase (RTK) ativado não serve só para disparar a cascata de MAPK — ele também abre uma segunda rota de sinalização, mais rápida e mais explosiva. Ao se autofosforilar, o RTK cria pontos de ancoragem que recrutam a enzima fosfolipase C-gama (PLC-gama). Uma vez ativada, essa enzima corta um lipídio da própria membrana — o PIP2 — em dois pedaços com destinos opostos: o IP3, que corre para o citosol e libera cálcio do retículo, e o DAG, que fica na membrana e ativa a proteína quinase C. Entender essa via é entender como um sinal de crescimento se transforma, em segundos, numa onda de cálcio que reorganiza toda a fisiologia da célula — e por que sua desregulação está entre os mecanismos centrais da proliferação descontrolada em câncer.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma orquestra em que o maestro, ao levantar a batuta, não apenas dá o sinal para os violinos começarem — ele também aciona, ao mesmo tempo, um sistema de luzes que muda a iluminação do teatro inteiro. Um único gesto, duas respostas simultâneas e completamente diferentes. É mais ou menos isso que acontece quando um fator de crescimento se liga a um receptor de tirosina quinase (RTK) na membrana de uma célula: o mesmo evento de ativação dispara, ao mesmo tempo, a conhecida cascata de MAPK e uma segunda via, menos falada, mas igualmente decisiva."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que uma única cascata de quinases não é suficiente?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A cascata de MAPK é poderosa, mas lenta para os padrões da célula — envolve várias fosforilações sequenciais até chegar ao núcleo e mudar a transcrição gênica. Só que muitas respostas ao fator de crescimento precisam ser imediatas: abrir canais, contrair filamentos, secretar vesículas. Para isso, a célula precisa de um segundo canal de resposta, que não dependa de trocar genes de expressão, mas que libere, em questão de segundos, uma molécula sinalizadora já pronta para agir. O desafio é: onde guardar essa molécula pronta, sem que ela se esgote ou vaze sinal errado o tempo todo?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução da célula foi guardar o precursor dentro da própria membrana plasmática — na forma de um fosfolipídio de nome PIP2, sempre presente, sempre à espera. Quando o momento certo chega, uma enzima é recrutada para cortar esse lipídio em dois mensageiros distintos, cada um seguindo seu próprio caminho."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Retenha esta ideia antes de avançar: a membrana plasmática não é apenas uma parede — ela é também um estoque de matéria-prima sinalizadora, pronta para ser fatiada em segundos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula recruta a tesoura molecular certa?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando o RTK se autofosforila em múltiplos resíduos de tirosina após a ligação do fator de crescimento, cada fosfotirosina vira um ponto de ancoragem — como um gancho específico numa parede de escalada, que só encaixa com um tipo de mão. A enzima fosfolipase C-gama (PLC-gama) tem exatamente essa 'mão': domínios SH2 (Src Homology 2), capazes de reconhecer e se prender especificamente às fosfotirosinas do receptor ativado. Uma vez ancorada na membrana, a PLC-gama é ela mesma fosforilada pelo RTK — e essa fosforilação muda sua conformação, ativando sua função catalítica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ativada, a PLC-gama ataca o PIP2 na face interna da membrana e o corta em dois: o IP3 (inositol trifosfato), que é solúvel em água e se difunde livremente pelo citosol, e o DAG (diacilglicerol), que é lipofílico e permanece grudado na membrana. É uma bifurcação elegante — o mesmo corte gera um mensageiro móvel e um mensageiro fixo, cada um capaz de ativar uma resposta diferente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que justamente esses dois produtos, e não outros?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O PIP2 foi 'escolhido' pela evolução como substrato porque já está posicionado exatamente onde a ação precisa acontecer — na face interna da membrana, ao lado do receptor. Não é preciso esperar difusão de um precursor vindo de outro compartimento: o material já está lá. O IP3 precisa ser solúvel porque seu alvo — o receptor de IP3 no retículo endoplasmático — fica longe da membrana; sem solubilidade, o sinal jamais chegaria lá em tempo útil. O DAG, ao contrário, precisa permanecer lipofílico e ancorado, porque seu alvo — a proteína quinase C (PKC) — funciona melhor quando recrutada diretamente à membrana, junto ao cálcio que o IP3 acabou de liberar. A separação físico-química dos dois produtos não é acidente: é o que permite que um único corte enzimático dispare duas respostas complementares em dois lugares diferentes da célula ao mesmo tempo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A ativação da PLC-gama é o ponto de bifurcação em que o sinal de um receptor de crescimento deixa de ser 'apenas' uma cascata de quinases e passa a comandar, paralelamente, a homeostase do cálcio citosólico e a ativação da PKC."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Confirme antes de seguir: PIP2 é cortado em IP3 (solúvel, vai ao retículo buscar cálcio) e DAG (fica na membrana, recruta PKC). Os dois produtos de um mesmo corte trabalham em paralelo, não em sequência."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o processo acontece, passo a passo?"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Da ligação do fator de crescimento à liberação de cálcio",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Autofosforilação do RTK",
+          "explicacao": "O ligante se liga ao RTK, causando dimerização e autofosforilação cruzada em múltiplos resíduos de tirosina no domínio intracelular."
+        },
+        {
+          "numero": 2,
+          "titulo": "Ancoragem da PLC-gama",
+          "explicacao": "Os domínios SH2 da PLC-gama reconhecem e se ligam especificamente às fosfotirosinas recém-criadas, trazendo a enzima do citosol para a membrana."
+        },
+        {
+          "numero": 3,
+          "titulo": "Ativação por fosforilação",
+          "explicacao": "O próprio RTK fosforila a PLC-gama ancorada, induzindo mudança conformacional que libera sua atividade catalítica plena."
+        },
+        {
+          "numero": 4,
+          "titulo": "Clivagem do PIP2",
+          "explicacao": "A PLC-gama ativada hidrolisa o PIP2 da face interna da membrana, gerando IP3 e DAG em quantidades equivalentes."
+        },
+        {
+          "numero": 5,
+          "titulo": "Bifurcação do sinal",
+          "explicacao": "O IP3 se difunde até o retículo endoplasmático e abre canais que liberam cálcio armazenado; o DAG permanece na membrana e, junto ao cálcio liberado, recruta e ativa a PKC."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa via se articula?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa cascata só faz sentido depois de entendida a estrutura e a autofosforilação dos RTKs — sem as fosfotirosinas, não haveria onde a PLC-gama se ancorar. Adiante, ela se conecta a três territórios importantes: a farmacologia oncológica, onde inibidores de tirosina quinase bloqueiam justamente a capacidade do receptor de recrutar proteínas como a PLC-gama; a fisiologia do cálcio intracelular, onde o IP3 reaparece como mensageiro universal em dezenas de tipos celulares; e a patologia da proliferação celular, já que a ativação descontrolada dessa via é um evento comum em tumores dependentes de sinalização por fatores de crescimento."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎻",
+      "conteudo": "Volte à imagem do maestro e das duas respostas simultâneas. O RTK ativado é o gesto do maestro. A PLC-gama é o técnico de som que reconhece esse gesto específico (domínios SH2 reconhecendo fosfotirosinas específicas) e aciona o painel de controle. O PIP2 é o painel de controle único que, ao ser acionado, dispara dois sistemas ao mesmo tempo: o IP3 é o sinal de rádio que viaja instantaneamente até o corredor onde estão guardadas as luzes extras (retículo endoplasmático, liberando cálcio) e o DAG é o próprio interruptor físico que permanece na parede do teatro (membrana), ativando o sistema de luz ambiente (PKC) sem precisar se mover. Mapeamento: RTK ativado = gesto do maestro; PLC-gama = técnico que reconhece o gesto; PIP2 = painel de controle único; IP3 = sinal de rádio que viaja até o depósito de cálcio; DAG = interruptor fixo que ativa a PKC no local."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vem o nome fosfolipase C?"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "fosfolipase C",
+      "origem": "do grego phōsphóros (portador de luz, aplicado depois a compostos de fósforo) + lípos (gordura) + o sufixo -ase (enzima) + a letra C",
+      "significado": "enzima que quebra fosfolipídios, cortando na posição química C da molécula",
+      "explicacao": "O nome descreve exatamente o que a enzima faz: cliva ('-ase' de enzima) um fosfolipídio ('fosfolipo-') em um ponto químico específico da molécula, identificado pela letra C. Essa letra distingue a PLC das fosfolipases A, B e D, que cortam o mesmo tipo de substrato em posições diferentes da cadeia. A designação 'gama' que acompanha PLC-gama identifica a isoforma específica ativada por RTKs, diferente da PLC-beta (ativada por GPCRs) e da PLC-delta (regulada por cálcio). A convenção de letras gregas para isoformas é comum em enzimologia quando várias proteínas relacionadas compartilham função central mas diferem em modo de ativação."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a PLC-gama perdesse seus domínios SH2, o que aconteceria com a sinalização do RTK?",
+      "resposta": "O receptor continuaria se autofosforilando normalmente, mas a PLC-gama não conseguiria reconhecer nem se ancorar nas fosfotirosinas geradas. Sem esse recrutamento físico até a membrana, a enzima nunca entraria em contato com seu substrato (o PIP2) nem seria fosforilada e ativada pelo receptor. A hidrólise do PIP2 não ocorreria, a concentração de cálcio citosólico permaneceria em nível basal, e a ativação da PKC dependente de DAG simplesmente não aconteceria — a célula perderia por completo esse braço de resposta ao fator de crescimento, mesmo com a via de MAPK funcionando normalmente em paralelo."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Mecanismo de ativação da PLC-gama e clivagem do PIP2",
+      "descricao": "Esquema mostrando o dímero de RTK autofosforilado na membrana, a PLC-gama se ancorando via domínios SH2 às fosfotirosinas, e a clivagem do PIP2 em IP3 (difundindo-se para o retículo endoplasmático) e DAG (permanecendo na membrana, próximo à PKC).",
+      "prompt_ia": "Diagrama científico vetorial de alta qualidade, estilo biologia molecular, fundo neutro adaptativo. Bicamada de membrana plasmática com um receptor RTK dimerizado e ativado (grupos fosfato amarelos nos resíduos de tirosina intracelulares). PLC-gama ancorando-se ao receptor via domínios SH2 (formato de encaixe visual, tipo chave-fechadura). Abaixo da membrana, a hidrólise do PIP2 mostrada como uma molécula sendo cortada em dois: IP3 (pequena molécula solúvel, seta apontando para um retículo endoplasmático estilizado ao fundo, com canais liberando esferas azuis representando cálcio) e DAG (cauda lipofílica permanecendo na membrana, com uma PKC sendo recrutada logo ao lado). Legendas em português, cores distintas para cada componente, setas de fluxo claras.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-05-003-04-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual a função específica dos domínios SH2 na PLC-gama, e por que ela é indispensável?",
+      "resposta": "Os domínios SH2 funcionam como módulos de reconhecimento molecular que se ligam especificamente a resíduos de fosfotirosina do RTK ativado. Sem eles, a PLC-gama não conseguiria migrar do citosol até a membrana nem seria fosforilada e ativada pelo receptor — a etapa de ancoragem é pré-requisito físico para toda a cascata seguinte.",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "SH2",
+        "RTK",
+        "PLC-gama"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-04-fc02",
+      "tipo": "comparacao",
+      "pergunta": "Por que o IP3 e o DAG, gerados do mesmo corte enzimático, geram efeitos tão distintos na célula?",
+      "resposta": "O IP3 é hidrossolúvel e se difunde livremente pelo citosol até encontrar seu receptor no retículo endoplasmático, liberando cálcio armazenado. O DAG é hidrofóbico e permanece ancorado na membrana, onde funciona como plataforma de recrutamento e ativação da PKC. A diferença de solubilidade química determina o destino funcional de cada molécula, permitindo que um único evento de clivagem dispare duas respostas em dois locais diferentes da célula.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "IP3",
+        "DAG",
+        "PIP2"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-04-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se a PLC-gama se tornasse permanentemente ativa, independentemente da presença de ligante no RTK?",
+      "resposta": "Haveria esgotamento crônico do estoque de PIP2 na membrana e elevação sustentada de cálcio citosólico, com ativação descontrolada da PKC. Esse estado mimetiza uma sinalização mitogênica constitutiva — ou seja, a célula recebe continuamente o 'sinal' de crescer mesmo sem fator de crescimento real presente, um mecanismo relevante na proliferação celular descontrolada observada em alguns tumores.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "patologia",
+        "sinalização",
+        "oncogênese"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-04-fc04",
+      "tipo": "armadilha",
+      "pergunta": "Verdadeiro ou falso: como a PLC-gama e a PLC-beta cortam o mesmo substrato (PIP2) e geram os mesmos produtos (IP3 e DAG), elas podem ser consideradas a mesma via de sinalização, apenas com nomes diferentes. Justifique.",
+      "resposta": "Falso. Embora ambas as isoformas cortem o mesmo substrato e gerem os mesmos produtos finais, elas são ativadas por vias upstream completamente diferentes: a PLC-beta é ativada por subunidades de proteínas G heterotriméricas a jusante de GPCRs, enquanto a PLC-gama é recrutada e ativada por autofosforilação de RTKs através de domínios SH2. São pontos de entrada distintos que convergem no mesmo tipo de resultado bioquímico — um exemplo de como a célula reutiliza a mesma 'ferramenta' (PIP2 como substrato) para integrar sinais de origens receptoriais diferentes.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha-conceitual",
+        "PLC-beta",
+        "PLC-gama"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-04-fc05",
+      "tipo": "por_que",
+      "pergunta": "Por que a célula usa um fosfolipídio de membrana (PIP2), e não uma molécula citosólica solúvel, como precursor dessa via de sinalização?",
+      "resposta": "Usar um componente já posicionado na face interna da membrana plasmática permite resposta imediata e localizada, exatamente no ponto onde o receptor foi ativado. Se o precursor fosse uma molécula citosólica dependente de difusão até a membrana, o tempo de resposta seria maior e menos localizado. Ao manter o PIP2 pré-posicionado, a transdução do sinal se torna praticamente instantânea assim que a enzima é recrutada.",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "evolução",
+        "membrana"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-04-fc06",
+      "tipo": "clinico",
+      "pergunta": "Um paciente em tratamento com um inibidor de tirosina quinase para um tumor dependente de sinalização por RTK apresenta boa resposta inicial. Qual mecanismo molecular estudado neste bloco explica por que esse fármaco reduz a proliferação tumoral?",
+      "resposta": "O inibidor de tirosina quinase bloqueia a autofosforilação do RTK, impedindo a formação das fosfotirosinas que ancoram e ativam a PLC-gama (entre outros efetores). Sem essa ancoragem, a hidrólise do PIP2 não ocorre, o cálcio citosólico não se eleva e a PKC não é ativada por essa via — reduzindo um dos braços de sinalização que sustentam a proliferação celular descontrolada característica do tumor.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "farmacologia",
+        "oncologia",
+        "RTK"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-05-003-04-caso01",
+      "titulo": "Massa tumoral em crescimento rápido e resposta parcial a terapia-alvo",
+      "apresentacao": "Homem de 61 anos, com diagnóstico recente de tumor sólido cuja biópsia molecular revela superexpressão de um receptor de tirosina quinase específico. Iniciado tratamento com inibidor de tirosina quinase direcionado. Após 8 semanas, exames de imagem mostram redução parcial da massa tumoral, mas não remissão completa. A equipe médica discute possíveis vias de escape da sinalização.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Superexpressão e ativação constitutiva de um receptor de tirosina quinase nas células tumorais, gerando autofosforilação contínua mesmo sem estímulo fisiológico normal."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Vias de sinalização intracelular a jusante do RTK, incluindo o recrutamento constitutivo da PLC-gama via domínios SH2 às fosfotirosinas do receptor hiperativo."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Hidrólise contínua de PIP2 gera elevação persistente de IP3/cálcio citosólico e ativação sustentada de DAG/PKC, contribuindo para sinalização mitogênica constante e resistência parcial ao bloqueio do receptor."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Crescimento tumoral progressivo antes do tratamento, com redução parcial (mas não completa) após o inibidor — sugerindo que parte da sinalização proliferativa persiste por vias paralelas ou por reativação incompleta do bloqueio."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Resposta parcial à terapia-alvo, exigindo reavaliação — possível combinação com outro fármaco que atue em ponto diferente da via (como um inibidor de PKC ou de vias convergentes), ou investigação de mutação de resistência no próprio RTK."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra por que compreender os efetores a jusante do RTK — não apenas a cascata de MAPK, mas também a via da PLC-gama — é essencial para entender tanto o mecanismo da doença quanto os limites e possibilidades de combinação terapêutica quando a resposta a um único inibidor é apenas parcial.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "farmacologia",
+        "oncologia"
+      ],
+      "diagnostico_revelado": "Tumor sólido com superexpressão de RTK e resposta parcial a inibidor de tirosina quinase",
+      "tratamento_resumido": "Manutenção do inibidor de tirosina quinase com reavaliação de resposta por imagem, investigação de mecanismos de resistência molecular e consideração de terapia combinada visando vias convergentes de sinalização."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-05-003",
+        "titulo": "Estrutura e Ativação de RTKs",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A PLC-gama depende inteiramente das fosfotirosinas geradas pela autofosforilação do RTK para se ancorar e ser ativada — sem entender esse passo anterior, o recrutamento da PLC-gama parece um evento isolado sem causa."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Inibidores de tirosina quinase em oncologia",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Muitos inibidores de RTK usados em oncologia bloqueiam a capacidade do receptor de recrutar efetores como a PLC-gama, reduzindo tanto a via de MAPK quanto esta via paralela.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Proliferação celular descontrolada",
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "A ativação constitutiva desta via, por superexpressão ou mutação do RTK, contribui para o fenótipo proliferativo de diversos tumores sólidos.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Sinalização de cálcio intracelular",
+        "disciplina": "fisiologia",
+        "semestre_futuro": 3,
+        "mecanismo_conexao": "O IP3 gerado nesta via é o mesmo segundo mensageiro universal que aparece em contração muscular, secreção glandular e sinalização neuronal — reconhecer sua origem aqui facilita reconhecê-lo em contextos futuros.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-05-002-05",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "A via PLC-beta é ativada por receptores acoplados à proteína G (GPCRs), contrastando com a ativação via RTK da PLC-gama — mesma classe enzimática, gatilhos de entrada diferentes."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-05-003-04",
   "no_pai_id": "s1-biocel-05-003",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Via PLCgamma a Jusante de RTK",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Ligação a fosfotirosinas e geração de IP3/DAG",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica"
-  ]
+  }
 }

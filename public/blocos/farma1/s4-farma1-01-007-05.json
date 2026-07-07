@@ -2,53 +2,344 @@
   "resumo_id": "s4-farma1-01-007-05",
   "no_pai_id": "s4-farma1-01-007",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-02-005"
+  ],
   "metadata": {
     "titulo": "Monitorização Terapêutica de Fármacos (TDM)",
+    "subtitulo": "Se a dose certa no papel pode ser a dose errada no sangue, quando vale a pena medir em vez de calcular?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "tdm",
+      "janela-terapeutica",
+      "individualizacao",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert",
+      "comunicador"
+    ]
   },
-  "resumo_conciso": "Quando dosar nível sérico; fármacos de janela estreita; individualização",
-  "narrativa": [],
+  "resumo_conciso": "Para a maioria dos fármacos, a dose padrão da bula basta: calcula-se pelo peso ou pela idade, prescreve-se, e a variação natural entre pacientes não desloca ninguém para fora da faixa segura. Mas para um pequeno grupo de fármacos essa confiança desmorona — porque a distância entre a dose que trata e a dose que intoxica é curta demais (janela terapêutica estreita, já vista no bloco de segurança farmacológica) e porque a relação entre a dose administrada e a concentração real no sangue varia demais de paciente para paciente para ser prevista só no papel. Quando essas duas condições coincidem, calcular deixa de ser suficiente: é preciso medir. A monitorização terapêutica de fármacos (TDM) é exatamente isso — dosar a concentração sérica real do fármaco num paciente específico e usar esse número, não a dose prescrita, para decidir o próximo ajuste. Não é rotina para todo medicamento: exige janela estreita, cinética imprevisível ou correlação ruim entre dose e efeito clínico observável, e um ensaio laboratorial confiável disponível. Lítio e vancomicina são exemplos clássicos onde a prática já é padrão de cuidado. Entender quando dosar — e por que a maioria dos fármacos nunca precisa disso — fecha o raciocínio iniciado na visão geral de regimes de dose: transformar farmacocinética em prescrição segura, individualizada quando a segurança exige.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Até aqui, o raciocínio sobre dose e intervalo assumiu algo implícito: que, sabendo a dose administrada, dá para prever razoavelmente bem a concentração que vai circular no sangue. Essa suposição é boa o bastante para a imensa maioria dos medicamentos — um analgésico, um anti-hipertensivo comum, um antibiótico de janela larga. Calcula-se a dose pelo peso ou pela função renal estimada, prescreve-se, e o paciente melhora dentro da faixa esperada. Ninguém tira sangue para conferir se a concentração bateu exatamente com o previsto."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Quando essa suposição deixa de valer"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Só que, para alguns fármacos, essa suposição falha de duas formas que costumam vir juntas. A primeira falha é a distância entre dose eficaz e dose tóxica ser pequena — a janela terapêutica estreita descrita no bloco sobre segurança farmacológica. Quando a janela é larga, um erro de previsão de 20% na concentração não move ninguém para a zona de dano; quando é estreita, o mesmo erro de 20% pode ser a diferença entre subtratar e intoxicar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda falha é a própria previsão ficar ruim: a relação entre a dose administrada e a concentração que realmente circula varia muito de paciente para paciente, ou até no mesmo paciente ao longo do tempo. Isso acontece quando a eliminação do fármaco depende de uma via facilmente alterada — função renal que piora numa infecção, função hepática que varia com outros medicamentos, absorção que muda com a alimentação — ou quando a margem entre indivíduos é ampla por razões genéticas. Nesses casos, dois pacientes recebendo a dose idêntica podem terminar com concentrações sanguíneas bem diferentes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há ainda um terceiro fator que reforça a necessidade de medir: quando o efeito clínico do fármaco é difícil de observar diretamente. Para um anti-hipertensivo, o efeito (pressão arterial) é fácil de medir à beira do leito — não é preciso dosar o fármaco em si, basta olhar o efeito. Mas para um fármaco cujo efeito desejado (prevenir uma convulsão que ainda não aconteceu, prevenir uma recaída psiquiátrica) ou cujo efeito tóxico (dano renal silencioso, arritmia futura) não dá para observar em tempo real, a concentração sérica vira o melhor substituto disponível para saber se a dose está certa."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: TDM não é para qualquer fármaco. Ela se justifica quando coincidem janela terapêutica estreita, relação dose-concentração imprevisível de paciente para paciente, e dificuldade de avaliar o efeito clínico diretamente. Tirando esses casos, calcular a dose continua sendo suficiente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: medir em vez de só calcular"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução, quando esses critérios se cumprem, é simples de enunciar e trabalhosa de executar bem: colher uma amostra de sangue do paciente, medir laboratorialmente a concentração real do fármaco naquele momento, comparar com a faixa terapêutica conhecida para aquele fármaco, e ajustar a dose seguinte com base nesse número — não apenas no peso ou na função renal estimada na admissão. Em vez de confiar inteiramente no cálculo teórico de dose e intervalo, o próprio corpo do paciente vira a fonte de verdade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso fecha um ciclo de retroalimentação que os fármacos de janela larga nunca precisam abrir: dose administrada, concentração medida, comparação com a faixa-alvo, nova dose ajustada, nova medição se necessário. Para a maioria dos medicamentos esse ciclo seria desperdício de sangue, tempo e dinheiro. Para os fármacos certos, é o que evita, ao mesmo tempo, ineficácia e intoxicação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita a decisão de monitorizar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Três ingredientes precisam estar presentes para que dosar nível sérico faça sentido clínico. O primeiro é a janela terapêutica estreita, já detalhada no bloco de segurança — sem ela, a variação natural de concentração raramente causa dano, e monitorizar seria um custo sem retorno. O segundo é uma farmacocinética pouco previsível: metabolismo com grande variação genética entre indivíduos, eliminação dependente de um órgão cuja função oscila (rim, fígado), ou interações frequentes com outros medicamentos que alteram a via de eliminação. O terceiro é a existência de um ensaio laboratorial confiável, rápido o bastante para influenciar a próxima dose, e de uma faixa terapêutica bem estabelecida na literatura para comparação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Faltando qualquer um desses três, TDM deixa de valer a pena. Um fármaco de janela estreita, mas sem ensaio laboratorial disponível na prática clínica, não pode ser monitorizado mesmo que se quisesse. Um fármaco com farmacocinética previsível, mesmo de janela moderadamente estreita, pode ser mais bem controlado observando o efeito clínico direto do que dosando nível sérico."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "TDM exige a coincidência de três condições: janela terapêutica estreita, farmacocinética imprevisível entre pacientes (ou dentro do mesmo paciente ao longo do tempo), e um ensaio laboratorial confiável e clinicamente acionável. Faltando uma, a dose calculada — sem medir nada — já é suficiente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona na prática clínica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere o lítio, usado na profilaxia do transtorno bipolar. Sua janela terapêutica é notoriamente estreita: a concentração eficaz e a concentração tóxica (que causa desde tremor e confusão até convulsão e arritmia) estão próximas o bastante para que um erro modesto de dose, ou uma desidratação que reduz a eliminação renal do lítio, empurre o paciente para a toxicidade sem qualquer mudança na prescrição. Some a isso o fato de que o efeito terapêutico desejado — prevenir uma recaída futura — não é observável no momento da consulta. Não dá para saber, olhando o paciente hoje, se a dose de hoje vai prevenir uma crise daqui a três meses. Por isso, a prática padrão é dosar a litemia periodicamente, ajustando a dose para manter a concentração dentro da faixa terapêutica conhecida, em vez de confiar apenas no cálculo inicial de dose por peso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere agora a vancomicina, um antibiótico usado em infecções graves por bactérias resistentes. Sua eliminação depende quase inteiramente da função renal, que pode variar de forma abrupta num paciente internado — piora numa sepse, melhora com hidratação, oscila com outros medicamentos nefrotóxicos administrados ao mesmo tempo. A mesma dose prescrita na admissão pode gerar concentrações bem diferentes dias depois, sem que ninguém tenha mudado a receita. Dosar a concentração sérica da vancomicina permite ajustar a dose ao que a função renal daquele paciente, naquele momento, realmente permite eliminar — evitando tanto a subdose (que deixa a infecção grave sem controle) quanto o acúmulo tóxico (que lesiona o rim ainda mais, um ciclo que se autoalimenta)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nos dois casos, o padrão é o mesmo: janela estreita, mais dificuldade de prever ou de observar diretamente se a dose está certa, leva à decisão de medir. E nos dois casos, a decisão clínica que segue a medição é sempre a mesma pergunta: essa concentração está dentro da faixa terapêutica, abaixo dela, ou acima? A resposta determina se a dose seguinte sobe, desce ou permanece."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🌡️",
+      "conteudo": "Pense em cozinhar um prato delicado, tipo suflê, comparado a fazer um arroz simples. Para o arroz, a receita (proporção de água, tempo de fogo) funciona quase sempre igual, independente do fogão ou da panela — é como um fármaco de janela larga: calcular basta. Para o suflê, o mesmo tempo de forno pode dar certo num forno e murchar noutro, porque pequenas variações de temperatura real (não a marcada no botão) mudam tudo — é como um fármaco de janela estreita com cinética imprevisível. Um cozinheiro cuidadoso, nesse segundo caso, não confia só no timer: abre o forno, mede a temperatura real com um termômetro, e ajusta. **A dose calculada** é a receita seguida à risca. **A concentração sérica medida** é o termômetro real dentro do forno. **A decisão de monitorizar** é reconhecer que, para o suflê (lítio, vancomicina), confiar cegamente no timer é arriscado demais — vale a pena gastar o termômetro. A analogia quebra num ponto: um forno ruim é sempre ruim, enquanto a variabilidade de um paciente pode mudar de um dia para o outro — piora renal hoje, melhora amanhã — exigindo que o \"termômetro\" seja usado repetidas vezes, não uma vez só."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa prática se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A decisão de monitorizar nasce diretamente do conceito de janela terapêutica: sem uma margem de segurança estreita, não há justificativa para o custo e o incômodo de colher sangue repetidamente. Ela também depende de tudo que os blocos anteriores deste módulo já estabeleceram — biodisponibilidade, dose de ataque e manutenção, estado de equilíbrio — porque saber quando colher a amostra (antes da próxima dose, no vale; ou num pico específico) exige entender em que ponto da curva de acúmulo o paciente está. Colher no momento errado do ciclo de dose pode dar um número tecnicamente correto, mas clinicamente enganoso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse é também o bloco que mais aponta direto para a prática clínica dos semestres seguintes: TDM vai reaparecer toda vez que a prescrição envolver anticoagulantes orais clássicos, antiepilépticos de janela estreita, aminoglicosídeos, imunossupressores em transplante — qualquer classe onde o preço de errar a dose, por variabilidade individual, é alto demais para confiar apenas no cálculo inicial."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "monitorização terapêutica de fármacos",
+      "origem": "monitorização vem do latim monitor (aquele que adverte, que vigia); terapêutica vem do grego therapeutikós (que cuida, que trata); a sigla TDM vem do inglês Therapeutic Drug Monitoring",
+      "significado": "literalmente, 'vigiar continuamente o tratamento medicamentoso' — acompanhar, e não apenas prescrever uma vez",
+      "explicacao": "O termo consolidou-se na farmacologia clínica a partir da década de 1970, quando ensaios laboratoriais capazes de medir concentrações séricas de fármacos com precisão suficiente para uso clínico rotineiro se tornaram amplamente disponíveis. Antes disso, ajustar dose com base em concentração real era tecnicamente inviável na maioria dos hospitais — a prática só nasceu quando a tecnologia de medição alcançou a necessidade clínica. A palavra 'monitor', de origem latina, já carregava a ideia de vigilância contínua; aplicá-la ao fármaco reflete a mudança de mentalidade central deste bloco: tratar não é só decidir a dose uma vez, é acompanhar se ela continua certa ao longo do tempo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um ensaio laboratorial barato e instantâneo pudesse medir a concentração sérica de qualquer fármaco em segundos, seria correto monitorizar todos os medicamentos, sempre?",
+      "resposta": "Não necessariamente — e essa é a armadilha de confundir 'poder medir' com 'valer a pena medir'. Para um fármaco de janela larga e cinética previsível, mesmo com medição instantânea e gratuita, o resultado quase sempre confirmaria que a dose calculada já estava certa. O ganho clínico de medir seria mínimo, porque o problema que a monitorização resolve — o risco de a dose calculada gerar uma concentração perigosamente diferente da esperada — simplesmente não existe nesses fármacos. TDM não é uma tecnologia que se aplica sempre que disponível: é uma resposta a um problema específico (janela estreita mais imprevisibilidade). Sem esse problema, medir vira ruído: gera números, ansiedade e ajustes desnecessários, sem mudar a conduta clínica correta. A lição central deste bloco não é 'meça o que puder', é 'meça o que precisa ser medido' — e o critério para precisar já foi estabelecido: janela estreita, farmacocinética imprevisível, efeito clínico difícil de observar direto."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Quando calcular basta e quando é preciso medir",
+      "descricao": "Diagrama de decisão simples, em forma de fluxograma vertical. No topo, a pergunta 'A janela terapêutica é estreita?'. Se não, seta para a esquerda levando a uma caixa 'Dose calculada é suficiente — sem monitorização de rotina', com ícones de fármacos de janela larga ao lado (exemplo genérico). Se sim, seta para baixo levando a uma segunda pergunta, 'A farmacocinética é previsível entre pacientes?'. Se sim, seta para uma caixa intermediária 'Acompanhar efeito clínico direto pode bastar'. Se não (imprevisível), seta para uma caixa final destacada 'Monitorização terapêutica de fármacos (TDM) indicada', com dois ícones de exemplo rotulados 'lítio' e 'vancomicina', e um pequeno tubo de coleta de sangue estilizado ao lado. Cores neutras, setas claras, legendas curtas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama de fluxograma vetorial vertical, fundo transparente, estilo de livro didático farmacológico moderno. Caixa inicial no topo com a pergunta 'A JANELA TERAPÊUTICA É ESTREITA?'. Uma seta à esquerda leva a uma caixa retangular cinza clara com o texto 'DOSE CALCULADA É SUFICIENTE — sem monitorização de rotina', com pequenos ícones genéricos de comprimidos ao lado. Uma seta para baixo leva a uma segunda caixa de pergunta 'A FARMACOCINÉTICA É PREVISÍVEL ENTRE PACIENTES?'. Dessa segunda pergunta, uma seta lateral leva a uma caixa 'ACOMPANHAR EFEITO CLÍNICO DIRETO PODE BASTAR', e outra seta para baixo leva a uma caixa final destacada em azul mais forte com o texto 'MONITORIZAÇÃO TERAPÊUTICA DE FÁRMACOS (TDM) INDICADA', contendo dois pequenos rótulos de exemplo 'lítio' e 'vancomicina' e um ícone estilizado de tubo de coleta de sangue com uma gota. Setas finas e claras conectando as caixas, cores suaves e diferenciadas (cinza para 'não precisa medir', azul para 'precisa medir'), texto em português, sem elementos fotorrealistas, alto contraste, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-007",
+        "titulo": "Regimes de Dose e Biodisponibilidade (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco fecha o módulo de regimes de dose respondendo à pergunta que o pai deixou em aberto: quando o cálculo teórico de dose e intervalo não basta, e é preciso medir a concentração real no paciente."
+      },
+      {
+        "bloco_id": "s4-farma1-02-005",
+        "titulo": "Janela Terapêutica e Segurança (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A decisão de monitorizar nasce diretamente do conceito de janela terapêutica estreita: sem essa proximidade entre dose eficaz e dose tóxica, não há justificativa clínica para medir concentração sérica de rotina."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Prescrição e ajuste de fármacos de janela estreita (anticoagulantes orais clássicos, antiepilépticos, aminoglicosídeos, imunossupressores)",
+        "mecanismo_conexao": "O critério de quando dosar nível sérico, estabelecido aqui de forma geral, é o raciocínio direto aplicado à prática de ajuste de dose dessas classes específicas.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "psiquiatria",
+        "semestre_futuro": 7,
+        "topico": "Intoxicação por lítio e manejo do transtorno bipolar",
+        "mecanismo_conexao": "A necessidade de monitorização periódica da litemia, aqui justificada pela janela estreita e pela dificuldade de observar diretamente o efeito profilático, reaparece como rotina de acompanhamento em psiquiatria.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-02-005",
+        "tipo_relacao": "APLICACAO_PRATICA",
+        "explicacao": "A janela terapêutica estreita, descrita em profundidade no bloco lateral, é a condição de entrada para que a monitorização terapêutica de fármacos faça sentido clínico."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-007-05-fc01",
+      "pergunta": "Por que a maioria dos fármacos nunca precisa de monitorização terapêutica (TDM), mesmo sabendo que toda dose administrada tem alguma variabilidade entre pacientes?",
+      "resposta": "Porque a variabilidade só se torna clinicamente perigosa quando combinada com uma janela terapêutica estreita. Para a maioria dos fármacos, a distância entre a dose eficaz e a dose tóxica é larga o bastante para absorver a variação normal entre pacientes sem risco — um erro de previsão de concentração de 20 ou 30% não desloca ninguém para a zona de dano. Nesses casos, calcular a dose pelo peso ou pela função renal estimada já é suficiente, e medir a concentração sérica seria custo sem benefício clínico proporcional.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "tdm",
+        "janela-terapeutica",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-05-fc02",
+      "pergunta": "Quais são os três critérios que, juntos, justificam a decisão clínica de monitorizar a concentração sérica de um fármaco?",
+      "resposta": "Primeiro, janela terapêutica estreita — a distância entre dose eficaz e dose tóxica é pequena o bastante para que erros de previsão importem clinicamente. Segundo, farmacocinética imprevisível entre pacientes ou no mesmo paciente ao longo do tempo — eliminação dependente de função renal ou hepática instável, interações frequentes, ou grande variabilidade genética no metabolismo. Terceiro, existência de um ensaio laboratorial confiável e clinicamente acionável, com faixa terapêutica bem estabelecida para comparação. Faltando qualquer um dos três, a dose calculada sem medição já é suficiente.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "tdm",
+        "criterios",
+        "individualizacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-05-fc03",
+      "pergunta": "Se existisse um exame laboratorial instantâneo e gratuito capaz de medir a concentração sérica de qualquer fármaco, seria correto monitorizar rotineiramente todos os medicamentos?",
+      "resposta": "Não. A justificativa para TDM não é a disponibilidade técnica de medir, é a existência de um problema real que a medição resolve — janela terapêutica estreita combinada com farmacocinética imprevisível. Para um fármaco de janela larga e cinética previsível, medir a concentração quase sempre confirmaria que a dose calculada já estava correta, sem mudar a conduta clínica. Monitorizar sem esse problema gera números e ajustes desnecessários — ruído, não benefício. A regra é medir o que precisa ser medido, não tudo o que pode ser medido.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "tdm",
+        "contrafactual",
+        "raciocinio-clinico"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-05-fc04",
+      "pergunta": "Por que a vancomicina é um exemplo clássico de fármaco monitorizado por concentração sérica, e não apenas por resposta clínica direta?",
+      "resposta": "Porque sua eliminação depende quase inteiramente da função renal, que pode oscilar rapidamente num paciente internado (piorar numa sepse, melhorar com hidratação, ser afetada por outros medicamentos nefrotóxicos concomitantes). A mesma dose prescrita na admissão pode gerar concentrações bem diferentes dias depois, sem qualquer mudança na receita. Além disso, o desfecho que se quer evitar — tanto a falha terapêutica numa infecção grave quanto a lesão renal por acúmulo — não é algo que se observe de forma confiável só olhando o paciente; medir a concentração real permite ajustar a dose ao que aquele paciente, naquele momento, consegue eliminar.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "tdm",
+        "vancomicina",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-05-fc05",
+      "pergunta": "No caso do lítio, por que a monitorização é feita mesmo quando o paciente está clinicamente estável e sem sinais de toxicidade no momento da consulta?",
+      "resposta": "Porque o efeito terapêutico desejado do lítio — prevenir uma recaída futura do transtorno bipolar — não é observável no momento presente, e sua janela terapêutica é estreita o bastante para que uma variação discreta (por exemplo, desidratação reduzindo a eliminação renal) desloque a concentração para a faixa tóxica sem qualquer mudança na dose prescrita. Como não dá para 'ver' hoje se a dose vai prevenir uma crise daqui a meses, e como o risco de toxicidade silenciosa existe mesmo sem sintomas atuais, a litemia é dosada periodicamente como substituto objetivo do efeito clínico que não pode ser verificado diretamente.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "tdm",
+        "litio",
+        "janela-terapeutica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-007-05-caso01",
+      "titulo": "Tremor e confusão em paciente estável com transtorno bipolar",
+      "apresentacao": "Mulher de 46 anos, em uso crônico e estável de lítio para transtorno bipolar há três anos, é levada ao pronto-socorro pela família após dois dias de tremor de mãos mais intenso que o habitual, náusea persistente e um episódio de confusão mental. Não houve mudança na dose de lítio. Refere que, na última semana, teve um quadro de gastroenterite com vômitos e diarreia, além de ter iniciado um anti-inflamatório para dor lombar por conta própria. Exame mostra desidratação leve, tremor de extremidades e discreta desorientação temporal. Solicitada litemia com urgência.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A desidratação pela gastroenterite reduziu a filtração renal, e o anti-inflamatório usado sem orientação diminuiu ainda mais a eliminação renal do lítio — via quase exclusiva de excreção desse fármaco. A concentração sérica de lítio subiu, embora a dose prescrita não tivesse sido alterada."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O lítio já atuava, em dose terapêutica, sobre vias de sinalização neuronal relacionadas à estabilização do humor. Com o acúmulo por eliminação reduzida, a concentração ultrapassou a faixa terapêutica e entrou na faixa em que o mesmo mecanismo compromete a função neuronal de forma mais ampla, gerando neurotoxicidade."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A paciente saiu da janela terapêutica do lítio sem qualquer mudança na dose prescrita — a combinação de desidratação e do anti-inflamatório estreitou, na prática, a distância entre a dose usual e a dose tóxica, exatamente o tipo de imprevisibilidade farmacocinética que justifica monitorizar esse fármaco de rotina."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Tremor intensificado, náusea, confusão mental — sinais clássicos de litemia elevada, numa progressão que, se não identificada, evolui para ataxia, convulsão e arritmia cardíaca."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A litemia confirma concentração acima da faixa terapêutica. Suspende-se temporariamente o lítio, corrige-se a desidratação com hidratação venosa, suspende-se o anti-inflamatório, e a paciente melhora em poucos dias conforme a concentração retorna à faixa segura. O caso reforça que, em fármacos monitorizados por TDM, a dose escrita na receita nunca é garantia isolada de segurança — fatores externos que alteram a eliminação podem mudar tudo sem que ninguém tenha mudado a prescrição."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra os três critérios de TDM ao mesmo tempo: janela terapêutica estreita (pequena elevação já causa sintomas), farmacocinética imprevisível (a eliminação renal do lítio oscilou por desidratação e por interação medicamentosa, sem qualquer mudança de dose) e efeito clínico difícil de antecipar sem medir (a toxicidade só ficou clara com o exame, não com a impressão clínica isolada). É exatamente esse tipo de cenário que torna a dosagem periódica de litemia prática padrão, e não exceção.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "psiquiatria",
+        "clinica"
+      ],
+      "diagnostico_revelado": "Intoxicação por lítio secundária a redução aguda da eliminação renal por desidratação e uso concomitante de anti-inflamatório não esteroidal.",
+      "tratamento_resumido": "Suspensão temporária do lítio, hidratação venosa para restaurar a filtração renal, suspensão do anti-inflamatório, monitorização seriada da litemia até normalização, e orientação sobre evitar desidratação e anti-inflamatórios sem orientação durante o tratamento contínuo com lítio."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-007-05-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "clinica",
-    "farmacocinetica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics: Elimination and Time-Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

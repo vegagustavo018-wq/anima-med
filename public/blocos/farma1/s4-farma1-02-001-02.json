@@ -5,50 +5,302 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Canais Iônicos Regulados por Ligante",
+    "subtitulo": "Como uma célula responde em milissegundos quando nem o segundo mensageiro mais rápido é rápido o suficiente?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "receptores",
+      "canais-ionicos",
+      "receptor-nicotinico",
+      "gaba-a",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Resposta em milissegundos; receptor nicotínico, GABA-A como exemplos",
-  "narrativa": [],
+  "resumo_conciso": "Você já viu que todo receptor precisa fazer duas coisas — reconhecer um mensageiro e transduzir esse reconhecimento em sinal interno — e que a via de transdução usada por um receptor acoplado à proteína G, embora rápida para os padrões celulares, ainda passa por uma cadeia de intermediários: proteína G, enzima efetora, segundo mensageiro. Este bloco aprofunda a família de receptor criada exatamente para os casos em que nem essa cadeia é rápida o suficiente. Um canal iônico regulado por ligante é um receptor em que o próprio sítio de ligação e o próprio poro condutor de íons são partes da mesma proteína: quando o mensageiro encaixa, o poro abre no mesmo instante, sem nenhum intermediário bioquímico entre o encaixe e o efeito. É a diferença entre apertar um interruptor já fisicamente ligado à lâmpada e apertar um botão que aciona uma central que, só então, liga a lâmpada — a segunda via funciona, mas gasta tempo que a primeira não gasta. Essa arquitetura existe porque algumas respostas fisiológicas — uma contração muscular voluntária, um impulso se propagando entre neurônios — precisam ocorrer em milissegundos, não em segundos. O receptor nicotínico da junção neuromuscular e o receptor GABA-A no sistema nervoso central são os dois exemplos mais estudados dessa família, e ambos ilustram a mesma lógica: velocidade extrema comprada ao preço de uma resposta simples — abrir ou fechar um poro — sem a flexibilidade de amplificação e diversidade de efeito que a via acoplada à proteína G oferece.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense num neurônio motor disparando um potencial de ação até a junção neuromuscular. O sinal elétrico chega à terminação nervosa, libera um neurotransmissor na fenda sináptica, e o músculo precisa se contrair — não daqui a um segundo, não depois de uma cascata bioquímica se organizar dentro da célula, mas quase instantaneamente. Se essa comunicação demorasse o tempo de uma via acoplada à proteína G, você não conseguiria retirar a mão de uma superfície quente antes de se queimar de verdade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É esse o problema que esta família de receptor resolve, e nenhuma das outras rotas de transdução mencionadas no bloco anterior resolve com a mesma velocidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: quando nem o segundo mensageiro é rápido o suficiente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma via acoplada à proteína G — que você viu no bloco irmão sobre receptores GPCR — já é, para os padrões da bioquímica celular, bastante ágil: leva tipicamente frações de segundo a poucos segundos entre o encaixe do mensageiro e o efeito mensurável. Mas essa velocidade depende de uma cadeia de eventos sequenciais: o receptor muda de forma, ativa uma proteína G, essa proteína ativa uma enzima efetora, a enzima produz um segundo mensageiro, o segundo mensageiro finalmente altera o comportamento de outra proteína-alvo. Cada elo dessa corrente consome tempo — pouco, mas tempo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existem respostas fisiológicas, porém, que não toleram nem essa cadeia curta. A transmissão de um impulso nervoso entre um neurônio e o seguinte, ou entre um neurônio motor e a fibra muscular, precisa acontecer na escala de milissegundos — milhares de vezes mais rápido que uma resposta hormonal típica. Se cada sinapse do sistema nervoso dependesse de segundos mensageiros, não haveria reflexos, não haveria coordenação motora fina, e o próprio pensamento consciente — que depende de bilhões de sinapses disparando em sequência — seria impraticavelmente lento."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: o problema aqui não é apenas transduzir um sinal — isso a via da proteína G já faz. O problema específico é eliminar todo intermediário bioquímico entre o reconhecimento do mensageiro e o efeito, porque só assim a resposta acontece na escala de milissegundos que certos circuitos do corpo exigem."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: fundir a fechadura e a porta na mesma peça"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução evolutiva foi eliminar o intermediário: em vez de o receptor ativar uma proteína separada que, por sua vez, ativa um canal ou uma enzima em outro lugar da membrana, a própria proteína receptora é também o canal. O domínio que reconhece o neurotransmissor e o domínio que forma o poro por onde os íons atravessam a membrana fazem parte da mesma molécula. Quando o ligante encaixa no sítio de reconhecimento, a mudança conformacional que isso provoca já é, ela mesma, a abertura do poro — não existe passo intermediário para esperar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É por isso que esses receptores também são chamados de receptores ionotrópicos, em contraste com os receptores metabotrópicos (como os acoplados à proteína G), que dependem de uma via metabólica intermediária. A palavra descreve exatamente a diferença estrutural: ionotrópico age diretamente sobre o íon; metabotrópico passa por uma etapa de metabolismo celular antes de chegar lá."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A diferença de velocidade não é um detalhe — é o motivo de existir a família. Um GPCR transduz em frações de segundo a segundos, porque depende de uma cadeia de intermediários. Um canal iônico regulado por ligante transduz em milissegundos, porque o encaixe do ligante **é** a abertura do poro — não há cadeia, há uma peça só."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito, estruturalmente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um canal iônico regulado por ligante costuma ser formado por várias subunidades proteicas — em geral quatro ou cinco — arranjadas ao redor de um eixo central, como as ripas de um barril. Esse arranjo cria um poro central contínuo, atravessando toda a membrana. Cada subunidade contribui com uma parte da parede do poro e, frequentemente, com parte do sítio de ligação do neurotransmissor, que costuma ficar na porção extracelular da proteína, na interface entre duas subunidades vizinhas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em repouso, o poro permanece fechado — as subunidades estão arranjadas de um jeito que bloqueia a passagem de íons. Quando o neurotransmissor ocupa o sítio de ligação, a energia dessa ligação é transmitida mecanicamente através da proteína, como um efeito dominó entre as subunidades, torcendo o arranjo até que o poro se abra. A partir daí, os íons atravessam passivamente, a favor do seu gradiente eletroquímico — o canal não bombeia nada, apenas permite ou impede a passagem."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A seletividade iônica é definida pelo diâmetro do poro e pela distribuição de cargas elétricas nas paredes que o revestem: um canal pode deixar passar preferencialmente cátions (sódio, potássio, cálcio) ou ânions (cloreto), e é exatamente essa seletividade que determina se a abertura do canal vai excitar ou inibir a célula."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em dois exemplos concretos"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O receptor nicotínico da acetilcolina, presente na junção neuromuscular, é formado por cinco subunidades ao redor de um poro seletivo para cátions. Quando a acetilcolina liberada pelo neurônio motor ocupa os sítios de ligação, o poro se abre e permite a entrada de sódio na fibra muscular — um influxo positivo que despolariza a membrana quase instantaneamente, disparando o potencial de ação que leva à contração muscular. Não existe segundo mensageiro nessa cadeia: acetilcolina encaixou, poro abriu, músculo contraiu, em milissegundos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O receptor GABA-A, amplamente distribuído no sistema nervoso central, ilustra a mesma lógica estrutural com efeito oposto. Seu poro é seletivo para cloreto, e o GABA é o principal neurotransmissor inibitório do encéfalo. Quando o GABA ocupa o sítio de ligação, o poro se abre e o cloreto entra na célula — como o cloreto é um ânion, essa entrada hiperpolariza a membrana, afastando o neurônio do limiar de disparo. É um freio elétrico direto, tão rápido quanto o acelerador do receptor nicotínico, só que na direção contrária."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Neste ponto, o essencial já está fixado: canal iônico regulado por ligante é um receptor em que reconhecimento e abertura do poro são o mesmo evento físico, sem intermediário bioquímico — o que garante resposta em milissegundos. O receptor nicotínico abre um canal de cátion e excita; o GABA-A abre um canal de cloreto e inibe. A direção do efeito depende do íon selecionado pelo poro, não da velocidade, que é igualmente extrema nos dois casos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa família se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa família de receptor não existe isolada do resto da farmacodinâmica: a rapidez que a define é também o que torna previsível o início e o fim de efeito farmacológico — um fármaco que age sobre um canal iônico regulado por ligante costuma ter início de ação quase imediato, o que muda inteiramente a lógica de dose e monitorização clínica em comparação com fármacos que dependem de segundos mensageiros para agir."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa velocidade também define o tipo de sistema fisiológico em que essa família de receptor predomina: transmissão sináptica rápida no sistema nervoso central e periférico, e a junção neuromuscular. Onde a resposta pode se dar ao luxo de levar segundos — um hormônio regulando o metabolismo, por exemplo — a via acoplada à proteína G é suficiente e ainda oferece a vantagem da amplificação do sinal. Onde a resposta precisa ser imediata, o canal iônico regulado por ligante é a única arquitetura rápida o bastante."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] A distinção entre receptores ionotrópicos e metabotrópicos, apresentada aqui de forma didaticamente nítida, tem exceções e nuances na literatura mais avançada — alguns receptores ionotrópicos também participam de sinalização intracelular secundária além da simples condução iônica. Para os fins deste nível de estudo, a dicotomia velocidade-direta versus cascata-intermediária é a distinção que importa reter."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "ionotrópico",
+      "origem": "do grego íon (que vai, que se move) + trópos (direção, modo de virar/agir)",
+      "significado": "aquilo que age diretamente sobre o movimento de íons",
+      "explicacao": "O termo foi cunhado em contraste direto com metabotrópico, para separar, já no nome, as duas grandes estratégias de transdução que um receptor de membrana pode usar. 'Ionotrópico' registra que a ação do receptor recai diretamente sobre o transporte de íons — sem passar por uma via metabólica intermediária, que é o que 'metabotrópico' descreve no outro grupo. A nomenclatura nasceu da neurofarmacologia do século XX, quando ficou claro que nem todo receptor de neurotransmissor funcionava do mesmo jeito: alguns abriam canais na hora, outros ativavam cascatas bioquímicas mais lentas. O nome captura exatamente a distinção funcional que este bloco descreveu — e não descreve, por si só, se o efeito final é excitatório ou inibitório, o que depende do íon selecionado pelo poro."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o todo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚪",
+      "conteudo": "Pense na diferença entre uma **porta com maçaneta comum** e uma **porta de banco com sistema de segurança**. Na porta de banco (o receptor acoplado à proteína G), girar a chave aciona um sinal que vai até uma central de monitoramento, que verifica a autorização, que então libera o mecanismo que destrava a porta — funciona, mas cada etapa consome alguns segundos. Na porta com maçaneta comum (o canal iônico regulado por ligante), a chave entra na fechadura e a própria rotação da chave já destrava e abre a porta: não existe central, não existe verificação remota, a chave e o mecanismo de abertura são fisicamente a mesma peça. É por isso que você consegue entrar em casa correndo, mas o cofre do banco sempre vai ter aquele instante de espera. A quebra da analogia: no corpo, nenhuma das duas portas é 'melhor' — a porta rápida (canal iônico) é indispensável para reflexos e sinapses, mas só abre ou fecha, sem nenhuma flexibilidade extra; a porta com central (GPCR) é mais lenta, mas essa mesma central pode amplificar o sinal e disparar respostas muito mais ricas e diversas do que um simples abrir-fechar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a junção neuromuscular usasse um receptor acoplado à proteína G em vez de um receptor nicotínico ionotrópico, o que aconteceria com o movimento voluntário?",
+      "resposta": "O movimento se tornaria perceptivelmente atrasado e impreciso. Em vez de o influxo de sódio começar quase no mesmo instante em que a acetilcolina é liberada, a fibra muscular teria que esperar a cadeia completa de transdução de um GPCR — ativação da proteína G, ativação de uma enzima efetora, produção de um segundo mensageiro, e só então alguma alteração elétrica na membrana. Esse atraso, multiplicado por cada sinapse envolvida num movimento coordenado, tornaria reflexos e movimentos finos impossíveis: seria fisiologicamente incompatível com atividades que dependem de resposta muscular em milissegundos, como desviar de um golpe ou manter o equilíbrio. É exatamente por essa exigência de velocidade que a evolução manteve a arquitetura ionotrópica, mais simples e menos flexível, reservada para os pontos do sistema nervoso onde tempo é o recurso mais escasso."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Canal iônico regulado por ligante: reconhecimento e abertura como um único evento",
+      "descricao": "Esquema didático em corte transversal de membrana celular, mostrando uma proteína pentamérica (cinco subunidades) formando um poro central. À esquerda, o canal em estado fechado, com o poro central bloqueado, e o neurotransmissor se aproximando do sítio de ligação na interface entre duas subunidades extracelulares. À direita, o mesmo canal em estado aberto, logo após o encaixe do neurotransmissor, com uma seta curta e direta (sem intermediários) indicando a passagem de íons através do poro agora aberto, e pequenos símbolos de íons (cátions ou ânions, conforme legenda) atravessando a membrana. Uma legenda lateral compara em paralelo a via GPCR (com vários passos numerados e mais lenta) e a via do canal iônico (um único passo, rotulado 'milissegundos'). Fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno, cores suaves, alto contraste, sem texturas fotorrealistas. Duas cenas lado a lado separadas por uma seta central rotulada 'ligação do neurotransmissor'. Cena da esquerda: corte transversal de membrana celular (bicamada lipídica) com uma proteína formada por cinco subunidades dispostas em círculo ao redor de um poro central fechado (representado por um estreitamento ou bloqueio visual no centro); acima da membrana, uma pequena molécula (neurotransmissor) se aproximando de um sítio de ligação na porção extracelular, na junção entre duas subunidades. Rótulo 'canal fechado'. Cena da direita: a mesma proteína, agora com o neurotransmissor encaixado no sítio de ligação e o poro central visivelmente aberto, com pequenos círculos representando íons atravessando de fora para dentro da célula. Rótulo 'canal aberto — milissegundos'. Abaixo das duas cenas, uma barra comparativa simples: à esquerda 'via GPCR: vários passos, mais lenta' com uma sequência de três pequenas setas; à direita 'canal iônico regulado por ligante: um único passo, direto' com uma seta única e grossa. Legendas em português, sem marcas d'água, sem texto além do indicado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-001",
+        "titulo": "Receptores — A Fechadura Molecular (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume a definição geral de receptor — reconhecimento mais transdução de sinal — e detalha especificamente a família em que essa transdução ocorre sem qualquer intermediário bioquímico."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": "s4-farma1-03-002-04",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Bloqueadores neuromusculares",
+        "mecanismo_conexao": "Os bloqueadores neuromusculares atuam diretamente sobre o receptor nicotínico da junção neuromuscular descrito aqui — competindo pelo sítio de ligação da acetilcolina (bloqueio competitivo) ou mantendo o canal aberto de forma anômala (bloqueio despolarizante), impedindo a contração muscular normal.",
+        "confianca": "estabelecido"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-001-02-fc01",
+      "pergunta": "Por que um canal iônico regulado por ligante consegue responder em milissegundos, enquanto um receptor acoplado à proteína G leva frações de segundo a segundos?",
+      "resposta": "Porque no canal iônico regulado por ligante o sítio de reconhecimento do mensageiro e o poro condutor de íons fazem parte da mesma proteína: a mudança conformacional causada pela ligação já é, ela mesma, a abertura do poro. No receptor acoplado à proteína G, existe uma cadeia de intermediários entre o encaixe e o efeito — proteína G, enzima efetora, segundo mensageiro — e cada elo dessa cadeia consome tempo. A ausência de intermediários é o que garante a velocidade extrema do canal iônico.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "canais-ionicos",
+        "velocidade",
+        "transducao-de-sinal"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-001-02-fc02",
+      "pergunta": "Compare o receptor nicotínico e o receptor GABA-A quanto ao íon conduzido e ao efeito elétrico resultante na célula.",
+      "resposta": "O receptor nicotínico conduz preferencialmente cátions, principalmente sódio: sua abertura despolariza a membrana, aproximando a célula do limiar de disparo — efeito excitatório, como na junção neuromuscular. O receptor GABA-A conduz cloreto, um ânion: sua abertura hiperpolariza a membrana, afastando a célula do limiar de disparo — efeito inibitório, predominante no sistema nervoso central. Os dois compartilham a mesma arquitetura estrutural e a mesma velocidade de resposta; o que diverge é apenas a seletividade iônica do poro, que determina a direção do efeito.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "receptor-nicotinico",
+        "gaba-a",
+        "seletividade-ionica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-001-02-fc03",
+      "pergunta": "Se um fármaco bloqueasse de forma competitiva o sítio de ligação do receptor nicotínico na junção neuromuscular, o que aconteceria com a contração muscular, e por que esse efeito seria praticamente imediato?",
+      "resposta": "A acetilcolina liberada pelo neurônio motor não conseguiria mais ocupar o sítio de ligação, já bloqueado pelo fármaco, e o poro do receptor não se abriria. Sem a entrada de sódio, a membrana da fibra muscular não despolarizaria, o potencial de ação não seria gerado, e a contração muscular falharia. Esse efeito seria praticamente imediato porque, assim como a ativação normal do receptor não depende de nenhum intermediário bioquímico, o bloqueio também age diretamente sobre o mesmo sítio de ligação, sem qualquer etapa intermediária a percorrer — é o princípio de ação dos bloqueadores neuromusculares usados em anestesia.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "receptor-nicotinico",
+        "bloqueadores-neuromusculares",
+        "farmacodinamica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-001-02-caso01",
+      "titulo": "Fraqueza muscular que piora ao longo do dia em mulher jovem",
+      "apresentacao": "Mulher de 27 anos procura o pronto-socorro por fraqueza progressiva em membros e pálpebras caídas (ptose bilateral) que pioram ao longo do dia e melhoram com repouso. Relata que, à noite, mal consegue segurar os talheres para jantar, mas pela manhã a força está quase normal. Nas últimas duas semanas, notou também dificuldade para engolir e voz anasalada ao final das refeições. Ao exame, ptose que se acentua ao sustentar o olhar para cima por 30 segundos, e força muscular proximal que cai visivelmente após exercício repetitivo. É solicitada dosagem de anticorpos anti-receptor de acetilcolina, que retorna positiva.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Produção de autoanticorpos que reconhecem e atacam o receptor nicotínico de acetilcolina na membrana pós-sináptica da junção neuromuscular — uma doença autoimune chamada miastenia gravis."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O receptor nicotínico da acetilcolina, o canal iônico regulado por ligante descrito neste bloco: os autoanticorpos se ligam a ele, bloqueiam parte dos sítios de ligação e aceleram sua degradação, reduzindo o número de receptores funcionais disponíveis na placa motora."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com menos receptores nicotínicos disponíveis, a mesma quantidade de acetilcolina liberada pelo neurônio motor consegue abrir menos poros de sódio a cada estímulo. A despolarização da fibra muscular fica menor e mais instável, especialmente após estímulos repetidos, quando a reserva de acetilcolina disponível na terminação nervosa naturalmente diminui um pouco a cada disparo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Fraqueza muscular flutuante que piora com o uso repetido e melhora com repouso — fadigabilidade. Os músculos oculares e da face são tipicamente os primeiros afetados (ptose, diplopia), seguidos por músculos proximais de membros, da deglutição e da fala."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento, a doença pode progredir até comprometer a musculatura respiratória, configurando uma crise miastênica com risco de insuficiência respiratória aguda. O reconhecimento precoce do padrão fatigável e o tratamento direcionado evitam essa evolução na maioria dos casos."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática clínica, exatamente o mecanismo descrito neste bloco: o receptor nicotínico é ao mesmo tempo o sítio de reconhecimento da acetilcolina e o próprio poro iônico, e sua abertura despolariza a fibra muscular sem qualquer intermediário. Quando autoanticorpos reduzem o número desses receptores disponíveis, a transmissão que deveria ser quase instantânea e confiável passa a falhar progressivamente com o uso repetido — o que explica por que a fraqueza piora ao longo do dia e com esforço, e não de forma constante.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "neurologia",
+        "fisiologia",
+        "imunologia"
+      ],
+      "diagnostico_revelado": "Miastenia gravis (doença autoimune do receptor nicotínico da junção neuromuscular).",
+      "tratamento_resumido": "Anticolinesterásicos (como a piridostigmina), que aumentam a disponibilidade de acetilcolina na fenda sináptica para compensar o número reduzido de receptores; imunossupressão (corticoides, azatioprina) para reduzir a produção de autoanticorpos; em casos selecionados, timectomia; em crise miastênica, plasmaférese ou imunoglobulina intravenosa e suporte ventilatório."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-001-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Drug-Receptor Interactions.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 3 — Receptors and Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

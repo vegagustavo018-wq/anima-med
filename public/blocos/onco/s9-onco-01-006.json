@@ -1,0 +1,567 @@
+{
+  "resumo_id": "s9-onco-01-006",
+  "no_pai_id": "s9-onco-01-000",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-patol1-07-034",
+    "s9-onco-01-003",
+    "s9-onco-02-000"
+  ],
+  "metadata": {
+    "titulo": "Síndromes de Câncer Hereditário e Aconselhamento Genético",
+    "subtitulo": "Ter a mutação errada não é destino certo de câncer — é começar a corrida com uma vantagem que o câncer não deveria ter",
+    "semestre": 9,
+    "disciplina": "Oncologia",
+    "sistema_corporal": "Múltiplos sistemas (padrão transversal)",
+    "profundidade_arvore": 2,
+    "importancia": 3,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 19,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
+    "tags": [
+      "onco",
+      "genetica_clinica",
+      "hereditario",
+      "Lynch",
+      "BRCA",
+      "Li-Fraumeni",
+      "PAF",
+      "aconselhamento_genetico",
+      "rastreamento",
+      "cirurgia_redutora_de_risco",
+      "imunoterapia"
+    ],
+    "nivel": "CORE",
+    "tipo": "tema",
+    "lentes": [
+      "diagnostico",
+      "conduta"
+    ]
+  },
+  "resumo_conciso": "O bloco anterior fechou a pergunta sobre os fatores de risco que o paciente pode mudar — tabagismo, álcool, obesidade, HPV, H. pylori, exposição solar. Este bloco pergunta sobre os que ele não pode: os fatores de risco não modificáveis de origem hereditária. A maioria dos cânceres não é hereditária — é esporádica, fruto de mutações somáticas acumuladas ao longo da vida. Mas uma fração menor e clinicamente crítica nasce de uma mutação germinativa herdada, presente em toda célula do corpo desde a concepção, que reduz drasticamente a margem de segurança genômica do paciente antes mesmo do primeiro fator ambiental atuar. Este bloco nomeia as quatro síndromes de câncer hereditário mais relevantes para a prática clínica — Síndrome de Lynch (genes de reparo de mismatch MLH1, MSH2, MSH6, PMS2), síndromes BRCA1/BRCA2, Li-Fraumeni (TP53 germinativo) e Polipose Adenomatosa Familiar (APC) — e traduz cada uma em conduta acionável: quando suspeitar, quando testar, como rastrear com intensidade aumentada, e quando a cirurgia redutora de risco antecede o câncer em vez de tratá-lo. Fecha reconectando o fenótipo dMMR/MSI-alto da Síndrome de Lynch à resposta à imunoterapia já estudada em bloco anterior — o mesmo defeito molecular que causa o câncer é, paradoxalmente, o que o torna mais tratável quando ele aparece.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior você viu que existe uma lista curta de hábitos e exposições — tabagismo, álcool, obesidade, HPV, H. pylori, radiação solar — que, se removidos da vida de uma pessoa, reduzem mensuravelmente sua chance de desenvolver câncer. São fatores de risco modificáveis: o paciente nasceu sem eles, os adquiriu ao longo da vida, e pode, em princípio, abandoná-los.\n\nMas existe uma segunda categoria de risco que nenhuma mudança de hábito reverte, porque ela não foi adquirida — foi herdada. Imagine duas irmãs gêmeas que compartilham exatamente os mesmos hábitos: nenhuma fuma, nenhuma bebe, ambas mantêm peso saudável. Ainda assim, se uma delas nasceu com uma cópia defeituosa de um gene de reparo de DNA e a outra não, o risco de câncer ao longo da vida entre as duas pode ser drasticamente diferente. Por que uma mutação presente desde a concepção, numa única letra do genoma, consegue pesar tanto quanto décadas inteiras de tabagismo?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Antes de nomear qualquer síndrome, uma advertência que evita o erro mais perigoso deste bloco"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É tentador, ao aprender sobre câncer hereditário, concluir que ele é o padrão — afinal, esse é o assunto que mais impressiona em uma aula. Não é. A esmagadora maioria dos cânceres é esporádica: mutações somáticas que se acumulam ao acaso em uma única linhagem celular ao longo da vida, sem nenhuma mutação germinativa subjacente. As síndromes que este bloco descreve respondem por uma fração minoritária do total de casos de cada tipo de câncer — por exemplo, a maior parte do câncer de mama e a maior parte do câncer colorretal não tem componente hereditário identificável.\n\nEssa advertência não é detalhe estatístico descartável. Ela evita o erro clínico oposto ao da subestimação: testar genética compulsivamente em todo paciente com câncer, gerando ansiedade, custo e resultados incertos (variantes de significado indeterminado) sem ganho real. A genética clínica em oncologia é uma ferramenta cirúrgica — usada quando o padrão familiar ou clínico levanta suspeita concreta, não como triagem universal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema que a hereditariedade cria: a margem de segurança genômica já nasce reduzida"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você já estudou, na base molecular da instabilidade genômica, que a célula normal depende de sistemas de reparo do DNA e de genes supressores de tumor funcionando em ambas as cópias — a herdada do pai e a herdada da mãe — para conter o acúmulo de mutações. Uma célula esporádica precisa acumular várias mutações somáticas independentes, ao longo de anos ou décadas, para inativar essas duas cópias e perder o controle.\n\nUma pessoa com síndrome de câncer hereditário já nasce com uma dessas duas cópias inativada em toda célula do corpo — não apenas na célula que um dia vai virar tumor, mas em todas elas, desde o óvulo fertilizado. Isso significa que essa pessoa só precisa de UM evento somático adicional (perda ou mutação da segunda cópia, ainda funcional) para que uma célula qualquer perca a proteção. É a diferença entre precisar de duas falhas independentes acontecerem na mesma célula, ou precisar de apenas uma. Esse encurtamento do caminho é o motivo pelo qual síndromes hereditárias produzem câncer mais precocemente, com maior frequência, e às vezes em múltiplos órgãos ao mesmo tempo."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Consolidação",
+      "conteudo": "Fixe a diferença de eixo antes de prosseguir: o bloco anterior tratava do risco que se acumula ao longo da vida por exposição (fumar, beber, se expor ao sol). Este bloco trata do risco que já vem pronto ao nascer, escondido em uma única cópia defeituosa de um gene — e que só precisa de mais um evento para se manifestar, em vez de vários."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução que a genética clínica encontrou: reconhecer o padrão antes do teste confirmar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Antes de qualquer exame molecular, a suspeita de síndrome hereditária nasce de um padrão observável na história clínica e familiar. Quatro sinais de alerta, isolados ou combinados, levantam essa suspeita:\n\nIdade jovem incomum para aquele tipo de câncer — câncer de mama antes dos 40-45 anos, câncer colorretal antes dos 50, por exemplo, quando a idade típica esporádica costuma ser mais tardia.\n\nMúltiplos familiares de primeiro grau afetados pelo mesmo câncer, ou por cânceres do mesmo espectro hereditário, ao longo de gerações sucessivas — um padrão que sugere herança autossômica dominante, transmitida por qualquer um dos pais com 50% de chance para cada filho.\n\nMúltiplos tumores primários no mesmo indivíduo — não metástase de um único tumor espalhando-se, mas dois ou mais cânceres geneticamente distintos surgindo de forma independente na mesma pessoa, muitas vezes em órgãos diferentes.\n\nUm padrão de órgãos específico que se repete na família — por exemplo, mama e ovário na mesma linhagem, ou colorretal e endométrio, combinações que cada síndrome tem sua assinatura própria, como você verá adiante.\n\nÉ esse reconhecimento de padrão — não um teste de rotina em todo paciente — que dispara o encaminhamento para aconselhamento genético e, quando indicado, o teste molecular confirmatório."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Síndrome de Lynch: quando o próprio sistema de correção de provas do DNA nasce com falha"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A síndrome hereditária de câncer colorretal mais comum é a Síndrome de Lynch, causada por mutação germinativa em um dos genes de reparo de mismatch (mismatch repair, MMR) — MLH1, MSH2, MSH6 ou PMS2. Você já estudou, na base molecular deste sistema, que essas proteínas funcionam como um corretor ortográfico que percorre o DNA recém-copiado corrigindo pequenos erros de pareamento que escaparam da polimerase. Quando uma dessas quatro proteínas já nasce não-funcional em uma das duas cópias, basta que a segunda cópia seja inativada em uma única célula colônica para que aquele corretor pare de funcionar ali — e erros de replicação comecem a se acumular sem correção, célula após célula.\n\nClinicamente, a Síndrome de Lynch se anuncia por câncer colorretal em idade jovem (frequentemente antes dos 50 anos), com tendência a se localizar preferencialmente no cólon direito (diferente do padrão predominantemente esquerdo do câncer colorretal esporádico), e por um espectro tumoral que vai além do intestino: câncer de endométrio é a segunda manifestação mais característica da síndrome, e o risco também se estende, em menor grau, a ovário, estômago, intestino delgado, trato urinário e vias biliares."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "BRCA1 e BRCA2: os genes que a mídia tornou famosos, e o que a fama não explica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "BRCA1 e BRCA2 (BReast CAncer genes 1 e 2) são genes supressores de tumor cuja função normal é participar do reparo de quebras de dupla-fita do DNA por recombinação homóloga — um mecanismo de reparo diferente e mais complexo que o corretor de mismatch da Síndrome de Lynch, voltado para o tipo de dano mais grave que o DNA pode sofrer. Mutação germinativa em qualquer um dos dois genes eleva substancialmente o risco de câncer de mama e de câncer de ovário ao longo da vida, com diferenças de magnitude entre BRCA1 e BRCA2 e entre subtipos tumorais que fogem ao escopo deste bloco [⚠️ VERIFICAR: valores percentuais exatos de risco cumulativo variam por fonte, população estudada e ano de publicação — confirmar em referência primária atualizada antes de citar número específico a paciente].\n\nO que menos aparece na cultura popular, mas importa clinicamente, é que BRCA1/2 não se limitam a mama e ovário: também elevam risco de câncer de próstata (particularmente formas mais agressivas) e de câncer de pâncreas, e a transmissão ocorre igualmente por via paterna — um homem portador de mutação BRCA pode não desenvolver os cânceres mais associados ao sexo feminino, mas transmite a mutação a filhos e filhas com a mesma probabilidade de 50%, e ele próprio carrega risco aumentado de próstata e mama masculina."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Ter uma mutação BRCA1/2, ou qualquer outra mutação germinativa de síndrome hereditária, não é diagnóstico de câncer — é aumento de probabilidade ao longo da vida. A distinção entre 'risco elevado' e 'destino certo' é a armadilha conceitual mais importante deste bloco: a mesma lógica que você já aplicou aos fatores de risco modificáveis (fumar não garante câncer de pulmão) vale, com ainda mais força emocional, para mutações hereditárias — porque aqui o paciente não escolheu o fator de risco, e comunicar isso com precisão é parte do aconselhamento genético."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Li-Fraumeni: quando o guardião do genoma nasce sem guarda"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "TP53 é o gene supressor de tumor mais estudado em toda a oncologia, apelidado de 'guardião do genoma' por sua função central: diante de dano ao DNA que não pode ser reparado, a proteína p53 interrompe o ciclo celular ou força a célula à apoptose, impedindo que uma célula danificada se replique. Na maioria dos cânceres esporádicos, TP53 é mutado somaticamente — apenas naquele tumor. Na Síndrome de Li-Fraumeni, a mutação em TP53 é germinativa: toda célula do corpo já nasce com essa vigilância comprometida em uma das duas cópias.\n\nO resultado clínico é o mais amplo e mais precoce entre as síndromes deste bloco: múltiplos tumores primários, de tipos histológicos variados, começando em idade notavelmente jovem — incluindo sarcomas de partes moles e osso, câncer de mama de início muito precoce, tumores cerebrais, carcinoma adrenocortical e leucemias, muitas vezes mais de um desses ao longo da vida do mesmo indivíduo. É a síndrome que mais diretamente ilustra a lógica de 'uma cópia já perdida, falta apenas uma' — porque TP53 governa a resposta ao dano em praticamente todo tecido do corpo, não em um órgão específico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Polipose Adenomatosa Familiar: quando o freio do crescimento colônico nasce quebrado em quase todo pólipo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A Polipose Adenomatosa Familiar (PAF) é causada por mutação germinativa no gene APC (Adenomatous Polyposis Coli), um supressor de tumor que normalmente regula negativamente a via de sinalização Wnt/beta-catenina — o mesmo circuito que instrui a célula colônica quando dividir e quando parar. Sem uma cópia funcional de APC desde o nascimento, cada célula da mucosa colônica já caminha com o freio parcialmente solto; basta a segunda cópia falhar, de forma independente, em milhares de pontos diferentes do cólon ao longo da vida, para que aquele ponto vire um pólipo adenomatoso.\n\nA consequência clínica é dramática e distintiva: centenas a milhares de pólipos adenomatosos colônicos, tipicamente surgindo a partir da adolescência ou início da vida adulta. Diferente de Lynch, BRCA e Li-Fraumeni — onde o risco é elevado, mas não certeza —, a PAF não tratada tem progressão para câncer colorretal praticamente inevitável, geralmente antes dos 40 anos, porque o número absurdo de pólipos torna estatisticamente certo que pelo menos um deles acumule as mutações adicionais necessárias para progressão maligna."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a Polipose Adenomatosa Familiar fosse diagnosticada em um adolescente e nenhuma conduta preventiva fosse tomada, apenas observação clínica de rotina, o que aconteceria?",
+      "resposta": "A progressão para câncer colorretal seria praticamente certa, tipicamente antes dos 40 anos, porque centenas a milhares de pólipos adenomatosos crescem simultaneamente no cólon, e basta que um único deles acumule as mutações somáticas adicionais necessárias para virar carcinoma invasor. Diferente de Lynch ou BRCA — onde 'esperar e vigiar de perto' é conduta aceitável em determinados contextos —, na PAF a vigilância isolada sem intervenção cirúrgica eventual não muda o desfecho estatístico: é uma questão de tempo, não de probabilidade incerta. É exatamente por isso que a colectomia profilática, e não apenas colonoscopia repetida, é a conduta definitiva recomendada nesta síndrome específica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Da suspeita ao teste: quando o aconselhamento genético entra em cena"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Reconhecer o padrão familiar ou clínico (idade jovem, múltiplos afetados, múltiplos tumores primários, espectro de órgãos característico) é apenas o primeiro passo. A conduta seguinte não é pedir o teste genético diretamente — é encaminhar para aconselhamento genético, um processo estruturado que antecede e acompanha o teste molecular.\n\nO aconselhamento genético cumpre três funções que o teste isolado não cumpre: primeiro, constrói um heredograma detalhado, mapeando três gerações de história familiar de câncer para calibrar a probabilidade pré-teste; segundo, prepara o paciente para as possíveis implicações psicológicas, familiares e até de seguro de saúde de um resultado positivo, negativo ou incerto (variante de significado indeterminado); terceiro, orienta explicitamente que um resultado positivo tem implicação direta para os familiares em risco, que também podem optar por testar-se. Pular esse processo e testar diretamente, sem essa preparação, é uma das falhas mais comuns e evitáveis na condução de suspeita de câncer hereditário."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Depois da confirmação: as duas frentes de conduta acionável"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma vez confirmada a mutação germinativa, a conduta se divide em duas frentes que não se excluem — muitas vezes são combinadas ao longo da vida do paciente.\n\nA primeira frente é o rastreamento intensificado: em vez do rastreamento populacional padrão que você estudou no bloco anterior (colonoscopia a partir dos 45-50 anos na população geral, mamografia a partir dos 40-50 anos), o portador de mutação hereditária inicia rastreamento mais cedo e com maior frequência. Colonoscopia anual ou a cada 1-2 anos a partir de idade jovem em Lynch; ressonância magnética de mama, frequentemente alternada ou combinada com mamografia, iniciando substancialmente mais cedo que o rastreamento populacional em portadoras de BRCA1/2. A lógica é a mesma do rastreamento populacional — detectar em fase pré-clínica curável —, apenas com intensidade calibrada ao risco real, muito mais alto que o da população geral.\n\nA segunda frente, reservada para os cenários de risco mais elevado, é a cirurgia redutora de risco: remoção de um órgão ou tecido ainda saudável, antes que o câncer exista, precisamente porque a probabilidade de desenvolvê-lo é alta o suficiente para justificar essa antecipação. Mastectomia profilática e ooforectomia profilática (com salpingectomia) são consideradas em portadoras de BRCA1/2 de alto risco, tipicamente após a fase reprodutiva concluída ou considerada no planejamento familiar. Colectomia profilática é a conduta padrão na Polipose Adenomatosa Familiar, dada a certeza estatística de progressão maligna descrita acima — aqui a cirurgia não é opção entre outras, é o desfecho esperado da condução adequada do caso."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O elo final: por que o defeito que causa o câncer de Lynch também ajuda a tratá-lo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você já viu, no bloco de genética clínica e testes moleculares deste mesmo semestre, que tumores com alta carga mutacional apresentam mais antígenos estranhos na superfície celular, tornando-os mais reconhecíveis pelo sistema imunológico e mais responsivos à imunoterapia com inibidores de checkpoint. A Síndrome de Lynch fecha esse círculo de forma direta: a perda do reparo de mismatch gera o fenótipo de instabilidade de microssatélites alta (MSI-alto) ou deficiência de reparo de mismatch (dMMR) — o mesmo defeito molecular que multiplicou o risco de câncer colorretal e endometrial ao longo da vida do paciente é, paradoxalmente, o que torna esses tumores, quando surgem, excepcionalmente responsivos à imunoterapia, muito mais do que a maioria dos tumores colorretais esporádicos com reparo de mismatch preservado (MSS).\n\nEsse é o tipo de conexão que a genética clínica em oncologia revela quando se olha o quadro completo: a mesma mutação que aumenta a probabilidade da doença também assina, no tumor que eventualmente aparece, qual arma terapêutica vai funcionar melhor contra ele."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Síndromes de câncer hereditário: gene, tumores associados e conduta acionável",
+      "narrativa_antecedente_ids": [
+        "lynch-paragrafo-mmr",
+        "brca-paragrafo-recombinacao-homologa",
+        "li-fraumeni-paragrafo-tp53",
+        "paf-paragrafo-apc-wnt"
+      ],
+      "colunas": [
+        "Síndrome",
+        "Gene(s)",
+        "Tumores associados",
+        "Conduta acionável"
+      ],
+      "linhas": [
+        [
+          "Síndrome de Lynch",
+          "MLH1, MSH2, MSH6, PMS2 (reparo de mismatch)",
+          "Colorretal (cólon direito, idade jovem), endométrio, ovário, estômago, intestino delgado, trato urinário, vias biliares",
+          "Colonoscopia precoce e frequente; rastreamento ginecológico; tumores dMMR/MSI-alto respondem excepcionalmente bem a imunoterapia com inibidor de checkpoint"
+        ],
+        [
+          "BRCA1 / BRCA2",
+          "BRCA1, BRCA2 (recombinação homóloga)",
+          "Mama, ovário, próstata (especialmente formas agressivas), pâncreas; transmissão igual por via paterna",
+          "Rastreamento intensificado (RM de mama precoce); mastectomia e ooforectomia profiláticas em alto risco; sensibilidade a inibidores de PARP no tumor já estabelecido"
+        ],
+        [
+          "Li-Fraumeni",
+          "TP53 (germinativo)",
+          "Sarcomas de partes moles e osso, mama de início muito precoce, tumores cerebrais, carcinoma adrenocortical, leucemias — múltiplos tumores primários",
+          "Vigilância de corpo inteiro com protocolo de imagem intensificado desde a infância; evitar radioterapia quando possível (risco de segundo tumor induzido)"
+        ],
+        [
+          "Polipose Adenomatosa Familiar (PAF)",
+          "APC (via Wnt/beta-catenina)",
+          "Centenas a milhares de pólipos adenomatosos colônicos; progressão para câncer colorretal praticamente certa sem intervenção",
+          "Colonoscopia de vigilância desde a adolescência; colectomia profilática como conduta definitiva, não apenas vigiada"
+        ]
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Etimologia: de onde vêm os nomes que você acabou de aprender"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Síndrome de Lynch",
+      "origem": "Epônimo — Henry T. Lynch, oncologista e geneticista americano",
+      "significado": "Nome próprio de quem descreveu e caracterizou clinicamente o padrão familiar de câncer colorretal hereditário não-polipoide",
+      "explicacao": "Diferente das demais síndromes deste bloco, nomeadas pelo gene envolvido, a Síndrome de Lynch carrega o nome do médico que, ao longo de décadas estudando heredogramas de famílias com agregação incomum de câncer colorretal e endometrial, estabeleceu esse padrão como entidade clínica distinta antes mesmo de os genes MLH1/MSH2/MSH6/PMS2 serem identificados molecularmente."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "BRCA",
+      "origem": "Acrônimo do inglês BReast CAncer gene",
+      "significado": "Literalmente 'gene do câncer de mama'",
+      "explicacao": "O nome reflete o contexto histórico de descoberta — os genes foram identificados a partir do estudo de famílias com agregação de câncer de mama — mas o nome ficou estreito demais para a biologia real: hoje sabemos que BRCA1/2 participam do reparo de DNA de forma ampla, e sua mutação eleva risco também de ovário, próstata e pâncreas, muito além do órgão que batizou o gene."
+    },
+    {
+      "tipo": "analogia",
+      "titulo": "Mutação germinativa como uma trava de segurança já quebrada em toda porta do prédio, desde a construção",
+      "mapeamento": {
+        "predio_inteiro": "O corpo, com todas as suas células",
+        "trava_de_seguranca_em_cada_porta": "As duas cópias de um gene de reparo/supressor de tumor em cada célula",
+        "trava_ja_quebrada_de_fabrica_em_todas_as_portas": "Mutação germinativa herdada — presente em toda célula desde a concepção, não apenas na que um dia formará o tumor",
+        "segunda_trava_ainda_funcional_em_cada_porta": "A segunda cópia do gene, ainda íntegra, que precisa falhar independentemente em cada célula para o alarme parar de funcionar ali",
+        "invasor_entrando_por_uma_porta_qualquer": "O evento somático adicional que inativa a segunda cópia em uma célula específica, permitindo o início do tumor"
+      },
+      "conteudo": "Pense em um prédio com centenas de portas, cada uma com duas travas independentes. Numa pessoa sem mutação hereditária, um invasor só entra se conseguir arrombar as duas travas da mesma porta — evento raro, que exige dois golpes de sorte na mesma tentativa. Numa pessoa com síndrome de câncer hereditário, uma das duas travas já veio quebrada de fábrica em TODAS as portas do prédio, simultaneamente. O invasor não precisa mais de dois golpes de sorte na mesma porta — precisa apenas de um golpe, em qualquer uma das centenas de portas disponíveis. É por isso que síndromes hereditárias produzem câncer mais cedo, mais vezes, e às vezes em mais de um órgão: não porque o mecanismo de formação do tumor seja diferente, mas porque o número de tentativas necessárias caiu de duas para uma, em um número enorme de \"portas\" simultaneamente vulneráveis."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Árvore genealógica esquemática ilustrando padrão de herança autossômica dominante em câncer hereditário",
+      "descricao": "Heredograma de três gerações mostrando transmissão de mutação germinativa (símbolos preenchidos) com padrão autossômico dominante — aproximadamente metade dos filhos de um portador afetado, distribuição igual entre sexos, presença de múltiplos tipos de câncer do mesmo espectro em diferentes gerações e idades mais jovens que o esperado na população geral.",
+      "prompt_ia": "Create a clean three-generation family pedigree diagram (heredogram) in Portuguese illustrating autosomal dominant inheritance of a hereditary cancer syndrome. Use standard genetics symbols: squares for males, circles for females, filled shapes for affected individuals carrying the mutation, half-filled for unaffected carriers if relevant. Label affected individuals with small icons indicating cancer type and age at diagnosis (e.g., 'CA mama, 38a', 'CA colorretal, 42a'). Show roughly half of offspring affected across generations, both sexes affected equally. Flat vector medical genetics illustration style, neutral adaptive background, blue/amber palette, clear Portuguese labels, professional genetic counseling look."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Esquema comparativo: caminho para o câncer em célula sem mutação hereditária versus com mutação hereditária",
+      "descricao": "Dois diagramas paralelos mostrando uma célula normal precisando de duas mutações somáticas independentes na mesma célula para inativar ambas as cópias de um gene supressor, versus uma célula com mutação germinativa já nascendo com uma cópia inativada, precisando de apenas uma mutação somática adicional para perder a proteção completamente.",
+      "prompt_ia": "Create a side-by-side comparison vector diagram in Portuguese. Left panel titled 'Câncer esporádico': a single cell needs two independent somatic mutations (shown as two lightning bolt icons hitting both gene copies sequentially) to fully inactivate a tumor suppressor gene, shown across a longer timeline. Right panel titled 'Câncer hereditário': every cell in the body already starts with one gene copy inactivated from birth (shown grayed out/broken from the start), needing only one additional somatic mutation (single lightning bolt) to complete inactivation, shown across a much shorter timeline and across many cells simultaneously. Flat scientific vector illustration, neutral adaptive background, blue/amber palette, clear Portuguese labels, side-by-side timeline comparison layout."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Painel visual comparativo das quatro síndromes de câncer hereditário",
+      "descricao": "Quatro colunas ou cartões, um por síndrome (Lynch, BRCA1/2, Li-Fraumeni, PAF), cada um com o gene envolvido, ícone representando o órgão-alvo principal e conduta característica (colonoscopia, RM de mama, vigilância de corpo inteiro, colectomia).",
+      "prompt_ia": "Create a clean four-card comparison infographic in Portuguese, one card per hereditary cancer syndrome: 'Síndrome de Lynch' (gene icons MLH1/MSH2/MSH6/PMS2, colon and uterus icons), 'BRCA1/BRCA2' (breast, ovary, prostate, pancreas icons), 'Li-Fraumeni' (TP53 icon, multiple organ icons representing sarcoma, brain, adrenal, breast, blood/leukemia), 'Polipose Adenomatosa Familiar' (APC icon, colon full of small polyp dots). Each card shows a small action icon representing its key management (colonoscopy, breast MRI, whole-body surveillance, prophylactic colectomy). Flat vector medical infographic style, neutral adaptive background, blue/amber palette, clear Portuguese labels, four-card grid layout."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Fluxograma de conduta: da suspeita clínica ao teste genético e à decisão de rastreamento versus cirurgia redutora de risco",
+      "descricao": "Fluxograma sequencial mostrando os passos: reconhecimento de padrão de alerta (idade jovem, múltiplos afetados, múltiplos tumores primários, espectro de órgãos) → encaminhamento para aconselhamento genético → construção de heredograma → teste molecular → resultado positivo → bifurcação entre rastreamento intensificado e cirurgia redutora de risco conforme síndrome e preferência do paciente.",
+      "prompt_ia": "Create a clinical decision flowchart in Portuguese for hereditary cancer syndrome workup. Sequential boxes: (1) 'Padrão de alerta' with icons representing young age, multiple affected relatives, multiple primary tumors; (2) 'Encaminhamento para aconselhamento genético' with a genetic counselor icon; (3) 'Heredograma de 3 gerações' with a small pedigree icon; (4) 'Teste molecular germinativo' with a DNA sequencing icon; (5) branching into 'Resultado negativo/inconclusivo' (dashed box, continue routine screening) and 'Resultado positivo' which further branches into 'Rastreamento intensificado' (colonoscopy/MRI icons) and 'Cirurgia redutora de risco' (surgical icon) with a note 'conforme síndrome específica'. Flat vector medical flowchart style, neutral adaptive background, blue/amber palette, clear Portuguese labels, horizontal flow with clear arrows."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Fechamento: da célula individual de volta à família inteira"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você agora tem as duas metades do risco de câncer completas. O bloco anterior mostrou o que o paciente pode mudar — tabagismo, álcool, obesidade, HPV, H. pylori, exposição solar. Este bloco mostrou o que ele não pode: uma mutação germinativa que reduz de dois para um o número de golpes de sorte necessários para o câncer começar, presente em toda célula do corpo desde antes do nascimento. Reconhecer o padrão de alerta, encaminhar para aconselhamento genético, confirmar por teste molecular e traduzir o resultado em rastreamento intensificado ou cirurgia redutora de risco é a sequência de raciocínio que transforma uma história familiar preocupante em conduta concreta — e, no caso específico de Lynch, o mesmo defeito que aumentou o risco também assina a resposta à imunoterapia quando o câncer, apesar de tudo, aparece. Os próximos blocos, ao tratarem cada tumor por localização anatômica, vão retomar essas síndromes com o detalhe específico de cada órgão."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s9-onco-01-005",
+        "titulo": "Epidemiologia do Câncer e Fatores de Risco Modificáveis",
+        "disciplina": "Oncologia",
+        "semestre": 9,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco pressupõe a distinção entre fator de risco modificável e não modificável já introduzida no bloco irmão anterior, e faz a ponte explícita de um eixo para o outro: dos hábitos que o paciente pode mudar para as mutações germinativas com as quais ele nasceu."
+      },
+      {
+        "bloco_id": "s4-patol1-07-034",
+        "titulo": "Genes de Reparo do DNA e Instabilidade Genômica",
+        "disciplina": "Anatomia Patológica I — Patologia Geral",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A base molecular do sistema de reparo de mismatch (MMR), do conceito de instabilidade de microssatélites (MSI) e do fenótipo mutador é pré-requisito direto para entender por que a Síndrome de Lynch se comporta como se comporta. Este bloco não repete esse mecanismo — assume-o conhecido e constrói sobre ele a consequência clínica acionável."
+      },
+      {
+        "bloco_id": "s9-onco-01-003",
+        "titulo": "Genética Clínica e Testes Moleculares",
+        "disciplina": "Oncologia",
+        "semestre": 9,
+        "relevancia": "complementar",
+        "explicacao": "O conceito de carga mutacional alta e resposta à imunoterapia, já estabelecido nesse bloco anterior para tumores esporádicos com alta carga mutacional, é retomado aqui especificamente para o fenótipo dMMR/MSI-alto da Síndrome de Lynch."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": "s9-onco-02-000",
+        "disciplina": "Oncologia",
+        "semestre_futuro": 9,
+        "topico": "Apresentações clínicas por localização (câncer colorretal, de mama, de ovário, de endométrio) retomando cada síndrome hereditária com detalhe específico de órgão",
+        "mecanismo_conexao": "Cada tumor estudado individualmente por localização vai retomar sua fração hereditária específica (percentual atribuível a Lynch, a BRCA) e o protocolo de rastreamento diferenciado para portadores de mutação germinativa.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "Farmacologia Oncológica",
+        "semestre_futuro": 9,
+        "topico": "Inibidores de PARP (olaparibe e correlatos) explorando a deficiência de recombinação homóloga em tumores BRCA-mutados por letalidade sintética",
+        "mecanismo_conexao": "A disfunção de reparo por recombinação homóloga descrita aqui para BRCA1/2 é a base mecanística direta da classe terapêutica de inibidores de PARP, que serão detalhados em profundidade farmacológica em bloco futuro específico.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "Ginecologia",
+        "semestre_futuro": 9,
+        "topico": "Protocolo de vigilância ginecológica intensificada (ultrassonografia transvaginal, biópsia de endométrio) em portadoras de Síndrome de Lynch",
+        "mecanismo_conexao": "O risco elevado de câncer de endométrio e ovário na Síndrome de Lynch, introduzido aqui de forma acionável, será retomado com profundidade de protocolo ginecológico específico em bloco futuro de Ginecologia Oncológica.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s9-onco-01-005",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Contraste de eixo: s9-onco-01-005 trata dos fatores de risco modificáveis, adquiridos ao longo da vida; este bloco trata dos fatores de risco não modificáveis, herdados desde a concepção — as duas metades complementares do risco de câncer."
+      },
+      {
+        "bloco_id": "s4-patol1-07-034",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Este bloco é a aplicação clínica direta da base molecular ensinada em Patologia Geral: o mesmo sistema MMR e o mesmo fenótipo MSI ali descritos em nível molecular ganham aqui nome de síndrome, critério de suspeita clínica e conduta concreta."
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "card_id": "s9-onco-01-006-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que uma mutação germinativa em um gene de reparo de DNA produz câncer mais precocemente e com maior frequência do que a via esporádica do mesmo câncer?",
+      "resposta": "Porque uma célula sem mutação hereditária precisa acumular duas mutações somáticas independentes, na mesma célula, para inativar ambas as cópias de um gene de reparo ou supressor de tumor — evento estatisticamente raro. Uma pessoa com mutação germinativa já nasce com uma das duas cópias inativada em toda célula do corpo, restando apenas uma segunda mutação somática, em qualquer célula, para completar a perda de proteção. O número de 'tentativas' necessárias cai de duas para uma, e o número de células simultaneamente vulneráveis é enorme — por isso o câncer tende a aparecer mais cedo e, às vezes, em múltiplos sítios.",
+      "dificuldade": 3,
+      "tags": ["genetica_hereditaria", "reparo_dna", "mecanismo"],
+      "nivel_alvo": 3
+    },
+    {
+      "card_id": "s9-onco-01-006-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Explique por que tumores da Síndrome de Lynch com fenótipo dMMR/MSI-alto respondem excepcionalmente bem à imunoterapia com inibidores de checkpoint.",
+      "resposta": "A perda de função do sistema de reparo de mismatch permite acúmulo descontrolado de erros de replicação não corrigidos, gerando uma carga mutacional muito mais alta do que a de tumores com reparo preservado (MSS). Cada mutação adicional pode gerar uma proteína alterada, potencialmente reconhecida como antígeno estranho pelo sistema imunológico. Quanto mais antígenos estranhos um tumor exibe, maior a chance de o sistema imunológico reconhecê-lo como ameaça — e é exatamente esse reconhecimento que os inibidores de checkpoint (que retiram o freio da resposta imune) conseguem explorar. O mesmo defeito de reparo que causou o câncer é o que o torna mais visível ao sistema imunológico.",
+      "dificuldade": 4,
+      "tags": ["Lynch", "MSI", "imunoterapia", "dMMR"],
+      "nivel_alvo": 4
+    },
+    {
+      "card_id": "s9-onco-01-006-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "Se um adolescente diagnosticado com Polipose Adenomatosa Familiar recebesse apenas colonoscopias de vigilância periódicas, sem colectomia profilática, qual seria o desfecho esperado a longo prazo?",
+      "resposta": "A progressão para câncer colorretal seria praticamente certa, tipicamente antes dos 40 anos. Diferente de Lynch ou BRCA, onde vigilância isolada pode ser conduta aceitável em determinados contextos de risco, na PAF o número de pólipos adenomatosos (centenas a milhares) torna estatisticamente inevitável que pelo menos um deles acumule as mutações somáticas adicionais necessárias para virar carcinoma invasor. Por isso a colectomia profilática não é uma opção entre outras nesta síndrome específica — é a conduta definitiva recomendada.",
+      "dificuldade": 4,
+      "tags": ["PAF", "APC", "cirurgia_redutora_de_risco", "raciocinio_probabilistico"],
+      "nivel_alvo": 4
+    },
+    {
+      "card_id": "s9-onco-01-006-fc04",
+      "tipo": "clinico",
+      "pergunta": "Mulher de 34 anos é diagnosticada com câncer de mama. Sua mãe teve câncer de ovário aos 48 anos e sua tia materna teve câncer de mama aos 39 anos. Que conduta de investigação genética é indicada, e por quê?",
+      "resposta": "O padrão — idade jovem (câncer de mama antes dos 40), múltiplos familiares de primeiro e segundo grau afetados, e a combinação característica de mama e ovário na mesma linhagem materna — levanta suspeita concreta de síndrome hereditária BRCA1/2. A conduta correta é encaminhar para aconselhamento genético antes do teste molecular direto, para construir heredograma completo de três gerações, calibrar probabilidade pré-teste e preparar a paciente para as implicações do resultado (inclusive para os familiares em risco), e só então proceder ao teste germinativo confirmatório.",
+      "dificuldade": 3,
+      "tags": ["BRCA", "aconselhamento_genetico", "heredograma"],
+      "nivel_alvo": 4
+    },
+    {
+      "card_id": "s9-onco-01-006-fc05",
+      "tipo": "comparacao",
+      "pergunta": "Compare a Síndrome de Lynch e a Síndrome de Li-Fraumeni quanto ao mecanismo molecular subjacente e à amplitude do espectro tumoral.",
+      "resposta": "A Síndrome de Lynch decorre de mutação germinativa em genes de reparo de mismatch (MLH1, MSH2, MSH6, PMS2), que corrigem pequenos erros de pareamento durante a replicação; seu espectro tumoral é relativamente concentrado — predominantemente colorretal e endométrio, com extensão menor a ovário, estômago e trato urinário. A Síndrome de Li-Fraumeni decorre de mutação germinativa em TP53, o 'guardião do genoma', que governa a resposta a dano de DNA em praticamente qualquer tecido; por isso seu espectro tumoral é muito mais amplo e heterogêneo — sarcomas, câncer de mama muito precoce, tumores cerebrais, carcinoma adrenocortical e leucemias, frequentemente múltiplos tumores primários na mesma pessoa. A diferença de amplitude reflete a diferença de alcance funcional entre um sistema de reparo específico (MMR) e um regulador central de resposta ao dano válido para quase todo o corpo (TP53).",
+      "dificuldade": 4,
+      "tags": ["Lynch", "Li-Fraumeni", "TP53", "MMR", "comparacao"],
+      "nivel_alvo": 4
+    },
+    {
+      "card_id": "s9-onco-01-006-fc06",
+      "tipo": "armadilha",
+      "pergunta": "Um estudante conclui: 'Se uma paciente tem mutação BRCA1, ela certamente desenvolverá câncer de mama ou ovário ao longo da vida — é apenas questão de tempo.' Onde está o erro, e essa afirmação vale igualmente para todas as síndromes deste bloco?",
+      "resposta": "O erro é tratar 'risco elevado' como sinônimo de 'certeza'. Mutação BRCA1/2 aumenta substancialmente a probabilidade de câncer de mama e ovário ao longo da vida, mas não é determinística — existem portadoras que nunca desenvolvem esses cânceres. Essa lógica probabilística vale para Lynch, BRCA e Li-Fraumeni. A exceção real dentro deste bloco é a Polipose Adenomatosa Familiar não tratada: ali, o número absurdo de pólipos simultâneos torna a progressão para câncer colorretal praticamente certa sem colectomia profilática — a única situação deste bloco em que 'risco elevado' se aproxima de determinismo, e mesmo assim por acúmulo estatístico de milhares de chances independentes, não por certeza mecanística de cada célula individual.",
+      "dificuldade": 4,
+      "tags": ["armadilha", "BRCA", "risco_versus_certeza", "PAF"],
+      "nivel_alvo": 4
+    },
+    {
+      "card_id": "s9-onco-01-006-fc07",
+      "tipo": "etimologia",
+      "pergunta": "Por que o nome 'BRCA' (BReast CAncer gene) é etimologicamente enganoso à luz do que hoje se sabe sobre a função desses genes?",
+      "resposta": "O nome nasceu do contexto histórico de descoberta — os genes foram identificados a partir de famílias com agregação de câncer de mama, e por isso batizados com o órgão que motivou a busca. Mas a função real de BRCA1/2 é participar do reparo de quebras de dupla-fita do DNA por recombinação homóloga, um mecanismo que opera em qualquer célula do corpo, não apenas na mama. Por isso a mutação também eleva risco de câncer de ovário, próstata e pâncreas — órgãos que o nome do gene não sugere. O nome ficou historicamente fixado no órgão de descoberta, não na função biológica real, e é importante que o estudante não deduza o espectro tumoral apenas a partir do nome do gene.",
+      "dificuldade": 2,
+      "tags": ["etimologia", "BRCA", "nomenclatura"],
+      "nivel_alvo": 2
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s9-onco-01-006-caso01",
+      "titulo": "A Família com Demasiadas Histórias de Câncer",
+      "apresentacao": "Homem, 43 anos, procura consulta após diagnóstico recente de câncer colorretal localizado no cólon ascendente (lado direito). Ao levantar história familiar detalhada, o médico descobre: pai do paciente teve câncer colorretal aos 47 anos; tia paterna teve câncer de endométrio aos 51 anos; avô paterno teve câncer de estômago aos 58 anos. Paciente nega tabagismo, etilismo, obesidade ou outros fatores de risco modificáveis relevantes. Colonoscopia do paciente revela lesão única, sem múltiplos pólipos associados.",
+      "cascata": [
+        {"etapa": "Causa", "descricao": "Suspeita de mutação germinativa em gene de reparo de mismatch (MLH1, MSH2, MSH6 ou PMS2), herdada por via paterna, presente em toda célula do corpo do paciente desde a concepção."},
+        {"etapa": "Estrutura Afetada", "descricao": "Sistema de reparo de mismatch das células da mucosa colônica (e potencialmente de outros órgãos do espectro), já nascendo com uma das duas cópias do gene de reparo inativada em todas as células do corpo."},
+        {"etapa": "Disfunção", "descricao": "Após um evento somático adicional inativando a segunda cópia em uma célula do cólon ascendente, o corretor de erros de replicação para de funcionar ali, permitindo acúmulo progressivo de mutações não corrigidas — instabilidade de microssatélites — até a transformação maligna."},
+        {"etapa": "Sintoma", "descricao": "O padrão familiar por si só não é sintoma do paciente atual, mas o câncer colorretal em idade jovem (43 anos, abaixo do típico esporádico) e localizado no cólon direito é o sinal de alerta que, somado à história familiar de câncer colorretal, endométrio e estômago em gerações sucessivas, levanta suspeita concreta de síndrome hereditária."},
+        {"etapa": "Consequência", "descricao": "Paciente é encaminhado para aconselhamento genético, heredograma de três gerações é construído, teste germinativo confirma mutação em MLH1. Tumor já ressecado é testado e confirma fenótipo dMMR/MSI-alto — informação relevante caso haja recorrência ou doença avançada, pois qualifica o tumor para resposta favorável a imunoterapia. Paciente inicia vigilância colonoscópica anual pelo risco de segundo tumor primário, e familiares de primeiro grau são orientados a buscar aconselhamento genético e teste próprio."}
+      ],
+      "conexao_com_bloco": "O caso ilustra a sequência completa de raciocínio ensinada no bloco: reconhecimento do padrão de alerta (idade jovem, lateralidade direita, múltiplos familiares afetados por cânceres do espectro Lynch), encaminhamento correto para aconselhamento genético antes do teste direto, confirmação molecular, e a dupla consequência prática — vigilância intensificada para o próprio paciente e para a família, além da ligação do fenótipo dMMR/MSI-alto à elegibilidade futura para imunoterapia.",
+      "disciplinas_relacionadas": ["Genética Médica", "Gastroenterologia", "Cirurgia Oncológica"],
+      "diagnostico_revelado": "Síndrome de Lynch (mutação germinativa em MLH1) confirmada após câncer colorretal em cólon direito, com heredograma sugestivo de espectro Lynch em três gerações.",
+      "tratamento_resumido": "Ressecção cirúrgica do tumor já diagnosticado, seguida de vigilância colonoscópica intensificada e rastreamento ginecológico; teste genético em cascata oferecido aos familiares de primeiro grau; fenótipo dMMR/MSI-alto documentado para orientar elegibilidade a imunoterapia em caso de recorrência."
+    }
+  ],
+  "midia": {
+    "imagens": [
+      {
+        "id": "img-001-heredograma-autossomico-dominante",
+        "url": "",
+        "prompt_ia": "Create a clean three-generation family pedigree diagram (heredogram) in Portuguese illustrating autosomal dominant inheritance of a hereditary cancer syndrome. Use standard genetics symbols: squares for males, circles for females, filled shapes for affected individuals carrying the mutation, half-filled for unaffected carriers if relevant. Label affected individuals with small icons indicating cancer type and age at diagnosis (e.g., 'CA mama, 38a', 'CA colorretal, 42a'). Show roughly half of offspring affected across generations, both sexes affected equally. Flat vector medical genetics illustration style, neutral adaptive background, blue/amber palette, clear Portuguese labels, professional genetic counseling look.",
+        "status": "pendente",
+        "tipo_imagem": "esquema_didatico",
+        "titulo": "Árvore genealógica esquemática ilustrando padrão de herança autossômica dominante em câncer hereditário",
+        "descricao": "Heredograma de três gerações mostrando transmissão de mutação germinativa com padrão autossômico dominante — aproximadamente metade dos filhos de um portador afetado, distribuição igual entre sexos, múltiplos tipos de câncer do mesmo espectro em diferentes gerações e idades mais jovens que o esperado na população geral."
+      },
+      {
+        "id": "img-002-uma-versus-duas-mutacoes",
+        "url": "",
+        "status": "pendente",
+        "tipo_imagem": "esquema_didatico",
+        "titulo": "Esquema comparativo: caminho para o câncer em célula sem mutação hereditária versus com mutação hereditária",
+        "descricao": "Dois diagramas paralelos mostrando uma célula normal precisando de duas mutações somáticas independentes na mesma célula para inativar ambas as cópias de um gene supressor, versus uma célula com mutação germinativa já nascendo com uma cópia inativada, precisando de apenas uma mutação somática adicional.",
+        "prompt_ia": "Create a side-by-side comparison vector diagram in Portuguese. Left panel titled 'Câncer esporádico': a single cell needs two independent somatic mutations (shown as two lightning bolt icons hitting both gene copies sequentially) to fully inactivate a tumor suppressor gene, shown across a longer timeline. Right panel titled 'Câncer hereditário': every cell in the body already starts with one gene copy inactivated from birth (shown grayed out/broken from the start), needing only one additional somatic mutation (single lightning bolt) to complete inactivation, shown across a much shorter timeline and across many cells simultaneously. Flat scientific vector illustration, neutral adaptive background, blue/amber palette, clear Portuguese labels, side-by-side timeline comparison layout."
+      },
+      {
+        "id": "img-003-fluxograma-conduta-genetica",
+        "url": "",
+        "status": "pendente",
+        "tipo_imagem": "esquema_didatico",
+        "titulo": "Fluxograma de conduta: da suspeita clínica ao teste genético e à decisão de rastreamento versus cirurgia redutora de risco",
+        "descricao": "Fluxograma sequencial mostrando os passos: reconhecimento de padrão de alerta → encaminhamento para aconselhamento genético → construção de heredograma → teste molecular → resultado positivo → bifurcação entre rastreamento intensificado e cirurgia redutora de risco conforme síndrome.",
+        "prompt_ia": "Create a clinical decision flowchart in Portuguese for hereditary cancer syndrome workup. Sequential boxes: (1) 'Padrão de alerta' with icons representing young age, multiple affected relatives, multiple primary tumors; (2) 'Encaminhamento para aconselhamento genético' with a genetic counselor icon; (3) 'Heredograma de 3 gerações' with a small pedigree icon; (4) 'Teste molecular germinativo' with a DNA sequencing icon; (5) branching into 'Resultado negativo/inconclusivo' (dashed box, continue routine screening) and 'Resultado positivo' which further branches into 'Rastreamento intensificado' (colonoscopy/MRI icons) and 'Cirurgia redutora de risco' (surgical icon) with a note 'conforme síndrome específica'. Flat vector medical flowchart style, neutral adaptive background, blue/amber palette, clear Portuguese labels, horizontal flow with clear arrows."
+      },
+      {
+        "id": "img-004-tabela-visual-sindromes",
+        "url": "",
+        "status": "pendente",
+        "tipo_imagem": "esquema_didatico",
+        "titulo": "Painel visual comparativo das quatro síndromes de câncer hereditário",
+        "descricao": "Quatro colunas ou cartões, um por síndrome (Lynch, BRCA1/2, Li-Fraumeni, PAF), cada um com o gene envolvido, ícone representando o órgão-alvo principal e conduta característica (colonoscopia, RM de mama, vigilância de corpo inteiro, colectomia).",
+        "prompt_ia": "Create a clean four-card comparison infographic in Portuguese, one card per hereditary cancer syndrome: 'Síndrome de Lynch' (gene icons MLH1/MSH2/MSH6/PMS2, colon and uterus icons), 'BRCA1/BRCA2' (breast, ovary, prostate, pancreas icons), 'Li-Fraumeni' (TP53 icon, multiple organ icons representing sarcoma, brain, adrenal, breast, blood/leukemia), 'Polipose Adenomatosa Familiar' (APC icon, colon full of small polyp dots). Each card shows a small action icon representing its key management (colonoscopy, breast MRI, whole-body surveillance, prophylactic colectomy). Flat vector medical infographic style, neutral adaptive background, blue/amber palette, clear Portuguese labels, four-card grid layout."
+      }
+    ],
+    "videos": [],
+    "audios": []
+  },
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
+  },
+  "horizonte_validade": "em_mudanca",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Kumar, Abbas, Aster. Robbins & Cotran Pathologic Basis of Disease, 10ª ed., 2020 — capítulo de Neoplasia, seção de síndromes de câncer familiar.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "DeVita, Hellman, Rosenberg. Cancer: Principles & Practice of Oncology, 11ª ed., 2019 — capítulo de genética do câncer hereditário.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "National Comprehensive Cancer Network (NCCN). Guidelines for Genetic/Familial High-Risk Assessment: Breast, Ovarian, and Pancreatic; and Colorectal — edições mais recentes disponíveis.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "UpToDate",
+      "citacao": "UpToDate — tópicos de Síndrome de Lynch, mutações BRCA1/2, Síndrome de Li-Fraumeni e Polipose Adenomatosa Familiar, versão mais recente disponível.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "OMIM (Online Mendelian Inheritance in Man) — entradas de Síndrome de Lynch, BRCA1/BRCA2, Li-Fraumeni e Polipose Adenomatosa Familiar.",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "procedencia": {
+    "gerado_por": "agente-produtor-anima-s9-onco-01",
+    "data_geracao": "2026-07-06",
+    "revisado_por": null,
+    "data_revisao": null,
+    "nivel_confianca": "estudo"
+  },
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Ter mutação BRCA1/2 (ou qualquer mutação de síndrome hereditária, exceto PAF) significa que o câncer é destino certo",
+      "correcao": "Mutação germinativa eleva substancialmente a probabilidade de câncer ao longo da vida, mas não determina o destino individual — existem portadores que nunca desenvolvem o câncer associado. A exceção parcial é a Polipose Adenomatosa Familiar não tratada, onde o número absurdo de pólipos simultâneos torna a progressão estatisticamente quase certa, mas mesmo assim por acúmulo de milhares de chances independentes, não por certeza mecanística determinística.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "A maioria dos cânceres é hereditária",
+      "correcao": "A esmagadora maioria dos cânceres é esporádica, decorrente de mutações somáticas acumuladas ao longo da vida sem mutação germinativa subjacente. As síndromes hereditárias respondem por uma fração minoritária de cada tipo de câncer, o que justifica testar genética apenas diante de padrão de suspeita concreto, não como triagem universal.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "BRCA1/2 só aumentam risco de câncer de mama e ovário, restritos a mulheres",
+      "correcao": "BRCA1/2 também elevam risco de câncer de próstata e pâncreas, e a transmissão ocorre igualmente por via paterna — um homem portador pode não desenvolver os cânceres mais associados ao sexo feminino, mas transmite a mutação com a mesma probabilidade de 50% e carrega risco aumentado de próstata e, mais raramente, mama masculina.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Diante de suspeita de síndrome hereditária, o correto é solicitar o teste genético diretamente, sem aconselhamento genético prévio",
+      "correcao": "O aconselhamento genético precede o teste molecular por cumprir funções que o teste isolado não cumpre: construir heredograma detalhado, preparar o paciente para implicações psicológicas e familiares do resultado, e orientar sobre a relevância do resultado para parentes em risco. Pular essa etapa é uma falha evitável comum na condução clínica.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "mutação germinativa",
+      "termo_es": "mutación germinal",
+      "termo_en": "germline mutation",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "aconselhamento genético",
+      "termo_es": "asesoramiento genético",
+      "termo_en": "genetic counseling",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "cirurgia redutora de risco",
+      "termo_es": "cirugía de reducción de riesgo",
+      "termo_en": "risk-reducing surgery",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "instabilidade de microssatélites",
+      "termo_es": "inestabilidad de microsatélites",
+      "termo_en": "microsatellite instability",
+      "abreviatura": "MSI"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-06",
+      "autor": "agente-produtor-anima-s9-onco-01",
+      "mudanca": "Criação do bloco completo",
+      "motivo": "Produção seguindo blueprint curricular do Semestre 9 — Oncologia. Bloco-folha que sucede s9-onco-01-005 (fatores de risco modificáveis), mudando o eixo para fatores de risco não modificáveis/hereditários. Re-escopo explícito absorvendo o ângulo clínico do antigo bloco 'Genes de Reparo/Instabilidade Genômica', cuja base molecular permanece em s4-patol1-07-034."
+    }
+  ],
+  "_interna": {
+    "nota_producao": "Bloco-folha, filho direto de s9-onco-01-000, sucedendo s9-onco-01-005 (epidemiologia e fatores de risco modificáveis). Reconhece explicitamente a transição de eixo na abertura: de fatores de risco que o paciente pode mudar para os que ele não pode. Absorve o ângulo clínico do antigo bloco de patol1 de Genes de Reparo/Instabilidade Genômica, deixando a base molecular (MMR, MSI, fenótipo mutador) intacta em s4-patol1-07-034 e trazendo aqui apenas a consequência acionável: síndromes nomeadas, critérios de suspeita, teste, rastreamento, cirurgia redutora de risco e ligação a imunoterapia.",
+    "granularidade_check": "✓ Um tema = um bloco. Tema é: 'síndromes de câncer hereditário e aconselhamento genético — a consequência clínica acionável do risco não modificável' — não repete mecanismo molecular de MMR/MSI (permanece em patol1) nem entra em detalhe de conduta cirúrgica técnica ou protocolo farmacológico de inibidor de PARP (fica em blocos futuros de Cirurgia Oncológica e Farmacologia Oncológica).",
+    "continuidade_com_pai_e_irmao": "✓ Abertura reconhece explicitamente o bloco irmão anterior (fatores de risco modificáveis) e faz a ponte lógica para fatores de risco não modificáveis/hereditários, conforme Regra 2 da tarefa. Reconhece o bloco pai (cascata clínica geral, incluindo menção original a BRCA1/2 e genética clínica) como base necessária, sem repeti-lo.",
+    "checklist_8_etapas": "✓ POR QUE EXISTE (por que mutação germinativa pesa tanto quanto exposição ambiental prolongada) → COMO SE RESOLVE (reconhecimento de padrão de alerta antes do teste) → DO QUE É FEITO (genes específicos de cada síndrome: MLH1/MSH2/MSH6/PMS2, BRCA1/2, TP53, APC) → COMO FUNCIONA (mecanismo de 'uma cópia já perdida, falta apenas uma' aplicado a cada síndrome) → COM O QUE SE ARTICULA (conexões com Farmacologia/PARP, Ginecologia/vigilância, imunoterapia já estudada) → NOME+ETIMOLOGIA (Síndrome de Lynch epônimo, BRCA acrônimo) → ANALOGIA (trava de segurança quebrada de fábrica em todas as portas do prédio, com mapeamento explícito) → IMAGEM (heredograma, comparação uma-versus-duas-mutações, fluxograma de conduta, painel comparativo das quatro síndromes).",
+    "verificacoes_pendentes": "Valores percentuais exatos de risco cumulativo de câncer em portadores de BRCA1/2 foram marcados com [⚠️ VERIFICAR] em vez de citados como número fixo, seguindo Regra 4 da tarefa e Princípio 5 da Filosofia — o bloco descreve direção e magnitude relativa (risco substancialmente elevado) sem afirmar cifra exata não verificada. Imagens marcadas como 'pendente' aguardando geração via prompt_ia. Nível de confiança mantido em 'estudo' e estado_ciclo_vida em 'rascunho' até revisão humana e checagem cross-fonte."
+  }
+}

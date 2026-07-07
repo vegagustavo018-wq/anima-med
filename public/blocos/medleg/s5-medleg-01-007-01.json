@@ -10,43 +10,350 @@
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
-      "medleg",
-      "esqueleto"
+      "declaração-de-óbito",
+      "causa-básica-de-morte",
+      "cadeia-de-causas",
+      "sim",
+      "medleg"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "subtitulo": "Por que \"parada cardiorrespiratória\" não é uma causa de morte válida?"
   },
   "resumo_conciso": "Causa básica, intermediária, imediata, erro comum de causa terminal",
-  "narrativa": [],
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "Por que não basta escrever 'o coração parou'?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Todo mundo que morre, sem exceção, morre porque o coração para de bater ou a respiração cessa — isso é apenas a descrição fisiológica do momento final, não uma explicação de por que a morte aconteceu. Se a Declaração de Óbito registrasse só isso, o Brasil inteiro teria a mesma causa de morte, e o Sistema de Informações sobre Mortalidade (SIM) ficaria cego: não saberia distinguir uma morte por câncer de pulmão de uma por infarto ou por hemorragia pós-trauma. O sistema de saúde pública precisa de uma resposta anterior a essa parada, a doença ou lesão que desencadeou tudo, porque é sobre essa causa de fundo que se constroem políticas de prevenção, alocação de recursos e vigilância epidemiológica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o médico resolve isso, sem ainda nomear a técnica?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é obrigar o preenchimento de uma sequência de linhas, cada uma respondendo a uma pergunta diferente: o que matou o paciente no instante final, o que causou esse evento final, e o que deu origem a tudo isso lá no começo. O raciocínio correto se constrói de trás para frente: o médico primeiro pensa no evento mais próximo da morte, depois recua etapa por etapa até a doença ou lesão original, e só então inverte a ordem ao escrever no papel — porque a declaração exige que a linha de baixo mostre a causa mais antiga e as linhas de cima mostrem os elos mais recentes, terminando na causa terminal. É esse recuo mental, do efeito para a origem, que separa um preenchimento tecnicamente correto de um simples registro do óbvio."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De que partes é feita essa cadeia?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A cadeia tem três elos nomeados e um espaço reservado para elos intermediários adicionais quando necessário. A causa terminal (ou imediata) é o evento fisiológico final que precede a morte por segundos ou minutos — parada cardiorrespiratória, choque séptico, falência de múltiplos órgãos. A causa intermediária é a complicação que liga a doença original ao desfecho final — pode haver uma ou várias, em sequência. A causa básica é a doença, lesão ou circunstância violenta que deu início a toda a cadeia de eventos que terminou em morte; é ela, e somente ela, que alimenta as estatísticas oficiais de mortalidade, porque é a variável que permite comparar, por exemplo, quantas mortes o país teve por diabetes versus quantas teve por acidente de trânsito."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esses três elos funcionam juntos na prática do preenchimento?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Tome um paciente diabético de longa data que desenvolve uma úlcera no pé, evolui com infecção não controlada, entra em sepse e morre de choque séptico. A causa terminal é o choque séptico, porque é o evento fisiológico dos instantes finais. A causa intermediária é a infecção do pé diabético (podendo-se detalhar ainda mais, com uma linha para a úlcera e outra para a infecção, se o médico julgar necessário). A causa básica é o diabetes mellitus, porque sem ele a úlcera não teria surgido e a cadeia inteira não existiria. Se o médico escrevesse apenas 'choque séptico' na declaração, o SIM registraria essa morte sem nenhuma menção ao diabetes — e a estatística nacional de mortalidade por diabetes ficaria subestimada, mesmo essa sendo, de fato, a doença que matou o paciente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Qual é o erro que mais compromete essa lógica, e por que ele é tão comum?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O erro clássico é preencher a Declaração de Óbito apontando apenas a causa terminal — mais frequentemente 'parada cardiorrespiratória' — como se ela sozinha explicasse a morte, deixando as linhas de causa intermediária e causa básica em branco ou repetindo a mesma informação de forma redundante. Esse erro é comum porque a parada cardiorrespiratória é, de fato, verdadeira em praticamente qualquer óbito, e por isso parece uma resposta segura e suficiente para um médico apressado ou pouco treinado no preenchimento formal da DO. O problema é que essa afirmação é ao mesmo tempo verdadeira e vazia: ela não diz nada sobre por que aquele paciente específico morreu, e é exatamente essa informação — a causa básica — que o SIM precisa para gerar as taxas de mortalidade por doença que orientam a saúde pública do país."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com que outros sistemas essa cadeia se articula?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A causa básica de morte, extraída dessa cadeia, alimenta diretamente o Sistema de Informações sobre Mortalidade (SIM) do Ministério da Saúde, que por sua vez gera os indicadores oficiais de mortalidade por causa usados em epidemiologia, planejamento de políticas públicas e comparações internacionais via CID (Classificação Internacional de Doenças) — cada causa básica é convertida em um código CID, e é esse código, não o texto livre, que entra nas estatísticas nacionais. Articula-se também com a auditoria de qualidade da própria DO: hospitais e serviços de vigilância epidemiológica frequentemente revisam declarações mal preenchidas, solicitando complementação ao médico signatário quando a cadeia de causas está incompleta ou inconsistente, exatamente para proteger a confiabilidade dos dados de mortalidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vêm os nomes dessas três causas?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "\"Causa básica\" traduz o conceito da OMS de underlying cause of death — underlying, do inglês, significa literalmente \"que está por baixo\", reforçando a ideia de que essa causa sustenta toda a cadeia, mesmo aparecendo escrita na linha mais inferior do formulário. \"Causa terminal\" vem do latim terminalis (relativo ao fim, ao limite) — é o marco que fecha a sequência. \"Causa intermediária\" carrega o próprio sentido do latim intermedius (que está no meio), papel de elo de ligação entre a origem e o desfecho. Juntas, essas três palavras descrevem uma arquitetura temporal: base, meio e fim de um mesmo processo biológico único."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Existe uma imagem cotidiana que ajude a fixar essa lógica?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pense na cadeia de causas como a reconstituição de um incêndio que destruiu um prédio. A causa terminal é a \"queda da estrutura\" — o evento final e visível que qualquer um reconhece. A causa intermediária é \"o fogo se espalhou pelos andares superiores porque o sistema de contenção falhou\" — o elo que liga origem a desfecho. A causa básica é \"curto-circuito elétrico em uma instalação irregular\" — o gatilho original, sem o qual nada mais teria acontecido. Um perito de incêndio que registrasse apenas \"o prédio caiu\" no laudo estaria tecnicamente certo e completamente inútil: ninguém saberia se o problema foi elétrico, estrutural ou criminoso, e nenhuma prevenção futura seria possível. Onde a analogia quebra: no incêndio, a causa básica costuma ser óbvia à perícia física do local; na Declaração de Óbito, a causa básica muitas vezes só existe no histórico clínico do paciente, na cabeça do médico assistente — por isso ela pode desaparecer do registro se ninguém a escrever deliberadamente."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Como preencher a cadeia de causas do caso do pé diabético",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Passo 1",
+          "explicacao": "Identificar o evento fisiológico final que precedeu a morte (causa terminal): Choque séptico."
+        },
+        {
+          "numero": 2,
+          "titulo": "Passo 2",
+          "explicacao": "Recuar e perguntar 'o que causou esse evento final?' (causa intermediária): Infecção de úlcera em pé diabético."
+        },
+        {
+          "numero": 3,
+          "titulo": "Passo 3",
+          "explicacao": "Recuar novamente até a origem de tudo (causa básica): Diabetes mellitus tipo 2 de longa data."
+        },
+        {
+          "numero": 4,
+          "titulo": "Passo 4",
+          "explicacao": "Inverter a ordem ao escrever no formulário: a linha mais baixa recebe a causa básica (diabetes mellitus), a linha do meio recebe a causa intermediária (infecção de úlcera), e a linha superior recebe a causa terminal (choque séptico)."
+        },
+        {
+          "numero": 5,
+          "titulo": "Passo 5",
+          "explicacao": "Conferir que a causa básica escolhida é codificável em CID e que, sozinha, explica plausivelmente o início de toda a cadeia — se não explicar, recuar mais um elo."
+        }
+      ]
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Os três elos da cadeia de causas de óbito",
+      "colunas": [
+        "Elo",
+        "O que responde",
+        "Exemplo (pé diabético)",
+        "Alimenta o SIM diretamente?"
+      ],
+      "linhas": [
+        {
+          "Elo": "Causa terminal (imediata)",
+          "O que responde": "Qual foi o evento fisiológico dos instantes finais?",
+          "Exemplo (pé diabético)": "Choque séptico",
+          "Alimenta o SIM diretamente?": "Não"
+        },
+        {
+          "Elo": "Causa intermediária",
+          "O que responde": "O que ligou a doença de base a esse desfecho final?",
+          "Exemplo (pé diabético)": "Infecção de úlcera em pé diabético",
+          "Alimenta o SIM diretamente?": "Não"
+        },
+        {
+          "Elo": "Causa básica",
+          "O que responde": "Qual doença ou lesão original deu início a toda a cadeia?",
+          "Exemplo (pé diabético)": "Diabetes mellitus tipo 2",
+          "Alimenta o SIM diretamente?": "Sim — é o dado codificado em CID e usado nas estatísticas oficiais"
+        }
+      ]
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s5-medleg-01-007",
+        "titulo": "Declaração de Óbito como Documento Médico-Legal",
+        "disciplina": "Medicina Legal",
+        "semestre": 5,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já entender o que é a DO, quem tem competência para preenchê-la e a distinção entre morte natural e externa antes de mergulhar no detalhamento técnico de como a cadeia de causas é construída dentro dela."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "disciplina": "Epidemiologia",
+        "semestre_futuro": 6,
+        "topico": "Sistema de Informações sobre Mortalidade (SIM) e taxas de mortalidade por causa",
+        "mecanismo_conexao": "A causa básica extraída corretamente da cadeia de causas é o dado bruto, codificado em CID, que compõe todas as taxas de mortalidade específica por doença usadas em vigilância epidemiológica e planejamento de saúde pública."
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "disciplina": "Clínica Médica",
+        "semestre_futuro": 6,
+        "topico": "Raciocínio de complicações em doenças crônicas (ex.: diabetes, cardiopatias)",
+        "mecanismo_conexao": "O mesmo raciocínio de reconstituir a cadeia causal — doença de base gerando complicações sucessivas até o desfecho fatal — é o raciocínio clínico usado para prever e prevenir complicações em pacientes vivos com doenças crônicas."
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "disciplina": "Medicina Legal",
+        "semestre_futuro": 6,
+        "topico": "Necropsia médico-legal e concausas em morte violenta",
+        "mecanismo_conexao": "A lógica de causa básica versus causa terminal reaparece, com maior complexidade jurídica, quando se discutem concausas (ex.: uma lesão leve que evolui para óbito por complicação) na apuração pericial de nexo causal no IML."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s5-medleg-01-007-01-fc01",
+      "pergunta": "Por que registrar apenas 'parada cardiorrespiratória' como causa de morte na Declaração de Óbito é considerado um erro grave?",
+      "resposta": "Porque é verdadeiro para praticamente qualquer óbito e por isso não informa nada sobre a doença ou lesão que efetivamente matou o paciente; sem a causa básica, o SIM perde a informação necessária para gerar estatísticas de mortalidade por doença.",
+      "tipo": "armadilha",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": [
+        "declaração-de-óbito",
+        "causa-básica",
+        "armadilha",
+        "medleg"
+      ]
+    },
+    {
+      "card_id": "s5-medleg-01-007-01-fc02",
+      "pergunta": "Defina causa básica, causa intermediária e causa terminal de morte.",
+      "resposta": "Causa básica: a doença ou lesão original que deu início a toda a cadeia de eventos fatais. Causa intermediária: a complicação que liga a causa básica ao desfecho final. Causa terminal (imediata): o evento fisiológico dos instantes finais que precede a morte.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": [
+        "cadeia-de-causas",
+        "causa-básica",
+        "medleg"
+      ]
+    },
+    {
+      "card_id": "s5-medleg-01-007-01-fc03",
+      "pergunta": "Em que ordem o médico deve raciocinar mentalmente, e em que ordem ele escreve no formulário da DO?",
+      "resposta": "Raciocina do efeito para a origem: primeiro pensa na causa terminal, depois recua até a causa intermediária, e por fim até a causa básica. Escreve na ordem inversa no papel: a linha mais baixa recebe a causa básica, e as linhas superiores recebem os elos mais recentes até a causa terminal no topo.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "cadeia-de-causas",
+        "declaração-de-óbito",
+        "medleg"
+      ]
+    },
+    {
+      "card_id": "s5-medleg-01-007-01-fc04",
+      "pergunta": "Qual dado da cadeia de causas é efetivamente usado nas estatísticas oficiais de mortalidade do SIM, e por quê?",
+      "resposta": "A causa básica, porque ela é convertida em código CID e é essa variável, não a causa terminal, que permite comparar mortalidade por doença específica (ex.: diabetes) entre regiões e ao longo do tempo.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 2,
+      "tags": [
+        "sim",
+        "causa-básica",
+        "cid",
+        "medleg"
+      ]
+    },
+    {
+      "card_id": "s5-medleg-01-007-01-fc05",
+      "pergunta": "Na analogia do incêndio, o que corresponde à causa básica, e onde a analogia quebra?",
+      "resposta": "A causa básica corresponde ao curto-circuito elétrico original que iniciou tudo. A analogia quebra porque, no incêndio, a causa básica costuma ser evidente à perícia física do local, enquanto na DO ela existe apenas no histórico clínico do médico e pode desaparecer do registro se ninguém a escrever deliberadamente.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "analogia",
+        "causa-básica",
+        "medleg"
+      ]
+    },
+    {
+      "card_id": "s5-medleg-01-007-01-fc06",
+      "pergunta": "De onde vem o termo 'causa básica' e o que a palavra em inglês (underlying cause) revela sobre o conceito?",
+      "resposta": "É a tradução do conceito da OMS 'underlying cause of death'; underlying significa 'que está por baixo', reforçando que essa causa sustenta toda a cadeia, mesmo sendo escrita na linha mais inferior do formulário da DO.",
+      "tipo": "etimologia",
+      "dificuldade": 1,
+      "nivel_alvo": 1,
+      "tags": [
+        "etimologia",
+        "causa-básica",
+        "medleg"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s5-medleg-01-007-01-caso01",
+      "titulo": "O diabetes que sumiu da estatística",
+      "apresentacao": "Paciente de 68 anos, diabético há 15 anos, é internado por infecção em úlcera de pé diabético, evolui com sepse, choque séptico e óbito em 4 dias de internação. O médico plantonista, sem acesso ao prontuário completo e sem tempo para revisar o histórico, preenche a Declaração de Óbito escrevendo apenas 'parada cardiorrespiratória' na linha de causa e deixa as demais linhas em branco.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Diabetes mellitus tipo 2 de longa data, mal controlado."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Microvasculatura e nervos periféricos do pé, predispondo a úlcera de difícil cicatrização."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Infecção da úlcera evolui sem contenção para sepse sistêmica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Hipotensão refratária, taquicardia, confusão mental — quadro de choque séptico."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Óbito registrado no SIM apenas como 'parada cardiorrespiratória, causa indeterminada', sem nenhuma menção ao diabetes; a morte não entra na estatística nacional de mortalidade por diabetes, subestimando o real impacto da doença na saúde pública."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra exatamente o erro clássico descrito no bloco: preencher apenas a causa terminal, sem recuar até a causa básica, compromete a validade epidemiológica do dado de mortalidade.",
+      "disciplinas_relacionadas": [
+        "Medicina Legal",
+        "Epidemiologia",
+        "Clínica Médica"
+      ],
+      "diagnostico_revelado": "Óbito por choque séptico secundário a infecção de pé diabético, causa básica: diabetes mellitus tipo 2.",
+      "tratamento_resumido": "Não se trata de um caso terapêutico, mas de correção de registro: a DO deveria ser complementada ou retificada junto ao SVO/vigilância epidemiológica para incluir a cadeia completa (choque séptico – infecção de úlcera em pé diabético – diabetes mellitus tipo 2), restaurando a validade estatística do óbito no SIM."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s5-medleg-01-007-01-img01",
+        "url": null,
+        "prompt_ia": "Ilustração vetorial minimalista, estilo editorial médico moderno, paleta azul-marinho e dourado sóbrio. Um diagrama vertical de três blocos empilhados como uma pequena torre: no topo um bloco menor rotulado esquematicamente com um ícone de coração com onda plana (causa terminal), no meio um bloco com ícone de elo de corrente (causa intermediária), na base um bloco maior e mais largo, servindo de fundação, com ícone de semente ou raiz (causa básica). Setas verticais finas ligando os três blocos de baixo para cima. Fundo branco, linhas limpas, sem texto, estilo infográfico acadêmico.",
+        "status": "pendente",
+        "origem": "esquema",
+        "titulo": "A torre da cadeia de causas: da base (causa básica) ao topo (causa terminal)",
+        "descricao": "Diagrama esquemático mostrando a cadeia de causas de óbito como uma estrutura de três níveis, reforçando que a causa básica é o alicerce de onde tudo parte, mesmo aparecendo na linha inferior do formulário."
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s5",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-5 (pipeline ANIMA)",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "manual-tecnico",
+      "citacao": "Ministério da Saúde / Conselho Federal de Medicina / Centro Brasileiro de Classificação de Doenças. A Declaração de Óbito: documento necessário e importante, 3ª ed., 2011 — instruções de preenchimento da cadeia de causas (linhas a, b, c e Parte II).",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "manual-tecnico",
+      "citacao": "Organização Mundial da Saúde (OMS). CID-10, Volume 2 — Manual de Instruções, definições de causa básica de morte (underlying cause of death) e regras de seleção e modificação.",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro-texto",
+      "citacao": "França, G. V. de. Medicina Legal, 11ª ed. Rio de Janeiro: Guanabara Koogan, 2017 — Capítulo sobre Tanatologia Forense, preenchimento técnico da Declaração de Óbito.",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "tecnica pericial",
     "correlacao clinica"

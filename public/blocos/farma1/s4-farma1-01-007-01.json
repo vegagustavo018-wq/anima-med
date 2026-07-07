@@ -2,53 +2,327 @@
   "resumo_id": "s4-farma1-01-007-01",
   "no_pai_id": "s4-farma1-01-007",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-01-001-01"
+  ],
   "metadata": {
     "titulo": "Biodisponibilidade",
+    "subtitulo": "De cada miligrama que o paciente engole, quanto realmente entra na circulação?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "biodisponibilidade",
+      "auc",
+      "primeira-passagem",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Fração que atinge circulação; efeito de primeira passagem; AUC",
-  "narrativa": [],
+  "resumo_conciso": "Biodisponibilidade é a fração de uma dose administrada que alcança, intacta, a circulação sistêmica. O bloco-pai já mostrou que essa fração é uma das duas variáveis que transformam farmacocinética em prescrição; este bloco detalha como ela é medida. A ferramenta é a área sob a curva (AUC) de concentração plasmática ao longo do tempo: quanto maior a AUC de uma dose, mais fármaco total circulou. A via intravenosa entrega 100% da dose direto ao sangue, sem perdas — por isso sua AUC serve de referência absoluta. Qualquer outra via é comparada a ela: biodisponibilidade é a razão entre a AUC daquela via e a AUC intravenosa, ajustada pela dose. Já foi visto, ao estudar a via oral, que a maior causa de biodisponibilidade incompleta é o efeito de primeira passagem hepática — o fármaco absorvido pelo intestino é parcialmente metabolizado pelo fígado antes de circular livremente; mas absorção incompleta e degradação no tubo digestivo também descontam dessa fração. Uma biodisponibilidade baixa não é falha do fármaco: é informação que, incorporada ao cálculo da dose, é o que permite ao mesmo princípio ativo funcionar em doses tão diferentes por vias diferentes.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um comprimido de 100 mg não coloca 100 mg do fármaco no sangue do paciente. Uma fração se perde no caminho — não absorvida, destruída antes de circular, retida no primeiro órgão que encontra pela frente. A pergunta que fecha essa lacuna entre a dose escrita na caixa e o que realmente chega à circulação é exatamente o que este bloco resolve: como medir, em número, essa fração."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que essa medida precisa existir"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sem uma forma de quantificar quanto de uma dose realmente circula, duas decisões clínicas ficam impossíveis. A primeira é comparar vias de administração do mesmo fármaco: sem número, não há como saber quanto aumentar a dose oral para compensar o que se perde em relação à injeção. A segunda é comparar formulações diferentes do mesmo princípio ativo — um genérico e seu medicamento de referência podem ter a mesma dose nominal na embalagem e ainda assim entregar quantidades diferentes de fármaco ao corpo, se um for absorvido pior que o outro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sem essa medida, a prescrição vira aposta: dobra-se a dose oral 'porque parece que precisa de mais', sem saber se o dobro é exagero ou ainda insuficiente. A biodisponibilidade fecha essa lacuna transformando uma impressão clínica em uma fração mensurável."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: biodisponibilidade existe porque prescrever exige saber, em número, quanto de uma dose administrada realmente chega à circulação — sem esse número, ajustar dose entre vias ou entre formulações é chute."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se mede essa fração"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A lógica é comparativa. Administra-se a mesma dose do mesmo fármaco por duas vias diferentes num mesmo indivíduo (ou em grupos comparáveis) e mede-se, ao longo do tempo, a concentração do fármaco no plasma. Uma via — a intravenosa — deposita o fármaco direto na circulação, sem qualquer barreira de absorção pela frente: nada se perde, e por isso ela é sempre tratada como a referência de 100% de biodisponibilidade. Todas as outras vias são medidas contra essa referência."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A comparação não usa um único valor de concentração, porque a concentração varia o tempo todo — sobe depois da absorção, desce com a eliminação. O que se precisa é de uma medida que capture toda a exposição do organismo ao fármaco ao longo do tempo inteiro, do início ao fim. Essa medida é a área sob a curva."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Biodisponibilidade não é medida por um ponto da curva de concentração — é medida pela **área sob a curva inteira (AUC)**. A via intravenosa define a AUC de referência (100%); qualquer outra via é comparada a ela."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita essa comparação"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A AUC (do inglês *area under the curve*) é literalmente a área geométrica sob o gráfico de concentração plasmática do fármaco ao longo do tempo. Cada ponto dessa curva reflete quanto fármaco está circulando naquele instante; a área inteira, integrada do momento da administração até o fármaco ser totalmente eliminado, reflete a exposição total do organismo àquela dose — não o pico, não a velocidade, mas o total acumulado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A biodisponibilidade (representada pela letra F) é a razão entre a AUC obtida por uma via qualquer e a AUC obtida pela via intravenosa, com as duas doses igualadas matematicamente quando são diferentes. O resultado é uma fração entre 0 e 1 — ou uma porcentagem entre 0% e 100% — que nunca ultrapassa o valor da referência intravenosa, porque nenhuma outra via consegue entregar mais fármaco à circulação do que entregá-lo direto no sangue."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] Na prática laboratorial, a AUC é estimada por métodos numéricos (como a regra trapezoidal) a partir de amostras de sangue colhidas em intervalos de tempo definidos após a dose — não é uma medida contínua e perfeita, e o número de amostras e o tempo total de coleta influenciam a precisão da estimativa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em movimento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere o mesmo fármaco administrado, em dois momentos diferentes, por via intravenosa e por via oral, na mesma dose. Por via intravenosa, a concentração plasmática salta imediatamente ao máximo (todo o fármaco já está no sangue) e depois só declina, conforme o corpo elimina o que foi injetado — a curva inteira, sob esse declínio, define a AUC de referência."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por via oral, a concentração começa em zero, sobe enquanto o fármaco é absorvido pelo intestino, atinge um pico mais baixo e mais tardio que o da via intravenosa, e então declina. Se toda a dose absorvida chegasse à circulação sem perdas, a área sob essa curva oral seria igual à da curva intravenosa — só a forma seria diferente, não o total. Mas, como já visto ao estudar a via oral, uma fração do fármaco é retida pelo epitélio intestinal e, principalmente, metabolizada pelo fígado no efeito de primeira passagem, antes de alcançar a circulação sistêmica. Essa fração perdida reduz a área sob a curva oral em relação à intravenosa — e é exatamente essa redução, expressa como razão entre as duas áreas, que a biodisponibilidade quantifica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um fármaco que perde 70% da dose na primeira passagem hepática terá uma AUC oral próxima de 30% da AUC intravenosa — uma biodisponibilidade oral de aproximadamente 0,3 (ou 30%). É esse número, não uma estimativa vaga, que orienta o cálculo de quanto aumentar a dose oral para atingir a mesma exposição terapêutica que a via intravenosa alcançaria com uma dose bem menor."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🌊",
+      "conteudo": "Pense em duas represas enchendo o mesmo reservatório a partir da mesma quantidade de água liberada rio acima. Uma represa (**via intravenosa**) recebe a água por um canal direto, sem vazamento nenhum — toda a água liberada chega ao reservatório, e o nível final desse reservatório é a referência de comparação. A outra represa (**via oral**) recebe a água por um canal de terra, cheio de fendas por onde parte da água escapa antes de chegar (**absorção incompleta e primeira passagem**). O **nível final da água represada** em cada caso é o equivalente da AUC — não importa a velocidade com que a água chegou, importa quanto ficou represado no total. A **biodisponibilidade** é a razão entre o nível da represa de terra e o nível da represa de canal direto. A analogia quebra num ponto: a água que vaza no canal de terra simplesmente se perde no solo, enquanto o fármaco perdido na primeira passagem não desaparece — é transformado em metabólitos, que podem ou não ter atividade biológica própria."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a biodisponibilidade se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse conceito formaliza, em número, o que já foi descrito qualitativamente ao estudar a via oral: o efeito de primeira passagem hepática é a principal razão pela qual a biodisponibilidade oral de muitos fármacos fica abaixo de 100%, e a AUC é a ferramenta que transforma essa perda qualitativa em fração calculável. Ele também é a base direta para comparar formulações diferentes do mesmo fármaco — quando duas apresentações (um genérico e seu medicamento de referência, por exemplo) precisam demonstrar AUC e pico de concentração comparáveis para serem consideradas equivalentes na prática clínica, o que pertence a um bloco específico sobre bioequivalência. E é também o insumo direto para o cálculo do estado de equilíbrio em doses repetidas, já que a quantidade de fármaco que efetivamente se acumula a cada dose depende diretamente da fração biodisponível daquela dose."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, é a biodisponibilidade que explica por que a bula de certos fármacos traz doses orais muitas vezes maiores que as doses injetáveis do mesmo princípio ativo — e por que trocar a via de administração de um paciente internado, sem recalcular a dose pela biodisponibilidade da nova via, é um erro de prescrição capaz de causar subdose ou toxicidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "biodisponibilidade",
+      "origem": "do grego bíos (vida) + o latim disponibilis (que se pode dispor, tornar disponível)",
+      "significado": "literalmente, 'o quanto fica disponível para o organismo vivo' — a fração de uma dose administrada que se torna acessível à circulação sistêmica",
+      "explicacao": "O termo se consolidou na farmacologia clínica do século XX quando ficou claro que medir a dose administrada não bastava para prever o efeito: era preciso medir quanto efetivamente 'ficava disponível' para agir sobre o corpo vivo. A ferramenta que tornou essa medida possível — a área sob a curva de concentração plasmática — surgiu junto, como o método prático de quantificar aquilo que o nome já apontava conceitualmente: presença real no organismo, não presença nominal na receita."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se dois fármacos tivessem a mesma biodisponibilidade (mesma fração da dose absorvida), eles produziriam necessariamente o mesmo efeito terapêutico na mesma dose?",
+      "resposta": "Não necessariamente. A biodisponibilidade descreve apenas a fração da dose que chega à circulação — quanto, no total, entrou. Ela não descreve a velocidade com que isso acontece (dois fármacos podem ter a mesma AUC e picos de concentração muito diferentes, um rápido e alto, outro lento e achatado), nem descreve o que o fármaco faz depois de circular — sua afinidade pelo alvo, sua distribuição pelos tecidos, sua meia-vida de eliminação. Biodisponibilidade é uma medida de quantidade que chega, não de efeito que se produz. Dois fármacos podem entrar igualmente no corpo e ainda assim agir de forma completamente diferente sobre ele — o que lembra que farmacocinética (o que o corpo faz com o fármaco) e farmacodinâmica (o que o fármaco faz com o corpo) respondem perguntas diferentes, mesmo quando uma alimenta a outra."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "AUC como medida da biodisponibilidade",
+      "descricao": "Gráfico de concentração plasmática (eixo Y) por tempo (eixo X) sobrepondo duas curvas: uma curva de via intravenosa, que começa no pico máximo e declina suavemente, com a área sob ela inteiramente sombreada e rotulada 'AUC intravenosa = referência (100%)'; e uma curva de via oral, que começa em zero, sobe até um pico mais baixo e tardio, e declina de forma semelhante, com a área sob ela sombreada em tom diferente e rotulada 'AUC oral'. Uma chave/fórmula simples abaixo do gráfico mostra 'Biodisponibilidade (F) = AUC via oral ÷ AUC via intravenosa'. Estilo esquemático de livro didático farmacológico, cores diferenciando as duas áreas, legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Gráfico de linha único com eixo Y rotulado 'concentração plasmática' e eixo X rotulado 'tempo', mostrando duas curvas sobrepostas: (1) curva azul que inicia no ponto mais alto do eixo Y logo no tempo zero e declina suavemente em curva exponencial, com a área abaixo dela preenchida em azul claro semitransparente e rotulada 'AUC via intravenosa — referência (100%)'; (2) curva laranja que inicia em zero, sobe gradualmente até um pico visivelmente mais baixo que o pico da curva azul e alcançado mais tarde no eixo X, depois declina de forma parecida, com a área abaixo dela preenchida em laranja claro semitransparente e rotulada 'AUC via oral'. Abaixo do gráfico, uma caixa de fórmula simples com texto 'Biodisponibilidade (F) = AUC oral / AUC intravenosa'. Legendas e eixos em português, cores suaves e distintas, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-007",
+        "titulo": "Regimes de Dose e Biodisponibilidade (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha a primeira das duas perguntas que o pai apresenta como necessárias para transformar farmacocinética em prescrição: quanto da dose nominal realmente chega à circulação. Sem a visão panorâmica do pai, o conceito de biodisponibilidade perderia o contexto de por que ele importa junto ao estado de equilíbrio."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-01-007-04",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Bioequivalência entre medicamento de referência e genérico",
+        "mecanismo_conexao": "A bioequivalência é definida diretamente em termos de comparação estatística de AUC e concentração máxima entre duas formulações — o mesmo instrumento de medida apresentado aqui, aplicado a um problema regulatório específico.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-001-01",
+        "tipo_relacao": "APROFUNDAMENTO_MUTUO",
+        "explicacao": "Aquele bloco descreveu qualitativamente o efeito de primeira passagem hepática como a principal causa de biodisponibilidade oral incompleta; este bloco fornece a ferramenta quantitativa (AUC) que mede exatamente o tamanho dessa perda."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-007-01-fc01",
+      "pergunta": "Por que a biodisponibilidade é medida pela área sob a curva (AUC) de concentração plasmática, e não por um único valor de concentração, como o pico?",
+      "resposta": "Porque a concentração plasmática varia continuamente ao longo do tempo — sobe durante a absorção, desce com a eliminação — e um único ponto (como o pico) não captura a exposição total do organismo ao fármaco. A AUC integra a curva inteira, do momento da administração até a eliminação completa, refletindo a quantidade total de fármaco que circulou, independentemente da velocidade com que isso aconteceu. É essa medida cumulativa, e não um ponto isolado, que permite comparar quanto de duas doses ou vias diferentes efetivamente chegou à circulação.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "biodisponibilidade",
+        "auc",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-01-fc02",
+      "pergunta": "Um fármaco administrado por via oral produz uma AUC de 30 unidades; a mesma dose, administrada por via intravenosa no mesmo paciente, produz uma AUC de 100 unidades. Calcule a biodisponibilidade oral e explique, em uma frase, o que esse número significa na prática.",
+      "resposta": "Biodisponibilidade (F) = AUC oral ÷ AUC intravenosa = 30 ÷ 100 = 0,3, ou 30%. Isso significa que apenas 30% da dose administrada por via oral efetivamente alcança a circulação sistêmica — os outros 70% se perderam no caminho, tipicamente por absorção incompleta e metabolismo de primeira passagem — e que uma dose oral bem maior que a intravenosa seria necessária para atingir exposição terapêutica equivalente.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "biodisponibilidade",
+        "auc",
+        "calculo"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-01-fc03",
+      "pergunta": "Por que a via intravenosa é sempre usada como referência de 100% de biodisponibilidade, e uma via oral poderia, teoricamente, ultrapassar esse valor?",
+      "resposta": "A via intravenosa é a referência porque deposita o fármaco direto na circulação sistêmica, sem qualquer barreira de absorção pela frente — nenhuma fração se perde antes de circular, por definição. Nenhuma outra via consegue entregar mais fármaco à circulação do que entregá-lo direto no sangue, então nenhuma via não intravenosa pode ultrapassar 100% de biodisponibilidade; no máximo, se iguala a ela quando a absorção e o metabolismo pré-sistêmico forem desprezíveis.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "biodisponibilidade",
+        "via-intravenosa",
+        "auc"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-01-fc04",
+      "pergunta": "Dois fármacos administrados por via oral têm exatamente a mesma biodisponibilidade (mesma AUC relativa à via intravenosa). Isso garante que eles produzirão o mesmo efeito terapêutico na mesma dose?",
+      "resposta": "Não. Biodisponibilidade mede apenas a quantidade total de fármaco que chega à circulação, não a velocidade com que isso acontece (a forma da curva pode ser bem diferente, com picos e tempos até o pico distintos, mesmo com AUC igual) e muito menos o que o fármaco faz depois de circular — afinidade pelo alvo, distribuição tecidual, meia-vida. Dois fármacos podem entrar igualmente no corpo e agir de forma completamente diferente sobre ele: biodisponibilidade responde 'quanto entrou', não 'o que aconteceu depois'.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "biodisponibilidade",
+        "farmacodinamica",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-01-fc05",
+      "pergunta": "Como o conceito de biodisponibilidade, apresentado aqui, se relaciona com o efeito de primeira passagem hepática estudado no bloco sobre via oral?",
+      "resposta": "O efeito de primeira passagem hepática é uma das principais causas qualitativas de biodisponibilidade oral incompleta: o fármaco absorvido pelo intestino é parcialmente metabolizado pelo fígado antes de alcançar a circulação sistêmica. A biodisponibilidade, medida pela razão entre AUC oral e AUC intravenosa, é a ferramenta que quantifica exatamente o tamanho dessa perda — transformando uma explicação mecanística (por que se perde) em um número calculável (quanto se perde), que pode então orientar o ajuste da dose oral.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "biodisponibilidade",
+        "primeira-passagem",
+        "integracao"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-007-01-caso01",
+      "titulo": "Convulsões recorrentes em paciente com epilepsia previamente controlada",
+      "apresentacao": "Mulher de 29 anos, com epilepsia focal controlada há três anos com fenitoína oral em dose estável, é internada após duas crises convulsivas em uma semana — algo que não acontecia desde o início do tratamento. Refere ter tido um quadro de diarreia intensa e vômitos por gastroenterite nos dez dias anteriores, mas manteve os comprimidos de fenitoína no mesmo horário e na mesma dose durante todo o período. Não houve troca de marca do medicamento nem uso de outros fármacos novos. Uma dosagem sérica de fenitoína, colhida na admissão, mostra concentração bem abaixo da faixa terapêutica que a paciente mantinha estável havia anos.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Um episódio de gastroenterite com vômitos e diarreia intensa reduz drasticamente o tempo de contato do comprimido com a mucosa intestinal e pode expelir parte da dose antes da absorção completa, mesmo com a dose nominal permanecendo idêntica à de antes."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A etapa de absorção pela via oral — pré-requisito necessário para que qualquer fração da dose se torne biodisponível — é comprometida pelo trânsito intestinal acelerado e pelos vômitos, reduzindo a fração da dose que efetivamente atravessa o epitélio intestinal e alcança a circulação sistêmica."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A biodisponibilidade efetiva daquela dose cai abaixo do valor habitual da paciente, ainda que a dose nominal, escrita na receita e tomada corretamente, permaneça a mesma. Menos fármaco circulando significa uma área sob a curva (AUC) menor do que a que mantinha o efeito terapêutico estável."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "A concentração plasmática de fenitoína cai abaixo do limiar necessário para suprimir a atividade epiléptica, e a paciente volta a apresentar crises convulsivas — não porque a dose prescrita mudou, mas porque a fração absorvida daquela dose mudou."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Resolvido o quadro gastrointestinal agudo e confirmada a reabsorção normal, a concentração sérica de fenitoína retorna à faixa terapêutica habitual sem necessidade de alterar a dose de manutenção a longo prazo. Em situações de vômitos/diarreia recorrentes em pacientes com fármacos de margem terapêutica estreita, considera-se via alternativa temporária (parenteral) até a absorção oral normalizar."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática clínica, exatamente o que a biodisponibilidade mede: a dose nominal escrita na caixa não é garantia da dose que efetivamente circula. Aqui, a dose administrada não mudou — o que mudou foi a fração absorvida, reduzindo a AUC efetiva mesmo sem qualquer alteração na receita, confirmando que biodisponibilidade é uma variável clínica real, não apenas um conceito teórico de laboratório.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "neurologia",
+        "clinica",
+        "gastroenterologia"
+      ],
+      "diagnostico_revelado": "Recorrência de crises convulsivas por redução aguda e transitória da biodisponibilidade oral da fenitoína, secundária a gastroenterite com vômitos e diarreia.",
+      "tratamento_resumido": "Suporte para a gastroenterite (hidratação, controle de vômitos), manutenção da mesma dose de fenitoína assim que a absorção oral se normaliza, e monitorização sérica até confirmar retorno à faixa terapêutica habitual. Considerar via intravenosa transitória se os vômitos impedirem a absorção oral confiável durante episódios agudos futuros."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-007-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "molecular"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics: Elimination and Time-Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

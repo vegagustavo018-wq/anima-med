@@ -1,54 +1,198 @@
 {
+  "metadata": {
+    "titulo": "Cascata AMPc / PKA",
+    "subtitulo": "Como uma mensagem externa vira uma mudança profunda dentro da célula?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 10,
+    "nivel": "CORE",
+    "tags": [
+      "sinalizacao-celular",
+      "segundo-mensageiro",
+      "AMPc",
+      "PKA",
+      "transducao"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "A sinalização celular exige amplificação. Quando um hormônio ou neurotransmissor se liga a um receptor acoplado à proteína G (GPCR), ele não entra na célula, mas inicia uma cascata. A adenilato ciclase converte ATP em AMP cíclico (AMPc), que atua como um segundo mensageiro. O AMPc, por sua vez, ativa a Proteína Quinase A (PKA), que fosforila proteínas-alvo, alterando o metabolismo celular, a expressão gênica e a função proteica. Este sistema é um exemplo clássico de como a natureza lida com a necessidade de rapidez e sensibilidade biológica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você precisa avisar toda uma cidade sobre um perigo, mas você não pode entrar na cidade; você apenas entrega um envelope para um porteiro na entrada. Esse porteiro, ao ler a mensagem, começa a disparar mil mensageiros internos. Assim é a sinalização por AMP cíclico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a célula precisa desse mensageiro intermediário?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A membrana plasmática é uma barreira seletiva. Muitas moléculas sinalizadoras, como o glucagon ou a adrenalina, são hidrofílicas e não conseguem atravessar a bicamada lipídica. A solução evolutiva foi criar um sistema de 'amplificação de sinal': o primeiro mensageiro (hormônio) liga-se ao receptor, que ativa uma enzima na face interna da membrana."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esta enzima, a adenilato ciclase, pega o ATP — uma moeda energética comum — e o transforma em uma molécula de sinalização: o AMP cíclico. Por que AMPc? Porque é uma molécula pequena, solúvel e que difunde-se rapidamente pelo citosol, atingindo múltiplos alvos simultaneamente."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense em uma rede de distribuição de energia elétrica. O hormônio é o sinal enviado pela central (X). O receptor é o transformador na entrada do bairro (A). A adenilato ciclase é o gerador que cria a corrente (Y). O AMPc é a própria corrente elétrica correndo pelos fios (B). A PKA é um aparelho (como uma lâmpada ou motor) que, ao receber a energia, realiza um trabalho (C). Mapeamento: Hormônio = Comando Central; Adenilato Ciclase = Conversor de sinal; AMPc = Corrente de transmissão; PKA = Maquinário de execução."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O AMPc não é o executor, ele é o ativador do executor. A PKA, quando inativa, é um tetrâmero composto por duas subunidades reguladoras e duas catalíticas. Quando o AMPc se liga às subunidades reguladoras, ele libera as catalíticas, permitindo que elas fosforilem proteínas alvo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire. O que acabamos de ver? O sinal saiu de fora, converteu-se em uma molécula interna (AMPc) e agora essa molécula 'libertou' uma enzima (PKA) para agir. Tudo isso ocorre em milissegundos."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Adenilato Ciclase",
+      "origem": "Grego/Latim",
+      "significado": "Adenil (derivado de Adenina) + Ciclase (enzima que cicla).",
+      "explicacao": "O nome descreve exatamente a sua função: pegar a adenosina monofosfato e fechar um anel cíclico, criando o AMPc."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria se a célula não possuísse a fosfodiesterase?",
+      "resposta": "A fosfodiesterase é a enzima que degrada o AMPc. Sem ela, o sinal nunca seria desligado. A célula permaneceria em estado de ativação constante (como se o alarme estivesse tocando para sempre), levando à exaustão metabólica ou morte celular."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Esquema da cascata AMPc",
+      "descricao": "Diagrama mostrando o receptor GPCR na membrana, a ativação da adenilato ciclase, a conversão de ATP em AMPc e a liberação das subunidades catalíticas da PKA.",
+      "prompt_ia": "Scientific illustration of a cell membrane, GPCR receptor, adenylate cyclase enzyme converting ATP to cyclic AMP (cAMP), cAMP molecules binding to PKA regulatory subunits, releasing catalytic subunits, high detail, clean biological style, vector art, educational, blue and orange color palette.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-05-002-03-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é o papel direto do AMPc na ativação da PKA?",
+      "resposta": "O AMPc liga-se às subunidades reguladoras da PKA, causando uma mudança conformacional que induz a liberação das subunidades catalíticas ativas.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "PKA",
+        "sinalizacao"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-03-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "Se uma toxina (como a do cólera) travar a proteína G na forma ativa, qual o efeito sistêmico na célula?",
+      "resposta": "A adenilato ciclase ficará permanentemente ativa, produzindo níveis altíssimos de AMPc, o que causa secreção excessiva de fluidos e eletrólitos, explicando a diarreia severa.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "toxina",
+        "GPCR"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-03-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença entre o primeiro e o segundo mensageiro?",
+      "resposta": "O primeiro mensageiro é a molécula sinalizadora extracelular (ex: adrenalina). O segundo mensageiro é a molécula intracelular (ex: AMPc) que propaga e amplifica o sinal interno.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "conceito"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-03-fc04",
+      "tipo": "mecanismo",
+      "pergunta": "Como a célula interrompe a sinalização iniciada pelo AMPc?",
+      "resposta": "Através da enzima fosfodiesterase, que hidrolisa o AMPc em 5'-AMP, encerrando sua função como segundo mensageiro.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "desligamento",
+        "homeostase"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-03-fc05",
+      "tipo": "por_que",
+      "pergunta": "Por que a cascata de sinalização é preferível a um receptor que já é uma enzima direta?",
+      "resposta": "A cascata permite amplificação (um único receptor pode ativar dezenas de enzimas) e integração de múltiplos sinais, além de oferecer pontos de controle e regulação mais finos.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "evolucao"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-05-002-03-caso01",
+      "titulo": "Diarreia aquosa maciça após viagem a área endêmica",
+      "apresentacao": "Homem de 34 anos, retornado há 2 dias de viagem a região com saneamento precário, procura pronto-socorro com diarreia aquosa profusa, descrita como 'água de arroz', com início súbito há 12 horas, sem sangue ou muco, associada a vômitos e cãibras musculares. Ao exame: hipotenso (PA 85x50 mmHg), taquicárdico, mucosas secas, turgor cutâneo diminuído, letárgico. Estima-se perda de mais de 1 litro de fluido por hora nas últimas horas.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Infecção por Vibrio cholerae: a toxina colérica ADP-ribosila a subunidade alfa da proteína Gs, travando-a no estado ativo e impedindo o desligamento natural do sinal."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A cascata AMPc/PKA do enterócito intestinal: com a Gs permanentemente ativa, a adenilato ciclase converte ATP em AMPc de forma contínua e descontrolada, muito além do que qualquer estímulo fisiológico geraria."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O AMPc acumulado em excesso ativa cronicamente a PKA, que fosforila e mantém aberto o canal de cloreto CFTR na membrana apical do enterócito — o mesmo tipo de fosforilação que a via normalmente usa para respostas transitórias, agora perpetuada sem controle."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O efluxo maciço e contínuo de cloreto arrasta sódio e água para o lúmen intestinal por osmose, produzindo diarreia secretora volumosa, aquosa, com aspecto de 'água de arroz'."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Perda maciça de água e eletrólitos leva a desidratação grave, choque hipovolêmico e risco de morte em horas, revertendo-se rapidamente com reposição volêmica adequada."
+        }
+      ],
+      "conexao_com_bloco": "O caso confirma, na prática clínica, exatamente o cenário hipotético levantado no bloco: 'o que aconteceria se a fosfodiesterase não existisse' — aqui o problema não é a ausência da fosfodiesterase, mas a origem do AMPc (Gs travada) que a fosfodiesterase sozinha não consegue compensar. A cascata AMPc/PKA, desenhada para ser rápida e reversível, se torna a via de uma doença quando perde seu ponto de desligamento a montante.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "microbiologia",
+        "farmacologia",
+        "clinica medica"
+      ],
+      "diagnostico_revelado": "Cólera (infecção por Vibrio cholerae) com desidratação grave por diarreia secretora mediada por toxina colérica.",
+      "tratamento_resumido": "Reidratação agressiva (oral com sais de reidratação oral, ou endovenosa nos casos graves), correção de eletrólitos, e antibioticoterapia (doxiciclina ou azitromicina) para encurtar a excreção bacteriana."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Toxinas bacterianas",
+        "disciplina": "microbiologia",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "A toxina colérica atua via ADP-ribosilação da proteína Gs, mantendo o sinal AMPc ligado.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Via IP3/DAG",
+        "explicacao": "Enquanto a via AMPc usa a adenilato ciclase, a via IP3/DAG usa a fosfolipase C para gerar segundos mensageiros diferentes."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-05-002-03",
   "no_pai_id": "s1-biocel-05-002",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Cascata AMPc / PKA",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Adenilato ciclase, AMPc, PKA; toxina colérica e pertússica",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

@@ -10,51 +10,377 @@
     "s3-bioet-05-006",
     "s3-bioet-05-007"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s3-bioet-01-002",
+    "s3-bioet-01-003",
+    "s3-bioet-01-003-02"
+  ],
   "metadata": {
     "titulo": "Fim de Vida — Visão Geral",
+    "subtitulo": "Quando a medicina pode prolongar processos biológicos além do que antes era possível, prolongar a vida e prolongar o morrer deixam de ser a mesma coisa?",
     "semestre": 3,
     "disciplina": "Bioética",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 1,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "nivel": "CORE",
+    "tipo": "conceito",
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioet",
-      "esqueleto"
+      "bioetica",
+      "fim-de-vida",
+      "distanasia",
+      "ortotanasia",
+      "eutanasia",
+      "cuidados-paliativos",
+      "core"
     ],
-    "nivel": "CORE",
-    "tipo": "conceito"
+    "canmeds": [
+      "professional",
+      "expert"
+    ]
   },
-  "resumo_conciso": "Morrer bem: os limites entre prolongar a vida e prolongar o morrer",
-  "narrativa": [],
+  "resumo_conciso": "O bloco de abertura da disciplina (s3-bioet-00-000) usou o exemplo do respirador de UTI para ilustrar como o poder técnico da medicina ultrapassou a resposta moral disponível — e prometeu que esse dilema seria aprofundado neste capítulo. Chegou a hora: este bloco mapeia o espectro de decisões de fim de vida, do excesso terapêutico que prolonga o sofrimento (distanásia) à morte permitida em seu tempo certo (ortotanásia) até o polo de provocar ativamente a morte (eutanásia), sem aprofundar nenhum desses termos — cada um ganha bloco próprio a seguir. Também situa suicídio assistido, diretivas antecipadas, cuidados paliativos e morte encefálica como peças do mesmo capítulo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco de abertura de toda a disciplina, s3-bioet-00-000, abriu com a imagem de um médico em 1950 diante de um respirador recém-inventado, perguntando-se até quando mantê-lo ligado. Esse exemplo não era decorativo: ele anunciava, ainda que sem nome técnico, o capítulo mais denso e mais frequentemente mal compreendido de toda a bioética, que começa agora. A pergunta que ficou em suspenso desde então finalmente ganha tratamento direto: quando a medicina consegue prolongar processos biológicos muito além do que antes era fisicamente possível, isso continua sendo sempre \"salvar uma vida\", ou existe um ponto em que passa a ser outra coisa?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere um paciente com câncer metastático em fase terminal, sem qualquer possibilidade real de cura, internado após uma parada cardíaca revertida. A equipe médica e a família se reúnem para decidir os próximos passos: reanimar novamente se houver nova parada? Escalonar para diálise se os rins falharem? Manter a ventilação mecânica indefinidamente? Cada uma dessas perguntas tem uma resposta técnica possível — e uma resposta ética que não decorre automaticamente da resposta técnica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema que este capítulo inteiro existe para enfrentar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Durante quase toda a história da medicina, a pergunta \"até quando tratar\" tinha uma resposta imposta pelo próprio corpo: quando os recursos terapêuticos se esgotavam, a doença seguia seu curso natural, e a morte chegava sem que o médico precisasse decidir ativamente sustentá-la ou não. A partir de meados do século XX, ventiladores mecânicos, diálise, drogas vasoativas, nutrição e hidratação artificiais e a reanimação cardiopulmonar mudaram essa equação de forma irreversível: passou a ser tecnicamente possível manter funções vitais básicas funcionando por dias, semanas ou meses, mesmo quando a doença de base não tem nenhuma chance real de reversão."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso criou um problema que a medicina de séculos anteriores nunca precisou enfrentar com essa urgência: a diferença entre **poder** continuar tratando e **dever** continuar tratando deixou de ser óbvia. Em algum ponto do espectro de decisões possíveis, insistir em tratar deixa de significar \"salvar uma vida\" e passa a significar \"prolongar o processo de morrer\", às vezes às custas de sofrimento real e sem qualquer benefício que compense esse custo. E, no polo oposto do mesmo espectro, surge uma pergunta ainda mais desconfortável: diante de sofrimento insuportável e irreversível, poderia ser eticamente aceitável não apenas permitir a morte, mas provocá-la ativamente, por compaixão?"
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe antes de seguir: este capítulo não vai defender que prolongar a vida é sempre errado, nem que abreviar o sofrimento é sempre certo. Ele existe para dar nome preciso a cada ponto desse espectro — porque, como Gustavo vai ver nos blocos seguintes, três desses nomes são constantemente confundidos até por médicos formados, e essa confusão tem consequências práticas e legais sérias."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a bioética mapeia esse espectro, sem resolver tudo de uma vez"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução não foi criar uma única regra (\"sempre tratar\" ou \"nunca insistir\"), porque nenhuma das duas resolveria todos os casos com justiça. A solução foi nomear, com precisão, os diferentes pontos desse espectro de decisões de fim de vida — cada um com implicações éticas e, no caso brasileiro, status legal próprio e bem diferente entre si. De um lado do espectro está o excesso terapêutico que prolonga o sofrimento sem benefício real; no meio, a permissão de que a morte ocorra em seu tempo natural, sem obstinação, mas com pleno cuidado; e no outro extremo, o ato deliberado de antecipar a morte para cessar o sofrimento."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Os três termos centrais, em panorama — sem aprofundar nenhum ainda"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O primeiro termo é a **distanásia**: o resultado de continuar tratando um paciente terminal com intervenções que já não têm chance real de reverter o curso da doença, prolongando o processo de morrer às custas de sofrimento, sem benefício correspondente. Não é uma escolha que alguém defende abertamente como boa prática — é o nome que se dá ao desfecho indesejado de uma equipe que, por inércia, medo de conflito ou dificuldade de aceitar o limite da medicina, não reconhece a hora de parar. Este panorama não aprofunda como se reconhece esse ponto — isso é o objeto de **s3-bioet-05-001**, o próximo bloco."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O segundo termo é a **ortotanásia**: suspender ou não escalonar tratamentos que já não têm chance real de mudar o desfecho, permitindo que a morte ocorra em seu tempo natural, mantendo pleno cuidado, conforto e presença até o fim. É juridicamente respaldada no Brasil pela Resolução CFM nº 1.805/2006, e é frequentemente descrita como o antídoto à distanásia: nem obstinação terapêutica, nem abandono — apenas reconhecer, com honestidade técnica, que a doença chegou a um ponto que a medicina intensiva não reverte. Este panorama não aprofunda os detalhes práticos e o respaldo legal específico — isso é o objeto de **s3-bioet-05-002**."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O terceiro termo é a **eutanásia**: o ato deliberado de provocar ativamente a morte de um paciente, a seu pedido ou em seu benefício, para cessar sofrimento considerado insuportável. É uma categoria distinta das outras duas, porque não se trata de deixar a morte acontecer (como na ortotanásia) nem de prolongar indevidamente o morrer (como na distanásia), mas de agir deliberadamente para antecipar a morte. No Brasil, a eutanásia é crime — tipificada como homicídio privilegiado no Código Penal, e não uma prática legalmente permitida sob nenhuma condição atual. Este panorama não aprofunda a distinção entre suas modalidades nem o debate social sobre sua legalização — isso é o objeto de **s3-bioet-05-003**."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Fixe já aqui, antes dos blocos aprofundados: distanásia é um resultado indesejado (obstinação que prolonga o sofrimento), ortotanásia é uma conduta legal e respaldada (permitir a morte natural, com cuidado pleno), e eutanásia é um ato ilegal no Brasil (abreviar ativamente a vida). Os três compartilham a raiz grega thánatos (morte), o que ajuda a explicar por que são tão facilmente confundidos apesar de serem juridicamente e eticamente muito diferentes entre si."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Os outros temas deste capítulo, em panorama"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Além dos três termos centrais, este capítulo aborda outros quatro temas que completam o quadro de decisões de fim de vida. O **suicídio assistido** (**s3-bioet-05-004**) ocupa uma fronteira próxima à eutanásia, mas distinta: o médico fornece o meio para que o próprio paciente, e não a equipe, execute o ato final — distinção que parece sutil, mas que muda a análise ética e legal do caso. As **diretivas antecipadas de vontade** (**s3-bioet-05-005**) tratam de como um paciente pode registrar, ainda com plena capacidade de decisão, suas preferências sobre tratamentos futuros, para que sua autonomia seja respeitada mesmo se ele perder a capacidade de se expressar no momento da decisão."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os **cuidados paliativos** (**s3-bioet-05-006**) tratam do que nunca deveria ser suspenso, independentemente da decisão sobre continuar ou não um tratamento curativo: controle de sintomas, conforto e dignidade, incluindo situações delicadas como a sedação paliativa e o chamado princípio do duplo efeito. E a **morte encefálica** (**s3-bioet-05-007**) trata de uma pergunta logicamente anterior a todas as outras deste capítulo: quando, exatamente, uma pessoa morreu — critério cuja definição precisa é o que torna possível, por exemplo, a doação de órgãos e a distinção entre desligar um suporte de alguém já morto e interromper o suporte de alguém ainda vivo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Um caso simples, para fixar o quadro geral do capítulo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Retome o paciente com câncer metastático em fase terminal, após parada cardíaca revertida. A equipe reúne a família e apresenta a situação com honestidade: a doença não tem chance real de reversão, e cada nova intervenção agressiva — nova reanimação, diálise, escalonamento de suporte — tende a apenas prolongar o processo de morrer, sem devolver ao paciente qualquer chance real de recuperação. Diante disso, a equipe propõe não reanimar em caso de nova parada, suspender intervenções que já não trazem benefício real, e concentrar todo o cuidado em conforto, controle de dor e presença até o fim — sem, em nenhum momento, cogitar qualquer ato que abrevie ativamente a vida do paciente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse caso simples já contém, em miniatura, a distinção central do capítulo: insistir em reanimar e escalonar suporte sem chance real de benefício seria o caminho para a distanásia; suspender o que não funciona mais, mantendo pleno cuidado e conforto, é ortotanásia; e, em nenhum momento desse caso, cogita-se eutanásia — que exigiria um ato deliberado para antecipar a morte, e não apenas permitir que ela ocorra em seu tempo. Os blocos seguintes vão detalhar cada um desses três caminhos com precisão."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que este capítulo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este capítulo retoma diretamente dois princípios já estudados: a **beneficência** (**s3-bioet-01-002**), o dever de agir em benefício do paciente, que aqui é posta à prova justamente porque nem sempre \"fazer mais\" significa \"beneficiar mais\"; e a **não-maleficência** (**s3-bioet-01-003**), sobretudo seu desdobramento sobre futilidade terapêutica (**s3-bioet-01-003-02**), que já introduziu o conceito de obstinação terapêutica como alicerce direto para a distanásia que este capítulo agora aprofunda. Quem já estudou aquele bloco reconhecerá o caso do choque séptico refratário como o mesmo tipo de raciocínio que sustenta toda a discussão sobre fim de vida."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "thánatos",
+      "origem": "do grego thánatos (morte), raiz que aparece nos três termos centrais deste capítulo: dis-thanásia, orto-thanásia, eu-thanásia",
+      "significado": "a raiz comum que nomeia o próprio fenômeno da morte, combinada com três prefixos gregos diferentes que qualificam como essa morte ocorre",
+      "explicacao": "Os três termos centrais deste capítulo compartilham a mesma raiz grega thánatos, e se diferenciam inteiramente pelo prefixo que a acompanha: dis- (mau, difícil, com dificuldade) descreve uma morte adiada e sofrida; ortho- (correto, reto, no devido lugar) descreve uma morte permitida em seu tempo certo; eu- (bom, bem) descreve uma morte provocada com a intenção de ser boa, no sentido de aliviar sofrimento. É precisamente essa raiz compartilhada que explica por que os três termos são tão facilmente confundidos na linguagem cotidiana, apesar de descreverem situações eticamente e legalmente muito diferentes entre si — dominar essa raiz comum e os prefixos que a diferenciam é a base para não confundir os três termos nos blocos seguintes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o espectro do capítulo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🕯️",
+      "conteudo": "Pense numa vela que está prestes a se apagar naturalmente, porque a cera já quase acabou. Existem três formas diferentes de lidar com essa vela nesse momento. A primeira é continuar despejando mais cera derretida sobre um pavio que já mal consegue queimar, numa tentativa de mantê-la acesa a qualquer custo — o resultado costuma ser uma chama tremulante, instável, que não volta a arder com força, apenas atrasa por mais alguns minutos um apagar que já era inevitável, e a cera extra pode até sufocar o pouco de chama que restava. Essa insistência corresponde à distanásia. A segunda é simplesmente deixar a vela se apagar sozinha, no seu próprio ritmo, sem adicionar mais cera nem tentar reacendê-la à força, mas continuando a proteger a chama do vento e a acompanhar até o fim — deixando a natureza seguir seu curso, sem abandono. Essa atitude corresponde à ortotanásia. A terceira seria apagar a vela deliberadamente antes do tempo, com um sopro certeiro, para que ela não continue queimando de forma instável e agonizante. Essa ação corresponde à eutanásia. A analogia quebra em um ponto essencial: apagar uma vela não envolve nenhuma consideração moral ou legal — ninguém pede consentimento a uma vela, e nenhum código penal se aplica ao gesto. Já as três condutas de fim de vida envolvem a vida de uma pessoa, com peso ético, jurídico e humano que a chama de uma vela simplesmente não tem — e é exatamente esse peso que torna a precisão terminológica deste capítulo uma questão prática, e não apenas um exercício de vocabulário."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a medicina nunca tivesse desenvolvido tecnologias de suporte avançado de vida — ventilação mecânica, diálise, drogas vasoativas —, este capítulo inteiro precisaria existir?",
+      "resposta": "Não com a mesma urgência e no mesmo formato. Como já apontado em s3-bioet-00-000, boa parte dos dilemas de fim de vida nasce exatamente da capacidade tecnológica de sustentar funções vitais além do que o corpo, sozinho, sustentaria. Sem suporte avançado de vida, a distanásia — que depende de haver algo tecnicamente possível para insistir em fazer — praticamente não existiria como problema recorrente, porque a morte seguiria seu curso biológico sem intervenção prolongada possível. A ortotanásia continuaria fazendo sentido como conceito (permitir a morte natural, cuidando do paciente), mas perderia grande parte de sua urgência prática, já que não haveria tanto o que suspender. Já a eutanásia, por tratar de um ato ativo e não de uma decisão sobre suporte tecnológico, manteria sua relevância como debate ético independente da tecnologia de suporte de vida disponível — a pergunta sobre abreviar deliberadamente o sofrimento por compaixão é mais antiga do que qualquer ventilador mecânico.",
+      "confianca": "consenso_didatico"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O espectro de fim de vida — três pontos centrais",
+      "descricao": "Esquema didático com uma linha horizontal representando um espectro, com três marcadores: à esquerda, 'DISTANÁSIA' com ícone de seta apontando para cima e sinal de alerta (excesso terapêutico, resultado indesejado); ao centro, 'ORTOTANÁSIA' com ícone de equilíbrio (morte permitida em seu tempo, cuidado pleno); à direita, 'EUTANÁSIA' com ícone de mão e coração (ato deliberado de abreviar). Abaixo da linha, quatro ícones menores representando os temas satélites do capítulo: diretivas antecipadas, suicídio assistido, cuidados paliativos, morte encefálica. Estilo minimalista, tom clínico neutro, tipografia em português, sem hierarquia valorativa entre os três marcadores centrais.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo editorial minimalista e neutro. Linha horizontal representando um espectro de decisões de fim de vida, com três marcadores distribuídos ao longo dela. Marcador esquerdo com ícone de seta ascendente cortada por um pequeno sinal de alerta, rotulado 'DISTANÁSIA — obstinação terapêutica'. Marcador central com ícone de balança em equilíbrio suave, rotulado 'ORTOTANÁSIA — morte permitida em seu tempo'. Marcador direito com ícone de mão sobre um coração estilizado, rotulado 'EUTANÁSIA — ato deliberado de abreviar'. Abaixo da linha principal, quatro ícones menores e neutros representando temas satélites: um documento com caneta (diretivas antecipadas), duas mãos passando um objeto pequeno (suicídio assistido), uma flor ou ícone de conforto (cuidados paliativos), e um traçado de eletroencefalograma reto (morte encefálica). Paleta neutra sem gradiente de cor valorativo entre os três marcadores centrais (evitar vermelho-verde), alto contraste para tema claro e escuro, tipografia limpa em português, sem elementos fotorrealistas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioet-00-000",
+        "titulo": "Bioética — O Que É e Por Que Existe",
+        "disciplina": "Bioética",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "O exemplo de abertura sobre o respirador de UTI e até quando mantê-lo ligado é precisamente o dilema que este capítulo aprofunda, distinguindo prolongar a vida de prolongar o morrer."
+      },
+      {
+        "bloco_id": "s3-bioet-01-003-02",
+        "titulo": "Futilidade e Obstinação Terapêutica",
+        "disciplina": "Bioética",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "Aquele bloco já introduziu o conceito de futilidade médica e nomeou a obstinação terapêutica (distanásia) como seu desfecho indesejado, entregando o alicerce conceitual sobre o qual este capítulo constrói o arcabouço clínico completo de fim de vida."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": "s3-bioet-05-001",
+        "disciplina": "Bioética",
+        "semestre_futuro": 3,
+        "topico": "Distanásia",
+        "mecanismo_conexao": "O primeiro dos três termos centrais apresentados neste panorama é aprofundado no próximo bloco.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": "s3-bioet-05-002",
+        "disciplina": "Bioética",
+        "semestre_futuro": 3,
+        "topico": "Ortotanásia",
+        "mecanismo_conexao": "O segundo termo central, apresentado como antídoto à distanásia, é aprofundado com seu respaldo legal específico.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": "s3-bioet-05-003",
+        "disciplina": "Bioética",
+        "semestre_futuro": 3,
+        "topico": "Eutanásia",
+        "mecanismo_conexao": "O terceiro termo central, distinguido dos outros dois por envolver ato deliberado, é aprofundado com sua distinção ativa/passiva e status legal.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": "s3-bioet-05-004",
+        "disciplina": "Bioética",
+        "semestre_futuro": 3,
+        "topico": "Suicídio assistido",
+        "mecanismo_conexao": "Tema satélite mencionado neste panorama como fronteira próxima à eutanásia, aprofundado em bloco próprio.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": "s3-bioet-05-005",
+        "disciplina": "Bioética",
+        "semestre_futuro": 3,
+        "topico": "Diretivas antecipadas de vontade",
+        "mecanismo_conexao": "Tema satélite mencionado neste panorama, aprofundado em bloco próprio sobre como registrar preferências de tratamento futuro.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": "s3-bioet-05-006",
+        "disciplina": "Bioética",
+        "semestre_futuro": 3,
+        "topico": "Cuidados paliativos",
+        "mecanismo_conexao": "Tema satélite mencionado neste panorama, aprofundado em bloco próprio sobre controle de sintomas e duplo efeito.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": "s3-bioet-05-007",
+        "disciplina": "Bioética",
+        "semestre_futuro": 3,
+        "topico": "Morte encefálica",
+        "mecanismo_conexao": "Tema satélite mencionado neste panorama como pergunta logicamente anterior às demais, aprofundado em bloco próprio.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s3-bioet-01-002",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "A beneficência, já estudada, é posta à prova neste capítulo: nem sempre fazer mais significa beneficiar mais."
+      },
+      {
+        "bloco_id": "s3-bioet-01-003",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "A não-maleficência sustenta a distinção entre risco terapêutico legítimo e dano evitável, base direta para reconhecer a distanásia."
+      },
+      {
+        "bloco_id": "s3-bioet-01-003-02",
+        "tipo_relacao": "CASCATA_CAUSAL",
+        "explicacao": "O conceito de futilidade médica e obstinação terapêutica, já desenvolvido ali, é o alicerce conceitual direto sobre o qual este capítulo constrói o tema da distanásia."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioet-05-000-fc01",
+      "pergunta": "Por que a distinção entre 'poder continuar tratando' e 'dever continuar tratando' se tornou um problema ético central apenas a partir de meados do século XX?",
+      "resposta": "Porque, antes disso, quando os recursos terapêuticos se esgotavam, a doença seguia seu curso natural sem que o médico precisasse decidir ativamente sustentar ou não funções vitais. A partir de meados do século XX, tecnologias como ventilação mecânica, diálise e reanimação cardiopulmonar passaram a permitir sustentar funções vitais básicas por tempo prolongado, mesmo sem chance real de reversão da doença de base — criando, pela primeira vez em escala, a pergunta sobre até que ponto continuar tratando ainda significa beneficiar o paciente.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["bioetica", "fim-de-vida", "fundamentos"]
+    },
+    {
+      "card_id": "s3-bioet-05-000-fc02",
+      "pergunta": "Diferencie, em uma frase cada, distanásia, ortotanásia e eutanásia, e classifique o status legal de cada uma no Brasil.",
+      "resposta": "Distanásia: resultado indesejado de obstinação terapêutica, que prolonga o processo de morrer sem benefício real — não é uma 'prática' legal ou ilegal, é um desfecho a ser evitado. Ortotanásia: suspender ou não escalonar tratamento fútil, permitindo a morte natural com pleno cuidado — legal no Brasil, respaldada pela Resolução CFM 1.805/2006. Eutanásia: ato deliberado de abreviar a vida para cessar sofrimento — crime no Brasil, tipificado como homicídio privilegiado.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["bioetica", "distanasia", "ortotanasia", "eutanasia"]
+    },
+    {
+      "card_id": "s3-bioet-05-000-fc03",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Distanásia, ortotanásia e eutanásia são três práticas alternativas entre as quais uma equipe médica escolhe livremente, todas igualmente aceitas eticamente e legalmente no Brasil.'",
+      "resposta": "Falso. Os três termos não têm o mesmo status: a ortotanásia é conduta legal e eticamente recomendada, respaldada por resolução do CFM; a distanásia não é uma escolha deliberada, mas o resultado indesejado de obstinação terapêutica, algo a ser reconhecido e evitado; e a eutanásia é crime no Brasil, tipificada como homicídio privilegiado. Tratá-los como três opções equivalentes é uma armadilha conceitual grave, com consequência prática e legal real.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["bioetica", "fim-de-vida", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s3-bioet-05-000-fc04",
+      "pergunta": "Os três termos centrais deste capítulo compartilham a raiz grega thánatos (morte). Como os prefixos dis-, ortho- e eu- diferenciam seus significados?",
+      "resposta": "Dis- significa mau ou difícil, formando 'distanásia' — a má morte, adiada e sofrida. Ortho- significa correto ou reto, formando 'ortotanásia' — a morte no seu devido tempo. Eu- significa bom, formando 'eutanásia' — a morte provocada com intenção de ser boa, aliviando sofrimento. É essa raiz compartilhada, com prefixos que soam parecidos, que explica por que os três termos são tão frequentemente confundidos apesar de descreverem situações ética e legalmente muito diferentes.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["bioetica", "etimologia", "fim-de-vida"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioet-05-000-caso01",
+      "titulo": "Paciente terminal com câncer metastático após parada cardíaca revertida",
+      "vinheta": "Paciente com câncer metastático em fase terminal, sem possibilidade real de cura, é internado após parada cardíaca revertida. A equipe reúne a família para decidir sobre reanimação em caso de nova parada, escalonamento de suporte e manutenção de ventilação mecânica.",
+      "discussao": "O caso introdutório ilustra, em miniatura, os três caminhos do capítulo: insistir em reanimar e escalonar suporte sem chance real de benefício seria o caminho da distanásia; suspender o que não funciona mais, mantendo pleno cuidado e conforto, é ortotanásia; e eutanásia sequer é cogitada, porque exigiria um ato deliberado de antecipar a morte, e não apenas permitir que ela ocorra em seu tempo. O caso será retomado com mais profundidade técnica nos blocos seguintes.",
+      "nivel_dificuldade": 2,
+      "tags": ["bioetica", "fim-de-vida", "cancer-terminal"]
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioet-05-000-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente",
+        "tipo_imagem": "esquema_didatico"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "resolucao",
+      "citacao": "Conselho Federal de Medicina. Resolução CFM nº 1.805/2006 — ortotanásia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "lei",
+      "citacao": "Brasil. Código Penal (Decreto-Lei nº 2.848/1940), artigo 121, §1º (homicídio privilegiado).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Distanásia, ortotanásia e eutanásia são três práticas equivalentes, apenas com nomes diferentes",
+      "correcao": "Têm status ético e legal completamente diferentes no Brasil: ortotanásia é legal e respaldada por resolução do CFM, eutanásia é crime, e distanásia não é uma prática escolhida, é o resultado indesejado de obstinação terapêutica",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Este capítulo vai definir qual das condutas de fim de vida é moralmente correta",
+      "correcao": "Este bloco panorâmico apenas nomeia e situa os termos; a análise ética e legal detalhada de cada um é construída nos blocos filhos específicos",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 3,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Conteúdo completo escrito a partir do esqueleto — 8 etapas, panorama dos 3 termos centrais sem aprofundar nenhum, situação dos 4 temas satélites, caso introdutório, etimologia da raiz thanatos com 3 prefixos, analogia da vela, flashcards, retomada explícita de s3-bioet-01-003-02 (futilidade/obstinação)",
+      "motivo": "Abertura do capítulo de fim de vida, filho de s3-bioet-00-000, panorama que antecede os blocos aprofundados de distanásia/ortotanásia/eutanásia"
+    }
+  ],
   "_lentes": [
     "dilema",
     "correlacao_clinica",

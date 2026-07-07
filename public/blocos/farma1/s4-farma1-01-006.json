@@ -10,50 +10,312 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Parâmetros Cinéticos — Quantificar a Jornada (Visão Geral)",
+    "subtitulo": "Como transformar 'o fármaco vai sumindo aos poucos' num número que orienta a receita?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "parametros-cineticos",
+      "core",
+      "visao-geral"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Meia-vida, clearance, cinética de ordem; base para regimes de dose",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior desta disciplina descreveu a jornada ADME em termos qualitativos — o fármaco entra, se espalha, é transformado, é eliminado. Mas um médico não prescreve com adjetivos: ele prescreve com números — 500 mg a cada 8 horas, por via oral. Para transformar a descrição qualitativa da jornada num número de dose e intervalo, a farmacocinética precisa de parâmetros mensuráveis que resumam, em uma cifra, o comportamento de todo um processo biológico complexo. Esses parâmetros respondem a perguntas muito concretas: com que velocidade o corpo elimina o fármaco (para saber de quanto em quanto tempo repetir a dose), qual é a eficiência do organismo em depurar o sangue desse fármaco (para calcular a dose de manutenção) e se essa eliminação segue uma proporção constante ou tem um teto de capacidade (para saber se dobrar a dose dobra o efeito ou é perigoso). Sem esses números, a mesma lógica ADME que já foi entendida continuaria sendo apenas uma boa explicação — incapaz de virar prescrição segura e reprodutível. É esse salto de 'entender o processo' para 'calcular a dose' que os quatro blocos seguintes, cada um dedicado a um parâmetro ou modelo específico, vão realizar em detalhe.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um médico decide tratar uma infecção urinária com um antibiótico. Ele já sabe, do bloco anterior, que esse fármaco vai ser absorvido, distribuído, metabolizado e excretado. Mas essa informação, sozinha, não escreve a receita. Ela não diz se o comprimido deve ser tomado a cada 6, 12 ou 24 horas. Não diz se, na insuficiência renal do paciente, a dose deve ser reduzida pela metade ou por um décimo. A pergunta clínica real não é 'o fármaco é eliminado?' — isso já se sabe. A pergunta é 'a que velocidade, exatamente?'"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: descrever não é o mesmo que calcular"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Toda a farmacocinética até aqui foi construída como narrativa: uma sequência de eventos biológicos que acontece com o fármaco dentro do corpo. Essa narrativa é indispensável para entender o *porquê*, mas é insuficiente para decidir o *quanto* e o *quando*. Prescrever é, no fundo, um ato de aritmética: escolher uma dose e um intervalo que mantenham a concentração do fármaco numa faixa que trate a doença sem intoxicar o paciente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é que os processos biológicos que compõem essa jornada — metabolismo hepático, filtração renal, ligação a proteínas — não têm, cada um isoladamente, uma tradução óbvia em número de dose. É preciso resumir o comportamento conjunto de todos esses processos em poucas grandezas que possam entrar numa fórmula. Sem esse resumo numérico, cada paciente exigiria tentativa e erro às cegas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema aqui não é mais 'o que acontece com o fármaco' — isso já foi respondido. É 'como resumir o que acontece em números que caibam numa prescrição'."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, em princípio"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A saída encontrada foi criar um pequeno conjunto de grandezas — cada uma medindo um aspecto diferente da jornada — que, combinadas, permitem prever a concentração do fármaco no sangue ao longo do tempo. Uma dessas grandezas mede a *velocidade com que a concentração cai pela metade*. Outra mede *quanto volume de sangue é inteiramente depurado do fármaco por unidade de tempo*, como se fosse uma taxa de limpeza. Uma terceira descreve *o formato matemático dessa queda* — se ela é proporcional à quantidade presente (uma fração constante desaparece a cada intervalo) ou se tem um teto de capacidade, além do qual o sistema de eliminação satura e passa a remover sempre a mesma quantidade absoluta, não mais uma fração."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma quarta ideia complementar não cria um novo parâmetro, mas uma forma de organizar todos eles: tratar o corpo, para fins de cálculo, como se fosse um ou mais reservatórios interligados, cada um com seu próprio volume e sua própria velocidade de troca com os demais. Essa simplificação matemática é o que permite prever a concentração em qualquer tecido, não apenas no sangue, sem precisar simular a biologia real em todos os seus detalhes."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A farmacocinética deixa de ser só narrativa (o que acontece) e passa a ser cálculo (quanto e quando) através de um punhado de grandezas que resumem numericamente a velocidade e a capacidade de todo o sistema de eliminação e distribuição."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essas grandezas são feitas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada uma dessas grandezas é, na essência, uma razão ou uma taxa derivada de medições simples: concentração do fármaco no sangue, colhida em intervalos de tempo conhecidos, depois de uma dose conhecida. Não são propriedades que se observam diretamente — são calculadas a partir de uma curva de concentração-tempo, obtida em estudos farmacocinéticos, geralmente por meio de amostras de sangue seriadas em voluntários ou pacientes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por trás dessas curvas estão os mesmos elementos biológicos já descritos no bloco anterior — enzimas hepáticas, néfrons, proteínas plasmáticas, membranas — mas agora sua atividade combinada é capturada como um número único e estável para cada fármaco (dentro de certos limites fisiológicos). É essa estabilidade que torna o parâmetro clinicamente útil: um valor medido numa população de pacientes pode ser aplicado, com ajustes, à prescrição de um paciente novo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em conjunto"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere a decisão mais comum da farmacoterapia: de quanto em quanto tempo repetir a dose. Se a velocidade de queda da concentração for conhecida, é possível calcular quanto tempo o fármaco leva para cair a um nível ineficaz — e programar a próxima dose antes disso acontecer. Se, além disso, for conhecida a eficiência de depuração do organismo, é possível calcular a dose de manutenção necessária para repor exatamente o que foi eliminado, mantendo a concentração estável em vez de oscilar entre picos tóxicos e vales ineficazes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "E se o formato da eliminação for conhecido — proporcional ou saturável —, o prescritor sabe, antes de aumentar uma dose, se esse aumento vai produzir um efeito proporcional e previsível ou se vai ultrapassar um limite de capacidade do organismo, gerando acúmulo desproporcional e risco de toxicidade. Esses três raciocínios — quando repetir, quanto repor, se é seguro aumentar — são exatamente os três blocos seguintes, cada um isolando um desses parâmetros para tratamento matemático completo; o quarto bloco reúne todos eles na estrutura de compartimentos que permite aplicar esse raciocínio a qualquer tecido do corpo, não apenas ao sangue."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa quantificação se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esses parâmetros não substituem a farmacocinética qualitativa vista no bloco anterior — eles a formalizam. A velocidade de eliminação reflete diretamente a competência do fígado e do rim descrita ali; a eficiência de depuração é a tradução numérica da capacidade desses mesmos órgãos. É por isso que, na prática clínica, um paciente com insuficiência renal ou hepática não muda de mecanismo — muda de número: os mesmos parâmetros aqui descritos precisam ser recalculados ou ajustados para essa condição, e são exatamente esses ajustes numéricos que guiam a redução ou o espaçamento de doses em bula e em protocolos hospitalares."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome desses parâmetros"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "parâmetro cinético",
+      "origem": "do grego pará (ao lado de, através de) + métron (medida), somado a kínēsis (movimento)",
+      "significado": "literalmente, 'uma medida que atravessa e caracteriza o movimento' — uma grandeza numérica que descreve como o fármaco se comporta ao longo do tempo",
+      "explicacao": "O termo 'parâmetro' já era usado em matemática para designar uma grandeza que, fixada, define o comportamento de uma função inteira — e foi esse sentido que a farmacologia clínica emprestou a partir de meados do século XX, quando pesquisadores como Milne, Dost e depois Gibaldi e Levy passaram a tratar a curva de concentração-tempo como uma função matemática caracterizável por poucas grandezas fixas. O nome combina, portanto, a ideia matemática de parâmetro com a raiz já conhecida (kínēsis, movimento) da própria farmacocinética: um parâmetro cinético é o número que fixa e resume o movimento do fármaco pelo corpo, o mesmo movimento já descrito qualitativamente no bloco anterior."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "⏳",
+      "conteudo": "Pense num balde furado que recebe água de uma torneira. Descrever qualitativamente ('a água entra, se espalha na base do balde e vaza pelos furos') já foi feito no bloco anterior. Mas para saber quando reabrir a torneira e por quanto tempo, você precisa de números: **a velocidade com que o nível cai pela metade** (equivalente à meia-vida), **quantos litros por minuto os furos conseguem vazar no total** (equivalente à depuração, ou clearance) e **se essa vazão é proporcional ao nível de água ou tem um teto fixo de vazão** (equivalente ao tipo de cinética de eliminação). Só com esses três números — e sabendo o tamanho do balde (o volume de distribuição, tratado no bloco de modelos compartimentais) — você consegue calcular exatamente de quanto em quanto tempo reabrir a torneira para manter o balde sempre numa faixa útil de água. A analogia quebra num ponto: o balde tem um formato fixo e visível, enquanto o 'tamanho' do corpo para fins de distribuição do fármaco é um número calculado, não uma medida física direta — por isso ele pode, para certos fármacos, ser matematicamente maior que o volume real do corpo inteiro."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Da curva de concentração ao número de dose",
+      "descricao": "Diagrama esquemático em duas metades. À esquerda, uma curva de concentração plasmática do fármaco ao longo do tempo após uma dose única, com o eixo Y em escala logarítmica mostrando um declínio aproximadamente retilíneo; marcações no eixo X indicando pontos sucessivos onde a concentração cai pela metade, rotulados 'meia-vida'; uma área sombreada sob a curva rotulada 'depuração total do organismo'. À direita, uma seta apontando para um pequeno bloco de prescrição estilizado (ícone de comprimido e relógio) com o texto 'dose e intervalo calculados'. Entre as duas metades, uma seta central rotulada 'parâmetros cinéticos' conectando a curva biológica à decisão prática. Estilo esquemático de livro didático farmacológico, cores diferenciando cada elemento, legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Composição em duas metades conectadas por uma seta central. Metade esquerda: gráfico de concentração plasmática (eixo Y, escala logarítmica) versus tempo (eixo X) mostrando uma curva descendente aproximadamente linear em escala log, com marcações verticais tracejadas em intervalos iguais rotuladas 't1/2, 2×t1/2, 3×t1/2' indicando quedas sucessivas pela metade; área sob a curva sutilmente sombreada e rotulada 'clearance (depuração)'. Seta central horizontal rotulada 'PARÂMETROS CINÉTICOS' conectando a metade esquerda a um ícone estilizado de comprimido ao lado de um relógio, rotulado 'dose e intervalo de administração', na metade direita. Paleta de cores suaves e distintas, texto em português, sem elementos fotorrealistas, alto contraste, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-000",
+        "titulo": "Farmacocinética — A Jornada do Fármaco no Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já ter entendido a jornada ADME em termos qualitativos — absorção, distribuição, metabolismo, excreção como processos concorrentes — antes de ver como essa jornada é resumida em parâmetros numéricos."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Meia-vida, clearance, cinética de ordem zero e de primeira ordem, modelos compartimentais (blocos filhos)",
+        "mecanismo_conexao": "Cada parâmetro apresentado aqui em visão panorâmica será desenvolvido em bloco próprio, com definição matemática formal, fórmulas e exemplos de cálculo de dose.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Ajuste de regime posológico em insuficiência renal e hepática",
+        "mecanismo_conexao": "Os protocolos de ajuste de dose usados na prática clínica são, em essência, recálculos desses mesmos parâmetros cinéticos para a função residual do órgão do paciente.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Monitorização terapêutica de fármacos com janela terapêutica estreita",
+        "mecanismo_conexao": "Fármacos como digoxina, lítio e alguns antibióticos exigem dosagem sérica guiada precisamente pelos parâmetros cinéticos aqui introduzidos, porque pequenas variações de clearance produzem grandes variações de concentração.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-006-fc01",
+      "pergunta": "Por que não basta descrever qualitativamente a jornada ADME de um fármaco para decidir a dose e o intervalo de uma prescrição?",
+      "resposta": "Porque prescrever é um ato numérico: exige escolher uma quantidade de fármaco e um intervalo de tempo entre doses que mantenham a concentração numa faixa eficaz e seguraya. A descrição qualitativa da jornada (absorção, distribuição, metabolismo, excreção) explica os mecanismos envolvidos, mas não fornece, por si só, nenhum número. É preciso resumir o comportamento conjunto desses processos em grandezas mensuráveis — os parâmetros cinéticos — para transformar entendimento em cálculo de dose.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "parametros-cineticos",
+        "dose"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-fc02",
+      "pergunta": "Quais são as três perguntas clínicas concretas que os parâmetros cinéticos respondem, e a que decisão de prescrição cada uma corresponde?",
+      "resposta": "Primeira: com que velocidade a concentração do fármaco cai — corresponde à decisão de quando repetir a dose. Segunda: qual a eficiência do organismo em depurar o fármaco do sangue — corresponde à decisão de quanto repor na dose de manutenção para manter a concentração estável. Terceira: a eliminação é proporcional à quantidade presente ou tem um teto de capacidade — corresponde à decisão de se é seguro aumentar a dose proporcionalmente ou se há risco de acúmulo desproporcional além de certo limite.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "parametros-cineticos",
+        "decisao-clinica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-fc03",
+      "pergunta": "Se dois fármacos diferentes tivessem exatamente a mesma jornada ADME qualitativa (mesmas vias de absorção, distribuição, metabolismo e excreção), mas parâmetros cinéticos numéricos muito diferentes, eles poderiam ser prescritos com o mesmo esquema de dose e intervalo?",
+      "resposta": "Não necessariamente. A jornada qualitativa idêntica garante que os mesmos processos biológicos estão envolvidos, mas não garante a mesma velocidade ou capacidade desses processos. Dois fármacos podem ser absorvidos, distribuídos, metabolizados e excretados pelas mesmas vias e, ainda assim, ter meias-vidas e depurações muito diferentes — um pode precisar ser tomado a cada 6 horas e o outro uma vez ao dia. É exatamente para capturar essa diferença quantitativa, invisível na descrição qualitativa, que os parâmetros cinéticos existem.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "parametros-cineticos",
+        "individualizacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-fc04",
+      "pergunta": "A expressão 'parâmetro cinético' combina uma raiz matemática com uma raiz já conhecida da farmacocinética. Quais são essas raízes e o que cada uma contribui para o sentido do termo?",
+      "resposta": "'Parâmetro' vem do grego pará (ao lado de, através de) mais métron (medida), e na matemática designa uma grandeza que, fixada, caracteriza o comportamento de uma função inteira. 'Cinético' deriva de kínēsis (movimento), a mesma raiz de farmacocinética. Juntas, as duas raízes expressam a ideia central do bloco: um parâmetro cinético é um número que, uma vez fixado, resume e caracteriza como o movimento do fármaco pelo corpo se comporta ao longo do tempo — a ponte entre a matemática abstrata de funções e o movimento biológico real do fármaco.",
+      "tipo": "etimologia",
+      "dificuldade": 1,
+      "nivel_alvo": 2,
+      "tags": [
+        "farmacocinetica",
+        "etimologia",
+        "parametros-cineticos"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-fc05",
+      "pergunta": "Por que um mesmo parâmetro cinético, medido numa população de referência, precisa ser reajustado antes de ser aplicado a um paciente com insuficiência renal ou hepática?",
+      "resposta": "Porque os parâmetros cinéticos são a tradução numérica da atividade combinada de órgãos como o fígado e o rim. Quando um desses órgãos tem sua função reduzida por doença, a velocidade e a capacidade reais de eliminação do paciente deixam de corresponder ao valor médio medido em pessoas saudáveis. O mecanismo biológico não muda de natureza, mas o número que o representa muda de valor — e é justamente esse número recalculado que orienta, na prática, a redução de dose ou o espaçamento maior entre administrações.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "parametros-cineticos",
+        "ajuste-de-dose"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-006-caso01",
+      "titulo": "Nível sérico acima do esperado numa paciente tratada com vancomicina para infecção grave",
+      "apresentacao": "Mulher de 61 anos, internada por bacteremia por Staphylococcus aureus resistente à meticilina, inicia vancomicina intravenosa em dose fixa por quilo de peso, no intervalo padrão de 12 em 12 horas. A equipe de farmácia clínica solicita, como rotina do serviço, dosagem sérica do fármaco antes da quarta dose (o chamado nível de vale). O resultado vem muito acima da faixa terapêutica esperada para aquele esquema, embora a paciente não apresente ainda sintomas evidentes de toxicidade. A função renal, reavaliada, mostra clearance de creatinina mais baixo do que o estimado inicialmente pela idade e pelo peso.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A dose e o intervalo de vancomicina foram calculados a partir de parâmetros cinéticos populacionais médios (clearance e meia-vida esperados para idade e peso), sem confirmação direta do clearance real desta paciente, que se mostrou mais baixo que a estimativa inicial."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O processo de eliminação renal do fármaco — a mesma via de excreção discutida no bloco anterior — está funcionando abaixo da capacidade pressuposta pelo cálculo padrão de dose, reduzindo o clearance real de vancomicina abaixo do valor usado na prescrição inicial."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com um clearance mais baixo que o previsto, a mesma dose administrada no mesmo intervalo produz uma meia-vida de eliminação mais longa do que a assumida pelo cálculo original — a concentração não cai tão rápido quanto o esquema pressupôs entre uma dose e a seguinte."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O nível sérico de vale, medido antes da quarta dose, aparece elevado acima da faixa terapêutica-alvo — um sinal laboratorial direto de que a concentração está se acumulando além do previsto, antes mesmo de qualquer sintoma clínico de toxicidade (que, para a vancomicina, tipicamente seria nefrotoxicidade)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A equipe espaça o intervalo entre doses e recalcula a dose de manutenção usando o clearance real estimado a partir do nível medido, evitando a progressão para toxicidade renal. O caso confirma o valor prático de medir, e não apenas assumir, os parâmetros cinéticos de um paciente individual quando a margem terapêutica é estreita."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra exatamente o que este bloco anuncia: parâmetros cinéticos como clearance e meia-vida são o que transforma a farmacocinética qualitativa em número de dose, e quando o clearance real de um paciente diverge do valor populacional assumido no cálculo, o resultado é uma concentração diferente da esperada — aqui, detectada a tempo por monitorização, evitando o desfecho tóxico que o texto do bloco descreve como consequência de ignorar esses parâmetros.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "infectologia",
+        "nefrologia"
+      ],
+      "diagnostico_revelado": "Acúmulo de vancomicina por clearance renal real inferior ao estimado, detectado por monitorização terapêutica antes do surgimento de toxicidade clínica.",
+      "tratamento_resumido": "Ajuste do intervalo entre doses e recálculo da dose de manutenção com base no clearance real estimado pela dosagem sérica, manutenção de hidratação adequada e repetição da monitorização terapêutica até estabilização dentro da faixa-alvo."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-006-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "molecular"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics II: Distribution and Elimination of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

@@ -5,54 +5,153 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "EPA-3 — Recomendar e interpretar testes diagnósticos",
+    "subtitulo": "Você pode pedir qualquer exame do hospital. A pergunta que importa é: qual desses vai mudar o que você faz depois do resultado?",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 2,
+    "topico": 3,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "epa_avaliacao",
+      "raciocinio_diagnostico",
+      "honestidade_epistemica"
     ],
+    "tipo_conteudo": "competencia_epa",
+    "status": "publicado",
+    "data_criacao": "2026-07-06",
+    "data_revisao": "2026-07-06",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
-    "formato_internato": "competencia_epa",
-    "epa_codigo": "EPA-3",
-    "epa_nivel_alvo": 3
+    "tempo_estudo_minutos": 9,
+    "palavras_chave": [
+      "EPA-3",
+      "probabilidade pré-teste",
+      "exames complementares",
+      "interpretação de resultado"
+    ],
+    "formato_internato": "competencia_epa"
   },
-  "resumo_conciso": "Pedir o exame que muda a conduta e interpretá-lo à luz da probabilidade pré-teste",
-  "narrativa": [],
+  "resumo_conciso": "Pedir exame de forma reflexa ('painel completo, só para garantir') é o oposto do que esta EPA mede. A competência real é pedir só o que muda a conduta, e interpretar o resultado à luz da probabilidade que você já tinha antes do exame — não como um veredito isolado.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você está diante de um paciente com suspeita moderada de TEP. Pede o D-dímero. Ele vem positivo. Um interno em nível mais baixo de confiabilidade lê isso como \"confirma TEP\" e já quer iniciar anticoagulação. Mas o D-dímero positivo, isoladamente, não confirma nada — ele tem baixa especificidade, e sobe em dezenas de outras condições (infecção, pós-operatório, gravidez, idade avançada). A pergunta que a EPA-3 testa não é 'você sabe pedir o exame', é 'você sabe o que o resultado, positivo ou negativo, muda na sua probabilidade prévia'."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Todo exame é interpretado contra uma probabilidade prévia"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um exame não tem significado absoluto — ele tem significado relativo à probabilidade que você já tinha antes de pedi-lo. Um D-dímero negativo é muito útil para descartar TEP quando a probabilidade pré-teste já era baixa (ele tem alto valor preditivo negativo nesse cenário). O mesmo D-dímero negativo é muito menos tranquilizador se a probabilidade pré-teste já era alta — nesse caso, mesmo negativo, pode não ser suficiente para descartar, e o exame confirmatório (angioTC, por exemplo) segue sendo necessário. É por isso que a EPA cobra que você declare a probabilidade pré-teste ANTES de pedir o exame, não depois de ver o resultado."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "O que separa os níveis de confiabilidade nesta EPA",
+      "colunas": [
+        "Nível",
+        "Comportamento observável"
+      ],
+      "linhas": [
+        {
+          "Nível": "2 (supervisão direta)",
+          "Comportamento observável": "Pede exames de forma ampla ('painel geral'), sem justificar como cada um mudaria a conduta; interpreta resultado isoladamente, sem referência à probabilidade prévia"
+        },
+        {
+          "Nível": "3 (alvo desta EPA no estágio)",
+          "Comportamento observável": "Pede exames de forma dirigida, explicando o que cada resultado (positivo ou negativo) faria mudar na conduta; interpreta o resultado à luz da probabilidade pré-teste declarada antes do exame"
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Antes de pedir qualquer exame, pergunte: 'o que eu faço diferente se esse resultado vier positivo, e o que eu faço diferente se vier negativo?'. Se a resposta for 'nada muda de qualquer jeito', o exame provavelmente não deveria ser pedido agora."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se, diante de qualquer dúvida diagnóstica, você pedir o maior número possível de exames 'para não deixar passar nada'?",
+      "resposta": "Exames desnecessários geram achados incidentais que exigem investigação adicional (muitas vezes sem benefício real para o paciente), custam recursos do sistema, e podem até atrasar a decisão certa ao gerar ruído. A competência avaliada aqui não é pedir muito — é pedir o exame certo, no momento certo, sabendo de antemão como o resultado vai (ou não vai) mudar sua conduta."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como é avaliada: observação direta durante discussão de caso (o residente pergunta 'por que esse exame, e não aquele' e avalia se a resposta reflete raciocínio pré-teste real), e revisão da adequação dos exames solicitados em relação ao quadro clínico apresentado. Erros comuns do interno: pedir por hábito ou protocolo genérico sem justificar; interpretar resultado como verdade absoluta em vez de atualização de probabilidade; e não repetir ou aprofundar investigação quando um resultado 'normal' não é suficiente para descartar uma hipótese de alta probabilidade prévia."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1mi-02-002",
+        "titulo": "EPA-2 — Priorizar um diagnóstico diferencial",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-01-009",
+        "titulo": "TEP Confirmado — anticoagular com um pé no sangramento",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "A lógica de interpretar exame contra probabilidade pré-teste (aqui exemplificada com D-dímero) é a mesma que organiza a estratificação de risco daquele caso."
+      },
+      {
+        "id": "s10-int1mi-02-004",
+        "titulo": "EPA-4 — Inserir e propor ordens médicas e prescrições",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Depois de decidir e interpretar o exame certo, a próxima competência é traduzir essa decisão numa prescrição/ordem correta."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-02-003-001",
+      "tipo": "mecanismo",
+      "pergunta": "Por que um D-dímero negativo é muito útil para descartar TEP quando a probabilidade pré-teste é baixa, mas pouco tranquilizador quando a probabilidade pré-teste já era alta?",
+      "resposta": "Porque a interpretação de um resultado de exame depende da probabilidade que já existia antes do teste, não só do resultado isolado. Com probabilidade pré-teste baixa, um D-dímero negativo reduz a probabilidade pós-teste para um patamar seguro de descartar. Com probabilidade pré-teste alta, mesmo um resultado negativo pode não reduzir o suficiente a probabilidade pós-teste, exigindo investigação confirmatória adicional (como angioTC) para descartar com segurança.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "internato",
+        "epa",
+        "epa-3",
+        "probabilidade_pre_teste"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "EPA-3 mede o raciocínio transversal de indicar e interpretar exames complementares à luz da probabilidade pré-teste, aplicável a qualquer investigação diagnóstica — não é uma doença ou síndrome com fisiopatologia própria. O bloco já usa o TEP/D-dímero apenas como exemplo ilustrativo de raciocínio, não como caso clínico completo com diagnóstico e desfecho de um paciente específico."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "em_mudanca",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "epa_avaliacao",
-    "raciocinio_diagnostico",
-    "honestidade_epistemica"
+  "fontes": [
+    {
+      "tipo": "diretriz",
+      "titulo": "Core Entrustable Professional Activities for Entering Residency",
+      "autores": "Association of American Medical Colleges (AAMC)",
+      "ano": 2014
+    },
+    {
+      "tipo": "livro",
+      "titulo": "Harrison's Principles of Internal Medicine — capítulo sobre tomada de decisão clínica e uso racional de exames complementares",
+      "autores": "Loscalzo J, Fauci AS, Kasper DL, et al.",
+      "ano": 2022
+    }
   ]
 }

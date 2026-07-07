@@ -5,50 +5,332 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Bombas H+/K+ ATPase",
+    "subtitulo": "Como as células do estômago conseguem criar um ambiente tão ácido quanto o de uma bateria de carro?",
     "semestre": 1,
     "disciplina": "biologia celular",
+    "sistema_corporal": "digestorio",
+    "regiao_anatomica": null,
     "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "2.0",
     "tags": [
-      "biocel",
-      "esqueleto"
+      "transporte ativo",
+      "homeostase",
+      "fisiologia gastrica",
+      "bioenergetica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Secreção ácida gástrica; alvo dos inibidores de bomba de prótons",
-  "narrativa": [],
+  "resumo_conciso": "As células parietais da mucosa gástrica enfrentam um problema termodinâmico brutal: precisam empurrar íons hidrogênio para um ambiente que já está quase um milhão de vezes mais ácido do que o citoplasma delas. Nenhum gradiente espontâneo faz isso sozinho — é como tentar encher de água um copo que já transborda, forçando mais água para dentro. A solução veio na forma da bomba H+/K+ ATPase, uma proteína transmembrana que queima ATP diretamente para trocar prótons por potássio, driblando a própria termodinâmica. Esse mecanismo mantém o pH gástrico baixo o suficiente para ativar enzimas digestivas e matar micro-organismos ingeridos — e é também o alvo exato dos inibidores de bomba de prótons, um dos grupos de medicamentos mais prescritos do mundo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Tente encher um balde que já está cheio até a boca. Cada gota que você força para dentro exige mais pressão que a anterior, porque a água já lá dentro empurra de volta. Agora imagine fazer isso não com água, mas com íons hidrogênio (H+), e não até a boca do balde — até um ambiente quase um milhão de vezes mais concentrado em H+ do que o ponto de partida."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que o estômago precisa ser tão absurdamente ácido?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A digestão de proteínas depende de uma enzima chamada pepsina, mas ela só funciona ativada em pH muito baixo — perto de 2. Esse mesmo ambiente ácido também é a primeira linha de defesa do corpo contra bactérias e parasitas ingeridos com a comida: poucos micro-organismos sobrevivem a um banho de ácido clorídrico. O problema é que criar esse ambiente significa concentrar H+ no lúmen gástrico numa proporção de quase 1.000.000:1 comparado ao citoplasma da célula parietal que produz esse ácido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nenhum canal passivo resolve isso. Canais e transportadores passivos só deixam íons se moverem a favor do gradiente — do lado mais concentrado para o menos concentrado. Aqui a exigência é o oposto: empurrar H+ para onde ele já está concentradíssimo. Isso é fisicamente impossível sem gasto de energia."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, guarde isso: qualquer proteína que resolva esse problema precisa, por definição, consumir energia diretamente — não pode ser um simples canal. É esse requisito que molda toda a solução que vem a seguir."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula parietal resolve o problema"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi acoplar o transporte de H+ ao transporte de potássio (K+) em sentido inverso, usando a energia liberada pela quebra do ATP para bancar a operação inteira. A proteína captura um fosfato do ATP, se autofosforila em um resíduo de aspartato específico, e essa fosforilação distorce sua forma — como uma mola que se contorce ao ser comprimida. Nessa nova forma, ela libera H+ para o lúmen e captura K+ do lado externo. Depois, a proteína se desfosforila, volta à forma original e libera o K+ para dentro da célula, pronta para reiniciar o ciclo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A bomba é feita de duas subunidades: alfa e beta. A subunidade alfa é o motor — ali estão o sítio de ligação do ATP e o canal por onde os íons de fato atravessam a membrana. A subunidade beta não participa diretamente do transporte, mas sem ela a subunidade alfa nunca sairia do retículo endoplasmático rugoso: é a beta que garante o enovelamento correto e o endereçamento da bomba até a membrana apical da célula parietal. Uma bomba sem beta é uma bomba que nunca chega ao seu posto de trabalho."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Um ciclo completo da bomba H+/K+ ATPase",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Ligação do ATP",
+          "explicacao": "A subunidade alfa, voltada para o citosol, liga uma molécula de ATP no seu sítio catalítico."
+        },
+        {
+          "numero": 2,
+          "titulo": "Autofosforilação",
+          "explicacao": "Um grupo fosfato é transferido do ATP para um resíduo de aspartato da proteína, que muda de conformação — o equivalente a girar uma chave que destrava um novo formato da fechadura."
+        },
+        {
+          "numero": 3,
+          "titulo": "Liberação de H+ no lúmen",
+          "explicacao": "Na nova conformação, o sítio de ligação de H+ fica exposto ao lado luminal (extremamente ácido), e o próton é liberado ali, contra o gradiente."
+        },
+        {
+          "numero": 4,
+          "titulo": "Captura de K+",
+          "explicacao": "Ainda na mesma conformação, a proteína captura um íon K+ do lúmen — o troco da transação."
+        },
+        {
+          "numero": 5,
+          "titulo": "Desfosforilação e retorno",
+          "explicacao": "O fosfato é liberado, a proteína volta à forma original, e o K+ capturado é entregue ao citosol da célula parietal, fechando o ciclo."
+        }
+      ]
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎟️",
+      "conteudo": "Pense numa catraca giratória num estádio de futebol lotado, que só gira quando alguém insere uma ficha. Mapeamento: a catraca é a bomba H+/K+ ATPase; a ficha inserida é o ATP; os torcedores que saem do estádio pela catraca são os íons H+ sendo empurrados para o lúmen gástrico (já lotadíssimo de H+); a equipe de limpeza que entra pela mesma catraca, no sentido contrário, são os íons K+ voltando para dentro da célula. Sem ficha, a catraca não gira em nenhum sentido — e sem ATP, a bomba simplesmente para, travada."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A H+/K+ ATPase é o estrangulamento final da secreção ácida gástrica: histamina, acetilcolina e gastrina atuam por vias diferentes, mas todas convergem no mesmo ponto — ativar ou translocar essa bomba até a membrana apical da célula parietal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa bomba se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A bomba depende de duas coisas para existir: a energia constante fornecida pelo metabolismo da célula parietal (rica em mitocôndrias, não por acaso) e a maquinaria de tráfego vesicular que a transporta do citoplasma até a membrana apical quando a célula recebe o sinal para secretar ácido. Em repouso, a maior parte das bombas fica guardada em túbulos vesiculares dentro da célula; só quando o estímulo chega elas se fundem à membrana e começam a trabalhar. É por isso que a secreção ácida pode aumentar drasticamente em minutos após uma refeição — não é preciso sintetizar bombas novas, apenas mover as que já existem para o lugar certo."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "ATPase",
+      "origem": "do inglês/científico ATP (adenosine triphosphate, do grego adenina + latim triphosphate) + sufixo -ase",
+      "significado": "enzima que quebra ATP",
+      "explicacao": "O sufixo '-ase' identifica uma enzima; 'ATP' é o substrato que ela processa. O nome é uma descrição funcional direta: é literalmente 'a enzima que hidrolisa ATP'. A convenção de nomear enzimas pelo substrato que atacam, seguido de '-ase', é praticamente universal em bioquímica — lactase quebra lactose, protease quebra proteínas, ATPase quebra ATP."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a H+/K+ ATPase fosse bloqueada permanentemente em todas as células parietais, o que aconteceria com a digestão?",
+      "resposta": "O pH do lúmen gástrico subiria drasticamente — condição chamada acloridria. Sem ácido suficiente, o pepsinogênio não seria convertido em pepsina ativa, e a digestão de proteínas ficaria seriamente comprometida. Pior: a barreira ácida contra micro-organismos ingeridos desapareceria, aumentando o risco de infecções entéricas. É exatamente esse cenário, de forma controlada e reversível, que os inibidores de bomba de prótons produzem — por isso seu uso prolongado é associado a maior risco de infecções gastrointestinais."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo da bomba H+/K+ ATPase",
+      "descricao": "Esquema em corte transversal da membrana apical de uma célula parietal, mostrando a proteína em duas conformações sucessivas: uma com sítio de ligação voltado para o citosol capturando ATP, outra com sítio voltado para o lúmen liberando H+ e capturando K+. Setas indicam o ciclo de fosforilação e desfosforilação.",
+      "prompt_ia": "Diagrama científico vetorial, fundo neutro adaptativo, estilo de livro didático. Corte transversal da membrana apical de uma célula parietal gástrica. Duas conformações lado a lado da bomba H+/K+ ATPase: conformação 1 (citosólica) com ATP se ligando e seta de fosforilação; conformação 2 (luminal) liberando H+ para o lúmen extremamente ácido (representado por fundo amarelo-esverdeado) e capturando K+. Legendas em português: 'ATP', 'ADP + Pi', 'H+', 'K+', 'subunidade alfa', 'subunidade beta'. Setas circulares indicando o ciclo. Cores suaves, alto contraste, sem elementos fotorrealistas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-01-003",
+        "titulo": "Transporte Ativo Primário",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "O entendimento de que proteínas de membrana podem consumir ATP diretamente para mover íons contra o gradiente é pré-requisito indispensável para o mecanismo específico da H+/K+ ATPase."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Farmacologia dos inibidores de bomba de prótons",
+        "mecanismo_conexao": "Omeprazol e outros IBPs se ligam covalentemente a resíduos de cisteína da subunidade alfa, inativando a bomba de forma irreversível até que novas moléculas sejam sintetizadas.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 5,
+        "topico": "Doença do refluxo gastroesofágico e úlcera péptica",
+        "mecanismo_conexao": "O desequilíbrio entre secreção ácida e proteção da mucosa, mediado por esta bomba, é a base fisiopatológica de DRGE e úlceras.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "topico": "Gastrite atrófica e anemia perniciosa",
+        "mecanismo_conexao": "A destruição autoimune das células parietais reduz a secreção ácida mediada por esta bomba e compromete também a produção de fator intrínseco, ligando este mecanismo à deficiência de vitamina B12.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-01-003-05",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "A H+/K+ ATPase é um caso específico da família mais ampla de ATPases tipo P discutida na visão geral do transporte ativo primário."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-01-003-05-03-fc01",
+      "pergunta": "Por que a H+/K+ ATPase precisa consumir ATP diretamente, em vez de usar um canal passivo simples?",
+      "resposta": "Porque a tarefa é empurrar H+ para um ambiente onde ele já está quase um milhão de vezes mais concentrado do que no citosol da célula parietal. Nenhum canal passivo move íons contra o próprio gradiente — passivo, por definição, significa seguir o gradiente. Só uma proteína capaz de acoplar o transporte a uma reação que libera energia (a hidrólise do ATP) consegue vencer essa barreira termodinâmica.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["bomba-h-k-atpase", "transporte-ativo", "termodinamica"]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-03-fc02",
+      "pergunta": "Descreva o ciclo completo da bomba H+/K+ ATPase, desde a ligação do ATP até a entrega do K+ ao citosol.",
+      "resposta": "1) A subunidade alfa, com o sítio catalítico voltado para o citosol, liga uma molécula de ATP. 2) Um grupo fosfato é transferido para um resíduo de aspartato da proteína, provocando uma mudança conformacional. 3) Na nova forma, o sítio de ligação de H+ fica exposto ao lúmen gástrico, e o próton é liberado ali. 4) Ainda nessa conformação, um íon K+ do lúmen é capturado. 5) A proteína se desfosforila, retorna à conformação original, e libera o K+ capturado no citosol, encerrando o ciclo e ficando pronta para reiniciar.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["bomba-h-k-atpase", "mecanismo", "fosforilacao"]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-03-fc03",
+      "pergunta": "Verdadeiro ou falso e justifique: 'a subunidade beta da H+/K+ ATPase participa diretamente do transporte de íons, funcionando como um segundo canal'.",
+      "resposta": "Falso. A subunidade beta não participa do transporte iônico propriamente dito — quem faz isso é exclusivamente a subunidade alfa, que contém o sítio catalítico de ATP e o canal de passagem dos íons. A função da beta é de chaperona: garantir o enovelamento correto da subunidade alfa e seu endereçamento até a membrana apical da célula parietal. Sem a beta, a alfa fica retida no retículo endoplasmático e nunca chega ao seu local funcional — mas isso é um problema de tráfego proteico, não de mecanismo de transporte.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["bomba-h-k-atpase", "subunidade-beta", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-03-fc04",
+      "pergunta": "Se a H+/K+ ATPase de todas as células parietais de um paciente fosse permanentemente inativada, o que aconteceria com a digestão de proteínas e com a proteção antimicrobiana do estômago?",
+      "resposta": "O pH luminal subiria drasticamente (acloridria). Sem ácido suficiente, o pepsinogênio deixaria de ser convertido em pepsina ativa, prejudicando severamente a digestão de proteínas. Ao mesmo tempo, a barreira ácida que normalmente destrói a maioria dos micro-organismos ingeridos desapareceria, aumentando o risco de infecções entéricas e alterando a composição da microbiota gástrica e intestinal.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["bomba-h-k-atpase", "acloridria", "digestao"]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-03-fc05",
+      "pergunta": "Paciente de 60 anos em uso contínuo de omeprazol há 8 anos para DRGE apresenta anemia macrocítica e parestesias em membros inferiores. Qual mecanismo, relacionado à bomba H+/K+ ATPase, ajuda a explicar esse quadro?",
+      "resposta": "O uso prolongado de inibidores de bomba de prótons reduz cronicamente a acidez gástrica. Embora o mecanismo clássico de deficiência de B12 por hipocloridria seja discretamente diferente da destruição autoimune de células parietais (gastrite atrófica), ambos convergem no mesmo resultado: sem ácido suficiente, a vitamina B12 ligada a proteínas alimentares não é liberada adequadamente para se ligar ao fator intrínseco, prejudicando sua absorção no íleo terminal. O resultado, a longo prazo, é anemia megaloblástica e degeneração combinada subaguda da medula espinhal, explicando as parestesias.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["bomba-h-k-atpase", "ibp", "deficiencia-b12", "farmacologia"]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-03-fc06",
+      "pergunta": "A palavra 'ATPase' não menciona nada sobre transporte de íons. O que essa etimologia revela — e o que ela deixa de fora — sobre a função real dessa proteína?",
+      "resposta": "A etimologia (ATP + sufixo '-ase', que designa enzima) descreve apenas a atividade catalítica: uma proteína que hidrolisa ATP. Esse nome nasceu de como a proteína foi caracterizada bioquimicamente primeiro — pela reação que catalisa em tubo de ensaio. Só depois se descobriu que essa hidrólise está fisicamente acoplada ao transporte vetorial de H+ e K+ através da membrana. O nome, portanto, descreve o motor da máquina (a quebra de ATP) mas não descreve o trabalho que esse motor realiza (bombear íons contra gradiente) — um padrão comum em nomenclatura enzimática, que tende a nomear pelo substrato processado, não pela função fisiológica final.",
+      "tipo": "etimologia",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["bomba-h-k-atpase", "etimologia", "nomenclatura-enzimatica"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-01-003-05-03-caso01",
+      "titulo": "Dor em queimação que piora ao deitar",
+      "apresentacao": "Homem de 45 anos, motorista de caminhão, procura atendimento por dor epigástrica em queimação há 3 meses, que piora após refeições copiosas e ao se deitar para dormir, aliviando parcialmente com antiácidos de venda livre. Relata uso frequente de anti-inflamatórios não esteroidais para dor lombar crônica. Exame físico sem alterações relevantes. Endoscopia digestiva alta revela esofagite erosiva leve e mucosa gástrica com sinais de irritação, sem úlcera ativa.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Combinação de dois fatores: relaxamento inadequado do esfíncter esofagiano inferior (favorecido por refeições copiosas e posição deitada) e uso crônico de anti-inflamatórios, que reduz a proteção da mucosa gástrica e esofágica contra o ácido."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A bomba H+/K+ ATPase das células parietais continua secretando ácido normalmente — o problema não é excesso de produção, mas o contato prolongado desse ácido com mucosas que não estão preparadas para tolerá-lo (esôfago) ou que estão com a defesa reduzida (estômago)."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O refluxo do conteúdo ácido gástrico para o esôfago expõe repetidamente uma mucosa sem a proteção de muco e bicarbonato que existe no estômago, causando inflamação e erosão superficial."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Pirose (queimação retroesternal) que piora deitado — porque a gravidade deixa de ajudar a manter o conteúdo gástrico no lugar — e após refeições grandes, que aumentam a pressão intragástrica e estimulam secreção ácida."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem intervenção, a exposição ácida repetida pode evoluir para esofagite erosiva mais grave, estenose esofágica ou, a longo prazo, esôfago de Barrett — uma alteração pré-maligna do epitélio esofágico."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra a aplicação clínica direta da bomba H+/K+ ATPase: o tratamento de escolha atua bloqueando exatamente essa proteína, reduzindo a produção de ácido na fonte, independentemente de a causa ser hipersecreção ou falha da barreira protetora.",
+      "disciplinas_relacionadas": ["fisiologia", "farmacologia", "gastroenterologia"],
+      "diagnostico_revelado": "Doença do refluxo gastroesofágico (DRGE) com esofagite erosiva leve, agravada pelo uso crônico de anti-inflamatórios.",
+      "tratamento_resumido": "Inibidor de bomba de prótons (como omeprazol) para bloquear a H+/K+ ATPase e reduzir a acidez luminal, permitindo a cicatrização da mucosa; orientação para suspender ou substituir o anti-inflamatório; medidas posturais e dietéticas (evitar deitar logo após comer, elevar a cabeceira da cama)."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-biocel-01-003-05-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "fisiologia",
-    "correlacao_clinica"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Boron WF, Boulpaep EL. Medical Physiology. 3rd ed. Elsevier; 2017. Capítulo sobre secreção gástrica.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 13ª ed. Elsevier; 2017.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "A subunidade beta participa do transporte de íons.",
+      "correcao": "Apenas a subunidade alfa transporta íons; a beta é chaperona de tráfego e estabilidade.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Inibidores de bomba de prótons bloqueiam a bomba de forma reversível e instantaneamente reversível.",
+      "correcao": "IBPs se ligam covalentemente à bomba, inativando-a de forma irreversível até síntese de novas moléculas.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "bomba de prótons",
+      "termo_es": "bomba de protones",
+      "termo_en": "proton pump",
+      "abreviatura": "H+/K+ ATPase"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "2.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Reescrita completa da narrativa e flashcards, correção de pré-requisito (título trocado por ID técnico s1-biocel-01-003), adição de flashcard armadilha e caso clínico revisado.",
+      "motivo": "Alinhamento com a Filosofia ANIMA — narrativa socrática de fachada, analogia repetitiva de catraca sem mapeamento completo do ciclo, pré-requisito inválido apontando para string livre em vez de ID real."
+    }
   ]
 }

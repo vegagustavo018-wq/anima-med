@@ -5,50 +5,133 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Ionização, pKa e a Equação de Henderson-Hasselbalch",
+    "subtitulo": "Por que o mesmo fármaco atravessa uma membrana no estômago e fica preso no rim?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "farma1",
-      "esqueleto"
-    ],
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
+    "tags": ["farma1", "farmacocinetica", "pka", "henderson-hasselbalch", "ionizacao", "aprisionamento-ionico", "absorcao", "core"],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Grau de ionização pelo pH; aprisionamento iônico; absorção conforme meio",
-  "narrativa": [],
+  "resumo_conciso": "A maioria dos fármacos é um ácido ou uma base fraca, e isso cria um problema prático: a mesma molécula pode existir em duas formas químicas — uma carregada eletricamente (ionizada) e outra neutra (não ionizada) — e só a forma neutra, suficientemente lipossolúvel, atravessa a bicamada lipídica das membranas celulares por difusão passiva. A forma ionizada, hidrofílica, fica presa em qualquer compartimento aquoso onde se encontre. Como o equilíbrio entre essas duas formas depende diretamente do pH do meio e de uma propriedade fixa da molécula chamada pKa, o mesmo fármaco pode estar predominantemente neutro no estômago (pH ácido) e predominantemente ionizado no plasma (pH neutro), ou vice-versa, dependendo de ser ácido ou base fraca. A equação de Henderson-Hasselbalch formaliza essa relação, permitindo calcular exatamente qual fração da dose está em cada forma em qualquer pH. Essa lógica explica dois fenômenos centrais da farmacocinética: por que a absorção gastrintestinal de um fármaco depende do pH do segmento do tubo digestivo onde ele está, e por que um fármaco pode ficar concentrado (\"aprisionado\") em um compartimento com pH diferente do plasma — como ocorre na eliminação renal, no leite materno ou no líquido intracelular em intoxicações. Entender essa relação entre estrutura química, pH ambiental e permeabilidade de membrana é pré-requisito para prever absorção, redistribuição, interações e até estratégias de tratamento de intoxicações por alcalinização ou acidificação da urina.",
+  "narrativa": [
+    {"tipo": "texto", "conteudo": "Um mesmo comprimido de ácido acetilsalicílico, tomado por via oral, encontra dois ambientes muito diferentes em poucos centímetros de distância: o estômago, com pH em torno de 1,5 a 3,5, e o duodeno, já com pH próximo de 6 a 7. A molécula do fármaco não muda de composição entre um lugar e outro — mas seu comportamento muda drasticamente."},
+    {"tipo": "texto", "conteudo": "Em um desses ambientes, boa parte da droga atravessa a mucosa gástrica com facilidade; no outro, a maior parte fica retida no lúmen intestinal, incapaz de entrar na circulação com a mesma eficiência relativa por unidade de área. Por que o mesmo fármaco se comporta de forma tão diferente sem que uma única ligação química tenha sido quebrada?"},
+    {"tipo": "texto", "conteudo": "A resposta começa numa constatação simples: a grande maioria dos fármacos usados na clínica não é uma molécula neutra fixa — é um ácido fraco ou uma base fraca. Isso significa que ela pode ganhar ou perder um próton (H⁺) dependendo da concentração de H⁺ ao redor, ou seja, dependendo do pH do meio. E cada vez que ganha ou perde esse próton, a molécula muda de estado elétrico: passa de neutra para carregada, ou de carregada para neutra. Essa mudança de estado é o que decide o destino da molécula."},
+    {"tipo": "secao", "titulo": "O problema que a célula impõe ao fármaco"},
+    {"tipo": "texto", "conteudo": "A barreira que separa o lúmen do tubo digestivo — ou qualquer compartimento aquoso do corpo — da corrente sanguínea é, na imensa maioria dos casos, uma bicamada lipídica: o interior hidrofóbico da membrana plasmática das células epiteliais. Para atravessar essa bicamada por difusão passiva (o mecanismo mais comum e mais eficiente de absorção de fármacos), uma molécula precisa ser suficientemente lipossolúvel para se dissolver, ainda que brevemente, na gordura da membrana."},
+    {"tipo": "texto", "conteudo": "Aqui está o problema central: uma molécula eletricamente carregada é circundada por moléculas de água organizadas ao seu redor (a chamada camada de hidratação), o que a torna hidrofílica — ela prefere ficar dissolvida em água a se inserir numa membrana de lipídios. Uma molécula neutra, sem carga líquida, não tem essa camada de hidratação obrigatória e consegue, se for suficientemente apolar, atravessar a bicamada. Ou seja: **a mesma substância química, em dois estados de ionização diferentes, tem duas permeabilidades de membrana radicalmente diferentes.**"},
+    {"tipo": "pausa", "conteudo": "Pausa para fixar: todo fármaco ácido ou básico fraco existe em equilíbrio dinâmico entre uma forma neutra (lipossolúvel, capaz de atravessar membranas) e uma forma ionizada (hidrossolúvel, presa no compartimento aquoso). O que decide qual forma predomina, a cada instante e em cada lugar do corpo, é o pH do meio."},
+    {"tipo": "secao", "titulo": "Como se resolve: o equilíbrio ácido-base movendo a balança"},
+    {"tipo": "texto", "conteudo": "Pense num fármaco ácido fraco, como o próprio ácido acetilsalicílico. Em solução, ele existe em equilíbrio químico entre sua forma protonada (HA, neutra) e sua forma desprotonada (A⁻, ionizada, com carga negativa), doando um próton para a água ao redor. Esse equilíbrio não é fixo — ele se desloca de acordo com a quantidade de H⁺ livre no meio, exatamente como prevê o princípio de Le Chatelier para qualquer equilíbrio químico reversível."},
+    {"tipo": "texto", "conteudo": "Em meio muito ácido (excesso de H⁺, como no estômago), o equilíbrio é empurrado para a forma protonada e neutra (HA) — há tanto H⁺ disponível que a molécula tende a permanecer com seu próton. Em meio menos ácido ou alcalino (menos H⁺ livre, como no plasma), o equilíbrio se desloca para a forma desprotonada e ionizada (A⁻) — a molécula perde o próton com mais facilidade. Para uma base fraca, a lógica é espelhada: em meio ácido, ela captura um próton extra e fica protonada e ionizada (carga positiva); em meio alcalino, permanece na forma neutra, sem esse próton extra."},
+    {"tipo": "texto", "conteudo": "Note a consequência prática, muitas vezes contraintuitiva para quem está aprendendo: **um ácido fraco fica mais não ionizado (e, portanto, mais absorvível) em meio ácido; uma base fraca fica mais não ionizada (e mais absorvível) em meio alcalino.** É o oposto do que a intuição sugere à primeira vista — não é que 'ácido absorve mais em qualquer lugar', é que cada tipo de fármaco tem sua própria zona de pH favorável, definida pela direção em que seu equilíbrio de protonação se desloca."},
+    {"tipo": "secao", "titulo": "A propriedade fixa da molécula: o pKa"},
+    {"tipo": "texto", "conteudo": "Se o pH do meio decide a direção do equilíbrio, falta ainda uma peça: cada molécula tem uma tendência própria, fixa, para ceder ou reter seu próton — uma propriedade estrutural determinada pela distribuição eletrônica ao redor do grupo funcional ionizável (carboxila, amina, fenol, sulfonamida, entre outros). Essa tendência é quantificada por uma constante de dissociação ácida, a Ka, e na prática farmacológica é sempre expressa em sua forma logarítmica, o **pKa**: o valor de pH no qual exatamente metade da população de moléculas está na forma ionizada e a outra metade está na forma neutra."},
+    {"tipo": "texto", "conteudo": "O pKa não é o pH do ambiente — é uma propriedade intrínseca e constante da molécula, definida pela sua estrutura química, que não muda dependendo de onde o fármaco está no corpo. O ácido acetilsalicílico tem pKa em torno de 3,5. A morfina, uma base fraca, tem pKa em torno de 8,0 (a literatura reporta alguma variação conforme o método de medição, mas esse valor didático é suficiente para o raciocínio aqui). É a comparação entre esse valor fixo (pKa da molécula) e o valor variável do ambiente (pH do compartimento) que determina, a cada momento, qual fração da dose está ionizada."},
+    {"tipo": "secao", "titulo": "Como funciona em movimento: a equação que calcula a proporção exata"},
+    {"tipo": "texto", "conteudo": "A relação matemática entre pH do meio, pKa da molécula e a proporção entre as formas ionizada e não ionizada é dada pela equação de Henderson-Hasselbalch. Para um ácido fraco, ela é escrita como pH = pKa + log([A⁻]/[HA]) — ou seja, o logaritmo da razão entre a concentração da forma ionizada (A⁻) e da forma não ionizada (HA) é igual à diferença entre o pH do meio e o pKa da molécula. Para uma base fraca, a mesma lógica se aplica trocando qual forma é numerador: pH = pKa + log([B]/[BH⁺]), onde B é a forma neutra e BH⁺ a forma protonada e ionizada."},
+    {"tipo": "passo_a_passo", "titulo": "Usando a equação para prever a fração absorvível de um ácido fraco no estômago", "passos": [
+      {"numero": 1, "titulo": "Definir o pKa da molécula e o pH do compartimento", "explicacao": "Suponha um ácido fraco com pKa = 3,5 (próximo do ácido acetilsalicílico) num estômago com pH = 1,5. Esses dois números são o ponto de partida obrigatório de qualquer cálculo."},
+      {"numero": 2, "titulo": "Calcular a diferença pH − pKa", "explicacao": "1,5 − 3,5 = −2. Esse valor negativo já antecipa a resposta: como o pH do meio é bem menor que o pKa, o equilíbrio deve pender fortemente para a forma protonada e neutra (HA), a que atravessa membrana."},
+      {"numero": 3, "titulo": "Aplicar a equação e obter a razão entre as formas", "explicacao": "log([A⁻]/[HA]) = −2, logo [A⁻]/[HA] = 10⁻² = 0,01. Isso significa que, para cada 100 moléculas na forma neutra (HA), existe apenas 1 molécula na forma ionizada (A⁻) — a esmagadora maioria está pronta para atravessar a membrana."},
+      {"numero": 4, "titulo": "Interpretar o resultado em termos farmacocinéticos", "explicacao": "Quanto maior a fração não ionizada, maior a força motriz de difusão passiva através da mucosa gástrica. É por isso que ácidos fracos com pKa baixo tendem a ter uma fração relevante já absorvível no próprio estômago — ainda que, na prática, essa absorção gástrica seja pequena em termos absolutos, porque a área de superfície e o tempo de contato no estômago são muito menores que no intestino delgado."},
+      {"numero": 5, "titulo": "Repetir o raciocínio para o plasma", "explicacao": "No plasma, com pH ≈ 7,4, a mesma conta dá pH − pKa = 7,4 − 3,5 = 3,9, logo [A⁻]/[HA] = 10^3,9 ≈ 7943. No plasma, portanto, a proporção se inverte quase completamente: a esmagadora maioria da molécula está ionizada."}
+    ]},
+    {"tipo": "texto", "conteudo": "Isso revela o **aprisionamento iônico** (ion trapping): a molécula neutra atravessa a membrana gástrica, chega ao plasma (pH mais alto) e ali se reioniza. A regra é absoluta, não uma questão de grau: apenas a forma não ionizada atravessa membranas por difusão passiva — por isso, uma vez reionizada no novo compartimento, a molécula fica retida ali, incapaz de atravessar de volta pela mesma via."},
+    {"tipo": "highlight", "conteudo": "Regra crítica: só a fração **não ionizada** de um fármaco atravessa membranas biológicas por difusão passiva. A fração ionizada fica retida no compartimento aquoso em que se encontra."},
+    {"tipo": "texto", "conteudo": "Toda previsão de absorção, distribuição e aprisionamento iônico decorre exclusivamente da comparação entre pH do meio e pKa da molécula, calculada pela equação de Henderson-Hasselbalch."},
+    {"tipo": "texto", "conteudo": "O aprisionamento iônico não é uma curiosidade de laboratório — é a base racional de decisões terapêuticas reais. Na intoxicação por ácido acetilsalicílico (salicilatos), alcalinizar a urina com bicarbonato de sódio eleva o pH tubular renal; isso desloca o equilíbrio do ácido fraco para a forma ionizada dentro do túbulo, que não consegue ser reabsorvida de volta para o sangue pelas células do túbulo renal — o fármaco fica 'aprisionado' na urina e é eliminado mais rapidamente. É a mesma equação, a mesma lógica, aplicada como intervenção terapêutica deliberada."},
+    {"tipo": "texto", "conteudo": "O leite materno, com pH ligeiramente mais ácido que o plasma (cerca de 7,0 versus 7,4), também aprisiona preferencialmente bases fracas: elas atravessam do plasma materno na forma neutra e se reionizam no leite, ficando ali relativamente retidas pelo mesmo mecanismo de aprisionamento iônico descrito acima para o rim."},
+    {"tipo": "secao", "titulo": "Com o que esse conceito se articula"},
+    {"tipo": "texto", "conteudo": "Este princípio é pré-requisito direto para entender a absorção gastrintestinal de qualquer fármaco administrado por via oral: a chamada 'teoria da partição do pH' prevê que ácidos fracos são preferencialmente absorvidos em meio ácido (estômago) e bases fracas em meio mais neutro a alcalino (intestino delgado) — embora, na prática, a enorme área de superfície e o tempo de trânsito no intestino delgado façam dele o principal sítio de absorção mesmo para ácidos fracos, matizando a regra simplista."},
+    {"tipo": "texto", "conteudo": "A mesma lógica reaparece na filtração glomerular e reabsorção tubular renal (onde a manipulação do pH urinário altera a depuração de fármacos) e na distribuição para o sistema nervoso central (bases fracas lipossolúveis atravessam a barreira hematoencefálica mais facilmente na forma não ionizada), além de nas interações fármaco-fármaco mediadas por mudança de pH gástrico, como o uso concomitante de inibidores de bomba de prótons alterando a absorção de fármacos ácidos fracos que dependem de meio ácido para permanecerem não ionizados."},
+    {"tipo": "texto", "conteudo": "[AVISO] A chamada 'teoria da partição do pH' foi formulada de maneira mais determinística nas décadas de 1950-60 e hoje é reconhecida como uma simplificação útil, mas incompleta: fatores como a enorme área de superfície intestinal, o tempo de trânsito, a camada de água não agitada adjacente à mucosa e a existência de transportadores de membrana (absorção facilitada, não só difusão passiva) fazem com que a predição pura pela equação de Henderson-Hasselbalch subestime, em vários casos reais, a absorção intestinal de ácidos fracos. A equação continua correta como descrição do equilíbrio químico; o que é discutido é o quanto ela sozinha basta para prever a absorção in vivo."},
+    {"tipo": "secao", "titulo": "O nome e sua origem"},
+    {"tipo": "etimologia", "termo": "pKa", "origem": "p, do alemão Potenz (potência, expoente), usado por analogia ao pH de Sørensen; K de constante (Konstante); a de ácido (acid)", "significado": "o expoente negativo da constante de dissociação ácida", "explicacao": "O prefixo 'p' já era usado por Søren Sørensen em 1909 para criar o termo pH (potência de hidrogênio) como forma prática de expressar concentrações de H⁺ extremamente pequenas em uma escala logarítmica manejável. O mesmo recurso matemático foi depois aplicado à constante de dissociação Ka, gerando pKa = −log(Ka). A equação leva o nome de Lawrence Joseph Henderson, fisiologista que descreveu a relação em 1908 estudando tamponamento sanguíneo, e Karl Albert Hasselbalch, bioquímico dinamarquês que a reescreveu em forma logarítmica em 1917 para facilitar o uso clínico em gasometria. A dupla autoria reflete a mesma dinâmica de muitos conceitos da fisiologia: a observação química veio primeiro (Henderson), a forma prática e utilizável veio depois (Hasselbalch)."},
+    {"tipo": "analogia", "icone": "🚪", "conteudo": "Imagine uma porta giratória de vidro que só deixa passar pessoas sem bagagem — qualquer mochila nas costas trava o mecanismo. **A molécula neutra (não ionizada)** é a pessoa sem bagagem: passa livremente pela porta giratória (a membrana lipídica). **A molécula ionizada** é a mesma pessoa carregando uma mochila de água grudada ao corpo (a camada de hidratação): fica presa do lado de fora. **O pH do ambiente** é como um guarda que, dependendo do humor do dia, obriga mais ou menos gente a vestir a mochila antes de chegar à porta. **O pKa** é o 'ponto de referência' fixo da pessoa — se o guarda está mais rígido que esse ponto de referência, a pessoa quase sempre está de mochila (ionizada); se está mais relaxado, ela quase sempre está livre (não ionizada). A analogia quebra num ponto: na vida real a pessoa decide tirar a mochila; na química, é um equilíbrio estatístico simultâneo — a cada instante, uma fração da população de moléculas está de um jeito e outra fração do outro, não uma molécula inteira oscilando sozinha."},
+    {"tipo": "imagem", "titulo": "Equilíbrio de ionização e travessia de membrana em dois compartimentos de pH diferente", "descricao": "Esquema didático em duas metades lado a lado. À esquerda, um compartimento rotulado 'Estômago pH 1,5' contendo várias moléculas de um ácido fraco predominantemente na forma protonada e neutra (HA, sem carga, representada em cor neutra), com poucas moléculas ionizadas (A⁻, com sinal negativo, em vermelho). Uma seta grande atravessa uma membrana lipídica central (bicamada com cabeças polares e caudas apolares desenhadas esquematicamente) mostrando apenas as moléculas neutras passando. À direita, um compartimento rotulado 'Plasma pH 7,4' onde, após a travessia, as moléculas se reconvertem majoritariamente em forma ionizada (A⁻, vermelho), com uma seta tracejada indicando que a forma ionizada não retorna pela membrana — ilustrando o aprisionamento iônico. Abaixo do esquema, a equação de Henderson-Hasselbalch escrita de forma simples com os valores de pH e pKa usados no exemplo. Legendas em português, cores suaves, fundo neutro adaptável ao tema do app.", "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno de farmacologia. Composição dividida em dois compartimentos por uma membrana celular central desenhada como bicamada lipídica esquemática (círculos representando cabeças polares, linhas onduladas representando caudas apolares). Compartimento esquerdo rotulado 'ESTÔMAGO pH 1,5': múltiplas moléculas pequenas representadas como círculos neutros sem carga (forma HA, cor cinza-azulada) e poucas com sinal negativo vermelho (forma A⁻ ionizada). Setas mostrando apenas as moléculas neutras atravessando a membrana central. Compartimento direito rotulado 'PLASMA pH 7,4': as mesmas moléculas, agora predominantemente com sinal negativo vermelho (A⁻), e uma seta tracejada e barrada voltando para a membrana, simbolizando o aprisionamento iônico. Abaixo da imagem, a fórmula 'pH = pKa + log([A⁻]/[HA])' escrita de forma clara em fonte científica. Legendas em português. Cores suaves, alto contraste, sem texto sobreposto excessivo, sem elementos fotorrealistas. Sem direitos autorais aplicáveis."}
+  ],
+  "flashcards": [
+    {"card_id": "s4-farma1-01-002-02-fc01", "pergunta": "Por que apenas a fração não ionizada de um fármaco ácido ou básico fraco consegue atravessar a membrana celular por difusão passiva?", "resposta": "Porque a molécula ionizada carrega uma carga elétrica líquida que atrai e organiza moléculas de água ao seu redor (camada de hidratação), tornando-a hidrofílica e incompatível com o interior apolar da bicamada lipídica da membrana. A molécula neutra, sem essa camada de hidratação obrigatória, é suficientemente lipossolúvel para se dissolver na membrana e atravessá-la. A diferença não está na identidade química do fármaco, mas no seu estado de protonação no momento da travessia.", "tipo": "por_que", "dificuldade": 2, "nivel_alvo": 3, "tags": ["ionizacao", "membrana", "difusao-passiva"]},
+    {"card_id": "s4-farma1-01-002-02-fc02", "pergunta": "Um fármaco básico fraco tem pKa = 8,0. Ele está mais ionizado no estômago (pH 1,5) ou no plasma (pH 7,4)? Justifique usando a lógica do equilíbrio de protonação.", "resposta": "Está mais ionizado no estômago. Para uma base fraca, quanto mais ácido o meio (mais H⁺ disponível), mais a molécula captura um próton extra e fica na forma protonada e carregada positivamente (BH⁺). No estômago (pH 1,5), muito abaixo do pKa (8,0), a base fica quase totalmente protonada e ionizada. No plasma (pH 7,4), ainda abaixo do pKa mas bem mais próximo dele, uma fração maior permanece na forma neutra (B), lipossolúvel. É por isso que bases fracas tendem a ser mal absorvidas no estômago e mais bem absorvidas em meios menos ácidos.", "tipo": "mecanismo", "dificuldade": 3, "nivel_alvo": 3, "tags": ["pka", "base-fraca", "henderson-hasselbalch"]},
+    {"card_id": "s4-farma1-01-002-02-fc03", "pergunta": "Se a urina de um paciente com intoxicação por um ácido fraco for alcalinizada com bicarbonato de sódio, o que acontece com a reabsorção tubular renal desse fármaco e por quê?", "resposta": "A reabsorção tubular diminui e a eliminação urinária aumenta. Ao elevar o pH da urina, o equilíbrio de ionização do ácido fraco se desloca para a forma ionizada (A⁻) dentro do túbulo renal. A forma ionizada não atravessa com facilidade a membrana das células tubulares de volta para o sangue, ficando efetivamente 'aprisionada' no lúmen tubular e sendo excretada com a urina. Esse é o fundamento farmacocinético da alcalinização urinária usada no tratamento da intoxicação por salicilatos.", "tipo": "contrafactual", "dificuldade": 3, "nivel_alvo": 4, "tags": ["aprisionamento-ionico", "eliminacao-renal", "intoxicacao"]},
+    {"card_id": "s4-farma1-01-002-02-fc04", "pergunta": "Verdadeiro ou falso e justifique: 'Como o estômago é ácido, todo fármaco é melhor absorvido ali do que no intestino delgado.'", "resposta": "Falso. A afirmação ignora que a direção do equilíbrio de ionização depende do tipo de fármaco (ácido ou base fraca) e do seu pKa específico, não apenas do pH do compartimento. Ácidos fracos com pKa baixo tendem a estar mais não ionizados no estômago, favorecendo alguma absorção ali — mas bases fracas ficam predominantemente ionizadas no meio ácido gástrico, sendo mal absorvidas nesse local. Além disso, mesmo para ácidos fracos, a absorção intestinal costuma ser maior na prática, porque a área de superfície do intestino delgado (amplificada por vilosidades e microvilosidades) e o tempo de trânsito são muito maiores que os do estômago, compensando uma fração não ionizada proporcionalmente menor.", "tipo": "armadilha", "dificuldade": 3, "nivel_alvo": 4, "tags": ["absorcao", "armadilha-conceitual", "teoria-particao-ph"]}
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-002-02-caso01",
+      "titulo": "Zumbido, hiperventilação e confusão em adolescente após ingestão de comprimidos",
+      "apresentacao": "Adolescente de 16 anos é trazida ao pronto-socorro pela mãe, que a encontrou sonolenta ao lado de uma cartela vazia de comprimidos de ácido acetilsalicílico, ingeridos cerca de seis horas antes em quantidade não precisada. Refere zumbido nos ouvidos e náuseas. Ao exame, está taquipneica, confusa, com temperatura discretamente elevada. Gasometria arterial mostra alcalose respiratória inicial seguida de acidose metabólica com ânion-gap elevado. Salicilemia está muito acima do valor terapêutico.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ingestão de dose supraterapêutica de ácido acetilsalicílico (um ácido fraco com pKa em torno de 3,5), excedendo a capacidade normal de eliminação renal do organismo."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O equilíbrio de ionização do salicilato circulante no plasma (pH ≈ 7,4, bem acima do pKa da molécula) mantém a maior parte do fármaco na forma ionizada — o que, em condições normais, favoreceria sua excreção renal. Mas a quantidade absoluta ingerida supera a capacidade dos túbulos renais de eliminar o excesso na velocidade necessária."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O salicilato acumulado interfere na fosforilação oxidativa mitocondrial e estimula diretamente o centro respiratório bulbar — mecanismos que não decorrem da ionização em si, mas da concentração tóxica acumulada. Ao mesmo tempo, a fração ainda não ionizada nos túbulos renais tende a ser reabsorvida de volta à circulação caso a urina esteja ácida, perpetuando o acúmulo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Zumbido e hiperventilação (estímulo do centro respiratório), seguidos de alcalose respiratória inicial e, depois, acidose metabólica com ânion-gap elevado — um padrão misto característico da intoxicação salicílica estabelecida."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento, a intoxicação salicílica grave pode evoluir para edema pulmonar não cardiogênico, edema cerebral e óbito. O tratamento inclui suporte, carvão ativado se ingestão recente, e — aplicando diretamente o princípio deste bloco — alcalinização da urina com bicarbonato de sódio intravenoso: elevar o pH urinário desloca o equilíbrio do ácido fraco para a forma ionizada dentro do túbulo, impedindo sua reabsorção e acelerando a excreção ('aprisionamento iônico' usado terapeuticamente). Em casos graves, hemodiálise é indicada."
+        }
+      ],
+      "conexao_com_bloco": "Este caso é a aplicação clínica direta do mecanismo central do bloco: a manipulação deliberada do pH para deslocar o equilíbrio de ionização de um ácido fraco e provocar aprisionamento iônico terapêutico. O bloco já antecipa esse raciocínio ao descrever a alcalinização urinária na intoxicação por salicilatos — o caso apenas dá corpo clínico completo a essa aplicação, incluindo a cascata fisiopatológica que a antecede.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "toxicologia",
+        "clinica_medica",
+        "medicina_de_emergencia"
+      ],
+      "diagnostico_revelado": "Intoxicação aguda por salicilatos (ácido acetilsalicílico) com acidose metabólica de ânion-gap elevado.",
+      "tratamento_resumido": "Suporte clínico, carvão ativado se aplicável, alcalinização da urina com bicarbonato de sódio intravenoso para promover aprisionamento iônico e eliminação renal do salicilato, correção de distúrbios hidroeletrolíticos e, em intoxicação grave ou refratária, hemodiálise."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {"bloco_id": "s4-farma1-01-002-01", "titulo": "Difusão Passiva e Permeabilidade de Membrana", "disciplina": "Farmacologia I — Princípios Gerais", "semestre": 4, "relevancia": "base_necessaria", "explicacao": "Para entender por que apenas a forma não ionizada atravessa a membrana, é preciso já ter visto que a difusão passiva de fármacos através da bicamada lipídica depende de lipossolubilidade e ausência de carga elétrica líquida."}
+    ],
+    "futuras": [
+      {"tipo": "MECANISMO_COMPARTILHADO", "bloco_id_destino": null, "disciplina": "Farmacologia I — Princípios Gerais", "semestre_futuro": 4, "topico": "Teoria da partição do pH e absorção gastrintestinal na prática", "mecanismo_conexao": "O bloco atual estabelece a base físico-química do aprisionamento iônico; a aplicação completa às particularidades da absorção intestinal (área de superfície, transportadores, camada de água não agitada) é escopo de um bloco irmão sobre biodisponibilidade oral.", "confianca": "hipotese_pedagogica"}
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {"id": "s4-farma1-01-002-02-img01", "url": null, "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.", "status": "pendente"}
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "workflow-anima-s4-pipeline",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "3-juizes+adversarial+integrador (pipeline automatizado ANIMA)",
+    "data_revisao": "2026-07-05",
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "farmacocinetica"
-  ]
+  "fontes": [
+    {"tipo": "livro", "citacao": "Brunton LL, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw-Hill; 2023. Capítulo 5 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.", "forca_evidencia": "A", "data_acesso": "2026-07-05"},
+    {"tipo": "livro", "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 1 — Introduction: The Nature of Drugs and Drug Development.", "forca_evidencia": "A", "data_acesso": "2026-07-05"},
+    {"tipo": "livro", "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 8 — Absorption and Distribution of Drugs.", "forca_evidencia": "A", "data_acesso": "2026-07-05"}
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

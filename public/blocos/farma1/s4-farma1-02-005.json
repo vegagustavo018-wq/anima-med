@@ -7,50 +7,344 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Janela Terapêutica e Segurança (Visão Geral)",
+    "subtitulo": "Se a dose que cura e a dose que faz mal fossem quase a mesma, você confiaria nesse remédio?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "seguranca",
+      "janela-terapeutica",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Distância entre eficácia e toxicidade; medir margem de segurança",
-  "narrativa": [],
+  "resumo_conciso": "Todo fármaco que funciona também é capaz de fazer mal — a mesma propriedade que produz o efeito desejado, em dose maior, produz dano. Isso cria um problema que nenhum fármaco escapa: existe sempre uma distância entre a dose que trata e a dose que intoxica, e essa distância nunca é infinita. A farmacologia chama essa distância de janela terapêutica (ou margem de segurança): o intervalo de doses onde o efeito desejado já apareceu e o efeito tóxico ainda não. Ela existe porque a mesma curva dose-resposta que descreve o benefício também descreve, em paralelo e em doses mais altas, o dano — benefício e toxicidade não são fenômenos separados, são a mesma interação fármaco-alvo (ou fármaco-alvos secundários) lida em pontos diferentes do eixo de dose. Quando essas duas curvas ficam próximas, a janela é estreita e a prescrição exige régua fina — ajuste individualizado, monitorização laboratorial, atenção a interações. Quando ficam distantes, a janela é larga e há folga para erro humano, variação entre pacientes e imprecisão de dose sem consequência grave. Entender que essa distância existe, e por que ela pode ser grande ou pequena, é o que prepara o terreno para medi-la com precisão — o que o próximo tema faz, com o índice terapêutico e as doses de referência (DE50, DL50).",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já viu, no panorama da farmacodinâmica, que um fármaco encaixa num alvo molecular e aciona uma cascata que a célula já sabia fazer. Isso explica como o efeito acontece. Mas surge de imediato uma pergunta prática, a que qualquer médico faz antes de assinar uma receita: até que ponto posso aumentar a dose com segurança? Porque toda vez que se aumenta a dose de um fármaco, dois efeitos crescem ao mesmo tempo — o efeito que você quer e, mais cedo ou mais tarde, um efeito que você não quer."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema que todo fármaco enfrenta, sem exceção"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um fármaco não tem um botão de 'ligado' que separa perfeitamente 'trata' de 'não faz nada'. Ele age numa proporção crescente conforme a dose sobe — mais receptores ocupados, mais cascata disparada, mais efeito. O problema é que essa mesma lógica de 'mais dose, mais efeito' não para magicamente no ponto ideal. Se você continuar subindo a dose além do necessário para tratar, o mesmo mecanismo (ou um mecanismo vizinho, num tecido que você não pretendia atingir) começa a produzir dano em vez de benefício."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso significa que todo fármaco clinicamente ativo tem, embutido nele, um risco proporcional à dose. Não existe fármaco eficaz que seja, ao mesmo tempo, incapaz de fazer mal em alguma dose. Se fosse incapaz de fazer mal em qualquer dose, muito provavelmente também seria incapaz de fazer efeito nenhum — porque é a mesma propriedade de interagir com o corpo que produz as duas coisas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: o problema não é 'este fármaco é perigoso'. O problema é estrutural — toda substância capaz de mudar a fisiologia numa dose também é capaz de mudá-la demais numa dose maior. A pergunta que importa não é se existe risco, mas a que distância de dose ele aparece."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a farmacologia resolveu isso — sem ainda nomear a solução"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A saída não foi tentar eliminar o risco (isso é impossível para qualquer fármaco realmente ativo). A saída foi medir a distância entre onde o benefício aparece e onde o dano aparece, e usar essa distância como critério prático de quão apertado precisa ser o controle da dose. Se o efeito desejado surge numa faixa de dose e o efeito tóxico só surge numa faixa muito mais alta, o profissional tem folga: pode arredondar a dose, ajustar sem exames repetidos, tolerar alguma variação entre pacientes sem medo. Se as duas faixas quase se tocam, a folga desaparece — a dose precisa ser calculada com precisão quase cirúrgica, e qualquer coisa que altere a quantidade de fármaco no corpo (uma interação, uma falha renal, um erro de cálculo) pode empurrar o paciente da faixa de benefício direto para a faixa de dano."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa distância — grande ou pequena, conforme o fármaco — é exatamente o que se quer dizer quando se fala em margem de segurança. Ela não é uma propriedade abstrata: é o espaço prático que o médico tem para errar sem que o paciente pague um preço grave por isso."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essa distância é feita"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para existir uma distância, é preciso haver duas curvas — não uma. A primeira é a curva do efeito desejado: conforme a dose sobe, a proporção de pacientes (ou a intensidade do efeito num mesmo paciente) que respondem terapeuticamente aumenta, até atingir um platô. A segunda é a curva do efeito tóxico: conforme a dose sobe, a proporção de pacientes que sofrem dano também aumenta, com sua própria forma e seu próprio ponto de início. A distância entre onde a primeira curva já produziu benefício relevante e onde a segunda curva começa a produzir dano relevante é a janela terapêutica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As duas curvas quase sempre têm formatos parecidos (ambas em S, ambas crescentes com a dose), porque no fundo derivam do mesmo tipo de interação fármaco-alvo — só que aplicada a alvos diferentes ou a graus diferentes de ocupação do mesmo alvo. É por isso que a toxicidade não é um evento estranho ao mecanismo terapêutico: na maioria dos casos, ela é o mesmo mecanismo, só que exagerado, ou o mesmo fármaco alcançando um segundo alvo que não estava no plano."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A janela terapêutica não é uma propriedade isolada do fármaco — é a distância entre duas curvas dose-resposta que crescem em paralelo: a do benefício e a da toxicidade. Onde essa distância é grande, sobra folga clínica; onde é pequena, a dose vira decisão de alto risco."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona na prática, à beira do leito"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em dois cenários opostos que qualquer estudante vai encontrar rapidamente na vida clínica. No primeiro, um fármaco de janela larga: a dose eficaz e a dose tóxica estão separadas por uma margem generosa. O médico pode prescrever uma dose padrão para a maioria dos pacientes, sem precisar de exame de sangue para conferir se o nível do fármaco está seguro. Pequenos erros de dose, pequenas diferenças de peso ou de função renal entre pacientes, não deslocam ninguém para a zona de perigo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No segundo cenário, um fármaco de janela estreita: a dose eficaz e a dose tóxica quase se sobrepõem. Aqui, a mesma dose que funciona bem em um paciente pode intoxicar outro que elimina o fármaco mais devagar (por exemplo, por função renal reduzida) ou que está tomando outro medicamento que compete pela mesma via de eliminação. Nesses casos, a prática clínica muda de figura: em vez de uma dose fixa para todos, usa-se monitorização — medir a concentração do fármaco no sangue do próprio paciente — e ajustes finos e frequentes, porque a distância de segurança é curta demais para confiar apenas na dose padrão da bula."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Note o que muda entre os dois cenários: não é o mecanismo de ação do fármaco, é a distância entre as duas curvas. A mesma lógica de 'benefício e dano crescem com a dose' está presente nos dois casos. O que distingue a prática segura da prática perigosa é o tamanho dessa distância — e é exatamente essa distância que o próximo tema vai aprender a medir com um número."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Neste ponto você já tem a lógica inteira: todo fármaco ativo carrega risco proporcional à dose; a diferença entre fármacos seguros e fármacos delicados é a distância entre a dose que trata e a dose que intoxica; essa distância determina se a prescrição pode ser padronizada ou precisa ser individualizada e monitorada. O que falta é dar um número a essa distância — isso é tarefa do próximo tema, não deste."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa ideia se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A janela terapêutica depende diretamente de tudo que a farmacocinética explica: quanto mais previsível for a absorção, a distribuição e a eliminação de um fármaco em diferentes pacientes, menos a concentração real oscila em torno da dose prescrita — e menos risco há de escapar da janela mesmo quando ela é estreita. Fármacos de eliminação instável (por doença renal, hepática, ou interação com outro medicamento) tornam qualquer janela, mesmo moderada, mais arriscada na prática, porque a dose deixa de prever com confiança a concentração real no corpo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa ideia também dialoga com o restante da farmacodinâmica: um fármaco pouco seletivo, que encaixa em vários alvos além do pretendido, tende a ter janela mais estreita, porque parte da toxicidade nasce justamente da ativação desses alvos secundários em doses que ainda pareciam terapêuticas para o alvo principal. Seletividade e janela terapêutica caminham juntas — quanto mais um fármaco 'erra o alvo' em dose alta, menor tende a ser sua margem de segurança."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica dos semestres seguintes, essa lógica vai reaparecer toda vez que você ouvir falar em monitorização terapêutica de fármacos, em ajuste de dose por função renal ou hepática, e em decisões de trocar um fármaco por outro de mesma classe apenas para ganhar margem de segurança num paciente frágil."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "janela terapêutica",
+      "origem": "terapêutica vem do grego therapeutikós (que cuida, que trata); 'janela' é metáfora do português comum, não termo grego ou latino clássico",
+      "significado": "a abertura, o intervalo por onde passa a possibilidade de tratar sem ferir",
+      "explicacao": "Diferente de outros termos farmacológicos, 'janela terapêutica' não vem de uma raiz grega ou latina antiga — é uma metáfora relativamente moderna, incorporada à linguagem médica no século XX junto com o desenvolvimento da farmacologia quantitativa. A imagem escolhida é deliberada: uma janela é uma abertura limitada, com bordas de cada lado. Do lado de dentro da janela, o fármaco funciona; ultrapassar a borda superior, mesmo que por pouco, é sair da abertura seletiva e cair em terreno de dano. A metáfora comunica, sem nenhuma fórmula, a ideia central deste bloco: existe um intervalo, e ele tem limites dos dois lados. Termos sinônimos usados na literatura incluem 'margem de segurança' e 'índice terapêutico' — este último, porém, já é o nome do número que quantifica a janela, e pertence ao próximo tema."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🌡️",
+      "conteudo": "Pense na dosagem de um fármaco como a temperatura da água de um banho. Água fria demais não limpa nem relaxa — é o equivalente a uma dose baixa demais para fazer efeito. Água na temperatura certa é confortável e cumpre a função. Mas a mesma torneira que aquece a água até o ponto ideal, se você continuar girando, produz água escaldante — o mesmo mecanismo (aquecimento) que trouxe conforto agora causa queimadura. A **janela terapêutica** é a faixa de posições da torneira entre 'já está morna o suficiente para relaxar' e 'já está quente demais e machuca'. Em alguns chuveiros essa faixa é larga — você pode girar bastante o registro sem se queimar. Em outros, mal ajustados, a faixa é mínima: um giro pequeno demais deixa a água fria, um giro só um pouco maior escalda. A analogia quebra num ponto: a temperatura da água é uma única variável contínua controlada por uma única torneira, enquanto no corpo humano a 'torneira' real depende de múltiplos fatores simultâneos — função renal, outros medicamentos, peso, genética — que podem estreitar ou alargar a faixa seguramente utilizável mesmo sem que ninguém toque na dose prescrita."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um fármaco pudesse, hipoteticamente, ter uma janela terapêutica infinita — nenhuma dose, por maior que fosse, produzisse dano — o que isso mudaria na prática da prescrição?",
+      "resposta": "Mudaria quase tudo sobre cautela, e quase nada sobre eficácia. Doses poderiam ser arredondadas livremente, erros de cálculo deixariam de ser emergência, e a monitorização de níveis sanguíneos se tornaria desnecessária para esse fármaco específico. Mas essa situação é, na prática, teórica: significaria que o fármaco não interage de forma exagerada com nenhum sistema do corpo em nenhuma quantidade, o que é incomum para qualquer substância biologicamente ativa o suficiente para tratar uma doença. Substâncias que mais se aproximam desse ideal (janela muito larga) ainda têm um teto — só que tão distante da dose usual que raramente é alcançado por acidente. A lição não é que a segurança absoluta exista, mas que ela pode, na prática clínica, ser tão distante que se comporta como se existisse — e é exatamente essa distância que o índice terapêutico, no próximo tema, aprende a expressar como número."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Imagem"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas curvas, uma distância",
+      "descricao": "Gráfico didático com eixo horizontal de dose (crescente da esquerda para a direita, escala não numerada) e eixo vertical de proporção de resposta (0 a 100%). Duas curvas em formato de S, ambas crescentes: a curva da esquerda, em tom que remete a benefício, representa o efeito terapêutico desejado; a curva da direita, em tom que remete a alerta, representa o efeito tóxico. Uma faixa sombreada e destacada entre o ponto em que a curva terapêutica já atingiu resposta relevante e o ponto em que a curva tóxica ainda não começou a subir, rotulada 'janela terapêutica'. Duas versões lado a lado do mesmo gráfico: uma com as curvas bem separadas (janela larga) e outra com as curvas quase coincidentes (janela estreita), para contraste visual direto. Legendas curtas em português. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno de farmacologia. Dois gráficos lado a lado, cada um com eixo X rotulado 'Dose (escala crescente)' e eixo Y rotulado 'Proporção de resposta (%)', sem valores numéricos no eixo. Em cada gráfico, duas curvas sigmoides (em formato de S) crescentes: uma curva em tom azul suave rotulada 'efeito terapêutico', outra curva em tom vermelho/laranja suave rotulada 'efeito tóxico'. No gráfico da esquerda, rotulado 'JANELA LARGA', as duas curvas estão bem separadas ao longo do eixo X, com uma área sombreada em verde claro entre elas rotulada 'margem de segurança ampla'. No gráfico da direita, rotulado 'JANELA ESTREITA', as duas curvas estão próximas e quase se sobrepondo, com uma área sombreada estreita em amarelo/laranja entre elas rotulada 'margem de segurança mínima'. Setas finas indicando a distância entre as curvas em cada gráfico. Cores suaves, alto contraste, sem texturas fotorrealistas, sem marcas d'água, texto apenas em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-000",
+        "titulo": "Farmacodinâmica — O Que o Fármaco Faz ao Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume a lógica geral de que o fármaco age ligando-se a um alvo e produzindo uma cascata proporcional à dose — a janela terapêutica é a aplicação prática dessa mesma lógica ao eixo do risco."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Monitorização terapêutica de fármacos (TDM) e ajuste de dose à beira do leito",
+        "mecanismo_conexao": "A decisão de monitorar níveis sanguíneos de um fármaco (ao invés de confiar apenas na dose prescrita) nasce diretamente do reconhecimento de que sua janela terapêutica é estreita — o princípio geral apresentado aqui é o que justifica a prática clínica futura.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Farmacologia de fármacos de janela estreita (anticoagulantes orais, digitálicos, alguns antiepilépticos, aminoglicosídeos)",
+        "mecanismo_conexao": "Cada classe futura de fármaco de janela estreita será compreendida à luz deste princípio geral: a proximidade entre a curva de efeito e a curva de toxicidade é o que justifica protocolos de dose individualizada para essas classes específicas.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Reconhecimento e manejo de intoxicação medicamentosa aguda",
+        "mecanismo_conexao": "A intoxicação por superdosagem, acidental ou intencional, é a consequência clínica direta de um paciente ter ultrapassado a borda superior da janela terapêutica — o quadro que aqui é lógica abstrata vira, na emergência, apresentação concreta.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-005-fc01",
+      "pergunta": "Por que todo fármaco farmacologicamente ativo carrega, necessariamente, algum grau de risco proporcional à dose?",
+      "resposta": "Porque o mesmo mecanismo que produz o efeito terapêutico (ligação a um alvo, ativação de uma cascata proporcional à dose) não para automaticamente no ponto ideal — se a dose continuar subindo, o mesmo mecanismo (ou um alvo secundário) passa a produzir dano em vez de benefício. Um fármaco incapaz de causar dano em qualquer dose tende também a ser incapaz de causar efeito terapêutico algum, porque ambos nascem da mesma capacidade de interagir com a fisiologia do corpo.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "janela-terapeutica",
+        "seguranca"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-005-fc02",
+      "pergunta": "Explique por que a toxicidade de um fármaco quase sempre está relacionada ao mesmo mecanismo do seu efeito terapêutico, e não a um fenômeno totalmente separado.",
+      "resposta": "Porque a curva de efeito terapêutico e a curva de efeito tóxico derivam do mesmo tipo de interação fármaco-alvo, só que avaliada em pontos diferentes do eixo de dose ou em alvos diferentes (o alvo principal, exagerado, ou um alvo secundário que só é alcançado em concentração mais alta). Na maioria dos casos a toxicidade não é uma reação estranha ao mecanismo de ação — é o próprio mecanismo, amplificado além do necessário, ou estendido a um tecido que não era o alvo pretendido.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "toxicidade",
+        "curva-dose-resposta"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-005-fc03",
+      "pergunta": "Se um fármaco tivesse janela terapêutica infinita (nenhuma dose causaria dano), o que mudaria na prática de prescrição — e por que essa situação é, na prática, quase teórica?",
+      "resposta": "Mudaria a necessidade de precisão: doses poderiam ser padronizadas e arredondadas livremente, sem monitorização laboratorial, e erros de cálculo deixariam de ser emergência. Essa situação é quase teórica porque significaria que o fármaco não interage de forma exagerada com nenhum sistema do corpo em nenhuma quantidade — incomum para qualquer substância ativa o suficiente para tratar uma doença. O que existe, na prática, são fármacos de janela muito larga, cujo teto de toxicidade é tão distante da dose usual que raramente é alcançado por acidente — o que se comporta como segurança quase absoluta, sem ser, teoricamente, absoluta.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "janela-terapeutica",
+        "contrafactual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-005-fc04",
+      "pergunta": "Um médico precisa decidir se ajusta a dose de um fármaco apenas de forma padronizada ou se pede monitorização laboratorial dos níveis sanguíneos do paciente. Que característica da janela terapêutica do fármaco orienta essa decisão, e por quê?",
+      "resposta": "A largura da janela terapêutica. Se a distância entre a dose eficaz e a dose tóxica é ampla, pequenas variações de dose, peso ou função renal entre pacientes não deslocam ninguém para a zona de dano, e uma dose padronizada é segura. Se a distância é estreita, a mesma dose que trata um paciente pode intoxicar outro que elimina o fármaco mais devagar ou que toma outro medicamento interferente — nesse caso, a prática segura exige medir a concentração real do fármaco no sangue do próprio paciente e ajustar com frequência, porque a margem para erro humano ou variação biológica é curta demais para confiar apenas na dose da bula.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "janela-terapeutica",
+        "monitorizacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-005-fc05",
+      "pergunta": "Por que a instabilidade da farmacocinética de um paciente (por exemplo, função renal reduzida) torna uma janela terapêutica moderada mais perigosa na prática, mesmo sem qualquer mudança na dose prescrita?",
+      "resposta": "Porque a janela terapêutica é definida em termos de dose administrada previsivelmente convertida em concentração no corpo. Quando a eliminação do fármaco fica instável, a mesma dose prescrita passa a gerar uma concentração real imprevisível — podendo, sem que o médico mude nada na receita, empurrar o paciente para além da borda superior da janela. A margem de segurança teórica (calculada em pessoas com farmacocinética típica) deixa de valer quando a farmacocinética individual do paciente está alterada, mesmo que a janela, em condições normais, fosse considerada razoavelmente segura.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "farmacocinetica",
+        "janela-terapeutica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-005-caso01",
+      "titulo": "Sonolência e confusão após ajuste de dose em paciente idosa",
+      "apresentacao": "Mulher de 74 anos, em uso crônico e estável de um sedativo prescrito para insônia, é levada ao pronto-socorro pela família após dois dias de sonolência excessiva, fala arrastada e um episódio de confusão mental. Não houve mudança na dose do sedativo. Há três dias, porém, o clínico da paciente havia iniciado um segundo medicamento para outra queixa — um fármaco que compete pela mesma via de eliminação hepática do sedativo. Exame mostra rebaixamento leve do nível de consciência, sem outros achados focais. Os sinais vitais estão preservados.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A introdução do segundo fármaco reduziu a velocidade de eliminação do sedativo, que passou a se acumular no corpo mesmo com a dose prescrita inalterada — a concentração real do fármaco no sangue subiu, ainda que a dose administrada tenha permanecido a mesma."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O sedativo já atuava, em dose terapêutica, sobre receptores do sistema nervoso central responsáveis pelo efeito calmante desejado. Com o acúmulo, a concentração ultrapassou a faixa em que esse mesmo mecanismo produz apenas sonolência controlada e entrou na faixa em que produz depressão excessiva da atividade cerebral."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A paciente saiu da janela terapêutica do sedativo sem que ninguém tivesse alterado a dose prescrita — a interação medicamentosa estreitou, na prática, a distância entre a dose usual e a dose que causa dano, empurrando-a para além da borda superior da janela."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sonolência excessiva, fala arrastada e confusão mental — expressões clínicas diretas do mesmo mecanismo sedativo do fármaco, agora exagerado além do ponto terapêutico."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Suspensão temporária do sedativo, suporte clínico e reavaliação da necessidade do segundo medicamento; a paciente melhora em poucos dias, à medida que o fármaco acumulado é eliminado. O caso reforça que a largura da janela terapêutica de um fármaco não é uma constante fixa — ela pode ser estreitada, sem qualquer mudança na dose prescrita, por fatores que alteram a farmacocinética do paciente, como uma nova interação medicamentosa."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, de forma concreta, a ideia central deste bloco: a distância entre a dose que trata e a dose que causa dano não depende só do número escrito na receita — depende de quanto do fármaco realmente permanece no corpo. Uma janela que era segura na prescrição original deixou de ser segura quando um segundo fator (a interação medicamentosa) mudou a concentração real, sem qualquer erro do prescritor na dose em si. Esse é exatamente o tipo de raciocínio que antecipa a necessidade de medir a janela com precisão numérica — o que o próximo tema faz.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "geriatria"
+      ],
+      "diagnostico_revelado": "Toxicidade por acúmulo de sedativo secundária a interação medicamentosa que reduziu sua eliminação, estreitando na prática a janela terapêutica.",
+      "tratamento_resumido": "Suspensão temporária do fármaco sedativo, monitorização clínica do nível de consciência, reavaliação da real necessidade do segundo medicamento introduzido e, se mantido, ajuste conjunto das doses considerando a interação identificada."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-005-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacodinamica",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action (curvas dose-resposta e margem de segurança).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles (relação entre eficácia e toxicidade).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

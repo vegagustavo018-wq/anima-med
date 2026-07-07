@@ -2,53 +2,213 @@
   "resumo_id": "s4-farma1-01-005-01",
   "no_pai_id": "s4-farma1-01-005",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": ["s4-farma1-01-002-02"],
   "metadata": {
     "titulo": "Excreção Renal: Filtração, Secreção e Reabsorção",
+    "subtitulo": "Se o rim já filtra o sangue, por que ainda precisa de mais dois processos?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "farma1",
-      "esqueleto"
-    ],
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
+    "tags": ["farma1", "farmacocinetica", "excrecao", "excrecao-renal", "filtracao-glomerular", "secrecao-tubular", "reabsorcao-tubular", "ionizacao", "core"],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": ["expert"]
   },
-  "resumo_conciso": "Três processos do néfron; efeito do pH urinário; ionização e reabsorção",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior estabeleceu o rim como via principal de excreção de fármacos, mas 'filtrar o sangue' sozinho não é a história completa: o néfron precisa resolver três problemas diferentes ao mesmo tempo — deixar passar o que deve sair, empurrar para fora o que a filtração sozinha deixou passar pouco, e recuperar o que ainda é útil e não deveria se perder. Esses três problemas geram três processos sucessivos e anatomicamente distintos: a filtração glomerular, que peneira passivamente o plasma pela pressão sanguínea; a secreção tubular, que usa transportadores ativos para arrastar até a urina moléculas que a filtração não capturou bem, sobretudo as ligadas a proteínas plasmáticas; e a reabsorção tubular, que devolve à circulação parte do que já foi filtrado, sobretudo quando essa molécula está na forma lipossolúvel e consegue atravessar de volta o epitélio tubular. A quantidade final de fármaco que aparece na urina é o resultado líquido desses três movimentos, não apenas do primeiro. E é justamente na reabsorção que o pH urinário se torna clinicamente manipulável: como só a forma não ionizada de um ácido ou base fraca atravessa o epitélio tubular de volta ao sangue, alterar o pH da urina muda a fração reabsorvida e, com ela, a velocidade de eliminação — o mesmo princípio de ionização e pKa já visto na absorção gastrintestinal, aqui aplicado ao outro extremo da jornada do fármaco.",
+  "narrativa": [
+    {"tipo": "texto", "conteudo": "O bloco anterior deixou uma simplificação proposital: disse que o rim 'filtra o sangue e descarta o resto na urina', como se fosse um único gesto. Mas um filtro simples, movido só pela pressão do sangue, tem uma limitação física que o corpo não pode aceitar."},
+    {"tipo": "secao", "titulo": "O problema que a filtração sozinha não resolve"},
+    {"tipo": "texto", "conteudo": "A filtração glomerular funciona como qualquer peneira: deixa passar o que é pequeno o suficiente para atravessar os poros, e barra o que é grande demais. Só que muitos fármacos circulam no sangue parcialmente ligados a proteínas plasmáticas, como a albumina — e essa fração ligada é grande demais para atravessar os poros do glomérulo. Se a excreção renal dependesse só de filtração, todo fármaco fortemente ligado a proteínas seria eliminado devagar, não importa quão hidrossolúvel ele fosse depois de se soltar da proteína."},
+    {"tipo": "texto", "conteudo": "Há ainda um segundo problema, na direção oposta: a filtração é indiscriminada. Ela deixa passar, junto com o que deve ser descartado, moléculas pequenas que o corpo ainda precisa — glicose, aminoácidos, boa parte da água e dos eletrólitos filtrados. Um rim que apenas filtrasse e nunca recuperasse nada perderia, a cada minuto, litros de água e nutrientes essenciais junto com o lixo metabólico. Nenhum organismo sobreviveria a esse desperdício."},
+    {"tipo": "pausa", "conteudo": "Pausa para fixar: a filtração sozinha (1) deixa escapar fármacos ligados a proteínas plasmáticas e (2) descarta, sem distinção, substâncias que o corpo ainda precisa. O néfron precisa de mais dois mecanismos para corrigir essas duas falhas."},
+    {"tipo": "secao", "titulo": "Como o néfron resolve os dois problemas"},
+    {"tipo": "texto", "conteudo": "Para o primeiro problema — fármaco preso à proteína, escapando da filtração —, a solução é ativa: células do túbulo capturam ativamente o fármaco diretamente do sangue peritubular, usando transportadores de membrana, e o lançam para dentro do lúmen tubular, complementando o que a filtração deixou passar. Esse processo não depende do tamanho da molécula nem de estar livre ou ligada à proteína — o transportador reconhece a molécula e a puxa ativamente, gastando energia."},
+    {"tipo": "texto", "conteudo": "Para o segundo problema — substâncias úteis sendo descartadas por engano —, a solução é o caminho inverso: outras células do túbulo, mais adiante no trajeto, devolvem à circulação sanguínea parte do que já estava no filtrado, usando tanto transporte ativo (para glicose, aminoácidos, a maior parte do sódio) quanto difusão passiva (para moléculas lipossolúveis, incluindo muitos fármacos na sua forma neutra)."},
+    {"tipo": "highlight", "conteudo": "Três processos, três direções: **filtração** (sangue para o lúmen, passiva, por tamanho), **secreção** (sangue para o lúmen, ativa, por transportador), **reabsorção** (lúmen de volta para o sangue, ativa ou passiva). A urina final é o saldo líquido dos três."},
+    {"tipo": "secao", "titulo": "Do que cada processo é feito"},
+    {"tipo": "texto", "conteudo": "A filtração acontece no glomérulo, um tufo de capilares com poros relativamente grandes e uma pressão hidrostática favorável empurrando o plasma para dentro da cápsula de Bowman. Só passa o que é pequeno o suficiente e não está ligado a proteína — por isso a fração livre (não ligada) de um fármaco no plasma é a que determina quanto dele é filtrado a cada instante."},
+    {"tipo": "texto", "conteudo": "A secreção acontece mais adiante, principalmente no túbulo contorcido proximal, e depende de famílias de transportadores de membrana com nomes específicos — os transportadores de ânions orgânicos (OAT) e de cátions orgânicos (OCT) são os mais relevantes na prática farmacológica. Eles não são exclusivos de um único fármaco: reconhecem classes inteiras de moléculas com carga elétrica semelhante, o que explica por que fármacos diferentes podem competir pelo mesmo transportador e reduzir a excreção um do outro."},
+    {"tipo": "texto", "conteudo": "A reabsorção acontece ao longo de todo o túbulo, mas principalmente no proximal e no ducto coletor, e é feita por dois sistemas diferentes: transportadores específicos e saturáveis para substâncias que o corpo sempre quer recuperar (glicose, aminoácidos, a maior parte do sódio e da água), e difusão passiva simples para qualquer molécula lipossolúvel que, na forma não ionizada, consiga atravessar o epitélio tubular de volta ao sangue peritubular."},
+    {"tipo": "pausa", "conteudo": "Fixando antes de seguir: filtração é peneira passiva por tamanho; secreção é bomba ativa via transportadores OAT/OCT; reabsorção é retorno seletivo, ativo para nutrientes e passivo para moléculas lipossolúveis. É essa última parte — a reabsorção passiva — que abre a porta para a manipulação clínica do pH urinário."},
+    {"tipo": "secao", "titulo": "Como os três processos funcionam juntos, em movimento"},
+    {"tipo": "texto", "conteudo": "Considere uma molécula de fármaco ácido fraco circulando no sangue que chega ao rim."},
+    {"tipo": "passo_a_passo", "titulo": "Trajeto de um fármaco ácido fraco pelo néfron", "passos": [
+      {"numero": 1, "titulo": "Filtração no glomérulo", "explicacao": "A fração do fármaco que está livre no plasma (não ligada à albumina) é pequena o suficiente para atravessar os poros glomerulares e entra no filtrado, dentro da cápsula de Bowman. A fração ligada à proteína permanece no sangue e segue adiante pelos capilares peritubulares."},
+      {"numero": 2, "titulo": "Secreção no túbulo proximal", "explicacao": "Ao passar pelos capilares peritubulares, a fração do fármaco que ainda está no sangue — inclusive parte da que estava ligada à proteína, já que a ligação é reversível e se desfaz conforme a concentração livre cai — é capturada ativamente por transportadores OAT e lançada para dentro do lúmen tubular, somando-se ao que já havia sido filtrado."},
+      {"numero": 3, "titulo": "Concentração progressiva do filtrado", "explicacao": "Ao longo do túbulo, água é reabsorvida em grande quantidade (para não desidratar o organismo), o que concentra progressivamente tudo o que ficou no lúmen, incluindo o fármaco. Essa concentração crescente também favorece a difusão passiva de volta para o sangue, caso a molécula esteja na forma lipossolúvel."},
+      {"numero": 4, "titulo": "Reabsorção dependente do pH e do pKa", "explicacao": "No pH da urina em cada trecho do túbulo, uma fração do fármaco ácido fraco está protonada e neutra, e essa fração consegue atravessar de volta o epitélio tubular por difusão passiva, retornando ao sangue. A fração ionizada, incapaz de atravessar, permanece no lúmen e segue para a bexiga — é a mesma lógica de ionização e pKa vista na absorção gastrintestinal, aqui decidindo não se o fármaco entra no corpo, mas se ele consegue escapar da eliminação."}
+    ]},
+    {"tipo": "texto", "conteudo": "O resultado final — quanto do fármaco realmente sai na urina — é a soma do que foi filtrado, mais o que foi secretado, menos o que foi reabsorvido de volta. Mudar qualquer um dos três muda a velocidade de eliminação, mesmo sem alterar a dose administrada."},
+    {"tipo": "secao", "titulo": "Com o que esses processos se articulam"},
+    {"tipo": "texto", "conteudo": "A etapa de reabsorção depende diretamente do princípio de ionização e pKa: só a forma não ionizada de um ácido ou base fraca atravessa o epitélio tubular por difusão passiva, exatamente pelo mesmo motivo que só a forma não ionizada atravessa a mucosa gástrica na absorção. A diferença é o sentido do interesse clínico — na absorção, quer-se que o fármaco entre; na excreção renal, manipular o pH urinário serve para impedir que ele volte, empurrando a eliminação."},
+    {"tipo": "texto", "conteudo": "Essa manipulação é a base racional da alcalinização urinária no tratamento de intoxicações por ácidos fracos: elevar o pH da urina com bicarbonato de sódio desloca o equilíbrio do fármaco ácido para a forma ionizada dentro do túbulo, reduzindo sua reabsorção passiva e aumentando sua eliminação líquida. O raciocínio inverso — acidificar a urina para reter uma base fraca em forma ionizada — segue exatamente a mesma lógica, aplicada no sentido oposto."},
+    {"tipo": "texto", "conteudo": "Os três processos também dependem diretamente da função renal como um todo: a filtração depende da taxa de filtração glomerular, a secreção depende da integridade dos transportadores tubulares, e a reabsorção depende da integridade do epitélio tubular. Doenças renais que afetam qualquer uma dessas estruturas — glomerulonefrite, necrose tubular aguda — alteram a excreção de fármacos por vias diferentes, o que explica por que o ajuste de dose em insuficiência renal não é uniforme para todos os medicamentos."},
+    {"tipo": "secao", "titulo": "Os nomes e suas origens"},
+    {"tipo": "etimologia", "termo": "filtração, secreção, reabsorção", "origem": "filtração do latim filtrare (passar por um filtro, de filtrum, feltro usado para coar); secreção do latim secernere, se- (à parte) + cernere (separar); reabsorção do latim re- (de volta) + ab- (para longe de) + sorbere (sugar, tragar)", "significado": "peneirar através de um meio poroso; separar e destinar a um lugar útil; sugar de volta algo que havia se afastado", "explicacao": "Os três nomes descrevem literalmente a direção física de cada processo. Secreção compartilha a raiz cernere com excreção (vista no bloco-pai), mas o prefixo se- ('à parte', não 'para fora') marca a diferença: secretar é destinar algo a um uso, não descartá-lo — é por isso que o mesmo verbo raiz também nomeia a secreção hormonal e a secreção digestiva, processos que produzem algo útil, não lixo. Reabsorção junta re- (repetição, retorno) a absorção (do latim absorbere, sugar completamente): é, literalmente, 'sugar de volta' o que já havia atravessado para o outro lado — o mesmo verbo raiz da absorção intestinal, agora atuando no sentido inverso, do lúmen tubular de volta ao sangue."},
+    {"tipo": "analogia", "icone": "🏭", "conteudo": "Pense numa linha de triagem de reciclagem com três estações. A **filtração** é a primeira esteira com uma grade: tudo que é pequeno cai automaticamente para o contêiner de descarte, sem que ninguém escolha — é mecânico, só depende do tamanho. A **secreção** é um funcionário especializado, mais adiante, que pega ativamente do estoque geral certos itens que passaram direto pela grade sem cair (por estarem grudados em algo maior) e os joga manualmente no mesmo contêiner de descarte. A **reabsorção** é outro funcionário, ainda mais adiante, que vasculha o contêiner de descarte e resgata de volta para o estoque geral qualquer item que reconheça como reaproveitável — e ele só consegue pegar itens 'soltos' (a forma neutra do fármaco); itens 'grudados com etiqueta elétrica' (a forma ionizada) ele não consegue segurar e ficam no contêiner. A quantidade final que sai como lixo depende dos três: o que caiu pela grade, mais o que o primeiro funcionário jogou fora, menos o que o segundo funcionário resgatou. A analogia quebra num ponto: na fábrica os funcionários trabalham em sequência espacial fixa; no néfron, os três processos ocorrem em segmentos anatômicos parcialmente sobrepostos e simultâneos, não em etapas estritamente isoladas no tempo."},
+    {"tipo": "imagem", "titulo": "Os três processos do néfron na excreção de fármacos", "descricao": "Corte esquemático de um néfron mostrando, da esquerda para a direita, o glomérulo (com capilares enovelados dentro da cápsula de Bowman) seguido do túbulo proximal, alça e ducto coletor até a pelve renal. Setas coloridas e legendadas em três locais diferentes: uma seta azul saindo do glomérulo para dentro do túbulo rotulada 'FILTRAÇÃO — passiva, por tamanho'; uma seta verde saindo do capilar peritubular para dentro do túbulo proximal rotulada 'SECREÇÃO — ativa, transportadores OAT/OCT'; uma seta laranja saindo do lúmen tubular de volta para o capilar peritubular rotulada 'REABSORÇÃO — ativa ou passiva, dependente de pH/pKa'. Pequeno inset mostrando duas moléculas, uma neutra atravessando a seta de reabsorção e uma ionizada barrada, ilustrando a dependência de ionização. Legendas em português, estilo esquemático de livro didático, fundo neutro adaptativo ao tema do app.", "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático de farmacologia/fisiologia renal. Corte longitudinal esquemático de um néfron: glomérulo (capilares enovelados dentro da cápsula de Bowman) à esquerda, seguido de túbulo contorcido proximal, alça, túbulo distal e ducto coletor à direita, terminando em pelve renal estilizada. Capilar peritubular desenhado paralelo ao túbulo proximal. Três setas coloridas e claramente legendadas em português: seta azul do glomérulo para o lúmen tubular rotulada 'FILTRAÇÃO (passiva, por tamanho)'; seta verde do capilar peritubular para o lúmen do túbulo proximal rotulada 'SECREÇÃO (ativa, transportadores OAT/OCT)'; seta laranja do lúmen tubular de volta ao capilar peritubular rotulada 'REABSORÇÃO (ativa/passiva, depende de pH e pKa)'. Pequeno painel inset no canto inferior mostrando duas moléculas esquemáticas — uma neutra atravessando livremente a seta de reabsorção, outra com sinal de carga barrada por um X — ilustrando a dependência de ionização. Paleta consistente com diagramas anteriores da série, alto contraste, sem elementos fotorrealistas, sem marcas d'água."}
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-005",
+        "titulo": "Excreção — A Saída do Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha os três mecanismos tubulares que a visão geral já apontou como responsáveis por fazer do rim a via principal de excreção; sem a visão geral, os três processos aqui descritos perderiam o contexto de por que a excreção renal importa clinicamente."
+      },
+      {
+        "bloco_id": "s4-farma1-01-002-02",
+        "titulo": "Ionização, pKa e a Equação de Henderson-Hasselbalch",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A reabsorção tubular passiva só é compreensível com o princípio de que apenas a forma não ionizada de um ácido ou base fraca atravessa membranas biológicas; este bloco aplica esse mesmo princípio, já visto na absorção gastrintestinal, ao contexto específico do túbulo renal."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Ajuste de dose em insuficiência renal e manejo de intoxicações por alcalinização/acidificação urinária",
+        "mecanismo_conexao": "Os três processos aqui descritos — e especialmente a dependência da reabsorção do pH urinário — são o fundamento direto de protocolos de alcalinização urinária em intoxicações por salicilatos e de ajuste de dose por taxa de filtração glomerular reduzida.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Interações medicamentosas por competição em transportadores OAT/OCT",
+        "mecanismo_conexao": "A secreção tubular ativa via transportadores compartilhados é a base de interações farmacocinéticas clinicamente relevantes, como a redução da excreção de metotrexato por anti-inflamatórios não esteroidais competindo pelo mesmo transportador.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-002-02",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "Mesmo princípio de ionização e pKa (Henderson-Hasselbalch) aplicado em direções opostas: lá, decide se o fármaco entra no corpo pela mucosa gástrica; aqui, decide se o fármaco escapa da eliminação renal."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-005-01-fc01",
+      "pergunta": "Por que a filtração glomerular sozinha não é suficiente para explicar a excreção renal de todos os fármacos?",
+      "resposta": "Porque a filtração é passiva e depende só do tamanho da molécula: fármacos ligados a proteínas plasmáticas (como a albumina) formam complexos grandes demais para atravessar os poros glomerulares e escapam da filtração, mesmo que precisem ser eliminados. A secreção tubular ativa, via transportadores como OAT e OCT, complementa a filtração capturando ativamente essas moléculas diretamente do sangue peritubular.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["filtracao-glomerular", "secrecao-tubular", "ligacao-proteica"]
+    },
+    {
+      "card_id": "s4-farma1-01-005-01-fc02",
+      "pergunta": "Descreva os três processos do néfron que juntos determinam a quantidade final de fármaco excretada na urina.",
+      "resposta": "1) Filtração glomerular: passiva, movida pela pressão sanguínea, deixa passar a fração livre (não ligada a proteína) do fármaco no plasma, desde que pequena o suficiente para atravessar os poros do glomérulo. 2) Secreção tubular: ativa, via transportadores de ânions orgânicos (OAT) e cátions orgânicos (OCT) no túbulo proximal, captura fármaco adicional diretamente do sangue peritubular e o lança no lúmen. 3) Reabsorção tubular: devolve parte do fármaco filtrado de volta ao sangue, por transporte ativo (para nutrientes) ou difusão passiva (para a forma lipossolúvel e não ionizada de fármacos). A urina final reflete o saldo líquido: filtrado mais secretado, menos reabsorvido.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["filtracao-glomerular", "secrecao-tubular", "reabsorcao-tubular"]
+    },
+    {
+      "card_id": "s4-farma1-01-005-01-fc03",
+      "pergunta": "Por que alcalinizar a urina com bicarbonato de sódio acelera a eliminação de um fármaco ácido fraco, como no tratamento da intoxicação por salicilatos?",
+      "resposta": "Porque a reabsorção tubular passiva depende da fração não ionizada do fármaco, que é a única capaz de atravessar o epitélio tubular de volta ao sangue. Elevar o pH da urina desloca o equilíbrio de ionização do ácido fraco para a forma ionizada (carregada), que fica retida no lúmen tubular por não conseguir atravessar a membrana de volta. Com menos reabsorção, mais fármaco permanece na urina e é eliminado — é o mesmo princípio de ionização e pKa (Henderson-Hasselbalch) aplicado deliberadamente como intervenção terapêutica.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["reabsorcao-tubular", "ionizacao", "intoxicacao", "alcalinizacao-urinaria"]
+    },
+    {
+      "card_id": "s4-farma1-01-005-01-fc04",
+      "pergunta": "Se os transportadores de secreção tubular (OAT/OCT) de um paciente estivessem completamente bloqueados por outro fármaco competindo pelo mesmo sítio, o que aconteceria com a eliminação de um fármaco que depende fortemente de secreção ativa para ser excretado?",
+      "resposta": "A eliminação desse fármaco cairia, mesmo com a filtração glomerular e a função renal geral preservadas, porque a secreção ativa é a via principal de saída para fármacos que dependem pouco da filtração (por exemplo, os fortemente ligados a proteínas plasmáticas). O fármaco tenderia a se acumular no plasma, com risco de efeitos tóxicos na dose habitual. Esse é o mecanismo por trás de interações medicamentosas conhecidas, como a redução da depuração renal do metotrexato por competição com anti-inflamatórios não esteroidais pelo mesmo transportador.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["secrecao-tubular", "interacao-medicamentosa", "oat-oct"]
+    },
+    {
+      "card_id": "s4-farma1-01-005-01-fc05",
+      "pergunta": "As palavras secreção e excreção compartilham a raiz latina cernere ('separar'). O que os prefixos se- e ex- revelam sobre a diferença de significado entre elas, e por que isso não é uma contradição usar 'secreção' para um processo que faz parte da excreção renal?",
+      "resposta": "Ex- ('para fora') marca o descarte definitivo de algo que não serve mais ao organismo — o sentido geral de excreção. Se- ('à parte') marca apenas a separação de uma substância para um destino específico, sem indicar se esse destino é útil (como um hormônio) ou é descarte (como um fármaco lançado no túbulo). Não há contradição: a secreção tubular é o nome do mecanismo celular ativo (separar e destinar ao lúmen), enquanto excreção é o nome do processo fisiológico maior (remover definitivamente do corpo) do qual essa secreção é uma das três engrenagens.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["etimologia", "secrecao-tubular", "excrecao"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-005-01-caso01",
+      "titulo": "Ajuste de dose de um antibiótico de eliminação renal em paciente com função renal reduzida",
+      "apresentacao": "Mulher de 74 anos, história de hipertensão e diabetes de longa data, é internada com pielonefrite e inicia antibiótico de eliminação predominantemente renal, na dose padrão usada para adultos com função renal normal. Exames mostram creatinina elevada e taxa de filtração glomerular estimada em cerca de um terço do valor esperado para um adulto jovem. No segundo dia de tratamento, a paciente apresenta sonolência incomum e um novo exame mostra concentração sérica do antibiótico acima da faixa terapêutica esperada, mesmo sem qualquer erro na dose prescrita.",
+      "cascata": [
+        {"etapa": "Causa", "descricao": "Redução crônica da função renal (nefropatia diabética e hipertensiva) diminuiu a taxa de filtração glomerular, e provavelmente também a capacidade de secreção tubular ativa, sem que isso tenha sido incorporado ao cálculo inicial da dose."},
+        {"etapa": "Estrutura Afetada", "descricao": "Os três processos do néfron — filtração, secreção e reabsorção — dependem da integridade estrutural e funcional do glomérulo e do túbulo. Na nefropatia crônica, tanto néfrons inteiros são perdidos quanto os remanescentes filtram e secretam menos por unidade de tempo."},
+        {"etapa": "Disfunção", "descricao": "Com menos néfrons funcionantes, a fração do antibiótico removida do plasma a cada passagem pelo rim cai. A mesma dose administrada no mesmo intervalo de tempo passa a corresponder a uma taxa de entrada maior que a taxa de saída, e a concentração plasmática do fármaco sobe progressivamente a cada dose."},
+        {"etapa": "Sintoma", "descricao": "Sonolência incomum, compatível com efeito tóxico do antibiótico acumulado, junto com a confirmação laboratorial de concentração sérica acima da faixa esperada."},
+        {"etapa": "Consequência", "descricao": "Sem ajuste, o acúmulo continuaria a cada dose subsequente, podendo evoluir para toxicidade mais grave. A conduta correta é reduzir a dose ou espaçar o intervalo entre doses, com base na taxa de filtração glomerular estimada da paciente — não suspender o tratamento, mas recalibrá-lo à capacidade real de excreção dela."}
+      ],
+      "conexao_com_bloco": "O caso ilustra por que os três processos do néfron não são um detalhe acadêmico: a soma de filtração, secreção e reabsorção é o que define, na prática, a velocidade real de eliminação de um fármaco em cada paciente. Quando essa capacidade cai — como na nefropatia crônica —, a dose calculada para um rim normal deixa de ser segura, mesmo sem nenhum erro de prescrição.",
+      "disciplinas_relacionadas": ["farmacologia", "clinica", "geriatria"],
+      "diagnostico_revelado": "Acúmulo tóxico de antibiótico de eliminação renal por redução da taxa de filtração glomerular e da capacidade de secreção tubular em paciente com nefropatia crônica.",
+      "tratamento_resumido": "Redução da dose e/ou aumento do intervalo entre administrações, guiados pela taxa de filtração glomerular estimada da paciente, com monitorização da concentração sérica até estabilização do quadro clínico."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-005-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "farmacocinetica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 1 — Basic Principles / Chapter 3 — Pharmacokinetics and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 10 — Drug Elimination and Pharmacokinetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

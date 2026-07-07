@@ -5,48 +5,266 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "ΔG Depende das Concentrações — Por Que o Equilíbrio Importa",
+    "subtitulo": "Como a célula puxa uma reação mudando a quantidade de substrato e produto?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "delta-g",
+      "equilibrio",
+      "concentracoes",
+      "fluxo-metabolico",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Como a razão produto/substrato empurra reações; reações reversíveis vs irreversíveis in vivo",
-  "narrativa": [],
+  "resumo_conciso": "O ΔG real de uma reação não depende apenas da química padrão; depende também das concentrações de substratos e produtos naquele momento. Produtos acumulados empurram a reação para trás, enquanto remoção de produto ou excesso de substrato puxa a reação para frente. Essa é a razão pela qual reações próximas do equilíbrio são reversíveis na célula, enquanto etapas com ΔG muito negativo funcionam como pontos de direção e regulação.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma porta giratória entre duas salas. Se há muita gente empurrando de um lado e quase ninguém do outro, o fluxo segue para frente. Se as duas salas ficam igualmente cheias, a porta ainda gira, mas não há movimento líquido. Muitas reações metabólicas se comportam assim."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior mostrou que ΔG indica favorabilidade. Agora vem a correção essencial: o ΔG real muda conforme substratos e produtos mudam. A célula não trabalha em condições padrão; ela manipula concentrações o tempo inteiro."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema as concentrações resolvem?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é que a célula precisa direcionar fluxos sem reinventar a química de cada enzima. Uma forma elegante de fazer isso é remover produto, fornecer substrato ou puxar uma molécula para a próxima etapa. Assim, uma reação que parecia tímida pode ser arrastada para frente por toda a via."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: ΔG°' é referência; ΔG real é a vida acontecendo dentro da célula."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a razão produto/substrato muda ΔG?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando produtos se acumulam, a reação perde força para seguir adiante e pode até inverter o sentido líquido. Quando substratos estão altos ou produtos são removidos, o fluxo é favorecido para frente. Em termos intuitivos, a célula inclina a ladeira química mudando a ocupação dos dois lados."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "equilíbrio",
+      "origem": "do latim aequilibrium, de aequus, igual, e libra, balança",
+      "significado": "estado em que forças opostas se compensam",
+      "explicacao": "A imagem da balança é útil: no equilíbrio químico, as reações de ida e volta continuam acontecendo, mas o resultado líquido se anula. Não é parada absoluta; é compensação dinâmica."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: equilíbrio não significa ausência de reação. Significa ausência de fluxo líquido. A porta ainda gira; apenas não há mais multidão atravessando em uma direção predominante."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que algumas etapas parecem irreversíveis?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Etapas com ΔG real muito negativo ficam longe do equilíbrio. Elas funcionam como quedas fortes no caminho metabólico e costumam ser pontos de regulação. Na glicólise, por exemplo, etapas catalisadas por hexoquinase, PFK-1 e piruvato quinase têm grande queda de energia livre no sentido fisiológico, ajudando a dar direção à via."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se todas as reações de uma via ficassem exatamente no equilíbrio?",
+      "resposta": "A via não teria fluxo líquido sustentado. Moléculas iriam e voltariam sem produzir direção útil, como uma fila que se move igualmente nos dois sentidos. Para sustentar vida, a célula mantém algumas reações afastadas do equilíbrio e usa outras como etapas reversíveis ajustáveis."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "fila",
+      "conteudo": "Pense em duas salas ligadas por uma porta. Substrato é a sala de origem; produto é a sala de destino. Se a sala de destino esvazia rapidamente, mais gente atravessa. Se ela lota, o fluxo diminui ou volta. Enzimas são portas eficientes; concentrações são a pressão das pessoas. A analogia quebra porque moléculas obedecem energia livre e colisões, não decisões humanas."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Concentrações inclinando o ΔG real",
+      "descricao": "Esquema comparando três cenários: produto baixo puxando reação para frente, equilíbrio sem fluxo líquido e produto alto empurrando para trás.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. Três painéis com A ⇄ B. Painel 1: muito A, pouco B, seta grossa para B, rótulo 'produto removido: fluxo para frente'. Painel 2: A e B equilibrados, setas iguais, rótulo 'equilíbrio: sem fluxo líquido'. Painel 3: pouco A, muito B, seta grossa para A, rótulo 'produto acumulado: fluxo reverso'. Incluir pequena indicação de ΔG real mudando em cada painel.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa lógica será indispensável em glicólise, gliconeogênese, ciclo de Krebs e lactato desidrogenase. Vias não são tubos rígidos; são redes empurradas por concentração, energia e remoção contínua de produtos."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-001",
+        "titulo": "Termodinâmica da Vida — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "A visão geral prepara a ideia de que a célula vive mantendo fluxos longe do equilíbrio absoluto."
+      },
+      {
+        "bloco_id": "s3-bioq2-01-001-02",
+        "titulo": "Energia Livre de Gibbs (ΔG) e Espontaneidade",
+        "relevancia": "base_necessaria",
+        "explicacao": "Antes de entender a influência das concentrações, é preciso saber interpretar o sinal de ΔG."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Glicólise — Reações Reversíveis e Irreversíveis",
+        "mecanismo_conexao": "A diferença entre etapas próximas e distantes do equilíbrio explica quais pontos regulam o fluxo glicolítico.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Lactato Desidrogenase — Piruvato, Lactato e NADH",
+        "mecanismo_conexao": "A direção da reação depende das concentrações relativas de piruvato, lactato, NADH e NAD+.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Acoplamento de Reações — Como a Célula Paga o Impossível",
+        "mecanismo_conexao": "Remover produto e acoplar etapas são estratégias complementares para puxar fluxo.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "O Mapa Metabólico — Como as Vias se Conectam",
+        "tipo_relacao": "APLICA",
+        "explicacao": "O mapa metabólico só ganha vida quando se entende que as setas mudam conforme concentrações e consumo de intermediários."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-001-03-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Como a remoção de produto altera o ΔG real de uma reação?",
+      "resposta": "Ao reduzir produto, a razão produto/substrato cai, favorecendo o fluxo para frente. A reação é puxada porque o sistema se afasta do equilíbrio naquela direção.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "delta-g",
+        "concentracoes"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-001-03-fc02",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de pensar que equilíbrio significa reação parada?",
+      "resposta": "No equilíbrio, as reações de ida e volta continuam, mas com velocidades equivalentes. O que desaparece é o fluxo líquido, não a atividade molecular.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "equilibrio",
+        "armadilha"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-001-03-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Compare uma etapa próxima do equilíbrio com uma etapa longe do equilíbrio em uma via metabólica.",
+      "resposta": "Etapas próximas do equilíbrio são facilmente reversíveis e respondem às concentrações. Etapas longe do equilíbrio têm ΔG real muito negativo, dão direção à via e costumam ser pontos de regulação.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "reversivel",
+        "irreversivel"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-001-03-fc04",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria com uma via se todas as suas reações estivessem exatamente no equilíbrio?",
+      "resposta": "Ela não sustentaria fluxo líquido. A via teria movimento molecular de ida e volta, mas não produziria direção útil para manter trabalho celular.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "contrafactual",
+        "fluxo"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-001-03-caso01",
+      "titulo": "Lactato mudando conforme a pressão química",
+      "apresentacao": "Atleta em prova de alta intensidade apresenta aumento transitório de lactato. Em repouso posterior, parte desse lactato pode ser reconvertida em piruvato e usada em outros tecidos. A mesma reação aparece nos dois sentidos, dependendo do estado químico do sistema.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Exercício intenso aumenta glicólise e altera a relação entre NADH, NAD+, piruvato e lactato."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A reação da lactato desidrogenase fica sensível às concentrações relativas dos pares piruvato/lactato e NADH/NAD+."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Em contexto fisiológico, não há disfunção; há mudança de direção líquida conforme a pressão de substratos e produtos."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O lactato sobe durante esforço intenso e cai na recuperação conforme tecidos o consomem ou reconvertem."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O caso mostra que algumas reações são reversíveis in vivo e dependem menos de uma seta fixa do livro do que das concentrações reais."
+        }
+      ],
+      "conexao_com_bloco": "A lactato desidrogenase ilustra perfeitamente o bloco: a direção líquida da reação depende da razão produto/substrato e do estado redox, não de uma seta absoluta.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Fisiologia",
+        "Medicina do Esporte"
+      ],
+      "diagnostico_revelado": "Elevação fisiológica de lactato durante exercício intenso.",
+      "tratamento_resumido": "Recuperação, hidratação e redução da intensidade costumam normalizar o quadro fisiológico; investigação é necessária se houver sintomas graves ou persistentes."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-001-03-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'Concentrações inclinando o ΔG real'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Seções de energia livre real, equilíbrio e metabolismo.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Berg JM, Tymoczko JL, Gatto GJ, Stryer L. Biochemistry. 9th ed. W.H. Freeman; 2019. Capítulos de bioenergética.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "fisiologia"

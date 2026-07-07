@@ -5,50 +5,251 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Beta-oxidação de Ácidos Graxos Muito Longos",
-    "semestre": 1,
+    "subtitulo": "Por que nossas células precisam de um incinerador especializado para lipídios gigantes?",
     "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tags": [
+      "peroxissomos",
+      "lipidios",
+      "beta-oxidacao",
+      "metabolismo",
+      "adrenoleucodistrofia"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
   },
-  "resumo_conciso": "Encurtamento de AGCL; adrenoleucodistrofia e Zellweger",
-  "narrativa": [],
+  "resumo_conciso": "Ácidos graxos de cadeia muito longa (VLCFA, mais de 22 carbonos) não conseguem ser processados diretamente pela mitocôndria: são compridos demais para as proteínas de transporte da membrana mitocondrial. A célula resolveu esse impasse construindo um segundo forno metabólico, o peroxissomo, que encurta essas cadeias gigantes em pedaços menores antes de entregá-los à mitocôndria para a combustão final. O preço dessa reação é a geração de peróxido de hidrogênio, um subproduto corrosivo que o próprio peroxissomo neutraliza com catalase, isolado do resto do citoplasma. Quando essa maquinaria falha — como na Adrenoleucodistrofia Ligada ao X — os VLCFA se acumulam nas membranas do sistema nervoso, com consequências devastadoras. Este bloco expõe por que a célula precisou compartimentalizar o metabolismo lipídico em dois estágios sequenciais.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já tentou passar um sofá grande demais por uma porta estreita? Empurrar não resolve — a peça simplesmente não cabe na abertura, por mais força que você faça. Algo parecido acontece dentro da célula quando ela precisa processar um ácido graxo de cadeia muito longa: a mitocôndria, que degrada a maioria das gorduras, tem 'portas' — proteínas transportadoras na sua membrana interna — dimensionadas para cadeias de até 20 carbonos. Uma cadeia de 26, 28 ou 30 carbonos simplesmente não atravessa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O que a célula faz quando o combustível é grande demais para o motor?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ela não descarta o combustível — descartaria energia valiosa. Em vez disso, resolve o problema em duas etapas, com dois compartimentos diferentes. Antes de nomear qualquer organela, pense no que precisa acontecer fisicamente: alguma estrutura precisa cortar a cadeia gigante em pedaços menores, do tamanho certo para caber na porta estreita da mitocôndria. É exatamente isso que acontece — só que esse corte inicial não pode ocorrer a céu aberto no citoplasma, porque o processo de oxidação libera um subproduto reativo e perigoso."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Guarde essa lógica: a célula precisa de um espaço de pré-processamento isolado, capaz de cortar cadeias gigantes e, ao mesmo tempo, conter os subprodutos tóxicos dessa operação. Vamos ver como esse espaço é construído."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esse compartimento é construído por dentro"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é uma organela com membrana simples, repleta de enzimas oxidases. Essas enzimas realizam a mesma reação química de encurtamento de cadeia que a mitocôndria faz — remover dois carbonos por vez, na forma de acetil-CoA — mas o primeiro passo dessa reação, nessa organela, transfere elétrons diretamente ao oxigênio molecular, gerando peróxido de hidrogênio (H₂O₂) como subproduto imediato."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse detalhe explica por que a organela precisa existir separada do citosol: o peróxido de hidrogênio, se liberado livremente, oxidaria proteínas e lipídios da célula inteira. Por isso, dentro da mesma organela, convivem as enzimas que geram o peróxido e a enzima catalase, que o decompõe em água e oxigênio antes que ele escape. É uma fábrica que produz seu próprio resíduo tóxico e o neutraliza no mesmo prédio, sem deixar vazar para a vizinhança."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O produto desse primeiro corte — cadeias já reduzidas a um tamanho manejável, junto com acetil-CoA — é exportado para o citosol e, de lá, levado à mitocôndria via lançadeira de carnitina, onde a oxidação é finalizada e a energia é extraída como ATP. A organela de pré-processamento não gera energia útil para a célula: seu papel é exclusivamente logístico, tornar a molécula processável em outro lugar."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A oxidação nessa organela não é sobre produzir ATP. É sobre viabilizar o transporte: transformar uma molécula grande demais em pedaços que a mitocôndria consegue aceitar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "peroxissomo",
+      "origem": "do grego perí (em torno) somado ao termo químico 'peróxido' + soma (corpo)",
+      "significado": "literalmente, 'corpo do peróxido'",
+      "explicacao": "A organela recebeu esse nome na década de 1960, quando Christian de Duve a identificou por fracionamento celular e observou que ela concentrava enzimas produtoras e degradadoras de peróxido de hidrogênio — sobretudo a catalase. O nome descreve a química que a organela processa, não sua função de encurtar ácidos graxos, que foi compreendida décadas depois. É um exemplo clássico de nome batizado pelo que foi visto primeiro no laboratório, não pelo papel biológico mais importante."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🪚",
+      "conteudo": "Pense numa marcenaria que recebe troncos de árvore inteiros, grandes demais para a serra de bancada da oficina principal. Antes de entrarem na oficina, esses troncos passam por um pátio anexo com uma serra de corte grosso, que os reduz a toras manejáveis — e esse pátio tem exaustores potentes, porque o corte grosso solta muita serragem fina e faísca que seriam perigosas se espalhadas pela oficina principal. Mapeamento: tronco gigante = ácido graxo de cadeia muito longa; pátio anexo com serra de corte grosso = peroxissomo; toras já cortadas = acil-CoA de cadeia curta; exaustor que capta a serragem perigosa = catalase neutralizando o peróxido de hidrogênio; oficina principal, onde a madeira vira produto final = mitocôndria, que extrai a energia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O que acontece quando essa serra para de funcionar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se as enzimas peroxissomais responsáveis pelo encurtamento de VLCFA perdessem a função, o que aconteceria com essas moléculas?",
+      "resposta": "Os ácidos graxos de cadeia muito longa jamais seriam encurtados e, portanto, jamais chegariam à mitocôndria. Eles se acumulariam no organismo e, por serem lipídios, tenderiam a se incorporar às membranas celulares — em particular à bainha de mielina, riquíssima em lipídios especializados. Ali, alterariam a fluidez e a organização molecular da membrana, comprometendo a isolação elétrica dos axônios. O resultado é desmielinização progressiva: a condução do impulso nervoso falha, e o quadro evolui para deterioração neurológica severa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse processo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O peroxissomo depende da mitocôndria para completar o trabalho que começa: sem a segunda etapa mitocondrial, os produtos do encurtamento peroxissomal se acumulariam sem gerar energia útil. E depende também da lançadeira de carnitina para transportar seus produtos — sem essa ponte molecular, o corte inicial seria inútil, porque os fragmentos ficariam presos no lugar errado. Essa cooperação entre organelas ilustra um princípio maior da biologia celular: nenhuma organela resolve um problema metabólico complexo sozinha — a célula distribui etapas sequenciais entre compartimentos especializados."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Fluxo metabólico: peroxissomo e mitocôndria em sequência",
+      "descricao": "Esquema mostrando um VLCFA entrando no peroxissomo, sendo encurtado com geração e neutralização de H2O2 pela catalase, e os produtos saindo via lançadeira de carnitina para a mitocôndria, onde a oxidação é completada e o ATP é gerado.",
+      "prompt_ia": "Diagrama celular didático, estilo infográfico médico. À esquerda, um peroxissomo (esfera pequena com matriz granular) recebendo uma longa cadeia lipídica marcada como 'VLCFA'. Dentro, setas indicam beta-oxidação parcial liberando H2O2, com a enzima catalase decompondo-o em água e oxigênio em destaque. Uma seta central mostra os fragmentos encurtados (acil-CoA de cadeia curta) atravessando o citosol via lançadeira de carnitina. À direita, uma mitocôndria (forma de feijão com cristas) recebendo os fragmentos e completando a oxidação com produção de ATP. Fundo neutro adaptativo, cores sóbrias, legendas em português, alta resolução.",
+      "origem": "ia"
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-02-006",
+        "titulo": "Peroxissomos — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Entender a estrutura e a função geral do peroxissomo é necessário antes de mergulhar no mecanismo específico da beta-oxidação de VLCFA."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "topico": "Desmielinização em doenças neurodegenerativas",
+        "disciplina": "neurologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "O acúmulo de VLCFA é uma das causas moleculares de falha na bainha de mielina, conectando-se diretamente à fisiopatologia de leucodistrofias e a discussões sobre desmielinização em geral.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-04-000",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Contraste entre a função de produção de energia útil (mitocôndria) e a função de pré-processamento/detoxificação sem geração líquida de ATP (peroxissomo)."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-02-006-01-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Por que a beta-oxidação de ácidos graxos de cadeia muito longa não pode ocorrer diretamente na mitocôndria?",
+      "resposta": "Porque a mitocôndria depende de proteínas transportadoras da membrana interna dimensionadas para cadeias de até cerca de 20 carbonos. Um VLCFA, com mais de 22 carbonos, não é reconhecido nem transportado por essa maquinaria — é fisicamente incompatível com a porta de entrada mitocondrial. Por isso a célula precisa de um pré-processamento em outro compartimento antes que a mitocôndria consiga assumir a oxidação.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["mitocondria", "peroxissomo", "bioquimica"]
+    },
+    {
+      "card_id": "s1-biocel-02-006-01-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se a catalase estivesse ausente no peroxissomo, mas as enzimas oxidases continuassem funcionando normalmente?",
+      "resposta": "O peróxido de hidrogênio gerado pela oxidação dos ácidos graxos se acumularia sem neutralização, escapando eventualmente para o citosol. Isso causaria estresse oxidativo grave, com danos ao DNA, peroxidação de lipídios de membrana e, no limite, morte celular. A catalase não é um coadjuvante — é a peça que torna segura a própria reação que o peroxissomo existe para fazer.",
+      "dificuldade": 5,
+      "nivel_alvo": 4,
+      "tags": ["catalase", "estresse-oxidativo"]
+    },
+    {
+      "card_id": "s1-biocel-02-006-01-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença de propósito entre a beta-oxidação mitocondrial e a peroxissomal?",
+      "resposta": "A mitocondrial tem como objetivo final a produção de ATP, acoplando a oxidação da cadeia carbônica ao ciclo de Krebs e à cadeia transportadora de elétrons. A peroxissomal, em contraste, não gera energia útil para a célula — seu papel é exclusivamente reduzir o tamanho de cadeias muito longas ou ramificadas até um ponto em que a mitocôndria consiga assumir e finalizar a oxidação.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["beta-oxidacao", "metabolismo"]
+    },
+    {
+      "card_id": "s1-biocel-02-006-01-fc04",
+      "tipo": "por_que",
+      "pergunta": "Por que o acúmulo de VLCFA é particularmente danoso ao sistema nervoso central?",
+      "resposta": "Por serem lipídios, os VLCFA não acumulados tendem a se incorporar às membranas celulares, e a bainha de mielina — rica em lipídios especializados que isolam eletricamente os axônios — é um dos destinos preferenciais. A incorporação de VLCFA altera a fluidez e a organização dessa membrana, comprometendo a condução do impulso nervoso e levando à desmielinização progressiva.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["neurologia", "mielina"]
+    },
+    {
+      "card_id": "s1-biocel-02-006-01-fc05",
+      "tipo": "mecanismo",
+      "pergunta": "Como o produto final da beta-oxidação peroxissomal chega até a mitocôndria?",
+      "resposta": "Os fragmentos de cadeia já encurtada (geralmente acil-CoA de cadeia curta ou média) saem do peroxissomo para o citosol e são então conjugados à carnitina, sendo transportados através da membrana mitocondrial pela chamada lançadeira de carnitina — o mesmo sistema de transporte usado pelos ácidos graxos de cadeia longa comuns.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["transporte", "carnitina"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-02-006-01-caso01",
+      "titulo": "Degeneração neurológica progressiva em um menino de 7 anos",
+      "apresentacao": "Menino de 7 anos, previamente hígido, é trazido pela mãe por queda no desempenho escolar nos últimos 6 meses, associada a dificuldade progressiva para entender o que ouve e, mais recentemente, perda de equilíbrio ao caminhar. Ao exame, apresenta hipoacusia bilateral leve, marcha atáxica e hiperreflexia em membros inferiores. Ressonância magnética de crânio mostra lesões de desmielinização simétricas na substância branca parieto-occipital. Dosagem plasmática de ácidos graxos de cadeia muito longa (C24:0 e C26:0) está marcadamente elevada.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação no gene ABCD1, que codifica uma proteína transportadora peroxissomal (ALDP) necessária para que os VLCFA entrem no peroxissomo antes de serem oxidados."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Peroxissomos das células do sistema nervoso central, adrenais e outros tecidos — incapazes de importar VLCFA para o interior da organela."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem entrada no peroxissomo, os VLCFA não são encurtados e se acumulam no plasma e nos tecidos, incorporando-se progressivamente às membranas, sobretudo à mielina do sistema nervoso central."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Perda auditiva, declínio cognitivo e ataxia — reflexo direto da desmielinização das vias auditivas, corticais e cerebelares."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem intervenção, o quadro evolui para deterioração neurológica grave e progressiva, incluindo perda de marcha, de fala e de visão, além de insuficiência adrenal concomitante (a mesma via afeta o córtex das adrenais)."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente o que ocorre quando a etapa de encurtamento peroxissomal falha: os VLCFA não conseguem sequer entrar na organela onde seriam processados, acumulam-se e se infiltram na mielina, exatamente como descrito no mecanismo geral do bloco.",
+      "disciplinas_relacionadas": ["bioquimica", "neurologia", "genetica", "pediatria"],
+      "diagnostico_revelado": "Adrenoleucodistrofia ligada ao X (mutação em ABCD1)",
+      "tratamento_resumido": "Suporte multidisciplinar, dieta restrita em VLCFA associada a suplementação com óleo de Lorenzo (eficácia limitada), e, em casos identificados precocemente antes de dano neurológico extenso, transplante de células-tronco hematopoiéticas como única intervenção capaz de deter a progressão."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-biocel-02-006-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Alberts B, et al. Molecular Biology of the Cell. 7th ed. Norton; 2022. Capítulo 12 — Peroxissomos.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Pathologic Basis of Disease. 10th ed. Elsevier; 2020. Capítulo sobre doenças metabólicas hereditárias — Adrenoleucodistrofia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Achar que o peroxissomo produz ATP como a mitocôndria.",
+      "correcao": "O peroxissomo apenas encurta a cadeia carbônica; a extração de energia útil (ATP) ocorre exclusivamente depois, na mitocôndria.",
+      "armadilha_em_flashcard": "sim"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

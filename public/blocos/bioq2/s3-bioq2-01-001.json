@@ -9,48 +9,285 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Termodinâmica da Vida — Visão Geral",
+    "subtitulo": "Como uma célula fica organizada sem trapacear contra a entropia?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 2,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "termodinamica",
+      "delta-g",
+      "entropia",
+      "energia-livre",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Como a célula obedece à física sem violar as leis da energia e da entropia",
-  "narrativa": [],
+  "resumo_conciso": "A vida parece produzir ordem, mas so consegue fazer isso obedecendo a termodinamica: a celula cria organizacao local enquanto aumenta a desordem total do universo por meio de calor, produtos dispersos e consumo de combustiveis. A energia livre de Gibbs traduz essa permissao em linguagem bioquimica: uma reacao com delta G negativo pode seguir espontaneamente nas condicoes celulares, enquanto uma reacao com delta G positivo precisa ser acoplada. Este bloco prepara os filhos sobre leis da termodinamica, delta G e dependencia das concentracoes.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Olhe para uma célula ao microscópio imaginário: membranas separadas, DNA enrolado com cuidado, enzimas dobradas em formas precisas, íons mantidos em lados diferentes. Isso parece improvável. Fora da vida, coisas organizadas tendem a se espalhar, esfriar, misturar e perder gradientes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A pergunta nasce daí: a vida desafia a termodinâmica? A resposta curta é não. A vida é uma maneira extremamente sofisticada de obedecer à termodinâmica. Ela constrói ordem local, mas paga exportando desordem para o ambiente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Qual problema físico a célula precisa resolver?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma célula não quer apenas existir; ela precisa permanecer longe do equilíbrio. Equilíbrio, para sistemas vivos, é perigoso: sem gradiente de prótons, sem diferença de sódio e potássio, sem ATP em relação a ADP e fosfato, não há trabalho útil. A célula viva é uma estrutura mantida em desequilíbrio controlado."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: vida não é fuga da entropia. Vida é ordem local comprada com aumento de entropia no conjunto célula + ambiente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a vida paga pela própria ordem?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ela oxida combustíveis, quebra ATP, transfere elétrons, dissipa calor e libera produtos mais dispersos. Quando glicose vira CO2 e água, o carbono fica mais oxidado e a energia é capturada parcialmente em ATP e gradientes. Parte inevitavelmente se perde como calor. Essa perda não é defeito; é o preço físico de transformar energia em trabalho."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "termodinâmica",
+      "origem": "do grego therme, calor, e dynamis, força ou potência",
+      "significado": "estudo de como calor, energia e trabalho se relacionam",
+      "explicacao": "O nome nasceu em máquinas térmicas, mas serve para a célula porque metabolismo também é máquina de transformação: recebe energia química, realiza trabalho e dissipa calor."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O que delta G realmente pergunta?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Delta G pergunta se uma reação, nas condições consideradas, tem energia livre disponível para seguir em determinada direção. Se delta G é negativo, a reação pode acontecer de modo espontâneo; se é positivo, ela precisa ser acoplada a outra reação favorável. A palavra espontâneo aqui não quer dizer rápido. Uma fogueira pode ser termodinamicamente favorável e ainda precisar de faísca."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: não confunda espontaneidade com velocidade. Delta G fala de direção e possibilidade energética; enzimas falam de velocidade e caminho."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que concentração muda a história?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma reação não vive no vácuo. A quantidade de substrato e produto altera o delta G real. Se a célula remove produto rapidamente, ela puxa a reação para frente. Se acumula produto, a reação pode frear. Por isso a mesma reação pode parecer fixa no livro e flexível dentro da célula: o ambiente químico muda a inclinação da ladeira."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se a célula chegasse ao equilíbrio termodinâmico completo?",
+      "resposta": "Ela morreria. No equilíbrio não há gradiente útil para explorar, não há direção líquida de fluxo e não há diferença energética sustentando transporte, síntese ou sinalização. A morte celular pode ser pensada, em parte, como perda progressiva da capacidade de manter desequilíbrios organizados."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "represa",
+      "conteudo": "Pense numa represa. A água alta de um lado representa energia potencial; a turbina transforma parte dessa queda em trabalho; o restante se dissipa em calor, som e turbulência. A célula usa combustíveis, ATP e gradientes como represas químicas. Delta G mede a inclinação disponível para a água descer. Enzimas são turbinas e canais, não criadoras da queda. A analogia quebra porque reações químicas também dependem de concentração, pH e acoplamento molecular, não apenas de altura."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Vida como ordem local paga por desordem total",
+      "descricao": "Esquema mostrando célula organizada no centro, entrada de combustíveis e O2, saída de CO2, calor e produtos dispersos, com delta G e entropia conectando o processo.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. Célula organizada no centro com membranas, DNA e mitocôndria. Setas entrando: glicose, ácidos graxos, O2. Setas saindo: CO2, H2O, calor, produtos dispersos. Acima, rótulo 'ordem local'. Ao redor, rótulo 'aumento de entropia no ambiente'. Incluir pequena escala com Delta G negativo permitindo trabalho celular: transporte ativo, síntese e movimento. Cores limpas, alto contraste, sem excesso de texto.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os três filhos deste bloco vão separar a visão geral em peças menores: primeiro, as leis aplicadas à célula; depois, energia livre de Gibbs e espontaneidade; por fim, a dependência das concentrações. A ideia-mãe fica aqui: a célula vive porque mantém fluxos, não porque alcança repouso."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-000",
+        "titulo": "Bioenergética — Visão do Módulo",
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco é o primeiro mergulho do módulo e depende da visão geral sobre energia, ATP, acoplamento e elétrons."
+      },
+      {
+        "bloco_id": "s3-bioq2-00-000",
+        "titulo": "Metabolismo — A Economia de Energia da Célula",
+        "relevancia": "base_necessaria",
+        "explicacao": "A noção de metabolismo como economia prepara a ideia de que toda ordem celular tem custo energético."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Primeira e Segunda Leis Aplicadas à Célula",
+        "mecanismo_conexao": "O filho imediato explicará por que a célula conserva energia ao transformá-la e aumenta entropia total ao funcionar.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Energia Livre de Gibbs (ΔG) e Espontaneidade",
+        "mecanismo_conexao": "A visão geral introduz delta G; o filho aprofunda como interpretar sinal, magnitude e espontaneidade.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "ΔG Depende das Concentrações — Por Que o Equilíbrio Importa",
+        "mecanismo_conexao": "A dependência do delta G real explica como a célula puxa reações removendo produtos ou mantendo substratos altos.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Desacopladores Mitocondriais e Termogênese",
+        "mecanismo_conexao": "Quando energia do gradiente de prótons vira calor em vez de ATP, a termodinâmica aparece como fenômeno clínico e fisiológico.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "ATP — A Moeda Energética Universal — Visão Geral",
+        "tipo_relacao": "COMPLEMENTA",
+        "explicacao": "ATP é a forma prática pela qual muitas quedas de energia livre são acopladas a trabalho celular."
+      },
+      {
+        "bloco_id": "Acoplamento de Reações — Como a Célula Paga o Impossível",
+        "tipo_relacao": "APROFUNDA",
+        "explicacao": "O acoplamento é a técnica bioquímica para somar reações e tornar favorável o conjunto."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-001-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que a existência de células organizadas não viola a segunda lei da termodinâmica?",
+      "resposta": "Porque a célula cria ordem local enquanto aumenta a entropia total do sistema mais ambiente. Ela consome combustíveis, dissipa calor e libera produtos mais dispersos para manter sua organização interna.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "termodinamica",
+        "entropia"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-001-fc02",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de interpretar 'espontâneo' como 'rápido' em bioquímica?",
+      "resposta": "Espontâneo significa termodinamicamente favorável, isto é, com delta G negativo nas condições dadas. A velocidade depende da barreira de ativação e das enzimas. Uma reação pode ser favorável e lenta sem catalisador.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "delta-g",
+        "armadilha"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-001-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria se uma célula atingisse equilíbrio completo em todos os seus gradientes?",
+      "resposta": "Ela perderia capacidade de realizar trabalho. Sem gradientes e sem diferenças de energia livre, não haveria transporte ativo, síntese dirigida, sinalização elétrica ou fluxo metabólico líquido. Equilíbrio completo é incompatível com vida celular.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "equilibrio",
+        "contrafactual"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-001-fc04",
+      "tipo": "mecanismo",
+      "pergunta": "Como remover produto pode tornar uma reação mais favorável dentro da célula?",
+      "resposta": "A remoção de produto altera as concentrações reais, reduzindo o termo que empurra a reação de volta. Assim, o delta G real pode ficar mais negativo, puxando o fluxo para frente mesmo que o delta G padrão pareça pouco favorável.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "concentracao",
+        "delta-g"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-001-caso01",
+      "titulo": "Febre extrema após anestesia e ATP virando calor",
+      "apresentacao": "Homem de 19 anos, sem comorbidades conhecidas, desenvolve rigidez muscular, aumento rápido de CO2 expirado e hipertermia durante anestesia geral. A equipe suspeita de hipertermia maligna. A leitura clínica completa pertence a Anestesiologia, mas o eixo bioenergético é direto: energia química passa a ser dissipada como calor em ritmo perigoso.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Predisposição genética, frequentemente relacionada ao receptor de rianodina em músculo esquelético, pode levar a liberação excessiva de cálcio após certos anestésicos."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A fibra muscular esquelética fica com cálcio citosólico elevado, ativando contração sustentada e bombas de cálcio que consomem ATP intensamente."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A hidrólise acelerada de ATP e o metabolismo elevado transformam energia química em calor, CO2 e acidose, superando a capacidade de dissipação do corpo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Surgem rigidez muscular, hipercapnia, taquicardia, acidose e hipertermia progressiva."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento, a cascata pode evoluir para rabdomiólise, hipercalemia, arritmias e falência orgânica; o dantroleno reduz a liberação de cálcio e interrompe a cascata."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra a termodinâmica da vida em escala clínica: ATP não some; sua energia é transformada. Quando a célula muscular entra em ciclo de contração e bombeamento de cálcio, grande parte da energia vira calor, lembrando que trabalho biológico sempre tem dissipação.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Fisiologia",
+        "Anestesiologia"
+      ],
+      "diagnostico_revelado": "Hipertermia maligna, usada como correlação clínica de dissipação energética excessiva.",
+      "tratamento_resumido": "Suspender agentes desencadeantes, suporte intensivo e administrar dantroleno conforme protocolo; detalhes de dose pertencem a blocos clínicos específicos."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-001-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'Vida como ordem local paga por desordem total'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Secoes de termodinamica bioquimica e energia livre.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Berg JM, Tymoczko JL, Gatto GJ, Stryer L. Biochemistry. 9th ed. W.H. Freeman; 2019. Capitulos de energia livre, ATP e acoplamento.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "mecanismo"
   ]

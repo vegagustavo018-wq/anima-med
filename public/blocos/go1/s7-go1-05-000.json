@@ -10,49 +10,204 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Módulo 5 — Miomatose Uterina e Tumores Benignos",
+    "titulo": "Módulo 5 - Miomatose Uterina e Tumores Benignos",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 2,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "miomatose",
+      "sangramento-uterino-anormal",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Leiomiomas e outras lesões benignas do útero; sangramento, dor, massa",
-  "narrativa": [],
+  "resumo_conciso": "Miomatose uterina e hiperplasia endometrial organizam causas estruturais e hormonais de sangramento uterino anormal, dor, massa pélvica e risco reprodutivo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Este módulo conecta lesões benignas do útero com a queixa prática mais comum: sangramento uterino anormal. Miomas, pólipos, adenomiose e hiperplasia endometrial entram no raciocínio estrutural, enquanto disfunção ovulatória e hormônios explicam parte do estímulo endometrial."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Leiomiomas são tumores benignos do miométrio, muito prevalentes, dependentes de esteroides sexuais e geralmente monoclonais. Podem ser assintomáticos ou causar sangramento intenso, cólica, sensação de peso, compressão urinária ou intestinal e infertilidade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A localização do mioma importa mais do que apenas o tamanho. Um mioma submucoso pequeno pode sangrar muito; um subseroso grande pode comprimir bexiga; um intramural pode distorcer cavidade ou alterar contratilidade uterina."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Hiperplasia endometrial entra no mesmo módulo porque também se apresenta com sangramento anormal, mas seu eixo é outro: proliferação glandular por estímulo estrogênico sem oposição, com risco variável de evolução para câncer de endométrio."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O raciocínio clínico deve separar três perguntas: existe lesão estrutural, existe risco de malignidade e qual é o desejo reprodutivo da paciente. Essas perguntas mudam exame, biópsia e tratamento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A conduta pode variar de observação a tratamento medicamentoso, dispositivo intrauterino liberador de levonorgestrel, miomectomia, embolização, histeroscopia ou histerectomia. O plano bom é aquele que respeita sintomas, anemia, idade, fertilidade e risco oncológico."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "titulo": "Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-04-006",
+        "titulo": "Adenomiose - Endométrio Invadindo o Miométrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Módulo 6 - Infecções do Trato Genital e ISTs",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-025",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Conduta no Sangramento Uterino Anormal — Aguda e Crônica"
+      },
+      {
+        "bloco_id": "s7-go1-03-004",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Manifestações Clínicas e Riscos da SOP"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-05-000-fc-01",
+      "pergunta": "Qual queixa une miomas e hiperplasia endometrial?",
+      "resposta": "Sangramento uterino anormal, especialmente sangramento menstrual intenso ou irregular.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-000-fc-02",
+      "pergunta": "Por que a localização do mioma importa?",
+      "resposta": "Porque determina sintoma: submucoso sangra, subseroso comprime, intramural pode alterar cavidade e contratilidade.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-000-fc-03",
+      "pergunta": "Qual pergunta sempre entra antes da conduta em mioma?",
+      "resposta": "Desejo reprodutivo, intensidade dos sintomas, anemia e suspeita de malignidade.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-000-fc-04",
+      "pergunta": "Qual eixo fisiopatológico da hiperplasia?",
+      "resposta": "Estímulo estrogênico sem oposição progesterônica levando a proliferação glandular endometrial.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-05-000-cc-01",
+      "titulo": "Sangramento e massa",
+      "apresentacao": "Mulher de 39 anos relata fluxo menstrual intenso, anemia e aumento do volume abdominal. Deseja preservar fertilidade.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Miomatose uterina e hiperplasia endometrial organizam causas estruturais e hormonais de sangramento uterino anormal, dor, massa pélvica e risco reprodutivo."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Módulo 5 - Miomatose Uterina e Tumores Benignos, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Miomatose uterina e hiperplasia endometrial organizam causas estruturais e hormonais de sangramento uterino anormal, dor, massa pélvica e risco reprodutivo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 39 anos relata fluxo menstrual intenso, anemia e aumento do volume abdominal. Deseja preservar fertilidade."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual raciocínio inicial organiza a investigação? Avaliar miomatose por exame e imagem, mapear cavidade, corrigir anemia e escolher conduta preservadora conforme localização dos miomas."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Avaliar miomatose por exame e imagem, mapear cavidade, corrigir anemia e escolher conduta preservadora conforme localização dos miomas.",
+      "tratamento_resumido": "Avaliar miomatose por exame e imagem, mapear cavidade, corrigir anemia e escolher conduta preservadora conforme localização dos miomas."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Mapa do módulo mostrando PALM-COEIN, miomas por localização, hiperplasia endometrial e escolhas de tratamento.",
+        "alt": "Ilustração educacional para Módulo 5 - Miomatose Uterina e Tumores Benignos"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_3_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NICE guideline NG88 - Heavy menstrual bleeding: assessment and management",
+      "url": "https://www.nice.org.uk/guidance/ng88",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "FIGO resources - menstrual disorders and abnormal uterine bleeding",
+      "url": "https://www.figo.org/figo-resources/menstrual-disorders",
+      "tipo": "classificacao"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

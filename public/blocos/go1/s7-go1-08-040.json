@@ -4,49 +4,159 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Câncer de Vulva e Vagina",
+    "titulo": "Cancer de Vulva e Vagina",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Carcinoma escamoso vulvar, líquen escleroso, VIN; clínica e conduta",
-  "narrativa": [],
+  "resumo_conciso": "Câncer de vulva é geralmente carcinoma escamoso, associado a HPV ou líquen escleroso/inflamação crônica. Câncer vaginal é raro e exige investigar lesão, sangramento ou corrimento persistente.",
+  "narrativa": [
+    {
+      "tipo": "abertura",
+      "conteudo": "Câncer de vulva é menos frequente que colo, endométrio e ovário, mas costuma ser diagnosticado tarde porque prurido, fissura ou ferida podem ser tratados por meses como infecção comum."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "O carcinoma escamoso é o tipo mais comum. Há duas vias principais: uma relacionada a HPV e neoplasia intraepitelial vulvar, e outra associada a líquen escleroso, idade maior e inflamação crônica."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Sintomas de alerta incluem prurido vulvar persistente, dor, ardor, úlcera que não cicatriza, área endurecida, placa branca/vermelha, sangramento, massa ou alteração pigmentada."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Toda lesão vulvar persistente ou suspeita merece biópsia. A vulva é visível e acessível; o atraso geralmente vem de não olhar, não palpar ou não biopsiar."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "O tratamento depende de tamanho, localização, profundidade e linfonodos. Cirurgia com margem adequada e avaliação linfonodal é base em muitos casos; radioterapia e quimioterapia entram em situações selecionadas."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Câncer de vagina é raro. Pode estar associado a HPV, antecedente de câncer cervical, radioterapia prévia ou exposição intrauterina a dietilestilbestrol em contextos históricos."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Sangramento pós-coito, corrimento persistente, massa vaginal ou lesão ao exame especular exigem investigação, geralmente com biópsia dirigida."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      "s7-go1-08-000"
+    ],
+    "futuras": [
+      "s7-go1-09-000"
+    ],
+    "laterais": [
+      "s7-go1-05-005",
+      "s7-go1-07-006"
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "id": "s7-go1-08-040-fc-01",
+      "pergunta": "Qual tipo histológico mais comum do câncer de vulva?",
+      "resposta": "Carcinoma escamoso.",
+      "tipo": "conceito"
+    },
+    {
+      "id": "s7-go1-08-040-fc-02",
+      "pergunta": "Quais duas vias principais do câncer vulvar?",
+      "resposta": "Via relacionada a HPV/VIN e via relacionada a líquen escleroso/inflamação crônica.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-08-040-fc-03",
+      "pergunta": "Qual conduta para lesão vulvar persistente?",
+      "resposta": "Biópsia.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-08-040-fc-04",
+      "pergunta": "Câncer de vagina é comum?",
+      "resposta": "Não, é raro, mas deve ser investigado diante de lesão ou sangramento persistente.",
+      "tipo": "aplicacao"
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "id": "s7-go1-08-040-cc-01",
+      "titulo": "Prurido que não passa",
+      "enunciado": "Mulher de 72 anos tem prurido vulvar crônico e placa esbranquiçada endurecida que não melhora com antifúngico.",
+      "pergunta": "Qual passo não pode faltar?",
+      "resposta_comentada": "Exame vulvar cuidadoso e biópsia da lesão suspeita, considerando líquen escleroso e câncer vulvar."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Mapa vulvar com lesão suspeita, líquen escleroso, via HPV/VIN, linfonodo inguinal e indicação de biópsia.",
+        "alt": "Ilustracao educacional para Cancer de Vulva e Vagina"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Vulvar Cancer Treatment",
+      "url": "https://www.cancer.gov/types/vulvar/hp/vulvar-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Vaginal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/vaginal/hp/vaginal-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Gestational Trophoblastic Disease Treatment",
+      "url": "https://www.cancer.gov/types/gestational-trophoblastic/hp/gtd-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI - BRCA Gene Changes: Cancer Risk and Genetic Testing",
+      "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "NCI - Lynch Syndrome",
+      "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+      "tipo": "referencia"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

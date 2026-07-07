@@ -10,43 +10,234 @@
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
-      "biol",
-      "esqueleto"
+      "biologia",
+      "metabolismo",
+      "anabolismo",
+      "catabolismo",
+      "bioenergética"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "subtitulo": "Como a célula decide quando quebrar moléculas e quando construir corpo?"
   },
-  "resumo_conciso": "Visão panorâmica das vias que constroem e degradam; balanço metabólico",
-  "narrativa": [],
+  "resumo_conciso": "Metabolismo é o conjunto organizado de vias que transforma matéria e energia em manutenção da vida. Catabolismo quebra moléculas grandes, libera energia e gera intermediários; anabolismo usa energia e blocos menores para construir proteínas, lipídios, ácidos nucleicos e reservas. A lógica não é oposição simples, mas coordenação: a célula alterna e integra quebra e construção conforme ATP, NADH, NADPH, disponibilidade de nutrientes e sinais hormonais. Entender essa balança prepara bioquímica, fisiologia do jejum, diabetes, exercício e crescimento.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em uma casa viva que nunca fica pronta. Todo dia ela precisa demolir partes antigas, reciclar material, comprar energia e construir peças novas. A célula vive assim: se apenas quebrasse, desapareceria; se apenas construísse, ficaria sem energia e sem controle."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema é equilibrar caixa e obra"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Catabolismo é o conjunto de vias que degradam moléculas complexas em moléculas menores. Ao quebrar glicose, ácidos graxos ou aminoácidos, a célula captura energia em ATP e em transportadores de elétrons, como NADH e FADH2. Também produz intermediários que podem alimentar outras vias."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Anabolismo é o movimento complementar: a célula usa energia, poder redutor e blocos pequenos para construir moléculas maiores. Síntese de proteínas, glicogênio, ácidos graxos e DNA não acontece de graça; cada ligação nova precisa ser financiada."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: catabolismo não é mau e anabolismo não é bom. Quebrar e construir são dois lados de uma economia celular que precisa permanecer solvente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A coordenação vem de sinais internos e externos. ATP alto sugere energia disponível; AMP alto sinaliza escassez. Insulina favorece armazenamento e construção após alimentação. Glucagon e adrenalina favorecem mobilização de reservas durante jejum ou estresse."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um detalhe elegante é a separação de moedas. NADH costuma carregar elétrons para produção de ATP, enquanto NADPH é muito usado em biossíntese e defesa antioxidante. Assim, a célula evita misturar dinheiro de obra com dinheiro de emergência energética."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: catabolismo fornece energia e peças; anabolismo consome energia e peças para construir. Metabolismo saudável é coordenação, não velocidade máxima."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "metabolismo",
+      "origem": "do grego metabole, mudança ou transformação",
+      "significado": "conjunto de transformações químicas da vida",
+      "explicacao": "A palavra é perfeita: viver é transformar continuamente matéria, energia e informação sem perder a identidade do organismo."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "canteiro de obras",
+      "conteudo": "A célula é um canteiro urbano. Catabolismo é a demolição controlada que recupera tijolos e libera orçamento; anabolismo é a construção que usa tijolos, energia e projeto. ATP é dinheiro imediato, NADH é crédito energético para usina, NADPH é verba protegida para obras finas. A analogia quebra porque vias metabólicas acontecem ao mesmo tempo e compartilham intermediários."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se uma célula ativasse anabolismo intenso durante falta de energia?",
+      "resposta": "Ela gastaria ATP que não consegue repor, perderia gradientes iônicos, falharia em reparo básico e poderia entrar em estresse ou morte celular. Construção sem caixa quebra a economia da célula."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Balança metabólica entre quebra e construção",
+      "descricao": "Esquema com catabolismo à esquerda gerando ATP, NADH e intermediários, e anabolismo à direita consumindo ATP, NADPH e precursores para construir macromoléculas.",
+      "prompt_ia": "Infográfico em português, fundo neutro, duas metades conectadas: catabolismo com glicose, lipídios e aminoácidos descendo para acetil-CoA, ATP e NADH; anabolismo com aminoácidos, nucleotídeos e ácidos graxos subindo para proteínas, DNA e membranas; incluir insulina, glucagon, ATP e AMP como sinais.",
+      "origem": "ia"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na clínica, essa lógica aparece no jejum, no exercício, no crescimento infantil, no diabetes e no câncer. Cada estado metabólico pergunta a mesma coisa: o corpo está quebrando reservas, construindo tecido ou tentando fazer os dois de maneira desordenada?"
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biol-01-004",
+        "titulo": "Bioenergética (Princípios) — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "O bloco-pai apresenta a vida como fluxo de energia; aqui esse fluxo vira vias de construção e degradação."
+      },
+      {
+        "bloco_id": "s1-biol-01-004-02",
+        "titulo": "ATP — a Moeda Energética e o Acoplamento de Reações",
+        "relevancia": "base_necessaria",
+        "explicacao": "ATP é a moeda imediata que financia processos anabólicos e é produzida por vias catabólicas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Glicólise, ciclo de Krebs e fosforilação oxidativa",
+        "mecanismo_conexao": "Essas vias detalham como o catabolismo captura energia de nutrientes em ATP e transportadores reduzidos.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Diabetes mellitus e estado catabólico",
+        "mecanismo_conexao": "Deficiência de sinal insulínico desloca o organismo para mobilização de reservas apesar de glicose elevada no sangue.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "PREPARA",
+        "topico": "Enzimas — Catálise Biológica e Regulação",
+        "explicacao": "A lógica metabólica depende de enzimas reguladas para acelerar ou frear vias conforme o estado energético."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-biol-01-004-03-fc01",
+      "tipo": "comparacao",
+      "pergunta": "Compare anabolismo e catabolismo sem usar apenas 'constrói' e 'quebra'.",
+      "resposta": "Catabolismo degrada moléculas para capturar energia, elétrons e intermediários; anabolismo usa energia, poder redutor e precursores para formar moléculas complexas e estruturas celulares.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "biologia",
+        "metabolismo"
+      ]
+    },
+    {
+      "card_id": "s1-biol-01-004-03-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Por que NADH e NADPH não são equivalentes na lógica metabólica?",
+      "resposta": "NADH geralmente leva elétrons para produção de ATP; NADPH é mais usado em biossíntese redutora e defesa antioxidante. A separação ajuda a célula a controlar energia e construção.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "biologia",
+        "metabolismo"
+      ]
+    },
+    {
+      "card_id": "s1-biol-01-004-03-fc03",
+      "tipo": "clinico",
+      "pergunta": "Por que jejum prolongado aumenta catabolismo?",
+      "resposta": "Porque a queda de nutrientes e insulina, junto ao aumento de glucagon e outros sinais, mobiliza glicogênio, gordura e depois proteínas para manter energia e glicose para tecidos dependentes.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "biologia",
+        "jejum"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biol-01-004-03-caso01",
+      "titulo": "Perda de peso e glicose alta",
+      "apresentacao": "Paciente jovem apresenta perda de peso, muita sede, urina frequente e glicemia muito elevada. Apesar de haver glicose no sangue, suas células se comportam como se faltasse combustível utilizável.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Deficiência grave de ação da insulina."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Vias metabólicas de armazenamento e uso de glicose em fígado, músculo e tecido adiposo."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A célula reduz entrada/armazenamento de glicose e aumenta lipólise, proteólise e produção hepática de glicose."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Poliúria, polidipsia, perda de peso e fadiga."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O organismo entra em estado catabólico inadequado, podendo evoluir para cetose e acidose se não tratado."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que metabolismo não depende só de nutrientes presentes, mas de sinais hormonais que autorizam construção, armazenamento ou mobilização.",
+      "disciplinas_relacionadas": [
+        "biologia",
+        "bioquímica",
+        "fisiologia",
+        "endocrinologia"
+      ],
+      "diagnostico_revelado": "Diabetes mellitus com estado catabólico por deficiência de insulina, a confirmar clinicamente.",
+      "tratamento_resumido": "Reposição de fluidos e eletrólitos quando necessário, insulinoterapia conforme protocolo, educação em diabetes e acompanhamento endocrinológico."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-biol-01-004-03-img01",
+        "url": null,
+        "prompt_ia": "Infográfico em português, fundo neutro, duas metades conectadas: catabolismo com glicose, lipídios e aminoácidos descendo para acetil-CoA, ATP e NADH; anabolismo com aminoácidos, nucleotídeos e ácidos graxos subindo para proteínas, DNA e membranas; incluir insulina, glucagon, ATP e AMP como sinais.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Princípios de Bioquímica de Lehninger. 8ª ed. Artmed.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Berg JM, Tymoczko JL, Gatto GJ, Stryer L. Bioquímica. 9ª ed. Guanabara Koogan.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "conceito/definicao contextualizada",
     "mecanismo",

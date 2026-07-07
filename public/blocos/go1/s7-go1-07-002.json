@@ -4,49 +4,211 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "HPV — O Vírus e a Oncogênese Cervical",
+    "titulo": "HPV - O Virus e a Oncogenese Cervical",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "colo-uterino-hpv",
+      "mecanismo",
+      "correlacao_basica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Tipos de alto/baixo risco; proteínas E6/E7; integração e p53/Rb",
-  "narrativa": [],
+  "resumo_conciso": "HPV infecta células basais do epitélio. Tipos de baixo risco causam verrugas; tipos de alto risco persistentes podem expressar E6/E7, inativar p53/Rb e levar a lesões precursoras e câncer.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "HPV é um vírus DNA epiteliotrópico transmitido principalmente por contato sexual pele-mucosa. Ele infecta células basais por microabrasões, especialmente na zona de transformação cervical."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Tipos de baixo risco, como 6 e 11, estão ligados a verrugas anogenitais. Tipos de alto risco, como 16 e 18, concentram maior risco de lesões intraepiteliais de alto grau e câncer cervical."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na maioria das infecções, o sistema imune clareia o vírus em meses a poucos anos. O problema é a persistência de HPV oncogênico, principalmente quando associada a tabagismo, imunossupressão ou ausência de rastreio."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As oncoproteínas E6 e E7 são o coração molecular da oncogênese. E6 reduz função de p53, dificultando apoptose e reparo; E7 interfere em Rb, liberando proliferação celular."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando o controle do ciclo celular se perde, o epitélio passa a maturar mal, acumular atipias e progredir para lesões intraepiteliais. A invasão ocorre quando células ultrapassam a membrana basal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vacinas contra HPV previnem infecção por tipos oncogênicos e de verrugas conforme formulação. O melhor efeito ocorre antes da exposição sexual, mas diretrizes também contemplam outras faixas conforme contexto."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Rastreio continua necessário porque vacina não trata infecção já estabelecida e porque cobertura vacinal populacional e tipos virais variam."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-06-040",
+        "titulo": "HIV e Outras ISTs na Saude da Mulher",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-07-006",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Vacinacao contra o HPV - Prevencao Primaria",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Modulo 8 - Cancer Ginecologico",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-06-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Cervicites e Uretrites - Gonorreia e Clamidia"
+      },
+      {
+        "bloco_id": "s7-go1-06-021",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Ulceras Genitais - Abordagem Sindromica"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-07-002-fc-01",
+      "pergunta": "Quais tipos de HPV são baixo risco clássicos?",
+      "resposta": "HPV 6 e 11, associados a verrugas anogenitais.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-002-fc-02",
+      "pergunta": "Quais tipos são alto risco clássicos?",
+      "resposta": "HPV 16 e 18, fortemente ligados a câncer cervical.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-002-fc-03",
+      "pergunta": "O que faz E6?",
+      "resposta": "Reduz função de p53, prejudicando apoptose e reparo.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-002-fc-04",
+      "pergunta": "O que faz E7?",
+      "resposta": "Interfere em Rb e favorece proliferação celular.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-07-002-cc-01",
+      "titulo": "HPV positivo não é câncer",
+      "apresentacao": "Paciente com teste de HPV alto risco positivo fica assustada achando que já tem câncer.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: HPV infecta células basais do epitélio."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a HPV - O Virus e a Oncogenese Cervical, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "HPV infecta células basais do epitélio. Tipos de baixo risco causam verrugas; tipos de alto risco persistentes podem expressar E6/E7, inativar p53/Rb e levar a lesões precursoras e câncer."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente com teste de HPV alto risco positivo fica assustada achando que já tem câncer."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Como explicar? HPV alto risco indica maior risco e necessidade de seguimento; câncer depende de persistência e progressão, não de um teste isolado."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "HPV alto risco indica maior risco e necessidade de seguimento; câncer depende de persistência e progressão, não de um teste isolado.",
+      "tratamento_resumido": "HPV alto risco indica maior risco e necessidade de seguimento; câncer depende de persistência e progressão, não de um teste isolado."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Esquema molecular de HPV alto risco entrando em célula basal, E6/p53, E7/Rb, NIC e invasão.",
+        "alt": "Ilustracao educacional para HPV - O Virus e a Oncogenese Cervical"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC - Cervical Cancer Screening",
+      "url": "https://www.cdc.gov/cervical-cancer/screening/index.html",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Human Papillomavirus Infection",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/hpv-cancer.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "ASCCP Risk-Based Management Consensus Guidelines",
+      "url": "https://www.asccp.org/management-guidelines",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "correlacao_basica"

@@ -10,45 +10,292 @@
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
-      "medleg",
-      "esqueleto"
+      "declaração-de-óbito",
+      "iml",
+      "svo",
+      "morte-violenta",
+      "morte-natural",
+      "medleg"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "subtitulo": "Diante de um corpo, qual pergunta o médico faz primeiro para saber para onde encaminhar o caso?"
   },
-  "resumo_conciso": "Morte violenta/suspeita ao IML, morte natural sem assistência ao SVO",
-  "narrativa": [],
+  "resumo_conciso": "Fluxo técnico de decisão entre médico assistente, SVO e IML conforme o tipo de morte",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "Por que não existe um único caminho para preencher a DO de qualquer óbito?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco-pai já mostrou que a competência para assinar a Declaração de Óbito muda conforme o tipo de morte, mas essa frase esconde um problema prático real: no plantão, diante de um corpo, alguém precisa decidir, em minutos, para qual dos três destinos esse caso vai. Errar essa decisão não é um deslize administrativo — encaminhar ao médico assistente um caso que devia ir ao IML pode destruir uma prova pericial insubstituível, e encaminhar ao IML um caso de morte natural comum sobrecarrega desnecessariamente um serviço pericial já escasso, retendo o corpo da família por dias sem motivo técnico. É por isso que existe um fluxo de decisão formal, não um julgamento pessoal do médico plantonista: a definição de qual serviço assume o caso depende de critérios objetivos, não da opinião de quem está de plantão."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve esse impasse, sem ainda nomear os três destinos?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é uma árvore de decisão binária aplicada em sequência, sempre pela mesma ordem lógica. A primeira pergunta é se a morte foi natural ou externa (violenta ou de causa indeterminada com suspeita de violência) — essa é a bifurcação que mais importa, porque separa o mundo da assistência médica do mundo da perícia criminal. Se a resposta for \"externa\", o caminho está decidido e não há mais nada a avaliar: perícia especializada, sempre. Se a resposta for \"natural\", uma segunda pergunta entra em cena, mais sutil: essa morte natural teve acompanhamento médico que permita reconstituir a cadeia de causas, ou a pessoa morreu sem nenhum médico que a estivesse assistindo? É essa segunda pergunta que decide entre o médico assistente comum e um serviço de verificação técnica sem caráter pericial-criminal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De que critérios concretos esse fluxo é feito?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada um dos três destinos responde a uma combinação específica de dois eixos: a natureza da morte (natural vs. externa) e a existência de assistência médica prévia. O médico assistente ou médico do local do óbito atua quando a morte é natural E há histórico clínico suficiente — paciente internado, acompanhado em UBS, ou atendido em domicílio por equipe de saúde que testemunhou a evolução da doença. O Serviço de Verificação de Óbitos (SVO) atua quando a morte é natural, mas SEM esse acompanhamento prévio — a pessoa é encontrada morta em casa, sem médico assistente, sem sinais de violência, e alguém precisa apurar tecnicamente qual doença a matou, já que ninguém presenciou a evolução clínica. O Instituto Médico Legal (IML) atua sempre que a morte é externa, independentemente de haver ou não assistência médica prévia — mesmo um paciente internado que sofre um evento traumático dentro do próprio hospital (queda, agressão, erro que configure possível crime) desvia para o IML, porque o critério decisivo é a natureza externa do evento, não o local onde ele ocorreu."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esse fluxo funciona na prática, passo a passo?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Diante de qualquer óbito, o raciocínio segue sempre a mesma sequência de perguntas, na mesma ordem, antes de qualquer preenchimento de formulário. Primeiro, existe qualquer indício de violência, trauma, intoxicação, ou circunstância suspeita — morte súbita sem doença prévia conhecida, achados incompatíveis com a história relatada, contexto de risco (uso de drogas, conflito doméstico, acidente)? Se sim, IML, sem exceção, mesmo que a suspeita pareça remota. Se não há qualquer indício de violência ou suspeita, a segunda pergunta é se existe médico assistente ou histórico clínico documentado que explique a causa da morte. Havendo esse histórico, o próprio médico assistente (ou o médico do local do óbito, no SUS) preenche a DO. Não havendo — pessoa encontrada morta, sem acompanhamento médico prévio, mas sem qualquer sinal de violência — o caso segue ao SVO, onde existir, para uma necropsia clínica (não pericial-criminal) que identifique a causa natural."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que essa distinção IML/SVO existe, e o que aconteceria sem ela?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O SVO existe porque nem toda morte sem assistência médica é suspeita — a maior parte é apenas natural e mal documentada, e submeter esses milhares de casos anuais ao rito pericial-criminal do IML seria um desperdício de uma estrutura desenhada para produzir prova judicial, além de atrasar sepultamentos de famílias que não têm nenhum processo penal em jogo. Ao mesmo tempo, o SVO não substitui o IML: ele não tem competência, treinamento nem mandato legal para lidar com cadeia de custódia de prova, então, se durante a necropsia do SVO aparecer qualquer achado que sugira violência (uma lesão inesperada, um padrão de intoxicação, sinais de asfixia), o protocolo exige a interrupção imediata do exame e o encaminhamento do corpo ao IML. Sem essa via de escape entre os dois serviços, um SVO que insistisse em concluir um caso na verdade violento correria o mesmo risco já descrito no bloco-pai: destruir, por omissão, uma prova pericial que não pode ser reconstituída depois."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com que outras peças do sistema esse fluxo de decisão se articula?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa triagem se articula diretamente com o conceito de morte natural vs. externa apresentado no bloco-pai, do qual ela é o desdobramento operacional — aqui não se define mais o que é morte externa, mas sim o procedimento concreto de encaminhamento uma vez feita essa classificação. Articula-se também com a cadeia de custódia da prova pericial, tema que ganhará profundidade técnica quando a disciplina tratar da necropsia médico-legal no IML: a decisão tomada neste fluxo é o que determina se essa cadeia de custódia sequer chega a existir. E se conecta, na ponta administrativa, com a disponibilidade regional de SVO: em municípios sem SVO instalado, a legislação sanitária local geralmente permite que a própria vigilância epidemiológica ou o médico do serviço público assuma a verificação de óbito natural sem assistência [⚠️ variação por estado/município, verificar normativa local vigente]."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vêm os nomes IML e SVO, e o que revelam sobre a função de cada um?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "\"Instituto Médico Legal\" combina o termo médico com legal, do latim legalis (relativo à lei) — o nome já entrega que sua função não é apenas técnica, mas juridicamente instrumental: o laudo do IML existe para servir a um processo legal. \"Serviço de Verificação de Óbitos\" usa verificação, do latim verificare (tornar verdadeiro, comprovar) — a palavra sinaliza uma função mais modesta e não-judicial: comprovar tecnicamente uma causa de morte natural, sem a carga de produzir prova criminal. A diferença semântica entre \"legal\" e \"verificação\" espelha, quase literalmente, a diferença de mandato entre os dois serviços."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Existe uma imagem do cotidiano que ajude a fixar esse fluxo de três caminhos?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pense nesse fluxo como o pronto-socorro de um hospital, que também tem uma triagem de três caminhos. Um paciente com queixa crônica já acompanhada pelo seu médico de família é encaminhado de volta ao ambulatório de origem — equivalente ao médico assistente cuidando da morte natural já documentada. Um paciente que chega mal, sem história prévia clara, mas sem sinal de violência, vai para a investigação clínica geral do pronto-socorro — equivalente ao SVO investigando uma morte natural sem assistência. Um paciente que chega com sinais de agressão ou acidente vai direto para a sala vermelha, com protocolo de trauma e possível acionamento policial — equivalente ao IML recebendo qualquer morte externa. Onde a analogia quebra: no pronto-socorro, um paciente mal classificado na triagem ainda pode ser redirecionado sem grande prejuízo, porque ele continua vivo e o quadro pode ser reavaliado; no fluxo da DO, um corpo mal classificado e liberado para sepultamento antes da hora pode inviabilizar para sempre qualquer perícia posterior — não há segunda chance depois que o corpo é sepultado ou cremado."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "IML vs. SVO vs. médico assistente: quem aciona, quando e o que examina",
+      "colunas": [
+        "Critério",
+        "Médico assistente / local do óbito",
+        "SVO",
+        "IML"
+      ],
+      "linhas": [
+        {
+          "Critério": "Natureza da morte",
+          "Médico assistente / local do óbito": "Natural",
+          "SVO": "Natural",
+          "IML": "Externa (violenta, suspeita ou indeterminada com suspeita)"
+        },
+        {
+          "Critério": "Assistência médica prévia",
+          "Médico assistente / local do óbito": "Sim — histórico clínico documentado",
+          "SVO": "Não — sem médico assistente ou histórico suficiente",
+          "IML": "Irrelevante — natureza externa decide sozinha"
+        },
+        {
+          "Critério": "Tipo de exame realizado",
+          "Médico assistente / local do óbito": "Nenhum exame adicional; uso do prontuário/histórico clínico",
+          "SVO": "Necropsia clínica, sem finalidade pericial-criminal",
+          "IML": "Necropsia médico-legal, com cadeia de custódia da prova"
+        },
+        {
+          "Critério": "Finalidade do laudo",
+          "Médico assistente / local do óbito": "Registrar causa natural para SIM e sepultamento",
+          "SVO": "Esclarecer causa natural desconhecida para SIM e sepultamento",
+          "IML": "Produzir prova pericial para inquérito policial/processo penal"
+        },
+        {
+          "Critério": "O que fazer se achado inesperado sugerir violência",
+          "Médico assistente / local do óbito": "Suspender preenchimento e encaminhar ao IML",
+          "SVO": "Interromper a necropsia clínica e encaminhar ao IML",
+          "IML": "Não se aplica — já é o destino final da suspeita"
+        }
+      ]
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s5-medleg-01-007",
+        "titulo": "Declaração de Óbito como Documento Médico-Legal",
+        "disciplina": "Medicina Legal",
+        "semestre": 5,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já entender a distinção conceitual entre morte natural e externa e por que ela determina a competência de preenchimento antes de aplicar o fluxo técnico de decisão detalhado aqui."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "disciplina": "Medicina Legal",
+        "semestre_futuro": 6,
+        "topico": "Necropsia médico-legal e cadeia de custódia da prova no IML",
+        "mecanismo_conexao": "A decisão de encaminhar ao IML, tomada neste fluxo de triagem, é exatamente o gatilho que inicia a cadeia de custódia estudada em profundidade quando a disciplina aborda os procedimentos técnicos da necropsia pericial."
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "disciplina": "Medicina Legal",
+        "semestre_futuro": 6,
+        "topico": "Morte súbita e diagnóstico diferencial de causa indeterminada",
+        "mecanismo_conexao": "A segunda pergunta deste fluxo — se há histórico clínico suficiente — reaparece de forma mais complexa quando a disciplina trata de mortes súbitas em pacientes aparentemente hígidos, onde a fronteira entre SVO e IML é frequentemente contestada."
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "disciplina": "Saúde Coletiva",
+        "semestre_futuro": 6,
+        "topico": "Organização regional de serviços de verificação de óbito e vazios assistenciais",
+        "mecanismo_conexao": "A ausência de SVO em muitos municípios brasileiros é um problema de planejamento em saúde coletiva que reaparece ao se discutir desigualdades regionais de acesso a serviços periciais e forenses."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s5-medleg-01-007-02-fc01",
+      "pergunta": "Qual é a primeira pergunta e qual é a segunda pergunta do fluxo de decisão para saber quem preenche a DO?",
+      "resposta": "Primeira: a morte é natural ou externa (violenta/suspeita)? Se externa, vai direto ao IML. Segunda, só se a morte for natural: houve assistência médica prévia que documente a causa? Se sim, médico assistente; se não, SVO.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": [
+        "declaração-de-óbito",
+        "iml",
+        "svo",
+        "medleg"
+      ]
+    },
+    {
+      "card_id": "s5-medleg-01-007-02-fc02",
+      "pergunta": "Um paciente internado sofre uma agressão dentro do próprio hospital e morre. Para onde vai o caso, e por quê?",
+      "resposta": "Vai para o IML, porque o critério decisivo é a natureza externa do evento (agressão), não o local onde ocorreu; mesmo dentro de um hospital, com prontuário completo, a morte externa sempre desvia para perícia criminal.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "iml",
+        "morte-externa",
+        "armadilha",
+        "medleg"
+      ]
+    },
+    {
+      "card_id": "s5-medleg-01-007-02-fc03",
+      "pergunta": "Por que o SVO não pode simplesmente concluir uma necropsia clínica quando aparece um achado inesperado sugerindo violência?",
+      "resposta": "Porque o SVO não tem competência, treinamento nem mandato legal para lidar com cadeia de custódia de prova; o protocolo exige interromper o exame e encaminhar o corpo ao IML, sob risco de destruir irrecuperavelmente uma prova pericial.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "svo",
+        "iml",
+        "cadeia-de-custódia",
+        "medleg"
+      ]
+    },
+    {
+      "card_id": "s5-medleg-01-007-02-fc04",
+      "pergunta": "De onde vêm os nomes 'Instituto Médico Legal' e 'Serviço de Verificação de Óbitos', e o que essa diferença semântica revela?",
+      "resposta": "'Legal' vem do latim legalis (relativo à lei), sinalizando função judicial-instrumental do IML. 'Verificação' vem de verificare (tornar verdadeiro, comprovar), sinalizando função técnica não-judicial do SVO — a diferença nos nomes espelha a diferença de mandato entre os dois serviços.",
+      "tipo": "etimologia",
+      "dificuldade": 1,
+      "nivel_alvo": 1,
+      "tags": [
+        "etimologia",
+        "iml",
+        "svo",
+        "medleg"
+      ]
+    },
+    {
+      "card_id": "s5-medleg-01-007-02-fc05",
+      "pergunta": "Na analogia da triagem de pronto-socorro, onde ela quebra em relação ao fluxo da DO?",
+      "resposta": "No pronto-socorro, um paciente mal classificado pode ser reavaliado depois, porque continua vivo. No fluxo da DO, um corpo mal classificado e liberado para sepultamento ou cremação não tem segunda chance: qualquer perícia posterior fica inviabilizada para sempre.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "analogia",
+        "iml",
+        "svo",
+        "medleg"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "O bloco descreve um fluxo administrativo de triagem (médico assistente, SVO ou IML) e não uma estrutura anatômica, mecanismo fisiopatológico ou síndrome clínica. O 'erro' que o bloco discute é de encaminhamento processual, não uma disfunção orgânica com sintoma e desfecho clínico — forçar uma cascata Causa→Estrutura Afetada→Disfunção→Sintoma→Consequência aqui inventaria uma doença que não existe, quando o conteúdo real é sobre um algoritmo de decisão administrativa."
+  },
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s5-medleg-01-007-02-img01",
+        "url": null,
+        "prompt_ia": "Ilustração vetorial minimalista, estilo editorial médico moderno, paleta azul-marinho e dourado sóbrio. Um fluxograma de árvore de decisão com duas bifurcações sucessivas: no topo um ícone de corpo estilizado com um ponto de interrogação, uma primeira seta se dividindo em dois ramos rotulados esquematicamente com ícones (um raio para 'morte externa', um coração calmo para 'morte natural'); o ramo de morte externa vai direto a um ícone de balança da justiça (IML); o ramo de morte natural se divide novamente em dois: um ícone de prontuário/estetoscópio (médico assistente, com histórico) e um ícone de lupa sobre uma casa (SVO, sem histórico). Linhas finas conectando cada decisão. Fundo branco, estilo infográfico acadêmico, sem texto.",
+        "status": "pendente",
+        "origem": "esquema",
+        "titulo": "Árvore de decisão: médico assistente, SVO ou IML",
+        "descricao": "Fluxograma esquemático das duas perguntas sucessivas (natureza da morte, depois existência de assistência médica prévia) que definem o destino do corpo e a competência de preenchimento da DO."
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s5",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-5 (pipeline ANIMA)",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "manual-tecnico",
+      "citacao": "Ministério da Saúde / Conselho Federal de Medicina. A Declaração de Óbito: documento necessário e importante, 3ª ed., 2011 — fluxograma de encaminhamento conforme tipo de morte (natural assistida, natural sem assistência, violenta/suspeita).",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro-texto",
+      "citacao": "França, G. V. de. Medicina Legal, 11ª ed. Rio de Janeiro: Guanabara Koogan, 2017 — Capítulo sobre Tanatologia Forense, competência pericial do IML e função do SVO.",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "legislacao",
+      "citacao": "Brasil. Lei nº 6.015/1973 (Lei de Registros Públicos), arts. 77-88; regulamentações estaduais de organização de Institutos Médico-Legais e Serviços de Verificação de Óbitos. [⚠️ verificar normativa estadual vigente, pois a existência e organização do SVO variam por unidade federativa]",
+      "forca_evidencia": "media",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
-    "correlacao clinica",
-    "conceito medico-legal"
+    "tecnica pericial",
+    "correlacao clinica"
   ]
 }

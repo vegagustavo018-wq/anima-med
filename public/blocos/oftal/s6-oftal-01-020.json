@@ -12,31 +12,155 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Fisiologia da Visão — Panorama",
+    "subtitulo": "Como integrar óptica, fototransdução, reflexos pupilares e percepção de cor em uma visão de conjunto?",
     "semestre": 6,
-    "disciplina": "Oftalmologia",
+    "disciplina": "oftal",
+    "sistema_corporal": "sensorial",
+    "regiao_anatomica": "olho",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 8,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "oftal",
-      "esqueleto"
+      "fisiologia-visao-panorama",
+      "optica-dioptrias",
+      "fototransducao-cascata",
+      "reflexo-pupilar-luz",
+      "visao-cores",
+      "estereopsia",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Como luz vira percepção nítida, colorida e em profundidade",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior, analisamos os anexos oculares. Agora, visão de conjunto da Fisiologia da Visão. O principal desafio clínico é integrar os quatro pilares: óptica de lentes (focalização sobre a retina), fototransdução bioquímica (hiperpolarização por queda de cGMP), reflexos pupilares (vias aferente CN II e eferente CN III) e percepção superior (cores tricromáticas, adaptação ao escuro e estereopsia binocular). Cada pilar tem uma via neural específica e um defeito clínico rastreável.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Concluída a anatomia do Módulo 1, integramos agora a fisiologia visual em panorama. O ato de enxergar resulta de quatro processos sequenciais e interdependentes: a focalização óptica dos raios de luz na retina, a conversão bioquímica de fótons em sinal elétrico, a modulação reflexa do diâmetro pupilar e o processamento cortical de cores, contraste e profundidade. Como cada etapa se apoia na anterior e o que ocorre clinicamente quando um elo falha?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Os Quatro Pilares da Fisiologia Visual"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Pilares integrados",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Óptica de Lentes (Focalização)",
+          "explicacao": "A córnea (+43D fixas) e o cristalino (+17 a 20D dinâmicas) focalizam os raios paralelos vindos do infinito na fóvea da retina. Erros nessa etapa geram ametropias (miopia, hipermetropia, astigmatismo)."
+        },
+        {
+          "numero": 2,
+          "titulo": "Fototransdução (Conversão)",
+          "explicacao": "Os fotorreceptores (cones e bastonetes) convertem fótons em hiperpolarização via cascata da rodopsina/transducina/PDE e queda de cGMP. Falha aqui gera distrofias retinianas hereditárias como Retinose Pigmentosa."
+        },
+        {
+          "numero": 3,
+          "titulo": "Reflexo Pupilar à Luz (Modulação)",
+          "explicacao": "A luz ativa a via pupilomotora aferente (CN II → núcleo pré-tectal → Edinger-Westphal) e eferente (CN III → gânglio ciliar → músculo esfíncter). Falha detecta lesões neurológicas."
+        },
+        {
+          "numero": 4,
+          "titulo": "Percepção Cortical (Processamento Superior)",
+          "explicacao": "O córtex occipital, parietal e temporal processa cores (tricromacia de cones), adaptação ao escuro (sensibilização dos bastonetes) e profundidade espacial (disparidade binocular/estereopsia)."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Conduta integrada"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada pilar possui exame propedêutico específico: acuidade visual e refração (Pilar 1); eletrorretinograma (Pilar 2); reflexo fotomotor e DPAR (Pilar 3); campimetria e teste de Ishihara (Pilar 4). A falha em um pilar guia o médico para o exame diagnóstico correto."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎬",
+      "conteudo": "A visão é como um cinema digital premium de quatro etapas: a projeção de lentes (óptica), o sensor CMOS (retina/fototransdução), o diafragma automático de exposição (reflexo pupilar) e o processador de imagem com HDR e 3D (córtex visual). Falhar em qualquer etapa gera imagem ruim de formas distintas: lente embaçada (ametropia), sensor queimado (distrofia), diafragma travado (lesão neural) ou processador sem cor (daltonismo)."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-oftal-01-019",
+        "titulo": "Anexos Oculares",
+        "disciplina": "oftal",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Conclui a anatomia estrutural do Módulo 1."
+      }
+    ],
     "futuras": [],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-oftal-01-020-fc01",
+      "pergunta": "Enumere os quatro pilares fisiológicos da visão e aponte o defeito clínico gerado pela falha isolada de cada um.",
+      "resposta": "1) Óptica: ametropias (miopia/hipermetropia); 2) Fototransdução: distrofias retinianas (retinose pigmentosa); 3) Reflexo pupilar: lesão do nervo óptico ou oculomotor (DPAR); 4) Percepção cortical: hemianopsias/daltonismo.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "fisiologia-visual",
+        "optica",
+        "fototransducao",
+        "reflexo-pupilar",
+        "cores"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-020-fc02",
+      "pergunta": "Por que a avaliação do reflexo fotomotor pupilar é considerada uma janela neurológica e não apenas oftalmológica?",
+      "resposta": "Porque a via pupilomotora percorre o nervo óptico, o núcleo pré-tectal mesencefálico e o nervo oculomotor (CN III). Lesões nessas estruturas intracranianas são detectadas pelo padrão de resposta pupilar antes de exames de imagem.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "tags": [
+        "reflexo-pupilar",
+        "via-neural",
+        "neurologia",
+        "dpar"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-020-fc03",
+      "pergunta": "Qual pilar fisiológico falha na Retinose Pigmentosa e qual é o sintoma noturno inaugural dessa patologia?",
+      "resposta": "Falha o Pilar 2 (fototransdução), pois ocorre degeneração progressiva dos bastonetes periféricos. O sintoma inaugural é cegueira noturna (nictalopia) por incapacidade de sensibilizar os bastonetes no escuro.",
+      "tipo": "clinico",
+      "dificuldade": 2,
+      "tags": [
+        "retinose-pigmentosa",
+        "bastonetes",
+        "nictalopia",
+        "distrofia-retiniana"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-020-fc04",
+      "pergunta": "Se um paciente de 55 anos apresentar queda progressiva de acuidade visual bilateral (20/200) que melhora completamente com lentes de prova (+2.50D), e reflexo fotomotor simétrico e normal, qual pilar está comprometido e qual a conduta?",
+      "resposta": "O pilar comprometido é o Pilar 1 (óptica de lentes): hipermetropia de alto grau não corrigida. A conduta é a prescrição de óculos com lente convexas (+2.50D). Os demais pilares estão intactos (reflexo normal, retina sã).",
+      "tipo": "contrafactual",
+      "dificuldade": 2,
+      "tags": [
+        "hipermetropia",
+        "ametropia",
+        "lentes-positivas",
+        "pilar-optico",
+        "conduta"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
     "imagens": [],
@@ -44,18 +168,26 @@
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-06",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 13ª ed. Elsevier; 2017. Capítulo 50-52 — O Olho.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
-    "mecanismo/fisiopatologia",
-    "correlação com ciências básicas"
+    "mecanismo",
+    "clinica",
+    "conduta"
   ]
 }

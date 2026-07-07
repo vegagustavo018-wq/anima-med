@@ -5,48 +5,292 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Síndrome de Stevens-Johnson e NET",
+    "subtitulo": "Como a granulisina causa o descolamento da pele em tiras úmidas e como calcular a mortalidade com o SCORTEN na UTI?",
     "semestre": 6,
-    "disciplina": "Dermatologia",
+    "disciplina": "derm",
+    "sistema_corporal": "tegumentar",
+    "regiao_anatomica": "pele",
     "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "derm",
-      "esqueleto"
+      "ssj",
+      "net",
+      "necrolese-epidermica",
+      "granulisina",
+      "sinal-de-nikolsky",
+      "scorten-mortalidade",
+      "conduta"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "mecanismo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Necrólise epidérmica; emergência; SCORTEN; suspender droga",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior, analisamos o eritema multiforme. Agora, estudamos a Síndrome de Stevens-Johnson (SSJ) e a Necrólise Epidérmica Tóxica (NET), reações adversas medicamentosas graves de alta mortalidade. O principal desafio clínico consiste em diferenciar as síndromes pela extensão de descolamento, reconhecer o sinal de Nikolsky, calcular o prognóstico com o escore SCORTEN e coordenar a conduta de suporte intensivo em queimados. A fisiopatologia envolve a liberação massiva de granulisina por células NK e linfócitos T CD8+ ativados, promovendo apoptose pan-epidêmica dos queratinócitos. A SSJ afeta menos de dez por cento da pele; a NET afeta mais de trinta por cento com descolamento em lençóis. A conduta exige suspensão de drogas e internação em UTI/Queimados.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, compreendemos o papel do DNA viral do HSV e o eritema multiforme. A Síndrome de Stevens-Johnson (SSJ) e a Necrólise Epidérmica Tóxica (NET) formam o espectro da necrólise epidérmica, uma emergência dermatológica de extrema gravidade caracterizada pelo descolamento da pele em grandes lençóis úmidos. Trata-se de uma reação imunológica letal induzida por medicamentos comuns de uso rotineiro. Como o ataque citotóxico induz a morte de toda a epiderme de forma tão explosiva, qual a diferença entre SSJ e NET na extensão da área descolada e como predizer a mortalidade com segurança no leito de UTI?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema biológico: a tempestade de granulisina e a apoptose pan-epidêmica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A adesão entre os queratinócitos da epiderme depende da integridade dos desmossomas e pontes de caderina. O problema biológico na SSJ/NET é a indução massiva e descontrolada da apoptose (morte programada) dos queratinócitos em todas as camadas da pele. Diante de drogas de alto risco (como **sulfas, alopurinol, carbamazepina, fenitoína, lamotrigina e piroxicam**), linfócitos T CD8+ citotóxicos e células NK ativados infiltram a epiderme. Eles secretam uma alta concentração da proteína citolítica **granulisina**. A granulisina atua como uma chave molecular que perfura membranas e ativa a via mitocondrial e das caspases nos queratinócitos basais e espinhosos, promovendo a morte celular de toda a epiderme em dias."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução semiológica: SSJ, NET e o Sinal de Nikolsky"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O colapso celular epidérmico gera manifestações clínicas características e permite a classificação do espectro de acordo com a área de descolamento epidérmico ativo:"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Classificação e sinais do espectro SSJ/NET",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Síndrome de Stevens-Johnson (SSJ)",
+          "explicacao": "Acometimento importante de mucosas (erosões e sangramento labial, ocular, genital) associado a descolamento epidérmico de menos de 10% da superfície corporal total (BSA)."
+        },
+        {
+          "numero": 2,
+          "titulo": "Superposição SSJ/NET",
+          "explicacao": "Descolamento epidérmico intermediário que compromete entre 10% e 30% da área de superfície corporal total do paciente."
+        },
+        {
+          "numero": 3,
+          "titulo": "Necrólise Epidérmica Tóxica (NET)",
+          "explicacao": "Descolamento epidérmico massivo em grandes tiras ou lençóis úmidos que compromete mais de 30% da superfície corporal do paciente. Cursa com descolamento da pele perilesional ao atrito digital leve e tangencial (Sinal de Nikolsky positivo), expondo a derme vermelha brilhante secretante."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O Escore prognóstico SCORTEN"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para predizer a mortalidade do paciente na admissão hospitalar (primeiras 24-48h) e orientar a agressividade do suporte clínico, utiliza-se o escore **SCORTEN**. Cada parâmetro presente vale 1 ponto:"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Parâmetros do SCORTEN",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Idade e frequência cardíaca",
+          "explicacao": "Idade superior a 40 anos (1 ponto); frequência cardíaca superior a 120 batimentos por minuto (1 ponto)."
+        },
+        {
+          "numero": 2,
+          "titulo": "Neoplasia e área de descolamento",
+          "explicacao": "Presença de neoplasia/câncer associado (1 ponto); descolamento epidérmico inicial superior a 10% da área corporal na admissão (1 ponto)."
+        },
+        {
+          "numero": 3,
+          "titulo": "Parâmetros laboratoriais (Ureia, Glicose e Bicarbonato)",
+          "explicacao": "Ureia sérica superior a 28 mg/dL (1 ponto); glicose sérica superior a 252 mg/dL (1 ponto); bicarbonato plasmático inferior a 20 mEq/L (1 ponto). A mortalidade estimada varia de 3% (score 0-1) a mais de 90% (score igual ou maior que 5)."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona o manejo clínico e a conduta de suporte de queimaduras"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O paciente com suspeita de SSJ/NET exige a seguinte conduta imediata de emergência:"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Protocolo de emergência no espectro SSJ/NET",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Suspensão de fármacos suspeitos",
+          "explicacao": "Interrupção imediata de todos os medicamentos introduzidos nos últimos 2 meses, principalmente anticonvulsivantes, sulfas, alopurinol e AINEs."
+        },
+        {
+          "numero": 2,
+          "titulo": "Internação em UTI ou Centro de Queimados",
+          "explicacao": "Transferência imediata do paciente para isolamento em unidade de terapia intensiva ou centro de tratamento de queimados (CTQ). O controle de temperatura do quarto (30-32°C) é vital para evitar hipotermia devido à perda de pele."
+        },
+        {
+          "numero": 3,
+          "titulo": "Suporte hemodinâmico não invasivo",
+          "explicacao": "Hidratação endovenosa rigorosa com cristaloides (fórmula semelhante à de queimados, mas com volumes ligeiramente menores para evitar edema pulmonar), analgesia vigorosa, nutrição enteral precoce e cuidado ocular diário por oftalmologista. Não realizar desbridamento cirúrgico mecânico; as áreas descoladas devem ser limpas suavemente e cobertas com curativos biológicos não aderentes."
+        },
+        {
+          "numero": 4,
+          "titulo": "Terapia farmacológica de resgate",
+          "explicacao": "Considerar uso de ciclosporina oral ou imunoglobulina humana intravenosa (IVIG) nas primeiras 24-48 horas para bloquear o ligante Fas e a granulisina, abortando a progressão da apoptose epidérmica."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a SSJ/NET se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A SSJ/NET articula-se com a oftalmologia no manejo e prevenção do simbléfaro. A inflamação descamativa severa das conjuntivas palpebral e bulbar expõe derme crua que pode cicatrizar fundindo a pálpebra ao globo ocular (cegueira permanente), exigindo colírios de corticoides de hora em hora e uso de espátulas de vidro para desfazer aderências precoces. Articula-se também com a infectologia no controle de infecção secundária por *Pseudomonas aeruginosa* ou *Staphylococcus aureus* (principal causa de morte na NET por choque séptico)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Origem do nome"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Nikolsky e granulisina",
+      "origem": "Nikolsky: homenagem a Pyotr Nikolsky (dermatologista russo); granulisina: do latim granulum (pequeno grão) + grego lysis (desintegração, dissolução)",
+      "significado": "'sinal de descolamento de Nikolsky' (epônimo) e 'proteína dos grânulos dissolvedora' (granulisina)",
+      "explicacao": "Nikolsky descreveu em 1896 a fragilidade mecânica cutânea que permite descolar a epiderme superficial com a polpa do dedo. Granulisina define o mediador químico armazenado nos grânulos citotóxicos que dissolve a epiderme."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a NET"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🌋",
+      "conteudo": "Imagine que a epiderme do paciente é um grande adesivo plástico grosso colado firmemente na lataria pintada de um carro de corrida (a derme papilar). O medicamento de alto risco é como se o motorista colocasse um solvente químico invisível e altamente corrosivo dentro do tanque de água do carro (a introdução da droga sistêmica). Os linfócitos CD8+ são como operários irritados que pegam esse solvente do motor e o borrifam de forma massiva com pistolas de alta pressão por baixo do adesivo plástico (a liberação de granulisina). A granulisina atua dissolvendo instantaneamente toda a cola química do adesivo que une o plástico à lataria (a apoptose dos queratinócitos em todas as camadas). O adesivo plástico perde toda a sua cola e vira uma película solta e úmida. O sinal de Nikolsky é como passar o seu dedo por cima desse adesivo sem cola com um empurrão leve: o plástico desliza e se rasga imediatamente em tiras sob a polpa do seu dedo, expondo a lataria metálica vermelha e molhada por baixo (a derme papilar crua secretante). Se o descolamento afetar mais de 30% da lataria do carro (a NET), o motor sofrerá superaquecimento e perda de fluidos severa. Limpar a lataria com água de alta pressão (desbridar) só arranha o metal; você precisa parar a pulverização do solvente (suspender a droga) e cobrir a lataria com lonas protetoras especiais. Correspondências: adesivo plástico = epiderme; lataria do carro = derme; solvente = granulisina; deslizar com o dedo = sinal de Nikolsky; lataria crua = derme exposta. Onde a analogia quebra: a epiderme é composta por células epiteliais vivas ancoradas por hemidesmossomas, com transporte metabólico ativo."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Espectro SSJ-NET e Sinal de Nikolsky",
+      "descricao": "Esquema mostrando a classificação de Stevens-Johnson (<10%) e NET (>30%), a histologia com necrose pan-epidérmica e o Sinal de Nikolsky positivo. Rótulos em português.",
+      "prompt_ia": "Desenho médico didático explicativo, estilo de livro científico de terapia intensiva dermatológica, fundo transparente. Lado esquerdo: corte de pele exibindo a epiderme inteiramente cinza e morta (necrose pan-epidérmica) descolada da derme abaixo por uma bolha de água gigante. Desenho detalhado de um dedo polegar fazendo pressão tangencial na pele sadia adjacente, empurrando e descolando a epiderme em pregas (Sinal de Nikolsky positivo). Lado direito: silhueta humana mostrando a extensão de descolamento de SSJ (<10%) e NET (>30%) em cor vermelha. Rótulos em português do Brasil claros."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-derm-09-002-02",
+        "titulo": "Eritema Multiforme",
+        "disciplina": "derm",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Apresenta a diferença etiológica fundamental entre o EM (viral) e a necrólise epidérmica (medicamentosa)."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 7,
+        "topico": "Reações adversas graves a medicamentos (SCARs)",
+        "mecanismo_conexao": "O cálculo do SCORTEN e o uso de acitretina, ciclosporina e a proibição de corticoides tópicos/sistêmicos na NET serão aplicados na toxicologia farmacológica.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-derm-09-002-03-fc01",
+      "pergunta": "Qual a proteína citolítica chave liberada por linfócitos T CD8+ e células NK envolvida na patogênese da Síndrome de Stevens-Johnson e NET?",
+      "resposta": "A proteína citolítica chave é a granulisina. Ela é secretada em grande quantidade na epiderme infiltram por células imunes citotóxicas; a granulisina penetra a membrana dos queratinócitos e ativa vias bioquímicas intracelulares de apoptose mitocondrial em todas as camadas da epiderme.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "tags": [
+        "granulisina",
+        "ssj",
+        "net",
+        "apoptose-pan-epidermica",
+        "fisiopatologia"
+      ]
+    },
+    {
+      "card_id": "s6-derm-09-002-03-fc02",
+      "pergunta": "Como se classificam a Síndrome de Stevens-Johnson, a Superposição SSJ/NET e a Necrólise Epidérmica Tóxica (NET) de acordo com a extensão do descolamento epidérmico?",
+      "resposta": "Síndrome de Stevens-Johnson (SSJ): descolamento epidérmico de menos de 10% da área de superfície corporal (BSA). Superposição SSJ/NET: descolamento epidérmico entre 10% e 30% da BSA. Necrólise Epidérmica Tóxica (NET): descolamento epidérmico de mais de 30% da BSA.",
+      "tipo": "comparacao",
+      "dificuldade": 2,
+      "tags": [
+        "classificacao-ssj-net",
+        "descolamento-epidermico",
+        "bsa",
+        "semiologia"
+      ]
+    },
+    {
+      "card_id": "s6-derm-09-002-03-fc03",
+      "pergunta": "O que caracteriza o Sinal de Nikolsky observável no espectro da necrólise epidérmica e qual a sua causa histológica?",
+      "resposta": "O Sinal de Nikolsky consiste no descolamento fácil da epiderme superficial (descascamento ou deslizamento da pele em pregas) ao se aplicar uma fricção ou pressão digital tangencial leve sobre a pele sã ou perilesional. Sua causa histológica é a necrose extensa dos queratinócitos da camada basal epidérmica.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "sinal-de-nikolsky",
+        "fragilidade-cutanea",
+        "necrose-basal",
+        "semiologia"
+      ]
+    },
+    {
+      "card_id": "s6-derm-09-002-03-fc04",
+      "pergunta": "Se um paciente for internado com diagnóstico de NET e obtiver score 4 no escore SCORTEN nas primeiras 24 horas, qual a interpretação prognóstica esperada para a taxa de mortalidade desse paciente e quais os 7 parâmetros avaliados?",
+      "resposta": "Espera-se uma taxa de mortalidade elevada (estimada em cerca de 58% a 90%). Os 7 parâmetros do SCORTEN são: 1) Idade > 40 anos; 2) Frequência cardíaca > 120 bpm; 3) Neoplasia associada; 4) Área de descolamento inicial > 10% BSA; 5) Ureia sérica > 28 mg/dL; 6) Glicose sérica > 252 mg/dL; 7) Bicarbonato plasmático < 20 mEq/L.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "tags": [
+        "scorten-prognostico",
+        "mortalidade-net",
+        "parametros-clinicos",
+        "conduta"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s6-derm-09-002-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente_geracao_ia"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity-3.5-flash",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-06",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Azulay RD, Azulay DR, Azulay-Abulafia L. Dermatologia. 7ª ed. Guanabara Koogan; 2017. Capítulo 11 — Farmacodermias e reações alérgicas.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "type": "livro",
+      "citacao": "Habif TP. Clinical Dermatology: A Color Guide to Diagnosis and Therapy. 6th ed. Elsevier; 2016. Chapter 14 — Cutaneous Drug Reactions (Toxic Epidermal Necrolysis section).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

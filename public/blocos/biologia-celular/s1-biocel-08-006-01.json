@@ -1,54 +1,277 @@
 {
+  "metadata": {
+    "titulo": "Metilação do DNA",
+    "subtitulo": "Como a célula mantém o silêncio genético sem alterar uma única letra do código?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "epigenetica",
+      "dna",
+      "regulacao-genica",
+      "cpg"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "A metilação do DNA é o mecanismo epigenético mais estável e duradouro que a célula possui: uma pequena marca química — um grupo metil — adicionada à citosina, sem alterar a sequência de nucleotídeos. Essa marca funciona como uma anotação à margem de um manuscrito, que não risca nem reescreve o texto original, mas instrui o leitor a pular aquele trecho. Concentrada em sítios CpG e catalisada por enzimas específicas (DNA metiltransferases), a metilação é o que garante que um neurônio permaneça neurônio depois de milhares de divisões celulares, e é também, quando aparece no lugar errado, um dos mecanismos mais estudados de silenciamento de genes supressores de tumor no câncer.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine um bibliotecário que precisa impedir que certos livros sejam emprestados, mas sem rasgar página nenhuma, sem riscar uma única palavra e sem trocar o conteúdo de lugar. A solução dele é colar um pequeno adesivo na lombada: 'não retirar deste setor'. O livro continua intacto, palavra por palavra idêntico ao original — só que agora ninguém vai abri-lo, porque o adesivo sinaliza que ele está fora de circulação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A célula enfrenta um problema parecido, e em escala muito maior: ela precisa manter alguns genes permanentemente silenciados — não por segundos, não por horas, mas por toda a vida da célula e de suas descendentes — sem alterar a sequência de DNA daquele gene, que continua sendo a informação genética original e intacta. Alterar a sequência seria uma mutação, um erro; o que a célula precisa é de uma anotação reversível, que sinalize 'não ler aqui', sem tocar no texto em si."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, exatamente, o silenciamento estável resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um neurônio precisa manter genes de queratina (produzida pela pele) desligados durante toda a vida, através de milhares de ciclos de manutenção celular. Um mecanismo de silenciamento apenas momentâneo — como uma proteína repressora que se solta ocasionalmente — não bastaria: ao longo de décadas, algum momento de relaxamento acidental abriria a porta para expressão indevida. A célula precisava de um mecanismo de memória química, estável o suficiente para atravessar a divisão celular sem se apagar, mas quimicamente reversível o suficiente para não ser uma mutação permanente."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe esta ideia antes de seguir: metilação não é mutação. A sequência A-C-G-T continua idêntica. O que muda é o acesso à leitura dessa sequência — e é exatamente isso que a torna reversível e diferente de um dano genético."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a natureza resolveu o problema do silêncio duradouro?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi adicionar um grupo metil (-CH3) diretamente ao carbono 5 da citosina, formando 5-metilcitosina — uma reação catalisada por enzimas chamadas DNA metiltransferases (DNMTs). Essa modificação ocorre predominantemente em regiões onde uma citosina é seguida por uma guanina na mesma fita, os chamados dinucleotídeos CpG (o 'p' indica a ligação fosfodiéster entre as duas bases, não um nucleotídeo intermediário). Regiões ricas nesses dinucleotídeos, chamadas ilhas CpG, concentram-se frequentemente perto do início dos genes — e são justamente essas regiões que funcionam como o principal ponto de controle da transcrição."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O grupo metil não altera o pareamento de bases — a citosina metilada ainda pareia normalmente com guanina. O que muda é a geometria da molécula: o grupo metil se projeta para dentro do sulco maior da dupla hélice, exatamente onde fatores de transcrição e proteínas ativadoras normalmente se encaixam para reconhecer a sequência e iniciar a leitura. Esse pequeno volume extra funciona como um obstáculo físico, um impedimento estérico que reduz drasticamente a afinidade dessas proteínas pelo DNA — e, em paralelo, recruta proteínas leitoras de metilação que ajudam a compactar ainda mais a cromatina ao redor."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A metilação do DNA é o mecanismo epigenético de silenciamento mais estável e duradouro que existe — mais estável até que a maioria das modificações de histonas — porque é diretamente herdável através da replicação do DNA, e não depende de manter proteínas específicas ligadas continuamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse mecanismo, e por que essas peças específicas?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A citosina foi a base escolhida porque seu carbono 5 fica exposto e disponível para modificação química sem interferir no pareamento com a guanina — nenhuma outra das quatro bases oferece esse mesmo ponto de modificação tão conveniente sem comprometer a estrutura da dupla hélice. O grupo metil foi escolhido por ser pequeno, quimicamente estável (não se desfaz espontaneamente em condições fisiológicas) e, ainda assim, suficiente para causar impedimento estérico relevante. E a enzima DNA metiltransferase de manutenção (DNMT1) tem uma propriedade decisiva: ela reconhece especificamente DNA hemimetilado — metilado em uma fita, mas não ainda na fita recém-sintetizada — logo após a replicação, e completa a metilação na fita nova. É esse reconhecimento seletivo que garante que o padrão epigenético seja copiado fielmente a cada divisão celular."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, passo a passo, através da divisão celular"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Como o padrão de metilação sobrevive à mitose",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Estado antes da replicação",
+          "explicacao": "O DNA original tem ambas as fitas metiladas nos sítios CpG relevantes — um padrão simétrico e estável."
+        },
+        {
+          "numero": 2,
+          "titulo": "Replicação do DNA",
+          "explicacao": "A DNA polimerase copia cada fita, produzindo duas moléculas-filhas. Cada uma tem uma fita antiga (metilada) e uma fita nova (ainda não metilada) — um estado transitório chamado hemimetilação."
+        },
+        {
+          "numero": 3,
+          "titulo": "Reconhecimento do DNA hemimetilado",
+          "explicacao": "A DNMT1 reconhece especificamente esse padrão assimétrico — metil de um lado, ausência do outro — e se liga preferencialmente a ele, ignorando DNA totalmente desmetilado."
+        },
+        {
+          "numero": 4,
+          "titulo": "Metilação da fita nova",
+          "explicacao": "A DNMT1 adiciona o grupo metil à citosina correspondente na fita recém-sintetizada, restaurando a simetria e completando a cópia do padrão epigenético."
+        },
+        {
+          "numero": 5,
+          "titulo": "Herança do estado silenciado",
+          "explicacao": "As duas células-filhas nascem com o mesmo padrão de metilação da célula-mãe, garantindo que a identidade celular — quais genes ficam silenciados — seja preservada geração após geração de divisão celular."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "metilação",
+      "origem": "do grego méthy (vinho, bebida fermentada) + hylē (matéria), via o termo químico 'metil'",
+      "significado": "adição de um radical derivado do metano (CH3)",
+      "explicacao": "O termo 'metil' vem da química orgânica do século XIX, quando se descobriu que o metanol (o 'álcool de madeira', relacionado etimologicamente à fermentação alcoólica) continha esse radical CH3. 'Metilação', portanto, é simplesmente o nome químico genérico para o processo de anexar esse pequeno grupo a qualquer molécula — o termo não nasceu na biologia, foi emprestado dela quando se descobriu, décadas depois, que a mesma reação química acontecia naturalmente sobre a citosina do DNA como mecanismo regulador."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o mecanismo inteiro"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚧",
+      "conteudo": "Pense em uma rua de mão dupla que a prefeitura decide interditar permanentemente para obras, sem demolir o asfalto. Em vez disso, ela coloca cones e placas de 'via interditada' bem na entrada da rua. Os cones não mudam o asfalto — a rua continua fisicamente idêntica, capaz de ser reaberta a qualquer momento. Mas nenhum motorista consegue entrar enquanto os cones estiverem lá. O DNA é o asfalto: idêntico, intacto. Os grupos metil são os cones colocados na entrada dos sítios CpG. A RNA polimerase e os fatores de transcrição são os motoristas que, encontrando os cones, simplesmente não conseguem seguir em frente. E, crucialmente, quando a prefeitura tira uma foto do trecho antes de trocar de turno (a replicação do DNA), a equipe seguinte (a DNMT1) sabe exatamente onde recolocar os cones na cópia — porque a metade antiga da rua ainda tem os cones originais, servindo de referência."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A metilação do DNA trabalha em conjunto com as modificações de histonas — as duas camadas se reforçam mutuamente: DNA metilado recruta proteínas que também promovem compactação da cromatina via histonas, e cromatina já compactada facilita a manutenção da metilação. Esse mecanismo também é central para a inativação do cromossomo X em mulheres — um dos dois cromossomos X é silenciado quase inteiramente por metilação extensa, garantindo dosagem gênica equivalente à de homens, que têm apenas um X. E, clinicamente, esse é um dos mecanismos mais estudados em oncologia: a hipermetilação anômala do promotor de genes supressores de tumor — como o gene que controla o reparo de DNA malpareado em certos cânceres colorretais — silencia esses genes protetores sem que haja mutação alguma na sua sequência, um mecanismo de carcinogênese inteiramente epigenético."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a DNA metiltransferase de manutenção (DNMT1) perdesse completamente sua capacidade de reconhecer DNA hemimetilado após a replicação, mas o padrão de metilação original da célula-mãe permanecesse intacto até aquele ponto, o que aconteceria com a identidade das células-filhas ao longo de sucessivas divisões?",
+      "resposta": "O padrão de metilação se diluiria progressivamente a cada divisão celular, mesmo sem nenhuma mutação na sequência do DNA. Na primeira divisão, cada célula-filha teria uma fita ainda metilada e uma fita completamente desmetilada — já pela metade do padrão original. Sem a DNMT1 para restaurar a simetria, a segunda divisão distribuiria esse padrão reduzido ainda mais, e assim sucessivamente, até que os sítios CpG relevantes ficassem majoritariamente desmetilados em poucas gerações celulares. O resultado seria a reativação progressiva de genes que deveriam permanecer silenciados — perda gradual da identidade celular estabelecida, com risco de expressão aberrante de genes teciduais incompatíveis com aquele tipo celular, e maior vulnerabilidade a transformação neoplásica caso os genes reativados incluam oncogenes normalmente contidos por metilação.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["metilacao", "dnmt1", "heranca-epigenetica"]
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Metilação em sítio CpG e seu efeito estérico",
+      "descricao": "Esquema molecular da dupla hélice de DNA em close-up, destacando um dinucleotídeo CpG. A citosina do sítio mostra um grupo metil ligado ao carbono 5, projetando-se para dentro do sulco maior da hélice. Ao lado, um fator de transcrição tenta se aproximar da mesma região, mas é repelido ou impedido de se encaixar corretamente devido ao volume extra do grupo metil, com uma seta indicando 'ligação impedida'. Uma segunda cena, mais afastada, mostra a mesma região sem metilação, com o fator de transcrição encaixado normalmente. Legendas comparativas em português. Fundo neutro adaptativo.",
+      "prompt_ia": "High-quality scientific illustration of DNA double helix close-up, focus on a CpG dinucleotide site. One cytosine shows a small methyl group (CH3) attached at carbon 5, protruding into the major groove of the helix. A transcription factor protein is shown nearby, unable to properly dock due to steric hindrance from the methyl group, with a 'blocked' arrow indicator. A second smaller side panel shows the same DNA region without methylation, with the transcription factor successfully bound. Portuguese labels, clean molecular biology textbook style, soft color palette, transparent background, no photorealistic textures.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-08-006-01-fc01",
+      "pergunta": "Como a metilação da citosina impede fisicamente a transcrição gênica, sem alterar o pareamento de bases nem a sequência do DNA?",
+      "resposta": "O grupo metil adicionado ao carbono 5 da citosina se projeta para dentro do sulco maior da dupla hélice, exatamente onde fatores de transcrição e proteínas ativadoras normalmente reconhecem a sequência de DNA para se ligar. Esse volume extra cria impedimento estérico, reduzindo a afinidade dessas proteínas pela região — sem, em nenhum momento, alterar o pareamento entre a citosina metilada e a guanina complementar, que continua perfeito. É por isso que a metilação bloqueia a leitura sem tocar no texto genético em si.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["mecanismo", "transcricao", "impedimento-esterico"]
+    },
+    {
+      "card_id": "s1-biocel-08-006-01-fc02",
+      "pergunta": "Um exame molecular em amostra de câncer colorretal detecta hipermetilação extensa do promotor de um gene supressor de tumor, sem nenhuma mutação detectada na sequência desse mesmo gene. Como esse achado, por si só, já explica a perda de função do gene?",
+      "resposta": "A hipermetilação do promotor silencia o gene ao nível da transcrição — os fatores de transcrição e a RNA polimerase perdem acesso físico à região reguladora, e o gene simplesmente deixa de ser lido, mesmo estando com sua sequência de DNA perfeitamente intacta. Como esse gene supressor de tumor normalmente funciona como um freio do ciclo celular, seu silenciamento epigenético remove esse freio tão eficazmente quanto uma mutação inativadora removeria — a célula perde o controle de proliferação por um caminho totalmente diferente do dano genético clássico, o que é um dos mecanismos mais bem documentados de carcinogênese epigenética.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["cancer", "gene-supressor-tumor", "oncologia"]
+    },
+    {
+      "card_id": "s1-biocel-08-006-01-fc03",
+      "pergunta": "Por que a metilação do DNA é classificada como marca epigenética e não como mutação, mesmo alterando quimicamente uma das quatro bases nitrogenadas?",
+      "resposta": "Porque ela não altera a identidade da base nem a sequência de nucleotídeos lida pelo pareamento — a citosina metilada continua sendo reconhecida como citosina e continua pareando normalmente com guanina. A modificação é reversível (enzimas de desmetilação podem removê-la) e não introduz nenhum erro na informação genética armazenada; ela apenas altera a interpretação — se aquele trecho será lido ou não —, sem alterar o código em si. Mutação, por contraste, muda a própria sequência de bases de forma tipicamente permanente.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["epigenetica", "mutacao", "distincao-conceitual"]
+    },
+    {
+      "card_id": "s1-biocel-08-006-01-fc04",
+      "pergunta": "Verdadeiro ou falso, com justificativa: 'Como a metilação silencia genes, seria de se esperar que as ilhas CpG dos genes de manutenção celular (housekeeping), que precisam estar sempre ativos, sejam as mais intensamente metiladas de todo o genoma.'",
+      "resposta": "Falso. É exatamente o oposto: as ilhas CpG dos genes de manutenção celular (aqueles que toda célula precisa expressar constantemente, como enzimas do metabolismo básico) permanecem tipicamente desmetiladas, justamente para garantir transcrição constante e ininterrupta em qualquer tipo celular. A metilação é usada seletivamente sobre genes tecido-específicos, que uma célula precisa manter desligados porque pertencem ao repertório de outro tipo celular — é uma ferramenta de diferenciação, não de repressão geral e indiscriminada do genoma.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["cpg", "housekeeping", "diferenciacao"]
+    },
+    {
+      "card_id": "s1-biocel-08-006-01-fc05",
+      "pergunta": "Como a DNA metiltransferase de manutenção (DNMT1) garante que o padrão de metilação seja fielmente copiado durante a mitose, em vez de se perder gradualmente a cada divisão?",
+      "resposta": "A DNMT1 tem preferência específica por DNA hemimetilado — o estado transitório logo após a replicação, em que a fita antiga está metilada e a fita nova ainda não está. Ao reconhecer esse padrão assimétrico, a enzima adiciona o grupo metil correspondente na fita recém-sintetizada, restaurando a simetria original. É esse reconhecimento seletivo, e não uma metilação aleatória do genoma inteiro, que garante que cada célula-filha herde exatamente o mesmo padrão de silenciamento gênico que caracterizava a célula-mãe.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["mitose", "hereditariedade", "dnmt1"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-08-006-01-caso01",
+      "titulo": "Adenocarcinoma de cólon em paciente sem histórico familiar e sem mutação germinativa identificada",
+      "apresentacao": "Homem de 68 anos, sem história familiar de câncer colorretal, é diagnosticado com adenocarcinoma de cólon direito após investigação de anemia ferropriva persistente. A peça cirúrgica é encaminhada para painel molecular de instabilidade de microssatélites, que resulta positivo (MSI-alta). O sequenciamento germinativo dos genes de reparo de DNA malpareado (MMR) não encontra nenhuma mutação hereditária. A análise tumoral específica revela hipermetilação extensa do promotor do gene MLH1 no próprio tecido tumoral, ausente no tecido normal adjacente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Hipermetilação somática (adquirida, não herdada) do promotor do gene MLH1, ocorrida especificamente nas células que deram origem ao tumor, sem qualquer mutação na sequência do gene."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A região promotora do gene MLH1, parte do sistema de reparo de DNA malpareado (mismatch repair) — o mecanismo que normalmente corrige erros de pareamento que escapam da revisão da DNA polimerase durante a replicação."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com o promotor metilado, a transcrição do gene MLH1 é bloqueada pelo mesmo mecanismo estudado neste bloco — impedimento estérico à ligação de fatores de transcrição. A proteína MLH1 deixa de ser produzida, e o sistema de reparo de DNA malpareado fica inoperante."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sem reparo funcional, erros de replicação se acumulam preferencialmente em sequências repetitivas curtas (microssatélites), gerando o padrão molecular de instabilidade de microssatélites (MSI-alta) — um marcador que orienta tanto o diagnóstico quanto a escolha terapêutica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O acúmulo progressivo de mutações não corrigidas em múltiplos genes, ao longo de anos, favorece a transformação maligna do epitélio colônico. Clinicamente, tumores MSI-alta de origem epigenética (não hereditária) respondem de forma particularmente favorável à imunoterapia com inibidores de checkpoint, por apresentarem alta carga mutacional e maior imunogenicidade."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra a metilação do DNA operando exatamente como descrito neste bloco — silenciando um gene sem tocar sua sequência —, mas aplicada a um gene de reparo de DNA em vez de um gene supressor de tumor clássico. Isso ilustra que a hipermetilação de promotor é um mecanismo geral de silenciamento, capaz de inativar qualquer categoria de gene protetor, com consequências clínicas mensuráveis e terapeuticamente relevantes.",
+      "disciplinas_relacionadas": ["biologia celular", "oncologia", "patologia", "gastroenterologia"],
+      "diagnostico_revelado": "Adenocarcinoma colorretal esporádico com instabilidade de microssatélites por silenciamento epigenético (hipermetilação) do promotor de MLH1.",
+      "tratamento_resumido": "Ressecção cirúrgica do tumor primário conforme estadiamento; tumores MSI-alta têm indicação preferencial de imunoterapia com inibidores de checkpoint imunológico (anti-PD-1) em contexto metastático, dada sua alta imunogenicidade."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-08-001",
+        "titulo": "DNA — Estrutura e Replicação — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A metilação ocorre em posições químicas específicas da citosina na dupla hélice, e sua herança depende diretamente do mecanismo de replicação semiconservativa do DNA."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "topico": "Carcinogênese por silenciamento epigenético",
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "A hipermetilação de promotores é uma via frequente e bem documentada de inativação de genes supressores de tumor e genes de reparo de DNA, sem necessidade de mutação genética.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "topico": "Agentes hipometilantes em hematologia",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "Fármacos como azacitidina e decitabina inibem DNA metiltransferases, revertendo o silenciamento epigenético de genes supressores de tumor em síndromes mielodisplásicas e leucemias.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-08-006-02",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Enquanto a metilação do DNA silencia diretamente modificando a base nitrogenada, a modificação de histonas altera o empacotamento físico da cromatina através de mudanças na carga das proteínas estruturais."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-08-006-01",
   "no_pai_id": "s1-biocel-08-006",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Metilação do DNA",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Ilhas CpG, silenciamento e hipermetilação em câncer",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

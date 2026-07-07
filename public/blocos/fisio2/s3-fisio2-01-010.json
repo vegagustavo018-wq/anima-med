@@ -13,50 +13,178 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Mecânica Ventilatória — Visão Geral",
-    "semestre": 3,
+    "subtitulo": "Como gradientes de pressão e forças elásticas coordenam o fluxo de ar",
     "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "semestre": 3,
+    "tipo": "conceito",
     "tags": [
-      "fisio2",
-      "esqueleto"
+      "mecânica ventilatória",
+      "pressão pleural",
+      "complacência pulmonar",
+      "leis dos gases",
+      "resistência de vias aéreas"
     ],
+    "tempo_leitura_minutos": 10,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-02"
   },
-  "resumo_conciso": "Como músculo e pressão movem ar contra a resistência das vias e do tecido",
-  "narrativa": [],
+  "resumo_conciso": "A mecânica ventilatória descreve como as alterações ativas nos volumes da cavidade torácica geram gradientes de pressão física que direcionam o ar para dentro e para fora dos pulmões, superando a complacência elástica do tecido e a resistência friccional das vias aéreas.",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "1. O Fole Biológico: O Paradoxo da Inspiração"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine-se diante de uma lareira antiga, observando um ferreiro manusear um fole de couro para atiçar as chamas. Quando ele afasta as alças do fole, o volume interno aumenta e, instantaneamente, o ar externo corre para preencher aquele espaço vazio. O corpo humano opera sob um princípio físico idêntico, mas de forma muito mais elegante e sutil. Nossos pulmões não possuem músculos em seu próprio tecido para se expandirem ativamente; eles são massas passivas de tecido elástico e esponjoso."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Diante disso, pense: se os pulmões não conseguem se expandir por força própria, o que precisa acontecer na caixa torácica para que o ar seja 'forçado' a entrar? O ar é empurrado de fora para dentro ou é sugado de dentro para fora?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta está na relação inversa entre volume e pressão, descrita pela Lei de Boyle. Quando os músculos inspiratórios (principalmente o diafragma) se contraem, eles expandem as dimensões da caixa torácica. Ao expandir o continente, o conteúdo (o ar pulmonar) experimenta uma queda de pressão proporcional. Como a atmosfera permanece a uma pressão constante (convencionada como 0 cmH2O no nível do mar), e a pressão no interior dos alvéolos cai para cerca de -1 cmH2O, estabelece-se um gradiente de pressão física. O ar não é 'puxado' por uma força mística; ele é empurrado pela maior pressão atmosférica externa em direção à menor pressão interna do alvéolo."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Ventilação",
+      "origem": "Latim 'ventilare', derivado de 'ventus' (vento).",
+      "significado": "Expor ao vento, soprar ou mover o ar.",
+      "explicacao": "Na fisiologia, diferenciamos rigorosamente 'ventilação' (o processo mecânico e físico de mover volumes de ar para dentro e para fora do sistema condutor) de 'respiração' (o fenômeno bioquímico e celular de troca de gases e produção de energia)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "2. O Acoplamento Pleural: A Ventosa Invisível"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense nas duas lâminas da pleura (parietal e visceral) como duas lâminas de vidro com uma fina película de água entre elas. Se você tentar puxá-las diretamente para separá-las perpendicularmente, perceberá uma resistência tremenda devido à tensão superficial da água. No entanto, elas deslizam suavemente uma sobre a outra na horizontal. A cavidade pleural funciona exatamente assim: o líquido pleural mantém o pulmão (pleura visceral) 'colado' à parede torácica (pleura parietal), permitindo que qualquer expansão da caixa torácica puxe imediatamente o parênquima pulmonar junto, reduzindo a pressão intratorácica."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A pressão intrapleural é cronicamente negativa (-4 cmH2O a -5 cmH2O no repouso). Essa negatividade constante funciona como uma ventosa permanente que contrabalança a tendência elástica natural do pulmão de colapsar e a tendência da parede torácica de se expandir para fora."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Imagine que um acidente com objeto perfurante rompa a integridade da parede torácica, permitindo a comunicação direta entre o espaço intrapleural e a atmosfera (pneumotórax). O que acontece com a pressão intrapleural e com o pulmão afetado?",
+      "resposta": "Como a pressão intrapleural (-4 cmH2O) é menor que a atmosférica (0 cmH2O), o ar atmosférico invadirá imediatamente o espaço pleural até equilibrar as pressões. Sem a 'ventosa' da pressão negativa pleural, o acoplamento mecânico é desfeito. O pulmão, livre para seguir sua força de recolhimento elástica, colapsará completamente como um balão murcho, enquanto a parede torácica se expandirá discretamente para fora."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo das Pressões Ventilatórias",
+      "descricao": "Diagrama explicativo ilustrando as pressões intrapleural (Pip) e alveolar (Palv) durante a inspiração e expiração silenciosas.",
+      "prompt_ia": "A clean, high-contrast medical schematic diagram illustrating human lungs and thoracic cavity during inspiration. Show the diaphragm contracting and moving downwards. Include clear text labels pointing to the 'Intrapleural Space' showing 'Pip = -8 cmH2O', and 'Alveoli' showing 'Palv = -1 cmH2O'. Use arrows to depict air flowing down the trachea into the lungs. The style should be modern academic, labeled in English, with blue and white accents.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s3-fisio2-01-010-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual a sequência exata de eventos mecânicos na inspiração tranquila?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "inspiração",
+        "mecanismo",
+        "pressão"
+      ],
+      "resposta": "1. Contração do diafragma e intercostais externos; 2. Expansão da caixa torácica; 3. Queda da pressão intrapleural (torna-se mais negativa); 4. Expansão do volume alveolar; 5. Queda da pressão alveolar abaixo da atmosférica; 6. Entrada do ar por gradiente de pressão."
+    },
+    {
+      "card_id": "s3-fisio2-01-010-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "Por que a perda de surfactante pulmonar inviabiliza a mecânica ventilatória normal?",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "surfactante",
+        "tensão superficial",
+        "complacência"
+      ],
+      "resposta": "Sem surfactante, a tensão superficial da água nos alvéolos aumenta dramaticamente, elevando a elastância pulmonar. Isso torna o pulmão extremamente rígido (baixa complacência), exigindo pressões intrapleurais absurdamente negativas para expandi-lo, levando à exaustão muscular rápida."
+    },
+    {
+      "card_id": "s3-fisio2-01-010-fc03",
+      "tipo": "armadilha",
+      "pergunta": "Qual a diferença crítica no trabalho mecânico muscular entre a expiração basal/silenciosa e a expiração forçada?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "expiração",
+        "musculatura acessória",
+        "fisiologia"
+      ],
+      "resposta": "A expiração silenciosa/basal é passiva e não envolve trabalho muscular, dependendo apenas do recolhimento elástico do parênquima. Já a expiração forçada ou ativa exige contração vigorosa de músculos abdominais e intercostais internos para comprimir ativamente o tórax."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-fisio2-01-010-caso01",
+      "titulo": "O Aprisionamento de Ar no Tórax em Tonel",
+      "apresentacao": "João, 68 anos, tabagista pesado crônico (50 maços-ano), queixa-se de dispneia progressiva há anos, que agora surge mesmo ao tomar banho. Ao exame físico, apresenta tórax em tonel, tempo expiratório significativamente prolongado, uso evidente de musculatura acessória (esternocleidomastóideo) e respiração com lábios semicerrados (frenolabial). A espirometria revela uma relação VEF1/CVF muito reduzida, confirmando obstrução crônica ao fluxo de ar sem resposta significativa a broncodilatadores.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Inalação crônica de fumaça de cigarro que induz ativação excessiva de macrófagos e neutrófilos, liberando elastase e outras proteases inflamatórias no parênquima."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Degradação das fibras elásticas de elastina na matriz extracelular alveolar e perda da tração radial que mantém as vias aéreas de condução abertas."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Perda do recolhimento elástico pulmonar (aumento da complacência estática) e colapso dinâmico das pequenas vias aéreas durante a expiração."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Obstrução expiratória severa levando ao aprisionamento de ar residual, hiperinsuflação pulmonar (tórax em tonel) e dispneia intensa decorrente de desvantagem mecânica do diafragma."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sobrecarga crônica da musculatura respiratória acessória que evolui para fadiga muscular ventilatória, hipoxemia e acidose respiratória (hipercapnia)."
+        }
+      ],
+      "conexao_com_bloco": "Este caso ilustra com perfeição a dependência entre a resistência das vias aéreas e as forças de recolhimento elástico do pulmão. Sem a elastina para puxar as paredes dos bronquíolos para fora (tração radial), eles colapsam precocemente durante a expiração passiva, exigindo uma expiração ativa e forçada que gera aprisionamento de ar.",
+      "disciplinas_relacionadas": [
+        "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "Pneumologia",
+        "Semiologia Médica"
+      ],
+      "diagnostico_revelado": "Enfisema Pulmonar secundário a Doença Pulmonar Obstrutiva Crônica (DPOC)",
+      "tratamento_resumido": "Cessação imediata do tabagismo, otimização com broncodilatadores inalatórios de longa ação (LAMA/LABA), oxigenoterapia domiciliar se indicado por hipoxemia grave, e reabilitação pulmonar."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "funcao"
-  ]
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-fisio2-01-000",
+        "titulo": "Módulo 1 — Fisiologia Respiratória",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "Conhecimento essencial da anatomia da árvore brônquica, histologia alveolar e conceitos iniciais de pressões parciais gasosas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Complacência e Elastância Pulmonar",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre_futuro": 3,
+        "mecanismo_conexao": "A mecânica geral aqui abordada dita como a complacência e a elastância modificam dinamicamente a curva de pressão-volume torácica.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "ANALOGIA",
+        "topico": "Seringas e Êmbolos Mecânicos",
+        "explicacao": "A alteração volumétrica da caixa torácica assemelha-se perfeitamente ao recuo do êmbolo de uma seringa fechada, gerando vácuo parcial (pressão subatmosférica) para aspirar fluidos."
+      }
+    ]
+  }
 }

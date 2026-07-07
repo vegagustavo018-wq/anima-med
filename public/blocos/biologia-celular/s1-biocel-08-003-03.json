@@ -1,53 +1,281 @@
 {
+  "metadata": {
+    "titulo": "tRNAs e Ativação de Aminoácidos",
+    "subtitulo": "Como a célula traduz a linguagem dos nucleotídeos para a dos aminoácidos?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "biologia molecular",
+      "traducao",
+      "trna",
+      "sintese-proteica"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "O ribossomo lê o mRNA em trincas de nucleotídeos, mas nucleotídeo nenhum tem afinidade química direta por aminoácido nenhum — não existe 'encaixe' natural entre uma base nitrogenada e um radical de aminoácido. Esse é o problema que o tRNA resolve: uma molécula adaptadora que, de um lado, reconhece o código genético por pareamento de bases (o anticódon) e, do outro, carrega fisicamente o aminoácido correspondente. Quem faz essa correspondência é uma família de vinte enzimas, as aminoacil-tRNA sintetases — uma para cada aminoácido —, que gastam ATP para soldar o aminoácido certo ao tRNA certo, antes mesmo de qualquer ribossomo entrar em cena. É nesse instante, e não no ribossomo, que a fidelidade da tradução genética é decidida.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pegue um dicionário de português para mandarim. Você percebe rapidamente que as palavras não se parecem nada entre si — não há nenhuma pista visual ou sonora que ligue 'água' a '水'. A correspondência existe só porque alguém, em algum momento, decidiu e registrou essa equivalência. Sem esse dicionário, tradução é impossível."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A célula enfrenta exatamente esse problema, e de forma ainda mais radical: o mRNA fala a língua dos nucleotídeos (quatro letras: A, U, C, G) e a proteína fala a língua dos aminoácidos (vinte letras diferentes, com propriedades químicas variadas). Um triplete de nucleotídeos como AUG não tem nenhuma atração física, nenhuma afinidade eletrostática ou estrutural, pelo aminoácido metionina. A correspondência entre os dois mundos não existe na química — ela é uma convenção que a célula precisa aplicar ativamente, a cada trinca, milhões de vezes por segundo em uma célula em crescimento."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, exatamente, essa falta de afinidade cria?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sem um intermediário, a tradução teria que confiar em um encontro ao acaso entre aminoácidos livres flutuando no citosol e a sequência de mRNA — algo estatisticamente impossível de ser preciso. A vida precisava de uma molécula que fizesse duas coisas ao mesmo tempo: (1) reconhecer o código genético por um mecanismo confiável (pareamento de bases, que já é usado na replicação e na transcrição) e (2) prender-se fisicamente a um aminoácido específico, mantendo essa ligação até o momento exato da montagem da proteína."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir: seguramos aqui o problema central. Nucleotídeo e aminoácido são dois idiomas sem tradutor embutido. A célula precisa de um dicionário físico, e esse dicionário precisa ser confiável a cada uma das milhões de traduções diárias."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Qual foi a solução que a evolução encontrou?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi criar uma molécula bifuncional: o RNA transportador. Ele é um RNA de fita simples, mas se dobra sobre si mesmo por pareamento de bases internas, formando uma estrutura secundária em forma de trevo de quatro folhas — e, tridimensionalmente, uma forma em L. Em uma ponta do L está o anticódon: três nucleotídeos expostos, prontos para parear com o códon complementar do mRNA. Na outra ponta, geometricamente distante, está a extremidade 3' terminal (sempre CCA), onde o aminoácido específico fica ligado covalentemente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas quem decide qual aminoácido vai em qual tRNA? Essa tarefa cabe às aminoacil-tRNA sintetases — vinte enzimas distintas, uma para cada um dos vinte aminoácidos. Cada sintetase tem dois bolsões de reconhecimento simultâneos: um que 'lê' a identidade química do aminoácido correto, e outro que reconhece características estruturais específicas do tRNA correspondente (não apenas o anticódon, mas também o formato do braço aceptor e outras bases identificadoras). A reação consome ATP: o aminoácido é ativado como aminoacil-adenilato antes de ser transferido para a extremidade 3' do tRNA."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A fidelidade da síntese proteica não é decidida no ribossomo. É decidida aqui, na etapa de ativação, pela precisão da aminoacil-tRNA sintetase ao parear aminoácido com tRNA. Se essa etapa errar, o ribossomo não tem como perceber — ele confia cegamente no anticódon do tRNA que chega, mesmo que o aminoácido pendurado nele esteja trocado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse sistema — e por que essas peças específicas?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tRNA é feito de RNA (não de DNA) porque precisa se dobrar em uma estrutura tridimensional complexa e estável — algo que a fita simples do RNA permite e a dupla hélice rígida do DNA não permitiria com a mesma versatilidade. A ligação entre aminoácido e tRNA usa uma ligação éster de alta energia: é justamente essa energia armazenada que, mais tarde, no ribossomo, será usada para formar a ligação peptídica entre aminoácidos vizinhos — sem gasto adicional de ATP naquele momento. A célula paga o custo energético da tradução aqui, antecipadamente, na ativação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, passo a passo"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Ativação do aminoácido e carregamento do tRNA",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Ativação do aminoácido",
+          "explicacao": "A aminoacil-tRNA sintetase liga o aminoácido livre a uma molécula de ATP, formando um intermediário de alta energia (aminoacil-adenilato) e liberando pirofosfato. Esse é o gasto energético da reação inteira."
+        },
+        {
+          "numero": 2,
+          "titulo": "Reconhecimento duplo do tRNA correto",
+          "explicacao": "A mesma enzima reconhece, entre dezenas de tRNAs presentes no citosol, apenas aquele cujo formato estrutural corresponde ao aminoácido que ela acabou de ativar. Esse reconhecimento não depende só do anticódon — depende de várias 'letras de identidade' espalhadas pela molécula."
+        },
+        {
+          "numero": 3,
+          "titulo": "Transferência para a extremidade 3'",
+          "explicacao": "O aminoácido ativado é transferido do adenilato para a hidroxila da extremidade 3'-CCA do tRNA, formando o aminoacil-tRNA — agora carregado e pronto para o ribossomo."
+        },
+        {
+          "numero": 4,
+          "titulo": "Verificação de erro (proofreading)",
+          "explicacao": "Muitas sintetases possuem um segundo sítio catalítico que hidrolisa ligações formadas incorretamente — uma segunda chance de corrigir antes de liberar o produto final, reduzindo a taxa de erro para cerca de 1 em 10.000."
+        },
+        {
+          "numero": 5,
+          "titulo": "Entrega ao ribossomo",
+          "explicacao": "O aminoacil-tRNA carregado se liga a um fator de elongação e é entregue ao sítio A do ribossomo, onde seu anticódon será testado contra o códon do mRNA — mas o aminoácido que ele carrega já foi decidido três etapas atrás."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "tRNA (transfer RNA / RNA transportador)",
+      "origem": "do inglês transfer (transferir) + RNA (ribonucleic acid)",
+      "significado": "RNA que transfere um aminoácido de um ponto a outro",
+      "explicacao": "O nome foi cunhado nos anos 1950, quando Mahlon Hoagland e Paul Zamecnik descreveram uma pequena fração de RNA solúvel do citosol capaz de se ligar a aminoácidos ativados e 'transferi-los' para uma cadeia proteica em crescimento. Antes de se entender a estrutura em trevo ou o papel do anticódon, já se sabia apenas que essa molécula 'carregava' algo de um lugar a outro — daí o nome funcional, que precedeu o entendimento estrutural completo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o quadro inteiro"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎽",
+      "conteudo": "Pense em uma corrida de revezamento olímpica, mas com uma regra incomum: cada corredor só pode carregar o bastão de uma cor específica, e existe um funcionário de cada cor no ponto de largada, responsável por verificar essa correspondência antes de liberar o corredor na pista. O anticódon do tRNA é a cor da camisa do corredor — o que a arquibancada (o ribossomo) enxerga e confere contra a lista de chamada (o mRNA). O aminoácido é o bastão que o corredor está carregando. A aminoacil-tRNA sintetase é o funcionário de largada: ele confere duas vezes — a identidade do corredor (o formato do tRNA) e o bastão que está em sua mão (o aminoácido) — antes de deixá-lo entrar na pista. Se o funcionário for descuidado e liberar um corredor de camisa azul com o bastão errado, ninguém na arquibancada vai perceber: só vão ver a camisa azul passando no lugar certo. O erro está escondido dentro do próprio corredor, não na pista."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A ativação do tRNA depende diretamente da transcrição — sem RNA mensageiro transcrito com fidelidade, não há códon para o anticódon reconhecer, e sem os próprios tRNAs (que também são transcritos a partir de genes específicos), não existe adaptador algum. Rio abaixo, o aminoacil-tRNA carregado é o substrato de entrada do ribossomo: sem ele, a maquinaria ribossômica simplesmente não tem o que montar. E, clinicamente, esse é um dos elos mais visados por antibióticos: a mupirocina, por exemplo, inibe especificamente a isoleucil-tRNA sintetase bacteriana, interrompendo a síntese proteica da bactéria sem afetar de forma relevante a enzima humana equivalente — a diferença estrutural entre as duas versões da enzima é grande o suficiente para permitir esse alvo seletivo."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se as aminoacil-tRNA sintetases perdessem seu mecanismo de verificação (proofreading), mas continuassem reconhecendo o anticódon perfeitamente, o que aconteceria com as proteínas produzidas?",
+      "resposta": "O anticódon continuaria parecendo certo aos olhos do ribossomo — ele checaria apenas o pareamento entre códon e anticódon, e essa parte estaria correta. O problema estaria escondido uma etapa antes: o aminoácido pendurado naquele tRNA poderia ser o errado, porque a etapa de correção que normalmente descarta esses erros deixou de funcionar. O resultado seria um aumento na taxa de incorporação de aminoácidos incorretos nas proteínas — de cerca de 1 erro em 10.000 para taxas ordens de grandeza maiores. Proteínas mal formadas se acumulariam, muitas incapazes de se enovelar corretamente, sobrecarregando os sistemas de controle de qualidade da célula (chaperonas, proteassomo) até o ponto de estresse proteotóxico e morte celular."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Estrutura e ativação do tRNA",
+      "descricao": "Esquema didático em duas partes. À esquerda, o tRNA desenhado em sua estrutura secundária de trevo de quatro folhas, com o anticódon destacado na alça inferior e a extremidade 3'-CCA destacada no topo, onde um aminoácido está covalentemente ligado. À direita, a aminoacil-tRNA sintetase mostrada como uma estrutura com dois bolsões de reconhecimento — um encaixando o aminoácido específico, outro abraçando o corpo do tRNA — com uma molécula de ATP sendo consumida e pirofosfato sendo liberado. Setas numeradas indicam a sequência da reação. Legendas em português. Fundo neutro adaptativo.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático de bioquímica. Painel esquerdo: tRNA em estrutura secundária de trevo de quatro folhas (cloverleaf), com o anticódon (três bases expostas) destacado em uma cor e a extremidade 3'-CCA destacada em outra cor, com um aminoácido representado por uma pequena estrutura molecular ligado ali por uma linha covalente. Painel direito: a enzima aminoacil-tRNA sintetase representada como uma estrutura globular com dois bolsões de encaixe visíveis — um com um aminoácido específico dentro, outro com o corpo do tRNA encaixado — e uma seta mostrando ATP entrando e AMP + pirofosfato saindo. Setas numeradas 1 a 3 acompanhando a reação. Legendas em português, cores suaves e distintas por elemento, traçado limpo, sem texturas fotorrealistas."
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-08-003-03-fc01",
+      "pergunta": "Por que a célula precisa de uma molécula adaptadora entre o mRNA e o aminoácido, em vez de o ribossomo reconhecer o aminoácido diretamente pela sequência de nucleotídeos?",
+      "resposta": "Porque não existe afinidade química entre um triplete de nucleotídeos e um aminoácido — nenhuma base nitrogenada tem atração estrutural ou eletrostática por um radical de aminoácido específico. A correspondência entre os dois códigos é uma convenção biológica, não uma regra química. Por isso a célula precisa de uma molécula que faça, ao mesmo tempo, duas coisas fisicamente distintas: reconhecer o código genético por pareamento de bases (algo que o RNA já sabe fazer) e prender-se fisicamente a um aminoácido específico. O tRNA é essa ponte física entre dois mundos moleculares que, sozinhos, nunca se encontrariam.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["trna", "traducao", "adaptador"]
+    },
+    {
+      "card_id": "s1-biocel-08-003-03-fc02",
+      "pergunta": "Se uma mutação alterasse apenas o anticódon de um tRNA, sem afetar o restante de sua estrutura nem a especificidade da aminoacil-tRNA sintetase por ele, o que aaconteceria durante a tradução?",
+      "resposta": "A aminoacil-tRNA sintetase continuaria reconhecendo esse tRNA pela sua estrutura geral e carregando nele o aminoácido correto de sempre — o problema não está na etapa de ativação. O erro aparece no ribossomo: o anticódon mutado agora pareia com um códon diferente do original. O resultado é que o aminoácido certo (do ponto de vista da sintetase) passa a ser inserido em uma posição errada da proteína, toda vez que aquele códon mutante aparecer no mRNA — um erro sistemático e recorrente, não um erro isolado, porque o próprio tRNA mutado será reutilizado indefinidamente.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["trna", "mutacao", "anticódon"]
+    },
+    {
+      "card_id": "s1-biocel-08-003-03-fc03",
+      "pergunta": "Verdadeiro ou falso, com justificativa: 'O ribossomo é capaz de detectar quando uma aminoacil-tRNA sintetase carregou o aminoácido errado em um tRNA, porque ele confere tanto o anticódon quanto o aminoácido antes de aceitar a molécula no sítio A.'",
+      "resposta": "Falso. O ribossomo confere apenas o pareamento entre o anticódon do tRNA e o códon do mRNA — ele não tem nenhum mecanismo para verificar se o aminoácido pendurado naquele tRNA é de fato o correto. Essa é justamente a razão pela qual a etapa de ativação, feita pela aminoacil-tRNA sintetase, é o verdadeiro ponto crítico de fidelidade da tradução: um erro ali passa despercebido por todas as etapas seguintes, porque o ribossomo confia cegamente na identidade do anticódon como garantia da identidade do aminoácido.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["trna", "ribossomo", "fidelidade"]
+    },
+    {
+      "card_id": "s1-biocel-08-003-03-fc04",
+      "pergunta": "Paciente com infecção cutânea por Staphylococcus aureus é tratado com pomada de mupirocina, um antibiótico que inibe especificamente a isoleucil-tRNA sintetase bacteriana. Por que esse fármaco é eficaz contra a bactéria sem toxicidade relevante para as células humanas do paciente?",
+      "resposta": "A mupirocina se liga ao sítio catalítico da isoleucil-tRNA sintetase bacteriana, bloqueando a ativação da isoleucina e, com isso, interrompendo toda a síntese proteica da bactéria — sem substrato ativado, o ribossomo bacteriano trava. A seletividade do fármaco vem de uma diferença estrutural suficientemente grande entre a enzima bacteriana e a enzima humana equivalente: a mupirocina encaixa bem no bolsão catalítico procarionte, mas tem afinidade muito baixa pelo bolsão da enzima humana. É um exemplo direto de como conhecer a máquina molecular da ativação do tRNA permite desenhar um alvo terapêutico seletivo.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["trna", "antibiotico", "mupirocina", "farmacologia"]
+    },
+    {
+      "card_id": "s1-biocel-08-003-03-fc05",
+      "pergunta": "Compare o papel da ligação de alta energia formada na ativação do aminoácido (etapa do tRNA) com o papel do ATP na maioria das reações metabólicas da célula.",
+      "resposta": "Na maioria das reações metabólicas, o ATP é hidrolisado no exato momento em que a energia é necessária, liberando fosfato e energia imediatamente utilizável. Na ativação do aminoácido, a lógica é diferente: a energia do ATP é consumida antecipadamente, na etapa de ativação, e fica armazenada na própria ligação éster de alta energia entre o aminoácido e o tRNA. Essa energia só será 'sacada' minutos ou segundos depois, no ribossomo, para formar a ligação peptídica — sem gasto adicional de ATP naquele momento específico. É um caso de pré-pagamento energético: a célula banca o custo da ligação peptídica com antecedência, guardando a energia em uma ligação química estável até que ela seja necessária.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["bioenergetica", "atp", "traducao"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-08-003-03-caso01",
+      "titulo": "Miopatia progressiva em lactente com quadro multissistêmico",
+      "apresentacao": "Lactente de 7 meses, sem intercorrências perinatais relevantes, é levado ao pediatra por regressão do desenvolvimento motor: havia sustentado a cabeça e começado a sentar com apoio, mas nas últimas 6 semanas perdeu força progressivamente, apresenta hipotonia axial acentuada e dificuldade de sucção. Exame revela também leve hepatomegalia e ausência de reflexos tendinosos profundos nos membros inferiores. Exames laboratoriais mostram lactato sérico elevado e CPK discretamente aumentada. A investigação genética identifica uma mutação em um gene nuclear que codifica uma aminoacil-tRNA sintetase mitocondrial específica.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação em gene nuclear que codifica uma aminoacil-tRNA sintetase mitocondrial, reduzindo a eficiência da enzima em carregar corretamente o tRNA correspondente dentro da mitocôndria."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O sistema de tradução mitocondrial — que é independente do sistema de tradução citoplasmático e depende de seu próprio conjunto de tRNAs e sintetases para sintetizar as poucas proteínas codificadas pelo DNA mitocondrial, todas subunidades da cadeia respiratória."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a sintetase mitocondrial comprometida, a ativação dos aminoácidos dentro da mitocôndria fica lenta e ineficiente, reduzindo a síntese das subunidades da cadeia transportadora de elétrons codificadas pelo próprio genoma mitocondrial."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Os tecidos com maior demanda energética — músculo esquelético, fígado, sistema nervoso em desenvolvimento — são os primeiros a mostrar sinais: hipotonia, regressão motora, hepatomegalia. O acúmulo de lactato reflete a tentativa das células de produzir energia por via anaeróbia, compensando a falência da fosforilação oxidativa."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Doença mitocondrial progressiva multissistêmica, com prognóstico reservado e variável conforme o grau de comprometimento enzimático residual. Nenhum tratamento reverte a mutação; o manejo é de suporte metabólico (evitar jejum prolongado, suplementação de cofatores) e vigilância multissistêmica."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que aminoacil-tRNA sintetases não são exclusividade do citoplasma: a mitocôndria tem sua própria maquinaria de tradução, com seu próprio conjunto de tRNAs e sintetases, herdado de sua origem endossimbiótica bacteriana. Uma falha na ativação do aminoácido — o mesmo mecanismo estudado neste bloco — se traduz diretamente em falência da síntese das proteínas da cadeia respiratória, e por isso em uma doença de altíssima demanda energética tecidual.",
+      "disciplinas_relacionadas": ["biologia celular", "genetica medica", "neurologia pediatrica", "bioquimica"],
+      "diagnostico_revelado": "Doença mitocondrial por deficiência de aminoacil-tRNA sintetase mitocondrial.",
+      "tratamento_resumido": "Sem cura etiológica; manejo de suporte com evitação de jejum prolongado, suplementação de cofatores mitocondriais (coenzima Q10, carnitina, riboflavina conforme o caso) e acompanhamento multidisciplinar para monitorar progressão neuromuscular, hepática e cardíaca."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-08-002",
+        "titulo": "Transcrição — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "O entendimento de como o RNA é transcrito e de sua estrutura de fita simples com pareamento de bases é essencial para compreender como o tRNA se dobra em sua estrutura em trevo."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "topico": "Síntese Proteica no Ribossomo",
+        "disciplina": "biologia celular",
+        "semestre_futuro": 1,
+        "mecanismo_conexao": "O tRNA ativado por aminoacil-tRNA sintetase é o substrato de entrada que o ribossomo utiliza para traduzir o mRNA em proteína.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "topico": "Antibióticos inibidores de aminoacil-tRNA sintetase bacteriana",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "Fármacos como a mupirocina exploram diferenças estruturais entre sintetases bacterianas e humanas para inibir seletivamente a síntese proteica bacteriana.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "topico": "Doenças mitocondriais por deficiência de aminoacil-tRNA sintetase",
+        "disciplina": "genetica medica",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Mutações em sintetases mitocondriais comprometem a tradução das subunidades da cadeia respiratória, causando doenças multissistêmicas de alta demanda energética.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-08-002",
+        "tipo_relacao": "ANALOGIA",
+        "explicacao": "O tRNA é a ferramenta física que torna real, dentro da célula, o código genético que a transcrição apenas copia em forma de mRNA."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-08-003-03",
   "no_pai_id": "s1-biocel-08-003",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "tRNAs e Ativação de Aminoácidos",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Adaptador anticódon-aminoácido; aminoacil-tRNA sintetases",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica"
-  ]
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

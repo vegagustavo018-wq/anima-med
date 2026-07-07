@@ -53,7 +53,7 @@
       "conteudo": "A pancreatite já está tratada pela hidratação. O seu dilema cirúrgico é a via biliar. A maioria dos cálculos que causa pancreatite passa espontaneamente para o duodeno. Como saber se a pedra ainda está entalada no colédoco? Você olha para a **bilirrubina direta**, para as enzimas canaliculares (Fosfatase Alcalina, GGT) e busca sinais de **Colangite** (icterícia, febre com calafrios). Se a via biliar estiver livre e as bilirrubinas caindo, você mantém o tratamento clínico e programa a colecistectomia para a mesma internação (antes da alta), para evitar recorrência. Se a via biliar estiver obstruída e infectada (colangite), a conduta muda: **indica-se CPRE (Colangiopancreatografia Retrógrada Endoscópica) de urgência** nas primeiras 24h para extrair a pedra."
     },
     {
-      "tipo": "armadilha",
+      "tipo": "highlight",
       "conteudo": "Cuidado com o uso irracional de antibióticos [⚠️]. A pancreatite aguda, mesmo severa com necrose, é uma inflamação química/estéril nos primeiros dias. NÃO prescreva antibióticos profiláticos. Os antibióticos só estão indicados se houver Colangite associada ou, semanas depois, se uma área de necrose pancreática infectar (comprovado por piora clínica, gás na tomografia ou punção guiada)."
     },
     {
@@ -92,7 +92,7 @@
       "card_id": "s11-int2cir-01-014-fc03",
       "pergunta": "Paciente internado com pancreatite aguda biliar apresenta icterícia progressiva e febre com calafrios no segundo dia de internação. Qual é o diagnóstico complicador e qual a conduta intervencionista imediata?",
       "resposta": "O quadro sugere que o cálculo biliar não apenas engatilhou a pancreatite, mas permaneceu impactado na porção distal do colédoco, causando estase biliar e infecção bacteriana ascendente, configurando **Colangite Aguda**. A conduta imediata para essa complicação, além de iniciar antibióticos sistêmicos, é a desobstrução da via biliar através de **CPRE (Colangiopancreatografia Retrógrada Endoscópica) de urgência** com papilotomia e extração do cálculo.",
-      "tipo": "conduta",
+      "tipo": "clinico",
       "dificuldade": 4,
       "nivel_alvo": 5,
       "tags": [
@@ -105,7 +105,7 @@
       "card_id": "s11-int2cir-01-014-fc04",
       "pergunta": "Em um paciente com pancreatite aguda leve (edematosa) de origem biliar, qual o momento ideal recomendado para realizar a colecistectomia (retirada da vesícula)?",
       "resposta": "A recomendação atual e o padrão-ouro é realizar a colecistectomia videolaparoscópica **durante a mesma internação** (index admission), após a resolução da dor e melhora das enzimas pancreáticas, mas antes que o paciente receba alta hospitalar. Atrasar a cirurgia (alta para operar meses depois) carrega um risco de até 30% de recorrência de cólica biliar, nova pancreatite ou colangite aguda nesse intervalo de espera.",
-      "tipo": "conduta",
+      "tipo": "clinico",
       "dificuldade": 3,
       "nivel_alvo": 4,
       "tags": [
@@ -153,16 +153,7 @@
     }
   ],
   "conexoes": {
-    "prerequisitos": [
-      {
-        "bloco_id": "s1-anato-xx",
-        "titulo": "Anatomia da Árvore Biliar e Pâncreas",
-        "disciplina": "anatomia",
-        "semestre": 1,
-        "relevancia": "base_necessaria",
-        "explicacao": "A anatomia da convergência do colédoco com o ducto de Wirsung na Ampola de Vater é a única explicação morfológica de como uma pedra da vesícula pode inflamar o pâncreas."
-      }
-    ],
+    "prerequisitos": [],
     "futuras": [
       {
         "tipo": "CASCATA_CAUSAL",
@@ -170,7 +161,8 @@
         "disciplina": "cirurgia",
         "semestre_futuro": 11,
         "topico": "Choque no Pós-Op / Sepse Tardia",
-        "mecanismo_conexao": "Se o paciente desenvolver necrose pancreática e ela se infectar semanas depois, ele pode evoluir com choque séptico tardio, cujo tratamento muda para o desbridamento (necrosectomia)."
+        "mecanismo_conexao": "Se o paciente desenvolver necrose pancreática e ela se infectar semanas depois, ele pode evoluir com choque séptico tardio, cujo tratamento muda para o desbridamento (necrosectomia).",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [

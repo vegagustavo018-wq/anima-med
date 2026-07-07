@@ -1,54 +1,336 @@
 {
-  "resumo_id": "s1-biocel-01-003-05-02",
-  "no_pai_id": "s1-biocel-01-003-05",
-  "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Bomba SERCA",
-    "semestre": 1,
+    "subtitulo": "Como o músculo encontra o repouso após a contração?",
     "disciplina": "biologia celular",
-    "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tags": [
+      "fisiologia celular",
+      "transporte ativo",
+      "homeostase",
+      "cálcio",
+      "retículo sarcoplasmático"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
   },
-  "resumo_conciso": "Recaptação de Ca2+ no retículo; relaxamento muscular",
-  "narrativa": [],
+  "resumo_conciso": "A contração muscular começa quando o cálcio inunda o citosol da fibra muscular — mas nada nesse mecanismo explica como o músculo relaxa depois. Se o cálcio simplesmente permanecesse ali, a contração seria permanente, e o organismo entraria em rigidez irreversível. A bomba SERCA resolve esse problema removendo ativamente o cálcio do citosol de volta para o retículo sarcoplasmático, contra um gradiente de concentração de milhares de vezes, consumindo ATP a cada ciclo. É, portanto, o motor molecular do relaxamento muscular — e sua disfunção está diretamente ligada à dificuldade de relaxamento diastólico observada em certas formas de insuficiência cardíaca.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em uma sala de cinema depois que o filme termina. As luzes se acendem, as portas se abrem, e uma equipe de limpeza entra rapidamente para recolher tudo que foi deixado para trás — pipoca no chão, copos, embalagens — devolvendo a sala ao estado que permitirá a próxima sessão começar do zero. Se essa equipe não existisse, cada sessão deixaria a sala mais suja que a anterior, até que ficasse impossível assistir a qualquer filme novo ali dentro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O músculo esquelético e cardíaco enfrentam um problema parecido a cada contração. Um sinal elétrico dispara a liberação de cálcio no citosol da fibra muscular, e esse cálcio é o que permite às proteínas contráteis deslizarem umas sobre as outras, encurtando o músculo. Mas, assim como o cinema precisa da equipe de limpeza para a próxima sessão, o músculo precisa de um mecanismo que remova esse cálcio rapidamente — ou nunca conseguirá relaxar para a contração seguinte."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que o músculo não pode simplesmente deixar o cálcio se dissipar sozinho?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se o cálcio liberado no citosol durante a contração permanecesse ali indefinidamente, ele continuaria ligado à troponina, mantendo os sítios de ligação da actina expostos para a miosina indefinidamente. O resultado seria uma contração sustentada e irreversível — o músculo ficaria travado, incapaz de relaxar, incapaz de responder a um novo estímulo, e o gasto metabólico contínuo dessa contração forçada levaria rapidamente ao esgotamento de energia da célula."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, retenha o problema central: gerar contração é relativamente simples — basta liberar cálcio no citosol. O verdadeiro desafio biológico é reverter esse processo rapidamente, e é aí que entra o mecanismo que vamos estudar agora."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o músculo resolve o problema do relaxamento?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é uma proteína transportadora embutida na membrana do retículo sarcoplasmático — o compartimento interno da célula muscular que armazena cálcio entre uma contração e outra. Essa proteína usa a energia da hidrólise do ATP para bombear ativamente o cálcio de volta para dentro do retículo, mesmo que a concentração de cálcio lá dentro já seja milhares de vezes maior do que no citosol. É um trabalho contra a corrente termodinâmica, e só é possível porque a proteína converte energia química em movimento molecular direcionado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa proteína é uma cadeia polipeptídica que atravessa a membrana do retículo diversas vezes, formando um domínio de ligação ao cálcio de alta especificidade voltado para o citosol e um domínio catalítico que hidrolisa o ATP. A energia liberada pela quebra da ligação fosfato induz uma mudança conformacional que reorienta o sítio de ligação do cálcio, abrindo-o para o lado luminal do retículo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esse motor funciona, passo a passo"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Um ciclo completo da bomba SERCA",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Captura do cálcio no lado citosólico",
+          "explicacao": "Dois íons de cálcio se ligam a sítios de alta afinidade voltados para o citosol, onde a concentração do íon é baixa logo após a fase inicial da contração."
+        },
+        {
+          "numero": 2,
+          "titulo": "Ligação e hidrólise do ATP",
+          "explicacao": "Uma molécula de ATP se liga ao domínio catalítico da proteína e é hidrolisada, transferindo um grupo fosfato que desestabiliza a conformação atual e desencadeia uma torção estrutural."
+        },
+        {
+          "numero": 3,
+          "titulo": "Mudança conformacional",
+          "explicacao": "A torção induzida pela fosforilação reorienta o sítio de ligação do cálcio, que passa a apontar para o lado luminal do retículo — o interior da organela, onde a concentração de cálcio já é muito mais alta."
+        },
+        {
+          "numero": 4,
+          "titulo": "Liberação do cálcio no lúmen",
+          "explicacao": "A afinidade pelo cálcio despenca nessa nova conformação, forçando a liberação dos dois íons para dentro do retículo, contra o gradiente de concentração que naturalmente os empurraria de volta para o citosol."
+        },
+        {
+          "numero": 5,
+          "titulo": "Desfosforilação e retorno",
+          "explicacao": "A proteína libera o grupo fosfato, retorna à conformação original voltada para o citosol e fica pronta para capturar mais cálcio, reiniciando o ciclo."
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A SERCA é o principal determinante da velocidade de relaxamento muscular. Sem a remoção ativa e rápida do cálcio citosólico que ela promove, nenhum outro sistema de transporte da célula seria capaz de baixar a concentração de cálcio a tempo de permitir relaxamento entre contrações sucessivas."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎫",
+      "conteudo": "Imagine um teatro lotado cujo salão principal (o lúmen do retículo) já está cheio de espectadores, enquanto o saguão de entrada (o citosol) ainda tem gente chegando. Um funcionário de bilheteria (a bomba SERCA) precisa convencer cada novo espectador do saguão a entrar no salão já lotado — um trabalho que exige esforço extra a cada pessoa, porque empurrar alguém para um ambiente já cheio não é natural. Cada convencimento bem-sucedido custa o equivalente a uma gorjeta paga pelo teatro (o ATP consumido). Mapeamento: o funcionário de bilheteria = a proteína SERCA; os espectadores = os íons de cálcio; o salão lotado = o lúmen do retículo sarcoplasmático, já rico em cálcio; a gorjeta paga = a energia do ATP necessária para forçar a entrada contra o gradiente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "SERCA",
+      "origem": "acrônimo do inglês Sarcoplasmic/Endoplasmic Reticulum Calcium ATPase",
+      "significado": "ATPase de Cálcio do Retículo Sarcoplasmático/Endoplasmático",
+      "explicacao": "Cada parte do acrônimo descreve uma característica real da proteína: 'sarcoplasmático' refere-se ao retículo especializado das células musculares (equivalente ao retículo endoplasmático liso de outras células, daí a dupla nomenclatura); 'cálcio' identifica o íon transportado; 'ATPase' identifica a fonte de energia hidrolisada para realizar o transporte. É um nome funcional-descritivo, raro entre estruturas anatômicas clássicas, mas comum em proteínas identificadas já na era da bioquímica moderna."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a bomba SERCA parasse de funcionar em um músculo vivo, o que aconteceria com a capacidade desse músculo de relaxar?",
+      "resposta": "O cálcio liberado durante a contração permaneceria ligado à troponina no citosol, mantendo os sítios de ligação da actina expostos de forma contínua. O músculo entraria em um estado de contração sustentada e involuntária, incapaz de completar o ciclo de relaxamento necessário antes de uma nova contração. Esse estado de contração forçada levaria a um esgotamento metabólico acelerado, porque a maquinaria contrátil continuaria consumindo ATP sem qualquer fase de repouso entre os ciclos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa dependência da SERCA para o relaxamento tem consequência clínica direta no coração. Na insuficiência cardíaca com fração de ejeção preservada, um dos mecanismos propostos envolve justamente a redução da atividade da SERCA no miocárdio: o coração até consegue se contrair adequadamente, mas relaxa de forma incompleta e lenta na diástole, comprometendo o enchimento ventricular e, com isso, o débito cardíaco global — mesmo sem perda evidente da força de contração."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo de Transporte da SERCA",
+      "descricao": "Diagrama mostrando a proteína atravessando a membrana do retículo sarcoplasmático em suas duas conformações principais. O cálcio entra pelo lado citosólico, o ATP se liga e é hidrolisado, e a proteína sofre alteração conformacional que libera o cálcio no lado luminal, contra o gradiente de concentração.",
+      "prompt_ia": "Scientific 3D illustration of the SERCA pump protein embedded in a lipid bilayer of the sarcoplasmic reticulum, showing the full cycle: calcium ions binding from the cytosol, ATP molecule binding to the cytosolic domain and being hydrolyzed, conformational change, and calcium release into the lumen. Clean membrane background, high detail, molecular biology style, neutral adaptive background.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-01-003-05-02-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que a SERCA consome ATP mesmo quando o cálcio está se movendo para dentro de um compartimento (o retículo) que já é rico nesse íon?",
+      "resposta": "Porque o sentido do transporte — do citosol, com baixa concentração de cálcio, para o lúmen do retículo, com concentração muito mais alta — é contrário ao que a difusão espontânea faria. Mover um soluto contra seu próprio gradiente de concentração sempre exige trabalho energético, e é exatamente esse trabalho que a hidrólise do ATP fornece a cada ciclo da bomba.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "bioenergetica",
+        "transporte",
+        "serca"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-02-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "Qual seria a consequência imediata de uma falha completa na função da SERCA em uma fibra muscular esquelética?",
+      "resposta": "O cálcio liberado durante a contração permaneceria acumulado no citosol, sem via eficiente de remoção. Isso manteria a troponina ligada ao cálcio e os sítios de actina expostos de forma contínua, resultando em contratura muscular persistente — o músculo ficaria travado em estado de contração, incapaz de relaxar para o próximo ciclo motor.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "fisiologia",
+        "serca",
+        "contratura"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-02-fc03",
+      "tipo": "por_que",
+      "pergunta": "Por que a SERCA é considerada tanto uma enzima ATPase quanto um transportador, e não apenas um canal passivo de cálcio?",
+      "resposta": "Porque ela possui atividade catalítica intrínseca capaz de hidrolisar ATP (convertendo-o em ADP e fosfato inorgânico) e utiliza diretamente a energia dessa reação para alterar sua própria conformação e mover o cálcio contra o gradiente. Um canal passivo, por definição, permite fluxo de íons a favor do gradiente sem gasto de energia — a SERCA faz exatamente o oposto, e é essa dependência de ATP que a classifica como transporte ativo primário.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "enzimologia",
+        "serca"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-02-fc04",
+      "tipo": "comparacao",
+      "pergunta": "Como o movimento do cálcio pela SERCA difere do movimento do cálcio por um canal iônico, como o receptor de rianodina?",
+      "resposta": "O receptor de rianodina é um canal que permite a saída rápida e passiva de cálcio do retículo para o citosol, a favor do gradiente de concentração, sem gasto de ATP — é o mecanismo que dispara a contração. A SERCA faz o movimento inverso: bombeia o cálcio ativamente de volta ao retículo, contra o gradiente, com gasto direto de ATP, sendo o mecanismo que permite o relaxamento. Um libera, o outro recolhe; um é passivo e rápido, o outro é ativo e mais lento.",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "transporte",
+        "comparacao",
+        "receptor-rianodina"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-02-fc05",
+      "tipo": "armadilha",
+      "pergunta": "Verdadeiro ou falso: como a SERCA e a bomba Na+/K+ ATPase são ambas ATPases de transporte ativo, elas têm a mesma localização celular e o mesmo íon-alvo. Justifique.",
+      "resposta": "Falso. Embora ambas sejam ATPases de transporte ativo primário que trabalham contra gradiente de concentração, elas atuam em locais e sobre íons completamente diferentes: a Na+/K+ ATPase está na membrana plasmática e transporta sódio e potássio; a SERCA está na membrana do retículo sarcoplasmático (ou endoplasmático) e transporta exclusivamente cálcio, do citosol para o lúmen dessa organela. Confundir as duas ignora que cada uma resolve um problema homeostático distinto da célula.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha-conceitual",
+        "serca",
+        "comparacao"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-02-fc06",
+      "tipo": "clinico",
+      "pergunta": "Paciente com insuficiência cardíaca apresenta fração de ejeção normal ao ecocardiograma, mas sintomas de congestão pulmonar e dificuldade de enchimento ventricular na diástole. Que papel a SERCA pode desempenhar nesse quadro?",
+      "resposta": "Esse quadro é compatível com insuficiência cardíaca com fração de ejeção preservada, na qual um dos mecanismos propostos é a redução da atividade da SERCA no miocárdio. Mesmo com a força de contração sistólica preservada, a remoção lenta e incompleta do cálcio citosólico compromete o relaxamento muscular na diástole, dificultando o enchimento ventricular adequado e reduzindo o débito cardíaco global — um problema de relaxamento, não de contração.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "cardiologia",
+        "serca",
+        "diastole",
+        "clinico"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-01-003-05-02-caso01",
+      "titulo": "Dispneia aos esforços com função sistólica preservada",
+      "apresentacao": "Mulher de 68 anos, hipertensa de longa data, procura atendimento por dispneia progressiva aos esforços e episódios de ortopneia nas últimas semanas. Ecocardiograma mostra fração de ejeção do ventrículo esquerdo preservada (62%), mas evidencia disfunção diastólica significativa, com padrão de relaxamento ventricular anormal e aumento das pressões de enchimento.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Hipertensão arterial crônica não controlada, levando a hipertrofia e remodelamento do miocárdio ventricular esquerdo ao longo dos anos."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Retículo sarcoplasmático dos miócitos cardíacos, com redução funcional da atividade da bomba SERCA — um dos mecanismos moleculares associados ao remodelamento hipertrófico crônico."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Remoção lenta e incompleta do cálcio citosólico após cada contração, prolongando o tempo necessário para o relaxamento muscular do miocárdio na fase diastólica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Enchimento ventricular comprometido durante a diástole, aumento das pressões de enchimento que se transmitem retrogradamente à circulação pulmonar, causando dispneia aos esforços e ortopneia — mesmo com a força de contração sistólica preservada."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Progressão para quadros recorrentes de congestão pulmonar se a hipertensão de base não for adequadamente controlada, exigindo manejo direcionado ao relaxamento ventricular e ao controle da pressão arterial, já que os tratamentos clássicos para disfunção sistólica têm eficácia limitada nesse contexto."
+        }
+      ],
+      "diagnostico_revelado": "Insuficiência cardíaca com fração de ejeção preservada, por disfunção diastólica associada a hipertrofia hipertensiva",
+      "tratamento_resumido": "Controle rigoroso da pressão arterial, uso de diuréticos para controle da congestão, e otimização do manejo de comorbidades associadas, já que ainda não existe terapia farmacológica que restaure diretamente a função da SERCA com a mesma eficácia demonstrada para a disfunção sistólica.",
+      "conexao_com_bloco": "O caso conecta diretamente a função de relaxamento muscular mediada pela SERCA, descrita na narrativa, com uma manifestação clínica real em que a contração permanece normal, mas o relaxamento — dependente diretamente dessa bomba — está comprometido, mostrando por que force e relaxamento são processos mecanicamente distintos e independentemente vulneráveis.",
+      "disciplinas_relacionadas": [
+        "fisiologia",
+        "cardiologia"
+      ]
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-01-003-05-01",
+        "titulo": "Bomba Na+/K+ ATPase",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "complementar",
+        "explicacao": "Ter compreendido o mecanismo de transporte ativo primário na bomba Na+/K+ ATPase facilita entender a lógica análoga de ciclo conformacional dependente de ATP na SERCA, mesmo que os íons e a localização sejam diferentes."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "topico": "Insuficiência Cardíaca com Fração de Ejeção Preservada",
+        "disciplina": "cardiologia",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "A disfunção da SERCA é um dos mecanismos moleculares propostos para explicar o comprometimento do relaxamento diastólico nesse tipo de insuficiência cardíaca.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "topico": "Acoplamento Excitação-Contração Muscular",
+        "disciplina": "fisiologia",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "A SERCA é a peça final do ciclo de acoplamento excitação-contração, sendo responsável por encerrar o sinal de cálcio iniciado pela liberação via receptores de rianodina.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "topico": "Miopatias e distúrbios do metabolismo do cálcio muscular",
+        "disciplina": "neurologia",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "Mutações que afetam proteínas do retículo sarcoplasmático, incluindo reguladores da SERCA, estão implicadas em algumas miopatias hereditárias com contratura muscular.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": null,
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Receptores de Rianodina (Canais de Cálcio do Retículo)",
+        "explicacao": "Enquanto os receptores de rianodina liberam cálcio passivamente para desencadear a contração, a SERCA o bombeia ativamente de volta para o repouso — os dois mecanismos trabalham em direções opostas dentro do mesmo ciclo funcional."
+      },
+      {
+        "bloco_id": "s1-biocel-01-003-05-01",
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Bomba Na+/K+ ATPase",
+        "explicacao": "Ambas são ATPases de transporte ativo contra gradiente, mas atuam em membranas e sobre íons completamente diferentes — uma na membrana plasmática com sódio e potássio, outra no retículo sarcoplasmático com cálcio."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "O cálcio sai do citosol após a contração apenas por difusão simples, sem necessidade de transporte ativo.",
+      "correcao": "A remoção do cálcio citosólico para o retículo é um processo ativo, mediado pela SERCA, que consome ATP para vencer o gradiente de concentração desfavorável.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "SERCA e Na+/K+ ATPase são a mesma proteína atuando em locais diferentes.",
+      "correcao": "São proteínas distintas, com estrutura, localização (membrana plasmática versus retículo sarcoplasmático) e íon-alvo diferentes, embora compartilhem o mesmo princípio geral de transporte ativo dependente de ATP.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Uma disfunção da SERCA sempre se manifesta como fraqueza de contração muscular.",
+      "correcao": "A disfunção da SERCA compromete primariamente o relaxamento, não a força de contração — por isso pode se manifestar clinicamente como disfunção diastólica com contratilidade sistólica preservada.",
+      "armadilha_em_flashcard": "sim"
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-biocel-01-003-05-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "resumo_id": "s1-biocel-01-003-05-02",
+  "no_pai_id": "s1-biocel-01-003-05",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "fisiologia",
-    "bioquimica"
-  ]
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
+    "nivel_confianca": "estudo"
+  }
 }

@@ -2,53 +2,369 @@
   "resumo_id": "s4-farma1-01-006-01",
   "no_pai_id": "s4-farma1-01-006",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-01-003-01"
+  ],
   "metadata": {
     "titulo": "Meia-Vida (t½)",
+    "subtitulo": "Quanto tempo o corpo leva para 'esquecer' metade de uma dose?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 9,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "meia-vida",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Definição; regra das 4-5 meias-vidas; acúmulo e washout",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior desta ramificação já anunciou que a farmacocinética precisa de números para virar prescrição, e a meia-vida (t½) é o primeiro e mais usado desses números: o tempo necessário para que a concentração plasmática de um fármaco caia pela metade. Ela existe porque a eliminação de primeira ordem — a forma mais comum de eliminação — remove sempre uma fração constante do que resta, nunca uma quantidade fixa; e uma fração constante aplicada repetidamente produz, matematicamente, um intervalo de tempo fixo para reduzir a concentração à metade, não importa o valor de onde se partiu. Dessa regularidade nasce uma ferramenta prática de cabeceira: em cerca de 4 a 5 meias-vidas, um fármaco administrado em doses repetidas atinge o platô de equilíbrio (steady state), e em cerca de 4 a 5 meias-vidas depois de suspenso, considera-se praticamente eliminado do organismo. A meia-vida não mede a eficiência do órgão eliminador isoladamente — ela é o resultado combinado de dois fatores, o volume de distribuição (Vd) e a depuração (clearance, que o próximo bloco desta sequência vai detalhar). É por isso que um fígado ou rim mais lento nem sempre alonga o t½ na mesma proporção: se o Vd também muda, a conta muda junto. Entender t½ é entender de quanto em quanto tempo repetir uma dose e quanto tempo esperar para um fármaco 'sair' do corpo — dois cálculos que todo médico faz, com ou sem perceber, toda vez que assina uma receita.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um paciente pergunta ao médico: 'depois que eu parar de tomar esse remédio, quanto tempo ele ainda vai estar no meu corpo?' É uma pergunta simples, mas sem um número que resuma a velocidade de eliminação, a resposta seria um encolher de ombros qualificado — 'depende', 'algum tempo', 'vai diminuindo aos poucos'. Nenhuma dessas respostas orienta uma decisão real, como liberar o paciente para dirigir, autorizar uma cirurgia ou saber se um exame de sangue vai detectar o fármaco."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que esse número precisa existir"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A concentração de um fármaco no sangue não cai como um cronômetro, perdendo uma quantidade fixa por minuto. Ela cai proporcionalmente ao que ainda resta — quanto mais fármaco há, mais rápido (em termos absolutos) ele é eliminado; quanto menos resta, mais devagar. Esse padrão, chamado eliminação de primeira ordem, é o comportamento da maioria dos fármacos em uso clínico nas doses habituais."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema prático é que 'proporcional ao que resta' não tem, à primeira vista, nenhum ponto fixo para o médico se agarrar. Se a quantidade eliminada por hora está sempre mudando, como comunicar, em uma única frase, a velocidade de eliminação de um fármaco a um colega, a um farmacêutico ou a um protocolo de bula? É preciso um marco temporal que seja o mesmo, não importa a dose administrada nem o ponto da curva em que se está observando."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema é que uma eliminação proporcional não tem um ritmo constante em quantidade — mas precisa, ainda assim, de um número único e comunicável que descreva sua velocidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: um intervalo que se repete sempre igual"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A saída matemática é elegante: embora a quantidade eliminada por hora mude, a fração eliminada em um intervalo fixo de tempo não muda. Se metade do fármaco desaparece nas primeiras 4 horas, metade do que sobrou desaparece nas 4 horas seguintes, e assim por diante — sempre a mesma fração, sempre o mesmo intervalo. Esse intervalo fixo é a meia-vida: o tempo necessário para que a concentração plasmática caia à metade do valor anterior, repetido de forma idêntica em qualquer ponto da curva."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A meia-vida (t½) é o tempo necessário para que a concentração plasmática de um fármaco caia pela metade — um intervalo constante porque a eliminação de primeira ordem remove sempre a mesma **fração**, não a mesma **quantidade**."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essa constante é feita"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A meia-vida não é uma propriedade medida diretamente com um instrumento — é calculada a partir da curva de concentração plasmática ao longo do tempo, a mesma curva mencionada no bloco anterior desta sequência. Na prática, colhem-se amostras de sangue em intervalos conhecidos após uma dose, plota-se a concentração num gráfico de escala logarítmica (onde a eliminação de primeira ordem aparece como uma reta) e mede-se a inclinação dessa reta."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Formalmente, t½ = 0,693 / ke, onde ke é a constante de eliminação (a fração da quantidade presente que é removida por unidade de tempo) e 0,693 é o logaritmo natural de 2 — o número que aparece sempre que se pergunta 'quanto tempo leva para reduzir algo à metade' numa função exponencial. Não é preciso decorar a dedução: o essencial é que t½ resume, num único número, a velocidade com que o organismo reduz a concentração de um fármaco pela metade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona na prática: a regra das 4-5 meias-vidas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A meia-vida vira ferramenta clínica através de uma regra simples, aplicável em duas direções: para saber quando um fármaco administrado em doses repetidas atinge o equilíbrio, e para saber quando um fármaco suspenso está praticamente eliminado. As duas direções seguem a mesma aritmética, só que em sentidos opostos."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Acúmulo até o steady state (doses repetidas)",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Primeira meia-vida (~50%)",
+          "explicacao": "Ao iniciar doses repetidas em intervalos regulares, a concentração média sobe rapidamente na primeira meia-vida, alcançando cerca de 50% do valor final de equilíbrio."
+        },
+        {
+          "numero": 2,
+          "titulo": "Segunda meia-vida (~75%)",
+          "explicacao": "Como a cada intervalo igual a entrada de nova dose e a eliminação da fração restante se equilibram progressivamente, a concentração acumulada chega a cerca de 75% do platô."
+        },
+        {
+          "numero": 3,
+          "titulo": "Terceira e quarta meias-vidas (~87,5% e ~93,75%)",
+          "explicacao": "O incremento percentual vai encolhendo a cada meia-vida — o sistema está se aproximando de um ponto em que a quantidade que entra a cada dose se iguala à quantidade eliminada no mesmo intervalo."
+        },
+        {
+          "numero": 4,
+          "titulo": "Quinta meia-vida (~96,875%, considerado platô)",
+          "explicacao": "Na prática clínica, considera-se que o steady state foi atingido depois de 4 a 5 meias-vidas de doses regulares — o ganho adicional depois disso é clinicamente desprezível. É esse número que orienta quando repetir um exame de nível sérico para avaliar se a dose está adequada."
+        }
+      ]
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Washout até a eliminação completa (após suspender o fármaco)",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Primeira meia-vida",
+          "explicacao": "A concentração cai para 50% do valor no momento da suspensão."
+        },
+        {
+          "numero": 2,
+          "titulo": "Segunda e terceira meias-vidas",
+          "explicacao": "A concentração cai para 25% e depois 12,5% do valor inicial — a mesma fração pela metade, repetida."
+        },
+        {
+          "numero": 3,
+          "titulo": "Quarta e quinta meias-vidas",
+          "explicacao": "A concentração cai para cerca de 6,25% e depois 3,125% do valor inicial, patamar considerado clinicamente equivalente a 'eliminado' — daí a mesma regra de 4 a 5 meias-vidas ser usada para estimar quando um fármaco deixou de exercer efeito relevante ou deixou de ser detectável em exames de rotina."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essa regra que orienta decisões tão distintas quanto liberar um paciente sedado da UTI, calcular a janela de detecção de uma substância em exame toxicológico, ou decidir quanto tempo esperar antes de trocar um antidepressivo por outro que interage com o primeiro."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa antes de conectar: t½ nunca aparece sozinha na clínica — ela depende de outras duas grandezas, que juntas explicam por que ela varia entre pacientes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a meia-vida se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A meia-vida não é uma propriedade isolada do fígado ou do rim — ela é o resultado de uma equação que combina duas grandezas independentes: t½ = 0,693 × Vd / clearance. O **volume de distribuição (Vd)**, já visto no bloco s4-farma1-01-003-01, representa o quanto o fármaco se espalha para fora do plasma, para tecidos como gordura e músculo. O **clearance**, que será o objeto do próximo bloco desta sequência (s4-farma1-01-006-02, ainda não escrito), representa a eficiência do organismo em depurar o sangue do fármaco por unidade de tempo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa equação explica uma armadilha clínica comum: um fármaco muito lipossolúvel, com Vd enorme (porque se espalha amplamente pelos tecidos), pode ter meia-vida longa mesmo que o clearance hepático ou renal seja perfeitamente normal — porque há, literalmente, mais fármaco 'escondido' fora do sangue para ser recolhido e eliminado a cada ciclo. Por isso, encontrar um t½ prolongado num exame não significa automaticamente que o órgão eliminador está comprometido: pode ser o Vd que está grande, o clearance que está reduzido, ou os dois. Separar essas duas causas é exatamente o papel do bloco sobre clearance que vem a seguir."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "meia-vida",
+      "origem": "tradução direta do inglês half-life, termo emprestado da física nuclear (decaimento radioativo)",
+      "significado": "o tempo necessário para que uma quantidade caia à metade do valor inicial",
+      "explicacao": "O conceito nasceu na física, no início do século XX, para descrever o decaimento radioativo — Ernest Rutherford usou a ideia de 'meio período' já em 1907 para caracterizar a velocidade de decaimento de substâncias radioativas, que também seguem uma cinética de primeira ordem (uma fração fixa dos átomos decai por unidade de tempo). A farmacologia importou o termo e o raciocínio matemático décadas depois, quando pesquisadores como Widmark (para o álcool, já nos anos 1920) e, mais tarde, a farmacocinética clássica de meados do século XX perceberam que a eliminação de fármacos segue exatamente a mesma matemática exponencial do decaimento atômico. O nome revela a origem interdisciplinar do conceito: a mesma equação que descreve um átomo de urânio perdendo radioatividade descreve um comprimido de amoxicilina sendo eliminado do sangue."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🧊",
+      "conteudo": "Pense num cubo de gelo grande derretendo num copo com temperatura ambiente constante. Ele não perde a mesma quantidade de gelo a cada minuto — perde uma fração do que resta, então derrete mais rápido (em massa absoluta) quando é grande e mais devagar quando já está pequeno. Se leva 10 minutos para derreter a primeira metade, levará outros 10 minutos para derreter metade do que sobrou, e mais 10 para metade disso — sempre o mesmo intervalo, por menor que fique o pedaço. Esse intervalo fixo é a meia-vida do gelo. A analogia quebra num ponto importante: o tamanho do copo (equivalente ao volume de distribuição) também influencia quanto tempo o processo todo leva — um copo mais largo espalha a mesma quantidade de água derretida numa camada mais fina, mudando a dinâmica observada, exatamente como um Vd maior muda o t½ mesmo com a mesma 'temperatura ambiente' (clearance) constante."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] A regra de 4-5 meias-vidas é uma aproximação clínica útil, não um limite absoluto: fármacos com metabólitos ativos, cinética não linear (saturável) em doses altas, ou eliminação em múltiplas fases (distribuição bifásica) podem se desviar dessa estimativa simples, exigindo ajuste individualizado."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Curva de meia-vida: acúmulo e eliminação",
+      "descricao": "Diagrama com dois gráficos lado a lado, ambos com eixo X em unidades de meia-vida (1 a 5) e eixo Y em porcentagem. Gráfico esquerdo mostra curva ascendente de acúmulo até o steady state, com marcações em 50%, 75%, 87,5%, 93,75% e 96,875% nas cinco meias-vidas sucessivas, platô horizontal tracejado no topo. Gráfico direito mostra curva descendente de eliminação (washout), com marcações em 50%, 25%, 12,5%, 6,25% e 3,125% nas cinco meias-vidas, linha tracejada próxima a zero indicando 'eliminação praticamente completa'. Legendas em português, cores diferenciando as duas curvas, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Dois gráficos de linha lado a lado, mesmo formato e escala. Gráfico esquerdo, título 'ACÚMULO ATÉ STEADY STATE': eixo X rotulado 'meias-vidas decorridas' com marcas de 1 a 5; eixo Y rotulado '% da concentração de equilíbrio' de 0 a 100; curva ascendente com formato de saturação exponencial, pontos destacados e rotulados em 50%, 75%, 87,5%, 93,75%, 96,875%; linha horizontal tracejada no topo indicando o platô de equilíbrio. Gráfico direito, título 'ELIMINAÇÃO (WASHOUT)': mesmo eixo X; eixo Y rotulado '% da concentração inicial' de 0 a 100; curva descendente exponencial com pontos destacados em 50%, 25%, 12,5%, 6,25%, 3,125%; linha horizontal tracejada próxima de zero rotulada 'eliminação praticamente completa'. Paleta de cores suaves, uma cor para cada gráfico, texto em português, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-006",
+        "titulo": "Parâmetros Cinéticos — Quantificar a Jornada (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco introduziu a necessidade geral de resumir a farmacocinética qualitativa em números; a meia-vida é o primeiro parâmetro detalhado dessa sequência."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Clearance (depuração)",
+        "mecanismo_conexao": "O bloco irmão s4-farma1-01-006-02 vai detalhar o clearance, a segunda variável da equação t½ = 0,693 × Vd / clearance, permitindo separar quanto da meia-vida se deve ao volume de distribuição e quanto se deve à eficiência de eliminação do organismo.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Ajuste posológico e monitorização terapêutica",
+        "mecanismo_conexao": "A regra de 4-5 meias-vidas orienta diretamente decisões práticas como intervalo entre doses, tempo até a próxima dosagem sérica e tempo de washout antes de trocar medicações com risco de interação.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-003-01",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "O volume de distribuição (Vd), definido nesse bloco lateral, é um dos dois componentes que determinam matematicamente o valor da meia-vida (t½ = 0,693 × Vd / clearance). Um Vd grande pode prolongar t½ mesmo sem alteração do clearance."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-006-01-fc01",
+      "pergunta": "Por que a meia-vida de um fármaco com eliminação de primeira ordem é um intervalo de tempo constante, mesmo a quantidade eliminada por hora mudando ao longo da curva?",
+      "resposta": "Porque a eliminação de primeira ordem remove sempre a mesma fração da quantidade presente por unidade de tempo, não uma quantidade absoluta fixa. Como a fração é constante, o tempo necessário para reduzir a concentração à metade também é constante, não importa se a concentração de partida é alta ou baixa. A quantidade eliminada por hora muda (é maior quando a concentração é maior), mas o intervalo para cair pela metade não muda.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "meia-vida",
+        "cinetica-primeira-ordem"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-01-fc02",
+      "pergunta": "Um paciente inicia um fármaco com t½ de 8 horas, em doses repetidas a cada 8 horas. Aproximadamente quanto tempo leva até ele atingir o steady state, e a que porcentagem do platô ele chega depois de 3 meias-vidas?",
+      "resposta": "O steady state é considerado atingido depois de 4 a 5 meias-vidas, ou seja, entre 32 e 40 horas nesse caso. Depois de 3 meias-vidas (24 horas), a concentração média já alcançou cerca de 87,5% do valor de equilíbrio final — próxima, mas ainda clinicamente abaixo do platô considerado estável.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "meia-vida",
+        "steady-state"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-01-fc03",
+      "pergunta": "Dois fármacos têm o mesmo clearance, mas o Fármaco A tem Vd muito maior que o Fármaco B (por ser mais lipossolúvel e se acumular em gordura). O que se espera da meia-vida de A em relação à de B, e por que isso não significa que o fígado ou rim do paciente estejam eliminando pior o Fármaco A?",
+      "resposta": "Como t½ = 0,693 × Vd / clearance, e o clearance é igual para os dois, o Fármaco A terá meia-vida maior que o Fármaco B, proporcionalmente ao seu Vd maior. Isso não indica pior eliminação orgânica: o clearance (eficiência real do fígado/rim em depurar o sangue) é idêntico nos dois casos. O que muda é que o Fármaco A tem mais massa 'escondida' nos tecidos periféricos, exigindo mais ciclos de redistribuição para o sangue antes de ser eliminado — um problema de distribuição, não de função excretora.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "meia-vida",
+        "volume-de-distribuicao",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-01-fc04",
+      "pergunta": "A palavra 'meia-vida' foi emprestada de qual campo científico, e o que essa origem revela sobre a matemática que governa a eliminação de fármacos?",
+      "resposta": "Foi emprestada da física nuclear, onde descreve o decaimento radioativo (o tempo para metade dos átomos de uma amostra decair). A origem revela que ambos os fenômenos — decaimento atômico e eliminação de fármacos — seguem a mesma matemática exponencial de primeira ordem: uma fração constante do que resta desaparece por unidade de tempo. É a mesma equação por trás de um urânio decaindo e de um antibiótico sendo eliminado do sangue.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "meia-vida",
+        "etimologia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-01-fc05",
+      "pergunta": "Um paciente em uso crônico de um ansiolítico com t½ de 24 horas suspende o medicamento antes de uma cirurgia eletiva. Usando a regra de 4-5 meias-vidas, em quantos dias a equipe cirúrgica pode considerar o fármaco praticamente eliminado, e que ressalva clínica deve ser feita?",
+      "resposta": "Com t½ de 24 horas, 4 a 5 meias-vidas correspondem a 4-5 dias — nesse prazo, a concentração cai para cerca de 3 a 6% do valor inicial, considerado clinicamente 'eliminado'. A ressalva importante é que essa é uma aproximação: se o fármaco tiver metabólitos ativos com meia-vida própria, ou cinética não linear em uso crônico, o tempo real de ação residual pode ser maior do que a regra simples sugere — por isso a decisão final deve considerar também a farmacologia específica do fármaco, não só a regra genérica.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "meia-vida",
+        "washout",
+        "pre-operatorio"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-006-01-caso01",
+      "titulo": "Ajuste de intervalo de dose em antibiótico com meia-vida prolongada",
+      "apresentacao": "Paciente de 72 anos, internado por pneumonia, recebe prescrição inicial de um antibiótico com t½ normal de 4 horas em pacientes com função renal preservada, administrado a cada 6 horas. Exames mostram clearance de creatinina reduzido, compatível com insuficiência renal moderada. A farmácia clínica alerta que, nesse paciente, o t½ real estimado sobe para cerca de 12 horas, porque o fármaco é eliminado principalmente por via renal.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A função renal reduzida diminui o clearance do fármaco — a via de eliminação principal está comprometida, embora o volume de distribuição do paciente permaneça praticamente inalterado."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A relação matemática t½ = 0,693 × Vd / clearance é diretamente afetada: com Vd estável e clearance reduzido, o t½ calculado triplica, de 4 para 12 horas."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Se a prescrição original (a cada 6 horas) for mantida, uma nova dose chega antes que a anterior tenha caído significativamente — cada administração se soma à anterior, gerando acúmulo progressivo em vez de um perfil estável de picos e vales."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sem ajuste, o paciente evolui com sinais de acúmulo (nesse exemplo, hipotético e didático: sonolência excessiva e alterações laboratoriais compatíveis com concentração sérica acima do intervalo terapêutico)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A equipe reprograma o intervalo de dose para a cada 12 a 18 horas, com base no novo t½ estimado, evitando toxicidade sem sacrificar a eficácia — exatamente o raciocínio de que a meia-vida orienta o intervalo entre doses."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra dois pontos centrais: (1) o t½ não é uma constante fixa do fármaco — ele muda quando o clearance do paciente muda, o que reforça a equação t½ = 0,693 × Vd / clearance; (2) a regra prática de que o intervalo de dose deve acompanhar o t½ real do paciente, não o valor de bula obtido em população com função renal normal.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "nefrologia"
+      ],
+      "diagnostico_revelado": "Necessidade de ajuste de intervalo posológico por meia-vida prolongada secundária à redução do clearance renal.",
+      "tratamento_resumido": "Reprogramação do intervalo de dose com base no t½ estimado para a função renal do paciente, com monitorização clínica e, quando disponível, dosagem sérica para confirmar adequação."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-006-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "molecular"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics II: Distribution and Elimination of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

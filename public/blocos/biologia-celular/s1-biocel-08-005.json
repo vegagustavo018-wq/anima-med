@@ -1,54 +1,278 @@
 {
+  "metadata": {
+    "titulo": "Regulação Gênica em Eucariotos — Visão Geral",
+    "subtitulo": "Como uma única célula decide quais genes expressar para construir um organismo inteiro?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "expressao-genica",
+      "epigenetica",
+      "nucleo",
+      "dogma-central"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "Todas as células do seu corpo — de um neurônio a um hepatócito — carregam exatamente o mesmo genoma. A diferença entre elas não está no que possuem, mas no que decidem ler. A regulação gênica é o conjunto de mecanismos que permite a uma célula ler apenas uma fração de seu próprio manual de instruções completo, e ler frações diferentes conforme o momento e o tecido. Esse controle opera em múltiplas camadas sucessivas — desde o empacotamento físico da cromatina até a modificação da proteína já pronta — e cada camada é um ponto de checagem independente. Entender essa cascata de filtros é entender por que a diferenciação celular é possível sem que o DNA precise mudar uma única letra.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense numa orquestra sinfônica com cem músicos, cada um segurando a partitura completa da sinfonia inteira — todos os instrumentos, todos os movimentos, todas as quatro horas de música. Se todos tocassem tudo o que está escrito na frente deles, ao mesmo tempo, o resultado não seria música: seria ruído. Uma sinfonia só existe porque, a cada instante, apenas alguns músicos tocam, enquanto os demais aguardam em silêncio a sua entrada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma célula do seu corpo enfrenta o mesmo desafio. Um neurônio e um hepatócito compartilham a mesma partitura completa — o genoma inteiro, com cerca de 20 mil genes. Mas um neurônio não precisa das enzimas de metabolização de fármacos que o fígado produz em abundância, e o fígado não precisa dos canais iônicos especializados que fazem um neurônio disparar um potencial de ação. Se cada célula expressasse todo o seu genoma de uma vez, o custo metabólico seria proibitivo e, pior, não haveria identidade celular nenhuma — todas as células seriam quimicamente idênticas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, exatamente, essa necessidade de silêncio seletivo cria?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O desafio não é apenas ligar e desligar genes como um interruptor binário. É preciso um sistema que seja, ao mesmo tempo, seletivo (só os genes certos), graduado (nem todo gene precisa estar 100% ligado ou desligado — muitos precisam de níveis intermediários), reversível (uma célula-tronco precisa poder mudar de destino) e, em muitos casos, herdável através da divisão celular (para que a célula-filha 'lembre' quem era sua mãe). Nenhum mecanismo único resolveria as quatro exigências simultaneamente — por isso a célula não tem um único interruptor, mas uma cascata de vários pontos de controle sucessivos."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, segure esta ideia: regulação gênica não é ligar ou desligar um gene de uma vez. É uma série de filtros consecutivos, cada um capaz de amplificar, atenuar ou bloquear o sinal que vem do anterior — como uma cadeia de válvulas, não um único botão."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a natureza resolveu esse desafio de controle múltiplo?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi distribuir o controle ao longo de todo o trajeto que vai do DNA até a proteína funcional — não concentrar tudo em um único ponto. O primeiro filtro é físico: a cromatina pode estar condensada (heterocromatina, inacessível) ou relaxada (eucromatina, acessível), e só genes em regiões relaxadas podem sequer ser tentados pela maquinaria de transcrição. O segundo filtro decide, entre os genes fisicamente acessíveis, quais efetivamente serão transcritos — aqui entram os fatores de transcrição, proteínas que se ligam a sequências específicas do DNA e recrutam (ou bloqueiam) a RNA polimerase. O terceiro filtro atua depois que o RNA já foi produzido: o transcrito primário pode ser processado de formas diferentes (splicing alternativo), exportado do núcleo com velocidades diferentes, ou degradado antes mesmo de chegar ao citoplasma. E o quarto filtro age sobre a proteína já pronta: ela pode ser ativada, inativada, marcada para degradação ou redirecionada para outro compartimento, tudo sem tocar em um único gene."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito cada filtro — e por que essas peças específicas?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O filtro da cromatina depende das histonas — proteínas com forte carga positiva, que se ligam ao DNA carregado negativamente e podem ser quimicamente modificadas (acetiladas, metiladas) para afrouxar ou apertar esse abraço. O filtro transcricional depende de fatores de transcrição, proteínas com domínios de ligação ao DNA extremamente específicos, capazes de reconhecer sequências de poucos pares de bases em meio a bilhões. O filtro pós-transcricional depende do spliceossomo, uma máquina molecular de RNA e proteína que corta e recombina o transcrito primário. E o filtro pós-traducional depende de enzimas modificadoras (quinases, ubiquitina-ligases) que alteram a proteína já sintetizada. Cada peça foi selecionada pela evolução porque resolve uma etapa que nenhuma das outras três consegue resolver sozinha."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regulação gênica não é um interruptor de dois estados. É um gradiente de modulação em múltiplas camadas sucessivas — e cada camada mais próxima da proteína final permite uma resposta mais rápida (mas mais cara de manter continuamente), enquanto cada camada mais próxima do DNA permite uma resposta mais lenta, porém mais econômica e mais estável ao longo de gerações celulares."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em sequência"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "A cascata de decisão, do DNA à proteína funcional",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Acessibilidade da cromatina",
+          "explicacao": "O gene precisa estar em uma região de eucromatina — cromatina relaxada — para ser sequer candidato à transcrição. Se está compactado em heterocromatina, nenhuma das etapas seguintes acontece, não importa quantos fatores de transcrição estejam disponíveis no núcleo."
+        },
+        {
+          "numero": 2,
+          "titulo": "Recrutamento de fatores de transcrição",
+          "explicacao": "Fatores de transcrição específicos do tipo celular se ligam a sequências reguladoras (promotores, intensificadores) próximas ao gene, recrutando a RNA polimerase II e determinando a taxa de início da transcrição."
+        },
+        {
+          "numero": 3,
+          "titulo": "Processamento do transcrito primário",
+          "explicacao": "O RNA recém-transcrito passa por splicing, podendo gerar diferentes variantes de mRNA (splicing alternativo) a partir do mesmo gene, dependendo do tecido e do momento."
+        },
+        {
+          "numero": 4,
+          "titulo": "Exportação e estabilidade do mRNA",
+          "explicacao": "Nem todo mRNA processado sai do núcleo com a mesma velocidade, e nem todo mRNA que chega ao citoplasma tem a mesma meia-vida — moléculas reguladoras (como microRNAs) podem marcá-lo para degradação precoce."
+        },
+        {
+          "numero": 5,
+          "titulo": "Modificação pós-traducional da proteína",
+          "explicacao": "A proteína recém-sintetizada ainda pode ser ativada, inativada ou destruída por modificações químicas — o ponto de controle mais rápido e mais próximo da função final, útil para respostas urgentes a estímulos externos."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "eucarioto",
+      "origem": "do grego eu (verdadeiro, bom) + karyon (noz, núcleo)",
+      "significado": "literalmente, 'que tem núcleo verdadeiro'",
+      "explicacao": "O termo foi cunhado para distinguir células com núcleo delimitado por membrana das procariontes, que não o possuem. Essa membrana nuclear não é um detalhe anatômico incidental: ela é a base física que torna possível separar espacialmente a transcrição (dentro do núcleo) da tradução (no citoplasma) — um compartimento a mais de controle que os procariontes, sem membrana nuclear, simplesmente não têm à disposição."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a cascata inteira"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎬",
+      "conteudo": "Pense na regulação gênica como o processo de produção de um filme, do roteiro à exibição em cinema. O roteiro completo, guardado no cofre do estúdio, é o genoma inteiro — imutável, disponível, mas não usado por completo em nenhuma produção específica. A decisão de destravar o cofre para aquele projeto específico é a abertura da cromatina. A escolha de quais cenas do roteiro serão de fato filmadas hoje é o recrutamento dos fatores de transcrição. A edição do material bruto filmado — cortando tomadas, remontando a ordem das cenas — é o splicing do transcrito primário. E a decisão final sobre quando o filme editado estreia nos cinemas, e por quanto tempo fica em cartaz antes de ser retirado, é o controle da estabilidade do mRNA e da proteína final. Em cada uma dessas quatro etapas, uma decisão diferente pode mudar completamente o produto que chega ao público — mesmo que o roteiro original, trancado no cofre, nunca mude uma vírgula."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse sistema se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A regulação gênica depende diretamente da estrutura da cromatina e dos nucleossomos — sem entender como o DNA se enrola nas histonas, não há como entender o primeiro filtro da cascata. E ela se conecta adiante com a base molecular do câncer: tumores frequentemente surtem de uma desregulação em qualquer uma dessas quatro camadas — mutações em fatores de transcrição, hipermetilação anômala de genes supressores de tumor, splicing alternativo aberrante gerando proteínas oncogênicas, ou perda do controle de degradação proteica que deveria eliminar proteínas com função descontrolada."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a célula regulasse a expressão gênica apenas no nível da cromatina (abrir ou fechar genes), sem nenhum controle nas etapas seguintes — transcrição, processamento do RNA ou modificação da proteína —, o que se perderia?",
+      "resposta": "A célula perderia a capacidade de resposta rápida a estímulos ambientais. O controle da cromatina é poderoso, mas lento e de longo prazo — envolve remodelamento físico de grandes regiões do genoma, um processo que leva horas a dias. Se esse fosse o único ponto de controle, a célula não conseguiria, por exemplo, aumentar rapidamente a produção de uma enzima em resposta a um sinal hormonal que dura poucos minutos, nem desligar rapidamente uma via metabólica que se tornou perigosa. É exatamente a existência dos filtros pós-transcricional e pós-traducional — que agem em segundos a minutos — que dá à célula a agilidade que o controle da cromatina sozinho jamais poderia fornecer."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Os quatro filtros da regulação gênica eucariótica",
+      "descricao": "Diagrama vertical mostrando quatro estações sucessivas de controle: no topo, um segmento de cromatina alternando entre condensado (heterocromatina, cinza escuro) e relaxado (eucromatina, claro); em seguida, fatores de transcrição coloridos se ligando a uma região promotora do DNA relaxado; depois, uma molécula de mRNA sendo processada por um spliceossomo, com íntrons sendo removidos; por fim, uma proteína recém-sintetizada recebendo um grupo fosfato de uma quinase, mudando de conformação inativa para ativa. Setas verticais conectando as quatro estações, com rótulos em português indicando o nome de cada filtro. Fundo neutro adaptativo.",
+      "prompt_ia": "Vertical scientific diagram, transparent background, textbook illustration style. Four sequential stages from top to bottom: (1) chromatin segment alternating between condensed heterochromatin (dark, tightly wound) and open euchromatin (light, loosely wound); (2) transcription factors as colored protein shapes binding to a DNA promoter region with RNA polymerase approaching; (3) a pre-mRNA strand being processed by a spliceosome complex, introns being looped out and removed; (4) a folded protein receiving a phosphate group from a kinase enzyme, changing shape from inactive to active conformation. Connecting arrows between stages, portuguese labels for each stage, clean vector style, soft color palette, no photorealistic textures.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-08-005-fc01",
+      "pergunta": "Por que a regulação gênica é distribuída em múltiplas camadas sucessivas, em vez de concentrada em um único ponto de controle no início do processo?",
+      "resposta": "Porque cada camada resolve uma exigência diferente que as outras não conseguem. O controle da cromatina é econômico e estável ao longo de gerações celulares, mas lento demais para responder a estímulos rápidos. Já o controle pós-traducional é quase instantâneo, mas custoso de manter continuamente e não produz memória celular duradoura. Concentrar tudo em uma única camada obrigaria a célula a escolher entre economia, estabilidade e velocidade — a distribuição em quatro filtros permite obter as três propriedades ao mesmo tempo, cada uma resolvida pela camada mais adequada.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["regulacao-genica", "cromatina", "eficiencia"]
+    },
+    {
+      "card_id": "s1-biocel-08-005-fc02",
+      "pergunta": "Se uma mutação impedisse completamente a condensação da cromatina em uma célula, mantendo todo o genoma permanentemente em estado de eucromatina, o que aconteceria com a identidade dessa célula?",
+      "resposta": "A célula perderia sua capacidade de silenciar seletivamente genes desnecessários. Com todo o genoma fisicamente acessível o tempo todo, os demais filtros (fatores de transcrição, splicing, controle pós-traducional) ainda existiriam, mas perderiam sua principal função de restringir o acesso inicial — o resultado provável seria uma expressão gênica muito mais promíscua e descontrolada, com perda gradual da especialização celular e risco aumentado de transformação neoplásica, já que a repressão estável de oncogenes por heterocromatina é uma das primeiras linhas de defesa do genoma.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["cromatina", "neoplasia", "identidade-celular"]
+    },
+    {
+      "card_id": "s1-biocel-08-005-fc03",
+      "pergunta": "Verdadeiro ou falso, com justificativa: 'O controle transcricional e o controle pós-traducional servem essencialmente ao mesmo propósito, apenas em pontos diferentes da via — por isso uma célula poderia, em princípio, dispensar um dos dois sem perda funcional relevante.'",
+      "resposta": "Falso. Os dois filtros têm propósitos complementares, não redundantes. O controle transcricional decide se a informação sequer sairá do núcleo como mRNA — é econômico, porque poupa energia na fonte, mas lento, porque depende de todo o processo de transcrição e processamento de RNA. O controle pós-traducional atua sobre a proteína já pronta, permitindo ativação ou inativação em segundos, sem esperar nova síntese — é rápido, mas mantém o custo energético de já ter produzido a proteína. Dispensar o controle transcricional tornaria a célula incapaz de economizar recursos a longo prazo; dispensar o pós-traducional a tornaria incapaz de reagir rapidamente a estímulos súbitos. Um erro comum é achar que 'mais controle no início' torna o controle no fim desnecessário — na prática, a célula precisa dos dois, para escalas de tempo diferentes.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["transcricao", "pos-traducional", "comparacao"]
+    },
+    {
+      "card_id": "s1-biocel-08-005-fc04",
+      "pergunta": "Por que o splicing alternativo é considerado um nível de regulação gênica, e não apenas uma etapa técnica de 'edição' do RNA?",
+      "resposta": "Porque o splicing alternativo permite que um único gene dê origem a múltiplas variantes de proteína, dependendo de quais éxons são incluídos ou excluídos em cada tecido ou momento — a célula decide ativamente qual versão do produto final quer produzir a partir da mesma matéria-prima genética. Isso multiplica a diversidade funcional do proteoma sem exigir que o genoma tenha mais genes: em vez de um gene por proteína, um único gene pode originar dezenas de proteínas distintas, cada uma com função potencialmente diferente. Tratar isso como mera 'edição técnica' esconde que essa escolha é regulada, tecido-específica e sujeita a controle ativo — exatamente as características de um filtro de regulação gênica.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["splicing", "genomica", "diversidade-proteica"]
+    },
+    {
+      "card_id": "s1-biocel-08-005-fc05",
+      "pergunta": "Um tumor apresenta hiperexpressão constitutiva de um fator de crescimento, mas o sequenciamento não encontra nenhuma mutação no gene ou no seu promotor. Que outros dois níveis da cascata de regulação gênica poderiam explicar esse achado, e por quê?",
+      "resposta": "Dois níveis não-genéticos podem explicar hiperexpressão sem mutação no gene ou no promotor. Primeiro, uma alteração na cromatina — por exemplo, perda de metilação repressora em uma região reguladora distante (um intensificador), tornando esse gene permanentemente acessível mesmo sem mutação em sua própria sequência. Segundo, uma falha no controle pós-transcricional — por exemplo, perda de um microRNA que normalmente degradaria o mRNA desse fator de crescimento, permitindo que a proteína se acumule mesmo com uma taxa de transcrição normal. Esse caso ilustra por que a busca por 'a mutação' que explica um câncer às vezes precisa olhar além da sequência do próprio gene — a desregulação pode estar em qualquer um dos quatro filtros da cascata.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": ["cancer", "epigenetica", "microrna", "oncologia"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-08-005-caso01",
+      "titulo": "Criança de 6 anos com atraso de crescimento e face dismórfica característica",
+      "apresentacao": "Menina de 6 anos é levada ao geneticista por baixa estatura desproporcional, face triangular com testa proeminente, clinodactilia do quinto dedo e histórico de assimetria corporal leve desde o nascimento. Os pais relatam que ela nasceu pequena para a idade gestacional, apesar de gestação sem intercorrências relatadas. Cariótipo é normal (46,XX), sem deleções ou duplicações visíveis. Testes moleculares específicos revelam um padrão anômalo de metilação em uma região reguladora do cromossomo 11, envolvendo genes que normalmente são expressos de forma diferencial dependendo da origem parental do alelo.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Erro no estabelecimento ou na manutenção do padrão de metilação de uma região de imprinting genômico — um mecanismo epigenético que normalmente silencia seletivamente o alelo herdado de um dos pais, mantendo apenas o alelo do outro progenitor ativo naquele locus."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A camada de regulação gênica mais próxima do DNA — o primeiro filtro da cascata (acessibilidade da cromatina via metilação) — em uma região específica do cromossomo 11 que contém genes de crescimento sujeitos a imprinting parental."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem o padrão correto de metilação, a dosagem gênica normal desses genes de crescimento fica alterada — em vez de um alelo ativo e um silenciado, ambos podem ficar silenciados, ou ambos ativos, dependendo da direção do erro epigenético, alterando a produção de fatores essenciais ao crescimento fetal e pós-natal."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Restrição de crescimento intrauterino e pós-natal, assimetria corporal, e um conjunto característico de achados faciais — sinais clínicos reconhecíveis mesmo sem alteração cromossômica estrutural detectável no cariótipo convencional."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Síndrome de crescimento de origem epigenética, com necessidade de acompanhamento endocrinológico para monitorar crescimento e desenvolvimento, além de vigilância para complicações associadas descritas na síndrome. O diagnóstico correto depende de testes moleculares específicos de metilação, não de cariótipo isolado."
+        }
+      ],
+      "conexao_com_bloco": "O caso demonstra que uma doença genética pode existir sem nenhuma mutação na sequência de DNA — o defeito está inteiramente no primeiro filtro da cascata de regulação gênica discutida neste bloco, a acessibilidade da cromatina via metilação. É a prova clínica mais direta de que 'regular a expressão' é tão determinante para a saúde quanto 'ter o gene correto'.",
+      "disciplinas_relacionadas": ["biologia celular", "genetica medica", "pediatria", "endocrinologia"],
+      "diagnostico_revelado": "Síndrome de crescimento por distúrbio de imprinting genômico (padrão compatível com síndrome de Silver-Russell).",
+      "tratamento_resumido": "Sem correção etiológica possível; acompanhamento multidisciplinar com suporte nutricional, avaliação endocrinológica para eventual terapia com hormônio de crescimento conforme protocolo específico, e vigilância do desenvolvimento neuropsicomotor."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-08-001",
+        "titulo": "DNA — Estrutura e Replicação — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A regulação gênica começa no controle da estrutura física do DNA; sem entender a dupla hélice e o empacotamento em nucleossomos, não se entende o primeiro filtro da cascata regulatória."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "topico": "Câncer e desregulação da expressão gênica",
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Mutações ou alterações epigenéticas em qualquer um dos quatro filtros de regulação gênica podem levar à proliferação celular descontrolada.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "topico": "Síndromes de imprinting genômico",
+        "disciplina": "genetica medica",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Erros no padrão de metilação parental de genes específicos produzem síndromes clínicas reconhecíveis mesmo sem mutação na sequência de DNA.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "topico": "Terapias epigenéticas (inibidores de metiltransferase e de desacetilase)",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "Fármacos que atuam sobre o primeiro filtro da cascata (cromatina) já são usados em hematologia e oncologia para reverter silenciamentos anômalos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-08-006",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "A epigenética é o detalhamento do primeiro filtro desta cascata — o controle via cromatina e metilação — descrito aqui apenas em visão geral."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-08-005",
   "no_pai_id": "s1-biocel-08-000",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Regulação Gênica em Eucariotos — Visão Geral",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Camadas de controle da expressão, do DNA à proteína",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "fisiologia"
-  ]
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

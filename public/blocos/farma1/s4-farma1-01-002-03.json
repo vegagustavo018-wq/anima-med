@@ -5,50 +5,127 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Fatores que Alteram a Absorção",
+    "subtitulo": "Por que o mesmo comprimido, tomado antes ou depois do almoço, pode salvar ou falhar em tratar o paciente?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "farma1",
-      "esqueleto"
-    ],
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "versao": "1.0",
+    "tags": ["farma1", "farmacocinetica", "absorcao", "biodisponibilidade", "clinica", "core"],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Fluxo sanguíneo, área de superfície, motilidade, alimento, formulação",
-  "narrativa": [],
+  "resumo_conciso": "Duas doses idênticas do mesmo fármaco, na mesma via oral, podem produzir concentrações plasmáticas completamente diferentes em dois pacientes — ou no mesmo paciente em dois momentos do dia. O problema que este bloco resolve é entender por que isso acontece: a absorção não depende só da dose e da via, mas de um conjunto de variáveis fisiológicas e farmacotécnicas que podem acelerar, atrasar ou reduzir a quantidade de fármaco que efetivamente chega à circulação sistêmica. A solução é mapear cinco fatores modificadores que atuam em pontos distintos do trajeto do fármaco: o fluxo sanguíneo no sítio de absorção (que determina a rapidez com que o gradiente de concentração é mantido), a área de superfície disponível para difusão (que determina quantas moléculas conseguem atravessar por unidade de tempo), a motilidade do trato gastrintestinal (que determina quanto tempo o fármaco fica em contato com a superfície absortiva certa), a presença de alimento no estômago e intestino (que pode ligar-se ao fármaco, alterar o pH ou competir pela absorção) e a formulação farmacêutica (que determina a velocidade de desintegração e dissolução antes mesmo de a molécula livre existir para se difundir). Cada um desses fatores tem mecanismo próprio, mas todos convergem para o mesmo desfecho farmacocinético: alterar a velocidade e, por vezes, a extensão da absorção — o que se traduz clinicamente em início de efeito mais lento ou mais rápido, pico plasmático mais baixo ou mais alto, e em casos extremos, falha terapêutica ou toxicidade. Reconhecer esses fatores é o que permite ao futuro médico orientar corretamente o horário de tomada de um medicamento e antecipar por que a resposta clínica varia entre pacientes aparentemente idênticos.",
+  "narrativa": [
+    {"tipo": "texto", "conteudo": "Dois pacientes recebem a mesma dose oral do mesmo comprimido. Um toma em jejum, de estômago vazio; o outro toma logo após uma refeição gordurosa. Horas depois, o primeiro já sente o efeito analgésico pleno; o segundo ainda está esperando. Nenhum dos dois recebeu dose diferente, nenhuma bula foi desrespeitada — e ainda assim as concentrações plasmáticas dos dois, medidas no mesmo instante, podem diferir em múltiplos de vezes."},
+    {"tipo": "texto", "conteudo": "Esse tipo de variação não é acidente nem exceção rara: é a regra. A via oral, a mais usada na prática clínica, é também a mais vulnerável a interferências, porque o fármaco precisa atravessar um ambiente fisiológico cheio de variáveis antes de alcançar a circulação sistêmica. O problema real que a farmacologia precisa resolver aqui não é 'o fármaco absorve ou não absorve' — é entender quais variáveis aceleram, atrasam ou reduzem essa absorção, para que o médico consiga prever, e até corrigir, a resposta terapêutica."},
+    {"tipo": "secao", "titulo": "Como se controla algo que acontece dentro do corpo de outra pessoa"},
+    {"tipo": "texto", "conteudo": "A solução não é uma variável única, mas um conjunto de pontos de controle espalhados ao longo de todo o trajeto do fármaco — desde o momento em que o comprimido é engolido até o momento em que a molécula ativa atravessa a mucosa intestinal. Cada ponto desse trajeto pode ser acelerado ou desacelerado por uma condição fisiológica ou por uma escolha farmacotécnica."},
+    {"tipo": "texto", "conteudo": "Pense nesse trajeto como uma linha de produção com cinco estações de controle de velocidade, na ordem em que o fármaco realmente as encontra: primeiro quanto sangue está disponível para 'carregar' o fármaco assim que ele atravessa a mucosa; segundo, quanta área de superfície está exposta para a difusão acontecer; terceiro, quanto tempo o conteúdo intestinal permanece em contato com essa superfície; quarto, o que mais está presente no lúmen competindo com o fármaco; e quinto, em que forma física o fármaco foi entregue antes mesmo de começar a se dissolver."},
+    {"tipo": "pausa", "conteudo": "Pausa para fixar antes de seguir: a absorção não é uma propriedade fixa do fármaco. É o resultado de uma equação com pelo menos cinco variáveis fisiológicas e farmacotécnicas, e mudar qualquer uma delas muda a curva de concentração plasmática — mesmo mantendo a dose exatamente igual."},
+    {"tipo": "secao", "titulo": "Por dentro dos cinco fatores: onde e como cada um age"},
+    {"tipo": "texto", "conteudo": "O fluxo sanguíneo no sítio de absorção é o volume de sangue que passa pelos capilares da submucosa gastrintestinal (ou do músculo, na injeção intramuscular) por unidade de tempo. Esse fluxo funciona como o 'sink' do sistema: ao remover continuamente o fármaco já absorvido para a circulação, ele mantém baixa a concentração no lado sanguíneo da membrana e preserva o gradiente de concentração que sustenta a difusão passiva. O sistema nervoso simpático pode desviar sangue do território esplâncnico em estresse, choque ou exercício intenso — quando o fluxo cai, o gradiente satura, o 'sink' deixa de funcionar e a absorção desacelera mesmo que a membrana continue igualmente permeável."},
+    {"tipo": "texto", "conteudo": "Mas de nada adianta um bom gradiente se faltar área de contato: a área de superfície é a extensão física de membrana absortiva disponível. No intestino delgado, ela é enorme — as vilosidades e microvilosidades dos enterócitos multiplicam a área total para uma cifra estimada classicamente em torno de 200 metros quadrados (o equivalente a uma quadra de tênis), embora reavaliações metodológicas mais recentes sugiram valores bem menores, da ordem de 30 metros quadrados; o número exato é debatido na literatura, mas a conclusão qualitativa não muda — é por isso que o intestino delgado, mesmo não sendo o estômago, é o principal sítio de absorção da maioria dos fármacos orais: não é o pH que decide, é a área disponível."},
+    {"tipo": "texto", "conteudo": "Só que essa área enorme só importa se o conteúdo intestinal permanecer tempo suficiente em contato com ela — o que nos leva ao terceiro fator: a motilidade gastrintestinal, os movimentos peristálticos que empurram o conteúdo do estômago para o duodeno e ao longo do intestino, determinando o tempo de esvaziamento gástrico e o tempo de trânsito intestinal. Ela é modulada por hormônios (motilina, colecistocinina), pelo sistema nervoso entérico e por fármacos com ação direta sobre a motilidade, como opioides (que a retardam) ou procinéticos como a metoclopramida (que a aceleram)."},
+    {"tipo": "texto", "conteudo": "Enquanto o conteúdo transita, ele raramente está sozinho: o alimento no lúmen gastrintestinal não é um fator único, mas um conjunto de interferências possíveis. Pode formar complexos insolúveis com o fármaco (como o cálcio do leite quelando tetraciclinas), pode retardar o esvaziamento gástrico (atrasando a chegada ao intestino delgado), pode estimular secreção biliar (aumentando a solubilização de fármacos lipofílicos) ou pode competir por transportadores específicos da mucosa intestinal — o efeito é sempre fármaco-dependente, nunca uma regra universal de 'melhora' ou 'piora'."},
+    {"tipo": "texto", "conteudo": "E antes de qualquer um desses quatro fatores importar, o fármaco precisa primeiro deixar de ser um sólido: a formulação farmacêutica é a forma física e química com que ele é entregue — comprimido revestido, cápsula de liberação prolongada, suspensão líquida, forma cristalina versus amorfa do princípio ativo. Cada uma dessas formas exige um tempo diferente de desintegração e dissolução antes de liberar moléculas livres capazes de se difundir através da mucosa."},
+    {"tipo": "highlight", "conteudo": "Regra crítica: para um fármaco administrado por via oral em forma sólida, a dissolução costuma ser a etapa limitante de velocidade da absorção — não a passagem pela membrana. Por isso a formulação farmacêutica tem, na prática clínica, tanto peso quanto qualquer fator fisiológico do paciente."},
+    {"tipo": "secao", "titulo": "Como cada fator funciona, em movimento"},
+    {"tipo": "texto", "conteudo": "Tome o exemplo mais didático: um comprimido tomado junto com uma refeição rica em gordura."},
+    {"tipo": "passo_a_passo", "titulo": "Como o alimento atrasa e reduz a absorção de um fármaco sensível a refeição", "passos": [
+      {"numero": 1, "titulo": "Chegada ao estômago cheio", "explicacao": "O comprimido chega a um estômago que já contém alimento. A presença de gordura estimula a liberação de colecistocinina — hormônio cujo nome vem do grego chole (bile) + kystis (bexiga) + kinein (mover), literalmente 'que move a vesícula biliar' — que também retarda o esvaziamento gástrico: o comprimido fica retido no estômago por mais tempo do que ficaria em jejum."},
+      {"numero": 2, "titulo": "Desintegração competindo com o conteúdo alimentar", "explicacao": "Enquanto está retido, o comprimido começa a se desintegrar em meio a um bolo alimentar denso. Proteínas e fibras do alimento podem se ligar fisicamente ao fármaco ou retardar o contato entre a superfície do comprimido e o suco gástrico, atrasando a dissolução."},
+      {"numero": 3, "titulo": "Chegada tardia e diluída ao intestino delgado", "explicacao": "Quando finalmente o conteúdo gástrico é liberado para o duodeno, o fármaco chega em menor concentração livre e mais tarde do que chegaria em jejum — a grande área de superfície intestinal, que seria o local ideal de absorção rápida, é alcançada com atraso."},
+      {"numero": 4, "titulo": "Pico plasmático mais baixo e mais tardio", "explicacao": "O resultado mensurável é uma curva de concentração plasmática com Tmáx (tempo até a concentração máxima) mais tardio e Cmáx (a própria concentração máxima) mais baixo. Em alguns fármacos a área sob a curva (AUC, medida da quantidade total absorvida) também cai, configurando perda real de biodisponibilidade; em outros, o efeito é apenas um atraso, com a AUC final praticamente preservada — o desfecho depende das propriedades específicas de cada molécula, e é exatamente por isso que estudos de bioequivalência avaliam esse efeito caso a caso."}
+    ]},
+    {"tipo": "texto", "conteudo": "É esse tipo de mecanismo — não uma regra genérica de bula, mas uma cascata fisiológica específica — que explica por que algumas prescrições trazem a orientação 'tomar em jejum' ou 'tomar junto com as refeições': a orientação existe porque um ou mais desses cinco fatores foi estudado experimentalmente para aquele fármaco específico."},
+    {"tipo": "secao", "titulo": "Com o que esses fatores se articulam"},
+    {"tipo": "texto", "conteudo": "Esses cinco fatores não atuam isoladamente da farmacocinética que vem depois: uma absorção mais lenta ou incompleta muda diretamente a biodisponibilidade (F), a fração da dose administrada que efetivamente alcança a circulação sistêmica inalterada — conceito que se conecta ao efeito de primeira passagem hepática estudado em outros blocos deste mesmo bloco-pai. Também se conecta à escolha da via de administração: quando a absorção oral é considerada demasiado errática (por exemplo, em um paciente em choque, com fluxo esplâncnico reduzido), o médico pode optar por via intravenosa, que dispensa completamente a etapa de absorção."},
+    {"tipo": "texto", "conteudo": "Do ponto de vista clínico, esses fatores explicam também variações interindividuais importantes: pacientes com gastroparesia diabética têm motilidade gastrintestinal alterada e absorção imprevisível de fármacos orais; pacientes em pós-operatório de cirurgia bariátrica têm área de superfície absortiva reduzida por ressecção ou desvio intestinal; pacientes em choque séptico têm fluxo esplâncnico redistribuído para órgãos nobres, comprometendo a absorção de fármacos administrados por via intramuscular ou subcutânea — motivo pelo qual, nesses pacientes, prefere-se a via intravenosa."},
+    {"tipo": "secao", "titulo": "Uma analogia para fixar os cinco fatores juntos"},
+    {"tipo": "analogia", "icone": "🚚", "conteudo": "Pense numa transportadora que precisa levar mercadoria (o fármaco) de um depósito (o lúmen intestinal) até o centro da cidade (a circulação sistêmica). O fluxo sanguíneo é a frota de caminhões que constantemente retira a mercadoria já entregue na doca, mantendo espaço livre para novas remessas continuarem chegando — sem caminhões suficientes, a doca engarrafa e a entrega para de acontecer mesmo com a porta aberta. A área de superfície é o tamanho da doca de carregamento — uma doca do tamanho de uma quadra de tênis carrega muito mais rápido que uma portinha estreita. A motilidade é a esteira rolante que movimenta a mercadoria dentro do depósito — rápida demais, a mercadoria passa pela doca certa antes de ser carregada; lenta demais, ela fica represada em corredores errados. O alimento é outra carga sendo processada ao mesmo tempo na mesma esteira, que pode bloquear fisicamente ou atrasar a mercadoria do fármaco. A formulação é a embalagem em que a mercadoria chega — uma caixa lacrada precisa ser aberta (dissolvida) antes de qualquer coisa acontecer, e caixas diferentes abrem em velocidades diferentes. A analogia quebra num ponto: na transportadora real, esses fatores podem ser otimizados de forma independente; no corpo, eles interagem entre si constantemente — o alimento muda a motilidade, que muda o tempo de exposição à área de superfície, por exemplo."},
+    {"tipo": "secao", "titulo": "Implicação clínica direta"},
+    {"tipo": "texto", "conteudo": "Esses cinco fatores são, na prática, a base racional por trás de orientações posológicas que parecem arbitrárias ao estudante, mas não são: por que um antibiótico deve ser tomado em jejum, por que um anti-hipertensivo é reformulado em liberação prolongada, por que um paciente em pós-operatório de bypass gástrico pode precisar de ajuste de dose ou troca de via. Reconhecer o fator específico em jogo é o que transforma uma orientação decorada em uma decisão clínica justificável."},
+    {"tipo": "imagem", "titulo": "Os cinco fatores que alteram a absorção intestinal de um fármaco", "descricao": "Esquema didático em corte transversal do intestino delgado mostrando, ao centro, um comprimido se desintegrando no lúmen. Ao redor, cinco setas numeradas apontando para cada fator: (1) uma seta apontando para um capilar na submucosa, rotulada 'fluxo sanguíneo'; (2) uma ampliação de vilosidades e microvilosidades rotulada 'área de superfície'; (3) uma seta ondulada ao longo do tubo intestinal representando peristaltismo, rotulada 'motilidade'; (4) partículas de alimento próximas ao comprimido, rotuladas 'alimento — interação/competição'; (5) o comprimido em corte mostrando camadas de revestimento se dissolvendo, rotulado 'formulação — dissolução'. Gráfico pequeno no canto inferior mostrando duas curvas de concentração plasmática versus tempo, uma com pico alto e precoce (linha contínua) e outra com pico baixo e tardio (linha tracejada), ilustrando o efeito somado desses fatores. Fundo neutro adaptável ao tema do app.", "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Corte transversal esquemático de um segmento de intestino delgado com lúmen central contendo um comprimido em processo de desintegração (camadas concêntricas parcialmente dissolvidas). Cinco setas numeradas de 1 a 5 apontando para elementos distintos: seta 1 aponta para um capilar sanguíneo na submucosa com hemácias estilizadas, rótulo 'FLUXO SANGUÍNEO'; seta 2 aponta para uma ampliação circular de vilosidades e microvilosidades intestinais, rótulo 'ÁREA DE SUPERFÍCIE'; seta 3 acompanha uma linha ondulada ao longo da parede intestinal representando ondas peristálticas, rótulo 'MOTILIDADE'; seta 4 aponta para pequenas partículas irregulares de alimento próximas ao comprimido, rótulo 'ALIMENTO'; seta 5 aponta para o próprio comprimido em corte, rótulo 'FORMULAÇÃO'. No canto inferior direito, um pequeno gráfico cartesiano simples com eixo X 'tempo' e eixo Y 'concentração plasmática', mostrando duas curvas: uma alta e precoce (linha sólida azul) e outra baixa e tardia (linha tracejada laranja). Legendas em português, cores suaves e didáticas, alto contraste, sem elementos fotorrealistas, sem marcas comerciais."}
+  ],
+  "flashcards": [
+    {"card_id": "s4-farma1-01-002-03-fc01", "pergunta": "Por que o intestino delgado, e não o estômago, é o principal sítio de absorção da maioria dos fármacos administrados por via oral, mesmo quando o pH gástrico seria favorável à forma não ionizada do fármaco?", "resposta": "Porque a área de superfície disponível para difusão no intestino delgado é ordens de grandeza maior que a do estômago — as vilosidades e microvilosidades dos enterócitos multiplicam a área absortiva para uma cifra estimada entre 30 e 200 metros quadrados, a depender do método de medição. Mesmo que o pH gástrico favoreça a forma não ionizada de certos fármacos ácidos (o que também depende do pKa específico de cada molécula), a quantidade absoluta de membrana disponível no intestino compensa e supera essa vantagem de ionização. A regra prática é: área de superfície tende a dominar sobre pH na determinação do sítio principal de absorção.", "tipo": "por_que", "dificuldade": 3, "nivel_alvo": 4, "tags": ["farma1", "absorcao", "area-superficie"]},
+    {"card_id": "s4-farma1-01-002-03-fc02", "pergunta": "Um paciente em choque séptico recebe um fármaco por via intramuscular, mas a resposta terapêutica não aparece no tempo esperado. Qual fator entre os que alteram a absorção explica esse achado, e qual seria a conduta racional?", "resposta": "O fluxo sanguíneo no sítio de absorção está comprometido: no choque séptico, há redistribuição do débito cardíaco para órgãos nobres (cérebro, coração), reduzindo a perfusão de território muscular e esplâncnico. Isso retarda — e pode até impedir — que o fármaco absorvido pela membrana chegue à circulação sistêmica, porque falta fluxo para 'carregá-lo' para longe do sítio de injeção. A conduta racional é evitar vias que dependam de perfusão periférica (intramuscular, subcutânea, oral) e usar a via intravenosa, que dispensa completamente a etapa de absorção. (Este raciocínio é uma extrapolação lógica do princípio geral de fluxo-dependência da absorção para o cenário de choque séptico, e não uma citação literal das fontes referenciadas.)", "tipo": "clinico", "dificuldade": 4, "nivel_alvo": 4, "tags": ["farma1", "absorcao", "fluxo-sanguineo", "choque"]},
+    {"card_id": "s4-farma1-01-002-03-fc03", "pergunta": "Por que, para muitos fármacos sólidos administrados por via oral, a dissolução é considerada a etapa limitante de velocidade da absorção, e não a passagem pela membrana intestinal?", "resposta": "Porque antes de qualquer molécula poder se difundir através da mucosa intestinal, ela precisa existir em forma livre e dissolvida no fluido luminal — um comprimido intacto ou uma partícula ainda sólida não atravessa membrana nenhuma. Quando a etapa de desintegração e dissolução é mais lenta que a capacidade de difusão através da membrana (que é rápida, dada a enorme área de superfície intestinal), o gargalo do processo passa a ser a liberação de moléculas livres, não o transporte transmembrana. Por isso a formulação farmacêutica — forma cristalina, revestimento, tamanho de partícula — tem impacto tão grande na velocidade de absorção quanto fatores fisiológicos do paciente.", "tipo": "mecanismo", "dificuldade": 3, "nivel_alvo": 4, "tags": ["farma1", "absorcao", "formulacao", "dissolucao"]},
+    {"card_id": "s4-farma1-01-002-03-fc04", "pergunta": "Um estudante conclui que todo remédio deve ser tomado em jejum para absorver melhor. Onde está o erro desse raciocínio?", "resposta": "O erro é tratar o efeito do alimento como uma regra universal. O impacto do alimento depende do mecanismo específico e do fármaco em questão: alimento pode reduzir a absorção (formando complexos insolúveis, como cálcio quelando tetraciclinas, ou retardando o esvaziamento gástrico), mas também pode aumentar a absorção de fármacos lipofílicos ao estimular secreção biliar, que solubiliza essas moléculas. A orientação 'tomar em jejum' ou 'tomar com alimento' não é uma regra geral — é específica para cada fármaco, determinada por estudos de biodisponibilidade que identificam qual dos cinco fatores modificadores predomina naquele caso.", "tipo": "armadilha", "dificuldade": 3, "nivel_alvo": 4, "tags": ["farma1", "absorcao", "alimento", "armadilha-conceitual"]}
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-002-03-caso01",
+      "titulo": "Infecção que não melhora apesar de antibiótico 'tomado certinho'",
+      "apresentacao": "Mulher de 32 anos está em tratamento de uma infecção de pele com doxiciclina oral há cinco dias, mas retorna à consulta sem melhora dos sintomas — ainda com eritema e dor local. Relata que tem tomado o antibiótico rigorosamente duas vezes ao dia, sempre junto com um copo grande de leite, porque 'o remédio irrita o estômago' e o leite ajuda a evitar o desconforto. Nega falta de doses. O exame confirma persistência do quadro infeccioso sem sinais de resistência bacteriana conhecida ao antibiótico prescrito.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ingestão sistemática da doxiciclina junto com leite, uma fonte rica em cálcio, a cada dose do medicamento."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "As tetraciclinas, classe à qual a doxiciclina pertence, formam complexos de quelação estáveis e insolúveis com cátions divalentes como o cálcio presente no leite, diretamente no lúmen intestinal, antes mesmo de a molécula ter chance de se dissolver livremente e se difundir através da mucosa."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O fármaco quelado ao cálcio se torna uma molécula grande, insolúvel e incapaz de atravessar a membrana intestinal por difusão passiva ou qualquer outro mecanismo de transporte. Esse complexo é eliminado nas fezes sem nunca ter sido absorvido — o fator 'alimento' descrito no bloco reduzindo drasticamente a absorção, e não por competição de motilidade, mas por interação físico-química direta com o próprio fármaco."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Persistência clínica da infecção apesar da adesão correta ao horário e à dose prescrita — porque a concentração plasmática do antibiótico nunca atingiu o nível terapêutico necessário para combater a bactéria, mesmo com todas as doses corretamente ingeridas."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem correção da orientação posológica, a infecção pode progredir e, em tese, favorecer seleção de resistência bacteriana por exposição subterapêutica prolongada. A conduta correta é orientar a paciente a tomar a doxiciclina longe de laticínios e de outros suplementos ricos em cálcio, ferro ou magnésio (ao menos duas horas antes ou seis horas depois), permitindo que o fármaco se dissolva e seja absorvido livre de quelação."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra, de forma concreta, o fator 'alimento no lúmen gastrintestinal' descrito no bloco como um dos cinco modificadores da absorção — especificamente o mecanismo de formação de complexos insolúveis entre fármaco e componente alimentar, citado no próprio texto do bloco como exemplo do cálcio do leite quelando tetraciclinas. Mostra por que a orientação posológica de horário em relação às refeições não é burocracia de bula, mas decisão farmacocinética com consequência terapêutica real.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "infectologia",
+        "clinica_medica",
+        "saude_coletiva"
+      ],
+      "diagnostico_revelado": "Falha terapêutica por redução da absorção de doxiciclina devido à quelação com cálcio do leite ingerido concomitantemente.",
+      "tratamento_resumido": "Reorientação posológica para administrar a doxiciclina distante de laticínios e de suplementos de cálcio, ferro ou magnésio (intervalo mínimo de duas horas antes ou seis horas depois), com reavaliação clínica da resposta à infecção após o ajuste."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {"bloco_id": "s4-farma1-01-002", "titulo": "Absorção de Fármacos — Conceito e Mecanismos de Transporte", "disciplina": "Farmacologia I — Princípios Gerais", "semestre": 4, "relevancia": "base_necessaria", "explicacao": "Para entender o que altera a absorção, é preciso já ter visto o que é absorção e como as moléculas atravessam a membrana (difusão passiva, transporte mediado por carreador) — este bloco assume esse mecanismo de base como conhecido."},
+      {"bloco_id": "s1-hist-02-001", "titulo": "Tecido Epitelial — Visão Geral", "disciplina": "histologia", "semestre": 1, "relevancia": "contexto_util", "explicacao": "A área de superfície e a polaridade do epitélio intestinal, vistas em Histologia, são a base estrutural que explica por que a área de superfície é um fator tão determinante na absorção farmacológica."}
+    ],
+    "futuras": [
+      {"tipo": "MECANISMO_COMPARTILHADO", "bloco_id_destino": null, "disciplina": "farmacologia", "semestre_futuro": 4, "topico": "Biodisponibilidade e efeito de primeira passagem hepática", "mecanismo_conexao": "Os fatores que alteram a velocidade e extensão da absorção alimentam diretamente o cálculo de biodisponibilidade (F): uma absorção incompleta reduz F independentemente do metabolismo hepático de primeira passagem, e os dois efeitos se somam.", "confianca": "hipotese_pedagogica"},
+      {"tipo": "CASCATA_CAUSAL", "bloco_id_destino": null, "disciplina": "clinica", "semestre_futuro": 5, "topico": "Ajuste posológico em pós-operatório de cirurgia bariátrica", "mecanismo_conexao": "A redução da área de superfície absortiva por ressecção ou desvio intestinal (bypass gástrico) é uma aplicação direta e concreta do fator 'área de superfície' descrito aqui, com consequência prática na escolha de via e dose de medicamentos crônicos.", "confianca": "hipotese_pedagogica"}
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {"id": "s4-farma1-01-002-03-img01", "url": null, "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.", "status": "pendente"}
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "workflow-anima-s4-pipeline",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "3-juizes+adversarial+integrador (pipeline automatizado ANIMA)",
+    "data_revisao": "2026-07-05",
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "clinica"
-  ]
+  "fontes": [
+    {"tipo": "livro", "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw-Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, and Elimination.", "forca_evidencia": "A", "data_acesso": "2026-07-05"},
+    {"tipo": "livro", "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Chapter 1 — Introduction: The Nature of Drugs and Drug Development.", "forca_evidencia": "A", "data_acesso": "2026-07-05"},
+    {"tipo": "artigo", "citacao": "Helander HF, Fändriks L. Surface area of the digestive tract - revisited. Scand J Gastroenterol. 2014;49(6):681-689.", "forca_evidencia": "B", "data_acesso": "2026-07-05"}
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

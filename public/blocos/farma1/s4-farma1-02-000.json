@@ -13,51 +13,376 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Farmacodinâmica — O Que o Fármaco Faz ao Corpo (Visão Geral)",
+    "subtitulo": "O fármaco já chegou ao alvo. E agora, o que acontece?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 1,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "receptor",
+      "mecanismo-de-acao",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Interação fármaco-alvo gera efeito; da ligação molecular à resposta clínica",
-  "narrativa": [],
+  "resumo_conciso": "Depois que o fármaco percorre o corpo e alcança seu destino — o problema que a farmacocinética resolve — resta a pergunta mais importante de todas: o que ele faz ali? A farmacodinâmica é o estudo dessa segunda etapa: como a presença de uma molécula estranha, em concentração minúscula, é capaz de mudar o comportamento de uma célula, de um órgão, de um sistema inteiro. A resposta geral é que o fármaco não empurra nem força nada — ele se encaixa numa proteína específica do corpo, o receptor, e esse encaixe dispara uma cascata que a célula já sabia fazer sozinha. O fármaco não inventa uma função nova; ele liga ou desliga um interruptor que o corpo já tinha instalado. Esse princípio — ligação molecular específica gerando efeito biológico amplificado — é o fio condutor que atravessa tudo o que vem a seguir: como são feitos os receptores, como se mede a força dessa interação, o que diferencia um fármaco que ativa de um que bloqueia, por que dois fármacos podem ter a mesma eficácia com potências diferentes, onde fica a margem entre o efeito desejado e o dano, o que acontece quando o corpo se acostuma com a exposição repetida, e como um segundo fármaco pode interferir em toda essa cadeia. Nada disso é aprofundado aqui — esta é a lógica panorâmica que dá sentido a cada peça isolada.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já viu, no bloco anterior, que o corpo trata todo fármaco como uma substância estranha e trabalha ativamente para absorvê-lo, distribuí-lo, transformá-lo e eliminá-lo — a farmacocinética, a jornada. Mas a jornada não é o objetivo. Ela é meio, não fim. Um fármaco pode percorrer perfeitamente o corpo, chegar intacto e em concentração adequada ao órgão-alvo, e mesmo assim a pergunta central da farmacologia continua em aberto: o que ele faz quando chega lá?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa é uma pergunta genuinamente difícil, porque a resposta óbvia — 'o fármaco força a célula a fazer algo' — está errada. Uma célula não é uma máquina passiva que qualquer substância externa consegue operar por conta própria. Ela é extremamente seletiva sobre o que reconhece e o que ignora. Um analgésico opioide em picomoles por litro consegue silenciar uma via de dor inteira; um copo de água, em quantidade mil vezes maior, não muda em nada a fisiologia neuronal. Volume e concentração não bastam para explicar potência. Precisa haver algo mais específico acontecendo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema real: como uma molécula pequena muda o comportamento de uma célula inteira?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema que a farmacodinâmica resolve é este: explicar como uma quantidade minúscula de uma substância externa consegue produzir um efeito biológico mensurável, reprodutível e proporcional. Não é mágica, e não é força bruta. É reconhecimento molecular — o fármaco precisa ser reconhecido por algo que já existia na célula antes dele chegar."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: a farmacodinâmica não pergunta 'onde o fármaco vai parar no corpo' (isso é farmacocinética). Ela pergunta 'o que acontece na célula quando o fármaco encontra seu alvo'. É uma pergunta de mecanismo, não de trajeto."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: o corpo já tem os interruptores, o fármaco só aciona"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução que a biologia adotou — e que a farmacologia apenas descreve — é que toda célula já vem equipada com um conjunto de proteínas especializadas em reconhecer sinais químicos específicos. Essas proteínas são os receptores. Elas existem havia muito antes de qualquer fármaco sintético: evoluíram para reconhecer neurotransmissores, hormônios, íons e outras moléculas endógenas. Um fármaco eficaz não cria uma via nova na célula. Ele encontra uma dessas proteínas já existentes e se encaixa nela, como uma chave que serve numa fechadura que já estava instalada na porta."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa ideia resolve o paradoxo da quantidade pequena. Não é a molécula do fármaco que produz o efeito diretamente — é a maquinaria celular inteira, já pronta e amplificadora, que o fármaco apenas destrava. Uma única molécula de agonista pode ativar um receptor que, por sua vez, ativa centenas de proteínas G, que ativam milhares de moléculas de segundo mensageiro. O fármaco é o gatilho; a célula é a arma."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que depende essa interação, estruturalmente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para que o encaixe aconteça, duas peças precisam ter formas complementares: o fármaco (ligante) e o receptor (proteína-alvo). O receptor tem um bolso — o sítio de ligação — cuja geometria tridimensional e cujas cargas elétricas combinam com a geometria e as cargas de apenas alguns tipos de molécula. É essa complementaridade estrutural que explica a especificidade: por que um fármaco desenhado para um receptor de dor não ativa, ao mesmo tempo, um receptor de frequência cardíaca — as formas simplesmente não combinam."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nem todo alvo farmacológico é um receptor clássico de membrana. A mesma lógica de encaixe específico se aplica a enzimas (o fármaco bloqueia o sítio catalítico), canais iônicos (o fármaco obstrui ou modula o poro) e transportadores (o fármaco compete pelo sítio de transporte). O termo 'receptor', em farmacodinâmica, é usado de forma ampla para qualquer macromolécula corporal capaz de reconhecer um ligante e converter esse reconhecimento em efeito — mesmo quando, tecnicamente, se trata de uma enzima ou um canal."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: fármaco não age sozinho — ele precisa de um alvo molecular específico e pré-existente no corpo. Onde não há alvo compatível, não há efeito farmacodinâmico, não importa a dose."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em sequência"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A lógica geral da farmacodinâmica segue sempre a mesma sequência causal, independente de qual fármaco ou qual receptor esteja em jogo."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Da ligação molecular à resposta clínica",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Encontro",
+          "explicacao": "O fármaco, já na concentração certa no local certo (resultado da farmacocinética), encontra fisicamente seu alvo molecular — um receptor, uma enzima, um canal ou um transportador."
+        },
+        {
+          "numero": 2,
+          "titulo": "Ligação",
+          "explicacao": "O fármaco se liga ao alvo por forças físico-químicas (pontes de hidrogênio, interações iônicas, forças de Van der Waals), quase sempre de forma reversível. A intensidade dessa ligação é o que os farmacologistas chamam de afinidade."
+        },
+        {
+          "numero": 3,
+          "titulo": "Mudança conformacional",
+          "explicacao": "Se o fármaco tiver, além de afinidade, a capacidade de ativar o alvo, a ligação muda a forma tridimensional da proteína-alvo. Essa mudança de forma é o evento mecânico que liga a molécula pequena à resposta biológica grande."
+        },
+        {
+          "numero": 4,
+          "titulo": "Transdução de sinal",
+          "explicacao": "A proteína-alvo, agora em nova conformação, aciona uma cascata intracelular já existente na célula — abre um canal, ativa uma enzima, dispara uma via de segundo mensageiro. É aqui que a amplificação acontece: um encaixe gera milhares de eventos moleculares subsequentes."
+        },
+        {
+          "numero": 5,
+          "titulo": "Resposta celular e clínica",
+          "explicacao": "A cascata intracelular produz uma alteração funcional mensurável na célula (contração, secreção, disparo elétrico) que, somada em milhões de células do tecido, produz o efeito clínico observável — a pressão arterial cai, a dor diminui, o batimento cardíaco se regulariza."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada uma dessas cinco etapas pode falhar de um jeito diferente, e cada falha específica é justamente o que cada um dos próximos temas vai detalhar: o tipo de receptor e sua estrutura, a quantificação da força de ligação, a diferença entre ativar e apenas ocupar o alvo, a diferença entre o quanto se ativa e o quanto isso desloca a curva, os limites de segurança dessa ativação, o que muda quando a exposição se repete, e o que acontece quando dois fármacos disputam ou influenciam o mesmo sistema."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a farmacodinâmica se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Farmacodinâmica e farmacocinética são as duas metades inseparáveis da farmacologia geral: a cinética responde 'quanto fármaco chega e por quanto tempo fica', a dinâmica responde 'o que esse tanto de fármaco, por esse tempo, faz no alvo'. Uma dose pode ser cineticamente perfeita e dinamicamente inútil (se não houver receptor compatível), e pode ser dinamicamente potente mas clinicamente perigosa se a cinética acumular o fármaco além do previsto. As duas sempre precisam ser lidas juntas para prever o efeito real num paciente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacodinâmica também depende diretamente da fisiologia celular normal — ela não pode ser entendida sem antes saber que receptores, canais e vias de segundo mensageiro já existem na célula por razões fisiológicas próprias, sem qualquer fármaco por perto. E ela abre a porta para a primeira ponte real da ANIMA entre teoria e clínica: é a farmacodinâmica que explica por que a mesma classe de fármaco funciona em alguns pacientes e falha em outros (polimorfismos de receptor), por que efeitos colaterais aparecem em órgãos que pareciam não ser o alvo (receptores do mesmo tipo em tecidos diferentes) e por que a dose certa em teoria pode ser errada na prática de um paciente específico."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Neste ponto você já tem o esqueleto inteiro: fármaco encontra alvo pré-existente, encaixe muda a forma da proteína, mudança de forma aciona cascata que a célula já sabia fazer, cascata amplificada vira efeito clínico. Tudo o que vem depois — os sete blocos seguintes — é zoom em cada uma dessas etapas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "farmacodinâmica",
+      "origem": "do grego phármakon (fármaco, remédio, mas também veneno) + dýnamis (força, poder, potência)",
+      "significado": "literalmente, 'o poder de ação do fármaco' — o estudo das forças que o fármaco exerce sobre o organismo",
+      "explicacao": "O radical dýnamis é o mesmo de 'dinâmica' e 'dínamo': algo que gera força e movimento. Enquanto a farmacocinética usa kinesis (movimento) para descrever o fármaco sendo movido pelo corpo, a farmacodinâmica usa dynamis para descrever o fármaco exercendo força sobre o corpo. A oposição etimológica é o próprio resumo do par conceitual: cinética é o corpo agindo sobre o fármaco (movendo-o); dinâmica é o fármaco agindo sobre o corpo (mudando-o). Guardar essa troca de sujeito e objeto entre os dois nomes evita a confusão mais comum do início do estudo de farmacologia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o todo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense num prédio com centenas de portas trancadas, cada uma abrindo um sistema diferente (luzes, elevador, alarme, ar-condicionado). O fármaco é uma **chave** feita sob medida. O receptor é a **fechadura** específica que só aceita chaves daquele formato. A chave, sozinha, não acende luz nenhuma — ela só gira a fechadura. Quem realmente liga as luzes é o **sistema elétrico do prédio**, que já estava instalado e pronto muito antes de qualquer chave existir (a cascata intracelular que a célula já possuía). Uma chave mal cortada pode entrar na fechadura mas não girar — ela ocupa o espaço sem acionar nada (isso antecipa, sem entrar no mecanismo, o que os próximos blocos vão chamar de diferença entre afinidade e ativação). E se alguém trocar a fechadura (mutação do receptor) ou destruir o quadro de luz (dano na via intracelular), a chave perfeita deixa de servir para qualquer coisa — porque a força nunca esteve na chave, sempre esteve no prédio."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um fármaco pudesse agir sem se ligar a nenhum alvo molecular específico — agindo por força bruta, alterando qualquer célula que encontrasse pela frente — o que se perderia?",
+      "resposta": "Perder-se-ia a seletividade, que é o que torna um fármaco utilizável em medicina. Um agente que age por força bruta, sem reconhecimento específico, afeta indiscriminadamente qualquer célula exposta — é o que descreve, em linhas gerais, um cáustico ou um veneno de ação inespecífica, não um fármaco terapêutico. É exatamente a exigência de um alvo molecular específico que permite calibrar dose, prever efeito, prever para quais tecidos o efeito vai (e não vai) se estender, e desenhar moléculas cada vez mais seletivas para menos efeitos colaterais. A especificidade do encaixe fármaco-receptor não é um detalhe técnico: é a própria razão pela qual a farmacologia moderna consegue tratar uma doença sem destruir o paciente no processo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Imagem"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Da ligação molecular à resposta clínica",
+      "descricao": "Esquema didático em cinco painéis horizontais conectados por setas, mostrando a sequência causal completa: (1) uma molécula pequena (fármaco) se aproximando de uma proteína de membrana com um bolso de encaixe; (2) o encaixe do fármaco no sítio de ligação da proteína, com formas complementares destacadas; (3) a proteína mudando de conformação (antes/depois, com uma seta de transformação); (4) uma cascata intracelular simplificada (segundo mensageiro se espalhando dentro da célula, representado por pontos se multiplicando); (5) o efeito final em nível de tecido/órgão (um ícone estilizado de célula muscular contraindo ou glândula secretando). Legendas curtas em português abaixo de cada painel. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. Sequência horizontal de 5 painéis conectados por setas finas, cada painel com legenda curta em português abaixo: painel 1 'ENCONTRO' — uma molécula pequena romboide se aproximando de uma proteína de membrana com um bolso em forma de fechadura; painel 2 'LIGAÇÃO' — a molécula encaixada no bolso, formas complementares destacadas em cores contrastantes; painel 3 'MUDANÇA DE FORMA' — a mesma proteína com contorno pontilhado da forma antiga e contorno sólido da forma nova, seta curva indicando transformação; painel 4 'CASCATA' — corte transversal simplificado do citoplasma com pontos coloridos se multiplicando a partir da proteína, representando segundo mensageiro se espalhando; painel 5 'EFEITO' — ícone estilizado de célula muscular lisa contraída ou célula glandular secretando uma gotícula. Paleta de cores suaves e consistente entre os painéis, alto contraste, sem texturas fotorrealistas, sem marcas d'água, sem texto além das legendas indicadas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-00-000",
+        "titulo": "Farmacologia — O Que É e Por Que Existe",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume que o aluno já entende o diálogo geral fármaco-organismo e por que a farmacologia se divide em princípios antes de estudar fármacos específicos."
+      },
+      {
+        "bloco_id": "s4-farma1-01-000",
+        "titulo": "Farmacocinética — A Jornada do Fármaco no Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A farmacodinâmica assume que o fármaco já chegou ao alvo em concentração adequada — esse trajeto é exatamente o que a farmacocinética explica. Sem essa base, a pergunta 'o que o fármaco faz no alvo' não tem ponto de partida."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Farmacologia dos sistemas (autonômico, cardiovascular, sistema nervoso central)",
+        "mecanismo_conexao": "Todo fármaco estudado por sistema nos próximos semestres será descrito, primeiro, pelo receptor ou alvo molecular que ativa ou bloqueia — a lógica geral apresentada aqui é o template repetido em cada classe farmacológica futura.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Escolha racional de fármacos e ajuste de dose à beira do leito",
+        "mecanismo_conexao": "A decisão clínica de qual fármaco usar e em que dose depende de entender que o efeito é mediado por um alvo específico, sujeito a variação individual — a base conceitual para prescrição racional nasce aqui.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Farmacogenética e variabilidade de resposta entre pacientes",
+        "mecanismo_conexao": "Polimorfismos genéticos que alteram a estrutura de receptores explicam por que o mesmo fármaco, na mesma dose, produz respostas diferentes entre pacientes — consequência direta do princípio de que o efeito depende do encaixe estrutural fármaco-receptor.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-000-fc01",
+      "pergunta": "Por que uma dose farmacológica extremamente pequena (picomoles) consegue produzir um efeito biológico grande e mensurável?",
+      "resposta": "Porque o fármaco não age por força bruta ou volume — ele se liga a um receptor específico que, uma vez ativado, aciona uma cascata intracelular de amplificação já existente na célula (segundo mensageiro, múltiplas enzimas ativadas em sequência). O fármaco é apenas o gatilho; a amplificação vem da maquinaria celular, não da quantidade de substância administrada.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "receptor",
+        "amplificacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-000-fc02",
+      "pergunta": "Descreva, em sequência, os cinco passos que ligam a chegada de um fármaco ao seu alvo molecular até o efeito clínico observado no paciente.",
+      "resposta": "1) Encontro: o fármaco alcança fisicamente seu alvo molecular. 2) Ligação: o fármaco se liga ao alvo por afinidade físico-química, geralmente de forma reversível. 3) Mudança conformacional: a ligação altera a forma tridimensional da proteína-alvo. 4) Transdução de sinal: a nova conformação aciona uma cascata intracelular pré-existente, amplificando o sinal. 5) Resposta celular e clínica: a soma dos eventos celulares em milhões de células produz o efeito observável no órgão e no paciente.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "mecanismo",
+        "transducao-de-sinal"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-000-fc03",
+      "pergunta": "Se um fármaco agisse por força bruta, sem depender de nenhum alvo molecular específico, o que se perderia em termos de utilidade terapêutica?",
+      "resposta": "Perder-se-ia a seletividade. Sem um alvo específico, o fármaco afetaria indiscriminadamente qualquer célula exposta, tornando impossível calibrar dose, prever quais tecidos seriam afetados e desenhar moléculas mais seguras. É a exigência de um encaixe molecular específico que permite tratar uma doença sem lesar o organismo inteiro no processo — a especificidade é a base da farmacologia como terapêutica, não um detalhe acessório.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "especificidade",
+        "seguranca"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-000-fc04",
+      "pergunta": "A palavra 'farmacodinâmica' vem de phármakon + dýnamis. Como essa etimologia ajuda a diferenciar farmacodinâmica de farmacocinética, e por que essa distinção evita um erro conceitual comum?",
+      "resposta": "Dýnamis significa força/potência — farmacodinâmica é o estudo da força que o fármaco exerce sobre o corpo (o fármaco como sujeito da ação). Kinesis significa movimento — farmacocinética é o estudo de como o corpo move o fármaco (o corpo como sujeito da ação). A troca de quem é sujeito e quem é objeto entre os dois nomes é exatamente o que evita a confusão mais comum no início do estudo de farmacologia: tratar as duas metades como sinônimos ou inverter qual pergunta cada uma responde.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "etimologia",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-000-fc05",
+      "pergunta": "Um fármaco tem farmacocinética perfeita (absorção, distribuição e concentração ideais no órgão-alvo), mas o paciente não apresenta nenhum efeito terapêutico. Que explicação farmacodinâmica geral justifica essa ausência de efeito, mesmo com a cinética correta?",
+      "resposta": "A farmacocinética garantir que o fármaco chegue ao local certo, na concentração certa, não garante que exista ali um alvo molecular compatível e funcional. Se o receptor-alvo estiver ausente, mutado de forma a não reconhecer o ligante, ou se a via intracelular que ele aciona estiver comprometida, a ligação não ocorre ou não gera cascata — e o efeito clínico não aparece, independentemente de quão bem-sucedida tenha sido a jornada cinética do fármaco.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "farmacocinetica",
+        "falha-terapeutica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-000-caso01",
+      "titulo": "Dor não controlada apesar de doses crescentes do mesmo analgésico opioide",
+      "apresentacao": "Mulher de 45 anos, no pós-operatório de uma cirurgia abdominal de grande porte, recebe morfina intravenosa em doses consideradas adequadas para o porte da cirurgia e para o peso da paciente. Apesar de escalonamentos sucessivos de dose dentro dos limites de segurança, ela permanece com dor intensa mal controlada, sem sinais de sedação excessiva ou depressão respiratória que normalmente acompanhariam doses tão altas em outros pacientes. Exames descartam complicação cirúrgica como causa da dor persistente, e a farmacocinética da morfina (absorção intravenosa direta, sem perda) está, por definição, garantida.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Variação genética individual (polimorfismo) no gene que codifica o receptor opioide mu — o alvo molecular da morfina — altera a estrutura da proteína receptora nessa paciente em relação à forma mais comum na população."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O receptor opioide mu, presente em neurônios das vias de dor no sistema nervoso central, tem sua afinidade pela morfina reduzida por essa variação estrutural — a mesma molécula de fármaco encontra um 'bolso' de encaixe ligeiramente diferente do habitual."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com afinidade reduzida pelo receptor-alvo, uma fração menor das moléculas de morfina circulantes consegue se ligar e ativar o receptor por unidade de tempo, mesmo com concentração plasmática elevada e adequada — a farmacocinética está correta, mas a farmacodinâmica individual dessa paciente exige mais fármaco ligado para gerar o mesmo efeito analgésico que ocorreria em um receptor com afinidade padrão."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "A paciente continua referindo dor intensa apesar de doses de morfina que, na maioria dos pacientes, produziriam analgesia eficaz e frequentemente sedação — o efeito farmacodinâmico esperado para aquela concentração plasmática simplesmente não se instala na intensidade prevista."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A equipe reconhece a variabilidade farmacogenética como explicação plausível, ajusta a estratégia analgésica (rotação para outro opioide com perfil de ligação diferente, ou associação de analgésicos de mecanismo distinto) e obtém controle adequado da dor sem elevar a morfina a doses que trariam risco desproporcional de depressão respiratória."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática, a lição central deste bloco: farmacocinética perfeita (o fármaco chega ao alvo em concentração adequada) não garante efeito farmacodinâmico proporcional, porque o efeito depende do encaixe estrutural específico entre fármaco e receptor — e esse encaixe pode variar entre indivíduos, exatamente como o bloco antecipa ao discutir variabilidade de resposta e receptores geneticamente distintos.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "anestesiologia",
+        "clinica",
+        "genetica"
+      ],
+      "diagnostico_revelado": "Resposta analgésica reduzida à morfina por polimorfismo do receptor opioide mu (variabilidade farmacogenética de afinidade fármaco-receptor), sem falha farmacocinética associada.",
+      "tratamento_resumido": "Rotação para opioide alternativo com perfil farmacodinâmico diferente no mesmo receptor ou em receptor distinto, associação de analgesia multimodal (anti-inflamatórios, bloqueios regionais, adjuvantes) e ajuste guiado pela resposta clínica individual em vez de escalonamento indefinido da mesma classe farmacológica."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-000-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacodinamica",
-    "mecanismo",
-    "etimologia"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

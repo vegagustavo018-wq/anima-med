@@ -4,49 +4,227 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "SOP — O Problema da Anovulação Crônica Hiperandrogênica",
+    "titulo": "SOP - O Problema da Anovulacao Cronica Hiperandrogenica",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 8,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "sop",
+      "hiperandrogenismo",
+      "mecanismo"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Por que o folículo não amadurece; ciclo vicioso LH-andrógeno-insulina",
-  "narrativa": [],
+  "resumo_conciso": "SOP e uma sindrome de anovulacao cronica associada a hiperandrogenismo. O problema central nao e apenas a presenca de muitos foliculos no ovario, mas a dificuldade de selecionar um foliculo dominante e completar a ovulacao.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Na sindrome dos ovarios policisticos, o ovario fica preso em uma especie de tentativa repetida de recrutamento folicular. Muitos foliculos pequenos iniciam desenvolvimento, mas nenhum assume dominancia de modo regular. O resultado clinico aparece como oligomenorreia, ciclos longos, amenorreia ou sangramento imprevisivel por anovulacao."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A palavra policistico pode confundir: nao se trata de cistos verdadeiros neoplasicos, e sim de foliculos pequenos acumulados. O que define o raciocinio e a combinacao de disfuncao ovulatoria, excesso de androgenios e exclusao de outras causas que imitam o quadro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O eixo hipotálamo-hipofise-ovariano tende a favorecer pulsos de GnRH mais rapidos, com maior estimulo relativo de LH. O LH estimula as celulas da teca a produzir androgenios. Esses androgenios, quando em excesso, atrapalham a maturacao folicular e alimentam a anovulacao."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A anovulacao cronica reduz exposicao ciclica adequada a progesterona. Sem progesterona lutea regular, o endometrio pode ficar sob estimulo estrogenico persistente, o que explica parte do risco de sangramento uterino anormal e hiperplasia endometrial."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Clinicamente, a estudante deve reconhecer a SOP como uma sindrome metabolico-reprodutiva. Ela nao cabe em um unico exame: a historia menstrual, sinais de hiperandrogenismo, avaliacao metabolica e exclusao de diagnosticos diferenciais precisam conversar entre si."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O ciclo vicioso mais cobrado e: resistencia insulinica aumenta insulina; insulina reduz SHBG e potencializa producao ovariana de androgenios; androgenios atrapalham o desenvolvimento folicular; a anovulacao mantem irregularidade menstrual e exposicao endometrial desorganizada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A SOP tambem e heterogenea. Ha pacientes magras com hiperandrogenismo importante, pacientes com predominio metabolico, adolescentes em que o diagnostico exige cuidado e mulheres buscando fertilidade em que a anovulacao vira a queixa principal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O erro comum e diagnosticar SOP apenas porque o ultrassom mostrou ovarios multifoliculares. Em adultas, a morfologia ovariana pode ajudar; em adolescentes, ela e pouco especifica. Em todas as idades, outras causas de hiperandrogenismo e irregularidade menstrual devem ser lembradas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Do ponto de vista pratico, SOP e o encontro entre fisiologia do ciclo, endocrinologia ovariana e medicina preventiva. Entender o mecanismo ajuda a tratar o sintoma imediato sem esquecer riscos de longo prazo, como infertilidade anovulatoria, diabetes tipo 2 e hiperplasia endometrial."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-01-002",
+        "titulo": "O Eixo Hipotálamo-Hipófise-Ovário — GnRH, FSH, LH",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-01-004",
+        "titulo": "Fase Folicular e Recrutamento do Folículo Dominante",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-01-006",
+        "titulo": "Fase Lútea — Corpo Lúteo e Progesterona",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-03-006",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Diagnostico Diferencial do Hiperandrogenismo",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-016",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Investigação da Amenorreia Secundária — Roteiro Diagnóstico"
+      },
+      {
+        "bloco_id": "s7-go1-02-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-03-001-fc-01",
+      "pergunta": "Qual e o problema fisiologico central da SOP?",
+      "resposta": "Anovulacao cronica associada a hiperandrogenismo, com dificuldade de selecionar foliculo dominante e ovular regularmente.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-03-001-fc-02",
+      "pergunta": "Por que o termo ovario policistico pode confundir?",
+      "resposta": "Porque os achados sao foliculos pequenos acumulados, nao cistos verdadeiros; o diagnostico nao deve depender apenas do ultrassom.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-03-001-fc-03",
+      "pergunta": "Como a falta de ovulacao afeta o endometrio?",
+      "resposta": "Reduz progesterona lutea ciclica e pode deixar o endometrio sob estimulo estrogenico prolongado.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-03-001-fc-04",
+      "pergunta": "Qual ciclo vicioso resume a SOP?",
+      "resposta": "Insulina alta e LH favorecem androgenios; androgenios atrapalham maturacao folicular; anovulacao perpetua irregularidade menstrual.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-03-001-cc-01",
+      "titulo": "Ciclos longos e acne persistente",
+      "apresentacao": "Mulher de 23 anos relata ciclos a cada 45 a 70 dias desde a adolescencia tardia, acne mandibular e aumento de pelos em linha alba. Nega uso de androgenios. IMC 29 kg/m2.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: SOP e uma sindrome de anovulacao cronica associada a hiperandrogenismo."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a SOP - O Problema da Anovulacao Cronica Hiperandrogenica, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "SOP e uma sindrome de anovulacao cronica associada a hiperandrogenismo. O problema central nao e apenas a presenca de muitos foliculos no ovario, mas a dificuldade de selecionar um foliculo dominante e completar a ovulacao."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 23 anos relata ciclos a cada 45 a 70 dias desde a adolescencia tardia, acne mandibular e aumento de pelos em linha alba. Nega uso de androgenios. IMC 29 kg/m2."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual mecanismo integra a irregularidade menstrual e os sinais cutaneos? Anovulacao cronica com hiperandrogenismo. A producao ovariana/adrenal de androgenios e a resistencia insulinica podem manter foliculos em desenvolvimento incompleto, gerando ciclos longos e sinais como acne e hirsutismo."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Anovulacao cronica com hiperandrogenismo. A producao ovariana/adrenal de androgenios e a resistencia insulinica podem manter foliculos em desenvolvimento incompleto, gerando ciclos longos e sinais como acne e hirsutismo.",
+      "tratamento_resumido": "Anovulacao cronica com hiperandrogenismo. A producao ovariana/adrenal de androgenios e a resistencia insulinica podem manter foliculos em desenvolvimento incompleto, gerando ciclos longos e sinais como acne e hirsutismo."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Esquema do ciclo vicioso da SOP conectando GnRH/LH, teca ovariana, androgenios, resistencia insulinica, SHBG baixa, anovulacao e endometrio sem progesterona ciclica.",
+        "alt": "Ilustracao educacional para SOP - O Problema da Anovulacao Cronica Hiperandrogenica"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_3_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "Recommendations From the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome",
+      "url": "https://academic.oup.com/jcem/article/108/10/2447/7242360",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "Monash Centre for Health Research and Implementation - PCOS Guideline",
+      "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "Endocrine Society - Diagnosis and Treatment of Polycystic Ovary Syndrome",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/polycystic-ovary-syndrome",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo"
   ]

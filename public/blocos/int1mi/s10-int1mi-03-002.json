@@ -5,52 +5,199 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Gasometria Arterial (ABG)",
+    "subtitulo": "É uma artéria, não uma veia — o primeiro erro é tratar a punção como se fosse igual a uma coleta de sangue comum.",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 3,
+    "topico": 2,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "procedimento",
+      "raciocinio_diagnostico",
+      "seguranca_paciente"
     ],
+    "tipo_conteudo": "procedimento",
+    "status": "publicado",
+    "data_criacao": "2026-07-06",
+    "data_revisao": "2026-07-06",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
-    "formato_internato": "procedimento"
+    "tempo_estudo_minutos": 10,
+    "palavras_chave": [
+      "gasometria arterial",
+      "teste de Allen",
+      "artéria radial",
+      "distúrbio ácido-base"
+    ],
+    "formato_internato": "procedimento",
+    "minimo_exigido": "5 gasometrias arteriais (ABG)"
   },
-  "resumo_conciso": "Puncionar a artéria radial com teste de Allen e interpretar o distúrbio ácido-base",
-  "narrativa": [],
+  "resumo_conciso": "Punção arterial não perdoa erro do jeito que punção venosa perdoa: artéria tem pressão maior, risco de hematoma expansivo e de comprometer a única circulação colateral da mão se você não checar antes. E depois de coletar bem, você ainda precisa interpretar o resultado corretamente.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você vai puncionar a artéria radial de um paciente para colher gasometria. O primeiro risco não está na técnica de punção em si — está em esquecer que a mão depende de duas artérias (radial e ulnar) para perfusão, e que, se a artéria ulnar não for suficiente para suprir a mão sozinha, comprometer a radial por complicação (trombose, hematoma expansivo) pode causar isquemia da mão. Por isso, antes de puncionar, você confirma a circulação colateral."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Indicação e o teste de Allen"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A gasometria arterial é indicada para avaliar oxigenação, ventilação (CO2) e equilíbrio ácido-base de forma mais precisa do que a oximetria de pulso ou a gasometria venosa permitem. Antes de puncionar a radial, realiza-se o teste de Allen: comprime-se as artérias radial e ulnar simultaneamente, o paciente abre e fecha a mão até empalidecer, depois libera-se a compressão ulnar (mantendo a radial comprimida) e observa-se se a cor retorna à mão em poucos segundos — isso confirma que a circulação ulnar sozinha é suficiente para perfundir a mão, caso a radial seja comprometida pela punção."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Técnica, com o porquê de cada etapa",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Teste de Allen antes de qualquer punção",
+          "explicacao": "Confirma reserva de circulação colateral — sem essa confirmação, você não sabe se uma complicação na radial deixaria a mão sem suprimento adequado."
+        },
+        {
+          "numero": 2,
+          "titulo": "Palpação do pulso radial com extensão leve do punho",
+          "explicacao": "Facilita localizar o trajeto exato da artéria e reduz a chance de múltiplas tentativas."
+        },
+        {
+          "numero": 3,
+          "titulo": "Antissepsia e punção em ângulo de 30-45 graus contra o fluxo do pulso",
+          "explicacao": "Ângulo maior que o da punção venosa reflete a posição mais profunda e a maior pressão da artéria."
+        },
+        {
+          "numero": 4,
+          "titulo": "Confirmar refluxo pulsátil espontâneo (sangue entra na seringa sem precisar aspirar)",
+          "explicacao": "O refluxo pulsátil confirma posicionamento arterial verdadeiro — sangue que precisa ser aspirado ativamente sugere possível posicionamento venoso, o que invalida a interpretação do resultado."
+        },
+        {
+          "numero": 5,
+          "titulo": "Compressão local por pelo menos 5 minutos após retirar a agulha",
+          "explicacao": "Artéria tem pressão maior que veia; compressão insuficiente causa hematoma expansivo, que pode comprimir estruturas vizinhas."
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Compressão de 5 minutos não é sugestão — é o tempo mínimo para reduzir risco de hematoma numa artéria, que tem pressão bem maior que uma veia. Em paciente anticoagulado, o tempo de compressão deve ser ainda maior."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como saber que deu certo: amostra com refluxo pulsátil espontâneo, sem bolhas de ar visíveis na seringa (que alteram o resultado de pO2), processada rapidamente (o resultado se degrada com o tempo, especialmente se não mantida em gelo quando o processamento não é imediato). Complicações: hematoma (compressão insuficiente), espasmo arterial (múltiplas tentativas no mesmo local), e, raramente, trombose ou lesão de nervo próximo (nervo mediano está próximo do trajeto da radial)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Depois de coletar corretamente, a interpretação segue uma sequência: checar pH (acidose ou alcalose), depois checar PaCO2 (componente respiratório) e HCO3 (componente metabólico) para identificar se o distúrbio primário é respiratório ou metabólico, e se há compensação apropriada. Mínimo exigido pelo currículo: 5 gasometrias arteriais. Avaliação: DOPS observando tanto a técnica de punção quanto a capacidade de interpretar corretamente o resultado obtido."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1mi-03-001",
+        "titulo": "Punção Venosa Periférica",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-01-008",
+        "titulo": "DPOC Exacerbado — quando a VNI evita o tubo",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "A interpretação de gasometria treinada aqui é exatamente o dado usado para decidir escalonamento naquele caso."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-03-002-001",
+      "tipo": "por_que",
+      "pergunta": "Por que o teste de Allen é feito antes da punção da artéria radial, e não é apenas uma formalidade?",
+      "resposta": "Porque a mão é irrigada por duas artérias (radial e ulnar), e o teste confirma que a circulação ulnar sozinha é suficiente para perfundir a mão. Se uma complicação da punção (trombose, espasmo prolongado) comprometer o fluxo pela radial, a confirmação prévia de reserva ulnar adequada reduz o risco de isquemia da mão.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "procedimento",
+        "gasometria"
+      ]
+    },
+    {
+      "card_id": "fc-s10-int1mi-03-002-002",
+      "tipo": "armadilha",
+      "pergunta": "Pegadinha: você colheu a amostra de sangue precisando aspirar ativamente com a seringa, sem refluxo pulsátil espontâneo. Isso ainda representa uma gasometria arterial confiável?",
+      "resposta": "Não necessariamente. A ausência de refluxo pulsátil espontâneo levanta suspeita de posicionamento venoso em vez de arterial, o que invalida a interpretação do resultado como gasometria arterial verdadeira — os valores de pO2 e pCO2 seriam significativamente diferentes entre sangue arterial e venoso.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "procedimento",
+        "gasometria",
+        "armadilha"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s10-int1mi-03-002-caso01",
+      "titulo": "Mão fria e dor após múltiplas tentativas de coleta arterial",
+      "apresentacao": "Homem de 55 anos, internado por DPOC exacerbado, necessitando de gasometrias arteriais seriadas para acompanhar resposta à ventilação não invasiva. Após a quarta punção da artéria radial direita no mesmo dia, realizada por diferentes internos sem registro prévio de teste de Allen, o paciente refere dor persistente no punho e formigamento nos dedos da mão direita. Ao exame: mão direita mais pálida e discretamente mais fria que a esquerda, pulso radial direito não palpável, pulso ulnar direito presente porém de amplitude reduzida, tempo de enchimento capilar prolongado nos dedos da mão direita.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Múltiplas punções da mesma artéria radial em curto intervalo de tempo, sem confirmação prévia de reserva de circulação colateral pelo teste de Allen, geram trauma repetido à parede arterial."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A artéria radial no ponto de punção repetida sofre espasmo e, possivelmente, trombose local — comprometendo o fluxo através dela."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a artéria radial ocluída ou espasmódica e sem confirmação prévia de que a artéria ulnar sozinha supriria adequadamente a mão, a perfusão distal da mão fica dependente de uma circulação colateral que não havia sido testada como suficiente."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Palidez e frialdade da mão comparada ao lado contralateral, dor e parestesia nos dedos, pulso radial não palpável, tempo de enchimento capilar prolongado — sinais de perfusão distal comprometida."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Isquemia de mão por comprometimento da artéria radial sem reserva colateral adequada é uma complicação rara, mas grave e evitável, da punção arterial repetida. Requer avaliação vascular urgente; a prevenção — o teste de Allen antes de cada tentativa e a limitação do número de punções no mesmo sítio — é a medida que evita todo esse desfecho."
+        }
+      ],
+      "conexao_com_bloco": "O caso demonstra concretamente por que o teste de Allen não é uma formalidade burocrática do procedimento, mas a etapa que protege a mão de uma complicação séria: sem confirmar previamente que a circulação ulnar seria suficiente, cada nova tentativa na radial aumenta o risco cumulativo de comprometer a única via de perfusão que o paciente realmente tinha disponível.",
+      "disciplinas_relacionadas": [
+        "estagio-medicina-interna",
+        "anatomia",
+        "cirurgia-vascular"
+      ],
+      "diagnostico_revelado": "Isquemia aguda de mão por oclusão/espasmo da artéria radial após punções arteriais repetidas sem reserva colateral confirmada.",
+      "tratamento_resumido": "Avaliação vascular de urgência para investigar necessidade de intervenção (trombólise, embolectomia, ou observação com anticoagulação conforme gravidade). Suspensão imediata de novas tentativas de punção na artéria radial daquele membro. Medida preventiva: sempre confirmar teste de Allen normal antes de cada nova tentativa e limitar o número de tentativas no mesmo sítio arterial, considerando via alternativa (outra artéria radial, ou gasometria venosa/capilar quando clinicamente aceitável) após tentativas malsucedidas repetidas."
+    }
+  ],
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "procedimento",
-    "raciocinio_diagnostico",
-    "seguranca_paciente"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "titulo": "Harrison's Principles of Internal Medicine — capítulo sobre distúrbios ácido-base",
+      "autores": "Loscalzo J, Fauci AS, Kasper DL, et al.",
+      "ano": 2022
+    }
   ]
 }

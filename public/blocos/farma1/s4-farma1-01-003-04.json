@@ -5,50 +5,350 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Redistribuição e Depósitos Teciduais",
+    "subtitulo": "Por que um anestésico que ainda não foi metabolizado já deixou de fazer efeito?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "distribuicao",
+      "redistribuicao",
+      "tiopental",
+      "deposito-tecidual",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Redistribuição (tiopental); acúmulo em gordura e osso; efeito no despertar",
-  "narrativa": [],
+  "resumo_conciso": "Um anestesiologista injeta tiopental na veia e, em menos de trinta segundos, o paciente está inconsciente. Um minuto depois, o efeito já está passando — e o fígado praticamente não teve tempo de metabolizar nada. O fármaco não foi embora do corpo: foi embora do cérebro. Esse é o fenômeno da redistribuição, o quarto desdobramento do tripé perfusão-permeabilidade-ligação já estabelecido na visão geral de distribuição. Fármacos muito lipossolúveis, administrados em bolo intravenoso, seguem uma sequência previsível de destinos: primeiro chegam aos órgãos ricamente perfundidos (cérebro, coração, fígado, rim), que recebem grande fração do débito cardíaco por grama de tecido; minutos depois, o mesmo fármaco começa a se acumular no músculo, que tem perfusão intermediária; só depois de dezenas de minutos a horas ele se deposita de forma relevante na gordura e, mais lentamente ainda, em tecidos com afinidade química específica, como o osso. Como a concentração plasmática cai continuamente (por causa dessa própria redistribuição), o gradiente entre sangue e cérebro se inverte: o fármaco que tinha entrado no cérebro agora sai dele de volta para o plasma, atraído pelos tecidos de menor perfusão que ainda estão captando avidamente. O paciente desperta não porque o fígado destruiu o tiopental, mas porque o tiopental mudou de endereço dentro do próprio corpo. Esse mecanismo explica por que uma dose única de anestésico de ação ultracurta tem despertar rápido, e por que doses repetidas ou infusões prolongadas do mesmo fármaco produzem efeito cada vez mais duradouro — porque os depósitos periféricos (gordura, principalmente) vão saturando e deixam de funcionar como dreno para o cérebro.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um paciente vai fazer uma endoscopia sob sedação. O anestesiologista injeta tiopental na veia. Em menos de trinta segundos, o paciente perde a consciência — o fármaco claramente atravessou a barreira hematoencefálica e agiu no sistema nervoso central quase instantaneamente. O exame dura oito minutos. Quando termina, o paciente já está acordando, respondendo a estímulos, quase alerta. Oito minutos é tempo suficiente para o fígado metabolizar uma fração relevante do tiopental que foi injetado? Não é. O fígado mal começou a trabalhar nesse intervalo. Então por que o efeito já está passando?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior desta sequência mostrou como a hematoencefálica e a placentária protegem territórios sensíveis com um filtro de dois estágios. Este bloco pega o mesmo pano de fundo — o tripé perfusão, permeabilidade, ligação, estabelecido na visão geral de distribuição — e mostra o que acontece quando um fármaco muito lipossolúvel entra rápido no corpo inteiro e depois muda de lugar sozinho, sem que uma molécula sequer tenha sido metabolizada ou excretada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: o despertar rápido que a farmacocinética clássica não explica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se o fim do efeito de um fármaco dependesse só de metabolismo e excreção, o tiopental deveria manter o paciente sedado por um tempo proporcional à sua meia-vida de eliminação real — que, no caso do tiopental, é longa, na casa de várias horas. Mas na prática clínica, uma dose única de indução faz o paciente dormir por minutos, não por horas. Há uma contradição aparente: como um fármaco de meia-vida longa produz efeito tão curto?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta não está em acelerar a eliminação do fármaco — ela continua lenta. Está em outro lugar: o fármaco sai do órgão-alvo (o cérebro) muito antes de ser eliminado do corpo, porque ele é puxado para outros tecidos que ainda têm apetite por ele. O problema, portanto, não é 'quanto tempo o corpo demora para destruir o fármaco', e sim 'quanto tempo o cérebro consegue reter uma concentração eficaz dele' — e essas duas perguntas têm respostas completamente diferentes quando o fármaco é muito lipossolúvel."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o despertar rápido de um anestésico como o tiopental não é causado por metabolismo — é causado pelo fármaco mudando de compartimento dentro do próprio corpo, saindo do cérebro antes de ser eliminado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: uma corrida em etapas, guiada por perfusão"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A chave está na mesma variável que a visão geral de distribuição já identificou como decisiva para a velocidade de chegada: a perfusão. Órgãos diferentes recebem frações muito diferentes do débito cardíaco por grama de tecido, e essa diferença não muda apenas a rapidez de entrada — ela também determina a ordem em que os tecidos competem entre si pelo fármaco que está circulando."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nos primeiros segundos após a injeção intravenosa, o fármaco lipossolúvel se distribui preferencialmente para o grupo de órgãos ricamente perfundidos — cérebro, coração, fígado, rim — porque recebem, juntos, uma fatia desproporcional do sangue bombeado a cada minuto. É por isso que o efeito no sistema nervoso central aparece quase instantaneamente: não é que o cérebro tenha alguma vantagem especial de permeabilidade sobre o músculo, é que ele recebe o fármaco muito mais rápido, simplesmente por estar melhor irrigado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Só que essa fase inicial não é o fim da história. Enquanto o cérebro está captando o fármaco, o músculo — um compartimento muito maior em massa, mas com perfusão bem menor por grama — também está captando, só que mais devagar. Como o músculo continua recebendo fármaco novo do sangue e como a concentração plasmática está caindo (porque o fármaco está sendo distribuído para vários lugares ao mesmo tempo), em determinado momento a concentração no músculo se aproxima da concentração no plasma, e o gradiente que antes empurrava fármaco para dentro do cérebro passa a empurrá-lo de volta para fora."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Redistribuição é a movimentação de um fármaco entre compartimentos do próprio corpo depois da fase inicial de distribuição — sem depender de metabolismo ou excreção. Ela acontece porque tecidos com perfusão diferente atingem o equilíbrio com o plasma em velocidades diferentes: órgãos ricamente perfundidos enchem e esvaziam rápido; tecidos pouco perfundidos enchem devagar e continuam 'puxando' fármaco do sangue muito depois de o cérebro já ter perdido a maior parte do que captou."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita essa redistribuição"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tiopental é um barbitúrico extremamente lipossolúvel — essa é a propriedade físico-química que torna a redistribuição relevante para ele. Sem alta lipossolubilidade, o fármaco não atravessaria membranas rápido o bastante para encher e esvaziar compartimentos em minutos; ficaria preso no plasma, e a redistribuição, tal como descrita aqui, praticamente não ocorreria de forma clinicamente perceptível."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os compartimentos relevantes para essa corrida não são apenas 'cérebro' e 'resto do corpo' — a divisão clássica usa quatro grupos, na ordem em que atingem equilíbrio com o plasma: o grupo ricamente vascularizado (cérebro, coração, fígado, rim — cerca de 10% da massa corporal, recebendo cerca de 75% do débito cardíaco), o grupo muscular (perfusão intermediária, massa corporal grande), o grupo adiposo (perfusão baixa por grama, mas capacidade de armazenamento imensa por afinidade lipídica) e o grupo pouco vascularizado (osso, tendão, cartilagem — perfusão mínima, equilíbrio extremamente lento)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essa combinação — massa do compartimento, perfusão relativa e afinidade química do fármaco por aquele tecido — que decide quanto tempo cada grupo leva para se tornar um depósito relevante. A gordura, apesar de mal perfundida, acaba sendo o depósito final mais importante para fármacos muito lipossolúveis, precisamente porque sua enorme capacidade de armazenar moléculas lipofílicas compensa, ao longo do tempo, a lentidão de sua perfusão."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em movimento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Volte ao tiopental injetado na veia. O mecanismo do despertar rápido acontece em etapas previsíveis."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Por que o efeito do tiopental termina por redistribuição, não por metabolismo",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Pico cerebral quase instantâneo",
+          "explicacao": "Nos primeiros 30 segundos, o cérebro (grupo ricamente perfundido) capta uma fração desproporcional da dose, porque recebe grande parte do débito cardíaco por grama de tecido e o tiopental é lipossolúvel o bastante para atravessar a barreira hematoencefálica quase sem resistência. A concentração cerebral sobe rápido e ultrapassa o limiar necessário para induzir inconsciência."
+        },
+        {
+          "numero": 2,
+          "titulo": "Músculo começa a captar, mais devagar",
+          "explicacao": "Enquanto isso, o músculo — com perfusão bem menor por grama, mas massa corporal muito maior — também está absorvendo tiopental do sangue, só que numa velocidade menor. Ele ainda não chegou perto do equilíbrio com o plasma."
+        },
+        {
+          "numero": 3,
+          "titulo": "Concentração plasmática cai por redistribuição, não por eliminação",
+          "explicacao": "Como o músculo continua retirando fármaco do sangue, a concentração plasmática de tiopental despenca nos minutos seguintes — não porque o fígado o esteja metabolizando em ritmo relevante (isso levaria horas), mas porque ele está sendo sequestrado por um compartimento periférico muito maior."
+        },
+        {
+          "numero": 4,
+          "titulo": "Gradiente se inverte: o cérebro perde fármaco de volta para o plasma",
+          "explicacao": "Com a concentração plasmática caindo abaixo da concentração cerebral, o gradiente de difusão se inverte: o tiopental que estava no cérebro agora atravessa a barreira hematoencefálica no sentido contrário, voltando ao sangue, de onde é recapturado pelo músculo (e, mais tarde, pela gordura). A concentração cerebral cai abaixo do limiar de efeito em minutos, e o paciente desperta — com a imensa maioria da dose original ainda intacta no corpo, apenas realocada."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse mecanismo tem uma consequência prática importante, que é também uma armadilha de prescrição: se o anestesiologista repetir a dose de tiopental (ou mantiver uma infusão contínua) para prolongar a sedação, o efeito de cada dose subsequente dura mais tempo que a anterior. Isso acontece porque os depósitos periféricos — sobretudo o muscular e, com exposição mais prolongada, o adiposo — vão progressivamente se aproximando da saturação. Quando o músculo e a gordura já estão com concentração próxima à do plasma, eles deixam de funcionar como dreno eficiente para o cérebro, e o término do efeito passa a depender cada vez mais da eliminação real (metabolismo hepático), que é lenta. É por isso que infusões prolongadas de tiopental têm recuperação muito mais demorada e imprevisível do que uma dose única — um fenômeno conhecido, para fármacos em geral, como acúmulo dependente de contexto."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para consolidar: redistribuição explica o fim do efeito de uma dose única e rápida. Mas o mesmo mecanismo que garante o despertar rápido na primeira dose é o que torna doses repetidas progressivamente mais duradouras — porque os depósitos periféricos vão enchendo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A redistribuição não introduz nenhum fator novo além dos três já estabelecidos na visão geral de distribuição — ela é a consequência, ao longo do tempo, de perfusão diferencial entre compartimentos, aplicada de forma dinâmica em vez de estática. O osso merece menção à parte, fora do eixo perfusão-lipossolubilidade: alguns fármacos (não o tiopental) se depositam em tecido ósseo por afinidade química específica — por exemplo, tetraciclinas e chumbo se ligam à hidroxiapatita óssea — e, como o osso tem perfusão e renovação extremamente lentas, esse depósito pode persistir por anos, funcionando como reservatório de liberação lenta muito depois de a exposição original ter cessado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Clinicamente, entender redistribuição é o que permite ao anestesiologista escolher entre um indutor de ação ultracurta (bom para procedimentos rápidos, porque o paciente desperta por redistribuição) e ajustar a estratégia para procedimentos longos (evitando doses repetidas do mesmo agente de forma ingênua, justamente porque a recuperação deixa de ser previsível). Também explica por que pacientes obesos podem ter comportamento farmacocinético diferente para fármacos muito lipossolúveis — um compartimento adiposo proporcionalmente maior muda a dinâmica de redistribuição e pode prolongar a meia-vida de contexto do fármaco."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "redistribuição",
+      "origem": "do latim re- (novamente, de volta) + distribuere (repartir), o mesmo verbo que originou 'distribuição'",
+      "significado": "literalmente, 'repartir de novo' — repartir outra vez algo que já havia sido repartido antes",
+      "explicacao": "O prefixo 're-' aqui não é decorativo: descreve exatamente o fenômeno. A distribuição inicial reparte o fármaco entre os compartimentos do corpo logo após a entrada no sangue; a redistribuição é uma segunda repartição, que ocorre minutos depois, movendo o fármaco de um compartimento para outro sem que nenhuma molécula tenha sido destruída ou eliminada. O nome, criado dentro da própria farmacocinética no século XX (associado aos estudos clássicos com tiopental na década de 1950, quando se percebeu que a meia-vida de eliminação do fármaco não combinava com a duração curta do efeito clínico), captura com precisão que o mesmo processo de repartição entre tecidos, descrito na distribuição, simplesmente continua acontecendo — só que agora em sentido contrário ao inicial para o órgão-alvo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a redistribuição"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎉",
+      "conteudo": "Pense numa festa lotada numa sala pequena perto da entrada de uma casa grande, com várias salas maiores logo atrás. **A injeção intravenosa** é a chegada em massa dos convidados pela porta da frente. **A sala pequena de entrada** é o grupo ricamente perfundido (cérebro, coração, fígado, rim): fica cheia quase instantaneamente, porque é a primeira parada e recebe a maior parte do fluxo de gente. **As salas maiores logo atrás** são o músculo: mais espaço, mas as pessoas demoram um pouco mais a se espalhar até lá. **O porão amplo no fundo da casa** é o tecido adiposo: longe da entrada, enche devagar, mas cabe muita gente ali por muito tempo. A sala de entrada esvazia rápido não porque os convidados foram embora da festa (o fármaco não saiu do corpo) — esvazia porque as pessoas se movem para as salas de trás, que ainda têm espaço sobrando e continuam puxando gente da entrada. É exactamente essa migração interna, sem ninguém sair pela porta, que faz a sala da frente (o cérebro) esvaziar em minutos. A analogia quebra num ponto: se a festa se repete várias vezes seguidas (doses repetidas), as salas de trás vão enchendo cada vez mais — até que não sobra mais espaço para receber gente vinda da entrada, e aí a única forma de a sala da frente esvaziar de verdade é alguém realmente ir embora da casa (a eliminação hepática lenta) — o correspondente ao acúmulo dependente de contexto descrito acima."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o tiopental fosse pouco lipossolúvel (como a penicilina, por exemplo), o despertar rápido por redistribuição ainda aconteceria?",
+      "resposta": "Não da mesma forma. A redistribuição clinicamente relevante depende de o fármaco conseguir atravessar membranas rápido o bastante para encher e esvaziar múltiplos compartimentos em minutos — e isso exige alta lipossolubilidade. Um fármaco pouco lipossolúvel mal atravessaria a barreira hematoencefálica para produzir efeito central em primeiro lugar, e mesmo que atravessasse, sua entrada e saída dos tecidos periféricos seria lenta demais para gerar uma mudança perceptível de efeito em poucos minutos. É exatamente por isso que a redistribuição como fenômeno clínico relevante está associada a um grupo restrito de fármacos muito lipofílicos administrados por via intravenosa em bolo — tiopental, propofol, fentanil em dose única — e não é um mecanismo geral de término de efeito para a maioria dos fármacos usados na prática clínica, que dependem primariamente de metabolismo e excreção."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "A corrida da redistribuição: quatro compartimentos, quatro velocidades",
+      "descricao": "Gráfico esquemático de linhas mostrando o eixo horizontal como tempo (0 a 60 minutos) e o eixo vertical como concentração relativa do fármaco. Quatro curvas coloridas: uma para o grupo ricamente perfundido (cérebro/coração/fígado/rim, em vermelho) subindo abruptamente nos primeiros segundos e caindo com a mesma rapidez; uma para o músculo (em azul) subindo mais devagar e se mantendo por mais tempo em nível intermediário; uma para a gordura (em amarelo) subindo lentamente e continuando a crescer até o fim do gráfico; e uma para o plasma (linha pontilhada preta) caindo continuamente. Uma linha horizontal tracejada indicando o 'limiar de efeito clínico' cruzando a curva do grupo ricamente perfundido duas vezes — uma na subida (início do efeito) e outra na descida (fim do efeito) — com anotação 'desperta aqui'. Legenda em português explicando as quatro curvas. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Gráfico científico vetorial de linhas, fundo transparente, estilo de livro-texto de farmacologia moderno, em português, sem fotorrealismo. Eixo X rotulado 'tempo (minutos)' de 0 a 60; eixo Y rotulado 'concentração relativa do fármaco'. Quatro curvas suaves: curva vermelha rotulada 'grupo ricamente perfundido (cérebro, coração, fígado, rim)' subindo quase verticalmente nos primeiros instantes até um pico alto, depois descendo rapidamente nos primeiros minutos; curva azul rotulada 'músculo' com subida mais gradual, atingindo pico intermediário por volta de 15-20 minutos e platô longo; curva amarela rotulada 'tecido adiposo' com subida lenta e contínua, ainda ascendente ao final do gráfico; linha pontilhada preta fina rotulada 'concentração plasmática' descendo suavemente do início ao fim. Linha horizontal tracejada cinza rotulada 'limiar de efeito clínico' cruzando a curva vermelha em dois pontos, com pequena seta e texto 'desperta aqui' no ponto de cruzamento descendente. Legenda de cores no rodapé. Cores suaves, alto contraste, sem marcas d'água, sem texto sobreposto além do indicado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-003",
+        "titulo": "Distribuição de Fármacos — Visão Geral",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Redistribuição é uma consequência direta do tripé perfusão-permeabilidade-ligação estabelecido na visão geral. É preciso já entender que a perfusão determina a velocidade de entrega a cada tecido para compreender por que compartimentos diferentes atingem o equilíbrio com o plasma em momentos diferentes."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Acúmulo dependente de contexto em infusões prolongadas",
+        "mecanismo_conexao": "A progressiva saturação dos depósitos periféricos (músculo e gordura) descrita aqui é a base para entender por que a meia-vida efetiva de um fármaco lipossolúvel aumenta com a duração da infusão — conceito central na escolha de sedativos e anestésicos para procedimentos longos.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Farmacocinética alterada em obesidade e ajuste de dose anestésica",
+        "mecanismo_conexao": "Um compartimento adiposo proporcionalmente maior muda a dinâmica de redistribuição de fármacos lipossolúveis, o que já é considerado na prática para ajuste de dose de indutores anestésicos em pacientes obesos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-003-04-fc01",
+      "pergunta": "Por que o efeito do tiopental termina em poucos minutos, se sua meia-vida de eliminação real é de várias horas?",
+      "resposta": "Porque o fim do efeito clínico não depende da eliminação do fármaco do corpo, e sim da queda da concentração no cérebro especificamente. O tiopental é muito lipossolúvel: entra rápido no cérebro (órgão ricamente perfundido) e, enquanto isso, também está sendo captado, mais devagar, pelo músculo. Como o músculo continua retirando fármaco do plasma, a concentração plasmática cai, o gradiente entre plasma e cérebro se inverte, e o tiopental sai do cérebro de volta para o sangue — sem que quase nada tenha sido metabolizado ainda. O paciente desperta por redistribuição, não por eliminação.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "redistribuicao",
+        "tiopental",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-003-04-fc02",
+      "pergunta": "Descreva, em ordem, os quatro grupos de compartimentos corporais que competem pelo tiopental após uma injeção intravenosa em bolo, e o que determina a velocidade com que cada um atinge equilíbrio com o plasma.",
+      "resposta": "1) Grupo ricamente perfundido (cérebro, coração, fígado, rim): pequena massa, mas recebe a maior fração do débito cardíaco por grama — enche e esvazia em segundos a poucos minutos. 2) Músculo: massa corporal grande, perfusão intermediária — enche em minutos e permanece em platô por mais tempo. 3) Tecido adiposo: perfusão baixa por grama, mas enorme capacidade de armazenar moléculas lipofílicas por afinidade química — enche lentamente ao longo de dezenas de minutos a horas, tornando-se o depósito final mais importante. 4) Tecidos pouco vascularizados (osso, tendão, cartilagem): perfusão mínima, equilíbrio extremamente lento, relevante sobretudo para fármacos com afinidade química específica por esse tecido. A ordem é determinada pela combinação de perfusão relativa e capacidade/afinidade de armazenamento de cada compartimento.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "redistribuicao",
+        "compartimentos",
+        "perfusao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-003-04-fc03",
+      "pergunta": "Um anestesiologista decide manter o efeito hipnótico repetindo doses de tiopental a cada poucos minutos durante um procedimento longo. O que deve acontecer com a duração do efeito de cada dose subsequente, e por quê?",
+      "resposta": "A duração do efeito de cada dose subsequente tende a aumentar progressivamente. Isso acontece porque os depósitos periféricos — principalmente o muscular e, com exposição mais prolongada, o adiposo — vão se aproximando da saturação a cada dose repetida. Quando esses compartimentos já têm concentração próxima à do plasma, eles deixam de funcionar como dreno eficiente para tirar fármaco do cérebro, e o término do efeito passa a depender cada vez mais da eliminação real (metabolismo hepático), que é lenta. Esse fenômeno é chamado de acúmulo dependente de contexto e explica por que infusões prolongadas de tiopental têm recuperação muito mais demorada e imprevisível que uma dose única.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "redistribuicao",
+        "acumulo-contexto",
+        "tiopental"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-003-04-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Redistribuição é um mecanismo geral que explica o fim do efeito da maioria dos fármacos usados na prática clínica.'",
+      "resposta": "Falso. Redistribuição como fenômeno clinicamente relevante depende de o fármaco ser muito lipossolúvel e ser administrado de forma a criar um pico rápido de concentração plasmática, tipicamente por via intravenosa em bolo — condições que permitem que múltiplos compartimentos encham e esvaziem em minutos. É por isso que o fenômeno está associado a um grupo restrito de fármacos, como tiopental, propofol e fentanil em dose única. A grande maioria dos fármacos usados na prática clínica tem o fim do efeito determinado primariamente por metabolismo e excreção, não por redistribuição entre compartimentos.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "redistribuicao",
+        "armadilha-conceitual",
+        "farmacocinetica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-003-04-caso01",
+      "titulo": "Indução anestésica com tiopental para redução de fratura",
+      "apresentacao": "Paciente de 29 anos, previamente hígido, é levado ao pronto-socorro após queda de bicicleta com fratura fechada de rádio distal. O ortopedista solicita sedação profunda breve para redução fechada da fratura. O anestesiologista administra tiopental 4 mg/kg em bolo intravenoso único. Em cerca de 20 segundos, o paciente está inconsciente e sem resposta a estímulo verbal. A redução é realizada em 6 minutos. Aos 9 minutos após a injeção, o paciente já abre os olhos espontaneamente e responde ao nome, ainda sonolento mas orientado.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O tiopental, um barbitúrico de alta lipossolubilidade, foi administrado em bolo intravenoso único, criando um pico rápido de concentração plasmática."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Nos primeiros segundos, o fármaco se concentra no grupo de órgãos ricamente perfundidos, sobretudo o encéfalo, atravessando a barreira hematoencefálica por difusão passiva graças à sua alta lipossolubilidade."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A concentração cerebral ultrapassa o limiar necessário para suprimir a atividade cortical, produzindo inconsciência quase instantânea — o efeito clínico pretendido pela indução anestésica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Perda de consciência em segundos, permitindo a manipulação ortopédica sem dor nem memória do procedimento."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Enquanto a redução era realizada, o músculo — mal perfundido em comparação ao cérebro, mas com massa muito maior — continuava captando tiopental do plasma. A concentração plasmática caiu por redistribuição, o gradiente entre plasma e cérebro se inverteu, e o tiopental voltou do encéfalo para o sangue. Em poucos minutos a concentração cerebral caiu abaixo do limiar de efeito, e o paciente despertou — com a quase totalidade da dose original ainda circulando pelo corpo, agora concentrada no músculo e, à medida que os minutos passassem, também na gordura, e não eliminada pelo fígado."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra o núcleo do bloco: o despertar em 9 minutos não tem relação com a meia-vida de eliminação do tiopental (que é de várias horas) — é explicado inteiramente pela redistribuição do fármaco do cérebro para o músculo, seguindo a hierarquia de perfusão descrita na visão geral de distribuição. Se o mesmo paciente precisasse de sedação repetida para um procedimento mais longo, o anestesiologista precisaria antecipar que doses subsequentes durariam progressivamente mais, à medida que os depósitos periféricos fossem se aproximando da saturação.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "anestesiologia",
+        "clinica"
+      ],
+      "diagnostico_revelado": "Despertar anestésico fisiológico por redistribuição do tiopental do compartimento central (cérebro) para o compartimento muscular — não por metabolismo hepático.",
+      "tratamento_resumido": "Nenhuma intervenção adicional é necessária: o despertar rápido é o comportamento farmacocinético esperado e desejado do tiopental em dose única. O ponto de vigilância clínica é reconhecer que, se a sedação precisar ser prolongada com doses repetidas, o tempo de recuperação deixa de ser previsível pela mesma lógica, exigindo monitorização mais cautelosa do despertar."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-003-04-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Capítulo 5 — Drug Distribution and Drug Elimination; Capítulo 21 — Intravenous Anesthetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Capítulo 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action; Capítulo 25 — General Anesthetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang & Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 8 — Absorption and Distribution of Drugs; Capítulo 41 — General Anaesthetic Agents.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

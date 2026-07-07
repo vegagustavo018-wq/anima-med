@@ -11,51 +11,468 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Farmacologia Anestésica — Princípios Aplicados",
+    "titulo": "Por Que o Corpo Não é um Tanque Só: Cinética da Anestesia",
+    "subtitulo": "Por que a mesma dose de propofol que induz um paciente pode não acordar outro?",
     "semestre": 8,
     "disciplina": "Anestesiologia",
+    "sistema_corporal": "sistema nervoso",
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 4,
+    "tempo_leitura_minutos": 15,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "anest",
-      "esqueleto"
+      "farmacocinetica",
+      "farmacodinamica",
+      "titulacao",
+      "compartimentos",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "As regras farmacocinéticas e farmacodinâmicas que governam toda anestesia",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior vimos que a anestesia geral é uma tríade farmacológica — hipnose, analgesia, relaxamento muscular — sustentada por vigilância contínua. Este bloco explica a regra que governa como cada componente dessa tríade é dosado, titulado e revertido em tempo real.\n\nA farmacologia anestésica não pode operar como a farmacologia clínica comum, que tolera doses fixas e efeito em horas. Aqui o efeito precisa aparecer em segundos, ser ajustável a cada minuto e desaparecer de forma previsível ao final — porque o órgão-alvo é o sistema nervoso central de um paciente que, no instante seguinte, vai enfrentar um bisturi.\n\nA solução da farmacologia para essa exigência foi tratar o corpo não como um único tanque onde o fármaco se dissolve, mas como uma rede de compartimentos com velocidades de troca diferentes — e foi calcular a dose não pelo peso bruto do paciente, mas pelo compartimento que efetivamente importa para cada fármaco.\n\nEsse raciocínio compartimental, mais o conceito de meia-vida contexto-sensível e de sinergia entre classes, é o que permite ao anestesiologista prever, com precisão de minutos, quando um paciente vai dormir, quanto tempo vai ficar dormindo e quando vai acordar — mesmo antes de administrar a primeira dose.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já viu, no bloco anterior, que a anestesia geral moderna se apoia numa tríade — hipnose, analgesia, relaxamento muscular — e que cada componente é obtido por uma classe farmacológica própria, ajustada de forma independente. O que ainda não foi explicado é a regra por trás dessa palavra 'ajustada'. Ajustar como? Com que margem de erro? E por que, se dois pacientes recebem a mesma dose de propofol por quilo, um dorme em 20 segundos e acorda em 5 minutos, enquanto o outro leva 40 segundos para dormir e demora 25 minutos para acordar?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a farmacologia clínica comum não serve para a sala de cirurgia?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em como você aprendeu farmacologia até aqui: um paciente toma um comprimido de anti-hipertensivo pela manhã, o efeito começa a aparecer em uma ou duas horas, atinge um platô e dura o dia inteiro. Se a dose estiver um pouco errada, há tempo de sobra para perceber e corrigir na consulta seguinte. Essa é a farmacologia da paciência: o corpo absorve devagar, o efeito se instala devagar, e o erro tem uma janela generosa para ser corrigido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacologia anestésica não pode operar assim, por uma razão simples: o órgão-alvo é o sistema nervoso central, o efeito desejado é supressão de funções vitais (consciência, dor, tônus muscular), e esse efeito precisa aparecer em segundos — porque a indução não é um evento isolado, é o início de uma sequência em que a via aérea do paciente fica exposta no exato momento em que os reflexos que a protegiam desaparecem. Um fármaco que demorasse minutos para agir deixaria essa janela de vulnerabilidade perigosamente longa. E, ao mesmo tempo, o efeito precisa ser reversível de forma previsível: ao fim do procedimento, o anestesiologista precisa saber, com razoável precisão, quando aquele paciente específico vai recuperar consciência, respiração espontânea e reflexos protetores — não pode ser 'algum momento entre trinta minutos e três horas'."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Some a isso um terceiro requisito: durante a cirurgia, o estímulo nociceptivo varia — não é constante. Uma incisão de pele dói mais que a sutura final; a manipulação de uma víscera pode disparar reflexo vagal intenso num momento e nada no seguinte. Isso significa que a dose certa no minuto 5 pode ser excessiva no minuto 40 e insuficiente no minuto 90. A farmacologia anestésica precisa, portanto, de titulação contínua — o equivalente a pilotar um avião ajustando o manche a cada rajada de vento, não programar uma rota fixa e sair do comando."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe antes de seguir: a farmacologia anestésica exige três coisas que a farmacologia clínica comum não exige — início de efeito em segundos, término de efeito previsível ao minuto, e capacidade de titulação contínua contra um estímulo que muda a cada momento. Nenhum desses três requisitos é opcional; os três juntos são o que forçou a farmacologia a inventar um jeito diferente de pensar dose e tempo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a farmacologia resolveu — pensando o corpo como compartimentos, não como um tanque único"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução começou com uma mudança de modelo mental. A farmacologia clínica tradicional costuma simplificar o corpo como um único compartimento — um tanque onde o fármaco se dissolve uniformemente e é eliminado numa taxa constante. Esse modelo funciona razoavelmente bem para um comprimido absorvido ao longo de horas, porque nesse prazo o fármaco já teve tempo de se distribuir por igual em todo o organismo. Ele falha completamente para um fármaco injetado na veia e destinado a agir em segundos no cérebro — porque, nesse intervalo curtíssimo, o corpo não é um tanque uniforme: é uma rede de regiões que recebem o fármaco em velocidades muito diferentes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacologia anestésica passou a descrever o corpo como três compartimentos funcionais. O primeiro é o compartimento central — sangue e os órgãos que recebem a maior fração do débito cardíaco por grama de tecido: cérebro, coração, rins, fígado. Esse grupo é pequeno em massa (cerca de 10% do peso corporal) mas recebe a maior parte do sangue a cada minuto, por isso equilibra a concentração do fármaco quase instantaneamente. O segundo é o compartimento de distribuição rápida — músculo esquelético, principalmente — que recebe menos sangue por grama, mas tem massa grande; leva minutos para equilibrar. O terceiro é o compartimento de distribuição lenta — o tecido adiposo — que recebe pouquíssimo sangue por grama e por isso demora horas para equilibrar, mas, uma vez carregado, retém o fármaco por muito tempo, porque a maioria dos anestésicos venosos é altamente lipossolúvel.\n\n[⚠️] Esse modelo de três compartimentos é uma simplificação didática, não uma partição anatômica literal do corpo. Na prática clínica e na pesquisa farmacocinética, cada fármaco (propofol, tiopental, etomidato) é descrito por um modelo populacional próprio, com parâmetros individualizados por idade, peso e sexo — os mais usados para propofol em bombas de infusão-alvo controlada são os modelos de Marsh, Schnider e, mais recentemente, Eleveld. O raciocínio de três compartimentos apresentado aqui é o arcabouço conceitual comum a todos esses modelos, não uma fórmula única aplicável sem ajuste a qualquer fármaco ou paciente."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A regra central deste bloco: em anestesia, o que importa não é a concentração média do fármaco no corpo inteiro, mas a concentração no compartimento central — porque é dali, por proximidade vascular direta, que o fármaco chega ao cérebro. Uma dose calculada pelo peso corporal total, sem considerar como esse peso se distribui entre compartimentos de perfusão rápida e lenta, pode superdosar ou subdosar o paciente errado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que lipossolúvel? Porque para atravessar a barreira hematoencefálica rapidamente — requisito número um da lista anterior — o fármaco precisa atravessar membranas lipídicas com facilidade. Essa é a razão pela qual os hipnóticos venosos de uso corrente são, em geral, altamente lipossolúveis — não uma exigência absoluta e universal da classe, mas a solução química dominante para o problema de velocidade de entrada no sistema nervoso central. Mas essa mesma lipossolubilidade que garante entrada rápida no cérebro é o que faz o fármaco se acumular avidamente no tecido adiposo. A evolução química do fármaco ideal para indução anestésica é, portanto, uma escolha de compromisso: alta lipossolubilidade para entrar rápido no compartimento central e no cérebro, sabendo que essa mesma propriedade vai criar um reservatório periférico que complica a farmacocinética de infusões prolongadas — tema que um dos próximos módulos desta trilha aprofunda em detalhe."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em movimento — o destino de um bolus intravenoso"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O que acontece nos primeiros minutos após um bolus de hipnótico venoso",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Injeção e chegada ao compartimento central",
+          "explicacao": "O fármaco entra na veia, circula e, em poucos segundos, atinge concentração alta no compartimento central — sangue, cérebro, coração, rins, fígado — porque esse grupo recebe desproporcionalmente mais sangue por grama de tecido do que o resto do corpo. A velocidade dessa chegada depende diretamente do débito cardíaco: quanto menor o débito cardíaco do paciente, mais devagar o fármaco é transportado até o compartimento central, retardando o início do efeito — o oposto do que a intuição de 'paciente mais grave, efeito mais rápido' sugeriria."
+        },
+        {
+          "numero": 2,
+          "titulo": "Efeito clínico imediato",
+          "explicacao": "Como o cérebro está dentro do compartimento central e o fármaco é lipossolúvel o suficiente para atravessar a barreira hematoencefálica em segundos, a perda de consciência acontece quase no mesmo instante em que o fármaco alcança concentração eficaz ali — daí a indução parecer 'instantânea' ao observador."
+        },
+        {
+          "numero": 3,
+          "titulo": "Redistribuição para o músculo",
+          "explicacao": "Nos minutos seguintes, o gradiente de concentração empurra o fármaco do compartimento central, agora mais concentrado, para o compartimento muscular, ainda quase vazio. O músculo tem massa grande — mesmo recebendo menos fármaco por grama, absorve uma fração relevante do total, e a concentração no compartimento central despenca."
+        },
+        {
+          "numero": 4,
+          "titulo": "Despertar por redistribuição, não por eliminação",
+          "explicacao": "É essa queda rápida de concentração no compartimento central — puxada pela redistribuição para o músculo — que faz o paciente despertar de uma dose única em minutos, muito antes de o fígado ter metabolizado a maior parte do fármaco. O despertar de um bolus isolado depende de para onde o fármaco vai, não de quão rápido ele é destruído."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse quarto passo é a raiz de um dos raciocínios mais importantes — e mais contraintuitivos — da farmacologia anestésica: a duração do efeito de uma dose única de hipnótico venoso quase nunca reflete sua meia-vida de eliminação. O propofol tem meia-vida de eliminação de várias horas, mas um bolus único produz sono de poucos minutos, porque quem termina o efeito é a redistribuição, não o metabolismo hepático. Esse raciocínio muda de figura quando o fármaco é infundido continuamente por horas — o compartimento muscular vai gradualmente saturando, a redistribuição perde força como mecanismo de término de efeito, e o tempo de despertar passa a depender cada vez mais da duração total da infusão. Esse fenômeno — batizado de meia-vida contexto-sensível — tem nome e curva próprios, e um dos módulos seguintes desta trilha é dedicado inteiramente a ele. [⚠️] Vale registrar desde já que esse conceito nasceu de simulações computacionais sobre modelos farmacocinéticos populacionais (Hughes e Shafer, 1992), não de medição direta em cada paciente à beira-leito — ele é uma ferramenta de previsão estatística validada e amplamente usada no planejamento da anestesia, mas sua aplicação a um paciente individual específico carrega a mesma incerteza de qualquer estimativa baseada em população, e a comunidade anestesiológica reconhece essa limitação."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, consolide: um bolus único desperta por redistribuição (o fármaco sai do cérebro porque vai para o músculo), não por eliminação (o fígado destruindo a molécula). Isso explica por que fármacos com meia-vida de eliminação longa ainda assim produzem sono curto quando usados em dose única."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essa previsibilidade depende — os parâmetros que a farmacologia precisa conhecer"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para transformar esse raciocínio compartimental em uma dose real, escrita numa prescrição, a farmacologia anestésica precisa responder a três perguntas específicas sobre cada fármaco. Primeira: quanto 'espaço' cada compartimento representa para aquele fármaco — o volume de distribuição — porque é esse volume que converte uma dose absoluta em concentração esperada. Segunda: com que velocidade o fármaco se move de um compartimento para outro — a constante de transferência — porque é essa velocidade que determina quanto tempo a redistribuição consegue sustentar o despertar antes de saturar. Terceira: com que eficiência o compartimento central consegue eliminar definitivamente o fármaco do organismo — a depuração, que soma eliminação hepática, renal e, para alguns fármacos, hidrólise plasmática independente de órgão. Cada anestésico tem seu próprio conjunto de valores para essas três respostas — é por isso que propofol, tiopental e etomidato, apesar de todos produzirem hipnose rapidamente, têm perfis de despertar e de acúmulo em infusão prolongada muito diferentes entre si."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esses parâmetros não são iguais para todo paciente. Idade, composição corporal, débito cardíaco e função de órgãos de eliminação alteram tanto o volume de distribuição quanto a depuração — um paciente idoso tem débito cardíaco menor (o fármaco demora mais para chegar ao compartimento central, mas quando chega, encontra menos volume de distribuição, e a mesma dose produz concentração cerebral mais alta) e massa muscular reduzida (menos reservatório de redistribuição, então o despertar de um bolus único tende a ser mais lento e a dose de indução costuma ser reduzida). Como calcular a dose certa a partir do peso do paciente, considerando essas variações, é o assunto do próximo bloco desta trilha — aqui basta reconhecer que peso corporal total é apenas o ponto de partida bruto, não o critério final."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse princípio se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O raciocínio compartimental que você acabou de ver não é exclusivo dos hipnóticos — governa também os opioides usados para analgesia e, com particularidades próprias, os bloqueadores neuromusculares. É por isso que a sinergia entre hipnóticos e opioides (permitir usar menos de cada um, somando efeitos em vez de empilhar dose de uma classe só) só faz sentido depois de entender que cada classe tem sua própria curva de concentração-efeito, e que a interação entre elas se dá exatamente na sobreposição dessas curvas no compartimento central — tema do último módulo desta trilha."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse mesmo raciocínio também é a base tecnológica das bombas de infusão-alvo controlada, que usam esses parâmetros compartimentais programados internamente para calcular, em tempo real, a taxa de infusão necessária para manter uma concentração-alvo constante no plasma ou no efeito — automatizando um cálculo que, feito manualmente, seria impraticável durante uma cirurgia. E se articula, mais adiante no currículo, com a farmacogenética: pacientes com variantes de enzimas hepáticas ou de pseudocolinesterase plasmática têm depuração alterada para certos anestésicos e bloqueadores, e a mesma lógica compartimental explica por que, nesses pacientes, a dose padrão pode ser perigosamente inadequada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "farmacocinética",
+      "origem": "do grego phármakon (droga, remédio, mas também veneno) + kínēsis (movimento)",
+      "significado": "literalmente, 'o movimento da droga' — o que o corpo faz com o fármaco",
+      "explicacao": "O termo se consolidou na literatura farmacológica de meados do século XX para distinguir duas perguntas diferentes sobre qualquer fármaco: o que o fármaco faz ao corpo (farmacodinâmica, do grego dýnamis, força ou potência) e o que o corpo faz ao fármaco (farmacocinética — absorção, distribuição, metabolismo, eliminação). A dualidade phármakon-como-remédio e phármakon-como-veneno, presente na raiz grega desde a Antiguidade, não é acidental: todo anestésico é, por definição, uma substância cuja margem entre dose terapêutica e dose letal é estreita o bastante para exigir vigilância — a mesma molécula que suspende a consciência com segurança em concentração correta pode deprimir irreversivelmente o centro respiratório em concentração pouco maior."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a ideia central"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚰",
+      "conteudo": "Pense no corpo como um sistema de três reservatórios de água conectados por canos de diâmetros diferentes. O **compartimento central** é uma caixa d'água pequena, mas ligada por um cano largo à torneira principal — enche quase instantaneamente quando você abre a torneira (a injeção venosa). O **compartimento muscular** é um tanque médio, ligado por um cano de diâmetro intermediário — a água (o fármaco) começa a escoar para lá assim que a caixa pequena enche, mas leva minutos para equilibrar o nível. O **compartimento adiposo** é um reservatório enorme, ligado por um cano fino — recebe água lentamente, mas, por ser tão grande, uma vez que começa a encher, retém aquela água por muito tempo antes de devolvê-la. Quando você fecha a torneira (para de infundir), o nível da caixa pequena — o que interessa clinicamente, porque é dali que a água chega ao 'cérebro' do sistema — cai rápido no começo, porque a água escoa para os outros dois tanques (redistribuição), e só bem mais tarde, quando os tanques maiores já estão parcialmente cheios e a diferença de nível é pequena, a queda passa a depender de quanto o sistema consegue drenar para fora de vez (eliminação). A analogia quebra num ponto: água não muda de estado químico, mas o fígado e os rins efetivamente destroem ou removem a molécula do sistema — a 'drenagem para fora' tem um limite de velocidade fixo (a depuração), que a redistribuição entre tanques não tem."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se todos os anestésicos venosos fossem pouco lipossolúveis — incapazes de atravessar rapidamente a barreira hematoencefálica e de se acumular em tecido adiposo — como isso mudaria a prática da indução anestésica?",
+      "resposta": "A indução deixaria de ser rápida: sem lipossolubilidade alta, o fármaco demoraria muito mais para atravessar a barreira hematoencefálica e atingir concentração eficaz no cérebro, tornando a perda de consciência um processo de minutos em vez de segundos — inviabilizando o controle preciso da via aérea no momento exato em que os reflexos protetores desaparecem, que é justamente o requisito que abriu este bloco. Por outro lado, sem afinidade por tecido adiposo, não haveria reservatório periférico se acumulando: a meia-vida contexto-sensível de infusões prolongadas seria muito mais previsível, e o despertar após horas de anestesia não dependeria tanto da duração da infusão. Ou seja, a mesma propriedade físico-química (lipossolubilidade) que resolve o problema mais urgente da especialidade — indução rápida — é a que cria o problema mais complexo do capítulo seguinte desta trilha: prever o despertar depois de horas de infusão contínua. Não existe fármaco isento desse compromisso; existe apenas fármaco cujo compromisso foi otimizado para o uso clínico pretendido."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Os três compartimentos farmacocinéticos e a redistribuição de um bolus venoso",
+      "descricao": "Esquema didático mostrando três reservatórios de tamanhos diferentes conectados por tubos de diâmetros distintos: um reservatório pequeno rotulado como compartimento central (representando sangue e órgãos ricamente perfundidos), conectado por um tubo largo a uma seringa de injeção; um reservatório médio representando o compartimento muscular, conectado por tubo de diâmetro intermediário; um reservatório grande representando o compartimento adiposo, conectado por tubo fino. Setas de fluxo mostrando o movimento do conteúdo do reservatório central para os outros dois logo após a injeção. Ao lado, um gráfico simples de concentração plasmática ao longo do tempo, mostrando pico imediato seguido de queda rápida (fase de redistribuição) e depois uma cauda longa e lenta (fase de eliminação). Setas e legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente adaptativo ao tema claro/escuro, estilo de infográfico farmacológico moderno e limpo, sem nenhum texto, palavra, letra, número ou legenda embutida na própria imagem. Composição com três reservatórios cilíndricos estilizados de tamanhos crescentes da esquerda para a direita, conectados entre si e a uma seringa à esquerda por tubos de espessuras visivelmente diferentes (mais grosso para o primeiro reservatório, intermediário para o segundo, mais fino para o terceiro). Setas de fluxo curvas e sutis indicando movimento de líquido do primeiro reservatório em direção aos outros dois. Ao lado direito da composição, uma curva abstrata em um pequeno painel representando concentração ao longo do tempo: subida abrupta seguida de queda rápida e depois uma cauda longa e suave, sem eixos numerados nem texto. Paleta de cores médica sóbria — tons de azul-petróleo, verde-água e um único destaque em âmbar para as setas de fluxo — traços vetoriais limpos, estilo minimalista de livro-texto contemporâneo, sem texturas fotorrealistas, sem qualquer texto ou rotulagem dentro da própria imagem. Sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-anest-00-000",
+        "titulo": "Anestesiologia — A Medicina de Suspender e Devolver a Consciência com Segurança",
+        "disciplina": "Anestesiologia",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco pressupõe que você já entendeu que a anestesia geral é uma tríade farmacológica (hipnose, analgesia, relaxamento muscular) sustentada por vigilância contínua — aqui aprofundamos a regra farmacocinética e farmacodinâmica que permite dosar e titular cada componente dessa tríade com segurança."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-02-001",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Janela terapêutica estreita e necessidade de titulação contínua",
+        "mecanismo_conexao": "Este bloco introduz por que a anestesia exige farmacologia de precisão; o próximo módulo aprofunda especificamente a estreiteza da janela terapêutica e as consequências de ultrapassá-la.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-02-002",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Dose por peso real, ideal e magro",
+        "mecanismo_conexao": "O raciocínio compartimental apresentado aqui explica por que peso corporal total é insuficiente para calcular dose em pacientes obesos ou com composição corporal atípica — o módulo seguinte formaliza o cálculo prático.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-02-003",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Redistribuição como mecanismo de término de efeito do bolus",
+        "mecanismo_conexao": "O passo a passo do bolus intravenoso apresentado aqui é expandido em detalhe farmacocinético completo no módulo dedicado à redistribuição.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-02-004",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Meia-vida contexto-sensível em infusões prolongadas",
+        "mecanismo_conexao": "A ressalva feita aqui — que a redistribuição perde força como mecanismo de término de efeito à medida que a infusão se prolonga — é precisamente o fenômeno que o módulo de meia-vida contexto-sensível desenvolve.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": "s8-anest-02-005",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Infusão-alvo controlada (TCI) e modelos farmacocinéticos populacionais",
+        "mecanismo_conexao": "Os parâmetros compartimentais citados aqui (volume de distribuição, constantes de transferência, depuração) são exatamente os valores que os modelos farmacocinéticos usados pelas bombas de TCI incorporam internamente.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-02-006",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Sinergia hipnótico-opioide",
+        "mecanismo_conexao": "A ideia de que cada classe farmacológica tem curva de concentração-efeito própria, aqui apresentada para hipnóticos, é a base para entender como a sobreposição dessas curvas entre hipnótico e opioide permite reduzir a dose de ambos.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Farmacogenética da pseudocolinesterase plasmática e apneia prolongada por succinilcolina",
+        "mecanismo_conexao": "A variação individual de depuração citada aqui de forma geral reaparece de forma dramática quando um paciente com deficiência genética de colinesterase plasmática recebe succinilcolina e permanece paralisado por horas em vez de minutos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s2-farmaco-00-000",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "O modelo de compartimentos farmacocinéticos não é exclusivo da anestesia — é o mesmo arcabouço conceitual usado em Farmacologia Geral, aqui aplicado ao caso extremo de efeito em segundos."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-anest-02-000-fc01",
+      "pergunta": "Por que a farmacologia anestésica não pode se basear no mesmo modelo de compartimento único usado para descrever a maioria dos fármacos orais de uso crônico?",
+      "resposta": "Porque o modelo de compartimento único assume que o fármaco se distribui uniformemente pelo corpo antes que o efeito clínico relevante ocorra — uma aproximação razoável quando a absorção e o início de efeito levam horas, tempo suficiente para equilíbrio relativo entre tecidos. Na indução anestésica, o efeito clínico (perda de consciência) ocorre em segundos, um intervalo em que o corpo está longe de qualquer equilíbrio: o compartimento central (sangue, cérebro, órgãos ricamente perfundidos) já está com concentração alta enquanto o compartimento muscular e o adiposo ainda estão praticamente vazios. Ignorar essa não uniformidade levaria a prever mal tanto a velocidade de indução quanto a duração do efeito.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "compartimentos",
+        "anestesia-venosa"
+      ]
+    },
+    {
+      "card_id": "s8-anest-02-000-fc02",
+      "pergunta": "Se um hipnótico venoso perdesse toda a sua lipossolubilidade mas mantivesse a mesma potência molecular no receptor, o que aconteceria com o tempo de indução e com o tempo de despertar de um bolus único?",
+      "resposta": "O tempo de indução aumentaria de forma importante: sem lipossolubilidade, a travessia da barreira hematoencefálica seria muito mais lenta, atrasando de segundos para minutos o início da perda de consciência — mesmo que a concentração plasmática no compartimento central subisse rapidamente, o fármaco demoraria para atingir o cérebro em concentração eficaz. Quanto ao despertar, o efeito seria paradoxal: sem afinidade por tecido adiposo, não haveria reservatório periférico se formando, então a duração do efeito passaria a depender mais diretamente da depuração plasmática do que da redistribuição — tornando o despertar de doses repetidas mais previsível, mas às custas de uma indução clinicamente inaceitável para a prática de anestesia geral.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "lipossolubilidade",
+        "farmacocinetica",
+        "redistribuicao"
+      ]
+    },
+    {
+      "card_id": "s8-anest-02-000-fc03",
+      "pergunta": "Paciente de 78 anos, com débito cardíaco reduzido por insuficiência cardíaca compensada, recebe a mesma dose por quilo de propofol usada rotineiramente em adultos jovens saudáveis. Ela demora mais para perder a consciência, mas quando perde, o efeito é mais profundo e o despertar é mais lento do que o esperado. Explique os dois fenômenos usando o raciocínio compartimental.",
+      "resposta": "O atraso na perda de consciência ocorre porque o débito cardíaco reduzido faz o fármaco demorar mais para ser transportado do sítio de injeção até o compartimento central e, dali, ao cérebro — o 'cano' que liga a torneira ao primeiro reservatório está com fluxo mais lento. Uma vez que o fármaco finalmente chega, porém, o efeito é mais profundo do que o esperado porque o volume de distribuição central de um idoso costuma ser menor (menor massa magra, menor água corporal total): a mesma dose absoluta se dilui em menos volume, gerando concentração cerebral mais alta do que em um adulto jovem. O despertar mais lento reflete tanto a massa muscular reduzida do idoso — menos reservatório de redistribuição rápida disponível para 'puxar' o fármaco para fora do compartimento central — quanto, frequentemente, depuração hepática e renal diminuídas. Os três fenômenos (chegada lenta, efeito mais profundo, despertar mais lento) são a mesma lógica farmacocinética aplicada a um corpo com compartimentos e fluxos diferentes do adulto jovem de referência.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "idoso",
+        "farmacocinetica",
+        "debito-cardiaco",
+        "volume-distribuicao"
+      ]
+    },
+    {
+      "card_id": "s8-anest-02-000-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Como o propofol tem meia-vida de eliminação de várias horas, um paciente que recebe um único bolus de indução deveria, em teoria, permanecer sedado por um tempo proporcional a essa meia-vida.'",
+      "resposta": "Falso. A armadilha aqui é aplicar a meia-vida de eliminação — que descreve quanto tempo o fígado leva para metabolizar a maior parte da droga presente no corpo inteiro — ao raciocínio errado sobre o que termina o efeito clínico de uma dose única. Em um bolus isolado, o despertar ocorre por **redistribuição**: a concentração no compartimento central cai rapidamente porque o fármaco migra para o compartimento muscular, ainda vazio, muito antes de o fígado ter eliminado uma fração relevante da dose total. A meia-vida de eliminação só passa a determinar o tempo de recuperação quando a infusão é prolongada o suficiente para que os compartimentos periféricos se saturem — perdendo a capacidade de continuar 'puxando' fármaco do compartimento central. Confundir os dois mecanismos leva a superestimar o tempo de recuperação após dose única e a subestimá-lo após infusão longa.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "meia-vida",
+        "redistribuicao",
+        "propofol",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s8-anest-02-000-fc05",
+      "pergunta": "Por que a palavra 'farmacocinética' foi construída a partir da raiz grega que significa 'movimento', e não a partir de uma raiz que significasse 'efeito' ou 'força'?",
+      "resposta": "Porque o termo foi cunhado especificamente para isolar a pergunta 'o que o corpo faz com o fármaco' (absorção, distribuição entre compartimentos, metabolismo, eliminação — ou seja, o movimento e a transformação da molécula ao longo do tempo e do espaço corporal) da pergunta complementar 'o que o fármaco faz com o corpo' (farmacodinâmica, da raiz dýnamis, força). Essa separação conceitual é o que permite, na prática anestésica, calcular separadamente quanto tempo um fármaco leva para chegar ao cérebro e sair dele (cinética) e quão potente ele é, uma vez lá, para produzir hipnose (dinâmica) — dois eixos independentes que juntos determinam a dose e o momento certos.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "etimologia",
+        "farmacocinetica",
+        "farmacodinamica"
+      ]
+    },
+    {
+      "card_id": "s8-anest-02-000-fc06",
+      "pergunta": "Compare o mecanismo que termina o efeito de um bolus único de hipnótico venoso com o mecanismo que termina o efeito de uma infusão prolongada do mesmo fármaco.",
+      "resposta": "No **bolus único**, o efeito termina predominantemente por **redistribuição**: o fármaco sai do compartimento central porque migra para o compartimento muscular, ainda com concentração baixa — um processo rápido (minutos) que não depende de quanto o fígado já metabolizou. Na **infusão prolongada**, os compartimentos periféricos (muscular e, principalmente, adiposo) vão gradualmente se saturando ao longo das horas de infusão; quando saturados, deixam de conseguir 'absorver' fármaco adicional do compartimento central, e a redistribuição perde força como mecanismo de queda de concentração. Nesse cenário, o término do efeito passa a depender cada vez mais da **depuração** (metabolismo hepático, eliminação renal) — e por isso o tempo de despertar após uma infusão longa se aproxima da meia-vida de eliminação real do fármaco, em vez do tempo curto observado após dose única. Esse é exatamente o fenômeno descrito pela meia-vida contexto-sensível, que cresce com a duração da infusão.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "bolus",
+        "infusao",
+        "redistribuicao",
+        "depuracao",
+        "meia-vida-contexto-sensivel"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-anest-02-000-caso01",
+      "titulo": "Por que essa paciente cardiopata de 81 anos não dormiu — nem acordou — no tempo esperado?",
+      "apresentacao": "Mulher de 81 anos, 52 kg, com insuficiência cardíaca classe funcional II e fração de ejeção reduzida, é levada à sala de cirurgia para correção de fratura de fêmur. Recebe indução venosa com dose de propofol calculada pelo peso corporal total, seguindo o mesmo protocolo usado rotineiramente em adultos jovens do serviço. A equipe observa que a perda de consciência demora visivelmente mais que o habitual, e quando finalmente ocorre, a paciente apresenta queda de pressão arterial mais acentuada do que a esperada para a dose administrada. Ao final do procedimento, de curta duração, o despertar também é mais lento que o previsto pela equipe.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Débito cardíaco reduzido pela insuficiência cardíaca, associado a menor volume de distribuição central e menor massa muscular, próprios do envelhecimento e da fragilidade da paciente."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A cinética de transporte do fármaco entre o sítio de injeção, o compartimento central e o cérebro, e a capacidade do compartimento muscular de redistribuir o fármaco para fora do compartimento central."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O fármaco demora mais para alcançar concentração eficaz no cérebro (débito cardíaco baixo retarda o transporte), mas, ao chegar, encontra um compartimento central proporcionalmente menor, gerando concentração cerebral mais alta que a esperada para a dose por quilo administrada. A massa muscular reduzida oferece menos reservatório de redistribuição, retardando a queda de concentração central após o efeito."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Indução clinicamente mais lenta, efeito hemodinâmico (hipotensão) mais acentuado do que o previsto pela dose padrão, e despertar mais demorado ao final do procedimento."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem ajuste da dose considerando débito cardíaco reduzido e composição corporal do idoso, o risco imediato é hipotensão significativa durante a indução (podendo comprometer a perfusão coronariana e cerebral numa paciente já com reserva cardiovascular limitada) e recuperação pós-anestésica prolongada, com maior risco de complicações respiratórias no período de vigilância."
+        }
+      ],
+      "conexao_com_bloco": "O caso aplica diretamente o raciocínio compartimental apresentado no bloco: débito cardíaco determina a velocidade de chegada ao compartimento central, volume de distribuição determina a concentração resultante de uma dose fixa, e massa muscular determina a eficiência da redistribuição como mecanismo de término de efeito. Nenhum desses três fatores aparece na dose calculada apenas pelo peso corporal total — o cálculo detalhado de ajuste por idade e composição corporal é o assunto do próximo módulo desta trilha.",
+      "disciplinas_relacionadas": [
+        "anestesiologia",
+        "farmacologia",
+        "geriatria",
+        "cardiologia"
+      ],
+      "diagnostico_revelado": "Farmacocinética alterada por débito cardíaco reduzido e composição corporal do idoso, sem ajuste de dose de indução.",
+      "tratamento_resumido": "Nas induções seguintes desse perfil de paciente, reduzir a dose de indução e administrá-la mais lentamente ('titular até o efeito' em vez de bolus único pelo peso), antecipar e tratar a hipotensão esperada, e ajustar a expectativa de tempo de despertar considerando a farmacocinética alterada — sem que isso represente erro do fármaco escolhido, apenas da dose padronizada aplicada sem ajuste individual."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-anest-02-000-img01",
+        "tipo_imagem": "esquema_didatico",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "workflow-anima-s8",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
-  "_lentes": [
-    "correlação ciências básicas",
-    "conduta/técnica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Miller RD, Gropper MA. Miller's Anesthesia. 9th ed. Elsevier; 2020. Chapter 20 — Intravenous Anesthetics; Chapter 24 — Pharmacokinetic and Pharmacodynamic Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Butterworth JF, Mackey DC, Wasnick JD. Morgan & Mikhail's Clinical Anesthesiology. 6th ed. McGraw-Hill; 2018. Chapter 7 — Intravenous Anesthetics; Chapter 8 — Pharmacokinetic Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Hemmings HC, Egan TD. Pharmacology and Physiology for Anesthesia. 2nd ed. Elsevier; 2019. Chapter on Pharmacokinetic and Pharmacodynamic Principles in Anesthesia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Meia-vida de eliminação longa significa que o efeito clínico de um bolus dura muito tempo",
+      "correcao": "O término do efeito de um bolus único é dominado por redistribuição entre compartimentos, não por eliminação; a meia-vida de eliminação só se torna determinante em infusões prolongadas",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Dose por quilo de peso corporal total é sempre a forma correta de calcular a dose de indução",
+      "correcao": "Peso corporal total ignora como a massa se distribui entre compartimentos de perfusão rápida e lenta; em extremos de idade, obesidade ou disfunção de órgãos, o peso corrigido (ideal ou magro) é mais apropriado",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Lipossolubilidade alta é uma propriedade puramente vantajosa para um anestésico venoso",
+      "correcao": "A mesma lipossolubilidade que garante entrada rápida no cérebro é responsável pelo acúmulo em tecido adiposo, criando o fenômeno da meia-vida contexto-sensível em infusões prolongadas",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "farmacocinética",
+      "termo_es": "farmacocinética",
+      "termo_en": "pharmacokinetics",
+      "abreviatura": "PK"
+    },
+    {
+      "termo_pt": "compartimento central",
+      "termo_es": "compartimento central",
+      "termo_en": "central compartment",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "redistribuição",
+      "termo_es": "redistribución",
+      "termo_en": "redistribution",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "depuração",
+      "termo_es": "aclaramiento",
+      "termo_en": "clearance",
+      "abreviatura": "CL"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "nivel_dominio_minimo": 4
 }

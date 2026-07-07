@@ -1,54 +1,211 @@
 {
+  "metadata": {
+    "titulo": "Hidrolases Ácidas e o Interior Ácido",
+    "subtitulo": "Por que o sistema de digestão celular opera em um ambiente tão inóspito?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 10,
+    "nivel": "CORE",
+    "tags": [
+      "lisossomo",
+      "pH",
+      "enzimas",
+      "homeostase",
+      "digestão celular"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "Neste bloco, exploramos o lisossomo não como um saco de lixo, mas como um compartimento bioquímico altamente especializado que utiliza um gradiente de pH para controlar a digestão de macromoléculas. Analisamos a bomba de prótons V-ATPase, responsável por manter o pH ácido necessário para a ativação das hidrolases ácidas. Entender essa compartimentalização é fundamental para compreender como a célula evita sua autodigestão e como falhas nesse mecanismo levam a patologias graves, como as doenças de depósito lisossômico.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você precise digerir uma refeição completa dentro de uma sala cheia de móveis delicados. Se você espalhasse enzimas digestivas por toda a casa, destruiria tudo. A célula, em sua elegância evolutiva, resolveu esse problema criando um compartimento estanque, uma 'sala de jantar' trancada e quimicamente isolada, onde a digestão acontece longe do citoplasma."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula garante que a digestão ocorra apenas onde deve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi dupla: isolamento físico por uma membrana resistente e um controle rigoroso do ambiente químico. As enzimas responsáveis pela degradação, conhecidas como hidrolases, são projetadas para serem 'preguiçosas' ou inativas no pH neutro do citosol (7.2). Elas só despertam seu potencial destrutivo quando encontram um ambiente ácido, com pH próximo a 5.0."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para manter esse ambiente ácido, a célula utiliza a V-ATPase, uma bomba molecular que consome ATP para bombear prótons (H+) do citosol para dentro do lúmen dessa organela. É um investimento energético constante para manter o 'fogo' da digestão contido."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense no lisossomo como um forno de alta temperatura em uma cozinha industrial. O citoplasma é o salão de clientes. Mapeamento: Lisossomo = Forno; Hidrolases = Chefs especialistas; V-ATPase = Sistema de aquecimento que consome energia; pH 5.0 = Temperatura de cozimento; pH 7.2 = Temperatura ambiente do salão. Se o forno quebra (falha na V-ATPase), as enzimas não cozinham e o 'prato' (macromolécula) não é processado."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O pH ácido não é apenas um subproduto, é um mecanismo de segurança biológica: se uma hidrolase vazar para o citosol, o pH neutro a inativará quase instantaneamente, protegendo a célula da autodigestão."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire. Visualize o gradiente de prótons sendo estabelecido pela V-ATPase. Sem esse gasto de ATP, o lisossomo perderia sua acidez e, consequentemente, sua função biológica."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Lisossomo",
+      "origem": "grego",
+      "significado": "Lysis (dissolução) + Soma (corpo)",
+      "explicacao": "Batizado por Christian de Duve, descreve precisamente sua função: um corpo celular especializado em dissolver substâncias."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a membrana do lisossomo fosse totalmente permeável a íons H+, o que aconteceria?",
+      "resposta": "O gradiente de pH colapsaria. O interior da organela atingiria o pH 7.2 do citosol, as hidrolases perderiam sua atividade catalítica e a célula acumularia macromoléculas não digeridas, levando à morte celular ou patologias de depósito."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Arquitetura do Lisossomo e a V-ATPase",
+      "descricao": "Esquema mostrando a membrana lisossomal, a bomba V-ATPase bombeando H+ para dentro, e as hidrolases ácidas representadas como tesouras ativas apenas no interior ácido.",
+      "prompt_ia": "Scientific diagram of a lysosome cross-section, showing V-ATPase pumps embedded in the membrane, hydrogen ions moving inside, acidic interior (low pH 5), inactive enzymes in the cytosol, active enzymes inside, realistic biological style, high detail, clean background.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-02-005-01-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual a vantagem evolutiva de as hidrolases lisossomais serem pH-dependentes?",
+      "resposta": "Isso atua como um mecanismo de segurança: caso a membrana do lisossomo se rompa, as enzimas são inativadas pelo pH neutro do citosol, evitando a autodigestão da célula.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "segurança",
+        "enzimas",
+        "lisossomo"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-02-005-01-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se a V-ATPase fosse bloqueada por uma toxina?",
+      "resposta": "O pH intralisossomal subiria para níveis neutros, inativando as hidrolases ácidas. Isso causaria um acúmulo de substratos não digeridos, simulando uma doença de depósito lisossômico.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "V-ATPase",
+        "pH",
+        "patologia"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-02-005-01-fc03",
+      "tipo": "mecanismo",
+      "pergunta": "Por que a célula gasta ATP para manter o ambiente ácido dentro de uma organela?",
+      "resposta": "O transporte de prótons contra o gradiente de concentração (do citosol para o lúmen lisossômico) é um processo endergônico, exigindo energia para garantir que a digestão ocorra em condições ótimas.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "bioenergética",
+        "transporte"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-02-005-01-fc04",
+      "tipo": "comparacao",
+      "pergunta": "Compare o pH do citosol com o pH do lúmen lisossômico e explique a importância dessa diferença.",
+      "resposta": "Citosol (~7.2) vs Lisossomo (~5.0). Essa diferença de ~2 unidades de pH (escala logarítmica, logo 100x mais ácido) é o que permite a seletividade catalítica das hidrolases.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": [
+        "pH",
+        "gradiente"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-02-005-01-fc05",
+      "tipo": "etimologia",
+      "pergunta": "Como a etimologia de 'lisossomo' explica sua função?",
+      "resposta": "Deriva de 'lysis' (dissolução) e 'soma' (corpo). Indica que a organela é, estruturalmente, um corpo especializado em realizar a lise (quebra/digestão) de substâncias.",
+      "dificuldade": 1,
+      "nivel_alvo": 1,
+      "tags": [
+        "etimologia",
+        "função"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-02-005-01-caso01",
+      "titulo": "Lactente com ossos densos demais e fraturas frequentes",
+      "apresentacao": "Lactente de 4 meses, sexo masculino, encaminhado por hepatoesplenomegalia e anemia progressiva. Os pais relatam que o filho já teve duas fraturas com trauma mínimo. Radiografia de esqueleto mostra ossos generalizadamente mais densos que o normal, com perda da diferenciação entre córtex e medula óssea. Hemograma mostra pancitopenia. O pediatra suspeita de uma doença rara do metabolismo ósseo e solicita avaliação genética.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação em genes que codificam subunidades da bomba V-ATPase (como o gene TCIRG1), a mesma bomba de prótons que acidifica o interior de lisossomos — mas que, nos osteoclastos, é inserida na membrana voltada para o osso para criar a 'lacuna de reabsorção' ácida."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A borda em escova do osteoclasto, onde a V-ATPase deveria bombear H+ para fora da célula (para o espaço entre o osteoclasto e a matriz óssea), formando um microambiente ácido equivalente ao interior de um lisossomo voltado ao contrário."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem acidificação eficiente desse espaço extracelular confinado, as enzimas que dissolvem a matriz mineral óssea não são ativadas — o mesmo princípio visto no lisossomo, em que hidrolases só funcionam em pH ácido. O osteoclasto perde a capacidade de reabsorver osso, mesmo estando presente e morfologicamente reconhecível."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O osso, formado normalmente mas nunca remodelado, se acumula em excesso: ossos densos e frágeis ao mesmo tempo (a densidade não significa resistência mecânica normal), com fraturas frequentes. O acúmulo de osso primário invade a cavidade medular, comprimindo a medula óssea produtora de células sanguíneas — daí a anemia, a pancitopenia e a hepatoesplenomegalia compensatória (hematopoiese extramedular)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O diagnóstico é a osteopetrose infantil maligna, uma doença grave e progressiva. Sem tratamento, a insuficiência medular e as complicações neurológicas por compressão de forames cranianos são frequentemente fatais na infância. O tratamento definitivo é o transplante de células-tronco hematopoiéticas, porque os osteoclastos derivam da linhagem hematopoiética — substituir a fonte celular restaura a função da bomba."
+        }
+      ],
+      "conexao_com_bloco": "O caso usa exatamente o princípio central do bloco — que hidrolases e bombas de prótons dependem de um microambiente ácido criado pela V-ATPase — mas mostra essa mesma maquinaria funcionando 'ao contrário' fora da célula, no osteoclasto. Reforça que a acidificação por V-ATPase não é exclusividade do lisossomo: é um princípio geral de bioquímica celular reaproveitado em diferentes contextos, e sua falha tem consequências proporcionais à importância do tecido afetado.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "genética médica",
+        "pediatria",
+        "ortopedia"
+      ],
+      "diagnostico_revelado": "Osteopetrose infantil maligna por deficiência de V-ATPase osteoclástica (mutação em TCIRG1).",
+      "tratamento_resumido": "Transplante de células-tronco hematopoiéticas como tratamento definitivo (restaura osteoclastos funcionais); suporte hematológico (transfusões) e monitoramento de complicações neurológicas por compressão até o transplante."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-01-001",
+        "titulo": "Visão Geral da Célula Eucariótica",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "O lisossomo é uma organela membranosa; entender a bicamada lipídica é essencial para compreender como ela mantém o gradiente de H+."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Doenças de Depósito Lisossômico",
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "A falha na degradação de macromoléculas por deficiência de hidrolases leva ao acúmulo de substratos (ex: Doença de Gaucher).",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "ANALOGIA",
+        "topico": "Proteassomo",
+        "explicacao": "Enquanto o lisossomo degrada organelas e grandes complexos via pH, o proteassomo degrada proteínas específicas marcadas por ubiquitina no citosol."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-02-005-01",
   "no_pai_id": "s1-biocel-02-005",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Hidrolases Ácidas e o Interior Ácido",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Enzimas em pH 5; bomba de prótons vacuolar",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "fisiologia"
-  ]
+  }
 }

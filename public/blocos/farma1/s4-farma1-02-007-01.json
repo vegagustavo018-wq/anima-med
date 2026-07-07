@@ -2,53 +2,349 @@
   "resumo_id": "s4-farma1-02-007-01",
   "no_pai_id": "s4-farma1-02-007",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-01-004-03",
+    "s4-farma1-01-003-02"
+  ],
   "metadata": {
     "titulo": "Interações Farmacocinéticas",
+    "subtitulo": "Como um fármaco muda o trajeto de outro sem tocar no seu alvo?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "interacoes-medicamentosas",
+      "farmacocinetica",
+      "cyp450",
+      "ligacao-proteica",
+      "polifarmacia",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Alteração de ADME entre fármacos; foco em CYP e ligação proteica",
-  "narrativa": [],
+  "resumo_conciso": "A visão geral de interações medicamentosas separou o fenômeno em duas metades: trajeto alterado (farmacocinética) e efeito alterado (farmacodinâmica). Este bloco abre a primeira metade e pergunta: por quais rotas concretas um fármaco consegue mudar o trajeto de outro? A resposta é que qualquer uma das quatro etapas farmacocinéticas — absorção, distribuição, metabolismo, excreção — pode ser usada por um fármaco como ponto de interferência sobre outro, porque todas dependem de recursos do corpo com capacidade finita e compartilhada: transportadores de membrana no intestino, sítios de ligação em proteínas plasmáticas, enzimas hepáticas do sistema CYP450, transportadores tubulares no rim. Já se estudou em separado como a ligação a proteínas plasmáticas cria uma fração livre deslocável e como a indução e a inibição enzimática alteram a quantidade ou a atividade do CYP450 — o que este bloco acrescenta é a lente que organiza esses mecanismos (e mais dois, na absorção e na excreção) sob um único princípio: interação farmacocinética é sempre disputa por um recurso limitado do corpo, nunca ação direta de um fármaco sobre o outro. Reconhecer em qual das quatro etapas a disputa ocorre é o que permite prever se o resultado será perda de eficácia ou acúmulo tóxico — e é a base racional da checagem de interações em qualquer paciente polimedicado.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "A visão geral anterior deixou uma pergunta em aberto: se uma interação farmacocinética é definida como 'um fármaco muda quanto do outro chega, ou por quanto tempo ele fica', onde exatamente, dentro do corpo, essa mudança acontece? A resposta não é um único lugar — são quatro, um para cada etapa que todo fármaco já percorre sozinho."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: todo recurso que o corpo usa para processar um fármaco é compartilhado"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Absorção, distribuição, metabolismo e excreção não são processos exclusivos de um fármaco. Cada etapa depende de uma estrutura física do corpo — um transportador de membrana, uma proteína plasmática, uma enzima hepática, um túbulo renal — e essa estrutura tem número finito de cópias e de sítios disponíveis. Quando apenas um fármaco está presente, essa capacidade finita quase nunca é um problema perceptível: sobra recurso de sobra. O problema aparece quando um segundo fármaco, com necessidade pela mesma estrutura, entra em cena."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É esse compartilhamento — não alguma reação química direta entre as duas moléculas — que caracteriza toda interação farmacocinética. Os dois fármacos nem precisam se tocar: basta que ambos precisem do mesmo transportador, da mesma enzima ou da mesma proteína carreadora para que um comece a interferir na disponibilidade que o outro tem daquele recurso."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: uma interação farmacocinética nunca é o fármaco A reagindo com o fármaco B. É os dois competindo pelo mesmo recurso limitado do corpo — um transportador, uma proteína, uma enzima — e um deles perdendo parte do acesso que teria se estivesse sozinho."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: quatro pontos de disputa, um em cada etapa"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução para localizar qualquer interação farmacocinética é percorrer as quatro etapas já conhecidas da jornada do fármaco e perguntar, em cada uma, se existe ali um recurso compartilhável entre dois fármacos específicos. Isso não exige mecanismo novo — exige aplicar a mesma pergunta quatro vezes."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Absorção, distribuição, metabolismo e excreção são as quatro portas pelas quais uma interação farmacocinética pode entrar. Nenhuma etapa é imune; a etapa que mais concentra interações clinicamente relevantes é o metabolismo, mas não é a única."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito: os mesmos transportadores, proteínas e enzimas de sempre"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na absorção, o ponto de disputa mais comum é o transportador de efluxo intestinal glicoproteína-P, presente na borda apical do enterócito. Ela bombeia de volta ao lume uma fração de certos fármacos que já haviam entrado na célula, reduzindo a quantidade que efetivamente chega ao sangue. Um fármaco que inibe a glicoproteína-P (por exemplo, alguns antifúngicos azólicos) aumenta a absorção de outro fármaco que normalmente seria bombeado de volta — mais fármaco atravessa, a concentração plasmática sobe. Um fármaco que ativa a produção dessa bomba tem o efeito oposto. Vale notar que outra via de interação na absorção não depende de transportador nenhum: fármacos que formam complexos insolúveis com cátions — como o cálcio de antiácidos ou laticínios ligando-se a certos antibióticos — simplesmente impedem a passagem física pela mucosa, sem envolver proteína alguma."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na distribuição, o ponto de disputa já foi detalhado em profundidade: a ligação a proteínas plasmáticas. Fármacos que competem pelos mesmos sítios da albumina ou da alfa-1-glicoproteína ácida podem se deslocar mutuamente, elevando a fração livre — a única farmacologicamente ativa — de quem foi deslocado, exatamente como visto no mecanismo de deslocamento competitivo já estudado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No metabolismo, o ponto de disputa é o sistema CYP450: indução (mais enzima, efeito lento, dias a semanas) e inibição (mesma quantidade de enzima com menos atividade, ou enzima destruída, efeito rápido, horas) alteram a velocidade de biotransformação de qualquer fármaco que dependa da isoforma afetada — mecanismo já aprofundado anteriormente e responsável pela maior fração de interações farmacocinéticas clinicamente relevantes, dada a centralidade da CYP3A4."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na excreção, o ponto de disputa mais estudado ocorre nos transportadores tubulares renais que secretam ácidos e bases orgânicas ativamente para dentro do túbulo. Dois fármacos ácidos que competem pelo mesmo transportador de ânions orgânicos podem reduzir a secreção tubular um do outro, prolongando a meia-vida de quem perdeu a disputa. O exemplo clássico é a probenecida, historicamente usada de propósito para competir com a penicilina por esse transportador e prolongar sua permanência no corpo — uma interação farmacocinética explorada terapeuticamente, não apenas sofrida como efeito adverso."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona: uma disputa pode se somar a outra"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O caso da varfarina com um anti-inflamatório não esteroidal, já visto no mecanismo de deslocamento proteico, ilustra bem uma etapa isolada. Mas nada impede que dois fármacos disputem recursos em mais de uma etapa ao mesmo tempo, e é essa sobreposição que costuma produzir os quadros clínicos mais graves."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Disputa simultânea em duas etapas: um fármaco que inibe metabolismo e desloca ligação proteica do mesmo alvo",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Situação de base",
+          "explicacao": "Um fármaco X, altamente ligado à albumina e metabolizado pela CYP3A4, está em uso crônico com dose ajustada para essa condição basal."
+        },
+        {
+          "numero": 2,
+          "titulo": "Chegada de um fármaco Y com dupla afinidade",
+          "explicacao": "O fármaco Y introduzido é, ao mesmo tempo, ácido (compete pela albumina) e inibidor da CYP3A4 (compete pela enzima que elimina X)."
+        },
+        {
+          "numero": 3,
+          "titulo": "Duas disputas simultâneas",
+          "explicacao": "Y desloca X de parte dos sítios da albumina, aumentando a fração livre de X. Ao mesmo tempo, Y ocupa o bolso catalítico da CYP3A4, reduzindo a velocidade com que X é eliminado."
+        },
+        {
+          "numero": 4,
+          "titulo": "Efeito somado, não apenas isolado",
+          "explicacao": "Mais fração livre de X circulando e menos X sendo eliminado por unidade de tempo se somam: a concentração livre de X sobe mais, e por mais tempo, do que qualquer um dos dois mecanismos produziria sozinho."
+        },
+        {
+          "numero": 5,
+          "titulo": "Consequência clínica",
+          "explicacao": "Para um fármaco de faixa terapêutica estreita, essa soma de disputas pode ser suficiente para levar de uma dose bem ajustada a um quadro de toxicidade, em prazo mais curto do que o esperado para qualquer mecanismo isolado."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse tipo de sobreposição é uma das razões pelas quais prever a magnitude exata de uma interação farmacocinética a partir apenas da teoria é difícil — na prática clínica, tabelas de interação e sistemas de alerta em prescrição eletrônica existem justamente para sinalizar combinações já documentadas, porque calcular do zero, para cada par de fármacos, quantas etapas estão sendo disputadas simultaneamente é impraticável à beira do leito."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco é o ponto de convergência dos dois mecanismos moleculares já estudados separadamente — deslocamento por ligação proteica e indução/inibição do CYP450 — sob uma mesma lente organizadora, e acrescenta a eles as disputas por absorção e por excreção, completando o quadro das quatro etapas farmacocinéticas como possíveis pontos de interação. A metade irmã deste tema, a interação farmacodinâmica (quando o efeito muda sem a concentração mudar), é tratada à parte, porque obedece a uma lógica diferente: convergência de efeito no alvo, não disputa por recurso de trânsito."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica de polifarmácia, especialmente em pacientes idosos com múltiplas comorbidades, a pergunta 'em qual das quatro etapas esses dois fármacos podem estar competindo?' é o primeiro filtro de segurança antes de associar qualquer novo medicamento a um esquema já estabelecido — e é essa pergunta, aplicada sistematicamente, que sustenta a lógica por trás das tabelas de interação medicamentosa usadas em prescrição eletrônica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "farmacocinética",
+      "origem": "do grego phármakon (fármaco, remédio, mas também veneno) + kínēsis (movimento)",
+      "significado": "literalmente, 'o movimento do fármaco' — o estudo de como o fármaco se move através do corpo",
+      "explicacao": "O termo já indica, desde a raiz, que o objeto de estudo é o trajeto, não o destino: kínēsis descreve deslocamento, não o efeito final de chegar a algum lugar. É por isso que 'interação farmacocinética' descreve com exatidão o fenômeno deste bloco — não é o efeito de um fármaco sobre o outro que está em jogo, é o movimento de um sendo alterado pela presença do outro. A ambiguidade de phármakon, que em grego significava tanto remédio quanto veneno, também é pedagogicamente relevante aqui: a mesma interação de trajeto que causa toxicidade em um contexto (dose descontrolada) é usada de propósito em outro (a probenecida prolongando a penicilina), mostrando que 'remédio' e 'veneno' sempre dependeram da dose e do contexto, nunca da substância isolada."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛂",
+      "conteudo": "Retome a alfândega usada para explicar o CYP450: uma fila de guichês processando passageiros. Agora imagine essa alfândega completa, com quatro postos de controle em sequência: a entrada do país (absorção), o depósito onde a bagagem fica temporariamente retida antes de seguir viagem (ligação a proteínas plasmáticas), a inspeção que processa e libera cada item (metabolismo hepático) e a saída final pela fronteira (excreção renal). Uma interação farmacocinética é sempre uma disputa por vaga em um desses quatro postos: dois passageiros (fármacos) tentando usar a mesma esteira de bagagem na entrada, o mesmo depósito de retenção, o mesmo guichê de inspeção ou a mesma saída. Quando um deles ocupa a vaga primeiro, ou por mais tempo, o outro passa mais devagar (fica retido, sua concentração cai) ou passa mais rápido do que deveria (encontra o posto sobrecarregado ou incapacitado, atravessa sem ser plenamente processado, sua concentração sobe). A analogia quebra em um ponto: numa alfândega real, os quatro postos são fisicamente sequenciais e um passageiro só chega ao segundo depois de vencer o primeiro; no corpo, absorção, distribuição, metabolismo e excreção acontecem em paralelo e de forma contínua, com o mesmo fármaco sendo processado em mais de uma etapa ao mesmo tempo — não há uma fila única e ordenada, há várias disputas simultâneas acontecendo em paralelo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se dois fármacos não competem nem pela mesma enzima do CYP450 nem pela mesma proteína plasmática, é seguro concluir que não há risco de interação farmacocinética entre eles?",
+      "resposta": "Não. Metabolismo e ligação proteica são as duas etapas mais estudadas e mais ricas em exemplos clínicos, mas não são as únicas portas de entrada. Os dois fármacos ainda podem competir por um transportador de efluxo intestinal (absorção) ou por um transportador tubular renal (excreção), ou um deles pode formar complexo insolúvel com o outro antes mesmo de qualquer proteína ou enzima entrar em cena. Concluir 'sem risco' apenas checando CYP450 e ligação proteica é examinar dois dos quatro postos de controle e ignorar os outros dois — a checagem completa exige percorrer as quatro etapas, não apenas as mais lembradas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Imagem"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "As quatro portas de uma interação farmacocinética",
+      "descricao": "Esquema linear horizontal com quatro estações rotuladas em sequência: 'Absorção (transportador intestinal / complexação)', 'Distribuição (ligação a proteínas plasmáticas)', 'Metabolismo (CYP450: indução/inibição)' e 'Excreção (transportadores tubulares renais)'. Em cada estação, dois ícones de molécula de cores diferentes (fármaco A e fármaco B) disputando o mesmo ícone de estrutura compartilhada (transportador, proteína ou enzima), com uma seta indicando qual fármaco tem sua concentração aumentada ou reduzida como resultado. Legendas curtas em português. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno, em português. Estrutura linear horizontal com quatro estações numeradas e conectadas por uma seta contínua da esquerda para a direita, representando as quatro etapas farmacocinéticas. Estação 1, rotulada 'ABSORÇÃO': um ícone de parede intestinal com um transportador de efluxo, duas moléculas romboides de cores diferentes (fármaco A em azul, fármaco B em verde) disputando a mesma proteína transportadora. Estação 2, rotulada 'DISTRIBUIÇÃO': um ícone de proteína plasmática globular com sítios de ligação, as mesmas duas moléculas competindo pelo mesmo sítio, uma seta mostrando aumento da fração livre. Estação 3, rotulada 'METABOLISMO': um ícone de enzima hepática estilizada (CYP450), uma molécula ocupando o bolso catalítico e bloqueando a outra, com uma seta mostrando acúmulo. Estação 4, rotulada 'EXCREÇÃO': um ícone de túbulo renal com um transportador ativo, as duas moléculas competindo pela mesma via de secreção tubular, seta mostrando meia-vida prolongada. Cores consistentes entre as quatro estações, legendas curtas em português abaixo de cada uma, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-007",
+        "titulo": "Interações Medicamentosas (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já ter visto a bifurcação entre interação de trajeto (farmacocinética) e interação de efeito (farmacodinâmica) antes de abrir especificamente a metade cinética e detalhar suas quatro portas de entrada."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 7,
+        "topico": "Revisão sistemática de prescrições em polifarmácia",
+        "mecanismo_conexao": "A checagem das quatro etapas farmacocinéticas apresentada aqui como método é o esqueleto racional por trás de qualquer revisão de prescrição em paciente com múltiplas comorbidades e múltiplos fármacos.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Farmacologia dos antimicrobianos — interações por indução/inibição do CYP450",
+        "mecanismo_conexao": "Rifampicina, antifúngicos azólicos e macrolídeos, estudados em detalhe em farmacologia de sistemas, reaparecem como os indutores e inibidores mais clinicamente relevantes do CYP3A4 introduzidos aqui em nível de princípio geral.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-004-03",
+        "tipo_relacao": "APROFUNDAMENTO_PREVIO",
+        "explicacao": "O mecanismo de indução e inibição enzimática do CYP450, aqui referenciado como a etapa de metabolismo, foi detalhado por completo naquele bloco — incluindo cinéticas distintas (dias versus horas) e os exemplos da rifampicina e do suco de toranja. Este bloco não repete o mecanismo, apenas o posiciona como uma das quatro portas de interação."
+      },
+      {
+        "bloco_id": "s4-farma1-01-003-02",
+        "tipo_relacao": "APROFUNDAMENTO_PREVIO",
+        "explicacao": "O mecanismo de deslocamento competitivo por ligação a proteínas plasmáticas, aqui referenciado como a etapa de distribuição, foi detalhado por completo naquele bloco — incluindo o exemplo da varfarina com anti-inflamatórios não esteroidais. Este bloco não repete o mecanismo, apenas o posiciona como uma das quatro portas de interação."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-007-01-fc01",
+      "pergunta": "Por que toda interação farmacocinética pode ser descrita como uma disputa por recurso limitado, e não como uma reação direta entre dois fármacos?",
+      "resposta": "Porque absorção, distribuição, metabolismo e excreção dependem de estruturas físicas do corpo — transportadores de membrana, proteínas plasmáticas, enzimas hepáticas, transportadores tubulares — que existem em número finito. Os dois fármacos não precisam reagir quimicamente entre si: basta que ambos precisem da mesma estrutura para que um interfira na disponibilidade que o outro tem dela.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["interacoes-medicamentosas", "farmacocinetica", "recurso-compartilhado"]
+    },
+    {
+      "card_id": "s4-farma1-02-007-01-fc02",
+      "pergunta": "Cite as quatro etapas farmacocinéticas em que uma interação medicamentosa pode ocorrer, com um exemplo de estrutura compartilhada disputada em cada uma.",
+      "resposta": "Absorção: transportador de efluxo glicoproteína-P na borda apical do enterócito (ou complexação física com cátions). Distribuição: sítios de ligação na albumina ou na alfa-1-glicoproteína ácida. Metabolismo: isoformas do sistema CYP450, por indução ou inibição. Excreção: transportadores tubulares renais de secreção ativa de ácidos ou bases orgânicas.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["interacoes-medicamentosas", "absorcao", "distribuicao", "metabolismo", "excrecao"]
+    },
+    {
+      "card_id": "s4-farma1-02-007-01-fc03",
+      "pergunta": "Um fármaco X, altamente ligado à albumina e metabolizado pela CYP3A4, recebe um fármaco Y que é simultaneamente ácido (compete pela albumina) e inibidor da CYP3A4. Por que o risco de toxicidade de X tende a ser maior do que se Y atuasse em apenas uma dessas duas etapas?",
+      "resposta": "Porque as duas disputas se somam: o deslocamento da ligação proteica aumenta a fração livre de X, e a inibição enzimática reduz a velocidade com que essa fração livre é eliminada. O resultado é mais fármaco ativo circulando e por mais tempo — um efeito maior do que qualquer um dos dois mecanismos produziria isoladamente, o que é especialmente perigoso para fármacos de faixa terapêutica estreita.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["interacoes-medicamentosas", "ligacao-proteica", "cyp450", "sobreposicao"]
+    },
+    {
+      "card_id": "s4-farma1-02-007-01-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Se dois fármacos não competem pelo CYP450 nem pela ligação a proteínas plasmáticas, pode-se concluir que não há risco de interação farmacocinética entre eles.'",
+      "resposta": "Falso. Metabolismo e ligação proteica são apenas duas das quatro portas de interação. Os fármacos ainda podem competir por um transportador de efluxo intestinal (absorção) ou por um transportador tubular renal (excreção), ou formar complexo insolúvel um com o outro. Descartar risco checando só duas das quatro etapas é uma checagem incompleta.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["interacoes-medicamentosas", "absorcao", "excrecao", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s4-farma1-02-007-01-fc05",
+      "pergunta": "Como a probenecida foi historicamente usada de propósito para prolongar o efeito da penicilina, e qual etapa farmacocinética esse uso explora?",
+      "resposta": "A probenecida compete com a penicilina pelo mesmo transportador tubular renal de secreção ativa de ácidos orgânicos (etapa de excreção). Ao ocupar esse transportador, ela reduz a secreção tubular de penicilina, prolongando sua meia-vida e sua permanência em concentração terapêutica no corpo — um exemplo de interação farmacocinética explorada deliberadamente como estratégia terapêutica, não sofrida como efeito adverso.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["interacoes-medicamentosas", "excrecao", "probenecida", "penicilina"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-007-01-caso01",
+      "titulo": "Toxicidade digitálica após início de antifúngico em paciente idoso polimedicado",
+      "apresentacao": "Homem de 81 anos, em uso crônico e estável de digoxina para insuficiência cardíaca, inicia itraconazol para onicomicose ungueal extensa, prescrito por outro profissional sem revisão da lista de medicamentos em uso. Três semanas depois, é levado ao pronto-socorro por náuseas, visão com halos amarelados e um episódio de arritmia. Dosagem sérica de digoxina revela concentração acima da faixa terapêutica, sem que a dose prescrita tenha sido alterada.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O itraconazol é um potente inibidor da glicoproteína-P intestinal, o mesmo transportador de efluxo que normalmente bombeia parte da digoxina absorvida de volta ao lume intestinal, limitando sua entrada na circulação."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A glicoproteína-P da borda apical do enterócito — etapa de absorção, não de metabolismo. A digoxina não é substrato relevante do CYP450, o que torna esse mecanismo fácil de ser esquecido por quem procura apenas interações via enzimas hepáticas."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a bomba de efluxo inibida, uma fração maior da digoxina ingerida permanece dentro do enterócito e é absorvida para o sangue, em vez de ser devolvida ao lume. A biodisponibilidade da digoxina sobe, mesmo com a mesma dose oral de sempre."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Concentração sérica de digoxina acima da faixa terapêutica, produzindo o quadro clássico de toxicidade digitálica: náuseas, alterações visuais (halos amarelados) e arritmia cardíaca."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Suspensão do itraconazol, monitorização da digoxinemia até normalização, e reforço de que qualquer novo fármaco introduzido em paciente usando digoxina deve ser checado quanto à interação com glicoproteína-P — não apenas quanto ao CYP450, etapa mais lembrada mas não a única relevante neste caso."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra exatamente a etapa de absorção como porta de interação farmacocinética, a menos lembrada das quatro na prática clínica cotidiana, e reforça por que a pergunta 'em qual das quatro etapas essa combinação pode estar competindo?' precisa ser aplicada de forma completa, não restrita aos mecanismos mais conhecidos de metabolismo e ligação proteica.",
+      "disciplinas_relacionadas": ["farmacologia", "clinica", "geriatria", "cardiologia"],
+      "diagnostico_revelado": "Toxicidade digitálica por aumento da biodisponibilidade da digoxina secundário à inibição da glicoproteína-P intestinal pelo itraconazol.",
+      "tratamento_resumido": "Suspensão do itraconazol, suporte clínico para a arritmia conforme gravidade, monitorização seriada da digoxinemia até retorno à faixa terapêutica, e reintrodução do tratamento antifúngico com alternativa que não interfira na glicoproteína-P, caso ainda necessário."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-007-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw-Hill; 2023. Capítulo 4 — Drug Interactions.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 66 — Important Drug Interactions and Their Mechanisms.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 57 — Drug Interactions.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

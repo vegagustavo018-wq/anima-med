@@ -4,49 +4,219 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Massa Anexial — Diferenciação Benigno vs Maligno",
+    "titulo": "Massa Anexial - Diferenciacao Benigno vs Maligno",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "diagnostico",
+      "clinica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Cistos funcionais, teratoma, endometrioma; critérios de USG; CA-125",
-  "narrativa": [],
+  "resumo_conciso": "Massa anexial deve ser avaliada por idade, sintomas, menopausa, ultrassom e marcadores. Achados sólidos, papilas, septos espessos, ascite e vascularização aumentam suspeita de malignidade.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Massa anexial é achado, não diagnóstico. Pode ser cisto funcional, corpo lúteo, endometrioma, teratoma, hidrossalpinge, abscesso tubo-ovariano, gravidez ectópica ou câncer."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A idade e o estado menopausal mudam risco. Cistos simples em mulheres jovens frequentemente são funcionais; massa complexa em pós-menopausa exige mais cautela."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ultrassom transvaginal é exame central. Tamanho, conteúdo, parede, septos, projeções papilares, componente sólido, bilateralidade, vascularização e ascite orientam risco."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Características benignas incluem cisto simples, unilocular, parede fina e sem componente sólido. Endometrioma pode ter conteúdo em vidro fosco; teratoma pode ter sombra acústica e componentes gordurosos/calcificados."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sinais de alerta para malignidade incluem papilas, áreas sólidas, septos grossos, irregularidade, ascite, implantes, bilateralidade e crescimento persistente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "CA-125 pode ajudar, especialmente em pós-menopausa, mas é inespecífico: sobe em endometriose, miomas, DIP, menstruação e outras doenças. Valor normal não exclui câncer inicial."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Massa suspeita deve ser encaminhada para equipe com experiência em oncologia ginecológica, porque a primeira cirurgia influencia estadiamento, citorredução e prognóstico."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-07-000",
+        "titulo": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-05-005",
+        "titulo": "Hiperplasia Endometrial - Precursora do Cancer de Endometrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-032",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Ovário — Diagnóstico, Estadiamento e Tratamento",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Vulva e Vagina",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-04-006",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Adenomiose - Endometrio Invadindo o Miometrio"
+      },
+      {
+        "bloco_id": "s7-go1-06-040",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com HIV e Outras ISTs na Saude da Mulher"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-08-031-fc-01",
+      "pergunta": "Qual exame central na massa anexial?",
+      "resposta": "Ultrassom transvaginal.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-031-fc-02",
+      "pergunta": "Quais achados sugerem malignidade?",
+      "resposta": "Componente sólido, papilas, septos espessos, ascite, irregularidade e vascularização suspeita.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-031-fc-03",
+      "pergunta": "CA-125 é específico para câncer de ovário?",
+      "resposta": "Não. Pode subir em várias condições benignas e inflamatórias.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-031-fc-04",
+      "pergunta": "Por que encaminhar massa suspeita?",
+      "resposta": "Porque cirurgia inicial adequada influencia estadiamento e prognóstico.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-08-031-cc-01",
+      "titulo": "Cisto simples ou risco?",
+      "apresentacao": "Mulher de 62 anos tem massa anexial complexa com papilas e ascite discreta. CA-125 está moderadamente elevado.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Massa anexial deve ser avaliada por idade, sintomas, menopausa, ultrassom e marcadores."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Massa Anexial - Diferenciacao Benigno vs Maligno, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Massa anexial deve ser avaliada por idade, sintomas, menopausa, ultrassom e marcadores. Achados sólidos, papilas, septos espessos, ascite e vascularização aumentam suspeita de malignidade."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 62 anos tem massa anexial complexa com papilas e ascite discreta. CA-125 está moderadamente elevado."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual conduta conceitual? Tratar como massa suspeita e encaminhar para oncologia ginecológica, evitando cirurgia inadequada."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Tratar como massa suspeita e encaminhar para oncologia ginecológica, evitando cirurgia inadequada.",
+      "tratamento_resumido": "Tratar como massa suspeita e encaminhar para oncologia ginecológica, evitando cirurgia inadequada."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Tabela de ultrassom de massa anexial: cisto simples, endometrioma, teratoma e sinais de malignidade com ascite.",
+        "alt": "Ilustracao educacional para Massa Anexial - Diferenciacao Benigno vs Maligno"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Cervical Cancer Treatment",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Endometrial Cancer Treatment",
+      "url": "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "diagnostico",
     "clinica"

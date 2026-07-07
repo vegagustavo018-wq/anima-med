@@ -5,31 +5,169 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Astigmatismo — Meridiano que Foca Diferente",
+    "subtitulo": "Como a curvatura corneal irregular em dois meridianos perpendiculares gera astigmatismo e como corrigi-lo?",
     "semestre": 6,
-    "disciplina": "Oftalmologia",
-    "profundidade_arvore": 4,
+    "disciplina": "oftal",
+    "sistema_corporal": "sensorial",
+    "regiao_anatomica": "olho",
+    "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 8,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "oftal",
-      "esqueleto"
+      "astigmatismo",
+      "meridiano-principal",
+      "astigmatismo-direto",
+      "astigmatismo-inverso",
+      "astigmatismo-obliquo",
+      "ceratometria",
+      "eixo",
+      "grau",
+      "lente-cilindrica",
+      "torica",
+      "ceratocone",
+      "conduta"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "mecanismo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Córnea toroidal; linhas focais; correção cilíndrica; regular vs irregular",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior, estudamos hipermetropia. Agora, estudamos o astigmatismo. O principal desafio consiste em compreender que a córnea normal não é perfeitamente esférica mas levemente ovalada, e que no astigmatismo essa assimetria é patológica: dois meridianos perpendiculares têm curvaturas diferentes, gerando dois focos distintos que produzem imagem borrada em qualquer distância. A classificação (direto, inverso, oblíquo) depende do eixo do meridiano mais curvo. A correção é por lentes cilíndricas (tóricas). Astigmatismo irregular irregular (ceratocone) exige lentes rígidas ou cirurgia.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, aprendemos sobre hipermetropia e suas repercussões no estrabismo acomodativo. O astigmatismo é a ametropia mais sutilmente incapacitante: ao contrário da miopia (borrão só ao longe) ou da hipermetropia (borrão compensável), o astigmatismo gera borrão em qualquer distância. Como a geometria da córnea explica os diferentes tipos de astigmatismo e como a lente cilíndrica os corrige?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Córnea Normal vs. a Córnea Astigmata"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A córnea normal é quase esférica, com poder levemente maior no meridiano vertical (~0.5D maior que o horizontal) — o chamado astigmatismo fisiológico, corrigível pelo cristalino. No astigmatismo patológico, os dois meridianos principais perpendiculares têm poderes dióptricos significativamente diferentes: um curvado demais, outro curvado de menos. Resultado: raios de luz no plano vertical focam em distância diferente dos raios no plano horizontal → dois focos distintos → conóide de Sturm → imagem borrada em qualquer distância."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Classificação por Eixo"
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Comparação: Eixo do Meridiano Mais Curvo vs Exemplo de Correção",
+      "colunas": [
+        "Tipo",
+        "Eixo do Meridiano Mais Curvo",
+        "Exemplo de Correção"
+      ],
+      "linhas": [
+        {
+          "Tipo": "Astigmatismo Direto (a favor da regra)",
+          "Eixo do Meridiano Mais Curvo": "Vertical (próximo a 90°) — mais comum em jovens",
+          "Exemplo de Correção": "Cilindro no eixo 180°"
+        },
+        {
+          "Tipo": "Astigmatismo Inverso (contra a regra)",
+          "Eixo do Meridiano Mais Curvo": "Horizontal (próximo a 180°) — mais comum em idosos",
+          "Exemplo de Correção": "Cilindro no eixo 90°"
+        },
+        {
+          "Tipo": "Astigmatismo Oblíquo",
+          "Eixo do Meridiano Mais Curvo": "Eixo entre 30-60° ou 120-150°",
+          "Exemplo de Correção": "Cilindro em eixo oblíquo"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Astigmatismo Irregular e Ceratocone"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No astigmatismo irregular (como o ceratocone), os meridianos não são perpendiculares entre si e a curvatura não é uniforme dentro de cada meridiano — resultado de uma córnea cônica em progressão. Lentes de óculos não corrigem adequadamente; necessita-se de lentes de contato rígidas permeáveis ao gás (que substituem a superfície corneal irregular) ou, nos casos avançados, transplante de córnea (ceratoplastia penetrante) ou implante de anéis intraestromais (Ferrara)."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🥚",
+      "conteudo": "Um espelho esférico faz reflexo perfeito de círculos. Se deformarmos o espelho para que a seção vertical seja mais curva que a horizontal (como a lateral de um ovo), raios de luz verticais focam mais perto e raios horizontais focam mais longe — gerando dois focos separados. A lente cilíndrica corretora é como um segundo espelho côncavo posicionado perpendicularmente ao eixo mais curvo, que 'nivela' o poder dióptrico dos dois meridianos para que ambos foquem ao mesmo ponto."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-oftal-02-001",
+        "titulo": "Visão Geral das Ametropias",
+        "disciplina": "oftal",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Introduz o astigmatismo na classificação geral."
+      }
+    ],
     "futuras": [],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-oftal-02-005-fc01",
+      "pergunta": "Explique por que o astigmatismo gera borrão em qualquer distância, enquanto a miopia gera borrão apenas ao longe.",
+      "resposta": "Na miopia, há apenas um foco deslocado (antes da retina), mas um foco real existe. No astigmatismo, os dois meridianos principais têm poderes diferentes e geram dois focos separados (conóide de Sturm). Em nenhuma distância os dois focos coincidem na retina, gerando imagem sempre borrada ou distorcida independente da distância.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "astigmatismo-borrão",
+        "conoide-sturm",
+        "dois-focos",
+        "miopia-comparacao"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-02-005-fc02",
+      "pergunta": "Qual a diferença entre astigmatismo regular e irregular e por que o irregular não é corrigido por óculos convencionais?",
+      "resposta": "Regular: dois meridianos principais perpendiculares entre si com curvaturas uniformes — corrigível por lente cilíndrica/tórica. Irregular: os meridianos não são perpendiculares e/ou a curvatura é não uniforme dentro de cada meridiano (como no ceratocone). Óculos não conseguem criar uma frente de onda que compense irregularidade não uniforme; apenas lentes rígidas (que criam nova superfície regular pelo filme lacrimal) ou transplante corneano corrigem.",
+      "tipo": "comparacao",
+      "dificuldade": 2,
+      "tags": [
+        "astigmatismo-regular",
+        "astigmatismo-irregular",
+        "ceratocone",
+        "lentes-rigidas",
+        "transplante"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-02-005-fc03",
+      "pergunta": "Qual a diferença clínica entre astigmatismo direto e inverso e qual é mais prevalente em jovens?",
+      "resposta": "Astigmatismo direto (a favor da regra): meridiano vertical mais curvo que o horizontal — o cilindro corretivo está no eixo 180°. Mais prevalente em jovens e crianças. Astigmatismo inverso: meridiano horizontal mais curvo, cilindro no eixo 90°. Mais prevalente em idosos por remodelamento corneal senil.",
+      "tipo": "comparacao",
+      "dificuldade": 2,
+      "tags": [
+        "astigmatismo-direto",
+        "astigmatismo-inverso",
+        "eixo",
+        "jovens-idosos",
+        "cilindro"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-02-005-fc04",
+      "pergunta": "Um paciente de 22 anos apresenta acuidade visual de 20/200 em ambos os olhos que não melhora com lentes esféricas mas melhora parcialmente com lentes tóricas. A topografia corneal mostra astigmatismo irregular com ectasia inferior. Qual a hipótese e como confirmar?",
+      "resposta": "Hipótese: Ceratocone. Confirmação: tomografia de córnea (Pentacam) mostrando ectasia inferior com afinamento estromal, paquimetria reduzida no ápice cônico. A queratometria simulada mostrará K máximo > 47-48D. Tratamento: lentes de contato rígidas e, se progressivo, crosslinking corneal (CXL) para estabilizar.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "tags": [
+        "ceratocone",
+        "ectasia-inferior",
+        "topografia",
+        "crosslinking",
+        "diagnostico"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
     "imagens": [],
@@ -37,18 +175,26 @@
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity",
+    "data_geracao": "2026-07-07",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Kanski JJ, Bowling B. Oftalmologia Clínica. 8ª ed. Elsevier; 2016. Cap. 18 — Astigmatismo.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-07"
+    }
+  ],
   "_lentes": [
-    "mecanismo/fisiopatologia",
-    "conduta/tratamento"
+    "mecanismo",
+    "clinica",
+    "conduta"
   ]
 }

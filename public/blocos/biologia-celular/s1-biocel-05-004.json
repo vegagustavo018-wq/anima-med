@@ -1,54 +1,249 @@
 {
+  "metadata": {
+    "titulo": "Receptores de Citocinas",
+    "subtitulo": "Como células conversam à distância sem motor próprio?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 10,
+    "nivel": "CORE",
+    "tags": [
+      "receptores",
+      "sinalizacao celular",
+      "citocinas",
+      "via JAK-STAT",
+      "imunologia"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "No vasto e caótico cenário do sistema imune e do desenvolvimento tecidual, as células precisam coordenar respostas complexas sem permitir a entrada direta de macromoléculas estranhas em seu citoplasma. Para resolver esse problema de segurança e eficiência, a evolução moldou os receptores de citocinas. Diferente de outros receptores que possuem motores enzimáticos acoplados em sua própria estrutura, estes receptores funcionam como 'grampos' moleculares inertes que dependem do recrutamento de proteínas parceiras — as Janus Quinases (JAK) — para iniciar a sinalização. Quando uma citocina se liga, o receptor dimeriza, aproximando as JAKs que se ativam mutuamente por trans-fosforilação. Esse evento cria ancoradouros para os fatores de transcrição STAT, que são fosforilados e viajam diretamente ao núcleo para ditar o destino celular. Compreender essa via é fundamental para entender desde a diferenciação de células de defesa até o desenvolvimento de terapias contra doenças autoimunes e leucemias.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você precisa enviar uma mensagem urgente e ultra-secreta para dentro de uma fortaleza blindada. Você não pode entrar, e os guardas na muralha não têm permissão para abandonar seus postos. Como resolver esse impasse biológico? No nível celular, as citocinas — proteínas mensageiras do sistema imune e do desenvolvimento — enfrentam exatamente esse desafio ao tentar instruir o núcleo da célula sobre o que fazer."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O desafio da mensagem sem intermediários físicos"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para que a informação cruze a membrana plasmática lipídica e hidrofóbica, a natureza poderia ter dotado todos os receptores de motores enzimáticos próprios, como fez com os Receptores Tirosina Quinase (RTKs). No entanto, para mensagens altamente plásticas e compartilhadas como as do sistema imunológico, a evolução optou por uma estratégia modular e econômica: receptores que funcionam como 'portas giratórias' mecânicas, sem qualquer atividade catalítica intrínseca."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A grande sacada evolutiva dos receptores de citocinas é a divisão de trabalho: o receptor reconhece o ligante lá fora, mas quem realmente inicia o trabalho de sinalização lá dentro são enzimas independentes recrutadas sob demanda."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A anatomia de um receptor cooperativo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essas estruturas são proteínas transmembrana de passagem única. Elas possuem um domínio extracelular especializado em reconhecer a citocina com altíssima afinidade, uma única hélice alfa que atravessa a bicamada lipídica e uma cauda intracitoplasmática que, embora longa, é desprovida de atividade enzimática. Em vez disso, essa cauda possui sequências específicas de aminoácidos (conhecidas como Box 1 e Box 2) que servem como sítios de ancoragem permanente para uma família muito especial de tirosina quinases citoplasmáticas."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Janus Quinase (JAK)",
+      "origem": "latim",
+      "significado": "Janus (deus romano dos portões, transições e duas faces)",
+      "explicacao": "As proteínas JAK foram batizadas em homenagem a Janus porque possuem dois domínios quase idênticos que parecem olhar em direções opostas: um domínio quinase funcional (que realiza a fosforilação) e um domínio pseudoquinase regulatório (que controla a atividade do primeiro). Como o deus romano, elas guardam os 'portões' de entrada da sinalização celular."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Citocina",
+      "origem": "grego",
+      "significado": "cyto (célula) + kinesis (movimento)",
+      "explicacao": "Refere-se a proteínas sinalizadoras que colocam as células em movimento ou ação, coordenando a resposta imune e o tráfego celular."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense no receptor de citocina como uma porta giratória dupla de um banco. O cliente (a citocina) empurra a porta pelo lado de fora. Essa ação aproxima fisicamente duas folhas da porta no interior do banco. Encostados nessas folhas internas estão dois seguranças (as Janus Quinases - JAKs). Quando as folhas se aproximam, os seguranças ficam cara a cara e dão um 'high-five' energético (trans-fosforilação). Esse cumprimento ativa os seguranças, que agora podem carimbar o passaporte de dois mensageiros (os fatores STAT) para que estes corram diretamente até a sala do diretor (o núcleo)."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de avançarmos para o mecanismo detalhado, certifique-se de que compreendeu: o receptor em si não fosforila nada. Ele apenas aproxima as JAKs para que elas façam o trabalho."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A coreografia molecular da via JAK-STAT"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O processo ocorre em uma cascata perfeitamente coreografada. Primeiro, a citocina se liga ao domínio extracelular do receptor. Essa ligação induz a aproximação e o rearranjo de duas ou mais cadeias do receptor (dimerização). Como as JAKs estão permanentemente associadas às caudas citoplasmáticas desses receptores, a dimerização força as duas JAKs a ficarem extremamente próximas no espaço tridimensional."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Estando próximas, ocorre a trans-fosforilação: uma JAK fosforila a outra em resíduos específicos de tirosina, ativando mutuamente seus domínios catalíticos. Uma vez ativas, as JAKs voltam suas 'armas' para a própria cauda do receptor, fosforilando seus resíduos de tirosina. Essas tirosinas fosforiladas no receptor agora funcionam como faróis químicos, criando sítios de ancoragem para proteínas que possuem domínios SH2 (Src Homology 2), especificamente os fatores de transcrição citoplasmáticos chamados STAT (Signal Transducers and Activators of Transcription)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando as proteínas STAT se ligam ao receptor fosforilado, elas são imediatamente fosforiladas pelas JAKs ativas. Essa fosforilação faz com que as STATs se soltem do receptor e se liguem uma à outra, formando dímeros estáveis. A dimerização expõe um sinal de localização nuclear (NLS) oculto nessas proteínas. Como um passe livre para a área VIP, esse sinal permite que o dímero de STAT atravesse os poros nucleares, ligue-se diretamente a sequências promotoras específicas no DNA e inicie a transcrição de genes-alvo."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se as JAKs perdessem o domínio pseudoquinase (regulatório)?",
+      "resposta": "Sem o domínio pseudoquinase que age como um freio molecular sobre o domínio quinase ativo, as JAKs ficariam permanentemente ativas (hiperativas), independentemente da presença de citocinas. Isso resultaria em uma sinalização descontrolada e contínua para o núcleo, levando à proliferação celular desordenada. Clinicamente, mutações que causam essa perda de regulação (como a famosa mutação JAK2 V617F) estão diretamente ligadas a neoplasias mieloproliferativas, como a Policitemia Vera."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "A Cascata de Sinalização JAK-STAT",
+      "descricao": "Esquema didático mostrando a membrana plasmática com o receptor de citocina em três estados sequenciais: 1) Inativo (monômeros separados com JAKs inativas acopladas), 2) Ativo após ligação da citocina (dimerização, trans-fosforilação de JAKs e fosforilação das caudas do receptor), e 3) Recrutamento e dimerização de STATs prontos para translocação nuclear.",
+      "prompt_ia": "A clean, high-resolution scientific vector diagram illustrating the JAK-STAT signaling pathway. Show a lipid bilayer membrane with transmembrane cytokine receptors. In stage one, show separated receptors with inactive Janus Kinases (JAK) attached inside. In stage two, show a cytokine ligand bringing the receptors together (dimerization), with JAKs cross-phosphorylating each other (indicated by glowing yellow phosphate groups labeled 'P') and then phosphorylating the receptor tails. In stage three, show STAT proteins binding to the phosphorylated receptor, getting phosphorylated, detaching, and forming a dimer that moves towards a stylized cell nucleus. Highly educational, clear labeling in Portuguese, professional biological textbook style, bright contrasting colors on a soft light-blue background.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-05-004-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Como as proteínas JAK se ativam mutuamente se elas não têm movimento mecânico próprio para se aproximarem sozinhas?",
+      "resposta": "Elas dependem da ligação do ligante (citocina) no domínio extracelular do receptor. Essa ligação induz a dimerização (aproximação) das cadeias do receptor, o que fisicamente aproxima as JAKs que estão acopladas às caudas intracelulares, permitindo a trans-fosforilação.",
+      "dificuldade": 3,
+      "nivel_alvo": 1,
+      "tags": [
+        "receptores",
+        "JAK",
+        "dimerizacao"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-004-fc02",
+      "tipo": "por_que",
+      "pergunta": "Por que as proteínas STAT, que estão dispersas no citoplasma, conseguem se ligar especificamente ao receptor de citocina após a ativação das JAKs?",
+      "resposta": "Porque as STATs possuem domínios SH2 (Src Homology 2), que têm afinidade química específica e exclusiva por resíduos de tirosina fosforilados. Esses resíduos são gerados na cauda do receptor pelas JAKs ativas.",
+      "dificuldade": 4,
+      "nivel_alvo": 1,
+      "tags": [
+        "STAT",
+        "dominio SH2",
+        "fosforilacao"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-004-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria com a sinalização de citocinas se uma célula expressasse uma versão mutante de STAT que não consegue formar dímeros?",
+      "resposta": "A sinalização seria interrompida no citoplasma. Monômeros de STAT fosforilados não conseguem expor eficientemente o sinal de localização nuclear (NLS) e não se ligam estavelmente ao DNA. Portanto, não haveria transcrição gênica em resposta à citocina.",
+      "dificuldade": 4,
+      "nivel_alvo": 1,
+      "tags": [
+        "STAT",
+        "dimerizacao",
+        "translocacao nuclear"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-004-fc04",
+      "tipo": "comparacao",
+      "pergunta": "Qual é a principal diferença estrutural e funcional entre um Receptor Tirosina Quinase (RTK) e um Receptor de Citocina?",
+      "resposta": "Os RTKs possuem atividade enzimática tirosina quinase intrínseca em seu próprio domínio citoplasmático. Já os receptores de citocinas não têm atividade catalítica própria; eles dependem do recrutamento não-covalente de quinases citoplasmáticas independentes (JAKs) para realizar a fosforilação.",
+      "dificuldade": 3,
+      "nivel_alvo": 1,
+      "tags": [
+        "RTK",
+        "receptores",
+        "comparacao"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-004-fc05",
+      "tipo": "etimologia",
+      "pergunta": "Como a estrutura molecular da Janus Quinase (JAK) justifica o seu nome mitológico?",
+      "resposta": "JAK possui dois domínios estruturais muito semelhantes lado a lado: um domínio quinase ativo e um domínio pseudoquinase inativo (regulatório). Essa característica de 'duas faces' remete ao deus romano Janus, o deus das duas faces que vigiava as transições e os portões.",
+      "dificuldade": 2,
+      "nivel_alvo": 1,
+      "tags": [
+        "JAK",
+        "etimologia",
+        "estrutura"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-05-004-caso01",
+      "titulo": "O Menino na Bolha Molecular",
+      "apresentacao": "Um lactente de 4 meses de idade é levado ao pronto-socorro com quadro de pneumonia grave por Pneumocystis jirovecii, diarreia persistente e candidíase oral refratária ao tratamento básico. O hemograma revela linfopenia extrema (ausência quase total de linfócitos T e NK, com linfócitos B normais em número, mas disfuncionais). O histórico familiar revela um tio materno que faleceu na infância devido a infecções graves.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação genética de perda de função no gene que codifica a cadeia gama comum (γc) de receptores de citocinas (como IL-2, IL-4, IL-7, IL-9, IL-15 e IL-21), ou mutação direta na tirosina quinase JAK3 ligada a essa cadeia."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Complexo receptor de citocinas / Janus Quinase 3 (JAK3) na membrana de células progenitoras linfoides."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Inabilidade de responder a citocinas vitais de sobrevivência e diferenciação celular (como a IL-7 para linfócitos T e IL-15 para células NK). A via JAK-STAT não é ativada, impedindo a transcrição de genes de desenvolvimento linfoide."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Ausência de linfócitos T e NK maduros funcionais, gerando imunodeficiência profunda e suscetibilidade extrema a patógenos oportunistas."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Imunodeficiência Combinada Grave (SCID) ligada ao X (ou autossômica recessiva se mutação direta em JAK3), fatal no primeiro ano de vida se não tratada com transplante de células-tronco hematopoéticas."
+        }
+      ],
+      "diagnostico_revelado": "Imunodeficiência Combinada Grave (SCID) por defeito na via do receptor de citocina/JAK3",
+      "tratamento_resumido": "Transplante de células-tronco hematopoéticas (medula óssea) para restabelecer precursores linfoides com receptores e JAKs funcionais, associado a isolamento protetor e antibioticoterapia profilática.",
+      "conexao_com_bloco": "Este caso clínico ilustra de forma dramática a importância vital da sinalização por receptores de citocinas e JAK3. Sem o acoplamento correto receptor-JAK, as instruções de sobrevivência e proliferação dadas pelas interleucinas nunca chegam ao núcleo das células de defesa, resultando na ausência de um sistema imune funcional.",
+      "disciplinas_relacionadas": [
+        "Imunologia",
+        "Genética Médica",
+        "Pediatria",
+        "Hematologia"
+      ]
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-05-001",
+        "titulo": "Princípios Gerais da Sinalização — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Fornece os conceitos de ligante, receptor transmembrana, segundos mensageiros e transdução de sinal necessários para compreender a via JAK-STAT."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Inibidores de JAK (Jakinibs) no tratamento de doenças autoimunes",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Fármacos como o Tofacitinibe bloqueiam seletivamente o sítio de ATP das JAKs, impedindo a trans-fosforilação e silenciando a resposta inflamatória exacerbada na Artrite Reumatoide e Retocolite Ulcerativa.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Hematopoese e Eritropoetina",
+        "disciplina": "fisiologia",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "O receptor de eritropoetina (EPO) é um receptor de citocina clássico que utiliza JAK2 para estimular a sobrevivência e diferenciação de progenitores eritroides na medula óssea.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Receptores Tirosina Quinase (RTKs)",
+        "explicacao": "Enquanto os receptores de citocinas recrutam quinases citoplasmáticas (JAK), os RTKs (como o receptor de insulina ou EGF) possuem o domínio quinase fundido à sua própria cadeia polipeptídica."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-05-004",
   "no_pai_id": "s1-biocel-05-000",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Receptores de Citocinas",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Receptores sem atividade quinase própria; recrutam JAK",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.5-flash",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

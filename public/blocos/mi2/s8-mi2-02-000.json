@@ -23,50 +23,472 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Gastroenterologia Clínica",
+    "subtitulo": "Como um único tubo de nove metros consegue avisar, com a mesma dor de barriga, que o problema está no esôfago, no pâncreas ou no cólon?",
     "semestre": 8,
     "disciplina": "Medicina Interna II",
+    "sistema_corporal": "digestório",
+    "regiao_anatomica": null,
     "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 15,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "mi2",
-      "esqueleto"
+      "gastroenterologia",
+      "medicina-interna",
+      "tubo-digestivo",
+      "fisiopatologia",
+      "apresentacao-clinica",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "modulo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Doenças do esôfago, estômago, intestino, fígado e pâncreas",
-  "narrativa": [],
+  "resumo_conciso": "A gastroenterologia clínica nasce de um problema de engenharia que nenhum outro sistema do corpo enfrenta da mesma forma: como processar, em sequência e sem interrupção, um tubo de quase nove metros que atravessa esôfago, estômago, intestino delgado, cólon, além de dois órgãos anexos — fígado e pâncreas — que despejam suas secreções dentro desse mesmo tubo? A resposta da fisiologia foi dividir o trabalho em segmentos especializados, cada um responsável por uma etapa distinta (triturar, acidificar, digerir, absorver, concentrar, eliminar), unidos por válvulas que impedem que o conteúdo de uma etapa contamine a etapa anterior. Essa divisão em segmentos é também a razão pela qual a doença digestiva é traiçoeira para o raciocínio clínico: sintomas quase idênticos — dor abdominal, náusea, alteração do hábito intestinal — podem nascer de qualquer um dos segmentos, e o clínico precisa aprender a decifrar, a partir de pistas indiretas (localização da dor, relação com a alimentação, características das fezes, sinais de alarme), qual andar do tubo está falhando antes mesmo de pedir um exame. Este bloco não repassa a fisiologia digestiva já estudada nem antecipa o conteúdo específico das doenças inflamatórias intestinais, das hepatopatias ou das neoplasias do trato gastrointestinal, que os blocos-filhos desenvolverão em profundidade. Ele estabelece o raciocínio comum a toda a gastroenterologia clínica: como localizar uma queixa digestiva por segmento anatômico, como reconhecer os sinais de alarme que separam doença funcional de doença orgânica, e por que fígado e pâncreas, apesar de anexos, adoecem com a mesma urgência que qualquer segmento do tubo principal.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma linha de montagem de quase nove metros de comprimento, que começa recebendo matéria-prima bruta (o alimento mastigado) e termina entregando dois produtos finais completamente diferentes: nutrientes absorvidos para o sangue e resíduo sólido para ser eliminado. Ao longo do caminho, essa linha muda de função a cada poucos metros — aqui tritura, ali acidifica, mais adiante neutraliza, depois absorve, por fim concentra e armazena. Nenhuma fábrica humana funcionaria bem se cada estação de trabalho não soubesse exatamente onde termina sua tarefa e onde começa a da estação seguinte."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que o tubo digestivo precisou virar uma sequência de segmentos especializados?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema começa na própria natureza do alimento: ele chega à boca como uma mistura bruta e química e mecanicamente heterogênea — carboidratos, proteínas, gorduras, fibras, água — e precisa ser transformado em moléculas pequenas o bastante para atravessar uma célula intestinal, sem que nenhuma dessas etapas destrua a parede do próprio tubo que está processando tudo isso. Um único ambiente químico não resolveria esse problema: o suco gástrico precisa ser extremamente ácido para desnaturar proteínas e matar micro-organismos ingeridos, mas esse mesmo ácido destruiria a mucosa intestinal mais frágil que vem a seguir, onde a absorção de nutrientes realmente acontece."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há um segundo problema, menos óbvio: o tubo digestivo também precisa proteger o restante do corpo do que ele mesmo processa. O conteúdo do intestino carrega bactérias, restos alimentares em decomposição e substâncias potencialmente tóxicas — se esse conteúdo fluísse livremente para trás e para frente entre segmentos, ou se vazasse para a cavidade abdominal, o que deveria ser trabalho de digestão viraria fonte de infecção sistêmica grave. O tubo precisa, portanto, avançar numa única direção, em compartimentos que só se comunicam quando a etapa anterior estiver concluída."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema que a gastroenterologia enfrenta não é 'processar comida' — é processar comida em ambientes químicos incompatíveis entre si, mantendo uma via de mão única que nunca deixa o conteúdo digestivo contaminar o restante do organismo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve — segmentos especializados e válvulas que impõem sentido único"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi dividir o tubo em segmentos anatomicamente distintos, cada um com epitélio, secreções e função próprios, e separar esses segmentos por esfíncteres — anéis musculares que se comportam como válvulas unidirecionais. Um segmento acidifica e tritura; o seguinte neutraliza esse ácido e mistura enzimas; o seguinte absorve; o último concentra o que sobrou e o mantém armazenado até o momento apropriado de eliminação. Cada esfíncter garante que o conteúdo de um segmento só avance para o próximo quando estiver pronto, e raramente retorna — quando retorna de forma anômala (como o conteúdo gástrico ácido subindo para o esôfago), o próprio sintoma que isso gera já é uma pista diagnóstica poderosa, porque revela qual válvula falhou."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Dois órgãos anexos entram nesse desenho sem fazer parte do trajeto físico do bolo alimentar: o fígado e o pâncreas. Suas secreções, porém, resolvem dois problemas distintos e não intercambiáveis no mesmo ponto do tubo — o início do intestino delgado. O suco pancreático, rico em bicarbonato, é quem neutraliza o conteúdo ácido vindo do estômago, criando o ambiente neutro em que suas próprias enzimas (tripsina, quimotripsina, lipase, amilase) conseguem digerir proteínas, gorduras e carboidratos em moléculas absorvíveis. A bile, produzida no fígado e armazenada na vesícula biliar, não neutraliza ácido nem digere nada quimicamente por conta própria: seus sais biliares emulsificam a gordura, quebrando-a em gotículas menores e aumentando a superfície de contato sobre a qual a lipase pancreática pode então agir. São, portanto, duas contribuições complementares e diferentes — uma neutraliza e digere, a outra prepara fisicamente a gordura para ser digerida — e não uma função única indiferenciada. Por isso, embora anatomicamente anexos, fígado e pâncreas participam da mesma cascata funcional do tubo principal — uma obstrução ou inflamação em qualquer um dos dois interrompe a digestão tão gravemente quanto uma lesão no próprio intestino."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O tubo digestivo é uma sequência de compartimentos químicos incompatíveis entre si, mantidos em sentido único pelas principais válvulas do trajeto — dos esfíncteres esofagianos ao esfíncter anal. Toda doença digestiva pode ser lida, em primeira aproximação, como falha de um segmento específico ou falha de uma válvula entre dois segmentos — e essa é a primeira pergunta que o clínico faz diante de qualquer queixa abdominal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esse raciocínio funciona, em movimento — localizando a queixa por segmento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se cada segmento tem função própria, segue-se que sintomas semelhantes em segmentos diferentes carregam significados clínicos completamente distintos. Dor abdominal é a queixa mais genérica de toda a medicina interna — mas dor que piora imediatamente após comer, na altura do epigástrio, sugere um mecanismo diferente de dor que piora horas depois da refeição, ou de dor que migra e se localiza na fossa ilíaca direita. O clínico competente não pergunta apenas \"onde dói\", mas constrói uma cadeia de perguntas que localiza o segmento: a dor tem relação temporal com a alimentação? Existe pirose (queimação retroesternal, sugerindo refluxo do conteúdo gástrico para o esôfago)? Há alteração do hábito intestinal associada? As fezes mudaram de cor, consistência ou frequência? Há sangramento visível, e desse sangramento é possível inferir a que altura do tubo ele se originou, pela cor com que aparece?"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Funil clínico aplicado a uma queixa digestiva",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Caracterizar a dor ou o sintoma por relação temporal e localização",
+          "explicacao": "Determinar se o sintoma piora, melhora ou não se relaciona com a alimentação, e em qual quadrante ou região do abdome ele se concentra — cada padrão aponta estatisticamente para segmentos diferentes do tubo."
+        },
+        {
+          "numero": 2,
+          "titulo": "Buscar sinais de alarme antes de qualquer outra coisa",
+          "explicacao": "Perda de peso não intencional, sangramento digestivo (hematêmese, melena, hematoquezia), disfagia progressiva, anemia inexplicada, história familiar de câncer digestivo e idade de início tardia são sinais que obrigam investigação orgânica prioritária, independentemente de quão comum pareça o sintoma principal."
+        },
+        {
+          "numero": 3,
+          "titulo": "Diferenciar doença funcional de doença orgânica",
+          "explicacao": "Na ausência de sinais de alarme, sintomas digestivos crônicos e recorrentes frequentemente correspondem a distúrbios funcionais do eixo cérebro-intestino, em que o tubo é estruturalmente normal, mas sua motilidade ou sensibilidade está alterada; a presença de qualquer sinal de alarme desloca a suspeita para doença orgânica estrutural."
+        },
+        {
+          "numero": 4,
+          "titulo": "Escolher o exame que discrimina entre os segmentos suspeitos",
+          "explicacao": "Endoscopia digestiva alta investiga esôfago, estômago e duodeno proximal; colonoscopia investiga o cólon e o íleo terminal; exames de imagem e laboratoriais direcionados investigam fígado, vias biliares e pâncreas — a escolha depende de qual segmento a etapa anterior do raciocínio apontou, não de pedir todos os exames disponíveis de uma vez."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse funil de quatro passos é a ferramenta que os blocos seguintes vão aplicar a doenças específicas de cada segmento — mas ele próprio não pertence a nenhuma doença em particular. É o raciocínio que precede o diagnóstico, e que evita o erro mais comum do estudante iniciante: tratar toda dor abdominal como um problema único e genérico, em vez de um sintoma que muda de significado conforme o segmento envolvido."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a gastroenterologia clínica se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A gastroenterologia nunca aparece isolada dos outros dois territórios de Medicina Interna II. A absorção intestinal de glicose, já mencionada na visão geral desta disciplina, é o ponto de contato mais direto com a endocrinologia: o intestino determina quanto e quão rápido a glicose chega ao sangue, e o eixo insulina-glucagon responde a essa chegada. A relação com a nefrologia é igualmente estreita e, muitas vezes, mais urgente na prática: diarreia e vômitos abundantes desidratam o paciente rapidamente, reduzindo o volume circulante efetivo e podendo precipitar lesão renal aguda pré-renal em poucas horas — um mecanismo que qualquer clínico precisa reconhecer antes que o exame de função renal venha alterado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Dentro da própria gastroenterologia, o módulo se articula com os blocos-filhos que virão: a fisiopatologia de cada segmento aqui descrita de forma geral será detalhada doença a doença — doença do refluxo gastroesofágico, doença péptica, doenças inflamatórias intestinais, hepatopatias e cirrose, pancreatite, síndromes disabsortivas e neoplasias do trato digestivo. Este bloco não repete nenhum desses conteúdos; ele apenas entrega a lente comum — segmento, válvula, sinal de alarme — com que cada um deles deve ser lido."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "gastroenterologia",
+      "origem": "do grego gastḗr (estômago) + énteron (intestino) + lógos (estudo, discurso)",
+      "significado": "literalmente, 'o estudo do estômago e do intestino'",
+      "explicacao": "O nome nasceu no século XIX, quando a especialidade se organizou inicialmente em torno dos dois órgãos mais acessíveis ao exame clínico da época — estômago e intestino — antes que a endoscopia e a imagem moderna permitissem visualizar esôfago, fígado, vias biliares e pâncreas com a mesma facilidade. O nome ficou consolidado mesmo depois que a especialidade se expandiu para cobrir todo o tubo digestivo e seus órgãos anexos, um pouco como aconteceu com a cardiologia, cujo nome fala apenas do coração mas cobre hoje toda a circulação. É um lembrete de que muitos nomes médicos registram o estado do conhecimento no momento em que a especialidade nasceu, não necessariamente o seu escopo final."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏭",
+      "conteudo": "Pense numa linha de produção industrial com estações sucessivas, cada uma numa sala separada por uma porta corta-fogo que só abre num sentido. **Cada segmento do tubo digestivo** é uma sala da fábrica, com temperatura, pressão e ferramentas próprias para sua etapa específica — a sala do estômago trabalha em ambiente ácido, a sala do intestino delgado trabalha em ambiente neutro com enzimas específicas. **Os esfíncteres** são as portas corta-fogo: abrem só quando a etapa anterior está pronta, e impedem que o material de uma sala volte para a anterior ou vaze para fora da linha de produção. **O fígado e o pâncreas** são dois fornecedores externos distintos que entregam insumos diferentes bem na entrada da sala do intestino delgado, sem fazer parte fisicamente da esteira principal, mas sem os quais aquela sala simplesmente para de funcionar: o pâncreas envia o líquido neutralizador que corrige o pH ácido vindo da sala anterior e as enzimas que efetivamente processam proteínas, gorduras e carboidratos; o fígado envia apenas um detergente (a bile) que quebra a gordura em gotículas menores, sem neutralizar nada nem processar quimicamente sozinho — ele prepara a peça para que a ferramenta do pâncreas consiga trabalhar nela. E quando um inspetor de qualidade (o clínico) recebe uma reclamação genérica de 'produto com defeito' (dor abdominal), ele não caminha a fábrica inteira ao acaso: ele pergunta em qual sala o defeito apareceu, checando pistas específicas de cada estação — assim como o médico pergunta pela relação da dor com a alimentação e pelas características das fezes para saber em qual segmento investigar primeiro."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o tubo digestivo não tivesse esfíncteres separando seus segmentos — apenas um ambiente químico único e contínuo do esôfago ao reto — o que aconteceria com a digestão?",
+      "resposta": "Seria impossível manter os ambientes químicos incompatíveis que cada etapa da digestão exige. O ácido produzido no estômago para desnaturar proteínas se misturaria livremente com o ambiente neutro necessário à ação das enzimas pancreáticas no intestino delgado, inativando-as ou, na direção oposta, destruindo a mucosa esofágica despreparada para receber conteúdo ácido — exatamente o que acontece, em escala local, quando o esfíncter esofagiano inferior falha e causa doença do refluxo. Sem válvulas, o conteúdo já parcialmente digerido também poderia refluir para segmentos anteriores, misturando etapas da digestão fora de ordem e comprometendo a absorção final de nutrientes. Não haveria como isolar comportamentos motores diferentes (movimentos de mistura no estômago versus movimentos propulsivos ordenados no intestino), e o tempo de trânsito de cada segmento — cuidadosamente calibrado para permitir digestão e absorção completas — se perderia. Os esfíncteres não são obstáculos ao fluxo digestivo: são a condição que torna possível a especialização de cada segmento."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O tubo digestivo como sequência de segmentos especializados e válvulas",
+      "descricao": "Esquema didático em corte longitudinal simplificado mostrando, da esquerda para a direita, os segmentos do tubo digestivo em cores distintas: esôfago (cinza), estômago (laranja, rotulado 'ambiente ácido'), intestino delgado (verde, rotulado 'ambiente neutro, absorção'), cólon (marrom, rotulado 'concentração e armazenamento'). Entre cada segmento, um símbolo de válvula/esfíncter destacado com seta indicando sentido único de fluxo, representando as principais válvulas do trajeto (da faringe ao ânus): esfíncter esofagiano superior, esfíncter esofagiano inferior, piloro, válvula ileocecal, esfíncter anal. Acima do intestino delgado, dois órgãos anexos conectados por ductos distintos entrando no mesmo ponto: fígado (vermelho-escuro) com duto biliar rotulado 'bile — emulsifica gordura' e pâncreas (amarelo) com duto pancreático rotulado 'suco pancreático — neutraliza ácido e digere', ambos convergindo para a papila duodenal. Legendas em português, setas de fluxo unidirecional. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de infográfico médico moderno e limpo. Vista esquemática longitudinal simplificada do tubo digestivo, da esquerda para a direita, como uma sequência de segmentos coloridos e rotulados em português: 'Esôfago' (tubo estreito cinza), 'Estômago' (bolsa laranja, rótulo secundário 'ambiente ácido'), 'Intestino delgado' (tubo longo enovelado verde, rótulo secundário 'ambiente neutro — absorção'), 'Cólon' (tubo largo marrom emoldurando a parte inferior, rótulo secundário 'concentração e armazenamento'), terminando em reto e ânus. Entre cada segmento, um ícone de válvula/esfíncter (círculo com seta única apontando adiante) representando as principais válvulas do trajeto, rotulado: 'esfíncter esofagiano superior (faringe-esôfago)', 'esfíncter esofagiano inferior', 'piloro', 'válvula ileocecal', 'esfíncter anal'. Acima da transição estômago-intestino delgado, dois órgãos anexos conectados por linhas finas representando ductos distintos: um ícone de fígado vermelho-escuro com 'duto biliar' rotulado 'bile: emulsifica gordura' e um ícone de pâncreas amarelo com 'duto pancreático' rotulado 'suco pancreático: neutraliza ácido + enzimas digestivas', ambos convergindo numa seta única para dentro do duodeno, rotulada 'papila duodenal'. Setas de fluxo unidirecional ao longo de todo o tubo. Tipografia sem serifa, paleta de cores suaves e distintas por segmento, alto contraste para texto, sem elementos fotorrealistas, sem texto em inglês."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-mi2-00-000",
+        "titulo": "Medicina Interna II — Visão Geral",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este módulo herda o funil hipotético-dedutivo e a ideia de que os três territórios (endócrino, digestivo, renal) se sobrepõem no mesmo paciente — aqui esse raciocínio é aplicado especificamente ao território digestivo."
+      },
+      {
+        "bloco_id": "s8-mi2-01-000",
+        "titulo": "Endocrinologia Clínica",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "complementar",
+        "explicacao": "O módulo de endocrinologia já introduziu a lógica de eixos e retroalimentação; a gastroenterologia clínica compartilha o mesmo tipo de raciocínio sistêmico aplicado a um território anatômico diferente, reforçando que o método se repete."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Doenças inflamatórias intestinais como falha da barreira e da regulação imune do segmento intestinal",
+        "mecanismo_conexao": "O raciocínio de localizar a queixa por segmento e reconhecer sinais de alarme apresentado aqui será aplicado diretamente à doença de Crohn e à retocolite ulcerativa, que os blocos-filhos desenvolverão com fisiopatologia própria.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Hepatites, cirrose e suas complicações como falha do órgão anexo fígado",
+        "mecanismo_conexao": "A ideia de que fígado e pâncreas, apesar de anexos, adoecem com a mesma gravidade do tubo principal será detalhada no bloco específico de hepatopatias, incluindo os mecanismos de fibrose progressiva e hipertensão portal.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Neoplasias do trato gastrointestinal e a importância dos sinais de alarme",
+        "mecanismo_conexao": "Os sinais de alarme apresentados no funil clínico deste módulo (perda de peso, sangramento, disfagia progressiva, anemia) são exatamente os achados que motivam a investigação prioritária de câncer digestivo, detalhada em bloco-filho específico.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "nefrologia",
+        "semestre_futuro": 8,
+        "topico": "Desidratação por perdas digestivas levando a lesão renal aguda pré-renal",
+        "mecanismo_conexao": "Perdas digestivas volumosas (diarreia, vômitos) reduzem o volume circulante efetivo e podem precipitar lesão renal aguda em horas, uma cascata que o bloco de nefrologia clínica desta mesma disciplina vai retomar do ponto de vista renal.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s8-mi2-01-000",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Assim como a endocrinologia organiza seu raciocínio em torno da arquitetura de eixos hormonais, a gastroenterologia organiza o seu em torno da arquitetura de segmentos e válvulas — reforçando que cada território de Medicina Interna II tem uma lente estrutural própria, mesmo raciocínio geral."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-mi2-02-000-fc01",
+      "pergunta": "Por que o tubo digestivo precisou se dividir em segmentos com ambientes químicos diferentes, em vez de processar o alimento inteiro num único compartimento? E, nesse desenho, o que exatamente cabe à bile e o que cabe ao suco pancreático na neutralização e digestão que ocorrem no intestino delgado?",
+      "resposta": "Porque as etapas da digestão exigem condições químicas incompatíveis entre si: o estômago precisa de ambiente extremamente ácido para desnaturar proteínas e destruir micro-organismos ingeridos, mas esse mesmo ácido destruiria a mucosa intestinal mais frágil, onde a absorção de nutrientes efetivamente ocorre e onde as enzimas pancreáticas só funcionam em pH neutro. Um único compartimento contínuo não conseguiria manter as duas condições ao mesmo tempo — por isso o tubo é separado em segmentos especializados, cada um com seu próprio ambiente, unidos por válvulas que controlam a passagem entre eles. Nessa transição, quem neutraliza o ácido gástrico e digere quimicamente proteínas, gorduras e carboidratos é o suco pancreático, por seu bicarbonato e suas enzimas (tripsina, quimotripsina, lipase, amilase); a bile não neutraliza nem digere nada sozinha — ela apenas emulsifica a gordura em gotículas menores, aumentando a superfície sobre a qual a lipase pancreática consegue atuar.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "gastroenterologia",
+        "fisiologia-digestiva",
+        "segmentacao"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-02-000-fc02",
+      "pergunta": "Uma paciente relata alteração do hábito intestinal (episódios alternados de diarreia e constipação) nos últimos quatro meses, sem dor abdominal significativa, sem sangramento e sem perda de peso. Aplique o funil clínico deste módulo a essa queixa: quais perguntas e decisões, nessa ordem, o clínico deve percorrer antes de solicitar qualquer exame?",
+      "resposta": "Primeiro, caracterizar o sintoma por relação temporal e padrão — aqui a alteração do hábito intestinal, e não a dor, é o eixo da queixa, o que já aponta para o segmento colônico como suspeito inicial, mais do que para esôfago ou estômago. Segundo, buscar ativamente sinais de alarme antes de qualquer conclusão: perda de peso não intencional, sangramento digestivo, anemia inexplicada, início após os 50 anos ou história familiar de câncer colorretal — nenhum desses está presente no relato, o que muda o peso da suspeita inicial. Terceiro, na ausência de sinais de alarme e com um padrão crônico e recorrente, considerar um distúrbio funcional do eixo cérebro-intestino (como síndrome do intestino irritável de padrão misto) como hipótese inicial mais provável, reservando a suspeita de doença orgânica estrutural para o caso de qualquer sinal de alarme surgir na evolução. Quarto, escolher o exame de acordo com o segmento apontado — aqui, se algum sinal de alarme aparecesse, a colonoscopia seria o exame que discrimina patologia colônica, não uma endoscopia alta ou exames pancreáticos, que investigam segmentos não sugeridos pela apresentação.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "raciocinio-clinico",
+        "funil-diagnostico",
+        "sinais-de-alarme"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-02-000-fc03",
+      "pergunta": "Um homem de 68 anos relata dor epigástrica leve e intermitente há dois anos, sem relação clara com a alimentação, sem perda de peso, sem sangramento, sem anemia e sem história familiar de câncer digestivo. Uma mulher de 52 anos relata dor epigástrica semelhante, mas surgida há três meses, acompanhada de perda de 6 kg não intencional e uma anemia leve recém-detectada. Por que o mesmo sintoma principal (dor epigástrica) leva a condutas iniciais completamente diferentes nos dois casos?",
+      "resposta": "A diferença não está na intensidade ou na localização da dor, que são semelhantes nos dois casos — está na presença ou ausência de sinais de alarme. O primeiro paciente tem uma queixa crônica, estável ao longo de dois anos, sem nenhum sinal de alarme associado: esse padrão é compatível com um distúrbio funcional (como dispepsia funcional), e a conduta inicial pode ser mais conservadora, com tratamento empírico e reavaliação. A segunda paciente tem uma queixa recente, com perda de peso não intencional e anemia associadas — dois sinais de alarme clássicos — que obrigam investigação orgânica prioritária (tipicamente endoscopia digestiva alta) para excluir doença estrutural significativa, incluindo neoplasia, antes de qualquer tratamento sintomático. O raciocínio não hierarquiza os pacientes pela intensidade da dor, mas pela presença de sinais que sinalizam maior probabilidade de doença orgânica grave.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "sinais-de-alarme",
+        "dispepsia",
+        "raciocinio-clinico"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-02-000-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Fígado e pâncreas, por serem órgãos anexos e não parte do trajeto físico do bolo alimentar, adoecem com menor gravidade clínica do que os segmentos do tubo digestivo propriamente dito.'",
+      "resposta": "Falso. Fígado e pâncreas participam da mesma cascata funcional da digestão — o pâncreas neutralizando o ácido gástrico e digerindo proteínas, gorduras e carboidratos por suas enzimas, o fígado emulsificando gordura por meio da bile — e uma obstrução ou inflamação em qualquer um dos dois interrompe a digestão tão gravemente quanto uma lesão no próprio intestino. Mais do que isso, quando essas falhas se tornam agudas e graves, elas frequentemente superam em letalidade a maioria das outras causas de abdome agudo: a pancreatite aguda grave, por exemplo, pode desencadear síndrome de resposta inflamatória sistêmica, necrose pancreática infectada e falência de múltiplos órgãos, com mortalidade que chega a superar a de quadros como apendicite complicada ou diverticulite não perfurada — precisamente porque a inflamação de uma glândula que produz enzimas digestivas ativas tem potencial de autodigestão do próprio tecido e dos órgãos vizinhos, um mecanismo de gravidade que a maioria das doenças confinadas à luz do tubo digestivo não compartilha. A armadilha está em confundir posição anatômica (anexo, fora do trajeto físico do bolo) com relevância funcional ou gravidade clínica — as duas coisas são independentes.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "figado",
+        "pancreas",
+        "armadilha-conceitual",
+        "pancreatite-aguda"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-02-000-fc05",
+      "pergunta": "Um paciente apresenta hematêmese (vômito com sangue vivo) e outro apresenta melena (fezes enegrecidas e de odor fétido), sem nenhum outro dado clínico fornecido. Usando apenas a lógica de segmentos e trânsito do tubo digestivo, o que cada apresentação sugere sobre a localização provável do sangramento, e por que a cor do sangue muda com a distância percorrida?",
+      "resposta": "Hematêmese sugere sangramento de origem alta, geralmente proximal ao ângulo de Treitz (esôfago, estômago ou duodeno proximal), porque o sangue está fresco o suficiente para ser regurgitado ou vomitado antes de sofrer digestão significativa. Melena sugere que o sangue permaneceu tempo suficiente em contato com o ácido gástrico e as enzimas digestivas — geralmente originário também do trato digestivo alto, mas às vezes do intestino delgado ou cólon direito — para que a hemoglobina seja convertida quimicamente, conferindo às fezes a cor enegrecida característica e o odor fétido. Em ambos os casos, o raciocínio não usa a cor do sangue como dado isolado, mas como pista indireta de dois fatores combinados: a distância percorrida desde a origem do sangramento e o tempo de trânsito, já que quanto mais tempo o sangue interage com o ambiente ácido e as bactérias do tubo digestivo, mais escurecido ele aparece na eliminação.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "hemorragia-digestiva",
+        "hematemese",
+        "melena",
+        "localizacao-por-segmento"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-02-000-fc06",
+      "pergunta": "Por que o nome 'gastroenterologia' menciona apenas estômago e intestino, mesmo a especialidade cobrindo hoje todo o tubo digestivo e seus órgãos anexos?",
+      "resposta": "O nome (do grego gastḗr, estômago, + énteron, intestino, + lógos, estudo) nasceu no século XIX, quando a especialidade se organizou inicialmente em torno dos órgãos mais acessíveis ao exame clínico da época, antes que a endoscopia e a imagem moderna permitissem visualizar com facilidade o esôfago, o fígado, as vias biliares e o pâncreas. O nome permaneceu mesmo depois que o escopo da especialidade se expandiu para cobrir todo o tubo digestivo e seus órgãos anexos — um padrão comum na nomenclatura médica, em que o nome registra o estado do conhecimento no momento da fundação da especialidade, não necessariamente seu escopo final.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "gastroenterologia",
+        "etimologia",
+        "historia-da-medicina"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-02-000-fc07",
+      "pergunta": "Compare, na arquitetura apresentada neste módulo, o papel dos esfíncteres do tubo digestivo com o papel da retroalimentação negativa nos eixos hormonais descritos no módulo de endocrinologia clínica.",
+      "resposta": "Nos eixos hormonais, a retroalimentação negativa é um mecanismo de controle temporal — ela regula quanto hormônio é produzido ao longo do tempo, freando a produção quando o efeito já foi alcançado, permitindo ajuste contínuo e proporcional. Nos segmentos digestivos, os esfíncteres são um mecanismo de controle espacial e direcional — eles não regulam quantidade, mas sim quando e se o conteúdo pode avançar de um compartimento para o outro, garantindo que cada segmento só receba material quando a etapa anterior estiver concluída. Os dois mecanismos compartilham a mesma função geral de impor ordem a um processo biológico complexo, mas operam em dimensões diferentes: um no tempo (retroalimentação hormonal), outro no espaço e na sequência (esfíncteres digestivos). Reconhecer esse paralelo ajuda o estudante a perceber que 'sistemas de controle biológico' é um princípio geral que se manifesta de formas distintas conforme o problema que cada sistema resolve.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "esfincteres",
+        "retroalimentacao",
+        "comparacao-sistemica"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-02-000-fc08",
+      "pergunta": "Se um paciente desenvolve diarreia volumosa por três dias e, na admissão hospitalar, apresenta ureia e creatinina elevadas, por que o raciocínio correto não deve concluir automaticamente que o paciente tem uma doença renal primária, mesmo com os exames de função renal alterados?",
+      "resposta": "Porque a elevação de ureia e creatinina após diarreia volumosa é, na maioria dos casos, uma consequência funcional da desidratação — a perda digestiva reduz o volume circulante efetivo, diminuindo a perfusão renal e reduzindo a taxa de filtração glomerular sem que exista, necessariamente, qualquer lesão estrutural do néfron. Esse padrão, chamado de lesão renal aguda pré-renal, é reversível assim que a volemia é restaurada com reposição hídrica adequada — diferente de uma doença renal intrínseca, que exigiria investigação e tratamento completamente distintos. Concluir precipitadamente por doença renal primária faria o clínico ignorar a causa raiz digestiva (a diarreia) e potencialmente atrasar a intervenção mais simples e eficaz: corrigir a perda de volume. Esse é exatamente o tipo de conexão entre gastroenterologia e nefrologia que a visão geral desta disciplina já anunciou.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "diarreia",
+        "lesao-renal-aguda",
+        "pre-renal",
+        "sintese"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-mi2-02-000-caso01",
+      "titulo": "Dor retroesternal em queimação e regurgitação em homem de 47 anos",
+      "apresentacao": "Homem de 47 anos, obeso (IMC 32), procura atendimento por queimação retroesternal há oito meses, tipicamente após refeições volumosas e ao deitar-se logo após o jantar, aliviada parcialmente por antiácidos que ele mesmo comprou na farmácia. Refere também regurgitação ocasional de conteúdo ácido até a boca, principalmente à noite, e tosse seca que piora em decúbito. Nega perda de peso, nega disfagia, nega sangramento digestivo, nega anemia em exames anteriores recentes. Ao exame físico, sem alterações relevantes além do IMC elevado. O médico, aplicando o funil clínico deste módulo, primeiro localiza o sintoma (queimação retroesternal com relação temporal clara à alimentação e à posição corporal, sugerindo falha de válvula entre estômago e esôfago) e depois verifica ativamente a ausência de sinais de alarme antes de decidir a conduta inicial.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Relaxamentos inapropriados e frequentes do esfíncter esofagiano inferior, agravados pelo aumento da pressão intra-abdominal da obesidade, permitem que o conteúdo ácido do estômago retorne ao esôfago com uma frequência e volume maiores do que os mecanismos normais de clareamento esofágico conseguem neutralizar (mecanismo detalhado com pHmetria e manometria no bloco específico de doença do refluxo gastroesofágico)."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A válvula entre o segmento gástrico (ambiente ácido) e o segmento esofágico (mucosa não preparada para ácido) perde parte de sua função de contenção unidirecional."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O conteúdo ácido, que deveria permanecer confinado ao estômago, atinge repetidamente a mucosa esofágica, gerando um estado inflamatório localizado que se intensifica quando o paciente se deita logo após comer, pois a gravidade deixa de ajudar no clareamento do refluxo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Queimação retroesternal (pirose) relacionada à alimentação e à posição, regurgitação de conteúdo ácido até a boca, e tosse seca noturna — este último sintoma refletindo que o refluxo pode alcançar a via aérea superior, uma manifestação extraesofágica da mesma falha de válvula."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem intervenção, a exposição ácida repetida pode evoluir para esofagite erosiva e, em uma minoria de casos ao longo de anos, para alteração da mucosa esofágica distal (a ser detalhada em bloco específico); com medidas comportamentais (perda de peso, elevação da cabeceira, evitar refeições volumosas antes de deitar) e supressão ácida farmacológica, a grande maioria dos pacientes tem resolução completa dos sintomas, demonstrando que a falha estava na válvula e no ambiente químico, não em uma lesão estrutural irreversível."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra os dois instrumentos centrais deste módulo: a localização da queixa por segmento e válvula (a relação temporal da dor com a alimentação e a posição corporal aponta diretamente para a junção esôfago-estômago, sem necessidade de exame algum para a suspeita inicial) e a verificação ativa de sinais de alarme antes de definir a conduta — a ausência deles permite tratamento empírico inicial, reservando a endoscopia para casos com sinais de alarme ou refratários ao tratamento.",
+      "disciplinas_relacionadas": [
+        "gastroenterologia",
+        "medicina-interna",
+        "semiologia"
+      ],
+      "diagnostico_revelado": "Doença do refluxo gastroesofágico, provavelmente agravada pela obesidade (a ser detalhada em profundidade no bloco específico de doença do refluxo gastroesofágico).",
+      "tratamento_resumido": "Medidas comportamentais (perda de peso, elevação da cabeceira do leito, evitar deitar-se nas três horas após refeições volumosas) associadas a supressão ácida farmacológica, com reavaliação clínica; endoscopia reservada para sinais de alarme ou falha terapêutica — princípios gerais de manejo detalhados com doses e critérios de investigação no bloco específico da doença."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-mi2-02-000-img01",
+        "url": null,
+        "tipo_imagem": "esquema_didatico",
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
   },
-  "fontes": [],
-  "_lentes": [
-    "fisiopatologia",
-    "apresentacao_clinica"
+  "horizonte_validade": "estavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Jameson JL, Fauci AS, Kasper DL, Hauser SL, Longo DL, Loscalzo J (eds). Harrison's Principles of Internal Medicine. 21st ed. McGraw Hill; 2022. Parte 10 — Distúrbios do Sistema Gastrointestinal.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Feldman M, Friedman LS, Brandt LJ (eds). Sleisenger and Fordtran's Gastrointestinal and Liver Disease. 11th ed. Elsevier; 2020. Seção I — Abordagem ao paciente com doença gastrointestinal.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Goldman L, Schafer AI (eds). Goldman-Cecil Medicine. 27th ed. Elsevier; 2024. Seção de Gastroenterologia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "procedencia": {
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pipeline-qualidade-anima (pedagogia+precisao+estetica+adversarial+integrador)",
+    "data_revisao": "2026-07-06",
+    "nivel_confianca": "revisado"
+  },
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Achar que fígado e pâncreas, por serem órgãos anexos e fora do trajeto físico do bolo alimentar, têm menor relevância clínica do que os segmentos do tubo digestivo propriamente dito.",
+      "correcao": "Fígado e pâncreas participam da mesma cascata funcional da digestão e sua falha interrompe a digestão tão gravemente quanto uma lesão no próprio tubo — algumas das condições mais graves de toda a gastroenterologia (pancreatite aguda grave, insuficiência hepática aguda) originam-se justamente nesses órgãos anexos.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Tratar toda dor abdominal como um sintoma genérico único, sem localizá-la por segmento anatômico antes de investigar.",
+      "correcao": "Sintomas semelhantes em segmentos diferentes do tubo digestivo carregam significados clínicos distintos; a relação temporal com a alimentação, a localização e os sinais de alarme associados devem sempre localizar o segmento suspeito antes de escolher o exame.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Tratar bile e suco pancreático como uma função única indiferenciada de 'neutralizar e digerir', como se fossem intercambiáveis.",
+      "correcao": "São contribuições complementares e distintas: o suco pancreático, rico em bicarbonato, neutraliza o ácido gástrico, e suas enzimas (tripsina, quimotripsina, lipase, amilase) digerem quimicamente proteínas, gorduras e carboidratos; a bile, produzida no fígado e armazenada na vesícula biliar, apenas emulsifica a gordura por meio dos sais biliares, aumentando a superfície de contato para a lipase pancreática agir — ela não neutraliza ácido nem digere nada sozinha.",
+      "armadilha_em_flashcard": "sim"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "doença do refluxo gastroesofágico",
+      "termo_es": "enfermedad por reflujo gastroesofágico",
+      "termo_en": "gastroesophageal reflux disease",
+      "abreviatura": "DRGE / ERGE / GERD"
+    },
+    {
+      "termo_pt": "sinais de alarme",
+      "termo_es": "signos de alarma",
+      "termo_en": "alarm features / red flags",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "hemorragia digestiva alta",
+      "termo_es": "hemorragia digestiva alta",
+      "termo_en": "upper gastrointestinal bleeding",
+      "abreviatura": "HDA / UGIB"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "claude-sonnet-5",
+      "mudanca": "Criação inicial do bloco de módulo Gastroenterologia Clínica, introdução ao módulo de Gastroenterologia dentro de Medicina Interna II.",
+      "motivo": "Produção do módulo introdutório de Gastroenterologia (semestre 8), antecedendo os blocos-filhos específicos de doença do refluxo, doença péptica, doenças inflamatórias intestinais, hepatopatias/cirrose, pancreatite e neoplasias do trato gastrointestinal."
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "pipeline-qualidade-anima",
+      "mudanca": "Correção de erro factual crítico confirmado pelo adversarial: diferenciação explícita entre suco pancreático (neutraliza ácido via bicarbonato; enzimas digerem proteínas/gorduras/carboidratos) e bile (apenas emulsifica gordura via sais biliares, não neutraliza nem digere) em narrativa, analogia, prompt_ia da imagem e flashcard fc01. Adição do esfíncter esofagiano superior à enumeração de válvulas (narrativa, highlight e prompt_ia). Reformulação de fc02 para exigir aplicação a cenário clínico novo em vez de recitação do funil. Enriquecimento de fc04 com comparação de letalidade da pancreatite aguda grave frente a outras causas de abdome agudo. Nova entrada em concepcoes_erradas_frequentes sobre a confusão bile/suco pancreático.",
+      "motivo": "Decisão REVISAR do pipeline de qualidade (juiz de precisão nota 8.5 + adversarial refutou com severidade CRÍTICA, confirmando erro fisiológico real que se propagava por quatro pontos do bloco)."
+    }
   ]
 }

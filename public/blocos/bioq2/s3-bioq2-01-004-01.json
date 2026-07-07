@@ -5,48 +5,252 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "NAD+/NADH — O Coletor de Elétrons do Catabolismo",
+    "subtitulo": "Para onde vão os elétrons quando a célula desmonta combustível?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "nadh",
+      "nad",
+      "redox",
+      "catabolismo",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Por que NAD+ recolhe elétrons da degradação para levar à cadeia respiratória",
-  "narrativa": [],
+  "resumo_conciso": "NAD+ é o principal coletor solúvel de elétrons no catabolismo. Quando combustíveis são oxidados, NAD+ recebe um hidreto e vira NADH, carregando elétrons de alta energia para destinos como a cadeia respiratória. A razão NAD+/NADH informa o estado redox da célula e influencia a direção de reações como lactato desidrogenase, piruvato desidrogenase e várias etapas do ciclo de Krebs.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Quando a célula desmonta glicose ou gordura, ela não libera energia como uma explosão. Ela retira elétrons aos poucos e precisa de alguém para carregá-los com segurança. NAD+ é um dos principais coletores dessa colheita energética."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O catabolismo é, em grande parte, uma história de oxidação. Moléculas combustíveis perdem elétrons; esses elétrons precisam chegar a lugares onde sua energia possa ser aproveitada. NAD+ vira NADH justamente para fazer esse transporte."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema o NAD+ resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é capturar energia de oxidações sem desperdiçá-la. Se elétrons fossem simplesmente entregues ao oxigênio de uma vez, muita energia viraria calor. NAD+ permite transferências controladas, etapa por etapa, preservando energia em forma transportável."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: NAD+ é a forma oxidada que aceita elétrons; NADH é a forma reduzida que carrega elétrons."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O que exatamente NAD+ recebe?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "NAD+ costuma aceitar um hidreto, isto é, dois elétrons e um próton juntos. Outro próton é liberado ao meio. Essa química permite que desidrogenases removam elétrons de substratos e formem NADH, conectando oxidação de carbono à produção futura de ATP."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "nicotinamida adenina dinucleotídeo",
+      "origem": "o nome descreve duas unidades nucleotídicas, uma com adenina e outra com nicotinamida",
+      "significado": "coenzima formada por dois nucleotídeos capaz de aceitar e doar elétrons",
+      "explicacao": "A parte funcional para redox é a nicotinamida; é ali que ocorre a aceitação do hidreto."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: oxidar combustível não significa apenas 'queimar'. Significa retirar elétrons e entregá-los a coletores como NAD+."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se NAD+ não fosse regenerado a partir de NADH?",
+      "resposta": "Várias reações catabólicas parariam por falta de aceptor de elétrons. Na glicólise, por exemplo, a etapa da gliceraldeído-3-fosfato desidrogenase depende de NAD+ disponível."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "coletor",
+      "conteudo": "Pense em NAD+ como um caminhão vazio que recolhe caixas de energia. Ao receber elétrons, vira NADH, caminhão carregado. A cadeia respiratória é o centro de descarga onde essa carga pode ajudar a produzir ATP. A analogia quebra porque elétrons não são caixas; eles mudam o estado redox das moléculas."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "NAD+ recebendo elétrons no catabolismo",
+      "descricao": "Esquema mostrando substrato oxidado, NAD+ reduzido a NADH e entrega de elétrons à cadeia respiratória.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. Substrato combustível à esquerda perdendo hidreto para NAD+. NAD+ vira NADH no centro. Seta para mitocôndria/cadeia respiratória à direita, com produção de gradiente de prótons e ATP. Rótulos: oxidação do substrato, redução do NAD+, NADH carregado.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando você vir NADH acumulando, pense em tráfego de elétrons. Se a cadeia respiratória não consegue descarregar esses elétrons, o catabolismo muda de direção, lactato aumenta e a produção aeróbica de ATP cai."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-004",
+        "titulo": "Transportadores de Elétrons e Poder Redutor — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "O bloco pai introduz a lógica de coenzimas redox antes de detalhar NAD+/NADH."
+      },
+      {
+        "bloco_id": "s3-bioq2-00-001",
+        "titulo": "Anabolismo vs Catabolismo — A Lógica das Duas Direções",
+        "relevancia": "base_necessaria",
+        "explicacao": "NAD+ aparece principalmente como coletor de elétrons em vias catabólicas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Glicólise — Gliceraldeído-3-Fosfato Desidrogenase",
+        "mecanismo_conexao": "A glicólise precisa de NAD+ para oxidar gliceraldeído-3-fosfato.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Cadeia Respiratória — Oxidação de NADH",
+        "mecanismo_conexao": "NADH doa elétrons ao complexo I, alimentando o gradiente de prótons.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Hipóxia e Acidose Láctica",
+        "mecanismo_conexao": "Quando NADH não descarrega bem na cadeia respiratória, piruvato tende a virar lactato para regenerar NAD+.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "NADPH — O Poder Redutor da Biossíntese",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "NADH serve sobretudo para colher elétrons do catabolismo; NADPH serve para doar elétrons na biossíntese."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-004-01-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "O que acontece quando NAD+ vira NADH?",
+      "resposta": "NAD+ aceita um hidreto, equivalente a dois elétrons e um próton, tornando-se NADH. Assim, carrega energia redutora obtida na oxidação de substratos.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "nadh",
+        "redox"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-004-01-fc02",
+      "tipo": "por_que",
+      "pergunta": "Por que regenerar NAD+ é essencial para glicólise?",
+      "resposta": "Porque a etapa da gliceraldeído-3-fosfato desidrogenase precisa de NAD+ como aceptor de elétrons. Sem NAD+, o fluxo glicolítico trava.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "glicolise",
+        "nad"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-004-01-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Compare NAD+ e NADH.",
+      "resposta": "NAD+ é a forma oxidada, vazia, pronta para aceitar elétrons. NADH é a forma reduzida, carregada, pronta para doar elétrons a outros sistemas, especialmente à cadeia respiratória.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "comparacao",
+        "redox"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-004-01-fc04",
+      "tipo": "clinico",
+      "pergunta": "Por que hipóxia favorece produção de lactato?",
+      "resposta": "Com pouca descarga de elétrons na cadeia respiratória, NADH tende a acumular. Converter piruvato em lactato ajuda a regenerar NAD+ para manter glicólise.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "hipoxia",
+        "lactato"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-004-01-caso01",
+      "titulo": "Lactato alto quando NADH não consegue descarregar",
+      "apresentacao": "Paciente em choque apresenta lactato elevado. A leitura clínica envolve perfusão e oxigenação, mas o eixo bioquímico é simples: a cadeia respiratória não descarrega NADH adequadamente, e a célula precisa regenerar NAD+ por outra saída.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Hipoperfusão reduz oferta efetiva de oxigênio aos tecidos."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A cadeia respiratória recebe menos capacidade final de transferir elétrons ao oxigênio."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "NADH acumula e NAD+ fica relativamente limitado para etapas catabólicas."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Aumento de lactato e acidose metabólica podem aparecer."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Regenerar NAD+ via lactato sustenta glicólise temporariamente, mas não resolve a falha energética global."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra NAD+/NADH como gargalo redox: sem regenerar NAD+, a extração de energia do combustível fica limitada.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Emergência",
+        "Fisiologia"
+      ],
+      "diagnostico_revelado": "Hipoperfusão com hiperlactatemia, usada como correlação bioquímica.",
+      "tratamento_resumido": "Restaurar perfusão e oxigenação conforme a causa do choque; detalhes pertencem aos blocos clínicos."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-004-01-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'NAD+ recebendo elétrons no catabolismo'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Seções de coenzimas redox e metabolismo energético.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "molecular",
     "mecanismo"

@@ -5,50 +5,403 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Junção Neuromuscular (Placa Motora)",
+    "subtitulo": "Como uma célula nervosa convence uma célula muscular a se contrair sem tocar nela diretamente?",
     "semestre": 1,
     "disciplina": "histologia",
+    "sistema_corporal": "muscular",
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "hist",
-      "esqueleto"
+      "sinapse",
+      "acetilcolina",
+      "placa-motora",
+      "histologia-muscular"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Sinapse acetilcolina; miastenia gravis e curare",
-  "narrativa": [],
+  "resumo_conciso": "O neurônio motor e a fibra muscular são duas células fisicamente separadas — nunca chegam a se fundir ou a ter citoplasma contínuo. Ainda assim, o comando de contrair precisa atravessar essa fronteira em uma fração de milissegundo, de forma confiável, todas as vezes. A solução é uma sinapse química altamente especializada: o axônio libera um mensageiro (acetilcolina) que atravessa um pequeno espaço e se liga a receptores concentrados em dobras profundas da membrana muscular, desencadeando ali um novo sinal elétrico. Essa arquitetura de mensageiro químico, seguida de rápida degradação enzimática, garante que cada disparo do nervo produza exatamente um evento de contração — nem mais, nem menos. Entender essa interface é essencial para reconhecer doenças autoimunes, toxinas paralisantes e a farmacologia dos bloqueadores usados em anestesia.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, você viu como o sinal elétrico, uma vez dentro da fibra muscular, dispara a liberação de cálcio através do contato mecânico entre DHPR e RyR1. Mas existe uma etapa anterior que ainda não foi resolvida: como o comando sai do neurônio motor — uma célula completamente separada — e entra na fibra muscular? As duas células nunca se tocam fisicamente, não compartilham citoplasma, não têm continuidade elétrica direta. Existe uma fenda real entre elas. Como uma ordem elétrica atravessa um espaço vazio e ainda assim chega do outro lado de forma confiável e rápida?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que uma conexão elétrica direta não resolveria esse problema?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em alguns tecidos do corpo, células vizinhas realmente se comunicam por continuidade elétrica direta, através de canais chamados junções comunicantes (gap junctions) — é o que ocorre entre células do músculo cardíaco, por exemplo. Mas o neurônio motor e a fibra muscular esquelética não usam essa estratégia. Por quê? Porque uma conexão elétrica direta transmitiria o sinal em ambas as direções e sem regulação fina — o sistema nervoso precisa de controle mais sofisticado sobre quando, e com que intensidade, o músculo deve contrair, incluindo a possibilidade de modular a força através da frequência dos disparos e de múltiplos neurônios convergindo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução evolutiva foi criar uma sinapse química: um pequeno espaço físico entre as duas células (a fenda sináptica), atravessado não por eletricidade direta, mas por uma molécula mensageira liberada de um lado e reconhecida do outro por um receptor específico."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de nomear as peças: fixe a arquitetura. Existe uma fenda física real entre nervo e músculo. O sinal atravessa essa fenda na forma de uma molécula química, não de eletricidade direta. E do lado muscular, existe uma superfície especializada para reconhecer essa molécula com máxima eficiência."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o sinal atravessa essa fenda, em detalhe"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando o potencial de ação alcança o terminal do axônio, ele abre canais de cálcio voltagem-dependentes na membrana pré-sináptica. A entrada de cálcio dispara a fusão de pequenas vesículas — bolsas membranosas carregadas com o neurotransmissor acetilcolina — com a membrana do terminal, liberando seu conteúdo na fenda sináptica por exocitose. A acetilcolina se difunde pela fenda (uma distância pequena o suficiente para que a difusão seja rapidíssima) e se liga a receptores nicotínicos concentrados na membrana muscular."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa membrana muscular pós-sináptica não é lisa: ela forma dobras profundas, chamadas dobras juncionais, que multiplicam a área de superfície disponível e permitem concentrar uma quantidade enorme de receptores nicotínicos em um espaço físico pequeno. Quando a acetilcolina se liga a esses receptores, eles se abrem como canais iônicos, permitindo a entrada de sódio e gerando uma despolarização local chamada potencial de placa motora — que, se suficientemente forte, dispara o potencial de ação que vai descer pelos túbulos T, exatamente como descrito no bloco anterior."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas existe um problema adicional: se a acetilcolina permanecesse ligada aos receptores indefinidamente, o músculo ficaria em contração contínua, incapaz de relaxar e de responder a um novo estímulo. A solução é uma enzima presente na própria fenda sináptica, a acetilcolinesterase, que degrada rapidamente a acetilcolina livre, garantindo que cada disparo do nervo produza um evento de contração limitado no tempo, não uma ativação permanente."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A precisão da junção neuromuscular depende tanto da liberação rápida de acetilcolina quanto da sua remoção igualmente rápida pela acetilcolinesterase — sem essa segunda etapa, o sistema perderia a capacidade de distinguir um comando de contrair do próximo."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "📬",
+      "conteudo": "Pense em uma correspondência física entregue por um carteiro entre duas casas separadas por um pequeno quintal — não há fio nenhum ligando as duas casas diretamente. O carteiro (a vesícula sináptica) sai de uma casa (o terminal axonal) carregando uma carta específica (a acetilcolina) e atravessa o quintal (a fenda sináptica) até a caixa de correio da casa vizinha (os receptores nicotínicos na membrana muscular). A caixa de correio só reconhece esse tipo específico de carta e, ao recebê-la, aciona um alarme interno na casa (a despolarização da placa motora). Crucialmente, existe um funcionário na rua (a acetilcolinesterase) cuja única função é recolher e destruir cartas entregues, para que a caixa de correio fique disponível para a próxima entrega — sem esse funcionário, a caixa ficaria entupida de cartas antigas e o alarme tocaria continuamente, sem parar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Placa motora",
+      "origem": "do latim placca (superfície achatada) e motor (que move)",
+      "significado": "literalmente, 'a placa que produz movimento'",
+      "explicacao": "O termo nasceu da observação histológica direta: quando os primeiros neuroanatomistas examinaram ao microscópio óptico onde o axônio motor terminava sobre a fibra muscular, viram uma expansão achatada, em forma de placa ou disco, cobrindo uma pequena área da superfície muscular. O nome descreve a aparência morfológica visível — muito antes de qualquer entendimento sobre acetilcolina, receptores nicotínicos ou acetilcolinesterase, que só seriam elucidados décadas depois."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar o raciocínio"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a acetilcolinesterase deixasse de funcionar completamente na fenda sináptica, o que aconteceria com a fibra muscular após um único disparo do neurônio motor?",
+      "resposta": "A acetilcolina liberada permaneceria ligada aos receptores nicotínicos por tempo indefinido, mantendo a membrana muscular em despolarização contínua. Isso levaria inicialmente a contração sustentada e descontrolada (tetania), mas, paradoxalmente, o excesso de estímulo despolarizante prolongado acaba por inativar os canais de sódio da fibra muscular (um fenômeno chamado bloqueio por despolarização), resultando em paralisia flácida após a fase inicial de rigidez. No caso do diafragma, isso pode levar à insuficiência respiratória e morte — é exatamente o mecanismo por trás da intoxicação por organofosforados, que inibem irreversivelmente a acetilcolinesterase."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Arquitetura da junção neuromuscular",
+      "descricao": "Diagrama do terminal axonal com vesículas sinápticas liberando acetilcolina na fenda sináptica, e a membrana muscular pós-sináptica com suas dobras juncionais concentrando receptores nicotínicos.",
+      "prompt_ia": "Diagrama científico vetorial de alta qualidade, corte transversal da junção neuromuscular. Terminal axonal pré-sináptico contendo vesículas sinápticas (círculos pequenos) próximas à membrana, íons cálcio entrando por canais voltagem-dependentes, acetilcolina sendo liberada por exocitose na fenda sináptica, membrana muscular pós-sináptica com dobras juncionais profundas concentrando receptores nicotínicos (representados como estruturas proteicas), enzima acetilcolinesterase representada na fenda degradando acetilcolina livre. Legendas em português, fundo transparente adaptável a tema escuro/claro, estilo didático de livro-texto."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-hist-04-001-02",
+        "titulo": "A Fibra Muscular Esquelética (Sincício Multinucleado)",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A compreensão da placa motora requer saber onde exatamente, na superfície da fibra, o sinal químico chega e como ele se conecta à arquitetura interna descrita nos blocos anteriores (sarcolema, túbulos T)."
+      },
+      {
+        "bloco_id": "s1-hist-04-001-07",
+        "titulo": "Acoplamento Excitação-Contração (DHPR-RyR1)",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "complementar",
+        "explicacao": "O potencial de placa motora gerado aqui é exatamente o gatilho elétrico que, no bloco anterior, foi descrito como o sinal que desce pelos túbulos T e ativa o DHPR."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Farmacologia dos bloqueadores neuromusculares e anticolinesterásicos",
+        "mecanismo_conexao": "O uso clínico de curarizantes (bloqueio competitivo do receptor nicotínico) e de anticolinesterásicos (aumento da meia-vida da acetilcolina) depende diretamente da fisiologia da fenda sináptica estudada aqui.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "neurologia",
+        "semestre_futuro": 4,
+        "topico": "Miastenia gravis e síndromes miastênicas",
+        "mecanismo_conexao": "A miastenia gravis é uma doença autoimune que ataca especificamente os receptores nicotínicos concentrados nas dobras juncionais descritas neste bloco, reduzindo a eficiência da transmissão sináptica e causando fraqueza fatigável.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "toxicologia",
+        "semestre_futuro": 5,
+        "topico": "Intoxicação por organofosforados e toxina botulínica",
+        "mecanismo_conexao": "Organofosforados inibem irreversivelmente a acetilcolinesterase, causando excesso de acetilcolina na fenda; a toxina botulínica faz o oposto, impedindo a liberação de acetilcolina — os dois extremos farmacológicos da mesma sinapse descrita aqui.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-04-002-02",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Enquanto a junção neuromuscular é estritamente uma sinapse química unidirecional (nervo para músculo), os discos intercalares do músculo cardíaco contêm junções comunicantes que permitem comunicação elétrica direta e bidirecional entre cardiomiócitos vizinhos."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-hist-04-001-10-fc01",
+      "pergunta": "Por que o neurônio motor e a fibra muscular esquelética se comunicam por sinapse química, em vez de por continuidade elétrica direta como ocorre entre células do músculo cardíaco?",
+      "resposta": "Porque a sinapse química permite um grau de controle e modulação que a continuidade elétrica direta não oferece: o sistema nervoso pode variar a frequência de disparos, integrar sinais de múltiplos neurônios e regular com precisão fina quando e com que intensidade cada unidade motora deve contrair. Uma conexão elétrica direta transmitiria o sinal de forma menos regulável e em ambas as direções, o que não serve ao propósito de um sistema nervoso central que precisa comandar o músculo esquelético com controle voluntário preciso.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "sinapse-quimica",
+        "juncao-neuromuscular"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-001-10-fc02",
+      "pergunta": "Descreva a sequência completa de eventos desde a chegada do potencial de ação ao terminal axonal até a geração do potencial de placa motora na fibra muscular.",
+      "resposta": "1) O potencial de ação alcança o terminal do axônio motor e abre canais de cálcio voltagem-dependentes. 2) A entrada de cálcio dispara a fusão de vesículas sinápticas carregadas de acetilcolina com a membrana pré-sináptica, liberando o neurotransmissor por exocitose. 3) A acetilcolina se difunde rapidamente pela estreita fenda sináptica. 4) Ela se liga a receptores nicotínicos concentrados nas dobras juncionais da membrana muscular pós-sináptica. 5) A ligação abre canais iônicos associados a esses receptores, permitindo entrada de sódio e gerando uma despolarização local chamada potencial de placa motora, que, se atingir o limiar, dispara um potencial de ação que se propaga por toda a fibra.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "acetilcolina",
+        "potencial-de-placa-motora",
+        "mecanismo"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-001-10-fc03",
+      "pergunta": "Se os receptores nicotínicos de acetilcolina fossem bloqueados competitivamente por uma substância como o curare, o que aconteceria com a transmissão do sinal na junção neuromuscular, mesmo com liberação normal de acetilcolina?",
+      "resposta": "A acetilcolina liberada normalmente pelo terminal axonal não encontraria receptores disponíveis para se ligar, porque o curare os ocupa de forma competitiva sem ativá-los. Consequentemente, o potencial de placa motora não seria gerado (ou seria gerado abaixo do limiar necessário), e o sinal jamais se propagaria como potencial de ação pela fibra muscular. O resultado clínico é paralisia flácida — o músculo permanece relaxado e sem resposta ao comando nervoso, apesar de toda a maquinaria contrátil interna (sarcômeros, retículo sarcoplasmático) estar perfeitamente funcional.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "curare",
+        "bloqueio-sinaptico",
+        "contrafactual"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-001-10-fc04",
+      "pergunta": "Mulher de 32 anos relata ptose palpebral e diplopia que pioram ao longo do dia e melhoram após repouso, além de dificuldade progressiva para mastigar durante as refeições. Exame laboratorial revela anticorpos anti-receptor nicotínico de acetilcolina positivos. Explique por que a fadiga muscular nessa condição é progressiva ao longo do uso, e não constante desde o início do esforço.",
+      "resposta": "Na miastenia gravis, anticorpos destroem e reduzem progressivamente o número de receptores nicotínicos funcionais nas dobras juncionais da placa motora. No início de um esforço muscular, os receptores remanescentes ainda conseguem gerar potenciais de placa motora suficientes para disparar contração, mas a cada disparo sucessivo do nervo, a quantidade de acetilcolina disponível por vesícula tende a diminuir ligeiramente (fenômeno normal chamado depressão sináptica), e com o número já reduzido de receptores disponíveis, essa pequena queda natural passa a ser suficiente para que o potencial de placa motora caia abaixo do limiar necessário para disparar contração. O resultado é fraqueza que piora visivelmente com o uso repetido do músculo e melhora após período de repouso, permitindo a regeneração do pool de acetilcolina disponível.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "miastenia-gravis",
+        "autoimune",
+        "clinico"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-001-10-fc05",
+      "pergunta": "Verdadeiro ou falso e justifique: 'As dobras juncionais da membrana pós-sináptica existem principalmente para aumentar a resistência mecânica da junção neuromuscular contra o estiramento durante a contração.'",
+      "resposta": "Falso. As dobras juncionais existem primariamente para aumentar a área de superfície disponível na membrana pós-sináptica, permitindo concentrar uma densidade muito maior de receptores nicotínicos de acetilcolina em um espaço fisicamente limitado — não para resistência mecânica ao estiramento. Essa arquitetura maximiza a eficiência da transmissão química: mais receptores concentrados significa maior probabilidade de a acetilcolina liberada encontrar rapidamente um receptor livre, tornando a resposta mais rápida e mais confiável. Confundir a função das dobras com resistência mecânica é um erro comum, porque a palavra 'dobra' sugere intuitivamente reforço estrutural, quando na verdade a lógica aqui é puramente de aumento de área funcional para receptores.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "dobras-juncionais",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-001-10-fc06",
+      "pergunta": "Por que o termo 'placa motora' descreve uma observação morfológica, e não um mecanismo bioquímico — e por que essa distinção importa para entender a história da neurociência?",
+      "resposta": "O termo 'placa motora' nasceu da simples observação, ao microscópio óptico do século XIX, de uma expansão achatada do axônio sobre a superfície da fibra muscular — uma descrição puramente visual e morfológica. Só décadas mais tarde os cientistas identificaram a acetilcolina como neurotransmissor, os receptores nicotínicos como seu alvo, e a acetilcolinesterase como a enzima reguladora. Essa distinção importa porque ilustra um padrão recorrente na história da medicina: estruturas anatômicas são frequentemente nomeadas por sua aparência muito antes de se compreender seu mecanismo molecular, o que significa que o nome, sozinho, não ensina a função — apenas aponta para onde ela deve ser procurada.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "placa-motora",
+        "etimologia",
+        "historia-da-medicina"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-001-10-fc07",
+      "pergunta": "Compare os mecanismos de ação da toxina botulínica e do curare na junção neuromuscular, explicando por que ambos causam paralisia flácida por vias completamente diferentes.",
+      "resposta": "A toxina botulínica age na etapa pré-sináptica: ela cliva proteínas necessárias para a fusão das vesículas sinápticas com a membrana do terminal axonal, impedindo a liberação de acetilcolina mesmo que o potencial de ação chegue normalmente ao terminal — a acetilcolina simplesmente nunca é liberada na fenda. O curare age na etapa pós-sináptica: ele se liga competitivamente aos receptores nicotínicos na membrana muscular, impedindo que a acetilcolina liberada normalmente consiga se ligar e ativar esses receptores. Ambos resultam em paralisia flácida porque, em ambos os casos, o potencial de placa motora não é gerado — mas um bloqueia a liberação do mensageiro, e o outro bloqueia a recepção do mensageiro.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "toxina-botulinica",
+        "curare",
+        "comparacao"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-001-10-fc08",
+      "pergunta": "Conecte: por que a piridostigmina (inibidor reversível da acetilcolinesterase, usado em Farmacologia) melhora a força muscular em pacientes com miastenia gravis (doença estudada em Neurologia), atuando exatamente sobre a enzima descrita neste bloco de Histologia?",
+      "resposta": "Na miastenia gravis, o número de receptores nicotínicos funcionais está reduzido por ataque autoimune, então a acetilcolina liberada normalmente tem menos alvos disponíveis para se ligar antes de ser degradada pela acetilcolinesterase, presente na própria fenda sináptica. A piridostigmina inibe reversivelmente essa enzima, prolongando o tempo em que a acetilcolina permanece disponível na fenda — aumentando, assim, a probabilidade estatística de ela encontrar e se ligar a um dos poucos receptores restantes antes de ser destruída. O resultado é um potencial de placa motora mais robusto, capaz de atingir o limiar de disparo mesmo com número reduzido de receptores, melhorando clinicamente a força muscular do paciente sem alterar o processo autoimune subjacente.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "piridostigmina",
+        "miastenia-gravis",
+        "sintese"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-hist-04-001-10-caso01",
+      "titulo": "Fraqueza ocular flutuante que piora ao longo do dia",
+      "apresentacao": "Mulher de 35 anos procura atendimento por queda progressiva da pálpebra direita e visão dupla que aparecem no meio da tarde e melhoram significativamente após uma noite de sono. Relata também dificuldade crescente para mastigar durante refeições longas. Exame físico mostra ptose palpebral que piora com o olhar sustentado para cima por um minuto (teste de fatigabilidade positivo). Anticorpos anti-receptor nicotínico de acetilcolina são solicitados e retornam positivos.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Produção de autoanticorpos que atacam e reduzem progressivamente o número de receptores nicotínicos de acetilcolina funcionais na membrana pós-sináptica."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A placa motora — especificamente as dobras juncionais da membrana muscular pós-sináptica, descritas neste bloco como o local de máxima concentração de receptores nicotínicos."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com menos receptores disponíveis, cada disparo do nervo motor gera um potencial de placa motora progressivamente mais fraco ao longo de disparos sucessivos, até cair abaixo do limiar necessário para desencadear contração."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Fraqueza muscular que piora com o uso repetido do músculo ao longo do dia — típica e classicamente afetando músculos oculares extrínsecos (causando ptose e diplopia) e músculos da mastigação — e melhora após período de repouso."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento, a fraqueza pode progredir para envolvimento da musculatura respiratória (crise miastênica), uma emergência médica potencialmente fatal que exige suporte ventilatório."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente o que ocorre quando o número de receptores nicotínicos concentrados nas dobras juncionais — descritas neste bloco como a chave da eficiência da transmissão sináptica — é reduzido por ataque autoimune: a mesma arquitetura que normalmente garante resposta rápida e confiável passa a falhar de forma progressiva e dependente do uso.",
+      "disciplinas_relacionadas": [
+        "histologia",
+        "imunologia",
+        "neurologia",
+        "oftalmologia"
+      ],
+      "diagnostico_revelado": "Miastenia gravis.",
+      "tratamento_resumido": "Inibidores da acetilcolinesterase (como a piridostigmina) para aumentar a meia-vida da acetilcolina na fenda sináptica, melhorando a probabilidade de ligação aos receptores remanescentes; imunossupressão (corticosteroides, outros imunossupressores) para reduzir a produção de autoanticorpos; timectomia em casos selecionados, já que o timo frequentemente participa da fisiopatologia autoimune [⚠️ VERIFICAR: indicações precisas de timectomia e esquemas imunossupressores devem ser confirmados em guideline neurológico atualizado]."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-hist-04-001-10-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
+  },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 14ª ed. Elsevier; 2021. Capítulo sobre transmissão neuromuscular.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Ross MH, Pawlina W. Histology: A Text and Atlas. 8th ed. Wolters Kluwer; 2020. Chapter 10 — Muscle Tissue.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "histofisiologia",
-    "correlacao-clinica"
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "As dobras juncionais existem para dar resistência mecânica à junção neuromuscular",
+      "correcao": "Elas existem para aumentar a área de superfície disponível para receptores nicotínicos, maximizando a eficiência da transmissão química",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Toxina botulínica e curare agem pelo mesmo mecanismo",
+      "correcao": "Botulínica bloqueia a liberação pré-sináptica de acetilcolina; curare bloqueia competitivamente os receptores pós-sinápticos",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "junção neuromuscular",
+      "termo_es": "unión neuromuscular",
+      "termo_en": "neuromuscular junction",
+      "abreviatura": "JNM / NMJ"
+    },
+    {
+      "termo_pt": "acetilcolina",
+      "termo_es": "acetilcolina",
+      "termo_en": "acetylcholine",
+      "abreviatura": "ACh"
+    },
+    {
+      "termo_pt": "miastenia gravis",
+      "termo_es": "miastenia gravis",
+      "termo_en": "myasthenia gravis",
+      "abreviatura": "MG"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "gemini-3.1-flash-lite",
+      "mudanca": "Geração inicial do bloco, incluindo caso clínico de miastenia gravis",
+      "motivo": "Produção em massa S1"
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Reescrita completa da narrativa (socrática genuína, fenda sináptica apresentada antes dos nomes), nova analogia (carteiro/caixa de correio), expansão de flashcards de 5 para 8 tipos variados, enriquecimento do caso clínico existente com schema completo de 8 campos",
+      "motivo": "Alinhamento com ANIMA_FILOSOFIA.md — narrativa anterior nomeava DHPR e placa motora antes de justificar a necessidade, analogia de pedágio pouco elaborada, faltavam tipos de flashcard obrigatórios (armadilha, sintese_transdisciplinar, etimologia completos)"
+    }
   ]
 }

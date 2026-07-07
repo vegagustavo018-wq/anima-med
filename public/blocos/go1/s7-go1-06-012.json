@@ -4,49 +4,236 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Candidíase Vulvovaginal",
+    "titulo": "Candidiase Vulvovaginal",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "infeccoes-genitais",
+      "ist",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Corrimento grumoso, prurido, pH normal; fatores de risco; azólicos",
-  "narrativa": [],
+  "resumo_conciso": "Candidíase vulvovaginal é proliferação de Candida, geralmente C. albicans, marcada por prurido, ardor, eritema vulvar, fissuras e corrimento grumoso com pH vaginal geralmente normal.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Candidíase vulvovaginal é uma das causas mais frequentes de prurido vulvar. O agente mais comum é Candida albicans, embora espécies não albicans sejam relevantes em recorrência ou falha terapêutica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O sintoma dominante é prurido, muitas vezes com ardor, dispareunia superficial, disúria externa, eritema, edema e fissuras. O corrimento clássico é branco e grumoso, mas o diagnóstico não deve depender só da aparência."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O pH vaginal costuma ser normal. Na microscopia com KOH ou salina podem aparecer leveduras, brotamentos ou pseudohifas; cultura ou teste molecular ajuda em casos recorrentes, complicados ou não albicans."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Fatores de risco incluem antibióticos recentes, diabetes descompensado, gestação, imunossupressão e estrogênio. Muitas pacientes, porém, não têm fator claro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Candidíase não complicada pode ser tratada com azólicos tópicos ou fluconazol oral em dose única quando apropriado. Gestantes devem receber tratamento tópico por período adequado, evitando fluconazol oral sem indicação especializada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Candidíase recorrente exige confirmar diagnóstico, identificar espécie quando possível e pensar em esquema de indução seguido de manutenção. Tratar parceiro não é rotina, salvo balanite sintomática."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O erro clássico é repetir antifúngico para toda coceira. Dermatites, líquen, herpes, vulvodínia e vaginite mista precisam entrar no diferencial quando o quadro não fecha."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-05-000",
+        "titulo": "Modulo 5 - Miomatose Uterina e Tumores Benignos",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-022",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Sifilis Genital - Cancro Duro",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-026",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Bartolinite e Abscesso de Bartholin",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-030",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Doenca Inflamatoria Pelvica - Visao de Conjunto",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN"
+      },
+      {
+        "bloco_id": "s7-go1-04-003",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Apresentacao Clinica da Endometriose - As Tres Dismenorreias"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-012-fc-01",
+      "pergunta": "Qual sintoma domina na candidíase?",
+      "resposta": "Prurido vulvar, frequentemente com ardor, eritema e dispareunia superficial.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-012-fc-02",
+      "pergunta": "Como fica o pH na candidíase típica?",
+      "resposta": "Normal, geralmente até 4,5.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-012-fc-03",
+      "pergunta": "Quando investigar espécie de Candida?",
+      "resposta": "Em recorrência, quadro complicado, falha terapêutica ou suspeita de Candida não albicans.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-012-fc-04",
+      "pergunta": "Parceiro deve ser tratado de rotina?",
+      "resposta": "Não, salvo sintomas como balanite.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-012-cc-01",
+      "titulo": "Coceira que voltou",
+      "apresentacao": "Mulher com quatro episódios de prurido e corrimento no ano usou fluconazol repetidamente sem exame.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Candidíase vulvovaginal é proliferação de Candida, geralmente C."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Candidiase Vulvovaginal, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Candidíase vulvovaginal é proliferação de Candida, geralmente C. albicans, marcada por prurido, ardor, eritema vulvar, fissuras e corrimento grumoso com pH vaginal geralmente normal."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher com quatro episódios de prurido e corrimento no ano usou fluconazol repetidamente sem exame."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual próximo passo correto? Confirmar diagnóstico com exame, considerar cultura/identificação de espécie e planejar tratamento para recorrência."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Confirmar diagnóstico com exame, considerar cultura/identificação de espécie e planejar tratamento para recorrência.",
+      "tratamento_resumido": "Confirmar diagnóstico com exame, considerar cultura/identificação de espécie e planejar tratamento para recorrência."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Comparação entre epitélio vaginal com leveduras/pseudohifas e quadro clínico de prurido, eritema e pH normal.",
+        "alt": "Ilustracao educacional para Candidiase Vulvovaginal"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Bacterial Vaginosis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Vulvovaginal Candidiasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Trichomoniasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Urethritis and Cervicitis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Ulcer Disease",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/genital-ulcers.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

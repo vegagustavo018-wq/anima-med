@@ -4,49 +4,162 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Câncer de Ovário — Diagnóstico, Estadiamento e Tratamento",
+    "titulo": "Cancer de Ovario - Diagnostico, Estadiamento e Tratamento",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "diagnostico",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Apresentação tardia, marcadores, citorredução e quimioterapia",
-  "narrativa": [],
+  "resumo_conciso": "Câncer de ovário é investigado por imagem, marcadores e avaliação cirúrgica. O tratamento do epitelial avançado combina citorredução, quimioterapia à base de platina e, em casos selecionados, terapias de manutenção.",
+  "narrativa": [
+    {
+      "tipo": "abertura",
+      "conteudo": "O diagnóstico de câncer de ovário frequentemente começa tarde, porque distensão abdominal, saciedade precoce, dor pélvica, alteração intestinal e urgência urinária parecem inespecíficos."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Ultrassom transvaginal e imagem abdominal/pélvica avaliam massa, ascite, implantes e doença extraovariana. CA-125 ajuda em muitos tumores epiteliais, mas é inespecífico e pode ser normal em doença inicial ou em alguns subtipos."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "A confirmação definitiva é histológica. Em massa claramente suspeita, a abordagem deve evitar punção inadequada que possa disseminar ou dificultar estadiamento, e priorizar equipe de oncologia ginecológica."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "O estadiamento é cirúrgico e avalia ovários, tubas, útero, peritônio, omento, linfonodos e doença à distância. Em doença avançada, a extensão peritoneal define prognóstico e estratégia."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "O tratamento padrão do carcinoma epitelial avançado inclui cirurgia de citorredução, buscando ausência de doença macroscópica quando possível, associada a quimioterapia baseada em platina e taxano."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Quando a doença parece irressecável de início ou a paciente não tolera cirurgia extensa imediata, quimioterapia neoadjuvante seguida de cirurgia intervalar pode ser considerada."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Testagem tumoral e germinativa é importante, especialmente BRCA e deficiência de recombinação homóloga, porque muda aconselhamento familiar e pode orientar manutenção com inibidores de PARP em cenários selecionados."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Seguimento acompanha sintomas, exame, marcadores quando úteis, toxicidades, menopausa, saúde óssea, sexualidade e suporte psicossocial."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      "s7-go1-08-000"
+    ],
+    "futuras": [
+      "s7-go1-09-000"
+    ],
+    "laterais": [
+      "s7-go1-05-005",
+      "s7-go1-07-006"
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "id": "s7-go1-08-032-fc-01",
+      "pergunta": "Qual marcador é mais usado no câncer epitelial de ovário?",
+      "resposta": "CA-125, lembrando que é inespecífico e não serve como rastreio universal isolado.",
+      "tipo": "conceito"
+    },
+    {
+      "id": "s7-go1-08-032-fc-02",
+      "pergunta": "O que é citorredução?",
+      "resposta": "Cirurgia para remover o máximo possível de doença tumoral macroscópica.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-08-032-fc-03",
+      "pergunta": "Qual quimioterapia é base em muitos tumores epiteliais?",
+      "resposta": "Esquema com platina e taxano.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-08-032-fc-04",
+      "pergunta": "Por que testar BRCA?",
+      "resposta": "Orienta risco familiar e pode influenciar manutenção/tratamento.",
+      "tipo": "aplicacao"
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "id": "s7-go1-08-032-cc-01",
+      "titulo": "Ascite e massa complexa",
+      "enunciado": "Mulher de 61 anos apresenta distensão abdominal, massa anexial complexa bilateral, ascite e CA-125 elevado.",
+      "pergunta": "Qual princípio de conduta?",
+      "resposta_comentada": "Encaminhar para oncologia ginecológica para estadiamento e planejamento de citorredução/quimioterapia, evitando abordagem fragmentada."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Fluxograma do câncer de ovário: sintomas vagos, massa complexa, CA-125, estadiamento cirúrgico, citorredução, platina/taxano e manutenção.",
+        "alt": "Ilustracao educacional para Cancer de Ovario - Diagnostico, Estadiamento e Tratamento"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Vulvar Cancer Treatment",
+      "url": "https://www.cancer.gov/types/vulvar/hp/vulvar-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Vaginal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/vaginal/hp/vaginal-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Gestational Trophoblastic Disease Treatment",
+      "url": "https://www.cancer.gov/types/gestational-trophoblastic/hp/gtd-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI - BRCA Gene Changes: Cancer Risk and Genetic Testing",
+      "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "NCI - Lynch Syndrome",
+      "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+      "tipo": "referencia"
+    }
+  ],
   "_lentes": [
     "diagnostico",
     "conduta"

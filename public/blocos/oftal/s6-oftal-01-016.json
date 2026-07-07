@@ -5,50 +5,350 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Retina — Dez Camadas e a Fototransdução",
+    "subtitulo": "Como a ativação luminosa da rodopsina induz a quebra do cGMP e a hiperpolarização dos fotorreceptores?",
     "semestre": 6,
-    "disciplina": "Oftalmologia",
+    "disciplina": "oftal",
+    "sistema_corporal": "sensorial",
+    "regiao_anatomica": "retina",
     "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 9,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "oftal",
-      "esqueleto"
+      "retina-histologia",
+      "dez-camadas-retinianas",
+      "cones-bastonetes-diferenca",
+      "ciclo-da-rodopsina",
+      "fototransducao-bioquímica",
+      "fechamento-canais-sodio",
+      "hiperpolarizacao-fotorreceptor",
+      "conduta"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "mecanismo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Fotorreceptores, células bipolares/ganglionares, mácula e fóvea",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior, analisamos a fisiologia e drenagem do humor aquoso. Agora, estudamos a retina, focando em suas dez camadas histológicas e na fototransdução. O principal desafio clínico consiste em diferenciar os papéis de cones (visão de cores/mácula) e bastonetes (visão escotópica/periferia) e decifrar a cascata bioquímica da fototransdução: a luz ativa a rodopsina e a transducina, reduzindo o cGMP e fechando canais de sódio, o que induz a hiperpolarização (em vez de despolarização) do fotorreceptor. A conduta exige mapeamento e OCT.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, compreendemos a circulação térmica e os mecanismos de escoamento trabecular e uveoscleral do humor aquoso. No segmento posterior do olho, a luz refratada cruza o vítreo e atinge o tecido neurológico sensorial: a retina. A retina processa fótons e converte radiação eletromagnética em sinais neurais por meio de dez camadas histológicas microscópicas. Qual a estrutura dessas camadas e por que o estímulo luminoso, ao contrário do resto das sinapses corporais, provoca hiperpolarização celular inibidora nos fotorreceptores?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "As Dez Camadas Histológicas da Retina"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A retina organiza-se de fora (face coroidea) para dentro (face vítrea) nas seguintes camadas ordenadas:"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Arquitetura da retina",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Epitélio Pigmentar da Retina (EPR)",
+          "explicacao": "Monocamada cúbica rica em melanina. Absorve luz dispersa, fagocita discos externos velhos dos fotorreceptores e atua na regeneração metabólica do fotopigmento 11-cis-retinal."
+        },
+        {
+          "numero": 2,
+          "titulo": "Camada de Fotorreceptores",
+          "explicacao": "Contém os segmentos externos e internos contendo discos membranosos fotossensíveis de Cones e Bastonetes."
+        },
+        {
+          "numero": 3,
+          "titulo": "Membrana Limitante Externa",
+          "explicacao": "Barreira mecânica formada por zônulas de adesão entre fotorreceptores e prolongamentos das células gliais de Müller."
+        },
+        {
+          "numero": 4,
+          "titulo": "Camada Nuclear Externa",
+          "explicacao": "Contém os corpos celulares e núcleos dos cones e bastonetes."
+        },
+        {
+          "numero": 5,
+          "titulo": "Camada Plexiforme Externa",
+          "explicacao": "Zona de sinapses químicas entre os terminais axônicos dos fotorreceptores, dendritos das células bipolares e prolongamentos de células horizontais."
+        },
+        {
+          "numero": 6,
+          "titulo": "Camada Nuclear Interna",
+          "explicacao": "Contém os corpos celulares das células bipolares, horizontais, amácrinas e das células de sustentação de Müller."
+        },
+        {
+          "numero": 7,
+          "titulo": "Camada Plexiforme Interna",
+          "explicacao": "Zona de sinapses químicas entre os axônios das células bipolares, prolongamentos de células amácrinas e dendritos de células ganglionares."
+        },
+        {
+          "numero": 8,
+          "titulo": "Camada de Células Ganglionares",
+          "explicacao": "Contém os corpos celulares das células ganglionares (neurônios de saída da retina)."
+        },
+        {
+          "numero": 9,
+          "titulo": "Camada de Fibras Nervosas",
+          "explicacao": "Axônios amielínicos das células ganglionares que correm paralelamente em direção ao disco óptico para formar o nervo óptico (CN II)."
+        },
+        {
+          "numero": 10,
+          "titulo": "Membrana Limitante Interna",
+          "explicacao": "Camada basal fina limitante que separa a retina física do gel humor vítreo posterior."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Fotorreceptores: Cones versus Bastonetes"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os dois fotorreceptores dividem o trabalho sensorial do olho de forma espacial e fisiológica:"
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Comparação: Cones vs Bastonetes",
+      "colunas": [
+        "Característica",
+        "Cones",
+        "Bastonetes"
+      ],
+      "linhas": [
+        {
+          "Característica": "População Total",
+          "Cones": "~6 milhões",
+          "Bastonetes": "~120 milhões"
+        },
+        {
+          "Característica": "Distribuição Espacial",
+          "Cones": "Altíssima concentração na **fóvea** (centro da mácula avascular).",
+          "Bastonetes": "Concentrados na periferia da retina (ausentes na fóvea central)."
+        },
+        {
+          "Característica": "Fotopigmentos",
+          "Cones": "Três tipos de opsinas (fotopsinas): vermelha, verde e azul.",
+          "Bastonetes": "Um único tipo: **rodopsina**."
+        },
+        {
+          "Característica": "Função Sensorial",
+          "Cones": "Visão fotópica (cores, alta resolução de detalhes diurnos).",
+          "Bastonetes": "Visão escotópica (movimentos periféricos, detecção na penumbra)."
+        },
+        {
+          "Característica": "Fiação Sináptica",
+          "Cones": "Na fóvea: proporção 1 cone -> 1 bipolar -> 1 ganglionar (sem convergência, máxima resolução).",
+          "Bastonetes": "Alta convergência sináptica (muitos bastonetes para uma ganglionar; alta sensibilidade luminosa, baixa acuidade)."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Bioquímica da Fototransdução: a Hiperpolarização na Luz"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ao contrário de outros neurônios sensoriais que despolarizam na presença de estímulo, o fotorreceptor **hiperpolariza na luz**:"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Corrente de escuro vs cascata de luz",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "No Escuro (Estado Despolarizado)",
+          "explicacao": "A membrana externa do fotorreceptor possui alta concentração de **GMP cíclico (cGMP)**. O cGMP mantém canais catiônicos de sódio e cálcio abertos (gerando a 'corrente de escuro'). O influxo contínuo de sódio despolariza a célula (-40 mV), estimulando a liberação contínua do neurotransmissor inibidor (glutamato) na fenda sináptica."
+        },
+        {
+          "numero": 2,
+          "titulo": "A chegada da Luz (Fóton)",
+          "explicacao": "O fóton atinge a rodopsina, isomerizando o 11-cis-retinal em all-trans-retinal. A rodopsina ativada liga-se à proteína G (**transducina**), promovendo a troca de GDP por GTP."
+        },
+        {
+          "numero": 3,
+          "titulo": "Ativação da Fosfodiesterase (PDE)",
+          "explicacao": "A subunidade alfa da transducina ativa a enzima PDE, que hidrolisa (destrói) rapidamente o cGMP, convertendo-o em 5'-GMP inativo."
+        },
+        {
+          "numero": 4,
+          "titulo": "Hiperpolarização Celular",
+          "explicacao": "A queda dos níveis de cGMP fecha os canais de sódio. Como o sódio não entra mais, mas o potássio continua saindo pelos canais basais, o interior da célula torna-se intensamente negativo (**hiperpolarização para -70 mV**). Isso **cessa a liberação de glutamato**, desinibindo as células bipolares subsequentes e disparando o potencial de ação nas ganglionares."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona o manejo clínico e a conduta"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A avaliação estrutural das camadas retinianas é feita com a **Tomografia de Coerência Óptica (OCT)**, exame de imagem não invasivo de alta resolução (corte histológico virtual in vivo) que permite diagnosticar edema macular e trações vítreas na mácula. A conduta terapêutica em perdas visuais agudas por oclusão de artéria central da retina exige massagem ocular digital compressiva rápida no PA para tentar deslocar o êmbolo obstrutor, visto que a retina neural sofre necrose infartante definitiva em menos de 90 minutos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a bioquímica da retina se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A regeneração do retinal no EPR articula-se com a nutrição. A regeneração química exige suprimento contínuo de **Vitamina A (retinol)**, convertida em 11-cis-retinal no EPR. A deficiência nutricional grave de Vitamina A prejudica a síntese de rodopsina nos bastonetes periféricos (que demandam mais fotopigmento por sua alta sensibilidade), gerando cegueira noturna (**nictalopia**), unindo bioquímica, nutrição e semiologia ocular."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Etimologia"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "rodopsina e nictalopia",
+      "origem": "rodopsina: do grego rhodon (rosa, cor de rosa) + opsis (visão); nictalopia: do grego nyx (noite) + alaos (cego) + ops (olho)",
+      "significado": "'pigmento rosa da visão' (rodopsina) e 'cegueira noturna' (nictalopia)",
+      "explicacao": "Rodopsina recebeu esse nome por apresentar coloração rosa-avermelhada quando extraída de retinas adaptadas ao escuro. Nictalopia define a perda de visão no escuro."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para a fototransdução (o interruptor invertido)"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "💡",
+      "conteudo": "Imagine que o fotorreceptor da retina é o alarme de segurança silencioso de um cofre de banco luxuoso operando de forma invertida. O alarme consiste em um eletroímã potente ligado à tomada (as bombas Na+/K+ ATPase) que segura um portão de ferro pesado aberto (os canais catiônicos de sódio). Em repouso, na escuridão da noite (o escuro), a corrente elétrica flui sem parar pelo cabo elétrico, o eletroímã está ligado e o portão de ferro fica aberto para a entrada contínua de água de uma mangueira de incêndio (a corrente de escuro de sódio). Como a água está entrando e alagando o cofre, o sistema despolariza a -40 mV e uma sirene toca barulho estridente sem parar no alto da guarita (o glutamato inibidor sendo liberado continuamente). A sirene alta parilisa e impede o guarda da guarita (a célula bipolar) de tomar qualquer atitude; ele fica surdo e inativo (sinal bloqueado). A luz do sol que atinge o olho (o fóton) é como se o ladrão invadisse a sala de controle e apertasse o botão de emergência 'DESLIGAR CORRENTE' (o ciclo da transducina e PDE que quebram o cGMP). O fluxo de energia cessa no eletroímã em frações de segundo. Sem magnetismo, o portão de ferro pesado de sódio cai e fecha com estrondo (fechamento dos canais de sódio). A mangueira de água para de verter água para dentro. O sistema de escoamento no chão do cofre drena a água acumulada rapidamente (saída de potássio), a tensão despenca no cofre ficando muito negativa (hiperpolarização a -70 mV). A sirene barulhenta da guarita desliga e fica em silêncio absoluto (cessa a liberação de glutamato). No momento em que a sirene cala, o guarda da guarita (a célula bipolar) consegue finalmente ouvir seus próprios pensamentos e gritar no rádio para a polícia ir prender o ladrão (dispara o sinal neuronal ganglionar de imagem para o cérebro). Ligar a luz no olho é desligar a sirene inibidora da sinapse. Correspondências: eletroímã ligado = cGMP mantendo canais abertos; mangueira de água = corrente de sódio; cofre alagado = despolarização de escuro; sirene barulhenta = glutamato inibitório; apertar o botão de emergência = PDE quebrando cGMP na luz; silêncio da sirene = hiperpolarização desinibindo a via. Onde a analogia quebra: no fotorreceptor a transmissão do sinal não envolve potenciais de ação de tudo-ou-nada, mas sim potenciais graduados proporcionais à intensidade da luz."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Histologia da Retina e Cascata da Fototransdução",
+      "descricao": "Esquema mostrando as dez camadas histológicas da retina, a distribuição de cones e bastonetes e o mecanismo bioquímico da fototransdução na luz. Rótulos em português.",
+      "prompt_ia": "Desenho médico didático explicativo, estilo científico de neurobiologia e histologia, fundo transparente. Diagrama com dois painéis. Painel 1 'Camadas': corte histológico da retina exibindo as 10 camadas de fotorreceptores a ganglionares com núcleos coloridos. Painel 2 'Bioquímica': detalhe do segmento externo do bastonete com a rodopsina ativando a transducina, que por sua vez ativa a PDE para quebrar o cGMP (ícones químicos) fechando os canais de sódio na membrana e induzindo hiperpolarização. Rótulos em português do Brasil claros."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-oftal-01-015",
+        "titulo": "Câmaras e Humor Aquoso — Produção e Drenagem",
+        "disciplina": "oftal",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Apresenta os fluidos oculares e a manutenção da PIO sistêmica."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "oftalmologia",
+        "semestre_futuro": 6,
+        "topico": "Vítreo — Gel que Sustenta e Envelhece",
+        "mecanismo_conexao": "A histologia retiniana (epitélio pigmentar e membrana limitante interna) fundamentará a análise da tração do humor vítreo sobre a retina neurológica profunda, a seguir.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-oftal-01-016-fc01",
+      "pergunta": "Descreva as 10 camadas da retina histológica de fora (em contato com a coroide) para dentro (em contato com o vítreo).",
+      "resposta": "1) Epitélio Pigmentar (EPR); 2) Fotorreceptores (cones/bastonetes); 3) Limitante Externa; 4) Nuclear Externa; 5) Plexiforme Externa; 6) Nuclear Interna; 7) Plexiforme Interna; 8) Células Ganglionares; 9) Fibras Nervosas (axônios); 10) Limitante Interna.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "tags": [
+        "retina-camadas",
+        "histologia-ocular",
+        "fotorreceptores-local",
+        "ganglionares-local",
+        "nervo-optico-formacao"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-016-fc02",
+      "pergunta": "Diferencie Cones e Bastonetes quanto à sua distribuição na retina e suas funções sensoriais na visão.",
+      "resposta": "Os cones concentram-se na fóvea central da mácula; medeiam a visão fotópica (cores, alta resolução espacial diurna). Os bastonetes concentram-se na retina periférica (ausentes na fóvea); medeiam a visão escotópica (movimentos, alta sensibilidade luminosa na penumbra, sem cores).",
+      "tipo": "comparacao",
+      "dificuldade": 2,
+      "tags": [
+        "cones-fovea",
+        "bastonetes-periferia",
+        "fotopica-visao",
+        "escotopica-visao",
+        "fisiologia"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-016-fc03",
+      "pergunta": "Explique por que a chegada da luz provoca a hiperpolarização do fotorreceptor e o silenciamento da liberação de neurotransmissor.",
+      "resposta": "A luz ativa a rodopsina/transducina que estimula a PDE. A PDE quebra o cGMP (GMP cíclico) em 5'-GMP. Com a queda de cGMP, os canais catiônicos de sódio fecham, cessando a 'corrente de escuro'. O efluxo contínuo de potássio hiperpolariza a célula para -70 mV, cessando a liberação de glutamato inibidor.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "tags": [
+        "fototransducao-mecanismo",
+        "cgmp-hidrolise",
+        "corrente-de-escuro-bloqueio",
+        "hiperpolarizacao-luz",
+        "glutamato-silenciamento",
+        "fisiologia"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-016-fc04",
+      "pergunta": "Se um paciente de 60 anos com diagnóstico de estenose grave da artéria carótida interna apresentar perda súbita, unilateral e indolor da visão no olho direito, e a fundoscopia revelar 'mancha cereja em foveolo' (fóvea vermelha cercada por retina pálida edematosa), qual o diagnóstico e por que a intervenção deve ocorrer em menos de 90 minutos?",
+      "resposta": "O diagnóstico é Oclusão de Artéria Central da Retina (OACR). A intervenção (massagem ocular, paracentese ou hipotensores) deve ocorrer em <90 minutos porque a retina neurológica interna é extremamente sensível à anóxia e sofre necrose infartante irreversível em poucas horas.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "tags": [
+        "oclusao-arteria-retina",
+        "mancha-vermelho-cereja",
+        "necrose-isquêmica",
+        "tempo-limite-retiniano",
+        "conduta"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s6-oftal-01-016-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente_geracao_ia"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity-3.5-flash",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-06",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Kanski JJ, Bowling B. Oftalmologia Clínica: Uma Abordagem Sistemática. 8ª ed. Elsevier; 2016. Capítulo 14 — Doencas da Retina.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "type": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 13ª ed. Elsevier; 2017. Capítulo 51 — O Olho: II. Função Receptora e Neural da Retina.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
-    "correlação com ciências básicas",
-    "mecanismo/fisiopatologia"
+    "mecanismo",
+    "clinica",
+    "conduta"
   ]
 }

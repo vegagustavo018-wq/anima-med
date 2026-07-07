@@ -142,47 +142,59 @@
   "conexoes": {
     "prerequisitos": [
       {
-        "id": "s6-oftal-01-000",
-        "tipo": "CONCEITUAL",
-        "descricao": "Anatomia e fisiologia da retina (camadas retinianas, circulação retiniana, barreira hematoencefálica retiniana)"
+        "bloco_id": "s6-oftal-01-000",
+        "titulo": "Módulo 1 — Anatomia, Fisiologia e Exame Ocular",
+        "disciplina": "Oftalmologia",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
       },
       {
-        "id": "s6-oftal-01-001",
-        "tipo": "CONCEITUAL",
-        "descricao": "Exame oftalmológico básico (como fazer fundo de olho, interpretação de fotografia retiniana)"
+        "bloco_id": "s6-oftal-01-001",
+        "titulo": "O Olho como Câmera Óptica — Visão Geral",
+        "disciplina": "Oftalmologia",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
       }
     ],
     "futuras": [
       {
         "id": "s6-endocr-xx-xxx",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Endocrinologia: fisiopatologia da diabetes mellitus tipo 1 e 2, insulina, glucagon, controle glicêmico"
+        "descricao": "Endocrinologia: fisiopatologia da diabetes mellitus tipo 1 e 2, insulina, glucagon, controle glicêmico",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s6-oftal-03-010",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Doenças da retina — outros tipos de retinopatia (hipertensiva, por radiação), para comparação com diabética"
+        "descricao": "Doenças da retina — outros tipos de retinopatia (hipertensiva, por radiação), para comparação com diabética",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s6-farma-xx-xxx",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Farmacologia: anti-VEGF (ranibizumabe, aflibercept, faricimabe), antiangina, antiplaquetários, estatinas"
+        "descricao": "Farmacologia: anti-VEGF (ranibizumabe, aflibercept, faricimabe), antiangina, antiplaquetários, estatinas",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s6-surg-retina-xx-xxx",
         "tipo": "MECANISMO_COMPARTILHADO",
-        "descricao": "Cirurgia de Retina: vitrectomia pars plana, técnica de peeling de membrana limitante interna"
+        "descricao": "Cirurgia de Retina: vitrectomia pars plana, técnica de peeling de membrana limitante interna",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s6-oftal-02-001",
         "tipo": "RECONHECIMENTO_CLINICO",
-        "descricao": "Glaucoma neovascular — complicação de retinopatia proliferativa avançada"
+        "descricao": "Glaucoma neovascular — complicação de retinopatia proliferativa avançada",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
       {
         "id": "s6-oftal-02-000",
-        "descricao": "Retinopatia hipertensiva (outro tipo de retinopatia vascular)"
+        "descricao": "Retinopatia hipertensiva (outro tipo de retinopatia vascular)",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -246,30 +258,70 @@
   ],
   "casos_clinicos": [
     {
-      "id": "caso_001",
+      "caso_id": "caso_001",
       "titulo": "Retinopatia Diabética Progressiva em Paciente Não-Aderente",
-      "resumo": "Homem, 52 anos, diabético tipo 2 há 15 anos, com HbA1c persistentemente > 11% apesar de múltiplas consultas com endocrinologista.",
-      "cascata": {
-        "causa": "Diabetes mellitus tipo 2 com controle glicêmico inadequado (HbA1c > 11%) por 12 anos. Paciente referia: 'não gosto de tomar insulina, sofro com hipoglicemias'. Hipertensão descontrolada (PA = 160/95). Nefropatia diabética (creatinina = 2.2).",
-        "estrutura": "Capilares retinianos destruídos progressivamente. Pericitos apoptóticos. Sorbitol acumula em células endoteliais. Parede capilar perde integridade. Hipóxia retiniana crônica → VEGF sobe.",
-        "disfuncao": "Vazamento de plasma (microaneurismas, hemorragias, exsudatos). Edema de mácula. Isquemia retiniana em 40% da área retiniana. Neovascularização do disco óptico.",
-        "sintoma": "Paciente relata: 'visão embaçada no centro há 6 meses, mas não me incomodava demais'. Agora: perda de visão periférica lateral (tração vitreo-retiniana), moscas pretas ocasionais (micro-hemorragia).",
-        "consequencia": "Oftalmologista diagnostica: retinopatia diabética proliferativa com edema macular diabético. Acuidade visual: 6/12 no olho direito (mácula ainda preservada), 5/12 no esquerdo (isquemia macular lateral). Pressão intraocular = 25 mmHg (neovascularização do ângulo iridocorneano — risco de glaucoma neovascular). Ultrassom B mostra vítreo claro (sem hemorragia vítrea YET, mas risco é alto)."
-      },
-      "discussao": "Este caso ilustra a cascata de retinopatia: controle glicêmico ruim → dano progressivo → estadios de retinopatia → cegueira potencial. O paciente está agora com RDP + edema macular + risco de glaucoma. Intervenção urgente necessária:\\n1. Anti-VEGF intravítreo (ranibizumabe 0.5 mg) a cada 2 semanas × 3, depois avaliar resposta.\\n2. Laser panretiniano complementar (se anti-VEGF não controlar neovascularização em 8 semanas).\\n3. Monitoramento rigoroso de pressão intraocular — pode estar desenvolvendo glaucoma neovascular.\\n4. Endocrinologia: conversa honesta sobre insulina + GLP-1 agonista para reduzir HbA1c rapidamente.\\n5. Nefropatia: referência a nefrologia (creatinina 2.2 = estágio 3b insuficiência renal crônica).\\n\\nPrognostico: Com anti-VEGF agressivo + melhora glicêmica (se paciente aceitar insulina), pode-se estabilizar visão em 6-12 meses. Sem intervenção, risco de cegueira legal (< 3/60) em 2 anos é > 70%."
+      "apresentacao": "Homem, 52 anos, diabético tipo 2 há 15 anos, com HbA1c persistentemente > 11% apesar de múltiplas consultas com endocrinologista.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Diabetes mellitus tipo 2 de longa data (15 anos) com controle glicêmico cronicamente inadequado (HbA1c persistentemente > 11%), apesar de acompanhamento endocrinológico regular — má aderência ao tratamento."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Microvasculatura da retina, incluindo a mácula, e o ângulo iridocorneano (via neovascularização)."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Hiperglicemia crônica lesa os capilares retinianos, causando isquemia progressiva. A retina isquêmica libera VEGF, estimulando neovascularização anômala (retinopatia diabética proliferativa) e extravasamento vascular (edema macular); os neovasos podem também obstruir o ângulo, elevando a pressão intraocular."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Perda progressiva e assimétrica de acuidade visual, moscas volantes (hemorragia vítrea de neovasos frágeis), possível dor ocular se houver elevação da pressão intraocular por glaucoma neovascular."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem intervenção, risco de cegueira legal (acuidade < 3/60) maior que 70% em 2 anos. Com anti-VEGF intravítreo agressivo associado a melhora do controle glicêmico, é possível estabilizar a visão em 6-12 meses."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a cascata da retinopatia diabética quando o controle glicêmico é cronicamente inadequado: de isquemia retiniana a neovascularização, edema macular e risco de glaucoma neovascular, exigindo resposta terapêutica combinada (oftalmológica e sistêmica).",
+      "disciplinas_relacionadas": [
+        "Oftalmologia"
+      ],
+      "diagnostico_revelado": "Retinopatia Diabética Progressiva em Paciente Não-Aderente",
+      "tratamento_resumido": "Anti-VEGF intravítreo (ranibizumabe 0,5 mg) a cada 2 semanas por 3 doses, com laser panretiniano complementar se a neovascularização não for controlada em 8 semanas. Monitoramento rigoroso da pressão intraocular (risco de glaucoma neovascular). Otimização glicêmica urgente (insulina + agonista de GLP-1) e encaminhamento à nefrologia (creatinina 2,2 = DRC estágio 3b)."
     },
     {
-      "id": "caso_002",
+      "caso_id": "caso_002",
       "titulo": "Edema Macular Diabético Tratado com Anti-VEGF em Paciente Aderente",
-      "resumo": "Mulher, 58 anos, diabética tipo 2 há 8 anos, HbA1c = 6.8%, apresenta edema macular diabético leve.",
-      "cascata": {
-        "causa": "Diabetes tipo 2 com controle razoável (HbA1c = 6.8%, meta 6.5-7%). Hipertensão bem controlada (PA = 128/76). Dislipidemia tratada (LDL = 85). Nenhuma nefropatia (creatinina = 0.9). Triagem oftalmológica anual descobriu retinopatia não-proliferativa.",
-        "estrutura": "Capilares retinianos têm pericitos viáveis (porque glicemia é apenas moderadamente alta). Porém, em zona de mácula, tem vazamento focal de VEGF em resposta a isquemia micro-regional (pequena área hipóxica de <1mm²).",
-        "disfuncao": "Vazamento localizado perto de fóvea. Lipídios (exsudatos duros) organizados em anel de drusas. Edema de mácula confirmado no OCT: 285 micrômetros (elevado, normal = 200-220).",
-        "sintoma": "Paciente relata: 'está ficando difícil ler de perto, preciso de óculos de leitura mais fortes'. Visão é 7/10 no olho afetado (antes era 10/10). Metamorfopsia leve (linhas parecem ligeiramente onduladas quando olha para parede).",
-        "consequencia": "Diagnóstico: retinopatia diabética não-proliferativa moderada com edema macular diabético clínico (ameaçando ou envolvendo fóvea). Indicação: anti-VEGF ou laser focal."
-      },
-      "discussao": "Este caso contrasta com o anterior. Aqui, controle glicêmico adequado permitiu que retinopatia ficasse leve. Mesmo assim, edema macular é complicação que reduz visão. Tratamento com anti-VEGF é excelente opção: ranibizumabe 0.5 mg intravítreo mensal × 3, depois cada 2 meses se responder bem. Mecanismo: VEGF é bloqueado → vazamento reduz → edema diminui em 4-6 semanas. OCT mostra: espessura macular volta para 215 micrômetros em 2 meses. Visão volta para 9/10.\\n\\nAlternativa: laser focal direto nas microaneurismas (se paciente preferir não injeção intravítrea). Mas laser deixa cicatriz; anti-VEGF é reversível.\\n\\nPrognostico: Excelente. Com anti-VEGF × 3 + manutenção da glicemia (HbA1c 6.5-7%) + pressão < 130/80, risco de progressão para retinopatia proliferativa é < 5% em 10 anos. Paciente não vai ficar cega."
+      "apresentacao": "Mulher, 58 anos, diabética tipo 2 há 8 anos, HbA1c = 6.8%, apresenta edema macular diabético leve.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Diabetes mellitus tipo 2 há 8 anos, mas com controle glicêmico adequado (HbA1c 6,8%) — retinopatia consequentemente mantida em estágio leve."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Mácula, com extravasamento vascular localizado (edema macular diabético) mesmo em contexto de retinopatia de fundo leve."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Mesmo com controle glicêmico bom, capilares maculares apresentam extravasamento localizado mediado por VEGF, espessando a retina central e reduzindo a acuidade visual."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Redução leve a moderada da acuidade visual central, sem os sinais de doença proliferativa avançada (sem neovascularização extensa)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Com anti-VEGF e manutenção do bom controle glicêmico e pressórico, o risco de progressão para retinopatia proliferativa é menor que 5% em 10 anos — prognóstico visual excelente."
+        }
+      ],
+      "conexao_com_bloco": "Contrasta com o caso anterior: controle glicêmico adequado mantém a retinopatia em estágio leve, mas o edema macular ainda pode ocorrer e responde bem a anti-VEGF quando tratado precocemente.",
+      "disciplinas_relacionadas": [
+        "Oftalmologia"
+      ],
+      "diagnostico_revelado": "Edema Macular Diabético Tratado com Anti-VEGF em Paciente Aderente",
+      "tratamento_resumido": "Anti-VEGF intravítreo (ranibizumabe 0,5 mg) mensal por 3 doses, depois a cada 2 meses se responsivo — reduz o edema macular em 4-6 semanas (OCT mostra espessura macular normalizando, acuidade retornando a 9/10). Alternativa: laser focal nas microaneurismas para quem prefere evitar injeção intravítrea, embora deixe cicatriz permanente (anti-VEGF é reversível). Manutenção de HbA1c 6,5-7% e pressão arterial < 130/80."
     }
   ],
   "midia": {

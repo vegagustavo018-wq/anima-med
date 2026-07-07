@@ -5,31 +5,157 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "O Problema da Imagem Fora de Foco — Visão Geral das Ametropias",
+    "subtitulo": "Como o equilíbrio comprimento axial × poder dióptrico determina a emetropia ou qualquer ametropia?",
     "semestre": 6,
-    "disciplina": "Oftalmologia",
+    "disciplina": "oftal",
+    "sistema_corporal": "sensorial",
+    "regiao_anatomica": "olho",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 8,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "oftal",
-      "esqueleto"
+      "ametropia-classificacao",
+      "emetropia",
+      "miopia-axial",
+      "miopia-refracional",
+      "hipermetropia-axial",
+      "astigmatismo-regular-irregular",
+      "epidemiologia-miopia",
+      "conduta"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Descompasso entre poder óptico e comprimento axial; emetropia como referência",
-  "narrativa": [],
+  "resumo_conciso": "No bloco do módulo 2, vimos a visão geral. Agora, aprofundamos a classificação das ametropias. O principal desafio consiste em distinguir ametropias axiais (comprimento anormal) das refratárias (curvatura/índice anormais) e compreender por que todas resultam clinicamente em imagem desfocada com diferentes padrões: borrão de longe (miopia), esforço acomodativo em todas as distâncias (hipermetropia), borrão em qualquer distância (astigmatismo), perda de foco de perto com a idade (presbiopia).",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O Módulo 2 começa com a fisiopatologia unificada das ametropias. O olho emétrope tem um equilíbrio perfeito: comprimento axial de ~24 mm e poder total de ~60 dioptrias, resultando na focalização dos raios paralelos do infinito exatamente na fóvea. Qualquer desvio desse equilíbrio — por comprimento axial incorreto, curvatura corneal irregular ou perda de elasticidade do cristalino — gera uma ametropia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Classificação das Ametropias por Causa"
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Comparação: Subtipo vs Mecanismo vs Exemplo",
+      "colunas": [
+        "Tipo",
+        "Subtipo",
+        "Mecanismo",
+        "Exemplo"
+      ],
+      "linhas": [
+        {
+          "Tipo": "Miopia",
+          "Subtipo": "Axial",
+          "Mecanismo": "Comprimento axial > 24 mm",
+          "Exemplo": "Olho longo, foco antes da retina"
+        },
+        {
+          "Tipo": "Miopia",
+          "Subtipo": "Refracional",
+          "Mecanismo": "Córnea ou cristalino com potência excessiva",
+          "Exemplo": "Ceratocone, catarata nuclear (índice elevado)"
+        },
+        {
+          "Tipo": "Hipermetropia",
+          "Subtipo": "Axial",
+          "Mecanismo": "Comprimento axial < 24 mm",
+          "Exemplo": "Olho curto, foco atrás da retina"
+        },
+        {
+          "Tipo": "Hipermetropia",
+          "Subtipo": "Refracional",
+          "Mecanismo": "Córnea plana / afacia (ausência de cristalino)",
+          "Exemplo": "Afacia pós-cirurgia de catarata sem implante"
+        },
+        {
+          "Tipo": "Astigmatismo",
+          "Subtipo": "Regular",
+          "Mecanismo": "Dois meridianos perpendiculares com curvaturas distintas",
+          "Exemplo": "Astigmatismo corneal direto ou inverso"
+        },
+        {
+          "Tipo": "Astigmatismo",
+          "Subtipo": "Irregular",
+          "Mecanismo": "Curvatura corneal não uniforme e irregular",
+          "Exemplo": "Ceratocone, cicatriz corneal"
+        },
+        {
+          "Tipo": "Presbiopia",
+          "Subtipo": "Esclerose",
+          "Mecanismo": "Perda progressiva de elasticidade do cristalino",
+          "Exemplo": "Adulto 40-45 anos, perde acomodação de perto"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Epidemiologia e Importância Clínica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A miopia é a ametropia mais prevalente globalmente: afeta ~30-50% da população ocidental e 80-90% de jovens adultos em países do leste asiático (Singapura, Taiwan). A OMS estima que sem intervenção, 50% da população mundial será míope até 2050. A presbiopia afeta universalmente >95% da população acima dos 50 anos."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎯",
+      "conteudo": "A emetropia é como um arqueiro cujo braço de arco tem exatamente o comprimento certo para suas flechas atingirem o alvo central (fóvea) com a tensão natural do arco (poder dióptrico). A miopia é o arqueiro com braços mais longos: com a mesma tensão, a flecha ultrapassa o alvo antes de chegar. A hipermetropia é o arqueiro com braços curtos: a flecha ainda está acelerando ao passar pelo alvo e cai além. O astigmatismo é o arco com curvatura irregular: a flecha segue trajetórias diferentes dependendo do ângulo."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-oftal-02-000",
+        "titulo": "Módulo 2 — Erros de Refração",
+        "disciplina": "oftal",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Apresenta o mapa do módulo."
+      }
+    ],
     "futuras": [],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-oftal-02-001-fc01",
+      "pergunta": "Distinga ametropia axial de refracional com exemplos de cada categoria para miopia e hipermetropia.",
+      "resposta": "Axial: o problema está no comprimento do olho (miopia axial = olho longo; hipermetropia axial = olho curto). Refracional: problema no poder das lentes (miopia refracional = ceratocone, catarata nuclear com índice elevado; hipermetropia refracional = córnea plana, afacia).",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "ametropia-axial",
+        "ametropia-refracional",
+        "ceratocone",
+        "afacia"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-02-001-fc02",
+      "pergunta": "Qual a projeção da OMS para a prevalência global de miopia em 2050 e quais fatores explicam o aumento acelerado?",
+      "resposta": "A OMS estima que 50% da população mundial será míope até 2050 (vs. 22% em 2000). Os fatores explicativos são: redução do tempo ao ar livre (menos dopamina retiniana estimulada pela luz solar), aumento do tempo de near work (telas, leitura próxima) e fatores genéticos multiplicados pela urbanização.",
+      "tipo": "clinico",
+      "dificuldade": 2,
+      "tags": [
+        "epidemiologia-miopia",
+        "oms-2050",
+        "near-work",
+        "luz-solar",
+        "dopamina"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
     "imagens": [],
@@ -37,18 +163,26 @@
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity",
+    "data_geracao": "2026-07-07",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Kanski JJ, Bowling B. Oftalmologia Clínica. 8ª ed. Elsevier; 2016. Cap. 18.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-07"
+    }
+  ],
   "_lentes": [
-    "mecanismo/fisiopatologia",
-    "correlação com ciências básicas"
+    "mecanismo",
+    "clinica",
+    "conduta"
   ]
 }

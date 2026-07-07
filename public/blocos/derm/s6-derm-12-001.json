@@ -1,52 +1,304 @@
 {
   "resumo_id": "s6-derm-12-001",
   "no_pai_id": "s6-derm-12-000",
-  "nos_filhos_ids": [],
+  "nos_filhos_ids": [
+    "s6-derm-12-002"
+  ],
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Fotocarcinogênese e Fototipos",
+    "subtitulo": "Como a radiação UVA e UVB causam mutações no DNA, e como os fototipos de Fitzpatrick graduam o risco?",
     "semestre": 6,
-    "disciplina": "Dermatologia",
+    "disciplina": "derm",
+    "sistema_corporal": "tegumentar",
+    "regiao_anatomica": "pele",
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 9,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "derm",
-      "esqueleto"
+      "fotocarcinogenese",
+      "radiação-uvb",
+      "radiação-uva",
+      "dimeros-de-pirimidina",
+      "tp53-mutacao",
+      "fototipos-de-fitzpatrick",
+      "eumelanina-protetora",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "mecanismo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "UV, dano ao DNA, fototipos de Fitzpatrick; base do risco de câncer",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior, analisamos a visão geral de tumores cutâneos. Agora, estudamos os mecanismos de fotocarcinogênese por radiação UVA/UVB e os fototipos de Fitzpatrick. O principal desafio clínico consiste em correlacionar as alterações fotoquímicas no DNA (dímeros de pirimidina induzidos por UVB e estresse oxidativo por UVA) com a inativação do gene TP53, e classificar o fototipo do paciente para estimar o risco de câncer de pele. O UVB induz dímeros de timina com mutações assinaturas. O UVA gera espécies reativas de oxigênio (ROS). A escala de Fitzpatrick (I a VI) avalia a tendência a queimar versus bronzear, em que peles claras (I/II) têm alto risco actínico. A conduta exige fotoproteção FPS > 30.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, compreendemos o espectro geral de tumores que acomete a pele e o elo causal actínico. A radiação solar ultravioleta (UV) é um carcinógeno físico direto e completo. No entanto, peles diferentes reagem de formas opostas ao sol: algumas ardem e descascam sem bronzear, enquanto outras pigmentam com facilidade e são resistentes a queimaduras. Como a luz ultravioleta altera quimicamente a fita de DNA dos queratinócitos na fotocarcinogênese, de que forma os fototipos de Fitzpatrick graduam o risco de câncer e qual o papel protetor da melanina?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A fotocarcinogênese: os mecanismos do UVB e UVA no DNA"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A luz solar ultravioleta que atinge a superfície terrestre é composta por UVA e UVB, agindo na célula por mecanismos moleculares distintos:"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Mecanismos do UV na fotocarcinogênese",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Agressão direta pelo UVB (Dano fotoquímico direto)",
+          "explicacao": "A radiação UVB (290-320 nm) é absorvida diretamente pelas bases pirimidínicas do DNA na epiderme superior. Isso quebra pontes de hidrogênio e força a ligação covalente anômala entre duas bases adjacentes na mesma fita, formando os **dímeros de pirimidina ciclobutano (principalmente dímeros de timina)**."
+        },
+        {
+          "numero": 2,
+          "titulo": "Mutações Assinaturas do UV",
+          "explicacao": "Se o sistema de reparo por excisão de nucleotídeos (NER) falhar por sobrecarga, a polimerase erra a replicação na mitose seguinte, introduzindo mutações de transição de citosina para timina (C -> T ou CC -> TT). Essas mutações inativam genes supressores de tumor essenciais, como o **TP53**, impedindo o bloqueio do ciclo celular e a apoptose dos queratinócitos danificados (formação de 'células de queimadura' ou sunburn cells)."
+        },
+        {
+          "numero": 3,
+          "titulo": "Agressão indireta pelo UVA (Dano oxidativo)",
+          "explicacao": "A radiação UVA (320-400 nm) penetra profundamente na derme. Ela é absorvida por cromóforos endógenos não-DNA (porfirinas, riboflavinas), excitando-os e gerando **espécies reativas de oxigênio (ROS)**, como o oxigênio singlete. Essas ROS oxidam guaninas no DNA (formando 8-oxo-guanina), promovendo transições G -> T e causando quebra e degradação de colágeno dérmico (fotoenvelhecimento e elastose solar)."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A escala de risco: os Fototipos de Fitzpatrick"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta biológica individual à radiação UV é classificada pela **Escala de Fototipos de Fitzpatrick (I a VI)**, baseada na reatividade autodeclarada do paciente (tendência a queimar ou bronzear) após a primeira exposição solar desprotegida de 45-60 minutos no início do verão:"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Graduação dos fototipos",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Fototipo I (Branco muito claro)",
+          "explicacao": "Sempre queima, nunca bronzeia. Pele muito clara, cabelos ruivos ou loiros, sardas na face, olhos azuis/verdes. Risco altíssimo de câncer de pele actínico."
+        },
+        {
+          "numero": 2,
+          "titulo": "Fototipo II (Branco claro)",
+          "explicacao": "Sempre queima, bronzeia minimamente. Pele clara, cabelos claros. Risco elevado de carcinomas e melanoma."
+        },
+        {
+          "numero": 3,
+          "titulo": "Fototipo III (Moreno claro)",
+          "explicacao": "Queima moderadamente, bronzeia gradualmente. Moreno claro de pele média. Risco moderado."
+        },
+        {
+          "numero": 4,
+          "titulo": "Fototipo IV (Moreno médio / Pardo)",
+          "explicacao": "Queima minimamente, bronzeia facilmente. Pele morena moderadamente escura. Risco baixo."
+        },
+        {
+          "numero": 5,
+          "titulo": "Fototipo V (Moreno escuro)",
+          "explicacao": "Raramente queima, bronzeia muito facilmente. Pele morena escura ou negra clara. Risco muito baixo."
+        },
+        {
+          "numero": 6,
+          "titulo": "Fototipo VI (Negro)",
+          "explicacao": "Nunca queima, pigmentação profunda constitutiva. Pele negra escura. Proteção melânica natural contra radiação actínica. Risco mínimo de carcinomas fotoexpostos, embora susceptível a melanomas acrais (não induzidos por sol)."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A base molecular da proteção: a Eumelanina"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A diferença de risco reside no tipo e densidade de melanina sintetizada pelos melanócitos e transferida para os queratinócitos (via melanossomos):"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Melanina e proteção",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Eumelanina (Castanho-Preta)",
+          "explicacao": "Pigmento altamente estável e insolúvel. Age como um protetor solar físico natural eficiente: absorve a radiação UV, dispersa a energia como calor térmico inofensivo e funciona como um potente varredor químico de espécies reativas de oxigênio (ROS). Predomina nos fototipos IV a VI."
+        },
+        {
+          "numero": 2,
+          "titulo": "Feomelanina (Amarelo-Vermelha)",
+          "explicacao": "Pigmento instável e solúvel em bases. Possui baixíssima capacidade de dispersão de radiação UV e, ao ser exposto ao sol, degranula gerando radicais livres que amplificam o estresse oxidativo no DNA queratinocítico. Predomina em ruivos e fototipos I."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona o manejo clínico e a conduta de fotoproteção"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A conduta preventiva primária para todos os pacientes, especialmente fototipos I a III, consiste na **fotoproteção diária**. Prescreve-se o uso de protetores solares de amplo espectro (FPS > 30 com proteção UVA proporcional de no mínimo 1/3 do valor do FPS) aplicados na pele limpa a cada 3 horas em exposições ativas, associados a barreiras físicas (chapéus e roupas com proteção UV) e à orientação de evitar exposição solar direta entre 10h e 16h, período de maior irradiação UVB."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a fotocarcinogênese se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A fotocarcinogênese articula-se com a pediatria clínica na conscientização de que o **histórico de queimaduras solares bolhosas agudas na infância e adolescência** é o principal determinante epidemiológico de risco para o desenvolvimento de melanoma na vida adulta, destacando o papel cumulativo do dano ao DNA na infância."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Etimologia"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "fototipo e feomelanina",
+      "origem": "fototipo: do grego phos (luz) + latim typus (modelo, figura); feomelanina: do grego phaios (escuro, cinzento, sombrio) + melas (preto)",
+      "significado": "'modelo de resposta à luz' (fototipo) e 'pigmento de cor sombria avermelhada' (feomelanina)",
+      "explicacao": "Fototipo designa a tipagem do comportamento cutâneo diante da radiação eletromagnética solar. Feomelanina refere-se ao pigmento pálido instável."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para os dímeros de pirimidina por UVB"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "☀️",
+      "conteudo": "Imagine que a fita de DNA dos queratinócitos é um trilho de trem de ferro longo composto por dormentes de madeira paralelos instalados no chão (os pares de bases A-T e C-G). O trem celular de leitura (a polimerase) passa correndo em alta velocidade por cima do trilho para ler a planta da fábrica. A radiação UVB é como se fosse um raio laser disparado do céu que atinge dois dormentes de madeira vizinhos na mesma linha da fita esquerda (por exemplo, duas Timinas adjacentes). O calor do laser solda e funde as duas madeiras vizinhas lateralmente, criando uma barra dupla deformada e torta no trilho esquerdo (o dímero de timina). A fita da direita fica sem suporte. O trem celular de leitura vem correndo e, ao passar por cima desse calombo duplo soldado lateralmente, descarrila e bate (a parada de replicação). Se o operário de manutenção da via (o gene TP53) estiver acordado, ele aciona a bandeira vermelha, para o tráfego de trens e chama a equipe de solda para trocar os dormentes quebrados por madeiras novas (o reparo NER). Se o próprio operário TP53 for atingido pelo laser e morrer (mutação no TP53), o tráfego de trens continua correndo desgovernado por cima do trilho quebrado. O trem passa raspando e batendo, introduzindo e anotando vagões defeituosos e errados na fábrica na viagem seguinte (as mutações de replicação C-T), fazendo a fábrica descarrilar em um tumor invasor. Correspondências: trilhos de trem = fita de DNA; dormentes fundidos lateralmente = dímeros de timina; operário de manutenção = TP53; equipe de solda = reparo por excisão de nucleotídeos (NER). Onde a analogia quebra: o DNA celular é uma molécula em constante dinâmica helicoidal microscópica e vibração térmica, não trilhos de ferro estáticos."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Fotocarcinogênese e Formação de Dímeros de Timina por UVB",
+      "descricao": "Esquema mostrando a luz solar incidindo na epiderme, a alteração molecular da fita de DNA com a ligação covalente entre timinas adjacentes por UVB e as ROS por UVA. Rótulos em português.",
+      "prompt_ia": "Desenho médico didático explicativo, estilo científico de biologia molecular, fundo transparente. Diagrama com sol emitindo raios UVA (setas compridas cruzando a derme) e UVB (setas curtas na epiderme). Em zoom molecular, uma dupla hélice de DNA exibindo duas bases Timinas vizinhas na mesma fita ligadas de forma anômala por anel ciclobutano destacado em vermelho (Dímero de Timina). Ao lado, moléculas de UVA excitando oxigênio a radicais livres (ROS). Rótulos em português do Brasil claros."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-derm-12-000",
+        "titulo": "Tumores Cutâneos",
+        "disciplina": "derm",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Apresenta o espectro geral de neoplasias induzidas por dano actínico."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "dermatologia",
+        "semestre_futuro": 6,
+        "topico": "Tumores Benignos — Visão de Conjunto",
+        "mecanismo_conexao": "A estimulação melanocítica actínica servirá de base para compreender o surgimento e a proliferação de nevos melanocíticos e queratose seborreica, a seguir.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-derm-12-001-fc01",
+      "pergunta": "Como se explica a formação de dímeros de pirimidina ciclobutano induzidos pela radiação UVB no DNA dos queratinócitos?",
+      "resposta": "A radiação UVB (290-320 nm) é absorvida diretamente pelas bases de DNA. A energia absorvida quebra as pontes de hidrogênio e induz uma reação fotoquímica que funde de forma covalente bases pirimidinas vizinhas na mesma fita de DNA (principalmente duas Timinas), gerando uma deformidade estrutural ciclobutano na hélice.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "tags": [
+        "uvb-radiacao",
+        "dimeros-de-timina",
+        "dano-fotoquimico",
+        "fisiopatologia"
+      ]
+    },
+    {
+      "card_id": "s6-derm-12-001-fc02",
+      "pergunta": "Diferencie a ação da radiação UVA e UVB no DNA celular na pele quanto ao mecanismo de dano.",
+      "resposta": "O UVB causa dano fotoquímico direto por absorção de energia pelo DNA, formando dímeros de timina. O UVA penetra mais profundamente e causa dano indireto por estresse oxidativo, excitando cromóforos que geram espécies reativas de oxigênio (ROS) que oxidam guaninas.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "tags": [
+        "uva",
+        "uvb",
+        "dano-direto-vs-indireto",
+        "ros-oxidativo"
+      ]
+    },
+    {
+      "card_id": "s6-derm-12-001-fc03",
+      "pergunta": "O que caracteriza e qual a utilidade clínica da escala de fototipos de Fitzpatrick?",
+      "resposta": "Caracteriza-se pela classificação da resposta cutânea individual de bronzeamento ou queimadura à primeira exposição solar de 45-60 min no verão, dividindo as peles em graus de I (sempre queima, nunca bronzeia) a VI (nunca queima, pigmentação constitutiva). A utilidade é guiar a estimativa do risco actínico de câncer de pele.",
+      "tipo": "clinico",
+      "dificuldade": 2,
+      "tags": [
+        "fitzpatrick-fototipos",
+        "queimadura-vs-bronzeamento",
+        "estimativa-de-risco",
+        "semiologia"
+      ]
+    },
+    {
+      "card_id": "s6-derm-12-001-fc04",
+      "pergunta": "Se um paciente de fototipo I ruivo apresentar mutações inativadoras herdadas nos genes do sistema de reparo NER, qual a síndrome genética e qual o efeito da radiação UVB sobre suas células cutâneas?",
+      "resposta": "A síndrome genética é o Xeroderma Pigmentoso (XP). Sem o sistema NER para excisar e corrigir os dímeros de timina induzidos pelo UVB, as mutações assinaturas (C-T) acumulam-se exponencialmente a cada exposição solar, levando ao envelhecimento actínico precoce extremo e ao surgimento precoce de múltiplos carcinomas e melanomas.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "tags": [
+        "xeroderma-pigmentoso",
+        "reparo-ner-falha",
+        "mutacao-assinatura-uv",
+        "ruivos",
+        "conduta"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s6-derm-12-001-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente_geracao_ia"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity-3.5-flash",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-06",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Azulay RD, Azulay DR, Azulay-Abulafia L. Dermatologia. 7ª ed. Guanabara Koogan; 2017. Capítulo 29 — Neoplasias da pele (Fotocarcinogenese section).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "type": "livro",
+      "citacao": "Habif TP. Clinical Dermatology: A Color Guide to Diagnosis and Therapy. 6th ed. Elsevier; 2016. Chapter 21 — Premalignant and Malignant Skin Tumors (UV and Fitzpatrick sections).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "correlacao_basica"

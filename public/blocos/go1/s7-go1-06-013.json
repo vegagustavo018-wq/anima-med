@@ -4,49 +4,236 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Tricomoníase",
+    "titulo": "Tricomoniase",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "infeccoes-genitais",
+      "ist",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Corrimento amarelo-esverdeado, colo em framboesa; IST; metronidazol",
-  "narrativa": [],
+  "resumo_conciso": "Tricomoníase é IST causada por Trichomonas vaginalis, associada a corrimento amarelo-esverdeado, odor, pH elevado, colo em framboesa e necessidade de tratar parcerias.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Tricomoníase é infecção sexualmente transmissível causada pelo protozoário Trichomonas vaginalis. Pode ser assintomática, mas quando sintomática causa corrimento, odor, ardor, prurido e dispareunia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O corrimento clássico é amarelo-esverdeado, bolhoso e fétido, mas a apresentação varia. O pH costuma ser elevado e a microscopia a fresco pode mostrar protozoários móveis quando examinada rapidamente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O colo em framboesa, com pontilhado hemorrágico, é achado sugestivo, mas não obrigatório. Tricomoníase também pode causar cervicite e aumentar risco de aquisição/transmissão de outras ISTs."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Testes moleculares têm maior sensibilidade que microscopia e são úteis quando disponíveis. A microscopia negativa não exclui se a suspeita for alta."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tratamento envolve nitroimidazólicos, como metronidazol, conforme protocolo. Em mulheres, regimes de múltiplos dias têm melhor desempenho em recomendações atuais do CDC do que dose única em muitos cenários."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Parcerias sexuais devem ser tratadas e orientadas a evitar relação até conclusão do tratamento e resolução dos sintomas. Sem isso, reinfecção é muito comum."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Após tratar, retestagem pode ser indicada em mulheres devido a alta taxa de reinfecção. Também é momento de rastrear HIV, sífilis, gonorreia e clamídia conforme risco."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-05-000",
+        "titulo": "Modulo 5 - Miomatose Uterina e Tumores Benignos",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-022",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Sifilis Genital - Cancro Duro",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-026",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Bartolinite e Abscesso de Bartholin",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-030",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Doenca Inflamatoria Pelvica - Visao de Conjunto",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN"
+      },
+      {
+        "bloco_id": "s7-go1-04-003",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Apresentacao Clinica da Endometriose - As Tres Dismenorreias"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-013-fc-01",
+      "pergunta": "Qual agente causa tricomoníase?",
+      "resposta": "Trichomonas vaginalis.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-013-fc-02",
+      "pergunta": "Tricomoníase é IST?",
+      "resposta": "Sim, e exige abordagem de parcerias sexuais.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-013-fc-03",
+      "pergunta": "Microscopia negativa exclui tricomoníase?",
+      "resposta": "Não, porque a sensibilidade é limitada; testes moleculares são mais sensíveis.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-013-fc-04",
+      "pergunta": "Qual orientação evita reinfecção?",
+      "resposta": "Tratar parcerias e evitar sexo até todos completarem tratamento e sintomas resolverem.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-013-cc-01",
+      "titulo": "Corrimento e parceiro sem sintomas",
+      "apresentacao": "Paciente tem corrimento amarelo-esverdeado e pH 5,5. Teste molecular confirma Trichomonas. Parceiro está assintomático.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Tricomoníase é IST causada por Trichomonas vaginalis, associada a corrimento amarelo-esverdeado, odor, pH elevado, colo em framboesa e necessidade de tratar parcerias."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Tricomoniase, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Tricomoníase é IST causada por Trichomonas vaginalis, associada a corrimento amarelo-esverdeado, odor, pH elevado, colo em framboesa e necessidade de tratar parcerias."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente tem corrimento amarelo-esverdeado e pH 5,5. Teste molecular confirma Trichomonas. Parceiro está assintomático."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O parceiro deve ser tratado? Sim. Tricomoníase é IST e parcerias devem ser tratadas mesmo sem sintomas."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Sim. Tricomoníase é IST e parcerias devem ser tratadas mesmo sem sintomas.",
+      "tratamento_resumido": "Sim. Tricomoníase é IST e parcerias devem ser tratadas mesmo sem sintomas."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Esquema de Trichomonas vaginalis flagelado, pH elevado, colo em framboesa e fluxo de tratamento de parcerias.",
+        "alt": "Ilustracao educacional para Tricomoniase"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Bacterial Vaginosis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Vulvovaginal Candidiasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Trichomoniasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Urethritis and Cervicitis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Ulcer Disease",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/genital-ulcers.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

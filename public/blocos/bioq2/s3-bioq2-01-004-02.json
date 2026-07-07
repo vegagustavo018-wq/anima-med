@@ -5,48 +5,252 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "NADPH — O Poder Redutor da Biossíntese",
+    "subtitulo": "Por que a célula separa elétrons para construir dos elétrons para queimar?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "nadph",
+      "biossintese",
+      "poder-redutor",
+      "antioxidante",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Por que a célula separa NADPH (construir) de NADH (queimar); o único fosfato faz diferença",
-  "narrativa": [],
+  "resumo_conciso": "NADPH é o principal poder redutor da biossíntese: ele doa elétrons para construir ácidos graxos, colesterol e outras moléculas reduzidas, além de sustentar defesa antioxidante por meio da glutationa reduzida. A célula o separa funcionalmente de NADH porque NADH serve sobretudo para entregar elétrons à cadeia respiratória e produzir ATP, enquanto NADPH é mantido como reserva de elétrons para construção e proteção. Um fosfato extra não muda muito a química redox, mas direciona o reconhecimento por enzimas diferentes.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "A célula precisa de elétrons por dois motivos diferentes. Às vezes quer descarregar elétrons para produzir ATP. Outras vezes quer doar elétrons para construir moléculas novas ou neutralizar oxidantes. Misturar esses caixas seria perigoso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "NADPH é o caixa da construção. Ele carrega poder redutor para biossíntese e defesa antioxidante. Enquanto NADH costuma dizer 'leve estes elétrons para a cadeia respiratória', NADPH diz 'use estes elétrons para fabricar ou proteger'."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema o NADPH resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Construir moléculas como ácidos graxos exige reduzir carbonos, isto é, doar elétrons. Além disso, a célula precisa manter glutationa reduzida para lidar com espécies reativas de oxigênio. NADPH fornece elétrons sem drenar diretamente o NADH destinado à produção de ATP."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: NADH é, em geral, poder redutor do catabolismo para gerar ATP; NADPH é poder redutor da biossíntese e da proteção antioxidante."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como um fosfato muda o destino?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "NADPH é muito parecido com NADH, mas tem um fosfato extra na ribose ligada à adenina. Esse fosfato não é o ponto principal da transferência de elétrons; ele funciona como etiqueta de reconhecimento. Enzimas anabólicas e antioxidantes reconhecem NADPH, enquanto muitas enzimas catabólicas reconhecem NAD+ ou NADH."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "poder redutor",
+      "origem": "redução, em química, significa ganho de elétrons",
+      "significado": "capacidade de doar elétrons para reduzir outra molécula",
+      "explicacao": "A expressão parece abstrata, mas é direta: NADPH tem poder redutor porque consegue entregar elétrons a reações que precisam tornar moléculas mais reduzidas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: se a via está construindo gordura, colesterol ou combatendo oxidantes, procure NADPH. Se está oxidando combustível para ATP, procure NADH."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se NADH e NADPH fossem uma única piscina misturada?",
+      "resposta": "A célula teria dificuldade de proteger biossíntese e defesa antioxidante sem competir diretamente com a produção de ATP. Separar as piscinas permite regular construção e queima com mais precisão."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "carteira",
+      "conteudo": "Pense em duas carteiras: uma para pagar contas da casa, outra reservada para obra e emergência. NADH é a carteira que vai para a usina energética; NADPH é a carteira da construção e do combate a danos oxidativos. A analogia quebra porque as carteiras são moléculas reconhecidas por enzimas específicas."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "NADPH como doador de elétrons para construir e proteger",
+      "descricao": "Esquema mostrando NADPH doando elétrons para síntese de ácidos graxos, colesterol e regeneração de glutationa.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. NADPH no centro como molécula carregada de elétrons. Setas para três destinos: síntese de ácidos graxos, síntese de colesterol e glutationa reduzida combatendo peróxidos. Ao lado, comparação pequena com NADH indo para cadeia respiratória. Usar cores verdes para biossíntese e proteção antioxidante.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse bloco prepara a via das pentoses fosfato, síntese de ácidos graxos, metabolismo do colesterol e doenças em que o estresse oxidativo revela falta de NADPH suficiente."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-004",
+        "titulo": "Transportadores de Elétrons e Poder Redutor — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "O bloco pai introduz a lógica de coenzimas redox antes de diferenciar NADPH."
+      },
+      {
+        "bloco_id": "s3-bioq2-01-004-01",
+        "titulo": "NAD+/NADH — O Coletor de Elétrons do Catabolismo",
+        "relevancia": "base_necessaria",
+        "explicacao": "Comparar NADPH com NADH ajuda a entender por que a célula separa queima de construção."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Via das Pentoses Fosfato — Produção de NADPH",
+        "mecanismo_conexao": "A via das pentoses é fonte central de NADPH citosólico.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Síntese de Ácidos Graxos — Consumo de NADPH",
+        "mecanismo_conexao": "A biossíntese lipídica usa NADPH para reduzir intermediários carbonados.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Deficiência de G6PD e Hemólise Oxidativa",
+        "mecanismo_conexao": "Menos NADPH prejudica regeneração de glutationa reduzida em hemácias.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "Anabolismo vs Catabolismo — A Lógica das Duas Direções",
+        "tipo_relacao": "APLICA",
+        "explicacao": "NADPH é um dos marcadores químicos da direção anabólica."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-004-02-fc01",
+      "tipo": "comparacao",
+      "pergunta": "Compare NADH e NADPH em função metabólica.",
+      "resposta": "NADH carrega elétrons do catabolismo para produção de ATP, especialmente na cadeia respiratória. NADPH doa elétrons para biossíntese e defesa antioxidante.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "nadh",
+        "nadph"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-004-02-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Por que o fosfato extra do NADPH importa?",
+      "resposta": "Ele funciona como etiqueta de reconhecimento para enzimas específicas. A química redox é parecida com NADH, mas o fosfato ajuda a separar pools funcionais.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "fosfato",
+        "enzimas"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-004-02-fc03",
+      "tipo": "clinico",
+      "pergunta": "Por que hemácias sofrem em deficiência de G6PD?",
+      "resposta": "G6PD ajuda a produzir NADPH na via das pentoses. Sem NADPH suficiente, a hemácia regenera menos glutationa reduzida e fica vulnerável a estresse oxidativo e hemólise.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "g6pd",
+        "hemolise"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-004-02-fc04",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria se vias biossintéticas dependessem apenas de NADH?",
+      "resposta": "Elas competiriam diretamente com a produção de ATP e perderiam regulação fina. Separar NADPH permite reservar elétrons para construção e defesa.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "contrafactual",
+        "biossintese"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-004-02-caso01",
+      "titulo": "Hemácia vulnerável ao estresse oxidativo",
+      "apresentacao": "Homem jovem apresenta icterícia e urina escura após uso de medicamento oxidante. O quadro sugere hemólise em pessoa com deficiência de G6PD. A ponte bioquímica é a falta de NADPH suficiente para manter glutationa reduzida.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Deficiência de G6PD reduz a produção de NADPH pela via das pentoses fosfato."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Hemácias dependem fortemente de NADPH para manter glutationa reduzida contra oxidantes."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Espécies oxidantes danificam hemoglobina e membrana eritrocitária."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Surgem hemólise, icterícia, fadiga e urina escura."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Evitar gatilhos oxidantes e oferecer suporte reduz risco de novas crises."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra a função protetora do NADPH: não basta produzir ATP; algumas células precisam de elétrons reservados para defesa antioxidante.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Hematologia",
+        "Genética"
+      ],
+      "diagnostico_revelado": "Deficiência de G6PD com hemólise oxidativa.",
+      "tratamento_resumido": "Suspender gatilho, suporte clínico e evitar medicamentos/alimentos oxidantes conhecidos; manejo específico depende da gravidade."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-004-02-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'NADPH como doador de elétrons para construir e proteger'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Seções de NADPH e via das pentoses fosfato.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "molecular",
     "funcao"

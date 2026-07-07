@@ -5,48 +5,359 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Farmacogenética do Metabolismo",
+    "subtitulo": "Por que a mesma dose do mesmo remédio funciona para um paciente e falha — ou intoxica — outro?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacogenetica",
+      "cyp450",
+      "metabolismo-de-farmacos",
+      "medicina-personalizada",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Polimorfismos CYP; metabolizadores lentos/rápidos; medicina personalizada",
-  "narrativa": [],
+  "resumo_conciso": "Dois pacientes tomam o mesmo comprimido, na mesma dose, prescrito da mesma forma — e um melhora enquanto o outro não sente nada ou apresenta toxicidade grave. O problema que a farmacogenética do metabolismo resolve é explicar essa diferença sem recorrer a 'sensibilidade individual' vaga: a causa costuma estar escrita no gene que codifica a enzima CYP responsável por metabolizar aquele fármaco. Pessoas diferentes herdam variantes diferentes do mesmo gene CYP, e essas variantes produzem enzimas com atividade catalítica distinta — de quase nula a muito acima da média. Isso cria um espectro de metabolizadores (lentos, intermediários, extensivos/normais e ultrarrápidos) que se aplica a cada isoforma individualmente. A consequência prática depende de que tipo de fármaco está em jogo: para um fármaco administrado já ativo, metabolizar lento significa acúmulo e risco de toxicidade, enquanto metabolizar ultrarrápido significa eliminação precoce e falha terapêutica; para um pró-fármaco, a lógica se inverte, porque a mesma enzima que elimina é a que ativa. Esse raciocínio é a base da farmacogenética clínica — ainda não uma rotina universal em todos os sistemas de saúde, mas já obrigatória em alguns pares fármaco-gene específicos. Encerrando o módulo de metabolismo, a farmacogenética amarra os fios que os blocos anteriores deixaram soltos: a variação individual na função hepática, apenas mencionada como fator geral no bloco panorâmico e como fonte de interação no bloco de CYP450, aqui ganha um mecanismo concreto — a genética.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Dois pacientes, mesma idade, mesmo peso, mesma função hepática nos exames de rotina, recebem a mesma dose do mesmo fármaco. Um melhora dentro do esperado. O outro desenvolve um efeito colateral grave — ou, no extremo oposto, não sente nenhum efeito terapêutico, como se tivesse tomado um comprimido de açúcar. Nenhum erro de prescrição, nenhuma diferença de adesão. O que mudou?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os blocos anteriores deste módulo já mostraram que o metabolismo hepático — e, dentro dele, o sistema CYP450 — determina quanto tempo um fármaco permanece ativo no corpo. O que ainda não foi explicado é por que a capacidade dessa maquinaria varia tanto de pessoa para pessoa, mesmo quando o fígado está clinicamente saudável nos dois casos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: a mesma dose não produz o mesmo efeito em todo mundo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A prática médica tradicionalmente lida com essa variação atribuindo-a a 'sensibilidade individual' — uma explicação que descreve o fenômeno sem explicar sua causa. Mas a diferença de resposta entre pacientes com a mesma dose, a mesma indicação e a mesma função hepática global não é aleatória: em muitos casos, ela é determinada por uma única variável mensurável, presente desde o nascimento e igual em cada célula do corpo — o gene que codifica a enzima CYP responsável por metabolizar aquele fármaco específico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso importa clinicamente porque muda a pergunta que se faz diante de uma resposta inesperada. Em vez de perguntar apenas 'o paciente tomou certo?', a farmacogenética permite perguntar 'qual variante genética esse paciente tem para a enzima que processa esse fármaco?' — uma pergunta que, para um número crescente de pares fármaco-gene, tem resposta testável antes mesmo de a primeira dose ser administrada."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema não é que os pacientes sejam \"diferentes\" de forma vaga. É que o gene que codifica a enzima CYP responsável por metabolizar um fármaco específico varia de pessoa para pessoa — e essa variação genética é mensurável, não um mistério."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita essa variação"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A matéria-prima da farmacogenética do metabolismo é o polimorfismo genético: pequenas diferenças na sequência de DNA do gene que codifica uma isoforma CYP, herdadas dos pais como qualquer outra característica genética. Essas diferenças podem alterar um único aminoácido da proteína resultante, truncá-la precocemente, duplicá-la em múltiplas cópias funcionais ou até eliminá-la por completo do genoma daquele indivíduo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As isoformas mais polimórficas — e por isso mais estudadas em farmacogenética — são a CYP2D6 e a CYP2C19, já citadas no bloco anterior como variáveis entre indivíduos. A CYP2D6 tem dezenas de variantes alélicas catalogadas: algumas produzem uma enzima sem atividade catalítica nenhuma, outras produzem uma enzima normal, e um subgrupo de pessoas carrega múltiplas cópias do gene funcional, multiplicando a capacidade enzimática disponível. A mesma lógica — variantes de perda, de função normal e de ganho — se repete em menor escala em outras isoformas, como a CYP2C9 (relevante para varfarina) e a CYP3A5."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A causa raiz da farmacogenética do metabolismo é simples de enunciar: variantes no gene de uma enzima CYP alteram a quantidade ou a atividade catalítica dessa enzima — e essa alteração é herdada, não adquirida pelo estilo de vida."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona: o espectro de metabolizadores"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A combinação das variantes que um indivíduo herda de cada um dos pais define seu fenótipo metabólico para aquela isoforma específica — não para o corpo inteiro, mas para aquela enzima em particular. A farmacogenética descreve esse fenótipo num espectro de quatro categorias, da menor à maior atividade enzimática."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O espectro de metabolizadores para uma isoforma CYP",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Metabolizador lento (poor metabolizer)",
+          "explicacao": "Herdou duas cópias de variantes de perda de função (uma de cada pai). A enzima tem atividade catalítica muito reduzida ou ausente. Fármacos que dependem dela para ser eliminados se acumulam mais do que o esperado na dose padrão."
+        },
+        {
+          "numero": 2,
+          "titulo": "Metabolizador intermediário",
+          "explicacao": "Herdou uma variante de perda de função e uma variante normal (ou duas variantes de função parcialmente reduzida). A atividade enzimática fica abaixo da média, mas não ausente — um meio-termo entre lento e normal."
+        },
+        {
+          "numero": 3,
+          "titulo": "Metabolizador extensivo (ou normal)",
+          "explicacao": "Herdou duas cópias funcionais normais. É o fenótipo de referência, o que a bula do medicamento pressupõe quando recomenda 'a dose padrão' — porque a maioria da população se enquadra aqui, mas não todos."
+        },
+        {
+          "numero": 4,
+          "titulo": "Metabolizador ultrarrápido",
+          "explicacao": "Herdou cópias extras do gene funcional (duplicação gênica) ou variantes que aumentam a expressão da enzima. A atividade catalítica é maior que a média — o fármaco é processado e eliminado mais rápido do que a dose padrão prevê."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A consequência clínica desse espectro depende inteiramente de uma variável que os blocos anteriores já prepararam o terreno para entender: se o fármaco em questão é administrado na forma ativa ou como pró-fármaco. Para um fármaco já ativo (como muitos antidepressivos metabolizados pela CYP2D6), o metabolismo é a via de eliminação — logo, um metabolizador lento acumula o fármaco ativo e corre risco de toxicidade na dose padrão, enquanto um metabolizador ultrarrápido elimina o fármaco tão rápido que a dose padrão pode ser insuficiente para qualquer efeito terapêutico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para um pró-fármaco — uma molécula administrada propositalmente inativa, que só se torna terapêutica depois de metabolizada, como já mencionado no bloco sobre CYP450 —, a lógica se inverte ponto a ponto. Um metabolizador lento converte pouco pró-fármaco em metabólito ativo e pode não obter efeito terapêutico algum na dose padrão, mesmo tomando o comprimido certinho. Um metabolizador ultrarrápido converte o pró-fármaco em metabólito ativo tão rapidamente e em quantidade tão grande que pode atingir concentrações tóxicas do metabólito ativo, mesmo com a dose padrão prescrita corretamente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É esse espelhamento invertido — lento acumula fármaco ativo mas fica aquém do pró-fármaco ativado; ultrarrápido elimina fármaco ativo rápido demais mas superproduz metabólito ativo do pró-fármaco — que torna indispensável saber, antes de prescrever, que tipo de molécula está sendo administrada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que isso se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um exemplo consolidado na literatura ilustra esse espelhamento com a codeína, um pró-fármaco ativado pela CYP2D6 em morfina. Um metabolizador ultrarrápido de CYP2D6 converte codeína em morfina de forma tão eficiente que já foram descritos casos de depressão respiratória grave em lactentes cujas mães, metabolizadoras ultrarrápidas, amamentavam em uso de codeína — o leite materno continha morfina em concentração inesperadamente alta. No polo oposto, um metabolizador lento de CYP2D6 mal converte codeína em morfina, e o efeito analgésico esperado simplesmente não aparece, por mais que a dose seja aumentada dentro do razoável."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa articulação fecha o círculo com o restante do módulo. O bloco panorâmico (s4-farma1-01-004) já havia citado a genética individual como um dos três fatores que fazem a mesma dose variar entre pacientes, ao lado da função hepática global e das interações medicamentosas. O bloco sobre o CYP450 (s4-farma1-01-004-02) já havia identificado a CYP2D6 e a CYP2C19 como as isoformas mais polimórficas, sem detalhar o mecanismo. Este bloco fornece esse mecanismo: variantes genéticas herdadas alteram a quantidade de enzima funcional, criando o espectro de metabolizadores que, cruzado com o tipo de molécula (fármaco ativo versus pró-fármaco), determina se a dose padrão vai funcionar, falhar ou intoxicar."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "É importante não superestimar o quanto isso já mudou a prática clínica no dia a dia. A farmacogenética ainda não é rotina universal: a maioria das prescrições no mundo, inclusive no Brasil, ainda é feita sem teste genético prévio, e a dose padrão de bula continua sendo o ponto de partida de facto. O teste farmacogenético antes da prescrição é hoje recomendado ou exigido apenas para um número limitado de pares fármaco-gene bem estabelecidos (como CYP2C19 e clopidogrel, ou CYP2D6 e codeína em certos contextos pediátricos), não para a totalidade dos medicamentos metabolizados por CYPs polimórficas. Tratar a farmacogenética como se já fosse padrão-ouro em toda prescrição seria uma extrapolação incorreta do que a evidência atual sustenta."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "farmacogenética",
+      "origem": "do grego phármakon (droga, remédio) + génesis (origem, geração) — mais precisamente, do termo genética, cunhado no início do século XX a partir de genos (nascimento, origem)",
+      "significado": "literalmente, 'o estudo de como a origem genética de uma pessoa afeta sua relação com fármacos'",
+      "explicacao": "O termo foi proposto em 1959 pelo geneticista alemão Friedrich Vogel, num momento em que a genética molecular ainda engatinhava — muito antes de existir qualquer sequenciamento de DNA. Vogel notou que reações adversas incomuns a certos fármacos se repetiam em famílias inteiras, sugerindo herança. Hoje o termo convive com farmacogenômica, mais recente e mais amplo: farmacogenética costuma se referir ao estudo de genes individuais (como uma isoforma CYP específica), enquanto farmacogenômica abrange a análise do genoma inteiro em busca de múltiplas variantes que afetam a resposta a fármacos. Este bloco trata do caso mais bem estabelecido de farmacogenética: genes únicos, de efeito grande e mensurável, sobre uma via metabólica conhecida."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏭",
+      "conteudo": "Retomando a fábrica de reciclagem do bloco panorâmico: se o fígado é a fábrica e o CYP450 é a linha de produção, a farmacogenética é a informação sobre quantos operários aquela linha específica tem escalados hoje — informação que vem de um contrato de trabalho assinado no nascimento (o gene herdado), não de uma decisão tomada durante o expediente (o estilo de vida). Uma linha com poucos operários (metabolizador lento) processa devagar: a encomenda (o fármaco) se acumula no pátio de espera. Uma linha com operários extras contratados (metabolizador ultrarrápido, por duplicação gênica) processa rápido demais: a encomenda sai da fábrica antes do previsto. A quebra da analogia importa aqui: numa fábrica real, processar mais rápido é sempre bom. Nesta fábrica, processar rápido demais um pró-fármaco (uma encomenda que só vira produto útil depois de processada) gera excesso do produto ativo — e processar rápido demais um fármaco já ativo (uma encomenda que já é o produto final) apenas descarta o produto antes da hora. A mesma velocidade de linha tem efeitos opostos dependendo do que está entrando nela."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse é o último bloco do módulo de metabolismo farmacocinético. A trajetória percorrida até aqui parte de uma pergunta simples — por que o corpo precisa transformar um fármaco antes de eliminá-lo — e termina numa pergunta igualmente simples, mas com resposta muito mais individualizada: por que a mesma transformação acontece em ritmos tão diferentes de pessoa para pessoa. Entre uma pergunta e outra, ficou o caminho que a medicina vem percorrendo nas últimas décadas — da dose padrão de bula rumo a uma dose ajustada ao perfil genético de cada paciente, ainda que esse caminho esteja longe de concluído."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Espectro de metabolizadores e seu efeito espelhado em fármaco ativo versus pró-fármaco",
+      "descricao": "Diagrama esquemático com um eixo horizontal mostrando as quatro categorias de metabolizador (lento, intermediário, extensivo, ultrarrápido) representadas por um número crescente de ícones de 'enzima' ativos. Abaixo do eixo, duas linhas espelhadas: uma mostrando a concentração plasmática resultante de um fármaco administrado ativo (alta no lento, baixa no ultrarrápido) e outra mostrando a concentração do metabólito ativo de um pró-fármaco (baixa no lento, alta no ultrarrápido), com setas de alerta nos extremos de risco (toxicidade e falha terapêutica) em cada linha. Fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Composição com um eixo horizontal central rotulado com quatro categorias em português, da esquerda para a direita: 'Metabolizador lento', 'Metabolizador intermediário', 'Metabolizador extensivo (normal)', 'Metabolizador ultrarrápido', cada categoria representada por um pequeno conjunto de ícones de engrenagem/enzima em quantidade crescente (1, 2, 3 e 4 engrenagens respectivamente) para simbolizar atividade catalítica crescente. Abaixo do eixo, duas curvas espelhadas lado a lado com legendas: a primeira curva rotulada 'Fármaco administrado ativo' começando alta (tons de vermelho/alerta de toxicidade) na categoria lenta e descendo para baixa (tons de amarelo/alerta de falha terapêutica) na categoria ultrarrápida; a segunda curva rotulada 'Pró-fármaco (metabólito ativo)' com padrão espelhado, começando baixa (falha terapêutica) na categoria lenta e subindo alta (toxicidade) na categoria ultrarrápida. Pequenos ícones de alerta triangular nos extremos de risco de cada curva. Legendas curtas em português, paleta de cores consistente, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-004",
+        "titulo": "Metabolismo (Biotransformação) — Preparar para a Saída (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já entender por que o metabolismo hepático existe (tornar o fármaco eliminável) e que a capacidade enzimática do fígado é limitada e variável entre pacientes, antes de entrar no mecanismo genético específico dessa variação."
+      },
+      {
+        "bloco_id": "s4-farma1-01-004-02",
+        "titulo": "O Sistema Citocromo P450 (CYP450)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já conhecer as isoformas CYP (em especial CYP2D6 e CYP2C19, citadas ali como polimórficas) e entender que cada isoforma tem um bolso catalítico próprio, antes de entender como variantes genéticas alteram essas isoformas individualmente."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 8,
+        "topico": "Teste farmacogenético pré-prescrição (clopidogrel/CYP2C19, varfarina/CYP2C9)",
+        "mecanismo_conexao": "O espectro de metabolizadores descrito aqui em termos gerais é o fundamento direto das recomendações de bula e das diretrizes de sociedades médicas que já exigem genotipagem antes de prescrever certos fármacos de margem terapêutica estreita.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "psiquiatria",
+        "semestre_futuro": 7,
+        "topico": "Variabilidade de resposta a antidepressivos metabolizados pela CYP2D6",
+        "mecanismo_conexao": "A falha terapêutica ou a intolerância a antidepressivos, frequentemente atribuída clinicamente a 'resistência ao tratamento', pode ter como causa metabolizadores ultrarrápidos ou lentos de CYP2D6 — o mesmo espectro descrito neste bloco.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-004-05",
+        "tipo_relacao": "PRE_REQUISITO_CONCEITUAL",
+        "explicacao": "Pró-fármacos e ativação metabólica é o conceito que torna compreensível por que o espectro de metabolizadores tem efeito espelhado (inverso) dependendo de o fármaco ser administrado ativo ou inativo. Os dois blocos se apoiam mutuamente sem duplicar conteúdo: um explica o mecanismo de ativação, o outro explica por que esse mecanismo varia entre pacientes."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-004-06-fc01",
+      "pergunta": "Por que dois pacientes com a mesma função hepática global podem responder de forma muito diferente à mesma dose do mesmo fármaco?",
+      "resposta": "Porque a capacidade de metabolizar um fármaco específico não depende apenas da saúde geral do fígado, mas também de qual variante genética cada paciente herdou para a isoforma CYP responsável por aquele fármaco. Variantes de perda de função reduzem a atividade catalítica da enzima; variantes de duplicação ou de maior expressão aumentam essa atividade. Dois fígados igualmente 'saudáveis' nos exames de rotina podem ter capacidades muito diferentes de metabolizar um fármaco específico, dependendo apenas dessa herança genética pontual.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacogenetica",
+        "cyp450",
+        "variabilidade-individual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-06-fc02",
+      "pergunta": "Descreva as quatro categorias do espectro de metabolizadores para uma isoforma CYP e a base genética de cada uma.",
+      "resposta": "Metabolizador lento: duas cópias de variantes de perda de função, atividade catalítica muito reduzida ou ausente. Metabolizador intermediário: uma variante de perda de função e uma normal (ou duas de função parcial), atividade abaixo da média. Metabolizador extensivo (normal): duas cópias funcionais normais, é o fenótipo de referência que a dose padrão de bula pressupõe. Metabolizador ultrarrápido: cópias extras do gene funcional (duplicação gênica) ou variantes de maior expressão, atividade catalítica acima da média.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacogenetica",
+        "metabolizadores",
+        "cyp450"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-06-fc03",
+      "pergunta": "Por que um metabolizador ultrarrápido de CYP2D6 corre risco de toxicidade ao tomar codeína, enquanto um metabolizador lento da mesma enzima corre o risco oposto — falha terapêutica?",
+      "resposta": "A codeína é um pró-fármaco: precisa ser convertida pela CYP2D6 em morfina, o metabólito ativo, para produzir analgesia. Um metabolizador ultrarrápido converte essa conversão de forma tão eficiente e rápida que gera concentrações de morfina maiores que o esperado para a dose administrada — daí o risco de toxicidade, incluindo depressão respiratória (descrita em lactentes amamentados por mães ultrarrápidas em uso de codeína). Um metabolizador lento converte muito pouca codeína em morfina, e o efeito analgésico esperado não aparece, mesmo com a dose correta. É o espelhamento característico de pró-fármacos: a mesma variação genética que causaria acúmulo de um fármaco já ativo causa, no pró-fármaco, o efeito inverso.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacogenetica",
+        "cyp2d6",
+        "codeina",
+        "pro-farmaco",
+        "caso-clinico"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-06-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Ser metabolizador lento de uma isoforma CYP é sempre desvantajoso clinicamente, e ser ultrarrápido é sempre vantajoso.'",
+      "resposta": "Falso. O efeito clínico do fenótipo metabolizador depende inteiramente de o fármaco ser administrado na forma ativa ou como pró-fármaco. Para um fármaco já ativo, ser metabolizador lento tende a causar acúmulo e toxicidade, e ser ultrarrápido tende a causar eliminação precoce e falha terapêutica. Para um pró-fármaco, a lógica se inverte: ser lento tende a causar falha terapêutica (pouco metabólito ativo gerado) e ser ultrarrápido tende a causar toxicidade (excesso de metabólito ativo gerado). Não existe fenótipo metabolizador 'bom' ou 'ruim' em termos absolutos — só em relação ao tipo específico de molécula em jogo.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacogenetica",
+        "pro-farmaco",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-06-fc05",
+      "pergunta": "A farmacogenética já é hoje uma prática rotineira em toda prescrição médica? Justifique com honestidade sobre o estágio atual da medicina personalizada.",
+      "resposta": "Não. A maioria das prescrições, inclusive no Brasil, ainda é feita com base na dose padrão de bula, sem teste genético prévio. O teste farmacogenético pré-prescrição é hoje recomendado ou exigido apenas para um número limitado de pares fármaco-gene bem estabelecidos (como CYP2C19 e clopidogrel, ou CYP2C9/VKORC1 e varfarina), não para a totalidade dos fármacos metabolizados por enzimas polimórficas. A medicina personalizada baseada em farmacogenética é uma tendência em expansão, não uma rotina clínica universal — tratar o contrário seria uma extrapolação além do que a prática atual sustenta.",
+      "tipo": "clinico",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacogenetica",
+        "medicina-personalizada",
+        "pratica-clinica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-004-06-caso01",
+      "titulo": "Analgesia ausente com codeína em dose padrão",
+      "apresentacao": "Mulher de 34 anos, no terceiro dia de pós-operatório de uma colecistectomia, recebe codeína associada a paracetamol para dor incisional, na dose padrão recomendada em bula. Após duas doses, relata que 'a dor continua exatamente igual, como se eu não tivesse tomado nada'. Não há sinais de erro de administração, e a dor tem características compatíveis com dor pós-operatória esperada, sem sinais de complicação cirúrgica. O médico assistente, ao revisar o caso, lembra que a codeína é um pró-fármaco ativado pela CYP2D6 em morfina, e considera a hipótese de fenótipo metabolizador lento para essa isoforma — presente em uma minoria da população, mas não rara.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Herança de duas variantes de perda de função no gene CYP2D6, reduzindo a atividade catalítica dessa isoforma a quase zero — um fenótipo de metabolizadora lenta."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A enzima CYP2D6 hepática, responsável por converter codeína (pró-fármaco inativo) em morfina (metabólito ativo), está presente em quantidade normal, mas com atividade catalítica praticamente nula devido às variantes herdadas."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A conversão de codeína em morfina não acontece na velocidade e quantidade necessárias. A concentração plasmática de morfina permanece muito abaixo do limiar necessário para analgesia, mesmo com a dose de codeína administrada corretamente."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Dor pós-operatória persistente, sem resposta à analgesia prescrita, apesar de dose e horário corretos — um quadro que pode ser mal-interpretado como comportamento de busca por opioide ou como dor desproporcional, se a causa farmacogenética não for considerada."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Reconhecer a possibilidade de metabolização lenta de CYP2D6 evita rotular a paciente incorretamente e direciona a conduta para um analgésico que não dependa dessa via de ativação — por exemplo, um opioide já ativo (não pró-fármaco) ou um analgésico de mecanismo diferente."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra o ponto central deste bloco: o espectro de metabolizadores tem efeito espelhado dependendo do tipo de molécula. Aqui, ao contrário do caso clássico de toxicidade em metabolizadores ultrarrápidos de codeína, o efeito é falha terapêutica num metabolizador lento — mostrando que farmacogenética não é sinônimo de 'risco de toxicidade', mas de variabilidade de resposta em ambas as direções.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "anestesiologia"
+      ],
+      "diagnostico_revelado": "Falha analgésica por provável fenótipo de metabolizadora lenta de CYP2D6, impedindo a ativação de codeína em morfina.",
+      "tratamento_resumido": "Substituição por analgésico que não dependa da ativação por CYP2D6 (por exemplo, morfina diretamente, já na forma ativa, ou um anti-inflamatório associado). Quando disponível, a genotipagem de CYP2D6 pode confirmar o fenótipo e orientar prescrições futuras, evitando repetição do mesmo problema com outros pró-fármacos ativados pela mesma via."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-004-06-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 7 — Pharmacogenomics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 5 — Pharmacogenomics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 11 — Individual Variation, Pharmacogenetics, and Personalized Medicine.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
   "_lentes": [
     "molecular",
     "clinica"

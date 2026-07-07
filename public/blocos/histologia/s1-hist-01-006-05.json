@@ -5,49 +5,361 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Microscopia Confocal",
+    "subtitulo": "Como fotografar um único andar de um prédio sem derrubar os outros?",
     "semestre": 1,
     "disciplina": "histologia",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
     "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "hist",
-      "esqueleto"
+      "histologia",
+      "microscopia",
+      "biologia-celular",
+      "tecnologia-medica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Corte óptico por laser; reconstrução 3D sem sobreposição de planos",
-  "narrativa": [],
+  "resumo_conciso": "Quando um tecido é espesso, iluminá-lo por inteiro com luz difusa gera um problema irritante: cada plano fora de foco contamina a imagem com um véu de fluorescência borrada, como fotografar um peixe através de várias camadas de água turva sobrepostas. A microscopia confocal resolve isso recusando a iluminação ampla. Em vez dela, varre a amostra ponto a ponto com um laser fino e, no caminho de volta da luz, intercala um orifício minúsculo — o pinhole — posicionado exatamente no plano óptico conjugado ao ponto iluminado. Esse orifício funciona como um porteiro implacável: deixa passar apenas os fótons que vieram do plano focal exato e barra qualquer luz vinda de cima ou de baixo dele. O resultado é um corte óptico limpo, sem precisar cortar fisicamente o tecido. Empilhando dezenas desses cortes (um Z-stack), o computador reconstrói o volume tridimensional da célula ou do órgão com nitidez que a microscopia de fluorescência convencional jamais alcançaria em amostras espessas.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Tente fotografar um peixe dentro de um aquário que tem três aquários idênticos empilhados atrás dele, todos com água um pouco turva. Mesmo focando perfeitamente no peixe da frente, sua foto sai com um véu esbranquiçado — a luz espalhada pelos aquários de trás atravessa o vidro e contamina a imagem. Não é falha da lente. É consequência inevitável de fotografar através de camadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse é exatamente o problema que a microscopia de fluorescência convencional enfrenta ao observar um tecido espesso — um pedaço de fígado, um embrião inteiro, uma fatia de cérebro com meio milímetro. Toda a amostra é banhada por uma luz que excita a fluorescência em todos os planos ao mesmo tempo: o plano que você quer ver e todos os planos acima e abaixo dele. O detector recebe a soma de tudo isso, e a imagem que deveria mostrar um andar nítido do prédio celular vem embaçada pela luz de todos os outros andares."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Qual é exatamente o problema que precisa ser resolvido?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para estudar a arquitetura tridimensional de um tecido vivo — onde estão as mitocôndrias dentro da célula, como os núcleos se distribuem em profundidade, como um vaso sanguíneo se ramifica dentro de um órgão — não basta ampliar a imagem. É preciso **isolar um único plano focal**, ignorando toda a luz que vem de fora dele. Sem isso, quanto mais espessa a amostra, mais a imagem se torna um borrão de luz acumulada — o equivalente óptico de fotografar os quatro aquários ao mesmo tempo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, seguro o problema: precisamos de uma forma de coletar luz vinda de um único plano dentro de uma amostra espessa, descartando a luz de todos os outros planos — sem cortar fisicamente o tecido."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a engenharia óptica resolveu isso?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução tem duas partes, e cada uma ataca uma metade do problema. Primeiro, em vez de banhar a amostra inteira com luz difusa, um feixe de laser varre a amostra **ponto a ponto** — como a agulha de um toca-discos percorrendo um sulco, nunca tocando dois pontos ao mesmo tempo. Isso já reduz drasticamente quanta fluorescência é excitada fora do ponto de interesse a cada instante."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas a parte decisiva vem no caminho de volta da luz. A fluorescência emitida por aquele ponto viaja de volta através do sistema óptico e passa por um orifício minúsculo — o pinhole — posicionado exatamente no plano que é óptico-conjugado ao ponto iluminado dentro da amostra. Fótons vindos do plano focal certo convergem exatamente sobre esse orifício e passam. Fótons vindos de planos acima ou abaixo do foco chegam desfocados àquela posição — e o orifício, sendo minúsculo, bloqueia a maior parte deles antes que atinjam o detector."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O caminho da luz até formar um corte óptico limpo",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Varredura ponto a ponto",
+          "explicacao": "Um laser monocromático é direcionado por espelhos móveis (galvanômetros) que o fazem varrer a amostra linha por linha, excitando a fluorescência de um ponto de cada vez, nunca da amostra inteira."
+        },
+        {
+          "numero": 2,
+          "titulo": "Emissão de fluorescência em todas as direções",
+          "explicacao": "No ponto iluminado, os fluoróforos emitem luz — mas também há fluorescência residual emitida por planos vizinhos, acima e abaixo, que o laser inevitavelmente também excitou de forma mais fraca."
+        },
+        {
+          "numero": 3,
+          "titulo": "Convergência no plano conjugado",
+          "explicacao": "A luz de retorno atravessa as mesmas lentes do sistema e é focalizada num plano específico, chamado plano conjugado — o único ponto onde a luz vinda exatamente do foco converge com nitidez perfeita."
+        },
+        {
+          "numero": 4,
+          "titulo": "Filtragem pelo pinhole",
+          "explicacao": "Um orifício minúsculo posicionado nesse plano conjugado deixa passar quase só os fótons vindos do foco exato. A luz de planos fora de foco, ao chegar desfocada e espalhada naquela posição, é majoritariamente bloqueada pelas bordas do orifício."
+        },
+        {
+          "numero": 5,
+          "titulo": "Detecção e reconstrução",
+          "explicacao": "O sinal que sobrevive ao pinhole é registrado por um detector sensível (fotomultiplicadora), ponto a ponto, formando uma imagem que representa apenas aquele plano. Repetindo o processo em profundidades crescentes, obtém-se uma pilha de cortes (Z-stack) que um computador reconstrói em volume 3D."
+        }
+      ]
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎧",
+      "conteudo": "Pense numa festa lotada onde você está tentando ouvir apenas a pessoa à sua frente, ignorando as dezenas de conversas ao redor. Um microfone comum captaria tudo misturado — sua voz mais o ruído da sala inteira, formando uma papagaiada indistinguível. Mas se você colocasse um cone acústico bem estreito na frente do seu ouvido, apontado exatamente para a boca da pessoa, o cone bloquearia fisicamente os sons vindos de outros ângulos e deixaria passar quase só a voz que você quer ouvir. O laser que varre ponto a ponto é você direcionando sua atenção pessoa a pessoa. O pinhole é o cone acústico: ele não impede o ruído de existir na sala, apenas impede que ele chegue até você. E assim como o cone precisa estar exatamente alinhado com a boca da pessoa para funcionar, o pinhole precisa estar exatamente no plano conjugado ao foco — um milímetro de desalinhamento e a filtragem falha."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O ganho da microscopia confocal não é apenas nitidez pontual — é a possibilidade de empilhar cortes ópticos sucessivos (Z-stack) e reconstruir computacionalmente o volume tridimensional de uma célula, um embrião ou um pequeno órgão, sem nunca ter cortado fisicamente o tecido."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome revela o truque óptico"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "confocal",
+      "origem": "do latim con- (junto, com) + focus (fogo; ponto central, foco)",
+      "significado": "literalmente, \"que compartilha o mesmo foco\"",
+      "explicacao": "O nome descreve exatamente o arranjo óptico: o ponto de iluminação do laser e o ponto de detecção através do pinhole estão alinhados no mesmo plano focal — o foco da iluminação e o foco da detecção coincidem (são \"co-focais\"). Qualquer luz que não venha desse foco compartilhado é, por definição geométrica, descartada pelo sistema."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se aumentássemos progressivamente o diâmetro do pinhole até ele ficar bem largo, o que aconteceria com a imagem?",
+      "resposta": "A capacidade de corte óptico desapareceria gradualmente. Com um orifício largo, fótons vindos de planos fora de foco — que antes eram bloqueados pelas bordas estreitas do pinhole — passariam a atravessar também, contaminando a imagem com a mesma névoa de fundo característica da microscopia de fluorescência convencional de campo amplo. No limite, um pinhole infinitamente largo equivale a não ter pinhole algum: o microscópio confocal se comportaria como um microscópio de fluorescência comum, perdendo resolução axial (a capacidade de distinguir profundidades) mesmo mantendo a mesma resolução lateral. O pinhole estreito é o que transforma \"iluminar um ponto\" em \"ver apenas aquele ponto\"."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O princípio do pinhole confocal",
+      "descricao": "Esquema mostrando um feixe de laser entrando por um espelho dicroico e focando em um único ponto dentro de uma amostra espessa. A luz emitida por esse ponto retorna pelo mesmo caminho óptico e converge sobre um pinhole; ao lado, setas tracejadas mostram fótons vindos de planos fora de foco sendo bloqueados pelas bordas do orifício antes de chegar ao detector.",
+      "prompt_ia": "Diagrama científico vetorial, fundo neutro adaptável a tema claro/escuro. Um feixe de laser azul entra pela esquerda, reflete em um espelho dicroico posicionado a 45 graus, e converge em um ponto focal dentro de uma amostra biológica espessa desenhada como um bloco de tecido semitransparente com várias camadas. A luz de fluorescência (verde) emitida nesse ponto retorna pelo mesmo caminho óptico até um pequeno orifício (pinhole) desenhado em corte transversal. Setas verdes sólidas mostram os fótons do plano focal atravessando o pinhole e chegando a um detector (fotomultiplicadora). Setas verdes tracejadas e mais claras, vindas de dois planos acima e abaixo do foco dentro da amostra, convergem de forma desfocada sobre a região do pinhole e são interrompidas por uma barreira opaca ao redor do orifício, rotulada 'luz fora de foco bloqueada'. Legendas em português: 'laser de excitação', 'espelho dicroico', 'plano focal', 'pinhole', 'detector', 'luz fora de foco bloqueada'. Estilo vetorial científico limpo, sem texturas fotorrealistas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Onde essa técnica reaparece na sua formação"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A microscopia confocal não é curiosidade de laboratório de física óptica — é ferramenta de bancada em quase toda pesquisa de biologia celular e em diagnóstico avançado. Em **Biologia Celular**, será a técnica padrão para verificar co-localização de proteínas dentro da célula (por exemplo, confirmar se uma proteína está mesmo na mitocôndria e não no complexo de Golgi). Em **Patologia**, microscopia confocal *in vivo* já é usada para avaliar margens tumorais em cirurgia de pele sem precisar de biópsia excisional prévia. Em **Oftalmologia**, o exame chamado microscopia confocal de córnea permite visualizar camadas corneanas vivas em pacientes, célula a célula, sem cortar o olho."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-hist-01-006",
+        "titulo": "Microscopia — Instrumentos de Ver",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já entender limite de resolução e a diferença entre ampliação e nitidez antes de compreender por que a microscopia confocal precisou resolver o problema específico da luz fora de foco em amostras espessas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "biologia celular",
+        "semestre_futuro": 2,
+        "topico": "Localização subcelular de proteínas por co-localização",
+        "mecanismo_conexao": "A técnica confocal é o padrão-ouro para verificar em que organela exata uma proteína marcada por fluorescência realmente está, algo que a microscopia de campo amplo não consegue resolver em três dimensões.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "dermatologia",
+        "semestre_futuro": 7,
+        "topico": "Avaliação de margens tumorais cutâneas in vivo",
+        "mecanismo_conexao": "A microscopia confocal de reflectância permite examinar camadas da pele em tempo real, sem biópsia, para orientar a excisão de lesões suspeitas.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "oftalmologia",
+        "semestre_futuro": 8,
+        "topico": "Microscopia confocal de córnea",
+        "mecanismo_conexao": "O mesmo princípio do pinhole é usado clinicamente para visualizar camadas corneanas vivas, célula a célula, em pacientes com suspeita de ceratite ou distrofias corneanas.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-01-006",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Enquanto a microscopia eletrônica (vista no bloco pai) usa feixe de elétrons e exige amostras fixas e mortas para atingir resolução subcelular, a confocal usa luz visível e pode observar tecido vivo, trocando resolução máxima por compatibilidade com células vivas."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-hist-01-006-05-fc01",
+      "pergunta": "Por que um microscópio de fluorescência convencional produz imagem borrada ao observar um tecido espesso, mesmo estando perfeitamente focado?",
+      "resposta": "Porque a iluminação convencional banha a amostra inteira ao mesmo tempo, excitando fluorescência em todos os planos — o plano de interesse e também os planos acima e abaixo dele. O detector recebe a soma de toda essa luz misturada, e a contribuição dos planos fora de foco aparece como um véu difuso sobreposto à imagem nítida do plano central. Quanto mais espessa a amostra, mais planos contaminam o sinal e pior fica o contraste.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "microscopia",
+        "fluorescencia"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-05-fc02",
+      "pergunta": "Descreva o caminho completo de um fóton de fluorescência, desde a excitação pelo laser até a formação do sinal no detector, explicando por que o pinhole deixa uns fótons passarem e bloqueia outros.",
+      "resposta": "1) O laser varre a amostra ponto a ponto, excitando fluorescência principalmente no ponto focal, mas também um pouco em planos vizinhos. 2) A luz emitida retorna pelo mesmo caminho óptico do sistema. 3) Fótons vindos exatamente do plano focal convergem com precisão sobre o pinhole, posicionado no plano conjugado ao foco. 4) Fótons vindos de planos acima ou abaixo do foco chegam desfocados a essa mesma posição — formam um círculo de confusão maior que o próprio orifício. 5) As bordas físicas do pinhole bloqueiam a maior parte desses fótons desfocados, deixando passar predominantemente o sinal do plano focal exato, que é então captado pelo detector.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "microscopia",
+        "pinhole",
+        "mecanismo"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-05-fc03",
+      "pergunta": "Se o pinhole de um microscópio confocal fosse progressivamente alargado até ficar muito grande, o que aconteceria com a capacidade de corte óptico do equipamento?",
+      "resposta": "A capacidade de seccionamento óptico desapareceria de forma gradual. Um pinhole largo deixa de filtrar os fótons desfocados vindos de outros planos — eles passam a atravessar o orifício junto com o sinal do foco. No limite, um pinhole infinitamente grande equivale a removê-lo: o aparelho passaria a se comportar como um microscópio de fluorescência de campo amplo comum, perdendo resolução axial (capacidade de distinguir profundidade) mesmo preservando a resolução lateral. Isso demonstra que o pinhole, e não o laser, é o elemento que efetivamente cria o corte óptico.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "microscopia",
+        "pinhole",
+        "contrafactual"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-05-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'A microscopia confocal forma imagens mais nítidas porque o laser tem mais energia que a lâmpada de fluorescência convencional, o que ilumina melhor a amostra.'",
+      "resposta": "Falso. A energia ou intensidade do laser não é o que resolve o problema da nitidez — é a estratégia de varredura ponto a ponto combinada com a filtragem espacial pelo pinhole. Um laser de baixa potência varrendo ponto a ponto com pinhole produz corte óptico limpo; uma lâmpada muito potente iluminando a amostra inteira, sem pinhole, continuaria produzindo imagem borrada em tecido espesso, não importa quão intensa seja a luz. A armadilha aqui é confundir 'mais luz' com 'luz mais bem filtrada' — são conceitos independentes, e é a filtragem espacial, não a potência, que resolve o problema de fundo fora de foco.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "microscopia",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-05-fc05",
+      "pergunta": "A palavra confocal vem de con- (junto) + focus (foco). O que essa etimologia revela sobre a diferença de arquitetura entre um microscópio confocal e um microscópio de fluorescência convencional?",
+      "resposta": "A etimologia revela que, no equipamento confocal, o ponto de iluminação (onde o laser incide) e o ponto de detecção (onde o pinhole está posicionado) compartilham deliberadamente o mesmo plano focal — daí 'co-focal', foco em comum. Isso contrasta diretamente com a microscopia de fluorescência convencional, em que a iluminação atinge a amostra inteira de uma vez e o detector também capta luz de todos os planos ao mesmo tempo, sem nenhum alinhamento seletivo entre onde se ilumina e o que se detecta. O nome, portanto, não é decorativo: descreve exatamente o alinhamento geométrico que torna a técnica capaz de isolar um único plano dentro de uma amostra espessa.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "microscopia",
+        "etimologia"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-05-fc06",
+      "pergunta": "Um dermatologista está avaliando uma lesão pigmentada suspeita e quer visualizar as camadas superficiais da pele em tempo real, célula a célula, sem realizar biópsia. Que princípio óptico estudado neste bloco torna esse exame possível, e por que ele funciona sem cortar o tecido?",
+      "resposta": "O exame é a microscopia confocal de reflectância, que usa exatamente o princípio do pinhole: um laser varre a pele ponto a ponto em profundidades crescentes, e o pinhole filtra a luz refletida de modo que apenas cada plano específico (epiderme, junção dermo-epidérmica) seja capturado nitidamente, sem contaminação de planos vizinhos. Como a técnica não exige cortar fisicamente o tecido — o 'corte' é inteiramente óptico, feito pela filtragem espacial da luz — o dermatologista consegue examinar a arquitetura celular da lesão *in vivo*, em tempo real, decidindo se uma biópsia excisional é realmente necessária.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "microscopia",
+        "dermatologia",
+        "aplicacao-clinica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-hist-01-006-05-caso01",
+      "titulo": "Lesão pigmentada de crescimento recente no antebraço",
+      "apresentacao": "Mulher de 45 anos, fototipo II, procura dermatologista por uma lesão pigmentada no antebraço direito que 'mudou de aspecto' nos últimos quatro meses, segundo ela. Nega dor ou sangramento. Ao exame, mácula acastanhada de 7 mm, bordas levemente irregulares, coloração heterogênea. A dermatoscopia mostra padrão atípico, mas não conclusivo para malignidade. Em vez de indicar biópsia excisional imediata, o dermatologista realiza microscopia confocal de reflectância *in vivo* diretamente sobre a lesão.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Necessidade clínica de examinar a arquitetura celular de uma lesão pigmentada suspeita sem remover tecido, já que uma biópsia desnecessária deixaria cicatriz em uma lesão que pode ser benigna."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Nenhuma estrutura é 'afetada' pelo exame em si — o que está em jogo é a capacidade óptica de resolver a arquitetura celular da epiderme e da junção dermo-epidérmica em profundidade, célula a célula."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem a filtragem por pinhole, qualquer tentativa de observar a pele em profundidade produziria apenas um borrão de fluorescência ou reflectância misturada de múltiplas camadas, tornando impossível diferenciar arquitetura celular normal de padrões sugestivos de melanoma."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Não há sintoma no sentido clássico — o 'sintoma' aqui é a limitação diagnóstica: sem a técnica confocal, o dermatologista teria apenas a dermatoscopia inconclusiva e precisaria decidir entre biópsia excisional ou observação, sem visualizar diretamente as células."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A microscopia confocal de reflectância permite visualizar, em cortes ópticos sucessivos, a disposição dos melanócitos e a integridade da junção dermo-epidérmica. Nesse caso, o exame mostra padrão celular regular, compatível com nevo melanocítico benigno atípico, e a lesão é acompanhada clinicamente em vez de excisada — poupando a paciente de um procedimento invasivo desnecessário."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra a aplicação clínica direta do princípio do pinhole explicado no bloco: a mesma lógica de filtragem espacial da luz que permite reconstruir o volume 3D de uma célula em laboratório é o que permite, na prática clínica, visualizar camadas da pele viva sem biópsia. O 'corte óptico' deixa de ser conceito de bancada e se torna ferramenta diagnóstica à beira do leito.",
+      "disciplinas_relacionadas": [
+        "histologia",
+        "dermatologia",
+        "patologia"
+      ],
+      "diagnostico_revelado": "Nevo melanocítico atípico benigno, confirmado por microscopia confocal de reflectância in vivo, sem necessidade de biópsia excisional.",
+      "tratamento_resumido": "Acompanhamento clínico e dermatoscópico seriado a cada 6-12 meses; biópsia reservada para caso de mudança adicional documentada na lesão."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-hist-01-006-05-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Ross MH, Pawlina W. Histology: A Text and Atlas. 8th ed. Wolters Kluwer; 2020. Capítulo 1 — Métodos de estudo de células e tecidos.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "funcao"
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "A microscopia confocal é mais nítida porque usa um laser mais forte que a lâmpada da fluorescência convencional",
+      "correcao": "A nitidez vem da filtragem espacial pelo pinhole, não da intensidade da fonte de luz",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "O 'corte óptico' confocal é a mesma coisa que fatiar fisicamente o tecido em um micrótomo",
+      "correcao": "O corte óptico não remove nenhum material físico — é inteiramente uma seleção de luz feita pelo pinhole, permitindo inclusive examinar tecido vivo",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "microscopia confocal",
+      "termo_es": "microscopía confocal",
+      "termo_en": "confocal microscopy",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "corte óptico",
+      "termo_es": "corte óptico",
+      "termo_en": "optical section",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Reescrita completa da narrativa (socrática genuína), troca de analogia repetitiva por analogia de audição em festa, adição de caso clínico com cascata de 5 etapas, expansão de 5 para 6 flashcards com tipos variados.",
+      "motivo": "Bloco original tinha narrativa expositiva com definição antes do problema, analogia genérica, ausência de caso clínico e prerequisito com bloco_id em formato de título."
+    }
   ]
 }

@@ -5,49 +5,195 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Clearance de PAH e o Fluxo Plasmático Renal",
-    "semestre": 3,
+    "subtitulo": "Como estimar a perfusão do órgão através da depuração total em passagem única",
     "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
-    "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "semestre": 3,
+    "tipo": "conceito",
     "tags": [
-      "fisio2",
-      "esqueleto"
+      "Fisiologia Renal",
+      "Clearance",
+      "Hemodinâmica",
+      "Secreção Tubular"
     ],
+    "tempo_leitura_minutos": 10,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-02"
   },
-  "resumo_conciso": "Substância totalmente depurada; estimar FPR e fração de filtração",
-  "narrativa": [],
+  "resumo_conciso": "O clearance do ácido para-aminohipúrico (PAH) é o método padrão-ouro para estimar o Fluxo Plasmático Renal Efetivo (FPRE). Devido ao seu duplo mecanismo de eliminação — filtração glomerular e secreção tubular proximal ativa —, quase 100% do PAH é removido do sangue renal em uma única passagem, tornando sua taxa de depuração equivalente à velocidade com que o plasma chega aos néfrons ativos.",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "O Desafio da Perfusão Invisível"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você é contratado para medir a velocidade de escoamento de um grande rio turbulento, mas não possui sensores subaquáticos ou barcos. No entanto, você tem à sua disposição uma tinta ecológica e um detector de alta sensibilidade na foz. Como você poderia usar essa tinta para estimar o fluxo de água por minuto?"
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Se você infundir um corante continuamente no sangue e souber que os rins limpam 100% dessa substância em uma única passagem (ou seja, o sangue que entra vem com o corante, mas o que sai pela veia renal está completamente limpo), o que o volume de plasma depurado por minuto (clearance) dessa substância revelaria sobre o rim?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A dedução é uma das mais belas sacadas da fisiologia: se 100% da substância é removida do sangue ao passar pelos rins, a taxa de depuração (clearance) dessa substância é EXATAMENTE igual ao volume de plasma que entrou nos rins por minuto. Em termos simples: se o rim limpa completamente todo o plasma que o irriga, medir a taxa de limpeza é o mesmo que medir o fluxo que chega ao órgão. Essa substância existe na prática clínica e experimental: é o Ácido Para-aminohipúrico (PAH)."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Ácido Para-aminohipúrico (PAH)",
+      "origem": "Do grego 'para' (ao lado de), do grupo químico 'amino' (derivado da amônia, com nitrogênio) e 'hippos' (cavalo) + 'ouron' (urina).",
+      "significado": "Composto orgânico estruturalmente semelhante aos ácidos que foram isolados originalmente em grande quantidade na urina de cavalos (como o ácido hipúrico).",
+      "explicacao": "O PAH é uma molécula sintética que mimetiza perfeitamente os ânions orgânicos endógenos que os rins ativamente tentam excretar, servindo como a ferramenta perfeita para mapear os fluxos renais."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O Duplo Mecanismo de Eliminação: Filtração e Secreção"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para compreender como o PAH consegue ser totalmente depurado, precisamos relembrar o caminho do plasma no néfron. Apenas cerca de 20% do fluxo plasmático renal é filtrado nos glomérulos para o espaço de Bowman (a Fração de Filtração). Os outros 80% continuam seu trajeto através das arteríolas eferentes em direção aos capilares peritubulares. Se o PAH fosse apenas filtrado (como a inulina), 80% dele escaparia de volta para a veia renal. Como o rim contorna isso?"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🧹",
+      "conteudo": "Pense em uma linha de produção de uma fábrica onde garrafas passam por uma esteira. O primeiro estágio é uma peneira automática (Filtração Glomerular) que remove de forma passiva 20% das garrafas. Os outros 80% continuam na esteira. Imediatamente após, há uma equipe de operários dedicados e velozes (Transportadores de Ânions Orgânicos no túbulo proximal) posicionados ao lado da esteira. Eles retiram manualmente TODAS as garrafas restantes e as jogam na caixa de descarte. Ao final do percurso, a esteira está 100% limpa. O trabalho conjunto da peneira mecânica e da equipe ativa de coletores limpou todo o fluxo!"
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O PAH é submetido a uma eliminação combinada fantástica: 20% dele é filtrado livremente no glomérulo, enquanto os 80% restantes presentes nos capilares peritubulares são ativamente secretados para a luz do túbulo contorcido proximal pelos transportadores de ânions orgânicos (principalmente OAT-1 e OAT-3 na membrana basolateral, e MRP na membrana apical). Como resultado, o sangue na veia renal fica virtualmente livre de PAH."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Imagine que um pesquisador decide medir o fluxo plasmático renal de um paciente que está fazendo uso concomitante de probenecida (um fármaco que bloqueia competitivamente os transportadores OAT no túbulo proximal). O clearance de PAH calculado ainda refletirá o fluxo plasmático renal real?",
+      "resposta": "Não! Se os transportadores OAT estiverem bloqueados pela probenecida, a secreção tubular ativa de PAH será drasticamente reduzida ou totalmente interrompida. O PAH passará a ser depurado apenas por filtração glomerular (~20% do fluxo). Como consequência, o clearance calculado de PAH despencará para valores próximos ao clearance de inulina (RFG), subestimando massivamente o verdadeiro fluxo plasmático renal. Isso prova que a estimativa do fluxo plasmático depende intrinsecamente do funcionamento normal da secreção tubular."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Nuance Clínica: Fluxo Efetivo vs. Fluxo Total"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática fisiológica real, a remoção do PAH não é absolutamente de 100%, mas sim de aproximadamente 90% (uma razão de extração de 0,9). Por que esses 10% restantes não são eliminados?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta não está em uma falha dos transportadores, mas sim na anatomia vascular do rim. Cerca de 10% do sangue arterial renal irriga tecidos não depuradores do órgão, como a cápsula renal, a gordura perirrenal e porções muito profundas da medula renal (os vasa recta). Esse sangue irriga essas estruturas para mantê-las vivas e retorna diretamente para a veia renal sem nunca passar pelos néfrons corticais funcionantes onde os transportadores de PAH estão localizados. Por essa razão, o clearance de PAH estima o Fluxo Plasmático Renal Efetivo (FPRE). Para calcular o Fluxo Plasmático Renal Total (FPRT), ajustamos o valor dividindo-o pela taxa de extração: FPRT = FPRE / 0,9."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Hemodinâmica do Néfron e Depuração do PAH",
+      "descricao": "Diagrama esquemático ilustrando a artéria renal trazendo PAH (100%), a filtração glomerular de 20% de PAH, a secreção ativa dos 80% restantes pelos capilares peritubulares via transportadores tubulares proximais OAT, o clearance urinário completo do PAH e a veia renal retornando virtualmente livre de PAH (~0%).",
+      "prompt_ia": "High-quality, professional medical educational vector diagram of a renal nephron illustrating the clearance of Para-aminohippuric Acid (PAH). Show the afferent arteriole carrying PAH (glowing green spheres), the glomerulus filtering 20% of these spheres into Bowman's space, and the efferent arteriole branching into peritubular capillaries around the proximal tubule. Show the active transport (secretion) of the remaining 80% of green spheres across the tubular cells (with labeled OAT-1/OAT-3 carriers) into the tubule lumen. The renal vein leaving the nephron is shown in blue with 0% green spheres. Clean white background, clear labeling in Portuguese, scientifically accurate anatomy.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s3-fisio2-02-063-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que o clearance de inulina mede a Taxa de Filtração Glomerular (RFG), enquanto o clearance de PAH estima o Fluxo Plasmático Renal Efetivo (FPRE)?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "Fisiologia Renal",
+        "Clearance",
+        "FPRE",
+        "RFG"
+      ],
+      "resposta": "Porque a inulina é apenas filtrada (limpando apenas os ~20% do plasma que passam pela barreira de filtração), enquanto o PAH é filtrado e quase totalmente secretado pelo túbulo proximal. Como praticamente 100% do PAH que entra no rim é removido e excretado em uma única passagem, o volume de plasma limpo de PAH por minuto equivale ao fluxo total de plasma que perfunde os néfrons funcionantes."
+    },
+    {
+      "card_id": "s3-fisio2-02-063-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Como a saturação dos transportadores de ânions orgânicos (OATs) por altas doses de PAH afeta o cálculo do fluxo plasmático renal?",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Transportadores",
+        "OATs",
+        "Saturação",
+        "Kinetics"
+      ],
+      "resposta": "A secreção tubular ativa de PAH é mediada por proteínas transportadoras saturáveis (apresentam um Transporte Máximo ou Tm). Sob altas doses plasmáticas de PAH que superam o Tm, o excesso de PAH não consegue ser secretado e escapa pela veia renal. Isso diminui a razão de extração renal de PAH e faz com que o clearance calculado caia drasticamente, subestimando gravemente o verdadeiro fluxo plasmático renal."
+    },
+    {
+      "card_id": "s3-fisio2-02-063-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "Qual seria o impacto de uma estenose bilateral grave da artéria renal sobre o clearance de PAH de um paciente?",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "Clínica",
+        "Hemodinâmica",
+        "Clearance de PAH"
+      ],
+      "resposta": "O clearance de PAH diminuiria acentuadamente. A estenose da artéria renal reduz fisicamente o fluxo de sangue (e consequentemente de plasma) que chega aos rins. Como há menos plasma perfundindo os néfrons por minuto, a quantidade total de PAH que o rim é capaz de depurar por unidade de tempo diminui proporcionalmente, refletindo fielmente a queda no fluxo plasmático renal."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-fisio2-02-063-caso01",
+      "titulo": "Isquemia Silenciosa: O Rim Sob a Pressão da Hipertensão Arterial Crônica",
+      "apresentacao": "Sr. Jaime, 58 anos, contador, comparece à consulta de rotina com queixa de cefaleia ocasional e fadiga. É hipertenso de longa data, com adesão irregular ao tratamento. Ao exame físico, apresenta PA de 165/105 mmHg. Os exames laboratoriais revelam creatinina de 1,4 mg/dL. Para avaliar a integridade da hemodinâmica renal e a fração de filtração antes de iniciar novos fármacos cardioprotetores, realiza-se um teste de depuração experimental com infusão contínua de inulina e de ácido para-aminohipúrico (PAH). O clearance de PAH calculado foi de 350 mL/min (referência: ~600 mL/min), e o clearance de inulina (RFG) de 70 mL/min.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Hipertensão arterial sistêmica crônica não controlada gerando estresse hemodinâmico de cisalhamento crônico e lesão endotelial nas arteríolas renais."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Arteríolas aferentes e eferentes renais, que sofrem hipertrofia da camada média, proliferação intimal e hialinose arteriolar, resultando no estreitamento permanente de seu lúmen vascular."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Estenose arteriolar renal difusa que eleva acentuadamente a resistência vascular intrínseca, restringindo severamente o fluxo plasmático renal (refletido pela queda do clearance de PAH para 350 mL/min)."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Oligossintomático na fase inicial (fadiga moderada e cefaleia por picos hipertensivos), porém com redução silenciosa da filtração glomerular e discreta elevação de escórias nitrogenadas como a creatinina sérica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Isquemia crônica do parênquima renal que progride para nefrosclerose hipertensiva, com atrofia tubular, fibrose intersticial e perda irreversível de néfrons se a pressão arterial não for urgentemente controlada."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente a aplicação fisiológica e clínica do clearance de PAH como o padrão-ouro para estimar o Fluxo Plasmático Renal Efetivo (FPRE). A redução substancial do clearance de PAH (350 mL/min) evidencia uma perfusão renal cronicamente comprometida devido às alterações vasculares hipertensivas. Ao comparar o clearance de inulina (RFG = 70 mL/min) com o de PAH (FPRE = 350 mL/min), calculamos a Fração de Filtração (FF = 70 / 350 = 20%), mostrando que, apesar da queda absoluta do fluxo, a proporção de plasma filtrada no glomérulo permanece na faixa fisiológica normal.",
+      "disciplinas_relacionadas": [
+        "Fisiologia Renal",
+        "Nefrologia",
+        "Cardiologia"
+      ],
+      "diagnostico_revelado": "Nefrosclerose Hipertensiva (Nefropatia Hipertensiva Crônica) com redução severa do Fluxo Plasmático Renal Efetivo",
+      "tratamento_resumido": "Controle rígoso da pressão arterial com foco no bloqueio do sistema renina-angiotensina-aldosterona (por exemplo, com um IECA como o Enalapril ou um BRA como a Losartana) para promover a vasodilatação preferencial da arteríola eferente, reduzindo a hipertensão intraglomerular e retardando a progressão da fibrose renal."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo"
-  ]
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-fisio2-02-060",
+        "titulo": "Clearance Renal — Visão Geral",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "Compreender o conceito matemático de depuração (clearance) e as variáveis de concentração urinária, concentração plasmática e fluxo urinário é fundamental para estender o conceito para a medição dos fluxos renais."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Secreção de Fármacos e Interações Medicamentosas no Túbulo Proximal",
+        "disciplina": "Farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Os mesmos transportadores OAT-1 e OAT-3 que secretam PAH são responsáveis pela excreção de diversos fármacos (como penicilinas, antivirais e anti-inflamatórios), servindo como sítio de interações clínicas importantes e competição farmacocinética.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Clearance de Inulina e Ritmo de Filtração Glomerular",
+        "explicacao": "Enquanto a inulina é apenas filtrada e mede estritamente a Taxa de Filtração Glomerular, o PAH é filtrado e amplamente secretado para medir o Fluxo Plasmático Renal. O contraste entre ambas as medidas define a fração de filtração."
+      }
+    ]
+  }
 }

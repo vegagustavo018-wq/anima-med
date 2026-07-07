@@ -4,49 +4,220 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Câncer de Colo — Clínica, Estadiamento e Tratamento",
+    "titulo": "Cancer de Colo - Clinica, Estadiamento e Tratamento",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "clinica",
+      "diagnostico",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Sinusorragia, estadiamento FIGO; cirurgia, quimiorradiação",
-  "narrativa": [],
+  "resumo_conciso": "Câncer de colo pode causar sinusorragia, sangramento irregular, corrimento e dor. O estadiamento FIGO orienta tratamento: cirurgia em doença inicial selecionada e quimiorradiação em doença localmente avançada.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O câncer de colo inicial pode não dar sintomas. Quando aparecem, os sinais clássicos são sangramento pós-coito, sangramento intermenstrual, corrimento persistente, dor pélvica e dispareunia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Doença avançada pode invadir paramétrios, vagina, bexiga ou reto, causando dor lombar, hidronefrose, hematúria, sangramento retal, edema de membros inferiores e perda ponderal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O diagnóstico exige biópsia. Citologia e HPV sugerem risco; colposcopia localiza lesão; histologia confirma câncer e tipo tumoral."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O estadiamento FIGO avalia extensão local, tamanho tumoral, vagina, paramétrios, linfonodos e metástases. Imagem e patologia podem contribuir para definir estágio e plano."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Tratamento depende do estágio e desejo reprodutivo. Lesões muito iniciais podem permitir conização ou traquelectomia em casos selecionados; doença inicial pode ser tratada com histerectomia radical e avaliação linfonodal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Doença localmente avançada geralmente é tratada com quimiorradiação, frequentemente com cisplatina como radiossensibilizante, associada a braquiterapia quando indicada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Seguimento inclui vigilância clínica, manejo de efeitos tardios, sexualidade, menopausa precoce, linfedema, saúde urinária/intestinal e apoio psicossocial."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-07-000",
+        "titulo": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-05-005",
+        "titulo": "Hiperplasia Endometrial - Precursora do Cancer de Endometrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-032",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Ovário — Diagnóstico, Estadiamento e Tratamento",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Vulva e Vagina",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-04-006",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Adenomiose - Endometrio Invadindo o Miometrio"
+      },
+      {
+        "bloco_id": "s7-go1-06-040",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com HIV e Outras ISTs na Saude da Mulher"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-08-011-fc-01",
+      "pergunta": "Qual sintoma clássico de câncer de colo?",
+      "resposta": "Sangramento pós-coito.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-011-fc-02",
+      "pergunta": "O que confirma o diagnóstico?",
+      "resposta": "Biópsia com histologia.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-011-fc-03",
+      "pergunta": "Qual sistema estadiador é usado?",
+      "resposta": "FIGO.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-011-fc-04",
+      "pergunta": "Qual tratamento é típico da doença localmente avançada?",
+      "resposta": "Quimiorradiação com braquiterapia conforme indicação.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-08-011-cc-01",
+      "titulo": "Paramétrio endurecido",
+      "apresentacao": "Paciente com lesão cervical friável tem toque com paramétrio endurecido e dor pélvica.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Câncer de colo pode causar sinusorragia, sangramento irregular, corrimento e dor."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Cancer de Colo - Clinica, Estadiamento e Tratamento, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Câncer de colo pode causar sinusorragia, sangramento irregular, corrimento e dor. O estadiamento FIGO orienta tratamento: cirurgia em doença inicial selecionada e quimiorradiação em doença localmente avançada."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente com lesão cervical friável tem toque com paramétrio endurecido e dor pélvica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Por que isso importa? Sugere extensão local, alterando estadiamento e favorecendo tratamento com quimiorradiação em vez de cirurgia simples."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Sugere extensão local, alterando estadiamento e favorecendo tratamento com quimiorradiação em vez de cirurgia simples.",
+      "tratamento_resumido": "Sugere extensão local, alterando estadiamento e favorecendo tratamento com quimiorradiação em vez de cirurgia simples."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Algoritmo por estágio do câncer de colo: biópsia, FIGO, cirurgia inicial, quimiorradiação localmente avançada e seguimento.",
+        "alt": "Ilustracao educacional para Cancer de Colo - Clinica, Estadiamento e Tratamento"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Cervical Cancer Treatment",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Endometrial Cancer Treatment",
+      "url": "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "clinica",
     "diagnostico",

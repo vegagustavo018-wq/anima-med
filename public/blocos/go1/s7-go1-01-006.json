@@ -10,43 +10,235 @@
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "fase-lutea",
+      "corpo-luteo",
+      "progesterona",
+      "luteolise"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "subtitulo": "O folículo rompido vira uma glândula temporária que decide se o endométrio espera ou descama."
   },
-  "resumo_conciso": "Formação do corpo lúteo, secreção de progesterona, luteólise",
-  "narrativa": [],
+  "resumo_conciso": "A fase lútea começa após a ovulação, quando o folículo rompido se transforma em corpo lúteo. Sob influência do LH, células foliculares luteinizadas produzem progesterona e estradiol, convertendo o endométrio proliferativo em secretor e freando novo recrutamento folicular. Se há gestação, o hCG embrionário resgata o corpo lúteo; se não há, ocorre luteólise, queda hormonal e menstruação. Essa glândula temporária explica fase lútea, suporte inicial da gestação, contracepção progestagênica e sangramentos por queda hormonal.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Depois da ovulação, o ovário não fica com um buraco inútil. O que sobrou do folículo rompido vira uma glândula temporária. Esse detalhe muda todo o endométrio."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que precisa existir uma fase lútea"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é que liberar o oócito não basta. Se houver fecundação, o embrião inicial levará dias para chegar ao útero. Nesse intervalo, o endométrio precisa ser mantido e transformado em tecido secretor. Sem um sinal hormonal pós-ovulatório, a janela de implantação fecharia antes da chegada do embrião."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é transformar o folículo rompido no corpo lúteo, uma estrutura endócrina transitória produtora de progesterona. Ele compra tempo biológico: mantém o endométrio em modo receptivo enquanto o sistema descobre se houve gestação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que o corpo lúteo é feito"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O corpo lúteo deriva das células da granulosa e da teca que sofreram luteinização sob ação do LH. Ele é muito vascularizado, porque precisa secretar progesterona rapidamente para a circulação. Sua vida é curta se não houver hCG; é prolongada se o embrião sinalizar presença."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O corpo lúteo é uma glândula com prazo de validade: sem hCG, regride; com hCG, sustenta o começo da gestação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona na fase lútea"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Após o pico de LH e a ovulação, a progesterona sobe. Ela reduz a frequência dos pulsos de GnRH, freia novo pico de LH/FSH e transforma o endométrio em secretor. As glândulas endometriais passam a produzir substâncias nutritivas, e o tecido fica mais estável para implantação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se o embrião implanta, o trofoblasto começa a produzir hCG, que age como sinal de resgate do corpo lúteo. Se não há embrião, o corpo lúteo sofre luteólise, progesterona e estradiol caem, as artérias espiraladas se desorganizam, e a menstruação começa."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "A fase lútea explica por que a segunda metade do ciclo é mais constante: a vida útil do corpo lúteo varia menos que o tempo de maturação folicular."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco se conecta com ciclo endometrial, gestação inicial, teste de gravidez, contraceptivos progestagênicos, sangramento por privação hormonal e investigação de infertilidade. Ele também prepara a lógica de abortamento precoce e suporte lúteo em reprodução assistida, sem aprofundá-los aqui."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "lúteo",
+      "origem": "Do latim luteus, 'amarelado'",
+      "significado": "cor amarela",
+      "explicacao": "O nome vem da aparência amarelada rica em lipídios do corpo lúteo. A cor revela função: células esteroidogênicas acumulam colesterol e lipídios para produzir hormônios esteroides."
+    },
+    {
+      "tipo": "analogia",
+      "conteudo": "Pense no corpo lúteo como uma bateria reserva instalada logo depois que o sistema principal abre a janela fértil. Se chega um sinal do embrião, a bateria continua alimentando o endométrio; se o sinal não chega, ela descarrega e o sistema reinicia. A analogia quebra porque a bateria é tecido vivo, vascularizado, que também recebe e envia sinais."
+    },
+    {
+      "tipo": "imagem",
+      "id": "s7-go1-01-006-img01",
+      "titulo": "Corpo lúteo e progesterona",
+      "descricao": "Sequência mostrando folículo rompido virando corpo lúteo, progesterona alta, resgate por hCG ou luteólise.",
+      "prompt_ia": "Infográfico médico em português: ovulação -> corpo lúteo -> progesterona -> endométrio secretor. Dividir em dois caminhos: com hCG, resgate do corpo lúteo; sem hCG, luteólise, queda hormonal e menstruação. Fundo claro, cores amarelo e verde suaves."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-01-000",
+        "titulo": "Módulo 1 — Ciclo Menstrual e o Eixo Hipotálamo-Hipófise-Ovário",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco aprofunda uma etapa específica do módulo do ciclo menstrual e pressupõe a visão geral do eixo HHO."
+      }
+    ],
     "futuras": [],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-01-006-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que o corpo lúteo é necessário após a ovulação?",
+      "resposta": "Porque ele produz progesterona para transformar e manter o endométrio secretor durante os dias em que o embrião, se existir, ainda está chegando ao útero.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "corpo-luteo"
+      ]
+    },
+    {
+      "card_id": "s7-go1-01-006-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "O que acontece se não houver hCG?",
+      "resposta": "Sem hCG, o corpo lúteo regride, progesterona e estradiol caem, o endométrio perde suporte e ocorre menstruação.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "hcg"
+      ]
+    },
+    {
+      "card_id": "s7-go1-01-006-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se a progesterona lútea caísse cedo demais?",
+      "resposta": "O endométrio perderia estabilidade antes da janela adequada, podendo haver sangramento precoce e menor chance de implantação.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "progesterona"
+      ]
+    },
+    {
+      "card_id": "s7-go1-01-006-fc04",
+      "tipo": "etimologia",
+      "pergunta": "Por que o corpo lúteo tem esse nome?",
+      "resposta": "Porque luteus em latim significa amarelado; a estrutura tem coloração amarela por riqueza lipídica ligada à produção de esteroides.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "etimologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-01-006-caso01",
+      "titulo": "Sangramento antes da menstruação esperada",
+      "apresentacao": "Mulher de 32 anos em tentativa de gestação relata escapes marrons vários dias antes da menstruação, repetidos em ciclos consecutivos.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Possível queda precoce ou insuficiência relativa de suporte progesterônico."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Corpo lúteo e endométrio secretor."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Endométrio perde estabilidade antes da menstruação esperada."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sangramento pré-menstrual/escape."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Pode sinalizar disfunção ovulatória ou outra causa de sangramento; precisa ser interpretado no contexto completo da infertilidade."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra como o corpo lúteo sustenta a segunda metade do ciclo.",
+      "disciplinas_relacionadas": [
+        "ginecologia",
+        "endocrinologia",
+        "semiologia"
+      ],
+      "diagnostico_revelado": "Sangramento pré-menstrual a esclarecer, com hipótese lútea entre diagnósticos.",
+      "tratamento_resumido": "Confirmar ovulação, excluir gestação e causas estruturais conforme caso; manejo individualizado."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s7-go1-01-006-img01",
+        "url": null,
+        "prompt_ia": "Infográfico médico em português: ovulação -> corpo lúteo -> progesterona -> endométrio secretor. Dividir em dois caminhos: com hCG, resgate do corpo lúteo; sem hCG, luteólise, queda hormonal e menstruação. Fundo claro, cores amarelo e verde suaves.",
+        "origem": "ia",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "codex-gpt5-s7-go1-lote2",
+    "data_geracao": "2026-07-07",
+    "revisado_por": "codex-autorrevisao-anima",
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro-texto",
+      "citacao": "Berek JS. Berek & Novak's Gynecology. 16th ed. Wolters Kluwer; 2020.",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-07"
+    },
+    {
+      "tipo": "livro-texto",
+      "citacao": "Speroff L, Fritz MA. Clinical Gynecologic Endocrinology and Infertility. 9th ed. Wolters Kluwer; 2019.",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-07"
+    },
+    {
+      "tipo": "diretriz",
+      "citacao": "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Tratado de Ginecologia. Elsevier; 2019.",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-07"
+    }
+  ],
   "_lentes": [
     "mecanismo"
   ]

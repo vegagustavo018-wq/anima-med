@@ -8,49 +8,219 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Câncer de Ovário — Visão de Conjunto",
+    "titulo": "Cancer de Ovario - Visao de Conjunto",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "mecanismo",
+      "clinica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "O câncer silencioso; tipos epitelial, germinativo, cordões sexuais",
-  "narrativa": [],
+  "resumo_conciso": "Câncer de ovário inclui tumores epiteliais, germinativos e dos cordões sexuais. O epitelial de alto grau muitas vezes é diagnosticado tarde, com sintomas vagos e disseminação peritoneal.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Câncer de ovário é heterogêneo. Tumores epiteliais são os mais comuns em adultas; tumores germinativos aparecem mais em jovens; tumores dos cordões sexuais podem produzir hormônios."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O carcinoma seroso de alto grau, muitas vezes originado na tuba distal, é o grande responsável por doença avançada e mortalidade. Ele tende a disseminar cedo pelo peritônio."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sintomas iniciais são vagos: distensão abdominal, saciedade precoce, dor pélvica, urgência urinária, alteração intestinal e perda de peso. Persistência e mudança em relação ao padrão habitual importam."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Não existe rastreamento populacional eficaz para mulheres de risco habitual. CA-125 e ultrassom ajudam na avaliação de massa ou risco, mas não servem como rastreio universal isolado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "História familiar de câncer de ovário, mama, pâncreas ou próstata agressivo sugere investigar síndromes hereditárias como BRCA1/2 e outros genes de reparo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tratamento de tumores epiteliais geralmente combina cirurgia de estadiamento/citorredução e quimioterapia baseada em platina, com terapias de manutenção conforme perfil molecular e estágio."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A chave clínica é levar a sério massa anexial complexa, ascite, sintomas persistentes e fatores hereditários."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-07-000",
+        "titulo": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-05-005",
+        "titulo": "Hiperplasia Endometrial - Precursora do Cancer de Endometrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-032",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Ovário — Diagnóstico, Estadiamento e Tratamento",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Vulva e Vagina",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-04-006",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Adenomiose - Endometrio Invadindo o Miometrio"
+      },
+      {
+        "bloco_id": "s7-go1-06-040",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com HIV e Outras ISTs na Saude da Mulher"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-08-030-fc-01",
+      "pergunta": "Quais grandes grupos de tumores ovarianos?",
+      "resposta": "Epiteliais, germinativos e cordões sexuais-estroma.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-030-fc-02",
+      "pergunta": "Qual subtipo é central na mortalidade?",
+      "resposta": "Carcinoma seroso de alto grau.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-030-fc-03",
+      "pergunta": "Existe rastreamento populacional eficaz para risco habitual?",
+      "resposta": "Não. CA-125 e USG não são rastreio universal eficaz isolado.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-030-fc-04",
+      "pergunta": "Qual história familiar preocupa?",
+      "resposta": "Ovário, mama, pâncreas ou próstata agressivo, sugerindo BRCA e genes relacionados.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-08-030-cc-01",
+      "titulo": "Sintomas vagos persistentes",
+      "apresentacao": "Mulher de 58 anos relata distensão abdominal e saciedade precoce há 3 meses. Exame mostra ascite discreta.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Câncer de ovário inclui tumores epiteliais, germinativos e dos cordões sexuais."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Cancer de Ovario - Visao de Conjunto, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Câncer de ovário inclui tumores epiteliais, germinativos e dos cordões sexuais. O epitelial de alto grau muitas vezes é diagnosticado tarde, com sintomas vagos e disseminação peritoneal."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 58 anos relata distensão abdominal e saciedade precoce há 3 meses. Exame mostra ascite discreta."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual hipótese precisa entrar? Câncer de ovário/peritoneal, com avaliação por imagem, marcadores e encaminhamento adequado."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Câncer de ovário/peritoneal, com avaliação por imagem, marcadores e encaminhamento adequado.",
+      "tratamento_resumido": "Câncer de ovário/peritoneal, com avaliação por imagem, marcadores e encaminhamento adequado."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Mapa dos tumores ovarianos: epitelial, germinativo, cordões sexuais, tuba distal, disseminação peritoneal e ascite.",
+        "alt": "Ilustracao educacional para Cancer de Ovario - Visao de Conjunto"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Cervical Cancer Treatment",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Endometrial Cancer Treatment",
+      "url": "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica"

@@ -2,51 +2,355 @@
   "resumo_id": "s4-farma1-02-002-02",
   "no_pai_id": "s4-farma1-02-002",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-02-005-01"
+  ],
   "metadata": {
     "titulo": "Curva Quantal, DE50, DL50 e Receptores de Reserva",
+    "subtitulo": "E se a pergunta certa não for 'quanto', mas 'quantos'?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "curva-quantal",
+      "de50",
+      "dl50",
+      "receptores-de-reserva",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Resposta tudo-ou-nada na população; DE50/DL50; spare receptors",
-  "narrativa": [],
+  "resumo_conciso": "A curva graduada, vista no bloco irmão, responde muito bem a uma pergunta: quanto efeito um único organismo produz a cada dose. Mas essa pergunta é inútil quando o efeito não tem grau — um paciente ou dorme ou não dorme, ou sobrevive ou não sobrevive. Para esses desfechos de tudo-ou-nada, a farmacologia precisa de outra ferramenta: em vez de medir intensidade num sujeito, ela conta quantos indivíduos de uma população cruzaram o limiar de resposta a cada dose. É a curva quantal, e dela nascem dois números-âncora: a DE50, a dose que faz metade de uma população responder ao efeito desejado, e a DL50, a dose que mata metade de uma população (ou, em humanos, a TD50 de um efeito tóxico grave usado como substituto). A distância entre essas duas doses é o embrião do índice terapêutico, que o bloco lateral sobre margem de segurança detalha. A curva quantal também expõe um fenômeno que a curva graduada esconde: em muitos tecidos, o efeito máximo já é alcançado com só uma fração dos receptores ocupados — os chamados receptores de reserva, ou receptores sobressalentes. Isso explica por que a potência aparente de um fármaco pode ser maior do que a simples afinidade pelo receptor sugeriria, e por que nem todo receptor ocupado é indispensável para o efeito acontecer.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior mostrou a curva graduada: um único tecido, um único paciente, um efeito que cresce em grau conforme a dose sobe — 10%, 47%, 92% da contração máxima. Essa curva é perfeita quando o efeito é uma variável contínua. Mas existe uma classe inteira de perguntas em farmacologia para as quais essa lógica simplesmente não serve."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: quando o efeito não tem grau"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pergunte a um anestesiologista: 'o paciente ficou 47% inconsciente?'. A pergunta não faz sentido. Inconsciência é tudo ou nada — o paciente está anestesiado ou não está. O mesmo vale para convulsão (teve ou não teve), morte (ocorreu ou não ocorreu) e para muitos desfechos que interessam à farmacologia toxicológica e à definição de doses seguras em massa. Nenhum desses efeitos admite escala de intensidade dentro do mesmo indivíduo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "E há um segundo problema, ainda mais prático: mesmo quando um efeito graduado existe, uma agência regulatória ou um médico às vezes não quer saber 'quanto' um único paciente respondeu — quer saber 'que fração de uma população inteira' atinge um desfecho definido, para poder escolher uma dose segura para milhares de pessoas diferentes, cada uma com seu próprio limiar de sensibilidade. A curva graduada, centrada num só sujeito, não responde a essa pergunta sobre variabilidade populacional."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema aqui não é medir intensidade — é contar quantos indivíduos, dentro de uma população variável, cruzam um limiar de resposta tudo-ou-nada a cada dose."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: parar de medir grau e passar a contar respondedores"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução muda o próprio desenho do experimento. Em vez de expor um único sujeito a doses crescentes e medir o quanto ele responde, expõe-se uma população inteira — dezenas ou centenas de indivíduos — a cada dose, e registra-se apenas uma coisa: cada indivíduo cruzou ou não cruzou o limiar definido (dormiu ou não, sobreviveu ou não). O eixo vertical do gráfico deixa de ser '% do efeito máximo' e passa a ser '% da população que respondeu'. Essa é a curva quantal, e ela também tem formato em S — mas por um motivo diferente do da curva graduada: em doses baixas, só os indivíduos mais sensíveis da população respondem; em doses intermediárias, a maioria; em doses altas, praticamente todos. O S aqui reflete a distribuição de limiares individuais, não a saturação de um receptor."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Curva graduada: um sujeito, um eixo de intensidade contínua. Curva quantal: uma população, um eixo de fração de respondedores a um evento tudo-ou-nada. As duas têm forma de S por razões diferentes — saturação de receptor numa, distribuição de sensibilidade individual na outra."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita: DE50 e DL50"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Assim como a curva graduada tem seu ponto médio de referência, a curva quantal também tem o dela. A **DE50** (dose efetiva 50) é a dose que faz exatamente metade de uma população atingir o efeito desejado definido como tudo-ou-nada — por exemplo, a dose de um sedativo que faz 50% dos animais de um experimento adormecerem. Repare que essa DE50 quantal não é a mesma coisa que a EC50 da curva graduada: uma descreve concentração que produz metade do efeito máximo num sujeito; a outra descreve a dose que faz metade de uma população cruzar um limiar. Os nomes parecem primos, mas medem fenômenos diferentes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A **DL50** (dose letal 50) é construída com a mesma lógica, só que aplicada ao desfecho mais grave possível: é a dose que mata metade de uma população em estudos experimentais com animais. Em humanos, por razões éticas óbvias, não se determina uma DL50 diretamente — usa-se como substituto a dose que produz um efeito tóxico grave, mas não fatal, em metade de uma população de referência (chamada TD50, dose tóxica 50)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essas duas doses de referência não existem isoladas: a razão entre elas — o quanto a DL50 é maior que a DE50 — é o primeiro esboço numérico daquilo que a farmacologia chama de margem de segurança de um fármaco. Quanto mais distante a dose letal estiver da dose eficaz, maior o espaço de manobra clínico. Esse índice já tem nome e detalhamento próprio noutro bloco desta árvore — aqui basta reconhecer que DE50 e DL50 quantais são os dois tijolos de onde ele nasce."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Você já tem o essencial: curva quantal conta respondedores numa população; DE50 e DL50 são os pontos médios dessa contagem para efeito desejado e efeito letal, respectivamente; a distância entre eles é o embrião da margem de segurança."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona: por que o efeito máximo pode vir sem ocupar todos os receptores"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há um fenômeno que a curva quantal ajuda a expor, mas que na verdade pertence à fisiologia dos receptores: em muitos tecidos, o efeito máximo de um agonista aparece muito antes de todos os receptores disponíveis estarem ocupados. Um tecido pode ter, por exemplo, 100 mil receptores disponíveis para um hormônio, mas atingir contração máxima com apenas 10% deles ocupados. Os outros 90% não são inúteis — são **receptores de reserva** (também chamados receptores sobressalentes, ou 'spare receptors')."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso acontece porque, entre a ligação do fármaco ao receptor e o efeito final observado, existe uma cascata de amplificação — cada receptor ativado dispara uma cadeia de segundos mensageiros que multiplica o sinal muitas vezes. Se a amplificação é forte o suficiente, uma fração pequena de receptores ocupados já satura essa cascata e produz o efeito máximo que a célula é capaz de gerar. Ocupar o restante dos receptores não aumentaria o efeito — a célula já está respondendo no seu teto."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A consequência prática é que, nesses sistemas com receptores de reserva, a concentração de fármaco necessária para produzir metade do efeito máximo (a EC50 da curva graduada) fica menor do que a concentração necessária para ocupar metade dos receptores (a constante de dissociação, Kd). A potência aparente do fármaco parece maior do que a simples afinidade pelo receptor sugeriria — porque parte do trabalho está sendo feito pela amplificação da cascata, não pela ocupação bruta."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso tem uma implicação clínica direta: um antagonista competitivo pode bloquear uma fração considerável dos receptores de reserva sem reduzir nada o efeito máximo observável — porque os receptores restantes, ainda livres, dão conta de saturar a cascata sozinhos. Só quando o antagonista ocupa receptores além da reserva disponível é que o efeito máximo finalmente começa a cair. Isso explica por que, na prática, certos bloqueios parciais de receptor não produzem sintoma nenhum até um ponto crítico, e depois o efeito clínico desaba de forma abrupta."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa ferramenta se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A curva quantal e seus dois números — DE50 e DL50 — são o alicerce direto do **Índice Terapêutico**, a razão DL50/DE50 que resume, num único número, a margem de segurança de um fármaco. Um fármaco com índice terapêutico estreito (a dose tóxica muito próxima da dose eficaz, como ocorre com varfarina, lítio e digoxina) exige monitorização laboratorial porque a curva quantal de efeito desejado e a de efeito tóxico praticamente se sobrepõem numa população. Um fármaco com índice terapêutico amplo tolera variação de dose sem risco proporcional."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica de S4, essa distinção já orienta decisões concretas: quando um protocolo de anestesia geral é calculado para garantir inconsciência em 95% dos pacientes de uma unidade cirúrgica, o anestesiologista está usando raciocínio quantal — pensando na população que vai passar por aquele protocolo, não em um único paciente. E quando o mesmo protocolo é ajustado individualmente na sala de cirurgia, observando sinais vitais e profundidade anestésica daquele paciente específico, o raciocínio volta a ser graduado. As duas lógicas coexistem na mesma decisão terapêutica, em momentos diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "DE50 / DL50",
+      "origem": "DE50 do latim dosis efficax (dose eficaz) + o número 50, indicando a fração populacional de 50%; DL50 do latim dosis letalis, com a mesma convenção estatística",
+      "significado": "a dose que produz o efeito (ou a morte) em exatamente metade dos indivíduos de uma população testada",
+      "explicacao": "A convenção de usar '50' não é arbitrária: o ponto médio de uma distribuição de sensibilidade é estatisticamente o mais estável e reprodutível de se estimar entre repetições experimentais — é onde a curva quantal tem sua inclinação mais íngreme, e por isso o menor erro de medida. A DL50 como método de toxicologia experimental foi formalizada por J.W. Trevan em 1927, num período em que a indústria farmacêutica nascente precisava de um padrão comparável para testar a segurança de lotes de fármacos biológicos, como a insulina e os extratos hormonais. O termo 'receptor de reserva' (spare receptor), por sua vez, é mais recente — foi cunhado em meados do século XX quando farmacologistas notaram, em experimentos com alquilação irreversível de receptores, que bloquear uma fração deles não reduzia o efeito máximo observado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o todo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎯",
+      "conteudo": "Pense numa banca de exame com cem candidatos fazendo uma prova de corte eliminatório: cada um só tem dois resultados possíveis, passou ou não passou — não existe 'meio-passou'. Se você for aumentando a dificuldade da prova aos poucos e, a cada nível, contar quantos dos cem candidatos ainda conseguem passar, você está construindo uma curva quantal: no nível fácil, quase todos passam; no nível médio, a banca se divide; no nível difícil, só os mais preparados passam. Isso não mede o quanto cada candidato sabe — mede quantos, numa população com níveis de preparo diferentes, cruzam a régua de aprovação em cada dificuldade. Agora imagine que a banca só precisa de 10 aprovados para preencher as vagas disponíveis (o efeito máximo do sistema) — a partir do momento em que esses 10 primeiros lugares já garantiram a nota de corte, aumentar ainda mais o número de candidatos aptos não muda nada no resultado final: as vagas já estão preenchidas. Isso é a lógica dos receptores de reserva — o sistema já entregou seu efeito máximo antes de esgotar toda a capacidade disponível. A analogia quebra num ponto: o 'preparo' de um candidato é fixo e não se altera durante a prova, enquanto a sensibilidade biológica de um organismo a um fármaco pode, em alguns contextos, mudar com exposição repetida (tolerância) — mas o formato da pergunta, contar quantos cruzam um limiar numa população heterogênea, é exatamente o mesmo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um fármaco não tivesse nenhum receptor de reserva — ou seja, precisasse ocupar 100% dos receptores para atingir o efeito máximo —, o que aconteceria com sua curva graduada e com a interpretação de um antagonista parcial atuando sobre ele?",
+      "resposta": "A curva graduada desse fármaco teria a EC50 praticamente coincidindo com o Kd (a constante de dissociação do receptor), porque não haveria margem de amplificação sobrando — cada receptor ocupado contaria integralmente para o efeito. E qualquer antagonista que bloqueasse uma fração dos receptores reduziria o efeito máximo de forma imediata e proporcional, sem o platô de tolerância que os receptores de reserva oferecem. Clinicamente, esse tipo de sistema seria muito mais frágil a variações — pequenas mudanças na disponibilidade de receptor (por doença, por outro fármaco concorrente) alterariam a resposta terapêutica de forma direta e sem amortecimento. Os receptores de reserva funcionam como uma rede de segurança fisiológica; sem eles, o sistema perde essa proteção."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Curva quantal, DE50/DL50 e o platô da reserva",
+      "descricao": "Esquema didático em dois painéis. Painel superior: curva quantal em S com eixo X 'dose (escala log)' e eixo Y '% da população que respondeu', mostrando duas curvas lado a lado — uma rotulada 'efeito desejado (DE50)' e outra deslocada à direita rotulada 'efeito letal (DL50)', com a distância horizontal entre as duas destacada como 'margem de segurança'. Painel inferior: gráfico de ocupação de receptor (eixo X '% de receptores ocupados', eixo Y '% do efeito máximo') mostrando que o efeito atinge o teto bem antes dos 100% de ocupação, com a área além do ponto de saturação sombreada e rotulada 'receptores de reserva'. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. Dois painéis empilhados verticalmente, separados por linha horizontal fina. Painel superior com título 'CURVA QUANTAL: DE50 vs DL50': eixo X 'Dose (escala log)', eixo Y '% da população que respondeu', duas curvas sigmoides (formato S) paralelas, a primeira em azul rotulada 'efeito desejado' com uma linha pontilhada vertical no ponto de 50% marcada 'DE50', a segunda em vermelho mais à direita rotulada 'efeito letal' com linha pontilhada vertical no ponto de 50% marcada 'DL50', e uma seta horizontal dupla entre as duas linhas pontilhadas rotulada 'margem de segurança'. Painel inferior com título 'RECEPTORES DE RESERVA': eixo X '% de receptores ocupados', eixo Y '% do efeito máximo', uma curva que sobe rapidamente e atinge o platô de 100% de efeito já perto de 10-15% de ocupação, com a região restante da curva (de 15% a 100% de ocupação) sombreada em cinza claro e rotulada 'receptores de reserva (não necessários para o efeito máximo)'. Paleta de cores consistente entre os painéis, alto contraste, sem texturas fotorrealistas, texto em português apenas nas legendas indicadas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-002",
+        "titulo": "Curva Dose-Resposta — Medir o Efeito (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume que o aluno já sabe que a curva dose-resposta se bifurca em graduada e quantal, e que a curva graduada mede intensidade num sujeito. Aqui se detalha exclusivamente o ramo quantal."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Interpretação clínica do índice terapêutico em fármacos de janela estreita (varfarina, lítio, digoxina)",
+        "mecanismo_conexao": "A razão DL50/DE50 apresentada aqui em forma bruta é o número que justifica, mais adiante, por que certos fármacos exigem monitorização laboratorial de rotina.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Antagonismo competitivo e deslocamento de curvas dose-resposta",
+        "mecanismo_conexao": "O conceito de receptores de reserva explica por que um antagonista pode bloquear parte considerável dos receptores sem reduzir o efeito máximo — um fenômeno que reaparece na farmacologia dos bloqueadores de receptor.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 7,
+        "topico": "Cálculo de dose anestésica populacional (conceito de MAC — concentração alveolar mínima)",
+        "mecanismo_conexao": "A MAC de um anestésico inalatório é, na prática, uma DE50 quantal aplicada à imobilidade cirúrgica numa população de pacientes — o mesmo raciocínio estatístico apresentado aqui.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-02-005-01",
+        "tipo_relacao": "APLICACAO_DIRETA",
+        "explicacao": "A DE50 e a DL50 quantais definidas aqui são exatamente os dois termos da razão que forma o Índice Terapêutico (IT = DL50/DE50), detalhado nesse bloco lateral sobre margem de segurança."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-002-02-fc01",
+      "pergunta": "Qual é a diferença entre a EC50 de uma curva graduada e a DE50 de uma curva quantal, mesmo os dois nomes parecendo semelhantes?",
+      "resposta": "A EC50 é a concentração que produz metade do efeito máximo dentro de um único sujeito ou tecido — descreve intensidade num organismo. A DE50 é a dose que faz metade de uma população inteira atingir um efeito de tudo-ou-nada — descreve fração de respondedores numa população heterogênea. Uma mede grau num indivíduo; a outra conta indivíduos numa população. Apesar do '50' comum, são estimativas de fenômenos estatisticamente diferentes.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "curva-quantal",
+        "de50"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-02-fc02",
+      "pergunta": "Por que a DL50 não é determinada diretamente em humanos, e o que se usa como substituto?",
+      "resposta": "Por razões éticas óbvias, não se pode expor populações humanas a doses potencialmente letais para estimar a dose que mataria metade delas. Em vez disso, a farmacologia clínica usa como substituto a TD50 (dose tóxica 50), a dose que produz um efeito tóxico grave, porém não fatal, em metade de uma população de referência. A DL50 direta permanece restrita a estudos pré-clínicos com animais.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "dl50",
+        "etica-experimental"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-02-fc03",
+      "pergunta": "Explique como a existência de receptores de reserva faz a potência aparente de um fármaco (EC50) ficar menor do que sua constante de dissociação (Kd).",
+      "resposta": "Quando existe forte amplificação entre a ligação do fármaco ao receptor e o efeito celular final, uma fração pequena de receptores ocupados já satura a cascata de sinalização e produz o efeito máximo. Isso significa que a concentração necessária para atingir metade do efeito máximo (EC50) é menor do que a concentração necessária para ocupar metade dos receptores disponíveis (Kd) — parte do 'trabalho' de produzir efeito está sendo feito pela amplificação da cascata, não apenas pela ocupação bruta do receptor. Quanto maior a reserva de receptores, maior essa diferença entre EC50 e Kd.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "farmacodinamica",
+        "receptores-de-reserva",
+        "ec50-kd"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-02-fc04",
+      "pergunta": "Um antagonista competitivo bloqueia 60% dos receptores de um tecido que tem 80% de receptores de reserva. O que se espera observar no efeito máximo desse tecido, e por quê?",
+      "resposta": "Provavelmente nenhuma redução perceptível do efeito máximo. Como o tecido tem 80% de reserva, apenas 20% dos receptores já bastam para saturar a cascata e produzir o efeito máximo. Bloquear 60% ainda deixa 40% de receptores livres — mais do que suficiente para manter o efeito no teto. Só quando o antagonista ocupar além dos 80% de reserva (ou seja, deixar menos de 20% livres) o efeito máximo começará a cair. Isso explica clinicamente por que bloqueios parciais de receptor às vezes não produzem sintoma algum até um ponto crítico, quando o efeito desaba de forma abrupta.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "farmacodinamica",
+        "receptores-de-reserva",
+        "antagonismo"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-02-fc05",
+      "pergunta": "Como a DE50 e a DL50 quantais se conectam diretamente ao conceito de Índice Terapêutico?",
+      "resposta": "O Índice Terapêutico é definido como a razão DL50/DE50: quanto maior essa razão, mais distante está a dose que causa dano grave (ou morte) da dose que produz o efeito desejado numa população, e maior a margem de segurança do fármaco. DE50 e DL50 são, portanto, os dois números brutos de onde o índice terapêutico é calculado — sem eles, a margem de segurança não teria como ser expressa num único valor comparável entre fármacos.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "indice-terapeutico",
+        "de50-dl50"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-002-02-caso01",
+      "titulo": "Ajuste de protocolo anestésico numa unidade cirúrgica de grande volume",
+      "apresentacao": "Um serviço de anestesiologia de um hospital de grande porte revisa seu protocolo padrão de indução anestésica após dois relatos, em meses diferentes, de pacientes que permaneceram conscientes durante parte de uma cirurgia (fenômeno de 'awareness intraoperatório'). A farmacêutica clínica do serviço é chamada para revisar a bula e os estudos de referência do agente utilizado. Ela encontra que a dose padronizada do protocolo corresponde exatamente à DE50 de imobilidade descrita na bula — a dose que garante ausência de resposta motora a estímulo cirúrgico em apenas 50% de uma população de referência, não em 95% ou mais.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O protocolo institucional foi calculado usando a DE50 (dose que produz o efeito desejado em metade de uma população), não uma dose de maior cobertura populacional como a DE95, por um erro de transcrição de bula ao adaptar o protocolo local."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A curva quantal de imobilidade anestésica desse fármaco: em qualquer dose escolhida, uma fração da população não atinge o efeito, por variabilidade individual de sensibilidade — metabolismo mais rápido, maior tolerância prévia, diferenças farmacogenéticas."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Ao usar a DE50 como dose-padrão, por definição, cerca de metade da população de pacientes reais receberia dose insuficiente para garantir o efeito de imobilidade — mesmo que a maioria, por acaso, respondesse adequadamente por estar próxima da mediana de sensibilidade."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Casos esporádicos, mas recorrentes, de pacientes com resposta motora ou relato de consciência parcial durante a cirurgia — justamente os pacientes que caem na metade menos sensível da distribuição populacional."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O serviço revisa o protocolo para adotar uma dose próxima da DE95 (que cobre 95% da população), aceitando maior custo e leve aumento de efeitos depressores cardiovasculares em troca de reduzir drasticamente a chance de awareness. A farmacêutica documenta a mudança citando explicitamente a diferença entre dose de referência populacional (DE50) e dose de cobertura clínica segura (DE95), e recomenda auditoria de outros protocolos do serviço quanto ao mesmo erro conceitual."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática, por que a curva quantal não é um exercício teórico: escolher qual ponto da curva usar como dose-padrão (DE50 versus DE95) é uma decisão que impacta diretamente a segurança de uma população de pacientes reais. Ilustra também que a DE50 é um ponto de referência estatístico, não uma recomendação de dose clínica — confundir os dois é o erro central do caso.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "anestesiologia",
+        "farmacia-clinica"
+      ],
+      "diagnostico_revelado": "Subdosagem sistemática por uso da DE50 (em vez de DE95) como dose-padrão de protocolo anestésico.",
+      "tratamento_resumido": "Revisão do protocolo institucional para adoção de dose de maior cobertura populacional (próxima da DE95), com documentação formal da mudança e auditoria de protocolos correlatos quanto ao mesmo erro conceitual."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-002-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
   "_lentes": [
     "molecular",
     "farmacodinamica"

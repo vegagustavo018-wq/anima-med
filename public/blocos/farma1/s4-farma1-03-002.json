@@ -10,50 +10,338 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Fármacos Colinérgicos — O Sistema da Acetilcolina (Visão Geral)",
+    "subtitulo": "Por que um único neurotransmissor rende duas farmacologias inteiras diferentes?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "sistema-colinergico",
+      "acetilcolina",
+      "receptor-muscarinico",
+      "receptor-nicotinico",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Receptores muscarínicos e nicotínicos; como intervir na via colinérgica",
-  "narrativa": [],
+  "resumo_conciso": "A acetilcolina é liberada em pontos muito diferentes do corpo — na sinapse entre neurônio e músculo esquelético, nos gânglios autonômicos, e na terminação final que inerva glândulas e vísceras — mas usa apenas uma molécula para toda essa comunicação. O problema que isso cria é que um mesmo mensageiro precisa produzir respostas completamente diferentes dependendo de onde chega: contração muscular rápida e vigorosa num lugar, ajuste lento de frequência cardíaca ou motilidade intestinal em outro. A solução não está em variar a molécula, e sim em variar o receptor que a recebe. Existem dois grandes tipos de receptor colinérgico — nicotínico, ligado a um canal iônico que abre na hora, e muscarínico, ligado a uma proteína G que modula a célula de forma mais lenta e variada — e essa divisão é o eixo estrutural de toda a farmacologia colinérgica. Cada fármaco que atua nessa via faz uma de poucas coisas possíveis: imita a acetilcolina em um dos dois receptores, bloqueia um dos dois receptores, ou impede que a acetilcolina seja destruída depois de agir. Entender essa arquitetura de duas frentes é o que permite prever, antes de decorar qualquer nome, o que cada classe de fármaco colinérgico vai fazer e onde.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior você viu que o sistema nervoso autônomo usa a acetilcolina em várias sinapses: na primeira sinapse de toda a cadeia autonômica (simpática e parassimpática), na sinapse final do ramo parassimpático, e também — fora do SNA propriamente dito — na junção entre nervo motor e músculo esquelético. É a mesma molécula em contextos anatômicos muito diferentes. Isso gera um problema de engenharia biológica: como uma única substância consegue disparar uma contração muscular vigorosa e imediata num lugar, e um ajuste lento e sutil da frequência cardíaca em outro, sem confundir as duas respostas?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, exatamente, esse sistema resolve"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se a acetilcolina produzisse sempre o mesmo tipo de efeito, o corpo teria que criar um mensageiro químico novo para cada função diferente que precisa de controle colinérgico — um para o músculo esquelético, outro para o coração, outro para o intestino, outro para os gânglios. Isso seria custoso e lento de evoluir. O problema real, então, não é 'como sinalizar', mas **como fazer o mesmo sinal químico produzir respostas distintas em tecidos distintos**, sem desperdiçar a economia de usar um único transmissor."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há ainda uma segunda exigência: algumas respostas precisam ser instantâneas e totalmente previsíveis — como a contração de um músculo esquelético, que não pode 'meio que' contrair. Outras precisam ser graduais e ajustáveis — como o intestino aumentando aos poucos sua motilidade, ou o coração desacelerando de forma proporcional ao estímulo. Um único mecanismo de resposta não serve para as duas velocidades."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o desafio é usar uma única molécula mensageira para produzir respostas rápidas e binárias em alguns tecidos, e respostas lentas e graduadas em outros — sem multiplicar o número de transmissores."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o corpo resolveu esse problema"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução não foi variar o mensageiro — foi variar o **receptor** que o recebe. Em vez de uma acetilcolina para cada função, existem duas grandes famílias de receptor para a mesma acetilcolina, cada uma com uma lógica de funcionamento completamente diferente. Uma família abre um canal iônico diretamente, produzindo resposta elétrica quase instantânea. A outra aciona uma cascata de sinalização intracelular mais lenta, que pode tanto excitar quanto inibir a célula, dependendo do tecido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa divisão em duas frentes resolve exatamente o problema anterior: onde o corpo precisa de resposta rápida e previsível (músculo esquelético, primeira sinapse dos gânglios autonômicos), usa a família de receptor ligada a canal iônico. Onde precisa de resposta lenta, graduável e variável conforme o órgão (coração, músculo liso, glândulas), usa a família de receptor ligada a proteína G. A mesma molécula, dois modos de leitura."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Duas frentes farmacológicas nascem dessa divisão: a frente **nicotínica** (receptor-canal, resposta rápida, presente em gânglios autonômicos e na junção neuromuscular) e a frente **muscarínica** (receptor acoplado a proteína G, resposta lenta e variável, presente nos órgãos-alvo do parassimpático). Todo fármaco colinérgico se posiciona em uma dessas duas frentes — nunca nas duas ao mesmo tempo com a mesma afinidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essas duas frentes são feitas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O receptor nicotínico é, estruturalmente, um canal iônico que atravessa a membrana e se abre quando a acetilcolina se liga a ele — é um receptor ionotrópico. Assim que abre, deixa entrar sódio (e, em menor grau, outros íons), despolarizando a célula de forma imediata. Está presente em dois lugares farmacologicamente centrais: nos gânglios autonômicos (tanto simpáticos quanto parassimpáticos, na primeira sinapse da cadeia) e na junção neuromuscular, onde o nervo motor encontra o músculo esquelético."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O receptor muscarínico é uma proteína acoplada a proteína G — um receptor metabotrópico. Ele não abre canal nenhum diretamente; em vez disso, dispara uma cascata intracelular que pode ativar ou inibir a célula, dependendo do subtipo de receptor e da proteína G à qual está acoplado. Está presente nos órgãos-alvo do sistema parassimpático: coração, músculo liso brônquico, trato gastrointestinal, bexiga, glândulas exócrinas, e músculos do olho (esfíncter da íris e músculo ciliar)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vale registrar, sem aprofundar aqui, que cada uma dessas duas famílias ainda se divide em subtipos — o receptor nicotínico tem uma forma predominante nos gânglios e outra na junção neuromuscular; o receptor muscarínico tem cinco subtipos conhecidos, com distribuição diferente pelos órgãos. Essa subdivisão fina é o que permite seletividade ainda maior a alguns fármacos, mas o eixo estrutural que organiza toda a farmacologia colinérgica continua sendo a divisão nicotínico/muscarínico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como intervir nessa via, em movimento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como qualquer sinapse química, a transmissão colinérgica tem pontos de intervenção previsíveis: a ligação ao receptor e a remoção do transmissor depois de agir. É nesses dois pontos que praticamente toda a farmacologia colinérgica se concentra."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "As três formas possíveis de intervir na via colinérgica",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Imitar a acetilcolina em um receptor específico",
+          "explicacao": "Uma molécula pode se ligar ao receptor muscarínico (ou, mais raramente em uso terapêutico, ao nicotínico) e ativá-lo como se fosse a própria acetilcolina — um agonista colinérgico direto, escolhendo qual das duas frentes ativar."
+        },
+        {
+          "numero": 2,
+          "titulo": "Bloquear o receptor sem ativá-lo",
+          "explicacao": "Uma molécula pode ocupar o receptor muscarínico (o alvo terapêutico mais explorado nessa frente) e impedir que a acetilcolina natural se ligue, sem disparar a cascata — um antagonista muscarínico. O bloqueio de receptores nicotínicos também existe e tem aplicações próprias, tanto nos gânglios quanto na junção neuromuscular."
+        },
+        {
+          "numero": 3,
+          "titulo": "Impedir a remoção da acetilcolina depois que ela agiu",
+          "explicacao": "Em vez de atuar no receptor, uma molécula pode bloquear a enzima acetilcolinesterase, responsável por degradar a acetilcolina na fenda sináptica. Com a enzima inibida, a acetilcolina liberada naturalmente permanece mais tempo disponível e age de forma prolongada em ambos os tipos de receptor, nicotínico e muscarínico, onde quer que estejam."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essas três estratégias — agonismo direcionado, antagonismo direcionado, e inibição da remoção do transmissor — são exatamente os três eixos que organizam os quatro grupos de fármacos que você vai estudar a seguir: os agonistas muscarínicos, os inibidores da acetilcolinesterase, os antagonistas muscarínicos, e os bloqueadores neuromusculares (que atuam sobre o receptor nicotínico da junção neuromuscular). Cada um deles detalha uma dessas frentes; aqui você só precisa reconhecer que todas nascem da mesma lógica de duas famílias de receptor."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vale uma implicação clínica direta dessa arquitetura: como o receptor muscarínico está espalhado por múltiplos órgãos (coração, brônquio, intestino, bexiga, olho, glândulas), qualquer fármaco que atue amplamente sobre ele — seja ativando, seja bloqueando — tende a produzir efeitos em vários desses órgãos ao mesmo tempo, mesmo quando a intenção terapêutica é tratar um único deles. Prever esse padrão de efeitos múltiplos, em vez de se surpreender com ele, é uma das competências centrais da farmacologia colinérgica aplicada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse sistema se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa divisão nicotínico/muscarínico é a mesma que apareceu, de forma ainda mais panorâmica, no bloco anterior sobre o SNA como um todo — aqui ela é o objeto central, não um detalhe entre outros. E ela dialoga diretamente com o ramo irmão desta disciplina, a farmacologia adrenérgica, que resolve o mesmo tipo de problema (um transmissor, múltiplos receptores) só que do lado simpático, com noradrenalina e receptores alfa/beta. Comparar as duas vias lado a lado é uma forma eficiente de fixar ambas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "muscarínico e nicotínico",
+      "origem": "muscarina, do latim musca (referindo-se ao cogumelo Amanita muscaria, de onde a substância foi isolada); nicotina, do francês nicotine, em homenagem a Jean Nicot, diplomata que introduziu o tabaco na França no século XVI",
+      "significado": "os nomes dos receptores vêm de duas substâncias vegetais/fúngicas usadas como ferramentas experimentais, não de qualquer propriedade funcional do receptor",
+      "explicacao": "No final do século XIX e início do século XX, farmacologistas descobriram que a muscarina (toxina do cogumelo Amanita muscaria) reproduzia um subconjunto dos efeitos da acetilcolina, enquanto a nicotina (do tabaco) reproduzia outro subconjunto, diferente e não sobreposto. Os nomes dos receptores vieram dessas duas substâncias-teste, não de nenhuma lógica anatômica ou funcional. É um caso comum na farmacologia: o nome registra a ferramenta de descoberta, não a função do alvo — por isso 'muscarínico' nada tem a ver com moscas ou músculos, e 'nicotínico' nada tem a ver, na origem, com dependência de tabaco."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a mesma senha, fechaduras diferentes"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense numa única senha de acesso (a acetilcolina) usada em várias portas diferentes de um prédio, mas cada porta tem um tipo de fechadura distinto. Numa porta, a fechadura é uma catraca simples que gira na hora, na mesma velocidade sempre que a senha é digitada (o receptor nicotínico, um canal iônico direto). Noutra porta, a fechadura aciona um cofre interno mais lento, que demora um pouco para abrir e cujo efeito depende de qual cofre é esse — alguns abrem uma sala, outros trancam outra (o receptor muscarínico, um GPCR com efeitos variados por órgão). A mesma senha, em portas de tipos diferentes, produz aberturas com velocidade e natureza diferentes. A analogia quebra num ponto: senhas reais não mudam de identidade; a acetilcolina continua sendo a mesma molécula em todas as portas — o que muda é exclusivamente o mecanismo da fechadura (o receptor) que a recebe, não a senha em si."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se existisse apenas um tipo de receptor colinérgico no corpo todo, em vez de dois, o que se perderia?",
+      "resposta": "Perder-se-ia a possibilidade de intervir seletivamente. Hoje, um fármaco pode ser desenhado para agir só nos receptores muscarínicos (afetando coração, brônquios, intestino, bexiga, olho, glândulas) sem tocar na junção neuromuscular, ou pode ser desenhado para agir só nos receptores nicotínicos da junção neuromuscular (produzindo relaxamento muscular para cirurgia) sem alterar a frequência cardíaca ou a motilidade intestinal. Com um único tipo de receptor, qualquer fármaco colinérgico ativaria ou bloquearia tudo ao mesmo tempo — contração muscular e frequência cardíaca e secreção glandular juntas, sem separação possível. A existência de duas famílias de receptor, com mecanismos moleculares distintos (canal iônico versus proteína G), é o que torna essa via farmacologicamente tratável em partes, e não como um bloco único e indivisível."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas frentes do sistema colinérgico",
+      "descricao": "Esquema didático mostrando uma única molécula de acetilcolina ao centro, com duas setas divergentes: à esquerda, para um receptor nicotínico desenhado como canal iônico atravessando a membrana, com íons sódio entrando e rótulos 'gânglio autonômico' e 'junção neuromuscular' indicando onde esse receptor predomina, e o efeito rotulado 'resposta rápida, elétrica'; à direita, para um receptor muscarínico desenhado como proteína serpentina de sete hélices acoplada a uma proteína G, com uma cascata intracelular simplificada, e rótulos dos órgãos-alvo (coração, brônquio, intestino, bexiga, olho, glândula), com o efeito rotulado 'resposta lenta, graduável'. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. Ao centro, uma molécula estilizada rotulada 'acetilcolina' com duas setas grandes divergindo para esquerda e direita. À esquerda: um receptor de membrana desenhado como canal iônico com poro central aberto, pequenos círculos representando íons sódio atravessando, rótulo 'receptor NICOTÍNICO' acima e, abaixo, dois ícones pequenos rotulados 'gânglio autonômico' e 'junção neuromuscular'; efeito rotulado 'resposta rápida' com um símbolo de raio. À direita: um receptor serpentino de sete hélices transmembrana acoplado a uma proteína G trimérica esquematizada, com uma seta curva indicando cascata intracelular; rótulo 'receptor MUSCARÍNICO' acima e, abaixo, ícones pequenos de coração, pulmão/brônquio, intestino, bexiga, olho e glândula; efeito rotulado 'resposta lenta e graduável' com um símbolo de onda suave. Cores suaves, alto contraste, tipografia em português, sem elementos fotorrealistas. Sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-03-000",
+        "titulo": "Farmacologia do Sistema Nervoso Autônomo — Visão Geral",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A distinção entre receptores nicotínicos e muscarínicos, aqui aprofundada, foi introduzida ali de forma panorâmica dentro do quadro geral do SNA."
+      },
+      {
+        "bloco_id": "s4-farma1-03-001",
+        "titulo": "Neurotransmissão Autonômica: Síntese, Liberação e Término",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "complementar",
+        "explicacao": "Entender como a acetilcolina é sintetizada, liberada e removida da fenda sináptica é o que dá sentido mecanístico a por que inibir a acetilcolinesterase prolonga o efeito colinérgico."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-03-002-01",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Agonistas muscarínicos",
+        "mecanismo_conexao": "Detalha a estratégia de imitar diretamente a acetilcolina no receptor muscarínico, apresentada aqui apenas como uma das três formas gerais de intervenção.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-03-002-02",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Inibidores da acetilcolinesterase",
+        "mecanismo_conexao": "Detalha a estratégia de prolongar a ação da acetilcolina natural bloqueando sua degradação enzimática, apresentada aqui de forma geral.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-03-002-03",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Antagonistas muscarínicos",
+        "mecanismo_conexao": "Detalha a estratégia de bloquear o receptor muscarínico sem ativá-lo, cujos efeitos multiorgânicos previsíveis foram antecipados nesta visão geral.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-03-002-04",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Bloqueadores neuromusculares",
+        "mecanismo_conexao": "Detalha a estratégia de bloquear especificamente o receptor nicotínico da junção neuromuscular, distinguindo-o do receptor nicotínico ganglionar apresentado aqui.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-03-002-fc01",
+      "pergunta": "Por que o corpo usa dois tipos de receptor diferentes (nicotínico e muscarínico) para a mesma molécula de acetilcolina, em vez de um único tipo de receptor?",
+      "resposta": "Porque os tecidos que recebem acetilcolina precisam de respostas muito diferentes em velocidade e natureza. O receptor nicotínico é um canal iônico que abre instantaneamente, produzindo resposta elétrica rápida e binária — necessária no músculo esquelético e nos gânglios autonômicos. O receptor muscarínico é acoplado a proteína G e dispara uma cascata intracelular mais lenta e graduável — necessária em órgãos como coração, intestino e glândulas, que precisam de ajuste fino, não de um interruptor. Ter dois tipos de receptor permite que a mesma molécula sirva a dois regimes de resposta opostos.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["sna", "colinergico", "receptores"]
+    },
+    {
+      "card_id": "s4-farma1-03-002-fc02",
+      "pergunta": "Descreva as três formas gerais pelas quais um fármaco pode intervir na via colinérgica, sem citar classes específicas de medicamento.",
+      "resposta": "1) Imitar a acetilcolina diretamente em um dos dois receptores (agonismo direcionado a nicotínico ou muscarínico). 2) Ocupar o receptor sem ativá-lo, impedindo a ação da acetilcolina natural (antagonismo direcionado a nicotínico ou muscarínico). 3) Impedir a degradação da acetilcolina pela enzima acetilcolinesterase, prolongando o efeito do transmissor liberado naturalmente em ambos os tipos de receptor.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["colinergico", "farmacodinamica", "mecanismo-de-acao"]
+    },
+    {
+      "card_id": "s4-farma1-03-002-fc03",
+      "pergunta": "Se um fármaco bloqueasse amplamente os receptores muscarínicos do corpo todo, por que seria esperado (e não surpreendente) que ele afetasse simultaneamente coração, intestino, bexiga e olho?",
+      "resposta": "Porque o receptor muscarínico está distribuído por todos esses órgãos, que são justamente os alvos do ramo parassimpático do SNA. Um bloqueio pouco seletivo desse receptor não escolhe um órgão — atua em todos os locais onde o receptor existe. Esse padrão de efeitos múltiplos é a consequência direta e previsível da distribuição anatômica do receptor, não um efeito colateral aleatório.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["receptor-muscarinico", "efeitos-multiorgao", "farmacodinamica"]
+    },
+    {
+      "card_id": "s4-farma1-03-002-fc04",
+      "pergunta": "De onde vêm os nomes 'nicotínico' e 'muscarínico', e por que isso é um lembrete importante sobre como muitos receptores são nomeados em farmacologia?",
+      "resposta": "'Nicotínico' vem da nicotina (do tabaco) e 'muscarínico' vem da muscarina (toxina do cogumelo Amanita muscaria) — duas substâncias que, historicamente, reproduziam subconjuntos distintos e não sobrepostos dos efeitos da acetilcolina, permitindo aos farmacologistas do final do século XIX distinguir os dois tipos de receptor antes mesmo de entender sua estrutura molecular. Isso lembra que muitos nomes de receptores em farmacologia vêm da ferramenta experimental usada para descobri-los, não de uma lógica funcional ou anatômica — por isso os nomes não devem ser tomados como descrições do que o receptor faz.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["etimologia", "receptores", "historia-da-farmacologia"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-03-002-caso01",
+      "titulo": "Mulher jovem com pálpebras caídas que pioram ao longo do dia",
+      "apresentacao": "Mulher de 27 anos procura atendimento por 'cansaço nos olhos' e dificuldade progressiva para manter as pálpebras abertas, pior no final da tarde e após ler por longos períodos. Relata também que, ao mastigar refeições mais longas, sente a mandíbula 'cansar' antes de terminar de comer. Ao exame: ptose palpebral bilateral que se acentua ao sustentar o olhar para cima por um minuto, força de preensão manual que enfraquece após contrações repetidas, sem alterações sensitivas. Reflexos profundos preservados. Solicitado exame de eletroneuromiografia com estimulação repetitiva, que mostra decremento progressivo da amplitude do potencial de ação muscular.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Produção de autoanticorpos que atacam o receptor nicotínico de acetilcolina na membrana pós-sináptica da junção neuromuscular — uma doença autoimune, não uma falta de produção ou liberação de acetilcolina."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O receptor nicotínico pós-sináptico da junção neuromuscular esquelética é progressivamente destruído e reduzido em número pelos autoanticorpos, que também aceleram sua degradação e bloqueiam parte dos sítios de ligação da acetilcolina."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A acetilcolina continua sendo sintetizada, armazenada e liberada normalmente pelo neurônio motor, mas encontra poucos receptores funcionais do lado pós-sináptico. Com contrações musculares repetidas, a quantidade de acetilcolina liberada a cada estímulo naturalmente diminui um pouco (fadiga sináptica fisiológica), e como já há poucos receptores disponíveis, esse pequeno declínio já é suficiente para não gerar potencial de ação muscular suficiente."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Fraqueza muscular flutuante que piora com o uso repetido e melhora com o repouso — tipicamente ptose palpebral e diplopia (musculatura ocular, a mais sensível), fadiga da mastigação e, em casos mais graves, fraqueza de membros e da musculatura respiratória."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento, a doença pode progredir para crise miastênica com insuficiência respiratória. O tratamento de primeira linha (piridostigmina, um inibidor da acetilcolinesterase) não repõe os receptores perdidos, mas prolonga a permanência da acetilcolina na fenda sináptica, aumentando a chance de que ela encontre e ative os poucos receptores nicotínicos ainda funcionais — controlando os sintomas sem curar a causa autoimune, que exige tratamento imunossupressor à parte."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra, de forma direta, dois pontos centrais da visão geral: primeiro, que o receptor nicotínico (não o muscarínico) é o alvo comprometido na junção neuromuscular, reforçando a distinção estrutural entre as duas frentes colinérgicas apresentada no bloco; segundo, que uma das três estratégias farmacológicas descritas — impedir a remoção da acetilcolina inibindo a acetilcolinesterase — é exatamente o mecanismo de ação do tratamento sintomático de primeira linha desta doença, demonstrando que aumentar a disponibilidade do transmissor pode compensar parcialmente um déficit no lado do receptor.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "neurologia",
+        "imunologia",
+        "clinica_medica"
+      ],
+      "diagnostico_revelado": "Miastenia gravis (doença autoimune do receptor nicotínico pós-sináptico da junção neuromuscular).",
+      "tratamento_resumido": "Piridostigmina (inibidor da acetilcolinesterase) para controle sintomático imediato; imunossupressão (corticosteroides, azatioprina ou outros agentes poupadores) para tratar a causa autoimune de base; avaliação de timectomia em casos selecionados, já que a doença está frequentemente associada a alterações do timo; plasmaférese ou imunoglobulina intravenosa reservadas para crises graves com risco respiratório."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-03-002-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Capítulo sobre agentes atuantes na junção neuromuscular e gânglios autonômicos; capítulo sobre farmacologia colinérgica.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Capítulo 7 — Cholinoceptor-Activating & Cholinesterase-Inhibiting Drugs; Capítulo 8 — Cholinoceptor-Blocking Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang & Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 13 — Chemical Mediators and the Autonomic Nervous System.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

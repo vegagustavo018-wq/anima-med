@@ -1,35 +1,191 @@
 {
   "resumo_id": "s6-neuro-00-002",
-  "no_pai_id": "s6-neuro-00-001",
+  "no_pai_id": "s6-neuro-00-000",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Neurônio Motor Superior vs Inferior — A Grande Dicotomia",
+    "subtitulo": "Como o padrão de fraqueza, tônus e reflexos distingue lesões centrais de periféricas?",
     "semestre": 6,
-    "disciplina": "Neurologia",
-    "profundidade_arvore": 3,
-    "importancia": 3,
+    "disciplina": "neuro",
+    "sistema_corporal": "nervoso",
+    "regiao_anatomica": "trato-motor",
+    "profundidade_arvore": 2,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "neuro",
-      "esqueleto"
+      "NMS",
+      "NMI",
+      "espasticidade",
+      "flacidez",
+      "Babinski",
+      "hiperreflexia",
+      "arreflexia",
+      "trato-corticoespinhal",
+      "corno-anterior",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "O contraste que organiza toda semiologia motora: padrão central vs periférico",
-  "narrativa": [],
+  "resumo_conciso": "O NMS vai do córtex motor ao corno anterior da medula; o NMI vai do corno anterior ao músculo. Lesão do NMS → espasticidade, hiperreflexia, Babinski, fraqueza em padrão piramidal. Lesão do NMI → flacidez, hipo/arreflexia, atrofia, fasciculações. Quando ambos são acometidos (ex: ELA), os dois padrões coexistem — e isso é uma chave diagnóstica importantíssima.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O trato motor tem dois neurônios em série. O Neurônio Motor Superior (NMS) origina-se no giro pré-central (área 4 de Brodmann), desce pela coroa radiada, passa pela cápsula interna (joelho e braço posterior), percorre o pedúnculo cerebral, a ponte e o bulbo, onde a maioria cruza na decussação das pirâmides, e faz sinapse no corno anterior da medula. O Neurônio Motor Inferior (NMI) origina-se no corno anterior (ou no núcleo do nervo craniano no tronco), percorre a raiz, o plexo e o nervo periférico até a junção neuromuscular e o músculo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que NMS lesado causa espasticidade?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O trato corticoespinhal tem função tanto excitatória (ativar o músculo voluntariamente) quanto inibitória (inibir o arco reflexo segmentar pela via reticuloespinhal e rubroespinhal). Quando o NMS é lesado, perde-se a inibição sobre o arco reflexo miotático segmentar → hiperatividade do fuso muscular → espasticidade (resistência velocidade-dependente ao estiramento passivo) e hiper-reflexia. O sinal de Babinski (extensão do hálux ao estímulo da planta lateral) é o mais fidedigno sinal de disfunção do NMS — representa liberação do reflexo plantar primitivo normalmente inibido pelo trato corticoespinhal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que NMI lesado causa flacidez e atrofia?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O NMI é a 'via final comum' — sem ele, o músculo não recebe nenhum sinal, nem voluntário nem reflexo. O resultado é flacidez (tônus dependente de arco reflexo intacto → ausente) e arreflexia. A denervação ativa do músculo provoca fasciculações (descargas espontâneas de unidades motoras denervadas) visíveis sob a pele. Em semanas a meses, a atrofia por denervação torna-se evidente — muito mais precoce e intensa que a atrofia por desuso do NMS."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Comparação: NMS vs NMI",
+      "colunas": [
+        "Característica",
+        "NMS",
+        "NMI"
+      ],
+      "linhas": [
+        {
+          "Característica": "Tônus muscular",
+          "NMS": "Espástico (velocidade-dependente)",
+          "NMI": "Flácido"
+        },
+        {
+          "Característica": "Reflexos osteotendinosos",
+          "NMS": "Hiperativos",
+          "NMI": "Hipo ou abolidos"
+        },
+        {
+          "Característica": "Sinal de Babinski",
+          "NMS": "Presente",
+          "NMI": "Ausente"
+        },
+        {
+          "Característica": "Fasciculações",
+          "NMS": "Ausentes",
+          "NMI": "Presentes"
+        },
+        {
+          "Característica": "Atrofia",
+          "NMS": "Mínima (desuso tardio)",
+          "NMI": "Precoce e intensa (denervação)"
+        },
+        {
+          "Característica": "Fraqueza — padrão",
+          "NMS": "Piramidal: flexores MS > extensores; extensores MI > flexores",
+          "NMI": "Miotômico: segue o nervo ou raiz acometida"
+        },
+        {
+          "Característica": "Exemplos clínicos",
+          "NMS": "AVC, EM, tumor, TCE",
+          "NMI": "SGB, radiculopatia, poliomielite, lesão de nervo periférico"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Quando NMS + NMI coexistem — ELA"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A Esclerose Lateral Amiotrófica (ELA) é o protótipo da doença que afeta simultaneamente NMS e NMI. O paciente apresenta fraqueza com atrofia (NMI) e Babinski + hiper-reflexia (NMS) nos mesmos membros — combinação que praticamente não existe em outra doença. Esta coexistência paradoxal é a assinatura diagnóstica da ELA."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚦",
+      "conteudo": "Pense no trato motor como uma rodovia federal com dois trechos. O NMS é a rodovia federal (federal = cérebro/medula): quando há um acidente nela, o trânsito estadual (NMI) fica descontrolado e caótico — espasticidade, hiper-reflexia. O NMI é a estrada estadual que liga a rodovia à fábrica (músculo): quando ela é bloqueada, a fábrica para completamente — flacidez, arreflexia, atrofia."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-neuro-00-001",
+        "titulo": "O Método Neurológico",
+        "disciplina": "neuro",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Contexto geral do raciocínio topográfico."
+      }
+    ],
+    "futuras": [
+      {
+        "bloco_id": "s6-neuro-00-003",
+        "titulo": "Níveis do Neuroeixo",
+        "disciplina": "neuro",
+        "semestre": 6,
+        "relevancia": "continuacao_direta",
+        "explicacao": "Aplica NMS/NMI em cada nível anatômico."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-neuro-00-002-fc01",
+      "pergunta": "Por que lesão do NMS causa espasticidade e hiperreflexia em vez de fraqueza flácida?",
+      "resposta": "O NMS inibe ativamente o arco reflexo segmentar (via reticuloespinhal e rubroespinhal). Ao ser lesado, perde-se essa inibição → o arco reflexo miotático fica hiperativo → espasticidade (resistência ao estiramento passivo velocidade-dependente) e hiper-reflexia. A fraqueza existe, mas é sobreposta pela espasticidade.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "tags": [
+        "NMS",
+        "espasticidade",
+        "arco-reflexo",
+        "reticuloespinhal",
+        "inibicao"
+      ]
+    },
+    {
+      "card_id": "s6-neuro-00-002-fc02",
+      "pergunta": "Qual é o significado fisiopatológico do sinal de Babinski e por que é indicativo de lesão do NMS?",
+      "resposta": "O Babinski (extensão do hálux ao estímulo plantar lateral) representa a liberação do reflexo plantar primitivo normalmente suprimido pelo trato corticoespinhal. Lactentes têm Babinski normal porque o trato corticoespinhal ainda não está mielinizado. Em adultos, sua presença indica perda da inibição cortical → NMS disfuncional.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "Babinski",
+        "NMS",
+        "reflexo-plantar",
+        "mielinizacao",
+        "criancas"
+      ]
+    },
+    {
+      "card_id": "s6-neuro-00-002-fc03",
+      "pergunta": "Por que a ELA é diagnosticamente única ao apresentar sinais de NMS e NMI simultaneamente no mesmo segmento?",
+      "resposta": "A maioria das doenças afeta NMS ou NMI, nunca ambos no mesmo nível. A ELA degenera seletivamente ambos os neurônios motores. O resultado é paradoxal: atrofia e fasciculações (NMI ativo) com Babinski e hiper-reflexia (NMS ativo) no mesmo membro. Essa combinação é praticamente patognomônica de ELA.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "tags": [
+        "ELA",
+        "NMS",
+        "NMI",
+        "coexistencia",
+        "patognomonico"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
     "imagens": [],
@@ -37,19 +193,26 @@
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity",
+    "data_geracao": "2026-07-07",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Ropper AH, Samuels MA, Klein JP. Adams e Victor — Princípios de Neurologia. 11ª ed. McGraw-Hill; 2019. Cap. 3 — Motor Paralysis.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-07"
+    }
+  ],
   "_lentes": [
-    "mecanismo/fisiopatologia",
-    "apresentação clínica",
-    "correlação ciências básicas"
+    "mecanismo",
+    "anatomia_funcional",
+    "diagnostico_diferencial"
   ]
 }

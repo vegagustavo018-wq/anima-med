@@ -8,51 +8,533 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Princípios do Sistema Endócrino",
+    "subtitulo": "Por que o mesmo hormônio pode demorar segundos ou horas para agir, dependendo de onde bate?",
     "semestre": 8,
     "disciplina": "Medicina Interna II",
+    "sistema_corporal": "endócrino",
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 4,
+    "tempo_leitura_minutos": 17,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "mi2",
-      "esqueleto"
+      "endocrinologia",
+      "receptor-hormonal",
+      "transducao-de-sinal",
+      "retroalimentacao-negativa",
+      "eixo-hipotalamo-hipofise",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Eixos hormonais, feedback, hormônio-receptor; base para todas as endocrinopatias",
-  "narrativa": [],
+  "resumo_conciso": "O bloco de Endocrinologia Clínica já estabeleceu que todo eixo hormonal segue a mesma arquitetura — comando, executora, retroalimentação — e que toda falha se reduz a excesso, falta ou resistência. Este bloco abre essa arquitetura e olha para dentro dela: por que existem duas famílias completamente diferentes de receptor hormonal, uma dentro da célula e outra na sua superfície, e por que essa escolha não é acidente, mas consequência direta da natureza química do hormônio que cada uma reconhece. Hormônios lipofílicos — esteroides e tireoidianos — atravessam a membrana livremente e encontram seu receptor dentro do núcleo ou do citoplasma, onde a molécula ativada se torna, ela mesma, um fator de transcrição: a resposta é lenta (horas) porque exige sintetizar proteína nova, mas é duradoura. Hormônios hidrofílicos — peptídicos e catecolaminas — não atravessam a membrana e precisam de um receptor na superfície celular que dispare uma cascata de segundo mensageiro (proteína G, AMPc, tirosina-quinase): a resposta é rápida (segundos a minutos) porque apenas modifica proteínas que já existem, mas se desfaz assim que o sinal para. O bloco também detalha, com precisão que muitas vezes falta ao estudante, como funciona a retroalimentação negativa nos eixos de três níveis: o hormônio periférico frea tanto o hipotálamo quanto a hipófise, simultaneamente e em pontos diferentes da cascata — não apenas um dos dois —, e é essa dupla frenagem que permite distinguir, no laboratório, se uma falha está na glândula periférica, na hipófise ou no receptor. Sem esse mecanismo molecular, o filtro clínico excesso/falta/resistência do bloco-pai seria uma regra decorada; com ele, se torna dedução.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em duas cartas que precisam entregar a mesma ordem urgente a um mesmo prédio, mas usam meios de entrega completamente diferentes. A primeira carta é pequena o bastante para passar por baixo da porta — ela entra direto no escritório do diretor, sobe a mesa dele, e o diretor em pessoa lê e assina uma nova instrução, que leva um tempo para ser redigida e distribuída. A segunda carta é grande demais para passar pela fresta; ela precisa ser entregue a um porteiro na entrada do prédio, que lê o conteúdo, aperta um botão de alarme, e esse alarme dispara instantaneamente uma cadeia de sinos em cada andar — mais lento para redigir uma resposta nova, mas muitíssimo mais rápido para provocar uma reação imediata."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O corpo humano enfrenta exatamente esse problema com os hormônios. O bloco anterior mostrou que todo hormônio é um mensageiro lançado no sangue, lido apenas por quem tem o receptor certo. Mas ficou uma pergunta em aberto: esse receptor está sempre no mesmo lugar da célula? E a resposta que a evolução deu abre uma bifurcação inteira — porque a resposta depende de uma propriedade físico-química muito simples do próprio hormônio: ele consegue, ou não, atravessar uma membrana feita de lipídios?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a célula precisou construir dois sistemas de recepção, e não um só?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A membrana plasmática é, por natureza, uma barreira lipídica. Ela deixa passar livremente moléculas pequenas e gordurosas, mas barra moléculas grandes, carregadas ou muito polares — a mesma lógica de barreira seletiva que qualquer membrana celular do corpo usa. O problema é que os hormônios do corpo humano não são quimicamente uniformes: alguns (esteroides como cortisol e aldosterona, e os hormônios tireoidianos) são pequenos e lipossolúveis; outros (praticamente todos os hormônios peptídicos, como insulina, GH, PTH, ACTH, e as catecolaminas como adrenalina) são grandes, hidrossolúveis ou eletricamente carregados."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se a célula tivesse construído um único tipo de receptor, colocado do lado de dentro, ele seria inútil para metade dos hormônios do corpo — porque essas moléculas hidrofílicas jamais chegariam lá dentro para encontrá-lo. E se o receptor estivesse sempre na superfície, o hormônio lipossolúvel o encontraria, mas desperdiçaria sua capacidade natural de atravessar a membrana livremente e agir diretamente sobre a maquinaria genética. A célula precisava de duas soluções, cada uma otimizada para o tipo de mensageiro que de fato chega até ela."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, tente prever: se um hormônio consegue atravessar a membrana livremente, onde faz mais sentido colocar o receptor dele — flutuando dentro da célula, ou grudado na superfície? E por quê?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve — um receptor que mora dentro, outro que fica na porta"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para os hormônios lipossolúveis, a solução foi colocar o receptor dentro da própria célula — no citoplasma ou já hospedado no núcleo. O hormônio atravessa a membrana sem ajuda de nenhum transportador, encontra seu receptor lá dentro, e o complexo hormônio-receptor formado passa a se comportar como uma chave que se encaixa diretamente na fechadura do DNA: ele se liga a sequências regulatórias específicas dos genes e muda, para mais ou para menos, a velocidade com que certos genes são transcritos em RNA mensageiro. A célula não precisa de nenhum intermediário porque o próprio hormônio, uma vez dentro, já é capaz de tocar o alvo final — o gene."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para os hormônios hidrossolúveis, que não atravessam a membrana, a solução foi diferente: o receptor foi colocado na própria superfície da célula, com uma porção voltada para fora (que reconhece o hormônio) e uma porção voltada para dentro (que precisa fazer algo acontecer sem que o hormônio jamais entre). Esse receptor de membrana funciona como um transdutor: ele converte o encontro externo com o hormônio em um sinal químico interno, sem que nenhuma molécula precise atravessar a barreira lipídica. Esse sinal interno é o que chamamos de segundo mensageiro — porque o hormônio é o primeiro mensageiro, e o que ele produz dentro da célula, sem nunca entrar, é o segundo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A regra que organiza toda a endocrinologia molecular: hormônios lipossolúveis (esteroides e tireoidianos) usam receptores intracelulares e agem sobre a transcrição gênica — resposta lenta e duradoura. Hormônios hidrossolúveis (peptídicos e catecolaminas) usam receptores de membrana e agem por segundo mensageiro sobre proteínas já existentes — resposta rápida e transitória. A classe química do hormônio determina, sozinha, qual dessas duas máquinas será usada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito cada um desses dois sistemas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os receptores intracelulares pertencem a uma única grande família de proteínas — a superfamília dos receptores nucleares — que compartilham a mesma arquitetura modular: um domínio que reconhece e se liga ao hormônio, um domínio que se liga ao DNA (tipicamente com dedos de zinco, uma estrutura que agarra a dupla-hélice em pontos específicos) e um domínio que recruta outras proteínas para ativar ou silenciar a transcrição. O receptor de glicocorticoide, o de mineralocorticoide, o de hormônio tireoidiano e os receptores de esteroides sexuais são, todos, variações desse mesmo desenho. Por que essa arquitetura, e não outra? Porque, uma vez que o hormônio já está dentro da célula, o problema deixou de ser 'como atravessar a membrana' e passou a ser 'como reconhecer o gene certo entre milhares' — e uma proteína com um bolso específico para o hormônio, ligado a uma garra específica para o DNA, resolve exatamente esse problema de reconhecimento duplo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os receptores de membrana, em contraste, não formam uma família única — formam pelo menos três famílias distintas, com mecanismos de transdução diferentes, porque o problema de 'converter um encontro externo em ação interna' pode ser resolvido de mais de um jeito. A maior parte dos hormônios peptídicos (glucagon, PTH, ACTH, TSH, LH, FSH) usa receptores acoplados à proteína G: sete hélices atravessando a membrana, ligadas por dentro a uma proteína G, que por sua vez ativa uma enzima (mais comumente a adenilil-ciclase) que converte ATP em AMP cíclico — o segundo mensageiro clássico. A insulina usa uma família diferente, os receptores com atividade enzimática intrínseca: a própria porção intracelular do receptor é uma tirosina-quinase, que se autofosforila ao ser ativada e desencadeia uma cascata de fosforilações em cadeia. O GH, apesar de também sinalizar por fosforilação em tirosina, usa uma terceira família ainda — os receptores de citocina: o próprio receptor não tem atividade enzimática nenhuma, mas sua dimerização, induzida pela ligação do hormônio, recruta e ativa uma tirosina-quinase associada e separada (uma proteína da família JAK), que fosforila o receptor e ativa fatores de transcrição citoplasmáticos (as proteínas STAT) que migram diretamente ao núcleo — uma via conhecida como JAK-STAT. E as catecolaminas (adrenalina e noradrenalina) usam também receptores acoplados à proteína G, mas com subtipos (alfa e beta) que ativam vias de segundo mensageiro diferentes — o que explica por que a mesma adrenalina pode contrair um vaso sanguíneo (via receptor alfa) e relaxar a musculatura brônquica (via receptor beta) ao mesmo tempo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que essa diversidade, se todos são receptores de membrana? Porque a superfície celular precisa responder a estímulos com urgências e finalidades diferentes: uma cascata de proteína G e AMPc amplifica um único hormônio em milhares de moléculas de segundo mensageiro, ideal para respostas metabólicas amplas e relativamente rápidas. Já as cascatas de fosforilação em tirosina são mais lentas para amplificar, mas permitem construir vias de sinalização ramificadas e duradouras, mais adequadas ao controle de crescimento e diferenciação celular — e aqui vale reforçar que insulina e GH chegam a esse resultado por rotas moleculares diferentes: a insulina fosforila diretamente com a quinase que já é parte do próprio receptor, enquanto o GH depende de recrutar uma quinase à parte (a JAK) e, por meio dela, ativa fatores de transcrição (as STAT) que migram para o núcleo — uma via com um passo a mais e um desfecho diferente da insulina, não uma variação menor da mesma máquina."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em cascata — dois exemplos lado a lado"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Cascata do cortisol (receptor intracelular)",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Travessia livre da membrana",
+          "explicacao": "O cortisol, lipossolúvel, atravessa a membrana plasmática de qualquer célula-alvo sem necessidade de transportador ou canal."
+        },
+        {
+          "numero": 2,
+          "titulo": "Encontro com o receptor no citoplasma",
+          "explicacao": "Dentro da célula, o cortisol se liga ao receptor de glicocorticoide, que em repouso fica associado a proteínas chaperonas (como a HSP90) que o mantêm inativo e o impedem de entrar no núcleo prematuramente."
+        },
+        {
+          "numero": 3,
+          "titulo": "Liberação da chaperona e translocação nuclear",
+          "explicacao": "A ligação do cortisol muda a forma do receptor, libera a chaperona e expõe um sinal que direciona o complexo hormônio-receptor para dentro do núcleo."
+        },
+        {
+          "numero": 4,
+          "titulo": "Ligação ao DNA e transcrição",
+          "explicacao": "Já no núcleo, o complexo se liga a sequências regulatórias específicas (elementos responsivos a glicocorticoide) e recruta a maquinaria de transcrição, aumentando ou reduzindo a produção de RNA mensageiro de genes específicos."
+        },
+        {
+          "numero": 5,
+          "titulo": "Síntese de proteína nova e efeito tardio",
+          "explicacao": "Só depois que o RNA mensageiro é traduzido em proteína nova é que o efeito biológico aparece — por isso a ação genômica dos glicocorticoides demora horas para se manifestar, mas, uma vez estabelecida, persiste enquanto a proteína nova durar."
+        }
+      ]
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Cascata do glucagon (receptor de membrana acoplado à proteína G)",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Encontro na superfície",
+          "explicacao": "O glucagon, hidrofílico, não entra na célula hepática — ele se liga à porção extracelular do seu receptor específico, ancorado na membrana do hepatócito."
+        },
+        {
+          "numero": 2,
+          "titulo": "Mudança conformacional e ativação da proteína G",
+          "explicacao": "A ligação muda a forma do receptor do lado de dentro da membrana, ativando uma proteína G associada, que troca GDP por GTP e se dissocia em subunidades ativas."
+        },
+        {
+          "numero": 3,
+          "titulo": "Ativação da adenilil-ciclase",
+          "explicacao": "A subunidade ativada da proteína G estimula a enzima adenilil-ciclase, que converte ATP em AMP cíclico dentro do citoplasma — o segundo mensageiro que carrega a informação para dentro da célula sem que o glucagon jamais tenha entrado."
+        },
+        {
+          "numero": 4,
+          "titulo": "Amplificação em cascata de quinases",
+          "explicacao": "O AMPc ativa a proteinoquinase A, que fosforila (ativa ou inativa) diversas enzimas já existentes no citoplasma — entre elas as que controlam a quebra do glicogênio hepático em glicose."
+        },
+        {
+          "numero": 5,
+          "titulo": "Efeito imediato sobre proteínas prontas",
+          "explicacao": "Como nenhuma proteína nova precisa ser sintetizada — apenas proteínas já existentes são ativadas por fosforilação — a glicose começa a ser liberada na circulação em minutos, e o efeito desaparece quase tão rápido quanto surgiu assim que o glucagon se desliga do receptor."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As duas cascatas resolvem o mesmo problema geral — fazer um sinal externo virar uma resposta celular — mas com velocidades e durações opostas, porque a natureza química do mensageiro impôs, desde o início, qual caminho estava disponível."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Retroalimentação em três níveis — precisão que faz diferença clínica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior descreveu a retroalimentação negativa como um termostato: o produto final avisa o comando superior para reduzir o estímulo. Mas nos eixos de três níveis — hipotálamo, hipófise, glândula periférica, como no eixo tireoidiano e no adrenal — essa descrição precisa de uma precisão adicional que muitos estudantes constroem de forma incompleta: o hormônio da glândula periférica não retroalimenta apenas a hipófise, nem apenas o hipotálamo. Ele retroalimenta **os dois, ao mesmo tempo, em pontos distintos da cascata**."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No hipotálamo, o hormônio periférico (por exemplo, o cortisol) reduz a liberação do hormônio liberador hipotalâmico (o CRH, no caso do eixo adrenal), fechando a torneira desde a origem do comando. Na hipófise, esse mesmo cortisol atua de forma independente, reduzindo tanto a sensibilidade da hipófise ao CRH que ainda chega quanto a própria síntese e liberação do hormônio hipofisário (o ACTH). São dois freios aplicados em dois pontos diferentes da mesma cadeia, não um freio único agindo por procuração. Essa dupla ação é o que torna o sistema resiliente: mesmo que um dos dois níveis fique parcialmente insensível ao sinal de retroalimentação, o outro ainda consegue conter o eixo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Em qualquer eixo de três níveis, o hormônio periférico retroalimenta simultaneamente o hipotálamo (reduzindo o hormônio liberador) e a hipófise (reduzindo o hormônio trófico) — nunca apenas um dos dois. É essa dupla frenagem, e não uma frenagem única, que o clínico interroga ao pedir dosagens em cascata para localizar onde um eixo está falhando."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa precisão evita um erro de raciocínio comum: imaginar o eixo como uma escada de dois degraus (hipotálamo manda na hipófise, que manda na periferia, ponto final) em vez de um circuito com múltiplas alças de retorno. Sem essa segunda alça — a que liga a periferia diretamente ao hipotálamo — a hipófise, isolada, teria que dar conta de frear o eixo inteiro sozinha; com as duas alças atuando em paralelo, o sistema ganha uma redundância que o protege de falhar por completo quando apenas um nível é afetado por doença."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esses mecanismos se articulam"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A distinção entre receptor intracelular e receptor de membrana não é curiosidade bioquímica — ela é o motivo pelo qual a farmacologia endócrina se divide em duas lógicas de tratamento completamente diferentes, que os blocos seguintes deste módulo vão explorar em cada eixo específico: fármacos que imitam ou bloqueiam hormônios lipossolúveis (como a reposição de glicocorticoide ou os antagonistas do receptor de mineralocorticoide) atuam sobre a transcrição gênica e por isso têm início de ação lento e efeito prolongado mesmo após suspensos; fármacos que atuam sobre receptores de membrana (como os análogos de GLP-1 ou os betabloqueadores já citados no bloco-pai) têm início de ação rápido e efeito que se dissipa em horas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A precisão sobre a dupla retroalimentação hipotálamo-hipófise também é o que sustenta, na prática clínica, o teste de supressão com dexametasona e a interpretação de dosagens combinadas de hormônio trófico e hormônio liberador: sem entender que os dois níveis são frecados de forma independente e simultânea, a leitura desses exames se torna decoreba sem lógica. Os blocos de tireoide, adrenal e hipófise, cada um em seu eixo específico, vão aplicar exatamente essa dupla alça para explicar por que certos exames pedem dosagem em cascata, e não hormônio isolado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "receptor",
+      "origem": "do latim receptor, de recipere (receber, acolher)",
+      "significado": "literalmente, 'aquele que recebe'",
+      "explicacao": "O conceito de receptor nasceu no início do século XX com o farmacologista alemão Paul Ehrlich, que formulou a ideia de que substâncias químicas só agem sobre uma célula se essa célula tiver uma estrutura específica capaz de reconhecê-las — sua frase famosa, 'corpora non agunt nisi fixata' ('as substâncias não agem se não estiverem fixadas'), antecipou por décadas a descoberta molecular dos receptores hormonais. Só na segunda metade do século XX, com o isolamento do receptor beta-adrenérgico e, mais tarde, do receptor de glicocorticoide, a ideia de Ehrlich ganhou base física exata: proteínas específicas, com bolsos moleculares que reconhecem uma molécula e não outra. O termo 'segundo mensageiro', por sua vez, foi cunhado pelo bioquímico americano Earl Sutherland ao descrever o AMP cíclico — trabalho que lhe rendeu o Prêmio Nobel em 1971 e que consolidou a ideia de que o hormônio (primeiro mensageiro) não precisa entrar na célula para provocar uma resposta nela."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏠",
+      "conteudo": "Pense em duas formas de uma visita influenciar o que acontece dentro de uma casa. Na primeira, **o visitante tem uma chave e entra direto** — anda até o escritório da família, senta-se à mesa e reescreve, ele mesmo, a lista de tarefas da semana afixada na parede: é o **receptor intracelular**, e a chave que abre a porta é a lipossolubilidade do hormônio. A nova lista de tarefas leva um tempo para ser escrita (a **resposta genômica lenta**), mas fica valendo por dias, até alguém apagar o quadro. Na segunda, **o visitante não tem chave** — ele toca a campainha (o **receptor de membrana**), e é o morador de dentro quem decide o que fazer a partir do toque: liga o rádio para avisar todo mundo em casa (o **segundo mensageiro**, como o AMPc), e cada cômodo já reage com o que já tinha à mão — ninguém escreve lista nova, apenas usa o que já estava pronto (**proteínas já existentes sendo ativadas**). Essa segunda resposta é quase instantânea, mas também para assim que a campainha para de tocar. E, se a casa tiver um sistema de segurança com dois sensores independentes — um na porta da rua e outro na porta do quarto —, um intruso só é contido de verdade quando os dois sensores disparam ao mesmo tempo: é a **dupla retroalimentação** do hipotálamo e da hipófise, cada um vigiando e freando em seu próprio ponto."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o receptor de cortisol, por mutação, perdesse sua capacidade de se ligar ao DNA (mas ainda conseguisse se ligar normalmente ao cortisol), o que aconteceria com a dosagem sanguínea de cortisol e com o efeito biológico do hormônio?",
+      "resposta": "A dosagem sanguínea de cortisol tenderia a subir, e não a cair. Como o receptor mutado ainda reconhece o cortisol, mas não consegue mais completar a etapa final de ligação ao DNA, o efeito biológico do hormônio nos tecidos-alvo ficaria ausente ou muito reduzido, apesar da presença normal do hormônio — o quadro clássico de resistência hormonal descrito no bloco anterior. Como o hipotálamo e a hipófise dependem do mesmo receptor defeituoso para 'sentir' o cortisol circulante e reduzir CRH e ACTH, eles também deixariam de perceber corretamente que já há cortisol suficiente, e o eixo se ajustaria para um novo patamar mais alto de CRH, ACTH e cortisol circulantes — todos elevados, sem que o organismo consiga aproveitar esse excesso. É a mesma lógica da resistência ao hormônio tireoidiano já vista no bloco-pai, agora explicada pelo mecanismo molecular exato que a sustenta: a resistência não está no hormônio, está na capacidade do receptor de completar sua função depois de se ligar a ele."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas famílias de receptor hormonal e a dupla retroalimentação do eixo de três níveis",
+      "descricao": "Esquema didático dividido em dois painéis. Painel esquerdo: uma célula em corte mostrando um hormônio lipossolúvel pequeno atravessando livremente a membrana plasmática, encontrando um receptor no citoplasma, o complexo hormônio-receptor entrando no núcleo e se ligando a uma dupla-hélice de DNA, com uma seta indicando 'síntese de proteína nova (horas)'. Painel direito: uma célula mostrando um hormônio peptídico grande se ligando a um receptor de sete hélices na membrana (proteína G associada), uma seta curva para dentro da célula indicando ativação da adenilil-ciclase convertendo ATP em AMPc, e esse AMPc ativando enzimas já existentes no citoplasma, com uma seta indicando 'ativação de proteína existente (minutos)'. Abaixo dos dois painéis, um terceiro esquema horizontal mostrando hipotálamo, hipófise e glândula periférica em cascata, com duas setas pontilhadas de retroalimentação partindo da glândula periférica — uma direto ao hipotálamo, outra direto à hipófise — ambas rotuladas 'retroalimentação negativa simultânea'. Fundo neutro adaptativo ao tema do app, legendas em português.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de infográfico médico moderno e limpo, dividido em três seções empilhadas. Seção superior esquerda: corte transversal de uma célula com membrana plasmática bicamada lipídica desenhada explicitamente; uma pequena molécula hormonal atravessa a membrana livremente (seta reta atravessando a bicamada); dentro do citoplasma, a molécula se liga a uma proteína receptora que muda de forma e migra para dentro de um núcleo desenhado como círculo com dupla-hélice de DNA visível; o complexo receptor-hormônio se liga a um segmento específico do DNA; seta rotulada 'síntese de proteína nova — horas' saindo do núcleo. Seção superior direita: outra célula em corte; uma molécula hormonal grande (representada maior, com carga elétrica sugerida por símbolos +/-) permanece do lado de fora da membrana, ligando-se a um receptor com sete hélices transmembrana desenhadas em ziguezague atravessando a bicamada; do lado interno do receptor, uma proteína G trimérica se dissocia; seta curva ativando uma enzima rotulada 'adenilil-ciclase' que converte 'ATP' em 'AMPc' (símbolos químicos simplificados); o AMPc ativa enzimas citoplasmáticas já existentes (desenhadas como formas geométricas que mudam de cor ao serem 'ativadas'); seta rotulada 'ativação de proteína existente — minutos'. Seção inferior, ocupando toda a largura: três ícones de glândula em cascata horizontal rotulados 'hipotálamo', 'hipófise', 'glândula periférica', conectados por setas sólidas descendentes rotuladas 'estímulo'; duas setas pontilhadas curvas partem do ícone de glândula periférica, uma retornando até o hipotálamo e outra retornando até a hipófise, ambas rotuladas 'retroalimentação negativa'. Tipografia sem serifa, paleta consistente com azul, verde e cinza, alto contraste, sem elementos fotorrealistas, todas as legendas em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-mi2-01-000",
+        "titulo": "Endocrinologia Clínica",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco pressupõe a arquitetura comando-executora-retroalimentação e o filtro excesso/falta/resistência já estabelecidos no bloco-pai, e os aprofunda no nível molecular — receptor, transdução de sinal e a precisão da dupla retroalimentação."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Resistência à insulina no diabetes tipo 2",
+        "mecanismo_conexao": "O bloco de diabetes vai aplicar diretamente a lógica do receptor de membrana com atividade tirosina-quinase intrínseca aqui descrita: a resistência à insulina é, molecularmente, uma falha na cascata de fosforilação pós-receptor, não na produção do hormônio.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Interpretação do teste de supressão com dexametasona no eixo adrenal",
+        "mecanismo_conexao": "A dupla retroalimentação hipotálamo-hipófise detalhada aqui é o fundamento molecular que explica por que administrar um glicocorticoide exógeno (dexametasona) suprime tanto CRH quanto ACTH, permitindo localizar a origem de um excesso de cortisol.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Por que a reposição de glicocorticoide, insulina e hormônio tireoidiano tem regras de titulação e monitorização tão diferentes entre si",
+        "mecanismo_conexao": "A classe de receptor de cada hormônio (intracelular, tirosina-quinase intrínseca, ou GPCR) explica diretamente por que a reposição de cortisol precisa de dias para reequilibrar e por que a insulina exógena age em minutos — conteúdo aplicado especificamente dentro dos blocos de diabetes, tireoide e adrenal deste mesmo módulo.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 9,
+        "topico": "Receptores acoplados à proteína G como alvo molecular de fármacos fora da endocrinologia (cardiovasculares, psiquiátricos, analgésicos)",
+        "mecanismo_conexao": "A arquitetura de receptor de sete hélices e proteína G descrita aqui não se limita a hormônios: é o mesmo tipo de receptor visado por uma fração enorme de todos os fármacos clínicos, muito além do contexto endócrino — o mecanismo aprendido aqui se generaliza para outras disciplinas futuras.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s2-bioq-sinalizacao-00-000",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "A cascata de segundo mensageiro descrita aqui para o glucagon é uma aplicação específica do mecanismo geral de transdução de sinal por proteína G estudado em bioquímica — o princípio molecular é o mesmo, o contexto clínico é que muda."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-mi2-01-001-fc01",
+      "pergunta": "Por que hormônios como o cortisol usam receptor dentro da célula, enquanto hormônios como o glucagon usam receptor na superfície?",
+      "resposta": "Porque a localização do receptor é determinada pela solubilidade química do hormônio, não por escolha aleatória. O cortisol é lipossolúvel e atravessa a membrana plasmática livremente, então faz sentido que seu receptor esteja dentro da célula, esperando por ele. O glucagon é uma molécula hidrossolúvel grande, que não consegue atravessar a bicamada lipídica da membrana — por isso seu receptor precisa estar na superfície celular, com uma porção que reconhece o hormônio do lado de fora e outra que dispara uma resposta do lado de dentro, sem que o glucagon jamais precise entrar.",
+      "tipo": "por_que",
+      "dificuldade": 1,
+      "nivel_alvo": 2,
+      "tags": [
+        "receptor-hormonal",
+        "lipossolubilidade",
+        "conceito-basico"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-001-fc02",
+      "pergunta": "Descreva, passo a passo, o que acontece desde a ligação do cortisol ao seu receptor até o efeito biológico final, explicando por que essa via é necessariamente lenta.",
+      "resposta": "1) O cortisol atravessa a membrana plasmática livremente, sem transportador. 2) Ele se liga ao receptor de glicocorticoide no citoplasma, que estava mantido inativo por proteínas chaperonas (como a HSP90). 3) A ligação libera a chaperona e expõe um sinal de translocação nuclear, levando o complexo hormônio-receptor para dentro do núcleo. 4) No núcleo, o complexo se liga a sequências regulatórias específicas do DNA e recruta a maquinaria de transcrição. 5) Genes-alvo são transcritos em RNA mensageiro, que depois é traduzido em proteína nova. A via é necessariamente lenta porque o efeito biológico depende da etapa final de síntese proteica — não existe atalho: sem proteína nova sendo produzida, não há efeito genômico do cortisol.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "receptor-intracelular",
+        "cortisol",
+        "transcricao-genica"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-001-fc03",
+      "pergunta": "Se, em um eixo hormonal de três níveis, uma mutação eliminasse especificamente a capacidade do hipotálamo (mas não da hipófise) de perceber o hormônio periférico circulante, o que aconteceria com a concentração desse hormônio periférico e com a dosagem do hormônio trófico hipofisário, considerando que a retroalimentação sobre a hipófise permanece intacta?",
+      "resposta": "O hipotálamo, cego ao hormônio periférico, continuaria liberando seu hormônio liberador em ritmo normal ou mesmo elevado, sem nunca reduzir esse estímulo — a primeira alça de freio deixaria de funcionar. Mas como a retroalimentação direta sobre a hipófise permanece intacta, a hipófise ainda conseguiria captar o hormônio periférico elevado e reduzir, por conta própria, a liberação do hormônio trófico. O resultado provável seria um eixo parcialmente compensado: hormônio periférico e hormônio liberador hipotalâmico cronicamente mais altos que o normal, mas hormônio trófico hipofisário relativamente contido pela alça que ainda funciona — uma demonstração direta de que a redundância das duas alças de retroalimentação protege o eixo de descompensar totalmente quando apenas um nível perde a sensibilidade.",
+      "tipo": "contrafactual",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "retroalimentacao-dupla",
+        "eixo-tres-niveis",
+        "transferencia"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-001-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Nos eixos hormonais de três níveis, o hormônio da glândula periférica retroalimenta apenas a hipófise, já que é ela quem está mais próxima na cascata.'",
+      "resposta": "Falso. O hormônio periférico retroalimenta simultaneamente o hipotálamo e a hipófise, em pontos distintos e de forma independente — não apenas o nível mais próximo na cascata. No hipotálamo, ele reduz a liberação do hormônio liberador; na hipófise, reduz tanto a sensibilidade a esse hormônio liberador quanto a síntese direta do hormônio trófico. A armadilha está em imaginar o eixo como uma escada linear de comando único, quando na realidade é um circuito com duas alças de retorno atuando em paralelo — é essa dupla frenagem, e não uma frenagem única em cascata, que confere redundância ao sistema.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "retroalimentacao-negativa",
+        "armadilha-conceitual",
+        "eixo-tres-niveis"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-001-fc05",
+      "pergunta": "A palavra 'receptor' remonta a Paul Ehrlich e sua frase 'corpora non agunt nisi fixata'. O que essa frase antecipou, décadas antes da descoberta molecular dos receptores hormonais?",
+      "resposta": "'Corpora non agunt nisi fixata' significa 'as substâncias não agem se não estiverem fixadas [a algo]'. Ehrlich, no início do século XX, propôs que nenhuma substância química exerce efeito sobre uma célula a menos que essa célula possua uma estrutura específica capaz de se ligar a ela — antecipando, em termos conceituais, a existência de proteínas receptoras específicas décadas antes de qualquer receptor hormonal ser isolado ou caracterizado molecularmente. A frase revela que a lógica de reconhecimento molecular específico (um hormônio, um receptor correspondente) foi deduzida pela farmacologia teórica antes de ser demonstrada pela bioquímica experimental.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "receptor",
+        "etimologia",
+        "historia-da-farmacologia"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-001-fc06",
+      "pergunta": "Compare as duas famílias de receptor hormonal (intracelular e de membrana) quanto a três critérios: onde se localizam, o que produzem como resultado direto da ativação, e a velocidade/duração da resposta.",
+      "resposta": "**Localização:** o receptor intracelular fica no citoplasma ou no núcleo, exigindo que o hormônio atravesse a membrana; o receptor de membrana fica ancorado na superfície celular, com porção extracelular e porção intracelular. **Resultado direto da ativação:** o receptor intracelular, uma vez ligado ao hormônio, atua diretamente como fator de transcrição sobre o DNA; o receptor de membrana, na maioria dos casos (GPCR, tirosina-quinase intrínseca), não toca o DNA — gera um segundo mensageiro ou dispara fosforilação de proteínas já existentes. A via JAK-STAT, usada por hormônios como o GH, é a exceção dentro dos receptores de membrana: mesmo sem o hormônio entrar na célula, o fator de transcrição STAT ativado migra até o núcleo, então nem toda sinalização de membrana fica restrita ao citoplasma. **Velocidade e duração:** a via intracelular é lenta para começar (horas, porque depende de síntese de proteína nova) mas duradoura; as vias de membrana costumam ser rápidas para começar (segundos a minutos) e se desfazem assim que o hormônio se desliga do receptor — embora a via JAK-STAT, por também envolver síntese de proteína nova induzida pelos genes-alvo do STAT, tenda a ser um pouco mais lenta e duradoura que a via clássica de segundo mensageiro.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "receptor-intracelular",
+        "receptor-de-membrana",
+        "comparacao",
+        "jak-stat"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-001-fc07",
+      "pergunta": "A adrenalina age tanto por receptores alfa quanto beta-adrenérgicos, ambos acoplados a proteína G, mas com efeitos opostos em tecidos diferentes (contrai vaso sanguíneo via alfa, relaxa brônquio via beta). Do ponto de vista da farmacologia clínica, por que essa diversidade de subtipos de receptor — mesmo dentro da mesma grande família — é o que permite desenhar fármacos seletivos, como um betabloqueador que não afeta significativamente os receptores alfa?",
+      "resposta": "Porque a seletividade farmacológica depende de diferenças estruturais sutis no bolso de ligação de cada subtipo de receptor, mesmo quando todos pertencem à mesma família de receptores acoplados à proteína G. Um fármaco pode ser desenhado para se encaixar preferencialmente no bolso do receptor beta e não no do receptor alfa, permitindo bloquear especificamente os efeitos cardíacos e broncodilatadores da adrenalina (via beta) sem interferir na vasoconstrição mediada por alfa — ou o inverso. Essa é a base molecular de toda a farmacologia adrenérgica seletiva: a diversidade de subtipos dentro da mesma família de receptor de membrana não é redundância, é o que torna possível o tratamento direcionado, evitando efeitos colaterais indesejados em tecidos que expressam o subtipo errado.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "receptor-adrenergico",
+        "farmacologia",
+        "seletividade"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-mi2-01-001-caso01",
+      "titulo": "Criança com bócio e hormônios tireoidianos elevados, mas sem sinais de hipertireoidismo",
+      "apresentacao": "Menina de 8 anos é levada ao pediatra por bócio discreto e leve atraso de crescimento, sem taquicardia, sem perda de peso, sem irritabilidade e sem exoftalmia — nenhum sinal clássico de excesso de hormônio tireoidiano circulante. Exames laboratoriais surpreendem a família: T4 livre e T3 estão elevados, mas o TSH também está elevado (ou inapropriadamente normal), quando o esperado, diante de hormônio periférico alto, seria um TSH suprimido. Investigação genética confirma mutação no gene do receptor beta do hormônio tireoidiano.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação hereditária no gene que codifica o receptor beta de hormônio tireoidiano (receptor nuclear intracelular), reduzindo sua capacidade de se ligar ao DNA e ativar a transcrição dos genes-alvo mesmo quando o hormônio já está ligado a ele."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O receptor intracelular de hormônio tireoidiano, presente tanto nos tecidos periféricos-alvo quanto na própria hipófise e no hipotálamo — os mesmos locais que, segundo o bloco, dependem desse receptor para 'sentir' o hormônio circulante e executar a retroalimentação negativa."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Como a hipófise e o hipotálamo usam o mesmo receptor defeituoso para monitorar o hormônio tireoidiano, eles também deixam de perceber corretamente que já há T3/T4 suficiente circulando. O eixo se reajusta para um novo patamar mais alto: o hipotálamo continua liberando TRH, a hipófise continua secretando TSH, e a tireoide, estimulada cronicamente, aumenta de tamanho (bócio) e produz ainda mais T3/T4 — só que esse excesso não consegue agir plenamente nos tecidos periféricos, porque o receptor ali também está defeituoso."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Bócio (por estímulo trófico contínuo do TSH) e leve atraso de crescimento (porque, apesar do hormônio alto, a ação tecidual efetiva está reduzida pela resistência do receptor), mas ausência dos sinais clássicos de hipertireoidismo — porque, ao contrário do hipertireoidismo verdadeiro, aqui o hormônio está alto mas não consegue agir normalmente sobre seus receptores."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O quadro é a resistência ao hormônio tireoidiano (síndrome de Refetoff): um TSH elevado ou inapropriadamente normal na presença de T4 livre alto é a marca laboratorial que diferencia essa condição de um hipertireoidismo clássico (onde o TSH estaria suprimido) e também de um adenoma hipofisário secretor de TSH — os dois diagnósticos diferenciais que precisam ser excluídos antes de fechar o diagnóstico genético."
+        }
+      ],
+      "conexao_com_bloco": "O caso é a aplicação direta do contrafactual central do bloco: um receptor de cortisol (ou, aqui, de hormônio tireoidiano) que se liga ao hormônio mas não completa a etapa final de ligação ao DNA gera resistência hormonal, com hormônio circulante elevado e efeito biológico reduzido — e, porque hipotálamo e hipófise dependem do mesmo receptor defeituoso, o eixo inteiro se reajusta para um patamar mais alto em vez de se autolimitar pela retroalimentação normal.",
+      "disciplinas_relacionadas": [
+        "endocrinologia",
+        "genetica-medica",
+        "pediatria"
+      ],
+      "diagnostico_revelado": "Síndrome de resistência ao hormônio tireoidiano (síndrome de Refetoff), por mutação do receptor beta do hormônio tireoidiano.",
+      "tratamento_resumido": "Não há reposição hormonal padrão, pois o problema não é falta de hormônio, e sim falha do receptor em respondê-lo. O manejo é individualizado: observação nos casos leves e compensados, e em casos com repercussão significativa de crescimento ou cardíaca pode-se considerar análogos com maior afinidade seletiva por tecidos específicos, sob acompanhamento endocrinológico especializado. Aconselhamento genético é oferecido à família, dado o padrão de herança autossômico dominante da maioria dos casos."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-mi2-01-001-img01",
+        "url": null,
+        "tipo_imagem": "esquema_didatico",
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
+  },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Melmed S, Auchus RJ, Goldfine AB, Koenig RJ, Rosen CJ (eds). Williams Textbook of Endocrinology. 14th ed. Elsevier; 2020. Capítulo 1 — Princípios de Endocrinologia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 14ª ed. Elsevier; 2021. Capítulo 74 — Introdução à Endocrinologia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Jameson JL, Fauci AS, Kasper DL, Hauser SL, Longo DL, Loscalzo J (eds). Harrison's Principles of Internal Medicine. 21st ed. McGraw Hill; 2022. Parte 14 — Princípios de Endocrinologia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Nussey S, Whitehead S. Endocrinology: An Integrated Approach. 1st ed. BIOS Scientific Publishers; 2001. Capítulo 1.",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "fisiopatologia",
-    "correlacao_ciencias_basicas",
-    "etimologia"
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Achar que todo hormônio 'se liga a um receptor e ativa a célula' de forma genérica, sem diferenciar onde o receptor está e qual mecanismo de transdução ele usa.",
+      "correcao": "Existem duas famílias moleculares muito diferentes: receptores intracelulares (para hormônios lipossolúveis, atuando sobre transcrição gênica, resposta lenta e duradoura) e receptores de membrana (para hormônios hidrossolúveis, atuando por segundo mensageiro sobre proteínas já existentes, resposta rápida e transitória). A classe química do hormônio determina qual via é usada.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Achar que, num eixo de três níveis, o hormônio periférico retroalimenta apenas a hipófise (o nível mais próximo), ou apenas o hipotálamo, e não os dois ao mesmo tempo.",
+      "correcao": "O hormônio periférico retroalimenta simultaneamente hipotálamo e hipófise, em pontos distintos e de forma independente — uma dupla alça de frenagem, não uma frenagem única transmitida em cascata.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Tratar hipotálamo e hipófise como uma dicotomia anatômica rígida e independente, esquecendo que funcionam como um continuum funcional conectado pelo sistema porta-hipofisário.",
+      "correcao": "Hipotálamo e hipófise devem ser entendidos como uma unidade funcional contínua — o eixo hipotálamo-hipofisário — e não como dois órgãos isolados que apenas se comunicam por um único sinal em série.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "receptor intracelular",
+      "termo_es": "receptor intracelular",
+      "termo_en": "intracellular receptor",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "receptor acoplado à proteína G",
+      "termo_es": "receptor acoplado a proteína G",
+      "termo_en": "G protein-coupled receptor",
+      "abreviatura": "RAPG / GPCR"
+    },
+    {
+      "termo_pt": "segundo mensageiro",
+      "termo_es": "segundo mensajero",
+      "termo_en": "second messenger",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "AMP cíclico",
+      "termo_es": "AMP cíclico",
+      "termo_en": "cyclic AMP",
+      "abreviatura": "AMPc / cAMP"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-5",
+      "mudanca": "Criação inicial do bloco Princípios do Sistema Endócrino, aprofundando os mecanismos moleculares de receptor hormonal (nuclear vs. membrana) e a precisão da dupla retroalimentação negativa nos eixos de três níveis.",
+      "motivo": "Produção do bloco-filho de fundamentação molecular do módulo de Endocrinologia (semestre 8), preparando o raciocínio comum a diabetes, tireoide, adrenal, hipófise e paratireoide."
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "adversarial+integrador-manual",
+      "mudanca": "Corrigido erro de classificação molecular (GH agrupado incorretamente com insulina como tirosina-quinase intrinseca; GH e receptor de citocina classe I via JAK-STAT). Reduzida ambiguidade remanescente no paragrafo seguinte, ajustado fc06 para reconhecer que JAK-STAT tambem atua sobre transcricao nuclear, e diferenciadas as duas conexoes futuras de farmacologia que se sobrepunham.",
+      "motivo": "Achados do adversarial (severidade media) apos correcao do erro de precisao original."
+    }
   ]
 }

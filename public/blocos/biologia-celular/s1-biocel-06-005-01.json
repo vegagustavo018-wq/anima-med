@@ -1,54 +1,214 @@
 {
+  "metadata": {
+    "titulo": "CDKs e Ciclinas: O Maestro Molecular do Ciclo Celular",
+    "subtitulo": "Como a célula decide que é hora de se dividir sem perder o controle?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "ciclo celular",
+      "CDK",
+      "ciclinas",
+      "checkpoints",
+      "oncologia molecular"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "Imagine uma fábrica complexa que precisa duplicar toda a sua estrutura. Se cada setor decidir operar em seu próprio ritmo, o resultado será um colapso estrutural. Na célula, esse risco é constante: DNA sendo replicado antes da hora ou mitose ocorrendo com erros genéticos graves. Para evitar o caos, a evolução moldou um sistema de controle oscilante baseado em enzimas chamadas CDKs e suas parceiras reguladoras, as ciclinas. Este par funciona como um interruptor bioquímico que só permite o avanço para a próxima fase do ciclo celular quando as condições de segurança são atendidas. Neste bloco, exploraremos como essa engrenagem de fosforilação dita o ritmo da vida e o que acontece quando o 'freio' desse motor falha, abrindo caminho para o desenvolvimento de patologias como o câncer.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já parou para pensar no risco que é uma célula se dividir? Não é apenas 'partir ao meio'. É necessário duplicar bilhões de bases nitrogenadas, reorganizar o citoesqueleto e distribuir organelas com precisão cirúrgica. Se a célula avançar para a mitose sem ter terminado de conferir o DNA, a linhagem resultante estará condenada ao erro ou à morte. O problema biológico aqui é a coordenação temporal: como garantir que o passo B só ocorra após o sucesso absoluto do passo A?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Solução: O Motor Fosforilador"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A natureza resolveu esse impasse criando um sistema de 'autorização química'. Em vez de o ciclo celular ser um processo contínuo e passivo, ele é segmentado por portões lógicos. A chave desses portões é a fosforilação. Ao adicionar um grupo fosfato a proteínas específicas, a célula altera a forma e a função dessas proteínas, ativando-as para realizar tarefas como a condensação dos cromossomos ou o rompimento do envelope nuclear."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "CDK (Quinases Dependentes de Ciclina)",
+      "origem": "Grego 'kinein' (mover) + Latim 'cyclus' (círculo)",
+      "significado": "Enzimas que movem o ciclo através da adição de fosfatos.",
+      "explicacao": "O termo 'Quinase' refere-se à capacidade de transferir grupos fosfato (energia e sinal). 'Dependente de Ciclina' indica que, sozinhas, elas são motores desligados."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As CDKs são proteínas que estão sempre presentes na célula, mas em um estado de dormência. Elas possuem o potencial catalítico, mas o seu sítio ativo está bloqueado. Para que o motor 'ligue', ele precisa de uma unidade de comando que aparece e desaparece em momentos específicos. Essa unidade é a Ciclina. Diferente das CDKs, as concentrações de ciclinas oscilam drasticamente: elas são sintetizadas rapidamente quando a célula precisa avançar e destruídas via proteólise assim que o objetivo é alcançado."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Imagine um carro de corrida. A CDK é o motor: ele tem toda a potência necessária para mover o veículo, mas sem a chave de ignição, ele é apenas metal inerte. A Ciclina é a chave de ignição. Somente quando a chave (Ciclina) é inserida e girada no motor (CDK), o carro pode acelerar. Os inibidores de CDK (como a p21 ou p16) funcionariam como o freio de mão puxado, impedindo o movimento mesmo com o motor ligado."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A especificidade do ciclo vem do 'par perfeito': diferentes fases exigem diferentes combinações. Por exemplo, a Ciclina D se une à CDK4/6 para empurrar a célula para fora de G1, enquanto a Ciclina B se une à CDK1 para disparar a Mitose."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de avançarmos, visualize: a CDK é a estrutura fixa, a Ciclina é a onda que vem e vai. Sem essa oscilação, o ciclo ou pararia para sempre ou rodaria sem freios."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O Alvo Mestre: A Proteína Rb"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como exatamente o complexo Ciclina D-CDK4/6 faz a célula andar? Ele foca em um 'porteiro' chamado Proteína do Retinoblastoma (Rb). Em estado de repouso, a Rb está 'segurando' um fator de transcrição chamado E2F. Enquanto E2F estiver preso, os genes necessários para a replicação do DNA (Fase S) ficam desligados. Quando a CDK4/6 é ativada pela Ciclina D, ela fosforila a Rb. A Rb, agora carregada de fosfatos, muda de forma e solta o E2F. Livre, o E2F corre para o núcleo e liga as máquinas de síntese de DNA. É a transição oficial do ponto de restrição."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se a Ciclina D nunca fosse degradada?",
+      "resposta": "Se a Ciclina D permanecesse em níveis altos, o complexo CDK4/6 manteria a proteína Rb permanentemente fosforilada. O E2F estaria sempre livre, forçando a célula a entrar na fase S repetidamente, ignorando sinais de dano no DNA ou falta de nutrientes. Esse é o cenário clássico de uma célula tumoral: um motor que não desliga."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O Acoplamento Molecular CDK-Ciclina",
+      "descricao": "Um diagrama mostrando a CDK com um sítio ativo obstruído pela alça T. A Ciclina se aproxima, encaixa-se na lateral da CDK, provocando uma mudança conformacional que expõe o sítio ativo para que o ATP possa doar seu fosfato à proteína alvo (ex: Rb).",
+      "prompt_ia": "High-quality scientific illustration of a Cyclin-Dependent Kinase (CDK) protein structure binding to a Cyclin protein. Show the conformational change: the 'T-loop' of the CDK moving to reveal the catalytic pocket. Use bioluminescent colors (blue for CDK, magenta for Cyclin). In the background, show a blurred cell nucleus. Professional molecular biology aesthetic, 8k, photorealistic textures.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-06-005-01-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Por que a concentração de CDKs permanece constante enquanto a de Ciclinas oscila durante o ciclo celular?",
+      "resposta": "Porque a CDK é o motor enzimático permanente que aguarda ativação, enquanto a Ciclina funciona como o sinalizador temporal. A oscilação da Ciclina (via síntese e degradação controlada) garante que o ciclo celular se mova em apenas uma direção e apenas quando necessário.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "bioquímica",
+        "regulação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-01-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria com uma célula se todos os seus inibidores de CDK (CKIs, como p16 e p21) fossem subitamente deletados?",
+      "resposta": "A célula perderia a capacidade de interromper o ciclo celular em resposta a danos no DNA ou sinais externos de parada. Isso resultaria em uma proliferação descontrolada e acúmulo de mutações, as características fundamentais do câncer.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "patologia",
+        "oncogenese"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-01-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença funcional entre o papel da Ciclina D/CDK4 e da Ciclina B/CDK1?",
+      "resposta": "A Ciclina D/CDK4 atua no início (G1), preparando a célula para entrar na fase S ao fosforilar a proteína Rb. Já a Ciclina B/CDK1 (conhecida como MPF) atua na transição G2/M, disparando os eventos físicos da mitose, como a quebra do envelope nuclear.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "fases do ciclo"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-01-fc04",
+      "tipo": "etimologia",
+      "pergunta": "Relacione o termo 'Quinase' com a função executora das CDKs no ciclo celular.",
+      "resposta": "Quinases são enzimas que transferem grupos fosfato de um ATP para uma proteína alvo (fosforilação). No ciclo celular, as CDKs 'ligam' ou 'desligam' as máquinas moleculares (como a Rb ou as condensinas) através dessa modificação química.",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "terminologia"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-01-fc05",
+      "tipo": "clinico",
+      "pergunta": "Por que inibidores farmacológicos de CDK4/6 são eficazes no tratamento de certos tipos de câncer de mama?",
+      "resposta": "Muitos cânceres de mama apresentam hiperatividade da via Ciclina D-CDK4/6, o que mantém a proteína Rb inativada e o ciclo celular rodando sem parar. O inibidor bloqueia a CDK4/6, permitindo que a Rb volte a segurar o E2F, interrompendo a proliferação tumoral.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacologia",
+        "clinica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-06-005-01-caso01",
+      "titulo": "A Proliferação Ininterrupta",
+      "apresentacao": "Paciente feminina, 52 anos, apresenta nódulo endurecido em quadrante superior externo da mama direita. Biópsia confirma carcinoma ductal. A análise molecular revela uma superexpressão severa de Ciclina D1 e ausência de mutação na proteína Rb (Rb está funcional, mas hipofosforilada pelo excesso de quinase).",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Superexpressão de Ciclina D1 por amplificação gênica."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Complexo CDK4/6 torna-se hiperativo devido ao excesso de sua parceira (Ciclina D1)."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Fosforilação excessiva e constante da proteína Rb."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Liberação contínua do fator de transcrição E2F."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Entrada descontrolada na Fase S e proliferação celular maligna (tumor)."
+        }
+      ],
+      "diagnostico_revelado": "Câncer de Mama Luminal com dependência de CDK4/6.",
+      "tratamento_resumido": "Uso de inibidores seletivos de CDK4/6 (ex: Palbociclibe) associado à terapia hormonal.",
+      "conexao_com_bloco": "Este caso ilustra como o desequilíbrio no par CDK-Ciclina (excesso de ciclina) anula os pontos de controle naturais da célula.",
+      "disciplinas_relacionadas": [
+        "Oncologia",
+        "Patologia Geral",
+        "Farmacologia"
+      ]
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-06-001",
+        "titulo": "Fases do Ciclo Celular (G1, S, G2, M)",
+        "disciplina": "Biologia Celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Conhecer as fases G1, S, G2 e M é fundamental para entender onde cada CDK atua."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Quimioterápicos e Antineoplásicos",
+        "disciplina": "Farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Inibidores de CDK como classe terapêutica moderna para controle de ciclo.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Apoptose",
+        "explicacao": "Enquanto CDKs promovem a vida e divisão, as Caspases (outra classe de enzimas) promovem a morte celular programada."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-06-005-01",
   "no_pai_id": "s1-biocel-06-005",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "CDKs e Ciclinas",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Motor oscilante; ativação por ciclina e alvos de inibidores CDK4/6",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3-flash-preview",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

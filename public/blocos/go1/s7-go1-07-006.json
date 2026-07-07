@@ -4,49 +4,206 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Vacinação contra o HPV — Prevenção Primária",
+    "titulo": "Vacinacao contra o HPV - Prevencao Primaria",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "hpv-vacinacao",
+      "conduta",
+      "correlacao_basica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Vacinas quadri/nonavalente; esquema; impacto populacional",
-  "narrativa": [],
+  "resumo_conciso": "A vacinação contra HPV previne infecções por tipos oncogênicos e tipos associados a verrugas, reduzindo lesões precursoras e cânceres relacionados ao HPV; seu maior benefício ocorre antes da exposição sexual.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Vacinação contra HPV é prevenção primária: impede a infecção antes que ela possa iniciar a cadeia de persistência viral, lesão intraepitelial e câncer."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As vacinas atuais são profiláticas, não terapêuticas. Elas não tratam HPV já adquirido, verrugas existentes ou NIC instalada, mas reduzem risco de novas infecções pelos tipos cobertos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O maior benefício populacional ocorre quando a vacinação acontece antes do início da atividade sexual, porque a chance de não ter encontrado os tipos virais é maior."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Tipos de baixo risco, como HPV 6 e 11, estão associados a verrugas anogenitais. Tipos de alto risco, como 16 e 18, concentram grande parte do risco de câncer de colo e outros cânceres anogenitais/orofaríngeos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os esquemas variam por idade, imunossupressão e diretriz local. Pessoas imunocomprometidas tendem a precisar de esquema mais intensivo, porque a resposta imune pode ser menor."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vacinar meninos e meninas tem impacto de rebanho e reduz transmissão. A consulta ginecológica deve checar situação vacinal sem culpabilizar quem não recebeu na adolescência."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mesmo vacinada, a pessoa deve seguir rastreamento de colo quando estiver na faixa indicada. A vacina reduz risco, mas não substitui rastreio organizado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-07-002",
+        "titulo": "HPV - O Virus e a Oncogenese Cervical",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-032",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Ovário — Diagnóstico, Estadiamento e Tratamento",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Vulva e Vagina",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-04-006",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Adenomiose - Endometrio Invadindo o Miometrio"
+      },
+      {
+        "bloco_id": "s7-go1-06-040",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com HIV e Outras ISTs na Saude da Mulher"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-07-006-fc-01",
+      "pergunta": "Vacina contra HPV trata NIC existente?",
+      "resposta": "Não. É profilática, não terapêutica.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-006-fc-02",
+      "pergunta": "Quando a vacina tem maior benefício?",
+      "resposta": "Antes da exposição sexual aos tipos de HPV.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-006-fc-03",
+      "pergunta": "Quais tipos estão ligados a verrugas?",
+      "resposta": "HPV 6 e 11.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-006-fc-04",
+      "pergunta": "Vacinação dispensa rastreamento cervical?",
+      "resposta": "Não. Pessoas vacinadas ainda seguem rastreamento conforme diretriz.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-07-006-cc-01",
+      "titulo": "Vacina e rastreio",
+      "apresentacao": "Mulher de 28 anos vacinada contra HPV pergunta se pode abandonar o preventivo.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: A vacinação contra HPV previne infecções por tipos oncogênicos e tipos associados a verrugas, reduzindo lesões precursoras e cânceres relacionados ao HPV; seu maior benefício ocorre antes da exposição sexual."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Vacinacao contra o HPV - Prevencao Primaria, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A vacinação contra HPV previne infecções por tipos oncogênicos e tipos associados a verrugas, reduzindo lesões precursoras e cânceres relacionados ao HPV; seu maior benefício ocorre antes da exposição sexual."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 28 anos vacinada contra HPV pergunta se pode abandonar o preventivo."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual orientação? Não. A vacinação reduz risco, mas não substitui rastreamento cervical nas faixas indicadas."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Não. A vacinação reduz risco, mas não substitui rastreamento cervical nas faixas indicadas.",
+      "tratamento_resumido": "Não. A vacinação reduz risco, mas não substitui rastreamento cervical nas faixas indicadas."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Linha de prevenção primária e secundária: vacina HPV antes da exposição, redução de infecção persistente, rastreamento e tratamento de lesões.",
+        "alt": "Ilustracao educacional para Vacinacao contra o HPV - Prevencao Primaria"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC - HPV Vaccination",
+      "url": "https://www.cdc.gov/hpv/vaccines/index.html",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Human Papillomavirus Infection",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/hpv-cancer.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "conduta",
     "correlacao_basica"

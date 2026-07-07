@@ -2,53 +2,348 @@
   "resumo_id": "s4-farma1-01-007-02",
   "no_pai_id": "s4-farma1-01-007",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-01-003-01",
+    "s4-farma1-01-006-02"
+  ],
   "metadata": {
     "titulo": "Dose de Ataque e Dose de Manutenção",
+    "subtitulo": "Se o paciente não tem tempo de esperar o remédio se acumular sozinho, como entregar o alvo terapêutico já na primeira dose?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "dose-de-ataque",
+      "dose-de-manutencao",
+      "volume-de-distribuicao",
+      "clearance",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Cálculo por Vd e clearance; quando usar dose de ataque",
-  "narrativa": [],
+  "resumo_conciso": "O bloco-pai já anunciou que doses repetidas se acumulam gradualmente até um estado de equilíbrio — mas esperar esse acúmulo natural leva várias meias-vidas, o que em algumas situações clínicas é tempo demais. Uma arritmia instável ou uma infecção grave não espera dias para que a concentração plasmática suba sozinha. Esse bloco resolve exatamente essa lacuna, mostrando como os dois parâmetros quantitativos já estabelecidos — volume de distribuição (Vd) e clearance — se combinam para calcular duas doses com propósitos diferentes. A dose de ataque usa apenas o Vd (Dose de ataque = Vd × concentração-alvo) para preencher de uma vez o espaço aparente de distribuição, entregando a concentração-alvo já na primeira administração, sem esperar acúmulo. A dose de manutenção usa apenas o clearance (Dose de manutenção = Clearance × concentração-alvo) para repor, a cada intervalo, exatamente o que foi eliminado — sustentando o patamar de equilíbrio já atingido, sem empurrá-lo mais para cima. São dois cálculos independentes porque respondem a perguntas diferentes: um preenche o espaço de distribuição uma única vez, o outro repõe uma perda contínua indefinidamente. Fármacos com Vd alto (como digoxina) exigem dose de ataque desproporcionalmente maior que a de manutenção — e é por isso que confundir as duas doses, ou repetir a dose de ataque como se fosse manutenção, é um erro de prescrição com risco real de toxicidade.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior desta família mostrou que, quando um fármaco é administrado repetidamente, a concentração plasmática sobe dose a dose até estabilizar num patamar — o estado de equilíbrio. Só que esse acúmulo natural não é instantâneo: em geral, são necessárias de quatro a cinco meias-vidas para que a concentração se aproxime o suficiente desse patamar. Para muitos tratamentos, esse tempo é perfeitamente aceitável."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas nem sempre. Considere uma paciente que chega ao pronto-socorro em fibrilação atrial com frequência cardíaca de 150 batimentos por minuto, hipotensa. Ou um paciente com meningite bacteriana, em que cada hora sem concentração terapêutica de antibiótico no líquido cefalorraquidiano aumenta o risco de sequela neurológica permanente. Em nenhum dos dois casos há tempo para esperar quatro ou cinco meias-vidas — que, dependendo do fármaco, podem significar dias."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: o acúmulo natural é seguro, mas lento demais para certas urgências"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se o médico simplesmente iniciasse esses pacientes na dose de manutenção padrão — a dose pensada para repor, a cada intervalo, o que será eliminado no estado de equilíbrio — a concentração plasmática subiria devagar, seguindo a mesma curva em degraus decrescentes já descrita no bloco anterior. Isso funciona bem quando o tempo não é crítico. Mas numa arritmia instável ou numa infecção grave, esperar dias para a concentração chegar à faixa terapêutica pode significar o paciente descompensar, ou a bactéria continuar proliferando sem controle, antes que o fármaco tenha efeito relevante."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema, portanto, não é que o cálculo de dose de manutenção esteja errado — é que ele foi desenhado para sustentar um patamar já atingido, não para atingi-lo rapidamente. Faltava uma ferramenta separada, pensada especificamente para entregar a concentração-alvo de uma só vez, na primeira dose."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema aqui não é a existência do estado de equilíbrio — é a velocidade de chegar até ele. Quando essa velocidade natural é clinicamente inaceitável, é preciso um cálculo diferente do cálculo de manutenção."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: duas doses, dois propósitos, dois parâmetros diferentes"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução separa o problema em duas perguntas independentes, cada uma respondida por um parâmetro farmacocinético já conhecido. A primeira pergunta é: quanto fármaco é preciso administrar de uma só vez para que a concentração plasmática pule diretamente para o alvo terapêutico? Essa é a dose de ataque (ou dose de carga), e ela só depende de para onde o fármaco vai se distribuir — ou seja, do volume de distribuição (Vd)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda pergunta é: uma vez que a concentração-alvo foi atingida, quanto fármaco é preciso repor a cada intervalo só para compensar o que está sendo eliminado, sem empurrar a concentração para cima nem deixá-la cair? Essa é a dose de manutenção, e ela só depende da velocidade de eliminação do organismo — ou seja, do clearance."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Dose de ataque resolve um problema de espaço: preencher o volume aparente de distribuição de uma vez. Dose de manutenção resolve um problema de fluxo: repor, a cada intervalo, exatamente o que o clearance elimina. São contas diferentes porque respondem perguntas diferentes — por isso usam parâmetros diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito: as duas fórmulas, lado a lado"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A dose de ataque usa exatamente a mesma lógica já vista no cálculo de Vd, isolando a variável dose: Dose de ataque = Vd × concentração-alvo (Cp-alvo). Se o Vd de um fármaco é 40 litros num paciente e a concentração-alvo é 2 mg/L, a dose de ataque é 80 mg — a quantidade que, distribuída por esse volume aparente inteiro, produz exatamente aquela concentração assim que a distribuição se completa. Esse cálculo não olha para eliminação nenhuma; ele responde só à pergunta 'quanto cabe nesse espaço para chegar à concentração desejada'."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A dose de manutenção usa uma lógica diferente: Dose de manutenção = Clearance × concentração-alvo (Cp-alvo) × intervalo entre doses (quando administrada em doses discretas) — ou, no caso de uma infusão intravenosa contínua, a taxa de infusão é simplesmente Clearance × Cp-alvo, sem o termo de intervalo. A ideia é repor, por unidade de tempo, exatamente o volume de plasma que o clearance depura naquele mesmo intervalo. Se o clearance de um fármaco é 5 L/h e a concentração-alvo é 2 mg/L, a taxa de manutenção contínua é 10 mg/h — o suficiente para compensar a eliminação, nem mais, nem menos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Note a diferença estrutural entre as duas fórmulas: a dose de ataque multiplica Cp-alvo por um volume (Vd), porque está preenchendo um espaço; a dose de manutenção multiplica Cp-alvo por um volume-por-tempo (clearance), porque está repondo um fluxo contínuo. É essa diferença de unidades que explica por que confundir as duas doses gera erro — elas não são versões 'maior' e 'menor' da mesma conta, são cálculos com naturezas físicas diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em movimento"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Sequência de raciocínio para prescrever ataque e manutenção",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Definir a concentração-alvo",
+          "explicacao": "A mesma Cp-alvo, definida por literatura farmacológica ou faixa terapêutica validada, entra nas duas fórmulas — ataque e manutenção mantêm o mesmo objetivo final de concentração, apenas por caminhos diferentes."
+        },
+        {
+          "numero": 2,
+          "titulo": "Calcular a dose de ataque a partir do Vd",
+          "explicacao": "Dose de ataque = Vd × Cp-alvo. Essa dose é administrada uma vez (ou fracionada em poucas administrações próximas, por segurança), preenchendo o volume aparente de distribuição e levando a concentração plasmática diretamente ao alvo, sem esperar acúmulo."
+        },
+        {
+          "numero": 3,
+          "titulo": "Calcular a dose de manutenção a partir do clearance",
+          "explicacao": "Dose de manutenção (por intervalo) = Clearance × Cp-alvo × intervalo entre doses. A partir da dose de ataque, essa dose passa a ser administrada regularmente, repondo apenas o que o clearance elimina a cada intervalo — sustentando o patamar, sem repeti-lo."
+        },
+        {
+          "numero": 4,
+          "titulo": "Resultado: concentração-alvo atingida de imediato e sustentada no tempo",
+          "explicacao": "A dose de ataque entrega o alvo terapêutico já no início do tratamento; a dose de manutenção, iniciada logo em seguida, impede que essa concentração caia (se a manutenção faltasse) ou suba indefinidamente (se a manutenção repetisse o valor da dose de ataque)."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É por isso que repetir a dose de ataque como se fosse a dose de manutenção é um erro perigoso: a dose de ataque foi calculada para preencher o volume de distribuição inteiro de uma vez, partindo de concentração zero. Repeti-la a cada intervalo, quando a concentração-alvo já foi atingida e só uma fração eliminada pelo clearance precisa ser reposta, empurra a concentração muito acima do alvo terapêutico — um acúmulo progressivo diretamente proporcional a quanto a dose de ataque excede a dose de manutenção real."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa diferença costuma ser grande justamente nos fármacos com Vd alto. Um fármaco muito sequestrado em tecidos precisa de uma dose de ataque desproporcionalmente maior que sua dose de manutenção, porque o Vd (que multiplica a Cp-alvo na fórmula de ataque) é grande, enquanto o clearance (que multiplica a Cp-alvo na fórmula de manutenção) pode ser modesto. É exatamente o padrão visto na digoxina: dose de ataque muitas vezes maior, em miligramas totais, que a dose diária de manutenção — não por capricho posológico, mas porque as duas doses estão resolvendo problemas fisicamente diferentes."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para consolidar: dose de ataque = Vd × Cp-alvo (preenche espaço, uma vez). Dose de manutenção = Clearance × Cp-alvo (repõe fluxo, continuamente). Nenhuma das duas substitui a outra — um tratamento com dose de ataque quase sempre precisa de dose de manutenção em seguida, ou a concentração conquistada cai de volta a zero."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco não introduz nenhum parâmetro novo — ele é a aplicação combinada de dois parâmetros já detalhados em blocos próprios desta mesma disciplina: o volume de distribuição, que determina o tamanho da dose de ataque, e o clearance, que determina o tamanho da dose de manutenção. Sem ter entendido por que o Vd pode superar o volume corporal real (fármacos sequestrados em tecidos exigem doses de ataque maiores) e por que o clearance é uma razão estável de depuração (não uma massa fixa), as duas fórmulas apresentadas aqui seriam apenas contas decoradas, sem significado fisiológico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse raciocínio também se conecta diretamente ao bloco-pai desta família, que já havia anunciado a dose de ataque como resposta a situações em que 'esperar o equilíbrio se formar naturalmente é clinicamente inaceitável'. Aqui esse anúncio se torna cálculo concreto. E se conecta, adiante, ao ajuste de posologia em pacientes com insuficiência renal ou hepática: como o clearance reduzido nessas condições diminui a dose de manutenção necessária (mas não costuma alterar o Vd, e portanto não altera a dose de ataque), entender separadamente os dois cálculos é o que permite ajustar apenas o parâmetro correto, sem mexer no outro sem necessidade."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛁",
+      "conteudo": "Retomando a banheira já usada para explicar o estado de equilíbrio: encher uma banheira aos poucos, por pulsos regulares da torneira, até o nível estabilizar quando a entrada se iguala ao escoamento pelo ralo, é a dose de manutenção sozinha — funciona, mas demora vários pulsos até o nível desejado. A dose de ataque é abrir a torneira no máximo uma única vez, despejando de imediato a quantidade de água exatamente necessária para preencher a banheira até o nível-alvo — e só depois disso passar a repor, pulso a pulso, apenas o que escoa pelo ralo. A quantidade de água do primeiro despejo depende do tamanho da banheira (equivalente ao Vd); a quantidade de cada pulso de manutenção depende da velocidade do ralo (equivalente ao clearance). A analogia quebra num ponto que já foi visto antes nesta disciplina: o Vd de um fármaco real pode representar um 'tamanho de banheira' matematicamente maior que qualquer banheira física, porque parte da água (do fármaco) fica retida dentro de objetos dentro da banheira (os tecidos), e não livre no volume que se vê."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "dose de ataque",
+      "origem": "do francês attaque (ação de atacar, avançar rapidamente), incorporado à farmacologia clínica como tradução do inglês loading dose",
+      "significado": "literalmente, a dose que 'ataca' o problema de imediato, carregando o organismo com a quantidade necessária para o efeito terapêutico sem esperar acúmulo gradual",
+      "explicacao": "Em inglês, o termo consagrado é loading dose — 'dose de carregamento', numa metáfora industrial de encher um reservatório de uma vez. O português adotou 'dose de ataque', que reforça a ideia de urgência clínica: é a dose usada quando o quadro do paciente não permite esperar o acúmulo natural de doses de manutenção sucessivas. A tradução muda a metáfora (de 'carregar um reservatório' para 'atacar um problema'), mas preserva o significado farmacocinético exato: uma dose única, maior, desenhada para preencher o volume de distribuição de imediato."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um fármaco tivesse Vd igual a zero (hipoteticamente, permanecesse só no ponto de infusão, sem se distribuir a lugar nenhum), a dose de ataque calculada por Vd × Cp-alvo ainda faria sentido?",
+      "resposta": "A fórmula ainda seria matematicamente válida, mas resultaria em dose de ataque igual a zero — o que revela, por absurdo, a lógica do cálculo: se não há volume nenhum para preencher, não há necessidade de dose extra além da manutenção. Na prática, nenhum fármaco tem Vd zero (mesmo os mais restritos ao plasma têm Vd próximo ao volume plasmático, nunca nulo), mas o exercício mostra que a dose de ataque existe exclusivamente para resolver o problema de preencher um espaço de distribuição real. Fármacos com Vd muito baixo, portanto, precisam de doses de ataque proporcionalmente pequenas — quase toda a dose inicial já seria muito próxima da dose de manutenção, porque há pouco 'espaço extra' a preencher além do que já circula no plasma."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas doses, dois parâmetros: ataque por Vd, manutenção por clearance",
+      "descricao": "Diagrama em duas colunas lado a lado. Coluna esquerda, rotulada 'DOSE DE ATAQUE', mostra um recipiente grande (representando o Vd) sendo preenchido de uma só vez por uma seta larga rotulada 'Vd × Cp-alvo', com um gráfico pequeno ao lado mostrando a concentração plasmática saltando diretamente para a faixa terapêutica em degrau único. Coluna direita, rotulada 'DOSE DE MANUTENÇÃO', mostra o mesmo recipiente já cheio, com um cano de saída constante (representando o clearance) e pulsos regulares de reposição rotulados 'Clearance × Cp-alvo', com um gráfico pequeno ao lado mostrando a concentração oscilando estável dentro da faixa terapêutica ao longo de várias doses. Seta conectando as duas colunas da esquerda para a direita, indicando sequência temporal. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial educacional, fundo transparente, estilo de livro didático farmacológico moderno, em português, dividido em dois painéis lado a lado conectados por uma seta temporal. Painel esquerdo, rotulado 'DOSE DE ATAQUE = Vd × Cp-alvo': um recipiente cilíndrico grande sendo preenchido de uma só vez por uma seta larga entrando pelo topo; ao lado, um pequeno gráfico de concentração plasmática por tempo mostrando um único degrau abrupto subindo direto até uma faixa horizontal sombreada em verde claro rotulada 'faixa terapêutica'. Painel direito, rotulado 'DOSE DE MANUTENÇÃO = Clearance × Cp-alvo': o mesmo recipiente já cheio, com um cano de saída constante na base (representando eliminação) e pequenas setas de reposição entrando em pulsos regulares pelo topo; ao lado, um pequeno gráfico mostrando a concentração oscilando em pequenas ondulações estáveis dentro da mesma faixa terapêutica sombreada em verde claro. Seta horizontal grande conectando painel esquerdo ao direito, rotulada 'depois de atingir o alvo'. Paleta de cores suaves e distintas, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-007",
+        "titulo": "Regimes de Dose e Biodisponibilidade (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "O bloco-pai já anuncia a existência da dose de ataque como resposta a situações em que esperar o acúmulo natural até o estado de equilíbrio é clinicamente inaceitável. Este bloco detalha exatamente esse cálculo."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Estado de equilíbrio (steady state) — matemática e significado clínico",
+        "mecanismo_conexao": "A dose de manutenção calculada aqui é exatamente a dose que sustenta o patamar de estado de equilíbrio detalhado em bloco próprio da mesma família de conteúdo.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Ajuste de posologia em insuficiência renal e hepática",
+        "mecanismo_conexao": "Como a insuficiência de órgão reduz o clearance, mas em geral não altera o Vd, o ajuste correto nessas condições recai sobre a dose de manutenção, deixando a dose de ataque inicial inalterada — distinção que só faz sentido entendendo os dois cálculos separadamente.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-003-01",
+        "tipo_relacao": "PRE_REQUISITO_CONCEITUAL",
+        "explicacao": "A dose de ataque é o próprio cálculo de Vd, isolando a variável dose (Dose de ataque = Vd × Cp-alvo). Sem entender por que o Vd pode superar o volume corporal real, a magnitude de certas doses de ataque (como a da digoxina) pareceria arbitrária."
+      },
+      {
+        "bloco_id": "s4-farma1-01-006-02",
+        "tipo_relacao": "PRE_REQUISITO_CONCEITUAL",
+        "explicacao": "A dose de manutenção é o cálculo de clearance aplicado à concentração-alvo (Dose de manutenção = Clearance × Cp-alvo). Sem entender que o clearance é uma razão de volume depurado por tempo, a fórmula de manutenção seria apenas uma multiplicação sem significado fisiológico."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-007-02-fc01",
+      "pergunta": "Por que a dose de ataque usa o volume de distribuição (Vd) e não o clearance, enquanto a dose de manutenção usa o clearance e não o Vd?",
+      "resposta": "Porque as duas doses resolvem problemas fisicamente diferentes. A dose de ataque precisa preencher, de uma só vez, o espaço aparente de distribuição do fármaco — uma questão de volume, por isso Dose de ataque = Vd × Cp-alvo. A dose de manutenção precisa repor, a cada intervalo, apenas o que está sendo eliminado do organismo — uma questão de fluxo (volume por tempo), por isso Dose de manutenção = Clearance × Cp-alvo. Usar o parâmetro errado em cada cálculo levaria a doses sem relação com o problema que cada uma deveria resolver.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["dose-de-ataque", "dose-de-manutencao", "farmacocinetica"]
+    },
+    {
+      "card_id": "s4-farma1-01-007-02-fc02",
+      "pergunta": "Calcule a dose de ataque e a taxa de manutenção contínua (infusão) para um fármaco com Vd de 50 litros, clearance de 6 L/h, buscando concentração-alvo de 3 mg/L.",
+      "resposta": "Dose de ataque = Vd × Cp-alvo = 50 L × 3 mg/L = 150 mg, administrada uma única vez (ou fracionada em poucas administrações próximas) para levar a concentração diretamente ao alvo. Taxa de manutenção contínua = Clearance × Cp-alvo = 6 L/h × 3 mg/L = 18 mg/h, a taxa de infusão necessária para repor exatamente o que é eliminado por hora, sustentando o patamar já atingido pela dose de ataque.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["dose-de-ataque", "dose-de-manutencao", "calculo"]
+    },
+    {
+      "card_id": "s4-farma1-01-007-02-fc03",
+      "pergunta": "Por que repetir a dose de ataque de digoxina a cada intervalo, como se fosse a dose de manutenção, é um erro perigoso de prescrição?",
+      "resposta": "A dose de ataque foi calculada para preencher, de uma vez, o volume de distribuição inteiro do fármaco, partindo de concentração plasmática zero (Dose de ataque = Vd × Cp-alvo). A dose de manutenção, em contraste, precisa repor apenas a fração eliminada pelo clearance a cada intervalo, já com a concentração-alvo estabelecida. Como o Vd da digoxina é muito maior que seu clearance multiplicado pelo intervalo de dose, a dose de ataque é muito maior, em miligramas, que a dose de manutenção correspondente. Repetir a dose de ataque no lugar da manutenção adicionaria, a cada intervalo, uma quantidade muito acima do que é eliminado — gerando acúmulo progressivo e risco real de intoxicação digitálica.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["dose-de-ataque", "digoxina", "erro-de-prescricao"]
+    },
+    {
+      "card_id": "s4-farma1-01-007-02-fc04",
+      "pergunta": "Se um fármaco tivesse Vd igual a zero, hipoteticamente, o que a fórmula da dose de ataque revelaria sobre a necessidade dessa dose?",
+      "resposta": "A dose de ataque calculada seria zero, porque não haveria volume de distribuição nenhum para preencher. Isso revela, por absurdo, que a dose de ataque existe exclusivamente para resolver o problema de preencher um espaço real de distribuição — quanto menor o Vd de um fármaco, menor a diferença entre sua dose de ataque e sua dose de manutenção, porque há pouco espaço extra além do que já circula no plasma.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["dose-de-ataque", "volume-de-distribuicao", "raciocinio-quantitativo"]
+    },
+    {
+      "card_id": "s4-farma1-01-007-02-fc05",
+      "pergunta": "Um paciente inicia amiodarona intravenosa para uma taquicardia ventricular instável e recebe uma dose de ataque calculada por Vd. Se a manutenção subsequente for calculada usando o mesmo Vd em vez do clearance do fármaco, que erro conceitual isso representa?",
+      "resposta": "Representa a troca dos dois parâmetros: usar Vd (que descreve espaço de distribuição) para calcular uma dose que deveria depender de clearance (que descreve velocidade de eliminação). Como o Vd da amiodarona é extremamente alto (o fármaco se acumula amplamente em tecido adiposo e outros tecidos), aplicar Vd × Cp-alvo repetidamente como dose de manutenção geraria uma dose muito maior do que o necessário para repor apenas a fração eliminada pelo clearance a cada intervalo — configurando acúmulo progressivo e risco de toxicidade, incluindo os efeitos adversos sistêmicos característicos da amiodarona.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["dose-de-ataque", "amiodarona", "clearance"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-007-02-caso01",
+      "titulo": "Dose de ataque de amiodarona numa taquicardia ventricular instável",
+      "apresentacao": "Homem de 63 anos, com cardiopatia isquêmica prévia, é admitido em taquicardia ventricular monomórfica sustentada, hemodinamicamente instável após cardioversão elétrica inicial mal sucedida em manter ritmo sinusal. A equipe decide iniciar amiodarona intravenosa. Como a amiodarona tem Vd extremamente alto (da ordem de dezenas de litros por quilo, refletindo acúmulo intenso em tecido adiposo e outros tecidos) e clearance relativamente baixo, esperar doses de manutenção repetidas até o acúmulo natural atingir a faixa antiarrítmica levaria dias — tempo que a instabilidade elétrica do paciente não permite.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A amiodarona se distribui amplamente para tecido adiposo e outros compartimentos teciduais, resultando em Vd muito alto; ao mesmo tempo, seu clearance hepático é comparativamente baixo, o que tornaria o acúmulo por doses de manutenção isoladas extremamente lento."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O protocolo usa Dose de ataque = Vd × Cp-alvo para calcular uma dose de carga suficiente para preencher rapidamente esse grande volume aparente de distribuição, seguida de dose de manutenção contínua muito menor, calculada por Clearance × Cp-alvo, apenas para sustentar o patamar já atingido."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Se a equipe usasse apenas a dose de manutenção desde o início (sem dose de ataque), a concentração plasmática subiria lentamente ao longo de várias meias-vidas — dias, no caso da amiodarona, cuja meia-vida é excepcionalmente longa — deixando o paciente sem proteção antiarrítmica efetiva durante esse período crítico."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sem dose de ataque, o paciente permaneceria em risco de recorrência da taquicardia ventricular e nova instabilidade hemodinâmica durante os dias necessários para o acúmulo natural atingir a faixa terapêutica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Com a dose de ataque corretamente calculada a partir do Vd, a concentração-alvo antiarrítmica é atingida em horas, não dias, permitindo controle mais rápido do ritmo. A dose de manutenção subsequente, calculada pelo clearance (e não repetindo a dose de ataque), sustenta esse patamar sem gerar acúmulo progressivo — o que seria especialmente perigoso dado que a toxicidade da amiodarona (pulmonar, tireoidiana, hepática) está associada a exposição cumulativa prolongada."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra as duas fórmulas operando lado a lado no mesmo fármaco: a dose de ataque preenche rapidamente o Vd elevado da amiodarona, resolvendo a urgência clínica de uma arritmia instável; a dose de manutenção subsequente, calculada separadamente pelo clearance, sustenta o patamar sem repetir a lógica da dose de ataque — reforçando que confundir os dois cálculos, aqui, teria consequências opostas: dose de ataque insuficiente deixaria a arritmia sem controle rápido, e dose de manutenção superdimensionada aumentaria o risco de toxicidade cumulativa característica da amiodarona.",
+      "disciplinas_relacionadas": ["farmacologia", "cardiologia", "clinica"],
+      "diagnostico_revelado": "Taquicardia ventricular instável tratada com dose de ataque de amiodarona calculada a partir do volume de distribuição do fármaco, seguida de dose de manutenção calculada pelo clearance.",
+      "tratamento_resumido": "Dose de ataque intravenosa de amiodarona para atingir rapidamente a concentração-alvo antiarrítmica, seguida de infusão de manutenção em dose muito menor, guiada pelo clearance hepático do fármaco, com monitorização de toxicidade cumulativa (pulmonar, tireoidiana, hepática) ao longo do tratamento prolongado."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-007-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics: Elimination and Time-Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

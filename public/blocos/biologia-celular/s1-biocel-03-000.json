@@ -144,50 +144,45 @@
     }
   ],
   "conexoes": {
-    "prerequisitos": [
-      {
-        "id": "s1-biocel-00-000",
-        "tipo": "VEJA_ANTES",
-        "descricao": "Visão Geral da Célula — contexto de por que estruturas intracelulares importam"
-      },
-      {
-        "id": "s1-biocel-02-000",
-        "tipo": "FUNDAMENTO",
-        "descricao": "Membrana Plasmática e Bicamada Lipídica — o citoesqueleto ancora-se nela"
-      }
-    ],
+    "prerequisitos": [],
     "futuras": [
       {
         "id": "s1-biocel-03-001",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Panorama dos Três Sistemas — mergulho profundo na lógica comparativa"
+        "descricao": "Panorama dos Três Sistemas — mergulho profundo na lógica comparativa",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s1-biocel-03-002",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Microfilamentos e Actina — movimento e contração"
+        "descricao": "Microfilamentos e Actina — movimento e contração",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s1-biocel-03-003",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Filamentos Intermediários — estabilidade e coesão"
+        "descricao": "Filamentos Intermediários — estabilidade e coesão",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s1-biocel-03-004",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Microtúbulos e Organização — ordem de longa distância"
+        "descricao": "Microtúbulos e Organização — ordem de longa distância",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
       {
         "id": "s1-biocel-09-000",
         "tipo": "MECANISMO_COMPARTILHADO",
-        "descricao": "Proteínas Motoras (Myosina, Quinesina, Dineína) — mecanismo molecular de transporte ao longo de filamentos"
+        "descricao": "Proteínas Motoras (Myosina, Quinesina, Dineína) — mecanismo molecular de transporte ao longo de filamentos",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       },
       {
         "id": "s1-biocel-08-000",
         "tipo": "RECONHECIMENTO_CLINICO",
-        "descricao": "Divisão Celular e Mitose — rearranjo completo do citoesqueleto"
+        "descricao": "Divisão Celular e Mitose — rearranjo completo do citoesqueleto",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -251,21 +246,41 @@
   ],
   "casos_clinicos": [
     {
-      "id": "cc-biocel-03-000-001",
+      "caso_id": "cc-biocel-03-000-001",
       "titulo": "Paciente com Fraqueza Progressiva e Biópsias Musculares Anormais",
-      "etapa_1_apresentacao": "Uma mulher de 35 anos procura seu consultório com queixa de fraqueza muscular progressiva de 6 meses. Começou com dificuldade para subir escadas, agora tem dificuldade até para pentear o cabelo. Reflexos ainda presentes, sem sensibilidade alterada. Biópsias de pele e músculo mostram fragmentação anormal de filamentos dentro das fibras musculares — como se o 'tecido' interior estivesse se desfiando.",
-      "etapa_2_questao": "Qual estrutura citoplasmática está defeituosa, que tipo de proteína está mutada, e por que isto causa fraqueza muscular?",
-      "etapa_3_achados": "Microscopia eletrônica mostra desorganização dos filamentos intermediários. Teste genético revela mutação no gene LMNA, que codifica lamina (um tipo de filamento intermediário). Análise bioquímica mostra que as lâminas não conseguem se polimerizar adequadamente. As fibras musculares perdem coesão. Contacto entre célula e célula vizinha se deteriora.",
-      "etapa_4_diagnostico": "Distrofia Muscular Emery-Dreifuss (DMED) — uma doença genética rara causada por defeito em filamentos intermediários nucleares e citoplasmáticos.",
-      "etapa_5_manejo": "Confirmação genética. Encaminhamento para cardiologia (DMED frequentemente causa arritmias cardíacas letais, porque o coração também depende de lâminas). Suporte físico. Pesquisa de ensaios clínicos com terapia gênica. Explicação pedagógica: 'Seu corpo tentava manter os músculos coesos e resistentes usando filamentos especiais chamados lâminas. Quando estes filamentos não formam corretamente, a estrutura colapsa e os músculos enfraquecem. É como se as correntes que mantêm seu edifício de pé estivessem quebrando uma por uma.'",
-      "conexoes_clinicas": [
+      "apresentacao": "Uma mulher de 35 anos procura seu consultório com queixa de fraqueza muscular progressiva de 6 meses. Começou com dificuldade para subir escadas, agora tem dificuldade até para pentear o cabelo. Reflexos ainda presentes, sem sensibilidade alterada. Biópsias de pele e músculo mostram fragmentação anormal de filamentos dentro das fibras musculares — como se o 'tecido' interior estivesse se desfiando.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação no gene LMNA, que codifica a lamina, um tipo de filamento intermediário nuclear."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Microscopia eletrônica mostra desorganização dos filamentos intermediários. Teste genético revela mutação no gene LMNA, que codifica lamina (um tipo de filamento intermediário). Análise bioquímica mostra que as lâminas não conseguem se polimerizar adequadamente. As fibras musculares perdem coesão. Contacto entre célula e célula vizinha se deteriora."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "As lâminas mutadas não conseguem se polimerizar adequadamente; as fibras musculares perdem coesão estrutural e o contato célula-célula se deteriora."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Qual estrutura citoplasmática está defeituosa, que tipo de proteína está mutada, e por que isto causa fraqueza muscular?"
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Confirmação genética. Encaminhamento para cardiologia (DMED frequentemente causa arritmias cardíacas letais, porque o coração também depende de lâminas). Suporte físico. Pesquisa de ensaios clínicos com terapia gênica. Explicação pedagógica: 'Seu corpo tentava manter os músculos coesos e resistentes usando filamentos especiais chamados lâminas. Quando estes filamentos não formam corretamente, a estrutura colapsa e os músculos enfraquecem. É como se as correntes que mantêm seu edifício de pé estivessem quebrando uma por uma.'"
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que o citoesqueleto (filamentos intermediários, estudado neste bloco) não é só estrutura interna passiva — sua integridade é necessária para a coesão mecânica de tecidos inteiros, como o muscular.",
+      "disciplinas_relacionadas": [
         "Anatomia: Estrutura e função das fibras musculares esqueléticas",
         "Biologia Celular: Filamentos intermediários e seu papel em coesão celular",
         "Cardiologia: Por que DMED afeta o coração (depende também de lâminas)",
         "Genética: Herança autossômica dominante/recessiva dependendo do subtipo de DMED",
         "Patologia: Desorganização ultraestrutural em microscopia eletrônica"
       ],
-      "nivel_complexidade": 4
+      "diagnostico_revelado": "Distrofia Muscular Emery-Dreifuss (DMED) — uma doença genética rara causada por defeito em filamentos intermediários nucleares e citoplasmáticos.",
+      "tratamento_resumido": "Confirmação genética, encaminhamento cardiológico (risco de arritmias letais, já que o coração também depende de lâminas), suporte físico e acompanhamento de ensaios de terapia gênica."
     }
   ],
   "midia": {

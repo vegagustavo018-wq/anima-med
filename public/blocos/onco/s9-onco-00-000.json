@@ -153,207 +153,51 @@
       "prompt_ia": "Create a 5-panel medical illustration in vector style showing carcinogenesis stages: (1) Normal epithelial cell with intact basal membrane, (2) Cell with RAS mutation (nucleus slightly enlarged, increased mitoses), (3) Cell with TP53 loss (larger irregular nucleus, no apoptosis, dysplasia visible), (4) Cell with telomerase activation and EMT (broken basal membrane, cell invading stroma, angiogenesis starting), (5) Cell in blood vessel traveling to distant organ (metastatic colony forming in lung/brain). Use professional medical illustration colors: normal nucleus blue-pale, tumor nucleus dark blue/black, normal cytoplasm pink-light, tumor cytoplasm pink-darker. Include anatomical labels in Portuguese: Epitélio, Membrana Basal, Conectivo, Vaso Sanguíneo, Colônia Metastática. Transparent/adaptive background. Arrows showing causal progression between stages."
     },
     {
-      "tipo": "text",
+      "tipo": "texto",
       "conteudo": "Oncologia — Visão Geral — conclui-se aqui com a imagem das 5 etapas gravadas mentalmente. Uma célula normal exposta a carcinógeno sofre cascata de 5-7 mutações críticas que transformam controle em caos. Nenhuma mutação isolada consegue. É a combinação que importa. E é porque entendemos essa cascata que conseguimos desenhar drogas para cada etapa: bloqueadores de RAS, restauradores de p53, inibidores de telomerase, bloqueadores de VEGF, restauradores de apoptose. Cada terapia visa um elo da cadeia. Quanto mais cedo interrompemos a cadeia, melhor o prognóstico."
     }
   ],
-  "flashcards": [
-    {
-      "card_id": "fc-s9onc-001",
-      "tipo": "por_que",
-      "pergunta": "Por que uma célula que sofre uma única mutação oncogênica (ex: RAS mutado) não vira tumor metastático imediatamente?",
-      "resposta": "Porque múltiplos freios ainda estão funcionando. Uma célula com RAS ativado (acelerador ligado) ainda tem TP53 (freio 1), RB (freio 2), telômeros que limitam divisões (freio 3), membrana basal que bloqueia invasão (freio 4), apoptose que mata danificados (freio 5). A célula pode ter vantagem — divide mais — mas está confinada e pode morrer. Precisa de MÚLTIPLAS mutações em paralelo para perder todos os freios.",
-      "dificuldade": 3,
-      "nivel_alvo": 3,
-      "tags": [
-        "cascata",
-        "mecanismo"
-      ]
-    },
-    {
-      "card_id": "fc-s9onc-002",
-      "tipo": "mecanismo",
-      "pergunta": "Descreva a sequência de 5 etapas de carcinogênese em um tumor de pulmão por fumador, começando pela exposição a carcinógeno até metástase.",
-      "resposta": "1. INICIAÇÃO: Benzopireno (tabaco) danifica DNA em célula brônquica; KRAS fica mutado, célula ganha acelerador e divide mais rápido. 2. PROMOÇÃO: Segunda mutação em TP53 (anos depois) — célula perde capacidade de apoptose, agora tem acelerador + sem freio de morte. 3. TRANSFORMAÇÃO: Telomerase reativada (terceira mutação) — célula agora é imortal; junto, perde E-caderina (TEM) e quebra membrana basal, vira carcinoma invasivo. 4. PROGRESSÃO: Tumor invade conectivo, secreta VEGF, atrai vasos (angiogênese), cresce até centímetros. 5. DISSEMINAÇÃO: Célula invade vaso, circula, extravasão em pulmão ou cérebro, forma metástase.",
-      "dificuldade": 4,
-      "nivel_alvo": 4,
-      "tags": [
-        "cascata",
-        "cinco-etapas"
-      ]
-    },
-    {
-      "card_id": "fc-s9onc-003",
-      "tipo": "contrafactual",
-      "pergunta": "Se uma célula tivesse TP53 completamente funcional mas RAS mutado em nível homozigoto, qual seria o desfecho mais provável comparado a uma célula com RAS mutado + TP53 perdido?",
-      "resposta": "Célula com RAS mutado + TP53 funcional: cresce mais rápido, mas quando DNA fica danificado (por estresse oxidativo da proliferação rápida), p53 detecta e ordena apoptose. Célula morre. Não vira tumor invasivo. Comparado a RAS mutado + TP53 perdido: célula cresce, não entra em apoptose mesmo com DNA danificado, acumula ainda mais mutações, vira invasiva e maligna. TP53 é o guardião — sem ele, qualquer outra mutação se aproveita.",
-      "dificuldade": 4,
-      "nivel_alvo": 4,
-      "tags": [
-        "supressor",
-        "p53"
-      ]
-    },
-    {
-      "card_id": "fc-s9onc-004",
-      "tipo": "clinico",
-      "pergunta": "Paciente com síndrome de Li-Fraumeni (mutação germinativa de TP53) tem risco 600x maior de câncer antes dos 50 anos. Por qual mecanismo molecular uma única cópia defeituosa de TP53 herdada da mãe cria risco tão elevado?",
-      "resposta": "Em Li-Fraumeni, o paciente nasce com TP53 mutado em TODAS as suas células (herança). Em células normais, há 2 cópias de TP53 (uma de cada pai). Com uma cópia defeituosa herdada, cada célula tem 50% de chance de usar a cópia boa. Mas em uma célula que sofre iniciação (primeira mutação somática em RAS, por exemplo), há pressão seletiva — a célula com TP53 ainda funcional morre por apoptose se danificada. Mas se a SEGUNDA mutação somática naquele clone for perda de TP53, agora aquela célula PERDEU AMBAS as cópias (uma já era defeituosa, segunda somática destruiu a boa). Pronto: célula com acelerador + sem guardião. Mesmo evento que levaria muitos anos em pessoa normal (ter que sofrer 2 mutações de novo em TP53) já aconteceu 'mais fácil' em Li-Fraumeni. Isso é chamado 'two-hit hypothesis' — precisa de dois eventos, mas um já vem pronto de herança.",
-      "dificuldade": 4,
-      "nivel_alvo": 5,
-      "tags": [
-        "genetica",
-        "sindrome",
-        "heranca"
-      ]
-    },
-    {
-      "card_id": "fc-s9onc-005",
-      "tipo": "comparacao",
-      "pergunta": "Compare um tumor benigno (ex: lipoma) com um tumor maligno (ex: liposarcoma) em termos de características histológicas que refletem as etapas de carcinogênese.",
-      "resposta": "LIPOMA (benigno): Células adiposas bem-diferenciadas, organizadas, sem mitoses (não está em Iniciação/Promoção). Tem cápsula fibrosa que o limita (membrana basal/cápsula intacta, sem invasão = não passou por Transformação). Cresce lentamente (não tem telomerase ativada). Não invade estruturas vizinhas. Não metastiza. Histologicamente parece normal, só mal organizado. LIPOSARCOMA (maligno): Células adiposas atípicas com pleomorfismo (tamanhos e formas variadas). Mitoses abundantes (está em divisão = Iniciação+Promoção active). Invade conectivo vizinho e transgride bordas (Transformação — membrana basal rompida). Pode ter angiogênese (Progressão). Risco de metástase. Histologicamente é desarrumado, núcleos grandes, invasivo. A diferença molecular: lipoma pode ter mutação em um gene de diferenciação (ex: rearranjo de HMGA2), mas para aí. Liposarcoma tem múltiplas mutações em TP53, PTEN, RAS, telomerase.",
-      "dificuldade": 3,
-      "nivel_alvo": 3,
-      "tags": [
-        "benigno-vs-maligno",
-        "histologia"
-      ]
-    },
-    {
-      "card_id": "fc-s9onc-006",
-      "tipo": "armadilha",
-      "pergunta": "Verdadeiro ou falso: Um tumor com uma única mutação (ex: RAS mutado) pode metastizar se tiver acesso suficiente a vasos sanguíneos. Justifique sua resposta.",
-      "resposta": "FALSO. Metástase exige múltiplas capacidades: (1) invasão através de membrana basal (exige perda de E-caderina e ativação de TEM — múltiplas mutações), (2) resistência a apoptose durante circulação (exige perda de p53 ou ativação de anti-apoptóticos), (3) resistência a anoikis (morte por descolamento — novamente, exige múltiplas mutações em vias de sobrevivência), (4) capacidade de outgrowth em novo órgão (exige adaptação metabólica, novamente requer mutações em MYC, HIF, etc). Um tumor com apenas RAS mutado pode ser grande (vascular), mas não consegue invadir nem viajar porque ainda respeita barreiras teciduais e apoptose. A analogia: um carro com o acelerador preso no máximo, mas ainda com freios, airbag e encosto de cabeça funcionando — ele aceleração, mas não consegue derrapar ou voar.",
-      "dificuldade": 4,
-      "nivel_alvo": 4,
-      "tags": [
-        "metastase",
-        "cascata"
-      ]
-    },
-    {
-      "card_id": "fc-s9onc-007",
-      "tipo": "etimologia",
-      "pergunta": "A proteína 'p53' foi chamada assim porque tem 53 kilodaltons. Mas por que uma proteína supressora de tumor foi descoberta em primeiro lugar? O que o nome não revela?",
-      "resposta": "O nome 'p53' é genético — 53 kDa era peso molecular quando descoberta. Mas não revela sua FUNÇÃO — é o 'guardião do genoma', o 'policeman de DNA'. Quando Daniel Vogelstein estudou tumores em 1989, encontrou que a proteína de 53 kDa estava frequentemente ausente/mutada. Só depois é que percebeu que essa proteína ordena morte de célula danificada. O nome tecnicamente preciso ('peso molecular') ocultou sua importância clínica ('responsável por evitar câncer'). Uma nomenclatura melhor seria 'guardiã' ou 'Checkpoint G1/S controller', mas p53 pegou. Isso é comum em biologia — nomes refletem história da descoberta, não função.",
-      "dificuldade": 2,
-      "nivel_alvo": 2,
-      "tags": [
-        "nomenclatura",
-        "historia"
-      ]
-    },
-    {
-      "card_id": "fc-s9onc-008",
-      "tipo": "sintese_transdisciplinar",
-      "pergunta": "Conecte (1) o mecanismo de ativação de telomerase em câncer (Oncologia), (2) com o papel de telômeros em Biologia Celular, (3) com a idade avançada como fator de risco em Epidemiologia, e (4) com a estratégia terapêutica de inibir telomerase (Farmacologia).",
-      "resposta": "(1) Telomeros são repetições TTAGGG no fim de cromossomos; encurtam a cada divisão celular (~50-70 pb por divisão). Limite de Hayflick (~50-70 divisões) força senescência replicativa — célula para de dividir. (2) Em câncer, telomerase (enzima transcriptase reversa que estende telômeros) é reativada em ~85% dos tumores. Agora célula ignora limite de Hayflick, fica imortal. (3) Envelhecimento = mais divisões ao longo da vida = mais telômeros encurtados em células normais = senescência aumentada. Mas células que escapam dessa senescência (reativam telomerase) têm séculos de divisões potenciais — risco de mutações adicionais. Por isso câncer é doença de idosos: tempo para 5-7 mutações acontecer. (4) Terapêutica: bloquear telomerase (ex: drogas como imetelstat em fase clínica) forçaria tumor a respeitar limite de Hayflick, entraria em senescência, morreria.",
-      "dificuldade": 4,
-      "nivel_alvo": 5,
-      "tags": [
-        "senescencia",
-        "envelhecimento",
-        "telomeros"
-      ]
-    }
-  ],
+  "flashcards": [],
   "casos_clinicos": [
     {
-      "caso_id": "cc-s9onc-001",
-      "titulo": "Homem com Tosse Persistente e Achados de Tomografia",
-      "apresentacao": "Paciente masculino, 68 anos, tabagista de 50 anos-maço (2 maços/dia por 25 anos, parou há 5 anos). Procura UBS com tosse seca persistente há 3 meses. Sem febre, sem emagrecimento ainda. Exame físico: ausculta normal, sem linfadenopatia. Tomografia de tórax: nódulo de 2 cm no lobo superior direito, bem delimitado, sem calcificação. Linfonodos hilares discretamente aumentados (max 1 cm). Sem lesões em órgãos abdominais visualizados. Encaminhado para pneumologia.",
-      "questao": "Descreva a cascata de carcinogênese que provavelmente gerou esse nódulo tumoral pulmonar. O quê cada etapa representa nesse caso específico?",
+      "caso_id": "s9-onco-00-000-caso01",
+      "titulo": "Nódulo pulmonar incidental num tabagista de longa data",
+      "apresentacao": "Homem de 61 anos, tabagista há 38 anos (30 cigarros/dia), assintomático, realiza tomografia de tórax de rotina por queixa inespecífica de dor lombar. O exame revela, incidentalmente, nódulo espiculado de 2,8 cm em lobo superior direito, sem sintomas respiratórios associados. Biópsia guiada por broncoscopia confirma adenocarcinoma pulmonar. O painel molecular do tumor mostra mutação ativadora de KRAS e perda de função de TP53. Investigação de estadiamento com PET-CT mostra captação em dois linfonodos mediastinais ipsilaterais, sem evidência de metástase a distância.",
       "cascata": [
         {
           "etapa": "Causa",
-          "descricao": "Exposição crônica a carcinógenos do tabaco (benzopireno, nitrosaminas) por 25 anos. Mesmo tendo parado há 5 anos, o dano acumulado ao epitélio respiratório é irreversível. Muitas células brônquicas sofreram lesão oxidativa de DNA."
+          "descricao": "Exposição cumulativa, ao longo de quase quatro décadas, a carcinógenos do tabaco (benzopireno e outros hidrocarbonetos policíclicos) sobre o epitélio brônquico. Cada ciclo de dano e reparo aumentou a chance de uma célula acumular mutação permanente em vez de reparo fiel."
         },
         {
           "etapa": "Estrutura Afetada",
-          "descricao": "Epitélio brônquico do lobo superior direito. Pneumócitos e células claras são as principais células afetadas. Membrana basal e conectivo subjacente (alvéolos e parênquima pulmonar)."
+          "descricao": "Células epiteliais do brônquio/pneumócitos do lobo superior direito sofreram, em sequência ao longo dos anos, mutação ativadora do oncogene KRAS (um acelerador travado em posição 'ligado') e perda de função do gene supressor TP53 (o freio que ordenaria apoptose diante de dano genômico já não funciona)."
         },
         {
-          "etapa": "Disfunção — Iniciação",
-          "descricao": "ETAPA 1: Benzopireno causa mutação em uma célula brônquica — gene KRAS (oncogene mais comum em câncer de pulmão em não-fumadores e fumadores). Essa célula agora tem 'acelerador preso no ON'. Divide mais rápido que vizinhas. Forma clone de algumas centenas de células (anos 0-5 pós-exposição)."
+          "etapa": "Disfunção",
+          "descricao": "Com o acelerador travado e o freio perdido, o clone mutante divide sem controle e não é eliminado por apoptose. Ao longo de meses a anos, esse clone atravessa promoção, transformação (com reativação de telomerase, tornando-se imortal) e progressão (com angiogênese sustentando o crescimento acima do limite de difusão de oxigênio), até formar uma massa palpável ao exame de imagem. A disseminação para linfonodos mediastinais mostra que já ocorreu, ao menos parcialmente, a etapa de transição epitélio-mesenquimal com invasão linfática regional."
         },
         {
-          "etapa": "Disfunção — Promoção",
-          "descricao": "ETAPA 2: Um número de anos depois (tipicamente 5-15 anos), naquele clone KRAS-mutado, uma SEGUNDA mutação acontece — dessa vez em TP53 (gene supressor). Célula perde capacidade de apoptose. Agora tem acelerador ativado + freio de morte desligado. Clone expande para milhares de células. Epitélio começa a mostrar displasia (camadas desorganizadas de células atípicas). Ainda está confinado ao epitélio (carcinoma in situ) — membrana basal intacta."
+          "etapa": "Sintoma",
+          "descricao": "Ausência de sintomas respiratórios: o tumor, apesar de já ter 2,8 cm e comprometimento linfonodal regional, ainda não invadiu estrutura que gere tosse, dor torácica ou hemoptise — daí ter sido achado incidental. Essa lacuna entre biologia avançada (já com disseminação linfonodal) e ausência de sintoma é exatamente o que torna o câncer de pulmão perigoso: quando sintomático, frequentemente já progrediu mais."
         },
         {
-          "etapa": "Disfunção — Transformação e Progressão",
-          "descricao": "ETAPA 3-4: Telomerase é reativada (terceira mutação). Célula ignora limite de Hayflick, fica imortal. Simultaneamente, E-caderina é perdida (ou reduzida) — célula ativa programa TEM, perde adesão, começa a migrar. Quebra membrana basal, invade conectivo e parênquima. Tumor agora é carcinoma invasivo. Secretaa VEGF — vasos sanguíneos crescem para dentro. Tumor cresce de milímetros para centímetro. Histologicamente: célula atípica com núcleo grande, pleomorfismo, muitas mitoses, invadindo tecido normal."
-        },
-        {
-          "etapa": "Sintoma Clínico",
-          "descricao": "Tosse persistente surge quando: (a) tumor irrita epitélio brônquico (tosser reflexa), (b) tumor obstrui parcialmente via aérea (irritação contínua), ou (c) inflamação local ativa receptores vagais. Tumor de 2 cm é grande o suficiente para ser visto em CT, mas pequeno o suficiente para não causar sintoma respiratório ainda (sem dispneia). Ausência de emagrecimento e febre ainda — tumor está localizado, não disseminado sistemicamente."
-        },
-        {
-          "etapa": "Consequência — Estadiamento e Decisão Terapêutica",
-          "descricao": "Biópsia obtida (aspirado ou broncoscopia) mostra: adenocarcinoma de pulmão com mutação KRAS (detectada por testes moleculares). Estadiamento TNM: nódulo 2 cm = T1b, linfonodos 1 cm = N1 (linfonodo regional pequeno positivo), sem metástase visível = M0. Estádio IIA. Porque o tumor ainda está localizado (N1, sem M), a opção terapêutica é cirurgia ressecadora (lobectomia superior) + linfadenectomia + adjuvância. Se tivesse N3 ou M1, seria quimioterapia/imunoterapia primeiro. O mecanismo — cascata de 3+ mutações ao longo de 25 anos — explica por que não vira câncer todo dia em fumador, mas por que fumadores têm risco 20x maior."
+          "etapa": "Consequência",
+          "descricao": "Estadiamento TNM aproximado T2N2M0 (tumor >2cm com invasão linfonodal mediastinal ipsilateral, sem metástase a distância) — doença localmente avançada, mas ainda potencialmente curável com tratamento multimodal. O prognóstico e a escolha terapêutica dependem diretamente do perfil molecular: mutação de KRAS históricamente conferia pior resposta a terapias-alvo clássicas (ainda que inibidores específicos de KRAS G12C existam hoje para subtipos selecionados), e a perda de TP53 está associada a tumores mais agressivos e menor resposta a alguns quimioterápicos."
         }
       ],
-      "diagnostico_revelado": "Câncer de pulmão tipo adenocarcinoma, Estádio IIA, mutante KRAS, com-TP53 mutado (achados iniciais). Sem mutação de ALK, sem reconfiguração PD-L1 (hipotético sem dados adicionais).",
-      "tratamento_resumido": "Cirurgia (lobectomia superior direita com linfadenectomia, intenção curativa). Quimioterapia adjuvante (cisplatina + pemetrexede × 4 ciclos) para reduzir risco de recorrência. Seguimento com CT a cada 3 meses por 2 anos, depois anual."
-    },
-    {
-      "caso_id": "cc-s9onc-002",
-      "titulo": "Mulher com Risco Familiar e Mutação Germinativa",
-      "apresentacao": "Mulher de 32 anos, mãe de duas filhas (5 e 8 anos), sem história pessoal de câncer. Mãe faleceu de câncer de mama aos 48 anos; avó materna de câncer de ovário aos 55 anos; tia materna de câncer de mama aos 41 anos. Paciente refere preocupação. Teste genético solicita e acha: heterozigota para mutação BRCA1 (deleção exon 1-2, frameshift, Classe 5 — definitivamente patogênica). Seios sem achados ao exame. Mamografia aos 30 anos: sem achados. Está em risco — pede orientação. ",
-      "questao": "Explique por qual mecanismo uma mulher com uma cópia de BRCA1 mutada (herdada) tem risco 70% de câncer de mama antes dos 80 anos, enquanto população geral tem risco ~12%. Como isso se relaciona com a cascata de carcinogênese?",
-      "cascata": [
-        {
-          "etapa": "Causa — Herança",
-          "descricao": "Paciente herdou uma cópia de BRCA1 mutada de sua mãe. BRCA1 (BReast CAncer 1) é gene de reparo de DNA — codifica proteína que fixa quebras double-strand de DNA. Com uma cópia defeituosa em TODAS as células, cada célula mamária começar a vida com risco aumentado de dano ao DNA não reparado."
-        },
-        {
-          "etapa": "Estrutura Afetada",
-          "descricao": "Epitélio mamário — especificamente lóbulos e ductos. Células epiteliais basais e luminais têm déficit de reparo de DNA por BRCA1 herdado. Conectivo mamário (estroma) e tecido adiposo circundante também têm BRCA1 defeituoso, afetando microambiente."
-        },
-        {
-          "etapa": "Disfunção — Two-Hit e Cascata Acelerada",
-          "descricao": "ETAPA 1-2 ACELERADA: Em uma célula mamária normal, ela precisaria de 2 eventos raros para perder ambas cópias de BRCA1 (uma mutação herdada + uma somática por azar). Nesta paciente, já nasce sem uma cópia. Apenas UM evento somático (perda cromossomial da cópia normal) causa 'two-hit' — célula agora não consegue reparar DNA. ISSO ACELERA A AQUISIÇÃO DE MUTAÇÕES SUBSEQUENTES. Célula fica exposta a carcinógenos (radiação UV pele, oxidative stress endógeno) — não consegue reparar, acumula mutações em RAS, TP53, outros genes. Enquanto população geral precisa de ~5-7 mutações para gerar tumor (vários events raro), BRCA1-mutada precisa de menos porque reparo está pré-falho. A probabilidade de atingir TP53 mutado ENQUANTO VIVA é 70%, vs 12% geral."
-        },
-        {
-          "etapa": "Sintoma Clínico — Ainda Ausente",
-          "descricao": "Nesse momento (aos 32 anos), a paciente ainda não tem câncer. Mamografia normal. Mas biologicamente, suas células mamárias estão em risco elevado porque qualquer iniciação (uma mutação em RAS/MYC) progride MUITO mais rápido sem capacidade de reparar danos subsequentes. É como viver em uma cidade onde os freios dos carros são defeituosos — acidentes graves têm probabilidade muito maior."
-        },
-        {
-          "etapa": "Consequência — Manejo Preventivo",
-          "descricao": "Porque entendemos o mecanismo (deficiência de reparo = acumulação rápida de mutações = risco elevado), as opções são: (1) VIGILÂNCIA: mamografia/ressonância mais frequentes (anualmente a partir de 25 anos, vs população geral aos 40), esperando detectar tumor mais precoce quando t1 (antes de t3-4). (2) QUIMIOPROFILAXIA: tamoxifeno ou inibidor de aromatase reduz risco de ER+ tumores em 50% (bloqueia sinal de estrogênio que induz proliferação em células já com mutação iniciadora). (3) CIRURGIA PREVENTIVA: mastectomia bilateral reduz risco de câncer de mama de 70% para <5% (remove tecido em risco antes que malignidade aconteça). Escolha depende de preferência, risco de morte, impacto psicológico. A decisão é INFORMADA BIOLOGICAMENTE porque sabemos que o risco vem de deficiência de reparo acumulativa, não de uma mutação única."
-        }
+      "conexao_com_bloco": "O caso percorre as etapas de carcinogênese descritas no bloco (iniciação por carcinógeno do tabaco, promoção por perda de TP53, transformação com invasão, progressão com envolvimento linfonodal) e mostra, na prática, por que o texto insiste que nenhuma mutação isolada basta: só a combinação de KRAS ativado + TP53 perdido, acumulada ao longo de décadas de exposição, produziu o tumor. Também ilustra a tradução direta do estadiamento TNM em prognóstico, exatamente como o bloco descreve na seção sobre o assunto.",
+      "disciplinas_relacionadas": [
+        "oncologia",
+        "pneumologia",
+        "patologia",
+        "farmacologia"
       ],
-      "diagnostico_revelado": "Portadora de mutação germinativa BRCA1, Síndrome Hereditária de Câncer de Mama e Ovário. Sem diagnóstico de câncer no momento. Risco vital de câncer de mama 70%, risco de câncer de ovário 40%.",
-      "tratamento_resumido": "Vigilância intensiva (mamografia/RM mamária anual a partir de 25 anos, ultrassom transvaginal + CA-125 anual para rastreamento de ovário). Quimioprofilaxia com tamoxifeno (20 mg/dia por 5 anos, reduz risco de ER+ em 50%). Aconselhamento genético para filhas (50% de herança). Opção de cirurgia preventiva (mastectomia bilateral e/ou ooforectomia bilateral após idade reprodutiva) é discutida. Seguimento multidisciplinar oncologia/genética."
+      "diagnostico_revelado": "Adenocarcinoma pulmonar estádio localmente avançado (T2N2M0), com mutação de KRAS e perda de TP53.",
+      "tratamento_resumido": "Por se tratar de doença N2 (linfonodos mediastinais), o caso é discutido em equipe multidisciplinar: geralmente quimioterapia neoadjuvante (às vezes associada a imunoterapia) seguida de reavaliação para cirurgia ou consolidação com radioterapia, conforme resposta. Perfil molecular orienta terapia-alvo específica quando disponível (ex.: inibidor de KRAS G12C, se aplicável ao subtipo exato da mutação) e ajuda a prever resposta a quimioterapia convencional. Seguimento por imagem programado para detectar recidiva precocemente."
     }
   ],
   "conexoes": {
-    "prerequisitos": [
-      {
-        "bloco_id": "s3-celula-02-000",
-        "titulo": "Ciclo Celular e Checkpoints",
-        "disciplina": "biologia_celular",
-        "semestre": 3,
-        "relevancia": "base_necessaria",
-        "explicacao": "Compreender como célula progride de G1 para S e G2 para M, quais são os checkpoints que param progressão, é essencial para entender como RB e p53 funcionam como freios."
-      },
-      {
-        "bloco_id": "s3-celula-03-000",
-        "titulo": "Apoptose e Morte Celular Programada",
-        "disciplina": "biologia_celular",
-        "semestre": 3,
-        "relevancia": "base_necessaria",
-        "explicacao": "Apoptose é um dos principais mecanismos por qual p53 mata célula danificada. Sem compreender vias de apoptose (caspases, citocr., BAX/BCL2), TP53 fica abstrato."
-      },
-      {
-        "bloco_id": "s2-genetica-02-000",
-        "titulo": "Mutações e Aberrações Cromossomais",
-        "disciplina": "genetica",
-        "semestre": 2,
-        "relevancia": "base_necessaria",
-        "explicacao": "Entender tipos de mutações (ponto, deleção, amplificação, translocação) é pré-requisito para entender como KRAS fica hiperativo, por que TP53 perde função, etc."
-      }
-    ],
+    "prerequisitos": [],
     "futuras": [
       {
         "tipo": "CASCATA_CAUSAL",
@@ -413,18 +257,16 @@
     "laterais": [
       {
         "bloco_id": "s9-onco-01-000",
-        "tipo_relacao": "CASCATA_CAUSAL",
+        "tipo_relacao": "EXEMPLO_PARALELO",
         "explicacao": "Este bloco (Visão Geral) descreve MECANISMO por quê tumores existem. O próximo bloco descreverá TIPOS HISTOLÓGICOS específicos (carcinoma, sarcoma, etc.) — as manifestações do mecanismo."
       },
       {
         "bloco_id": "s6-patologia-02-000",
-        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "tipo_relacao": "EXEMPLO_PARALELO",
         "explicacao": "Patologia Geral estuda inflamação, regeneração, adaptação celular — processos que, quando descontrolados, alimentam carcinogênese. Disenteria crônica → metaplasia → displasia → câncer é exemplo de patologia descontrolada levando a oncologia."
       }
     ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
   "midia": {
     "imagens": [
       {

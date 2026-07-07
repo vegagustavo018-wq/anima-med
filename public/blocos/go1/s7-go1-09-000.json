@@ -10,49 +10,145 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Módulo 9 — Patologia Mamária",
+    "titulo": "Modulo 9 - Patologia Mamaria",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 2,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "patologia-mamaria",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Do sintoma mamário benigno ao câncer de mama; rastreio e conduta",
-  "narrativa": [],
+  "resumo_conciso": "Patologia mamária vai de sintomas benignos, como mastalgia e cistos, até câncer de mama. O raciocínio integra anatomia ducto-lobular, exame clínico, imagem, biópsia e rastreamento.",
+  "narrativa": [
+    {
+      "tipo": "abertura",
+      "conteudo": "Patologia mamária é uma área em que sintoma comum e medo de câncer se encontram. Dor, nódulo, descarga papilar, assimetria e alteração de pele precisam ser acolhidos e organizados por risco."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "A unidade ducto-lobular terminal é o ponto de origem de muitas alterações benignas e malignas. Ductos explicam descarga papilar; lóbulos respondem a hormônios; estroma e gordura moldam a palpação."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "O exame clínico ainda importa: inspeção, palpação de mamas e axilas, avaliação de pele, papila, retração, descarga e linfonodos orientam a investigação."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Imagem depende da idade e do achado. Ultrassom é central em mulheres jovens e massas palpáveis; mamografia ganha protagonismo com idade maior e rastreamento; ressonância fica para alto risco ou problemas específicos."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Nódulo palpável persistente não deve ser tranquilizado apenas por exame físico. A tríade clínica, imagem e biópsia quando indicada evita perda de câncer palpável."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Mastalgia isolada e cíclica costuma ser benigna; descarga papilar espontânea, unilateral, uniductal e sanguinolenta é sinal de alerta; massa dura, fixa ou com retração cutânea exige investigação prioritária."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "O módulo progride do benigno ao maligno: sintomas, alterações funcionais, fibroadenoma, mastites, rastreamento e câncer de mama."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      "s7-go1-08-033"
+    ],
+    "futuras": [
+      "s7-go1-09-004",
+      "s7-go1-09-006"
+    ],
+    "laterais": [
+      "s7-go1-05-005",
+      "s7-go1-07-006"
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "id": "s7-go1-09-000-fc-01",
+      "pergunta": "Qual estrutura origina muitas lesões mamárias?",
+      "resposta": "Unidade ducto-lobular terminal.",
+      "tipo": "conceito"
+    },
+    {
+      "id": "s7-go1-09-000-fc-02",
+      "pergunta": "Qual imagem é muito útil em mulher jovem com nódulo?",
+      "resposta": "Ultrassom mamário.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-09-000-fc-03",
+      "pergunta": "Qual descarga papilar preocupa?",
+      "resposta": "Espontânea, unilateral, uniductal, sanguinolenta ou serosa persistente.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-09-000-fc-04",
+      "pergunta": "Exame físico normal exclui câncer?",
+      "resposta": "Não. Achado persistente deve seguir investigação adequada.",
+      "tipo": "aplicacao"
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "id": "s7-go1-09-000-cc-01",
+      "titulo": "Nódulo palpável",
+      "enunciado": "Mulher de 38 anos percebe nódulo firme novo em quadrante superior externo.",
+      "pergunta": "Qual raciocínio?",
+      "resposta_comentada": "Não basta tranquilizar; deve correlacionar exame clínico com imagem apropriada e biópsia se suspeito."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Mapa do módulo de mama: anatomia ducto-lobular, dor, nódulo, descarga, imagem, biópsia e rastreamento.",
+        "alt": "Ilustracao educacional para Modulo 9 - Patologia Mamaria"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "ACR Appropriateness Criteria - Palpable Breast Masses",
+      "url": "https://acsearch.acr.org/docs/69495/Narrative/",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "ACR Appropriateness Criteria - Breast Pain",
+      "url": "https://acsearch.acr.org/docs/3091546/Narrative/",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "ACR Appropriateness Criteria - Evaluation of Nipple Discharge",
+      "url": "https://acsearch.acr.org/docs/3099312/Narrative/",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

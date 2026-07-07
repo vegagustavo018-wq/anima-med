@@ -5,54 +5,167 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "EPA-10 — Reconhecer o paciente que requer cuidado urgente e iniciar manejo",
+    "subtitulo": "Antes de qualquer exame, antes de qualquer número: só de olhar o paciente, você já sabe se ele está bem ou não?",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 2,
+    "topico": 8,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "epa_avaliacao",
+      "seguranca_paciente",
+      "conduta"
     ],
+    "tipo_conteudo": "competencia_epa",
+    "status": "publicado",
+    "data_criacao": "2026-07-06",
+    "data_revisao": "2026-07-06",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
-    "formato_internato": "competencia_epa",
-    "epa_codigo": "EPA-10",
-    "epa_nivel_alvo": 3
+    "tempo_estudo_minutos": 10,
+    "palavras_chave": [
+      "EPA-10",
+      "reconhecimento de urgência",
+      "escore de alerta precoce",
+      "ABCDE"
+    ],
+    "formato_internato": "competencia_epa"
   },
-  "resumo_conciso": "Detectar a deterioração precoce, chamar ajuda e iniciar o manejo antes que o código soe",
-  "narrativa": [],
+  "resumo_conciso": "Antes de qualquer escore ou exame, existe um julgamento visual rápido — 'esse paciente parece doente ou não' — que médicos experientes fazem em segundos. A EPA-10 mede se você já está desenvolvendo esse olhar, e se sabe agir (ABCDE + chamar ajuda) assim que ele dispara.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você entra no quarto para reavaliar dois pacientes na mesma manhã. O primeiro está sentado, conversando, comendo o café da manhã — você nem precisa olhar o monitor para saber que está bem. O segundo está deitado, quieto, respondendo com atraso às suas perguntas, com uma coloração de pele que você não sabe explicar direito, mas que te incomoda. Antes de qualquer sinal vital, antes de qualquer exame, esse julgamento rápido — 'algo aqui está errado' — já é dado clínico. A EPA-10 mede exatamente essa competência: reconhecer precocemente quem precisa de atenção urgente, e agir, não só observar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do olhar rápido ao primeiro manejo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse julgamento inicial ('parece doente' vs. 'parece bem') não substitui dados objetivos — ele complementa e antecipa. Sistemas formais de alerta precoce (escores que somam pontos por frequência respiratória, saturação, pressão, frequência cardíaca, temperatura e nível de consciência) existem justamente para estruturar e validar essa percepção, sinalizando quando um paciente que 'parece um pouco diferente' já cruzou um limiar objetivo de risco. Reconhecer a urgência não é escolher entre intuição e escore — é usar os dois: a intuição para acionar atenção mais cedo, o escore para confirmar e comunicar a gravidade de forma padronizada para o resto da equipe."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "O que separa os níveis de confiabilidade nesta EPA",
+      "colunas": [
+        "Nível",
+        "Comportamento observável"
+      ],
+      "linhas": [
+        {
+          "Nível": "2 (supervisão direta)",
+          "Comportamento observável": "Reconhece deterioração óbvia (paciente já hipotenso, já hipóxico), mas demora a perceber sinais mais sutis; hesita em iniciar ABCDE sem primeiro ter certeza do diagnóstico"
+        },
+        {
+          "Nível": "3 (alvo desta EPA no estágio)",
+          "Comportamento observável": "Reconhece sinais precoces e sutis de deterioração, inicia estabilização inicial (via aérea, respiração, circulação) SEM esperar diagnóstico fechado, e aciona a equipe certa (residente, time de resposta rápida) de forma proporcional à gravidade percebida"
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O ABCDE (via aérea, respiração, circulação, estado neurológico, exposição) começa ANTES do diagnóstico estar claro — é a sequência de estabilização que se aplica independentemente da causa. Esperar entender 'o que é' antes de agir na estabilização básica é uma inversão perigosa de prioridade."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se, diante do segundo paciente ('parece diferente' mas sem sinal vital claramente alterado ainda), você decidir esperar a próxima aferição de rotina antes de agir, para não 'gerar alarme falso'?",
+      "resposta": "O julgamento clínico de que 'algo está errado' é precisamente o tipo de sinal que sistemas de alerta precoce tentam capturar antes que se torne óbvio nos números. Esperar a próxima aferição de rotina (que pode ser em horas) descarta a vantagem de reconhecimento precoce — o objetivo desta EPA é justamente agir na percepção inicial, reavaliando e escalando conforme necessário, não esperar confirmação numérica tardia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como é avaliada: observação direta em situações de deterioração real ou simulada, e revisão de tempo de resposta entre o primeiro sinal de alerta (percebido por qualquer membro da equipe) e a ação do interno. Erros comuns do interno: aguardar diagnóstico completo antes de iniciar qualquer manejo; hesitar em acionar ajuda por medo de estar 'exagerando'; e não reavaliar em intervalos curtos um paciente que já gerou alguma preocupação, mesmo que a primeira reavaliação pareça tranquilizadora."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1mi-02-007",
+        "titulo": "EPA-9 — Trabalhar em equipe interprofissional",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-01-003",
+        "titulo": "Sepse de Foco Urinário ou Abdominal — a primeira hora",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "O reconhecimento precoce e a ação sem esperar diagnóstico completo, treinados aqui, são exatamente a competência exercida naquele caso."
+      },
+      {
+        "id": "s10-int1mi-01-000",
+        "titulo": "Casos Paradigmáticos da Enfermaria e da Emergência Clínica",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "Praticamente todos os 15 casos paradigmáticos exercitam esta EPA em algum grau."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-02-008-001",
+      "tipo": "por_que",
+      "pergunta": "Por que o manejo inicial (ABCDE) deve começar antes do diagnóstico estar claro, em vez de esperar entender a causa primeiro?",
+      "resposta": "Porque a sequência de estabilização (via aérea, respiração, circulação, estado neurológico, exposição) trata as ameaças mais imediatas à vida de forma independente da causa — um paciente hipóxico precisa de oxigênio antes de você saber se é pneumonia, TEP ou insuficiência cardíaca. Esperar o diagnóstico fechado para só então agir na estabilização básica atrasa intervenções que já poderiam estar em curso.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "epa",
+        "epa-10",
+        "abcde"
+      ]
+    },
+    {
+      "card_id": "fc-s10-int1mi-02-008-002",
+      "tipo": "armadilha",
+      "pergunta": "Pegadinha: o paciente 'parece diferente' para você, mas os sinais vitais da última aferição ainda estão dentro da normalidade. Isso significa que você deve esperar a próxima aferição de rotina antes de agir?",
+      "resposta": "Não. O julgamento clínico de que algo mudou é, em si, dado relevante — muitas vezes precede a alteração mensurável dos sinais vitais. A conduta correta é reavaliar mais de perto e considerar aferição extra, não esperar passivamente pelo próximo horário programado.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "epa",
+        "epa-10",
+        "armadilha"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Bloco descreve a competência EPA de reconhecimento precoce de deterioração clínica e início de manejo inicial (ABCDE), não uma doença específica com etiologia e cascata próprias. O reconhecimento de urgência se aplica a inúmeras etiologias diferentes (sepse, hemorragia, insuficiência respiratória, entre outras já cobertas em blocos de doença específicos deste e de outros módulos) — forçar um único caso aqui duplicaria conteúdo já presente nos casos paradigmáticos referenciados nas conexões futuras, sem ensinar nada específico deste bloco."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "em_mudanca",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "epa_avaliacao",
-    "seguranca_paciente",
-    "conduta"
+  "fontes": [
+    {
+      "tipo": "diretriz",
+      "titulo": "National Early Warning Score (NEWS) 2: Standardising the assessment of acute-illness severity in the NHS",
+      "autores": "Royal College of Physicians",
+      "ano": 2017
+    },
+    {
+      "tipo": "diretriz",
+      "titulo": "Core Entrustable Professional Activities for Entering Residency",
+      "autores": "Association of American Medical Colleges (AAMC)",
+      "ano": 2014
+    }
   ]
 }

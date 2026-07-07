@@ -5,51 +5,345 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Ligação a Proteínas Plasmáticas",
+    "subtitulo": "Se o fármaco está no sangue, por que só uma fração dele conta?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "distribuicao",
+      "ligacao-proteica",
+      "albumina",
+      "alfa1-glicoproteina",
+      "interacoes",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Albumina, alfa1-glicoproteína; fração livre ativa; deslocamento e interações",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior estabeleceu que a ligação a proteínas plasmáticas é um dos três fatores que decidem a distribuição de um fármaco. Este bloco abre essa peça específica: por que ela existe, do que é feita e como funciona. O problema é que o plasma não é água pura — está cheio de proteínas circulantes, e a maioria dos fármacos tem alguma afinidade química por elas. Isso divide qualquer fármaco em duas frações opostas: uma fração ligada, presa à proteína, grande demais e polar demais para atravessar a parede capilar, e uma fração livre, pequena e solta, que é a única capaz de sair do vaso, alcançar o receptor, sofrer metabolismo e ser filtrada pelo rim. A ligação não é aleatória: fármacos ácidos se ligam preferencialmente à albumina, a proteína mais abundante do plasma; fármacos básicos preferem a alfa-1-glicoproteína ácida, uma proteína de fase aguda bem menos abundante. Como o número de sítios de ligação é limitado, dois fármacos que competem pela mesma proteína podem se deslocar um ao outro, aumentando de repente a fração livre — e portanto o efeito — de quem foi deslocado. Esse mecanismo de deslocamento é a base de interações medicamentosas clinicamente relevantes, como a de varfarina com anti-inflamatórios não esteroidais, e explica por que a concentração plasmática total de um fármaco pode enganar quem só olha o número sem perguntar quanto dele está livre.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior descreveu o tripé perfusão-permeabilidade-ligação que decide a distribuição de qualquer fármaco. Este bloco isola a terceira perna desse tripé e pergunta: por que o plasma consegue prender parte do fármaco, e o que isso muda na prática?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: o plasma não é um veículo neutro"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Seria conveniente se o plasma fosse apenas água salgada carregando o fármaco de um lado para o outro, sem interferir. Não é. O plasma está cheio de proteínas — a albumina sozinha responde por mais da metade das proteínas plasmáticas totais — e proteínas têm bolsos hidrofóbicos e cargas elétricas capazes de reter moléculas pequenas com afinidade química por elas. A maioria dos fármacos, sendo moléculas orgânicas com alguma polaridade e alguma região apolar, encontra ali um parceiro de ligação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso cria um problema para qualquer estimativa ingênua de efeito farmacológico: medir a concentração plasmática total de um fármaco não diz quanto dele está realmente disponível para agir. Uma molécula presa à albumina é grande demais e carregada demais para atravessar a parede capilar por difusão simples. Enquanto está ligada, ela não alcança o receptor, não é metabolizada pelo fígado e não é filtrada pelo glomérulo renal — está, na prática, fora de circuito funcional, mesmo estando dentro do vaso sanguíneo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: todo fármaco no sangue se divide em duas frações — **ligada** (presa à proteína, inerte) e **livre** (solta, farmacologicamente ativa). A concentração plasmática total mistura as duas; só a fração livre importa para o efeito, o metabolismo e a excreção."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, sem nomear o mecanismo ainda"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução que o organismo oferece — sem que isso seja um sistema desenhado para o fármaco, mas sim uma consequência do que já existe no plasma para outras funções — é um equilíbrio dinâmico e reversível entre as duas frações. A todo instante, moléculas de fármaco se soltam da proteína enquanto outras se prendem, como um vaivém constante. Esse equilíbrio tem uma proporção característica para cada par fármaco-proteína, chamada fração livre, e ela permanece relativamente estável **enquanto houver sítios de ligação disponíveis em excesso** e **enquanto não houver outra molécula competindo pelo mesmo sítio**."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A ligação a proteínas plasmáticas é reversível e dinâmica, não um sequestro permanente. É esse equilíbrio indo e vindo — não uma barreira fixa — que determina, a cada momento, qual fração do fármaco está disponível para agir."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito: albumina para ácidos, alfa-1-glicoproteína para bases"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As duas proteínas plasmáticas mais relevantes para farmacologia têm afinidades opostas. A **albumina** é a proteína mais abundante do plasma e carrega preferencialmente fármacos de caráter **ácido** (varfarina, fenitoína, a maioria dos anti-inflamatórios não esteroidais, muitos antibióticos beta-lactâmicos) — sua estrutura tem bolsos hidrofóbicos amplos, com boa capacidade de acomodar moléculas ácidas volumosas. A **alfa-1-glicoproteína ácida**, muito menos abundante, carrega preferencialmente fármacos de caráter **básico** (propranolol, lidocaína, muitos antidepressivos tricíclicos) — apesar de escassa, tem alta afinidade por essas moléculas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa divisão química não é coincidência nem regra decorada: reflete a própria estrutura das proteínas carreadoras. A albumina é abundante e generalista, com múltiplos sítios de ligação de baixa a média afinidade — dá conta do volume de fármacos ácidos que circula normalmente. A alfa-1-glicoproteína é escassa e mais especializada — por isso mesmo, é a primeira a saturar quando a quantidade de fármaco básico sobe, e sua concentração plasmática varia bastante: aumenta em estados inflamatórios, infecções e câncer (é uma proteína de fase aguda), e isso muda a fração livre de fármacos básicos nesses pacientes sem que a dose tenha mudado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como a quantidade de sítios de ligação numa e noutra proteína é finita, existe sempre um limite de capacidade. Em concentrações terapêuticas normais, a maioria dos fármacos está longe de saturar esses sítios — mas alguns fármacos com faixa terapêutica estreita e alta afinidade proteica, como a fenitoína, operam perto o suficiente da saturação para que pequenas mudanças de dose ou de proteína disponível alterem desproporcionalmente a fração livre."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona: o deslocamento de um fármaco por outro"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O mecanismo central que transforma esse tripé teórico em algo clinicamente perigoso é o **deslocamento competitivo**: quando dois fármacos com afinidade pelo mesmo sítio da mesma proteína estão presentes ao mesmo tempo, eles competem pelas mesmas vagas."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O que acontece quando um segundo fármaco chega e compete pelo mesmo sítio",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Situação de equilíbrio inicial",
+          "explicacao": "Um fármaco A, altamente ligado à albumina (por exemplo, 99% ligado, 1% livre), está em uso crônico e estável. A fração livre pequena já é suficiente para o efeito terapêutico desejado, porque a dose foi ajustada considerando exatamente essa proporção."
+        },
+        {
+          "numero": 2,
+          "titulo": "Chegada do fármaco competidor",
+          "explicacao": "Um fármaco B, também ácido e também afim à albumina, é introduzido no tratamento. B ocupa parte dos mesmos sítios de ligação que A estava usando."
+        },
+        {
+          "numero": 3,
+          "titulo": "Deslocamento",
+          "explicacao": "Como o número de sítios é limitado e B agora compete por eles, uma fração das moléculas de A que estavam ligadas é empurrada de volta à forma livre. A fração livre de A sobe — não porque a dose de A mudou, mas porque a proteína que o mantinha em xeque agora está parcialmente ocupada por outro concorrente."
+        },
+        {
+          "numero": 4,
+          "titulo": "Consequência clínica",
+          "explicacao": "Mesmo que a concentração plasmática total de A permaneça praticamente igual, a fração livre — a única farmacologicamente ativa — pode dobrar ou triplicar. Para um fármaco de faixa terapêutica estreita, esse aumento súbito da fração livre pode ser suficiente para causar toxicidade, ainda que o exame laboratorial de concentração total continue 'normal'."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essa mecânica — e não uma reação química entre os dois fármacos — que explica por que a combinação de **varfarina** com **anti-inflamatórios não esteroidais** é vigiada de perto na prática clínica: os AINEs, também ácidos e também ávidos pela albumina, deslocam a varfarina de seus sítios de ligação, elevando sua fração livre e, com ela, o risco de sangramento — um risco que se soma ainda ao efeito direto dos AINEs sobre a mucosa gástrica e sobre a função plaquetária."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para consolidar: deslocamento não muda quanto fármaco existe no corpo — muda quanto dele está **disponível** para agir, ser metabolizado e ser eliminado. É uma redistribuição interna da mesma quantidade total, não uma sobredose externa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa peça se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A ligação a proteínas plasmáticas se conecta diretamente aos outros dois fatores do tripé de distribuição: um fármaco muito ligado tem sua fração livre reduzida, o que diminui a quantidade disponível para atravessar barreiras mesmo em tecidos de alta perfusão e alta permeabilidade. Ela também se articula com metabolismo e excreção: como só a fração livre é acessível às enzimas hepáticas e ao filtro glomerular, uma ligação proteica alta tende a prolongar a meia-vida de um fármaco, funcionando como um reservatório temporário dentro do próprio vaso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há também uma consequência em doenças que alteram a quantidade de proteína plasmática disponível. Na cirrose hepática e na síndrome nefrótica, a albumina cai — e fármacos normalmente muito ligados a ela circulam com fração livre mais alta que o esperado para a mesma dose, exigindo cautela e, muitas vezes, ajuste posológico. Em estados inflamatórios agudos, a alfa-1-glicoproteína sobe, reduzindo a fração livre de fármacos básicos como a lidocaína — o inverso do padrão da albumina."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "albumina",
+      "origem": "do latim albus (branco), via albumen (clara de ovo)",
+      "significado": "literalmente, 'substância branca' — nome dado originalmente à clara de ovo, rica na proteína homônima",
+      "explicacao": "O termo nasceu na química do século XVIII para descrever a substância que coagulava ao calor na clara de ovo (albumen ovi). Quando químicos identificaram uma proteína de comportamento semelhante no plasma sanguíneo — coagulável ao calor, abundante, solúvel em água — herdaram o nome. A alfa-1-glicoproteína ácida, por sua vez, tem nome puramente descritivo: 'alfa-1' indica sua posição de migração na eletroforese de proteínas plasmáticas, 'glico' marca sua porção glicídica (é uma glicoproteína), e 'ácida' descreve seu ponto isoelétrico baixo, que a torna carregada negativamente em pH fisiológico — carga que, adequadamente, favorece a ligação com fármacos básicos carregados positivamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a ligação proteica"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚗",
+      "conteudo": "Pense num manobrista de um evento lotado. Os carros deixados com o manobrista (fármaco ligado à proteína plasmática) ficam estacionados, fora de circulação, esperando — só os carros que o dono dirige por conta própria (a fração livre) podem efetivamente sair do estacionamento e ir a algum lugar fazer algo. Se chega um segundo dono de carro insistindo para pegar exatamente a mesma vaga que já está ocupada (um fármaco competindo pelo mesmo sítio de ligação na albumina), o manobrista pode ser forçado a devolver as chaves do primeiro carro antes da hora — e de repente há um carro extra circulando nas ruas (fração livre aumentada de golpe), o correspondente ao deslocamento perigoso que abre a porta para toxicidade. A analogia quebra num ponto: um estacionamento tem vagas fixas e um número limitado de carros; a ligação a proteínas plasmáticas é um equilíbrio dinâmico e contínuo, com bilhões de moléculas trocando de estado a cada segundo, não um evento único de estacionar e desestacionar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um fármaco fosse 100% ligado a proteínas plasmáticas, sem nenhuma fração livre, ele teria algum efeito terapêutico?",
+      "resposta": "Não, e esse é exatamente o motivo pelo qual nenhum fármaco terapeuticamente útil chega a 100% de ligação constante: a fração livre é a única capaz de atravessar a parede capilar e alcançar o receptor. Na prática, mesmo fármacos descritos como 'altamente ligados' (95-99%) mantêm uma fração livre pequena, mas suficiente, e o equilíbrio dinâmico entre ligado e livre garante que, à medida que a fração livre age e é eliminada, novas moléculas se soltam da proteína para repor o que saiu — como um reservatório que abastece a corrente aos poucos. Um fármaco hipotético 100% ligado seria farmacologicamente inerte enquanto permanecesse assim: útil como curiosidade teórica, inútil como remédio."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Deslocamento competitivo na albumina",
+      "descricao": "Diagrama esquemático mostrando uma molécula de albumina estilizada com múltiplos sítios de ligação circulares. À esquerda, 'antes': a maioria dos sítios ocupados por moléculas de um fármaco A (cor azul), com poucas moléculas de A livres flutuando ao lado. À direita, 'depois': moléculas de um fármaco B (cor laranja) ocupando parte dos mesmos sítios, empurrando várias moléculas de A para fora, agora representadas como livres e soltas em maior número. Setas indicando o aumento da fração livre de A. Legenda em português explicando 'fração ligada' e 'fração livre' nos dois cenários. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático de farmacologia moderno, em português. Duas cenas lado a lado sob os rótulos 'ANTES' e 'DEPOIS'. Em cada cena, uma proteína globular estilizada (albumina) com 6 a 8 sítios de ligação circulares na superfície. Cena 'ANTES': quase todos os sítios ocupados por círculos azuis pequenos rotulados 'fármaco A (ligado)', com apenas 1 círculo azul solto ao lado rotulado 'fármaco A (livre)'. Cena 'DEPOIS': metade dos sítios agora ocupados por círculos laranja rotulados 'fármaco B', e vários círculos azuis antes presos agora soltos ao redor da proteína, rotulados 'fármaco A (livre) — fração aumentada', com seta destacando o aumento. Cores suaves, alto contraste, sem fotorrealismo, sem marcas d'água, texto apenas nas legendas indicadas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-003",
+        "titulo": "Distribuição — Para Onde o Fármaco Vai (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha a terceira perna do tripé perfusão-permeabilidade-ligação já apresentado na visão geral de distribuição. É preciso ter visto o tripé completo antes de isolar e aprofundar a peça da ligação proteica."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-007-01",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Interações farmacocinéticas por deslocamento proteico",
+        "mecanismo_conexao": "O deslocamento competitivo por sítios de ligação na albumina, descrito aqui como mecanismo geral, é uma das duas vias centrais (junto com interação no CYP450) que o bloco de interações farmacocinéticas detalha com casos aplicados, incluindo varfarina e anti-inflamatórios não esteroidais.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-003-02-fc01",
+      "pergunta": "Por que a concentração plasmática total de um fármaco pode enganar quem está avaliando seu efeito terapêutico?",
+      "resposta": "Porque a concentração total mistura duas frações muito diferentes: a fração ligada a proteínas plasmáticas (farmacologicamente inerte, incapaz de atravessar a parede capilar) e a fração livre (a única que pode alcançar o receptor, ser metabolizada e ser excretada). Dois pacientes podem ter a mesma concentração total e frações livres muito diferentes — por exemplo, se um deles tem hipoalbuminemia — resultando em efeitos clínicos distintos apesar do 'mesmo número' no exame.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "ligacao-proteica",
+        "fracao-livre",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-003-02-fc02",
+      "pergunta": "Explique o mecanismo pelo qual a introdução de um anti-inflamatório não esteroidal pode aumentar o risco de sangramento em um paciente em uso crônico e estável de varfarina.",
+      "resposta": "Varfarina e a maioria dos AINEs são fármacos ácidos com alta afinidade pela albumina, e competem pelos mesmos sítios de ligação. Ao ser introduzido, o AINE ocupa parte desses sítios, deslocando moléculas de varfarina que estavam ligadas de volta à forma livre. A concentração plasmática total de varfarina muda pouco, mas sua fração livre — a única ativa sobre a cascata de coagulação — pode aumentar substancialmente, elevando o efeito anticoagulante e o risco de sangramento, independentemente do efeito direto do AINE sobre a mucosa gástrica e as plaquetas.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "ligacao-proteica",
+        "deslocamento",
+        "varfarina",
+        "interacao-medicamentosa"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-003-02-fc03",
+      "pergunta": "Um fármaco hipotético fosse 100% ligado a proteínas plasmáticas, de forma fixa e irreversível. Ele produziria efeito terapêutico?",
+      "resposta": "Não. Sem fração livre, nenhuma molécula estaria disponível para atravessar a parede capilar e alcançar o receptor — o fármaco seria farmacologicamente inerte enquanto permanecesse ligado. Isso contraria a natureza real da ligação proteica, que é sempre um equilíbrio dinâmico e reversível: à medida que a fração livre age e é eliminada, novas moléculas se soltam da proteína para repor o que saiu, mantendo um efeito sustentado mesmo com alta ligação (95-99%).",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "ligacao-proteica",
+        "equilibrio-dinamico",
+        "contrafactual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-003-02-fc04",
+      "pergunta": "Por que a albumina carreia preferencialmente fármacos ácidos e a alfa-1-glicoproteína ácida carreia preferencialmente fármacos básicos?",
+      "resposta": "A preferência reflete a estrutura de cada proteína. A albumina, abundante e generalista, tem bolsos hidrofóbicos amplos adequados a moléculas ácidas volumosas. A alfa-1-glicoproteína ácida tem baixo ponto isoelétrico, ficando carregada negativamente em pH fisiológico — uma carga que atrai eletrostaticamente fármacos básicos, carregados positivamente. A combinação carga-estrutura de cada proteína determina qual classe química de fármaco ela retém com mais afinidade.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "albumina",
+        "alfa1-glicoproteina",
+        "afinidade-quimica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-003-02-fc05",
+      "pergunta": "Um paciente cirrótico, com albumina sérica baixa, recebe a mesma dose de um fármaco altamente ligado à albumina que recebia antes da doença hepática. O que se espera da fração livre desse fármaco, e por que isso importa clinicamente?",
+      "resposta": "Com menos albumina disponível, há menos sítios de ligação totais — a mesma quantidade de fármaco encontra proporcionalmente menos proteína para se prender, e a fração livre tende a subir mesmo com dose inalterada. Para fármacos de faixa terapêutica estreita, esse aumento da fração livre pode levar a efeitos exagerados ou toxicidade, exigindo reavaliação da dose com base na condição hepática do paciente, não apenas na concentração plasmática total medida.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "ligacao-proteica",
+        "hipoalbuminemia",
+        "cirrose",
+        "ajuste-de-dose"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-003-02-caso01",
+      "titulo": "Sangramento gengival inesperado em paciente estável com varfarina",
+      "apresentacao": "Mulher de 67 anos, em uso crônico e bem controlado de varfarina para fibrilação atrial (RNI mantido entre 2 e 3 há mais de um ano), procura atendimento por sangramento gengival espontâneo e equimoses extensas nos braços. Refere que, há cinco dias, iniciou ibuprofeno por conta própria para dor lombar, sem avisar o médico assistente. Não houve mudança na dose de varfarina. Exame laboratorial mostra RNI de 6,8.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Introdução de ibuprofeno, um anti-inflamatório não esteroidal ácido, em paciente já em uso estável de varfarina, também ácida e altamente ligada à albumina (cerca de 99%)."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Ibuprofeno compete com a varfarina pelos mesmos sítios de ligação na albumina, deslocando moléculas de varfarina da forma ligada para a forma livre — a única farmacologicamente ativa sobre os fatores de coagulação dependentes de vitamina K."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A fração livre de varfarina sobe de forma desproporcional à concentração plasmática total, que muda pouco. O efeito anticoagulante se intensifica além do que o RNI-alvo previa, mesmo sem alteração de dose. Some-se a isso o efeito direto do ibuprofeno sobre a mucosa gástrica e a função plaquetária, que amplifica ainda mais o risco de sangramento."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sangramento gengival espontâneo e equimoses extensas, refletindo hipocoagulabilidade muito além da faixa terapêutica pretendida, confirmada pelo RNI elevado (6,8)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Suspensão temporária da varfarina, avaliação de necessidade de vitamina K ou plasma conforme gravidade do sangramento, e orientação categórica para evitar AINEs sem supervisão médica em pacientes anticoagulados. Reintrodução da varfarina após normalização do RNI, com reforço da orientação sobre interações medicamentosas por deslocamento proteico."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática, o mecanismo central deste bloco: dois fármacos ácidos competindo pelo mesmo sítio da albumina alteram a fração livre — e portanto o efeito — sem que a dose do fármaco crônico tenha mudado. Reforça por que a concentração plasmática total pode não refletir o efeito real, e prepara o terreno para o bloco de interações farmacocinéticas, que sistematiza esse e outros mecanismos de interação.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "hematologia"
+      ],
+      "diagnostico_revelado": "Potencialização do efeito anticoagulante da varfarina por deslocamento de ligação proteica induzido por ibuprofeno.",
+      "tratamento_resumido": "Suspensão temporária da varfarina, monitorização do RNI, reversão conforme gravidade do sangramento (vitamina K e/ou plasma se necessário), e orientação para evitar AINEs concomitantes sem supervisão em pacientes anticoagulados."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-003-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "clinica",
-    "farmacocinetica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Capítulo 5 — Drug Distribution and Drug Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Capítulo 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Capítulo 8 — Absorption and Distribution of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

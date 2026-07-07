@@ -13,51 +13,565 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Diabetes Mellitus — Visão Geral",
+    "subtitulo": "Como uma única falha num só hormônio consegue deixar o corpo inteiro faminto no meio da fartura?",
     "semestre": 8,
     "disciplina": "Medicina Interna II",
+    "sistema_corporal": "endócrino",
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 17,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "mi2",
-      "esqueleto"
+      "endocrinologia",
+      "diabetes-mellitus",
+      "insulina",
+      "resistencia-insulinica",
+      "fisiopatologia",
+      "apresentacao-clinica",
+      "etimologia",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Hiperglicemia crônica por defeito de insulina; problema, glicemia e homeostase",
-  "narrativa": [],
+  "resumo_conciso": "O bloco de Endocrinologia Clínica já ensinou que todo eixo hormonal pode falhar de três formas — excesso, falta ou resistência — e o bloco de Princípios do Sistema Endócrino já detalhou que o receptor de insulina é uma tirosina-quinase intrínseca, ativada por autofosforilação, que dispara a via PI3K-Akt para translocar GLUT4 e a via Ras-MAPK para sinais de crescimento. O diabetes mellitus é o que acontece quando esse eixo específico — insulina como comando central da entrada de glicose nas células — falha de modo crônico, e a doença mais comum de toda a endocrinologia nasce exatamente na bifurcação entre duas dessas categorias de falha. No diabetes tipo 1, a falha é de falta absoluta: uma destruição autoimune progressiva das células beta da ilhota pancreática elimina a fonte do hormônio, e sem insulina nenhuma célula do corpo consegue captar glicose, mesmo com o sangue transbordando dela. No diabetes tipo 2, a falha é predominantemente de resistência: a insulina continua sendo secretada, inicialmente até em excesso compensatório, mas a cascata de sinalização pós-receptor nos tecidos-alvo perde eficiência, obrigando o pâncreas a gritar cada vez mais alto até as células beta se exaurirem. As duas doenças convergem no mesmo sintoma cardinal — glicose alta no sangue e célula faminta por dentro — mas nascem de mecanismos opostos, com implicações diretas para idade de início, velocidade de instalação e abordagem terapêutica, que os blocos-filhos deste módulo (homeostase da glicose, critérios diagnósticos, e as complicações agudas e crônicas) desenvolvem em detalhe. Este bloco entrega apenas a lente comum: o que é hiperglicemia crônica, por que ela lesa o corpo mesmo sem sintomas agudos, e como diferenciar tipo 1 de tipo 2 pela raiz do mecanismo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma cidade que recebe caminhões de mantimentos todos os dias, lotados até a boca — mas as portas de cada armazém estão trancadas, e a chave que as abre nunca chega, ou chega e não gira mais na fechadura. Os caminhões continuam empilhando comida nas ruas, os armazéns continuam vazios por dentro, e os moradores começam a passar fome no meio de montanhas de mantimento acumulado do lado de fora. É uma cidade rica em recursos e faminta ao mesmo tempo — porque o problema nunca foi a quantidade de comida chegando, foi a porta que não abre."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É exatamente essa a lógica do diabetes mellitus. O sangue de um paciente diabético descontrolado está transbordando de glicose — o \"caminhão de mantimentos\" nunca parou de chegar — e, ainda assim, as células do corpo (músculo, gordura, boa parte do fígado) vivem uma fome real, porque a glicose não consegue entrar. O bloco anterior mostrou exatamente qual é a chave dessa porta: a insulina, e o receptor tirosina-quinase que ela ativa para abrir caminho ao GLUT4. Este bloco pergunta: o que acontece quando essa chave falta, ou quando a fechadura para de responder a ela?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que existe uma doença quando um só hormônio falha?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A glicose é o combustível universal do corpo — a única fonte de energia que o cérebro consegue usar de forma praticamente exclusiva em condições normais, e a fonte preferida de quase todo o resto do organismo. Manter sua concentração no sangue dentro de uma faixa estreita não é luxo fisiológico: glicemia baixa demais mata neurônios em minutos; glicemia alta demais, mesmo sem matar ninguém de imediato, danifica silenciosamente vasos sanguíneos e nervos ao longo de anos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa dupla exigência — nunca faltar, nunca sobrar — é o motivo pelo qual a evolução colocou a entrada de glicose na célula sob controle hormonal rigoroso, em vez de deixá-la se difundir livremente. Quando esse controle falha de forma crônica, a glicose não entra onde deveria (fome celular) e se acumula onde não deveria (sangue, e depois urina, vasos, nervos). O diabetes mellitus é, na raiz, o nome que a medicina deu para essa falha crônica de controle — não uma doença dos rins, não uma doença do sangue, mas uma doença da porta de entrada da glicose na célula."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, tente responder por conta própria: se a insulina é a chave que abre a porta da célula para a glicose, existem, no mínimo, duas formas completamente diferentes de essa porta ficar fechada. Quais seriam elas?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve — ou melhor, como o sistema deveria funcionar, e onde ele quebra"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em condições normais, depois de uma refeição, a glicemia sobe, as células beta da ilhota pancreática detectam esse aumento e secretam insulina em quantidade proporcional. A insulina circula, encontra seu receptor nos tecidos periféricos, e — como já detalhado no bloco de Princípios do Sistema Endócrino — dispara a cascata intracelular que recruta o transportador GLUT4 para a superfície da célula muscular e adiposa, permitindo que a glicose entre. O fígado, por sua vez, para de liberar glicose própria e passa a armazená-la. O resultado é que a glicemia volta à faixa normal, e o ciclo se repete a cada refeição, indefinidamente, sem que o paciente perceba nada disso acontecendo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco-pai já ensinou que qualquer eixo hormonal pode falhar por excesso, falta ou resistência — e o diabetes é o exemplo mais didático dessas duas últimas categorias operando lado a lado, cada uma originando um tipo diferente de doença. Numa primeira forma de falha, a fonte de insulina simplesmente desaparece: as células beta são destruídas, e não há hormônio nenhum circulando para abrir a porta — é falta absoluta. Numa segunda forma, bem diferente, a insulina continua sendo produzida, às vezes em quantidade acima do normal, mas os tecidos-alvo deixam de responder a ela com a mesma eficiência — é resistência, uma falha que não está na chave, mas em algum ponto da fechadura."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Diabetes mellitus não é uma doença única com duas variantes cosméticas. É o nome comum para duas falhas mecanicamente opostas do mesmo eixo hormonal: falta absoluta de insulina (tipo 1) e resistência periférica à insulina com exaustão secretora progressiva (tipo 2). Confundir as duas — tratar \"diabetes\" como sinônimo de \"falta de insulina\" — é um erro conceitual que compromete todo o raciocínio clínico seguinte."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita cada uma dessas duas falhas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No diabetes tipo 1, o defeito é estrutural e localizado: o sistema imune do próprio paciente produz autoanticorpos e linfócitos T citotóxicos que reconhecem antígenos das células beta como se fossem estranhos ao corpo, e as destroem progressivamente ao longo de meses a anos, num processo silencioso chamado insulite. Quando a massa de células beta cai abaixo de um limiar crítico — estima-se que seja necessária uma destruição da ordem de 70 a 90%, uma faixa clássica de livro-texto inferida a partir de estudos de necropsia e modelos animais, não uma medida direta em humanos vivos —, a secreção de insulina torna-se insuficiente para qualquer necessidade metabólica, e a doença se manifesta clinicamente, muitas vezes de forma abrupta. Não existe, aqui, problema de receptor nem de cascata intracelular — a fechadura está perfeita, é a chave que simplesmente não existe mais em quantidade suficiente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No diabetes tipo 2, o defeito está em outro lugar inteiramente: não na produção de insulina (que pode estar normal ou até elevada por anos) nem no receptor de insulina em si (que continua estruturalmente íntegro), mas na eficiência da cascata de sinalização pós-receptor — a mesma via PI3K-Akt que o bloco anterior descreveu como responsável por translocar o GLUT4. Por mecanismos que envolvem excesso de tecido adiposo visceral, inflamação de baixo grau, ácidos graxos livres elevados e sinalização intracelular alterada, essa cascata perde eficiência: o receptor é ativado normalmente pela insulina, mas o sinal que deveria seguir daí para dentro da célula chega atenuado. Esse é o motivo pelo qual a resistência à insulina do diabetes tipo 2 é chamada de falha pós-receptor — não é a chave, nem a fechadura na porta, mas o mecanismo interno que deveria destravar o cofre depois que a fechadura já girou."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que o corpo insiste em produzir mais insulina diante dessa resistência, em vez de desistir? Porque o eixo insulina-glicemia opera pela mesma lógica de retroalimentação já estabelecida para qualquer eixo hormonal: glicemia elevada continua estimulando as células beta a secretarem mais insulina, na tentativa de compensar a resistência periférica. Por anos, essa hiperinsulinemia compensatória consegue manter a glicemia relativamente controlada — é o motivo pelo qual o diabetes tipo 2 pode existir de forma silenciosa por muito tempo antes do diagnóstico. Mas essa compensação tem um preço: as células beta, forçadas a trabalhar continuamente acima de sua capacidade, sofrem exaustão progressiva, e a secreção de insulina, que começou elevada, cai ao longo dos anos — até que a compensação não seja mais suficiente e a hiperglicemia se torne clinicamente evidente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona em cascata, nos dois tipos"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Cascata do diabetes tipo 1 — falta absoluta",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Gatilho autoimune",
+          "explicacao": "Em um indivíduo geneticamente predisposto (associação bem estabelecida com determinados alelos do sistema HLA), um gatilho ainda incompletamente compreendido [⚠️ os gatilhos ambientais específicos — infecções virais, fatores dietéticos precoces — permanecem hipóteses ativas de pesquisa, não causas estabelecidas] desencadeia uma resposta autoimune contra antígenos das células beta."
+        },
+        {
+          "numero": 2,
+          "titulo": "Insulite progressiva",
+          "explicacao": "Linfócitos T citotóxicos infiltram as ilhotas pancreáticas e destroem as células beta de forma lenta e silenciosa, processo que pode durar meses a anos sem qualquer sintoma perceptível — a chamada fase pré-clínica."
+        },
+        {
+          "numero": 3,
+          "titulo": "Colapso da massa funcional de células beta",
+          "explicacao": "Quando a destruição ultrapassa um limiar crítico, a secreção de insulina cai abaixo do necessário para qualquer demanda metabólica, mesmo em jejum."
+        },
+        {
+          "numero": 4,
+          "titulo": "Falência total da entrada de glicose",
+          "explicacao": "Sem insulina circulante suficiente, praticamente nenhuma célula muscular ou adiposa consegue translocar GLUT4 para a membrana. A glicose se acumula no sangue enquanto as células vivem em estado de fome intracelular."
+        },
+        {
+          "numero": 5,
+          "titulo": "Manifestação clínica costuma ser abrupta",
+          "explicacao": "Como não há reserva de insulina residual significativa, os sintomas de hiperglicemia costumam aparecer de forma relativamente rápida — dias a poucas semanas — geralmente em crianças ou adultos jovens, ao contrário do início insidioso do tipo 2."
+        }
+      ]
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Cascata do diabetes tipo 2 — resistência e exaustão progressiva",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Acúmulo de tecido adiposo visceral e predisposição",
+          "explicacao": "Em um indivíduo com predisposição genética poligênica (herança muito mais forte que no tipo 1) associada a excesso de peso, sedentarismo e envelhecimento, o tecido adiposo visceral passa a liberar ácidos graxos livres e mediadores inflamatórios em excesso."
+        },
+        {
+          "numero": 2,
+          "titulo": "Instalação da resistência periférica à insulina",
+          "explicacao": "Esses mediadores interferem na cascata de sinalização pós-receptor (a via PI3K-Akt descrita no bloco anterior), reduzindo a eficiência da translocação de GLUT4 mesmo quando a insulina se liga normalmente ao seu receptor."
+        },
+        {
+          "numero": 3,
+          "titulo": "Hiperinsulinemia compensatória",
+          "explicacao": "As células beta, sentindo a glicemia discretamente elevada, aumentam a secreção de insulina para compensar a resistência — por anos, essa compensação mantém a glicemia perto do normal ou apenas levemente alterada."
+        },
+        {
+          "numero": 4,
+          "titulo": "Exaustão progressiva das células beta",
+          "explicacao": "O esforço secretor sustentado, somado à toxicidade da própria glicose elevada e dos ácidos graxos livres sobre a célula beta, leva a uma perda progressiva e lenta da capacidade secretora ao longo dos anos."
+        },
+        {
+          "numero": 5,
+          "titulo": "Manifestação clínica costuma ser insidiosa",
+          "explicacao": "Como a compensação é gradual e prolongada, a hiperglicemia franca costuma aparecer de forma lenta — anos — e é comum o diagnóstico ocorrer em exame de rotina, antes de qualquer sintoma clássico, geralmente em adultos com fatores de risco metabólico."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As duas cascatas terminam no mesmo lugar — glicose alta no sangue, célula faminta por dentro — mas percorrem caminhos mecanicamente opostos: uma é ausência da chave, a outra é uma fechadura que responde cada vez pior à chave que continua chegando em abundância. É essa diferença de mecanismo, e não apenas a idade do paciente, que deveria orientar o raciocínio diagnóstico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a hiperglicemia crônica se manifesta clinicamente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A apresentação clínica do diabetes segue diretamente da fisiopatologia. Quando a glicemia ultrapassa a capacidade do rim de reabsorvê-la nos túbulos (o chamado limiar renal de glicose), a glicose passa a ser filtrada e excretada na urina, arrastando água consigo por efeito osmótico — e é essa perda de água que produz o sintoma mais reconhecível da hiperglicemia franca: urinar em grande volume e com frequência (poliúria), o que gera sede intensa e constante (polidipsia) como resposta compensatória à desidratação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ao mesmo tempo, e por mais paradoxal que pareça diante de tanta glicose circulando, o corpo se comporta como se estivesse em jejum prolongado: sem insulina suficiente (tipo 1) ou sem resposta eficiente a ela (tipo 2), as células não conseguem usar a glicose disponível como combustível e passam a depender de outras fontes de energia — gordura corporal é mobilizada e quebrada, o que explica a perda de peso e o apetite aumentado (polifagia) que costumam acompanhar o quadro, sobretudo no tipo 1, onde a falta é absoluta e a mobilização de gordura é mais intensa e mais rápida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa tríade clássica — poliúria, polidipsia e perda de peso — é a assinatura clínica direta da hiperglicemia não controlada, e ela só faz sentido quando se entende a cascata que a produz: glicose que não entra na célula, mas continua sobrando no sangue e sendo filtrada pelo rim. É importante reforçar, porém, que este bloco não detalha as complicações agudas (cetoacidose diabética, estado hiperosmolar) nem as crônicas (retinopatia, nefropatia, neuropatia, doença macrovascular) que resultam da hiperglicemia mantida por anos — cada uma delas ganha bloco próprio adiante neste módulo, com sua cascata específica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa falha se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O diabetes nunca aparece isolado dos outros eixos e territórios já apresentados neste módulo. Ele é, por definição, uma falha do mesmo eixo insulina-glicemia que o bloco de Endocrinologia Clínica já havia antecipado como exemplo de aplicação do filtro excesso/falta/resistência — e a fisiologia da própria homeostase da glicose (como o corpo mantém a glicemia estável entre refeições, incluindo o papel do glucagon) é desenvolvida com profundidade própria no bloco-filho seguinte deste módulo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A hiperglicemia crônica, por sua vez, é o ponto de partida para dois territórios extensos que a Medicina Interna II detalha em módulos próprios: as complicações microvasculares e macrovasculares, que resultam de anos de exposição das paredes vasculares e das fibras nervosas a glicose elevada, e as complicações agudas, que resultam de descompensações metabólicas súbitas. E a diferenciação entre tipo 1 e tipo 2 apresentada aqui é a base necessária para o bloco de critérios diagnósticos, que detalha como a glicemia de jejum, o teste oral de tolerância à glicose e a hemoglobina glicada são usados para confirmar o diagnóstico — e para o raciocínio terapêutico, já que a falta absoluta do tipo 1 exige reposição exógena de insulina desde o diagnóstico, enquanto a resistência do tipo 2 permite, ao menos inicialmente, estratégias que sensibilizam o receptor ou reduzem a demanda metabólica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "diabetes mellitus",
+      "origem": "do grego diabētēs (aquele que atravessa, sifão) + do latim mellitus (adoçado com mel)",
+      "significado": "literalmente, 'sifão que deixa passar açúcar' — ou, mais livremente, 'a doença que faz a água atravessar o corpo, adoçada'",
+      "explicacao": "O termo diabētēs foi usado por médicos gregos antigos, entre eles Areteu da Capadócia, no século II d.C., para descrever pacientes cuja água parecia simplesmente atravessar o corpo sem ficar: eles bebiam volumes enormes de líquido e urinavam quase toda a mesma quantidade quase imediatamente — como um sifão. O nome descreveu a poliúria e a polidipsia séculos antes de qualquer noção de glicose ou hormônio existir. Só no século XVII, o médico inglês Thomas Willis notou que a urina desses pacientes tinha gosto doce (um teste hoje impensável, mas então rotineiro), e acrescentou mellitus — 'adoçada com mel' — para diferenciar essa condição do diabetes insipidus, uma doença completamente diferente (falha na hormona antidiurética) cuja urina é abundante, mas não doce. A etimologia registra, mais uma vez, que o nome nasceu da observação do sintoma (o sifão, o gosto doce) muito antes de a causa hormonal ser compreendida — a insulina só seria isolada e teria seu papel esclarecido no início do século XX, mais de 1700 anos depois de Areteu descrever o sifão."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Um paciente jovem, magro, sem histórico familiar de obesidade, é diagnosticado com hiperglicemia e apresenta perda de peso rápida e cetonas na urina. Outro paciente, de meia-idade, obeso, sedentário, é diagnosticado em exame de rotina, assintomático, com glicemia discretamente elevada. Por que a diferença de mecanismo — não apenas de idade — explica por que o primeiro precisa de insulina imediatamente e o segundo, muitas vezes, não?",
+      "resposta": "O primeiro paciente tem o perfil de diabetes tipo 1: a apresentação abrupta, a perda de peso rápida e as cetonas na urina indicam que praticamente não há insulina circulante — o corpo, sem conseguir usar glicose como combustível, está queimando gordura em ritmo acelerado (o que gera corpos cetônicos) como se estivesse em jejum extremo, apesar de a glicemia estar alta. Como a falha aqui é falta absoluta do hormônio, não existe outra alternativa terapêutica de primeira linha: sem insulina exógena, esse paciente evolui rapidamente para cetoacidose diabética grave — um cenário detalhado em bloco próprio deste módulo. O segundo paciente tem o perfil de diabetes tipo 2: a instalação lenta, o achado assintomático em rotina e o perfil de risco metabólico (obesidade, sedentarismo) indicam que a insulina ainda está sendo produzida, possivelmente em quantidade normal ou elevada, mas os tecidos respondem mal a ela. Como ainda há reserva secretora e a via de sinalização apenas funciona com eficiência reduzida, existe espaço terapêutico para estratégias que não dependem de insulina exógena de imediato — mudança de estilo de vida e fármacos que sensibilizam a resposta ao hormônio ou reduzem a demanda metabólica —, algo que seria inútil no primeiro paciente, cujo problema não é sensibilidade, é ausência total da chave."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏭",
+      "conteudo": "Pense em duas fábricas que, por motivos diferentes, param de entregar seus produtos aos armazéns clientes. Na primeira fábrica (diabetes tipo 1), um incêndio destrói a linha de produção inteira — não sai produto nenhum, os armazéns ficam vazios porque **não existe mais quem produza a mercadoria**. Na segunda fábrica (diabetes tipo 2), a produção nunca para: pelo contrário, a fábrica aumenta o ritmo, produzindo cada vez mais, porque os armazéns clientes pararam de descarregar os caminhões com a mesma eficiência de antes — **o produto chega, mas o depósito demora demais para processá-lo e guardá-lo**. Por um tempo, produzir mais compensa a lentidão do depósito, e o sistema parece funcionar. Só que manter essa superprodução tem custo: com o tempo, a própria fábrica se desgasta de trabalhar acima da capacidade, e sua produção começa a cair — é aí que o produto finalmente começa a se acumular do lado de fora, nas ruas (a glicemia sobe), porque nem a fábrica exausta nem o depósito lento conseguem mais dar conta da demanda. **O incêndio** corresponde à destruição autoimune das células beta; **a lentidão do depósito** corresponde à resistência pós-receptor; **a superprodução compensatória que se esgota** corresponde à hiperinsulinemia seguida de exaustão das células beta."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas rotas fisiopatológicas para o mesmo destino: hiperglicemia crônica",
+      "descricao": "Esquema didático dividido em dois painéis lado a lado, com um ponto de convergência final comum. Painel esquerdo, rotulado 'Diabetes Tipo 1': ilhota pancreática com células beta sendo atacadas por linfócitos, progredindo para uma ilhota vazia; seta descendente indicando 'insulina ausente'; célula muscular/adiposa ao lado sem nenhum GLUT4 na membrana. Painel direito, rotulado 'Diabetes Tipo 2': tecido adiposo visceral aumentado liberando setas onduladas representando ácidos graxos livres e mediadores inflamatórios em direção a uma célula muscular; dentro dessa célula, a cascata pós-receptor (PI3K-Akt) desenhada com um elo enfraquecido; ilhota pancreática ao lado, inicialmente hipertrofiada e hiperativa, depois representada menor e exausta com o tempo. Na base do esquema, as duas rotas convergem para um único símbolo comum: uma gota de sangue com excesso de moléculas de glicose e uma célula ao lado com símbolo de 'fome' — rotulado 'hiperglicemia crônica — glicose sobra no sangue, falta na célula'. Fundo neutro adaptativo ao tema do app, legendas em português.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de infográfico médico moderno, dividido em dois painéis superiores e uma base de convergência. Painel superior esquerdo rotulado 'DIABETES TIPO 1 — falta absoluta': uma ilhota pancreática circular contendo células beta (círculos azuis) sendo infiltradas por linfócitos T (pequenas células vermelhas com setas de ataque convergindo), progressão em três estágios horizontais mostrando a ilhota cada vez mais vazia; seta descendente rotulada 'insulina ausente' apontando para uma célula muscular sem nenhum transportador GLUT4 na membrana. Painel superior direito rotulado 'DIABETES TIPO 2 — resistência e exaustão': tecido adiposo visceral liberando setas onduladas de 'ácidos graxos livres' e 'mediadores inflamatórios' em direção a uma célula muscular; dentro dessa célula, uma cascata de sinalização com seta seguinte tracejada representando 'PI3K-Akt reduzida', poucos GLUT4 chegando à membrana; ao lado, uma ilhota pancreática em três estágios temporais — primeiro grande e hiperativa, depois normal, depois pequena e exausta. Painel inferior central, unificando os dois: uma seta de cada painel convergindo para um vaso sanguíneo estilizado com excesso de moléculas de glicose circulando, e ao lado uma célula com símbolo de 'fome'; rótulo 'HIPERGLICEMIA CRÔNICA'. Tipografia sem serifa, paleta consistente com azul, laranja e cinza, alto contraste, sem elementos fotorrealistas, todas as legendas em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-mi2-01-000",
+        "titulo": "Endocrinologia Clínica",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco aplica diretamente o filtro excesso/falta/resistência já estabelecido no bloco-pai: diabetes tipo 1 é o exemplo canônico de falta absoluta, e diabetes tipo 2 é o exemplo canônico de resistência com exaustão secretora progressiva."
+      },
+      {
+        "bloco_id": "s8-mi2-01-001",
+        "titulo": "Princípios do Sistema Endócrino",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Pressupõe que o estudante já sabe que o receptor de insulina é uma tirosina-quinase intrínseca que ativa PI3K-Akt (translocação de GLUT4) e Ras-MAPK (crescimento) — este bloco não reexplica o receptor, apenas mostra onde e como essa cascata falha em cada tipo de diabetes."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Homeostase da glicose e ação da insulina em profundidade",
+        "mecanismo_conexao": "O bloco-filho detalha a fisiologia normal do eixo insulina-glucagon entre as refeições, incluindo os órgãos que armazenam e liberam glicose, como base necessária para entender por que sua falha crônica é tão disruptiva.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Critérios diagnósticos do diabetes mellitus",
+        "mecanismo_conexao": "A hiperglicemia crônica descrita aqui de forma qualitativa ganha, no bloco seguinte, os pontos de corte quantitativos (glicemia de jejum, teste oral de tolerância à glicose, hemoglobina glicada) que a definem clinicamente.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Complicações agudas do diabetes — cetoacidose diabética e estado hiperosmolar",
+        "mecanismo_conexao": "A ausência absoluta de insulina do tipo 1 explica diretamente por que a cetoacidose é sua complicação aguda característica (lipólise descontrolada gerando corpos cetônicos), enquanto a reserva insulínica residual do tipo 2 explica por que ele tende ao estado hiperosmolar em vez de cetoacidose.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Complicações crônicas microvasculares e macrovasculares do diabetes",
+        "mecanismo_conexao": "A hiperglicemia crônica sustentada apresentada aqui como problema central é o insulto direto que, ao longo de anos, lesa retina, glomérulo renal, nervos periféricos e a parede de grandes vasos — cada território ganhando bloco próprio adiante.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 8,
+        "topico": "Insulinoterapia versus fármacos sensibilizadores e secretagogos",
+        "mecanismo_conexao": "A diferença mecanística entre falta absoluta (tipo 1) e resistência com exaustão progressiva (tipo 2) é o que justifica por que o tipo 1 exige insulina exógena desde o diagnóstico, enquanto o tipo 2 permite, inicialmente, fármacos que atuam sobre sensibilidade periférica ou secreção residual.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-mi1-00-000",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Assim como Medicina Interna I já treina o raciocínio de partir do problema clínico para o nome da doença, o diabetes ilustra que uma única falha hormonal cruza fronteiras de especialidade — aqui especificamente entre endocrinologia, nefrologia (nefropatia diabética) e cardiologia (doença macrovascular) — reforçando que a divisão por sistemas é conveniência didática, não um limite biológico real."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-mi2-01-002-fc01",
+      "pergunta": "Por que um paciente com diabetes pode ter glicose em excesso no sangue e, ao mesmo tempo, suas células estarem vivendo em estado de fome?",
+      "resposta": "Porque a glicose só entra na maioria das células (músculo, tecido adiposo) através de um transportador — o GLUT4 — que só é recrutado para a membrana quando a insulina ativa seu receptor. Se a insulina está ausente (falta absoluta) ou se a célula não responde bem a ela (resistência), o GLUT4 não chega à superfície em quantidade suficiente, e a glicose permanece no sangue em vez de entrar na célula. O resultado é hiperglicemia (excesso no compartimento sanguíneo) coexistindo com fome celular (falta no compartimento intracelular) — as duas faces da mesma falha de transporte.",
+      "tipo": "por_que",
+      "dificuldade": 1,
+      "nivel_alvo": 2,
+      "tags": [
+        "diabetes",
+        "glut4",
+        "conceito-basico"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-002-fc02",
+      "pergunta": "Descreva a cascata de eventos, passo a passo, desde o gatilho autoimune até a manifestação clínica no diabetes tipo 1, explicando por que a instalação costuma ser rápida quando comparada ao tipo 2.",
+      "resposta": "1) Em indivíduo geneticamente predisposto, um processo autoimune começa a atacar antígenos das células beta pancreáticas. 2) Linfócitos T citotóxicos infiltram as ilhotas e destroem progressivamente essas células (insulite), num processo silencioso que pode durar meses a anos sem sintomas. 3) Quando a destruição ultrapassa um limiar crítico (usualmente acima de 80-90% da massa de células beta), a secreção de insulina cai abaixo do necessário para qualquer demanda metabólica. 4) Sem insulina circulante suficiente, a translocação de GLUT4 falha de forma generalizada, e a glicose se acumula no sangue enquanto as células ficam famintas. 5) Como não há reserva funcional significativa de insulina residual nesse ponto, os sintomas aparecem de forma relativamente abrupta — dias a poucas semanas —, ao contrário da instalação lenta do tipo 2, em que a hiperinsulinemia compensatória posterga a manifestação clínica por anos.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "diabetes-tipo-1",
+        "insulite",
+        "mecanismo"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-002-fc03",
+      "pergunta": "Se um fármaco experimental conseguisse aumentar artificialmente a eficiência da via PI3K-Akt pós-receptor, sem alterar em nada a quantidade de insulina circulante nem a integridade das células beta, em qual dos dois tipos de diabetes esse fármaco teria efeito terapêutico relevante, e por quê?",
+      "resposta": "Esse fármaco teria efeito relevante no diabetes tipo 2, e pouco ou nenhum efeito no tipo 1. No tipo 2, o problema mecanístico está exatamente na eficiência reduzida da cascata pós-receptor (a via PI3K-Akt), mesmo com insulina circulante normal ou elevada — reforçar essa via restauraria a translocação de GLUT4 e melhoraria a captação de glicose pelos tecidos periféricos, atacando a causa raiz da resistência. No tipo 1, entretanto, o problema não é a eficiência da cascata pós-receptor — é a ausência quase total do próprio hormônio que deveria iniciar essa cascata. Um fármaco que apenas melhora a transdução de sinal não tem utilidade se não há insulina circulante suficiente para ativar o receptor em primeiro lugar; a única intervenção eficaz nesse caso continua sendo a reposição exógena de insulina.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "diabetes-tipo-2",
+        "pi3k-akt",
+        "transferencia"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-002-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Diabetes mellitus é, por definição, uma doença de falta de insulina.'",
+      "resposta": "Falso, ou verdadeiro apenas para um dos dois tipos principais. No diabetes tipo 1, sim, há falta absoluta de insulina por destruição autoimune das células beta. No diabetes tipo 2, porém, a insulina costuma estar presente em quantidade normal ou até elevada, especialmente nas fases iniciais — o problema predominante é a resistência periférica à insulina, uma falha na cascata de sinalização pós-receptor, e não na produção do hormônio. Só depois de anos de exaustão progressiva das células beta é que a secreção de insulina no tipo 2 também declina. Generalizar 'diabetes é falta de insulina' ignora o mecanismo central do tipo 2, que é a forma mais comum da doença.",
+      "tipo": "armadilha",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "diabetes",
+        "armadilha-conceitual",
+        "tipo1-tipo2"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-002-fc05",
+      "pergunta": "A palavra 'diabetes' vem do grego diabētēs, e 'mellitus' do latim mellitus. O que essas duas origens revelam sobre a ordem histórica em que a doença foi compreendida?",
+      "resposta": "'Diabētēs' (sifão, aquele que atravessa) foi usado por médicos gregos antigos, como Areteu da Capadócia, para descrever pacientes cuja água parecia atravessar o corpo sem ficar — grandes volumes bebidos, grandes volumes urinados quase imediatamente. Isso descreveu a poliúria e a polidipsia séculos antes de qualquer entendimento sobre glicose. Só no século XVII, Thomas Willis percebeu que a urina desses pacientes tinha gosto doce, e acrescentou 'mellitus' (adoçado com mel) para diferenciar essa condição do diabetes insipidus, cuja urina é abundante mas não doce. As duas etimologias revelam que a doença foi nomeada por seus sintomas visíveis (o volume urinário, depois o sabor doce) mais de 1700 anos antes de a causa hormonal — a falta ou resistência à insulina — ser sequer imaginada.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "diabetes",
+        "etimologia",
+        "historia-da-medicina"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-002-fc06",
+      "pergunta": "Compare diabetes tipo 1 e tipo 2 em três critérios: mecanismo primário da falha, velocidade típica de instalação clínica, e comportamento da insulina circulante ao longo do tempo.",
+      "resposta": "**Mecanismo primário:** no tipo 1, é falta absoluta de insulina por destruição autoimune das células beta; no tipo 2, é resistência periférica à insulina por falha na cascata de sinalização pós-receptor, com produção hormonal inicialmente preservada. **Velocidade de instalação:** o tipo 1 costuma se manifestar de forma relativamente abrupta (dias a semanas), porque não há reserva funcional de insulina quando o limiar de destruição das células beta é ultrapassado; o tipo 2 costuma se instalar de forma insidiosa (anos), porque a hiperinsulinemia compensatória posterga a hiperglicemia franca. **Comportamento da insulina circulante:** no tipo 1, a insulina cai desde o início e permanece baixa ou ausente; no tipo 2, a insulina tipicamente começa elevada (hiperinsulinemia compensatória), permanece assim por anos, e só declina tardiamente, quando as células beta se exaurem pelo esforço secretor sustentado.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "diabetes-tipo-1",
+        "diabetes-tipo-2",
+        "comparacao"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-002-fc07",
+      "pergunta": "Por que a tríade clássica de poliúria, polidipsia e perda de peso aparece tipicamente em hiperglicemia franca, e por que a perda de peso costuma ser mais proeminente no tipo 1 do que no tipo 2?",
+      "resposta": "A poliúria surge porque, quando a glicemia ultrapassa o limiar renal de reabsorção, a glicose é filtrada e excretada na urina, arrastando água consigo por efeito osmótico. A polidipsia é a resposta compensatória à desidratação gerada por essa perda urinária de água. A perda de peso ocorre porque, sem conseguir captar glicose como combustível, o corpo passa a mobilizar gordura corporal como fonte alternativa de energia — um estado metabólico que se assemelha ao jejum prolongado, apesar da glicemia estar alta. Essa mobilização de gordura tende a ser mais intensa e mais rápida no tipo 1, onde a falta de insulina é absoluta e nenhuma via de captação de glicose funciona; no tipo 2, a resistência é parcial e ainda existe alguma captação residual de glicose, então a perda de peso, quando presente, costuma ser mais discreta e mais lenta.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "diabetes",
+        "poliuria",
+        "apresentacao-clinica"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-002-fc08",
+      "pergunta": "Um paciente com diabetes tipo 2 de longa data, tratado inicialmente apenas com fármacos que sensibilizam a resposta à insulina, passa a precisar de insulina exógena anos depois. Usando a cascata fisiopatológica deste bloco, por que essa progressão é esperada, e não um sinal de que o diagnóstico inicial estava errado?",
+      "resposta": "A progressão é esperada porque o diabetes tipo 2 combina dois processos simultâneos desde o início: resistência periférica à insulina e exigência secretora crescente sobre as células beta para compensar essa resistência. Fármacos sensibilizadores atacam apenas o primeiro componente — melhoram a eficiência da cascata pós-receptor —, mas não impedem o desgaste progressivo das células beta, que já vinham secretando insulina acima do normal desde muito antes do diagnóstico. Com o passar dos anos, esse esforço secretor sustentado leva à exaustão progressiva da capacidade das células beta, reduzindo a insulina disponível independentemente de quão bem os tecidos respondam a ela. Quando a produção residual de insulina cai abaixo do necessário, mesmo com sensibilidade periférica maximizada pelos fármacos, torna-se necessário repor insulina exógena — não porque o diagnóstico de tipo 2 estivesse errado, mas porque a história natural da doença inclui essa exaustão secretora tardia, um componente já previsto na fisiopatologia deste bloco.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "diabetes-tipo-2",
+        "exaustao-celulas-beta",
+        "farmacologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-mi2-01-002-caso01",
+      "titulo": "Emagrecimento rápido e sede constante em um adolescente de 15 anos",
+      "apresentacao": "Adolescente de 15 anos, sem comorbidades prévias, é trazido pelos pais à unidade de urgência com história de três semanas de sede constante ('bebe água o tempo todo'), urina em grande volume mesmo à noite, e perda de 6 kg no período apesar de comer normalmente ou até mais que o habitual. Nas últimas 48 horas, a mãe notou hálito com odor adocicado e o adolescente está mais sonolento que o normal. Ao exame: taquicardia leve, mucosas secas, respiração levemente mais profunda que o normal. Glicemia capilar no leito: 480 mg/dL. Sem histórico familiar de diabetes, sem sobrepeso.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Destruição autoimune progressiva das células beta pancreáticas, provavelmente em curso silencioso há meses, que finalmente ultrapassou o limiar crítico de massa funcional necessária para manter qualquer secreção adequada de insulina."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Ilhotas pancreáticas, especificamente as células beta — a fonte única de insulina do corpo. Ao longo de meses a anos, esse ataque autoimune (insulite) foi reduzindo silenciosamente a massa funcional de células beta, sem sintoma algum, até ultrapassar o limiar crítico que agora deixa a secreção de insulina praticamente esgotada."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem insulina circulante suficiente, a translocação de GLUT4 falha de forma generalizada nos tecidos periféricos, e a glicose deixa de entrar nas células apesar de estar amplamente disponível no sangue — o corpo passa a se comportar metabolicamente como se estivesse em jejum extremo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "A glicose filtrada em excesso pelo rim arrasta água por efeito osmótico (poliúria), gerando sede compensatória (polidipsia); a incapacidade de usar glicose como combustível força a mobilização acelerada de gordura corporal (perda de peso, apesar do apetite aumentado)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A mobilização acelerada e descontrolada de gordura gera corpos cetônicos em excesso — o hálito adocicado e a respiração mais profunda já são sinais de alerta precoces de que o paciente está evoluindo para cetoacidose diabética, uma complicação aguda potencialmente grave que será detalhada em bloco próprio deste módulo."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra três pontos centrais deste bloco: (1) a instalação relativamente rápida (semanas) é típica da falta absoluta de insulina do diabetes tipo 1, em contraste com a instalação insidiosa do tipo 2; (2) a tríade poliúria-polidipsia-perda de peso é a assinatura clínica direta da hiperglicemia não controlada; (3) a ausência de fatores de risco metabólico (sem sobrepeso, sem histórico familiar do tipo 2) reforça a hipótese de falta absoluta em vez de resistência — o mecanismo, não apenas a idade, é o que orienta essa diferenciação.",
+      "disciplinas_relacionadas": [
+        "endocrinologia",
+        "medicina-interna",
+        "pediatria",
+        "emergencia"
+      ],
+      "diagnostico_revelado": "Diabetes mellitus tipo 1 de início recente, com sinais iniciais de cetose associada, exigindo avaliação urgente para cetoacidose diabética.",
+      "tratamento_resumido": "Estabilização inicial com hidratação e insulinoterapia (a ser detalhada com doses e protocolo no bloco específico de complicações agudas), seguida de transição para esquema de insulina basal-bolus definitivo, já que a falta de insulina neste caso é absoluta e permanente — não existe alternativa terapêutica que dispense a reposição exógena do hormônio."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-mi2-01-002-img01",
+        "url": null,
+        "tipo_imagem": "esquema_didatico",
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
+  },
+  "horizonte_validade": "em_mudanca",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Jameson JL, Fauci AS, Kasper DL, Hauser SL, Longo DL, Loscalzo J (eds). Harrison's Principles of Internal Medicine. 21st ed. McGraw Hill; 2022. Capítulo 396 — Diabetes Mellitus: Diagnóstico, Classificação e Fisiopatologia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "American Diabetes Association. Standards of Care in Diabetes—2024. Diabetes Care. 2024;47(Suppl 1).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Melmed S, Auchus RJ, Goldfine AB, Koenig RJ, Rosen CJ (eds). Williams Textbook of Endocrinology. 14th ed. Elsevier; 2020. Capítulos 31-32.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Pathologic Basis of Disease. 10th ed. Elsevier; 2020. Capítulo 24.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "fisiopatologia",
-    "apresentacao_clinica",
-    "etimologia"
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Generalizar 'diabetes é falta de insulina', aplicando esse mecanismo indistintamente aos dois tipos principais.",
+      "correcao": "Diabetes tipo 1 é deficiência absoluta de insulina por destruição autoimune das células beta; diabetes tipo 2 é predominantemente resistência periférica à insulina (falha pós-receptor, na cascata de sinalização) com hiperinsulinemia compensatória inicial e exaustão secretora tardia — não falta absoluta desde o início.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Achar que a resistência à insulina do tipo 2 significa que o receptor de insulina está defeituoso ou que a insulina não se liga a ele.",
+      "correcao": "No tipo 2, o receptor de insulina em si costuma estar estruturalmente íntegro e a ligação hormônio-receptor ocorre normalmente; o defeito está na eficiência da cascata de sinalização pós-receptor (via PI3K-Akt), não no receptor nem na produção do hormônio.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Associar diabetes tipo 1 exclusivamente à infância e diabetes tipo 2 exclusivamente à vida adulta, como critério diagnóstico definitivo.",
+      "correcao": "A idade é uma pista epidemiológica frequente, não um critério diagnóstico: existe diabetes tipo 1 de início na vida adulta e diabetes tipo 2 crescente em adolescentes com obesidade. O mecanismo de base — falta absoluta versus resistência — é o que define o tipo, não a idade isolada.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "diabetes mellitus",
+      "termo_es": "diabetes mellitus",
+      "termo_en": "diabetes mellitus",
+      "abreviatura": "DM"
+    },
+    {
+      "termo_pt": "resistência à insulina",
+      "termo_es": "resistencia a la insulina",
+      "termo_en": "insulin resistance",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "hiperglicemia",
+      "termo_es": "hiperglucemia",
+      "termo_en": "hyperglycemia",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "poliúria / polidipsia",
+      "termo_es": "poliuria / polidipsia",
+      "termo_en": "polyuria / polydipsia",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-5",
+      "mudanca": "Criação do bloco completo de visão geral de Diabetes Mellitus. Estabelece a diferenciação mecanística entre tipo 1 (falta absoluta de insulina por destruição autoimune) e tipo 2 (resistência periférica pós-receptor com hiperinsulinemia compensatória e exaustão progressiva das células beta), sem detalhar critérios diagnósticos quantitativos nem complicações agudas/crônicas.",
+      "motivo": "Produção do bloco-filho de visão geral do módulo de Endocrinologia (semestre 8), aplicando ao diabetes o filtro excesso/falta/resistência e a arquitetura de receptor já estabelecidos nos blocos s8-mi2-01-000 e s8-mi2-01-001."
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "adversarial+integrador-manual",
+      "mudanca": "Corrigido bloco_id da conexao lateral (s8-mi1-00-000 inexistente -> s7-mi1-00-000 real); reforcada etapa Estrutura Afetada do caso clinico com nota sobre insulite/processo silencioso; suavizado o limiar de destruicao de celulas beta (80-90% -> 70-90%, marcado como estimativa classica de necropsia/modelos animais, nao medida direta em humanos).",
+      "motivo": "Achados do adversarial (severidade media)."
+    }
   ]
 }

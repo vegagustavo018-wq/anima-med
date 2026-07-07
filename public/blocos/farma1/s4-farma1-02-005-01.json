@@ -2,53 +2,345 @@
   "resumo_id": "s4-farma1-02-005-01",
   "no_pai_id": "s4-farma1-02-005",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-02-002-02",
+    "s4-farma1-01-007-05"
+  ],
   "metadata": {
     "titulo": "Índice Terapêutico e Janela Terapêutica",
+    "subtitulo": "Como transformar 'este fármaco é arriscado' num número que cabe numa bula?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "indice-terapeutico",
+      "janela-terapeutica",
+      "seguranca",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "IT = DL50/DE50; fármacos de janela estreita; implicação para monitorização",
-  "narrativa": [],
+  "resumo_conciso": "O bloco-pai já mostrou que todo fármaco carrega uma distância entre a dose que trata e a dose que intoxica, e que essa distância pode ser larga ou estreita. Mas 'larga' e 'estreita' são palavras — a farmacologia precisa de um número para comparar fármacos, definir bula e decidir protocolo. Esse número é o Índice Terapêutico (IT): a razão entre a dose letal (ou tóxica) e a dose eficaz, ambas medidas no ponto médio de uma população — DL50/DE50 em estudos animais, ou a aproximação ética DT50/DE50 em humanos. Quanto maior o IT, mais folga o prescritor tem; quanto mais próximo de 1, menor a margem de manobra. Quando o IT é baixo (tipicamente citado como menor que 2 a 3), o fármaco é dito de janela terapêutica estreita — casos clássicos são varfarina, digoxina, lítio, alguns antiepilépticos e aminoglicosídeos. Para esses fármacos, calcular a dose pelo peso ou pela função renal deixa de ser suficiente: a variação natural entre pacientes é grande demais para confiar apenas na aritmética, e a prática clínica responde monitorizando a concentração real do fármaco no sangue de cada paciente — a monitorização terapêutica de fármacos (TDM), já vista em bloco anterior. O IT é, portanto, o número que decide se um fármaco pode ser prescrito 'de cabeça' ou se precisa de régua fina o tempo todo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior deixou uma ideia pronta, mas ainda sem forma numérica: existe uma distância entre a dose que trata e a dose que intoxica, e essa distância determina o quanto um médico pode confiar numa dose padronizada. Só que 'distância grande' e 'distância pequena' não cabem numa bula, não entram num protocolo hospitalar e não permitem comparar dois fármacos de forma objetiva. Falta transformar essa ideia em número."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: como comparar margens de segurança de fármacos diferentes?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine tentar decidir, sem nenhum número, qual de dois fármacos exige mais cautela na dose. Um médico poderia dizer 'este parece mais arriscado' com base na experiência, mas essa impressão não é transferível — não ajuda a redigir uma bula, não orienta um protocolo de enfermagem, não permite que um farmacologista compare, de forma objetiva, cem fármacos diferentes para decidir quais merecem monitorização de rotina e quais não. Sem um número, a margem de segurança fica presa à experiência pessoal de quem já viu o fármaco funcionar e falhar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacologia precisava de uma razão simples — um único valor que resumisse, de forma reprodutível entre laboratórios e entre fármacos, o quão distante está a dose perigosa da dose útil."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema não é medir a distância entre dose eficaz e dose tóxica — isso o bloco anterior já resolveu em conceito. O problema é comprimir essa distância num número comparável entre fármacos diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: uma razão entre dois pontos já conhecidos"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução aproveita exatamente os dois números que a curva quantal já fornece: a dose que produz o efeito desejado em metade de uma população e a dose que produz dano grave em metade dessa mesma população. Basta dividir um pelo outro. O resultado é um número único, sem unidade, que qualquer fármaco pode ter calculado e publicado — e que permite comparação direta: quanto maior esse número, mais distante a dose perigosa está da dose útil; quanto mais próximo de 1, mais as duas doses se sobrepõem."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa razão é o que se conhece como Índice Terapêutico. Ela não cria informação nova — reaproveita, em forma de fração, a mesma distância entre curvas que o bloco anterior já descreveu em palavras."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito: DL50 sobre DE50"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Formalmente, o Índice Terapêutico é definido como IT = DL50 / DE50. A DL50 é a dose que mata metade de uma população em estudos pré-clínicos com animais — já apresentada no bloco lateral sobre curva quantal. A DE50 é a dose que produz o efeito terapêutico desejado em metade dessa mesma população. Dividir a primeira pela segunda produz um número puro: se a DL50 é 20 vezes maior que a DE50, o IT é 20, e há uma folga considerável entre tratar e matar. Se a DL50 é apenas 2 vezes maior que a DE50, o IT é 2, e a folga é mínima."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em humanos, determinar uma DL50 diretamente seria antiético — ninguém expõe pessoas a doses potencialmente letais para calcular uma estatística. Por isso, na farmacologia clínica de seres humanos, o numerador é substituído por uma aproximação já vista: a DT50 (ou TD50), a dose que produz um efeito tóxico grave, porém não fatal, em metade de uma população de referência. O raciocínio da razão permanece idêntico; apenas o desfecho no numerador muda de morte para toxicidade grave, por razão puramente ética."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Índice Terapêutico = DL50 / DE50 (ou, em humanos, DT50 / DE50). Um número só, sem unidade, que resume a distância entre a dose que trata e a dose que causa dano grave. Quanto maior, mais folga; quanto mais perto de 1, mais perigo em cada ajuste de dose."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona na prática: o que o número decide"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um IT alto — como o da penicilina, por exemplo, em que a dose tóxica está muitíssimo distante da dose terapêutica usual — permite ao médico prescrever uma dose padrão, ajustada apenas grosseiramente por peso, sem medo de que pequenas variações individuais empurrem o paciente para o dano. O IT alto é o que sustenta toda a prática de 'dose única para a maioria dos pacientes' que domina boa parte da farmacoterapia comum."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um IT baixo muda completamente o comportamento clínico exigido. Fármacos como varfarina, digoxina, lítio, fenitoína e os aminoglicosídeos têm, por definição farmacológica, um IT estreito — geralmente citado na literatura como menor que 2 a 3. Para esses fármacos, uma variação de dose ou de eliminação que seria irrelevante num fármaco de IT alto pode ser a diferença entre efeito insuficiente e intoxicação grave. Nenhuma quantidade de cuidado na hora de calcular a dose elimina esse risco estrutural: o risco nasce do próprio número, não de erro de cálculo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É exatamente aqui que o raciocínio deste bloco se fecha com o que você já viu antes, no módulo de regimes de dose: quando o IT é baixo, a farmacologia deixa de confiar apenas na dose calculada pelo peso ou pela função renal estimada, porque a margem para erro de previsão é curta demais. A resposta prática é a monitorização terapêutica de fármacos — medir a concentração real do fármaco no sangue daquele paciente específico, e ajustar a dose seguinte com base nesse número, não apenas no cálculo teórico inicial. O lítio e a vancomicina, já discutidos como exemplos clássicos de TDM, são precisamente fármacos cujo IT baixo torna a monitorização não um luxo, mas rotina de segurança."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fechando o raciocínio deste módulo: janela terapêutica é o conceito qualitativo (existe uma distância entre tratar e intoxicar); Índice Terapêutico é esse mesmo conceito expresso como número (DL50/DE50); e quando esse número é baixo, a resposta clínica já conhecida — TDM — é o que transforma um risco estrutural em prática segura, medindo em vez de apenas calculando."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa ideia se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O Índice Terapêutico nasce diretamente da curva quantal e de seus dois pontos de referência, DE50 e DL50 — sem esses dois números já estabelecidos, a razão não teria como ser calculada. E ele se conecta, de forma real e recíproca, com a monitorização terapêutica de fármacos: um IT baixo é exatamente o critério que, somado à farmacocinética imprevisível de um fármaco, justifica clinicamente medir a concentração sérica em vez de confiar só no cálculo da dose. Não é uma conexão hipotética — é a mesma lógica vista por dois ângulos: aqui, o número que classifica o fármaco como arriscado; lá, a prática que a clínica adota em resposta a esse número."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa ligação vai reaparecer, ao longo dos próximos semestres, toda vez que a prescrição envolver anticoagulantes orais clássicos, antiepilépticos de IT estreito, imunossupressores em transplante ou aminoglicosídeos — cada uma dessas classes carrega o mesmo raciocínio: número baixo, vigilância alta."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "índice terapêutico",
+      "origem": "índice do latim index (aquele que aponta, que indica); terapêutico do grego therapeutikós (que cuida, que trata)",
+      "significado": "o número que aponta o tamanho da margem entre tratar e prejudicar",
+      "explicacao": "O termo consolidou-se junto com a farmacologia quantitativa do início do século XX, quando J.W. Trevan formalizou, em 1927, o método estatístico da DL50 para padronizar a avaliação de segurança de lotes de fármacos biológicos. Antes disso, a noção de 'margem de segurança' existia apenas como impressão clínica qualitativa — 'este remédio é mais perigoso que aquele' — sem nenhum valor comparável entre laboratórios. Ao expressar a margem como razão entre duas doses de referência já estatisticamente bem definidas (DL50 e DE50), o índice terapêutico transformou uma percepção subjetiva em dado publicável, repetível e comparável — o mesmo tipo de virada que a curva quantal havia trazido para a própria ideia de dose de referência populacional."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎚️",
+      "conteudo": "Pense no Índice Terapêutico como a distância entre dois marcadores na régua de um equalizador de som. Um marcador indica o volume mínimo para a música ficar audível — abaixo dele, silêncio, sem efeito nenhum. O outro indica o volume que estoura o alto-falante e distorce o som — acima dele, dano ao equipamento. Num aparelho de boa qualidade, esses dois marcadores estão bem afastados: você pode girar o botão com liberdade dentro de uma faixa ampla sem risco de estourar nada — é o **Índice Terapêutico alto**, como o de muitos antibióticos comuns. Num aparelho barato e mal calibrado, os dois marcadores quase se tocam: um giro pequeno demais e ninguém ouve nada, um giro só um pouco maior e o alto-falante estoura — é o **Índice Terapêutico baixo**, como o do lítio ou da varfarina. Para esse segundo aparelho, ninguém confia só na posição do botão: alguém fica ao lado, ouvindo com atenção constante e ajustando no ouvido — exatamente o papel que a **monitorização terapêutica de fármacos** cumpre quando o índice é estreito. A analogia quebra num ponto: o equalizador tem os mesmos dois marcadores fixos sempre, mas no corpo humano a posição real desses 'marcadores' pode se deslocar de paciente para paciente, e até no mesmo paciente ao longo do tempo — por isso a régua fina precisa ser reaplicada, não ajustada uma única vez."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se todo fármaco do mercado tivesse, por exigência regulatória, Índice Terapêutico maior que 100, a prática de monitorização terapêutica de fármacos (TDM) ainda faria sentido como especialidade clínica?",
+      "resposta": "Não faria sentido como está estruturada hoje — e isso revela, por contraste, o que realmente justifica o TDM. A prática de monitorizar concentração sérica não existe porque é tecnicamente possível, existe porque, para um pequeno grupo de fármacos, o Índice Terapêutico é baixo o suficiente para que a variação natural entre pacientes ultrapasse a margem de segurança disponível. Se todo fármaco tivesse IT alto, a distância entre dose eficaz e dose tóxica absorveria qualquer variação individual sem risco, e calcular a dose pelo peso ou pela função renal estimada seria sempre suficiente — exatamente como já acontece hoje com a imensa maioria dos medicamentos de IT alto. O TDM sobreviveria apenas como curiosidade de laboratório, não como rotina clínica. Isso confirma que o Índice Terapêutico não é só um número de bula: é o critério que decide, fármaco a fármaco, se a segurança pode vir do cálculo ou se precisa vir da medição repetida — fechando exatamente o ciclo que este módulo percorreu, da distância qualitativa entre curvas até a prática concreta à beira do leito."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Do índice ao monitor: fechando o ciclo da janela terapêutica",
+      "descricao": "Esquema linear horizontal com três blocos conectados por setas. Primeiro bloco: 'DE50 e DL50 (curva quantal)', com um pequeno ícone de duas curvas em S. Segundo bloco, maior e central: 'Índice Terapêutico = DL50 / DE50', com dois exemplos numéricos lado a lado — 'IT alto (ex.: 20) → folga clínica' à esquerda em tom verde, e 'IT baixo (ex.: 2) → risco estrutural' à direita em tom laranja/vermelho. Terceiro bloco, ligado apenas ao lado do IT baixo: 'Monitorização Terapêutica de Fármacos (TDM)', com um pequeno ícone de tubo de coleta de sangue e os rótulos de exemplo 'lítio' e 'varfarina'. Setas finas conectando os três blocos na sequência lógica. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial horizontal, fundo transparente, estilo de livro didático farmacológico moderno. Três caixas retangulares conectadas por setas finas da esquerda para a direita. Caixa 1, à esquerda, texto 'DE50 e DL50 (curva quantal)' com um pequeno ícone de duas curvas sigmoides sobrepostas. Seta para a Caixa 2, central e maior, com título 'ÍNDICE TERAPÊUTICO = DL50 / DE50', dividida internamente em duas metades coloridas: metade esquerda em verde suave com texto 'IT ALTO (ex.: 20) — folga clínica, dose padronizada'; metade direita em laranja suave com texto 'IT BAIXO (ex.: 2) — risco estrutural, dose individualizada'. Da metade direita (laranja) sai uma seta adicional descendo para a Caixa 3, texto 'MONITORIZAÇÃO TERAPÊUTICA DE FÁRMACOS (TDM)' com um pequeno ícone de tubo de coleta de sangue com gota e dois rótulos de exemplo abaixo, 'lítio' e 'varfarina'. Nenhuma seta sai da metade verde da Caixa 2, reforçando visualmente que IT alto não exige TDM. Cores suaves e consistentes, alto contraste, sem texturas fotorrealistas, texto apenas em português, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-005",
+        "titulo": "Janela Terapêutica e Segurança (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume que o aluno já entende, em conceito, por que existe uma distância entre a dose que trata e a dose que intoxica, e que essa distância pode ser larga ou estreita. Aqui essa distância ganha forma numérica."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Farmacologia de classes específicas de índice terapêutico estreito (anticoagulantes orais clássicos, digitálicos, antiepilépticos, aminoglicosídeos)",
+        "mecanismo_conexao": "Cada classe futura de fármaco de IT baixo será compreendida à luz do número apresentado aqui: quanto mais próximo de 1, mais a prescrição depende de individualização e monitorização, e não de dose padronizada.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Decisões de troca de fármaco por questão de segurança em pacientes frágeis (idosos, insuficiência renal ou hepática)",
+        "mecanismo_conexao": "A decisão de substituir um fármaco de IT baixo por outro de mesma classe terapêutica, mas IT mais alto, num paciente frágil, aplica diretamente o raciocínio numérico estabelecido neste bloco.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-02-002-02",
+        "tipo_relacao": "APLICACAO_DIRETA",
+        "explicacao": "A DE50 e a DL50 quantais, detalhadas nesse bloco lateral sobre curva quantal e receptores de reserva, são exatamente os dois termos da razão que forma o Índice Terapêutico aqui apresentado — a conexão é declarada nos dois sentidos, já que aquele bloco cita este como aplicação direta de seus números."
+      },
+      {
+        "bloco_id": "s4-farma1-01-007-05",
+        "tipo_relacao": "APLICACAO_PRATICA",
+        "explicacao": "Um Índice Terapêutico baixo é exatamente um dos três critérios que, no bloco sobre monitorização terapêutica de fármacos (TDM), justificam a decisão clínica de medir a concentração sérica em vez de confiar apenas na dose calculada. A conexão é real e recíproca: aquele bloco já cita este como pré-requisito lateral."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-005-01-fc01",
+      "pergunta": "Como o Índice Terapêutico é calculado, e por que se usa DT50 em vez de DL50 quando o fármaco é estudado em humanos?",
+      "resposta": "O Índice Terapêutico é a razão IT = DL50 / DE50, em que a DL50 é a dose que mata metade de uma população (estudos pré-clínicos com animais) e a DE50 é a dose que produz o efeito desejado em metade dessa população. Em humanos, por razões éticas, não se determina uma dose letal diretamente — usa-se a DT50 (dose tóxica 50), a dose que produz um efeito tóxico grave, porém não fatal, em metade de uma população de referência, substituindo o numerador sem alterar a lógica da razão.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "indice-terapeutico",
+        "dl50",
+        "de50"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-005-01-fc02",
+      "pergunta": "Por que um Índice Terapêutico baixo (próximo de 1 ou 2) é considerado um risco estrutural do fármaco, e não um problema de má prescrição?",
+      "resposta": "Porque um IT baixo significa que a dose eficaz e a dose tóxica estão intrinsecamente próximas naquele fármaco específico — é uma propriedade farmacológica do composto, não um erro de quem prescreve. Mesmo uma dose calculada com perfeição pode, por variação natural de eliminação entre pacientes, ultrapassar a margem estreita disponível. Por isso a resposta clínica correta não é 'ter mais cuidado ao calcular', é mudar a estratégia inteira: monitorizar a concentração real do fármaco, em vez de confiar apenas no cálculo teórico da dose.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "indice-terapeutico",
+        "janela-estreita",
+        "seguranca"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-005-01-fc03",
+      "pergunta": "Explique a conexão direta entre um Índice Terapêutico baixo e a decisão clínica de usar monitorização terapêutica de fármacos (TDM).",
+      "resposta": "O IT baixo é exatamente um dos critérios que justificam TDM: quando a dose eficaz e a dose tóxica estão próximas, qualquer variação na farmacocinética do paciente (função renal instável, interação medicamentosa, metabolismo individual) pode empurrar a concentração real para fora da faixa segura, mesmo sem mudança na dose prescrita. Nesse cenário, calcular a dose deixa de ser suficiente, e medir a concentração sérica real do paciente — e ajustar com base nesse número — torna-se a prática seguindo diretamente do valor numérico do IT.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "indice-terapeutico",
+        "tdm",
+        "monitorizacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-005-01-fc04",
+      "pergunta": "Se a regulação farmacêutica exigisse que todo fármaco aprovado tivesse Índice Terapêutico maior que 100, a prática de TDM ainda existiria como especialidade clínica relevante?",
+      "resposta": "Não faria sentido como existe hoje. TDM não é justificado pela possibilidade técnica de medir, mas pela existência de um IT baixo o bastante para que a variação natural entre pacientes ultrapasse a margem de segurança. Se todo fármaco tivesse IT alto, essa margem absorveria qualquer variação individual sem risco, e o cálculo de dose por peso ou função renal seria sempre suficiente — como já ocorre hoje com a maioria dos medicamentos. TDM sobreviveria só como curiosidade de laboratório, não como rotina clínica.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "indice-terapeutico",
+        "contrafactual",
+        "tdm"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-005-01-fc05",
+      "pergunta": "Cite três exemplos clássicos de fármacos de Índice Terapêutico estreito e o tipo de manejo clínico que essa característica exige.",
+      "resposta": "Varfarina, digoxina e lítio são exemplos clássicos de fármacos com IT estreito (geralmente citado como menor que 2 a 3). Para esses fármacos, a prática clínica não confia em dose padronizada por peso: exige monitorização periódica de exames (INR para varfarina, concentração sérica para digoxina e lítio) e ajuste individualizado de dose, porque a distância entre efeito terapêutico e toxicidade é curta demais para tolerar a variação natural entre pacientes ou dentro do mesmo paciente ao longo do tempo.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "indice-terapeutico",
+        "janela-estreita",
+        "exemplos-clinicos"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-005-01-caso01",
+      "titulo": "Elevação do INR em paciente após início de antibiótico",
+      "apresentacao": "Homem de 68 anos, em uso crônico e estável de varfarina para fibrilação atrial há dois anos, com INR habitualmente entre 2 e 3, procura atendimento por gengivorragia espontânea e equimoses extensas nos braços após início, cinco dias antes, de um antibiótico para infecção respiratória. Não houve qualquer mudança na dose de varfarina. Exame mostra múltiplas equimoses, sem outros sinais de sangramento ativo grave. Solicitado INR de urgência, que retorna em 7,8 — muito acima da faixa terapêutica habitual.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O antibiótico introduzido interfere na mesma via hepática responsável por metabolizar a varfarina, reduzindo sua eliminação. A concentração real de varfarina no sangue subiu de forma significativa, embora a dose prescrita não tenha sido alterada."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A varfarina é um fármaco de Índice Terapêutico estreito: a distância entre a dose que produz anticoagulação eficaz e a dose que produz sangramento grave é pequena. Qualquer fator que altere sua eliminação desloca facilmente o paciente para fora da faixa segura."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O paciente ultrapassou a borda superior da janela terapêutica da varfarina sem qualquer mudança na dose prescrita — exatamente o tipo de instabilidade farmacocinética que um IT baixo torna perigosa, e que só a monitorização periódica do INR (a forma de TDM usada para varfarina) é capaz de capturar a tempo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Gengivorragia espontânea e equimoses extensas, expressão direta do mesmo mecanismo anticoagulante do fármaco, agora exagerado além do ponto terapêutico."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Suspensão temporária da varfarina, administração de vitamina K conforme protocolo, reavaliação da necessidade do antibiótico introduzido e, se mantido, ajuste conjunto das doses com monitorização mais frequente do INR até estabilização. O caso reforça que, num fármaco de IT baixo, a dose escrita na receita nunca é garantia isolada de segurança — e é exatamente por isso que a monitorização de rotina existe para essa classe."
+        }
+      ],
+      "conexao_com_bloco": "O caso conecta, de forma concreta, os dois números deste bloco à prática clínica: a varfarina tem IT baixo por definição farmacológica, e é justamente esse número que torna obrigatória a monitorização periódica do INR — o mesmo raciocínio de TDM já visto em bloco anterior, agora aplicado a um terceiro exemplo clássico de fármaco de janela estreita, fechando o ciclo do módulo.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "hematologia"
+      ],
+      "diagnostico_revelado": "Elevação do INR e sangramento por interação medicamentosa que reduziu a eliminação da varfarina, estreitando na prática sua já baixa margem de segurança.",
+      "tratamento_resumido": "Suspensão temporária da varfarina, reversão com vitamina K conforme gravidade do sangramento, reavaliação da necessidade do antibiótico interagente e retomada da anticoagulação com monitorização mais frequente do INR até nova estabilização."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-005-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action (índice terapêutico e margem de segurança).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

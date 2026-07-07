@@ -5,50 +5,219 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Acidose e Alcalose Metabólicas — A Resposta Renal",
-    "semestre": 3,
+    "subtitulo": "Como os néfrons traduzem variações sistêmicas de pH em ajustes finos de excreção de prótons e regeneração de bicarbonato.",
     "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
-    "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "semestre": 3,
+    "tipo": "conceito",
     "tags": [
-      "fisio2",
-      "esqueleto"
+      "Fisiologia Renal",
+      "Equilíbrio Ácido-Base",
+      "Acidose Metabólica",
+      "Alcalose Metabólica",
+      "Ânion Gap",
+      "Amoniogênese"
     ],
+    "tempo_leitura_minutos": 10,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-02"
   },
-  "resumo_conciso": "Ânion gap e compensação; a lógica renal por trás dos distúrbios",
-  "narrativa": [],
+  "resumo_conciso": "A resposta renal aos distúrbios metabólicos ácido-base baseia-se no ajuste fino da secreção de H+ e na reabsorção ou síntese de novo de HCO3-. Na acidose metabólica, os rins respondem retendo todo o bicarbonato filtrado e ativando a amoniogênese e a excreção de acidez titulável para gerar bicarbonato novo. Na alcalose metabólica, embora a capacidade de excreção de bicarbonato seja alta, ela é impedida por fatores mantenedores como a hipovolemia, a hipocaliemia e a depleção de cloro, que geram o fenômeno da acidúria paradoxal.",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "O Desafio Químico Sanguíneo: O que os Néfrons Enxergam?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine-se na pele de um néfron. A cada minuto, uma torrente de plasma passa pelos capilares glomerulares. Sob condições fisiológicas normais, esse plasma traz uma concentração estável de bicarbonato (HCO3-) de aproximadamente 24 mEq/L e uma concentração de íons de hidrogênio (H+) incrivelmente baixa, mantendo o pH em torno de 7,40. De repente, uma crise sistêmica se instala: o pH despenca para 7,20 devido a um acúmulo de ácidos de origem não volátil (como ácido lático ou cetoácidos) ou por perda direta de bicarbonato pelas fezes. O sangue que chega ao glomérulo agora carrega apenas 14 mEq/L de bicarbonato."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Se o rim mantivesse exatamente a mesma taxa basal de reabsorção de bicarbonato das condições normais, o que aconteceria com os 14 mEq/L de bicarbonato que ainda restam no filtrado glomerular? E qual seria a consequência imediata para o pH sistêmico?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se o rim não alterasse seu comportamento, parte desse valioso bicarbonato filtrado acabaria sendo perdida na urina devido ao limite de transporte basal. Sem a reabsorção completa do bicarbonato restante e, mais importante, sem a fabricação de bicarbonato 'novo' para repor o que foi consumido no tamponamento do excesso de H+ sistêmico, o pH plasmático despencaria rapidamente em direção a níveis incompatíveis com a vida. Para evitar o desastre, o rim inicia uma resposta coordenada em duas frentes: conservar cada molécula de bicarbonato filtrada e fabricar novas moléculas neutralizadoras."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Metabólico",
+      "origem": "Grego, *metabolikós* (relativo à mudança ou transformação), derivado de *metabole* (mudança, alteração).",
+      "significado": "Refere-se a processos que envolvem as transformações químicas sistêmicas.",
+      "explicacao": "Na fisiologia ácido-base, o termo 'metabólico' diferencia as alterações de pH causadas por variações na produção, consumo ou eliminação de ácidos fixos e bases (gerenciados pelo metabolismo e eliminados pelos rins) daquelas causadas por disfunção pulmonar (acúmulo ou eliminação de CO2)."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Imagine as moléculas de bicarbonato no plasma como 'amortecedores' de impacto em uma arena de carrinhos de bate-bate. Cada íon H+ livre representa um carrinho descontrolado. Quando ocorre uma colisão, o amortecedor (HCO3-) absorve o impacto (tamponamento) e é destruído (transformado em CO2 e H2O, que os pulmões eliminam). Em uma crise metabólica ácida, o estoque de amortecedores despenca rapidamente. O rim atua de duas formas: como um mecânico minucioso que impede que qualquer amortecedor restante caia fora da arena (reabsorção de 100% de HCO3-) e como uma linha de produção industrial que fabrica amortecedores novos em folha para substituir os que foram destruídos (amoniogênese)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Maquinaria da Sobrevivência: Resposta Renal à Acidose"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A primeira tarefa do rim é reabsorver todo o bicarbonato filtrado. Cerca de 80% a 90% disso ocorre no túbulo contorcido proximal. Através do trocador Na+/H+ (NHE3) na membrana apical, a célula tubular secreta H+ ativamente para o lúmen. Esse H+ se liga ao HCO3- filtrado, formando ácido carbônico (H2CO3). A enzima anidrase carbônica tipo IV, presente na borda em escova apical, cliva o H2CO3 em CO2 e H2O, que se difundem livremente para dentro da célula. Lá dentro, a anidrase carbônica tipo II faz o caminho inverso: gera H2CO3, que se dissocia em H+ (reciclado para secreção apical) e HCO3- (que é devolvido ao sangue pelo cotransportador basolateral Na+/3HCO3-, NBCe1). Em uma acidose sistêmica, a expressão e a atividade desses transportadores aumentam drasticamente."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Reabsorver o bicarbonato filtrado é apenas uma medida defensiva: impede que a acidose piore, mas não repõe o bicarbonato consumido. Para aumentar o pH de volta ao normal, o rim precisa produzir bicarbonato 'novo'. Isso é feito através do tamponamento urinário de H+ secretado, utilizando dois sistemas: a acidez titulável (fosfatos filtrados) e, principalmente, a amoniogênese proximal (síntese de amônio a partir da glutamina)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como funciona a amoniogênese? No túbulo proximal, cada molécula do aminoácido glutamina é metabolizada em duas moléculas de amônio (NH4+) e duas de bicarbonato novo (HCO3-). O amônio é secretado ativamente no lúmen através do NHE3 (onde substitui o H+) e acaba sendo excretado na urina. O bicarbonato gerado nesse metabolismo é direcionado ao sangue basolateral, representando um ganho líquido real de base para o organismo."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um paciente apresentasse uma disfunção enzimática congênita que reduzisse a atividade da anidrase carbônica mitocondrial e citoplasmática (como na acidose tubular renal tipo II), o que aconteceria com a taxa de reabsorção de bicarbonato e a produção de bicarbonato novo durante um episódio de acidose metabólica severa?",
+      "resposta": "Sem a anidrase carbônica funcional, o néfron proximal seria incapaz de converter rapidamente o H2CO3 luminal em CO2 e H2O para reabsorção, gerando perda maciça de bicarbonato na urina. Além disso, a síntese de novo de bicarbonato estaria gravemente comprometida. O paciente não conseguiria responder à acidose sistêmica; em vez de compensar, os rins agravariam a situação ao excretar a base restante, gerando acidose tubular proximal refratária."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Pista Diagnóstica: O Ânion Gap"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Clinicamente, para entender a resposta renal à acidose metabólica, precisamos classificar a causa do distúrbio. Para isso, utilizamos a equação do Ânion Gap (AG) plasmático. Pelo princípio da eletroneutralidade, a soma de todas as cargas positivas no plasma deve ser exatamente igual à soma de todas as cargas negativas. Porém, rotineiramente, medimos apenas alguns íons: Sódio (Na+), Cloreto (Cl-) e Bicarbonato (HCO3-). O Anion Gap representa a diferença entre o cátion medido e os ânions medidos: AG = Na+ - (Cl- + HCO3-). O valor normal de referência varia entre 8 e 12 mEq/L, representando ânions não mensurados rotineiramente (como albumina e fosfato)."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Ânion",
+      "origem": "Grego, *ana* (para cima) e *ion* (que vai).",
+      "significado": "O íon com carga negativa que se desloca em direção ao polo positivo (ânodo) em um campo elétrico.",
+      "explicacao": "Na química fisiológica, o estudo do balanço aniônico é essencial para decifrar a natureza dos ácidos acumulados no sangue durante processos patológicos."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O Princípio da Eletroneutralidade Plasmática e o Ânion Gap",
+      "descricao": "Esquema mostrando o balanço de cargas no plasma. À esquerda, a coluna de cátions (Sódio). À direita, as colunas de ânions sob três cenários: 1) Normal (com cloro e bicarbonato normais e um pequeno ânion gap correspondente à albumina e fosfatos); 2) Acidose com Ânion Gap Elevado (onde o bicarbonato diminui por tamponamento de ácidos orgânicos não medidos como lactato ou corpos cetônicos, aumentando o espaço do AG); 3) Acidose com Ânion Gap Normal ou Hiperclorêmica (onde a perda de bicarbonato é compensada pelo ganho de cloro, mantendo o tamanho do AG inalterado).",
+      "prompt_ia": "A clear medical textbook diagram showing columns representing plasma electrolytes. On the left is Sodium (Na+) in blue. On the right are three columns for comparison: 1. Normal state with Chloride (Cl-) in green, Bicarbonate (HCO3-) in yellow, and a small grey gap at the top labeled 'Anion Gap (Albumin, Phosphate)'. 2. High Anion Gap Acidosis showing reduced yellow Bicarbonate and an expanded red gap labeled 'Unmeasured Organic Anions (Lactate, Ketones)'. 3. Normal Anion Gap Acidosis with reduced yellow Bicarbonate and expanded green Chloride labeled 'Hyperchloremic Acidosis'. High resolution clinical illustration.",
+      "origem": "ia"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Alcalose Metabólica: Quando o Rim se Recusa a Excretar Base"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A alcalose metabólica é definida por um aumento do pH sanguíneo (> 7,45) acompanhado de uma elevação primária do bicarbonato plasmático (> 26 mEq/L). O rim saudável tem uma capacidade fenomenal de excretar bicarbonato: se você ingerir uma colher de bicarbonato de sódio, seus rims simplesmente filtrarão e excretarão o excesso rapidamente na urina, impedindo a alcalose. Portanto, para que um paciente sustente um quadro de alcalose metabólica, dois fatores devem coexistir de forma obrigatória: um evento gerador (como a perda de H+ por vômitos ou uso de diuréticos) e um fator de manutenção renal."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Se o rim normal é tão bom em jogar o bicarbonato fora, quais são as condições renais que 'bloqueiam' essa excreção e forçam o rim a reabsorver bicarbonato mesmo quando o pH sanguíneo já está muito alto?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A incapacidade renal de excretar o bicarbonato excessivo na alcalose metabólica é mantida por três grandes fatores: 1) Hipovolemia (depleção de volume extracelular): a urgência em reabsorver Sódio e Água ativa a Angiotensina II e a Aldosterona, que estimulam intensamente a reabsorção de Na+ acoplada à secreção de H+ e consequente reabsorção de HCO3-; 2) Hipocaliemia (depleção de Potássio): estimula a atividade da H+/K+-ATPase nas células intercaladas tipo A do ducto coletor para recuperar Potássio às custas da secreção de H+ e geração de mais bicarbonato; e 3) Depleção de Cloro: sem cloro suficiente no filtrado urinário, as células intercaladas tipo B do ducto coletor ficam sem o substrato luminal necessário para acionar o trocador Cl-/HCO3- (pendrina), impossibilitando a secreção de bicarbonato na urina. Isso resulta na famosa acidúria paradoxal."
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s3-fisio2-02-054-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é a via metabólica renal que mais se expande para produzir 'bicarbonato novo' durante uma acidose metabólica persistente e onde ela ocorre?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "Fisiologia Renal",
+        "Amoniogênese",
+        "Acidose Metabólica"
+      ],
+      "resposta": "É a amoniogênese, que ocorre no túbulo contorcido proximal. A célula tubular metaboliza a glutamina, gerando dois íons amônio (NH4+), que são excretados para tamponar e eliminar H+, e duas moléculas de bicarbonato novo (HCO3-), que entram na circulação sistêmica como ganho líquido."
+    },
+    {
+      "card_id": "s3-fisio2-02-054-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "Como a depleção severa de cloro no lúmen do ducto coletor impede a compensação renal da alcalose metabólica?",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Alcalose Metabólica",
+        "Cloro",
+        "Pendrina",
+        "Ducto Coletor"
+      ],
+      "resposta": "No ducto coletor, a secreção ativa de bicarbonato é realizada pelas células intercaladas tipo B através do trocador apical Cl-/HCO3- (pendrina). Sem o cloro luminal disponível para ser reabsorvido em troca do bicarbonato, esse transportador cessa o funcionamento, impedindo que o excesso de bicarbonato plasmático seja excretado na urina."
+    },
+    {
+      "card_id": "s3-fisio2-02-054-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Qual é a diferença fisiopatológica fundamental no Ânion Gap entre a acidose metabólica por cetoacidose diabética e a provocada por diarreia grave?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "Ânion Gap",
+        "Acidose Metabólica",
+        "Fisiologia Clínica"
+      ],
+      "resposta": "Na cetoacidose diabética, o bicarbonato é consumido pelo tamponamento de ácidos não medidos (cetoácidos), elevando o Ânion Gap. Na diarreia, há perda direta de bicarbonato de sódio pelas fezes; o rim compensa retendo cloro para manter a neutralidade de cargas, gerando uma acidose hiperclorêmica com Ânion Gap normal."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-fisio2-02-054-caso01",
+      "titulo": "O Paradoxo da Urina Ácida na Estenose de Piloro",
+      "apresentacao": "Um lactente de 4 semanas de vida é levado ao pronto-socorro com história de vômitos não-biliosos em jato após todas as mamadas há 5 dias. Ao exame físico, apresenta-se intensamente desidratado, hipoativo, com turgor cutâneo diminuído, mucosas secas e fontanela anterior deprimida. Os exames laboratoriais revelam: pH sanguíneo de 7,54, bicarbonato sérico de 36 mEq/L, pCO2 de 48 mmHg, sódio de 132 mEq/L, potássio de 2,8 mEq/L e cloro de 82 mEq/L. Surpreendentemente, a urinálise revela um pH urinário de 5,5.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Estenose hipertrófica de piloro impedindo o trânsito gastroduodenal, resultando em vômitos em jato repetitivos com perda volumosa de suco gástrico rico em água, ácido clorídrico (HCl) e cloreto de potássio."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Os néfrons, submetidos a um estado severo de depleção de volume circulante efetivo, hipoclorêmica e hipocaliêmica."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A hipovolemia ativa intensamente a reabsorção proximal de sódio e aciona o sistema renina-angiotensina-aldosterona (SRAA). A aldosterona estimula a reabsorção distal de sódio e a secreção concomitante de H+ e K+, enquanto a falta de cloro impede a secreção compensatória de bicarbonato pelas células intercaladas tipo B."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Manifestação clínica de alcalose metabólica hipoclorêmica, hipocaliêmica e responsiva ao cloro, acompanhada de desidratação grave e do achado de 'acidúria paradoxal' (urina ácida com pH de 5,5 em meio a uma alcalemia sistêmica severa)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Caso não receba infusão de solução salina isotônica (rica em cloro e sódio) para restaurar a volemia e repor os estoques de cloro e potássio, os rims continuarão perpetuando a alcalose metabólica e a depleção hidroeletrolítica, culminando em arritmias cardíacas e choque hipovolêmico grave."
+        }
+      ],
+      "conexao_com_bloco": "Este caso demonstra na prática como os rims, quando forçados pela hipovolemia extrema e pela falta de cloro, priorizam a conservação de volume plasmático e a retenção de sódio em detrimento do equilíbrio ácido-base, excretando prótons na urina (acidúria paradoxal) e perpetuando a alcalose metabólica.",
+      "disciplinas_relacionadas": [
+        "Fisiologia Renal",
+        "Pediatria",
+        "Nefrologia"
+      ],
+      "diagnostico_revelado": "Alcalose metabólica hipoclorêmica e hipocaliêmica com acidúria paradoxal, secundária a estenose hipertrófica de piloro.",
+      "tratamento_resumido": "Expansão volêmica vigorosa com solução salina isotônica (NaCl 0,9%) associada à reposição parenteral de Cloreto de Potássio (KCl), seguida de cirurgia de piloromiotomia de Ramstedt."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "correlacao-clinica"
-  ]
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-fisio2-02-050",
+        "titulo": "Equilíbrio Ácido-Base Renal — Visão Geral",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "A compreensão dos mecanismos básicos de reabsorção de bicarbonato e secreção de H+ ao longo do néfron é fundamental para entender como os rims compensam e perpetuam as desordens metabólicas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Abordagem Clínica aos Distúrbios Ácido-Base e Gasometria Arterial",
+        "disciplina": "Semiótica e Prática Médica",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Aplicação clínica direta do cálculo do ânion gap plasmático e urinário na interpretação de distúrbios mistos em gasometrias de pacientes de terapia intensiva.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Acidose e Alcalose Respiratórias — Controle Ventilatória",
+        "explicacao": "Enquanto os rims representam o controle de longo prazo ajustando quimicamente a retenção/produção de bicarbonato, os pulmões respondem em minutos alterando a ventilação alveolar para ajustar a pCO2 sistêmica."
+      }
+    ]
+  }
 }

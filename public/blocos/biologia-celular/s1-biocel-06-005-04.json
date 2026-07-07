@@ -1,54 +1,229 @@
 {
+  "metadata": {
+    "titulo": "Checkpoint do Fuso (SAC)",
+    "subtitulo": "Como a célula garante que ninguém seja deixado para trás?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "mitose",
+      "ciclo celular",
+      "anáfase",
+      "cinetocoro",
+      "aneuploidia"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "Imagine a coreografia mais complexa da natureza: a divisão de todo o patrimônio genético de uma célula em duas metades perfeitas. O Checkpoint do Fuso, ou SAC (Spindle Assembly Checkpoint), é o mecanismo de vigilância molecular que impede que a célula avance para a anáfase antes que cada cromossomo esteja devidamente capturado pelos microtúbulos do fuso mitótico. Sem esse 'freio', a distribuição aleatória de cromossomos levaria ao caos genético — células filhas com excesso ou falta de informação, um fenômeno conhecido como aneuploidia, que está na base de abortos espontâneos e do desenvolvimento do câncer. Neste bloco, exploraremos como a tensão física nos cinetocoros se traduz em um sinal químico de 'pare' ou 'siga', garantindo a fidelidade da herança biológica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, vimos como os cromossomos se condensam e o fuso mitótico se organiza. Agora, chegamos ao momento mais crítico da vida celular: a transição metáfase-anáfase. Você já se perguntou como a célula 'sabe' que todos os 46 cromossomos estão alinhados no centro antes de dar a ordem de separação? Não é um cronômetro que dita o tempo, mas sim uma inspeção de qualidade rigorosa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema biológico: O risco da pressa"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A natureza enfrenta um dilema. Se a anáfase (a separação das cromátides irmãs) ocorrer cedo demais, um cromossomo pode ser puxado inteiramente para um lado só. Se ocorrer tarde demais, a célula gasta energia desnecessária e atrasa o desenvolvimento do tecido. A evolução precisou criar um sensor que detectasse o erro antes que ele se tornasse irreversível."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A solução encontrada não foi medir o número de cromossomos, mas sim sentir a TENSÃO mecânica em cada cinetocoro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada cromossomo possui dois cinetocoros (um em cada cromátide). Para que a célula prossiga, ambos devem estar ligados a microtúbulos vindos de polos opostos (ligação anfitélica). Enquanto houver um único cinetocoro 'vazio' ou não tensionado, ele emite um sinal químico difusível que paralisa toda a maquinaria de separação."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Cinetocoro",
+      "origem": "Grego",
+      "significado": "Kinetos (movimento) + khoros (lugar/espaço)",
+      "explicacao": "O local onde o movimento é gerado através da ancoragem dos microtúbulos."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Reflita: o SAC é um sinal negativo. Ou seja, a célula está programada para PARAR por padrão; o sinal de 'siga' só acontece quando o sinal de 'pare' é silenciado. É um sistema de segurança 'fail-safe'."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Maquinaria: O Complexo MCC e a APC/C"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O 'material' desse sensor é um conjunto de proteínas chamadas Mad2, BubR1 e Bub3. Quando um cinetocoro está desocupado, ele catalisa a formação do Complexo de Checkpoint Mitótico (MCC). Esse complexo é o grande vilão do progresso: ele se liga e sequestra uma proteína chamada Cdc20."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚌",
+      "conteudo": "Imagine um ônibus escolar (a Célula) que só pode partir para o destino (Anáfase) quando todas as crianças (Cromossomos) estiverem sentadas com o cinto de segurança (Microtúbulos). O Cinetocoro vazio é uma criança em pé gritando. Enquanto ela grita, o motorista (APC/C) não consegue colocar a chave na ignição (Cdc20), porque o barulho o impede de se concentrar. Quando a última criança senta e aperta o cinto, o silêncio permite que o motorista finalmente ligue o motor."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sem a Cdc20 livre, a enzima APC/C (Anaphase-Promoting Complex) fica inativa. Quando todos os cinetocoros estão sob tensão, o MCC se desfaz, a Cdc20 é liberada e a APC/C finalmente marca a 'securina' para destruição. Com a securina destruída, a enzima 'separase' acorda e corta as proteínas de coesina que mantinham as irmãs unidas. É o 'clique' final da separação."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se o SAC não existisse?",
+      "resposta": "Se o SAC falhasse, a anáfase ocorreria aleatoriamente. Teríamos células com 47 cromossomos e células com 45. Em humanos, isso é geralmente letal para a célula ou resulta em síndromes genéticas graves (como a Síndrome de Down, se ocorrer na meiose) ou na progressão tumoral agressiva (se ocorrer na mitose)."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O Mecanismo de Sinalização do SAC",
+      "descricao": "Um esquema mostrando um par de cromátides irmãs. À esquerda, um cinetocoro não ligado emite esferas vermelhas (Sinal de PARE/MCC). À direita, um cinetocoro ligado a microtúbulos e sob tensão está 'silencioso'. No citoplasma, o sinal vermelho bloqueia a APC/C.",
+      "prompt_ia": "Scientific illustration of a mitotic chromosome with two kinetochores. One kinetochore is unattached to microtubules and is glowing red, emitting small protein complexes (labeled MCC) into the cytoplasm. The other kinetochore is firmly attached to spindle fibers (microtubules) and is green/silent. In the background, a large protein complex (APC/C) is being inhibited by the red complexes. High quality, biological textbook style, 4k, clear labels, dark background for contrast.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-06-005-04-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é a condição física necessária para que o sinal do SAC seja silenciado em um cinetocoro?",
+      "resposta": "A ligação anfitélica (bi-orientação) aos microtúbulos do fuso, gerando tensão mecânica oposta entre as cromátides irmãs.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "tensão",
+        "cinetocoro"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-04-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria se a proteína Cdc20 fosse permanentemente inibida, mesmo após o alinhamento dos cromossomos?",
+      "resposta": "A célula ficaria presa na metáfase indefinidamente, pois a APC/C nunca seria ativada para iniciar a degradação da securina e a consequente anáfase.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "Cdc20",
+        "ciclo celular"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-04-fc03",
+      "tipo": "por_que",
+      "pergunta": "Por que o SAC é considerado um mecanismo de sinalização negativa?",
+      "resposta": "Porque ele emite um sinal ativo de 'parada' (MCC) que inibe o progresso do ciclo; a progressão só ocorre pela ausência desse sinal inibitório.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "sinalização",
+        "SAC"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-04-fc04",
+      "tipo": "clinico",
+      "pergunta": "Como a falha do SAC contribui para a progressão do câncer?",
+      "resposta": "A falha permite a segregação errônea de cromossomos, gerando instabilidade genômica e aneuploidia, o que pode ativar oncogenes ou inativar supressores de tumor.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "oncologia",
+        "aneuploidia"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-04-fc05",
+      "tipo": "etimologia",
+      "pergunta": "Explique a relação entre o nome 'Complexo Promotor da Anáfase' (APC/C) e sua função no SAC.",
+      "resposta": "O APC/C promove a anáfase ao ubiquitinar a securina. O SAC controla o APC/C através da Cdc20, garantindo que essa 'promoção' só ocorra no momento certo.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "APC/C",
+        "anáfase"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-06-005-04-caso01",
+      "titulo": "Lactente com microcefalia, baixa estatura e histórico familiar de neoplasias precoces",
+      "apresentacao": "Menino de 14 meses, encaminhado à genética médica por microcefalia (perímetro cefálico abaixo do percentil 3) e baixa estatura desproporcional à idade. Os pais são consanguíneos (primos de primeiro grau). Há relato familiar de uma tia que desenvolveu rabdomiossarcoma na infância e um tio com leucemia antes dos 10 anos. Exame de cariótipo em múltiplas linhagens celulares do paciente mostra um mosaico: algumas células com número normal de cromossomos (46), outras com trissomias e monossomias variáveis entre si — um padrão descrito como 'aneuploidia variegada em mosaico'. O geneticista solicita sequenciamento do gene BUB1B.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação bialélica (herdada de ambos os pais consanguíneos) no gene BUB1B, que codifica a proteína BubR1 — um dos componentes centrais do Complexo de Checkpoint Mitótico (MCC) do SAC."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O próprio Checkpoint do Fuso Mitótico (SAC). Sem BubR1 funcional, o MCC não se forma corretamente nos cinetocoros não tensionados, e o sistema de vigilância que deveria 'sentir' ligações incorretas ou ausentes perde sua sensibilidade."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A célula em divisão não consegue mais garantir que todos os cromossomos estejam corretamente bi-orientados antes de prosseguir para a anáfase. A Cdc20 é liberada prematuramente, a APC/C é ativada mesmo com cinetocoros mal ligados, e a segregação cromossômica ocorre de forma aleatória em uma fração significativa das divisões celulares."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Como o erro ocorre de forma recorrente e aleatória em múltiplas divisões mitóticas ao longo do desenvolvimento (não em um evento único, como na trissomia livre clássica), diferentes linhagens celulares acumulam diferentes cariótipos — daí o mosaicismo. Clinicamente, isso se manifesta como microcefalia, baixa estatura, atraso do desenvolvimento e dismorfismos variáveis."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Diagnóstico de Síndrome de Aneuploidia Variegada em Mosaico (MVA, do inglês Mosaic Variegated Aneuploidy Syndrome), associada a mutações em BUB1B. Além do quadro do desenvolvimento, esses pacientes têm risco fortemente aumentado de neoplasias infantis (rabdomiossarcoma, leucemias, tumor de Wilms), porque a instabilidade cromossômica contínua favorece o acúmulo de mutações oncogênicas — o mesmo princípio de vigilância que protege a célula normal, quando perdido, se torna motor de câncer."
+        }
+      ],
+      "conexao_com_bloco": "Este caso é a demonstração clínica direta do que o bloco descreveu como mecanismo molecular: a perda de função de uma única proteína do SAC (BubR1, componente do MCC) reproduz em humanos exatamente o cenário hipotético do contrafactual do bloco ('e se o SAC não existisse?') — mas de forma parcial e recorrente ao longo de milhares de divisões celulares durante o desenvolvimento, em vez de um evento único. O mosaicismo observado no cariótipo é a assinatura de um checkpoint que falha de forma intermitente, não ausente por completo (o que seria incompatível com a vida).",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "genética médica",
+        "oncologia pediátrica",
+        "pediatria"
+      ],
+      "diagnostico_revelado": "Síndrome de Aneuploidia Variegada em Mosaico (MVA) por mutação bialélica em BUB1B, com predisposição aumentada a neoplasias infantis.",
+      "tratamento_resumido": "Não há cura para o defeito genético subjacente. O manejo é de suporte ao desenvolvimento (estimulação precoce, acompanhamento do crescimento) associado a vigilância oncológica ativa e programada (exames de imagem e laboratoriais periódicos) para detecção precoce de tumores, dado o risco aumentado de malignidade associado à instabilidade cromossômica crônica."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-04-002",
+        "titulo": "Mitocôndria — Visão Geral",
+        "disciplina": "Biologia Celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É necessário entender como os microtúbulos se polimerizam e se ligam ao cinetocoro para compreender a origem da tensão."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Aneuploidias Humanas",
+        "disciplina": "Genética Médica",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "A falha no SAC durante a meiose é a causa direta de trissomias como a Síndrome de Down e de Edwards.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Quimioterápicos Antimitóticos",
+        "disciplina": "Farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Drogas como o Taxol estabilizam microtúbulos, impedindo a tensão correta e ativando o SAC permanentemente, levando a célula cancerosa à apoptose por parada mitótica.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Checkpoint G1/S",
+        "explicacao": "Enquanto o G1/S checa a integridade do DNA e nutrientes, o SAC (M) checa exclusivamente a integridade mecânica da segregação cromossômica."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-06-005-04",
   "no_pai_id": "s1-biocel-06-005",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Checkpoint do Fuso (SAC)",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Garante ligação correta de cinetocoros antes da anáfase",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3-flash-preview",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "fisiologia"
-  ]
+  }
 }

@@ -4,49 +4,211 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Diagnóstico e Tratamento da Miomatose",
+    "titulo": "Diagnostico e Tratamento da Miomatose",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "miomatose",
+      "sangramento-uterino-anormal",
+      "diagnostico",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "USG, RM; conduta expectante, clínica, embolização, miomectomia, histerectomia",
-  "narrativa": [],
+  "resumo_conciso": "O diagnostico usa historia, exame e ultrassom; RM auxilia mapeamento complexo. Tratamento varia entre observacao, medicamentos, DIU-LNG, histeroscopia, miomectomia, embolizacao e histerectomia.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "A investigacao começa pela historia: volume do sangramento, anemia, dor, sintomas compressivos, desejo reprodutivo, idade, comorbidades e uso de hormonios. O exame avalia volume uterino, mobilidade, dor e massas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O ultrassom transvaginal e o exame inicial mais usado. Ele identifica numero, tamanho e localizacao dos miomas. Ultrassom com infusao salina ou histeroscopia ajudam quando ha suspeita de lesao intracavitaria."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A ressonancia magnetica e util quando o mapa e complexo, antes de procedimentos, na suspeita de adenomiose associada ou quando a imagem ultrassonografica nao explica o quadro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se o mioma e assintomatico, a conduta pode ser expectante. Tratar todo achado incidental gera mais dano do que beneficio. O seguimento considera sintomas, crescimento, idade e menopausa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para sangramento, opcoes clinicas incluem DIU liberador de levonorgestrel quando a cavidade permite, anticoncepcionais, progestagenos, acido tranexamico, anti-inflamatorios e modulacao do eixo GnRH em situacoes selecionadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Miomas submucosos sintomaticos podem ser tratados por histeroscopia. Miomectomia preserva utero e fertilidade potencial, mas pode recidivar. Embolizacao reduz volume e sangramento, mas exige discussao cuidadosa se ha desejo gestacional."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Histerectomia e tratamento definitivo para paciente com prole definida, sintomas importantes e falha ou inadequacao de alternativas. A decisao deve incluir via cirurgica, tamanho uterino, riscos e preferencia informada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em qualquer plano, corrigir anemia e essencial. Muitas vezes a seguranca do tratamento definitivo depende de melhorar hemoglobina antes."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "titulo": "Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-04-006",
+        "titulo": "Adenomiose - Endometrio Invadindo o Miometrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Modulo 6 - Infeccoes do Trato Genital e ISTs",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-025",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Conduta no Sangramento Uterino Anormal — Aguda e Crônica"
+      },
+      {
+        "bloco_id": "s7-go1-03-004",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Manifestacoes Clinicas e Riscos da SOP"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-05-004-fc-01",
+      "pergunta": "Qual exame inicial mais usado para miomatose?",
+      "resposta": "Ultrassom transvaginal, com mapeamento de numero, tamanho e localizacao.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-004-fc-02",
+      "pergunta": "Quando RM ajuda?",
+      "resposta": "Mapa complexo, planejamento de procedimento, suspeita de adenomiose associada ou duvida diagnostica.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-004-fc-03",
+      "pergunta": "Qual tratamento e definitivo para miomatose sintomatica em prole definida?",
+      "resposta": "Histerectomia.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-004-fc-04",
+      "pergunta": "Por que tratar anemia faz parte da conduta?",
+      "resposta": "Porque melhora sintomas e reduz risco antes de procedimentos ou cirurgia.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-05-004-cc-01",
+      "titulo": "Escolha guiada por fertilidade",
+      "apresentacao": "Paciente de 33 anos com mioma submucoso e infertilidade deseja gestar. Outra de 48 anos, prole definida, tem multiplos miomas e anemia grave.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: O diagnostico usa historia, exame e ultrassom; RM auxilia mapeamento complexo."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Diagnostico e Tratamento da Miomatose, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O diagnostico usa historia, exame e ultrassom; RM auxilia mapeamento complexo. Tratamento varia entre observacao, medicamentos, DIU-LNG, histeroscopia, miomectomia, embolizacao e histerectomia."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente de 33 anos com mioma submucoso e infertilidade deseja gestar. Outra de 48 anos, prole definida, tem multiplos miomas e anemia grave."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Por que as condutas diferem? A primeira tende a manejo preservador da cavidade; a segunda pode discutir tratamento definitivo, inclusive histerectomia, apos corrigir anemia."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "A primeira tende a manejo preservador da cavidade; a segunda pode discutir tratamento definitivo, inclusive histerectomia, apos corrigir anemia.",
+      "tratamento_resumido": "A primeira tende a manejo preservador da cavidade; a segunda pode discutir tratamento definitivo, inclusive histerectomia, apos corrigir anemia."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Algoritmo de tratamento de miomas por sintomas, cavidade, fertilidade e prole definida.",
+        "alt": "Ilustracao educacional para Diagnostico e Tratamento da Miomatose"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_3_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NICE guideline NG88 - Heavy menstrual bleeding: assessment and management",
+      "url": "https://www.nice.org.uk/guidance/ng88",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "FIGO resources - menstrual disorders and abnormal uterine bleeding",
+      "url": "https://www.figo.org/figo-resources/menstrual-disorders",
+      "tipo": "classificacao"
+    }
+  ],
   "_lentes": [
     "diagnostico",
     "conduta"

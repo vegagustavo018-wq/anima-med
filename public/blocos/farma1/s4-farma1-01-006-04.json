@@ -5,50 +5,361 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Modelos Compartimentais",
+    "subtitulo": "Se o corpo não é um recipiente único, como calcular uma concentração que sirva para todo ele?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
     "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "modelos-compartimentais",
+      "distribuicao",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Modelo de um e dois compartimentos; curva concentração-tempo; distribuição x eliminação",
-  "narrativa": [],
+  "resumo_conciso": "Meia-vida, clearance e cinética de saturação — vistos nos três blocos anteriores — descrevem com precisão a velocidade e a capacidade de eliminação. Mas todos eles têm uma limitação silenciosa: tratam o corpo como se fosse um recipiente único, homogêneo, onde o fármaco se mistura instantaneamente. Isso não é verdade para boa parte dos fármacos. Depois de uma injeção intravenosa, a concentração plasmática despenca muito rápido nos primeiros minutos — não porque o fármaco esteja sendo eliminado tão depressa, mas porque ele está saindo do sangue e entrando nos tecidos. Só depois, quando esse equilíbrio inicial se estabelece, a curva passa a refletir a eliminação propriamente dita. Um modelo de um compartimento não enxerga essa diferença; um modelo de dois compartimentos, sim. Ele divide o corpo, para fins de cálculo, em um compartimento central (sangue e tecidos muito irrigados) e um compartimento periférico (tecidos menos irrigados, que recebem o fármaco com atraso). O resultado visível dessa divisão é a curva concentração-tempo bifásica: uma fase de distribuição rápida seguida de uma fase de eliminação mais lenta. Reconhecer as duas fases evita erros de interpretação comuns — como confundir redistribuição tecidual com metabolismo, ou usar uma dose de ataque calculada para o corpo inteiro quando na verdade ela deveria mirar apenas o compartimento central.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um paciente recebe uma injeção intravenosa em bolus de um anestésico. Nos primeiros dois minutos, a concentração plasmática cai de forma abrupta — muito mais rápido do que a meia-vida de eliminação desse fármaco, medida em horas, deveria permitir. O paciente não metabolizou nem excretou boa parte da dose nesse intervalo curtíssimo. Para onde foi o fármaco?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: o corpo não é um recipiente único"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os três parâmetros vistos até aqui — meia-vida, clearance, tipo de cinética de eliminação — foram descritos como se o fármaco, uma vez na circulação, estivesse instantaneamente misturado em todo o organismo, como um corante numa jarra de água agitada. Essa simplificação funciona bem para estimar a eliminação a longo prazo. Mas ela ignora um fato anatômico óbvio: o corpo não é uma jarra homogênea. É um conjunto de tecidos com irrigação sanguínea muito desigual — cérebro, coração, rim e fígado recebem uma fração enorme do débito cardíaco por grama de tecido; músculo, pele e gordura recebem muito menos, por unidade de peso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa desigualdade de irrigação tem uma consequência direta: o fármaco não chega a todos os tecidos ao mesmo tempo. Ele invade primeiro os órgãos ricamente irrigados e só depois, mais lentamente, se equilibra com os tecidos menos irrigados. Enquanto esse equilíbrio não se completa, medir a concentração no sangue e tratá-la como se representasse a concentração em todo o corpo é um erro de cálculo — e é exatamente o erro que um modelo de um único compartimento comete."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema aqui não é a velocidade de eliminação (já resolvida pelos blocos anteriores). É que, antes de o fármaco se eliminar, ele ainda precisa terminar de se espalhar — e esse espalhamento tem sua própria velocidade, distinta da eliminação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, em princípio"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução matemática não tenta simular a anatomia real, tecido por tecido — isso exigiria centenas de variáveis. Em vez disso, ela agrupa os tecidos em um número pequeno de blocos funcionais, cada um definido não por onde fica no corpo, mas por que velocidade tem para trocar fármaco com o sangue. Tecidos muito irrigados (que se equilibram quase junto com o sangue) formam um grupo; tecidos pouco irrigados (que demoram para se equilibrar) formam outro. Cada grupo passa a ser tratado, para fins de cálculo, como um reservatório único e homogêneo — um compartimento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No caso mais comum na prática, dois compartimentos já bastam para capturar o comportamento observado na maioria dos fármacos administrados por via intravenosa: um compartimento central, que inclui o sangue e os órgãos de irrigação rica, e um compartimento periférico, que reúne os tecidos de irrigação mais pobre. O fármaco entra pelo compartimento central, troca com o periférico numa velocidade própria, e é eliminado — por metabolismo e excreção — a partir do compartimento central, porque é lá que ficam o fígado e o rim."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Um modelo compartimental não descreve órgãos: descreve **velocidades de troca**. O compartimento central e o periférico são agrupamentos matemáticos de tecidos que se comportam de forma cinéticamente parecida — não regiões anatômicas literais."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse modelo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada compartimento tem, na equação, um volume próprio — não um volume anatômico medido com régua, mas um volume calculado que representa o espaço aparente que o fármaco ocupa naquele grupo de tecidos. Entre os compartimentos existem constantes de transferência, que descrevem a velocidade com que o fármaco passa do central para o periférico e vice-versa. E, ligada ao compartimento central, existe a constante de eliminação, que já apareceu nos blocos de meia-vida e clearance — só que agora aplicada apenas à fração do fármaco que está, num dado instante, dentro do compartimento central."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Matematicamente, a soma desses processos simultâneos — distribuição para o periférico e eliminação a partir do central — produz uma curva que não é uma única exponencial decrescente, como seria num modelo de um compartimento, mas a soma de duas exponenciais com velocidades diferentes. É essa soma que dá à curva sua forma característica em duas fases."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona: a curva bifásica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ao plotar a concentração plasmática em escala logarítmica contra o tempo após uma injeção intravenosa em bolus, um fármaco de dois compartimentos desenha uma curva com dois trechos retilíneos de inclinações diferentes, não uma única reta. Essa é a assinatura visual do modelo de dois compartimentos: a curva concentração-tempo bifásica."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "As duas fases da curva concentração-tempo",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Fase de distribuição (α)",
+          "explicacao": "Logo após o bolus, a concentração plasmática cai de forma acentuada e rápida. Essa queda reflete, principalmente, a saída do fármaco do compartimento central para o periférico — o fármaco está se espalhando pelos tecidos menos irrigados, não sendo eliminado do corpo. É a fase mais inclinada da curva."
+        },
+        {
+          "numero": 2,
+          "titulo": "Ponto de pseudo-equilíbrio",
+          "explicacao": "Em algum momento, a concentração no compartimento periférico se aproxima o suficiente da concentração no central para que a troca líquida entre os dois desacelere. A partir daqui, a queda de concentração passa a refletir predominantemente a eliminação real, não mais a redistribuição."
+        },
+        {
+          "numero": 3,
+          "titulo": "Fase de eliminação (β)",
+          "explicacao": "A concentração continua caindo, mas de forma mais lenta e com inclinação constante — essa é a fase que corresponde à meia-vida de eliminação clinicamente relevante, a mesma discutida no bloco sobre meia-vida. É essa fase, e não a fase de distribuição, que deve ser usada para calcular o intervalo entre doses de manutenção."
+        },
+        {
+          "numero": 4,
+          "titulo": "Consequência prática para a dose de ataque",
+          "explicacao": "Como a fase de distribuição ainda não alcançou o tecido periférico, uma dose de ataque calculada para 'encher' o corpo inteiro de uma vez pode gerar concentração central transitoriamente tóxica, antes que o fármaco termine de se redistribuir. É por isso que doses de ataque de fármacos de dois compartimentos costumam ser fracionadas ou infundidas lentamente."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um erro clássico de interpretação é olhar só para a fase de distribuição e concluir, erroneamente, que o fármaco tem meia-vida curtíssima — quando, na verdade, essa fase reflete redistribuição, não eliminação. A meia-vida clinicamente relevante, a que determina o intervalo de doses repetidas, é a da fase β, mais lenta."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os modelos compartimentais não substituem meia-vida, clearance e tipo de cinética — eles fornecem a estrutura dentro da qual esses três parâmetros operam de forma coerente quando o fármaco não se comporta como um recipiente único. Em anestesiologia, essa articulação é diária: o cálculo de infusões alvo-controladas de propofol e opioides usa explicitamente modelos de dois ou três compartimentos, porque a diferença entre a fase de distribuição e a fase de eliminação decide quando o paciente acorda. Em farmacologia clínica de fármacos com janela terapêutica estreita — digoxina é o exemplo canônico —, a dosagem sérica precisa respeitar um tempo mínimo após a última dose antes da coleta, exatamente para evitar medir a fase de distribuição e superestimar o risco de toxicidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome do modelo"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "compartimento",
+      "origem": "do latim cum (com) + partiri (dividir, repartir)",
+      "significado": "literalmente, 'espaço dividido junto com outros' — uma parte separada de um todo maior",
+      "explicacao": "O termo já existia na engenharia e na física antes de a farmacocinética o adotar, sempre com o mesmo sentido de subdivisão de um sistema maior em partes com comportamento próprio. Quando farmacologistas como Teorell, nas décadas de 1930 e 1940, e depois a escola de Wagner e Riegelman, passaram a modelar matematicamente a distribuição de fármacos no corpo, tomaram emprestado esse vocabulário para descrever grupos de tecidos com cinética semelhante — não porque o corpo tenha divisórias físicas reais, mas porque a matemática exigia nomear cada bloco da equação. O nome, portanto, descreve uma conveniência de cálculo, não uma estrutura anatômica: é um lembrete de que o modelo é uma simplificação útil, não um mapa literal do corpo."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛁",
+      "conteudo": "Pense em duas banheiras conectadas por um cano estreito, uma delas com a torneira e o ralo. A banheira com torneira e ralo é o **compartimento central** — é nela que a água (o fármaco) entra e é nela que a água sai pelo ralo (a eliminação hepática e renal). A segunda banheira, ligada por um cano fino, é o **compartimento periférico** — os tecidos menos irrigados. Quando você despeja um balde de água de uma vez na primeira banheira, o nível ali sobe e desce rápido no início, não só porque um pouco escoa pelo ralo, mas porque boa parte está passando pelo cano fino para a segunda banheira (**fase de distribuição**). Só depois que as duas banheiras atingem níveis parecidos é que a queda de nível na primeira passa a refletir quase só o ralo (**fase de eliminação**). A analogia quebra num ponto importante: as banheiras reais têm paredes fixas e visíveis, enquanto os 'compartimentos' do modelo são agrupamentos matemáticos de tecidos com velocidades de troca parecidas — não existe, em lugar nenhum do corpo, uma parede real separando o compartimento central do periférico."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Todo modelo compartimental é uma simplificação deliberada, não uma descrição literal da anatomia. Fármacos reais às vezes exigem três compartimentos para ajustar bem a curva observada, e em nenhum caso o número de compartimentos corresponde a um número real de 'regiões' do corpo — é definido pelo que o ajuste matemático aos dados de concentração exige, e pode variar conforme a via de administração e a duração da amostragem."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Fechando o módulo de parâmetros cinéticos"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os quatro blocos deste módulo, vistos em conjunto, respondem à mesma pergunta original feita na visão geral: como transformar a jornada ADME em números de prescrição. A meia-vida diz quando repetir a dose. O clearance diz quanto repor para manter a concentração estável. A distinção entre cinética de primeira ordem e de ordem zero diz se aumentar a dose é seguro ou arriscado. E o modelo compartimental, visto aqui, diz que esses três parâmetros só descrevem corretamente o comportamento do fármaco depois que a fase de distribuição termina — e fornece a estrutura para calcular a concentração em qualquer fase, incluindo os minutos iniciais que os outros três parâmetros, isolados, não capturam. Juntos, os quatro transformam a farmacocinética de uma boa explicação numa ferramenta de cálculo de dose."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Curva concentração-tempo bifásica do modelo de dois compartimentos",
+      "descricao": "Gráfico com eixo Y de concentração plasmática em escala logarítmica e eixo X de tempo após injeção intravenosa em bolus. A curva mostra dois trechos retilíneos de inclinações claramente diferentes: um trecho inicial muito inclinado, rotulado 'fase de distribuição (α)', seguido de uma transição suave até um trecho final de inclinação mais suave e constante, rotulado 'fase de eliminação (β)'. Uma linha tracejada indica o prolongamento da fase β até o eixo Y, evidenciando visualmente como ela se distingue da curva real observada nos primeiros minutos. Ao lado, dois círculos esquemáticos conectados por uma seta bidirecional fina representam o compartimento central (maior, com uma seta de entrada 'dose IV' e uma seta de saída 'eliminação') e o compartimento periférico (menor, sem saída direta). Legendas em português, cores diferenciando claramente as duas fases da curva, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Painel esquerdo: gráfico de concentração plasmática (eixo Y, escala logarítmica, rotulado 'concentração (log)') versus tempo (eixo X, rotulado 'tempo após bolus IV') mostrando uma curva com dois segmentos retilíneos de inclinações distintas — segmento inicial muito íngreme rotulado 'fase de distribuição (α)' e segmento final com inclinação suave e constante rotulado 'fase de eliminação (β)', com uma linha tracejada de cor diferente prolongando o segmento β retroativamente até o eixo Y para mostrar a diferença em relação à curva real. Painel direito: dois círculos conectados por uma seta bidirecional fina rotulada com pequenas setas de troca; círculo maior à esquerda rotulado 'compartimento central (sangue + órgãos ricamente irrigados)' com uma seta de entrada rotulada 'dose IV' e uma seta de saída na base rotulada 'eliminação (fígado/rim)'; círculo menor à direita rotulado 'compartimento periférico (tecidos pouco irrigados)' sem seta de saída própria. Paleta de cores suaves e distintas para cada fase e cada compartimento, texto em português, sem elementos fotorrealistas, alto contraste, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-006",
+        "titulo": "Parâmetros Cinéticos — Quantificar a Jornada (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco parte da mesma pergunta panorâmica — como resumir a jornada ADME em números — e aplica o quarto raciocínio anunciado ali: organizar o corpo como reservatórios interligados para calcular a concentração em qualquer fase do tempo, não só na fase estável de eliminação."
+      },
+      {
+        "bloco_id": "s4-farma1-01-006-01",
+        "titulo": "Meia-Vida (t½)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "complementar",
+        "explicacao": "A meia-vida clinicamente relevante para repetição de doses é a da fase de eliminação (β) do modelo compartimental — confundi-la com a fase de distribuição é o erro que este bloco existe para prevenir."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Infusão alvo-controlada de propofol e opioides",
+        "mecanismo_conexao": "O cálculo de infusões alvo-controladas usa explicitamente modelos de dois ou três compartimentos para prever a concentração no compartimento central em tempo real, ajustando a velocidade de infusão conforme o fármaco se redistribui.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Momento correto de coleta de nível sérico de digoxina",
+        "mecanismo_conexao": "A dosagem de digoxina exige aguardar o fim da fase de distribuição antes de coletar a amostra; coletar durante a fase α superestima artificialmente a concentração e pode levar a suspensão indevida do fármaco.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-006-04-fc01",
+      "pergunta": "Por que um modelo de um único compartimento não consegue explicar a queda abrupta de concentração plasmática nos primeiros minutos após um bolus intravenoso de certos fármacos?",
+      "resposta": "Porque o modelo de um compartimento assume que o fármaco se mistura instantaneamente em todo o corpo, tratado como um recipiente único e homogêneo. Na realidade, o corpo tem irrigação sanguínea desigual: órgãos muito irrigados recebem o fármaco quase junto com o sangue, enquanto tecidos pouco irrigados demoram para se equilibrar. A queda rápida inicial reflete a saída do fármaco do sangue para esses tecidos periféricos — redistribuição, não eliminação —, um processo que o modelo de um compartimento simplesmente não tem como representar.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "modelos-compartimentais",
+        "distribuicao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-04-fc02",
+      "pergunta": "Descreva as duas fases da curva concentração-tempo de um fármaco de dois compartimentos após injeção intravenosa em bolus, e diga qual delas deve orientar o cálculo do intervalo de doses de manutenção.",
+      "resposta": "A fase de distribuição (α) é o trecho inicial, de queda rápida, que reflete principalmente a saída do fármaco do compartimento central para o periférico — redistribuição tecidual, não eliminação. A fase de eliminação (β) é o trecho subsequente, de queda mais lenta e inclinação constante, que reflete a eliminação real por metabolismo e excreção depois que o equilíbrio entre os compartimentos se estabeleceu. É a meia-vida da fase β — não da fase α — que deve orientar o intervalo entre doses de manutenção, porque é ela que representa a velocidade real de depuração do fármaco do organismo.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "modelos-compartimentais",
+        "meia-vida"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-04-fc03",
+      "pergunta": "Um residente calcula a meia-vida de um fármaco medindo apenas os primeiros cinco minutos após um bolus intravenoso e conclui que ela é curtíssima, recomendando doses muito frequentes. Qual é o erro e qual a consequência clínica provável?",
+      "resposta": "O erro é medir a fase de distribuição (α) e tratá-la como se fosse a meia-vida de eliminação. Nos primeiros minutos após o bolus, a queda de concentração reflete majoritariamente a redistribuição do fármaco do compartimento central para o periférico, não a eliminação real. Se o residente basear o intervalo de doses nessa meia-vida artificialmente curta, vai prescrever doses repetidas com frequência excessiva — e, como a eliminação real (fase β) é mais lenta, o fármaco vai se acumular no compartimento central a cada dose repetida, com risco real de toxicidade cumulativa.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "modelos-compartimentais",
+        "erro-de-interpretacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-04-fc04",
+      "pergunta": "Por que o termo 'compartimento', emprestado da física e da engenharia, é ao mesmo tempo útil e potencialmente enganoso quando aplicado à farmacocinética?",
+      "resposta": "É útil porque descreve com precisão a ideia central do modelo: agrupar tecidos de cinética semelhante em blocos matemáticos manejáveis, permitindo calcular a concentração do fármaco sem simular a anatomia real tecido por tecido. É potencialmente enganoso porque sugere, para quem ouve pela primeira vez, que existem divisórias físicas reais no corpo separando um 'compartimento' do outro — o que não é verdade. Compartimento central e periférico são agrupamentos definidos por velocidade de troca com o sangue, não por localização anatômica ou barreiras físicas reais.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "modelos-compartimentais",
+        "etimologia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-04-fc05",
+      "pergunta": "Por que a dosagem sérica de digoxina só deve ser coletada depois de decorrido um tempo mínimo após a última dose, e não logo em seguida?",
+      "resposta": "Porque a digoxina segue um modelo de dois compartimentos com fase de distribuição prolongada: logo após a administração, a concentração no compartimento central (sangue) ainda está artificialmente alta, porque o fármaco não terminou de se redistribuir para o tecido periférico (incluindo o músculo cardíaco, seu principal sítio de ação). Uma coleta feita durante essa fase superestima a concentração real de equilíbrio, podendo levar a uma decisão equivocada de suspender ou reduzir uma dose que, na verdade, está adequada.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "modelos-compartimentais",
+        "digoxina",
+        "monitorizacao-terapeutica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-04-fc06",
+      "pergunta": "Reunindo os quatro blocos do módulo de parâmetros cinéticos, explique como cada um responde a uma pergunta clínica distinta sobre a prescrição de um fármaco.",
+      "resposta": "A meia-vida responde 'quando repetir a dose', medindo a velocidade de queda da concentração. O clearance responde 'quanto repor', medindo a eficiência de depuração do organismo para calcular a dose de manutenção. A distinção entre cinética de primeira ordem e de ordem zero responde 'é seguro aumentar a dose', indicando se a eliminação é proporcional ou tem teto de capacidade. E o modelo compartimental responde 'os outros três parâmetros valem em que momento', mostrando que eles descrevem corretamente o comportamento do fármaco só depois que a fase de distribuição termina, e fornecendo a estrutura para calcular a concentração também durante essa fase inicial.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "farmacocinetica",
+        "modelos-compartimentais",
+        "sintese-modulo"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-006-04-caso01",
+      "titulo": "Sonolência prolongada após bolus de fentanil em cirurgia de longa duração",
+      "apresentacao": "Paciente de 45 anos é submetido a uma cirurgia abdominal de 6 horas, recebendo múltiplas doses intravenosas em bolus de fentanil ao longo do procedimento, além de uma infusão contínua. Ao final da cirurgia, o paciente demora muito mais que o esperado para recuperar a consciência e o drive respiratório, exigindo suporte ventilatório prolongado na sala de recuperação. A equipe de anestesiologia revisa o caso e identifica que, embora a meia-vida de eliminação do fentanil seja relativamente curta, sua meia-vida contexto-sensível — o tempo para a concentração cair pela metade após o término de uma infusão — aumenta muito quanto mais prolongada e repetida for a administração.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Fentanil é um fármaco lipofílico que se distribui amplamente para o compartimento periférico (tecido adiposo e muscular) a cada bolus. Em administrações únicas e isoladas, essa redistribuição rápida para o periférico é o que torna seu efeito clinicamente curto."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Ao longo de 6 horas de bolus repetidos e infusão contínua, o compartimento periférico vai progressivamente se saturando de fármaco. Quando ele está cheio, deixa de funcionar como reservatório que 'absorve' o excesso do compartimento central — a via de saída rápida da fase de distribuição perde eficácia."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem o alívio da redistribuição para o periférico já saturado, a concentração no compartimento central passa a depender quase exclusivamente da eliminação real (fase β), que é muito mais lenta. O fármaco que antes 'desaparecia' rápido do sangue por redistribuição agora só sai por metabolismo hepático, processo que leva muito mais tempo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sonolência e depressão respiratória prolongadas, muito além do esperado para uma administração única de fentanil, exigindo ventilação assistida continuada na recuperação pós-anestésica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A equipe passa a planejar a redução progressiva da infusão nas últimas horas da cirurgia (e não apenas suspendê-la ao final), antecipando que, em administrações prolongadas, a cinética relevante deixa de ser a da fase de distribuição e passa a ser a da fase de eliminação — exatamente a lição central deste bloco aplicada à prática anestésica."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra por que tratar o corpo como reservatórios interligados de velocidades diferentes não é um exercício teórico: a mesma distinção entre fase de distribuição e fase de eliminação que explica a curva bifásica de um bolus único explica também por que a duração da infusão muda o comportamento cinético observado de um fármaco lipofílico como o fentanil.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "anestesiologia"
+      ],
+      "diagnostico_revelado": "Acúmulo do compartimento periférico com prolongamento do efeito por saturação da redistribuição (meia-vida contexto-sensível aumentada).",
+      "tratamento_resumido": "Suporte ventilatório até recuperação plena do drive respiratório; em cirurgias futuras semelhantes, ajuste da infusão com redução antecipada da velocidade nas últimas horas do procedimento, planejamento guiado por modelos farmacocinéticos populacionais de dois ou três compartimentos específicos para o fentanil."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-006-04-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "molecular"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics II: Distribution and Elimination of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

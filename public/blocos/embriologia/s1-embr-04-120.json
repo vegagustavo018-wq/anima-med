@@ -10,43 +10,212 @@
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
-      "embr",
-      "esqueleto"
+      "embriologia",
+      "endócrino"
     ],
     "nivel": "APROFUNDAMENTO",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "subtitulo": "Como glândulas sem ducto acham seu lugar e começam a comandar o corpo?"
   },
-  "resumo_conciso": "Hipófise dupla origem, tireoide, adrenal córtex/medula",
-  "narrativa": [],
+  "resumo_conciso": "As glândulas endócrinas têm origens diversas e convergem para uma função comum: liberar sinais químicos no sangue. A hipófise nasce da bolsa de Rathke e do diencéfalo; a tireoide desce da faringe pelo ducto tireoglosso; a adrenal une córtex mesodérmico e medula de crista neural.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O corpo em formação precisa coordenar órgãos à distância. Para isso cria glândulas que despejam mensagens químicas no sangue, não em ductos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema antes do nome"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A hipófise tem dupla origem: bolsa de Rathke sobe do ectoderma oral, e neuro-hipófise desce do diencéfalo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa de consolidação: guarde o mecanismo antes de guardar a lista de derivados."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A tireoide começa no assoalho da faringe e desce pela linha média até o pescoço. O ducto tireoglosso deve desaparecer."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A adrenal também é composta: córtex mesodérmico produz esteroides, enquanto medula de crista neural produz catecolaminas."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: origem, tempo e interação entre tecidos explicam a forma final e a apresentação clínica."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "endócrino",
+      "origem": "do grego endon, dentro, e krinein, secretar",
+      "significado": "secreção para dentro",
+      "explicacao": "A palavra contrasta com exócrino: a secreção entra no meio interno, especialmente no sangue."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "mapa",
+      "conteudo": "As glândulas são torres de comunicação: cada uma foi construída por uma equipe diferente, mas todas enviam mensagens pela rede sanguínea. A analogia quebra porque há retroalimentação hormonal."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se a tireoide não migrasse para o pescoço?",
+      "resposta": "Poderia restar tireoide lingual ou ectópica, às vezes como único tecido funcional."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Mapa de desenvolvimento - endócrino",
+      "descricao": "Esquema didático com origem embrionária, etapa intermediária e consequência clínica principal.",
+      "prompt_ia": "Diagrama médico em português, fundo neutro, setas causais, cores suaves e legendas com acentuação correta.",
+      "origem": "ia"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O fechamento clínico é simples: quando a forma adulta parece misteriosa, volte ao momento em que o embrião precisou construir, migrar, induzir ou amadurecer esse tecido."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-embr-04-000",
+        "titulo": "Embriologia de Sistemas (Organogênese) — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "A organogênese geral dá a linguagem de migração e diferenciação."
+      },
+      {
+        "bloco_id": "s1-embr-04-060",
+        "titulo": "Sistema Nervoso — Desenvolvimento",
+        "relevancia": "base_necessaria",
+        "explicacao": "Hipófise posterior e medula adrenal têm relação com tecido neural."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Cisto do ducto tireoglosso",
+        "mecanismo_conexao": "A clínica neonatal torna visível uma falha de origem, migração, maturação ou interação embrionária.",
+        "confianca": "consenso_didatico"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-embr-04-120-fc01",
+      "tipo": "comparacao",
+      "pergunta": "Compare as duplas origens de hipófise e adrenal.",
+      "resposta": "Hipófise: bolsa de Rathke e diencéfalo. Adrenal: córtex mesodérmico e medula de crista neural.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "embriologia"
+      ]
+    },
+    {
+      "card_id": "s1-embr-04-120-fc02",
+      "tipo": "clinico",
+      "pergunta": "Por que cisto cervical mediano pode ter relação com tireoide?",
+      "resposta": "Porque a tireoide migra pela linha média e pode deixar restos do ducto tireoglosso.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "embriologia"
+      ]
+    },
+    {
+      "card_id": "s1-embr-04-120-fc03",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de pensar na adrenal como glândula simples?",
+      "resposta": "Córtex e medula têm origens, produtos e doenças diferentes.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "embriologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-embr-04-120-caso01",
+      "titulo": "Massa cervical mediana",
+      "apresentacao": "Criança tem nódulo mediano que sobe ao protruir a língua; a tireoide tópica está presente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Persistência do ducto tireoglosso."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Trajeto embrionário da tireoide."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Restos epiteliais formam cisto."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Nódulo cervical mediano móvel."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Pode infectar ou recidivar se o trajeto não for removido."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que a tireoide adulta começou na base da língua.",
+      "disciplinas_relacionadas": [
+        "embriologia",
+        "anatomia",
+        "pediatria",
+        "genética"
+      ],
+      "diagnostico_revelado": "Cisto do ducto tireoglosso",
+      "tratamento_resumido": "Confirmar tireoide normal e tratar por excisão adequada quando indicado."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-embr-04-120-img01",
+        "url": null,
+        "prompt_ia": "Diagrama médico em português, fundo neutro, setas causais, cores suaves e legendas com acentuação correta.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Moore KL, Persaud TVN, Torchia MG. Embriologia Clínica. 11ª ed. Elsevier.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Sadler TW. Langman Embriologia Médica. 15ª ed. Wolters Kluwer.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "morfologia",
     "correlação clínica"

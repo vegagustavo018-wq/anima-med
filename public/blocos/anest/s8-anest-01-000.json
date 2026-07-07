@@ -12,51 +12,397 @@
     "s8-anest-01-008",
     "s8-anest-01-009"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s6-cirurgia-00-000"
+  ],
   "metadata": {
     "titulo": "Avaliação Pré-Anestésica e Estratificação de Risco",
+    "subtitulo": "Como saber, antes de tocar em qualquer fármaco, quanto aquele corpo específico vai tolerar a suspensão da própria autoproteção?",
     "semestre": 8,
     "disciplina": "Anestesiologia",
+    "sistema_corporal": "multissistêmico",
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 15,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.1",
     "tags": [
       "anest",
-      "esqueleto"
+      "avaliacao-pre-anestesica",
+      "estratificacao-de-risco",
+      "raciocinio-clinico",
+      "seguranca-do-paciente",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Como prever e reduzir o risco antes de anestesiar",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior vimos que a anestesia geral suspende, de propósito, três sistemas de autoproteção do corpo — consciência, nocicepção e reflexos autonômicos — e que essa suspensão só é segura se alguém compensar ativamente tudo que ela retira. Mas essa compensação não começa na sala de cirurgia: começa antes, quando o anestesiologista ainda nem escolheu o fármaco, e precisa responder a uma pergunta diferente — este paciente específico, com este coração, este pulmão, estas comorbidades, vai tolerar ter a própria regulação autônoma desligada por três horas? A avaliação pré-anestésica é o processo estruturado de responder essa pergunta antes que ela se torne irreversível. Ela não é burocracia nem checklist genérico: é o momento em que o risco de cada paciente é individualizado, comparado contra populações de risco conhecido e traduzido em decisões concretas — qual técnica usar, que exames pedir, o que adiar, o que otimizar antes, o que vigiar com mais intensidade durante. Este bloco é o pórtico do módulo: explica por que essa avaliação existe como etapa formal e obrigatória, como ela se organiza logicamente, e onde cada peça dela — anamnese dirigida, classificação ASA, capacidade funcional, índices de risco cardíaco, via aérea prevista, jejum, exames, medicações crônicas, consentimento — se encaixa. Os módulos seguintes tratam cada peça em profundidade.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você acabou de ver que a anestesia geral funciona como desligar o piloto automático de um avião e assumir manualmente os controles — altitude, velocidade, rota — durante todo o voo. Essa analogia tem uma implicação que o bloco anterior só tocou de leve: nenhum piloto experiente assume os controles de um avião que nunca viu, sem antes checar o estado da aeronave. Ele confere combustível, pressão dos pneus, condições climáticas da rota, histórico de manutenção — porque cada avião reage diferente à mesma manobra, e alguns aviões simplesmente não deveriam decolar naquele dia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que não basta escolher a técnica anestésica e aplicar?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema começa numa observação incômoda: os fármacos da tríade anestésica (hipnótico, opioide, bloqueador neuromuscular) não agem sobre um corpo abstrato — agem sobre o coração, o pulmão, o fígado e o rim de uma pessoa real, com décadas de história prévia. Um propofol que produz hipnose segura, com queda discreta de pressão arterial, num homem de 30 anos hígido, pode produzir colapso circulatório num paciente de 75 anos com estenose aórtica grave e reserva cardíaca mínima — porque o corpo desse segundo paciente já opera perto do limite antes mesmo do primeiro miligrama do fármaco."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O mesmo vale para a via aérea. Você já sabe, do bloco anterior, que a indução suprime os reflexos protetores e exige que o anestesiologista assuma o controle da ventilação. Mas em alguns pacientes — pescoço curto, mandíbula pequena, história de intubação difícil prévia — essa assunção de controle pode falhar nos primeiros segundos, exatamente no momento em que o paciente mais depende dela. Descobrir isso depois de induzir a anestesia é tarde demais: o paciente já está sem os próprios reflexos e sem ainda ter uma via aérea artificial garantida — o pior lugar possível para estar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existe ainda um terceiro problema, menos óbvio: nem toda droga em uso crônico pelo paciente se comporta bem quando some da rotina, ou quando se soma aos anestésicos. Um paciente em uso de inibidor da enzima conversora de angiotensina que continua a droga até a manhã da cirurgia corre risco de hipotensão refratária na indução; um paciente em uso crônico de anticoagulante que não teve o fármaco suspenso a tempo corre risco de sangramento incontrolável num procedimento que deveria ser rotineiro. Nenhum desses riscos está escrito na bula do anestésico — está na interseção entre o anestésico e a história prévia do paciente."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe antes de seguir: o problema central deste módulo não é 'quais exames pedir antes da cirurgia'. É que a segurança da anestesia depende de uma variável que os fármacos sozinhos não capturam — a reserva fisiológica individual do paciente diante da supressão temporária dos próprios mecanismos de autorregulação. Sem medir essa reserva antes, qualquer plano anestésico é uma aposta às cegas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a especialidade resolveu — transformando julgamento clínico em processo estruturado"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta não foi inventar um exame único e definitivo que prevê tudo. Não existe. A resposta foi construir um **processo estruturado, em camadas**, que combina história clínica dirigida, exame físico focado, ferramentas de estratificação com poder preditivo estatístico comprovado, e decisões práticas de otimização — tudo isso concluído antes da indução, idealmente dias antes, nunca na própria manhã da cirurgia quando já não há tempo de corrigir o que for encontrado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse processo tem uma lógica interna que vale entender antes de mergulhar em cada peça: primeiro, uma **anamnese e exame físico dirigidos** — não o histórico completo de uma consulta clínica geral, mas um recorte específico que pergunta exatamente o que muda a conduta anestésica (sintomas cardiorrespiratórios, história de via aérea difícil, medicações em uso, alergias, experiências anestésicas prévias). Segundo, essa informação alimenta **ferramentas de estratificação** — sistemas com graus crescentes de especificidade, que vão de uma classificação global do estado físico do paciente até índices dedicados a prever um desfecho específico, como evento cardíaco perioperatório ou via aérea difícil. Terceiro, o resultado dessa estratificação orienta **decisões concretas**: pedir ou não exames complementares, suspender ou manter medicações crônicas, adiar a cirurgia para otimizar uma condição descompensada, escolher entre técnica geral, regional ou sedação, e informar o paciente sobre riscos reais — não genéricos — para obter consentimento verdadeiramente informado."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A avaliação pré-anestésica não é uma etapa burocrática antes da anestesia — é a etapa em que o risco de cada paciente deixa de ser uma impressão subjetiva do anestesiologista e passa a ser um número comparável, com poder preditivo testado em milhares de pacientes antes dele."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que esse processo é feito — os instrumentos que traduzem exame clínico em risco mensurável"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se a avaliação pré-anestésica fosse só 'conversar com o paciente e formar uma impressão', ela dependeria inteiramente da experiência individual de quem examina — variável, não reprodutível, difícil de comparar entre serviços. Por isso a especialidade constituiu, ao longo de décadas, instrumentos formais de estratificação, cada um respondendo a uma pergunta diferente com um grau diferente de especificidade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No topo dessa hierarquia está a **classificação do estado físico da American Society of Anesthesiologists (ASA)** — um sistema de seis classes que resume, num único algarismo, quão doente o paciente está de forma independente do procedimento cirúrgico planejado. É deliberadamente grosseiro: não prevê um desfecho específico, prevê mortalidade perioperatória de forma global, e serve como linguagem comum entre anestesiologistas, cirurgiões e a própria literatura científica. Um degrau abaixo, ferramentas mais específicas refinam essa estimativa: a **avaliação da capacidade funcional em equivalentes metabólicos (METs)** estima a reserva cardiorrespiratória perguntando, essencialmente, quanto esforço físico o paciente tolera no dia a dia — um proxy prático e validado para reserva cardíaca sem precisar de exames caros. O **índice de risco cardíaco revisado de Lee** vai mais longe: usa preditores clínicos objetivos para calcular a probabilidade específica de evento cardíaco maior (infarto, edema pulmonar, parada, bloqueio completo) no perioperatório de cirurgia não cardíaca."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "E, paralelamente a esses três, ferramentas de **avaliação de via aérea** tentam prever, com testes clínicos dirigidos e limitações conhecidas, se a via aérea daquele paciente específico vai ser fácil ou difícil de assegurar no momento em que os reflexos protetores desaparecerem — o detalhamento de cada teste específico e seu valor preditivo individual é assunto do módulo dedicado à via aérea prevista, mais adiante. Por que tantos instrumentos separados, em vez de um só? Porque nenhum deles, isoladamente, cobre todo o espaço de risco: a ASA captura gravidade geral, mas um paciente ASA II pode ter uma via aérea previsivelmente impossível; um paciente com METs excelentes pode ter uma valva cardíaca crítica que só aparece num exame direcionado. Cada instrumento tem um alvo estreito e deliberadamente definido — a mesma lógica de especialização que você já viu na tríade farmacológica: dividir uma tarefa complexa entre componentes especializados, cada um ajustado ao seu próprio alvo, em vez de exigir de um instrumento único mais do que ele consegue entregar com confiabilidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em sequência, da primeira consulta até a manhã da cirurgia"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "A lógica da avaliação pré-anestésica, do primeiro contato à indução",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Consulta pré-anestésica dirigida",
+          "explicacao": "Anamnese focada em sistemas cardiovascular e respiratório, história anestésica e familiar prévia (incluindo hipertermia maligna), alergias, medicações em uso, jejum de substâncias e via aérea. Exame físico direcionado à mesma lista de riscos. Idealmente feita dias antes da cirurgia, nunca só na manhã do procedimento."
+        },
+        {
+          "numero": 2,
+          "titulo": "Classificação do estado físico (ASA)",
+          "explicacao": "A partir da anamnese, o paciente recebe uma classe ASA — uma primeira camada de estratificação, grosseira mas amplamente validada, que já orienta o grau de vigilância esperado e serve de linguagem comum com o restante da equipe cirúrgica."
+        },
+        {
+          "numero": 3,
+          "titulo": "Estratificação dirigida por sistema",
+          "explicacao": "Quando a anamnese ou a classe ASA sugerem risco cardiovascular ou respiratório aumentado, instrumentos mais específicos entram em cena: capacidade funcional em METs, índice de Lee para risco cardíaco, avaliação estruturada de via aérea prevista. Cada um refina a estimativa de risco num eixo específico."
+        },
+        {
+          "numero": 4,
+          "titulo": "Decisão sobre exames complementares",
+          "explicacao": "Com o risco já estratificado, o anestesiologista decide quais exames realmente mudam a conduta — não um pacote padrão pedido por reflexo, mas exames dirigidos pelas suspeitas levantadas nas etapas anteriores."
+        },
+        {
+          "numero": 5,
+          "titulo": "Ajuste de medicações crônicas e jejum",
+          "explicacao": "Define-se o que manter, suspender ou substituir entre os fármacos de uso contínuo do paciente, e confirma-se o tempo de jejum necessário para reduzir o risco de broncoaspiração no momento em que os reflexos protetores da via aérea forem suprimidos."
+        },
+        {
+          "numero": 6,
+          "titulo": "Escolha da técnica e consentimento informado",
+          "explicacao": "Com todo o risco individualizado em mãos, o anestesiologista decide entre técnica geral, regional ou sedação, e apresenta ao paciente riscos e benefícios reais — não genéricos — para obter consentimento verdadeiramente informado, não apenas assinado."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Repare que essa sequência é acumulativa: cada etapa usa a informação que a anterior produziu. Pular uma etapa (por exemplo, pedir bateria de exames sem antes estratificar o risco pela anamnese) não economiza tempo — produz decisões desancoradas, exames que não mudam nada ou, pior, que não detectam o que realmente importava."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa avaliação se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A avaliação pré-anestésica depende diretamente da **semiologia e propedêutica** que você já domina — é, no fundo, uma anamnese e um exame físico convencionais, só que recortados e priorizados pelo que muda uma conduta anestésica específica. Depende também da **cardiologia e pneumologia clínicas**: entender o que uma fração de ejeção reduzida ou uma DPOC grave significam fisiologicamente é pré-requisito para interpretar corretamente o índice de Lee ou a capacidade funcional em METs — este bloco não vai reensinar essa fisiopatologia, apenas mostrar como ela é convertida em decisão anestésica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ela também se articula, adiante nesta mesma disciplina, com cada módulo que o esqueleto deste bloco já anuncia como filho: a classificação ASA em detalhe, os equivalentes metabólicos, o índice de Lee, a avaliação estruturada de via aérea, as regras de jejum pré-operatório, a racionalidade para pedir exames complementares, o manejo específico de medicações crônicas de risco (anti-hipertensivos, hipoglicemiantes, anticoagulantes) e, por fim, a escolha da técnica anestésica e o consentimento informado propriamente dito. Este bloco é o mapa; cada um deles é o território."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua lógica"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "estratificação de risco",
+      "origem": "do latim stratum (camada, o que foi espalhado) — de sternere, estender, cobrir — combinado com risco, palavra cuja etimologia é disputada entre linguistas históricos: hipóteses concorrentes incluem origem no italiano antigo risco/rischio, no árabe rizq, ou no grego rhiza (raiz, penhasco à beira-mar que ameaçava navios); não há consenso etimológico estabelecido",
+      "significado": "literalmente, 'organizar em camadas segundo o perigo' — dividir um grupo heterogêneo em subgrupos (estratos) de risco comparável",
+      "explicacao": "O termo 'estratificação' migrou da geologia (camadas de rocha sobrepostas) para a epidemiologia e a estatística médica no século XX, quando ficou claro que tratar todos os pacientes como um grupo único, ao calcular probabilidade de um desfecho, escondia diferenças importantes entre subgrupos. Já a origem de 'risco' é, ela própria, objeto de debate entre linguistas — a hipótese popular de uma raiz marítima (grego rhiza, o recife que ameaçava a navegação) é apenas uma entre várias hipóteses concorrentes, sem consenso etimológico firmado; por isso ela é apresentada aqui como hipótese ilustrativa, não como fato estabelecido. O que é seguro afirmar é o sentido consolidado da palavra: um perigo objetivo e em princípio identificável, não um medo vago. A junção dos dois termos na anestesiologia é reveladora, independentemente de qual etimologia de 'risco' se adote: estratificar risco é recusar tratar 'o paciente cirúrgico' como categoria única e insistir em separar, camada por camada (ASA, METs, índice de Lee, via aérea), os subgrupos que de fato se comportam de forma diferente diante da mesma cirurgia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a lógica do processo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛫",
+      "conteudo": "Retome a analogia do avião do bloco anterior — mas agora olhe para o que acontece **antes** da decolagem. Nenhuma companhia aérea deixa que o piloto simplesmente entre na cabine e decole; existe uma checklist pré-voo em camadas. Primeiro, uma inspeção geral da aeronave (equivalente à consulta pré-anestésica dirigida): o piloto confere itens específicos — combustível, pressão hidráulica, superfícies de controle — não uma vistoria genérica de qualquer coisa. Depois, o avião recebe uma categoria de aeronavegabilidade consolidada (equivalente à classe ASA): apto para voo normal, apto com restrições, ou inapto até correção.\n\nEm seguida, para rotas específicas de maior exigência — atravessar uma tempestade prevista, pousar num aeroporto de pista curta — instrumentos mais específicos entram em ação (equivalente ao índice de Lee para risco cardíaco, ou à avaliação de via aérea para prever intubação difícil): não bastava saber que o avião está 'apto', era preciso saber se está apto **para aquele desafio específico**. Só depois de todas essas camadas — inspeção geral, categoria consolidada, checagens específicas — o piloto decide o plano de voo definitivo e o comunica aos passageiros, que só então dão seu consentimento informado para embarcar. A analogia quebra num ponto: um avião reprovado na inspeção simplesmente não decola, sem alternativa; um paciente reprovado na avaliação pré-anestésica quase sempre tem uma segunda opção — otimizar a condição, mudar a técnica, adiar o procedimento — porque, ao contrário do voo, a cirurgia muitas vezes não pode simplesmente ser cancelada sem consequência para a doença que a motivou."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se todo paciente cirúrgico fosse jovem, sem comorbidades e sem cirurgia prévia, a avaliação pré-anestésica formal ainda seria necessária?",
+      "resposta": "Sim — em versão mais simples, mas não dispensável. Mesmo o paciente hipoteticamente perfeito ainda tem uma via aérea com anatomia própria (que pode ser previsivelmente difícil mesmo sem nenhuma doença sistêmica), pode ter uma predisposição genética desconhecida a hipertermia maligna que só a história familiar revela, pode estar em jejum inadequado, ou pode ter uma alergia medicamentosa nunca antes testada. A avaliação pré-anestésica não existe apenas para detectar doença cardiovascular ou respiratória grave — existe para descobrir, sistematicamente e antes que seja tarde, qualquer variável individual que mude a segurança do plano anestésico, mesmo em quem parece, à primeira vista, o paciente de menor risco possível. É por isso que ela é etapa obrigatória para todo paciente, não um filtro reservado a quem 'parece doente'."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "As camadas da avaliação pré-anestésica, do geral ao específico",
+      "descricao": "Esquema didático em forma de funil ou pirâmide invertida, mostrando, de cima para baixo, o afunilamento progressivo da avaliação: uma camada larga no topo representando a anamnese e exame físico dirigidos; abaixo, uma camada representando a classificação global do estado físico; abaixo dela, ramificando-se em três braços paralelos, os instrumentos de estratificação específica (reserva funcional/cardiorrespiratória, risco cardíaco dirigido, via aérea prevista); na base, um losango de decisão convergindo os três braços para as ações concretas finais (exames dirigidos, ajuste de medicações e jejum, escolha da técnica e consentimento). Setas verticais conectando cada camada à seguinte, indicando fluxo de informação que se acumula e se refina.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente adaptativo a tema claro e escuro, estilo de infográfico médico moderno e minimalista, sem nenhum texto, palavra, letra, número ou legenda embutida na imagem. Composição em formato de funil vertical invertido de cima para baixo. No topo, uma faixa horizontal larga contendo um ícone estilizado de estetoscópio sobreposto a uma prancheta (representando anamnese e exame dirigidos). Logo abaixo, uma faixa levemente mais estreita com um ícone circular contendo um medidor tipo velocímetro com ponteiro central (representando classificação de estado físico). Abaixo dela, três ramos que se dividem simetricamente em ícones distintos: um coração estilizado com uma onda de eletrocardiograma sutil, um par de pulmões estilizados com uma seta ascendente de esforço, e um perfil lateral estilizado de cabeça e pescoço com um ângulo destacado na mandíbula (representando via aérea). Na base do diagrama, os três ramos convergem visualmente para um losango ou hexágono central contendo três pequenos ícones lado a lado: um frasco de comprovante/exame, um relógio, e um documento com uma pena estilizada (representando decisão final e consentimento). Setas verticais finas e uniformes conectando cada camada à seguinte. Paleta de cores médica sóbria em tons de azul-petróleo, verde-água e cinza-grafite, com um único tom de destaque em âmbar nas setas conectoras. Traços vetoriais limpos, estilo minimalista de livro-texto contemporâneo, sem texturas fotorrealistas, sem qualquer texto ou rotulagem dentro da própria imagem. Sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-anest-00-000",
+        "titulo": "Anestesiologia — A Medicina de Suspender e Devolver a Consciência com Segurança",
+        "disciplina": "Anestesiologia",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume que você já entendeu por que a anestesia geral suprime consciência, nocicepção e reflexos autonômicos, e por que essa supressão exige vigilância ativa. A avaliação pré-anestésica é a etapa que mede, antes de tudo isso começar, quanto cada paciente específico tolera essa supressão."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-01-002",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Classificação ASA — as seis classes e o que cada uma prediz",
+        "mecanismo_conexao": "A classificação global do estado físico, citada aqui apenas como a segunda camada do processo, ganha módulo próprio com as seis classes, o sufixo E de emergência e sua validação estatística como preditor de mortalidade perioperatória.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": "s8-anest-01-004",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Índice de risco cardíaco revisado de Lee",
+        "mecanismo_conexao": "Os preditores clínicos citados aqui de forma panorâmica como 'estratificação dirigida por sistema' são detalhados em módulo próprio, com o cálculo de risco absoluto de evento cardíaco maior em cirurgia não cardíaca.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": "s8-anest-01-005",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Avaliação de via aérea prevista — Mallampati, distância tireomentoniana, mobilidade cervical",
+        "mecanismo_conexao": "A previsão de via aérea difícil, citada aqui apenas como um dos três braços da estratificação específica, ganha módulo próprio detalhando cada teste clínico, seu valor preditivo e suas limitações conhecidas.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-01-008",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Manejo pré-operatório de medicações de uso contínuo",
+        "mecanismo_conexao": "A decisão sobre suspender, manter ou substituir fármacos crônicos, citada aqui como etapa 5 do processo, é desenvolvida em detalhe por classe farmacológica (IECA, hipoglicemiantes, anticoagulantes) no módulo dedicado.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Complicações da via aérea difícil não prevista",
+        "mecanismo_conexao": "Quando a avaliação de via aérea prevista falha em identificar um paciente de risco, a cascata de manejo de via aérea difícil emergencial — algoritmos, dispositivos de resgate — é o que se segue; este módulo de manejo de via aérea depende diretamente do que a avaliação pré-anestésica deveria ter previsto.",
+        "confianca": "hipotese_pedagogica",
+        "aviso": "[ESPECULATIVO] Esta conexão não corresponde a um bloco_id real ainda existente no mapa curricular — é uma extensão pedagógica hipotética, diferente das demais conexões futuras desta lista, que apontam para blocos-filhos concretos já planejados. Não deve ser tratada como link navegável."
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s6-cirurgia-00-000",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "O conceito de estratificar risco antes de um procedimento invasivo não é exclusivo da anestesiologia — a cirurgia também estratifica risco operatório (por exemplo, escores de risco cirúrgico específicos por procedimento). A avaliação pré-anestésica e a avaliação pré-operatória cirúrgica ocorrem em paralelo e se complementam, frequentemente na mesma consulta."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-anest-01-000-fc01",
+      "pergunta": "Por que a avaliação pré-anestésica precisa ser feita dias antes da cirurgia, e não apenas na manhã do procedimento?",
+      "resposta": "Porque o propósito da avaliação não é apenas registrar o risco do paciente — é dar tempo para agir sobre o que for encontrado. Se uma anemia grave, uma arritmia não tratada ou uma hipertensão descompensada só forem descobertas na manhã da cirurgia, não há tempo hábil para otimizar a condição, pedir um exame adicional dirigido ou discutir com o paciente uma mudança de técnica — a única opção remanescente é operar com o risco elevado ou cancelar de última hora, gerando custo, ansiedade e reagendamento. Avaliar com antecedência transforma achados em oportunidades de correção; avaliar na manhã da cirurgia transforma os mesmos achados em dilemas sem boa saída.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "avaliacao-pre-anestesica",
+        "otimizacao-preoperatoria",
+        "seguranca-do-paciente"
+      ]
+    },
+    {
+      "card_id": "s8-anest-01-000-fc02",
+      "pergunta": "Um paciente tem METs excelentes (sobe escadas sem sintomas), mas é classificado como ASA III por uma doença sistêmica grave e bem controlada. Por que a classe ASA sozinha, sem o dado de METs, já seria insuficiente aqui — e o que isso revela sobre confundir 'risco geral' com 'risco em cada eixo'?",
+      "resposta": "A classe ASA resume gravidade global num único algarismo — é o oposto de um instrumento cego a subtipos de risco, mas também é grosseira por definição: ela não diz nada sobre a reserva cardiorrespiratória específica do paciente. Um ASA III com METs excelentes tem uma reserva funcional que um ASA III com METs baixos não tem, e essas duas situações pedem vigilância intraoperatória muito diferente — mas a classe ASA, isolada, os trataria como equivalentes. É exatamente esse ponto cego que os instrumentos específicos (METs, índice de Lee, via aérea) existem para cobrir: eles não substituem a ASA, complementam-na em eixos que ela não foi desenhada para capturar.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "classificacao-asa",
+        "estratificacao-de-risco",
+        "limitacoes"
+      ]
+    },
+    {
+      "card_id": "s8-anest-01-000-fc03",
+      "pergunta": "A palavra 'estratificação' vem da geologia (camadas de rocha). Por que essa origem descreve bem a lógica da avaliação pré-anestésica?",
+      "resposta": "Assim como a geologia separa uma formação rochosa em camadas (estratos) sobrepostas, cada uma com composição e idade diferentes, a avaliação pré-anestésica separa uma população heterogênea de pacientes cirúrgicos em subgrupos de risco comparável, usando instrumentos com graus crescentes de especificidade — do geral (anamnese, classe ASA) ao específico (índice de Lee, via aérea prevista). O termo capta a ideia central: tratar 'o paciente cirúrgico' como categoria única esconderia diferenças que, na prática, mudam a conduta e o desfecho — exatamente como olhar uma formação rochosa como bloco único esconderia a história geológica registrada em suas camadas. (A etimologia da palavra 'risco' em si, diferentemente de 'estratificação', não tem origem consensual entre linguistas — a hipótese de raiz marítima é ilustrativa, não um fato fechado.)",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": [
+        "etimologia",
+        "estratificacao-de-risco"
+      ]
+    },
+    {
+      "card_id": "s8-anest-01-000-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Pacientes jovens e sem comorbidades conhecidas podem dispensar a avaliação pré-anestésica formal, já que o risco deles é desprezível.'",
+      "resposta": "Falso. A armadilha aqui é confundir 'baixo risco sistêmico esperado' com 'risco zero' ou 'avaliação dispensável'. Mesmo o paciente jovem e aparentemente hígido pode ter uma via aérea anatomicamente previsível como difícil sem nenhuma doença sistêmica associada, pode carregar uma predisposição genética não diagnosticada a hipertermia maligna que só a história familiar dirigida revela, pode ter uma alergia medicamentosa nunca testada, ou pode simplesmente não estar em jejum adequado. A avaliação pré-anestésica formal não é um filtro reservado a quem 'parece doente' — é um processo padronizado precisamente porque a impressão clínica superficial, sozinha, historicamente já falhou em prever exatamente esses cenários.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "avaliacao-pre-anestesica",
+        "armadilha-conceitual",
+        "via-aerea-dificil"
+      ]
+    },
+    {
+      "card_id": "s8-anest-01-000-fc05",
+      "pergunta": "Por que a avaliação pré-anestésica é descrita como um processo 'acumulativo em camadas', e não como um conjunto de testes independentes que podem ser feitos em qualquer ordem?",
+      "resposta": "Porque cada etapa usa a informação produzida pela etapa anterior para decidir o que fazer a seguir. A anamnese dirigida gera a classe ASA; a classe ASA (junto com achados específicos da anamnese) indica se instrumentos mais dirigidos, como o índice de Lee ou a avaliação de via aérea, precisam ser aplicados; o resultado desses instrumentos específicos é que determina quais exames complementares realmente mudam a conduta, e não uma bateria padrão pedida por reflexo. Inverter essa ordem — por exemplo, pedir exames antes de estratificar o risco pela anamnese — produz decisões desancoradas: exames que não respondem a nenhuma pergunta clínica real ou, pior, a ausência do exame que teria detectado exatamente o risco que a anamnese já sinalizava.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "avaliacao-pre-anestesica",
+        "raciocinio-clinico",
+        "exames-complementares"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-anest-01-000-caso01",
+      "titulo": "A cirurgia de vesícula que quase começou sem checar o coração",
+      "apresentacao": "Homem de 68 anos é agendado para colecistectomia videolaparoscópica eletiva por colelitíase sintomática. Na avaliação pré-anestésica, realizada uma semana antes do procedimento, o paciente refere que só consegue caminhar cerca de duas quadras em terreno plano antes de sentir falta de ar, e que parou de subir escadas em casa há meses porque 'cansa demais e aperta o peito'. Nega diagnóstico prévio de doença cardíaca, nunca fez avaliação cardiológica, e não toma nenhuma medicação regular.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Uma anamnese dirigida e específica — não uma pergunta genérica de 'como está a saúde?' — investigou ativamente a capacidade funcional do paciente, revelando limitação significativa ao esforço que ele mesmo não havia associado a doença cardíaca."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A queixa de dispneia e desconforto torácico ao esforço mínimo sugere reserva cardiovascular comprometida — possivelmente doença arterial coronariana não diagnosticada, funcionando perto do limite mesmo em repouso relativo."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Se essa limitação não fosse identificada antes da cirurgia, a indução anestésica suprimiria o tônus simpático basal que provavelmente já está compensando uma perfusão coronariana marginal — o mesmo mecanismo descrito no bloco anterior sobre supressão do controle autonômico durante a anestesia geral, agora aplicado a um coração sem reserva para tolerar essa supressão."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sem a otimização prévia, o risco real seria isquemia miocárdica ou instabilidade hemodinâmica grave já na indução ou no intraoperatório — não um efeito colateral raro do anestésico, mas a consequência previsível de anestesiar um coração que já operava no limite, sem que ninguém soubesse disso."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A capacidade funcional relatada (incapaz de subir um lance de escadas, equivalente a menos de 4 METs) é um gatilho de suspeita, não um diagnóstico — ela leva à indicação de avaliação cardiológica dirigida antes da cirurgia eletiva, e é essa investigação subsequente, não a queixa isolada, que confirma ou afasta doença coronariana significativa. Confirmando-se o achado, ele pode ser tratado ou otimizado clinicamente antes de qualquer indução anestésica — transformando um risco perioperatório potencialmente fatal em uma condição manejada com antecedência."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra por que a avaliação pré-anestésica não é burocracia: uma pergunta dirigida sobre capacidade funcional — não um exame sofisticado, apenas uma pergunta bem feita — revelou uma reserva cardiovascular que mudaria completamente a segurança da anestesia geral. Mostra também por que a avaliação precisa ocorrer com antecedência: só assim há tempo de investigar e otimizar antes que a supressão farmacológica do controle autonômico, descrita no bloco anterior, encontre um coração despreparado para ela. E mostra que <4 METs é gatilho de investigação, não diagnóstico fechado — a cascata correta é achado funcional → suspeita → investigação → decisão.",
+      "disciplinas_relacionadas": [
+        "Anestesiologia",
+        "cardiologia",
+        "clinica-medica"
+      ],
+      "diagnostico_revelado": "Capacidade funcional reduzida (menos de 4 METs), um gatilho de suspeita para possível doença coronariana não diagnosticada, identificado na avaliação pré-anestésica dirigida e pendente de confirmação por avaliação cardiológica.",
+      "tratamento_resumido": "Encaminhamento para avaliação cardiológica antes da cirurgia eletiva; caso confirmada doença coronariana, otimização clínica conforme o achado (por exemplo, revascularização ou ajuste farmacológico) antes de reagendar o procedimento com risco cardiovascular reduzido."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-anest-01-000-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
+  "horizonte_validade": "em_mudanca",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "workflow-anima-s8",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Miller RD, Gropper MA. Miller's Anesthesia. 9th ed. Elsevier; 2020. Capítulo sobre Avaliação Pré-Operatória, Pré-Medicação e Documentação Perioperatória (numeração de capítulo varia conforme a impressão/edição — conferir sumário da edição específica em uso).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Butterworth JF, Mackey DC, Wasnick JD. Morgan & Mikhail's Clinical Anesthesiology. 6th ed. McGraw-Hill; 2018. Capítulo sobre Avaliação e Manejo Pré-Operatório (numeração de capítulo varia conforme a edição — conferir sumário da edição específica em uso).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "American Society of Anesthesiologists. Practice Advisory for Preanesthesia Evaluation. Anesthesiology. 2012. [ATENÇÃO: partes específicas deste processo — jejum perioperatório e exames pré-operatórios de rotina — têm diretrizes próprias mais recentes (ex. atualização do Practice Advisory em 2022, e diretrizes de jejum de 2017/2023), que serão a base dos blocos-filhos correspondentes (s8-anest-01-006 exames, s8-anest-01-007 jejum); esta referência de 2012 cobre o arcabouço geral do processo, não o estado da arte de cada etapa específica.]",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-05"
+    }
+  ],
   "_lentes": [
     "diagnóstico/exames",
     "manejo/segurança",

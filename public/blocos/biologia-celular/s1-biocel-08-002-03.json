@@ -1,54 +1,242 @@
 {
+  "metadata": {
+    "titulo": "Fatores de Transcrição",
+    "subtitulo": "Se a RNA polimerase não sabe ler o contexto, quem decide qual gene ela deve transcrever?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "biologia molecular",
+      "expressão gênica",
+      "regulação",
+      "DNA"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "A RNA polimerase é uma máquina extremamente competente para uma única tarefa — sintetizar RNA a partir de um molde de DNA —, mas ela não tem capacidade própria de decidir, sozinha, qual gene deve ser lido em qual célula e em qual momento. Essa decisão é delegada a uma classe inteira de proteínas especializadas: os fatores de transcrição. Cada um deles reconhece, com alta especificidade, uma sequência curta de DNA — geralmente no sulco maior da dupla hélice, onde os grupos químicos das bases ficam mais expostos — e, uma vez ligado, recruta ou bloqueia a maquinaria basal de transcrição naquele ponto específico. É a combinação particular de fatores de transcrição presentes em cada tipo celular, não o conteúdo do DNA em si, que determina o repertório de genes ativos em um neurônio, em um hepatócito ou em uma célula muscular. Quando um fator de transcrição sofre mutação ou é expresso de forma descontrolada, a consequência pode ser tão drástica quanto perder a identidade celular ou adquirir capacidade de proliferação incessante — a base molecular de muitos cânceres.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma gráfica industrial com uma impressora gigantesca, capaz de reproduzir qualquer página de qualquer livro da biblioteca da editora com perfeição técnica absoluta. Mas essa impressora, sozinha, não sabe qual página imprimir, quantas cópias fazer, nem quando parar — ela apenas executa o comando que recebe. Alguém precisa decidir, antes de qualquer botão ser apertado: 'imprima exatamente este capítulo, nesta quantidade, agora.'"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a RNA polimerase, sozinha, não decide o que transcrever?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A RNA polimerase é uma enzima extraordinariamente eficiente em uma tarefa mecânica muito específica: percorrer uma fita de DNA e sintetizar a fita complementar de RNA. Mas ela não tem, por si só, nenhuma forma de distinguir um gene essencial de uma região silenciada, nem de saber que aquela célula específica — digamos, um neurônio — precisa transcrever genes muito diferentes dos que um hepatócito vizinho no mesmo organismo transcreveria."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A diferenciação celular — o fenômeno pelo qual células com o mesmo genoma se tornam radicalmente diferentes umas das outras — exige um sistema de reconhecimento e decisão que fique fora da enzima de transcrição em si, mas que consiga direcioná-la com precisão para os genes certos, na hora certa, na célula certa."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fica registrado o problema: é preciso um intermediário que leia sequências específicas de DNA e, com base nisso, decida se e quando aquele trecho deve ser transcrito. A RNA polimerase precisa de um sistema de comando externo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: proteínas leitoras de código"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A célula resolve isso com uma classe de proteínas chamadas fatores de transcrição. Cada fator de transcrição é construído a partir de módulos funcionais distintos: um domínio de ligação ao DNA, que reconhece e se encaixa em uma sequência específica e curta de nucleotídeos, e um domínio de ativação (ou repressão), que interage com outras proteínas para recrutar — ou bloquear — a maquinaria de transcrição naquele ponto exato."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O domínio de ligação ao DNA costuma se encaixar no sulco maior da dupla hélice — a fenda mais larga entre as duas fitas, onde os grupos químicos das bases nitrogenadas ficam mais expostos e mais fáceis de 'ler' quimicamente, sem que a proteína precise desenrolar ou romper a hélice para identificar a sequência."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A especificidade da regulação gênica não vem da RNA polimerase: vem da capacidade do fator de transcrição de reconhecer o código regulatório escrito em promotores e enhancers antes mesmo de a transcrição começar. A polimerase executa; o fator de transcrição decide."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Dois tipos de fatores, dois papéis diferentes"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existem fatores de transcrição gerais, necessários para formar o complexo de pré-iniciação em praticamente qualquer promotor reconhecido pela RNA Polimerase II — são o mínimo indispensável para qualquer transcrição acontecer, e não conferem especificidade de tecido ou de momento. E existem fatores de transcrição específicos, presentes apenas em determinados tipos celulares ou ativados apenas sob determinados estímulos, e que são os verdadeiros responsáveis por decidir quando e em qual célula um gene particular será ativado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É a combinação particular de fatores de transcrição específicos presentes em cada célula — não a sequência de DNA, que é praticamente idêntica em todo o organismo — que determina qual repertório de genes fica acessível naquele tipo celular. Um fator presente apenas em precursores musculares, por exemplo, pode ativar todo um programa de genes de diferenciação muscular quando expresso, mesmo em uma célula que originalmente não seria muscular."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔐",
+      "conteudo": "Pense em um prédio de escritórios com centenas de salas, todas trancadas, e um único zelador com um chaveiro enorme na cintura. Cada chave do chaveiro tem um formato exclusivo e só gira em uma fechadura específica — não existem chaves genéricas. Quando o zelador insere a chave certa em uma porta específica, ele não entra sozinho na sala: ele abre a porta e sinaliza para a equipe de manutenção (a maquinaria de transcrição) entrar e começar o trabalho ali dentro. Em outro andar do mesmo prédio, um zelador diferente carrega um chaveiro com chaves totalmente distintas, abrindo outro conjunto de salas. Os dois prédios (as duas células) têm exatamente a mesma planta arquitetônica (o mesmo DNA), mas as salas abertas em cada um são completamente diferentes, porque os chaveiros (os conjuntos de fatores de transcrição presentes em cada tipo celular) são diferentes. Mapeamento: o prédio e suas salas trancadas = o genoma com seus genes silenciados; as chaves específicas = os domínios de ligação ao DNA dos fatores de transcrição; abrir a porta e chamar a equipe de manutenção = o domínio de ativação recrutando a RNA polimerase; chaveiros diferentes em andares diferentes = conjuntos distintos de fatores de transcrição em tipos celulares distintos, explicando por que o mesmo DNA produz células tão diferentes."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "transcrição",
+      "origem": "latim transcribere (trans = através + scribere = escrever)",
+      "significado": "literalmente, 'escrever através', ou seja, copiar de um suporte para outro",
+      "explicacao": "O termo descreve o ato de converter a mensagem contida no DNA para a 'linguagem' química do RNA, preservando a mesma informação (a sequência de bases), mas transferindo-a para uma molécula diferente — semelhante ao sentido em que um estenógrafo transcreve uma fala em texto escrito: muda o suporte, mantém o conteúdo. O nome descreve o processo de cópia em si; ele não nomeia diretamente os fatores de transcrição, cujo nome vem depois, descrevendo as proteínas que tornam essa cópia seletiva e regulada, e não um evento genérico e indiscriminado."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se os fatores de transcrição não existissem, e a RNA polimerase transcrevesse genes de forma completamente aleatória e sem regulação, o que aconteceria com a diferenciação celular?",
+      "resposta": "A diferenciação celular seria impossível. Sem fatores de transcrição para decidir seletivamente quais genes ativar em cada contexto, todas as células do organismo tenderiam a expressar um perfil genético semelhante e indiscriminado — ou, no outro extremo, uma transcrição completamente caótica e descoordenada, sem relação com a identidade ou a necessidade funcional daquela célula. O organismo multicelular, que depende de tipos celulares altamente especializados (neurônios, hepatócitos, células musculares) trabalhando de forma coordenada, simplesmente não conseguiria se formar — a vida multicelular complexa, como a conhecemos, é inviável sem esse sistema de decisão seletiva."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Arquitetura de um Fator de Transcrição",
+      "descricao": "Representação esquemática de um fator de transcrição ligando-se ao DNA. Mostra um domínio proteico encaixado no sulco maior da dupla hélice, conectado a um domínio de ativação que recruta a maquinaria de transcrição próxima ao promotor.",
+      "prompt_ia": "Scientific vector illustration, adaptive neutral background, transcription factor protein binding to a DNA double helix, protein domain clearly inserted into the major groove of the DNA, connected structurally to an activation domain that recruits a nearby RNA polymerase complex, portuguese labels for DNA-binding domain and activation domain, clean didactic vector style, no photorealistic textures",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-08-002-03-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é a principal diferença funcional entre um domínio de ligação ao DNA e um domínio de ativação em um fator de transcrição?",
+      "resposta": "O domínio de ligação ao DNA confere a especificidade posicional, permitindo que a proteína se fixe a uma sequência regulatória única e curta no genoma. O domínio de ativação atua recrutando coativadores ou a própria maquinaria de RNA polimerase para iniciar a transcrição naquele local exato — sem esse segundo domínio, a proteína apenas se ligaria ao DNA sem produzir nenhum efeito sobre a transcrição.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "regulação",
+        "proteína"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-002-03-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se uma mutação alterasse apenas o domínio de ligação ao DNA de um fator de transcrição, deixando o domínio de ativação intacto?",
+      "resposta": "O fator perderia a capacidade de se localizar no gene-alvo correto, resultando na falha de expressão daquele grupo específico de genes — mesmo que o domínio de ativação, isoladamente, ainda fosse capaz de recrutar a maquinaria de transcrição, ele nunca chegaria ao lugar certo do genoma para fazer isso, porque a proteína não conseguiria mais se fixar na sequência de DNA correta.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "mutação",
+        "genética"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-002-03-fc03",
+      "tipo": "por_que",
+      "pergunta": "Por que os fatores de transcrição geralmente interagem com o sulco maior (major groove) da dupla hélice do DNA, em vez do sulco menor?",
+      "resposta": "O sulco maior é mais largo e expõe mais grupos químicos característicos de cada base nitrogenada, o que permite que a proteína 'leia' a sequência específica de bases sem precisar desenrolar ou romper a dupla hélice para acessar essa informação. O sulco menor, por ser mais estreito, oferece menos informação química diferenciável entre as bases, tornando-o menos útil para reconhecimento de sequência específica.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "DNA",
+        "bioquímica"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-002-03-fc04",
+      "tipo": "comparacao",
+      "pergunta": "Compare o papel dos fatores de transcrição gerais com os fatores de transcrição específicos.",
+      "resposta": "Os fatores de transcrição gerais são necessários para formar o complexo de pré-iniciação em praticamente qualquer promotor reconhecido pela RNA Polimerase II — são indispensáveis, mas não conferem especificidade de tecido ou de momento. Os fatores de transcrição específicos, por outro lado, estão presentes apenas em determinados tipos celulares ou sob determinados estímulos, e são eles que efetivamente determinam quando e em qual célula um gene particular será ativado.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "regulação",
+        "transcrição"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-002-03-fc05",
+      "tipo": "clinico",
+      "pergunta": "Como disfunções em fatores de transcrição podem contribuir para o desenvolvimento de câncer?",
+      "resposta": "Se um fator de transcrição que normalmente regula genes de proliferação celular for hiperativado, superexpresso ou mutado de forma a permanecer constitutivamente ativo, ele pode forçar a célula a manter um programa transcricional de divisão contínua, contornando os pontos de checagem normais do ciclo celular. Muitos oncogenes clássicos codificam justamente fatores de transcrição ou proteínas que regulam sua atividade — a desregulação desse sistema de decisão transcricional é um dos mecanismos centrais da carcinogênese.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "câncer",
+        "patologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-08-002-03-caso01",
+      "titulo": "Proliferação linfoide descontrolada em um adolescente",
+      "apresentacao": "Adolescente de 15 anos é levado ao serviço de hematologia por linfadenopatia generalizada, fadiga progressiva e perda de peso não intencional ao longo de dois meses. Exames laboratoriais revelam contagem elevada de linfócitos imaturos no sangue periférico, e a biópsia de medula óssea confirma leucemia linfoblástica aguda. O estudo citogenético identifica uma translocação cromossômica que fusiona um gene regulador da diferenciação de linfócitos com outro gene, criando uma proteína híbrida que atua como fator de transcrição anômalo, permanentemente ativo.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Translocação cromossômica que funde dois genes, produzindo uma proteína de fusão que combina o domínio de ligação ao DNA de um fator de transcrição normal com um domínio de ativação constitutivamente ativo de outra proteína."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O sistema de fatores de transcrição que normalmente regula, de forma dosada e temporal, os genes responsáveis pela diferenciação e maturação dos precursores linfoides na medula óssea."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A proteína de fusão se liga às mesmas sequências-alvo do fator de transcrição original, mas ativa a transcrição de genes de proliferação de forma permanente e descontrolada, sem responder aos sinais normais que deveriam interromper essa ativação quando a célula atinge maturidade suficiente."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Acúmulo maciço de linfoblastos imaturos e não funcionais no sangue e na medula óssea, deslocando a produção normal de células sanguíneas maduras — o que se manifesta como fadiga (por anemia), infecções recorrentes (por deficiência de leucócitos funcionais), sangramentos (por trombocitopenia) e linfadenopatia."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento, a leucemia linfoblástica aguda progride rapidamente, com falência medular progressiva e risco de morte por infecção ou sangramento. Com tratamento quimioterápico multiagente iniciado precocemente, a taxa de remissão em crianças e adolescentes é elevada, embora o prognóstico específico dependa do subtipo genético identificado na translocação."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra, de forma direta, o que acontece quando o sistema de fatores de transcrição — o mecanismo que decide quais genes uma célula deve ativar e quando — é corrompido por uma alteração genética. Em vez de orquestrar de forma dosada a diferenciação de linfócitos, a proteína de fusão descrita aqui trava a célula em um estado de proliferação constante, exatamente o oposto da regulação fina que este bloco descreve como função normal dos fatores de transcrição.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "genética",
+        "hematologia",
+        "oncologia"
+      ],
+      "diagnostico_revelado": "Leucemia linfoblástica aguda associada a translocação cromossômica gerando fator de transcrição de fusão constitutivamente ativo.",
+      "tratamento_resumido": "Poliquimioterapia intensiva em fases (indução, consolidação, manutenção), com protocolo ajustado conforme o subtipo genético identificado; suporte transfusional e antimicrobiano durante a fase de aplasia medular; avaliação de transplante de células-tronco hematopoéticas em casos de risco elevado ou recidiva."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-08-001",
+        "titulo": "DNA — Estrutura e Replicação — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "O fator de transcrição precisa reconhecer a geometria da dupla hélice, incluindo o sulco maior, descrita no bloco de estrutura do DNA."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "topico": "Expressão gênica diferencial na diferenciação embrionária",
+        "disciplina": "biologia do desenvolvimento",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "Uma cascata sequencial de fatores de transcrição específicos determina a identidade dos folhetos embrionários e, posteriormente, de cada linhagem celular.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "topico": "Translocações cromossômicas geradoras de fatores de transcrição oncogênicos",
+        "disciplina": "oncologia",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "Diversas leucemias e linfomas são causados por translocações que criam proteínas de fusão atuando como fatores de transcrição constitutivamente ativos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-08-002-02",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Fatores de transcrição são as proteínas que fisicamente se ligam a promotores, enhancers e silencers, traduzindo esses elementos de DNA em decisão regulatória real."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-08-002-03",
   "no_pai_id": "s1-biocel-08-002",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Fatores de Transcrição",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Proteínas que ligam DNA; domínios e disfunção em doença",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
+    "nivel_confianca": "estudo"
+  }
 }

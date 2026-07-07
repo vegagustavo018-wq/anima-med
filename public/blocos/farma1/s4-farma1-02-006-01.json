@@ -2,53 +2,333 @@
   "resumo_id": "s4-farma1-02-006-01",
   "no_pai_id": "s4-farma1-02-006",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-01-004-03",
+    "s4-farma1-02-001-05"
+  ],
   "metadata": {
     "titulo": "Tolerância Farmacocinética e Farmacodinâmica",
+    "subtitulo": "Quando o corpo para de sentir o remédio, é a dose que some ou é a célula que já não escuta?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "tolerancia",
+      "taquifilaxia",
+      "farmacocinetica",
+      "farmacodinamica",
+      "cyp450",
+      "downregulation",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Tolerância por metabolismo aumentado x dessensibilização de receptor; taquifilaxia",
-  "narrativa": [],
+  "resumo_conciso": "A visão geral já estabeleceu que tolerância é a célula recalibrando sua sensibilidade a um estímulo persistente. Mas essa recalibração pode acontecer em dois pontos completamente diferentes do trajeto do fármaco, e distingui-los muda a conduta clínica. Na tolerância farmacocinética, o problema é que menos fármaco chega ao alvo: o próprio fígado, exposto repetidamente à substância, aumenta a produção da enzima que a elimina — o mesmo mecanismo de indução enzimática já visto no metabolismo — e a concentração plasmática cai a cada dose repetida, mesmo mantendo a dose prescrita igual. Na tolerância farmacodinâmica, o fármaco chega ao alvo normalmente, mas o alvo já não responde como antes: é a downregulation de receptores, mesma quantidade de fármaco encontrando menos fechaduras na membrana. As duas produzem o mesmo sintoma clínico — a dose que funcionava para de funcionar — mas por rotas moleculares distintas, com implicações diferentes para ajuste de dose e para prever quando a tolerância vai reverter. Um terceiro fenômeno, a taquifilaxia, é um caso extremo de tolerância farmacodinâmica: em vez de se instalar ao longo de dias, acontece em minutos a poucas horas, geralmente porque o mecanismo por trás dela não depende de sintetizar ou destruir proteína, mas de esgotar rapidamente um recurso celular finito, como um estoque de neurotransmissor. Reconhecer qual dos três mecanismos está em jogo diante de um paciente que 'parou de responder à mesma dose' é o que permite decidir se o caminho é trocar de fármaco, ajustar o intervalo, aumentar a dose ou simplesmente esperar a readaptação.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "A visão geral deste módulo deixou uma pergunta em aberto: se a tolerância é a célula recalibrando sua sensibilidade a um estímulo persistente, em que ponto exato do caminho entre o comprimido engolido e o efeito sentido essa recalibração acontece? A resposta é que pode acontecer em dois lugares muito diferentes — e, num terceiro caso, com uma velocidade completamente fora do padrão dos outros dois."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: o mesmo sintoma clínico pode nascer de dois lugares diferentes"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um médico vendo \"essa dose não faz mais efeito\" enfrenta uma ambiguidade real. Pode ser que o fármaco esteja chegando cada vez menos ao seu alvo — um problema de trajeto, resolvido antes mesmo de a molécula encontrar o receptor. Ou pode ser que o fármaco esteja chegando exatamente como sempre chegou, na mesma concentração de sempre, mas o alvo que deveria recebê-lo já não responde com a mesma intensidade — um problema não de trajeto, mas do próprio destino."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Tratar os dois como se fossem a mesma coisa é um erro prático: a solução para \"menos fármaco chegando\" pode ser ajustar a via de eliminação ou trocar de classe terapêutica; a solução para \"o alvo não responde mais\" pode ser outra completamente diferente, ou pode nem existir solução rápida — só tempo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: antes de perguntar \"por que a tolerância aconteceu\", a pergunta mais útil na cabeceira do paciente é \"em que ponto do trajeto ela aconteceu — na chegada do fármaco ou na resposta do alvo?\""
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, sem ainda nomear o mecanismo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existem, na prática, apenas duas rotas gerais pelas quais essa recalibração acontece. Uma rota atua fora do alvo, no próprio corpo enquanto processa a substância — reduzindo quanto fármaco sobra disponível para agir. A outra rota atua exatamente no alvo, deixando-o menos capaz de gerar a mesma resposta mesmo diante da mesma quantidade de fármaco. Uma variante dessa segunda rota, além disso, pode se instalar em questão de minutos em vez de dias, quando o que se esgota é um recurso celular imediato, não uma proteína que precisa ser sintetizada de novo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Duas rotas gerais: menos fármaco chegando ao alvo (rota fora do alvo) ou o alvo respondendo menos à mesma quantidade de fármaco (rota no próprio alvo) — e, dentro da segunda rota, uma forma ultrarrápida chamada taquifilaxia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona: as três formas em detalhe"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A tolerância farmacocinética é a rota que atua fora do alvo. O mecanismo molecular já foi visto: é a indução enzimática. Um fármaco tomado repetidamente, ao ativar receptores nucleares hepáticos como o PXR, aumenta ao longo de dias a transcrição do gene da CYP responsável por metabolizá-lo — o próprio fígado passa a processar aquele fármaco com mais eficiência a cada semana de uso contínuo. Não há nada de novo a explicar aqui sobre como a indução funciona por dentro — isso já foi detalhado quando se discutiu indução e inibição enzimática — mas há uma aplicação nova: quando um fármaco induz a própria enzima que o metaboliza, essa autoindução reduz progressivamente a concentração plasmática que a mesma dose antes atingia. O paciente precisa de doses maiores não porque seu receptor mudou, mas porque menos moléculas do fármaco sobrevivem ao primeiro contato com o fígado a cada dose subsequente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A tolerância farmacodinâmica é a rota que atua no próprio alvo, e seu mecanismo mais comum também já foi detalhado: a downregulation de receptores. Nesse caso, a concentração plasmática do fármaco permanece igual — nenhuma alteração no metabolismo hepático —, mas a membrana da célula-alvo passa a expor menos receptores, internalizados e parcialmente degradados após estimulação crônica excessiva. A mesma quantidade de fármaco encontra menos fechaduras, e o efeito diminui mesmo sem qualquer mudança na farmacocinética. É por isso que essa forma de tolerância costuma levar dias para se instalar plenamente (o tempo de internalizar e degradar proteína) e dias para regredir depois da suspensão (o tempo de sintetizar receptores novos)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A taquifilaxia é um caso particular e extremo de tolerância farmacodinâmica: a diferença não está em qual rota é usada, mas na velocidade. Em vez de dias, a resposta cai em minutos ou em poucas doses consecutivas administradas em curto intervalo. Isso acontece tipicamente quando o mecanismo de ação do fármaco depende de esgotar um recurso celular pré-formado e finito, em vez de depender de sintetizar ou destruir proteínas de membrana. O exemplo clássico é a efedrina e outras aminas simpaticomiméticas de ação indireta: elas não ativam diretamente o receptor adrenérgico — forçam a liberação da noradrenalina já armazenada nas vesículas do neurônio pré-sináptico. Cada dose libera uma fração do estoque disponível. Se as doses se repetem rápido demais para o neurônio repor o estoque, a dose seguinte encontra vesículas já parcialmente vazias, e o efeito cai de forma abrupta e proporcional ao esgotamento — não porque o receptor mudou, mas porque o recurso que alimentava a resposta acabou."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Neste ponto, o quadro está completo: tolerância farmacocinética muda quanto fármaco chega (indução enzimática, efeito em dias); tolerância farmacodinâmica muda quanto o alvo responde à mesma chegada (downregulation, efeito em dias); taquifilaxia é a forma extrema e rápida da segunda rota, por esgotamento de um recurso celular finito (efeito em minutos)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Ponte para a prática clínica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa distinção muda a conduta. Diante de tolerância farmacocinética por autoindução, ajustar a dose para cima geralmente resolve, porque o alvo continua tão sensível quanto sempre foi — só chega menos fármaco até ele. Diante de tolerância farmacodinâmica por downregulation, aumentar a dose tem limite: em algum ponto, o próprio aumento reforça a downregulation, criando um ciclo que piora a longo prazo — como ocorre com opioides em dor crônica, em que doses crescentes eventualmente também trazem mais efeitos adversos sem devolver a eficácia analgésica original. E diante de taquifilaxia, a solução não é aumentar dose nem trocar de fármaco: é espaçar as doses, dando tempo para o estoque celular ser reposto — é por isso que descongestionantes nasais simpaticomiméticos de uso repetido em curto intervalo perdem efeito rapidamente, e a orientação correta é respeitar o intervalo mínimo entre aplicações, não simplesmente aumentar a frequência para compensar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco não introduz mecanismo molecular novo — ele organiza dois mecanismos já vistos (indução enzimática e downregulation de receptores) sob a pergunta clínica que a visão geral do módulo deixou em aberto, e acrescenta a taquifilaxia como variante de velocidade da rota farmacodinâmica. A tolerância farmacocinética reaparecerá em farmacologia clínica sempre que se discutir ajuste de dose em tratamentos prolongados; a tolerância farmacodinâmica e a taquifilaxia serão centrais para entender por que opioides, nitratos e simpaticomiméticos de ação indireta exigem estratégias específicas de dosagem — intervalo, rodízio ou \"janelas livres de fármaco\" — para preservar a eficácia terapêutica ao longo do tempo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "taquifilaxia",
+      "origem": "do grego tachýs (rápido) + phýlaxis (proteção, guarda)",
+      "significado": "literalmente, 'proteção rápida' — no sentido de o organismo se blindar contra o efeito de uma substância em ritmo muito acelerado",
+      "explicacao": "O termo foi cunhado no início do século XX para descrever exatamente o que o distingue da tolerância comum: a velocidade. Enquanto 'tolerância' (do latim tolerare, suportar) não especifica um prazo, 'taquifilaxia' embute a rapidez na própria palavra — tachýs é o mesmo radical de taquicardia, taquipneia, sempre indicando um processo anormalmente veloz. A escolha lexical registra que os primeiros farmacologistas que descreveram o fenômeno, com aminas simpaticomiméticas de ação indireta, ficaram impressionados justamente pelo contraste: uma perda de efeito que noutros fármacos levaria dias, ali acontecia entre uma dose e a seguinte, em minutos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o todo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "📦",
+      "conteudo": "Pense numa loja que recebe entregas diárias de um produto e as vende ao público durante o dia. A **tolerância farmacocinética** é a transportadora que traz cada vez menos caixas: a estrada continua a mesma, o motorista é o mesmo, mas alguém no meio do caminho passou a desviar parte da carga para outro destino a cada viagem — a loja recebe menos, então vende menos, mesmo com a mesma demanda dos clientes. A **tolerância farmacodinâmica** é o oposto: as entregas chegam completas, todo dia, na mesma quantidade — mas a loja, sobrecarregada de estocar tanto todos os dias, foi fechando prateleiras uma a uma, então já não tem onde expor o produto que chegou; o mesmo estoque físico produz cada vez menos vendas porque faltam prateleiras, não caixas. A **taquifilaxia** é a versão relâmpago desse segundo problema: não é a loja fechando prateleiras ao longo de semanas, é o balconista que só tem um punhado de produto já separado atrás do caixa para vender rapidamente a quem chega com pressa — se dez clientes aparecerem em cinco minutos, o oitavo já não encontra nada, não porque a prateleira foi fechada, mas porque o punhado separado acabou, e reabastecê-lo leva um tempo que aquele ritmo de clientes não permite. A analogia quebra num ponto importante: a prateleira fechada (downregulation) demora dias para reabrir mesmo depois que a loja para de ficar sobrecarregada, enquanto o punhado do balconista (o estoque de neurotransmissor da taquifilaxia) pode ser reposto em minutos a poucas horas assim que os pedidos desaceleram — a mesma metáfora de 'faltar produto para vender' esconde duas velocidades de reposição completamente diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Um paciente em uso de um descongestionante nasal simpaticomimético de ação indireta nota que, ao usar o spray a cada duas horas em vez de respeitar o intervalo recomendado de seis, o efeito praticamente desaparece já no terceiro uso do dia. Se esse mesmo paciente estivesse, em vez disso, desenvolvendo tolerância farmacocinética por autoindução ao componente do spray, o padrão temporal da perda de efeito seria igual?",
+      "resposta": "Não seria igual, e é exatamente essa diferença de padrão temporal que aponta para taquifilaxia, não para tolerância farmacocinética. A taquifilaxia por esgotamento de estoque de neurotransmissor aparece em escala de minutos a horas, dentro do mesmo dia, e piora quanto mais próximas as doses estiverem umas das outras — exatamente o que o caso descreve. A tolerância farmacocinética por autoindução, em contraste, exige dias de uso repetido para que a transcrição gênica e a síntese de mais enzima se acumulem o suficiente para reduzir a concentração plasmática; não desapareceria de forma perceptível já no terceiro uso do mesmo dia, e também não seria agravada por diminuir o intervalo entre doses no curto prazo — seria uma perda gradual ao longo de dias, independente de quão espaçadas as doses estivessem dentro de um mesmo dia. Reconhecer esse contraste de velocidade é o que permite, à cabeceira, diferenciar as duas causas antes mesmo de qualquer exame laboratorial: se a perda de efeito é de horas e piora com uso muito frequente, pensa-se em taquifilaxia (e a solução é espaçar); se é de dias e independe do intervalo dentro do mesmo dia, pensa-se em autoindução (e a solução pode ser ajustar a dose)."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Três rotas de tolerância comparadas",
+      "descricao": "Esquema didático em três colunas verticais paralelas, cada uma representando um mecanismo, com uma linha do tempo horizontal comum na base (minutos a semanas). Coluna 1, rotulada 'TOLERÂNCIA FARMACOCINÉTICA': hepatócito com número crescente de enzimas CYP ao longo de dias (representadas como pequenos símbolos aumentando em quantidade), seta apontando para uma concentração plasmática do fármaco caindo progressivamente num gráfico pequeno ao lado. Coluna 2, rotulada 'TOLERÂNCIA FARMACODINÂMICA': célula-alvo com receptores de membrana diminuindo em número ao longo de dias (alguns sendo internalizados em vesículas), concentração plasmática do fármaco constante mas resposta celular caindo num gráfico pequeno ao lado. Coluna 3, rotulada 'TAQUIFILAXIA': neurônio pré-sináptico com vesículas de neurotransmissor sendo esvaziadas rapidamente ao longo de poucas doses consecutivas em minutos, resposta caindo de forma abrupta num gráfico pequeno ao lado com escala de tempo muito mais curta que as outras duas colunas. Legendas curtas em português abaixo de cada coluna indicando o prazo típico. Fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno, cores suaves, alto contraste, sem elementos fotorrealistas. Três colunas verticais lado a lado, cada uma com um pequeno gráfico de queda de resposta na base e uma escala de tempo distinta. Coluna esquerda rotulada 'TOLERÂNCIA FARMACOCINÉTICA (dias)': um hepatócito estilizado com múltiplos símbolos de enzima CYP aumentando em número da esquerda para a direita, seta conectando a uma curva descendente suave rotulada 'concentração plasmática'. Coluna central rotulada 'TOLERÂNCIA FARMACODINÂMICA (dias)': uma célula com receptores de membrana diminuindo em número da esquerda para a direita, alguns sendo internalizados em vesículas tracejadas, seta conectando a uma curva descendente suave rotulada 'resposta celular'. Coluna direita rotulada 'TAQUIFILAXIA (minutos)': um terminal neuronal pré-sináptico com vesículas de neurotransmissor cheias à esquerda e progressivamente vazias à direita ao longo de poucas doses marcadas por setas curtas, conectando a uma curva descendente abrupta e íngreme rotulada 'resposta', numa escala de tempo visivelmente mais curta que as outras duas colunas. Legendas em português sob cada coluna, paleta de cores consistente entre as colunas mas com tom distinto para cada mecanismo, sem marcas d'água, sem texto além do indicado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-006",
+        "titulo": "Tolerância, Dependência e Taquifilaxia (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume a definição geral de tolerância como recalibração da sensibilidade celular a um estímulo persistente, apresentada na visão geral. Aqui essa recalibração é localizada em dois pontos concretos do trajeto do fármaco, mais a variante rápida da taquifilaxia."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Ajuste de dose de opioides em dor crônica",
+        "mecanismo_conexao": "A distinção entre tolerância farmacocinética (resolvida por ajuste de dose) e farmacodinâmica (com limite de resposta ao aumento de dose) é pré-requisito direto para entender por que a titulação de opioides em dor crônica não é indefinidamente escalável.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 5,
+        "topico": "Rinite medicamentosa por uso repetido de descongestionante nasal",
+        "mecanismo_conexao": "A taquifilaxia de simpaticomiméticos de ação indireta, aqui explicada pelo esgotamento de estoque de neurotransmissor, é o mecanismo por trás da orientação clínica de limitar o uso de descongestionantes nasais tópicos a poucos dias consecutivos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-004-03",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "A tolerância farmacocinética descrita aqui é uma aplicação direta da indução enzimática detalhada naquele bloco: o mesmo mecanismo de aumento de transcrição da CYP, agora aplicado ao caso específico de um fármaco induzir a própria enzima que o elimina."
+      },
+      {
+        "bloco_id": "s4-farma1-02-001-05",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "A tolerância farmacodinâmica descrita aqui é a aplicação clínica direta da downregulation de receptores detalhada naquele bloco: menos receptores expostos na membrana explicam por que a mesma concentração plasmática do fármaco produz efeito cada vez menor."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-006-01-fc01",
+      "pergunta": "Um paciente deixa de responder a uma dose antes eficaz de um fármaco. Quais as duas perguntas que devem ser feitas, em sequência, para diferenciar tolerância farmacocinética de farmacodinâmica?",
+      "resposta": "Primeiro: a concentração plasmática do fármaco está mais baixa do que antes, na mesma dose? Se sim, o problema está fora do alvo — provavelmente tolerância farmacocinética, geralmente por autoindução da enzima que metaboliza o próprio fármaco. Segundo: se a concentração plasmática está igual à de antes e mesmo assim o efeito caiu, o problema está no próprio alvo — tolerância farmacodinâmica, tipicamente por downregulation de receptores. A distinção importa porque a primeira geralmente responde a ajuste de dose; a segunda tem um limite de resposta ao aumento de dose.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "tolerancia",
+        "farmacocinetica",
+        "farmacodinamica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-006-01-fc02",
+      "pergunta": "Por que a taquifilaxia é considerada uma forma de tolerância farmacodinâmica, e não um terceiro mecanismo totalmente independente?",
+      "resposta": "Porque, como a tolerância farmacodinâmica clássica, a taquifilaxia envolve uma queda na capacidade de resposta do próprio sistema-alvo, não uma redução na quantidade de fármaco disponível. A diferença está apenas na velocidade e no recurso que se esgota: em vez de depender de internalizar e degradar receptores de membrana ao longo de dias, a taquifilaxia depende de esgotar um estoque celular pré-formado e finito — como vesículas de neurotransmissor — em questão de minutos a poucas doses consecutivas.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "taquifilaxia",
+        "tolerancia-farmacodinamica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-006-01-fc03",
+      "pergunta": "Um paciente usa um descongestionante nasal simpaticomimético de ação indireta a cada duas horas e nota perda quase total do efeito já no terceiro uso do dia. Explique o mecanismo e por que aumentar a dose do spray não resolveria o problema.",
+      "resposta": "O fármaco age forçando a liberação de noradrenalina armazenada em vesículas pré-sinápticas, não ativando diretamente o receptor. Cada aplicação libera parte desse estoque; como as doses se repetem rápido demais para o neurônio repor as vesículas, a aplicação seguinte encontra cada vez menos neurotransmissor disponível para liberar — isso é taquifilaxia. Aumentar a dose do spray não ajuda porque o problema não é falta de fármaco alcançando o neurônio, é falta de neurotransmissor já armazenado para ser liberado; a solução real é espaçar as aplicações, dando tempo para o estoque vesicular ser reposto.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "taquifilaxia",
+        "descongestionante",
+        "simpaticomimetico-indireto"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-006-01-fc04",
+      "pergunta": "A palavra taquifilaxia vem do grego tachýs (rápido) + phýlaxis (proteção). Como essa origem ajuda a diferenciá-la da tolerância comum só pelo nome?",
+      "resposta": "'Tolerância' (do latim tolerare, suportar) não especifica nenhum prazo — pode se instalar em dias ou semanas. 'Taquifilaxia' embute a velocidade no próprio nome: tachýs é o mesmo radical de taquicardia e taquipneia, sempre indicando um processo anormalmente rápido. O termo foi cunhado justamente para marcar o contraste com a tolerância comum: uma perda de efeito que, em outros fármacos, levaria dias, ali acontecia entre uma dose e a seguinte, em minutos.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "taquifilaxia",
+        "etimologia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-006-01-fc05",
+      "pergunta": "Se um fármaco desenvolvesse tolerância farmacocinética por autoindução da própria enzima que o metaboliza, aumentar a dose resolveria o problema de forma sustentável? E se fosse tolerância farmacodinâmica por downregulation?",
+      "resposta": "Na tolerância farmacocinética por autoindução, aumentar a dose tende a funcionar de forma mais sustentável, porque o alvo continua tão sensível quanto sempre foi — o problema é apenas que menos fármaco sobrevive ao metabolismo hepático a cada dose, então uma dose maior compensa a perda no trajeto. Na tolerância farmacodinâmica por downregulation, aumentar a dose tem um limite prático: doses maiores mantêm o receptor mais estimulado, o que pode reforçar ainda mais a downregulation ao longo do tempo, criando um ciclo em que a dose sobe sem que a eficácia relativa acompanhe — e os efeitos adversos, que dependem menos da downregulation do receptor terapêutico principal, tendem a aumentar de forma desproporcional ao benefício.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "tolerancia-farmacocinetica",
+        "tolerancia-farmacodinamica",
+        "ajuste-de-dose"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-006-01-caso01",
+      "titulo": "Perda de efeito de descongestionante nasal em uso frequente",
+      "apresentacao": "Homem de 34 anos, com resfriado comum, usa spray nasal de oximetazolina (simpaticomimético de ação indireta) a cada duas ou três horas, além do intervalo recomendado de seis a oito horas, na tentativa de manter a via aérea sempre desobstruída. Relata que, no terceiro dia, precisa aplicar o spray cada vez mais vezes para obter algum alívio, e que o efeito, quando aparece, dura cada vez menos tempo. Procura orientação farmacêutica preocupado que o produto tenha \"perdido a validade\" ou esteja \"fraco\".",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Uso do spray em intervalo muito mais curto do que o recomendado, sem tempo suficiente entre as aplicações para reposição do estoque de neurotransmissor nas terminações nervosas simpáticas da mucosa nasal."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "As vesículas pré-sinápticas dos neurônios simpáticos da mucosa nasal, de onde a oximetazolina força a liberação de noradrenalina armazenada, ficam progressivamente mais vazias a cada aplicação sucessiva em curto intervalo."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Cada nova aplicação do spray libera cada vez menos noradrenalina, porque há cada vez menos estoque disponível para ser liberado — não porque o receptor adrenérgico mudou, e não porque o fármaco perdeu potência química."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Vasoconstrição nasal cada vez mais fraca e de duração cada vez menor a cada aplicação dentro do mesmo dia, dando a impressão equivocada de que o produto \"perdeu o efeito\"."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Se o padrão de uso excessivamente frequente persistir por dias, o quadro pode evoluir para rinite medicamentosa por rebote vascular, exigindo suspensão gradual do spray em vez de aumento da frequência de uso, que só perpetuaria o ciclo."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra a taquifilaxia em ação: a perda de efeito acontece em horas, não em dias, e piora exatamente na proporção em que as doses se aproximam umas das outras — o padrão temporal que diferencia esse mecanismo tanto da tolerância farmacocinética (dias, por autoindução) quanto da tolerância farmacodinâmica clássica (dias, por downregulation). A solução correta é espaçar as doses, não aumentar a concentração ou a frequência.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "atencao-primaria"
+      ],
+      "diagnostico_revelado": "Taquifilaxia por esgotamento de estoque de noradrenalina em simpaticomimético de ação indireta de uso tópico nasal.",
+      "tratamento_resumido": "Orientação para respeitar o intervalo mínimo entre aplicações (geralmente a cada seis a oito horas) e limitar o uso total a poucos dias consecutivos; caso já haja sinais de rinite medicamentosa, suspensão gradual do spray, eventualmente com uso transitório de corticosteroide nasal para controlar o rebote de congestão."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-006-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw-Hill; 2023. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action (tolerance, tachyphylaxis).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 1 e Capítulo 9 — Adrenoceptor Agonists (tachyphylaxis of indirect sympathomimetics).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles (tolerance and tachyphylaxis).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

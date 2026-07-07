@@ -5,48 +5,252 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Acoplamento Energético e Intermediários Comuns",
+    "subtitulo": "Como uma molécula intermediária obriga duas reações a virarem uma só história?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "acoplamento",
+      "intermediarios",
+      "fosforilacao",
+      "atp",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Como hidrólise de ATP puxa reações endergônicas via intermediário fosforilado compartilhado",
-  "narrativa": [],
+  "resumo_conciso": "Um dos modos mais importantes de acoplamento energético é criar um intermediário comum: ATP transfere fosfato ou outro grupo a um substrato, formando uma molécula ativada que agora consegue seguir para um produto que antes seria desfavorável. A energia não passa como uma névoa; ela fica incorporada temporariamente em uma ligação ou conformação intermediária. Esse princípio explica fosforilação da glicose, ativação de aminoácidos, ativação de ácidos graxos e muitas etapas biossintéticas.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine tentar colar duas peças lisas sem preparar a superfície. A cola não pega bem. Se você lixa, encaixa ou coloca um adaptador, a união passa a acontecer. A célula usa intermediários comuns como esses adaptadores químicos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No acoplamento real, energia não é soprada de uma reação para outra. A enzima cria uma etapa compartilhada: um fosfato é transferido, um substrato é ativado, uma conformação muda. O processo desfavorável fica preso à queda favorável."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema o intermediário comum resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ele resolve o problema da transferência útil. Se ATP fosse apenas hidrolisado em solução, a energia viraria calor. Ao transferir fosfato para um substrato dentro do sítio ativo, a enzima transforma energia livre em uma molécula mais reativa e direcionada."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: acoplamento eficaz exige continuidade molecular. O intermediário comum é a ponte que impede a energia de se perder."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a fosforilação ativa uma molécula?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando a glicose vira glicose-6-fosfato, ATP não apenas perde fosfato; a glicose ganha uma marca carregada que muda sua reatividade e sua localização funcional. Ela fica presa na célula e preparada para etapas seguintes. O pagamento energético vira forma química."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "intermediário",
+      "origem": "do latim intermedius, aquilo que está no meio",
+      "significado": "molécula transitória entre reagentes e produtos",
+      "explicacao": "O nome ajuda: o intermediário comum fica no meio de duas reações e permite que elas sejam tratadas como um único processo acoplado."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: se você não consegue apontar a ponte molecular, talvez não exista acoplamento real, apenas duas reações próximas."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se a fosforilação da glicose não ficasse acoplada à hidrólise de ATP?",
+      "resposta": "A glicose não seria eficientemente ativada nem retida como glicose-6-fosfato. A energia da hidrólise se perderia como calor, e a célula teria dificuldade de iniciar o processamento controlado da glicose."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "adaptador",
+      "conteudo": "Pense em um adaptador de tomada. A energia da parede não entra no aparelho se o encaixe não conversa com ele. O intermediário comum é o adaptador molecular: pega uma queda energética e a transforma em formato utilizável pelo substrato. A analogia quebra porque, na química, o adaptador é consumido ou transformado durante a reação."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Intermediário comum como ponte de acoplamento",
+      "descricao": "Esquema mostrando ATP fosforilando substrato para formar intermediário ativado, que depois vira produto.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. Etapa 1: substrato + ATP dentro de enzima formando substrato-fosfato + ADP. Etapa 2: substrato-fosfato reagindo para formar produto. Destacar 'intermediário comum' em cor diferente e mostrar ΔG total negativo.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A partir daqui, muitos detalhes de vias ficam mais simples. Sempre que ATP aparece no começo de uma via, pergunte qual intermediário foi ativado e por que essa ativação obriga a próxima etapa a seguir."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-003",
+        "titulo": "Acoplamento de Reações — Como a Célula Paga o Impossível",
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco aprofunda o mecanismo molecular do acoplamento apresentado no pai."
+      },
+      {
+        "bloco_id": "s3-bioq2-01-002",
+        "titulo": "ATP — A Moeda Energética Universal — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "ATP é o doador de fosfato mais comum para gerar intermediários ativados."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Hexoquinase — Aprisionando Glicose como Glicose-6-Fosfato",
+        "mecanismo_conexao": "A fosforilação da glicose é exemplo direto de intermediário ativado.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Ativação de Ácidos Graxos em Acil-CoA",
+        "mecanismo_conexao": "ATP ativa ácido graxo antes de sua entrada em vias metabólicas.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Aminoacil-tRNA Sintetases",
+        "mecanismo_conexao": "A síntese proteica usa intermediários ativados para ligar aminoácidos ao tRNA.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "Por Que a Ligação Fosfoanidrido É 'Rica em Energia'",
+        "tipo_relacao": "FUNDAMENTA",
+        "explicacao": "A queda energética da hidrólise do ATP é capturada no intermediário comum."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-003-01-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "O que é um intermediário comum no acoplamento energético?",
+      "resposta": "É uma molécula transitória compartilhada por duas etapas, formada com ajuda de uma reação favorável e consumida na etapa desfavorável, conectando os ΔG em um único processo.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "intermediario",
+        "acoplamento"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-003-01-fc02",
+      "tipo": "por_que",
+      "pergunta": "Por que hidrolisar ATP em solução não basta para pagar uma reação?",
+      "resposta": "Porque a energia seria dissipada como calor. O pagamento precisa ser capturado em uma mudança molecular, como transferência de fosfato ou formação de intermediário ativado.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "atp",
+        "calor"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-003-01-fc03",
+      "tipo": "clinico",
+      "pergunta": "Por que falhas em ativação de substratos podem bloquear vias inteiras?",
+      "resposta": "Porque muitas vias dependem de um intermediário ativado inicial. Sem essa ponte energética, etapas posteriores não recebem substrato em forma reativa suficiente.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "ativacao",
+        "vias"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-003-01-fc04",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de imaginar energia como uma substância solta que passa de uma reação para outra?",
+      "resposta": "Energia útil em bioquímica precisa estar vinculada a moléculas, gradientes ou conformações. Sem ponte molecular, a queda energética se dispersa.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha",
+        "energia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-003-01-caso01",
+      "titulo": "Glicose presa na célula por uma marca de fosfato",
+      "apresentacao": "Após entrada de glicose em uma célula, a hexoquinase rapidamente a converte em glicose-6-fosfato. Esse pequeno detalhe impede que a glicose saia facilmente e prepara seu processamento metabólico.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Entrada de glicose cria necessidade de capturar e direcionar o substrato."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Hexoquinase usa ATP para fosforilar glicose."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem fosforilação, a glicose ficaria menos comprometida com a via e poderia sair por transportadores."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Em contexto fisiológico não há sintoma; há eficiência metabólica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A glicose-6-fosfato entra em glicólise, glicogênese ou via das pentoses conforme necessidade."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra o intermediário comum em ação: ATP transfere fosfato e transforma glicose em uma forma ativada e direcionada.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Fisiologia",
+        "Endocrinologia"
+      ],
+      "diagnostico_revelado": "Fosforilação fisiológica da glicose por hexoquinase.",
+      "tratamento_resumido": "Não há tratamento; a vinheta ilustra um mecanismo normal de acoplamento energético."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-003-01-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'Intermediário comum como ponte de acoplamento'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Berg JM, Tymoczko JL, Gatto GJ, Stryer L. Biochemistry. 9th ed. W.H. Freeman; 2019. Seções de acoplamento energético.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "molecular"

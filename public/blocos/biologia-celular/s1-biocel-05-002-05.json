@@ -1,54 +1,310 @@
 {
+  "metadata": {
+    "titulo": "Rho GTPases a Jusante de GPCR",
+    "subtitulo": "Como uma mensagem química vira força física dentro da célula?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 11,
+    "nivel": "CORE",
+    "tags": [
+      "sinalização celular",
+      "GPCR",
+      "citoesqueleto",
+      "RhoA",
+      "G12/13"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "Quando um vaso sanguíneo precisa se contrair em segundos, a célula muscular lisa não tem tempo de fabricar proteínas novas — ela precisa reorganizar o que já existe dentro de si. A família de proteínas G heterotriméricas G12/13 é a via que os GPCRs usam para converter um sinal químico extracelular diretamente em remodelação do citoesqueleto de actina. Ao ser ativada, a subunidade Gα12/13 liga um GEF que ativa a pequena GTPase RhoA; a RhoA recruta a quinase ROCK, que trava a maquinaria actina-miosina em estado contraído. É a ponte mais direta entre 'a célula sentiu algo' e 'a célula mudou de forma' — e é também o motivo pelo qual remédios que bloqueiam essa via conseguem relaxar vasos contraídos demais.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense num arqueiro no instante exato em que solta a corda. Não há tempo para pensar em cada músculo — o corpo já reorganizou tendões, fibras e articulações antes mesmo de a flecha sair do arco. Uma célula muscular lisa, dentro da parede de uma artéria, enfrenta um desafio parecido, só que em escala molecular: quando um hormônio vasoconstritor bate no receptor da membrana, ela precisa travar seu próprio citoesqueleto em estado de força quase instantaneamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que um receptor de membrana não basta?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um receptor acoplado à proteína G (GPCR) é excelente em uma coisa: perceber que uma molécula química chegou do lado de fora. Mas perceber não é o mesmo que agir. Entre a percepção e a ação física — a célula se contraindo, mudando de forma, migrando — existe uma lacuna que precisa ser preenchida por algo capaz de traduzir 'um ligante chegou' em 'reorganize seus filamentos internos agora'. Sem esse tradutor, o GPCR seria como uma sentinela que grita um alarme que ninguém entende: o sinal chegaria, mas nada aconteceria na estrutura da célula."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema fica ainda mais concreto quando pensamos em músculo liso vascular. Ele não tem sarcômeros organizados como o músculo esquelético — depende de um sistema mais simples e mais lento por natureza. Para compensar essa lentidão intrínseca, a célula precisa de uma via de sinalização que vá do receptor direto ao motor contrátil, sem desvios desnecessários."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, seguro este ponto: o desafio biológico aqui não é 'perceber' — isso o GPCR já resolve. O desafio é converter percepção em força mecânica em poucos segundos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que solução a célula encontrou?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existe uma subfamília de proteínas G especializada exatamente nisso: a G12/13. Ao contrário das vias mais conhecidas de Gs (que aumenta cAMP) ou Gq (que ativa fosfolipase C), a G12/13 não mexe com metabolismo — ela mexe com arquitetura. Quando o GPCR é ativado, a subunidade alfa da G12/13 troca GDP por GTP, se solta do complexo e vai procurar um tipo específico de proteína ativadora: um GEF (fator de troca de nucleotídeo guanina) dedicado a ligar a pequena GTPase RhoA."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A RhoA funciona como um interruptor bioquímico: em seu estado ligado a GTP, ela está 'ligada'; quando hidrolisa o GTP para GDP, ela 'desliga'. O GEF acelera a passagem para o estado ligado. Uma vez ativa, a RhoA recruta e ativa uma quinase chamada ROCK (Rho-associated protein kinase), que faz duas coisas ao mesmo tempo: fosforila a cadeia leve da miosina (ativando-a) e inibe a fosfatase que desligaria essa mesma miosina. O resultado é uma contração que se instala rápido e se mantém — porque o freio que normalmente relaxaria o músculo foi retirado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essa cascata é feita, e por que essas peças especificamente?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada elo da cadeia foi selecionado por uma razão precisa. A subunidade Gα12/13 existe separada de Gαs e Gαq porque a célula precisa de canais de sinalização independentes — se a mesma proteína G tivesse que decidir entre 'aumentar cAMP' e 'contrair o citoesqueleto', qualquer sinal geraria as duas respostas ao mesmo tempo, uma bagunça funcional. A RhoA, por sua vez, pertence à família Ras de pequenas GTPases: moléculas pequenas, de ciclo rápido, ideais para funcionar como interruptores moleculares binários — ligado ou desligado, sem estados intermediários ambíguos. E a ROCK foi selecionada porque ataca dois pontos do mesmo processo simultaneamente (ativa a miosina E inibe quem a desativaria), dobrando a eficácia do sinal com uma única enzima."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A via G12/13 → RhoA → ROCK é o principal mecanismo que conecta um sinal químico extracelular à geração de força mecânica contrátil dentro da célula. Onde há necessidade de resposta contrátil rápida a um estímulo químico, essa via costuma estar envolvida."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Recapitulando: GPCR percebe → G12/13 traduz → GEF ativa RhoA → RhoA aciona ROCK → ROCK trava a miosina em posição de força. Cinco elos, cada um necessário — se qualquer um faltar, a cadeia para."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso se parece na prática, passo a passo?"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Da chegada do vasoconstritor à contração da célula muscular lisa",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Ligante encontra o receptor",
+          "explicacao": "Angiotensina II (ou outro vasoconstritor) se liga ao GPCR na membrana da célula muscular lisa vascular, mudando sua conformação."
+        },
+        {
+          "numero": 2,
+          "titulo": "G12/13 é ativada",
+          "explicacao": "A subunidade Gα12/13 troca GDP por GTP, se separa do complexo trimérico e fica livre para buscar seus efetores específicos no citosol."
+        },
+        {
+          "numero": 3,
+          "titulo": "GEF ativa RhoA",
+          "explicacao": "Gα12/13-GTP recruta e ativa um GEF, que catalisa em RhoA a mesma troca — GDP sai, GTP entra. RhoA está agora no estado ativo."
+        },
+        {
+          "numero": 4,
+          "titulo": "RhoA aciona ROCK",
+          "explicacao": "RhoA-GTP se liga à ROCK e a ativa. A partir daqui, a mensagem deixa de ser sobre proteínas G e passa a ser sobre o citoesqueleto diretamente."
+        },
+        {
+          "numero": 5,
+          "titulo": "ROCK trava o motor contrátil",
+          "explicacao": "ROCK fosforila a cadeia leve de miosina (ligando o motor) e inibe a fosfatase de miosina (impedindo que o motor desligue). A célula se contrai e permanece contraída enquanto o sinal persistir."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa via se articula?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa cascata não existe isolada. Ela depende de tudo que já foi estudado sobre GPCRs e sobre a troca GDP/GTP nas proteínas G — sem esse alicerce, 'ativar RhoA' seria um passo mágico e não mecanístico. E ela se conecta adiante com dois territórios: a fisiologia da contração muscular lisa vascular (que rege pressão arterial e fluxo sanguíneo local) e a farmacologia cardiovascular, onde inibidores de ROCK já são estudados como tratamento para hipertensão pulmonar e vasoespasmo — precisamente porque bloqueiam o último elo dessa corrente."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏹",
+      "conteudo": "Pense num arqueiro puxando a corda de um arco composto de polias. O GPCR é a mão que sente a corda esticar. A proteína G12/13 é o nervo que carrega essa sensação até o cérebro do arqueiro — um sinal traduzido, não a força em si. O GEF é a decisão consciente de 'agora, trave'. A RhoA é o próprio braço que se contrai. E a ROCK é o conjunto de polias do arco composto: um mecanismo que, uma vez acionado, multiplica e mantém a tensão sem que o arqueiro precise fazer esforço extra a cada instante — exatamente como a ROCK mantém a miosina ativa ao inibir quem a desligaria. Mapeamento: GPCR = mão que sente a corda; G12/13 = nervo condutor do sinal; GEF = decisão de travar; RhoA = braço contraído; ROCK = sistema de polias que sustenta a tensão."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vem o nome Rho?"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Rho",
+      "origem": "A letra grega ρ (rhô), décima sétima do alfabeto grego",
+      "significado": "Não há significado semântico direto — é uma designação alfabética, como 'proteína A', 'proteína B'",
+      "explicacao": "A proteína recebeu o nome porque foi identificada como homóloga à família Ras, e os pesquisadores que a descreveram em leveduras nos anos 1980 escolheram seguir a convenção de nomear a nova família de GTPases pequenas com letras gregas subsequentes às já usadas. O nome, portanto, não descreve função — descreve apenas a posição na árvore de descobertas. É um lembrete de que nem toda nomenclatura médica carrega poesia: às vezes é só o próximo rótulo disponível no catálogo."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a proteína G12/13 não existisse em células musculares lisas vasculares, o que aconteceria com a resposta a vasoconstritores como a angiotensina II?",
+      "resposta": "O GPCR ainda seria ativado pelo ligante, mas o sinal não teria como chegar ao citoesqueleto de actina-miosina — a cascata pararia logo na porta. A célula muscular lisa perderia a capacidade de se contrair rapidamente em resposta a esses hormônios, resultando em tônus vascular basal drasticamente reduzido. Na prática clínica, isso equivaleria a uma vasodilatação incontrolável e hipotensão severa, porque o principal circuito de resposta rápida à contração vascular estaria desconectado do receptor que deveria acioná-lo."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Cascata de sinalização G12/13 – RhoA – ROCK",
+      "descricao": "Esquema mostrando o GPCR ativado por um vasoconstritor, a subunidade Gα12/13 se soltando e ativando um GEF, o GEF ativando RhoA (troca GDP por GTP), RhoA ativando ROCK, e ROCK fosforilando a cadeia leve de miosina enquanto inibe a fosfatase, levando à contração dos filamentos de actina-miosina.",
+      "prompt_ia": "Diagrama científico vetorial, fundo neutro adaptativo, estilo livro-texto de biologia celular. Membrana plasmática com GPCR ativado por ligante (seta de fora para dentro). Subunidade Gα12/13 se separando do complexo trimérico. Seta para um GEF, que ativa RhoA (representada como pequena esfera trocando GDP por GTP, cores distintas para cada nucleotídeo). RhoA ativa ROCK (retângulo enzimático). ROCK com duas setas de ação: uma fosforilando a cadeia leve de miosina (ativação, seta verde) e outra inibindo a miosina-fosfatase (inibição, seta vermelha em T). Na base, filamentos de actina e miosina contraídos, com legenda 'contração muscular lisa'. Legendas em português, cores limitadas, sem texto decorativo excessivo.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-05-002-05-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Descreva a sequência completa desde a ligação do vasoconstritor ao GPCR até a contração da célula muscular lisa, nomeando cada intermediário.",
+      "resposta": "1) O ligante (ex: angiotensina II) ativa o GPCR na membrana. 2) A subunidade Gα12/13 troca GDP por GTP e se separa do complexo. 3) Gα12/13-GTP ativa um GEF específico. 4) O GEF catalisa a troca de GDP por GTP em RhoA, ativando-a. 5) RhoA-GTP ativa a quinase ROCK. 6) ROCK fosforila a cadeia leve de miosina (ativando-a) e inibe a miosina-fosfatase (impedindo a desativação). 7) O resultado é contração sustentada da célula muscular lisa.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "sinalização",
+        "RhoA",
+        "ROCK"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-05-fc02",
+      "tipo": "por_que",
+      "pergunta": "Por que a via G12/13 é chamada de via de 'remodelação estrutural' e não de via metabólica, como Gs ou Gq?",
+      "resposta": "Porque seus efetores finais — RhoA e ROCK — atuam diretamente sobre o citoesqueleto de actina e os filamentos de miosina, mudando fisicamente a arquitetura e a contratilidade da célula, em vez de alterar concentração de segundos mensageiros metabólicos como cAMP ou IP3. É uma via que converte sinal químico em força mecânica, não em reação bioquímica de via metabólica.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "citoesqueleto",
+        "G12/13"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-05-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "Se um fármaco inibisse especificamente os GEFs que ativam RhoA nesta via, o que aconteceria com a sinalização do GPCR?",
+      "resposta": "RhoA permaneceria predominantemente em seu estado inativo (ligada a GDP), mesmo com o GPCR ativado normalmente pelo ligante. O sinal ficaria 'preso' na etapa da proteína G, sem chegar ao citoesqueleto — resultando em perda de tônus contrátil ou falha de resposta a vasoconstritores, mesmo que a via receptora esteja intacta.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "inibição",
+        "GEF"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-05-fc04",
+      "tipo": "comparacao",
+      "pergunta": "Compare o que acontece na célula quando Gs/Gq são ativadas versus quando G12/13 é ativada.",
+      "resposta": "Gs eleva cAMP e ativa PKA, modulando metabolismo e transcrição. Gq ativa fosfolipase C, gerando IP3 e DAG, que mobilizam cálcio e ativam PKC. G12/13, por outro lado, não gera segundos mensageiros metabólicos clássicos — ativa diretamente RhoA e ROCK, mudando a arquitetura física e a contratilidade da célula. São respostas de naturezas diferentes: bioquímica versus mecânica.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "comparação",
+        "sinalização"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-05-fc05",
+      "tipo": "armadilha",
+      "pergunta": "Verdadeiro ou falso: como a ROCK ativa a contração fosforilando a cadeia leve de miosina, basta essa fosforilação para explicar toda a força de contração observada. Justifique.",
+      "resposta": "Falso, ou pelo menos incompleto. A fosforilação da cadeia leve de miosina é apenas metade do mecanismo. A ROCK também inibe a miosina-fosfatase — a enzima que desligaria a miosina removendo esse mesmo fosfato. É essa dupla ação (ativar E impedir a desativação) que explica por que a contração é rápida e sustentada, não apenas momentânea. Ignorar a inibição da fosfatase subestima a potência da via.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha-conceitual",
+        "ROCK"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-05-fc06",
+      "tipo": "clinico",
+      "pergunta": "Paciente com vasoespasmo coronariano recorrente é tratado experimentalmente com um inibidor de ROCK e apresenta melhora dos episódios. Qual o racional farmacológico dessa escolha terapêutica?",
+      "resposta": "Inibidores de ROCK bloqueiam o último elo efetivo da cascata G12/13-RhoA-ROCK, impedindo a fosforilação sustentada da cadeia leve de miosina que mantém a célula muscular lisa vascular contraída. Ao inibir esse ponto final da via, o fármaco relaxa a musculatura vascular independentemente de qual vasoconstritor específico esteja disparando o sinal — uma estratégia de bloqueio 'a jusante', útil quando múltiplos estímulos convergem na mesma via final.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "farmacologia",
+        "ROCK",
+        "vasoespasmo"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-05-002-05-caso01",
+      "titulo": "Dedos frios e dolorosos ao segurar um copo gelado",
+      "apresentacao": "Mulher de 28 anos procura atendimento por episódios recorrentes, há 2 anos, de dedos das mãos que ficam brancos, depois azulados e, por fim, vermelhos e doloridos, sempre desencadeados por frio ou estresse emocional. Nega outras doenças. Exame físico entre os episódios é normal, pulsos periféricos presentes e simétricos. Investigação laboratorial para doenças autoimunes é negativa.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Exposição ao frio ou estresse emocional dispara liberação exagerada de noradrenalina e outros vasoconstritores que ativam GPCRs nas células musculares lisas das arteríolas digitais."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Musculatura lisa das paredes arteriolares dos dedos, através da via G12/13 – RhoA – ROCK, que se torna hiper-responsiva ao estímulo vasoconstritor nessas pacientes."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Ativação exagerada e prolongada de RhoA/ROCK mantém a cadeia leve de miosina fosforilada por tempo excessivo, travando a musculatura arteriolar em contração intensa e sustentada."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Vasoespasmo leva a isquemia transitória (dedo branco), seguida de cianose (dedo azulado, sangue estagnado desoxigenado) e depois hiperemia reativa (dedo vermelho e dolorido, quando o fluxo retorna)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Episódios recorrentes sem outra doença associada caracterizam o fenômeno de Raynaud primário. Casos graves e prolongados podem levar a úlceras digitais por isquemia repetida, mas o prognóstico geral é bom com medidas comportamentais."
+        }
+      ],
+      "conexao_com_bloco": "O caso conecta diretamente a via G12/13-RhoA-ROCK estudada no bloco com um fenômeno clínico comum: a hiper-reatividade dessa cascata em resposta a frio e estresse é o mecanismo central proposto para o vasoespasmo do fenômeno de Raynaud, e explica por que inibidores de ROCK e bloqueadores de canal de cálcio (que agem sobre a mesma via contrátil final) são opções terapêuticas estudadas para casos refratários.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "fisiologia",
+        "farmacologia",
+        "clínica médica"
+      ],
+      "diagnostico_revelado": "Fenômeno de Raynaud primário",
+      "tratamento_resumido": "Medidas comportamentais (evitar frio, cessar tabagismo, controle de estresse) como primeira linha; bloqueadores de canal de cálcio di-hidropiridínicos em casos mais frequentes ou incapacitantes; inibidores de ROCK permanecem em investigação para casos refratários."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-05-001",
+        "titulo": "Fundamentos de GPCR e Proteínas G",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "O entendimento da estrutura básica do GPCR e da troca de nucleotídeos GDP/GTP é essencial para acompanhar como a via G12/13 se ramifica a partir do mesmo receptor."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Hipertensão pulmonar e vasoespasmo",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Inibidores de ROCK (como o fasudil) são estudados como tratamento para hipertensão pulmonar e vasoespasmo coronariano, atuando exatamente no ponto final desta cascata.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Fenômeno de Raynaud",
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "A hiper-reatividade da via RhoA-ROCK a estímulos vasoconstritores é um dos mecanismos propostos para o vasoespasmo do fenômeno de Raynaud.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Migração celular e metástase",
+        "disciplina": "patologia",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "A mesma via RhoA-ROCK que controla contração muscular lisa também regula a motilidade celular através da remodelação de actina, sendo relevante para a compreensão da migração de células tumorais.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-05-002",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Contrasta com as vias Gs e Gq do mesmo receptor: enquanto essas modulam metabolismo via segundos mensageiros, a G12/13 modula diretamente a arquitetura física da célula."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-05-002-05",
   "no_pai_id": "s1-biocel-05-002",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Rho GTPases a Jusante de GPCR",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "G12/13, remodelação do citoesqueleto e tônus vascular",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "fisiologia"
-  ]
+  }
 }

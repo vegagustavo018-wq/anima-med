@@ -11,54 +11,441 @@
     "s8-anest-03-007",
     "s8-anest-03-008"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s3-fisio-resp-00-000"
+  ],
   "metadata": {
     "titulo": "Anestésicos Inalatórios",
+    "subtitulo": "Como um gás inspirado consegue apagar a consciência de um corpo inteiro, e como se controla essa dose pelo próprio ato de respirar?",
     "semestre": 8,
     "disciplina": "Anestesiologia",
+    "sistema_corporal": "sistema nervoso",
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 4,
+    "tempo_leitura_minutos": 15,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "anest",
-      "esqueleto"
+      "anestesicos-inalatorios",
+      "hipnose",
+      "farmacocinetica-gasosa",
+      "cam",
+      "halogenados",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Gases e vapores que produzem e mantêm hipnose pela via pulmonar",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior você viu que a anestesia geral é uma tríade — hipnose, analgesia, relaxamento — e que o componente hipnótico pode vir de fármacos venosos ou de agentes inalados. Este bloco mergulha exatamente nesse segundo grupo: os gases e vapores halogenados que entram pelo pulmão, atravessam a barreira hematoencefálica sem metabolismo prévio e produzem hipnose de forma proporcional à sua pressão parcial no cérebro. A genialidade — e a dificuldade — desses fármacos é que sua dose não se mede em miligramas injetados, mas em uma concentração respirada continuamente, titulada em tempo real por um circuito de gases que o próprio anestesiologista controla. Entender por que a solubilidade de cada agente no sangue determina a velocidade de indução e por que a CAM (concentração alveolar mínima) virou a régua universal de potência — esse é o mapa conceitual que os blocos seguintes vão detalhar agente por agente, incluindo mecanismo molecular, valores de CAM e a complicação específica desta classe.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já viu, no bloco anterior, que a indução de uma anestesia geral costuma começar por via venosa — um hipnótico como o propofol, que atinge o cérebro em um único braço de circulação. Mas a maioria das cirurgias que duram mais que alguns minutos não é mantida com gotejamento contínuo de droga venosa. É mantida por um gás ou vapor que o paciente respira, quadro a quadro, do início ao fim do procedimento. Isso levanta uma pergunta que a tríade sozinha não responde: por que entregar o hipnótico pelo pulmão, e não simplesmente manter a veia correndo?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, especificamente, os agentes inalatórios resolvem que os venosos não resolvem sozinhos?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um hipnótico venoso em infusão contínua tem um problema cumulativo: ele se redistribui para gordura e músculo ao longo da cirurgia, e quanto mais tempo a infusão dura, mais o organismo acumula um reservatório periférico que precisa ser eliminado depois — o despertar fica cada vez mais lento e imprevisível à medida que a cirurgia se alonga, porque a droga já não depende só do metabolismo hepático, depende de sair de volta desses depósitos. Em uma cirurgia de oito horas, isso é uma desvantagem séria."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existe ainda uma segunda exigência, mais sutil: o anestesiologista precisa de uma forma de **medir e ajustar a profundidade hipnótica em tempo real**, minuto a minuto, conforme o estímulo cirúrgico varia — um pinçamento visceral dói mais que uma sutura de pele, e a profundidade anestésica precisa acompanhar essa variação sem atraso. Uma droga que se acumula em tecido adiposo não permite esse ajuste fino: aumentar ou reduzir a infusão hoje só vai se refletir na concentração cerebral depois de um atraso imprevisível, porque a droga já injetada continua circulando entre compartimentos."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe antes de seguir: o problema que os agentes inalatórios resolvem não é 'produzir hipnose' — isso os venosos já fazem. É produzir hipnose de forma que a concentração no cérebro possa ser ajustada quase em tempo real, sem depender de metabolismo hepático nem de redistribuição tecidual imprevisível, e que seja **eliminada pela mesma via por onde entrou** assim que o paciente para de respirá-la."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a farmacologia resolveu esse problema"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi usar moléculas pequenas e voláteis o bastante para existir em fase gasosa (ou de vapor, à temperatura ambiente) em concentração clinicamente útil, capazes de atravessar o epitélio alveolar e a barreira hematoencefálica **sem transportador dedicado**, dissolvendo-se diretamente na bicamada lipídica das membranas neuronais. Isso significa que a via de entrada e a via de saída são, ambas, o pulmão: o que se ajusta no vaporizador se reflete na pressão parcial alveolar, que se equilibra com a pressão parcial arterial, que se equilibra com a pressão parcial cerebral — uma cascata de equilíbrios físicos, não uma cascata metabólica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa é a diferença crucial que você já pode intuir a partir do que sabe de farmacocinética venosa: um agente inalatório não precisa ser metabolizado para agir, nem para deixar de agir. Ele age enquanto está fisicamente dissolvido no tecido nervoso, e some do organismo simplesmente sendo exalado de volta — na direção oposta do gradiente de pressão parcial, assim que a inspiração de agente novo é interrompida. É uma hipnose regulada por física de gases dissolvidos, não por enzimas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vêm os nomes desses agentes — antes de usá-los"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "sevoflurano / isoflurano / desflurano",
+      "origem": "sufixo -flurano, comum aos éteres halogenados anestésicos modernos, derivado de 'fluor' (o elemento químico flúor) mais o sufixo químico -ano dos hidrocarbonetos saturados",
+      "significado": "o sufixo -flurano identifica a família de anestésicos inalatórios halogenados por flúor: sevoflurano, isoflurano, desflurano, enflurano — cada prefixo (sevo-, iso-, des-, en-) é apenas um identificador arbitrário de patente/estrutura, sem raiz etimológica médica própria",
+      "explicacao": "Note a diferença em relação à etimologia clássica que você viu no bloco anterior sobre 'anestesia' (grego, século XIX, nascida da observação clínica). Os nomes desta família são muito mais recentes — cunhados no século XX pela indústria farmacêutica seguindo convenção química de nomenclatura, não pela tradição greco-latina de descrever o fenômeno observado. É a era industrial da nomenclatura médica, não a era clássica. Vale reconhecer essa origem antes de tratar esses nomes como se fossem auto-explicativos — o que vem a seguir explica a estrutura que esses nomes rotulam."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que esses agentes são feitos — e por que a estrutura molecular importa tanto"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Com essa origem em mente, os agentes inalatórios modernos de uso corriqueiro são éteres halogenados — sevoflurano, desflurano e isoflurano, os três dominantes na prática atual — moléculas pequenas de hidrocarboneto com átomos de flúor (e, no isoflurano, também cloro) substituindo hidrogênios. A halogenação não é detalhe cosmético: átomos de flúor tornam a molécula menos inflamável que o éter original usado em 1846, mais estável quimicamente e, de forma importante, alteram o coeficiente de partição sangue-gás de cada agente — a propriedade física que, como você vai ver a seguir, governa toda a farmacocinética desses fármacos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O óxido nitroso (N₂O) é a exceção estrutural do grupo: não é um hidrocarboneto halogenado, é um gás inorgânico simples, usado historicamente desde antes do próprio éter e ainda hoje como adjuvante de baixa potência (jamais suficiente sozinho para anestesia geral em humanos saudáveis, porque sua CAM ultrapassa 100%, um valor que só se aproxima em condições hiperbáricas)."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Duas réguas independentes resumem qualquer agente inalatório: o **coeficiente de partição sangue-gás** mede velocidade — quanto menor, mais rápida a indução e o despertar (existe também um coeficiente óleo-gás, que se correlaciona com a potência, e um cérebro-sangue, geralmente próximo de 1) — e a **CAM** mede potência — quanto menor, mais potente o agente. As duas propriedades são eixos distintos: cinética rápida não implica alta potência, e vice-versa. Os blocos seguintes detalham cada agente segundo essas duas réguas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em movimento: da concentração ajustada no vaporizador até a hipnose no córtex"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O trajeto de uma molécula de sevoflurano do vaporizador ao córtex",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Vaporização e diluição no circuito",
+          "explicacao": "O vaporizador converte o agente líquido em vapor e o mistura ao fluxo de gases frescos (oxigênio, ar) em uma concentração ajustável, expressa em porcentagem do volume total inspirado — essa é a única variável que o anestesiologista controla diretamente."
+        },
+        {
+          "numero": 2,
+          "titulo": "Equilíbrio alvéolo-capilar",
+          "explicacao": "A cada respiração, o agente se difunde do alvéolo para o sangue capilar pulmonar, proporcionalmente ao gradiente de pressão parcial. Um agente com **baixo** coeficiente de partição sangue-gás (como o sevoflurano ou o desflurano) satura rapidamente o pouco sangue que consegue dissolver, e a pressão parcial alveolar sobe quase tão rápido quanto a concentração inspirada — indução rápida. Um agente com coeficiente **alto** (como o isoflurano, e ainda mais o antigo halotano) é 'sugado' pelo sangue de forma mais voraz, e a pressão parcial alveolar demora mais para subir — indução mais lenta, para a mesma concentração inspirada."
+        },
+        {
+          "numero": 3,
+          "titulo": "Transporte e captação cerebral",
+          "explicacao": "O sangue arterial carrega o agente dissolvido até o cérebro, órgão de alto fluxo sanguíneo relativo e rico em lipídios, onde o agente se equilibra rapidamente com o tecido nervoso — coeficiente cérebro-sangue próximo de 1 significa que, uma vez a pressão parcial arterial estabelecida, o cérebro acompanha de perto, sem grande atraso adicional."
+        },
+        {
+          "numero": 4,
+          "titulo": "Ação direta na membrana neuronal",
+          "explicacao": "Ao contrário da maioria dos fármacos que você estudou em Farmacologia, os anestésicos inalatórios não têm um receptor único e dedicado: eles se dissolvem na bicamada lipídica e nas regiões hidrofóbicas de proteínas de membrana, modulando sobretudo receptores GABA-A (potencializando a inibição) [⚠️ esse é o mecanismo mais aceito para os halogenados; contribuição de outros alvos, como receptores NMDA, é mais robustamente documentada para óxido nitroso e xenônio, e permanece mais debatida para sevoflurano/isoflurano/desflurano — os blocos seguintes detalham o que se sabe agente a agente]. O efeito final é a supressão generalizada e dose-dependente da atividade cortical e subcortical."
+        },
+        {
+          "numero": 5,
+          "titulo": "Eliminação por via inversa",
+          "explicacao": "Quando o vaporizador é desligado, o gradiente se inverte: a concentração inspirada cai a zero, o agente se difunde do sangue de volta ao alvéolo e é exalado. Um agente de baixo coeficiente sangue-gás sai do organismo com a mesma rapidez com que entrou; um agente mais solúvel deixa um reservatório residual que atrasa o despertar — o mesmo coeficiente que determinou a velocidade de indução determina, de forma simétrica, a velocidade de emergência."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa simetria — o mesmo parâmetro físico controlando entrada e saída — é o que torna os agentes inalatórios previsíveis mesmo em cirurgias longas: ao contrário do hipnótico venoso, que acumula reservatório periférico crescente com o tempo de infusão, o agente inalatório depende sobretudo do coeficiente sangue-gás e da duração da própria exposição, com comportamento muito mais estável ao longo de procedimentos prolongados."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A régua universal de potência: por que a CAM existe e como ela funciona"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Comparar hipnóticos venosos é relativamente simples: mede-se a dose em mg/kg necessária para o efeito. Comparar agentes inalatórios exige uma régua diferente, porque a variável relevante não é a massa administrada, mas a concentração respirada mantida em equilíbrio. A solução farmacológica para isso foi a **concentração alveolar mínima (CAM)**: a concentração alveolar, em equilíbrio, na qual 50% dos pacientes não se movem em resposta a uma incisão cirúrgica padronizada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A CAM funciona como a DE50 (dose efetiva em 50% da população) da farmacologia clássica, adaptada à realidade dos gases: quanto **menor** a CAM de um agente, **maior** sua potência (basta uma fração pequena da atmosfera respirada para imobilizar metade dos pacientes). O sevoflurano, o desflurano e o isoflurano têm CAM na faixa de poucos pontos percentuais; o óxido nitroso tem CAM superior a 100%, revelando por que ele nunca basta sozinho. A CAM também não é um número fixo e universal — vários fatores do próprio paciente deslocam esse valor para cima ou para baixo, e os blocos seguintes exploram cada agente e essas variações com mais profundidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que este mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A dependência quase exclusiva da via pulmonar de entrada e saída conecta diretamente este bloco com a **fisiologia respiratória** que você já estudou: ventilação-minuto e débito cardíaco alteram a velocidade com que a pressão parcial alveolar sobe — um paciente hiperventilando satura mais rápido; um paciente com débito cardíaco muito elevado 'dilui' o agente por mais sangue circulante e retarda a subida da pressão parcial arterial, um efeito que os módulos de farmacocinética inalatória aprofundarão."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esses agentes também não produzem hipnose isolada e inócua: em doses crescentes, halogenados depletam o tônus vascular, deprimem a contratilidade miocárdica e suprimem a resposta ventilatória à hipercapnia — reforçando o que o bloco anterior já descreveu como consequência esperada da tríade anestésica, não efeito colateral surpreendente. Existe ainda uma complicação rara, grave e específica desta classe farmacológica — a hipertermia maligna — que um bloco-filho dedicado desta trilha vai detalhar mecanisticamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a farmacocinética inalatória"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🫧",
+      "conteudo": "Pense em encher uma piscina com uma mangueira de jardim, enquanto ao mesmo tempo a piscina vaza um pouco pelo ralo. A **concentração ajustada no vaporizador** é a vazão da mangueira — a única coisa que você controla diretamente. A **pressão parcial alveolar** é o nível da água na piscina — o que você realmente quer que suba (ou desça) de forma previsível. O **coeficiente de partição sangue-gás** corresponde ao tamanho da piscina: uma piscina pequena (coeficiente baixo, como o sevoflurano) enche rápido com a mesma mangueira — o nível sobe quase junto com a vazão. Uma piscina enorme (coeficiente alto, como o isoflurano) demora muito mais para encher com a mesma vazão, porque ela 'absorve' muito mais água antes de o nível subir de forma perceptível. A **CAM** não é o tamanho da piscina — é a altura de água necessária para produzir o efeito clínico desejado (imobilidade cirúrgica); agentes muito potentes atingem esse efeito com pouquíssima água (CAM baixa), agentes fracos precisam de muita água (CAM alta, como o óxido nitroso, que sozinho quase não enche o suficiente). E **desligar o vaporizador** é fechar a mangueira: a piscina pequena esvazia rápido pelo ralo (despertar rápido), a piscina grande demora (despertar mais lento). A analogia quase não quebra: o ralo da piscina (a exalação pulmonar) é passivo e depende sobretudo do gradiente de concentração, sem um 'motor' metabólico acelerando a saída como aconteceria com um fármaco venoso eliminado pelo fígado — mas existe uma fração mínima de metabolismo hepático residual em alguns agentes (maior no sevoflurano que nos demais), pequena o bastante para não mudar a cinética geral, mas não estritamente zero."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se existisse um agente inalatório com coeficiente de partição sangue-gás extremamente alto (piscina enorme) mas CAM extremamente baixa (efeito com pouquíssima concentração), ele seria clinicamente prático para induções rápidas?",
+      "resposta": "Não seria. Essa combinação hipotética ilustra por que as duas propriedades — cinética (coeficiente sangue-gás) e potência (CAM) — precisam ser avaliadas juntas, nunca isoladamente. Um coeficiente sangue-gás alto significa que o sangue 'sequestra' avidamente o agente, retardando a subida da pressão parcial alveolar e, por consequência, a subida da pressão parcial cerebral — a indução seria lenta, independentemente de quão potente (CAM baixa) o agente fosse em equilíbrio final. É exatamente essa combinação desfavorável (coeficiente sangue-gás alto) que tornou o halotano — um agente historicamente importante mas hoje amplamente substituído — mais lento para induzir e para despertar do que sevoflurano e desflurano, que combinam coeficientes sangue-gás baixos com CAM clinicamente prática. Na prática, os agentes modernos dominantes foram selecionados justamente por reunir baixa solubilidade sanguínea (cinética rápida) com CAM em faixa administrável com segurança — as duas réguas precisam estar favoráveis ao mesmo tempo."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Da concentração no vaporizador à hipnose cortical — a cascata de equilíbrios físicos",
+      "descricao": "Esquema didático horizontal em quatro compartimentos conectados por setas de duas pontas representando equilíbrio dinâmico: vaporizador/circuito de gases frescos à esquerda, alvéolo pulmonar em seguida, sangue arterial circulando ao centro, e tecido cerebral à direita. Em cada compartimento, um símbolo de concentração (barra de preenchimento parcial) mostrando o gradiente decrescente da esquerda para a direita durante a fase de indução. Setas tracejadas menores mostrando o caminho inverso (da direita para a esquerda) durante a fase de eliminação, com legenda indicando reversibilidade. Um ícone de gota grande versus gota pequena ilustrando visualmente o conceito de coeficiente de partição sangue-gás entre o compartimento alveolar e o compartimento sanguíneo.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente adaptativo a tema claro e escuro, estilo de infográfico médico contemporâneo e limpo, sem nenhum texto, palavra, letra, número ou legenda embutida na imagem. Composição horizontal com quatro formas geométricas conectadas em sequência representando compartimentos fisiológicos abstratos: a primeira forma um retângulo estilizado com padrão de nuvem de partículas dispersas (representando gás em um circuito); a segunda forma um agrupamento de pequenos sacos esféricos translúcidos conectados (representando alvéolos pulmonares) com partículas semelhantes atravessando sua parede; a terceira forma um tubo ondulado horizontal com pequenas partículas fluindo dentro dele em densidade intermediária (representando fluxo sanguíneo); a quarta forma um contorno estilizado e abstrato de um cérebro visto de perfil, preenchido com partículas em densidade similar à do tubo anterior. Entre cada par de formas, duas setas curvas finas apontando em direções opostas uma da outra, sugerindo equilíbrio bidirecional, com uma seta ligeiramente mais grossa na direção predominante do fluxo. Densidade de partículas decrescente da esquerda para a direita, sugerindo gradiente de concentração. Paleta de cores médica sóbria — tons de azul-petróleo, verde-água claro e cinza-grafite — com as partículas em um único tom de destaque âmbar translúcido. Traços vetoriais limpos, estilo minimalista de livro-texto contemporâneo, sem texturas fotorrealistas, sem qualquer texto ou rotulagem dentro da própria imagem. Sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-anest-00-000",
+        "titulo": "Anestesiologia — A Medicina de Suspender e Devolver a Consciência com Segurança",
+        "disciplina": "Anestesiologia",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha o componente hipnótico da tríade anestésica descrita no bloco fundacional, especificamente na via inalatória — sem entender que a hipnose é um dos três pilares independentes da anestesia geral, a razão de existir da CAM e da farmacocinética gasosa perde o contexto."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Hipnóticos venosos (propofol, etomidato, cetamina) e receptor GABA-A",
+        "mecanismo_conexao": "O mesmo receptor GABA-A modulado de forma inespecífica pelos agentes inalatórios é o alvo molecular preciso do propofol — comparar os dois módulos revela por que a via de administração muda a farmacocinética sem mudar necessariamente o alvo farmacodinâmico final.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Hipertermia maligna",
+        "mecanismo_conexao": "A hipertermia maligna citada aqui como complicação rara dos agentes halogenados é desenvolvida em módulo próprio: mutação do receptor de rianodina (RYR1), cascata de liberação descontrolada de cálcio no retículo sarcoplasmático, e o antídoto específico (dantroleno).",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Bloqueadores neuromusculares e succinilcolina",
+        "mecanismo_conexao": "A succinilcolina, citada aqui como cogatilho da hipertermia maligna junto aos halogenados, pertence ao módulo de relaxantes musculares — a mesma tríade farmacológica do bloco fundacional se completa com esse terceiro pilar.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 8,
+        "topico": "Metabolismo hepático residual dos agentes halogenados e a controvérsia histórica da nefrotoxicidade por fluoreto inorgânico",
+        "mecanismo_conexao": "Embora a eliminação principal seja pulmonar, uma fração pequena de cada agente halogenado é metabolizada no fígado (sobretudo o sevoflurano), liberando fluoreto inorgânico. Essa preocupação é historicamente associada a agentes antigos como o metoxiflurano, e hoje é considerada de relevância clínica muito baixa com o sevoflurano moderno em pacientes com função renal normal — o tema é retomado nos módulos de farmacologia clínica da especialidade com essa nuance temporal explícita, para não transmitir um alarme já desatualizado.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s3-fisio-resp-00-000",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "As mesmas leis físicas de difusão gasosa e equilíbrio de pressões parciais que regem a troca de O₂ e CO₂ no alvéolo regem, aqui, a captação e eliminação do agente anestésico — é o mesmo princípio de fisiologia respiratória aplicado a uma molécula exógena."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-anest-03-000-fc01",
+      "pergunta": "Por que a farmacocinética dos agentes inalatórios é descrita em termos de coeficientes de partição física, em vez de meia-vida de eliminação como se faz com fármacos venosos?",
+      "resposta": "Porque a entrada e a saída desses agentes não dependem de metabolismo enzimático nem de eliminação renal — dependem quase inteiramente de equilíbrios físicos de pressão parcial entre gás alveolar, sangue e tecido cerebral. O coeficiente de partição sangue-gás descreve o quanto o agente se dissolve no sangue relativo à fase gasosa: um coeficiente baixo significa que pouco sangue já satura, permitindo que a pressão parcial alveolar (e depois a cerebral) suba rápido; um coeficiente alto significa que o sangue 'absorve' muito agente antes de a pressão parcial subir, retardando indução e despertar de forma simétrica. Meia-vida de eliminação hepática simplesmente não é o parâmetro relevante aqui, porque o pulmão — não o fígado — é a via dominante de entrada e saída.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "anestesicos-inalatorios",
+        "farmacocinetica",
+        "coeficiente-particao"
+      ]
+    },
+    {
+      "card_id": "s8-anest-03-000-fc02",
+      "pergunta": "Se um paciente estiver hiperventilando voluntariamente (por ansiedade, antes de uma indução inalatória em máscara), o que aconteceria com a velocidade de indução, e por quê?",
+      "resposta": "A indução seria mais rápida. A pressão parcial alveolar do agente sobe em função da razão entre a quantidade de agente entregue por minuto (ventilação alveolar × concentração inspirada) e a quantidade removida pelo sangue (débito cardíaco × solubilidade). Aumentar a ventilação-minuto aumenta a entrega de agente ao alvéolo por unidade de tempo, elevando a pressão parcial alveolar mais rapidamente para a mesma concentração ajustada no vaporizador — e, por equilíbrio em cascata, a pressão parcial cerebral sobe mais rápido também. É por isso que, na prática, pedir ao paciente para respirar fundo e profundamente durante uma indução inalatória acelera a perda de consciência.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "anestesicos-inalatorios",
+        "ventilacao-alveolar",
+        "inducao"
+      ]
+    },
+    {
+      "card_id": "s8-anest-03-000-fc03",
+      "pergunta": "Um anestesiologista mantém exatamente 1,0 CAM de sevoflurano durante toda a cirurgia, calculado para o paciente médio da faixa etária. Isso garante que aquele paciente específico não vai se mexer à incisão? Se não, o que o número '1,0 CAM' realmente representa nesse caso?",
+      "resposta": "Não garante. '1,0 CAM' é, por definição, a concentração na qual **50%** de uma população não se move à incisão — ou seja, aplicado a um único paciente, 1,0 CAM representa uma probabilidade de imobilidade em torno de 50%, não uma garantia individual. É exatamente por isso que a prática clínica rotineiramente mantém 1,2 a 1,3 CAM ou mais: para deslocar a probabilidade de imobilidade daquele paciente específico para bem perto de 100%, cobrindo a variabilidade que a própria definição estatística da CAM já pressupõe. Tratar CAM como um número fixo e seguro para qualquer paciente é confundir uma estatística populacional com uma dose individual.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "cam",
+        "anestesicos-inalatorios",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s8-anest-03-000-fc04",
+      "pergunta": "Paciente de 45 anos em cirurgia abdominal prolongada sob anestesia com isoflurano (coeficiente de partição sangue-gás relativamente alto) apresenta despertar bastante mais lento que um paciente comparável anestesiado com sevoflurano numa cirurgia de duração semelhante. Qual mecanismo farmacocinético explica essa diferença, e o que isso implica para a escolha de agente em procedimentos ambulatoriais?",
+      "resposta": "O isoflurano tem coeficiente de partição sangue-gás mais alto que o sevoflurano, o que significa que uma quantidade maior do agente permanece dissolvida no compartimento sanguíneo (e, por extensão de equilíbrio, nos tecidos periféricos) ao longo da cirurgia. Quando o vaporizador é desligado, esse reservatório dissolvido precisa se equilibrar de volta para o alvéolo antes de ser exalado, o que atrasa a queda da pressão parcial cerebral e, portanto, o despertar — o mesmo parâmetro que retardou a indução retarda, de forma simétrica, a emergência. Em cirurgia ambulatorial, onde alta rápida e previsível é prioridade clínica e logística, agentes de baixo coeficiente sangue-gás (sevoflurano, desflurano) são preferidos exatamente por essa razão farmacocinética, não por serem 'mais seguros' em sentido farmacodinâmico.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "anestesicos-inalatorios",
+        "coeficiente-particao",
+        "cirurgia-ambulatorial"
+      ]
+    },
+    {
+      "card_id": "s8-anest-03-000-fc05",
+      "pergunta": "Compare sevoflurano, isoflurano e óxido nitroso quanto a coeficiente de partição sangue-gás relativo e CAM relativa, e explique por que o óxido nitroso nunca é usado como agente único.",
+      "resposta": "Sevoflurano tem coeficiente sangue-gás baixo (indução e despertar rápidos) e CAM em faixa clinicamente administrável (potência suficiente para uso isolado). Isoflurano tem coeficiente sangue-gás mais alto que o sevoflurano (cinética mais lenta) e CAM também administrável, sendo historicamente valioso por seu custo menor e estabilidade cardiovascular relativa. O óxido nitroso tem coeficiente sangue-gás muito baixo (cinética extremamente rápida, quase instantânea) mas CAM superior a 100% — o que significa que seria necessário respirar mais que uma atmosfera inteira de óxido nitroso puro para atingir o efeito hipnótico pleno em metade dos pacientes, algo fisicamente inviável sem hipóxia concomitante. Por isso o óxido nitroso é usado exclusivamente como adjuvante de baixa potência, somado a outro agente ou a opioides, nunca como único agente hipnótico em anestesia geral padrão.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "anestesicos-inalatorios",
+        "cam",
+        "oxido-nitroso",
+        "comparacao"
+      ]
+    },
+    {
+      "card_id": "s8-anest-03-000-fc06",
+      "pergunta": "Por que a família de anestésicos halogenados recebeu nomes com o sufixo '-flurano', e o que essa convenção revela sobre a diferença entre etimologia médica clássica e nomenclatura farmacêutica industrial?",
+      "resposta": "O sufixo '-flurano' identifica quimicamente a presença de flúor na estrutura do hidrocarboneto halogenado (sevoflurano, isoflurano, desflurano, enflurano), seguindo convenção de nomenclatura química farmacêutica do século XX — não a tradição greco-latina que nomeou 'anestesia' a partir da observação clínica direta em 1846. Isso revela duas eras distintas na etimologia médica: nomes clássicos (gregos/latinos), nascidos de quem observou um fenômeno pela primeira vez e o descreveu, e nomes industriais modernos, construídos por convenção regulatória e de patente para identificar classe química e composto específico. Reconhecer a qual era um termo pertence ajuda a saber que tipo de informação a etimologia vai revelar: história clínica, no primeiro caso; estrutura química, no segundo.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "etimologia",
+        "anestesicos-inalatorios",
+        "nomenclatura-quimica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-anest-03-000-caso01",
+      "titulo": "Indução mais lenta que o esperado numa criança com resfriado recente",
+      "apresentacao": "Menino de 6 anos, sem comorbidades relevantes, é levado à indução inalatória com sevoflurano em máscara para uma adenoamigdalectomia eletiva, técnica escolhida por evitar punção venosa em criança colaborativa apenas parcialmente. O anestesiologista nota que a criança está chorando e resistindo à máscara nos primeiros minutos, respirando de forma curta e irregular, e a perda de consciência demora visivelmente mais que o esperado para a concentração ajustada no vaporizador, comparado ao padrão habitual do serviço.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O choro e a resistência da criança geram períodos de apneia intermitente, respiração superficial e, por vezes, laringoespasmo parcial — reduzindo drasticamente a ventilação alveolar efetiva do agente inalado, mesmo com a concentração do vaporizador ajustada corretamente."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A captação alveolar do sevoflurano, que depende diretamente do produto entre ventilação alveolar e gradiente de pressão parcial, fica comprometida — pouco agente novo chega à interface alvéolo-capilar por unidade de tempo, independentemente da concentração disponível no circuito."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A pressão parcial alveolar do agente sobe muito mais devagar do que subiria com ventilação regular e calma, e por consequência a pressão parcial cerebral também demora a atingir o patamar hipnótico necessário — a cascata de equilíbrios físicos descrita neste bloco depende de um fluxo ventilatório mínimo e constante para funcionar como esperado."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Indução clinicamente mais lenta que o padrão esperado para aquela concentração e aquele agente, com a criança permanecendo semiconsciente e agitada por mais tempo — um período de risco aumentado de laringoespasmo completo e obstrução de via aérea, exatamente pela combinação de via aérea ainda reativa com hipnose incompleta."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O anestesiologista reconhece que o problema não é farmacológico (a droga e a dose estão corretas), mas ventilatório, e intervém otimizando a ventilação — segurando a máscara com vedação melhor, oferecendo suporte manual à respiração, e acalmando a criança — em vez de simplesmente aumentar a concentração do vaporizador, o que não resolveria uma limitação de entrega do agente ao alvéolo. Após estabilização da ventilação, a indução progride no ritmo esperado."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra de forma direta o passo 2 da cascata farmacocinética descrita neste bloco: a pressão parcial alveolar não sobe apenas em função da concentração ajustada no vaporizador, mas do produto entre essa concentração e a ventilação alveolar efetiva. Reduzir a ventilação (por choro, apneia, laringoespasmo parcial) retarda a indução mesmo com a concentração e o agente corretos — reconhecer essa dependência evita o erro de aumentar a concentração quando o problema real é ventilatório.",
+      "disciplinas_relacionadas": [
+        "anestesiologia",
+        "fisiologia",
+        "pediatria"
+      ],
+      "diagnostico_revelado": "Indução inalatória retardada por ventilação alveolar reduzida (choro/resistência com períodos de apneia e laringoespasmo parcial), não por falha farmacológica do agente.",
+      "tratamento_resumido": "Otimização da técnica de ventilação assistida com máscara (vedação, insuflação manual suave), medidas comportamentais de tranquilização da criança, e paciência — sem necessidade de aumentar a concentração do vaporizador além do planejado nem de trocar a técnica anestésica."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-anest-03-000-img01",
+        "url": null,
+        "tipo_imagem": "esquema_didatico",
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "workflow-anima-s8",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
-  "_lentes": [
-    "correlação ciências básicas",
-    "conduta/técnica",
-    "manejo/segurança"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Miller RD, Gropper MA. Miller's Anesthesia. 9th ed. Elsevier; 2020. Chapter 22 — Inhaled Anesthetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Butterworth JF, Mackey DC, Wasnick JD. Morgan & Mikhail's Clinical Anesthesiology. 6th ed. McGraw-Hill; 2018. Chapter 8 — Inhalational Anesthetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Barash PG, Cullen BF, Stoelting RK, et al. Clinical Anesthesia. 8th ed. Wolters Kluwer; 2017. Chapter 18 — Inhaled Anesthetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "CAM é a concentração de segurança garantida contra despertar em qualquer paciente",
+      "correcao": "CAM é definida estatisticamente como a concentração em que 50% dos pacientes não se movem à incisão; na prática usa-se acima de 1 CAM para cobrir a variabilidade individual",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "A eliminação dos agentes inalatórios depende principalmente do metabolismo hepático, como a maioria dos fármacos venosos",
+      "correcao": "A eliminação é predominantemente pulmonar, por reversão do gradiente de pressão parcial; o metabolismo hepático é via secundária e minoritária para a maioria dos agentes modernos",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Um coeficiente de partição sangue-gás alto significa que o agente é mais potente",
+      "correcao": "Potência é medida pela CAM, não pelo coeficiente sangue-gás; as duas propriedades são farmacologicamente independentes — um agente pode ter cinética lenta (coeficiente alto) e potência baixa ou alta, em qualquer combinação",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "concentração alveolar mínima",
+      "termo_es": "concentración alveolar mínima",
+      "termo_en": "minimum alveolar concentration",
+      "abreviatura": "CAM / CAM / MAC"
+    },
+    {
+      "termo_pt": "coeficiente de partição sangue-gás",
+      "termo_es": "coeficiente de partición sangre-gas",
+      "termo_en": "blood-gas partition coefficient",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "agente inalatório halogenado",
+      "termo_es": "agente inhalatorio halogenado",
+      "termo_en": "halogenated inhaled agent",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false
 }

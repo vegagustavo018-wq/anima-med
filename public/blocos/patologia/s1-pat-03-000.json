@@ -275,14 +275,6 @@
         "semestre": 1,
         "relevancia": "base_necessaria",
         "explicacao": "Endotélio é epitélio. Entender polaridade, junções e permeabilidade vascular é pré-requisito para compreender por que o endotélio consegue se abrir."
-      },
-      {
-        "bloco_id": "s1-biocel-03-005",
-        "titulo": "Sinalização Celular e Cascatas de Segundo Mensageiro",
-        "disciplina": "biologia-celular",
-        "semestre": 1,
-        "relevancia": "base_necessaria",
-        "explicacao": "Cascatas inflamatórias usam sinalizações (Ca2+, PKC, NF-κB). Familiaridade com transdução de sinal é necessária para entender por que um DAMP leva a síntese de citocinas."
       }
     ],
     "futuras": [
@@ -292,7 +284,8 @@
         "disciplina": "patologia-especial",
         "semestre_futuro": 6,
         "topico": "Inflamação crônica e sequelas — fibrose, abscessos, granulomas",
-        "mecanismo_conexao": "Se a inflamação aguda não for resolvida, mediadores perpetuam. Monócitos se transformam em macrófagos, fibroblastos proliferam. Semanas depois: cicatriz em lugar de tecido normal. Entender aguda é entender por que crônica é perigosa."
+        "mecanismo_conexao": "Se a inflamação aguda não for resolvida, mediadores perpetuam. Monócitos se transformam em macrófagos, fibroblastos proliferam. Semanas depois: cicatriz em lugar de tecido normal. Entender aguda é entender por que crônica é perigosa.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "tipo": "ALVO_TERAPEUTICO",
@@ -300,7 +293,8 @@
         "disciplina": "farmacologia",
         "semestre_futuro": 5,
         "topico": "Anti-inflamatórios e bloqueadores de mediadores",
-        "mecanismo_conexao": "AINEs bloqueiam COX (reduzem PG/LT). Corticoides reduzem síntese de TNF, IL-1 a nível transcricional. Antihistamínicos bloqueiam H1. Bloqueadores de TNF em biologics. Toda droga anti-inflamatória atua em um passo dessa cascata — conhecê-la é entender por que cada droga tem seu nicho."
+        "mecanismo_conexao": "AINEs bloqueiam COX (reduzem PG/LT). Corticoides reduzem síntese de TNF, IL-1 a nível transcricional. Antihistamínicos bloqueiam H1. Bloqueadores de TNF em biologics. Toda droga anti-inflamatória atua em um passo dessa cascata — conhecê-la é entender por que cada droga tem seu nicho.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "tipo": "RECONHECIMENTO_CLINICO",
@@ -308,7 +302,8 @@
         "disciplina": "semiologia",
         "semestre_futuro": 4,
         "topico": "Os quatro sinais cardinais de inflamação (Celsus) e o quinto (Virchow)",
-        "mecanismo_conexao": "Rubor (vasodilatação), tumor (edema), calor (metabolismo aumentado), dor (bradicinina em nociceptores), functio laesa (perda de função por edema/imobilização). Cada sinal tem base mecanística neste bloco."
+        "mecanismo_conexao": "Rubor (vasodilatação), tumor (edema), calor (metabolismo aumentado), dor (bradicinina em nociceptores), functio laesa (perda de função por edema/imobilização). Cada sinal tem base mecanística neste bloco.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "tipo": "MECANISMO_COMPARTILHADO",
@@ -316,7 +311,8 @@
         "disciplina": "imunologia",
         "semestre_futuro": 3,
         "topico": "Sistema complemento como amplificador de inflamação",
-        "mecanismo_conexao": "Complemento (C3a, C5a) são quimiocinas potentíssimas. Geram mais mediadores. Complemento é paralelo à cascata que estudamos aqui — aprenderemos como ambas se conectam."
+        "mecanismo_conexao": "Complemento (C3a, C5a) são quimiocinas potentíssimas. Geram mais mediadores. Complemento é paralelo à cascata que estudamos aqui — aprenderemos como ambas se conectam.",
+        "confianca": "hipotese_pedagogica"
       }
     ]
   },
@@ -326,86 +322,118 @@
       "pergunta": "Por que a vasodilatação é o primeiro passo da inflamação aguda, e não a migração de leucócitos?",
       "resposta": "Porque leucócitos só conseguem sair do vaso se houver espaço e sinal químico. Vasodilatação cria dois pré-requisitos: (1) estase — leucócitos desaceleram, ficam perto da parede; (2) permeabilidade aumentada — brecha para transmigração. Sem vasodilatação, leucócitos passam rápido demais pelo vaso para conseguir sair. A sequência é causal.",
       "nivel_alvo": 4,
-      "tags": ["mecanismo", "cascata"]
+      "tags": [
+        "mecanismo",
+        "cascata"
+      ]
     },
     {
       "tipo": "mecanismo",
       "pergunta": "Descreva a diferença mecanística entre um **exsudato** (em inflamação aguda) e um **transudato** (em falência cardíaca). O que as causas têm em comum e no que diferem?",
       "resposta": "Exsudato: vazamento por **aumento de permeabilidade vascular** (citocinas, mediadores inflamatórios). Resultado: fluido **rico em proteína** (>3 g/dL). Transudato: vazamento por **aumento de pressão hidrostática** (veias congestionadas) sem permeabilidade aumentada. Resultado: fluido **pobre em proteína** (<3 g/dL). Comum: ambos têm vazamento. Diferença: exsudato é ativo (sinal inflamatório), transudato é passivo (física dos fluidos). Clinicamente, exsudato 'fica turvo' se centrifugado (fibrina), transudato fica limpo.",
       "nivel_alvo": 5,
-      "tags": ["conceito", "diferenciação"]
+      "tags": [
+        "conceito",
+        "diferenciação"
+      ]
     },
     {
       "tipo": "contrafactual",
       "pergunta": "Se o corpo não conseguisse sintetizar **prostaglandinas** a partir de ácido araquidônico (bloqueio de COX-2), o que aconteceria com a inflamação aguda?",
       "resposta": "Inflamação inicialmente exagerada: histamina e bradicinina ainda funcionam (primeiros minutos). Mas sem PG, a amplificação e a coordenação caem drasticamente. Edema menos pronunciado (PG amplifica permeabilidade). Quimiotaxia menos eficiente (alguns leucotrienos ainda funcionam, mas PG6 facilita). Clinicamente: ferida inflamada é menor, menos dolorosa (PG ativa nociceptores), mas **defesa prejudicada**. É por isso que AINEs (que bloqueiam COX) reduzem sintomas mas prejudicam resolução. Corpo em equilíbrio difícil: précisa de PG para se defender, mas PG em excesso dói.",
       "nivel_alvo": 4,
-      "tags": ["fisiologia-invertida", "farmacologia"]
+      "tags": [
+        "fisiologia-invertida",
+        "farmacologia"
+      ]
     },
     {
       "tipo": "clinico",
       "pergunta": "Um paciente com apendicite aguda apresenta-se com dor localizada na fossa ilíaca direita, sensibilidade à palpação, e após 24h, abscesso localizado é visível ao ultrassom. Explique mecanisticamente como a inflamação aguda, nesse caso, conteve a disseminação da infecção.",
       "resposta": "Sequência: (1) Apêndice lesado e infectado libera PAMPs (bactérias/toxinas). (2) Macrófagos e mastócitos locais acionam cascata inflamatória. (3) Vasodilatação + edema + fibrina criam uma **barreira física** — tecido circundante (alças de intestino delgado, omento, peritônio parietal) se mobiliza e cerca a infecção. (4) Leucócitos migram para o foco, cercam a bactéria. Resultado: abscesso = **inflamação localizada vencendo a infecção**. Se não houvesse inflamação, bactérias disseminariam livremente pelo peritônio → peritonite generalizada → choque séptico. O abscesso, embora ruim, é **melhor que peritonite**. É contenção por design da natureza.",
       "nivel_alvo": 5,
-      "tags": ["patologia-integrada", "clínica"]
+      "tags": [
+        "patologia-integrada",
+        "clínica"
+      ]
     },
     {
       "tipo": "comparacao",
       "pergunta": "Compare a **marginalização leucocitária** (adesão ao endotélio) com a **extravasação** (transmigração). Qual vem primeiro? Por que a ordem importa?",
       "resposta": "Marginalização vem primeiro: leucócito se adere ao endotélio via selectinas e integrinas (minutos). Extravasação vem depois: leucócito atravessa a junção endotelial (que se afastou por sinais do leucócito). Ordem importa porque: (1) sem marginalização, célula passa rápido demais e nunca toca a parede; (2) extravasação é ativa — leucócito tem de 'pedir' saída ao endotélio via sinais de contato. Se a ordem invertesse, defesa não funcionaria. É como pedir permissão antes de entrar — biologia respeita protocolos.",
       "nivel_alvo": 3,
-      "tags": ["migração", "sequência"]
+      "tags": [
+        "migração",
+        "sequência"
+      ]
     },
     {
       "tipo": "clinico",
       "pergunta": "Anafilaxia (reação alérgica aguda) apresenta-se com colapso cardiovascular e edema laríngeo em minutos. Qual mediador é o culpado principal? Por que é tão rápido? Como se trata?",
       "resposta": "Culpado: **histamina**. Mastócitos, ativados por IgE contra alérgeno, liberam histamina pré-formada em segundos (não precisa síntese). Histamina age em H1 e H2 → vasodilatação massiva, permeabilidade vascular exagerada. Resultado: queda de PA (sangue sai dos vasos), edema de laringe (asfixia). Tão rápido porque histamina não espera síntese gênica — está pronta no mastócito. Tratamento: **epinefrina IM** (inverte vasodilatação) + anti-H1 (bloqueiam receptores). Se esperar pelas citocinas, paciente já morreu — a velocidade é o ponto crítico da anafilaxia.",
       "nivel_alvo": 5,
-      "tags": ["emergência", "clínica", "farmacologia"]
+      "tags": [
+        "emergência",
+        "clínica",
+        "farmacologia"
+      ]
     },
     {
       "tipo": "mecanismo",
       "pergunta": "Como **DAMPs** (damage-associated molecular patterns) são diferentes de **PAMPs** (pathogen-associated molecular patterns)? E por que o corpo precisa reconhecer os dois?",
       "resposta": "DAMPs: moléculas próprias do corpo (proteínas, ácidos nucleicos, ATP) que vazam quando célula morre — sinal de dano. PAMPs: moléculas estrangeiras (lipopolissacarídeo, flagelina, peptidoglicano) típicas de patógenos — sinal de invasão. Por que ambos? Porque lesão pode vir de trauma (sem infecção — apenas DAMPs) ou infecção (PAMPs presentes). Corpo precisa responder a ambas. TLRs reconhecem PAMPs. NLRP3 inflamassoma e sensores de dano reconhecem DAMPs. Resultado: inflamação é acionada por qualquer coisa que quebra barreira. É redundância de sensores para segurança — falhar em reconhecer perigo é morte.",
       "nivel_alvo": 4,
-      "tags": ["sinalização", "padrão-de-reconhecimento"]
+      "tags": [
+        "sinalização",
+        "padrão-de-reconhecimento"
+      ]
     },
     {
       "tipo": "contrafactual",
       "pergunta": "Se a inflamação aguda não pudesse ser resolvida (mediadores perpetuassem), a qual estado patológico você chegaria em semanas?",
       "resposta": "**Inflamação crônica** com sequelas: fibrose (fibroblastos estimulados continuam sintetizando colágeno mesmo após lesão original sarada), abscessos (coleta de células mortas encapsuladas), granulomas (macrófagos e linfócitos cercando antígeno resistente), angiogênese descontrolada (novos vasos crescem demais, frágeis). Órgão original perde função — tecido cicatricial não contrai, não filtra, não conduz. Exemplo: pulmão com tuberculose crônica vira fibroso, rígido, inutilizável. Resolução é tão importante quanto iniciação — falta da primeira causa dano maior que a inflamação aguda original.",
       "nivel_alvo": 4,
-      "tags": ["patologia", "consequência"]
+      "tags": [
+        "patologia",
+        "consequência"
+      ]
     }
   ],
   "casos_clinicos": [
     {
+      "caso_id": "cc-s1pat03-001",
       "titulo": "O Pancho e a Ferida que Inflamou",
-      "semestre": 1,
-      "disciplina": "patologia-geral",
-      "narrativa": "Pancho, ferreiro de 52 anos, corta a mão com uma lâmina enferrujada ao trabalhar. A ferida sangra, e após 10 minutos, já está vermelha e inchada. Nos dias seguintes, o inchaço piora, surge pus amarelado, a mão fica quente, dói para mexer. Procura o médico na 3ª semana com febre baixa e glândulas inflamadas na axila.",
-      "cascata": {
-        "causa": {
-          "evento": "Trauma lacerante com lâmina enferrujada",
-          "detalhes": "Ruptura de tecido → morte celular local + possível contaminação por Clostridium tetani (na ferrugem) e outras bactérias ambientais. DAMPs liberados (ATP, DNA de núcleo). PAMPs presentes (LPS de gram-negativas, flagelina)."
+      "apresentacao": "Pancho, ferreiro de 52 anos, corta a mão com uma lâmina enferrujada ao trabalhar. A ferida sangra, e após 10 minutos, já está vermelha e inchada. Nos dias seguintes, o inchaço piora, surge pus amarelado, a mão fica quente, dói para mexer. Procura o médico na 3ª semana com febre baixa e glândulas inflamadas na axila.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Trauma lacerante com lâmina enferrujada Ruptura de tecido → morte celular local + possível contaminação por Clostridium tetani (na ferrugem) e outras bactérias ambientais. DAMPs liberados (ATP, DNA de núcleo). PAMPs presentes (LPS de gram-negativas, flagelina)."
         },
-        "estrutura": {
-          "estrutura_afetada": "Vasos capilares e arteriolas da mão + epitélio endotelial local",
-          "mecanismo": "Células endoteliais dos vasos feridos detectam DAMPs via TLRs e NLRPs. Macrófagos teciduais ativados. Síntese de TNF-alfa, IL-1, IL-8 iniciada. Histamina pré-formada liberada por mastócitos."
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Vasos capilares e arteriolas da mão + epitélio endotelial local Células endoteliais dos vasos feridos detectam DAMPs via TLRs e NLRPs. Macrófagos teciduais ativados. Síntese de TNF-alfa, IL-1, IL-8 iniciada. Histamina pré-formada liberada por mastócitos."
         },
-        "disfuncao": {
-          "fisiopatologia": "Vasodilatação massiva (primeiros 10-30 min) → edema (horas) → migração de neutrófilos (horas) → acúmulo de pus (dias). Permeabilidade vascular aumentada permite que fluido rico em complemento, Ig, fibrinogênio vaze. Fibrinogênio coagula em fibrina, criando barreira mecânica. Neutrófilos fagocitam bactérias, morrem, acumulam (pus).",
-          "mecanismo_molecular": "Cascata: TLR → NF-κB → síntese de PG e LT → amplificação de quimiotaxia. Complemento ativado (C3a, C5a gerados) reforça sinal. Bradicinina ativa nociceptores → dor."
+        {
+          "etapa": "Disfunção",
+          "descricao": "Vasodilatação massiva (primeiros 10-30 min) → edema (horas) → migração de neutrófilos (horas) → acúmulo de pus (dias). Permeabilidade vascular aumentada permite que fluido rico em complemento, Ig, fibrinogênio vaze. Fibrinogênio coagula em fibrina, criando barreira mecânica. Neutrófilos fagocitam bactérias, morrem, acumulam (pus). Cascata: TLR → NF-κB → síntese de PG e LT → amplificação de quimiotaxia. Complemento ativado (C3a, C5a gerados) reforça sinal. Bradicinina ativa nociceptores → dor."
         },
-        "sintoma": {
-          "queixa_clinica": "Dor intensa, vermelhidão, inchaço, calor (rubor, tumor, calor — sinais de Celsus). Pus formado visualmente. Febre baixa por TNF-alfa sistêmico. Linfadenopatia (axilar) por antígeno drenando para linfonodo.",
-          "sinais_objetivos": "Ao exame: mão edemaciada, vermelha, quente. Crepitação (ar no tecido) ausente — não é gangrena gasosa (que seria Clostridium perfringens). Pus drenável (bom prognóstico). Gânglios axilares aumentados (reação linfocitária a antígeno)."
+        {
+          "etapa": "Sintoma",
+          "descricao": "Dor intensa, vermelhidão, inchaço, calor (rubor, tumor, calor — sinais de Celsus). Pus formado visualmente. Febre baixa por TNF-alfa sistêmico. Linfadenopatia (axilar) por antígeno drenando para linfonodo. Ao exame: mão edemaciada, vermelha, quente. Crepitação (ar no tecido) ausente — não é gangrena gasosa (que seria Clostridium perfringens). Pus drenável (bom prognóstico). Gânglios axilares aumentados (reação linfocitária a antígeno)."
         },
-        "consequencia": {
-          "desfecho": "Com drenagem e antibiótico (se houve contaminação): inflamação aguda resolve em 2-4 semanas. Cicatriz funcional permanece. Sem drenagem: abscesso encapsulado ou disseminação (celulite → bacteremia → sepse — mau prognóstico). Complicação tetânica possível se Pancho não estava vacinado (neurotoxina, paralisia, morte).",
-          "nocoes_clinicas": "Lição 1: inflamação aguda é defesa — deixar drenar (pus) é terapêutico, não esconder. Lição 2: ferida com bactéria ambiental (ferrugem) exige profilaxia tetânica. Lição 3: febre e linfadenopatia mostram que inflamação não é local — citocinas e antígenos se disseminam."
+        {
+          "etapa": "Consequência",
+          "descricao": "Com drenagem e antibiótico (se houve contaminação): inflamação aguda resolve em 2-4 semanas. Cicatriz funcional permanece. Sem drenagem: abscesso encapsulado ou disseminação (celulite → bacteremia → sepse — mau prognóstico). Complicação tetânica possível se Pancho não estava vacinado (neurotoxina, paralisia, morte). Lição 1: inflamação aguda é defesa — deixar drenar (pus) é terapêutico, não esconder. Lição 2: ferida com bactéria ambiental (ferrugem) exige profilaxia tetânica. Lição 3: febre e linfadenopatia mostram que inflamação não é local — citocinas e antígenos se disseminam."
         }
-      }
+      ],
+      "conexao_com_bloco": "O caso percorre as fases clássicas da inflamação aguda estudadas neste bloco (vasodilatação, aumento de permeabilidade, quimiotaxia de neutrófilos, formação de pus) e mostra por que os mediadores químicos (histamina, prostaglandinas, citocinas) produzem cada sinal cardinal de Celsus.",
+      "disciplinas_relacionadas": [
+        "Patologia Geral",
+        "Cirurgia",
+        "Infectologia"
+      ],
+      "diagnostico_revelado": "Inflamação aguda com formação de abscesso por contaminação de ferida traumática",
+      "tratamento_resumido": "Drenagem do abscesso, profilaxia antitetânica (ferida contaminada por objeto enferrujado) e antibioticoterapia se houver sinais de disseminação sistêmica."
     }
   ]
 }

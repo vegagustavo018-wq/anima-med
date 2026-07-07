@@ -4,49 +4,211 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Rastreamento do Câncer de Colo — Citologia e Teste de HPV",
+    "titulo": "Rastreamento do Cancer de Colo - Citologia e Teste de HPV",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "colo-uterino-hpv",
+      "diagnostico",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Papanicolaou, coleta, faixa etária e periodicidade; nomenclatura Bethesda",
-  "narrativa": [],
+  "resumo_conciso": "Rastreamento cervical usa citologia e/ou teste de HPV para detectar lesões precursoras. Faixa etária, intervalo e método variam por diretriz, mas o alvo é reduzir câncer invasivo e morte.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Rastreamento de câncer de colo é prevenção secundária: busca lesões precursoras em pessoas assintomáticas antes que virem câncer invasivo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Citologia de Papanicolaou avalia células descamadas do colo e classifica alterações pelo sistema Bethesda. Teste de HPV detecta DNA ou RNA de tipos de alto risco, aumentando sensibilidade para risco futuro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Diretrizes variam entre países. Em geral, pessoas muito jovens não são rastreadas rotineiramente porque HPV é comum e transitório; a faixa adulta tem intervalos definidos por citologia, teste primário de HPV ou coteste."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma coleta adequada precisa visualizar o colo, usar espéculo, evitar lubrificante excessivo, amostrar ectocolo e endocolo/zona de transformação e identificar corretamente a lâmina ou meio líquido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Resultado alterado não significa câncer. ASC-US, LSIL, HSIL, ASC-H, AGC e HPV positivo são marcadores de risco que orientam repetição, teste complementar, colposcopia ou tratamento conforme algoritmo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imunossupressão, HIV, história de lesão de alto grau, exposição ao dietilestilbestrol e seguimento pós-tratamento mudam o risco e podem mudar periodicidade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O rastreamento também depende de sistema: convocar, registrar, garantir retorno, comunicar resultado em linguagem clara e não perder pacientes com exames alterados."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-06-040",
+        "titulo": "HIV e Outras ISTs na Saude da Mulher",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-07-006",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Vacinacao contra o HPV - Prevencao Primaria",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Modulo 8 - Cancer Ginecologico",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-06-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Cervicites e Uretrites - Gonorreia e Clamidia"
+      },
+      {
+        "bloco_id": "s7-go1-06-021",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Ulceras Genitais - Abordagem Sindromica"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-07-004-fc-01",
+      "pergunta": "Qual é o objetivo do rastreamento cervical?",
+      "resposta": "Detectar lesões precursoras antes de câncer invasivo.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-004-fc-02",
+      "pergunta": "O que a citologia avalia?",
+      "resposta": "Alterações celulares descamadas do colo, classificadas pelo sistema Bethesda.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-004-fc-03",
+      "pergunta": "O que o teste de HPV avalia?",
+      "resposta": "Presença de HPV de alto risco, marcador de risco para lesão cervical.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-004-fc-04",
+      "pergunta": "Resultado alterado significa câncer?",
+      "resposta": "Não. Significa risco que precisa de conduta conforme algoritmo.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-07-004-cc-01",
+      "titulo": "HPV positivo e citologia normal",
+      "apresentacao": "Mulher de 35 anos tem HPV alto risco positivo com citologia negativa.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Rastreamento cervical usa citologia e/ou teste de HPV para detectar lesões precursoras."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Rastreamento do Cancer de Colo - Citologia e Teste de HPV, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Rastreamento cervical usa citologia e/ou teste de HPV para detectar lesões precursoras. Faixa etária, intervalo e método variam por diretriz, mas o alvo é reduzir câncer invasivo e morte."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 35 anos tem HPV alto risco positivo com citologia negativa."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual raciocínio? Há risco aumentado por HPV persistente; conduta depende de genotipagem, histórico e diretriz, não de pânico por câncer imediato."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Há risco aumentado por HPV persistente; conduta depende de genotipagem, histórico e diretriz, não de pânico por câncer imediato.",
+      "tratamento_resumido": "Há risco aumentado por HPV persistente; conduta depende de genotipagem, histórico e diretriz, não de pânico por câncer imediato."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Fluxo de rastreamento com citologia, teste de HPV, resultados Bethesda, colposcopia e seguimento.",
+        "alt": "Ilustracao educacional para Rastreamento do Cancer de Colo - Citologia e Teste de HPV"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC - Cervical Cancer Screening",
+      "url": "https://www.cdc.gov/cervical-cancer/screening/index.html",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Human Papillomavirus Infection",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/hpv-cancer.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "ASCCP Risk-Based Management Consensus Guidelines",
+      "url": "https://www.asccp.org/management-guidelines",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "diagnostico",
     "conduta"

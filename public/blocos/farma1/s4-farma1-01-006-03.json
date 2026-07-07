@@ -5,48 +5,381 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Cinética de Primeira Ordem x Ordem Zero",
+    "subtitulo": "Por que dobrar a dose de alguns fármacos dobra o efeito — e de outros pode intoxicar o paciente?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "cinetica-de-eliminacao",
+      "ordem-zero",
+      "primeira-ordem",
+      "saturacao-enzimatica",
+      "fenitoina",
+      "etanol",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Proporcionalidade x saturação; etanol/fenitoína; risco de acúmulo",
-  "narrativa": [],
+  "resumo_conciso": "A maioria dos fármacos é eliminada por cinética de primeira ordem: a cada unidade de tempo, uma fração constante da quantidade presente desaparece, porque o sistema de eliminação tem capacidade de sobra e nunca opera no limite. Mas quando a dose de um fármaco se aproxima da capacidade máxima da enzima que o metaboliza, o sistema satura — passa a eliminar sempre a mesma quantidade absoluta por unidade de tempo, não mais uma fração, porque todas as moléculas de enzima já estão ocupadas. Essa mudança de regime, de proporcional para saturado, é o que torna o etanol e a fenitoína casos de estudo obrigatórios: em doses terapêuticas usuais, a fenitoína já opera perto da saturação, e um pequeno aumento de dose pode multiplicar a concentração plasmática de forma desproporcional, levando à intoxicação. Reconhecer em qual regime cinético um fármaco está — e a que distância da saturação ele opera — é o que separa um ajuste de dose seguro de um erro de prescrição perigoso.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior desta família, a farmacocinética virou número: meia-vida, clearance, volume de distribuição. Mas há uma pergunta anterior a qualquer desses cálculos, e que decide se as fórmulas de primeira ordem — as mais usadas em toda a farmacologia — sequer se aplicam a um fármaco específico: a velocidade de eliminação é sempre proporcional à quantidade de fármaco presente, ou existe um teto?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: o corpo elimina fármacos com máquinas que têm capacidade finita"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A maior parte da eliminação de fármacos depende de proteínas — enzimas hepáticas, transportadores renais — que processam uma molécula de cada vez, em sítios ativos limitados em número. Enquanto a quantidade de fármaco no sangue for pequena comparada ao número de sítios disponíveis, cada aumento de concentração encontra proteína livre esperando para trabalhar, e o sistema responde proporcionalmente: dobrar a concentração dobra a quantidade eliminada por unidade de tempo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema aparece quando a dose administrada se aproxima da capacidade total dessas proteínas. Se todos os sítios ativos já estão ocupados processando fármaco, aumentar ainda mais a concentração não acelera nada — a maquinaria já trabalha no seu limite físico. A partir desse ponto, a quantidade eliminada por unidade de tempo deixa de crescer, e passa a ser praticamente fixa, um valor absoluto e não mais uma fração. É exatamente aí que mora o perigo: o médico que raciocina como se a proporcionalidade valesse sempre pode dobrar uma dose esperando dobrar o efeito, e receber, em vez disso, um acúmulo desproporcional e uma intoxicação."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema é que as enzimas e transportadores que eliminam fármacos têm número finito de sítios ativos. Enquanto sobra capacidade, a eliminação é proporcional. Quando a capacidade se esgota, a eliminação satura — e deixa de ser proporcional."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, em princípio"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacocinética resolve esse problema reconhecendo dois regimes distintos de eliminação, e não um só. No regime mais comum, a velocidade de eliminação é proporcional à concentração presente — a cada intervalo de tempo, uma fração fixa (não uma quantidade fixa) do fármaco desaparece. É esse regime que permite calcular uma meia-vida constante, porque uma fração constante de uma quantidade cada vez menor também vai diminuindo, e o tempo para cair pela metade permanece sempre o mesmo, qualquer que seja a concentração de partida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No outro regime, atingido quando a concentração ultrapassa a capacidade das enzimas ou transportadores envolvidos, a velocidade de eliminação deixa de depender da concentração e passa a ser constante em valor absoluto — o sistema elimina sempre a mesma quantidade de fármaco por unidade de tempo, porque está processando no máximo da sua capacidade, não importa quanto mais fármaco exista esperando na fila. Nesse regime, não existe mais uma meia-vida fixa: o tempo para eliminar metade de uma dose alta é desproporcionalmente maior do que o tempo para eliminar metade de uma dose baixa."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Dois regimes de eliminação: **proporcional à concentração** (quando sobra capacidade enzimática) e **constante, no limite da capacidade** (quando a enzima está saturada). O mesmo fármaco pode estar num regime em dose baixa e no outro em dose alta."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse fenômeno"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A base é a mesma cinética enzimática de Michaelis-Menten estudada em bioquímica: a velocidade de uma reação catalisada por enzima depende da concentração do substrato até um ponto, além do qual satura, porque a enzima já está trabalhando no seu ritmo máximo (Vmáx). Aplicada à eliminação de fármacos, essa mesma equação descreve como a velocidade de metabolismo ou de transporte renal se comporta em função da concentração plasmática do fármaco, que funciona aqui como o substrato."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando a concentração do fármaco é muito menor que a constante de Michaelis (Km) daquela enzima — o valor de concentração no qual a enzima já opera na metade da sua velocidade máxima —, a equação se simplifica matematicamente e se comporta como se a eliminação fosse proporcional à concentração: é a cinética de primeira ordem, a regra da imensa maioria dos fármacos em uso clínico. Quando a concentração se aproxima ou ultrapassa esse Km, a equação se aproxima do outro extremo, no qual a velocidade satura em Vmáx e deixa de depender da concentração: é a cinética de ordem zero."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] O nome \"ordem zero\" e \"primeira ordem\" vem da matemática das equações diferenciais que descrevem essas velocidades — a ordem da reação em relação à concentração do fármaco (expoente zero ou um) — e não tem relação com a ordem cronológica dos eventos farmacocinéticos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona: etanol e fenitoína como exemplos reais"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O etanol é o exemplo clássico de cinética de ordem zero em concentrações usuais de consumo social e de intoxicação. A enzima álcool-desidrogenase hepática satura em concentrações relativamente baixas de etanol — o corpo elimina, em média, uma quantidade fixa por hora (algo em torno de 7 a 10 g/hora em um adulto, variando por peso e genética), praticamente independente de quanto álcool ainda esteja circulando. É por isso que a eliminação do álcool não segue a regra da meia-vida constante: dobrar a alcoolemia não reduz o tempo necessário para voltar à sobriedade na mesma proporção — o corpo continua eliminando a mesma quantidade absoluta por hora, e o tempo total de eliminação cresce de forma praticamente linear com a dose, não exponencial."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Por que a fenitoína é perigosa perto da dose terapêutica máxima",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Metabolismo dependente de enzima saturável",
+          "explicacao": "A fenitoína é metabolizada no fígado pela enzima CYP2C9 (com contribuição da CYP2C19), que a hidroxila para permitir eliminação. Essa enzima tem um Km que, para a fenitoína, está muito próximo das concentrações plasmáticas terapêuticas usuais (cerca de 10 a 20 microgramas/mL)."
+        },
+        {
+          "numero": 2,
+          "titulo": "Em dose baixa, ainda há proporcionalidade",
+          "explicacao": "Em concentrações bem abaixo da faixa terapêutica, a fenitoína ainda se comporta de modo aproximadamente proporcional: aumentar a dose aumenta a concentração de forma previsível, porque a enzima ainda tem sítios livres."
+        },
+        {
+          "numero": 3,
+          "titulo": "Perto do topo da faixa terapêutica, a enzima satura",
+          "explicacao": "Conforme a concentração se aproxima do limite superior da janela terapêutica, uma fração cada vez maior das moléculas de CYP2C9 já está ocupada metabolizando fenitoína. A velocidade de eliminação deixa de crescer proporcionalmente e se aproxima do seu teto (Vmáx)."
+        },
+        {
+          "numero": 4,
+          "titulo": "Pequeno aumento de dose, grande salto de concentração",
+          "explicacao": "Nessa região saturada, um incremento pequeno na dose diária (por exemplo, de 300 para 400 mg) pode produzir um aumento desproporcionalmente grande na concentração plasmática de equilíbrio, porque o sistema de eliminação já não consegue absorver o excedente na mesma proporção. É esse salto não linear que empurra o paciente da faixa terapêutica para a faixa tóxica sem aviso prévio proporcional."
+        },
+        {
+          "numero": 5,
+          "titulo": "Consequência clínica",
+          "explicacao": "Ajustes de dose de fenitoína, especialmente perto do topo da faixa terapêutica, precisam ser feitos em incrementos pequenos e com monitorização de níveis séricos — porque o mesmo raciocínio de \"dobrar dose, dobrar efeito\" que vale para a maioria dos fármacos de primeira ordem simplesmente não vale aqui."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O padrão comum aos dois exemplos é este: nenhum dos dois fármacos nasceu \"de ordem zero\" — a ordem zero é uma propriedade da relação entre a dose usada e a capacidade da enzima envolvida. O etanol satura sua enzima em doses sociais comuns; a fenitoína satura a sua bem dentro da faixa de doses usadas na prática clínica. Muitos outros fármacos, em doses usuais, nunca chegam perto de saturar sua via de eliminação — e por isso seguem primeira ordem o tempo todo, sem que o prescritor precise sequer pensar nisso."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa distinção se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa distinção é o que decide se as fórmulas de meia-vida e clearance vistas nos outros blocos filhos desta mesma família podem ser aplicadas diretamente. Meia-vida constante, independente da dose, só existe em cinética de primeira ordem — é uma das premissas escondidas por trás daquele parâmetro. Em cinética de ordem zero, falar em \"meia-vida do etanol\" é impreciso, porque o tempo de queda pela metade muda conforme a concentração de partida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, essa mesma lógica de saturação enzimática reaparece em interações medicamentosas: quando dois fármacos competem pela mesma enzima (a mesma CYP2C9, por exemplo), um pode empurrar o outro para mais perto da saturação, mesmo sem mudança de dose. E reaparece em toxicologia, onde reconhecer que uma superdosagem colocou o metabolismo em regime saturado explica por que a eliminação de um fármaco em overdose pode ser muito mais lenta, proporcionalmente, do que a eliminação da mesma substância em dose terapêutica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "cinética de ordem zero / primeira ordem",
+      "origem": "do latim ordo (ordem, disposição), emprestado da cinética química do século XIX, combinado a zero e primeira como expoentes da equação de velocidade",
+      "significado": "a \"ordem\" de uma reação é o expoente que relaciona a velocidade da reação à concentração da substância envolvida — ordem zero significa expoente zero (velocidade independente da concentração); primeira ordem significa expoente um (velocidade diretamente proporcional à concentração)",
+      "explicacao": "O vocabulário vem diretamente da cinética química clássica, formalizada por químicos como Jacobus van 't Hoff no fim do século XIX, muito antes de existir farmacocinética como disciplina. Quando pesquisadores do século XX (como Dost, o mesmo que ajudou a consolidar a ideia de parâmetro cinético farmacológico) precisaram descrever como fármacos desaparecem do corpo, perceberam que a mesma matemática de ordens de reação química se aplicava. Tomaram emprestado o vocabulário pronto em vez de inventar um novo — outro exemplo de como a farmacocinética se apoia em ferramentas matemáticas mais antigas que ela."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚪",
+      "conteudo": "Pense numa catraca de estação de metrô com um único funcionário liberando pessoas manualmente. Quando a fila é curta, cada pessoa que chega é atendida quase na hora — o fluxo de saída acompanha, proporcionalmente, o fluxo de chegada: é a cinética de primeira ordem. Mas o funcionário tem um limite físico de quantas pessoas consegue liberar por minuto. Quando a fila fica muito longa (hora do rush), o funcionário já está trabalhando no seu ritmo máximo, e não importa quantas pessoas mais cheguem: o número de pessoas liberadas por minuto **para de crescer** e vira um valor fixo — é a cinética de ordem zero. A analogia quebra num ponto importante: a catraca não fica \"mais lenta por pessoa\" quando a fila cresce, ela continua no mesmo ritmo máximo constante; o que muda é que esse ritmo deixa de ser suficiente para acompanhar chegadas maiores, e a fila (a concentração plasmática) cresce de forma desproporcional. É exatamente esse descompasso, aplicado à fenitoína, que faz uma dose um pouco maior lotar a fila (o sangue) muito mais do que o esperado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se todas as enzimas do metabolismo hepático tivessem capacidade infinita, cinética de ordem zero existiria?",
+      "resposta": "Não. A cinética de ordem zero é, por definição, o comportamento do sistema quando a capacidade de eliminação se esgota. Com capacidade infinita, nunca haveria saturação: mesmo em doses altíssimas, sempre sobraria enzima livre para processar o excedente proporcionalmente, e todo fármaco seguiria primeira ordem para sempre. A existência da ordem zero é a evidência direta de que as enzimas do corpo são recursos finitos e biologicamente custosos — não plantas industriais com capacidade elástica. É essa finitude, e não uma peculiaridade química do etanol ou da fenitoína, a verdadeira causa raiz do fenômeno."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas curvas de eliminação lado a lado",
+      "descricao": "Gráfico duplo comparando concentração plasmática versus tempo para um fármaco de primeira ordem e um de ordem zero. À esquerda, curva de primeira ordem em escala linear mostrando decaimento exponencial suave (formato de rampa curva descendente), com marcação de meia-vida constante em intervalos iguais. À direita, curva de ordem zero mostrando decaimento linear reto (reta descendente), com anotação de que a inclinação é constante independente da concentração. Entre as duas, um pequeno esquema de enzima com sítios ativos: no gráfico da esquerda, poucos sítios ocupados (enzima com folga); no da direita, todos os sítios ocupados (enzima saturada). Legendas em português, cores distintas para cada curva, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Composição dividida em duas metades lado a lado. Metade esquerda, rotulada 'CINÉTICA DE PRIMEIRA ORDEM': gráfico de concentração plasmática (eixo Y, escala linear) versus tempo (eixo X) mostrando uma curva de decaimento exponencial suave e côncava, com marcações verticais tracejadas em intervalos iguais indicando quedas sucessivas pela metade, rotuladas 'meia-vida constante'; acima do gráfico, pequeno ícone de enzima representada como estrutura com poucos sítios ativos ocupados (poucos círculos preenchidos entre vários vazios), rotulado 'enzima com capacidade livre'. Metade direita, rotulada 'CINÉTICA DE ORDEM ZERO': gráfico similar mostrando uma reta descendente linear (não curva), com anotação 'velocidade de eliminação constante, independente da concentração'; acima, ícone de enzima com todos os sítios ativos preenchidos, rotulado 'enzima saturada (Vmáx)'. Paleta de cores suaves e distintas entre as duas metades, texto em português, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-006",
+        "titulo": "Parâmetros Cinéticos — Quantificar a Jornada (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco pressupõe já ter entendido que a farmacocinética resume a jornada do fármaco em parâmetros numéricos como meia-vida e clearance — aqui se explica a premissa escondida por trás desses parâmetros: o regime cinético (proporcional ou saturado) que os torna válidos ou não."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Monitorização terapêutica de fenitoína e ajuste fino de dose",
+        "mecanismo_conexao": "A prática de titular fenitoína em incrementos pequenos e dosar níveis séricos é a aplicação direta, à beira do leito, do conceito de saturação enzimática apresentado aqui.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Intoxicação aguda por etanol e manejo toxicológico",
+        "mecanismo_conexao": "O cálculo do tempo esperado até a sobriedade em um paciente intoxicado usa diretamente a taxa de eliminação constante (ordem zero) do etanol, em vez de uma meia-vida, para estimar a curva de queda da alcoolemia.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "bioquimica",
+        "semestre_futuro": 2,
+        "topico": "Cinética enzimática de Michaelis-Menten",
+        "mecanismo_conexao": "A saturação farmacocinética descrita aqui é a mesma equação de Michaelis-Menten estudada para qualquer enzima metabólica, aplicada especificamente ao metabolismo de fármacos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-006-03-fc01",
+      "pergunta": "Por que a maioria dos fármacos segue cinética de primeira ordem, e não de ordem zero?",
+      "resposta": "Porque, nas doses terapêuticas usuais, a concentração desses fármacos fica muito abaixo da capacidade máxima (Km) das enzimas ou transportadores que os eliminam. Havendo sempre sítios ativos livres, a velocidade de eliminação acompanha proporcionalmente a concentração presente — dobrar a concentração dobra a quantidade eliminada por unidade de tempo. A ordem zero só aparece quando a dose usada aproxima a concentração do limite de capacidade do sistema de eliminação, o que é a exceção, não a regra.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "primeira-ordem",
+        "saturacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-03-fc02",
+      "pergunta": "Explique, em etapas, por que um pequeno aumento na dose diária de fenitoína pode levar a um salto desproporcional na concentração plasmática.",
+      "resposta": "1) A fenitoína é metabolizada pela CYP2C9, cujo Km está próximo das concentrações terapêuticas usuais do fármaco. 2) Em doses baixas, ainda há sítios enzimáticos livres e a eliminação é aproximadamente proporcional. 3) Perto do topo da faixa terapêutica, a maior parte da enzima já está ocupada processando fenitoína, aproximando a velocidade de eliminação do seu teto (Vmáx). 4) Um pequeno aumento de dose nessa região satura ainda mais o sistema, e a concentração de equilíbrio sobe de forma desproporcional ao aumento de dose, porque o excedente não consegue ser eliminado na mesma proporção. 5) Esse salto não linear pode empurrar o paciente da faixa terapêutica para a faixa tóxica com um ajuste de dose aparentemente pequeno.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "fenitoina",
+        "saturacao-enzimatica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-03-fc03",
+      "pergunta": "Se a álcool-desidrogenase hepática tivesse capacidade muito maior do que a atualmente existente, o etanol ainda seria eliminado por cinética de ordem zero em doses sociais comuns?",
+      "resposta": "Não necessariamente. A cinética de ordem zero do etanol existe porque a concentração alcançada em doses sociais e de intoxicação já se aproxima ou ultrapassa a capacidade (Vmáx) da álcool-desidrogenase disponível. Se essa capacidade enzimática fosse muito maior, as mesmas doses ficariam bem abaixo do limite de saturação, e a eliminação passaria a se comportar como primeira ordem — proporcional à concentração, com meia-vida constante. Isso confirma que ordem zero não é uma propriedade fixa do etanol como molécula, mas uma consequência da relação entre a dose usada e a capacidade real da enzima que o corpo tem disponível.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "etanol",
+        "ordem-zero"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-03-fc04",
+      "pergunta": "Os termos 'ordem zero' e 'primeira ordem' vêm de onde, e o que o expoente da equação de velocidade representa em cada caso?",
+      "resposta": "Os termos vêm da cinética química clássica do século XIX, muito antes de existir farmacocinética como campo. A 'ordem' de uma reação é o expoente que relaciona a velocidade da reação à concentração da substância envolvida. Ordem zero significa expoente zero: a velocidade não depende da concentração (fica constante, no teto de capacidade). Primeira ordem significa expoente um: a velocidade é diretamente proporcional à concentração. Farmacocinetistas do século XX emprestaram esse vocabulário pronto da química para descrever como fármacos desaparecem do corpo.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "etimologia",
+        "ordem-de-reacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-03-fc05",
+      "pergunta": "Por que dizer 'a meia-vida do etanol é X horas' é uma afirmação imprecisa?",
+      "resposta": "Porque meia-vida constante é uma propriedade exclusiva da cinética de primeira ordem, na qual uma fração fixa da quantidade presente é eliminada por unidade de tempo, fazendo o tempo de queda pela metade ser sempre o mesmo, qualquer que seja a concentração inicial. O etanol, em concentrações usuais, segue cinética de ordem zero: a quantidade eliminada por unidade de tempo é fixa em valor absoluto, não em fração. Isso faz o tempo necessário para cair pela metade variar conforme a concentração de partida — quanto maior a alcoolemia inicial, proporcionalmente mais tempo (não o mesmo tempo) é necessário. Por isso, para o etanol, é mais correto falar em uma taxa de eliminação constante (gramas por hora) do que em meia-vida.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "etanol",
+        "meia-vida",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-03-fc06",
+      "pergunta": "Um paciente em uso crônico de fenitoína tem sua dose aumentada de 300 para 350 mg/dia e, dias depois, apresenta nistagmo, ataxia e sonolência — sinais clássicos de intoxicação por fenitoína. O nível sérico, antes em 18 microgramas/mL, subiu para 32 microgramas/mL. Como a cinética de ordem zero explica esse salto desproporcional a partir de um aumento de dose de menos de 17%?",
+      "resposta": "A concentração prévia (18 microgramas/mL) já estava perto do topo da faixa terapêutica da fenitoína, região em que a enzima CYP2C9 responsável pelo seu metabolismo já opera perto da saturação (Vmáx). Nessa região, pequenos aumentos de dose não são absorvidos proporcionalmente pelo sistema de eliminação, porque a maior parte dos sítios enzimáticos já está ocupada. O acréscimo de apenas 50 mg/dia foi suficiente para empurrar a enzima ainda mais perto do seu limite de capacidade, fazendo a concentração de equilíbrio saltar de forma não linear — quase dobrando — em vez de subir na mesma proporção do aumento de dose. Esse é exatamente o padrão de intoxicação por fenitoína descrito na literatura: perto do teto da janela terapêutica, incrementos de dose devem ser pequenos e acompanhados de dosagem sérica, porque o comportamento deixou de ser previsível pela regra simples de proporcionalidade da primeira ordem.",
+      "tipo": "clinico",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "farmacocinetica",
+        "fenitoina",
+        "intoxicacao",
+        "caso-clinico"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-006-03-caso01",
+      "titulo": "Ataxia e diplopia após pequeno ajuste de dose de fenitoína",
+      "apresentacao": "Mulher de 34 anos, em tratamento para epilepsia focal há 3 anos com fenitoína 300 mg/dia, mantinha bom controle de crises, mas relatou uma crise isolada há duas semanas. O neurologista optou por aumentar a dose para 350 mg/dia. Dez dias depois, a paciente retorna ao pronto-socorro trazida pelo marido, relatando visão dupla, tontura e marcha instável, iniciadas há 3 dias. Ao exame: nistagmo horizontal bilateral, ataxia de marcha, disartria leve, sem rebaixamento do nível de consciência. Nega uso de álcool ou outras substâncias. Solicitada dosagem sérica de fenitoína: resultado de 31 microgramas/mL (faixa terapêutica de referência: 10 a 20 microgramas/mL).",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Aumento de dose de fenitoína (de 300 para 350 mg/dia, um incremento de menos de 17%) numa paciente cuja concentração sérica prévia já estava próxima do topo da faixa terapêutica, região em que a enzima CYP2C9 hepática já opera perto da sua capacidade máxima de metabolização."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O sistema enzimático CYP2C9 (com contribuição da CYP2C19) satura: praticamente todos os sítios ativos disponíveis já estão ocupados processando fenitoína, de modo que a fração adicional introduzida pelo aumento de dose não encontra capacidade de eliminação proporcional disponível."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A cinética deixa de se comportar como primeira ordem (proporcional) e se aproxima da ordem zero (saturada). A concentração de equilíbrio sobe de forma não linear e desproporcional ao pequeno aumento de dose, ultrapassando o limite superior da janela terapêutica e entrando em faixa tóxica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Nistagmo, ataxia, diplopia e disartria são os sinais clássicos, dose-dependentes, de intoxicação por fenitoína, refletindo toxicidade cerebelar e do sistema vestíbulo-ocular em concentrações séricas acima da faixa terapêutica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Conduta: suspensão temporária ou redução da dose de fenitoína, hidratação e monitorização clínica até resolução dos sintomas, com reintrodução posterior em dose ajustada e incrementos ainda menores, sempre acompanhados de dosagem sérica seriada. Sem essa correção, o risco evolui para sedação importante, incoordenação grave e maior propensão a quedas."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática clínica, exatamente o mecanismo central deste bloco: perto do topo da janela terapêutica, a fenitoína já opera próxima da saturação da CYP2C9, e um pequeno aumento percentual de dose pode produzir um salto desproporcional na concentração plasmática — o oposto do que a intuição de proporcionalidade da cinética de primeira ordem levaria a esperar. É esse descompasso entre 'dose pequena a mais' e 'efeito grande a mais' que torna a fenitoína um exemplo canônico de cinética saturável em provas e na prática.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "neurologia",
+        "clinica",
+        "toxicologia"
+      ],
+      "diagnostico_revelado": "Intoxicação por fenitoína decorrente de cinética de eliminação saturável (ordem zero) próxima ao topo da faixa terapêutica.",
+      "tratamento_resumido": "Redução ou suspensão temporária da dose, monitorização clínica e dosagem sérica seriada, com reintrodução posterior em incrementos pequenos e cautelosos, sempre orientada por nível sérico e não apenas pela dose administrada."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-006-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics II: Distribution and Elimination of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
   "_lentes": [
     "farmacocinetica",
     "molecular"

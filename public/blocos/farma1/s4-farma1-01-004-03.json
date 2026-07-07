@@ -5,50 +5,345 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Indução e Inibição Enzimática",
+    "subtitulo": "Como um segundo remédio consegue tornar o primeiro ineficaz ou tóxico sem mudar a dose de nenhum dos dois?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "biotransformacao",
+      "metabolismo-de-farmacos",
+      "cyp450",
+      "interacoes-medicamentosas",
+      "farmacocinetica",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Indutores/inibidores CYP; base molecular das interações medicamentosas",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior mostrou que o CYP450 é uma alfândega de guichês especializados que torna fármacos lipofílicos elimináveis. Mas essa alfândega não trabalha em ritmo fixo: a quantidade de enzima disponível em cada guichê pode subir ou cair drasticamente conforme o que mais está circulando no sangue, e essa variação é a causa mais comum de interação medicamentosa por via farmacocinética. Um fármaco indutor aumenta, ao longo de dias, a transcrição e a síntese de determinada isoforma de CYP — mais guichês abertos, metabolismo mais rápido de tudo que passa por ali. Um fármaco inibidor bloqueia, em questão de horas, a atividade catalítica da enzima já existente — geralmente ocupando o próprio bolso catalítico (inibição competitiva) ou danificando a enzima de forma irreversível (inibição não competitiva/irreversível) — sem esperar por síntese nova. Os dois mecanismos alteram a concentração plasmática de qualquer outro fármaco que dependa da mesma isoforma, produzindo falha terapêutica (quando o indutor acelera demais a eliminação) ou toxicidade (quando o inibidor trava a eliminação e o fármaco se acumula). É esse par de mecanismos — indução lenta e gradual, inibição rápida e direta — que explica exemplos clássicos como a rifampicina reduzindo a eficácia de anticoncepcionais orais e o suco de toranja potencializando o efeito de certos anti-hipertensivos. Reconhecer indução e inibição como fenômenos com cinéticas e mecanismos moleculares distintos é o que permite ao médico prever — e não apenas lamentar depois — a maioria das interações medicamentosas por via metabólica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior deixou uma pista aberta: a CYP3A4 sozinha processa entre 30% e 50% dos fármacos usados na clínica, e por isso é 'o ponto de maior alavancagem para interações medicamentosas'. Chegou a hora de abrir essa alavancagem e entender exatamente como ela funciona — porque a resposta não é um mecanismo único, são dois, com lógicas opostas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: a quantidade e a atividade da enzima não são fixas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Até aqui, o CYP450 foi descrito como se cada isoforma tivesse uma quantidade e uma velocidade catalítica constantes — um número fixo de guichês, sempre igual. Isso não é verdade. O fígado é um órgão metabolicamente responsivo: ele ajusta a quantidade de enzima disponível conforme o que precisa processar, e a atividade catalítica de uma enzima já pronta pode ser bloqueada por outra molécula presente no mesmo momento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso cria um problema direto para qualquer paciente em uso de mais de um fármaco ao mesmo tempo — a regra, não a exceção, na prática clínica real. Se o fármaco A muda a quantidade ou a atividade da mesma CYP que metaboliza o fármaco B, a concentração plasmática de B muda, mesmo que a dose prescrita de B continue exatamente igual. O paciente pode passar de 'dose terapêutica' para 'dose ineficaz' ou 'dose tóxica' sem que ninguém tenha mexido na caneta de prescrição."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: a mesma enzima que metaboliza um fármaco pode ter sua quantidade ou sua atividade alterada por outro fármaco tomado ao mesmo tempo. É essa interferência de um fármaco sobre o metabolismo do outro que os dois mecanismos a seguir explicam."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Dois mecanismos, duas velocidades"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A indução enzimática aumenta a quantidade de enzima. Certas moléculas, ao entrarem repetidamente na célula hepática, ativam receptores nucleares (como o PXR — receptor X de pregnano) que funcionam como sensores de sobrecarga química. Uma vez ativados, esses receptores migram ao núcleo e aumentam a transcrição do gene da CYP correspondente, elevando a produção da enzima. É literalmente construir mais guichês na alfândega. Como depende de transcrever DNA e sintetizar proteína nova, esse processo é lento: leva dias a semanas para atingir o efeito pleno, e leva dias a semanas para reverter depois que o indutor é suspenso, porque o excesso de enzima já sintetizada precisa ser degradado aos poucos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A inibição enzimática, ao contrário, não mexe na quantidade de enzima — mexe na sua capacidade de trabalhar. A forma mais comum é a inibição competitiva direta: o fármaco inibidor tem afinidade pelo mesmo bolso catalítico do substrato normal e o ocupa, impedindo fisicamente que o substrato original se ligue. Como não depende de sintetizar nem destruir proteína, esse bloqueio começa a valer assim que a concentração do inibidor no fígado é suficiente — em horas, não em dias. Existe também a inibição não competitiva (o inibidor se liga a um sítio diferente do bolso catalítico, mas ainda assim distorce a enzima e reduz sua atividade) e a inibição irreversível, em que o inibidor se liga covalentemente à enzima e a inativa de forma permanente — nesse último caso, a atividade só volta quando o fígado sintetiza enzima nova, o que reintroduz um atraso de dias, mesmo a inibição tendo mecanismo diferente da indução."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Indução = mais enzima, efeito lento (dias a semanas), porque depende de transcrição e síntese proteica nova. Inibição = mesma quantidade de enzima com menos atividade (competitiva/não competitiva) ou enzima destruída (irreversível), efeito rápido na maioria dos casos (horas), porque não depende de sintetizar nada novo — exceto na inibição irreversível, que também exige síntese de enzima nova para reverter."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em movimento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere uma mulher em uso estável de anticoncepcional oral combinado, cujo componente estrogênico é metabolizado pela CYP3A4, que inicia rifampicina para tratamento de tuberculose."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Rifampicina induzindo falha do anticoncepcional oral",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Exposição repetida ao indutor",
+          "explicacao": "A rifampicina, tomada diariamente, ativa o receptor nuclear PXR dentro dos hepatócitos a cada dose."
+        },
+        {
+          "numero": 2,
+          "titulo": "Aumento da transcrição gênica",
+          "explicacao": "O PXR ativado aumenta a transcrição do gene da CYP3A4, elevando progressivamente a quantidade de enzima sintetizada ao longo de dias."
+        },
+        {
+          "numero": 3,
+          "titulo": "Mais guichês abertos",
+          "explicacao": "Com mais moléculas de CYP3A4 disponíveis no retículo endoplasmático liso, a capacidade hepática de metabolizar qualquer substrato dessa isoforma aumenta — incluindo o componente estrogênico do anticoncepcional."
+        },
+        {
+          "numero": 4,
+          "titulo": "Queda da concentração plasmática do estrogênio",
+          "explicacao": "O estrogênio é biotransformado e eliminado mais rápido do que o esquema posológico do anticoncepcional previu, e sua concentração plasmática cai abaixo do limiar necessário para suprimir a ovulação."
+        },
+        {
+          "numero": 5,
+          "titulo": "Falha contraceptiva",
+          "explicacao": "Sem indução, a dose padrão do anticoncepcional seria suficiente. Com a CYP3A4 induzida, a mesma dose já não é — e o risco de gravidez não planejada aumenta, sem que a paciente tenha esquecido nenhum comprimido."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O caso espelhado, e mais rápido, é o do suco de toranja (grapefruit). Certos furanocumarinas presentes na fruta inibem a CYP3A4 já existente no epitélio intestinal e no fígado — não pela via da transcrição, mas ligando-se diretamente à enzima. Um paciente em uso de um bloqueador de canal de cálcio metabolizado pela CYP3A4 que passa a tomar suco de toranja no café da manhã pode ter, em poucas horas, uma concentração plasmática do fármaco muito mais alta do que a prevista pela dose prescrita, com risco de hipotensão sintomática. Não houve mudança de dose, não houve erro de prescrição — houve inibição da mesma enzima que deveria eliminar o fármaco no ritmo esperado."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Um paciente idoso, em uso crônico de varfarina bem ajustada (RNI estável), inicia fenobarbital para controle de crises convulsivas. Semanas depois, o RNI cai abaixo do alvo terapêutico e o paciente apresenta sinais de trombose venosa. O fenobarbital é um indutor enzimático amplo, incluindo da CYP2C9, que metaboliza a varfarina — a indução acelerou a eliminação da varfarina, reduzindo sua concentração plasmática e seu efeito anticoagulante, apesar de a dose prescrita não ter mudado. O inverso também ocorre na prática: ao suspender um indutor em paciente com dose já ajustada para compensá-lo, o risco passa a ser de superdosagem, porque a enzima extra leva semanas para ser degradada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Indução e inibição enzimática são o mecanismo molecular por trás da categoria clínica mais ampla das interações farmacocinéticas — aquelas em que um fármaco altera a absorção, distribuição, metabolismo ou excreção de outro, em vez de competir diretamente pelo mesmo receptor farmacológico. Enquanto o bloco anterior descreveu a estrutura do sistema CYP450 (as famílias, as isoformas, o ciclo catalítico), este bloco descreve o que faz esse sistema variar de um dia para o outro num mesmo paciente — e é essa variação que a farmacologia clínica precisa antecipar antes de associar dois medicamentos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática, reconhecer se um fármaco novo é indutor ou inibidor de uma CYP relevante para os medicamentos já em uso do paciente é parte da checagem de segurança em qualquer prescrição de polifarmácia — e é também a base racional por trás de tabelas de interação medicamentosa e de alertas automáticos em sistemas de prescrição eletrônica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "indução / inibição enzimática",
+      "origem": "do latim inducere (conduzir para dentro, introduzir) e inhibere (reter, conter)",
+      "significado": "'induzir' é literalmente 'trazer para dentro' — no sentido de trazer para dentro da célula um novo programa de expressão gênica; 'inibir' é 'segurar', impedir que algo aconteça",
+      "explicacao": "Os dois termos são anteriores à farmacologia molecular e foram emprestados da fisiologia geral, onde já designavam, respectivamente, o desencadeamento de um processo biológico (indução embrionária, por exemplo) e o bloqueio de uma função (inibição neural). Quando aplicados às enzimas do metabolismo de fármacos, mantiveram o sentido original: indução é o desencadeamento de mais síntese enzimática; inibição é o bloqueio da atividade já existente. A escolha dos termos reflete com precisão a diferença cinética entre os dois fenômenos — um constrói algo novo, o outro trava algo que já estava pronto."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚦",
+      "conteudo": "Retome a alfândega do bloco anterior. A indução enzimática é a alfândega contratando e treinando novos funcionários ao longo de semanas, porque percebeu um aumento sustentado no volume de bagagem — mais guichês abertos, fila andando mais rápido para todo mundo que usa aquele tipo de guichê, não só para quem trouxe a bagagem que motivou a contratação. A inibição competitiva é um funcionário específico sendo fisicamente ocupado por um passageiro que trava na sua frente e não sai do guichê — o funcionário continua lá, mas não consegue atender mais ninguém enquanto aquele passageiro insiste em ficar. A inibição irreversível é o funcionário sendo demitido no ato — o guichê fica vazio até a alfândega contratar e treinar um substituto, o que leva tempo. A analogia quebra num ponto: contratar funcionários novos (indução) é reversível com a mesma lentidão da contratação, mas um funcionário 'ocupado' por inibição competitiva volta a atender no instante em que o passageiro que o travava vai embora — não há espera nenhuma, ao contrário da metáfora de treinamento."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Indução versus inibição da CYP3A4 ao longo do tempo",
+      "descricao": "Gráfico esquemático com o eixo horizontal representando tempo em dias e o eixo vertical representando atividade metabólica da CYP3A4. Uma curva mostra a indução por rifampicina subindo lentamente ao longo de dias até um platô e caindo lentamente após a suspensão. Outra curva, em cor contrastante, mostra a inibição por suco de toranja ou cetoconazol caindo abruptamente em horas e retornando ao normal rapidamente após a suspensão. Legendas curtas indicando 'indução: efeito lento, mais enzima' e 'inibição: efeito rápido, mesma enzima bloqueada'. Fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Gráfico de linhas com eixo horizontal rotulado 'tempo (dias)' e eixo vertical rotulado 'atividade da CYP3A4'. Duas curvas distintas: uma curva em tom quente subindo suavemente ao longo de vários dias até um platô elevado, rotulada 'indução enzimática (ex: rifampicina) — mais enzima, efeito lento', com uma segunda parte da mesma curva descendo suavemente após um marcador vertical 'suspensão do indutor'. Outra curva em tom frio caindo abruptamente em poucas horas até um vale baixo, rotulada 'inibição enzimática (ex: suco de toranja, cetoconazol) — enzima bloqueada, efeito rápido', com retorno igualmente rápido ao nível basal após um marcador vertical 'suspensão do inibidor'. Linha pontilhada horizontal indicando o nível basal de atividade enzimática antes de qualquer intervenção. Legendas em português, paleta de cores consistente com o restante da série (tons quentes para indução, tons frios para inibição), alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-004",
+        "titulo": "Metabolismo (Biotransformação) — Preparar para a Saída (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já entender que o metabolismo existe para tornar fármacos lipofílicos elimináveis, e que essa transformação depende de maquinaria enzimática hepática de capacidade finita, antes de entender por que essa capacidade pode variar de paciente para paciente e de dia para dia."
+      },
+      {
+        "bloco_id": "s4-farma1-01-004-02",
+        "titulo": "O Sistema Citocromo P450 (CYP450)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já conhecer as famílias e isoformas do CYP450, especialmente a centralidade quantitativa da CYP3A4, para entender por que indução e inibição dessa isoforma específica geram o maior número de interações medicamentosas clinicamente relevantes."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-007-01",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Interações Farmacocinéticas",
+        "mecanismo_conexao": "Indução e inibição enzimática são o mecanismo molecular central das interações farmacocinéticas por via metabólica; o bloco de interações amplia o quadro para incluir também interações por absorção, distribuição (ligação proteica) e excreção, situando indução/inibição como um dos eixos, não o único.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Ajuste terapêutico em polifarmácia e falha contraceptiva por indução enzimática",
+        "mecanismo_conexao": "O caso da rifampicina reduzindo a eficácia de anticoncepcionais orais, aqui explicado em nível molecular, reaparece na prática clínica como orientação obrigatória a pacientes em tratamento de tuberculose em idade fértil.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-004-03-fc01",
+      "pergunta": "Por que a indução enzimática demora dias a semanas para produzir efeito pleno, enquanto a inibição competitiva costuma agir em horas?",
+      "resposta": "Porque a indução depende de um processo biológico lento: ativação de um receptor nuclear (como o PXR), aumento da transcrição do gene da CYP correspondente e síntese de proteína nova — etapas que consomem dias. A inibição competitiva, ao contrário, não depende de sintetizar nem destruir nenhuma proteína: o inibidor simplesmente ocupa o bolso catalítico de uma enzima que já existe, bloqueio que se estabelece assim que a concentração do inibidor no fígado é suficiente, em questão de horas.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "cyp450",
+        "inducao-enzimatica",
+        "inibicao-enzimatica",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-03-fc02",
+      "pergunta": "Explique, passo a passo, por que a rifampicina reduz a eficácia de um anticoncepcional oral combinado metabolizado pela CYP3A4.",
+      "resposta": "1) A rifampicina ativa repetidamente o receptor nuclear PXR nos hepatócitos. 2) O PXR ativado aumenta a transcrição do gene da CYP3A4. 3) Mais enzima CYP3A4 é sintetizada ao longo de dias, aumentando a capacidade hepática de metabolizar substratos dessa isoforma. 4) O componente estrogênico do anticoncepcional, substrato da CYP3A4, passa a ser eliminado mais rápido do que o esquema posológico previu. 5) A concentração plasmática do estrogênio cai abaixo do limiar necessário para suprimir a ovulação, resultando em risco de gravidez não planejada — sem que a paciente tenha errado a dose.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "cyp450",
+        "inducao-enzimatica",
+        "rifampicina",
+        "caso-clinico"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-03-fc03",
+      "pergunta": "Se um paciente estiver em dose estável de um bloqueador de canal de cálcio metabolizado pela CYP3A4 e começar a tomar suco de toranja diariamente, o que se espera da concentração plasmática do fármaco e em que prazo, comparado ao que aconteceria se ele iniciasse rifampicina em vez de toranja?",
+      "resposta": "Com suco de toranja (inibidor da CYP3A4), a concentração plasmática do fármaco tende a subir rapidamente, em questão de horas, porque a inibição bloqueia a enzima já existente sem depender de síntese nova — risco de toxicidade (ex.: hipotensão excessiva). Com rifampicina (indutor da CYP3A4), o efeito seria o oposto e mais lento: a concentração plasmática cairia ao longo de dias a semanas, conforme mais enzima fosse sintetizada, com risco de perda de eficácia terapêutica em vez de toxicidade. Mesma isoforma, direções e velocidades opostas.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "cyp450",
+        "inibicao-enzimatica",
+        "inducao-enzimatica",
+        "suco-de-toranja"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-03-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Toda inibição enzimática reverte assim que o fármaco inibidor é suspenso, no mesmo ritmo rápido em que se instalou.'",
+      "resposta": "Falso, apesar de ser verdade para o tipo mais comum. A inibição competitiva de fato reverte rapidamente: assim que a concentração do inibidor cai, ele deixa de ocupar o bolso catalítico e a enzima já existente volta a metabolizar o substrato original sem demora. Mas a inibição irreversível (quando o inibidor se liga covalentemente à enzima e a inativa permanentemente) não reverte com a suspensão do fármaco — a atividade enzimática só é restaurada quando o fígado sintetiza moléculas novas da enzima, um processo que leva dias, reintroduzindo um atraso semelhante ao da indução, apesar do mecanismo ser completamente diferente.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "cyp450",
+        "inibicao-enzimatica",
+        "inibicao-irreversivel",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-03-fc05",
+      "pergunta": "Um paciente idoso em uso crônico e bem ajustado de varfarina inicia fenobarbital para crises convulsivas e, semanas depois, apresenta trombose venosa com RNI abaixo do alvo. Explique o mecanismo farmacocinético e por que o efeito só apareceu depois de algumas semanas, não em dias.",
+      "resposta": "O fenobarbital é um indutor enzimático de amplo espectro, incluindo da CYP2C9, isoforma que metaboliza a varfarina. A indução aumenta progressivamente a quantidade de CYP2C9 disponível, acelerando a eliminação da varfarina e reduzindo sua concentração plasmática e seu efeito anticoagulante — daí o RNI abaixo do alvo e o evento trombótico, mesmo com a dose de varfarina inalterada. O efeito demora semanas porque a indução depende de transcrição gênica e síntese de proteína nova, um processo cumulativo e gradual, diferente da inibição competitiva, que age em horas.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "cyp450",
+        "inducao-enzimatica",
+        "varfarina",
+        "fenobarbital"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-004-03-caso01",
+      "titulo": "Gravidez não planejada durante tratamento de tuberculose",
+      "apresentacao": "Mulher de 27 anos, em uso estável de anticoncepcional oral combinado há três anos, inicia esquema RIPE (rifampicina, isoniazida, pirazinamida, etambutol) para tuberculose pulmonar confirmada. Não recebe orientação sobre método contraceptivo adicional. Dois meses depois, procura atendimento com atraso menstrual e teste de gravidez positivo. Refere ter tomado todos os comprimidos do anticoncepcional corretamente, sem esquecimentos.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A rifampicina, componente do esquema RIPE, é um indutor potente e amplo de isoformas do citocromo P450, incluindo a CYP3A4, que metaboliza o componente estrogênico do anticoncepcional oral."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A maquinaria enzimática hepática (CYP3A4) tem sua quantidade aumentada ao longo dos primeiros dias a semanas de uso da rifampicina, por ativação do receptor nuclear PXR e aumento da transcrição gênica."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com mais enzima disponível, o estrogênio do anticoncepcional é biotransformado e eliminado mais rapidamente do que o esquema posológico pressupõe, reduzindo sua concentração plasmática abaixo do limiar necessário para suprimir a ovulação de forma consistente."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Ovulação não suprimida em pelo menos um ciclo, seguida de concepção, apesar da adesão perfeita ao anticoncepcional — não há erro de uso, há interação farmacocinética não reconhecida."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Gravidez não planejada durante tratamento para tuberculose, exigindo reavaliação do esquema terapêutico (alguns fármacos antituberculose têm perfil de segurança gestacional distinto) e aconselhamento sobre método contraceptivo não dependente de metabolismo hepático (como dispositivo intrauterino) durante todo o tratamento e por um período após seu término."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente o mecanismo central deste bloco: um indutor enzimático (rifampicina) altera a eficácia de outro fármaco (anticoncepcional) sem qualquer erro de dose ou adesão, apenas por aumentar a quantidade de uma enzima hepática compartilhada. Reforça também por que a orientação sobre interações medicamentosas por indução precisa ser proativa — dada antes do problema, não descoberta depois dele.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "ginecologia",
+        "saude-coletiva"
+      ],
+      "diagnostico_revelado": "Falha contraceptiva por indução da CYP3A4 pela rifampicina.",
+      "tratamento_resumido": "Orientação de método contraceptivo não hormonal ou não dependente de metabolismo hepático durante todo o uso de rifampicina e nas semanas seguintes à suspensão (até a atividade enzimática hepática retornar ao basal); reavaliação obstétrica e do esquema antituberculose diante da gravidez confirmada."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-004-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw-Hill; 2023. Chapter 6 — Drug Metabolism.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Chapter 4 — Drug Biotransformation.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang & Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Drug Metabolism and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

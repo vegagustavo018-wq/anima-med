@@ -7,49 +7,235 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Doença Inflamatória Pélvica — Visão de Conjunto",
+    "titulo": "Doenca Inflamatoria Pelvica - Visao de Conjunto",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "ist",
+      "dip",
+      "mecanismo",
+      "etimologia"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Infecção ascendente do trato genital superior; agentes e ascensão",
-  "narrativa": [],
+  "resumo_conciso": "DIP é infecção ascendente do trato genital superior, envolvendo endométrio, tubas, ovários e peritônio. Está ligada a gonorreia, clamídia e flora vaginal, com risco de infertilidade e dor crônica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Doença inflamatória pélvica é uma infecção ascendente: microrganismos sobem do colo/vagina para endométrio, tubas, ovários e peritônio pélvico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Gonorreia e clamídia são agentes clássicos, mas a DIP é frequentemente polimicrobiana, com participação de anaeróbios e microrganismos da flora vaginal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A clínica pode ser sutil. Dor pélvica baixa, dispareunia, corrimento, sangramento irregular, febre, dor à mobilização do colo e dor anexial podem aparecer em combinações variadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O perigo da DIP é que a inflamação tubária cicatriza com dano. Mesmo quadros leves podem aumentar risco de infertilidade tubária, gestação ectópica e dor pélvica crônica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por isso, o limiar para tratamento deve ser baixo em mulheres sexualmente ativas com dor pélvica e sinais mínimos de trato genital superior, quando não há outra causa mais provável."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "DIP também pode complicar com abscesso tubo-ovariano, peritonite pélvica e síndrome de Fitz-Hugh-Curtis, uma perihepatite associada a dor em hipocôndrio direito."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tratamento precisa cobrir gonococo, clamídia e anaeróbios conforme protocolo, além de orientar abstinência, tratamento de parcerias e retorno em curto prazo."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-06-000",
+        "titulo": "Modulo 6 - Infeccoes do Trato Genital e ISTs",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-06-021",
+        "titulo": "Ulceras Genitais - Abordagem Sindromica",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "HIV e Outras ISTs na Saude da Mulher",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-07-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-06-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Cervicites e Uretrites - Gonorreia e Clamidia"
+      },
+      {
+        "bloco_id": "s7-go1-06-013",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Tricomoniase"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-030-fc-01",
+      "pergunta": "O que é DIP?",
+      "resposta": "Infecção ascendente do trato genital superior.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-030-fc-02",
+      "pergunta": "Quais agentes clássicos?",
+      "resposta": "Neisseria gonorrhoeae e Chlamydia trachomatis, além de flora vaginal/anaeróbios.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-030-fc-03",
+      "pergunta": "Por que tratar cedo?",
+      "resposta": "Para reduzir risco de infertilidade tubária, gestação ectópica e dor pélvica crônica.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-030-fc-04",
+      "pergunta": "O que é Fitz-Hugh-Curtis?",
+      "resposta": "Perihepatite associada à DIP, com dor em hipocôndrio direito.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-030-cc-01",
+      "titulo": "Dor pélvica pós-cervicite",
+      "apresentacao": "Paciente de 23 anos com nova parceria apresenta dor pélvica, corrimento e dor à mobilização cervical.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: DIP é infecção ascendente do trato genital superior, envolvendo endométrio, tubas, ovários e peritônio."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Doenca Inflamatoria Pelvica - Visao de Conjunto, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "DIP é infecção ascendente do trato genital superior, envolvendo endométrio, tubas, ovários e peritônio. Está ligada a gonorreia, clamídia e flora vaginal, com risco de infertilidade e dor crônica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente de 23 anos com nova parceria apresenta dor pélvica, corrimento e dor à mobilização cervical."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual síndrome deve ser tratada cedo? DIP, pois atraso aumenta risco de sequela tubária."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "DIP, pois atraso aumenta risco de sequela tubária.",
+      "tratamento_resumido": "DIP, pois atraso aumenta risco de sequela tubária."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Fluxo ascendente da infecção do colo para endométrio, tubas, ovários e peritônio, com sequelas tubárias.",
+        "alt": "Ilustracao educacional para Doenca Inflamatoria Pelvica - Visao de Conjunto"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC - Syphilis STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/syphilis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Herpes STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Chancroid STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/chancroid.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Lymphogranuloma Venereum STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/lgv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Donovanosis STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/donovanosis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Pelvic Inflammatory Disease STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "etimologia"

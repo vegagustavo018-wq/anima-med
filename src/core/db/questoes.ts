@@ -22,11 +22,12 @@ async function baixar(caminho: string): Promise<ArquivoBanco | null> {
 }
 
 export async function carregarBancoQuestoes(): Promise<{ total: number; recarregado: boolean }> {
-  const [mcq, fc] = await Promise.all([
+  const [mcq, fc, fcAnima] = await Promise.all([
     baixar('/questoes/mcq.json'),
     baixar('/questoes/flashcards.json'),
+    baixar('/questoes/flashcards-anima.json'),
   ])
-  const arquivos = [mcq, fc].filter(Boolean) as ArquivoBanco[]
+  const arquivos = [mcq, fc, fcAnima].filter(Boolean) as ArquivoBanco[]
   if (arquivos.length === 0) {
     const total = await db.questoes.count()
     return { total, recarregado: false }

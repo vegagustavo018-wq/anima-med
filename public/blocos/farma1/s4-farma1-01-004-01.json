@@ -2,53 +2,318 @@
   "resumo_id": "s4-farma1-01-004-01",
   "no_pai_id": "s4-farma1-01-004",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": ["s4-farma1-01-004-02"],
   "metadata": {
     "titulo": "Reações de Fase I (Oxidação, Redução, Hidrólise)",
+    "subtitulo": "Como o corpo abre uma fresta polar numa molécula que não tem nenhuma?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "farma1",
-      "esqueleto"
-    ],
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
+    "tags": ["farma1", "farmacocinetica", "metabolismo", "biotransformacao", "fase-i", "oxidacao", "reducao", "hidrolise", "metabolito-ativo", "core"],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": ["expert"]
   },
-  "resumo_conciso": "Introdução de grupos polares; ativação/inativação; metabólitos ativos",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior mostrou que o fígado precisa tornar os fármacos mais polares para que possam ser excretados, e o irmão sobre CYP450 detalhou a principal maquinaria que faz isso. Este bloco dá um passo atrás e mostra o quadro mais amplo: a biotransformação hepática acontece em duas fases, e a fase I é a primeira — o conjunto de reações que introduz ou expõe um grupamento quimicamente reativo (tipicamente uma hidroxila) numa molécula que antes não tinha nenhum ponto de ataque químico útil. Três tipos de reação cobrem essa fase: oxidação (a mais comum, majoritariamente catalisada pelo sistema CYP450 já estudado), redução (menos frequente, relevante para fármacos com grupos nitro ou carbonila) e hidrólise (quebra de ligações éster ou amida por esterases e amidases, sem necessidade de oxigênio ou dos citocromos). O que essas três reações têm em comum não é o mecanismo químico — que é distinto em cada caso — mas o resultado funcional: ao final da fase I, a molécula ganhou (ou teve exposto) um grupamento polar que antes não existia. Esse grupamento serve a dois propósitos possíveis: pode já ser suficiente para permitir a excreção renal direta, ou pode funcionar como uma alça química à qual a fase II vai conjugar um composto ainda mais hidrossolúvel. E há uma consequência que a fase I introduz e que a fase II normalmente não tem: como é uma transformação química ativa (não apenas uma ligação inerte), o produto da fase I pode ser farmacologicamente diferente do fármaco original — às vezes inativo, às vezes ainda ativo, e em casos notáveis, mais ativo que a molécula de partida.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior deixou uma pergunta em aberto: se o metabolismo hepático precisa tornar o fármaco mais polar antes de liberá-lo para a excreção, como exatamente essa mudança química acontece? E o bloco sobre o citocromo P450 já respondeu boa parte disso — mas só para uma via específica. Antes de fechar esse assunto, vale recuar um passo e ver o quadro completo: por que a biotransformação hepática é dividida em duas fases distintas, e o que exatamente caracteriza a primeira delas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: uma molécula lipofílica pode não ter nenhum 'lugar' para se conjugar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A fase II do metabolismo — a conjugação — resolve o problema da lipossolubilidade de um jeito direto: gruda um composto já hidrossolúvel (como o ácido glicurônico) na molécula do fármaco. Mas essa colagem não é livre: ela precisa de um ponto de ancoragem químico específico na molécula — tipicamente uma hidroxila, uma amina ou um grupo carboxila. O problema é que muitos fármacos, sobretudo os mais lipofílicos, chegam ao fígado sem nenhum desses grupos expostos. São estruturas praticamente inertes do ponto de vista químico: anéis aromáticos, cadeias carbônicas fechadas, nada que uma enzima de conjugação consiga agarrar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se a fase II tentasse agir direto sobre essas moléculas, não teria onde se ligar. Era preciso uma etapa anterior, cujo único trabalho fosse criar esse ponto de ancoragem — introduzir ou expor um grupamento reativo onde antes não havia nenhum."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: a fase II precisa de um grupamento químico específico para conjugar, mas muitos fármacos não chegam ao fígado com esse grupamento disponível. A fase I existe para resolver exatamente essa lacuna."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: três famílias de reações que abrem uma fresta polar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A fase I resolve o problema com três tipos de reação química — oxidação, redução e hidrólise — que não têm o mesmo mecanismo entre si, mas compartilham o mesmo objetivo funcional: modificar a estrutura da molécula de modo a criar ou revelar um grupamento reativo, geralmente uma hidroxila (-OH), uma amina (-NH₂) ou um grupo carboxila (-COOH)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A oxidação é, disparado, a mais frequente das três. Já foi detalhada no bloco sobre o sistema citocromo P450: uma superfamília de enzimas hepáticas que insere um átomo de oxigênio na molécula do fármaco, tipicamente formando uma hidroxila. O CYP450 não é a única via oxidativa que existe — outras enzimas, como as monoamino-oxidases (MAO) e a álcool desidrogenase, também oxidam substratos específicos —, mas é, de longe, a mais relevante quantitativamente. Este bloco não repete o mecanismo do CYP450, já estudado em detalhe; o que importa aqui é a posição da oxidação dentro do quadro maior: ela é a principal — mas não a única — forma de reação de fase I."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A redução é o caminho oposto: em vez de adicionar oxigênio, a reação remove elétrons de um grupo já eletronegativo, como um grupo nitro (-NO₂) ou um grupo carbonila (-C=O), convertendo-o em um grupamento mais reativo (por exemplo, um grupo amino, no caso da redução de nitro). É uma via bem menos frequente que a oxidação, e costuma ganhar destaque em situações específicas — reações catalisadas por bactérias da flora intestinal, por exemplo, com fármacos que chegam pouco absorvidos ao cólon, ou por enzimas hepáticas em condições de baixa disponibilidade de oxigênio."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A hidrólise segue uma lógica diferente das outras duas: não é uma reação de oxirredução, então não depende do sistema CYP450 nem de qualquer transferência de elétrons mediada por oxigênio. É simplesmente a quebra de uma ligação química — tipicamente uma ligação éster ou amida — pela adição de uma molécula de água, catalisada por esterases e amidases presentes no plasma, no fígado e em outros tecidos. O resultado é a molécula original partida em dois fragmentos menores, cada um com um grupamento (hidroxila ou carboxila, por exemplo) exposto na extremidade da quebra."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "As três reações de fase I — oxidação, redução, hidrólise — não compartilham mecanismo químico. Compartilham função: todas introduzem ou expõem um grupamento polar que a molécula original não tinha disponível, preparando-a para a excreção direta ou para a conjugação de fase II."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em movimento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere um fármaco lipofílico administrado por via oral, já absorvido e circulando até o fígado — o mesmo ponto de partida descrito no bloco anterior sobre a visão geral do metabolismo."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O destino de um fármaco na fase I",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Chegada de uma molécula sem ponto de ancoragem",
+          "explicacao": "O fármaco chega ao hepatócito como uma estrutura lipofílica praticamente inerte quimicamente — sem hidroxila, amina ou carboxila expostas, nada que a fase II consiga conjugar diretamente."
+        },
+        {
+          "numero": 2,
+          "titulo": "Reconhecimento pela via de fase I apropriada",
+          "explicacao": "Dependendo da estrutura química da molécula, ela é reconhecida por uma via oxidativa (majoritariamente o CYP450, já estudado, mas também MAO ou álcool desidrogenase em casos específicos), por uma via redutora, ou por uma esterase/amidase, se houver uma ligação éster ou amida hidrolisável."
+        },
+        {
+          "numero": 3,
+          "titulo": "Introdução ou exposição do grupamento reativo",
+          "explicacao": "A reação — seja adicionando oxigênio, removendo elétrons ou quebrando uma ligação por hidrólise — resulta num metabólito com um grupamento polar novo (tipicamente -OH, -NH₂ ou -COOH) que antes não estava disponível."
+        },
+        {
+          "numero": 4,
+          "titulo": "Dois destinos possíveis para o metabólito de fase I",
+          "explicacao": "Esse metabólito, já mais polar que a molécula original, pode ser suficientemente hidrossolúvel para ser excretado diretamente pelo rim, ou pode seguir para a fase II, onde o novo grupamento serve de ponto de ancoragem para a conjugação com um composto ainda mais hidrossolúvel."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um ponto merece destaque com ponte direta para a prática clínica: como a fase I é uma transformação química ativa — não uma simples colagem inerte, como costuma ser a conjugação de fase II —, o metabólito resultante pode ter atividade farmacológica diferente da molécula original. Na maioria das vezes, o metabólito de fase I é inativo ou menos ativo. Mas em alguns casos notáveis, ele é tão ativo quanto o fármaco original (um metabólito ativo, que prolonga o efeito clínico mesmo depois que o fármaco de origem já foi eliminado) ou até mais ativo — o caso dos pró-fármacos, moléculas administradas propositalmente numa forma inativa que só ganham ação terapêutica depois de passar pela fase I."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O exemplo clássico dessa última situação é a codeína. Administrada como tal, a codeína tem efeito analgésico fraco. Uma pequena fração dela, porém, é oxidada pela CYP2D6 — a mesma isoforma citada no bloco irmão sobre CYP450 — e convertida em morfina, um metabólito muito mais potente que a molécula original. É a fase I, e especificamente essa reação de oxidação, que transforma a codeína no analgésico que o paciente de fato sente. [AVISO] A magnitude exata dessa conversão varia entre indivíduos conforme o polimorfismo genético da CYP2D6 — metabolizadores ultrarrápidos podem converter codeína em morfina numa velocidade perigosa, um tema que será retomado quando a farmacogenética das isoformas for aprofundada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa etapa se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A fase I depende diretamente do sistema CYP450 para sua via mais frequente (oxidação), já detalhado no bloco irmão — este bloco não repete aquele mecanismo, apenas o situa como uma das três famílias de reação, ainda que a mais importante quantitativamente. A fase I também se articula com a fase II: na maioria dos fármacos, o metabólito de fase I é o substrato de entrada para a conjugação, e não o fármaco original. E se conecta com a farmacogenética — variações individuais nas enzimas de fase I (não só CYP450, mas também esterases e enzimas redutoras) explicam por que a mesma dose de um mesmo fármaco produz respostas diferentes entre pacientes, incluindo casos em que o metabólito ativo é que determina o efeito clínico observado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, essa etapa explica por que a resposta a certos fármacos não pode ser prevista olhando só para a molécula administrada: com pró-fármacos e metabólitos ativos, o efeito real depende do que a fase I produz, não apenas do que foi prescrito. É também por isso que a bula de fármacos como a codeína traz ressalvas específicas para populações com metabolismo de CYP2D6 alterado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "fase I (reações de funcionalização)",
+      "origem": "do latim phasis (fase, estágio), do grego phásis; e do latim functio (desempenho, função)",
+      "significado": "'primeiro estágio' de reações que dão à molécula uma nova 'função' química",
+      "explicacao": "A numeração 'fase I' e 'fase II' não indica ordem temporal obrigatória — um fármaco pode, em teoria, ir direto para conjugação sem passar por fase I, se já tiver o grupamento necessário. A nomenclatura, proposta em meados do século XX por farmacologistas como R.T. Williams, reflete uma classificação funcional: fase I é chamada também de reação de 'funcionalização', porque seu produto final é uma molécula com uma nova função química (grupamento reativo) que ela não tinha antes. Fase II, em contraste, é a reação de 'conjugação' propriamente dita. O nome, portanto, descreve o papel de cada etapa na lógica da eliminação, não uma sequência rígida de eventos."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔧",
+      "conteudo": "Pense na fase I como o trabalho de um serralheiro que precisa preparar uma peça de metal lisa para que ela possa ser parafusada a outra estrutura depois. A peça, como veio da fábrica, não tem nenhum furo — nenhum lugar por onde um parafuso possa passar. O serralheiro tem três ferramentas possíveis para abrir esse furo: uma furadeira (oxidação, a ferramenta mais usada, já detalhada no bloco sobre o CYP450), uma lixa que desgasta uma reentrância já existente (redução, usada com menos frequência) ou uma serra que corta a peça em dois pedaços, expondo uma borda nova (hidrólise). As três ferramentas fazem coisas fisicamente diferentes, mas o resultado funcional é sempre o mesmo: uma peça que antes não tinha onde ser fixada agora tem um ponto de encaixe. A analogia quebra num detalhe importante: uma peça de metal furada continua sendo só metal — inerte. Já a molécula depois da fase I pode ganhar propriedades biológicas novas, incluindo, em alguns casos, se tornar um fármaco ativo que não existia antes."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "As três reações de fase I e seus destinos",
+      "descricao": "Diagrama esquemático mostrando uma molécula de fármaco lipofílica ao centro, com três setas divergentes rotuladas 'oxidação' (ícone remetendo ao CYP450 já apresentado no bloco irmão), 'redução' e 'hidrólise', cada uma levando a um metabólito com um grupamento reativo destacado (-OH, -NH2 ou -COOH conforme o caso). Das três setas, uma seta convergente final mostra dois destinos possíveis: 'excreção renal direta' ou 'fase II (conjugação)'. Um pequeno destaque lateral ilustra o caso da codeína virando morfina como exemplo de metabólito ativo. Estilo esquemático de livro didático, cores diferenciando as três vias, legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Composição central: uma molécula estilizada de fármaco lipofílico (contorno genérico, sem grupos reativos visíveis) no topo, com três setas divergentes descendo para três caixas coloridas distintas rotuladas 'Oxidação' (com pequeno ícone de engrenagem remetendo a enzima), 'Redução' e 'Hidrólise' (com pequeno ícone de gota d'água), cada caixa mostrando a molécula transformada com um grupamento reativo em destaque (-OH, -NH2 ou -COOH, conforme o caso, em cor contrastante). As três setas convergem novamente para uma única caixa final rotulada 'metabólito de fase I — mais polar', que se ramifica em duas setas finais: uma para 'excreção renal' (ícone de rim) e outra para 'fase II — conjugação' (ícone de elo de corrente). Um pequeno painel lateral discreto mostra a conversão de codeína em morfina como exemplo de metabólito ativo, com rótulo 'exemplo: metabólito ativo'. Legendas curtas em português, paleta de cores consistente e distinta para cada via, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-004",
+        "titulo": "Metabolismo (Biotransformação) — Preparar para a Saída (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já entender por que o metabolismo hepático existe (resolver o conflito entre lipossolubilidade para agir e hidrossolubilidade para eliminar) antes de detalhar a fase I especificamente."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Reações de fase II (conjugação)",
+        "mecanismo_conexao": "O grupamento reativo introduzido pela fase I é exatamente o ponto de ancoragem que as reações de conjugação de fase II vão usar para ligar compostos hidrossolúveis à molécula.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Farmacogenética dos polimorfismos de CYP2D6",
+        "mecanismo_conexao": "A conversão de codeína em morfina pela CYP2D6, citada aqui como exemplo de metabólito ativo, depende diretamente do perfil genético individual dessa isoforma, tema a ser aprofundado em farmacogenética.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Risco de depressão respiratória por codeína em metabolizadores ultrarrápidos de CYP2D6",
+        "mecanismo_conexao": "A produção acelerada de morfina a partir de codeína em pacientes com polimorfismo de metabolização ultrarrápida é uma aplicação clínica direta do conceito de metabólito ativo apresentado aqui.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-004-02",
+        "tipo_relacao": "COMPLEMENTO",
+        "explicacao": "O bloco irmão detalha o sistema CYP450 — a principal via oxidativa da fase I. Este bloco situa a oxidação dentro do quadro mais amplo das três reações de fase I (oxidação, redução, hidrólise), sem repetir o mecanismo catalítico já explicado lá."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-004-01-fc01",
+      "pergunta": "Por que a fase I do metabolismo hepático é necessária mesmo quando o objetivo final é a conjugação de fase II?",
+      "resposta": "Porque a fase II precisa de um grupamento químico específico (hidroxila, amina ou carboxila) para poder conjugar um composto hidrossolúvel ao fármaco. Muitos fármacos lipofílicos chegam ao fígado sem nenhum desses grupamentos expostos — são estruturas quimicamente inertes do ponto de vista da conjugação. A fase I resolve essa lacuna introduzindo ou expondo esse grupamento reativo, criando o ponto de ancoragem que a fase II vai usar depois.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["fase-i", "metabolismo", "conjugacao"]
+    },
+    {
+      "card_id": "s4-farma1-01-004-01-fc02",
+      "pergunta": "Quais são as três famílias de reação da fase I, e o que elas têm em comum apesar de mecanismos químicos distintos?",
+      "resposta": "Oxidação (a mais frequente, majoritariamente via CYP450, mas também MAO e álcool desidrogenase), redução (remoção de elétrons de grupos como nitro ou carbonila, menos frequente) e hidrólise (quebra de ligações éster ou amida por esterases/amidases, sem depender de oxirredução). Os três mecanismos são quimicamente diferentes, mas compartilham o mesmo resultado funcional: introduzir ou expor um grupamento polar que a molécula original não tinha disponível.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["fase-i", "oxidacao", "reducao", "hidrolise"]
+    },
+    {
+      "card_id": "s4-farma1-01-004-01-fc03",
+      "pergunta": "Por que a hidrólise, diferente da oxidação e da redução, não depende do sistema citocromo P450?",
+      "resposta": "Porque a hidrólise não é uma reação de oxirredução — ela não envolve transferência de elétrons nem manipulação de oxigênio molecular, que é justamente o que o CYP450 (uma hemeproteína especializada em ativar O2) faz. A hidrólise é simplesmente a quebra de uma ligação química (éster ou amida) pela adição de uma molécula de água, catalisada por esterases e amidases presentes no plasma, fígado e outros tecidos — um mecanismo estrutural e enzimaticamente distinto do ciclo catalítico do CYP450.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["fase-i", "hidrolise", "cyp450", "comparacao"]
+    },
+    {
+      "card_id": "s4-farma1-01-004-01-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'O metabólito produzido pela fase I é sempre menos ativo farmacologicamente que o fármaco original.'",
+      "resposta": "Falso. Como a fase I é uma transformação química ativa, o metabólito resultante pode ter atividade farmacológica diferente da original em qualquer direção: na maioria das vezes é inativo ou menos ativo, mas pode ser igualmente ativo (metabólito ativo) ou até mais ativo — o caso dos pró-fármacos. O exemplo clássico é a codeína, cuja oxidação pela CYP2D6 gera morfina, um metabólito muito mais potente que a molécula administrada.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["fase-i", "metabolito-ativo", "pro-farmaco", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s4-farma1-01-004-01-fc05",
+      "pergunta": "Um paciente identificado como metabolizador ultrarrápido de CYP2D6 recebe codeína para dor pós-operatória. Por que esse perfil genético representa um risco clínico específico, à luz do conceito de metabólito ativo?",
+      "resposta": "Porque a codeína em si é pouco ativa como analgésico — seu efeito depende da conversão, pela CYP2D6, em morfina, um metabólito muito mais potente. Num metabolizador ultrarrápido, essa conversão acontece de forma acelerada e em maior proporção, gerando concentrações de morfina mais altas que o esperado para a dose prescrita, o que aumenta o risco de depressão respiratória e outros efeitos opioides graves — mesmo sem qualquer erro na prescrição ou na dose administrada.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["fase-i", "cyp2d6", "codeina", "metabolito-ativo", "farmacogenetica"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-004-01-caso01",
+      "titulo": "Sedação excessiva em criança após uso de codeína no pós-operatório",
+      "apresentacao": "Menino de 4 anos é submetido a adenoamigdalectomia por apneia obstrutiva do sono. No pós-operatório, recebe codeína em dose pediátrica padrão para controle da dor. Horas depois, é encontrado com sonolência extrema, respiração superficial e lentificada. Levado à emergência, a gasometria mostra retenção de CO2 compatível com depressão respiratória por opioide. Investigação posterior revela que a criança é homozigota para o alelo de metabolização ultrarrápida da CYP2D6.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A codeína administrada é, por si só, um analgésico fraco. Sua ação terapêutica depende da conversão, pela enzima CYP2D6 (uma via de oxidação da fase I do metabolismo), em morfina — o metabólito ativo responsável pelo efeito analgésico real."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O perfil genético ultrarrápido da CYP2D6 faz essa reação de fase I ocorrer numa velocidade e proporção muito acima da média populacional, convertendo uma fração maior de codeína em morfina do que o esperado para a dose prescrita."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A concentração plasmática de morfina sobe a níveis não previstos pela dose padrão de codeína, produzindo um efeito opioide muito mais intenso que o pretendido — mesmo com a prescrição correta e sem erro de administração."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sedação profunda, respiração superficial e lentificada, retenção de CO2 — sinais clássicos de depressão respiratória por excesso de opioide."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Esse mecanismo levou agências regulatórias a restringir ou contraindicar o uso de codeína em crianças no pós-operatório de adenoamigdalectomia, justamente pelo risco imprevisível de metabolização ultrarrápida nessa população."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra o ponto central deste bloco: o produto de uma reação de fase I não é farmacologicamente neutro. A oxidação da codeína pela CYP2D6 (a mesma isoforma detalhada no bloco irmão sobre CYP450) não apenas prepara a molécula para excreção — ela gera um metabólito ativo, a morfina, cuja produção variável conforme a genética individual determina diretamente o desfecho clínico.",
+      "disciplinas_relacionadas": ["farmacologia", "pediatria", "anestesiologia", "farmacogenetica"],
+      "diagnostico_revelado": "Depressão respiratória por excesso de morfina decorrente de metabolização ultrarrápida de codeína via CYP2D6.",
+      "tratamento_resumido": "Suporte respiratório imediato, reversão com naloxona se necessário, monitorização contínua até resolução do quadro. Prevenção: evitar codeína em crianças no contexto de adenoamigdalectomia, preferindo analgésicos que não dependam de ativação metabólica variável."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-004-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw-Hill; 2023. Chapter 6 — Drug Metabolism.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Chapter 4 — Drug Biotransformation.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang & Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Drug Metabolism and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

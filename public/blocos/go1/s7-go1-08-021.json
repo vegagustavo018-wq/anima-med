@@ -4,49 +4,219 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Câncer de Endométrio — Diagnóstico e Tratamento",
+    "titulo": "Cancer de Endometrio - Diagnostico e Tratamento",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "diagnostico",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "USG-TV, biópsia/histeroscopia; estadiamento cirúrgico; conduta",
-  "narrativa": [],
+  "resumo_conciso": "O diagnóstico de câncer de endométrio depende de histologia por biópsia ou histeroscopia. Tratamento padrão envolve estadiamento cirúrgico com histerectomia e salpingo-ooforectomia, ajustado por risco.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "A investigação começa com sangramento uterino anormal, principalmente pós-menopausa. Ultrassom transvaginal avalia espessura e aspecto endometrial, mas histologia é necessária para diagnóstico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Biópsia endometrial ambulatorial costuma ser primeira abordagem quando disponível e adequada. Histeroscopia com biópsia dirigida ajuda em amostras insuficientes, suspeita focal ou persistência de sintomas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Após confirmar câncer, avaliam-se histologia, grau, invasão miometrial, acometimento cervical, linfonodos e doença extrauterina. Esses elementos orientam risco e tratamento adjuvante."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tratamento padrão para muitas pacientes é cirúrgico: histerectomia total com salpingo-ooforectomia bilateral e avaliação linfonodal conforme risco, incluindo estratégias como linfonodo sentinela em serviços habilitados."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Radioterapia, quimioterapia, hormonioterapia e imunoterapia podem entrar conforme estágio, tipo histológico, recorrência e marcadores moleculares."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em pacientes jovens com câncer endometrioide muito inicial, baixo grau e forte desejo reprodutivo, tratamento conservador com progestagênio pode ser considerado apenas com critérios rígidos e seguimento intenso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O plano deve incluir manejo de comorbidades, tromboprofilaxia, saúde sexual, menopausa cirúrgica e aconselhamento genético quando há suspeita de Lynch."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-07-000",
+        "titulo": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-05-005",
+        "titulo": "Hiperplasia Endometrial - Precursora do Cancer de Endometrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-032",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Ovário — Diagnóstico, Estadiamento e Tratamento",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Vulva e Vagina",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-04-006",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Adenomiose - Endometrio Invadindo o Miometrio"
+      },
+      {
+        "bloco_id": "s7-go1-06-040",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com HIV e Outras ISTs na Saude da Mulher"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-08-021-fc-01",
+      "pergunta": "Qual exame confirma câncer de endométrio?",
+      "resposta": "Histologia por biópsia endometrial ou amostra dirigida.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-021-fc-02",
+      "pergunta": "USG transvaginal substitui biópsia?",
+      "resposta": "Não, ajuda a triagem, mas diagnóstico é histológico.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-021-fc-03",
+      "pergunta": "Qual cirurgia padrão em muitos casos?",
+      "resposta": "Histerectomia total com salpingo-ooforectomia bilateral e avaliação linfonodal conforme risco.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-021-fc-04",
+      "pergunta": "Quando pensar em Lynch?",
+      "resposta": "Câncer em idade jovem, história familiar sugestiva ou critérios/marcadores compatíveis.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-08-021-cc-01",
+      "titulo": "Biópsia insuficiente",
+      "apresentacao": "Paciente pós-menopausa segue sangrando apesar de biópsia endometrial insuficiente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: O diagnóstico de câncer de endométrio depende de histologia por biópsia ou histeroscopia."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Cancer de Endometrio - Diagnostico e Tratamento, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O diagnóstico de câncer de endométrio depende de histologia por biópsia ou histeroscopia. Tratamento padrão envolve estadiamento cirúrgico com histerectomia e salpingo-ooforectomia, ajustado por risco."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente pós-menopausa segue sangrando apesar de biópsia endometrial insuficiente."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual próximo passo lógico? Não encerrar investigação; considerar nova amostragem, frequentemente com histeroscopia/biópsia dirigida."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Não encerrar investigação; considerar nova amostragem, frequentemente com histeroscopia/biópsia dirigida.",
+      "tratamento_resumido": "Não encerrar investigação; considerar nova amostragem, frequentemente com histeroscopia/biópsia dirigida."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Fluxo diagnóstico-terapêutico: sangramento pós-menopausa, USG-TV, biópsia, histologia, cirurgia e adjuvância por risco.",
+        "alt": "Ilustracao educacional para Cancer de Endometrio - Diagnostico e Tratamento"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Cervical Cancer Treatment",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Endometrial Cancer Treatment",
+      "url": "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "diagnostico",
     "conduta"

@@ -1,54 +1,234 @@
 {
+  "metadata": {
+    "titulo": "Inibidores de CDK (p21, p27, p16)",
+    "subtitulo": "Como a célula aciona o freio de emergência?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "Ciclo Celular",
+      "Supressores Tumorais",
+      "CDK",
+      "Checkpoints",
+      "p53"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "No balé complexo do ciclo celular, a progressão é ditada por aceleradores chamados complexos CDK-Ciclina. No entanto, para que a vida seja viável e segura, o movimento exige controle. Os inibidores de CDK (CKIs) representam a inteligência negativa da célula: proteínas especializadas que interrompem a divisão celular em resposta a danos no DNA, estresse metabólico ou sinais externos. Divididos em duas famílias principais, INK4 e Cip/Kip, esses 'freios moleculares' garantem que a célula não avance para a próxima fase antes de estar devidamente preparada, funcionando como a última linha de defesa contra a proliferação descontrolada e a formação de tumores.",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "O perigo da velocidade sem controle"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma máquina que se replica a cada 24 horas. Se essa máquina cometer um erro na cópia de suas instruções, esse erro será herdado por todas as máquinas futuras. Em biologia, essa velocidade é necessária para o crescimento, mas é inerentemente perigosa. Se uma célula se dividir com o DNA danificado, ela pode dar origem a uma linhagem cancerosa. Por isso, a evolução não criou apenas 'aceleradores' para o ciclo celular; ela criou um sistema de freios sofisticado que pode paralisar tudo em milissegundos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esses freios são proteínas que precisam ser capazes de reconhecer o complexo CDK-Ciclina (o motor do ciclo) e desativá-lo fisicamente. Sem esses inibidores, a célula seria como um carro com o acelerador travado no assoalho: o movimento continuaria até o desastre inevitável."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Os inibidores de CDK, conhecidos tecnicamente como CKIs (Cyclin-Dependent Kinase Inhibitors), são os guardiões dos pontos de checagem ou checkpoints."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "As duas famílias de guardiões"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A natureza resolveu o problema do controle criando duas linhagens de proteínas inibidoras, cada uma com um 'alvo' e uma estratégia diferente. A primeira é a família Cip/Kip (p21, p27, p57). Elas são generalistas: conseguem se ligar a quase todos os complexos CDK-Ciclina das fases G1, S e G2. Elas funcionam como uma manta que envolve o complexo, impedindo que ele interaja com seus substratos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda é a família INK4 (p15, p16, p18, p19). Estas são especialistas em G1. Elas se ligam especificamente à CDK4 e CDK6, impedindo que elas se associem à Ciclina D. Se a Ciclina não consegue encontrar a sua CDK parceira, o motor sequer dá a partida."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "INK4",
+      "origem": "Inglês (Inhibitor of Kinase 4)",
+      "significado": "Inibidor da Quinase 4",
+      "explicacao": "O nome descreve exatamente a função bioquímica: uma proteína que impede a atividade da CDK4, o principal motor da fase G1."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Note que o número (21, 27, 16) refere-se ao peso molecular da proteína em kiloDaltons (kDa). É uma convenção bioquímica para nomear essas sentinelas."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛑",
+      "conteudo": "Imagine que o complexo CDK-Ciclina é uma chave inserida em uma fechadura para abrir a porta da próxima fase do ciclo. A família Cip/Kip (p21) funciona como uma fita adesiva enrolada em volta da chave inteira, impedindo-a de entrar na fechadura. Já a família INK4 (p16) funciona como um calço colocado entre a chave e o chaveiro, impedindo que a chave seja montada corretamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O papel fundamental de p21 e p53"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você já se perguntou como a célula sabe que o DNA está quebrado? O sensor principal é a proteína p53 (o 'guardião do genoma'). Quando p53 detecta dano, ela não para o ciclo sozinha; ela atua como um mestre de obras que ordena a fabricação imediata de p21. É a p21 que vai até o complexo CDK2-Ciclina E e o desliga, garantindo que a célula pare em G1 para reparos."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se a p21 não existisse?",
+      "resposta": "Mesmo que a p53 detectasse o erro, ela não teria o 'braço executor' para parar a máquina. A célula continuaria a dividir-se com o DNA quebrado, acumulando mutações a cada geração até se tornar maligna."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Senescência: O freio permanente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Às vezes, o dano é tão grande que o freio não pode ser solto. Nesses casos, níveis elevados de p16 e p21 mantêm o ciclo parado para sempre. A célula entra em um estado chamado senescência celular. Ela continua viva e metabolicamente ativa, mas nunca mais se dividirá. É uma estratégia evolutiva brilhante: prefere-se uma célula velha e inativa do que uma célula jovem e cancerosa."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Mecanismo de Inibição Estequiométrica",
+      "descricao": "Esquema mostrando a proteína p21 se ligando ao complexo Ciclina-CDK e bloqueando o sítio ativo da quinase.",
+      "prompt_ia": "High-quality medical illustration of a p21 protein (represented as a flexible blue ribbon structure) wrapping around a Cyclin E-CDK2 complex (represented as two distinct globular protein units in green and yellow). The p21 protein physically blocks the ATP-binding pocket of the CDK2. Molecular biology style, 3D rendering, soft lighting, professional scientific visualization.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-06-005-05-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Como a família INK4 (ex: p16) impede a progressão do ciclo celular em G1?",
+      "resposta": "Ela se liga competitivamente às CDKs 4 e 6, impedindo que elas formem o complexo ativo com a Ciclina D. Sem esse complexo, a célula não consegue ultrapassar o Ponto de Restrição.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "p16",
+        "INK4",
+        "G1"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-05-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que acontece com a regulação do ciclo celular se o gene da p53 sofrer uma mutação de perda de função?",
+      "resposta": "A célula perde a capacidade de transcrever p21 em resposta a danos no DNA. Consequentemente, o freio molecular não é acionado e a célula entra em fase S com DNA danificado, levando à instabilidade genômica.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "p53",
+        "p21",
+        "Dano DNA"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-05-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Qual a principal diferença de alvo entre a família Cip/Kip e a família INK4?",
+      "resposta": "A família Cip/Kip (p21, p27) é mais abrangente, inibindo múltiplos complexos (CDK4/6, CDK2, CDK1), enquanto a INK4 é específica para CDK4 e CDK6 na fase G1.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Bioquímica",
+        "CDK"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-05-fc04",
+      "tipo": "clinico",
+      "pergunta": "Por que a perda do inibidor p16 é frequentemente observada em diversos tipos de câncer?",
+      "resposta": "Porque p16 é um supressor tumoral crítico. Sem ele, a CDK4 fica livre para impulsionar a célula através do ponto de restrição de G1, mesmo na ausência de sinais de crescimento adequados.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "Oncologia",
+        "p16"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-05-fc05",
+      "tipo": "mecanismo",
+      "pergunta": "Como o p27 regula a parada do ciclo celular por inibição por contato (alta densidade celular)?",
+      "resposta": "Quando as células ficam muito próximas, a sinalização extracelular estabiliza a proteína p27, que se acumula e inibe os complexos CDK-Ciclina, impedindo novas divisões e mantendo a homeostase do tecido.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "p27",
+        "Homeostase"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-06-005-05-caso01",
+      "titulo": "O Guardião Ausente",
+      "apresentacao": "Paciente masculino, 24 anos, apresenta múltiplas lesões pigmentadas (nevos) atípicas e histórico familiar severo de melanoma. Análise genética revela uma mutação germinativa que inativa o gene CDKN2A, responsável pela produção de uma proteína inibidora de quinase.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação no gene CDKN2A (perda de função da proteína p16)."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Inibidor da família INK4 específico para CDK4/6."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Impossibilidade de frear o complexo Ciclina D-CDK4 em G1."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Proliferação melanocítica descontrolada e atípica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Alta suscetibilidade ao desenvolvimento precoce de melanoma maligno."
+        }
+      ],
+      "diagnostico_revelado": "Síndrome do Melanoma Familiar (Deficiência de p16/INK4a)",
+      "tratamento_resumido": "Monitoramento dermatológico rigoroso e uso de inibidores farmacológicos de CDK4/6 (ex: Palbociclibe) em casos avançados.",
+      "conexao_com_bloco": "Este caso ilustra como a ausência de um único inibidor de CDK (p16) remove o controle do Ponto de Restrição, permitindo o desenvolvimento de neoplasias.",
+      "disciplinas_relacionadas": [
+        "Genética Médica",
+        "Oncologia",
+        "Dermatologia"
+      ]
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-06-004",
+        "titulo": "Meiose — Visão Geral",
+        "disciplina": "Biologia Celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É impossível entender o inibidor sem conhecer o motor que ele desativa."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Inibidores de CDK4/6 no tratamento do câncer de mama",
+        "disciplina": "Farmacologia Clínica",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "Fármacos modernos mimetizam a ação do p16 para parar o crescimento tumoral.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Apoptose",
+        "explicacao": "Enquanto os CKIs causam uma parada funcional (senescência), a apoptose é a morte celular programada quando o dano é irreparável."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-06-005-05",
   "no_pai_id": "s1-biocel-06-005",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Inibidores de CDK (p21, p27, p16)",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Freios negativos; supressores tumorais e senescência",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3-flash-preview",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

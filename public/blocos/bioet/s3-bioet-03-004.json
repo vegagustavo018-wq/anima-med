@@ -2,51 +2,353 @@
   "resumo_id": "s3-bioet-03-004",
   "no_pai_id": "s3-bioet-03-000",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s3-bioet-03-002",
+    "s3-bioet-03-003"
+  ],
   "metadata": {
     "titulo": "Prontuário, Dados e Sigilo na Era Digital",
+    "subtitulo": "O sigilo protege o que se diz na consulta — mas quem protege onde isso fica guardado?",
     "semestre": 3,
     "disciplina": "Bioética",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 8,
+    "nivel": "CORE",
+    "tipo": "conceito",
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioet",
-      "esqueleto"
+      "bioetica",
+      "sigilo-medico",
+      "lgpd",
+      "prontuario-eletronico",
+      "protecao-de-dados",
+      "core"
     ],
-    "nivel": "CORE",
-    "tipo": "conceito"
+    "canmeds": [
+      "professional",
+      "expert"
+    ]
   },
-  "resumo_conciso": "Prontuario eletronico, LGPD e vazamento; sigilo alem da conversa",
-  "narrativa": [],
+  "resumo_conciso": "Os blocos anteriores do capítulo trataram do sigilo como algo que se protege na relação direta entre médico e paciente — o que se diz, a quem se conta, quando se quebra. Este bloco, último filho de s3-bioet-03-000, desloca o foco para uma vulnerabilidade distinta: a informação de saúde armazenada eletronicamente, em sistemas hospitalares e prontuários compartilhados, que pode vazar ou ser acessada indevidamente mesmo sem nenhuma conversa ter sido traída. Sigilo, na era digital, exige também segurança da informação — e leis como a LGPD traduzem essa exigência em dever legal explícito.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Todo o capítulo até aqui girou em torno de uma cena recorrente: um paciente fala, um médico ouve, e a pergunta é o que fazer com aquele relato verbal. Mas boa parte da informação de saúde de um paciente hoje nunca é apenas falada e esquecida — ela é digitada, salva, armazenada em sistemas eletrônicos, acessada por múltiplos profissionais ao longo do tempo, às vezes compartilhada entre instituições diferentes. Esse deslocamento da palavra falada para o dado armazenado cria um tipo de vulnerabilidade que os blocos anteriores não cobriram."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere um hospital em que o prontuário eletrônico de um paciente famoso, internado por uma condição psiquiátrica, é acessado por um funcionário administrativo sem qualquer vínculo com o cuidado direto daquele paciente — apenas por curiosidade, movido pela repercussão do caso na mídia. Nenhuma conversa foi traída aqui: ninguém contou nada a ninguém em voz alta. Ainda assim, algo foi claramente violado. O quê, exatamente?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, exatamente, este bloco resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é que o sigilo médico, tal como descrito nos blocos anteriores deste capítulo, foi pensado historicamente para proteger a conversa entre duas pessoas — o que um paciente conta e um médico ouve. Mas a informação de saúde contemporânea raramente vive apenas nessa conversa: ela é registrada em prontuários eletrônicos acessados por dezenas de profissionais diferentes ao longo de uma internação, armazenada em servidores hospitalares, às vezes compartilhada entre sistemas de diferentes instituições de saúde. Cada um desses pontos — o sistema, o servidor, o acesso de cada profissional — é uma porta potencial de vazamento que nenhuma conversa presencial jamais teve que enfrentar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sem reconhecer essa vulnerabilidade adicional, a medicina correria o risco de proteger cuidadosamente a conversa de consultório, enquanto deixa a mesma informação — agora digitalizada — exposta a um tipo de risco completamente diferente: um funcionário curioso acessando um prontuário sem necessidade clínica, um sistema mal configurado permitindo acesso amplo demais, um vazamento acidental de uma base de dados inteira. O dano ao paciente, nesses casos, é equivalente ao de uma quebra de sigilo verbal — às vezes maior, pela escala — mas a causa e a forma de prevenção são estruturalmente diferentes."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe antes de seguir: o problema não é \"a tecnologia trouxe um risco novo e completamente distinto do sigilo\" — é que a mesma informação que sempre precisou de proteção agora vive em um ambiente (sistemas digitais) com vulnerabilidades próprias, que exigem mecanismos de proteção adicionais aos já conhecidos para a conversa presencial."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o direito e a bioética resolveram esse problema"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta foi estender o conceito de sigilo médico para além da discrição verbal, incorporando explicitamente a **proteção de dados** como parte do mesmo dever: no Brasil, essa extensão ganhou corpo jurídico específico com a **Lei Geral de Proteção de Dados (LGPD)**, que trata dados de saúde como categoria sensível, sujeita a regras mais rígidas de tratamento, armazenamento e compartilhamento do que dados comuns [⚠️ a legislação equivalente e seus detalhes específicos no Paraguai devem ser verificados separadamente antes de uso em prova de direito médico local]. A lógica subjacente é a mesma que já sustentava o sigilo verbal — proteger a confiança que permite ao paciente revelar informação sensível — mas agora aplicada também à infraestrutura técnica que guarda essa informação depois que ela foi dita."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso significa que o dever de sigilo, na prática contemporânea, não se cumpre apenas evitando comentários indevidos no corredor — exige também disciplina técnica e institucional: sistemas com controle de acesso restrito, registros de quem acessou qual informação e quando, protocolos de resposta caso ocorra um vazamento, e treinamento de toda a equipe sobre o que constitui uso indevido de um sistema de prontuário eletrônico, mesmo sem nenhuma palavra sendo dita em voz alta a um terceiro."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Sigilo médico, na era digital, deixou de ser apenas sobre o que se fala — passou a ser também sobre como se guarda, quem pode acessar, e o que se faz quando o sistema falha. A discrição verbal continua necessária, mas deixou de ser suficiente sozinha."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita a proteção de dados de saúde"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O primeiro componente é o **acesso restrito por necessidade clínica**: sistemas de prontuário eletrônico bem estruturados permitem que cada profissional acesse apenas as informações necessárias ao cuidado que está prestando naquele momento, não o histórico completo de qualquer paciente do hospital por simples curiosidade — o funcionário administrativo do caso inicial deste bloco jamais deveria ter tido, tecnicamente, acesso ao prontuário psiquiátrico de um paciente fora de sua função."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O segundo componente é a **anonimização quando possível**: quando dados de saúde são usados para pesquisa, auditoria interna ou estatística hospitalar, e a identificação individual do paciente não é estritamente necessária para essa finalidade, a informação deve ser tratada de forma a dissociar o dado clínico da identidade da pessoa, reduzindo o dano potencial caso ocorra algum acesso indevido a essa base secundária."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O terceiro componente é o **dever de notificar vazamentos**: caso ocorra uma violação de segurança que exponha dados de saúde, a instituição e os profissionais responsáveis têm o dever de identificar, conter e comunicar o incidente às autoridades competentes e, quando aplicável, aos próprios pacientes afetados — não silenciar o vazamento na esperança de que passe despercebido, o que corresponderia, em espírito, ao mesmo tipo de dano moral já descrito para quebras de sigilo verbal não assumidas ou não corrigidas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, fixe os três componentes: acesso restrito por necessidade clínica, anonimização quando possível, dever de notificar vazamentos. Vamos ver isso aplicado a um caso concreto de acesso indevido."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, diante de um acesso indevido"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Retome o caso do prontuário eletrônico de um paciente com repercussão pública, internado por condição psiquiátrica, acessado por um funcionário administrativo sem vínculo direto com o cuidado daquele paciente. O acesso é identificado pelo próprio sistema, que registra automaticamente quem consultou qual prontuário e quando."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Da detecção do acesso indevido à resposta institucional",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Detectar o acesso fora do padrão esperado",
+          "explicacao": "O próprio sistema de auditoria, que registra cada consulta ao prontuário eletrônico, sinaliza um acesso realizado por um profissional sem vínculo assistencial declarado com aquele paciente específico — um recurso técnico que só existe porque o sistema foi desenhado com essa camada de rastreabilidade."
+        },
+        {
+          "numero": 2,
+          "titulo": "Investigar a finalidade do acesso",
+          "explicacao": "A equipe de compliance ou segurança da informação do hospital apura se havia alguma justificativa clínica ou administrativa legítima para o acesso, ou se, como neste caso, tratou-se de curiosidade pessoal sem qualquer vínculo com o cuidado do paciente."
+        },
+        {
+          "numero": 3,
+          "titulo": "Conter o incidente e aplicar as medidas cabíveis",
+          "explicacao": "Confirmado o acesso indevido, a instituição restringe imediatamente o acesso do funcionário responsável, aplica as medidas disciplinares e legais cabíveis, e revisa se o desenho do sistema permitiu esse acesso de forma mais ampla do que deveria, corrigindo a falha estrutural, não apenas punindo o indivíduo."
+        },
+        {
+          "numero": 4,
+          "titulo": "Notificar o paciente afetado e, quando exigido, a autoridade competente",
+          "explicacao": "Consistente com o dever de notificar vazamentos, a instituição comunica ao paciente que seu prontuário foi acessado de forma indevida, e, quando a normativa aplicável exigir, reporta o incidente ao órgão de proteção de dados competente, tratando o episódio com a mesma seriedade que trataria uma quebra de sigilo verbal por parte de um profissional de saúde."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Note o que esse caso revela sobre a diferença entre a era pré-digital e a atual: nenhuma palavra foi dita em voz alta, nenhum comentário foi feito em um corredor — a violação aconteceu inteiramente dentro de um sistema, e só pôde ser detectada porque esse mesmo sistema foi desenhado para deixar rastro de quem acessa o quê. Isso ilustra por que a segurança da informação não é um complemento opcional ao sigilo médico contemporâneo — é parte da própria estrutura que permite que a violação seja identificada e corrigida."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que este bloco se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco fecha o capítulo iniciado por **s3-bioet-03-000**, articulando-se com todos os blocos anteriores: a mesma condição estrutural de confiança que sustenta o sigilo verbal (s3-bioet-03-000, s3-bioet-03-001) e que justifica suas exceções delimitadas (s3-bioet-03-002 e filhos) e sua extensão proporcional ao adolescente (s3-bioet-03-003) se estende, aqui, à infraestrutura técnica que armazena a mesma informação depois de dita. O capítulo de sigilo médico se encerra reconhecendo que proteger a confiança do paciente, hoje, exige tanto discrição pessoal quanto disciplina institucional e técnica. A partir daqui, o currículo de bioética avança para um novo capítulo: **s3-bioet-04-000**, que abre a discussão sobre início de vida e reprodução assistida."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "dado",
+      "origem": "do latim datum, particípio passado de dare (dar), literalmente \"aquilo que foi dado\"",
+      "significado": "algo entregue, fornecido — na origem, um fato considerado como ponto de partida para um raciocínio",
+      "explicacao": "A raiz dare, a mesma de \"doar\" e \"dádiva\", revela algo relevante para este bloco: um dado de saúde não é uma abstração técnica neutra — é, literalmente, \"aquilo que foi dado\" por um paciente, muitas vezes em um momento de vulnerabilidade real, confiando que aquele fato entregue seria tratado com o mesmo cuidado que se espera de qualquer dádiva recebida. A sigla **LGPD** (Lei Geral de Proteção de Dados) formaliza juridicamente essa mesma intuição: dados de saúde, por serem informações sensíveis dadas em confiança, exigem proteção reforçada, não tratamento equivalente ao de qualquer informação administrativa comum [⚠️ verificar o nome e o número exatos da legislação equivalente vigente no Paraguai antes de uso em prova local]."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a proteção de dados"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏦",
+      "conteudo": "Retome o cofre de banco usado como analogia no bloco de abertura deste capítulo (s3-bioet-03-000): ali, o cofre representava o sigilo médico protegendo o que o paciente confia verbalmente ao profissional. Agora, avance essa mesma imagem: imagine que, além do cofre físico, o banco também mantém um sistema informatizado com registros de tudo que cada cliente guarda, quem acessou o cofre, e quando. Esse sistema, se mal protegido, pode ser invadido ou acessado indevidamente por um funcionário sem necessidade real — mesmo que o cofre físico em si nunca tenha sido fisicamente arrombado. **O cofre físico** continua representando a discrição verbal do sigilo tradicional. **O sistema informatizado de registros do banco** representa o prontuário eletrônico e a infraestrutura de dados de saúde. **Um funcionário do banco acessando o extrato de um cliente sem necessidade profissional, apenas por curiosidade** representa exatamente o acesso indevido a um prontuário eletrônico descrito neste bloco. A analogia quebra num ponto: um cofre físico protege seu conteúdo por isolamento simples — trancar bem e restringir chaves já resolve boa parte do problema; já um sistema digital de dados de saúde exige camadas mais complexas e dinâmicas de proteção (controle de acesso granular, registro de auditoria, resposta a incidentes), porque a informação nele armazenada é, ao mesmo tempo, mais acessível a muitos profissionais legítimos e mais vulnerável a ataques ou falhas técnicas do que qualquer cofre físico jamais precisou enfrentar."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um hospital tratasse a proteção de dados de saúde como um problema puramente técnico de tecnologia da informação, sem conectá-la ao dever ético de sigilo médico já estabelecido neste capítulo, o que se perderia nessa forma de encarar o problema?",
+      "resposta": "Perder-se-ia a compreensão de que um vazamento de dados não é apenas uma falha técnica a ser corrigida por engenheiros de sistemas — é, na sua essência, o mesmo tipo de dano moral que uma quebra de sigilo verbal causa: a violação da confiança de um paciente que entregou informação sensível na expectativa de proteção. Tratando o problema como puramente técnico, a instituição poderia se contentar em corrigir a falha de sistema sem reconhecer o dano causado ao paciente específico afetado, sem notificá-lo adequadamente, e sem tratar o incidente com a mesma seriedade ética que trataria um profissional que comentasse indevidamente um caso no corredor. Conectar proteção de dados ao dever de sigilo médico, como este bloco faz, garante que a resposta institucional inclua tanto a correção técnica quanto o reconhecimento e reparação do dano de confiança causado — os dois lados que qualquer quebra de sigilo, verbal ou digital, sempre exige.",
+      "confianca": "consenso_didatico"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Do cofre físico ao sistema digital — a extensão do sigilo médico",
+      "descricao": "Esquema didático dividido em duas metades conectadas por uma seta de evolução temporal. Metade esquerda, rotulada 'sigilo tradicional': um cofre físico fechado com um cadeado. Metade direita, rotulada 'sigilo na era digital': um servidor ou nuvem estilizada com três camadas de proteção sobrepostas, rotuladas 'acesso restrito', 'anonimização', 'notificação de vazamento'. Uma legenda unificadora abaixo: 'mesma confiança a proteger, infraestrutura mais complexa'. Fundo neutro adaptativo ao tema do app, tipografia em português.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo editorial minimalista, dividido em duas metades conectadas por uma seta de evolução horizontal. Metade esquerda com título 'Sigilo tradicional': ilustração de um cofre físico fechado com cadeado, estilo simples e geométrico. Metade direita com título 'Sigilo na era digital': ilustração de um servidor estilizado ou símbolo de nuvem, com três pequenas camadas concêntricas de proteção sobrepostas, rotuladas respectivamente 'Acesso restrito', 'Anonimização', 'Notificação de vazamento'. Rodapé com legenda unificadora: 'Mesma confiança a proteger, infraestrutura mais complexa'. Paleta de duas cores complementares, com tom mais tecnológico (azul-acinzentado) na metade digital, alto contraste para tema claro e escuro, tipografia limpa em português, sem elementos fotorrealistas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioet-03-000",
+        "titulo": "Sigilo Médico e Confidencialidade — Visão Geral",
+        "disciplina": "Bioética",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco estende ao ambiente digital a mesma condição estrutural de confiança que sustenta o sigilo médico descrita ali, retomando inclusive a analogia do cofre de banco usada naquele panorama."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s3-bioet-04-000",
+        "disciplina": "Bioética",
+        "semestre_futuro": 3,
+        "topico": "Início de vida e reprodução assistida",
+        "mecanismo_conexao": "Este bloco encerra o capítulo de sigilo médico; o próximo módulo abre um capítulo inteiramente novo do currículo de bioética, sobre status moral do embrião e reprodução assistida.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s3-bioet-03-002",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "Os mesmos critérios de dano à confiança que justificam as exceções ao sigilo verbal se aplicam, aqui, ao dever de notificar vazamentos de dados — em ambos os casos, silenciar ou minimizar o incidente agrava o dano à confiança do paciente."
+      },
+      {
+        "bloco_id": "s3-bioet-03-003",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Enquanto aquele bloco trata da vulnerabilidade do sigilo na relação direta entre adolescente e pais, este bloco trata da vulnerabilidade do mesmo sigilo na infraestrutura técnica que armazena a informação, independentemente da idade do paciente."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioet-03-004-fc01",
+      "pergunta": "Por que o sigilo médico, na era digital, deixou de poder ser garantido apenas por discrição verbal do profissional?",
+      "resposta": "Porque a informação de saúde contemporânea raramente vive apenas na conversa entre médico e paciente — ela é registrada em prontuários eletrônicos, acessada por múltiplos profissionais ao longo do tempo, armazenada em servidores hospitalares e, às vezes, compartilhada entre sistemas de diferentes instituições. Cada um desses pontos é uma porta potencial de vazamento ou acesso indevido que nenhuma conversa presencial jamais teve que enfrentar. Por isso, o sigilo médico contemporâneo exige também segurança da informação — controle de acesso, anonimização quando possível, e dever de notificar vazamentos — além da discrição pessoal tradicional.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["bioetica", "sigilo-medico", "lgpd"]
+    },
+    {
+      "card_id": "s3-bioet-03-004-fc02",
+      "pergunta": "Prontuário eletrônico de paciente com repercussão pública, internado por condição psiquiátrica, é acessado por funcionário administrativo sem vínculo com o cuidado direto do paciente, movido apenas por curiosidade. Como a instituição deveria conduzir esse incidente?",
+      "resposta": "Primeiro, detectar o acesso fora do padrão esperado através do sistema de auditoria que registra quem consultou qual prontuário e quando. Segundo, investigar a finalidade do acesso, confirmando ausência de justificativa clínica ou administrativa legítima. Terceiro, conter o incidente restringindo o acesso do responsável, aplicando medidas cabíveis e corrigindo eventual falha estrutural do sistema que permitiu o acesso indevido. Quarto, notificar o paciente afetado e, quando exigido pela normativa aplicável, a autoridade competente de proteção de dados, tratando o episódio com a mesma seriedade de uma quebra de sigilo verbal.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["bioetica", "lgpd", "prontuario-eletronico", "clinico"]
+    },
+    {
+      "card_id": "s3-bioet-03-004-fc03",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Um vazamento de dados de saúde causado por falha técnica de sistema é um problema puramente de tecnologia da informação, sem relação com o dever ético de sigilo médico.'",
+      "resposta": "Falso. Um vazamento de dados de saúde, mesmo causado por falha técnica, é o mesmo tipo de dano moral que uma quebra de sigilo verbal causa: a violação da confiança de um paciente que entregou informação sensível esperando proteção. Tratar o problema como puramente técnico arrisca a instituição se contentar em corrigir a falha de sistema sem reconhecer e reparar o dano de confiança causado ao paciente específico afetado — por isso o dever de notificar vazamentos e de tratar o incidente com seriedade ética é parte integrante do sigilo médico contemporâneo, não um adendo técnico independente.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["bioetica", "lgpd", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s3-bioet-03-004-fc04",
+      "pergunta": "A palavra 'dado' vem do latim datum (particípio passado de dare, dar), significando literalmente 'aquilo que foi dado'. Como essa etimologia ajuda a entender por que dados de saúde exigem proteção reforçada, como a LGPD estabelece?",
+      "resposta": "A raiz dare (a mesma de 'doar' e 'dádiva') revela que um dado de saúde não é uma abstração técnica neutra — é, literalmente, algo entregue por um paciente, muitas vezes em momento de vulnerabilidade real, na expectativa de que seria tratado com o mesmo cuidado de qualquer dádiva recebida. Essa raiz etimológica ajuda a entender por que a LGPD trata dados de saúde como categoria sensível, sujeita a regras mais rígidas do que dados administrativos comuns: o dado carrega, mesmo digitalizado, o mesmo peso de confiança que sustentava o sigilo verbal descrito no início deste capítulo.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["bioetica", "lgpd", "etimologia"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioet-03-004-caso01",
+      "titulo": "Acesso indevido a prontuário eletrônico de paciente com repercussão pública",
+      "apresentacao": "Paciente com alguma notoriedade pública é internado em hospital geral por condição psiquiátrica aguda. Durante a internação, o sistema de auditoria do prontuário eletrônico do hospital registra o acesso ao registro completo do paciente por um funcionário do setor administrativo, sem qualquer vínculo assistencial com o caso. A investigação posterior confirma que o acesso foi motivado por curiosidade pessoal, alimentada pela repercussão do caso na mídia local, sem qualquer justificativa profissional.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Configuração de sistema que permitiu a um funcionário administrativo, sem função assistencial direta, acessar o prontuário completo de um paciente específico, combinada com curiosidade pessoal despertada pela repercussão pública do caso."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Não há estrutura anatômica em risco — o que foi comprometido é a confiança do paciente na proteção de suas informações de saúde dentro do próprio sistema institucional, independentemente de qualquer conversa verbal ter sido traída."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A ausência de controle de acesso restrito por necessidade clínica permitiu que uma informação sensível fosse acessada sem qualquer finalidade legítima, configurando violação de dados equivalente, em dano moral, a uma quebra de sigilo verbal tradicional."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Registro de auditoria do sistema evidenciando acesso ao prontuário por perfil sem vínculo assistencial declarado com o paciente, fora do padrão esperado de uso do sistema."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A instituição investiga e confirma o acesso indevido, restringe o acesso do funcionário responsável, corrige a configuração do sistema que permitiu esse acesso amplo demais, e notifica o paciente afetado e a autoridade competente, tratando o incidente com a mesma seriedade que trataria uma quebra de sigilo verbal por parte de um profissional de saúde."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente o passo a passo da seção 'Como funciona', mostrando como a detecção, investigação, contenção e notificação de um acesso indevido a dados de saúde seguem uma lógica paralela à resposta a uma quebra de sigilo verbal, mas com ferramentas técnicas próprias do ambiente digital.",
+      "disciplinas_relacionadas": ["bioetica", "gestao-hospitalar", "direito-digital", "seguranca-da-informacao"],
+      "diagnostico_revelado": "Não há diagnóstico clínico a revelar — o caso ilustra violação de dados de saúde por acesso indevido a prontuário eletrônico, sem quebra de sigilo verbal envolvida.",
+      "tratamento_resumido": "Detecção do acesso fora do padrão via sistema de auditoria, investigação da finalidade do acesso, contenção do incidente com restrição de acesso e correção da falha estrutural do sistema, e notificação ao paciente afetado e à autoridade competente de proteção de dados."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioet-03-004-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente",
+        "tipo_imagem": "esquema_didatico"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Beauchamp TL, Childress JF. Principles of Biomedical Ethics. 8th ed. Oxford University Press; 2019. Capítulo sobre confidencialidade e privacidade informacional.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Diniz D, Guilhem D. O Que É Bioética. Coleção Primeiros Passos, Brasiliense; 2002.",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "[⚠️ A Lei Geral de Proteção de Dados brasileira (Lei nº 13.709/2018) trata dados de saúde como dado pessoal sensível; a legislação equivalente e seus detalhes de aplicação no Paraguai devem ser verificados separadamente antes de uso em prova de direito médico local.]",
+      "forca_evidencia": "C",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "O sigilo médico é garantido integralmente pela discrição verbal do profissional, independentemente de como os dados são armazenados eletronicamente",
+      "correcao": "O sigilo médico contemporâneo exige também segurança da informação — controle de acesso, anonimização quando possível, dever de notificar vazamentos — como extensão necessária da discrição verbal tradicional",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Um vazamento de dados de saúde por falha técnica é um problema de tecnologia da informação, sem relação com o dever ético de sigilo",
+      "correcao": "Um vazamento de dados é o mesmo tipo de dano moral que uma quebra de sigilo verbal, exigindo reconhecimento e reparação do dano de confiança causado ao paciente, não apenas correção técnica",
+      "armadilha_em_flashcard": "sim"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 3,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Conteúdo completo escrito a partir do esqueleto — 8 etapas, extensão do sigilo à proteção de dados/LGPD, caso de acesso indevido a prontuário eletrônico, flashcards, retomada da analogia do cofre, fechamento do capítulo 03",
+      "motivo": "Produção do quarto e último bloco filho de s3-bioet-03-000, encerrando o capítulo de sigilo médico e confidencialidade"
+    }
+  ],
   "_lentes": [
     "correlacao_clinica"
   ]

@@ -1,54 +1,280 @@
 {
+  "metadata": {
+    "titulo": "Imunohistoquímica (IHQ)",
+    "subtitulo": "Duas células parecem gêmeas ao microscópio — como saber quem é quem?",
+    "disciplina": "histologia",
+    "semestre": 1,
+    "tempo_leitura_minutos": 11,
+    "nivel": "CORE",
+    "tags": [
+      "histologia",
+      "diagnostico",
+      "anticorpos",
+      "patologia",
+      "moleculas"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "A imunohistoquímica resolve um problema que a morfologia sozinha não resolve: duas células podem ter forma, tamanho e núcleo praticamente idênticos ao microscópio e ainda assim serem de origens completamente diferentes — um carcinoma de mama metastático e um melanoma podem se parecer sob H&E. A solução é emprestar do sistema imune sua arma mais precisa: o anticorpo, capaz de reconhecer uma única proteína entre milhares com especificidade de chave-fechadura. Aplicamos anticorpos fabricados em laboratório sobre o corte de tecido; onde a proteína-alvo existe, o anticorpo se prende, e uma enzima acoplada a ele converte um substrato incolor em um pigmento visível — geralmente marrom. O resultado transforma identidade molecular invisível em cor visível sob o microscópio óptico comum, sendo hoje indispensável para classificar tumores, decidir terapias-alvo e encontrar a origem de metástases de sítio primário desconhecido.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um patologista olha duas lâminas lado a lado. Em ambas, células grandes, núcleos irregulares, muitas mitoses — morfologicamente quase indistinguíveis. Uma veio de um linfonodo axilar, a outra de um linfonodo cervical. Uma é metástase de carcinoma de mama; a outra, de melanoma. O tratamento para cada uma é radicalmente diferente. E a hematoxilina-eosina, que revelou tão bem a arquitetura geral do tecido, não tem nada a dizer sobre qual célula é qual. A forma se esgotou como pista."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O que fazer quando a forma não basta mais?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se a arquitetura externa da célula não denuncia sua origem, é preciso interrogar o que está dentro dela — suas proteínas específicas. Toda célula tumoral costuma carregar, em maior ou menor grau, marcadores herdados do tecido de que se originou: uma célula de mama pode expressar certas citoqueratinas e receptores hormonais; um melanócito expressa proteínas como a S100 e o Melan-A. O problema é que essas proteínas são invisíveis ao microscópio óptico comum — não têm cor, não têm forma reconhecível isoladamente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta biológica mais precisa que existe para reconhecer uma proteína específica entre milhares já foi inventada — pelo próprio sistema imune. Um anticorpo é uma proteína fabricada por linfócitos B para se encaixar, com precisão quase geométrica, em um único alvo molecular (o antígeno) e ignorar todo o resto. Se sequestrarmos esse mecanismo e o aplicarmos deliberadamente sobre um corte de tecido, podemos perguntar a ele, molécula por molécula: 'você reconhece isto?'"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Só falta um passo: tornar essa ligação, que é invisível, em algo que o olho enxergue. A solução é acoplar ao anticorpo uma enzima — tipicamente a peroxidase. Quando expomos a lâmina a um substrato incolor específico dessa enzima (o cromógeno), ela o converte em um precipitado colorido, geralmente castanho, exatamente no local onde o anticorpo se prendeu. Onde não há ligação, não há enzima, não há cor."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há uma complicação prática que não pode ser ignorada. A maioria dos tecidos chega ao laboratório fixado em formalina e embebido em parafina — processo que preserva bem a arquitetura, mas que também cria ligações químicas cruzadas entre proteínas, mascarando fisicamente os sítios onde o anticorpo precisaria se encaixar. Antes de aplicar o anticorpo, é preciso 'desmascarar' o antígeno, geralmente com calor sob pressão ou digestão enzimática, para reexpor o sítio de ligação."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Do tecido fixado à cor visível sob o microscópio",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Recuperação antigênica",
+          "explicacao": "Calor ou enzimas rompem as ligações cruzadas criadas pela formalina, reexpondo o sítio da proteína-alvo que estava mascarado."
+        },
+        {
+          "numero": 2,
+          "titulo": "Ligação do anticorpo primário",
+          "explicacao": "O anticorpo desenhado para reconhecer a proteína de interesse percorre o corte e se prende exatamente onde o antígeno está presente."
+        },
+        {
+          "numero": 3,
+          "titulo": "Amplificação com anticorpo secundário",
+          "explicacao": "Um segundo anticorpo, que reconhece o primeiro, se liga a ele carregando múltiplas cópias da enzima — amplificando o sinal que seria fraco demais com apenas uma enzima por antígeno."
+        },
+        {
+          "numero": 4,
+          "titulo": "Revelação cromogênica",
+          "explicacao": "A enzima converte o substrato incolor em um precipitado colorido e insolúvel exatamente no ponto da ligação, tornando visível ao microscópio óptico comum o que era invisível."
+        }
+      ]
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎽",
+      "conteudo": "Pense em uma maratona com milhares de corredores, todos com o mesmo uniforme cinza — impossível identificar quem é de qual clube só de olhar. Só que cada corredor carrega, escondido sob a camisa, um distintivo do seu time de origem. Um fiscal com um detector especial passa por cada corredor: se o detector reconhece o distintivo do time que procura, ele acende uma luz colorida sobre aquele corredor. Mapeamento: multidão de corredores uniformizados = células morfologicamente semelhantes; distintivo escondido sob a camisa = antígeno (proteína específica de origem); detector do fiscal = anticorpo primário; luz colorida acesa = revelação cromogênica; corredor iluminado identificado = célula com origem tecidual confirmada."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A imunohistoquímica não substitui a morfologia — ela a complementa. É um ensaio bioquímico de reconhecimento molecular que acontece dentro da arquitetura tecidual preservada, permitindo ver tanto onde a célula está quanto o que ela é por dentro."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, confirme: a IHQ não altera nem cria nada de novo no tecido — ela revela o que já estava lá, mas era invisível. Se você ainda tem dúvida sobre a lógica chave-fechadura do anticorpo-antígeno, vale revisar antes de prosseguir."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "imunohistoquímica",
+      "origem": "grego/latim — imuno (do sistema imune) + histo (grego histós, tecido) + química",
+      "significado": "reação química, baseada no sistema imune, aplicada ao tecido",
+      "explicacao": "O nome descreve exatamente as três camadas da técnica: emprestamos a especificidade do sistema imunológico (anticorpos), aplicamos sobre tecido preservado (histologia) e revelamos o resultado por uma reação química (a catálise enzimática do cromógeno)."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se os anticorpos não tivessem a especificidade que têm — se reconhecessem qualquer proteína de forma inespecífica — o que aconteceria com a utilidade diagnóstica da imunohistoquímica?",
+      "resposta": "A técnica se tornaria inútil para diagnóstico. Toda a lâmina se coraria de forma difusa e uniforme, sem distinguir células de origens diferentes. Não seria possível diferenciar um carcinoma de mama de um melanoma, nem determinar a origem de uma metástase de sítio primário desconhecido, nem selecionar terapias-alvo baseadas em receptores específicos (como o HER2 no câncer de mama). A oncologia de precisão, que depende de caracterizar molecularmente cada tumor antes de escolher o tratamento, simplesmente não existiria na forma que existe hoje."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Anticorpo, antígeno e a cadeia de revelação da cor",
+      "descricao": "Corte transversal esquemático de uma membrana celular mostrando o anticorpo primário em forma de Y ligado a um receptor de membrana específico, o anticorpo secundário carregando múltiplas enzimas acopladas, e o cromógeno sendo convertido em precipitado castanho visível.",
+      "prompt_ia": "Ilustração científica vetorial, corte transversal de membrana celular, fundo neutro adaptativo. Anticorpo primário em forma de Y ligado a uma proteína receptora na membrana. Anticorpo secundário se ligando à base do anticorpo primário, carregando três moléculas de enzima peroxidase representadas como esferas. Seta mostrando conversão do cromógeno incolor em precipitado castanho ao redor do complexo. Legendas em português, estilo didático de livro-texto de patologia."
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-hist-01-005-06-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Por que a etapa de recuperação antigênica é necessária na maioria das amostras de tecido embebidas em parafina, antes de aplicar o anticorpo?",
+      "resposta": "A fixação em formalina cria ligações cruzadas entre proteínas (cross-linking), que preservam a estrutura do tecido mas também ocultam fisicamente os epítopos — os sítios exatos onde o anticorpo precisaria se encaixar. O calor sob pressão ou a digestão enzimática rompem essas ligações cruzadas, reexpondo o epítopo e permitindo que o anticorpo o reconheça. Sem essa etapa, muitos antígenos permaneceriam mascarados e a marcação sairia fraca ou ausente, mesmo que a proteína-alvo estivesse presente em abundância.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "tecnica",
+        "preparo"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-005-06-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "Em um protocolo de detecção indireta, o que aconteceria ao sinal final se o anticorpo secundário fosse removido do processo?",
+      "resposta": "A intensidade do sinal cairia drasticamente ou desapareceria. O anticorpo secundário funciona como amplificador: ele se liga a múltiplas moléculas de enzima e reconhece o anticorpo primário, multiplicando o número de sítios de reação enzimática para cada molécula de antígeno originalmente ligada. Sem essa amplificação, restaria apenas a enzima diretamente conjugada ao anticorpo primário (se houver), gerando um sinal muito mais fraco e possivelmente indetectável ao microscópio óptico.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "amplificacao",
+        "tecnica"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-005-06-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Compare o princípio físico-químico por trás da coloração por hematoxilina-eosina e da imunohistoquímica.",
+      "resposta": "A hematoxilina-eosina é uma coloração baseada em atração eletrostática: a hematoxilina se liga a estruturas carregadas negativamente (basofilia) e a eosina a estruturas carregadas positivamente (acidofilia), revelando a arquitetura geral da célula por contraste de carga. A imunohistoquímica é um ensaio de reconhecimento molecular específico: depende do encaixe geométrico e químico exato entre um anticorpo e seu antígeno-alvo, seguido de uma reação enzimática para revelar essa ligação. A primeira mostra 'onde estão as estruturas'; a segunda mostra 'o que, molecularmente, cada estrutura é'.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "histologia",
+        "tecnica"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-005-06-fc04",
+      "tipo": "clinico",
+      "pergunta": "Uma paciente é diagnosticada com câncer de mama e o patologista solicita, além da hematoxilina-eosina, um painel de imunohistoquímica para receptores de estrogênio, progesterona e HER2. Por que essa informação é decisiva para o tratamento, e não apenas para o diagnóstico?",
+      "resposta": "A morfologia tumoral confirma que se trata de um carcinoma, mas não diz nada sobre quais vias moleculares o tumor depende para crescer. A IHQ revela se as células tumorais expressam receptores de estrogênio e progesterona (que indicam resposta provável à hormonioterapia) e se superexpressam a proteína HER2 (que indica resposta a terapias-alvo anti-HER2, como o trastuzumabe). Sem essa caracterização molecular, o oncologista estaria escolhendo o tratamento às cegas — dois tumores morfologicamente idênticos podem ter perfis de receptores completamente diferentes e, portanto, exigir tratamentos opostos.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "oncologia",
+        "diagnostico"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-005-06-fc05",
+      "tipo": "etimologia",
+      "pergunta": "O nome 'imunohistoquímica' junta três raízes distintas. O que cada uma revela sobre o princípio de funcionamento da técnica, e por que essa combinação é mais informativa do que apenas dizer 'coloração especial'?",
+      "resposta": "'Imuno' aponta para a origem do mecanismo: o reconhecimento anticorpo-antígeno emprestado do sistema imunológico, que dá à técnica sua especificidade extrema. 'Histo' localiza onde a técnica atua: dentro da arquitetura tecidual preservada, não em solução como em outros ensaios imunológicos (por exemplo, o ELISA). 'Química' aponta para o mecanismo de revelação: uma reação enzimática que converte a ligação invisível em pigmento visível. Chamar de 'coloração especial' esconderia que a técnica não é uma tintura — é um ensaio bioquímico de reconhecimento molecular que acontece a se revelar como cor apenas na última etapa.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "etimologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-hist-01-005-06-caso01",
+      "titulo": "Massa cervical sem sítio primário evidente",
+      "apresentacao": "Homem de 61 anos, ex-tabagista, procura atendimento por linfonodo cervical direito aumentado há 6 semanas, indolor, de consistência endurecida. Nega emagrecimento significativo. Exame físico sem outras alterações relevantes; endoscopia de vias aéreas superiores e digestivas altas sem lesão visível. Punção aspirativa do linfonodo mostra células malignas de padrão epitelial, mas a morfologia isolada não permite definir se a origem é de cabeça e pescoço, pulmão ou outro sítio. Biópsia excisional do linfonodo é encaminhada para imunohistoquímica.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Disseminação linfática de células neoplásicas a partir de um tumor primário ainda não identificado clinicamente."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Parênquima linfonodal cervical, substituído progressivamente por células malignas de padrão epitelial."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A morfologia das células tumorais é inespecífica sob H&E — grande, atípica, mas sem características que apontem claramente para um tecido de origem."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Linfonodomegalia cervical isolada, sem sintomas do trato aerodigestivo que apontem diretamente para o sítio primário."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O painel de imunohistoquímica (incluindo marcadores como citoqueratinas de diferentes pesos moleculares, TTF-1 e p16) revela um perfil compatível com carcinoma de células escamosas relacionado a HPV, orientando a busca dirigida por um tumor primário em orofaringe — que é então localizado e tratado."
+        }
+      ],
+      "conexao_com_bloco": "Este caso mostra exatamente o limite que a imunohistoquímica supera: quando a morfologia tumoral se esgota como pista diagnóstica, o perfil de expressão de proteínas específicas — revelado pelos anticorpos — permite não apenas classificar o tumor, mas literalmente guiar a busca clínica pelo sítio de origem.",
+      "disciplinas_relacionadas": [
+        "patologia",
+        "oncologia",
+        "otorrinolaringologia"
+      ],
+      "diagnostico_revelado": "Metástase cervical de carcinoma de células escamosas de orofaringe relacionado a HPV, com sítio primário inicialmente oculto",
+      "tratamento_resumido": "Tratamento dirigido ao tumor primário de orofaringe (cirurgia e/ou quimiorradioterapia), conforme estadiamento, uma vez identificado o sítio de origem."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-hist-01-005",
+        "titulo": "Coloração — Por Que o Tecido Incolor Precisa de Corante",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Entender que a coloração convencional depende de propriedades físico-químicas do tecido ajuda a perceber por que a IHQ precisa de um princípio completamente diferente — o reconhecimento molecular específico — para ir além do que a carga elétrica revela."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "topico": "Classificação molecular de neoplasias",
+        "mecanismo_conexao": "O uso de painéis de imunohistoquímica para definir subtipos moleculares de câncer é a base do diagnóstico patológico definitivo em oncologia moderna.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "oncologia",
+        "semestre_futuro": 7,
+        "topico": "Terapias-alvo guiadas por expressão de receptores",
+        "mecanismo_conexao": "A detecção por IHQ de receptores como HER2, receptores de estrogênio e PD-L1 determina diretamente a elegibilidade do paciente para terapias-alvo e imunoterapia.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-01-005-07",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "A imunohistoquímica usa uma reação enzimática para gerar um precipitado colorido visível ao microscópio óptico comum, enquanto a imunofluorescência usa fluoróforos que exigem microscópio de fluorescência e luz UV — o princípio de reconhecimento anticorpo-antígeno é o mesmo, mas o sistema de revelação é diferente."
+      }
+    ]
+  },
   "resumo_id": "s1-hist-01-005-06",
   "no_pai_id": "s1-hist-01-005",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Imunohistoquímica (IHQ)",
-    "semestre": 1,
-    "disciplina": "histologia",
-    "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "hist",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Anticorpo-marcador localiza proteína específica; pilar do diagnóstico oncológico",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao-clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Pathologic Basis of Disease. 10th ed. Elsevier; 2020.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Ramos-Vara JA. Principles and methods of immunohistochemistry. Methods Mol Biol. 2017.",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "horizonte_validade": "em_mudanca",
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Imunohistoquímica é apenas 'mais uma coloração', equivalente à H&E em princípio",
+      "correcao": "IHQ é um ensaio bioquímico de reconhecimento molecular específico (anticorpo-antígeno), fundamentalmente diferente da atração eletrostática que rege a H&E",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "A cor na IHQ vem diretamente do anticorpo",
+      "correcao": "A cor vem da reação enzimática do cromógeno, catalisada pela enzima acoplada ao sistema de detecção — o anticorpo em si é incolor",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

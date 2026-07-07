@@ -4,49 +4,144 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Anatomia e Fisiologia da Mama Aplicada à Clínica",
+    "titulo": "Anatomia e Fisiologia da Mama Aplicada a Clinica",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "patologia-mamaria",
+      "correlacao_basica",
+      "mecanismo"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Unidade ducto-lobular, drenagem linfática, influência hormonal",
-  "narrativa": [],
+  "resumo_conciso": "A mama é formada por ductos, lóbulos, estroma, gordura, pele, papila e drenagem linfática axilar. Hormônios modulam dor, nodularidade, lactação e risco de algumas lesões.",
+  "narrativa": [
+    {
+      "tipo": "abertura",
+      "conteudo": "A mama clínica não é apenas glândula. Ela inclui pele, complexo aréolo-papilar, ductos, lóbulos, estroma fibroso, gordura, vasos, nervos e drenagem linfática."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "A unidade ducto-lobular terminal é fundamental porque muitas alterações benignas e carcinomas se originam nela. Ductos levam secreção até a papila; lóbulos produzem leite na lactação."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "A drenagem linfática vai principalmente para linfonodos axilares, mas também pode alcançar cadeia mamária interna e supraclavicular. Por isso, axila faz parte do exame da mama."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Estrogênio e progesterona modulam proliferação ducto-lobular, retenção hídrica e sensibilidade. Mastalgia cíclica e nodularidade pré-menstrual refletem essa fisiologia."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Prolactina e ocitocina organizam lactação: prolactina estimula produção de leite; ocitocina promove ejeção. Galactorreia fora da lactação pede pensar em medicamentos, prolactina e tireoide."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "O tecido mamário muda com idade. Jovens tendem a mamas mais densas; após menopausa há maior substituição gordurosa, o que altera sensibilidade da mamografia."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Clinicamente, localização deve ser descrita por quadrante ou relógio, distância da papila, tamanho, consistência, mobilidade, dor, pele e linfonodos."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      "s7-go1-08-033"
+    ],
+    "futuras": [
+      "s7-go1-09-004",
+      "s7-go1-09-006"
+    ],
+    "laterais": [
+      "s7-go1-05-005",
+      "s7-go1-07-006"
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "id": "s7-go1-09-001-fc-01",
+      "pergunta": "Qual unidade anatômica é central na patologia mamária?",
+      "resposta": "Unidade ducto-lobular terminal.",
+      "tipo": "conceito"
+    },
+    {
+      "id": "s7-go1-09-001-fc-02",
+      "pergunta": "Para onde drena principalmente a linfa mamária?",
+      "resposta": "Linfonodos axilares.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-09-001-fc-03",
+      "pergunta": "Quais hormônios participam da lactação?",
+      "resposta": "Prolactina na produção e ocitocina na ejeção do leite.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-09-001-fc-04",
+      "pergunta": "Como descrever um nódulo?",
+      "resposta": "Localização, tamanho, consistência, mobilidade, dor, pele, papila e linfonodos.",
+      "tipo": "aplicacao"
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "id": "s7-go1-09-001-cc-01",
+      "titulo": "Axila no exame",
+      "enunciado": "Paciente com nódulo mamário pergunta por que o médico palpa a axila.",
+      "pergunta": "Qual explicação?",
+      "resposta_comentada": "A drenagem linfática mamária é predominantemente axilar, e linfonodos podem sinalizar inflamação ou neoplasia."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Anatomia da mama com ductos, lóbulos, unidade ducto-lobular, papila e drenagem linfática axilar.",
+        "alt": "Ilustracao educacional para Anatomia e Fisiologia da Mama Aplicada a Clinica"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "ACR Appropriateness Criteria - Palpable Breast Masses",
+      "url": "https://acsearch.acr.org/docs/69495/Narrative/",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "ACR Appropriateness Criteria - Breast Pain",
+      "url": "https://acsearch.acr.org/docs/3091546/Narrative/",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "ACR Appropriateness Criteria - Evaluation of Nipple Discharge",
+      "url": "https://acsearch.acr.org/docs/3099312/Narrative/",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "correlacao_basica",
     "mecanismo"

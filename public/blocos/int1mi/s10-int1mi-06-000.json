@@ -9,52 +9,162 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Análise de Erro e Near-Miss",
+    "subtitulo": "Se você quase prescreveu a dose errada, a pergunta certa é 'quem errou' ou 'o que no sistema deixou isso passar'?",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 6,
+    "topico": 0,
     "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "seguranca_paciente",
+      "honestidade_epistemica",
+      "comunicacao"
     ],
+    "tipo_conteudo": "analise_erro",
+    "status": "publicado",
+    "data_criacao": "2026-07-05",
+    "data_revisao": "2026-07-05",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
+    "tempo_estudo_minutos": 9,
+    "palavras_chave": [
+      "near-miss",
+      "M&M",
+      "cultura justa",
+      "queijo suíço",
+      "disclosure"
+    ],
     "formato_internato": "analise_erro"
   },
-  "resumo_conciso": "A pedagogia do erro: aprender com o quase-erro sem culpabilizar, e comunicar com honestidade",
-  "narrativa": [],
+  "resumo_conciso": "Todo médico, em algum momento, quase erra — ou erra. Este módulo ensina a diferença entre culpar uma pessoa e entender um sistema: a análise de erro que a ANIMA ensina nunca pergunta 'de quem foi a culpa', pergunta 'quais barreiras do sistema falharam, e o que impede isso de acontecer de novo'.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você prescreve uma dose de heparina. A enfermagem, antes de aplicar, percebe que o cálculo está dez vezes maior do que deveria — um erro de vírgula decimal que passou pela sua conferência e quase passou pela dela também. Nada aconteceu ao paciente. Mas o coração ainda bate acelerado uma hora depois, e a primeira pergunta que vem à cabeça é: \"eu vou ser punido por isso?\". A pergunta certa, que este módulo ensina a fazer, é outra: \"o que no sistema — na forma como a prescrição foi conferida, na dose padrão, na falta de um segundo alerta — deixou esse erro chegar tão perto de acontecer?\""
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Cultura justa: o modelo do queijo suíço"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A medicina segura moderna abandonou a ideia de que erro é sempre falha individual de atenção ou competência. O modelo do queijo suíço explica por que: um sistema de segurança tem várias camadas de proteção (a prescrição, a dupla checagem, o alerta do sistema, a conferência da enfermagem), e cada camada tem falhas pontuais — como buracos num queijo suíço. Um evento adverso só acontece quando os buracos de várias camadas se alinham ao mesmo tempo. Isso não elimina a responsabilidade individual, mas muda a pergunta central de \"quem furou o queijo\" para \"por que os buracos se alinharam desta vez, e como reduzimos isso no futuro\"."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Cultura justa não significa ausência de responsabilidade — significa que o objetivo da análise é prevenir a repetição, não encontrar um culpado para punir. Um interno que sabe que vai ser tratado com justiça ao relatar um near-miss vai relatar; um que teme punição, esconde — e esconder é o que realmente permite que o mesmo erro aconteça de novo, com um paciente que não teve a sorte da enfermagem atenta."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Guarde a distinção entre near-miss (o erro que quase aconteceu, mas foi interceptado antes de atingir o paciente) e evento adverso (o erro que de fato causou dano). Os dois merecem a mesma análise sistêmica — o near-miss é, na verdade, a oportunidade mais barata de aprender, porque ainda não houve dano."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se, com medo de represália, você decidir não relatar o near-miss da heparina, já que \"no fim, nada aconteceu\"?",
+      "resposta": "Sem o relato, o sistema não aprende que aquela camada de proteção específica falhou — e o mesmo buraco no queijo suíço continua lá, esperando se alinhar de novo com outra falha, só que da próxima vez pode não haver uma enfermeira atenta para interceptar a tempo. O near-miss não relatado é uma lição paga por outro paciente no futuro, só que sem o benefício de ter sido evitada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os três blocos deste módulo cobrem: a análise de um near-miss de prescrição específico (o caso da heparina é o protótipo), a técnica formal de análise de causa-raiz de um evento adverso (usada nas sessões de M&M — morbidade e mortalidade — do hospital), e como comunicar um erro ou uma má notícia relacionada a ele, tanto para o paciente/família quanto para a equipe, sem minimizar nem se autopunir publicamente."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s12-int3emerg-02-003",
+        "titulo": "EPA-13 — Segurança do Paciente e Cultura Justa na UTI",
+        "disciplina": "Estágio em Emergência e UTI",
+        "semestre": 12,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s10-int1mi-03-000",
+        "titulo": "Procedimentos Mínimos do Estágio",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-06-001",
+        "titulo": "O Near-Miss da Prescrição — a dose que quase saiu errada",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Primeiro bloco do módulo — desenvolve o caso da heparina citado aqui em profundidade, com a análise sistêmica completa."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-06-000-001",
+      "tipo": "por_que",
+      "pergunta": "Por que a análise de erro da ANIMA usa o modelo do queijo suíço em vez de perguntar diretamente 'quem errou'?",
+      "resposta": "Porque eventos adversos raramente têm uma única causa individual — geralmente resultam do alinhamento de falhas em várias camadas de proteção do sistema (o modelo do queijo suíço). Perguntar só 'quem errou' resolve a camada mais visível (a pessoa), mas deixa os outros buracos do sistema intactos, prontos para se alinhar de novo com outra pessoa no futuro. Perguntar 'por que os buracos se alinharam' previne a repetição de forma mais eficaz.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "analise_erro",
+        "seguranca_paciente"
+      ]
+    },
+    {
+      "card_id": "fc-s10-int1mi-06-000-002",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença entre near-miss e evento adverso, e por que os dois merecem a mesma análise sistêmica?",
+      "resposta": "Near-miss é o erro que foi interceptado antes de atingir o paciente (nenhum dano ocorreu); evento adverso é o erro que efetivamente causou dano. Ambos revelam a mesma falha sistêmica subjacente — a diferença entre um e outro muitas vezes é apenas sorte ou uma barreira de proteção que funcionou a tempo. Por isso o near-miss merece a mesma seriedade de análise: é a chance de corrigir o sistema antes que a mesma falha aconteça sem a interceptação da vez anterior.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "analise_erro",
+        "near-miss"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Este bloco é um nó organizador de módulo sobre segurança do paciente e cultura justa (análise sistêmica de erro e near-miss) — trata de um processo organizacional e de sistemas de saúde, não de uma estrutura anatômica ou entidade clínica isolada com cascata causal própria. O near-miss específico da heparina, citado como exemplo aqui, é desenvolvido com detalhamento completo no bloco-filho s10-int1mi-06-001."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "seguranca_paciente",
-    "honestidade_epistemica",
-    "comunicacao"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "titulo": "Human Error",
+      "autores": "Reason J",
+      "ano": 1990,
+      "publicacao": "Cambridge University Press"
+    },
+    {
+      "tipo": "diretriz",
+      "titulo": "A Just Culture Guide",
+      "autores": "Institute for Safe Medication Practices (ISMP)",
+      "ano": 2019
+    },
+    {
+      "tipo": "artigo",
+      "titulo": "Error disclosure: a new domain for safety culture assessment",
+      "autores": "Kaldjian LC",
+      "ano": 2006,
+      "publicacao": "BMJ Quality & Safety"
+    }
   ]
 }

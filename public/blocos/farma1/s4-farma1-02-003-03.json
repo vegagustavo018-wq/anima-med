@@ -2,53 +2,369 @@
   "resumo_id": "s4-farma1-02-003-03",
   "no_pai_id": "s4-farma1-02-003",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-02-002"
+  ],
   "metadata": {
     "titulo": "Antagonismo Competitivo x Não-Competitivo",
+    "subtitulo": "Bloquear um receptor sempre significa a mesma coisa?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "antagonismo",
+      "antagonista-competitivo",
+      "antagonista-nao-competitivo",
+      "curva-dose-resposta",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Reversível/deslocável x irreversível; efeito na curva dose-resposta",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior mostrou que um ligante com afinidade mas sem atividade intrínseca ocupa o receptor sem ativá-lo — é a fita adesiva colada sobre o interruptor. Mas essa imagem, sozinha, ainda esconde uma pergunta prática: a fita pode ser removida se alguém empurrar com força suficiente, ou ela está colada para sempre? A resposta divide os antagonistas em duas famílias com comportamento farmacológico muito diferente. O antagonismo competitivo é reversível: o antagonista se liga ao mesmo sítio que o agonista, mas a ligação é lábil, e aumentar a concentração de agonista consegue deslocá-lo de volta — na curva dose-resposta, isso aparece como um desvio paralelo para a direita, mantendo o efeito máximo intacto. O antagonismo não-competitivo (incluindo o caso extremo, irreversível) não pode ser revertido por mais agonista, seja porque o antagonista se liga a um sítio diferente (alostérico) sem deslocar o agonista do seu lugar, seja porque forma uma ligação covalente permanente com o próprio sítio ortostérico; o resultado na curva é a redução do efeito máximo (Emax), sem o desvio paralelo. Essa distinção não é só teórica: decide se aumentar a dose de um agonista consegue vencer um bloqueio farmacológico ou não — uma pergunta que a clínica faz todos os dias diante de uma superdosagem, uma interação medicamentosa ou uma intoxicação.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior deixou uma fita adesiva colada sobre um interruptor: um ligante com afinidade, mas sem atividade intrínseca, ocupando o receptor sem ativá-lo. A imagem explica por que existe bloqueio. Mas não responde a uma pergunta que muda tudo na prática clínica: essa fita pode ser arrancada se alguém empurrar com força suficiente, ou ela está soldada ali para sempre?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta importa porque decide o que fazer diante de um paciente bloqueado. Se o bloqueio pode ser vencido por mais agonista, a solução é simples: aumentar a dose, ou esperar a competição se resolver a favor de quem está em maior concentração. Se o bloqueio não pode ser vencido dessa forma, aumentar a dose do agonista é inútil — e pode até ser perigoso, porque o médico gasta tempo tentando uma estratégia que estruturalmente não funciona."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: nem todo bloqueio de receptor é igual"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Bloquear um receptor parece, à primeira vista, uma ação única: o antagonista ocupa o lugar, o agonista não consegue entrar, fim da história. Mas essa descrição esconde uma variável crítica — o quão firme e o quão específico é esse bloqueio. Um antagonista pode se prender ao receptor de um jeito frágil, quase uma disputa de posição, ou pode se prender de um jeito definitivo, que nenhuma quantidade de concorrência desfaz. E pode, ainda, nem disputar o mesmo espaço do agonista: pode se ligar em outro ponto da proteína e, mesmo assim, impedir que ela funcione."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se a farmacologia tratasse todo antagonismo como equivalente, seria incapaz de prever se um bloqueio pode ser revertido pela dose do próprio agonista — uma informação decisiva em intoxicações, superdosagens e no desenho racional de doses combinadas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: a pergunta que este bloco resolve não é 'o receptor está bloqueado?' — isso já foi estabelecido. É 'esse bloqueio pode ser desfeito por mais agonista, ou não?'"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: dois modos de ocupar sem ativar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacologia resolveu essa pergunta reconhecendo que a ligação de um antagonista ao receptor pode ter duas naturezas diferentes: uma ligação reversível e deslocável no mesmo sítio do agonista, ou uma ligação que não é deslocável por mais agonista — seja porque ocupa outro lugar na proteína, seja porque está quimicamente soldada. Essa diferença de natureza da ligação é o que separa as duas famílias de antagonismo, e é ela — não o efeito final de 'bloquear' — que a clínica precisa reconhecer primeiro."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito: o mesmo sítio ou um sítio diferente, ligação lábil ou covalente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O antagonista competitivo é construído para encaixar no mesmo sítio ortostérico onde o agonista se ligaria — a mesma fechadura, disputada por duas chaves diferentes. A ligação dele ao receptor é não-covalente e reversível: pontes de hidrogênio, interações iônicas, forças de van der Waals, exatamente o tipo de ligação lábil que caracteriza qualquer interação fármaco-receptor comum. Nada ali é permanente; é uma questão de tempo até essa molécula se soltar, e o receptor fica livre de novo para aceitar a chave seguinte que aparecer."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O antagonista não-competitivo tem duas construções possíveis. Uma delas se liga a um sítio alostérico — uma região da proteína diferente do sítio onde o agonista se encaixa — e, ao se ligar ali, distorce a proteína inteira de um jeito que impede a ativação, mesmo que o agonista consiga ocupar seu próprio sítio normalmente. A outra construção, o caso extremo e irreversível, forma uma ligação covalente com o próprio sítio ortostérico ou com um resíduo próximo — uma solda química, não um encaixe temporário. Nos dois casos, o resultado é o mesmo do ponto de vista funcional: mais agonista não desfaz o bloqueio."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Competitivo: mesmo sítio do agonista, ligação lábil, reversível pela concentração. Não-competitivo (incluindo o irreversível): sítio diferente ou ligação covalente, não reversível por mais agonista."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona: o efeito na curva dose-resposta"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É na curva dose-resposta que essa diferença de mecanismo se torna visível e mensurável. Lembre que essa curva relaciona a concentração do agonista (no eixo horizontal, em escala logarítmica) com o efeito produzido (no eixo vertical), até atingir um patamar máximo — o Emax."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O que acontece com a curva em cada tipo de antagonismo",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Antagonismo competitivo — desvio paralelo para a direita",
+          "explicacao": "Como o antagonista disputa o mesmo sítio, aumentar a concentração do agonista desloca gradualmente o antagonista para fora do receptor — a lei da ação das massas favorece quem está em maior quantidade. Por isso, dado agonista suficiente, o mesmo Emax de sempre é alcançado; só é preciso mais dose para chegar lá. Na curva, isso aparece como um deslocamento paralelo para a direita: a curva inteira, com a mesma forma e o mesmo topo, migra para concentrações mais altas. Quanto maior a dose do antagonista presente, maior o desvio — mas o topo nunca abaixa."
+        },
+        {
+          "numero": 2,
+          "titulo": "Antagonismo não-competitivo — queda do Emax",
+          "explicacao": "Como o antagonista não compete pelo mesmo sítio (ou está covalentemente soldado), nenhuma quantidade de agonista consegue recuperar os receptores perdidos para a ação dele. Uma fração dos receptores fica permanentemente indisponível (ou funcionalmente inativada pela distorção alostérica), então o efeito máximo que o sistema consegue produzir cai — o Emax é reduzido. A curva não se desloca em paralelo: ela achata, com o topo mais baixo que o original, mesmo que se despeje agonista sem limite."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa diferença gráfica é, na prática, um teste diagnóstico: se ao adicionar mais agonista a curva volta a atingir o mesmo platô de antes (só que mais à direita), o bloqueio é competitivo e reversível por dose. Se o platô simplesmente não é mais alcançável, por mais agonista que se use, o bloqueio é não-competitivo — e a única saída terapêutica é reduzir a quantidade do próprio antagonista presente (esperar metabolização, se for reversível em outro sentido, ou usar outra estratégia), não empurrar mais agonista contra ele."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Guarde o critério prático: desviou a curva para a direita mantendo o topo — competitivo, vencível por dose. Abaixou o topo — não-competitivo, não vencível por dose."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa distinção se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa distinção depende diretamente da curva dose-resposta descrita anteriormente: é literalmente o mesmo gráfico, com o agonista sozinho versus o agonista na presença do antagonista, que revela qual dos dois mecanismos está em ação. Sem aquela curva como referência, não haveria como distinguir visualmente um desvio paralelo de uma queda de Emax — a diferença entre competitivo e não-competitivo é, antes de tudo, uma diferença geométrica na mesma curva já conhecida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, essa distinção decide a conduta diante de bloqueios farmacológicos indesejados. Uma superdosagem por antagonista competitivo pode, em teoria, ser combatida elevando a concentração do agonista (ou de um agonista relacionado) até vencer a competição — é o princípio por trás de algumas estratégias de reversão. Diante de um antagonista não-competitivo ou irreversível, essa estratégia não tem base racional: o organismo precisa metabolizar ou eliminar o antagonista, ou sintetizar novos receptores, porque nenhuma dose de agonista reabre a porta que foi soldada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "competitivo e não-competitivo",
+      "origem": "do latim competere (buscar junto, disputar em conjunto — com + petere, 'dirigir-se a, buscar')",
+      "significado": "competitivo: que disputa o mesmo objeto com outro; não-competitivo: que não entra nessa disputa direta",
+      "explicacao": "Competere descrevia originalmente duas partes buscando o mesmo alvo ao mesmo tempo — a raiz petere aparece também em 'apetite' e 'petição', sempre no sentido de 'buscar, dirigir-se a'. Quando a farmacologia chamou um antagonista de competitivo, tomou emprestada exatamente essa imagem: duas moléculas, agonista e antagonista, buscando o mesmo sítio de ligação, numa disputa cuja vitória depende da concentração relativa de cada uma. O antagonista não-competitivo recebeu o nome por exclusão — ele simplesmente não entra nessa disputa pelo mesmo alvo, seja porque mira em outro lugar da proteína, seja porque sua ligação não é uma disputa, e sim uma soldagem definitiva. O nome já anuncia o critério prático: onde há disputa pelo mesmo sítio, mais concentração de um lado muda o resultado; onde não há disputa, não muda."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a distinção"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🪑",
+      "conteudo": "Pense numa única cadeira (o receptor) e duas situações diferentes de disputa por ela. Na primeira, duas pessoas — o agonista e o antagonista competitivo — disputam a mesma cadeira o tempo todo: quem está sentado pode ser expulso se a outra pessoa insistir com força suficiente, e se você trouxer reforços suficientes do lado do agonista (mais dose), ele acaba conseguindo ocupar a cadeira na maior parte do tempo, restaurando o mesmo resultado de sempre — só que precisou de mais gente para isso. Na segunda situação, alguém solda uma tábua sobre o assento da cadeira (o antagonista não-competitivo) ou tranca a cadeira numa posição reclinada que ninguém consegue usar direito (o sítio alostérico distorcendo a função): não importa quantas pessoas do lado do agonista você mande, elas não conseguem sentar de um jeito funcional, porque a disputa não é mais pela cadeira — a cadeira em si foi inutilizada. A analogia quebra num ponto: soldar uma tábua sugere um ato único e visível, mas o antagonismo alostérico não-covalente pode, em alguns casos raros, ainda ser removido — por exemplo, se o próprio antagonista se dissociar lentamente com o tempo — algo que uma tábua soldada jamais faria. A irreversibilidade química (ligação covalente) é o único caso realmente 'sem volta'."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Um paciente está sob efeito de um antagonista competitivo em dose alta. Aumentar a dose do agonista consegue restaurar o efeito máximo? E se o antagonista fosse não-competitivo (irreversível), essa mesma estratégia funcionaria?",
+      "resposta": "Com o antagonista competitivo, sim: como a ligação dele ao mesmo sítio do agonista é reversível e a disputa segue a lei da ação das massas, uma dose suficientemente alta de agonista desloca o antagonista de volta e o Emax original é restaurado — a curva volta a atingir o mesmo topo, apenas deslocada para a direita. Com o antagonista não-competitivo irreversível, não: como a ligação é covalente (ou ocupa um sítio alostérico que distorce a função da proteína), a fração de receptores afetada está permanentemente indisponível, e nenhuma concentração de agonista, por maior que seja, consegue recuperar esse Emax perdido. Nesse segundo cenário, a conduta correta não é aumentar a dose do agonista — é aguardar a síntese de novos receptores ou a eliminação/metabolização do antagonista, ou buscar uma via terapêutica alternativa."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas curvas dose-resposta lado a lado: competitivo versus não-competitivo",
+      "descricao": "Esquema didático em dois painéis lado a lado, ambos com o mesmo par de eixos (concentração do agonista em escala logarítmica no eixo horizontal, efeito no eixo vertical). Painel esquerdo, rotulado 'antagonismo competitivo': três curvas em forma de S sobrepostas — a curva de controle (agonista sozinho) mais à esquerda, e duas curvas idênticas em forma e altura de topo, mas deslocadas progressivamente para a direita, representando doses crescentes do antagonista; todas alcançam o mesmo Emax no topo. Painel direito, rotulado 'antagonismo não-competitivo': a curva de controle à esquerda, e outras curvas com o mesmo ponto de início, mas com o topo progressivamente mais baixo à medida que a dose do antagonista aumenta, sem desvio lateral. Legendas curtas em português indicando 'mesmo Emax, desviado' à esquerda e 'Emax reduzido' à direita. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno, dois painéis lado a lado separados por uma linha fina vertical. Ambos os painéis com eixo X rotulado 'concentração do agonista (log)' e eixo Y rotulado 'efeito (%)', de 0 a 100. Painel esquerdo, título 'ANTAGONISMO COMPETITIVO': três curvas sigmoides paralelas de mesma altura máxima (todas atingindo 100% no topo), a primeira mais à esquerda em cor sólida rotulada 'agonista sozinho', as duas seguintes deslocadas progressivamente para a direita em cores mais claras, rotuladas 'com antagonista (dose baixa)' e 'com antagonista (dose alta)'; seta horizontal tracejada indicando o desvio paralelo para a direita. Painel direito, título 'ANTAGONISMO NÃO-COMPETITIVO': curva de controle idêntica à esquerda, e duas curvas adicionais que começam no mesmo ponto mas atingem topos progressivamente mais baixos (por exemplo 70% e 40%), sem deslocamento lateral, rotuladas 'com antagonista (dose baixa)' e 'com antagonista (dose alta)'; seta vertical tracejada indicando a queda do Emax. Paleta de cores suaves e consistente entre os dois painéis, alto contraste, sem texturas fotorrealistas, texto apenas nas legendas indicadas, em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-003",
+        "titulo": "Agonistas e Antagonistas — Ligar e Desligar o Alvo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha o caso de afinidade sem atividade intrínseca (ocupação sem ativação) que a visão geral descreveu através da analogia da fita adesiva sobre o interruptor, sem ainda diferenciar tipos de bloqueio."
+      },
+      {
+        "bloco_id": "s4-farma1-02-002",
+        "titulo": "Curva Dose-Resposta",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A distinção entre antagonismo competitivo e não-competitivo só é visível e mensurável através da curva dose-resposta: desvio paralelo para a direita num caso, queda do Emax no outro. Sem essa curva já estabelecida, a diferença entre os dois tipos de antagonismo não teria como ser demonstrada."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-003-04",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Antagonismo farmacológico, fisiológico e químico",
+        "mecanismo_conexao": "Este bloco cobre o antagonismo pelo mesmo receptor (competitivo e não-competitivo); o próximo expande para formas de anular efeito sem disputar o mesmo receptor.",
+        "confianca": "estabelecida"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Antagonistas competitivos e não-competitivos em uso clínico (beta-bloqueadores, benzodiazepínicos e antagonistas de canais)",
+        "mecanismo_conexao": "Reconhecer se um antagonista clínico é competitivo ou não-competitivo prevê se a superdosagem ou a interação medicamentosa pode ser revertida aumentando a dose do agonista endógeno ou exógeno.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "toxicologia",
+        "semestre_futuro": 5,
+        "topico": "Antagonistas irreversíveis e intoxicação por organofosforados",
+        "mecanismo_conexao": "A inibição irreversível (ligação covalente) da acetilcolinesterase por organofosforados é um exemplo direto de bloqueio não-competitivo/irreversível, onde a reversão depende de regenerar a enzima (pralidoxima), não de mais substrato.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-02-002",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "A curva dose-resposta é o instrumento gráfico compartilhado: este bloco usa exatamente essa curva para diferenciar visualmente os dois tipos de antagonismo."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-003-03-fc01",
+      "pergunta": "Qual é a diferença estrutural entre antagonismo competitivo e não-competitivo, em termos do sítio de ligação e da natureza da ligação?",
+      "resposta": "No antagonismo competitivo, o antagonista se liga ao mesmo sítio ortostérico onde o agonista se ligaria, por meio de uma ligação não-covalente e reversível — a mesma fechadura disputada por duas chaves. No antagonismo não-competitivo, o antagonista se liga a um sítio alostérico diferente (distorcendo a função da proteína sem disputar o sítio do agonista) ou forma uma ligação covalente irreversível com o próprio sítio ortostérico — nos dois casos, sem disputa reversível pelo mesmo espaço.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "antagonismo",
+        "competitivo"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-03-fc02",
+      "pergunta": "Por que aumentar a dose do agonista restaura o Emax original diante de um antagonista competitivo, mas não diante de um antagonista não-competitivo irreversível?",
+      "resposta": "No antagonismo competitivo, agonista e antagonista disputam o mesmo sítio de ligação seguindo a lei da ação das massas: uma concentração suficientemente alta de agonista desloca o antagonista de volta, liberando os receptores e restaurando o Emax. No antagonismo não-competitivo irreversível, o antagonista está covalentemente ligado (ou distorce a proteína por um sítio alostérico) e não há disputa possível pelo mesmo espaço — a fração de receptores afetada fica permanentemente indisponível, então nenhuma dose de agonista recupera o efeito máximo perdido.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "antagonismo",
+        "emax"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-03-fc03",
+      "pergunta": "Na curva dose-resposta, como se distingue graficamente um antagonismo competitivo de um não-competitivo?",
+      "resposta": "O antagonismo competitivo produz um desvio paralelo da curva para a direita: a curva mantém a mesma forma e o mesmo Emax (topo), apenas exigindo concentrações maiores de agonista para atingi-lo. O antagonismo não-competitivo reduz o Emax: a curva não se desloca lateralmente, mas seu topo fica mais baixo que o da curva controle, e nenhuma concentração adicional de agonista consegue elevá-lo de volta.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "curva-dose-resposta",
+        "antagonismo"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-03-fc04",
+      "pergunta": "Um paciente apresenta bloqueio de um receptor por um antagonista. O médico eleva a dose do agonista e observa que o efeito máximo é restaurado, apenas exigindo uma dose maior que o habitual. Que tipo de antagonismo está em ação, e por quê?",
+      "resposta": "Antagonismo competitivo. A restauração do mesmo efeito máximo (Emax) com dose maior de agonista é exatamente a assinatura funcional da competição reversível pelo mesmo sítio de ligação: mais agonista desloca o antagonista de volta, seguindo a lei da ação das massas. Se fosse antagonismo não-competitivo, nenhuma dose adicional de agonista conseguiria recuperar o Emax original.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "antagonismo",
+        "aplicacao-clinica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-03-fc05",
+      "pergunta": "A palavra 'competitivo' vem do latim competere (com + petere, 'buscar junto'). Como essa origem explica por que o antagonismo não-competitivo recebeu esse nome por exclusão, e não por uma característica própria?",
+      "resposta": "Competere descreve duas partes buscando o mesmo alvo ao mesmo tempo — a imagem de disputa direta pelo mesmo sítio de ligação, cujo resultado depende da concentração relativa de cada concorrente. O antagonismo competitivo herda esse nome porque é exatamente isso: uma disputa pelo mesmo espaço. O antagonismo não-competitivo foi nomeado por negação — ele simplesmente não participa dessa disputa pelo mesmo alvo, seja porque atua em outro sítio da proteína, seja porque sua ligação não é uma disputa reversível, mas uma soldagem covalente. O nome, portanto, já indica o critério prático: presença ou ausência de disputa reversível pelo mesmo sítio decide se mais dose do agonista muda o resultado.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "etimologia",
+        "antagonismo"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-003-03-caso01",
+      "titulo": "Superdosagem de opioide e a dose necessária de naloxona",
+      "apresentacao": "Paciente de 34 anos é levado à emergência com rebaixamento do nível de consciência, frequência respiratória de 6 incursões por minuto e miose puntiforme, após uso de dose elevada de opioide. A equipe administra naloxona (antagonista competitivo dos receptores opioides mu) em bolus, e a frequência respiratória melhora rapidamente. Poucos minutos depois, o paciente volta a apresentar depressão respiratória, exigindo doses repetidas — e a equipe médica explica à família que isso é esperado, e não um sinal de falha do tratamento.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O opioide em dose elevada ocupa e ativa amplamente os receptores mu, produzindo depressão respiratória grave por excesso de atividade intrínseca no receptor."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Receptores opioides mu, no tronco encefálico, controlando o drive respiratório. A naloxona compete pelo mesmo sítio ortostérico que o opioide, deslocando-o por ter maior afinidade relativa e ser administrada em concentração eficaz."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Como o antagonismo é competitivo, a naloxona desloca temporariamente o opioide, restaurando a atividade respiratória — mas a meia-vida da naloxona é mais curta que a da maioria dos opioides. À medida que a concentração de naloxona cai, o opioide restante (ainda em concentração significativa) volta a ocupar e ativar os receptores livres."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Recorrência da depressão respiratória minutos a poucas horas após a reversão inicial, exigindo doses repetidas ou infusão contínua de naloxona até que o opioide seja metabolizado."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Se a equipe assumisse (erroneamente) que o antagonismo fosse não-competitivo e definitivo, poderia liberar o paciente após a primeira melhora — um erro potencialmente fatal. Reconhecer que a naloxona age por competição reversível pelo mesmo sítio implica que a duração do bloqueio depende das concentrações relativas ao longo do tempo, exigindo observação prolongada."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra a consequência prática direta da reversibilidade competitiva: como agonista e antagonista disputam o mesmo sítio pela lei da ação das massas, o resultado do bloqueio muda com o tempo, à medida que as concentrações de cada um se alteram — diferente do que aconteceria com um antagonista não-competitivo irreversível, cujo efeito não dependeria dessa disputa contínua.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "toxicologia",
+        "medicina-de-emergencia"
+      ],
+      "diagnostico_revelado": "Depressão respiratória recorrente por reversão competitiva transitória de intoxicação opioide.",
+      "tratamento_resumido": "Doses repetidas de naloxona ou infusão contínua, ajustadas à meia-vida do opioide envolvido, com monitorização respiratória prolongada até eliminação completa do opioide."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-003-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

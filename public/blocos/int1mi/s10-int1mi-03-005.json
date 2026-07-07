@@ -5,52 +5,218 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Paracentese",
+    "subtitulo": "Você vai retirar 6 litros de líquido ascítico. Isso é só alívio sintomático, ou existe um risco escondido na quantidade?",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 3,
+    "topico": 5,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "procedimento",
+      "seguranca_paciente",
+      "raciocinio_diagnostico"
     ],
+    "tipo_conteudo": "procedimento",
+    "status": "publicado",
+    "data_criacao": "2026-07-06",
+    "data_revisao": "2026-07-06",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
-    "formato_internato": "procedimento"
+    "tempo_estudo_minutos": 10,
+    "palavras_chave": [
+      "paracentese",
+      "SAAG",
+      "peritonite bacteriana espontânea",
+      "albumina"
+    ],
+    "formato_internato": "procedimento",
+    "minimo_exigido": "1 paracentese"
   },
-  "resumo_conciso": "Puncionar ascite com segurança, repor albumina em drenagem volumosa e rastrear PBE",
-  "narrativa": [],
+  "resumo_conciso": "Toda paracentese cumpre dois papéis ao mesmo tempo: alívio da distensão abdominal E rastreamento ativo de infecção. E quando o volume drenado é grande, existe um risco circulatório real que a albumina previne — não é só 'esvaziar o abdômen'.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Seu paciente cirrótico está com ascite tensa, desconfortável, respirando com dificuldade pela pressão abdominal. Você vai drenar. O primeiro risco não está na técnica de inserir a agulha (relativamente simples) — está em tratar essa drenagem como puramente um alívio mecânico, esquecendo que toda paracentese é também uma oportunidade (e, em internação ou descompensação, uma obrigação) de rastrear peritonite bacteriana espontânea, e que grandes volumes drenados sem reposição adequada de albumina podem desestabilizar a circulação do paciente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Local de punção e a lógica do SAAG"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O local preferencial de punção costuma ser o quadrante inferior esquerdo do abdômen (parede mais fina, menor risco de atingir o ceco, comparado ao lado direito), ou a linha média infraumbilical, evitando os vasos epigástricos que correm próximos à linha média mais alta. Orientação por ultrassom reduz complicações e é recomendada sempre que disponível. Da amostra colhida, além da contagem de polimorfonucleares (PMN ≥250 células/mm³ define peritonite bacteriana espontânea), calcula-se o gradiente de albumina soro-ascite (SAAG): albumina sérica menos albumina do líquido ascítico. SAAG maior ou igual a 1,1 g/dL sugere causa relacionada à hipertensão portal (cirrose, insuficiência cardíaca); SAAG menor que 1,1 g/dL aponta para outras causas (neoplasia peritoneal, tuberculose peritoneal, pancreatite)."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Técnica, com o porquê de cada etapa",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar ascite por percussão ou ultrassom antes de puncionar",
+          "explicacao": "Evita punção seca ou em local sem líquido suficiente."
+        },
+        {
+          "numero": 2,
+          "titulo": "Escolher quadrante inferior esquerdo ou linha média infraumbilical, evitando cicatrizes cirúrgicas",
+          "explicacao": "Reduz risco de aderências (que podem trazer alça intestinal para perto da parede) e de lesão vascular."
+        },
+        {
+          "numero": 3,
+          "titulo": "Técnica em Z (deslocar a pele lateralmente antes de puncionar perpendicularmente)",
+          "explicacao": "Cria um trajeto não-retilíneo que se fecha sozinho ao retirar a agulha, reduzindo vazamento persistente de líquido ascítico pelo orifício."
+        },
+        {
+          "numero": 4,
+          "titulo": "Colher amostra para contagem celular, cultura e SAAG antes de iniciar drenagem terapêutica maior",
+          "explicacao": "Garante que a investigação diagnóstica não seja perdida ou diluída pela drenagem de grande volume."
+        },
+        {
+          "numero": 5,
+          "titulo": "Monitorar volume drenado e considerar albumina intravenosa se ultrapassar cerca de 5 litros",
+          "explicacao": "Grandes volumes retirados sem reposição adequada de albumina podem causar disfunção circulatória pós-paracentese, com risco de piora da função renal."
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Paracentese de grande volume (tipicamente acima de 5 litros) sem reposição de albumina não é só 'perder uma oportunidade de otimizar' — é um fator de risco real para disfunção circulatória pós-paracentese, que pode precipitar ou agravar lesão renal no paciente cirrótico."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se você decidir não colher amostra para PMN e cultura numa drenagem terapêutica de rotina, já que o paciente não tem dor abdominal nem febre alta?",
+      "resposta": "Peritonite bacteriana espontânea pode se apresentar de forma sutil ou até assintomática em alguns casos, e toda paracentese em paciente internado ou descompensando é uma oportunidade de rastreá-la, independentemente da presença de sintomas clássicos. Deixar de colher a amostra diagnóstica nessas ocasiões significa perder uma janela de detecção precoce que pode não se repetir tão cedo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como saber que deu certo: líquido obtido com facilidade, sem sangue significativo (um pouco de sangue no início, clareando, é comum e não preocupante; sangue persistente sugere lesão vascular), alívio do desconforto abdominal quando terapêutica. Complicações: sangramento (geralmente autolimitado), perfuração intestinal (rara, mais provável com aderências não reconhecidas), vazamento persistente pelo orifício (reduzido pela técnica em Z), e disfunção circulatória pós-paracentese em grandes volumes sem reposição adequada. Mínimo exigido pelo currículo: 1 paracentese. Avaliação: DOPS observando técnica, decisão de colher amostra diagnóstica, e decisão correta sobre reposição de albumina conforme volume drenado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-mi2-02-024",
+        "titulo": "Hipertensão Portal",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s10-int1mi-01-010",
+        "titulo": "Cirrose Descompensada — três emergências em um só paciente",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-03-006",
+        "titulo": "Sondagem Vesical",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Próximo procedimento do módulo."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-03-005-001",
+      "tipo": "clinico",
+      "pergunta": "O que o gradiente de albumina soro-ascite (SAAG) igual ou acima de 1,1 g/dL sugere, e o que abaixo de 1,1 g/dL sugere?",
+      "resposta": "SAAG ≥1,1 g/dL sugere causa relacionada à hipertensão portal (cirrose, insuficiência cardíaca). SAAG <1,1 g/dL aponta para outras causas, como neoplasia peritoneal, tuberculose peritoneal ou pancreatite. O SAAG é considerado mais útil que a antiga classificação transudato/exsudato especificamente para investigação de ascite.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "procedimento",
+        "paracentese",
+        "saag"
+      ]
+    },
+    {
+      "card_id": "fc-s10-int1mi-03-005-002",
+      "tipo": "por_que",
+      "pergunta": "Por que a albumina intravenosa é considerada em paracenteses de grande volume (acima de 5 litros)?",
+      "resposta": "Porque a retirada de grande volume de líquido ascítico sem reposição adequada de albumina pode causar disfunção circulatória pós-paracentese, um estado de vasodilatação e queda de volume circulante efetivo que pode precipitar ou agravar lesão renal no paciente cirrótico. A albumina ajuda a manter a pressão oncótica e o volume circulante durante essa transição.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "procedimento",
+        "paracentese",
+        "albumina"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s10-int1mi-03-005-caso01",
+      "titulo": "Cirrótico internado com distensão abdominal e confusão mental leve",
+      "apresentacao": "Homem de 54 anos, cirrótico por hepatite C conhecida, é internado por ascite volumosa e desconforto abdominal importante. Está afebril, sem dor abdominal espontânea significativa, mas a esposa relata que ele está 'mais lento e esquecido' nos últimos dois dias. Ao exame: abdômen distendido, tenso, com piparote positivo; discreta sonolência sem outros achados neurológicos focais. É indicada paracentese diagnóstica e, na sequência, terapêutica de alívio.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Na cirrose, a translocação bacteriana através da parede intestinal permite que bactérias entéricas alcancem o líquido ascítico já existente por hipertensão portal, colonizando-o sem foco infeccioso abdominal evidente — a peritonite bacteriana espontânea."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O **líquido ascítico** dentro da cavidade peritoneal, que normalmente é praticamente estéril mesmo sendo transudato de hipertensão portal, passa a abrigar bactérias e a desencadear resposta inflamatória local, elevando a contagem de polimorfonucleares nesse compartimento."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A infecção do líquido ascítico, mesmo sem os sinais clássicos de peritonite (dor abdominal intensa, defesa, febre alta), já é suficiente para precipitar ou agravar disfunção hepática e renal no cirrótico, e para causar encefalopatia hepática por acúmulo de toxinas (como amônia) que o fígado comprometido não consegue depurar."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Distensão abdominal tensa (ascite volumosa), e um sinal sutil e fácil de subestimar: confusão mental leve, que neste contexto é encefalopatia hepática incipiente — muitas vezes o único sinal de que algo sistêmico está descompensando, já que a peritonite bacteriana espontânea pode ser assintomática ou oligossintomática do ponto de vista abdominal."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A paracentese diagnóstica revela contagem de polimorfonucleares ≥250 células/mm³, confirmando peritonite bacteriana espontânea mesmo sem dor abdominal franca. Sem o rastreamento ativo — feito justamente porque toda paracentese é oportunidade diagnóstica, não só alívio mecânico —, essa infecção evoluiria de forma insidiosa para sepse, síndrome hepatorrenal e maior risco de óbito."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra o ponto central do bloco: a paracentese nunca é 'só esvaziar o abdômen'. A ausência de dor abdominal clássica não descarta peritonite bacteriana espontânea, e é exatamente por isso que o bloco insiste em colher amostra para contagem celular e cultura em toda paracentese de paciente cirrótico internado ou descompensando, independentemente dos sintomas apresentados.",
+      "disciplinas_relacionadas": [
+        "medicina interna",
+        "gastroenterologia",
+        "hepatologia",
+        "medicina de emergência"
+      ],
+      "diagnostico_revelado": "Peritonite bacteriana espontânea em paciente cirrótico, manifestada por encefalopatia hepática incipiente sem dor abdominal significativa.",
+      "tratamento_resumido": "Antibioticoterapia empírica dirigida a bactérias entéricas (tipicamente uma cefalosporina de terceira geração), associada à administração de albumina intravenosa nas primeiras 48 horas para prevenir síndrome hepatorrenal, além do manejo padrão da ascite (restrição de sódio, diuréticos). Reavaliação da resposta com nova contagem de polimorfonucleares em 48 horas."
+    }
+  ],
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "procedimento",
-    "seguranca_paciente",
-    "raciocinio_diagnostico"
+  "fontes": [
+    {
+      "tipo": "artigo",
+      "titulo": "The serum-ascites albumin gradient is superior to the exudate-transudate concept in the differential diagnosis of ascites",
+      "autores": "Runyon BA, Montano AA, Akriviadis EA, et al.",
+      "ano": 1992,
+      "publicacao": "Annals of Internal Medicine"
+    },
+    {
+      "tipo": "diretriz",
+      "titulo": "AASLD Practice Guidance: Diagnosis, evaluation, and management of ascites, spontaneous bacterial peritonitis and hepatorenal syndrome",
+      "autores": "American Association for the Study of Liver Diseases (AASLD)",
+      "ano": 2021,
+      "publicacao": "Hepatology"
+    }
   ]
 }

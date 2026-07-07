@@ -5,50 +5,307 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Cisternas e Polaridade Cis-Trans",
+    "subtitulo": "Por que uma proteína não pode simplesmente boiar dentro do complexo de Golgi até sair pronta?",
     "semestre": 1,
     "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
+    "profundidade_arvore": 4,
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "2.0",
     "tags": [
-      "biocel",
-      "esqueleto"
+      "golgi",
+      "trafego-vesicular",
+      "pos-traducional",
+      "polaridade"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Face cis, medial, trans e fluxo direcionado",
-  "narrativa": [],
+  "resumo_conciso": "O complexo de Golgi não é um saco único onde proteínas boiam sendo modificadas ao acaso — é um empilhamento de compartimentos achatados (cisternas) organizados numa sequência estrita, com uma face de entrada (cis) e uma face de saída (trans) claramente distintas. Essa polaridade obriga a proteína a passar por uma sequência ordenada de modificações químicas, cada uma dependente da anterior ter acontecido primeiro, de forma parecida a uma linha de montagem onde cada estação só existe porque a peça já chegou processada da estação anterior. Entender essa arquitetura explica por que erros de glicosilação e de endereçamento final de proteínas produzem doenças tão específicas e variadas.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense numa fábrica de automóveis onde o chassi entra por uma porta, recebe o motor numa estação, depois os bancos em outra, depois a pintura, e só sai pronto pela porta do outro lado da fábrica. Ninguém instala a pintura antes do chassi existir, e ninguém tenta colocar os bancos antes do motor estar fixado. A ordem das estações não é aleatória — cada uma depende fisicamente da anterior ter sido concluída."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a proteína precisa passar por etapas sequenciais, e não todas ao mesmo tempo?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Depois de sair do retículo endoplasmático, uma proteína recém-sintetizada frequentemente precisa de uma série de modificações químicas antes de estar funcionalmente pronta — remoção de certos açúcares, adição de outros, formação de pontes específicas. Muitas dessas reações são sequenciais por necessidade química: uma enzima só consegue atuar sobre o substrato se a modificação anterior já tiver ocorrido, exatamente como não dá para pintar um carro sem chassi montado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se todas as enzimas de processamento estivessem soltas no mesmo compartimento, misturadas sem ordem, algumas atuariam cedo demais, outras tarde demais, e o resultado seria um produto final quimicamente incoerente — um carro com a pintura aplicada antes do chassi estar pronto. A célula precisava de uma forma de garantir sequência, não apenas presença, das modificações."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe esta ideia: o desafio não é apenas ter as enzimas certas, mas garantir que elas atuem na ordem certa. A solução do Golgi resolve exatamente esse problema de sequência temporal, transformando-o num problema de posição espacial."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o Golgi resolveu o problema da sequência"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi organizar o processamento em compartimentos empilhados e fisicamente distintos — as cisternas — dispostos em série, cada um contendo um conjunto específico de enzimas. A proteína entra pela face cis (voltada para o retículo endoplasmático, de onde vem o material recém-sintetizado), atravessa progressivamente as cisternas mediais, e só sai pela face trans (voltada para a periferia da célula), de onde é endereçada ao destino final. Ao transformar 'ordem temporal' em 'posição física', a célula garante que a proteína só encontre a enzima seguinte depois de já ter passado pela anterior."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As cisternas são feitas da mesma bicamada lipídica fluida presente em toda a célula — matéria-prima reaproveitada, não uma invenção nova. Essa fluidez é o que permite que pequenas vesículas de transporte brotem de uma cisterna e se fundam à cisterna seguinte, carregando a carga proteica adiante na sequência, sem que os conteúdos das duas cisternas se misturem diretamente."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏭",
+      "conteudo": "Pense numa linha de montagem industrial com estações fisicamente separadas por portas de acesso controlado, onde cada porta só abre depois que a peça anterior confirma conclusão. Mapeamento: a proteína bruta chegando do retículo é o chassi entrando pela porta de recebimento; as cisternas empilhadas são as estações sucessivas da linha (motor, bancos, pintura); as portas entre estações, que só permitem passagem de peças já processadas na etapa anterior, são o transporte vesicular entre cisternas adjacentes; a face cis é a porta de entrada da fábrica; a face trans é a porta de expedição, por onde só saem produtos que já passaram por todas as estações."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A polaridade cis-trans do Golgi não é uma curiosidade estrutural — é o mecanismo que converte uma exigência de sequência química (fazer A antes de B) em uma exigência de posição física (passar pela cisterna A antes da cisterna B), garantindo processamento correto sem depender de regulação temporal complexa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa organização se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A polaridade do Golgi depende diretamente do fluxo de vesículas vindo do retículo endoplasmático (sem entrada correta pela face cis, não há nada para processar) e de um sistema de transporte retrógrado — vesículas revestidas por COPI — que recupera enzimas residentes do Golgi que acidentalmente avançaram demais na sequência, devolvendo-as à cisterna correta. Sem esse mecanismo de correção, as próprias enzimas de processamento se perderiam ao longo do tempo, misturando-se com o material em trânsito. Na saída, a face trans funciona como o ponto de triagem final, endereçando a carga já processada para a membrana plasmática, para secreção extracelular ou para os lisossomos."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "cis e trans",
+      "origem": "do latim cis (deste lado) e trans (do outro lado, através de)",
+      "significado": "posições relativas de um lado e do outro de uma referência",
+      "explicacao": "Esses prefixos latinos são usados em química e biologia para indicar posição relativa a um ponto de referência — o mesmo par de raízes aparece em isomeria cis-trans de moléculas orgânicas. No complexo de Golgi, a face cis é a que fica do lado do núcleo e do retículo endoplasmático (de onde o material chega), e a face trans é a que fica do lado oposto, voltada para a periferia celular e a membrana plasmática (para onde o material parte). A escolha desses termos comunica diretamente a direção do fluxo sem precisar de nomes descritivos mais longos."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o sistema de transporte retrógrado por vesículas COPI parasse de funcionar, mas o fluxo anterógrado (cis para trans) continuasse normal, o que aconteceria com as enzimas residentes do Golgi ao longo do tempo?",
+      "resposta": "As enzimas residentes de cada cisterna, que às vezes escapam para a cisterna seguinte durante o fluxo normal de vesículas, deixariam de ser recuperadas e devolvidas à sua posição original. Progressivamente, essas enzimas se acumulariam nas cisternas mais avançadas (em direção à face trans), esvaziando as cisternas iniciais de sua maquinaria enzimática própria. O resultado seria uma perda gradual da sequência correta de modificações: proteínas que deveriam receber uma modificação precoce passariam pela cisterna certa sem encontrar mais a enzima ali, comprometendo a qualidade do processamento de toda a via secretora."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Arquitetura dinâmica do complexo de Golgi",
+      "descricao": "Esquema mostrando o empilhamento de cisternas com a face cis recebendo vesículas do retículo endoplasmático, cisternas mediais processando a carga sequencialmente, e a face trans liberando vesículas para diferentes destinos, com setas de transporte retrógrado por COPI entre cisternas adjacentes.",
+      "prompt_ia": "Diagrama científico vetorial, fundo neutro adaptativo, estilo de livro didático. Empilhamento de 4 a 5 cisternas achatadas do complexo de Golgi, com a face cis à esquerda recebendo vesículas rotuladas 'do RE' e a face trans à direita liberando vesículas em duas direções, uma para 'membrana plasmática' e outra para 'lisossomo'. Pequenas setas curvas entre cisternas adjacentes indicando transporte retrógrado (COPI) de volta em direção à face cis. Legendas em português: 'face cis', 'cisternas mediais', 'face trans', 'vesículas anterógradas', 'vesículas retrógradas (COPI)'. Cores suaves, alto contraste, sem elementos fotorrealistas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-02-002-01",
+        "titulo": "Síntese Proteica no RER",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "O Golgi processa exatamente o material que chega do retículo endoplasmático rugoso; sem entender como a proteína é sintetizada e translocada para o lúmen do RER, a chegada dessa carga pela face cis do Golgi perde contexto."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "bioquimica",
+        "semestre_futuro": 4,
+        "topico": "Glicosilação e doenças congênitas de glicosilação",
+        "mecanismo_conexao": "Erros em enzimas específicas de cisternas do Golgi produzem padrões distintos de proteínas mal glicosiladas, cada um associado a um quadro clínico característico.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "topico": "Marcadores tumorais de glicosilação alterada",
+        "mecanismo_conexao": "Células neoplásicas frequentemente exibem padrões anormais de glicosilação decorrentes de disfunção do processamento no Golgi, usados como marcadores diagnósticos.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "imunologia",
+        "semestre_futuro": 3,
+        "topico": "Processamento de anticorpos e glicoproteínas de superfície",
+        "mecanismo_conexao": "O mesmo princípio de processamento sequencial em cisternas do Golgi é responsável pela glicosilação de anticorpos e de proteínas do complexo principal de histocompatibilidade.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-02-005",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "As hidrolases ácidas destinadas aos lisossomos recebem sua etiqueta de manose-6-fosfato justamente durante a passagem pelas cisternas do Golgi discutidas aqui."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-02-004-01-fc01",
+      "pergunta": "Por que o complexo de Golgi precisa ser organizado em cisternas empilhadas com polaridade cis-trans, em vez de ser um único compartimento onde todas as enzimas de processamento atuam simultaneamente?",
+      "resposta": "Porque muitas modificações químicas que a proteína sofre no Golgi são sequenciais por necessidade: uma enzima só pode atuar depois que a modificação anterior já ocorreu. Se todas as enzimas estivessem misturadas no mesmo espaço, algumas atuariam fora de ordem, produzindo um processamento quimicamente incoerente. A organização em cisternas separadas, dispostas em série, converte essa exigência de ordem temporal em uma exigência de posição física, garantindo que a proteína só encontre cada enzima depois de já ter passado pela anterior.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["golgi", "compartimentalizacao", "sequencia-enzimatica"]
+    },
+    {
+      "card_id": "s1-biocel-02-004-01-fc02",
+      "pergunta": "Qual é a função do transporte retrógrado por vesículas COPI dentro do complexo de Golgi?",
+      "resposta": "As vesículas COPI recuperam enzimas residentes do Golgi que, durante o fluxo normal de material da face cis para a trans, acabaram avançando para cisternas mais adiante do que deveriam. Elas devolvem essas enzimas à cisterna correta, preservando a distribuição espacial específica de cada conjunto de enzimas ao longo do empilhamento — sem esse mecanismo de correção, as enzimas se perderiam progressivamente ao longo do fluxo anterógrado.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["copi", "transporte-retrogrado", "golgi"]
+    },
+    {
+      "card_id": "s1-biocel-02-004-01-fc03",
+      "pergunta": "Verdadeiro ou falso e justifique: 'a face cis do complexo de Golgi é o ponto de saída das proteínas já processadas, pronto para secreção'.",
+      "resposta": "Falso. A face cis é o ponto de entrada, voltado para o retículo endoplasmático, de onde chega o material recém-sintetizado ainda não processado pelo Golgi. É a face trans que funciona como ponto de saída, liberando vesículas com a carga já processada rumo aos destinos finais — membrana plasmática, secreção extracelular ou lisossomos. Confundir as duas faces inverte completamente a direção do fluxo dentro da organela.",
+      "tipo": "armadilha",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["golgi", "polaridade", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s1-biocel-02-004-01-fc04",
+      "pergunta": "Se as cisternas do Golgi perdessem completamente sua organização em série, ficando fundidas num único grande compartimento com todas as enzimas misturadas, o que aconteceria com o processamento de uma glicoproteína que depende de três modificações sequenciais distintas?",
+      "resposta": "Sem a separação espacial que impõe ordem, as três enzimas atuariam sobre a proteína de forma essencialmente aleatória, sem garantia de que a primeira modificação ocorresse antes da segunda e da terceira. Isso provavelmente resultaria em produtos incompletos ou processados fora de ordem — algumas moléculas poderiam receber a terceira modificação sem nunca ter recebido a primeira, produzindo um padrão de glicosilação heterogêneo e funcionalmente inconsistente entre diferentes cópias da mesma proteína.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["golgi", "glicosilacao", "sequencia-enzimatica"]
+    },
+    {
+      "card_id": "s1-biocel-02-004-01-fc05",
+      "pergunta": "Criança com hipotonia, atraso do desenvolvimento neuropsicomotor e distribuição anormal de gordura corporal é diagnosticada com um distúrbio congênito de glicosilação tipo I, causado por deficiência de uma enzima que atua nas cisternas mais precoces do complexo de Golgi. Por que a localização precoce dessa enzima defeituosa ajuda a explicar a gravidade e a amplitude dos sintomas multissistêmicos?",
+      "resposta": "Como o processamento no Golgi é sequencial e depende da posição das enzimas ao longo das cisternas, uma deficiência numa enzima que atua logo no início da linha (próxima à face cis) compromete não apenas sua própria modificação, mas potencialmente todas as modificações subsequentes que dependeriam dela ter ocorrido primeiro. Isso amplia o impacto para praticamente todas as glicoproteínas que passam pelo Golgi, explicando por que distúrbios congênitos de glicosilação tendem a ser multissistêmicos — afetando desenvolvimento neurológico, função hepática, coagulação e distribuição de tecido adiposo simultaneamente, em vez de comprometer uma única via metabólica isolada.",
+      "tipo": "clinico",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": ["distúrbio-congênito-glicosilação", "golgi", "genetica"]
+    },
+    {
+      "card_id": "s1-biocel-02-004-01-fc06",
+      "pergunta": "Por que os termos 'cis' e 'trans', emprestados originalmente da química de isômeros, foram uma escolha adequada para nomear as duas faces do complexo de Golgi?",
+      "resposta": "Porque 'cis' (deste lado) e 'trans' (do outro lado) descrevem exatamente o que os primeiros pesquisadores observaram: duas superfícies opostas de um mesmo empilhamento de membranas, cada uma voltada para uma direção diferente da célula. O par de termos já era usado em química para indicar posições relativas em torno de um eixo ou plano de referência, e a analogia se encaixou perfeitamente para descrever a orientação espacial das duas faces do Golgi — uma voltada para o núcleo e o retículo (cis), outra voltada para a periferia celular (trans) — sem precisar cunhar um vocabulário totalmente novo.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["etimologia", "golgi", "nomenclatura"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-02-004-01-caso01",
+      "titulo": "Lactente com hipotonia, estrabismo e distribuição atípica de gordura",
+      "apresentacao": "Lactente de 6 meses apresenta hipotonia generalizada, atraso motor evidente, estrabismo convergente e um padrão incomum de acúmulo de gordura em nádegas e face, com mamilos invertidos. Exames laboratoriais revelam coagulopatia leve e elevação discreta de enzimas hepáticas. Análise de transferrina sérica por focalização isoelétrica mostra padrão anormal de glicosilação, sugerindo um distúrbio congênito de glicosilação.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação em gene que codifica uma enzima ou proteína de transporte que atua nas cisternas iniciais (próximas à face cis) do complexo de Golgi, comprometendo uma etapa precoce da via de glicosilação de proteínas."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A sequência ordenada de modificações no complexo de Golgi é interrompida logo no início da linha de processamento, afetando potencialmente todas as glicoproteínas que dependem dessa etapa inicial para as modificações subsequentes."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Múltiplas glicoproteínas circulantes e de membrana são secretadas com glicosilação incompleta ou incorreta, comprometendo sua função em diversos sistemas simultaneamente — fatores de coagulação, proteínas hepáticas, proteínas do sistema nervoso central."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O quadro multissistêmico reflete essa ampla disfunção: hipotonia e atraso do desenvolvimento (comprometimento neurológico), estrabismo (disfunção da musculatura ocular), distribuição anormal de gordura (alteração de proteínas envolvidas em sinalização adipocitária) e coagulopatia leve (fatores de coagulação mal glicosilados)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O prognóstico varia conforme o gene e a enzima específica afetados; muitos distúrbios congênitos de glicosilação tipo I têm curso crônico com comprometimento neurológico persistente, exigindo manejo multidisciplinar e, em subtipos específicos, suplementação dietética direcionada."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente por que a organização sequencial em cisternas do Golgi importa clinicamente: uma falha numa enzima precoce na face cis compromete cumulativamente todas as etapas subsequentes de processamento, explicando o padrão multissistêmico e não isolado dos sintomas.",
+      "disciplinas_relacionadas": ["genetica", "pediatria", "bioquimica", "biologia celular"],
+      "diagnostico_revelado": "Distúrbio congênito de glicosilação tipo I (CDG-I).",
+      "tratamento_resumido": "Manejo multidisciplinar de suporte (fisioterapia, acompanhamento nutricional, monitorização de coagulação e função hepática); em subtipos específicos de CDG (como a deficiência de fosfomanomutase 2), suplementação dietética direcionada pode melhorar parcialmente o quadro, mas a maioria dos subtipos não tem tratamento curativo disponível."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-biocel-02-004-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "morfologia",
-    "fisiologia"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Alberts B, et al. Molecular Biology of the Cell. 6th ed. Garland Science; 2014. Capítulo sobre o complexo de Golgi.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Pathologic Basis of Disease. 10th ed. Elsevier; 2020. Capítulo sobre doenças metabólicas congênitas.",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "A face cis do Golgi é o ponto de saída das proteínas processadas.",
+      "correcao": "A face cis é o ponto de entrada (do RE); a face trans é o ponto de saída para os destinos finais.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "As enzimas do Golgi ficam permanentemente fixas em cada cisterna, sem qualquer movimento.",
+      "correcao": "Enzimas residentes escapam ocasionalmente para cisternas adiante e são recuperadas por transporte retrógrado via vesículas COPI.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "complexo de Golgi",
+      "termo_es": "complejo de Golgi",
+      "termo_en": "Golgi apparatus",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "face cis / face trans",
+      "termo_es": "cara cis / cara trans",
+      "termo_en": "cis face / trans face",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "2.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Reescrita completa da narrativa e flashcards, correção de pré-requisito (título trocado por ID técnico s1-biocel-02-002-01), adição de caso clínico (ausente na versão original) sobre distúrbio congênito de glicosilação e flashcard armadilha.",
+      "motivo": "Alinhamento com a Filosofia ANIMA — bloco sem caso clínico, pré-requisito inválido apontando para string livre, analogia repetitiva de correios/fábrica."
+    }
   ]
 }

@@ -14,48 +14,384 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Bloqueadores Neuromusculares e Reversão",
+    "subtitulo": "Como se paralisa um corpo inteiro de propósito — e como se garante que a força volte antes que ele precise dela de novo?",
     "semestre": 8,
     "disciplina": "Anestesiologia",
+    "sistema_corporal": "sistema nervoso periférico / musculoesquelético",
+    "regiao_anatomica": "junção neuromuscular",
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 4,
+    "tempo_leitura_minutos": 19,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
       "anest",
-      "esqueleto"
+      "bloqueio-neuromuscular",
+      "junçao-neuromuscular",
+      "reversao",
+      "curare",
+      "succinilcolina",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Abolir o movimento para intubar e operar; devolver a força com segurança",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior descreveu a tríade da anestesia geral e mencionou, de passagem, que o relaxamento muscular \"abole o diafragma, e isso não é efeito colateral, é o mecanismo funcionando como previsto\". Este bloco abre essa caixa-preta: como, exatamente, se interrompe a comunicação entre nervo motor e músculo esquelético de forma total, previsível e — crucialmente — reversível? A resposta mora na junção neuromuscular, o único ponto da cadeia elétrico-mecânica que um fármaco intravenoso alcança sem tocar o sistema nervoso central. Ao final deste bloco você vai entender por que a succinilcolina age em segundos e passa sozinha, por que o rocurônio dura mais e precisa ser revertido ativamente, e por que essa diferença de reversibilidade é exatamente o que orienta a escolha do bloqueador na indução de sequência rápida. Duas estratégias moleculares competem pelo mesmo alvo — o receptor nicotínico da placa motora: uma imita a acetilcolina e trava o receptor aberto até ele se dessensibilizar (bloqueio despolarizante, succinilcolina); a outra ocupa o receptor sem ativá-lo, competindo com a acetilcolina endógena (bloqueio não-despolarizante, rocurônio e similares). A primeira passa sozinha em minutos; a segunda precisa ser revertida — por anticolinesterásicos, que aumentam a acetilcolina disponível na fenda para deslocar o bloqueador do receptor, ou por sugamadex, uma molécula que sequestra o próprio bloqueador antes que ele chegue ao receptor. Entre a paralisia induzida e a força restaurada mora um dos maiores riscos silenciosos da anestesia moderna: o bloqueio residual, que sai da sala de cirurgia escondido atrás de um paciente que parece acordado, mas cuja musculatura respiratória ainda não voltou por completo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior você viu que a anestesia geral é uma tríade — hipnose, analgesia e relaxamento muscular — e que o terceiro componente tem uma particularidade cruel: ao abolir a contração da musculatura esquelética voluntária, ele abole junto o diafragma. O paciente para de respirar sozinho. Não é acidente, é o mecanismo cumprindo exatamente o que foi desenhado para fazer. Mas essa frase deixou uma pergunta em aberto: como um fármaco infundido numa veia do braço consegue desligar, de forma tão completa, a ordem que o cérebro manda para cada músculo esquelético do corpo — sem sedar o paciente, sem tocar sua consciência, sem alcançar um único neurônio central? E, tão importante quanto: como se garante que essa força volte, de forma previsível, antes que o paciente precise dela para respirar sozinho de novo?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a cirurgia precisa de um corpo que não se mova, mesmo que a pessoa esteja hipnotizada?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você já sabe, do ciclo básico, que estar inconsciente não é o mesmo que estar imóvel. Um paciente sob hipnótico profundo ainda mantém reflexos espinhais intactos: um estímulo cirúrgico forte — tração de uma alça intestinal, afastamento de costelas, manipulação de peritônio — pode disparar um arco reflexo medular que contrai a musculatura abdominal ou faz o paciente se debater, mesmo sem qualquer percepção consciente do evento."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Note a ideia-chave antes de seguir: o problema não é a dor sentida — o paciente hipnotizado não a percebe. O problema é o arco reflexo medular, que dispensa completamente a consciência para produzir uma contração muscular perigosa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para o cirurgião, essa contração é catastrófica: um abdome que se contrai durante uma laparotomia empurra vísceras contra o instrumental, fecha o campo cirúrgico, torna a sutura fina impossível. Para a intubação traqueal — o primeiro ato técnico de quase toda anestesia geral —, o problema é ainda mais direto: os músculos da laringe (adutores das cordas vocais) e a mandíbula reagem a qualquer estímulo mecânico com um reflexo de fechamento, o laringoespasmo, que pode obstruir completamente a via aérea no exato momento em que ela mais precisa estar aberta."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A hipnose profunda sozinha reduziria esses reflexos, mas apenas à custa de doses tão altas de hipnótico que a depressão cardiovascular se tornaria perigosa — o mesmo princípio de engenharia farmacológica que já motivou a divisão da tríade em três classes independentes. Existe, então, uma exigência técnica muito específica: abolir a contração da musculatura esquelética voluntária e reflexa, de forma completa, rápida e controlável, sem depender da profundidade da hipnose para consegui-lo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Fixe antes de seguir: o bloqueio neuromuscular não existe para 'aprofundar' a anestesia. Existe para resolver um problema que a hipnose e a analgesia, sozinhas, não resolvem — impedir que reflexos motores medulares, independentes da consciência, atrapalhem a intubação e a cirurgia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Onde um fármaco no sangue consegue interromper o sinal do nervo ao músculo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você já estudou o acoplamento excitação-contração inteiro no ciclo básico: potencial de ação no nervo motor, chegada ao terminal axônico, abertura de canais de cálcio voltagem-dependentes, fusão de vesículas sinápticas, liberação de acetilcolina na fenda sináptica, ligação ao receptor nicotínico na placa motora, despolarização da membrana muscular, propagação até os túbulos T, liberação de cálcio do retículo sarcoplasmático, deslizamento de actina e miosina. É uma cadeia longa, com muitos elos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas essa cadeia tem exatamente um ponto onde um fármaco circulante no sangue, sem atravessar barreira hematoencefálica nenhuma, consegue interrompê-la: a **junção neuromuscular**, e especificamente o **receptor nicotínico de acetilcolina** na placa motora. Esse receptor é uma proteína de canal iônico formada por cinco subunidades dispostas ao redor de um poro central — quando a acetilcolina se liga a duas dessas subunidades, o poro se abre, cátions entram na fibra muscular e a membrana despolariza. É uma estrutura elegante porque fica do lado de fora da célula muscular, exposta diretamente ao plasma que banha a fenda sináptica: não é preciso atravessar membrana nenhuma para alcançá-la."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Qualquer molécula que ocupe esse receptor, ou o mantenha na configuração errada, interrompe a cadeia elétrico-mecânica bem antes de o cálcio ser liberado do retículo sarcoplasmático. E como o receptor nicotínico da placa motora é farmacologicamente distinto do receptor nicotínico ganglionar e do muscarínico central, é possível — em teoria e em prática, com fármacos bem desenhados — bloquear a transmissão neuromuscular esquelética sem tocar significativamente o sistema nervoso autônomo nem o central."
+    },
+    {
+      "tipo": "etimologia",
+      "conteudo": "**Nicotínico** vem de nicotina, o alcaloide do tabaco usado nos experimentos farmacológicos clássicos do início do século XX para caracterizar subtipos de receptores colinérgicos: pesquisadores notaram que certos receptores de acetilcolina eram ativados também pela nicotina (os 'nicotínicos'), enquanto outros eram ativados pela muscarina, um alcaloide de cogumelos (os 'muscarínicos'). O nome registra a ferramenta que permitiu a descoberta do receptor — não a função que ele exerce no corpo, nem os fármacos que décadas depois seriam desenhados para bloqueá-lo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Duas estratégias moleculares diferentes conseguem interromper esse receptor, e cada uma resolve o problema de um jeito radicalmente distinto."
+    },
+    {
+      "tipo": "analogia",
+      "conteudo": "Pense na fenda sináptica como uma fechadura (o receptor nicotínico) disputada por duas chaves diferentes. A succinilcolina é uma chave-mestra que encaixa e gira a fechadura repetidamente — mas gira tantas vezes, tão rápido, que o mecanismo da fechadura acaba emperrando na posição girada, incapaz de responder a mais nenhuma chave, mesmo a original. O rocurônio é uma chave errada: encaixa no buraco da fechadura, ocupa o espaço, mas nunca gira. Enquanto ela estiver lá, nem a chave certa (a acetilcolina) consegue girar o mecanismo — não porque ele esteja emperrado, mas porque o espaço já está tomado. Mapeando: fechadura = receptor nicotínico; girar a fechadura = despolarizar a membrana muscular; chave-mestra-que-emperra = succinilcolina (bloqueio despolarizante); chave-errada-que-só-ocupa = rocurônio (bloqueio não-despolarizante). Essa diferença — emperrar girando vs. ocupar sem girar — é a raiz de tudo o que vem a seguir, incluindo por que só uma das duas classes tem antídoto direto."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Estratégia 1 — imitar a acetilcolina até o receptor se cansar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A **succinilcolina** — o nome vem de succinil + colina, refletindo sua estrutura de duas moléculas de acetilcolina unidas — é, estruturalmente, exatamente isso: duas acetilcolinas ligadas, o suficiente para encaixar no receptor nicotínico e ativá-lo, provocando despolarização da placa motora exatamente como a acetilcolina faria. A diferença crítica é que a succinilcolina não é hidrolisada de forma clinicamente relevante pela acetilcolinesterase da fenda sináptica (a enzima que degrada acetilcolina em milissegundos); ela é degradada, muito mais lentamente, pela **pseudocolinesterase plasmática**. Isso significa que ela permanece ligada ao receptor por muito mais tempo do que a acetilcolina natural — e um receptor nicotínico continuamente ativado, sem chance de repolarizar, entra em um estado de **dessensibilização**: ele para de responder, mesmo com o agonista ainda ligado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse mecanismo explica uma observação clínica que confunde todo estudante na primeira vez que vê: a succinilcolina, antes de paralisar, **contrai** o músculo. Nos primeiros segundos após a injeção, o paciente frequentemente apresenta fasciculações — pequenos abalos musculares visíveis, especialmente no tórax e abdome — porque cada receptor nicotínico está sendo ativado (despolarizado) antes de se dessensibilizar. É por isso que esse tipo de bloqueio se chama **despolarizante**: ele não impede a despolarização, ele a causa em excesso, até a placa motora ficar refratária."
+    },
+    {
+      "tipo": "imagem",
+      "conteudo": "s8-anest-06-000-img01"
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Bloqueio despolarizante (succinilcolina) = agonista que satura o receptor até dessensibilizá-lo. Fasciculação vem antes da paralisia, e a dose usual passa sozinha em minutos, sem antídoto direto. Bloqueio não-despolarizante (rocurônio e família, também chamado adespolarizante) = antagonista competitivo que ocupa o receptor sem ativá-lo — em condições habituais não se observa fasciculação. Essa distinção mecanística é o que explica toda a farmacologia clínica que vem a seguir, incluindo por que só um dos dois tem reversão farmacológica ativa e previsível."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Estratégia 2 — ocupar o receptor sem nunca ativá-lo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O **rocurônio** e os demais bloqueadores da classe dos aminoesteroides (vecurônio, pancurônio) seguem a segunda estratégia: são antagonistas competitivos puros do receptor nicotínico. Eles se encaixam no mesmo sítio de ligação da acetilcolina, mas não abrem o canal — apenas ocupam o espaço, impedindo que a acetilcolina liberada pelo nervo motor consiga se ligar em número suficiente para despolarizar a membrana. Quanto mais moléculas de bloqueador estiverem ocupando receptores, menor a chance de qualquer acetilcolina encontrar um receptor livre — o resultado é uma paralisia flácida gradual, proporcional à dose, sem nenhuma fase inicial de contração."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por depender de competição — e não de dessensibilização — esse bloqueio tem uma propriedade clinicamente decisiva: ele pode ser revertido deslocando o equilíbrio a favor da acetilcolina, ou sequestrando o próprio bloqueador antes que ele alcance o receptor. É exatamente isso que a farmacologia de reversão faz."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se devolve a força — duas formas de reverter o bloqueio não-despolarizante"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A primeira forma é indireta: os **anticolinesterásicos** (neostigmina é o representante clássico) inibem a acetilcolinesterase da fenda sináptica, a enzima que normalmente degrada a acetilcolina em milissegundos. Com a enzima bloqueada, a acetilcolina liberada pelo nervo se acumula na fenda em concentração muito mais alta que o normal — e essa acetilcolina em excesso compete com o rocurônio pelos mesmos receptores, deslocando-o gradualmente e permitindo que a transmissão neuromuscular se restabeleça. É reversão por inundação: não se remove o bloqueador do corpo, apenas se satura o campo de batalha a favor do lado certo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda forma é direta: o **sugamadex** é uma molécula em forma de anel (uma ciclodextrina modificada) que encapsula fisicamente o rocurônio ou o vecurônio — não age no receptor, nem na enzima, mas sequestra o próprio bloqueador na circulação, formando um complexo inerte que é eliminado pelos rins. Como o rocurônio capturado não pode mais competir pelo receptor, a acetilcolina volta a ocupar a placa motora livremente, e a reversão ocorre em minutos, mesmo em bloqueios profundos onde os anticolinesterásicos seriam insuficientes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nenhuma dessas duas reversões existe para o bloqueio despolarizante da succinilcolina: como esse bloqueio depende de dessensibilização do receptor — não de ocupação competitiva —, aumentar a acetilcolina disponível não ajuda a placa motora dessensibilizada a voltar a responder mais rápido, e o sugamadex não tem afinidade pela succinilcolina. Por isso a succinilcolina é escolhida quando se precisa de paralisia ultrarrápida e autolimitada (a dose passa sozinha), enquanto o rocurônio é escolhido quando se quer um bloqueio mais previsível e ativamente reversível a qualquer momento da cirurgia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O risco que sai escondido da sala de cirurgia"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Entre paralisar e devolver a força, existe uma janela onde as coisas podem dar errado silenciosamente: o **bloqueio residual**. Um paciente pode parecer acordado — abre os olhos, responde a comandos simples — enquanto sua musculatura respiratória e da via aérea superior ainda não recuperou força suficiente para sustentar uma respiração eficaz ou proteger a via aérea de aspiração. É um risco que não aparece no nível de consciência, apenas na força muscular residual, e é uma das causas evitáveis mais importantes de complicação respiratória na sala de recuperação pós-anestésica."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Guarde essa ideia: a reversão do bloqueio neuromuscular não é um detalhe burocrático de final de cirurgia. É uma etapa clínica com risco próprio, tão relevante quanto a indução — e a forma de monitorá-la e garantir que esteja completa é tratada em bloco dedicado a seguir."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-anest-00-000",
+        "titulo": "Anestesiologia — A Medicina de Suspender e Devolver a Consciência com Segurança",
+        "disciplina": "Anestesiologia",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco pai estabeleceu que o relaxamento muscular é um dos três componentes independentes da tríade anestésica e que sua supressão do diafragma é o mecanismo funcionando como previsto — não um efeito colateral. Este bloco filho abre exatamente essa caixa-preta."
+      },
+      {
+        "bloco_id": "s2-fisio1-03-002-02-03",
+        "titulo": "Acoplamento Excitacao-Contracao",
+        "disciplina": "Fisiologia I — Geral, Sangue, Cardiovascular",
+        "semestre": 2,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Monitorização do bloqueio neuromuscular (train-of-four)",
+        "mecanismo_conexao": "A distinção entre bloqueio despolarizante e não-despolarizante determina o padrão de resposta ao estímulo de nervo periférico. O 'fade' progressivo observado no train-of-four durante bloqueio não-despolarizante é classicamente atribuído a ação também sobre receptores nicotínicos pré-sinápticos facilitatórios — mecanismo tratado com mais nuance e a quantificação objetiva do bloqueio ficam para o módulo dedicado de monitorização.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Sugamadex em profundidade — farmacocinética e limites da reversão",
+        "mecanismo_conexao": "Este bloco introduziu o sugamadex como sequestro molecular direto do rocurônio/vecurônio; um bloco dedicado deve aprofundar cinética de complexação, doses por profundidade de bloqueio e por que ele não reverte bloqueadores benzilisoquinolínicos nem succinilcolina.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "genetica-clinica",
+        "semestre_futuro": 8,
+        "topico": "Deficiência de pseudocolinesterase e apneia prolongada por succinilcolina",
+        "mecanismo_conexao": "Pacientes com variantes genéticas da butirilcolinesterase plasmática metabolizam succinilcolina muito mais lentamente, prolongando a paralisia e a apneia por horas em vez de minutos — consequência direta da via de degradação descrita aqui. Este bloco-pai apenas menciona o mecanismo geral; o caso clínico associado ilustra a exceção, mas o detalhamento farmacogenético completo pertence a um bloco filho dedicado.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Hipertermia maligna desencadeada por succinilcolina e agentes voláteis",
+        "mecanismo_conexao": "A succinilcolina é um dos dois gatilhos farmacológicos clássicos da hipertermia maligna, uma resposta farmacogenética ao receptor de rianodina — tópico já anunciado como conexão futura no bloco-pai da disciplina.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Bloqueio residual pós-operatório e complicações respiratórias",
+        "mecanismo_conexao": "A reversão incompleta do bloqueio não-despolarizante — bloqueio residual — é a principal causa evitável de hipoventilação e obstrução de via aérea na sala de recuperação pós-anestésica; mecanismo diretamente derivado da farmacodinâmica de reversão discutida aqui.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s8-anest-01-000",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "A escolha entre succinilcolina (ação ultrarrápida, sem antídoto direto) e rocurônio (ação mais previsível, reversível por sugamadex) é decidida já na avaliação pré-anestésica, quando se antecipa via aérea difícil ou risco de aspiração — contexto que motiva a indução de sequência rápida."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-anest-06-000-fc01",
+      "pergunta": "Por que a succinilcolina causa fasciculações visíveis antes de paralisar o paciente, enquanto o rocurônio não costuma causar esse fenômeno?",
+      "resposta": "A succinilcolina é um agonista do receptor nicotínico da placa motora — ela ativa o receptor da mesma forma que a acetilcolina, despolarizando a membrana muscular repetidamente até que o receptor se dessensibilize e pare de responder. Cada ativação inicial produz uma contração muscular visível (fasciculação) antes da paralisia se instalar. O rocurônio, ao contrário, é um antagonista competitivo: ele ocupa o receptor sem ativá-lo, apenas impedindo que a acetilcolina endógena se ligue. Sem ativação, não há despolarização relevante, e por isso não se observa fasciculação em condições habituais. A presença ou ausência de fasciculação é, na prática clínica, o sinal mais imediato de qual classe de bloqueador foi usada.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "succinilcolina",
+        "rocuronio",
+        "bloqueio-despolarizante",
+        "fasciculacao"
+      ]
+    },
+    {
+      "card_id": "s8-anest-06-000-fc02",
+      "pergunta": "Se um paciente tivesse deficiência genética grave de pseudocolinesterase plasmática e recebesse succinilcolina para indução, o que aconteceria com a duração do bloqueio neuromuscular, e por quê?",
+      "resposta": "O bloqueio se prolongaria de forma dramática — de uma paralisia esperada de 5 a 10 minutos para várias horas de apneia e imobilidade completa. A succinilcolina depende quase exclusivamente da pseudocolinesterase plasmática (butirilcolinesterase) para ser hidrolisada e removida da circulação; diferente da acetilcolina, ela não é degradada de forma clinicamente relevante pela acetilcolinesterase da fenda sináptica. Sem essa enzima funcionando normalmente, a succinilcolina permanece ligada ao receptor nicotínico por tempo muito maior, mantendo a dessensibilização da placa motora. Esse paciente precisaria permanecer sedado e ventilado mecanicamente até a droga ser eliminada por outras vias, muito mais lentas — não existe antídoto farmacológico direto para reverter esse bloqueio.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "succinilcolina",
+        "pseudocolinesterase",
+        "farmacogenetica",
+        "apneia-prolongada"
+      ]
+    },
+    {
+      "card_id": "s8-anest-06-000-fc03",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Como a succinilcolina e a acetilcolina ativam o mesmo receptor da mesma forma, os dois fármacos produzem o mesmo efeito funcional na junção neuromuscular.'",
+      "resposta": "Falso. A armadilha está em confundir 'ativar o mesmo receptor' com 'produzir o mesmo efeito final'. A acetilcolina é degradada em milissegundos pela acetilcolinesterase da fenda sináptica, permitindo que a placa motora repolarize e fique pronta para o próximo estímulo — por isso ela sustenta contrações musculares repetidas e coordenadas. A succinilcolina, resistente a essa mesma enzima, permanece ligada ao receptor por tempo muito mais longo, mantendo a membrana despolarizada até ela se dessensibilizar e parar de responder — o resultado funcional é paralisia flácida, o oposto de contração sustentada. Duas moléculas que ativam o receptor da mesma maneira podem produzir efeitos opostos se a velocidade de remoção da fenda sináptica for diferente.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "succinilcolina",
+        "acetilcolina",
+        "dessensibilizacao",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s8-anest-06-000-fc04",
+      "pergunta": "Por que o sugamadex reverte o bloqueio do rocurônio em minutos, inclusive em bloqueios profundos, enquanto não tem nenhum efeito sobre o bloqueio causado pela succinilcolina?",
+      "resposta": "O sugamadex age por complexação molecular direta: sua estrutura em anel encapsula fisicamente a molécula de rocurônio (ou vecurônio) na circulação, removendo-a do equilíbrio antes que ela consiga ocupar o receptor nicotínico — por isso funciona mesmo em bloqueios profundos, sem depender de acetilcolina endógena. A succinilcolina tem estrutura química completamente diferente (duas acetilcolinas unidas) e não se encaixa no anel do sugamadex, então não é sequestrada por ele. Além disso, o bloqueio da succinilcolina depende de dessensibilização do receptor, não de ocupação competitiva reversível — mesmo que houvesse um sequestrante, isso não aceleraria a dessensibilização já instalada. Por isso a succinilcolina permanece sem antídoto farmacológico direto até hoje.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "sugamadex",
+        "rocuronio",
+        "reversao",
+        "succinilcolina"
+      ]
+    },
+    {
+      "card_id": "s8-anest-06-000-fc05",
+      "pergunta": "Por que o receptor nicotínico da placa motora é chamado de 'nicotínico' — e o que essa origem revela sobre como ele foi descoberto, antes mesmo de se saber que existiam bloqueadores neuromusculares?",
+      "resposta": "O nome vem da nicotina, o alcaloide do tabaco usado nos experimentos farmacológicos clássicos do início do século XX para caracterizar subtipos de receptores colinérgicos: pesquisadores observaram que certos receptores de acetilcolina eram ativados também pela nicotina (os 'nicotínicos'), enquanto outros eram ativados pela muscarina, um alcaloide de cogumelos (os 'muscarínicos'). A nomenclatura nasceu, portanto, de um teste farmacológico de bancada — qual droga ativa qual receptor — muito antes de existir qualquer aplicação clínica de bloqueio neuromuscular. É outro exemplo do padrão recorrente na história da medicina: o nome registra a ferramenta que permitiu a descoberta, não a função final que o receptor exerceria no corpo nem os fármacos que décadas depois seriam desenhados para bloqueá-lo.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "receptor-nicotinico",
+        "etimologia",
+        "historia-da-farmacologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-anest-06-000-caso01",
+      "titulo": "Apneia que não termina depois de uma cirurgia rápida",
+      "apresentacao": "Homem de 29 anos, previamente hígido, é submetido a apendicectomia de urgência sob anestesia geral com indução de sequência rápida usando succinilcolina para facilitar intubação imediata (paciente com estômago cheio). A cirurgia dura 35 minutos e transcorre sem intercorrências. Ao final, a equipe suspende os agentes hipnóticos, esperando que o paciente respire espontaneamente e desperte em poucos minutos, como é habitual após succinilcolina. Passados 25 minutos, o paciente permanece completamente flácido, sem qualquer movimento respiratório espontâneo, embora os sinais vitais estejam estáveis e o eletroencefalograma sugira que ele já não está mais hipnotizado.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O paciente carrega uma variante genética da butirilcolinesterase plasmática (pseudocolinesterase atípica) que hidrolisa succinilcolina de forma muito mais lenta que o normal — condição rara, geralmente desconhecida até a primeira exposição ao fármaco."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A succinilcolina permanece em concentração elevada na fenda sináptica da junção neuromuscular por muito mais tempo que os 5-10 minutos esperados, mantendo os receptores nicotínicos da placa motora continuamente ocupados."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A dessensibilização do receptor nicotínico se prolonga indefinidamente enquanto houver droga não metabolizada circulando — a placa motora permanece incapaz de responder a qualquer liberação de acetilcolina proveniente do nervo motor."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paralisia flácida generalizada e apneia que persistem muito além do esperado, apesar de o paciente já não estar mais sob efeito hipnótico — um estado de consciência potencialmente presente dentro de um corpo que ainda não pode se mover nem respirar."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Diagnóstico de bloqueio prolongado por deficiência de pseudocolinesterase (excluídas outras causas reversíveis). Conduta: manter sedação, analgesia e ventilação mecânica controlada até a succinilcolina ser eliminada por vias metabólicas alternativas mais lentas — tipicamente várias horas. Não existe antídoto farmacológico direto para esse bloqueio despolarizante prolongado; o manejo é de suporte e vigilância. Após recuperação completa, investigação familiar e identificação do genótipo de colinesterase são recomendadas, com alerta médico permanente para evitar succinilcolina em exposições futuras."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente por que a via de eliminação da succinilcolina (pseudocolinesterase plasmática, não acetilcolinesterase sináptica) é uma peça central do mecanismo descrito neste bloco: quando essa via falha geneticamente, a previsibilidade que torna a succinilcolina atraente para indução de sequência rápida desaparece, e o bloqueio se comporta de forma completamente diferente do esperado — sem que exista reversão farmacológica ativa disponível, ao contrário do que ocorre com os bloqueadores não-despolarizantes.",
+      "disciplinas_relacionadas": [
+        "anestesiologia",
+        "farmacologia",
+        "genetica-clinica",
+        "medicina-intensiva"
+      ],
+      "diagnostico_revelado": "Bloqueio neuromuscular prolongado por deficiência de pseudocolinesterase plasmática (colinesterase atípica) após succinilcolina.",
+      "tratamento_resumido": "Suporte ventilatório mecânico e sedação até metabolização espontânea da succinilcolina por vias alternativas; ausência de antídoto direto; investigação genética familiar após recuperação."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-anest-06-000-img01",
+        "url": null,
+        "tipo_imagem": "esquema_didatico",
+        "titulo": "Dois modos de bloquear o mesmo receptor",
+        "descricao": "Esquema didático em duas colunas lado a lado comparando bloqueio despolarizante e não-despolarizante na junção neuromuscular. Coluna esquerda: sequência de três quadros mostrando uma molécula agonista ocupando repetidamente o receptor nicotínico, com a membrana muscular alternando entre despolarizada e progressivamente dessensibilizada, terminando em receptor 'travado' e inerte. Coluna direita: sequência de três quadros mostrando uma molécula antagonista ocupando o receptor sem provocar qualquer despolarização, com moléculas de acetilcolina tentando se ligar e sendo bloqueadas, terminando em receptor ocupado mas silencioso. Um terminal nervoso pré-sináptico no topo de ambas as colunas, liberando vesículas de neurotransmissor, e a fibra muscular pós-sináptica na base.",
+        "prompt_ia": "Diagrama científico vetorial, fundo transparente adaptativo a tema claro e escuro, estilo de infográfico médico moderno e limpo, sem nenhum texto, palavra, letra, número ou legenda embutida na imagem. Composição em duas colunas verticais simétricas separadas por uma linha divisória sutil. Topo de ambas as colunas: um terminal nervoso pré-sináptico estilizado em formato de bulbo, com pequenas vesículas circulares sendo liberadas na fenda sináptica. Coluna esquerda, três quadros em sequência vertical descendente: primeiro quadro com uma molécula pequena e alongada encaixando em um receptor em formato de canal proteico na membrana pós-sináptica, membrana representada com leve deformação ondulada indicando despolarização; segundo quadro repetindo a cena com mais moléculas encaixadas e a membrana ainda mais ondulada; terceiro quadro mostrando o receptor com aspecto 'fechado' ou opaco e a membrana retornando a uma linha reta e inerte, simbolizando dessensibilização. Coluna direita, três quadros em sequência vertical descendente: primeiro quadro com uma molécula maior e mais rígida encaixada no mesmo tipo de receptor, sem qualquer ondulação na membrana; segundo quadro mostrando pequenas moléculas circulares (representando acetilcolina) tentando se aproximar do receptor mas sendo repelidas por uma seta de bloqueio; terceiro quadro repetindo a cena de forma estável, membrana permanecendo reta e sem ondulação em nenhum momento. Paleta de cores médica sóbria em tons de azul-petróleo e verde-água para as estruturas celulares, com um tom de destaque em coral para as moléculas bloqueadoras e um tom de destaque em âmbar para as moléculas de acetilcolina. Traços vetoriais limpos, estilo minimalista de livro-texto contemporâneo, sem texturas fotorrealistas, sem qualquer texto ou rotulagem dentro da própria imagem. Sem direitos autorais aplicáveis.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Miller RD, Gropper MA. Miller's Anesthesia. 9th ed. Elsevier; 2020. Chapter 21 — Neuromuscular Blocking Agents.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Butterworth JF, Mackey DC, Wasnick JD. Morgan & Mikhail's Clinical Anesthesiology. 6th ed. McGraw-Hill; 2018. Chapter 11 — Neuromuscular Blocking Agents.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Barash PG, Cullen BF, Stoelting RK, et al. Clinical Anesthesia. 8th ed. Wolters Kluwer; 2017. Chapter 20 — Neuromuscular Blocking Agents.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Chapter 27 — Skeletal Muscle Relaxants.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
   "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "workflow-anima-s8",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "agente-integrador",
+    "data_revisao": "2026-07-06",
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
   "_lentes": [
     "correlação ciências básicas",
     "conduta/técnica",

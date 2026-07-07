@@ -5,50 +5,305 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Sinapse Elétrica (Gap Junctions Neuronais)",
+    "subtitulo": "Por que alguns circuitos do corpo não podem se dar ao luxo de esperar nem um milissegundo a mais?",
     "semestre": 1,
     "disciplina": "histologia",
-    "profundidade_arvore": 3,
+    "sistema_corporal": "nervoso",
+    "regiao_anatomica": null,
+    "profundidade_arvore": 4,
     "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "hist",
-      "esqueleto"
-    ],
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
+    "tags": ["histologia", "neuronio", "sinapse", "gap-junction", "comunicacao-celular"],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": ["expert"]
   },
-  "resumo_conciso": "Acoplamento direto e rápido; sincronização de populações neuronais",
-  "narrativa": [],
+  "resumo_conciso": "A sinapse elétrica é a forma mais rápida e mais primitiva de comunicação entre células excitáveis, dispensando completamente a etapa química que caracteriza a maioria das sinapses do corpo. Em vez de liberar neurotransmissor em uma fenda e esperar que ele se ligue a receptores do outro lado, a sinapse elétrica conecta diretamente o citoplasma de duas células através de canais proteicos chamados conexons, formados por proteínas conhecidas como conexinas. O resultado é uma continuidade elétrica quase instantânea, sem atraso sináptico, ideal para circuitos que exigem sincronia absoluta — como certos reflexos de fuga e o próprio coração. Em troca dessa velocidade, a sinapse elétrica perde a capacidade de amplificar, modular ou inverter o sinal, algo que só a sinapse química oferece.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já reparou que, quando seu coração bate, todas as fibras do miocárdio parecem se contrair como uma única unidade, quase ao mesmo tempo, mesmo sendo milhões de células diferentes? Esse tipo de sincronia perfeita não é coincidência — é um projeto de engenharia biológica que aparece também em alguns circuitos do sistema nervoso, sempre que a prioridade absoluta é velocidade, não sofisticação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a maioria das sinapses não serve para certos circuitos?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A sinapse química — que você vai estudar em detalhe na Fisiologia — funciona como um telefonema: o sinal elétrico chega ao terminal, é convertido em liberação de neurotransmissor, que atravessa uma fenda, se liga a um receptor do outro lado, e só então gera um novo sinal elétrico na célula seguinte. Cada uma dessas etapas de conversão consome tempo — o chamado atraso sináptico, da ordem de meio milissegundo por sinapse."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para a maioria das decisões do corpo, meio milissegundo é irrelevante. Mas existem circuitos onde a diferença entre disparar todas as células ao mesmo tempo ou disparar com um pequeno atraso entre elas é a diferença entre uma resposta coordenada e um caos descoordenado — reflexos de fuga de peixes diante de um predador, por exemplo, ou a contração sincronizada do músculo cardíaco a cada batimento."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, guarde esta ideia: existe uma solução biológica que elimina completamente o atraso da conversão elétrico-química-elétrico, ao custo de perder flexibilidade. Vamos ver como ela funciona."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a natureza eliminou a etapa química inteira"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi literalmente fundir os citoplasmas de duas células adjacentes através de um canal físico direto. Esse canal é formado por proteínas transmembrana chamadas conexinas: seis conexinas se agrupam formando um hemicanal chamado conexon em cada célula. Quando o conexon de uma célula se alinha perfeitamente com o conexon da célula vizinha, forma-se um túnel contínuo e hidrofílico que atravessa o pequeno espaço extracelular entre as duas membranas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por esse túnel, íons e pequenas moléculas sinalizadoras fluem livremente e de forma passiva, seguindo apenas o gradiente elétrico entre as duas células. Não há vesícula, não há neurotransmissor, não há receptor — a corrente elétrica que despolariza uma célula simplesmente invade a célula vizinha através do canal, como água encontrando seu próprio nível entre dois recipientes conectados."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A sinapse elétrica é a única modalidade de comunicação entre células excitáveis que preserva o sinal elétrico sem qualquer conversão intermediária. Isso garante latência mínima e sincronia quase perfeita — mas também significa que o sinal não pode ser amplificado nem invertido, apenas transmitido tal como chegou."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "sinapse",
+      "origem": "do grego synapsis",
+      "significado": "união, ponto de contato",
+      "explicacao": "Formado por syn (junto) e haptein (apertar, unir), o termo foi cunhado pelo fisiologista Charles Sherrington em 1897 para descrever o ponto de contato funcional entre dois neurônios — na época, sem se saber ainda se essa comunicação era elétrica, química, ou ambas."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏊",
+      "conteudo": "Imagine duas piscinas conectadas por um cano largo e sempre aberto no fundo, em vez de duas piscinas separadas onde alguém precisa encher um balde, carregá-lo e despejar de uma na outra. Se você jogar água (corrente elétrica) na primeira piscina, o nível da segunda sobe quase instantaneamente, porque o cano (conexon/gap junction) mantém as duas conectadas o tempo todo, sem etapa intermediária. Já a sinapse química seria o balde: alguém precisa encher, carregar e despejar — funciona, mas gasta um tempo que o cano direto não gasta. Mapeamento: as duas piscinas = as duas células; o cano sempre aberto = o par de conexons formando a gap junction; a água fluindo = a corrente iônica passando diretamente; o balde carregado manualmente = o neurotransmissor da sinapse química."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se as sinapses elétricas do miocárdio deixassem de existir, mas cada célula muscular cardíaca permanecesse individualmente excitável, o que aconteceria com o batimento cardíaco?",
+      "resposta": "O coração perderia sua característica de sincício funcional — a capacidade de milhões de células se contraírem como se fossem uma única unidade coordenada. Sem as gap junctions conectando os cardiomiócitos, cada célula dispararia seu próprio potencial de ação de forma independente e dessincronizada, resultando em contrações desorganizadas e ineficazes, incapazes de gerar a pressão necessária para ejetar sangue de forma eficiente — um quadro clinicamente equivalente a uma arritmia grave, próxima de uma fibrilação. A vida como conhecemos, dependente de um coração que bombeia de forma coordenada, seria impossível sem esse acoplamento elétrico direto."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Microarquitetura da gap junction",
+      "descricao": "Esquema detalhado mostrando duas membranas celulares adjacentes separadas por um espaço extracelular estreito, com pares de conexons alinhados formando um túnel contínuo, e setas indicando o fluxo livre de íons entre os dois citoplasmas.",
+      "prompt_ia": "Diagrama científico vetorial em corte transversal mostrando gap junction entre duas células, fundo neutro adaptativo. Duas membranas plasmáticas paralelas separadas por espaço extracelular estreito. Em destaque, um hemicanal (conexon) hexamérico de cada lado, alinhados formando um túnel contínuo atravessando as duas membranas. Setas pequenas mostrando íons fluindo livremente através do túnel entre os dois citoplasmas. Legendas em português identificando conexina, conexon e espaço extracelular. Estilo de biologia molecular didática, cores suaves, alto contraste."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-hist-05-001",
+        "titulo": "O Neurônio — Visão Geral",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já saber que o neurônio gera potenciais de ação através de sua excitabilidade de membrana antes de entender como esse sinal pode ser transmitido diretamente a outra célula por uma sinapse elétrica."
+      },
+      {
+        "bloco_id": "s1-hist-05-000",
+        "titulo": "Tecido Nervoso — Visão Geral",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "complementar",
+        "explicacao": "A ideia geral de excitabilidade de membrana, apresentada na visão geral do tecido nervoso, é o pré-requisito conceitual para entender por que uma corrente iônica consegue atravessar diretamente de uma célula para outra."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "fisiologia",
+        "semestre_futuro": 2,
+        "topico": "Sincício funcional do miocárdio e condução do impulso cardíaco",
+        "mecanismo_conexao": "O acoplamento elétrico via gap junctions descrito aqui é o mecanismo que permite ao miocárdio se comportar como uma única unidade contrátil coordenada, propagando o impulso originado no nó sinoatrial por todo o coração.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "cardiologia",
+        "semestre_futuro": 6,
+        "topico": "Arritmias e bloqueios de condução",
+        "mecanismo_conexao": "Mutações ou doenças que comprometem as conexinas cardíacas (como certas cardiomiopatias) prejudicam diretamente o acoplamento elétrico descrito neste bloco, favorecendo bloqueios de condução e arritmias.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "embriologia",
+        "semestre_futuro": 1,
+        "topico": "Comunicação intercelular no desenvolvimento embrionário",
+        "mecanismo_conexao": "As gap junctions não são exclusivas do tecido nervoso e cardíaco — elas também coordenam sinalização entre células durante estágios iniciais do desenvolvimento embrionário, usando o mesmo princípio molecular de conexinas.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-02-001",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "As junções comunicantes (gap junctions) descritas como um dos três tipos de junção do tecido epitelial reaparecem aqui com a mesma estrutura molecular básica, mas aplicadas à comunicação elétrica neuronal em vez de à comunicação metabólica epitelial."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-hist-05-004-03-fc01",
+      "pergunta": "Por que a sinapse elétrica é capaz de transmitir sinal em ambas as direções, ao contrário da sinapse química, que é estritamente unidirecional?",
+      "resposta": "Porque a sinapse elétrica não depende de componentes assimétricos como vesículas pré-sinápticas (que só existem de um lado) ou receptores pós-sinápticos específicos (que só existem do outro). O canal formado pelos conexons é estruturalmente simétrico e passivo — a corrente iônica flui de acordo com o gradiente eletroquímico existente no momento, podendo, em princípio, fluir em qualquer direção dependendo de qual das duas células está mais despolarizada. Já a sinapse química tem uma arquitetura fisicamente assimétrica (terminal pré-sináptico de um lado, membrana pós-sináptica do outro) que só permite o fluxo em um sentido.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": ["biofisica", "sinapse", "gap-junction"]
+    },
+    {
+      "card_id": "s1-hist-05-004-03-fc02",
+      "pergunta": "Se uma mutação genética inativasse completamente as conexinas cardíacas, mas a excitabilidade individual de cada cardiomiócito permanecesse normal, qual seria a consequência funcional mais provável?",
+      "resposta": "O miocárdio perderia sua capacidade de agir como sincício funcional — cada célula continuaria capaz de gerar seu próprio potencial de ação, mas sem transmiti-lo eficientemente às células vizinhas através de gap junctions. O resultado seria propagação lenta, irregular ou totalmente bloqueada do impulso elétrico entre células adjacentes, favorecendo o surgimento de arritmias graves e bloqueios de condução, já que a coordenação da contração cardíaca depende inteiramente dessa continuidade elétrica direta entre as células.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["patologia", "genetica", "cardiologia"]
+    },
+    {
+      "card_id": "s1-hist-05-004-03-fc03",
+      "pergunta": "Compare a sinapse elétrica com a sinapse química quanto à velocidade de transmissão e à capacidade de modulação do sinal, explicando o trade-off evolutivo entre as duas.",
+      "resposta": "A sinapse elétrica é extremamente mais rápida — o sinal atravessa diretamente sem qualquer atraso de conversão química, ideal para circuitos que exigem sincronia quase perfeita. Em compensação, ela é rígida: não pode amplificar um sinal fraco, não pode inverter uma resposta excitatória em inibitória, e não é facilmente modulável por outros sistemas de sinalização. A sinapse química é mais lenta (o atraso sináptico típico é de cerca de meio milissegundo por sinapse), mas em troca ganha enorme flexibilidade: pode amplificar um único potencial de ação pré-sináptico em uma resposta pós-sináptica muito maior, pode ser excitatória ou inibitória dependendo do neurotransmissor e receptor envolvidos, e pode ser modulada por drogas, hormônios e plasticidade sináptica. A evolução escolheu usar cada uma onde o trade-off compensa: velocidade pura onde a sincronia é vital, flexibilidade onde o processamento complexo é mais importante que a rapidez extrema.",
+      "tipo": "comparacao",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": ["comparacao", "sinapse-eletrica", "sinapse-quimica"]
+    },
+    {
+      "card_id": "s1-hist-05-004-03-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Por serem tão mais rápidas e eficientes, as sinapses elétricas deveriam ser o tipo predominante de comunicação no córtex cerebral, responsável pelo pensamento complexo.'",
+      "resposta": "Falso. A velocidade extrema da sinapse elétrica vem acompanhada de rigidez: ela não permite amplificação, inversão (excitação para inibição) nem modulação farmacológica fina do sinal — características indispensáveis para o processamento cognitivo complexo. O córtex cerebral depende de sinapses químicas, que podem ser potencializadas ou deprimidas ao longo do tempo (plasticidade sináptica, a base biológica do aprendizado e da memória), integrar múltiplos neurotransmissores diferentes e gerar respostas graduadas e ajustáveis. A armadilha aqui é assumir que 'mais rápido' significa automaticamente 'melhor' — em biologia, cada solução existe porque atende a uma exigência funcional específica, e velocidade pura raramente é a exigência dominante em circuitos de raciocínio complexo.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["evolucao", "neurobiologia", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s1-hist-05-004-03-fc05",
+      "pergunta": "Um paciente apresenta um bloqueio de condução atrioventricular de alto grau ao eletrocardiograma, e a investigação genética revela uma mutação em um gene de conexina cardíaca. Explique como esse achado molecular se conecta ao quadro elétrico observado no exame.",
+      "resposta": "As conexinas cardíacas formam as gap junctions que acoplam eletricamente os cardiomiócitos, permitindo que o impulso elétrico originado no nó sinoatrial se propague de célula a célula até alcançar os ventrículos através do sistema de condução. Uma mutação que compromete a função dessas conexinas reduz a eficiência do acoplamento elétrico entre as células, retardando ou bloqueando a propagação do impulso em determinados pontos do sistema de condução — no eletrocardiograma, isso se manifesta como atraso ou bloqueio na condução entre átrios e ventrículos (bloqueio atrioventricular), exatamente porque o mecanismo molecular fundamental descrito neste bloco (o acoplamento direto via gap junctions) está comprometido na origem.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["clinica", "cardiologia", "sintese_transdisciplinar", "conexina"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-hist-05-004-03-caso01",
+      "titulo": "Síncope recorrente em um adolescente de 16 anos durante educação física",
+      "apresentacao": "Adolescente de 16 anos, sem comorbidades conhecidas, é levado ao pronto-socorro após episódio de perda súbita de consciência durante aula de educação física, com recuperação espontânea em cerca de 30 segundos. Refere dois episódios semelhantes nos últimos 8 meses, sempre durante exercício intenso. História familiar revela que um tio paterno morreu subitamente aos 34 anos, sem causa esclarecida. Eletrocardiograma de repouso mostra intervalo PR discretamente alargado e um padrão intermitente de bloqueio de condução. Ecocardiograma é normal, sem alterações estruturais.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Suspeita de mutação genética em gene que codifica proteínas de junção comunicante (conexina) ou de canais iônicos envolvidos no sistema de condução cardíaco, herdada de forma autossômica, explicando o padrão familiar."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "As gap junctions que acoplam eletricamente os cardiomiócitos do sistema de condução especializado (nó sinoatrial, nó atrioventricular, feixe de His e ramos), responsáveis por propagar o impulso elétrico de forma sincronizada por todo o coração."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O acoplamento elétrico comprometido causa propagação lentificada e instável do impulso, especialmente sob demanda aumentada (exercício físico, quando a frequência cardíaca precisa subir rapidamente), favorecendo bloqueios intermitentes de condução entre átrios e ventrículos."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Síncope (perda súbita de consciência) desencadeada por esforço físico, decorrente de queda transitória e abrupta do débito cardíaco quando o bloqueio de condução impede a ativação ventricular sincronizada por alguns segundos."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O risco mais grave é a progressão para bloqueio atrioventricular completo ou arritmia ventricular maligna durante esforço, com risco de morte súbita — o que explica a relevância do histórico familiar. Investigação especializada (eletrofisiologia, teste genético) e possível indicação de marcapasso definitivo são necessários."
+        }
+      ],
+      "conexao_com_bloco": "O caso conecta diretamente o mecanismo molecular estudado neste bloco — o acoplamento elétrico via gap junctions entre células excitáveis — a uma manifestação clínica grave e potencialmente fatal. O miocárdio só funciona como sincício coordenado porque suas células estão eletricamente conectadas da mesma forma que os circuitos neuronais de sinapse elétrica descritos na narrativa; quando essa conexão falha, a consequência não é apenas um atraso, mas uma ameaça à vida.",
+      "disciplinas_relacionadas": ["histologia", "cardiologia", "genetica", "medicina-do-esporte"],
+      "diagnostico_revelado": "Distúrbio de condução cardíaca hereditário compatível com canalopatia/conexinopatia cardíaca, com risco de morte súbita.",
+      "tratamento_resumido": "Encaminhamento a cardiologista especializado em eletrofisiologia, estudo eletrofisiológico invasivo, aconselhamento genético familiar, e provável indicação de marcapasso definitivo ou cardiodesfibrilador implantável conforme estratificação de risco. Restrição de esportes competitivos até avaliação completa."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-hist-05-004-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.7",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "citologia",
-    "histofisiologia"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Junqueira LC, Carneiro J. Histologia Básica: Texto e Atlas. 13ª ed. Guanabara Koogan; 2017. Capítulo 9 — Tecido Nervoso.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 14ª ed. Elsevier; 2021. Capítulo 10 — Excitação Rítmica do Coração.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "A sinapse elétrica deveria predominar no córtex por ser mais rápida",
+      "correcao": "A sinapse química permite modulação e plasticidade, indispensáveis ao processamento cognitivo complexo; velocidade não é a exigência dominante ali",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Toda sinapse é unidirecional por definição",
+      "correcao": "A sinapse elétrica pode ser bidirecional, já que seu canal é simétrico e passivo, ao contrário da sinapse química",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "sinapse elétrica",
+      "termo_es": "sinapsis eléctrica",
+      "termo_en": "electrical synapse",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "junção comunicante",
+      "termo_es": "unión comunicante",
+      "termo_en": "gap junction",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "gemini-3.1-flash-lite",
+      "mudanca": "Criação inicial do bloco",
+      "motivo": "Produção em massa S1"
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.7",
+      "mudanca": "Reescrita completa: analogia de 'prédios vizinhos com ponte' substituída por piscinas conectadas por cano (mais vívida e fisicamente precisa para o conceito de continuidade de fluido/corrente), caso clínico adicionado (conexinopatia cardíaca com síncope e risco de morte súbita), flashcard clínico transdisciplinar acrescentado, prerequisitos corrigidos para IDs técnicos reais",
+      "motivo": "Alinhamento com ANIMA_FILOSOFIA.md — bloco produzido por IA de baixo custo sem caso clínico"
+    }
   ]
 }

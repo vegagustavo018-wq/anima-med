@@ -220,38 +220,36 @@
         "titulo": "Semiologia Respiratória Avançada",
         "tipo": "prerequisito_direto",
         "explicacao": "Frequência respiratória e ausculta pulmonar têm fisiologia diferente em criança; você precisa entender a baseline do adulto primeiro."
-      },
-      {
-        "bloco_id": "s4-fisio-02-008",
-        "titulo": "Metabolismo Basal e Termorregulação",
-        "tipo": "prerequisito_conceitual",
-        "explicacao": "Entender por que lactente tem frequência cardíaca alta exige entender metabolismo basal elevado; isso foi coberto em Fisiologia do semestre anterior."
       }
     ],
     "futuras": [
       {
         "bloco_id": "s5-semi2-08-001",
         "titulo": "Semiologia do Recém-nascido",
-        "tipo": "cascata_causal",
-        "explicacao": "Este bloco (08-000) dá os conceitos gerais; o próximo aprofunda especificamente no período neonatal, que é o mais delicado para semiologia."
+        "tipo": "CASCATA_CAUSAL",
+        "explicacao": "Este bloco (08-000) dá os conceitos gerais; o próximo aprofunda especificamente no período neonatal, que é o mais delicado para semiologia.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s5-psych-01-005",
         "titulo": "Desenvolvimento Psicomotor Normal e Marcos do Desenvolvimento",
-        "tipo": "reconhecimento_clinico",
-        "explicacao": "Testes de desenvolvimento (rolling, sentar, andar) são parte da semiologia pediátrica; você verá como reflexos arcaicos e tônus evolui."
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "explicacao": "Testes de desenvolvimento (rolling, sentar, andar) são parte da semiologia pediátrica; você verá como reflexos arcaicos e tônus evolui.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s5-far-04-003",
         "titulo": "Farmacocinética em Crianças",
-        "tipo": "mecanismo_compartilhado",
-        "explicacao": "Pressão arterial baixa e volume de distribuição maiores em crianças significam dosagem de drogas completamente diferente; isso será coberto em Farmacologia."
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "explicacao": "Pressão arterial baixa e volume de distribuição maiores em crianças significam dosagem de drogas completamente diferente; isso será coberto em Farmacologia.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s6-patol-01-004",
         "titulo": "Febre em Criança e Investigação de Sepse Neonatal",
-        "tipo": "cascata_causal",
-        "explicacao": "A termorregulação imatura em lactente explica por que febre é sinal de alarme muito maior em RN/lactente que em criança escolar; patologia explorará isso em profundidade."
+        "tipo": "CASCATA_CAUSAL",
+        "explicacao": "A termorregulação imatura em lactente explica por que febre é sinal de alarme muito maior em RN/lactente que em criança escolar; patologia explorará isso em profundidade.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
@@ -259,7 +257,8 @@
         "bloco_id": "s5-semi2-03-001",
         "titulo": "Ausculta Abdominal: Sons Intestinais Normais e Patológicos",
         "tipo": "comparacao",
-        "explicacao": "Criança tem abdome mais distendido normalmente; sons intestinais são mais audíveis em criança que em adulto. Útil para contraste ao estudar semiologia abdominal pediátrica."
+        "explicacao": "Criança tem abdome mais distendido normalmente; sons intestinais são mais audíveis em criança que em adulto. Útil para contraste ao estudar semiologia abdominal pediátrica.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -323,59 +322,70 @@
   ],
   "casos_clinicos": [
     {
-      "id": "cc-s5semi2-08-001",
+      "caso_id": "cc-s5semi2-08-001",
       "titulo": "Criança levada ao pronto-socorro por 'sopro cardíaco'",
-      "dificuldade": "moderado",
       "apresentacao": "Mãe de Gabriela, 2 anos, procura emergência após pediatra do bairro referir 'sopro cardíaco que precisa investigação urgente'. Mãe relata que Gabriela está bem, brincando normalmente, sem dispneia, sem cansaço. Ganho de peso e crescimento normal segundo gráfico. Frequência cardíaca por palpação pela mãe é sempre rápida desde que era bebê.",
-      "etapa_1": {
-        "titulo": "Causa",
-        "conteudo": "O pediatra do bairro, na ausculta de rotina, ouviu um sopro sistólico suave (grau 2/6) no foco aórtico da criança e, não sabendo diferenças de semiologia pediátrica, assumiu cardiopatia e fez encaminhamento para ecocardiograma urgente."
-      },
-      "etapa_2": {
-        "titulo": "Estrutura Afetada",
-        "conteudo": "Não há estrutura afetada. O que o pediatra ouviu foi turbulência de fluxo normal através de aorta pequena (calibre reduzido próprio de criança de 2 anos) passando com velocidade alta (frequência cardíaca naturalmente elevada nessa faixa etária). Isso não é cardiopatia — é acústica de fluxo normal em criança."
-      },
-      "etapa_3": {
-        "titulo": "Disfunção",
-        "conteudo": "Não há disfunção cardíaca em Gabriela. Seu coração está funcionando apropriadamente para sua idade — frequência 120 bpm em repouso está dentro do esperado para 2 anos (90-150 bpm). O sopro inocente não resulta em disfunção, não causa sintomas e não progride."
-      },
-      "etapa_4": {
-        "titulo": "Sintoma",
-        "conteudo": "Não há sintoma em Gabriela. A criança está assintomática, brincando normalmente, sem dispneia, sem fadiga, sem cianose. O único 'sintoma' é a ansiedade dos pais gerada pelo encaminhamento precipitado. Isso é um exemplo de como má interpretação de achados normais em semiologia pediátrica gera cascata de medicalização desnecessária."
-      },
-      "etapa_5": {
-        "titulo": "Consequência",
-        "conteudo": "Ecocardiograma realizado na emergência: completamente normal. Estruturas cardíacas normais, fluxo normal, sem regurgitação, sem estenose, sem shunt. Diagnóstico definido: sopro inocente. A mãe recebe orientação de que Gabriela está bem e não precisa de seguimento cardiológico. O caso ilustra a importância de conhecer semiologia pediátrica — diferenciar entre normal e patológico pode evitar procedimentos desnecessários, ansiedade parental e desperdício de recursos."
-      },
-      "ensino_chave": "Sopros sistólicos suaves, ejectivos, que desaparecem com manobras simples (respiração profunda, decúbito) em crianças entre 1-5 anos são inocentes até prova em contrário. A diferenciação é clínica: contexto de bem-estar, ausência de sintomas, ausência de outros sinais de cardiopatia (cianose, displasia, crescimento inadequado) e manobras positivas. Ecocardiograma não é primeira linha; é investigação para sopro que persiste nas manobras ou que muda caracteristicamente ao longo do exame."
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O pediatra do bairro, na ausculta de rotina, ouviu um sopro sistólico suave (grau 2/6) no foco aórtico da criança e, não sabendo diferenças de semiologia pediátrica, assumiu cardiopatia e fez encaminhamento para ecocardiograma urgente."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Não há estrutura afetada. O que o pediatra ouviu foi turbulência de fluxo normal através de aorta pequena (calibre reduzido próprio de criança de 2 anos) passando com velocidade alta (frequência cardíaca naturalmente elevada nessa faixa etária). Isso não é cardiopatia — é acústica de fluxo normal em criança."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Não há disfunção cardíaca em Gabriela. Seu coração está funcionando apropriadamente para sua idade — frequência 120 bpm em repouso está dentro do esperado para 2 anos (90-150 bpm). O sopro inocente não resulta em disfunção, não causa sintomas e não progride."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Não há sintoma em Gabriela. A criança está assintomática, brincando normalmente, sem dispneia, sem fadiga, sem cianose. O único 'sintoma' é a ansiedade dos pais gerada pelo encaminhamento precipitado. Isso é um exemplo de como má interpretação de achados normais em semiologia pediátrica gera cascata de medicalização desnecessária."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Ecocardiograma realizado na emergência: completamente normal. Estruturas cardíacas normais, fluxo normal, sem regurgitação, sem estenose, sem shunt. Diagnóstico definido: sopro inocente. A mãe recebe orientação de que Gabriela está bem e não precisa de seguimento cardiológico. O caso ilustra a importância de conhecer semiologia pediátrica — diferenciar entre normal e patológico pode evitar procedimentos desnecessários, ansiedade parental e desperdício de recursos."
+        }
+      ],
+      "conexao_com_bloco": "Sopros sistólicos suaves, ejectivos, que desaparecem com manobras simples (respiração profunda, decúbito) em crianças entre 1-5 anos são inocentes até prova em contrário. A diferenciação é clínica: contexto de bem-estar, ausência de sintomas, ausência de outros sinais de cardiopatia (cianose, displasia, crescimento inadequado) e manobras positivas. Ecocardiograma não é primeira linha; é investigação para sopro que persiste nas manobras ou que muda caracteristicamente ao longo do exame.",
+      "disciplinas_relacionadas": [
+        "Semiologia II"
+      ],
+      "diagnostico_revelado": "Criança levada ao pronto-socorro por 'sopro cardíaco'",
+      "tratamento_resumido": "Nenhuma intervenção terapêutica necessária — orientação e tranquilização dos pais. Sopro inocente não requer seguimento cardiológico nem restrição de atividades."
     },
     {
-      "id": "cc-s5semi2-08-002",
+      "caso_id": "cc-s5semi2-08-002",
       "titulo": "Lactente febril: como a imunocompetência incompleta muda semiologia",
-      "dificuldade": "alto",
-      "apresentacao": "Mãe traz Lucas, 4 meses, ao pronto-socorro. Febre de 38,5°C há 6 horas. Não há foco óbvio: ausculta pulmonar clara bilateralmente, abdome não palpável (normal para idade), sem otoscopia de otite média, urina sem piúria. Lactente está ligeiramente irritável mas consegue mamar quando oferecido. Frequência cardíaca 170 bpm (mãe relata sempre foi assim). Frequência respiratória 54 rpm (normal para essa idade)."
-    },
-      "etapa_1": {
-        "titulo": "Causa",
-        "conteudo": "A causa imediata não está clara pelo exame físico — não há foco localizado de infecção. Mas em lactente de 4 meses com febre, a causa mais provável é infecção bacteriana **não localizada** (bacteremia sem foco claro) — o sistema imune ainda é imaturo e não consegue compartimentalizar infecção. Bactérias podem estar na corrente sanguínea causando febre sem que hajam sinais localizados de inflamação (otite, pneumonia, etc.). Isso é **muito mais comum em lactente que em criança de 5 anos**."
-      },
-      "etapa_2": {
-        "titulo": "Estrutura Afetada",
-        "conteudo": "Possível: meninges (sem sinais claros no lactente porque fontanela anterior ainda está aberta e não há rigidez de nuca confiável), corrente sanguínea (bacteremia), rins (pielonefrite sem sintomas localizados em lactente). A imunidade de mucosa e de barreiras ainda está se desenvolvendo — então bactérias conseguem atravessar com mais facilidade."
-      },
-      "etapa_3": {
-        "titulo": "Disfunção",
-        "conteudo": "Potencial: sepse neonatal/lactente. Lactente de 4 meses que está 'só um pouco irritável' pode estar rapidamente descompensando. Sinais de alerta que você procura: perfusão periférica lentificada (capilares > 2 segundos, marmorata), hipotonia, letargia (não só irritabilidade mas apatia), taquipneia desproporcional, queda da temperatura (não apenas febre mas hipotermia, que é achado de pior prognóstico)."
-      },
-      "etapa_4": {
-        "titulo": "Sintoma",
-        "conteudo": "Lucas apresenta febre (sintoma aparente) e irritabilidade leve (que em lactente é sinal não-específico — pode ser fome, desconforto ou doença). Mas ainda consegue mamar (sugestivo de que não está muito grave), frequência cardíaca está na faixa esperada para idade (170 é normal para 4 meses), frequência respiratória também está normal. Ainda assim, em lactente febril de 4 meses, você não pode descartar infecção bacteriana invasiva baseado só na aparência clínica — aparência pode ser ilusória."
-      },
-      "etapa_5": {
-        "titulo": "Consequência Diagnóstica e de Manejo",
-        "conteudo": "Protocolo em lactente febril sem foco localizado: (1) Hemograma, proteína C reativa, procalcitonina; (2) Uroanálise e cultura; (3) Hemocultura (muito importante — bacteremia pode estar presente); (4) Punção lombar se houver qualquer achado anormal nos testes acima ou se procalcitonina for muito elevada. Muitos protocolos recomendam antibiótico empírico até que culturas voltem negativas por 48-72 horas (cobertura para E. coli, Listeria, Streptococcus agalactiae). Lucas foi internado, recebeu antibiótico e cultura de sangue voltou positiva para Streptococcus agalactiae 48 horas depois — confirmando bacteremia. Sem investigação agressiva nesse protocolo, teria ido embora da emergência com prescrição de paracetamol e evoluído para sepse e meningite em casa. O ponto: em lactente, febre é red flag diferente que em criança escolar. Semiologia pediátrica muda sua atitude clínica drasticamente."
-      },
-      "ensino_chave": "Lactente febril sem foco localizado é sepse neonatal/lactente até prova em contrário. A imaturidade do sistema imune e de barreiras (pele, mucosa, meninges) significa que criança de 4 meses com febre tem muito mais risco de infecção bacteriana invasiva que criança de 5 anos. Você não pode confiar em exame físico 'bonitão' para descartar doença grave. Protocolo agressivo de investigação (hemograma, culturas, às vezes punção lombar) é standard, não exceção."
+      "apresentacao": "Mãe traz Lucas, 4 meses, ao pronto-socorro. Febre de 38,5°C há 6 horas. Não há foco óbvio: ausculta pulmonar clara bilateralmente, abdome não palpável (normal para idade), sem otoscopia de otite média, urina sem piúria. Lactente está ligeiramente irritável mas consegue mamar quando oferecido. Frequência cardíaca 170 bpm (mãe relata sempre foi assim). Frequência respiratória 54 rpm (normal para essa idade).",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A causa imediata não está clara pelo exame físico — não há foco localizado de infecção. Mas em lactente de 4 meses com febre, a causa mais provável é infecção bacteriana **não localizada** (bacteremia sem foco claro) — o sistema imune ainda é imaturo e não consegue compartimentalizar infecção. Bactérias podem estar na corrente sanguínea causando febre sem que hajam sinais localizados de inflamação (otite, pneumonia, etc.). Isso é **muito mais comum em lactente que em criança de 5 anos**."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Possível: meninges (sem sinais claros no lactente porque fontanela anterior ainda está aberta e não há rigidez de nuca confiável), corrente sanguínea (bacteremia), rins (pielonefrite sem sintomas localizados em lactente). A imunidade de mucosa e de barreiras ainda está se desenvolvendo — então bactérias conseguem atravessar com mais facilidade."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Potencial: sepse neonatal/lactente. Lactente de 4 meses que está 'só um pouco irritável' pode estar rapidamente descompensando. Sinais de alerta que você procura: perfusão periférica lentificada (capilares > 2 segundos, marmorata), hipotonia, letargia (não só irritabilidade mas apatia), taquipneia desproporcional, queda da temperatura (não apenas febre mas hipotermia, que é achado de pior prognóstico)."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Lucas apresenta febre (sintoma aparente) e irritabilidade leve (que em lactente é sinal não-específico — pode ser fome, desconforto ou doença). Mas ainda consegue mamar (sugestivo de que não está muito grave), frequência cardíaca está na faixa esperada para idade (170 é normal para 4 meses), frequência respiratória também está normal. Ainda assim, em lactente febril de 4 meses, você não pode descartar infecção bacteriana invasiva baseado só na aparência clínica — aparência pode ser ilusória."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Protocolo em lactente febril sem foco localizado: (1) Hemograma, proteína C reativa, procalcitonina; (2) Uroanálise e cultura; (3) Hemocultura (muito importante — bacteremia pode estar presente); (4) Punção lombar se houver qualquer achado anormal nos testes acima ou se procalcitonina for muito elevada. Muitos protocolos recomendam antibiótico empírico até que culturas voltem negativas por 48-72 horas (cobertura para E. coli, Listeria, Streptococcus agalactiae). Lucas foi internado, recebeu antibiótico e cultura de sangue voltou positiva para Streptococcus agalactiae 48 horas depois — confirmando bacteremia. Sem investigação agressiva nesse protocolo, teria ido embora da emergência com prescrição de paracetamol e evoluído para sepse e meningite em casa. O ponto: em lactente, febre é red flag diferente que em criança escolar. Semiologia pediátrica muda sua atitude clínica drasticamente."
+        }
+      ],
+      "conexao_com_bloco": "Lactente febril sem foco localizado é sepse neonatal/lactente até prova em contrário. A imaturidade do sistema imune e de barreiras (pele, mucosa, meninges) significa que criança de 4 meses com febre tem muito mais risco de infecção bacteriana invasiva que criança de 5 anos. Você não pode confiar em exame físico 'bonitão' para descartar doença grave. Protocolo agressivo de investigação (hemograma, culturas, às vezes punção lombar) é standard, não exceção.",
+      "disciplinas_relacionadas": [
+        "Semiologia II"
+      ],
+      "diagnostico_revelado": "Lactente febril: como a imunocompetência incompleta muda semiologia",
+      "tratamento_resumido": "Internação com antibioticoterapia empírica de amplo espectro (cobertura para E. coli, Listeria, Streptococcus agalactiae) até resultado das culturas; ajuste do antibiótico após identificação do agente (neste caso, Streptococcus agalactiae)."
     }
   ],
   "midia": {

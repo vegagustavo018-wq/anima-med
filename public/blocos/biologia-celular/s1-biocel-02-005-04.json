@@ -5,50 +5,339 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Autofagia Lisossômica",
+    "subtitulo": "Por que a célula precisa, de tempos em tempos, comer parte de si mesma para continuar viva?",
     "semestre": 1,
     "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
+    "profundidade_arvore": 4,
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "2.0",
     "tags": [
-      "biocel",
-      "esqueleto"
+      "organelas",
+      "lisossomos",
+      "degradacao",
+      "homeostase",
+      "autofagossomo"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Reciclagem de organelas via autofagossomo-lisossomo",
-  "narrativa": [],
+  "resumo_conciso": "Toda mitocôndria envelhece — depois de anos de trabalho intenso, começa a vazar espécies reativas de oxigênio em vez de produzir ATP com eficiência, tornando-se mais um risco do que um recurso. A célula responde a esse desgaste inevitável com um processo chamado autofagia: envolve a organela indesejada numa membrana dupla, formando um compartimento isolado chamado autofagossomo, que depois se funde a um lisossomo para digestão completa. O que sobra dessa digestão — aminoácidos, ácidos graxos, nucleotídeos — retorna ao citosol como matéria-prima reciclada. Longe de ser mero descarte, a autofagia é uma resposta adaptativa fundamental de sobrevivência sob estresse e jejum, e sua falha está implicada em algumas das doenças neurodegenerativas mais estudadas da medicina.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense numa frota de táxis de uma cidade grande. Os carros mais novos rodam com eficiência, mas depois de anos de uso constante, alguns começam a vazar óleo, consumir mais combustível do que produzem em corridas, e representar mais risco de acidente do que benefício para a frota. Uma empresa de táxis responsável não espera o carro quebrar no meio da rua — ela o recolhe, desmonta as peças ainda aproveitáveis e descarta o resto de forma controlada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a célula não pode simplesmente ignorar organelas desgastadas?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mitocôndrias envelhecidas não apenas param de produzir ATP eficientemente — elas começam a vazar espécies reativas de oxigênio, moléculas que danificam proteínas, lipídios e DNA ao redor. Proteínas mal enoveladas, por sua vez, tendem a se agregar formando aglomerados que a célula não consegue mais processar pelas vias normais de degradação. Se esses elementos tóxicos simplesmente se acumulassem no citoplasma, o dano se espalharia progressivamente, comprometendo estruturas saudáveis vizinhas — um problema que cresce sozinho se não for contido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há ainda um segundo problema, ligado ao primeiro: em momentos de escassez nutricional (jejum prolongado, por exemplo), a célula precisa de uma fonte alternativa de blocos moleculares básicos — aminoácidos, ácidos graxos — para manter funções vitais quando não há suprimento externo suficiente. Desmontar componentes internos menos essenciais é uma forma de a célula 'canibalizar' a si mesma de forma controlada, priorizando sobrevivência sobre manutenção de estruturas não críticas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Guarde os dois problemas antes de seguir: (1) organelas e proteínas danificadas precisam ser isoladas e removidas antes que causem dano colateral, e (2) em escassez, a célula precisa reciclar seus próprios componentes como fonte de energia e matéria-prima. A autofagia resolve ambos com o mesmo mecanismo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula resolve os dois problemas ao mesmo tempo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi criar um envelope de isolamento que se forma ao redor do alvo — seja uma mitocôndria desgastada, seja um agregado de proteínas mal dobradas. Esse envelope, chamado fagóforo enquanto está se formando, expande-se progressivamente e se fecha completamente sobre si mesmo, isolando o conteúdo indesejado do restante do citoplasma antes mesmo de qualquer digestão começar. O compartimento resultante, já fechado, é o autofagossomo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse envelope é feito de membrana lipídica recrutada principalmente do retículo endoplasmático. A escolha de uma estrutura de dupla membrana — em vez de uma única camada — é estratégica: ela permite que o autofagossomo se funda de forma controlada ao lisossomo (um compartimento com enzimas hidrolíticas extremamente agressivas) sem que essas enzimas vazem diretamente para o citosol durante o processo de fusão. A dupla camada funciona como uma segunda linha de contenção, garantindo que, mesmo que a membrana externa se rompa, ainda haja uma camada interna intacta protegendo o restante da célula."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Da formação do fagóforo à reciclagem dos produtos finais",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Sinalização e nucleação do fagóforo",
+          "explicacao": "Sinais de dano (como perda de potencial de membrana mitocondrial) ou marcação por ubiquitinação recrutam proteínas que iniciam a formação de uma membrana curva ao redor do alvo."
+        },
+        {
+          "numero": 2,
+          "titulo": "Expansão e fechamento do envelope",
+          "explicacao": "O fagóforo se expande progressivamente, envolvendo completamente o alvo, até as bordas se encontrarem e se fundirem, formando o autofagossomo — uma vesícula de dupla membrana totalmente fechada."
+        },
+        {
+          "numero": 3,
+          "titulo": "Transporte pelo citoesqueleto",
+          "explicacao": "O autofagossomo é transportado ao longo de filamentos do citoesqueleto até encontrar um lisossomo disponível."
+        },
+        {
+          "numero": 4,
+          "titulo": "Fusão com o lisossomo",
+          "explicacao": "Proteínas de fusão, incluindo SNAREs, promovem a fusão controlada entre a membrana externa do autofagossomo e a membrana do lisossomo, formando o autolisossomo."
+        },
+        {
+          "numero": 5,
+          "titulo": "Degradação e liberação de produtos reciclados",
+          "explicacao": "As hidrolases ácidas do lisossomo degradam o conteúdo em blocos moleculares básicos — aminoácidos, ácidos graxos, nucleotídeos — que são transportados de volta ao citosol para reutilização em síntese ou produção de energia."
+        }
+      ]
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🗑️",
+      "conteudo": "Pense numa cozinha profissional durante o serviço de uma noite de pico. Mapeamento: a mitocôndria desgastada ou a proteína malformada é o utensílio quebrado ou o resto de comida estragado; o fagóforo se fechando ao redor do alvo é o cozinheiro colocando esse item numa sacola de lixo lacrada, isolando-o do restante da cozinha antes de qualquer manipulação adicional; o autofagossomo transportado até o lisossomo é a sacola sendo levada até a área de descarte; a fusão com o lisossomo e a digestão pelas hidrolases ácidas é o triturador industrial de resíduos processando o conteúdo da sacola; e os produtos finais — aminoácidos, ácidos graxos — voltando ao citosol são o composto orgânico reaproveitado que retorna à despensa da cozinha para ser usado em pratos futuros."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A autofagia não é apenas faxina celular — é uma resposta adaptativa de sobrevivência. Em jejum prolongado, a taxa de autofagia aumenta deliberadamente, fornecendo energia e blocos de construção a partir dos próprios componentes celulares menos essenciais."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a autofagia se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A autofagia depende inteiramente da maquinaria digestiva do lisossomo — sem hidrolases ácidas funcionais e sem o pH baixo que as ativa, o conteúdo do autolisossomo simplesmente se acumularia sem ser processado. Em troca, ela viabiliza a homeostase de longo prazo da célula: remove organelas disfuncionais antes que causem dano colateral, fornece flexibilidade metabólica sob escassez nutricional, e participa da defesa contra patógenos intracelulares (uma variante chamada xenofagia). Quando esse mecanismo falha cronicamente, agregados proteicos e organelas danificadas se acumulam progressivamente — um processo implicado na fisiopatologia de diversas doenças neurodegenerativas."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "autofagia",
+      "origem": "do grego autós (próprio, si mesmo) + phageîn (comer)",
+      "significado": "literalmente, 'comer a si mesmo'",
+      "explicacao": "O termo descreve com precisão brutal o que o processo faz: a célula digere partes de si mesma. A escolha etimológica é direta e sem eufemismo, refletindo como o fenômeno foi descrito pela primeira vez ao microscópio eletrônico — vesículas contendo fragmentos reconhecíveis de organelas da própria célula sendo digeridas internamente, um achado que intrigou os primeiros pesquisadores justamente por parecer um ato de autodestruição controlada, quando na verdade é um mecanismo de sobrevivência."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o processo de autofagia parasse completamente numa célula, mas ela continuasse metabolicamente ativa, o que aconteceria ao longo de semanas?",
+      "resposta": "Organelas disfuncionais, especialmente mitocôndrias danificadas, se acumulariam progressivamente sem serem removidas, aumentando continuamente o estresse oxidativo dentro da célula. Proteínas mal enoveladas ou agregadas, que normalmente seriam eliminadas por essa via, também se acumulariam, formando depósitos cada vez maiores e mais difíceis de processar por outras vias de degradação (como o proteassomo, que lida mal com agregados grandes). Em tecidos com células de longa vida e baixa capacidade de renovação, como neurônios, esse acúmulo progressivo de proteotoxicidade é justamente o mecanismo implicado em doenças neurodegenerativas como Parkinson e certas formas de demência."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo da autofagia lisossômica",
+      "descricao": "Diagrama mostrando a formação do fagóforo ao redor de uma mitocôndria danificada, o fechamento em autofagossomo de dupla membrana, a fusão com o lisossomo formando o autolisossomo, e a liberação de produtos reciclados no citosol.",
+      "prompt_ia": "Diagrama científico vetorial, fundo neutro adaptativo, estilo de livro didático. Sequência de quatro quadros: (1) uma mitocôndria danificada no citosol, com uma membrana curva (fagóforo) começando a envolvê-la; (2) o fagóforo fechado completamente, formando um autofagossomo de dupla membrana claramente visível envolvendo a mitocôndria; (3) fusão do autofagossomo com um lisossomo, formando o autolisossomo, com enzimas hidrolíticas representadas dentro; (4) liberação de pequenas moléculas (aminoácidos, ácidos graxos) do autolisossomo de volta ao citosol. Legendas em português: 'fagóforo', 'autofagossomo', 'lisossomo', 'autolisossomo', 'produtos reciclados'. Cores suaves, alto contraste, sem elementos fotorrealistas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-02-005",
+        "titulo": "Lisossomos — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A autofagia depende inteiramente da maquinaria digestiva do lisossomo (hidrolases ácidas, pH ácido interno) discutida na visão geral anterior; sem entender essa base, a fusão autofagossomo-lisossomo perde contexto funcional."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "neurologia",
+        "semestre_futuro": 8,
+        "topico": "Doenças neurodegenerativas e acúmulo de agregados proteicos",
+        "mecanismo_conexao": "A falha progressiva da autofagia está implicada no acúmulo de alfa-sinucleína na doença de Parkinson e de outras proteínas mal enoveladas em demências neurodegenerativas.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "fisiologia",
+        "semestre_futuro": 3,
+        "topico": "Adaptação metabólica ao jejum prolongado",
+        "mecanismo_conexao": "O aumento da taxa de autofagia durante o jejum fornece substratos energéticos alternativos, mecanismo compartilhado com a mobilização de reservas lipídicas e proteicas em situações de restrição calórica.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 6,
+        "topico": "Moduladores farmacológicos da autofagia",
+        "mecanismo_conexao": "Fármacos como a rapamicina modulam vias de sinalização (mTOR) que regulam diretamente a taxa de autofagia, com aplicações investigadas em oncologia e neurodegeneração.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-02-005",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "A autofagia é uma aplicação especializada da maquinaria digestiva geral do lisossomo, direcionada a componentes internos da própria célula em vez de material externo capturado por fagocitose."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-02-005-04-fc01",
+      "pergunta": "Por que a célula utiliza uma membrana dupla para envolver o alvo destinado à degradação na autofagia, em vez de uma membrana simples?",
+      "resposta": "A dupla membrana funciona como uma camada extra de segurança: ela garante o isolamento completo do conteúdo antes e durante a fusão com o lisossomo, cujas enzimas hidrolíticas são extremamente agressivas. Mesmo que a membrana externa do autofagossomo se rompa parcialmente durante o processo de fusão, a membrana interna ainda oferece uma barreira adicional, reduzindo o risco de as hidrolases vazarem para o citosol e danificarem estruturas celulares saudáveis.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": ["autofagia", "membrana-dupla", "seguranca-celular"]
+    },
+    {
+      "card_id": "s1-biocel-02-005-04-fc02",
+      "pergunta": "Descreva a sequência completa da autofagia, desde o sinal inicial de dano até a liberação dos produtos reciclados no citosol.",
+      "resposta": "1) Sinais de dano, como perda de potencial de membrana mitocondrial ou marcação por ubiquitinação, recrutam proteínas que iniciam a formação de um fagóforo ao redor do alvo. 2) O fagóforo se expande e se fecha completamente sobre si mesmo, formando o autofagossomo de dupla membrana. 3) O autofagossomo é transportado pelo citoesqueleto até encontrar um lisossomo. 4) Proteínas de fusão promovem a união controlada das membranas, formando o autolisossomo. 5) As hidrolases ácidas degradam o conteúdo em blocos moleculares básicos, que são transportados de volta ao citosol para reutilização.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["autofagia", "mecanismo", "autofagossomo"]
+    },
+    {
+      "card_id": "s1-biocel-02-005-04-fc03",
+      "pergunta": "Verdadeiro ou falso e justifique: 'a autofagia é sempre um sinal de que algo está errado na célula, e uma célula perfeitamente saudável nunca deveria apresentar autofagossomos'.",
+      "resposta": "Falso. A autofagia é um processo fisiológico contínuo e adaptativo, presente mesmo em células saudáveis, especialmente durante jejum ou estresse metabólico leve. Ela funciona como manutenção de rotina (removendo organelas naturalmente desgastadas pelo uso) e como estratégia de sobrevivência (reciclando componentes próprios para gerar energia quando o suprimento externo de nutrientes é insuficiente). A presença de autofagossomos não indica necessariamente patologia — é a falha ou o excesso descontrolado da autofagia, não sua simples presença, que se associa a doença.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["autofagia", "armadilha-conceitual", "fisiologia-normal"]
+    },
+    {
+      "card_id": "s1-biocel-02-005-04-fc04",
+      "pergunta": "Se o processo de autofagia parasse completamente numa célula neuronal de longa vida, mas a célula continuasse metabolicamente ativa, o que aconteceria ao longo de meses a anos?",
+      "resposta": "Mitocôndrias danificadas e proteínas mal enoveladas se acumulariam progressivamente sem remoção, aumentando o estresse oxidativo e a proteotoxicidade dentro do neurônio. Como neurônios têm baixíssima capacidade de renovação (não se dividem para 'diluir' o dano acumulado em células-filhas), esse acúmulo se agravaria continuamente ao longo do tempo, comprometendo progressivamente a função neuronal — o mecanismo geral implicado em doenças neurodegenerativas caracterizadas por acúmulo de agregados proteicos, como a doença de Parkinson.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["autofagia", "neurodegeneracao", "proteotoxicidade"]
+    },
+    {
+      "card_id": "s1-biocel-02-005-04-fc05",
+      "pergunta": "Paciente de 68 anos apresenta tremor de repouso, bradicinesia e rigidez muscular progressiva. Estudos post-mortem de pacientes com quadro semelhante mostram corpos de Lewy — agregados intracelulares de alfa-sinucleína — em neurônios da substância negra. Como uma falha na autofagia ajuda a explicar a formação desses agregados?",
+      "resposta": "Em condições normais, a autofagia (e também a via do proteassomo) contribui para degradar proteínas mal enoveladas, incluindo formas anômalas de alfa-sinucleína, antes que elas se acumulem. Quando a eficiência autofágica declina — seja por envelhecimento neuronal, mutações genéticas específicas, ou disfunção mitocondrial concomitante — a alfa-sinucleína mal enovelada deixa de ser adequadamente removida e se agrega progressivamente em corpos de Lewy dentro dos neurônios dopaminérgicos da substância negra. A perda desses neurônios, por acúmulo tóxico prolongado, reduz a produção de dopamina e explica os sintomas motores característicos da doença de Parkinson.",
+      "tipo": "clinico",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": ["parkinson", "autofagia", "alfa-sinucleina", "neurodegeneracao"]
+    },
+    {
+      "card_id": "s1-biocel-02-005-04-fc06",
+      "pergunta": "A palavra 'autofagia' junta as raízes gregas para 'próprio' e 'comer'. Por que essa escolha etimológica direta, sem eufemismo, é apropriada para descrever o fenômeno observado pelos primeiros pesquisadores?",
+      "resposta": "Os primeiros pesquisadores que observaram o fenômeno ao microscópio eletrônico viram exatamente isso: vesículas contendo fragmentos reconhecíveis de organelas da própria célula sendo progressivamente digeridos. A palavra 'autofagia' nomeia o fenômeno de forma literal e sem suavização porque é exatamente isso que acontece fisicamente — a célula constrói uma estrutura dedicada a digerir partes de si mesma. Diferente de nomes que descrevem apenas função abstrata, este termo comunica diretamente a observação morfológica original, o que ajudou a consolidar rapidamente o conceito na literatura científica, mesmo antes de o mecanismo molecular completo ser elucidado décadas depois.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["etimologia", "autofagia", "nomenclatura"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-02-005-04-caso01",
+      "titulo": "Tremor de repouso e lentidão progressiva de movimentos",
+      "apresentacao": "Homem de 68 anos, aposentado, é levado ao consultório pela esposa, que notou tremor nas mãos em repouso há cerca de 1 ano, piora da caligrafia (letras cada vez menores) e lentidão progressiva para realizar tarefas cotidianas, como abotoar a camisa. Exame neurológico revela tremor de repouso assimétrico, rigidez em roda denteada e bradicinesia. Marcha com passos curtos e diminuição do balanço dos braços. Sem histórico familiar relevante conhecido.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Combinação de envelhecimento neuronal, disfunção mitocondrial progressiva e declínio da eficiência dos mecanismos de autofagia, levando ao acúmulo de alfa-sinucleína mal enovelada dentro de neurônios dopaminérgicos."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Neurônios dopaminérgicos da substância negra, cuja capacidade de remover proteínas anômalas via autofagia está comprometida, permitindo o acúmulo progressivo de agregados de alfa-sinucleína (corpos de Lewy)."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O acúmulo tóxico progressivo desses agregados intracelulares, associado a disfunção mitocondrial concomitante, leva à morte gradual dos neurônios dopaminérgicos, reduzindo a produção de dopamina na via nigroestriatal."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "A deficiência de dopamina se manifesta como tremor de repouso, rigidez muscular, bradicinesia (lentidão de movimentos) e alterações posturais e de marcha — o conjunto clássico do parkinsonismo."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento, o quadro motor progride ao longo dos anos, podendo evoluir para instabilidade postural significativa e complicações não motoras (disfunção autonômica, declínio cognitivo tardio); a reposição dopaminérgica (levodopa) controla os sintomas motores por anos, embora não modifique a progressão da neurodegeneração subjacente."
+        }
+      ],
+      "conexao_com_bloco": "O caso conecta diretamente a falha do mecanismo de autofagia estudado neste bloco ao acúmulo patológico de proteínas mal enoveladas — mostrando que um processo celular de 'limpeza' rotineiro, quando comprometido cronicamente, tem consequências clínicas graves e específicas em tecidos de baixa capacidade regenerativa como o sistema nervoso central.",
+      "disciplinas_relacionadas": ["neurologia", "biologia celular", "geriatria"],
+      "diagnostico_revelado": "Doença de Parkinson idiopática.",
+      "tratamento_resumido": "Reposição dopaminérgica com levodopa associada a inibidor de descarboxilase periférica, podendo incluir agonistas dopaminérgicos e inibidores da MAO-B em estágios iniciais; fisioterapia motora contínua; em casos avançados selecionados, estimulação cerebral profunda pode ser considerada."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-biocel-02-005-04-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "em_mudanca",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "fisiologia",
-    "morfologia"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Alberts B, et al. Molecular Biology of the Cell. 6th ed. Garland Science; 2014. Capítulo sobre degradação lisossomal e autofagia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Pathologic Basis of Disease. 10th ed. Elsevier; 2020. Capítulo sobre doenças neurodegenerativas.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "A presença de autofagossomos numa célula indica necessariamente patologia.",
+      "correcao": "A autofagia é um processo fisiológico contínuo, presente em células saudáveis, especialmente sob jejum ou estresse metabólico leve.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Autofagia e fagocitose degradam o mesmo tipo de material, apenas com nomes diferentes.",
+      "correcao": "Autofagia degrada material endógeno (componentes da própria célula); fagocitose degrada material exógeno capturado do meio extracelular.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "autofagia",
+      "termo_es": "autofagia",
+      "termo_en": "autophagy",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "autofagossomo",
+      "termo_es": "autofagosoma",
+      "termo_en": "autophagosome",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "2.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Reescrita completa da narrativa e flashcards, adição de caso clínico (ausente na versão original) sobre doença de Parkinson e flashcard armadilha, pré-requisito confirmado e mantido no ID técnico correto.",
+      "motivo": "Alinhamento com a Filosofia ANIMA — bloco sem caso clínico, ausência de flashcard armadilha, analogia de cozinha repetida sem mapeamento completo do ciclo."
+    }
   ]
 }

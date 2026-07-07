@@ -179,7 +179,8 @@
         "disciplina": "saude-coletiva",
         "semestre_futuro": 9,
         "topico": "Tuberculose — A Doença Modelo de Saúde Pública",
-        "mecanismo_conexao": "Tuberculose é paradigma de doença de interesse. Próximo bloco a estuda em detalhe."
+        "mecanismo_conexao": "Tuberculose é paradigma de doença de interesse. Próximo bloco a estuda em detalhe.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "tipo": "RECONHECIMENTO_CLINICO",
@@ -187,7 +188,8 @@
         "disciplina": "clinica",
         "semestre_futuro": 10,
         "topico": "Reconhecimento de Surto — Como o Clínico Contribui à Vigilância",
-        "mecanismo_conexao": "Clínico é sentinela — primeira pessoa que detecta quando padrão está anormal. Conceitos deste bloco guiam reconhecimento."
+        "mecanismo_conexao": "Clínico é sentinela — primeira pessoa que detecta quando padrão está anormal. Conceitos deste bloco guiam reconhecimento.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "tipo": "ALVO_TERAPEUTICO",
@@ -195,13 +197,14 @@
         "disciplina": "saude-coletiva",
         "semestre_futuro": 9,
         "topico": "Vigilância Epidemiológica — Sistemas de Notificação e Resposta",
-        "mecanismo_conexao": "Quando você sabe quais doenças 'interessam', aprendem-se sistemas de vigilância para essas doenças específicas."
+        "mecanismo_conexao": "Quando você sabe quais doenças 'interessam', aprendem-se sistemas de vigilância para essas doenças específicas.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
       {
         "bloco_id": "s9-epi-02-001",
-        "tipo_relacao": "COMPLEMENTO",
+        "tipo_relacao": "EXEMPLO_PARALELO",
         "explicacao": "Epidemiologia estuda padrão de qualquer doença. Saúde Pública estuda padrão de doenças que importam coletivamente."
       }
     ]
@@ -210,37 +213,44 @@
     {
       "card_id": "s9-scol-03-000-fc01",
       "pergunta": "Por que tuberculose é 'doença de interesse de Saúde Pública' enquanto fibrose cística (igualmente letal) não é?",
-      "resposta": "Fibrose cística: não é transmissível (é genética), afeta ~1:3000 nascimentos (impacto pequeno), não pode ser prevenida mudando estrutura social (é genética), requer atenção clínica individual (medicação cara, transplante de pulmão). Tuberculose: transmissível (uma infecta 10), afeta ~70k/ano no Brasil (alto impacto), responde a mudança estrutural (saneamento reduz incidência), prevenível com vacinação e medicação barata em massa. TB é 'interesse público' porque quando acontece, exige resposta de todos — vigilância, isolamento, investigação de contatos. FC é 'atenção clínica' porque quando acontece, é problema do indivíduo e sua família — ninguém mais está em risco."
+      "resposta": "Fibrose cística: não é transmissível (é genética), afeta ~1:3000 nascimentos (impacto pequeno), não pode ser prevenida mudando estrutura social (é genética), requer atenção clínica individual (medicação cara, transplante de pulmão). Tuberculose: transmissível (uma infecta 10), afeta ~70k/ano no Brasil (alto impacto), responde a mudança estrutural (saneamento reduz incidência), prevenível com vacinação e medicação barata em massa. TB é 'interesse público' porque quando acontece, exige resposta de todos — vigilância, isolamento, investigação de contatos. FC é 'atenção clínica' porque quando acontece, é problema do indivíduo e sua família — ninguém mais está em risco.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-03-000-fc02",
       "pergunta": "Explique o ciclo de vigilância: Detecção → Notificação → Investigação → Agregação → Ação",
-      "resposta": "1) **Detecção**: Clínico diagnostica TB em paciente. 2) **Notificação**: Envia para SINAN em <24h com dados: local, data, demografia. 3) **Investigação**: Epidemiologista vai ao domicílio, testa contatos próximos (família, colegas de trabalho), procura por TB latente ainda não diagnosticada. 4) **Agregação**: Dados de centenas de casos são mapeados — 'há 5 casos de TB em bairro X em último mês' ou 'não há padrão, são casos esporádicos'. 5) **Ação**: Se há padrão, ativa resposta pública — pode ser campanha de teste em bairro, pode ser melhoria em saneamento, pode ser isolamento de casos. Cada passo informa o próximo. Sem detecção, não há dados. Sem agregação, não há padrão. Sem ação, conhecimento vira inócuo."
+      "resposta": "1) **Detecção**: Clínico diagnostica TB em paciente. 2) **Notificação**: Envia para SINAN em <24h com dados: local, data, demografia. 3) **Investigação**: Epidemiologista vai ao domicílio, testa contatos próximos (família, colegas de trabalho), procura por TB latente ainda não diagnosticada. 4) **Agregação**: Dados de centenas de casos são mapeados — 'há 5 casos de TB em bairro X em último mês' ou 'não há padrão, são casos esporádicos'. 5) **Ação**: Se há padrão, ativa resposta pública — pode ser campanha de teste em bairro, pode ser melhoria em saneamento, pode ser isolamento de casos. Cada passo informa o próximo. Sem detecção, não há dados. Sem agregação, não há padrão. Sem ação, conhecimento vira inócuo.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-03-000-fc03",
       "pergunta": "Se dengue (transmissível, alto impacto) tivesse cura garantida em 24h com medicação barata, deixaria de ser 'interesse de Saúde Pública'?",
-      "resposta": "Parcialmente. Continuaria sendo 'interesse' porque é transmissível — você precisa de vigilância para evitar transmissão enquanto paciente está infectado. Mas mudaria a urgência da intervenção — deixaria de ser 'prevenir doença' (porque cura é garantida) para 'evitar transmissão' (isole o paciente 24h até cure). Além disso, reduziria drasticamente a 'morte por dengue', eliminando uma razão major do interesse. Se além disso houvesse vacina que prevenisse infecção, aí sim deixaria de ser interesse — viraria mais como varíola, que era interesse até ser erradicada. A lição: 'interesse de Saúde Pública' é dinâmico, não estático. Mudam as ferramentas, muda o interesse. O que era emergência em 1980 (varíola) deixou de ser em 2000 (erradicação). O que era clínico isolado (HIV em 1982) virou interesse público (pandemia 1990-2020) virou cronicidade manejável (2030+)."
+      "resposta": "Parcialmente. Continuaria sendo 'interesse' porque é transmissível — você precisa de vigilância para evitar transmissão enquanto paciente está infectado. Mas mudaria a urgência da intervenção — deixaria de ser 'prevenir doença' (porque cura é garantida) para 'evitar transmissão' (isole o paciente 24h até cure). Além disso, reduziria drasticamente a 'morte por dengue', eliminando uma razão major do interesse. Se além disso houvesse vacina que prevenisse infecção, aí sim deixaria de ser interesse — viraria mais como varíola, que era interesse até ser erradicada. A lição: 'interesse de Saúde Pública' é dinâmico, não estático. Mudam as ferramentas, muda o interesse. O que era emergência em 1980 (varíola) deixou de ser em 2000 (erradicação). O que era clínico isolado (HIV em 1982) virou interesse público (pandemia 1990-2020) virou cronicidade manejável (2030+).",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-03-000-fc04",
       "pergunta": "Um clínico em consultório particular diagnostica TB em paciente rico. Paciente não quer avisar contatos (por confidencialidade). Clínico tem obrigação legal de notificar ou pode respeitar privacidade?",
-      "resposta": "Obrigação legal é NOTIFICAR — TB é doença de notificação compulsória. Confidencialidade tem limite: fim quando ameaça saúde coletiva. Paciente rico ou pobre, tem que notificar. Razão: esse paciente pode estar tendo contato com 10 pessoas (família, colegas de trabalho, pacientes do próprio consultório se ele é profissional de saúde). Se não notificar, epidemiologista nunca descobre o foco de TB, não investiga contatos, deixa 10 pessoas infectadas circulando sem saber. Um infecta outro, transmissão silenciosa cresce. Notificação obrigatória 'quebra' confidencialidade individual para proteger coletivo. É decisão ética consciente: quando uma doença é transmissível e ameaça povo, direito individual cede para direito coletivo. Clínico que não notificar está violando lei e ética de Saúde Pública."
+      "resposta": "Obrigação legal é NOTIFICAR — TB é doença de notificação compulsória. Confidencialidade tem limite: fim quando ameaça saúde coletiva. Paciente rico ou pobre, tem que notificar. Razão: esse paciente pode estar tendo contato com 10 pessoas (família, colegas de trabalho, pacientes do próprio consultório se ele é profissional de saúde). Se não notificar, epidemiologista nunca descobre o foco de TB, não investiga contatos, deixa 10 pessoas infectadas circulando sem saber. Um infecta outro, transmissão silenciosa cresce. Notificação obrigatória 'quebra' confidencialidade individual para proteger coletivo. É decisão ética consciente: quando uma doença é transmissível e ameaça povo, direito individual cede para direito coletivo. Clínico que não notificar está violando lei e ética de Saúde Pública.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-03-000-fc05",
       "pergunta": "Compare: uma doença pode ser 'grave' sem ser 'interesse de Saúde Pública', mas toda doença 'de interesse de Saúde Pública' é grave?",
-      "resposta": "**Primeira parte verdadeira**: Leucemia infantil é gravíssima (letal se não tratada), mas não é 'interesse público' porque não se transmite. **Segunda parte falsa**: Nem toda doença de interesse é grave em termos individuais. Sarampo em criança vacinada que pegou (raro) é doença leve. Mas é 'interesse' porque se transmite. Se paciente zero infecta 15 pessoas, e 2 dessas ficam graves, isso é padrão que importa. O critério não é 'gravidade individual', é 'impacto coletivo'. Uma doença leve que infecta 1 milhão é interesse. Uma doença grave que afeta 100 pessoas é atenção clínica."
+      "resposta": "**Primeira parte verdadeira**: Leucemia infantil é gravíssima (letal se não tratada), mas não é 'interesse público' porque não se transmite. **Segunda parte falsa**: Nem toda doença de interesse é grave em termos individuais. Sarampo em criança vacinada que pegou (raro) é doença leve. Mas é 'interesse' porque se transmite. Se paciente zero infecta 15 pessoas, e 2 dessas ficam graves, isso é padrão que importa. O critério não é 'gravidade individual', é 'impacto coletivo'. Uma doença leve que infecta 1 milhão é interesse. Uma doença grave que afeta 100 pessoas é atenção clínica.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-03-000-fc06",
       "pergunta": "Por que a palavra 'interesse' é escolha etimológica importante na expressão 'doença de interesse de Saúde Pública'?",
-      "resposta": "'Interesse' vem de 'interesse' (estar entre, colocar em meio). Uma doença é 'de interesse' quando coloca-se no meio da população — não é periférica, é central. Afeta estrutura. Força ação coletiva. Se disséssemos 'doença grave', seria só descrição médica. Se disséssemos 'doença frequente', seria descritivo. 'Interesse' tem carga política: 'isto importa, isto exige resposta da comunidade'. A etimologia reflete a realidade: quando TB aparece no bairro, não é só problema do paciente — é problema de TODOS que precisam de vigilância e quimioprofilaxia."
+      "resposta": "'Interesse' vem de 'interesse' (estar entre, colocar em meio). Uma doença é 'de interesse' quando coloca-se no meio da população — não é periférica, é central. Afeta estrutura. Força ação coletiva. Se disséssemos 'doença grave', seria só descrição médica. Se disséssemos 'doença frequente', seria descritivo. 'Interesse' tem carga política: 'isto importa, isto exige resposta da comunidade'. A etimologia reflete a realidade: quando TB aparece no bairro, não é só problema do paciente — é problema de TODOS que precisam de vigilância e quimioprofilaxia.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-03-000-fc07",
       "pergunta": "Integre: Um município vê surto de uma doença desconhecida (sintomas: febre, rash). Notificações disparam no SINAN. Como epidemiologista usaria critérios de interesse para decidir se é 'emergência de Saúde Pública' ou 'cluster isolado'?",
-      "resposta": "Epidemiologista reuniria dados rápido: (1) **Transmissibilidade**: contactantes de pacientes estão ficando doentes? Se sim, é transmissível, urgência aumenta. (2) **Impacto populacional**: quantos casos em quanto tempo? Se dobra a cada 3 dias, é exponencial, urgência máxima. Se fica estável em 10 casos, é cluster isolado. (3) **Determinação social**: casos concentram em bairro específico ou espalham? Se concentram, pode ser ambiental (vazamento químico). Se espalham, é transmissível. (4) **Prevenibilidade**: há teste rápido? Há isolamento que funciona? Há vacina em desenvolvimento? Se sim, pode-se agir. Se não, é vigilância só. Com esses critérios aplicados rapidamente (horas, não dias), epidemiologista declara 'é emergência de Saúde Pública e ativa plano de resposta' ou 'é cluster isolado, monitora mas sem ações em massa'. Critérios transformam caos em decisão racional."
+      "resposta": "Epidemiologista reuniria dados rápido: (1) **Transmissibilidade**: contactantes de pacientes estão ficando doentes? Se sim, é transmissível, urgência aumenta. (2) **Impacto populacional**: quantos casos em quanto tempo? Se dobra a cada 3 dias, é exponencial, urgência máxima. Se fica estável em 10 casos, é cluster isolado. (3) **Determinação social**: casos concentram em bairro específico ou espalham? Se concentram, pode ser ambiental (vazamento químico). Se espalham, é transmissível. (4) **Prevenibilidade**: há teste rápido? Há isolamento que funciona? Há vacina em desenvolvimento? Se sim, pode-se agir. Se não, é vigilância só. Com esses critérios aplicados rapidamente (horas, não dias), epidemiologista declara 'é emergência de Saúde Pública e ativa plano de resposta' ou 'é cluster isolado, monitora mas sem ações em massa'. Critérios transformam caos em decisão racional.",
+      "tipo": "por_que"
     }
   ],
   "casos_clinicos": [
@@ -250,23 +260,23 @@
       "apresentacao": "Uma mulher chega ao PS com febre, rash maculopapular, artralgia. Teste rápido volta positivo para dengue. É notificada (obrigatório). Investigação de contatos descobre que ela ficou internada em hotel 3 dias antes, compartilhou quarto com outras 2 hospedes. Essas hospedes não estão em contato regular com ela agora (cada uma voltou para sua cidade). Seguimento: ninguém mais na família fica doente. Ninguém do trabalho fica doente. Ninguém no hotel fica doente. Um mês depois, a epidemiologista olha para dados: 1 caso de dengue confirmado naquele mês naquele bairro, vs média de 50 casos/mês no resto do ano. Conclusão: foi caso isolado, não surto.",
       "cascata": [
         {
-          "etapa": "Transmissibilidade Presente",
+          "etapa": "Causa",
           "descricao": "Dengue é transmissível — mosquito infectado pica paciente, pica outro, transmite. Mulher tinha viremia, poderia ter transmitido se mosquito a picasse e depois picasse outro. Transmissibilidade potencial presente."
         },
         {
-          "etapa": "Detecção e Notificação",
+          "etapa": "Estrutura Afetada",
           "descricao": "Caso diagnosticado em PS, notificado obrigatoriamente em SINAN. Epidemiologista recebe alerta. A essa altura, é classificado como 'caso suspeito ou confirmado de dengue', ponto — deve ser investigado como qualquer outro."
         },
         {
-          "etapa": "Investigação de Contatos Revela: Sem Padrão",
+          "etapa": "Disfunção",
           "descricao": "Investigador vai ao domicílio, colhe contatos (marido, filho, colega de trabalho próxima). Ninguém com sintomas. Soro em 3 contatos: negativo para dengue. Investigador também vai ao hotel — conversa com gerente. Outras 2 hospedes naquele andar: nenhuma entrou em contato. Conclusão: sem transmissão estabelecida."
         },
         {
-          "etapa": "Agregação de Dados Revela: Isolado",
+          "etapa": "Sintoma",
           "descricao": "Epidemiologista puxa dados de dengue para bairro inteiro naquele mês: 1 caso. Nenhum outro próximo. Comparação com dados históricos: bairro tem média 50 casos/mês em estação chuvosa. Conclusão: está ABAIXO da linha de base — não há surto, é flutuação normal."
         },
         {
-          "etapa": "Mudança de Classificação",
+          "etapa": "Consequência",
           "descricao": "Caso passa de 'caso de dengue que pode ser início de surto' para 'caso isolado de dengue importado de outra área'. Vigilância reduz de ativa (contato diário, investigação intensiva) para passiva (apenas monitorar próximos 30 dias). Recursos são redirecionados."
         }
       ],
@@ -277,7 +287,7 @@
         "vigilancia"
       ],
       "diagnostico_revelado": "Caso isolado de dengue importado, sem transmissão secundária estabelecida, sem padrão agregado.",
-      "intervencao_necessaria": "Caso necessita: (1) Tratamento clínico da paciente (sintomático, monitoramento de complicações); (2) Orientação para evitar picadas de mosquito durante viremia (não sair sem repelente, dormir em quarto telado); (3) Investigação de contatos (fazer testes em familiares, colegas próximos); (4) Notificação (já feita); (5) Vigilância passiva do bairro (monitorar se outros casos aparecem). NÃO necessita: campanhas em massa de borrifação, fechamento de espaços públicos, isolamento obrigatório (dengue não tem isolamento com eficácia clínica, só com mosquito), testagem em população. Porque a lição é clara pelo dado epidemiológico: não há surto."
+      "tratamento_resumido": "Caso necessita: (1) Tratamento clínico da paciente (sintomático, monitoramento de complicações); (2) Orientação para evitar picadas de mosquito durante viremia (não sair sem repelente, dormir em quarto telado); (3) Investigação de contatos (fazer testes em familiares, colegas próximos); (4) Notificação (já feita); (5) Vigilância passiva do bairro (monitorar se outros casos aparecem). NÃO necessita: campanhas em massa de borrifação, fechamento de espaços públicos, isolamento obrigatório (dengue não tem isolamento com eficácia clínica, só com mosquito), testagem em população. Porque a lição é clara pelo dado epidemiológico: não há surto."
     }
   ],
   "midia": {

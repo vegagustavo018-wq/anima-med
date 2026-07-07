@@ -153,14 +153,6 @@
         "semestre": 9,
         "relevancia": "base_necessaria",
         "explicacao": "Este bloco profunda em cascata específica de tuberculose. Leia pai primeiro."
-      },
-      {
-        "bloco_id": "s8-infec-04-001",
-        "titulo": "Mycobacterium tuberculosis — Biologia e Patogênese",
-        "disciplina": "infectologia",
-        "semestre": 8,
-        "relevancia": "desejavel",
-        "explicacao": "Você aprendeu biologia do bacilo. Aqui aprende como biologia + estrutura = epidemia."
       }
     ],
     "futuras": [
@@ -170,7 +162,8 @@
         "disciplina": "saude_coletiva",
         "semestre_futuro": 9,
         "topico": "Controle de Tuberculose — Estratégias Populacionais",
-        "mecanismo_conexao": "Uma vez entendida cascata, próximo passo é entender estratégias (DOTS, tratamento observado) que quebram cascata em campo."
+        "mecanismo_conexao": "Uma vez entendida cascata, próximo passo é entender estratégias (DOTS, tratamento observado) que quebram cascata em campo.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": []
@@ -289,7 +282,44 @@
       ]
     }
   ],
-  "casos_clinicos": [],
+  "casos_clinicos": [
+    {
+      "caso_id": "s9-scol-03-001-caso01",
+      "titulo": "Tosse de três semanas num barraco de seis pessoas",
+      "apresentacao": "Homem de 34 anos, pedreiro autônomo (trabalho informal, sem carteira assinada), vive com esposa e quatro filhos em barraco de dois cômodos, sem ventilação cruzada, em periferia urbana. Procura unidade básica de saúde após insistência da esposa, relatando tosse há 3 semanas, inicialmente seca e depois com escarro amarelado, sudorese noturna e perda de 6 kg em um mês. Refere que vinha adiando a consulta porque 'não podia faltar um dia de trabalho'. Ao exame: emagrecido, febril (37,8°C), ausculta pulmonar com estertores em ápice direito. Radiografia de tórax mostra cavitação em lobo superior direito. Baciloscopia de escarro: positiva (++). Ao investigar contatos domiciliares, descobre-se que os quatro filhos, incluindo um lactente, dormem no mesmo cômodo.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Exposição prolongada ao Mycobacterium tuberculosis dentro de um ambiente domiciliar aglomerado e mal ventilado — condição diretamente determinada por renda insuficiente para habitação adequada. A fonte provável é contato prévio não identificado, favorecido pela mesma aglomeração."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Parênquima pulmonar do lobo superior direito, região de maior tensão de oxigênio e por isso classicamente mais suscetível à multiplicação do bacilo aeróbio estrito. A resposta imune granulomatosa que deveria conter a infecção (como ocorre na maioria das pessoas expostas, gerando apenas infecção latente) falhou em manter o bacilo contido."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Progressão de infecção latente para tuberculose ativa: a imunidade celular, provavelmente já pressionada por desnutrição crônica e estresse relacionado à instabilidade de renda, não consegue impedir a multiplicação bacilar. O resultado é necrose caseosa e formação de cavitação — o tecido pulmonar é destruído e substituído por uma cavidade cheia de bacilos em replicação ativa, que se comunica com a via aérea."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Tosse produtiva persistente (mecanismo de eliminação de secreções infectadas), febre e sudorese noturna (resposta inflamatória sistêmica a citocinas), emagrecimento (estado hipercatabólico crônico). A demora de três semanas em buscar atendimento — por não poder se ausentar do trabalho informal e pelo custo do deslocamento até a unidade — permitiu que a doença progredisse e que a transmissão continuasse dentro de casa."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Cavitação pulmonar com baciloscopia fortemente positiva significa alta carga bacilar sendo expelida a cada tosse, o que já expôs cronicamente os quatro filhos — inclusive o lactente, o mais vulnerável a formas graves como tuberculose miliar ou meníngea. O caso exige tratamento imediato do caso índice (esquema RHZE por 6 meses) e investigação ativa de todos os contactantes domiciliares, incluindo prova tuberculínica ou IGRA nas crianças e quimioprofilaxia se indicado. Sem intervenção nos contatos, a cadeia de transmissão dentro do próprio domicílio se mantém ativa mesmo depois de o caso índice iniciar tratamento."
+        }
+      ],
+      "conexao_com_bloco": "O caso percorre exatamente as sete etapas da cascata descrita no bloco: exposição por aglomeração habitacional (etapa 1), infecção latente presumida em algum momento anterior (etapa 2), progressão para ativa favorecida por desnutrição e estresse (etapa 3), sintomas arrastados por semanas sem acesso oportuno ao serviço de saúde (etapa 4), transmissão intradomiciliar silenciosa para os quatro filhos (etapa 5) e diagnóstico tardio já com cavitação estabelecida (etapa 6). Ilustra concretamente a afirmação central do bloco: de sete etapas, seis são atravessadas por estrutura social, e apenas a infecção latente em si é biologia pura.",
+      "disciplinas_relacionadas": [
+        "saude_coletiva",
+        "pneumologia",
+        "infectologia",
+        "epidemiologia"
+      ],
+      "diagnostico_revelado": "Tuberculose pulmonar cavitária bacilífera em adulto, com alto risco de transmissão intradomiciliar para quatro contactantes menores.",
+      "tratamento_resumido": "Esquema RHZE (rifampicina, isoniazida, pirazinamida, etambutol) por 2 meses seguido de RH por 4 meses, com tratamento diretamente observado (DOT) para garantir adesão apesar do trabalho informal. Investigação ativa de todos os contatos domiciliares com prova tuberculínica/IGRA e radiografia; quimioprofilaxia com isoniazida para os contactantes infectados sem doença ativa, priorizando o lactente. Notificação compulsória e articulação com assistência social para mitigar a barreira de renda que atrasou o diagnóstico."
+    }
+  ],
   "midia": {
     "imagens": [
       {

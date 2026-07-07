@@ -7,53 +7,124 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Casos integradores da Pediatria",
+    "titulo": "Casos Integradores da Pediatria",
+    "subtitulo": "O que fazer quando dois sistemas da mesma criança descompensam ao mesmo tempo?",
     "semestre": 10,
     "disciplina": "Estágio em Pediatria",
+    "modulo": 4,
+    "topico": 0,
     "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1ped",
-      "esqueleto"
+    "lentes": [
+      "raciocinio_diagnostico",
+      "conduta",
+      "seguranca_paciente"
     ],
+    "tipo_conteudo": "visao_geral",
+    "status": "publicado",
+    "data_criacao": "2026-07-05",
+    "data_revisao": "2026-07-05",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
+    "tempo_estudo_minutos": 7,
+    "palavras_chave": [
+      "caso integrador",
+      "priorização pediátrica",
+      "trade-off"
+    ],
     "formato_internato": "visao_geral"
   },
-  "resumo_conciso": "Módulo dos casos que cruzam ≥2 sistemas e forçam priorização",
-  "narrativa": [],
+  "resumo_conciso": "Os casos paradigmáticos do Módulo 1 isolam um problema de cada vez. Este módulo faz o oposto: junta dois eixos de descompensação na mesma criança, pequena e com pouca reserva fisiológica, e obriga você a decidir o que resolver primeiro quando ambos pioram ao mesmo tempo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um lactente chega com febre alta, respiração acelerada e sinais de desidratação — vômitos há dois dias. Corrigir a hipoxemia pede oxigênio e possivelmente ventilação não invasiva; corrigir a desidratação pede volume, rápido. Mas volume em excesso pode sobrecarregar um sistema respiratório já no limite, e reter o volume por cautela respiratória pode empurrar a criança para choque hipovolêmico. Dois eixos, uma criança, uma decisão de sequência que não está escrita em nenhum protocolo isolado de bronquiolite ou de desidratação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a criança amplifica o problema da integração"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em adulto, um paciente com dois problemas concorrentes geralmente tem alguma reserva fisiológica para tolerar um pequeno atraso na correção do segundo. Em criança pequena — sobretudo lactente e recém-nascido —, a reserva é pequena e os dois eixos podem se retroalimentar: a desidratação piora a perfusão, o que piora a troca gasosa; a infecção piora o metabolismo, o que piora a icterícia. Um caso integrador pediátrico não é só \"duas doenças ao mesmo tempo\" — é o reconhecimento de que, nessa faixa etária, os sistemas raramente descompensam de forma isolada."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Um caso integrador de verdade exige que tratar um eixo interfira mensuravelmente na decisão sobre o outro. Se os dois problemas puderem ser resolvidos em paralelo, sem qualquer trade-off entre eles, não é um caso integrador — é apenas comorbidade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os dois casos deste módulo cobrem os cruzamentos mais comuns na prática pediátrica do internato: a competição entre hipoxemia e desidratação num lactente febril, e o cruzamento infeccioso-metabólico num recém-nascido com sepse e icterícia simultâneas — situação em que tratar a infecção, tratar a icterícia e estabilizar a glicemia competem pela mesma janela de tempo."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1ped-01-000",
+        "titulo": "Casos Paradigmáticos da Pediatria",
+        "disciplina": "Estágio em Pediatria",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1ped-04-001",
+        "titulo": "Lactente febril e taquipneico com desidratação: qual problema primeiro",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Primeiro caso integrador — aplica diretamente o trade-off hipoxemia/desidratação descrito aqui."
+      },
+      {
+        "id": "s10-int1mi-04-000",
+        "titulo": "Casos Integradores Semanais (Medicina Interna)",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "Mesma lógica de priorização entre problemas concorrentes, aplicada com a menor reserva fisiológica pediátrica descrita aqui."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1ped-04-000-001",
+      "tipo": "contrafactual",
+      "pergunta": "Uma criança tem dois diagnósticos ao mesmo tempo, mas tratar um não interfere em nada na decisão sobre o outro. Isso é um caso integrador?",
+      "resposta": "Não. A marca de um caso integrador genuíno é o trade-off: tratar um eixo precisa afetar mensuravelmente a decisão sobre o outro (por exemplo, volume para desidratação pode sobrecarregar um sistema respiratório já no limite). Se os dois problemas puderem ser resolvidos em paralelo, sem qualquer interferência mútua, é apenas comorbidade — não testa priorização.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "pediatria",
+        "integrador",
+        "priorizacao"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Este bloco é uma visão geral conceitual sobre o que caracteriza um 'caso integrador' pediátrico (trade-off real entre dois eixos de descompensação simultâneos) — os casos clínicos concretos que ilustram esse conceito (lactente com hipoxemia e desidratação; RN com sepse e icterícia) estão nos blocos filhos s10-int1ped-04-001 e 04-002, evitando duplicação aqui."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "raciocinio_diagnostico",
-    "conduta",
-    "seguranca_paciente"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "titulo": "Nelson Textbook of Pediatrics — abordagem à criança com múltiplos problemas concorrentes",
+      "autores": "Kliegman RM, St. Geme JW, et al.",
+      "ano": 2020
+    }
   ]
 }

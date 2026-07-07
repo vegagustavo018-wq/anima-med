@@ -11,50 +11,327 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Regimes de Dose e Biodisponibilidade (Visão Geral)",
+    "subtitulo": "Depois de entender a jornada do fármaco, como isso vira uma receita: quanto e de quanto em quanto tempo?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "dose",
+      "biodisponibilidade",
+      "estado-de-equilibrio",
+      "core",
+      "visao-geral"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert",
+      "comunicador"
+    ]
   },
-  "resumo_conciso": "Traduzir PK em prescrição; dose, intervalo, estado de equilíbrio",
-  "narrativa": [],
+  "resumo_conciso": "Os blocos anteriores descreveram a jornada ADME do fármaco no corpo. Mas conhecer essa jornada não escreve, sozinho, uma receita — e é exatamente isso que a prática clínica exige todos os dias: quantos miligramas, e de quanto em quanto tempo. Esse salto de teoria para prescrição depende de duas perguntas que se somam. A primeira é quanto do que foi administrado realmente chega, intacto, à circulação sistêmica — a biodisponibilidade, que é sempre 100% na via intravenosa e variável (e quase nunca total) nas demais vias. A segunda é o que acontece quando doses repetidas se acumulam ao longo do tempo: cada dose nova soma-se ao que ainda não foi eliminado da dose anterior, até que entrada e eliminação se igualam num patamar estável — o estado de equilíbrio (steady state). É essa combinação — biodisponibilidade determinando quanto entra a cada dose, e a cinética de doses repetidas determinando como isso se acumula — que permite transformar um alvo terapêutico (a concentração que se quer manter no sangue) numa prescrição concreta de dose e intervalo. Quando esse cálculo é malfeito ou ignorado, o resultado clínico é previsível: subdose que não trata, ou acúmulo que intoxica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Até aqui, esta disciplina descreveu a jornada do fármaco — absorção, distribuição, metabolismo, excreção — como um mapa geral, e depois começou a detalhar cada etapa dessa jornada com seus mecanismos e parâmetros próprios. Mas um médico não prescreve 'uma jornada'. Ele prescreve um número: 500 mg, de 8 em 8 horas, por via oral. De onde vem esse número, e por que ele muda de um fármaco para outro, mesmo quando o alvo terapêutico é parecido?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa é a pergunta que fecha o estudo da farmacocinética: como transformar tudo o que já foi entendido sobre a jornada do fármaco numa decisão prática de dose e intervalo. Não é uma etapa nova da jornada — é a tradução da jornada inteira em prescrição."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: uma dose só não basta, e uma dose só nunca é o que chega"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Duas dificuldades práticas aparecem assim que se tenta transformar farmacocinética em receita. A primeira é que a dose escrita na caixa do medicamento não é a dose que chega à circulação — parte dela pode se perder no caminho, seja porque não foi absorvida, seja porque foi destruída antes de circular. A segunda é que quase nenhum tratamento é feito com uma dose única: a maioria dos fármacos é tomada repetidamente, dia após dia, e cada nova dose chega antes que a anterior tenha sido completamente eliminada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essas duas dificuldades, se ignoradas, geram os dois erros de prescrição mais comuns da prática clínica: subtratar (porque menos fármaco chegou ao alvo do que se supôs) ou intoxicar (porque doses repetidas se acumularam além do previsto). Prescrever bem exige responder às duas ao mesmo tempo: quanto realmente entra a cada dose, e o que acontece quando essa entrada se repete no tempo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: transformar farmacocinética em prescrição exige responder a duas perguntas — quanto do que foi administrado realmente chega à circulação, e o que acontece quando isso se repete dose após dose. Os blocos seguintes vão detalhar cada uma; aqui fica só o mapa de como elas se conectam."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, em linhas gerais"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A primeira pergunta se resolve comparando, para uma mesma dose do mesmo fármaco, quanto chega à circulação por uma via de referência (a via intravenosa, onde 100% do fármaco cai direto no sangue, sem perdas) contra quanto chega por qualquer outra via. Essa comparação gera uma fração — geralmente menor que 1 — que descreve o quanto daquela via 'aproveita' a dose nominal. É essa fração que faz um comprimido de 500 mg render, na prática, muito menos do que 500 mg circulando."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda pergunta se resolve observando o que acontece quando o organismo recebe doses em intervalos regulares, mais rápido do que consegue eliminar completamente cada uma. O fármaco vai se acumulando a cada dose nova — mas não indefinidamente: como a velocidade de eliminação cresce com a quantidade presente no corpo, chega um ponto em que a quantidade eliminada entre duas doses se iguala à quantidade administrada. A partir desse ponto, a concentração oscila em torno de um patamar estável, em vez de continuar subindo. É esse patamar — não a primeira dose — que carrega o efeito terapêutico sustentado que o tratamento busca."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Prescrever uma dose e um intervalo é, na prática, resolver duas equações ao mesmo tempo: quanto da dose nominal realmente entra em circulação (biodisponibilidade) e para qual patamar essa entrada repetida converge ao longo do tempo (estado de equilíbrio). Mudar a via de administração afeta a primeira; mudar o intervalo entre doses afeta a segunda — e os dois efeitos se somam na concentração final."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essa tradução é feita"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Fisicamente, essa tradução depende dos mesmos elementos já descritos nos blocos anteriores de farmacocinética — barreiras de absorção, capacidade de metabolização hepática, capacidade de eliminação renal — mas agora olhados sob uma lente cumulativa: não o que acontece com uma dose isolada, e sim o que acontece quando o organismo é exposto a doses sucessivas. A diferença essencial entre um fármaco que se acumula pouco e um que se acumula muito não está numa propriedade nova, mas em quão rápido o organismo consegue eliminar o que já está presente, comparado à frequência com que doses novas chegam."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Também entram nessa tradução as diferenças entre formulações do mesmo fármaco — um genérico, por exemplo, precisa demonstrar que entrega ao organismo uma quantidade e velocidade de absorção comparáveis às do medicamento de referência, e não apenas a mesma dose nominal na embalagem. E entra, por fim, a prática de acompanhar a concentração real do fármaco no sangue de um paciente específico, quando a margem entre dose eficaz e dose tóxica é estreita demais para confiar apenas no cálculo teórico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em movimento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere um paciente que começa um tratamento oral contínuo. Depois da primeira dose, uma fração dela — não o total — está circulando: essa fração é a biodisponibilidade daquela via em ação. Antes que essa dose seja totalmente eliminada, chega a segunda dose, que se soma ao que restou da primeira. O processo se repete a cada intervalo, e a concentração no sangue vai subindo dose a dose, mas cada vez com incrementos menores — porque, quanto mais fármaco já está no corpo, mais rápido ele está sendo eliminado. Depois de algumas doses, entrada e eliminação praticamente se equilibram: é o estado de equilíbrio."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É esse equilíbrio, e não a primeira dose, que o médico tem em mente ao escolher a posologia: a meta é que o patamar de equilíbrio caia dentro da faixa terapêutica — acima do necessário para o efeito, abaixo do que causa toxicidade. Se o intervalo entre doses for longo demais em relação à eliminação do fármaco, a concentração pode cair abaixo do patamar eficaz entre uma dose e outra; se for curto demais, o acúmulo pode ultrapassar o limite seguro antes mesmo de atingir o equilíbrio teórico. Esse é o ponto onde a farmacocinética licencia — ou impede — a receita que sai do consultório."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há situações, ainda, em que esperar o equilíbrio se formar naturalmente é clinicamente inaceitável — uma infecção grave, por exemplo, não pode esperar vários intervalos de dose para que a concentração suba até a faixa eficaz. Nesses casos, adianta-se o patamar com uma dose inicial maior que as doses seguintes. Esse ajuste entre a dose que inicia o tratamento e a dose que o mantém é uma das aplicações mais diretas de todo esse raciocínio — mas seu detalhamento pertence ao bloco seguinte, dedicado especificamente a isso."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚿",
+      "conteudo": "Pense numa banheira sendo enchida por uma torneira, com o ralo parcialmente aberto. **A biodisponibilidade** é quanto da água que sai da torneira realmente cai na banheira — se meio cano vaza pelo caminho, só uma fração chega, mesmo abrindo a torneira no máximo. **As doses repetidas** são a torneira sendo aberta em pulsos regulares, em vez de um jato contínuo. **O estado de equilíbrio** é o nível de água que se estabiliza quando a quantidade que entra a cada pulso passa a igualar a quantidade que escoa pelo ralo no mesmo intervalo — o nível para de subir, ainda que a torneira continue pingando. **A dose de ataque** é encher a banheira rapidamente até esse nível antes de começar os pulsos regulares de manutenção, para não esperar vários ciclos até ela subir sozinha. A analogia quebra num ponto: o ralo da banheira escoa numa velocidade fixa, enquanto a eliminação de muitos fármacos acelera conforme a concentração sobe — o que faz o equilíbrio real se formar de um jeito mais autorregulado do que o de uma banheira comum."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa tradução se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa visão panorâmica se apoia diretamente nos blocos anteriores de absorção, distribuição, metabolismo e excreção — sem eles, não há como estimar nem a biodisponibilidade nem a velocidade de eliminação que define o estado de equilíbrio. Ela também abre a porta para os cinco blocos que a sucedem, cada um aprofundando uma peça específica desse quadro: o que exatamente determina a biodisponibilidade, como se calcula uma dose de ataque versus uma dose de manutenção, a matemática e o significado clínico do estado de equilíbrio, como se compara a bioequivalência entre um medicamento de referência e seu genérico, e quando e por que se monitoriza a concentração sérica de um fármaco na prática clínica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, é esse raciocínio que explica por que a bula de um antibiótico especifica 'de 8 em 8 horas' e não 'uma vez ao dia' — o intervalo foi calculado para manter a concentração dentro da faixa eficaz sem deixá-la cair a zero entre doses. É também esse raciocínio que justifica a troca de via em pacientes graves: passar de comprimido para injeção intravenosa elimina de vez a variável da biodisponibilidade incompleta, entregando 100% da dose de imediato — uma decisão que pode ser a diferença entre atingir ou não a concentração-alvo a tempo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "biodisponibilidade",
+      "origem": "do grego bíos (vida) + o latim disponibilis (que se pode dispor, tornar disponível)",
+      "significado": "literalmente, 'o quanto fica disponível para o organismo vivo' — a fração de uma dose administrada que se torna acessível à circulação sistêmica",
+      "explicacao": "O termo consolidou-se na farmacologia clínica do século XX, quando se percebeu que medir apenas a dose administrada era insuficiente para prever o efeito: era preciso medir quanto efetivamente 'ficava disponível' para agir. O nome nasceu, portanto, de uma correção conceitual — do fármaco como quantidade prescrita para o fármaco como quantidade realmente acessível ao corpo. É essa mesma lógica, aplicada agora a doses repetidas ao longo do tempo, que dá origem ao conceito de estado de equilíbrio (do inglês steady state), tratado em detalhe em um dos blocos seguintes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se todo fármaco tivesse biodisponibilidade oral de 100%, a farmacocinética clínica ficaria mais simples?",
+      "resposta": "Ficaria mais simples em um aspecto, mas não deixaria de existir. Sem perdas na absorção, a dose nominal seria sempre igual à dose que chega à circulação, eliminando uma fonte inteira de variabilidade entre pacientes e entre formulações. Mas o segundo problema — o que acontece quando doses se acumulam ao longo do tempo até atingir um estado de equilíbrio — continuaria existindo exatamente do mesmo jeito, porque ele depende da velocidade de eliminação, não da fração absorvida. Um fármaco 100% biodisponível ainda pode se acumular perigosamente se for dado com intervalo curto demais para sua eliminação. Isso mostra que biodisponibilidade e estado de equilíbrio são dois problemas independentes que só coincidem em precisar, ambos, de uma dose bem calculada — resolver um não dispensa resolver o outro."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Da dose nominal ao patamar de equilíbrio",
+      "descricao": "Diagrama esquemático em duas partes lado a lado. À esquerda, uma barra representando 'dose nominal administrada' dividindo-se em duas frações por uma seta ramificada: uma fração menor rotulada 'perdida (não absorvida / destruída antes de circular)' e uma fração maior rotulada 'biodisponível (chega à circulação)', com uma nota indicando que na via intravenosa a fração biodisponível é sempre 100%. À direita, um gráfico de concentração plasmática (eixo Y) por tempo (eixo Z, em doses sucessivas), mostrando uma curva serrilhada que sobe em degraus decrescentes até estabilizar numa faixa horizontal sombreada rotulada 'faixa terapêutica' e 'estado de equilíbrio', com linhas tracejadas horizontais indicando o limite tóxico acima e o limite subterapêutico abaixo. Estilo esquemático de livro didático, cores diferenciando as duas partes, legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno, dividido em dois painéis lado a lado. Painel esquerdo: uma barra vertical rotulada 'DOSE NOMINAL' com uma seta ramificando em duas barras menores coloridas de forma distinta — uma rotulada 'PERDIDA (não absorvida / metabolismo pré-sistêmico)' e outra maior rotulada 'BIODISPONÍVEL (chega à circulação)'; pequena nota lateral 'via intravenosa = 100% biodisponível'. Painel direito: gráfico de linha com eixo Y 'concentração plasmática' e eixo X 'tempo (doses sucessivas)', mostrando uma curva em degraus ascendentes com amplitude decrescente que se estabiliza em uma faixa horizontal sombreada em verde claro rotulada 'FAIXA TERAPÊUTICA' e 'ESTADO DE EQUILÍBRIO (steady state)', com uma linha tracejada vermelha horizontal acima rotulada 'limite tóxico' e uma linha tracejada cinza horizontal abaixo rotulada 'limite subterapêutico'. Setas pequenas marcando cada dose administrada no eixo X. Paleta de cores suaves e distintas, texto em português, sem elementos fotorrealistas, alto contraste, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-000",
+        "titulo": "Farmacocinética — A Jornada do Fármaco no Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco traduz em prescrição a jornada ADME já descrita no pai: sem entender absorção, distribuição, metabolismo e excreção como um sistema, não há como calcular quanto de uma dose chega à circulação nem por que doses repetidas se acumulam até um patamar estável."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Biodisponibilidade, dose de ataque e manutenção, estado de equilíbrio, bioequivalência e monitorização terapêutica (blocos filhos)",
+        "mecanismo_conexao": "Cada peça desta visão panorâmica será detalhada em profundidade em bloco próprio, incluindo as fórmulas e critérios clínicos que quantificam o que aqui aparece apenas como lógica geral.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Ajuste de posologia em antibioticoterapia e fármacos de margem terapêutica estreita",
+        "mecanismo_conexao": "A escolha de dose e intervalo para atingir e manter uma concentração dentro da faixa terapêutica, aqui estabelecida como princípio geral, é o raciocínio direto por trás de protocolos posológicos de antibióticos, anticoagulantes e imunossupressores.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-007-fc01",
+      "pergunta": "Por que a via intravenosa é considerada a referência de 100% de biodisponibilidade, e o que isso implica para todas as outras vias de administração?",
+      "resposta": "Porque na via intravenosa o fármaco é depositado diretamente na circulação sistêmica, sem precisar atravessar nenhuma barreira de absorção nem sofrer perda antes de circular. Todas as outras vias — oral, intramuscular, subcutânea, entre outras — envolvem algum grau de absorção através de tecidos, o que sempre introduz a possibilidade de perda de fração da dose. Por isso a biodisponibilidade de qualquer via não intravenosa é, na prática, menor ou igual a 100%, nunca maior, e serve de comparação direta contra a via intravenosa.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "biodisponibilidade",
+        "via-intravenosa",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-fc02",
+      "pergunta": "Explique, em termos gerais, por que a concentração de um fármaco administrado repetidamente não sobe indefinidamente, mas se estabiliza num patamar (estado de equilíbrio).",
+      "resposta": "Porque a velocidade de eliminação de um fármaco aumenta conforme sua concentração no corpo aumenta. A cada dose nova, a concentração sobe, mas também sobe a quantidade eliminada no intervalo seguinte. Em algum ponto, a quantidade administrada a cada intervalo passa a ser exatamente igual à quantidade eliminada nesse mesmo intervalo — entrada e saída se igualam, e a concentração para de subir, oscilando em torno de um patamar estável em vez de continuar acumulando.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "estado-de-equilibrio",
+        "acumulo",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-fc03",
+      "pergunta": "Se um fármaco tivesse biodisponibilidade oral de 100%, isso eliminaria o risco de acúmulo tóxico em doses repetidas?",
+      "resposta": "Não. Biodisponibilidade e acúmulo em doses repetidas são problemas independentes. A biodisponibilidade determina quanto de cada dose isolada chega à circulação; o acúmulo em estado de equilíbrio depende de quão rápido o organismo elimina o que já está presente, comparado à frequência das doses. Mesmo com 100% de biodisponibilidade, um intervalo entre doses curto demais em relação à velocidade de eliminação levaria a acúmulo progressivo e risco de toxicidade — o cálculo do intervalo continua sendo necessário.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "biodisponibilidade",
+        "estado-de-equilibrio",
+        "seguranca"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-fc04",
+      "pergunta": "Por que a origem etimológica de 'biodisponibilidade' (bíos + disponibilis) reflete uma correção conceitual na história da farmacologia?",
+      "resposta": "O termo nasceu da constatação de que medir a dose administrada não bastava para prever o efeito clínico — era preciso medir quanto daquela dose realmente 'se tornava disponível' para o organismo vivo (bíos) usar. Essa correção — de 'dose prescrita' para 'dose realmente acessível à circulação' — é o que torna a farmacocinética clinicamente útil: sem ela, duas formulações com a mesma dose nominal poderiam ser tratadas como equivalentes mesmo entregando quantidades muito diferentes de fármaco ao corpo.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "biodisponibilidade",
+        "etimologia",
+        "historia-da-farmacologia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-fc05",
+      "pergunta": "Um paciente internado com infecção grave precisa atingir rapidamente uma concentração terapêutica de antibiótico, sem esperar o número de doses normalmente necessário para se atingir o estado de equilíbrio. Que princípio geral, apresentado neste bloco, justifica a estratégia usada nesse cenário, e por que ela não deve ser confundida com aumentar a dose de manutenção indefinidamente?",
+      "resposta": "O princípio é o de antecipar o patamar de equilíbrio com uma dose inicial maior do que as doses subsequentes — uma dose de ataque — em vez de esperar que o acúmulo natural de doses regulares alcance a faixa terapêutica ao longo de vários intervalos. Isso não deve ser confundido com simplesmente aumentar a dose de manutenção, porque o objetivo da dose de ataque é único: preencher rapidamente o compartimento até o nível-alvo. Depois disso, doses de manutenção nas quantidades normais são suficientes para sustentar esse patamar, já que a manutenção só precisa repor o que é eliminado a cada intervalo — repetir a dose de ataque indefinidamente levaria a acúmulo muito acima do nível terapêutico. O detalhamento matemático dessa distinção pertence ao bloco seguinte, dedicado especificamente a dose de ataque e manutenção.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "dose-de-ataque",
+        "estado-de-equilibrio",
+        "clinica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-007-caso01",
+      "titulo": "Sinais de intoxicação em paciente idoso mantido havia anos com a mesma dose de digoxina",
+      "apresentacao": "Homem de 82 anos, em uso de digoxina oral na mesma dose diária há mais de dez anos para controle de fibrilação atrial, é levado ao pronto-socorro pela família por náuseas, perda de apetite e visão com halos amarelados ao redor de luzes, além de episódios de batimentos cardíacos irregulares notados no monitor domiciliar. Não houve troca recente de medicação nem de dose. Exames mostram função renal reduzida em relação a exames de anos anteriores, e a dosagem sérica de digoxina vem acima da faixa terapêutica habitual do paciente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A dose diária de digoxina, biodisponibilizada e absorvida normalmente pela via oral ao longo dos anos, permaneceu nominalmente igual, mas a função renal do paciente declinou progressivamente com a idade — um processo silencioso, sem sintomas próprios, que não motivou reavaliação da dose."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A via renal de excreção da digoxina, cuja capacidade de eliminação é diretamente proporcional à função renal, passou a operar com clearance reduzido em relação ao que sustentava o estado de equilíbrio estável de anos anteriores."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a mesma dose administrada no mesmo intervalo, mas com clearance reduzido, a quantidade eliminada entre doses passou a ser menor que a quantidade administrada — o patamar de estado de equilíbrio deixou de corresponder ao valor anterior e migrou lentamente para uma concentração mais alta, acima da faixa terapêutica segura."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O acúmulo progressivo de digoxina produz o quadro clássico de intoxicação digitálica: náuseas, anorexia, distúrbios visuais (halos amarelados) e arritmias cardíacas, incluindo batimentos ectópicos e irregularidades de condução."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A digoxina é suspensa temporariamente, a dose de manutenção é recalculada para a função renal atual do paciente e o novo estado de equilíbrio é reestabelecido numa concentração mais baixa e segura. O caso ilustra que uma dose 'sempre igual' não garante uma concentração sempre igual — o estado de equilíbrio depende da função renal no momento presente, não da que existia quando a dose foi originalmente calculada."
+        }
+      ],
+      "conexao_com_bloco": "O caso conecta diretamente os dois pilares deste bloco: a dose que chega à circulação (aqui preservada, já que a absorção oral não mudou) e o que acontece quando doses repetidas se acumulam ao longo do tempo até um estado de equilíbrio — que, neste paciente, migrou silenciosamente para um novo patamar quando a capacidade de eliminação mudou, mesmo sem qualquer alteração na receita.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "cardiologia",
+        "geriatria",
+        "clinica"
+      ],
+      "diagnostico_revelado": "Intoxicação digitálica por deslocamento do estado de equilíbrio, secundária a declínio progressivo da função renal em paciente idoso mantido com dose antiga de digoxina.",
+      "tratamento_resumido": "Suspensão temporária da digoxina, correção de distúrbios eletrolíticos associados, monitorização cardíaca contínua até resolução das arritmias, e reintrodução em dose reduzida e reajustada periodicamente à função renal atual, com reavaliação regular da função renal em pacientes idosos mantidos cronicamente com fármacos de margem terapêutica estreita e excreção predominantemente renal."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-007-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics: Elimination and Time-Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

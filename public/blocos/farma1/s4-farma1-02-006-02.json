@@ -5,50 +5,349 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Dependência Física, Psíquica e Abstinência",
+    "subtitulo": "Se o corpo se adaptou ao fármaco, por que parar de tomá-lo dói?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "dependencia",
+      "abstinencia",
+      "neuroadaptacao",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Neuroadaptação; síndrome de abstinência; efeito rebote",
-  "narrativa": [],
+  "resumo_conciso": "A tolerância explica por que a mesma dose passa a fazer menos efeito com o uso repetido — mas não explica um fato clínico igualmente importante: por que suspender o fármaco pode, por si só, causar sintomas. Se o problema fosse apenas 'a célula responde menos', tirar o fármaco deveria simplesmente devolver o efeito a zero, sem sobressalto. Não é isso que acontece. A retirada de muitos fármacos usados cronicamente produz uma síndrome de abstinência própria, muitas vezes na direção oposta ao efeito original do fármaco — e isso só faz sentido quando se entende que a célula não ficou parada esperando a próxima dose: ela se reorganizou para operar em equilíbrio na presença crônica da substância. Essa reorganização é a dependência física, um fenômeno biológico, involuntário e distinto da dependência psíquica, que é o desejo compulsivo de repetir o uso pelo seu efeito reforçador — os dois costumam coexistir, mas não são a mesma coisa nem têm a mesma base. Retirar o fármaco de um sistema fisicamente dependente expõe, de forma abrupta, um equilíbrio construído para funcionar apenas com a 'muleta' química presente — daí o efeito rebote, que tende a ser o inverso do efeito original do fármaco. Compreender essa distinção é o que permite reconhecer, tratar e prevenir abstinência em benzodiazepínicos, opioides e outras classes de uso crônico.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior você viu que o uso repetido de um fármaco leva a célula a recalibrar sua sensibilidade — menos alvos disponíveis, cascata amortecida, ou ajustes na exposição efetiva — e que o nome geral para essa perda de efeito é tolerância. Isso resolve a pergunta 'por que a mesma dose para de funcionar'. Mas existe uma segunda pergunta, mais desconcertante, que a tolerância sozinha não responde."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se a célula apenas ficou menos sensível ao fármaco, retirar o fármaco deveria ser um não-evento: o efeito medicamentoso simplesmente cessa, e o corpo permanece como estava antes de qualquer exposição. Mas não é isso que se observa clinicamente. Um paciente que suspende abruptamente um benzodiazepínico usado por meses não fica apenas 'sem o efeito ansiolítico' — ele pode convulsionar. Um paciente que suspende um opioide usado cronicamente não fica apenas 'sem analgesia' — ele tem diarreia, sudorese, taquicardia, dor generalizada. Por que a ausência do fármaco produz sintomas próprios, e por que esses sintomas costumam ser o oposto do efeito que o fármaco produzia?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema real: a suspensão não é neutra"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta começa por reconhecer que a recalibração descrita no bloco anterior não é um simples 'desligar parcial' do sistema — é uma reconstrução ativa do ponto de equilíbrio da célula. Quando um fármaco deprime cronicamente uma via, a célula não apenas reduz sua resposta àquele fármaco: ela frequentemente aumenta a atividade basal de outros componentes daquela via, para compensar a depressão contínua e manter alguma função global razoável. O novo equilíbrio da célula passa a ser a soma de dois fatores opostos — o efeito depressor do fármaco mais a contrarregulação excitatória que o organismo montou para compensá-lo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Enquanto o fármaco está presente, esses dois fatores se cancelam, e o paciente parece funcionalmente estável (ainda que tolerante, precisando de doses maiores para o efeito terapêutico pleno). O problema real, então, não é 'o que acontece quando o fármaco falta', mas sim: **o que resta quando se retira apenas um dos dois lados de um equilíbrio construído com dois lados opostos?**"
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: a célula cronicamente exposta ao fármaco não é uma célula 'menos sensível' passivamente — é uma célula que montou uma contrarregulação ativa para compensar a presença do fármaco. Essa contrarregulação é a peça que a simples ideia de tolerância deixava de fora."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve — sem ainda nomear"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta a essa pergunta é justamente o que explica a síndrome de abstinência: quando o fármaco é retirado, a contrarregulação que o organismo construiu não desaparece instantaneamente junto com ele. Ela precisa de tempo — horas a semanas, dependendo do sistema — para ser desmontada. Nesse intervalo, o organismo fica exposto apenas à sua própria contrarregulação, sem o fator depressor que ela existia para compensar. O resultado é um estado funcional que tende para o lado **oposto** ao efeito original do fármaco: onde o fármaco sedava, agora há hiperexcitabilidade; onde o fármaco aliviava dor, agora há hiperalgesia; onde o fármaco diminuía a frequência cardíaca, agora há taquicardia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse desequilíbrio transitório, que aparece quando um fármaco ao qual houve adaptação crônica é retirado, é o que a clínica chama de síndrome de abstinência — e o estado fisiológico subjacente que a torna possível, a reorganização celular que passou a precisar da presença do fármaco para manter seu novo equilíbrio, é o que se chama dependência física."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A abstinência não é o fármaco 'fazendo falta' de forma passiva — é a contrarregulação do organismo, sem mais nada para compensar, aparecendo sozinha e na direção contrária ao efeito original do fármaco. É por isso que o efeito rebote costuma ser o espelho invertido do efeito terapêutico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse desequilíbrio"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em termos de mecanismo, a contrarregulação normalmente envolve os mesmos tipos de elemento molecular que a tolerância — receptores, segundos mensageiros, canais iônicos, sistemas enzimáticos — só que operando agora em sentido oposto ao habitual. Um exemplo didático: em neurônios cronicamente expostos a um agonista de receptor GABA-A (como um benzodiazepínico), a maquinaria intracelular reduz a expressão e a sensibilidade desses receptores inibitórios (o mecanismo de tolerância), e paralelamente pode haver um discreto aumento da atividade de vias excitatórias glutamatérgicas, como forma de o neurônio manter alguma excitabilidade basal apesar da inibição crônica. Retirado o benzodiazepínico, a inibição GABAérgica cai (já estava reduzida) e a excitação glutamatérgica permanece elevada — o neurônio fica transitoriamente hiperexcitável. Esse é o substrato mais aceito para explicar por que a abstinência de benzodiazepínicos inclui ansiedade rebote, tremor e, nos casos graves, convulsão."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em opioides, a lógica é semelhante em outro circuito: o uso crônico deprime a via noradrenérgica do locus ceruleus (um dos efeitos analgésicos e sedativos do opioide passa por essa via), e a célula compensa aumentando a produção da enzima que sintetiza noradrenalina. Enquanto o opioide está presente, a maior capacidade de síntese é contrabalançada pela inibição do fármaco. Ao retirar o opioide, a inibição desaparece, mas a maquinaria sintética aumentada continua ativa por dias — gerando uma descarga noradrenérgica exagerada, que se manifesta como os sintomas clássicos de abstinência opioide: sudorese, taquicardia, midríase, diarreia, piloereção, ansiedade e dor generalizada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em conjunto: a mesma neuroadaptação, dois desfechos"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essencial perceber que tolerância e dependência física não são dois fenômenos separados que por acaso aparecem juntos — são duas leituras da mesma neuroadaptação, feitas em momentos diferentes. Enquanto o fármaco está presente, a neuroadaptação se manifesta como tolerância (efeito reduzido para a mesma dose, porque a contrarregulação amortece a ação do fármaco). Quando o fármaco é retirado, a mesma neuroadaptação se manifesta como abstinência (efeito rebote, porque a contrarregulação fica sem nada para compensar). É o mesmo sistema fotografado em dois instantes: com o fármaco presente e com o fármaco ausente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa relação explica também por que a intensidade da abstinência costuma acompanhar a intensidade da tolerância que se instalou: quanto mais tempo e mais dose um fármaco foi usado cronicamente, mais robusta tende a ser a contrarregulação montada, e mais intensa tende a ser a abstinência ao retirá-lo — o que é a base racional para o desmame gradual (reduzir a dose lentamente dá tempo para a contrarregulação se desmontar em paralelo, em vez de ser exposta de uma só vez)."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: tolerância é o que se vê com o fármaco presente; abstinência é o que se vê quando ele é retirado. Ambas nascem da mesma reorganização celular — por isso reduzir a dose aos poucos (desmame) é mais seguro que parar de uma vez: dá tempo para a contrarregulação regredir junto."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que se articula: dependência física não é dependência psíquica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Aqui é indispensável separar dois conceitos que a linguagem cotidiana mistura, mas que a farmacologia trata como distintos. A **dependência física** é o estado biológico, involuntário e mensurável descrito acima: uma neuroadaptação que produz sintomas objetivos de abstinência quando o fármaco é retirado. Ela pode ocorrer em qualquer paciente exposto cronicamente a certas classes de fármacos, **independentemente de haver ou não desejo de uso** — um paciente em cuidados paliativos recebendo opioide para dor terminal desenvolve dependência física sem jamais ter buscado o efeito eufórico da substância, e sem que isso configure um transtorno de uso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A **dependência psíquica** (também chamada de dependência psicológica, ou o núcleo do que hoje se descreve como transtorno por uso de substância) é um fenômeno comportamental: o desejo compulsivo e a busca do fármaco motivados pelo seu efeito reforçador — prazer, alívio emocional, fuga de estados aversivos — mesmo às custas de consequências negativas. Ela envolve circuitos de recompensa (via dopaminérgica mesolímbica) e aprendizado associativo, e sua base neurobiológica é parcialmente distinta da neuroadaptação homeostática que gera dependência física."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As duas frequentemente coexistem — sobretudo em opioides, onde o mesmo circuito que gera tolerância e abstinência física também interage com vias de recompensa —, mas a separação é clinicamente decisiva: um paciente pode ter dependência física intensa sem qualquer dependência psíquica (o caso do paciente paliativo), e é justamente esse ponto que orienta a equipe a **não negar analgesia opioide por medo infundado de 'viciar' o paciente** quando o contexto é dor terminal bem indicada. Por outro lado, um paciente pode ter dependência psíquica significativa com dependência física discreta, como ocorre em alguns padrões de uso de estimulantes, que geram menos abstinência física franca, mas fissura comportamental intensa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] A proporção exata entre os dois componentes varia por classe de fármaco, padrão de uso e vulnerabilidade individual (genética, psiquiátrica, social), e a neurobiologia da dependência psíquica ainda tem aspectos em investigação ativa — o que se apresenta aqui é o consenso didático estabelecido, não um mapeamento completo e definitivo de todos os circuitos envolvidos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "abstinência",
+      "origem": "do latim abstinentia, de abstinere (abs- = afastar, + tenere = segurar, manter) — literalmente 'manter-se afastado de algo'",
+      "significado": "no uso clássico, a virtude de se privar voluntariamente de algo; em farmacologia, o conjunto de sintomas que surge ao se afastar de uma substância à qual houve adaptação crônica",
+      "explicacao": "É irônico que a palavra tenha nascido para descrever um ato voluntário de renúncia — abster-se de comida, de prazer, de vício, por escolha — e hoje designe, em farmacologia, algo que acontece ao corpo *independentemente* da vontade do paciente. A síndrome de abstinência não é a virtude de se abster; é a consequência fisiológica, muitas vezes nada voluntária, de já ter se abstido (ou sido forçado a se abster) de um fármaco ao qual o organismo se adaptou. O deslocamento de sentido — de escolha moral para sintoma involuntário — é um lembrete de que muitos termos médicos herdam palavras da linguagem comum e as reaproveitam com um significado tecnicamente mais estreito e, às vezes, quase oposto em espírito ao original."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o todo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏗️",
+      "conteudo": "Pense numa pessoa que anda apoiada, por meses, numa muleta em uma perna machucada. Nesse tempo, a musculatura da perna sadia se fortalece para compensar o peso extra que a muleta não absorve, e o cérebro reaprende o padrão de equilíbrio considerando a muleta como parte fixa da equação (isso é a **dependência física**: o sistema se reorganizou contando com o apoio externo). Retirada a muleta de repente, a pessoa não volta a andar normalmente no mesmo instante — ela cambaleia, porque o equilíbrio que aprendeu é o equilíbrio *com* muleta, e a musculatura hiperdesenvolvida de um lado agora está descompensada (isso é o **efeito rebote/abstinência**: a contrarregulação que existia para lidar com a muleta agora atua sozinha, sem o que ela compensava). Já o desejo de **usar a muleta por conforto e medo de cair, mesmo depois de o osso já ter consolidado e o médico liberar a marcha sem apoio**, é outra coisa: é a **dependência psíquica**, um apego motivado por alívio e segurança percebidos, não pela necessidade biomecânica real. A analogia quebra em um ponto: o desmame da muleta física costuma ser previsível e progressivo (menos apoio, mais carga na perna, dia após dia); o desmame farmacológico de substâncias como benzodiazepínicos e opioides exige protocolo médico específico, porque o ritmo de reversão da contrarregulação neural pode não ser tão linear ou tão seguro quanto parece, e retiradas abruptas — diferentemente de simplesmente largar uma muleta rápido demais — podem ser fatais em certas classes (por exemplo, convulsão na retirada abrupta de benzodiazepínico)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Fechando o módulo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Com isso se fecha o arco iniciado na visão geral deste módulo: o uso repetido de um fármaco é um estímulo persistente que a célula não estava preparada para receber de forma contínua; ela recalibra sua sensibilidade (tolerância) e monta uma contrarregulação ativa para manter algum equilíbrio funcional; essa contrarregulação, quando exposta sem o fármaco que a motivou, produz abstinência; e o desejo comportamental de manter o uso, por reforço e não por necessidade homeostática, é a dependência psíquica — um eixo relacionado, mas mecanisticamente distinto. Três nomes, um só processo adaptativo visto em momentos e ângulos diferentes."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Um paciente em uso crônico de opioide para dor oncológica terminal, sem qualquer histórico de uso recreativo ou comportamento de busca da substância, é classificado por um familiar leigo como 'viciado'. Do ponto de vista farmacológico, essa classificação está correta?",
+      "resposta": "Não, e a distinção entre dependência física e psíquica é exatamente o que permite corrigir esse engano. O paciente quase certamente desenvolveu dependência física — sua fisiologia se reorganizou para funcionar com o opioide presente, e uma retirada abrupta produziria sintomas de abstinência. Isso é esperado e não é patológico: é uma consequência previsível do uso crônico de uma classe farmacológica que gera neuroadaptação. 'Vício' (transtorno por uso de substância) descreve outra coisa: busca compulsiva do fármaco por seu efeito reforçador, com prejuízo funcional e perda de controle sobre o uso — dependência psíquica. Um paciente que toma a dose prescrita para controlar dor real, sem escalar a dose por conta própria e sem buscar o efeito euforizante, não preenche esse critério comportamental. Confundir dependência física com vício é um erro comum que leva à subprescrição de analgesia opioide em pacientes com dor legítima — um problema real de saúde pública conhecido como opiofobia."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Contrarregulação e efeito rebote na retirada do fármaco",
+      "descricao": "Esquema didático em três painéis horizontais conectados por setas, paralelo visual ao diagrama do bloco-pai sobre tolerância, mas focado no eixo dependência/abstinência: (1) uso crônico do fármaco, mostrando duas forças opostas em equilíbrio — seta para baixo representando o efeito depressor do fármaco e seta para cima, de tamanho semelhante, representando a contrarregulação do organismo, resultando em uma linha de base estável ao centro; (2) momento da retirada abrupta do fármaco, com a seta depressora removida e a seta de contrarregulação ainda presente e ativa, gerando um desvio evidente da linha de base para cima (hiperexcitabilidade/efeito rebote); (3) resolução tardia, semanas depois, com a seta de contrarregulação gradualmente diminuindo de tamanho até a linha de base ser restaurada. Legendas curtas em português abaixo de cada painel. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. Sequência horizontal de 3 painéis conectados por setas finas, cada painel com legenda curta em português abaixo e uma linha de base horizontal pontilhada central para referência visual constante entre os painéis: painel 1 'USO CRÔNICO — EQUILÍBRIO' — uma seta grossa azul apontando para baixo (rotulada 'efeito do fármaco') e uma seta grossa laranja de tamanho equivalente apontando para cima (rotulada 'contrarregulação do organismo'), ambas centralizadas sobre a linha de base, resultando visualmente em equilíbrio; painel 2 'RETIRADA ABRUPTA — REBOTE' — a seta azul (fármaco) desaparece ou fica tracejada e esmaecida, a seta laranja (contrarregulação) permanece grossa e sólida, e um ponto ou marcador se desloca visivelmente acima da linha de base, com um pequeno ícone de alerta ao lado, representando sintomas de abstinência; painel 3 'SEMANAS DEPOIS — RESOLUÇÃO' — a seta laranja aparece agora menor e mais fina, o marcador retorna à linha de base central. Paleta de cores suaves e consistente entre os painéis (azul e laranja como cores-chave), alto contraste, sem texturas fotorrealistas, sem marcas d'água, sem texto além das legendas indicadas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-006",
+        "titulo": "Tolerância, Dependência e Taquifilaxia (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume que o aluno já entende a lógica geral da neuroadaptação apresentada no bloco-pai: uso repetido como estímulo persistente, recalibração celular e o vínculo estrutural entre tolerância e dependência. Aqui essa segunda metade é aberta em detalhe."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Síndrome de abstinência de benzodiazepínicos e protocolo de desmame",
+        "mecanismo_conexao": "O modelo de contrarregulação GABA/glutamato apresentado aqui é a base mecanística para entender por que a suspensão abrupta de benzodiazepínicos pode causar convulsão, e por que o desmame deve ser gradual.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Síndrome de abstinência opioide e manejo em dependência física sem transtorno de uso",
+        "mecanismo_conexao": "A distinção entre dependência física e psíquica estabelecida aqui é pré-requisito direto para o manejo correto de pacientes com dor crônica ou terminal em uso prolongado de opioides, evitando subtratamento por opiofobia.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "psiquiatria",
+        "semestre_futuro": 7,
+        "topico": "Transtorno por uso de substância e circuitos de recompensa dopaminérgica",
+        "mecanismo_conexao": "A dependência psíquica introduzida aqui como conceito distinto da dependência física é a porta de entrada para o estudo aprofundado dos circuitos mesolímbicos de recompensa em psiquiatria.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-006-02-fc01",
+      "pergunta": "Por que a simples ideia de 'tolerância' (célula menos sensível ao fármaco) não é suficiente para explicar por que existe síndrome de abstinência?",
+      "resposta": "Porque se a célula apenas respondesse menos ao fármaco, retirá-lo deveria ser um não-evento — o efeito cessaria sem sobressalto. A abstinência só existe porque a célula, além de reduzir sua sensibilidade ao fármaco, monta ativamente uma contrarregulação (por exemplo, aumento de vias excitatórias para compensar um depressor crônico). Ao retirar o fármaco, essa contrarregulação fica sem nada para compensar e se manifesta sozinha — daí os sintomas de abstinência, tipicamente opostos ao efeito original do fármaco.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "dependencia",
+        "abstinencia",
+        "neuroadaptacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-006-02-fc02",
+      "pergunta": "Explique o mecanismo pelo qual a abstinência de benzodiazepínicos pode causar convulsão.",
+      "resposta": "O uso crônico de benzodiazepínico reduz a expressão e sensibilidade dos receptores GABA-A (inibitórios), e o neurônio compensa aumentando discretamente a atividade de vias excitatórias glutamatérgicas para manter alguma excitabilidade basal. Enquanto o fármaco está presente, essas forças se equilibram. Ao retirar abruptamente o benzodiazepínico, a inibição GABAérgica (já reduzida) cai ainda mais, enquanto a excitação glutamatérgica compensatória permanece elevada — o neurônio fica hiperexcitável, o que no limite se manifesta como convulsão.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "benzodiazepinicos",
+        "abstinencia",
+        "gaba",
+        "convulsao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-006-02-fc03",
+      "pergunta": "Diferencie dependência física e dependência psíquica, e dê um exemplo clínico em que elas se dissociam.",
+      "resposta": "Dependência física é uma neuroadaptação biológica e involuntária: o organismo se reorganiza para funcionar em equilíbrio com o fármaco presente, e sua retirada gera sintomas objetivos de abstinência — independe de haver desejo de uso. Dependência psíquica é um fenômeno comportamental: busca compulsiva do fármaco pelo seu efeito reforçador (prazer, alívio), envolvendo circuitos de recompensa dopaminérgicos, mesmo com prejuízo funcional. Exemplo de dissociação: um paciente em cuidados paliativos usando opioide para dor terminal desenvolve dependência física robusta (abstinência se o fármaco parar), mas tipicamente não tem dependência psíquica — não busca o fármaco por prazer nem escala a dose por conta própria.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "dependencia-fisica",
+        "dependencia-psiquica",
+        "opioides"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-006-02-fc04",
+      "pergunta": "Por que reduzir a dose de um fármaco gradualmente (desmame) é mais seguro do que suspendê-lo de uma vez, à luz do mecanismo de contrarregulação?",
+      "resposta": "A contrarregulação que o organismo monta durante o uso crônico não se desmonta instantaneamente — ela precisa de tempo para regredir. Se o fármaco é retirado de uma vez, a contrarregulação fica exposta por inteiro e sem nada para compensar, gerando abstinência intensa. Reduzindo a dose aos poucos, dá-se tempo para que a contrarregulação se desfaça em paralelo à queda da dose, minimizando o desequilíbrio em qualquer ponto do processo — por isso o desmame gradual é o padrão recomendado em benzodiazepínicos e opioides de uso crônico.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "desmame",
+        "abstinencia",
+        "farmacologia-clinica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-006-02-fc05",
+      "pergunta": "A etimologia de 'abstinência' (latim abstinere, 'manter-se afastado') descrevia originalmente um ato voluntário. Por que isso é irônico no uso farmacológico do termo?",
+      "resposta": "Porque no uso clássico, abstinência era a virtude de se privar de algo por escolha própria. Em farmacologia, a síndrome de abstinência é o oposto disso em espírito: é uma consequência fisiológica involuntária que o corpo impõe ao paciente quando um fármaco ao qual ele se adaptou cronicamente é retirado — muitas vezes contra a vontade do próprio paciente, que sofre os sintomas independentemente de ter escolhido parar. A palavra manteve a forma, mas o sentido de 'escolha voluntária' foi substituído por 'consequência biológica involuntária'.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "abstinencia",
+        "etimologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-006-02-caso01",
+      "titulo": "Convulsão após suspensão abrupta de benzodiazepínico de uso prolongado",
+      "apresentacao": "Mulher de 61 anos, em uso contínuo de alprazolam para transtorno de ansiedade generalizada há três anos, decide parar de tomar a medicação por conta própria após ler sobre riscos de uso prolongado, suspendendo o fármaco de um dia para o outro. No terceiro dia sem a medicação, apresenta tremor intenso, sudorese, insônia grave e ansiedade extrema; no quarto dia, tem uma crise convulsiva tônico-clônica generalizada e é levada ao pronto-socorro pela família.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Uso contínuo de benzodiazepínico por três anos levou a neuroadaptação crônica: redução da expressão/sensibilidade de receptores GABA-A e aumento compensatório da atividade excitatória glutamatérgica, mantendo equilíbrio funcional enquanto o fármaco estava presente."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Circuitos corticais e límbicos dependentes do balanço entre inibição GABAérgica e excitação glutamatérgica, cujo novo ponto de equilíbrio passou a exigir a presença constante do benzodiazepínico."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a suspensão abrupta, a inibição GABAérgica (já reduzida pela tolerância) caiu ainda mais, enquanto a contrarregulação excitatória glutamatérgica permaneceu elevada por dias — gerando hiperexcitabilidade neuronal progressiva."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Tremor, sudorese, insônia e ansiedade rebote nos primeiros dias, evoluindo para crise convulsiva tônico-clônica generalizada quando a hiperexcitabilidade ultrapassou o limiar convulsivo."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Emergência médica com risco de vida, totalmente evitável com desmame gradual supervisionado em vez de suspensão abrupta autoiniciada."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra o ponto central deste bloco: a abstinência não é apenas 'sentir falta' do fármaco, é a manifestação de uma contrarregulação neural ativa que ficou exposta sem o que ela compensava. Também demonstra por que a distinção entre reduzir a dose gradualmente e parar de uma vez não é uma questão de conforto, mas de segurança — a mesma neuroadaptação que gerava tolerância é a que, retirada abruptamente, pode matar.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "psiquiatria",
+        "medicina-de-emergencia"
+      ],
+      "diagnostico_revelado": "Síndrome de abstinência de benzodiazepínico com convulsão, por suspensão abrupta após dependência física.",
+      "tratamento_resumido": "Estabilização aguda da crise convulsiva e reintrodução controlada de benzodiazepínico (frequentemente por via endovenosa em ambiente monitorado) seguida de desmame planejado e gradual, com redução lenta da dose ao longo de semanas a meses, sob acompanhamento médico — nunca suspensão abrupta espontânea em uso crônico."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-006-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action (physical dependence and withdrawal).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 1 — Introduction: The Nature of Drugs and Drug Development (dependence, withdrawal); Capítulo 22 — Sedative-Hypnotic Drugs (benzodiazepine withdrawal).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles (tolerance and dependence); Capítulo 49 — Drug Dependence.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

@@ -10,43 +10,230 @@
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "ist",
+      "ulceras-genitais",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Obstrução do ducto; cisto e abscesso; drenagem e marsupialização",
-  "narrativa": [],
+  "resumo_conciso": "Bartolinite decorre de obstrução/inflamação do ducto da glândula de Bartholin, formando cisto ou abscesso doloroso no introito. Abscesso geralmente requer drenagem adequada, não apenas antibiótico.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "As glândulas de Bartholin ficam no terço posterior do introito vaginal e lubrificam a região vestibular. Quando o ducto obstrui, pode formar cisto; quando infecta, surge abscesso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O cisto de Bartholin pode ser indolor, com massa unilateral em região posterolateral do introito. O abscesso é doloroso, tenso, com dificuldade para sentar, andar ou ter relação sexual."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A flora costuma ser polimicrobiana, incluindo bactérias vaginais, entéricas e, em alguns casos, agentes de IST como gonococo e clamídia. Testagem deve considerar idade, risco sexual e quadro clínico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Abscesso de Bartholin geralmente não melhora só com antibiótico. A base é drenagem efetiva, idealmente com técnica que reduza recorrência, como cateter de Word ou marsupialização em casos selecionados."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Antibiótico é reservado para celulite, sinais sistêmicos, gestação, imunossupressão, alto risco ou suspeita/confirmada IST, conforme protocolo local."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em mulheres acima de 40 anos ou com massa atípica, persistente ou irregular, é preciso considerar avaliação para excluir neoplasia da glândula de Bartholin, ainda que rara."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O alívio da dor e a explicação anatômica ajudam muito: a paciente entende por que precisa de drenagem e por que espremer ou perfurar em casa aumenta risco."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-06-000",
+        "titulo": "Modulo 6 - Infeccoes do Trato Genital e ISTs",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-06-021",
+        "titulo": "Ulceras Genitais - Abordagem Sindromica",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "HIV e Outras ISTs na Saude da Mulher",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-07-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-06-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Cervicites e Uretrites - Gonorreia e Clamidia"
+      },
+      {
+        "bloco_id": "s7-go1-06-013",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Tricomoniase"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-026-fc-01",
+      "pergunta": "Onde ficam as glândulas de Bartholin?",
+      "resposta": "No terço posterior do introito vaginal, bilateralmente.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-026-fc-02",
+      "pergunta": "Qual diferença entre cisto e abscesso?",
+      "resposta": "Cisto pode ser indolor; abscesso é doloroso, tenso e inflamatório.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-026-fc-03",
+      "pergunta": "Abscesso costuma ser tratado apenas com antibiótico?",
+      "resposta": "Não. Geralmente precisa de drenagem efetiva.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-026-fc-04",
+      "pergunta": "Quando suspeitar algo além de abscesso comum?",
+      "resposta": "Massa atípica, persistente ou em mulher acima de 40 anos.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-026-cc-01",
+      "titulo": "Dor para sentar",
+      "apresentacao": "Mulher de 31 anos chega com dor intensa no introito, massa unilateral flutuante e dificuldade para caminhar.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Bartolinite decorre de obstrução/inflamação do ducto da glândula de Bartholin, formando cisto ou abscesso doloroso no introito."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Bartolinite e Abscesso de Bartholin, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Bartolinite decorre de obstrução/inflamação do ducto da glândula de Bartholin, formando cisto ou abscesso doloroso no introito. Abscesso geralmente requer drenagem adequada, não apenas antibiótico."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 31 anos chega com dor intensa no introito, massa unilateral flutuante e dificuldade para caminhar."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual conduta central? Drenagem adequada do abscesso de Bartholin, com antibiótico apenas se houver indicação adicional."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Drenagem adequada do abscesso de Bartholin, com antibiótico apenas se houver indicação adicional.",
+      "tratamento_resumido": "Drenagem adequada do abscesso de Bartholin, com antibiótico apenas se houver indicação adicional."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Anatomia do introito mostrando glândula de Bartholin, ducto obstruído, cisto e abscesso com opção de cateter.",
+        "alt": "Ilustracao educacional para Bartolinite e Abscesso de Bartholin"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC - Syphilis STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/syphilis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Herpes STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Chancroid STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/chancroid.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Lymphogranuloma Venereum STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/lgv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Donovanosis STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/donovanosis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Pelvic Inflammatory Disease STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

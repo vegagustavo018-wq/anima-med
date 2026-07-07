@@ -194,13 +194,8 @@
   "conexoes": {
     "prerequisitos": [
       {
-        "bloco_id": "s1-bio-01-006",
-        "titulo": "Célula — Membrana e Receptores",
-        "tipo": "necessario"
-      },
-      {
         "bloco_id": "s1-hist-04-002",
-        "titulo": "Tecido Sanguíneo — Linfócitos e Leucócitos",
+        "titulo": "Tecido Muscular Cardíaco — Visão Geral",
         "tipo": "necessario"
       }
     ],
@@ -209,37 +204,43 @@
         "bloco_id": "s1-imuno-03-000",
         "titulo": "Imunidade Adaptativa — Linfócitos T e B",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Vigilância detecta padrão → sistema adaptativo é acionado → linfócitos T e B aprendem → memória se forma"
+        "descricao": "Vigilância detecta padrão → sistema adaptativo é acionado → linfócitos T e B aprendem → memória se forma",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s2-imuno-02-001",
         "titulo": "Apresentação de Antígeno — Moléculas MHC em Detalhe",
-        "tipo": "MECANISMO_APROFUNDADO",
-        "descricao": "Expandir estrutura do MHC classe I e II, processamento antigênico, vias endossômica vs citosólica"
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "Expandir estrutura do MHC classe I e II, processamento antigênico, vias endossômica vs citosólica",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s2-patol-01-003",
         "titulo": "Autoimunidade — Falha no Reconhecimento Self vs Nonself",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Quando vigilância falha, sistema ataca células próprias; mecanismos de lupus, artrite reumatoide, diabetes tipo 1"
+        "descricao": "Quando vigilância falha, sistema ataca células próprias; mecanismos de lupus, artrite reumatoide, diabetes tipo 1",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s2-farma-01-002",
         "titulo": "Imunomoduladoes — Amplificando ou Freando a Vigilância",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Medicamentos que potenciam reconhecimento (anticorpos monoclonais, checkpoint inhibitors) ou suprimem (corticoides, azatioprina)"
+        "descricao": "Medicamentos que potenciam reconhecimento (anticorpos monoclonais, checkpoint inhibitors) ou suprimem (corticoides, azatioprina)",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
       {
         "bloco_id": "s1-bio-01-008",
         "titulo": "Proteínas — Especificidade e Ligação",
-        "descricao": "Entender como uma proteína receptora pode reconhecer especificamente apenas um padrão entre bilhões"
+        "descricao": "Entender como uma proteína receptora pode reconhecer especificamente apenas um padrão entre bilhões",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       },
       {
         "bloco_id": "s1-hist-02-001",
         "titulo": "Epitélio — Barreira Física e Vigilância Local",
-        "descricao": "Pele e mucosas não apenas barram invasores; têm sentinelas imunológicas próprias (células de Langerhans, etc)"
+        "descricao": "Pele e mucosas não apenas barram invasores; têm sentinelas imunológicas próprias (células de Langerhans, etc)",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -311,16 +312,16 @@
   ],
   "casos_clinicos": [
     {
-      "id": "caso-001",
+      "caso_id": "caso-001",
       "titulo": "Sepse por Bactéria Gram-Negativa — Quando PAMPs Provocam Vigilância Hiperativa",
-      "descricao": "João, 45 anos, tinha diverticulite perfurada. Bactérias Gram-negativas (E. coli) entraram na circulação. Seu corpo reconheceu massivamente PAMPs (lipopolissacarídeo da parede), disparou vigilância inata em overdrive — inflamação sistêmica extrema, choque séptico.",
+      "apresentacao": "João, 45 anos, tinha diverticulite perfurada. Bactérias Gram-negativas (E. coli) entraram na circulação. Seu corpo reconheceu massivamente PAMPs (lipopolissacarídeo da parede), disparou vigilância inata em overdrive — inflamação sistêmica extrema, choque séptico.",
       "cascata": [
         {
           "etapa": "Causa",
           "descricao": "Perfuração do intestino; translocação de E. coli para a circulação sanguínea"
         },
         {
-          "etapa": "Vigilância desencadeada",
+          "etapa": "Estrutura Afetada",
           "descricao": "Macrófagos e células endoteliais reconhecem LPS (lipopolissacarídeo) através de TLR-4 (tipo de PRR). Enorme carga de PAMP dispara alarme massivo"
         },
         {
@@ -328,26 +329,34 @@
           "descricao": "Liberação descontrolada de TNF-alpha e IL-1 — inflamação sistêmica em cascata. Vasos sanguíneos perdem integridade (fuga de plasma), coagulação ativa-se, órgãos desligam"
         },
         {
-          "etapa": "Sintomas clínicos",
+          "etapa": "Sintoma",
           "descricao": "Febre > 40°C, taquicardia (frequência cardíaca > 120), hipotensão (PA caindo), confusão mental, falha renal aguda, coagulopatia (sangramento em pontos aleatórios)"
         },
         {
           "etapa": "Consequência",
           "descricao": "João foi internado em UTI com choque séptico refratário. Precisou de antibióticos (matar bactéria, reduzir PAMP) e suporte vasopressor (elevar pressão). Seu caso ilustra que vigilância *ativa* demais é tão letal quanto vigilância inativa — o inimigo não são só os PAMPs, é a resposta inflamatória excessiva a eles. Sepse é vigilância hiperativa matando o próprio organismo."
         }
-      ]
+      ],
+      "conexao_com_bloco": "O caso mostra o lado perigoso da vigilância imunológica: os mesmos PRRs que reconhecem PAMPs para proteger o corpo, quando massivamente ativados, disparam uma resposta inflamatória sistêmica que pode ser tão letal quanto a própria infecção.",
+      "disciplinas_relacionadas": [
+        "Imunologia",
+        "Medicina Intensiva",
+        "Infectologia"
+      ],
+      "diagnostico_revelado": "Choque séptico por bacteremia de bactéria Gram-negativa (translocação de E. coli)",
+      "tratamento_resumido": "Antibioticoterapia para eliminar a bactéria e reduzir a carga de PAMPs, associada a suporte vasopressor para sustentar a pressão arterial em UTI."
     },
     {
-      "id": "caso-002",
+      "caso_id": "caso-002",
       "titulo": "Imunodeficiência por Falta de PRRs — Quando Vigilância Falha Completamente",
-      "descricao": "Maria, 3 anos, tinha deficiência de CD14 (molécula que funciona com TLR-4 para reconhecer LPS). Sem CD14, seu corpo não conseguia reconhecer bactérias Gram-negativas normalmente. Sofria infecções respiratórias recorrentes por E. coli.",
+      "apresentacao": "Maria, 3 anos, tinha deficiência de CD14 (molécula que funciona com TLR-4 para reconhecer LPS). Sem CD14, seu corpo não conseguia reconhecer bactérias Gram-negativas normalmente. Sofria infecções respiratórias recorrentes por E. coli.",
       "cascata": [
         {
           "etapa": "Causa",
           "descricao": "Deficiency genética de CD14; perda de um tipo de PRR essencial"
         },
         {
-          "etapa": "Vigilância prejudicada",
+          "etapa": "Estrutura Afetada",
           "descricao": "Macrófagos de Maria não conseguem reconhecer LPS porque não têm o co-receptor CD14. PRR inato fica cego para bactérias Gram-negativas"
         },
         {
@@ -355,14 +364,22 @@
           "descricao": "Bactérias não são detectadas; macrófagos não liberam citocinas de alarme; sistema adaptativo não é acionado a tempo"
         },
         {
-          "etapa": "Infecção recorrente",
+          "etapa": "Sintoma",
           "descricao": "E. coli replicava descontrolada no pulmão antes de qualquer defesa ser acionada. Pneumonias aos 3 meses, 6 meses, 9 meses — padrão de infecção precoce"
         },
         {
-          "etapa": "Manejo",
+          "etapa": "Consequência",
           "descricao": "Maria recebeu profilaxia com antibióticos e suplementação de g-CSF (fator estimulador de colônias de granulócitos) para aumentar leucócitos circulantes. Seu caso mostra que sem vigilância inata funcionante, até defesa adaptativa fica comprometida — não há tempo para ela se treinar."
         }
-      ]
+      ],
+      "conexao_com_bloco": "Mostra o oposto do primeiro caso: sem os receptores de reconhecimento de padrões (PRRs) funcionando, a vigilância inata fica cega e a resposta adaptativa nunca é acionada a tempo, permitindo infecções recorrentes.",
+      "disciplinas_relacionadas": [
+        "Imunologia",
+        "Pediatria",
+        "Genética"
+      ],
+      "diagnostico_revelado": "Imunodeficiência primária por deficiência de CD14 (correceptor de reconhecimento de LPS via TLR-4)",
+      "tratamento_resumido": "Profilaxia antibiótica contínua e suplementação com G-CSF (fator estimulador de colônias de granulócitos) para aumentar a contagem de leucócitos circulantes."
     }
   ],
   "midia": {

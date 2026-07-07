@@ -5,50 +5,313 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Potência (EC50) e Comparação entre Fármacos",
+    "subtitulo": "Se um fármaco age com dose dez vezes menor que outro, ele é o melhor remédio da prateleira?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "potencia",
+      "ec50",
+      "curva-dose-resposta",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Dose para efeito; deslocamento horizontal; potência não é superioridade",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior já separou potência de eficácia como dois eixos independentes de uma curva dose-resposta. Este bloco mergulha só no eixo da potência: o que ele mede, exatamente, e como se compara dois fármacos por esse critério sem cair na armadilha de achar que 'precisar de menos dose' significa 'ser melhor'. Potência é medida por um número concreto — a EC50, a dose (ou concentração) necessária para produzir metade do efeito máximo daquele fármaco. Quando dois fármacos são desenhados na mesma curva dose-efeito, o mais potente é aquele cuja curva está deslocada para a esquerda, ou seja, cuja EC50 é menor: ele atinge metade do seu efeito com menos miligramas. Esse deslocamento horizontal não diz nada sobre até onde cada curva sobe — só sobre em que ponto do eixo da dose ela cruza a marca dos 50%. Por isso, comparar potências só faz sentido entre fármacos que produzem o mesmo tipo de efeito; comparar a EC50 de um anti-hipertensivo com a de um analgésico não tem significado. A potência depende basicamente de dois fatores: a afinidade do fármaco pelo receptor (quão bem a molécula se encaixa) e a farmacocinética (quanto do fármaco realmente chega ao alvo). Nenhum desses fatores garante superioridade terapêutica — um fármaco pouco potente, mas barato, seguro e de teto alto, pode ser clinicamente preferível a um extremamente potente. A confusão entre potência e qualidade é explorada, às vezes, em marketing farmacêutico, que anuncia 'ação com doses baixíssimas' como se isso fosse sinônimo de superioridade.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já sabe, do bloco anterior, que 'fármaco mais forte' esconde duas perguntas diferentes: quanta dose é preciso para começar a agir, e até onde o efeito consegue chegar no limite. Este bloco isola a primeira pergunta e faz uma pergunta ainda mais específica: como transformar 'precisa de pouca dose' num número que permita comparar fármacos de forma objetiva, sem depender de impressão?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a farmacologia precisa de um número para isso"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Dizer que 'o fármaco A age com dose baixa' é impreciso — baixa comparada a quê, medida em que ponto da curva? Duas curvas dose-resposta podem ter formatos ligeiramente diferentes, e 'começar a agir' é um momento vago: todo fármaco começa a produzir algum efeito muito pequeno em doses ínfimas, só que esse efeito é clinicamente irrelevante. Sem um ponto de referência exato e padronizado na curva, comparar potência entre fármacos vira uma discussão de opinião, não de dado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacologia precisava de um ponto fixo, replicável em qualquer laboratório, que representasse de forma justa 'onde a curva está posicionada' — sem depender de julgar visualmente onde a subida começa."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: potência não é uma impressão de 'age rápido' ou 'age com pouco'. É preciso um ponto matemático exato na curva para tornar essa comparação objetiva."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolveu: um ponto fixo na curva"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi escolher, como referência universal, o ponto em que a curva atinge exatamente a metade do seu próprio efeito máximo. Esse ponto tem duas grandes vantagens: é matematicamente bem definido (metade de 100% do platô daquele fármaco é sempre 50%, não importa a forma exata da curva) e cai justamente na região mais íngreme da curva sigmoide, onde pequenas variações de dose produzem as maiores variações de efeito — exatamente onde a curva é mais sensível e, por isso, mais fácil de medir com precisão experimental."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Não se usa o início da curva (a subida é lenta demais para medir com precisão) nem o topo do platô (ali a curva já achatou e pequenas variações de dose quase não mudam o efeito). O meio da subida é o único ponto onde medir é ao mesmo tempo preciso e replicável."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse número"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse ponto de referência é chamado de EC50 — a concentração (ou, em ensaios com o organismo inteiro, a dose, chamada então de DE50) necessária para produzir 50% do efeito máximo daquele fármaco específico. É um único valor numérico, geralmente expresso em unidades de concentração (nanomolar, micromolar) ou de dose (miligramas por quilo), obtido experimentalmente ao construir a curva dose-resposta completa e localizar onde ela cruza a linha dos 50% do seu próprio platô."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essencial notar o \"seu próprio platô\": a EC50 de cada fármaco é calculada em relação ao teto que ele mesmo alcança, não em relação a um padrão externo. Isso significa que a EC50 mede exclusivamente posição — nunca altura. Um fármaco de eficácia baixa e um de eficácia alta podem ter a mesma EC50, desde que suas curvas cheguem à metade do respectivo platô na mesma dose."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "EC50 é a dose (ou concentração) que produz metade do efeito máximo daquele fármaco. Quanto **menor** a EC50, **maior** a potência — menos dose é necessária para chegar à metade do efeito. A EC50 mede só posição horizontal; nunca informa nada sobre a altura do platô."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona a comparação entre dois fármacos"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine dois anti-hipertensivos que reduzem a pressão arterial pelo mesmo mecanismo. Fármaco X tem EC50 de 2 mg; fármaco Y tem EC50 de 20 mg. X é dez vezes mais potente que Y: precisa de uma dose dez vezes menor para atingir metade do efeito máximo. Na curva, isso aparece como a curva de X inteira deslocada para a esquerda em relação à de Y — mas as duas podem, perfeitamente, subir até o mesmo platô de 100% de redução pressórica desejada."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Lendo potência relativa em duas curvas dose-resposta",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Localizar o platô de cada curva",
+          "explicacao": "Antes de comparar potências, é preciso saber que ambas as curvas representam o mesmo tipo de efeito (por exemplo, ambas reduzem pressão arterial, e não uma reduz pressão e outra reduz febre — potências só são comparáveis dentro do mesmo efeito)."
+        },
+        {
+          "numero": 2,
+          "titulo": "Traçar a linha de 50% do platô de cada fármaco",
+          "explicacao": "Para cada curva, encontrar o valor de efeito que corresponde à metade do seu próprio topo — não de um valor absoluto comum às duas."
+        },
+        {
+          "numero": 3,
+          "titulo": "Projetar essa linha até cruzar cada curva",
+          "explicacao": "O ponto onde a linha de 50% cruza a curva de cada fármaco, projetado para baixo até o eixo da dose, é a EC50 daquele fármaco."
+        },
+        {
+          "numero": 4,
+          "titulo": "Comparar as duas doses",
+          "explicacao": "O fármaco cuja EC50 cai mais à esquerda (menor valor de dose) é o mais potente. Essa comparação nada diz sobre qual dos dois sobe mais alto — essa é uma pergunta de eficácia, respondida em outro bloco."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse é o ponto onde mora a armadilha mais comum: encontrar a EC50 menor e concluir, sem mais nada, que aquele fármaco é 'superior'. Superioridade terapêutica depende de eficácia, de segurança, de custo, de comodidade posológica — a potência isolada só informa sobre a dose necessária, não sobre qual fármaco resolve melhor o problema clínico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A potência depende de dois fatores concretos. Primeiro, a afinidade do fármaco pelo receptor — quão firmemente a molécula se encaixa e permanece ligada ao alvo; quanto maior a afinidade, menos moléculas de fármaco são necessárias para ocupar uma fração relevante de receptores. Segundo, fatores farmacocinéticos — absorção, distribuição até o tecido-alvo, metabolismo — que determinam quanto do fármaco administrado realmente chega ao receptor em forma ativa. Um fármaco pode ter afinidade altíssima pelo receptor e ainda assim exigir dose relativamente alta por via oral, se grande parte dele for degradada antes de chegar ao alvo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa comparação se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, a potência quase nunca é o critério decisivo de escolha entre fármacos — ela influencia principalmente a apresentação: comprimidos de dose menor, formulações mais convenientes. O eixo que costuma decidir a escolha terapêutica é a eficácia, tratada no bloco irmão deste (teto de efeito máximo), porque é ela que determina se o fármaco consegue, de fato, resolver o grau de problema clínico enfrentado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] Vale um ponto de cautela sobre comunicação em saúde: bulas e materiais promocionais de medicamentos às vezes destacam 'eficácia com doses baixíssimas' — uma forma de descrever alta potência — de um jeito que sugere, sem dizer explicitamente, que o produto é superior. Isso não é necessariamente uma alegação falsa (o fármaco pode realmente exigir menos miligramas), mas é uma alegação incompleta: potência isolada não informa se aquele fármaco tem teto de efeito suficiente para o quadro do paciente. Reconhecer a diferença entre os dois conceitos protege o raciocínio clínico dessa ambiguidade, seja ela intencional ou não."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "EC50",
+      "origem": "sigla do inglês effective concentration 50 — 'concentração efetiva 50'; o termo potência vem do latim potentia (capacidade, poder de agir)",
+      "significado": "EC50: 'a concentração que produz 50% do efeito máximo'",
+      "explicacao": "A sigla EC50 nasceu na farmacologia experimental do século XX, quando pesquisadores passaram a precisar de um ponto-padrão para comparar substâncias testadas em ensaios in vitro e em animais. Ao fixar o critério em 50% do efeito máximo — nem o início da curva, nem o topo — a EC50 se tornou o valor mais citado em toda a literatura de farmacodinâmica, porque cai exatamente na região mais sensível e reprodutível da curva sigmoide. Quando o valor é medido em ensaios com o organismo inteiro (e não em células isoladas), costuma-se usar a sigla irmã DE50 (dose efetiva 50), mas o princípio matemático é idêntico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a distinção"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense em duas chaves de carro com sensores de aproximação. A chave A destrava a porta assim que chega a 3 metros do carro; a chave B só destrava quando chega a 30 centímetros. A chave A é 'mais potente' nesse sentido: precisa de muito menos proximidade (a versão automotiva de 'dose') para acionar o mesmo efeito — destravar a porta. Mas essa diferença de sensibilidade não diz nada sobre outra pergunta completamente diferente: será que as duas chaves, quando bem próximas, conseguem também destravar o porta-malas, ligar o carro remotamente e abaixar os vidros — ou uma delas só destrava a porta e para por aí, não importa quão perto você chegue? Essa segunda pergunta é sobre o teto de funções que a chave alcança, não sobre a distância necessária para acioná-la — e é exatamente aí que a analogia da potência precisa parar: comparar a distância de acionamento (potência) não substitui perguntar quantas funções cada chave é capaz de executar no limite (eficácia, tema do bloco irmão)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um novo anti-inflamatório for lançado com a alegação 'dez vezes mais potente que o concorrente', essa afirmação já garante que ele controla melhor uma inflamação grave?",
+      "resposta": "Não garante. 'Dez vezes mais potente' significa apenas que a EC50 do novo fármaco é dez vezes menor — ele precisa de uma dose bem menor para atingir metade do seu próprio efeito máximo. Isso pode se traduzir em comprimidos menores ou menos unidades por dose, o que é conveniente, mas não diz nada sobre o teto de efeito que esse fármaco alcança quando levado ao limite. Se o teto de eficácia do novo fármaco for mais baixo que o do concorrente, ele pode ser incapaz de controlar uma inflamação grave, por mais que seja tecnicamente 'mais potente'. A pergunta que decide a conduta clínica é sobre eficácia, não sobre a EC50 isoladamente."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas curvas deslocadas horizontalmente: comparação de potência",
+      "descricao": "Gráfico didático com eixo horizontal (dose ou concentração, escala logarítmica) e eixo vertical (efeito, de 0% a 100%), mostrando duas curvas sigmoides que atingem o mesmo platô de 100%, mas a curva do fármaco mais potente está deslocada para a esquerda em relação à do menos potente. Linha horizontal tracejada na marca de 50% do efeito, cruzando as duas curvas em pontos diferentes do eixo da dose; linhas verticais tracejadas descendo desses pontos de cruzamento até o eixo horizontal, marcando a EC50 de cada fármaco com rótulos claros. Seta horizontal dupla entre as duas EC50, indicando a diferença de potência. Legenda em português. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Gráfico científico vetorial, fundo transparente, estilo de livro didático moderno. Eixo horizontal rotulado 'Dose (escala logarítmica)', eixo vertical rotulado 'Efeito (%)' de 0 a 100. Duas curvas sigmoides (formato em S) em cores distintas, ambas atingindo o mesmo platô em 100%: curva A (verde, mais à esquerda, EC50 menor) e curva B (roxa, mais à direita, EC50 maior). Linha horizontal tracejada cinza na marca de 50% do eixo vertical, cruzando as duas curvas. A partir de cada ponto de cruzamento, linha vertical tracejada descendo até o eixo horizontal, com marcadores e rótulos 'EC50 (A)' e 'EC50 (B)'. Seta horizontal dupla entre as duas marcações de EC50, rotulada 'diferença de potência'. Legenda simples explicando as cores das curvas. Cores suaves, alto contraste, sem texturas fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-004",
+        "titulo": "Eficácia e Potência — Não São a Mesma Coisa (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume a distinção conceitual já estabelecida entre potência (posição da curva) e eficácia (altura do platô) e aprofunda exclusivamente o eixo da potência, sem reexplicar por que as duas propriedades são independentes."
+      },
+      {
+        "bloco_id": "s4-farma1-02-002",
+        "titulo": "Curva Dose-Resposta — Medir o Efeito (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A EC50 só existe como ponto identificável dentro da curva dose-resposta graduada já apresentada; sem a curva como referência, o número não tem onde ser localizado."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-004-02",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Eficácia e teto de efeito máximo",
+        "mecanismo_conexao": "A potência mede a posição horizontal da curva (EC50); a eficácia, tratada no bloco irmão, mede a altura do platô. Os dois eixos juntos completam a comparação real entre fármacos, e a eficácia costuma pesar mais na decisão terapêutica.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Comunicação de risco-benefício e marketing farmacêutico",
+        "mecanismo_conexao": "A confusão entre potência e superioridade terapêutica é explorada, por vezes, em materiais promocionais que destacam 'ação com doses baixíssimas' sem mencionar o teto de eficácia — reconhecer essa distinção é ferramenta de leitura crítica de bulas e propagandas.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-004-01-fc01",
+      "pergunta": "O que exatamente representa a EC50 de um fármaco, e por que esse ponto (e não o início ou o topo da curva) foi escolhido como referência de potência?",
+      "resposta": "A EC50 é a concentração (ou dose, chamada então de DE50) necessária para produzir 50% do efeito máximo daquele fármaco específico. Foi escolhida como referência porque cai na região mais íngreme da curva sigmoide, onde a relação entre dose e efeito é mais sensível e, por isso, mais fácil de medir com precisão experimental. O início da curva sobe devagar demais para localizar com exatidão, e o topo já achatou — pequenas mudanças de dose quase não alteram o efeito ali. O meio da subida é o único ponto ao mesmo tempo preciso e replicável entre laboratórios.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "ec50",
+        "potencia",
+        "curva-dose-resposta"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-004-01-fc02",
+      "pergunta": "Armadilha clássica: um estudante vê que o Fármaco X tem EC50 de 1 mg e o Fármaco Y tem EC50 de 15 mg, e conclui que X é o remédio melhor. O que essa conclusão ignora?",
+      "resposta": "A conclusão ignora que a EC50 mede exclusivamente a posição horizontal da curva — quanta dose é necessária para atingir metade do efeito máximo daquele fármaco — e nada diz sobre a altura do platô de cada um (a eficácia). X pode ser mais potente e, ainda assim, ter um teto de efeito mais baixo que Y quando ambos são levados ao limite. 'Mais potente' não é sinônimo de 'clinicamente superior': a superioridade depende também de eficácia, segurança e adequação ao quadro do paciente, fatores que a EC50 isolada não informa.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "ec50",
+        "potencia",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-004-01-fc03",
+      "pergunta": "De que dois fatores concretos depende a potência (EC50) de um fármaco?",
+      "resposta": "Primeiro, da afinidade do fármaco pelo receptor — quão firmemente a molécula se encaixa e permanece ligada ao alvo; maior afinidade exige menos moléculas para ocupar uma fração relevante de receptores. Segundo, de fatores farmacocinéticos — absorção, distribuição e metabolismo — que determinam quanto do fármaco administrado realmente chega ao receptor em forma ativa. Um fármaco pode ter afinidade altíssima e ainda assim precisar de dose relativamente alta por via oral, se boa parte dele for degradada antes de alcançar o alvo.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "potencia",
+        "afinidade",
+        "farmacocinetica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-004-01-fc04",
+      "pergunta": "Por que só faz sentido comparar a EC50 de dois fármacos que produzem o mesmo tipo de efeito?",
+      "resposta": "Porque a EC50 é calculada em relação ao próprio platô de cada fármaco naquele efeito específico — comparar a EC50 de um anti-hipertensivo (efeito: redução de pressão arterial) com a de um analgésico (efeito: redução de dor) não tem significado, já que são curvas de efeitos diferentes, medidas em escalas e contextos biológicos diferentes. A comparação de potência exige que ambos os fármacos estejam sendo avaliados para a mesma resposta biológica, de modo que a diferença encontrada reflita de fato diferença de dose necessária para o mesmo objetivo terapêutico.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "ec50",
+        "potencia",
+        "comparacao-farmacos"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "EC50/potência é um parâmetro comparativo de medição farmacodinâmica (posição da curva dose-resposta), não uma estrutura anatômica ou molécula cuja disfunção produza uma síndrome clínica própria. Não existe doença causada por 'baixa potência' isolada — o conceito só ganha relevância clínica quando aplicado a fármacos específicos já existentes, o que tornaria qualquer caso aqui artificial ou redundante com os casos que pertencerão aos blocos de classes farmacológicas reais (ex.: colinérgicos, adrenérgicos) tratados adiante."
+  },
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-004-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

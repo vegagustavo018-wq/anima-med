@@ -5,48 +5,252 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "O Ciclo ATP/ADP — Carga Energética da Célula",
+    "subtitulo": "Como a célula sabe se está com saldo alto ou baixo?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "atp",
+      "adp",
+      "amp",
+      "carga-energetica",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "ATP como intermediário reciclável; carga energética como sinal regulador global",
-  "narrativa": [],
+  "resumo_conciso": "ATP é uma moeda reciclável: quando paga trabalho, vira ADP e fosfato; quando a célula captura energia, refaz ATP. A relação entre ATP, ADP e AMP funciona como leitura do saldo energético celular. ATP alto favorece processos de gasto e armazenamento; AMP alto sinaliza perigo energético e ativa respostas de economia e produção de ATP, como a ativação de AMPK.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Uma carteira não diz apenas quanto dinheiro você tem; ela muda suas decisões. Com saldo alto, você compra, investe e guarda. Com saldo baixo, corta gastos e procura renda. A célula faz algo parecido lendo a proporção entre ATP, ADP e AMP."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "ATP não é descartável. Ao pagar transporte, síntese ou movimento, ele vira ADP e fosfato. Quando combustíveis são oxidados, ADP recebe fosfato novamente e volta a ser ATP. Esse ciclo rápido é uma das engrenagens mais repetidas da vida."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema o ciclo ATP/ADP resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é manter trabalho contínuo sem precisar acumular quantidades absurdas de ATP. A célula guarda grandes reservas como glicogênio e gordura, mas mantém ATP em quantidade relativamente pequena e altamente reciclada. O importante é a velocidade de reposição, não um cofre gigante de ATP."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: ATP é moeda de giro rápido. A célula sobrevive mantendo o ciclo ATP/ADP rodando, não acumulando ATP indefinidamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que AMP é um alarme tão sensível?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando ATP cai e ADP sobe, a adenilato quinase pode converter dois ADP em ATP e AMP. Isso ajuda a recuperar algum ATP, mas também amplifica o sinal de crise: pequeno consumo de ATP pode gerar aumento proporcionalmente grande de AMP. Por isso AMP funciona como sirene energética."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "carga energética",
+      "origem": "carga vem da ideia de quantidade disponível para uso; energética refere-se à capacidade de realizar trabalho",
+      "significado": "estimativa do saldo de fosfatos de alta energia no sistema ATP/ADP/AMP",
+      "explicacao": "A expressão convida a pensar em bateria: não basta saber que existe ATP, é preciso saber a relação entre formas carregadas e descarregadas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: ATP alto é sinal de saldo; AMP alto é sinal de aperto. Muitas enzimas reguladoras escutam exatamente essa diferença."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se a célula não percebesse aumento de AMP?",
+      "resposta": "Ela continuaria gastando como se estivesse confortável enquanto o saldo energético cai. Vias consumidoras permaneceriam ativas, vias produtoras demorariam a responder e a célula ficaria mais vulnerável a falha energética."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "bateria",
+      "conteudo": "Pense no sistema ATP/ADP/AMP como bateria de celular. ATP é carga cheia pronta para uso; ADP é bateria parcialmente descarregada; AMP é alerta vermelho. AMPK é o modo economia de energia: reduz gastos e estimula recarga. A analogia quebra porque ATP não é apenas carga elétrica; é uma molécula reciclada por reações químicas."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo ATP/ADP e sinal de AMP",
+      "descricao": "Esquema do ciclo ATP -> ADP -> ATP na célula, com AMP como alerta de baixa energia e AMPK como resposta reguladora.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. Ciclo central: ATP pagando trabalho vira ADP + Pi; catabolismo refaz ATP. Ao lado, dois ADP gerando ATP + AMP pela adenilato quinase. Destacar AMP ativando AMPK, que freia síntese e estimula produção de ATP. Cores: verde para ATP alto, vermelho para AMP alto.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa lógica volta em exercício, jejum, hipóxia e diabetes. Sempre que ATP cai, a pergunta metabólica é dupla: como repor a moeda e quais gastos precisam ser temporariamente reduzidos?"
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-002",
+        "titulo": "ATP — A Moeda Energética Universal — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "Antes de discutir o ciclo ATP/ADP, é preciso entender ATP como moeda energética intermediária."
+      },
+      {
+        "bloco_id": "s3-bioq2-01-002-01",
+        "titulo": "Por Que a Ligação Fosfoanidrido É 'Rica em Energia'",
+        "relevancia": "base_necessaria",
+        "explicacao": "A reciclagem ATP/ADP depende da compreensão da hidrólise e ressíntese de fosfatos de alta energia."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "AMPK — O Sensor Universal de Energia da Célula",
+        "mecanismo_conexao": "AMP alto ativa AMPK, conectando carga energética a decisões metabólicas.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Exercício Intenso e Fosfocreatina",
+        "mecanismo_conexao": "A fosfocreatina tampona ATP quando a demanda muscular sobe rapidamente.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Isquemia e Falha de Bombas Iônicas",
+        "mecanismo_conexao": "Quando ATP cai, bombas iônicas falham e a célula perde homeostase.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "Outros Compostos de Alta Energia",
+        "tipo_relacao": "COMPLEMENTA",
+        "explicacao": "Fosfocreatina e outros compostos ajudam a sustentar ou transferir energia para ATP."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-002-02-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que a célula recicla ATP em vez de armazenar enormes quantidades dele?",
+      "resposta": "Porque ATP é moeda de uso rápido, não reserva de longo prazo. Reservas grandes ficam em glicogênio e gordura; ATP precisa ser continuamente refeito conforme é gasto.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "atp",
+        "reciclagem"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-002-02-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Por que AMP é um sinal sensível de baixa energia?",
+      "resposta": "Quando ADP aumenta, a adenilato quinase pode formar ATP e AMP a partir de dois ADP. Assim, pequenas quedas de ATP podem amplificar muito o AMP, ativando respostas como AMPK.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "amp",
+        "ampk"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-002-02-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria se ATP baixo não freasse vias consumidoras?",
+      "resposta": "A célula gastaria energia que não consegue repor, agravando a queda de ATP e aumentando risco de falha de bombas, gradientes e síntese essencial.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "contrafactual",
+        "energia"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-002-02-fc04",
+      "tipo": "clinico",
+      "pergunta": "Por que isquemia prejudica rapidamente células de alta demanda energética?",
+      "resposta": "A falta de oxigênio reduz fosforilação oxidativa, ATP cai, bombas iônicas falham e a célula perde gradientes. Neurônios e músculo cardíaco sofrem cedo porque dependem de ATP contínuo.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "isquemia",
+        "atp"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-002-02-caso01",
+      "titulo": "Neurônio sem ATP suficiente para manter gradientes",
+      "apresentacao": "Paciente com evento isquêmico cerebral súbito perde função neurológica focal. A discussão clínica completa pertence à Neurologia, mas a bioquímica inicial é direta: sem oxigênio adequado, a produção de ATP cai e os gradientes iônicos neuronais ficam ameaçados.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Redução do fluxo sanguíneo limita oxigênio e substratos para fosforilação oxidativa."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Neurônios dependem de ATP contínuo para Na+/K+-ATPase e controle de cálcio."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A queda de ATP reduz funcionamento de bombas iônicas e compromete potenciais de membrana."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Surgem déficits neurológicos focais conforme circuitos perdem função."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem reperfusão, a falha energética pode evoluir para lesão celular irreversível."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que carga energética não é abstração: a relação ATP/ADP/AMP define se bombas essenciais conseguem manter a célula viva.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Neurologia",
+        "Fisiologia"
+      ],
+      "diagnostico_revelado": "Isquemia cerebral, usada como correlação de falha energética celular.",
+      "tratamento_resumido": "Atendimento emergencial com protocolos de reperfusão quando indicados; detalhes pertencem aos blocos clínicos de AVC."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-002-02-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'Ciclo ATP/ADP e sinal de AMP'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Seções de ATP, adenilato quinase e regulação por AMP.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "funcao",
     "mecanismo"

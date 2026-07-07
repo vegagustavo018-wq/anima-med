@@ -4,49 +4,207 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Manifestações Clínicas e Complicações do Mioma",
+    "titulo": "Manifestacoes Clinicas e Complicacoes do Mioma",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "miomatose",
+      "sangramento-uterino-anormal",
+      "clinica",
+      "mecanismo"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Sangramento, dor, compressão, infertilidade, degenerações, torção",
-  "narrativa": [],
+  "resumo_conciso": "Miomas podem ser assintomaticos ou causar sangramento menstrual intenso, anemia, dor, compressao urinaria/intestinal, infertilidade, perdas gestacionais e dor aguda por degeneracao ou torcao.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "A maioria dos miomas pequenos pode ser assintomatica. Quando causam sintomas, o padrao depende de localizacao, volume uterino, numero de nodulos e relacao com cavidade endometrial."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sangramento menstrual intenso e a manifestacao mais comum dos miomas submucosos e de alguns intramurais. A consequencia pratica e anemia ferropriva, fadiga, queda de rendimento e piora da qualidade de vida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sintomas compressivos aparecem quando o utero aumenta ou quando o mioma cresce para fora: polaciuria, urgencia urinaria, constipacao, dor lombar, sensacao de peso pelvico e aumento abdominal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Dor pode ocorrer por dismenorreia associada, degeneracao, torcao de mioma pediculado ou compressao. Degeneracao rubra e classica na gestacao e pode causar dor importante."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na fertilidade, os miomas submucosos sao os mais importantes. Intramurais que distorcem cavidade tambem podem reduzir implantacao. Subserosos isolados geralmente têm menor impacto reprodutivo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Durante a gestacao, miomas podem associar-se a dor por degeneracao, abortamento, parto pre-termo, apresentacao fetal anomala e maior chance de cesariana, dependendo de tamanho e local."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O ponto clinico e nao tratar imagem isolada. Mioma assintomatico em paciente sem anemia e sem desejo reprodutivo imediato pode ser observado; mioma pequeno submucoso em paciente sintomatica pode precisar intervencao."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "titulo": "Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-04-006",
+        "titulo": "Adenomiose - Endometrio Invadindo o Miometrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Modulo 6 - Infeccoes do Trato Genital e ISTs",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-025",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Conduta no Sangramento Uterino Anormal — Aguda e Crônica"
+      },
+      {
+        "bloco_id": "s7-go1-03-004",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Manifestacoes Clinicas e Riscos da SOP"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-05-003-fc-01",
+      "pergunta": "Qual complicacao sistemica comum do sangramento por mioma?",
+      "resposta": "Anemia ferropriva.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-003-fc-02",
+      "pergunta": "Que sintomas sugerem efeito de massa?",
+      "resposta": "Polaciuria, urgencia urinaria, constipacao, peso pelvico e aumento abdominal.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-003-fc-03",
+      "pergunta": "Qual mioma mais impacta fertilidade?",
+      "resposta": "Submucoso, especialmente quando distorce a cavidade.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-003-fc-04",
+      "pergunta": "Dor aguda em mioma pediculado sugere o que?",
+      "resposta": "Torcao ou degeneracao, conforme contexto clinico e imagem.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-05-003-cc-01",
+      "titulo": "Anemia recorrente",
+      "apresentacao": "Mulher de 44 anos tem hemoglobina de 8,9 g/dL, fluxo com coagulos e USG com mioma submucoso.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Miomas podem ser assintomaticos ou causar sangramento menstrual intenso, anemia, dor, compressao urinaria/intestinal, infertilidade, perdas gestacionais e dor aguda por degeneracao ou torcao."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Manifestacoes Clinicas e Complicacoes do Mioma, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Miomas podem ser assintomaticos ou causar sangramento menstrual intenso, anemia, dor, compressao urinaria/intestinal, infertilidade, perdas gestacionais e dor aguda por degeneracao ou torcao."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 44 anos tem hemoglobina de 8,9 g/dL, fluxo com coagulos e USG com mioma submucoso."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual complicacao ja esta presente? Anemia por sangramento menstrual intenso; a conduta deve incluir tratamento da anemia e do fator estrutural."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Anemia por sangramento menstrual intenso; a conduta deve incluir tratamento da anemia e do fator estrutural.",
+      "tratamento_resumido": "Anemia por sangramento menstrual intenso; a conduta deve incluir tratamento da anemia e do fator estrutural."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Tabela de sintomas de mioma por localizacao: sangramento, massa, dor, infertilidade e gestacao.",
+        "alt": "Ilustracao educacional para Manifestacoes Clinicas e Complicacoes do Mioma"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_3_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NICE guideline NG88 - Heavy menstrual bleeding: assessment and management",
+      "url": "https://www.nice.org.uk/guidance/ng88",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "FIGO resources - menstrual disorders and abnormal uterine bleeding",
+      "url": "https://www.figo.org/figo-resources/menstrual-disorders",
+      "tipo": "classificacao"
+    }
+  ],
   "_lentes": [
     "clinica",
     "mecanismo"

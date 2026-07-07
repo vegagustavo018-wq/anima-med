@@ -1,54 +1,236 @@
 {
+  "metadata": {
+    "titulo": "Checkpoint G1/S — Rb e p53",
+    "subtitulo": "Por que a célula hesita antes de se duplicar?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 10,
+    "nivel": "CORE",
+    "tags": [
+      "ciclo celular",
+      "oncogenes",
+      "supressores de tumor",
+      "replicação",
+      "p53"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "O checkpoint G1/S é a decisão mais crítica na vida de uma célula somática: o compromisso irrevogável com a divisão. Para evitar que erros no DNA sejam perpetuados, a evolução criou um sistema de travas moleculares de extrema precisão. Central a este processo está a proteína Rb, que atua como um freio físico impedindo o avanço para a fase S, e a p53, uma sentinela que monitora a integridade genômica. Se o DNA está danificado, a p53 interrompe o ciclo e convoca o reparo; se o dano é irreparável, ela induz o suicídio celular. Entender essa dinâmica não é apenas biologia celular básica, é compreender a base molecular do câncer, onde essas travas falham, permitindo que células corrompidas se multipliquem sem controle.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você está prestes a copiar um livro sagrado à mão. O esforço energético e o risco de introduzir erros são imensos. Se o original estiver rasgado ou com manchas de tinta, a cópia será defeituosa. Na biologia, a célula enfrenta esse mesmo dilema no final da fase G1. Ela precisa decidir se possui recursos e, principalmente, se seu 'original' (o DNA) está em condições perfeitas antes de entrar na fase S, onde a replicação acontece."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema da herança corrompida"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A replicação do DNA é um caminho sem volta. Uma vez que a célula começa a sintetizar novas fitas, ela investiu recursos que não podem ser recuperados. Se houver uma quebra na fita de DNA e a célula ignorar isso, a mutação será fixada para sempre em todas as células filhas. Para evitar esse desastre biológico, a natureza desenvolveu um 'ponto de restrição', um portão que permanece trancado até que ordens específicas de liberação sejam dadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução encontrada foi um sistema de 'freio e contra-freio'. O freio é uma proteína volumosa que se senta sobre os genes necessários para a fase S, bloqueando-os fisicamente. Para que esse freio seja solto, ele precisa ser modificado quimicamente (fosforilado) por enzimas específicas chamadas CDKs. É uma coreografia de proteínas e aminoácidos que garante que a porta só abra quando o ambiente for favorável."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Retinoblastoma (Rb)",
+      "origem": "latim/grego",
+      "significado": "Retina + blastos (germe/formação) + oma (tumor)",
+      "explicacao": "A proteína Rb recebeu este nome porque sua ausência foi identificada pela primeira vez em pacientes com um tumor ocular agressivo chamado retinoblastoma. É o protótipo dos genes supressores de tumor."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas quem decide se o freio Rb deve ser solto? Entra em cena uma sentinela molecular. Esta proteína flutua pelo núcleo, sendo constantemente produzida e degradada. No entanto, se ela detecta pontas soltas de DNA (sinal de quebra), ela se estabiliza e começa a agir como um mestre de obras, ativando genes que produzem 'cunhas' moleculares (como a p21) que travam as CDKs. Enquanto a CDK estiver travada, ela não pode fosforilar a Rb, e o ciclo para imediatamente."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A p53 não 'conserta' o DNA diretamente; ela é a gerente que interrompe a fábrica para que os operários do reparo possam trabalhar. Se o conserto demora demais, ela muda o comando para 'autodestruição' (apoptose)."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire e visualize: Rb é o cadeado. E2F (um fator de transcrição) é a chave que Rb esconde. A CDK é a mão que tenta abrir o cadeado. A p53 é o guarda que impede a mão de chegar ao cadeado se vir algo errado."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "p53",
+      "origem": "científica",
+      "significado": "Proteína de 53 kilodaltons",
+      "explicacao": "O nome é puramente descritivo de sua massa molecular aparente em eletroforese. Apesar do nome simples, ela é chamada de 'O Guardião do Genoma' devido à sua importância vital."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Imagine um cofre de banco (Fase S). Para abri-lo, você precisa de uma chave (fator E2F). No estado de repouso, um segurança robusto (Proteína Rb) está segurando a chave no bolso. Para ele soltar a chave, ele precisa ser 'subornado' com fosfatos (fosforilação pelas CDKs). No entanto, um inspetor de segurança (p53) vigia o banco. Se ele encontra um buraco na parede (dano ao DNA), ele algema as mãos de quem ia entregar o suborno (inibe as CDKs via p21), garantindo que a chave nunca saia do bolso do segurança e o cofre permaneça fechado. Mapeamento: Rb = Segurança; E2F = Chave; p53 = Inspetor; DNA danificado = Buraco na parede; p21 = Algemas."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se a proteína Rb perdesse sua capacidade de se ligar ao E2F?",
+      "resposta": "A célula perderia seu principal freio. O fator E2F estaria livre o tempo todo para ativar os genes da fase S. Resultado: a célula se dividiria incessantemente, ignorando sinais de parada, o que é a definição molecular de uma linhagem cancerosa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este sistema se articula com quase todas as vias de sinalização da célula. Fatores de crescimento vindos de fora estimulam a produção de Ciclinas, que ativam as CDKs para vencer a resistência da Rb. Por outro lado, o estresse oxidativo ou radiação ativam a p53. É um cabo de guerra constante entre o desejo de proliferar e a necessidade de preservar a integridade da espécie."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O Cabo de Guerra no Checkpoint G1/S",
+      "descricao": "Esquema mostrando a proteína Rb segurando o E2F, enquanto complexos CDK-Ciclina tentam fosforilá-la. Lateralmente, a p53 surge como uma torre de controle ativando a p21 para bloquear a CDK.",
+      "prompt_ia": "High-quality medical illustration of the G1/S cell cycle checkpoint. In the center, a large protein (Rb) is physically clamping a smaller transcription factor (E2F). On the side, a complex (CDK4/6-Cyclin D) is trying to approach Rb. A glowing DNA strand with a visible break is seen in the background, which triggers a majestic-looking protein (p53). p53 is emitting signals that create a molecular shield (p21) around the CDK complex, preventing it from touching Rb. Vibrant colors, 3D molecular rendering, clean background, educational style.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-06-005-02-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é a relação direta entre a fosforilação da proteína Rb e a entrada na fase S?",
+      "resposta": "A Rb não fosforilada sequestra o fator de transcrição E2F. Quando a Rb é fosforilada pelas CDKs, ela muda de conformação e solta o E2F, que então entra no núcleo para ativar os genes necessários para a replicação do DNA.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Rb",
+        "E2F",
+        "Fosforilação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-02-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria com o ciclo celular se uma mutação impedisse a degradação da p53 mesmo sem dano ao DNA?",
+      "resposta": "O ciclo celular ficaria permanentemente travado em G1. A p53 estável continuaria promovendo a expressão de p21, que inibiria as CDKs, impedindo a liberação do E2F pela Rb, levando possivelmente à senescência ou apoptose celular sem necessidade.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "p53",
+        "p21",
+        "Ciclo Celular"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-02-fc03",
+      "tipo": "por_que",
+      "pergunta": "Por que a p53 é considerada um gene supressor de tumor e não um oncogene?",
+      "resposta": "Porque sua função normal é impedir a proliferação de células anormais (supressão). Oncogenes são genes que, quando hiperativos, promovem o câncer; a p53 causa câncer pela sua perda de função (inatividade).",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "Supressor de Tumor",
+        "Oncologia"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-02-fc04",
+      "tipo": "armadilha",
+      "pergunta": "A p53 repara o DNA diretamente? Explique.",
+      "resposta": "Não. Esta é uma confusão comum. A p53 atua como um fator de transcrição que pausa o ciclo (via p21) e ativa a expressão de enzimas de reparo, mas ela própria não manipula as fitas de DNA.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "p53",
+        "Mecanismo"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-06-005-02-fc05",
+      "tipo": "clinico",
+      "pergunta": "Como o Papilomavírus Humano (HPV) interfere no checkpoint G1/S para induzir câncer cervical?",
+      "resposta": "O HPV produz as proteínas E6 e E7. A E6 promove a degradação da p53, e a E7 se liga à Rb, impedindo-a de segurar o E2F. Isso 'aniquila' os dois principais guardiões do checkpoint simultaneamente.",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "HPV",
+        "Rb",
+        "p53",
+        "Patologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-06-005-02-caso01",
+      "titulo": "O Reflexo Branco no Olhar",
+      "apresentacao": "Uma mãe nota um brilho esbranquiçado (leucocoria) na pupila do filho de 18 meses ao tirar uma foto com flash. No exame oftalmológico, é detectada uma massa tumoral originada na retina. O histórico familiar revela que o pai teve um tumor semelhante na infância e precisou remover um globo ocular.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação germinativa em um alelo do gene RB1 herdada do pai + mutação somática no segundo alelo (Hipótese de Knudson)."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Proteína Rb (Retinoblastoma) nos retinoblastos em desenvolvimento."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Incapacidade da Rb de sequestrar o fator de transcrição E2F."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Proliferação celular descontrolada na retina, formando uma massa que bloqueia o reflexo vermelho normal da pupila."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Tumor maligno intraocular que pode metastatizar se não tratado precocemente."
+        }
+      ],
+      "diagnostico_revelado": "Retinoblastoma Hereditário",
+      "tratamento_resumido": "Quimioterapia sistêmica ou intra-arterial, laserterapia, crioterapia ou, em casos avançados, enucleação (remoção do olho).",
+      "conexao_com_bloco": "Este caso é a demonstração clínica clássica da falha no freio molecular Rb descrito no checkpoint G1/S.",
+      "disciplinas_relacionadas": [
+        "Genética Médica",
+        "Oftalmologia",
+        "Oncologia",
+        "Embriologia"
+      ]
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-06-001",
+        "titulo": "Fases do Ciclo Celular (G1, S, G2, M)",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É necessário entender o que ocorre em G1 e S para compreender por que o controle entre elas é vital."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Inibidores de CDK4/6 no Câncer de Mama",
+        "disciplina": "Farmacologia Clínica",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "Drogas modernas agem reforçando o papel da Rb ao impedir que as CDKs a fosforilem, parando o crescimento tumoral.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Síndrome de Li-Fraumeni",
+        "disciplina": "Genética Médica",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "Mutação germinativa na p53 que predispõe a múltiplos tipos de câncer em idade jovem.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Checkpoint G2/M",
+        "explicacao": "Enquanto o G1/S foca na integridade do DNA antes da cópia, o G2/M foca na integridade da cópia feita e no alinhamento dos cromossomos."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-06-005-02",
   "no_pai_id": "s1-biocel-06-005",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Checkpoint G1/S — Rb e p53",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Guardião do genoma; retinoblastoma e inativação em câncer",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3-flash-preview",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

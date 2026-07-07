@@ -1,55 +1,328 @@
 {
-  "resumo_id": "s1-biocel-01-003-05-01",
-  "no_pai_id": "s1-biocel-01-003-05",
-  "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Bomba Na+/K+ ATPase",
-    "semestre": 1,
+    "subtitulo": "Como a célula mantém sua bateria interna carregada?",
     "disciplina": "biologia celular",
-    "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tags": [
+      "transporte ativo",
+      "homeostase",
+      "gradiente eletroquímico",
+      "fisiologia"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
   },
-  "resumo_conciso": "Ciclo, gradiente eletroquímico, digitálicos como inibidores",
-  "narrativa": [],
+  "resumo_conciso": "Toda célula viva mantém uma composição química interna radicalmente diferente do meio que a cerca — muito potássio dentro, pouco sódio; o oposto do lado de fora. Deixados à própria sorte, esses íons se difundiriam até equilibrar as concentrações dos dois lados, e a célula perderia exatamente o desequilíbrio que a mantém viva e capaz de gerar sinais elétricos. A bomba Na+/K+ ATPase é a solução: uma proteína transmembrana que consome cerca de 30% de todo o ATP celular para expulsar três íons sódio e trazer dois íons potássio a cada ciclo, sempre contra o gradiente natural. Esse desequilíbrio mantido ativamente sustenta o potencial de repouso da membrana, regula o volume celular e é o alvo direto de fármacos digitálicos usados na insuficiência cardíaca.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em uma represa hidrelétrica. A água represada de um lado do dique está em nível muito mais alto do que do outro lado — um desequilíbrio que não existe naturalmente em um rio livre, e que só se sustenta porque bombas e comportas trabalham continuamente para manter aquele nível artificialmente elevado. Se as bombas parassem, a água encontraria seu próprio nível de equilíbrio em poucas horas, e toda a energia potencial armazenada na diferença de altura se perderia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Toda célula do seu corpo mantém uma represa parecida, só que feita de íons em vez de água. Do lado de dentro da membrana, há muito potássio e pouco sódio; do lado de fora, a proporção se inverte. Esse desequilíbrio não é um estado de repouso natural — é um estado ativamente mantido, e mantê-lo custa energia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a célula não pode simplesmente deixar os íons se equilibrarem?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se sódio e potássio fossem deixados livres para se mover apenas pelo gradiente de concentração, eles cruzariam a membrana até que as concentrações dos dois lados se igualassem — exatamente como a água da represa buscaria seu nível comum sem as bombas. Mas a célula precisa desse desequilíbrio para funcionar: precisa de alta concentração interna de potássio para o funcionamento correto de várias enzimas citoplasmáticas, e precisa manter o sódio baixo internamente para evitar dois problemas simultâneos — o inchaço osmótico da célula (porque onde vai o sódio, a água tende a seguir) e a perda da capacidade de gerar sinais elétricos rápidos, essenciais para neurônios e músculos."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, retenha o problema central: manter um gradiente de íons contra a tendência natural de equilíbrio exige trabalho contínuo. Não existe desequilíbrio biológico de graça — alguém precisa pagar a conta energética a cada instante."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula resolve esse problema, e de que ela é feita para isso"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é uma proteína transmembrana que funciona como um motor cíclico: ela usa a energia liberada pela hidrólise do ATP para mudar de forma repetidamente, alternando sua afinidade pelos dois íons e forçando-os a se moverem contra seus próprios gradientes de concentração — vencendo, a cada ciclo, a resistência termodinâmica que naturalmente os empurraria na direção oposta."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Estruturalmente, essa bomba é um complexo proteico com duas subunidades principais: alfa e beta. A subunidade alfa é a protagonista funcional — carrega o sítio de ligação para o ATP, o local onde ocorre a fosforilação temporária que impulsiona a mudança de forma, e os sítios de reconhecimento específicos para o sódio e o potássio. Ao longo do ciclo, essa subunidade alterna entre duas conformações principais: E1, voltada para o citosol, e E2, voltada para o meio extracelular."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esse motor funciona, passo a passo"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Um ciclo completo da bomba Na+/K+ ATPase",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Captura do sódio no lado citosólico",
+          "explicacao": "Na conformação E1, voltada para dentro da célula, a proteína tem alta afinidade pelo sódio. Três íons sódio se ligam aos seus sítios específicos, vindos do citosol onde já estão em concentração relativamente baixa."
+        },
+        {
+          "numero": 2,
+          "titulo": "Fosforilação pelo ATP",
+          "explicacao": "Um ATP se liga ao sítio catalítico e é hidrolisado, transferindo um grupo fosfato para a própria proteína. Essa fosforilação desestabiliza a conformação E1 e desencadeia a mudança para E2."
+        },
+        {
+          "numero": 3,
+          "titulo": "Liberação do sódio e mudança conformacional",
+          "explicacao": "Na conformação E2, voltada para fora, a afinidade pelo sódio despenca — os três íons são liberados no meio extracelular, contra seu próprio gradiente de concentração, que naturalmente os empurraria de volta para dentro."
+        },
+        {
+          "numero": 4,
+          "titulo": "Captura do potássio no lado extracelular",
+          "explicacao": "Ainda na conformação E2, a proteína ganha alta afinidade pelo potássio, capturando dois íons do meio extracelular, onde a concentração de potássio é naturalmente baixa."
+        },
+        {
+          "numero": 5,
+          "titulo": "Desfosforilação e retorno a E1",
+          "explicacao": "A liberação do grupo fosfato desestabiliza E2 e a proteína retorna à conformação E1, liberando os dois íons potássio no citosol e ficando pronta para reiniciar o ciclo capturando mais sódio."
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A bomba é eletrogênica: a cada ciclo, saem 3 íons sódio (carga +3) e entram apenas 2 íons potássio (carga +2), gerando uma perda líquida de uma carga positiva do citosol por ciclo. Esse desequilíbrio de carga contribui diretamente para tornar o interior da célula eletronegativo em relação ao exterior — um dos componentes do potencial de repouso da membrana."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚤",
+      "conteudo": "Imagine uma balsa que faz travessias entre duas margens de um rio, cada travessia consumindo uma quantidade fixa de combustível do motor. Em uma margem lotada de passageiros querendo sair (o citosol, cheio de sódio), a balsa embarca três passageiros por viagem. Na outra margem, quase vazia (o meio extracelular, pobre em potássio), ela embarca apenas dois passageiros de volta. Mapeamento: o combustível gasto a cada travessia = o ATP hidrolisado a cada ciclo; os três passageiros que saem da margem lotada = os três íons sódio expelidos para fora; os dois passageiros que retornam da margem vazia = os dois íons potássio trazidos para dentro; o motor da balsa forçado a trabalhar contra a corrente do rio = a bomba trabalhando contra o gradiente natural de concentração dos dois íons."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "ATPase",
+      "origem": "do inglês/latim ATP (adenosine triphosphate) + o sufixo grego -ase",
+      "significado": "literalmente, 'enzima que age sobre o ATP'",
+      "explicacao": "O sufixo -ase denota, na nomenclatura enzimática, qualquer proteína capaz de catalisar uma reação específica sobre o substrato indicado pelo nome anterior — nesse caso, o ATP. A bomba recebe o nome completo de Na+/K+ ATPase porque cumpre duas funções simultâneas: transporta sódio e potássio através da membrana e, para fazer isso, hidrolisa ATP como fonte de energia — o nome descreve tanto o substrato energético quanto, implicitamente, sua função de transportadora."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a bomba Na+/K+ ATPase parasse de funcionar completamente em uma célula viva, o que aconteceria em sequência?",
+      "resposta": "O gradiente eletroquímico de sódio e potássio começaria a se dissipar imediatamente, já que canais de vazamento continuariam permitindo pequeno fluxo passivo dos íons mesmo sem a bomba ativa. A célula perderia progressivamente seu potencial de repouso. O sódio se acumularia no citosol sem ser removido, e por ser osmoticamente ativo, atrairia água para dentro da célula por osmose. O resultado final seria edema celular progressivo (edema citotóxico), podendo culminar em lise da membrana e morte celular, caso o processo não seja revertido a tempo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa dependência do gradiente de sódio explica por que fármacos digitálicos, usados na insuficiência cardíaca, agem exatamente sobre essa bomba. Ao inibir parcialmente a Na+/K+ ATPase, o gradiente de sódio através da membrana do miócito cardíaco diminui. Isso reduz indiretamente a eficiência do trocador sódio-cálcio (NCX), uma proteína separada que normalmente usa a entrada de sódio a favor do gradiente para expulsar cálcio da célula. Com menos sódio disponível para essa troca, o cálcio se acumula no citosol do miócito — e mais cálcio disponível significa mais força de contração muscular cardíaca (efeito inotrópico positivo)."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo da Bomba Na+/K+",
+      "descricao": "Diagrama esquemático mostrando a proteína inserida na membrana plasmática em suas duas conformações (E1 e E2). Em um lado, 3 íons sódio sendo capturados no citosol; no outro, 2 íons potássio sendo capturados no meio extracelular. Uma molécula de ATP sendo hidrolisada para impulsionar a mudança de forma entre as conformações.",
+      "prompt_ia": "High-quality scientific diagram of the Na+/K+ ATPase pump in a cell membrane, showing both E1 and E2 conformations in sequence. The pump cycle shows 3 Na+ ions being captured on the cytosolic side and pumped out, and 2 K+ ions being captured on the extracellular side and pumped in. ATP molecule shown binding and being hydrolyzed on the cytoplasmic side. Clear labels for cytosol and extracellular space. Minimalist, clean style, textbook biology illustration, professional color palette, neutral adaptive background.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-01-003-05-01-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que a bomba Na+/K+ ATPase é classificada como 'eletrogênica', e por que isso importa para o potencial de membrana?",
+      "resposta": "Ela é eletrogênica porque o transporte é desigual em carga: a cada ciclo, 3 íons sódio (carga +3) saem da célula e apenas 2 íons potássio (carga +2) entram, resultando em uma perda líquida de uma carga positiva do citosol por ciclo completo. Essa perda contínua de carga positiva contribui diretamente para manter o interior da célula eletronegativo em relação ao exterior, sendo um dos componentes que sustentam o potencial de repouso da membrana, ao lado da permeabilidade seletiva ao potássio pelos canais de vazamento.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "eletroquimica",
+        "fisiologia",
+        "potencial-de-membrana"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-01-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria com a regulação osmótica da célula se a bomba Na+/K+ ATPase fosse completamente inibida?",
+      "resposta": "O sódio, que normalmente é continuamente removido do citosol pela bomba, começaria a se acumular no interior da célula por difusão passiva através de canais de vazamento. Como o sódio é um soluto osmoticamente ativo, seu acúmulo atrairia água para dentro da célula por osmose, causando inchaço progressivo (edema citotóxico) e, se sustentado, ruptura da membrana plasmática por excesso de pressão osmótica interna.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "osmose",
+        "homeostase",
+        "edema-citotoxico"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-01-fc03",
+      "tipo": "mecanismo",
+      "pergunta": "Como os fármacos digitálicos aumentam a contratilidade cardíaca através da inibição da bomba Na+/K+ ATPase?",
+      "resposta": "Ao inibir parcialmente a ATPase no miócito cardíaco, o gradiente de sódio através da membrana diminui. O trocador sódio-cálcio (NCX), que depende da entrada de sódio a favor do gradiente para expulsar cálcio da célula, perde eficácia proporcionalmente a essa redução. Com menos cálcio sendo removido, ele se acumula no citosol do miócito, e maior concentração citosólica de cálcio disponível para a maquinaria contrátil resulta em maior força de contração — o efeito inotrópico positivo característico dos digitálicos.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacologia",
+        "coracao",
+        "digitalicos"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-01-fc04",
+      "tipo": "comparacao",
+      "pergunta": "Diferencie transporte passivo de transporte ativo primário, usando a Na+/K+ ATPase como exemplo do segundo.",
+      "resposta": "O transporte passivo move solutos a favor do gradiente de concentração, sem gasto direto de energia celular — a difusão ocorre espontaneamente até o equilíbrio. O transporte ativo primário, como o realizado pela Na+/K+ ATPase, utiliza diretamente a energia da hidrólise do ATP para mover solutos contra o gradiente de concentração, mantendo ativamente um estado de desequilíbrio que jamais ocorreria espontaneamente — é por isso que a interrupção do fornecimento de ATP à célula colapsa rapidamente esse gradiente mantido.",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": [
+        "transporte",
+        "comparacao"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-01-fc05",
+      "tipo": "armadilha",
+      "pergunta": "Verdadeiro ou falso: como a bomba Na+/K+ ATPase transporta os dois íons em quantidades diferentes (3 sódio para fora, 2 potássio para dentro), ela precisa de dois sítios catalíticos distintos, um para cada íon. Justifique.",
+      "resposta": "Falso. A mesma subunidade alfa, com o mesmo sítio catalítico único de ligação ao ATP, alterna sequencialmente entre alta afinidade pelo sódio (na conformação E1) e alta afinidade pelo potássio (na conformação E2). Não são necessários dois sítios catalíticos separados — a mudança conformacional induzida pela fosforilação e desfosforilação do mesmo sítio é o que altera a afinidade da proteína pelos diferentes íons em momentos distintos do ciclo.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha-conceitual",
+        "biologia-molecular"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-01-003-05-01-fc06",
+      "tipo": "clinico",
+      "pergunta": "Paciente idoso com insuficiência cardíaca é tratado com digoxina e, semanas depois, desenvolve náuseas, alterações visuais (halos amarelados) e arritmias cardíacas. Qual o mecanismo que liga o fármaco a esses sintomas de toxicidade?",
+      "resposta": "A digoxina inibe a bomba Na+/K+ ATPase, e sua margem terapêutica é estreita — a mesma inibição que produz o efeito inotrópico positivo desejado, em excesso, compromete ainda mais o gradiente de sódio e potássio em outros tecidos excitáveis, incluindo o sistema de condução cardíaco (predispondo a arritmias) e vias visuais (halos amarelados são um efeito colateral clássico da toxicidade digitálica). O monitoramento rigoroso dos níveis séricos é essencial justamente porque a diferença entre dose terapêutica e dose tóxica é pequena.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "farmacologia",
+        "toxicidade-digitalicos",
+        "clinico"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-01-003-05-01-caso01",
+      "titulo": "Paciente idoso com dispneia e edema de membros inferiores",
+      "apresentacao": "Homem de 72 anos, com diagnóstico prévio de insuficiência cardíaca com fração de ejeção reduzida, procura atendimento por piora da dispneia aos esforços e edema bilateral de membros inferiores nas últimas duas semanas. É iniciado tratamento com um glicosídeo cardíaco derivado de planta (digoxina), além dos medicamentos de base já em uso.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Inibição farmacológica parcial e controlada da bomba Na+/K+ ATPase nos miócitos cardíacos pela digoxina."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Membrana plasmática do miócito cardíaco, especificamente a bomba Na+/K+ ATPase e, indiretamente, o trocador sódio-cálcio (NCX) que depende do gradiente de sódio que ela mantém."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Redução do gradiente de sódio compromete a eficiência do trocador NCX em expulsar cálcio do citosol, levando ao acúmulo intracelular de cálcio disponível para a maquinaria contrátil."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Aumento da força de contração do miocárdio (efeito inotrópico positivo), com melhora da fração de ejeção e redução gradual da congestão pulmonar e periférica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Melhora temporária da perfusão sistêmica e dos sintomas congestivos, desde que a dose seja mantida dentro da estreita margem terapêutica — inibição excessiva da mesma bomba pode desencadear arritmias graves por comprometimento generalizado do gradiente iônico em todo o sistema de condução cardíaco."
+        }
+      ],
+      "diagnostico_revelado": "Uso de digitálico (digoxina) para insuficiência cardíaca com fração de ejeção reduzida",
+      "tratamento_resumido": "Monitoramento rigoroso dos níveis séricos do fármaco e da função renal (que influencia sua eliminação), atenção a sinais precoces de toxicidade digitálica (náuseas, alterações visuais, arritmias) e ajuste cuidadoso de dose, dada a margem terapêutica estreita.",
+      "conexao_com_bloco": "O caso ilustra como a modulação farmacológica de um único transportador de membrana — a bomba Na+/K+ ATPase estudada na narrativa — é capaz de alterar toda uma cascata de sinalização iônica intracelular, com efeito terapêutico direto sobre a força de contração do coração.",
+      "disciplinas_relacionadas": [
+        "fisiologia",
+        "farmacologia",
+        "cardiologia"
+      ]
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-01-003-05",
+        "titulo": "Estrutura da Membrana Plasmática",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A compreensão da bicamada lipídica e da inserção de proteínas transmembrana é essencial para entender como a Na+/K+ ATPase se posiciona e funciona na membrana."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "topico": "Potencial de Ação",
+        "disciplina": "fisiologia",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "O gradiente eletroquímico mantido pela bomba é o combustível básico para a despolarização e repolarização neuronal e muscular.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "topico": "Farmacologia dos Glicosídeos Cardíacos",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "A digoxina e outros digitálicos atuam diretamente sobre esta bomba, ilustrando como a manipulação de um transportador básico tem impacto clínico sistêmico.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "topico": "Insuficiência renal e distúrbios eletrolíticos",
+        "disciplina": "nefrologia",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "A regulação renal do sódio e potássio depende de bombas Na+/K+ ATPase presentes nas células tubulares, cuja disfunção contribui para distúrbios eletrolíticos sistêmicos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-01-003-05-02",
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Bomba SERCA",
+        "explicacao": "Ambas são ATPases de transporte ativo primário contra gradiente, mas a Na+/K+ ATPase atua na membrana plasmática regulando sódio e potássio, enquanto a SERCA atua na membrana do retículo sarcoplasmático regulando cálcio."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "A bomba Na+/K+ ATPase transporta sódio e potássio na mesma proporção (1:1).",
+      "correcao": "O transporte é desigual: 3 íons sódio saem para cada 2 íons potássio que entram, o que torna a bomba eletrogênica.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "A bomba precisa de dois sítios catalíticos distintos para transportar dois íons diferentes.",
+      "correcao": "Um único sítio catalítico na subunidade alfa alterna sua afinidade entre sódio e potássio ao longo do ciclo conformacional (E1/E2).",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "A inibição da bomba por digitálicos é sempre segura, desde que o paciente tenha insuficiência cardíaca.",
+      "correcao": "A margem terapêutica dos digitálicos é estreita; inibição excessiva da mesma bomba em outros tecidos excitáveis pode causar arritmias graves e outros sinais de toxicidade.",
+      "armadilha_em_flashcard": "sim"
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-biocel-01-003-05-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "resumo_id": "s1-biocel-01-003-05-01",
+  "no_pai_id": "s1-biocel-01-003-05",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "fisiologia",
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
+    "nivel_confianca": "estudo"
+  }
 }

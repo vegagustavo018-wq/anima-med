@@ -2,53 +2,339 @@
   "resumo_id": "s4-farma1-01-006-02",
   "no_pai_id": "s4-farma1-01-006",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-01-003-01",
+    "s4-farma1-01-006-01"
+  ],
   "metadata": {
     "titulo": "Clearance (Depuração)",
+    "subtitulo": "Como medir a eficiência de um órgão em limpar o sangue de um fármaco?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "clearance",
+      "depuracao",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Conceito de clearance; relação com Vd e t½; clearance de órgão",
-  "narrativa": [],
+  "resumo_conciso": "A visão geral dos parâmetros cinéticos já anunciou que era preciso um número para a eficiência de depuração do organismo. Esse número é o clearance: o volume de sangue (ou plasma) que um órgão consegue limpar completamente do fármaco por unidade de tempo. Não é a quantidade de fármaco removida — é o volume virtual de onde o fármaco desaparece por completo. Essa forma estranha de medir existe porque a concentração no sangue está sempre mudando, e uma taxa de remoção em massa (miligramas por hora) mudaria junto, sem nunca virar uma propriedade estável do órgão. O clearance resolve isso ao expressar a eficiência como proporção, não como massa absoluta — e por isso permanece constante mesmo quando a concentração cai. Fígado e rim são os dois grandes depuradores do corpo, e o clearance de cada um se soma ao clearance total do organismo. Esse número, junto ao volume de distribuição, é o que determina a meia-vida do fármaco: quanto maior o clearance para um mesmo volume de distribuição, mais rápido o fármaco desaparece do corpo. É por isso que insuficiência renal ou hepática — que reduzem o clearance — obrigam a médica a espaçar ou reduzir a dose, sob risco de acúmulo tóxico.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Uma médica quer saber uma coisa muito prática: o rim de um paciente com insuficiência renal ainda consegue eliminar um antibiótico com a mesma eficiência de um rim saudável? A pergunta parece simples, mas esbarra num problema de medida. Se ela apenas contar quantos miligramas do fármaco saem na urina por hora, esse número vai depender de quanto fármaco havia no sangue naquele momento — mais concentração no sangue, mais miligramas saindo, mesmo que o rim não tenha mudado nada na sua eficiência real."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: como medir eficiência sem ela mudar a cada instante?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A concentração plasmática de um fármaco está sempre caindo depois de uma dose. Se a eficiência de um órgão fosse medida em massa removida por tempo (mg/h), esse valor cairia junto com a concentração — não porque o órgão ficou pior, mas porque sobrou menos fármaco para remover. Uma grandeza que muda a cada instante, mesmo quando o órgão continua igual, não serve para comparar pacientes, nem para calcular uma dose de manutenção."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É preciso, então, de uma medida de eficiência que não dependa de quanto fármaco está presente no sangue agora — que capture só a competência do órgão em depurar, isolada da concentração momentânea."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema não é 'quanto fármaco o rim removeu nesta hora' — isso varia com a concentração. É 'qual é a eficiência intrínseca do rim em remover esse fármaco', um número que deveria continuar igual seja a concentração alta ou baixa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, em princípio"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi trocar a pergunta 'quantos miligramas saíram?' pela pergunta 'que volume de sangue foi completamente limpo do fármaco?'. Esse é o clearance: não uma quantidade de substância, mas um volume, expresso em mililitros ou litros por minuto (ou por hora). Dizer que o clearance renal da creatinina é 120 mL/min não significa que 120 mL de sangue realmente passam pelo rim e saem vazios — significa que a taxa de remoção observada equivale, matematicamente, a depurar por completo 120 mL de plasma a cada minuto, enquanto o restante do volume sanguíneo continua com a mesma concentração de antes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa é a virada conceitual: o clearance normaliza a remoção pela concentração. Por isso, mesmo que a concentração plasmática caia pela metade, o clearance de um órgão saudável não muda — porque ele é uma razão (volume depurado por tempo), não uma massa absoluta."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Clearance é o volume de plasma inteiramente depurado do fármaco por unidade de tempo — uma medida de eficiência do órgão que permanece estável mesmo quando a concentração do fármaco no sangue está caindo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essa grandeza é feita"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O clearance de um fármaco no organismo inteiro (clearance total ou sistêmico) é a soma dos clearances de cada órgão capaz de eliminá-lo — principalmente fígado (clearance hepático, por metabolismo e excreção biliar) e rim (clearance renal, por filtração glomerular, secreção e reabsorção tubular). Outros órgãos podem contribuir de forma menor, como pulmão para anestésicos voláteis. Cada clearance de órgão depende de dois fatores: o fluxo sanguíneo que chega até aquele órgão e a fração do fármaco que o órgão consegue extrair do sangue que passa por ele a cada passagem — a chamada razão de extração."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um órgão com razão de extração próxima de 1 remove quase todo o fármaco que passa por ele numa única vez; nesse caso, o clearance daquele órgão se aproxima do próprio fluxo sanguíneo que o irriga, e a eliminação passa a depender mais do quanto sangue chega do que da capacidade enzimática. Um órgão com razão de extração baixa remove só uma fração pequena a cada passagem, e o clearance passa a depender mais da capacidade intrínseca (enzimas, transportadores) do que do fluxo. Essa distinção explica por que alguns fármacos têm clearance hepático sensível a alterações no fluxo sanguíneo do fígado (como no choque ou na insuficiência cardíaca), enquanto outros são sensíveis principalmente a indução ou inibição enzimática."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em conjunto com meia-vida e volume de distribuição"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O clearance sozinho não determina quanto tempo o fármaco permanece no corpo — ele precisa ser combinado com o volume de distribuição (Vd), a grandeza tratada em bloco próprio (s4-farma1-01-003-01), que descreve o espaço aparente que o fármaco ocupa no organismo. A relação entre os três parâmetros é o núcleo mecanístico de toda essa família de conceitos: t½ = 0,693 × Vd / Clearance."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa fórmula não é só uma conta para decorar — ela expressa uma lógica muito concreta. Imagine dois fármacos com o mesmo clearance (o rim ou fígado depura o mesmo volume de plasma por minuto para ambos), mas um deles tem Vd enorme (está espalhado por todo o corpo, escondido em tecidos, com pouca fração circulando no sangue) e o outro tem Vd pequeno (fica quase todo no plasma). O órgão depurador só consegue limpar o que está passando por ele no sangue a cada instante. Se o fármaco de Vd alto tem a maior parte de suas moléculas fora do compartimento sanguíneo, o processo de eliminação depende de essas moléculas voltarem ao sangue para, só então, serem depuradas — e isso demora. Por isso, quanto maior o Vd para um mesmo clearance, maior a meia-vida: há mais fármaco 'escondido' que precisa retornar à circulação antes de ser eliminado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Da mesma forma, para um mesmo Vd, quanto maior o clearance, menor a meia-vida — o órgão depurador está limpando um volume maior de plasma por minuto, então o que está circulando desaparece mais rápido. O número 0,693 na fórmula é apenas o logaritmo natural de 2, a constante matemática que converte uma queda exponencial contínua em 'tempo para cair pela metade' — a mesma lógica de decaimento vista em qualquer processo de primeira ordem. A meia-vida, portanto, não é uma propriedade independente: é a razão entre o quanto o fármaco está espalhado (Vd) e a eficiência com que ele é removido do compartimento sanguíneo (clearance)."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: meia-vida não é um número solto — ela nasce do encontro entre onde o fármaco está (Vd) e com que eficiência ele é limpo do sangue (clearance). Dois fármacos podem ter a mesma meia-vida por caminhos opostos: um com Vd baixo e clearance baixo, outro com Vd alto e clearance alto."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que o clearance se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O clearance também é o parâmetro que permite calcular a dose de manutenção de um esquema terapêutico contínuo: para manter a concentração plasmática estável em estado de equilíbrio, a taxa de administração do fármaco precisa igualar exatamente a taxa de eliminação, que é o produto entre o clearance e a concentração-alvo desejada. Esse cálculo é o que orienta, por exemplo, a velocidade de uma infusão intravenosa contínua."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como o clearance total soma as contribuições de fígado e rim, doenças que comprometem qualquer um desses órgãos reduzem o clearance sistêmico e, pela própria fórmula, aumentam a meia-vida — o fármaco permanece mais tempo no corpo, aumentando o risco de acúmulo e toxicidade se a dose ou o intervalo não forem ajustados. É esse raciocínio que conecta diretamente este bloco ao ajuste de dose em insuficiência renal e hepática, já antecipado como conexão futura no bloco-pai."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "clearance",
+      "origem": "do inglês to clear (limpar, desobstruir), com o sufixo -ance formando substantivo de ação",
+      "significado": "literalmente, 'ato de limpar' — em farmacocinética, o volume de um fluido biológico inteiramente limpo de uma substância por unidade de tempo",
+      "explicacao": "O termo foi importado da fisiologia renal do início do século XX, quando fisiologistas como Donald Van Slyke usaram 'clearance' para descrever a eficiência do rim em depurar substâncias endógenas como a ureia e, depois, a creatinina — o clearance de creatinina se tornou o exame clássico de função renal. A farmacocinética clínica, ao se formalizar nas décadas de 1960-70, emprestou o mesmo conceito e o mesmo nome para descrever a depuração de fármacos, generalizando uma ideia que nasceu para medir um único órgão (o rim) para qualquer via de eliminação do corpo. Em português, 'depuração' é o termo correspondente, mas 'clearance' permanece de uso corrente na literatura médica e nas bulas, um anglicismo que sobreviveu à tradução por já estar consagrado antes que o termo em português se popularizasse."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🧹",
+      "conteudo": "Imagine uma piscina com uma máquina de filtragem que fica ligada continuamente. A máquina não retira uma quantidade fixa de sujeira por hora — ela processa um certo **volume de água por minuto**, deixando esse volume perfeitamente limpo antes de devolvê-lo à piscina. Se a piscina está muito suja, a máquina filtra o mesmo volume e remove mais sujeira em termos absolutos; se está quase limpa, filtra o mesmo volume e remove pouca sujeira absoluta — mas a **eficiência da máquina, medida em litros processados por minuto, não muda**. Esse volume processado por minuto é o clearance. O tamanho da piscina inteira (o volume de distribuição) importa para saber quanto tempo total vai levar para toda a água passar pela máquina pelo menos uma vez — uma piscina maior demora mais para ficar limpa com a mesma máquina. A analogia quebra num ponto: na piscina real, a água se mistura uniformemente o tempo todo; no corpo, o fármaco pode ficar temporariamente 'preso' em tecidos periféricos, fora do alcance imediato da máquina de filtragem, o que é justamente uma das razões pelas quais o volume de distribuição de um fármaco pode ser matematicamente maior que o volume real de água corporal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Um caso para fechar: ajustando a dose ao clearance renal"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere um antibiótico eliminado quase exclusivamente por filtração renal, com clearance normal de 100 mL/min numa pessoa com função renal preservada. Num paciente com insuficiência renal crônica, o clearance de creatinina cai para 25 mL/min — um quarto do normal. Se esse antibiótico for eliminado por um mecanismo semelhante ao da creatinina, o clearance do fármaco também cai proporcionalmente, e a fórmula t½ = 0,693 × Vd / Clearance mostra imediatamente a consequência: mantendo o Vd constante, a meia-vida quadruplica. Se a dose e o intervalo não forem ajustados, a concentração plasmática vai se acumular a cada dose subsequente, elevando o risco de toxicidade — em muitos antibióticos, ototoxicidade ou nefrotoxicidade adicional. A resposta clínica correta não é abandonar o fármaco, mas recalcular o clearance real do paciente (a partir da depuração de creatinina estimada) e reduzir a dose de manutenção ou espaçar o intervalo entre doses proporcionalmente — exatamente o tipo de ajuste que protocolos hospitalares de antibioticoterapia trazem em tabelas por faixa de função renal."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Clearance como volume depurado por tempo",
+      "descricao": "Diagrama esquemático mostrando um compartimento único representando o plasma, com uma seta de entrada rotulada 'fármaco administrado' e uma seta de saída passando por um órgão estilizado (rim de um lado, fígado do outro), rotulada 'clearance = volume de plasma depurado por minuto'. Um pequeno gráfico auxiliar ao lado mostra a fórmula t½ = 0,693 × Vd / Clearance com Vd e Clearance destacados em cores diferentes, ligados por setas a uma representação simplificada de dois cenários (Vd alto vs. Vd baixo) resultando em meias-vidas diferentes para o mesmo clearance. Estilo esquemático de livro didático farmacológico, cores diferenciando cada elemento, legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Painel principal: um compartimento circular simples rotulado 'PLASMA' com concentração representada por pontos dispersos; uma seta de entrada rotulada 'dose administrada'; uma seta de saída direcionada a dois ícones estilizados lado a lado — um rim e um fígado — com a legenda 'CLEARANCE: volume de plasma depurado por unidade de tempo (mL/min)'. Painel secundário abaixo: fórmula matemática destacada 't½ = 0,693 × Vd / Clearance' com 'Vd' em uma cor e 'Clearance' em outra cor, e duas setas menores apontando para dois mini-diagramas comparativos — um mostrando um corpo com fármaco concentrado no sangue (Vd baixo, meia-vida curta) e outro mostrando um corpo com fármaco espalhado pelos tecidos (Vd alto, meia-vida longa), para o mesmo valor de clearance. Paleta de cores suaves e distintas, texto em português, sem elementos fotorrealistas, alto contraste, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-006",
+        "titulo": "Parâmetros Cinéticos — Quantificar a Jornada (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco desenvolve em detalhe um dos parâmetros anunciados na visão geral: a eficiência de depuração do organismo, aqui formalizada como clearance."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Ajuste de dose de antibióticos e outros fármacos em insuficiência renal e hepática",
+        "mecanismo_conexao": "A redução do clearance de órgão nessas condições, pela relação t½ = 0,693 × Vd / Clearance, aumenta a meia-vida e exige recálculo da dose de manutenção ou do intervalo entre doses.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Cálculo de dose de manutenção em infusão intravenosa contínua",
+        "mecanismo_conexao": "A taxa de infusão necessária para manter uma concentração-alvo em estado de equilíbrio é o produto direto entre o clearance do fármaco e a concentração desejada.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-003-01",
+        "tipo_relacao": "PRE_REQUISITO_CONCEITUAL",
+        "explicacao": "O volume de distribuição (Vd) é o segundo termo indispensável da equação da meia-vida. Clearance sozinho não determina o tempo de permanência do fármaco no corpo — só faz sentido combinado ao Vd."
+      },
+      {
+        "bloco_id": "s4-farma1-01-006-01",
+        "tipo_relacao": "CONSEQUENCIA_DIRETA",
+        "explicacao": "A meia-vida (t½) é matematicamente derivada do clearance e do Vd pela fórmula t½ = 0,693 × Vd / Clearance. Este bloco fornece o denominador dessa razão; o bloco de meia-vida explora as consequências práticas do resultado (regra das 4-5 meias-vidas, acúmulo, washout)."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-006-02-fc01",
+      "pergunta": "Por que o clearance é definido como um volume depurado por tempo, e não como uma massa de fármaco removida por tempo?",
+      "resposta": "Porque a massa removida por tempo varia com a concentração plasmática do momento — cai junto com ela, mesmo que a eficiência real do órgão não tenha mudado. Definir o clearance como volume de plasma inteiramente depurado por unidade de tempo torna a grandeza uma razão, independente da concentração momentânea, e por isso estável o suficiente para caracterizar a eficiência intrínseca de um órgão e ser usada em cálculos de dose.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "clearance",
+        "farmacocinetica",
+        "conceito"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-02-fc02",
+      "pergunta": "Na fórmula t½ = 0,693 × Vd / Clearance, explique por que um Vd alto aumenta a meia-vida, mesmo para um clearance constante.",
+      "resposta": "O órgão depurador só consegue limpar o fármaco que está circulando no compartimento sanguíneo a cada instante. Se o Vd é alto, a maior parte das moléculas do fármaco está distribuída nos tecidos, fora do sangue, e precisa retornar à circulação antes de ser depurada. Esse retorno é o fator limitante: quanto mais fármaco 'escondido' fora do sangue, mais tempo o processo total de eliminação leva, mesmo que a eficiência de depuração do órgão (clearance) não tenha mudado.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "clearance",
+        "volume-de-distribuicao",
+        "meia-vida"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-02-fc03",
+      "pergunta": "Dois fármacos, A e B, têm a mesma meia-vida. O fármaco A tem clearance baixo e Vd baixo; o fármaco B tem clearance alto e Vd alto. Isso é matematicamente possível? Justifique.",
+      "resposta": "Sim. A meia-vida é a razão Vd/Clearance (multiplicada por 0,693). Se ambos os termos aumentam ou diminuem na mesma proporção, a razão entre eles permanece igual, resultando na mesma meia-vida por caminhos fisiologicamente opostos. O fármaco A permanece pouco no sangue e é pouco removido por passagem; o fármaco B está muito espalhado pelos tecidos mas é removido de forma muito eficiente do sangue circulante. O número final (meia-vida) é idêntico, mas o comportamento clínico dos dois fármacos — por exemplo, resposta a insuficiência renal — pode ser bem diferente, porque cada termo reage de forma distinta a uma doença de órgão.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "clearance",
+        "meia-vida",
+        "raciocinio-quantitativo"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-02-fc04",
+      "pergunta": "A palavra 'clearance' vem do inglês to clear. Qual foi a origem histórica desse termo em medicina e por que ele persiste em português mesmo havendo tradução ('depuração')?",
+      "resposta": "O termo nasceu na fisiologia renal do início do século XX, quando Donald Van Slyke o usou para descrever a eficiência do rim em depurar substâncias como ureia e creatinina — origem do clássico 'clearance de creatinina' como exame de função renal. A farmacocinética clínica emprestou o mesmo conceito nas décadas de 1960-70 para qualquer via de eliminação de fármacos. Em português, 'depuração' é o termo correto, mas 'clearance' já estava consagrado na literatura e nas bulas antes da tradução se popularizar, e por isso os dois termos convivem na prática clínica brasileira.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "clearance",
+        "etimologia",
+        "historia-da-medicina"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-006-02-fc05",
+      "pergunta": "Um paciente com insuficiência renal tem seu clearance de creatinina reduzido de 100 mL/min para 25 mL/min. Supondo que o fármaco X seja eliminado majoritariamente por mecanismo renal semelhante e que seu Vd não se altere, o que acontece com a meia-vida desse fármaco e qual a implicação prática para a prescrição?",
+      "resposta": "Como t½ = 0,693 × Vd / Clearance e o Vd permanece constante, uma redução do clearance para um quarto do valor original quadruplica a meia-vida do fármaco. Na prática, isso significa que, mantida a mesma dose e o mesmo intervalo, o fármaco vai se acumular progressivamente a cada administração, aumentando o risco de toxicidade. A conduta correta é recalcular o clearance real do paciente (estimado a partir da função renal) e ajustar a dose de manutenção para baixo ou espaçar o intervalo entre doses proporcionalmente.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "clearance",
+        "insuficiencia-renal",
+        "ajuste-de-dose"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-006-02-caso01",
+      "titulo": "Antibiótico acumulando em paciente com insuficiência renal crônica",
+      "apresentacao": "Mulher de 71 anos, com doença renal crônica estágio 4 (clearance de creatinina estimado em 22 mL/min), é internada por pneumonia e recebe um antibiótico de eliminação predominantemente renal, na mesma dose e intervalo padrão usados para adultos com função renal normal. No terceiro dia de tratamento, a paciente desenvolve zumbido e piora da função renal basal, levantando suspeita de toxicidade cumulativa do fármaco.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A prescrição inicial usou a dose padrão calculada para clearance renal normal (em torno de 100-120 mL/min), sem ajuste para o clearance real da paciente, quatro a cinco vezes menor."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O clearance renal do fármaco, que depende diretamente da filtração glomerular e da secreção tubular comprometidas pela doença renal crônica, está drasticamente reduzido em relação ao valor assumido na dose padrão."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Pela relação t½ = 0,693 × Vd / Clearance, a meia-vida do fármaco na paciente é várias vezes maior que a meia-vida populacional usada para definir o intervalo padrão entre doses. Cada nova dose é administrada antes que a anterior tenha sido significativamente eliminada, e a concentração plasmática sobe de forma cumulativa a cada administração."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Zumbido (sinal precoce de ototoxicidade, comum em antibióticos com essa característica cinética) e piora da função renal, refletindo concentrações plasmáticas muito acima da faixa terapêutica pretendida."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem correção, o quadro evolui para toxicidade mais grave e possível lesão renal e auditiva permanentes. A conduta correta é recalcular a dose de manutenção (ou o intervalo entre doses) proporcionalmente ao clearance renal real da paciente, e não à média populacional — o mesmo raciocínio quantitativo que orienta as tabelas de ajuste de antibioticoterapia por faixa de função renal usadas na prática hospitalar."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática, exatamente o mecanismo central deste bloco: o clearance não é um número fixo e universal — é uma propriedade do órgão depurador, que muda com a doença. E porque ele entra na fórmula da meia-vida como denominador, sua redução altera de forma previsível (e calculável) o tempo de permanência do fármaco no corpo, transformando um conceito teórico em decisão concreta de ajuste de dose à beira do leito.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "nefrologia"
+      ],
+      "diagnostico_revelado": "Acúmulo tóxico de antibiótico por ausência de ajuste de dose ao clearance renal reduzido (insuficiência renal crônica estágio 4).",
+      "tratamento_resumido": "Suspensão temporária ou redução imediata da dose, recálculo do intervalo entre doses proporcional ao clearance de creatinina estimado, monitorização de níveis séricos quando disponível, e avaliação otológica e renal seriada até resolução dos sintomas."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-006-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "molecular"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics II: Distribution and Elimination of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

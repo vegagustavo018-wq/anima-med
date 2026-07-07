@@ -2,54 +2,357 @@
   "resumo_id": "s4-farma1-03-003-03",
   "no_pai_id": "s4-farma1-03-003",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-03-003-01"
+  ],
   "metadata": {
     "titulo": "Inibidores da Recaptação e Simpaticomiméticos Indiretos",
+    "subtitulo": "Em vez de bater na porta, por que não deixar a chave girando mais tempo na fechadura?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "adrenergico",
+      "simpaticomimetico-indireto",
+      "recaptacao-de-noradrenalina",
+      "cocaina",
+      "anfetamina",
+      "triciclicos",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Aumentam noradrenalina na fenda; ação indireta; anfetamina, cocaína, tricíclicos",
-  "narrativa": [],
+  "resumo_conciso": "Todo o bloco irmão anterior desta família mostrou agonistas adrenérgicos que imitam a noradrenalina batendo diretamente no receptor. Mas existe uma segunda estratégia, mais indireta: em vez de ativar o receptor por fora, aumentar a quantidade de noradrenalina que o próprio organismo já libera na fenda sináptica, e deixá-la lá por mais tempo. É isso que fazem os simpaticomiméticos indiretos. A cocaína bloqueia o transportador de recaptação de noradrenalina (NET), impedindo que o neurônio recolha o mensageiro já liberado — a molécula fica mais tempo disponível para o receptor. A anfetamina faz o mesmo bloqueio, mas soma um segundo mecanismo: entra no terminal nervoso e força a liberação de noradrenalina estocada nas vesículas, mesmo sem potencial de ação. Os antidepressivos tricíclicos bloqueiam a recaptação de noradrenalina e de serotonina, prolongando os dois sinais ao mesmo tempo — um mecanismo pensado para o humor, mas que carrega os mesmos efeitos cardiovasculares adrenérgicos como consequência inevitável. Nos três casos, o efeito final se parece com o de um agonista direto (taquicardia, hipertensão, vasoconstrição), mas a origem é indireta: nenhuma dessas moléculas ativa o receptor pessoalmente, elas manipulam a disponibilidade do mensageiro endógeno. Essa distinção importa na prática clínica porque explica por que a intoxicação por cocaína ou por simpaticomiméticos indiretos produz uma tempestade adrenérgica sistêmica, e não um efeito seletivo por um único receptor.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior desta família mostrou uma estratégia direta: um fármaco que se parece o suficiente com a noradrenalina para encaixar no receptor e ativá-lo sozinho, sem depender de nada que o corpo já esteja fazendo. É uma solução eficiente, mas exige desenhar uma molécula nova, capaz de imitar com precisão a forma do mensageiro natural em cada subtipo de receptor que se quer atingir."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existe, porém, um caminho mais barato do ponto de vista químico. O organismo já libera noradrenalina o tempo todo, em toda sinapse simpática ativa. Por que fabricar um agonista do zero, quando o próprio mensageiro endógeno, se ficasse mais tempo disponível ou fosse liberado em maior quantidade, produziria exatamente o efeito adrenérgico desejado?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, exatamente, essa estratégia resolve"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ativar diretamente um receptor de forma seletiva é tecnicamente difícil: exige uma molécula desenhada para encaixar bem num subtipo específico (alfa ou beta, e dentro deles um subtipo mais fino) e mal nos outros. Cada nova seletividade desejada é, em geral, uma nova molécula a ser desenvolvida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há uma alternativa que dispensa esse desenho fino: em vez de competir com a noradrenalina pelo receptor, atuar em uma etapa anterior — na disponibilidade do próprio mensageiro na fenda. Se o neurônio já libera noradrenalina fisiologicamente a cada potencial de ação, bastaria impedir que ela fosse removida rápido demais, ou forçar sua saída antecipada das vesículas, para obter mais estimulação adrenérgica sem tocar diretamente no receptor."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema aqui não é 'como ativar o receptor', mas 'como aumentar a quantidade de noradrenalina disponível para o receptor que já existe'. É uma mudança de alvo — da fechadura para o mensageiro que já está circulando perto dela."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, sem nomear ainda os fármacos"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução age sobre etapas do próprio ciclo de vida do neurotransmissor: ou se bloqueia a proteína que recolhe a noradrenalina de volta para dentro do neurônio depois da liberação, ou se força a saída antecipada do estoque vesicular independentemente do potencial de ação, ou as duas coisas ao mesmo tempo. Em qualquer uma dessas rotas, o receptor pós-sináptico permanece intocado pelo fármaco — ele continua reconhecendo apenas a noradrenalina de sempre. O que muda é quanto tempo, e em que quantidade, essa noradrenalina fica disponível na fenda."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A assinatura desta classe: o fármaco não se liga ao receptor adrenérgico. Ele manipula a disponibilidade da noradrenalina endógena — bloqueando sua remoção ou forçando sua liberação — e é essa noradrenalina, não o fármaco, quem efetivamente ativa o receptor."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Já foi visto, ao detalhar o ciclo de neurotransmissão adrenérgica, que o término do sinal da noradrenalina depende majoritariamente de um transportador de recaptação (NET) que a recupera intacta de volta para dentro do terminal que a liberou. Essa é exatamente a proteína que a **cocaína** bloqueia: ao ocupar o NET, ela impede a recaptação, e a noradrenalina liberada por um potencial de ação normal permanece na fenda por mais tempo, continuando a estimular os receptores alfa e beta locais além do intervalo fisiológico esperado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A **anfetamina** faz o mesmo bloqueio do NET, mas acrescenta um segundo mecanismo que a cocaína não tem: ela entra no terminal nervoso (usando o próprio NET como porta de entrada, de forma inversa ao seu papel fisiológico) e, uma vez dentro, promove a saída de noradrenalina das vesículas de estoque para o citoplasma e desta para a fenda — uma liberação que não depende de potencial de ação nem de influxo de cálcio. É por isso que o efeito estimulante da anfetamina tende a ser mais robusto e sustentado que o da cocaína: ela não apenas atrasa a remoção do mensageiro, ela também aumenta ativamente a oferta dele."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os **antidepressivos tricíclicos** (como a amitriptilina e a imipramina) bloqueiam o mesmo transportador de recaptação de noradrenalina, mas de forma menos seletiva: eles também bloqueiam o transportador de recaptação de serotonina. O objetivo terapêutico pretendido é prolongar a serotonina e a noradrenalina nas sinapses centrais associadas ao humor. Mas o bloqueio do NET não distingue sinapse central de sinapse periférica — e é essa falta de distinção que faz o mesmo fármaco, pensado para o cérebro, prolongar também a noradrenalina nas terminações simpáticas periféricas que regulam coração e vasos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] Os tricíclicos têm mecanismo farmacológico adicional relevante (bloqueio de receptores muscarínicos, histamínicos H1 e canais de sódio cardíacos) que não pertence a este bloco por não decorrer da via de recaptação de noradrenalina; esses efeitos explicam parte da toxicidade em superdosagem e serão tratados nos blocos de farmacologia do sistema nervoso central."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Você já tem os três exemplos: cocaína bloqueia só a recaptação; anfetamina bloqueia a recaptação e ainda força a liberação vesicular; tricíclicos bloqueiam a recaptação de noradrenalina e de serotonina juntas. Nos três, o receptor adrenérgico continua sendo ativado pela noradrenalina do próprio corpo — nenhuma das três moléculas o ativa diretamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em movimento — e por que a clínica importa"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere alguém que usa cocaína. O NET está bloqueado em todas as sinapses simpáticas do corpo simultaneamente — não apenas em uma. Cada vez que um potencial de ação simpático dispara naturalmente (e ele dispara continuamente, regulando o tônus vascular basal, a frequência cardíaca, entre outros), a noradrenalina liberada não é removida na velocidade normal. O resultado não é um efeito isolado num único órgão, mas uma amplificação de todos os efeitos adrenérgicos que já estavam acontecendo: mais estímulo beta-1 no coração (taquicardia, aumento de contratilidade, maior consumo de oxigênio do miocárdio), mais estímulo alfa-1 nos vasos (vasoconstrição, hipertensão, redução do fluxo coronariano justamente quando o coração está consumindo mais oxigênio)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa combinação — coração pedindo mais oxigênio e artérias coronárias se contraindo ao mesmo tempo — é o que torna a intoxicação aguda por cocaína uma emergência potencialmente letal mesmo em pessoas jovens e sem doença coronariana prévia: pode ocorrer vasoespasmo coronariano, isquemia e infarto, além de arritmias ventriculares, tudo decorrente do excesso de noradrenalina não removida agindo sobre receptores adrenérgicos perfeitamente normais."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É importante notar o contraste com o irmão anterior desta família: um agonista direto ativa seletivamente o subtipo de receptor para o qual foi desenhado, produzindo um efeito relativamente previsível e limitado. Um simpaticomimético indireto amplifica tudo o que já está sendo sinalizado naquele momento, em todos os subtipos de receptor que a noradrenalina alcança — não há seletividade de órgão, porque o alvo do fármaco não é o receptor, é o transportador presente em toda terminação noradrenérgica do corpo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa distinção também explica um detalhe farmacológico frequentemente citado: os simpaticomiméticos indiretos dependem de haver estoque de noradrenalina nas vesículas para funcionar. Se esse estoque estiver depletado (por uso repetido e recente da própria substância, ou por outro fármaco que já tenha esvaziado as vesículas), o efeito indireto se esgota — não há mais mensageiro endógeno para manipular. Um agonista direto não sofre dessa limitação, porque não depende do estoque neuronal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco é o contraponto indireto do bloco irmão de agonistas adrenérgicos diretos: os dois produzem estimulação adrenérgica, mas por portas diferentes — o direto entra pelo receptor, o indireto entra pela disponibilidade do mensageiro endógeno. Essa distinção retoma diretamente o ciclo de síntese, armazenamento, liberação e término apresentado na neurotransmissão autonômica: os simpaticomiméticos indiretos atuam exatamente nos elos de liberação vesicular (anfetamina) e término por recaptação (cocaína, anfetamina, tricíclicos) descritos ali como pontos de ataque farmacológico plausíveis."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Clinicamente, essa classe conecta a farmacologia adrenérgica a duas áreas que parecem distantes à primeira vista: a psiquiatria (tricíclicos como antidepressivos, embora hoje menos usados por causa exatamente destes efeitos cardiovasculares) e a toxicologia de emergência (intoxicação por estimulantes e a síndrome adrenérgica que ela provoca). Reconhecer que o mecanismo comum é 'mais noradrenalina disponível na fenda', e não 'ativação direta do receptor', é o que permite ao médico prever, diante de qualquer intoxicação por um simpaticomimético indireto desconhecido, um padrão clínico semelhante — taquicardia, hipertensão, agitação, hipertermia — sem precisar memorizar cada substância isoladamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "simpaticomimético",
+      "origem": "do grego sympáscho (sofrer/sentir junto, raiz de 'simpático' aplicada ao sistema nervoso autônomo) + mimētikós (que imita)",
+      "significado": "literalmente, 'que imita o simpático' — que reproduz os efeitos da ativação do sistema nervoso simpático",
+      "explicacao": "O termo 'simpaticomimético' é mais antigo do que a distinção farmacológica entre ação direta e indireta: ele nasceu simplesmente para descrever qualquer substância cujo efeito final se parecesse com o de estimular o sistema nervoso simpático, independentemente do mecanismo íntimo. Só quando se compreendeu, ao longo do século XX, que algumas dessas substâncias ativavam o receptor pessoalmente e outras apenas manipulavam a noradrenalina já presente no organismo, a classe se dividiu em 'diretos' e 'indiretos'. O nome, portanto, descreve a semelhança do efeito observado (a 'mímica' do simpático), não o mecanismo — que é justamente o que diferencia este bloco do bloco anterior, ambos simpaticomiméticos, mas por vias opostas de ação molecular."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a diferença entre ação direta e indireta"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚪",
+      "conteudo": "Pense numa boate lotada com uma porta giratória de saída: os convidados (a noradrenalina) entram, dançam na pista com os outros convidados (ativam o receptor) e depois precisam sair pela porta giratória para a rua, liberando espaço para dançar de novo mais tarde. **Um agonista direto** é um impostor que entra na pista com uma identidade falsa e dança sozinho, sem nunca ter sido um convidado de verdade — ele não precisa da porta giratória nem do estoque de convidados, cria sua própria presença na pista. **Um simpaticomimético indireto**, como a cocaína, não coloca ninguém falso na pista: ele **emperra a porta giratória de saída**, e os convidados de verdade, que já estavam entrando e saindo normalmente, ficam presos dançando por muito mais tempo do que iriam. A anfetamina faz a mesma coisa e ainda **abre à força o guarda-volumes** (as vesículas), empurrando para a pista convidados que ainda nem tinham decidido dançar. A analogia quebra num ponto importante: a porta giratória emperrada não afeta só uma pista de dança — ela emperra ao mesmo tempo em **todas as boates da cidade** que compartilham o mesmo tipo de porta (todas as sinapses noradrenérgicas do corpo), por isso o efeito de um simpaticomimético indireto nunca é seletivo de um único órgão, ao contrário do impostor do agonista direto, que em princípio poderia ser desenhado para entrar só numa pista específica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um paciente tiver as vesículas de noradrenalina de seus neurônios simpáticos completamente depletadas — por exemplo, após uso intenso e repetido de anfetamina em curto intervalo —, o que aconteceria se essa pessoa usasse cocaína logo em seguida?",
+      "resposta": "O efeito estimulante esperado da cocaína seria muito menor do que o habitual. A cocaína não fabrica nem libera noradrenalina — ela apenas impede a remoção da noradrenalina que já foi liberada fisiologicamente. Se não há estoque vesicular para ser liberado a cada potencial de ação, há pouca ou nenhuma noradrenalina na fenda para se acumular, e bloquear a recaptação de um mensageiro quase ausente produz pouco efeito adicional. Esse fenômeno — resposta reduzida a um simpaticomimético indireto por depleção prévia do estoque neuronal — é uma das razões pelas quais o efeito de estimulantes tende a diminuir com uso repetido em curto intervalo, e é um lembrete de que toda a classe indireta depende de um recurso finito e reabastecível apenas em uma velocidade limitada: a noradrenalina que o próprio neurônio consegue sintetizar e estocar de novo."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas portas para o mesmo receptor: ação direta versus ação indireta",
+      "descricao": "Esquema didático em corte transversal de uma sinapse adrenérgica, comparando lado a lado (painel esquerdo e painel direito) duas situações. Painel esquerdo, rotulado 'agonista direto': uma molécula de fármaco encaixando diretamente no receptor pós-sináptico, sem envolvimento do terminal pré-sináptico. Painel direito, rotulado 'simpaticomimético indireto': terminal pré-sináptico liberando noradrenalina normalmente, com o transportador de recaptação (NET) bloqueado por uma molécula de fármaco (setas mostrando noradrenalina acumulando-se na fenda por não ser recapturada), e uma seta adicional mostrando liberação vesicular forçada rotulada 'mecanismo adicional da anfetamina'. Legendas curtas identificando cocaína, anfetamina e tricíclicos no painel direito, todos convergindo para o bloqueio do NET. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno, dividido em dois painéis lado a lado com um traço vertical central separando-os. Painel esquerdo com título 'AÇÃO DIRETA': um terminal pré-sináptico simplificado e, na fenda, uma molécula de fármaco em formato de chave encaixando diretamente num receptor pós-sináptico em formato de fechadura, seta indicando ativação. Painel direito com título 'AÇÃO INDIRETA': terminal pré-sináptico liberando pontos rotulados 'noradrenalina' na fenda por exocitose vesicular normal; na membrana do terminal, um transportador (NET) desenhado como uma porta giratória bloqueada por um ícone de cadeado vermelho, com rótulo 'cocaína / anfetamina / tricíclicos bloqueiam o NET'; setas mostrando acúmulo de pontos de noradrenalina na fenda por falta de recaptação, todos convergindo e ativando o mesmo receptor pós-sináptico do painel esquerdo; uma seta adicional saindo de dentro do terminal, rotulada 'anfetamina também força liberação vesicular', apontando de uma vesícula para a fenda. Cores suaves e consistentes entre os dois painéis, tipografia em português, alto contraste, sem elementos fotorrealistas. Sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-03-003",
+        "titulo": "Fármacos Adrenérgicos — O Sistema da Noradrenalina (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A arquitetura de receptores alfa e beta distribuídos de forma desigual pelo corpo, apresentada ali, é o que torna compreensível por que aumentar a noradrenalina disponível na fenda produz o mesmo padrão de efeitos (taquicardia, vasoconstrição) descrito para a ativação direta desses receptores."
+      },
+      {
+        "bloco_id": "s4-farma1-03-001",
+        "titulo": "Neurotransmissão Autonômica: Síntese, Liberação e Término",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco aplica diretamente dois elos do ciclo descrito ali — a liberação vesicular dependente de cálcio e o término do sinal por recaptação via transportador de noradrenalina (NET) — como os dois pontos exatos onde cocaína, anfetamina e tricíclicos agem."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica_medica",
+        "semestre_futuro": 5,
+        "topico": "Emergências toxicológicas e síndrome adrenérgica",
+        "mecanismo_conexao": "O reconhecimento do padrão clínico de excesso adrenérgico (taquicardia, hipertensão, agitação, hipertermia) descrito aqui para a intoxicação por cocaína é a base para identificar e manejar qualquer síndrome adrenérgica tóxica em pronto-socorro.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "psiquiatria",
+        "semestre_futuro": 7,
+        "topico": "Antidepressivos e o transportador de recaptação de monoaminas",
+        "mecanismo_conexao": "O bloqueio do transportador de recaptação de noradrenalina e serotonina pelos tricíclicos, visto aqui pelo ângulo cardiovascular, é o mesmo mecanismo que sustenta o uso desses fármacos como antidepressivos, estudado em profundidade na psiquiatria.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-03-003-01",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "O irmão anterior descreve agonistas que ativam o receptor adrenérgico diretamente, com seletividade de subtipo relativamente previsível. Este bloco descreve fármacos que nunca tocam o receptor: eles manipulam a disponibilidade da noradrenalina endógena, produzindo estimulação ampla e não seletiva de todos os receptores que ela alcança."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-03-003-03-fc01",
+      "pergunta": "Por que a cocaína é chamada de simpaticomimético indireto, e não de agonista adrenérgico direto?",
+      "resposta": "Porque a cocaína não se liga ao receptor adrenérgico. Ela bloqueia o transportador de recaptação de noradrenalina (NET) no terminal pré-sináptico, impedindo que a noradrenalina liberada fisiologicamente seja removida da fenda na velocidade normal. Quem ativa o receptor continua sendo a noradrenalina do próprio organismo — apenas por mais tempo e em maior concentração do que o habitual. O efeito final imita a estimulação simpática (daí 'simpaticomimético'), mas a via de ação é indireta.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "cocaina",
+        "recaptacao",
+        "net"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-03-003-03-fc02",
+      "pergunta": "Explique a diferença mecanística entre cocaína e anfetamina, embora ambas sejam simpaticomiméticos indiretos que bloqueiam o NET.",
+      "resposta": "A cocaína apenas bloqueia o transportador de recaptação de noradrenalina (NET): ela impede a remoção do mensageiro já liberado, mas depende inteiramente da liberação fisiológica normal disparada por potenciais de ação. A anfetamina bloqueia o mesmo NET, porém acrescenta um segundo mecanismo — ela entra no terminal nervoso e força a saída de noradrenalina estocada nas vesículas para a fenda, independentemente de haver ou não um potencial de ação. Por isso o efeito da anfetamina tende a ser mais intenso e sustentado: ela não só atrasa a remoção do mensageiro, como aumenta ativamente sua liberação.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "anfetamina",
+        "cocaina",
+        "mecanismo"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-03-003-03-fc03",
+      "pergunta": "Por que a intoxicação aguda por cocaína pode causar infarto do miocárdio mesmo em pacientes jovens, sem doença coronariana prévia?",
+      "resposta": "O bloqueio do NET pela cocaína ocorre em todas as sinapses simpáticas simultaneamente, não em um único órgão. Isso amplifica ao mesmo tempo o estímulo beta-1 no coração (mais frequência e força de contração, logo mais consumo de oxigênio do miocárdio) e o estímulo alfa-1 nos vasos, incluindo as coronárias (vasoconstrição, reduzindo o fluxo de sangue e oxigênio exatamente quando o coração mais precisa dele). Essa combinação — maior demanda e menor oferta de oxigênio ao miocárdio, ocorrendo juntas — pode causar vasoespasmo coronariano e isquemia mesmo em artérias coronárias estruturalmente normais.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "cocaina",
+        "intoxicacao",
+        "isquemia-miocardica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-03-003-03-fc04",
+      "pergunta": "Se as vesículas de noradrenalina de um neurônio simpático estivessem completamente depletadas, o que aconteceria com o efeito de um simpaticomimético indireto como a cocaína, mesmo que o transportador de recaptação (NET) estivesse totalmente bloqueado?",
+      "resposta": "O efeito seria muito reduzido ou ausente. A cocaína não fabrica nem libera noradrenalina — ela apenas impede a remoção da noradrenalina que já foi liberada fisiologicamente. Se não há estoque vesicular para ser liberado a cada potencial de ação, há pouca ou nenhuma noradrenalina na fenda para se acumular, e bloquear a recaptação de um mensageiro quase ausente produz pouco efeito adicional. Isso contrasta com um agonista direto, cujo efeito não depende do estoque neuronal de noradrenalina, apenas da presença do receptor.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "deplecao-vesicular",
+        "cocaina",
+        "simpaticomimetico-indireto"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-03-003-03-fc05",
+      "pergunta": "Por que os antidepressivos tricíclicos, desenvolvidos para atuar no humor, produzem efeitos cardiovasculares adrenérgicos como consequência do seu mecanismo principal?",
+      "resposta": "Os tricíclicos bloqueiam o transportador de recaptação de noradrenalina (o mesmo NET que a cocaína bloqueia) e também o de serotonina, com o objetivo terapêutico de prolongar esses sinais nas sinapses centrais associadas ao humor. Mas o NET está presente em toda terminação noradrenérgica do corpo, não só no sistema nervoso central — o fármaco não distingue uma sinapse da outra. Por isso, o mesmo bloqueio que prolonga a noradrenalina no cérebro também prolonga a noradrenalina nas terminações simpáticas periféricas que regulam coração e vasos, produzindo efeitos adrenérgicos cardiovasculares que não eram o alvo terapêutico pretendido.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "triciclicos",
+        "recaptacao",
+        "efeitos-colaterais"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-03-003-03-caso01",
+      "titulo": "Dor torácica e agitação após uso recreativo de cocaína",
+      "apresentacao": "Homem de 27 anos é trazido ao pronto-socorro por amigos após uso de cocaína inalada em uma festa, cerca de 40 minutos antes. Refere dor torácica opressiva de início súbito, palpitações e ansiedade intensa. Ao exame: agitado, sudoreico, midriático, pressão arterial 178x104 mmHg, frequência cardíaca 132 bpm, temperatura 38,6°C. O eletrocardiograma mostra supradesnivelamento de ST em parede inferior. Troponina discretamente elevada.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A cocaína bloqueou o transportador de recaptação de noradrenalina (NET) em todas as sinapses simpáticas do paciente, impedindo a remoção normal do neurotransmissor liberado a cada potencial de ação simpático."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Receptores beta-1 cardíacos e alfa-1 das artérias coronárias e de leitos vasculares periféricos, todos recebendo noradrenalina endógena em concentração e duração muito acima do fisiológico."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Estimulação beta-1 excessiva aumenta frequência cardíaca e contratilidade, elevando o consumo de oxigênio do miocárdio; simultaneamente, a estimulação alfa-1 provoca vasoconstrição coronariana, reduzindo a oferta de oxigênio. O desequilíbrio entre demanda aumentada e oferta reduzida gera isquemia miocárdica mesmo sem placa aterosclerótica obstrutiva."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Dor torácica opressiva, taquicardia, hipertensão, agitação e hipertermia — o quadro clássico de tempestade adrenérgica, com alteração eletrocardiográfica compatível com isquemia aguda de parede inferior."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem reconhecimento e tratamento adequados, o vasoespasmo coronariano sustentado pode evoluir para infarto estabelecido ou arritmia ventricular fatal. O tratamento de escolha usa benzodiazepínicos para reduzir a descarga simpática central e nitratos para o vasoespasmo; betabloqueadores são evitados nesse contexto agudo porque bloquear apenas o receptor beta deixaria a vasoconstrição alfa sem oposição, piorando o vasoespasmo coronariano."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra o ponto central deste bloco: a cocaína não ativa nenhum receptor diretamente, mas ao bloquear o NET amplifica de forma não seletiva toda a sinalização adrenérgica endógena que já estava em curso — coração e vasos coronarianos ao mesmo tempo, com efeitos opostos (mais demanda, menos oferta) que se somam para produzir isquemia. É a mesma lógica indireta descrita na etapa 'como funciona' aplicada a um cenário real de emergência.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica_medica",
+        "toxicologia",
+        "medicina_de_emergencia"
+      ],
+      "diagnostico_revelado": "Síndrome coronariana aguda induzida por cocaína (vasoespasmo coronariano por excesso adrenérgico).",
+      "tratamento_resumido": "Benzodiazepínicos para reduzir a descarga simpática central, nitratos para o vasoespasmo coronariano, suporte para agitação e hipertermia; betabloqueadores isolados são evitados na fase aguda pelo risco de piora do vasoespasmo por ação alfa sem oposição."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-03-003-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Capítulo sobre agonistas adrenérgicos e simpaticomiméticos de ação indireta; capítulo sobre cocaína e psicoestimulantes.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Capítulo 9 — Adrenoceptor Agonists & Sympathomimetic Drugs (mecanismo indireto de cocaína e anfetamina); Capítulo 30 — Antidepressant Agents.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang & Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 14 — Noradrenergic Transmission; Capítulo 49 — Drug Dependence (cocaína e anfetaminas).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

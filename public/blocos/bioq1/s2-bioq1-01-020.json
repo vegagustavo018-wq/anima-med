@@ -16,7 +16,8 @@
     "data_criacao": "2026-07-03",
     "data_atualizacao": "2026-07-03",
     "versao_schema": "3.0",
-    "autor": "Claude Opus 4.7"
+    "autor": "Claude Opus 4.7",
+    "titulo": "Efeito Hidrofóbico e Estrutura de Membranas"
   },
   "resumo_conciso": "Água e óleo não se misturam — mas por quê? A razão é o efeito hidrofóbico, uma das forças mais poderosas que dirigem a biologia. Moléculas não-polares (gorduras, cadeias de hidrocarboneto) não conseguem formar ligações de hidrogênio com água; para minimizar o custo energético dessa incompatibilidade, elas se agrupam, deixando uma camada de água ao redor. Esse efeito não é um 'mau' resultado — é a base de como membranas celulares se formam espontaneamente. Neste bloco, compreendemos por que fosfolipídios se organizam em bicamada, como essa estrutura resolve o problema de separar exterior (aquoso) de interior (ainda aquoso mas compartimentalizado), e por que essa foi provavelmente a primeira estrutura que permitiu vida.",
   "narrativa": [
@@ -86,10 +87,12 @@
   "conexoes": {
     "prerequisitos": [
       {
-        "id": "s2-bioq1-01-010",
+        "bloco_id": "s2-bioq1-01-010",
         "titulo": "Ácidos e Bases: pH, Tampões e Equilíbrio H+",
-        "tipo": "fundamental",
-        "descricao": "Entender ionização e grupos ionizáveis em água é essencial para compreender como cabeças de fosfolipídios se ionizam e criam polaridade."
+        "disciplina": "Bioquímica",
+        "semestre": 2,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
       }
     ],
     "futuras": [
@@ -97,19 +100,22 @@
         "id": "s2-bioq1-01-030",
         "titulo": "Aminoácidos: Construção de Proteínas",
         "tipo": "MECANISMO_COMPARTILHADO",
-        "descricao": "Proteínas têm caudas amino-ácidas hidrofóbicas que as ancoram em membranas; hidrofobicidade é o motor de dobramento protéico."
+        "descricao": "Proteínas têm caudas amino-ácidas hidrofóbicas que as ancoram em membranas; hidrofobicidade é o motor de dobramento protéico.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s1-hist-03-000",
         "titulo": "Membrana Plasmática: Composição e Estrutura",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Bicamada lipídica é base estrutural da membrana; distúrbios em fluidez causam patologias de transporte."
+        "descricao": "Bicamada lipídica é base estrutural da membrana; distúrbios em fluidez causam patologias de transporte.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s3-fisio-02-100",
         "titulo": "Transporte de Membrana: Canais e Bombas",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Muitos fármacos atuam em proteínas de membrana ancoradas em bicamada lipídica; entender a estrutura lipídica é chave para entender mecanismos farmacológicos."
+        "descricao": "Muitos fármacos atuam em proteínas de membrana ancoradas em bicamada lipídica; entender a estrutura lipídica é chave para entender mecanismos farmacológicos.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
@@ -117,7 +123,8 @@
         "id": "s2-bioq1-02-000",
         "titulo": "Carboidratos: Energia e Estrutura",
         "tipo": "CONTEXTO",
-        "descricao": "Glicolipídios (carboidratos + lipídios) decoram a face externa de membranas; ajudam no reconhecimento celular."
+        "descricao": "Glicolipídios (carboidratos + lipídios) decoram a face externa de membranas; ajudam no reconhecimento celular.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -181,36 +188,37 @@
   ],
   "casos_clinicos": [
     {
-      "id": "caso-bioq1-01-020-001",
+      "caso_id": "caso-bioq1-01-020-001",
       "titulo": "Síndrome de Crioglobulinemia: Rigidez de Membrana em Frio",
       "apresentacao": "Paciente, 35 anos, é diagnosticado com crioglobulinemia (presença de crioglobulinas — proteínas que precipitam em frio). Ao se expor a ambientes frios, desenvolve dor, dormência, ulceração em dedos e nariz.",
       "cascata": [
         {
-          "etapa": 1,
-          "titulo": "Causa",
-          "conteudo": "Paciente tem virus hepatite C. Esse vírus induz produção de crioglobulinas — imunoglobulinas anormais que precipitam quando temperatura cai. Não é membranas dele afetadas inicialmente — é proteína sanguínea."
+          "etapa": "Causa",
+          "descricao": "Paciente tem virus hepatite C. Esse vírus induz produção de crioglobulinas — imunoglobulinas anormais que precipitam quando temperatura cai. Não é membranas dele afetadas inicialmente — é proteína sanguínea."
         },
         {
-          "etapa": 2,
-          "titulo": "Estrutura — Mudança de Fluidez e Fluxo",
-          "conteudo": "Em temperatura fria, crioglobulinas precipitam, formando cristais em pequenos vasos. Simultaneamente, fluidez de membranas de glóbulos vermelhos diminui. Eritrócitos ficam rígidos, não conseguem passar por capilares estreitos. Combinação: cristais bloqueando vaso + células rígidas que não conseguem atravessar = estase sanguínea."
+          "etapa": "Estrutura Afetada",
+          "descricao": "Em temperatura fria, crioglobulinas precipitam, formando cristais em pequenos vasos. Simultaneamente, fluidez de membranas de glóbulos vermelhos diminui. Eritrócitos ficam rígidos, não conseguem passar por capilares estreitos. Combinação: cristais bloqueando vaso + células rígidas que não conseguem atravessar = estase sanguínea."
         },
         {
-          "etapa": 3,
-          "titulo": "Disfunção — Isquemia Tissular",
-          "conteudo": "Dedos, nariz, orelhas (extremidades mais expostas ao frio) têm fluxo sanguíneo reduzido. Tecido não recebe oxigênio suficiente. Células entram em hipóxia, começam apoptose."
+          "etapa": "Disfunção",
+          "descricao": "Dedos, nariz, orelhas (extremidades mais expostas ao frio) têm fluxo sanguíneo reduzido. Tecido não recebe oxigênio suficiente. Células entram em hipóxia, começam apoptose."
         },
         {
-          "etapa": 4,
-          "titulo": "Sintoma Clínico",
-          "conteudo": "Dor (isquemia ativa), dormência (neurite isquêmica), cianose (roxa por falta de oxigênio), ulceração (tecido necrosado)."
+          "etapa": "Sintoma",
+          "descricao": "Dor (isquemia ativa), dormência (neurite isquêmica), cianose (roxa por falta de oxigênio), ulceração (tecido necrosado)."
         },
         {
-          "etapa": 5,
-          "titulo": "Manejo e Consequência",
-          "conteudo": "Prevenção: evitar frio, manter corpo aquecido. Tratamento da causa: antivirais se hepatite C (eliminam produção de crioglobulinas). Se não tratado: gangrena, amputação de dedos. Com tratamento e evitação: resolução completa."
+          "etapa": "Consequência",
+          "descricao": "Prevenção: evitar frio, manter corpo aquecido. Tratamento da causa: antivirais se hepatite C (eliminam produção de crioglobulinas). Se não tratado: gangrena, amputação de dedos. Com tratamento e evitação: resolução completa."
         }
-      ]
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Bioquímica"
+      ],
+      "diagnostico_revelado": "Síndrome de Crioglobulinemia: Rigidez de Membrana em Frio",
+      "tratamento_resumido": "Tratamento da doença de base associada (hepatite C, linfoma, doença autoimune); imunossupressão ou plasmaférese em casos graves com hiperviscosidade ou vasculite."
     }
   ],
   "midia": [

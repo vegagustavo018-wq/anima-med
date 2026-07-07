@@ -8,51 +8,310 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Interações Medicamentosas (Visão Geral)",
+    "subtitulo": "O que acontece quando dois fármacos se encontram dentro do mesmo corpo?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "interacoes-medicamentosas",
+      "farmacocinetica",
+      "farmacodinamica",
+      "polifarmacia",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Quando dois fármacos se modificam; base PK e PD das interações",
-  "narrativa": [],
+  "resumo_conciso": "Até aqui, cada fármaco foi estudado como se estivesse sozinho no corpo — uma única jornada cinética, um único encaixe dinâmico. Mas nenhum paciente real toma um fármaco de cada vez. Quando dois medicamentos coexistem no mesmo organismo, eles podem se ignorar completamente, ou podem se modificar mutuamente — e é exatamente essa modificação mútua que chamamos de interação medicamentosa. A lógica geral é simples de enunciar, mesmo sendo complexa de prever: um fármaco pode mudar o trajeto do outro (quanto dele chega, por quanto tempo fica — o território da farmacocinética) ou pode mudar o efeito do outro no alvo (o território da farmacodinâmica), sem necessariamente mudar sua concentração. A primeira pergunta que se deve fazer diante de qualquer combinação de fármacos não é 'isso é perigoso?', mas 'em qual das duas metades do diálogo fármaco-corpo essa interação está acontecendo?'. Essa distinção — trajeto alterado versus efeito alterado — é o fio que amarra tudo o que os dois próximos temas vão detalhar, e é também o ponto em que farmacocinética e farmacodinâmica, estudadas em paralelo até agora, finalmente se encontram numa mesma pergunta clínica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já viu como um fármaco sozinho percorre o corpo e como ele, ao chegar ao alvo, produz seu efeito. Essa descrição isolada é necessária para aprender o mecanismo, mas é artificial: na prática clínica, um paciente com hipertensão, diabetes e uma infecção pode estar tomando cinco ou seis fármacos ao mesmo tempo. E o corpo não trata essas moléculas como fileiras separadas numa esteira. Elas compartilham o mesmo sangue, as mesmas enzimas, às vezes o mesmo receptor."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema que a coexistência de fármacos cria"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é este: os processos que um fármaco usa para ser absorvido, transportado, metabolizado, eliminado ou para ativar seu alvo não são exclusivos dele. São rotas e proteínas do próprio corpo — enzimas hepáticas, transportadores de membrana, proteínas plasmáticas, receptores — e essas rotas têm capacidade limitada. Se dois fármacos precisam da mesma enzima, do mesmo transportador ou do mesmo receptor, um pode interferir na disponibilidade que o outro tem daquele recurso. O corpo não sabe, e não precisa saber, que existem dois fármacos diferentes: ele só reconhece moléculas competindo pelos mesmos sítios finitos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso significa que a dose de um fármaco, calculada com precisão para funcionar sozinho, pode deixar de ser a dose certa no momento em que um segundo fármaco entra em cena — não porque a fórmula do primeiro mudou, mas porque o ambiente em que ele atua mudou."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: interação medicamentosa não é uma categoria nova de fenômeno — é a farmacocinética e a farmacodinâmica que você já conhece, só que agora acontecendo com dois fármacos disputando os mesmos recursos do corpo, em vez de um fármaco sozinho."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Duas formas distintas de um fármaco modificar o outro"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Diante de qualquer combinação de fármacos que se altera mutuamente, existe uma primeira bifurcação conceitual que organiza tudo o que vem depois: a modificação está acontecendo no trajeto ou no efeito?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na primeira forma, um fármaco muda quanto do outro chega ao alvo, ou por quanto tempo ele permanece no corpo — sem necessariamente mudar o que acontece quando esse outro fármaco encontra seu receptor. Isso acontece quando os dois disputam a mesma enzima metabolizadora, o mesmo transportador de membrana, ou a mesma proteína plasmática de transporte. O alvo final nem precisa ser o mesmo: a interferência ocorre antes, no caminho."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na segunda forma, a concentração de cada fármaco no corpo pode estar exatamente como seria se ele estivesse sozinho — mas o efeito final é diferente, porque os dois atuam no mesmo alvo, ou em alvos diferentes que convergem para a mesma via fisiológica. Um fármaco pode reforçar o que o outro faz, anular o que o outro faz, ou produzir uma resposta que nenhum dos dois produziria isoladamente."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra organizadora: se a interação muda **quanto** fármaco está disponível ou por **quanto tempo**, ela pertence ao território do trajeto. Se a concentração está igual, mas o **efeito** no corpo muda, ela pertence ao território do alvo. Essa é a pergunta que separa os dois temas seguintes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que essa distinção importa antes de nomear qualquer mecanismo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Separar essas duas formas não é um exercício acadêmico — é o que determina como a interação se resolve na prática. Uma interação de trajeto costuma se resolver ajustando a dose ou o intervalo entre as tomadas, porque o problema é quantidade e tempo de exposição. Uma interação de efeito muitas vezes não se resolve só ajustando dose: se os dois fármacos convergem para o mesmo efeito final, reduzir a dose de um ainda deixa a soma dos dois inadequada, e pode ser necessário trocar a combinação inteira."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Além disso, nem toda interação é indesejada. Associações são desenhadas deliberadamente para explorar as duas formas: combina-se um fármaco que inibe a degradação do outro para prolongar seu efeito (uso proposital do território do trajeto), ou combinam-se dois fármacos com mecanismos diferentes que convergem no mesmo efeito terapêutico para conseguir um resultado maior do que qualquer um alcançaria sozinho, com menos dose de cada (uso proposital do território do alvo). O mesmo par de lógicas que causa toxicidade indesejada é usado, quando bem compreendido, para desenhar tratamentos combinados eficazes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa visão geral se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esta é a última visão-geral da farmacodinâmica dentro dos princípios gerais — e não por acaso. Interação medicamentosa é o único tema, entre todos os já vistos, em que a metade cinética (o trajeto: absorção, distribuição, metabolismo, excreção) e a metade dinâmica (o efeito: ligação a receptor, ativação, antagonismo) precisam ser lidas lado a lado para responder a uma única pergunta clínica: esses dois fármacos, juntos, são seguros nesta dose? Até aqui, cinética e dinâmica foram estudadas em blocos separados porque cada uma respondia uma pergunta diferente sobre um fármaco isolado. Aqui, pela primeira vez, as duas metades do diálogo fármaco-organismo se encontram na mesma decisão."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, esse encontro aparece com um nome: polifarmácia — o uso simultâneo de múltiplos fármacos pelo mesmo paciente, comum em idosos com várias doenças crônicas. Quanto mais fármacos um paciente usa, mais pares de interação potencial existem entre eles (o número de pares cresce muito mais rápido que o número de fármacos), e é por isso que a revisão de prescrições em pacientes polimedicados é uma das tarefas mais valiosas — e mais negligenciadas — da prática clínica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "interação",
+      "origem": "do latim inter (entre) + actio (ação, atuação)",
+      "significado": "literalmente, 'ação que ocorre entre' — ação recíproca entre duas ou mais partes",
+      "explicacao": "O prefixo inter- é o mesmo de 'internet' (rede entre nós) e 'intercâmbio' (troca entre partes): sempre implica uma relação de mão dupla, não uma ação isolada. Aplicado à farmacologia, o nome já entrega a ideia central: não se trata do efeito de um fármaco nem do efeito do outro, isoladamente, mas do que emerge do encontro dos dois. É um nome preciso — mais preciso, aliás, do que muitos termos técnicos da área, porque descreve exatamente o fenômeno sem precisar de reinterpretação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o todo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚦",
+      "conteudo": "Pense em duas pessoas dirigindo carros diferentes na mesma cidade. Se elas nunca cruzam ruas, seus trajetos são independentes — nenhuma interação. Mas se as duas precisam passar pelo mesmo cruzamento estreito ao mesmo tempo (a mesma enzima, o mesmo transportador), uma atrasa a outra: o trajeto de uma é modificado pela presença da outra, mesmo que os destinos finais sejam diferentes — isso é interação de trajeto. Agora imagine que as duas pessoas chegam, cada uma dirigindo normalmente, ao mesmo destino final — um mesmo evento, uma festa — e o que acontece na festa depende de as duas estarem lá juntas: uma reforça o clima que a outra cria, ou uma anula o efeito da outra. Os carros não se atrasaram, os trajetos foram perfeitos; o que mudou foi o que acontece no destino — isso é interação de efeito. A analogia quebra num ponto: no trânsito real, o cruzamento é sempre físico e visível; no corpo, o 'cruzamento' pode ser uma enzima invisível ao exame clínico, o que torna a interação muito mais difícil de prever do que um engarrafamento."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um paciente estivesse tomando dois fármacos com concentrações plasmáticas idênticas às que teriam isoladamente, seria correto concluir que não há interação entre eles?",
+      "resposta": "Não necessariamente. Concentração plasmática igual à esperada descarta apenas uma interação de trajeto — não descarta uma interação de efeito. Os dois fármacos podem estar exatamente na dose e concentração previstas e, ainda assim, convergir no mesmo alvo ou na mesma via fisiológica e produzir um efeito somado, potencializado ou anulado. É por isso que medir apenas a concentração do fármaco no sangue nunca é suficiente para garantir segurança em uma combinação — é preciso também perguntar o que cada um faz no alvo, e se esses efeitos se cruzam."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Imagem"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "As duas rotas de uma interação medicamentosa",
+      "descricao": "Esquema didático em dois ramos paralelos partindo de um ponto comum ('dois fármacos no mesmo corpo'). Ramo superior rotulado 'TRAJETO ALTERADO (farmacocinética)': ícones de enzima hepática, transportador de membrana e proteína plasmática compartilhados por duas moléculas de fármaco diferentes, com seta indicando concentração final alterada. Ramo inferior rotulado 'EFEITO ALTERADO (farmacodinâmica)': duas moléculas de fármaco diferentes convergindo no mesmo receptor ou em receptores distintos que se encontram na mesma via intracelular, com seta indicando resultado final somado ou anulado. Legendas curtas em português. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. No topo, um ponto de partida único rotulado 'DOIS FÁRMACOS NO MESMO CORPO', com duas moléculas romboides de cores diferentes (fármaco A em azul, fármaco B em laranja). Duas setas se bifurcam a partir desse ponto. Ramo superior, rotulado 'TRAJETO ALTERADO': as duas moléculas convergindo para um mesmo ícone de enzima hepática estilizada, com uma seta pontilhada mostrando concentração final reduzida ou aumentada. Ramo inferior, rotulado 'EFEITO ALTERADO': as duas moléculas convergindo para o mesmo receptor de membrana ou para dois receptores próximos ligados por uma via intracelular comum, com uma seta mostrando efeito final somado (seta grande) ou anulado (seta cortada). Cores suaves e consistentes, alto contraste, sem texturas fotorrealistas, sem texto além das legendas indicadas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-000",
+        "titulo": "Farmacodinâmica — O Que o Fármaco Faz ao Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Interação medicamentosa pressupõe já entender que um fármaco encontra um alvo específico e produz efeito por ligação — sem essa base, a ideia de 'dois fármacos alterando o efeito um do outro' não tem ponto de apoio conceitual."
+      },
+      {
+        "bloco_id": "s4-farma1-01-000",
+        "titulo": "Farmacocinética — A Jornada do Fármaco no Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A metade de trajeto de uma interação medicamentosa (enzimas, transportadores, proteínas plasmáticas) só faz sentido para quem já sabe que o fármaco percorre um caminho de absorção, distribuição, metabolismo e excreção antes de agir."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Farmacologia dos sistemas — combinações terapêuticas deliberadas",
+        "mecanismo_conexao": "Toda vez que um esquema terapêutico combinar duas classes farmacológicas de propósito (por exemplo, para potencializar efeito ou reduzir dose individual), a lógica de convergência de trajeto ou de efeito apresentada aqui será o template usado para justificar a combinação.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 7,
+        "topico": "Revisão de polifarmácia no paciente idoso",
+        "mecanismo_conexao": "A prática de revisar prescrições em pacientes com múltiplas comorbidades depende diretamente de saber distinguir interações de trajeto (ajustáveis por dose) de interações de efeito (que podem exigir troca de classe) — distinção que nasce neste bloco.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-007-fc01",
+      "pergunta": "Qual pergunta organizadora deve ser feita antes de classificar qualquer interação medicamentosa?",
+      "resposta": "Se a interação muda a concentração ou o tempo de permanência de um fármaco no corpo, ela é uma interação de trajeto (farmacocinética). Se a concentração está como esperado, mas o efeito final no corpo muda, ela é uma interação de efeito (farmacodinâmica). Essa distinção precede qualquer detalhe mecanístico específico.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "interacoes-medicamentosas",
+        "farmacocinetica",
+        "farmacodinamica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-007-fc02",
+      "pergunta": "Por que dois fármacos que não compartilham o mesmo receptor ainda assim podem alterar o efeito um do outro?",
+      "resposta": "Porque a convergência não precisa ocorrer no mesmo receptor — pode ocorrer na mesma via fisiológica final. Dois fármacos com alvos moleculares distintos podem, ainda assim, produzir efeitos que se somam, se opõem ou se potencializam quando essas vias convergem downstream, no mesmo sistema ou órgão.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "interacoes-medicamentosas",
+        "farmacodinamica",
+        "convergencia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-007-fc03",
+      "pergunta": "Um paciente idoso em polifarmácia tem concentração plasmática de todos os fármacos dentro da faixa esperada, mas apresenta um efeito colateral grave e inesperado. Que tipo de interação deve ser investigada primeiro, e por quê?",
+      "resposta": "Deve-se investigar interação de efeito (farmacodinâmica), não de trajeto. Como as concentrações estão normais, o problema não está em quanto fármaco chegou — está em como os efeitos desses fármacos, no alvo ou em vias convergentes, estão se somando ou se potencializando. Medir apenas concentração plasmática não seria suficiente para explicar o quadro.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "interacoes-medicamentosas",
+        "polifarmacia",
+        "farmacodinamica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-007-fc04",
+      "pergunta": "Por que a palavra 'interação' (inter + actio) já descreve com precisão o fenômeno estudado neste bloco?",
+      "resposta": "Porque inter- significa 'entre' e actio significa 'ação'. O nome já indica que o fenômeno não é a ação de um fármaco nem a ação do outro isoladamente, mas o que emerge do encontro entre os dois — exatamente a lógica central: o efeito ou o trajeto de um fármaco muda em função da presença do outro.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "interacoes-medicamentosas",
+        "etimologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-007-caso01",
+      "titulo": "Paciente idosa polimedicada com sangramento inesperado",
+      "apresentacao": "Mulher de 74 anos, hipertensa e com fibrilação atrial, em uso crônico de varfarina para prevenção de trombo. Procura pronto-socorro há uma semana após início de um novo antibiótico prescrito por outro médico para uma infecção urinária. Chega com gengivorragia espontânea e hematomas extensos nos braços. Exame confirma prolongamento importante do tempo de coagulação em relação ao valor habitual da paciente, sem nenhuma mudança na dose de varfarina.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O novo antibiótico compete com a varfarina pela mesma enzima hepática responsável por metabolizá-la, reduzindo a velocidade com que a varfarina é eliminada do corpo."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A rota metabólica hepática compartilhada pelos dois fármacos — não há mudança na dose de varfarina prescrita, apenas na velocidade com que ela é retirada de circulação."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a eliminação mais lenta, a concentração de varfarina no sangue sobe além do previsto para aquela dose — uma interação de trajeto clássica, mesmo que nenhuma receita tenha sido alterada."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O excesso de varfarina circulante leva a anticoagulação além do alvo terapêutico, manifestando-se como sangramento gengival espontâneo e hematomas fáceis."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem reconhecimento da interação, o quadro pode evoluir para sangramento maior (intracraniano ou digestivo). O manejo exige suspender ou trocar o antibiótico, e não necessariamente a varfarina, porque o problema está no trajeto, não no fármaco em si."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra a interação de trajeto em ação: nenhuma dose mudou, nenhum receptor foi tocado, mas a concentração efetiva de um fármaco cronicamente estável disparou porque um segundo fármaco competiu pela mesma via de eliminação. É o exemplo mais didático de por que perguntar 'o trajeto ou o efeito mudou?' é o primeiro passo diante de qualquer descompensação inexplicada em paciente polimedicado.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "geriatria"
+      ],
+      "diagnostico_revelado": "Interação medicamentosa de trajeto (farmacocinética) entre varfarina e antibiótico inibidor do seu metabolismo hepático.",
+      "tratamento_resumido": "Suspensão ou substituição do antibiótico interagente, reversão da anticoagulação excessiva conforme protocolo, reintrodução cuidadosa com monitorização mais frequente do tempo de coagulação caso a combinação seja realmente necessária no futuro."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-007-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacodinamica",
-    "farmacocinetica",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 4 — Drug Interactions.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 66 — Important Drug Interactions and Their Mechanisms.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 57 — Drug Interactions.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

@@ -10,48 +10,289 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Bioenergética — Visão do Módulo",
+    "subtitulo": "De onde vem a permissão física para uma célula continuar viva?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 1,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "bioenergetica",
+      "atp",
+      "delta-g",
+      "redox",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "As leis que governam o fluxo de energia e a moeda que a célula gasta",
-  "narrativa": [],
+  "resumo_conciso": "Bioenergética é o estudo de como a célula captura, transforma e gasta energia sem violar as leis da física. O módulo organiza quatro ideias que voltarão em todo o metabolismo: reações acontecem conforme energia livre, ATP funciona como moeda de pagamento, reações desfavoráveis podem ser acopladas a reações favoráveis, e elétrons carregados por NADH, FADH2 e NADPH transportam poder redutor. O objetivo não é decorar moléculas, mas entender como a vida paga suas contas químicas.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma cidade que precisa manter luzes acesas, água bombeando, hospitais funcionando e ruas reparadas. Nada disso acontece porque a cidade 'quer'. Acontece porque existe energia disponível, transformada em trabalho. A célula é uma cidade menor e mais exigente: troca íons, dobra proteínas, copia DNA, contrai fibras, fabrica membranas e ainda precisa manter sua ordem interna."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é que a vida parece remar contra a desordem. Uma célula viva é organizada demais para ser confundida com uma sopa química. Mas ela não quebra a física: mantém organização local exportando desordem para o ambiente e pagando trabalho celular com reações energeticamente favoráveis."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Qual pergunta este módulo responde?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A pergunta central é simples: como uma reação que a célula precisa fazer, mas que não aconteceria sozinha, passa a acontecer? Sintetizar macromoléculas, bombear sódio para fora da célula ou ativar um ácido graxo exigem pagamento. Bioenergética estuda a moeda, o contrato e o caixa dessa economia."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: a célula não cria energia. Ela transforma energia disponível em trabalho biológico e dissipa o restante como calor e entropia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A primeira peça: energia livre"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A energia livre de Gibbs, representada por ΔG, é a forma de perguntar se uma reação tem tendência a seguir em determinada direção nas condições reais da célula. ΔG negativo indica que a reação pode liberar energia livre; ΔG positivo indica que ela precisa ser puxada por outra fonte. Isso não fala apenas de calor: fala da capacidade de realizar trabalho químico."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "bioenergética",
+      "origem": "bio vem do grego bios, vida; energética vem de energeia, atividade ou capacidade de agir",
+      "significado": "estudo da energia em sistemas vivos",
+      "explicacao": "O nome é direto, mas profundo: vida não é só estrutura, é atividade sustentada. Bioenergética pergunta como essa atividade continua acontecendo sem que a célula entre em falência energética."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A segunda peça: uma moeda gastável"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "ATP funciona como moeda porque sua hidrólise pode ser acoplada a processos que precisam de energia. O fosfato transferido não é uma moedinha mágica; ele muda intermediários, cria compostos ativados e torna etapas posteriores mais prováveis. A célula usa ATP porque ele fica no meio-termo: energeticamente forte o bastante para pagar muitas tarefas, mas estável o bastante para existir em água sem reagir de maneira descontrolada."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: quando você ler 'usa ATP', traduza mentalmente como 'a célula acoplou uma queda favorável a uma subida desfavorável'. Essa frase evita a falsa ideia de que ATP simplesmente empurra tudo por força bruta."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A terceira peça: acoplamento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Acoplamento é a estratégia de juntar uma reação favorável a outra desfavorável por um intermediário comum, uma enzima ou uma sequência obrigatória. Só dizer que uma reação libera energia não basta; a energia precisa ser capturada de modo utilizável. Se a queda energética vira apenas calor, a célula esquenta, mas não constrói nada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A quarta peça: elétrons como pacotes de energia"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "NADH, FADH2 e NADPH carregam elétrons de alta energia. No catabolismo, NADH e FADH2 levam elétrons para a cadeia respiratória, onde a energia ajuda a construir gradiente de prótons e ATP. No anabolismo, NADPH fornece poder redutor para biossíntese e defesa antioxidante. Energia metabólica, portanto, não viaja apenas como fosfato; também viaja como elétrons."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se a célula tivesse ATP, mas não tivesse transportadores de elétrons?",
+      "resposta": "Ela perderia uma ponte essencial entre oxidar combustíveis e produzir ATP de modo eficiente. A energia dos elétrons da glicose e dos ácidos graxos não chegaria adequadamente à cadeia respiratória, o gradiente de prótons cairia e a produção aeróbica de ATP ficaria severamente limitada."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "conta",
+      "conteudo": "Pense na célula como uma casa com várias formas de pagamento. ΔG é o saldo real de uma transação: diz se ela fecha sozinha ou precisa de ajuda. ATP é dinheiro de uso rápido. Acoplamento é pagar uma conta difícil junto com um desconto obrigatório que torna o pacote viável. NADH e FADH2 são baterias carregadas que precisam ser descarregadas na usina mitocondrial. NADPH é um cartão reservado para construção e proteção antioxidante. A analogia quebra porque, na célula, pagamento e matéria se transformam ao mesmo tempo."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Mapa do módulo de bioenergética",
+      "descricao": "Fluxo conceitual mostrando combustíveis liberando elétrons, NADH/FADH2 levando energia para cadeia respiratória, ATP pagando trabalho celular e ΔG governando espontaneidade.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. À esquerda: glicose e ácidos graxos como combustíveis. Setas para NADH/FADH2 carregando elétrons. No centro: mitocôndria/cadeia respiratória produzindo ATP. Acima: bloco 'ΔG decide a direção'. À direita: três trabalhos pagos por ATP: síntese, transporte ativo, movimento. Abaixo: NADPH apontando para biossíntese e defesa antioxidante. Cores distintas para ATP, elétrons e energia livre; layout limpo.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este módulo é a lente para o resto do semestre. Glicólise, ciclo de Krebs, beta-oxidação e fosforilação oxidativa deixam de ser listas quando você pergunta: qual reação paga, qual reação cobra, onde os elétrons foram guardados e como o ΔG foi manipulado?"
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-00-000",
+        "titulo": "Metabolismo — A Economia de Energia da Célula",
+        "relevancia": "base_necessaria",
+        "explicacao": "Bioenergética aprofunda a ideia de que metabolismo é uma economia de transformações energéticas."
+      },
+      {
+        "bloco_id": "s3-bioq2-00-002",
+        "titulo": "O Mapa Metabólico — Como as Vias se Conectam",
+        "relevancia": "base_necessaria",
+        "explicacao": "O mapa ajuda a localizar onde combustíveis convergem antes de perguntar como a energia é capturada."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Termodinâmica da Vida — Visão Geral",
+        "mecanismo_conexao": "O primeiro filho do módulo explica como ΔG e entropia permitem vida organizada sem violar a física.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "ATP — A Moeda Energética Universal — Visão Geral",
+        "mecanismo_conexao": "ATP será destrinchado como intermediário comum de pagamento energético.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Acoplamento de Reações — Como a Célula Paga o Impossível",
+        "mecanismo_conexao": "O módulo antecipa a lógica de juntar reações para tornar o conjunto favorável.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Transportadores de Elétrons e Poder Redutor — Visão Geral",
+        "mecanismo_conexao": "A energia de combustíveis frequentemente é carregada como elétrons antes de virar ATP ou biossíntese.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "Compartimentalização Metabólica — Cada Via no Seu Lugar",
+        "tipo_relacao": "COMPLEMENTA",
+        "explicacao": "A captura de energia por gradientes depende fortemente de compartimentos e membranas."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-000-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que bioenergética é indispensável antes de estudar vias metabólicas específicas?",
+      "resposta": "Porque toda via depende de permissão energética: algumas etapas liberam energia, outras exigem pagamento, e muitas só acontecem por acoplamento. Sem bioenergética, as vias parecem flechas decoradas; com ela, cada flecha tem motivo físico.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "bioenergetica",
+        "metabolismo"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-000-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Como ATP permite que uma reação desfavorável aconteça?",
+      "resposta": "A hidrólise ou transferência de fosfato do ATP é acoplada à etapa desfavorável, geralmente por um intermediário comum ou por mudança de substrato. O conjunto das reações fica com ΔG favorável, permitindo fluxo na direção biologicamente útil.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "atp",
+        "acoplamento"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-000-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Compare ATP, NADH/FADH2 e NADPH como formas de energia metabólica.",
+      "resposta": "ATP é moeda direta para trabalho químico, transporte e movimento. NADH e FADH2 carregam elétrons do catabolismo para produção de ATP na cadeia respiratória. NADPH carrega poder redutor principalmente para biossíntese e defesa antioxidante.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "atp",
+        "nadh",
+        "nadph"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-000-fc04",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de dizer que ATP 'tem energia na ligação'?",
+      "resposta": "A frase pode sugerir que quebrar uma ligação libera energia isoladamente. O ganho real vem do conjunto da hidrólise: produtos mais estabilizados por ressonância, hidratação e alívio de repulsão eletrostática. ATP é útil porque a reação completa é favorável e pode ser acoplada.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha",
+        "atp"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-000-caso01",
+      "titulo": "Oxigênio presente, ATP ausente",
+      "apresentacao": "Trabalhador de 34 anos é encontrado confuso após exposição acidental a fumaça em ambiente fechado. Chega ao atendimento com hipotensão, rebaixamento do sensório e acidose láctica. A discussão clínica completa pertence à Toxicologia, mas a pergunta bioenergética inicial é poderosa: como um tecido pode ter oxigênio disponível e ainda assim falhar em produzir ATP aeróbico?",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Exposição a tóxico que bloqueia a cadeia respiratória, como cianeto em contexto compatível, impedindo o uso adequado de elétrons pelo complexo IV."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A cadeia transportadora de elétrons mitocondrial deixa de transferir elétrons ao oxigênio de forma efetiva."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O gradiente de prótons cai, a ATP sintase perde força motriz e a célula recorre mais à glicólise anaeróbia, gerando lactato."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "A falta de ATP em tecidos de alta demanda contribui para alteração neurológica, instabilidade cardiovascular e acidose láctica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem reversão rápida, a falha bioenergética evolui para disfunção multiorgânica, porque a célula não consegue pagar transporte ativo, manutenção iônica e trabalho biossintético."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que bioenergética não é abstração: elétrons, oxigênio, gradiente de prótons e ATP formam uma cadeia de pagamento. Quebrar um elo transforma combustível presente em energia biologicamente inacessível.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Toxicologia",
+        "Emergência"
+      ],
+      "diagnostico_revelado": "Correlação conceitual com intoxicação por inibidor da cadeia respiratória, como cianeto.",
+      "tratamento_resumido": "Suporte imediato e antídotos específicos conforme protocolo toxicológico local; o detalhe terapêutico pertence a blocos clínicos de emergência e toxicologia."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-000-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'Mapa do módulo de bioenergética'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Capítulos de bioenergética e metabolismo.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Berg JM, Tymoczko JL, Gatto GJ, Stryer L. Biochemistry. 9th ed. W.H. Freeman; 2019. Seções de ATP, acoplamento e transportadores de elétrons.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "funcao"

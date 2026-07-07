@@ -5,31 +5,178 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Fototransdução — Cascata do Bastonete e do Cone",
+    "subtitulo": "Como a isomerização da rodopsina pelo fóton desencadeia o fechamento de canais de sódio e a geração do sinal visual?",
     "semestre": 6,
-    "disciplina": "Oftalmologia",
+    "disciplina": "oftal",
+    "sistema_corporal": "sensorial",
+    "regiao_anatomica": "retina",
     "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 9,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "oftal",
-      "esqueleto"
+      "fototransducao-molecular",
+      "rodopsina",
+      "11-cis-retinal",
+      "transducina-proteina-g",
+      "fosfodiesterase-pde",
+      "cgmp-queda",
+      "canais-sodio-fechamento",
+      "hiperpolarizacao",
+      "regeneracao-retinal",
+      "vitamina-a",
+      "conduta"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "mecanismo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Rodopsina, transducina, hiperpolarização; visão escotópica e fotópica",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior, analisamos o reflexo pupilar e o DPAR. Agora, aprofundamos a bioquímica da fototransdução na retina. O principal desafio consiste em encadear a cascata molecular: fóton → isomerização do 11-cis-retinal em all-trans → rodopsina ativa → transducina (proteína G) ativa → PDE ativa → hidrólise de cGMP → fechamento de canais de Na+/Ca2+ → hiperpolarização de -40mV para -70mV → cessação de glutamato → sinal visual. O retinal regenera via Vitamina A no EPR. Deficiência causa nictalopia.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, traçamos a via pupilomotora e o teste de iluminação alternada. A geração do sinal visual ocorre dentro dos segmentos externos dos fotorreceptores em uma cascata bioquímica de amplificação extraordinária: um único fóton pode ativar 500 moléculas de transducina, cada uma ativando uma PDE capaz de destruir 4.000 moléculas de cGMP por segundo. Como essa amplificação em cascata funciona molecularmente?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Cascata Bioquímica Completa da Fototransdução"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Etapas moleculares",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Estado de Escuro (Corrente de Escuro)",
+          "explicacao": "O cGMP está em alta concentração, mantendo abertos os canais catiônicos CNG (cyclic-nucleotide gated) de Na+/Ca2+ na membrana do segmento externo. O influxo contínuo de Na+ (e saída de K+) despolariza o fotorreceptor a -40mV. O terminal sináptico libera glutamato continuamente, inibindo as células bipolares ON."
+        },
+        {
+          "numero": 2,
+          "titulo": "Absorção do Fóton pela Rodopsina",
+          "explicacao": "O fóton de luz visível atinge a rodopsina (opsina + 11-cis-retinal) e isomeriza instantaneamente o 11-cis-retinal para a conformação all-trans-retinal, gerando a metarrodopsina II (rodopsina ativa)."
+        },
+        {
+          "numero": 3,
+          "titulo": "Ativação da Transducina (Proteína G)",
+          "explicacao": "A metarrodopsina II atua como GEF (guanine nucleotide exchange factor), catalisando a troca de GDP → GTP na subunidade alfa da transducina (Gt). A subunidade alfa-GTP ativa se dissocia do complexo beta-gama."
+        },
+        {
+          "numero": 4,
+          "titulo": "Ativação da Fosfodiesterase (PDE6)",
+          "explicacao": "A subunidade alfa-GTP da transducina ativa a PDE6 (fosfodiesterase específica do cGMP). A PDE6 ativa hidrolisa rapidamente o cGMP → 5'-GMP (inativo)."
+        },
+        {
+          "numero": 5,
+          "titulo": "Fechamento dos Canais CNG e Hiperpolarização",
+          "explicacao": "A queda de [cGMP] fecha os canais CNG de Na+/Ca2+. Com Na+ impedido de entrar, mas K+ continuando a sair, o interior celular hiperpolariza de -40mV para -70mV."
+        },
+        {
+          "numero": 6,
+          "titulo": "Cessação de Glutamato e Sinal Visual",
+          "explicacao": "A hiperpolarização silencia a liberação de glutamato na fenda sináptica. As células bipolares ON desinibem e disparam potenciais de ação. O sinal alcança as células ganglionares e o nervo óptico."
+        },
+        {
+          "numero": 7,
+          "titulo": "Regeneração do Retinal",
+          "explicacao": "O all-trans-retinal liberado da opsina é transportado ao EPR, convertido de volta em 11-cis-retinal (ciclo visual, dependente de Vitamina A) e devolvido aos fotorreceptores."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Vitamina A e Nictalopia"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A etapa de regeneração é dependente de retinol (Vitamina A). Em desnutrição grave (especialmente em crianças), a deficiência de Vitamina A esgota o 11-cis-retinal disponível, comprometendo prioritariamente os bastonetes periféricos (que demandam mais rodopsina). Clinicamente: incapacidade de ver na penumbra (**nictalopia**) e manchas de Bitot (xeroftalmia conjuntival)."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "📷",
+      "conteudo": "A fototransdução é como um flash fotográfico disparado em câmara escura com amplificação eletrônica: 1 fóton (o botão do flash) ativa a rodopsina (o circuito eletrônico de ignição). O circuito ativa 500 transistores da transducina de uma vez, que ligam 500 PDE (amplificadores de sinal), cada uma destruindo 4.000 moléculas de cGMP por segundo. O apagamento do cGMP fecha as comportas elétricas (canais de sódio), corta a corrente e o detector registra o evento luminoso. O retinal gasto é como o filmafilme revelado — precisa ser trocado pelo laboratório (EPR + Vitamina A) para nova exposição."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-oftal-01-016",
+        "titulo": "Retina — Dez Camadas e a Fototransdução",
+        "disciplina": "oftal",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Introduz o conceito de hiperpolarização e cGMP."
+      }
+    ],
     "futuras": [],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-oftal-01-024-fc01",
+      "pergunta": "Descreva as etapas moleculares desde a absorção do fóton até o fechamento dos canais de sódio no fotorreceptor.",
+      "resposta": "Fóton → isomerização 11-cis → all-trans retinal → rodopsina ativa (metarrodopsina II) → ativação da transducina (GDP→GTP) → ativação da PDE6 → hidrólise do cGMP → queda de [cGMP] → fechamento dos canais CNG de Na+/Ca2+ → hiperpolarização celular.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "tags": [
+        "fototransducao",
+        "rodopsina",
+        "transducina",
+        "pde6",
+        "cgmp",
+        "canais-cng",
+        "hiperpolarizacao"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-024-fc02",
+      "pergunta": "Explique por que o fotorreceptor libera glutamato continuamente no escuro e por que a luz silencia essa liberação.",
+      "resposta": "No escuro, o cGMP alto mantém os canais CNG abertos, gerando despolarização contínua (-40mV) que sustenta a liberação tônica de glutamato. Na luz, a queda de cGMP fecha os canais, hiperpolariza o fotorreceptor (-70mV) e cessa a liberação de glutamato.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "tags": [
+        "corrente-de-escuro",
+        "glutamato-tonico",
+        "luz-hiperpolarizacao",
+        "canais-cng",
+        "fisiologia"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-024-fc03",
+      "pergunta": "Por que a deficiência de Vitamina A afeta preferencialmente os bastonetes antes de prejudicar os cones?",
+      "resposta": "Porque a Vitamina A é precursora do 11-cis-retinal necessário para regenerar a rodopsina dos bastonetes. Os bastonetes, em maior número e com maior demanda de rodopsina (alta sensibilidade), esgotam o fotopigmento primeiro. Os cones têm menor necessidade de regeneração e são poupados inicialmente.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "tags": [
+        "vitamina-a-deficiencia",
+        "bastonetes-preferencial",
+        "nictalopia",
+        "rodopsina",
+        "retinal"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-024-fc04",
+      "pergunta": "Se um inibidor farmacológico da PDE6 fosse administrado intravitreamente, qual seria o efeito sobre a fototransdução e a visão?",
+      "resposta": "A inibição da PDE6 impediria a hidrólise do cGMP. O cGMP permaneceria elevado mesmo na luz, mantendo os canais CNG abertos. O fotorreceptor ficaria despolarizado continuamente, incapaz de hiperpolarizar em resposta à luz → cegueira funcional por impossibilidade de gerar sinal visual.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "tags": [
+        "pde6-inibicao",
+        "cgmp-elevado",
+        "canais-abertos",
+        "cegueira-funcional",
+        "farmacologia"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
     "imagens": [],
@@ -37,18 +184,26 @@
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-06",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 13ª ed. Elsevier; 2017. Capítulo 51 — Fototransdução.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
-    "correlação com ciências básicas",
-    "mecanismo/fisiopatologia"
+    "mecanismo",
+    "clinica",
+    "conduta"
   ]
 }

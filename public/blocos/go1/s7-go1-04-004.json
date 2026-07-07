@@ -4,49 +4,218 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Diagnóstico da Endometriose — Do Exame à Videolaparoscopia",
+    "titulo": "Diagnóstico da Endometriose - Do Exame à Videolaparoscopia",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "endometriose",
+      "dor-pelvica",
+      "diagnostico"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Toque, USG-TV especializada, RM, laparoscopia como padrão-ouro",
-  "narrativa": [],
+  "resumo_conciso": "O diagnóstico parte da suspeita clínica, exame físico e imagem dirigida. Ultrassom transvaginal especializado e ressonância identificam endometrioma e doença profunda; laparoscopia fica para casos selecionados.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O diagnóstico de endometriose começa antes do exame de imagem: com escuta ativa de sintomas. Dismenorreia incapacitante, dor pélvica crônica, dispareunia profunda, sintomas intestinais ou urinários cíclicos e infertilidade justificam investigação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O exame físico deve procurar dor à mobilização uterina, nódulos dolorosos, espessamento de ligamentos uterossacros, retroversão fixa, massa anexial e dor em fundo de saco. Mesmo assim, exame normal não exclui a doença."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O ultrassom transvaginal especializado é ferramenta central para endometrioma, sinais de aderência e endometriose profunda. Em adolescentes ou pacientes sem relação vaginal, o exame abdominal ou outras abordagens podem ser adaptadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A ressonância magnética ajuda no mapeamento de doença profunda, acometimento intestinal, urinário, adenomiose associada e planejamento cirúrgico. A qualidade do laudo depende de protocolo e experiência."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Laparoscopia com visualização e, quando apropriado, histologia, foi durante muito tempo vista como padrão-ouro absoluto. Hoje, a tendência é não exigir cirurgia para toda suspeita antes de iniciar tratamento clínico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A decisão por laparoscopia depende de dor refratária, dúvida diagnóstica relevante, imagem sugestiva com necessidade de tratamento cirúrgico, infertilidade selecionada ou suspeita de outra patologia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Biomarcadores, como CA-125, não servem como teste isolado para diagnosticar ou excluir endometriose. Podem subir em várias condições e não substituem clínica e imagem."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um bom diagnóstico também mapeia extensão e objetivo: dor, fertilidade, órgãos acometidos, risco cirúrgico e preferência da paciente."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-01-007",
+        "titulo": "O Ciclo Endometrial — Proliferação, Secreção e Menstruação",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-02-030",
+        "titulo": "Dismenorreia — Visão de Conjunto",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-02-032",
+        "titulo": "Dismenorreia Secundária — Quando a Dor Tem Dono",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-05-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Módulo 5 - Miomatose Uterina e Tumores Benignos",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN"
+      },
+      {
+        "bloco_id": "s7-go1-03-004",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Manifestações Clínicas e Riscos da SOP"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-04-004-fc-01",
+      "pergunta": "Qual é o primeiro passo diagnóstico na endometriose?",
+      "resposta": "Suspeita clínica baseada em sintomas e impacto funcional.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-04-004-fc-02",
+      "pergunta": "Qual imagem é central para endometrioma e doença profunda?",
+      "resposta": "Ultrassom transvaginal especializado, com RM como complemento em casos selecionados.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-04-004-fc-03",
+      "pergunta": "Laparoscopia é obrigatória para iniciar tratamento?",
+      "resposta": "Não necessariamente; tratamento pode ser iniciado com suspeita clínica e imagem conforme contexto.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-04-004-fc-04",
+      "pergunta": "CA-125 exclui endometriose se normal?",
+      "resposta": "Não. Não é teste isolado para confirmar ou excluir a doença.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-04-004-cc-01",
+      "titulo": "Imagem antes da cirurgia",
+      "apresentacao": "Mulher com dispareunia profunda e disquezia cíclica tem exame com dor em uterossacros. O clínico pensa em laparoscopia imediata.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: O diagnóstico parte da suspeita clínica, exame físico e imagem dirigida."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Diagnóstico da Endometriose - Do Exame à Videolaparoscopia, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O diagnóstico parte da suspeita clínica, exame físico e imagem dirigida. Ultrassom transvaginal especializado e ressonância identificam endometrioma e doença profunda; laparoscopia fica para casos selecionados."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher com dispareunia profunda e disquezia cíclica tem exame com dor em uterossacros. O clínico pensa em laparoscopia imediata."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual passo melhora planejamento? Solicitar imagem dirigida, como USG-TV especializada e/ou RM, para mapear doença profunda antes de indicar cirurgia."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Solicitar imagem dirigida, como USG-TV especializada e/ou RM, para mapear doença profunda antes de indicar cirurgia.",
+      "tratamento_resumido": "Solicitar imagem dirigida, como USG-TV especializada e/ou RM, para mapear doença profunda antes de indicar cirurgia."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Algoritmo diagnóstico: sintomas, exame, USG especializada, RM selecionada, tratamento empírico ou laparoscopia conforme objetivo.",
+        "alt": "Ilustração educacional para Diagnóstico da Endometriose - Do Exame à Videolaparoscopia"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_3_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "ESHRE Guideline Endometriosis - issued 2 February 2022",
+      "url": "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Endometriosis-guideline.aspx",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NICE guideline NG73 - Endometriosis: diagnosis and management",
+      "url": "https://www.nice.org.uk/guidance/ng73",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "diagnostico"
   ]

@@ -6,49 +6,219 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Câncer de Endométrio — Visão de Conjunto",
+    "titulo": "Cancer de Endometrio - Visao de Conjunto",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "mecanismo",
+      "clinica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Tipo I estrogênio-dependente vs tipo II; sangramento pós-menopausa",
-  "narrativa": [],
+  "resumo_conciso": "Câncer de endométrio é fortemente associado a sangramento pós-menopausa. O tipo endometrioide é relacionado a estrogênio sem oposição; tumores não endometrioides tendem a ser mais agressivos.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Câncer de endométrio nasce do revestimento interno do útero e costuma ter um sinal de alerta precioso: sangramento uterino anormal, especialmente após a menopausa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O modelo clássico divide tumores em endometrioides, frequentemente ligados a estrogênio sem oposição, e não endometrioides, como seroso e células claras, em geral mais agressivos e menos dependentes de estrogênio."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Fatores de risco incluem obesidade, anovulação crônica, SOP, nuliparidade, diabetes, hipertensão, tamoxifeno, menopausa tardia e síndrome de Lynch."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A hiperplasia endometrial, especialmente com atipia, é precursora importante do carcinoma endometrioide. Por isso, sangramento persistente em paciente de risco exige amostragem adequada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em mulheres pós-menopausa, qualquer sangramento deve ser investigado até prova em contrário. O volume do sangramento não prediz segurança; pequeno escape pode ser o primeiro sinal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A via de disseminação pode envolver invasão miometrial, colo, linfonodos, peritônio e órgãos distantes. Grau histológico e profundidade de invasão importam para risco."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A boa notícia é que muitos casos são diagnosticados em estágio inicial justamente por causarem sangramento cedo."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-07-000",
+        "titulo": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-05-005",
+        "titulo": "Hiperplasia Endometrial - Precursora do Cancer de Endometrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-032",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Ovário — Diagnóstico, Estadiamento e Tratamento",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Vulva e Vagina",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-04-006",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Adenomiose - Endometrio Invadindo o Miometrio"
+      },
+      {
+        "bloco_id": "s7-go1-06-040",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com HIV e Outras ISTs na Saude da Mulher"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-08-020-fc-01",
+      "pergunta": "Qual sintoma mais importante do câncer de endométrio?",
+      "resposta": "Sangramento pós-menopausa ou sangramento uterino anormal.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-020-fc-02",
+      "pergunta": "Qual tipo é mais ligado a estrogênio sem oposição?",
+      "resposta": "Carcinoma endometrioide.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-020-fc-03",
+      "pergunta": "Qual síndrome hereditária aumenta risco?",
+      "resposta": "Síndrome de Lynch.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-020-fc-04",
+      "pergunta": "Hiperplasia com atipia aumenta risco de quê?",
+      "resposta": "Carcinoma endometrial, especialmente endometrioide.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-08-020-cc-01",
+      "titulo": "Pequeno escape",
+      "apresentacao": "Mulher de 63 anos relata pequeno sangramento vaginal após 8 anos de menopausa.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Câncer de endométrio é fortemente associado a sangramento pós-menopausa."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Cancer de Endometrio - Visao de Conjunto, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Câncer de endométrio é fortemente associado a sangramento pós-menopausa. O tipo endometrioide é relacionado a estrogênio sem oposição; tumores não endometrioides tendem a ser mais agressivos."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 63 anos relata pequeno sangramento vaginal após 8 anos de menopausa."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual conduta conceitual? Investigar sangramento pós-menopausa, incluindo avaliação endometrial conforme diretriz."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Investigar sangramento pós-menopausa, incluindo avaliação endometrial conforme diretriz.",
+      "tratamento_resumido": "Investigar sangramento pós-menopausa, incluindo avaliação endometrial conforme diretriz."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Esquema de endométrio normal, hiperplasia com atipia e carcinoma endometrioide, com fatores de risco estrogênicos.",
+        "alt": "Ilustracao educacional para Cancer de Endometrio - Visao de Conjunto"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Cervical Cancer Treatment",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Endometrial Cancer Treatment",
+      "url": "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica"

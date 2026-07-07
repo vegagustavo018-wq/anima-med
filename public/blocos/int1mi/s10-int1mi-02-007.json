@@ -5,54 +5,129 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "EPA-9 — Trabalhar em equipe interprofissional",
+    "subtitulo": "A enfermeira disse que 'ele está diferente hoje'. Isso é dado clínico, ou só uma impressão que você pode deixar para depois?",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 2,
+    "topico": 7,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "epa_avaliacao",
+      "comunicacao",
+      "seguranca_paciente"
     ],
+    "tipo_conteudo": "competencia_epa",
+    "status": "publicado",
+    "data_criacao": "2026-07-06",
+    "data_revisao": "2026-07-06",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
-    "formato_internato": "competencia_epa",
-    "epa_codigo": "EPA-9",
-    "epa_nivel_alvo": 4
+    "tempo_estudo_minutos": 9,
+    "palavras_chave": [
+      "EPA-9",
+      "equipe interprofissional",
+      "hierarquia médica",
+      "comunicação em ciclo fechado"
+    ],
+    "formato_internato": "competencia_epa"
   },
-  "resumo_conciso": "Contribuir e receber contribuições de enfermagem, farmácia e fisioterapia no round e no plano",
-  "narrativa": [],
+  "resumo_conciso": "A enfermagem passa mais tempo com o paciente do que qualquer médico. Quando ela diz 'ele está diferente hoje', isso é dado clínico de peso, não ruído de fundo — e a EPA-9 mede se você trata assim.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "A enfermeira te procura no corredor: \"doutor, o senhor do leito 14 está diferente hoje, não sei explicar direito, mas algo mudou\". Você olhou os sinais vitais dele há uma hora e estavam normais. É tentador responder \"ok, vou ver mais tarde\" e seguir para a próxima tarefa. Mas essa frase vaga da enfermagem — sem número, sem exame, só percepção clínica construída de horas de observação contínua que você não teve — costuma ser um dos sinais mais precoces de deterioração, precedendo alterações mensuráveis nos sinais vitais."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Cada profissão vê uma fatia diferente do paciente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Trabalhar em equipe interprofissional não é sobre hierarquia (o médico decide, os outros executam) — é sobre reconhecer que cada profissão tem acesso a uma fatia de informação que as outras não têm. A enfermagem observa o paciente continuamente ao longo do turno; a farmácia enxerga interações medicamentosas e ajustes de dose que passariam despercebidos numa lista longa de prescrições; a fisioterapia percebe mudança de capacidade funcional dia a dia. Descartar essas contribuições porque não vieram na forma de um dado 'objetivo' (número, exame) é um erro sistemático que a EPA-9 existe para corrigir."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "'Algo está diferente' dito por quem passou o turno inteiro com o paciente é informação clínica válida, mesmo sem tradução em número. Tratar isso como 'só uma impressão' e adiar a reavaliação é descartar um dos sinais mais sensíveis de mudança clínica disponíveis — sensível às vezes até antes dos próprios sinais vitais se alterarem."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se você responder à enfermagem 'os sinais vitais estão normais, deve ser só impressão' e continuar sua ronda sem reavaliar o paciente?",
+      "resposta": "Sinais vitais normais não excluem deterioração inicial — muitos pacientes mostram alteração perceptível ao cuidador atento antes de qualquer parâmetro numérico se alterar de forma clara. Descartar a percepção da enfermagem sem reavaliação pessoal atrasa o reconhecimento de uma piora real, e é exatamente o tipo de falha de comunicação interprofissional que sistemas de segurança do paciente tentam corrigir."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Comunicação em equipe eficaz também exige fechamento de ciclo: quando alguém te passa uma informação ou uma tarefa, confirmar verbalmente o que foi entendido ('entendi, vou reavaliar o leito 14 agora e te retorno') fecha o ciclo de comunicação e evita que a informação se perca. Como é avaliada: MSF/360 (que capta especificamente como enfermagem e outros profissionais percebem sua capacidade de ouvir e integrar contribuições), e observação direta em rounds multiprofissionais. Erros comuns do interno: tratar contribuições de outras profissões como secundárias à opinião médica; não fechar o ciclo de comunicação (não confirmar que ouviu e vai agir); e reavaliar só quando o pedido vem acompanhado de um dado numérico alterado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1mi-02-006",
+        "titulo": "EPA-6 — Comunicar o plano com o paciente (apresentar o encontro clínico)",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-02-008",
+        "titulo": "EPA-10 — Reconhecer o paciente que requer cuidado urgente e iniciar manejo",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "A percepção da enfermagem de que 'algo mudou' é frequentemente o primeiro gatilho para a competência de reconhecimento de urgência observada na próxima EPA."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-02-007-001",
+      "tipo": "por_que",
+      "pergunta": "Por que a frase 'algo está diferente' dita pela enfermagem deve ser tratada como dado clínico relevante, mesmo sem tradução em número?",
+      "resposta": "Porque a percepção construída de horas de observação contínua costuma ser um dos sinais mais precoces e sensíveis de deterioração clínica, muitas vezes precedendo alterações mensuráveis nos sinais vitais. Descartar essa informação por não vir em forma de dado numérico objetivo ignora uma fonte de informação clínica genuína e potencialmente mais sensível do que os parâmetros já medidos.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "epa",
+        "epa-9",
+        "equipe"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Bloco descreve uma competência EPA de comunicação e trabalho em equipe interprofissional, não uma estrutura anatômica ou processo fisiopatológico. Não há síndrome clínica isolada correspondente a uma falha de comunicação em equipe — o desfecho depende do caso específico onde a falha ocorre, o que tornaria qualquer cascata Causa→Estrutura→Disfunção→Sintoma artificial e desconectada do que o bloco realmente ensina."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "em_mudanca",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "epa_avaliacao",
-    "comunicacao",
-    "seguranca_paciente"
+  "fontes": [
+    {
+      "tipo": "diretriz",
+      "titulo": "Core Entrustable Professional Activities for Entering Residency",
+      "autores": "Association of American Medical Colleges (AAMC)",
+      "ano": 2014
+    },
+    {
+      "tipo": "diretriz",
+      "titulo": "TeamSTEPPS: Team Strategies and Tools to Enhance Performance and Patient Safety",
+      "autores": "Agency for Healthcare Research and Quality (AHRQ)",
+      "ano": 2023
+    }
   ]
 }

@@ -5,50 +5,381 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Vias Parenterais (IV, IM, SC)",
+    "subtitulo": "Por que injetar um fármaco garante que ele chegue todo — e o que se paga por essa garantia?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "vias-parenterais",
+      "biodisponibilidade",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Biodisponibilidade IV=100%; velocidade; quando escolher cada via",
-  "narrativa": [],
+  "resumo_conciso": "Vias parenterais são aquelas que contornam completamente o trato gastrointestinal, entregando o fármaco direto num tecido ou dentro de um vaso sanguíneo, furando a pele para isso. Elas existem porque, em certos cenários, a via oral simplesmente não serve: o paciente não consegue engolir, o quadro é grave demais para esperar a absorção digestiva, ou o próprio fármaco não sobrevive ao trato gastrointestinal. As três vias parenterais mais usadas — intravenosa (IV), intramuscular (IM) e subcutânea (SC) — entregam o fármaco em locais diferentes do corpo, e essa diferença de local é o que explica por que uma age em segundos e outra pode levar minutos a horas. A intravenosa injeta o fármaco direto no sangue, sem nenhuma etapa de absorção: por definição, 100% da dose chega intacta à circulação — biodisponibilidade de 100%, o padrão-ouro contra o qual todas as outras vias são comparadas. A intramuscular e a subcutânea depositam o fármaco num tecido, de onde ele precisa ser absorvido para os capilares locais antes de circular — mais lento que a IV, mas ainda mais rápido e previsível que a via oral, já que evitam o trato digestivo e a primeira passagem hepática. O preço comum às três é a invasão física do corpo: dor, risco de infecção, necessidade de material estéril e, em geral, de um profissional treinado para aplicar.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Retome o paciente em choque anafilático do bloco anterior. O comprimido está descartado — não pela dose errada, mas porque o trato digestivo, a porta de entrada da via oral, está mal perfundido e é lento demais para o que essa emergência exige. Sobra uma pergunta prática: se não é pela boca, por onde, exatamente, o fármaco vai entrar?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta é: furando o corpo. É essa a definição operacional de via parenteral — o prefixo já entrega o significado, e será explicado mais adiante — qualquer via que entregue o fármaco diretamente num tecido ou vaso sanguíneo, sem passar pelo tubo digestivo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a via oral não serve — e algo precisa resolver isso"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existem pelo menos três situações em que a via oral, mesmo sendo a mais simples e barata, deixa de ser uma opção viável. A primeira é a urgência: um efeito que precisa começar em segundos a minutos não pode esperar os trinta a sessenta minutos que a absorção intestinal normalmente exige. A segunda é a condição do paciente: alguém inconsciente, vomitando, com obstrução intestinal ou em choque (com o próprio intestino mal perfundido) não consegue receber — ou não consegue absorver — nada por essa via. A terceira é a química da molécula: algumas substâncias são destruídas pelo ácido gástrico ou pelas enzimas digestivas antes de serem absorvidas — é o caso, por exemplo, da insulina, uma proteína que o estômago trata como comida a ser digerida, não como fármaco a ser absorvido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nesses três cenários, o corpo continua tendo portas de entrada — só que nenhuma delas passa pela boca. Um vaso sanguíneo, um músculo, o tecido logo abaixo da pele: todos podem receber um fármaco diretamente, desde que se aceite pagar o preço de uma agulha atravessando a barreira que normalmente protege esses locais do meio externo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: as vias parenterais existem porque, em certas situações — urgência, incapacidade do paciente, fragilidade química da molécula — a via oral não é apenas inconveniente, é impossível. Alguma via precisa preencher essa lacuna, e ela precisa contornar o tubo digestivo por completo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita a solução: furar a barreira certa, no lugar certo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução parenteral não é uma via única, mas uma família de três vias que têm em comum a mesma ideia — atravessar a pele com uma agulha — e diferem em qual estrutura, exatamente, recebe o fármaco do outro lado da agulha: um vaso sanguíneo (intravenosa), um músculo (intramuscular) ou o tecido conjuntivo frouxo logo abaixo da derme (subcutânea)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa escolha de destino não é indiferente. Cada tecido tem uma vascularização diferente, e é essa vascularização — mais do que a agulha em si — que determina a velocidade com que o fármaco alcança a circulação sistêmica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como cada via funciona — e por que a velocidade muda entre elas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na via intravenosa, a agulha entrega o fármaco diretamente dentro do vaso. Não existe etapa de absorção: o fármaco já nasce dissolvido no sangue. Por isso, e apenas por isso, a IV tem biodisponibilidade de 100% — toda a dose administrada está, por definição, na circulação sistêmica no instante em que termina a injeção. É essa propriedade que faz da via intravenosa a referência contra a qual a biodisponibilidade de qualquer outra via é calculada: quando um livro de farmacologia diz que um fármaco oral tem 'biodisponibilidade de 40%', o número 40% é sempre uma comparação implícita com os mesmos 100 mg dados por via IV."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na via intramuscular, a agulha para no músculo — um tecido rico em capilares sanguíneos, mas fisicamente separado do sangue por uma parede capilar que o fármaco ainda precisa atravessar. Existe, portanto, uma etapa de absorção, só que muito mais curta e mais previsível do que a do trato digestivo: minutos a poucas dezenas de minutos, dependendo da lipossolubilidade do fármaco e do fluxo sanguíneo local do músculo escolhido (o deltoide é mais vascularizado que o glúteo, por exemplo, e por isso absorve mais rápido)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na via subcutânea, a agulha para ainda mais superficialmente, no tecido conjuntivo frouxo sob a pele — uma região com vascularização mais pobre que o músculo. A absorção é a mais lenta das três parenterais, o que parece uma desvantagem, mas é exatamente o que torna essa via desejável em outra circunstância: quando o objetivo é um efeito prolongado e estável, e não um pico rápido. É por isso que a insulina — que precisaria manter um nível relativamente constante ao longo de horas — é rotineiramente administrada por via subcutânea, e não intravenosa."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Comparação das três vias parenterais",
+      "colunas": [
+        "Critério",
+        "Intravenosa (IV)",
+        "Intramuscular (IM)",
+        "Subcutânea (SC)"
+      ],
+      "linhas": [
+        {
+          "criterio": "Local de entrega",
+          "valores": [
+            "Dentro do vaso sanguíneo",
+            "Tecido muscular",
+            "Tecido conjuntivo sob a pele"
+          ]
+        },
+        {
+          "criterio": "Etapa de absorção",
+          "valores": [
+            "Nenhuma — já está no sangue",
+            "Curta, do músculo para os capilares",
+            "Mais longa, de vascularização mais pobre"
+          ]
+        },
+        {
+          "criterio": "Biodisponibilidade",
+          "valores": [
+            "100%, por definição",
+            "Alta, mas não total (perdas locais)",
+            "Alta, mas a mais lenta a se completar"
+          ]
+        },
+        {
+          "criterio": "Início de efeito",
+          "valores": [
+            "Segundos",
+            "Minutos a poucas dezenas de minutos",
+            "Dezenas de minutos a horas"
+          ]
+        },
+        {
+          "criterio": "Uso típico",
+          "valores": [
+            "Emergências, controle fino de dose contínua",
+            "Vacinas, antibióticos, efeito intermediário",
+            "Insulina, heparina, efeito sustentado"
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A regra que organiza as três vias: quanto mais vascularizado o tecido de destino, mais rápida a absorção. Vaso sanguíneo (IV) não tem etapa de absorção; músculo (IM) absorve rápido; tecido subcutâneo (SC), menos vascularizado, absorve devagar — e às vezes é exatamente essa lentidão que se busca."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir: fixe que as três vias parenterais resolvem o mesmo problema (contornar o trato digestivo) de formas graduadas — da entrega instantânea da IV à liberação lenta da SC — e que essa gradação depende unicamente da vascularização do tecido escolhido como destino."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que as vias parenterais se articulam"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O conceito de biodisponibilidade de 100% da via IV é o ponto de referência formal que a disciplina vai usar, mais adiante, para definir matematicamente a biodisponibilidade de qualquer outra via — ela é sempre uma fração do que a mesma dose renderia por via intravenosa. As vias parenterais também retomam, de Histologia, a ideia de que atravessar uma barreira epitelial ou tecidual tem custo biológico: aqui, o \"custo\" de evitar esse trajeto é pago com a agulha, não com tempo de absorção."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] A escolha entre IM e SC no dia a dia clínico também depende de fatores de formulação (volume máximo tolerado pelo tecido, viscosidade do fármaco, risco de necrose em certos vasoconstritores) que fogem ao escopo farmacocinético deste bloco e pertencem à disciplina de Farmacotécnica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa lógica vai reaparecer, ainda nesta disciplina, quando o conceito de biodisponibilidade for formalizado matematicamente — e, mais adiante no curso, em Farmacologia Clínica, quando a escolha entre bolus intravenoso e infusão contínua for discutida como forma de controlar picos e vales de concentração plasmática."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "💉",
+      "conteudo": "Pense nas três vias parenterais como três formas de entregar uma encomenda urgente numa cidade. **A via intravenosa** é entregar o pacote direto na mão de quem está dentro do caminhão de distribuição — ele já está na rota principal, sem nenhuma etapa extra. **A via intramuscular** é deixar o pacote numa central de distribuição de bairro, bem localizada e movimentada, de onde ele sai para a rota principal em poucos minutos. **A via subcutânea** é deixar o pacote numa caixa de correio de rua, num bairro mais tranquilo e menos movimentado — vai chegar à rota principal, só que mais devagar. A analogia quebra num ponto importante: ao contrário de uma encomenda, que sempre quer chegar o mais rápido possível, o fármaco às vezes é colocado de propósito na 'caixa de correio mais lenta' (a subcutânea), porque o efeito desejado é gradual e prolongado, não imediato."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "parenteral",
+      "origem": "do grego pará (ao lado de, contornando) + énteron (intestino)",
+      "significado": "literalmente, 'ao lado do intestino' — ou seja, que contorna o trato gastrointestinal",
+      "explicacao": "O termo foi cunhado justamente para descrever, por oposição, tudo que não é enteral: qualquer via que não dependa da absorção pelo tubo digestivo. Por isso 'parenteral' é uma categoria definida pela negativa — inclui a intravenosa, a intramuscular, a subcutânea e outras vias injetáveis, todas unidas pelo único traço comum de evitar o intestino, mesmo entregando o fármaco em locais anatomicamente muito diferentes entre si. Entender a etimologia evita um erro comum: parenteral não significa 'injetável' por definição estrita, significa 'que contorna o intestino' — a via injetável é apenas o meio mais comum de conseguir isso."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a via subcutânea fosse tão vascularizada quanto o músculo, a insulina ainda faria sentido ser aplicada por ali?",
+      "resposta": "Não da mesma forma. Parte do motivo de a insulina subcutânea funcionar bem no controle glicêmico diário é justamente a absorção lenta e sustentada que a baixa vascularização do tecido subcutâneo proporciona — ela evita picos abruptos de insulina no sangue, que aumentariam o risco de hipoglicemia, e entrega um perfil de ação mais estável ao longo de horas. Se o tecido subcutâneo fosse tão vascularizado quanto o músculo, a absorção ficaria tão rápida quanto a de uma injeção intramuscular, produzindo picos mais altos e quedas mais rápidas — perfil pior, não melhor, para o uso pretendido. A 'desvantagem' de menor vascularização é, neste caso específico, a própria razão de a via ter sido escolhida."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Três destinos, três velocidades: IV, IM e SC",
+      "descricao": "Diagrama esquemático em corte transversal da pele mostrando três agulhas em profundidades diferentes, cada uma atingindo um destino distinto. Camada mais superficial: tecido subcutâneo, com agulha curta e ângulo raso, poucos capilares finos ao redor, rótulo 'SC — absorção lenta'. Camada intermediária: músculo, com agulha mais longa e reta, malha de capilares mais densa, rótulo 'IM — absorção rápida'. À direita, separado, um vaso sanguíneo maior sendo puncionado diretamente por uma agulha conectada a uma linha de infusão, rótulo 'IV — sem absorção, 100% direto'. Setas indicando o trajeto até uma seta maior rotulada 'circulação sistêmica', com comprimento de seta proporcional à velocidade (mais curta para IV, mais longa para SC). Estilo esquemático de livro didático farmacológico, cores distintas para cada via, legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Corte transversal esquemático da pele e tecidos subjacentes, com três agulhas ilustradas lado a lado em profundidades crescentes. Agulha 1 (mais à esquerda, mais rasa): atinge o tecido subcutâneo logo abaixo da derme, poucos capilares finos e esparsos ao redor da ponta, rótulo abaixo 'SC — absorção lenta'. Agulha 2 (central, mais profunda): atinge tecido muscular estriado, malha densa de capilares ao redor da ponta, rótulo abaixo 'IM — absorção rápida'. Agulha 3 (à direita, distinta das outras): conectada a uma linha fina simulando equipo de soro, entra diretamente dentro de um vaso sanguíneo de calibre maior com hemácias estilizadas fluindo dentro, rótulo abaixo 'IV — 100% direto, sem absorção'. Das três estruturas, setas convergem para uma seta maior rotulada 'CIRCULAÇÃO SISTÊMICA' à direita do diagrama, com espessura e comprimento das setas proporcionais à velocidade (seta curta e grossa para IV, seta longa e fina para SC). Cores suaves e distintas para cada via (por exemplo, azul para IV, verde para IM, laranja para SC). Texto em português, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-001",
+        "titulo": "Vias de Administração — Como o Fármaco Entra (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já entender que as vias de administração se agrupam em três grandes famílias (enteral, parenteral, tópica) e que cada uma troca velocidade por invasividade, antes de detalhar como as vias parenterais especificamente entregam essa velocidade."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Biodisponibilidade — definição formal e cálculo pela área sob a curva",
+        "mecanismo_conexao": "A biodisponibilidade de 100% da via IV, aqui apresentada de forma conceitual, será usada como referência matemática (F = AUC via / AUC IV) quando a biodisponibilidade de outras vias for calculada formalmente.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "APLICACAO_CLINICA",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia-clinica",
+        "semestre_futuro": 6,
+        "topico": "Infusão contínua versus bolus intravenoso no controle de picos e vales plasmáticos",
+        "mecanismo_conexao": "A ausência de etapa de absorção da via IV, que garante entrega imediata, é o que torna possível controlar com precisão a velocidade de entrada de um fármaco por meio de bombas de infusão — tema que será aprofundado em manejo clínico de sedação e vasopressores.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "endocrinologia",
+        "semestre_futuro": 7,
+        "topico": "Farmacocinética das formulações de insulina subcutânea",
+        "mecanismo_conexao": "A absorção lenta da via subcutânea, aqui explicada pela baixa vascularização do tecido, é a base fisiológica para entender por que diferentes formulações de insulina (ultrarrápida, rápida, lenta) têm perfis de ação tão distintos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-001-02-fc01",
+      "pergunta": "Por que a via intravenosa tem, por definição, biodisponibilidade de 100%?",
+      "resposta": "Porque o fármaco é injetado diretamente dentro do vaso sanguíneo, sem nenhuma barreira biológica a atravessar antes de estar na circulação. Não existe etapa de absorção — o fármaco já nasce dissolvido no sangue no momento em que a injeção termina. Como biodisponibilidade mede a fração da dose que alcança a circulação sistêmica intacta, e aqui toda a dose já está lá, o valor é necessariamente 100%. É por isso que a via IV serve como referência para calcular a biodisponibilidade de qualquer outra via.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "vias-parenterais",
+        "biodisponibilidade",
+        "intravenosa"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-001-02-fc02",
+      "pergunta": "Explique por que a via intramuscular costuma ter absorção mais rápida que a via subcutânea, usando o critério anatômico correto.",
+      "resposta": "A diferença está na vascularização do tecido de destino, não na profundidade da agulha em si. O músculo é um tecido ricamente vascularizado, com grande densidade de capilares sanguíneos, o que permite que o fármaco depositado ali seja captado rapidamente pela circulação. O tecido subcutâneo, por sua vez, é conjuntivo frouxo com vascularização mais pobre, de modo que o fármaco leva mais tempo para encontrar um capilar e ser absorvido. Quanto mais vascularizado o destino, mais rápida a absorção — essa é a regra que organiza a velocidade das vias parenterais não intravenosas.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "vias-parenterais",
+        "intramuscular",
+        "subcutanea",
+        "vascularizacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-001-02-fc03",
+      "pergunta": "Por que a insulina é rotineiramente administrada por via subcutânea, e não por via intravenosa, no controle glicêmico diário de um paciente diabético?",
+      "resposta": "Porque o objetivo terapêutico do uso diário não é um pico rápido de ação, e sim um efeito gradual e sustentado ao longo de horas. A via subcutânea, por ter vascularização mais pobre, absorve o fármaco lentamente, produzindo um perfil de concentração plasmática mais estável e evitando picos abruptos que aumentariam o risco de hipoglicemia. A via intravenosa, ao entregar o fármaco instantaneamente, geraria picos e quedas rápidos, incompatíveis com o controle glicêmico contínuo desejado no dia a dia — embora a via IV siga sendo a escolha correta em emergências como cetoacidose diabética, onde o controle precisa ser rápido e ajustável minuto a minuto.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "vias-parenterais",
+        "subcutanea",
+        "insulina"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-001-02-fc04",
+      "pergunta": "Se a via subcutânea fosse tão vascularizada quanto o tecido muscular, a insulina subcutânea ainda seria uma boa escolha para o controle glicêmico diário?",
+      "resposta": "Não seria a mesma escolha vantajosa. A lentidão de absorção da via subcutânea é, hoje, o que produz o perfil estável e sustentado desejado no controle diário. Se o tecido subcutâneo fosse tão vascularizado quanto o músculo, a absorção da insulina se tornaria tão rápida quanto uma injeção intramuscular, gerando picos mais altos e quedas mais rápidas — um perfil pior, e não melhor, para manter a glicemia estável ao longo do dia. Isso mostra que a 'menor vascularização' do tecido subcutâneo não é uma limitação a ser superada, é a própria razão pela qual essa via foi escolhida para esse fármaco.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "vias-parenterais",
+        "subcutanea",
+        "raciocinio-clinico"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-001-02-fc05",
+      "pergunta": "A palavra 'parenteral' vem do grego pará (ao lado de) + énteron (intestino). Por que esse nome é definido 'pela negativa', e que erro comum de interpretação essa etimologia ajuda a evitar?",
+      "resposta": "O nome nasceu para descrever tudo que contorna o trato gastrointestinal, sem se referir a nenhum local específico de entrega — por isso agrupa vias tão diferentes quanto a intravenosa (dentro de um vaso), a intramuscular (num músculo) e a subcutânea (sob a pele) sob o mesmo rótulo, com o único critério comum sendo 'evitar o intestino'. O erro que essa etimologia ajuda a evitar é pensar que 'parenteral' significa, por definição, 'injetável': o traço definidor é contornar o trato digestivo, e a via injetável é apenas o meio mais comum — mas não conceitualmente obrigatório — de alcançar esse objetivo.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "vias-parenterais",
+        "etimologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-001-02-caso01",
+      "titulo": "Mesma classe, três vias, três velocidades: adrenalina na anafilaxia versus insulina no dia a dia",
+      "apresentacao": "Retomando o caso do bloco anterior: a criança de 6 anos em anafilaxia recebe adrenalina por via intramuscular, com resposta clínica em poucos minutos. Numa outra unidade, um paciente diabético tipo 1 aplica, todas as manhãs, sua dose de insulina basal por via subcutânea, sem qualquer urgência associada ao ato. Em uma terceira situação, esse mesmo paciente é internado em cetoacidose diabética grave, e a equipe médica passa a infundir insulina por via intravenosa contínua, ajustando a velocidade da bomba de infusão a cada hora conforme a glicemia capilar.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Três contextos clínicos com exigências de velocidade e controle completamente diferentes: uma emergência que precisa de efeito em minutos (anafilaxia), um controle metabólico estável ao longo do dia (insulina basal) e uma emergência metabólica que exige ajuste fino e contínuo (cetoacidose)."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Na anafilaxia, a via intramuscular entrega a adrenalina a um músculo bem vascularizado, absorvida em minutos. No controle diário, a via subcutânea entrega a insulina a um tecido pouco vascularizado, absorvida lentamente ao longo de horas. Na cetoacidose, a via intravenosa entrega a insulina direto ao sangue, sem qualquer etapa de absorção, permitindo ajuste literalmente minuto a minuto."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Trocar as vias entre esses cenários seria prejudicial em todos os sentidos: adrenalina subcutânea na anafilaxia demoraria demais para reverter o choque; insulina intravenosa contínua no uso diário exigiria acesso venoso permanente e monitorização impraticável para uma rotina ambulatorial; insulina subcutânea na cetoacidose seria absorvida de forma lenta e imprevisível justamente quando o paciente mais precisa de ajuste rápido, e sua perfusão periférica, comprometida na cetoacidose, tornaria essa absorção ainda mais errática."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Na anafilaxia, reversão do broncoespasmo e da hipotensão em minutos após a via intramuscular. No controle diário, glicemia estável ao longo do dia sem qualquer sintoma agudo. Na cetoacidose, correção gradual e monitorada da glicemia e da acidose, com ajustes de dose guiados por exames repetidos."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A mesma classe de fármaco (aqui, insulina em dois dos três cenários) muda de via conforme a urgência e a necessidade de controle fino — e essa escolha, novamente, precede qualquer decisão sobre a dose exata a ser administrada."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra as três vias parenterais em ação simultânea numa mesma trajetória clínica plausível: IM para urgência intermediária, SC para efeito sustentado e IV para controle imediato e ajustável — exatamente a gradação de velocidade e controle explicada pela vascularização de cada tecido de destino.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "endocrinologia",
+        "medicina-de-emergencia"
+      ],
+      "diagnostico_revelado": "Escolha racional entre vias parenterais (IM, SC, IV) conforme a urgência e a necessidade de controle fino da dose ao longo do tempo.",
+      "tratamento_resumido": "Não há tratamento único a revelar; o caso é comparativo e ilustra que a mesma molécula (insulina) muda de via parenteral conforme o contexto clínico exigir efeito sustentado (SC) ou controle imediato e ajustável (IV)."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-001-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 1 — Introduction: The Nature of Drugs and Drug Development.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 8 — Absorption and Distribution of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

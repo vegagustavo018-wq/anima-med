@@ -5,48 +5,281 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Por Que a Célula Regula uma Via — O Problema do Desperdício e do Ciclo Fútil",
+    "subtitulo": "O que acontece quando a célula acelera e freia a mesma estrada ao mesmo tempo?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 2,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "metabolismo",
+      "regulacao",
+      "ciclo-futil",
+      "energia",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Por que síntese e degradação não correm juntas; a regulação recíproca",
-  "narrativa": [],
+  "resumo_conciso": "A célula regula vias porque metabolismo sem controle vira desperdício: ATP é gasto para construir moléculas que outra via quebra logo em seguida, ou combustível é queimado quando a energia já está abundante. O exemplo central é o ciclo fútil, em que duas vias opostas funcionam ao mesmo tempo e transformam energia química em calor sem produzir trabalho útil. A regulação recíproca resolve o problema: sinais de abundância ligam armazenamento e freiam degradação, enquanto sinais de escassez fazem o inverso.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine ligar o ar-condicionado e o aquecedor no mesmo quarto, ao máximo, ao mesmo tempo. O termostato enlouquece, a conta de energia sobe e quase nada útil acontece. A célula tem uma versão molecular desse problema: uma via pode construir uma molécula enquanto outra quebra a mesma molécula logo depois."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse é o motivo profundo da regulação metabólica. Não basta ter enzimas capazes de fazer reações; é preciso decidir quando cada via deve ficar aberta, lenta ou fechada. Sem essa decisão, a célula gastaria ATP, NADH ou NADPH em círculos, sem ganhar estrutura, reserva ou energia aproveitável."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que síntese e degradação não podem correr juntas?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vias anabólicas e catabólicas costumam apontar em direções opostas. Uma constrói, outra desmonta. A glicogênese guarda glicose como glicogênio; a glicogenólise quebra glicogênio para liberar glicose-1-fosfato. A síntese de ácidos graxos usa carbono e poder redutor para construir gordura; a beta-oxidação quebra ácidos graxos para gerar acetil-CoA, NADH e FADH2. Se as duas direções ficarem ativas no mesmo lugar e no mesmo momento, a célula paga para desfazer o que acabou de fazer."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: vias opostas precisam de regulação recíproca. Quando uma direção é favorecida, a direção contrária deve ser freada, ou a energia vira desperdício."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "ciclo fútil",
+      "origem": "fútil vem do latim futilis, algo que se derrama, sem firmeza ou sem proveito",
+      "significado": "um ciclo que consome energia mas não entrega trabalho útil proporcional",
+      "explicacao": "O nome é pedagógico: a via roda, moléculas mudam, ATP pode ser gasto, mas o resultado líquido parece vazio. Em biologia, alguns ciclos aparentemente fúteis podem ter função regulatória ou termogênica em contextos específicos; aqui o foco é o desperdício quando eles ocorrem sem controle."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: regulação não é detalhe decorativo depois da via. Ela é o que impede a via de virar contradição química. Primeiro entenda o perigo; depois os nomes das enzimas reguladoras ficam muito mais óbvios."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula percebe que deve ligar ou desligar?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A célula lê sinais de estado. ATP alto sugere que não há urgência em queimar combustível; AMP alto denuncia queda de energia. Citrato alto informa que há carbono abundante chegando ao ciclo de Krebs. Insulina sinaliza abundância no corpo inteiro; glucagon e adrenalina sinalizam escassez, jejum ou alarme. A regulação nasce quando esses sinais mudam a atividade das enzimas que controlam o fluxo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução mais elegante é a regulação recíproca. O mesmo sinal que ativa uma via costuma inibir a via oposta. No metabolismo do glicogênio, por exemplo, o estado hormonal que favorece mobilizar glicose também freia armazenamento. No metabolismo de ácidos graxos, malonil-CoA sinaliza síntese em andamento e inibe a entrada de ácidos graxos na mitocôndria pela CPT-I, evitando construir e queimar gordura ao mesmo tempo."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se a célula não conseguisse regular reciprocamente vias opostas?",
+      "resposta": "Ela entraria em gasto crônico. Poderia consumir ATP sintetizando glicogênio enquanto outro conjunto de enzimas o quebra; poderia gastar NADPH fabricando ácido graxo enquanto a mitocôndria tenta oxidá-lo. O resultado seria queda de eficiência, produção de calor sem objetivo e menor capacidade de responder a jejum, exercício ou alimentação."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "semaforo",
+      "conteudo": "Pense em uma ponte estreita com tráfego nos dois sentidos. **A via anabólica** é o fluxo entrando para construir estoque; **a via catabólica** é o fluxo saindo para mobilizar estoque. **A enzima reguladora** é o semáforo no começo da ponte. **Insulina, glucagon, ATP, AMP e citrato** são sensores de trânsito. Se os dois semáforos ficarem verdes ao mesmo tempo, os carros travam e combustível é queimado parado. A analogia quebra porque moléculas não batem umas nas outras como carros; o congestionamento aqui é energético."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo fútil como curto-circuito energético",
+      "descricao": "Esquema com uma molécula A sendo convertida em B por uma via que gasta ATP, enquanto B volta a A por outra via. No centro, calor/desperdício como saída, e ao lado a versão regulada com uma seta verde e outra vermelha.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. À esquerda, ciclo fútil: Molécula A -> Molécula B com rótulo 'consome ATP'; Molécula B -> Molécula A por seta oposta; no meio, ícone de calor e texto 'energia desperdiçada'. À direita, regulação recíproca: mesma dupla A/B, mas uma seta verde ativa e seta oposta vermelha bloqueada; rótulos 'estado alimentado' e 'estado de jejum' como exemplos. Estilo limpo, cores suaves, sem excesso de texto.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse princípio voltará em praticamente todo o semestre. Glicólise e gliconeogênese não são a mesma estrada em sentidos opostos; elas têm passos irreversíveis contornados por enzimas diferentes justamente para permitir controle. Glicogênese e glicogenólise usam enzimas reguladoras diferentes. Síntese e oxidação de ácidos graxos são separadas por sinais e por compartimentos. O metabolismo é vivo porque sabe dizer não."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-00-000",
+        "titulo": "Metabolismo — A Economia de Energia da Célula",
+        "relevancia": "base_necessaria",
+        "explicacao": "A noção de economia celular prepara a ideia de que energia desperdiçada tem custo biológico real."
+      },
+      {
+        "bloco_id": "s3-bioq2-00-001",
+        "titulo": "Anabolismo vs Catabolismo — A Lógica das Duas Direções",
+        "relevancia": "base_necessaria",
+        "explicacao": "A regulação recíproca depende de entender que construir e degradar são direções metabólicas diferentes."
+      },
+      {
+        "bloco_id": "s3-bioq2-00-002",
+        "titulo": "O Mapa Metabólico — Como as Vias se Conectam",
+        "relevancia": "base_necessaria",
+        "explicacao": "O mapa mostra onde fluxos podem se cruzar; este bloco explica por que esses cruzamentos precisam de semáforos."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Frutose-2,6-Bisfosfato — O Sinal que Decide Glicólise ou Gliconeogênese",
+        "mecanismo_conexao": "A frutose-2,6-bisfosfato é exemplo clássico de sinal que favorece uma direção e freia a oposta.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Regulação Recíproca entre Síntese e Oxidação de Gordura",
+        "mecanismo_conexao": "Malonil-CoA ajuda a impedir que a célula sintetize e oxide ácidos graxos ao mesmo tempo.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Diabetes Mellitus — A Falência do Controle Metabólico (Correlação Clínica)",
+        "mecanismo_conexao": "Diabetes mostra em escala clínica o que acontece quando sinais de abundância e escassez ficam descoordenados.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "AMPK — O Sensor Universal de Energia da Célula",
+        "mecanismo_conexao": "AMPK traduz baixa energia em freio de vias consumidoras e estímulo de vias produtoras de ATP.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "Os Quatro Modos de Controlar uma Enzima Reguladora",
+        "tipo_relacao": "APROFUNDA",
+        "explicacao": "Depois de entender por que regular, o estudante aprende os quatro mecanismos moleculares de controle."
+      },
+      {
+        "bloco_id": "Compartimentalização Metabólica — Cada Via no Seu Lugar",
+        "tipo_relacao": "COMPLEMENTA",
+        "explicacao": "Separar vias em lugares diferentes é uma forma de evitar encontros que alimentariam ciclos fúteis."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-00-003-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que a célula precisa regular vias metabólicas opostas?",
+      "resposta": "Porque vias opostas ativas ao mesmo tempo podem consumir energia sem produzir resultado útil. A regulação recíproca faz uma direção predominar enquanto a outra é freada, preservando ATP, poder redutor e coerência com o estado do organismo.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "regulacao",
+        "ciclo-futil"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-00-003-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Como a regulação recíproca evita um ciclo fútil?",
+      "resposta": "Ela usa o mesmo estado energético ou hormonal para modular duas vias em sentidos opostos. Um sinal de abundância pode ativar armazenamento e inibir mobilização; um sinal de escassez faz o inverso. Assim, a célula não paga para construir e degradar simultaneamente.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "regulacao-reciproca",
+        "hormonios"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-00-003-fc03",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de pensar que glicólise e gliconeogênese são apenas a mesma via em sentidos opostos?",
+      "resposta": "A armadilha é ignorar os passos irreversíveis e os pontos de controle. A gliconeogênese precisa contornar reações da glicólise com enzimas diferentes, justamente para permitir regulação recíproca e evitar que a célula rode as duas direções sem controle.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "glicolise",
+        "gliconeogenese",
+        "armadilha"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-00-003-fc04",
+      "tipo": "clinico",
+      "pergunta": "Por que o diabetes pode ser visto como falha de coordenação metabólica, além de hiperglicemia?",
+      "resposta": "Porque a falta de ação adequada da insulina faz tecidos interpretarem mal o estado de abundância. O fígado pode continuar produzindo glicose e mobilizando combustíveis enquanto o sangue já está rico em glicose. A doença revela uma perda de coerência entre sinal hormonal, via metabólica e necessidade real.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "diabetes",
+        "clinico",
+        "insulina"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-00-003-caso01",
+      "titulo": "Glicose alta em sangue, mas fígado agindo como se faltasse combustível",
+      "apresentacao": "Adolescente chega ao pronto atendimento com perda de peso, muita sede e urina frequente. A glicemia está elevada. Antes de discutir protocolos, a pergunta bioquímica é: como o corpo pode ter glicose sobrando no sangue e ainda assim ativar vias de jejum?",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Deficiência importante de sinal insulínico impede que o estado de abundância seja comunicado adequadamente aos tecidos."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Redes de enzimas reguladoras hepáticas e adipocitárias passam a obedecer a um padrão de escassez."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Vias de mobilização e produção de combustível ficam favorecidas quando deveriam ser freada por sinal de abundância."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Hiperglicemia causa diurese osmótica, gerando poliúria e sede; a mobilização de gordura pode alimentar cetogênese."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A perda de regulação recíproca em escala sistêmica pode evoluir para cetoacidose diabética, desidratação e risco clínico."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra o custo de uma via sem regulação eficaz: mesmo com glicose abundante no sangue, a falta do sinal insulínico faz o fígado e o tecido adiposo se comportarem como se houvesse escassez, ativando simultaneamente vias que deveriam estar mutuamente inibidas — o próprio problema do desperdício e do ciclo fútil que o bloco descreve.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Endocrinologia",
+        "Clínica Médica"
+      ],
+      "diagnostico_revelado": "Diabetes mellitus com descoordenação metabólica, usado aqui como correlação bioquímica inicial.",
+      "tratamento_resumido": "Reposição de fluidos e insulina quando indicado em contexto clínico; detalhes de dose e protocolo pertencem aos blocos clínicos específicos."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-00-003-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'Ciclo fútil como curto-circuito energético'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Berg JM, Tymoczko JL, Gatto GJ, Stryer L. Biochemistry. 9th ed. W.H. Freeman; 2019. Capítulos de regulação metabólica.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Seções de controle de vias metabólicas.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "funcao"

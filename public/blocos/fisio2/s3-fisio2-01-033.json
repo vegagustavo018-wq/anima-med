@@ -5,50 +5,193 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Capacidade de Difusão (DLCO) e Suas Alterações",
-    "semestre": 3,
+    "subtitulo": "Avaliando a integridade da barreira alvéolo-capilar através da transferência de monóxido de carbono",
     "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
-    "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "semestre": 3,
+    "tipo": "conceito",
     "tags": [
-      "fisio2",
-      "esqueleto"
+      "Fisiologia Respiratória",
+      "DLCO",
+      "Difusão Gasosa",
+      "Lei de Fick",
+      "Espaço Alvéolo-Capilar"
     ],
+    "tempo_leitura_minutos": 10,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-02"
   },
-  "resumo_conciso": "O que a DLCO mede; queda no enfisema, fibrose e anemia",
-  "narrativa": [],
+  "resumo_conciso": "A DLCO quantifica a capacidade de transferência de gases do alvéolo para o sangue. Ela diminui drasticamente em condições que reduzem a área de troca (como enfisema), aumentam a espessura da barreira (como fibrose) ou reduzem a capacidade de ligação da hemoglobina (como anemia).",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "A Transição da Teoria para a Medida Prática"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, estudamos como a Lei de Fick governa a passagem passiva de gases através da membrana alvéolo-capilar. Sabemos que essa taxa depende da área, da espessura da membrana, do gradiente de pressão e de uma constante de difusibilidade intrínseca. No entanto, na beira do leito ou no laboratório de função pulmonar, como poderíamos quantificar essas variáveis microscópicas de maneira não invasiva? Não podemos medir a espessura exata da membrana de um paciente vivo, nem contar sua área de superfície alveolar ativa diretamente."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Se precisássemos desenhar um teste para avaliar a facilidade com que um gás atravessa a membrana alvéolo-capilar, por que não poderíamos usar simplesmente o Oxigênio ($O_2$) ou o Dióxido de Carbono ($CO_2$)? Que propriedade física ou fisiológica desses gases comuns tornaria a interpretação matemática do teste extremamente complexa para isolar estritamente a barreira?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta está na limitação por perfusão versus limitação por difusão. O oxigênio é altamente solúvel e liga-se rapidamente à hemoglobina, atingindo o equilíbrio de pressão parcial entre o alvéolo e o capilar em apenas um terço do tempo de trânsito da hemácia (cerca de 0,25 segundos). Isso significa que, em condições normais, a captação de oxigênio é limitada pela quantidade de sangue que passa (perfusão), e não pela capacidade física da membrana de deixar o gás passar (difusão). Para isolar puramente a barreira difusora, precisaríamos de um gás que se ligue de forma tão ávida à hemoglobina que a sua pressão parcial no plasma livre permaneça virtualmente zero durante todo o percurso capilar. Assim, a transferência do gás dependeria exclusivamente das propriedades físicas da membrana, e nunca da velocidade do fluxo sanguíneo. Esse gás perfeito para o teste é o monóxido de carbono ($CO$)."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Difusão",
+      "origem": "Latim 'diffundere'",
+      "significado": "Derramar em várias direções, espalhar-se",
+      "explicacao": "Indica o movimento passivo e espontâneo de partículas de uma região de maior concentração para outra de menor concentração, buscando o equilíbrio térmico e de pressão parcial."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Imagine uma catraca de metrô muito movimentada. Se as pessoas passam rapidamente e formam filas do outro lado porque não há espaço para onde ir, o fluxo é limitado pelo espaço do lado de dentro (perfusão). Mas se houver um aspirador gigante do outro lado da catraca que puxa instantaneamente qualquer pessoa que passe, a velocidade de passagem dependerá puramente da largura e fluidez da catraca física (difusão). O monóxido de carbono é a pessoa puxada pelo aspirador gigante (a hemoglobina, que tem afinidade 200 vezes maior pelo CO do que pelo oxigênio), garantindo que a pressão parcial capilar de CO livre seja zero e o fluxo dependa apenas da barreira física."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Entendendo o Cálculo e Variáveis da DLCO"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A Capacidade de Difusão do Pulmão para o Monóxido de Carbono ($DL_{CO}$) é calculada dividindo-se o volume de monóxido de carbono absorvido por minuto pelo gradiente de pressão parcial do gás entre o alvéolo e o capilar. Como a pressão capilar de CO livre é considerada zero devido à avidez da hemoglobina, a equação simplifica-se para: $DL_{CO} = \\dot{V}_{CO} / P_A{CO}$. Clinicamente, o teste é realizado através da técnica de respiração única ('single-breath'): o paciente faz uma expiração máxima até o volume residual, inspira rapidamente uma mistura contendo uma quantidade conhecida e segura de CO (geralmente 0,3%) mais um gás inerte (como o hélio, para calcular o volume alveolar), prende a respiração por 10 segundos e depois expira. Ao medir a quantidade de CO que restou no gás expirado, conseguimos calcular exatamente quanto passou para o sangue."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A DLCO não mede apenas a difusão através da membrana física ($Dm$), mas também o componente de ligação química do gás com o volume de sangue capilar pulmonar ($Vc$). Portanto, $1/DL_{CO} = 1/Dm + 1/(\\theta \\cdot Vc)$, onde $\\theta$ é a taxa de associação do CO com a hemoglobina."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O Impacto das Patologias sobre a DLCO"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Qualquer alteração na área de superfície alveolar, na espessura da membrana ou no volume de sangue nos capilares pulmonares afetará diretamente o valor da DLCO. Vamos analisar três cenários fisiopatológicos clássicos: o enfisema, a fibrose pulmonar e a anemia. No enfisema pulmonar, ocorre a destruição das paredes alveolares e dos septos capilares circundantes devido à atividade elastolítica desregulada. Embora o pulmão pareça 'maior' no raio-X, a área útil de troca gasosa encolheu de forma catastrófica. Na fibrose pulmonar, há deposição excessiva de colágeno e matriz extracelular no interstício pulmonar, distanciando fisicamente o gás alveolar do endotélio capilar. Na anemia, a estrutura da membrana está perfeita e o fluxo está normal, porém há menos veículos transportadores (hemoglobinas) disponíveis para sequestrar o CO, reduzindo a capacidade aparente de difusão."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um paciente com fibrose intersticial pulmonar grave realizasse um teste de DLCO e o resultado estivesse perfeitamente normal, o que isso indicaria sobre os mecanismos de compensação fisiológica?",
+      "resposta": "Fisiologicamente, isso seria impossível no nível mecânico da barreira. A fibrose pulmonar aumenta a espessura da barreira de difusão pulmonar e destrói capilares locais, o que invariavelmente diminui a DLCO de acordo com a Lei de Fick. Um valor normal indicaria que ou o diagnóstico de fibrose está incorreto, ou o teste foi mal executado (como vazamento de gás ou erro técnico no cálculo do volume alveolar), pois o corpo não tem como aumentar a difusibilidade física de um tecido cicatricial denso para compensar a perda de área e aumento de espessura."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Esquema da Transferência de Monóxido de Carbono (DLCO) na Membrana Alvéolo-Capilar",
+      "descricao": "Diagrama mostrando o alvéolo à esquerda contendo monóxido de carbono (CO) difundindo-se através da barreira física (epitélio alveolar, interstício, endotélio capilar) para ligar-se rapidamente à hemoglobina dentro dos glóbulos vermelhos no capilar à direita. O esquema contrasta a barreira saudável com a barreira espessada na fibrose e a área reduzida no enfisema.",
+      "prompt_ia": "Diagram explaining lung diffusion capacity (DLCO). Left: alveolar space with CO molecules diffusing across the alveolar-capillary membrane (composed of alveolar epithelium, thin interstitium, and capillary endothelium) to bind with high affinity to hemoglobin within red blood cells inside a capillary. Contrast showing: a) normal membrane, b) thickened fibrotic membrane with collagen fibers blocking CO, c) emphysematous destruction of alveoli reducing total surface area and capillary bed. Clear scientific labels, educational style, medical illustration, high resolution.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s3-fisio2-01-033-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que o monóxido de carbono (CO) é o gás de escolha para medir a capacidade de difusão pulmonar, em vez do oxigênio?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "Fisiologia Respiratória",
+        "DLCO",
+        "Monóxido de Carbono",
+        "Hemoglobina"
+      ],
+      "resposta": "Porque o CO possui uma afinidade com a hemoglobina cerca de 200 vezes maior que a do oxigênio. Isso faz com que todo o CO que cruza a membrana seja capturado instantaneamente pela hemoglobina, mantendo a pressão parcial de CO livre no plasma capilar virtualmente em zero. Assim, a transferência do gás torna-se puramente limitada pela difusão através da membrana, eliminando a influência do fluxo sanguíneo (perfusão) nos resultados do teste."
+    },
+    {
+      "card_id": "s3-fisio2-01-033-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é o mecanismo fisiopatológico que explica a redução da DLCO na anemia, mesmo com uma barreira alvéolo-capilar estruturalmente intacta?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "Fisiologia Respiratória",
+        "Anemia",
+        "DLCO",
+        "Clínica"
+      ],
+      "resposta": "A DLCO é composta por dois processos em série: a difusão física pela membrana ($Dm$) e a taxa de reação química com a hemoglobina vezes o volume de sangue capilar pulmonar ($\\theta \\cdot Vc$). Na anemia, a concentração de hemoglobina circulante está reduzida, o que diminui drasticamente a capacidade do sangue capilar de ligar e sequestrar o CO. Consequentemente, o componente químico diminui, reduzindo a DLCO global devido à menor disponibilidade de sítios de ligação de oxigênio/monóxido de carbono."
+    },
+    {
+      "card_id": "s3-fisio2-01-033-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Como se diferenciam os perfis de DLCO e Volume Alveolar (VA) entre a Doença Pulmonar Obstrutiva Crônica do tipo Enfisema e a do tipo Bronquite Crônica?",
+      "dificuldade": 3,
+      "nivel_alvo": 5,
+      "tags": [
+        "DPOC",
+        "Enfisema",
+        "Bronquite",
+        "Diagnóstico Diferencial"
+      ],
+      "resposta": "No enfisema, há destruição direta do parênquima pulmonar e dos capilares alvéolo-capilares, reduzindo acentuadamente a área de troca, o que leva a uma redução severa da DLCO. Já na bronquite crônica pura, a barreira alvéolo-capilar e a área de superfície de troca estão preservadas, resultando em uma DLCO tipicamente normal ou próxima do normal, auxiliando no diagnóstico diferencial de ambas as condições obstrutivas."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-fisio2-01-033-caso01",
+      "titulo": "Falta de Ar Progressiva em Metalúrgico Aposentado",
+      "apresentacao": "Sr. Geraldo, 66 anos, aposentado da indústria metalúrgica (com longa exposição a poeiras minerais e jateamento de areia), apresenta-se com queixa de dispneia progressiva aos esforços há 2 anos, atualmente limitando-o a caminhadas curtas planas. Relata tosse seca esporádica. Exame físico revela estertores finos do tipo 'velcro' em bases pulmonares bilateralmente e baqueteamento digital discreto. Espirometria demonstra padrão restritivo com capacidade vital forçada (CVF) reduzida e relação VEF1/CVF preservada. A tomografia de tórax de alta resolução exibe opacidades reticulares e áreas de fustonamento subpleural compatíveis com fibrose pulmonar.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Inalação crônica de poeiras minerais e partículas nocivas induzindo lesão persistente ao epitélio alveolar e ativação de macrófagos alveolares."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O interstício pulmonar torna-se cronicamente inflamado, desencadeando a proliferação aberrante de fibroblastos e deposição excessiva de colágeno na barreira alvéolo-capilar."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Aumento significativo da espessura da barreira de troca gasosa ($\\Delta x$ na Lei de Fick), diminuindo severamente a capacidade de difusão pulmonar (DLCO) do oxigênio e do monóxido de carbono."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Inadequação da hematose pulmonar durante o exercício, quando o menor tempo de trânsito dos eritrócitos impede a saturação completa da hemoglobina, manifestando-se como dispneia grave aos esforços e hipoxemia induzida por esforço."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Evolução progressiva com necessidade de oxigenoterapia domiciliar devido à hipoxemia de repouso crônica e eventual cor pulmonale secundário à vasoconstrição pulmonar hipóxica generalizada."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra perfeitamente como alterações anatômicas que aumentam a espessura da barreira de troca gasosa (espessamento intersticial por fibrose) provocam redução na capacidade de difusão (DLCO), confirmando a aplicação clínica direta da Lei de Fick na fisiologia respiratória.",
+      "disciplinas_relacionadas": [
+        "Pneumologia",
+        "Fisiologia Respiratória",
+        "Patologia"
+      ],
+      "diagnostico_revelado": "Fibrose Pulmonar Intersticial (provável Silicose)",
+      "tratamento_resumido": "Afastamento definitivo da exposição, suporte de oxigenoterapia se indicado, reabilitação pulmonar e acompanhamento para possível uso de antifibróticos ou transplante pulmonar."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "correlacao-clinica"
-  ]
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-fisio2-01-030",
+        "titulo": "Difusão dos Gases — A Lei de Fick Aplicada ao Pulmão",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "O conhecimento das variáveis físicas que regem a difusão na Lei de Fick (área de superfície, espessura da barreira e solubilidade) é indispensável para compreender como o teste de DLCO avalia clinicamente essas mesmas propriedades na membrana alvéolo-capilar."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Fisiopatologia das Doenças Pulmonares Restritivas e Obstrutivas",
+        "disciplina": "Pneumologia",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "A interpretação da DLCO em conjunto com a espirometria é a chave diagnóstica para diferenciar enfisema de bronquite crônica, e para quantificar a gravidade do acometimento parenquimatoso nas doenças intersticiais difusas do pulmão.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Relação Ventilação-Perfusão (V/Q)",
+        "explicacao": "Enquanto a DLCO avalia a integridade intrínseca da membrana física de troca e do sangue nela contido, os distúrbios de V/Q avaliam a adequação entre o ar que chega aos alvéolos e o sangue que perfunde esses alvéolos, representando dois mecanismos distintos que podem levar à hipoxemia."
+      }
+    ]
+  }
 }

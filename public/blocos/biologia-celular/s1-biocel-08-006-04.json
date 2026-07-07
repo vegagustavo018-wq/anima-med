@@ -1,54 +1,208 @@
 {
+  "metadata": {
+    "titulo": "Imprinting Genômico",
+    "subtitulo": "Por que o DNA se lembra de quem veio?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "epigenética",
+      "expressão gênica",
+      "prader-willi",
+      "angelman",
+      "herança"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "O imprinting genômico desafia a regra clássica da mendeliana de que ambos os alelos de um par são funcionalmente equivalentes. Em certos loci, a expressão gênica é ditada pela origem parental: um alelo é silenciado por marcas epigenéticas, como a metilação do DNA, enquanto o outro permanece ativo. Este fenômeno não altera a sequência de nucleotídeos, mas impõe um 'selo' de identidade que persiste ao longo do desenvolvimento do indivíduo. A falha nesse processo, seja por deleção, dissomia uniparental ou erro de marcação, resulta em síndromes distintas dependendo se a falha ocorreu na linhagem materna ou paterna, como exemplificado pelos casos de Prader-Willi e Angelman. Compreender o imprinting é essencial para entender como a epigenética molda a expressão fenotípica além da simples herança mendeliana.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, exploramos como a cromatina se condensa e como modificações nas histonas modulam a acessibilidade do DNA. Agora, vamos mergulhar em um fenômeno fascinante: por que, em alguns casos, o seu genoma se comporta como se 'soubesse' qual cópia veio do pai e qual veio da mãe? A natureza não desenhou todos os genes para agirem em paridade; ela criou um sistema de marcação que decide quem será ouvido e quem será silenciado antes mesmo da concepção."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a evolução criaria genes 'parciais'?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A necessidade evolutiva reside no controle do balanço energético e no crescimento fetal. O imprinting genômico surge como uma solução para evitar a expressão excessiva de genes promotores de crescimento (frequentemente de origem paterna) versus genes que restringem o crescimento (frequentemente maternos). É um cabo de guerra molecular que garante que o desenvolvimento transcorra sem sobrecarregar os recursos da mãe."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução encontrada pela célula é a marcação epigenética diferencial. Durante a gametogênese, o genoma sofre um 'reset' e, em seguida, marcas específicas de metilação são adicionadas aos promotores de genes selecionados, dependendo do sexo do indivíduo. Assim, o espermatozoide traz uma 'assinatura' e o óvulo traz outra. Quando se encontram no zigoto, essa marcação persiste, tornando um dos alelos funcionalmente nulo."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Imagine um escritório com dois arquivos idênticos para cada documento: um carimbado 'Válido pelo Pai' e outro 'Válido pela Mãe'. Mapeamento: Documentos = Alelos; Carimbo de silenciamento = Metilação do DNA; Funcionário (a célula) = Apenas processa o documento que não possui o carimbo de 'cancelado' pelo imprinting."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O imprinting genômico é uma forma de regulação epigenética onde a expressão de um gene é monoalélica e depende exclusivamente da sua origem parental, sem alterar a sequência do DNA."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pare um pouco. Se você tem dois alelos de um gene, mas apenas um funciona, o que acontece se o único alelo funcional for deletado? Diferente de genes autossômicos comuns, aqui você não tem um 'plano B'."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Imprinting",
+      "origem": "Inglês (do latim 'imprimere')",
+      "significado": "Imprimir ou marcar",
+      "explicacao": "O termo foi adotado para descrever a 'marca' permanente, como um selo de cera que identifica a origem biológica do alelo e dita seu destino funcional."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o imprinting genômico não existisse em humanos?",
+      "resposta": "Teríamos uma perda do controle fino sobre o crescimento fetal. Provavelmente, veríamos uma taxa muito maior de desregulação no desenvolvimento intrauterino, com fetos crescendo desproporcionalmente, possivelmente levando a uma falha na viabilidade da gestação ou a distúrbios metabólicos severos logo após o nascimento."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Esquema de Imprinting Genômico",
+      "descricao": "Um par de cromossomos homólogos mostrando um gene com marca de metilação (bloqueado) no alelo materno e o alelo paterno ativo, resultando em expressão monoalélica.",
+      "prompt_ia": "High-quality scientific illustration, molecular biology style, showing two homologous chromosomes. One chromosome has a 'methyl group' (represented by small 'M' symbols) attached to the DNA promoter region, blocking transcription. The other chromosome has an active transcription factor binding to the promoter, producing mRNA. Clean, minimalist, vibrant colors, clear labels, white background.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-08-006-04-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Como a célula 'silencia' um alelo durante o imprinting genômico?",
+      "resposta": "Através de mecanismos epigenéticos, principalmente a metilação do DNA nos sítios CpG da região promotora do gene, o que impede a ligação da maquinaria de transcrição e compacta a cromatina local.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "epigenética",
+        "metilação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-006-04-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se um indivíduo herdasse duas cópias funcionais de um gene que deveria sofrer imprinting (dissomia uniparental paterna em um locus silenciado pelo pai)?",
+      "resposta": "O indivíduo expressaria o dobro da dosagem do produto gênico (superdosagem), o que frequentemente leva a fenótipos de crescimento anormal, visto que o equilíbrio entre os alelos maternos e paternos foi rompido.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "patologia",
+        "epigenética"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-006-04-fc03",
+      "tipo": "por_que",
+      "pergunta": "Por que o imprinting é considerado uma exceção às leis de Mendel?",
+      "resposta": "Porque as leis de Mendel pressupõem que ambos os alelos contribuem igualmente para o fenótipo, independentemente da origem parental, enquanto o imprinting dita que a expressão depende estritamente de qual progenitor forneceu o alelo.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "genética",
+        "mendel"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-006-04-fc04",
+      "tipo": "clinico",
+      "pergunta": "Como a deleção da mesma região cromossômica pode causar duas síndromes diferentes (Prader-Willi vs Angelman)?",
+      "resposta": "A deleção afeta genes diferentes que estão sujeitos a imprinting; se a deleção ocorre no cromossomo de origem paterna, afeta genes silenciados pela mãe (Prader-Willi). Se ocorre no materno, afeta genes silenciados pelo pai (Angelman).",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "clínica",
+        "síndromes"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-006-04-fc05",
+      "tipo": "mecanismo",
+      "pergunta": "Qual a diferença entre imprinting e uma mutação genética convencional?",
+      "resposta": "Uma mutação altera a sequência de nucleotídeos (o 'código'), enquanto o imprinting altera a marcação química (epigenética) que controla a leitura do código, sem mudar a sequência em si.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "conceito",
+        "epigenética"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-08-006-04-caso01",
+      "titulo": "A criança que não para de comer",
+      "apresentacao": "Um lactente de 6 meses apresenta hipotonia severa, dificuldades de sucção e atraso no desenvolvimento. Com o passar dos anos, o quadro evolui para hiperfagia incontrolável e obesidade mórbida.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Deleção de uma região específica no cromossomo 15 de origem paterna."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Locus gênico sujeito a imprinting materno (gene silenciado pela mãe)."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Ausência de expressão de genes essenciais que só seriam ativos se viessem do pai."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Hipotonia, atraso cognitivo e transtornos alimentares."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Síndrome de Prader-Willi."
+        }
+      ],
+      "diagnostico_revelado": "Síndrome de Prader-Willi",
+      "tratamento_resumido": "Multidisciplinar: controle dietético rigoroso, terapia hormonal (GH), suporte fisioterapêutico e psicológico.",
+      "conexao_com_bloco": "Ilustra perfeitamente como a perda de um único alelo ativo (neste caso, o paterno) resulta em fenótipo clínico, provando que o alelo materno não compensa devido ao imprinting.",
+      "disciplinas_relacionadas": [
+        "genética médica",
+        "pediatria",
+        "endocrinologia"
+      ]
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-08-002",
+        "titulo": "Transcrição — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "O imprinting depende da compactação diferencial da cromatina (heterocromatina vs eucromatina) induzida por metilação."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Epigenética do Câncer",
+        "disciplina": "oncologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "A perda de imprinting (LOI) é um evento comum em neoplasias, onde genes que deveriam ser silenciados são ativados, promovendo proliferação celular descontrolada.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Inativação do cromossomo X",
+        "explicacao": "Ambos são mecanismos de compensação de dosagem e silenciamento epigenético, mas o imprinting é parental, enquanto a inativação do X é aleatória (na maioria das células somáticas)."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-08-006-04",
   "no_pai_id": "s1-biocel-08-006",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Imprinting Genômico",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Expressão dependente da origem parental; Prader-Willi/Angelman",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "correlacao_clinica",
-    "embriologia"
-  ]
+  }
 }

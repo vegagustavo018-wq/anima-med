@@ -5,50 +5,373 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Neurotransmissão Autonômica: Síntese, Liberação e Término",
+    "subtitulo": "Antes de qualquer fármaco agir, alguém precisa fabricar, guardar, soltar e depois limpar o mensageiro — onde exatamente?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "neurotransmissao",
+      "acetilcolina",
+      "noradrenalina",
+      "sinapse-autonomica",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "ACh e noradrenalina; síntese, estoque, liberação, recaptação; pontos de ataque",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior mostrou que o sistema nervoso autônomo controla órgãos usando dois mensageiros principais — acetilcolina e noradrenalina — ligando-se a receptores específicos. Mas antes de qualquer receptor ser ativado, cada um desses mensageiros precisa passar por um ciclo de vida completo dentro do neurônio pré-ganglionar: ser fabricado a partir de um precursor simples, ser guardado em compartimentos protegidos dentro do terminal nervoso, ser liberado no instante certo na fenda sináptica e, depois de cumprir sua função, ser removido rapidamente para que o sinal não persista indefinidamente. Esse ciclo — síntese, estoque, liberação e término — é o roteiro geral que se repete em toda sinapse colinérgica e adrenérgica do corpo, mudando apenas as enzimas e proteínas específicas de cada etapa. Entender esse roteiro é o que permite prever, antes mesmo de decorar nomes de fármacos, que cada uma dessas quatro etapas é um ponto onde uma molécula pode intervir — acelerando, bloqueando ou prolongando o sinal. É exatamente esse roteiro que os dois blocos seguintes desta disciplina vão preencher com fármacos reais: um para a via colinérgica, outro para a via adrenérgica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já viu que o sistema nervoso autônomo manda sinais de acelerar ou desacelerar usando dois mensageiros principais. Mas um mensageiro não aparece pronto na fenda sináptica por acaso. Alguém precisa fabricá-lo, guardá-lo em algum lugar seguro dentro do neurônio, soltá-lo exatamente quando o potencial de ação chega — nem antes, nem depois — e, assim que ele já fez seu trabalho no receptor, precisa tirá-lo dali rapidamente. Se qualquer uma dessas etapas falhar, o sinal autonômico inteiro falha junto, mesmo que o receptor do outro lado esteja perfeito."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, exatamente, esse ciclo resolve"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um neurônio pré-sináptico enfrenta uma exigência dupla e aparentemente contraditória. De um lado, precisa ter o mensageiro sempre pronto, porque um potencial de ação pode chegar a qualquer momento e a resposta do órgão-alvo (acelerar o coração, contrair a pupila) não pode esperar segundos para começar a ser fabricada. De outro lado, não pode simplesmente deixar o mensageiro solto e vazando o tempo todo dentro do próprio neurônio ou na fenda sináptica, porque isso ativaria o receptor de forma contínua e descontrolada — o equivalente a uma buzina presa, sempre tocando."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa tensão entre 'estar pronto' e 'não vazar' é o problema central que qualquer sistema de neurotransmissão precisa resolver. E há um terceiro problema, tão importante quanto os dois primeiros: depois que o mensageiro ativa o receptor e cumpre sua função, ele precisa sumir rápido. Um sinal que nunca termina é tão inútil quanto um sinal que nunca começa — o órgão fica preso num estado só, incapaz de responder à próxima mudança de contexto."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: a neurotransmissão autonômica precisa resolver três exigências ao mesmo tempo — ter o mensageiro pronto sem deixá-lo vazar, liberá-lo só no momento certo, e removê-lo rápido depois de usado. Tudo o que vem a seguir é a solução molecular para essas três exigências."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o neurônio resolveu isso"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi compartimentalizar cada etapa em um local físico diferente dentro e ao redor do terminal nervoso. A fabricação acontece dentro do citoplasma do terminal, a partir de um precursor simples e abundante. O armazenamento acontece dentro de vesículas — bolsas membranosas que isolam o mensageiro do resto da célula, evitando que ele ative receptores prematuramente ou seja degradado antes da hora. A liberação acontece só quando um potencial de ação abre canais de cálcio no terminal, e é a entrada desse cálcio que funciona como o gatilho físico da fusão da vesícula com a membrana. E a remoção acontece por dois mecanismos diferentes, dependendo do mensageiro: degradação por uma enzima específica logo na fenda, ou recaptação de volta para dentro do neurônio que o liberou."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa arquitetura de compartimentos evita o pior cenário possível: mensageiro solto continuamente no citoplasma ou na fenda. Cada etapa fica isolada da seguinte até que um sinal específico (o potencial de ação, via cálcio) autorize a passagem para a próxima etapa."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O ciclo tem quatro etapas obrigatórias e sequenciais: **síntese → armazenamento vesicular → liberação dependente de cálcio → término do sinal**. Cada etapa isola a anterior até que o cálcio autorize a próxima — é essa compartimentalização, não a simples existência do mensageiro, que torna o sinal controlável."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que esse ciclo é feito"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para a acetilcolina, o precursor é simples: colina (captada do sangue) mais acetil-coenzima A (produzida na mitocôndria do próprio terminal). A enzima colina-acetiltransferase une os dois no citoplasma, formando acetilcolina. Essa molécula pronta é então bombeada para dentro de vesículas sinápticas por um transportador vesicular específico, onde fica estocada até a liberação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para a noradrenalina, o caminho é mais longo, porque o precursor começa como um aminoácido comum — a tirosina — e passa por três conversões enzimáticas sucessivas até virar o mensageiro final: tirosina vira DOPA, DOPA vira dopamina (essa etapa já ocorre dentro da vesícula, não no citoplasma), e dopamina vira noradrenalina dentro da própria vesícula. É por isso que, no neurônio pós-ganglionar simpático, parte da síntese acontece fora do compartimento de estoque e parte acontece dentro dele — uma diferença estrutural importante em relação à acetilcolina, cuja síntese inteira ocorre no citoplasma antes do transporte vesicular."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando o potencial de ação despolariza o terminal nervoso, canais de cálcio dependentes de voltagem se abrem e o cálcio entra. Esse influxo é o gatilho que faz as vesículas se fundirem com a membrana pré-sináptica e liberarem seu conteúdo por exocitose na fenda sináptica — mecanismo idêntico em princípio para os dois mensageiros, embora as proteínas de fusão envolvidas sejam moduladas de formas ligeiramente diferentes em cada tipo de sinapse."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O término do sinal usa estratégias diferentes para cada mensageiro, e essa diferença tem consequências farmacológicas diretas. A acetilcolina é degradada quase instantaneamente na própria fenda sináptica pela enzima acetilcolinesterase, que a quebra em colina e acetato; a colina é então recapturada pelo terminal para ser reaproveitada na próxima síntese. Já a noradrenalina não é degradada primariamente na fenda: a maior parte é recapturada intacta de volta para o terminal que a liberou, por um transportador específico, e reaproveitada ou degradada dentro do próprio neurônio; uma fração menor é degradada localmente por enzimas como a catecol-O-metiltransferase."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa antes de seguir. Você já tem o roteiro: para cada mensageiro, um precursor, uma enzima de síntese, um transportador vesicular, um gatilho de cálcio para a liberação e um mecanismo próprio de remoção. Agora vamos ver isso funcionando como sequência, passo a passo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em sequência"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Ciclo de vida de um neurotransmissor autonômico, do precursor ao término do sinal",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Síntese a partir do precursor",
+          "explicacao": "No citoplasma do terminal pré-sináptico (para acetilcolina) ou começando no citoplasma e terminando dentro da vesícula (para noradrenalina), uma enzima específica converte um precursor circulante ou intracelular no neurotransmissor ativo. Sem essa enzima, não há mensageiro para estocar."
+        },
+        {
+          "numero": 2,
+          "titulo": "Armazenamento vesicular",
+          "explicacao": "Um transportador vesicular específico bombeia o neurotransmissor recém-sintetizado para dentro de vesículas, isolando-o do citoplasma. É esse isolamento que impede a ativação descontrolada de receptores e protege a molécula de degradação prematura."
+        },
+        {
+          "numero": 3,
+          "titulo": "Liberação disparada por cálcio",
+          "explicacao": "A chegada de um potencial de ação abre canais de cálcio dependentes de voltagem no terminal. O cálcio que entra é o sinal físico que faz as vesículas se fundirem com a membrana e liberarem o neurotransmissor por exocitose na fenda sináptica — sem esse influxo, a vesícula permanece estocada e nada é liberado."
+        },
+        {
+          "numero": 4,
+          "titulo": "Ligação ao receptor pós-sináptico",
+          "explicacao": "O neurotransmissor atravessa a fenda e se liga ao receptor específico do neurônio ou órgão seguinte, desencadeando a resposta biológica — este é o momento em que o sinal produz efeito, mas ele precisa ser breve para permanecer útil."
+        },
+        {
+          "numero": 5,
+          "titulo": "Término do sinal",
+          "explicacao": "O neurotransmissor é removido da fenda por degradação enzimática local (acetilcolinesterase, no caso da acetilcolina) ou por recaptação para dentro do neurônio que o liberou (transportador de noradrenalina, no caso da noradrenalina). Só depois dessa remoção o terminal está pronto para responder ao próximo potencial de ação sem sinal residual acumulado."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essas cinco etapas não são apenas descrição fisiológica: cada uma delas é, ao mesmo tempo, um ponto de ataque farmacológico. Uma molécula pode inibir a enzima de síntese e reduzir o estoque disponível; pode impedir o empacotamento vesicular; pode bloquear os canais de cálcio e impedir a liberação; pode ocupar o receptor sem ativá-lo; ou pode inibir a enzima ou o transportador responsável pelo término do sinal, prolongando o efeito do neurotransmissor natural sem precisar imitá-lo. O roteiro que você acabou de aprender é exatamente o mapa que os próximos dois blocos desta disciplina vão percorrer — um aplicando fármacos reais à via colinérgica, outro à via adrenérgica."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "📦",
+      "conteudo": "Pense numa cozinha de restaurante que só pode servir pratos no momento exato em que o garçom bate o sino. **A síntese** é o cozinheiro preparando o prato com ingredientes básicos (o precursor). **O armazenamento vesicular** é colocar o prato pronto debaixo de uma redoma, na janela do passa-pratos, para que ninguém o coma antes da hora e ele não esfrie exposto ao ambiente. **O gatilho de cálcio** é o sino do garçom: só quando ele toca a redoma é levantada e o prato sai. **A liberação** é o prato chegando à mesa do cliente (o receptor). **O término** é o garçom recolhendo o prato vazio assim que o cliente termina — se ele nunca recolhesse, a mesa ficaria ocupada para sempre e o próximo cliente não poderia ser servido. A analogia quebra num ponto: na cozinha real, o cozinheiro não reaproveita os pratos recolhidos como matéria-prima do próximo prato — no neurônio colinérgico, a colina recuperada da degradação é, sim, reciclada para nova síntese."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse ciclo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco preenche de conteúdo mecanístico o que o bloco anterior descreveu apenas como panorama: os quatro elos da cadeia (síntese, liberação, receptor, remoção) mencionados ali agora têm nome de enzima, nome de transportador e lógica espacial dentro do neurônio. Essa base é o que torna possível, nos dois blocos seguintes desta disciplina, nomear fármacos específicos sem precisar reexplicar por que cada etapa é um alvo plausível: cada 'ponto de ataque' descrito aqui — a enzima de síntese, o transportador vesicular, o canal de cálcio, o receptor, a enzima ou o transportador de término — é exatamente onde um fármaco colinérgico ou adrenérgico específico vai agir."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Do ponto de vista clínico, essa é a primeira vez, na trajetória do curso, em que um mecanismo molecular tão detalhado se conecta diretamente a uma classe inteira de medicamentos de uso corriqueiro — de colírios a antiarrítmicos, de broncodilatadores a antídotos de intoxicação. Entender o ciclo aqui, antes de ver o nome de um único fármaco, é o que permite prever o efeito de uma classe nova só de saber em qual etapa ela atua, em vez de memorizar cada fármaco isoladamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "neurotransmissor",
+      "origem": "do grego neûron (nervo, corda) + do latim trans (através) + mittere (enviar, mandar)",
+      "significado": "literalmente, 'aquilo que envia através' a partir do nervo — a molécula que carrega a mensagem de um neurônio para o seguinte",
+      "explicacao": "O termo consolidou-se ao longo do século XX, à medida que fisiologistas como Otto Loewi (que demonstrou experimentalmente, em 1921, que um 'Vagusstoff' — mais tarde identificado como acetilcolina — era liberado pelo nervo vago e desacelerava o coração) foram provando que a comunicação entre neurônios e órgãos não era elétrica direta, mas química, mediada por uma substância enviada através da fenda sináptica. O nome descreve exatamente a função central deste bloco: uma molécula cuja única razão de existir é atravessar um espaço e carregar uma instrução — e todo o ciclo de síntese, estoque, liberação e término existe para que essa travessia aconteça no momento certo, e só nele."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o término do sinal simplesmente não existisse — se acetilcolina e noradrenalina nunca fossem removidas da fenda sináptica — o que aconteceria com a utilidade do sistema nervoso autônomo?",
+      "resposta": "O sistema perderia a capacidade de responder a mudanças de contexto. Um receptor continuamente ocupado pelo neurotransmissor ficaria ativado (ou, por dessensibilização, eventualmente incapaz de responder a estímulos novos) de forma permanente — o coração não conseguiria voltar a desacelerar depois de uma corrida, a pupila ficaria travada num único diâmetro, o intestino não alternaria entre motilidade aumentada e reduzida. A informação carregada por um neurotransmissor não está apenas em 'ele está presente', mas em 'ele apareceu agora e sumiu depois' — é a transitoriedade do sinal que carrega a mensagem de mudança de estado. Sem remoção rápida, o sistema deixaria de transmitir informação e passaria a impor um único estado fixo, permanentemente. É por isso que fármacos que bloqueiam o término do sinal (inibidores da acetilcolinesterase, por exemplo) não 'melhoram' o sinal — eles o prolongam de forma descontrolada, e em dose excessiva isso é tóxico, não terapêutico."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo de vida do neurotransmissor autonômico dentro do terminal pré-sináptico",
+      "descricao": "Esquema didático em corte transversal de um terminal nervoso pré-sináptico e da fenda sináptica logo abaixo. Da esquerda para a direita, dentro do terminal: um precursor entrando (colina ou tirosina), uma enzima convertendo-o no neurotransmissor, vesículas sinápticas recebendo o neurotransmissor via transportador vesicular, canais de cálcio na membrana pré-sináptica abrindo-se com a chegada de um potencial de ação, vesículas se fundindo à membrana e liberando conteúdo por exocitose na fenda. Do lado pós-sináptico, um receptor recebendo o neurotransmissor. Voltando à fenda, setas mostrando o término do sinal por duas vias paralelas rotuladas — degradação enzimática (para acetilcolina) e recaptação por transportador (para noradrenalina) — com o produto reciclado retornando ao terminal. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. Corte transversal de uma sinapse autonômica. À esquerda, um terminal pré-sináptico em formato de bulbo contendo: uma seta de entrada rotulada 'precursor (colina / tirosina)', um ícone de enzima convertendo o precursor em neurotransmissor, vários círculos pequenos representando vesículas sinápticas sendo preenchidas por um transportador vesicular na membrana da vesícula. Na membrana do terminal, canais de cálcio abertos com pequenas esferas azuis rotuladas 'Ca²⁺' entrando. Uma vesícula fundida à membrana liberando pontos (neurotransmissor) na fenda sináptica central. Do lado direito, uma membrana pós-sináptica com um receptor em formato de encaixe recebendo os pontos liberados. Abaixo da fenda, duas setas de retorno claramente distintas e rotuladas: uma rotulada 'degradação enzimática (acetilcolinesterase)' com o produto sendo reciclado de volta ao terminal, outra rotulada 'recaptação (transportador de noradrenalina)' devolvendo a molécula intacta ao terminal. Cores suaves, alto contraste, tipografia em português, sem elementos fotorrealistas. Sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-03-000",
+        "titulo": "Farmacologia do Sistema Nervoso Autônomo — Visão Geral",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha mecanisticamente o que a visão geral descreveu de forma panorâmica: os quatro elos da cadeia de neurotransmissão (síntese, liberação, receptor, remoção) e a distinção entre acetilcolina e noradrenalina como mensageiros principais."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": "s4-farma1-03-002",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Fármacos colinérgicos (agonistas muscarínicos/nicotínicos, anticolinesterásicos, antagonistas muscarínicos)",
+        "mecanismo_conexao": "Cada ponto de ataque descrito aqui para a acetilcolina — síntese pela colina-acetiltransferase, empacotamento vesicular, liberação dependente de cálcio, ligação ao receptor, degradação pela acetilcolinesterase — é exatamente onde um fármaco colinérgico específico vai agir. Este bloco é o roteiro; o próximo preenche o roteiro com moléculas reais.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": "s4-farma1-03-003",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Fármacos adrenérgicos (agonistas e antagonistas alfa/beta, inibidores da recaptação de noradrenalina)",
+        "mecanismo_conexao": "Os pontos de ataque descritos aqui para a noradrenalina — síntese em três etapas a partir da tirosina, empacotamento vesicular, liberação dependente de cálcio, ligação a receptores adrenérgicos, recaptação pelo transportador de noradrenalina — são o roteiro geral que o bloco de farmacologia adrenérgica vai detalhar com fármacos reais.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Bloqueadores neuromusculares e toxina botulínica",
+        "mecanismo_conexao": "A toxina botulínica age impedindo a fusão das vesículas de acetilcolina com a membrana pré-sináptica — um bloqueio direto da etapa de liberação dependente de cálcio descrita neste bloco.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-03-001-fc01",
+      "pergunta": "Por que o neurotransmissor precisa ficar armazenado dentro de vesículas em vez de simplesmente flutuar livre no citoplasma do terminal nervoso até ser liberado?",
+      "resposta": "Porque um neurotransmissor livre no citoplasma poderia ser degradado prematuramente por enzimas intracelulares ou vazar para fora da célula de forma descontrolada, ativando receptores fora do momento certo. A vesícula isola o mensageiro, protegendo-o e mantendo-o pronto até que um sinal específico — o influxo de cálcio disparado por um potencial de ação — autorize sua liberação coordenada. O armazenamento vesicular é o que separa 'ter o mensageiro pronto' de 'ter o mensageiro vazando'.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "neurotransmissao",
+        "vesicula",
+        "armazenamento"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-03-001-fc02",
+      "pergunta": "Descreva as cinco etapas do ciclo de vida de um neurotransmissor autonômico, do precursor ao término do sinal.",
+      "resposta": "1) Síntese: uma enzima específica converte um precursor (colina, para acetilcolina; tirosina, para noradrenalina) no neurotransmissor ativo. 2) Armazenamento vesicular: um transportador vesicular específico bombeia o neurotransmissor para dentro de vesículas, isolando-o do citoplasma. 3) Liberação: um potencial de ação abre canais de cálcio dependentes de voltagem; o influxo de cálcio dispara a fusão das vesículas com a membrana e a exocitose do conteúdo na fenda sináptica. 4) Ligação ao receptor: o neurotransmissor atravessa a fenda e ativa o receptor pós-sináptico específico, produzindo a resposta biológica. 5) Término: o sinal é encerrado por degradação enzimática local (acetilcolinesterase, para acetilcolina) ou por recaptação para dentro do neurônio que o liberou (transportador de noradrenalina).",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "neurotransmissao",
+        "ciclo-de-vida",
+        "sinapse"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-03-001-fc03",
+      "pergunta": "Qual a diferença estrutural entre a síntese de acetilcolina e a síntese de noradrenalina em relação ao compartimento onde cada etapa ocorre, e por que essa diferença importa?",
+      "resposta": "A acetilcolina é sintetizada inteiramente no citoplasma do terminal pré-sináptico (colina + acetil-coenzima A, pela colina-acetiltransferase) e só depois é transportada para dentro da vesícula já pronta. A noradrenalina, por outro lado, começa sua síntese no citoplasma (tirosina até dopamina) mas completa a última conversão (dopamina para noradrenalina) dentro da própria vesícula. Essa diferença importa porque significa que, para a via adrenérgica, a vesícula não é apenas um depósito — é também um sítio ativo de síntese, o que abre um ponto de ataque farmacológico adicional (inibir a etapa intravesicular) que não existe na via colinérgica.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "acetilcolina",
+        "noradrenalina",
+        "sintese"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-03-001-fc04",
+      "pergunta": "Se um fármaco bloqueasse totalmente os canais de cálcio dependentes de voltagem no terminal pré-sináptico de uma sinapse autonômica, o que aconteceria com a liberação do neurotransmissor, mesmo que ele já estivesse sintetizado e armazenado normalmente nas vesículas?",
+      "resposta": "A liberação não aconteceria. O neurotransmissor ficaria estocado dentro das vesículas indefinidamente, porque o gatilho físico da exocitose é o influxo de cálcio disparado pelo potencial de ação — sem esse influxo, as vesículas não se fundem com a membrana e o conteúdo não é liberado na fenda sináptica. Isso mostra que ter o mensageiro pronto e armazenado não é suficiente: a etapa de liberação é um ponto de controle independente, e bloqueá-la interrompe o sinal mesmo com estoque intacto — um princípio explorado por alguns agentes que atuam bloqueando a liberação neuronal.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "calcio",
+        "liberacao",
+        "exocitose"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-03-001-fc05",
+      "pergunta": "Compare os mecanismos de término do sinal para acetilcolina e para noradrenalina, explicando por que eles são fundamentalmente diferentes.",
+      "resposta": "A acetilcolina é removida por degradação enzimática direta na fenda sináptica: a enzima acetilcolinesterase a quebra rapidamente em colina e acetato, e a colina é recapturada para nova síntese — a molécula original de acetilcolina não retorna intacta. A noradrenalina, em contraste, é removida majoritariamente por recaptação: um transportador específico na membrana do terminal a recupera intacta de volta para dentro do neurônio que a liberou, onde pode ser reempacotada em vesículas ou degradada internamente; apenas uma fração menor é degradada localmente por enzimas como a catecol-O-metiltransferase. A diferença importa clinicamente porque cada mecanismo é um alvo farmacológico distinto: inibir a acetilcolinesterase prolonga o efeito colinérgico; inibir o transportador de recaptação de noradrenalina prolonga o efeito adrenérgico — são estratégias moleculares diferentes para o mesmo objetivo de prolongar um sinal.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "termino-do-sinal",
+        "acetilcolinesterase",
+        "recaptacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-03-001-fc06",
+      "pergunta": "A palavra 'neurotransmissor' vem do grego neûron (nervo) e do latim trans + mittere (enviar através). O que essa etimologia ajuda a lembrar sobre a razão de existir do ciclo de síntese-liberação-término?",
+      "resposta": "A etimologia ('aquilo que envia através') lembra que a função inteira do neurotransmissor é atravessar um espaço — a fenda sináptica — carregando uma instrução de um neurônio para o próximo. Isso ajuda a entender por que cada etapa do ciclo existe: a síntese e o armazenamento garantem que haja algo para enviar; a liberação dependente de cálcio garante que o envio aconteça só no momento certo; e o término rápido garante que a mensagem não se transforme em ruído constante. O nome descreve o ato de atravessar, mas o valor clínico do sistema está em atravessar apenas quando necessário e parar logo depois — uma lição creditada experimentalmente a Otto Loewi, que demonstrou em 1921 que essa travessia era química, não elétrica.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "neurotransmissor",
+        "etimologia",
+        "historia-da-medicina"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-03-001-caso01",
+      "titulo": "Lactente com constipação, choro fraco e perda de força para sugar o peito",
+      "apresentacao": "Lactente de 5 meses, previamente hígido, é levado ao pronto-socorro pela mãe por 'moleza' progressiva ao longo de 3 dias. A mãe relata constipação nos últimos dias e que o bebê está sugando o peito com menos força, chorando mais fraco que o habitual. Ao exame: hipotonia generalizada, ptose palpebral bilateral discreta, pupilas pouco reativas, reflexo de sucção fraco, ausência de febre. Investigação da história alimentar revela que a família introduziu mel na dieta do lactente há cerca de uma semana, prática recomendada por uma vizinha.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ingestão de esporos de Clostridium botulinum (presentes no mel, alimento não recomendado antes de 1 ano de idade) que germinam no trato intestinal ainda imaturo do lactente e passam a produzir toxina botulínica localmente."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A toxina botulínica atinge o terminal pré-sináptico da junção neuromuscular e de sinapses colinérgicas autonômicas, ligando-se a proteínas responsáveis pela fusão das vesículas sinápticas com a membrana pré-sináptica."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A toxina impede especificamente a etapa de liberação da acetilcolina dependente de cálcio: mesmo com o neurotransmissor sintetizado e corretamente armazenado nas vesículas, e mesmo com o potencial de ação chegando normalmente ao terminal, a vesícula não consegue se fundir à membrana e liberar seu conteúdo na fenda sináptica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Fraqueza muscular progressiva e simétrica (hipotonia, sucção fraca, choro fraco), ptose palpebral e comprometimento autonômico leve (constipação, pupilas hiporreativas) — todos os locais onde a acetilcolina deveria ter sido liberada, mas não foi."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento, a paralisia pode progredir para a musculatura respiratória, exigindo suporte ventilatório. Com diagnóstico precoce e imunoglobulina antibotulínica, a maioria dos lactentes recupera-se completamente à medida que novos terminais nervosos brotam e restabelecem a capacidade de liberação de acetilcolina — processo que pode levar semanas."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática clínica, exatamente o terceiro elo do ciclo descrito no bloco — 'liberação disparada por cálcio' — sendo seletivamente bloqueado por uma toxina, enquanto síntese e armazenamento permanecem intactos. Isso reforça a ideia central do bloco de que cada etapa do ciclo de vida do neurotransmissor é um ponto de intervenção independente: aqui, a intervenção (patológica, não farmacológica) atinge apenas a etapa 3, deixando as etapas 1 e 2 funcionando normalmente — o que explica por que o bloqueio é reversível com o tempo, à medida que novos terminais são formados.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "pediatria",
+        "neurologia",
+        "toxicologia"
+      ],
+      "diagnostico_revelado": "Botulismo do lactente, por ingestão de esporos de Clostridium botulinum (mel contaminado).",
+      "tratamento_resumido": "Internação em unidade com suporte respiratório disponível, monitorização contínua da função respiratória, administração de imunoglobulina antibotulínica humana (BabyBIG) o mais precocemente possível para neutralizar a toxina circulante ainda não ligada. Evitar antibióticos aminoglicosídeos, que podem agravar o bloqueio neuromuscular. Orientação familiar: mel não deve ser oferecido a lactentes menores de 1 ano, justamente pelo risco de esporos de C. botulinum."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-03-001-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Section II — Neuropharmacology, capítulo sobre neurotransmissão química no sistema nervoso autônomo.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Capítulo 6 — Introduction to Autonomic Pharmacology (síntese, armazenamento, liberação e término da neurotransmissão colinérgica e adrenérgica).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang & Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 13 — Chemical Mediators and the Autonomic Nervous System.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

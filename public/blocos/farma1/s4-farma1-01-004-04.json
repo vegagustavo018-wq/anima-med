@@ -2,53 +2,338 @@
   "resumo_id": "s4-farma1-01-004-04",
   "no_pai_id": "s4-farma1-01-004",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-01-004-02"
+  ],
   "metadata": {
     "titulo": "Reações de Fase II (Conjugação)",
+    "subtitulo": "E se oxidar a molécula não bastar para tirá-la do corpo?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "metabolismo",
+      "biotransformacao",
+      "fase-ii",
+      "conjugacao",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Glicuronidação, sulfatação, acetilação; aumento de hidrossolubilidade",
-  "narrativa": [],
+  "resumo_conciso": "As reações de Fase II são a segunda estratégia que o fígado usa para resolver o mesmo problema de sempre: tornar o fármaco polar o bastante para sair do corpo pela urina ou pela bile. Em vez de expor um grupo reativo por oxidação — o método da Fase I —, a Fase II grava na molécula, por conjugação, um pedaço de uma substância endógena grande e já hidrossolúvel: ácido glicurônico (glicuronidação), sulfato (sulfatação) ou um grupo acetil, entre outros. O produto final costuma ser tão maior e mais polar que a reabsorção tubular renal deixa de ser viável, e o composto é eliminado. Um ponto que rompe a expectativa de sequência linear: a Fase II não depende de a molécula ter passado antes pela Fase I. Muitos fármacos já nascem com um grupo funcional (uma hidroxila, um grupo amino) pronto para ser conjugado diretamente, sem qualquer oxidação prévia — a numeração 'Fase I, Fase II' descreve tipos de reação, não uma fila obrigatória. Entender as três vias principais de conjugação, o que cada uma exige da molécula e por que algumas seguem direto para aqui é o que fecha o quadro geral do metabolismo antes de entrar em tópicos mais avançados, como indução enzimática e pró-fármacos.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco sobre CYP450 mostrou como a Fase I resolve seu problema: insere ou expõe um grupo reativo na molécula do fármaco, geralmente por oxidação, criando um ponto de ancoragem polar onde antes só havia uma superfície gordurosa. Mas expor um grupo reativo não é o mesmo que tornar a molécula suficientemente hidrossolúvel. Muitos metabólitos de Fase I ainda são lipossolúveis demais para escapar da reabsorção no túbulo renal. Falta um segundo movimento."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema que sobra depois da Fase I"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um único átomo de oxigênio a mais, ou uma ligação quebrada, muda pouco o tamanho e a polaridade geral de uma molécula grande. Uma hidroxila recém-criada ajuda, mas sozinha raramente é suficiente para impedir que a molécula atravesse de volta a membrana da célula tubular renal por difusão passiva. O corpo precisa de um recurso mais drástico: não apenas expor um grupo reativo, mas **anexar** à molécula algo que já seja, por si só, grande e carregado o bastante para arrastar o conjunto inteiro para o lado hidrossolúvel."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É esse o papel das reações de Fase II: pegar o fármaco (ou seu metabólito de Fase I) e ligá-lo covalentemente a uma molécula endógena que o corpo já produz em abundância e que já é, por natureza, muito polar."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: a Fase I expõe um grupo reativo; a Fase II gruda nesse grupo uma molécula endógena grande e polar. É a diferença entre abrir uma alça numa mala e, de fato, amarrar a mala a um bloco de concreto."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: conjugar com uma molécula que já é hidrossolúvel"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A lógica de toda reação de Fase II é a mesma: uma enzima de transferência (uma \"transferase\") pega um grupo químico de um doador endógeno e o liga a um sítio reativo do fármaco — em geral uma hidroxila, um grupo amino ou um grupo carboxila. O doador é sempre algo que o organismo mantém disponível internamente e que já circula como molécula polar. O resultado é um conjugado maior, mais pesado e mais carregado do que o fármaco original, incapaz de atravessar membranas por difusão passiva na mesma velocidade — e por isso mais fácil de excretar, seja pela urina, seja pela bile."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As três vias mais relevantes na prática clínica ilustram essa lógica com doadores diferentes."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "As três principais vias de conjugação de Fase II",
+      "colunas": [
+        "Via",
+        "Doador endógeno",
+        "Enzima",
+        "Sítio na molécula",
+        "Observação clínica"
+      ],
+      "linhas": [
+        [
+          "Glicuronidação",
+          "Ácido glicurônico (a partir do UDP-ácido glicurônico)",
+          "UDP-glicuronosiltransferases (UGTs)",
+          "Hidroxila, carboxila, amina ou tiol",
+          "Via mais utilizada do corpo; responsável pela conjugação de bilirrubina, morfina, paracetamol (parte da dose) e muitos outros"
+        ],
+        [
+          "Sulfatação",
+          "Sulfato (a partir do PAPS, doador universal de sulfato)",
+          "Sulfotransferases (SULTs)",
+          "Hidroxila (fenólica, em geral)",
+          "Capacidade limitada por baixo estoque de PAPS; satura mais rápido que a glicuronidação em doses altas — relevante na toxicidade do paracetamol"
+        ],
+        [
+          "Acetilação",
+          "Grupo acetil (a partir da acetil-coenzima A)",
+          "N-acetiltransferases (NATs, sobretudo NAT2)",
+          "Grupo amino",
+          "Sujeita a polimorfismo genético marcante — acetiladores lentos e rápidos, base clássica de farmacogenética (ex.: isoniazida)"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vale registrar, sem aprofundar aqui, que existem outras vias de conjugação — com glutationa (importante na destoxificação de metabólitos reativos) e com aminoácidos como a glicina — que seguem a mesma lógica geral: ligar o fármaco a algo endógeno, grande e polar. As três da tabela são as mais citadas na prática clínica e concentram a maior parte dos exemplos relevantes para a farmacologia básica."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Toda reação de Fase II segue o mesmo roteiro: pegar um doador endógeno já hidrossolúvel (ácido glicurônico, sulfato, acetil) e grudá-lo no fármaco. A via muda; a lógica — tornar a molécula grande e polar demais para ser reabsorvida — não muda."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que se articula: Fase II não é sempre depois da Fase I"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O nome \"Fase II\" sugere uma sequência obrigatória — primeiro a Fase I, depois a Fase II. Essa expectativa está errada com frequência suficiente para merecer destaque. A numeração descreve **tipos de reação**, não uma ordem cronológica fixa dentro do metabolismo de qualquer fármaco específico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Muitos fármacos já possuem, na sua estrutura original, um grupo funcional pronto para conjugação direta — uma hidroxila, um grupo amino — sem que nenhuma oxidação por CYP450 seja necessária antes. Esses fármacos vão direto para a Fase II. O paracetamol, por exemplo, tem uma hidroxila fenólica na sua molécula original e é majoritariamente conjugado por glicuronidação e sulfatação **sem** passar por oxidação prévia; apenas uma fração menor é oxidada pelo CYP2E1 (Fase I) para um metabólito reativo, o NAPQI, que por sua vez é destoxificado por conjugação com glutationa — ou seja, o mesmo fármaco usa as duas fases em proporções e ordens diferentes, dependendo da via."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Outros fármacos passam primeiro pela Fase I porque sua estrutura original não tem nenhum grupo conjugável disponível — a oxidação existe justamente para criar esse grupo antes que a Fase II possa agir. Nesses casos, a sequência Fase I seguida de Fase II é real, mas é uma consequência da estrutura química do fármaco, não uma regra universal do metabolismo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa articulação com a Fase I (detalhada no bloco sobre CYP450) é o principal ponto de conexão deste tópico. Também se articula com o bloco sobre pró-fármacos: como a Fase II costuma produzir metabólitos inativos e prontos apenas para excreção (diferente da Fase I, que às vezes ativa a molécula), ela raramente é a etapa de ativação — mas há exceções relevantes, como o morfina-6-glicuronídeo, um metabólito da glicuronidação da morfina que é ainda mais potente que o fármaco original. E se articula com farmacogenética: a acetilação por NAT2 é um dos exemplos mais didáticos de polimorfismo genético em farmacologia, dividindo pacientes em acetiladores lentos e rápidos com consequências clínicas diretas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Nome e origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "conjugação",
+      "origem": "do latim conjugare (unir, ligar junto; cum = com + jugare = ligar, atrelar como um jugo)",
+      "significado": "literalmente, 'atrelar duas coisas juntas'",
+      "explicacao": "O termo conjugação foi emprestado da química orgânica geral, onde já descrevia a ligação covalente entre duas moléculas, para nomear especificamente as reações de Fase II do metabolismo de fármacos. A escolha da palavra é precisa: a reação não modifica a estrutura interna do fármaco como a oxidação faz — ela atrela (\"conjuga\") ao fármaco uma segunda molécula inteira, pronta e hidrossolúvel, como quem amarra um lastro a um objeto que precisa afundar. A palavra \"Fase II\" em si é uma convenção didática do século XX, adotada para organizar o ensino da biotransformação em dois grandes grupos de reações — não corresponde a nenhuma sequência anatômica ou temporal real dentro da célula."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏷️",
+      "conteudo": "Se a Fase I é abrir uma alça de metal na lateral de uma caixa pesada (só para ter onde prender algo depois), a Fase II é amarrar a essa alça — ou a uma alça que a caixa já tinha de fábrica — um bloco de concreto rotulado e endereçado, pronto para o caminhão de lixo levar embora. Glicuronidação, sulfatação e acetilação são três \"blocos de concreto\" diferentes, cada um fabricado numa oficina própria (UGTs, SULTs, NATs) a partir de matéria-prima que o corpo mantém em estoque (ácido glicurônico, sulfato, acetil-CoA). A caixa que já vem de fábrica com uma alça (fármacos com grupo conjugável nativo) não precisa passar pela oficina de abrir alças (Fase I) — vai direto para a amarração. A analogia quebra num ponto: no mundo real, o caminhão de lixo não tem preferência pelo tamanho do bloco; no corpo, a via de eliminação (rim versus bile) pode depender do tamanho e da carga do conjugado formado, então o \"bloco de concreto\" escolhido também decide o caminho de saída."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Ponte para a clínica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A capacidade de conjugação de Fase II não é infinita, e essa limitação é o que explica um dos quadros de toxicologia mais cobrados: a hepatotoxicidade por paracetamol em superdose. Em dose terapêutica, quase todo o paracetamol é eliminado por glicuronidação e sulfatação, vias de alta capacidade. Numa superdose, essas duas vias saturam — a sulfatação satura primeiro, por ter estoque mais limitado de PAPS —, e uma fração maior do que o normal é desviada para a oxidação pelo CYP2E1 (Fase I), gerando NAPQI em quantidade que excede a capacidade de conjugação com glutationa. É a exaustão da Fase II, não a Fase I isoladamente, que empurra o metabolismo do paracetamol para o lado tóxico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O polimorfismo de NAT2 tem repercussão direta na tuberculostase: pacientes acetiladores lentos metabolizam isoniazida mais devagar, acumulam o fármaco em concentrações mais altas e têm maior risco de hepatotoxicidade e neuropatia periférica induzidas pela droga; acetiladores rápidos, ao contrário, podem ter concentrações plasmáticas insuficientes para eficácia terapêutica na mesma dose padrão. Reconhecer esse fenótipo — ainda que o teste genético não seja rotina na maioria dos serviços — é o que explica por que dois pacientes na mesma dose de isoniazida podem ter respostas clínicas tão diferentes."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "As três vias de conjugação de Fase II lado a lado",
+      "descricao": "Diagrama esquemático comparando as três vias de conjugação. Ao centro, uma molécula de fármaco genérica com um grupo funcional reativo destacado (hidroxila, amina ou carboxila). Três setas partem desse ponto central para três quadros laterais, cada um mostrando: o doador endógeno (ácido glicurônico, sulfato via PAPS, acetil-CoA), a enzima responsável (UGT, SULT, NAT2) e o produto conjugado final, maior e rotulado como 'hidrossolúvel — pronto para excreção'. Um quarto elemento visual menor mostra a via alternativa: um fármaco que já nasce com o grupo funcional pronto, pulando direto para a conjugação sem passar por uma caixa rotulada 'Fase I / CYP450'. Estilo esquemático de livro didático farmacológico, cores consistentes por via, legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Ao centro da composição, uma molécula estilizada de fármaco com um grupo funcional reativo em destaque (círculo colorido rotulado 'OH / NH2 / COOH'). Três setas curvas divergem desse centro para três painéis laterais dispostos em leque: painel 1 rotulado 'Glicuronidação' com ícone de doador (hexágono representando ácido glicurônico), seta com rótulo de enzima 'UGT', e produto final maior rotulado 'glicuronídeo — hidrossolúvel'; painel 2 rotulado 'Sulfatação' com ícone de doador (grupo SO3), seta rotulada 'SULT', produto final rotulado 'sulfato conjugado'; painel 3 rotulado 'Acetilação' com ícone de doador (acetil-CoA estilizado), seta rotulada 'NAT2', produto final rotulado 'N-acetil metabólito'. Acima do centro, uma seta pontilhada menor entrando de uma caixa rotulada 'Fase I / CYP450 (opcional)' até o grupo funcional central, com uma segunda seta paralela sólida vindo direto de uma molécula sem essa caixa, indicando que a conjugação pode ocorrer com ou sem oxidação prévia. Paleta de três cores diferenciadas por via, alto contraste, legendas curtas em português, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-004",
+        "titulo": "Metabolismo (Biotransformação) — Preparar para a Saída (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já entender por que o metabolismo existe — o conflito entre lipossolubilidade para agir e hidrossolubilidade para eliminar — antes de examinar a segunda estratégia (conjugação) que resolve esse conflito."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-01-004-05",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Pró-fármacos e ativação metabólica",
+        "mecanismo_conexao": "A regra geral de que a Fase II costuma inativar tem exceções importantes (morfina-6-glicuronídeo); o bloco de pró-fármacos aprofunda os casos em que biotransformação ativa, em vez de inativar, um composto.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-01-004-06",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Farmacogenética do metabolismo",
+        "mecanismo_conexao": "O polimorfismo de NAT2 (acetiladores lentos/rápidos) apresentado aqui como exemplo é aprofundado no bloco de farmacogenética, que trata sistematicamente de variantes enzimáticas e seu impacto clínico.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "toxicologia",
+        "semestre_futuro": 6,
+        "topico": "Hepatotoxicidade por superdose de paracetamol",
+        "mecanismo_conexao": "A saturação das vias de conjugação (glicuronidação e sulfatação) em superdose, mencionada aqui, é o mecanismo central que explica o desvio para a via oxidativa tóxica (NAPQI) discutido em toxicologia clínica.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-004-02",
+        "tipo_relacao": "COMPLEMENTO",
+        "explicacao": "O Sistema Citocromo P450 descreve a Fase I (oxidação); este bloco descreve a Fase II (conjugação). Juntos formam o quadro completo das reações de biotransformação, mas não são sequenciais para todo fármaco — este bloco explica exatamente por quê."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-004-04-fc01",
+      "pergunta": "Por que só oxidar a molécula (Fase I) muitas vezes não é suficiente para garantir sua excreção?",
+      "resposta": "Porque introduzir ou expor um único grupo reativo, como uma hidroxila, altera pouco o tamanho e a polaridade geral de uma molécula grande — não é suficiente, na maioria dos casos, para impedir a reabsorção tubular renal por difusão passiva. A Fase II resolve isso ligando à molécula um doador endógeno grande e já hidrossolúvel (ácido glicurônico, sulfato ou acetil), que arrasta o conjunto inteiro para o lado polar de forma muito mais eficaz do que a oxidação sozinha.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["metabolismo", "fase-ii", "conjugacao"]
+    },
+    {
+      "card_id": "s4-farma1-01-004-04-fc02",
+      "pergunta": "Compare as três principais vias de conjugação de Fase II quanto ao doador endógeno, à enzima responsável e a uma observação clínica relevante de cada uma.",
+      "resposta": "Glicuronidação: doador é o ácido glicurônico (via UDP-ácido glicurônico), enzima é a UDP-glicuronosiltransferase (UGT); é a via de maior capacidade do corpo, usada por bilirrubina, morfina e parte do paracetamol. Sulfatação: doador é o sulfato (via PAPS), enzima é a sulfotransferase (SULT); tem capacidade limitada pelo estoque baixo de PAPS e satura rapidamente em doses altas — relevante na toxicidade do paracetamol. Acetilação: doador é o grupo acetil (via acetil-coenzima A), enzima é a N-acetiltransferase (NAT2 principalmente); sujeita a polimorfismo genético marcante, com acetiladores lentos e rápidos, exemplo clássico sendo a isoniazida.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["metabolismo", "fase-ii", "glicuronidacao", "sulfatacao", "acetilacao"]
+    },
+    {
+      "card_id": "s4-farma1-01-004-04-fc03",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Todo fármaco precisa passar pela Fase I antes de poder ser conjugado na Fase II.'",
+      "resposta": "Falso. A numeração 'Fase I' e 'Fase II' descreve tipos de reação, não uma sequência cronológica obrigatória. Fármacos que já possuem, na estrutura original, um grupo funcional conjugável (uma hidroxila ou uma amina, por exemplo) podem ser diretamente conjugados, sem qualquer oxidação prévia por CYP450. O paracetamol ilustra bem essa exceção: a maior parte da dose é conjugada diretamente por glicuronidação e sulfatação, sem passar pela Fase I; apenas uma fração menor é oxidada pelo CYP2E1.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["metabolismo", "fase-i", "fase-ii", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s4-farma1-01-004-04-fc04",
+      "pergunta": "Por que a saturação da sulfatação e da glicuronidação é o elo central na hepatotoxicidade por superdose de paracetamol?",
+      "resposta": "Em dose terapêutica, quase todo o paracetamol é eliminado com segurança por glicuronidação e sulfatação, vias de alta capacidade que não geram metabólito tóxico. Numa superdose, essas vias saturam — a sulfatação satura primeiro, por depender de um estoque limitado de PAPS —, e uma fração maior do fármaco é desviada para a oxidação pelo CYP2E1 (Fase I), que gera o metabólito reativo NAPQI. Em quantidade normal, o NAPQI é neutralizado por conjugação com glutationa; em superdose, essa reserva também se esgota, e o NAPQI livre lesa o hepatócito. A causa raiz não é a Fase I isoladamente, mas o esgotamento da capacidade de Fase II que empurra o metabolismo para a via tóxica.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["metabolismo", "paracetamol", "toxicologia", "fase-ii"]
+    },
+    {
+      "card_id": "s4-farma1-01-004-04-fc05",
+      "pergunta": "Por que dois pacientes tomando a mesma dose de isoniazida podem ter respostas clínicas muito diferentes, um evoluindo com hepatotoxicidade e outro com falha terapêutica?",
+      "resposta": "Porque a acetilação da isoniazida pela NAT2 é geneticamente polimórfica. Acetiladores lentos metabolizam o fármaco mais devagar, acumulam concentrações plasmáticas mais altas na mesma dose padrão e têm maior risco de hepatotoxicidade e neuropatia periférica. Acetiladores rápidos eliminam o fármaco rapidamente e podem ficar com concentrações insuficientes para efeito terapêutico pleno na mesma dose. A diferença está inteiramente na capacidade individual de conjugação de Fase II, não na dose prescrita nem na absorção do fármaco.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["metabolismo", "nat2", "farmacogenetica", "isoniazida"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-004-04-caso01",
+      "titulo": "Icterícia e neuropatia periférica em paciente sob tratamento padrão para tuberculose",
+      "apresentacao": "Homem de 52 anos, em uso de esquema padrão para tuberculose pulmonar (incluindo isoniazida em dose ajustada por peso) há oito semanas, retorna à consulta de seguimento relatando formigamento e queimação nos pés há cerca de três semanas, além de icterícia leve e colúria iniciadas há poucos dias. Exames mostram elevação significativa de transaminases hepáticas e bilirrubina, sem outra causa infecciosa ou obstrutiva identificada. O paciente nega uso de álcool ou outros medicamentos hepatotóxicos. A dose de isoniazida prescrita está de acordo com o protocolo padrão para o peso do paciente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Perfil genético individual de acetilação lenta na enzima N-acetiltransferase 2 (NAT2), determinado por variantes alélicas comuns na população, que reduzem a atividade catalítica dessa enzima sem qualquer relação com a dose prescrita ou com função hepática prévia."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A via de conjugação de Fase II por acetilação, mediada pela NAT2 no fígado, que normalmente transforma a isoniazida em metabólitos acetilados prontos para eliminação, funciona muito mais lentamente do que a média populacional neste paciente."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a acetilação lenta, a isoniazida não conjugada se acumula em concentração plasmática mais alta do que a esperada para a dose padrão prescrita. Paralelamente, uma fração desviada é metabolizada por vias oxidativas alternativas que geram intermediários reativos hepatotóxicos, e o próprio acúmulo do fármaco original contribui para neurotoxicidade periférica (por interferência no metabolismo da piridoxina/vitamina B6)."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Neuropatia periférica sensitiva (formigamento e queimação nos pés) e hepatite medicamentosa (icterícia, colúria, elevação de transaminases e bilirrubina) — dois efeitos adversos clássicos de acúmulo de isoniazida, surgindo em dose que seria segura para um acetilador rápido ou intermediário."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Reconhecido o quadro, a isoniazida é suspensa temporariamente até normalização das transaminases, o esquema antituberculose é ajustado (frequentemente com redução de dose ou troca de fármaco, e suplementação de piridoxina para a neuropatia), e o paciente é orientado sobre risco de recorrência caso reintroduzido no mesmo esquema. A maioria dos casos se resolve com a intervenção precoce."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente o exemplo de farmacogenética discutido no bloco: o polimorfismo de NAT2 divide pacientes em acetiladores lentos e rápidos, e a diferença de capacidade individual de conjugação de Fase II — não a dose prescrita — é o que explica por que este paciente específico, e não outro na mesma dose padrão, desenvolveu toxicidade.",
+      "disciplinas_relacionadas": ["farmacologia", "pneumologia", "infectologia", "farmacogenética"],
+      "diagnostico_revelado": "Hepatotoxicidade e neuropatia periférica por acúmulo de isoniazida em paciente com fenótipo de acetilação lenta (polimorfismo de NAT2).",
+      "tratamento_resumido": "Suspensão temporária da isoniazida até normalização das transaminases, suplementação de piridoxina (vitamina B6) para a neuropatia, reintrodução cautelosa com ajuste de dose ou troca de esquema terapêutico conforme orientação especializada, e monitorização clínica e laboratorial mais frequente nas semanas seguintes."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-004-04-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 6 — Drug Metabolism.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 4 — Drug Biotransformation.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Drug Metabolism and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

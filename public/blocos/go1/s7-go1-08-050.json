@@ -4,49 +4,163 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Doença Trofoblástica Gestacional",
+    "titulo": "Doenca Trofoblastica Gestacional",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Mola hidatiforme e neoplasia trofoblástica; beta-hCG; esvaziamento e seguimento",
-  "narrativa": [],
+  "resumo_conciso": "Doença trofoblástica gestacional inclui mola hidatiforme e neoplasias trofoblásticas. O beta-hCG é marcador central para diagnóstico, esvaziamento, vigilância e detecção de persistência.",
+  "narrativa": [
+    {
+      "tipo": "abertura",
+      "conteudo": "Doença trofoblástica gestacional nasce de proliferação anormal do trofoblasto, tecido que normalmente formaria parte da placenta. Ela ocupa uma fronteira curiosa entre gestação e oncologia."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "A mola hidatiforme pode ser completa ou parcial. Na completa, geralmente não há embrião viável e o tecido viloso prolifera de forma difusa; na parcial pode haver tecido fetal anormal e proliferação focal."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "O quadro pode incluir sangramento no primeiro trimestre, útero maior que o esperado, hiperêmese, hipertireoidismo, cistos tecaluteínicos, pré-eclâmpsia precoce e beta-hCG desproporcionalmente elevado."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Ultrassom sugere o diagnóstico, mas histologia após esvaziamento confirma. O tratamento inicial da mola geralmente é esvaziamento uterino por aspiração, com cuidado para Rh, sangramento e complicações."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "O ponto mais importante é o seguimento com beta-hCG seriado até negativação e depois conforme protocolo. Platô ou elevação do hCG sugere doença persistente/neoplasia trofoblástica gestacional."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Neoplasia trofoblástica inclui mola invasora, coriocarcinoma, tumor trofoblástico do sítio placentário e tumor trofoblástico epitelioide. Muitas formas são altamente sensíveis à quimioterapia."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "Contracepção durante vigilância evita confundir nova gestação com persistência de doença e permite interpretar beta-hCG corretamente."
+    },
+    {
+      "tipo": "desenvolvimento",
+      "conteudo": "A paciente precisa de orientação clara: a maioria evolui bem com seguimento adequado, mas abandonar controle do hCG é o risco real."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      "s7-go1-08-000"
+    ],
+    "futuras": [
+      "s7-go1-09-000"
+    ],
+    "laterais": [
+      "s7-go1-05-005",
+      "s7-go1-07-006"
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "id": "s7-go1-08-050-fc-01",
+      "pergunta": "Qual marcador acompanha doença trofoblástica?",
+      "resposta": "Beta-hCG.",
+      "tipo": "conceito"
+    },
+    {
+      "id": "s7-go1-08-050-fc-02",
+      "pergunta": "Qual tratamento inicial comum da mola hidatiforme?",
+      "resposta": "Esvaziamento uterino por aspiração, seguido de vigilância com beta-hCG.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-08-050-fc-03",
+      "pergunta": "O que sugere doença persistente?",
+      "resposta": "Beta-hCG em platô ou elevação após esvaziamento.",
+      "tipo": "aplicacao"
+    },
+    {
+      "id": "s7-go1-08-050-fc-04",
+      "pergunta": "Por que usar contracepção no seguimento?",
+      "resposta": "Para evitar nova gestação que confunda a interpretação do beta-hCG.",
+      "tipo": "aplicacao"
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "id": "s7-go1-08-050-cc-01",
+      "titulo": "hCG que não cai",
+      "enunciado": "Após esvaziamento de mola completa, paciente apresenta beta-hCG em platô por semanas.",
+      "pergunta": "Qual preocupação?",
+      "resposta_comentada": "Neoplasia trofoblástica gestacional persistente, exigindo avaliação e tratamento conforme risco."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Fluxo de DTG: mola completa/parcial, beta-hCG alto, esvaziamento, curva de hCG, persistência e quimioterapia.",
+        "alt": "Ilustracao educacional para Doenca Trofoblastica Gestacional"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Vulvar Cancer Treatment",
+      "url": "https://www.cancer.gov/types/vulvar/hp/vulvar-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Vaginal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/vaginal/hp/vaginal-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Gestational Trophoblastic Disease Treatment",
+      "url": "https://www.cancer.gov/types/gestational-trophoblastic/hp/gtd-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI - BRCA Gene Changes: Cancer Risk and Genetic Testing",
+      "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "NCI - Lynch Syndrome",
+      "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+      "tipo": "referencia"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

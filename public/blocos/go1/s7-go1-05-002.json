@@ -10,43 +10,201 @@
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "miomatose",
+      "sangramento-uterino-anormal",
+      "mecanismo",
+      "clinica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Submucoso, intramural, subseroso; como a posição determina o sintoma",
-  "narrativa": [],
+  "resumo_conciso": "A classificação por localização descreve quanto o mioma se relaciona com endométrio, miométrio e serosa, ajudando a prever sangramento, compressão, infertilidade e via terapêutica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "A classificação dos miomas existe porque localização define comportamento. O mesmo diâmetro pode ser irrelevante se subseroso e dramático se submucoso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Miomas submucosos projetam-se para a cavidade uterina. São os mais ligados a sangramento menstrual intenso, infertilidade, abortamento e indicação de abordagem histeroscópica quando tecnicamente possível."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Miomas intramurais ficam dentro da parede uterina. Podem aumentar volume, alterar contratilidade, causar dor, sangramento e, quando distorcem a cavidade ou são grandes, impactar fertilidade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Miomas subserosos crescem para fora do útero. Tendem a causar menos sangramento e mais sintomas compressivos, como polaciúria, constipação, dor por massa ou sensação de peso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Miomas pediculados podem torcer, especialmente quando subserosos, gerando dor aguda. Já miomas cervicais ou intraligamentares podem dificultar cirurgia e comprimir vias urinárias."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na linguagem FIGO, os tipos 0, 1 e 2 são submucosos em graus diferentes; os tipos 3 a 5 relacionam-se progressivamente com endométrio, intramural e serosa; 6 e 7 são subserosos; 8 inclui localizações especiais."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O valor prático é comunicar bem. Dizer apenas \"mioma de 4 cm\" é pouco; dizer \"mioma FIGO 2 de 4 cm distorcendo cavidade\" muda investigação, fertilidade e tratamento."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "titulo": "Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-04-006",
+        "titulo": "Adenomiose - Endométrio Invadindo o Miométrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Módulo 6 - Infecções do Trato Genital e ISTs",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-025",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Conduta no Sangramento Uterino Anormal — Aguda e Crônica"
+      },
+      {
+        "bloco_id": "s7-go1-03-004",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Manifestações Clínicas e Riscos da SOP"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-05-002-fc-01",
+      "pergunta": "Quais miomas mais causam sangramento?",
+      "resposta": "Submucosos, por contato e distorção da cavidade endometrial.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-002-fc-02",
+      "pergunta": "Quais miomas tendem a causar compressão?",
+      "resposta": "Subserosos grandes ou pediculados, por crescimento externo.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-002-fc-03",
+      "pergunta": "Por que mioma intramural pode afetar fertilidade?",
+      "resposta": "Pode distorcer cavidade, alterar contratilidade e interferir na implantação conforme tamanho e posição.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-002-fc-04",
+      "pergunta": "O que acrescenta a classificação FIGO?",
+      "resposta": "Padroniza a relação do mioma com cavidade, miométrio e serosa, orientando conduta.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-05-002-cc-01",
+      "titulo": "O número que muda a conduta",
+      "apresentacao": "Laudo descreve mioma FIGO 1 de 3 cm em paciente com infertilidade e sangramento intenso.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: A classificação por localização descreve quanto o mioma se relaciona com endométrio, miométrio e serosa, ajudando a prever sangramento, compressão, infertilidade e via terapêutica."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Classificação dos Miomas por Localização (FIGO), conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A classificação por localização descreve quanto o mioma se relaciona com endométrio, miométrio e serosa, ajudando a prever sangramento, compressão, infertilidade e via terapêutica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Laudo descreve mioma FIGO 1 de 3 cm em paciente com infertilidade e sangramento intenso."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual implicação da classificação? Mioma submucoso com grande componente intracavitário; pode justificar avaliação histeroscópica e tratamento direcionado."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Mioma submucoso com grande componente intracavitário; pode justificar avaliação histeroscópica e tratamento direcionado.",
+      "tratamento_resumido": "Mioma submucoso com grande componente intracavitário; pode justificar avaliação histeroscópica e tratamento direcionado."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Diagrama FIGO dos miomas tipo 0 a 8 em corte sagital do útero.",
+        "alt": "Ilustração educacional para Classificação dos Miomas por Localização (FIGO)"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_3_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NICE guideline NG88 - Heavy menstrual bleeding: assessment and management",
+      "url": "https://www.nice.org.uk/guidance/ng88",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "FIGO resources - menstrual disorders and abnormal uterine bleeding",
+      "url": "https://www.figo.org/figo-resources/menstrual-disorders",
+      "tipo": "classificacao"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica"

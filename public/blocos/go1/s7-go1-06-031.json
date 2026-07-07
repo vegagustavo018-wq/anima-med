@@ -4,49 +4,235 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Diagnóstico e Estadiamento da DIP",
+    "titulo": "Diagnostico e Estadiamento da DIP",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "ist",
+      "dip",
+      "clinica",
+      "diagnostico"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Critérios de Monif; dor à mobilização do colo; abscesso tubo-ovariano",
-  "narrativa": [],
+  "resumo_conciso": "O diagnóstico de DIP é principalmente clínico. Dor pélvica associada a dor à mobilização cervical, uterina ou anexial justifica tratamento se não houver causa alternativa; imagem ajuda em abscesso e complicações.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "DIP não espera exame perfeito. O diagnóstico é predominantemente clínico porque testes negativos para gonorreia ou clamídia não excluem infecção do trato genital superior."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Critérios mínimos usados na prática incluem dor pélvica ou abdominal baixa em mulher sexualmente ativa, sem outra causa evidente, associada a dor à mobilização cervical, dor uterina ou dor anexial."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Achados adicionais aumentam especificidade: febre, secreção cervical mucopurulenta, leucócitos em secreção vaginal, VHS/PCR elevados e testes positivos para gonorreia ou clamídia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A ultrassonografia pode mostrar líquido livre, espessamento tubário, hidrossalpinge, piossalpinge ou abscesso tubo-ovariano. RM ou TC entram quando o diagnóstico diferencial abdominal é amplo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sinais de gravidade incluem gravidez, impossibilidade de excluir emergência cirúrgica, abscesso tubo-ovariano, doença grave com febre/náuseas/vômitos, falha de tratamento ambulatorial ou incapacidade de aderir ao esquema oral."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O estadiamento didático vai de endometrite/salpingite leve a abscesso tubo-ovariano e peritonite. Na prática, o que muda conduta é gravidade, abscesso, gestação e resposta ao tratamento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Diferenciais importantes incluem gravidez ectópica, apendicite, torção anexial, endometriose, cisto roto, infecção urinária e gastroenterite."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-06-000",
+        "titulo": "Modulo 6 - Infeccoes do Trato Genital e ISTs",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-06-021",
+        "titulo": "Ulceras Genitais - Abordagem Sindromica",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "HIV e Outras ISTs na Saude da Mulher",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-07-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-06-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Cervicites e Uretrites - Gonorreia e Clamidia"
+      },
+      {
+        "bloco_id": "s7-go1-06-013",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Tricomoniase"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-031-fc-01",
+      "pergunta": "O diagnóstico de DIP é principalmente o quê?",
+      "resposta": "Clínico.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-031-fc-02",
+      "pergunta": "Quais são critérios mínimos práticos?",
+      "resposta": "Dor pélvica com dor à mobilização cervical, uterina ou anexial, sem outra causa mais provável.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-031-fc-03",
+      "pergunta": "Teste negativo para clamídia/gonorreia exclui DIP?",
+      "resposta": "Não. A infecção pode ser polimicrobiana ou já estar no trato superior.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-031-fc-04",
+      "pergunta": "Quando imagem é especialmente útil?",
+      "resposta": "Suspeita de abscesso tubo-ovariano, complicação ou diagnóstico diferencial abdominal.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-031-cc-01",
+      "titulo": "Não esperar o resultado",
+      "apresentacao": "Mulher com dor pélvica, dor anexial e colo doloroso à mobilização aguarda NAAT para gonorreia/clamídia.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: O diagnóstico de DIP é principalmente clínico."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Diagnostico e Estadiamento da DIP, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O diagnóstico de DIP é principalmente clínico. Dor pélvica associada a dor à mobilização cervical, uterina ou anexial justifica tratamento se não houver causa alternativa; imagem ajuda em abscesso e complicações."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher com dor pélvica, dor anexial e colo doloroso à mobilização aguarda NAAT para gonorreia/clamídia."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Deve aguardar para tratar? Não, se a suspeita clínica é compatível e não há causa alternativa, deve iniciar tratamento conforme protocolo."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Não, se a suspeita clínica é compatível e não há causa alternativa, deve iniciar tratamento conforme protocolo.",
+      "tratamento_resumido": "Não, se a suspeita clínica é compatível e não há causa alternativa, deve iniciar tratamento conforme protocolo."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Algoritmo diagnóstico de DIP com critérios mínimos, critérios adicionais, sinais de gravidade e diferenciais.",
+        "alt": "Ilustracao educacional para Diagnostico e Estadiamento da DIP"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC - Syphilis STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/syphilis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Herpes STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Chancroid STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/chancroid.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Lymphogranuloma Venereum STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/lgv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Donovanosis STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/donovanosis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Pelvic Inflammatory Disease STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "clinica",
     "diagnostico"

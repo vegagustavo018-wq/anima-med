@@ -4,49 +4,217 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Hiperplasia Endometrial — Precursora do Câncer de Endométrio",
+    "titulo": "Hiperplasia Endometrial - Precursora do Câncer de Endométrio",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "hiperplasia-endometrial",
+      "sangramento-uterino-anormal",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Estímulo estrogênico sem oposição; com/sem atipia; risco e conduta",
-  "narrativa": [],
+  "resumo_conciso": "Hiperplasia endometrial é proliferação glandular anormal por estrogênio sem oposição. A presença de atipia define maior risco de câncer e muda decisivamente a conduta.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Hiperplasia endometrial é aumento irregular das glândulas endometriais em relação ao estroma. Ela importa porque pode ser precursora do câncer de endométrio, especialmente quando há atipia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O mecanismo central é estrogênio sem oposição progesterônica. Isso ocorre em anovulação crônica, SOP, obesidade, tumores produtores de estrogênio, terapia estrogênica sem progestágeno e outras situações de exposição prolongada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A apresentação mais comum é sangramento uterino anormal: sangramento intenso, irregular, intermenstrual, pós-menopausa ou sangramento inesperado em terapia hormonal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O diagnóstico depende de amostragem endometrial. Ultrassom pode levantar suspeita por espessamento, mas não substitui histologia quando há indicação de biópsia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A classificação prática separa hiperplasia sem atipia de hiperplasia atípica ou neoplasia intraepitelial endometrial, conforme sistema usado. Sem atipia tem menor risco e costuma responder bem a progestágenos; com atipia tem risco maior de câncer concomitante ou progressão."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O DIU liberador de levonorgestrel é frequentemente preferido para hiperplasia sem atipia quando apropriado, por alta exposição local a progestágeno. Progestágenos orais podem ser usados quando DIU não é possível ou aceito."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Hiperplasia com atipia geralmente exige discussão de histerectomia em pacientes com prole definida. Se houver desejo reprodutivo ou alto risco cirúrgico, tratamento conservador com progestágeno requer seguimento rigoroso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Além de tratar o endométrio, é preciso tratar a causa: perda ponderal quando indicada, controle de anovulação, manejo da SOP e revisão de terapias hormonais."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "titulo": "Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-04-006",
+        "titulo": "Adenomiose - Endométrio Invadindo o Miométrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Módulo 6 - Infecções do Trato Genital e ISTs",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-025",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Conduta no Sangramento Uterino Anormal — Aguda e Crônica"
+      },
+      {
+        "bloco_id": "s7-go1-03-004",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Manifestações Clínicas e Riscos da SOP"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-05-005-fc-01",
+      "pergunta": "Qual mecanismo central da hiperplasia endometrial?",
+      "resposta": "Estímulo estrogênico sem oposição progesterônica.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-005-fc-02",
+      "pergunta": "Qual apresentação clínica mais comum?",
+      "resposta": "Sangramento uterino anormal.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-005-fc-03",
+      "pergunta": "O que muda muito o risco oncológico?",
+      "resposta": "Presença de atipia.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-05-005-fc-04",
+      "pergunta": "Ultrassom substitui biópsia quando há indicação?",
+      "resposta": "Não. A confirmação depende de amostragem histológica.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-05-005-cc-01",
+      "titulo": "SOP e sangramento irregular",
+      "apresentacao": "Paciente de 36 anos com obesidade e SOP relata amenorreia por 5 meses seguida de sangramento prolongado. USG mostra endométrio espessado.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Hiperplasia endometrial é proliferação glandular anormal por estrogênio sem oposição."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Hiperplasia Endometrial - Precursora do Câncer de Endométrio, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Hiperplasia endometrial é proliferação glandular anormal por estrogênio sem oposição. A presença de atipia define maior risco de câncer e muda decisivamente a conduta."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente de 36 anos com obesidade e SOP relata amenorreia por 5 meses seguida de sangramento prolongado. USG mostra endométrio espessado."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual risco precisa ser avaliado? Hiperplasia endometrial por estrogênio sem oposição; pode haver indicação de amostragem endometrial conforme risco e quadro."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Hiperplasia endometrial por estrogênio sem oposição; pode haver indicação de amostragem endometrial conforme risco e quadro.",
+      "tratamento_resumido": "Hiperplasia endometrial por estrogênio sem oposição; pode haver indicação de amostragem endometrial conforme risco e quadro."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Esquema comparando endométrio normal, hiperplasia sem atipia e hiperplasia atípica, conectado ao eixo estrogênio sem progesterona.",
+        "alt": "Ilustração educacional para Hiperplasia Endometrial - Precursora do Câncer de Endométrio"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_3_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NICE guideline NG88 - Heavy menstrual bleeding: assessment and management",
+      "url": "https://www.nice.org.uk/guidance/ng88",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "FIGO resources - menstrual disorders and abnormal uterine bleeding",
+      "url": "https://www.figo.org/figo-resources/menstrual-disorders",
+      "tipo": "classificacao"
+    },
+    {
+      "titulo": "RCOG Green-top Guideline No. 67 - Management of Endometrial Hyperplasia",
+      "url": "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/management-of-endometrial-hyperplasia-green-top-guideline-no-67/",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

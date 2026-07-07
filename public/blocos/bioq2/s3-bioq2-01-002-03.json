@@ -5,48 +5,252 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Outros Compostos de Alta Energia",
+    "subtitulo": "Se ATP é a moeda, por que existem notas maiores?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "alta-energia",
+      "fosfocreatina",
+      "pep",
+      "gtp",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Fosfocreatina, PEP, 1,3-BPG, GTP; por que o ATP fica no meio da escala de fosfato",
-  "narrativa": [],
+  "resumo_conciso": "ATP é a moeda central, mas não é o único composto de alta energia. Fosfoenolpiruvato, 1,3-bisfosfoglicerato, fosfocreatina, carbamoil-fosfato e GTP ocupam papéis específicos porque têm alto potencial de transferência de fosfato ou energia livre útil. A célula usa esses compostos como doadores fortes, tampões rápidos ou moedas locais, mantendo ATP no centro porque ele é intermediário, reciclável e amplamente aceito.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Toda economia tem mais de um instrumento financeiro. Há dinheiro de bolso, cartão, reserva de emergência e investimentos. ATP é a moeda mais aceita da célula, mas algumas situações exigem compostos com potencial ainda maior ou uso mais localizado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O ponto não é destronar o ATP. É entender por que a célula mantém uma escala de transferência de fosfato. Compostos acima do ATP podem formar ATP; ATP pode pagar compostos abaixo. Essa hierarquia torna a energia transferível em etapas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema esses compostos resolvem?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Eles resolvem problemas de contexto. O fosfoenolpiruvato tem queda de energia livre tão grande que consegue doar fosfato ao ADP na glicólise. A fosfocreatina funciona como reserva rápida no músculo. GTP aparece como moeda local em síntese proteica e sinalização. Cada um encaixa em uma necessidade específica."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: ATP é central porque está no meio da escala; compostos de energia mais alta existem para formar ATP ou pagar tarefas especializadas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que PEP é tão potente?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O fosfoenolpiruvato, ou PEP, ao perder fosfato, forma enolpiruvato, que rapidamente se rearranja para piruvato, uma forma mais estável. Essa estabilização do produto puxa a reação. Por isso a piruvato quinase consegue formar ATP a partir de ADP no fim da glicólise."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "fosfocreatina",
+      "origem": "fosfo indica grupo fosfato; creatina vem do grego kreas, carne",
+      "significado": "creatina fosforilada, abundante em tecido muscular",
+      "explicacao": "O nome carrega a pista fisiológica: no músculo, onde a demanda por ATP muda em segundos, a fosfocreatina funciona como amortecedor energético imediato."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: composto de alta energia não significa molécula perigosa ou explosiva. Significa produto de hidrólise muito favorecido e, portanto, bom doador de grupo ou energia."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se ATP fosse o composto de maior potencial de transferência de fosfato?",
+      "resposta": "Seria difícil regenerar ATP por fosforilação em nível de substrato. A célula perderia compostos capazes de doar fosfato ao ADP, e a moeda central ficaria sem doadores acima dela na escala."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "escala",
+      "conteudo": "Pense em uma escada de pagamentos. PEP e 1,3-BPG estão acima e conseguem pagar para formar ATP. ATP fica no meio e paga muitas reações comuns. Compostos abaixo recebem fosfato do ATP. Fosfocreatina é uma reserva rápida guardada ao lado do caixa muscular. A analogia quebra porque a escala depende de ΔG real e condições celulares, não de valor fixo absoluto."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Escala de compostos de alta energia",
+      "descricao": "Escada comparando PEP, 1,3-BPG, fosfocreatina, ATP e compostos abaixo do ATP.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. Escada vertical de potencial de transferência de fosfato: no topo PEP e 1,3-BPG; próximo fosfocreatina; no meio ATP; abaixo glicose-6-fosfato e glicerol-3-fosfato. Setas descendo indicam doação de fosfato. Destacar ATP como moeda intermediária central.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando você estudar glicólise, músculo e síntese proteica, esses nomes deixam de ser exceções. Eles são soluções locais para o mesmo problema: transferir energia de modo controlado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-002",
+        "titulo": "ATP — A Moeda Energética Universal — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso entender ATP como moeda intermediária antes de comparar outros compostos de alta energia."
+      },
+      {
+        "bloco_id": "s3-bioq2-01-002-01",
+        "titulo": "Por Que a Ligação Fosfoanidrido É 'Rica em Energia'",
+        "relevancia": "base_necessaria",
+        "explicacao": "A lógica de produtos estabilizados também explica outros compostos fosforilados de alta energia."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Glicólise — Fosforilação em Nível de Substrato",
+        "mecanismo_conexao": "PEP e 1,3-BPG formam ATP diretamente a partir de ADP.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Metabolismo Muscular e Fosfocreatina",
+        "mecanismo_conexao": "Fosfocreatina tampona ATP durante segundos iniciais de esforço intenso.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Síntese Proteica e GTP",
+        "mecanismo_conexao": "GTP funciona como moeda energética local em tradução e sinalização.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "O Ciclo ATP/ADP — Carga Energética da Célula",
+        "tipo_relacao": "COMPLEMENTA",
+        "explicacao": "Outros compostos ajudam a manter ou transferir a carga energética representada pelo sistema ATP/ADP/AMP."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-002-03-fc01",
+      "tipo": "comparacao",
+      "pergunta": "Compare ATP e fosfoenolpiruvato quanto ao potencial de transferência de fosfato.",
+      "resposta": "PEP tem potencial maior que ATP porque sua hidrólise gera piruvato muito estabilizado. Por isso consegue doar fosfato ao ADP para formar ATP.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "pep",
+        "atp"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-002-03-fc02",
+      "tipo": "por_que",
+      "pergunta": "Por que ATP fica no meio da escala de compostos fosforilados?",
+      "resposta": "Porque precisa receber fosfato de compostos mais energéticos e doar fosfato a compostos menos energéticos. Se estivesse no extremo, seria menos útil como moeda intermediária.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "escala",
+        "fosfato"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-002-03-fc03",
+      "tipo": "clinico",
+      "pergunta": "Por que fosfocreatina é importante em esforço muscular breve e intenso?",
+      "resposta": "Ela doa fosfato ao ADP rapidamente, regenerando ATP nos primeiros segundos de demanda alta, antes que glicólise e fosforilação oxidativa alcancem plenamente a necessidade.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "fosfocreatina",
+        "musculo"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-002-03-fc04",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de tratar 'alta energia' como energia guardada dentro de uma ligação isolada?",
+      "resposta": "A energia livre favorável depende da reação inteira e da estabilidade dos produtos, não de uma ligação isolada como reservatório mágico.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha",
+        "energia-livre"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-002-03-caso01",
+      "titulo": "Arrancada curta sustentada por fosfocreatina",
+      "apresentacao": "Atleta realiza uma arrancada máxima de poucos segundos. Antes que a respiração acelere o suficiente para sustentar ATP por via aeróbica, o músculo usa fosfocreatina para regenerar ATP rapidamente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Demanda súbita por ATP durante contração intensa excede a reposição inicial por vias lentas."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Fibras musculares usam creatina quinase para transferir fosfato da fosfocreatina ao ADP."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Não há disfunção; há tamponamento fisiológico da queda de ATP."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "A potência é mantida por poucos segundos antes de fadiga e outras vias assumirem maior papel."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A reserva de fosfocreatina se esgota rapidamente e precisa ser refeita na recuperação."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra por que existem compostos de alta energia além do ATP: alguns funcionam como reserva local e rápida para refazer a moeda central.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Fisiologia",
+        "Medicina do Esporte"
+      ],
+      "diagnostico_revelado": "Uso fisiológico do sistema fosfocreatina em esforço anaeróbio alático.",
+      "tratamento_resumido": "Não há tratamento; treinamento, recuperação e nutrição modulam desempenho nesse sistema."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-002-03-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'Escala de compostos de alta energia'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Seções de compostos fosforilados de alta energia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "molecular",
     "fisiologia"

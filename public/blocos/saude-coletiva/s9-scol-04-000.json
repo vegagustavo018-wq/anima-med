@@ -187,7 +187,8 @@
         "disciplina": "saude-coletiva",
         "semestre_futuro": 9,
         "topico": "Programas Específicos de Prevenção — Vacinação Universal, Saneamento, Educação em Saúde",
-        "mecanismo_conexao": "Este bloco é teoria geral. Próximo bloco detalha implementação de programas específicos de prevenção."
+        "mecanismo_conexao": "Este bloco é teoria geral. Próximo bloco detalha implementação de programas específicos de prevenção.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "tipo": "RECONHECIMENTO_CLINICO",
@@ -195,13 +196,14 @@
         "disciplina": "clinica",
         "semestre_futuro": 10,
         "topico": "Contexto Estrutural na Clínica — Além de Prescrever, Estruturar",
-        "mecanismo_conexao": "Clínico que entende prevenção estrutural consegue adaptar tratamento ao contexto real do paciente, em vez de prescrever 'ideal' que paciente não conseguirá seguir."
+        "mecanismo_conexao": "Clínico que entende prevenção estrutural consegue adaptar tratamento ao contexto real do paciente, em vez de prescrever 'ideal' que paciente não conseguirá seguir.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
       {
         "bloco_id": "s9-clinica-01-003",
-        "tipo_relacao": "COMPLEMENTO",
+        "tipo_relacao": "EXEMPLO_PARALELO",
         "explicacao": "Clínica oferece aconselhamento individual. Saúde Pública oferece estrutura. Ambas são necessárias."
       }
     ]
@@ -210,37 +212,44 @@
     {
       "card_id": "s9-scol-04-000-fc01",
       "pergunta": "Por que prescrever 'exercite-se 30min diários' para população pobre sem espaço verde seguro é culpa, não medicina?",
-      "resposta": "Porque a prescrição assume que pessoa tem poder de seguir — mas não tem. Moradora de favela que trabalha em dupla jornada não tem 30 minutos livres de verdade. Não tem espaço seguro de noite (sai para fazer exercício, pode ser assaltada). O espaço verde público foi privatizado. Não tem custo para academia (custa R$ 100/mês, é 10% da renda dela). Quando você prescreve sem considerar contexto, está culpando pessoa por falha do sistema. É como dizer 'tome remédio caro' para quem não tem renda. Culpa mascara falha. Medicina real seria: construir parque seguro no bairro (estrutura, não prescrição), oferecer academia gratuita, oferecer ocupação com menos jornada. Aí a prescrição vira possível."
+      "resposta": "Porque a prescrição assume que pessoa tem poder de seguir — mas não tem. Moradora de favela que trabalha em dupla jornada não tem 30 minutos livres de verdade. Não tem espaço seguro de noite (sai para fazer exercício, pode ser assaltada). O espaço verde público foi privatizado. Não tem custo para academia (custa R$ 100/mês, é 10% da renda dela). Quando você prescreve sem considerar contexto, está culpando pessoa por falha do sistema. É como dizer 'tome remédio caro' para quem não tem renda. Culpa mascara falha. Medicina real seria: construir parque seguro no bairro (estrutura, não prescrição), oferecer academia gratuita, oferecer ocupação com menos jornada. Aí a prescrição vira possível.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-04-000-fc02",
       "pergunta": "Explique cascata: Prevenção Primária Estrutural (R$ 1) → Primária Clínica (R$ 10) → Secundária (R$ 100) → Terciária (R$ 1000)",
-      "resposta": "Investimento mínimo no topo (estrutura: melhorar moradia, saneamento, educação = R$ 1 por capita ano) evita 80% de TB antes dela aparecer. Sobram 20% que não foram prevenidos — esses recebem vacinação BCG (prevenção primária clínica = R$ 10 per capita ano). Sobram 5% que não foram prevenidos — esses recebem teste de TB latente e quimioprofilaxia (prevenção secundária = R$ 100 per capita ano). Sobram 1% que desenvolvem TB ativa — recebem internação, cirurgia, medicação cara (prevenção terciária = R$ 1000 per capita ano). Cada nível é 10x mais caro que o anterior, mas trata 10x menos pessoas. Sistema que coloca recurso em topo (estrutural) consegue população saudável barato. Sistema que coloca em base (terciária) consegue população doente caro. Não é matemática complexa — é simples: evita é mais barato que trata."
+      "resposta": "Investimento mínimo no topo (estrutura: melhorar moradia, saneamento, educação = R$ 1 por capita ano) evita 80% de TB antes dela aparecer. Sobram 20% que não foram prevenidos — esses recebem vacinação BCG (prevenção primária clínica = R$ 10 per capita ano). Sobram 5% que não foram prevenidos — esses recebem teste de TB latente e quimioprofilaxia (prevenção secundária = R$ 100 per capita ano). Sobram 1% que desenvolvem TB ativa — recebem internação, cirurgia, medicação cara (prevenção terciária = R$ 1000 per capita ano). Cada nível é 10x mais caro que o anterior, mas trata 10x menos pessoas. Sistema que coloca recurso em topo (estrutural) consegue população saudável barato. Sistema que coloca em base (terciária) consegue população doente caro. Não é matemática complexa — é simples: evita é mais barato que trata.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-04-000-fc03",
       "pergunta": "Se álcool causa cirrose, por que dizer 'não beba' é prevenção, mas oferecer ocupação significativa e psicoterapia também é prevenção?",
-      "resposta": "Porque pessoa bebe por razão — se razão desaparece, comportamento desaparece. Morador de rua bebe para não sentir frio na noite na rua. Pessoa com depressão bebe para numbar emoção. Pessoa sob stress laboral bebe para relaxar. Dizer 'não beba' é ignorar razão e culpar pessoa. Oferecer habitação (não mais frio), psicoterapia (trata depressão), ocupação segura (reduz stress) — oferece caminho alternativo. Quando pessoa tem saúde mental estável, ocupação, comunidade, não bebe porque não precisa. Prevenção real é fazer pessoa não PRECISAR beber. Prevenção de culpa é dizer 'você é fraco, não consegue parar'."
+      "resposta": "Porque pessoa bebe por razão — se razão desaparece, comportamento desaparece. Morador de rua bebe para não sentir frio na noite na rua. Pessoa com depressão bebe para numbar emoção. Pessoa sob stress laboral bebe para relaxar. Dizer 'não beba' é ignorar razão e culpar pessoa. Oferecer habitação (não mais frio), psicoterapia (trata depressão), ocupação segura (reduz stress) — oferece caminho alternativo. Quando pessoa tem saúde mental estável, ocupação, comunidade, não bebe porque não precisa. Prevenção real é fazer pessoa não PRECISAR beber. Prevenção de culpa é dizer 'você é fraco, não consegue parar'.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-04-000-fc04",
       "pergunta": "Um município investiu R$ 5 mi em campanha de educação 'não fume'. Redução de fumo foi 2%. Compare: outro município investiu R$ 5 mi em reforma de ventilação em 500 casas. Redução de câncer de pulmão foi 25%. Qual é a lição de Saúde Pública?",
-      "resposta": "Lição é clara: estrutura > educação quando vem a reduzir doença. Campanha gastou R$ 5mi em educação, conseguiu 2% de desistência de fumo — ainda há 98% fumando. Reforma gastou R$ 5mi em estrutura, conseguiu 25% de redução de câncer — resultado 12x melhor. Por quê? Porque: (1) Educação muda conhecimento, não comportamento. Pessoa já sabe que fumar causa câncer. Continua fumando porque é viciante e porque contexto (estresse, entedia) reforça. (2) Estrutura muda oportunidade. Quando você remove poluição interna (que é fator de risco maior que fumo em áreas pobres), corpo consegue recuperar mesmo se pessoa continua fumando. E se volta-se a desestressar com ocupação, exercício no parque novo, comunidade — nem quer fumar mais. Saúde Pública investe em estrutura porque estrutura funciona. Educação é suplementar."
+      "resposta": "Lição é clara: estrutura > educação quando vem a reduzir doença. Campanha gastou R$ 5mi em educação, conseguiu 2% de desistência de fumo — ainda há 98% fumando. Reforma gastou R$ 5mi em estrutura, conseguiu 25% de redução de câncer — resultado 12x melhor. Por quê? Porque: (1) Educação muda conhecimento, não comportamento. Pessoa já sabe que fumar causa câncer. Continua fumando porque é viciante e porque contexto (estresse, entedia) reforça. (2) Estrutura muda oportunidade. Quando você remove poluição interna (que é fator de risco maior que fumo em áreas pobres), corpo consegue recuperar mesmo se pessoa continua fumando. E se volta-se a desestressar com ocupação, exercício no parque novo, comunidade — nem quer fumar mais. Saúde Pública investe em estrutura porque estrutura funciona. Educação é suplementar.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-04-000-fc05",
       "pergunta": "Diferencie: 'Prevenção' vs 'Promoção de Saúde'",
-      "resposta": "**Prevenção:** evitar que doença apareça (vacina evita TB, saneamento evita diarreia). É defensivo — coloca muro contra o mal. **Promoção de Saúde:** criar ambiente e contexto onde pessoa floresce — não só sem doença, mas com potencial de bem-estar integral. É ofensivo — constrói o bem. Exemplos de promoção: educação para que pessoa descubra talento, ocupação significativa para que tenha proposição, comunidade para que pertença, espaço verde para que desfrute beleza, acesso a cultura para que alma se nutra. Prevenção evita TB; promoção faz pessoa querer viver de verdade. Prevenção é negativa (não ficar doente). Promoção é positiva (estar bem). Na prática: sistema de Saúde Pública bem estruturado faz ambas — previne doença E promove bem-estar."
+      "resposta": "**Prevenção:** evitar que doença apareça (vacina evita TB, saneamento evita diarreia). É defensivo — coloca muro contra o mal. **Promoção de Saúde:** criar ambiente e contexto onde pessoa floresce — não só sem doença, mas com potencial de bem-estar integral. É ofensivo — constrói o bem. Exemplos de promoção: educação para que pessoa descubra talento, ocupação significativa para que tenha proposição, comunidade para que pertença, espaço verde para que desfrute beleza, acesso a cultura para que alma se nutra. Prevenção evita TB; promoção faz pessoa querer viver de verdade. Prevenção é negativa (não ficar doente). Promoção é positiva (estar bem). Na prática: sistema de Saúde Pública bem estruturado faz ambas — previne doença E promove bem-estar.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-04-000-fc06",
       "pergunta": "A etimologia de 'prevenção' é 'vir antes, antecipar'. Como isso reflete responsabilidade diferente entre clínica (que reage à doença) e Saúde Pública (que antecipa)?",
-      "resposta": "'Prevenção' = vir antes da doença, colocar-se no lugar do problema, bloquear a entrada. Clínico trabalha com reação — paciente chega doente, clínico reage (diagnostica, trata). Saúde Pública trabalha com antecipação — epidemiologista vê padrão de TB surgindo, ativa vacinação massiva ANTES de epidemia explodir. Diferença de mentalidade é abismal. Clínico é reativo; epidemiologista é proativo. Etimologia de 'preventio' captura essa essência — é ação que toma lugar do problema, o impede de nascer. Sistema que só reage é sempre atrasado — por quando detecta, doença já tem 10.000 casos. Sistema que antecipa evita a cascata. Responsabilidade está em não deixar chegar — e responsabilidade é do sistema (estrutura), não do paciente."
+      "resposta": "'Prevenção' = vir antes da doença, colocar-se no lugar do problema, bloquear a entrada. Clínico trabalha com reação — paciente chega doente, clínico reage (diagnostica, trata). Saúde Pública trabalha com antecipação — epidemiologista vê padrão de TB surgindo, ativa vacinação massiva ANTES de epidemia explodir. Diferença de mentalidade é abismal. Clínico é reativo; epidemiologista é proativo. Etimologia de 'preventio' captura essa essência — é ação que toma lugar do problema, o impede de nascer. Sistema que só reage é sempre atrasado — por quando detecta, doença já tem 10.000 casos. Sistema que antecipa evita a cascata. Responsabilidade está em não deixar chegar — e responsabilidade é do sistema (estrutura), não do paciente.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-04-000-fc07",
       "pergunta": "Integre: Prevenção Primária Estrutural custa R$ 1/pessoa/ano. Campanha de educação custa R$ 0.5/pessoa/ano. Qual é mais eficaz? Por que hospital esperto investe em estrutura mesmo sendo mais caro?",
-      "resposta": "**Aparentemente**, campanha é mais barata (R$ 0.5 vs R$ 1). **Na verdade**, estrutura é mais barata porque reduz doença de verdade. Aqui está a conta real: Município A investe em campanha (R$ 0.5 × 100k população = R$ 50k). Resultado: incidência de TB fica em 50 casos/100k (não muda muito). Internação por TB = 100 casos/ano × R$ 10k = R$ 1 mi. Total: R$ 50k + R$ 1 mi = R$ 1.05 mi por ano. Município B investe em estrutura (R$ 1 × 100k = R$ 100k). Resultado: incidência de TB cai para 10 casos/100k. Internação = 20 casos/ano × R$ 10k = R$ 200k. Total: R$ 100k + R$ 200k = R$ 300k por ano. Município B gasta R$ 100k a mais agora, mas economiza R$ 750k em internação = economia líquida de R$ 650k/ano. Em 2 anos, Município B está R$ 1.3 mi a frente economicamente. E população está mais saudável. Estrutura custa mais no início porque é investimento; educação custa menos no início porque é gasto. Mas hospital esperto sabe: investir em estrutura devolve em economia."
+      "resposta": "**Aparentemente**, campanha é mais barata (R$ 0.5 vs R$ 1). **Na verdade**, estrutura é mais barata porque reduz doença de verdade. Aqui está a conta real: Município A investe em campanha (R$ 0.5 × 100k população = R$ 50k). Resultado: incidência de TB fica em 50 casos/100k (não muda muito). Internação por TB = 100 casos/ano × R$ 10k = R$ 1 mi. Total: R$ 50k + R$ 1 mi = R$ 1.05 mi por ano. Município B investe em estrutura (R$ 1 × 100k = R$ 100k). Resultado: incidência de TB cai para 10 casos/100k. Internação = 20 casos/ano × R$ 10k = R$ 200k. Total: R$ 100k + R$ 200k = R$ 300k por ano. Município B gasta R$ 100k a mais agora, mas economiza R$ 750k em internação = economia líquida de R$ 650k/ano. Em 2 anos, Município B está R$ 1.3 mi a frente economicamente. E população está mais saudável. Estrutura custa mais no início porque é investimento; educação custa menos no início porque é gasto. Mas hospital esperto sabe: investir em estrutura devolve em economia.",
+      "tipo": "por_que"
     }
   ],
   "casos_clinicos": [
@@ -250,23 +259,23 @@
       "apresentacao": "Maria, 42 anos, vendedora ambulante, renda R$ 1200/mês, mora em barraco com 5 filhos. Apresenta HAS (pressão 160/100). Clínico prescreve: 'Maria, você tem que emagrecer 10kg. Tem que fazer exercício 30min diários. Tem que reduzir sal.' Prescreve anti-hipertensivo. Agenda retorno em 1 mês. Um ano depois: Maria continua com mesmo peso, mesmo pressão, mesma vida. Clínico culpa 'falta de adesão'. Epidemiologista pergunta: qual é o CONTEXTO de Maria?",
       "cascata": [
         {
-          "etapa": "Contexto Estrutural",
+          "etapa": "Causa",
           "descricao": "Maria trabalha em pé o dia todo (venda ambulante), 10 horas/dia, pé cansado. Renda é garantida só se trabalhar — se adoecer, não ganha. Filhos — 3 comem na escola, 2 comem em casa que ela cozinha (macarrão + água açucarada, comida barata). Não consegue pagar academia. Bairro tem violência noturna — não sai após 6pm. Cansaço mental é permanente (insegurança de renda, preocupação com filhos)."
         },
         {
-          "etapa": "Interpretação Clínica",
+          "etapa": "Estrutura Afetada",
           "descricao": "Clínico vê: 'Maria tem pressão alta, obesa, precisa emagrecer e exercitar'. Prescrição 'coma menos sal, faça 30min exercício, emagreça 10kg' é racional em consultório rico, impossível no contexto de Maria. Clínico culpa Maria de não aderir."
         },
         {
-          "etapa": "Falha de Prevenção Clínica",
+          "etapa": "Disfunção",
           "descricao": "1 ano depois: Maria continua ganhando R$ 1200, continua trabalhando 10h, continue comendo barato, continuando sem tempo para exercício. Pressão continua 160/100. Porque prescrição ignorou contexto — não foi possível de executar."
         },
         {
-          "etapa": "Análise Epidemiológica Descobre",
+          "etapa": "Sintoma",
           "descricao": "Epidemiologista investiga: 40% da população do bairro tem HAS não controlada. Comum? Não — média nacional é 10%. Por quê? Descobrir: 95% é ambulante ou informal, renda baixa, stress ocupacional, dieta processada acessível. Não é 'população não adere', é 'estrutura não permite'."
         },
         {
-          "etapa": "Intervenção de Saúde Pública",
+          "etapa": "Consequência",
           "descricao": "Em vez de 'diga para Maria fazer exercício', intervém-se estruturalmente: (1) Programa de ocupação com renda garantida (cooperativa de mulheres com salário mínimo). (2) Construção de parque com academia de exercício ao ar livre no bairro. (3) Subsídio de comida saudável (horta comunitária, doações de agricultura familiar). (4) Espaço de psicologia comunitária para lidar com stress. (5) Controle de medicação de hipertensão (oferta de anti-hipertensivo de graça, monitoramento por agente comunitário). Com essas mudanças, Maria agora pode — tem renda que permite sair do trabalho 2h para exercício, tem parque seguro, tem acesso a comida diferente, tem espaço para desestressar."
         }
       ],
@@ -277,7 +286,7 @@
         "prevencao"
       ],
       "diagnostico_revelado": "Hipertensão arterial sistêmica não controlada em contexto de determinantes sociais adversos (ocupação informal, renda baixa, falta de acesso a espaço seguro para exercício, alimentação inadequada, stress crônico).",
-      "intervencao_real_de_saude_publica": "Não é aumentar dose de medicação. É mudar estrutura para que Maria consiga executar prevenção clínica. Prescrição clínica agora vira possível — 'Maria, agora que você tem parque seguro no bairro, começamos exercício 30min 3x/semana'. Resultado após 6 meses: Maria emagreceu 4kg (não os 10 ideais, mas é progresso), pressão caiu para 140/90 (melhor que antes), e ela sente energia. Porque mudou-se contexto, não somente se culpou."
+      "tratamento_resumido": "Não é aumentar dose de medicação. É mudar estrutura para que Maria consiga executar prevenção clínica. Prescrição clínica agora vira possível — 'Maria, agora que você tem parque seguro no bairro, começamos exercício 30min 3x/semana'. Resultado após 6 meses: Maria emagreceu 4kg (não os 10 ideais, mas é progresso), pressão caiu para 140/90 (melhor que antes), e ela sente energia. Porque mudou-se contexto, não somente se culpou."
     }
   ],
   "midia": {

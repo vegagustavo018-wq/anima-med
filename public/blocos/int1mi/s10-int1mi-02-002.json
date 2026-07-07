@@ -5,54 +5,158 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "EPA-2 — Priorizar um diagnóstico diferencial",
+    "subtitulo": "A lista de diagnósticos possíveis não é uma lista qualquer — ela tem uma ordem, e essa ordem é o que se avalia aqui.",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 2,
+    "topico": 2,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "epa_avaliacao",
+      "raciocinio_diagnostico",
+      "honestidade_epistemica"
     ],
+    "tipo_conteudo": "competencia_epa",
+    "status": "publicado",
+    "data_criacao": "2026-07-06",
+    "data_revisao": "2026-07-06",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
-    "formato_internato": "competencia_epa",
-    "epa_codigo": "EPA-2",
-    "epa_nivel_alvo": 3
+    "tempo_estudo_minutos": 9,
+    "palavras_chave": [
+      "EPA-2",
+      "diagnóstico diferencial",
+      "priorização",
+      "can't miss"
+    ],
+    "formato_internato": "competencia_epa"
   },
-  "resumo_conciso": "Construir e ordenar a lista pela probabilidade e pelo que não pode ser perdido",
-  "narrativa": [],
+  "resumo_conciso": "Qualquer estudante consegue listar diagnósticos possíveis diante de um sintoma. A EPA-2 mede algo mais difícil: ordenar essa lista por duas réguas ao mesmo tempo — o que é mais provável, e o que não pode ser perdido mesmo sendo raro.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você apresenta o caso ao residente: \"paciente com dor torácica, poderia ser síndrome coronariana, poderia ser embolia pulmonar, poderia ser ansiedade, poderia ser refluxo\". O residente pergunta: \"certo, e qual você investiga primeiro, e por quê?\". Essa segunda pergunta é a EPA-2 em ação. Não basta listar possibilidades — é preciso ordenar essa lista de um jeito que proteja o paciente das duas formas de erro: perder o diagnóstico mais provável, e perder o diagnóstico mais perigoso, ainda que improvável."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Duas réguas, não uma"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um diferencial bem priorizado usa duas lógicas simultâneas. A primeira é probabilidade: dado o quadro clínico, a idade, os fatores de risco, o que é estatisticamente mais provável? A segunda é gravidade do que não pode ser perdido (as chamadas hipóteses 'can't miss'): mesmo que uma condição seja rara, se ela for fatal e tratável, ela precisa ser ativamente descartada, não apenas lembrada. Na dor torácica do exemplo, síndrome coronariana e embolia pulmonar entram na lista não só por probabilidade, mas porque são 'can't miss' — perdê-las tem consequência grave e evitável."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "O que separa os níveis de confiabilidade nesta EPA",
+      "colunas": [
+        "Nível",
+        "Comportamento observável"
+      ],
+      "linhas": [
+        {
+          "Nível": "2 (supervisão direta)",
+          "Comportamento observável": "Lista diagnósticos possíveis, mas sem ordem clara de probabilidade ou gravidade; precisa que o residente reordene ou complete a lista"
+        },
+        {
+          "Nível": "3 (alvo desta EPA no estágio)",
+          "Comportamento observável": "Apresenta a lista já ordenada, justificando verbalmente por que cada item está naquela posição (mais provável vs. mais perigoso), e o residente concorda com a lógica sem precisar reconstruí-la"
+        },
+        {
+          "Nível": "4",
+          "Comportamento observável": "Além de ordenar, já direciona a investigação inicial (quais exames pedir primeiro) coerente com a priorização — nível de autonomia maior que o esperado no Internato I para esta EPA"
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Uma lista de diagnósticos sem ordem não é um diferencial — é só uma lista. A competência real está em explicar, para cada item, por que ele está naquela posição: 'está no topo porque é mais provável' ou 'está no topo porque, mesmo improvável, não posso correr o risco de perder'."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se você ordenar o diferencial só por probabilidade, colocando 'ansiedade' no topo por ser a causa mais comum de dor torácica em pronto-socorro, sem mencionar síndrome coronariana e embolia pulmonar logo de início?",
+      "resposta": "Ordenar só por probabilidade, sem considerar gravidade do que não pode ser perdido, é exatamente o padrão de raciocínio que este EPA busca corrigir. Mesmo sendo estatisticamente menos comuns naquele contexto específico, condições fatais e tratáveis precisam aparecer cedo na lista e serem ativamente descartadas — a ordem certa equilibra as duas réguas, não escolhe uma só."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como é avaliada: observação direta durante apresentação de caso (mini-CEX), e indiretamente pela qualidade da investigação solicitada — se os exames pedidos refletem a priorização verbalizada, ou se parecem desconectados dela. Erros comuns do interno: listar diagnósticos sem hierarquia; ordenar só por probabilidade, esquecendo 'can't miss'; ou o oposto, inflar a lista de hipóteses raras e graves a ponto de pedir exames desnecessários para tudo, sem calibrar pela probabilidade real do quadro."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1mi-02-001",
+        "titulo": "EPA-1 — Coletar anamnese e realizar exame físico",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-02-003",
+        "titulo": "EPA-3 — Recomendar e interpretar testes diagnósticos",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "A priorização feita aqui decide diretamente quais exames pedir, competência observada na próxima EPA."
+      },
+      {
+        "id": "s10-int1mi-01-001",
+        "titulo": "Pneumonia Adquirida na Comunidade — do CURB-65 à internação",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "A priorização de gravidade sob incerteza treinada neste caso é um exemplo concreto da mesma competência observada por esta EPA."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-02-002-001",
+      "tipo": "mecanismo",
+      "pergunta": "Quais são as duas lógicas que devem organizar simultaneamente um diagnóstico diferencial bem priorizado?",
+      "resposta": "Probabilidade (o que é estatisticamente mais provável dado o quadro, idade e fatores de risco) e gravidade do que não pode ser perdido (hipóteses 'can't miss' — condições raras mas fatais e tratáveis, que precisam ser ativamente descartadas mesmo com baixa probabilidade). Um diferencial ordenado só por uma das duas réguas está incompleto.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "internato",
+        "epa",
+        "epa-2",
+        "diferencial"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "EPA-2 avalia a habilidade transversal de priorizar diagnóstico diferencial por probabilidade e gravidade ('can't miss'), aplicável a qualquer apresentação clínica — não é uma doença ou síndrome com cascata causal própria. Amarrar a competência a uma doença específica seria arbitrário e não representaria um correlato clínico real isolado."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "em_mudanca",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "epa_avaliacao",
-    "raciocinio_diagnostico",
-    "honestidade_epistemica"
+  "fontes": [
+    {
+      "tipo": "artigo",
+      "titulo": "Entrustable professional activities and competency-based training",
+      "autores": "ten Cate O",
+      "ano": 2005,
+      "publicacao": "Medical Education"
+    },
+    {
+      "tipo": "diretriz",
+      "titulo": "Core Entrustable Professional Activities for Entering Residency",
+      "autores": "Association of American Medical Colleges (AAMC)",
+      "ano": 2014
+    }
   ]
 }

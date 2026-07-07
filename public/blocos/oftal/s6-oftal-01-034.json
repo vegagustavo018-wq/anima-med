@@ -5,31 +5,178 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Tonometria — Medir a Pressão Intraocular",
+    "subtitulo": "Como funciona a tonometria de Goldmann, qual a PIO normal e como interpretar seus valores no glaucoma?",
     "semestre": 6,
-    "disciplina": "Oftalmologia",
+    "disciplina": "oftal",
+    "sistema_corporal": "sensorial",
+    "regiao_anatomica": "olho",
     "profundidade_arvore": 4,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 8,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "oftal",
-      "esqueleto"
+      "tonometria-goldmann",
+      "aplanacao-corneal",
+      "pio-normal-10-21",
+      "hipertensao-ocular",
+      "glaucoma-pressao-normal",
+      "tonometro-sopro",
+      "espessura-corneal-influencia",
+      "conduta"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "mecanismo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Aplanação de Goldmann, sopro de ar; valores normais e paquimetria",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior, estudamos fundoscopia. Agora, estudamos tonometria. O principal desafio consiste em entender o princípio de Imbert-Fick da tonometria de aplanação de Goldmann (força de aplanação de 3,06 mm² de córnea = PIO em mmHg) e interpretar os resultados: PIO normal 10-21 mmHg; PIO > 21 = hipertensão ocular (suspeita de glaucoma); glaucoma de pressão normal existe com PIO < 21. A espessura corneal central (ECC) influencia a leitura: córnea fina subestima a PIO real e vice-versa. A conduta é hipotensores e campimetria.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, aprendemos a interpretar o fundo de olho. A tonometria mede a pressão intraocular (PIO) — o balanço entre produção e escoamento do humor aquoso. A PIO elevada é o principal fator de risco modificável do glaucoma. Como o tonômetro de Goldmann funciona fisicamente, qual o valor normal e quais as armadilhas clínicas de interpretação?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Princípio da Tonometria de Aplanação de Goldmann"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Baseia-se no princípio de Imbert-Fick: para uma esfera de parede fina preenchida com fluido, a pressão interna = força de aplanação / área aplanada. O tonômetro de Goldmann aplana uma área circular padronizada de **3,06 mm de diâmetro** da córnea. A força necessária (em gramas) para aplanar essa área é convertida em mmHg de PIO. O prisma bífido do tonômetro permite identificar o ponto de aplanação exata pela superposição de dois semicírculos de fluoresceína."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Valores de Referência e Interpretação Clínica"
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Comparação: Classificação vs Conduta",
+      "colunas": [
+        "PIO (mmHg)",
+        "Classificação",
+        "Conduta"
+      ],
+      "linhas": [
+        {
+          "PIO (mmHg)": "10-21",
+          "Classificação": "Normal",
+          "Conduta": "Seguimento anual de rotina"
+        },
+        {
+          "PIO (mmHg)": ">21",
+          "Classificação": "Hipertensão Ocular",
+          "Conduta": "Investigar glaucoma (campimetria + OCT de fibras)"
+        },
+        {
+          "PIO (mmHg)": ">30",
+          "Classificação": "PIO muito elevada — Suspeita de glaucoma ou crise",
+          "Conduta": "Hipotensores imediatos"
+        },
+        {
+          "PIO (mmHg)": "<10",
+          "Classificação": "Hipotonia ocular",
+          "Conduta": "Investigar uveíte, descolamento de coróide, fístula"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O Fator de Confusão: Espessura Corneal Central (ECC)"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A PIO medida pelo Goldmann assume espessura corneal padrão de 520-540 µm. Pacientes com córneas mais espessas (ECC > 560µm, ex: pós-LASIK com ressecção estromal) têm a PIO superestimada (+). Pacientes com córneas finas (ECC < 500µm) têm a PIO subestimada (-), podendo ter glaucoma com PIO aparentemente normal. A paquimetria (medida da ECC por ultrassom) permite corrigir a leitura tonométrica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Glaucoma de Pressão Normal"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Glaucoma com PIO < 21 mmHg (dentro do intervalo normal). Representa 30-40% dos glaucomas. Fisiopatologia: neuropatia óptica por isquemia da cabeça do nervo óptico (hipoperfusão) em pressões que seriam normais para outros olhos. Mais comum em asiáticos e pacientes com hipotensão sistêmica noturna."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "⚖️",
+      "conteudo": "O tonômetro de Goldmann é como uma balança de precisão que mede quanto peso é necessário para achatar perfeitamente um balão de látex macio de tamanho padronizado (a córnea). Quanto mais pressurizado o balão por dentro (maior PIO), mais força é necessária para achatar sua superfície. A espessura da parede do balão (a ECC) é o confundidor: um balão de parede grossa parece precisar de mais força mesmo com a mesma pressão interna, simulando PIO alta falsamente."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-oftal-01-033",
+        "titulo": "Fundoscopia",
+        "disciplina": "oftal",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Completada antes da midríase/tonometria."
+      }
+    ],
     "futuras": [],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-oftal-01-034-fc01",
+      "pergunta": "Explique o princípio físico de Imbert-Fick na base da tonometria de aplanação de Goldmann.",
+      "resposta": "O princípio de Imbert-Fick estabelece que para uma esfera de parede fina, P = F/A (pressão = força de aplanação / área aplanada). O Goldmann aplana área padronizada de 3,06mm de diâmetro na córnea; a força necessária em gramas é numericamente equivalente à PIO em mmHg.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "tags": [
+        "imbert-fick",
+        "goldmann",
+        "aplanacao",
+        "pio",
+        "fisica"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-034-fc02",
+      "pergunta": "Qual o intervalo de PIO considerado normal e como classificar hipertensão ocular?",
+      "resposta": "PIO normal: 10-21 mmHg (média ~15 mmHg). PIO > 21 mmHg em duas ou mais medidas configura Hipertensão Ocular — fator de risco para glaucoma que exige investigação por campimetria computadorizada e OCT de fibras nervosas retinianas.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "pio-normal",
+        "hipertensao-ocular",
+        "glaucoma-risco",
+        "21-mmhg"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-034-fc03",
+      "pergunta": "Como a espessura corneal central (ECC) interfere na interpretação da tonometria de Goldmann?",
+      "resposta": "Córneas mais espessas que o padrão (>540µm) superestimam a PIO medida. Córneas mais finas (<500µm) subestimam a PIO real. Um paciente com ECC fina pode ter PIO 'normal' de 18 mmHg mas PIO real de 22 mmHg, mascarando glaucoma. A paquimetria corneal corrige essa interpretação.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "tags": [
+        "ecc",
+        "paquimetria",
+        "superestimacao",
+        "subestimacao",
+        "glaucoma-mascarado"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-034-fc04",
+      "pergunta": "Um paciente de 60 anos com PIO de 17 mmHg (normal) apresenta escavação papilar de E/D 0.7 bilateral e defeito arqueado no campo visual. O diagnóstico de glaucoma pode ser descartado?",
+      "resposta": "Não. O diagnóstico é Glaucoma de Pressão Normal — glaucoma confirmado por dano estrutural (E/D 0.7) e funcional (defeito campimétrico) com PIO dentro do intervalo normal. A isquemia da cabeça do nervo óptico (não a PIO isolada) gera a neuropatia. A PIO-alvo deve ser reduzida em 30%.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "tags": [
+        "glaucoma-pressao-normal",
+        "pio-normal",
+        "dano-structural",
+        "isquemia-nervo",
+        "conduta"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
     "imagens": [],
@@ -37,18 +184,26 @@
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-06",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Kanski JJ, Bowling B. Oftalmologia Clínica. 8ª ed. Elsevier; 2016. Cap. 13 — Glaucoma e Tonometria.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
-    "técnica de exame",
-    "mecanismo/fisiopatologia"
+    "mecanismo",
+    "clinica",
+    "conduta"
   ]
 }

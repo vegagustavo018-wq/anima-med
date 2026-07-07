@@ -11,49 +11,212 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Módulo 7 — Patologia do Colo Uterino e Rastreio",
+    "titulo": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 2,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "colo-uterino-hpv",
+      "mecanismo",
+      "diagnostico",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "HPV, lesões precursoras e rastreamento citológico do câncer de colo",
-  "narrativa": [],
+  "resumo_conciso": "O módulo integra zona de transformação, HPV, lesões intraepiteliais, rastreamento, colposcopia e conduta para prevenir câncer de colo antes da invasão.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Câncer de colo uterino é uma das histórias mais importantes de prevenção em medicina. A maioria dos casos nasce de infecção persistente por HPV de alto risco em uma área vulnerável: a zona de transformação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O módulo começa pela anatomia do colo. A junção escamocolunar muda ao longo da vida e cria uma zona de metaplasia ativa, onde o HPV encontra células suscetíveis à persistência e transformação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "HPV é extremamente comum. Na maioria das pessoas, a infecção desaparece espontaneamente. O risco real está na persistência de tipos oncogênicos, especialmente quando há integração viral e ação das proteínas E6 e E7."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Lesões precursoras não são câncer, mas representam estágios de desorganização epitelial. A linguagem citológica LSIL/HSIL e a histológica NIC ajudam a estimar risco e decidir observação, colposcopia ou tratamento excisional."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Rastreamento existe para capturar lesões antes da invasão. Citologia, teste de HPV ou coteste variam conforme diretriz local, idade, recursos e risco individual."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A conduta moderna é baseada em risco: resultado atual, história prévia, idade, gestação e imunossupressão orientam colposcopia, biópsia, excisão e seguimento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vacinação contra HPV reduz risco populacional, mas não elimina imediatamente a necessidade de rastreamento nas faixas indicadas. Prevenção primária e secundária trabalham juntas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-06-040",
+        "titulo": "HIV e Outras ISTs na Saude da Mulher",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-07-006",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Vacinacao contra o HPV - Prevencao Primaria",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Modulo 8 - Cancer Ginecologico",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-06-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Cervicites e Uretrites - Gonorreia e Clamidia"
+      },
+      {
+        "bloco_id": "s7-go1-06-021",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Ulceras Genitais - Abordagem Sindromica"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-07-000-fc-01",
+      "pergunta": "Qual agente central no câncer de colo?",
+      "resposta": "HPV de alto risco persistente.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-000-fc-02",
+      "pergunta": "Onde muitas lesões começam?",
+      "resposta": "Na zona de transformação do colo uterino.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-000-fc-03",
+      "pergunta": "LSIL/HSIL são termos de quê?",
+      "resposta": "Citologia, ligados ao sistema Bethesda.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-07-000-fc-04",
+      "pergunta": "Por que rastreamento funciona?",
+      "resposta": "Porque detecta lesões precursoras antes de invasão.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-07-000-cc-01",
+      "titulo": "Prevenção antes do câncer",
+      "apresentacao": "Mulher de 34 anos pergunta por que precisa rastrear se não tem sintomas.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: O módulo integra zona de transformação, HPV, lesões intraepiteliais, rastreamento, colposcopia e conduta para prevenir câncer de colo antes da invasão."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Modulo 7 - Patologia do Colo Uterino e Rastreio, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O módulo integra zona de transformação, HPV, lesões intraepiteliais, rastreamento, colposcopia e conduta para prevenir câncer de colo antes da invasão."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 34 anos pergunta por que precisa rastrear se não tem sintomas."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual explicação central? Lesões precursoras por HPV podem ser assintomáticas por anos; rastreamento detecta antes de virar câncer invasivo."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Lesões precursoras por HPV podem ser assintomáticas por anos; rastreamento detecta antes de virar câncer invasivo.",
+      "tratamento_resumido": "Lesões precursoras por HPV podem ser assintomáticas por anos; rastreamento detecta antes de virar câncer invasivo."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Mapa do módulo mostrando HPV, zona de transformação, LSIL/HSIL, rastreamento, colposcopia e tratamento.",
+        "alt": "Ilustracao educacional para Modulo 7 - Patologia do Colo Uterino e Rastreio"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC - Cervical Cancer Screening",
+      "url": "https://www.cdc.gov/cervical-cancer/screening/index.html",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Human Papillomavirus Infection",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/hpv-cancer.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "ASCCP Risk-Based Management Consensus Guidelines",
+      "url": "https://www.asccp.org/management-guidelines",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "diagnostico",

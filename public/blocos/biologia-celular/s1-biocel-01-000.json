@@ -97,42 +97,49 @@
     "prerequisitos": [
       {
         "id": "s1-biocel-00-000",
-        "titulo": "Biologia Celular e Molecular — Raiz",
-        "tipo": "contexto_disciplinar"
+        "titulo": "Biologia Celular e Molecular — Raiz da Disciplina",
+        "tipo": "contexto_disciplinar",
+        "bloco_id": "s1-biocel-00-000"
       }
     ],
     "futuras": [
       {
         "id": "s1-biocel-01-001",
         "titulo": "Visão Geral da Célula Eucariótica",
-        "tipo": "desdobramento"
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s1-biocel-01-002",
         "titulo": "Membrana Plasmática — Visão Geral",
-        "tipo": "desdobramento"
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s1-biocel-01-003",
         "titulo": "Transporte Transmembrana — Visão Geral",
-        "tipo": "desdobramento"
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s1-biocel-02-000",
         "titulo": "Sistema de Endomembranas — Visão do Módulo",
-        "tipo": "cascata_causal"
+        "tipo": "CASCATA_CAUSAL",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
       {
         "id": "s1-biol-01-002",
         "titulo": "Procariotos vs Eucariotos — Evoluindo a Compartimentação",
-        "tipo": "contexto_evolutivo"
+        "tipo": "contexto_evolutivo",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       },
       {
         "id": "s1-quim-01-001",
         "titulo": "Termodinâmica e Entropia — Por que a Ordem é Rara",
-        "tipo": "fundamento_cientifico"
+        "tipo": "fundamento_cientifico",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -188,20 +195,39 @@
   ],
   "casos_clinicos": [
     {
-      "id": "caso-biocel-01-000-01",
+      "caso_id": "caso-biocel-01-000-01",
       "titulo": "Intolerância à Lactose: Um Defeito de Transporte",
       "apresentacao": "Uma mulher de 28 anos relata intolerância a produtos lácteos desde a adolescência. Após beber leite, apresenta cólica abdominal, diarreia e distensão em 30 minutos. Teste de intolerância à lactose (hidrogênio no ar expirado) é positivo.",
-      "questao_pedagogica": "O que poderia estar errado com as células epiteliais do intestino dela que cause essa reação?",
-      "achados_tecidos": "Biópsia normal. Microscopia eletrônica da borda em escova das células epiteliais do intestino delgado revela ausência de transportadores de lactose (SGLT1 para glicose/galactose, mas lactose não é diretamente transportada — é o dímero de glicose+galactose que o é). Na verdade, ela tem deficiência da enzima lactase, que QUEBRA a lactose em seus componentes. Sem lactase, a lactose não é hidrolisada e não pode ser transportada.",
-      "cascata_mecanismo": {
-        "causa": "Redução progressiva da expressão de lactase após desmame (normal em humanos adultos; [⚠️] lactase persistência é a mutação no adulto, não a deficiência)",
-        "estrutura": "Ausência da enzima lactase na borda em escova (microvilos das células epiteliais do intestino delgado)",
-        "disfuncao": "Lactose não é clivada em glicose + galactose; permanece intacta na luz intestinal",
-        "sintoma": "Lactose é osmoticamente ativa — puxa água para o lúmen (diarreia). Bactérias colônicas fermentam a lactose, produzindo gás (CO2, hidrogênio, metano) — cólica e distensão",
-        "consequencia": "Perda de nutrição (leite é uma fonte de cálcio, proteína) e sintomas desconfortáveis"
-      },
-      "revelacao_diagnostica": "O problema não é a membrana plasmática em si — é a enzima que PRÉ-processa o substrato ANTES de ele tentar ser transportado. Sem hidrólise, não há monossacarídios para o transportador levar. O caso demonstra que o transporte seletivo depende não apenas de proteínas de membrana, mas de todo o metabolismo extracelular e intracelular coordenado.",
-      "manejo": "Evitar lactose, usar lactase exógena (enzima), ou consumir alimentos lácteos fermentados (iogurte, queijo) onde a lactose já foi parcialmente hidrolisada pelas bactérias."
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Redução progressiva da expressão de lactase após desmame (normal em humanos adultos; [⚠️] lactase persistência é a mutação no adulto, não a deficiência)"
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Ausência da enzima lactase na borda em escova (microvilos das células epiteliais do intestino delgado)"
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Lactose não é clivada em glicose + galactose; permanece intacta na luz intestinal"
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Lactose é osmoticamente ativa — puxa água para o lúmen (diarreia). Bactérias colônicas fermentam a lactose, produzindo gás (CO2, hidrogênio, metano) — cólica e distensão"
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Perda de nutrição (leite é uma fonte de cálcio, proteína) e sintomas desconfortáveis"
+        }
+      ],
+      "conexao_com_bloco": "O problema não é a membrana plasmática em si — é a enzima que PRÉ-processa o substrato ANTES de ele tentar ser transportado. Sem hidrólise, não há monossacarídios para o transportador levar. O caso demonstra que o transporte seletivo depende não apenas de proteínas de membrana, mas de todo o metabolismo extracelular e intracelular coordenado.",
+      "disciplinas_relacionadas": [
+        "Biologia Celular",
+        "Gastroenterologia",
+        "Nutrição"
+      ],
+      "diagnostico_revelado": "Deficiência de Lactase (Intolerância à Lactose do tipo adulto)",
+      "tratamento_resumido": "Evitar lactose, usar lactase exógena (enzima), ou consumir alimentos lácteos fermentados (iogurte, queijo) onde a lactose já foi parcialmente hidrolisada pelas bactérias."
     }
   ],
   "midia": {

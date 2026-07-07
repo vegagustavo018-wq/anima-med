@@ -16,50 +16,508 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Nefrologia Clínica",
+    "subtitulo": "Como um órgão do tamanho de um punho consegue avisar, com o mesmo inchaço nas pernas, que o problema é filtrar pouco, reabsorver errado ou represar sódio demais?",
     "semestre": 8,
     "disciplina": "Medicina Interna II",
+    "sistema_corporal": "urinário",
+    "regiao_anatomica": null,
     "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 16,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "mi2",
-      "esqueleto"
+      "nefrologia",
+      "medicina-interna",
+      "funcao-renal",
+      "fisiopatologia",
+      "apresentacao-clinica",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "modulo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Função renal, lesão aguda e crônica, glomerulopatias, distúrbios hidroeletrolíticos",
-  "narrativa": [],
+  "resumo_conciso": "A nefrologia clínica nasce de um problema que nenhum outro órgão do corpo resolve da mesma forma: como limpar continuamente o plasma de tudo que precisa sair, sem jogar fora, junto, o que precisa ficar? A resposta da fisiologia foi dividir o trabalho em duas operações radicalmente diferentes, feitas por estruturas diferentes do néfron. Primeiro, o glomérulo filtra em massa e sem escolha — deixa passar quase tudo que é pequeno, incluindo água, sódio e nutrientes que o corpo não pode perder. Depois, uma sequência de segmentos tubulares (túbulo proximal, alça de Henle, túbulo distal, ducto coletor) resgata seletivamente, cada um com sua própria tarefa específica, o que não deveria ter sido perdido, e ainda ajusta as sobras finas conforme a necessidade do momento. É essa separação entre filtrar (glomérulo) e resgatar (túbulo, em etapas distintas) que explica por que a doença renal se manifesta de formas tão diferentes: uma lesão glomerular vaza proteína e sangue para a urina; uma lesão tubular perde a capacidade de concentrar ou de equilibrar eletrólitos; e a incapacidade de filtrar o suficiente, aguda ou crônica, faz o corpo inteiro acumular toxinas, água e ácidos que o rim deveria ter descartado. Este bloco não repete a fisiologia renal já estudada nem antecipa o conteúdo específico de lesão renal aguda, doença renal crônica, glomerulopatias ou distúrbios hidroeletrolíticos, que os blocos-filhos desenvolverão em profundidade. Ele estabelece a lente comum com que todos eles devem ser lidos: a distinção entre falha glomerular e falha tubular, a diferença entre lesão aguda e crônica, e por que o rim, mais que qualquer outro órgão, funciona como o regulador central do meio interno de que os outros dois territórios desta disciplina dependem.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma estação de tratamento de água que precisa operar sem parar, vinte e quatro horas por dia, processando um volume de líquido equivalente a todo o plasma do corpo dezenas de vezes ao longo do dia. Essa estação não pode se dar ao luxo de escolher, molécula por molécula, o que deixa passar — o volume é grande demais para isso. A solução mais rápida é filtrar tudo que for pequeno o suficiente, sem distinção, e depois, numa segunda etapa, percorrer o líquido já filtrado e resgatar de volta o que não deveria ter saído: a água, o sódio, a glicose, os aminoácidos. É um desenho contraintuitivo — jogar fora em excesso para depois recuperar seletivamente — mas é exatamente assim que o rim resolve o problema de depurar o sangue sem perder, no processo, o que o corpo não pode se dar ao luxo de perder."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que o corpo precisa de um órgão dedicado só a filtrar e resgatar?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Todo metabolismo celular produz resíduos que precisam ser eliminados: ureia da quebra de proteínas, creatinina da contração muscular, ácidos voláteis e fixos, excesso de potássio, excesso de água ingerida. Se esses resíduos se acumulassem no sangue, o meio interno se tornaria progressivamente tóxico — o pH cairia, o potássio subiria a níveis que param o coração, a água se acumularia nos tecidos. O corpo precisa de um mecanismo contínuo de depuração, que rode em paralelo à vida inteira, sem pausa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas depurar não é o único problema. O corpo também precisa manter constante um conjunto de variáveis que mudam a cada refeição, a cada copo de água bebido, a cada litro de suor perdido no calor: o volume de líquido circulante, a concentração de sódio, potássio, cálcio e fósforo, o equilíbrio entre ácidos e bases. Nenhum desses ajustes pode ser feito uma vez e esquecido — a demanda muda minuto a minuto, e o órgão que resolve isso precisa reagir em tempo real."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema que a nefrologia enfrenta tem duas faces inseparáveis — depurar continuamente o que precisa sair do sangue, e ajustar em tempo real o volume e a composição do meio interno. O rim é a resposta a essas duas exigências simultâneas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve — filtrar sem escolha, depois resgatar com precisão"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução que a evolução encontrou foi separar completamente as duas tarefas em duas estruturas diferentes do néfron, a unidade funcional do rim. A primeira estrutura, o **glomérulo**, é um novelo de capilares sob alta pressão que funciona como uma peneira física: deixa passar água, eletrólitos, glicose, aminoácidos e pequenas moléculas, e retém as células do sangue e as proteínas grandes. Essa filtração não é seletiva quanto ao que é útil ou descartável — ela é seletiva apenas quanto ao tamanho (e, secundariamente, à carga elétrica da molécula). Isso significa que o glomérulo filtra, junto com a ureia que precisa sair, uma quantidade enorme de sódio, água e glicose que o corpo não pode se dar ao luxo de perder."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É aqui que entra a segunda estrutura, completamente distinta em função: o **túbulo renal**, uma longa sequência de segmentos especializados — túbulo proximal, alça de Henle, túbulo distal e ducto coletor — que percorre o líquido filtrado e resgata seletivamente o que não deveria ter sido perdido, ao mesmo tempo em que secreta ativamente outras substâncias que precisam sair. Cada segmento tubular tem uma tarefa própria e não intercambiável: não é 'o túbulo, de forma genérica, que reabsorve' — é cada trecho fazendo um trabalho específico que o trecho seguinte não repete."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Filtração e reabsorção/secreção são duas funções distintas, feitas por estruturas distintas do néfron. O glomérulo decide **quanto** sai do sangue para o espaço urinário, sem distinguir o que é útil do que é lixo. O túbulo decide, depois, **o que volta** e **o que é ativamente descartado**. Confundir as duas — tratar 'a função renal' como uma coisa única — é o erro mais comum ao raciocinar sobre doença renal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse sistema de resgate — por que cada segmento tubular não faz o mesmo trabalho"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O **túbulo proximal** é o primeiro segmento e o que faz o trabalho mais volumoso: reabsorve cerca de dois terços do sódio, da água e de praticamente toda a glicose e os aminoácidos filtrados, usando transportadores específicos (como o cotransportador sódio-glicose) que dependem da energia gasta para manter o gradiente de sódio. É um resgate em massa, proporcional ao que foi filtrado — mas não é ajustável às necessidades do momento; ele resgata sempre a mesma fração, goste o corpo ou não."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A **alça de Henle** tem uma tarefa completamente diferente: não é apenas reabsorver mais sódio e água, é criar um gradiente de concentração crescente na medula renal, usando um mecanismo de multiplicação em contracorrente entre seu ramo descendente (permeável à água) e seu ramo ascendente espesso (que bombeia sódio e cloreto para fora, mas é impermeável à água). Esse gradiente medular é o que, mais adiante, permite ao ducto coletor concentrar a urina quando o corpo precisa economizar água. Sem a alça de Henle, o rim conseguiria filtrar e reabsorver, mas nunca produziria uma urina mais concentrada que o próprio plasma."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O **túbulo distal e o início do ducto coletor** formam, na prática, um único território sensível a hormônio — a aldosterona e o paratormônio atuam de forma contínua ao longo desse trecho, e não como dois compartimentos separados com tarefas sequenciais distintas: ajustando a reabsorção de sódio, cálcio e potássio conforme a necessidade momentânea do corpo, e não uma fração fixa como no proximal. Íons hidrogênio também são secretados ao longo desse mesmo território, não só na porção final do ducto coletor. E é no ducto coletor que a decisão final sobre concentrar ou diluir a urina é executada: sob ação do hormônio antidiurético, sua permeabilidade à água aumenta, e a água é reabsorvida seguindo o gradiente que a alça de Henle construiu na medula; sem esse hormônio, o ducto permanece impermeável e a urina não é concentrada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que a evolução não simplificou isso num único segmento generalista? Porque as tarefas são incompatíveis entre si dentro do mesmo espaço: resgatar em massa (proximal) exige uma estrutura com grande área de superfície e alta capacidade de transporte, mas pouca capacidade de ajuste fino; construir um gradiente de concentração (alça de Henle) exige permeabilidades opostas em dois ramos vizinhos, algo que um segmento único não conseguiria fazer sozinho; e o ajuste fino sensível a hormônio (distal e coletor) exige receptores e capacidade de resposta rápida que seria desperdiçada se aplicada ao volume total filtrado. A divisão em segmentos é a única forma de fazer, ao mesmo tempo, resgate em massa, construção de gradiente e ajuste fino preciso."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa antes de continuar: você já tem em mente que o néfron não tem 'uma função' — ele tem pelo menos cinco funções distintas, distribuídas em cinco estruturas diferentes: glomérulo filtra; túbulo proximal resgata em massa; alça de Henle constrói o gradiente de concentração; túbulo distal e ducto coletor fazem o ajuste fino hormonal-dependente. Uma doença renal pode atingir qualquer uma dessas estruturas isoladamente, com apresentações clínicas completamente diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona em movimento — o raciocínio clínico diante de uma queixa renal"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se filtração e reabsorção/secreção são funções distintas, e se os segmentos tubulares têm tarefas específicas, segue-se que a doença renal nunca se apresenta de uma forma só. Uma lesão que atinge predominantemente o glomérulo se manifesta por proteinúria (a peneira ficou com poros grandes demais e deixa passar proteína que deveria ser retida) e, às vezes, hematúria com hemácias dismórficas (sinal de que as hemácias atravessaram uma barreira de filtração lesada). Uma lesão que atinge predominantemente o túbulo se manifesta por perda da capacidade de concentrar a urina, distúrbios eletrolíticos específicos (perda excessiva de potássio, magnésio ou bicarbonato, conforme o segmento afetado) e, muitas vezes, uma proteinúria discreta, de outro tipo, e não pela proteinúria maciça característica da lesão glomerular. E a incapacidade de filtrar o suficiente — seja por queda aguda do fluxo sanguíneo renal, seja por perda crônica e progressiva de néfrons — se manifesta pelo acúmulo sistêmico de ureia, creatinina, potássio e ácidos, independentemente de qual estrutura específica iniciou o problema."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Funil clínico aplicado a uma queixa renal",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Diferenciar lesão aguda de lesão crônica",
+          "explicacao": "Perguntar há quanto tempo a função renal está alterada e se há evidência prévia de função renal normal. Uma queda de dias sugere lesão renal aguda, potencialmente reversível se a causa for corrigida a tempo; uma alteração já presente há meses ou anos, muitas vezes acompanhada de rins reduzidos em tamanho na imagem, sugere doença renal crônica, com fibrose já estabelecida e perda irreversível de néfrons."
+        },
+        {
+          "numero": 2,
+          "titulo": "Localizar a falha predominante: glomerular, tubular ou pré-renal/pós-renal",
+          "explicacao": "Verificar se há proteinúria maciça e hematúria com hemácias dismórficas (sugerindo glomérulo), distúrbio eletrolítico específico sem proteinúria significativa (sugerindo túbulo), sinais de queda do fluxo sanguíneo renal por desidratação ou baixo débito cardíaco (sugerindo causa pré-renal, antes mesmo do néfron), ou sinais de obstrução do trato urinário (sugerindo causa pós-renal, depois do néfron)."
+        },
+        {
+          "numero": 3,
+          "titulo": "Avaliar a magnitude da perda de função com marcadores de filtração",
+          "explicacao": "Usar a creatinina sérica e a taxa de filtração glomerular estimada para quantificar quanto da capacidade filtrante já foi perdida — não para localizar a causa, mas para dimensionar a gravidade e guiar a urgência da investigação e do tratamento."
+        },
+        {
+          "numero": 4,
+          "titulo": "Buscar a causa sistêmica por trás da lesão renal",
+          "explicacao": "Investigar se a lesão renal é primária (doença que nasce no próprio rim) ou secundária a uma doença sistêmica que também afeta outros órgãos — como diabetes, hipertensão de longa data ou doença autoimune — porque a estratégia de tratamento muda completamente conforme a origem."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse funil de quatro passos não pertence a nenhuma doença renal específica — é o raciocínio que os blocos seguintes deste módulo vão aplicar cada um à sua área: a avaliação da função renal em detalhe, a lesão renal aguda, a doença renal crônica e as glomerulopatias. Os distúrbios hidroeletrolíticos, por sua vez, são a manifestação direta de quando algum segmento tubular específico falha em seu ajuste fino — e por isso serão sempre lidos à luz de qual segmento do néfron está por trás do desequilíbrio."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a nefrologia clínica se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A nefrologia nunca aparece isolada dos outros dois territórios de Medicina Interna II. Como a visão geral desta disciplina já anunciou, anos de hiperglicemia mal controlada lesam progressivamente os capilares glomerulares — a nefropatia diabética é uma doença que nasce no eixo endócrino e se manifesta como falha glomerular. Na direção oposta, a doença renal crônica compromete a ativação renal da vitamina D e a excreção de fósforo, gerando um distúrbio do eixo cálcio-fósforo-paratormônio que é, ao mesmo tempo, consequência renal e problema endócrino. A relação com a gastroenterologia é igualmente direta: perdas digestivas volumosas (diarreia, vômitos) reduzem o volume circulante efetivo e podem precipitar lesão renal aguda pré-renal em poucas horas — o rim, aqui, é vítima de uma falha que começou fora dele."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Dentro da própria nefrologia, este módulo antecede os blocos-filhos que detalharão, cada um com sua fisiopatologia própria: a avaliação sistemática da função renal, os mecanismos e causas de lesão renal aguda, a progressão e as complicações da doença renal crônica, as glomerulopatias como grupo de doenças que atingem primariamente o filtro, e os distúrbios hidroeletrolíticos e do equilíbrio ácido-base que emergem quando um segmento tubular específico falha em seu ajuste fino. Este bloco não repete nenhum desses conteúdos; ele entrega apenas a lente comum — filtração versus reabsorção/secreção, agudo versus crônico, segmento específico do néfron — com que cada um deles deve ser lido."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "néfron / nefrologia",
+      "origem": "do grego nephrós (rim) + o sufixo -ología (estudo, discurso); néfron recebe o sufixo -on, formador de unidade estrutural",
+      "significado": "néfron: 'unidade do rim'; nefrologia: 'o estudo do rim'",
+      "explicacao": "O termo 'néfron' foi cunhado no início do século XX para nomear a unidade estrutural e funcional mínima do rim — o conjunto glomérulo mais túbulo que, repetido cerca de um milhão de vezes em cada rim humano, realiza sozinho toda a sequência de filtrar e resgatar descrita neste bloco. Antes da microscopia revelar essa unidade repetitiva, o rim era descrito apenas macroscopicamente, sem que se soubesse que sua função dependia de milhões de pequenas unidades idênticas trabalhando em paralelo. A nefrologia, como especialidade clínica distinta da urologia (que trata predominantemente de doenças estruturais e cirúrgicas do trato urinário), consolidou-se ao longo do século XX à medida que a diálise e o transplante renal transformaram a insuficiência renal de sentença terminal em condição tratável — um dos capítulos de maior impacto prático de toda a medicina interna moderna."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏗️",
+      "conteudo": "Pense numa mineradora que processa uma montanha inteira de minério bruto para recuperar pequenas quantidades de metal valioso. **O glomérulo** é a peneira inicial gigante, que deixa cair tudo que é pequeno — pedras, terra, e também as pepitas de metal valioso — sem nenhuma capacidade de distinguir o que é lixo do que é precioso; ela só filtra por tamanho. **O túbulo proximal** é a primeira esteira de recuperação, que roda rápido e resgata a maior parte do metal valioso em bloco, sem ajuste fino — ela recupera sempre a mesma proporção, farta ou escassa a demanda por metal naquele dia. **A alça de Henle** é uma torre de decantação especial, construída para criar um gradiente de densidade crescente de cima para baixo — ela não recupera metal diretamente, mas prepara as condições que permitem à etapa seguinte separar com muito mais eficiência. **O túbulo distal e o ducto coletor** são a mesa de apuração fina, onde um operador especializado — avisado por relatórios do escritório central (os hormônios) — ajusta minuciosamente quanto de cada elemento específico deve ser recuperado ou descartado naquele lote, conforme a demanda do mercado naquele exato momento. Se a peneira inicial tiver furos grandes demais (lesão glomerular), pepitas inteiras de metal se perdem no rejeito. Se a esteira de recuperação em massa quebrar (lesão tubular proximal), o volume processado continua entrando, mas a maior parte do metal valioso escapa junto com o rejeito. E se a mesa de apuração fina falhar (lesão tubular distal), o volume recuperado continua praticamente normal, mas o ajuste fino de cada elemento específico se perde — exatamente como um distúrbio eletrolítico isolado, sem proteinúria maciça."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o rim filtrasse apenas o que precisa ser eliminado — sem filtrar em excesso água, sódio e glicose que depois precisam ser resgatados pelo túbulo — o que se ganharia e o que se perderia?",
+      "resposta": "À primeira vista, pareceria mais eficiente: por que filtrar 180 litros de plasma por dia, resgatando quase tudo em seguida, em vez de filtrar seletivamente só o que é lixo? O problema é que o glomérulo funciona por um mecanismo físico simples e robusto — pressão hidrostática empurrando líquido através de uma barreira porosa por tamanho — e esse mecanismo não tem como 'saber', no momento da filtração, quais moléculas específicas de sódio ou glicose o corpo quer manter. Um sistema de filtração seletiva molécula a molécula exigiria reconhecimento ativo e gasto de energia em cada partícula filtrada, o que seria impraticável para o volume de sangue que passa pelo rim a cada minuto. O desenho atual troca uma filtração grosseira e barata (glomérulo) por um resgate fino e energeticamente caro, mas seletivo e ajustável, no túbulo — e esse resgate pode ser regulado momento a momento por hormônios, algo que a filtração bruta jamais conseguiria fazer sozinha. A 'ineficiência' aparente de filtrar em excesso é, na verdade, o que permite ao corpo ajustar em tempo real quanto sódio, água e outros solutos manter, sem precisar redesenhar o filtro a cada minuto."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O néfron como duas máquinas distintas: filtro glomerular e sequência tubular de resgate",
+      "descricao": "Esquema didático mostrando um néfron estilizado com duas regiões claramente separadas por cor. À esquerda, o glomérulo (vermelho), representado como um novelo de capilares dentro da cápsula de Bowman, com setas de filtração saindo dele rotuladas 'água, sódio, glicose, ureia — tudo que é pequeno passa'. À direita, uma sequência de quatro segmentos tubulares em cores distintas e rotulados: túbulo proximal (azul, 'resgate em massa — 2/3 do sódio e água, toda a glicose'), alça de Henle (verde, 'constrói gradiente de concentração na medula'), túbulo distal (amarelo, 'ajuste fino de sódio, cálcio, potássio — sob ação hormonal') e ducto coletor (roxo, 'decisão final de concentrar ou diluir a urina — sob ação do hormônio antidiurético'). Setas de reabsorção voltando de cada segmento tubular para um capilar peritubular ao lado. Fundo neutro adaptativo ao tema do app, legendas em português.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de infográfico médico moderno e limpo. Um néfron estilizado desenhado horizontalmente, dividido em duas regiões visualmente distintas por cor e rótulo geral. Região esquerda, rotulada 'FILTRAÇÃO': um glomérulo vermelho representado como um novelo de capilares dentro de uma cápsula (cápsula de Bowman) em contorno fino, com múltiplas setas finas saindo em direção ao túbulo, rotuladas 'água, sódio, glicose, ureia — filtração por tamanho, sem seletividade'. Região direita, rotulada 'REABSORÇÃO E SECREÇÃO', mostrando quatro segmentos tubulares em sequência e cores distintas: 'Túbulo proximal' (azul, ícone de esteira rápida, rótulo secundário 'resgate em massa: 2/3 do sódio e água, quase toda glicose'), 'Alça de Henle' (verde, formato de U alongado descendo e subindo, rótulo secundário 'gradiente de concentração medular'), 'Túbulo distal' (amarelo, rótulo secundário 'ajuste fino de sódio, cálcio, potássio — hormônio-dependente'), 'Ducto coletor' (roxo, rótulo secundário 'concentra ou dilui a urina final — sob hormônio antidiurético'). Pequenas setas curvas saindo de cada segmento tubular em direção a um capilar peritubular fino desenhado paralelo ao túbulo, indicando reabsorção para o sangue. Tipografia sem serifa, paleta de cores distintas e suaves por estrutura, alto contraste para texto, sem elementos fotorrealistas, sem texto em inglês."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-mi2-00-000",
+        "titulo": "Medicina Interna II — Visão Geral",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este módulo herda o funil hipotético-dedutivo e a ideia de que os três territórios (endócrino, digestivo, renal) se sobrepõem no mesmo paciente — aqui esse raciocínio é aplicado especificamente ao território renal."
+      },
+      {
+        "bloco_id": "s8-mi2-01-000",
+        "titulo": "Endocrinologia Clínica",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "complementar",
+        "explicacao": "O módulo de endocrinologia já introduziu a lógica de eixos e retroalimentação; a nefrologia clínica compartilha o mesmo tipo de raciocínio sistêmico aplicado a um território anatômico diferente, além de se conectar diretamente pela nefropatia diabética e pelo eixo cálcio-vitamina D."
+      },
+      {
+        "bloco_id": "s8-mi2-02-000",
+        "titulo": "Gastroenterologia Clínica",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "complementar",
+        "explicacao": "O módulo de gastroenterologia já anunciou como perdas digestivas volumosas podem precipitar lesão renal aguda pré-renal; este módulo retoma essa cascata do ponto de vista renal."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Lesão renal aguda — causas pré-renal, renal intrínseca e pós-renal",
+        "mecanismo_conexao": "A distinção entre falha glomerular, tubular, pré-renal e pós-renal apresentada no funil clínico deste módulo será desenvolvida em detalhe, com os mecanismos específicos de necrose tubular aguda e outras causas intrínsecas.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Doença renal crônica — progressão, estadiamento e complicações sistêmicas",
+        "mecanismo_conexao": "A ideia de perda progressiva e irreversível de néfrons introduzida aqui será detalhada com os mecanismos de hiperfiltração compensatória dos néfrons remanescentes e as complicações sistêmicas (anemia, doença óssea, acidose).",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Glomerulopatias — síndrome nefrótica e síndrome nefrítica",
+        "mecanismo_conexao": "A distinção entre proteinúria maciça com hematúria dismórfica (padrão glomerular) apresentada neste módulo será desenvolvida nos mecanismos imunológicos e histopatológicos específicos de cada glomerulopatia.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Distúrbios hidroeletrolíticos e do equilíbrio ácido-base por segmento tubular",
+        "mecanismo_conexao": "Cada distúrbio eletrolítico específico (hipercalemia, hiponatremia, acidose tubular renal) será lido à luz de qual segmento do néfron — proximal, alça de Henle, distal ou coletor — falhou em seu ajuste fino, exatamente a lente estabelecida neste módulo.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s8-mi2-01-000",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Assim como a endocrinologia organiza seu raciocínio em torno da arquitetura de eixos hormonais e a gastroenterologia em torno de segmentos e válvulas, a nefrologia organiza o seu em torno da distinção entre filtração e reabsorção/secreção por segmento do néfron — reforçando que cada território de Medicina Interna II tem uma lente estrutural própria, mesmo método geral de raciocínio."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-mi2-03-000-fc01",
+      "pergunta": "Por que o rim precisou separar, em duas estruturas diferentes do néfron, a tarefa de filtrar e a tarefa de reabsorver/secretar, em vez de fazer as duas coisas na mesma estrutura?",
+      "resposta": "Porque as duas tarefas exigem propriedades físicas incompatíveis entre si. Filtrar um volume enorme de plasma continuamente exige uma barreira porosa, de alta permeabilidade, que separa por tamanho e não tem como distinguir o que é útil do que é lixo — essa é a tarefa do glomérulo. Resgatar seletivamente água, sódio, glicose e outros solutos específicos, e ajustar essa recuperação conforme a necessidade momentânea do corpo, exige transportadores específicos, receptores hormonais e capacidade de resposta regulada — algo que uma simples peneira física jamais conseguiria fazer. Separar as duas tarefas em estruturas diferentes (glomérulo e túbulo) permite que cada uma seja otimizada para sua função sem comprometer a outra.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "nefrologia",
+        "glomerulo",
+        "tubulo-renal"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-03-000-fc02",
+      "pergunta": "Descreva a tarefa específica de cada um dos quatro segmentos tubulares (proximal, alça de Henle, distal, ducto coletor) e explique por que nenhum deles pode substituir o outro.",
+      "resposta": "O túbulo proximal reabsorve, em bloco e sem ajuste fino, cerca de dois terços do sódio e da água filtrados e praticamente toda a glicose e os aminoácidos — sempre na mesma proporção, independentemente da necessidade do momento. A alça de Henle não reabsorve solutos de forma proporcional ao filtrado como tarefa principal; sua função distintiva é construir, por multiplicação em contracorrente entre um ramo permeável à água e outro impermeável que bombeia sódio, um gradiente de concentração crescente na medula renal — sem esse gradiente, nenhuma urina concentrada seria possível mais adiante. O túbulo distal ajusta finamente sódio, cálcio e potássio em resposta a hormônios, variando a reabsorção conforme a necessidade real do corpo naquele momento. O ducto coletor executa a decisão final sobre concentrar ou diluir a urina, tornando-se permeável à água sob ação do hormônio antidiurético e usando o gradiente medular construído pela alça de Henle, além de finalizar o ajuste de sódio e potássio sob ação da aldosterona. Nenhum substitui o outro porque cada um resolve um problema físico ou regulatório que os demais não têm a estrutura para resolver: massa (proximal), gradiente (alça), ajuste fino hormonal (distal e coletor).",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "nefron",
+        "segmentos-tubulares",
+        "fisiologia-renal"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-03-000-fc03",
+      "pergunta": "Um paciente apresenta edema importante, proteinúria de 4 gramas em 24 horas e hemácias dismórficas no sedimento urinário, com creatinina apenas discretamente elevada. Outro paciente apresenta poliúria persistente, hipocalemia e incapacidade de concentrar a urina mesmo com restrição hídrica, sem proteinúria significativa. Por que esses dois quadros apontam para estruturas diferentes do néfron, e o que cada achado específico revela?",
+      "resposta": "O primeiro quadro aponta para uma falha predominantemente glomerular: a proteinúria maciça (4 g/24h é faixa nefrótica ou próxima dela) revela que a barreira de filtração perdeu sua seletividade normal e está deixando passar proteínas que deveriam ser retidas; as hemácias dismórficas indicam que essas células atravessaram uma barreira de filtração lesada e sofreram deformação mecânica no trajeto — um achado que praticamente não ocorre em sangramentos de origem puramente tubular ou do trato urinário baixo. A creatinina apenas discretamente elevada mostra que a capacidade de filtração geral ainda está relativamente preservada, mesmo com a barreira comprometida. O segundo quadro aponta para uma falha predominantemente tubular: a incapacidade de concentrar a urina, mesmo sob restrição hídrica, sugere que o segmento responsável pelo gradiente medular (alça de Henle) ou pela resposta ao hormônio antidiurético (ducto coletor) não está funcionando; a hipocalemia sem proteinúria relevante reforça que o problema está no ajuste eletrolítico tubular, não na barreira de filtração. Os dois pacientes ilustram, lado a lado, por que 'função renal alterada' nunca deve ser tratado como um problema único e indiferenciado.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "glomerulopatia",
+        "tubulopatia",
+        "raciocinio-clinico"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-03-000-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Uma creatinina sérica normal descarta qualquer doença renal significativa, incluindo lesão tubular.'",
+      "resposta": "Falso. A creatinina sérica reflete predominantemente a taxa de filtração glomerular — quanto o glomérulo consegue filtrar por unidade de tempo — e não avalia diretamente a função de reabsorção ou secreção dos segmentos tubulares. Um paciente pode ter uma lesão tubular significativa (por exemplo, um defeito na capacidade de concentrar urina ou um distúrbio eletrolítico específico por disfunção de um segmento tubular) com filtração glomerular ainda preservada e creatinina sérica normal, porque a capacidade de filtrar e a capacidade de reabsorver/secretar seletivamente são funções independentes, realizadas por estruturas diferentes do néfron. A armadilha está em usar um marcador de função glomerular como se fosse um marcador de 'função renal' genérica e única.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "creatinina",
+        "funcao-tubular",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-03-000-fc05",
+      "pergunta": "Se a alça de Henle de um paciente perdesse completamente sua capacidade de bombear sódio e cloreto no ramo ascendente espesso, o que aconteceria com a capacidade desse rim de concentrar a urina, mesmo que o hormônio antidiurético estivesse presente em quantidade normal e o ducto coletor estivesse anatomicamente íntegro?",
+      "resposta": "A capacidade de concentrar a urina seria perdida, apesar de o hormônio antidiurético e o ducto coletor estarem funcionando normalmente. Isso acontece porque o ducto coletor não concentra a urina sozinho — ele apenas se torna permeável à água sob ação do hormônio antidiurético e deixa a água sair do túbulo seguindo um gradiente osmótico que precisa já existir na medula renal. Esse gradiente é construído pelo bombeamento ativo de sódio e cloreto no ramo ascendente espesso da alça de Henle, que torna o interstício medular progressivamente mais concentrado em direção à papila. Sem esse bombeamento, não haveria gradiente algum para a água seguir sob ação do hormônio antidiurético — mas o efeito não para na concentração: é esse mesmo bombeamento que remove soluto do fluido tubular sem remover água, sendo também o principal responsável por diluir a urina abaixo da osmolalidade do plasma. Por isso, sem o ramo ascendente espesso funcional, o rim perde as duas capacidades extremas ao mesmo tempo — não consegue concentrar a urina acima do plasma, e também não consegue diluí-la muito abaixo dele —, e a urina tende a ficar presa perto da isosmolalidade, incapaz de se afastar muito do plasma em qualquer direção. Isso demonstra que a construção do gradiente medular pela alça de Henle não serve só à concentração: ela é, ao mesmo tempo, o mecanismo que permite tanto concentrar (com ADH) quanto diluir (sem ADH) a urina — e por isso sua perda compromete os dois extremos, não apenas um deles.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "alca-de-henle",
+        "concentracao-urinaria",
+        "hormonio-antidiuretico"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-03-000-fc06",
+      "pergunta": "Por que o termo 'néfron' usa o sufixo grego que designa uma unidade estrutural, e o que essa escolha etimológica revela sobre como o rim foi compreendido ao longo da história da medicina?",
+      "resposta": "O termo 'néfron' combina nephrós (rim, em grego) com o sufixo -on, formador de unidade estrutural — o mesmo padrão usado, por exemplo, em 'elétron' ou 'nêutron' para designar uma unidade mínima e repetitiva. O nome foi cunhado no início do século XX, quando a microscopia revelou que o rim não era um órgão homogêneo, mas um conjunto de cerca de um milhão de unidades idênticas, cada uma repetindo sozinha toda a sequência de filtrar e resgatar. Antes dessa descoberta, o rim era descrito apenas macroscopicamente, sem que se soubesse que sua função dependia dessa repetição massiva em paralelo. A escolha do sufixo revela, portanto, que o entendimento funcional do rim só avançou de fato quando a estrutura repetitiva subjacente foi reconhecida — outro exemplo, como em outros nomes médicos, de que a compreensão da função seguiu a descoberta da estrutura, e não o contrário.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "nefron",
+        "etimologia",
+        "historia-da-medicina"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-03-000-fc07",
+      "pergunta": "Compare, na arquitetura apresentada neste módulo, a lógica de 'segmentos especializados' da nefrologia com a lógica de 'segmentos especializados' já vista no módulo de gastroenterologia clínica desta mesma disciplina.",
+      "resposta": "Nos dois casos, a estratégia geral é a mesma: dividir um processo contínuo em compartimentos sucessivos, cada um com uma tarefa específica e não intercambiável, em vez de tentar resolver tudo num único espaço genérico. No tubo digestivo, a divisão existe porque as etapas da digestão exigem ambientes químicos incompatíveis entre si (ácido no estômago, neutro no intestino delgado), e válvulas (esfíncteres) impõem o sentido único do trânsito entre os segmentos. No néfron, a divisão existe porque as etapas do processamento do filtrado exigem propriedades físicas e regulatórias incompatíveis entre si (resgate em massa sem ajuste fino no proximal, construção de gradiente por permeabilidades opostas na alça de Henle, ajuste fino hormônio-dependente no distal e coletor), e não há válvulas propriamente ditas, mas uma sequência estrutural fixa e um fluxo unidirecional dentro do próprio néfron. A diferença central é que, no tubo digestivo, a incompatibilidade é majoritariamente química (pH, enzimas); no néfron, é majoritariamente física e regulatória (permeabilidade, gradiente, resposta hormonal).",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "nefron",
+        "segmentacao",
+        "comparacao-sistemica"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-03-000-fc08",
+      "pergunta": "Um paciente diabético de longa data desenvolve, ao longo dos anos, proteinúria progressiva e queda lenta da taxa de filtração glomerular. Usando a distinção entre falha glomerular e falha tubular apresentada neste módulo, e retomando a conexão já anunciada na visão geral desta disciplina, por que esse quadro deve ser lido como uma cascata causal única partindo do eixo endócrino, e não como uma coincidência entre duas doenças independentes?",
+      "resposta": "A hiperglicemia sustentada glica progressivamente as proteínas da membrana basal glomerular e ativa vias que aumentam a pressão dentro do capilar glomerular, lesando de forma lenta e progressiva a própria barreira de filtração — uma estrutura glomerular, não tubular. É por isso que o achado laboratorial predominante nesse paciente é proteinúria progressiva (marca de lesão glomerular, exatamente como descrito neste módulo), e não um distúrbio eletrolítico isolado típico de lesão tubular. Tratar essa evolução como coincidência entre 'diabetes' e 'doença renal' perderia a oportunidade de intervir na causa raiz — o controle glicêmico e o bloqueio de vias que aumentam a pressão intraglomerular — que ataca simultaneamente as duas manifestações, porque na verdade há apenas uma cascata causal, nascida no eixo endócrino e expressa estruturalmente no glomérulo.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "nefropatia-diabetica",
+        "cascata-causal",
+        "endocrinologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-mi2-03-000-caso01",
+      "titulo": "Redução súbita do volume urinário em paciente internado por gastroenterite grave",
+      "apresentacao": "Homem de 71 anos, hipertenso, é internado por gastroenterite aguda com diarreia volumosa e vômitos há três dias, com ingesta oral muito reduzida. À admissão, apresenta mucosas secas, hipotensão postural, frequência cardíaca de 108 bpm e diurese estimada em menos de 400 mL nas últimas 24 horas. Exames mostram creatinina sérica elevada em relação a um valor basal conhecido de três meses antes (função renal previamente normal), ureia desproporcionalmente mais elevada que a creatinina, sódio urinário baixo e fração de excreção de sódio reduzida. Não há proteinúria significativa, não há hematúria, e a ultrassonografia renal não mostra dilatação do sistema coletor. A equipe, aplicando o funil clínico deste módulo, primeiro reconhece a queda aguda e recente da função renal (não crônica) e, em seguida, localiza a falha predominante fora do parênquima renal propriamente dito.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Perdas digestivas volumosas (diarreia e vômitos) associadas à baixa ingesta oral reduzem drasticamente o volume circulante efetivo, diminuindo o débito cardíaco funcional e a pressão de perfusão que chega aos rins."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Nem o glomérulo nem o túbulo estão estruturalmente lesados neste momento — a queda de perfusão ocorre antes do néfron, reduzindo a pressão necessária para a filtração glomerular normal. Por isso essa categoria é chamada de causa pré-renal: a falha começa no suprimento sanguíneo que chega ao rim, não no rim em si."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com menor pressão de perfusão, a taxa de filtração glomerular cai, e o néfron, ainda estruturalmente íntegro, responde de forma apropriada retendo ao máximo sódio e água — daí o sódio urinário baixo e a fração de excreção de sódio reduzida, sinais de que o túbulo está reabsorvendo avidamente em resposta à hipoperfusão, e não que o túbulo esteja lesado."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Redução do volume urinário (oligúria), elevação da creatinina em relação ao basal, e elevação da ureia desproporcionalmente maior que a da creatinina — um padrão característico de baixa perfusão renal, em que a reabsorção aumentada de ureia acompanha a reabsorção aumentada de sódio e água."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Se a hipoperfusão persistir sem correção, a lesão pode evoluir de uma fase funcional e reversível (pré-renal) para uma lesão estrutural do próprio túbulo (necrose tubular aguda, uma causa renal intrínseca, a ser detalhada no bloco específico de lesão renal aguda); com reposição volêmica adequada e correção da causa digestiva de base, a função renal deste paciente tende a se normalizar por completo, demonstrando que a falha estava na perfusão, não ainda numa estrutura do néfron."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra os dois instrumentos centrais deste módulo: a distinção entre lesão aguda e crônica (queda recente e documentada em relação a um basal conhecido) e a localização da falha antes mesmo do néfron (causa pré-renal), usando os próprios marcadores de reabsorção tubular — sódio urinário baixo e fração de excreção de sódio reduzida — não como sinal de doença tubular, mas como resposta apropriada de um túbulo íntegro tentando compensar a baixa perfusão. O caso também retoma, de forma concreta, a conexão já anunciada no módulo de gastroenterologia clínica desta disciplina entre perdas digestivas e lesão renal aguda.",
+      "disciplinas_relacionadas": [
+        "nefrologia",
+        "gastroenterologia",
+        "medicina-interna",
+        "semiologia"
+      ],
+      "diagnostico_revelado": "Lesão renal aguda pré-renal por hipovolemia secundária a perdas digestivas (a ser detalhada em profundidade no bloco específico de lesão renal aguda).",
+      "tratamento_resumido": "Reposição volêmica endovenosa guiada por sinais de perfusão e resposta da diurese, correção da causa digestiva de base e suspensão temporária de medicamentos que dependem de boa perfusão renal para serem eliminados com segurança; monitorização seriada da função renal para confirmar reversibilidade — princípios gerais detalhados com critérios e metas no bloco específico da doença."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-mi2-03-000-img01",
+        "url": null,
+        "tipo_imagem": "esquema_didatico",
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
+  },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Jameson JL, Fauci AS, Kasper DL, Hauser SL, Longo DL, Loscalzo J (eds). Harrison's Principles of Internal Medicine. 21st ed. McGraw Hill; 2022. Parte 11 — Distúrbios Renais e do Trato Urinário.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Brenner BM, Rector FC. Brenner and Rector's The Kidney. 11th ed. Elsevier; 2020. Seção I — Estrutura e Função Renal Normal.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 14ª ed. Elsevier; 2021. Unidade V — Os Rins e os Líquidos Corporais.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "Kidney Disease: Improving Global Outcomes (KDIGO) Clinical Practice Guideline for Acute Kidney Injury. Kidney Int Suppl. 2012;2(1):1-138.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "fisiopatologia",
-    "apresentacao_clinica"
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Tratar 'função renal' como uma única função indiferenciada, sem distinguir filtração glomerular de reabsorção/secreção tubular.",
+      "correcao": "O glomérulo filtra por tamanho, sem seletividade quanto ao que é útil; o túbulo, em segmentos com tarefas distintas, resgata seletivamente e ajusta finamente o que foi filtrado. Uma creatinina normal reflete boa filtração glomerular, mas não descarta disfunção tubular isolada.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Achar que os segmentos do túbulo renal (proximal, alça de Henle, distal, ducto coletor) têm função intercambiável ou que 'o túbulo' reabsorve de forma genérica e uniforme.",
+      "correcao": "Cada segmento tem uma tarefa específica e não substituível: proximal reabsorve em massa e proporcionalmente; alça de Henle constrói o gradiente de concentração medular; distal e ducto coletor fazem o ajuste fino hormônio-dependente e a decisão final de concentrar ou diluir a urina.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Interpretar sódio urinário baixo e fração de excreção de sódio reduzida sempre como sinal de doença tubular.",
+      "correcao": "Na lesão renal aguda pré-renal, esses achados refletem um túbulo íntegro reabsorvendo avidamente sódio e água em resposta apropriada à baixa perfusão renal — o oposto de disfunção tubular.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "taxa de filtração glomerular",
+      "termo_es": "tasa de filtración glomerular",
+      "termo_en": "glomerular filtration rate",
+      "abreviatura": "TFG / GFR"
+    },
+    {
+      "termo_pt": "lesão renal aguda",
+      "termo_es": "lesión renal aguda",
+      "termo_en": "acute kidney injury",
+      "abreviatura": "LRA / AKI"
+    },
+    {
+      "termo_pt": "doença renal crônica",
+      "termo_es": "enfermedad renal crónica",
+      "termo_en": "chronic kidney disease",
+      "abreviatura": "DRC / CKD"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-5",
+      "mudanca": "Criação inicial do bloco de módulo Nefrologia Clínica, introdução ao módulo de Nefrologia dentro de Medicina Interna II.",
+      "motivo": "Produção do módulo introdutório de Nefrologia (semestre 8), antecedendo os blocos-filhos específicos de avaliação da função renal, lesão renal aguda, doença renal crônica, glomerulopatias e distúrbios hidroeletrolíticos."
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "adversarial-fisiologia-renal + integrador-manual",
+      "mudanca": "Corrigido fc05: a perda do ramo ascendente espesso da alça de Henle compromete tanto a concentração MÁXIMA quanto a diluição MÁXIMA da urina (tendendo à isosmolalidade), não apenas a concentração com diluição preservada. Suavizada a falsa dicotomia anatômica distal-vs-ducto-coletor na narrativa: aldosterona atua como um continuo sobre túbulo distal tardio/túbulo conector/ducto coletor cortical, e a secreção de H+ não é exclusiva do ducto coletor.",
+      "motivo": "Achado de uma verificação adversarial de fisiologia renal mais profunda, rodada após aprovação inicial do pipeline padrão (3 juízes + adversarial), que identificou um erro conceitual real no flashcard fc05 e uma simplificação anatômica artificial na narrativa."
+    }
   ]
 }

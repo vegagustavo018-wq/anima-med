@@ -1,53 +1,209 @@
 {
+  "metadata": {
+    "titulo": "Proteínas G (Gs, Gi, Gq, G12/13)",
+    "subtitulo": "Como a célula traduz sinais externos em comandos internos?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "sinalização celular",
+      "GPCR",
+      "segundos mensageiros",
+      "bioquímica"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "As proteínas G funcionam como interruptores moleculares binários que traduzem sinais extracelulares recebidos por receptores acoplados à proteína G (GPCRs) em respostas citoplasmáticas específicas. Elas são heterotriméricas, compostas por subunidades alfa, beta e gama. Quando um ligante se liga ao receptor, a subunidade alfa troca GDP por GTP, desencadeando a dissociação do complexo e a ativação de efetores como adenilato ciclase ou fosfolipase C. Este sistema é fundamental para a homeostase, permitindo que a célula responda a hormônios, neurotransmissores e estímulos sensoriais de forma altamente regulada, encerrando o ciclo através da atividade GTPase intrínseca da subunidade alfa, que hidrolisa o GTP de volta a GDP.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que sua célula vive em uma metrópole caótica. Ela recebe milhares de mensagens (hormônios, sinais nervosos) por segundo, mas não pode abrir a porta para todos. Ela precisa de um porteiro que não apenas receba o pacote, mas que entenda o conteúdo e repasse a ordem correta para os departamentos internos. Esse porteiro é o receptor, e o sistema que ele aciona para transmitir essa ordem é a Proteína G."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A natureza precisava de um mecanismo que fosse rápido, reversível e capaz de amplificar sinais. A solução encontrada foi um interruptor molecular baseado na afinidade por nucleotídeos. Quando a célula está em repouso, a proteína G está 'desligada', mantendo uma molécula de GDP em seu sítio ativo. Ao receber o estímulo, o receptor força a proteína a trocar o GDP por GTP, alterando sua conformação e permitindo que ela se solte para ativar uma cascata de eventos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essas proteínas são heterotriméricas, formadas pelas subunidades alfa, beta e gama. A subunidade alfa é a verdadeira 'executiva' do processo, pois ela carrega a atividade enzimática GTPase. É ela quem define o destino do sinal, dependendo de qual classe ela pertence: Gs (estimula a adenilato ciclase), Gi (inibe a adenilato ciclase), Gq (ativa a fosfolipase C) ou G12/13 (regula o citoesqueleto)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o sinal se diversifica?"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense na proteína G como um sistema de segurança de um banco. O 'Receptor' é o teclado numérico na porta. A 'Proteína G' é o guarda de segurança que fica atrás da porta. Quando a senha correta é digitada (ligante), o guarda (proteína G) recebe a ordem de abrir o cofre (efetor). Mapeamento: Teclado = Receptor; Guarda = Proteína G; Senha = Ligante; Cofre = Efetor (ex: Adenilato Ciclase); Ação de abrir o cofre = Segunda mensageiro (ex: AMPc)."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A capacidade intrínseca da subunidade alfa de hidrolisar GTP em GDP é o mecanismo de autodesligamento mais elegante da biologia: sem essa atividade GTPase, o sinal nunca cessaria, levando a um caos metabólico."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire. Entenda que a proteína G não 'cria' o sinal, ela o 'traduz'. A especificidade da resposta depende inteiramente da subunidade alfa que se acopla ao receptor. Se for Gs, aumentamos AMPc; se for Gq, aumentamos Cálcio citoplasmático."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Proteína G",
+      "origem": "Inglês (Guanine nucleotide-binding protein)",
+      "significado": "Proteína que se liga ao nucleotídeo guanina.",
+      "explicacao": "O 'G' refere-se especificamente à sua afinidade por nucleotídeos de guanina (GDP/GTP), o que define sua função como um comutador binário on/off."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a subunidade alfa perdesse sua atividade GTPase intrínseca?",
+      "resposta": "O sinal nunca seria desligado. A célula permaneceria em um estado de ativação constante (ex: produção infinita de AMPc), o que é a base biológica de várias patologias, como certos tumores onde mutações impedem a hidrólise do GTP, mantendo a via de proliferação permanentemente ligada."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo de ativação da Proteína G",
+      "descricao": "Esquema mostrando o receptor (GPCR) em membrana, a subunidade alfa trocando GDP por GTP e se dissociando das subunidades beta-gama para ativar uma adenilato ciclase.",
+      "prompt_ia": "High-quality scientific illustration, cross-section of a cell membrane with a 7-transmembrane receptor. A heterotrimeric G-protein (alpha, beta, gamma subunits) is docked to the receptor. Change from GDP-bound (inactive) to GTP-bound (active) state. The alpha-subunit is shown detaching and moving towards an adenylate cyclase enzyme. Clean, minimalist, textbook style, vibrant colors for molecules, professional medical illustration.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-05-002-02-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é a função exata do receptor (GPCR) no ciclo da proteína G?",
+      "resposta": "O receptor atua como um fator de troca de nucleotídeos de guanina (GEF), induzindo a mudança conformacional na subunidade alfa que causa a liberação do GDP e a entrada de GTP.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "GEF",
+        "GPCR"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-02-fc02",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença funcional entre as subunidades Gs e Gi?",
+      "resposta": "A Gs estimula a adenilato ciclase (aumentando os níveis de AMPc), enquanto a Gi inibe a adenilato ciclase (reduzindo os níveis de AMPc), exercendo efeitos opostos na sinalização intracelular.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Gs",
+        "Gi",
+        "AMPc"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-02-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se a afinidade da subunidade alfa pelo GDP fosse maior que pelo GTP?",
+      "resposta": "A proteína G permaneceria inativa permanentemente, tornando a célula 'surda' aos sinais extracelulares que dependem dessa via, impedindo respostas fisiológicas essenciais.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "GDP",
+        "sinalização"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-02-fc04",
+      "tipo": "mecanismo",
+      "pergunta": "Como o sistema desliga o sinal iniciado pela proteína G?",
+      "resposta": "Através da atividade GTPase intrínseca da subunidade alfa, que hidrolisa o GTP ligado a ela em GDP + Pi, retornando a subunidade alfa ao estado inativo e permitindo que ela se reassocie ao complexo beta-gama.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "GTPase",
+        "hidrólise"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-002-02-fc05",
+      "tipo": "por_que",
+      "pergunta": "Por que a estrutura heterotrimérica (alfa-beta-gama) é necessária?",
+      "resposta": "Ela permite uma regulação fina: a subunidade alfa carrega o interruptor, mas as subunidades beta-gama também servem como efetores de sinalização próprios e ajudam a ancorar a proteína na membrana plasmática.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "heterotrimero",
+        "regulação"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-05-002-02-caso01",
+      "titulo": "Diarreia aquosa maciça após viagem a área endêmica",
+      "apresentacao": "Homem de 34 anos, retornado há 2 dias de viagem a região com saneamento precário, procura pronto-socorro com diarreia aquosa profusa, descrita como 'água de arroz', com início súbito há 12 horas, sem sangue ou muco, associada a vômitos e cãibras musculares. Ao exame: hipotenso (PA 85x50 mmHg), taquicárdico, mucosas secas, turgor cutâneo diminuído, letárgico. Estima-se perda de mais de 1 litro de fluido por hora nas últimas horas.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Infecção por Vibrio cholerae, cuja toxina colérica catalisa a ADP-ribosilação da subunidade alfa da proteína Gs no enterócito intestinal."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A subunidade alfa da proteína Gs: a ADP-ribosilação promovida pela toxina bloqueia especificamente sua atividade GTPase intrínseca, o mecanismo de 'autodesligamento' descrito no bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Incapaz de hidrolisar GTP em GDP, a subunidade alfa fica presa no estado ativo, mantendo a adenilato ciclase permanentemente estimulada e o AMPc em níveis muito acima do normal, de forma independente de qualquer novo estímulo hormonal."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O AMPc elevado ativa cronicamente a PKA, que fosforila e mantém aberto o canal CFTR, gerando efluxo maciço de cloreto, sódio e água para o lúmen intestinal — diarreia secretora volumosa e aquosa."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Desidratação grave, hipovolemia e choque, com risco de morte em horas se a perda de fluido não for reposta — a gravidade do quadro é proporcional ao tempo em que a proteína G permanece travada 'ligada'."
+        }
+      ],
+      "conexao_com_bloco": "O caso é a demonstração clínica direta do contrafactual já levantado no bloco: 'se a subunidade alfa perdesse sua atividade GTPase, o sinal nunca seria desligado'. A toxina colérica realiza exatamente essa mutação funcional por via química (ADP-ribosilação), provando que o mecanismo de autodesligamento não é um detalhe acadêmico, mas o que separa a homeostase da doença.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "microbiologia",
+        "farmacologia",
+        "clinica medica"
+      ],
+      "diagnostico_revelado": "Cólera (infecção por Vibrio cholerae) com desidratação grave por diarreia secretora mediada por toxina colérica.",
+      "tratamento_resumido": "Reidratação agressiva (oral com sais de reidratação oral, ou endovenosa nos casos graves), correção de eletrólitos, e antibioticoterapia (doxiciclina ou azitromicina) para encurtar a excreção bacteriana."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-01-002",
+        "titulo": "Membrana Plasmática — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "As proteínas G estão ancoradas na face citosólica da membrana; entender a fluidez lipídica é crucial para a mobilidade destas proteínas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Farmacologia de receptores adrenérgicos",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Muitos fármacos (betabloqueadores) agem modulando a interação entre ligantes e GPCRs, alterando a ativação das proteínas G.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Proteínas G monoméricas (Ras)",
+        "explicacao": "Diferente das heterotriméricas, as proteínas G monoméricas (como Ras) não estão ligadas a receptores de 7 domínios transmembrana, mas a receptores tirosina quinase."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-05-002-02",
   "no_pai_id": "s1-biocel-05-002",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Proteínas G (Gs, Gi, Gq, G12/13)",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Ciclo GDP/GTP e escolha da via efetora",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica"
-  ]
+  }
 }

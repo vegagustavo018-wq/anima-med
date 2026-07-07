@@ -1,54 +1,271 @@
 {
+  "metadata": {
+    "titulo": "Autofagia Mediada por Chaperona",
+    "subtitulo": "Como a célula recicla uma proteína específica sem tocar nas vizinhas?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 11,
+    "nivel": "CORE",
+    "tags": [
+      "catabolismo",
+      "proteostase",
+      "lisossomo",
+      "chaperonas"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "A macroautofagia resolve o problema da fome celular envolvendo porções inteiras de citoplasma numa vesícula. Mas existe uma necessidade mais fina: remover proteínas individuais específicas, uma a uma, sem sacrificar nada ao redor — como um bibliotecário que retira apenas os livros com etiqueta de descarte, sem perturbar o resto da estante. Essa é a Autofagia Mediada por Chaperona (CMA). Proteínas que exibem um pequeno motivo de cinco aminoácidos (KFERQ) são reconhecidas por uma chaperona citosólica, a Hsc70, que as guia até um receptor na membrana do lisossomo, o LAMP2A. Ali, a proteína é desenovelada e translocada, uma de cada vez, para dentro do lisossomo, onde é degradada. É o mecanismo de reciclagem mais seletivo da célula — e seu declínio com o envelhecimento é uma peça central na compreensão de doenças neurodegenerativas.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um bibliotecário experiente não precisa esvaziar a estante inteira para retirar um único livro desatualizado. Ele reconhece a etiqueta de descarte colada na lombada, remove exatamente aquele volume, e devolve o restante intacto ao lugar. A célula enfrenta uma necessidade equivalente: às vezes, o problema não é falta geral de nutrientes, mas sim uma proteína específica que perdeu a função, envelheceu ou se tornou potencialmente perigosa — e ela precisa ser removida sem que nada mais no citosol seja perturbado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que englobar porções inteiras de citoplasma não resolve tudo?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A macroautofagia — que engloba pedaços inteiros de citoplasma numa vesícula de dupla membrana — é excelente para gerar energia rapidamente sob jejum, mas é um instrumento grosseiro para um problema fino: e se apenas uma proteína específica, entre milhares de outras saudáveis ao redor, precisar ser eliminada? Envolver todo aquele citoplasma para remover uma única molécula seria como demolir um quarteirão inteiro para reformar uma única casa. A célula precisava de uma ferramenta capaz de reconhecer, uma a uma, proteínas individuais marcadas para descarte, sem afetar suas vizinhas saudáveis."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução envolveu criar um sistema de etiquetagem molecular: uma sequência curta e específica de aminoácidos, presente em algumas proteínas (mas não em todas), que funciona como uma marca de reconhecimento. Quando essa marca fica exposta na superfície da proteína — geralmente porque ela perdeu sua conformação normal ou envelheceu —, uma proteína-guia especializada a reconhece e a conduz, individualmente, até o ponto de degradação."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Retenha a diferença central antes de seguir: a macroautofagia opera em volume; a via que vamos estudar agora opera proteína por proteína, com precisão cirúrgica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula reconhece qual proteína deve ser removida?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A marca de reconhecimento é uma sequência de cinco aminoácidos conhecida pela sigla KFERQ (lisina, fenilalanina, ácido glutâmico, arginina, glutamina), presente — de forma exposta ou passível de exposição — em cerca de um terço de todas as proteínas citosólicas. Quando essa sequência fica acessível na superfície da proteína, ela é reconhecida por uma chaperona citosólica chamada Hsc70, que se liga a ela e impede que a proteína se agregue formando aglomerados tóxicos enquanto é conduzida através do citosol."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A Hsc70 guia a proteína marcada até a membrana do lisossomo, onde existe um receptor específico: o LAMP2A. Esse receptor se organiza em múltiplas cópias, formando um complexo que funciona como um canal de translocação. A proteína-alvo precisa ser desenovelada — sua estrutura tridimensional complexa é desfeita, deixando-a numa forma linear — para conseguir atravessar esse canal estreito, entrando finalmente no interior ácido do lisossomo, onde enzimas hidrolíticas completam a degradação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que exatamente essa sequência de cinco aminoácidos, e por que o desenovelamento é obrigatório?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A sequência KFERQ foi 'escolhida' pela evolução porque é rara o suficiente para não aparecer em toda proteína indiscriminadamente, mas comum o suficiente para servir como código universal aplicável a uma fração significativa do proteoma citosólico — permitindo que a célula regule seletivamente um subconjunto amplo de proteínas sem precisar de um sistema de reconhecimento dedicado para cada uma individualmente. Já o desenovelamento obrigatório existe por uma restrição puramente física: o canal formado pelo LAMP2A é estreito demais para permitir a passagem de estruturas terciárias complexas, dobradas em múltiplas camadas. Só uma cadeia linear e desenovelada consegue atravessar — é a mesma lógica de tentar passar um objeto tridimensional volumoso por um cano estreito: só funciona se o objeto for esticado numa fita fina primeiro."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A seletividade da CMA depende inteiramente de dois fatores combinados: a exposição do motivo KFERQ na proteína-alvo e a capacidade do receptor LAMP2A de translocar apenas proteínas já desenoveladas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, confirme: proteína expõe KFERQ → Hsc70 reconhece e guia → LAMP2A recebe e desenovela → proteína atravessa o canal → degradação no interior lisossomal. Cada etapa depende estritamente da anterior."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a CMA se articula?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse mecanismo só faz sentido para quem já entende que o lisossomo é um compartimento ácido repleto de hidrolases, capaz de degradar macromoléculas complexas — sem essa base, dizer que a proteína 'entra no lisossomo para ser destruída' seria uma afirmação vazia. E ele se conecta adiante a territórios centrais da medicina: em neurologia, o declínio progressivo da atividade de CMA ao longo do envelhecimento — frequentemente associado à redução da expressão de LAMP2A — está implicado no acúmulo de proteínas potencialmente tóxicas em neurônios, um mecanismo estudado em Parkinson e Alzheimer. Em farmacologia experimental, moduladores capazes de aumentar a atividade da CMA são investigados como estratégia para acelerar a depuração de proteínas agregadas em doenças neurodegenerativas."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛂",
+      "conteudo": "Pense no sistema de controle de passaportes de um aeroporto internacional bem organizado. A proteína com o motivo KFERQ exposto é o passageiro com um passaporte específico, marcado por um selo de 'transferência obrigatória'. A chaperona Hsc70 é o agente de imigração que reconhece esse selo específico entre milhares de outros passageiros e conduz apenas esse viajante até o portão certo — sem tocar em ninguém mais na fila. O receptor LAMP2A é o próprio portão de embarque, estreito, que só permite passagem de um viajante por vez, e exige que ele deixe as malas grandes para trás (o desenovelamento da proteína) antes de atravessar. O interior do lisossomo é o avião que o leva definitivamente para fora do terminal (degradação). Mapeamento: proteína com motivo KFERQ = passageiro com selo de transferência; Hsc70 = agente de imigração que reconhece o selo; LAMP2A = portão de embarque estreito; desenovelamento = deixar a bagagem grande para trás; lisossomo = avião que remove o passageiro do terminal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vem o nome autofagia?"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "autofagia",
+      "origem": "do grego autós (próprio) + phageîn (comer)",
+      "significado": "literalmente, 'comer a si mesmo'",
+      "explicacao": "O termo foi cunhado no início dos anos 1960 por Christian de Duve, o mesmo pesquisador que descreveu o lisossomo, para descrever o fenômeno recém-observado de compartimentos celulares contendo material citoplasmático em digestão. A palavra descreve com precisão o processo geral — a célula degradando seus próprios componentes —, mas não distingue, por si só, as diferentes rotas pelas quais isso acontece. É por isso que precisamos de qualificadores como 'macro' (autofagossomo envolvendo volumes de citoplasma) e 'mediada por chaperona' (reconhecimento seletivo de proteínas individuais via motivo KFERQ) para especificar qual via está em jogo — o nome geral é o guarda-chuva; os qualificadores descrevem os mecanismos específicos por baixo dele."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o receptor LAMP2A perdesse completamente sua função em uma célula, o que aconteceria com as proteínas marcadas pelo motivo KFERQ?",
+      "resposta": "Essas proteínas continuariam sendo reconhecidas normalmente pela chaperona Hsc70 no citosol, mas não encontrariam porta de entrada no lisossomo, já que o LAMP2A é o único receptor conhecido capaz de translocá-las para dentro do compartimento. O resultado seria acúmulo progressivo dessas proteínas marcadas para descarte no citosol, aumentando o risco de agregação proteica e estresse proteotóxico — um cenário semelhante ao que se observa em certos modelos experimentais de doenças neurodegenerativas, nos quais a redução de LAMP2A está associada a pior depuração de proteínas potencialmente tóxicas."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O complexo de translocação da autofagia mediada por chaperona",
+      "descricao": "Esquema mostrando uma proteína citosólica com o motivo KFERQ exposto sendo reconhecida e guiada pela chaperona Hsc70 até o receptor multimérico LAMP2A na membrana do lisossomo, onde é desenovelada e translocada para o interior ácido do organelo.",
+      "prompt_ia": "Diagrama científico vetorial, estilo biologia celular avançada, fundo neutro adaptativo. Uma proteína citosólica com dobras tridimensionais visíveis, destacando em cor diferente um pequeno segmento rotulado 'motivo KFERQ'. Uma chaperona Hsc70 (representada como estrutura em formato de garra) se ligando a esse motivo. Seta indicando o movimento da chaperona com a proteína em direção à membrana do lisossomo, onde múltiplas cópias do receptor LAMP2A formam um canal visível. A proteína mostrada em processo de desenovelamento (transição de estrutura dobrada para fita linear) atravessando o canal. Dentro do lisossomo, representado com tom mais escuro (ambiente ácido) e pequenos símbolos de enzimas hidrolíticas. Legendas em português para cada componente, cores distintas e consistentes.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-07-006-03-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é a função específica da chaperona Hsc70 no processo de CMA, e por que ela é indispensável?",
+      "resposta": "A Hsc70 reconhece o motivo KFERQ exposto na proteína-alvo, impede que essa proteína se agregue formando aglomerados tóxicos enquanto circula pelo citosol, e conduz fisicamente a proteína até o receptor LAMP2A na membrana lisossomal. Sem essa etapa de reconhecimento e transporte guiado, proteínas marcadas nunca alcançariam o lisossomo de forma organizada.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "chaperona",
+        "CMA"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-07-006-03-fc02",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença fundamental de seletividade entre a macroautofagia e a autofagia mediada por chaperona?",
+      "resposta": "A macroautofagia é um processo relativamente amplo, envolvendo porções inteiras do citosol (incluindo organelas) dentro de uma vesícula de dupla membrana, sem discriminar componentes individuais dentro dessa porção capturada. A CMA, ao contrário, é altamente seletiva: reconhece e transloca proteínas individuais, uma de cada vez, apenas se essas proteínas exibirem o motivo de reconhecimento específico KFERQ — uma precisão molecular muito maior.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "macroautofagia",
+        "CMA"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-07-006-03-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "Se uma proteína sofresse uma mutação que eliminasse seu motivo KFERQ, como isso afetaria seu destino metabólico?",
+      "resposta": "Ela deixaria de ser reconhecida pela chaperona Hsc70 e, consequentemente, não seria mais degradada pela via da CMA. Isso poderia fazer com que ela persista mais tempo no citosol do que o normal, aumentando o risco de acúmulo e agregação — especialmente se essa proteína já apresentasse tendência a se dobrar incorretamente por outras razões.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "mutação",
+        "homeostase"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-07-006-03-fc04",
+      "tipo": "por_que",
+      "pergunta": "Por que a proteína-alvo precisa estar desenovelada para atravessar o receptor LAMP2A?",
+      "resposta": "O canal formado pelo complexo multimérico de LAMP2A na membrana lisossomal é estreito e não comporta a passagem de estruturas tridimensionais complexas dobradas em múltiplas camadas. O desenovelamento — transformar a proteína numa cadeia linear — é um pré-requisito físico e não apenas bioquímico para que ela consiga atravessar esse canal estreito rumo ao interior do lisossomo.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "LAMP2A",
+        "translocação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-07-006-03-fc05",
+      "tipo": "clinico",
+      "pergunta": "Por que o declínio da atividade da CMA é associado ao envelhecimento celular e a doenças neurodegenerativas?",
+      "resposta": "Com o envelhecimento, há redução documentada na expressão e na dinâmica do receptor LAMP2A na membrana lisossomal, dificultando a translocação eficiente de proteínas marcadas para degradação. Essa perda de eficiência contribui para o acúmulo progressivo de proteínas potencialmente tóxicas no citosol de células pós-mitóticas, como neurônios, sendo um dos mecanismos estudados na fisiopatologia de doenças como Parkinson.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "envelhecimento",
+        "senescência"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-07-006-03-fc06",
+      "tipo": "armadilha",
+      "pergunta": "Verdadeiro ou falso: como a CMA degrada proteínas marcadas pelo motivo KFERQ, ela é essencialmente o mesmo mecanismo de reconhecimento usado pelo sistema ubiquitina-proteassoma, apenas terminando em compartimentos diferentes. Justifique.",
+      "resposta": "Falso. Embora ambos os sistemas degradem proteínas específicas de forma seletiva, os mecanismos de reconhecimento são completamente distintos e não intercambiáveis. O sistema ubiquitina-proteassoma marca proteínas por meio da adição covalente de cadeias de ubiquitina, reconhecidas pelo proteassoma — uma marcação química pós-traducional adicionada sob demanda. A CMA, ao contrário, reconhece um motivo de sequência de aminoácidos (KFERQ) já embutido na própria estrutura primária da proteína, sem necessidade de marcação adicional — a proteína já 'nasce' com o código de reconhecimento, que apenas precisa ficar exposto para ser detectado.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha-conceitual",
+        "ubiquitina-proteassoma"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-07-006-03-caso01",
+      "titulo": "Declínio cognitivo lentamente progressivo em paciente idosa",
+      "apresentacao": "Mulher de 74 anos é trazida pela família por esquecimentos progressivos ao longo dos últimos 3 anos, inicialmente confundidos com o envelhecimento normal, mas agora afetando sua capacidade de administrar finanças pessoais e reconhecer trajetos familiares. Exame neurológico mostra déficit de memória episódica desproporcional à idade, com preservação relativa de outras funções cognitivas nas fases iniciais. Investigação complementar (incluindo biomarcadores liquóricos e neuroimagem) é compatível com processo neurodegenerativo caracterizado por acúmulo de agregados proteicos extracelulares e intracelulares.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Redução progressiva, associada ao envelhecimento, da expressão e eficiência do receptor LAMP2A nos neurônios, comprometendo a via de autofagia mediada por chaperona ao longo de décadas."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Neurônios corticais e hipocampais, células pós-mitóticas que dependem fortemente de vias de degradação proteica seletiva — incluindo a CMA — para manter a proteostase ao longo da vida, sem poder recorrer à diluição por divisão celular."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Comprometimento da depuração seletiva de proteínas marcadas para descarte, favorecendo o acúmulo progressivo de proteínas mal dobradas e sua agregação em estruturas patológicas dentro e fora dos neurônios."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Declínio cognitivo lentamente progressivo, com comprometimento inicial predominante da memória episódica, refletindo a disfunção e perda gradual de neurônios em regiões relacionadas à formação de memórias."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Progressão para comprometimento funcional mais amplo ao longo dos anos, compatível com quadro demencial neurodegenerativo. O tratamento disponível é sintomático e de suporte, sem terapia capaz de reverter a neurodegeneração já estabelecida."
+        }
+      ],
+      "conexao_com_bloco": "O caso conecta diretamente o mecanismo estudado no bloco — o declínio da atividade de CMA associado ao envelhecimento e à redução de LAMP2A — a um quadro clínico concreto de doença neurodegenerativa, ilustrando por que compreender a seletividade e os limites dessa via de reciclagem proteica é relevante para entender a fisiopatologia de demências.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "neurologia",
+        "geriatria"
+      ],
+      "diagnostico_revelado": "Quadro demencial neurodegenerativo compatível com doença de Alzheimer",
+      "tratamento_resumido": "Tratamento sintomático com inibidores da colinesterase e, conforme estágio, memantina; suporte multidisciplinar para o paciente e a família; pesquisa em andamento sobre terapias que visem restaurar ou potencializar vias de depuração proteica, incluindo a CMA."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-07-006",
+        "titulo": "Autofagia como Sobrevivência e Morte — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Compreender o papel geral do lisossomo e da autofagia como sistema de degradação celular é a base necessária para entender por que a CMA existe como uma via seletiva adicional."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Doenças neurodegenerativas",
+        "disciplina": "neurologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "O acúmulo de proteínas mal enoveladas que falharam em ser degradadas pela via de CMA está na base patogênica proposta para doenças como Parkinson e Alzheimer.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Moduladores farmacológicos da CMA",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "Estratégias experimentais que aumentam a expressão de LAMP2A são estudadas como forma de acelerar a depuração de proteínas agregadas em modelos de doença neurodegenerativa.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Proteostase e envelhecimento celular",
+        "disciplina": "geriatria",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "O declínio da CMA com a idade é um dos pilares moleculares propostos para explicar o processo de senescência celular em tecidos pós-mitóticos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-07-006-01",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Enquanto a macroautofagia engloba volumes inteiros de citoplasma numa vesícula de dupla membrana, a CMA reconhece e transloca proteínas individuais marcadas pelo motivo KFERQ, sem formar vesícula intermediária."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-07-006-03",
   "no_pai_id": "s1-biocel-07-006",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Autofagia Mediada por Chaperona",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Reconhecimento de motivo KFERQ e LAMP2A",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

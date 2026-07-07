@@ -1,54 +1,272 @@
 {
+  "metadata": {
+    "titulo": "Ribossomos",
+    "subtitulo": "Como uma máquina sem olhos consegue ler uma mensagem e construir uma proteína certa, aminoácido por aminoácido?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 13,
+    "nivel": "CORE",
+    "tags": [
+      "tradução",
+      "síntese proteica",
+      "RNA ribossômico",
+      "antibióticos"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "O RNA mensageiro carrega uma sequência linear de códons, mas sozinho ele não constrói nada: falta uma máquina capaz de ler essa sequência, reconhecer cada trinca de bases e encontrar o aminoácido correspondente entre vinte possibilidades diferentes, unindo-os em ordem exata. Essa máquina é o ribossomo — não uma organela membranosa, mas um complexo formado por duas subunidades de proteína e RNA ribossômico, que se juntam ao redor da fita de mRNA apenas durante a tradução. Dentro dele, três sítios (A, P e E) organizam o fluxo ordenado de RNAs transportadores entrando, entregando seu aminoácido e saindo, enquanto a própria porção de RNA ribossômico — não uma proteína — cataliza a formação de cada nova ligação peptídica, um fato que torna o ribossomo uma ribozima e reforça a hipótese de que o RNA antecedeu as proteínas na história evolutiva da vida. A diferença estrutural entre o ribossomo bacteriano e o humano é, ainda hoje, o alvo seletivo de uma classe inteira de antibióticos.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em uma fita de legendas correndo na tela de um cinema, escrita em um alfabeto totalmente desconhecido para você. Mesmo que você conseguisse enxergar cada símbolo perfeitamente, isso não adiantaria nada sem um tradutor simultâneo capaz de reconhecer cada grupo de símbolos, identificar seu significado exato e pronunciá-lo em voz alta, na ordem correta, palavra após palavra, sem pausas nem erros."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que uma mensagem de RNA, sozinha, não constrói nenhuma proteína?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O RNA mensageiro carrega a sequência de códons que especifica uma proteína, mas ele é, em si, apenas informação linear — uma fita de instruções sem qualquer capacidade própria de interpretar seu próprio conteúdo. Alguém, ou melhor, alguma máquina, precisa ler essa sequência de três em três nucleotídeos, reconhecer qual aminoácido cada códon representa entre vinte possibilidades diferentes, e unir esses aminoácidos em uma cadeia contínua, na ordem exata ditada pela mensagem."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse processo de conversão — de uma linguagem de nucleotídeos para uma linguagem de aminoácidos — exige uma estrutura com duas capacidades muito diferentes ao mesmo tempo: uma face capaz de segurar e percorrer a fita de mRNA sem perder o quadro de leitura, e outra face capaz de catalisar quimicamente a ligação entre aminoácidos consecutivos."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fica registrado o problema: é preciso uma máquina que leia o código de três em três letras e catalise, com precisão química, a formação de uma cadeia de aminoácidos na ordem exata especificada pela mensagem. Vamos ver a solução que a evolução encontrou."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: uma máquina de duas partes, feita majoritariamente de RNA"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é o ribossomo: um complexo macromolecular, não uma organela membranosa, formado por duas subunidades — uma maior e uma menor — que se unem especificamente ao redor de uma fita de mRNA no momento em que a tradução vai começar, e se separam novamente quando ela termina."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Feito de RNA ribossômico (rRNA) e de proteínas estruturais, o ribossomo guarda uma surpresa: a atividade catalítica que efetivamente forma cada nova ligação peptídica entre aminoácidos consecutivos é realizada pelo próprio RNA ribossômico da subunidade maior — não por nenhuma das proteínas do complexo. Uma molécula de RNA com função de enzima recebe um nome especial: ribozima."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O ribossomo é, no fundo, uma ribozima: quem cataliza a formação da ligação peptídica é o RNA ribossômico, não as proteínas do complexo. Esse fato reforça a hipótese de que, na origem da vida, o RNA pode ter funcionado tanto como carregador de informação quanto como catalisador, antes de as proteínas assumirem grande parte do papel catalítico nas células modernas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o ribossomo organiza o fluxo de tRNAs internamente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Dentro do ribossomo montado, existem três sítios funcionais cruciais, dispostos em sequência para garantir que a montagem da cadeia aconteça de forma ordenada e sempre na mesma direção. O sítio A (aminoacil) é onde um novo tRNA, carregando seu aminoácido correspondente, entra e se pareia com o códon exposto do mRNA. O sítio P (peptidil) é onde fica o tRNA que já está segurando a cadeia polipeptídica em formação. O sítio E (exit) é a via de saída, por onde o tRNA já descarregado de seu aminoácido deixa o ribossomo."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Um ciclo de adição de aminoácido, sítio por sítio",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Chegada ao sítio A",
+          "explicacao": "Um tRNA carregado com seu aminoácido específico entra no sítio A, pareando seu anticódon com o códon correspondente exposto na fita de mRNA naquele momento."
+        },
+        {
+          "numero": 2,
+          "titulo": "Formação da ligação peptídica",
+          "explicacao": "O RNA ribossômico da subunidade maior cataliza a transferência da cadeia polipeptídica em crescimento (presa ao tRNA do sítio P) para o novo aminoácido recém-chegado (preso ao tRNA do sítio A), formando uma nova ligação peptídica."
+        },
+        {
+          "numero": 3,
+          "titulo": "Translocação",
+          "explicacao": "Com gasto de energia (hidrólise de GTP), o ribossomo se move exatamente três nucleotídeos adiante na fita de mRNA. Esse movimento desloca o tRNA que estava no sítio A (agora carregando a cadeia inteira) para o sítio P, e o tRNA que estava no sítio P (agora vazio) para o sítio E."
+        },
+        {
+          "numero": 4,
+          "titulo": "Saída pelo sítio E",
+          "explicacao": "O tRNA vazio, agora no sítio E, se desprende do ribossomo, liberando espaço para que um novo ciclo comece, com um novo tRNA carregado entrando no sítio A que acabou de se esvaziar."
+        }
+      ]
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎪",
+      "conteudo": "Pense em um malabarista de circo que recebe bolas coloridas de um assistente, sempre pela mão direita, e vai passando cada bola já recebida para a mão esquerda antes de pegar a próxima. Esse malabarista não pode receber duas bolas ao mesmo tempo na mesma mão, nem pode passar uma bola adiante antes de tê-la firmemente segurado — existe uma coreografia rígida de posições, uma depois da outra, que garante que nenhuma bola caia ou se perca fora de ordem. Mapeamento: a mão direita, onde a bola chega primeiro = o sítio A, onde entra o novo tRNA carregado; a mão esquerda, que já segura a sequência de bolas anteriores = o sítio P, onde fica o tRNA com a cadeia polipeptídica em formação; o gesto de soltar a bola vazia depois de repassá-la = o sítio E, por onde sai o tRNA já descarregado; o ritmo constante do malabarismo, uma bola de cada vez, na ordem certa = a translocação do ribossomo, avançando exatamente três nucleotídeos por vez ao longo do mRNA."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma diferença estrutural que vira alvo terapêutico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os ribossomos bacterianos (chamados 70S) têm composição e estrutura suficientemente diferentes dos ribossomos das células humanas (chamados 80S) para que diversas classes de antibióticos consigam atingir seletivamente a maquinaria de tradução bacteriana, interrompendo a síntese proteica do patógeno sem comprometer de forma proibitiva a tradução nas células do próprio paciente. É essa diferença estrutural — nas subunidades, nas proteínas associadas, na sequência do rRNA — que torna o ribossomo um dos alvos farmacológicos mais explorados na história da antibioticoterapia."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "ribossomo",
+      "origem": "de ribo (referência ao ácido ribonucleico) + grego sôma (corpo)",
+      "significado": "literalmente, 'corpo de ácido ribonucleico'",
+      "explicacao": "O nome foi cunhado na década de 1950, quando essas partículas densas foram visualizadas pela primeira vez ao microscópio eletrônico como pequenos 'corpos' granulares associados ao retículo endoplasmático. À época, ainda não se sabia que a atividade catalítica central dessas partículas viria do próprio RNA ribossômico — essa descoberta, que rendeu o Prêmio Nobel de Química de 2009, veio décadas depois. O nome descreve a composição observada (um corpo rico em RNA), não a função catalítica surpreendente que só seria compreendida muito mais tarde."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o ribossomo não possuísse a capacidade de translocação — o movimento que o desloca exatamente três nucleotídeos adiante na fita de mRNA a cada ciclo —, o que aconteceria com a síntese proteica?",
+      "resposta": "A síntese proteica pararia logo após o primeiro ou segundo aminoácido ser incorporado. A translocação é o movimento essencial que expõe o próximo códon da fita de mRNA ao sítio A, permitindo que o ciclo de reconhecimento e ligação se repita. Sem ela, o ribossomo ficaria fisicamente preso na mesma posição da fita, incapaz de processar o restante da mensagem — resultando em polipeptídeos extremamente curtos, incompletos e, na imensa maioria dos casos, completamente inúteis para a função que a proteína deveria exercer."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Arquitetura do Ribossomo em Ação",
+      "descricao": "Esquema mostrando a subunidade maior e a subunidade menor do ribossomo acopladas ao redor de uma fita de RNA mensageiro. Destaque para os três sítios A, P e E, cada um ocupado por um tRNA em uma etapa diferente do ciclo de tradução.",
+      "prompt_ia": "Scientific vector illustration, adaptive neutral background, ribosome complex with large and small subunits clamping an mRNA strand, three tRNA molecules positioned in the A, P and E sites at different stages of the elongation cycle, portuguese labels for each site, clean didactic vector style, no photorealistic textures",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-08-003-02-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual a diferença funcional entre os sítios A, P e E do ribossomo?",
+      "resposta": "O sítio A (aminoacil) recebe o novo tRNA carregado com seu aminoácido, pareando-o com o códon exposto no mRNA. O sítio P (peptidil) mantém o tRNA que carrega a cadeia polipeptídica em crescimento. O sítio E (exit) é o local de saída do tRNA que já transferiu seu aminoácido e está descarregado, permitindo que ele se desprenda do ribossomo para um novo ciclo começar.",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "ribossomo",
+        "tradução"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-003-02-fc02",
+      "tipo": "clinico",
+      "pergunta": "Como a diferença estrutural entre ribossomos bacterianos (70S) e eucarióticos (80S) é explorada clinicamente pela antibioticoterapia?",
+      "resposta": "Antibióticos como as tetraciclinas e os aminoglicosídeos se ligam especificamente a componentes das subunidades do ribossomo bacteriano 70S, inibindo etapas da síntese proteica bacteriana, sem se ligar de forma significativa ao ribossomo eucariótico 80S das células do paciente. Essa diferença estrutural entre as duas máquinas de tradução é exatamente o que permite a seletividade terapêutica — atacar o patógeno sem comprometer, de forma proibitiva, a tradução do hospedeiro.",
+      "dificuldade": 3,
+      "nivel_alvo": 5,
+      "tags": [
+        "antibióticos",
+        "farmacologia"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-003-02-fc03",
+      "tipo": "por_que",
+      "pergunta": "Por que o ribossomo é classificado como uma ribozima?",
+      "resposta": "Porque a catálise química da ligação peptídica entre aminoácidos consecutivos é realizada pela porção de RNA ribossômico (rRNA) da subunidade maior, e não por nenhuma proteína estrutural do complexo. Uma molécula de RNA que exerce atividade catalítica, como uma enzima faria, recebe o nome de ribozima — e o ribossomo é o exemplo mais importante e mais estudado desse fenômeno em toda a biologia celular.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "ribozima",
+        "evolução"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-003-02-fc04",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se a subunidade menor do ribossomo fosse removida logo no início da tradução, antes da formação do complexo completo?",
+      "resposta": "O RNA mensageiro não seria reconhecido ou posicionado corretamente para o início da leitura. A subunidade menor é essencial para o reconhecimento do códon de iniciação e para garantir a fidelidade do pareamento entre códon e anticódon ao longo de toda a tradução — sem ela, a subunidade maior sozinha não teria como se posicionar corretamente sobre a mensagem, e a tradução simplesmente não começaria.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "tradução",
+        "iniciação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-003-02-fc05",
+      "tipo": "armadilha",
+      "pergunta": "Verdadeiro ou falso, e justifique: 'o ribossomo é uma organela celular delimitada por membrana, semelhante à mitocôndria.'",
+      "resposta": "Falso. O ribossomo não possui membrana própria e não é classificado como organela membranosa — ele é um complexo macromolecular formado por RNA ribossômico e proteínas, que se monta e se desmonta dinamicamente ao redor da fita de mRNA conforme a necessidade de tradução. Ribossomos podem ser encontrados livres no citoplasma ou associados à face externa do retículo endoplasmático rugoso, mas em nenhum dos dois casos existe uma membrana delimitando o próprio ribossomo, ao contrário de organelas como mitocôndrias, lisossomos ou o próprio retículo endoplasmático.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "ribossomo",
+        "armadilha-conceitual"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-08-003-02-caso01",
+      "titulo": "Melhora clínica de infecção grave após troca de antibiótico",
+      "apresentacao": "Mulher de 71 anos, internada por infecção urinária complicada evoluindo para sepse, apresenta piora clínica apesar de antibioticoterapia inicial com beta-lactâmico. A cultura de urina identifica bactéria gram-negativa resistente a essa classe de antibióticos. A equipe médica troca o esquema para um aminoglicosídeo, associado a outro antimicrobiano. Em 72 horas, a paciente apresenta melhora progressiva dos parâmetros infecciosos e da função renal.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Administração de um antibiótico aminoglicosídeo, que se liga especificamente à subunidade menor (30S) do ribossomo bacteriano, interferindo na leitura correta do código genético pela bactéria."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O ribossomo bacteriano completo (70S), especificamente sua subunidade menor, responsável por garantir o pareamento fiel entre o códon do mRNA e o anticódon do tRNA durante a tradução."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a subunidade 30S bloqueada, o pareamento entre códon e anticódon se torna impreciso, causando tanto o bloqueio direto da progressão da tradução quanto a incorporação de aminoácidos incorretos em algumas proteínas bacterianas recém-sintetizadas, comprometendo sua função."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Interrupção da síntese proteica essencial da bactéria, levando à parada do seu crescimento e multiplicação, o que se traduz clinicamente na queda progressiva da carga bacteriana e na melhora dos sinais de infecção sistêmica na paciente."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Resolução progressiva do quadro séptico, com melhora dos parâmetros clínicos e laboratoriais, desde que a bactéria seja sensível ao aminoglicosídeo escolhido e a função renal da paciente seja monitorada de perto, já que essa classe de antibióticos tem potencial de toxicidade renal e auditiva que exige ajuste cuidadoso de dose."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente como a estrutura íntima do ribossomo, descrita neste bloco — suas subunidades, seus sítios funcionais, o pareamento preciso entre códon e anticódon — não é apenas um detalhe de biologia celular, mas o alvo molecular exato de uma classe inteira de antibióticos amplamente utilizados na prática clínica para infecções graves.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "farmacologia",
+        "microbiologia",
+        "medicina intensiva"
+      ],
+      "diagnostico_revelado": "Sepse de origem urinária por bactéria gram-negativa resistente a beta-lactâmico, tratada com aminoglicosídeo (inibidor da subunidade 30S do ribossomo bacteriano).",
+      "tratamento_resumido": "Antibioticoterapia direcionada com aminoglicosídeo, geralmente em combinação com outro antimicrobiano para ampliar cobertura e reduzir risco de resistência, suporte hemodinâmico conforme gravidade da sepse, e monitoramento seriado da função renal e auditiva durante o tratamento, dado o potencial de nefrotoxicidade e ototoxicidade dessa classe."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-08-002",
+        "titulo": "Transcrição — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É impossível entender a leitura do mRNA pelo ribossomo sem compreender primeiro como esse mRNA foi produzido a partir do DNA durante a transcrição."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "topico": "Mecanismos de resistência antibiótica",
+        "disciplina": "microbiologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Bactérias podem modificar a estrutura do rRNA ou das proteínas ribossômicas para evitar a ligação de antibióticos, um dos principais mecanismos de resistência antimicrobiana.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "topico": "Origem do RNA e hipótese do mundo de RNA",
+        "disciplina": "biologia evolutiva",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "O fato de o ribossomo ser uma ribozima sustenta a hipótese de que o RNA precedeu as proteínas como molécula catalisadora na origem da vida.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-08-003-01",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "O código genético, com seus 64 códons e sua degeneração, é exatamente o que o ribossomo lê e interpreta durante a tradução, através do pareamento entre códon e anticódon."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-08-003-02",
   "no_pai_id": "s1-biocel-08-003",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Ribossomos",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Subunidades, sítios A/P/E e alvo de antibióticos",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
+    "nivel_confianca": "estudo"
+  }
 }

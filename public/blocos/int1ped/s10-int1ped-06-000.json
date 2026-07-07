@@ -7,53 +7,145 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Análise de erro e near-miss na Pediatria",
+    "titulo": "Análise de Erro e Near-Miss na Pediatria",
+    "subtitulo": "Por que um erro de mg/kg pede uma análise ainda mais cuidadosa do que o erro equivalente em adulto?",
     "semestre": 10,
     "disciplina": "Estágio em Pediatria",
+    "modulo": 6,
+    "topico": 0,
     "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1ped",
-      "esqueleto"
+    "lentes": [
+      "seguranca_paciente",
+      "honestidade_epistemica",
+      "comunicacao"
     ],
+    "tipo_conteudo": "visao_geral",
+    "status": "publicado",
+    "data_criacao": "2026-07-05",
+    "data_revisao": "2026-07-05",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
+    "tempo_estudo_minutos": 7,
+    "palavras_chave": [
+      "near-miss",
+      "erro de dose",
+      "cultura justa",
+      "pediatria",
+      "disclosure"
+    ],
     "formato_internato": "visao_geral"
   },
-  "resumo_conciso": "Módulo da pedagogia do erro específica da criança",
-  "narrativa": [],
+  "resumo_conciso": "A mesma cultura justa e o mesmo modelo do queijo suíço do módulo equivalente de Medicina Interna se aplicam aqui — mas em pediatria, o erro mais comum e mais grave tem uma origem estrutural específica: o cálculo por peso, onde uma casa decimal deslocada multiplica a dose, e o dano potencial escala junto.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacêutica liga para a enfermaria: \"confere essa prescrição — a dose de dipirona para essa criança de 9 kg está calculada para uma de 90\". Ninguém administrou ainda. A criança está bem. Mas o interno que prescreveu sente o estômago revirar, porque entende, na hora, que o erro poderia ter passado — e que em pediatria, ao contrário do adulto, o erro de mg/kg não é um desvio pequeno: é uma multiplicação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A mesma cultura justa, com um alvo estrutural específico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você já conhece o princípio central da análise de erro sem culpa: perguntar quais barreiras do sistema falharam, não quem é o culpado (modelo do queijo suíço, apresentado no módulo equivalente de Medicina Interna). Em pediatria, esse princípio permanece igual — mas o ponto estrutural onde o sistema costuma falhar é diferente: erros de dosagem são, segundo revisões de epidemiologia de erro de medicação pediátrica, o tipo mais comum de erro do processo, e o cálculo por peso é uma das etapas que mais contribui para isso, porque exige uma conversão que o adulto não exige — e é nessa conversão que a vírgula decimal costuma escorregar."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Um near-miss de dose pediátrica não relatado é particularmente perigoso porque o mesmo cálculo (a mesma etapa de conversão por peso) provavelmente vai se repetir várias vezes ao dia, para pacientes diferentes — a falha sistêmica que quase passou dessa vez continua ativa para a próxima criança."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Guarde: em pediatria, o mesmo rigor de cultura justa se aplica — o objetivo nunca é encontrar quem calculou errado, é entender por que o sistema de dupla checagem não capturou o erro antes, e o que muda nisso."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os dois blocos deste módulo cobrem: a análise sistêmica de um near-miss de dose por peso (o protótipo é o caso da dipirona), e como comunicar, tanto à família quanto à equipe, um sinal de gravidade que passou despercebido por mais tempo do que deveria — sem minimizar o ocorrido nem se autopunir diante dos pais."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1mi-06-000",
+        "titulo": "Análise de Erro e Near-Miss",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s10-int1ped-00-001",
+        "titulo": "Estágio em Pediatria — o interno diante da criança que não fala",
+        "disciplina": "Estágio em Pediatria",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1ped-06-001",
+        "titulo": "Near-miss de dose por peso: o erro de mg/kg que quase saiu da bomba",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Primeiro bloco do módulo — desenvolve o caso da dipirona citado aqui com a análise sistêmica completa."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1ped-06-000-001",
+      "tipo": "por_que",
+      "pergunta": "Por que o cálculo de dose por peso é apontado como um dos pontos de maior risco de erro de medicação em pediatria?",
+      "resposta": "Porque, diferente do adulto (onde a dose costuma ser padronizada), toda prescrição pediátrica exige uma etapa extra de cálculo — multiplicar a dose por quilograma de peso. Essa etapa adicional é um ponto de falha que não existe na prescrição do adulto, e um erro nela (como uma casa decimal deslocada) pode multiplicar a dose administrada por dez, ampliando o dano potencial proporcionalmente. Erros de dosagem, de forma geral, são apontados por revisões de epidemiologia como o tipo mais comum de erro de medicação em pediatria.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "pediatria",
+        "analise_erro",
+        "prescricao"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Bloco sobre cultura justa e análise sistêmica de erro/near-miss em pediatria — trata de processo organizacional de segurança do paciente, não de uma estrutura anatômica ou doença específica com cascata fisiopatológica própria a ser reconstruída pelo leitor."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "seguranca_paciente",
-    "honestidade_epistemica",
-    "comunicacao"
+  "fontes": [
+    {
+      "tipo": "artigo",
+      "titulo": "Medication errors in paediatric care: a systematic review of epidemiology and an evaluation of evidence supporting reduction strategy recommendations",
+      "autores": "Miller MR, Robinson KA, Lubomski LH, et al.",
+      "ano": 2007,
+      "publicacao": "Quality and Safety in Health Care"
+    },
+    {
+      "tipo": "diretriz",
+      "titulo": "A Just Culture Guide",
+      "autores": "Institute for Safe Medication Practices (ISMP)",
+      "ano": 2019
+    },
+    {
+      "tipo": "diretriz",
+      "titulo": "High-Alert Medications in Pediatric and Neonatal Care Settings",
+      "autores": "Institute for Safe Medication Practices (ISMP)",
+      "ano": 2021
+    }
   ]
 }

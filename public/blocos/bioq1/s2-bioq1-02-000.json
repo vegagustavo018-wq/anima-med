@@ -16,7 +16,8 @@
     "data_criacao": "2026-07-03",
     "data_atualizacao": "2026-07-03",
     "versao_schema": "3.0",
-    "autor": "Claude Opus 4.7"
+    "autor": "Claude Opus 4.7",
+    "titulo": "Carboidratos: Energia e Estrutura Celular"
   },
   "resumo_conciso": "Carboidratos parecem simples — carbono + água, literalmente (CHnO2n fórmula geral). Mas resolvem dois problemas biológicos radicalmente diferentes. Primeiro: como armazenar energia solar (glicose captura luz via fotossíntese). Segundo: como construir estrutura celular (celulose na planta, quitina no inseto, ácido hialurônico em animal). Carbs podem ser mono (uma molécula de açúcar, glicose), di (duas, sacarose), ou poli (cadeias imensas). Cada forma tem trabalho específico. Glicose é moeda energética — queimada em mitocôndria para ATP. Amido é depósito (planta) ou glicogênio (animal). Celulose é construção (planta). Neste bloco, entendemos como a mesma fórmula química (carbono + água) resolveu dois problemas completamente diferentes apenas trocando a forma de encadeamento.",
   "narrativa": [
@@ -89,32 +90,28 @@
     }
   ],
   "conexoes": {
-    "prerequisitos": [
-      {
-        "id": "s2-bioq0-02-000",
-        "titulo": "Estrutura da Água e Ligações Químicas",
-        "tipo": "fundamental",
-        "descricao": "Compreender ligações covalentes e condensação é essencial para entender como monômeros de glicose se ligam."
-      }
-    ],
+    "prerequisitos": [],
     "futuras": [
       {
         "id": "s2-bioq1-03-000",
         "titulo": "Lipídios e Ácidos Graxos",
         "tipo": "MECANISMO_COMPARTILHADO",
-        "descricao": "Carbs armazenam energia a curto prazo; lipídios armazenam a longo prazo — ambos são 'combustível', mas com dinâmicas diferentes."
+        "descricao": "Carbs armazenam energia a curto prazo; lipídios armazenam a longo prazo — ambos são 'combustível', mas com dinâmicas diferentes.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s2-bioq2-03-000",
         "titulo": "Glicólise e Ciclo de Krebs: Metabolismo de Carboidratos",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Glicose é quebrada em glicólise (citoplasma) e Krebs (mitocôndria) para liberar energia em ATP."
+        "descricao": "Glicose é quebrada em glicólise (citoplasma) e Krebs (mitocôndria) para liberar energia em ATP.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s3-fisio-03-100",
         "titulo": "Homeostase Glicêmica: Insulina e Glucagon",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Pâncreas monitora glicose sanguínea; insulina força entrada em células, glucagon força liberação — mantém glicose em faixa 70-100 mg/dL."
+        "descricao": "Pâncreas monitora glicose sanguínea; insulina força entrada em células, glucagon força liberação — mantém glicose em faixa 70-100 mg/dL.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
@@ -122,7 +119,8 @@
         "id": "s1-hist-08-010",
         "titulo": "Célula Vegetal vs. Célula Animal: Diferenças Estruturais",
         "tipo": "CONTEXTO",
-        "descricao": "Plantas acumulam amido (polissacarídio) como energia; animais acumulam glicogênio. Paredes celulares vegetais contêm celulose; animais não têm parede celular."
+        "descricao": "Plantas acumulam amido (polissacarídio) como energia; animais acumulam glicogênio. Paredes celulares vegetais contêm celulose; animais não têm parede celular.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -186,36 +184,37 @@
   ],
   "casos_clinicos": [
     {
-      "id": "caso-bioq1-02-000-001",
+      "caso_id": "caso-bioq1-02-000-001",
       "titulo": "Diabetes Tipo 2: Quando Glicose Não Consegue Entrar em Células",
       "apresentacao": "Paciente, 58 anos, com sobrepeso (IMC 32), apresenta glicose sanguínea 240 mg/dL (normal <100 mg/dL fasting), sensação de formigamento em pés, visão borrada.",
       "cascata": [
         {
-          "etapa": 1,
-          "titulo": "Causa",
-          "conteudo": "Paciente passou décadas ingerindo carboidratos refinados (açúcar, pão branco, bebidas açucaradas). Cada ingestão causa pico de glicose → pâncreas libera insulina → insulina força glicose em células. Repetição crônica causa adaptação: células 'ficam surdas' para insulina (downregulação de receptores GLUT4 na superfície, ou bloqueio downstream) — é resistência à insulina."
+          "etapa": "Causa",
+          "descricao": "Paciente passou décadas ingerindo carboidratos refinados (açúcar, pão branco, bebidas açucaradas). Cada ingestão causa pico de glicose → pâncreas libera insulina → insulina força glicose em células. Repetição crônica causa adaptação: células 'ficam surdas' para insulina (downregulação de receptores GLUT4 na superfície, ou bloqueio downstream) — é resistência à insulina."
         },
         {
-          "etapa": 2,
-          "titulo": "Estrutura — Pâncreas em Trabalho Frenético",
-          "conteudo": "Como células não respondem à insulina normal, glicose sanguínea fica alta. Pâncreas vê glicose alta, pensa 'preciso de mais insulina!' → libera mais. Paciente produz 2x, 3x, 10x insulina normal. Por um tempo, quantidade bruta consegue forçar ALGUMA glicose em células. Mas custo: pâncreas (ilhotas de Langerhans) gasta seus beta-cells, exausta."
+          "etapa": "Estrutura Afetada",
+          "descricao": "Como células não respondem à insulina normal, glicose sanguínea fica alta. Pâncreas vê glicose alta, pensa 'preciso de mais insulina!' → libera mais. Paciente produz 2x, 3x, 10x insulina normal. Por um tempo, quantidade bruta consegue forçar ALGUMA glicose em células. Mas custo: pâncreas (ilhotas de Langerhans) gasta seus beta-cells, exausta."
         },
         {
-          "etapa": 3,
-          "titulo": "Disfunção — Falha Pancreática",
-          "conteudo": "Após anos/décadas de sobre-estimulação, beta-cells morrem (apoptose). Pâncreas não consegue mais produzir insulina em quantidade suficiente. Agora, mesmo pâncreas em overdrive não consegue manter glicose baixa. Glicose sanguínea fica persistentemente alta (150-300 mg/dL)."
+          "etapa": "Disfunção",
+          "descricao": "Após anos/décadas de sobre-estimulação, beta-cells morrem (apoptose). Pâncreas não consegue mais produzir insulina em quantidade suficiente. Agora, mesmo pâncreas em overdrive não consegue manter glicose baixa. Glicose sanguínea fica persistentemente alta (150-300 mg/dL)."
         },
         {
-          "etapa": 4,
-          "titulo": "Sintoma Clínico",
-          "conteudo": "Glicose alta (hiperglicemia) causa: poliúria (rins tentam eliminar glicose, urina em excesso), polidipsia (corpo desidratado, sede intensa), fadiga (células não conseguem energia — glicose não entra apesar de estar abundante no sangue), dormência em pés (neuropatia diabética — glicose alta danifica nervos), visão borrada (glicose afeta cristalino)."
+          "etapa": "Sintoma",
+          "descricao": "Glicose alta (hiperglicemia) causa: poliúria (rins tentam eliminar glicose, urina em excesso), polidipsia (corpo desidratado, sede intensa), fadiga (células não conseguem energia — glicose não entra apesar de estar abundante no sangue), dormência em pés (neuropatia diabética — glicose alta danifica nervos), visão borrada (glicose afeta cristalino)."
         },
         {
-          "etapa": 5,
-          "titulo": "Manejo e Consequência",
-          "conteudo": "Sem intervenção: risco de cetoacidose (corpo começa a queimar gordura em excesso), neuropatia progressiva, insuficiência renal, cegueira, amputação. Com intervenção: dieta baixa em carboidratos (especialmente refinados), exercício (força glicose para dentro de músculos via GLUT4 independente de insulina), perda de peso (adipócitos resistem à insulina; menos gordura = melhor sensibilidade), medicação (metformina reduz produção de glicose pelo fígado; inibidor de SGLT2 força rins a eliminar glicose). Se detectado cedo e tratado agressivamente: reversão parcial de resistência à insulina possível. Se negligenciado: progressão para diabetes tipo 1 (insulina-dependente)."
+          "etapa": "Consequência",
+          "descricao": "Sem intervenção: risco de cetoacidose (corpo começa a queimar gordura em excesso), neuropatia progressiva, insuficiência renal, cegueira, amputação. Com intervenção: dieta baixa em carboidratos (especialmente refinados), exercício (força glicose para dentro de músculos via GLUT4 independente de insulina), perda de peso (adipócitos resistem à insulina; menos gordura = melhor sensibilidade), medicação (metformina reduz produção de glicose pelo fígado; inibidor de SGLT2 força rins a eliminar glicose). Se detectado cedo e tratado agressivamente: reversão parcial de resistência à insulina possível. Se negligenciado: progressão para diabetes tipo 1 (insulina-dependente)."
         }
-      ]
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Bioquímica"
+      ],
+      "diagnostico_revelado": "Diabetes Tipo 2: Quando Glicose Não Consegue Entrar em Células",
+      "tratamento_resumido": "Mudança de estilo de vida (dieta, atividade física) associada a metformina como primeira linha farmacológica; outros hipoglicemiantes ou insulina conforme progressão da doença."
     }
   ],
   "midia": [

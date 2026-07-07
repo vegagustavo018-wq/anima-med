@@ -5,50 +5,348 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Excreção Biliar e Circulação Êntero-hepática",
+    "subtitulo": "Por que um fármaco que já saiu do sangue às vezes volta a entrar?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
     "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "excrecao",
+      "biliar",
+      "entero-hepatica",
+      "adme"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Bile, recirculação, prolongamento de efeito; outras vias (pulmão, leite)",
-  "narrativa": [],
+  "resumo_conciso": "O bloco-pai já mostrou que o rim é a via principal de saída dos fármacos, mas citou de passagem uma segunda rota: a via biliar. Ela existe porque o fígado, além de metabolizar fármacos, também os lança direto na bile — um líquido feito para carregar substâncias do sangue até o intestino, de onde normalmente seguem para as fezes. O problema é que o intestino nem sempre deixa esse fármaco ir embora: algumas moléculas, sobretudo as conjugadas com ácido glicurônico, são desfeitas por bactérias intestinais e a molécula original, agora livre e lipossolúvel de novo, atravessa a parede intestinal e volta para o sangue pela veia porta. Esse looping — fígado, bile, intestino, sangue, fígado de novo — é a circulação êntero-hepática, e o efeito prático dela é prolongar a permanência do fármaco no corpo, às vezes por dias, sem que nenhuma dose adicional tenha sido tomada. Reconhecer esse mecanismo explica por que alguns fármacos têm meia-vida mais longa do que o metabolismo hepático isolado previria, por que antibióticos podem alterar a farmacocinética de certos medicamentos ao mudar a microbiota que faz esse ciclo funcionar, e por que a bile também é uma via de saída para substâncias grandes que o rim não consegue filtrar.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior deixou uma pista solta: além do rim, existe uma via biliar de excreção, mencionada como secundária e menos previsível. Essa via merece um olhar mais de perto — não porque seja tão importante quanto o rim na maioria dos fármacos, mas porque ela esconde um comportamento que o rim não tem: a capacidade de devolver ao sangue algo que já tinha sido dado como eliminado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que o fígado precisa de uma segunda porta de saída"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O rim é excelente para descartar moléculas pequenas e hidrossolúveis dissolvidas no plasma. Mas nem todo fármaco metabolizado se encaixa nesse perfil. Alguns metabólitos, especialmente os conjugados a moléculas grandes como o ácido glicurônico, ficam volumosos demais ou presos a proteínas de um jeito que dificulta a filtração glomerular eficiente. O fígado, que já processou essas moléculas, tem uma segunda opção de descarte à mão: lançá-las diretamente na bile, o líquido que ele mesmo produz e que já tem a função natural de carregar substâncias do sangue para o intestino, de onde seguem para fora do corpo pelas fezes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ou seja, a via biliar não é uma invenção nova — é o mesmo raciocínio da excreção renal, reaproveitando uma rota que o corpo já tinha para outro propósito. O rim reaproveita a filtração que elimina ureia; o fígado reaproveita a bile que normalmente carrega sais biliares e bilirrubina."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: a via biliar existe porque nem todo metabólito hepático é um bom candidato à filtração renal. O fígado descarta pela bile o que já processou, usando uma rota que já existia para outros fins."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o intestino pode desfazer o trabalho do fígado"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Aqui está o ponto que torna esse tema mais do que uma nota de rodapé sobre a via renal. Quando o metabólito conjugado chega ao intestino pela bile, ele encontra um ambiente cheio de bactérias — a microbiota intestinal. Muitas dessas bactérias produzem enzimas, como a beta-glicuronidase, capazes de quebrar a ligação que o fígado tinha criado entre o fármaco e o ácido glicurônico. Essa quebra devolve o fármaco à sua forma original, lipossolúvel — a mesma forma que ele tinha antes de ser metabolizado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma molécula lipossolúvel atravessa a parede intestinal com facilidade, sem precisar de transportador especial. Ela entra na circulação porta, passa de novo pelo fígado e volta a circular no corpo — como se nunca tivesse sido excretada. Esse ciclo fechado, em que o fármaco sai do fígado, passa pelo intestino e retorna ao sangue, é a **circulação êntero-hepática**."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A circulação êntero-hepática não é uma falha do sistema — é uma consequência previsível de duas coisas acontecendo em sequência: o fígado conjuga para facilitar o descarte, e bactérias intestinais desconjugam antes que o descarte se complete."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que esse ciclo é feito, em detalhe"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Três elementos moleculares sustentam o ciclo. Primeiro, o **conjugado glicurônico**: a maioria dos fármacos que faz esse percurso foi metabolizada no fígado por glicuronidação — reação de fase II que junta ácido glicurônico ao fármaco (ou ao seu metabólito de fase I) para aumentar sua hidrossolubilidade. Segundo, os **transportadores biliares**, proteínas na membrana canalicular do hepatócito que bombeiam ativamente esse conjugado para dentro da bile — sem esse transporte ativo, a molécula ficaria presa dentro da célula hepática. Terceiro, a **beta-glicuronidase bacteriana**, enzima produzida por diversas espécies da microbiota intestinal, capaz de hidrolisar especificamente a ligação glicuronídica e liberar o fármaco livre."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa dependência da microbiota é o elo mais frágil e mais clinicamente relevante da cadeia: sem bactérias produtoras de beta-glicuronidase, o conjugado simplesmente segue para as fezes e é eliminado — não há reabsorção, não há ciclo. A circulação êntero-hepática, portanto, depende tanto da bioquímica do fígado quanto da composição da microbiota intestinal do paciente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o ciclo se desenrola, passo a passo"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Circulação êntero-hepática de um fármaco conjugado",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Conjugação hepática",
+          "explicacao": "O fígado metaboliza o fármaco por glicuronidação, produzindo um conjugado hidrossolúvel — o mesmo processo descrito no bloco de metabolismo, agora direcionado à bile em vez do sangue."
+        },
+        {
+          "numero": 2,
+          "titulo": "Secreção biliar",
+          "explicacao": "Transportadores ativos na membrana do hepatócito bombeiam o conjugado para dentro dos canalículos biliares, que drenam para a vesícula e, dali, para o duodeno junto com a bile."
+        },
+        {
+          "numero": 3,
+          "titulo": "Chegada ao intestino",
+          "explicacao": "O conjugado segue pelo intestino delgado. Se não sofrer nenhuma alteração, continua até o intestino grosso e é eliminado nas fezes — fim de trajeto, sem retorno."
+        },
+        {
+          "numero": 4,
+          "titulo": "Desconjugação bacteriana",
+          "explicacao": "Bactérias da microbiota intestinal, especialmente no cólon, produzem beta-glicuronidase e quebram a ligação entre o fármaco e o ácido glicurônico, liberando o fármaco original, lipossolúvel."
+        },
+        {
+          "numero": 5,
+          "titulo": "Reabsorção intestinal",
+          "explicacao": "Sendo lipossolúvel, o fármaco livre atravessa facilmente a mucosa intestinal por difusão passiva, entrando na circulação porta — o mesmo caminho pelo qual nutrientes absorvidos no intestino chegam primeiro ao fígado."
+        },
+        {
+          "numero": 6,
+          "titulo": "Retorno à circulação sistêmica",
+          "explicacao": "O fígado recebe de volta o fármaco pela veia porta e pode metabolizá-lo novamente ou deixá-lo passar para a circulação sistêmica, reiniciando o ciclo ou permitindo, enfim, sua eliminação renal."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada volta desse ciclo atrasa a eliminação definitiva do fármaco. É por isso que alguns medicamentos permanecem ativos no corpo por muito mais tempo do que sua taxa de metabolismo hepático, isoladamente, faria supor: parte da dose está sendo reciclada em vez de eliminada na primeira passagem."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse ciclo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A circulação êntero-hepática conecta diretamente três elos já vistos: o metabolismo de fase II (glicuronidação), a fisiologia biliar e intestinal (estudada em Fisiologia e Anatomia) e a farmacocinética populacional — já que a composição da microbiota intestinal varia entre pacientes e influencia diretamente quanto desse ciclo realmente ocorre."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A ponte clínica mais citada é a **interação entre antibióticos de amplo espectro e contraceptivos orais combinados**: o etinilestradiol é metabolizado por glicuronidação hepática e depende, em parte, da circulação êntero-hepática para manter seus níveis plasmáticos eficazes ao longo do ciclo de uso. Antibióticos que reduzem a população bacteriana intestinal produtora de beta-glicuronidase diminuem a desconjugação e, consequentemente, a reabsorção do estrogênio — parte da dose que seria reciclada é perdida nas fezes. [AVISO] A magnitude clínica real dessa interação para a eficácia contraceptiva é debatida na literatura mais recente, que considera o risco pequeno para a maioria dos antibióticos comuns (exceção conhecida: a rifampicina, que reduz a eficácia por indução enzimática hepática, um mecanismo diferente e mais robusto). Ainda assim, o raciocínio fisiológico continua sendo ensinado porque ilustra com clareza como um fenômeno intestinal altera a farmacocinética sistêmica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Outra consequência prática: fármacos com circulação êntero-hepática significativa podem ter sua eliminação acelerada pela administração de **carvão ativado em doses repetidas**, que adsorve o fármaco livre no intestino antes que ele seja reabsorvido — estratégia usada em algumas intoxicações para 'interceptar' o ciclo e forçar a eliminação fecal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "êntero-hepática",
+      "origem": "do grego énteron (intestino) + hêpar/hêpatos (fígado), unidos pelo termo circulação",
+      "significado": "literalmente, 'circulação entre o intestino e o fígado'",
+      "explicacao": "O nome descreve exatamente a geografia do fenômeno: uma substância se move do fígado para o intestino (via bile) e do intestino de volta para o fígado (via veia porta), fechando um círculo entre os dois órgãos. Não há metáfora na origem do termo — ao contrário de nomes como 'excreção', cuja etimologia carrega uma imagem indireta (peneirar), aqui o nome é o próprio mapa: basta seguir énteron e hêpar para reconstituir o trajeto todo."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "♻️",
+      "conteudo": "Pense num sistema de devolução de embalagens retornáveis. O fígado 'empacota' o fármaco (conjuga com ácido glicurônico) e o envia para fora pela bile, como uma fábrica despachando um produto embalado para o depósito (o intestino). Só que, no depósito, alguém (as bactérias) abre a embalagem e descobre que o conteúdo ainda é reaproveitável — e o manda de volta para a fábrica pela mesma esteira de transporte (a veia porta) por onde vieram as matérias-primas originais. O produto nunca chega ao destino final (as fezes); ele roda em círculo entre fábrica e depósito até que, em algum momento, uma embalagem realmente lacrada escapa do processo de reabertura e é descartada de vez. A analogia quebra num ponto: numa fábrica real, isso seria um erro logístico a ser corrigido; no corpo, é um mecanismo previsível que depende da população de bactérias no depósito — mudar essa população (com antibióticos) muda quantas embalagens são reabertas."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O ciclo da circulação êntero-hepática",
+      "descricao": "Diagrama circular mostrando, em sentido horário: fígado (hepatócito com seta de conjugação glicurônica) no topo, seta descendo para 'bile/vesícula biliar', seta continuando para 'intestino delgado/duodeno', dentro do intestino um ícone de bactérias com rótulo 'beta-glicuronidase' desfazendo a conjugação, seta de 'fármaco livre (lipossolúvel)' atravessando a parede intestinal, seta ascendente rotulada 'veia porta' retornando ao fígado, fechando o círculo. Uma seta secundária, tracejada e mais fina, sai do intestino diretamente para baixo rotulada 'eliminação fecal (sem retorno)', mostrando o desfecho alternativo quando não há desconjugação. Legendas em português, estilo esquemático de livro didático, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno, formato circular fechado. No topo, ícone de fígado/hepatócito com seta curta rotulada 'conjugação glicurônica'. Seta descendo à direita para ícone de vesícula biliar rotulada 'bile'. Seta continuando para baixo até ícone de intestino delgado (formato tubular enovelado) rotulado 'duodeno/intestino'. Dentro do segmento intestinal, pequenos ícones de bactérias com rótulo 'beta-glicuronidase (microbiota)' e uma seta mostrando a quebra da ligação química (representada por um pequeno esquema molecular simplificado, glicuronídeo se separando do fármaco). Seta ascendente à esquerda do diagrama, rotulada 'veia porta', retornando ao ícone de fígado, fechando o círculo visualmente. Uma seta tracejada secundária saindo do intestino para baixo da imagem, rotulada 'eliminação fecal — sem reabsorção', em tom visualmente esmaecido. Cores consistentes com diagramas anteriores da mesma série, texto em português, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-005",
+        "titulo": "Excreção — A Saída do Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha a via biliar já citada como rota secundária na visão geral da excreção; sem entender que o rim é a via principal e a bile uma alternativa, o ciclo êntero-hepático parece isolado em vez de uma ramificação natural do mesmo problema."
+      },
+      {
+        "bloco_id": "s4-farma1-01-004",
+        "titulo": "Metabolismo (Biotransformação) — Preparar para a Saída (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "O ciclo êntero-hepático depende diretamente da glicuronidação hepática (reação de fase II); sem esse conceito prévio, a etapa de 'conjugação' e sua reversão pelas bactérias intestinais não fazem sentido."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Interações medicamentosas por alteração da microbiota intestinal",
+        "mecanismo_conexao": "O uso de antibióticos de amplo espectro reduz bactérias produtoras de beta-glicuronidase, diminuindo a reabsorção de fármacos com circulação êntero-hepática significativa — princípio que reaparece na avaliação de interações medicamentosas.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "toxicologia",
+        "semestre_futuro": 6,
+        "topico": "Uso de carvão ativado em doses múltiplas em intoxicações",
+        "mecanismo_conexao": "A estratégia de dar carvão ativado repetidamente para 'interceptar' um fármaco durante sua fase intestinal do ciclo êntero-hepático é aplicação direta deste mecanismo em toxicologia clínica.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-005-02-fc01",
+      "pergunta": "Por que o fígado usa a bile como via de excreção para alguns fármacos, em vez de depender apenas do rim?",
+      "resposta": "Porque alguns metabólitos hepáticos, principalmente conjugados a moléculas grandes como o ácido glicurônico, não são bons candidatos à filtração glomerular eficiente. O fígado reaproveita a bile — um líquido que ele já produz para carregar substâncias como sais biliares e bilirrubina até o intestino — como uma segunda rota de descarte para esses metabólitos.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "excrecao-biliar",
+        "conjugacao",
+        "farma1"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-005-02-fc02",
+      "pergunta": "Descreva o ciclo completo da circulação êntero-hepática, do momento em que o fígado conjuga o fármaco até seu possível retorno à circulação sistêmica.",
+      "resposta": "1) O fígado conjuga o fármaco com ácido glicurônico, tornando-o hidrossolúvel. 2) Transportadores ativos na membrana do hepatócito secretam esse conjugado para os canalículos biliares, que drenam para o intestino via bile. 3) No intestino, bactérias da microbiota que produzem beta-glicuronidase quebram a ligação glicuronídica, liberando o fármaco original, lipossolúvel. 4) Esse fármaco livre atravessa a mucosa intestinal por difusão passiva e entra na circulação porta. 5) O sangue porta leva o fármaco de volta ao fígado, que pode metabolizá-lo novamente ou permitir que siga para a circulação sistêmica — reiniciando o ciclo ou, eventualmente, permitindo eliminação renal definitiva.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "excrecao-biliar",
+        "entero-hepatica",
+        "farma1"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-005-02-fc03",
+      "pergunta": "Uma paciente em uso de contraceptivo oral combinado inicia um antibiótico de amplo espectro por uma infecção respiratória. Do ponto de vista da circulação êntero-hepática, por que essa combinação já foi historicamente motivo de alerta, e por que a magnitude desse risco é hoje considerada menor do que se pensava?",
+      "resposta": "O etinilestradiol depende, em parte, da circulação êntero-hepática para manter seus níveis plasmáticos: ele é conjugado no fígado, excretado na bile, desconjugado por bactérias intestinais produtoras de beta-glicuronidase e reabsorvido. Um antibiótico de amplo espectro reduz essa população bacteriana, diminuindo a desconjugação e, portanto, a reabsorção do estrogênio — parte da dose que seria reciclada é perdida nas fezes, teoricamente reduzindo os níveis plasmáticos e a eficácia contraceptiva. [AVISO] A literatura mais recente considera essa interação clinicamente relevante apenas para poucos antibióticos (a rifampicina é a exceção mais robusta, mas por indução enzimática hepática, um mecanismo diferente); para a maioria dos antibióticos comuns, o efeito é considerado pequeno. Ainda assim, orientar sobre método contraceptivo adicional durante o uso de antibióticos permanece uma prática clínica prudente e amplamente adotada.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "excrecao-biliar",
+        "interacao-medicamentosa",
+        "contraceptivo",
+        "farma1"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-005-02-fc04",
+      "pergunta": "Se um paciente tivesse o intestino completamente estéril (sem nenhuma bactéria produtora de beta-glicuronidase), o que aconteceria à circulação êntero-hepática de um fármaco que normalmente depende desse ciclo?",
+      "resposta": "O ciclo simplesmente não ocorreria. Sem bactérias capazes de desconjugar o metabólito glicuronídeo, o fármaco conjugado permaneceria hidrossolúvel e seguiria seu trajeto intestinal até ser eliminado diretamente nas fezes, sem nunca ser reabsorvido pela mucosa intestinal. O fármaco teria uma eliminação mais rápida e previsível — na prática, esse é o mesmo princípio por trás do uso de antibióticos que reduzem a microbiota: quanto menos bactérias desconjugadoras, mais próximo desse cenário de eliminação direta o paciente fica.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "excrecao-biliar",
+        "microbiota",
+        "farma1"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-005-02-fc05",
+      "pergunta": "O termo 'êntero-hepática' vem do grego énteron (intestino) e hêpar (fígado). Por que essa etimologia é incomumente literal, comparada a outros termos farmacológicos como 'excreção'?",
+      "resposta": "'Êntero-hepática' não usa metáfora nenhuma: o nome simplesmente nomeia os dois órgãos entre os quais a substância circula, intestino e fígado, sem recorrer a uma imagem indireta. Já 'excreção' (do latim excernere, 'peneirar para fora') descreve o fenômeno por analogia ao ato de peneirar. A diferença ilustra dois estilos comuns na nomenclatura médica: nomes-mapa, que descrevem geografia ou estrutura diretamente, e nomes-metáfora, que descrevem função por comparação. Reconhecer qual estilo um termo segue ajuda a decodificar nomes desconhecidos no futuro.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "excrecao-biliar",
+        "etimologia",
+        "farma1"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-005-02-caso01",
+      "titulo": "Convulsões recorrentes horas após ingestão intencional de comprimidos anticonvulsivantes",
+      "apresentacao": "Mulher de 27 anos é trazida ao pronto-socorro após ingestão intencional de grande quantidade de comprimidos de carbamazepina, cerca de 4 horas antes da chegada. Inicialmente sonolenta mas responsiva, evolui na sala de emergência com convulsão tônico-clônica generalizada, controlada com benzodiazepínico. Nas horas seguintes, apesar de dose única de carvão ativado administrada na chegada, a paciente apresenta nova flutuação do nível de consciência e um segundo episódio convulsivo, com concentração sérica de carbamazepina permanecendo elevada e até subindo em dosagens seriadas, em vez de declinar de forma constante como se esperaria de uma eliminação simples de primeira ordem.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ingestão maciça de carbamazepina, fármaco lipossolúvel que sofre metabolismo hepático extenso, incluindo conjugação, e que é conhecido por apresentar circulação êntero-hepática relevante — parte do fármaco excretado pela bile é reabsorvida no intestino em vez de ser eliminada definitivamente."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O ciclo fígado-bile-intestino-veia porta-fígado: metabólitos e frações do fármaco original secretados na bile chegam ao intestino, onde a ação de enzimas bacterianas e a própria reabsorção passiva de fármaco livre lipossolúvel permitem seu retorno à circulação porta em vez de seguirem para eliminação fecal."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Em vez de uma curva de declínio previsível de concentração plasmática após a ingestão, a reabsorção contínua pelo ciclo êntero-hepático mantém ou até eleva novamente a concentração sérica de carbamazepina horas depois da dose única inicial de carvão ativado, porque esse carvão em dose única não intercepta o fármaco que continua circulando entre fígado e intestino ao longo do tempo."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Flutuação do nível de consciência e recorrência de crises convulsivas, um padrão incomum e alarmante que não se explicaria por uma farmacocinética de eliminação simples e que levanta a suspeita de um mecanismo de reabsorção contínua."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Reconhecido o padrão como consistente com circulação êntero-hepática significativa, institui-se carvão ativado em doses múltiplas e repetidas, que adsorve continuamente o fármaco livre presente no lúmen intestinal a cada passagem pelo ciclo, interceptando a reabsorção e acelerando a eliminação fecal definitiva. A paciente estabiliza com queda sustentada da concentração sérica nas horas seguintes."
+        }
+      ],
+      "conexao_com_bloco": "O caso aplica diretamente a consequência prática citada no bloco: fármacos com circulação êntero-hepática significativa podem ter sua eliminação acelerada por carvão ativado em doses repetidas, que intercepta o ciclo. A flutuação incomum da concentração sérica, em vez de um declínio simples, é a assinatura clínica de que o fármaco está sendo reciclado entre fígado e intestino, e não apenas eliminado de forma direta.",
+      "disciplinas_relacionadas": ["farmacologia", "toxicologia", "medicina de emergência", "neurologia"],
+      "diagnostico_revelado": "Intoxicação por carbamazepina com padrão de reabsorção intestinal sustentada por circulação êntero-hepática, respondendo a carvão ativado em doses múltiplas.",
+      "tratamento_resumido": "Carvão ativado em doses múltiplas e repetidas para interceptar o ciclo êntero-hepático, suporte de vias aéreas e controle de crises convulsivas com benzodiazepínicos, monitorização seriada de concentração sérica de carbamazepina e de nível de consciência até estabilização, com suporte em unidade de terapia intensiva se necessário."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-005-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 4 — Drug Biotransformation.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 10 — Drug Elimination and Pharmacokinetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

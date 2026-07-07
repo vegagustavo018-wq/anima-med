@@ -4,49 +4,236 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Vaginose Bacteriana — Desequilíbrio da Flora",
+    "titulo": "Vaginose Bacteriana - Desequilibrio da Flora",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "infeccoes-genitais",
+      "ist",
+      "mecanismo",
+      "diagnostico",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Gardnerella, clue cells, critérios de Amsel, KOH positivo; conduta",
-  "narrativa": [],
+  "resumo_conciso": "Vaginose bacteriana é disbiose vaginal com redução de lactobacilos e aumento de anaeróbios, associada a corrimento fino, odor amínico, pH elevado e clue cells; trata-se sintomáticas com metronidazol ou alternativas.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Vaginose bacteriana é disbiose, não inflamação intensa. Ocorre substituição de lactobacilos por comunidade anaeróbia, incluindo Gardnerella vaginalis e outros microrganismos associados a biofilme."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O quadro típico é corrimento fino, homogêneo, branco-acinzentado, com odor de peixe, especialmente após relação sexual ou menstruação. Prurido pode ocorrer, mas não costuma dominar como na candidíase."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os critérios de Amsel exigem três de quatro: corrimento homogêneo, pH acima de 4,5, teste das aminas positivo com KOH e clue cells na microscopia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Clue cells são células epiteliais vaginais recobertas por bactérias, com bordas mal definidas. O escore de Nugent em Gram é referência laboratorial quando disponível."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tratamento é indicado para mulheres sintomáticas. Regimes comuns incluem metronidazol oral por sete dias, metronidazol gel intravaginal ou clindamicina creme, conforme contexto e disponibilidade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Tratar parceiro masculino rotineiramente não reduz recorrência. A orientação inclui evitar duchas vaginais, considerar preservativo durante tratamento e investigar ISTs quando houver risco."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A vaginose importa além do incômodo: associa-se a maior risco de aquisição de ISTs e complicações em alguns contextos ginecológicos e obstétricos."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-05-000",
+        "titulo": "Modulo 5 - Miomatose Uterina e Tumores Benignos",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-022",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Sifilis Genital - Cancro Duro",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-026",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Bartolinite e Abscesso de Bartholin",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-030",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Doenca Inflamatoria Pelvica - Visao de Conjunto",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN"
+      },
+      {
+        "bloco_id": "s7-go1-04-003",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Apresentacao Clinica da Endometriose - As Tres Dismenorreias"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-011-fc-01",
+      "pergunta": "O que é vaginose bacteriana?",
+      "resposta": "Disbiose com redução de lactobacilos e aumento de anaeróbios vaginais.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-011-fc-02",
+      "pergunta": "Quais são os critérios de Amsel?",
+      "resposta": "Corrimento homogêneo, pH >4,5, teste das aminas positivo e clue cells; três de quatro sustentam diagnóstico.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-011-fc-03",
+      "pergunta": "Qual tratamento comum para VB sintomática?",
+      "resposta": "Metronidazol oral 500 mg duas vezes ao dia por 7 dias, ou opções tópicas/alternativas.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-011-fc-04",
+      "pergunta": "Parceiro masculino deve ser tratado de rotina?",
+      "resposta": "Não, tratamento de parceiro masculino não é recomendado rotineiramente para prevenir recorrência.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-011-cc-01",
+      "titulo": "Odor após relação",
+      "apresentacao": "Paciente relata odor de peixe e corrimento fino. pH 5,2, whiff test positivo e clue cells presentes.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Vaginose bacteriana é disbiose vaginal com redução de lactobacilos e aumento de anaeróbios, associada a corrimento fino, odor amínico, pH elevado e clue cells; trata-se sintomáticas com metronidazol ou alternativas."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Vaginose Bacteriana - Desequilibrio da Flora, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Vaginose bacteriana é disbiose vaginal com redução de lactobacilos e aumento de anaeróbios, associada a corrimento fino, odor amínico, pH elevado e clue cells; trata-se sintomáticas com metronidazol ou alternativas."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente relata odor de peixe e corrimento fino. pH 5,2, whiff test positivo e clue cells presentes."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual diagnóstico e conduta? Vaginose bacteriana; tratar se sintomática, por exemplo com metronidazol conforme protocolo local."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Vaginose bacteriana; tratar se sintomática, por exemplo com metronidazol conforme protocolo local.",
+      "tratamento_resumido": "Vaginose bacteriana; tratar se sintomática, por exemplo com metronidazol conforme protocolo local."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Microscopia esquemática mostrando clue cells e perda de lactobacilos, ao lado dos critérios de Amsel.",
+        "alt": "Ilustracao educacional para Vaginose Bacteriana - Desequilibrio da Flora"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Bacterial Vaginosis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Vulvovaginal Candidiasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Trichomoniasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Urethritis and Cervicitis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Ulcer Disease",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/genital-ulcers.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "diagnostico",

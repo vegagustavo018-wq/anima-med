@@ -15,50 +15,476 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Endocrinologia Clínica",
+    "subtitulo": "Como uma glândula a mais de mil quilômetros de distância consegue explicar o cansaço de um paciente?",
     "semestre": 8,
     "disciplina": "Medicina Interna II",
+    "sistema_corporal": "endócrino",
+    "regiao_anatomica": null,
     "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 15,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.1",
     "tags": [
-      "mi2",
-      "esqueleto"
+      "endocrinologia",
+      "medicina-interna",
+      "eixos-hormonais",
+      "fisiopatologia",
+      "apresentacao-clinica",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "modulo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Distúrbios de glândulas endócrinas: pâncreas, tireoide, adrenal, hipófise, paratireoide, peso",
-  "narrativa": [],
+  "resumo_conciso": "A endocrinologia clínica nasce de um problema de engenharia biológica que nenhum nervo resolve sozinho: como coordenar processos que duram horas, dias ou anos — crescimento, metabolismo, reprodução, resposta ao estresse prolongado — em órgãos que podem estar a um metro de distância um do outro, sem fio nenhum os ligando? A solução foi lançar mensageiros químicos na corrente sanguínea, cada um lido apenas por células que carregam o receptor certo, e organizar essas glândulas em eixos com retroalimentação — cadeias de comando que se autorregulam por retroalimentação negativa, evitando que um sinal dispare sem controle. Esse mesmo desenho é o motivo pelo qual a doença endócrina raramente avisa por um único sintoma óbvio: um hormônio em excesso ou em falta se manifesta em toda parte onde seu receptor existe, produzindo um mosaico de queixas — cansaço, alteração de peso, mudança de pele e cabelo, palpitação, alteração do humor — que parecem, à primeira vista, não ter relação nenhuma entre si. Este bloco não repete a fisiologia dos eixos hormonais (já estudada) nem antecipa o conteúdo específico de diabetes, tireoide, adrenal, hipófise ou paratireoide, que os blocos seguintes desenvolvem em profundidade. Ele estabelece o raciocínio clínico comum a todos eles: como qualquer eixo hormonal pode falhar (por excesso, por falta ou por resistência do receptor), como o clínico usa a lógica da retroalimentação para localizar o problema em cascata (é a glândula-alvo, a glândula reguladora, ou o receptor?), e por que a endocrinologia é, de todas as clínicas, a que mais recompensa pensar em sistemas antes de pensar em órgãos isolados.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma fábrica espalhada por uma cidade inteira: a sede administrativa fica num bairro, a linha de produção em outro, o depósito em um terceiro. Não há fios, não há mensageiros correndo de bicicleta entre eles. A única forma de a sede avisar a produção para acelerar é jogar um bilhete dentro do rio que atravessa a cidade — um bilhete que qualquer prédio pode pescar da água, mas que só é lido por quem tem a fechadura certa para abri-lo. É estranho, lento e, à primeira vista, ineficiente. E, ainda assim, é exatamente assim que o corpo resolveu o problema de coordenar órgãos distantes por longos períodos de tempo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que existe um sistema de comunicação que não usa fios?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O sistema nervoso já resolveu, com extrema eficiência, o problema da comunicação rápida: um impulso elétrico percorre um axônio em milissegundos, ativa um músculo, e a resposta é imediata. Mas nem todo processo do corpo precisa — ou deveria — ser rápido. Crescer da infância à vida adulta leva anos. Preparar o corpo para uma gravidez leva meses. Ajustar o metabolismo basal à disponibilidade de alimento ao longo de uma estação leva semanas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Manter a glicemia estável exige um ajuste contínuo, célula a célula, em praticamente todos os tecidos do corpo ao mesmo tempo — coração, músculo, fígado, gordura, cérebro — algo que uma rede de nervos, ligada ponto a ponto, não consegue fazer com eficiência: seria preciso um fio para cada célula do corpo. O problema, então, não é apenas *avisar* um órgão distante — é avisar *todos os órgãos certos ao mesmo tempo*, de forma sustentada, sem gastar a energia de manter uma rede de cabos permanente para cada finalidade. E esse aviso precisa durar: uma sinalização que se apaga em milissegundos não serve para manter um processo que precisa continuar por horas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir: tente formular com suas próprias palavras por que um hormônio circulando no sangue é uma solução melhor do que um nervo dedicado para o problema de 'avisar o fígado, o músculo e a gordura ao mesmo tempo, por horas'. Guarde essa resposta — ela é a base de tudo que vem a seguir."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve — mensageiro lançado na corrente, lido só por quem tem a chave"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi lançar substâncias mensageiras diretamente na corrente sanguínea, que as leva a todo o corpo em segundos, sem precisar de um caminho dedicado. Qualquer célula banhada por esse sangue recebe a mesma mensagem — mas só a lê quem carrega, na superfície ou dentro de si, o receptor específico para aquela substância. É um sistema de radiodifusão: a mensagem é transmitida para todos, mas só quem tem o rádio sintonizado na frequência certa a decodifica. Isso permite que um único sinal produzido em um único ponto do corpo module, ao mesmo tempo, o fígado, o músculo e o tecido adiposo — sem precisar de três cabos diferentes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas um mensageiro solto no sangue tem um risco óbvio: se ninguém o desligar, ele continua agindo indefinidamente. Por isso a segunda parte da solução é tão importante quanto a primeira: as glândulas que produzem esses mensageiros não agem de forma isolada — elas se organizam em cadeias de comando, os **eixos hormonais**, em que uma glândula reguladora superior estimula uma glândula-alvo, e o próprio produto final dessa glândula-alvo volta e avisa a reguladora para frear. É retroalimentação negativa: o sistema se autorregula, como um termostato que desliga o aquecedor assim que a temperatura desejada é atingida."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Todo eixo endócrino tem a mesma arquitetura lógica: um comando superior, uma glândula executora, um produto final que age nos tecidos-alvo — e esse produto final retroalimenta o comando superior para se autorregular. Aprender essa arquitetura uma vez é aprender a lógica de todos os eixos hormonais do corpo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Três formas de um eixo hormonal falhar — sem ainda nomear as doenças"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se todo eixo hormonal segue essa mesma arquitetura de comando e retroalimentação, segue-se algo poderoso: existem apenas algumas categorias possíveis de defeito, e elas se repetem em qualquer glândula que você for estudar. A primeira é a glândula executora produzir hormônio demais, por conta própria ou por estímulo excessivo — o sistema recebe mensagem em excesso. A segunda é o oposto: a glândula executora produz de menos, seja porque foi destruída, seja porque a glândula reguladora parou de estimulá-la — o sistema fica em silêncio quando deveria falar. A terceira é mais sutil e frequentemente esquecida pelo estudante iniciante: o hormônio pode estar presente em quantidade normal, ou até alta, mas o tecido-alvo não responde a ele, porque o receptor está defeituoso ou bloqueado — é como gritar um comando correto para um rádio com a antena quebrada. Essa terceira categoria — **resistência hormonal** — é responsável por algumas das apresentações clínicas mais enganosas da endocrinologia, porque os exames de dosagem hormonal podem parecer normais ou até elevados, enquanto o efeito biológico está ausente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essas três categorias — excesso, falta e resistência — não são exclusivas de uma glândula específica. Elas se repetem, com sotaques diferentes, no pâncreas endócrino, na tireoide, nas adrenais, na hipófise e nas paratireoides. Aprender a perguntar \"isso é excesso, falta ou resistência?\" diante de qualquer queixa hormonal é o primeiro filtro clínico que este módulo introduz, e que cada bloco-filho vai aplicar ao seu próprio eixo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso se manifesta em cascata — o mosaico de sintomas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como o hormônio viaja pelo sangue e é lido por qualquer célula com o receptor correspondente, uma falha em um único eixo endócrino tende a se manifestar simultaneamente em vários órgãos que, à primeira vista, não parecem ter nada em comum. Um excesso de hormônio tireoidiano acelera o metabolismo basal (perda de peso mesmo comendo mais), acelera o coração (palpitação, taquicardia), aumenta a excitabilidade neuromuscular (tremor, ansiedade) e altera a pele e os fâneros (pele quente, queda de cabelo) — quatro sistemas de órgãos diferentes, uma única causa. Essa dispersão de sintomas é a marca registrada da doença endócrina, e é também a razão pela qual ela é subdiagnosticada com frequência: cada sintoma isolado sugere uma dúzia de outras causas, e só a soma padronizada deles aponta para o eixo hormonal."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Raciocínio clínico diante de uma queixa endócrina dispersa",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Reconhecer o padrão disperso, não o sintoma isolado",
+          "explicacao": "Diante de queixas que, somadas, cruzam metabolismo, sistema cardiovascular, pele e humor ao mesmo tempo, suspeitar de causa hormonal única antes de investigar cada sistema separadamente."
+        },
+        {
+          "numero": 2,
+          "titulo": "Perguntar: excesso, falta ou resistência?",
+          "explicacao": "Definir se o padrão de sintomas sugere hiperfunção (aceleração de processos), hipofunção (lentificação de processos) ou uma combinação estranha de hormônio normal/alto com efeito ausente (resistência)."
+        },
+        {
+          "numero": 3,
+          "titulo": "Localizar o nível da falha no eixo",
+          "explicacao": "Usar a lógica da retroalimentação: se o comando superior e a glândula executora estão ambos elevados, o problema provavelmente está na origem do comando (ou há resistência periférica); se o comando superior está elevado mas a glândula executora está baixa, a falha está na própria glândula executora, incapaz de responder ao estímulo."
+        },
+        {
+          "numero": 4,
+          "titulo": "Confirmar com a dosagem hormonal dirigida",
+          "explicacao": "Solicitar exames que meçam tanto o hormônio regulador quanto o hormônio efetor — nunca um isoladamente — porque é a relação entre os dois que revela em qual elo da cadeia está o defeito."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse raciocínio de quatro passos é o que os blocos seguintes deste módulo vão aplicar, cada um ao seu eixo específico: o eixo insulina-glucagon no metabolismo da glicose, o eixo hipotálamo-hipófise-tireoide, o eixo hipotálamo-hipófise-adrenal, o próprio comando hipofisário sobre os demais eixos, e o eixo do cálcio entre paratireoide, osso, rim e intestino. Nenhum deles será reexplicado aqui — este bloco entrega apenas a lente comum com que todos serão lidos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a endocrinologia clínica se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A endocrinologia nunca aparece isolada dos outros dois territórios desta disciplina. O eixo insulina-glucagon regula quanta glicose o intestino absorvido acaba disponibilizando aos tecidos e quanto o rim precisa reabsorver ou excretar; anos de excesso ou de mau controle desse eixo lesam progressivamente o néfron, como o próprio bloco de visão geral desta disciplina já anunciou. O eixo do cálcio depende diretamente do rim para ativar a vitamina D e do intestino para absorver o cálcio da dieta — de modo que uma doença renal crônica quase sempre carrega, junto, um distúrbio endócrino do metabolismo ósseo. E o eixo adrenal, ao regular sódio, potássio e a resposta ao estresse fisiológico, interfere diretamente na volemia que tanto a gastroenterologia (perdas digestivas) quanto a nefrologia (capacidade de concentração urinária) monitoram o tempo todo. Reconhecer a endocrinologia como módulo isolado é uma conveniência didática — na prática, ela é o fio hormonal que atravessa os outros dois territórios de Medicina Interna II."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "endocrinologia",
+      "origem": "do grego éndon (dentro) + krínein (separar, secretar) + lógos (estudo, discurso)",
+      "significado": "literalmente, 'o estudo do que secreta para dentro'",
+      "explicacao": "O nome nasceu por contraste com as glândulas exócrinas, que secretam para fora do corpo ou para uma cavidade em contato com o exterior (suor, saliva, suco digestivo) através de um ducto. As glândulas endócrinas não têm ducto: elas lançam seu produto diretamente no sangue, 'para dentro' do meio interno, e é esse sangue que carrega o hormônio a distância. O termo 'hormônio', criado em 1905 pelo fisiologista inglês Ernest Starling, vem do grego hormáein (excitar, impelir, colocar em movimento) — porque foi exatamente isso que se observou pela primeira vez: uma substância que, lançada no sangue por um órgão, impelia outro órgão distante a agir. A endocrinologia, como especialidade clínica, só se consolidou no século XX, à medida que hormônios foram isolados, dosados e sintetizados um a um — cada descoberta resolvendo um mistério clínico que antes parecia inexplicável."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "📻",
+      "conteudo": "Pense numa emissora de rádio transmitindo para uma cidade inteira. **A glândula endócrina** é a antena transmissora, que envia o sinal para todas as direções ao mesmo tempo, sem saber exatamente quem está ouvindo. **O hormônio circulando no sangue** é a onda de rádio propagando-se pelo ar — ela atravessa cada casa da cidade, mas não faz nada sozinha. **O receptor na célula-alvo** é o aparelho de rádio sintonizado exatamente naquela frequência: só quem tem o aparelho ligado e sintonizado decodifica a mensagem, e cada aparelho pode estar sintonizado numa frequência diferente (por isso hormônios diferentes afetam órgãos diferentes). **A retroalimentação negativa** é o operador da emissora que recebe relatórios de audiência e reduz a potência de transmissão quando a cidade inteira já está suficientemente informada — evitando saturar o ar com sinal desnecessário. E quando um aparelho de rádio está com a antena quebrada (resistência do receptor), a emissora pode transmitir potência normal ou até mais alta, e ainda assim aquela casa específica continua no silêncio — exatamente o quadro confuso da resistência hormonal, em que a dosagem do hormônio no sangue parece normal, mas o efeito biológico simplesmente não chega."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o corpo humano só tivesse o sistema nervoso, sem nenhum sistema endócrino, o que seria impossível de coordenar?",
+      "resposta": "Seria impossível manter processos lentos, distribuídos e sustentados, que dependem de uma resposta simultânea de múltiplos tecidos ao longo de horas, dias ou anos. O crescimento linear ao longo da infância e adolescência não teria como ser coordenado, porque não existe uma rede de nervos ligando o osso de cada membro a um comando central que precise 'lembrar' de continuar estimulando o crescimento por anos. A manutenção da glicemia estável entre as refeições, que depende de ajuste contínuo simultâneo em fígado, músculo e tecido adiposo, exigiria uma quantidade absurda de terminações nervosas dedicadas só a essa função. A resposta do corpo a um estresse prolongado — como uma infecção grave durando dias — não teria como manter o organismo mobilizado de forma sustentada, porque um impulso nervoso se apaga em milissegundos, e o corpo precisaria de um sinal que durasse horas. O sistema nervoso é insuperável para respostas rápidas e localizadas; o sistema endócrino existe exatamente para cobrir o que sobra — o lento, o distribuído, o sustentado. Esta é a ausência total do sistema; mais adiante este módulo explora o que acontece quando o sistema endócrino existe, mas apenas um dos seus mecanismos de controle falha."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Arquitetura comum de um eixo hormonal e suas três formas de falha",
+      "descricao": "Esquema didático mostrando, no topo, uma glândula reguladora superior emitindo uma seta de estímulo para uma glândula executora abaixo; da glândula executora, uma seta de produto hormonal seguindo até tecidos-alvo periféricos (representados por três ícones de órgãos diferentes: fígado, músculo, coração); do produto hormonal e dos tecidos-alvo, uma seta pontilhada de retroalimentação negativa voltando à glândula reguladora superior. Ao lado do esquema principal, três miniaturas lado a lado ilustrando as três formas de falha: (1) 'Excesso' — seta de produto hormonal engrossada e vermelha; (2) 'Falta' — seta de produto hormonal fina e tracejada, quase ausente; (3) 'Resistência' — seta de produto hormonal normal chegando ao tecido-alvo, mas o receptor desenhado como uma fechadura quebrada, sem efeito no órgão. Fundo neutro adaptativo ao tema do app, legendas em português.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de infográfico médico moderno e limpo. Painel principal à esquerda: no topo, um ícone estilizado de glândula reguladora superior (hipófise) com seta descendente sólida rotulada 'estímulo' apontando para um ícone de glândula executora abaixo; da glândula executora, seta descendente rotulada 'hormônio' se ramifica em três setas menores apontando para três ícones de tecidos-alvo (fígado, músculo esquelético, coração); uma seta pontilhada e curva sobe dos tecidos-alvo e do hormônio de volta até a glândula reguladora superior, rotulada 'retroalimentação negativa'. Painel à direita, três quadros menores empilhados verticalmente: quadro 1 rotulado 'EXCESSO' mostrando a seta de hormônio grossa e vermelha; quadro 2 rotulado 'FALTA' mostrando a seta de hormônio fina, cinza e tracejada; quadro 3 rotulado 'RESISTÊNCIA' mostrando a seta de hormônio normal (azul) chegando a um receptor desenhado como fechadura rachada, com símbolo de bloqueio, e o órgão-alvo sem resposta (cinza pálido). Tipografia sem serifa, paleta limitada com azul, vermelho e cinza, alto contraste, sem elementos fotorrealistas, sem texto em inglês."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-mi2-00-000",
+        "titulo": "Medicina Interna II — Visão Geral",
+        "disciplina": "Medicina Interna II",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este módulo herda diretamente o funil hipotético-dedutivo e a ideia de que os três territórios (endócrino, digestivo, renal) se sobrepõem no mesmo paciente — aqui esse raciocínio é aplicado especificamente ao território endócrino."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Diabetes mellitus como falha do eixo insulina-glucagon",
+        "mecanismo_conexao": "O filtro excesso/falta/resistência apresentado aqui será aplicado diretamente: diabetes tipo 1 é falta de insulina por destruição das células beta; diabetes tipo 2 é predominantemente resistência periférica à insulina com hiperinsulinemia compensatória.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Hipertireoidismo e hipotireoidismo como excesso e falta no eixo hipotálamo-hipófise-tireoide",
+        "mecanismo_conexao": "O mosaico de sintomas dispersos descrito neste módulo (metabolismo, cardiovascular, neuromuscular, tegumentar) será detalhado ponto a ponto no bloco específico de tireoide, com o mesmo raciocínio de localizar a falha pela relação TSH/hormônio tireoidiano.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 8,
+        "topico": "Reposição hormonal e bloqueio de eixos endócrinos",
+        "mecanismo_conexao": "Cada categoria de falha (excesso, falta, resistência) corresponde a uma estratégia terapêutica distinta — bloqueio de síntese ou de receptor para o excesso, reposição exógena para a falta, sensibilização do receptor para a resistência — que os blocos de cada eixo específico vão detalhar com as drogas correspondentes.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "Medicina Interna II",
+        "semestre_futuro": 8,
+        "topico": "Eixo do cálcio entre paratireoide, osso, rim e intestino",
+        "mecanismo_conexao": "A mesma arquitetura de comando-execução-retroalimentação se repete no eixo do cálcio, mas com a particularidade de ter três órgãos-alvo (osso, rim, intestino) em vez de um só — ilustrando que a lógica geral deste módulo se adapta a arranjos mais complexos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-mi1-00-000",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Assim como Medicina Interna I treina o funil hipotético-dedutivo em queixas cardiorrespiratórias e hematológicas, este módulo aplica o mesmo tipo de raciocínio sistêmico — aqui organizado em torno da arquitetura de eixos hormonais — reforçando que método se repete, conteúdo muda."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-mi2-01-000-fc01",
+      "pergunta": "Por que o corpo precisou desenvolver um sistema de comunicação químico e lento (endócrino), já tendo um sistema nervoso rápido e preciso?",
+      "resposta": "Porque o sistema nervoso é otimizado para respostas rápidas, pontuais e localizadas, mas processos como crescimento, controle glicêmico contínuo e resposta sustentada ao estresse precisam durar horas, dias ou anos e afetar simultaneamente múltiplos tecidos distantes entre si. Um impulso nervoso se apaga em milissegundos e exigiria uma rede de fios dedicada a cada célula-alvo, o que é inviável para uma coordenação de longo prazo e ampla distribuição. O sistema endócrino resolve isso lançando o mensageiro na corrente sanguínea, que naturalmente alcança todo o corpo, com efeito sustentado enquanto o hormônio persistir circulando.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "endocrinologia",
+        "sistema-nervoso",
+        "comunicacao-celular"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-000-fc02",
+      "pergunta": "Pesquisadores descrevem um eixo hormonal hipotético em outra espécie: uma glândula 'A' comanda uma glândula 'B', que produz o hormônio X, que age nos tecidos-alvo e também retroalimenta 'A'. Se um estudo revelasse que os tecidos-alvo dessa espécie não retroalimentam a glândula 'A' (só o hormônio X o faz diretamente), o que mudaria no comportamento desse eixo em uma situação de inflamação prolongada, que costuma alterar a sensibilidade dos tecidos-alvo?",
+      "resposta": "Se apenas a concentração do hormônio X retroalimenta a glândula 'A' — e não a resposta real dos tecidos-alvo —, o eixo fica cego a exatamente o tipo de falha que a inflamação prolongada costuma causar: uma dessensibilização dos receptores nos tecidos-alvo. Nesse cenário, a glândula 'A' mediria X circulando em nível normal (ou até compensatoriamente elevado) e reduziria ou manteria estável o estímulo sobre 'B', mesmo que o efeito biológico nos tecidos-alvo estivesse caindo por resistência adquirida. Ou seja, faltaria ao sistema o elo que hoje protege eixos reais dessa cegueira: nos eixos humanos, é justamente a combinação de retroalimentação por hormônio circulante e a leitura clínica do efeito no tecido-alvo que permite detectar uma resistência que a dosagem sozinha não revelaria — sem esse segundo elo, o eixo hipotético levaria mais tempo para ser reconhecido como falho.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "eixo-hormonal",
+        "retroalimentacao",
+        "arquitetura-endocrina",
+        "transferencia"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-000-fc03",
+      "pergunta": "Uma paciente de 40 anos, sem sintomas exuberantes de hiper ou hipotireoidismo (eutireóidea ou com sinais leves e mistos), tem T4 livre e T3 livre elevados, mas o TSH retorna normal ou discretamente elevado — não suprimido. Usando o filtro excesso/falta/resistência, por que esse padrão de TSH é a peça que define a hipótese de resistência ao hormônio tireoidiano (RTH), e por que ele não seria esperado em um estado de hiperfunção glandular verdadeira (ex: doença de Graves)?",
+      "resposta": "Na resistência ao hormônio tireoidiano, o defeito do receptor não afeta só os tecidos periféricos — ele também atinge a própria hipófise (e, por extensão, o comando hipotalâmico), que é o local onde o T4/T3 normalmente exercem a retroalimentação negativa. Como a hipófise também é resistente, ela 'não enxerga' o T4 livre elevado como um sinal de excesso e continua secretando TSH em nível normal ou até levemente aumentado, em vez de suprimi-lo. É exatamente esse descompasso — T4 livre e T3 livre altos COM TSH não suprimido — que aponta para resistência, e não para hiperfunção verdadeira: em um estado de excesso hormonal genuíno, como a doença de Graves, o eixo está intacto e a retroalimentação funciona normalmente, então o T4 livre alto suprime o TSH, que aparece baixo ou indetectável. Por isso, TSH não suprimido diante de T4 livre elevado é o achado laboratorial central da RTH, e é também o motivo pelo qual a paciente pode estar clinicamente eutireóidea ou com sinais leves e mistos — os tecidos que respondem parcialmente ao excesso hormonal compensam, em graus variados, a resistência do receptor.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "resistencia-hormonal",
+        "raciocinio-clinico",
+        "tireoide"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-000-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Uma dosagem hormonal normal no sangue sempre significa que aquele eixo está funcionando normalmente.'",
+      "resposta": "Falso. A dosagem hormonal mede apenas a quantidade de hormônio circulando, não garante que o efeito biológico esperado esteja de fato ocorrendo nos tecidos-alvo. Se houver resistência do receptor — por defeito genético, bloqueio ou dessensibilização —, o hormônio pode estar presente em concentração normal ou até elevada e, ainda assim, produzir pouco ou nenhum efeito nas células-alvo. A armadilha está em interpretar 'hormônio normal' como sinônimo de 'eixo funcionando normalmente': é preciso sempre cruzar a dosagem com a resposta clínica e, quando disponível, com a relação entre hormônio regulador e hormônio efetor.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "resistencia-hormonal",
+        "armadilha-conceitual",
+        "dosagem-hormonal"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-000-fc05",
+      "pergunta": "Por que a palavra 'endócrino' se opõe diretamente à palavra 'exócrino', e o que essa oposição etimológica revela sobre a diferença funcional entre os dois tipos de glândula?",
+      "resposta": "'Endócrino' vem do grego éndon (dentro) + krínein (secretar) — secreta para dentro, isto é, diretamente na corrente sanguínea, sem duto. 'Exócrino' vem do grego éxō (fora) + krínein — secreta para fora, através de um duto, para a superfície do corpo ou para uma cavidade em contato com o meio externo (como o suco pancreático no duodeno ou o suor na pele). A oposição etimológica revela a diferença funcional central: a glândula exócrina entrega seu produto a um local anatômico específico e próximo (o duto define o destino); a glândula endócrina entrega seu produto ao sangue, que o distribui para qualquer célula do corpo que tenha o receptor correspondente, esteja ela perto ou longe da glândula de origem.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "endocrinologia",
+        "etimologia",
+        "exocrino"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-000-fc06",
+      "pergunta": "Em vez de perder totalmente a retroalimentação, imagine um eixo hormonal em que a glândula executora desenvolve resistência PARCIAL ao sinal de retroalimentação negativa (ela ainda 'ouve' o hormônio efetor, mas exige uma concentração muito mais alta dele para reduzir o estímulo). Como esse cenário de resistência parcial na retroalimentação se compara, em gravidade e em apresentação laboratorial, à perda completa da retroalimentação?",
+      "resposta": "Na perda completa da retroalimentação, a glândula reguladora nunca recebe o sinal de 'já é suficiente' e o estímulo cresce sem qualquer freio, levando a um excesso hormonal progressivo e potencialmente grave. Na resistência parcial, existe um freio — só que ele é acionado tardiamente: a glândula reguladora só reduz o estímulo quando o hormônio efetor atinge um patamar bem acima do normal. O resultado prático é um novo 'ponto de equilíbrio' do eixo, estabilizado em um nível cronicamente elevado de hormônio regulador e de hormônio efetor — um excesso hormonal sustentado, porém mais brando e mais estável do que a escalada sem limite da perda total. Laboratorialmente, isso se pareceria com um comando superior persistentemente elevado coexistindo com um hormônio efetor também elevado (em vez do padrão esperado de comando suprimido quando o efetor está alto), ilustrando que 'resistência na retroalimentação' e 'perda de retroalimentação' são pontos diferentes do mesmo espectro de falha, não sinônimos.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "retroalimentacao-negativa",
+        "eixo-hormonal",
+        "resistencia-parcial"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-000-fc07",
+      "pergunta": "Compare, nos três eixos que este módulo antecipa (insulina-glucagon, hipotálamo-hipófise-tireoide, hipotálamo-hipófise-adrenal), o que permanece igual e o que muda na arquitetura geral apresentada aqui.",
+      "resposta": "O que permanece igual nos três é a lógica de comando-execução-retroalimentação: sempre há um sinal regulador, uma glândula executora que produz o hormônio efetor, tecidos-alvo com receptores específicos, e um circuito de retroalimentação negativa que autolimita a produção. O que muda é a complexidade do comando superior e o número de elos da cadeia: o eixo insulina-glucagon tem regulação predominantemente direta pela própria glicemia, sem depender de um comando hipofisário intermediário; os eixos tireoidiano e adrenal, em contraste, dependem de uma cadeia de três níveis — hipotálamo, hipófise e a glândula periférica — tornando a localização da falha (hipotalâmica, hipofisária ou glandular periférica) uma etapa adicional do raciocínio clínico que o eixo pancreático não exige da mesma forma.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "eixos-hormonais",
+        "comparacao",
+        "hipofise"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-01-000-fc08",
+      "pergunta": "Na tireotoxicose, betabloqueadores aliviam rapidamente a taquicardia e o tremor sem corrigir o excesso de hormônio tireoidiano. Usando a arquitetura de eixo hormonal apresentada neste módulo, em que ponto exato da cadeia comando-executora-tecido-alvo esse medicamento atua, e por que isso o torna uma ponte terapêutica e não um tratamento definitivo?",
+      "resposta": "Na tireotoxicose, o excesso de hormônio tireoidiano age nos tecidos-alvo — entre eles o coração e o músculo esquelético — que possuem receptores adrenérgicos sensibilizados por esse excesso hormonal, produzindo taquicardia, palpitação e tremor. O betabloqueador não atua no eixo hipotálamo-hipófise-tireoide nem reduz a produção do hormônio tireoidiano em si — ele bloqueia o receptor adrenérgico nos tecidos-alvo, interrompendo apenas o **efeito periférico amplificado** do excesso hormonal sobre o sistema cardiovascular e neuromuscular. É por isso que o betabloqueador alivia o sintoma rapidamente (uma ponte terapêutica), mas o tratamento definitivo precisa necessariamente atuar na origem do excesso — na glândula executora ou no comando superior —, exatamente o alvo que os blocos seguintes deste módulo vão detalhar eixo por eixo.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "tireotoxicose",
+        "betabloqueador",
+        "farmacologia",
+        "sintese"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-mi2-01-000-caso01",
+      "titulo": "Cansaço, ganho de peso e queda de cabelo em mulher de 45 anos",
+      "apresentacao": "Mulher de 45 anos, professora, procura atendimento por cansaço progressivo há seis meses, ganho de 6 kg no período sem mudança de dieta, e queda de cabelo perceptível ao pentear. Refere também intolerância ao frio ('sinto frio mesmo quando todos estão de manga curta') e constipação, que atribuiu inicialmente à alimentação. Ao exame físico: pele seca e fria ao toque, discreta lentificação da fala, reflexo aquileu com fase de relaxamento visivelmente lentificada. Frequência cardíaca de 58 bpm. Sem bócio palpável. A médica, reconhecendo o mosaico de sintomas dispersos (metabólico, tegumentar, digestivo, neuromuscular, cardiovascular) como sugestivo de um único eixo hormonal, solicita dosagem combinada de TSH e T4 livre, em vez de investigar cada queixa isoladamente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Processo autoimune crônico progressivo contra a glândula tireoide — tipicamente tireoidite de Hashimoto, em que autoanticorpos (anti-TPO e anti-tireoglobulina) infiltram e destroem lentamente o parênquima glandular (mecanismo detalhado com sorologia e histopatologia no bloco específico de tireoide), reduzindo progressivamente a capacidade da glândula executora de produzir hormônio tireoidiano."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A glândula tireoide, executora do eixo hipotálamo-hipófise-tireoide, perde progressivamente sua capacidade funcional de síntese hormonal."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a glândula executora produzindo cada vez menos hormônio tireoidiano, a retroalimentação negativa sobre a hipófise se enfraquece, e o comando superior (TSH) se eleva na tentativa de compensar — mas a glândula lesada não consegue responder de forma proporcional ao estímulo crescente."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Como o hormônio tireoidiano tem receptores em praticamente todos os tecidos do corpo, sua falta desacelera o metabolismo basal (ganho de peso, intolerância ao frio, constipação), reduz a frequência cardíaca, lentifica a condução neuromuscular (reflexo aquileu lentificado, fala arrastada) e altera o ciclo do folículo piloso (queda de cabelo) — o mosaico disperso descrito na narrativa deste bloco, agora manifesto em uma única paciente."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem tratamento, a lentificação metabólica se aprofunda e pode evoluir para quadros mais graves de hipotireoidismo severo; com reposição hormonal adequada (a ser detalhada no bloco específico de tireoide), a grande maioria dos sintomas reverte de forma completa, ilustrando que a falha estava na quantidade de mensageiro circulante, não em cada órgão isoladamente."
+        }
+      ],
+      "conexao_com_bloco": "O caso demonstra na prática os dois instrumentos centrais deste módulo: o reconhecimento do padrão disperso de sintomas como pista de causa hormonal única (em vez de investigar cansaço, peso, cabelo e intestino como problemas independentes), e o uso da relação entre hormônio regulador (TSH) e hormônio efetor (T4 livre) para localizar a falha na glândula executora — exatamente o quarto passo do raciocínio clínico apresentado na narrativa.",
+      "disciplinas_relacionadas": [
+        "endocrinologia",
+        "medicina-interna",
+        "semiologia"
+      ],
+      "diagnostico_revelado": "Hipotireoidismo primário, provavelmente de etiologia autoimune (a ser detalhado no bloco específico de tireoide).",
+      "tratamento_resumido": "Reposição hormonal exógena, com titulação guiada pela normalização de TSH e resolução clínica dos sintomas — princípio geral de tratamento para qualquer falha por 'falta' neste módulo, detalhado com doses e monitorização no bloco específico de tireoide."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-mi2-01-000-img01",
+        "url": null,
+        "tipo_imagem": "esquema_didatico",
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
   },
-  "fontes": [],
-  "_lentes": [
-    "fisiopatologia",
-    "apresentacao_clinica"
+  "horizonte_validade": "estavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Jameson JL, Fauci AS, Kasper DL, Hauser SL, Longo DL, Loscalzo J (eds). Harrison's Principles of Internal Medicine. 21st ed. McGraw Hill; 2022. Parte 14 — Distúrbios Endócrinos.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Melmed S, Auchus RJ, Goldfine AB, Koenig RJ, Rosen CJ (eds). Williams Textbook of Endocrinology. 14th ed. Elsevier; 2020. Capítulo 1 — Princípios de Endocrinologia (síndrome de resistência ao hormônio tireoidiano e apresentação laboratorial TSH não suprimido).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 14ª ed. Elsevier; 2021. Unidade XIV — Endocrinologia e Reprodução.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "procedencia": {
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pipeline-qualidade-anima (pedagogia+precisao+estetica+adversarial+integrador)",
+    "data_revisao": "2026-07-05",
+    "nivel_confianca": "revisado"
+  },
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Achar que uma dosagem hormonal 'normal' descarta automaticamente qualquer doença daquele eixo.",
+      "correcao": "A dosagem hormonal isolada não avalia a resposta do tecido-alvo; quadros de resistência hormonal podem cursar com hormônio normal ou elevado e efeito biológico ausente, exigindo correlação clínica sempre.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Tratar cada sintoma de uma doença endócrina (cansaço, peso, pele, humor) como um problema de especialidade diferente, sem suspeitar de causa hormonal única.",
+      "correcao": "A dispersão de sintomas em múltiplos sistemas de órgãos é justamente a marca registrada da doença endócrina, porque o hormônio circula e age em qualquer célula com o receptor correspondente.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Confundir glândula endócrina com glândula exócrina apenas por ambas produzirem uma secreção.",
+      "correcao": "A diferença não é 'produzir secreção', mas o destino dela: exócrina secreta por duto para superfície ou cavidade externa; endócrina secreta direto no sangue, sem duto, para ação a distância.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Achar que TSH normal ou alto descarta excesso de hormônio tireoidiano circulante.",
+      "correcao": "Na resistência ao hormônio tireoidiano, T4 livre e T3 livre podem estar elevados COM TSH normal ou levemente elevado (não suprimido), porque a hipófise também é resistente ao hormônio e não reduz sua secreção como faria em um estado de hiperfunção verdadeira (ex: doença de Graves, onde o TSH estaria suprimido).",
+      "armadilha_em_flashcard": "sim"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "eixo hormonal",
+      "termo_es": "eje hormonal",
+      "termo_en": "hormonal axis",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "retroalimentação negativa",
+      "termo_es": "retroalimentación negativa",
+      "termo_en": "negative feedback",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "resistência hormonal",
+      "termo_es": "resistencia hormonal",
+      "termo_en": "hormone resistance",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "claude-sonnet-5",
+      "mudanca": "Criação inicial do bloco de módulo Endocrinologia Clínica, introdução ao módulo de Endocrinologia dentro de Medicina Interna II.",
+      "motivo": "Produção do módulo introdutório de Endocrinologia (semestre 8), antecedendo os blocos-filhos específicos de diabetes, tireoide, adrenal, hipófise e paratireoide."
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-05",
+      "autor": "pipeline-qualidade-anima",
+      "mudanca": "REVISÃO pós-pipeline (adversarial refutou com severidade ALTA): (1) fc03 reescrito com o quadro laboratorial correto da resistência ao hormônio tireoidiano (TSH não suprimido apesar de T4/T3 livres elevados, porque a hipófise também é resistente) e vinheta clínica ajustada para eutireoidismo/sinais leves em vez de hipotireoidismo franco; bandeira [⚠️ VERIFICAR] removida por ser consenso didático; (2) eliminada a redundância tripla entre a pausa da linha ~32, o contrafactual de bloco e fc06: a pausa agora pede aplicação ativa (não resume o parágrafo anterior), o contrafactual de bloco permanece focado na ausência total do sistema endócrino, e fc06 passou a explorar resistência parcial na retroalimentação (cenário distinto); (3) fc02 reformulado para exigir transferência a um eixo hormonal hipotético nunca visto, em vez de pedir recitação da arquitetura já descrita no highlight; (4) dois parágrafos longos divididos (comunicação lenta/distribuída; resolução via corrente sanguínea); fc08 reformulado como pergunta em vez de comando; etimologia mantida em sua posição original por preservar a ordem das 8 etapas pedagógicas validada pelo juiz de pedagogia; (5) adicionada concepção errada frequente sobre TSH e RTH; fonte de Williams Textbook of Endocrinology anotada com a especificidade do achado laboratorial.",
+      "motivo": "Correção de erro de precisão clínica real (severidade ALTA) e de redundância estrutural apontados pelo pipeline de qualidade (pedagogia 8.5, precisão 8, estética 9, adversarial refutou)."
+    }
   ]
 }

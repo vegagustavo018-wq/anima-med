@@ -1,0 +1,515 @@
+{
+  "resumo_id": "s9-onco-01-003-04",
+  "no_pai_id": "s9-onco-01-003",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-patol1-07-044",
+    "s8-farma-onco-01-000",
+    "s5-patol-onco-01-000"
+  ],
+  "metadata": {
+    "titulo": "Metabolismo Tumoral como Ferramenta Diagnóstica e Alvo",
+    "subtitulo": "Se todo tumor come glicose do mesmo jeito estranho, por que não usar essa fome para enxergá-lo?",
+    "semestre": 9,
+    "disciplina": "Oncologia",
+    "profundidade_arvore": 3,
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 16,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
+    "tags": [
+      "onco",
+      "diagnostico",
+      "conduta",
+      "correlação clínica",
+      "efeito Warburg",
+      "PET-FDG",
+      "glutaminase",
+      "IDH1",
+      "IDH2",
+      "farmacologia oncológica"
+    ],
+    "nivel": "CORE",
+    "tipo": "conceito",
+    "lentes": [
+      "diagnostico",
+      "conduta"
+    ]
+  },
+  "resumo_conciso": "Este é o quarto e último dos capítulos que o bloco-pai (Hallmarks do Câncer como Alvos Terapêuticos) anunciou: depois de angiogênese, evasão da apoptose/imortalização e evasão imune, fechamos com a reprogramação do metabolismo energético. Você já sabe, de Patologia Geral (S4), o mecanismo do efeito Warburg — a célula tumoral realiza glicólise aeróbica, fermentando glicose em lactato mesmo com oxigênio disponível, trocando eficiência energética por velocidade e matéria-prima para crescer rápido. Este bloco não re-deriva esse mecanismo. A pergunta aqui é dupla, e ambas as metades importam clinicamente: primeiro, como essa fome estranha por glicose vira uma ferramenta de imagem que localiza tumores no corpo inteiro (o PET-scan com FDG, hoje rotina em estadiamento, resposta a tratamento e detecção de recidiva); segundo, se um tumor aposta tudo nessa reprogramação metabólica, ela também vira alvo de fármaco, como qualquer outro hallmark — e aqui a história é mais nova e mais incerta, com inibidores de glutaminase e inibidores de IDH1/IDH2 mutante ainda em fronteira de desenvolvimento clínico, longe da maturidade de bevacizumabe, venetoclax ou pembrolizumabe. Fechado este bloco, o módulo de Hallmarks do Câncer como Alvos Terapêuticos está completo — o próximo tema do módulo 01 muda de pergunta outra vez: não mais 'que capacidade o tumor conquistou', mas 'como e para onde ele se espalha' (padrões de disseminação e metástase).",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Volte ao tumor board dos três blocos anteriores. Desta vez, antes mesmo de qualquer discussão sobre bevacizumabe, venetoclax ou pembrolizumabe, alguém já trouxe um exame que foi pedido semanas atrás, antes de qualquer decisão de fármaco: um PET-scan com FDG, mostrando pontos brilhantes de captação em linfonodos mediastinais e uma lesão hepática que ninguém suspeitava. Ninguém no tumor board perguntou 'qual receptor está mutado?' para pedir esse exame. Pediram porque sabiam de antemão que o tumor, qualquer que fosse seu genótipo específico, provavelmente estaria com fome de glicose de um jeito que nenhum tecido normal ao redor está. Como uma única característica metabólica, compartilhada por quase todo câncer, virou o exame de imagem mais usado em oncologia para saber até onde a doença se espalhou?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma dependência que já não precisa ser re-explicada"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você já sabe, do bloco de Reprogramação Metabólica (Patologia Geral, S4), que a célula tumoral processa glicose de um jeito que parece, à primeira vista, ineficiente: em vez de completar a oxidação total da glicose até CO₂ e água na mitocôndria (o caminho que rende o máximo de ATP por molécula), ela fermenta boa parte dessa glicose em lactato no citoplasma — mesmo tendo oxigênio disponível de sobra para respirar normalmente. Esse é o efeito Warburg: glicólise aeróbica, batizado com o nome de quem o descreveu, e cujo mecanismo molecular completo (por que a célula tumoral aceita esse câmbio energético desvantajoso em troca de outra vantagem) você já estudou."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco não volta a essa pergunta mecanística. Ele parte do fato já estabelecido — a célula tumoral consome glicose vorazmente, muito mais que a célula normal ao redor — e pergunta o que a medicina faz com esse fato. A resposta tem duas metades: uma já consolidada e rotineira (o exame de imagem), outra ainda em construção (o alvo farmacológico). As duas merecem o mesmo cuidado, mas por motivos opostos: a primeira porque você vai pedi-la, ler seu laudo e confiar nela dezenas de vezes ao longo da carreira; a segunda porque você precisa saber reconhecer, quando ler um artigo ou uma bula nova, o que já é prática estabelecida e o que ainda é promessa em teste."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a mesma fome que sustenta o tumor também o denuncia"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Todo exame de imagem funcional depende de um princípio simples: escolher um traçador que se acumula de forma diferente em tecido doente e em tecido normal, e depois enxergar essa diferença. A reprogramação metabólica do câncer oferece exatamente essa diferença de forma quase universal — a maioria dos tumores sólidos consome glicose numa taxa muito maior que o tecido normal ao redor (com algumas exceções relevantes, como certos tumores de próstata e carcinomas hepatocelulares bem diferenciados, que têm captação mais baixa e por isso são mal avaliados por este exame)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O traçador escolhido para explorar essa diferença é a fluorodesoxiglicose marcada com flúor-18 (¹⁸F-FDG) — uma molécula de glicose modificada, radioativa, que o corpo trata quase como se fosse glicose de verdade, com uma diferença crucial que é o que torna o exame possível."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Como o FDG fica 'preso' exatamente onde o metabolismo está reprogramado",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Captação pelo transportador de glicose",
+          "explicacao": "O FDG entra na célula pelo mesmo transportador de membrana usado pela glicose comum (GLUT, com destaque para o GLUT1, frequentemente superexpresso em células tumorais como parte da própria reprogramação metabólica). Células com metabolismo acelerado — inclusive tumorais — captam mais FDG simplesmente porque têm mais desses transportadores na superfície e maior demanda por glicose."
+        },
+        {
+          "numero": 2,
+          "titulo": "Primeira etapa da glicólise, igual à glicose normal",
+          "explicacao": "Dentro da célula, a enzima hexoquinase fosforila o FDG a FDG-6-fosfato, exatamente como faria com a glicose comum — essa é a mesma primeira etapa da via glicolítica que você já estudou no efeito Warburg."
+        },
+        {
+          "numero": 3,
+          "titulo": "O bloqueio metabólico que prende o traçador",
+          "explicacao": "Aqui está a diferença crucial: a glicose comum, uma vez fosforilada, segue adiante na via glicolítica. O FDG-6-fosfato, por causa da modificação química no carbono 2 da molécula, não consegue prosseguir para a etapa seguinte da glicólise. Ele fica metabolicamente 'preso' dentro da célula — não pode seguir adiante, e a maioria dos tecidos tem baixíssima atividade da enzima que o desfosforilaria de volta (glicose-6-fosfatase), então ele também não sai."
+        },
+        {
+          "numero": 4,
+          "titulo": "Acúmulo proporcional à voracidade metabólica",
+          "explicacao": "Como o FDG fica retido proporcionalmente à quantidade que entrou (que por sua vez depende de quantos transportadores GLUT e quanta hexoquinase a célula tem), células com metabolismo tumoral reprogramado acumulam muito mais FDG radioativo que o tecido normal ao redor — e é esse acúmulo diferencial que o detector de pósitrons da máquina de PET converte em imagem, mostrando 'pontos quentes' onde há mais captação."
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O PET-FDG não enxerga o tumor diretamente — ele enxerga a reprogramação metabólica do efeito Warburg em ação. É por isso que tecidos normais com alto metabolismo basal (cérebro, que usa glicose como combustível quase exclusivo; miocárdio; rim e bexiga, pela via de eliminação do traçador) também captam bastante FDG e podem confundir a interpretação — o radiologista precisa conhecer esses padrões de captação fisiológica para não confundi-los com doença."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Onde o PET-FDG realmente muda conduta"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O valor clínico do PET-FDG não está em substituir a biópsia — ele quase nunca fornece diagnóstico histológico definitivo sozinho. Está em responder perguntas que a tomografia ou ressonância convencional, olhando apenas para tamanho e forma anatômica, respondem pior: o estadiamento inicial (existe doença em linfonodos ou órgãos distantes que a TC não mostrou com clareza?), a avaliação de resposta ao tratamento (o tumor que continua do mesmo tamanho na TC já morreu metabolicamente, mesmo sem ainda ter encolhido?) e a detecção de recidiva (voltou a doença em paciente com marcador tumoral subindo, mas TC ainda normal?)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O segundo desses usos — avaliação de resposta — é particularmente revelador do valor agregado do exame. Um linfoma tratado com quimioterapia pode continuar exatamente do mesmo tamanho em uma tomografia de controle feita cedo demais, porque a massa residual ainda contém tecido necrótico e fibrose que levam tempo para ser reabsorvidos — a anatomia muda devagar. Mas se as células tumorais já morreram, elas pararam de captar FDG imediatamente. O PET, nesse cenário, mostra ausência de captação numa massa que a TC ainda classificaria como 'inalterada' — e essa diferença muda a decisão de continuar, trocar ou encerrar o tratamento."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Consolidação",
+      "conteudo": "Antes de seguir, confirme a lógica: tamanho (o que a TC mede) e atividade metabólica (o que o PET mede) são dois relógios diferentes, que não andam necessariamente no mesmo ritmo. Uma massa pode encolher lentamente mesmo já estando metabolicamente morta — e é essa defasagem que torna o PET-FDG mais sensível que a TC isolada para avaliar resposta precoce ao tratamento."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Armadilha conceitual: nem toda captação de FDG é câncer"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Assim como no bloco anterior a imagem podia enganar por motivos imunológicos (pseudoprogressão), aqui ela pode enganar por um motivo metabólico simples: FDG marca metabolismo aumentado, não malignidade especificamente. Um foco inflamatório ou infeccioso (pneumonia, abscesso, tuberculose ativa), tecido cicatricial recente pós-cirúrgico, ou mesmo músculo em contração vigorosa durante o exame também podem captar FDG intensamente — porque células inflamatórias ativadas e músculo em atividade também têm demanda metabólica elevada, ainda que por razões completamente diferentes da reprogramação oncogênica."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um radiologista interpretasse todo ponto de alta captação num PET-FDG pós-operatório como recidiva tumoral certa, sem considerar a possibilidade de captação inflamatória no próprio sítio cirúrgico recente, o que poderia acontecer?",
+      "resposta": "O paciente poderia ser submetido a investigação invasiva desnecessária (biópsia de uma área que era apenas inflamação cicatricial pós-operatória) ou até reiniciar tratamento oncológico sem necessidade real, com toda a toxicidade e custo associados. Por isso a interpretação de PET-FDG exige correlação com o contexto clínico (tempo desde a cirurgia, presença de infecção concomitante, uso recente de fatores estimuladores de medula óssea) e, quando o achado é ambíguo, confirmação histológica antes de mudar conduta — a imagem sugere, não substitui, o diagnóstico definitivo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do exame ao remédio: a mesma fome vira alvo?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se cada hallmark do câncer é uma dependência farmacologicamente explorável — o princípio geral que atravessa todo este módulo, já visto para angiogênese (VEGF/bevacizumabe), evasão da apoptose (BCL-2/venetoclax) e evasão imune (PD-1/PD-L1/pembrolizumabe) — era esperado que alguém tentasse fazer o mesmo com a reprogramação metabólica. E de fato está sendo tentado. Mas aqui a história muda de tom: em vez de fármacos consolidados em guideline internacional, estamos falando de estratégias em estágio mais precoce de desenvolvimento clínico, com aprovações restritas a contextos moleculares específicos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A glutaminase é a enzima que a célula tumoral passa a usar intensamente para uma segunda finalidade além da glicose: converter glutamina em glutamato, alimentando tanto a produção de energia quanto a síntese de novos blocos de construção celular (nucleotídeos, lipídios) — um reforço complementar ao efeito Warburg, já que a glicólise aeróbica sozinha nem sempre supre toda a demanda biossintética de uma célula em divisão acelerada. Inibidores de glutaminase tentam cortar essa segunda rota de abastecimento, na mesma lógica de que um tumor que apostou pesado numa dependência metabólica específica deveria sofrer mais que a célula normal quando essa rota é bloqueada. [⚠️ VERIFICAR: o desenvolvimento clínico de inibidores de glutaminase (como o telaglenastat) permanece em fase de estudo, sem aprovação regulatória amplamente estabelecida até o momento desta redação — status de desenvolvimento e resultados de ensaios de fase avançada devem ser confirmados em fonte atualizada antes de qualquer afirmação clínica definitiva.]"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As mutações em IDH1 e IDH2 (isocitrato desidrogenase 1 e 2) contam uma história diferente e mais bem estabelecida: em alguns tumores — notavelmente certos gliomas e uma parcela de leucemias mieloides agudas — a enzima mutada deixa de realizar sua função metabólica normal e passa a produzir um metabólito anômalo, o 2-hidroxiglutarato, que se acumula e interfere na regulação epigenética da célula, favorecendo a transformação maligna. Diferentemente da glutaminase, aqui já existem inibidores de IDH mutante aprovados para uso clínico em subgrupos moleculares específicos de leucemia mieloide aguda — um dos poucos exemplos, junto com os inibidores de checkpoint em tumores MSI-alto, em que a genética molecular do metabolismo tumoral orienta diretamente a escolha do fármaco, e não apenas o órgão de origem do tumor. [⚠️ VERIFICAR: indicações regulatórias exatas, nomes comerciais e desfechos de sobrevida específicos por região exigem confirmação em bula e guideline atualizados no momento do uso clínico.]"
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Diferença que importa para a prova e para a prática: bevacizumabe, venetoclax e pembrolizumabe são fármacos com uso consolidado e amplo em guideline internacional. Inibidores de glutaminase seguem em investigação. Inibidores de IDH mutante já têm aprovação, mas restrita a subgrupos moleculares definidos por teste genético prévio — não é terapia de primeira linha para 'câncer com efeito Warburg' de forma genérica, porque quase todo tumor sólido tem efeito Warburg, mas só uma fração pequena e específica carrega mutação de IDH."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa lógica se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco depende diretamente da base molecular que você já estabeleceu em Patologia Geral (S4) — sem entender por que a célula tumoral escolhe glicólise aeróbica mesmo com oxigênio disponível, o PET-FDG pareceria uma tecnologia arbitrária, e os inibidores metabólicos, uma classe de fármaco sem lógica evidente. Ele retoma, pela quarta e última vez, o princípio geral do bloco-pai (Hallmarks do Câncer como Alvos Terapêuticos): capacidade adquirida é dependência exposta — aqui aplicada ao metabolismo energético, com o adendo de que essa mesma dependência também virou a base de uma ferramenta diagnóstica de uso diário. A farmacologia oncológica (S8) aprofundará doses, critérios de seleção de subgrupo molecular e algoritmos de manejo de toxicidade dos inibidores de IDH e de glutaminase; a patologia molecular (S5) detalhará os testes que identificam mutação de IDH1/IDH2 em amostra tumoral; e a radiologia/medicina nuclear aprofundará critérios formais de interpretação de PET-FDG (como os critérios de Deauville em linfoma) que este bloco apenas introduziu no nível de princípio."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Fluorodesoxiglicose (FDG)",
+      "origem": "Latim/grego científico — *fluoro* (flúor) + *deoxy* (des-, privação + *oxys*, oxigênio — \"sem oxigênio\") + *glykys* (doce, glicose)",
+      "significado": "Uma glicose à qual falta um átomo de oxigênio num ponto específico, substituído por flúor radioativo",
+      "explicacao": "O nome descreve exatamente a modificação química: a glicose comum tem uma hidroxila (grupo –OH) no segundo carbono; no FDG, esse grupo é substituído por um átomo de flúor-18 radioativo. É uma mudança pequena o suficiente para que o transportador e a hexoquinase da célula ainda reconheçam e processem a molécula como se fosse glicose — mas grande o suficiente para impedir que ela prossiga na via glicolítica depois de fosforilada, o que é exatamente o que permite ao traçador ficar retido e ser detectado."
+    },
+    {
+      "tipo": "analogia",
+      "titulo": "O pedágio de mão única que revela quem está com mais fome",
+      "mapeamento": {
+        "glicose_normal": "Um carro comum que entra por um pedágio, paga a tarifa e segue livremente pela estrada adiante",
+        "fdg": "Um carro disfarçado de carro comum, que consegue entrar pelo mesmo pedágio, mas cuja cancela de saída, do outro lado, está emperrada só para ele — ele entra, mas não sai",
+        "transportador_glut_hexoquinase": "A cancela de entrada do pedágio, que deixa passar tanto o carro comum quanto o disfarçado, e cobra pedágio (fosforilação) de ambos igualmente",
+        "bloqueio_metabolico_apos_fosforilacao": "A cancela de saída emperrada, que só existe para o carro disfarçado — o carro comum sai normalmente pela via glicolítica adiante, mas o disfarçado fica parado dentro do pátio",
+        "celula_tumoral_com_muitos_transportadores": "Um posto de pedágio com fila enorme de carros disfarçados entrando — porque esse posto específico está anunciando descontos agressivos (mais transportadores GLUT, mais fome de glicose) e atraindo muito mais tráfego que os postos vizinhos",
+        "deteccao_pet": "A câmera aérea que sobrevoa toda a rodovia e simplesmente conta quantos carros disfarçados estão parados em cada pátio — os pátios mais lotados (mais captação) acendem no mapa como pontos quentes",
+        "inibidor_de_glutaminase_ou_idh": "Uma segunda estrada de abastecimento (glutamina, via IDH) que alguns desses postos de pedágio também exploram fortemente — cortar essa segunda estrada é uma segunda estratégia de ataque, ainda em teste em parte dos casos"
+      },
+      "conteudo": "Imagine uma rodovia com vários postos de pedágio (as células do corpo). Todo carro (molécula de glicose) entra, paga a tarifa (é fosforilado pela hexoquinase) e, na maioria dos postos, segue livremente estrada adiante. Só que existe um carro disfarçado de carro comum — o FDG — que consegue entrar e pagar o pedágio normalmente, mas que encontra, do lado de dentro, uma cancela de saída emperrada só para ele: ele fica preso no pátio do posto, sem conseguir prosseguir. Um posto de pedágio que está anunciando descontos agressivos para atrair mais tráfego (mais transportadores de glicose na superfície, metabolismo tumoral reprogramado) recebe muito mais carros disfarçados entrando — e, como eles ficam presos ali dentro, esse posto específico acumula uma fila visível de carros parados. Uma câmera aérea sobrevoando toda a rodovia (o detector do PET) simplesmente fotografa onde essas filas estão mais lotadas, e esses pontos acendem no mapa. É assim, sem nunca 'ver' o tumor diretamente, que o exame revela onde está a fome metabólica mais intensa."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Do transportador GLUT ao ponto quente no PET — a cascata da captação de FDG",
+      "descricao": "Esquema didático em 4 quadros sequenciais: (1) FDG entra na célula tumoral pelo transportador GLUT1 superexpresso; (2) hexoquinase fosforila o FDG a FDG-6-fosfato, igual à glicose comum; (3) o FDG-6-fosfato fica metabolicamente preso, sem prosseguir na via glicolítica; (4) acúmulo intracelular de FDG radioativo aparece como ponto quente na imagem de PET.",
+      "prompt_ia": "Create a clean medical-education vector diagram in Portuguese with 4 sequential panels showing FDG uptake in a tumor cell: (1) FDG entering the cell through an overexpressed GLUT1 transporter, labeled 'Captação pelo transportador GLUT1'; (2) hexokinase phosphorylating FDG into FDG-6-phosphate, labeled 'Fosforilação pela hexoquinase'; (3) FDG-6-phosphate trapped inside the cell unable to proceed in glycolysis, labeled 'Bloqueio metabólico — FDG fica retido'; (4) a stylized PET scan image showing a hot spot corresponding to that cell's location, labeled 'Acúmulo visível como ponto quente no PET'. Flat vector style, medical blue and amber palette, neutral adaptive background, clear Portuguese labels and arrows."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "PET-FDG de corpo inteiro em estadiamento oncológico",
+      "descricao": "Imagem real de PET-scan com FDG de corpo inteiro (projeção de intensidade máxima) mostrando múltiplos focos de captação aumentada em linfonodos e em lesão visceral, ilustrando o uso do exame para estadiamento oncológico.",
+      "tipo_imagem": "imagem_real",
+      "fonte": "Radiopaedia.org",
+      "licenca": "CC-BY-NC-SA",
+      "rotulo": "✓ real"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "TC versus PET-FDG na avaliação de resposta ao tratamento",
+      "descricao": "Comparação lado a lado de imagem de tomografia (mostrando massa residual de tamanho inalterado) e PET-FDG correspondente (mostrando ausência de captação na mesma massa), ilustrando a defasagem entre resposta anatômica e resposta metabólica ao tratamento.",
+      "prompt_ia": "Create a clean medical-education side-by-side comparison diagram in Portuguese: left panel shows a CT scan cross-section with a labeled residual mass of unchanged size after treatment ('TC — massa residual de tamanho inalterado'); right panel shows the corresponding PET-FDG image of the same region with no significant uptake in that mass ('PET-FDG — ausência de captação: resposta metabólica completa'). Flat vector style, medical blue and amber palette, neutral adaptive background, clear Portuguese labels.",
+      "tipo_imagem": "esquema_didatico",
+      "rotulo": "◇ esquema"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O pedágio de mão única — analogia visual da retenção do FDG",
+      "descricao": "Ilustração conceitual da analogia central do bloco: um posto de pedágio com carros comuns entrando e saindo livremente, e carros disfarçados (representando o FDG) presos no pátio interno por uma cancela de saída emperrada, com uma câmera aérea sobrevoando e destacando o posto mais lotado.",
+      "prompt_ia": "Create a whimsical but clean vector illustration in Portuguese of a highway toll booth scenario: regular cars entering and exiting freely on one side, and disguised cars (representing FDG) stuck inside the booth yard on the other side because the exit gate is jammed only for them. Show an aerial camera view highlighting the most crowded booth as a glowing hot spot. Flat vector illustration style, warm and cool color palette, neutral adaptive background, clear Portuguese labels.",
+      "tipo_imagem": "esquema_didatico",
+      "rotulo": "◇ esquema"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Fechamento: o módulo de Hallmarks está completo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Com este quarto capítulo, fecha-se o módulo aberto pelo bloco-pai: cada uma das quatro capacidades que ele escolheu aprofundar — angiogênese induzida, resistência à apoptose e imortalização replicativa, evasão da vigilância imunológica e reprogramação metabólica — foi traduzida em alvo terapêutico real, com seu próprio biomarcador preditivo, sua própria toxicidade característica e, neste último caso, também sua própria aplicação diagnóstica direta. Guarde o padrão que se repetiu nos quatro blocos: capacidade biológica adquirida → dependência exposta → fármaco que explora essa dependência → biomarcador que prevê quem se beneficia → toxicidade previsível pelo próprio mecanismo de ação. Esse padrão de raciocínio, mais do que qualquer nome de fármaco isolado, é o que vai orientar sua leitura de qualquer terapia-alvo nova que surgir ao longo da carreira. O próximo tema do módulo 01 muda de pergunta: não mais 'que capacidade o tumor conquistou', mas 'como e para onde, uma vez conquistadas essas capacidades, o tumor efetivamente se espalha' — os padrões de disseminação e metástase."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s9-onco-01-003",
+        "titulo": "Hallmarks do Câncer como Alvos Terapêuticos",
+        "disciplina": "Oncologia",
+        "semestre": 9,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco é o quarto e último dos quatro filhos anunciados pelo bloco-pai, que estabeleceu o princípio geral de que cada hallmark do câncer é uma dependência farmacologicamente explorável. Aqui esse princípio é aplicado à reprogramação metabólica, com o adendo de que essa mesma dependência também sustenta uma ferramenta diagnóstica de uso diário."
+      },
+      {
+        "bloco_id": "s4-patol1-07-044",
+        "titulo": "Reprogramação Metabólica — O Efeito Warburg",
+        "disciplina": "Anatomia Patológica I — Patologia Geral",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Fornece o mecanismo molecular completo de por que a célula tumoral realiza glicólise aeróbica mesmo com oxigênio disponível — este bloco assume esse mecanismo pronto e foca exclusivamente em suas duas consequências práticas: a ferramenta diagnóstica (PET-FDG) e os alvos farmacológicos emergentes (glutaminase, IDH1/IDH2)."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": "s8-farma-onco-01-000",
+        "disciplina": "Farmacologia",
+        "semestre_futuro": 8,
+        "topico": "Doses, critérios de seleção de subgrupo molecular e algoritmos de manejo de toxicidade dos inibidores de IDH mutante e de glutaminase",
+        "mecanismo_conexao": "A farmacologia oncológica detalhará esquemas de dose, critérios formais de seleção de paciente por teste molecular prévio e manejo de efeitos adversos característicos dessas classes emergentes, apenas panoramicamente citadas aqui.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": "s5-patol-onco-01-000",
+        "disciplina": "Patologia Oncológica / Imuno-histoquímica",
+        "semestre_futuro": 5,
+        "topico": "Testes moleculares que identificam mutação de IDH1/IDH2 em amostra tumoral",
+        "mecanismo_conexao": "O sequenciamento molecular ou a imuno-histoquímica específica que detecta a proteína IDH mutante fornece o dado objetivo que autoriza, em subgrupos definidos, o uso de inibidor de IDH — apenas mencionado aqui como pré-condição para a escolha do fármaco.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "Radiologia / Medicina Nuclear",
+        "semestre_futuro": 9,
+        "topico": "Critérios formais de interpretação de PET-FDG (como os critérios de Deauville em linfoma) e padrões de captação fisiológica que podem confundir a leitura",
+        "mecanismo_conexao": "A medicina nuclear aprofundará os critérios padronizados de leitura de PET-FDG por tipo de tumor, incluindo escalas de resposta e armadilhas de interpretação além das mencionadas panoramicamente aqui.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-patol1-07-044",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "A biologia molecular do efeito Warburg (causa) é a base sobre a qual este bloco constrói tanto a ferramenta diagnóstica quanto a farmacologia emergente (efeitos aplicados)."
+      },
+      {
+        "bloco_id": "s9-onco-01-003-03",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "O bloco-irmão anterior sobre evasão imune segue o mesmo padrão de raciocínio (dependência → fármaco/ferramenta → biomarcador → limitação), mas ali a ferramenta era puramente terapêutica; aqui a mesma dependência sustenta primariamente uma ferramenta diagnóstica, com a farmacologia ainda em fronteira de desenvolvimento."
+      },
+      {
+        "bloco_id": "s9-onco-01-003-01",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Enquanto o bloco de angiogênese apresenta uma classe de fármaco (antiangiogênicos) já consolidada em guideline, este bloco contrasta deliberadamente maturidade de desenvolvimento: PET-FDG é ferramenta madura e rotineira; inibidores de glutaminase e de IDH são, em graus diferentes, fronteira em construção."
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "tipo": "por_que",
+      "pergunta": "Por que a reprogramação metabólica do câncer permite construir um exame de imagem, mesmo sem saber qual mutação específica cada tumor individual carrega?",
+      "resposta": "Porque o efeito Warburg é uma característica compartilhada pela grande maioria dos tumores sólidos, independentemente da mutação específica que o originou — é uma consequência convergente, não uma via única. Isso significa que um único traçador (FDG) que explora essa fome aumentada por glicose consegue destacar praticamente qualquer tumor com essa reprogramação ativa, sem precisar de um traçador diferente para cada genótipo tumoral. É a universalidade do fenômeno, não sua especificidade molecular, que torna o PET-FDG um exame de amplo espectro em oncologia.",
+      "nivel_alvo": 3
+    },
+    {
+      "tipo": "mecanismo",
+      "pergunta": "Descreva a cascata completa que explica por que o FDG fica retido dentro da célula tumoral e não prossegue como a glicose comum.",
+      "resposta": "O FDG entra na célula pelo mesmo transportador GLUT usado pela glicose comum, frequentemente superexpresso em células tumorais. Dentro da célula, a hexoquinase fosforila o FDG a FDG-6-fosfato, replicando a primeira etapa normal da glicólise. A partir daí, porém, a modificação química no carbono 2 da molécula impede que o FDG-6-fosfato prossiga para as etapas seguintes da via glicolítica — ele fica metabolicamente preso. Como a maioria dos tecidos tem baixa atividade da enzima que poderia desfosforilá-lo de volta, o FDG radioativo se acumula dentro da célula proporcionalmente à sua captação inicial, e esse acúmulo é o que o detector do PET converte em imagem.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se não existisse a diferença entre resposta anatômica (tamanho na TC) e resposta metabólica (captação no PET-FDG), o que se perderia na avaliação de tratamento oncológico?",
+      "resposta": "Perderia-se a capacidade de detectar resposta ao tratamento precocemente, antes que a massa tumoral efetivamente diminua de tamanho. Uma massa residual de tecido necrótico e fibrose pode levar semanas a meses para encolher na TC, mesmo que as células tumorais já tenham morrido metabolicamente. Sem o PET-FDG, o oncologista dependeria apenas da anatomia, atrasando decisões importantes — continuar, trocar ou encerrar uma linha de tratamento — que hoje podem ser antecipadas justamente porque a atividade metabólica muda antes do tamanho.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "clinico",
+      "pergunta": "Paciente com histórico de câncer colorretal operado há três semanas realiza PET-FDG de controle, que mostra captação aumentada exatamente no sítio da anastomose cirúrgica. Por que essa captação não deve ser automaticamente interpretada como recidiva tumoral?",
+      "resposta": "Tecido inflamatório e cicatricial pós-operatório recente também tem demanda metabólica aumentada e capta FDG intensamente, por razões completamente diferentes da reprogramação oncogênica — inflamação ativa, não malignidade. Interpretar esse achado como recidiva certa poderia levar a biópsia desnecessária ou reinício precipitado de tratamento oncológico. A conduta correta é correlacionar com o tempo desde a cirurgia (captação inflamatória pós-operatória tende a diminuir com o tempo), o quadro clínico e, se necessário, repetir o exame mais tardiamente ou confirmar por biópsia antes de mudar conduta.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "comparacao",
+      "pergunta": "Compare o estágio de desenvolvimento clínico dos inibidores de glutaminase com o dos inibidores de IDH1/IDH2 mutante como estratégias de alvo metabólico em oncologia.",
+      "resposta": "Inibidores de glutaminase (como o telaglenastat) permanecem, predominantemente, em fase de investigação clínica, sem aprovação regulatória amplamente estabelecida — a estratégia é promissora mas ainda não madura. Inibidores de IDH1/IDH2 mutante, por outro lado, já alcançaram aprovação clínica em subgrupos moleculares específicos, notavelmente certas leucemias mieloides agudas e gliomas com essa mutação documentada — sendo, junto aos inibidores de checkpoint em tumores MSI-alto, um dos primeiros exemplos em que a genética molecular do metabolismo tumoral orienta diretamente a escolha do fármaco, independentemente do órgão de origem.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "armadilha",
+      "pergunta": "Um estudante afirma: 'Já que todo tumor tem efeito Warburg, todo paciente com câncer é candidato a tratamento com inibidor de IDH ou de glutaminase.' O que está errado nesse raciocínio?",
+      "resposta": "O erro é confundir a universalidade do efeito Warburg (glicólise aeróbica, presente na maioria dos tumores sólidos, e que sustenta o PET-FDG como exame de amplo espectro) com a especificidade dos alvos farmacológicos discutidos aqui. Inibidores de IDH mutante só fazem sentido em tumores que carregam especificamente essa mutação — uma fração pequena e definida de gliomas e leucemias — confirmada por teste molecular prévio. Inibidores de glutaminase ainda estão em investigação e não têm indicação estabelecida generalizada. Ter efeito Warburg não equivale a ter a mutação ou a dependência específica que cada um desses fármacos explora.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "sintese_transdisciplinar",
+      "pergunta": "Conecte o mecanismo do efeito Warburg (Patologia Geral, S4) com a interpretação de um PET-FDG em estadiamento oncológico (Radiologia/Medicina Nuclear) e com a decisão de manter ou trocar quimioterapia num paciente com linfoma em tratamento (Conduta Oncológica).",
+      "resposta": "Em Patologia Geral você aprendeu que a célula tumoral realiza glicólise aeróbica, captando glicose vorazmente mesmo com oxigênio disponível. Na radiologia/medicina nuclear, essa mesma voracidade é explorada pelo FDG, um análogo de glicose que fica retido dentro da célula após fosforilação, permitindo localizar tumores por imagem de corpo inteiro. Na conduta oncológica, essa mesma captação, reavaliada após alguns ciclos de tratamento, informa se a massa residual visível na TC ainda é metabolicamente ativa (indicando doença viva, sugerindo trocar de linha terapêutica) ou já perdeu captação (indicando resposta metabólica completa, sugerindo manter a estratégia atual) — a mesma reprogramação metabólica estudada na bancada de patologia acaba, ao final, orientando uma decisão de conduta à beira do leito.",
+      "nivel_alvo": 5
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "caso-01-pet-fdg-resposta-metabolica-linfoma",
+      "titulo": "A Massa que Não Encolheu, Mas Já Não Brilhava",
+      "apresentacao": "Homem de 44 anos com linfoma difuso de grandes células B, estádio III ao diagnóstico, completou quatro ciclos de quimioimunoterapia de um total de seis planejados. Tomografia de reavaliação mostra massa mediastinal residual de 3,2 cm, praticamente do mesmo tamanho que a lesão de 3,6 cm vista antes do tratamento. A equipe assistente solicita PET-FDG antes de decidir se muda o esquema terapêutico por suposta refratariedade.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Antes do tratamento, as células linfomatosas mantinham reprogramação metabólica intensa (efeito Warburg), com alta expressão de transportadores de glicose e captação vorazmente aumentada de FDG. Após quatro ciclos de quimioimunoterapia eficaz, a maior parte dessas células morreu, mas o tecido residual (fibrose, restos celulares, inflamação reparadora) ainda ocupa volume físico semelhante ao da massa original."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A massa mediastinal, anatomicamente, ainda mede 3,2 cm — muito próxima do tamanho pré-tratamento — porque o processo de reabsorção de tecido necrótico e fibrótico é lento e não acompanha, no mesmo ritmo, a morte celular já ocorrida."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Se a decisão terapêutica dependesse apenas do critério anatômico (tamanho na TC), a massa persistente sugeriria falha de tratamento — uma leitura equivocada, porque tamanho e viabilidade metabólica são parâmetros diferentes e podem estar dissociados nesta fase do tratamento."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Clinicamente, o paciente está assintomático, sem febre, sudorese noturna ou perda de peso — sinais que, se presentes, reforçariam suspeita de doença ativa. O achado isolado de imagem anatômica sem correlação metabólica é insuficiente para definir conduta."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O PET-FDG mostra ausência de captação significativa na massa residual, compatível com resposta metabólica completa (Deauville escore baixo). A equipe mantém o esquema terapêutico planejado, sem trocar de linha, reconhecendo que a massa remanescente é tecido residual inerte, não doença ativa — decisão que seria diferente, e potencialmente equivocada, se baseada apenas no tamanho inalterado à tomografia."
+        }
+      ],
+      "conexao_com_bloco": "O caso aplica diretamente o princípio central deste bloco: tamanho anatômico e atividade metabólica são relógios diferentes, e a mesma reprogramação metabólica estudada na base molecular (efeito Warburg) é o que permite ao PET-FDG revelar, com mais rapidez que a TC isolada, se um tumor está realmente vivo ou já morreu metabolicamente.",
+      "disciplinas_relacionadas": [
+        "Oncologia",
+        "Hematologia",
+        "Medicina Nuclear"
+      ],
+      "diagnostico_revelado": "Resposta metabólica completa em linfoma difuso de grandes células B, com massa residual anatômica correspondendo a tecido fibrótico/necrótico inerte, não a doença ativa.",
+      "tratamento_resumido": "Manutenção do esquema de quimioimunoterapia planejado, sem escalonamento nem troca de linha, com reavaliação de imagem ao final do tratamento completo."
+    }
+  ],
+  "midia": {
+    "imagens": [
+      {
+        "id": "img-001-cascata-captacao-fdg",
+        "titulo": "Do transportador GLUT ao ponto quente no PET — a cascata da captação de FDG",
+        "descricao": "Esquema didático em 4 quadros mostrando captação pelo GLUT1, fosforilação pela hexoquinase, bloqueio metabólico do FDG-6-fosfato e acúmulo visível como ponto quente no PET.",
+        "tipo_imagem": "esquema_didatico",
+        "rotulo": "◇ esquema"
+      },
+      {
+        "id": "img-002-pet-fdg-corpo-inteiro",
+        "titulo": "PET-FDG de corpo inteiro em estadiamento oncológico",
+        "descricao": "Imagem real de PET-scan de corpo inteiro com múltiplos focos de captação aumentada, ilustrando uso do exame para estadiamento.",
+        "tipo_imagem": "imagem_real",
+        "fonte": "Radiopaedia.org",
+        "licenca": "CC-BY-NC-SA",
+        "rotulo": "✓ real"
+      },
+      {
+        "id": "img-003-tc-vs-pet-resposta-tratamento",
+        "titulo": "TC versus PET-FDG na avaliação de resposta ao tratamento",
+        "descricao": "Comparação lado a lado de TC (massa residual de tamanho inalterado) e PET-FDG (ausência de captação na mesma massa), ilustrando defasagem entre resposta anatômica e metabólica.",
+        "tipo_imagem": "esquema_didatico",
+        "rotulo": "◇ esquema"
+      },
+      {
+        "id": "img-004-pedagio-mao-unica-analogia",
+        "titulo": "O pedágio de mão única — analogia visual da retenção do FDG",
+        "descricao": "Ilustração conceitual da analogia central do bloco: posto de pedágio com carros disfarçados presos no pátio, e câmera aérea destacando o posto mais lotado.",
+        "tipo_imagem": "esquema_didatico",
+        "rotulo": "◇ esquema"
+      }
+    ],
+    "videos": [],
+    "audios": []
+  },
+  "horizonte_validade": "volatil",
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "procedencia": {
+    "gerado_por": "agente-produtor-anima-s9-onco-01",
+    "data_geracao": "2026-07-05",
+    "revisado_por": null,
+    "data_revisao": null,
+    "nivel_confianca": "estudo"
+  },
+  "fontes": [
+    {
+      "tipo": "paper",
+      "citacao": "Hanahan D, Weinberg RA. Hallmarks of Cancer: The Next Generation. Cell. 2011.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Kumar, Abbas, Aster. Robbins & Cotran Pathologic Basis of Disease, 10ª ed., 2020.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 13ª ed., 2017.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "National Comprehensive Cancer Network (NCCN). Clinical Practice Guidelines in Oncology, 2026.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "paper",
+      "citacao": "Cheson BD, et al. Recommendations for Initial Evaluation, Staging, and Response Assessment of Hodgkin and Non-Hodgkin Lymphoma: The Lugano Classification. J Clin Oncol. 2014. [⚠️ VERIFICAR: base dos critérios de Deauville citados panoramicamente neste bloco; detalhamento fica para bloco futuro de Medicina Nuclear]",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "O PET-FDG enxerga diretamente o tumor, como se fosse uma 'foto do câncer'",
+      "correcao": "O PET-FDG enxerga a reprogramação metabólica (captação aumentada de glicose), não o tumor em si. Tecidos normais com alto metabolismo basal (cérebro, miocárdio) e processos não malignos com metabolismo aumentado (inflamação, infecção, cicatrização) também captam FDG, exigindo correlação clínica cuidadosa.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Se a massa tumoral não diminuiu de tamanho na TC, o tratamento certamente falhou",
+      "correcao": "Tamanho anatômico e atividade metabólica podem estar dissociados, especialmente logo após tratamento eficaz — massa residual de tecido necrótico/fibrótico pode persistir fisicamente por tempo, mesmo com resposta metabólica completa já demonstrada pelo PET-FDG.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Já que todo tumor tem efeito Warburg, qualquer paciente oncológico é candidato a inibidor de glutaminase ou de IDH",
+      "correcao": "A universalidade do efeito Warburg sustenta o PET-FDG como exame de amplo espectro, mas os fármacos que atacam vias metabólicas específicas (glutaminase, IDH mutante) exigem dependência ou mutação específica, presente apenas em subgrupos moleculares definidos e confirmados por teste prévio.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Inibidores de glutaminase e inibidores de IDH mutante estão no mesmo estágio de maturidade clínica",
+      "correcao": "Inibidores de IDH mutante já têm aprovação clínica estabelecida em subgrupos específicos (certas leucemias mieloides agudas e gliomas); inibidores de glutaminase permanecem majoritariamente em fase de investigação, sem aprovação regulatória amplamente consolidada.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "fluorodesoxiglicose",
+      "termo_es": "fluorodesoxiglucosa",
+      "termo_en": "fluorodeoxyglucose",
+      "abreviatura": "FDG / FDG / FDG"
+    },
+    {
+      "termo_pt": "tomografia por emissão de pósitrons",
+      "termo_es": "tomografía por emisión de positrones",
+      "termo_en": "positron emission tomography",
+      "abreviatura": "PET / PET / PET"
+    },
+    {
+      "termo_pt": "resposta metabólica completa",
+      "termo_es": "respuesta metabólica completa",
+      "termo_en": "complete metabolic response",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "inibidor de glutaminase",
+      "termo_es": "inhibidor de glutaminasa",
+      "termo_en": "glutaminase inhibitor",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "agente-produtor-anima-s9-onco-01",
+      "mudanca": "Criação do bloco completo",
+      "motivo": "Produção do quarto e último filho de s9-onco-01-003, fechando o módulo de Hallmarks do Câncer como Alvos Terapêuticos. Re-escopo explícito: patol1 (s4-patol1-07-044) esgota o mecanismo do efeito Warburg; este bloco foca em ferramenta diagnóstica (PET-FDG) e alvos metabólicos emergentes (glutaminase, IDH1/IDH2)."
+    }
+  ],
+  "_interna": {
+    "nota_producao": "Bloco-folha, quarto e último filho de s9-onco-01-003, irmão imediato de s9-onco-01-003-03 (evasão imune/imunoterapia). Não repete o mecanismo do efeito Warburg (já esgotado em s4-patol1-07-044) — assume-o pronto e foca em duas consequências práticas: PET-FDG como ferramenta diagnóstica madura (estadiamento, avaliação de resposta, detecção de recidiva) e alvos metabólicos emergentes (inibidores de glutaminase em investigação, inibidores de IDH1/IDH2 já aprovados em subgrupos moleculares específicos). Marcações [⚠️ VERIFICAR] aplicadas a status de desenvolvimento de glutaminase e a detalhes regulatórios/bula de IDH, conforme Regra 4 do briefing e Cap. 16 da Filosofia.",
+    "granularidade_check": "✓ Um tema = um bloco. Tema é: 'o metabolismo tumoral alterado (já estudado em patol1) vira ferramenta diagnóstica via PET-FDG e pista terapêutica via alvos metabólicos emergentes'. Não repetiu o mecanismo do efeito Warburg nem expandiu para farmacologia detalhada de cada classe (fica para s8-farma-onco-01-000) nem para critérios técnicos completos de PET (fica para bloco futuro de Medicina Nuclear).",
+    "continuidade_com_pai_e_irmao": "✓ Abertura reconhece explicitamente o bloco irmão anterior ('Volte ao tumor board dos três blocos anteriores... antes mesmo de qualquer discussão sobre bevacizumabe, venetoclax ou pembrolizumabe') e o pré-requisito patol1 ('Você já sabe, do bloco de Reprogramação Metabólica... Este bloco não volta a essa pergunta mecanística'). Fecha sinalizando explicitamente que o módulo de Hallmarks está completo e aponta para o próximo tema do módulo 01 (s9-onco-01-004, padrões de disseminação e metástase).",
+    "checklist_8_etapas": "✓ POR QUE EXISTE (como usar a fome metabólica do tumor a favor do diagnóstico) → COMO SE RESOLVE (traçador que se acumula diferencialmente, FDG) → DO QUE É FEITO (GLUT + hexoquinase + bloqueio metabólico pós-fosforilação) → COMO FUNCIONA (passo a passo de 4 etapas da captação, uso clínico em estadiamento/resposta/recidiva) → COM O QUE SE ARTICULA (patol1 S4, farmacologia S8, patologia molecular S5, medicina nuclear) → NOME+ETIMOLOGIA (fluorodesoxiglicose) → ANALOGIA (pedágio de mão única, mapeamento explícito) → IMAGEM (4 imagens: esquema de cascata, PET real, comparação TC/PET, analogia visual)."
+  }
+}

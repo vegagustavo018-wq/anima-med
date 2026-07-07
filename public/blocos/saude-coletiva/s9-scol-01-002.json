@@ -172,7 +172,8 @@
         "disciplina": "epidemiologia",
         "semestre_futuro": 9,
         "topico": "Medidas de Associação e Risco — Relative Risk, Odds Ratio, Razão de Disparidade",
-        "mecanismo_conexao": "Medidas de frequência (incidência, prevalência) são base. Medidas de associação (RR, OR) usam frequência para comparar grupos."
+        "mecanismo_conexao": "Medidas de frequência (incidência, prevalência) são base. Medidas de associação (RR, OR) usam frequência para comparar grupos.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "tipo": "RECONHECIMENTO_CLINICO",
@@ -180,7 +181,8 @@
         "disciplina": "clinica",
         "semestre_futuro": 10,
         "topico": "Interpretação de Resultados de Teste Diagnóstico — Sensibilidade, Especificidade, Valor Preditivo",
-        "mecanismo_conexao": "Sensibilidade e especificidade são medidas de frequência aplicadas a testes — quanto acertam em doentes e quanto acertam em saudáveis."
+        "mecanismo_conexao": "Sensibilidade e especificidade são medidas de frequência aplicadas a testes — quanto acertam em doentes e quanto acertam em saudáveis.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "tipo": "MECANISMO_COMPARTILHADO",
@@ -188,13 +190,14 @@
         "disciplina": "saude-coletiva",
         "semestre_futuro": 9,
         "topico": "Vigilância Epidemiológica em Tempo Real — Detecção de Surtos",
-        "mecanismo_conexao": "Vigilância funciona porque mede incidência continuamente — quando incidência sobe acima do esperado, surge alerta de surto."
+        "mecanismo_conexao": "Vigilância funciona porque mede incidência continuamente — quando incidência sobe acima do esperado, surge alerta de surto.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
       {
         "bloco_id": "s9-epi-01-003",
-        "tipo_relacao": "COMPLEMENTO",
+        "tipo_relacao": "EXEMPLO_PARALELO",
         "explicacao": "Epidemiologia estuda padrão de doença. Medidas de frequência são as ferramentas que epidemiologia usa para descrever padrão."
       }
     ]
@@ -203,37 +206,44 @@
     {
       "card_id": "s9-scol-01-002-fc01",
       "pergunta": "Por que tuberculose com 'incidência alta mas prevalência baixa' requer estrutura diferente de tuberculose com 'incidência baixa mas prevalência alta'?",
-      "resposta": "**Incidência alta, prevalência baixa**: significa muita gente fica doente, mas cure rápido. Exemplo: TB do tipo que responde bem a medicação (não resistente). Sistema precisa de: leitos de isolamento para pico (porque muita gente fica internada simultaneamente), equipe para tratar novos casos rápido. Precisa de preparação para evento agudo. **Incidência baixa, prevalência alta**: significa poucos novos casos, mas quem tem carrega cronicamente. Exemplo: TB tratada inadequadamente, deixa sequelas crônicas (cicatrizes pulmonares). Sistema precisa de: ambulatórios, atendimento crônico contínuo por anos, reabilitação pulmonar. Precisa de rede estruturada de longo prazo. Estrutura é inversa — uma precisa de 'surge', outra de 'sustentabilidade'."
+      "resposta": "**Incidência alta, prevalência baixa**: significa muita gente fica doente, mas cure rápido. Exemplo: TB do tipo que responde bem a medicação (não resistente). Sistema precisa de: leitos de isolamento para pico (porque muita gente fica internada simultaneamente), equipe para tratar novos casos rápido. Precisa de preparação para evento agudo. **Incidência baixa, prevalência alta**: significa poucos novos casos, mas quem tem carrega cronicamente. Exemplo: TB tratada inadequadamente, deixa sequelas crônicas (cicatrizes pulmonares). Sistema precisa de: ambulatórios, atendimento crônico contínuo por anos, reabilitação pulmonar. Precisa de rede estruturada de longo prazo. Estrutura é inversa — uma precisa de 'surge', outra de 'sustentabilidade'.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-01-002-fc02",
       "pergunta": "Explique: Incidência de TB cai de 40 para 20 casos/100k/ano (controle bem-sucedido). Mas Prevalência cai de 300 para 250 casos/100k (redução pequena). Como é possível?",
-      "resposta": "Porque incidência e prevalência têm dinâmicas diferentes. Incidência caindo 50% significa que metade menos pessoas estão ficando doentes — controle está funcionando. Mas prevalência depende também de quanto consegue curar os antigos. Se há 300 TB: 250 estão em tratamento (vão curar), 50 têm TB crônica/resistente/abandonaram tratamento (não curam). Com incidência caindo (menos 20 novos casos/ano), espera-se: 250 curam + 20 novos = 270 (prevalência caiu de 300 para 270, redução pequena). A lição: incidência é 'entrada', prevalência é 'saída' + 'entrada' juntas. Pode controlar entrada (incidência) sem ver grande queda em prevalência se a saída (cura) está lenta. Ambas importam."
+      "resposta": "Porque incidência e prevalência têm dinâmicas diferentes. Incidência caindo 50% significa que metade menos pessoas estão ficando doentes — controle está funcionando. Mas prevalência depende também de quanto consegue curar os antigos. Se há 300 TB: 250 estão em tratamento (vão curar), 50 têm TB crônica/resistente/abandonaram tratamento (não curam). Com incidência caindo (menos 20 novos casos/ano), espera-se: 250 curam + 20 novos = 270 (prevalência caiu de 300 para 270, redução pequena). A lição: incidência é 'entrada', prevalência é 'saída' + 'entrada' juntas. Pode controlar entrada (incidência) sem ver grande queda em prevalência se a saída (cura) está lenta. Ambas importam.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-01-002-fc03",
       "pergunta": "Se você fosse gestor de saúde e epidemiologista relatasse 'incidência de hipertensão é 5% ao ano', você continuaria financiando programa? Por quê?",
-      "resposta": "Sim e por razão clara: incidência de 5% ao ano significa 5.000 pessoas por 100 mil população ficam hipertensas todo ano. Em 10 anos, sem controle, seriam 50.000 por 100 mil (mais que 100% da população — o que faz sentido porque pessoas envelhecem continuamente). Incidência é DINÂMICA — pequena taxa repetida no tempo = epidemia inevitável. Se você não intervir, em 30 anos, 100% da população terá hipertensão (e será morta por complicação antes, então, morte precoce em massa). Incidência baixa está enganando — é como vazamento pequeno em navio: continua todos os dias, navio afunda lentamente. Gestor que financia programa para 'evitar novos 5% ao ano' está evitando que epidemia cresça — decisão estratégica correta."
+      "resposta": "Sim e por razão clara: incidência de 5% ao ano significa 5.000 pessoas por 100 mil população ficam hipertensas todo ano. Em 10 anos, sem controle, seriam 50.000 por 100 mil (mais que 100% da população — o que faz sentido porque pessoas envelhecem continuamente). Incidência é DINÂMICA — pequena taxa repetida no tempo = epidemia inevitável. Se você não intervir, em 30 anos, 100% da população terá hipertensão (e será morta por complicação antes, então, morte precoce em massa). Incidência baixa está enganando — é como vazamento pequeno em navio: continua todos os dias, navio afunda lentamente. Gestor que financia programa para 'evitar novos 5% ao ano' está evitando que epidemia cresça — decisão estratégica correta.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-01-002-fc04",
       "pergunta": "Aldeia A: incidência TB = 100 casos/100k/ano. Aldeia B: incidência TB = 10 casos/100k/ano. Razão de Risco = 10. Interprete: qual aldeia está em surto? Por quê?",
-      "resposta": "Aldeia A está em surto (comparado a aldeia B). Razão de Risco = 10 significa aldeia A tem 10 VEZES maior risco que aldeia B. Se você esperaria 10 casos naturalmente, aldeia A tendo 100 é 10 vezes demais. Interpretação: (1) Aldeia A tem TB ativa circulando — há transmissão aumentada. (2) Ou aldeia A tem determinantes sociais pior — pobreza, falta de saneamento. (3) Gestor saberia: para igualar aldeia B, precisa reduzir TB em aldeia A em 90% (de 100 para 10). Razão de Risco é número puro que permite essa comparação sem se perder em unidades."
+      "resposta": "Aldeia A está em surto (comparado a aldeia B). Razão de Risco = 10 significa aldeia A tem 10 VEZES maior risco que aldeia B. Se você esperaria 10 casos naturalmente, aldeia A tendo 100 é 10 vezes demais. Interpretação: (1) Aldeia A tem TB ativa circulando — há transmissão aumentada. (2) Ou aldeia A tem determinantes sociais pior — pobreza, falta de saneamento. (3) Gestor saberia: para igualar aldeia B, precisa reduzir TB em aldeia A em 90% (de 100 para 10). Razão de Risco é número puro que permite essa comparação sem se perder em unidades.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-01-002-fc05",
       "pergunta": "Por que a palavra 'incidência' (do latim 'cair sobre') é mais apropriada que 'aparição' para descrever novos casos?",
-      "resposta": "'Cair sobre' captura movimento dinâmico — doença está chegando, invadindo, acaecendo subitamente. 'Aparição' é mais estático. Incidência responde pergunta 'que tão rápido a doença está invadindo a população?'. Palavra 'cair' (incidere) reflete a natureza abrupta de epidemia — casos 'caem' sobre população sem aviso. É escolha etimológica que reflete realidade epidemiológica."
+      "resposta": "'Cair sobre' captura movimento dinâmico — doença está chegando, invadindo, acaecendo subitamente. 'Aparição' é mais estático. Incidência responde pergunta 'que tão rápido a doença está invadindo a população?'. Palavra 'cair' (incidere) reflete a natureza abrupta de epidemia — casos 'caem' sobre população sem aviso. É escolha etimológica que reflete realidade epidemiológica.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-01-002-fc06",
       "pergunta": "Integre: Um país mede incidência de TB = 40 casos/100k/ano. População = 50 milhões. Que planejamento de recurso você faria?",
-      "resposta": "Cálculo: 50 milhões × (40/100.000) = 20.000 novos casos/ano = ~55 novos casos/dia (em média). Mas incidência tem sazonalidade — pico é inverno (2x média), baixa é verão (0.5x média). Logo: no pico inverno, espera ~110 novos casos/dia; verão ~27 novos casos/dia. Planejamento: (1) Cada centro de TB precisa de ~5-10 novos pacientes/dia → precisa de 11-20 centros país inteiro para pico. (2) Cada paciente TB ativa trata 6 meses = precisa capacidade para atender 55 pacientes-mês/dia × 6 meses × 12 meses = 39.600 pacientes-mês/ano em pipeline. (3) Equipe: 1 médico generalista cuida de ~50 pacientes TB em acompanhamento. Logo precisa 800 médicos dedicados país inteiro. (4) Treinamento de profissionais, protocolo de notificação, medicação em estoque, infraestrutura. Tudo flui de UMA medida: incidência = 40 casos/100k/ano."
+      "resposta": "Cálculo: 50 milhões × (40/100.000) = 20.000 novos casos/ano = ~55 novos casos/dia (em média). Mas incidência tem sazonalidade — pico é inverno (2x média), baixa é verão (0.5x média). Logo: no pico inverno, espera ~110 novos casos/dia; verão ~27 novos casos/dia. Planejamento: (1) Cada centro de TB precisa de ~5-10 novos pacientes/dia → precisa de 11-20 centros país inteiro para pico. (2) Cada paciente TB ativa trata 6 meses = precisa capacidade para atender 55 pacientes-mês/dia × 6 meses × 12 meses = 39.600 pacientes-mês/ano em pipeline. (3) Equipe: 1 médico generalista cuida de ~50 pacientes TB em acompanhamento. Logo precisa 800 médicos dedicados país inteiro. (4) Treinamento de profissionais, protocolo de notificação, medicação em estoque, infraestrutura. Tudo flui de UMA medida: incidência = 40 casos/100k/ano.",
+      "tipo": "por_que"
     },
     {
       "card_id": "s9-scol-01-002-fc07",
       "pergunta": "Por que vigilância epidemiológica centralizada (SINAN no Brasil) que agrega números de incidência detecta surtos que vigilância descentralizada (cada médico reporta informalmente) não detecta?",
-      "resposta": "Surto é fenômeno de população AGREGADA, não de clínico individual. Um médico vê 5 casos de TB em uma semana — acha 'muitos'. Mas sem contexto, não sabe se é anormal. Outro médico no bairro ao lado vê 3 casos — não comunica. Terceira médica em hospital vê 7 casos — não sabe que outros vizinhos também aumentaram. Cada um acha 'normal' isoladamente. SINAN agrega: 'aquele mês, toda a cidade teve 150 casos de TB em vez de 50 usual' — NOW há surto claro. Agregação transforma ruído (variação aleatória em cada clínico) em sinal (padrão de población verdadeiro). Sem centralização, surto fica invisível porque ninguém tem perspectiva de população."
+      "resposta": "Surto é fenômeno de população AGREGADA, não de clínico individual. Um médico vê 5 casos de TB em uma semana — acha 'muitos'. Mas sem contexto, não sabe se é anormal. Outro médico no bairro ao lado vê 3 casos — não comunica. Terceira médica em hospital vê 7 casos — não sabe que outros vizinhos também aumentaram. Cada um acha 'normal' isoladamente. SINAN agrega: 'aquele mês, toda a cidade teve 150 casos de TB em vez de 50 usual' — NOW há surto claro. Agregação transforma ruído (variação aleatória em cada clínico) em sinal (padrão de población verdadeiro). Sem centralização, surto fica invisível porque ninguém tem perspectiva de população.",
+      "tipo": "por_que"
     }
   ],
   "casos_clinicos": [
@@ -243,32 +253,24 @@
       "apresentacao": "Um município tem população 100 mil. Epidemiologista faz inquérito de TB e encontra: 50 TB ativa diagnosticada + 200 TB latente + ~30 TB em tratamento que vão curar nos próximos 4 meses + estimativa de 50 novos TB/ano que não foram ainda diagnosticados. Pergunta ao gestor: 'qual é sua meta?'. Gestor: 'quero eliminar TB em meu município em 5 anos'. Epidemiologista: 'vamos ver se é possível.'",
       "cascata": [
         {
-          "etapa": "Cálculo de Incidência Atual",
-          "descricao": "50 TB ativa não diagnosticada provavelmente têm 1-2 anos de evolução. Logo, incidência atual é ~50-100 novos casos/ano em população 100k. Incidência = (50-100 / 100.000) × 100 mil = 50-100 casos/100k/ano. Isso é incidência alta (Brasil tem ~40 casos/100k/ano)."
+          "etapa": "Causa",
+          "descricao": "Incidência: 50 TB ativa não diagnosticada provavelmente têm 1-2 anos de evolução. Logo, incidência atual é ~50-100 novos casos/ano em população 100k. Incidência = (50-100 / 100.000) × 100 mil = 50-100 casos/100k/ano. Isso é incidência alta (Brasil tem ~40 casos/100k/ano). Prevalência: TB ativa = 50 diagnosticada + 50 não diagnosticada = 100. TB latente = 200. Prevalência de TB ativa = (100 / 100.000) × 100 mil = 100 casos/100k/ano (alta). Prevalência de TB latente = 200 casos/100k/ano (muito alta)."
         },
         {
-          "etapa": "Cálculo de Prevalência",
-          "descricao": "TB ativa = 50 diagnosticada + 50 não diagnosticada = 100. TB latente = 200. Prevalência de TB ativa = (100 / 100.000) × 100 mil = 100 casos/100k/ano (alta). Prevalência de TB latente = 200 casos/100k/ano (muito alta)."
-        },
-        {
-          "etapa": "Análise: Qual é Gargalo?",
+          "etapa": "Estrutura Afetada",
           "descricao": "TB latente (200 pessoas) é 'reservatório' — qualquer uma delas pode virar TB ativa. Se município trata 200 TB latente com isoniazida por 6 meses, previne ~200 casos futuros. Isso seria mais impactante que tratar TB ativa diagnosticada."
         },
         {
-          "etapa": "Planejamento de Campanha",
+          "etapa": "Disfunção",
           "descricao": "Meta = reduzir para zero TB em 5 anos. Estratégia: (1) Diagnosticar imediatamente os 50 TB ativa não diagnosticada (campanha de teste em bairros de risco). (2) Tratar os 50 + 30 em tratamento continuando = ~80 tratados esse ano. (3) Oferecer quimioprofilaxia (isoniazida) para os 200 TB latente = ~30 por mês × 12 meses = 360 pacientes-mês de tratamento preventivo."
         },
         {
-          "etapa": "Alocação de Recurso",
+          "etapa": "Sintoma",
           "descricao": "Estrutura necessária: (1) 1-2 UBS com enfermeira dedicada (atende ~20 TB/mês). (2) 1 médico generalista para supervisão. (3) Medicação: TB ativa (80 pacientes × 6 meses = 480 ciclos); TB latente (200 pessoas × 6 meses = 1.200 ciclos). Orçamento: ~R$ 200 mil/ano."
         },
         {
-          "etapa": "Monitoramento Anual",
-          "descricao": "Após 1 ano: remede incidência (novo esperado era ~80 novos casos/ano; conseguiu-se reduzir para 30 novos/ano = 62% de redução, bom progresso). Remede prevalência (100 TB ativa caiu para 40 TB ativa = 60% de redução. Remede TB latente (200 caiu para 50 TB latente após quimioprofilaxia = 75% de redução)."
-        },
-        {
-          "etapa": "Ano 5 — Avaliação Final",
-          "descricao": "Após 5 anos: incidência de TB cai para ~5 novos casos/ano (redução de 90% em relação ao inicial). Prevalência de TB ativa cai para 0 (todos foram tratados/curaram). Prevalência de TB latente cai para 2-3 pessoas (sempre há portadores, impossível chegar a zero absoluto sem vigilância eterna, mas é 99% redução). Meta: 'eliminar TB' é atingida operacionalmente (incidência e prevalência próximas a zero)."
+          "etapa": "Consequência",
+          "descricao": "Monitoramento no ano 1: Após 1 ano: remede incidência (novo esperado era ~80 novos casos/ano; conseguiu-se reduzir para 30 novos/ano = 62% de redução, bom progresso). Remede prevalência (100 TB ativa caiu para 40 TB ativa = 60% de redução. Remede TB latente (200 caiu para 50 TB latente após quimioprofilaxia = 75% de redução). Avaliação no ano 5: Após 5 anos: incidência de TB cai para ~5 novos casos/ano (redução de 90% em relação ao inicial). Prevalência de TB ativa cai para 0 (todos foram tratados/curaram). Prevalência de TB latente cai para 2-3 pessoas (sempre há portadores, impossível chegar a zero absoluto sem vigilância eterna, mas é 99% redução). Meta: 'eliminar TB' é atingida operacionalmente (incidência e prevalência próximas a zero)."
         }
       ],
       "conexao_com_bloco": "Caso ilustra que todo planejamento em Saúde Pública começa em medidas de frequência: incidência (que tão rápido aparece), prevalência (que tão grande é o problema), e depois direciona recurso, define estratégia, monitora progresso. Sem medidas, não há como saber se está funcionando.",
@@ -279,7 +281,7 @@
         "gestao"
       ],
       "diagnostico_revelado": "Alto burden de tuberculose no município (incidência ~80 casos/100k/ano, prevalência de TB ativa = 100 casos/100k/ano, prevalência de TB latente = 200 casos/100k/ano), com potencial de ser eliminada através de diagnóstico rápido + tratamento de TB ativa + quimioprofilaxia em TB latente.",
-      "intervencao_baseada_em_medidas": "Campanha de TB seguiu dois anos de vigilância contínua e replanejamento: Ano 1 — foco em diagnóstico rápido (reduz TB ativa não diagnosticada de 50 para 10). Ano 2 — foco em tratar TB latente em massa (reduz TB latente de 200 para 50, previne futuros casos). Ano 3-5 — vigilância contínua para pegar casos isolados. Resultado: incidência de TB cai 90% em 5 anos, objetivo de 'eliminar TB' é tecnicamente alcançado."
+      "tratamento_resumido": "Campanha de TB seguiu dois anos de vigilância contínua e replanejamento: Ano 1 — foco em diagnóstico rápido (reduz TB ativa não diagnosticada de 50 para 10). Ano 2 — foco em tratar TB latente em massa (reduz TB latente de 200 para 50, previne futuros casos). Ano 3-5 — vigilância contínua para pegar casos isolados. Resultado: incidência de TB cai 90% em 5 anos, objetivo de 'eliminar TB' é tecnicamente alcançado."
     }
   ],
   "midia": {

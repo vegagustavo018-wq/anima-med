@@ -1,53 +1,212 @@
 {
+  "metadata": {
+    "titulo": "Estoque e Liberação de Ca2+",
+    "subtitulo": "Como a célula gerencia seu sinal mais versátil?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 10,
+    "nivel": "CORE",
+    "tags": [
+      "reticulo endoplasmatico",
+      "sinalizacao celular",
+      "homeostase",
+      "calcio"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "O cálcio (Ca2+) é o mensageiro intracelular mais versátil da biologia. Para evitar que ele ative processos celulares de forma desordenada, a célula mantém sua concentração citosólica baixíssima, utilizando o Retículo Endoplasmático (RE) como um verdadeiro bunker de armazenamento. Através de bombas de transporte ativo, o cálcio é estocado dentro do lúmen do RE, estando pronto para ser liberado em milissegundos via canais específicos quando um estímulo chega à superfície celular. Este mecanismo é a base fundamental para eventos tão distintos quanto a contração muscular, a secreção de neurotransmissores e a própria morte celular programada. Compreender essa dinâmica é entender como a célula 'decide' responder ao meio externo, transformando um gradiente químico em uma cascata de eventos biológicos precisos e coordenados.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que a célula é uma cidade vibrante, onde o cálcio é uma moeda de altíssimo valor que, se espalhada pelas ruas sem controle, causaria o caos absoluto. Para evitar esse desastre, a célula mantém o cálcio trancado em cofres ultra-seguros, espalhados por todo o citoplasma."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a célula tem tanto medo do cálcio livre?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O cálcio é um sinalizador potente porque ele se liga a proteínas e altera suas conformações instantaneamente. Se ele estivesse livre no citosol em altas concentrações, ativaria enzimas indiscriminadamente, levando a célula ao colapso metabólico ou à autodestruição. Por isso, a natureza evoluiu um sistema onde o gradiente de Ca2+ entre o retículo e o citosol é de quase 10.000 vezes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi criar um compartimento especializado, o Retículo Endoplasmático, que funciona como um reservatório isolado. Proteínas como a calreticulina e a calsequestrina funcionam como 'esponjas' moleculares dentro do lúmen do RE, prendendo o cálcio e permitindo que a célula armazene grandes quantidades sem que ele exerça pressão osmótica desnecessária."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Imagine uma represa hidrelétrica: O lúmen do RE é o reservatório de água represada, o Ca2+ é a água, a bomba SERCA (que mantém o gradiente) é o sistema que bombeia a água morro acima, e os canais de liberação (IP3R ou Ryanodina) são as comportas. Mapeamento: Água represada = Ca2+ estocado; Comporta fechada = Estado de repouso celular; Abertura da comporta = Sinal de transdução; Energia gerada = Resposta biológica (contração/secreção)."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O gradiente eletroquímico do Ca2+ é a maior bateria de sinalização da célula: ele não exige energia para ser liberado, apenas um sinal de abertura de porta."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire. Entenda que a célula gasta muita energia (ATP) para manter o cálcio fora do citosol. Esse 'custo de manutenção' é o que garante que, quando o sinal chegar, a resposta seja quase instantânea."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Retículo",
+      "origem": "Latim (reticulum)",
+      "significado": "Pequena rede",
+      "explicacao": "O nome refere-se à aparência de rede membranosa observada nas primeiras microscopias eletrônicas, que envolve o núcleo e se estende pelo citoplasma."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o Retículo Endoplasmático perdesse a capacidade de bombear cálcio para dentro, o que aconteceria?",
+      "resposta": "O cálcio citosólico subiria drasticamente. Isso causaria a ativação descontrolada de proteases (como calpaínas), autodigestão celular, ativação de vias apoptóticas e, no caso de células musculares, uma contração permanente (rigor) seguida de necrose."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O Bunker de Cálcio",
+      "descricao": "Esquema mostrando a membrana do RE, a bomba SERCA consumindo ATP para empurrar Ca2+ para dentro, proteínas de ligação (calsequestrina) mantendo o Ca2+ estocado, e canais (IP3R) prontos para abrir.",
+      "prompt_ia": "High-quality 3D scientific rendering of endoplasmic reticulum membrane section. Show ATP-driven SERCA pumps pushing calcium ions (bright glowing blue spheres) into the lumen. Inside the lumen, show large protein clusters (calsequestrin) binding the calcium. On the membrane, show closed ion channels. Clean, minimalist medical illustration style, soft blue and gold lighting, dark background, educational, 4k.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-02-003-03-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual a função biológica das proteínas de ligação ao cálcio (ex: calsequestrina) dentro do lúmen do RE?",
+      "resposta": "Elas diminuem a concentração de Ca2+ livre no lúmen ao sequestrá-lo, permitindo que a célula armazene uma quantidade muito maior de cálcio sem criar uma pressão osmótica excessiva ou precipitação mineral, mantendo-o disponível para liberação rápida.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "re",
+        "calcio",
+        "homeostase"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-02-003-03-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria com a sinalização celular se a enzima SERCA (ATPase de cálcio do RE) fosse inibida permanentemente?",
+      "resposta": "O gradiente de cálcio se dissiparia. A célula perderia a capacidade de responder a estímulos externos que dependem de pulsos de Ca2+, e o cálcio citosólico elevado causaria toxicidade celular e morte por apoptose ou necrose.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "sinalizacao",
+        "serca",
+        "toxicidade"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-02-003-03-fc03",
+      "tipo": "por_que",
+      "pergunta": "Por que o cálcio é considerado um 'segundo mensageiro' ideal?",
+      "resposta": "Porque sua concentração citosólica é extremamente baixa no repouso, permitindo que pequenas entradas de Ca2+ causem grandes mudanças percentuais na sua concentração, funcionando como um interruptor 'liga-desliga' muito sensível.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "sinalizacao",
+        "segundo_mensageiro"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-02-003-03-fc04",
+      "tipo": "comparacao",
+      "pergunta": "Diferencie o papel da bomba SERCA e dos canais de liberação de Ca2+ no RE.",
+      "resposta": "A SERCA é um transportador ativo que consome ATP para estocar Ca2+ contra o gradiente (manutenção do reservatório), enquanto os canais de liberação funcionam por transporte passivo (difusão) quando ativados, permitindo que o Ca2+ saia do RE para o citosol.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "transporte",
+        "serca",
+        "canais"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-02-003-03-fc05",
+      "tipo": "clinico",
+      "pergunta": "Em células musculares, como a falha na liberação de Ca2+ do retículo sarcoplasmático afeta a função?",
+      "resposta": "A falta de liberação de Ca2+ impede a ligação do cálcio à troponina, o que impossibilita a exposição dos sítios de ligação da actina para a miosina, resultando em fraqueza muscular ou paralisia funcional.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "muscular",
+        "contração",
+        "fisiologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-02-003-03-caso01",
+      "titulo": "Febre alta e rigidez muscular durante cirurgia",
+      "apresentacao": "Homem de 22 anos, sem comorbidades conhecidas, é submetido a apendicectomia sob anestesia geral com halotano e succinilcolina. Vinte minutos após a indução, a equipe nota taquicardia progressiva, rigidez da musculatura mandibular e elevação rápida da temperatura corporal (40,5°C). O capnógrafo mostra aumento abrupto do CO2 expirado.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação hereditária no receptor de rianodina (RyR1), o canal de liberação de Ca2+ do retículo sarcoplasmático (a variante muscular do REL), tornando-o hipersensível a anestésicos halogenados e succinilcolina."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Canais de liberação de cálcio do retículo sarcoplasmático nas fibras musculares esqueléticas — o mesmo sistema de 'comportas' descrito no bloco para liberação controlada de Ca2+ estocado."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Os canais RyR1 mutados abrem de forma maciça e sustentada em resposta ao anestésico, liberando cálcio continuamente para o citosol, em vez do pulso rápido e controlado que normalmente dispara uma única contração."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Contração muscular sustentada e generalizada (rigidez), hipermetabolismo com produção maciça de CO2 e calor, taquicardia e febre alta de instalação rápida."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Hipertermia maligna: sem tratamento imediato, o quadro evolui para rabdomiólise, acidose metabólica grave, hipercalemia e óbito. O antídoto específico interrompe a liberação descontrolada de cálcio do retículo."
+        }
+      ],
+      "conexao_com_bloco": "O caso é a demonstração clínica direta do mecanismo central do bloco: o retículo sarcoplasmático é a variante muscular do RE especializada em estocar e liberar Ca2+ sob comando. Quando o canal de liberação (RyR1) perde seu controle fino, o gradiente de cálcio — descrito como 'a maior bateria de sinalização da célula' — descarrega de forma descontrolada, com consequências sistêmicas graves.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "fisiologia",
+        "anestesiologia",
+        "genética"
+      ],
+      "diagnostico_revelado": "Hipertermia maligna desencadeada por anestésico volátil em paciente com mutação do receptor de rianodina (RyR1).",
+      "tratamento_resumido": "Suspensão imediata do agente desencadeante, administração de dantrolene (bloqueia a liberação de Ca2+ pelo RyR1), resfriamento ativo e suporte hemodinâmico."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-01-001",
+        "titulo": "Visão Geral da Célula Eucariótica",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A compreensão de como íons se movem contra ou a favor do gradiente é essencial para entender a bomba SERCA."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Acoplamento Excitação-Contração",
+        "disciplina": "fisiologia",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "A liberação de Ca2+ do retículo é o passo que traduz o potencial de ação elétrico em força mecânica no músculo.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "ANALOGIA",
+        "topico": "Potencial de Ação",
+        "explicacao": "Assim como o Ca2+ é mantido sob gradiente no RE, o Na+ é mantido sob gradiente fora da célula; ambos são 'baterias' prontas para disparar."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-02-003-03",
   "no_pai_id": "s1-biocel-02-003",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Estoque e Liberação de Ca2+",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "RE como reservatório de cálcio; base da contração e sinalização",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "fisiologia"
-  ]
+  }
 }

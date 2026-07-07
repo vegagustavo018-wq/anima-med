@@ -5,49 +5,338 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Síntese Proteica no RER",
+    "subtitulo": "Como a célula garante que uma proteína nunca fique 'nua' no citosol antes da hora?",
     "semestre": 1,
     "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
+    "profundidade_arvore": 4,
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "2.0",
     "tags": [
-      "biocel",
-      "esqueleto"
+      "ribossomos",
+      "rer",
+      "proteinas",
+      "trafego-intracelular"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Ribossomos ligados e destino das proteínas nascentes",
-  "narrativa": [],
+  "resumo_conciso": "Nem toda proteína que a célula fabrica fica destinada a permanecer solta no citosol. Proteínas que serão secretadas, incorporadas à membrana plasmática ou entregues a organelas do sistema endomembranar carregam, logo no início de sua sequência, um código de endereçamento — o peptídeo sinal — que redireciona toda a maquinaria de tradução para a superfície do retículo endoplasmático rugoso (RER). Ali, a proteína atravessa a membrana enquanto ainda está sendo sintetizada, um processo chamado translocação co-traducional, que a protege de se dobrar prematuramente no ambiente errado. Entender esse mecanismo de endereçamento é essencial para compreender como erros de tráfego proteico — não apenas erros de sequência genética — causam doenças graves.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma fábrica que produz peças sob encomenda para clientes diferentes. Algumas peças ficam na própria fábrica, para uso interno. Outras precisam ser embaladas, endereçadas e enviadas para fora — para outra cidade, outro país. Se todas as peças saíssem da linha de produção exatamente da mesma forma, sem qualquer marcação de destino, a fábrica inteira entraria em caos: peças de exportação se misturariam com peças de uso interno, sem nenhuma triagem possível."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a célula precisa separar a tradução em dois destinos?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A célula produz milhares de proteínas diferentes simultaneamente, mas nem todas têm o mesmo destino final. Enzimas metabólicas do citosol, por exemplo, devem permanecer soltas no citoplasma para funcionar ali mesmo. Já hormônios proteicos, enzimas digestivas, anticorpos e proteínas de membrana precisam atravessar uma barreira física — entrar no sistema de endomembranas — antes de chegar ao seu destino final, seja ele fora da célula ou embutido na própria membrana plasmática."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é temporal e não apenas espacial: se essas proteínas de exportação fossem sintetizadas inteiramente no citosol, como qualquer outra proteína comum, elas começariam a se dobrar imediatamente após a tradução — e algumas dessas proteínas são hidrofóbicas ou instáveis fora do ambiente controlado do retículo. Um dobramento precoce e errado no citosol levaria à agregação — proteínas mal dobradas grudando umas nas outras, formando aglomerados tóxicos que a célula não consegue mais processar corretamente."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Guarde esta ideia antes de seguir: o problema não é apenas 'para onde a proteína vai depois de pronta' — é 'como impedir que ela se dobre errado enquanto ainda está sendo montada'. A solução que vem a seguir resolve exatamente essa questão de tempo, não só de espaço."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula resolve esse problema de endereçamento e tempo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi colocar, logo no início da sequência de aminoácidos de proteínas destinadas ao sistema de endomembranas, uma etiqueta molecular: o peptídeo sinal, uma sequência curta e predominantemente hidrofóbica. Assim que essa sequência começa a emergir do ribossomo durante a tradução, uma partícula especializada — a Partícula de Reconhecimento de Sinal (SRP, do inglês signal recognition particle) — a reconhece, se liga a ela e pausa temporariamente a tradução."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A SRP, ainda ligada ao ribossomo pausado, então se liga a um receptor específico na membrana do retículo endoplasmático rugoso. Esse encontro direciona todo o complexo — ribossomo, mRNA e cadeia nascente — até um canal proteico na membrana do RER, o complexo Sec61 (o translocon). A tradução é retomada, mas agora a cadeia de aminoácidos que está sendo produzida é simultaneamente empurrada através do canal Sec61, entrando no lúmen do retículo enquanto ainda está sendo sintetizada."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Da tradução livre à translocação co-traducional",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Início da tradução no citosol",
+          "explicacao": "O ribossomo começa a traduzir o mRNA normalmente, no citosol, como qualquer outra proteína — a diferença só aparece quando o peptídeo sinal emerge."
+        },
+        {
+          "numero": 2,
+          "titulo": "Reconhecimento pela SRP",
+          "explicacao": "Assim que o peptídeo sinal hidrofóbico emerge do ribossomo, a SRP se liga a ele e pausa a tradução, evitando que a cadeia continue crescendo livremente no citosol."
+        },
+        {
+          "numero": 3,
+          "titulo": "Ancoragem no receptor de SRP",
+          "explicacao": "A SRP, ainda ligada ao ribossomo, encontra e se liga ao seu receptor específico na membrana do RER, posicionando o complexo exatamente sobre o canal Sec61."
+        },
+        {
+          "numero": 4,
+          "titulo": "Retomada da tradução com translocação simultânea",
+          "explicacao": "A SRP se desliga, a tradução é retomada, e a cadeia polipeptídica nascente é empurrada através do canal Sec61 diretamente para o lúmen do retículo — ela nunca fica solta e exposta no citosol."
+        },
+        {
+          "numero": 5,
+          "titulo": "Clivagem do peptídeo sinal e dobramento no lúmen",
+          "explicacao": "Uma enzima chamada peptidase sinal remove o peptídeo sinal já dentro do lúmen, e a proteína começa a se dobrar em um ambiente controlado, com chaperonas específicas do retículo auxiliando o processo."
+        }
+      ]
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛳️",
+      "conteudo": "Pense num porto de exportação com um sistema rígido de triagem antes mesmo de a mercadoria terminar de ser fabricada. Mapeamento: o ribossomo traduzindo o mRNA é a linha de montagem da mercadoria; o peptídeo sinal é um código de exportação impresso já nas primeiras peças montadas; a SRP é o fiscal do porto que lê esse código assim que ele aparece e imediatamente direciona toda a linha de montagem — parando-a momentaneamente — para o cais de exportação certo; o receptor de SRP na membrana do retículo é o próprio cais que recebe esse sinal; o canal Sec61 é a esteira que conecta a linha de montagem diretamente ao porão do navio (o lúmen do retículo), permitindo que a mercadoria seja carregada enquanto ainda está sendo produzida, sem nunca tocar o chão da doca (o citosol)."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A translocação é co-traducional, não pós-traducional: a proteína atravessa a membrana do retículo enquanto ainda está sendo sintetizada pelo ribossomo, e não depois de pronta. Essa simultaneidade é o que evita que a cadeia se dobre incorretamente exposta ao citosol."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A síntese no RER depende diretamente da existência do peptídeo sinal (sem ele, a SRP não tem o que reconhecer) e do receptor de SRP e canal Sec61 na membrana do retículo. Em troca, ela viabiliza toda a via secretora da célula: sem essa entrada correta no lúmen do RER, não há glicosilação posterior no Golgi, não há endereçamento a lisossomos, não há secreção de hormônios proteicos nem incorporação de novas proteínas à membrana plasmática. É o primeiro portão de um sistema inteiro de tráfego — e se esse portão falha, tudo o que vem depois falha junto."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "retículo endoplasmático",
+      "origem": "do latim reticulum (rede pequena) + do grego éndon (dentro) + plasma (substância moldada, citoplasma)",
+      "significado": "rede dentro do citoplasma",
+      "explicacao": "O nome descreve exatamente o que os primeiros microscopistas eletrônicos observaram: uma rede intrincada de membranas interconectadas se estendendo por todo o citoplasma, como uma teia tridimensional. O nome nasceu da morfologia visível ao microscópio, décadas antes de se compreender a função de síntese e translocação de proteínas que ocorre em sua superfície rugosa."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se uma proteína destinada à secreção perdesse, por mutação, seu peptídeo sinal, o que aconteceria com sua rota dentro da célula?",
+      "resposta": "Sem peptídeo sinal, a SRP não teria o que reconhecer, e a tradução continuaria inteiramente no citosol, como se fosse uma proteína citosólica comum. A proteína seria sintetizada por completo fora do retículo endoplasmático, jamais entraria na via secretora, e não sofreria as modificações pós-traducionais que dependem do ambiente do RER e do Golgi (como certas glicosilações). Se a proteína for naturalmente hidrofóbica ou dependente dessas modificações para se dobrar corretamente, ela provavelmente se agregaria de forma anômala no citosol, tornando-se funcionalmente inútil e potencialmente tóxica para a célula."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O complexo de translocação co-traducional",
+      "descricao": "Esquema mostrando o ribossomo ancorado na membrana do retículo endoplasmático rugoso via receptor de SRP, com a cadeia polipeptídica nascente passando pelo canal Sec61 diretamente para o lúmen.",
+      "prompt_ia": "Diagrama científico vetorial, fundo neutro adaptativo, estilo de livro didático. Corte transversal da membrana do retículo endoplasmático rugoso, mostrando um ribossomo ancorado à membrana via receptor de SRP, com a cadeia polipeptídica nascente atravessando o canal Sec61 (translocon) diretamente para o lúmen do retículo, onde já aparece uma proteína parcialmente formada se dobrando com auxílio de chaperonas. SRP mostrada se desligando do complexo, ao lado. Legendas em português: 'ribossomo', 'peptídeo sinal', 'SRP', 'receptor de SRP', 'canal Sec61', 'lúmen do RER'. Cores suaves, alto contraste, sem elementos fotorrealistas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-02-002",
+        "titulo": "Retículo Endoplasmático Rugoso — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso ter visto a organização geral do RER e sua superfície rugosa coberta de ribossomos antes de mergulhar no mecanismo molecular específico de como a tradução se acopla à translocação."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "bioquimica",
+        "semestre_futuro": 2,
+        "topico": "Glicosilação de proteínas",
+        "mecanismo_conexao": "A entrada da proteína no lúmen do RER é pré-requisito direto para a glicosilação N-ligada, que ocorre exclusivamente dentro desse compartimento.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 4,
+        "topico": "Fibrose cística e retenção de proteínas mal endereçadas",
+        "mecanismo_conexao": "Falhas no controle de qualidade do RER, mesmo após translocação correta, podem reter proteínas mutadas como a CFTR deltaF508, impedindo que alcancem a membrana plasmática.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 6,
+        "topico": "Chaperonas farmacológicas",
+        "mecanismo_conexao": "Fármacos que estabilizam o dobramento correto de proteínas dentro do RER são estratégia terapêutica emergente para doenças de erro de tráfego proteico.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-02-004-01",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "O processamento sequencial no complexo de Golgi, discutido em bloco próprio, é a etapa seguinte da mesma via secretora iniciada aqui no RER."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-02-002-01-fc01",
+      "pergunta": "Por que a translocação de proteínas para o RER precisa ser co-traducional, e não poderia simplesmente ocorrer depois que a proteína já estivesse pronta e dobrada no citosol?",
+      "resposta": "Porque muitas dessas proteínas são hidrofóbicas ou instáveis no ambiente citosólico e se dobrariam incorretamente ou se agregariam se permanecessem expostas ali por qualquer período. Ao acoplar a translocação diretamente ao processo de tradução, a célula garante que a cadeia polipeptídica atravesse a membrana do retículo antes mesmo de ter a chance de se dobrar no lugar errado, entrando em um ambiente controlado (o lúmen do RER) desde os primeiros aminoácidos sintetizados.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["rer", "translocacao-cotraducional", "dobramento-proteico"]
+    },
+    {
+      "card_id": "s1-biocel-02-002-01-fc02",
+      "pergunta": "Descreva a sequência completa de eventos desde o início da tradução no citosol até a proteína começar a se dobrar dentro do lúmen do RER.",
+      "resposta": "1) O ribossomo inicia a tradução normalmente, no citosol. 2) Assim que o peptídeo sinal hidrofóbico emerge, a SRP se liga a ele e pausa a tradução. 3) A SRP, ainda acoplada ao ribossomo, se liga ao seu receptor específico na membrana do RER, posicionando o complexo sobre o canal Sec61. 4) A SRP se desliga, a tradução é retomada, e a cadeia nascente é empurrada através do Sec61 diretamente para o lúmen do retículo. 5) Uma peptidase sinal remove o peptídeo sinal já dentro do lúmen, e a proteína começa a se dobrar ali, auxiliada por chaperonas residentes.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["srp", "sec61", "trafego-proteico"]
+    },
+    {
+      "card_id": "s1-biocel-02-002-01-fc03",
+      "pergunta": "Verdadeiro ou falso e justifique: 'toda proteína que contém um peptídeo sinal acaba sendo secretada para fora da célula'.",
+      "resposta": "Falso. O peptídeo sinal apenas direciona a proteína para dentro do sistema de endomembranas via RER — não determina o destino final. A partir do lúmen do retículo e depois do processamento no complexo de Golgi, a proteína pode ser secretada para o meio extracelular, mas também pode ficar incorporada permanentemente na membrana plasmática, ser endereçada a um lisossomo, ou permanecer como proteína residente do próprio retículo ou do Golgi. O peptídeo sinal é apenas o bilhete de entrada na via secretora, não o destino final da viagem.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["peptideo-sinal", "armadilha-conceitual", "endereçamento"]
+    },
+    {
+      "card_id": "s1-biocel-02-002-01-fc04",
+      "pergunta": "Se uma mutação deletasse completamente o peptídeo sinal de uma proteína destinada à secreção, o que aconteceria com a rota dessa proteína dentro da célula?",
+      "resposta": "Sem peptídeo sinal, a SRP não teria o que reconhecer, e a tradução prosseguiria inteiramente no citosol, como se a proteína fosse citosólica comum. Ela jamais entraria na via secretora e não passaria pelo RER nem pelo Golgi, perdendo qualquer modificação pós-traducional que dependesse desses compartimentos. Se essa proteína for naturalmente hidrofóbica ou dependente de dobramento assistido, ela provavelmente se agregaria de forma anômala e tóxica no citosol.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["mutacao", "peptideo-sinal", "agregacao-proteica"]
+    },
+    {
+      "card_id": "s1-biocel-02-002-01-fc05",
+      "pergunta": "Um paciente com uma variante rara de deficiência de alfa-1-antitripsina tem a proteína sintetizada normalmente no RER, mas ela se acumula em agregados dentro do próprio retículo dos hepatócitos, nunca sendo secretada. Como esse quadro se relaciona com o mecanismo de síntese e translocação estudado aqui?",
+      "resposta": "A síntese e a translocação co-traducional em si ocorrem normalmente — o peptídeo sinal é reconhecido, a SRP direciona corretamente o complexo, e a proteína entra no lúmen do RER. O problema surge depois: a mutação faz a proteína se dobrar de forma anômala dentro do lúmen, e o sistema de controle de qualidade do retículo retém essas moléculas malformadas em vez de deixá-las avançar para o Golgi. O acúmulo progressivo desses agregados dentro do RER dos hepatócitos causa dano hepático direto (por sobrecarga do retículo), enquanto a ausência da proteína circulante no plasma e no pulmão explica o enfisema precoce característico dessa doença — um caso onde a falha não está na translocação, mas no controle de qualidade posterior dentro do mesmo compartimento.",
+      "tipo": "clinico",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": ["deficiencia-alfa1-antitripsina", "controle-de-qualidade", "re"]
+    },
+    {
+      "card_id": "s1-biocel-02-002-01-fc06",
+      "pergunta": "Por que a sigla SRP (Signal Recognition Particle) descreve exatamente a função dessa partícula, ao contrário de nomes puramente morfológicos usados em outras estruturas celulares?",
+      "resposta": "Diferente de nomes como 'retículo endoplasmático', que descrevem apenas a aparência ao microscópio, 'partícula de reconhecimento de sinal' descreve diretamente sua função molecular: reconhecer o peptídeo sinal na cadeia nascente. Esse nome foi atribuído depois que experimentos bioquímicos isolaram a partícula e demonstraram sua atividade específica de ligação ao peptídeo sinal — um exemplo de nomenclatura funcional, atribuída quando o mecanismo molecular já era conhecido, em contraste com nomes anatômicos mais antigos atribuídos apenas pela observação visual.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["etimologia", "srp", "nomenclatura-funcional"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-02-002-01-caso01",
+      "titulo": "Enfisema precoce em paciente jovem não tabagista",
+      "apresentacao": "Homem de 34 anos, não tabagista, sem exposição ocupacional relevante, procura atendimento por dispneia progressiva aos esforços há 1 ano. Tomografia de tórax revela enfisema panacinar de predomínio em bases pulmonares — padrão atípico para a idade e ausência de fatores de risco clássicos. História familiar revela irmão com doença hepática crônica de causa não esclarecida na infância. Dosagem sérica de alfa-1-antitripsina está marcadamente reduzida.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação no gene SERPINA1 (variante PiZZ) altera a estrutura da proteína alfa-1-antitripsina de forma que ela se dobra incorretamente após entrar no lúmen do retículo endoplasmático dos hepatócitos."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A síntese e a translocação co-traducional da proteína no RER ocorrem normalmente, mas o controle de qualidade do retículo retém as moléculas malformadas dentro do próprio compartimento, impedindo seu avanço para o Golgi e sua secreção final no plasma."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Dois problemas simultâneos: o acúmulo de proteína malformada dentro do RER dos hepatócitos causa estresse celular e dano hepático progressivo; e a ausência da proteína circulante no plasma remove a proteção natural que ela exerce contra a elastase neutrofílica nos pulmões."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "No pulmão, a elastase neutrofílica não regulada destrói progressivamente a matriz elástica alveolar, causando enfisema de início precoce, mesmo sem tabagismo; no fígado, o acúmulo intracelular de proteína pode levar a hepatite neonatal, cirrose ou hepatocarcinoma em fases variadas da vida."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem intervenção, o enfisema progride para insuficiência respiratória; a suplementação com alfa-1-antitripsina purificada pode retardar a progressão pulmonar, e o transplante hepático é considerado em casos de doença hepática avançada."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que uma proteína pode ser corretamente sintetizada e translocada para o RER — passando por todo o mecanismo estudado neste bloco — e ainda assim falhar clinicamente, se o problema estiver no dobramento subsequente dentro do lúmen, retido pelo controle de qualidade do próprio retículo.",
+      "disciplinas_relacionadas": ["genetica", "pneumologia", "hepatologia", "biologia celular"],
+      "diagnostico_revelado": "Deficiência de alfa-1-antitripsina (variante PiZZ) com enfisema pulmonar precoce e doença hepática associada.",
+      "tratamento_resumido": "Terapia de reposição com alfa-1-antitripsina purificada por via intravenosa para proteção pulmonar, cessação de qualquer exposição ao tabaco, vacinação respiratória em dia, e acompanhamento hepático especializado com possibilidade de transplante em casos avançados."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-biocel-02-002-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Alberts B, et al. Molecular Biology of the Cell. 6th ed. Garland Science; 2014. Capítulo sobre tráfego intracelular de proteínas.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Kumar V, Abbas AK, Aster JC. Robbins & Cotran Pathologic Basis of Disease. 10th ed. Elsevier; 2020. Capítulo sobre deficiência de alfa-1-antitripsina.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Todo peptídeo sinal leva a proteína até a secreção extracelular final.",
+      "correcao": "O peptídeo sinal apenas endereça a proteína para dentro da via secretora; o destino final varia (membrana, lisossomo, secreção, residente do próprio RE/Golgi).",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Translocação para o RER só pode acontecer depois que a proteína está pronta.",
+      "correcao": "A translocação é co-traducional — ocorre simultaneamente à síntese, não depois dela.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "peptídeo sinal",
+      "termo_es": "péptido señal",
+      "termo_en": "signal peptide",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "partícula de reconhecimento de sinal",
+      "termo_es": "partícula de reconocimiento de señal",
+      "termo_en": "signal recognition particle",
+      "abreviatura": "SRP"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "2.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Reescrita completa da narrativa e flashcards, correção de pré-requisito (título trocado por ID técnico s1-biocel-02-002), adição de caso clínico (ausente na versão original) sobre deficiência de alfa-1-antitripsina e flashcard armadilha.",
+      "motivo": "Alinhamento com a Filosofia ANIMA — bloco sem caso clínico, pré-requisito inválido apontando para string livre, ausência de flashcard armadilha."
+    }
   ]
 }

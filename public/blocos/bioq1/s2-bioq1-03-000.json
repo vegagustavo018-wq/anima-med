@@ -16,7 +16,8 @@
     "data_criacao": "2026-07-03",
     "data_atualizacao": "2026-07-03",
     "versao_schema": "3.0",
-    "autor": "Claude Opus 4.7"
+    "autor": "Claude Opus 4.7",
+    "titulo": "Lipídios e Ácidos Graxos: Energia Concentrada e Isolamento"
   },
   "resumo_conciso": "Se carboidratos são 'gasolina rápida' (glicose queima em minutos), lipídios são 'gasolina super concentrada' (um grama de gordura tem 9 calorias vs. 4 de carboidrato). Lipídios são hidrofóbicos — odeiam água — por isso formam estruturas impermeáveis (membranas) e armazenam isolados de citoplasma aquoso. Ácidos graxos são cadeias longas de carbono com duplas ligações (insaturadas) ou sem (saturadas) — saturadas são retas (empacotam bem, energia densa), insaturadas são tortas (atrapalham empacotamento, preservam fluidez). Colesterol é especial — não é gordura típica, é álcool com anel esteroide — regula fluidez de membrana. Triglicerídios (três ácidos graxos + glicerol) são depósito de energia em tecido adiposo. Neste bloco, compreendemos por que evolução escolheu lipídios para duas tarefas: armazenamento energético duro (pode ficar meses) e construção de barreiras impermeáveis (membranas).",
   "narrativa": [
@@ -91,16 +92,20 @@
   "conexoes": {
     "prerequisitos": [
       {
-        "id": "s2-bioq1-01-020",
+        "bloco_id": "s2-bioq1-01-020",
         "titulo": "Efeito Hidrofóbico e Estrutura de Membranas",
-        "tipo": "fundamental",
-        "descricao": "Entender hidrofobicidade é essencial para entender por que lipídios formam estruturas impermeáveis."
+        "disciplina": "Bioquímica",
+        "semestre": 2,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
       },
       {
-        "id": "s2-bioq1-02-000",
+        "bloco_id": "s2-bioq1-02-000",
         "titulo": "Carboidratos: Energia e Estrutura Celular",
-        "tipo": "fundamental",
-        "descricao": "Comparação entre armazenamento de energia em carbs vs. lipídios é base para entender metabolismo."
+        "disciplina": "Bioquímica",
+        "semestre": 2,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
       }
     ],
     "futuras": [
@@ -108,19 +113,22 @@
         "id": "s2-bioq2-05-000",
         "titulo": "Beta-Oxidação: Quebra de Ácidos Graxos para Energia",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Triglicerídios armazenados são quebrados em ácidos graxos, que entram em beta-oxidação (mitocôndria) gerando acetil-CoA e ATP."
+        "descricao": "Triglicerídios armazenados são quebrados em ácidos graxos, que entram em beta-oxidação (mitocôndria) gerando acetil-CoA e ATP.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s3-fisio-04-100",
         "titulo": "Lipoproteínas: Transporte de Colesterol e Triglicerídios",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Lipídios são hidrofóbicos, não podem flutuar livres em sangue aquoso — são embrulhados em lipoproteínas (VLDL, LDL, HDL, etc)."
+        "descricao": "Lipídios são hidrofóbicos, não podem flutuar livres em sangue aquoso — são embrulhados em lipoproteínas (VLDL, LDL, HDL, etc).",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s3-patol-09-050",
         "titulo": "Aterosclerose: Acúmulo de Colesterol em Artérias",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "LDL oxidado deposita-se em endotélio arterial → inflamação → placa ateromatosa → infarto, AVC."
+        "descricao": "LDL oxidado deposita-se em endotélio arterial → inflamação → placa ateromatosa → infarto, AVC.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
@@ -128,7 +136,8 @@
         "id": "s1-hist-03-000",
         "titulo": "Membrana Plasmática: Composição e Estrutura",
         "tipo": "CONTEXTO",
-        "descricao": "Bicamada lipídica é base estrutural; colesterol modifica fluidez da membrana."
+        "descricao": "Bicamada lipídica é base estrutural; colesterol modifica fluidez da membrana.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -192,36 +201,37 @@
   ],
   "casos_clinicos": [
     {
-      "id": "caso-bioq1-03-000-001",
+      "caso_id": "caso-bioq1-03-000-001",
       "titulo": "Dislipidemía Severa: Quando Colesterol é Bomba de Infarto",
       "apresentacao": "Paciente, 42 anos, sem histórico familiar notable de cardiopatia, apresenta colesterol total 450 mg/dL (normal <200), LDL 350 mg/dL (normal <100), triglicerídios 200 mg/dL (normal <150). EKG normal ainda, mas teste de estresse mostra isquemia silenciosa.",
       "cascata": [
         {
-          "etapa": 1,
-          "titulo": "Causa",
-          "conteudo": "Dieta rica em gordura saturada (fried foods, carnes vermelhas, laticínios integrais) + genética (pai do paciente teve infarto aos 45). Corpo produz colesterol geneticamente predisposto a níveis altos (regulação de SREBP2 — fator de transcrição que controla síntese de colesterol — é alterada). Intestino também reabsorbe colesterol egestado de forma ineficiente (receptores de LDL em fígado podem estar reduzidos)."
+          "etapa": "Causa",
+          "descricao": "Dieta rica em gordura saturada (fried foods, carnes vermelhas, laticínios integrais) + genética (pai do paciente teve infarto aos 45). Corpo produz colesterol geneticamente predisposto a níveis altos (regulação de SREBP2 — fator de transcrição que controla síntese de colesterol — é alterada). Intestino também reabsorbe colesterol egestado de forma ineficiente (receptores de LDL em fígado podem estar reduzidos)."
         },
         {
-          "etapa": 2,
-          "titulo": "Estrutura — Oxidação e Penetração em Parede Arterial",
-          "conteudo": "LDL em sangue circula. Colesterol em LDL é ácido graxo insaturado — facilmente oxidado por radicais livres. LDL oxidado é reconhecido por receptores scavenger em macrófagos endoteliais (células da parede arterial) — macrófagos capturam LDL oxidado. Macrófagos entutem-se de colesterol, virando 'células espumosas'. Essas células espumosas s'acumulam na íntima da artéria, iniciando placa ateromatosa."
+          "etapa": "Estrutura Afetada",
+          "descricao": "LDL em sangue circula. Colesterol em LDL é ácido graxo insaturado — facilmente oxidado por radicais livres. LDL oxidado é reconhecido por receptores scavenger em macrófagos endoteliais (células da parede arterial) — macrófagos capturam LDL oxidado. Macrófagos entutem-se de colesterol, virando 'células espumosas'. Essas células espumosas s'acumulam na íntima da artéria, iniciando placa ateromatosa."
         },
         {
-          "etapa": 3,
-          "titulo": "Disfunção — Inflamação Crônica e Estreitamento de Artéria",
-          "conteudo": "Células espumosas secretam citocinas inflamatórias (IL-1, TNF-alfa, IL-6). Inflamação atrai mais células T, macrófagos. Smooth muscle cells proliferam, formam cápsula fibrosa ao redor de placa. Essa placa obstrui lume da artéria — reduzindo fluxo de sangue para o coração (artéria coronária). Inicialmente assintomático (isquemia silenciosa) — apenas teste de estresse mostra falta de O2 no miocárdio."
+          "etapa": "Disfunção",
+          "descricao": "Células espumosas secretam citocinas inflamatórias (IL-1, TNF-alfa, IL-6). Inflamação atrai mais células T, macrófagos. Smooth muscle cells proliferam, formam cápsula fibrosa ao redor de placa. Essa placa obstrui lume da artéria — reduzindo fluxo de sangue para o coração (artéria coronária). Inicialmente assintomático (isquemia silenciosa) — apenas teste de estresse mostra falta de O2 no miocárdio."
         },
         {
-          "etapa": 4,
-          "titulo": "Sintoma Clínico",
-          "conteudo": "Se placa permanece estável: angina de esforço (dor no peito ao exercício, alívio ao repouso). Se placa se rompe (trombose): coágulo se forma → obstrução completa → infarto agudo do miocárdio → morte de coração (necessário cateterismo urgente). Paciente pode estar assintomático até dia de infarto (muitas mortes primeiras são 'infartos silenciosos')."
+          "etapa": "Sintoma",
+          "descricao": "Se placa permanece estável: angina de esforço (dor no peito ao exercício, alívio ao repouso). Se placa se rompe (trombose): coágulo se forma → obstrução completa → infarto agudo do miocárdio → morte de coração (necessário cateterismo urgente). Paciente pode estar assintomático até dia de infarto (muitas mortes primeiras são 'infartos silenciosos')."
         },
         {
-          "etapa": 5,
-          "titulo": "Manejo e Consequência",
-          "conteudo": "Prevenção: statin (inibi síntese de colesterol), ezetimiba (bloqueia absorção), PCSK9 inhibitor (força removar receptores de LDL — agressivo, reduz LDL > 50%). Dieta baixa em saturado, exercício. Se detectado cedo com agressividade: consegue-se reduzir LDL e até reverter parcialmente lesão. Se negligenciado: risco de morte súbita por infarto."
+          "etapa": "Consequência",
+          "descricao": "Prevenção: statin (inibi síntese de colesterol), ezetimiba (bloqueia absorção), PCSK9 inhibitor (força removar receptores de LDL — agressivo, reduz LDL > 50%). Dieta baixa em saturado, exercício. Se detectado cedo com agressividade: consegue-se reduzir LDL e até reverter parcialmente lesão. Se negligenciado: risco de morte súbita por infarto."
         }
-      ]
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Bioquímica"
+      ],
+      "diagnostico_revelado": "Dislipidemía Severa: Quando Colesterol é Bomba de Infarto",
+      "tratamento_resumido": "Estatina de alta potência como primeira linha + mudança de estilo de vida; terapia combinada (ezetimiba, inibidores de PCSK9) em casos refratários ou de dislipidemia familiar."
     }
   ],
   "midia": [

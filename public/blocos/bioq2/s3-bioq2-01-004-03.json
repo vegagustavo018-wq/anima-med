@@ -5,48 +5,252 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "FAD/FADH2 — O Aceptor de Dois Elétrons e Prótons",
+    "subtitulo": "Quando a célula precisa de um coletor de elétrons preso à enzima?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "fad",
+      "fadh2",
+      "redox",
+      "flavina",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Quando a célula usa FAD em vez de NAD+; ligação covalente e potencial de redução",
-  "narrativa": [],
+  "resumo_conciso": "FAD é uma coenzima flavínica que aceita dois elétrons e dois prótons, formando FADH2. Diferente de NAD+, muitas vezes FAD fica firmemente ligado à enzima, funcionando como peça interna de máquinas redox, como succinato desidrogenase e acil-CoA desidrogenases. Essa ligação permite reações em que a transferência direta para NAD+ não é favorável, especialmente remoções de hidrogênios que formam ligações duplas.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Nem todo coletor de elétrons circula livremente pela célula. Às vezes a enzima precisa de um coletor preso dentro da própria máquina, posicionado exatamente onde a reação acontece. FAD cumpre esse papel em várias enzimas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Enquanto NAD+ costuma atuar como transportador solúvel, FAD frequentemente fica ligado à proteína. Ele aceita dois elétrons e dois prótons, vira FADH2 e depois passa essa carga adiante por rotas específicas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema o FAD resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Algumas oxidações não entregam elétrons facilmente ao NAD+. Na formação de dupla ligação entre carbonos, como no succinato virando fumarato ou em etapas da beta-oxidação, FAD tem potencial adequado e posição enzimática ideal para aceitar hidrogênios."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: NAD+ costuma carregar elétrons como coenzima solúvel; FAD muitas vezes funciona como grupo prostético preso à enzima."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como FAD recebe elétrons?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "FAD pode aceitar dois átomos de hidrogênio, equivalentes a dois elétrons e dois prótons, formando FADH2. Essa flexibilidade permite participar de reações em que há remoção simultânea de hidrogênios de carbonos vizinhos, criando ligações duplas."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "flavina adenina dinucleotídeo",
+      "origem": "flavina vem do latim flavus, amarelo; adenina dinucleotídeo descreve a porção nucleotídica",
+      "significado": "coenzima amarelada derivada de riboflavina ligada a uma unidade nucleotídica",
+      "explicacao": "A cor amarela das flavinas é uma pista histórica e visual. A vitamina B2, riboflavina, é precursora de FAD e FMN."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: FAD não é apenas 'outro NAD'. Ele aparece quando a enzima precisa de um coletor integrado e com potencial redox apropriado."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se succinato desidrogenase dependesse de NAD+ em vez de FAD?",
+      "resposta": "A reação seria termodinamicamente inadequada nas condições normais. FAD ligado à enzima permite aceitar elétrons do succinato e transferi-los para a cadeia via ubiquinona."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "encaixe",
+      "conteudo": "Pense em NAD+ como um entregador que entra, pega a carga e sai. FAD é uma esteira instalada dentro da fábrica: não sai carregando pacotes pela rua, mas transfere a carga de uma parte da máquina para outra. A analogia quebra porque FADH2 pode transferir elétrons por química redox, não por movimento mecânico."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "FAD preso à enzima recebendo dois hidrogênios",
+      "descricao": "Esquema mostrando substrato perdendo dois hidrogênios para FAD ligado à enzima, formando FADH2 e depois transferindo elétrons.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. Enzima grande com FAD fixo no sítio ativo. Substrato entra e perde dois hidrogênios, formando ligação dupla no produto. FAD vira FADH2 e transfere elétrons para ubiquinona/cadeia respiratória. Rótulos: grupo prostético, dois elétrons e dois prótons, flavina.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse bloco será útil na beta-oxidação, no ciclo de Krebs e na cadeia respiratória. Sempre que uma enzima retirar dois hidrogênios para formar dupla ligação, pense se FAD está escondido dentro da máquina."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-004",
+        "titulo": "Transportadores de Elétrons e Poder Redutor — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "O bloco pai introduz a lógica geral dos transportadores de elétrons."
+      },
+      {
+        "bloco_id": "s3-bioq2-01-004-01",
+        "titulo": "NAD+/NADH — O Coletor de Elétrons do Catabolismo",
+        "relevancia": "base_necessaria",
+        "explicacao": "Comparar FAD com NAD+ ajuda a entender por que a célula usa coenzimas redox diferentes."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Ciclo de Krebs — Succinato Desidrogenase",
+        "mecanismo_conexao": "FAD aceita elétrons quando succinato vira fumarato.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Beta-Oxidação — Acil-CoA Desidrogenase",
+        "mecanismo_conexao": "FAD aceita hidrogênios na primeira oxidação dos ácidos graxos.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Cadeia Respiratória — Entrada de Elétrons por FADH2",
+        "mecanismo_conexao": "Elétrons de FADH2 entram em nível energético diferente dos elétrons de NADH.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "NADPH — O Poder Redutor da Biossíntese",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "FAD participa de máquinas redox específicas; NADPH doa elétrons para biossíntese e defesa antioxidante."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-004-03-fc01",
+      "tipo": "comparacao",
+      "pergunta": "Compare NAD+ e FAD quanto à forma de atuação.",
+      "resposta": "NAD+ costuma ser coenzima solúvel que entra e sai carregando hidreto. FAD muitas vezes fica ligado à enzima como grupo prostético, recebendo dois elétrons e dois prótons no próprio sítio ativo.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "fad",
+        "nad"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-004-03-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Por que FAD é útil em reações que formam ligações duplas?",
+      "resposta": "Porque pode aceitar dois hidrogênios de carbonos vizinhos, permitindo a oxidação que gera uma ligação dupla, como em succinato para fumarato ou na beta-oxidação.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "ligacao-dupla",
+        "redox"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-004-03-fc03",
+      "tipo": "etimologia",
+      "pergunta": "O que a palavra flavina sugere em FAD?",
+      "resposta": "Flavina vem de flavus, amarelo. As flavinas, derivadas da riboflavina, têm coloração amarelada e participam de reações redox.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "flavina",
+        "riboflavina"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-004-03-fc04",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de tratar FADH2 como idêntico a NADH?",
+      "resposta": "Eles carregam elétrons, mas entram em contextos e níveis diferentes. FADH2 geralmente permanece associado à enzima e seus elétrons entram na cadeia respiratória em ponto diferente, rendendo menos bombeamento de prótons que NADH.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha",
+        "fadh2"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-004-03-caso01",
+      "titulo": "Quando a beta-oxidação precisa de uma flavina",
+      "apresentacao": "Criança com episódios de hipoglicemia durante jejum é investigada para defeito de oxidação de ácidos graxos. Várias etapas desse processo dependem de desidrogenases ligadas a FAD, que retiram hidrogênios dos acil-CoA.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Defeito em enzimas ou transferência de elétrons da beta-oxidação pode limitar uso de ácidos graxos."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Acil-CoA desidrogenases usam FAD como grupo redox no início de cada volta da beta-oxidação."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A remoção de hidrogênios e a formação de dupla ligação ficam prejudicadas."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Durante jejum, a criança pode apresentar fraqueza, hipoglicemia e baixa produção de corpos cetônicos, conforme o defeito."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A incapacidade de oxidar gordura reduz oferta energética quando glicose está escassa."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que FAD não é detalhe: certas oxidações de ácidos graxos dependem especificamente de flavoproteínas para iniciar o fluxo energético.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Genética",
+        "Pediatria"
+      ],
+      "diagnostico_revelado": "Correlação com defeitos de beta-oxidação dependentes de flavoproteínas.",
+      "tratamento_resumido": "Evitar jejum prolongado e manejar conforme o erro inato específico; detalhes pertencem aos blocos de metabolismo lipídico e genética."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-004-03-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'FAD preso à enzima recebendo dois hidrogênios'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Seções de flavoproteínas, FAD e metabolismo energético.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "molecular",
     "mecanismo"

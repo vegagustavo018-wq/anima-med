@@ -1,54 +1,209 @@
 {
+  "metadata": {
+    "titulo": "Necroptose",
+    "subtitulo": "Quando a célula decide que a discrição da apoptose não é suficiente?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "morte celular",
+      "inflamação",
+      "RIPK",
+      "MLKL"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "A necroptose é uma via de morte celular programada que desafia o paradigma da apoptose silenciosa. Enquanto a apoptose é uma implosão controlada, a necroptose é uma explosão orquestrada, sendo fundamental em contextos onde a célula precisa sinalizar perigo ao sistema imune. Mediada pelas proteínas quinases RIPK1 e RIPK3 e pela proteína MLKL, este processo resulta na ruptura da membrana plasmática e liberação de conteúdo citoplasmático, desencadeando uma resposta inflamatória potente. Entender este mecanismo é crucial para compreender como o corpo equilibra a eliminação celular com a necessidade de alerta imune.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, discutimos a apoptose como o 'suicídio silencioso' da célula. Mas você já se perguntou o que acontece quando a célula precisa morrer e, ao mesmo tempo, avisar aos vizinhos que algo está muito errado? A evolução não se limitou a uma única forma de morte."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que o corpo precisaria de uma morte celular 'barulhenta'?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A apoptose é elegante porque não causa inflamação. Contudo, em casos de infecção viral ou dano tecidual severo, a discrição é perigosa. O organismo desenvolveu a necroptose como um mecanismo de defesa: ao romper a membrana, a célula libera DAMPs (padrões moleculares associados a danos), recrutando células imunes para o local do problema. É uma estratégia de 'gritar por socorro' enquanto se deixa de existir."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução encontrada foi um caminho molecular que, curiosamente, compartilha o início com a apoptose, mas desvia em um ponto crítico. Quando os receptores de morte (como o TNFR1) são ativados, mas a maquinaria de caspase-8 está inibida, a célula é redirecionada para a necroptose. É um sistema de redundância evolutiva: se o caminho silencioso falhar, o caminho inflamatório assume o controle."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A estrutura central desse processo envolve a formação do complexo necrossomo. As proteínas RIPK1 e RIPK3 se auto-fosforilam em uma cascata de sinalização, culminando na fosforilação da MLKL. A MLKL, uma vez ativada, sofre uma mudança conformacional e migra para a membrana plasmática, onde se oligomeriza e cria poros catastróficos."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Imagine uma fábrica. A apoptose é o desmonte organizado de máquinas e reciclagem de peças (silencioso). A necroptose é um incêndio controlado e proposital: os alarmes de incêndio (DAMPs) são ativados, as janelas são quebradas (poros de MLKL) para que a fumaça saia e os bombeiros (sistema imune) percebam o local exato do desastre. Mapeamento: Fumaça = DAMPs; Janelas quebradas = Poros de MLKL; Bombeiros = Células inflamatórias."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A necroptose é a única via de morte celular programada que, por design, induz inflamação, servindo como um mecanismo de vigilância imune contra patógenos que tentam bloquear a apoptose."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire. A transição aqui é fascinante: a célula não está apenas morrendo, ela está executando uma função final de comunicação imune. A biologia celular não é sobre eventos isolados, mas sobre o contexto do tecido."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Necroptose",
+      "origem": "Grego",
+      "significado": "Morte + Queda/Cair",
+      "explicacao": "Vem de 'nekros' (morto) e 'ptosis' (queda), indicando uma morte celular que se assemelha visualmente à necrose (queda do tecido), mas que possui uma regulação genética precisa."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a MLKL não existisse?",
+      "resposta": "A célula não conseguiria perfurar sua própria membrana de forma programada. Em situações onde a apoptose é bloqueada por um vírus, a célula ficaria 'presa' em um estado de infecção, sem conseguir alertar o sistema imune, permitindo que o patógeno se replique silenciosamente sem resistência tecidual."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "A cascata da Necroptose",
+      "descricao": "Esquema mostrando a sinalização de RIPK1/RIPK3 fosforilando MLKL, que transloca para a membrana plasmática formando poros, levando ao extravasamento celular.",
+      "prompt_ia": "Scientific illustration, cross-section of a cell undergoing necroptosis, highlighting the necrosome complex (RIPK1/RIPK3) inside, MLKL protein translocating to the plasma membrane, formation of large pores in the cell membrane, cellular content leaking out, high detail, educational, clean background, medical textbook style.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-07-003-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual a função da MLKL na necroptose?",
+      "resposta": "A MLKL atua como o efetor final. Após ser fosforilada pela RIPK3, ela se oligomeriza e se insere na membrana plasmática, formando poros que desestabilizam a integridade osmótica e causam a ruptura celular.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "MLKL",
+        "mecanismo"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-07-003-fc02",
+      "tipo": "comparacao",
+      "pergunta": "Como diferenciar a necrose acidental da necroptose?",
+      "resposta": "A necrose acidental é um processo passivo causado por trauma externo ou isquemia, sem regulação genética. A necroptose é um processo programado, dependente de sinalização molecular (RIPK/MLKL) e pode ser inibida farmacologicamente.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "comparação",
+        "necrose"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-07-003-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se a Caspase-8 estivesse hiperativa em uma célula tentando iniciar a necroptose?",
+      "resposta": "A Caspase-8 cliva e inativa as proteínas RIPK1/RIPK3. Portanto, a hiperatividade da Caspase-8 bloquearia a necroptose, forçando a célula a seguir o caminho da apoptose (ou sobrevivência).",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "contrafactual",
+        "regulação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-07-003-fc04",
+      "tipo": "por_que",
+      "pergunta": "Por que a necroptose é considerada uma faca de dois gumes?",
+      "resposta": "Ela é benéfica para eliminar células infectadas e gerar resposta imune, mas, se desregulada, pode causar inflamação crônica e destruição tecidual excessiva, contribuindo para doenças autoimunes e neurodegenerativas.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "fisiopatologia"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-07-003-fc05",
+      "tipo": "mecanismo",
+      "pergunta": "Qual o papel do complexo necrossomo?",
+      "resposta": "O necrossomo é o centro de processamento de sinais de morte. Ele integra sinais de receptores de membrana e, na ausência de atividade de caspase-8, ativa a via de fosforilação que culmina na morte necroptótica.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "RIPK",
+        "mecanismo"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-07-003-caso01",
+      "titulo": "A via de escape viral",
+      "apresentacao": "Um paciente apresenta uma infecção viral que bloqueia especificamente a cascata de caspases da célula hospedeira, impedindo a apoptose clássica para garantir a replicação viral.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Proteína viral bloqueia Caspase-8."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Complexo sinalizador de morte celular."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A célula detecta a falha na apoptose e ativa a via RIPK3-MLKL."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Inflamação local intensa no tecido infectado."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A morte necroptótica da célula libera DAMPs que atraem neutrófilos, eliminando o nicho de replicação viral."
+        }
+      ],
+      "diagnostico_revelado": "Necroptose induzida como resposta imune de emergência.",
+      "tratamento_resumido": "Suporte imunológico e antiviral.",
+      "conexao_com_bloco": "Ilustra como a necroptose funciona como um plano B evolutivo quando o plano A (apoptose) é sabotado.",
+      "disciplinas_relacionadas": [
+        "Imunologia",
+        "Virologia"
+      ]
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-07-002",
+        "titulo": "Necrose — Visão Geral",
+        "disciplina": "Biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A necroptose é frequentemente entendida como uma alternativa quando a apoptose falha."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Inibidores de RIPK1",
+        "disciplina": "Farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "O bloqueio da necroptose está sendo estudado para reduzir danos em tecidos após isquemia-reperfusão.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Piroptose",
+        "explicacao": "Diferente da necroptose, a piroptose é mediada por inflamassomas e caspases inflamatórias (Caspase-1), mas ambas resultam em inflamação."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-07-003",
   "no_pai_id": "s1-biocel-07-000",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Necroptose",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Morte programada com aparência de necrose; RIPK e MLKL",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

@@ -5,50 +5,414 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Regulação por Calmodulina-MLCK",
+    "subtitulo": "Como uma artéria consegue ficar contraída por horas sem que o músculo se esgote?",
     "semestre": 1,
     "disciplina": "histologia",
+    "sistema_corporal": "cardiovascular",
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 4,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "hist",
-      "esqueleto"
+      "histologia",
+      "musculo-liso",
+      "sinalizacao",
+      "calcio",
+      "fisiologia-celular"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Cálcio-calmodulina ativa a quinase; contração lenta e sustentada",
-  "narrativa": [],
+  "resumo_conciso": "O músculo estriado, esquelético ou cardíaco, usa o cálcio para remover um bloqueio físico sobre a actina, permitindo contração quase instantânea — mas de curta duração e alto custo energético contínuo. O músculo liso das artérias e vísceras precisa de algo diferente: manter tônus contrátil por horas, gastando o mínimo de energia possível. A solução foi trocar o alvo da regulação: em vez de destravar a actina, o cálcio ativa uma enzima que fosforila diretamente a cabeça da miosina, ligando-a como um interruptor que permanece na posição 'ligado' com baixíssimo consumo de ATP de manutenção. Esse mecanismo — cálcio ativando calmodulina, que ativa a quinase da cadeia leve da miosina (MLCK) — é o que permite que vasos sanguíneos mantenham tônus vascular constante e que o intestino sustente contrações peristálticas prolongadas sem fadigar como um músculo esquelético faria.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em uma artéria de médio calibre que precisa manter um determinado grau de contração da parede — o chamado tônus vascular — continuamente, ao longo de todo o dia, regulando a pressão arterial. Se essa artéria usasse o mesmo mecanismo do músculo esquelético (cálcio destravando a actina, com alto consumo constante de ATP a cada ciclo de ponte cruzada), o custo metabólico de manter a contração por horas seria proibitivamente alto. Existe aqui um problema real de economia celular: como manter uma força contrátil sustentada, gastando o mínimo de energia possível ao longo do tempo?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que o mecanismo do músculo estriado não serviria ao músculo liso?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No músculo estriado, o controle da contração está na actina: um complexo de proteínas (troponina e tropomiosina) bloqueia fisicamente o sítio de ligação da miosina até que o cálcio remova esse bloqueio. Esse sistema é rápido, mas cada ciclo de ponte cruzada consome ATP continuamente enquanto a contração persiste — ótimo para movimentos breves e intensos, péssimo para tônus sustentado por horas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução do músculo liso foi deslocar o ponto de controle: em vez de regular a disponibilidade da actina, regular a própria miosina, ativando-a através de uma modificação química que, uma vez feita, permite que a cabeça da miosina permaneça ligada à actina por longos períodos com consumo de energia muito menor do que seria necessário no ciclo rápido do músculo estriado."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de nomear as proteínas: fixe a diferença central. No músculo estriado, o cálcio destrava um bloqueio pré-existente na actina. No músculo liso, o cálcio aciona uma cascata que ativa quimicamente a própria miosina. São dois pontos de controle diferentes, escolhidos porque servem a demandas funcionais opostas — velocidade versus economia sustentada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o cálcio ativa a miosina, passo a passo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando o cálcio entra no citosol da célula muscular lisa, ele não encontra troponina (proteína ausente no músculo liso) — ele se liga a uma proteína pequena e universal, presente em praticamente todas as células do corpo, chamada calmodulina. Cada molécula de calmodulina tem quatro sítios de ligação para cálcio; quando todos estão ocupados, a calmodulina sofre uma mudança conformacional que a torna capaz de se encaixar e ativar uma enzima específica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa enzima é a quinase da cadeia leve da miosina (MLCK, do inglês myosin light-chain kinase). Uma vez ativada pelo complexo cálcio-calmodulina, a MLCK adiciona um grupo fosfato a uma pequena subunidade da cabeça da miosina — a cadeia leve regulatória. Essa fosforilação muda a conformação da cabeça de miosina, permitindo que ela finalmente se ligue à actina e inicie o ciclo de deslizamento, exatamente como no músculo estriado, mas por uma via de ativação completamente diferente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A economia energética vem de uma segunda peça desse quebra-cabeça: uma vez que a miosina está fosforilada e ligada à actina, ela pode permanecer nesse estado, gerando tensão mantida, com uma taxa de ciclagem de pontes cruzadas muito mais lenta do que no músculo estriado — um estado chamado 'trava' (latch state), que sustenta força com gasto mínimo de ATP de manutenção."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A contração do músculo liso é regulada pela fosforilação química da própria miosina, não pelo deslocamento de um bloqueio físico sobre a actina — essa é a diferença estrutural fundamental que explica por que o músculo liso pode manter tônus por horas enquanto o esquelético fadiga em minutos."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔐",
+      "conteudo": "Pense na diferença entre segurar uma porta giratória aberta com a mão (você precisa continuar aplicando força ativamente, e cansa rápido) e destravar uma porta e colocar uma cunha de madeira sob ela (uma ação única de 'travar' que mantém a porta aberta indefinidamente, sem esforço contínuo). O músculo esquelético é como segurar a porta com a mão — cada ciclo de ponte cruzada exige novo gasto de ATP continuamente. O músculo liso é como a cunha: a fosforilação da miosina pela MLCK é o ato de 'travar' a porta aberta, e uma vez travada (miosina no estado latch), a força se mantém com gasto energético mínimo, sem que o músculo precise 'segurar' ativamente o tempo todo. Mapeamento: cálcio entrando na célula = a decisão de travar a porta; calmodulina = a mão que segura a cunha antes de encaixá-la; MLCK = o ato mecânico de encaixar a cunha (fosforilar a miosina); estado travado da miosina = a cunha já encaixada, sustentando a porta sem esforço contínuo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse mecanismo depende de um equilíbrio entre duas enzimas opostas: a MLCK, que fosforila e ativa a miosina, e a miosina fosfatase, que remove esse fosfato e promove relaxamento. O tônus vascular real, a cada instante, reflete o balanço entre essas duas atividades enzimáticas — não apenas a presença ou ausência de cálcio. Esse detalhe é o que torna o músculo liso vascular um alvo farmacológico tão rico: substâncias que alteram a atividade da MLCK, da miosina fosfatase, ou o influxo de cálcio podem modular a pressão arterial de formas muito diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Calmodulina",
+      "origem": "do latim calcium (cálcio) + modulus (medida, módulo regulador)",
+      "significado": "literalmente, 'aquela que modula em resposta ao cálcio'",
+      "explicacao": "O nome descreve exatamente a função descoberta: uma proteína capaz de detectar variações na concentração de cálcio citosólico e, em resposta, modular (ativar ou inibir) uma ampla variedade de enzimas-alvo em diferentes tecidos do corpo — não apenas a MLCK do músculo liso, mas dezenas de outras vias de sinalização celular. A calmodulina é uma das proteínas sensoras de cálcio mais universais e conservadas evolutivamente em todo o reino animal."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar o raciocínio"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a enzima miosina fosfatase, responsável por remover o fosfato da miosina, tivesse sua atividade completamente anulada em uma célula muscular lisa vascular, o que aconteceria com o tônus daquele vaso?",
+      "resposta": "O vaso permaneceria em vasoconstrição sustentada e excessiva, mesmo após a concentração de cálcio citosólico retornar ao normal, porque a miosina permaneceria fosforilada e ativa indefinidamente, sem a contraparte enzimática que promove o relaxamento. Esse desequilíbrio entre MLCK e miosina fosfatase é exatamente o mecanismo proposto para explicar parte da fisiopatologia de certas formas de hipertensão e de vasoespasmo patológico, nas quais a via de sinalização RhoA/Rho-quinase inibe a miosina fosfatase, favorecendo contração vascular sustentada mesmo com níveis normais de cálcio."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Via de ativação calmodulina-MLCK no músculo liso",
+      "descricao": "Diagrama mostrando o cálcio entrando na célula, ligando-se à calmodulina, ativando a MLCK, que fosforila a cadeia leve da miosina, permitindo a ligação à actina e a contração.",
+      "prompt_ia": "Diagrama científico vetorial minimalista, mostrando a via de sinalização de contração do músculo liso em 4 etapas sequenciais numeradas: 1) íons de cálcio (esferas amarelas) entrando na célula e se ligando a quatro sítios da calmodulina (proteína verde); 2) o complexo cálcio-calmodulina ativando a enzima MLCK (roxa); 3) a MLCK fosforilando a cadeia leve regulatória da cabeça de miosina (adicionando grupo fosfato, representado em laranja); 4) a cabeça de miosina fosforilada se ligando ao filamento de actina (azul) e iniciando o deslizamento. Setas indicando o fluxo da reação, legendas em português, fundo transparente adaptável a tema escuro/claro, estilo didático limpo."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-hist-04-003",
+        "titulo": "Tecido Muscular Liso — Visão Geral",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já conhecer a ausência de sarcômeros organizados no músculo liso e sua disposição oblíqua de filamentos antes de entender por que a regulação da contração precisou ser bioquímica, e não estrutural-rígida como no estriado."
+      },
+      {
+        "bloco_id": "s1-hist-04-001-03",
+        "titulo": "O Sarcômero e as Bandas (A, I, Z, M, H)",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "complementar",
+        "explicacao": "Conhecer o mecanismo de regulação por troponina-tropomiosina do músculo estriado permite entender, por contraste direto, por que o músculo liso precisou de uma via de regulação completamente diferente."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Anti-hipertensivos e bloqueadores de canal de cálcio",
+        "mecanismo_conexao": "A redução do cálcio citosólico disponível, seja por bloqueio de canais de cálcio ou por outros mecanismos vasodilatadores, inibe diretamente a via calmodulina-MLCK descrita aqui, relaxando a musculatura lisa vascular e reduzindo a resistência periférica.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "cardiologia",
+        "semestre_futuro": 6,
+        "topico": "Hipertensão arterial e via RhoA/Rho-quinase",
+        "mecanismo_conexao": "A inibição patológica da miosina fosfatase pela via RhoA/Rho-quinase, aumentando a sensibilidade da via calmodulina-MLCK ao cálcio, é um dos mecanismos moleculares propostos para explicar certas formas de hipertensão arterial resistente.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Óxido nítrico e relaxamento vascular",
+        "mecanismo_conexao": "O óxido nítrico liberado pelo endotélio ativa a guanilato ciclase na célula muscular lisa vascular, promovendo relaxamento por vias que reduzem indiretamente a atividade efetiva da MLCK, complementando o entendimento do controle do tônus vascular.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-04-001-03",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Enquanto no músculo liso o cálcio ativa a miosina através da calmodulina e da MLCK, no músculo estriado o cálcio remove um bloqueio físico pré-existente sobre a actina — dois pontos de controle completamente diferentes para o mesmo íon sinalizador."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-hist-04-003-03-fc01",
+      "pergunta": "Por que o músculo liso precisou desenvolver um mecanismo de regulação da contração diferente do complexo troponina-tropomiosina usado pelo músculo estriado?",
+      "resposta": "Porque o músculo liso precisa manter contração sustentada por longos períodos (tônus vascular, peristaltismo) com o mínimo gasto energético possível, enquanto o mecanismo do músculo estriado (cálcio destravando a actina) mantém alto consumo contínuo de ATP a cada ciclo de ponte cruzada — adequado para contrações breves e intensas, mas proibitivamente caro para sustentação prolongada. A regulação por fosforilação da miosina (via calmodulina-MLCK) permite que a cabeça de miosina permaneça ativamente ligada à actina em um estado de baixo consumo energético de manutenção (estado latch), tornando o músculo liso metabolicamente eficiente para sua função de sustentação prolongada.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "musculo-liso",
+        "calmodulina",
+        "MLCK"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-003-03-fc02",
+      "pergunta": "Descreva a sequência completa desde a entrada de cálcio no citosol de uma célula muscular lisa até a ligação efetiva da miosina à actina.",
+      "resposta": "1) O cálcio entra no citosol da célula muscular lisa (por canais de membrana ou liberação de estoques internos). 2) O cálcio se liga a quatro sítios na proteína calmodulina, provocando mudança conformacional que a torna ativa. 3) O complexo cálcio-calmodulina se liga e ativa a enzima quinase da cadeia leve da miosina (MLCK). 4) A MLCK ativada adiciona um grupo fosfato à cadeia leve regulatória da cabeça de miosina. 5) Essa fosforilação muda a conformação da cabeça de miosina, permitindo que ela se ligue à actina e inicie o ciclo de deslizamento, gerando tensão contrátil.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "calmodulina",
+        "MLCK",
+        "mecanismo"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-003-03-fc03",
+      "pergunta": "Se a atividade da enzima miosina fosfatase estivesse patologicamente reduzida em uma célula muscular lisa vascular, mesmo com níveis normais de cálcio citosólico, o que aconteceria com o tônus desse vaso?",
+      "resposta": "O vaso tenderia a permanecer em vasoconstrição excessiva e sustentada, mesmo quando o estímulo original de cálcio já tivesse cessado. Isso ocorre porque o grau de fosforilação da miosina, e não apenas a concentração momentânea de cálcio, é o que determina o estado de contração — resultado de um equilíbrio dinâmico entre a MLCK (que fosforila e ativa) e a miosina fosfatase (que desfosforila e promove relaxamento). Reduzir a atividade da fosfatase desloca esse equilíbrio para o lado da contração, mesmo sem aumento adicional de cálcio, mecanismo relevante em certas formas de hipertensão e vasoespasmo patológico.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "miosina-fosfatase",
+        "contrafactual",
+        "hipertensao"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-003-03-fc04",
+      "pergunta": "Paciente com hipertensão arterial de difícil controle é iniciado em bloqueador de canal de cálcio (anlodipino). Explique, através da via calmodulina-MLCK, por que esse fármaco reduz a pressão arterial.",
+      "resposta": "O anlodipino bloqueia canais de cálcio voltagem-dependentes do tipo L na membrana da célula muscular lisa vascular, reduzindo a entrada de cálcio para o citosol. Com menos cálcio disponível, menos moléculas de calmodulina são ativadas, reduzindo proporcionalmente a ativação da MLCK. Com a MLCK menos ativa, menos cabeças de miosina são fosforiladas, e o equilíbrio se desloca em favor da miosina fosfatase (que continua desfosforilando a miosina já ativada), promovendo relaxamento da musculatura lisa vascular — vasodilatação — e, consequentemente, redução da resistência vascular periférica e da pressão arterial.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "bloqueador-canal-calcio",
+        "hipertensao",
+        "clinico"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-003-03-fc05",
+      "pergunta": "Verdadeiro ou falso e justifique: 'No músculo liso, assim como no músculo estriado, o cálcio ativa a contração se ligando diretamente à troponina, que remove o bloqueio sobre a actina.'",
+      "resposta": "Falso. O músculo liso não possui troponina — essa proteína reguladora é exclusiva do músculo estriado (esquelético e cardíaco). No músculo liso, o cálcio se liga à calmodulina, uma proteína sensora de cálcio universal presente em praticamente todas as células do corpo, e esse complexo cálcio-calmodulina ativa a enzima MLCK, que fosforila diretamente a miosina — regulando a contração pelo lado da miosina, não da actina. Confundir os dois mecanismos é um erro comum, porque em ambos os casos o cálcio é o sinal inicial, mas as vias moleculares subsequentes são completamente distintas.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "musculo-liso",
+        "troponina",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-003-03-fc06",
+      "pergunta": "Por que o nome 'calmodulina' descreve exatamente a função dessa proteína, e o que isso revela sobre sua importância biológica além do músculo liso?",
+      "resposta": "Calmodulina vem de 'calcium' (cálcio) + 'modulus' (medida, módulo regulador) — literalmente, 'aquela que modula em resposta ao cálcio'. O nome descreve precisamente sua função: detectar variações na concentração de cálcio citosólico e, em resposta, modular a atividade de enzimas-alvo. Isso revela que a calmodulina não é uma proteína exclusiva do músculo liso — ela é uma das proteínas sensoras de cálcio mais universais e evolutivamente conservadas do reino animal, participando de dezenas de vias de sinalização em praticamente todos os tipos celulares, da contração muscular à regulação da divisão celular e da neurotransmissão.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "calmodulina",
+        "etimologia",
+        "sinalizacao-celular"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-003-03-fc07",
+      "pergunta": "Compare a regulação da contração no músculo estriado e no músculo liso quanto ao ponto de controle molecular (actina versus miosina) e à consequência funcional dessa diferença.",
+      "resposta": "No músculo estriado, o ponto de controle é a actina: o complexo troponina-tropomiosina bloqueia fisicamente o sítio de ligação da miosina até que o cálcio, ligando-se à troponina C, remova esse bloqueio — um mecanismo rápido, adequado a contrações intensas e breves, mas com alto consumo contínuo de ATP enquanto durar a contração. No músculo liso, o ponto de controle é a própria miosina: o cálcio, via calmodulina, ativa a MLCK, que fosforila a cabeça de miosina e permite sua ligação à actina — um mecanismo mais lento para iniciar, mas capaz de sustentar tensão por longos períodos com baixo consumo energético de manutenção (estado latch). A consequência funcional é que o músculo estriado é otimizado para potência e velocidade de curta duração, enquanto o músculo liso é otimizado para economia e sustentação prolongada.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "comparacao",
+        "musculo-estriado",
+        "musculo-liso"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-003-03-fc08",
+      "pergunta": "Conecte: por que a via de sinalização RhoA/Rho-quinase (Bioquímica celular) é considerada um mecanismo relevante na fisiopatologia de certas formas de hipertensão arterial resistente (Cardiologia), atuando sobre a mesma via calmodulina-MLCK descrita neste bloco de Histologia?",
+      "resposta": "A via RhoA/Rho-quinase, ativada por diversos estímulos vasoconstritores, fosforila e inibe a miosina fosfatase — a enzima que normalmente desfosforila e inativa a miosina no músculo liso vascular, descrita neste bloco como a contraparte reguladora da MLCK. Ao inibir a fosfatase, essa via aumenta a sensibilidade da célula muscular lisa ao cálcio: mesmo com a mesma concentração de cálcio citosólico, mais miosina permanece fosforilada e ativa, porque menos fosfato está sendo removido. Esse fenômeno, chamado sensibilização ao cálcio, explica por que alguns pacientes mantêm vasoconstrição excessiva e hipertensão mesmo com níveis de cálcio intracelular aparentemente normais — um mecanismo que foge do controle simples e explica parte da resistência terapêutica a bloqueadores de canal de cálcio isolados, motivando o desenvolvimento de inibidores diretos da Rho-quinase em pesquisa cardiovascular.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "RhoA",
+        "hipertensao",
+        "sintese"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-hist-04-003-03-caso01",
+      "titulo": "Hipertensão resistente a múltiplas classes de anti-hipertensivos",
+      "apresentacao": "Mulher de 54 anos, obesa, com hipertensão arterial mantida acima de 160/100 mmHg apesar do uso regular de três classes de anti-hipertensivos em doses otimizadas, incluindo um bloqueador de canal de cálcio. Exames laboratoriais excluem causas secundárias comuns (hiperaldosteronismo, estenose de artéria renal, feocromocitoma). MAPA (monitorização ambulatorial da pressão arterial) confirma hipertensão verdadeiramente resistente, sem efeito do jaleco branco.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ativação excessiva e sustentada da via de sinalização RhoA/Rho-quinase nas células musculares lisas vasculares, possivelmente favorecida por fatores metabólicos associados à obesidade e disfunção endotelial."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O equilíbrio entre MLCK e miosina fosfatase na célula muscular lisa vascular — a via de regulação da contração descrita neste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A inibição da miosina fosfatase pela via RhoA/Rho-quinase aumenta a sensibilidade da célula ao cálcio disponível, mantendo a miosina fosforilada e ativa mesmo com níveis de cálcio citosólico que, em condições normais, permitiriam relaxamento vascular adequado."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Vasoconstrição sustentada e resistência vascular periférica elevada, mantendo a pressão arterial alta mesmo com bloqueio farmacológico da entrada de cálcio pelos canais tipo L."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Necessidade de combinações farmacológicas adicionais (como antagonistas de mineralocorticoide ou vasodilatadores diretos) e maior risco cardiovascular a longo prazo pela exposição prolongada a pressão arterial não controlada, exigindo investigação e manejo especializado em hipertensão resistente."
+        }
+      ],
+      "conexao_com_bloco": "O caso conecta diretamente o equilíbrio MLCK/miosina fosfatase discutido neste bloco à realidade clínica da hipertensão resistente: quando esse equilíbrio é deslocado por vias de sinalização paralelas (como RhoA/Rho-quinase), a musculatura lisa vascular pode permanecer contraída mesmo diante de terapias que reduzem apenas a entrada de cálcio, explicando por que alguns pacientes não respondem adequadamente a bloqueadores de canal de cálcio isolados.",
+      "disciplinas_relacionadas": [
+        "histologia",
+        "cardiologia",
+        "farmacologia",
+        "fisiologia"
+      ],
+      "diagnostico_revelado": "Hipertensão arterial resistente, com hipótese fisiopatológica de sensibilização ao cálcio via RhoA/Rho-quinase.",
+      "tratamento_resumido": "Otimização da combinação farmacológica (incluindo antagonista de mineralocorticoide como a espironolactona, frequentemente eficaz em hipertensão resistente), investigação de causas secundárias adicionais, e consideração de terapias intervencionistas (como denervação renal) em casos selecionados [⚠️ VERIFICAR: protocolos de manejo de hipertensão resistente e papel específico de inibidores de Rho-quinase em uso clínico devem ser confirmados em guideline de cardiologia atualizado]."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-hist-04-003-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
+  },
+  "horizonte_validade": "em_mudanca",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 14ª ed. Elsevier; 2021. Capítulo sobre contração do músculo liso.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Ross MH, Pawlina W. Histology: A Text and Atlas. 8th ed. Wolters Kluwer; 2020. Chapter 10 — Muscle Tissue.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "histofisiologia"
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "O músculo liso usa troponina para regular a contração, assim como o músculo estriado",
+      "correcao": "O músculo liso não tem troponina; usa calmodulina e MLCK para fosforilar diretamente a miosina",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "A contração do músculo liso depende exclusivamente da concentração de cálcio, sem outros fatores reguladores",
+      "correcao": "Depende do equilíbrio entre MLCK (ativadora) e miosina fosfatase (inativadora), que pode ser modulado por vias independentes do cálcio, como RhoA/Rho-quinase",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "calmodulina",
+      "termo_es": "calmodulina",
+      "termo_en": "calmodulin",
+      "abreviatura": "CaM"
+    },
+    {
+      "termo_pt": "quinase da cadeia leve da miosina",
+      "termo_es": "quinasa de la cadena ligera de miosina",
+      "termo_en": "myosin light-chain kinase",
+      "abreviatura": "MLCK"
+    },
+    {
+      "termo_pt": "tônus vascular",
+      "termo_es": "tono vascular",
+      "termo_en": "vascular tone",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "gemini-3.1-flash-lite",
+      "mudanca": "Geração inicial do bloco",
+      "motivo": "Produção em massa S1"
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Reescrita completa da narrativa (socrática genuína, problema de economia energética apresentado antes do mecanismo), nova analogia (porta giratória e cunha), expansão de flashcards para 8 tipos variados, adição de caso clínico com cascata de 5 etapas (hipertensão resistente e via RhoA/Rho-quinase)",
+      "motivo": "Alinhamento com ANIMA_FILOSOFIA.md — narrativa anterior nomeava calmodulina/MLCK cedo, analogia de cofre pouco elaborada, sem caso clínico"
+    }
   ]
 }

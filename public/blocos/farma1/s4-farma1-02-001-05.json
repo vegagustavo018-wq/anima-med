@@ -2,53 +2,350 @@
   "resumo_id": "s4-farma1-02-001-05",
   "no_pai_id": "s4-farma1-02-001",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-02-006-01"
+  ],
   "metadata": {
     "titulo": "Regulação de Receptores: Up e Downregulation",
+    "subtitulo": "Se o alvo não pode fugir do fármaco, o que a célula faz para se proteger?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "receptores",
+      "regulacao-de-receptores",
+      "downregulation",
+      "upregulation",
+      "tolerancia",
+      "efeito-rebote",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Adaptação a exposição crônica; base da tolerância e do efeito rebote",
-  "narrativa": [],
+  "resumo_conciso": "Um receptor não é uma peça fixa da célula — é uma proteína com produção, vida útil e degradação reguladas, e a célula ajusta essa quantidade conforme o quanto o receptor está sendo usado. Diante de estimulação crônica excessiva por um agonista, a célula reduz o número de receptores disponíveis na membrana, internalizando-os e degradando-os: é a downregulation. Diante de bloqueio crônico por um antagonista, a célula faz o oposto — produz e expõe mais receptores na tentativa de recuperar sensibilidade ao mensageiro que não estava conseguindo agir: é a upregulation. As duas são a mesma lógica homeostática aplicada em direções opostas, e juntas explicam dois fenômenos centrais da farmacologia clínica. A downregulation é o mecanismo molecular por trás de boa parte da tolerância farmacodinâmica de instalação mais lenta: a mesma dose já não encontra o mesmo número de fechaduras, então o efeito diminui com o tempo. A upregulation explica o efeito rebote: se um paciente em uso crônico de um antagonista tem o fármaco suspenso abruptamente, a célula fica, por um período, com excesso de receptores expostos e sensíveis — e o mensageiro endógeno, agora sem bloqueio, encontra um sistema hipersensibilizado, produzindo um efeito paradoxalmente maior que o basal. Este é o fechamento do módulo de receptores: as quatro famílias estruturais descrevem como o encaixe é feito e traduzido; a regulação descreve que a quantidade desse encaixe não é fixa, mas se ajusta ao histórico de exposição — e é esse ajuste que torna a farmacologia clínica uma questão de tempo, não só de dose.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Até aqui, cada família de receptor foi descrita como se o número de receptores na célula fosse uma constante — um dado fixo do sistema, como o número de fechaduras instaladas em uma porta que nunca muda. Essa simplificação funciona bem para entender uma dose isolada. Mas ela esconde um problema real: o que acontece quando a célula é exposta ao mesmo estímulo, no mesmo receptor, repetidas vezes, por dias ou semanas?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se o número de receptores fosse mesmo fixo, a resposta a uma dose fixa também seria sempre a mesma — indefinidamente. Isso não é o que se observa na prática clínica. E não é o que se observa porque a célula não pode ficar passiva diante de estimulação crônica excessiva ou de bloqueio crônico: ambas as situações a afastam do seu ponto de equilíbrio, e uma célula que não reage a esse afastamento está, na prática, deixando de se autorregular."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: o que fazer quando o mesmo estímulo não para de chegar (ou não consegue mais chegar)"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pense nas duas situações-limite. Na primeira, um agonista — endógeno em excesso ou administrado como fármaco — ativa o mesmo receptor continuamente, muito além do padrão pulsátil que a sinalização fisiológica normal costuma ter. Se a célula continuasse respondendo ao máximo, indefinidamente, a esse nível de ativação, ela ficaria presa em um estado de resposta constante que nenhuma via de sinalização foi desenhada para sustentar sem custo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na segunda situação, o oposto: um antagonista ocupa o receptor sem ativá-lo, bloqueando cronicamente a ação do mensageiro natural. Se a célula não fizesse nada, ficaria surda ao seu próprio sinal fisiológico pelo tempo inteiro em que o antagonista estivesse presente — um estado de privação de sinal igualmente insustentável para funções que dependem daquele receptor."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: o problema não é o fármaco em si — é que tanto ativação crônica excessiva quanto bloqueio crônico tiram a célula do seu ponto de operação normal, e uma célula viva não tolera bem permanecer fora desse ponto por muito tempo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: ajustar o número de fechaduras, não a chave"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução que a célula tem à disposição não é impedir a chegada do fármaco — isso é problema de farmacocinética, fora do alcance da célula-alvo — e também não é mudar a geometria do receptor a cada exposição, o que seria lento e arriscado do ponto de vista genético. A solução mais direta e reversível é mudar quantos receptores estão disponíveis para responder. Menos fechaduras expostas significa menos resposta possível, mesmo com a mesma quantidade de chaves circulando. Mais fechaduras expostas significa mais chance de captar um sinal que está escasso ou bloqueado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse ajuste de número é exatamente o que a célula faz, e ele acontece em direções opostas conforme a direção do desequilíbrio: menos receptores diante de excesso de estímulo, mais receptores diante de escassez de estímulo. É a mesma lógica de retroalimentação negativa que rege praticamente qualquer sistema fisiológico regulado — o sistema se move para compensar o desvio, não para acompanhá-lo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A célula não muda a chave nem a fechadura — muda quantas fechaduras deixa expostas. Excesso crônico de estímulo → menos receptores (downregulation). Bloqueio crônico do estímulo → mais receptores (upregulation)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse ajuste"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O número de receptores expostos na membrana de uma célula, em qualquer momento, é o resultado de um equilíbrio entre três processos contínuos: síntese de novas proteínas-receptor, inserção dessas proteínas na membrana e remoção de receptores já existentes — seja por internalização temporária, seja por degradação definitiva. Regular esse número não exige nenhuma maquinaria nova: exige apenas inclinar esse equilíbrio já existente para um lado ou para o outro, usando ferramentas moleculares que a célula já possui para reciclar qualquer proteína de membrana."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As peças centrais dessa maquinaria são vesículas de endocitose, que retiram receptores da superfície e os levam para dentro da célula, e o sistema lisossomal, que degrada definitivamente o que não será reaproveitado. Também entram em jogo os próprios genes que codificam o receptor: sua transcrição pode ser acelerada ou desacelerada conforme o estado de ativação da via, alterando quanta proteína nova chega para repor a membrana."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em cada direção"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na downregulation, a exposição repetida e intensa de um receptor a um agonista dispara sua própria internalização. De forma simplificada: o receptor ativado é reconhecido por proteínas especializadas em marcá-lo para remoção, é retirado da membrana em vesículas e levado para dentro da célula. Parte desses receptores internalizados é reciclada de volta à superfície depois de um tempo — uma pausa temporária na resposta —, mas, quando a ativação é intensa e prolongada, uma fração crescente desses receptores é encaminhada para degradação em vez de reciclagem. O resultado líquido, com o passar dos dias, é uma membrana com menos receptores efetivamente disponíveis do que havia antes da exposição crônica começar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na upregulation, o processo caminha na direção inversa: o bloqueio crônico por um antagonista mantém o receptor ocupado, mas sem gerar o sinal de internalização que a ativação normalmente dispararia — afinal, o antagonista não ativa a via de retroalimentação que reduziria o número de receptores. Ao mesmo tempo, a ausência prolongada de sinalização efetiva pelo mensageiro endógeno é interpretada pela célula como um déficit de sensibilidade, o que favorece maior síntese e exposição de receptores novos na tentativa de recuperar a capacidade de resposta. O resultado, também ao longo de dias a semanas, é uma membrana com mais receptores expostos do que o basal anterior ao bloqueio."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Neste ponto, o essencial já está de pé: downregulation reduz receptores em resposta a excesso de ativação; upregulation aumenta receptores em resposta a bloqueio crônico. As duas seguem a mesma lógica de retroalimentação, apenas em direções opostas — e ambas levam dias a se instalar, porque dependem de síntese e degradação real de proteína, não de um simples interruptor instantâneo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa regulação se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esta é a peça molecular que faltava para fechar um mecanismo já apresentado em termos gerais: a tolerância farmacodinâmica. A recalibração de sensibilidade descrita ali — menos alvos disponíveis diante de estimulação persistente — é, na prática, a downregulation aqui detalhada. O que antes foi descrito de forma abstrata (\"o sistema reduz o ganho da resposta\") agora tem um mecanismo concreto: menos receptores fisicamente presentes na membrana para o mesmo fármaco encontrar. É por isso que a tolerância farmacodinâmica típica de agonistas crônicos costuma levar dias a se instalar e dias a regredir — o tempo necessário é o tempo de síntese, internalização e degradação de proteína, não o tempo de uma reação bioquímica instantânea."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A upregulation, por sua vez, é o mecanismo por trás do efeito rebote na suspensão abrupta de antagonistas. Durante o uso crônico do antagonista, a célula acumulou um excesso de receptores expostos como resposta compensatória ao bloqueio. Se o antagonista é retirado de um dia para o outro, esse excesso de receptores não desaparece instantaneamente — ele permanece por dias, agora desbloqueado e disponível para o mensageiro endógeno, que volta a circular normalmente. O resultado é uma resposta desproporcionalmente intensa: não porque o mensageiro endógeno aumentou, mas porque o número de fechaduras prontas para recebê-lo está temporariamente maior do que o normal. É a mesma lógica de retirada abrupta já vista para a dependência física, aplicada agora especificamente ao nível do receptor, e não à via intracelular inteira."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Ponte para a prática clínica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O exemplo clássico é o dos betabloqueadores. Um paciente em uso crônico de um betabloqueador tem seus receptores beta-adrenérgicos cronicamente bloqueados — o antagonista ocupa a fechadura sem girá-la. Ao longo de semanas, a célula responde produzindo mais receptores beta na tentativa de recuperar sensibilidade à adrenalina e à noradrenalina circulantes. Se esse betabloqueador for suspenso abruptamente, o paciente passa a ter, de um dia para o outro, uma membrana com excesso de receptores beta desbloqueados, exposta à mesma quantidade de catecolaminas endógenas que sempre circulou — só que agora encontrando muito mais fechaduras disponíveis. O resultado clínico é taquicardia rebote, podendo evoluir para arritmia, crise hipertensiva ou até isquemia miocárdica em pacientes com doença coronariana de base. É exatamente por isso que a orientação padrão nunca é suspender betabloqueador de forma abrupta, e sim reduzir a dose progressivamente ao longo de dias a semanas — dando tempo para a upregulation reverter antes de retirar de vez a proteção farmacológica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "downregulation / upregulation",
+      "origem": "do inglês down (para baixo) e up (para cima) + regulation, do latim regulare (ajustar segundo uma régua, uma norma)",
+      "significado": "literalmente, 'ajuste para baixo' e 'ajuste para cima' — no sentido de reduzir ou aumentar a expressão funcional de algo, aqui o número de receptores",
+      "explicacao": "Os termos entraram na farmacologia e na biologia molecular já no vocabulário da regulação gênica, onde regular sempre significou trazer algo de volta a uma norma (regula, em latim, é a régua ou o padrão). Down e up não descrevem uma direção espacial na célula, mas uma direção quantitativa: menos ou mais proteína disponível. A escolha dos termos em inglês, mesmo em textos de língua portuguesa, reflete que o conceito nasceu junto com a biologia molecular moderna, majoritariamente publicada em inglês — outro caso, como tantos em farmacologia, em que a nomenclatura registra o momento e o idioma da descoberta, não uma exigência da própria ideia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o todo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚪",
+      "conteudo": "Pense num teatro com um número de portas de entrada que a administração pode ajustar conforme o movimento. Os **receptores na membrana** são essas portas. Quando um evento lota o teatro com público insistente batendo palma sem parar — estímulo crônico excessivo, o agonista continuamente ativando o receptor — a administração, sobrecarregada, começa a **fechar portas** para conter o fluxo excessivo: é a downregulation, menos portas abertas, menos gente entrando pela mesma pressão de público. Quando, ao contrário, alguém tranca a entrada principal por semanas com um cadeado — o antagonista bloqueando cronicamente o acesso — e o público continua tentando entrar sem conseguir, a administração, percebendo que ninguém está passando, resolve **abrir portas extras** na esperança de captar esse público represado: é a upregulation, mais portas abertas para compensar o acesso perdido. A quebra da analogia, e é o ponto clinicamente mais importante: se alguém tira o cadeado de repente, depois de semanas com portas extras abertas, uma multidão inteira consegue entrar de uma vez por um número de portas maior que o normal — um influxo desproporcional que o teatro não esperava administrar. É exatamente essa entrada em massa, súbita e maior que a linha de base, que corresponde ao efeito rebote clínico quando um antagonista crônico é suspenso sem desmame."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma síntese para fechar o módulo de receptores"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Com este bloco, o módulo de receptores se completa. As quatro famílias estruturais mostraram que existem diferentes formas de fazer a mesma coisa — converter o encaixe de um mensageiro em um sinal interno —, cada uma com sua velocidade e seu tipo de efeito característico. Este bloco final mostrou algo diferente: que o número de fechaduras disponíveis para qualquer uma dessas quatro famílias não é um dado fixo do organismo, mas uma variável que muda com o histórico recente de exposição. A farmacologia de uma dose isolada depende de qual receptor e de quanto fármaco; a farmacologia do tratamento contínuo depende também de há quanto tempo o receptor está sendo estimulado ou bloqueado. É esse terceiro eixo — o tempo — que transforma prescrever um fármaco de uma decisão pontual em uma decisão que exige acompanhamento e, muitas vezes, retirada planejada."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a downregulation e a upregulation fossem processos instantâneos, em vez de levarem dias para se instalar e regredir, o risco clínico da suspensão abrupta de fármacos como betabloqueadores seria maior, menor ou o mesmo?",
+      "resposta": "Seria menor, paradoxalmente. O risco do efeito rebote existe precisamente porque a upregulation é lenta para reverter: o excesso de receptores se instala ao longo de semanas de bloqueio crônico e continua presente por dias depois da suspensão, período em que o paciente fica exposto a um sistema hipersensibilizado. Se o processo fosse instantâneo, o número de receptores voltaria ao normal no exato momento em que o antagonista fosse retirado, e nunca haveria uma janela de descompasso entre 'receptor desbloqueado' e 'número de receptores normalizado'. É justamente a lentidão biológica desses ajustes — o tempo que a célula leva para sintetizar, inserir, internalizar e degradar proteína real — que cria o intervalo de risco, e é por isso que a solução clínica (desmame progressivo) trabalha dando tempo para essa mesma lentidão reverter antes da retirada completa, em vez de tentar combatê-la."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Downregulation e upregulation como ajuste do número de receptores",
+      "descricao": "Esquema didático em dois painéis horizontais espelhados, com uma célula e sua membrana ao centro de cada um. Painel esquerdo, rotulado 'DOWNREGULATION — estimulação crônica excessiva': múltiplas moléculas de agonista (círculos de uma cor) ocupando receptores na membrana, com setas mostrando alguns receptores sendo internalizados em vesículas e levados a um lisossomo, resultando em membrana final com poucos receptores remanescentes. Painel direito, rotulado 'UPREGULATION — bloqueio crônico': moléculas de antagonista (círculos de outra cor, sem encaixe ativo) ocupando poucos receptores iniciais, com setas mostrando síntese de novas proteínas-receptor a partir do núcleo/retículo e inserção de novos receptores na membrana, resultando em membrana final com muitos receptores expostos. Uma seta inferior conectando os dois painéis a um terceiro quadro pequeno, rotulado 'RETIRADA ABRUPTA DO ANTAGONISTA', mostrando a membrana upregulada agora exposta ao mensageiro endógeno em excesso de fechaduras, com símbolo de alerta. Fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno, cores suaves, alto contraste, sem texturas fotorrealistas. Dois painéis horizontais lado a lado, cada um mostrando uma membrana celular em corte transversal. Painel esquerdo com rótulo em português 'DOWNREGULATION': no topo, vários círculos vermelhos pequenos (agonista) encaixados em receptores na membrana; setas curvas mostrando alguns receptores sendo puxados para dentro da célula dentro de vesículas tracejadas, seguindo até um pequeno organelo rotulado 'lisossomo'; ao final da sequência (à direita do painel), a mesma membrana com visivelmente menos receptores. Painel direito com rótulo em português 'UPREGULATION': no topo, poucos círculos azuis (antagonista) ocupando poucos receptores sem gerar sinal (representado por ausência de seta interna); no meio, um núcleo celular estilizado produzindo novas proteínas (pequenos retângulos verdes se movendo até a membrana); ao final da sequência, a mesma membrana com visivelmente mais receptores expostos. Abaixo dos dois painéis, uma seta conectando ambos a um terceiro quadro pequeno rotulado 'RETIRADA ABRUPTA DO ANTAGONISTA', mostrando a membrana upregulada com muitos receptores agora ocupados por moléculas menores representando o mensageiro endógeno, e um ícone de alerta (triângulo com exclamação) ao lado. Legendas em português, sem marcas d'água, sem texto além do indicado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-001",
+        "titulo": "Receptores — A Fechadura Molecular (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume a definição de receptor como sentinela acoplada a transdução de sinal, e a ideia de que cada família estrutural liga encaixe a resposta interna. Aqui se acrescenta que o número dessas sentinelas não é fixo, mas regulado pelo histórico de exposição."
+      }
+    ],
     "futuras": [],
-    "laterais": []
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-02-006-01",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "A downregulation de receptores descrita aqui é o mecanismo molecular concreto por trás da tolerância farmacodinâmica de instalação mais lenta apresentada em Tolerância Farmacocinética e Farmacodinâmica: menos receptores expostos na membrana explicam por que a mesma dose produz efeito cada vez menor."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-001-05-fc01",
+      "pergunta": "Por que a célula reduz o número de receptores diante de estimulação crônica excessiva por um agonista, em vez de simplesmente continuar respondendo ao máximo?",
+      "resposta": "Porque permanecer respondendo ao máximo, indefinidamente, manteria a célula presa em um estado de ativação constante que nenhuma via de sinalização foi desenhada para sustentar sem custo — o padrão fisiológico normal é de sinalização pulsátil, não contínua. Reduzir o número de receptores expostos (downregulation, por internalização e degradação) é a forma da célula recalibrar sua sensibilidade e devolver o sistema para perto do seu ponto de equilíbrio, mesmo que o estímulo excessivo continue presente.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "receptores",
+        "downregulation",
+        "homeostase"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-001-05-fc02",
+      "pergunta": "Descreva o mecanismo celular da downregulation, desde a ativação repetida do receptor até a redução do número de receptores na membrana.",
+      "resposta": "A exposição repetida e intensa a um agonista faz com que o receptor ativado seja reconhecido por proteínas especializadas em marcá-lo para remoção. Ele é então retirado da membrana por endocitose, formando vesículas internalizadas. Parte desses receptores é reciclada de volta à superfície após um período (dessensibilização temporária), mas, quando a ativação é intensa e prolongada, uma fração crescente é encaminhada ao sistema lisossomal para degradação definitiva em vez de reciclagem. O resultado líquido, ao longo de dias, é menos receptores efetivamente disponíveis na membrana do que antes da exposição crônica.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "receptores",
+        "downregulation",
+        "internalizacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-001-05-fc03",
+      "pergunta": "Um paciente em uso crônico de betabloqueador suspende a medicação abruptamente. Explique, usando o conceito de upregulation, por que ele pode desenvolver taquicardia rebote e por que essa reação não seria esperada em alguém que nunca usou o fármaco.",
+      "resposta": "Durante o uso crônico, o bloqueio constante dos receptores beta-adrenérgicos pelo antagonista leva a célula a sintetizar e expor mais receptores na tentativa de recuperar sensibilidade às catecolaminas endógenas (upregulation). Ao suspender o fármaco abruptamente, esse excesso de receptores não desaparece de imediato — permanece por dias, agora desbloqueado. A mesma quantidade de adrenalina e noradrenalina que sempre circulou encontra um número de receptores maior que o normal, gerando uma resposta simpática desproporcional: taquicardia, podendo evoluir para arritmia ou crise hipertensiva. Em alguém que nunca usou o fármaco, o número de receptores nunca foi elevado acima do basal, então não há excesso de fechaduras para gerar hiper-resposta.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "receptores",
+        "upregulation",
+        "efeito-rebote",
+        "betabloqueador"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-001-05-fc04",
+      "pergunta": "Como a downregulation de receptores se relaciona com a tolerância farmacodinâmica descrita de forma mais geral em outro bloco?",
+      "resposta": "A tolerância farmacodinâmica foi descrita, em termos gerais, como uma recalibração da sensibilidade celular que pode envolver 'menos alvos disponíveis' diante de estimulação persistente. A downregulation é exatamente esse mecanismo, em nível molecular: internalização e degradação de receptores reduzem fisicamente o número de fechaduras presentes na membrana. É por isso que esse tipo de tolerância costuma levar dias para se instalar (tempo de internalização e degradação de proteína) e dias para regredir após a suspensão do fármaco (tempo de nova síntese e reinserção de receptores).",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "receptores",
+        "downregulation",
+        "tolerancia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-001-05-fc05",
+      "pergunta": "Se a upregulation fosse um processo instantâneo em vez de levar dias a semanas para se instalar e regredir, o risco de efeito rebote na suspensão de antagonistas crônicos seria maior, menor ou inalterado?",
+      "resposta": "Seria menor. O efeito rebote depende de existir uma janela de tempo em que o excesso de receptores já upregulados permanece presente mesmo depois que o antagonista foi retirado — é esse descompasso temporal entre 'bloqueio removido' e 'número de receptores normalizado' que gera a hiper-resposta. Se a upregulation reagisse e regredisse instantaneamente, o número de receptores se normalizaria no mesmo momento da suspensão do fármaco, eliminando a janela de risco.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "receptores",
+        "upregulation",
+        "efeito-rebote"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-001-05-fc06",
+      "pergunta": "Por que a suspensão de um betabloqueador deve ser feita com redução progressiva de dose, e não de forma abrupta, à luz do mecanismo de upregulation?",
+      "resposta": "Porque a upregulation que se instalou durante o uso crônico não regride instantaneamente — leva dias a semanas para o excesso de receptores beta voltar ao número basal. Reduzir a dose progressivamente dá tempo para essa reversão acontecer em paralelo com a diminuição do bloqueio farmacológico, evitando que o paciente passe por um período em que o número de receptores ainda está elevado exatamente quando o bloqueio já foi totalmente retirado — situação que maximiza o risco de taquicardia rebote, arritmia ou crise hipertensiva.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "receptores",
+        "upregulation",
+        "desmame",
+        "betabloqueador"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-001-05-caso01",
+      "titulo": "Taquicardia rebote após suspensão abrupta de betabloqueador",
+      "apresentacao": "Mulher de 61 anos, hipertensa e coronariopata, em uso contínuo de propranolol há oito meses para controle de angina, interrompe a medicação por conta própria de um dia para o outro após ficar sem a receita e não conseguir renovação a tempo. Três dias depois, procura o pronto-socorro com palpitações, sudorese e dor torácica em aperto. Ao exame: frequência cardíaca de 128 bpm, pressão arterial elevada em relação ao seu basal habitual, eletrocardiograma mostrando taquicardia sinusal com alterações sugestivas de isquemia subendocárdica.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Uso crônico de propranolol (antagonista beta-adrenérgico não seletivo) por oito meses manteve os receptores beta-1 cardíacos bloqueados de forma constante, muito além do padrão intermitente de estimulação simpática fisiológica."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Ao longo desses meses, os cardiomiócitos responderam ao bloqueio crônico com upregulation: aumento do número de receptores beta-1 expostos na membrana, na tentativa compensatória de recuperar sensibilidade às catecolaminas circulantes."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a suspensão abrupta do propranolol, o bloqueio farmacológico desapareceu em poucas horas, mas o excesso de receptores acumulado durante meses ainda estava presente. As catecolaminas endógenas, sempre circulantes, passaram a agir sobre um número de receptores muito maior que o basal pré-tratamento."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Taquicardia sinusal acentuada, elevação da pressão arterial e, num coração já com doença coronariana de base, desequilíbrio entre oferta e demanda de oxigênio miocárdico — gerando a dor torácica e as alterações isquêmicas no eletrocardiograma."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Risco real de síndrome coronariana aguda precipitada pela própria retirada do fármaco que antes protegia o coração, exigindo reinstituição imediata do betabloqueador (ou uso de outro agente de ação rápida) e posterior desmame planejado em vez de nova suspensão abrupta."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática clínica, exatamente o mecanismo descrito neste bloco: a upregulation de receptores beta-adrenérgicos durante o bloqueio crônico não é um detalhe teórico — é o que transforma a suspensão abrupta de um betabloqueador em uma emergência potencial. A mesma célula que se adaptou ao fármaco por meses precisa de tempo equivalente para desadaptar-se, e é esse descompasso temporal que a orientação de desmame progressivo existe para prevenir.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "cardiologia",
+        "clinica",
+        "farmacia-clinica"
+      ],
+      "diagnostico_revelado": "Síndrome de retirada de betabloqueador (taquicardia rebote) por upregulation de receptores beta-adrenérgicos.",
+      "tratamento_resumido": "Reinstituição do betabloqueador (ou substituto de ação rápida) com controle da frequência cardíaca e da isquemia, investigação de síndrome coronariana aguda conforme protocolo, e posterior reeducação do paciente sobre a necessidade de desmame gradual — nunca suspensão abrupta — de betabloqueadores em uso prolongado."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-001-05-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Drug-Receptor Interactions (receptor regulation, desensitization).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics (up- and downregulation of receptors).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 3 — Receptors and Drug Action (receptor regulation and rebound effects).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

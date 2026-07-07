@@ -9,54 +9,424 @@
     "s8-anest-07-005",
     "s8-anest-07-006"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s8-anest-06-000"
+  ],
   "metadata": {
     "titulo": "Anestésicos Locais",
+    "subtitulo": "E se você pudesse desligar a dor de um dedo do pé sem tocar a consciência da pessoa inteira?",
     "semestre": 8,
     "disciplina": "Anestesiologia",
+    "sistema_corporal": "sistema nervoso periférico",
+    "regiao_anatomica": "nervo periférico / axônio",
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 17,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
       "anest",
-      "esqueleto"
+      "anestesicos-locais",
+      "canal-de-sodio",
+      "bloqueio-neural",
+      "farmacologia",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Bloquear a condução nervosa de forma reversível e local",
-  "narrativa": [],
+  "resumo_conciso": "Os dois blocos anteriores desta trilha resolveram o problema da cirurgia inteira: suspender consciência, dor e movimento do corpo todo, com um anestesiologista sustentando ativamente tudo o que essa supressão retira do paciente. Mas a maior parte dos procedimentos do dia a dia — suturar um corte, extrair um dente, biopsiar uma lesão de pele — não precisa desligar uma pessoa inteira para resolver dor confinada a um território pequeno e previsível. Desligar o corpo todo para isso seria desproporcional ao problema.\n\nOs anestésicos locais resolvem essa desproporção de outro jeito: bloqueiam a condução do impulso nervoso de forma reversível, numa área delimitada, sem apagar a consciência. Uma molécula se insinua para dentro do canal de sódio voltagem-dependente do axônio e o tranca por dentro, impedindo que o potencial de ação se propague além daquele ponto do nervo — o cérebro que interpreta a dor nunca chega a receber o sinal.\n\nEsse mesmo mecanismo sustenta técnicas de escala muito diferente — da infiltração de um ponto de sutura ao bloqueio de um plexo inteiro ou do espaço neuroaxial — e uma classificação química (ésteres versus amidas) que os próximos módulos desta trilha vão detalhar peça por peça. Este bloco é o pórtico da família: o panorama antes de mecanismo, classificação, drogas individuais e toxicidade sistêmica ganharem, cada um, seu próprio bloco.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você acabou de ver, nos dois blocos anteriores, como se desliga uma pessoa inteira para operar: uma tríade farmacológica suspende consciência, dor e movimento ao mesmo tempo, e um anestesiologista assume manualmente tudo o que essa supressão retira — via aérea, respiração, estabilidade cardiovascular. É um aparato extraordinário, construído para o cenário mais exigente possível: uma cirurgia de grande porte, em qualquer parte do corpo, em qualquer paciente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas pense agora numa situação bem mais comum na prática médica: um paciente chega ao pronto-socorro com um corte de 3 centímetros na perna, precisando de sutura. Ou uma gestante em trabalho de parto, que sente dor apenas abaixo do umbigo. Ou um paciente que vai operar o punho fraturado, mas cujo coração e pulmões você preferiria não sedar de jeito nenhum, porque ele tem 78 anos e uma reserva cardiorrespiratória frágil. Em nenhum desses três casos faz sentido desligar consciência, reflexos protetores da via aérea e tônus cardiovascular do corpo inteiro só para resolver uma dor confinada a um território pequeno e bem delimitado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema, exatamente, torna necessário bloquear a dor sem apagar a pessoa?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema tem duas faces que se reforçam. A primeira é de **proporcionalidade de risco**: a anestesia geral, ao suprimir os mecanismos de autoproteção do corpo todo, sempre carrega o risco residual de depressão respiratória, instabilidade cardiovascular e, em casos raros, complicações graves como a hipertermia maligna. Submeter um paciente a esse risco sistêmico inteiro para resolver uma dor de território pequeno é desproporcional — é usar uma ferramenta desenhada para o corpo inteiro num problema que existe só num pedaço dele."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda face é de **oportunidade clínica**: em boa parte dos procedimentos do dia a dia — sutura, extração dentária, biópsia, colocação de cateter, parto vaginal, cirurgia de membro em paciente de alto risco cardiopulmonar — o território doloroso é conhecido de antemão, porque corresponde ao trajeto de um nervo específico ou de um pequeno ramo cutâneo. Se existisse uma forma de interromper a condução elétrica **só naquele nervo, só naquele trecho, só por algumas horas**, seria possível eliminar a dor sem tocar em nada além dali — sem sedar, sem intubar, sem monitorar o corpo inteiro com o mesmo rigor de uma anestesia geral."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe antes de seguir: o problema que motiva os anestésicos locais não é 'uma versão mais fraca de anestesia geral'. É um problema diferente — bloquear a condução nervosa de forma **reversível e espacialmente confinada**, preservando consciência, reflexos protetores e estabilidade autonômica do resto do corpo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a farmacologia resolveu — sem apagar a consciência"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução não mexe em nenhum receptor do sistema nervoso central, não atravessa a barreira hematoencefálica em dose terapêutica e não depende de hipnóticos, opioides ou bloqueadores neuromusculares. Ela age diretamente sobre o próprio nervo periférico, no ponto exato onde ele gera e propaga o sinal elétrico: uma molécula pequena, lipofílica o suficiente para atravessar a membrana do axônio, entra por dentro da fibra nervosa e vai ocupar, por dentro, o canal responsável por criar o potencial de ação — o mesmo canal que, no bloco anterior sobre bloqueadores neuromusculares, você viu operar do lado oposto da sinapse, na placa motora."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma vez lá dentro, a molécula trava o canal numa posição que impede a entrada do íon que dispara a despolarização. Sem despolarização suficiente, não há potencial de ação. Sem potencial de ação se propagando ao longo do axônio, não há sinal — nem de dor, nem de tato, nem de motricidade — chegando além daquele ponto do nervo. É um bloqueio **local por definição geográfica**: a molécula só age onde foi depositada e ao longo do trajeto do nervo que ela alcança por difusão, não no corpo inteiro."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A diferença central em relação à anestesia geral: o anestésico local não desliga o cérebro que interpreta a dor — ele impede que o sinal doloroso saia do nervo periférico e chegue até lá. É bloqueio na origem do trajeto, não na interpretação central."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essa solução é feita — duas famílias químicas para o mesmo alvo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Toda molécula de anestésico local compartilha uma arquitetura comum: um anel aromático lipofílico numa ponta (responsável por atravessar a membrana do nervo), uma amina hidrofílica na outra ponta (responsável pela forma ionizada que efetivamente bloqueia o canal por dentro) e, entre as duas, uma cadeia intermediária que pode ser de dois tipos químicos — uma **ligação éster** ou uma **ligação amida**. Essa única diferença estrutural, no meio da molécula, determina onde e como cada fármaco é metabolizado, e é grande o suficiente para merecer um módulo próprio nesta trilha."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que essa distinção importa tanto, em uma frase: ésteres (como a procaína) são hidrolisados rapidamente no próprio plasma e carregam maior risco de alergia verdadeira; amidas (como a lidocaína, a mais usada na prática clínica cotidiana) são metabolizadas mais lentamente no fígado e raramente causam alergia real. O próximo módulo desta trilha dissecará essa classificação com a árvore completa de cada droga, incluindo por que essa diferença de rota metabólica se traduz em decisões clínicas concretas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em movimento, ao longo do axônio"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere, em panorama, uma infiltração simples antes de uma sutura na pele: a droga é depositada perto do nervo, se difunde até a membrana do axônio, atravessa essa membrana na forma não-ionizada, se reioniza dentro do axoplasma e só então trava o canal de sódio por dentro. [⚠️] Esse trajeto completo — incluindo por que a forma ionizada/não-ionizada importa tanto, e por que ele falha em tecido inflamado — é justamente o que o próximo bloco desta trilha detalha passo a passo; aqui fica só o suficiente para entender que existe uma sequência física real entre a agulha e o bloqueio, não uma ação instantânea."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um detalhe clinicamente relevante já nasce visível nesse panorama: fibras nervosas diferentes têm sensibilidade diferente ao bloqueio, dependendo principalmente do diâmetro e da presença de mielina. Fibras finas e amielínicas (as que conduzem dor e temperatura) costumam ser bloqueadas antes de fibras grossas e mielinizadas (as que conduzem propriocepção e força motora) — por isso um paciente sob bloqueio regional frequentemente perde a dor de uma região antes de perder completamente a força motora dela, um fenômeno chamado bloqueio diferencial. [⚠️] Essa explicação por diâmetro/mielinização é a mais didática, mas a literatura também atribui parte do fenômeno à frequência de disparo de cada fibra e ao comprimento de nó de Ranvier exposto à droga — uma nuance que foge do escopo deste panorama."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa família farmacológica se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O mesmo mecanismo — bloqueio do canal de sódio voltagem-dependente num axônio periférico — sustenta técnicas de escala muito diferente. A **infiltração local** deposita a droga diretamente no local da lesão ou incisão, bloqueando só os ramos nervosos terminais daquele ponto. O **bloqueio de nervo periférico** deposita a droga próxima a um tronco nervoso específico (nervo femoral, nervo ciático, plexo braquial), bloqueando toda a área que aquele nervo inerva. E o **bloqueio neuroaxial** (raquianestesia e peridural), que você vai estudar em módulo dedicado desta mesma trilha, leva o mesmo princípio químico para dentro do canal vertebral, banhando diretamente as raízes nervosas que emergem da medula — o mesmo canal de sódio, o mesmo mecanismo de bloqueio, aplicado num território anatômico muito maior de uma só vez."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os anestésicos locais também se articulam diretamente com a **farmacocinética e a segurança sistêmica**: toda dose depositada perto de um nervo tem parte absorvida para a circulação sistêmica, e essa fração, se ultrapassar um limiar, pode alcançar o mesmo canal de sódio em outros tecidos excitáveis do corpo — coração e cérebro, os dois órgãos mais ricos em canais de sódio voltagem-dependentes fora do sistema nervoso periférico. É essa rota de escape que explica por que existe dose máxima segura por quilo de peso, por que se usa vasoconstritor associado para retardar a absorção sistêmica, e por que existe uma síndrome de toxicidade sistêmica própria dessa classe — temas que os módulos seguintes desta trilha tratam em detalhe."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "anestésico local",
+      "origem": "do grego an- (privação) + aísthēsis (sensação), qualificado pelo latim localis (relativo a um lugar, de locus, lugar)",
+      "significado": "literalmente, 'ausência de sensação confinada a um lugar'",
+      "explicacao": "O termo 'anestesia', como você viu no bloco fundacional desta disciplina, foi cunhado em 1846 para descrever a supressão geral da sensação produzida pelo éter. Quando, décadas depois, químicos isolaram a cocaína (o primeiro anestésico local conhecido, usado por Karl Koller em 1884 para anestesia tópica ocular) e, na sequência, sintetizaram moléculas mais seguras como a procaína (1905) e a lidocaína (1943), ficou necessário diferenciar essa nova categoria da anestesia geral que já existia havia décadas. O qualificador 'local' marca exatamente essa distinção: mesmo mecanismo geral de 'suprimir sensação', mas confinado a um território anatômico delimitado, sem afetar a consciência do paciente. É um nome que já nasceu em contraste — definido pelo que ele não faz (não desliga o corpo inteiro) tanto quanto pelo que faz."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a ideia central"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔌",
+      "conteudo": "Pense num nervo periférico como um **cabo elétrico de fibra única, isolado, que transmite um sinal digital pulso a pulso ao longo de todo o seu comprimento**. A **anestesia geral**, vista nos blocos anteriores, equivale a desligar a fonte de energia do prédio inteiro — nada funciona, em lugar nenhum, até que a energia volte. O **anestésico local**, em contraste, equivale a **cortar fisicamente o próprio cabo num ponto específico**, sem tocar a fonte de energia do prédio: tudo que está antes do corte continua funcionando normalmente, mas nenhum sinal atravessa aquele ponto cortado, e nada além dali — no caso do nervo, nenhuma sensação daquele território — chega ao destino final. O canal de sódio voltagem-dependente é o próprio fio condutor dentro do cabo: a molécula do anestésico local não corta o cabo por fora, ela se insinua para dentro do fio e interrompe a condução ali, por dentro. E assim como um eletricista escolhe cortar o cabo mais perto ou mais longe da fonte dependendo de quanto do circuito ele precisa desligar (um fio de uma lâmpada versus o tronco principal que alimenta um andar inteiro), o anestesiologista escolhe depositar a droga perto de um ramo terminal (infiltração), perto de um tronco nervoso maior (bloqueio de plexo) ou direto na raiz que sai da medula (bloqueio neuroaxial), dependendo de quanto território precisa ficar sem sinal. A analogia quebra num ponto: o corte no cabo elétrico é permanente até reparo manual; o bloqueio do canal de sódio é **reversível por difusão e metabolismo da própria droga** — o 'cabo' se reconecta sozinho, em horas, sem intervenção nenhuma."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um anestésico local pudesse, por algum motivo, atravessar a barreira hematoencefálica na mesma concentração em que atua no nervo periférico, o que aconteceria com sua utilidade clínica como bloqueio 'confinado'?",
+      "resposta": "Ele deixaria de ser um anestésico verdadeiramente local e se tornaria, na prática, uma droga de ação sistêmica com efeitos imprevisíveis sobre o sistema nervoso central — exatamente o que acontece, de forma indesejada, na toxicidade sistêmica dos anestésicos locais (LAST), quando uma dose absorvida em excesso alcança o cérebro e o coração. Em concentração crescente no SNC, o mesmo bloqueio de canal de sódio que interrompe a dor no nervo periférico começa a bloquear neurônios inibitórios centrais primeiro — produzindo, paradoxalmente, agitação e convulsão antes de qualquer depressão — e, em concentração ainda maior, bloqueia diretamente os canais de sódio do miocárdio, gerando arritmias graves e parada cardíaca refratária. A utilidade clínica inteira do anestésico local depende de ele ficar confinado ao território onde foi depositado; perder esse confinamento não é uma variação do mesmo benefício, é a transformação do fármaco no seu próprio risco mais grave. Esse raciocínio é exatamente o motivo de existir o módulo desta trilha dedicado à toxicidade sistêmica e à emulsão lipídica como antídoto."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "As três escalas de bloqueio: infiltração, nervo periférico e neuroaxial",
+      "descricao": "Esquema panorâmico comparando as três técnicas de bloqueio por anestésico local lado a lado numa silhueta humana estilizada, mostrando o local de depósito da droga e a extensão territorial do bloqueio em cada técnica — infiltração pontual, bloqueio de um tronco nervoso e bloqueio neuroaxial — sem detalhar o mecanismo molecular do canal de sódio, que pertence ao esquema do bloco filho de mecanismo.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente adaptativo para tema claro e escuro, estilo de infográfico médico contemporâneo e minimalista, sem nenhum texto, letra, número ou legenda embutida na imagem. Composição central: silhueta humana estilizada e neutra, de corpo inteiro, vista frontal, em traço minimalista, repetida três vezes lado a lado da esquerda para a direita. Primeira silhueta com um pequeno halo circular translúcido concentrado sobre o antebraço, representando infiltração local pontual, com uma seringa estilizada próxima. Segunda silhueta com um halo alongado seguindo o trajeto de um nervo desde o ombro até a mão, representando bloqueio de um tronco nervoso ou plexo. Terceira silhueta com um halo envolvendo toda a metade inferior do tronco e as duas pernas, representando bloqueio neuroaxial, com um pequeno detalhe estilizado da coluna vertebral na região lombar. Paleta médica sóbria em tons de azul-petróleo e cinza-grafite para as silhuetas, com halos de destaque em três tons suaves diferentes (âmbar claro, coral claro, violeta claro) para diferenciar visualmente as três técnicas sem usar texto nenhum. Traços vetoriais limpos, estilo minimalista de livro-texto contemporâneo, sem texturas fotorrealistas, sem sombras duras, sem qualquer rotulagem textual dentro da imagem. Sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-anest-00-000",
+        "titulo": "Anestesiologia — A Medicina de Suspender e Devolver a Consciência com Segurança",
+        "disciplina": "Anestesiologia",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco parte diretamente do contraste com a anestesia geral descrita no pórtico da disciplina — sem entender a tríade de hipnose, analgesia e relaxamento muscular do corpo inteiro, não fica claro por que uma alternativa 'confinada a um território' é clinicamente valiosa."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-07-001",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Mecanismo detalhado do bloqueio do canal de sódio voltagem-dependente",
+        "mecanismo_conexao": "O próximo módulo desta trilha aprofunda exatamente o mecanismo aqui introduzido de forma panorâmica: cinética de ligação ao canal, estado repouso/aberto/inativado, e por que fibras nervosas de diâmetros diferentes têm sensibilidade diferente ao bloqueio.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-07-002",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Classificação química ésteres versus amidas e suas implicações metabólicas e alérgicas",
+        "mecanismo_conexao": "A distinção química citada aqui de forma introdutória ganha módulo próprio, detalhando as rotas de metabolismo (pseudocolinesterase plasmática versus citocromo P450 hepático) e o risco alérgico diferencial entre as duas famílias.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": "s8-anest-07-003",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Lidocaína como protótipo versátil da classe",
+        "mecanismo_conexao": "A amida mais usada na prática clínica cotidiana — infiltração, bloqueio, uso tópico e até antiarrítmico sistêmico — recebe módulo dedicado que aplica o mecanismo geral aqui descrito a uma molécula específica.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": "s8-anest-07-006",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Toxicidade sistêmica dos anestésicos locais (LAST) e reversão com emulsão lipídica",
+        "mecanismo_conexao": "O contrafactual deste bloco — o que acontece quando o bloqueio deixa de ser confinado — é desenvolvido em detalhe completo no módulo de toxicidade sistêmica, incluindo a fisiopatologia da cardiotoxicidade e o antídoto específico.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "obstetricia",
+        "semestre_futuro": 9,
+        "topico": "Analgesia de parto por bloqueio neuroaxial",
+        "mecanismo_conexao": "O mesmo princípio de bloqueio confinado do canal de sódio, aplicado às raízes nervosas no espaço peridural, é o que permite à parturiente permanecer consciente e participante do parto enquanto a dor abaixo do umbigo é suprimida.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s8-anest-06-000",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Os bloqueadores neuromusculares atuam no mesmo tipo de receptor de placa motora, mas do lado oposto da sinapse e com objetivo oposto: ali, o alvo é abolir a força motora do corpo inteiro sob anestesia geral; aqui, o alvo é abolir a condução de um nervo periférico específico, preservando o resto do corpo funcionando normalmente."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-anest-07-000-fc01",
+      "pergunta": "Por que não faz sentido usar anestesia geral para todo procedimento que causa dor localizada, se ela já suspende consciência e dor do corpo inteiro?",
+      "resposta": "Porque a anestesia geral sempre carrega o risco sistêmico residual de depressão respiratória, instabilidade cardiovascular e complicações raras porém graves, decorrente de suprimir os mecanismos de autoproteção do corpo inteiro. Aplicar esse risco sistêmico a um problema confinado a um território pequeno e previsível — como suturar um corte ou extrair um dente — é desproporcional: expõe o paciente a um risco maior do que o procedimento exige. Os anestésicos locais resolvem exatamente essa desproporção, bloqueando a condução nervosa só na área necessária, preservando consciência e estabilidade do restante do organismo.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "anestesico-local",
+        "proporcionalidade-de-risco",
+        "principio"
+      ]
+    },
+    {
+      "card_id": "s8-anest-07-000-fc02",
+      "pergunta": "Se um anestésico local perdesse sua capacidade de atravessar a membrana do axônio na forma não-ionizada, o que aconteceria com sua eficácia clínica em tecido inflamado?",
+      "resposta": "A eficácia cairia drasticamente. A fração não-ionizada da molécula é a única capaz de atravessar a bicamada lipídica da membrana axonal por difusão passiva; uma vez dentro do axoplasma, ela se reioniza para bloquear o canal de sódio por dentro. Em tecido inflamado ou infectado, o pH local é mais ácido, o que desloca o equilíbrio químico para a forma ionizada já no meio extracelular — reduzindo a fração disponível para atravessar a membrana. Isso explica, na prática clínica, por que a infiltração de anestésico local costuma funcionar pior em abscessos e feridas infectadas do que em tecido saudável: não é resistência da bactéria à droga, é o próprio pH do tecido impedindo a droga de entrar no nervo.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "anestesico-local",
+        "pH",
+        "farmacocinetica",
+        "tecido-inflamado"
+      ]
+    },
+    {
+      "card_id": "s8-anest-07-000-fc03",
+      "pergunta": "Por que o nome 'anestésico local' precisou do qualificador 'local', se a palavra 'anestesia' sozinha já existia desde 1846?",
+      "resposta": "Porque quando moléculas como a cocaína, a procaína e depois a lidocaína foram descobertas e começaram a ser usadas para suprimir sensação em território confinado, já existia havia décadas o uso da palavra 'anestesia' para descrever a supressão geral e sistêmica da sensação e da consciência, inaugurada pelo éter em 1846. O qualificador 'local' nasceu, portanto, em contraste direto: mesma raiz etimológica de 'ausência de sensação', mas restrita a um território anatômico delimitado, sem apagar a consciência do paciente. O nome já nasce marcando o que a técnica não faz (não desliga o corpo inteiro) tanto quanto o que ela faz.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "etimologia",
+        "anestesico-local",
+        "historia-da-medicina"
+      ]
+    },
+    {
+      "card_id": "s8-anest-07-000-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Como o anestésico local bloqueia a dor primeiro, o paciente sob bloqueio regional perde dor e força motora do território ao mesmo tempo, na mesma velocidade.'",
+      "resposta": "Falso. Essa é a armadilha do bloqueio diferencial: fibras nervosas finas e amielínicas, que conduzem dor e temperatura, costumam ser bloqueadas antes de fibras grossas e mielinizadas, que conduzem propriocepção e força motora. Isso significa que um paciente sob bloqueio de nervo periférico ou bloqueio neuroaxial frequentemente perde a sensação dolorosa de uma região bem antes de perder completamente a força motora dela — e, na recuperação, recupera a força antes de recuperar toda a sensibilidade. Confundir os dois fenômenos como simultâneos leva a erros práticos, como liberar precocemente a movimentação de um membro que ainda tem bloqueio motor residual parcial, ou assumir que a ausência de dor significa bloqueio completo de todas as modalidades sensoriais e motoras.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "anestesico-local",
+        "bloqueio-diferencial",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s8-anest-07-000-fc05",
+      "pergunta": "Uma paciente de 68 anos, com insuficiência cardíaca grave e função pulmonar limítrofe, precisa operar uma fratura de punho. O cirurgião pergunta ao anestesiologista se é possível evitar anestesia geral. Qual raciocínio, baseado no mecanismo dos anestésicos locais, sustenta a escolha de um bloqueio de plexo braquial nesse caso?",
+      "resposta": "O bloqueio de plexo braquial deposita anestésico local próximo ao tronco nervoso que inerva todo o membro superior, bloqueando a condução do canal de sódio nas fibras daquele plexo especificamente — sem suprimir a consciência, os reflexos protetores da via aérea nem o tônus simpático que sustenta a pressão arterial da paciente. Como a cirurgia é limitada ao punho, o território a ser bloqueado é previsível e delimitado, exatamente o cenário em que o bloqueio confinado é vantajoso. Evitar a supressão sistêmica da tríade de anestesia geral poupa essa paciente frágil do risco de depressão respiratória e de instabilidade cardiovascular decorrente de hipnóticos e opioides em dose plena — riscos que, dada a reserva cardiopulmonar limítrofe dela, seriam desproporcionalmente altos para uma cirurgia de punho.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "anestesico-local",
+        "bloqueio-de-plexo",
+        "risco-cardiopulmonar",
+        "decisao-clinica"
+      ]
+    },
+    {
+      "card_id": "s8-anest-07-000-fc06",
+      "pergunta": "Compare o alvo molecular e o objetivo funcional dos bloqueadores neuromusculares (bloco anterior) e dos anestésicos locais (este bloco), ambos relacionados à junção neuromuscular ou ao axônio periférico.",
+      "resposta": "Os bloqueadores neuromusculares atuam no receptor nicotínico de acetilcolina, do lado muscular (pós-sináptico) da junção neuromuscular, e seu objetivo é abolir a contração da musculatura esquelética do corpo inteiro, como parte da tríade da anestesia geral — o alvo é a transmissão química entre nervo e músculo. Os anestésicos locais atuam no canal de sódio voltagem-dependente, dentro do próprio axônio do nervo periférico, antes mesmo de o sinal chegar a qualquer sinapse, e seu objetivo é impedir a propagação do potencial de ação num território confinado, preservando a função do restante do corpo. Ambos interrompem uma cadeia elétrico-química que começa no acoplamento excitação-contração, mas atuam em pontos diferentes dessa cadeia, com escopo espacial oposto: um é sistêmico e sinceramente desejado como tal; o outro é local por definição e perde sua utilidade clínica se deixar de ser confinado.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "anestesico-local",
+        "bloqueador-neuromuscular",
+        "comparacao",
+        "junçao-neuromuscular"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-anest-07-000-caso01",
+      "titulo": "Sutura que não bloqueia direito",
+      "apresentacao": "Homem de 29 anos chega ao pronto-socorro com ferimento corto-contuso de 4 cm na região plantar do pé, contaminado com terra, há cerca de 10 horas. Ao exame, a borda da ferida já apresenta sinais de infecção incipiente — hiperemia e discreta secreção purulenta. O médico infiltra 5 mL de lidocaína 2% na borda da ferida para realizar a sutura, na mesma dose que costuma usar em feridas limpas. Após 5 minutos de espera, o paciente ainda refere dor importante à manipulação da ferida, mesmo com técnica de infiltração aparentemente correta.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A ferida já apresenta processo infeccioso incipiente, com tecido local em pH mais ácido que o normal, decorrente do metabolismo bacteriano e da resposta inflamatória local."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O equilíbrio químico da molécula de lidocaína entre suas formas ionizada e não-ionizada, no meio extracelular ácido do tecido infectado, é deslocado para a forma ionizada — a forma que não consegue atravessar a membrana lipídica do axônio."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Menos moléculas não-ionizadas atravessam a membrana dos axônios sensitivos daquela região; consequentemente, menos moléculas chegam ao axoplasma para se reionizar e bloquear os canais de sódio por dentro. O bloqueio da condução nervosa fica incompleto."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O paciente continua sentindo dor à manipulação da ferida, apesar de uma técnica de infiltração tecnicamente correta e de uma dose habitualmente eficaz em tecido saudável."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O médico reconhece a limitação farmacológica do pH ácido, evita simplesmente aumentar a dose de anestésico local (o que elevaria o risco de toxicidade sistêmica sem necessariamente resolver o problema do equilíbrio químico), e opta por bloqueio de nervo mais proximal (bloqueio de tornozelo), depositando a droga num ponto onde o tecido ainda está com pH normal, alcançando bloqueio eficaz do mesmo território sensitivo."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente o mecanismo descrito na etapa de travessia da membrana axonal: a dependência do bloqueio local ao equilíbrio ionizado/não-ionizado da molécula, e como o pH do tecido-alvo — não apenas a dose administrada — determina a eficácia clínica real do anestésico local.",
+      "diagnostico_revelado": "Falha de infiltração local por pH ácido em tecido com processo infeccioso incipiente; resolvida por bloqueio de nervo proximal em tecido não afetado pela inflamação.",
+      "tratamento_resumido": "Bloqueio de tornozelo com lidocaína 2% sem vasoconstritor, depositado proximalmente ao território inflamado, alcançando anestesia adequada para conclusão da sutura; ferida mantida em curativo aberto com reavaliação em 24 a 48 horas pelo risco infeccioso já identificado.",
+      "disciplinas_relacionadas": [
+        "Anestesiologia"
+      ]
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-anest-07-000-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente",
+        "tipo_imagem": "esquema_didatico"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Miller RD, Gropper MA. Miller's Anesthesia. 9th ed. Elsevier; 2020. Chapter 26 — Local Anesthetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Butterworth JF, Mackey DC, Wasnick JD. Morgan & Mikhail's Clinical Anesthesiology. 6th ed. McGraw-Hill; 2018. Chapter 17 — Local Anesthetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Chapter 22 — Local Anesthetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Anestésico local é apenas 'anestesia geral mais fraca'",
+      "correcao": "É um mecanismo farmacológico diferente, atuando sobre o canal de sódio do axônio periférico, sem tocar receptores centrais de hipnose ou analgesia. Não é gradação de intensidade, é bloqueio geograficamente confinado.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Se a dor sumiu, o bloqueio motor também está completo",
+      "correcao": "O bloqueio diferencial faz fibras finas de dor serem bloqueadas antes de fibras grossas motoras — ausência de dor não implica ausência de força residual.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Aumentar a dose sempre resolve bloqueio insuficiente",
+      "correcao": "Em tecido inflamado, o problema é o pH deslocando o equilíbrio ionizado/não-ionizado, não a quantidade absoluta de droga; aumentar dose eleva risco de toxicidade sistêmica sem necessariamente corrigir a penetração.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "anestésico local",
+      "termo_es": "anestésico local",
+      "termo_en": "local anesthetic",
+      "abreviatura": "AL / AL / LA"
+    },
+    {
+      "termo_pt": "bloqueio diferencial",
+      "termo_es": "bloqueo diferencial",
+      "termo_en": "differential block",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "estavel",
   "nivel_aceitacao": "minimo_viavel",
+  "nivel_dominio_minimo": 4,
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "workflow-anima-s8",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "agente-integrador",
+    "data_revisao": "2026-07-06",
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
-  "_lentes": [
-    "correlação ciências básicas",
-    "conduta/técnica",
-    "manejo/segurança"
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-06",
+      "autor": "workflow-anima-s8",
+      "mudanca": "Produção inicial do bloco panorâmico de Anestésicos Locais",
+      "motivo": "Preenchimento do esqueleto s8-anest-07-000 no blueprint do Semestre 8"
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "agente-integrador",
+      "mudanca": "Reduzido detalhamento operacional do mecanismo (canal de sódio) e da classificação química que invadiam escopo dos filhos 001/002; ajustada imagem do pai para panorama de técnicas em vez de duplicar esquema do filho 001; contrafactual final ajustado para não entregar o nome LAST antes do bloco dedicado; resumo_conciso quebrado em parágrafos menores; adicionadas marcações [⚠️] em simplificações didáticas (forma ionizada/não-ionizada, bloqueio diferencial).",
+      "motivo": "Correções aplicadas após pareceres de pedagogia (6.5), precisão (9.3), estética (8.3) e revisão adversarial (refutado, severidade alta) do agente integrador."
+    }
   ]
 }

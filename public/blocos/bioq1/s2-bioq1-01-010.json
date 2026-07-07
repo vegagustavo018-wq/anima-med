@@ -16,7 +16,8 @@
     "data_criacao": "2026-07-03",
     "data_atualizacao": "2026-07-03",
     "versao_schema": "3.0",
-    "autor": "Claude Opus 4.7"
+    "autor": "Claude Opus 4.7",
+    "titulo": "Ácidos e Bases: pH, Tampões e Equilíbrio H+"
   },
   "resumo_conciso": "Todo organismo vivo funciona numa corda bamba química: deve manter a concentração de íons H+ em faixa extraordinariamente estreita, ou as proteínas desnaturam, as reações enzimáticas travam, a vida para. Esse bloco explora o problema fundamental de estabilizar pH em ambientes aquosos, o conceito de tampões (pares ácido-base conjugados) como solução molecular, e como o equilíbrio entre H+ e OH- determina a química de cada célula. Começamos com a ionização da água, avançamos pelo conceito de pH e pKa, e terminamos entendendo por que sistemas tampão são tão críticos para a sobrevivência.",
   "narrativa": [
@@ -87,31 +88,28 @@
     }
   ],
   "conexoes": {
-    "prerequisitos": [
-      {
-        "id": "s2-bioq0-02-000",
-        "titulo": "Estrutura da Água e Ligações Químicas",
-        "tipo": "fundamental"
-      }
-    ],
+    "prerequisitos": [],
     "futuras": [
       {
         "id": "s2-bioq1-01-020",
         "titulo": "Efeito Hidrofóbico e Estrutura de Membranas",
         "tipo": "MECANISMO_COMPARTILHADO",
-        "descricao": "pH determina ionização de grupos hidroxila em fosfolipídios; afeta empacotamento de membranas."
+        "descricao": "pH determina ionização de grupos hidroxila em fosfolipídios; afeta empacotamento de membranas.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s2-bioq1-01-030",
         "titulo": "Aminoácidos: Construção de Proteínas",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Aminoácidos têm grupos carboxilo e amino que se ionizam em pH dependente — compreender pH é chave para entender titulação de proteínas."
+        "descricao": "Aminoácidos têm grupos carboxilo e amino que se ionizam em pH dependente — compreender pH é chave para entender titulação de proteínas.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s3-fisio-01-050",
         "titulo": "Homeostase Ácido-Base no Sangue",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Organismos devem manter pH do sangue 7,35-7,45; acidoses e alcaloses são emergências médicas derivadas de falha no tampão bicarbonato."
+        "descricao": "Organismos devem manter pH do sangue 7,35-7,45; acidoses e alcaloses são emergências médicas derivadas de falha no tampão bicarbonato.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
@@ -119,7 +117,8 @@
         "id": "s2-bioq2-01-000",
         "titulo": "Estrutura e Função de Enzimas",
         "tipo": "CONTEXTO",
-        "descricao": "Enzimas funcionam apenas em pH ótimo; ionização de resíduos no sítio ativo depende integralmente de pH."
+        "descricao": "Enzimas funcionam apenas em pH ótimo; ionização de resíduos no sítio ativo depende integralmente de pH.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -183,36 +182,37 @@
   ],
   "casos_clinicos": [
     {
-      "id": "caso-bioq1-01-010-001",
+      "caso_id": "caso-bioq1-01-010-001",
       "titulo": "Cetoacidose Diabética: Quando o Tampão Falha",
       "apresentacao": "Paciente diabético tipo 1, 24 anos, é trazido à emergência confuso, respirando rapidamente (hiperventilação). Glicose plasmática 650 mg/dL, pH do sangue 7,15 (normal 7,35-7,45).",
       "cascata": [
         {
-          "etapa": 1,
-          "titulo": "Causa",
-          "conteudo": "Paciente parou de tomar insulina. Sem insulina, células não conseguem metabolizar glicose normalmente. Como alternativa, corpo quebra gordura via beta-oxidação, produzindo cetonas (ácido beta-hidroxibutírico, acetoacetato). Essas cetonas são ácidos — acumulam na corrente sanguínea."
+          "etapa": "Causa",
+          "descricao": "Paciente parou de tomar insulina. Sem insulina, células não conseguem metabolizar glicose normalmente. Como alternativa, corpo quebra gordura via beta-oxidação, produzindo cetonas (ácido beta-hidroxibutírico, acetoacetato). Essas cetonas são ácidos — acumulam na corrente sanguínea."
         },
         {
-          "etapa": 2,
-          "titulo": "Estrutura — Sobrecarga do Tampão",
-          "conteudo": "Cetonas são ácidos fracos que se ionizam, liberando H+. O sistema tampão de bicarbonato do sangue (H2CO3/HCO3-) tenta compensar: o HCO3- captura o H+ extra. Mas há acúmulo contínuo de cetonas — o tampão começa a se esgotar (HCO3- diminui, H2CO3 aumenta)."
+          "etapa": "Estrutura Afetada",
+          "descricao": "Cetonas são ácidos fracos que se ionizam, liberando H+. O sistema tampão de bicarbonato do sangue (H2CO3/HCO3-) tenta compensar: o HCO3- captura o H+ extra. Mas há acúmulo contínuo de cetonas — o tampão começa a se esgotar (HCO3- diminui, H2CO3 aumenta)."
         },
         {
-          "etapa": 3,
-          "titulo": "Disfunção — Falha Tampão + Resposta Respiratória",
-          "conteudo": "Quando pH cai abaixo de 7,35, cérebro detecta acidose via quimiorreceptores. Resposta: pulmões hiperventilam para expelir CO2 (lembre: CO2 + H2O → H2CO3 → H+ + HCO3-; menos CO2 = menos H+). Isso é compensação respiratória — parcial mas insuficiente nesse caso."
+          "etapa": "Disfunção",
+          "descricao": "Quando pH cai abaixo de 7,35, cérebro detecta acidose via quimiorreceptores. Resposta: pulmões hiperventilam para expelir CO2 (lembre: CO2 + H2O → H2CO3 → H+ + HCO3-; menos CO2 = menos H+). Isso é compensação respiratória — parcial mas insuficiente nesse caso."
         },
         {
-          "etapa": 4,
-          "titulo": "Sintoma Clínico",
-          "conteudo": "Confusão mental (protões em excesso afetam função neuronal), fadiga (cetonas 'alimentam' o corpo mas é metabolismo anormal), respiração profunda/rápida ('respiração de Kussmaul')."
+          "etapa": "Sintoma",
+          "descricao": "Confusão mental (protões em excesso afetam função neuronal), fadiga (cetonas 'alimentam' o corpo mas é metabolismo anormal), respiração profunda/rápida ('respiração de Kussmaul')."
         },
         {
-          "etapa": 5,
-          "titulo": "Manejo e Consequência",
-          "conteudo": "Emergência. Tratamento: (1) insulina IV (parar produção de cetonas), (2) soro fisiológico IV (dilui o ácido), (3) bicarbonato IV (se pH < 7,1, reforça o tampão). Se não tratado: morte por edema cerebral, choque cardiogênico (cetonas causam miocardite). Com tratamento: recuperação em horas, alta em dias."
+          "etapa": "Consequência",
+          "descricao": "Emergência. Tratamento: (1) insulina IV (parar produção de cetonas), (2) soro fisiológico IV (dilui o ácido), (3) bicarbonato IV (se pH < 7,1, reforça o tampão). Se não tratado: morte por edema cerebral, choque cardiogênico (cetonas causam miocardite). Com tratamento: recuperação em horas, alta em dias."
         }
-      ]
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Bioquímica"
+      ],
+      "diagnostico_revelado": "Cetoacidose Diabética: Quando o Tampão Falha",
+      "tratamento_resumido": "Insulinoterapia intravenosa contínua + reposição vigorosa de fluidos e eletrólitos (especialmente potássio, que cai rapidamente com a correção); tratamento da causa precipitante (infecção, omissão de insulina)."
     }
   ],
   "midia": [

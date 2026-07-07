@@ -5,50 +5,181 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Conteúdo Arterial de O2 e Suas Variáveis",
-    "semestre": 3,
+    "subtitulo": "Entendendo a diferença crucial entre pressão parcial, saturação e quantidade total de oxigênio no sangue",
     "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
-    "profundidade_arvore": 4,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "semestre": 3,
+    "tipo": "conceito",
     "tags": [
-      "fisio2",
-      "esqueleto"
+      "Fisiologia Respiratória",
+      "Transporte de Oxigênio",
+      "Hemoglobina",
+      "Gasometria",
+      "CaO2",
+      "PaO2",
+      "SaO2"
     ],
+    "tempo_leitura_minutos": 10,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-02"
   },
-  "resumo_conciso": "SaO2, Hb e O2 dissolvido; por que anemia baixa o conteúdo sem baixar PaO2",
-  "narrativa": [],
+  "resumo_conciso": "O conteúdo arterial de oxigênio (CaO2) representa a quantidade total de O2 transportada pelo sangue arterial, sendo determinado pela soma do O2 ligado à hemoglobina (fração majoritária) e do O2 dissolvido no plasma (fração minoritária). A anemia e a intoxicação por monóxido de carbono reduzem o CaO2 de forma crítica sem alterar a PaO2, evidenciando por que a pressão de O2 não é sinônimo de reserva de oxigênio.",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "A Ilusão da Pressão: O Oxigênio que Vemos vs. O Oxigênio que Carregamos"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você gerencia uma linha de balsas que atravessam um rio turbulento. Algumas pessoas atravessam nadando diretamente na água gelada, mas a imensa maioria viaja confortavelmente sentada dentro dos barcos. Se quisermos medir a capacidade real de transporte de passageiros desse rio, devemos olhar para a agitação da água (as pessoas nadando) ou para o número de barcos cheios? Essa é a diferença fundamental entre a pressão parcial de oxigênio (PaO2) e o conteúdo arterial de oxigênio (CaO2)."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Se um paciente perder metade do seu volume sanguíneo in loco em uma hemorragia aguda em um acidente, mas seu sistema respiratório estiver perfeitamente saudável, o que você espera que aconteça com a PaO2 e com o CaO2 do sangue restante?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Muitos estudantes de medicina respondem impulsivamente que ambos caem. No entanto, a realidade fisiológica é fascinante: a PaO2 (pressão parcial de O2) permanecerá completamente normal! Isso acontece porque a PaO2 mede apenas a pressão exercida pelo oxigênio fisicamente dissolvido no plasma. Como a membrana alveolocapilar do paciente e a ventilação continuam funcionando perfeitamente, o oxigênio continua a dissolver-se no plasma restante até atingir o mesmo equilíbrio de pressão. Contudo, o CaO2 (conteúdo total de oxigênio) despencará pela metade. Isso ocorre porque a hemoglobina, que atua como os 'barcos' da nossa analogia, foi perdida no sangramento. Sem barcos, a capacidade total de transporte despenca, mesmo que a água (o plasma) continue com a mesma pressão."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Anemia",
+      "origem": "Grego an- (prefixo de privação ou ausência) + haima (sangue).",
+      "significado": "Falta de sangue.",
+      "explicacao": "Na medicina moderna, anemia não significa ausência física de volume sanguíneo total (que é rapidamente compensado), mas sim uma redução crônica ou aguda na concentração de hemoglobina ou no número de hemácias circulantes, o que sabota diretamente o CaO2 tecidual."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚢",
+      "conteudo": "Pense na hemoglobina como navios cargueiros e no oxigênio como os contêineres sendo transportados. A pressão parcial de oxigênio (PaO2) é representada pelo número de contêineres que caíram acidentalmente na água e flutuam ao redor (oxigênio dissolvido). A saturação de oxigênio (SaO2) é a porcentagem de vagas ocupadas nos navios. Se você tiver apenas um navio funcional em vez de dez (anemia severa), mas ele estiver totalmente carregado, sua saturação (SaO2) será de 100% e o número de contêineres boiando na água (PaO2) será normal. No entanto, a quantidade real de carga entregue ao destino (CaO2) será baixíssima."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Equação da Sobrevivência: Destrinchando a Fórmula do CaO2"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para quantificar o oxigênio exato que viaja no sangue arterial, utilizamos a equação clássica do conteúdo de oxigênio: CaO2 = (Hb * 1,34 * SaO2) + (PaO2 * 0,003). Vamos quebrar essa fórmula em suas duas metades fisiológicas fundamentais para compreender seu funcionamento prático."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A fração ligada à hemoglobina é expressa por: Hb (g/dL) * 1,34 (constante de Hüfner) * SaO2 (%). Cada grama de hemoglobina totalmente saturada consegue carregar cerca de 1,34 mL de O2. Sob condições normais (Hb = 15 g/dL e SaO2 = 98%), esta fração carrega cerca de 19,7 mL de O2 por decilitro de sangue."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda parte da fórmula representa a fração dissolvida fisicamente no plasma: PaO2 (mmHg) * 0,003 (coeficiente de solubilidade do O2 no plasma a 37°C). Em um indivíduo saudável respirando ar ambiente com PaO2 de 100 mmHg, essa fração equivale a apenas 0,3 mL de O2 por decilitro de sangue. Portanto, do total de aproximadamente 20 mL de O2 por decilitro de sangue arterial (20 vol%), mais de 98% viajam ligados à hemoglobina e menos de 2% viajam dissolvidos no plasma."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um paciente com anemia profunda e hemoglobina de 5 g/dL receber oxigênio a 100%, elevando sua PaO2 para impressionantes 500 mmHg, a fração dissolvida conseguirá compensar a falta de hemoglobina para manter o CaO2 normal?",
+      "resposta": "Não. Vamos calcular: com PaO2 de 500 mmHg, o oxigênio dissolvido aumenta para 500 * 0,003 = 1,5 mL/dL (uma elevação notável em relação a 0,3 mL/dL). Contudo, com Hb de 5 g/dL e SaO2 de 100%, o oxigênio ligado à hemoglobina será de apenas 5 * 1,34 * 1,00 = 6,7 mL/dL. O CaO2 total será de 6,7 + 1,5 = 8,2 mL/dL, o que ainda é menos de metade do valor normal de ~20 mL/dL. Isso demonstra que a oxigenoterapia tem eficácia limitada na anemia grave, pois o principal transportador está ausente."
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s3-fisio2-01-053-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que a PaO2 permanece normal em um paciente com anemia ferropriva grave?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "PaO2",
+        "Anemia",
+        "Troca Gasosa"
+      ],
+      "resposta": "Porque a PaO2 mede apenas o oxigênio fisicamente dissolvido no plasma. Como os pulmões e a barreira alveolocapilar do paciente anêmico estão saudáveis, a difusão e o equilíbrio de pressões do gás ocorrem normalmente, independentemente da quantidade de hemácias circulantes."
+    },
+    {
+      "card_id": "s3-fisio2-01-053-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Como a intoxicação por monóxido de carbono (CO) altera as variáveis Hb, SaO2, PaO2 e CaO2?",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Monóxido de Carbono",
+        "CaO2",
+        "Fisiopatologia"
+      ],
+      "resposta": "O CO liga-se competitivamente à hemoglobina com afinidade 200 vezes maior que o O2. Isso reduz drasticamente a SaO2 (pois ocupa os sítios de ligação) e reduz drasticamente o CaO2. No entanto, a PaO2 permanece normal (pois o CO não altera o O2 dissolvido no plasma) e a Hb total inicial também se mantém normal."
+    },
+    {
+      "card_id": "s3-fisio2-01-053-fc03",
+      "tipo": "armadilha",
+      "pergunta": "Por que monitorar apenas a saturação de oxigênio por oximetria de pulso (SpO2) pode ser perigoso em um paciente que sofreu hemorragia aguda?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "Oximetria de Pulso",
+        "Hemorragia",
+        "Erro Clínico"
+      ],
+      "resposta": "Porque a oximetria de pulso mede apenas a saturação percentual da hemoglobina remanescente (SpO2), que pode estar normal em 98-100%. Ela não detecta que a massa total de hemoglobina foi severamente reduzida, mascarando uma queda crítica no conteúdo total de oxigênio (CaO2) e o consequente risco de choque hipoxêmico."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-fisio2-01-053-caso01",
+      "titulo": "A Fadiga Silenciosa da Anemia Ferropriva",
+      "apresentacao": "Mariana, 28 anos, vegetariana estrita, apresenta-se com queixa de fadiga extrema, palpitações e dispneia aos mínimos esforços com evolução de 3 meses. Exame físico: palidez cutâneo-mucosa acentuada e frequência cardíaca de 112 bpm. Gasometria arterial em ar ambiente revela PaO2 de 97 mmHg e SaO2 de 98%. O hemograma revela hemoglobina (Hb) de 6,0 g/dL (normal: 12-16 g/dL).",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Deficiência crônica de ferro de origem dietética (falta de ferro heme), impedindo a síntese adequada do grupo heme nas mitocôndrias dos precursores eritroides."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Medula óssea vermelha que produz hemácias microcíticas e hipocrômicas, levando a uma redução acentuada da concentração plasmática de hemoglobina para 6,0 g/dL."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Mesmo com excelente ventilação e difusão alveolar (PaO2 e SaO2 normais), o conteúdo arterial de oxigênio (CaO2) despenca de ~20 mL/dL para apenas ~8 mL/dL devido à carência de hemoglobina para transportar o O2."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Hipóxia tecidual generalizada por falta de entrega de O2, manifestando-se clinicamente como fadiga incapacitante e ativando compensações adrenérgicas como taquicardia e taquipneia de esforço."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Se não tratada, a sobrecarga de débito cardíaco contínua pode culminar em insuficiência cardíaca de alto débito. A correção com reposição de ferro restabelecerá a eritropoiese, normalizando a Hb e o CaO2."
+        }
+      ],
+      "conexao_com_bloco": "Este caso clínico demonstra de forma inequívoca que uma oxigenação pulmonar ideal (PaO2 e SaO2 normais) não garante a entrega de oxigênio tecidual adequada se o transportador quantitativo (hemoglobina) estiver severamente deficiente, reduzindo o CaO2.",
+      "disciplinas_relacionadas": [
+        "Fisiologia",
+        "Hematologia",
+        "Semiologia"
+      ],
+      "diagnostico_revelado": "Anemia ferropriva grave",
+      "tratamento_resumido": "Reposição de ferro elementar por via oral ou intravenosa associada a orientações nutricionais para otimizar o aporte de ferro."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "correlacao-clinica"
-  ]
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-fisio2-01-050",
+        "titulo": "Transporte de O2 e CO2 no Sangue — Visão Geral",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "A compreensão de como os gases se dissolvem no plasma e interagem com a molécula de hemoglobina é indispensável para calcular e analisar as variáveis que compõem o conteúdo arterial de oxigênio."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Hipóxia Tecidual e Mecanismos de Compensação Cardiovascular",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre_futuro": 3,
+        "mecanismo_conexao": "O entendimento de como o CaO2 reduzido (mesmo com PaO2 normal) estimula os quimiorreceptores periféricos e desencadeia o aumento do débito cardíaco como compensação.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Curva de Dissociação da Hemoglobina",
+        "explicacao": "Enquanto o CaO2 quantifica a quantidade absoluta de oxigênio no sangue, a curva de dissociação da hemoglobina explica a afinidade e a facilidade com que o oxigênio é liberado nos tecidos sob diferentes pressões parciais."
+      }
+    ]
+  }
 }

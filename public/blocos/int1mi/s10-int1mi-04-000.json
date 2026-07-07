@@ -10,52 +10,121 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Casos Integradores Semanais",
+    "subtitulo": "O que fazer quando dois problemas graves competem pela sua atenção ao mesmo tempo?",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 4,
+    "topico": 0,
     "profundidade_arvore": 1,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "raciocinio_diagnostico",
+      "conduta",
+      "seguranca_paciente"
     ],
+    "tipo_conteudo": "integrador",
+    "status": "publicado",
+    "data_criacao": "2026-07-05",
+    "data_revisao": "2026-07-05",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
+    "tempo_estudo_minutos": 8,
+    "palavras_chave": [
+      "caso integrador",
+      "priorização",
+      "comorbidade",
+      "trade-off"
+    ],
     "formato_internato": "integrador"
   },
-  "resumo_conciso": "Pacientes que cruzam sistemas e obrigam a priorizar entre problemas concorrentes",
-  "narrativa": [],
+  "resumo_conciso": "Os quinze casos paradigmáticos do Módulo 1 isolam um problema de cada vez para você aprender a decisão específica dele. Este módulo faz o oposto: junta dois problemas graves no mesmo paciente e obriga você a decidir qual tratar primeiro — porque paciente real raramente chega com um diagnóstico só.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Dona Marlene, 79 anos, está internada por pneumonia. No terceiro dia, ela evolui com piora renal — a creatinina, que estava normal na admissão, dobrou. Ao mesmo tempo, o antibiótico que trata a pneumonia dela é parcialmente eliminado pelo rim, e a dose precisa de ajuste. Se você ajustar demais, o antibiótico pode ficar subterapêutico e a pneumonia piorar. Se não ajustar, o antibiótico acumula e pode piorar ainda mais o rim. Dois problemas, uma decisão que afeta os dois ao mesmo tempo. Não existe manual que resolva isso separadamente — é exatamente esse tipo de cruzamento que este módulo treina."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que os casos paradigmáticos, sozinhos, não bastam"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada caso do Módulo 1 ensina uma decisão isolada — como conduzir a pneumonia, como conduzir a sepse. Mas na enfermaria real, os pacientes mais desafiadores raramente têm um problema só: o idoso multimórbido, o cirrótico séptico, o paciente com dispneia que pode ser cardíaca ou pulmonar (ou as duas). Um caso integrador força uma pergunta que nenhum caso isolado faz: quando dois problemas legítimos competem pela sua atenção e pelos seus recursos (tempo, exames, medicações que interagem), qual você resolve primeiro, e o que você aceita monitorar enquanto isso?"
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Um caso integrador de verdade tem um trade-off explícito — tratar A pode piorar B, e ignorar B por ora é uma escolha consciente, não um esquecimento. Se os dois problemas do caso puderem ser resolvidos de forma totalmente independente, sem afetar um ao outro, não é um caso integrador de verdade."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Ao entrar em cada caso deste módulo, pergunte primeiro: quais são os dois (ou mais) problemas concorrentes, e por que resolver um interfere no outro? Só depois pergunte qual tratar primeiro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os quatro casos a seguir cobrem cruzamentos frequentes na prática: o idoso com múltiplas comorbidades descompensando ao mesmo tempo, a sepse instalada sobre uma cirrose já frágil, a dispneia aguda que pode ter origem cardíaca, pulmonar ou ambas, e a dengue grave complicando uma comorbidade prévia. Em todos, a competência observada não é saber cada doença separadamente — é a priorização quando elas colidem."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1mi-01-000",
+        "titulo": "Casos Paradigmáticos da Enfermaria e da Emergência Clínica",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-04-001",
+        "titulo": "O Idoso Multimórbido em Descompensação — o que tratar primeiro",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Primeiro caso integrador — aplica diretamente a lógica de trade-off explícito descrita aqui."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-04-000-001",
+      "tipo": "contrafactual",
+      "pergunta": "Um caso apresenta dois diagnósticos no mesmo paciente, mas o tratamento de um não interfere em nada no tratamento do outro. Isso é um caso integrador de verdade?",
+      "resposta": "Não. A marca de um caso integrador genuíno é o trade-off: tratar um problema precisa afetar, de alguma forma, a decisão sobre o outro (por interação medicamentosa, competição por recursos, ou risco de piorar um ao tratar o outro). Dois diagnósticos que coexistem sem interferência mútua são apenas comorbidades paralelas — não testam priorização, só testam conhecimento de duas doenças separadas.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "integrador",
+        "priorizacao"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Este bloco é um nó organizador de módulo (metaconteúdo pedagógico) que introduz o conceito de priorização entre problemas concorrentes — não descreve uma estrutura, mecanismo ou entidade clínica isolada com cascata causal própria. Os quatro casos clínicos reais que ilustram esse conceito estão nos blocos-filho (s10-int1mi-04-001 a 004), cada um com seu próprio caso_clinico completo."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "raciocinio_diagnostico",
-    "conduta",
-    "seguranca_paciente"
+  "fontes": [
+    {
+      "tipo": "livro",
+      "titulo": "Harrison's Principles of Internal Medicine — abordagem ao paciente com múltiplas comorbidades",
+      "autores": "Loscalzo J, Fauci AS, Kasper DL, et al.",
+      "ano": 2022
+    }
   ]
 }

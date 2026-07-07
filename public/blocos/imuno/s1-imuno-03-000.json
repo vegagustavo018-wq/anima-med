@@ -218,60 +218,56 @@
     }
   ],
   "conexoes": {
-    "prerequisitos": [
-      {
-        "bloco_id": "s1-bio-01-006",
-        "titulo": "Célula — Membrana e Receptores",
-        "tipo": "necessario"
-      },
-      {
-        "bloco_id": "s1-imuno-01-000",
-        "titulo": "Imunidade Inata — Defesa inespecífica",
-        "tipo": "necessario"
-      }
-    ],
+    "prerequisitos": [],
     "futuras": [
       {
         "bloco_id": "s2-imuno-02-001",
         "titulo": "Ativação de linfócitos T",
-        "tipo": "MECANISMO_APROFUNDADO",
-        "descricao": "Expandir os dois sinais de ativação em detalhe molecular (CD3, CD28, CD4/CD8)."
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "Expandir os dois sinais de ativação em detalhe molecular (CD3, CD28, CD4/CD8).",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s2-imuno-02-005",
         "titulo": "Diferenciação de T helper e T regulatório",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Como Ts helpers coordenam a resposta; como Ts regulatórios freiam o sistema para evitar autoimunidade."
+        "descricao": "Como Ts helpers coordenam a resposta; como Ts regulatórios freiam o sistema para evitar autoimunidade.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s2-imuno-03-001",
         "titulo": "Resposta humoral — Plasmócitos e anticorpos",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "O que acontece quando um linfócito B é ativado: transformação em plasmócito, produção de anticorpos, tipos de anticorpos (IgM, IgG, IgA)."
+        "descricao": "O que acontece quando um linfócito B é ativado: transformação em plasmócito, produção de anticorpos, tipos de anticorpos (IgM, IgG, IgA).",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s3-patol-02-003",
         "titulo": "Mecanismos de evasão tumoral",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Como cânceres conseguem enganar linfócitos T; por que imunoterapia (checkpoint inhibitors) funciona."
+        "descricao": "Como cânceres conseguem enganar linfócitos T; por que imunoterapia (checkpoint inhibitors) funciona.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "bloco_id": "s2-farma-01-008",
         "titulo": "Medicamentos imunomoduladoes",
         "tipo": "ALVO_TERAPEUTICO",
-        "descricao": "Anticorpos monoclonais, inibidores de checkpoint, vacinas de ARN — como cada um potencia a resposta adaptativa."
+        "descricao": "Anticorpos monoclonais, inibidores de checkpoint, vacinas de ARN — como cada um potencia a resposta adaptativa.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
       {
         "bloco_id": "s1-bio-01-008",
         "titulo": "Proteínas — Função e Especificidade",
-        "descricao": "Entender como uma proteína como TCR consegue reconhecer apenas um fragmento específico."
+        "descricao": "Entender como uma proteína como TCR consegue reconhecer apenas um fragmento específico.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       },
       {
         "bloco_id": "s1-hist-04-002",
         "titulo": "Tecido Sanguíneo — Linfócitos",
-        "descricao": "Morfologia dos linfócitos ao microscópio; diferenciação de T e B por marcadores."
+        "descricao": "Morfologia dos linfócitos ao microscópio; diferenciação de T e B por marcadores.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -343,31 +339,39 @@
   ],
   "casos_clinicos": [
     {
-      "id": "caso-001",
+      "caso_id": "caso-001",
       "titulo": "Vacinação contra COVID: Por que a memória protege",
-      "descricao": "Maria, 35 anos, foi vacinada contra COVID-19 com dois reforços (três doses totais). Sua resposta primária produziu antibodies IgM que caíram em poucas semanas. Depois vieram IgG de memória que permaneceram. Dez meses depois, ela se expôs a um paciente com Ômicron. Mostrou sintomas leves (apenas tosse seca, sem febre) enquanto seu marido, não vacinado, desenvolveu pneumonia.",
+      "apresentacao": "Maria, 35 anos, foi vacinada contra COVID-19 com dois reforços (três doses totais). Sua resposta primária produziu antibodies IgM que caíram em poucas semanas. Depois vieram IgG de memória que permaneceram. Dez meses depois, ela se expôs a um paciente com Ômicron. Mostrou sintomas leves (apenas tosse seca, sem febre) enquanto seu marido, não vacinado, desenvolveu pneumonia.",
       "cascata": [
         {
           "etapa": "Causa",
           "descricao": "Exposição a SARS-CoV-2 Ômicron (vírus novo, mas parcialmente reconhecível)"
         },
         {
-          "etapa": "Estrutura imunológica envolvida",
+          "etapa": "Estrutura Afetada",
           "descricao": "Maria tem células T helper de memória e B de memória treinadas em spike protein. Marido tem resposta inata apenas (interferons, macrófagos, neutrófilos inatos)."
         },
         {
-          "etapa": "Diferença funcional",
+          "etapa": "Disfunção",
           "descricao": "No dia 1 de exposição, memória de Maria (T e B) foi ativada em minutos-horas (TCR/BCR reconhecem epítopos conservados mesmo em Ômicron). Resposta primária do marido demanda dias. Quando vírus começava a replicar no marido (causando carga viral alta), em Maria já havia IgG circulante marcando vírus e T citotóxicos limpando células infectadas."
         },
         {
-          "etapa": "Sintoma clínico",
+          "etapa": "Sintoma",
           "descricao": "Maria teve apenas sintomas inferiores às vias aéreas (tosse seca) porque carga viral foi controlada no dia 2-3. Marido desenvolveu febre (resposta inflamatória exagerada a carga viral alta) e depois hipóxia (pneumonia bilateral por replicação viral descontrolada antes de resposta adaptativa decolar)."
         },
         {
-          "etapa": "Consequência e lição",
+          "etapa": "Consequência",
           "descricao": "Maria se recuperou em 5 dias; marido precisou de oxigênio por 10 dias. A diferença não foi que Maria tem 'imunidade melhor inata' — foi que sua imunidade *adaptativa treinada* cortou o invasor pela raiz enquanto em Maria ainda aprendia. Vacinação = treino antecipado = proteção não porque impede infecção, mas porque torna infecção controlável."
         }
-      ]
+      ],
+      "conexao_com_bloco": "Ilustra na prática por que linfócitos T e B de memória (o produto final da imunidade adaptativa estudada neste bloco) tornam a segunda exposição a um patógeno muito mais rápida e branda que a primeira.",
+      "disciplinas_relacionadas": [
+        "Imunologia",
+        "Infectologia",
+        "Saúde Pública"
+      ],
+      "diagnostico_revelado": "Proteção por memória imunológica adaptativa pós-vacinação (resposta secundária rápida de células T e B de memória)",
+      "tratamento_resumido": "Não se trata de uma doença a tratar — o caso ilustra prevenção: a vacinação prévia treinou a memória imunológica, tornando a infecção subsequente branda e autolimitada, sem necessidade de internação."
     }
   ],
   "midia": {

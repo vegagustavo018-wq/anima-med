@@ -8,54 +8,379 @@
     "s8-anest-05-004",
     "s8-anest-05-005"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s6-cirurgia-00-000"
+  ],
   "metadata": {
     "titulo": "Opioides em Anestesia",
+    "subtitulo": "Como se apaga a dor de um corte sem apagar, junto, a vontade de respirar?",
     "semestre": 8,
     "disciplina": "Anestesiologia",
+    "sistema_corporal": "sistema nervoso",
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 9,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
       "anest",
-      "esqueleto"
+      "opioides",
+      "analgesia-perioperatoria",
+      "receptor-mu",
+      "resposta-simpatica-cirurgica",
+      "farmacologia-clinica",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Analgesia perioperatória e controle da resposta simpática à cirurgia",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior vimos que a anestesia geral é uma tríade — hipnose, analgesia, relaxamento muscular. Este bloco é o pórtico do território analgésico dessa tríade: por que ela existe e qual princípio unificador organiza os cinco módulos seguintes, que detalham cada fármaco e cada escolha clínica em profundidade. O problema não é só a dor consciente, mas a resposta simpática reflexa à nocicepção (taquicardia, hipertensão, catecolaminas) que ocorre mesmo sem memória do evento. A solução farmacológica amplifica o sistema opioide endógeno via receptor mu — o mesmo receptor cuja ativação em núcleos do tronco encefálico que controlam a respiração explica por que a analgesia opioide tem, como preço estrutural, o risco de depressão respiratória dose-dependente [⚠️ pesquisa em agonismo enviesado do receptor mu sugere que pode haver dissociação parcial entre os dois efeitos, mas nenhum agente aprovado alcança essa separação de forma clinicamente decisiva]. Os módulos seguintes detalham o mecanismo receptor a receptor e a farmacocinética comparada de cada opioide usado em anestesia.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já sabe, do bloco anterior, que a anestesia geral suspende três coisas ao mesmo tempo — consciência, dor e reflexos motores — e que cada uma exige uma classe farmacológica própria. Este bloco entra no segundo componente: a analgesia. E a primeira coisa a entender é que apagar a consciência do paciente com um hipnótico não resolve, sozinho, o problema da dor cirúrgica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que apagar a consciência não é suficiente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um estímulo nociceptivo — o corte do bisturi, a tração de um órgão — dispara um arco que não depende de haver alguém 'acordado' para senti-lo conscientemente. O sinal sobe pela medula, ativa núcleos do tronco encefálico e do hipotálamo, e dispara uma resposta neuroendócrina de estresse: liberação de catecolaminas, cortisol, taquicardia, hipertensão. Esse arco reflexo acontece mesmo em um paciente profundamente hipnotizado, sem qualquer memória do evento — porque a via que gera a resposta simpática não é a mesma via que gera a experiência consciente de sofrimento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em um paciente jovem e saudável, essa tempestade catecolaminérgica é desconfortável, mas tolerável. Em um paciente coronariopata, o mesmo pico de frequência cardíaca e pressão arterial pode ser o suficiente para desequilibrar a relação entre oferta e consumo de oxigênio no miocárdio e precipitar isquemia — na mesa de cirurgia, sem que o paciente jamais saiba que sentiu algo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe antes de seguir: a analgesia em anestesia existe para suprimir uma resposta simpática mensurável, não apenas o sofrimento consciente. É por isso que se administra opioide mesmo a um paciente que, graças ao hipnótico, jamais vai se lembrar da cirurgia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve — amplificando um sistema que já existe"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução não precisou ser inventada do zero: o corpo já possui um sistema de modulação endógena da dor, evolutivamente antigo, que usa peptídeos próprios (endorfinas, encefalinas, dinorfinas) para reduzir a transmissão nociceptiva em momentos de ameaça — o efeito é o que permite a um animal ferido continuar fugindo de um predador antes de processar a dor plenamente. Substâncias derivadas do ópio imitam esses peptídeos endógenos nos mesmos receptores, e a farmacologia moderna refinou essa imitação em moléculas sintéticas muito mais potentes e previsíveis do que a morfina natural, permitindo dose titulável e efeito controlável dentro de uma cirurgia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito — o receptor mu como alvo principal"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existem três famílias de receptores opioides — mu, delta e kappa — mas é o receptor mu que concentra praticamente toda a analgesia clinicamente relevante em anestesia, e é nele que os fármacos usados na prática (fentanil, sufentanil, alfentanil, remifentanil) atuam como agonistas. Os módulos seguintes desta trilha detalham delta e kappa e a farmacocinética individual de cada agente; aqui basta reter que 'opioide em anestesia' quer dizer, na prática, 'agonista do receptor mu'."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona — o mesmo receptor, dois territórios"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Do receptor mu ao efeito clínico",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Ligação ao receptor mu",
+          "explicacao": "O opioide se liga ao receptor mu, acoplado a proteína G inibitória, presente em populações neuronais distintas: no corno dorsal da medula, na substância cinzenta periaquedutal e no tálamo (via da dor) e, separadamente, em núcleos respiratórios do bulbo, como o complexo pré-Bötzinger (via do ritmo respiratório)."
+        },
+        {
+          "numero": 2,
+          "titulo": "Hiperpolarização neuronal",
+          "explicacao": "A ativação do receptor abre canais de potássio e fecha canais de cálcio voltagem-dependentes, hiperpolarizando o neurônio e reduzindo a liberação de neurotransmissores excitatórios — o mesmo mecanismo bioquímico se repete em qualquer neurônio que expresse o receptor mu, seja na via da dor, seja na via respiratória."
+        },
+        {
+          "numero": 3,
+          "titulo": "Efeito na via da dor",
+          "explicacao": "Nos neurônios do corno dorsal e do tálamo, a hiperpolarização reduz a transmissão do sinal nociceptivo ascendente — é o efeito buscado: analgesia."
+        },
+        {
+          "numero": 4,
+          "titulo": "Efeito na via respiratória",
+          "explicacao": "Nos neurônios do complexo pré-Bötzinger e núcleos bulbares adjacentes, a mesma hiperpolarização reduz a sensibilidade do centro respiratório à hipercapnia e diminui o drive ventilatório — é o efeito indesejado: depressão respiratória, dose-dependente."
+        },
+        {
+          "numero": 5,
+          "titulo": "Resultado clínico integrado",
+          "explicacao": "Como os dois efeitos compartilham o mesmo receptor e a mesma cascata de transdução — ainda que em populações neuronais anatomicamente distintas — não existe, na prática clínica atual, uma dose de opioide potente que garanta analgesia plena sem qualquer grau de depressão respiratória. A dose é sempre um equilíbrio titulado, não uma separação limpa."
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Analgesia e depressão respiratória não são o mesmo evento acontecendo no mesmo lugar — ocorrem em populações neuronais diferentes (vias da dor versus núcleos respiratórios do bulbo). Mas ambas dependem do mesmo receptor mu e da mesma cascata de hiperpolarização, o que faz da depressão respiratória um risco estrutural da potência opioide, não um efeito colateral independente e evitável por acaso. [⚠️ agonistas 'enviesados' do receptor mu, como a oliceridina, tentam favorecer farmacologicamente a via da dor sobre a via respiratória — uma dissociação parcial que é objeto de pesquisa ativa, não um fato estabelecido na prática clínica atual]."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O mesmo receptor mu, em outras localizações, produz efeitos adicionais que a equipe de anestesia reconhece e antecipa: rigidez de parede torácica [⚠️ mais associada a bolus intravenoso rápido de opioides potentes em dose alta, como fentanil ou sufentanil na indução, do que a infusões lentas ou doses baixas], náusea por ativação da zona de gatilho quimiorreceptora, e miose por ação em núcleos do tronco encefálico ligados ao reflexo pupilar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que se articula — por que existe mais de um opioide"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se todos os agonistas mu ativam o mesmo receptor pelo mesmo mecanismo, por que a prática usa fentanil, sufentanil, alfentanil e remifentanil como fármacos distintos, e não um só? Porque a escolha clínica depende quase inteiramente de propriedades farmacocinéticas — velocidade de início, forma de eliminação, previsibilidade do término do efeito após infusão prolongada — e não de diferenças no mecanismo mu em si. Um procedimento curto pede um opioide de ação ultra-rápida e eliminação previsível; uma cirurgia longa em paciente com insuficiência hepática pede um opioide cuja eliminação não dependa do fígado. Essa comparação farmacocinética fármaco a fármaco, com os números de meia-vida contexto-sensível de cada um, é o assunto dos módulos seguintes desta trilha — aqui importa reter apenas que a existência de várias moléculas é uma resposta a essa variabilidade clínica, não uma redundância."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Nome e origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "opioide",
+      "origem": "do grego ópion (suco de papoula, ópio) + o sufixo -oide (que tem forma ou semelhança de)",
+      "significado": "literalmente, 'semelhante ao ópio' — qualquer substância, natural ou sintética, que produz efeitos comparáveis aos do ópio ao atuar nos mesmos receptores",
+      "explicacao": "O termo foi cunhado no século XX justamente para resolver um problema de nomenclatura: 'opiáceo' originalmente descrevia apenas os alcaloides naturais extraídos da papoula (morfina, codeína), mas a farmacologia passou a produzir moléculas totalmente sintéticas — como o fentanil, sem qualquer relação estrutural direta com a papoula — que ativam o mesmo receptor mu e produzem o mesmo espectro de efeitos. 'Opioide' é o termo mais amplo, que inclui os naturais, os semissintéticos e os sintéticos, unificados não pela origem química, mas pelo alvo farmacológico comum."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Analogia"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎚️",
+      "conteudo": "Pense no receptor mu como um dial de volume mestre que dois alto-falantes compartilham na mesma central de som: um alto-falante toca a 'via da dor', o outro toca o 'ritmo respiratório'. Não há dois dials independentes — girar o volume mestre para baixo abaixa os dois ao mesmo tempo, porque estão na mesma central, mesmo tocando em cômodos diferentes da casa. É por isso que, na prática atual, não existe ajuste que silencie só a dor sem também abafar, em algum grau, a respiração. Pesquisas recentes tentam construir uma central com dois dials quase independentes — reduzir mais um alto-falante que o outro — mas essa central ainda não chegou, de forma decisiva, à prática clínica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Pergunta de fechamento"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se existisse um opioide hipotético com afinidade plena pelo receptor mu na via da dor, mas nenhuma afinidade pelo receptor mu nos núcleos respiratórios do bulbo, o que mudaria na prática anestésica?",
+      "resposta": "Mudaria o principal fator limitante da titulação de opioides: hoje, a dose é sempre um compromisso entre analgesia suficiente e o risco de deprimir a ventilação, o que obriga a monitorização contínua da respiração em qualquer paciente recebendo opioide potente. Um agente assim dissociado permitiria doses analgésicas muito mais altas sem risco ventilatório, e reduziria drasticamente a necessidade de vigilância respiratória associada a essa classe. Esse cenário não é puramente hipotético — é exatamente o que a pesquisa em agonismo enviesado do receptor mu tenta alcançar — mas, até hoje, nenhum composto aprovado obtém essa separação de forma clinicamente decisiva, o que confirma, na prática, que analgesia opioide e risco respiratório continuam ligados pelo mesmo receptor."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Receptor mu como ponto de convergência entre via da dor e centro respiratório",
+      "descricao": "Esquema didático mostrando duas populações neuronais distintas — uma no eixo corno dorsal/substância cinzenta periaquedutal/tálamo (via da dor) e outra no complexo pré-Bötzinger e núcleos bulbares adjacentes (via respiratória) — ambas recebendo o mesmo ícone de receptor mu, com uma seta comum indicando 'mesma cascata de hiperpolarização' partindo de um único opioide circulante. Setas de saída de cada população neuronal apontam para os efeitos respectivos: 'redução da transmissão nociceptiva' de um lado, 'redução do drive ventilatório' do outro.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente adaptativo, estilo de infográfico médico moderno, sem texto ou letras embutidas na imagem. Uma molécula estilizada única ao centro (representando o opioide) com duas setas se ramificando para dois grupos neuronais estilizados desenhados como formas abstratas de neurônios interconectados — um grupo à esquerda rotulado visualmente por um ícone de trajeto ascendente (via da dor, com um ícone de escudo bloqueando um raio pontiagudo) e outro grupo à direita com um ícone de pulmão com uma onda respiratória tracejada diminuindo de amplitude (via respiratória). Ambos os grupos neuronais compartilham o mesmo ícone de receptor (uma fechadura estilizada) na base, com uma seta tracejada comum indicando a origem única do sinal. Paleta de cores médica sóbria — azul-petróleo, verde-água, cinza-grafite — com destaque em âmbar no ícone do receptor central. Traços vetoriais limpos, sem realismo fotográfico, sem qualquer texto na imagem."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-anest-00-000",
+        "titulo": "Anestesiologia — A Medicina de Suspender e Devolver a Consciência com Segurança",
+        "disciplina": "anestesiologia",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco pressupõe a tríade anestésica (hipnose, analgesia, relaxamento muscular) estabelecida no bloco fundacional da disciplina e aprofunda especificamente o componente analgésico."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-05-001",
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Farmacocinética comparada de fentanil, sufentanil, alfentanil e remifentanil",
+        "mecanismo_conexao": "Este bloco só alude à existência da escolha clínica entre opioides; o módulo seguinte detalha meia-vida contexto-sensível, metabolismo hepático versus esterases plasmáticas e indicação de cada agente com valores numéricos.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Analgesia multimodal e estratégias opioid-sparing",
+        "mecanismo_conexao": "O princípio de que a potência opioide tem custo respiratório motiva, em módulo próprio, o uso combinado de não opioides (dipirona, AINEs, cetamina, bloqueios regionais) para reduzir a dose de opioide necessária.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Reversão de opioides e depressão respiratória pós-operatória",
+        "mecanismo_conexao": "O mecanismo de depressão respiratória mu-mediada estabelecido aqui é a base para entender, em módulo dedicado, o uso de naloxona e a vigilância de depressão respiratória residual na sala de recuperação.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Tolerância e hiperalgesia induzida por opioide",
+        "mecanismo_conexao": "O uso repetido ou prolongado de agonistas mu, cujo mecanismo básico é descrito aqui, leva a adaptações neuronais que reduzem a eficácia analgésica e, paradoxalmente, aumentam a sensibilidade à dor — tema de módulo próprio.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s6-cirurgia-00-000",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Toda decisão intraoperatória de analgesia opioide é feita em resposta direta ao estímulo cirúrgico específico do procedimento em curso — o bloco fundacional de Cirurgia oferece o contexto do que está acontecendo do outro lado do campo estéril enquanto a titulação de opioide é ajustada."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-anest-05-000-fc01",
+      "pergunta": "Por que um paciente sob anestesia geral profunda, sem qualquer memória do procedimento, ainda precisa receber opioide?",
+      "resposta": "Porque a resposta simpática à agressão cirúrgica — taquicardia, hipertensão, liberação de catecolaminas — é gerada por um arco nociceptivo que não depende de percepção consciente. O hipnótico suprime a experiência subjetiva de dor e a memória do evento, mas não bloqueia, sozinho, a via que dispara essa resposta neuroendócrina reflexa. Em um paciente coronariopata, por exemplo, essa tempestade catecolaminérgica pode precipitar isquemia miocárdica mesmo sem qualquer sofrimento consciente. O opioide existe para suprimir esse componente reflexo, não apenas o sofrimento subjetivo.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "opioides",
+        "resposta-simpatica",
+        "principio"
+      ]
+    },
+    {
+      "card_id": "s8-anest-05-000-fc02",
+      "pergunta": "Se existisse um opioide com afinidade plena pela via da dor mas nenhuma afinidade pelos núcleos respiratórios do bulbo, o que mudaria na prática anestésica?",
+      "resposta": "A titulação de opioide deixaria de ser limitada pelo risco ventilatório, permitindo doses analgésicas muito mais altas com segurança respiratória, e reduziria a necessidade de monitorização contínua da ventilação associada a essa classe. Esse é, na prática, o objetivo da pesquisa em agonismo enviesado do receptor mu (como a oliceridina) — mas nenhum composto aprovado alcança essa dissociação de forma clinicamente decisiva hoje, o que confirma que analgesia e depressão respiratória continuam ligadas pelo mesmo receptor mu, ainda que em populações neuronais distintas.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "opioides",
+        "receptor-mu",
+        "agonismo-enviesado"
+      ]
+    },
+    {
+      "card_id": "s8-anest-05-000-fc03",
+      "pergunta": "Um paciente recebe bolus intravenoso rápido de fentanil em dose alta durante a indução e desenvolve rigidez de parede torácica que dificulta a ventilação com máscara. Qual o mecanismo e por que essa apresentação não é uniforme em toda a classe de opioides?",
+      "resposta": "A rigidez torácica é um efeito mu-mediado, mas está mais associada a bolus intravenoso rápido de opioides potentes em dose alta (como fentanil e sufentanil na indução) do que a infusões lentas ou doses baixas — não é um efeito uniforme de toda a classe em qualquer via ou velocidade de administração. O manejo imediato inclui suporte ventilatório e, se necessário, bloqueador neuromuscular para permitir ventilação, já que a rigidez pode impedir a expansão torácica adequada mesmo com via aérea permeável.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "opioides",
+        "rigidez-toracica",
+        "seguranca-do-paciente"
+      ]
+    },
+    {
+      "card_id": "s8-anest-05-000-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Como a depressão respiratória opioide é dose-dependente, basta escolher a dose mínima eficaz de analgesia que ela deixa de ser um risco relevante.'",
+      "resposta": "Falso, ou incompleto. A armadilha é achar que existe uma dose 'segura' fixa: a mesma dose que é totalmente segura em um paciente pode causar depressão respiratória significativa em outro, dependendo de fatores como idade, função renal/hepática, uso concomitante de outros depressores do sistema nervoso central (benzodiazepínicos, propofol residual) e variabilidade individual de sensibilidade do receptor mu. Por isso a resposta correta não é 'usar dose mínima e parar de monitorar', mas sim monitorizar continuamente a ventilação em qualquer paciente recebendo opioide potente, independentemente da dose parecer 'baixa' em tese.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "opioides",
+        "depressao-respiratoria",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s8-anest-05-000-fc05",
+      "pergunta": "A palavra 'opioide' não significa 'derivado do ópio' — significa 'semelhante ao ópio'. Por que essa distinção importa para entender fármacos como o fentanil?",
+      "resposta": "'Opiáceo' descreve os alcaloides naturais extraídos da papoula (morfina, codeína). 'Opioide' é o termo mais amplo — do grego ópion (ópio) + o sufixo -oide (semelhante a) — que inclui também moléculas totalmente sintéticas, como o fentanil, sem qualquer relação estrutural direta com a papoula, mas que ativam o mesmo receptor mu e produzem o mesmo espectro de efeitos. A unificação da categoria é pelo alvo farmacológico comum, não pela origem química — por isso fentanil, sufentanil, alfentanil e remifentanil, todos sintéticos, são corretamente chamados de opioides.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "etimologia",
+        "opioide",
+        "farmacologia-clinica"
+      ]
+    },
+    {
+      "card_id": "s8-anest-05-000-fc06",
+      "pergunta": "Se todos os opioides potentes usados em anestesia (fentanil, sufentanil, alfentanil, remifentanil) ativam o mesmo receptor mu pelo mesmo mecanismo, por que a prática clínica mantém quatro fármacos distintos em vez de um só?",
+      "resposta": "Porque a diferença clinicamente relevante entre eles não está no mecanismo — é o mesmo receptor mu e a mesma cascata de hiperpolarização em todos — mas na farmacocinética: velocidade de início, forma de eliminação (metabolismo hepático versus esterases plasmáticas inespecíficas, no caso do remifentanil) e previsibilidade do término do efeito após infusão prolongada. Um procedimento curto pede um agente de ação ultrarrápida e eliminação previsível; um paciente com insuficiência hepática pede um agente cuja eliminação não dependa do fígado. Os valores numéricos de meia-vida contexto-sensível e a comparação fármaco a fármaco são tratados no módulo seguinte desta trilha.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "opioides",
+        "farmacocinetica",
+        "escolha-clinica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-anest-05-000-caso01",
+      "titulo": "A taquicardia que apareceu antes do aviso do cirurgião",
+      "apresentacao": "Um homem de 58 anos, coronariopata conhecido, está sob anestesia geral para uma colecistectomia. O monitor mostra frequência cardíaca subindo de 70 para 105 bpm e pressão arterial subindo simultaneamente, cerca de 15 segundos antes de o cirurgião avisar, pelo campo estéril, que está tracionando a vesícula biliar.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Estímulo nociceptivo intenso (tração da vesícula biliar e estruturas do hilo hepático, ricamente inervadas) ocorre sob profundidade analgésica insuficiente para a intensidade do estímulo cirúrgico."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Vias aferentes viscerais que carregam o sinal nociceptivo ao sistema nervoso central, desencadeando resposta eferente simpática (taquicardia, hipertensão) — sem que o paciente tenha qualquer capacidade de perceber ou relatar dor, pois está sob anestesia geral."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A resposta simpática ao estímulo nociceptivo antecede o próprio estímulo cirúrgico ser comunicado verbalmente pela equipe — o corpo já reage automaticamente antes que a equipe tenha conhecimento consciente do evento que o provocou."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Taquicardia (70 para 105 bpm) e elevação simultânea da pressão arterial no monitor, sem qualquer sinal comportamental — o paciente está sob bloqueio e hipnose, incapaz de reagir voluntariamente."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Em paciente coronariopata, essa resposta simpática não tratada aumenta o consumo miocárdico de oxigênio, com risco real de isquemia miocárdica silenciosa. Reconhecer o sinal hemodinâmico — antes mesmo do aviso verbal do cirurgião — permite aprofundar a analgesia proativamente."
+        }
+      ],
+      "conexao_com_bloco": "O caso demonstra, de forma concreta, o princípio central deste bloco: a analgesia intraoperatória existe para suprimir uma resposta simpática mensurável, não apenas o sofrimento consciente. Em um paciente coronariopata, ignorar esse sinal e assumir que 'ele não vai lembrar mesmo' teria risco real de isquemia miocárdica silenciosa.",
+      "disciplinas_relacionadas": [
+        "Anestesiologia"
+      ],
+      "diagnostico_revelado": "Resposta simpática à nocicepção intraoperatória por analgesia insuficiente",
+      "tratamento_resumido": "Aprofundamento imediato da analgesia (bolus adicional de opioide ou ajuste do anestésico) diante do sinal hemodinâmico, sem aguardar confirmação verbal do estímulo cirúrgico; em coronariopatas, controle rigoroso da resposta simpática intraoperatória para prevenir isquemia miocárdica silenciosa."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-anest-05-000-img01",
+        "url": null,
+        "tipo_imagem": "esquema_didatico",
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "workflow-anima-s8",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "agente-integrador-s8",
+    "data_revisao": "2026-07-06",
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Miller RD, Gropper MA. Miller's Anesthesia. 9th ed. Elsevier; 2020. Chapter 31.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Butterworth JF, Mackey DC, Wasnick JD. Morgan & Mikhail's Clinical Anesthesiology. 6th ed. McGraw-Hill; 2018. Chapter 8.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
-    "correlação ciências básicas",
-    "conduta/técnica",
-    "manejo/segurança"
+    "princípio",
+    "mecanismo",
+    "farmacologia-clinica"
   ]
 }

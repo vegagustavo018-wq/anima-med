@@ -16,7 +16,8 @@
     "data_criacao": "2026-07-03",
     "data_atualizacao": "2026-07-03",
     "versao_schema": "3.0",
-    "autor": "Claude Opus 4.7"
+    "autor": "Claude Opus 4.7",
+    "titulo": "Aminoácidos: Blocos de Construção de Proteínas"
   },
   "resumo_conciso": "Proteínas são as máquinas de tudo em biologia — contração, fotossíntese, digesto de alimentos, reconhecimento imunológico, transmissão nervosa. Todas são feitas do mesmo alfabeto: 20 aminoácidos. Um aminoácido é uma molécula com cinco partes: grupo amino (doa H+), grupo carboxilo (aceita), uma ligação peptídica, um carbono central e uma 'corrente lateral' (R-group) única que define sua personalidade. Cada uma das 20 correntes laterais têm propriedades próprias — alguns são hidrofóbicos (óleo), alguns hidrofílicos (água), alguns carregados, alguns aromáticos. A ordem dessas 20 letras determina como uma proteína dobra, onde ela trabalha, com que velocidade funciona. Alternar apenas UMA letra (uma mutação) pode causar doença genética gravíssima. Neste bloco, conhecemos cada classe e vemos como a química da corrente lateral determina a função.",
   "narrativa": [
@@ -86,16 +87,20 @@
   "conexoes": {
     "prerequisitos": [
       {
-        "id": "s2-bioq1-01-010",
+        "bloco_id": "s2-bioq1-01-010",
         "titulo": "Ácidos e Bases: pH, Tampões e Equilíbrio H+",
-        "tipo": "fundamental",
-        "descricao": "Amino e carboxilo dos aminoácidos se ionizam em pH fisiológico; entender pH é essencial para entender carga de aminoácidos."
+        "disciplina": "Bioquímica",
+        "semestre": 2,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
       },
       {
-        "id": "s2-bioq1-01-020",
+        "bloco_id": "s2-bioq1-01-020",
         "titulo": "Efeito Hidrofóbico e Estrutura de Membranas",
-        "tipo": "fundamental",
-        "descricao": "Aminoácidos hidrofóbicos se enterram em proteínas pelo mesmo mecanismo que caudas de fosfolipídios evitam água."
+        "disciplina": "Bioquímica",
+        "semestre": 2,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
       }
     ],
     "futuras": [
@@ -103,19 +108,22 @@
         "id": "s2-bioq1-02-010",
         "titulo": "Estrutura Secundária de Proteínas: Hélices e Folhas",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Sequência de aminoácidos com suas propriedades polares/não-polares determina se proteína forma hélice-alfa ou folha-beta."
+        "descricao": "Sequência de aminoácidos com suas propriedades polares/não-polares determina se proteína forma hélice-alfa ou folha-beta.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s2-bioq1-02-020",
         "titulo": "Dobramento de Proteínas: Estrutura Terciária e Quaternária",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Arranjo tridimensional de aminoácidos (escondendo hidrofóbicos, expondo carregados) determina função proteica final."
+        "descricao": "Arranjo tridimensional de aminoácidos (escondendo hidrofóbicos, expondo carregados) determina função proteica final.",
+        "confianca": "hipotese_pedagogica"
       },
       {
         "id": "s3-patol-08-050",
         "titulo": "Doenças Genéticas por Mutação Proteica",
         "tipo": "CASCATA_CAUSAL",
-        "descricao": "Mudança de uma letra (um aminoácido) pode causar doença grave — exemplos: Anemia Falciforme, Fibrose Cística, Distrofia Muscular."
+        "descricao": "Mudança de uma letra (um aminoácido) pode causar doença grave — exemplos: Anemia Falciforme, Fibrose Cística, Distrofia Muscular.",
+        "confianca": "hipotese_pedagogica"
       }
     ],
     "laterais": [
@@ -123,7 +131,8 @@
         "id": "s2-bioq1-02-000",
         "titulo": "Carboidratos: Energia e Estrutura",
         "tipo": "CONTEXTO",
-        "descricao": "Glicoproteínas (proteína + açúcar) decoram superfícies celulares; açúcares adicionam complexidade às proteínas."
+        "descricao": "Glicoproteínas (proteína + açúcar) decoram superfícies celulares; açúcares adicionam complexidade às proteínas.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
       }
     ]
   },
@@ -187,36 +196,37 @@
   ],
   "casos_clinicos": [
     {
-      "id": "caso-bioq1-01-030-001",
+      "caso_id": "caso-bioq1-01-030-001",
       "titulo": "Fenilcetonúria (PKU): Uma Letra Errada, Inteligência Perdida",
       "apresentacao": "Recém-nascido é testado na triagem neonatal: teor de fenilalanina no sangue é 50 vezes acima do normal (normal < 2 mg/dL; paciente > 100 mg/dL).",
       "cascata": [
         {
-          "etapa": 1,
-          "titulo": "Causa",
-          "conteudo": "Paciente tem mutação no gene que codifica fenilalanina hidroxilase (PAH) — enzima que converte fenilalanina em tirosina. Sem PAH, fenilalanina (um aminoácido que não pode ser sintetizado, deve vir de proteína alimentar) acumula na corrente sanguínea."
+          "etapa": "Causa",
+          "descricao": "Paciente tem mutação no gene que codifica fenilalanina hidroxilase (PAH) — enzima que converte fenilalanina em tirosina. Sem PAH, fenilalanina (um aminoácido que não pode ser sintetizado, deve vir de proteína alimentar) acumula na corrente sanguínea."
         },
         {
-          "etapa": 2,
-          "titulo": "Estrutura — Entendimento Molecular",
-          "conteudo": "Fenilalanina é aminoácido aromático grande, hidrofóbico. Quando acumula em concentração muito alta, consegue atravessar barreira hematoencefálica (BBB) — uma barreira que normalmente bloqueia aminoácidos grandes. Fenilalanina em excesso compite com outros aminoácidos (Triptofano, Tirosina) pelos transportadores na BBB, reduzindo entrada desses. Particularmente grave: Tirosina é precursor de dopamina e norepinefrina (neurotransmissores críticos)."
+          "etapa": "Estrutura Afetada",
+          "descricao": "Fenilalanina é aminoácido aromático grande, hidrofóbico. Quando acumula em concentração muito alta, consegue atravessar barreira hematoencefálica (BBB) — uma barreira que normalmente bloqueia aminoácidos grandes. Fenilalanina em excesso compite com outros aminoácidos (Triptofano, Tirosina) pelos transportadores na BBB, reduzindo entrada desses. Particularmente grave: Tirosina é precursor de dopamina e norepinefrina (neurotransmissores críticos)."
         },
         {
-          "etapa": 3,
-          "titulo": "Disfunção — Cérebro em Fome de Neurotransmissores",
-          "conteudo": "Cérebro perde dopamina e norepinefrina. Essas moléculas são críticas para aprendizado, atenção, desenvolvimento neurológico. Além disso, fenilalanina em excesso se converte em fenilpiruvato (um cetoácido) e fenilacetato, que são tóxicos ao cérebro em altas concentrações."
+          "etapa": "Disfunção",
+          "descricao": "Cérebro perde dopamina e norepinefrina. Essas moléculas são críticas para aprendizado, atenção, desenvolvimento neurológico. Além disso, fenilalanina em excesso se converte em fenilpiruvato (um cetoácido) e fenilacetato, que são tóxicos ao cérebro em altas concentrações."
         },
         {
-          "etapa": 4,
-          "titulo": "Sintoma Clínico",
-          "conteudo": "Se não tratado desde nascimento: retardo mental severo (QI < 50 aos 2 anos), eczema, odor corporal desagradável (de fenilacetato), comportamento hiperativo, convulsões, pigmentação clara de pele/cabelos (Tirosina é precursor de melanina)."
+          "etapa": "Sintoma",
+          "descricao": "Se não tratado desde nascimento: retardo mental severo (QI < 50 aos 2 anos), eczema, odor corporal desagradável (de fenilacetato), comportamento hiperativo, convulsões, pigmentação clara de pele/cabelos (Tirosina é precursor de melanina)."
         },
         {
-          "etapa": 5,
-          "titulo": "Manejo e Consequência",
-          "conteudo": "Triagem neonatal detecta PKU em primeiros dias (antes de sintomas). Tratamento: dieta baixa em fenilalanina (proteína especial sem fenilalanina) iniciada imediatamente. Com dieta respeitada desde nascimento: desenvolvimento normal completo. Se diagnóstico é tardio (meses): dano neurológico permanente. Se dieta é interrompida na adolescência (crença equivocada): queda de QI pode ocorrer. PKU é exemplo clássico de mutação do código genético (mudança de um aminoácido crucial) causando doença catastrófica, mas totalmente prevenível com intervenção nutricional precoce."
+          "etapa": "Consequência",
+          "descricao": "Triagem neonatal detecta PKU em primeiros dias (antes de sintomas). Tratamento: dieta baixa em fenilalanina (proteína especial sem fenilalanina) iniciada imediatamente. Com dieta respeitada desde nascimento: desenvolvimento normal completo. Se diagnóstico é tardio (meses): dano neurológico permanente. Se dieta é interrompida na adolescência (crença equivocada): queda de QI pode ocorrer. PKU é exemplo clássico de mutação do código genético (mudança de um aminoácido crucial) causando doença catastrófica, mas totalmente prevenível com intervenção nutricional precoce."
         }
-      ]
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Bioquímica"
+      ],
+      "diagnostico_revelado": "Fenilcetonúria (PKU): Uma Letra Errada, Inteligência Perdida",
+      "tratamento_resumido": "Dieta restrita em fenilalanina iniciada logo após o diagnóstico por triagem neonatal (teste do pezinho), com suplementação de tirosina — previne o dano neurológico se iniciada precocemente."
     }
   ],
   "midia": [

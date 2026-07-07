@@ -5,31 +5,172 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Acuidade Visual — Como se Mede e o que Significa",
+    "subtitulo": "Como interpretar a notação de Snellen e diferenciar acuidade com/sem correção óptica?",
     "semestre": 6,
-    "disciplina": "Oftalmologia",
+    "disciplina": "oftal",
+    "sistema_corporal": "sensorial",
+    "regiao_anatomica": "olho",
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 8,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "oftal",
-      "esqueleto"
+      "acuidade-visual-medicao",
+      "tabela-de-snellen",
+      "notacao-fracionaria",
+      "acuidade-corrigida",
+      "furo-estenopeico",
+      "baixa-visao",
+      "cegueira-legal",
+      "conduta"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "mecanismo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Tabela de Snellen, notação, buraco estenopeico, contagem de dedos",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior, vimos o panorama do roteiro de exame. Agora, estudamos a acuidade visual (AV). O principal desafio consiste em interpretar a notação fracionária de Snellen (numerador = distância teste/denominador = distância que o normal enxerga aquela letra), distinguir AV sem correção (AV sc), com correção (AV cc), com furo estenopeico (furo = sugere erro refrativo corrigível) e classificar deficiência visual (AV 20/200 a 20/400 = baixa visão; < 20/400 = cegueira legal). A conduta depende se a perda é refrativa ou orgânica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, sistematizamos o roteiro completo de exame oftalmológico. A acuidade visual (AV) é o primeiro e mais fundamental dado do exame — é a 'pressão arterial' da oftalmologia. Mas o que significa 20/200 e como diferenciar um paciente que enxerga mal por ametropia não corrigida daquele com doença retiniana orgânica?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A Tabela de Snellen e a Notação Fracionária"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A tabela de Snellen é posicionada a 6m (20 pés). Cada linha contém letras ou optótipos cujo tamanho angular corresponde a 1 minuto de arco para o olho normal. A notação: AV = distância de teste / distância que o olho normal veria aquela letra. Exemplos: 20/20 = normal; 20/200 = o paciente enxerga a 20 pés o que um normal enxergaria a 200 pés (pior)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Categorias Diagnósticas"
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Comparação: Classificação",
+      "colunas": [
+        "Acuidade Visual",
+        "Classificação"
+      ],
+      "linhas": [
+        {
+          "Acuidade Visual": "20/20 a 20/25",
+          "Classificação": "Normal"
+        },
+        {
+          "Acuidade Visual": "20/30 a 20/60",
+          "Classificação": "Deficiência visual leve"
+        },
+        {
+          "Acuidade Visual": "20/70 a 20/160",
+          "Classificação": "Deficiência visual moderada"
+        },
+        {
+          "Acuidade Visual": "20/200 a 20/400",
+          "Classificação": "Baixa visão"
+        },
+        {
+          "Acuidade Visual": "< 20/400 ou PL / MM / CD",
+          "Classificação": "Cegueira legal"
+        },
+        {
+          "Acuidade Visual": "Sem percepção de luz (SPL)",
+          "Classificação": "Cegueira total"
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O Furo Estenopeico — Diagnóstico Diferencial Rápido"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Teste diagnóstico: perfurar um cartão com um orifício de ~1,5mm (furo estenopeico) e pedir ao paciente que olhe através dele. O furo seleciona apenas raios centrais paraxiais, eliminando a aberração de foco por ametropia. Se a AV **melhora** com o furo → causa refrativa (miopia/hipermetropia/astigmatismo não corrigido). Se **não melhora** → causa orgânica (catarata, maculopatia, neurite)."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "👁️",
+      "conteudo": "A acuidade visual 20/200 é como tentar ler legendas de cinema sentado na última fileira de uma sala enorme. O olho normal consegue ler as legendas da fileira 200 metros atrás, mas esse paciente só consegue ler sentado a 20 metros da tela. O furo estenopeico é como o olhar pelo buraco da fechadura — ao estreitar o feixe luminoso, corrige o desfoque de ametropia automaticamente, como se a fechadura adicionasse o óculos correto."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-oftal-01-030",
+        "titulo": "Exame Oftalmológico — Panorama",
+        "disciplina": "oftal",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Introduz o roteiro do exame."
+      }
+    ],
     "futuras": [],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-oftal-01-031-fc01",
+      "pergunta": "Explique o significado da notação fracionária 20/200 na tabela de Snellen.",
+      "resposta": "O numerador (20) é a distância em pés na qual o paciente fez o teste. O denominador (200) é a distância em pés na qual um indivíduo com visão normal enxergaria aquela letra. Logo 20/200 significa que o paciente enxerga a 20 pés o que o normal enxerga a 200 pés — acuidade reduzida a 10% do normal.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "snellen",
+        "notacao-fracionaria",
+        "acuidade-visual",
+        "20-200",
+        "interpretacao"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-031-fc02",
+      "pergunta": "Qual o critério de acuidade visual para classificar cegueira legal no Brasil e nos EUA?",
+      "resposta": "Cegueira legal é definida como melhor acuidade visual corrigida < 20/200 (ou 0,05 em notação decimal) no melhor olho, ou campo visual restrito a menos de 20 graus de diâmetro.",
+      "tipo": "clinico",
+      "dificuldade": 2,
+      "tags": [
+        "cegueira-legal",
+        "20-200",
+        "campo-visual-20-graus",
+        "classificacao"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-031-fc03",
+      "pergunta": "Qual o princípio do furo estenopeico e como ele diferencia perda visual refrativa de orgânica?",
+      "resposta": "O furo estenopeico seleciona apenas raios paraxiais centrais, eliminando a aberração de foco por erros refrativos. Se a AV melhora com o furo → causa refrativa (ametropia não corrigida). Se não melhora → causa orgânica (retina, nervo óptico, catarata densa).",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "furo-estenopico",
+        "diferencial-refrativo",
+        "causa-organica",
+        "diagnostico"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-031-fc04",
+      "pergunta": "Paciente tem AV 20/400 sem óculos e 20/400 com furo estenopeico. O que isso indica sobre a causa e qual a próxima conduta?",
+      "resposta": "A ausência de melhora com o furo indica que a perda NÃO é refrativa. A causa é orgânica: suspeitar de catarata densa, maculopatia, neuropatia óptica. A próxima conduta é biomicroscopia, tonometria e fundoscopia completa sob midríase.",
+      "tipo": "contrafactual",
+      "dificuldade": 2,
+      "tags": [
+        "furo-estenopico-sem-melhora",
+        "causa-organica",
+        "baixa-visao",
+        "fundoscopia-indicada",
+        "conduta"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
     "imagens": [],
@@ -37,18 +178,26 @@
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-06",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Kanski JJ, Bowling B. Oftalmologia Clínica. 8ª ed. Elsevier; 2016. Cap. 1 — Acuidade Visual.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
-    "técnica de exame",
-    "mecanismo/fisiopatologia"
+    "mecanismo",
+    "clinica",
+    "conduta"
   ]
 }

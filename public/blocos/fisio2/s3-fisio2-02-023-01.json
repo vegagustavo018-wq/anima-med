@@ -5,50 +5,190 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Reabsorção de Sódio, Glicose e Aminoácidos no TCP",
-    "semestre": 3,
+    "subtitulo": "O acoplamento energético e os limites da reabsorção obrigatória",
     "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
-    "profundidade_arvore": 5,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "semestre": 3,
+    "tipo": "conceito",
     "tags": [
-      "fisio2",
-      "esqueleto"
+      "Néfron",
+      "SGLT2",
+      "Fisiologia Renal",
+      "Transporte Máximo",
+      "Cotransporte"
     ],
+    "tempo_leitura_minutos": 10,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-02"
   },
-  "resumo_conciso": "Cotransporte Na-glicose (SGLT2) e Na-aminoácido; reabsorção obrigatória",
-  "narrativa": [],
+  "resumo_conciso": "Estudo do acoplamento energético no túbulo contorcido proximal (TCP), abordando a reabsorção ativa secundária de glicose e aminoácidos impulsionada pelo gradiente de sódio gerado pela Na+/K+ ATPase, além das bases biofísicas do transporte máximo (Tm) e suas implicações clínicas.",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "A Engenharia de Fluxo no TCP: Um Problema de Escassez e Energia"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você é responsável por um armazém que recebe milhares de pacotes valiosos misturados a resíduos a cada minuto. O seu trabalho não é apenas selecionar o que serve, mas garantir que 100% dos itens mais valiosos (como glicose e aminoácidos) retornem ao estoque central antes de saírem pela esteira de descarte. No rim humano, o Túbulo Contorcido Proximal (TCP) enfrenta esse exato desafio. Diariamente, cerca de 180 gramas de glicose e quantidades maciças de aminoácidos são filtrados nos glomérulos. Em condições normais, a quantidade eliminada na urina é exatamente zero. Como esse milagre de eficiência ocorre sem que a célula gaste ATP diretamente para cada molécula reabsorvida?"
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Se a concentração de glicose dentro da célula epitelial do TCP é frequentemente maior do que a concentração no fluido tubular, como a glicose consegue entrar na célula sem violar as leis da termodinâmica? O que está fornecendo a energia necessária para esse movimento contra o gradiente?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta está no conceito de acoplamento energético. A célula do TCP não gasta energia diretamente na membrana luminal (voltada para o fluido tubular). Em vez disso, ela utiliza uma genial estratégia de co-transporte. O sódio (Na+) está em altíssima concentração no lúmen tubular e baixíssima dentro da célula. Esse gradiente eletroquímico favorável é uma verdadeira 'queda d'água' termodinâmica. Ao se ligar ao transportador SGLT, o sódio 'desce' a favor do seu gradiente e, no processo, arrasta a glicose contra o gradiente dela. É o transporte ativo secundário."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "SGLT (Sodium-Glucose Cotransporter)",
+      "origem": "Do grego 'natrium' (sódio), 'glykys' (doce) e do latim 'combinare' (unir em acoplamento).",
+      "significado": "Cotransportador de Sódio-Glicose.",
+      "explicacao": "O termo técnico descreve a dependência mútua e estrita do transporte: a glicose só consegue atravessar a membrana se estiver mecanicamente acoplada à carona do íon sódio."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O Motor Silencioso: A Bomba de Sódio-Potássio"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense na Na+/K+ ATPase basolateral como uma represa hidrelétrica. Ela bombeia constantemente água (sódio) para fora do reservatório interno (a célula) em direção ao rio externo (o sangue), consumindo combustível (ATP). Esse esvaziamento constante mantém o nível de água interno extremamente baixo. Quando as comportas luminais (SGLT) se abrem, a força da água que entra corre com tanta intensidade que consegue girar um moinho de vento acoplado (trazendo glicose e aminoácidos junto)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Sem a Na+/K+ ATPase na membrana basolateral, o gradiente de sódio desaparecerceria rapidamente. O sódio acumularia dentro da célula, a força motriz cessaria e a reabsorção de glicose e aminoácidos pararia instantaneamente. Uma vez dentro da célula, a glicose e os aminoácidos acumulam-se em alta concentração. Para saírem da célula em direção ao interstício e depois aos capilares peritubulares, eles não precisam de mais energia: utilizam transportadores de difusão facilitada (como GLUT2 para glicose e transportadores específicos para aminoácidos) na membrana basolateral."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A reabsorção de glicose no TCP é dividida regionalmente: o SGLT2 (alta capacidade, baixa afinidade) atua no segmento inicial do TCP (S1) e reabsorve cerca de 90% da glicose filtrada. O SGLT1 (baixa capacidade, alta afinidade) atua no segmento mais distal (S3) para recuperar os 10% restantes, garantindo excreção zero."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se administrarmos um fármaco que inibe especificamente a Na+/K+ ATPase na membrana basolateral das células do TCP, o que acontecerá com a reabsorção de aminoácidos?",
+      "resposta": "A reabsorção de aminoácidos despencará drasticamente. Embora o fármaco não atue diretamente nos transportadores de aminoácidos, a inibição da bomba basolateral eleva a concentração intracelular de sódio. Sem o gradiente eletroquímico favorável do sódio (força motriz), os cotransportadores luminais de sódio-aminoácido perdem sua fonte de energia e cessam o transporte, gerando aminoacidúria generalizada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Saturação e o Limite do Sistema: O Transporte Máximo (Tm)"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O número de proteínas transportadoras SGLT na membrana luminal é finito. Sob condições normais de glicemia (cerca de 70-100 mg/dL), todos os transportadores operam com folga. No entanto, se a concentração de glicose plasmática subir excessivamente, a carga filtrada de glicose também aumentará proporcionalmente. Existe um ponto em que todos os transportadores SGLT estão ocupados (saturados). Esse limite cinético é chamado de Transporte Máximo (Tm). Para a glicose, o Tm é de aproximadamente 375 mg/min em homens e 300 mg/min em mulheres (correspondendo tipicamente a uma glicemia de corte de ~180-200 mg/dL, conhecido como limiar renal)."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Gráfico de Depuração de Glicose e Limiar Renal",
+      "descricao": "Curva comparativa mostrando a carga filtrada, a reabsorção e a excreção de glicose em função da concentração plasmática de glicose. Note o ponto de desvio ('play') onde a curva de reabsorção se achata e a excreção começa.",
+      "prompt_ia": "A clean medical chart showing the renal handling of glucose. Three lines plotted against plasma glucose concentration (x-axis) and glucose rate (y-axis): filtration (linear increase), reabsorption (linear then flattening at the Transport Maximum Tm), and excretion (zero until threshold, then rising parallel to filtration). Labels in clear English: Filtration, Reabsorption, Excretion, Threshold, Tm.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s3-fisio2-02-023-01-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Como a glicose atravessa a membrana basolateral após ser reabsorvida do lúmen tubular pelo SGLT?",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "Transportadores",
+        "Glicose",
+        "Membrana Basolateral"
+      ],
+      "resposta": "Ela atravessa a membrana basolateral por difusão facilitada, a favor de seu gradiente de concentração, utilizando transportadores de glicose do tipo GLUT (principalmente GLUT2 no segmento S1/S2 e GLUT1 no segmento S3), sem gasto energético adicional nesta etapa."
+    },
+    {
+      "card_id": "s3-fisio2-02-023-01-fc02",
+      "tipo": "por_que",
+      "pergunta": "Por que pacientes com diabetes mellitus descompensado apresentam poliúria (aumento do volume urinário)?",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Diabetes",
+        "Osmose",
+        "Fisiopatologia"
+      ],
+      "resposta": "Quando a glicemia ultrapassa o limiar renal (~180 mg/dL), o SGLT satura e a glicose não reabsorvida permanece no lúmen tubular. Essa glicose age como um soluto osmoticamente ativo, retendo água no lúmen e gerando diurese osmótica, o que resulta em poliúria e desidratação."
+    },
+    {
+      "card_id": "s3-fisio2-02-023-01-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "Qual seria o impacto da administração de um inibidor seletivo de SGLT2 (como a empagliflozina) sobre a reabsorção de aminoácidos no TCP?",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Farmacologia",
+        "SGLT2",
+        "Aminoácidos"
+      ],
+      "resposta": "Nenhum impacto direto significativo. Embora a glicose deixe de ser reabsorvida pelo SGLT2 (causando glicosúria), a reabsorção de aminoácidos depende de cotransportadores de sódio-aminoácido específicos e independentes do SGLT. O gradiente de sódio basolateral continua ativo, mantendo a reabsorção de aminoácidos normal."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-fisio2-02-023-01-caso01",
+      "titulo": "Glicosúria sem Hiperglicemia: O Enigma da Urina Doce",
+      "apresentacao": "Paciente do sexo feminino, 24 anos, assintomática, realiza exames de rotina admissionais. O EAS (exame de urina tipo 1) revela presença marcante de glicose (++++/4+), porém a glicemia de jejum é de 84 mg/dL e a hemoglobina glicada (HbA1c) é de 5.1%. Não há história de diabetes na família. A função renal (creatinina e ureia) e os níveis séricos de eletrólitos e aminoácidos estão perfeitamente normais. A paciente não utiliza nenhuma medicação.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação inativadora benigna no gene SLC5A2, que codifica a proteína cotransportadora de sódio-glicose SGLT2 na membrana apical das células tubulares proximais."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Membrana luminal do segmento inicial (S1 e S2) do Túbulo Contorcido Proximal (TCP), onde o SGLT2 deveria realizar 90% da reabsorção de glicose."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Redução acentuada da capacidade de transporte e do Transporte Máximo (Tm) de glicose renal, reduzindo drasticamente o limiar renal de reabsorção de glicose para níveis abaixo da glicemia de jejum fisiológica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Glicosúria isolada persistente (eliminação de glicose na urina) na ausência de hiperglicemia sistêmica (glicemia normal)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Uma condição benigna conhecida como Glicosúria Renal Familiar, que não requer tratamento ativo nem causa desidratação grave devido à compensação parcial pelo SGLT1 distal, mas que deve ser diferenciada do diabetes mellitus para evitar diagnósticos e tratamentos errôneos."
+        }
+      ],
+      "conexao_com_bloco": "Este caso clínico demonstra de forma isolada e pura a função do transportador SGLT2. A inativação genética deste transportador específico impede a reabsorção de glicose no TCP, confirmando que a glicosúria pode ocorrer por falha no sistema de transporte tubular proximal, mesmo quando a glicemia e a taxa de filtração glomerular estão normais.",
+      "disciplinas_relacionadas": [
+        "Fisiologia Renal",
+        "Nefrologia",
+        "Genética Médica"
+      ],
+      "diagnostico_revelado": "Glicosúria Renal Familiar (benigna)",
+      "tratamento_resumido": "Nenhum tratamento é necessário. Apenas orientação ao paciente sobre a natureza benigna da condição para evitar tratamentos desnecessários para diabetes."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "correlacao-clinica"
-  ]
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-fisio2-02-023",
+        "titulo": "Túbulo Contorcido Proximal — O Cavalo de Batalha",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "Apresenta a ultraestrutura do TCP, a especialização de sua borda em escova e a alta densidade de mitocôndrias, essenciais para compreender o suporte estrutural dos transportadores SGLT e das bombas de Na+/K+."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Inibidores de SGLT2 no tratamento do Diabetes Mellitus Tipo 2 e Insuficiência Cardíaca",
+        "disciplina": "Farmacologia Clínica",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "Os inibidores de SGLT2 (gliflozinas) bloqueiam voluntariamente a reabsorção de glicose no TCP para induzir glicosúria terapêutica, reduzindo a glicemia e a volemia, o que traz benefícios cardiovasculares e renais.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "ANALOGIA",
+        "topico": "Absorção de Glicose e Aminoácidos no Enterócito (Intestino Delgado)",
+        "explicacao": "O intestino delgado utiliza o mesmíssimo mecanismo de transporte ativo secundário acoplado ao sódio (via SGLT1 luminal e bomba de Na+/K+ basolateral) para absorver nutrientes da dieta, mostrando a conservação evolutiva dos mechanisms de transporte epitelial."
+      }
+    ]
+  }
 }

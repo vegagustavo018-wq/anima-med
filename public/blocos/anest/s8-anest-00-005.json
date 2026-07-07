@@ -5,34 +5,371 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "O Fluxo Perioperatório — Pré, Intra e Pós-Operatório",
+    "subtitulo": "Por que a segurança anestésica se organiza em três fases, e não em uma linha única do início ao fim?",
     "semestre": 8,
     "disciplina": "Anestesiologia",
+    "sistema_corporal": "sistema nervoso",
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.1",
     "tags": [
       "anest",
-      "esqueleto"
+      "perioperatorio",
+      "pre-anestesico",
+      "intraoperatorio",
+      "pos-operatorio",
+      "handoff",
+      "seguranca-do-paciente",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "As três fases do cuidado anestésico e o que cada uma resolve",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior mostrou o ciclo de cinco etapas de uma anestesia geral — da avaliação até a emergência. Mas esse ciclo, sozinho, descreve só o que acontece dentro da sala de cirurgia. O risco anestésico real não está contido ali: ele começa antes, quando ninguém ainda tocou no paciente, e continua depois, quando o anestesiologista já não está mais junto ao leito. A medicina perioperatória resolveu isso organizando o cuidado em três fases distintas — pré-operatório, intraoperatório e pós-operatório — cada uma com pergunta própria, equipe própria e ponto cego próprio. O pré-operatório pergunta \"este paciente aguenta o que vou fazer?\" e existe para transformar risco desconhecido em risco calculado. O intraoperatório pergunta \"como sustento as funções vitais enquanto elas estão sob supressão farmacológica?\" e é onde o ciclo de cinco etapas do bloco anterior efetivamente acontece. O pós-operatório pergunta \"os sistemas que eu substitui já retomaram sozinhos, com segurança, o próprio comando?\" — e é a fase mais historicamente negligenciada, porque o procedimento \"já acabou\" na percepção de todos, menos na fisiologia do paciente. As três fases não são apenas cronologia: são pontos de transferência de responsabilidade — handoffs — e é precisamente nesses pontos de costura, quando a informação muda de mão, que a literatura de segurança do paciente aponta uma concentração relevante de erros evitáveis [⚠️ generalização didática: causas técnicas intraoperatórias, como via aérea difícil não reconhecida, também respondem por parte significativa dos eventos adversos — a causalidade é multifatorial].",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, você viu o ciclo de cinco etapas de uma anestesia geral: avaliação, indução, controle da via aérea, manutenção, emergência. É uma sequência elegante e correta — mas ela descreve apenas o que se passa dentro dos limites físicos da sala de cirurgia, do momento em que o paciente é induzido até o momento em que acorda. Se você perguntasse a um anestesiologista experiente onde exatamente um paciente corre mais risco de morrer por uma falha evitável, ele provavelmente não apontaria para o meio da cirurgia — apontaria para as bordas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que o risco anestésico não está contido dentro da sala de cirurgia?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere duas perguntas que o ciclo de cinco etapas não responde sozinho. Primeira: antes de qualquer fármaco ser administrado, alguém precisa decidir se aquele paciente específico — com aquela função renal, aquela via aérea, aquela medicação em uso crônico — tolera a supressão que está prestes a sofrer. Essa decisão não é instantânea; leva dias ou semanas de investigação, e se for malfeita, toda a elegância técnica da indução e da manutenção se torna irrelevante, porque o paciente já entrou na sala carregando um risco que ninguém calculou."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Segunda pergunta: quando a última etapa do ciclo anterior — a emergência — termina e o paciente reabre os olhos, ele já recuperou de fato tudo que foi suprimido? A resposta é quase sempre não, pelo menos não de imediato. Reflexos protetores da via aérea, drive respiratório central, força muscular residual de bloqueadores neuromusculares, percepção de dor sem a cobertura analgésica intraoperatória — tudo isso retorna em velocidades diferentes, de forma escalonada, e o paciente pode parecer acordado enquanto ainda tem um ou mais desses sistemas incompletamente restaurados. Se ninguém observar essa janela com o mesmo rigor da indução, o risco simplesmente migrou de lugar — não desapareceu."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe este ponto antes de seguir: o ciclo de cinco etapas do bloco anterior descreve o *como* de uma anestesia geral. Este bloco descreve o *quando* e o *quem* — porque o mesmo risco fisiológico de suprimir e devolver funções vitais se estende para muito antes e muito depois da sala de cirurgia, e cada trecho desse percurso mais longo exige gente, protocolo e atenção dedicados."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a medicina perioperatória resolveu esse problema: três fases, três perguntas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução não foi tentar comprimir toda a vigilância em uma única fase alongada — seria impraticável logisticamente e ineficiente clinicamente, porque as ameaças em cada momento são de natureza diferente. A solução foi dividir o cuidado anestésico total em três fases sucessivas, cada uma organizada ao redor de uma pergunta clínica distinta, com ferramentas, escalas e responsáveis próprios: o pré-operatório, o intraoperatório e o pós-operatório."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa tripartição não nasceu de uma convenção arbitrária de calendário cirúrgico. Nasceu do reconhecimento de que a pergunta relevante muda de natureza ao longo do tempo. Antes da cirurgia, a pergunta é preditiva: quão bem este organismo específico vai tolerar a supressão planejada? Durante a cirurgia, a pergunta é reativa e titulável em tempo real: os sinais vitais estão dentro da faixa esperada agora, neste segundo, e o que fazer se não estiverem? Depois da cirurgia, a pergunta é regenerativa: os sistemas suprimidos já retomaram controle autônomo suficiente para que a vigilância intensiva possa ser reduzida com segurança? Três perguntas de natureza cognitiva diferente exigem três fases de cuidado diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que cada fase é feita — instrumentos, escalas e equipe própria"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O pré-operatório é feito, sobretudo, de informação estruturada: história clínica dirigida a comorbidades relevantes para anestesia (cardiopatia, doença pulmonar, apneia obstrutiva do sono, refluxo, uso de anticoagulantes) e exame físico focado em preditores de via aérea difícil, além de exames complementares direcionados por risco, não por rotina indiscriminada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O instrumento central que condensa tudo isso é a classificação ASA (American Society of Anesthesiologists), que estratifica o paciente conforme a gravidade de doença sistêmica associada — na prática de rotina, sobretudo nas categorias I a V, já que a categoria VI se refere a doador com morte encefálica. Essa classificação é o produto final desta fase: transforma uma entrevista clínica em um parâmetro que orienta a escolha de técnica anestésica e o nível de monitorização necessário, e será aprofundada, com os testes específicos de via aérea, no módulo dedicado a avaliação pré-anestésica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O intraoperatório é feito da tríade farmacológica que você já conhece do bloco anterior — hipnose, analgesia, relaxamento — mas também de todo o aparato físico de suporte que substitui o que essa tríade suprime: ventilador mecânico, bombas de infusão e monitor multiparamétrico com oximetria de pulso, capnografia e pressão arterial, entre outros parâmetros. É a fase mais intensamente instrumentada das três, porque é onde a supressão fisiológica está no seu ponto máximo e mais sistemas precisam de substituto artificial simultâneo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O pós-operatório, historicamente a fase mais pobre em recursos dedicados, hoje é organizado ao redor da sala de recuperação pós-anestésica (SRPA) — um espaço com monitorização contínua e enfermagem treinada especificamente em reconhecer os sinais precoces de depressão respiratória, obstrução de via aérea, hipotensão e dor mal controlada. A ferramenta central desta fase é uma escala de alta segura, como o índice de Aldrete, que pontua critérios como consciência, respiração e estabilidade hemodinâmica para decidir, de forma objetiva e não por impressão subjetiva, quando o paciente pode deixar a vigilância intensiva da SRPA — os domínios completos dessa escala serão detalhados no módulo dedicado à SRPA."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "As três fases não têm a mesma densidade de recursos historicamente. Pré e intraoperatório sempre tiveram protocolo, escala e responsável dedicado. O pós-operatório, por décadas, foi tratado como apêndice — e é exatamente aí, na hipoventilação silenciosa da SRPA ou na enfermaria mal monitorada, que boa parte dos eventos adversos evitáveis pós-anestésicos se concentra."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Cada fase, portanto, tem instrumento e responsável próprios: o pré-operatório usa a classificação de risco, o intraoperatório usa a monitorização contínua em tempo real, o pós-operatório usa a escala de alta segura. Nenhuma dessas ferramentas substitui a outra — é essa especialização que torna possível o próximo passo: seguir o paciente em sequência pelas três fases e ver onde exatamente o risco se concentra."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em sequência — e onde o risco se concentra"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O fluxo perioperatório e seus pontos de transferência",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Consulta pré-anestésica",
+          "explicacao": "Dias a semanas antes do procedimento — ou, em cirurgias de urgência, minutos antes —, o anestesiologista (ou equipe de avaliação pré-anestésica) reconstrói o risco do paciente: comorbidades, via aérea prevista, medicações em uso, jejum. O produto desta etapa é um plano anestésico e uma classificação de risco, não apenas uma lista de exames."
+        },
+        {
+          "numero": 2,
+          "titulo": "Handoff 1 — admissão na sala de cirurgia",
+          "explicacao": "O paciente chega à sala de operação e a informação levantada no pré-operatório precisa atravessar, intacta, para quem vai efetivamente conduzir a anestesia — que pode ou não ser a mesma pessoa que fez a avaliação inicial. É o primeiro ponto de costura: se um dado crítico (uma via aérea difícil prevista, uma alergia) não atravessar essa transferência, o risco calculado no pré-operatório simplesmente não chega a quem precisa agir sobre ele."
+        },
+        {
+          "numero": 3,
+          "titulo": "Intraoperatório — o ciclo de cinco etapas em ação",
+          "explicacao": "Aqui se desenrola exatamente o ciclo descrito no bloco anterior: indução, controle de via aérea, manutenção titulada, emergência. A vigilância é contínua e os ajustes são feitos em tempo real contra a monitorização multiparamétrica."
+        },
+        {
+          "numero": 4,
+          "titulo": "Handoff 2 — transferência para a sala de recuperação",
+          "explicacao": "Ao final da cirurgia, com o paciente ainda parcialmente sob efeito residual da tríade farmacológica, a vigilância muda de mãos: do anestesiologista que conduziu o caso para a equipe de enfermagem da SRPA. É um dos momentos de maior risco do fluxo, porque informação verbal incompleta sobre intercorrências e doses residuais pode não acompanhar essa troca de responsáveis."
+        },
+        {
+          "numero": 5,
+          "titulo": "Pós-operatório imediato na SRPA",
+          "explicacao": "O paciente é monitorado até que os sistemas suprimidos demonstrem controle autônomo suficiente — respiração espontânea eficaz, reflexos protetores de via aérea presentes, estabilidade hemodinâmica, dor sob controle razoável. A escala de alta (como o Aldrete) formaliza essa decisão em vez de deixá-la à impressão subjetiva de quem está de plantão."
+        },
+        {
+          "numero": 6,
+          "titulo": "Handoff 3 — alta da SRPA para enfermaria, ou para casa",
+          "explicacao": "Uma terceira transferência de responsabilidade, geralmente para uma equipe com razão enfermeiro-paciente muito menor e sem monitorização contínua. É aqui que complicações mais tardias — depressão respiratória por acúmulo de opioide, sangramento oculto, náusea intratável — podem passar despercebidas por mais tempo antes de serem notadas, precisamente porque a vigilância ficou mais esparsa."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Repare que o risco perioperatório não decai de forma linear e constante ao longo do tempo — ele tem picos exatamente nos três momentos de handoff, porque é ali que a informação sobre o estado real do paciente precisa sobreviver a uma mudança de responsável sem se perder ou se distorcer. A literatura de segurança do paciente em anestesiologia aponta as transferências de cuidado como um dos pontos de concentração de eventos adversos evitáveis [⚠️ consenso didático, não fato quantitativo fechado: falhas técnicas durante a própria condução intraoperatória também contribuem de forma relevante] — não porque a fase em si seja mais perigosa fisiologicamente, mas porque é onde o conhecimento acumulado sobre aquele paciente específico corre o risco de não acompanhar a transferência."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa organização em fases se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O pré-operatório se articula diretamente com a farmacologia clínica e a semiologia que você já domina: é onde a meia-vida de um anticoagulante determina se a cirurgia pode ser feita agora ou precisa esperar, onde a ausculta pulmonar de um paciente DPOC muda a estratégia ventilatória planejada, onde a história de apneia obstrutiva do sono redefine a escolha entre anestesia geral e regional. O intraoperatório se articula com tudo que os módulos seguintes desta disciplina vão detalhar — farmacologia dos anestésicos, manejo de via aérea, monitorização — porque é ali, dentro da fase, que esses mecanismos se expressam clinicamente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O pós-operatório, por sua vez, se articula com a medicina da dor (a analgesia intraoperatória não cobre sozinha as primeiras 24 a 48 horas), com a fisiologia respiratória (hipoventilação por opioide residual é uma das causas mais comuns de dessaturação na SRPA) e, adiante no curso, com a medicina hospitalar geral — porque boa parte das complicações pós-operatórias que motivam reinternação ou prolongamento de internação nasce exatamente nas horas seguintes à cirurgia, quando a vigilância anestésica formal já terminou mas o corpo do paciente ainda está retomando o próprio comando."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que \"perioperatório\" e não apenas \"antes e depois\"?"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "perioperatório",
+      "origem": "do grego perí (ao redor de, em torno de) + operatório, do latim operari (trabalhar, operar)",
+      "significado": "literalmente, 'em torno da operação' — tudo que envolve o ato cirúrgico, antes e depois dele, não apenas durante",
+      "explicacao": "O prefixo perí- é o mesmo de 'perímetro' (medida ao redor) e 'pericárdio' (em torno do coração). 'Perioperatório' foi construído para nomear precisamente a ideia deste bloco: que o cuidado anestésico-cirúrgico não é um evento pontual, mas um período contínuo que envolve — circunda — o momento cirúrgico central. Os termos 'pré-operatório', 'intraoperatório' e 'pós-operatório' usam os prefixos latinos correspondentes (prae- antes, intra- dentro, post- depois) para fatiar esse período contínuo em três janelas com pergunta clínica própria, exatamente como descrito acima."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a ideia"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "✈️",
+      "conteudo": "Retome a analogia do avião do bloco anterior — o corpo como aeronave em piloto automático deliberadamente desligado. Se o intraoperatório é o voo propriamente dito, com o segundo piloto assumindo manualmente os controles, então o **pré-operatório** corresponde à checagem pré-voo: verificar o histórico de manutenção daquela aeronave específica, seu peso, suas condições de operação, antes de decidir se ela está apta a decolar naquele dia e com aquela carga. O **handoff de admissão na sala** é a transferência da ficha técnica da aeronave da equipe de solo para a tripulação de voo — se um dado crítico dessa ficha não chegar à cabine, a tripulação voa sem saber de uma limitação real do avião. O **pós-operatório na SRPA** corresponde ao pouso e à taxiagem: o piloto automático está sendo religado gradualmente, mas ainda não está totalmente confiável sozinho — assim como os reflexos protetores de via aérea e o drive respiratório do paciente retornam de forma escalonada, não instantânea —, e por isso a torre de controle (a equipe da SRPA) continua acompanhando de perto até confirmar que a aeronave está estável em solo. E o **handoff de alta da SRPA** é a entrega da aeronave ao portão de desembarque — o momento em que a vigilância intensiva se encerra, e por isso o mais arriscado de todos se a checagem final for apressada. A analogia tem um limite proposital: numa aeronave, a checagem pré-voo e o pouso são eventos padronizados e repetitivos; no paciente, cada 'aeronave' é biologicamente única, e é exatamente essa unicidade que torna a avaliação pré-operatória individualizada, e não um checklist genérico, o cerne da segurança."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se toda a equipe perioperatória — avaliação pré-anestésica, condução intraoperatória e recuperação pós-anestésica — fosse sempre exatamente a mesma pessoa, do início ao fim, os handoffs deixariam de ser um ponto de risco?",
+      "resposta": "Reduziriam bastante o risco de perda de informação por comunicação verbal malfeita, mas não eliminariam o risco por completo. Mesmo um único profissional acompanhando o paciente do pré ao pós-operatório enfrenta os mesmos três desafios cognitivos e fisiológicos em sequência: precisa ter avaliado corretamente o risco de partida, precisa manter vigilância intensa e ininterrupta durante horas de cirurgia sem lapsos de atenção, e precisa continuar observando ativamente na fase de recuperação, quando a tentação natural — inclusive por fadiga do próprio profissional — é considerar o trabalho 'encerrado' assim que o paciente sai da sala. Além disso, na prática, a divisão de trabalho entre fases também existe por uma razão estrutural, ligada a essa mesma fadiga: turnos têm limite de horas seguras, e um único anestesiologista não pode fisicamente estar simultaneamente avaliando o próximo paciente no pré-operatório e vigiando um paciente na SRPA. É por isso que a segurança perioperatória não pode depender de uma pessoa heroica cobrindo as três fases sozinha — ela depende de protocolos de transferência estruturados (comunicação padronizada, checklists de handoff, registro escrito além do verbal) que sobrevivam à troca inevitável de responsáveis entre fases."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "As três fases do fluxo perioperatório e os pontos de transferência de cuidado",
+      "descricao": "Linha do tempo horizontal dividida em três segmentos de larguras distintas representando pré-operatório, intraoperatório e pós-operatório, cada segmento com um ícone simbólico central (uma lupa/prancheta para avaliação no primeiro segmento, uma silhueta de sala cirúrgica estilizada com monitor no segundo, uma cama com onda de monitor decrescendo em intensidade no terceiro). Entre os segmentos, três marcadores verticais destacados em cor de alerta representando os pontos de handoff, cada um com um ícone de duas mãos trocando um objeto abstrato. Uma curva ondulada acima da linha do tempo sobe suavemente nos três marcadores de handoff, indicando concentração de risco nesses pontos específicos, e permanece mais baixa dentro de cada fase.",
+      "prompt_ia": "Diagrama científico vetorial minimalista, fundo transparente adaptativo a tema claro e escuro, estilo infográfico médico contemporâneo, absolutamente sem texto, letras, números ou legendas embutidas na imagem. Composição de linha do tempo horizontal dividida em três segmentos de larguras visivelmente diferentes. Primeiro segmento com ícone estilizado de lupa sobre uma prancheta abstrata. Segundo segmento, mais largo, com ícone estilizado de uma sala com formato de monitor de sinais vitais exibindo uma onda senoidal simples. Terceiro segmento com ícone estilizado de uma cama hospitalar minimalista com uma onda decrescente acima. Entre os três segmentos, três marcadores verticais em tom âmbar de destaque, cada um com um ícone abstrato de duas mãos estilizadas passando um objeto oval entre si, simbolizando transferência. Acima de toda a linha do tempo, uma curva suave e fina que sobe discretamente nos três pontos de marcador âmbar e permanece baixa no restante do percurso, sugerindo variação de risco ao longo do tempo. Paleta sóbria de azul-petróleo, verde-água e cinza-grafite, com âmbar reservado exclusivamente aos marcadores de transferência. Traço vetorial limpo, sem texturas fotorrealistas, sem qualquer rotulagem textual dentro da própria imagem. Sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-anest-00-000",
+        "titulo": "Anestesiologia — A Medicina de Suspender e Devolver a Consciência com Segurança",
+        "disciplina": "Anestesiologia",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco pressupõe o ciclo de cinco etapas de uma anestesia geral (avaliação, indução, via aérea, manutenção, emergência) já apresentado no bloco pai — aqui essas etapas são reorganizadas dentro de uma estrutura temporal maior de três fases com equipes e responsabilidades próprias."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-01-000",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Avaliação pré-anestésica e classificação de risco (ASA)",
+        "mecanismo_conexao": "A fase pré-operatória descrita aqui em panorama é desenvolvida em profundidade no módulo seguinte, incluindo a classificação ASA completa, escalas de via aérea difícil e estratificação de risco cardiovascular perioperatório.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Sala de recuperação pós-anestésica e escalas de alta (Aldrete)",
+        "mecanismo_conexao": "O pós-operatório imediato citado aqui de forma panorâmica ganha módulo próprio, detalhando os critérios objetivos de alta da SRPA e o reconhecimento precoce de depressão respiratória, obstrução de via aérea e hipotensão nesta fase. [nota de integração: bloco-filho ainda não criado na árvore — vincular bloco_id_destino assim que produzido]",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "medicina-da-dor",
+        "semestre_futuro": 8,
+        "topico": "Analgesia pós-operatória multimodal",
+        "mecanismo_conexao": "A lacuna analgésica que se abre quando a cobertura intraoperatória termina, citada aqui como articulação do pós-operatório, é desenvolvida como módulo próprio de controle da dor aguda pós-cirúrgica. [nota de integração: bloco-filho ainda não criado na árvore]",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "seguranca-do-paciente",
+        "semestre_futuro": 8,
+        "topico": "Protocolos de handoff estruturado (SBAR, checklists de transferência)",
+        "mecanismo_conexao": "Os três pontos de handoff identificados aqui como concentradores de risco são exatamente o alvo de intervenções formais de segurança do paciente, como comunicação estruturada e checklists de transferência, tema que a disciplina de segurança do paciente aprofunda. [nota de integração: bloco-filho ainda não criado na árvore]",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s6-cirurgia-00-000",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "A cirurgia enxerga essas mesmas três fases do seu próprio ângulo — avaliação cirúrgica pré-operatória, técnica operatória, cuidados pós-operatórios da ferida — e os dois olhares (cirúrgico e anestésico) precisam se sincronizar exatamente nos mesmos pontos de handoff descritos aqui."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-anest-00-005-fc01",
+      "pergunta": "Por que a segurança anestésica não pode se apoiar apenas na qualidade da condução intraoperatória, mesmo que esta seja tecnicamente perfeita?",
+      "resposta": "Porque o risco de suprimir e devolver funções vitais não está confinado ao tempo em que o paciente está na sala de cirurgia. Um plano intraoperatório impecável falha se construído sobre uma avaliação pré-operatória que não identificou uma via aérea difícil ou uma interação medicamentosa relevante — o risco já estava presente antes de qualquer fármaco ser administrado. E mesmo uma condução intraoperatória perfeita pode resultar em desfecho ruim se a vigilância no pós-operatório imediato não detectar a reversão incompleta dos efeitos residuais da tríade farmacológica. A qualidade de uma única fase não compensa falhas nas outras duas — as três são elos de uma mesma corrente de segurança.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "perioperatorio",
+        "seguranca-do-paciente",
+        "fases"
+      ]
+    },
+    {
+      "card_id": "s8-anest-00-005-fc02",
+      "pergunta": "Se toda a informação pré-operatória fosse perfeitamente coletada, mas se perdesse completamente na transferência entre a avaliação pré-anestésica e a equipe que efetivamente conduz a anestesia na sala, o que aconteceria com o valor prático dessa avaliação?",
+      "resposta": "O valor prático cairia a praticamente zero, mesmo que o conteúdo da avaliação fosse clinicamente excelente. Uma classificação ASA precisa, uma via aérea difícil corretamente prevista ou uma alergia documentada só protegem o paciente se essa informação efetivamente atravessar o primeiro handoff e chegar a quem vai induzir a anestesia. Isso demonstra que a qualidade de uma fase isolada é necessária, mas não suficiente — a integridade da transferência de informação entre fases é uma condição de segurança tão crítica quanto o conteúdo clínico em si.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "handoff",
+        "pre-operatorio",
+        "seguranca-do-paciente"
+      ]
+    },
+    {
+      "card_id": "s8-anest-00-005-fc03",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Como o procedimento cirúrgico já terminou e o paciente está na sala de recuperação, o risco anestésico relevante já passou.'",
+      "resposta": "Falso. A armadilha está em confundir o fim do ato cirúrgico com o fim do risco fisiológico da anestesia. Ao chegar na SRPA, o paciente frequentemente ainda carrega efeito residual de opioides, bloqueadores neuromusculares e agentes hipnóticos — sistemas que foram suprimidos durante a cirurgia e que ainda não retomaram controle autônomo pleno. A hipoventilação por opioide residual, por exemplo, é uma das causas mais comuns de dessaturação justamente nesta fase, e o bloqueio neuromuscular residual pode comprometer reflexos protetores de via aérea mesmo com o paciente aparentemente 'acordado'. É exatamente por isso que a sala de recuperação existe como fase de vigilância dedicada e formal, com escala objetiva de alta (como o Aldrete) — e não como simples sala de espera.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "pos-operatorio",
+        "srpa",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s8-anest-00-005-fc04",
+      "pergunta": "Um paciente de 68 anos, ASA III por DPOC moderada, é operado sem intercorrências intraoperatórias registradas. Na transferência para a SRPA, a equipe de enfermagem recebe apenas a informação verbal de que 'a cirurgia correu bem', sem detalhes sobre doses de opioide usadas ou episódios de dessaturação transitória durante a manutenção. Duas horas depois, o paciente é encontrado sonolento e com saturação em queda. O que esse cenário ilustra sobre a estrutura de três fases do cuidado perioperatório?",
+      "resposta": "Ilustra a concentração de risco no segundo ponto de handoff — a transferência da sala de cirurgia para a SRPA. A informação clinicamente relevante (comorbidade respiratória de base somada a doses de opioide administradas e episódios intraoperatórios de dessaturação) existia, mas não atravessou completamente a transferência verbal informal para a equipe que assumiria a vigilância seguinte. Isso combinou dois fatores de risco que, isoladamente documentados, teriam levado a um monitoramento mais atento na SRPA: base pulmonar limitada (DPOC) mais efeito residual opioide. O caso reforça por que handoffs estruturados — não apenas relatos verbais genéricos — são parte da segurança perioperatória tanto quanto a técnica anestésica em si.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "handoff",
+        "srpa",
+        "dpoc",
+        "opioide-residual"
+      ]
+    },
+    {
+      "card_id": "s8-anest-00-005-fc05",
+      "pergunta": "Compare as perguntas clínicas centrais que organizam o pré-operatório, o intraoperatório e o pós-operatório, e explique por que elas exigem ferramentas de avaliação diferentes em cada fase.",
+      "resposta": "O pré-operatório responde a uma pergunta preditiva: quão bem este paciente específico vai tolerar a supressão farmacológica planejada? Sua ferramenta central é a classificação de risco (como ASA), construída a partir de história, exame físico e exames direcionados, coletados com tempo hábil antes do procedimento. O intraoperatório responde a uma pergunta reativa e contínua: os sinais vitais estão dentro do esperado agora, e o que fazer se não estiverem? Sua ferramenta central é a monitorização multiparamétrica em tempo real, que exige resposta imediata, não uma pontuação fixa. O pós-operatório responde a uma pergunta regenerativa: os sistemas suprimidos já recuperaram controle autônomo suficiente para reduzir a vigilância com segurança? Sua ferramenta central são escalas de alta (como Aldrete), que convertem observação clínica em critério objetivo de transição de cuidado. As três perguntas têm naturezas cognitivas distintas — preditiva, reativa, regenerativa — e por isso não podem compartilhar a mesma ferramenta de avaliação.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "pre-operatorio",
+        "intraoperatorio",
+        "pos-operatorio",
+        "comparacao"
+      ]
+    },
+    {
+      "card_id": "s8-anest-00-005-fc06",
+      "pergunta": "A palavra 'perioperatório' usa o prefixo grego peri- (ao redor de). Por que esse prefixo específico, e não 'antes e depois da operação', capta melhor a ideia central deste bloco?",
+      "resposta": "Porque 'antes e depois' sugere dois eventos separados e descontínuos, enquanto peri- (o mesmo prefixo de 'perímetro' e 'pericárdio') descreve um envoltório contínuo em torno de um centro — neste caso, o ato cirúrgico. A escolha etimológica comunica que o cuidado anestésico não é um evento pontual cercado por dois intervalos irrelevantes, mas um período único e contínuo de responsabilidade clínica que apenas se organiza, internamente, em três janelas com pergunta própria (pré-, intra-, pós-, usando os prefixos latinos correspondentes). O nome protege contra o erro prático de tratar o pré-operatório e o pós-operatório como apêndices dispensáveis do 'verdadeiro' cuidado, que seria só o intraoperatório.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "etimologia",
+        "perioperatorio"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-anest-00-005-caso01",
+      "titulo": "Sonolência inesperada duas horas após uma cirurgia sem intercorrências",
+      "apresentacao": "Homem de 68 anos, ASA III por DPOC moderada e hipertensão controlada, é submetido a herniorrafia inguinal eletiva sob anestesia geral balanceada. A cirurgia dura 70 minutos, sem intercorrências registradas em prontuário. Ao final, o paciente é extubado e transferido à SRPA com a informação verbal de que 'tudo correu bem'. Após 30 minutos na SRPA ele recebe alta para a enfermaria com escala de Aldrete satisfatória. Duas horas depois, a enfermagem da enfermaria o encontra sonolento, com frequência respiratória de 8 incursões por minuto e saturação de oxigênio em queda progressiva, sem monitorização contínua nesse setor.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Doses cumulativas de opioide administradas durante a manutenção intraoperatória, cujo efeito residual se acumula de forma mais lenta e imprevisível em pacientes com reserva pulmonar já reduzida por DPOC — informação que não foi destacada nem na transferência para a SRPA nem na alta para a enfermaria."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O centro respiratório bulbar, cuja sensibilidade ao CO2 está farmacologicamente reduzida pelo efeito residual do opioide, somada a uma reserva ventilatória de base já limitada pela DPOC subjacente."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Redução do drive respiratório central produz hipoventilação progressiva; a queda de frequência respiratória para 8 incursões por minuto é insuficiente para eliminar CO2 e manter oxigenação adequada, especialmente num pulmão com menor reserva funcional basal."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sonolência excessiva (efeito somado de hipercapnia e opioide residual), bradipneia e dessaturação progressiva — sinais que, na enfermaria sem monitorização contínua, demoram mais a ser detectados do que teriam demorado na SRPA."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem intervenção, o quadro evolui para depressão respiratória progressiva e risco de parada respiratória. Reconhecido a tempo, o tratamento é reversão do efeito opioide (naloxona titulada em doses fracionadas, para evitar reversão abrupta da analgesia com risco de dor severa, hipertensão e edema pulmonar), suporte ventilatório e retorno à vigilância intensiva — mas o episódio expõe que a alta da SRPA foi tecnicamente correta pela escala usada, e ainda assim insuficiente diante do perfil de risco específico deste paciente."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente a tese central deste bloco: o risco perioperatório não é uniforme ao longo do tempo, mas se concentra nos pontos de transferência de cuidado. A informação sobre dose cumulativa de opioide e sobre a DPOC de base existia, mas não foi enfatizada nos handoffs sucessivos (sala cirúrgica para SRPA, SRPA para enfermaria), e a redução progressiva de vigilância entre as fases — cada vez com razão profissional-paciente menor — permitiu que um sinal de alerta clinicamente detectável demorasse a ser percebido.",
+      "disciplinas_relacionadas": [
+        "Anestesiologia",
+        "fisiologia-respiratoria",
+        "seguranca-do-paciente",
+        "medicina-da-dor"
+      ],
+      "diagnostico_revelado": "Depressão respiratória por efeito opioide residual em paciente com reserva pulmonar limitada (DPOC), não identificada a tempo por falha de ênfase nos handoffs entre fases perioperatórias.",
+      "tratamento_resumido": "Suporte ventilatório imediato (oxigênio suplementar, estímulo, se necessário ventilação assistida), reversão titulada do efeito opioide com naloxona em doses fracionadas para evitar reversão abrupta da analgesia, retorno a monitorização contínua até estabilização, e revisão do protocolo de handoff para destacar explicitamente comorbidade respiratória e dose cumulativa de opioide em transferências futuras."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-anest-00-005-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
@@ -40,13 +377,32 @@
   "estado_ciclo_vida": "rascunho",
   "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "workflow-anima-s8",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "agente-integrador-s8",
+    "data_revisao": "2026-07-05",
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Miller RD, Gropper MA. Miller's Anesthesia. 9th ed. Elsevier; 2020. Chapter 12 — Preoperative Evaluation; Chapter 100 — Postanesthesia Recovery.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Butterworth JF, Mackey DC, Wasnick JD. Morgan & Mikhail's Clinical Anesthesiology. 6th ed. McGraw-Hill; 2018. Chapter 12 — Preoperative Evaluation and Medication; Chapter 56 — Postanesthesia Care Unit.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Barash PG, Cullen BF, Stoelting RK, et al. Clinical Anesthesia. 8th ed. Wolters Kluwer; 2017. Chapter 13 — Preoperative Patient Assessment and Management; Chapter 56 — Postanesthesia Recovery.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
   "_lentes": [
     "princípio",
     "manejo/segurança"

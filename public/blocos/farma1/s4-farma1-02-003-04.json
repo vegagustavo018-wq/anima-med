@@ -5,50 +5,339 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Antagonismo Farmacológico, Fisiológico e Químico",
+    "subtitulo": "Antagonizar um efeito sempre significa competir pelo mesmo receptor?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
     "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "antagonismo",
+      "antagonismo-fisiologico",
+      "antagonismo-quimico",
+      "receptor",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Mesmo receptor x vias opostas x neutralização direta; exemplos clínicos",
-  "narrativa": [],
+  "resumo_conciso": "Até aqui, 'antagonizar' um fármaco significou uma coisa muito específica: ocupar o mesmo receptor que ele usaria, sem ativá-lo — o antagonismo farmacológico visto no bloco irmão sobre competição competitiva e não-competitiva. Mas essa não é a única forma de anular um efeito biológico. Duas moléculas podem produzir efeitos opostos atuando em receptores completamente diferentes, desde que essas vias convirjam no mesmo sistema fisiológico — é o antagonismo fisiológico, como a adrenalina revertendo o colapso circulatório da anafilaxia sem tocar em nenhum receptor de histamina. E duas moléculas podem neutralizar uma à outra por reação química direta, sem receptor nenhum envolvido — é o antagonismo químico, como a protamina neutralizando a heparina. As três formas — farmacológica, fisiológica e química — resolvem o mesmo problema geral (anular um efeito indesejado) por caminhos estruturalmente distintos, e reconhecer qual delas está em jogo muda completamente a lógica terapêutica: dose necessária, velocidade de ação, e se existe ou não competição pelo mesmo alvo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior mostrou como um fármaco pode ocupar um receptor sem ativá-lo, bloqueando ali a ação de outra molécula — o antagonismo farmacológico, competitivo ou não-competitivo. É tentador generalizar essa ideia e concluir que todo antagonismo funciona assim: duas moléculas disputando o mesmo receptor, uma vencendo o espaço da outra."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Só que isso não é verdade. Existem situações clínicas em que um efeito é revertido por um fármaco que nem chega perto do receptor original — e outras em que o efeito é anulado antes mesmo de haver qualquer receptor envolvido. Se o único modelo mental disponível for 'competição pelo mesmo sítio', essas situações ficam sem explicação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: nem todo antagonismo é competição pelo mesmo alvo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere um paciente em choque anafilático: histamina liberada em massa está dilatando vasos e derrubando a pressão arterial pelo corpo todo. A adrenalina reverte esse quadro em minutos. Mas a adrenalina não se liga ao receptor de histamina — ela ativa receptores adrenérgicos, numa via completamente diferente. Como ela consegue anular um efeito que não está tocando na origem?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere agora um paciente que recebeu heparina em excesso e está sangrando. A protamina reverte o efeito anticoagulante quase instantaneamente. Mas a protamina não tem nenhuma ação em receptor nenhum — ela se liga diretamente à molécula de heparina, neutralizando-a fisicamente. Não existe disputa de sítio de ligação porque não existe sítio de ligação nenhum no meio do caminho."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar o problema: se o modelo for só 'duas moléculas competindo pelo mesmo receptor', nem a adrenalina na anafilaxia nem a protamina na heparinização fazem sentido. A farmacologia precisa de um conceito mais amplo de antagonismo do que 'ocupar o mesmo espaço'."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: três caminhos distintos para anular um efeito"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacologia resolveu isso reconhecendo que anular um efeito biológico pode acontecer por três mecanismos estruturalmente diferentes, e não apenas um. O primeiro é o antagonismo farmacológico — já visto: duas moléculas disputam o mesmo receptor, e quem ocupa sem ativar bloqueia quem ativaria. O segundo é o antagonismo fisiológico: duas moléculas atuam em receptores diferentes, em vias de sinalização diferentes, mas essas vias convergem no mesmo sistema fisiológico com efeitos opostos, de modo que uma anula o resultado final da outra sem nunca disputar espaço molecular. O terceiro é o antagonismo químico: duas moléculas reagem diretamente entre si — uma se liga fisicamente à outra, ou a neutraliza quimicamente — antes que qualquer receptor entre em cena."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Farmacológico: mesmo receptor, uma ocupa o lugar da outra. Fisiológico: receptores diferentes, vias diferentes, efeitos opostos no mesmo sistema. Químico: nenhum receptor — as duas moléculas se neutralizam diretamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como cada um funciona, em detalhe"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No antagonismo fisiológico, o ponto-chave é que não há competição molecular nenhuma. A adrenalina, no choque anafilático, ativa receptores alfa-1 adrenérgicos no músculo liso vascular, provocando vasoconstrição — o oposto fisiológico da vasodilatação induzida pela histamina nos receptores H1. Nenhuma das duas moléculas jamais encosta no receptor da outra. O que se cancela é o resultado final no sistema cardiovascular — pressão arterial —, não o evento molecular de ligação. É por isso que a adrenalina funciona mesmo com histamina livre circulando em grande quantidade: ela não precisa deslocar nada, só precisa vencer a competição fisiológica pelo tônus vascular."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No antagonismo químico, o ponto-chave é que a reação acontece entre as duas moléculas, fora de qualquer contexto de receptor. A protamina é uma proteína fortemente carregada positivamente; a heparina é um polissacarídeo fortemente carregado negativamente. Quando administradas juntas, elas se atraem eletrostaticamente e formam um complexo inativo — a heparina literalmente deixa de estar disponível para exercer seu efeito anticoagulante, não porque algum receptor foi bloqueado, mas porque a molécula em si foi sequestrada. É uma neutralização direta, molécula contra molécula."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa distinção muda a lógica prática do tratamento. No antagonismo farmacológico competitivo, a dose do antagonista precisa ser proporcional à quantidade de agonista a deslocar, porque as duas moléculas disputam o mesmo espaço finito de receptores. No antagonismo químico, a lógica é estequiométrica: a dose de protamina é calculada para neutralizar uma quantidade específica de heparina, molécula a molécula, numa reação praticamente de titulação. No antagonismo fisiológico, não existe cálculo de deslocamento nem de estequiometria — existe ajuste de dose até o efeito fisiológico oposto (elevar a pressão) superar o efeito original (baixar a pressão), independentemente de quanto do agonista ainda está circulando."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Guarde a diferença prática: competir por receptor, competir por sistema fisiológico, ou neutralizar quimicamente são três lógicas de dose e de velocidade de ação diferentes — e reconhecer qual está em jogo evita erros de raciocínio terapêutico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa distinção se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa classificação depende de tudo que já foi visto neste módulo: o antagonismo farmacológico só existe porque afinidade e atividade intrínseca são propriedades independentes, permitindo que uma molécula ocupe um receptor sem ativá-lo. O antagonismo fisiológico e o químico, em contraste, nem precisam desse conceito — eles mostram que 'anular um efeito' é uma categoria mais ampla do que 'bloquear um receptor', e que a própria ideia de receptor pode ficar de fora da explicação, como no caso químico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, essa distinção orienta decisões de emergência: reconhecer que a protamina age por neutralização química explica por que seu efeito é praticamente imediato e não depende da meia-vida de nenhum receptor; reconhecer que a adrenalina age por antagonismo fisiológico explica por que ela funciona contra qualquer grau de liberação de histamina, sem precisar 'vencer' molécula por molécula no mesmo sítio."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "antagonismo fisiológico e antagonismo químico",
+      "origem": "antagonismo, do grego antagōnismós (luta contra, oposição em uma disputa); fisiológico, de physis (natureza) + lógos (estudo); químico, do termo alquimia arabizado, kīmiyā",
+      "significado": "fisiológico: 'oposição que se dá no estudo da função natural do corpo'; químico: 'oposição que se dá pela reação entre substâncias'",
+      "explicacao": "A raiz antagōnismós vem do vocabulário do teatro e da competição grega — dois atores (agonistas) disputando o mesmo papel, ou dois lutadores no mesmo círculo. Ao qualificar o antagonismo como fisiológico, a farmacologia desloca a disputa: não é mais duas moléculas na mesma arena molecular (o receptor), mas dois efeitos disputando o mesmo palco fisiológico — o sistema do corpo. Ao qualificar como químico, a farmacologia remove a arena por completo: a disputa deixa de ser biológica e passa a ser uma reação de laboratório acontecendo dentro do corpo. Os três adjetivos — farmacológico, fisiológico, químico — descrevem, na própria palavra, onde a disputa acontece: no receptor, no sistema, ou na reação entre moléculas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar as três formas"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "⚖️",
+      "conteudo": "Pense em três formas de impedir que uma gangorra fique inclinada para um lado. A primeira é sentar outra pessoa no mesmo lugar do lado que está pesando, empurrando a primeira pessoa para fora do assento — é o antagonismo farmacológico: disputa pelo mesmo ponto de apoio. A segunda é não mexer em nada daquele lado, e simplesmente colocar peso adicional no lado oposto da gangorra até ela nivelar — é o antagonismo fisiológico: dois pontos diferentes, efeitos opostos, mesma gangorra. A terceira é retirar fisicamente o peso que está desequilibrando, laçando-o e puxando-o para fora do brinquedo antes que ele chegue a se sentar — é o antagonismo químico: neutralização direta, a gangorra nem chega a receber o peso. A analogia quebra num ponto: na gangorra, as três soluções são visíveis e mecânicas; no corpo, apenas a primeira (farmacológico) envolve de fato uma disputa por espaço físico molecular — as outras duas são metáforas de convergência de efeito e de reação química, não de ocupação de um lugar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma síntese para fechar o módulo"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Somando os quatro temas deste módulo — agonistas plenos, agonistas parciais e inversos, antagonismo competitivo e não-competitivo, e agora antagonismo fisiológico e químico — o que, no fundo, todos eles estão descrevendo?",
+      "resposta": "Todos descrevem posições e relações num mesmo espaço conceitual definido por duas perguntas: o ligante consegue se ligar (afinidade), e o que acontece depois que ele se liga (atividade intrínseca, ou ausência total de ligação no caso do antagonismo fisiológico e químico). Agonistas plenos ocupam o extremo de atividade intrínseca máxima; agonistas parciais e inversos ocupam posições intermediárias e negativas nesse mesmo eixo; antagonistas competitivos e não-competitivos ocupam atividade intrínseca nula, disputando ou não o mesmo sítio de ligação do agonista; e antagonismo fisiológico e químico mostram que é possível anular um efeito farmacológico sem sequer entrar nesse espaço de ligação-ativação — atuando em outro receptor ou fora de qualquer receptor. Entender essas quatro peças juntas é o que permite, diante de qualquer fármaco novo, perguntar com precisão: ele se liga? Ele ativa? Ele compete por espaço, por sistema, ou nem isso — ele reage diretamente com outra molécula? Essa sequência de perguntas é o núcleo de como a farmacologia interpreta qualquer interação fármaco-alvo."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Três formas de anular um efeito farmacológico",
+      "descricao": "Esquema didático em três painéis lado a lado, cada um ilustrando uma forma de antagonismo. Painel 1 (farmacológico): um receptor de membrana único com duas moléculas competindo pelo mesmo sítio de ligação, uma delas deslocando a outra, seta de 'bloqueio' apontando para dentro da célula sem ativação. Painel 2 (fisiológico): dois receptores diferentes na mesma célula ou tecido, um ativado por histamina causando vasodilatação (seta para baixo na pressão), outro ativado por adrenalina causando vasoconstrição (seta para cima na pressão), as duas setas convergindo e se anulando num medidor de pressão arterial central. Painel 3 (químico): duas moléculas de carga oposta (uma com sinais positivos, heparina com sinais negativos) se atraindo e formando um complexo inerte fora de qualquer célula ou receptor, com rótulo 'sem receptor envolvido'. Legendas curtas em português abaixo de cada painel. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno, três painéis lado a lado separados por linhas finas, cada um com um título curto acima. Painel 1 'ANTAGONISMO FARMACOLÓGICO': uma célula com um único receptor de membrana; duas moléculas de formas diferentes disputando o mesmo sítio, uma sendo empurrada para fora, seta tracejada de 'sem ativação' apontando para dentro da célula. Painel 2 'ANTAGONISMO FISIOLÓGICO': uma célula muscular lisa vascular com dois receptores distintos e espacialmente separados — um rotulado 'H1' com molécula de histamina ativando e seta para vasodilatação, outro rotulado 'alfa-1' com molécula de adrenalina ativando e seta para vasoconstrição; as duas setas convergindo visualmente em um pequeno manômetro central mostrando equilíbrio. Painel 3 'ANTAGONISMO QUÍMICO': fora de qualquer célula ou membrana, duas moléculas de contorno alongado, uma com múltiplos sinais de carga positiva e outra com múltiplos sinais de carga negativa, se aproximando e formando um complexo único inerte, com rótulo 'neutralização direta, sem receptor'. Paleta de cores suaves e consistente entre os três painéis, alto contraste, sem texturas fotorrealistas, texto apenas nos rótulos indicados, em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-003",
+        "titulo": "Agonistas e Antagonistas — Ligar e Desligar o Alvo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco expande o conceito de bloqueio além da simples ocupação competitiva do mesmo sítio de ligação, que é o modelo estabelecido na visão geral do módulo."
+      },
+      {
+        "bloco_id": "s4-farma1-02-003-03",
+        "titulo": "Antagonismo Competitivo x Não-Competitivo",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "contraste_necessario",
+        "explicacao": "O antagonismo farmacológico (competitivo e não-competitivo) detalhado no bloco irmão é o ponto de partida deste bloco: aqui ele é retomado apenas como referência para contrastar com as formas fisiológica e química, sem repetir o mecanismo já explicado ali."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Antídotos e reversores em farmacologia clínica",
+        "mecanismo_conexao": "A lógica do antagonismo químico (neutralização direta molécula-molécula) é o princípio por trás de outros antídotos além da protamina, como o uso de quelantes em intoxicações metálicas.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Manejo de emergência da anafilaxia",
+        "mecanismo_conexao": "A escolha da adrenalina como primeira linha na anafilaxia se apoia diretamente no conceito de antagonismo fisiológico: ela não precisa competir com a histamina, apenas vencer o efeito oposto no mesmo sistema cardiovascular, o que explica a urgência e a via de administração escolhidas.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-003-04-fc01",
+      "pergunta": "Quais são as três formas de antagonismo farmacológico-fisiológico-químico, e o que diferencia cada uma quanto ao envolvimento de receptores?",
+      "resposta": "Antagonismo farmacológico: duas moléculas disputam o mesmo receptor, uma ocupando sem ativar. Antagonismo fisiológico: as moléculas atuam em receptores diferentes, em vias diferentes, mas os efeitos convergem opostamente no mesmo sistema fisiológico. Antagonismo químico: as moléculas reagem diretamente entre si, neutralizando-se, sem nenhum receptor envolvido.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farma1",
+        "antagonismo",
+        "classificacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-04-fc02",
+      "pergunta": "Por que a adrenalina consegue reverter o choque anafilático mesmo sem se ligar ao receptor de histamina?",
+      "resposta": "Porque o mecanismo é antagonismo fisiológico, não farmacológico. A adrenalina ativa receptores alfa-1 adrenérgicos no músculo liso vascular, provocando vasoconstrição — efeito fisiológico oposto à vasodilatação causada pela histamina nos receptores H1. As duas vias nunca disputam o mesmo receptor; o que se cancela é o resultado final no sistema cardiovascular (a pressão arterial), não o evento molecular de ligação.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farma1",
+        "antagonismo-fisiologico",
+        "anafilaxia",
+        "adrenalina"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-04-fc03",
+      "pergunta": "Como a protamina reverte o efeito anticoagulante da heparina, e por que esse mecanismo é classificado como antagonismo químico e não farmacológico?",
+      "resposta": "A protamina, fortemente carregada positivamente, se liga eletrostaticamente à heparina, fortemente carregada negativamente, formando um complexo inativo que sequestra a heparina e a impede de exercer seu efeito anticoagulante. É antagonismo químico porque a neutralização acontece por reação direta entre as duas moléculas, sem nenhum receptor mediando o processo — não há disputa por sítio de ligação nenhum.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farma1",
+        "antagonismo-quimico",
+        "protamina",
+        "heparina"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-04-fc04",
+      "pergunta": "Se um antagonismo for fisiológico (não farmacológico), a dose necessária do antagonista depende de deslocar o agonista do mesmo receptor?",
+      "resposta": "Não. No antagonismo fisiológico não existe cálculo de deslocamento, porque as duas moléculas nunca disputam o mesmo receptor. A dose é ajustada até que o efeito fisiológico oposto supere o efeito original no sistema — por exemplo, elevar a pressão arterial até vencer a queda causada pela histamina —, independentemente de quanto agonista ainda está circulando. Isso contrasta com o antagonismo farmacológico competitivo, em que a dose do antagonista precisa ser proporcional à quantidade de agonista a deslocar do mesmo espaço de receptores.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farma1",
+        "antagonismo-fisiologico",
+        "dose"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-04-fc05",
+      "pergunta": "As palavras 'antagonismo fisiológico' e 'antagonismo químico' usam o mesmo radical grego de disputa (antagōnismós), mas cada uma desloca o local dessa disputa. Explique.",
+      "resposta": "Antagōnismós vem do vocabulário grego de competição — dois lutadores disputando o mesmo espaço. No antagonismo farmacológico, essa disputa acontece literalmente no receptor. No antagonismo fisiológico, a palavra 'fisiológico' (de physis, natureza) desloca a disputa: não é mais duas moléculas no mesmo sítio molecular, mas dois efeitos opostos disputando o mesmo sistema do corpo. No antagonismo químico, a disputa deixa de ser biológica e vira uma reação de substâncias — a palavra 'químico' remove a arena receptor-mediada por completo. Os três adjetivos indicam, na própria etimologia, onde a disputa realmente acontece: no receptor, no sistema fisiológico, ou na reação molecular direta.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farma1",
+        "etimologia",
+        "antagonismo"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-04-fc06",
+      "pergunta": "Um paciente recebe um fármaco X que, sozinho, não tem nenhuma ação farmacológica conhecida em receptores, mas que consegue neutralizar rapidamente o efeito tóxico de uma overdose de fármaco Y assim que administrado, com efeito quase imediato e sem relação com a meia-vida de qualquer receptor. Que tipo de antagonismo isso sugere, e por quê?",
+      "resposta": "Sugere antagonismo químico. A ausência de ação em receptores conhecidos, combinada com um efeito quase imediato e independente de meia-vida de receptor, é a assinatura de uma neutralização direta molécula-molécula — como a protamina neutralizando a heparina. Se X precisasse competir por um receptor (farmacológico) ou ativar uma via oposta (fisiológico), o efeito dependeria da farmacocinética desses receptores; a velocidade quase instantânea e a ausência de alvo molecular conhecido apontam para uma reação química direta entre X e Y.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farma1",
+        "antagonismo-quimico",
+        "raciocinio-clinico"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-003-04-caso01",
+      "titulo": "Sangramento após heparinização em cirurgia cardíaca",
+      "apresentacao": "Paciente de 64 anos é submetido a cirurgia de revascularização miocárdica com circulação extracorpórea, recebendo heparina não-fracionada em dose plena para evitar coagulação no circuito. Ao final do procedimento, a equipe precisa reverter rapidamente o efeito anticoagulante antes de fechar o tórax, para reduzir o risco de sangramento excessivo. É administrada protamina intravenosa, calculada em proporção à dose de heparina utilizada. Em poucos minutos, os tempos de coagulação normalizam.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Heparina não-fracionada, administrada em dose plena para a circulação extracorpórea, potencializa fortemente a ação da antitrombina III sobre os fatores de coagulação."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Complexo antitrombina III–fatores de coagulação (especialmente trombina/fator IIa e fator Xa), mantido inibido enquanto houver heparina circulante no sangue."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Ao final da cirurgia, quando a circulação extracorpórea já não é mais necessária, o sangue permanece incoagulável, criando risco de sangramento excessivo durante o fechamento do tórax."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Tempos de coagulação (TCA/aPTT) prolongados, risco de sangramento difuso no campo cirúrgico se o tórax for fechado sem reversão do efeito anticoagulante."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A protamina, de carga fortemente positiva, neutraliza estequiometricamente a heparina circulante, restabelecendo a coagulação normal em minutos. A dose deve ser calculada com precisão: excesso de protamina pode, por si só, causar efeito anticoagulante paradoxal e hipotensão."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra o antagonismo químico em ação real: a reversão não depende de nenhum receptor, nenhuma competição por sítio de ligação, apenas da reação direta entre duas moléculas de cargas opostas. Contrasta diretamente com o antagonismo farmacológico do bloco irmão, onde a lógica de dose é de deslocamento competitivo, não de neutralização estequiométrica.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "cirurgia",
+        "hematologia"
+      ],
+      "diagnostico_revelado": "Necessidade de reversão de anticoagulação por heparina não-fracionada ao final de circulação extracorpórea.",
+      "tratamento_resumido": "Protamina intravenosa em dose calculada proporcionalmente à heparina residual estimada, com monitorização dos tempos de coagulação (TCA/aPTT) após a administração para confirmar reversão adequada sem excesso."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-003-04-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics; Capítulo 34 — Blood, Coagulation.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

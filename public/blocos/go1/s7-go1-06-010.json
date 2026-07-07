@@ -8,49 +8,231 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Vulvovaginites — Visão de Conjunto",
+    "titulo": "Vulvovaginites - Visao de Conjunto",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "infeccoes-genitais",
+      "ist",
+      "clinica",
+      "diagnostico"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Corrimento vaginal; as três causas mais comuns e sua diferenciação",
-  "narrativa": [],
+  "resumo_conciso": "Vulvovaginites são causas frequentes de corrimento, odor, prurido e ardor. As três principais são vaginose bacteriana, candidíase vulvovaginal e tricomoníase, diferenciadas por pH, odor, microscopia e padrão clínico.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Vulvovaginite é inflamação ou alteração infecciosa/disbiótica da vulva e vagina. A queixa pode ser corrimento, odor, prurido, ardor, dispareunia superficial ou disúria externa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As três causas mais cobradas são vaginose bacteriana, candidíase e tricomoníase. Elas compartilham corrimento, mas divergem em mecanismo: disbiose anaeróbia, proliferação fúngica e protozoário sexualmente transmissível."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vaginose costuma dar corrimento fino, homogêneo e odor de peixe, com pH elevado e clue cells. Candidíase costuma dar prurido, eritema e corrimento grumoso, com pH normal. Tricomoníase pode dar corrimento amarelo-esverdeado, pH elevado e cervicite."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A avaliação ideal inclui exame especular, pH, teste das aminas com KOH e microscopia a fresco/salina/KOH. Quando disponível, testes moleculares ajudam, especialmente em quadros mistos ou recorrentes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É perigoso tratar toda queixa como candidíase. Isso atrasa diagnóstico de tricomoníase, cervicite, dermatites, líquen, herpes, corpo estranho, vaginite inflamatória e atrofia geniturinária."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A conduta deve considerar gestação, recorrência, imunossupressão, diabetes, alergias, risco sexual e necessidade de tratar parceria. A pergunta final é sempre: isso é apenas vaginal ou há sinal de cervicite/DIP?"
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-05-000",
+        "titulo": "Modulo 5 - Miomatose Uterina e Tumores Benignos",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-022",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Sifilis Genital - Cancro Duro",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-026",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Bartolinite e Abscesso de Bartholin",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-030",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Doenca Inflamatoria Pelvica - Visao de Conjunto",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN"
+      },
+      {
+        "bloco_id": "s7-go1-04-003",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Apresentacao Clinica da Endometriose - As Tres Dismenorreias"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-010-fc-01",
+      "pergunta": "Quais são as três causas clássicas de vulvovaginite?",
+      "resposta": "Vaginose bacteriana, candidíase vulvovaginal e tricomoníase.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-010-fc-02",
+      "pergunta": "Qual exame simples ajuda muito na diferenciação?",
+      "resposta": "pH vaginal, combinado com odor, microscopia e exame clínico.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-010-fc-03",
+      "pergunta": "Qual erro comum deve ser evitado?",
+      "resposta": "Tratar todo corrimento como candidíase sem avaliar pH, odor, colo e risco sexual.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-010-fc-04",
+      "pergunta": "Quando pensar além de vulvovaginite?",
+      "resposta": "Dor pélvica, sangramento pós-coito, secreção cervical mucopurulenta ou dor à mobilização cervical.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-010-cc-01",
+      "titulo": "Três corrimentos, três caminhos",
+      "apresentacao": "Ambulatório recebe pacientes com odor de peixe, prurido grumoso e corrimento amarelo-esverdeado com colo friável.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Vulvovaginites são causas frequentes de corrimento, odor, prurido e ardor."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Vulvovaginites - Visao de Conjunto, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Vulvovaginites são causas frequentes de corrimento, odor, prurido e ardor. As três principais são vaginose bacteriana, candidíase vulvovaginal e tricomoníase, diferenciadas por pH, odor, microscopia e padrão clínico."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Ambulatório recebe pacientes com odor de peixe, prurido grumoso e corrimento amarelo-esverdeado com colo friável."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Quais hipóteses principais? Vaginose bacteriana, candidíase e tricomoníase/cervicite, respectivamente."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Vaginose bacteriana, candidíase e tricomoníase/cervicite, respectivamente.",
+      "tratamento_resumido": "Vaginose bacteriana, candidíase e tricomoníase/cervicite, respectivamente."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Tabela comparativa de vaginose, candidíase e tricomoníase com pH, corrimento, odor, microscopia e tratamento.",
+        "alt": "Ilustracao educacional para Vulvovaginites - Visao de Conjunto"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Bacterial Vaginosis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Vulvovaginal Candidiasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Trichomoniasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Urethritis and Cervicitis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Ulcer Disease",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/genital-ulcers.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "clinica",
     "diagnostico"

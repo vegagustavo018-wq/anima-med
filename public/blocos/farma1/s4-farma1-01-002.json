@@ -9,51 +9,271 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Absorção — Atravessar Barreiras Biológicas (Visão Geral)",
+    "subtitulo": "Como um comprimido engolido vira uma molécula circulando no sangue?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "absorcao",
+      "membrana",
+      "core",
+      "visao-geral"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Passagem por membranas; do sítio de administração ao sangue",
-  "narrativa": [],
+  "resumo_conciso": "Absorção é o nome que a farmacocinética dá à primeira etapa da jornada ADME: a passagem do fármaco do local de administração para a circulação sistêmica. Antes de ser distribuído, metabolizado ou excretado, o fármaco precisa resolver um problema físico concreto — sair de um espaço (o lúmen intestinal, o tecido subcutâneo, o músculo) e entrar em outro (o sangue), e entre esses dois espaços sempre existe pelo menos uma membrana biológica no caminho. Nenhum fármaco tem passe livre automático: a molécula precisa ser compatível com a estrutura lipídica dessa barreira, ou precisa de um transportador específico que reconheça sua forma. Essa exigência gera três ângulos de análise que estruturam o restante deste tema — por qual mecanismo físico a molécula atravessa a membrana, como o pH do meio e a carga elétrica do fármaco (ionização) decidem se essa travessia é possível a cada instante, e quais variáveis fisiológicas e farmacotécnicas aceleram ou atrasam essa travessia na prática clínica. Entender a absorção como esse problema único de atravessar fronteiras — antes de entrar no detalhe técnico de cada mecanismo — é o que permite situar por que a via de administração, a formulação do medicamento e o estado do paciente mudam tanto o resultado terapêutico de uma mesma dose.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior desta disciplina descreveu a jornada ADME como um todo: absorção, distribuição, metabolismo e excreção. Mas a absorção, sozinha, já esconde um problema que vale a pena isolar antes de seguir adiante — porque é o primeiro obstáculo que qualquer fármaco enfrenta, e o único que decide se ele chega a entrar no jogo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: uma molécula presa do lado de fora"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um comprimido engolido está, do ponto de vista do organismo, do lado de fora do corpo. O lúmen do tubo digestivo é topologicamente externo — é um tubo contínuo que atravessa o corpo sem nunca se misturar diretamente com o sangue. O mesmo vale, com outra geometria, para uma injeção subcutânea ou intramuscular: a agulha deposita o fármaco num tecido, não direto na corrente sanguínea."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso significa que, seja qual for a via escolhida (exceto a intravenosa, que injeta o fármaco diretamente no sangue), sempre existe pelo menos uma membrana biológica separando o fármaco de seu destino inicial: a circulação sistêmica. Essa membrana não é uma formalidade — é o mesmo epitélio estudado em Histologia, agora enfrentado sob uma pergunta nova: como fazer uma molécula estranha atravessar essa fronteira?"
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: absorção é o nome farmacocinético para o problema de atravessar uma barreira biológica que separa o local de administração da circulação sistêmica. Sem essa travessia, não existe efeito terapêutico algum, por melhor que seja a molécula."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, em linhas gerais"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A travessia só é possível porque existem, na natureza, algumas rotas físicas repetíveis pelas quais uma molécula pode cruzar uma membrana celular — algumas que dependem apenas das propriedades químicas do fármaco, e outras que dependem de proteínas especializadas que reconhecem e carregam a molécula de um lado a outro. Cada fármaco usa a rota (ou combinação de rotas) compatível com seu tamanho, sua carga elétrica e sua solubilidade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas ter uma rota disponível não garante velocidade nem quantidade. A mesma molécula, pela mesma rota, pode atravessar rápido ou devagar, em grande ou pequena proporção, dependendo de onde no corpo essa travessia está acontecendo e em que condições fisiológicas o paciente se encontra naquele momento."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Absorver não é uma resposta de sim ou não. É uma questão de quanto e quão rápido — e a resposta muda com o mecanismo de travessia, com o estado químico da molécula e com as condições do corpo que a recebe."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Os três ângulos que compõem o tema"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por isso, entender absorção de verdade exige olhar para o mesmo evento — atravessar a membrana — sob três ângulos diferentes, cada um respondendo a uma pergunta distinta. O primeiro ângulo pergunta: por qual porta física a molécula passa? A resposta está nos mecanismos de transporte através da membrana — difusão passiva através da própria bicamada lipídica, transporte facilitado e ativo por proteínas carreadoras específicas, e formas mais raras como a pinocitose para moléculas grandes. É a pergunta sobre a rota."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O segundo ângulo pergunta: essa porta está aberta para esta molécula, agora, neste pH? A maioria dos fármacos é ácido ou base fraca, e pode existir em forma neutra ou eletricamente carregada dependendo do pH do meio — e só a forma neutra atravessa a bicamada lipídica com facilidade. É a pergunta sobre o estado químico da molécula no instante da travessia, respondida pela relação entre pH, pKa e a equação de Henderson-Hasselbalch — o assunto que o próximo bloco detalha com profundidade quantitativa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O terceiro ângulo pergunta: mesmo com a rota certa e a molécula no estado certo, o que no corpo ou na formulação pode acelerar ou atrasar essa travessia na prática? A resposta envolve fatores fisiológicos como fluxo sanguíneo local, área de superfície disponível e motilidade gastrintestinal, além de fatores externos como a presença de alimento e a forma farmacêutica do medicamento — o conjunto de variáveis que o bloco seguinte detalha caso a caso."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como os três ângulos se articulam"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nenhum desses três ângulos substitui o outro — eles respondem perguntas em sequência sobre o mesmo evento único. Primeiro é preciso que exista uma rota física compatível com a molécula. Given essa rota, é preciso que a molécula esteja, naquele pH, numa forma capaz de usá-la. E, mesmo com rota e forma favoráveis, a velocidade real da travessia ainda depende de quanto sangue, quanta área e quanto tempo de contato o corpo oferece naquele momento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É por isso que este bloco não entra no detalhe técnico de nenhum dos três ângulos: cada um merece — e já tem, nos blocos seguintes — sua própria explicação matemática e mecanística. Aqui, o objetivo é só fixar que absorção é um único problema (atravessar uma barreira biológica) visto por três perguntas complementares."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛂",
+      "conteudo": "Pense na absorção como o processo de entrar num país estrangeiro por um posto de fronteira. **O mecanismo de transporte** é o tipo de portão que existe ali — um torniquete que só deixa passar quem cabe sem bagagem (difusão passiva), ou um guichê com funcionário que verifica e carrega a documentação de quem tem o formulário certo (transporte mediado por carreador). **A ionização e o pKa** decidem se, hoje, com as regras vigentes daquele posto (o pH do momento), o viajante está com os documentos em ordem (forma neutra) ou retido na sala de revista (forma ionizada) — as mesmas regras, aplicadas ao mesmo viajante, podem liberá-lo num posto e barrá-lo em outro. **Os fatores que alteram a absorção** são as condições do dia: quantos guichês estão abertos, quantos funcionários trabalhando, quantas pessoas na fila — mesmo com documentação perfeita, um posto lento libera menos gente por hora. A analogia quebra num ponto: no posto de fronteira essas três coisas são decisões administrativas separadas; na membrana biológica, são propriedades físico-químicas simultâneas da mesma molécula e do mesmo tecido, acontecendo ao mesmo tempo, não em etapas sucessivas de um dia de trabalho."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que isso importa clinicamente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa visão panorâmica já basta para explicar, em princípio, por que a via de administração é uma decisão terapêutica e não um detalhe burocrático: escolher a via oral, intramuscular, subcutânea ou intravenosa é escolher se — e como — o fármaco vai precisar resolver o problema da absorção. A via intravenosa é a única que elimina esse problema por completo, entregando o fármaco direto na circulação; todas as outras exigem que a molécula vença, em algum grau, os três ângulos descritos aqui."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É também essa visão de conjunto que explica por que a bula de um medicamento traz orientações aparentemente arbitrárias — tomar em jejum, evitar certos antiácidos, preferir determinada formulação — cada uma delas é, na prática, uma intervenção sobre um dos três ângulos que os próximos blocos vão detalhar."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Os três ângulos da absorção sobre uma mesma travessia de membrana",
+      "descricao": "Esquema didático mostrando uma única membrana celular em corte central, com uma molécula de fármaco tentando atravessá-la da esquerda (lúmen ou tecido de administração) para a direita (capilar sanguíneo). Três chaves de legenda ao redor da mesma imagem, cada uma apontando para um aspecto diferente do mesmo evento: uma seta rotulada 'MECANISMO' apontando para o tipo de rota usada na membrana (poro lipídico para difusão passiva, proteína carreadora para transporte mediado); um símbolo de pH com sinais + e - rotulado 'IONIZAÇÃO' mostrando a mesma molécula em forma neutra de um lado e carregada do outro; e três ícones pequenos (gota de sangue, régua medindo área, relógio) agrupados e rotulados 'FATORES MODIFICADORES' ao redor da cena. Legendas em português, estilo de livro didático, cores suaves, fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Composição central com uma membrana celular em corte transversal (bicamada lipídica esquemática) dividindo a imagem em dois lados: à esquerda, rotulado 'LOCAL DE ADMINISTRAÇÃO', uma molécula de fármaco representada como um pequeno círculo; à direita, rotulado 'CIRCULAÇÃO SISTÊMICA', um capilar sanguíneo estilizado com hemácias. Três grupos de elementos anotados ao redor da membrana central, cada um com uma chave de legenda numerada e colorida distintamente: (1) uma seta atravessando a membrana com dois ícones alternativos — um poro simples e uma proteína transportadora em forma de canal — rotulada 'MECANISMO DE TRANSPORTE'; (2) a mesma molécula desenhada duas vezes, uma neutra (sem sinal) e outra com sinal de carga elétrica (+ ou -), rotulada 'IONIZAÇÃO (pH e pKa)'; (3) três pequenos ícones agrupados — uma gota vermelha de sangue, uma régua sobre uma superfície ondulada, e um relógio — rotulados 'FATORES QUE ALTERAM A VELOCIDADE'. Texto em português, cores suaves e diferenciadas por grupo, alto contraste, sem elementos fotorrealistas, sem marcas comerciais."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-000",
+        "titulo": "Farmacocinética — A Jornada do Fármaco no Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A absorção é a primeira das quatro etapas da jornada ADME descrita na visão geral da farmacocinética. É preciso já ter situado essa etapa dentro do conjunto (distribuição, metabolismo, excreção) antes de isolá-la para análise detalhada."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-01-003",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Distribuição do fármaco pelos compartimentos corporais",
+        "mecanismo_conexao": "Depois de absorvido, o fármaco enfrenta o mesmo tipo de barreira de membrana ao se distribuir para os tecidos-alvo — os mecanismos de transporte e a lógica de ionização vistos aqui reaparecem, agora aplicados à travessia de novas membranas (capilares, barreira hematoencefálica).",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Biodisponibilidade e escolha racional da via de administração",
+        "mecanismo_conexao": "A extensão e a velocidade da absorção, aqui apresentadas em visão geral, são o que compõe tecnicamente a biodisponibilidade de um fármaco — parâmetro que orienta diretamente decisões clínicas de dose e via.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-002-fc01",
+      "pergunta": "Por que a absorção é considerada o primeiro obstáculo que qualquer fármaco (exceto o administrado por via intravenosa) precisa vencer?",
+      "resposta": "Porque, com exceção da via intravenosa, o local de administração — lúmen intestinal, tecido subcutâneo, músculo — é sempre separado da circulação sistêmica por pelo menos uma membrana biológica. Antes de ser distribuído, metabolizado ou excretado, o fármaco precisa primeiro atravessar essa barreira para começar a existir, em qualquer quantidade, na corrente sanguínea. Sem essa travessia, nenhuma das etapas seguintes da jornada ADME tem como acontecer.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["farma1", "absorcao", "adme"]
+    },
+    {
+      "card_id": "s4-farma1-01-002-fc02",
+      "pergunta": "Quais são os três ângulos complementares sob os quais o problema da absorção precisa ser analisado, e que pergunta cada um responde?",
+      "resposta": "Primeiro, o mecanismo de transporte: por qual rota física a molécula atravessa a membrana (difusão passiva, transporte mediado por carreador, entre outros). Segundo, a ionização e o pKa: se a molécula está, naquele pH específico, numa forma neutra capaz de atravessar a bicamada lipídica ou numa forma ionizada que fica retida. Terceiro, os fatores modificadores: quais variáveis fisiológicas e farmacotécnicas aceleram ou atrasam essa travessia na prática, mesmo quando rota e forma química são favoráveis. Os três respondem perguntas diferentes sobre o mesmo evento único de atravessar a barreira.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["farma1", "absorcao", "mecanismo-transporte", "ionizacao"]
+    },
+    {
+      "card_id": "s4-farma1-01-002-fc03",
+      "pergunta": "Se um fármaco fosse administrado por via intravenosa em vez de oral, o problema da absorção descrito neste bloco ainda se aplicaria a ele?",
+      "resposta": "Não da mesma forma. A via intravenosa deposita o fármaco diretamente na circulação sistêmica, eliminando por completo a necessidade de atravessar uma membrana biológica para entrar no sangue — não há etapa de absorção a vencer. É por isso que a via intravenosa costuma ser escolhida quando se precisa de biodisponibilidade previsível e imediata, especialmente em situações em que a absorção por outras vias seria lenta ou incerta (como no choque, por exemplo).",
+      "tipo": "contrafactual",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["farma1", "absorcao", "via-intravenosa"]
+    },
+    {
+      "card_id": "s4-farma1-01-002-fc04",
+      "pergunta": "Por que orientações de bula como 'tomar em jejum' ou 'evitar uso concomitante com antiácidos' não são regras arbitrárias, à luz da visão geral da absorção?",
+      "resposta": "Porque cada uma dessas orientações é, na prática, uma intervenção sobre um dos três ângulos que compõem o problema da absorção: a presença de alimento pode alterar a motilidade e competir fisicamente com o fármaco (fator modificador), e um antiácido pode mudar o pH do meio o suficiente para alterar a fração ionizada versus não ionizada do fármaco (ionização e pKa). A bula traduz, em linguagem prática, um raciocínio farmacocinético específico sobre a travessia da membrana.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["farma1", "absorcao", "clinica"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-002-caso01",
+      "titulo": "Analgésico intramuscular sem efeito num paciente em choque",
+      "apresentacao": "Homem de 45 anos, vítima de acidente automobilístico, chega ao setor de emergência hipotenso, taquicárdico e com extremidades frias — quadro compatível com choque hemorrágico. A equipe de resgate já havia administrado um analgésico opioide por via intramuscular ainda no local do acidente, mas, quarenta minutos depois, o paciente continua referindo dor intensa, sem qualquer sinal de alívio. Reavaliado no hospital, ele recebe o mesmo fármaco por via intravenosa e apresenta alívio da dor em poucos minutos.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Estado de choque hemorrágico, com ativação do sistema nervoso simpático e redistribuição do débito cardíaco para órgãos nobres (cérebro, coração), às custas da perfusão de território muscular e subcutâneo periférico."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O tecido muscular no local da injeção intramuscular, cuja absorção depende de um fluxo sanguíneo local adequado para remover o fármaco já atravessado pela membrana e mantê-lo circulando — exatamente o primeiro dos três ângulos da absorção descritos no bloco (mecanismo de travessia) combinado com o fator fisiológico de fluxo sanguíneo."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com o fluxo sanguíneo muscular drasticamente reduzido pela centralização circulatória do choque, o fármaco administrado por via intramuscular fica retido no tecido, incapaz de ser conduzido à circulação sistêmica na velocidade necessária — mesmo que o mecanismo de travessia de membrana e o estado de ionização da molécula estivessem perfeitamente favoráveis."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Ausência de efeito analgésico apesar da administração correta do fármaco e da dose adequada — o paciente permanece com dor intensa, um sinal de que a absorção, e não a farmacodinâmica do opioide, foi o elo que falhou."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Ao trocar para a via intravenosa — que deposita o fármaco diretamente na circulação sistêmica, eliminando por completo a etapa de absorção — o efeito analgésico surge em minutos. A lição prática é que, em estados de choque ou hipoperfusão periférica, vias que dependem de absorção tecidual (intramuscular, subcutânea, oral) são pouco confiáveis, e a via intravenosa deve ser preferida sempre que disponível."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra concretamente o terceiro ângulo descrito no bloco — os fatores modificadores que aceleram ou atrasam a absorção mesmo com rota e estado químico favoráveis — usando o fluxo sanguíneo como variável determinante. Reforça também a afirmação central do bloco de que a via intravenosa é a única que elimina por completo o problema da absorção, uma decisão clínica e não um detalhe burocrático de prescrição.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "medicina_de_emergencia",
+        "clinica_medica"
+      ],
+      "diagnostico_revelado": "Falha de absorção intramuscular de analgésico opioide por hipoperfusão periférica em choque hemorrágico.",
+      "tratamento_resumido": "Reposição volêmica e controle do foco hemorrágico para reverter o choque, substituição da via de administração de analgésicos e demais fármacos essenciais para a via intravenosa enquanto durar a hipoperfusão periférica, com reavaliação contínua da resposta clínica."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-002-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw-Hill; 2023. Capítulo 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 1 — Introduction: The Nature of Drugs and Drug Development.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Capítulo 8 — Absorption and Distribution of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

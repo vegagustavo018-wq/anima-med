@@ -5,50 +5,347 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Volume de Distribuição (Vd)",
+    "subtitulo": "Como medir 'para onde o fármaco foi' sem abrir o paciente e checar tecido por tecido?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "distribuicao",
+      "volume-de-distribuicao",
+      "dose-de-ataque",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Vd como volume aparente; interpretar Vd alto/baixo; cálculo de dose de ataque",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior desta disciplina descreveu três fatores — perfusão, permeabilidade e ligação a proteínas — que decidem, tecido por tecido, quanto fármaco chega a cada órgão. Mas isso ainda não responde a uma pergunta prática: dado que um paciente recebeu determinada dose, qual vai ser a concentração desse fármaco no sangue? Não é possível biopsiar todos os órgãos de um paciente para somar o fármaco que foi para cada lugar. O volume de distribuição (Vd) resolve esse problema por um caminho indireto: em vez de medir para onde o fármaco foi, ele infere isso a partir do que sobrou no sangue. Vd é definido como a razão entre a dose total administrada e a concentração plasmática resultante — um volume matemático, hipotético, que representaria o espaço necessário para conter toda aquela dose na mesma concentração medida no plasma. Quanto mais um fármaco sai do sangue e se aloja nos tecidos (por lipossolubilidade ou afinidade tecidual), menor a concentração plasmática restante e, portanto, maior o Vd calculado — a ponto de ultrapassar largamente o volume corporal total real, porque a fórmula não descreve um espaço anatômico, descreve o quanto o fármaco 'se escondeu' do sangue. Fármacos que permanecem majoritariamente no plasma (muito ligados a proteínas plasmáticas, pouco lipossolúveis) têm Vd baixo, próximo ao volume plasmático; fármacos muito lipossolúveis, que se acumulam em tecido adiposo e ligam-se a proteínas teciduais, podem ter Vd de centenas de litros num adulto de 70 kg. O Vd também é a ferramenta que permite calcular a dose de ataque necessária para atingir rapidamente uma concentração-alvo. O próximo parâmetro que vai se somar ao Vd para completar o quadro quantitativo da farmacocinética é o clearance, que mede a velocidade de eliminação — tema de bloco futuro ainda não escrito neste módulo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Uma paciente recebe 500 mg de um antibiótico por via intravenosa. Minutos depois, uma amostra de sangue mostra concentração plasmática de 10 mg/L. Ninguém vai biopsiar o fígado, o músculo, a gordura e o cérebro dessa paciente para somar quanto fármaco foi parar em cada lugar — isso seria inviável na prática clínica e, mesmo em pesquisa, uma tarefa monumental. E, ainda assim, o médico precisa saber, de algum modo, o quanto desse fármaco 'saiu' do sangue e se instalou nos tecidos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior já explicou por que a distribuição não é uniforme: perfusão, permeabilidade e ligação a proteínas determinam, para cada órgão, quanto fármaco chega e a que velocidade. Mas saber que a distribuição é desigual não é o mesmo que ter um número para trabalhar. Falta uma forma de quantificar o resultado líquido de tudo isso — sem precisar medir tecido por tecido."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: quantificar 'para onde foi' sem poder medir tecido por tecido"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A única amostra biológica que se pode colher de um paciente vivo, de forma repetida e sem risco, é sangue. Toda a farmacocinética clínica depende dessa limitação: os únicos números diretamente mensuráveis são dose administrada e concentração plasmática ao longo do tempo. Qualquer informação sobre o que aconteceu nos tecidos profundos precisa ser inferida a partir desses dois números — nunca medida diretamente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso cria uma exigência: é preciso um parâmetro que traduza 'quanto fármaco saiu do plasma e foi para os tecidos' em algo calculável a partir de uma dose conhecida e de uma concentração plasmática medida. Sem esse parâmetro, a distribuição continuaria sendo apenas uma descrição qualitativa — útil para entender o mecanismo, inútil para decidir a dose de um paciente real."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema não é entender que a distribuição é desigual — isso já foi visto. O problema é ter um número, calculável a partir de dose e concentração plasmática, que resuma essa distribuição sem exigir biópsia de nenhum órgão."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: um volume hipotético calculado de trás para frente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é engenhosa porque não tenta medir o volume real de nada. Em vez disso, parte de uma pergunta hipotética: se todo o fármaco administrado estivesse dissolvido apenas no plasma, em qual volume ele precisaria estar para produzir a concentração que de fato foi medida? Esse volume — chamado volume de distribuição, ou Vd — não corresponde a nenhum compartimento anatômico real. É um número derivado, calculado de trás para frente, a partir da concentração que sobrou no sangue depois que o fármaco já se espalhou pelo corpo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A lógica é a seguinte: se pouco fármaco saiu do plasma para os tecidos, a concentração plasmática medida será relativamente alta, e o volume hipotético necessário para 'conter' a dose nessa concentração será pequeno — próximo do volume real de plasma ou de líquido extracelular. Mas se uma fração grande do fármaco deixou o plasma e se instalou em tecidos (gordura, músculo, proteínas teciduais), a concentração plasmática medida será baixa, e o volume hipotético necessário para justificar essa concentração baixa, dada a dose que se sabe que foi administrada, será enorme — muito maior que qualquer volume corporal real."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Vd não mede um espaço físico. Mede o grau de fuga do fármaco para fora do plasma, expresso na unidade de um volume. Quanto mais o fármaco se esconde nos tecidos, maior o Vd calculado — mesmo que esse volume não exista em lugar nenhum do corpo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito: a fórmula e o que ela carrega"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Formalmente, Vd = Dose / Concentração plasmática (Cp), medida num momento em que a distribuição já se completou (por isso, para uma dose intravenosa única, costuma-se extrapolar a concentração para o instante zero, antes que a eliminação já tenha começado a reduzi-la). A unidade resultante é de volume — litros, ou litros por quilo de peso corporal, para permitir comparação entre pacientes de tamanhos diferentes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os dois ingredientes da fórmula são, portanto, dado administrativo (a dose, que o prescritor já conhece com exatidão) e dado laboratorial (a concentração plasmática, medida por dosagem sérica). Não há nenhum ingrediente anatômico direto — o Vd nasce inteiramente da relação entre esses dois números, e é exatamente por isso que consegue representar, de forma indireta, um fenômeno (a distribuição tecidual) que não pode ser medido diretamente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O valor numérico de Vd, para um fármaco específico, reflete duas propriedades já conhecidas do bloco anterior: a lipossolubilidade da molécula (quanto mais lipossolúvel, mais ela atravessa membranas e se aloja em tecido adiposo e intracelular) e o padrão de ligação a proteínas — plasmáticas versus teciduais. Um fármaco muito ligado à albumina plasmática tende a permanecer no compartimento vascular, resultando em Vd baixo. Um fármaco com maior afinidade por proteínas teciduais do que por proteínas plasmáticas é 'puxado' para fora do sangue, resultando em Vd alto."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em movimento: calculando uma dose de ataque"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A utilidade prática mais direta do Vd aparece quando se precisa atingir rapidamente uma concentração plasmática terapêutica — por exemplo, num paciente com infecção grave, em que esperar várias meias-vidas para o fármaco se acumular naturalmente seria perigoso. Nesse cenário, calcula-se uma dose de ataque (dose de carga), que usa exatamente a mesma fórmula do Vd, isolando a variável dose."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Cálculo de uma dose de ataque a partir do Vd",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Definir a concentração-alvo",
+          "explicacao": "O médico determina, a partir de referências farmacológicas, qual concentração plasmática (Cp-alvo) é necessária para o efeito terapêutico desejado — por exemplo, a faixa terapêutica de um antiarrítmico ou de um antibiótico com dosagem sérica validada."
+        },
+        {
+          "numero": 2,
+          "titulo": "Obter o Vd do fármaco para aquele paciente",
+          "explicacao": "O Vd de população, disponível em literatura farmacológica, é ajustado pelo peso do paciente (Vd costuma ser expresso em L/kg). Um paciente de 70 kg com Vd populacional de 0,7 L/kg tem Vd estimado de 49 litros."
+        },
+        {
+          "numero": 3,
+          "titulo": "Aplicar a fórmula invertida",
+          "explicacao": "Como Vd = Dose / Cp, isolando a dose obtém-se Dose de ataque = Vd × Cp-alvo. Essa é a quantidade de fármaco que, distribuída pelo volume aparente Vd, produzirá exatamente a concentração plasmática desejada logo após a administração."
+        },
+        {
+          "numero": 4,
+          "titulo": "Resultado: concentração-alvo atingida em uma única dose",
+          "explicacao": "Diferentemente da dose de manutenção (que compensa a eliminação contínua e leva várias meias-vidas para atingir o estado de equilíbrio), a dose de ataque usa o Vd para 'preencher' de uma vez o espaço aparente de distribuição, alcançando o alvo terapêutico já na primeira administração."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Note que esse cálculo não exige saber quanto fármaco foi para o fígado ou para o músculo — exige apenas o Vd (um número tabelado, típico daquele fármaco) e a concentração-alvo desejada. É a mesma lógica indireta da definição: o Vd permite calcular a dose sem nunca precisar medir a distribuição tecidual diretamente."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para consolidar: Vd alto significa que o fármaco se escondeu bem do plasma — provavelmente é lipossolúvel e se distribuiu amplamente pelos tecidos. Vd baixo significa que o fármaco ficou majoritariamente no sangue — provavelmente é hidrofílico ou muito ligado a proteínas plasmáticas. Nenhum dos dois julgamentos precisa de biópsia; ambos vêm apenas da relação dose/concentração plasmática."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O Vd depende diretamente do tripé perfusão-permeabilidade-ligação descrito no bloco anterior desta mesma família — é a expressão numérica final de tudo o que aquele tripé determina qualitativamente. E o Vd, por si só, ainda não conta toda a história quantitativa da farmacocinética: ele descreve para onde o fármaco vai, mas não descreve a velocidade com que o organismo o elimina. Essa segunda metade da equação pertence ao clearance, parâmetro que mede a eficiência de depuração do fármaco pelo corpo e que, junto ao Vd, determina a meia-vida de eliminação. O clearance será tratado em bloco próprio, ainda não escrito neste módulo — aqui fica registrada apenas a conexão: Vd e clearance são as duas metades independentes que, juntas, permitem prever toda a curva de concentração plasmática ao longo do tempo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Clinicamente, o Vd também explica por que certas intoxicações são mais difíceis de tratar por hemodiálise. Fármacos com Vd muito alto (como os antidepressivos tricíclicos ou a digoxina) estão, na sua maior parte, sequestrados nos tecidos e não circulando no plasma — por isso a diálise, que só consegue remover o que está no sangue, tem eficácia limitada nessas intoxicações, mesmo que o paciente esteja gravemente sintomático."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "volume de distribuição",
+      "origem": "do latim volumen (algo enrolado, e por extensão, o espaço ocupado por um corpo) + distribuere (repartir em partes)",
+      "significado": "literalmente, 'o espaço equivalente ao qual a substância teria sido repartida'",
+      "explicacao": "O termo é um composto direto da farmacocinética do século XX, criado para descrever um conceito puramente matemático — não existia palavra prévia para nomear um volume que não corresponde a nenhum espaço anatômico real. Os farmacocineticistas escolheram 'volume' propositalmente, mesmo sabendo que geraria confusão, porque a unidade de medida (litros) é a mesma de um volume real; o nome descreve a matemática do cálculo, não a anatomia do fenômeno. É um dos poucos termos médicos em que o próprio nome avisa, para quem já entende a definição, que se trata de um artifício de cálculo — e não de uma estrutura que se possa apontar num corpo dissecado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar — e onde ela quebra"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🧊",
+      "conteudo": "Imagine que você despeja um copo de xarope concentrado numa banheira cheia d'água e, sem saber o volume da banheira, quer descobri-lo apenas provando a mistura. Se a água estiver bem doce, você conclui que a banheira é pequena — o xarope não teve muito espaço para se diluir. Se a água estiver quase sem gosto, você conclui que a banheira é enorme — o xarope se diluiu bastante. É exatamente assim que o Vd é calculado: a 'doçura' da amostra (a concentração plasmática) é usada para inferir o tamanho do 'recipiente' (o volume de distribuição), sem nunca medir a banheira com fita métrica. A quebra da analogia é o ponto mais importante deste bloco: numa banheira real, o xarope nunca poderia se diluir num volume maior do que a própria banheira. Mas o Vd pode superar — e com frequência supera muito — o volume corporal total real de um adulto (cerca de 42 litros). Fármacos como a digoxina chegam a Vd de 500 litros ou mais num paciente de 70 kg. Isso é possível porque o fármaco não está apenas 'diluído' em água corporal: ele está sendo ativamente sequestrado, ligado e concentrado dentro de tecidos específicos (proteínas musculares, gordura), de um jeito que nenhum líquido comum conseguiria fazer com um soluto dissolvido. O Vd alto não significa uma banheira maior — significa que o fármaco se agarrou a algo dentro da banheira de um jeito que a água sozinha nunca faria."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Vd pode ser, e frequentemente é, maior que o volume corporal real de água e tecidos de um paciente. Isso não é um erro de cálculo — é a assinatura numérica de um fármaco que se distribui e se liga fortemente a tecidos, deixando pouquíssima quantidade livre no plasma."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se dois fármacos diferentes tivessem exatamente o mesmo Vd, isso garantiria que eles se distribuem pelos mesmos tecidos, nas mesmas proporções?",
+      "resposta": "Não necessariamente. O Vd é um número agregado — ele resume, num único valor, o resultado líquido de toda a distribuição, mas não revela em quais tecidos específicos o fármaco se acumulou. Dois fármacos podem chegar ao mesmo Vd por caminhos completamente diferentes: um pode se concentrar principalmente em tecido adiposo por lipossolubilidade, enquanto outro atinge o mesmo Vd por ligação intensa a proteínas musculares, sem se acumular em gordura nenhuma. Isso importa clinicamente: se um paciente precisar de hemodiálise para remover o fármaco numa intoxicação, o Vd sozinho não basta para prever se a diálise será eficaz — depende também de onde, especificamente, o fármaco está retido e da rapidez com que ele consegue voltar ao plasma a partir desses tecidos. O Vd informa 'quanto' o fármaco se afastou do plasma, não 'onde exatamente' ele está."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Vd como volume hipotético — e por que ele pode superar o corpo real",
+      "descricao": "Diagrama comparando dois cenários lado a lado. Cenário A: um fármaco hipotético com Vd baixo, representado por um recipiente pequeno (do tamanho do compartimento plasmático) totalmente preenchido por moléculas do fármaco em alta concentração. Cenário B: um fármaco com Vd alto, representado por um recipiente gigante (maior que a silhueta de um corpo humano adulto desenhada ao fundo, para mostrar a desproporção), com poucas moléculas do fármaco dispersas dentro dele, simbolizando baixa concentração plasmática apesar da mesma dose administrada. Seta e legenda explicando que o recipiente é hipotético, não anatômico. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial educacional, fundo transparente, estilo de livro-texto de farmacologia moderno, em português. Dois painéis lado a lado. Painel esquerdo, rotulado 'Vd BAIXO': um pequeno recipiente cilíndrico transparente do tamanho aproximado de uma silhueta humana simplificada ao fundo, contendo muitos pontos coloridos densos representando moléculas de fármaco em alta concentração; rótulo abaixo 'fármaco retido no plasma'. Painel direito, rotulado 'Vd ALTO': um recipiente cilíndrico transparente claramente maior que a silhueta humana simplificada ao fundo (para evidenciar que ultrapassa o volume corporal real), contendo poucos pontos coloridos dispersos, mesma quantidade total de pontos que o painel esquerdo mas parecendo mais diluído; rótulo abaixo 'fármaco sequestrado em tecidos'. Uma legenda no rodapé, em texto simples, explicando 'Vd é um volume hipotético calculado a partir de dose e concentração plasmática — não corresponde a um espaço anatômico real'. Cores suaves, alto contraste, sem fotorrealismo, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-003",
+        "titulo": "Distribuição de Fármacos — Visão Geral",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "O Vd é a expressão numérica do tripé perfusão-permeabilidade-ligação descrito na visão geral de distribuição. É preciso já entender por que a distribuição é desigual entre tecidos antes de quantificar esse fenômeno num único parâmetro."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-01-006-02",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Clearance (Depuração)",
+        "mecanismo_conexao": "Vd e clearance são as duas metades independentes que, juntas, determinam a meia-vida de eliminação e toda a curva de concentração plasmática ao longo do tempo. O Vd descreve para onde o fármaco vai; o clearance, ainda não detalhado, vai descrever a velocidade com que o organismo o remove.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Manejo de intoxicações e limitação da hemodiálise",
+        "mecanismo_conexao": "Fármacos com Vd muito alto (digoxina, antidepressivos tricíclicos) estão majoritariamente sequestrados em tecidos, não no plasma — por isso a hemodiálise, que só remove o que está circulando no sangue, tem eficácia limitada nessas intoxicações, mesmo com o paciente gravemente sintomático.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-003-01-fc01",
+      "pergunta": "Por que o volume de distribuição (Vd) precisa ser calculado indiretamente, a partir de dose e concentração plasmática, em vez de medido diretamente nos tecidos?",
+      "resposta": "Porque a única amostra biológica que se pode colher de um paciente vivo, de forma repetida e segura, é sangue. Não é possível biopsiar todos os órgãos para somar quanto fármaco foi para cada um. O Vd resolve isso partindo de dois dados sempre disponíveis — a dose administrada (conhecida com exatidão) e a concentração plasmática (medida por dosagem sérica) — e infere, a partir da relação entre eles, o quanto o fármaco se afastou do plasma. É um cálculo indireto por necessidade, não por escolha metodológica.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["volume-de-distribuicao", "farmacocinetica", "distribuicao"]
+    },
+    {
+      "card_id": "s4-farma1-01-003-01-fc02",
+      "pergunta": "Um fármaco X tem Vd de 4 litros num adulto de 70 kg. Um fármaco Y tem Vd de 420 litros no mesmo paciente. O que essa diferença revela sobre o comportamento de cada fármaco, sem nenhuma outra informação?",
+      "resposta": "O fármaco X, com Vd próximo do volume plasmático real (cerca de 3 a 4 litros), permanece majoritariamente dentro do compartimento vascular — é provavelmente pouco lipossolúvel e/ou muito ligado a proteínas plasmáticas, o que impede sua saída para os tecidos. O fármaco Y, com Vd dez vezes maior que o volume corporal total de água (cerca de 42 litros), está majoritariamente sequestrado em tecidos — é provavelmente muito lipossolúvel e/ou tem afinidade forte por proteínas teciduais, deixando apenas uma fração mínima livre no plasma. Nenhuma dessas conclusões exige saber em qual tecido específico o fármaco Y se acumulou — apenas a magnitude do Vd já indica o grau de fuga do plasma.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["volume-de-distribuicao", "interpretacao-vd", "lipossolubilidade"]
+    },
+    {
+      "card_id": "s4-farma1-01-003-01-fc03",
+      "pergunta": "Calcule a dose de ataque necessária para atingir uma concentração plasmática-alvo de 2 mg/L de um fármaco com Vd de 0,5 L/kg, num paciente de 80 kg.",
+      "resposta": "Primeiro, calcula-se o Vd absoluto do paciente: 0,5 L/kg × 80 kg = 40 litros. Em seguida, aplica-se a fórmula invertida do Vd (Dose = Vd × Cp-alvo): 40 L × 2 mg/L = 80 mg. Essa é a dose de ataque que, distribuída pelo volume aparente de 40 litros, produzirá a concentração plasmática de 2 mg/L logo após a administração — sem precisar esperar múltiplas meias-vidas de acúmulo, como aconteceria com uma dose de manutenção isolada.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["volume-de-distribuicao", "dose-de-ataque", "calculo"]
+    },
+    {
+      "card_id": "s4-farma1-01-003-01-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Um Vd de 500 litros é fisicamente impossível, porque nenhum adulto tem 500 litros de água ou tecido no corpo — deve haver um erro no cálculo.'",
+      "resposta": "Falso. O Vd não é um volume anatômico real; é um volume hipotético, calculado pela razão entre dose administrada e concentração plasmática medida. Um Vd de 500 litros (muito maior que o volume corporal total de água de um adulto, cerca de 42 litros) é perfeitamente possível e ocorre com fármacos como a digoxina — significa apenas que uma fração muito pequena da dose permaneceu no plasma, porque a maior parte está fortemente ligada e sequestrada em tecidos específicos (no caso da digoxina, principalmente músculo esquelético e cardíaco). A armadilha é tratar 'volume' como sinônimo de 'espaço físico ocupável' — o Vd é uma proporção matemática expressa na unidade de um volume, não uma medida de espaço real.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["volume-de-distribuicao", "armadilha-conceitual", "digoxina"]
+    },
+    {
+      "card_id": "s4-farma1-01-003-01-fc05",
+      "pergunta": "Por que a hemodiálise costuma ser pouco eficaz para tratar intoxicação por fármacos com Vd muito alto, mesmo quando o paciente está gravemente sintomático?",
+      "resposta": "A hemodiálise só consegue remover o que está circulando no compartimento vascular (sangue). Um fármaco com Vd muito alto, por definição, tem a maior parte de sua quantidade total sequestrada em tecidos, e não no plasma — mesmo dosando o sangue continuamente, a diálise só acessa a fração pequena que está circulando a cada momento, enquanto a maior parte permanece retida fora do alcance do procedimento. É por isso que intoxicações por digoxina ou antidepressivos tricíclicos (ambos com Vd alto) respondem mal à diálise, ao contrário de intoxicações por fármacos com Vd baixo, que ficam predominantemente no plasma e são removidos com mais eficiência.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["volume-de-distribuicao", "hemodialise", "intoxicacao"]
+    },
+    {
+      "card_id": "s4-farma1-01-003-01-fc06",
+      "pergunta": "Dois fármacos diferentes têm exatamente o mesmo Vd. Isso garante que eles se acumulam nos mesmos tecidos, nas mesmas proporções?",
+      "resposta": "Não. O Vd é um número agregado que resume o resultado líquido da distribuição, mas não especifica em quais tecidos o fármaco se concentrou. Dois fármacos podem alcançar o mesmo Vd por rotas completamente diferentes — um por acúmulo em tecido adiposo (alta lipossolubilidade), outro por ligação intensa a proteínas musculares — sem que nenhum dos dois se acumule no tecido do outro. Isso tem implicação prática: o Vd sozinho não permite prever a eficácia de intervenções como hemodiálise ou a velocidade de retorno do fármaco ao plasma a partir dos tecidos, porque essas respostas dependem de onde, especificamente, o fármaco está retido.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["volume-de-distribuicao", "contrafactual", "distribuicao-tecidual"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-003-01-caso01",
+      "titulo": "Dose de ataque de digoxina numa fibrilação atrial com resposta ventricular rápida",
+      "apresentacao": "Mulher de 74 anos chega ao pronto-socorro com fibrilação atrial de início recente e frequência cardíaca de 148 bpm, hipotensa e sintomática. O cardiologista decide iniciar digoxina intravenosa para controle de frequência, mas sabe que doses de manutenção isoladas levariam dias para atingir concentração plasmática terapêutica — tempo que a paciente, instável, não tem. Ele então calcula uma dose de ataque, usando o Vd populacional da digoxina (cerca de 7 L/kg, um dos mais altos entre os fármacos de uso comum) para atingir rapidamente a concentração-alvo, fracionando a dose total em administrações espaçadas para reduzir risco de toxicidade aguda.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A digoxina tem afinidade muito alta por proteínas do músculo esquelético e cardíaco (a bomba Na+/K+-ATPase, seu próprio alvo farmacológico), o que a sequestra amplamente para fora do plasma — daí seu Vd extremamente elevado."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O cálculo da dose de ataque usa exatamente a fórmula Dose = Vd × Cp-alvo, com o Vd alto da digoxina exigindo uma dose total maior do que se esperaria de um fármaco com distribuição predominantemente plasmática."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Se o médico ignorasse o Vd elevado e administrasse uma dose pensada para um fármaco de Vd baixo, a concentração plasmática ficaria muito aquém do necessário para o efeito cronotrópico negativo desejado — o controle de frequência falharia."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sem dose de ataque adequada, a paciente permaneceria taquicárdica e hipotensa por mais tempo, com risco de descompensação hemodinâmica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Com a dose de ataque calculada corretamente a partir do Vd, a concentração-alvo é atingida rapidamente, mas o mesmo Vd alto que exigiu essa dose maior é também o motivo pelo qual, em caso de toxicidade digitálica aguda, a hemodiálise seria ineficaz — o fármaco estaria majoritariamente ligado a tecidos, fora do alcance da diálise, exigindo antídoto específico (anticorpos anti-digoxina) em vez de depuração extracorpórea."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra as duas faces do Vd no mesmo fármaco: por um lado, ele é a ferramenta que permite calcular corretamente a dose de ataque necessária para uma resposta clínica rápida; por outro, o mesmo valor alto de Vd que exige essa dose maior é o motivo pelo qual medidas de remoção extracorpórea falham em caso de intoxicação — reforçando que Vd descreve o grau de fuga do fármaco para os tecidos, com consequências terapêuticas em ambas as direções.",
+      "disciplinas_relacionadas": ["farmacologia", "cardiologia", "clinica"],
+      "diagnostico_revelado": "Fibrilação atrial com resposta ventricular rápida, tratada com dose de ataque de digoxina calculada a partir do Vd populacional do fármaco.",
+      "tratamento_resumido": "Dose de ataque de digoxina fracionada, guiada pelo Vd populacional (~7 L/kg) e ajustada por função renal, seguida de dose de manutenção menor para sustentar a concentração terapêutica atingida."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-003-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "molecular"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Capítulo 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Capítulo 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang & Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 9 — Pharmacokinetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

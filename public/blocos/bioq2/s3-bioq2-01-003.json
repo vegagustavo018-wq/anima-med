@@ -7,48 +7,258 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Acoplamento de Reações — Como a Célula Paga o Impossível",
+    "subtitulo": "Como uma reação desfavorável acontece sem violar a termodinâmica?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 2,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "acoplamento",
+      "delta-g",
+      "atp",
+      "intermediarios",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "O truque de somar ΔG para tornar reações desfavoráveis possíveis",
-  "narrativa": [],
+  "resumo_conciso": "Acoplamento de reações é a estratégia pela qual a célula faz processos desfavoráveis acontecerem sem quebrar a termodinâmica: ela soma uma reação com ΔG positivo a outra com ΔG negativo maior em módulo, tornando o conjunto favorável. Isso só funciona quando as reações estão mecanicamente ligadas, geralmente por uma enzima, um intermediário comum ou transferência de grupo. ATP é o exemplo central, mas a lógica vale também para gradientes iônicos, NADH e outros doadores energéticos.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você precisa empurrar um carrinho morro acima. Sozinho, ele não sobe. Mas se o carrinho estiver preso por uma corda a um peso maior descendo do outro lado, o conjunto se move. A célula faz uma versão química desse truque o tempo inteiro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Muitas coisas essenciais são desfavoráveis isoladamente: sintetizar moléculas, transportar íons contra gradiente, ativar substratos. A célula não força essas reações por vontade; ela as amarra a reações favoráveis."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema o acoplamento resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é que a vida precisa construir ordem local, mas muitas etapas de construção têm ΔG positivo. O acoplamento permite que uma queda energética, como a hidrólise de ATP, pague uma subida energética. O resultado total precisa ter ΔG negativo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: não basta uma reação favorável acontecer perto de uma desfavorável. Elas precisam estar acopladas por um mecanismo comum para que os ΔG se somem."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a soma de ΔG paga a conta?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se uma reação necessária tem ΔG positivo, ela não segue sozinha. Mas se a enzima a liga à hidrólise de ATP, e a soma das duas quedas fica negativa, o processo total se torna favorável. A célula paga o impossível transformando-o em parte de um pacote possível."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "acoplamento",
+      "origem": "de acoplar, unir duas peças para funcionarem juntas",
+      "significado": "ligar processos de modo que o movimento de um obrigue o outro a seguir",
+      "explicacao": "A palavra é boa porque evita uma ideia vaga de energia flutuando. No acoplamento, as reações ficam presas por um intermediário, uma enzima ou um gradiente."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: energia liberada sem acoplamento vira calor. Energia liberada com acoplamento vira trabalho químico."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se ATP fosse hidrolisado longe da reação que precisa de energia?",
+      "resposta": "A energia seria dissipada como calor e não pagaria a reação desfavorável. Para acoplar, a hidrólise precisa estar conectada ao processo por um mecanismo, como fosforilação de intermediário ou mudança conformacional da proteína."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "corda",
+      "conteudo": "Pense em duas cargas ligadas por uma corda em uma polia. A carga pesada descendo é a reação exergônica; a carga leve subindo é a reação endergônica. A corda é o intermediário comum ou a enzima. Se a corda arrebenta, a queda continua, mas não levanta nada. A analogia quebra porque reações químicas acopladas envolvem transferência de grupos e mudanças eletrônicas."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Acoplamento por soma de ΔG",
+      "descricao": "Esquema mostrando reação endergônica, hidrólise de ATP e reação acoplada total com ΔG negativo.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. Três linhas: reação A -> B com ΔG positivo; ATP -> ADP + Pi com ΔG negativo; reação acoplada A + ATP -> B ativado + ADP com ΔG total negativo. Incluir uma enzima no centro conectando as reações e rótulo 'intermediário comum'.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse princípio aparece em glicólise, síntese de proteínas, bomba de sódio e potássio, ativação de ácidos graxos e contração muscular. Sempre pergunte: qual queda energética está pagando esta subida?"
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-000",
+        "titulo": "Bioenergética — Visão do Módulo",
+        "relevancia": "base_necessaria",
+        "explicacao": "A visão do módulo apresenta a ideia de reações favoráveis e desfavoráveis."
+      },
+      {
+        "bloco_id": "s3-bioq2-01-001-02",
+        "titulo": "Energia Livre de Gibbs (ΔG) e Espontaneidade",
+        "relevancia": "base_necessaria",
+        "explicacao": "O acoplamento depende de somar ΔG de reações ligadas."
+      },
+      {
+        "bloco_id": "s3-bioq2-01-002",
+        "titulo": "ATP — A Moeda Energética Universal — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "ATP é o doador energético mais comum para acoplar processos celulares."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Acoplamento Energético e Intermediários Comuns",
+        "mecanismo_conexao": "O filho aprofunda a forma molecular mais importante do acoplamento por intermediários compartilhados.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Na+/K+-ATPase — Transporte Ativo Primário",
+        "mecanismo_conexao": "A bomba acopla hidrólise de ATP ao transporte de íons contra gradientes.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Ativação de Ácidos Graxos por Acil-CoA Sintetase",
+        "mecanismo_conexao": "A célula usa ATP para ativar ácidos graxos antes da beta-oxidação.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "Por Que a Ligação Fosfoanidrido É 'Rica em Energia'",
+        "tipo_relacao": "FUNDAMENTA",
+        "explicacao": "A hidrólise favorável do ATP é uma das quedas energéticas usadas no acoplamento."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-003-fc01",
+      "tipo": "por_que",
+      "pergunta": "Por que uma reação exergônica precisa estar mecanicamente acoplada a uma endergônica?",
+      "resposta": "Porque energia liberada sem conexão vira calor. Para pagar a reação desfavorável, as duas precisam compartilhar intermediário, enzima, transferência de grupo ou mudança conformacional.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "acoplamento",
+        "delta-g"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-003-fc02",
+      "tipo": "mecanismo",
+      "pergunta": "Como a soma de ΔG explica o acoplamento?",
+      "resposta": "Uma reação com ΔG positivo pode seguir se for ligada a outra com ΔG negativo maior em módulo. O ΔG total fica negativo, tornando o processo acoplado favorável.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "delta-g",
+        "energia-livre"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-003-fc03",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha de dizer que ATP 'dá energia' para qualquer reação próxima?",
+      "resposta": "Proximidade não basta. ATP precisa ser hidrolisado ou transferir fosfato dentro de um mecanismo que obrigue a reação alvo a seguir.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "atp",
+        "armadilha"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-003-fc04",
+      "tipo": "clinico",
+      "pergunta": "Por que falha de ATP prejudica transporte ativo?",
+      "resposta": "Bombas como Na+/K+-ATPase dependem de acoplamento entre hidrólise de ATP e mudança conformacional. Sem ATP, o transporte contra gradiente perde pagamento energético.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "transporte-ativo",
+        "clinico"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-003-caso01",
+      "titulo": "Bomba iônica sem pagamento energético",
+      "apresentacao": "Em uma situação de hipóxia grave, células passam a produzir menos ATP. Uma das primeiras consequências é a dificuldade de manter gradientes iônicos, porque bombas dependentes de ATP perdem capacidade de trabalhar contra gradiente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Redução de oxigênio limita fosforilação oxidativa e diminui ATP disponível."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Bombas iônicas ATPases dependem de acoplamento entre hidrólise de ATP e mudança conformacional."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O transporte contra gradiente falha progressivamente."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Tecidos de alta demanda, como cérebro e coração, perdem função rapidamente."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem restauração energética, edema celular, despolarização e lesão podem progredir."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que acoplamento não é abstração: a bomba só transporta íons porque a hidrólise de ATP está fisicamente ligada à mudança conformacional.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Fisiologia",
+        "Emergência"
+      ],
+      "diagnostico_revelado": "Falha energética celular por hipóxia, usada como correlação bioquímica.",
+      "tratamento_resumido": "Restaurar oxigenação e perfusão conforme a causa; detalhes pertencem aos blocos clínicos de emergência."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-003-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'Acoplamento por soma de ΔG'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Seções de acoplamento energético.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "mecanismo"
   ]

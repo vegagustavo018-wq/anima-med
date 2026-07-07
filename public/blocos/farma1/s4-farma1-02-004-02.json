@@ -5,50 +5,332 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Eficácia Máxima (Emax)",
+    "subtitulo": "Por que um fármaco que age com dose baixíssima pode ainda assim não ser suficiente para o seu paciente?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "eficacia",
+      "emax",
+      "curva-dose-resposta",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Teto de efeito; por que eficácia importa mais que potência clinicamente",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior já separou duas perguntas que a linguagem cotidiana embaralha: quanta dose um fármaco precisa para começar a agir (potência) e até onde esse fármaco consegue levar o efeito quando a dose é maximizada (eficácia). Este bloco fecha o módulo aprofundando exatamente a segunda pergunta. Eficácia máxima, ou Emax, é o teto de efeito que um fármaco consegue produzir — o platô da curva dose-resposta, o ponto em que aumentar ainda mais a dose deixa de aumentar o efeito. Esse teto não é uma limitação de quantidade (falta de fármaco); é uma limitação de qualidade da ativação: mesmo com 100% dos receptores ocupados, alguns fármacos não conseguem converter essa ocupação total em resposta celular máxima. É por isso que a eficácia costuma decidir a escolha terapêutica com mais frequência do que a potência — um fármaco muito potente, mas de teto baixo, pode ser inútil diante de um quadro clínico grave, enquanto um fármaco pouco potente, mas de teto alto, resolve o problema com dose maior, porém eficaz. O caso mais nítido dessa lógica na prática clínica é a comparação entre anti-inflamatórios não esteroidais e opioides fortes no controle da dor intensa: a diferença não está em qual precisa de menos miligramas, está em qual tem teto suficiente para aquele grau de dor. Com isso, fecha-se a distinção completa do módulo: potência é onde a curva começa a subir; eficácia é até onde ela consegue chegar.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já sabe, do bloco anterior, que existem duas perguntas diferentes escondidas atrás da ideia de 'fármaco forte': quanta dose é necessária para começar a agir, e quanto efeito máximo o fármaco consegue produzir. A primeira já tem nome e será aprofundada à parte. Falta fechar a segunda: o que é, exatamente, esse teto de efeito — e por que ele costuma pesar mais na decisão clínica do que a dose de partida."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que esse teto precisa existir"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pense no que aconteceria se não houvesse teto nenhum: cada miligrama adicional de fármaco produziria efeito adicional, indefinidamente, até doses absurdas. Isso não existe na biologia real, e há uma razão estrutural para isso. Um fármaco atua sobre um número finito de receptores, e a cascata que cada receptor pode disparar tem um limite intrínseco de intensidade — a maquinaria intracelular satura. Em algum ponto, aumentar a dose deixa de significar 'mais efeito' e passa a significar apenas 'mais fármaco circulando sem função adicional'. Sem esse teto, seria impossível prever a dose máxima útil de qualquer fármaco, e toda decisão terapêutica ficaria sem um limite racional de resposta esperada."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: todo fármaco tem um teto de efeito porque a resposta biológica que ele provoca satura — não porque falte fármaco, mas porque a maquinaria que ele aciona tem um limite de intensidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esse teto aparece resolvido na farmacologia — sem nomeá-lo ainda"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução conceitual foi simplesmente medir esse teto e tratá-lo como uma propriedade própria do fármaco, tão relevante quanto a dose necessária para começar a agir. Em vez de descrever o efeito de um fármaco apenas como 'forte' ou 'fraco', a farmacologia passou a registrar, na mesma curva dose-resposta, dois números separados: a posição em que a curva começa a subir e a altura exata em que ela para de subir. Esse segundo número — o platô — passou a ser tratado como uma característica mensurável, comparável entre fármacos diferentes, e clinicamente decisiva."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que esse teto é feito"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O teto de efeito é determinado pela combinação de dois fatores no nível do receptor. O primeiro é a ocupação: existe um número finito de receptores disponíveis, e uma vez que todos estejam ocupados pelo fármaco, adicionar mais moléculas não aumenta mais nada — não há onde mais elas se encaixarem. O segundo fator, mais sutil e mais importante, é a eficácia intrínseca do fármaco: a capacidade que ele tem, ao se ligar, de efetivamente ativar a mudança conformacional do receptor e disparar a cascata intracelular por completo. Dois fármacos podem ocupar 100% dos mesmos receptores e ainda assim produzir efeitos finais muito diferentes, porque um aciona a cascata com força total e o outro só a aciona parcialmente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essa eficácia intrínseca — não a quantidade de fármaco — que define a altura do platô. Por isso, tentar 'forçar' mais efeito aumentando a dose além do ponto de ocupação total dos receptores não funciona: não há mais receptor livre para se ligar, e o receptor já ligado já está entregando toda a ativação de que é capaz. O excesso de dose, nesse ponto, deixa de ter função terapêutica e passa a ter apenas risco de efeito adverso — um tema que pertence à margem de segurança, não a este bloco."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "**Eficácia máxima (Emax)** é o teto de efeito que um fármaco consegue produzir, representado pela altura do platô na curva dose-resposta. Diferente de potência, que é sobre *onde* a curva começa a subir, eficácia é sobre *até onde* ela consegue chegar. Um fármaco pode precisar de dose mínima e ainda assim ter Emax baixo; outro pode precisar de dose alta e ter Emax muito mais alto."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona na prática clínica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O exemplo mais direto dessa lógica está no controle da dor. Os anti-inflamatórios não esteroidais (AINEs) atuam inibindo a ciclo-oxigenase e reduzindo a síntese de prostaglandinas — um mecanismo eficiente para dor leve a moderada, com boa potência relativa (doses baixas já produzem efeito analgésico mensurável). Mas o teto analgésico dos AINEs é limitado: mesmo na dose máxima segura, eles não conseguem controlar uma dor pós-operatória intensa ou uma dor oncológica avançada. Não é questão de dose insuficiente — é que o mecanismo pelo qual atuam tem um limite estrutural de quanto alívio pode gerar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os opioides fortes, como a morfina, atuam em receptores opioides mu e conseguem, como agonistas totais desse receptor, ativar a cascata analgésica com intensidade muito maior — o teto de efeito é muito mais alto. Por isso, diante de uma dor intensa, a decisão clínica não é 'aumentar a dose do AINE até funcionar' — porque não vai funcionar, o platô já foi atingido — e sim trocar de classe farmacológica para uma com teto mais alto. Esse é o ponto onde a distinção entre potência e eficácia deixa de ser um detalhe teórico e se torna a lógica por trás de uma prescrição real."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] Os tetos analgésicos relativos entre classes e fármacos específicos variam conforme o tipo e a intensidade da dor, a via de administração e fatores individuais do paciente; a comparação aqui descrita ilustra o princípio geral de potência versus eficácia, não uma equivalência analgésica exata entre fármacos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa ideia se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A eficácia máxima é o que diferencia, mais adiante, agonistas totais de agonistas parciais: um agonista parcial, mesmo ocupando 100% dos receptores, nunca alcança o Emax de um agonista total no mesmo receptor — sua eficácia intrínseca é estruturalmente menor, não corrigível por dose. A mesma lógica reaparece na escolha entre fármacos de uma mesma classe terapêutica: comparar o Emax de duas opções costuma informar mais sobre qual delas resolve o problema clínico do que comparar suas potências."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Com este bloco, fecha-se a distinção completa que abriu o módulo: potência é sobre onde a curva começa — a dose de partida, ligada à afinidade pelo alvo e à farmacocinética. Eficácia é sobre até onde a curva consegue ir — o teto de efeito, ligado à capacidade de ativação da cascata. As duas propriedades vivem em eixos diferentes da mesma curva e raramente decidem a mesma coisa: potência costuma influenciar conveniência posológica; eficácia costuma influenciar se o problema clínico será, de fato, resolvido."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Emax",
+      "origem": "abreviação do inglês E (effect, efeito) + max (maximum, máximo)",
+      "significado": "'efeito máximo' — a notação consagrada na farmacologia quantitativa para o platô da curva dose-resposta",
+      "explicacao": "A notação Emax não vem do latim ou do grego, como boa parte do vocabulário médico clássico — é uma abreviação funcional, criada dentro da própria farmacologia matemática do século XX, quando pesquisadores passaram a descrever curvas dose-resposta com equações explícitas (como a equação de Hill). Precisavam de um símbolo compacto para representar o parâmetro que descreve o platô da curva, e Emax se consolidou como convenção internacional. É um nome jovem, comparado a termos como 'epitélio' ou 'eficácia': nasceu já como notação quantitativa, não como observação anatômica descrita séculos antes. Isso reflete a própria história da farmacologia — uma disciplina que se tornou rigorosamente quantitativa relativamente tarde, apoiada em equações de curvas e não apenas em descrição qualitativa de efeitos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a distinção"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏋️",
+      "conteudo": "Pense em dois atletas levantando peso. **A potência** é o quanto de peso mínimo cada um precisa para começar a sentir esforço perceptível — um atleta destreinado já sente esforço com 5 kg, um atleta experiente só sente algo a partir de 40 kg. **A eficácia (Emax)** é o peso máximo que cada um consegue efetivamente levantar, não importa quanto tempo treinem naquele dia — existe um teto real de força, determinado pela fisiologia muscular daquele atleta específico, e nenhuma quantidade de tentativa adicional além desse teto resulta em mais peso levantado. Um atleta pode 'sentir esforço fácil' com pouco peso (alta sensibilidade, isto é, alta potência) e ainda assim ter um teto de levantamento baixo (baixa eficácia) — enquanto outro precisa de mais peso para começar a sentir algo, mas consegue levantar muito mais no limite. A analogia quebra num ponto importante: um atleta pode aumentar seu teto real com treino ao longo de meses, enquanto o Emax de um fármaco é uma propriedade farmacológica fixa daquela molécula naquele receptor — não é algo que 'treina' ou aumenta com o tempo de uso; só muda trocando de fármaco ou de mecanismo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Um médico, diante de um paciente com dor intensa mal controlada por um AINE em dose máxima, decide simplesmente dobrar a dose do mesmo AINE. Por que essa conduta tende a falhar, e o que ela revela sobre a diferença entre potência e eficácia?",
+      "resposta": "Tende a falhar porque a dose máxima do AINE já havia levado o efeito ao seu platô — ao Emax daquele mecanismo. Dobrar a dose não desloca o teto para cima; apenas mantém o fármaco no mesmo patamar de efeito já atingido, sem ganho analgésico adicional, e ainda aumenta o risco de efeitos adversos (gástricos, renais) sem benefício terapêutico correspondente. O erro do raciocínio é tratar o problema como se fosse de potência insuficiente (bastaria mais dose) quando, na verdade, é um problema de eficácia insuficiente (o mecanismo tem teto baixo demais para aquele grau de dor). A conduta correta é trocar para uma classe com Emax mais alto para aquele tipo de dor, como um opioide, e não insistir em mais miligramas do mesmo fármaco."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Imagem"
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Emax: o teto da curva dose-resposta",
+      "descricao": "Gráfico didático com eixo horizontal (dose, escala logarítmica) e eixo vertical (efeito, de 0% a 100%), mostrando duas curvas em forma de S: uma curva de um AINE hipotético, atingindo platô em cerca de 40% do efeito máximo possível, mesmo em dose alta; e uma curva de um opioide forte hipotético, atingindo platô em cerca de 95% do efeito máximo. Linha horizontal tracejada em cada platô, com seta vertical indicando 'Emax' para cada curva. Anotação destacando que a curva do opioide pode até começar a subir mais à direita (menos potente), mas termina muito mais alto (mais eficaz). Legenda em português. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Gráfico científico vetorial, fundo transparente, estilo de livro didático moderno. Eixo horizontal rotulado 'Dose (escala logarítmica)', eixo vertical rotulado 'Efeito analgésico (%)' de 0 a 100. Duas curvas sigmoides (formato em S) em cores contrastantes: curva 1 (laranja, rotulada 'AINE'), subindo relativamente cedo mas atingindo platô definido por linha horizontal tracejada em aproximadamente 40%; curva 2 (roxo, rotulada 'Opioide forte'), começando a subir mais à direita (mais dose necessária), mas atingindo platô em linha horizontal tracejada em aproximadamente 95%. Setas verticais curtas apontando de cada platô até o eixo vertical, rotuladas 'Emax (AINE)' e 'Emax (opioide)'. Pequena anotação de texto no gráfico: 'teto de efeito, não de dose'. Legenda simples no canto explicando as cores. Cores suaves, alto contraste, sem texturas fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-004",
+        "titulo": "Eficácia e Potência — Não São a Mesma Coisa (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume já estabelecida a distinção conceitual entre potência e eficácia como duas perguntas independentes sobre a curva dose-resposta. Aqui, aprofunda-se apenas o eixo da eficácia (Emax), sem reabrir a discussão sobre o que é potência."
+      },
+      {
+        "bloco_id": "s4-farma1-02-002",
+        "titulo": "Curva Dose-Resposta — Medir o Efeito (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Emax só existe como conceito porque a curva dose-resposta graduada tem um platô visível — sem essa curva como referência, 'teto de efeito' seria uma ideia abstrata sem representação gráfica."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Agonistas parciais e antagonistas",
+        "mecanismo_conexao": "O agonista parcial é definido precisamente como um fármaco cujo Emax é estruturalmente menor que o de um agonista total no mesmo receptor, mesmo com ocupação total — aplicação direta do conceito de eficácia intrínseca limitada.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Escada analgésica da dor (OMS)",
+        "mecanismo_conexao": "A lógica de subir de degrau na escada analgésica — de AINE para opioide fraco para opioide forte — é uma aplicação direta de buscar maior Emax quando o teto do degrau anterior é insuficiente para a intensidade da dor.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-004-02-fc01",
+      "pergunta": "Por que existe um teto de efeito (Emax) para qualquer fármaco, em vez de o efeito aumentar indefinidamente com a dose?",
+      "resposta": "Porque o fármaco atua sobre um número finito de receptores e a cascata intracelular que cada receptor pode disparar tem um limite de intensidade. Uma vez que todos os receptores disponíveis estejam ocupados e ativados ao máximo de sua capacidade, adicionar mais fármaco não gera mais efeito — não há receptor livre para se ligar, e o receptor já ligado já está entregando toda a ativação de que é capaz. O teto reflete saturação biológica, não uma falha da dose.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "emax",
+        "eficacia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-004-02-fc02",
+      "pergunta": "Dois fármacos ocupam 100% dos mesmos receptores, mas produzem efeitos finais muito diferentes. O que explica essa diferença, se a ocupação é idêntica?",
+      "resposta": "A diferença está na eficácia intrínseca de cada fármaco: a capacidade de, ao se ligar, efetivamente ativar a mudança conformacional do receptor e disparar a cascata intracelular por completo. Ocupação total não garante ativação total — um fármaco pode ocupar todo o receptor e ainda assim ativar a cascata apenas parcialmente, resultando em Emax mais baixo, enquanto outro converte a mesma ocupação em ativação máxima.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "emax",
+        "eficacia-intrinseca"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-004-02-fc03",
+      "pergunta": "Armadilha clínica: diante de dor intensa mal controlada por um AINE em dose máxima, por que simplesmente dobrar a dose do mesmo AINE tende a não funcionar?",
+      "resposta": "Porque a dose máxima já levou o efeito ao platô (Emax) daquele mecanismo — a inibição da ciclo-oxigenase tem um teto analgésico limitado, estruturalmente insuficiente para dor intensa. Dobrar a dose não desloca esse teto para cima; apenas mantém o efeito no mesmo patamar já atingido, enquanto aumenta o risco de efeitos adversos sem qualquer ganho terapêutico. A conduta correta é trocar de classe farmacológica para uma com Emax mais alto, como um opioide forte, não insistir em mais miligramas do mesmo fármaco.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "emax",
+        "dor",
+        "decisao-terapeutica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-004-02-fc04",
+      "pergunta": "Compare AINEs e opioides fortes em termos de potência e eficácia no controle da dor, e explique por que essa comparação costuma decidir a escolha terapêutica.",
+      "resposta": "Os AINEs costumam apresentar boa potência relativa (efeito analgésico mensurável já em doses baixas), mas um Emax limitado — mesmo em dose máxima segura, não controlam dor intensa. Os opioides fortes podem exigir doses maiores para iniciar efeito perceptível, mas alcançam, como agonistas totais do receptor opioide mu, um Emax muito mais alto. Diante de dor intensa, a decisão não depende de qual fármaco 'age com menos miligramas', e sim de qual tem teto suficiente para aquele grau de dor — por isso a eficácia, e não a potência, costuma determinar a escolha entre essas duas classes.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "emax",
+        "potencia",
+        "aines",
+        "opioides"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-004-02-fc05",
+      "pergunta": "O que a notação 'Emax' significa literalmente, e o que sua origem revela sobre a história da farmacologia como disciplina?",
+      "resposta": "Emax é a abreviação do inglês 'effect maximum' (efeito máximo), criada dentro da farmacologia matemática do século XX para representar, em equações de curvas dose-resposta (como a equação de Hill), o parâmetro que descreve o platô da curva. Diferente de termos clássicos vindos do grego ou latim, Emax nasceu já como notação quantitativa. Isso revela que a farmacologia se consolidou como disciplina rigorosamente matemática relativamente tarde, quando passou a descrever efeitos com parâmetros numéricos explícitos, e não apenas com descrição qualitativa.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "emax",
+        "etimologia",
+        "historia-da-farmacologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-004-02-caso01",
+      "titulo": "Dor pós-operatória mal controlada apesar de dose máxima de anti-inflamatório",
+      "apresentacao": "Mulher de 45 anos, no segundo dia pós-operatório de uma colecistectomia aberta, refere dor abdominal intensa (nota 8/10 na escala numérica), mesmo em uso de cetorolaco 30 mg intravenoso a cada 8 horas — dose máxima recomendada para o fármaco. A equipe cogita simplesmente aumentar a frequência das doses, mas o residente responsável opta por reavaliar a estratégia analgésica.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O trauma cirúrgico gera lesão tecidual extensa, ativando ciclo-oxigenase e liberando prostaglandinas em grande quantidade nas terminações nociceptivas — um estímulo álgico de alta intensidade."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O cetorolaco já está inibindo a ciclo-oxigenase na dose máxima seletiva; os receptores-alvo do mecanismo anti-inflamatório já estão sob efeito pleno daquele fármaco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O mecanismo de inibição da ciclo-oxigenase tem um Emax analgésico estruturalmente limitado, insuficiente para dor de grande intensidade — o platô de efeito já foi atingido, e nenhuma dose adicional do mesmo fármaco desloca esse teto."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Dor persistente de intensidade 8/10, sem resposta adicional ao aumento teórico de dose, porque o problema não é de potência (dose insuficiente), e sim de eficácia (teto baixo do mecanismo escolhido)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A equipe substitui o esquema por um opioide forte (morfina intravenosa), um agonista total do receptor opioide mu com Emax analgésico muito mais alto. A dor cai para 2/10 em poucas horas — não porque a nova droga precisasse de dose menor, mas porque seu teto de efeito é compatível com a intensidade do quadro."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática, exatamente a distinção que fecha este módulo: aumentar a dose ou a frequência de um fármaco que já atingiu seu platô não produz ganho analgésico adicional, apenas mais risco. A decisão clinicamente correta foi trocar de classe farmacológica em busca de um Emax mais alto — a pergunta relevante não foi 'qual fármaco age com menos miligramas', mas 'qual tem teto suficiente para esse grau de dor'.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "anestesiologia",
+        "clinica-cirurgica"
+      ],
+      "diagnostico_revelado": "Dor pós-operatória intensa refratária a AINE em dose máxima, por limitação de eficácia (Emax) do mecanismo anti-inflamatório, não por potência insuficiente.",
+      "tratamento_resumido": "Troca da estratégia analgésica de AINE isolado para opioide forte (morfina), preservando o AINE como adjuvante para efeito poupador de opioide, dentro de uma abordagem multimodal de analgesia pós-operatória."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-004-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

@@ -1,54 +1,367 @@
 {
+  "metadata": {
+    "titulo": "Poros Nucleares e Transporte Nucleocitoplasmático",
+    "subtitulo": "Como a célula decide, molécula por molécula, quem pode entrar no seu centro de comando?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 13,
+    "nivel": "CORE",
+    "tags": [
+      "nucleo",
+      "transporte",
+      "importinas",
+      "NLS",
+      "biologia celular",
+      "core"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "O envelope nuclear resolveria o problema da proteção do DNA, mas criaria um problema novo: como o núcleo continua recebendo instruções e enviando mensagens se está isolado por duas membranas? A resposta são os Complexos do Poro Nuclear — não buracos passivos, mas estruturas proteicas octogonais gigantes que funcionam como postos de controle de fronteira. Moléculas pequenas atravessam livremente; proteínas grandes precisam apresentar um sinal molecular específico (NLS ou NES) reconhecido por receptores de transporte, as importinas e exportinas. Todo esse tráfego é energizado por um gradiente químico — Ran-GTP no núcleo, Ran-GDP no citosol — que garante que o movimento tenha direção certa e não pare até a célula morrer. Falhas nesse sistema estão implicadas em doenças neurodegenerativas e em certos cânceres.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já entendeu, no bloco anterior, que o núcleo se isola por trás de duas membranas para proteger o DNA. Mas pare e pense: um cofre perfeitamente selado é inútil para um banco que precisa emitir extratos, receber depósitos e atualizar saldos o tempo todo. Um núcleo perfeitamente isolado também seria inútil — ele precisa receber ordens (proteínas regulatórias vindas do citoplasma) e enviar mensagens (RNA recém-processado) a cada minuto da vida da célula."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema esse tráfego constante cria?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se o envelope nuclear tivesse apenas buracos abertos, ele deixaria de cumprir sua função protetora — qualquer molécula, do tamanho que fosse, entraria e sairia livremente, incluindo enzimas que degradariam o DNA. Mas se fosse impermeável, o núcleo ficaria sem comunicação. A célula precisava de uma solução que fosse, ao mesmo tempo, permissiva para o tráfego correto e restritiva para tudo o mais — e que ainda soubesse diferenciar, entre milhares de proteínas do citoplasma, exatamente quais têm autorização para entrar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há ainda uma exigência extra: esse tráfego não pode ser aleatório em direção. Proteínas reguladoras precisam ir do citosol para dentro; RNA processado precisa ir de dentro para fora. Um sistema meramente passivo, movido só por diferença de concentração, eventualmente empacaria — sem uma fonte de energia que garanta direção, o fluxo tenderia ao equilíbrio e pararia de fazer sentido biológico."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Retenha os dois desafios antes de seguir: (1) distinguir quem tem permissão de quem não tem, e (2) garantir que o movimento tenha direção certa e não pare. A solução da célula resolve os dois ao mesmo tempo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula resolveu isso?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é uma estrutura proteica gigantesca embutida no envelope nuclear, com simetria óctupla, que atravessa as duas membranas de ponta a ponta. Ela não é um buraco vazio: seu interior é preenchido por uma malha de proteínas com regiões desordenadas, que funciona como um filtro seletivo — uma espécie de gel molecular que barra moléculas grandes desconhecidas, mas permite passagem livre para moléculas pequenas e para qualquer molécula grande que apresente a credencial correta."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa credencial é um pequeno trecho de aminoácidos exposto na superfície da proteína-carga: um Sinal de Localização Nuclear (NLS), para quem precisa entrar, ou um Sinal de Exportação Nuclear (NES), para quem precisa sair. Proteínas especializadas — as importinas, que reconhecem NLS, e as exportinas, que reconhecem NES — funcionam como escoltas: elas se ligam à carga marcada e atravessam com ela através da malha seletiva do poro, algo que a carga sozinha jamais conseguiria fazer."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "E a direção do movimento? Ela é garantida por uma pequena proteína chamada Ran, que existe em dois estados químicos — ligada a GTP ou a GDP — distribuídos de forma assimétrica: Ran-GTP é mantida em alta concentração dentro do núcleo, Ran-GDP predomina no citosol. Essa assimetria não é acidental: é ativamente mantida pela célula, às custas de energia, e funciona como uma bússola química que diz às importinas e exportinas onde soltar sua carga."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O gradiente de Ran-GTP/Ran-GDP não transporta nada diretamente — ele funciona como um interruptor de afinidade. Ran-GTP no núcleo faz a importina largar sua carga ali; a ausência de Ran-GTP no citosol faz a exportina largar sua carga lá fora. É a assimetria química entre os dois lados que dá direção ao tráfego, não uma força mecânica empurrando a molécula."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse portão?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O Complexo do Poro Nuclear é construído a partir de cerca de 30 proteínas diferentes, chamadas nucleoporinas, repetidas em múltiplas cópias para formar a estrutura simétrica final — um dos maiores complexos proteicos conhecidos em qualquer célula. Muitas dessas nucleoporinas têm domínios ricos em repetições do par de aminoácidos fenilalanina-glicina (as chamadas repetições FG), que se projetam para dentro do canal central e criam aquele ambiente tipo gel que funciona como peneira seletiva."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que repetições FG especificamente, e não outra sequência qualquer? Porque essas regiões são intrinsecamente desordenadas — não se enovelam em uma forma fixa — e essa desordem é o que permite que elas se entrelacem umas com as outras formando uma malha dinâmica, capaz de se abrir transitoriamente quando uma importina carregada se aproxima (as importinas têm afinidade específica pelas repetições FG) e se fechar de novo depois, sem nunca deixar uma passagem permanentemente aberta."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, passo a passo"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Importação de uma proteína regulatória do citosol para o núcleo",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Reconhecimento no citosol",
+          "explicacao": "Uma proteína recém-sintetizada que precisa atuar no núcleo — por exemplo, um fator de transcrição — expõe em sua superfície uma sequência de aminoácidos que constitui seu NLS. A importina, livre no citosol, reconhece e se liga a esse sinal."
+        },
+        {
+          "numero": 2,
+          "titulo": "Atravessando a malha de FG-repeats",
+          "explicacao": "O complexo importina-carga se aproxima do poro nuclear. A importina tem afinidade transitória pelas repetições fenilalanina-glicina que preenchem o canal, permitindo que ela 'nade' através da malha que barraria a carga sozinha."
+        },
+        {
+          "numero": 3,
+          "titulo": "Chegada ao lado nuclear",
+          "explicacao": "Do lado de dentro do envelope, a concentração de Ran-GTP é alta. O Ran-GTP se liga à importina, provocando uma mudança em sua forma que reduz sua afinidade pela carga."
+        },
+        {
+          "numero": 4,
+          "titulo": "Liberação da carga",
+          "explicacao": "A proteína-carga é liberada no nucleoplasma, livre para exercer sua função regulatória sobre a cromatina — ligar-se a genes-alvo, por exemplo."
+        },
+        {
+          "numero": 5,
+          "titulo": "Reciclagem da importina",
+          "explicacao": "A importina, agora ligada a Ran-GTP, retorna ao citosol através do mesmo poro. Lá fora, uma enzima hidrolisa o GTP em GDP, dissociando o Ran da importina e deixando-a livre para capturar uma nova carga — fechando o ciclo."
+        }
+      ]
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛂",
+      "conteudo": "Pense num posto de fronteira internacional de alta segurança, mas que só libera vistos válidos em uma direção específica dependendo de onde você está. O Complexo do Poro Nuclear é o próprio posto de fronteira, com sua fileira de guichês octogonais atravessando toda a espessura do muro. O NLS é o visto de entrada carimbado no passaporte da proteína-carga; o NES, o visto de saída. A importina é o oficial de imigração que confere o visto e escolta o viajante pelos corredores — sem ela, mesmo quem tem visto válido não atravessaria sozinho a área de triagem cheia de barreiras (as repetições FG). E o gradiente de Ran-GTP/Ran-GDP é a política do posto: 'vistos de entrada só são carimbados como válidos do lado de dentro do país' — é essa regra, e não uma esteira mecânica, que garante que ninguém entre e volte a sair pela mesma porta sem sentido."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse sistema se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O transporte nucleocitoplasmático depende diretamente da existência do envelope nuclear (bloco anterior) e da manutenção ativa do gradiente de Ran, que por sua vez depende de energia celular contínua — se a célula morre ou perde ATP, o gradiente se dissipa em minutos e todo o tráfego direcional colapsa. Ele também se articula com o ciclo celular: durante a mitose, em muitas células o envelope nuclear se desmonta completamente, e o sistema de poros precisa ser reconstruído do zero na telófase."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "nucleoporina",
+      "origem": "do latim nucleus (núcleo) + porus (passagem, poro)",
+      "significado": "literalmente, 'proteína do poro do núcleo'",
+      "explicacao": "O nome combina diretamente a localização da proteína (associada ao núcleo) com sua função estrutural (compor o poro de passagem). É um nome descritivo e funcional, cunhado já na era da biologia molecular — diferente de termos antigos como 'núcleo', que vieram de observação visual ao microscópio óptico, 'nucleoporina' nasceu depois que a bioquímica já sabia exatamente o que a proteína fazia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o gradiente de Ran-GTP/Ran-GDP entre núcleo e citosol desaparecesse repentinamente, mas os poros nucleares e as importinas continuassem estruturalmente intactos, o que aconteceria com o transporte?",
+      "resposta": "As importinas ainda conseguiriam se ligar às proteínas marcadas com NLS no citosol e ainda conseguiriam atravessar fisicamente a malha de repetições FG do poro — a estrutura mecânica continuaria funcionando. Mas, sem a diferença de concentração entre Ran-GTP nuclear e Ran-GDP citosólico, não haveria sinal químico para a importina soltar sua carga especificamente dentro do núcleo. O complexo importina-carga atravessaria o poro em ambas as direções sem direção preferencial, e o transporte se tornaria simétrico e ineficaz — proteínas regulatórias ficariam efetivamente presas em trânsito, sem nunca se acumular no compartimento onde precisam agir. A lição é que a seletividade espacial (o quê passa) e a direcionalidade temporal (para onde vai) são garantidas por dois sistemas distintos, e um não compensa a falta do outro."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo de importação nuclear mediada por Ran-GTP",
+      "descricao": "Esquema mostrando, da esquerda para a direita: uma proteína-carga com NLS sendo reconhecida pela importina no citosol; o complexo atravessando o Complexo do Poro Nuclear através da malha de nucleoporinas com repetições FG; a chegada ao nucleoplasma onde Ran-GTP se liga à importina e libera a carga; e a reciclagem da importina de volta ao citosol.",
+      "prompt_ia": "Diagrama científico vetorial, fundo neutro adaptativo transparente, estilo didático de livro-texto. Sequência horizontal em 4 painéis mostrando o ciclo de importação nuclear. Painel 1: no citosol, uma proteína-carga com uma pequena etiqueta colorida representando o NLS se liga a uma proteína importina em forma de gancho. Painel 2: o complexo importina-carga atravessando um Complexo do Poro Nuclear octogonal embutido na dupla membrana nuclear, mostrando filamentos finos e desordenados (repetições FG) preenchendo o canal central. Painel 3: dentro do nucleoplasma, uma pequena proteína Ran-GTP (esfera verde) se liga à importina, mudando sua forma e liberando a carga. Painel 4: a importina ligada a Ran-GTP retornando pelo poro ao citosol, onde uma seta indica a hidrólise de GTP para GDP e a reciclagem da importina livre. Legendas em português para NLS, importina, nucleoporinas e Ran-GTP/GDP. Paleta de cores suaves e científicas, sem texturas fotorrealistas."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-04-001",
+        "titulo": "Núcleo — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "O transporte nuclear só faz sentido depois de entender que o núcleo é compartimentalizado por uma membrana dupla que precisa, ao mesmo tempo, proteger e se comunicar com o citoplasma."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "topico": "Patologias associadas à falha no transporte nucleocitoplasmático",
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Mutações em nucleoporinas ou nos receptores de transporte estão implicadas em doenças neurodegenerativas, incluindo formas de esclerose lateral amiotrófica associadas a expansões repetitivas no gene C9orf72.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "topico": "Inibidores de exportinas em oncologia",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "O fármaco selinexor inibe a exportina XPO1, retendo proteínas supressoras de tumor dentro do núcleo de células malignas — um exemplo direto de terapia construída sobre o mecanismo estudado neste bloco.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "topico": "Gradientes de GTPases em outros sistemas de transporte celular",
+        "disciplina": "biologia celular",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "O princípio de usar uma GTPase em estados assimétricos para dar direção a um transporte reaparece em outros contextos celulares, como o brotamento e a fusão de vesículas.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-02-001",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "O transporte nuclear é seletivo e sinalizado através de poros que permanecem abertos como canais, enquanto o transporte no sistema de endomembranas ocorre por brotamento e fusão de vesículas inteiras — duas estratégias distintas de mover carga entre compartimentos."
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-04-001-02-fc01",
+      "pergunta": "Por que a célula precisa manter ativamente um gradiente de Ran-GTP entre núcleo e citosol, em vez de deixar o transporte nuclear depender apenas da diferença de concentração da proteína-carga?",
+      "resposta": "Porque um sistema baseado apenas em concentração eventualmente atingiria equilíbrio e pararia de ter direção líquida — a carga entraria e sairia igualmente, sem se acumular no compartimento certo. O gradiente de Ran-GTP, mantido ativamente às custas de energia celular, funciona como uma bússola química que garante que a importina solte sua carga especificamente dentro do núcleo (onde Ran-GTP é abundante) e nunca no citosol. É esse investimento contínuo de energia que transforma um transporte potencialmente aleatório em um fluxo direcional e útil.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["ran-gtp", "transporte", "gradiente"]
+    },
+    {
+      "card_id": "s1-biocel-04-001-02-fc02",
+      "pergunta": "Descreva o trajeto completo de uma proteína regulatória desde sua síntese no citosol até sua liberação no nucleoplasma, explicando o papel de cada componente envolvido.",
+      "resposta": "A proteína recém-sintetizada expõe seu Sinal de Localização Nuclear (NLS) na superfície. Uma importina livre no citosol reconhece e se liga a esse sinal. O complexo importina-carga se aproxima do Complexo do Poro Nuclear e atravessa a malha de nucleoporinas com repetições fenilalanina-glicina (FG), pela qual a importina tem afinidade específica — a carga sozinha não conseguiria atravessar essa malha. Ao chegar ao nucleoplasma, onde a concentração de Ran-GTP é alta, o Ran-GTP se liga à importina e provoca mudança conformacional que libera a carga. A importina, agora ligada a Ran-GTP, retorna ao citosol pelo mesmo poro, onde a hidrólise do GTP a dissocia do Ran, deixando-a livre para um novo ciclo.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["importina", "transporte-nuclear", "mecanismo"]
+    },
+    {
+      "card_id": "s1-biocel-04-001-02-fc03",
+      "pergunta": "Se uma mutação eliminasse o NLS de uma proteína que normalmente atua como fator de transcrição nuclear, o que aconteceria com essa proteína e com os genes que ela regula?",
+      "resposta": "Sem o NLS, a proteína não seria mais reconhecida pelas importinas e permaneceria retida no citosol, incapaz de atravessar o Complexo do Poro Nuclear de forma mediada. Os genes que dependiam dela para serem ativados (ou reprimidos) ficariam sem esse regulador específico — na prática, um fenômeno equivalente a perder a própria proteína, mesmo que ela continue sendo produzida normalmente, porque nunca chega ao compartimento onde exerce sua função.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["nls", "mutacao", "fator-de-transcricao"]
+    },
+    {
+      "card_id": "s1-biocel-04-001-02-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Todas as moléculas, sejam pequenas ou grandes, precisam de importinas para atravessar o Complexo do Poro Nuclear.'",
+      "resposta": "Falso. Íons e moléculas pequenas — abaixo de um limite de exclusão de aproximadamente 40 a 60 kDa — atravessam o poro por difusão simples, sem necessidade de qualquer sinal ou receptor de transporte. Apenas macromoléculas acima desse limite, como a maioria das proteínas funcionais e complexos ribonucleoproteicos, dependem do reconhecimento de NLS ou NES pelas importinas e exportinas. A armadilha é achar que o poro nuclear é um filtro absoluto para tudo: na verdade, ele combina uma peneira passiva por tamanho com um sistema ativo e seletivo por sinal.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["poro-nuclear", "difusao", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s1-biocel-04-001-02-fc05",
+      "pergunta": "Paciente com esclerose lateral amiotrófica (ELA) familiar apresenta expansão repetitiva no gene C9orf72. Estudos mostram acúmulo anormal de proteínas ricas em repetições dipeptídicas que se ligam de forma aberrante às repetições fenilalanina-glicina das nucleoporinas. Conecte esse achado (genética molecular) ao mecanismo de transporte nuclear estudado neste bloco e explique por que isso é tóxico para o neurônio.",
+      "resposta": "As repetições fenilalanina-glicina das nucleoporinas normalmente formam uma malha dinâmica que se abre transitoriamente apenas para importinas e exportinas carregadas corretamente. Os agregados de dipeptídeos anômalos produzidos pela expansão do C9orf72 se ligam de forma persistente a essas mesmas repetições FG, obstruindo fisicamente o canal do Complexo do Poro Nuclear. Isso compromete o transporte nucleocitoplasmático de proteínas e RNA essenciais para a sobrevivência do neurônio — motoneurônios, por serem células pós-mitóticas de vida longa e alta demanda de tráfego nuclear, são particularmente vulneráveis a esse tipo de obstrução crônica, contribuindo para a neurodegeneração observada na ELA.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": ["ela", "nucleoporinas", "neurodegeneracao", "c9orf72"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-04-001-02-caso01",
+      "titulo": "Homem de 58 anos com fraqueza progressiva em mãos e fala arrastada",
+      "apresentacao": "Homem de 58 anos, engenheiro aposentado, procura atendimento por fraqueza progressiva na mão direita há 8 meses, com dificuldade crescente para abotoar a camisa e segurar objetos pequenos. Nos últimos 2 meses, a esposa notou fala arrastada e engasgos ocasionais com líquidos. Nega dor. Exame neurológico: atrofia e fasciculações visíveis nos músculos interósseos da mão direita, hiperreflexia patelar bilateral com sinal de Babinski presente, disartria espástica leve. Sensibilidade preservada. História familiar positiva: pai e tio paterno faleceram de 'doença neurológica progressiva' na sexta década de vida. Eletroneuromiografia confirma sinais de denervação ativa e crônica em múltiplos segmentos. Teste genético revela expansão patológica de repetições hexanucleotídicas GGGGCC no gene C9orf72.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Expansão patológica de repetições GGGGCC no gene C9orf72, transmitida de forma autossômica dominante, gerando tanto RNA tóxico quanto proteínas dipeptídicas repetitivas anômalas por tradução não convencional."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O Complexo do Poro Nuclear dos motoneurônios, especificamente as nucleoporinas ricas em repetições fenilalanina-glicina que compõem a malha seletiva do canal de transporte."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "As proteínas dipeptídicas repetitivas se ligam de forma anômala e persistente às repetições FG das nucleoporinas, obstruindo o tráfego normal de proteínas regulatórias e RNA entre núcleo e citoplasma nos motoneurônios."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Degeneração progressiva de neurônios motores superiores e inferiores, manifestando-se como fraqueza muscular assimétrica com atrofia e fasciculações (motoneurônio inferior) combinada com hiperreflexia e sinal de Babinski (motoneurônio superior) — a combinação característica de esclerose lateral amiotrófica."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Progressão inexorável para insuficiência respiratória por comprometimento da musculatura diafragmática, geralmente entre 2 a 5 anos após o início dos sintomas. Não há tratamento curativo disponível."
+        }
+      ],
+      "conexao_com_bloco": "Este caso conecta diretamente o mecanismo molecular estudado — a malha de repetições FG das nucleoporinas como filtro seletivo do transporte nuclear — a uma doença neurodegenerativa real: o mesmo sítio de reconhecimento que normalmente permite passagem apenas a cargas com NLS ou NES correto se torna o ponto de obstrução patológica quando ocupado por proteínas dipeptídicas anômalas, ilustrando por que um sistema de transporte tão elegante também é um ponto de vulnerabilidade quando corrompido.",
+      "disciplinas_relacionadas": ["biologia celular", "neurologia", "genética médica"],
+      "diagnostico_revelado": "Esclerose Lateral Amiotrófica (ELA) familiar associada à expansão de repetições no gene C9orf72.",
+      "tratamento_resumido": "Riluzol e edaravona são as únicas terapias modificadoras de doença aprovadas, com efeito modesto na sobrevida. O manejo é predominantemente de suporte multidisciplinar: ventilação não invasiva quando indicada, gastrostomia para suporte nutricional, fisioterapia e comunicação alternativa à medida que a doença progride."
+    }
+  ],
+  "midia": {
+    "imagens": [
+      {
+        "id": "s1-biocel-04-001-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
+    "videos": [],
+    "audios": []
+  },
+  "horizonte_validade": "em_mudanca",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Alberts B, et al. Molecular Biology of the Cell. 7th ed. W. W. Norton; 2022. Chapter 12 — Intracellular Compartments and Protein Sorting.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "paper",
+      "citacao": "Freibaum BD, et al. GGGGCC repeat expansion in C9orf72 compromises nucleocytoplasmic transport. Nature. 2015;525(7567):129-133.",
+      "pmid_doi": "PMID: 26308899",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "procedencia": {
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": null,
+    "data_revisao": null,
+    "nivel_confianca": "estudo"
+  },
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "O Complexo do Poro Nuclear é um buraco aberto e passivo na membrana",
+      "correcao": "É uma estrutura proteica ativa, preenchida por uma malha seletiva de nucleoporinas que filtra ativamente o que atravessa",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "Todas as moléculas precisam de importinas ou exportinas para atravessar o poro nuclear",
+      "correcao": "Apenas macromoléculas acima de aproximadamente 40-60 kDa precisam de transporte mediado; moléculas pequenas atravessam por difusão simples",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "O gradiente de Ran-GTP/Ran-GDP transporta fisicamente a carga através do poro",
+      "correcao": "O gradiente não move nada mecanicamente; ele funciona como sinal químico que determina onde a importina/exportina libera sua carga, dando direção ao processo",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "complexo do poro nuclear",
+      "termo_es": "complejo del poro nuclear",
+      "termo_en": "nuclear pore complex",
+      "abreviatura": "CPN / NPC"
+    },
+    {
+      "termo_pt": "sinal de localização nuclear",
+      "termo_es": "señal de localización nuclear",
+      "termo_en": "nuclear localization signal",
+      "abreviatura": "NLS"
+    },
+    {
+      "termo_pt": "sinal de exportação nuclear",
+      "termo_es": "señal de exportación nuclear",
+      "termo_en": "nuclear export signal",
+      "abreviatura": "NES"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
   "resumo_id": "s1-biocel-04-001-02",
   "no_pai_id": "s1-biocel-04-001",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Poros Nucleares e Transporte Nucleocitoplasmático",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Complexo do poro, importinas/exportinas e sinais NLS/NES",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "fisiologia"
+  "changelog": [
+    {
+      "versao": "2.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-5",
+      "mudanca": "Reescrita completa da narrativa, flashcards e adição de caso clínico (ELA/C9orf72), corrigindo narrativa socrática de fachada e analogia genérica repetida do bloco original.",
+      "motivo": "Auditoria de conformidade com ANIMA_FILOSOFIA.md — Fase 2 de reformulação"
+    }
   ]
 }

@@ -1,53 +1,208 @@
 {
+  "metadata": {
+    "titulo": "Helicases, Primases e Polimerases",
+    "subtitulo": "Como a vida copia sua própria biblioteca sem erros catastróficos?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 10,
+    "nivel": "CORE",
+    "tags": [
+      "replicação",
+      "DNA",
+      "enzimas",
+      "genética molecular"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "A replicação do DNA é um desafio de precisão absoluta. Imagine descompactar uma biblioteca de quilômetros de extensão, separar as páginas e copiar cada letra sem errar. Para resolver isso, a célula emprega um complexo de proteínas altamente coordenado. A helicase desenrola a dupla hélice, a primase prepara o terreno criando um ponto de início, e a DNA polimerase executa a cópia com uma capacidade de correção de provas (proofreading) que faria qualquer editor humano corar. Este processo, que ocorre na fase S do ciclo celular, é o alicerce da hereditariedade e da manutenção da vida. A coordenação entre essas máquinas moleculares garante que a informação genética seja preservada com fidelidade impressionante através das gerações.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já parou para pensar na escala do desafio? Cada uma de suas células precisa copiar 3 bilhões de pares de bases antes de se dividir. Se o DNA fosse uma fita de papel, ela teria cerca de dois metros de comprimento dentro de um núcleo microscópico. Para copiar isso sem erros, a célula não usa apenas uma enzima, mas uma orquestra de máquinas moleculares."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como separar as fitas sem destruir a informação?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O primeiro problema é que o DNA é uma dupla hélice estável. Para ler a mensagem, precisamos separar as fitas. A natureza resolveu isso criando uma enzima em formato de anel que 'caminha' sobre o DNA, rompendo as pontes de hidrogênio entre as bases nitrogenadas. É como um zíper biológico que abre o caminho para a cópia."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Helicase",
+      "origem": "Grego 'helix' (espiral) + sufixo '-ase' (enzima)",
+      "significado": "Enzima que atua em espirais",
+      "explicacao": "O nome descreve perfeitamente sua função: desenrolar a estrutura helicoidal do DNA."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma vez aberta, a fita simples é vulnerável. Aqui entra a Primase. Ela sintetiza um pequeno fragmento de RNA, o primer, que serve como um 'gancho' para a DNA Polimerase. Por que RNA? Porque a natureza precisava de um marcador temporário que pudesse ser reconhecido e removido depois, garantindo que o DNA final seja puro."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense na replicação como uma equipe de construção de uma ferrovia. A Helicase é a máquina que remove os dormentes antigos (desenrola o DNA). A Primase é o topógrafo que marca o início da trilha com uma estaca de cor diferente (o primer de RNA). A DNA Polimerase é o trem que coloca os trilhos novos seguindo o molde. Mapeamento: Helicase = abridor de fitas; Primase = iniciador temporário; DNA Polimerase = construtor de fitas."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A DNA polimerase não apenas copia; ela possui atividade exonucleásica 3'->5', permitindo que ela 'volte' e remova uma base inserida incorretamente. É um sistema de autocorreção em tempo real."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire. Antes de seguir, visualize: Helicase abre, Primase marca, Polimerase constrói. O DNA é replicado de forma semiconservativa."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a DNA polimerase não tivesse a capacidade de 'proofreading' (revisão), o que aconteceria?",
+      "resposta": "A taxa de mutação seria ordens de magnitude maior. A vida multicelular complexa seria impossível, pois o acúmulo de erros genéticos levaria ao colapso da homeostase celular em poucas gerações, resultando em morte celular ou câncer fulminante."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O Garfo de Replicação",
+      "descricao": "Uma visão esquemática do garfo de replicação mostrando a Helicase desenrolando, a Primase sintetizando o primer e a DNA Polimerase estendendo a nova fita.",
+      "prompt_ia": "Scientific illustration of DNA replication fork, high detail, molecular biology style, showing helicase as a ring-shaped protein, primase adding RNA primer, DNA polymerase III complex, leading and lagging strands, bright colors, clean background, 8k resolution.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-08-001-03-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Por que o DNA precisa de um primer de RNA para iniciar a replicação?",
+      "resposta": "A DNA polimerase não consegue iniciar a síntese de uma fita de novo; ela exige uma extremidade 3'-OH livre para adicionar o próximo nucleotídeo. O primer de RNA fornece essa extremidade.",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "replicação",
+        "início"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-001-03-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se a Helicase fosse inibida em uma célula em divisão?",
+      "resposta": "A replicação pararia imediatamente. Sem a separação das fitas parentais, a DNA polimerase não teria acesso à sequência de bases molde, impedindo a síntese de novas fitas.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "inibição",
+        "helicase"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-001-03-fc03",
+      "tipo": "mecanismo",
+      "pergunta": "Como a DNA polimerase garante a fidelidade da cópia?",
+      "resposta": "Através da atividade exonucleásica 3'->5'. Se uma base errada é pareada, a enzima detecta a distorção na geometria da dupla hélice, remove o nucleotídeo errado e insere o correto antes de continuar.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "proofreading",
+        "fidelidade"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-001-03-fc04",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença funcional entre a Primase e a DNA Polimerase?",
+      "resposta": "A Primase é uma RNA polimerase que não precisa de um primer para iniciar a síntese de um fragmento de RNA. A DNA polimerase é uma enzima que precisa obrigatoriamente de um iniciador (primer) para adicionar nucleotídeos de DNA.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "enzimas",
+        "comparação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-001-03-fc05",
+      "tipo": "etimologia",
+      "pergunta": "O sufixo '-ase' indica o quê na nomenclatura das enzimas aqui discutidas?",
+      "resposta": "Indica que se tratam de enzimas catalíticas que realizam uma reação química específica. No caso da helicase e polimerase, elas facilitam a quebra de ligações ou a formação de polímeros.",
+      "dificuldade": 1,
+      "nivel_alvo": 4,
+      "tags": [
+        "etimologia",
+        "enzimologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-08-001-03-caso01",
+      "titulo": "Múltiplos pólipos colônicos em paciente jovem com história familiar de câncer",
+      "apresentacao": "Homem de 34 anos é encaminhado à coloproctologia após colonoscopia de rastreio precoce (motivada por pai falecido de câncer colorretal aos 45 anos) revelar 18 pólipos adenomatosos distribuídos por todo o cólon. Não tem diarreia, sangramento ou perda de peso. Exame físico sem alterações. Diante do número de pólipos e da história familiar de câncer de início precoce, sem preencher critérios para polipose adenomatosa familiar clássica (que cursa com centenas a milhares de pólipos por mutação em APC), o time solicita um painel genético ampliado, incluindo genes de reparo e replicação do DNA.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação germinativa herdada no domínio exonucleásico de correção de provas (proofreading) do gene POLE (ou, em outras famílias, POLD1) — os genes que codificam as subunidades catalíticas das DNA polimerases replicativas ε e δ."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O domínio exonucleásico 3'→5' da DNA polimerase, exatamente o mecanismo de autocorreção que permite à enzima 'voltar' e remover um nucleotídeo mal pareado antes de prosseguir a síntese."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem a atividade de proofreading, a polimerase continua sintetizando DNA mesmo após incorporar uma base incorreta. A cada ciclo de divisão celular, em cada uma das bilhões de bases copiadas, pequenos erros que seriam corrigidos passam a se acumular sem correção."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Ao longo de décadas, o acúmulo progressivo de mutações somáticas nas células da mucosa colônica (um fenômeno chamado fenótipo 'ultramutador') favorece o surgimento de múltiplos adenomas colônicos e câncer colorretal em idade muito mais precoce que a população geral, além de risco aumentado de câncer endometrial, ovariano e duodenal."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Diagnóstico de Polipose Associada à Proofreading (PPAP), uma síndrome autossômica dominante de predisposição ao câncer. O paciente entra em programa de vigilância colonoscópica intensiva e rastreio para os demais tumores associados; familiares de primeiro grau são orientados a testagem genética em cascata."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática clínica, exatamente o mecanismo descrito no bloco: a atividade exonucleásica 3'→5' da DNA polimerase (mencionada no 'highlight' e no flashcard de proofreading) não é um detalhe acadêmico — é a barreira que, quando perdida por mutação germinativa, transforma uma célula normal em uma fábrica de mutações a cada divisão. O bloco pergunta 'o que aconteceria se a polimerase não tivesse proofreading' de forma contrafactual; a PPAP é a resposta que a natureza já demonstrou em famílias reais.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "genética",
+        "oncologia",
+        "gastroenterologia"
+      ],
+      "diagnostico_revelado": "Polipose Associada à Proofreading (PPAP) por mutação germinativa no domínio exonucleásico de POLE.",
+      "tratamento_resumido": "Vigilância colonoscópica intensiva com polipectomia seriada, rastreio para tumores extracolônicos associados (endométrio, ovário, duodeno), aconselhamento genético e testagem em cascata de familiares. Colectomia é reservada para pólipos incontroláveis endoscopicamente ou surgimento de carcinoma invasivo."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-histmed-06-004",
+        "titulo": "A Estrutura do DNA — Watson, Crick e Franklin",
+        "disciplina": "Biologia Celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É impossível entender a replicação sem compreender a complementaridade de bases (A-T, C-G) e a orientação 5'-3'."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Quimioterapia e inibidores de replicação",
+        "disciplina": "Farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "Muitos quimioterápicos bloqueiam enzimas como a topoisomerase e polimerase para impedir a divisão de células tumorais.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "ANALOGIA",
+        "topico": "Reparo de DNA",
+        "explicacao": "O proofreading é o primeiro nível de 'reparo', mas existem sistemas pós-replicação que corrigem erros que escaparam da polimerase."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-08-001-03",
   "no_pai_id": "s1-biocel-08-001",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Helicases, Primases e Polimerases",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Maquinário do garfo de replicação e revisão (proofreading)",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica"
-  ]
+  }
 }

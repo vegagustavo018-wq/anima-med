@@ -2,53 +2,361 @@
   "resumo_id": "s4-farma1-01-007-03",
   "no_pai_id": "s4-farma1-01-007",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-01-006-01"
+  ],
   "metadata": {
     "titulo": "Estado de Equilíbrio (Steady State)",
+    "subtitulo": "Depois de quantas doses um tratamento contínuo para de subir e começa a se repetir?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 10,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "estado-de-equilibrio",
+      "steady-state",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert",
+      "comunicador"
+    ]
   },
-  "resumo_conciso": "Platô de concentração; tempo para atingir; flutuação pico-vale",
-  "narrativa": [],
+  "resumo_conciso": "O bloco-pai já apresentou o estado de equilíbrio (steady state) como uma das duas peças que traduzem farmacocinética em prescrição. Aqui essa ideia ganha corpo prático: o steady state é o platô de concentração plasmática que um tratamento com doses repetidas atinge quando a quantidade administrada em cada intervalo passa a igualar a quantidade eliminada nesse mesmo intervalo. O bloco lateral sobre meia-vida já mostrou a regra que rege quando esse platô aparece — cerca de 4 a 5 meias-vidas — e por que ele aparece (eliminação proporcional ao que resta). Este bloco aplica essa regra à prática de doses repetidas: por que a concentração não sobe indefinidamente, o que determina a altura desse platô, e por que ele não é uma linha reta, mas uma faixa que oscila entre um pico (logo após cada dose) e um vale (pouco antes da dose seguinte). Essa flutuação pico-vale importa clinicamente: fármacos de margem terapêutica estreita podem ultrapassar o limite tóxico no pico ou cair abaixo do limite eficaz no vale, mesmo com a média em equilíbrio dentro da faixa terapêutica. Entender steady state é entender por que aumentar a dose eleva o platô, por que encurtar o intervalo reduz a flutuação (mas não muda a altura média), e por que só faz sentido colher um nível sérico de rotina depois que o platô já foi atingido.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um paciente inicia um anti-hipertensivo hoje. Na primeira dose, muito pouco do fármaco está no corpo. Na segunda dose, um pouco mais — porque parte da primeira ainda não foi eliminada. Isso se repete, dose após dose, e uma pergunta se impõe: se cada dose nova se soma ao que restou da anterior, por que a concentração não sobe para sempre, até níveis tóxicos, enquanto o tratamento continuar?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que precisa existir um platô"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se a concentração de um fármaco subisse sem limite a cada dose repetida, nenhum tratamento crônico seria seguro: manter um paciente em uso contínuo de um anti-hipertensivo, um anticonvulsivante ou um antibiótico por semanas se tornaria uma escalada inevitável rumo à toxicidade. Para que doses repetidas sejam uma estratégia terapêutica viável — e não um acidente programado — é preciso que exista um ponto de estabilização: uma concentração que o tratamento atinge e depois passa a manter, em vez de ultrapassar continuamente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse ponto de estabilização também precisa ser prático de prever. Não basta existir um platô — o médico precisa saber, antes de prescrever, aproximadamente quando ele vai aparecer e o que vai determinar sua altura, para escolher dose e intervalo com essa meta em mente, e não descobrir o resultado por tentativa e erro no paciente."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: um tratamento com doses repetidas só é seguro se existir um teto natural de acúmulo — e esse teto precisa ser previsível antes de prescrever, não apenas observado depois."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se chega a esse platô"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta está numa propriedade da eliminação que o bloco sobre meia-vida já descreveu: a velocidade de eliminação não é fixa, ela cresce junto com a concentração presente no corpo. Quando há pouco fármaco, elimina-se pouco por hora; quando há muito fármaco, elimina-se muito por hora — sempre a mesma fração, mas em quantidade absoluta crescente. Isso cria um mecanismo de autorregulação: a cada dose nova que eleva a concentração, a velocidade de eliminação também sobe. Em algum ponto, a quantidade eliminada no intervalo entre duas doses se torna exatamente igual à quantidade administrada nesse mesmo intervalo. Quando entrada e saída se igualam, a concentração para de subir de um intervalo para o outro — esse é o estado de equilíbrio."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Estado de equilíbrio (steady state) é o ponto em que a quantidade de fármaco administrada em cada intervalo de dose passa a ser igual à quantidade eliminada nesse mesmo intervalo — entrada e saída se igualam, e a concentração média para de subir de uma dose para a próxima."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O que determina o platô, e o que não determina"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Duas variáveis controlam o steady state, mas cada uma controla um aspecto diferente dele — e confundir as duas é um erro comum de raciocínio. O **tempo até atingir o platô** depende exclusivamente da meia-vida do fármaco: como já visto no bloco lateral, são necessárias cerca de 4 a 5 meias-vidas de doses regulares para que o acúmulo se estabilize, não importa a dose usada. Dobrar a dose não faz o paciente chegar ao equilíbrio mais rápido — só muda a altura do platô que ele vai atingir naquele mesmo tempo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Já a **altura do platô** — a concentração média de equilíbrio — depende da dose e do intervalo escolhidos, junto com a depuração do paciente. Aumentar a dose administrada a cada intervalo eleva o platô proporcionalmente; encurtar o intervalo entre doses (administrar mais vezes por unidade de tempo) também eleva o platô, porque mais fármaco entra por hora, em média. É por isso que ajustar uma posologia que está aquém ou além da faixa terapêutica no equilíbrio significa mexer em dose ou intervalo — não simplesmente esperar mais tempo, porque o platô, uma vez atingido, não continua subindo sozinho."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em movimento: a flutuação pico-vale"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O estado de equilíbrio não é uma linha reta e constante — é uma faixa que sobe e desce a cada intervalo de dose, mesmo depois de atingido. Isso acontece porque a administração é pontual (um comprimido, uma injeção) mas a eliminação é contínua. Entre uma dose e a próxima, a concentração sempre sobe primeiro (durante a absorção) e depois cai (pela eliminação contínua), formando um padrão serrilhado que se repete de forma idêntica a cada intervalo, uma vez atingido o equilíbrio."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Um ciclo de dose em equilíbrio",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Pico (Cmáx)",
+          "explicacao": "Logo após a absorção da dose mais recente, a concentração atinge seu ponto mais alto do ciclo — o pico. É o momento de maior risco de efeito tóxico, especialmente em fármacos de margem terapêutica estreita."
+        },
+        {
+          "numero": 2,
+          "titulo": "Declínio",
+          "explicacao": "A partir do pico, a eliminação (agora predominando sobre a absorção, já concluída) reduz progressivamente a concentração, seguindo a mesma cinética de primeira ordem descrita na meia-vida."
+        },
+        {
+          "numero": 3,
+          "titulo": "Vale (Cmín)",
+          "explicacao": "Pouco antes da próxima dose ser administrada, a concentração atinge seu ponto mais baixo do ciclo — o vale. É o momento de maior risco de falha terapêutica, se o vale cair abaixo da concentração mínima eficaz."
+        },
+        {
+          "numero": 4,
+          "titulo": "Repetição idêntica",
+          "explicacao": "A dose seguinte reinicia o ciclo a partir do vale, elevando novamente a concentração até um pico igual ao anterior — porque, em equilíbrio, a quantidade ganha em cada dose já é igual à quantidade perdida no intervalo. O padrão pico-vale se repete de forma estável, ciclo após ciclo."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A distância entre pico e vale não é fixa — ela depende do intervalo de dose em relação à meia-vida do fármaco. Intervalos longos em relação ao t½ produzem picos altos e vales profundos (mais flutuação); intervalos curtos produzem uma faixa mais estreita, mais próxima de uma linha reta. Por isso, uma forma comum de reduzir a flutuação sem mudar a concentração média de equilíbrio é fracionar a mesma dose diária em administrações mais frequentes — a altura do platô médio não muda, mas os picos ficam mais baixos e os vales mais altos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso tem consequência direta na prática: para um anticonvulsivante, um vale abaixo do mínimo eficaz pode significar uma crise convulsiva horas antes da próxima dose; para um aminoglicosídeo, um pico acima do limite tóxico pode significar lesão renal ou auditiva mesmo que a média das 24 horas pareça adequada no papel. A concentração média de equilíbrio conta parte da história — a amplitude da flutuação conta o resto."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa antes de conectar: guarde três ideias — o tempo até o platô depende só da meia-vida; a altura do platô depende de dose, intervalo e depuração; e o platô real é uma faixa entre pico e vale, não uma linha única."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que o estado de equilíbrio se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este bloco depende diretamente da meia-vida (s4-farma1-01-006-01): é a regra de 4-5 meias-vidas, já demonstrada ali passo a passo, que define quando o platô aqui descrito se forma — este bloco não repete essa dedução, apenas a aplica ao cenário de doses repetidas em vez de dose única. Também se apoia na biodisponibilidade, tratada em outro bloco filho do mesmo pai: é ela que determina quanto de cada dose administrada realmente participa do acúmulo que leva ao steady state."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O estado de equilíbrio se articula ainda com dois blocos-irmãos que faltam ser detalhados na árvore: a dose de ataque (para pacientes que não podem esperar 4-5 meias-vidas até o platô natural) e a monitorização terapêutica (que só faz sentido clínico depois que o steady state foi atingido — colher um nível sérico antes disso mede um valor que ainda vai continuar subindo, não o patamar real de tratamento)."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🌊",
+      "conteudo": "Pense na maré enchendo contra um paredão com um dreno na base. A cada onda (cada dose), um pouco de água entra por cima do paredão; o dreno (a eliminação) escoa continuamente, mais rápido quanto mais água já está acumulada. No início, a água sobe visivelmente a cada onda. Depois de algumas ondas, a quantidade que entra por onda passa a ser igual à quantidade que o dreno escoa entre uma onda e a seguinte — o nível médio da água para de subir: é o steady state. Mas o nível não fica perfeitamente parado — ele sobe um pouco a cada onda (o pico) e desce um pouco entre ondas (o vale), oscilando dentro de uma faixa estável. Ondas mais espaçadas (intervalo de dose maior) produzem uma oscilação maior entre pico e vale; ondas mais frequentes produzem uma superfície quase lisa. A analogia quebra num ponto: o dreno da maré escoa numa taxa que não muda com o nível da água, enquanto a eliminação de um fármaco acelera conforme a concentração sobe — é exatamente essa aceleração proporcional que garante, matematicamente, que o nível vá se estabilizar, e não que essa estabilização dependa de um ajuste externo do tamanho do dreno."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "estado de equilíbrio (steady state)",
+      "origem": "tradução do inglês steady state, expressão emprestada da engenharia de sistemas e da termodinâmica",
+      "significado": "estado de um sistema em que as variáveis de entrada e saída se equilibram, mantendo uma condição estável ao longo do tempo, apesar do fluxo contínuo através do sistema",
+      "explicacao": "A expressão 'steady state' não nasceu na farmacologia — é um conceito geral de sistemas dinâmicos, usado desde o século XIX em engenharia (por exemplo, para descrever um reservatório onde a vazão de entrada iguala a vazão de saída, mantendo o nível constante) e depois adotado pela fisiologia e farmacocinética no século XX. A tradução 'estado de equilíbrio' pode sugerir, erroneamente, um sistema parado; na verdade descreve um sistema em fluxo constante (fármaco entrando e saindo o tempo todo) cujo balanço resultante é que se mantém estável. É a mesma lógica emprestada por outras áreas da fisiologia, como o equilíbrio ácido-base ou o equilíbrio hidroeletrolítico — todos descrevem não ausência de movimento, mas movimento balanceado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] A regra de 4-5 meias-vidas para atingir o steady state pressupõe eliminação de primeira ordem constante e ausência de indução ou inibição enzimática durante o tratamento. Fármacos que induzem seu próprio metabolismo (autoindução) ou que têm cinética saturável em determinadas doses podem levar mais tempo para estabilizar, ou nunca atingir um platô verdadeiramente estável nas doses habituais — casos que fogem da aproximação simples aqui descrita."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Curva de acúmulo até o steady state com flutuação pico-vale",
+      "descricao": "Gráfico de concentração plasmática (eixo Y) por tempo (eixo X, em múltiplos do intervalo de dose), mostrando um padrão serrilhado de doses repetidas: cada dose gera uma subida rápida até um pico seguida de queda até um vale, com os picos e vales sucessivos subindo progressivamente (87,5%, 93,75%... da altura final) até estabilizarem numa faixa horizontal representando o steady state, onde picos e vales de cada ciclo passam a se repetir na mesma altura. Faixa terapêutica sombreada horizontalmente, com linha tracejada de limite tóxico acima e linha tracejada de concentração mínima eficaz abaixo. Setas marcando cada administração de dose no eixo X. Legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Gráfico de linha único e amplo. Eixo Y rotulado 'concentração plasmática'; eixo X rotulado 'tempo (intervalos de dose sucessivos)' com pequenas setas verticais marcando cada administração de dose. Curva em padrão serrilhado: cada ciclo sobe rapidamente até um pico e desce suavemente até um vale, com a altura dos picos e vales sucessivos aumentando gradualmente (primeiros 4-5 ciclos) até estabilizar — a partir daí, picos e vales de cada ciclo mantêm a mesma altura, formando uma faixa horizontal repetitiva rotulada 'ESTADO DE EQUILÍBRIO (STEADY STATE)'. Faixa horizontal sombreada em verde claro atravessando essa região, rotulada 'FAIXA TERAPÊUTICA'. Linha tracejada vermelha horizontal acima da faixa, rotulada 'limite tóxico', tangenciando os picos em equilíbrio. Linha tracejada cinza horizontal abaixo da faixa, rotulada 'concentração mínima eficaz', tangenciando os vales em equilíbrio. Pontos destacados rotulados 'pico (Cmáx)' e 'vale (Cmín)' em um dos ciclos já estabilizados. Paleta de cores suaves e distintas, texto em português, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-007",
+        "titulo": "Regimes de Dose e Biodisponibilidade (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "O bloco-pai já introduziu o estado de equilíbrio como uma das duas peças que traduzem farmacocinética em prescrição, junto da biodisponibilidade. Este bloco detalha especificamente essa peça."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Dose de ataque versus dose de manutenção",
+        "mecanismo_conexao": "A necessidade de antecipar o platô de equilíbrio em situações clínicas urgentes, em vez de esperar 4-5 meias-vidas, é o raciocínio direto por trás do cálculo de dose de ataque, a ser detalhado em bloco-irmão específico.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Monitorização terapêutica de fármacos de margem estreita",
+        "mecanismo_conexao": "A flutuação pico-vale descrita aqui é o motivo pelo qual, para fármacos como aminoglicosídeos, vancomicina e anticonvulsivantes, colhem-se níveis séricos de pico e de vale separadamente, e não uma única dosagem qualquer.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Ajuste posológico em antibioticoterapia prolongada",
+        "mecanismo_conexao": "A decisão de fracionar a mesma dose diária em administrações mais frequentes para reduzir a flutuação pico-vale, sem mudar a concentração média de equilíbrio, é aplicada rotineiramente no ajuste de esquemas antibióticos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-006-01",
+        "tipo_relacao": "MECANISMO_COMPARTILHADO",
+        "explicacao": "A meia-vida (t½) é o parâmetro que determina diretamente quantos intervalos de dose são necessários para atingir o steady state (regra de 4-5 meias-vidas). Este bloco aplica essa regra à prática de doses repetidas, sem repetir a dedução matemática já feita no bloco de meia-vida."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-007-03-fc01",
+      "pergunta": "Por que a concentração plasmática de um fármaco em doses repetidas não sobe indefinidamente, mas se estabiliza num platô?",
+      "resposta": "Porque a velocidade de eliminação cresce junto com a concentração presente no corpo: quanto mais fármaco há, mais é eliminado por unidade de tempo. A cada dose nova que eleva a concentração, a velocidade de eliminação também sobe. Em algum ponto, a quantidade eliminada no intervalo entre duas doses se iguala à quantidade administrada nesse mesmo intervalo — entrada e saída se equilibram, e a concentração média para de subir. Esse mecanismo de autorregulação é o que garante a existência do steady state.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "estado-de-equilibrio",
+        "farmacocinetica",
+        "acumulo"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-03-fc02",
+      "pergunta": "Um paciente está em uso de um anticonvulsivante em doses regulares, já em steady state. O médico quer elevar a concentração média de equilíbrio para melhorar o controle das crises. Aumentar a frequência das doses (sem mudar a dose total diária) resolveria isso? E se o objetivo fosse apenas reduzir a flutuação pico-vale, mantendo a mesma concentração média?",
+      "resposta": "Não. Fracionar a mesma dose diária em administrações mais frequentes, mantendo a quantidade total por dia constante, não eleva a concentração média de equilíbrio — apenas reduz a amplitude entre pico e vale, deixando a curva mais próxima de uma linha reta. Para elevar o platô médio, é necessário aumentar a dose total administrada por unidade de tempo (maior dose por administração ou mesma dose com intervalo mais curto sem compensar a quantidade). Ou seja: a altura do platô responde à quantidade de fármaco por unidade de tempo; a flutuação pico-vale responde a como essa mesma quantidade é fracionada ao longo do intervalo.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "estado-de-equilibrio",
+        "pico-vale",
+        "posologia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-03-fc03",
+      "pergunta": "Se um médico dobrar a dose de um fármaco (mantendo o mesmo intervalo), o paciente atinge o steady state mais rapidamente?",
+      "resposta": "Não. O tempo até atingir o steady state depende exclusivamente da meia-vida do fármaco (regra de 4-5 meias-vidas), não da dose administrada. Dobrar a dose faz o paciente atingir, no mesmo tempo de sempre, um platô duas vezes mais alto — mas não acelera a chegada a esse platô. Confundir 'dose maior' com 'equilíbrio mais rápido' é um erro comum: dose determina a altura do platô, meia-vida determina quando ele é atingido.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "estado-de-equilibrio",
+        "meia-vida",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-03-fc04",
+      "pergunta": "Por que a expressão 'estado de equilíbrio' (steady state), emprestada da engenharia de sistemas, pode induzir a um mal-entendido sobre o que realmente acontece com a concentração do fármaco?",
+      "resposta": "Porque 'equilíbrio' pode sugerir um sistema parado, sem movimento — mas o steady state farmacocinético descreve um sistema em fluxo contínuo: fármaco entrando (a cada dose) e saindo (por eliminação constante) o tempo todo. O que se estabiliza não é o movimento, mas o balanço entre entrada e saída. Por isso a concentração real oscila entre pico e vale a cada intervalo, mesmo em pleno steady state — a expressão descreve equilíbrio de fluxo, não ausência de variação.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "estado-de-equilibrio",
+        "etimologia",
+        "pico-vale"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-03-fc05",
+      "pergunta": "Um paciente em uso de gentamicina (aminoglicosídeo de margem terapêutica estreita) tem uma concentração média de 24 horas dentro da faixa terapêutica, mas desenvolve sinais de nefrotoxicidade. Como o conceito de flutuação pico-vale explica essa aparente contradição?",
+      "resposta": "A concentração média de 24 horas é apenas uma média — ela não revela a amplitude da oscilação entre pico e vale a cada intervalo de dose. É possível que o pico (Cmáx), logo após cada administração, esteja ultrapassando o limite tóxico renal, mesmo que a média das 24 horas pareça adequada no papel. Isso reforça por que, em fármacos de margem terapêutica estreita, a monitorização terapêutica colhe níveis de pico e de vale separadamente, em vez de confiar numa concentração média teórica — o risco clínico real está nos extremos da flutuação, não na média.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "pico-vale",
+        "margem-terapeutica-estreita",
+        "monitorizacao"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-007-03-caso01",
+      "titulo": "Crise convulsiva no vale da dose em paciente com epilepsia",
+      "apresentacao": "Mulher de 34 anos, em uso crônico de um anticonvulsivante de meia-vida curta, administrado a cada 12 horas, já em steady state há semanas, apresenta uma crise convulsiva recorrente sempre no mesmo horário: pouco antes da dose da manhã, cerca de 11 horas após a dose da noite anterior. Os níveis séricos, quando colhidos logo após a dose da manhã (no pico), estão dentro da faixa terapêutica — o que inicialmente confunde a equipe.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O intervalo de dose de 12 horas é longo em relação à meia-vida curta do fármaco, produzindo uma flutuação pico-vale acentuada dentro de cada ciclo, mesmo já em steady state."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A concentração plasmática, que se mantém dentro da faixa terapêutica na maior parte do ciclo, cai abaixo da concentração mínima eficaz nas horas finais do intervalo — exatamente o vale do ciclo pico-vale."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Durante essa janela de vale, a concentração cerebral do anticonvulsivante fica insuficiente para manter o efeito antiepiléptico, mesmo com a concentração média de 24 horas tecnicamente dentro da faixa terapêutica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Crise convulsiva recorrente, sempre no mesmo horário do dia — próximo ao momento do vale, pouco antes da próxima dose."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A equipe reprograma a mesma dose diária total para um esquema de administração mais frequente (por exemplo, a cada 8 horas em vez de a cada 12), reduzindo a flutuação pico-vale sem alterar a concentração média de equilíbrio — as crises cessam sem necessidade de aumentar a dose total."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra o ponto central deste bloco: a concentração média de equilíbrio pode estar tecnicamente correta enquanto o vale do ciclo pico-vale cai abaixo do limiar eficaz. Colher um nível sérico apenas no pico, como inicialmente feito, mascarou o problema — a solução exigiu reconhecer que a flutuação, não a média, era a causa do fracasso terapêutico.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "neurologia",
+        "clinica"
+      ],
+      "diagnostico_revelado": "Falha terapêutica por flutuação pico-vale excessiva (vale subterapêutico) apesar de concentração média em steady state dentro da faixa esperada.",
+      "tratamento_resumido": "Fracionamento da mesma dose diária total em intervalos mais curtos e frequentes, reduzindo a amplitude pico-vale sem alterar a concentração média de equilíbrio; confirmação com dosagem sérica de vale antes da próxima dose."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-007-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics: Elimination and Time-Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

@@ -9,49 +9,235 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Úlceras Genitais — Abordagem Sindrômica",
+    "titulo": "Ulceras Genitais - Abordagem Sindromica",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "infeccoes-genitais",
+      "ist",
+      "clinica",
+      "diagnostico"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Diferenciação de úlceras dolorosas vs indolores; roteiro diagnóstico",
-  "narrativa": [],
+  "resumo_conciso": "Úlcera genital exige pensar em herpes, sífilis, cancroide e outras causas. Dor, número de lesões, borda, linfonodos e testes orientam, mas coinfecção e apresentações atípicas são comuns.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Úlcera genital é uma síndrome, não um diagnóstico. As causas infecciosas principais incluem herpes genital, sífilis primária e, em alguns cenários, cancroide, linfogranuloma venéreo e donovanose."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Herpes costuma causar vesículas ou úlceras dolorosas múltiplas, recorrentes, com ardor e linfonodos dolorosos. Sífilis primária classicamente causa cancro duro indolor, borda elevada e linfonodo regional, mas pode fugir do clássico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cancroide, onde prevalente, tende a causar úlcera dolorosa de borda irregular e linfadenite supurativa. Donovanose e LGV têm padrões próprios e dependem de epidemiologia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A aparência ajuda, mas não basta. Coinfecções ocorrem e HIV pode modificar apresentações. Por isso, toda úlcera genital deve motivar testagem para sífilis e herpes quando disponível, além de HIV e outras ISTs conforme risco."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se a suspeita de sífilis ou herpes inicial é alta, tratamento empírico precoce pode ser indicado para reduzir transmissão e complicações, sem esperar todos os resultados quando o contexto justifica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A anamnese deve incluir tempo de lesão, dor, recorrência, exposição sexual, uso de preservativo, sintomas sistêmicos, gestação, imunossupressão e violência sexual."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O manejo inclui analgesia, orientação de abstinência/condom, tratamento de parcerias quando indicado, notificação conforme normas locais e retorno para revisar exames e cicatrização."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-05-000",
+        "titulo": "Modulo 5 - Miomatose Uterina e Tumores Benignos",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-022",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Sifilis Genital - Cancro Duro",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-026",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Bartolinite e Abscesso de Bartholin",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-030",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Doenca Inflamatoria Pelvica - Visao de Conjunto",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN"
+      },
+      {
+        "bloco_id": "s7-go1-04-003",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Apresentacao Clinica da Endometriose - As Tres Dismenorreias"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-021-fc-01",
+      "pergunta": "Quais causas principais de úlcera genital?",
+      "resposta": "Herpes genital, sífilis primária e, conforme epidemiologia, cancroide, LGV e donovanose.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-021-fc-02",
+      "pergunta": "Úlcera dolorosa múltipla sugere o quê?",
+      "resposta": "Herpes genital, especialmente se precedida por vesículas ou recorrente.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-021-fc-03",
+      "pergunta": "Úlcera indolor única sugere o quê?",
+      "resposta": "Sífilis primária, embora apresentações atípicas existam.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-021-fc-04",
+      "pergunta": "Por que testar HIV e sífilis em úlcera genital?",
+      "resposta": "Porque há risco de coinfecção e implicações importantes para tratamento e transmissão.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-021-cc-01",
+      "titulo": "Nem toda úlcera dolorosa é simples",
+      "apresentacao": "Paciente apresenta múltiplas úlceras dolorosas vulvares e linfonodos inguinais dolorosos após nova parceria.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Úlcera genital exige pensar em herpes, sífilis, cancroide e outras causas."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Ulceras Genitais - Abordagem Sindromica, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Úlcera genital exige pensar em herpes, sífilis, cancroide e outras causas. Dor, número de lesões, borda, linfonodos e testes orientam, mas coinfecção e apresentações atípicas são comuns."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente apresenta múltiplas úlceras dolorosas vulvares e linfonodos inguinais dolorosos após nova parceria."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual abordagem inicial? Suspeitar herpes, testar ISTs incluindo sífilis e HIV, considerar tratamento precoce e orientar parcerias/abstinência."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Suspeitar herpes, testar ISTs incluindo sífilis e HIV, considerar tratamento precoce e orientar parcerias/abstinência.",
+      "tratamento_resumido": "Suspeitar herpes, testar ISTs incluindo sífilis e HIV, considerar tratamento precoce e orientar parcerias/abstinência."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Quadro sindrômico comparando herpes, sífilis e cancroide por dor, número de lesões, borda, linfonodo e testes.",
+        "alt": "Ilustracao educacional para Ulceras Genitais - Abordagem Sindromica"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Bacterial Vaginosis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Vulvovaginal Candidiasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Trichomoniasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Urethritis and Cervicitis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Ulcer Disease",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/genital-ulcers.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "clinica",
     "diagnostico"

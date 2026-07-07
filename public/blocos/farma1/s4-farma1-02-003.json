@@ -10,51 +10,313 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Agonistas e Antagonistas — Ligar e Desligar o Alvo (Visão Geral)",
+    "subtitulo": "Todo fármaco que se liga ao receptor produz o mesmo tipo de efeito?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "afinidade",
+      "atividade-intrinseca",
+      "receptor",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Afinidade x atividade intrínseca; classificação funcional dos ligantes",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior mostrou que todo fármaco precisa se encaixar num alvo molecular pré-existente para produzir efeito. Mas esse encaixe, sozinho, não conta a história inteira: existe uma diferença crítica entre um fármaco conseguir se ligar ao receptor e esse mesmo fármaco conseguir ativá-lo depois de ligado. A primeira propriedade — a capacidade de se encaixar e permanecer ligado — chama-se afinidade. A segunda — a capacidade de, uma vez ligado, mudar a conformação do receptor e disparar a cascata intracelular — chama-se atividade intrínseca (ou eficácia). São propriedades independentes: um fármaco pode ter afinidade alta e atividade intrínseca alta, afinidade alta e atividade intrínseca nula, ou qualquer combinação intermediária entre esses extremos. Essa distinção resolve um paradoxo aparente — como dois fármacos podem ocupar exatamente o mesmo receptor e produzir efeitos opostos — e é o critério que organiza toda a classificação funcional dos ligantes farmacológicos: se um composto ativa o receptor, se não o ativa, ou se apenas ocupa o espaço e bloqueia a ação de outros. Sem separar essas duas propriedades, a palavra 'ligar-se ao receptor' fica ambígua demais para explicar por que a mesma fechadura aceita chaves com efeitos tão diferentes.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já sabe que um fármaco precisa se encaixar num receptor específico para produzir efeito — isso é o que a visão geral da farmacodinâmica estabeleceu. Mas há uma pergunta que essa afirmação, sozinha, ainda não responde: será que todo fármaco que se encaixa no receptor faz a mesma coisa depois de encaixado?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta é não, e é aqui que a farmacodinâmica fica interessante de verdade. Dois fármacos podem se ligar exatamente ao mesmo receptor, com a mesma força de ligação, e um deles ativa a célula enquanto o outro simplesmente ocupa o espaço e não faz nada além disso — ou pior, impede que o ligante natural do corpo consiga se ligar ali. Se 'ligar-se ao receptor' bastasse para explicar o efeito, esse contraste não existiria."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: ligar não é o mesmo que ativar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema que este bloco resolve é o seguinte: a ligação fármaco-receptor é um evento físico-químico — duas moléculas com formas complementares se encontram e se prendem uma à outra. Mas o efeito biológico não vem da ligação em si; vem do que a ligação provoca na proteína depois de ela estar ocupada. Uma chave pode entrar perfeitamente numa fechadura e, mesmo assim, não girar. Se a farmacologia tratasse todo encaixe fármaco-receptor como equivalente a ativação, seria incapaz de explicar por que existem fármacos que bloqueiam efeitos em vez de produzi-los."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: o desafio aqui não é explicar como o fármaco se encaixa no receptor — isso já foi resolvido. É explicar por que o mesmo tipo de encaixe pode ter consequências completamente diferentes na célula."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: separar a capacidade de ligar da capacidade de ativar"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacologia resolveu isso definindo duas propriedades distintas para todo ligante — e ligante, aqui, é qualquer molécula (fármaco ou substância endógena) capaz de se ligar a um receptor. A primeira propriedade é a afinidade: a capacidade de o ligante se encaixar no receptor e permanecer ligado a ele. É uma medida de quão bem a molécula 'gruda' — quanto maior a afinidade, menor a concentração de fármaco necessária para ocupar uma fração relevante dos receptores disponíveis."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda propriedade é a atividade intrínseca (também chamada de eficácia): a capacidade de o ligante, uma vez ligado, mudar a conformação do receptor de um jeito que dispara a cascata intracelular. É uma medida de quanto efeito biológico aquele encaixe específico consegue gerar — não se o encaixe acontece, mas o que ele produz depois de acontecer."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Afinidade responde 'o fármaco consegue se ligar e ficar ligado?'. Atividade intrínseca responde 'esse fármaco ligado consegue ativar o receptor?'. São perguntas diferentes, com respostas independentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que essas duas propriedades são independentes"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A independência entre afinidade e atividade intrínseca vem da própria estrutura da interação molecular. A afinidade depende de como o ligante se encaixa no sítio de ligação — as forças físico-químicas (pontes de hidrogênio, interações iônicas, encaixe de forma) que prendem a molécula ali. A atividade intrínseca depende de algo adicional: se, depois de encaixado, o ligante consegue empurrar a proteína para a conformação ativa — a forma que liga a cascata intracelular."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Nada obriga essas duas capacidades a andarem juntas. Uma molécula pode ser desenhada — ou selecionada pela evolução, no caso dos ligantes endógenos — para encaixar perfeitamente no sítio de ligação sem ter a estrutura extra necessária para forçar a mudança de forma que ativa o receptor. Ela ocupa o lugar, impede que outras moléculas se liguem ali, mas não aciona nada. Por isso a combinação das duas propriedades é o que define, na prática, o comportamento funcional de qualquer ligante."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essa combinação — presença ou ausência de afinidade, presença ou ausência de atividade intrínseca, e o grau de cada uma — que organiza a classificação funcional dos ligantes farmacológicos. Um ligante com afinidade e atividade intrínseca plena produz ativação máxima do receptor. Um ligante com afinidade mas sem nenhuma atividade intrínseca ocupa o receptor sem ativá-lo, e por ocupar o espaço, acaba bloqueando a ação de outras moléculas que teriam ativado aquele mesmo receptor. Entre esses dois extremos existe um espectro inteiro de combinações possíveis — é justamente esse espectro que os próximos temas vão detalhar, molécula por molécula."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Neste ponto, guarde o essencial: afinidade e atividade intrínseca são dois eixos independentes. Um ligante pode estar em qualquer posição nesse espaço de duas dimensões. É essa posição que decide se ele ativa, bloqueia, ou faz algo intermediário — sem que seja preciso, ainda, nomear cada categoria específica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa distinção se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa distinção depende diretamente da sequência de ligação e mudança conformacional descrita na visão geral da farmacodinâmica: afinidade corresponde à etapa de ligação, atividade intrínseca corresponde à etapa de mudança conformacional que aciona a cascata. Sem separar essas duas etapas ali, a distinção entre afinidade e atividade intrínseca aqui não teria como onde se apoiar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, essa separação explica por que existem fármacos com finalidades opostas mirando o mesmo receptor. Ela também antecipa uma pergunta que a farmacologia quantitativa vai responder mais adiante: se dois fármacos têm atividade intrínseca semelhante, mas um precisa de dose muito menor que o outro para produzir o mesmo efeito, a diferença está na afinidade — uma variável que a clínica chama de potência, sem se referir ainda à eficácia máxima que cada um consegue atingir."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "afinidade e atividade intrínseca",
+      "origem": "afinidade, do latim affinitas (parentesco, proximidade, relação estreita); atividade intrínseca, de intrinsecus (que vem de dentro, interno)",
+      "significado": "afinidade: 'proximidade/atração' entre duas moléculas; atividade intrínseca: capacidade de ação que já está contida na própria molécula, não algo emprestado de fora",
+      "explicacao": "Affinitas descrevia originalmente parentesco por casamento — uma relação de proximidade que não é de sangue, mas ainda assim une. Emprestada para a química e depois para a farmacologia, a palavra manteve o sentido de 'atração mútua entre duas entidades', aplicado à atração físico-química entre ligante e receptor. Já intrinsecus opõe-se a extrinsecus (que vem de fora): atividade intrínseca é a capacidade de ativação que pertence à própria molécula, não uma propriedade emprestada da concentração ou do tempo de exposição. A escolha desses dois nomes já embute a lição do bloco: uma coisa é a proximidade (afinidade), outra é a capacidade de agir que vem de dentro da molécula (atividade intrínseca)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a distinção"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔌",
+      "conteudo": "Pense num interruptor de parede e em duas ferramentas usadas para mexer nele. A primeira é um dedo, que encaixa exatamente no formato do interruptor e consegue empurrá-lo para cima, acendendo a luz — esse dedo tem afinidade (encaixa) e atividade intrínseca (consegue empurrar e ativar). A segunda é um pedaço de fita adesiva do tamanho exato do interruptor, colada por cima dele — a fita também tem afinidade (fica grudada ali, ocupando o lugar com precisão), mas não tem nenhuma capacidade de empurrar nada: a luz não acende, e enquanto a fita estiver ali, nem o dedo de outra pessoa consegue chegar ao interruptor para acioná-lo. A analogia quebra num ponto: na célula real, a atividade intrínseca não é tudo ou nada como empurrar/não empurrar um interruptor mecânico — existe um espectro contínuo de quanto a mudança de conformação consegue acionar a cascata, coisa que uma fita adesiva rígida não tem como representar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se afinidade e atividade intrínseca fossem sempre a mesma coisa — se todo ligante que se encaixasse no receptor necessariamente o ativasse — o que a farmacologia perderia como ferramenta terapêutica?",
+      "resposta": "Perderia toda a possibilidade de bloquear vias em vez de apenas estimulá-las. Boa parte do arsenal terapêutico moderno existe justamente porque é possível desenhar moléculas com afinidade alta e atividade intrínseca baixa ou nula — capazes de ocupar um receptor sem ativá-lo, impedindo que sinais indesejados (excesso de um hormônio, hiperestimulação de uma via) produzam efeito. Se ligação e ativação fossem inseparáveis, a única forma de interferir num sistema seria estimulá-lo ainda mais nunca inibi-lo por competição direta no mesmo sítio — e uma fração enorme da farmacologia clínica, do tratamento da hipertensão às alergias, perderia seu princípio de funcionamento."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Afinidade e atividade intrínseca como dois eixos independentes",
+      "descricao": "Esquema didático em dois painéis lado a lado. Painel esquerdo: um plano cartesiano simples com eixo horizontal 'afinidade' (de baixa a alta) e eixo vertical 'atividade intrínseca' (de nula a máxima), com três pontos marcados — um no canto superior direito (afinidade alta + atividade intrínseca alta), um no canto inferior direito (afinidade alta + atividade intrínseca nula) e um em posição intermediária. Painel direito: dois desenhos simplificados de receptor de membrana em corte — no primeiro, um ligante encaixado que provoca mudança de forma visível na proteína e uma seta indicando ativação da cascata interna; no segundo, um ligante diferente encaixado no mesmo sítio, sem nenhuma mudança de forma na proteína e sem seta de ativação, apenas ocupando o espaço. Legendas curtas em português. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno, dividido em dois painéis lado a lado com uma linha divisória fina. Painel esquerdo, rotulado 'DUAS PROPRIEDADES INDEPENDENTES': plano cartesiano com eixo X rotulado 'afinidade' (de baixa a alta, esquerda para direita) e eixo Y rotulado 'atividade intrínseca' (de nula a máxima, baixo para cima); três pontos coloridos distintos plotados — um no canto superior direito com legenda 'agonista pleno', um no canto inferior direito com legenda 'antagonista', um em posição intermediária com legenda 'resposta parcial'. Painel direito, rotulado 'NA MEMBRANA': dois desenhos simplificados e paralelos de uma proteína receptora em corte transversal na membrana celular; à esquerda, um ligante romboide encaixado no sítio de ligação com a proteína mostrando mudança de contorno (linha pontilhada = forma antiga, linha sólida = forma nova) e uma seta apontando para dentro da célula indicando cascata ativada; à direita, um ligante de forma diferente encaixado no mesmo tipo de sítio, proteína mantendo contorno único sem mudança de forma, sem seta de ativação. Paleta de cores suaves e consistente, alto contraste, sem texturas fotorrealistas, texto apenas nas legendas indicadas, em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-000",
+        "titulo": "Farmacodinâmica — O Que o Fármaco Faz ao Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume a sequência ligação → mudança conformacional → cascata intracelular já estabelecida na visão geral. Afinidade corresponde à etapa de ligação; atividade intrínseca corresponde à etapa de mudança conformacional que aciona a cascata."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-003-01",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Agonistas plenos e atividade intrínseca máxima",
+        "mecanismo_conexao": "O primeiro filho detalha o caso em que afinidade e atividade intrínseca estão ambas no máximo, produzindo a ativação plena do receptor descrita aqui de forma geral.",
+        "confianca": "estabelecida"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-003-02",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Agonistas parciais e agonistas inversos",
+        "mecanismo_conexao": "O segundo filho detalha posições intermediárias e negativas no eixo de atividade intrínseca, o espectro que este bloco descreve sem nomear.",
+        "confianca": "estabelecida"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-003-03",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Antagonismo competitivo e não competitivo",
+        "mecanismo_conexao": "O terceiro filho detalha o caso de afinidade sem atividade intrínseca (ocupação sem ativação) descrito de forma geral na analogia da fita adesiva.",
+        "confianca": "estabelecida"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-003-04",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Antagonismo farmacológico, fisiológico e químico",
+        "mecanismo_conexao": "O quarto filho detalha outras formas de um fármaco anular o efeito de outro, expandindo o conceito de bloqueio além da simples ocupação do mesmo sítio de ligação.",
+        "confianca": "estabelecida"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Potência versus eficácia máxima na comparação entre fármacos da mesma classe",
+        "mecanismo_conexao": "A distinção entre afinidade (relacionada à potência) e atividade intrínseca (relacionada à eficácia máxima) é o pré-requisito conceitual para comparar quantitativamente dois fármacos que atuam no mesmo receptor.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-003-fc01",
+      "pergunta": "Qual é a diferença entre afinidade e atividade intrínseca, e por que essas duas propriedades são independentes uma da outra?",
+      "resposta": "Afinidade é a capacidade de o ligante se encaixar no receptor e permanecer ligado a ele — uma propriedade físico-química do encaixe. Atividade intrínseca é a capacidade de, uma vez ligado, mudar a conformação do receptor de um jeito que aciona a cascata intracelular. São independentes porque nada obriga uma molécula capaz de se encaixar bem (afinidade alta) a também ter a estrutura extra necessária para forçar a mudança de forma que ativa o receptor (atividade intrínseca alta) — uma molécula pode ocupar o sítio de ligação sem conseguir ativá-lo.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "afinidade",
+        "atividade-intrinseca"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-fc02",
+      "pergunta": "Por que a farmacologia precisou separar 'ligar-se ao receptor' em duas propriedades distintas, em vez de tratar todo encaixe fármaco-receptor como equivalente a ativação?",
+      "resposta": "Porque existem ligantes que se encaixam perfeitamente no receptor sem produzir nenhuma ativação — apenas ocupam o espaço, bloqueando a ação de outras moléculas ali. Se ligação e ativação fossem tratadas como sinônimos, seria impossível explicar por que dois fármacos podem ocupar o mesmo receptor com a mesma força e ainda assim produzir efeitos opostos: um ativando a célula, o outro apenas impedindo que ela seja ativada.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "afinidade",
+        "atividade-intrinseca"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-fc03",
+      "pergunta": "Se um ligante hipotético tivesse afinidade altíssima pelo receptor mas atividade intrínseca igual a zero, o que aconteceria funcionalmente quando ele ocupasse esse receptor?",
+      "resposta": "O receptor ficaria ocupado, fisicamente ligado ao ligante, mas nenhuma cascata intracelular seria acionada — nenhuma mudança de conformação ativadora ocorreria. Ao mesmo tempo, por estar firmemente ligado (afinidade alta), esse ligante impediria que outras moléculas com atividade intrínseca (como o ligante endógeno natural daquele receptor) conseguissem se ligar e ativá-lo. O resultado funcional seria bloqueio do sinal, não ativação — o receptor estaria 'ocupado, mas mudo'.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "afinidade",
+        "atividade-intrinseca",
+        "bloqueio"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-fc04",
+      "pergunta": "As palavras 'afinidade' (do latim affinitas) e 'atividade intrínseca' (de intrinsecus) carregam, na própria etimologia, a distinção conceitual que definem. Explique como.",
+      "resposta": "Affinitas originalmente descrevia parentesco por proximidade (como o parentesco por casamento), mantendo o sentido de 'atração mútua entre duas entidades' quando emprestada para descrever a atração físico-química entre ligante e receptor — ou seja, o quanto duas moléculas se aproximam e permanecem juntas. Já intrinsecus opõe-se a extrinsecus (que vem de fora): atividade intrínseca é a capacidade de ativação que pertence à própria molécula, não emprestada de fora. Os dois nomes já separam, na origem, 'estar próximo/ligado' (afinidade) de 'ter capacidade de agir a partir de dentro' (atividade intrínseca) — exatamente os dois eixos independentes do bloco.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "etimologia",
+        "afinidade"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-fc05",
+      "pergunta": "Dois fármacos, A e B, se ligam ao mesmo receptor com força de ligação semelhante. A ativa plenamente a cascata intracelular; B, uma vez ligado, não produz nenhuma mudança de conformação ativadora. Em termos de afinidade e atividade intrínseca, o que diferencia A de B?",
+      "resposta": "A e B têm afinidade semelhante — ambos se encaixam e permanecem ligados ao receptor com força parecida. A diferença está na atividade intrínseca: A tem atividade intrínseca alta (a ligação dele muda a conformação do receptor de forma a acionar a cascata), enquanto B tem atividade intrínseca nula (a ligação dele não produz essa mudança ativadora, apenas ocupa o sítio). É a atividade intrínseca, não a afinidade, que separa um ligante que ativa de um que apenas ocupa.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "afinidade",
+        "atividade-intrinseca",
+        "comparacao"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Este bloco é uma visão geral conceitual que separa duas propriedades farmacodinâmicas independentes — afinidade e atividade intrínseca — sem ainda nomear categorias funcionais específicas de ligante (agonista pleno, parcial, antagonista). É um conceito organizador abstrato, não uma estrutura biológica com síndrome clínica própria. Cada categoria funcional derivada dessa distinção, detalhada nos blocos filhos, é que se conecta a fármacos e doenças reais com cascata causal própria."
+  },
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-003-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacodinamica",
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

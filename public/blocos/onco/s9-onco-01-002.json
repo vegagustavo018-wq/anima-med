@@ -1,0 +1,429 @@
+{
+  "resumo_id": "s9-onco-01-002",
+  "no_pai_id": "s9-onco-01-000",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-patol1-07-030",
+    "s8-farma-onco-01-000",
+    "s5-patol-onco-01-000"
+  ],
+  "metadata": {
+    "titulo": "Comportamento Biológico do Tumor que Muda a Conduta",
+    "semestre": 9,
+    "disciplina": "Oncologia",
+    "profundidade_arvore": 2,
+    "importancia": 3,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
+    "tags": [
+      "onco",
+      "correlação clínica",
+      "conduta",
+      "diferenciação",
+      "grau histológico",
+      "Ki-67",
+      "velocidade tumoral",
+      "decisão terapêutica"
+    ],
+    "nivel": "CORE",
+    "tipo": "conceito",
+    "lentes": [
+      "correlacao_clinica",
+      "conduta"
+    ]
+  },
+  "resumo_conciso": "No bloco anterior (O Câncer na Prática Clínica — Visão Geral) apresentamos o relógio de areia: toda neoplasia tem uma velocidade biológica própria, e é essa velocidade — não o diagnóstico de \"maligno\" isoladamente — que determina a urgência da conduta. Este bloco abre esse relógio e pergunta: o que exatamente o patologista mede, ao microscópio, para estimar essa velocidade? A resposta tem dois eixos que costumam ser confundidos por estudantes, mas que respondem perguntas diferentes. O primeiro eixo é a diferenciação — o quanto a célula tumoral ainda se parece e se comporta como a célula de origem, medida pelo grau histológico. O segundo eixo é o ritmo de crescimento — a fração de células ativamente se dividindo naquele exato momento, medida por índice mitótico e por marcadores de proliferação como o Ki-67. Diferenciação diz \"o quanto essa célula esqueceu de ser normal\"; proliferação diz \"com que velocidade ela está se multiplicando agora\". Já vimos em Patologia Geral (S4) a base molecular desse comportamento — as mutações em oncogenes e supressores que ligam o motor da divisão e desligam os freios. Este bloco não repete essa biologia molecular: pega o resultado dela (uma célula com fenótipo alterado) e mostra como o patologista traduz esse fenótipo em número, e como esse número muda a cirurgia, a quimioterapia e o prognóstico que o médico oferece ao paciente.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, deixamos os dois nódulos de 8 milímetros — o da tireoide e o do pulmão — como exemplo de que o mesmo tamanho pode exigir condutas opostas, porque cada um corre um relógio biológico diferente. Prometemos ali que o \"grau histológico\" e a \"taxa de proliferação\" eram os números que traduziam essa velocidade. Chegou a hora de abrir essa caixa.\n\nImagine dois laudos de biópsia de mama que chegam à sua mesa na mesma tarde. O primeiro diz: carcinoma ductal invasivo, grau 1, Ki-67 de 8%. O segundo diz: carcinoma ductal invasivo, grau 3, Ki-67 de 65%. Mesmo órgão, mesmo tipo histológico básico, mesma palavra \"invasivo\" — mas um oncologista olha para esses dois laudos e já sabe, antes de qualquer exame adicional, que está diante de duas doenças com prognósticos e urgências completamente diferentes. O que essas duas frases — \"grau\" e \"Ki-67\" — realmente medem, e por que elas pesam tanto na decisão?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que o diagnóstico de \"maligno\" não informa a velocidade"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O diagnóstico patológico de malignidade (que você já domina desde Patologia Geral, S4: invasão, perda de controle de divisão, potencial de disseminação) é uma resposta binária — sim ou não, é câncer. Mas essa resposta binária esconde uma variação enorme: dentro do grupo \"maligno\", existem tumores que crescem em anos e tumores que crescem em semanas. Se o médico tratasse todo tumor maligno com a mesma intensidade e a mesma pressa, erraria em dois sentidos — trataria de forma insuficiente um tumor agressivo (perdendo a janela de cura) e trataria de forma excessiva um tumor indolente (expondo o paciente a toxicidade sem necessidade).\n\nO problema, então, é este: dado que uma célula já cruzou a linha entre normal e maligna, como medir objetivamente o quão longe ela foi e a que velocidade continua indo? É exatamente essa lacuna — entre \"é câncer\" e \"que tipo de câncer, correndo a que velocidade\" — que o patologista preenche com dois instrumentos distintos: o grau de diferenciação e a taxa de proliferação."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Primeiro eixo: o quanto a célula esqueceu de ser normal"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução que a patologia encontrou para o primeiro eixo foi comparar a célula tumoral com a célula normal da qual ela se originou — e medir a distância entre as duas. Uma célula glandular normal, por exemplo, forma estruturas organizadas: túbulos, ácinos, camadas ordenadas, núcleos regulares e discretos. Quando essa célula sofre as mutações que a tornam maligna (o mesmo tipo de evento que você estudou em Carcinogênese, S4-patol1: ativação de oncogenes, perda de supressores tumorais), ela pode manter boa parte dessa organização — ou perdê-la quase completamente.\n\nUm tumor bem diferenciado ainda forma estruturas reconhecíveis: os túbulos glandulares aparecem tortos, mas presentes; a célula ainda produz um pouco do produto que produzia antes (mucina, hormônio, queratina). Um tumor pouco diferenciado (indiferenciado ou anaplásico) perdeu quase toda a arquitetura original: núcleos bizarros, tamanhos variáveis, perda quase completa da função especializada. É como se a célula tivesse \"esquecido\" a profissão que exercia antes de enlouquecer."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se mede: o grau histológico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O patologista, ao microscópio, atribui um grau — tipicamente de 1 a 3 (bem diferenciado, moderadamente diferenciado, pouco diferenciado/indiferenciado), embora sistemas específicos por órgão (Gleason na próstata, Nottingham na mama, Fuhrman/ISUP no rim) usem escalas próprias com a mesma lógica de fundo. Três critérios morfológicos entram nessa nota: formação de estruturas glandulares ou tubulares (quanto mais formadas, mais diferenciado), pleomorfismo nuclear (quanto mais uniformes os núcleos, mais diferenciado) e contagem mitótica (quantas células estão se dividindo por campo de grande aumento).\n\nRepare que o terceiro critério — contagem mitótica — já é uma ponte para o segundo eixo deste bloco. Isso não é coincidência: diferenciação e proliferação estão biologicamente ligadas (uma célula que perde os freios de diferenciação costuma também perder os freios de divisão), mas são conceitualmente distintas e merecem instrumentos de medida próprios, porque nem sempre andam perfeitamente juntas."
+    },
+    {
+      "tipo": "pausa",
+      "titulo": "Consolidação",
+      "conteudo": "Antes de seguir, confirme: grau histológico não mede quantas células estão se multiplicando agora. Mede o quanto a célula, em sua estrutura e aparência, ainda se parece com a célula normal de origem. Baixo grau = ainda parecida; alto grau = quase irreconhecível. Isso é arquitetura e aparência — não velocidade em tempo real."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Segundo eixo: com que velocidade a célula está se dividindo agora"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O segundo eixo responde a uma pergunta diferente da primeira: não \"quão anormal esta célula parece\", mas \"que fração da população tumoral está, neste exato instante, em processo ativo de divisão\". Duas células podem ter aparência igualmente anômala (mesmo grau) e ainda assim ter frações de divisão completamente diferentes — uma pode estar em ritmo lento de multiplicação, a outra pode estar duplicando a população em poucos dias.\n\nA solução mais direta, usada há décadas, é contar mitoses ao microscópio: quantas figuras de divisão celular (cromossomos condensados, fuso mitótico visível) aparecem em um número padronizado de campos de grande aumento. Mas contar mitoses tem uma limitação — só captura a célula no instante exato da divisão, um evento rápido dentro de um ciclo celular que dura horas. Muitas células podem estar \"preparando-se\" para dividir (nas fases G1, S, G2 do ciclo celular) sem estarem, no momento do corte histológico, em mitose visível. A contagem mitótica, portanto, subestima a real fração proliferativa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se mede: o índice Ki-67"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução para essa limitação veio da imuno-histoquímica: em vez de esperar flagrar a célula em mitose, marca-se uma proteína que está presente durante praticamente todo o ciclo celular ativo (fases G1, S, G2 e mitose), mas ausente na fase de repouso (G0). Essa proteína nuclear foi isolada pela primeira vez em Kiel, na Alemanha, a partir do clone de anticorpo número 67 de uma série de testes — daí o nome Ki-67, que não tem significado biológico próprio, apenas registra a origem do anticorpo que a identificou.\n\nO índice Ki-67 é relatado como uma porcentagem: a proporção de núcleos tumorais que coram positivamente para essa proteína, dentre o total de células contadas. Um Ki-67 de 5% significa que apenas 1 em cada 20 células está em ciclo ativo — crescimento lento. Um Ki-67 de 70% significa que a maioria da população está se dividindo — crescimento explosivo. Diferente da contagem mitótica, o Ki-67 captura toda a fração proliferativa, não só o instante da mitose, e por isso se tornou o marcador de escolha em tumores de mama, neuroendócrinos, linfomas e diversos outros."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra prática: grau histológico e Ki-67 respondem perguntas diferentes e se completam. Grau baixo com Ki-67 alto existe (tumor ainda organizado, mas dividindo rápido) — não é contradição, é informação adicional. A conduta correta soma os dois eixos, mais o TNM (extensão) e o contexto do paciente, já apresentados no bloco anterior — nenhum desses quatro fatores decide sozinho."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esses dois números mudam a cirurgia, a quimioterapia e o prognóstico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esses dois eixos não ficam presos ao laudo — eles atravessam para dentro da sala de decisão terapêutica em pelo menos três frentes. Primeiro, na indicação de quimioterapia adjuvante: um câncer de mama pequeno, grau 1, Ki-67 baixo, receptor hormonal positivo, muitas vezes é tratado apenas com cirurgia e hormonioterapia — quimioterapia adicionaria toxicidade sem ganho proporcional, porque o tumor já se comporta de forma indolente. O mesmo tamanho de tumor, mas grau 3 e Ki-67 alto, quase sempre soma quimioterapia ao plano, porque a velocidade de crescimento justifica o risco do tratamento sistêmico.\n\nSegundo, na urgência da programação cirúrgica: tumores de alta proliferação encurtam a janela entre diagnóstico e cirurgia — cada semana de atraso importa mais quando o Ki-67 é 80% do que quando é 5%. Terceiro, no prognóstico comunicado ao paciente: grau e proliferação entram diretamente em escores prognósticos compostos (como o Oncotype DX e o Mammaprint em mama, que na prática são, em parte, refinamentos moleculares desse mesmo eixo de proliferação) usados para estimar risco de recidiva e decidir intensidade de tratamento adjuvante."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa medida se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este eixo de diferenciação/proliferação não nasce isolado, nem termina aqui. Ele depende diretamente da base molecular que você já viu em Carcinogênese (S4, Patologia Geral) — as mutações em oncogenes (que aceleram o ciclo celular) e supressores tumorais (que deixam de frear a divisão) são a causa; grau histológico e Ki-67 são o efeito visível dessa causa, agora medido e quantificado. Ele também se conecta lateralmente com a farmacologia oncológica: muitos agentes quimioterápicos citotóxicos (como os taxanos e antraciclinas) atuam preferencialmente sobre células em ciclo ativo — por isso tumores de Ki-67 alto, paradoxalmente, costumam responder melhor a esses agentes do que tumores indolentes, que têm poucas células vulneráveis ao ataque num dado momento. E se conecta com a patologia oncológica de rotina, onde grau e índice proliferativo aparecem lado a lado no mesmo laudo, geralmente ao lado de marcadores moleculares como receptores hormonais e HER2 em mama, formando o perfil completo que orienta a escolha terapêutica."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Diferenciação (grau histológico)",
+      "origem": "Latim differentia (diferença) + o sufixo -ação (ação/processo)",
+      "significado": "Processo pelo qual uma célula se especializa, adquirindo estrutura e função distintas de outras",
+      "explicacao": "Em patologia, \"diferenciação\" é usada ao contrário do sentido embriológico habitual: mede o quanto a célula tumoral retém dessa especialização original. \"Bem diferenciado\" significa que a célula ainda se parece com — e às vezes ainda funciona como — o tecido de origem. \"Indiferenciado\" significa que a célula perdeu essa identidade especializada, regredindo a uma forma mais primitiva e menos reconhecível."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "**Ki-67**, como vimos, não carrega etimologia biológica — é um nome de catálogo de laboratório (Kiel, clone 67), um lembrete de que nem todo termo médico nasce de grego ou latim; muitos nascem de registro de bancada. **Mitose**, por outro lado, vem do grego mitos (μίτος), \"fio\", numa referência direta aos filamentos cromossômicos visíveis se condensando durante a divisão celular — o nome batizado por Walther Flemming no século XIX ao observar, pela primeira vez ao microscópio, esses \"fios\" se organizando no núcleo em divisão."
+    },
+    {
+      "tipo": "analogia",
+      "titulo": "A fábrica e a linha de produção",
+      "mapeamento": {
+        "estado_da_fabrica": "Grau histológico — o quanto a fábrica (célula) ainda opera com a organização e o produto original, ou já virou um galpão caótico sem função clara",
+        "velocidade_da_linha": "Índice Ki-67 — quantas máquinas da fábrica estão ligadas e produzindo neste exato turno, independente de a fábrica estar organizada ou não",
+        "fabrica_bem_diferenciada": "Grau 1 — ainda produz o produto original (hormônio, mucina, queratina), em linhas reconhecíveis",
+        "fabrica_indiferenciada": "Grau 3 — galpão sem nenhuma linha de produção reconhecível, apenas caos estrutural",
+        "linha_lenta": "Ki-67 baixo — poucas máquinas ligadas, produção lenta",
+        "linha_acelerada": "Ki-67 alto — quase todas as máquinas ligadas, produção em ritmo máximo"
+      },
+      "conteudo": "Pense em duas fábricas abandonadas que foram tomadas por uma gestão sem controle algum. A primeira fábrica ainda tem suas linhas de montagem reconhecíveis, os operários ainda seguem alguma rotina parecida com a original, mesmo que devagar e com erros — isso é grau histológico baixo (bem diferenciado). A segunda fábrica é um galpão em ruínas, sem nenhuma linha organizada, máquinas destruídas, produto irreconhecível — isso é grau histológico alto (indiferenciado). Agora, independentemente de qual fábrica você está olhando, existe uma segunda pergunta: quantas máquinas estão ligadas E funcionando neste exato turno? Uma fábrica organizada pode estar com a produção parada (baixo Ki-67) ou acelerada ao máximo (alto Ki-67) — e o mesmo vale para o galpão em ruínas. As duas perguntas — o estado da fábrica e a velocidade da linha agora — são independentes, e o oncologista precisa das duas respostas antes de decidir se vale a pena mandar reforços (quimioterapia) e com que urgência."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Contrafactual: e se só existisse o grau, sem medida de proliferação?"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o patologista só relatasse o grau histológico, sem nenhuma medida direta de proliferação (nem contagem mitótica, nem Ki-67), o que se perderia na decisão clínica?",
+      "resposta": "Perderia-se a capacidade de diferenciar, dentro do mesmo grau, tumores de comportamento clínico distinto. Dois carcinomas de mama grau 2 podem ter Ki-67 de 10% e de 45% — o primeiro se comporta como indolente, o segundo como agressivo, mas o grau isolado não captura essa diferença porque mede arquitetura e aparência, não velocidade em tempo real. Sem o Ki-67 (ou contagem mitótica), decisões de adicionar ou poupar quimioterapia adjuvante em tumores de grau intermediário — a situação mais comum e mais difícil na prática — ficariam sem o dado mais decisivo disponível."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Dois eixos independentes: diferenciação e proliferação",
+      "descricao": "Gráfico de dois eixos perpendiculares. Eixo horizontal: grau de diferenciação, de 'bem diferenciado' (esquerda) a 'indiferenciado' (direita), ilustrado por três miniaturas de tecido glandular perdendo organização progressivamente. Eixo vertical: índice Ki-67, de 'baixo (crescimento lento)' (base) a 'alto (crescimento rápido)' (topo), ilustrado por núcleos corados em marrom (positivos) em proporção crescente. Quatro quadrantes resultantes mostram exemplos: bem diferenciado + Ki-67 baixo (indolente clássico), bem diferenciado + Ki-67 alto (organizado mas acelerado), indiferenciado + Ki-67 baixo (raro, mas possível), indiferenciado + Ki-67 alto (mais agressivo).",
+      "prompt_ia": "Create a clean medical-education scatter/quadrant diagram with two perpendicular axes. Horizontal axis: histologic differentiation grade, from 'well differentiated' (left, showing organized glandular tissue miniature) to 'undifferentiated' (right, showing disorganized anaplastic tissue miniature). Vertical axis: Ki-67 proliferation index, from 'low (slow growth)' at bottom (few brown-stained nuclei among blue nuclei) to 'high (fast growth)' at top (mostly brown-stained nuclei). Four quadrants populated with small labeled tissue icons representing each combination. Medical blue, amber and brown color palette, minimalist flat vector style, labels in Portuguese, neutral adaptive background."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Fechamento clínico: voltando aos dois laudos de mama"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Voltando aos dois laudos do início: carcinoma ductal invasivo grau 1, Ki-67 8%, é uma fábrica que ainda opera parecido com o tecido mamário normal, com poucas máquinas ligadas agora — indolente, geralmente tratado com cirurgia e hormonioterapia, quimioterapia adjuvante frequentemente dispensável. Carcinoma ductal invasivo grau 3, Ki-67 65%, é um galpão em ruínas com quase todas as máquinas em ritmo máximo — agressivo, quase sempre soma quimioterapia ao plano terapêutico, e a programação cirúrgica ganha urgência.\n\nEssa é a tradução completa do relógio de areia apresentado no bloco anterior: grau histológico e Ki-67 são os dois números que o patologista lê diretamente do microscópio para calibrar a velocidade daquele relógio específico. Eles não substituem o estadiamento TNM (que mede o quanto do território já foi tomado) nem o contexto do paciente — mas sem eles, o médico decide conduta às cegas, sem saber se está diante de uma fábrica lenta ou de uma em plena aceleração."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [],
+    "futuras": [
+      {
+        "blocoId": "s5-patol-onco-01-000",
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "descricao": "Patologia e imuno-histoquímica oncológica aprofunda a técnica de coloração de Ki-67 e outros marcadores de proliferação e diferenciação em detalhe laboratorial, além de outros biomarcadores (HER2, receptores hormonais).",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "blocoId": "s8-farma-onco-01-000",
+        "tipo": "ALVO_TERAPEUTICO",
+        "descricao": "Farmacologia oncológica explica por que agentes citotóxicos (taxanos, antraciclinas) atuam preferencialmente sobre células em ciclo ativo, tornando o Ki-67 um preditor indireto de resposta à quimioterapia.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "blocoId": "s9-onco-01-003",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "Genética Clínica e Testes Moleculares mostra como escores compostos (Oncotype DX, Mammaprint) refinam esse mesmo eixo de proliferação usando painéis de expressão gênica, quantificando risco de recidiva com mais precisão que grau e Ki-67 isolados.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "blocoId": "s9-onco-04-000",
+        "tipo": "ALVO_TERAPEUTICO",
+        "descricao": "Oncologia Clínica por Órgão (Mama) usa diretamente grau histológico e Ki-67 como critérios de decisão para indicação de quimioterapia adjuvante versus hormonioterapia isolada.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "blocoId": "s4-patol1-07-030",
+        "relacao": "PONTE_CONCEITUAL",
+        "descricao": "A base molecular de carcinogênese (oncogenes ativados, supressores perdidos) é a causa; grau histológico e Ki-67 são o efeito fenotípico mensurável dessa causa.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
+      },
+      {
+        "blocoId": "s8-farma-onco-01-000",
+        "relacao": "MECANISMO_FARMACOLOGICO",
+        "descricao": "Agentes quimioterápicos citotóxicos que visam células em ciclo ativo explicam por que tumores de alta proliferação, apesar de mais agressivos, costumam responder melhor à quimioterapia clássica.",
+        "tipo_relacao": "CONTRASTE"
+      },
+      {
+        "blocoId": "s5-patol-onco-01-000",
+        "relacao": "FERRAMENTA_DIAGNOSTICA",
+        "descricao": "A técnica de imuno-histoquímica que revela o Ki-67 é a mesma plataforma usada para outros biomarcadores prognósticos e preditivos em oncologia.",
+        "tipo_relacao": "EXEMPLO_PARALELO"
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "tipo": "por_que",
+      "pergunta": "Por que não basta saber que um tumor é 'maligno' para decidir a conduta — por que o patologista precisa medir grau histológico e índice de proliferação separadamente?",
+      "resposta": "Porque 'maligno' é uma resposta binária que esconde uma variação enorme de comportamento biológico. Tumores malignos podem crescer em anos ou em semanas. Sem medir separadamente o quanto a célula perdeu sua organização original (grau) e a velocidade com que está se dividindo agora (proliferação), o médico não consegue calibrar a intensidade e a urgência do tratamento — arriscando tratar de menos um tumor agressivo ou de mais um indolente.",
+      "nivel_alvo": 3
+    },
+    {
+      "tipo": "mecanismo",
+      "pergunta": "Descreva por que a contagem mitótica subestima a fração real de células proliferando, e como o Ki-67 resolve essa limitação.",
+      "resposta": "A contagem mitótica só flagra a célula no instante exato da mitose, uma fase rápida dentro de um ciclo celular que também inclui G1, S e G2 — fases em que a célula já está ativamente se preparando para dividir, mas não aparece em mitose visível ao microscópio. O Ki-67 é uma proteína nuclear presente durante todo o ciclo ativo (G1, S, G2 e mitose), ausente apenas na fase de repouso G0. Por isso, marcar Ki-67 por imuno-histoquímica captura toda a fração proliferativa da população tumoral, não apenas o instante da divisão.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se dois tumores de mama grau 2 tivessem Ki-67 de 10% e 45% respectivamente, e o patologista relatasse apenas o grau (sem Ki-67), o que se perderia na decisão sobre quimioterapia adjuvante?",
+      "resposta": "Perderia-se justamente a informação mais decisiva nos casos de grau intermediário — a situação mais comum e mais difícil na prática oncológica. O tumor com Ki-67 de 10% se comporta como indolente e pode dispensar quimioterapia; o de 45% se comporta como agressivo e geralmente exige quimioterapia adjuvante. O grau isolado, sendo igual nos dois casos, não permite essa distinção.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "clinico",
+      "pergunta": "Uma paciente recebe laudo de carcinoma ductal invasivo, grau 3, Ki-67 65%, receptor hormonal positivo. Outra recebe laudo de carcinoma ductal invasivo, grau 1, Ki-67 8%, receptor hormonal positivo. Por que a primeira paciente provavelmente soma quimioterapia ao tratamento e a segunda não?",
+      "resposta": "O grau 3 indica que a célula perdeu quase toda a organização e função do tecido mamário normal (alta anaplasia), e o Ki-67 de 65% indica que a maior parte da população tumoral está em ciclo ativo de divisão neste momento — um tumor biologicamente agressivo e de crescimento rápido, que justifica o risco da quimioterapia sistêmica. A segunda paciente tem um tumor que ainda se parece estruturalmente com o tecido original (grau 1) e cresce devagar (Ki-67 8%) — quimioterapia adicionaria toxicidade sem ganho proporcional, e cirurgia + hormonioterapia costuma ser suficiente.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "comparacao",
+      "pergunta": "Compare o que o grau histológico mede com o que o índice Ki-67 mede, e explique por que um tumor pode ter grau baixo e Ki-67 alto ao mesmo tempo.",
+      "resposta": "Grau histológico mede a diferenciação — o quanto a célula tumoral, em arquitetura e aparência, ainda se parece com a célula normal de origem (estrutura glandular, uniformidade nuclear). Ki-67 mede a proliferação — a fração de células ativamente em ciclo de divisão neste exato momento. São eixos biologicamente relacionados, mas não idênticos: uma célula pode manter boa parte de sua organização estrutural original (grau baixo) e, ainda assim, ter uma fração grande da população se dividindo rapidamente (Ki-67 alto) — os dois processos podem se dissociar parcialmente.",
+      "nivel_alvo": 3
+    },
+    {
+      "tipo": "armadilha",
+      "pergunta": "Um estudante afirma: 'Se o grau histológico já é alto, não preciso olhar o Ki-67 — um tumor indiferenciado já é obviamente de crescimento rápido.' Onde está o erro nesse raciocínio?",
+      "resposta": "O erro é assumir que diferenciação e proliferação sempre andam perfeitamente juntas. Embora estejam biologicamente relacionadas (perder os freios de diferenciação frequentemente acompanha perder os freios de divisão), são medidas independentes: existem tumores pouco diferenciados com índice de proliferação relativamente baixo, e tumores bem diferenciados com proliferação alta. Ignorar o Ki-67 por já saber o grau descarta uma informação que pode mudar diretamente a decisão de quimioterapia.",
+      "nivel_alvo": 4
+    },
+    {
+      "tipo": "etimologia",
+      "pergunta": "Por que o nome 'Ki-67' não segue o padrão grego/latino de outros termos médicos, e o que isso ensina sobre a origem de certos nomes em medicina?",
+      "resposta": "Ki-67 vem de Kiel (cidade alemã onde o anticorpo foi desenvolvido) e do número 67, que identifica o clone específico dentro de uma série de testes de laboratório — não carrega significado biológico embutido como 'mitose' (do grego mitos, fio) ou 'neoplasia' (novo + formação). Isso ilustra que nem todo termo médico nasce de uma lógica etimológica grega ou latina: muitos nomes registram simplesmente a origem de bancada de laboratório onde a descoberta ocorreu, e reconhecer essa diferença evita procurar um significado biológico que não existe no nome.",
+      "nivel_alvo": 2
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s9-onco-01-002-cc1",
+      "titulo": "Dois Laudos de Mama, Duas Fábricas Diferentes",
+      "apresentacao": "Na mesma tarde, você revisa dois laudos de biópsia de mama que chegam ao ambulatório de oncologia. Paciente A, 58 anos, sem comorbidades relevantes: carcinoma ductal invasivo, grau 1, Ki-67 8%, receptor de estrogênio positivo, HER2 negativo. Paciente B, 51 anos: carcinoma ductal invasivo, grau 3, Ki-67 65%, receptor de estrogênio positivo, HER2 negativo. Um residente pergunta: 'Os dois têm receptor hormonal positivo e HER2 negativo — a conduta não deveria ser parecida?'",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Em ambas as pacientes, células do epitélio ductal mamário acumularam mutações em oncogenes e supressores tumorais (a mesma base molecular estudada em Carcinogênese, S4) que conferiram vantagem proliferativa. Mas o grau de perda de diferenciação e a intensidade dessa vantagem proliferativa divergiram entre as duas."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Paciente A: o tumor ainda forma estruturas glandulares reconhecíveis, núcleos relativamente uniformes — grau 1. Paciente B: arquitetura glandular quase ausente, núcleos pleomórficos e bizarros — grau 3. Mesma origem tecidual, graus opostos de desorganização."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Na paciente A, a fração de células em ciclo ativo de divisão é pequena (Ki-67 8%) — a maioria das células está em repouso (G0), crescimento lento. Na paciente B, a maior parte da população tumoral está em ciclo ativo (Ki-67 65%) — divisão celular acelerada, expansão rápida de volume tumoral."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Clinicamente, ambas apresentaram nódulo palpável de tamanho semelhante ao diagnóstico — o exame físico isolado não distingue as duas. A diferença só emerge no laudo histopatológico e no índice de proliferação."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Paciente A: cirurgia conservadora + hormonioterapia adjuvante (tamoxifeno ou inibidor de aromatase); quimioterapia adjuvante provavelmente dispensável dado o baixo risco de recidiva sinalizado por grau e Ki-67 baixos. Paciente B: cirurgia + quimioterapia adjuvante somada à hormonioterapia, dada a alta proliferação e o maior risco de recidiva e disseminação precoce; programação cirúrgica também ganha prioridade de agenda."
+        }
+      ],
+      "conexao_com_bloco": "O caso aplica diretamente os dois eixos apresentados — diferenciação (grau) e proliferação (Ki-67) — mostrando que mesmo com receptor hormonal e HER2 idênticos, esses dois números isolados já bastam para justificar planos terapêuticos radicalmente diferentes.",
+      "disciplinas_relacionadas": [
+        "Patologia Oncológica",
+        "Farmacologia Oncológica",
+        "Cirurgia Oncológica"
+      ],
+      "diagnostico_revelado": "Carcinoma ductal invasivo de mama, com comportamento biológico divergente (indolente versus agressivo) definido por grau histológico e índice de proliferação Ki-67, apesar de perfil de receptores hormonais idêntico.",
+      "tratamento_resumido": "Paciente A: cirurgia conservadora + hormonioterapia, sem quimioterapia. Paciente B: cirurgia + quimioterapia adjuvante + hormonioterapia, com priorização da agenda cirúrgica."
+    }
+  ],
+  "midia": {
+    "imagens": [
+      {
+        "id": "img-001-dois-eixos-diferenciacao-proliferacao",
+        "titulo": "Dois eixos independentes: diferenciação e proliferação",
+        "descricao": "Gráfico de dois eixos perpendiculares: grau de diferenciação (horizontal) e índice Ki-67 (vertical), com quatro quadrantes ilustrando as combinações possíveis e exemplos de tecido tumoral em cada uma.",
+        "tipo": "esquema_didatico",
+        "rotulo": "◇ esquema"
+      },
+      {
+        "id": "img-002-fabrica-linha-producao",
+        "titulo": "A fábrica e a linha de produção",
+        "descricao": "Ilustração comparativa de duas fábricas (uma organizada, uma em ruínas) cada uma podendo estar com a linha de produção lenta ou acelerada, mapeando visualmente a analogia do bloco.",
+        "tipo": "analogia_visual",
+        "rotulo": "◇ esquema"
+      },
+      {
+        "id": "img-003-lamina-ki67-imunohistoquimica",
+        "titulo": "Lâmina de imuno-histoquímica para Ki-67",
+        "descricao": "Fotomicrografia real de lâmina histológica de carcinoma de mama corada por imuno-histoquímica para Ki-67, mostrando núcleos positivos em marrom (células em ciclo ativo) e núcleos negativos em azul (células em repouso), permitindo comparação visual entre alto e baixo índice proliferativo.",
+        "tipo": "imagem_real",
+        "fonte": "PathologyOutlines.com",
+        "licenca": "uso educativo com citação",
+        "rotulo": "✓ real"
+      },
+      {
+        "id": "img-004-comparacao-grau1-grau3",
+        "titulo": "Comparação histológica: grau 1 versus grau 3",
+        "descricao": "Comparação lado a lado de fotomicrografias reais de carcinoma ductal invasivo grau 1 (estruturas glandulares preservadas, núcleos uniformes) e grau 3 (arquitetura perdida, núcleos pleomórficos e mitoses atípicas frequentes).",
+        "tipo": "imagem_real",
+        "fonte": "Wikimedia Commons",
+        "licenca": "CC-BY-SA",
+        "rotulo": "✓ real"
+      }
+    ],
+    "videos": [],
+    "audios": []
+  },
+  "horizonte_validade": "em_mudanca",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Kumar, Abbas, Aster. Robbins & Cotran Pathologic Basis of Disease, 10ª ed., 2020.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "American Joint Committee on Cancer (AJCC). Cancer Staging Manual, 2023.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "guideline",
+      "citacao": "National Comprehensive Cancer Network (NCCN). Clinical Practice Guidelines in Oncology — Breast Cancer, 2026.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "paper",
+      "citacao": "Elston CW, Ellis IO. Pathological prognostic factors in breast cancer: the value of histological grade in breast cancer. Histopathology. 1991 (Nottingham Grading System).",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "paper",
+      "citacao": "Dowsett M, et al. Assessment of Ki67 in breast cancer: recommendations from the International Ki67 in Breast Cancer Working Group. J Natl Cancer Inst. 2011.",
+      "pmid_doi": "PMID 21960707",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "procedencia": {
+    "gerado_por": "agente-produtor-anima-s9-onco-01",
+    "data_geracao": "2026-07-05",
+    "revisado_por": null,
+    "data_revisao": null,
+    "nivel_confianca": "estudo"
+  },
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Grau histológico e índice Ki-67 medem a mesma coisa",
+      "correcao": "Grau histológico mede diferenciação (arquitetura e aparência celular comparada ao tecido normal); Ki-67 mede proliferação (fração de células em ciclo ativo agora). São eixos relacionados, mas independentes — um tumor pode ter grau baixo e Ki-67 alto, ou vice-versa.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Um tumor indiferenciado (grau alto) é automaticamente de crescimento rápido",
+      "correcao": "Diferenciação e proliferação costumam andar juntas por estarem ligadas à mesma base molecular, mas não são garantidas de coincidir. É preciso medir os dois eixos separadamente antes de decidir conduta.",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "Contagem mitótica e índice Ki-67 são equivalentes",
+      "correcao": "A contagem mitótica captura apenas o instante visível da divisão celular (mitose), subestimando a real fração proliferativa. O Ki-67 marca uma proteína presente durante todo o ciclo ativo (G1, S, G2, mitose), oferecendo estimativa mais completa da proliferação.",
+      "armadilha_em_flashcard": "nao"
+    },
+    {
+      "confusao": "O nome 'Ki-67' tem origem grega ou latina como a maioria dos termos médicos",
+      "correcao": "Ki-67 vem do nome da cidade de Kiel (Alemanha) e do número do clone de anticorpo testado — é um nome de origem laboratorial, sem significado etimológico biológico embutido.",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "grau histológico",
+      "termo_es": "grado histológico",
+      "termo_en": "histologic grade",
+      "abreviatura": "G1-G3"
+    },
+    {
+      "termo_pt": "índice de proliferação Ki-67",
+      "termo_es": "índice de proliferación Ki-67",
+      "termo_en": "Ki-67 proliferation index",
+      "abreviatura": "Ki-67"
+    },
+    {
+      "termo_pt": "diferenciação tumoral",
+      "termo_es": "diferenciación tumoral",
+      "termo_en": "tumor differentiation",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "completo",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "agente-produtor-anima-s9-onco-01",
+      "mudanca": "Criação do bloco completo",
+      "motivo": "Produção inicial seguindo blueprint curricular do Semestre 9 — Oncologia"
+    }
+  ],
+  "_interna": {
+    "nota_producao": "Bloco filho direto de s9-onco-01-000 e irmão imediato de s9-onco-01-001, focado especificamente em como o comportamento biológico do tumor (diferenciação e proliferação) é medido na prática patológica e traduzido em decisão terapêutica. Não repete a base molecular de carcinogênese (oncogenes/supressores), que pertence a s4-patol1-07-030 (encontrado apenas como esqueleto sem narrativa) — reconhece-a genericamente e foca exclusivamente no ângulo clínico-terapêutico: como grau histológico e Ki-67 mudam cirurgia, quimioterapia e prognóstico. Também não repete a lógica de 'relógio de areia' e os quatro ingredientes de decisão já apresentados no bloco irmão anterior — assume-os e aprofunda especificamente o primeiro ingrediente (biologia do tumor).",
+    "granularidade_check": "✓ Um tema = um bloco. Tema é: 'como diferenciação e proliferação, medidas por grau histológico e Ki-67, mudam a conduta terapêutica'. Não expandiu para testes genômicos compostos (Oncotype DX/Mammaprint, que ficam para 01-003) nem para farmacologia detalhada dos citotóxicos (fica para módulo de farmacologia oncológica) nem para apresentações por órgão específico além do exemplo de mama usado para ilustrar.",
+    "continuidade_com_pai_e_irmao": "✓ Abertura reconhece explicitamente o bloco irmão anterior ('No bloco anterior... deixamos os dois nódulos de 8 milímetros... Prometemos ali que grau histológico e taxa de proliferação eram os números...') e aponta para o pré-requisito de patol1 ('Já vimos em Patologia Geral (S4) a base molecular... Este bloco não repete essa biologia molecular'). Fecha retomando a metáfora do relógio de areia do bloco anterior, fechando o círculo pedagógico. Nenhum nó filho declarado, portanto nos_filhos_ids vazio.",
+    "checklist_8_etapas": "✓ POR QUE EXISTE (diagnóstico binário de malignidade não informa velocidade) → COMO SE RESOLVE (dois eixos: diferenciação e proliferação) → DO QUE É FEITO (comparação estrutural com tecido normal / fração de células em ciclo ativo) → COMO FUNCIONA (grau histológico por três critérios morfológicos; Ki-67 por imuno-histoquímica) → COM O QUE SE ARTICULA (carcinogênese molecular, farmacologia oncológica, patologia de rotina, testes genômicos futuros) → NOME+ETIMOLOGIA (diferenciação, Ki-67, mitose) → ANALOGIA (fábrica e linha de produção, com mapeamento explícito) → IMAGEM (múltiplas, incluindo esquema e imagens reais de lâmina)."
+  }
+}

@@ -10,49 +10,220 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Módulo 8 — Câncer Ginecológico",
+    "titulo": "Modulo 8 - Cancer Ginecologico",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 2,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Neoplasias malignas de colo, endométrio, ovário, vulva e vagina",
-  "narrativa": [],
+  "resumo_conciso": "Câncer ginecológico reúne tumores de colo, endométrio, ovário, vulva e vagina, cada um com fatores de risco, sinais de alerta, estratégias diagnósticas e tratamentos próprios.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Câncer ginecológico não é uma única doença. Colo, endométrio, ovário, vulva e vagina têm biologia, prevenção, sintomas e tratamentos diferentes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O câncer de colo é o modelo de prevenção por vacina e rastreamento. Surge na zona de transformação, ligado a HPV persistente, e pode ser evitado quando lesões precursoras são detectadas e tratadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O câncer de endométrio costuma anunciar-se por sangramento uterino anormal, especialmente após a menopausa. Seu eixo clássico envolve estrogênio sem oposição, obesidade, anovulação e hiperplasia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O câncer de ovário é mais silencioso. Sintomas vagos, massa anexial complexa, ascite, história familiar e mutações como BRCA/genes de reparo aumentam preocupação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vulva e vagina são menos frequentes, mas não devem ser ignoradas: prurido persistente, úlcera, lesão pigmentada, massa ou sangramento exigem exame cuidadoso e biópsia quando suspeitos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O raciocínio oncológico sempre passa por três verbos: suspeitar, confirmar e estadiar. A confirmação costuma depender de histologia, e o estadiamento orienta tratamento e prognóstico."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A boa ginecologia oncológica começa antes do câncer: vacinação, rastreamento, investigação de sangramento anormal, avaliação de massa anexial e atenção a sintomas persistentes."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-07-000",
+        "titulo": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-05-005",
+        "titulo": "Hiperplasia Endometrial - Precursora do Cancer de Endometrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-032",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Ovário — Diagnóstico, Estadiamento e Tratamento",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Vulva e Vagina",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-04-006",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Adenomiose - Endometrio Invadindo o Miometrio"
+      },
+      {
+        "bloco_id": "s7-go1-06-040",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com HIV e Outras ISTs na Saude da Mulher"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-08-000-fc-01",
+      "pergunta": "Qual câncer ginecológico é mais ligado a rastreamento organizado?",
+      "resposta": "Câncer de colo do útero.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-000-fc-02",
+      "pergunta": "Qual sinal clássico de câncer de endométrio?",
+      "resposta": "Sangramento pós-menopausa ou sangramento uterino anormal.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-000-fc-03",
+      "pergunta": "Por que câncer de ovário é chamado silencioso?",
+      "resposta": "Porque pode causar sintomas vagos e ser diagnosticado em fase avançada.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-000-fc-04",
+      "pergunta": "O que confirma câncer na maioria dos casos?",
+      "resposta": "Histologia por biópsia ou peça cirúrgica.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-08-000-cc-01",
+      "titulo": "Cinco órgãos, um alerta",
+      "apresentacao": "Paciente pergunta se preventivo normal exclui todos os cânceres ginecológicos.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Câncer ginecológico reúne tumores de colo, endométrio, ovário, vulva e vagina, cada um com fatores de risco, sinais de alerta, estratégias diagnósticas e tratamentos próprios."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Modulo 8 - Cancer Ginecologico, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Câncer ginecológico reúne tumores de colo, endométrio, ovário, vulva e vagina, cada um com fatores de risco, sinais de alerta, estratégias diagnósticas e tratamentos próprios."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente pergunta se preventivo normal exclui todos os cânceres ginecológicos."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Como responder? Não. Citologia rastreia colo; endométrio, ovário, vulva e vagina exigem outros sinais, exames e investigação dirigida."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Não. Citologia rastreia colo; endométrio, ovário, vulva e vagina exigem outros sinais, exames e investigação dirigida.",
+      "tratamento_resumido": "Não. Citologia rastreia colo; endométrio, ovário, vulva e vagina exigem outros sinais, exames e investigação dirigida."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Mapa dos cânceres ginecológicos por órgão: colo, endométrio, ovário, vulva e vagina, com sinal de alerta principal.",
+        "alt": "Ilustracao educacional para Modulo 8 - Cancer Ginecologico"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Cervical Cancer Treatment",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Endometrial Cancer Treatment",
+      "url": "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

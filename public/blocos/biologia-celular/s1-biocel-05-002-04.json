@@ -1,54 +1,363 @@
 {
-  "resumo_id": "s1-biocel-05-002-04",
-  "no_pai_id": "s1-biocel-05-002",
-  "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Cascata PLC / IP3 / DAG / PKC",
-    "semestre": 1,
+    "subtitulo": "Por que a célula prefere cortar uma molécula da própria membrana em vez de fabricar um mensageiro do zero?",
     "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tags": [
+      "sinalizacao-celular",
+      "segundos-mensageiros",
+      "fosfolipase-c",
+      "calcio",
+      "proteina-quinase-c",
+      "core"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
   },
-  "resumo_conciso": "Hidrólise de PIP2, liberação de Ca2+ e ativação de PKC",
-  "narrativa": [],
+  "resumo_conciso": "Depois que um receptor de sete transmembrana é ativado, ele precisa entregar a mensagem a algum lugar dentro da célula — e uma das rotas mais usadas para isso não fabrica um mensageiro novo do zero: ela corta em dois pedaços uma molécula que já existe, embutida na própria membrana. A enzima fosfolipase C (PLC), ativada pela proteína G, hidrolisa o fosfolipídio de membrana PIP2, gerando simultaneamente dois segundos mensageiros com destinos opostos: o IP3, solúvel em água, que se difunde até o retículo endoplasmático e libera cálcio armazenado; e o DAG, que permanece preso na membrana e, junto com o próprio cálcio liberado, recruta e ativa a proteína quinase C (PKC). Essa bifurcação — um sinal se transformando em dois mensageiros com propriedades físicas opostas — é o que permite à célula coordenar dois efeitos simultâneos a partir de um único evento de ativação inicial.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Pense em uma vinícola que, em vez de importar dois produtos separados — suco de uva e casca de uva para taninos —, simplesmente prensa a mesma uva colhida e obtém os dois subprodutos de uma só operação, cada um seguindo depois para um processo diferente na produção do vinho. Não é preciso ir buscar dois ingredientes distintos em dois lugares diferentes: um único ato de processar a matéria-prima já disponível gera, de uma só vez, dois produtos com destinos e funções distintas."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema essa via precisa resolver?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Você já viu, no bloco anterior, que um receptor de sete transmembrana ativado recruta uma proteína G. Mas a proteína G, sozinha, ainda não produz uma resposta celular visível — ela precisa repassar o sinal adiante. E aqui surge uma exigência dupla: muitas respostas celulares precisam ser coordenadas em dois compartimentos ao mesmo tempo — o citosol, onde o cálcio armazenado no retículo precisa ser liberado, e a própria membrana plasmática, onde enzimas específicas precisam ser recrutadas e ativadas localmente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Fabricar dois mensageiros completamente diferentes, a partir de matérias-primas distintas, seria uma solução possível — mas cara e lenta. Existiria uma forma mais econômica de gerar dois sinais com destinos opostos ao mesmo tempo, a partir de uma única reação?"
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Segure esta pergunta antes de seguir: e se, em vez de sintetizar dois mensageiros novos, a célula simplesmente cortasse ao meio uma molécula que já está pronta e disponível, obtendo instantaneamente duas metades com propriedades físicas diferentes?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula resolveu isso?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi recrutar a enzima fosfolipase C (PLC) para a face interna da membrana plasmática, onde ela encontra um alvo já disponível: o fosfatidilinositol 4,5-bisfosfato (PIP2), um fosfolipídio que já faz parte estrutural da própria membrana, presente em pequena quantidade constante. A PLC hidrolisa o PIP2 exatamente no ponto que separa sua porção solúvel de sua porção lipídica, produzindo dois fragmentos com destinos opostos: o inositol trifosfato (IP3), que é hidrossolúvel e se solta livremente para o citosol, e o diacilglicerol (DAG), que é lipofílico e permanece retido na membrana, exatamente onde foi gerado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa 'divisão de tarefas' é elegante porque cada fragmento carrega o sinal para o compartimento certo automaticamente, apenas por sua própria natureza química: o IP3 não precisa de nenhum mecanismo especial de transporte para chegar ao retículo endoplasmático — ele simplesmente se difunde pelo citosol, sendo solúvel em água, até encontrar canais de cálcio sensíveis a IP3 na membrana do retículo. O DAG, por sua vez, não precisa de nada que o impeça de vazar para longe da membrana — sua própria natureza lipídica já o mantém ali."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A escolha do PIP2 como precursor não é aleatória: é justamente sua estrutura híbrida — uma porção lipídica ancorada na membrana ligada a uma porção de fosfato solúvel — que permite que sua clivagem gere automaticamente dois mensageiros com propriedades físicas opostas, sem que a célula precise de nenhum sistema adicional de endereçamento."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como os dois mensageiros convergem para ativar a PKC"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Da clivagem do PIP2 à ativação da proteína quinase C",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Recrutamento e ativação da PLC",
+          "explicacao": "Um receptor de sete transmembrana ativado libera a subunidade da proteína G que recruta e ativa a fosfolipase C na face interna da membrana plasmática."
+        },
+        {
+          "numero": 2,
+          "titulo": "Clivagem do PIP2",
+          "explicacao": "A PLC hidrolisa o fosfolipídio PIP2, presente na membrana, gerando simultaneamente duas moléculas: IP3 (solúvel) e DAG (permanece na membrana)."
+        },
+        {
+          "numero": 3,
+          "titulo": "IP3 libera cálcio do retículo",
+          "explicacao": "O IP3 se difunde pelo citosol até encontrar canais de cálcio sensíveis a IP3 na membrana do retículo endoplasmático, provocando sua abertura e a liberação do cálcio ali armazenado para o citosol."
+        },
+        {
+          "numero": 4,
+          "titulo": "O cálcio recruta a PKC até a membrana",
+          "explicacao": "O aumento da concentração citosólica de cálcio livre atua como sinal para que a proteína quinase C (PKC), normalmente dispersa no citosol, migre até a face interna da membrana plasmática."
+        },
+        {
+          "numero": 5,
+          "titulo": "O DAG completa a ativação da PKC",
+          "explicacao": "Já na membrana, a PKC encontra o DAG, que permaneceu ali desde a etapa 2. A ligação simultânea ao cálcio e ao DAG ativa completamente a PKC, que passa a fosforilar proteínas-alvo específicas, desencadeando a resposta celular final."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que a PKC precisa dos dois sinais — cálcio e DAG — e não apenas um? Essa exigência dupla funciona como um mecanismo de checagem: a PKC só se ativa completamente quando os dois braços da mesma cascata confirmam, de forma independente, que o receptor foi de fato ativado. Isso reduz a chance de ativação acidental por flutuações espontâneas em apenas um dos dois sinais isoladamente."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🍇",
+      "conteudo": "Volte à prensa de uvas da vinícola. O cacho de uvas colhido (PIP2, já presente na membrana) passa pela prensa (fosfolipase C ativada), que em um único movimento separa o suco (IP3, que escoa livremente para os tanques de fermentação distantes — equivalente ao citosol e ao retículo) das cascas e sementes (DAG, que permanecem presas na superfície da prensa — equivalente à membrana). O suco fermentado por si só ainda não é o vinho pronto: é preciso também o tanino extraído das cascas para dar corpo e complexidade final à bebida — assim como a PKC só se ativa plenamente quando recebe tanto o sinal do cálcio liberado pelo IP3 quanto o do DAG que ficou na membrana. Mapeamento: uva colhida = PIP2; prensa = fosfolipase C; suco solto = IP3; cascas retidas = DAG; tanque de fermentação distante = retículo endoplasmático liberando cálcio; vinho finalizado apenas com os dois componentes reunidos = PKC plenamente ativada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa cascata se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A PKC ativada fosforila uma ampla gama de proteínas-alvo, alterando processos que vão da contração de músculo liso à secreção glandular e à proliferação celular, dependendo do tipo de célula em que a via está ativa. Essa mesma via é um dos pontos de convergência mais estudados da farmacologia: ela é ativada por praticamente todos os receptores de sete transmembrana acoplados à subfamília Gq da proteína G, incluindo receptores de histamina, de angiotensina II e de vários neurotransmissores."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "fosfolipase",
+      "origem": "do grego phôs/phôtos (associado historicamente ao fósforo, do grego phosphoros, 'portador de luz') + lípos (gordura) + o sufixo -ase (enzima)",
+      "significado": "literalmente, 'enzima que atua sobre fosfolipídios'",
+      "explicacao": "O nome descreve diretamente a função catalítica da proteína: ela hidrolisa (quebra usando água) uma ligação específica dentro da molécula de fosfolipídio, separando o grupo fosfato-inositol da porção lipídica ancorada na membrana. A letra 'C' no nome fosfolipase C indica especificamente qual ligação química dentro da molécula de fosfolipídio a enzima cliva — existem outras fosfolipases (A1, A2, D) que cortam a mesma molécula em pontos diferentes, gerando produtos distintos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o IP3 fosse, por alguma alteração hipotética em sua estrutura química, uma molécula lipofílica em vez de hidrossolúvel, o que aconteceria com essa via de sinalização?",
+      "resposta": "O sinal ficaria fisicamente confinado à membrana plasmática, incapaz de se difundir pelo citosol até alcançar os canais de cálcio do retículo endoplasmático. Sem essa mensagem chegando ao retículo, o cálcio armazenado nunca seria liberado, e a proteína quinase C jamais receberia o segundo dos dois sinais necessários para sua ativação completa — mesmo que o DAG continuasse sendo gerado normalmente na membrana. A cascata inteira falharia exatamente no ponto que depende da propriedade física específica do IP3: sua solubilidade em água é o que permite que ele viaje até um compartimento celular fisicamente distante de onde foi produzido. É essa diferença de solubilidade entre IP3 e DAG — e não apenas suas estruturas químicas — que torna possível a bifurcação do sinal em dois destinos simultâneos."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Bifurcação do sinal na cascata PLC/IP3/DAG/PKC",
+      "descricao": "Diagrama mostrando a membrana plasmática com a fosfolipase C clivando o PIP2 em dois produtos: IP3 se difundindo até canais de cálcio na membrana do retículo endoplasmático, e DAG permanecendo na membrana plasmática, com cálcio e DAG convergindo para ativar a PKC.",
+      "prompt_ia": "Diagrama científico vetorial, fundo neutro adaptativo transparente, estilo didático de livro-texto. Corte transversal mostrando a membrana plasmática superior e a membrana do retículo endoplasmático mais abaixo, com o citosol entre elas. Na membrana plasmática, uma enzima fosfolipase C (representada em roxo) clivando uma molécula de PIP2 (rotulada) em dois produtos com uma seta de bifurcação clara: um fragmento pequeno e solúvel (IP3, rotulado, com aparência de molécula polar) se difundindo em direção à membrana do retículo endoplasmático abaixo; outro fragmento (DAG, rotulado) permanecendo incorporado na membrana plasmática, representado com sua cauda lipídica ainda inserida na bicamada. Uma seta do IP3 abrindo um canal de cálcio na membrana do retículo, com pequenas esferas azuis (íons cálcio) sendo liberadas para o citosol. As esferas de cálcio e o DAG convergindo com setas para uma proteína (PKC, rotulada) que muda de cor de cinza inativo para amarelo ativo ao ser recrutada à membrana. Legendas em português para cada componente. Paleta de cores suaves e científicas, sem texturas fotorrealistas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-05-002-01",
+        "titulo": "Estrutura 7-Transmembrana",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A cascata PLC/IP3/DAG/PKC é tipicamente desencadeada por um receptor de sete transmembrana acoplado à subfamília Gq da proteína G — entender a ativação do receptor é pré-requisito direto para entender o que a ativa."
+      },
+      {
+        "bloco_id": "s1-biocel-01-002",
+        "titulo": "Membrana Plasmática — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Compreender a natureza anfipática dos fosfolipídios de membrana é essencial para entender por que o DAG permanece na membrana enquanto o IP3 se difunde livremente pelo citosol."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "topico": "Contração da musculatura lisa vascular",
+        "disciplina": "fisiologia",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "A liberação de cálcio via IP3 e a ativação da PKC são gatilhos centrais para a contração em células musculares lisas, incluindo a resposta a hormônios vasoconstritores como a angiotensina II.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "topico": "Bloqueadores de receptores de angiotensina II",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "Os bloqueadores do receptor de angiotensina II (BRAs), usados no tratamento da hipertensão, impedem justamente a ativação inicial dessa cascata na musculatura lisa vascular.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "topico": "Ativação plaquetária mediada por PLC",
+        "disciplina": "hematologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "A cascata PLC/IP3/DAG/PKC é central na ativação plaquetária desencadeada por agonistas como o tromboxano A2 e a trombina, sendo relevante para o entendimento da hemostasia primária.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-05-002-01",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Enquanto esta via usa a clivagem do fosfolipídio PIP2 como fonte de segundos mensageiros, a via clássica do AMP cíclico usa ATP e a enzima adenilato ciclase, ilustrando que a célula possui múltiplas 'linguagens' químicas distintas de tradução de sinais a partir do mesmo tipo de receptor ativado."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-05-002-04-fc01",
+      "pergunta": "Por que a clivagem do PIP2 pela fosfolipase C é uma solução particularmente eficiente para gerar dois segundos mensageiros com destinos diferentes ao mesmo tempo?",
+      "resposta": "Porque o PIP2 já é uma molécula híbrida, com uma porção fosfato-inositol solúvel em água ligada a uma cauda lipídica ancorada na membrana. Ao cortar exatamente essa ligação, a fosfolipase C não precisa 'endereçar' os dois produtos separadamente — a própria natureza química de cada fragmento já determina seu destino: o IP3 (solúvel) se difunde automaticamente pelo citosol, e o DAG (lipofílico) permanece automaticamente retido na membrana. A célula obtém, de uma única reação enzimática, dois sinais com propriedades físicas opostas e complementares.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["plc", "pip2", "segundos-mensageiros"]
+    },
+    {
+      "card_id": "s1-biocel-05-002-04-fc02",
+      "pergunta": "Explique por que a proteína quinase C (PKC) exige dois sinais simultâneos — cálcio e DAG — para ser plenamente ativada, em vez de responder a apenas um deles.",
+      "resposta": "A exigência de dois sinais concomitantes funciona como um mecanismo de checagem dupla: a PKC só se ativa completamente quando tanto o braço do IP3 (que libera cálcio do retículo) quanto o braço do DAG (que permanece na membrana) confirmam, de forma independente, que a fosfolipase C foi ativada a partir do mesmo evento de sinalização. Isso reduz a chance de ativação espontânea ou acidental da PKC por flutuações isoladas em apenas um dos dois sinais, tornando a resposta celular mais específica e confiável.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["pkc", "calcio", "dag", "mecanismo"]
+    },
+    {
+      "card_id": "s1-biocel-05-002-04-fc03",
+      "pergunta": "Se uma célula tivesse canais de cálcio no retículo endoplasmático que fossem insensíveis ao IP3, mas a fosfolipase C e a produção de DAG continuassem funcionando normalmente, o que aconteceria com a ativação da PKC?",
+      "resposta": "A PKC não seria ativada de forma completa, mesmo que o DAG estivesse presente normalmente na membrana. Como a PKC depende da presença simultânea de cálcio citosólico elevado e de DAG para sua ativação plena, a incapacidade dos canais do retículo de responder ao IP3 impediria o aumento necessário de cálcio livre no citosol, interrompendo a cascata nesse ponto específico — uma demonstração de que os dois braços da via (IP3→cálcio e DAG) são igualmente necessários, e nenhum deles sozinho é suficiente.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": ["ip3", "calcio", "pkc"]
+    },
+    {
+      "card_id": "s1-biocel-05-002-04-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'O IP3 e o DAG são dois mensageiros completamente independentes, sintetizados por vias enzimáticas distintas dentro da célula.'",
+      "resposta": "Falso. IP3 e DAG não são sintetizados por vias separadas — ambos são gerados simultaneamente a partir de uma única reação: a clivagem do mesmo fosfolipídio precursor, o PIP2, pela enzima fosfolipase C. A armadilha aqui é imaginar que a célula precisa de duas rotas metabólicas distintas para produzir os dois mensageiros, quando na realidade um único evento de clivagem já os gera ao mesmo tempo, cada um seguindo depois um destino diferente por causa de sua própria solubilidade.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["ip3", "dag", "armadilha-conceitual"]
+    },
+    {
+      "card_id": "s1-biocel-05-002-04-fc05",
+      "pergunta": "Compare a mobilidade do IP3 e do DAG dentro da célula, explicando a base físico-química dessa diferença.",
+      "resposta": "O IP3 é hidrofílico — carrega múltiplos grupos fosfato carregados negativamente — e por isso se dissolve e se difunde livremente pelo citosol aquoso até alcançar seu alvo distante, os canais de cálcio do retículo endoplasmático. O DAG, em contraste, é hidrofóbico — mantém as duas caudas de ácido graxo da molécula original de PIP2 — e por isso permanece confinado dentro da bicamada lipídica da membrana plasmática, incapaz de se difundir para o meio aquoso do citosol. Essa diferença de solubilidade, e não qualquer mecanismo ativo de transporte, é o que determina o destino final de cada mensageiro.",
+      "tipo": "comparacao",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["ip3", "dag", "comparacao"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-05-002-04-caso01",
+      "titulo": "Mulher de 52 anos com pressão arterial refratária e edema em membros inferiores",
+      "apresentacao": "Mulher de 52 anos, hipertensa há 10 anos, em uso de losartana 100 mg/dia, comparece à consulta de rotina com pressão arterial de 168/102 mmHg, apesar de referir boa adesão à medicação. Relata início recente de edema leve em membros inferiores. Exames laboratoriais mostram função renal e eletrólitos normais. O médico assistente revisa o mecanismo de ação da medicação em uso e considera associar um segundo agente de classe farmacológica diferente, atuando em outro ponto da cascata de sinalização envolvida na regulação da pressão arterial.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Em condições de hipertensão arterial primária, há ativação sustentada do sistema renina-angiotensina-aldosterona, com angiotensina II circulante se ligando a receptores AT1 (um receptor de sete transmembrana acoplado à proteína Gq) na musculatura lisa vascular."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A cascata PLC/IP3/DAG/PKC nas células musculares lisas da parede arterial, ativada downstream do receptor AT1 quando estimulado pela angiotensina II."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A ativação da PLC gera IP3, que libera cálcio do retículo sarcoplasmático das células musculares lisas; o cálcio liberado, junto ao DAG, ativa a PKC, que fosforila proteínas contráteis, promovendo vasoconstrição sustentada e contribuindo para a manutenção de níveis pressóricos elevados."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Pressão arterial persistentemente elevada apesar do uso de um antagonista do receptor AT1 (losartana), sugerindo que a via de sinalização, uma vez bloqueada nesse receptor específico, ainda pode ser insuficientemente controlada por outros mecanismos vasoconstritores concorrentes."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Necessidade de associar uma segunda classe farmacológica com mecanismo de ação distinto — como um bloqueador dos canais de cálcio, que atua diretamente sobre a etapa final da cascata (a entrada de cálcio necessária para a contração muscular), reduzindo o risco cardiovascular associado à hipertensão não controlada."
+        }
+      ],
+      "conexao_com_bloco": "Este caso conecta diretamente a cascata molecular estudada — PLC clivando PIP2 em IP3 e DAG, culminando na ativação da PKC e contração muscular — à prática farmacológica real: entender em qual ponto exato dessa cascata um medicamento atua (bloqueio do receptor no início da via, versus bloqueio do canal de cálcio no final dela) é o que permite ao médico escolher racionalmente uma segunda classe terapêutica que ataque a via por um ângulo diferente, em vez de simplesmente aumentar a dose do primeiro medicamento.",
+      "disciplinas_relacionadas": ["biologia celular", "farmacologia", "cardiologia", "clinica medica"],
+      "diagnostico_revelado": "Hipertensão arterial não totalmente controlada com antagonista do receptor AT1 em monoterapia, com indicação de terapia combinada.",
+      "tratamento_resumido": "Associação de bloqueador dos canais de cálcio (como anlodipino) ao antagonista do receptor AT1 já em uso, atuando em ponto distinto e complementar da mesma cascata de sinalização vascular, com reavaliação da resposta pressórica em 4 a 6 semanas."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-biocel-05-002-04-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Alberts B, et al. Molecular Biology of the Cell. 7th ed. W. W. Norton; 2022. Chapter 15 — Cell Signaling.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 11 — Antihypertensive Agents.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "fisiologia"
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "IP3 e DAG são sintetizados por vias enzimáticas separadas",
+      "correcao": "Ambos são gerados simultaneamente a partir da mesma reação de clivagem do PIP2 pela fosfolipase C",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "A PKC pode ser ativada apenas pelo cálcio ou apenas pelo DAG, isoladamente, com a mesma eficácia",
+      "correcao": "A ativação plena da PKC depende da presença simultânea de cálcio e DAG, funcionando como uma checagem dupla do sinal",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "fosfolipase C",
+      "termo_es": "fosfolipasa C",
+      "termo_en": "phospholipase C",
+      "abreviatura": "PLC"
+    },
+    {
+      "termo_pt": "inositol trifosfato",
+      "termo_es": "inositol trifosfato",
+      "termo_en": "inositol triphosphate",
+      "abreviatura": "IP3"
+    },
+    {
+      "termo_pt": "diacilglicerol",
+      "termo_es": "diacilglicerol",
+      "termo_en": "diacylglycerol",
+      "abreviatura": "DAG"
+    },
+    {
+      "termo_pt": "proteína quinase C",
+      "termo_es": "proteína quinasa C",
+      "termo_en": "protein kinase C",
+      "abreviatura": "PKC"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "resumo_id": "s1-biocel-05-002-04",
+  "no_pai_id": "s1-biocel-05-002",
+  "nos_filhos_ids": [],
+  "conexoes_laterais_ids": [],
+  "changelog": [
+    {
+      "versao": "2.0",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-5",
+      "mudanca": "Reescrita completa da narrativa, flashcards e adição de caso clínico (hipertensão refratária e terapia combinada), corrigindo narrativa socrática de fachada e analogia repetida de 'alarme de incêndio'; corrigido prerequisito de bloco_id que usava título em vez de ID técnico.",
+      "motivo": "Auditoria de conformidade com ANIMA_FILOSOFIA.md — Fase 2 de reformulação"
+    }
   ]
 }

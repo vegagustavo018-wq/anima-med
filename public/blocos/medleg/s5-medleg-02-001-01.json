@@ -9,46 +9,305 @@
     "disciplina": "Medicina Legal",
     "profundidade_arvore": 4,
     "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 7,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
-      "medleg",
-      "esqueleto"
+      "morte-encefalica",
+      "protocolo-cfm",
+      "teste-de-apneia",
+      "doacao-de-orgaos",
+      "medicina-legal"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "subtitulo": "Como se prova, passo a passo, que um encéfalo parou de vez — e por que essa prova precisa ser à prova de erro"
   },
-  "resumo_conciso": "Conceito de morte encefálica, protocolo, implicação para transplante",
-  "narrativa": [],
+  "resumo_conciso": "Protocolo técnico completo de morte encefálica: exames clínicos repetidos, teste de apneia, exame complementar confirmatório e implicação para transplante",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "Por que não basta um médico, olhando uma vez, dizer que o encéfalo morreu?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior já estabeleceu que a morte encefálica é um critério de óbito tão válido quanto a parada cardiorrespiratória, e que ela é o que viabiliza a doação de órgãos vitais. Mas dizer que esse critério existe não resolve o problema prático mais espinhoso: como transformar \"o encéfalo perdeu toda a função de forma irreversível\" em algo que se possa comprovar de maneira objetiva, documentável e que resista a contestação judicial ou familiar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O risco de errar para os dois lados é real e grave. Declarar morte encefálica precocemente, num paciente que ainda poderia se recuperar, é uma tragédia irreversível. Não declarar quando ela já ocorreu prolonga sofrimento familiar, mantém leitos de UTI ocupados desnecessariamente e retarda uma eventual doação de órgãos que salvaria outras vidas. Por isso, o diagnóstico não pode depender do julgamento isolado de um único profissional num único momento — ele precisa de um protocolo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a Medicina resolveu o problema de tornar a morte encefálica à prova de erro?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução foi construir um protocolo em camadas, no qual nenhuma etapa isolada basta para fechar o diagnóstico — cada uma funciona como um filtro que precisa ser atravessado antes da próxima. Antes mesmo de examinar o paciente, é preciso excluir situações que imitam morte encefálica sem sê-la: hipotermia, uso de sedativos ou bloqueadores neuromusculares ainda em ação, distúrbios metabólicos ou hidroeletrolíticos graves e choque não corrigido. Só depois de afastadas essas condições reversíveis é que o protocolo diagnóstico propriamente dito começa a correr."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A partir daí, o protocolo combina três camadas de evidência que se reforçam mutuamente: repetição do exame clínico por examinadores diferentes, um teste específico para a função mais crítica do tronco encefálico (o comando da respiração) e, por fim, um exame complementar que olha diretamente para dentro do encéfalo em vez de apenas observar seus reflexos. Só quando as três camadas convergem para o mesmo resultado é que o óbito por critério encefálico pode ser declarado."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito, concretamente, cada uma dessas camadas?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A primeira camada é o exame neurológico clínico, que busca a ausência completa de qualquer sinal de atividade do cérebro e do tronco encefálico: sem resposta motora a estímulos dolorosos, sem reflexo pupilar à luz, sem reflexo corneopalpebral, sem reflexo oculocefálico (\"olhos de boneca\"), sem reflexo oculovestibular (prova calórica com água gelada no ouvido), sem reflexo de tosse à estimulação da traqueia. Cada um desses reflexos testa um núcleo diferente do tronco encefálico, e a ausência de todos, em conjunto, é o que sustenta a suspeita de morte encefálica."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda camada é o teste de apneia, o mais decisivo de todos, porque avalia especificamente se o centro respiratório do tronco encefálico ainda responde ao estímulo mais potente que existe para ele: o acúmulo de gás carbônico no sangue. O paciente é desconectado do respirador (com oxigenação garantida por outra via) e observado por um tempo determinado; se, mesmo com o CO2 subindo a níveis que fariam qualquer tronco encefálico íntegro disparar o impulso respiratório, o paciente não apresenta nenhum movimento respiratório espontâneo, o teste é positivo para ausência de função do tronco."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A terceira camada é o exame complementar, que existe porque o exame clínico, por mais rigoroso que seja, ainda depende da observação de reflexos — e a lei brasileira exige uma confirmação por método que demonstre diretamente a ausência de fluxo sanguíneo cerebral ou de atividade elétrica encefálica. Os métodos aceitos incluem o Doppler transcraniano (mostra ausência de fluxo sanguíneo intracraniano), a eletroencefalografia (mostra silêncio elétrico cortical) e a angiografia cerebral (mostra ausência de perfusão de contraste nos vasos encefálicos), entre outros [⚠️ a lista exata de exames aceitos e os critérios técnicos de cada um variam conforme a resolução do CFM vigente e devem ser conferidos na normativa atualizada]."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esse protocolo funciona, passo a passo, na prática de uma UTI?"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Protocolo de determinação de morte encefálica",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Pré-requisitos e exclusão de fatores confundidores",
+          "explicacao": "Antes de iniciar qualquer avaliação, confirma-se lesão encefálica conhecida, capaz de causar morte encefálica, e afastam-se causas reversíveis que mimetizam o quadro: hipotermia significativa, uso recente de sedativos, analgésicos opioides ou bloqueadores neuromusculares ainda ativos no organismo, distúrbios metabólicos graves e instabilidade hemodinâmica não corrigida."
+        },
+        {
+          "numero": 2,
+          "titulo": "Primeiro exame clínico neurológico",
+          "explicacao": "Um médico apto realiza o exame completo de coma aperceptivo e ausência de reflexos de tronco encefálico descrito acima, documentando cada item verificado."
+        },
+        {
+          "numero": 3,
+          "titulo": "Intervalo de observação",
+          "explicacao": "Aguarda-se um intervalo mínimo definido antes do segundo exame, com duração que varia conforme a faixa etária do paciente — os protocolos preveem intervalos mais curtos para adultos e progressivamente mais longos para crianças, dado que o encéfalo pediátrico tem maior capacidade de tolerância transitória a agressões [⚠️ os valores exatos de cada faixa etária mudam conforme a resolução CFM vigente e não devem ser memorizados sem checar a normativa atual]."
+        },
+        {
+          "numero": 4,
+          "titulo": "Segundo exame clínico neurológico, por médico diferente",
+          "explicacao": "Um segundo médico, distinto do primeiro examinador e com capacitação específica, repete integralmente o exame. A exigência de um profissional diferente é o que torna o protocolo resistente a erro ou viés de um único observador."
+        },
+        {
+          "numero": 5,
+          "titulo": "Teste de apneia",
+          "explicacao": "Realizado ao menos uma vez dentro do protocolo, confirma a ausência de resposta do centro respiratório do tronco encefálico ao estímulo de hipercapnia, conforme descrito acima."
+        },
+        {
+          "numero": 6,
+          "titulo": "Exame complementar confirmatório",
+          "explicacao": "Um exame de imagem ou eletrofisiológico (Doppler transcraniano, eletroencefalografia, angiografia cerebral ou outro método aceito) demonstra objetivamente a ausência de fluxo sanguíneo encefálico ou de atividade elétrica cortical, servindo como confirmação independente dos achados clínicos."
+        },
+        {
+          "numero": 7,
+          "titulo": "Lavratura do Termo de Declaração de Morte Encefálica",
+          "explicacao": "Reunidos os dois exames clínicos concordantes, o teste de apneia positivo e o exame complementar confirmatório, os médicos envolvidos assinam o termo que formaliza o óbito por critério encefálico, documento que passa a ter o mesmo valor legal de uma certidão de óbito por parada cardiorrespiratória."
+        },
+        {
+          "numero": 8,
+          "titulo": "Comunicação à família e, se aplicável, à Organização de Procura de Órgãos",
+          "explicacao": "A família é informada do óbito antes de qualquer conversa sobre doação de órgãos, para que as duas decisões — reconhecer a morte e autorizar (ou não) a doação — permaneçam claramente separadas uma da outra."
+        }
+      ]
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se o exame complementar (Doppler, EEG ou angiografia) desse um resultado ambíguo, mas os dois exames clínicos e o teste de apneia fossem absolutamente conclusivos?",
+      "resposta": "O protocolo não permite fechar o diagnóstico de morte encefálica sem uma confirmação complementar inequívoca — exatamente porque a exigência desse exame existe para não depender só da interpretação clínica de reflexos. Diante de ambiguidade, repete-se o exame complementar ou tenta-se outro método aceito, mantendo o suporte artificial, até que a confirmação seja clara em um sentido ou outro."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com que outras práticas e decisões esse protocolo se articula?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O momento em que o Termo de Declaração de Morte Encefálica é assinado é o gatilho legal que permite à Organização de Procura de Órgãos (OPO) ser acionada e à família ser consultada sobre doação — sem esse documento, nenhuma captação de órgão vital é juridicamente possível, por mais que o quadro clínico pareça evidente. É também esse documento que autoriza a equipe médica a suspender o suporte artificial nos casos em que a família não autoriza doação, já que, tecnicamente, não se está mais desligando o suporte de uma pessoa viva."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O protocolo também se articula com a manutenção do potencial doador: uma vez declarada a morte encefálica, mas antes da eventual captação de órgãos, a equipe de terapia intensiva passa a ter como objetivo não mais tratar um paciente, mas preservar a perfusão e a oxigenação dos órgãos de um corpo já falecido — reposição volêmica, uso de drogas vasoativas e controle hormonal para evitar a deterioração dos órgãos que poderão ser transplantados."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "De onde vem o nome \"apneia\" no teste que dá nome a essa etapa central do protocolo?"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Apneia",
+      "origem": "Grego a- (privação, ausência) + pnoia (respiração, sopro)",
+      "significado": "Ausência de respiração",
+      "explicacao": "O teste recebe esse nome porque avalia justamente a ausência (ou não) de esforço respiratório espontâneo diante do estímulo mais forte que existe para provocá-lo — o acúmulo de CO2 no sangue. Um tronco encefálico funcionante reage a esse estímulo de forma quase automática; testar a apneia é, na prática, testar se esse comando automático ainda existe."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Existe uma imagem do cotidiano que ajude a fixar por que o protocolo precisa de tantas camadas?"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "⚖️",
+      "conteudo": "Pense num tribunal que julga um caso gravíssimo e irreversível: não basta o depoimento de uma única testemunha, por mais confiável que pareça — o processo exige múltiplas provas independentes que apontem para a mesma conclusão antes de uma sentença que não pode ser desfeita. O primeiro exame clínico é como o primeiro depoimento; o segundo exame, feito por outro médico, é a segunda testemunha, ouvida de forma independente; o teste de apneia é uma prova pericial específica sobre o ponto mais crítico do caso; e o exame complementar é como uma prova técnica objetiva (uma perícia de imagem) que não depende da interpretação humana de sinais. Onde a analogia quebra: um tribunal pode reabrir um caso anos depois se surgir prova nova; o protocolo de morte encefálica, uma vez concluído com todas as camadas concordantes, não deixa margem para reabertura — a irreversibilidade já foi comprovada por desenho, não por prazo."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s5-medleg-02-001",
+        "titulo": "O Problema de Definir e Diagnosticar a Morte",
+        "disciplina": "Medicina Legal",
+        "semestre": 5,
+        "relevancia": "base_necessaria",
+        "explicacao": "Entender por que a morte encefálica é um critério de óbito equivalente à parada cardiorrespiratória, e não uma categoria intermediária, é o que dá sentido a todo o rigor do protocolo técnico detalhado aqui."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "disciplina": "Cirurgia de Transplantes",
+        "semestre_futuro": 8,
+        "topico": "Manutenção do potencial doador e captação de órgãos",
+        "mecanismo_conexao": "É exatamente a assinatura do Termo de Declaração de Morte Encefálica, ao final deste protocolo, que autoriza a equipe de terapia intensiva a mudar seu objetivo de tratar o paciente para preservar a perfusão dos órgãos, etapa técnica indispensável para a viabilidade do transplante."
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "disciplina": "Bioética",
+        "semestre_futuro": 6,
+        "topico": "Comunicação de más notícias e consentimento em situações-limite",
+        "mecanismo_conexao": "A exigência de separar, no tempo e na comunicação à família, a notícia do óbito por morte encefálica da conversa sobre doação de órgãos é um caso concreto de como a Bioética estrutura a comunicação de decisões irreversíveis para preservar a autonomia real dos familiares."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s5-medleg-02-001-01-fc1",
+      "pergunta": "Por que o protocolo de morte encefálica exige dois exames clínicos feitos por médicos diferentes, e não apenas um exame minucioso?",
+      "resposta": "Porque um diagnóstico irreversível e de consequências gravíssimas não pode depender do julgamento de um único observador em um único momento; a repetição por examinador distinto funciona como uma segunda testemunha independente, reduzindo o risco de erro ou viés individual.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": ["morte-encefalica", "protocolo-cfm", "medleg"]
+    },
+    {
+      "card_id": "s5-medleg-02-001-01-fc2",
+      "pergunta": "O que o teste de apneia avalia especificamente, e por que ele é considerado a etapa mais decisiva do protocolo?",
+      "resposta": "Avalia se o centro respiratório do tronco encefálico ainda responde ao acúmulo de CO2 no sangue (hipercapnia), o estímulo mais potente que existe para disparar a respiração espontânea; é decisivo porque testa diretamente a função do tronco encefálico responsável por uma das funções vitais mais automáticas do corpo.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["morte-encefalica", "teste-de-apneia", "medleg"]
+    },
+    {
+      "card_id": "s5-medleg-02-001-01-fc3",
+      "pergunta": "Por que a lei brasileira exige um exame complementar (Doppler transcraniano, EEG ou angiografia), além dos exames clínicos e do teste de apneia?",
+      "resposta": "Porque o exame clínico depende da observação e interpretação humana de reflexos, e o exame complementar fornece uma confirmação objetiva e independente, mostrando diretamente a ausência de fluxo sanguíneo encefálico ou de atividade elétrica cortical.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["morte-encefalica", "exame-complementar", "medleg"]
+    },
+    {
+      "card_id": "s5-medleg-02-001-01-fc4",
+      "pergunta": "Por que a comunicação da morte encefálica à família deve ser feita separadamente da conversa sobre doação de órgãos?",
+      "resposta": "Para que a família processe e reconheça o óbito como fato consumado antes de ser confrontada com a decisão de doar órgãos, mantendo as duas decisões — reconhecer a morte e autorizar a doação — claramente distintas e não coercitivas.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["morte-encefalica", "doacao-de-orgaos", "armadilha"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s5-medleg-02-001-01-caso01",
+      "titulo": "Protocolo de morte encefálica após hemorragia intracraniana espontânea",
+      "apresentacao": "Mulher de 52 anos é admitida na UTI após hemorragia subaracnoidea maciça por ruptura de aneurisma cerebral, evoluindo com hipertensão intracraniana refratária. Após tentativas terapêuticas máximas sem sucesso, a equipe suspeita de morte encefálica. Antes de iniciar o protocolo, descarta-se hipotermia, sedação residual (a paciente não recebe sedativos há mais de 24 horas) e distúrbios metabólicos graves. Realiza-se o primeiro exame clínico: ausência completa de reflexos de tronco encefálico e de resposta motora a estímulo doloroso. Após o intervalo de observação exigido, um segundo médico, diferente do primeiro examinador, repete o exame com o mesmo resultado. Procede-se ao teste de apneia, que é positivo (ausência de movimento respiratório espontâneo mesmo com PaCO2 elevado). Por fim, solicita-se Doppler transcraniano como exame complementar confirmatório — mas o resultado inicial vem descrito como 'padrão de fluxo residual de difícil interpretação', não claramente compatível com ausência completa de fluxo.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ruptura espontânea de aneurisma cerebral provoca hemorragia subaracnoidea maciça, que desencadeia hipertensão intracraniana refratária a todas as medidas terapêuticas disponíveis (drenagem liquórica, hiperventilação controlada, terapia hiperosmolar)."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O encéfalo inteiro sofre isquemia global progressiva, à medida que a pressão intracraniana se aproxima e ultrapassa a pressão de perfusão cerebral — cérebro e tronco encefálico param de receber fluxo sanguíneo adequado."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Perda funcional completa do encéfalo é fortemente suspeitada clinicamente (dois exames concordantes, teste de apneia positivo), mas o exame complementar — que deveria fornecer confirmação objetiva e independente da interpretação clínica de reflexos — retorna com resultado ambíguo, não permitindo fechar com segurança absoluta a ausência total de fluxo sanguíneo encefálico."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Clinicamente, a paciente preenche todos os critérios de exame neurológico e teste de apneia para morte encefálica; porém, o Doppler transcraniano mostra um padrão de difícil interpretação, criando uma divergência entre as camadas clínica e complementar do protocolo."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O protocolo não permite fechar o diagnóstico de morte encefálica diante de exame complementar ambíguo, mesmo com dois exames clínicos e teste de apneia absolutamente conclusivos — exatamente como previsto no contrafactual do bloco. A equipe repete o exame complementar com outro método aceito (por exemplo, eletroencefalografia ou angiografia cerebral), mantendo o suporte artificial e adiando qualquer comunicação definitiva à família sobre óbito ou doação até que a confirmação seja inequívoca em um sentido ou outro."
+        }
+      ],
+      "conexao_com_bloco": "O caso reproduz, com um paciente real, exatamente o cenário hipotético levantado no bloco: duas camadas do protocolo (exame clínico e teste de apneia) apontam para morte encefálica, mas a terceira camada (exame complementar) não confirma de forma inequívoca — e o bloco já havia estabelecido que, nessa situação, o protocolo exige repetir ou trocar o método complementar, nunca fechar o diagnóstico só com base nas duas primeiras camadas, por mais conclusivas que pareçam.",
+      "disciplinas_relacionadas": [
+        "medicina-legal",
+        "medicina-intensiva",
+        "neurologia",
+        "bioetica"
+      ],
+      "diagnostico_revelado": "Suspeita clínica de morte encefálica secundária a hemorragia subaracnoidea com hipertensão intracraniana refratária, com protocolo diagnóstico ainda incompleto por resultado ambíguo do exame complementar confirmatório.",
+      "tratamento_resumido": "Não se aplica tratamento curativo à lesão encefálica já estabelecida; a conduta correta é repetir ou substituir o exame complementar por outro método aceito (Doppler transcraniano, eletroencefalografia ou angiografia cerebral) até obter confirmação inequívoca, mantendo o suporte hemodinâmico e ventilatório da paciente durante todo o processo, sem declarar óbito por critério encefálico enquanto houver ambiguidade documentada."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s5-medleg-02-001-01-img1",
+        "url": null,
+        "prompt_ia": "Infográfico vetorial médico-legal minimalista, paleta azul-marinho e dourado sóbrio sobre fundo branco, estilo linha do tempo horizontal com 6 etapas numeradas. Etapa 1: ícone de lupa sobre um cérebro estilizado (exclusão de fatores confundidores). Etapa 2: ícone de estetoscópio/olho (primeiro exame clínico). Etapa 3: ícone de ampulheta (intervalo de observação). Etapa 4: segundo ícone de estetoscópio com um símbolo de \"médico diferente\" (segunda avaliação). Etapa 5: ícone de pulmão com onda de CO2 (teste de apneia). Etapa 6: ícone de ondas cerebrais ou vaso sanguíneo com um X (exame complementar confirmatório). Seta contínua conectando as seis etapas, terminando num ícone de documento/certificado (termo de declaração). Sem texto substancial além de números, traços limpos, estilo editorial acadêmico.",
+        "status": "pendente",
+        "origem": "esquema",
+        "titulo": "As seis etapas do protocolo de morte encefálica",
+        "descricao": "Linha do tempo visual do protocolo: exclusão de confundidores, dois exames clínicos por médicos diferentes com intervalo entre eles, teste de apneia e exame complementar confirmatório, culminando no termo de declaração de óbito."
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s5",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-5 (pipeline ANIMA)",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "resolucao-normativa",
+      "citacao": "Conselho Federal de Medicina. Resolução CFM nº 2.173/2017 (com alterações posteriores) — Define os critérios do diagnóstico de morte encefálica, incluindo exames clínicos, teste de apneia e exames complementares aceitos. [⚠️ verificar se há resolução mais recente vigente e conferir os intervalos exatos por faixa etária antes de usar em prova ou prática]",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "legislacao",
+      "citacao": "Brasil. Lei nº 9.434, de 4 de fevereiro de 1997 (Lei de Transplantes), art. 3º — Estabelece a morte encefálica como critério legal de óbito para fins de retirada de órgãos, tecidos e partes do corpo humano para transplante.",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro-texto",
+      "citacao": "Croce, D.; Croce Jr., D. Manual de Medicina Legal, 9ª ed. São Paulo: Saraiva, 2019 — Capítulo sobre Tanatologia Forense: protocolo diagnóstico de morte encefálica.",
+      "forca_evidencia": "alta",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
-    "mecanismo",
+    "tecnica pericial",
     "correlacao clinica"
   ]
 }

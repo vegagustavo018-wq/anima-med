@@ -5,54 +5,153 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "EPA-4 — Inserir e propor ordens médicas e prescrições",
+    "subtitulo": "A prescrição está tecnicamente certa. Mas você conferiu o que o paciente já tomava em casa antes de somar mais oito medicações novas?",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 2,
+    "topico": 4,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "epa_avaliacao",
+      "conduta",
+      "seguranca_paciente"
     ],
+    "tipo_conteudo": "competencia_epa",
+    "status": "publicado",
+    "data_criacao": "2026-07-06",
+    "data_revisao": "2026-07-06",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
-    "formato_internato": "competencia_epa",
-    "epa_codigo": "EPA-4",
-    "epa_nivel_alvo": 3
+    "tempo_estudo_minutos": 9,
+    "palavras_chave": [
+      "EPA-4",
+      "prescrição",
+      "reconciliação medicamentosa",
+      "interação medicamentosa"
+    ],
+    "formato_internato": "competencia_epa"
   },
-  "resumo_conciso": "Prescrever com dose, via e segurança; reconciliar medicações e evitar interações",
-  "narrativa": [],
+  "resumo_conciso": "Prescrever a dose certa da medicação nova é só metade da EPA-4. A outra metade — a que mais falha na prática — é reconciliar essa prescrição com tudo que o paciente já usava antes de internar, para não empilhar riscos que ninguém pediu.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você prescreve um novo anti-hipertensivo para um paciente internado por AVC. Dose certa, via certa, horário certo. Tecnicamente impecável. Só que você não perguntou (ou perguntou e não registrou) que esse paciente já usa em casa outro anti-hipertensivo, mais um anticoagulante, mais um anti-inflamatório que ele toma por conta própria para dor no joelho. A prescrição nova, isoladamente correta, pode estar interagindo com um desses três sem que ninguém tenha olhado o quadro inteiro. Essa reconciliação — o antes e o depois da internação — é o que separa uma prescrição tecnicamente certa de uma prescrição segura."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Reconciliação medicamentosa: o passo que mais falha na prática"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Reconciliação medicamentosa é o processo de comparar, de forma ativa e documentada, a lista de medicações que o paciente usava antes da internação com a lista atual, decidindo explicitamente o que mantém, o que suspende, e o que ajusta — em vez de simplesmente prescrever o novo tratamento por cima do que já existia sem revisão. É um dos momentos de maior risco de erro em todo o cuidado hospitalar, porque acontece nas transições (admissão, mudança de leito, alta), exatamente quando a informação está mais fragmentada entre quem sabe o histórico do paciente e quem está prescrevendo agora."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "O que separa os níveis de confiabilidade nesta EPA",
+      "colunas": [
+        "Nível",
+        "Comportamento observável"
+      ],
+      "linhas": [
+        {
+          "Nível": "2 (supervisão direta)",
+          "Comportamento observável": "Prescreve a medicação nova corretamente (dose, via, horário), mas não reconcilia ativamente com a lista prévia do paciente; depende do residente para notar interações"
+        },
+        {
+          "Nível": "3 (alvo desta EPA no estágio)",
+          "Comportamento observável": "Reconcilia ativamente a lista completa a cada prescrição relevante, verifica interações antes de finalizar a ordem, e ajusta dose por função renal/hepática quando aplicável, sem precisar que o residente aponte isso depois"
+        }
+      ]
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Uma prescrição matematicamente correta (dose certa para aquele peso, aquela função renal) ainda pode ser insegura se ignorar o que mais o paciente está usando. Segurança na prescrição não é só acertar o número — é acertar o número dentro do contexto medicamentoso completo daquele paciente específico."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se você decidir não reconciliar a lista prévia de medicações agora, pensando em fazer isso 'com calma' depois, já que a prescrição de hoje está tecnicamente correta?",
+      "resposta": "Adiar a reconciliação deixa uma janela aberta de risco real — interações não identificadas, duplicações terapêuticas, ou omissão de uma medicação crônica essencial (por exemplo, suspender sem querer um anticonvulsivante que o paciente usa) podem causar dano antes que alguém finalmente compare as duas listas. A reconciliação faz parte da própria prescrição, não é uma tarefa administrativa que pode esperar."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como é avaliada: DOPS ou observação direta durante a prescrição de casos reais, e auditoria retrospectiva de prescrições completas (uma das evidências de portfólio deste estágio, junto com o sumário de alta). Erros comuns do interno: prescrever a medicação nova sem revisar a lista prévia; esquecer de ajustar dose por função renal ou hepática alterada; e não verificar interações entre a medicação nova e as já em uso, mesmo quando ambas aparecem no mesmo prontuário."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1mi-02-003",
+        "titulo": "EPA-3 — Recomendar e interpretar testes diagnósticos",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-03-008",
+        "titulo": "Prescrição Completa Auditada",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "A competência descrita aqui é exatamente o que a auditoria de prescrições completas deste procedimento observa na prática."
+      },
+      {
+        "id": "s10-int1mi-06-001",
+        "titulo": "O Near-Miss da Prescrição — a dose que quase saiu errada",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "A falha de reconciliação descrita aqui é exatamente o tipo de erro sistêmico analisado naquele bloco de análise de erro."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-02-004-001",
+      "tipo": "por_que",
+      "pergunta": "Por que uma prescrição pode estar matematicamente correta (dose certa para o peso e função renal do paciente) e ainda assim ser insegura?",
+      "resposta": "Porque a segurança da prescrição depende também do contexto medicamentoso completo do paciente — outras medicações em uso, prévias à internação, que podem interagir com a nova prescrição ou tornar redundante/perigosa uma combinação terapêutica. Sem reconciliação ativa da lista prévia, uma dose tecnicamente correta isoladamente ainda pode causar dano por interação não identificada.",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "internato",
+        "epa",
+        "epa-4",
+        "reconciliacao"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "EPA-4 avalia a competência transversal de prescrever com segurança e reconciliar medicações, aplicável a qualquer paciente internado, independentemente da doença de base — não é ela própria uma entidade clínica com cascata causal. O exemplo do anti-hipertensivo no texto é ilustrativo do processo de reconciliação, não um caso clínico fechado com diagnóstico e tratamento de uma doença específica."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "em_mudanca",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "epa_avaliacao",
-    "conduta",
-    "seguranca_paciente"
+  "fontes": [
+    {
+      "tipo": "diretriz",
+      "titulo": "Core Entrustable Professional Activities for Entering Residency",
+      "autores": "Association of American Medical Colleges (AAMC)",
+      "ano": 2014
+    },
+    {
+      "tipo": "diretriz",
+      "titulo": "Medication Reconciliation",
+      "autores": "World Health Organization (WHO), High 5s Project",
+      "ano": 2014
+    }
   ]
 }

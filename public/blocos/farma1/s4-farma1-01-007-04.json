@@ -2,53 +2,349 @@
   "resumo_id": "s4-farma1-01-007-04",
   "no_pai_id": "s4-farma1-01-007",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-01-007-01"
+  ],
   "metadata": {
     "titulo": "Bioequivalência e Medicamentos Genéricos",
+    "subtitulo": "Como provar que um comprimido genérico funciona igual ao original, sem repetir todos os ensaios clínicos?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "bioequivalencia",
+      "genericos",
+      "auc",
+      "cmax",
+      "regulatorio",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert",
+      "promotor-da-saude"
+    ]
   },
-  "resumo_conciso": "Critérios de bioequivalência; genérico x referência; implicação regulatória",
-  "narrativa": [],
+  "resumo_conciso": "Quando a patente de um medicamento expira, outros laboratórios podem fabricar a mesma molécula e vendê-la mais barato — o genérico. O problema regulatório é: como garantir que esse genérico funciona igual ao medicamento de referência sem obrigar o fabricante a repetir, do zero, todos os ensaios clínicos de eficácia e segurança que já provaram que aquela molécula funciona? A resposta é a bioequivalência: em vez de testar o efeito clínico de novo, mede-se se o genérico entrega o fármaco à circulação na mesma quantidade e na mesma velocidade que o medicamento de referência. As duas métricas usadas são a AUC (já vista no bloco sobre biodisponibilidade), que mede a quantidade total absorvida, e a concentração máxima (Cmax) e o tempo até ela (Tmax), que medem a velocidade de absorção. Os órgãos reguladores exigem que essas medidas, obtidas em voluntários sadios, fiquem dentro de uma margem definida (tipicamente 80–125%) em relação ao medicamento de referência. Se ficam dentro da margem, presume-se equivalência terapêutica — mesmo efeito clínico — sem repetir ensaios de eficácia. Essa lógica sustenta o acesso amplo a medicamentos mais baratos, mas carrega um debate real e não resolvido para fármacos de margem terapêutica estreita, onde pequenas variações de absorção podem ter consequência clínica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Uma molécula nova leva, em média, mais de dez anos e bilhões de dólares até chegar à farmácia — ensaios pré-clínicos, três fases de estudo em humanos, aprovação regulatória. Quando a patente dessa molécula expira, qualquer laboratório pode fabricar a mesma substância. Mas aí surge uma pergunta que a saúde pública não pode ignorar: esse novo fabricante precisa repetir tudo — anos de ensaio clínico, milhares de pacientes — só para provar que o comprimido dele funciona?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: provar equivalência sem repetir a história inteira"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Repetir ensaios clínicos completos para cada genérico de cada fármaco já aprovado seria, ao mesmo tempo, impraticável e desnecessário. Impraticável porque multiplicaria por dezenas o tempo e o custo de colocar cada genérico no mercado — o que atrasaria o acesso da população a versões mais baratas de tratamentos já validados. Desnecessário porque a eficácia clínica de uma molécula já foi demonstrada pelo medicamento de referência; o que muda entre fabricantes não é a molécula, e sim como ela é formulada, comprimida e absorvida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Mas também não dá para simplesmente aceitar qualquer comprimido com a mesma substância na embalagem. Dois comprimidos com a mesma dose nominal podem se comportar de forma bem diferente dentro do corpo — um excipiente diferente, uma técnica de compressão diferente, um tamanho de partícula diferente podem mudar o quanto e o quão rápido o fármaco é absorvido. Já foi visto que a mesma dose nominal pode gerar áreas sob a curva (AUC) bem distintas dependendo da formulação. Se o genérico absorve mal a mesma dose, o paciente recebe, na prática, menos fármaco do que o médico pretendia prescrever."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema regulatório é conciliar dois riscos opostos — exigir de menos (aprovar genéricos que na prática entregam menos fármaco que o anunciado) e exigir de mais (obrigar a repetição de ensaios clínicos inteiros, o que trava o acesso a medicamentos baratos). A solução precisa ser rigorosa o bastante para proteger o paciente e enxuta o bastante para ser viável."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve, em linhas gerais"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução regulatória parte de uma premissa simples: se dois produtos entregam a mesma molécula à circulação sistêmica na mesma quantidade e na mesma velocidade, é razoável presumir que eles vão produzir o mesmo efeito terapêutico — sem precisar prová-lo de novo com pacientes doentes. Em vez de repetir ensaios de eficácia clínica, compara-se o comportamento farmacocinético dos dois produtos em voluntários sadios: quanto de cada um chega ao sangue, e quão rápido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa comparação farmacocinética é o que se chama de estudo de bioequivalência. Ela não pergunta 'o genérico trata a doença tão bem quanto o original?' — pergunta 'o genérico coloca o fármaco na circulação da mesma forma que o original?'. A segunda pergunta é mais barata e mais rápida de responder, e a premissa regulatória é que respondê-la basta, porque a molécula já é a mesma e já teve sua eficácia clínica comprovada pelo medicamento de referência."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Bioequivalência substitui a pergunta clínica ('funciona igual?') por uma pergunta farmacocinética mensurável ('entra no sangue igual, na mesma quantidade e na mesma velocidade?'). É essa substituição que evita repetir ensaios clínicos completos para cada genérico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita essa comparação"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um estudo de bioequivalência típico administra o medicamento de referência e o genérico candidato, em ocasiões diferentes, ao mesmo grupo de voluntários sadios (desenho cruzado), colhendo amostras de sangue em intervalos definidos após cada dose. A partir dessas amostras, constroem-se as curvas de concentração plasmática ao longo do tempo para cada produto — as mesmas curvas já descritas ao estudar biodisponibilidade."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Dessas curvas, extraem-se três parâmetros. A AUC (área sob a curva) mede a quantidade total de fármaco que chegou à circulação — a mesma medida usada para calcular biodisponibilidade. A concentração máxima (Cmax) é o pico mais alto atingido pela curva, e reflete a intensidade da exposição. O tempo até a concentração máxima (Tmax) é o instante em que esse pico ocorre, e reflete a velocidade de absorção. AUC responde 'quanto entrou no total'; Cmax e Tmax respondem 'quão rápido e quão intensamente'."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Os órgãos reguladores comparam esses parâmetros entre genérico e referência estatisticamente, calculando um intervalo de confiança para a razão entre os dois produtos. O critério mais adotado internacionalmente exige que esse intervalo de confiança fique contido dentro de uma margem — tipicamente 80% a 125% — em relação ao medicamento de referência, tanto para AUC quanto para Cmax. Ficando dentro dessa margem, os dois produtos são declarados bioequivalentes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] A margem 80–125% é uma convenção estatística pensada para a maioria dos fármacos, não uma lei da natureza farmacológica — e seu uso para toda e qualquer molécula, incluindo as de margem terapêutica estreita, é justamente um dos pontos mais debatidos da área, retomado adiante."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, em movimento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere um laboratório que quer lançar o genérico de um anti-hipertensivo cuja patente expirou. Ele recruta um grupo de voluntários sadios e administra, em duas ocasiões separadas por um intervalo de repouso (washout), o medicamento de referência numa ocasião e o genérico candidato na outra — sempre na mesma dose, no mesmo grupo de pessoas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para cada ocasião, colhem-se amostras de sangue em pontos de tempo predefinidos e constrói-se a curva de concentração plasmática. Calculam-se AUC, Cmax e Tmax de cada curva, para cada voluntário, e comparam-se estatisticamente os valores obtidos com o genérico contra os valores obtidos com a referência. Se a razão média entre os dois — com seu intervalo de confiança — cair dentro da faixa de 80–125% tanto para AUC quanto para Cmax, o órgão regulador aprova o genérico como bioequivalente, e ele pode ser comercializado com a mesma indicação terapêutica do medicamento de referência, sem que o fabricante precise conduzir um único ensaio clínico de eficácia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essa aprovação que permite que a mesma molécula — já validada clinicamente pelo medicamento original — chegue ao mercado por vários fabricantes diferentes, geralmente a preços bem menores, ampliando o acesso da população ao tratamento sem reduzir, em princípio, sua eficácia."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏃",
+      "conteudo": "Pense em dois corredores que precisam entregar a mesma encomenda urgente da linha de partida até o destino. **O medicamento de referência** é o corredor cujo desempenho já foi cronometrado e aprovado antes. **O genérico** é o novo corredor que quer entregar a mesma encomenda pelo mesmo percurso. Em vez de reavaliar se a encomenda em si é boa (isso já foi validado quando o primeiro corredor a entregou), os fiscais da corrida cronometram apenas se o novo corredor chega **com a mesma quantidade de carga intacta** (a AUC — quanto chegou no total) e **em velocidade comparável** (Cmax e Tmax — quão rápido e quão alto foi o esforço). Se o tempo e a carga do novo corredor ficam dentro de uma margem aceitável do corredor de referência, ele é liberado para competir oficialmente, sem precisar provar de novo, do zero, que aquele trajeto é seguro. A analogia quebra num ponto importante: para a maioria das encomendas, uma pequena variação de tempo ou carga não muda o resultado final. Mas se a encomenda for extremamente sensível — um órgão para transplante, por exemplo —, a mesma margem que é aceitável para uma encomenda comum pode ser perigosa; e é exatamente essa exceção que a bioequivalência enfrenta com os fármacos de margem terapêutica estreita."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a bioequivalência se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse conceito é a aplicação regulatória direta da AUC já estudada como medida de biodisponibilidade: ali, a AUC comparava vias de administração diferentes do mesmo produto; aqui, ela compara produtos diferentes (referência e genérico) na mesma via. É o mesmo instrumento de medida, aplicado a uma pergunta distinta. A bioequivalência também se apoia no conceito de estado de equilíbrio: um genérico com absorção mais lenta, mesmo com AUC total equivalente, pode se comportar de forma sutilmente diferente ao longo de doses repetidas — razão pela qual Cmax e Tmax são exigidos junto com a AUC, e não apenas a AUC isoladamente."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática de saúde pública, é a bioequivalência que sustenta políticas de substituição genérica em larga escala — a possibilidade de o farmacêutico trocar, na dispensação, o medicamento de referência prescrito por um genérico ou similar intercambiável, ampliando o acesso da população a tratamentos essenciais sem depender do preço do medicamento original. É também o critério que autoridades sanitárias usam para decidir quais produtos podem entrar em listas de compra pública e em programas de fornecimento gratuito de medicamentos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] Existe um debate real, não encerrado, sobre a troca de genéricos em fármacos de margem terapêutica estreita — aqueles em que a diferença entre a dose eficaz e a dose tóxica é pequena, como varfarina, levotiroxina, fenitoína, ciclosporina e alguns imunossupressores. Nesses casos, uma variação de absorção dentro da margem regulatória padrão (80–125%) pode, na prática clínica, ser suficiente para tirar o paciente da faixa terapêutica — seja por baixo (perda de efeito) seja por cima (toxicidade). Por isso, várias sociedades médicas e alguns órgãos reguladores recomendam cautela redobrada, monitorização mais próxima ou até desaconselham a troca não supervisionada entre diferentes marcas (referência-genérico ou genérico-genérico) para esse grupo específico de fármacos — sem que exista, até hoje, consenso unânime sobre a melhor forma de regular esses casos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "bioequivalência",
+      "origem": "do grego bíos (vida) + o latim aequus (igual) + valentia (valor, força)",
+      "significado": "literalmente, 'força equivalente dentro do organismo vivo' — dois produtos que entregam o fármaco ao corpo com o mesmo valor de exposição",
+      "explicacao": "O termo nasceu na farmacologia regulatória da segunda metade do século XX, quando agências sanitárias perceberam episódios em que produtos com a mesma dose nominal produziam efeitos clínicos diferentes por causa de diferenças de formulação — mesmo remédio no rótulo, comportamento diferente no corpo. A palavra une 'bio' (o organismo vivo, onde a comparação de fato acontece) a 'equivalência' (o critério estatístico de igualdade dentro de margem), condensando num só termo a ideia central: não basta a mesma substância na embalagem, é preciso o mesmo comportamento dentro do corpo. O termo 'genérico', por sua vez, vem do latim genus (tipo, classe) — designa o medicamento identificado pelo nome do princípio ativo (o 'tipo' de molécula), e não por uma marca comercial registrada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a bioequivalência exigisse AUC e Cmax idênticos (0% de margem), em vez de uma faixa de 80–125%, isso tornaria os genéricos mais seguros?",
+      "resposta": "Na prática, não tornaria os genéricos mais seguros — tornaria a produção de qualquer genérico quase impossível. Nenhuma medida biológica é perfeitamente reprodutível: até o mesmo medicamento de referência, administrado duas vezes no mesmo voluntário, produz AUC e Cmax ligeiramente diferentes entre uma ocasião e outra, por variabilidade fisiológica normal. Exigir identidade absoluta ignoraria essa variabilidade inerente e inviabilizaria, na prática, qualquer aprovação — de genéricos ou mesmo de novos lotes do próprio medicamento de referência. A margem de 80–125% foi definida para acomodar essa variabilidade biológica esperada sem abrir mão de exigir equivalência clinicamente relevante. O ponto realmente debatido não é 'zero margem versus margem ampla', mas sim se a mesma margem-padrão deveria valer para fármacos de janela terapêutica estreita, onde mesmo uma variação biologicamente normal pode ter consequência clínica — o que é uma discussão sobre calibrar a margem ao risco de cada fármaco, não sobre eliminar a margem."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Bioequivalência: comparando AUC, Cmax e Tmax entre referência e genérico",
+      "descricao": "Gráfico de concentração plasmática (eixo Y) por tempo (eixo X) sobrepondo duas curvas de formato semelhante — uma do medicamento de referência e outra do genérico candidato — com pequenas diferenças visuais de pico e tempo de pico. Marcações destacando Cmax (altura do pico) e Tmax (posição do pico no eixo X) para as duas curvas, e a área sob cada curva sombreada em tons diferentes representando a AUC de cada uma. Ao lado, uma faixa horizontal ou caixa de texto indicando 'margem regulatória aceitável: 80% – 125% da razão genérico/referência' para AUC e Cmax. Estilo esquemático de livro didático, cores diferenciando as duas curvas, legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Gráfico de linha único com eixo Y rotulado 'concentração plasmática' e eixo X rotulado 'tempo', mostrando duas curvas de formato de sino semelhante e parcialmente sobrepostas: uma curva azul rotulada 'medicamento de referência', com seu pico marcado por uma linha tracejada vertical e horizontal indicando 'Cmax referência' e 'Tmax referência'; uma curva laranja rotulada 'genérico candidato', ligeiramente deslocada, com seu próprio pico marcado da mesma forma indicando 'Cmax genérico' e 'Tmax genérico'. As áreas sob as duas curvas preenchidas em tons semitransparentes distintos (azul claro e laranja claro), ambas rotuladas 'AUC'. Abaixo do gráfico, uma caixa retangular de destaque com o texto 'Margem regulatória aceitável: 80%–125% (razão genérico/referência) para AUC e Cmax'. Legendas e eixos em português, cores suaves e distintas, alto contraste, sem elementos fotorrealistas, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-007",
+        "titulo": "Regimes de Dose e Biodisponibilidade (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha uma das aplicações regulatórias diretas da visão panorâmica apresentada no pai: comparar formulações diferentes do mesmo fármaco exige a mesma lógica de quantificação farmacocinética que o pai introduziu como necessária para transformar teoria em prescrição."
+      },
+      {
+        "bloco_id": "s4-farma1-01-007-01",
+        "titulo": "Biodisponibilidade",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "A AUC, definida e explicada em detalhe naquele bloco como medida de biodisponibilidade, é reutilizada aqui sem redefinição como um dos dois pilares do critério de bioequivalência — o outro sendo Cmax/Tmax, que descrevem a velocidade de absorção."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Fármacos de margem terapêutica estreita e monitorização terapêutica",
+        "mecanismo_conexao": "O debate sobre a segurança da troca de genéricos em fármacos como varfarina, levotiroxina e fenitoína, introduzido aqui, é retomado na prática clínica quando se discute monitorização de concentração sérica e ajuste individualizado de dose.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "saude-coletiva",
+        "semestre_futuro": 5,
+        "topico": "Políticas públicas de acesso a medicamentos e listas de medicamentos essenciais",
+        "mecanismo_conexao": "A bioequivalência é o critério técnico que sustenta as políticas de substituição genérica e as compras públicas de medicamentos, ligando este conceito farmacocinético diretamente a decisões de saúde pública sobre acesso e custo.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-007-04-fc01",
+      "pergunta": "Por que um estudo de bioequivalência não repete os ensaios clínicos de eficácia do medicamento de referência?",
+      "resposta": "Porque a eficácia clínica da molécula já foi demonstrada pelo medicamento de referência durante seu próprio processo de aprovação. O que muda entre um genérico e a referência não é a molécula, mas a formulação — e a premissa regulatória é que, se o genérico entrega a mesma molécula à circulação na mesma quantidade e na mesma velocidade (AUC e Cmax dentro de margem aceitável), o efeito clínico será equivalente, sem precisar prová-lo de novo em pacientes doentes.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "bioequivalencia",
+        "genericos",
+        "regulatorio"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-04-fc02",
+      "pergunta": "Quais são os três parâmetros farmacocinéticos usados para comparar um genérico ao medicamento de referência, e o que cada um mede?",
+      "resposta": "AUC (área sob a curva de concentração plasmática) mede a quantidade total de fármaco que chegou à circulação — a mesma medida usada para calcular biodisponibilidade. Cmax (concentração plasmática máxima) mede a intensidade do pico de exposição. Tmax (tempo até a concentração máxima) mede a velocidade com que esse pico é atingido. AUC responde 'quanto entrou no total'; Cmax e Tmax respondem 'quão rápido e quão intensamente'.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "bioequivalencia",
+        "auc",
+        "cmax"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-04-fc03",
+      "pergunta": "Um estudo compara um genérico candidato ao medicamento de referência e encontra uma razão de AUC de 105% e de Cmax de 118%, ambas com intervalo de confiança contido entre 80% e 125%. Esse genérico deve ser considerado bioequivalente? Justifique.",
+      "resposta": "Sim. O critério regulatório mais adotado exige que o intervalo de confiança da razão genérico/referência, tanto para AUC quanto para Cmax, fique contido dentro da margem de 80% a 125%. Como as duas razões (105% e 118%) estão dentro dessa faixa, o genérico é considerado bioequivalente ao medicamento de referência — presume-se equivalência terapêutica sem necessidade de novos ensaios clínicos de eficácia.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "bioequivalencia",
+        "calculo",
+        "margem-regulatoria"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-04-fc04",
+      "pergunta": "Por que a mesma margem regulatória de bioequivalência (80–125%) gera debate quando aplicada a fármacos de margem terapêutica estreita, como varfarina ou fenitoína?",
+      "resposta": "[AVISO] Porque nesses fármacos a diferença entre a dose eficaz e a dose tóxica é pequena, então uma variação de absorção que seria clinicamente irrelevante para a maioria dos medicamentos pode, nesses casos, ser suficiente para tirar o paciente da faixa terapêutica — por baixo (perda de efeito) ou por cima (toxicidade). Esse é um debate real e não encerrado: várias sociedades médicas recomendam cautela redobrada ou desaconselham a troca não supervisionada entre marcas para esse grupo específico de fármacos, sem que exista consenso unânime sobre a melhor forma de regular esses casos.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "bioequivalencia",
+        "margem-terapeutica-estreita",
+        "controversia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-007-04-fc05",
+      "pergunta": "Se a bioequivalência exigisse AUC e Cmax absolutamente idênticos entre genérico e referência (0% de margem), isso tornaria os genéricos mais seguros?",
+      "resposta": "Não tornaria mais seguros — tornaria a aprovação de praticamente qualquer genérico inviável. Nenhuma medida biológica é perfeitamente reprodutível, nem mesmo entre dois lotes do próprio medicamento de referência administrados ao mesmo indivíduo em ocasiões diferentes. A margem de 80–125% foi definida para acomodar essa variabilidade biológica normal sem abrir mão de exigir equivalência clinicamente relevante. O debate real não é sobre eliminar a margem, e sim sobre se a mesma margem-padrão deveria valer para todo fármaco, independentemente de quão estreita seja sua janela terapêutica.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "bioequivalencia",
+        "variabilidade-biologica",
+        "regulatorio"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-007-04-caso01",
+      "titulo": "Descontrole da coagulação após troca de marca de varfarina",
+      "apresentacao": "Mulher de 71 anos, em uso crônico de varfarina para fibrilação atrial, com RNI estável entre 2 e 3 há meses. Na farmácia, por falta do produto habitual, recebe um genérico diferente do mesmo princípio ativo, na mesma dose prescrita. Três semanas depois, retorna à unidade de saúde com gengivorragia espontânea e hematomas extensos nos braços. O RNI colhido no dia está em 5,8. Não houve mudança de dieta, não houve introdução de outros medicamentos, e a paciente confirma ter tomado a medicação regularmente — apenas trocou a marca por indisponibilidade da anterior.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Troca de uma formulação de varfarina por outra (referência para genérico, ou entre dois genéricos), ambas dentro da margem regulatória padrão de bioequivalência (80–125% de AUC e Cmax), mas gerando uma diferença de absorção real o suficiente para alterar a exposição efetiva ao fármaco nesta paciente específica."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A varfarina é um fármaco de margem terapêutica estreita: a faixa entre a dose que mantém a anticoagulação terapêutica e a dose que causa sangramento é estreita, e seu efeito é rotineiramente monitorado pelo RNI justamente por essa razão."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Uma variação de absorção dentro da margem considerada aceitável para a maioria dos fármacos foi suficiente, nesta paciente, para elevar a concentração efetiva de varfarina acima do que a dose vinha produzindo com a formulação anterior — deslocando o RNI de uma faixa terapêutica estável para uma faixa de risco hemorrágico."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Gengivorragia espontânea e hematomas extensos, sinais clínicos diretos de anticoagulação excessiva, confirmados pelo RNI elevado (5,8, versus a meta de 2 a 3)."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Necessidade de ajuste imediato de dose e, dependendo da gravidade do sangramento, reversão da anticoagulação; e uma lição prática de manejo — para fármacos de margem terapêutica estreita, a troca de marca ou fabricante deveria vir acompanhada de monitorização mais próxima (RNI em intervalo mais curto), não de manutenção automática da mesma dose sem reavaliação."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra exatamente o [AVISO] deste bloco: a margem regulatória de bioequivalência (80–125%) é adequada para a grande maioria dos fármacos, mas fármacos de margem terapêutica estreita — como a varfarina — podem manifestar clinicamente uma variação de absorção que, para outro fármaco, passaria despercebida. O caso não significa que o genérico seja 'de má qualidade' — significa que, para essa classe específica de fármacos, a prática clínica recomenda cautela redobrada e monitorização ao trocar de marca, exatamente o debate real mencionado na narrativa.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "hematologia",
+        "saude-coletiva"
+      ],
+      "diagnostico_revelado": "Anticoagulação excessiva por variação de biodisponibilidade entre formulações de varfarina, em fármaco de margem terapêutica estreita.",
+      "tratamento_resumido": "Suspensão temporária ou redução da dose de varfarina conforme gravidade do sangramento e valor do RNI, com possível uso de vitamina K se sangramento significativo; reintrodução cuidadosa com monitorização de RNI em intervalo mais curto após qualquer troca futura de marca; orientação à paciente e à farmácia para, sempre que possível, manter a mesma formulação em tratamentos crônicos com fármacos de margem terapêutica estreita."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-007-04-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Pharmacokinetics: Elimination and Time-Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

@@ -13,50 +13,339 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Microscopia — Instrumentos de Ver",
+    "subtitulo": "Por que seus olhos, que enxergam estrelas a anos-luz de distância, não conseguem ver uma única célula?",
     "semestre": 1,
     "disciplina": "histologia",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "hist",
-      "esqueleto"
+      "histologia",
+      "biologia-celular",
+      "microscopia",
+      "limite-de-resolucao"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Limite de resolução: por que existem tantos microscópios diferentes",
-  "narrativa": [],
+  "resumo_conciso": "Seus olhos conseguem ver a luz de estrelas que partiu há milhares de anos, mas são cegos para uma única célula bem na sua frente. O motivo não é falta de sensibilidade — é um limite físico chamado poder de resolução: a menor distância entre dois pontos para que ainda sejam percebidos como separados, e não como um borrão único. Aumentar o tamanho aparente de um objeto (ampliação) não resolve esse limite; ampliação sem resolução é apenas um borrão maior. A física da luz impõe um teto: ondas que passam por uma abertura se espalham (difração), e esse espalhamento cresce com o comprimento de onda. Foi por isso que, ao esbarrar no limite da luz visível, a ciência precisou recorrer a algo com comprimento de onda muito menor — o feixe de elétrons — para enxergar o que está dentro da própria célula. Toda a história da microscopia é a história de driblar, uma vez após a outra, esse mesmo limite físico.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Numa noite sem nuvens, você olha para o céu e enxerga a luz de estrelas que viajou por milhares de anos até chegar aos seus olhos. E, no entanto, esses mesmos olhos são absolutamente cegos para uma célula bacteriana pousada bem na ponta do seu dedo, a poucos centímetros de distância. Como pode um olho enxergar algo a trilhões de quilômetros e não enxergar algo a três centímetros?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O que exatamente falta ao olho humano?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Não é falta de sensibilidade à luz — o olho detecta perfeitamente a luz vinda da célula, assim como detecta a luz da estrela. O problema é outro: **resolução**. Uma estrela, mesmo distante, ainda é um ponto único de luz separado de outros pontos únicos por um ângulo grande o bastante para o olho distinguir. Já duas estruturas dentro de uma célula — duas mitocôndrias vizinhas, por exemplo — estão tão próximas uma da outra que a distância angular entre elas, vista pelo olho, é menor do que ele consegue discriminar. Elas se fundem em um único borrão, mesmo que ambas estejam perfeitamente iluminadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A retina humana tem fotorreceptores dispostos numa densidade fixa. Dois pontos de luz só são percebidos como separados se a imagem deles cair sobre fotorreceptores diferentes, com pelo menos um fotorreceptor não estimulado entre eles. Abaixo de uma certa distância entre os pontos, a imagem inteira cai sobre o mesmo grupo de fotorreceptores — e o cérebro recebe um único sinal, não dois. Esse é o limite de resolução do olho: cerca de 0,1 a 0,2 milímetros. Uma célula humana típica mede 10 a 20 micrômetros — dez vezes menor que esse limite. Por isso ela é, literalmente, invisível a olho nu."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir, fixe a distinção: o problema não é a célula ser \"pequena demais para a luz chegar até ela\" — a luz chega perfeitamente. O problema é que o olho não consegue **separar** dois pontos próximos dentro dessa escala. É um limite de discriminação espacial, não de sensibilidade luminosa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Ampliar a imagem resolve o problema?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A intuição diz que sim: basta aumentar o tamanho da imagem e o problema desaparece. Mas aqui mora uma das armadilhas mais comuns da microscopia. Se você pegar uma fotografia borrada de dois pontos fundidos e simplesmente ampliá-la no computador, sem nenhuma informação nova, o resultado é um borrão maior — não dois pontos nítidos. É a chamada **ampliação vazia**: o tamanho cresce, mas nenhum detalhe novo aparece, porque a informação que faltava nunca esteve ali para começo de conversa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O que realmente importa não é o quanto uma imagem é ampliada, mas o **poder de resolução** do instrumento que a formou: sua capacidade de captar, desde o início, informação suficiente para distinguir dois pontos próximos como entidades separadas. Um microscópio pode ter ampliação de 1000 vezes e ainda assim mostrar um borrão inútil, se seu poder de resolução for baixo. É a resolução — não a ampliação — que decide se você está vendo estrutura real ou apenas um zoom de nada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que existe um limite físico, e não só biológico?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Aqui a biologia dá lugar à física pura. Quando uma onda de luz atravessa qualquer abertura — a pupila do olho, a lente objetiva de um microscópio — ela não segue em linha reta perfeita. Ela se espalha ligeiramente, um fenômeno chamado **difração**. Esse espalhamento faz com que um ponto de luz perfeitamente pontual, ao atravessar uma lente, nunca forme uma imagem igualmente pontual do outro lado: forma um pequeno disco de luz com anéis ao redor, chamado disco de Airy. Quando dois pontos estão muito próximos, os discos de Airy de cada um se sobrepõem, e a partir de certa proximidade eles se tornam indistinguíveis um do outro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A regra física crucial é: **quanto menor o comprimento de onda usado para formar a imagem, menor é o espalhamento por difração, e maior é o poder de resolução alcançável**. Isso não é uma escolha de engenharia — é uma consequência direta das equações que descrevem como ondas se comportam ao passar por aberturas. Um microscópio óptico, por mais perfeitas que sejam suas lentes, jamais resolverá estruturas menores que aproximadamente metade do comprimento de onda da luz visível usada (cerca de 200 nanômetros, no melhor caso) — não por limitação de fabricação, mas por limitação física intransponível da própria luz."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎳",
+      "conteudo": "Imagine tentar separar dois pinos de boliche colocados muito próximos um do outro jogando bolas de diferentes tamanhos contra eles. Se você jogar bolas de boliche enormes, elas vão atingir os dois pinos ao mesmo tempo, não importa a mira — o tamanho da bola \"borra\" a diferença entre as posições dos pinos. Mas se você jogar bolinhas de gude minúsculas, consegue mirar exatamente entre os dois pinos e perceber a diferença de posição de cada um. Mapeamento: os pinos de boliche são as duas estruturas próximas que você quer distinguir (por exemplo, duas mitocôndrias vizinhas); o tamanho da bola lançada corresponde ao comprimento de onda da radiação usada para formar a imagem; bolas grandes (luz visível, comprimento de onda maior) só conseguem separar pinos afastados; bolinhas de gude minúsculas (elétrons, comprimento de onda muito menor) conseguem separar pinos muito mais próximos. Trocar a bola de boliche pela bolinha de gude é exatamente o que a microscopia eletrônica faz ao trocar fótons de luz visível por um feixe de elétrons."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O limite de resolução não é defeito de fabricação de nenhum microscópio — é uma barreira física imposta pela difração da radiação usada para formar a imagem. Reduzir o comprimento de onda é a única forma de empurrar esse limite para baixo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome do instrumento conta a própria função"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "microscópio",
+      "origem": "do grego mikrós (pequeno) + skopeîn (olhar, observar)",
+      "significado": "literalmente, \"instrumento para observar o pequeno\"",
+      "explicacao": "O nome foi cunhado no início do século XVII, quando os primeiros instrumentos ópticos combinando lentes revelaram um mundo de estruturas invisíveis a olho nu — de células vegetais observadas por Robert Hooke a microrganismos observados por Antonie van Leeuwenhoek. O nome descreve a promessa do instrumento (tornar visível o pequeno), mas não descreve seu limite: o próprio termo não distingue entre \"ampliar\" e \"resolver\", uma confusão que persiste até hoje entre iniciantes."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o limite de resolução da luz visível fosse dez vezes menor do que realmente é — ou seja, se a luz visível conseguisse resolver estruturas na escala de dezenas de nanômetros, como ribossomos e complexos proteicos — a microscopia eletrônica ainda seria necessária?",
+      "resposta": "Provavelmente não, ao menos não com a urgência histórica que teve. Boa parte da biologia celular do século XX — a descoberta da estrutura de organelas, da membrana plasmática em bicamada, dos ribossomos, do complexo de Golgi — só foi possível porque cientistas conseguiram romper o limite da luz visível construindo microscópios eletrônicos, capazes de resolver estruturas na escala de nanômetros usando o comprimento de onda muito menor dos elétrons acelerados. Se a luz visível já resolvesse essa escala, a biologia celular teria avançado décadas mais cedo, sem a necessidade de toda a engenharia complexa de feixes de elétrons em vácuo, fixação química agressiva e cortes ultrafinos que a microscopia eletrônica exige. Isso mostra que grande parte do avanço técnico em microscopia, historicamente, foi movido por uma única motivação: driblar o limite físico da difração."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Resolução versus ampliação vazia",
+      "descricao": "Painel comparativo em três colunas: à esquerda, dois pontos de luz bem separados com discos de Airy distintos (nítidos); no centro, dois pontos próximos com discos de Airy sobrepostos formando um único borrão (imagem não resolvida); à direita, o mesmo borrão central ampliado digitalmente, mostrando que a ampliação apenas aumenta o tamanho do borrão sem recuperar a separação dos dois pontos (ampliação vazia).",
+      "prompt_ia": "Diagrama científico vetorial educacional, fundo neutro adaptável a tema claro/escuro, três painéis lado a lado com setas indicativas. Painel 1, rotulado 'pontos resolvidos': dois discos de Airy concêntricos bem separados, nítidos, com um espaço escuro visível entre eles. Painel 2, rotulado 'limite de resolução atingido': os mesmos dois discos de Airy agora sobrepostos, formando uma única mancha alongada sem separação visível central. Painel 3, rotulado 'ampliação vazia': a mesma mancha do painel 2, agora maior em tamanho mas com a mesma falta de detalhe, com uma lupa estilizada ao lado indicando zoom sem ganho de informação. Legendas em português abaixo de cada painel. Estilo vetorial científico limpo, paleta de poucas cores, sem elementos fotorrealistas."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-hist-01-000",
+        "titulo": "Introdução à Histologia — O Estudo dos Tecidos",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso entender o que é histologia e por que ela depende de instrumentos de ampliação antes de mergulhar em como esses instrumentos efetivamente funcionam e por que têm limites."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "topico": "Imunofluorescência e imuno-histoquímica no diagnóstico de neoplasias",
+        "mecanismo_conexao": "A escolha de comprimentos de onda específicos para excitar fluoróforos usados em marcação de antígenos depende diretamente do princípio de resolução e difração discutido aqui.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "patologia",
+        "semestre_futuro": 4,
+        "topico": "Leitura de lâminas histopatológicas para diagnóstico de câncer",
+        "mecanismo_conexao": "Todo diagnóstico histopatológico depende de reconhecer estruturas na escala em que o microscópio óptico consegue resolver; entender o limite de resolução explica por que certas alterações (moleculares, ultraestruturais) exigem técnicas complementares como microscopia eletrônica.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "radiologia",
+        "semestre_futuro": 3,
+        "topico": "Resolução espacial em exames de imagem",
+        "mecanismo_conexao": "O mesmo princípio de que menor comprimento de onda permite maior resolução reaparece em radiologia, onde raios-X (comprimento de onda muito menor que a luz visível) permitem resolver estruturas internas do corpo invisíveis a exames baseados em luz visível.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-01-006-05",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "A microscopia confocal, tratada no bloco filho, é uma solução engenhosa para um problema diferente (contaminação por luz fora de foco em tecido espesso), mas parte do mesmo compromisso fundamental entre técnica óptica e limite físico discutido aqui."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-hist-01-006-fc01",
+      "pergunta": "Por que dois pontos luminosos muito próximos podem estar perfeitamente iluminados e, ainda assim, aparecerem como um único borrão ao olho humano ou a um microscópio de baixo poder de resolução?",
+      "resposta": "Porque a percepção de \"dois pontos separados\" não depende apenas de ambos emitirem luz suficiente, mas de essa luz formar duas imagens distintas o bastante para cair sobre unidades detectoras diferentes (fotorreceptores na retina, ou pixels em um sensor). Quando os dois pontos estão mais próximos do que o limite de resolução do sistema óptico, os discos de difração de cada um se sobrepõem tanto que se fundem numa única mancha de luz. A sensibilidade (quanta luz é captada) e a resolução (quão próximos dois pontos podem estar e ainda serem distinguidos) são propriedades independentes — pode haver luz de sobra e resolução insuficiente ao mesmo tempo.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "microscopia",
+        "resolucao"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-fc02",
+      "pergunta": "Se aumentássemos digitalmente o zoom de uma fotografia tirada com um microscópio de baixo poder de resolução, conseguiríamos recuperar detalhes que a imagem original não continha?",
+      "resposta": "Não. Essa é a chamada ampliação vazia: aumentar o tamanho de uma imagem que já perdeu informação por limite de resolução apenas aumenta o tamanho do borrão, sem adicionar nenhum detalhe novo, porque a informação que faltava nunca foi capturada pelo sistema óptico original. Para ganhar detalhe real é preciso melhorar o poder de resolução do instrumento no momento da captura — por exemplo, reduzindo o comprimento de onda da radiação usada — e não processar a imagem depois de pronta.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "microscopia",
+        "ampliacao-vazia"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-fc03",
+      "pergunta": "Por que a microscopia eletrônica consegue resolver estruturas muito menores que a microscopia óptica, mesmo usando lentes de qualidade comparável?",
+      "resposta": "Porque o poder de resolução de qualquer sistema óptico é limitado pela difração, e a difração depende diretamente do comprimento de onda da radiação usada para formar a imagem. Elétrons acelerados em um microscópio eletrônico têm comprimento de onda associado muitas ordens de grandeza menor que o da luz visível. Como o limite de resolução é proporcional a esse comprimento de onda, trocar fótons de luz visível por elétrons reduz drasticamente o menor detalhe distinguível — não por lentes melhores, mas por uma radiação fundamentalmente mais adequada a escalas pequenas.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "microscopia-eletronica",
+        "difracao"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Um microscópio com ampliação de 1000 vezes sempre mostra mais detalhes estruturais do que um microscópio com ampliação de 400 vezes.'",
+      "resposta": "Falso. Ampliação descreve apenas o quanto a imagem aumenta de tamanho aparente, não quanto detalhe genuíno ela contém. Um microscópio de 1000 vezes com poder de resolução baixo pode mostrar uma imagem maior, porém igualmente ou mais borrada que a de um microscópio de 400 vezes com melhor resolução. A comparação correta entre instrumentos deve ser feita pelo poder de resolução (a menor distância entre dois pontos ainda distinguíveis), não pela ampliação nominal. Essa é uma armadilha clássica de quem está aprendendo microscopia: assumir que ampliação e resolução andam sempre juntas.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "microscopia",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-fc05",
+      "pergunta": "A palavra microscópio vem do grego mikrós (pequeno) e skopeîn (olhar). O que essa etimologia revela sobre a promessa do instrumento — e o que ela deixa de esclarecer sobre seus limites?",
+      "resposta": "A etimologia revela a promessa central do instrumento desde sua criação no século XVII: tornar visível aquilo que é pequeno demais para o olho nu, seja uma célula vegetal, seja um microrganismo. O nome comunica bem essa função geral de \"olhar o pequeno\". O que ele não revela é a distinção crucial entre ampliar e resolver — o nome não diferencia um instrumento que apenas aumenta o tamanho aparente (ampliação vazia) de um instrumento que efetivamente distingue estruturas próximas (resolução real). Essa lacuna etimológica reflete uma confusão pedagógica comum: o nome sugere apenas \"tornar grande\", quando a função real e mais importante é \"tornar distinguível\".",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "microscopia",
+        "etimologia"
+      ]
+    },
+    {
+      "card_id": "s1-hist-01-006-fc06",
+      "pergunta": "Um patologista examina uma lâmina de biópsia hepática ao microscópio óptico e suspeita de alteração mitocondrial sutil, mas não consegue confirmar a estrutura interna das cristas mitocondriais mesmo na maior ampliação disponível. Por que o microscópio óptico é intrinsecamente incapaz de resolver essa estrutura, e qual técnica ele precisaria solicitar?",
+      "resposta": "As cristas mitocondriais são dobras internas de membrana na escala de dezenas de nanômetros — muito abaixo do limite de resolução da luz visível, que fica em torno de 200 nanômetros no melhor caso, por conta da difração. Não importa quanto o patologista amplie a imagem óptica: a informação sobre a arquitetura interna das cristas simplesmente nunca chegou a ser capturada, porque a luz visível difrata demais nessa escala para distinguir detalhes tão próximos. Para visualizar as cristas mitocondriais com nitidez real, seria necessário solicitar microscopia eletrônica de transmissão, que usa elétrons com comprimento de onda muito menor e consegue resolver estruturas na escala de nanômetros.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "microscopia-eletronica",
+        "patologia",
+        "resolucao"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-hist-01-006-caso01",
+      "titulo": "Biópsia muscular com suspeita de doença mitocondrial",
+      "apresentacao": "Menino de 6 anos é levado ao pediatra por fraqueza muscular progressiva, fadiga desproporcional ao esforço e episódios de dor muscular após atividade física leve. Exames de sangue mostram lactato elevado em repouso. O neuropediatra solicita biópsia de músculo esquelético. Ao exame histopatológico de rotina em microscopia óptica, o patologista observa fibras musculares com aspecto \"grosseiramente irregular\" e algumas áreas de acúmulo anômalo de material na periferia das fibras, mas não consegue caracterizar a natureza exata dessas alterações nem confirmar se envolvem estrutura mitocondrial interna.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Suspeita clínica de doença mitocondrial primária (defeito genético na cadeia respiratória), que exige confirmação da arquitetura interna das mitocôndrias das fibras musculares — informação situada numa escala de dezenas de nanômetros."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "As cristas mitocondriais dentro das fibras musculares esqueléticas, cuja integridade e disposição são o que efetivamente define muitas miopatias mitocondriais."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O microscópio óptico usado na rotina histopatológica tem poder de resolução limitado pela difração da luz visível a cerca de 200 nanômetros — a estrutura interna das cristas mitocondriais está muito abaixo desse limite e simplesmente não pode ser resolvida, por mais que a imagem seja ampliada."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O laudo de microscopia óptica de rotina permanece inconclusivo: mostra alterações inespecíficas ('fibras vermelhas rasgadas' sugeridas, mas não confirmadas em detalhe ultraestrutural), sem poder confirmar ou excluir doença mitocondrial com precisão."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O patologista solicita microscopia eletrônica de transmissão da mesma amostra. Usando elétrons em vez de luz visível, a técnica resolve a arquitetura interna das mitocôndrias e revela cristas desorganizadas e mitocôndrias gigantes com inclusões paracristalinas, confirmando o diagnóstico de miopatia mitocondrial e permitindo encaminhar a família para estudo genético direcionado."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra de forma direta o limite físico discutido no bloco: o microscópio óptico não falha por imperícia do patologista nem por má qualidade do aparelho, mas por uma barreira física intransponível — a difração da luz visível. A escolha de microscopia eletrônica não é luxo tecnológico, é a única forma de acessar informação estrutural que existe numa escala abaixo do limite de resolução da luz.",
+      "disciplinas_relacionadas": [
+        "histologia",
+        "patologia",
+        "neurologia",
+        "genetica"
+      ],
+      "diagnostico_revelado": "Miopatia mitocondrial confirmada por alterações ultraestruturais em microscopia eletrônica de transmissão.",
+      "tratamento_resumido": "Manejo multidisciplinar de suporte (fisioterapia, otimização nutricional, evitar medicamentos mitocondriotóxicos), aconselhamento genético familiar e acompanhamento neurológico seriado; não há cura definitiva para a maioria das miopatias mitocondriais primárias."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-hist-01-006-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Junqueira LC, Carneiro J. Histologia Básica: Texto e Atlas. 13ª ed. Guanabara Koogan; 2017. Capítulo 1 — Estudo das Células e Tecidos.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Ross MH, Pawlina W. Histology: A Text and Atlas. 8th ed. Wolters Kluwer; 2020. Capítulo 1 — Métodos de estudo de células e tecidos.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "funcao",
-    "historia"
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Ampliação e poder de resolução são a mesma coisa; um microscópio com maior ampliação sempre mostra mais detalhe",
+      "correcao": "Ampliação é o aumento do tamanho aparente; resolução é a capacidade de distinguir dois pontos próximos. É possível ter ampliação alta com resolução ruim (ampliação vazia)",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "A luz visível não resolve estruturas subcelulares por falta de brilho ou intensidade insuficiente da fonte de luz",
+      "correcao": "O limite é a difração, que depende do comprimento de onda, não da intensidade luminosa. Mais luz não resolve o problema",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "poder de resolução",
+      "termo_es": "poder de resolución",
+      "termo_en": "resolving power",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "microscopia eletrônica",
+      "termo_es": "microscopía electrónica",
+      "termo_en": "electron microscopy",
+      "abreviatura": "ME / ME / EM"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Reescrita completa da narrativa (abertura socrática com contraste estrela/célula), troca de analogia genérica de orquestra por analogia de boliche com mapeamento explícito, adição de caso clínico com cascata de 5 etapas, expansão para 6 flashcards com tipos variados, correção de prerequisito com bloco_id inventado.",
+      "motivo": "Bloco original tinha abertura que já misturava problema com solução prematuramente, analogia de orquestra pouco vívida, ausência de caso clínico e prerequisito 'fisica-luz-01' sem correspondência real na árvore."
+    }
   ]
 }

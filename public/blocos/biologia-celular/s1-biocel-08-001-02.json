@@ -1,53 +1,278 @@
 {
+  "metadata": {
+    "titulo": "Replicação Semiconservativa",
+    "subtitulo": "Como provar que cada célula-filha herda metade do DNA original e metade nova?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "DNA",
+      "Replicação",
+      "Meselson-Stahl",
+      "Genética"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-06"
+  },
+  "resumo_conciso": "Em 1953, Watson e Crick propuseram a estrutura em dupla hélice e sugeriram, quase de passagem, que ela já continha em si o mecanismo de sua própria cópia. Mas havia três hipóteses concorrentes sobre como essa cópia aconteceria: conservativa (a hélice original permanece intacta, uma cópia inteiramente nova é criada ao lado), dispersiva (as fitas antigas se fragmentam e se misturam com as novas) e semiconservativa (cada fita antiga serve de molde para uma fita nova, e as duas se mantêm juntas na hélice-filha). O experimento de Meselson e Stahl, em 1958, usando isótopos de nitrogênio para marcar o DNA por peso, resolveu a disputa de forma elegante: a cada divisão, o DNA aparecia com densidade intermediária, depois com duas densidades distintas — um padrão que só o modelo semiconservativo previa. Esse resultado não é só um capítulo de história da ciência: é a prova experimental de que a fidelidade da hereditariedade depende de cada célula-filha reter, sempre, uma fita física da geração anterior como âncora de verdade.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine três arquitetos disputando o mesmo prêmio de design com propostas diferentes de como um prédio deveria 'se duplicar' quando a cidade precisasse de uma cópia idêntica dele em outro terreno. O primeiro arquiteto propõe: mantenha o prédio original intocado e construa, do zero, um segundo prédio idêntico ao lado. O segundo propõe: demula parcialmente o prédio original, misture os tijolos antigos com tijolos novos, e construa dois prédios híbridos. O terceiro propõe algo mais sutil: divida o prédio ao meio, exatamente na linha onde ele foi construído em duas metades espelhadas, e reconstrua cada metade faltante do zero, usando a metade que sobrou como gabarito exato."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Qual dessas três propostas a célula realmente usa?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando Watson e Crick descreveram a dupla hélice em 1953, ficou evidente que a complementaridade entre as bases (adenina com timina, citosina com guanina) permitiria, em teoria, usar cada fita como molde. Mas 'em teoria' não é prova. Havia três modelos logicamente possíveis para como a duplicação aconteceria de fato, e nenhum experimento ainda tinha decidido entre eles."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No modelo conservativo, a hélice original permaneceria completamente intacta após a replicação, e uma segunda hélice, inteiramente nova, seria montada ao lado. No modelo dispersivo, as duas fitas antigas se fragmentariam durante o processo, e os pedaços antigos e novos ficariam misturados aleatoriamente nas duas hélices-filhas. No modelo semiconservativo, cada fita antiga permaneceria inteira, servindo de molde para uma única fita nova complementar — e cada hélice-filha teria exatamente uma fita velha e uma fita nova, sem mistura."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de revelar a resposta: repare que os três modelos previam resultados fisicamente diferentes e mensuráveis. Bastava encontrar uma forma de 'pesar' o DNA antigo separadamente do DNA novo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como Meselson e Stahl decidiram a disputa"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Matthew Meselson e Franklin Stahl, em 1958, tiveram uma ideia experimental precisa: se pudessem marcar o DNA 'antigo' com um peso diferente do DNA 'novo', poderiam separar as duas categorias fisicamente e comparar com o que cada modelo previa."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Eles cultivaram bactérias por várias gerações em um meio contendo apenas nitrogênio pesado (¹⁵N), um isótopo raro mas não radioativo do nitrogênio — presente nas bases nitrogenadas do DNA. Depois de várias gerações, todo o DNA bacteriano estava marcado como 'pesado'. Em seguida, transferiram as bactérias para um meio com nitrogênio comum (¹⁴N) e deixaram que se dividissem apenas uma ou duas vezes, coletando o DNA após cada divisão."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Usando centrifugação em gradiente de densidade — uma técnica que separa moléculas por peso, formando bandas visíveis em um tubo de ensaio conforme a densidade —, eles conseguiram literalmente ver em que 'altura' do tubo o DNA de cada geração se acomodava."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O que cada modelo previa versus o que foi observado",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "DNA original (geração 0)",
+          "explicacao": "Todo o DNA estava marcado com ¹⁵N, formando uma única banda 'pesada' no gradiente. Ponto de partida idêntico para os três modelos."
+        },
+        {
+          "numero": 2,
+          "titulo": "Após a primeira divisão em meio com ¹⁴N",
+          "explicacao": "Se o modelo fosse conservativo, deveriam aparecer duas bandas distintas: uma pesada (a hélice original intacta) e uma leve (a hélice totalmente nova). Em vez disso, apareceu uma única banda de densidade intermediária — nem pesada, nem leve. Isso já eliminava o modelo conservativo."
+        },
+        {
+          "numero": 3,
+          "titulo": "Após a segunda divisão em meio com ¹⁴N",
+          "explicacao": "Se o modelo fosse dispersivo, a banda intermediária deveria simplesmente ficar cada vez mais leve e permanecer única, misturando-se de forma cada vez mais uniforme. O que se observou foi o oposto: surgiram duas bandas distintas — uma de densidade intermediária e uma totalmente leve — em proporções iguais. Esse padrão de duas bandas distintas é exatamente o que o modelo semiconservativo previa, e nenhum outro modelo explicava."
+        },
+        {
+          "numero": 4,
+          "titulo": "Interpretação final",
+          "explicacao": "A banda intermediária representa hélices com uma fita ¹⁵N (antiga) e uma fita ¹⁴N (nova). A banda leve representa hélices onde ambas as fitas já são ¹⁴N — resultado de uma segunda rodada de replicação sobre uma fita nova da rodada anterior. Esse padrão só é possível se cada fita antiga permanece inteira e serve de molde único para uma fita nova: o modelo semiconservativo."
+        }
+      ]
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎞️",
+      "conteudo": "Pense em um negativo fotográfico de filme, daqueles usados antes das câmeras digitais. O negativo guarda a imagem em cores invertidas — onde a cena real é clara, o negativo é escuro, e vice-versa: uma complementaridade exata. Quando você revela uma foto nova a partir daquele negativo, você não risca nem destrói o negativo original — ele continua intacto, guardado, podendo revelar quantas cópias forem necessárias no futuro. Mas repare: cada cópia revelada carrega a marca exata do negativo que a originou, porque o processo de revelação é regido por uma correspondência física fixa entre luz e sombra, não por adivinhação. Mapeamento: o negativo original = a fita-molde antiga de DNA; a correspondência fixa entre claro e escuro = o pareamento A-T e C-G; a foto revelada = a nova fita complementar sintetizada; o fato de o negativo permanecer intacto e reutilizável = a fita antiga permanecer inteira e não se fragmentar durante a replicação semiconservativa."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A elegância do experimento de Meselson-Stahl está em transformar uma pergunta molecular invisível ('como o DNA se copia?') em algo literalmente visível: a posição de uma banda em um tubo de ensaio. Esse tipo de conversão — de mecanismo invisível em medida física observável — é uma das assinaturas dos grandes experimentos da biologia molecular do século XX."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que reter a fita antiga é uma vantagem, não um acaso"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O modelo semiconservativo garante que, em toda geração, exista uma fita física real da geração anterior, servindo de âncora de verdade contra a qual erros podem, em princípio, ser comparados. Se a replicação fosse dispersiva, a informação de cada geração ficaria progressivamente 'diluída' e misturada, sem nenhuma referência estável para checagem — um sistema muito mais vulnerável ao acúmulo silencioso de erro."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "semiconservativo",
+      "origem": "latim semi (metade) + conservare (manter guardado, preservar)",
+      "significado": "literalmente, 'que preserva pela metade'",
+      "explicacao": "O termo foi cunhado especificamente para descrever o resultado do experimento de Meselson-Stahl: nem tudo da hélice original é conservado como unidade completa (isso seria 'conservativo' puro), nem nada é conservado (isso seria completamente dispersivo) — exatamente metade, uma fita inteira, é preservada em cada hélice-filha. O nome é uma etiqueta cunhada depois da descoberta experimental, não antes — ao contrário de muitos termos da anatomia clássica, que nomeiam estruturas visíveis a olho nu, este nomeia um padrão estatístico revelado por um experimento engenhoso."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a replicação do DNA fosse conservativa — ou seja, a dupla hélice original permanecesse totalmente intacta e uma segunda hélice fosse sintetizada inteiramente do zero — que problema prático isso geraria para a célula?",
+      "resposta": "O maior problema seria a ausência de um mecanismo físico imediato de checagem de erro durante a síntese da nova hélice. No modelo semiconservativo, a fita antiga funciona como molde físico direto, base por base, o que permite que a enzima de síntese confira a complementaridade correta em tempo real. Se uma segunda hélice fosse construída inteiramente do zero — sem usar nenhuma fita antiga como gabarito direto — a fidelidade da cópia dependeria de outro mecanismo de verificação, hipotético e mais indireto, aumentando a probabilidade de erros não detectados se acumularem na hélice totalmente nova. Além disso, o próprio experimento de Meselson-Stahl mostrou que esse modelo simplesmente não corresponde à realidade biológica observada."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O Experimento de Meselson-Stahl",
+      "descricao": "Esquema mostrando três tubos de centrifugação lado a lado representando a geração 0 (banda pesada única), a primeira divisão (banda intermediária única) e a segunda divisão (duas bandas: intermediária e leve), com legendas indicando o nitrogênio pesado (¹⁵N) em uma cor e o nitrogênio leve (¹⁴N) em outra.",
+      "prompt_ia": "Scientific vector illustration, adaptive neutral background, three vertical test tubes side by side representing a density gradient centrifugation experiment, each tube showing distinct horizontal bands at different heights representing DNA density, generation 0 with single heavy band, generation 1 with single intermediate band, generation 2 with two bands (intermediate and light), portuguese labels indicating heavy nitrogen and light nitrogen, clean didactic vector style, no photorealistic textures",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-08-001-02-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Por que a replicação do DNA é descrita como semiconservativa, e não conservativa?",
+      "resposta": "Porque cada molécula de DNA filha resultante contém uma fita polinucleotídica original (parental) inteira e uma fita recém-sintetizada, mantendo metade da informação ancestral fisicamente intacta em cada cópia. No modelo conservativo, a hélice original permaneceria totalmente intacta como unidade e uma segunda hélice seria criada inteiramente nova — o que o experimento de Meselson-Stahl refutou diretamente.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "replicação",
+        "DNA"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-001-02-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria com a integridade do genoma ao longo de gerações se a replicação não utilizasse uma fita-molde física?",
+      "resposta": "Haveria perda progressiva de fidelidade na cópia da informação genética. Sem uma fita-molde física guiando base por base, não existiria a restrição química direta da complementaridade para orientar a polimerização — a enzima não teria como 'saber', em tempo real, qual nucleotídeo pertence a cada posição. Isso levaria a erros aleatórios frequentes, que se acumulariam de forma não corrigida ao longo das divisões celulares sucessivas.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "fidelidade",
+        "mutação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-001-02-fc03",
+      "tipo": "por_que",
+      "pergunta": "Por que o experimento de Meselson-Stahl precisou de duas gerações de replicação, e não apenas uma, para distinguir entre os modelos semiconservativo e dispersivo?",
+      "resposta": "Após a primeira divisão, tanto o modelo semiconservativo quanto o modelo dispersivo previam uma única banda de densidade intermediária — os dois modelos eram indistinguíveis nesse ponto. A diferença só aparece na segunda divisão: o modelo semiconservativo prevê duas bandas distintas (intermediária e leve, em proporções iguais), enquanto o modelo dispersivo previa uma única banda cada vez mais leve, sem nunca se dividir em duas. Só observando a segunda geração foi possível eliminar definitivamente o modelo dispersivo.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "Meselson-Stahl",
+        "desenho-experimental"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-001-02-fc04",
+      "tipo": "comparacao",
+      "pergunta": "Como o experimento de Meselson-Stahl refutou especificamente o modelo conservativo de replicação?",
+      "resposta": "Eles utilizaram isótopos de nitrogênio (¹⁵N pesado e ¹⁴N leve) para marcar o DNA por densidade. Se a replicação fosse conservativa, a primeira divisão em meio com ¹⁴N deveria produzir duas bandas distintas: uma pesada (a hélice original ¹⁵N-¹⁵N intacta) e uma leve (a hélice totalmente nova ¹⁴N-¹⁴N). O que observaram, em vez disso, foi uma única banda de densidade intermediária — resultado incompatível com o modelo conservativo, mas exatamente o previsto pelo modelo semiconservativo, no qual cada hélice-filha combina uma fita pesada antiga com uma fita leve nova.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "Meselson-Stahl",
+        "história-da-ciência"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-001-02-fc05",
+      "tipo": "armadilha",
+      "pergunta": "Verdadeiro ou falso, e justifique: 'o experimento de Meselson-Stahl usou isótopos radioativos de nitrogênio para marcar e rastrear o DNA.'",
+      "resposta": "Falso. O ¹⁵N usado no experimento é um isótopo estável e não radioativo do nitrogênio — ele é apenas mais pesado que o isótopo comum (¹⁴N), o que permite separá-lo por densidade em centrifugação, não por detecção de radioatividade. Essa é uma confusão comum, porque outros experimentos clássicos da biologia molecular da mesma época (como os de Hershey-Chase) de fato usaram marcação radioativa (fósforo-32 e enxofre-35). Meselson e Stahl escolheram deliberadamente uma abordagem não radioativa, baseada em diferença de massa detectável por centrifugação em gradiente de densidade de cloreto de césio.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Meselson-Stahl",
+        "armadilha-conceitual",
+        "metodologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-08-001-02-caso01",
+      "titulo": "Falha na correção de erros durante divisões celulares aceleradas",
+      "apresentacao": "Mulher de 45 anos, com diagnóstico recente de câncer colorretal, é submetida a sequenciamento tumoral que revela instabilidade de microssatélites elevada (MSI-H) e perda de expressão de uma proteína do sistema de reparo de pareamento incorreto (mismatch repair). O oncologista explica à paciente que, embora o câncer já esteja instalado, esse achado molecular específico prevê boa resposta à imunoterapia, diferentemente da quimioterapia convencional isolada.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Perda hereditária ou adquirida de proteínas do sistema de reparo de pareamento incorreto (mismatch repair) — o mecanismo celular que, após a replicação semiconservativa, revisa a fita recém-sintetizada em busca de bases mal emparelhadas que escaparam da checagem inicial da DNA polimerase."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A fidelidade da fita recém-sintetizada de DNA durante e logo após a replicação semiconservativa, especialmente em regiões repetitivas curtas do genoma (microssatélites), que são particularmente propensas a erros de pareamento durante a cópia."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sem o reparo de pareamento incorreto funcional, pequenos erros que normalmente seriam corrigidos logo após a DNA polimerase passar — erros que fazem parte do processo normal, mas que costumam ser revisados e consertados — permanecem na fita nova e são fixados como mutações permanentes na geração seguinte de células."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Acúmulo progressivo de mutações em genes que regulam a proliferação celular, ao longo de décadas de divisões celulares no epitélio colônico, culminando no desenvolvimento clínico de câncer colorretal, muitas vezes em idade mais precoce que a população geral."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O câncer resultante tem uma característica molecular específica (instabilidade de microssatélites elevada) que, paradoxalmente, o torna mais reconhecível pelo sistema imunológico — porque acumula muitas proteínas alteradas (neoantígenos) — e por isso responde particularmente bem a imunoterapias que 'destravam' a resposta imune contra o tumor, como os inibidores de checkpoint imunológico."
+        }
+      ],
+      "conexao_com_bloco": "O caso conecta diretamente o mecanismo de replicação semiconservativa descrito neste bloco com sua consequência clínica mais direta: a replicação, por mais fiel que seja, não é perfeita, e depende de sistemas de checagem posteriores para corrigir os erros residuais que escapam à complementaridade de bases durante a síntese. Quando esses sistemas de checagem falham, o acúmulo de erros ao longo de sucessivas rodadas de replicação semiconservativa é o motor molecular direto da carcinogênese.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "genética",
+        "oncologia",
+        "farmacologia"
+      ],
+      "diagnostico_revelado": "Câncer colorretal com instabilidade de microssatélites elevada, associado à deficiência do sistema de reparo de pareamento incorreto (mismatch repair).",
+      "tratamento_resumido": "Cirurgia de ressecção do tumor primário, seguida de imunoterapia com inibidores de checkpoint imunológico (como anti-PD-1), que costuma ter resposta particularmente favorável nesse subtipo molecular específico, em contraste com a resposta mais limitada à quimioterapia citotóxica convencional isolada."
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-08-001",
+        "titulo": "DNA — Estrutura e Replicação — Visão Geral",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A compreensão da estrutura da dupla hélice e do pareamento de bases (A-T, C-G) é o pilar que sustenta o conceito de fita-molde e de replicação semiconservativa."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "topico": "Mutagênese e Reparo de DNA",
+        "disciplina": "genética",
+        "semestre_futuro": 2,
+        "mecanismo_conexao": "Erros na replicação semiconservativa que escapam à checagem inicial da polimerase exigem mecanismos de reparo específicos, como o reparo de pareamento incorreto.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "topico": "Instabilidade de microssatélites e câncer hereditário",
+        "disciplina": "oncologia",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "A falha em sistemas que checam a fidelidade da replicação semiconservativa é a base molecular de síndromes hereditárias de câncer, como a síndrome de Lynch.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "topico": "Imunoterapia guiada por instabilidade de microssatélites",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "Tumores com alta instabilidade de microssatélites, decorrentes de falhas de reparo pós-replicação, respondem preferencialmente a inibidores de checkpoint imunológico.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-biocel-08-001",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Este bloco detalha, com o experimento de Meselson-Stahl, a prova histórica do mecanismo de replicação já introduzido na visão geral da estrutura e replicação do DNA."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-08-001-02",
   "no_pai_id": "s1-biocel-08-001",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Replicação Semiconservativa",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Experimento de Meselson-Stahl; cada fita como molde",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica"
-  ]
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "pendente",
+    "nivel_confianca": "estudo"
+  }
 }

@@ -10,43 +10,230 @@
     "profundidade_arvore": 4,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "ist",
+      "ulceras-genitais",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Haemophilus ducreyi; úlcera dolorosa suja; adenite supurativa; conduta",
-  "narrativa": [],
+  "resumo_conciso": "Cancroide é úlcera genital dolorosa por Haemophilus ducreyi, atualmente incomum em muitos cenários, caracterizada por lesão profunda, base suja, bordas irregulares e adenite inguinal dolorosa/supurativa.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Cancro mole, ou cancroide, é uma IST ulcerativa causada por Haemophilus ducreyi. Embora seja hoje incomum em muitos países, continua importante no raciocínio sindrômico de úlceras dolorosas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A lesão típica é dolorosa, profunda, de borda irregular, base purulenta ou necrótica e aspecto mais \"sujo\" que o cancro duro da sífilis. Pode haver múltiplas úlceras por autoinoculação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A adenite inguinal dolorosa, unilateral e às vezes supurativa, é uma pista. O bubão pode flutuar e necessitar drenagem por aspiração ou incisão conforme contexto."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O diagnóstico definitivo é difícil porque cultura especial não é amplamente disponível e testes moleculares podem não existir localmente. Por isso, muitas decisões são clínicas e sindrômicas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Antes de chamar de cancroide, é importante afastar sífilis e herpes, que são mais frequentes em muitos serviços. Coinfecções também podem ocorrer."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Tratamento antimicrobiano cura a infecção e reduz transmissão, mas casos avançados podem deixar cicatriz. Parceiros sexuais recentes devem ser avaliados e tratados conforme recomendação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A presença de úlcera genital aumenta risco de aquisição e transmissão de HIV; por isso, testagem e prevenção entram obrigatoriamente na consulta."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-06-000",
+        "titulo": "Modulo 6 - Infeccoes do Trato Genital e ISTs",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-06-021",
+        "titulo": "Ulceras Genitais - Abordagem Sindromica",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "HIV e Outras ISTs na Saude da Mulher",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-07-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-06-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Cervicites e Uretrites - Gonorreia e Clamidia"
+      },
+      {
+        "bloco_id": "s7-go1-06-013",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Tricomoniase"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-023-fc-01",
+      "pergunta": "Qual agente causa cancroide?",
+      "resposta": "Haemophilus ducreyi.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-023-fc-02",
+      "pergunta": "Como é a úlcera típica do cancro mole?",
+      "resposta": "Dolorosa, profunda, base suja/purulenta e bordas irregulares.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-023-fc-03",
+      "pergunta": "Qual linfonodo sugere cancroide?",
+      "resposta": "Adenite inguinal dolorosa, às vezes supurativa.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-023-fc-04",
+      "pergunta": "O que deve ser afastado no diagnóstico?",
+      "resposta": "Sífilis e herpes, além de considerar coinfecção.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-023-cc-01",
+      "titulo": "Úlcera dolorosa e bubão",
+      "apresentacao": "Paciente apresenta úlcera genital dolorosa de borda irregular e linfonodo inguinal flutuante doloroso.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Cancroide é úlcera genital dolorosa por Haemophilus ducreyi, atualmente incomum em muitos cenários, caracterizada por lesão profunda, base suja, bordas irregulares e adenite inguinal dolorosa/supurativa."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Cancro Mole (Cancroide), conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Cancroide é úlcera genital dolorosa por Haemophilus ducreyi, atualmente incomum em muitos cenários, caracterizada por lesão profunda, base suja, bordas irregulares e adenite inguinal dolorosa/supurativa."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Paciente apresenta úlcera genital dolorosa de borda irregular e linfonodo inguinal flutuante doloroso."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual síndrome entra no diferencial? Cancroide, mas é preciso investigar herpes e sífilis e conduzir conforme epidemiologia e protocolo."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Cancroide, mas é preciso investigar herpes e sífilis e conduzir conforme epidemiologia e protocolo.",
+      "tratamento_resumido": "Cancroide, mas é preciso investigar herpes e sífilis e conduzir conforme epidemiologia e protocolo."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Esquema de úlcera dolorosa de cancroide com bubão inguinal, comparada ao cancro duro da sífilis.",
+        "alt": "Ilustracao educacional para Cancro Mole (Cancroide)"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC - Syphilis STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/syphilis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Herpes STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Chancroid STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/chancroid.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Lymphogranuloma Venereum STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/lgv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Donovanosis STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/donovanosis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Pelvic Inflammatory Disease STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/pid.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

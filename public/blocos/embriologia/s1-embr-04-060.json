@@ -16,43 +16,219 @@
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 15,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
-      "embr",
-      "esqueleto"
+      "embriologia",
+      "sistema nervoso",
+      "neurulação",
+      "tubo neural",
+      "crista neural"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "subtitulo": "Como uma placa externa vira tubo, encéfalo, medula e rede de controle?"
   },
-  "resumo_conciso": "Do tubo neural ao encéfalo; vesículas, histogênese e mielinização",
-  "narrativa": [],
+  "resumo_conciso": "O sistema nervoso começa quando o ectoderma dorsal é induzido pela notocorda a virar placa neural. Essa placa dobra, fecha-se em tubo neural e separa uma população migratória, a crista neural. O tubo neural origina encéfalo e medula, enquanto suas cavidades formam ventrículos e canal central; depois surgem vesículas encefálicas, zonas proliferativas, migração neuronal e mielinização. O ponto clínico central é que pequenas falhas de fechamento, padrão ou maturação geram consequências grandes, porque o sistema nervoso é o eixo de integração do corpo.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Se o corpo fosse apenas órgãos funcionando isoladamente, ele seria uma cidade sem comunicação. O embrião precisa de um sistema capaz de perceber, integrar, comandar e lembrar. Esse sistema não nasce pronto; ele começa como uma faixa de ectoderma que recebe uma instrução profunda: deixar de ser superfície e virar centro de controle."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A superfície que se dobra para dentro"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A notocorda e tecidos vizinhos induzem o ectoderma dorsal a espessar, formando a placa neural. Essa placa cria pregas, afunda no centro e se fecha como um zíper, formando o tubo neural. O fechamento começa em regiões intermediárias e avança para extremidades chamadas neuroporos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O tubo neural dará origem ao sistema nervoso central: encéfalo e medula espinhal. A crista neural, que se desprende das bordas, migra pelo embrião e forma parte importante do sistema nervoso periférico, além de melanócitos, células da medula adrenal e estruturas craniofaciais."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: tubo neural não é apenas um tubo anatômico. Ele é uma decisão de destino celular: ectoderma externo vira tecido interno de comando."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na porção cranial, o tubo dilata em vesículas encefálicas. Prosencéfalo, mesencéfalo e rombencéfalo organizam territórios que depois se subdividem. Na porção caudal, a medula organiza placas alares sensitivas e placas basais motoras, separando entrada e saída de informação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Depois de fechar e regionalizar, o sistema nervoso precisa povoar suas camadas. Células neuroepiteliais proliferam perto do ventrículo, neurônios migram para posições específicas, axônios crescem em direção a alvos e, mais tarde, células gliais mielinizam circuitos para acelerar condução."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: indução, fechamento, regionalização, migração e mielinização são etapas diferentes; uma criança pode ter problema em qualquer uma delas, com manifestações distintas."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "neurulação",
+      "origem": "do grego neuron, nervo, associado ao sufixo latino de processo -ção",
+      "significado": "processo de formação do tubo neural",
+      "explicacao": "A palavra não nomeia apenas o surgimento de neurônios; ela marca a dobra embrionária que cria o eixo do sistema nervoso central."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "rede elétrica",
+      "conteudo": "Pense numa cidade recebendo sua central elétrica e seus cabos principais. A placa neural é o terreno reservado, o tubo neural é o túnel central de distribuição, as vesículas são subestações regionais, a crista neural são equipes móveis que levam componentes para bairros distantes. A analogia quebra porque neurônios não apenas conduzem energia: eles processam informação e mudam com a experiência."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se o neuroporo posterior não fechasse corretamente?",
+      "resposta": "A medula e os arcos vertebrais posteriores poderiam ficar mal protegidos, resultando em defeitos do tubo neural como espinha bífida. A falha de um fechamento precoce se traduziria em alteração anatômica e neurológica duradoura."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Da placa neural ao tubo neural",
+      "descricao": "Sequência mostrando ectoderma induzido, placa neural, pregas neurais, fechamento do tubo, crista neural migrando e início das vesículas encefálicas.",
+      "prompt_ia": "Diagrama embriológico em português, fundo neutro, sequência em cinco quadros; destacar notocorda, placa neural, pregas neurais, tubo neural, crista neural, neuroporos e vesículas encefálicas; setas claras e cores por tecido.",
+      "origem": "ia"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse bloco é a porta de entrada para vesículas encefálicas, histogênese da medula, córtex, mielinização e malformações. Em todos eles, a pergunta será a mesma: qual etapa da construção neural foi interrompida?"
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-embr-04-000",
+        "titulo": "Embriologia de Sistemas (Organogênese) — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "A organogênese geral explica como folhetos se transformam em sistemas e por que o ectoderma pode originar tecido neural."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Defeitos do tubo neural",
+        "mecanismo_conexao": "Falhas de fechamento dos neuroporos explicam espinha bífida e anencefalia.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Mielinização e maturação nervosa",
+        "mecanismo_conexao": "Depois de formar o tubo e migrar neurônios, o sistema precisa maturar circuitos por glia e mielina.",
+        "confianca": "consenso_didatico"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-embr-04-060-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é a sequência causal básica da neurulação?",
+      "resposta": "Notocorda induz ectoderma dorsal, forma-se placa neural, surgem pregas neurais, ocorre fechamento em tubo neural, e a crista neural se desprende e migra.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "embriologia"
+      ]
+    },
+    {
+      "card_id": "s1-embr-04-060-fc02",
+      "tipo": "comparacao",
+      "pergunta": "Compare tubo neural e crista neural pelo destino principal.",
+      "resposta": "O tubo neural forma sistema nervoso central, como encéfalo e medula; a crista neural migra e contribui para sistema nervoso periférico, melanócitos, medula adrenal e estruturas craniofaciais.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "embriologia"
+      ]
+    },
+    {
+      "card_id": "s1-embr-04-060-fc03",
+      "tipo": "contrafactual",
+      "pergunta": "O que acontece se uma etapa de fechamento neural falha?",
+      "resposta": "A arquitetura protetora e nervosa pode ficar aberta ou incompleta, gerando defeitos do tubo neural com impacto motor, sensitivo e ortopédico.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "embriologia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-embr-04-060-caso01",
+      "titulo": "Defeito aberto na coluna fetal",
+      "apresentacao": "Ultrassom morfológico identifica abertura posterior lombossacra com tecido neural exposto e alterações de membros inferiores. A gestante pergunta por que isso ocorreu tão cedo.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Falha precoce de fechamento do neuroporo posterior durante a neurulação."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Tubo neural caudal e arcos vertebrais posteriores associados."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Medula e meninges ficam mal protegidas, com exposição neural e alteração de circuitos motores e sensitivos."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Achado ultrassonográfico de defeito aberto, possível redução de movimento dos membros inferiores e alterações associadas."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A falha pode gerar deficiência neurológica permanente, hidrocefalia associada e necessidade de cuidado multidisciplinar."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que o sistema nervoso nasce por fechamento do ectoderma; quando esse fechamento falha, a anatomia da coluna e a função neural mudam juntas.",
+      "disciplinas_relacionadas": [
+        "embriologia",
+        "neurologia",
+        "obstetrícia",
+        "pediatria"
+      ],
+      "diagnostico_revelado": "Defeito do tubo neural, como mielomeningocele.",
+      "tratamento_resumido": "Acompanhamento em medicina fetal, planejamento de parto, neurocirurgia, reabilitação e prevenção em gestações futuras com ácido fólico conforme orientação médica."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-embr-04-060-img01",
+        "url": null,
+        "prompt_ia": "Diagrama embriológico em português, fundo neutro, sequência em cinco quadros; destacar notocorda, placa neural, pregas neurais, tubo neural, crista neural, neuroporos e vesículas encefálicas; setas claras e cores por tecido.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Moore KL, Persaud TVN, Torchia MG. Embriologia Clínica. 11ª ed. Elsevier.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Sadler TW. Langman Embriologia Médica. 15ª ed. Wolters Kluwer.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "processo/cronologia",
     "morfologia"

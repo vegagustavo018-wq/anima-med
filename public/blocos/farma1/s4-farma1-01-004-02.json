@@ -5,50 +5,340 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "O Sistema Citocromo P450 (CYP450)",
+    "subtitulo": "Como o fígado decide, em segundos, se um fármaco vira lixo ou continua ativo?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "biotransformacao",
+      "metabolismo-de-farmacos",
+      "cyp450",
+      "farmacocinetica",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Famílias CYP; principais isoformas; centralidade no metabolismo de fármacos",
-  "narrativa": [],
+  "resumo_conciso": "Todo fármaco que entra no corpo é, do ponto de vista do organismo, uma molécula estranha que precisa ser neutralizada e eliminada — mas a maioria dos fármacos é lipofílica o suficiente para atravessar membranas e, por isso, resiste à excreção renal direta. O problema é como transformar uma molécula gordurosa, capaz de se esconder no tecido adiposo e nas membranas celulares, em algo hidrossolúvel o bastante para ser filtrado pelo rim e sair na urina. A solução evolutiva foi um sistema enzimático capaz de \"atacar\" praticamente qualquer estrutura química, inserindo um átomo de oxigênio reativo na molécula do fármaco e expondo ou criando um grupamento polar. Esse sistema é o citocromo P450 (CYP450), uma superfamília de hemeproteínas ancoradas no retículo endoplasmático liso dos hepatócitos, organizadas em famílias e subfamílias (CYP1, CYP2, CYP3...) conforme a semelhança da sequência de aminoácidos. Cada isoforma tem um bolso catalítico com preferência por certos formatos moleculares, o que explica por que um mesmo fármaco pode ser metabolizado por uma enzima específica enquanto outro fármaco, estruturalmente diferente, precisa de outra. A CYP3A4 sozinha processa a maior fatia dos fármacos usados na clínica, e por isso está no centro da maioria das interações medicamentosas por indução ou inibição enzimática. Entender esse sistema — suas famílias, suas isoformas principais e por que ele é a via metabólica mais relevante da farmacologia clínica — é pré-requisito para prever quase toda interação medicamento-medicamento que o futuro médico vai encontrar na prática.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Um paciente toma um comprimido de um fármaco lipofílico ao meio-dia. Se nada acontecesse com essa molécula, ela se distribuiria pelas membranas do corpo, se acumularia no tecido adiposo e circularia por dias, porque o rim — o principal órgão excretor — só consegue filtrar eficientemente moléculas hidrossolúveis. Uma molécula gordurosa filtrada no glomérulo é reabsorvida de volta para o sangue ao passar pelo túbulo renal, simplesmente porque atravessa a membrana da célula tubular com facilidade. O organismo teria, então, um problema seríssimo: substâncias estranhas lipofílicas que nunca saem."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso vale tanto para toxinas vegetais que nossos ancestrais ingeriam quanto para os fármacos sintéticos que a medicina moderna administra. O corpo precisava de uma solução química genérica, capaz de lidar com uma variedade quase infinita de estruturas moleculares diferentes — porque não dá para ter uma enzima específica para cada uma das dezenas de milhares de substâncias estranhas possíveis."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: tornar a molécula hidrossolúvel"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A saída encontrada pela evolução foi um sistema enzimático capaz de modificar quimicamente a molécula estranha, adicionando ou expondo um grupamento polar (uma hidroxila, por exemplo) que a torna mais hidrossolúvel. Uma vez mais polar, a molécula filtrada no rim não é reabsorvida de volta — ela sai na urina. O mesmo princípio vale para a bile, outra via de eliminação que também prefere moléculas mais polares ou conjugadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse processo de modificação química acontece majoritariamente no fígado, o órgão com maior fluxo sanguíneo relativo dedicado à filtragem química do plasma, e concentra-se numa organela específica do hepatócito: o retículo endoplasmático liso. É ali que mora a maquinaria enzimática responsável pela reação de fase I — como já visto no bloco anterior sobre biotransformação, a etapa que costuma preceder a conjugação de fase II."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema é que fármacos lipofílicos não são eliminados eficientemente pelo rim. A solução é uma maquinaria enzimática hepática que torna essas moléculas mais polares. Essa maquinaria tem nome, família e mecanismo — é isso que vem a seguir."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma alfândega com dezenas de guichês"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O sistema citocromo P450 é uma superfamília de hemeproteínas — enzimas que carregam um grupo heme (o mesmo tipo de estrutura que carrega ferro na hemoglobina) no seu centro catalítico. Esse ferro do heme é o que permite à enzima manipular oxigênio molecular de forma controlada. As CYPs ficam ancoradas na membrana do retículo endoplasmático liso dos hepatócitos, embora também existam em menor quantidade no epitélio intestinal, nos pulmões e nos rins. Essa superfamília é organizada por uma nomenclatura baseada em semelhança genética: o número indica a **família** (CYP1, CYP2, CYP3...; enzimas com mais de 40% de identidade de sequência de aminoácidos), a letra indica a **subfamília** (CYP2C, CYP2D, CYP2E...; mais de 55% de identidade) e o número final identifica a **isoforma individual** (CYP3A4, CYP2D6, CYP2C9...)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada uma dessas dezenas de isoformas tem um bolso catalítico com geometria e polaridade próprias — e é essa diferença de bolso, não a família em si, que determina qual formato de molécula cada uma reconhece. A **CYP3A4** é a mais importante quantitativamente: sozinha, participa do metabolismo de uma fração estimada entre 30% e 50% dos fármacos usados na clínica (Brunton & Knollmann, 2023), incluindo estatinas, bloqueadores de canais de cálcio, imunossupressores e muitos antirretrovirais."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: a CYP3A4 é a isoforma mais importante do metabolismo de fármacos porque processa a maior fração de moléculas usadas na clínica — e por isso é o alvo mais comum de interações medicamentosas por indução ou inibição enzimática."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Enquanto a CYP3A4 domina em volume, a **CYP2D6** metaboliza um número menor de fármacos em termos absolutos, mas importa menos pela quantidade e mais pela variabilidade genética individual: é altamente polimórfica, e variantes genéticas fazem alguns pacientes serem metabolizadores lentos e outros, ultrarrápidos, do mesmo fármaco (como certos opioides e antidepressivos) — é essa diferença que explica por que a mesma dose pode ser ineficaz num paciente e tóxica em outro. A **CYP2C9** processa varfarina e vários anti-inflamatórios não esteroidais, e a **CYP1A2** metaboliza cafeína e alguns antipsicóticos. Cada isoforma é, na prática, um bolso enzimático com preferências químicas próprias, não um sistema único e intercambiável."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o mecanismo funciona, passo a passo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A reação central catalisada pelas CYPs é uma monooxigenação: a enzima pega uma molécula de oxigênio (O₂), usa um átomo de oxigênio para oxidar o fármaco e libera o outro átomo como água. O resultado típico é a inserção de uma hidroxila (-OH) na estrutura do fármaco — um grupamento polar que não existia ali antes."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Ciclo catalítico simplificado do citocromo P450",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Ligação do substrato",
+          "explicacao": "A molécula do fármaco (o substrato) encaixa no bolso catalítico da isoforma CYP específica, próximo ao ferro do grupo heme. O encaixe depende da forma e da polaridade da molécula — é por isso que cada isoforma tem um espectro próprio de substratos."
+        },
+        {
+          "numero": 2,
+          "titulo": "Doação de elétrons",
+          "explicacao": "Uma enzima parceira, a NADPH-citocromo P450 redutase, doa elétrons vindos do NADPH ao ferro do heme, reduzindo-o e permitindo que ele se ligue ao oxigênio molecular."
+        },
+        {
+          "numero": 3,
+          "titulo": "Ativação do oxigênio",
+          "explicacao": "O ferro reduzido liga o O₂, e uma segunda doação de elétrons ativa esse oxigênio, quebrando a ligação entre os dois átomos de oxigênio de forma controlada — um deles vai virar água, o outro vai atacar o substrato."
+        },
+        {
+          "numero": 4,
+          "titulo": "Inserção do oxigênio no substrato",
+          "explicacao": "O átomo de oxigênio ativado é inserido diretamente na molécula do fármaco, tipicamente formando uma hidroxila. É aqui que a molécula lipofílica ganha o grupamento polar que faltava."
+        },
+        {
+          "numero": 5,
+          "titulo": "Liberação do metabólito",
+          "explicacao": "O fármaco agora hidroxilado — mais polar, menos lipofílico — se desliga do bolso catalítico. Esse metabólito de fase I pode já ser eliminado diretamente ou seguir para a conjugação de fase II já estudada no bloco anterior."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É importante notar que essa hidroxilação nem sempre desativa o fármaco. Em alguns casos, o metabólito gerado pela CYP é igualmente ativo, mais ativo (é o caso de pró-fármacos, que só se tornam terapêuticos depois de metabolizados) ou até tóxico. O CYP450 não é uma via de 'destruição' — é uma via de **transformação química**, e o resultado farmacológico depende de qual molécula específica sai do outro lado."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Uma paciente em uso estável de sinvastatina (metabolizada pela CYP3A4) inicia cetoconazol oral para uma micose sistêmica. O cetoconazol inibe fortemente a CYP3A4 em questão de horas. Sem a enzima disponível para metabolizar a sinvastatina, a concentração plasmática do fármaco sobe, aumentando o risco de rabdomiólise — uma reação adversa grave que, nesse cenário, decorre puramente de uma interação farmacocinética, sem qualquer alteração na dose prescrita. O mecanismo completo de indução e inibição enzimática será aprofundado no próximo bloco, mas o caso já mostra por que a CYP3A4 é o ponto de maior risco em pacientes polimedicados."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Onde esse sistema pega fogo na clínica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O CYP450 é o ponto de maior alavancagem das interações medicamentosas em farmacocinética. Um fármaco pode ser **indutor** enzimático (aumenta a quantidade de determinada CYP ao longo de dias, acelerando o metabolismo de outros fármacos que dependem da mesma isoforma) ou **inibidor** enzimático (bloqueia a atividade catalítica em horas, fazendo outros fármacos se acumularem). Rifampicina é indutora clássica de CYP3A4; cetoconazol e o suco de toranja (grapefruit) são inibidores clássicos da mesma isoforma. Essas duas possibilidades — indução e inibição — serão o tema de um bloco específico sobre interações medicamentosas via CYP450, porque merecem tratamento próprio."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O sistema também se conecta diretamente com a farmacogenética: variantes genéticas nas isoformas (especialmente CYP2D6 e CYP2C19) explicam por que a mesma dose do mesmo fármaco produz respostas clínicas muito diferentes entre pacientes — de ausência de efeito a toxicidade grave. E se articula com a fase II do metabolismo hepático, já estudada no bloco anterior, que frequentemente processa o metabólito já hidroxilado pela CYP antes da excreção final."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "citocromo P450",
+      "origem": "do grego kýtos (célula) + chrôma (cor); P450 do inglês 'pigment absorbing at 450 nanometers'",
+      "significado": "'pigmento celular que absorve luz a 450 nanômetros'",
+      "explicacao": "O nome vem de uma observação espectrofotométrica dos anos 1960: quando o pigmento (o heme dessa enzima) se liga ao monóxido de carbono, o complexo ferro-CO resultante absorve luz num comprimento de onda característico — 450 nanômetros — distinto do padrão visto em outros citocromos conhecidos na época, como os citocromos b e c. O nome não descreve função nem estrutura: descreve um artefato de laboratório que permitiu identificar a enzima antes mesmo de se entender o que ela fazia. É outro exemplo, comum na história da farmacologia, de um nome que nasce da técnica de descoberta e sobrevive muito depois de a função ser esclarecida."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🛃",
+      "conteudo": "Pense no CYP450 como uma alfândega gigante, com dezenas de guichês especializados (as isoformas). Cada guichê tem um funcionário treinado para lidar com um tipo específico de bagagem — um lida melhor com malas grandes e lisas (CYP3A4, o guichê mais movimentado, que atende à maior fila), outro é especialista em pacotes pequenos e específicos (CYP2D6). O trabalho de cada funcionário é 'carimbar' a bagagem (inserir o oxigênio) de um jeito que ela passe a ser aceita na saída do país (a excreção renal). A analogia tem um limite claro: na alfândega real, o carimbo é só burocracia — não muda o conteúdo da mala. No CYP450, o 'carimbo' químico é mais do que isso: ele pode transformar uma molécula inofensiva em um metabólito tóxico, ou ativar um pró-fármaco que antes não fazia nada. A alfândega não fabrica bagagem; a enzima, sim, fabrica uma molécula nova."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Árvore de nomenclatura do sistema CYP450",
+      "descricao": "Esquema didático mostrando a hierarquia 'CYP' → famílias (CYP1, CYP2, CYP3) → subfamílias (CYP2C, CYP2D, CYP2E) → isoformas específicas (CYP3A4, CYP2D6, CYP2C9, CYP1A2), com um ícone de fígado destacando onde essas enzimas residem predominantemente (retículo endoplasmático liso do hepatócito). Cores diferenciando cada nível hierárquico (família/subfamília/isoforma). Fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Diagrama de árvore hierárquica com o rótulo 'CYP450' no topo, ramificando em três caixas coloridas de 'família' (CYP1, CYP2, CYP3), cada uma ramificando em caixas menores de 'subfamília' (ex: CYP2C, CYP2D, CYP2E) e depois em caixas ainda menores de 'isoforma' (CYP3A4, CYP2D6, CYP2C9, CYP1A2), com um pequeno ícone estilizado de fígado ao lado indicando a localização predominante no retículo endoplasmático liso do hepatócito. Legendas em português, cores suaves e distintas para cada nível hierárquico, alto contraste, sem elementos fotorrealistas, composição única e limpa."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Ciclo catalítico do citocromo P450",
+      "descricao": "Esquema didático do ciclo catalítico simplificado em 5 setas circulares numeradas mostrando substrato entrando no bolso enzimático com heme central (ferro em destaque), ligação de O2, ativação, inserção de OH no substrato e saída do metabólito hidroxilado, com rótulo indicando liberação de H2O. Fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Ciclo catalítico circular com exatamente 5 etapas numeradas em setas curvas dispostas em círculo: (1) molécula de substrato lipofílico entrando em um bolso enzimático com um grupo heme central destacado (anel com átomo de ferro em evidência), (2) seta mostrando doação de elétrons e ligação de O2, (3) seta mostrando ativação do oxigênio, (4) seta mostrando inserção de um grupo hidroxila (-OH) na molécula do substrato, (5) seta final mostrando metabólito hidroxilado saindo do bolso e uma molécula de água (H2O) sendo liberada ao lado. Legendas curtas em português para cada etapa, cores suaves e distintas, alto contraste, sem texto excessivo, sem elementos fotorrealistas, composição única focada apenas no ciclo."
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-004-02-fc01",
+      "pergunta": "Por que fármacos lipofílicos não conseguem ser eliminados eficientemente pelo rim sem antes passar por biotransformação?",
+      "resposta": "Porque o rim elimina por filtração glomerular seguida de reabsorção tubular passiva de qualquer molécula que atravesse facilmente a membrana da célula tubular. Moléculas lipofílicas são filtradas no glomérulo, mas ao passarem pelo túbulo renal são reabsorvidas de volta para o sangue por simples difusão através da membrana lipídica das células tubulares. Sem se tornarem mais polares, essas moléculas circulariam indefinidamente. O CYP450 resolve isso tornando o fármaco hidrossolúvel o suficiente para que a reabsorção tubular não aconteça, permitindo a excreção final na urina.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "cyp450",
+        "farmacocinetica",
+        "excrecao-renal"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-02-fc02",
+      "pergunta": "Explique a lógica da nomenclatura CYP3A4: o que cada símbolo (número, letra, número) representa?",
+      "resposta": "O primeiro número indica a família (CYP3), agrupando enzimas com mais de 40% de identidade de sequência de aminoácidos. A letra indica a subfamília (CYP3A), agrupando enzimas com mais de 55% de identidade dentro da família. O número final identifica a isoforma individual específica (CYP3A4). A nomenclatura é puramente genética/evolutiva — reflete parentesco de sequência, não função compartilhada, embora enzimas do mesmo grupo tendam a ter substratos parecidos.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "cyp450",
+        "nomenclatura",
+        "isoformas"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-02-fc03",
+      "pergunta": "Uma paciente em sinvastatina inicia cetoconazol e desenvolve sinais de toxicidade muscular dias depois, sem mudança de dose. Qual o mecanismo farmacocinético mais provável e por que a CYP3A4, especificamente, está no centro desse tipo de evento?",
+      "resposta": "O cetoconazol é um inibidor potente da CYP3A4, a mesma isoforma que metaboliza a sinvastatina. Com a enzima inibida, a sinvastatina deixa de ser biotransformada no ritmo habitual, sua concentração plasmática sobe e o risco de toxicidade (rabdomiólise) aumenta — sem qualquer alteração na dose prescrita. A CYP3A4 está no centro desse tipo de evento porque metaboliza uma fração muito grande dos fármacos clínicos (30-50%), tornando qualquer inibidor ou indutor dela um risco de interação com múltiplos medicamentos ao mesmo tempo, não apenas um.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "cyp450",
+        "cyp3a4",
+        "interacoes-medicamentosas",
+        "caso-clinico"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-02-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'A biotransformação pelo CYP450 sempre inativa o fármaco, tornando-o farmacologicamente inerte.'",
+      "resposta": "Falso. O CYP450 realiza uma transformação química, não uma destruição. O resultado farmacológico do metabólito depende da molécula específica gerada: em muitos casos o metabólito é de fato inativo, mas em pró-fármacos (como muitos analgésicos e alguns anti-hipertensivos) a metabolização pelo CYP450 é o que ativa a molécula, e em outros casos o metabólito pode ser tão ativo quanto o fármaco original ou até tóxico. Assumir inativação automática é um erro conceitual comum que leva a previsões incorretas sobre duração e intensidade de efeito.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "cyp450",
+        "pro-farmaco",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-004-02-fc05",
+      "pergunta": "Por que a CYP3A4 é considerada a isoforma mais clinicamente relevante do sistema CYP450, mesmo sem ser a única importante?",
+      "resposta": "Porque, isoladamente, participa do metabolismo de uma fração estimada entre 30% e 50% de todos os fármacos usados na prática clínica — a maior fatia entre todas as isoformas conhecidas. Isso a torna o ponto de maior alavancagem para interações medicamentosas: qualquer fármaco que induza ou iniba a CYP3A4 tem potencial de afetar o metabolismo de uma proporção enorme dos medicamentos que um paciente pode estar tomando simultaneamente, o que a coloca no centro da farmacologia clínica de polifarmácia.",
+      "tipo": "clinico",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "cyp450",
+        "cyp3a4",
+        "interacoes-medicamentosas"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-004-02-caso01",
+      "titulo": "Dor muscular progressiva em usuária estável de estatina após tratamento de micose",
+      "apresentacao": "Mulher de 61 anos, em uso de sinvastatina 40 mg/dia há três anos sem intercorrências, procura atendimento com mialgia difusa, fraqueza muscular proximal e urina escurecida, iniciadas cerca de uma semana após começar tratamento com cetoconazol oral para uma onicomicose extensa prescrito por outro profissional. Exames laboratoriais mostram creatinoquinase (CK) muito elevada, muito acima do limite superior da normalidade. A paciente nega qualquer mudança na dose da estatina e nega atividade física intensa recente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Introdução de cetoconazol oral, um dos inibidores mais potentes conhecidos da isoforma CYP3A4, em paciente já em uso crônico e estável de sinvastatina — fármaco cuja eliminação depende quase inteiramente dessa mesma isoforma hepática."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A enzima CYP3A4 do retículo endoplasmático liso dos hepatócitos, responsável pela biotransformação oxidativa da sinvastatina em seus metabólitos inativos, tem sua atividade catalítica bloqueada pelo cetoconazol em questão de horas a poucos dias."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a CYP3A4 inibida, a sinvastatina deixa de ser metabolizada no ritmo habitual. A concentração plasmática do fármaco original sobe muito acima do intervalo terapêutico esperado para a dose prescrita, sem que a dose tenha sido alterada."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O acúmulo de estatina em concentração tóxica lesa diretamente a fibra muscular esquelética, causando mialgia difusa, fraqueza proximal e liberação de conteúdo intracelular muscular (incluindo mioglobina, que escurece a urina) na circulação — quadro de miopatia induzida por estatina evoluindo para rabdomiólise."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem reconhecimento e suspensão imediata de ambos os fármacos, a rabdomiólise pode evoluir para lesão renal aguda por obstrução tubular pela mioglobina, exigindo hidratação vigorosa e, em casos graves, suporte dialítico. O tratamento correto é suspender a estatina e substituir o antifúngico por uma classe que não iniba a CYP3A4, com monitorização de CK e função renal até normalização."
+        }
+      ],
+      "conexao_com_bloco": "Este é exatamente o cenário descrito no highlight do bloco: a CYP3A4 metaboliza uma fração enorme dos fármacos clínicos, e qualquer inibidor potente dela — como o cetoconazol — pode elevar perigosamente a concentração de outro substrato, aqui a sinvastatina. O caso transforma o mecanismo enzimático abstrato (ciclo catalítico, inibição) em um desfecho clínico concreto e grave.",
+      "disciplinas_relacionadas": ["farmacologia", "clínica médica", "nefrologia", "medicina de emergência"],
+      "diagnostico_revelado": "Rabdomiólise por interação medicamentosa farmacocinética entre cetoconazol (inibidor potente de CYP3A4) e sinvastatina (substrato de CYP3A4).",
+      "tratamento_resumido": "Suspensão imediata de ambos os fármacos, hidratação intravenosa vigorosa para proteger a função renal da mioglobina circulante, monitorização seriada de CK, eletrólitos e função renal, e substituição do antifúngico por uma opção que não interfira na CYP3A4 quando o tratamento da onicomicose for retomado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-004-01",
+        "titulo": "Biotransformação de Fármacos — Reações de Fase I e Fase II",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já entender a distinção entre reações de fase I (oxidação, redução, hidrólise) e fase II (conjugação) para situar o CYP450 como a principal maquinaria da fase I."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Indução e inibição enzimática do CYP450 e interações medicamentosas",
+        "mecanismo_conexao": "As isoformas e a centralidade da CYP3A4 descritas aqui são a base necessária para entender como indutores (rifampicina) e inibidores (cetoconazol, suco de toranja) alteram a farmacocinética de outros fármacos.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Farmacogenética e polimorfismos de CYP2D6/CYP2C19",
+        "mecanismo_conexao": "Variantes genéticas nas isoformas CYP2D6 e CYP2C19 explicam metabolizadores lentos, intermediários, extensivos e ultrarrápidos — determinando resposta e toxicidade individualizadas ao mesmo fármaco na mesma dose.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-004-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa (imagem: Árvore de nomenclatura do sistema CYP450) acima.",
+        "status": "pendente"
+      },
+      {
+        "id": "s4-farma1-01-004-02-img02",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa (imagem: Ciclo catalítico do citocromo P450) acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "workflow-anima-s4-pipeline",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "3-juizes+adversarial+integrador (pipeline automatizado ANIMA)",
+    "data_revisao": "2026-07-05",
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw-Hill; 2023. Chapter 6 — Drug Metabolism.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Chapter 4 — Drug Biotransformation.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang & Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 9 — Drug Metabolism and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

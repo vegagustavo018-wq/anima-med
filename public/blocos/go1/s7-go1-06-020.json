@@ -4,49 +4,236 @@
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Cervicites e Uretrites — Gonorreia e Clamídia",
+    "titulo": "Cervicites e Uretrites - Gonorreia e Clamidia",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "infeccoes-genitais",
+      "ist",
+      "mecanismo",
+      "clinica",
+      "conduta"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Neisseria gonorrhoeae e Chlamydia; corrimento cervical; tratamento duplo",
-  "narrativa": [],
+  "resumo_conciso": "Cervicite e uretrite por Chlamydia trachomatis e Neisseria gonorrhoeae podem causar secreção mucopurulenta, disúria, sangramento pós-coito e complicações como DIP; diagnóstico por NAAT e tratamento de parcerias são centrais.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Cervicite é inflamação do colo uterino, frequentemente associada a Chlamydia trachomatis e Neisseria gonorrhoeae. Pode ser assintomática ou causar corrimento, sangramento pós-coito, dispareunia e dor pélvica leve."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ao exame, secreção endocervical mucopurulenta e colo friável que sangra ao toque sustentam suspeita. Uretrite pode dar disúria, prurido uretral e secreção, especialmente em homens."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "NAAT é o teste preferido para clamídia e gonorreia em amostras adequadas. Diagnóstico etiológico permite tratar corretamente, rastrear parcerias e notificar conforme regras locais."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando não há teste imediato e o risco é alto, tratamento empírico pode ser necessário para cobrir gonorreia e clamídia. A escolha de antimicrobianos deve seguir protocolo vigente, pois resistência gonocócica muda condutas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Complicações em mulheres incluem DIP, dor pélvica crônica, infertilidade tubária e gestação ectópica. Em gestantes, clamídia e gonorreia também têm implicações neonatais."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Parcerias recentes devem ser avaliadas e tratadas conforme protocolo; a paciente deve evitar relação até ela e parceiros completarem tratamento. Retestagem é importante por risco de reinfecção."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Toda cervicite é oportunidade de prevenção: testagem de HIV, sífilis e outras ISTs conforme risco, vacinação, preservativo e conversa sobre consentimento e segurança."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-05-000",
+        "titulo": "Modulo 5 - Miomatose Uterina e Tumores Benignos",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-022",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Sifilis Genital - Cancro Duro",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-026",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Bartolinite e Abscesso de Bartholin",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-06-030",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Doenca Inflamatoria Pelvica - Visao de Conjunto",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN"
+      },
+      {
+        "bloco_id": "s7-go1-04-003",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Apresentacao Clinica da Endometriose - As Tres Dismenorreias"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-06-020-fc-01",
+      "pergunta": "Quais agentes clássicos de cervicite/uretrite?",
+      "resposta": "Chlamydia trachomatis e Neisseria gonorrhoeae.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-020-fc-02",
+      "pergunta": "Qual teste é preferido?",
+      "resposta": "NAAT para clamídia e gonorreia.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-020-fc-03",
+      "pergunta": "Por que resistência importa na gonorreia?",
+      "resposta": "Porque muda esquemas terapêuticos e torna essencial seguir protocolo atualizado.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-06-020-fc-04",
+      "pergunta": "Qual complicação reprodutiva preocupa?",
+      "resposta": "DIP, infertilidade tubária e gestação ectópica.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-06-020-cc-01",
+      "titulo": "Sangramento pós-coito",
+      "apresentacao": "Mulher de 21 anos com nova parceria relata sangramento pós-coito. Exame mostra secreção mucopurulenta cervical e colo friável.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Cervicite e uretrite por Chlamydia trachomatis e Neisseria gonorrhoeae podem causar secreção mucopurulenta, disúria, sangramento pós-coito e complicações como DIP; diagnóstico por NAAT e tratamento de parcerias são centrais."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Cervicites e Uretrites - Gonorreia e Clamidia, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Cervicite e uretrite por Chlamydia trachomatis e Neisseria gonorrhoeae podem causar secreção mucopurulenta, disúria, sangramento pós-coito e complicações como DIP; diagnóstico por NAAT e tratamento de parcerias são centrais."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 21 anos com nova parceria relata sangramento pós-coito. Exame mostra secreção mucopurulenta cervical e colo friável."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Quais agentes devem ser testados/tratados conforme risco? Clamídia e gonorreia, com NAAT e tratamento empírico se risco alto ou retorno incerto."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Clamídia e gonorreia, com NAAT e tratamento empírico se risco alto ou retorno incerto.",
+      "tratamento_resumido": "Clamídia e gonorreia, com NAAT e tratamento empírico se risco alto ou retorno incerto."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Fluxograma de cervicite: secreção cervical, NAAT para clamídia/gonorreia, tratamento, parcerias e prevenção de DIP.",
+        "alt": "Ilustracao educacional para Cervicites e Uretrites - Gonorreia e Clamidia"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "CDC STI Treatment Guidelines",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Bacterial Vaginosis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/bv.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Vulvovaginal Candidiasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Trichomoniasis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Urethritis and Cervicitis",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/urethritis-and-cervicitis.htm",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "CDC - Genital Ulcer Disease",
+      "url": "https://www.cdc.gov/std/treatment-guidelines/genital-ulcers.htm",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica",

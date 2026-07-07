@@ -1,54 +1,206 @@
 {
+  "metadata": {
+    "titulo": "Via JAK-STAT",
+    "subtitulo": "Como a célula traduz mensagens de citocinas em ordens nucleares?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 10,
+    "nivel": "CORE",
+    "tags": [
+      "sinalização",
+      "citocinas",
+      "JAK-STAT",
+      "biologia molecular",
+      "JAK2"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "A via JAK-STAT é o canal de comunicação direto entre a superfície celular e o genoma, essencial para a resposta imune e a hematopoiese. Diferente de receptores que dependem de segundos mensageiros complexos, esta via utiliza proteínas tirosina-quinases associadas ao receptor para fosforilar fatores de transcrição latentes, que migram diretamente ao núcleo. O entendimento deste mecanismo é a chave para compreender como mutações na quinase JAK2 desencadeiam neoplasias mieloproliferativas, demonstrando a fragilidade do controle de proliferação celular quando o 'interruptor' molecular perde sua regulação.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, discutimos como receptores de membrana captam sinais externos. Mas imagine o desafio: uma citocina chega na membrana, mas o destino da ordem é um gene específico no núcleo. Como a célula evita o 'telefone sem fio' e garante que a mensagem chegue intacta e rápida? A solução evolutiva foi criar um sistema de relé molecular que não depende de cascatas enzimáticas longas, mas de uma ativação direta e quase imediata."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula evita o ruído na comunicação de longa distância?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta reside na parceria entre quinases e fatores de transcrição. Quando o ligante (citocina) se liga ao receptor, ele induz uma mudança conformacional que aproxima proteínas quinases específicas, que estavam 'adormecidas' ancoradas na cauda citoplasmática do receptor. Essas quinases não apenas se ativam, mas fosforilam o próprio receptor e, em seguida, os fatores de transcrição que esperam logo abaixo, prontos para a ação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esses fatores, uma vez fosforilados, perdem sua afinidade com o citoplasma, dimerizam-se e expõem sinais de localização nuclear. Eles entram no núcleo como um comando 'pronto para uso', ligando-se a sequências específicas de DNA para induzir a transcrição de genes que controlam proliferação, sobrevivência ou diferenciação celular."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Imagine um sistema de intercomunicação em um grande prédio (a célula). O ligante (citocina) é um mensageiro que toca a campainha (receptor). A quinase (JAK) é o segurança na porta que, ao ser acionado, carimba um documento (fator STAT). O documento carimbado (STAT fosforilado) tem passe livre para subir ao escritório central (núcleo) e entregar a ordem de serviço. Mapeamento: Citocina = Mensageiro, Receptor = Campainha, JAK = Segurança/Quinase, STAT = Documento/Fator de transcrição, Núcleo = Escritório central."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A via JAK-STAT é notável por ser uma via de sinalização 'curta': a proteína que recebe o sinal na membrana é a mesma que, após modificação, atua como fator de transcrição no núcleo, eliminando a necessidade de segundos mensageiros citosólicos."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire. Perceba a elegância: a célula economiza energia e tempo ao não precisar ativar proteínas intermediárias (como o AMP cíclico ou o IP3). É uma via de 'transdução direta'."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "JAK-STAT",
+      "origem": "Grego e Inglês",
+      "significado": "Janus Kinase - Signal Transducer and Activator of Transcription",
+      "explicacao": "JAK vem de 'Janus', o deus romano de duas faces, pois a quinase possui dois domínios catalíticos funcionais. STAT é o acrônimo para a função biológica: o tradutor do sinal que vira ativador da transcrição."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria se a proteína JAK perdesse sua capacidade de se desativar (mutação ganho de função)?",
+      "resposta": "A sinalização permaneceria 'ligada' permanentemente, mesmo sem a presença de citocinas. Isso forçaria a célula a proliferar continuamente, um marco fundamental das neoplasias mieloproliferativas."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Esquema da Via JAK-STAT",
+      "descricao": "Diagrama mostrando a ligação da citocina ao receptor, a ativação das quinases JAK, a fosforilação dos STATs, sua dimerização e translocação para o núcleo.",
+      "prompt_ia": "Scientific diagram of the JAK-STAT signaling pathway. Cell membrane with a cytokine receptor dimer. Two JAK kinases attached to the cytoplasmic tails. STAT proteins shown as cytosolic monomers getting phosphorylated by JAKs, then dimerizing and entering the cell nucleus. Clean, minimalist vector style, high contrast, professional medical illustration.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-05-003-05-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Por que a via JAK-STAT é considerada mais 'direta' que a via de receptores acoplados à proteína G?",
+      "resposta": "Porque ela não utiliza segundos mensageiros (como cAMP ou IP3) para propagar o sinal. O próprio fator de transcrição (STAT) é o componente que recebe a modificação química e migra ao núcleo, encurtando o caminho entre a membrana e o gene.",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "sinalização",
+        "comparação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-05-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "Se uma célula possuísse inibidores constitutivos das fosfatases que atuam sobre o STAT, qual seria o resultado fisiológico?",
+      "resposta": "Haveria um acúmulo de STAT fosforilado no núcleo, resultando em ativação gênica descontrolada e possível hiperplasia ou transformação neoplásica, pois a célula perderia a capacidade de 'desligar' o sinal.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "regulação",
+        "neoplasia"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-05-fc03",
+      "tipo": "etimologia",
+      "pergunta": "Por que a quinase da via foi batizada de 'Janus' (JAK)?",
+      "resposta": "Referência ao deus romano Jano, que possuía duas faces. A proteína possui um domínio quinase ativo e um domínio pseudocinase que regula a atividade, funcionando como uma 'dupla face' enzimática.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "etimologia"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-05-fc04",
+      "tipo": "por_que",
+      "pergunta": "Por que a dimerização dos STATs é um passo obrigatório antes da entrada no núcleo?",
+      "resposta": "A fosforilação expõe domínios de ligação específicos (domínios SH2) que permitem que os monômeros se unam. A forma dimérica é a única configuração capaz de reconhecer e se ligar aos elementos responsivos no DNA nuclear.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "mecanismo"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-05-fc05",
+      "tipo": "clinico",
+      "pergunta": "Como a mutação JAK2 V617F exemplifica um erro no controle de sinalização?",
+      "resposta": "Essa mutação cria uma ativação constitutiva da quinase. A proteína JAK2 torna-se independente da citocina para ser ativada, mantendo o STAT perpetuamente fosforilado e levando a uma proliferação excessiva de células sanguíneas (mieloproliferação).",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "patologia",
+        "JAK2"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-05-003-05-caso01",
+      "titulo": "O mistério da contagem sanguínea elevada",
+      "apresentacao": "Paciente de 55 anos, queixa-se de prurido após banho quente e fadiga. Hemograma revela aumento acentuado de hemácias, leucócitos e plaquetas (pan-mielose). O médico suspeita de uma neoplasia mieloproliferativa.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação pontual no gene JAK2 (V617F)."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Domínio pseudocinase da enzima JAK2."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Ativação constitutiva da quinase, independente de citocinas (como a eritropoietina)."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Proliferação clonal descontrolada de precursores hematopoiéticos."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Policitemia e sintomas associados ao aumento da viscosidade sanguínea."
+        }
+      ],
+      "diagnostico_revelado": "Policitemia Vera",
+      "tratamento_resumido": "Inibidores de JAK (como ruxolitinibe) ou flebotomia terapêutica para controle do hematócrito.",
+      "conexao_com_bloco": "Este caso ilustra como o desequilíbrio na via de sinalização JAK-STAT, que discutimos no bloco, se traduz diretamente em doença clínica.",
+      "disciplinas_relacionadas": [
+        "hematologia",
+        "biologia molecular",
+        "patologia"
+      ]
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-03-001",
+        "titulo": "Citoesqueleto — Panorama e Lógica dos Três Sistemas",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Conhecer a estrutura de receptores transmembrana é essencial para entender onde a JAK se ancora."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Inibidores de JAK na Oncologia",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "O bloqueio farmacológico da quinase impede a sinalização STAT, servindo como base para terapias direcionadas em cânceres hematológicos.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Via MAPK/ERK",
+        "explicacao": "Enquanto a via JAK-STAT é direta, a via MAPK envolve múltiplos intermediários citosólicos, demonstrando diferentes estratégias de sinalização celular."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-05-003-05",
   "no_pai_id": "s1-biocel-05-003",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Via JAK-STAT",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Sinalização de citocinas; JAK2 V617F nas mieloproliferativas",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

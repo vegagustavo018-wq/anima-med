@@ -5,48 +5,319 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Receptores Acoplados a Proteína G (GPCR)",
+    "subtitulo": "Como uma proteína com sete voltas na membrana virou o alvo de quase um terço dos fármacos que existem?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "gpcr",
+      "receptores",
+      "proteina-g",
+      "segundo-mensageiro",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Sete domínios; segundos mensageiros; tempo de resposta intermediário",
-  "narrativa": [],
+  "resumo_conciso": "Você já sabe que todo receptor é uma sentinela acoplada a um interruptor: reconhece um mensageiro do lado de fora e transmite esse reconhecimento para dentro da célula. O receptor acoplado a proteína G (GPCR) é a família que resolve essa transmissão da forma mais indireta e mais versátil das quatro: em vez de ser ele mesmo um canal ou uma enzima, o GPCR atravessa a membrana sete vezes e, ao mudar de forma, aciona uma proteína intermediária — a proteína G — que por sua vez gera um segundo mensageiro dentro do citoplasma. Essa indireção tem um custo (a resposta demora um pouco mais para aparecer, tipicamente segundos) e um benefício enorme (um único receptor ativado pode amplificar o sinal centenas de vezes através da cascata de segundos mensageiros, e a mesma família consegue produzir respostas completamente diferentes — excitação, inibição, secreção — trocando apenas qual proteína G está acoplada). É a maior família de receptores do genoma humano e o alvo de cerca de 30% de todos os fármacos atualmente em uso, do salbutamol ao losartana, do omeprazol a boa parte dos antipsicóticos.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior você viu que todo receptor precisa fazer duas coisas: reconhecer um mensageiro específico e converter esse reconhecimento em sinal interno. O que ainda não foi respondido é: convertido *como*? Existem pelo menos quatro rotas possíveis, e a mais comum de todas — tanto na fisiologia do corpo humano quanto na farmacologia clínica — é a que passa por uma proteína intermediária chamada proteína G."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema que essa família resolve"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pense na quantidade de mensageiros que uma célula precisa reconhecer ao mesmo tempo: adrenalina, acetilcolina, histamina, serotonina, dezenas de hormônios peptídicos, até fótons de luz e moléculas de cheiro. Um esquema de transdução em que o próprio receptor tivesse que ser um canal iônico específico, ou uma enzima específica, para cada um desses mensageiros exigiria uma variedade estrutural enorme e pouco reaproveitável."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Existe também um segundo problema, de amplitude: em muitas situações fisiológicas, uma quantidade minúscula de mensageiro (poucas moléculas de hormônio circulando) precisa provocar um efeito celular grande e sustentado — uma célula do fígado precisa mobilizar uma quantidade enorme de glicose a partir de um sinal hormonal fraco e passageiro. Reconhecimento direto, sem amplificação, não dá conta disso."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar antes de seguir: o GPCR resolve dois problemas ao mesmo tempo — permitir que uma família estrutural única sirva a dezenas de mensageiros diferentes, e permitir que um sinal fraco na membrana vire uma resposta grande dentro da célula. A peça central que resolve ambos é a proteína intermediária que dá nome à família."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O GPCR é uma única cadeia proteica que atravessa a membrana plasmática **sete vezes** — sete hélices transmembrana conectadas por alças extracelulares e intracelulares. É essa arquitetura que dá à família seu outro nome comum, receptor de sete domínios transmembrana (7TM). A porção extracelular e as alças voltadas para fora formam o sítio de ligação do mensageiro; a face intracelular, sobretudo a terceira alça e a cauda citoplasmática, é a região que interage com a proteína G."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A proteína G, que dá nome à família, é um complexo de três subunidades (alfa, beta e gama) que fica ancorado à face interna da membrana, ao lado do receptor, mesmo sem nenhum mensageiro presente. Ela é chamada de proteína G porque a subunidade alfa se liga a nucleotídeos de guanina — GDP em repouso, GTP quando ativada. Existem várias famílias de subunidade alfa (Gs, Gi, Gq, entre outras), e é a identidade dessa subunidade que determina qual segundo mensageiro será produzido e se o efeito final será de estímulo ou de inibição."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, passo a passo"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Da ligação do mensageiro ao efeito celular",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Ligante encontra o receptor",
+          "explicacao": "Um hormônio, neurotransmissor ou fármaco encaixa no sítio de ligação formado pela porção extracelular e pelas alças do receptor de sete domínios transmembrana, com a mesma exigência de complementaridade geométrica de qualquer alvo molecular."
+        },
+        {
+          "numero": 2,
+          "titulo": "Mudança conformacional do receptor",
+          "explicacao": "A ligação reorganiza a posição relativa das sete hélices transmembrana, alterando principalmente a face intracelular do receptor — a região que vai encostar na proteína G."
+        },
+        {
+          "numero": 3,
+          "titulo": "Ativação da proteína G",
+          "explicacao": "O receptor ativado funciona como um catalisador: encosta na subunidade alfa da proteína G e provoca a troca de GDP por GTP. Nesse momento, o complexo se separa em subunidade alfa-GTP de um lado e o par beta-gama de outro, ambos agora livres para agir na membrana."
+        },
+        {
+          "numero": 4,
+          "titulo": "Geração do segundo mensageiro",
+          "explicacao": "A subunidade alfa-GTP ativa (ou inibe) uma enzima efetora ligada à membrana — por exemplo, a adenilato ciclase, que converte ATP em AMP cíclico, ou a fosfolipase C, que gera IP3 e diacilglicerol a partir de fosfolipídeos de membrana. Esses produtos são os segundos mensageiros: moléculas pequenas e difusíveis que levam o sinal para o interior do citoplasma."
+        },
+        {
+          "numero": 5,
+          "titulo": "Efeito celular amplificado",
+          "explicacao": "Cada molécula de segundo mensageiro ativa, por sua vez, múltiplas moléculas efetoras (como a proteína cinase A, no caso do AMP cíclico), que fosforilam alvos finais — canais, enzimas metabólicas, fatores de transcrição. Uma única ligação na membrana já se transformou, poucos passos depois, em milhares de eventos moleculares dentro da célula."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse encadeamento — receptor, proteína G, enzima efetora, segundo mensageiro, efetor final — é o motivo pelo qual a resposta de um GPCR, embora mais lenta que a de um canal iônico ligante-dependente (segundos, em vez de milissegundos), é também mais duradoura e mais amplificada. Não é uma via mais lenta por ineficiência: é mais lenta porque tem mais etapas, e tem mais etapas porque cada uma delas multiplica o sinal."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "GPCR não transduz sozinho — ele **empresta** o trabalho de amplificação à proteína G e à cascata de segundo mensageiro. É essa terceirização que permite tempo de resposta intermediário (segundos) com efeito muito maior do que a quantidade original de mensageiro sugeriria."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O GPCR só faz sentido em conjunto com o conceito de segundo mensageiro, que será aprofundado adiante em farmacodinâmica: a mesma proteína G pode ativar vias de AMP cíclico ou de IP3/DAG, e é essa via — não o receptor isoladamente — que decide se o efeito final é relaxamento de músculo liso, secreção glandular ou alteração do ritmo cardíaco. Ele também se articula diretamente com a farmacocinética e a duração de efeito dos fármacos: como a resposta depende de uma cascata enzimática, ela pode continuar por segundos a minutos mesmo depois que o fármaco já se dissociou do receptor — diferente de um canal iônico, cujo efeito cessa quase no instante em que o ligante sai."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "[AVISO] Este bloco descreve o mecanismo geral de ativação e a cascata clássica de segundo mensageiro; os mecanismos de dessensibilização do receptor (fosforilação por GRK, recrutamento de beta-arrestina, internalização) pertencem ao bloco de regulação de receptores e não são detalhados aqui para não antecipar conteúdo que ainda será aprofundado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A ponte com a clínica é direta e vasta: estima-se que cerca de 30% de todos os fármacos atualmente em uso terapêutico atuam sobre algum GPCR — betabloqueadores e beta-agonistas (receptores beta-adrenérgicos), anti-histamínicos (receptores H1), boa parte dos antieméticos e antipsicóticos (receptores serotoninérgicos e dopaminérgicos), opioides (receptores opioides mu, kappa, delta) e antagonistas de angiotensina II (receptores AT1) são todos exemplos de fármacos que atuam sobre essa única família estrutural."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "GPCR",
+      "origem": "sigla do inglês G-Protein-Coupled Receptor (receptor acoplado a proteína G); 'proteína G' vem de sua capacidade de ligar nucleotídeos de guanina (GDP/GTP), descoberta por Alfred Gilman e Martin Rodbell, que dividiram o Prêmio Nobel de Fisiologia ou Medicina de 1994 por esse trabalho",
+      "significado": "receptor cuja transdução de sinal depende de uma proteína ligadora de nucleotídeo de guanina",
+      "explicacao": "O nome da família não descreve a estrutura do receptor (que só foi bem caracterizada depois, com a cristalografia da rodopsina e do receptor beta-adrenérgico), mas sim o mecanismo de transdução — a dependência de uma proteína G. É por isso que a mesma família também é chamada de 'receptor de sete domínios transmembrana' (7TM): esse segundo nome descreve a estrutura, enquanto GPCR descreve a função. Os dois nomes coexistem porque foram descobertos em momentos diferentes da história da farmacologia molecular — primeiro a função bioquímica, depois a arquitetura estrutural."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o todo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "📻",
+      "conteudo": "Pense numa estação de rádio antiga com um operador e um amplificador de sinal separado. **O receptor de sete domínios transmembrana** é a antena na janela: capta um sinal específico (a frequência certa) e não faz mais nada sozinha — só muda de posição quando o sinal chega. **A proteína G** é o operador que fica de plantão ao lado da antena: quando ela se move, ele troca de estado (de GDP para GTP, como quem troca de 'em espera' para 'em ação') e corre para acionar o equipamento certo. **A enzima efetora e o segundo mensageiro** são o amplificador e os alto-falantes espalhados pela casa inteira: o operador aciona um único botão, mas o som (o segundo mensageiro) se espalha por todos os cômodos, muito mais alto do que o sinal original captado pela antena. A quebra da analogia aparece na duração: numa central telefônica direta (como um canal iônico), desligar a chamada silencia tudo na hora; aqui, mesmo depois que o sinal de rádio para de chegar, o som já disparado pelos alto-falantes pela casa continua tocando por um tempo — é por isso que o efeito de um GPCR sobrevive um pouco além da presença do próprio mensageiro na membrana."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um receptor de sete domínios transmembrana estivesse estruturalmente intacto e ligasse seu mensageiro normalmente, mas a subunidade alfa da proteína G associada estivesse mutada e incapaz de trocar GDP por GTP, o que aconteceria com a resposta celular?",
+      "resposta": "A ligação do mensageiro ocorreria normalmente e a mudança conformacional do receptor também aconteceria, mas a cascata pararia exatamente nesse ponto: sem a troca de GDP por GTP, a subunidade alfa nunca se separaria do complexo nem ativaria a enzima efetora, e nenhum segundo mensageiro seria gerado. O resultado prático seria idêntico ao de um receptor sem qualquer via de transdução — afinidade preservada, eficácia zerada — o que confirma que, num GPCR, a proteína G não é um coadjuvante opcional: é a etapa que converte reconhecimento em sinal, e sem ela o receptor de sete domínios é apenas uma fechadura bem talhada sem fiação nenhuma do outro lado da porta."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Cascata de ativação de um GPCR",
+      "descricao": "Esquema didático em corte transversal de membrana celular mostrando, da esquerda para a direita ou em sequência numerada, as cinco etapas do passo_a_passo: ligante encaixando no receptor de sete hélices transmembrana; mudança conformacional do receptor; proteína G heterotrimérica se dissociando em subunidade alfa-GTP e par beta-gama; subunidade alfa ativando uma enzima efetora (adenilato ciclase) associada à membrana, gerando segundo mensageiro (AMP cíclico) representado como pequenos pontos se multiplicando no citoplasma; seta final apontando para um efetor intracelular (proteína cinase A) fosforilando um alvo. Numeração de 1 a 5 correspondendo aos passos do texto. Fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno, cores suaves, alto contraste, sem texturas fotorrealistas. Corte transversal de membrana celular (bicamada lipídica horizontal) com uma proteína receptora de sete hélices transmembrana ziguezagueando através dela, numerada '1' onde um ligante romboide colorido se encaixa na face extracelular. Ao lado, na face intracelular, um complexo de três subunidades esféricas rotuladas 'alfa', 'beta', 'gama' (proteína G), numerado '2' e '3' mostrando a separação da subunidade alfa (com uma pequena etiqueta 'GDP' virando 'GTP'). A subunidade alfa livre, numerada '4', tocando uma enzima efetora embutida na membrana (retângulo rotulado 'adenilato ciclase'), da qual saem pequenos círculos amarelos representando 'AMPc' se espalhando no citoplasma, numerado '5', terminando numa seta para uma proteína rotulada 'PKA'. Legendas curtas em português ao lado de cada elemento numerado. Sem marcas d'água, sem texto além do indicado."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-001",
+        "titulo": "Receptores — A Fechadura Molecular (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume já estabelecidos os conceitos de reconhecimento específico e transdução de sinal como as duas exigências que definem qualquer receptor, e aprofunda especificamente a rota de transdução via proteína G, uma das quatro rotas mencionadas na visão geral."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-001-05",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Regulação de receptores (dessensibilização de GPCR)",
+        "mecanismo_conexao": "O GPCR é o exemplo clássico de dessensibilização rápida via fosforilação por GRK e recrutamento de beta-arrestina, mecanismo citado como [AVISO] aqui e detalhado no bloco de regulação.",
+        "confianca": "estabelecido"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Farmacologia do sistema nervoso autônomo e cardiovascular",
+        "mecanismo_conexao": "Receptores adrenérgicos, muscarínicos, de angiotensina II e de histamina — todos GPCRs — são a base mecanística de classes farmacológicas inteiras estudadas em semestres seguintes.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-02-001-02",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Contraste direto de velocidade e mecanismo com os receptores canais iônicos: GPCR transduz por cascata intermediária (segundos), enquanto o receptor ionotrópico abre um poro diretamente (milissegundos)."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-001-01-fc01",
+      "pergunta": "Por que a via do GPCR é mais lenta que a de um canal iônico ligante-dependente, e por que essa lentidão não é uma desvantagem pura?",
+      "resposta": "Porque a transdução do GPCR passa por várias etapas intermediárias — ativação da proteína G, ativação de enzima efetora, geração de segundo mensageiro, ativação de efetores finais — em vez de abrir diretamente um poro. Cada etapa adicional custa tempo (por isso a resposta leva segundos, não milissegundos), mas cada etapa também amplifica o sinal: uma única molécula de mensageiro ligada ao receptor pode gerar milhares de moléculas de segundo mensageiro. A lentidão é o preço de uma amplificação que o canal iônico direto não oferece.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["gpcr", "proteina-g", "amplificacao"]
+    },
+    {
+      "card_id": "s4-farma1-02-001-01-fc02",
+      "pergunta": "Descreva a sequência completa de eventos desde a ligação de um agonista a um GPCR até a fosforilação de um alvo intracelular, nomeando cada componente envolvido.",
+      "resposta": "1) O agonista se liga ao sítio extracelular do receptor de sete domínios transmembrana. 2) A ligação muda a conformação do receptor, sobretudo na face intracelular. 3) O receptor ativado catalisa a troca de GDP por GTP na subunidade alfa da proteína G, que se dissocia em alfa-GTP e no par beta-gama. 4) A subunidade alfa-GTP ativa uma enzima efetora de membrana (por exemplo, adenilato ciclase). 5) A enzima gera um segundo mensageiro (por exemplo, AMP cíclico). 6) O segundo mensageiro ativa um efetor final (por exemplo, proteína cinase A), que fosforila alvos celulares, produzindo a resposta.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["gpcr", "proteina-g", "segundo-mensageiro", "cascata"]
+    },
+    {
+      "card_id": "s4-farma1-02-001-01-fc03",
+      "pergunta": "Se a subunidade alfa de uma proteína G estivesse mutada de forma a não conseguir trocar GDP por GTP, mas o receptor de sete domínios continuasse ligando seu agonista normalmente, o que aconteceria com a resposta celular?",
+      "resposta": "A ligação e a mudança conformacional do receptor ocorreriam normalmente, mas a cascata pararia ali: sem a troca de GDP por GTP, a subunidade alfa não se dissociaria nem ativaria a enzima efetora, e nenhum segundo mensageiro seria produzido. O quadro seria equivalente a um receptor com afinidade preservada e eficácia zero — a ligação acontece, mas nenhum efeito celular é gerado.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["gpcr", "proteina-g", "eficacia"]
+    },
+    {
+      "card_id": "s4-farma1-02-001-01-fc04",
+      "pergunta": "Por que se afirma que cerca de 30% dos fármacos em uso atuam sobre GPCRs, e o que isso implica sobre a abrangência clínica dessa família?",
+      "resposta": "Porque os GPCRs formam a maior família de receptores de membrana do genoma humano e medeiam a ação de neurotransmissores e hormônios centrais à fisiologia (adrenalina, acetilcolina, histamina, serotonina, angiotensina II, opioides endógenos, entre outros). Como cada um desses sistemas de sinalização tem múltiplas classes farmacológicas associadas — agonistas, antagonistas, moduladores — a soma abrange áreas terapêuticas tão diversas quanto cardiologia, psiquiatria, alergologia e gastroenterologia, o que explica por que essa única família estrutural concentra uma fração tão grande do arsenal terapêutico existente.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": ["gpcr", "farmacologia-clinica", "alvo-terapeutico"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-001-01-caso01",
+      "titulo": "Baixa estatura, obesidade e cálcio baixo em uma adolescente com PTH elevado",
+      "apresentacao": "Menina de 14 anos é levada ao ambulatório de endocrinologia pediátrica por baixa estatura, mãos e pés curtos e desproporcionalmente largos, obesidade leve e episódios recentes de formigamento nas mãos e ao redor da boca. Os exames laboratoriais mostram cálcio sérico baixo, fósforo elevado e paratormônio (PTH) muito elevado — um padrão que, à primeira vista, sugeriria hipoparatireoidismo, mas com PTH alto em vez de baixo. Uma tomografia mostra pequenas calcificações nos núcleos da base. Não há evidência de destruição ou remoção cirúrgica das paratireoides.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação genética herdada no gene GNAS, que codifica a subunidade alfa da proteína G estimulatória (Gs) — a mesma subunidade descrita neste bloco como responsável por trocar GDP por GTP e ativar a enzima efetora após a ligação do mensageiro ao receptor de sete domínios transmembrana."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A subunidade alfa da proteína Gs, presente em múltiplos tecidos-alvo do PTH (rim, osso) e de outros hormônios que sinalizam por GPCRs acoplados a essa mesma via, está estruturalmente comprometida e não consegue realizar a troca de GDP por GTP de forma eficiente, mesmo quando o receptor do PTH está normal e o hormônio se liga a ele normalmente."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Exatamente como descrito no flashcard-contrafactual deste bloco: a ligação do hormônio ao receptor ocorre normalmente, e a mudança conformacional do receptor também acontece, mas a cascata intracelular para nesse ponto — sem a subunidade alfa funcional, a adenilato ciclase não é ativada, o AMP cíclico não é gerado, e a célula-alvo permanece cega ao sinal do PTH mesmo com hormônio circulando em excesso."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O rim e o osso não respondem ao PTH (resistência hormonal periférica): o cálcio sérico permanece baixo e o fósforo alto, como se não houvesse PTH algum, embora a glândula paratireoide, percebendo o cálcio baixo, continue produzindo e liberando PTH em quantidades cada vez maiores — daí o PTH sérico elevado, ao contrário do hipoparatireoidismo verdadeiro. A hipocalcemia crônica também explica os episódios de formigamento (parestesias) e as calcificações cerebrais. O fenótipo característico (baixa estatura, braquidactilia, obesidade) resulta da mesma proteína Gs disfuncional afetando outras vias hormonais que dependem dela em diferentes tecidos durante o desenvolvimento."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O diagnóstico é pseudo-hipoparatireoidismo tipo 1a. O tratamento não repõe PTH (seria inútil, já que o problema não é falta de hormônio, mas falha na transdução do sinal) — em vez disso, corrige diretamente o cálcio e o fósforo séricos com suplementação de cálcio e vitamina D ativa, contornando a necessidade de sinalização funcional pela via do PTH."
+        }
+      ],
+      "conexao_com_bloco": "O caso é a demonstração clínica direta e real do contrafactual central deste bloco: uma subunidade alfa da proteína G mutada e incapaz de trocar GDP por GTP produz exatamente o padrão previsto — ligação e mudança conformacional do receptor preservadas, mas eficácia zerada por interrupção da cascata logo depois da ativação da proteína G. O caso também mostra por que o tratamento lógico não é reposição hormonal, mas contorno da via de transdução quebrada.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "endocrinologia",
+        "genetica",
+        "pediatria"
+      ],
+      "diagnostico_revelado": "Pseudo-hipoparatireoidismo tipo 1a — resistência hormonal ao PTH por mutação inativadora da subunidade alfa da proteína Gs (gene GNAS), com falha na transdução de sinal via GPCR apesar de receptor e hormônio normais.",
+      "tratamento_resumido": "Suplementação de cálcio oral e de calcitriol (vitamina D ativa) para corrigir diretamente a hipocalcemia e a hiperfosfatemia, contornando a via de sinalização do PTH que está bioquimicamente interrompida; acompanhamento endocrinológico contínuo para monitorar cálcio, fósforo e outras vias hormonais dependentes de proteína Gs que podem estar igualmente afetadas."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-001-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Drug-Receptor Interactions.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 3 — Receptors and Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
   "_lentes": [
     "molecular",
     "mecanismo"

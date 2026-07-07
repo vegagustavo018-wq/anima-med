@@ -10,43 +10,222 @@
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 8,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "sop",
+      "hiperandrogenismo",
+      "diagnostico",
+      "clinica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "HAC não clássica, Cushing, tumor secretor, hiperprolactinemia",
-  "narrativa": [],
+  "resumo_conciso": "Nem todo hiperandrogenismo é SOP. Progressão rápida, virilização, andrógenos muito elevados, amenorreia marcada ou sinais sistêmicos pedem busca de HAC não clássica, Cushing, tumores, hiperprolactinemia, tireoide e medicamentos.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "SOP é causa comum de hiperandrogenismo, mas não deve virar diagnóstico reflexo. O raciocínio seguro pergunta: há algo no quadro que não combina com SOP comum?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Início abrupto, progressão rápida, voz grossa, clitoromegalia, aumento importante de massa muscular ou queda capilar intensa sugerem virilização. Esse padrão exige investigação de tumor secretor de andrógenos ovariano ou adrenal."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Hiperplasia adrenal congênita não clássica pode imitar SOP com acne, hirsutismo e irregularidade menstrual. A triagem costuma envolver 17-hidroxiprogesterona basal, com testes adicionais conforme resultado e contexto."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Síndrome de Cushing entra no diferencial quando há ganho ponderal centrípeto, estrias violáceas largas, fraqueza proximal, equimoses, hipertensão ou diabetes de início/descontrole inesperado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Hiperprolactinemia pode causar oligoamenorreia, infertilidade e galactorreia. Disfunções tireoidianas também alteram ciclo menstrual e precisam ser excluídas em investigação inicial."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Medicamentos e exposições também contam: andrógenos, esteroides anabolizantes, alguns progestágenos de maior atividade androgênica e valproato podem contribuir para sintomas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A gravidade laboratorial orienta urgência. Testosterona ou DHEAS muito elevados, especialmente com clínica de virilização, deslocam a hipótese para fonte tumoral e pedem investigação dirigida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O exame físico deve procurar sinais de acantose, Cushing, galactorreia, virilização e distribuição de pelos. A história deve mapear velocidade de evolução, uso de substâncias, menarca, padrão menstrual e sintomas neurológicos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O objetivo do diferencial não é pedir todos os exames para todas as pacientes, mas impedir que uma causa rara e grave seja escondida sob o rótulo de SOP."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-01-002",
+        "titulo": "O Eixo Hipotálamo-Hipófise-Ovário — GnRH, FSH, LH",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-01-004",
+        "titulo": "Fase Folicular e Recrutamento do Folículo Dominante",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-01-006",
+        "titulo": "Fase Lútea — Corpo Lúteo e Progesterona",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-04-000",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Módulo 4 - Endometriose e Adenomiose",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-02-016",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Investigação da Amenorreia Secundária — Roteiro Diagnóstico"
+      },
+      {
+        "bloco_id": "s7-go1-02-020",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Sangramento Uterino Anormal — Visão de Conjunto e PALM-COEIN"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-03-006-fc-01",
+      "pergunta": "Quais sinais tornam hiperandrogenismo mais preocupante para tumor?",
+      "resposta": "Início abrupto, progressão rápida, virilização e andrógenos muito elevados.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-03-006-fc-02",
+      "pergunta": "Qual exame costuma triar HAC não clássica?",
+      "resposta": "17-hidroxiprogesterona basal, com confirmação conforme resultado e contexto.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-03-006-fc-03",
+      "pergunta": "Quais endocrinopatias comuns entram no diferencial de irregularidade menstrual?",
+      "resposta": "Hiperprolactinemia e disfunções tireoidianas.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-03-006-fc-04",
+      "pergunta": "Que achados sugerem Cushing no diferencial?",
+      "resposta": "Estrias violáceas largas, fraqueza proximal, equimoses, hipertensão, diabetes e ganho centrípeto.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-03-006-cc-01",
+      "titulo": "Quando não chamar de SOP",
+      "apresentacao": "Mulher de 35 anos relata hirsutismo surgido há 5 meses, voz mais grave e amenorreia. Exame mostra clitoromegalia discreta.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Nem todo hiperandrogenismo é SOP."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Diagnóstico Diferencial do Hiperandrogenismo, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Nem todo hiperandrogenismo é SOP. Progressão rápida, virilização, andrógenos muito elevados, amenorreia marcada ou sinais sistêmicos pedem busca de HAC não clássica, Cushing, tumores, hiperprolactinemia, tireoide e medicamentos."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 35 anos relata hirsutismo surgido há 5 meses, voz mais grave e amenorreia. Exame mostra clitoromegalia discreta."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Por que SOP não deve ser o fechamento inicial? Porque progressão rápida e virilização sugerem hiperandrogenismo grave, incluindo tumor secretor ovariano ou adrenal. A investigação deve ser dirigida e mais urgente."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Porque progressão rápida e virilização sugerem hiperandrogenismo grave, incluindo tumor secretor ovariano ou adrenal. A investigação deve ser dirigida e mais urgente.",
+      "tratamento_resumido": "Porque progressão rápida e virilização sugerem hiperandrogenismo grave, incluindo tumor secretor ovariano ou adrenal. A investigação deve ser dirigida e mais urgente."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Árvore de decisão do hiperandrogenismo: padrão lento compatível com SOP versus sinais de alerta para tumor, HAC não clássica, Cushing, prolactina, tireoide e medicamentos.",
+        "alt": "Ilustração educacional para Diagnóstico Diferencial do Hiperandrogenismo"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_3_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "Recommendations From the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome",
+      "url": "https://academic.oup.com/jcem/article/108/10/2447/7242360",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "Monash Centre for Health Research and Implementation - PCOS Guideline",
+      "url": "https://www.monash.edu/medicine/mchri/pcos/guideline",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "Endocrine Society - Diagnosis and Treatment of Polycystic Ovary Syndrome",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/polycystic-ovary-syndrome",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "diagnostico",
     "clinica"

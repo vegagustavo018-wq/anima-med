@@ -5,50 +5,331 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Agonistas Parciais e Agonistas Inversos",
+    "subtitulo": "E se você não quisesse o efeito máximo — ou quisesse menos do que o receptor já faz sozinho?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 4,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "agonista-parcial",
+      "agonista-inverso",
+      "atividade-constitutiva",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Efeito submáximo; comportamento dual; agonista inverso e atividade constitutiva",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior estabeleceu que afinidade e atividade intrínseca são eixos independentes, e que um ligante pode ter atividade intrínseca máxima (ativação plena) ou nula (ocupação sem ativação). Mas esses dois extremos não esgotam o espectro: existe um território intermediário, ocupado pelos agonistas parciais, cuja atividade intrínseca fica entre 0 e 1 — eles ativam o receptor, só que nunca até o teto que um agonista pleno alcança, mesmo saturando todos os receptores disponíveis. Existe também um território que só faz sentido depois de reconhecer que muitos receptores não ficam mudos na ausência de qualquer ligante: eles têm atividade constitutiva, um nível basal de sinalização espontânea. Contra esse fundo, um agonista inverso se comporta como um ligante de atividade intrínseca negativa — ele não apenas deixa de ativar, ele reduz a sinalização abaixo do que já existia antes de ele chegar. Essa dupla distinção resolve um problema prático concreto: às vezes o objetivo terapêutico não é maximizar nem simplesmente bloquear um receptor, mas modular sua atividade para cima ou para baixo de forma parcial e controlada — e reconhecer, num mesmo receptor, que 'sem fármaco' não é o mesmo que 'atividade zero'.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior deixou um espectro em aberto: entre o ligante que ativa o receptor ao máximo e o ligante que apenas ocupa o espaço sem ativar nada, existe um meio-campo inteiro ainda não descrito. E existe uma pergunta ainda mais desconfortável, que só cabe fazer agora: será que um receptor está sempre 'desligado' quando nenhum fármaco está presente? Se a resposta for não, então é possível imaginar um fármaco que faça o receptor sinalizar *menos* do que ele já sinalizava sozinho — o que é uma ideia estranha à primeira vista, porque um antagonista clássico não reduz nada, ele apenas impede que outra coisa ative."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: nem sempre se quer o efeito máximo — e às vezes se quer menos que o basal"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há situações clínicas em que ativar um receptor ao máximo é excessivo ou perigoso, mas bloquear totalmente esse receptor também não é o ideal — porque alguma sinalização residual continua sendo útil ou necessária. É o caso, por exemplo, de vias em que a ativação plena causa dependência ou depressão respiratória grave, mas a supressão completa da via causa abstinência ou perda total do efeito terapêutico desejado. Nesses cenários, um efeito submáximo, estável e com teto embutido, é mais seguro do que os dois extremos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há uma segunda situação, mais sutil: alguns receptores não esperam passivamente por um ligante para começar a sinalizar. Eles oscilam espontaneamente entre a forma inativa e a forma ativa mesmo sem nada ligado, produzindo um nível basal de sinalização — a chamada atividade constitutiva. Quando esse nível basal existe e é clinicamente relevante (por exemplo, numa condição em que o receptor está superexpresso ou hiperativo mesmo sem estímulo), simplesmente bloquear a entrada de novos ligantes não resolve o problema, porque o receptor continua sinalizando por conta própria. É preciso um fármaco capaz de empurrar o receptor para baixo desse nível basal — não apenas de impedir que ele suba mais."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: os problemas aqui são dois, e são diferentes. Primeiro, produzir um efeito submáximo e controlado quando o máximo é indesejável. Segundo, reduzir uma sinalização que já existia mesmo antes de qualquer fármaco entrar em cena. Um agonista pleno ou um antagonista simples não resolvem nenhum dos dois."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: dois pontos adicionais no eixo da atividade intrínseca"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacologia resolveu o primeiro problema com o conceito de agonista parcial: um ligante com afinidade plena pelo receptor, mas com atividade intrínseca situada entre 0 e 1 — maior que zero (ele ativa, ao contrário de um antagonista puro), mas menor que 1 (ele nunca alcança o efeito máximo que um agonista pleno atinge, por mais que a dose aumente e todos os receptores fiquem ocupados). Esse teto não é uma questão de dose insuficiente; é uma propriedade intrínseca da molécula. Aumentar a dose de um agonista parcial satura os receptores, mas não empurra o efeito além do platô que a própria atividade intrínseca permite."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução para o segundo problema exige primeiro aceitar a premissa da atividade constitutiva: em muitos sistemas receptor-efetor, existe um nível basal de sinalização mesmo na ausência completa de qualquer ligante. Contra esse fundo, um agonista inverso é um ligante com atividade intrínseca negativa — ele se liga ao receptor e estabiliza preferencialmente a conformação inativa, deslocando o equilíbrio para baixo do nível basal e reduzindo a sinalização espontânea. Note a diferença de um antagonista neutro: este último, se ligado a um receptor com atividade constitutiva, não muda o nível basal — apenas ocupa o sítio e bloqueia outros ligantes. Só o agonista inverso empurra a sinalização para baixo do que já existia."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Agonista parcial: atividade intrínseca entre 0 e 1 — ativa, mas com teto abaixo do máximo. Agonista inverso: atividade intrínseca negativa — só existe como conceito porque o receptor já tinha atividade basal (constitutiva) antes de qualquer fármaco chegar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona: o comportamento dual do agonista parcial"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A propriedade mais reveladora do agonista parcial aparece quando ele encontra, no mesmo receptor, um agonista pleno já presente — cenário comum na prática clínica, quando se administra um agonista parcial a um paciente que já tem o ligante endógeno pleno circulando. O resultado depende da concentração relativa dos dois."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Em um receptor virgem, sem agonista pleno algum, o agonista parcial produz o único efeito que ele é capaz de produzir: sobe a sinalização até o seu teto submáximo. Nesse cenário, ele se comporta como agonista puro e simples. Mas em um receptor já ocupado majoritariamente por um agonista pleno em concentração alta, o agonista parcial compete pelo mesmo sítio de ligação e desloca parte do agonista pleno — substituindo uma ocupação de atividade intrínseca 1 por uma ocupação de atividade intrínseca menor que 1. O efeito líquido, nesse segundo cenário, é uma queda da sinalização total, mesmo que o receptor continue ocupado e o agonista parcial esteja, tecnicamente, ativando-o."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É esse comportamento dual — agonista quando sozinho, quase-antagonista quando compete com um agonista pleno — que torna o agonista parcial uma ferramenta terapêutica peculiar: ele estabiliza a sinalização num platô intermediário, empurrando para cima situações de deficit e para baixo situações de excesso, sempre em direção ao mesmo teto."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Guarde a lógica: o agonista parcial não muda de identidade molecular dependendo do contexto — sua atividade intrínseca é fixa. O que muda é o efeito observado, porque esse efeito depende também do que mais está ocupando o receptor ao mesmo tempo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "[AVISO] Atividade constitutiva é um conceito sutil e depende do sistema receptor-efetor específico: nem todo receptor exibe atividade constitutiva relevante em condições fisiológicas normais, e a magnitude desse basal varia muito conforme a densidade de receptores, o tecido e o método experimental usado para medi-la. Classificar um fármaco como agonista inverso, e não apenas antagonista neutro, exige demonstrar experimentalmente a queda abaixo do basal — nem sempre esses dois papéis são triviais de diferenciar na prática, e a literatura já reclassificou fármacos de uma categoria para outra à medida que sistemas mais sensíveis de detecção de atividade constitutiva foram desenvolvidos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa distinção se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa distinção depende diretamente dos dois eixos independentes definidos no bloco anterior: afinidade e atividade intrínseca. Agonista parcial e agonista inverso não são categorias novas de propriedade — são apenas posições específicas no mesmo eixo de atividade intrínseca já estabelecido, só que agora explorando a região entre 0 e 1 (parcial) e a região abaixo de 0 (inverso), que só existe quando há atividade constitutiva para ser revertida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, o comportamento dual do agonista parcial explica por que a mesma molécula pode ser usada tanto para tratar um estado de deficiência quanto um estado de excesso do mesmo sistema, e por que trocar um agonista pleno por um agonista parcial no mesmo paciente pode, paradoxalmente, precipitar sintomas de abstinência — o receptor, que estava sendo estimulado ao máximo, passa a receber apenas estimulação parcial assim que o agonista parcial desloca o pleno."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "agonista parcial e agonista inverso",
+      "origem": "agonista, do grego agōnistḗs (competidor, aquele que luta numa arena); parcial, do latim partialis (relativo a uma parte); inverso, do latim inversus (virado ao contrário)",
+      "significado": "agonista parcial: 'competidor que só entrega parte do combate'; agonista inverso: 'competidor que age no sentido contrário ao que se esperava de um agonista'",
+      "explicacao": "Agōnistḗs vinha dos jogos gregos, designando o atleta que competia numa arena (agōn). A farmacologia emprestou a palavra no século XX para nomear o ligante que 'compete' pelo receptor e o ativa. Quando ficou claro que existiam ligantes capazes de ativar apenas parcialmente — 'competir' mas não completar o combate até o fim —, o adjetivo partialis foi anexado. O termo 'agonista inverso' é mais tardio, e propositalmente paradoxal: um agonista deveria ativar, mas este produz o efeito invertido (inversus) porque atua contra uma atividade basal que a maioria dos primeiros farmacologistas sequer sabia que existia. O nome só fez sentido depois que a atividade constitutiva dos receptores foi demonstrada experimentalmente — outro caso em que o vocabulário teve que se atualizar depois que a biologia revelou uma camada de complexidade que a linguagem original não previa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a distinção"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎚️",
+      "conteudo": "Pense num dimmer de luz que já vem de fábrica ligado num brilho baixo, mesmo sem ninguém tocar nele — esse brilho de fábrica é a atividade constitutiva. Um agonista pleno é uma mão que gira o dimmer até o talo, no brilho máximo. Um agonista parcial é uma mão que só consegue girar o dimmer até a metade do curso, não importa com que força você tente — ela sempre para no mesmo ponto intermediário, mesmo que todo o dimmer esteja sob controle dessa mão. Se essa mesma mão parcial chegar depois que a mão do agonista pleno já girou tudo para o máximo, ela empurra o dimmer de volta para aquele ponto intermediário — a luz fica mais fraca do que estava, mesmo que a mão continue girando o botão, e não segurando-o parado. Já um agonista inverso é uma mão que gira o dimmer para baixo do brilho de fábrica, deixando o ambiente mais escuro do que estava antes de qualquer mão tocar o botão. A analogia quebra num ponto importante: um dimmer mecânico tem um curso físico contínuo e simétrico para os dois lados, enquanto o receptor real só tem uma região 'abaixo do basal' quando existe atividade constitutiva de fato — nem todo receptor tem esse 'brilho de fábrica' para começo de conversa, e onde ele não existe, não há espaço químico para um agonista inverso operar."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se todos os receptores do corpo tivessem atividade constitutiva igual a zero — nenhuma sinalização espontânea na ausência de qualquer ligante — o conceito de agonista inverso ainda faria sentido?",
+      "resposta": "Não faria. Sem atividade constitutiva, não existe 'abaixo do basal' para nenhum ligante alcançar: o receptor já estaria, por definição, no seu piso de sinalização quando desocupado, e qualquer ligante que não ativasse a via seria indistinguível, em termos de efeito líquido, de um antagonista neutro comum — ambos deixariam a sinalização em zero. É exatamente a existência de um nível basal espontâneo que cria o espaço farmacológico no qual um ligante pode ter atividade intrínseca negativa e, com isso, reduzir a sinalização para além do que a simples ausência de fármaco já produzia. O conceito de agonista inverso é, nesse sentido, uma consequência lógica direta de aceitar que 'nenhum fármaco presente' não é sinônimo de 'receptor totalmente silencioso'."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O espectro de atividade intrínseca: do agonista inverso ao agonista pleno",
+      "descricao": "Esquema didático de um único gráfico: eixo horizontal representando o eixo contínuo de atividade intrínseca, de valores negativos à esquerda até o valor máximo (1) à direita, com o ponto zero marcado no centro. Acima do eixo, uma linha de base horizontal tracejada representando o nível de atividade constitutiva do receptor sem nenhum ligante. Quatro pontos marcados sobre o eixo, cada um ligado por uma seta vertical a uma barra que mostra o nível de sinalização resultante em relação à linha de base: um ponto à esquerda do zero com barra abaixo da linha de base (agonista inverso), um ponto exatamente no zero com barra na mesma altura da linha de base (antagonista neutro), um ponto entre zero e o máximo com barra acima da linha de base mas abaixo do topo (agonista parcial), e um ponto no valor máximo com barra no topo do gráfico (agonista pleno). Legendas curtas em português para cada ponto. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. Um único painel com um gráfico de barras verticais sobre um eixo horizontal contínuo rotulado 'atividade intrínseca', com marcação de valores de -1 (esquerda) a +1 (direita) e um traço destacado no zero central. Uma linha horizontal tracejada atravessando o gráfico, rotulada 'atividade constitutiva (nível basal sem fármaco)'. Quatro barras verticais coloridas e distintas, cada uma ancorada em sua posição correspondente no eixo horizontal: a primeira barra, posicionada à esquerda do zero, descendo abaixo da linha tracejada, rotulada 'agonista inverso'; a segunda barra, posicionada exatamente no zero, com topo exatamente na altura da linha tracejada, rotulada 'antagonista neutro'; a terceira barra, posicionada entre o zero e o valor máximo, com topo acima da linha tracejada mas claramente abaixo do topo do gráfico, rotulada 'agonista parcial'; a quarta barra, posicionada no valor máximo (+1), com topo no limite superior do gráfico, rotulada 'agonista pleno'. Setas finas conectando cada ponto do eixo à respectiva barra. Paleta de cores suaves e consistente, alto contraste, sem texturas fotorrealistas, texto apenas nas legendas indicadas, em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-003",
+        "titulo": "Agonistas e Antagonistas — Ligar e Desligar o Alvo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume que afinidade e atividade intrínseca já foram estabelecidas como eixos independentes. Agonista parcial e agonista inverso são apenas posições específicas nesse mesmo eixo de atividade intrínseca — entre 0 e 1, e abaixo de 0, respectivamente."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-003-03",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Antagonismo competitivo e não competitivo",
+        "mecanismo_conexao": "O antagonista neutro descrito no gráfico deste bloco (atividade intrínseca exatamente zero, sem alterar o basal) é o objeto detalhado no próximo bloco, em contraste direto com o agonista inverso aqui apresentado.",
+        "confianca": "estabelecida"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Buprenorfina e outros agonistas parciais opioides no manejo da dependência",
+        "mecanismo_conexao": "O comportamento dual do agonista parcial — agonista quando sozinho, deslocador de agonista pleno quando em competição — é o princípio farmacológico central da terapia de substituição opioide com buprenorfina.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Agonistas inversos de receptores histamínicos H1 em fármacos anti-histamínicos",
+        "mecanismo_conexao": "Vários anti-histamínicos classicamente descritos como antagonistas H1 foram reclassificados como agonistas inversos ao se demonstrar atividade constitutiva do receptor H1 — aplicação direta do conceito de atividade intrínseca negativa deste bloco.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-003-02-fc01",
+      "pergunta": "O que define, em termos de atividade intrínseca, um agonista parcial — e por que aumentar a dose desse fármaco não faz o efeito ultrapassar seu teto característico?",
+      "resposta": "Um agonista parcial tem atividade intrínseca maior que zero (ele ativa o receptor) mas menor que 1 (ele nunca alcança o efeito máximo que um agonista pleno produz). Esse teto é uma propriedade intrínseca da molécula — decorre de quanto ela consegue mudar a conformação do receptor após se ligar — e não de quantos receptores estão ocupados. Por isso, aumentar a dose satura os receptores disponíveis, mas não empurra o efeito além do platô definido pela atividade intrínseca daquela molécula específica.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "agonista-parcial",
+        "atividade-intrinseca"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-02-fc02",
+      "pergunta": "Por que o conceito de agonista inverso só faz sentido quando se aceita que um receptor pode ter atividade constitutiva?",
+      "resposta": "Porque agonista inverso é definido como um ligante de atividade intrínseca negativa — ele reduz a sinalização do receptor para abaixo do nível que já existia antes de qualquer fármaco se ligar. Se o receptor não tivesse nenhuma sinalização espontânea na ausência de ligante (atividade constitutiva igual a zero), não haveria 'abaixo do basal' para nenhum fármaco alcançar, e um ligante que não ativasse a via seria indistinguível, em efeito líquido, de um antagonista neutro comum.",
+      "tipo": "por_que",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "agonista-inverso",
+        "atividade-constitutiva"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-02-fc03",
+      "pergunta": "Um agonista parcial é administrado a um receptor que já está totalmente ocupado por um agonista pleno em concentração alta. O que acontece com a sinalização total, e por que isso não contradiz a definição do agonista parcial como um ativador do receptor?",
+      "resposta": "A sinalização total cai, porque o agonista parcial compete pelo mesmo sítio de ligação e desloca parte do agonista pleno, substituindo ocupações de atividade intrínseca 1 por ocupações de atividade intrínseca menor que 1. Isso não contradiz sua definição como ativador: a atividade intrínseca do agonista parcial continua fixa e positiva — ele continua ativando o receptor sempre que está ligado a ele. O que muda é que o efeito observado depende também da concentração e da atividade intrínseca de quem mais ocupa o receptor ao mesmo tempo, não só da identidade molecular do agonista parcial isoladamente.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "agonista-parcial",
+        "comportamento-dual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-02-fc04",
+      "pergunta": "As palavras 'agonista parcial' e 'agonista inverso' guardam, na etimologia, um paradoxo semântico. Qual é ele e o que ele revela sobre a ordem em que esses conceitos foram descobertos?",
+      "resposta": "Agonista (do grego agōnistḗs, competidor) deveria, por definição original do termo em farmacologia, ativar o receptor. 'Inverso' (do latim inversus, virado ao contrário) contradiz essa expectativa: um agonista inverso produz o efeito oposto ao de um agonista comum. Esse paradoxo revela que o termo só pôde ser cunhado depois que a atividade constitutiva dos receptores foi demonstrada experimentalmente — antes disso, um ligante que reduzia a sinalização seria simplesmente chamado de antagonista, porque não havia como distinguir 'trazer a sinalização a zero por bloqueio' de 'trazer a sinalização abaixo do basal por ação ativa inversa'. O vocabulário teve que se atualizar depois que a biologia revelou essa camada extra de complexidade.",
+      "tipo": "etimologia",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "etimologia",
+        "agonista-inverso"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-003-02-fc05",
+      "pergunta": "Um paciente em uso crônico de um agonista pleno opioide (com ativação máxima constante do receptor) é trocado por um agonista parcial opioide (como a buprenorfina). Por que essa troca pode precipitar sintomas de abstinência, mesmo o novo fármaco sendo, tecnicamente, também um agonista?",
+      "resposta": "Porque o receptor, que vinha recebendo estimulação plena (atividade intrínseca próxima de 1) do agonista pleno, passa a receber apenas estimulação parcial (atividade intrínseca entre 0 e 1) assim que o agonista parcial desloca o agonista pleno do sítio de ligação — o agonista parcial tem afinidade suficiente para competir e ocupar o receptor, mas sua atividade intrínseca mais baixa produz uma queda líquida na sinalização total. Para o organismo, adaptado cronicamente ao nível de sinalização máximo, essa queda é interpretada como um estado de deficiência relativa, desencadeando sintomas de abstinência — o mesmo comportamento dual que torna a buprenorfina útil no manejo da dependência opioide também explica por que a transição precisa ser cuidadosamente cronometrada na prática clínica.",
+      "tipo": "clinico",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "farmacodinamica",
+        "agonista-parcial",
+        "buprenorfina",
+        "opioide"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-003-02-caso01",
+      "titulo": "Indução de buprenorfina em paciente com dependência de opioide pleno",
+      "apresentacao": "Homem de 34 anos, em uso diário de heroína há 6 anos, procura serviço de redução de danos desejando iniciar tratamento com buprenorfina para dependência opioide. A equipe orienta que ele deve estar em abstinência leve a moderada (não ter usado heroína nas últimas 12 a 24 horas, com sinais clínicos de abstinência iniciando) antes da primeira dose de buprenorfina. O paciente pergunta por que não pode simplesmente tomar a buprenorfina imediatamente, já que ela também é descrita como um 'agonista opioide'.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A heroína (convertida em morfina no organismo) atua como agonista pleno dos receptores opioides mu, com atividade intrínseca próxima do máximo. O uso crônico manteve os receptores do paciente sob estimulação plena constante, e o organismo se adaptou fisiologicamente a esse nível de sinalização."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Os receptores opioides mu, amplamente distribuídos no sistema nervoso central e no trato gastrointestinal, são o alvo comum de ambas as substâncias. A buprenorfina tem afinidade muito alta por esse receptor — na verdade, mais alta que a da própria morfina — mas sua atividade intrínseca é apenas parcial."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Se a buprenorfina for administrada enquanto a heroína ainda ocupa boa parte dos receptores, sua altíssima afinidade faz com que ela desloque a heroína do sítio de ligação. Como a atividade intrínseca da buprenorfina é menor que a da heroína, essa substituição derruba a sinalização opioide total, mesmo com o receptor continuando ocupado — é exatamente o comportamento dual do agonista parcial em competição com um agonista pleno."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "A queda abrupta na sinalização opioide desencadeia uma síndrome de abstinência precipitada: agitação, dor muscular difusa, sudorese, taquicardia, diarreia e ansiedade intensa — um quadro conhecido na prática como 'abstinência precipitada por buprenorfina', geralmente mais abrupto e desconfortável do que a abstinência natural pela simples ausência de heroína."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Por isso a indução de buprenorfina exige uma janela de abstinência leve a moderada prévia: quando a ocupação de receptores pela heroína já caiu naturalmente (metabolização e eliminação em curso), a substituição pela buprenorfina passa a representar um ganho líquido de sinalização (de 'quase nada' para 'parcial'), e não uma perda (de 'pleno' para 'parcial') — o mesmo fármaco, a mesma atividade intrínseca fixa, mas um efeito clínico oposto dependendo do momento da administração."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra, na prática clínica, exatamente o comportamento dual descrito na etapa de mecanismo: o agonista parcial produz efeito diferente dependendo de encontrar o receptor virgem (ganho de sinalização) ou já ocupado por um agonista pleno (perda de sinalização por deslocamento). A cronometragem da indução de buprenorfina não é uma regra arbitrária de protocolo — é uma consequência direta e previsível da farmacodinâmica de atividade intrínseca parcial.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "psiquiatria",
+        "medicina-de-familia",
+        "saude-coletiva"
+      ],
+      "diagnostico_revelado": "Risco de síndrome de abstinência precipitada por administração inadequadamente cronometrada de agonista parcial opioide (buprenorfina) em paciente com receptores ocupados por agonista pleno (heroína/morfina).",
+      "tratamento_resumido": "Aguardar sinais clínicos objetivos de abstinência leve a moderada antes da primeira dose de buprenorfina, conforme escalas validadas (como a COWS — Clinical Opiate Withdrawal Scale). Uma vez iniciada corretamente, a buprenorfina mantém sinalização opioide parcial estável, com menor potencial de abuso e depressão respiratória que os agonistas plenos, sustentando o tratamento de manutenção da dependência."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-003-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

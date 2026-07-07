@@ -6,53 +6,300 @@
     "s4-farma1-00-003",
     "s4-farma1-00-004"
   ],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s1-hist-02-001"
+  ],
   "metadata": {
     "titulo": "O Que É um Fármaco e o Encontro com o Corpo",
+    "subtitulo": "O que precisa ser verdade sobre uma molécula para que ela vire remédio?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 1,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 11,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "conceito-fundamental",
+      "farmaco",
+      "alvo-molecular",
+      "farmacocinetica",
+      "farmacodinamica",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Conceito de fármaco, medicamento, droga; alvo molecular; as duas metades PK/PD",
-  "narrativa": [],
+  "resumo_conciso": "Antes de estudar qualquer fármaco específico, é preciso entender o que torna uma molécula qualquer capaz de virar remédio. O problema é antigo: o corpo humano é hermético e autorregulado por natureza — não existe fenda aberta esperando por uma substância estranha. Para que uma molécula produza efeito previsível, ela precisa encontrar, dentro dessa maquinaria fechada, um ponto de encaixe específico — um alvo molecular, geralmente uma proteína (receptor, enzima, canal ou transportador) cuja forma tridimensional aceita aquela molécula e não qualquer outra. Esse encontro é o núcleo de toda a farmacologia, e ele só é completo quando se olha por dois ângulos complementares: o que o corpo faz com o fármaco até ele chegar (e sair) do alvo — a farmacocinética — e o que o fármaco faz ao alvo uma vez que chega lá — a farmacodinâmica. O nome 'fármaco', do grego pharmakon, carrega desde a Antiguidade um duplo sentido de remédio e veneno, porque a mesma molécula que cura em uma dose mata em outra — a diferença nunca está na substância, está no encontro. Este bloco é o mapa panorâmico dessas três ideias — o que é um fármaco, o que é seu alvo, e as duas metades PK/PD — que os três blocos seguintes vão detalhar cada um por si.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você tem, num tubo de ensaio, uma molécula nova, sintetizada num laboratório ontem à tarde. Ela tem uma fórmula estrutural definida, um peso molecular, uma forma tridimensional específica. Nada nela diz 'eu sou um remédio'. Uma molécula, por si só, não é fármaco — é só matéria organizada de um certo jeito. A pergunta que abre toda a farmacologia é exatamente essa: o que precisa acontecer para que essa molécula deixe de ser uma curiosidade química e passe a produzir um efeito previsível e útil dentro de um corpo vivo?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema não é trivial porque o corpo humano não é um recipiente passivo esperando para ser alterado. É um sistema hermético, compartimentado, cheio de barreiras — membranas celulares, epitélios de revestimento, enzimas que degradam o que não reconhece, um fígado inteiro dedicado a neutralizar substâncias estranhas. Se você já estudou o tecido epitelial, sabe que ele existe justamente para separar o dentro do fora e controlar o que atravessa essa fronteira. Uma molécula jogada nesse sistema, na grande maioria das vezes, não faz nada: é ignorada, degradada ou expelida antes de produzir qualquer efeito."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como uma molécula qualquer passa a ter efeito"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução para esse problema não está em tornar a molécula mais forte ou mais concentrada — está em ela encontrar, dentro da maquinaria do corpo, um ponto de encaixe muito específico. O corpo humano é construído inteiramente de proteínas que têm forma tridimensional própria: receptores na membrana das células, enzimas que catalisam reações, canais que abrem e fecham para íons, transportadores que carregam substâncias de um lado a outro. Cada uma dessas proteínas tem uma superfície com reentrâncias e saliências moleculares tão específicas quanto uma fechadura."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma molécula só produz efeito biológico relevante quando sua forma encaixa nessa fechadura — quando ela se liga, com força e seletividade suficientes, a uma dessas proteínas. Esse ponto de encaixe se chama alvo molecular, e é ele que transforma uma molécula qualquer numa molécula com endereço certo dentro do corpo. Sem alvo, não há efeito reprodutível; há, no máximo, ruído químico que o corpo elimina como eliminaria qualquer outra substância estranha."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: uma molécula não é fármaco por sua estrutura sozinha, mas pelo encontro que ela consegue estabelecer com um alvo molecular específico dentro do corpo. É esse encontro — não a molécula isolada — que é o objeto real de estudo da farmacologia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feito esse encontro"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "De um lado do encontro está a molécula exógena — o que os três blocos seguintes vão chamar, com mais precisão terminológica, de fármaco, ou de princípio ativo quando embalado numa forma farmacêutica que vira medicamento. Do outro lado está o alvo: majoritariamente proteínas, porque são as proteínas que fazem quase todo o trabalho funcional das células — receptores acoplados a proteína G, receptores nucleares, canais iônicos dependentes de voltagem ou de ligante, enzimas do metabolismo, transportadores de membrana."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A ligação entre os dois lados não é mágica: é físico-química, movida por forças de interação molecular — pontes de hidrogênio, interações eletrostáticas, forças de van der Waals, encaixe hidrofóbico — que se somam quando a geometria da molécula complementa a geometria da proteína-alvo. Quanto mais complementares as formas, mais forte e mais seletiva a ligação. É essa complementaridade que explica por que um fármaco atua sobre um alvo e não sobre os milhares de outras proteínas do corpo: a maioria simplesmente não tem a forma certa para recebê-lo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como o encontro se desenrola no tempo"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse encontro entre molécula e alvo não é instantâneo nem estático — ele é uma história com começo, meio e fim, e essa história pode ser dividida, por conveniência didática e clínica, em duas metades complementares. A primeira metade responde: o que o corpo faz com essa molécula até ela chegar ao alvo, permanecer lá tempo suficiente, e depois ser removida? Esse é o território da farmacocinética — absorção, distribuição, metabolismo, excreção. É a jornada física da molécula dentro do organismo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A segunda metade responde a uma pergunta diferente: uma vez que a molécula chegou ao alvo e se ligou a ele, o que exatamente acontece? Como essa ligação se traduz em uma mudança funcional na célula, no tecido, no órgão, e finalmente num efeito clínico observável? Esse é o território da farmacodinâmica — o que o fármaco faz ao corpo, a partir do momento em que encontra seu alvo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "As duas metades são inseparáveis na prática, mas didaticamente úteis de separar, porque falham por razões diferentes. Um fármaco pode ter o alvo perfeito e ainda assim não funcionar clinicamente — se a farmacocinética falhar, por exemplo, se ele for destruído no fígado antes de alcançar a circulação, ou se nunca atravessar a barreira necessária para chegar ao tecido-alvo. E o inverso também é verdadeiro: uma molécula pode chegar intacta e na concentração certa ao órgão certo e, mesmo assim, não produzir efeito nenhum, se sua farmacodinâmica for fraca — se o encaixe no alvo for muito frágil ou disparar pouca resposta biológica."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Toda farmacologia se resume, na sua essência, a duas perguntas complementares sobre o mesmo encontro: **o que o corpo faz ao fármaco (farmacocinética)** e **o que o fármaco faz ao corpo (farmacodinâmica)**. Nenhum medicamento funciona bem se falhar em qualquer uma das duas."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Neste ponto você já tem o esqueleto inteiro do que é estudar farmacologia: uma molécula que precisa de um alvo proteico específico para ter efeito, e uma jornada dividida em duas metades — a viagem física até o alvo, e a consequência funcional de chegar lá. Os próximos blocos vão abrir cada uma dessas peças separadamente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse encontro se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse encontro depende diretamente de conhecimento que você já tem. A existência de barreiras epiteliais — estudada em Histologia — é o motivo pelo qual a maior parte dos fármacos administrados por via oral precisa atravessar o epitélio intestinal antes de alcançar a circulação sistêmica; sem entender que o epitélio é uma fronteira seletiva e polarizada, não se entende por que a via de administração de um fármaco altera tanto sua eficácia. A natureza das proteínas-alvo — sua estrutura terciária, seus sítios de ligação — depende do que a Bioquímica já ensinou sobre dobramento proteico e interações moleculares."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse encontro também vai se ramificar para dentro deste próprio semestre. A distinção terminológica entre fármaco, droga, medicamento e princípio ativo, o detalhamento de quais famílias de proteínas funcionam como alvo e o que torna um alvo seletivo, e o desdobramento completo de farmacocinética e farmacodinâmica em seus processos internos — tudo isso é aprofundado, cada tema em separado, nos três blocos que seguem este."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "fármaco",
+      "origem": "do grego pharmakon (φάρμακον)",
+      "significado": "substância que cura, mas também substância que envenena — o mesmo termo grego servia para as duas coisas",
+      "explicacao": "Pharmakon é uma das palavras mais estudadas da história da filosofia da medicina justamente por esse duplo sentido, que não é acidente de tradução: os gregos antigos reconheciam, muito antes de qualquer bioquímica, que remédio e veneno não são duas categorias de substâncias diferentes, mas dois desfechos possíveis do mesmo encontro entre uma molécula e um corpo. A palavra farmacologia (pharmakon + logos, 'estudo de') herda esse duplo sentido: estudar fármacos é estudar, ao mesmo tempo, o que cura e o que mata, e a fronteira entre os dois nunca está na substância — está na dose, na via, no alvo e no organismo que a recebe. É por isso que praticamente todo fármaco eficaz também é, em alguma dose ou contexto, uma substância tóxica: a mesma ligação a um alvo que produz benefício terapêutico numa concentração produz dano numa concentração maior."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o encontro"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🏢",
+      "conteudo": "Pense num prédio corporativo com segurança rígida: ninguém entra sem crachá compatível com a fechadura eletrônica de uma sala específica. Um visitante (o fármaco) só consegue entrar se seu crachá (a forma molecular) encaixar exatamente na fechadura de uma sala (o alvo molecular) — não existe porta genérica aberta para qualquer um. Uma vez dentro, acontecem duas histórias em paralelo: a segurança do prédio decide para onde escoltar o visitante, quanto tempo ele fica e quando o expulsa (o que o corpo faz com o fármaco); e o visitante, enquanto está lá dentro, faz alguma coisa na sala em que entrou — assina um documento, aciona um alarme, entrega uma mensagem (o que o fármaco faz ao corpo). A analogia quebra num ponto: um visitante humano decide sozinho quando ir embora; o fármaco não decide nada — é o prédio (o organismo) que, através de suas próprias regras internas de metabolismo e excreção, acaba expulsando o visitante mais cedo ou mais tarde, quisesse ele ficar ou não."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se uma molécula tivesse afinidade forte por um alvo, mas o corpo a destruísse completamente no fígado antes de ela alcançar a circulação sistêmica, ela seria um bom fármaco?",
+      "resposta": "Não, apesar de ter tudo o que parece necessário do lado da farmacodinâmica. Esse é exatamente o ponto que faz da divisão PK/PD indispensável: afinidade perfeita pelo alvo (farmacodinâmica impecável) não compensa uma jornada que nunca chega ao destino (farmacocinética falha). É esse cenário — metabolismo hepático extenso antes mesmo de a molécula alcançar a circulação — que caracteriza o que a farmacologia chama de efeito de primeira passagem, um dos motivos mais comuns pelos quais moléculas promissoras em laboratório fracassam como medicamentos reais. O encontro entre fármaco e alvo só conta se a molécula sobreviver para chegar até ele."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O encontro molécula-alvo e as duas metades da farmacologia",
+      "descricao": "Esquema didático dividido em três partes conectadas. À esquerda, uma molécula pequena (representada como estrutura poligonal simples com átomos coloridos) percorrendo um trajeto tracejado através de camadas do corpo (pele/epitélio intestinal, corrente sanguínea, membrana celular) até alcançar uma proteína-alvo maior representada com um sítio de ligação em formato de fechadura. Um selo ou rótulo 'FARMACOCINÉTICA — o que o corpo faz ao fármaco' sobre esse trajeto. À direita, um close-up do encaixe entre a molécula (chave) e o alvo proteico (fechadura), com uma seta de consequência levando a um efeito celular representado por uma mudança simples (ex.: um canal se abrindo, uma cascata de sinalização estilizada). Rótulo 'FARMACODINÂMICA — o que o fármaco faz ao corpo' sobre essa metade. Estilo de diagrama vetorial de livro didático, cores suaves, legendas em português, fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno, cores suaves e alto contraste, sem texturas fotorrealistas. Composição dividida em duas metades ligadas por uma seta central. Metade esquerda, rotulada 'FARMACOCINÉTICA — o que o corpo faz ao fármaco': uma pequena molécula hexagonal colorida percorre um caminho tracejado atravessando, em sequência, uma camada de epitélio intestinal estilizada, um vaso sanguíneo com hemácias, e uma célula hepática semi-transparente indicando metabolismo parcial, até alcançar a membrana de uma célula-alvo. Metade direita, rotulada 'FARMACODINÂMICA — o que o fármaco faz ao corpo': zoom em uma proteína receptora em formato de fechadura na membrana celular, com a molécula encaixando-se perfeitamente nela (analogia chave-fechadura), seta de consequência levando a um pequeno esquema de canal iônico se abrindo e sinalização intracelular estilizada (setas em cascata). Legendas curtas em português. Sem marcas d'água, sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-00-000",
+        "titulo": "Farmacologia — O Que É e Por Que Existe",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume que o aluno já entende por que a farmacologia existe como disciplina — o diálogo entre fármaco e organismo — antes de detalhar o que é um fármaco e como esse diálogo se estrutura em PK/PD."
+      },
+      {
+        "bloco_id": "s1-hist-02-001",
+        "titulo": "Tecido Epitelial — Visão Geral",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "contexto_util",
+        "explicacao": "A ideia de que o corpo é compartimentado por barreiras epiteliais seletivas é o que explica, aqui, por que uma molécula precisa 'atravessar' estruturas do corpo antes de alcançar seu alvo — fundamento direto da farmacocinética."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-00-002",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Distinção entre fármaco, droga, medicamento e princípio ativo",
+        "mecanismo_conexao": "Este bloco usa os termos de forma panorâmica; o próximo bloco detalha as fronteiras terminológicas exatas entre eles.",
+        "confianca": "estabelecido"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-00-003",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "O alvo molecular em detalhe: receptores, enzimas, canais, transportadores e seletividade",
+        "mecanismo_conexao": "Este bloco introduz o alvo molecular apenas como conceito de encaixe; o próximo detalha as famílias de proteínas-alvo e o que determina a seletividade de um fármaco por elas.",
+        "confianca": "estabelecido"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-00-004",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Farmacocinética e farmacodinâmica em detalhe",
+        "mecanismo_conexao": "Este bloco apresenta PK e PD apenas como as duas metades do encontro; o próximo bloco abre cada uma delas nos seus processos internos (ex.: absorção, distribuição, metabolismo, excreção; tipos de ligação receptor-ligante, curvas dose-resposta).",
+        "confianca": "estabelecido"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica_medica",
+        "semestre_futuro": 6,
+        "topico": "Prescrição racional e escolha de fármacos por mecanismo de ação",
+        "mecanismo_conexao": "Todo raciocínio de prescrição clínica parte implicitamente desta mesma pergunta panorâmica: qual é o alvo do fármaco escolhido, e se a farmacocinética do paciente específico permite que ele chegue lá em concentração eficaz e segura.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-02-001",
+        "tipo_relacao": "APLICACAO",
+        "explicacao": "O epitélio, estudado como barreira estrutural em Histologia, reaparece aqui como o obstáculo funcional que a farmacocinética precisa vencer para que um fármaco oral alcance seu alvo."
+      }
+    ]
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-00-001-fc01",
+      "pergunta": "Por que uma molécula com estrutura química definida não é, só por isso, um fármaco?",
+      "resposta": "Porque o efeito farmacológico não é propriedade isolada da molécula, mas do encontro dela com um alvo molecular específico dentro do corpo — geralmente uma proteína (receptor, enzima, canal ou transportador) cuja forma tridimensional aceita aquela molécula. Sem esse encaixe específico, a molécula é apenas eliminada, ignorada ou degradada como qualquer substância estranha, sem produzir efeito biológico reprodutível.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": [
+        "farmaco",
+        "alvo-molecular",
+        "conceito-fundamental"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-00-001-fc02",
+      "pergunta": "Uma molécula tem afinidade altíssima pelo seu alvo, mas é quase completamente metabolizada no fígado antes de alcançar a circulação sistêmica. Ela vai funcionar bem como medicamento?",
+      "resposta": "Não necessariamente — provavelmente não, se a dose não compensar essa perda. Farmacodinâmica perfeita (encaixe forte no alvo) não substitui farmacocinética funcional (a molécula precisa sobreviver à jornada e chegar ao alvo em concentração suficiente). Esse cenário descreve o efeito de primeira passagem hepática, uma causa comum de fracasso de moléculas promissoras como medicamentos.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "farmacodinamica",
+        "primeira-passagem"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-00-001-fc03",
+      "pergunta": "A palavra grega pharmakon, origem de 'fármaco', tinha um duplo sentido que muitos alunos ignoram. Qual é esse duplo sentido e por que ele continua sendo verdade na farmacologia moderna?",
+      "resposta": "Pharmakon significava, ao mesmo tempo, remédio e veneno — o grego antigo não separava as duas ideias em palavras diferentes. Isso continua verdadeiro hoje porque a mesma molécula, ligada ao mesmo alvo, produz benefício terapêutico numa dose e toxicidade numa dose maior: a diferença nunca está na substância em si, está no encontro — a dose, a via de administração, o alvo específico e o organismo que a recebe.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 2,
+      "tags": [
+        "etimologia",
+        "farmaco",
+        "dose"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Este bloco é conceitual e panorâmico: define o que é um alvo molecular em geral e apresenta a divisão PK/PD sem se referir a um fármaco, receptor ou doença específicos. O exemplo usado no texto (uma molécula com farmacodinâmica perfeita destruída por metabolismo hepático de primeira passagem) já está desenvolvido como pergunta contrafactual e não corresponde a uma síndrome clínica real e nomeável — é um princípio geral de farmacocinética, não um caso de paciente. Um caso clínico real e específico exigiria escolher um fármaco individual, o que pertence aos blocos futuros de cada classe farmacológica."
+  },
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-00-001-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "etimologia"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 1 — Drug Invention and the Pharmaceutical Industry / Princípios Gerais.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 1 — Introduction: The Nature of Drugs and Drug Development.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Capítulo 1 — What Is Pharmacology?",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

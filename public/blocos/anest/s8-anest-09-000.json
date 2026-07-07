@@ -12,34 +12,373 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Anestesia Geral — Condução",
+    "subtitulo": "Do momento em que a seringa entra na veia até o paciente abrir os olhos: o que exatamente o anestesiologista está decidindo a cada minuto?",
     "semestre": 8,
     "disciplina": "Anestesiologia",
+    "sistema_corporal": "sistema nervoso",
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 16,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
       "anest",
-      "esqueleto"
+      "conducao-anestesica",
+      "inducao",
+      "manutencao",
+      "emergencia",
+      "via-aerea",
+      "monitorizacao",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Levar o paciente à inconsciência, mantê-lo e devolvê-lo com segurança",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior você viu que a anestesia geral suspende, de forma deliberada e reversível, três sistemas de autoproteção do corpo — consciência, nocicepção e reflexos motores — e que esse ciclo tem cinco etapas: avaliação, indução, controle da via aérea, manutenção e emergência. Este bloco entra dentro de cada uma dessas etapas — exceto a avaliação pré-anestésica, que ganha módulo próprio — e pergunta: o que exatamente o anestesiologista decide, segundo a segundo, entre o instante em que empurra o hipnótico na veia e o instante em que o paciente reabre os olhos? A resposta passa por três problemas distintos: uma corrida contra o relógio na indução, uma titulação contínua guiada por sinais objetivos na manutenção, e uma sequência de reversão que não pode ser trocada de ordem na emergência.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, o piloto automático foi desligado — a analogia do avião mostrou que a anestesia geral suspende os próprios mecanismos de autorregulação do corpo, e alguém precisa assumir os controles manualmente enquanto isso dura. Mas ficou uma pergunta em aberto: como, exatamente, esse segundo piloto assume o comando? Não é um botão único. É uma sequência de decisões técnicas, cada uma criando uma vulnerabilidade nova que a decisão seguinte precisa neutralizar antes que vire dano."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que a indução é o momento de maior risco de toda a anestesia?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pense na velocidade dos eventos. Um hipnótico venoso como o propofol atinge o cérebro em menos de um minuto — a pessoa vai da conversa consciente ao apagão em cerca de 20 a 40 segundos. Só que a perda de consciência e a perda dos reflexos protetores da via aérea não são o mesmo evento: a capacidade de proteger a própria laringe contra saliva, sangue ou conteúdo gástrico regurgitado desaparece no mesmo intervalo de segundos, e a ordem exata entre as duas perdas varia de pessoa para pessoa [⚠️ a literatura descreve variabilidade individual nessa sequência temporal; não é uma ordem fixa e determinística, mas o intervalo de vulnerabilidade combinada existe em praticamente todos os casos]."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso cria uma janela perigosa: por alguns segundos a dezenas de segundos, o paciente pode estar sem reflexo de tosse, sem reflexo de deglutição eficaz, e ainda sem via aérea artificial nenhuma no lugar. Se houver conteúdo gástrico na faringe nesse instante — mesmo que o jejum tenha sido respeitado, basta refluxo silencioso — ele pode ser aspirado para os pulmões sem que nenhum reflexo de tosse avise. É esse o problema real que a técnica de indução resolve: comprimir ao máximo essa janela vulnerável."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Fixe antes de seguir: a indução não é 'fazer o paciente dormir'. É administrar a perda de consciência de um jeito que minimize o tempo em que a via aérea fica desprotegida e sem substituto — porque esse intervalo, não a inconsciência em si, é o que mata em minutos."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve — as duas estratégias de indução"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando o risco de aspiração é baixo (jejum confirmado, sem obstrução intestinal, sem gravidez avançada, sem refluxo grave), a indução segue um ritmo mais gradual: hipnótico venoso, seguido de ventilação assistida com máscara facial para garantir que o paciente esteja recebendo oxigênio antes mesmo de qualquer dispositivo de via aérea definitivo entrar, e só depois — com calma — o bloqueador neuromuscular e o dispositivo de via aérea escolhido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando o risco de aspiração é considerado alto — estômago cheio, obstrução intestinal, gravidez no terceiro trimestre, cirurgia de urgência sem jejum —, a lógica se inverte: a prioridade passa a ser eliminar a janela vulnerável o mais rápido possível. O hipnótico e o bloqueador neuromuscular de ação mais rápida disponível são administrados quase simultaneamente, evitando a ventilação sob máscara no meio do caminho, e a via aérea definitiva é assegurada no menor tempo possível."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa técnica — chamada indução em sequência rápida — e as manobras e dispositivos específicos usados para garantir a via aérea nesse contexto de alto risco têm módulo próprio nesta disciplina, porque envolvem uma discussão técnica e uma literatura de eficácia debatida que vão além do que este bloco panorâmico precisa resolver."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A escolha entre indução gradual (com ventilação sob máscara no meio do caminho) e indução de sequência rápida (sem ventilação intermediária) não é estilo pessoal do anestesiologista — é resposta direta a uma pergunta objetiva: este paciente tem o estômago cheio ou um mecanismo que aumenta o risco de regurgitação?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita a decisão de manutenção — e por que ela nunca é 'dose única'"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma vez resolvida a indução e assegurada a via aérea, começa a fase mais longa do procedimento: a manutenção. O erro de quem nunca viu uma sala de cirurgia é imaginar que o anestesiologista aplica uma dose e espera. Na realidade, cada componente da tríade — hipnose, analgesia, relaxamento — é titulado quase minuto a minuto, porque dois fatores mudam o tempo todo: o estímulo cirúrgico (uma incisão de pele dói menos que a tração de um peritônio ou a manipulação de uma víscera) e a farmacocinética da própria droga infundida (o corpo redistribui e metaboliza continuamente, então a mesma taxa de infusão não garante a mesma concentração no cérebro ao longo de três horas)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para titular sem adivinhar, o anestesiologista lê sinais objetivos substitutos de cada componente. Frequência cardíaca e pressão arterial subindo em resposta a um estímulo cirúrgico sugerem analgesia insuficiente para aquele momento específico — não necessariamente hipnose insuficiente. Um monitor de índice biespectral (BIS) ou de entropia, que processa o eletroencefalograma do paciente em tempo real, estima a profundidade hipnótica diretamente, reduzindo a dependência de sinais indiretos como pressão e frequência cardíaca, que também respondem a outras causas (hemorragia, dor, ansiedade residual). E um monitor de bloqueio neuromuscular, que aplica um estímulo elétrico periférico e mede a resposta motora, informa objetivamente quanto relaxamento muscular ainda está ativo — sem ele, o anestesiologista estaria adivinhando se o paciente já pode ser extubado com segurança ou se ainda há bloqueio residual perigoso."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O ciclo de titulação contínua durante a manutenção",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Leitura do sinal",
+          "explicacao": "A cada poucos minutos, o anestesiologista lê a combinação de sinais vitais, capnografia, monitor de profundidade hipnótica e fase da cirurgia em andamento (o cirurgião está fazendo incisão ou apenas suturando?)."
+        },
+        {
+          "numero": 2,
+          "titulo": "Atribuição de causa",
+          "explicacao": "Taquicardia com hipertensão durante uma manipulação visceral sugere estímulo doloroso não coberto — provável necessidade de mais analgésico, não necessariamente mais hipnótico."
+        },
+        {
+          "numero": 3,
+          "titulo": "Ajuste titulado",
+          "explicacao": "A infusão ou concentração inalatória do componente identificado é ajustada em pequenos incrementos — nunca em grandes saltos, porque cada droga tem uma janela terapêutica estreita entre efeito insuficiente e efeito excessivo."
+        },
+        {
+          "numero": 4,
+          "titulo": "Reavaliação",
+          "explicacao": "O efeito do ajuste é conferido nos minutos seguintes, fechando um ciclo de retroalimentação contínua que se repete centenas de vezes ao longo de uma cirurgia de médio porte."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse ciclo é o motivo de a anestesiologia ser descrita como disciplina de vigilância tanto quanto de farmacologia, como já apontado no bloco anterior — mas agora fica claro *o que*, concretamente, está sendo vigiado e ajustado a cada rodada: não é uma variável só, são três, cada uma respondendo a um estímulo diferente, e a habilidade clínica está em não confundir qual delas está desregulada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona a emergência — a reversão tem uma ordem que não pode ser trocada"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ao final da cirurgia, a tentação intuitiva seria 'desligar tudo de uma vez'. É exatamente o oposto do que se faz, porque cada componente da tríade, ao ser revertido fora de ordem, reabre uma vulnerabilidade específica antes que a próxima proteção esteja pronta para cobri-la."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloqueio neuromuscular é revertido primeiro — farmacologicamente (com um antagonista específico) ou permitindo que o próprio metabolismo do bloqueador elimine seu efeito — e sua reversão é confirmada objetivamente pelo monitor de bloqueio neuromuscular antes de qualquer tentativa de extubação. Reverter tarde demais, ou extubar com bloqueio residual não detectado, deixa o paciente com força muscular insuficiente para manter a via aérea superior pérvia e para gerar uma tosse eficaz — uma causa reconhecida de obstrução respiratória grave na sala de recuperação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Só depois de confirmado o relaxamento muscular revertido é que o hipnótico é suspenso ou reduzido a ponto de permitir o retorno da consciência. E a extubação — a retirada do tubo traqueal — só acontece quando os reflexos protetores da via aérea (tosse, deglutição) já retornaram, o que normalmente coincide com o paciente respondendo a comandos simples. Extubar um paciente ainda sem esses reflexos reproduz exatamente o mesmo risco de aspiração da indução, só que na direção inversa: a proteção artificial (o tubo) sai antes de a proteção natural (o reflexo) ter voltado."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Abrir os olhos indica retorno da consciência. Não indica, por si só, retorno dos reflexos protetores da via aérea. São dois eventos farmacologicamente distintos — e é essa distinção que decide se uma extubação é segura ou perigosa."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a ordem de reversão fosse invertida — suspender primeiro o hipnótico, e só depois reverter o bloqueio neuromuscular — o que aconteceria?",
+      "resposta": "O paciente recuperaria a consciência enquanto ainda está parcial ou totalmente paralisado pelo bloqueador neuromuscular. Ele estaria acordado, sentindo a presença do tubo traqueal — um estímulo extremamente desconfortável — mas incapaz de tossir, de se mover, de sinalizar qualquer coisa, porque a musculatura ainda não respondeu ao comando neural. É uma situação de pânico consciente e paralisado, análoga em sofrimento ao awareness intraoperatório descrito no bloco anterior, mas ocorrendo na emergência em vez de na indução. É exatamente por isso que a sequência — reverter força motora, confirmar objetivamente, só então permitir consciência plena — nunca é invertida na prática clínica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que a condução da anestesia geral se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada decisão descrita aqui depende de um corpo de conhecimento que ganhará módulo próprio nesta disciplina. A escolha entre indução gradual e sequência rápida depende do módulo de vias aéreas e do risco de aspiração pulmonar. A leitura dos sinais durante a manutenção depende do módulo de monitorização perioperatória — sem entender o que a capnografia, o BIS e o monitor de bloqueio neuromuscular efetivamente medem, a titulação vira suposição. E toda essa condução pressupõe a farmacologia específica de cada classe de droga usada na tríade, que também vem em módulo dedicado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Há ainda uma conexão que só aparece quando a condução sai do script esperado: se, durante a manutenção, o anestesiologista observa hipercapnia progressiva, taquicardia e rigidez muscular inexplicada pelo plano anestésico em curso, ele precisa reconhecer que pode estar diante de uma complicação rara e potencialmente fatal — não um desvio trivial de titulação, mas um evento que exige protocolo de emergência específico, tratado em módulo próprio desta disciplina."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome desta etapa"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "condução (anestésica)",
+      "origem": "do latim conducere — con- (junto) + ducere (conduzir, guiar)",
+      "significado": "literalmente, 'guiar através de', no sentido de acompanhar e dirigir um processo do início ao fim",
+      "explicacao": "O termo não é exclusivo da anestesiologia — 'condução' também nomeia a propagação do impulso elétrico cardíaco e a transmissão de calor em física. Nos três casos, a raiz comum é a ideia de algo sendo guiado através de um percurso, sob controle ativo, e não deixado a fluir sozinho. Na anestesiologia, 'conduzir' a anestesia é justamente o oposto de 'aplicar e esperar': é acompanhar cada instante do percurso entre indução e emergência, ajustando o curso continuamente — o mesmo sentido presente em 'condutor' de um veículo, que corrige a trajetória o tempo todo, e não apenas liga o motor e sai do carro."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar a lógica da condução"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎻",
+      "conteudo": "Pense num regente de orquestra conduzindo uma peça ao vivo, não uma gravação tocando sozinha. A **indução** é o momento em que o regente ergue a batuta e a orquestra passa do silêncio para o som — um instante crítico, porque a transição precisa ser bem calculada para que nenhum naipe fique exposto sem apoio. A **manutenção** é o corpo da peça: o regente não dá uma instrução única no início e se senta — ele ajusta volume, andamento e ênfase compasso a compasso, respondendo ao que ouve em tempo real, exatamente como o anestesiologista ajusta cada componente da tríade em resposta aos sinais monitorados. A **emergência** é o final da peça, onde os naipes se calam numa ordem específica e ensaiada — não todos de uma vez, senão o final soa abrupto — assim como o bloqueio neuromuscular precisa ser revertido e confirmado antes de o hipnótico ser suspenso. A analogia quebra num ponto importante: um erro de entrada numa orquestra produz uma nota dissonante, desconfortável mas sem consequência física real; um paciente cuja via aérea fica desprotegida por segundos demais pode sofrer um dano que nenhuma peça musical jamais impõe — é por isso que, na anestesia, não existe margem para o tipo de improviso que a música às vezes tolera."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "A linha do tempo da condução anestésica e suas janelas de vulnerabilidade",
+      "descricao": "Esquema didático em formato de linha do tempo horizontal, dividida em três blocos sucessivos (indução, manutenção, emergência), cada bloco com uma curva ondulada acima representando o nível de consciência e uma curva ondulada abaixo representando o nível de bloqueio neuromuscular, mostrando visualmente os pontos em que as duas curvas se cruzam ou se distanciam — essas zonas de cruzamento, destacadas com sombreamento diferenciado, representam as janelas de vulnerabilidade (via aérea desprotegida na indução, paciente consciente e ainda paralisado se a emergência fosse invertida). No bloco de manutenção, pequenos ícones circulares ao longo da linha do tempo representam os monitores (capnografia, profundidade hipnótica, bloqueio neuromuscular) conectados por setas tracejadas a pontos de ajuste na curva.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente adaptativo para tema claro e escuro, estilo de infográfico médico contemporâneo e minimalista, sem nenhum texto, palavra, letra ou número embutido na imagem. Composição em formato de linha do tempo horizontal ampla, dividida visualmente em três segmentos sucessivos por linhas verticais finas pontilhadas. No primeiro segmento (mais estreito), duas curvas onduladas se cruzam rapidamente — uma curva representando consciência descendo abruptamente, outra representando reflexos protetores também descendo em ritmo ligeiramente diferente, com uma pequena área sombreada em tom de alerta destacando o intervalo entre as duas quedas. No segmento central (mais longo), três curvas onduladas paralelas oscilam suavemente para cima e para baixo em pequenas variações ao longo do tempo, cada uma com um pequeno ícone circular flutuante acima representando um tipo de monitor abstrato (um ícone de onda respiratória, um ícone de onda cerebral estilizada, um ícone de músculo esquelético estilizado), conectados por setas tracejadas finas apontando para pontos específicos de ajuste nas curvas abaixo. No terceiro segmento, as mesmas curvas de consciência e reflexos motores agora sobem novamente, em sequência escalonada e não simultânea, com uma segunda área sombreada de alerta caso a ordem de subida fosse invertida. Paleta sóbria de azul-petróleo, verde-água e cinza-grafite, com um único tom de destaque em âmbar suave para as áreas sombreadas de vulnerabilidade. Traços vetoriais limpos, estilo minimalista de livro-texto, sem texturas fotorrealistas, sem qualquer rotulagem textual dentro da imagem."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s8-anest-00-000",
+        "titulo": "Anestesiologia — A Medicina de Suspender e Devolver a Consciência com Segurança",
+        "disciplina": "Anestesiologia",
+        "semestre": 8,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco pressupõe a tríade farmacológica (hipnose, analgesia, relaxamento muscular) e o ciclo de cinco etapas já apresentados no bloco fundacional — aqui apenas as etapas de indução, manutenção e emergência são aprofundadas em detalhe de condução real."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s8-anest-09-002",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Manejo da via aérea difícil e dispositivos de via aérea",
+        "mecanismo_conexao": "A escolha entre indução gradual e sequência rápida, e a urgência de assegurar via aérea antes da hipóxia, são o motivo de existir do módulo dedicado a algoritmos de via aérea difícil, laringoscopia e dispositivos supraglóticos.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": "s8-anest-09-003",
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Farmacologia dos hipnóticos, opioides e bloqueadores neuromusculares",
+        "mecanismo_conexao": "A titulação de cada componente da tríade descrita aqui de forma operacional depende do mecanismo molecular específico de cada classe de droga, que ganha módulo próprio.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Monitorização perioperatória multiparamétrica (capnografia, BIS, monitor de bloqueio neuromuscular)",
+        "mecanismo_conexao": "Os sinais lidos durante a manutenção e a confirmação da reversão do bloqueio neuromuscular antes da extubação são operacionalizados tecnicamente no módulo de monitorização, que explica o que cada monitor mede e por que.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Hipertermia maligna e complicações graves da anestesia geral",
+        "mecanismo_conexao": "O sinal de alerta citado aqui — hipercapnia progressiva com rigidez muscular inexplicada durante a manutenção — é o quadro de apresentação clássico da hipertermia maligna, desenvolvido em módulo próprio de complicações graves.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "Anestesiologia",
+        "semestre_futuro": 8,
+        "topico": "Bloqueio neuromuscular residual e obstrução respiratória pós-operatória",
+        "mecanismo_conexao": "A obstrução da via aérea superior por bloqueio residual não detectado na emergência, citada aqui, é uma causa reconhecida de eventos respiratórios graves na sala de recuperação pós-anestésica, tema de módulo específico de complicações pós-operatórias imediatas.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s8-anest-09-001",
+        "tipo_relacao": "EXEMPLO_PARALELO",
+        "explicacao": "Se o módulo de avaliação pré-anestésica (etapa 1 do ciclo) existir como bloco irmão, ele determina de antemão qual estratégia de indução (gradual ou sequência rápida) será usada — a decisão descrita aqui nasce da avaliação feita antes."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s8-anest-09-000-fc01",
+      "pergunta": "Que característica clínica do paciente leva o anestesiologista a escolher indução em sequência rápida em vez de indução gradual, e o que muda operacionalmente nessa escolha?",
+      "resposta": "A decisão é guiada pelo risco estimado de aspiração de conteúdo gástrico: estômago cheio, obstrução intestinal, gravidez avançada ou cirurgia de urgência sem jejum apontam para sequência rápida. Operacionalmente, isso muda a prioridade — em vez de ventilar sob máscara com calma entre o hipnótico e a via aérea definitiva (como na indução gradual), a sequência rápida busca eliminar o mais rápido possível o intervalo em que a via aérea está desprotegida, aceitando uma janela de apneia sem ventilação assistida no meio do caminho.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "inducao-sequencia-rapida",
+        "aspiracao",
+        "via-aerea"
+      ]
+    },
+    {
+      "card_id": "s8-anest-09-000-fc02",
+      "pergunta": "Durante a manutenção, um paciente apresenta taquicardia e hipertensão exatamente no momento em que o cirurgião traciona o peritônio. O monitor de profundidade hipnótica mostra valores dentro do alvo esperado. Qual componente da tríade anestésica provavelmente precisa de ajuste, e por quê?",
+      "resposta": "Provavelmente o componente analgésico, não o hipnótico. A elevação de frequência cardíaca e pressão arterial coincidindo com um estímulo cirúrgico doloroso específico (tração visceral) é o padrão clássico de analgesia insuficiente para aquele momento — o sistema nervoso autônomo está reagindo à nocicepção não bloqueada. Como o monitor de profundidade hipnótica já confirma que a consciência está adequadamente suprimida, aumentar o hipnótico trataria o componente errado e arriscaria hipotensão desnecessária. O ajuste correto é titular o analgésico (geralmente um opioide) para cobrir o pico de estímulo nociceptivo daquele instante específico.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "titulacao",
+        "triade-anestesica",
+        "monitorizacao"
+      ]
+    },
+    {
+      "card_id": "s8-anest-09-000-fc03",
+      "pergunta": "Se, na emergência anestésica, o hipnótico fosse suspenso antes de o bloqueio neuromuscular ser revertido e confirmado, o que o paciente vivenciaria?",
+      "resposta": "O paciente recuperaria a consciência enquanto ainda está paralisado, total ou parcialmente, pelo bloqueador neuromuscular. Estaria acordado, sentindo o desconforto do tubo traqueal na via aérea, mas incapaz de se mover, de tossir ou de sinalizar qualquer coisa a quem está ao redor — uma experiência de pânico consciente e imobilizado, análoga em sofrimento ao awareness intraoperatório descrito no bloco anterior, mas ocorrendo no despertar em vez da indução. É por isso que a reversão do bloqueio neuromuscular, confirmada objetivamente por monitor específico, sempre precede a permissão para o retorno pleno da consciência.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "emergencia-anestesica",
+        "bloqueio-neuromuscular",
+        "seguranca-do-paciente"
+      ]
+    },
+    {
+      "card_id": "s8-anest-09-000-fc04",
+      "pergunta": "Paciente extubado logo após abrir os olhos e responder ao próprio nome apresenta, dois minutos depois, estridor e retração intercostal na sala de recuperação. O monitor de bloqueio neuromuscular não foi conferido antes da extubação. Qual é a hipótese mais provável e por que a sequência de eventos aponta para ela?",
+      "resposta": "A hipótese mais provável é obstrução de via aérea superior por bloqueio neuromuscular residual não detectado. Abrir os olhos e responder ao nome reflete retorno da consciência, mas não garante, por si só, que a força muscular da via aérea superior e o reflexo de tosse já retornaram integralmente — esses dois retornos podem estar dissociados. Sem a confirmação objetiva do monitor de bloqueio neuromuscular antes da extubação, um grau residual de paralisia pode passar despercebido e se manifestar minutos depois, quando o esforço respiratório aumenta e a musculatura da via aérea superior não sustenta a permeabilidade — daí o estridor e a retração. O caso ilustra por que a confirmação objetiva da reversão, e não apenas sinais clínicos indiretos de vigília, é etapa obrigatória antes da extubação.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "bloqueio-residual",
+        "extubacao",
+        "obstrucao-via-aerea",
+        "seguranca-do-paciente"
+      ]
+    },
+    {
+      "card_id": "s8-anest-09-000-fc05",
+      "pergunta": "Compare a indução gradual e a indução em sequência rápida quanto ao critério que decide qual usar, à etapa de ventilação sob máscara e ao objetivo prioritário de cada uma.",
+      "resposta": "O critério que decide qual técnica usar é o risco estimado de aspiração de conteúdo gástrico: jejum confirmado e ausência de fatores de risco favorecem indução gradual; estômago cheio, obstrução intestinal ou gravidez avançada favorecem sequência rápida. Na indução gradual, a ventilação sob máscara é feita deliberadamente entre o hipnótico e a via aérea definitiva, garantindo oxigenação contínua enquanto o bloqueador neuromuscular faz efeito com calma. Na sequência rápida, essa ventilação intermediária é evitada, e o objetivo prioritário passa a ser encurtar ao máximo o tempo entre a perda de consciência e a via aérea definitiva assegurada, mesmo aceitando um período de apneia sem suporte ventilatório.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "inducao-anestesica",
+        "sequencia-rapida",
+        "comparacao"
+      ]
+    },
+    {
+      "card_id": "s8-anest-09-000-fc06",
+      "pergunta": "A palavra 'condução', usada para descrever a fase intraoperatória da anestesia geral, compartilha raiz latina com 'condução cardíaca' (o impulso elétrico do coração). O que essa raiz comum revela sobre por que esse termo — e não 'aplicação' ou 'administração' — foi escolhido para nomear essa fase?",
+      "resposta": "A raiz latina conducere (con- junto + ducere conduzir) descreve algo sendo guiado ativamente através de um percurso, sob controle contínuo — não apenas iniciado e deixado seguir sozinho. Isso é exatamente o oposto de 'aplicar uma dose e esperar': a condução anestésica exige acompanhamento e ajuste constante ao longo de todo o intraoperatório, assim como a condução do impulso elétrico cardíaco percorre um trajeto guiado pelo sistema de condução especializado, e não se propaga aleatoriamente pelo miocárdio. O nome escolhido para essa fase da anestesia já denuncia, na própria etimologia, que ela é processo contínuo e ativamente dirigido, não evento único.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "etimologia",
+        "conducao-anestesica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s8-anest-09-000-caso01",
+      "titulo": "Estridor na sala de recuperação dez minutos após a extubação",
+      "apresentacao": "Homem de 45 anos, ASA II, submetido a colecistectomia videolaparoscópica eletiva de 90 minutos sob anestesia geral balanceada, com bloqueador neuromuscular adespolarizante para facilitar o pneumoperitônio. Ao final da cirurgia, o paciente abre os olhos e obedece ao comando de apertar a mão do anestesiologista; é extubado e encaminhado à sala de recuperação pós-anestésica. Dez minutos depois, a equipe de enfermagem chama o anestesiologista: o paciente está agitado, com estridor inspiratório audível à distância, tiragem intercostal e saturação de oxigênio caindo de 98% para 89% apesar de máscara de oxigênio suplementar.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O bloqueador neuromuscular adespolarizante administrado durante a cirurgia ainda não havia sido completamente revertido no momento da extubação; a reversão farmacológica foi feita, mas sem confirmação objetiva por monitor de bloqueio neuromuscular antes de retirar o tubo."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A musculatura da via aérea superior — em especial os músculos que mantêm a faringe pérvia durante a inspiração (genioglosso e constritores faríngeos) — permanece parcialmente paralisada, mesmo que a musculatura respiratória principal (diafragma) já tenha força suficiente para gerar movimentos respiratórios visíveis e mesmo que a consciência já tenha retornado o bastante para obedecer a comandos simples."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com o tônus faríngeo reduzido, a via aérea superior colapsa parcialmente durante o esforço inspiratório, criando resistência aumentada ao fluxo de ar — o mesmo princípio físico de qualquer obstrução parcial de via aérea alta."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Estridor inspiratório (o som característico do ar turbulento passando por via aérea alta estreitada), tiragem intercostal (esforço respiratório aumentado tentando vencer a resistência) e queda progressiva da saturação de oxigênio, apesar de suplementação."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem reconhecimento e intervenção rápidos, o quadro evolui para insuficiência respiratória franca e hipóxia grave — uma das causas evitáveis mais bem documentadas de eventos adversos graves no período pós-anestésico imediato."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra diretamente a distinção central deste bloco: retorno da consciência (obedecer a comando, abrir os olhos) e retorno da força muscular protetora da via aérea são eventos farmacologicamente independentes, não sinônimos. A extubação segura exige confirmação objetiva do segundo, não apenas evidência clínica do primeiro — exatamente o ponto em que esta sequência de emergência falhou.",
+      "disciplinas_relacionadas": [
+        "anestesiologia",
+        "fisiologia-respiratoria",
+        "farmacologia"
+      ],
+      "diagnostico_revelado": "Obstrução de via aérea superior por bloqueio neuromuscular residual (curarização residual) não detectado antes da extubação.",
+      "tratamento_resumido": "Suporte ventilatório imediato e reversão adicional do bloqueio neuromuscular guiada por monitor objetivo, com reintubação eletiva se não houver melhora rápida — o detalhamento técnico dessas manobras pertence ao módulo de manejo de via aérea e monitorização. Prevenção futura: nunca extubar sem confirmação quantitativa da reversão do bloqueio neuromuscular, independentemente dos sinais clínicos de vigília."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-anest-09-000-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente",
+        "tipo_imagem": "esquema_didatico"
+      }
+    ],
     "videos": [],
     "audios": []
   },
@@ -47,13 +386,32 @@
   "estado_ciclo_vida": "rascunho",
   "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
+    "gerado_por": "workflow-anima-s8",
     "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "revisado_por": "integrador-anima-s8",
+    "data_revisao": "2026-07-06",
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Miller RD, Gropper MA. Miller's Anesthesia. 9th ed. Elsevier; 2020. Chapter 20 — Airway Management; Chapter 34 — Monitoring of the Anesthetized Patient.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Butterworth JF, Mackey DC, Wasnick JD. Morgan & Mikhail's Clinical Anesthesiology. 6th ed. McGraw-Hill; 2018. Chapter 19 — Airway Management; Chapter 47 — Neuromuscular Blocking Agents.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Barash PG, Cullen BF, Stoelting RK, et al. Clinical Anesthesia. 8th ed. Wolters Kluwer; 2017. Chapter 15 — Airway Management; Chapter 51 — Postanesthesia Recovery.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "conduta/técnica",
     "manejo/segurança",

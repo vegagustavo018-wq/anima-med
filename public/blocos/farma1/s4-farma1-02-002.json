@@ -8,48 +8,306 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Curva Dose-Resposta — Medir o Efeito (Visão Geral)",
+    "subtitulo": "Se o encaixe fármaco-receptor muda a célula, como isso vira um número que dá para comparar?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacodinamica",
+      "curva-dose-resposta",
+      "ec50",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Relação quantitativa dose-efeito; graduada x quantal; EC50",
-  "narrativa": [],
+  "resumo_conciso": "O bloco anterior mostrou que o fármaco se liga a um alvo pré-existente e dispara uma cascata que a célula já sabia executar. Mas essa descrição é qualitativa: diz que o efeito acontece, não diz o quanto, nem a partir de que dose, nem como comparar dois fármacos entre si. A farmacologia precisa de uma ferramenta que transforme essa relação causal em algo mensurável e comparável — e essa ferramenta é a curva dose-resposta, o gráfico que relaciona a quantidade de fármaco administrada ao tamanho do efeito produzido. Existem duas formas distintas de fazer essa pergunta, dependendo do que se está medindo. Quando o efeito pode ser quantificado em graus contínuos numa mesma pessoa ou tecido — mais ou menos contração muscular, mais ou menos queda de pressão —, a curva é graduada, e ela reflete diretamente quantos receptores estão ocupados a cada concentração. Quando o efeito só pode ser registrado como presente ou ausente em cada indivíduo de uma população — dormiu ou não dormiu, sobreviveu ou não sobreviveu —, a pergunta muda de natureza: não se mede intensidade em um sujeito, mas a fração de sujeitos que respondem a cada dose, e a curva vira quantal. As duas curvas têm o mesmo formato em S, mas respondem perguntas diferentes: uma é sobre intensidade num organismo, a outra é sobre variabilidade entre organismos. Essa distinção conceitual é a base para tudo que vem a seguir sobre potência, eficácia e margem de segurança.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você já sabe que um fármaco encontra seu alvo, se liga, muda a conformação da proteína e dispara uma cascata que a célula amplifica. Essa é a história do mecanismo. Mas um professor, um pesquisador ou um médico raramente perguntam apenas 'isso acontece?'. Eles perguntam 'o quanto acontece, e com que dose?'. Sem responder a essa segunda pergunta, é impossível comparar dois fármacos, escolher uma dose segura ou saber se um paciente está recebendo pouco ou demais."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: uma relação causal não é, sozinha, um número comparável"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Dizer que 'mais fármaco produz mais efeito' é intuitivo, mas inútil em estado bruto. A farmacologia precisa de uma forma padronizada de registrar essa relação — algo que permita colocar dois fármacos lado a lado, prever o efeito de uma dose ainda não testada, e identificar em que faixa de dose o efeito começa a aparecer e em que faixa ele para de crescer. Sem esse registro sistemático, cada observação clínica seria um caso isolado, não generalizável."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema aqui não é mais 'o fármaco age?' — isso já foi resolvido no bloco anterior. O problema é 'como transformar uma relação causal em um gráfico e um número que se pode comparar entre fármacos, entre doses, entre pacientes'."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: colocar a dose num eixo e o efeito no outro"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução é simples de enunciar e poderosa na prática: variar a quantidade de fármaco administrada e registrar, a cada quantidade, o tamanho do efeito observado. Ao lançar esses pares de valores num gráfico — dose no eixo horizontal, efeito no eixo vertical —, aparece quase sempre a mesma forma: uma curva em S, achatada nas duas pontas e íngreme no meio. Essa forma não é coincidência estatística; ela reflete a lógica de ocupação progressiva do alvo molecular, que satura à medida que a dose sobe."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Só que essa pergunta genérica — 'dose produz quanto efeito' — pode ser feita de duas maneiras muito diferentes, dependendo da natureza do que está sendo medido. E é aqui que a curva dose-resposta se bifurca em dois tipos."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Toda curva dose-resposta responde à mesma pergunta geral — quanto efeito para quanta dose — mas o tipo de efeito que se está medindo determina se a curva é **graduada** (intensidade contínua num único sujeito) ou **quantal** (presença ou ausência do efeito numa população)."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita essa distinção"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere dois experimentos diferentes. No primeiro, um pesquisador expõe uma tira de músculo liso a concentrações crescentes de um fármaco e mede, a cada concentração, o grau de contração — em milímetros, em porcentagem do máximo possível. O efeito é uma variável contínua: pode ser 10%, 47%, 92% do máximo. Esse tipo de medida gera a curva **graduada**: um único sujeito (ou tecido, ou órgão), cujo efeito cresce em grau à medida que a dose sobe."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "No segundo experimento, um pesquisador dá doses crescentes de um sedativo a cem camundongos diferentes e, para cada dose, verifica apenas se cada animal dormiu ou não dormiu — uma resposta de tudo-ou-nada, não uma escala de intensidade. Ao aumentar a dose, mais animais da população passam a responder, mesmo que dentro de cada animal a resposta não tenha grau algum. Esse tipo de medida gera a curva **quantal**: não descreve intensidade dentro de um sujeito, descreve a fração da população que cruzou o limiar de resposta em cada dose."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A raiz dessa diferença está na variabilidade biológica entre indivíduos. Numa curva graduada, o sujeito é o mesmo do início ao fim do experimento — a variação vem só da dose. Numa curva quantal, cada indivíduo da população tem seu próprio limiar de sensibilidade ao fármaco, e é justamente essa distribuição de limiares — alguns indivíduos mais sensíveis, outros menos — que faz a curva quantal também assumir o formato em S: em baixas doses, só os mais sensíveis respondem; em doses intermediárias, a maioria; em doses altas, praticamente todos."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Neste ponto você já tem o essencial: a mesma pergunta geral — dose versus efeito — pode olhar para dentro de um único organismo (graduada) ou para a distribuição de respostas dentro de uma população (quantal). Os dois tipos de gráfico se parecem, mas medem coisas conceitualmente diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como isso funciona, na prática"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na curva graduada, o eixo do efeito é ancorado no próprio tecido: o efeito máximo é definido pela resposta mais alta que aquele sujeito consegue produzir, e o ponto médio da subida — a dose que produz metade do efeito máximo — se torna uma referência central para comparar a potência de fármacos diferentes atuando no mesmo alvo. É esse ponto médio, chamado de EC50, que os próximos temas vão detalhar com precisão — aqui basta reconhecer que ele existe como o meio-do-caminho da curva graduada, sem entrar em como se calcula."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na curva quantal, o eixo do efeito é a porcentagem da população que respondeu, e o ponto médio da subida — a dose que faz metade da população cruzar o limiar — vira uma referência de outra natureza: descreve variabilidade entre indivíduos, não intensidade de efeito. É a partir dessa lógica quantal que a farmacologia constrói, mais adiante, ferramentas para comparar a dose que funciona com a dose que faz mal, numa mesma população — mas o detalhamento desse cálculo e dos termos específicos fica para o próximo bloco."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um mesmo fármaco pode, e costuma, ter as duas curvas descritas na literatura: uma graduada, mostrando o quanto o efeito cresce num tecido isolado ou num paciente à medida que a dose sobe; e uma quantal, mostrando que fração de uma população precisa de qual dose para atingir um desfecho definido como presente ou ausente. Nenhuma das duas substitui a outra — respondem perguntas diferentes sobre o mesmo fármaco."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa ferramenta se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A curva dose-resposta é a ponte entre o mecanismo molecular do bloco anterior — ligação, mudança conformacional, cascata — e os conceitos quantitativos que vêm a seguir: potência, eficácia máxima, margem de segurança entre efeito terapêutico e efeito tóxico. Sem o gráfico dose-efeito como linguagem comum, nenhum desses conceitos teria como ser definido de forma comparável entre fármacos."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Na prática clínica, essa distinção já aparece antes mesmo de qualquer cálculo: quando um médico ajusta a dose de um anti-hipertensivo observando o quanto a pressão de um paciente específico caiu, está raciocinando sobre uma curva graduada. Quando uma agência regulatória define a dose de um anestésico que garante que 95% de uma população fique inconsciente, está raciocinando sobre uma curva quantal. São duas lógicas de decisão diferentes, e confundi-las é um erro conceitual comum no início do estudo de farmacologia."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "quantal",
+      "origem": "do latim quantus (quanto, de que tamanho), pela via do inglês quantal, cunhado em estatística e farmacologia experimental do início do século XX",
+      "significado": "relativo a uma unidade discreta e indivisível de resposta — 'tudo ou nada'",
+      "explicacao": "O termo quantal foi adotado em farmacologia para descrever respostas que não admitem grau: o evento acontece por inteiro ou não acontece, sem meio-termo — o mesmo espírito da palavra 'quantum' na física, uma unidade que não se fraciona. Em contraste, graduada vem diretamente do latim gradus (degrau, passo), evocando uma escala contínua de degraus intermediários. A oposição entre as duas palavras já anuncia a diferença conceitual: uma descreve degraus de intensidade, a outra descreve uma porta que está aberta ou fechada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar o todo"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🌡️",
+      "conteudo": "Pense em testar o quanto uma sala esquenta ao ligar um aquecedor em potências crescentes. Se você colocar um termômetro na sala e ler a temperatura a cada potência, está fazendo uma curva **graduada**: uma única sala, um efeito que cresce em grau contínuo — 20°C, 24°C, 28°C. Agora imagine, em vez disso, perguntar a cem pessoas diferentes, em cada potência do aquecedor, se **cada uma delas, individualmente, já considera a sala 'quente'** — sim ou não, sem meio-termo. Em potência baixa, só as pessoas mais friorentas dizem sim; em potência alta, quase todas dizem sim. Isso é uma curva **quantal**: não mede grau de calor num sujeito, mede quantas pessoas de uma população cruzaram o próprio limiar de considerar 'quente'. A analogia quebra num ponto: o limiar de cada pessoa para 'sala quente' é subjetivo e comportamental, enquanto o limiar biológico de cada organismo a um fármaco tem uma base farmacológica real (diferenças de receptores, de metabolismo) — mas o formato da pergunta, intensidade-num-sujeito versus fração-de-uma-população, é exatamente o mesmo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se a farmacologia só tivesse a curva graduada, e nunca a quantal, que tipo de decisão clínica ficaria impossível de tomar com segurança?",
+      "resposta": "Ficaria impossível responder a perguntas sobre uma população inteira de pacientes, e não apenas sobre um único organismo. A curva graduada informa muito bem o quanto o efeito cresce num tecido ou num paciente à medida que a dose sobe, mas não diz nada sobre quão variável é a sensibilidade entre pessoas diferentes. Decisões como 'que dose garante efeito na grande maioria dos pacientes' ou 'que dose começa a causar dano grave numa fração pequena, mas real, da população' exigem pensar em distribuição de respostas entre indivíduos — exatamente o que a curva quantal descreve. Sem ela, a segurança de uma dose padronizada para uso em massa não teria como ser estimada."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Duas perguntas, duas curvas",
+      "descricao": "Esquema didático em dois painéis lado a lado, ambos com eixo horizontal de dose (escala logarítmica) e curva em formato de S. Painel esquerdo rotulado 'CURVA GRADUADA': eixo vertical mostrando '% do efeito máximo' num único tecido/sujeito, curva única subindo suavemente. Painel direito rotulado 'CURVA QUANTAL': eixo vertical mostrando '% da população que respondeu', curva única subindo suavemente, mas com pequenos ícones de bonecos ao longo da curva para reforçar que cada ponto representa uma fração de indivíduos, não um grau de efeito. Legendas curtas em português abaixo de cada painel destacando a diferença conceitual. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. Dois painéis lado a lado separados por uma linha vertical fina. Painel esquerdo com título 'CURVA GRADUADA': eixo X 'Dose (escala log)', eixo Y '% do efeito máximo em um sujeito', uma curva sigmoide (formato S) única e suave subindo da esquerda para a direita, com uma legenda pequena abaixo dizendo 'intensidade contínua num mesmo tecido'. Painel direito com título 'CURVA QUANTAL': eixo X 'Dose (escala log)', eixo Y '% da população que respondeu', uma curva sigmoide de formato semelhante, mas com pequenos ícones esquemáticos de pessoas (bonecos simples) distribuídos ao longo da curva, alguns preenchidos (responderam) e outros vazios (não responderam) proporcionalmente à altura da curva em cada ponto, com legenda pequena abaixo dizendo 'fração de indivíduos que cruzou o limiar'. Paleta de cores suaves e consistente entre os dois painéis, alto contraste, sem texturas fotorrealistas, sem marcas d'água, texto apenas nas legendas indicadas, em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-000",
+        "titulo": "Farmacodinâmica — O Que o Fármaco Faz ao Corpo (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco assume que o aluno já entende a lógica de encaixe fármaco-receptor e a cascata de amplificação — a curva dose-resposta é a forma de medir e comparar esse mecanismo, não uma ideia nova e independente dele."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Potência, eficácia máxima e EC50",
+        "mecanismo_conexao": "A curva graduada apresentada aqui em forma panorâmica é a base gráfica sobre a qual potência e eficácia máxima serão definidas com precisão no próximo bloco.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Índice terapêutico e margem de segurança (DE50/DL50)",
+        "mecanismo_conexao": "A lógica quantal apresentada aqui — fração de uma população que responde a cada dose — é o alicerce direto sobre o qual se constrói a comparação entre dose eficaz e dose tóxica numa população.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Individualização de dose à beira do leito",
+        "mecanismo_conexao": "A distinção entre raciocinar sobre um paciente específico (lógica graduada) e sobre uma população de referência (lógica quantal) é a base conceitual para entender por que uma dose 'padrão' pode ser certa para a maioria e errada para um paciente específico.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-002-fc01",
+      "pergunta": "Qual é a diferença fundamental entre o que uma curva dose-resposta graduada mede e o que uma curva quantal mede?",
+      "resposta": "A curva graduada mede a intensidade contínua de um efeito dentro de um único sujeito ou tecido à medida que a dose sobe (por exemplo, o grau de contração muscular). A curva quantal mede a fração de uma população que apresenta um efeito de tudo-ou-nada (presente ou ausente) a cada dose, refletindo a variabilidade de limiares de sensibilidade entre indivíduos diferentes, não o grau de efeito num único sujeito.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "curva-dose-resposta",
+        "graduada-vs-quantal"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-fc02",
+      "pergunta": "Por que tanto a curva graduada quanto a curva quantal costumam assumir o mesmo formato em S, mesmo medindo coisas conceitualmente diferentes?",
+      "resposta": "Na curva graduada, o formato em S reflete a ocupação progressiva e a saturação do alvo molecular à medida que a dose sobe. Na curva quantal, o formato em S reflete a distribuição de limiares de sensibilidade entre os indivíduos da população: em doses baixas só os mais sensíveis respondem, em doses intermediárias a maioria responde, em doses altas quase todos respondem. A semelhança visual esconde uma diferença de origem — saturação de receptor num caso, distribuição populacional de sensibilidade no outro.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "curva-dose-resposta",
+        "variabilidade-biologica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-fc03",
+      "pergunta": "Se a farmacologia dispusesse apenas de curvas graduadas, que tipo de pergunta clínica sobre uma população de pacientes ficaria sem resposta segura?",
+      "resposta": "Ficaria sem resposta segura qualquer pergunta sobre variabilidade entre indivíduos — por exemplo, que dose garante efeito terapêutico na grande maioria de uma população, ou em que dose começa a aparecer dano grave numa fração pequena de pacientes. A curva graduada só descreve intensidade de efeito num sujeito já exposto; ela não informa quão distribuída está a sensibilidade entre pessoas diferentes, que é exatamente o que a lógica quantal captura.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "curva-quantal",
+        "seguranca-populacional"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-fc04",
+      "pergunta": "As palavras 'graduada' e 'quantal' vêm de raízes latinas opostas em espírito (gradus versus quantus/quantum). Como essa etimologia ajuda a fixar a diferença conceitual entre as duas curvas?",
+      "resposta": "Gradus significa degrau, passo — evocando uma escala contínua de intensidade crescente, exatamente o que a curva graduada descreve num único sujeito. Quantal deriva do espírito de 'quantum', uma unidade discreta e indivisível — evocando uma resposta de tudo-ou-nada, exatamente o que a curva quantal descreve ao registrar se cada indivíduo de uma população respondeu ou não. A raiz da palavra já anuncia se a curva fala de graus dentro de um sujeito ou de uma contagem populacional de eventos discretos.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacodinamica",
+        "etimologia",
+        "curva-dose-resposta"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-002-fc05",
+      "pergunta": "Um médico observa o quanto a pressão arterial de um paciente específico caiu ao aumentar a dose de um anti-hipertensivo. Uma agência regulatória, por outro lado, define a dose de um anestésico que garante inconsciência em 95% de uma população de referência. Qual lógica de curva dose-resposta cada um está usando, e por que confundir as duas é um erro conceitual?",
+      "resposta": "O médico está raciocinando sobre uma curva graduada: intensidade de efeito (queda de pressão) num único paciente à medida que a dose muda. A agência está raciocinando sobre uma curva quantal: fração de uma população que atinge um desfecho de tudo-ou-nada (inconsciência) a cada dose. Confundir as duas é um erro porque uma dose que produz efeito graduado excelente num paciente não diz nada, por si só, sobre que fração de uma população precisaria dessa mesma dose para um efeito de tudo-ou-nada — são perguntas com respostas numéricas diferentes, mesmo quando aplicadas ao mesmo fármaco.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacodinamica",
+        "curva-dose-resposta",
+        "decisao-clinica"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "Este bloco é uma visão geral metodológica sobre como medir e representar graficamente a relação dose-efeito (curva graduada versus curva quantal), não uma estrutura biológica cuja falha produza uma doença. É uma ferramenta de mensuração farmacológica, aplicável a qualquer fármaco e qualquer receptor, sem cascata causal própria de Causa→Estrutura Afetada→Disfunção. Casos clínicos que ilustram titulação de dose e variabilidade populacional de resposta pertencem aos blocos sobre fármacos e doenças específicos, não a este conceito abstrato."
+  },
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-002-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 2 — Drug Receptors and Pharmacodynamics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 2 — How Drugs Act: General Principles.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
   "_lentes": [
     "farmacodinamica",
     "molecular"

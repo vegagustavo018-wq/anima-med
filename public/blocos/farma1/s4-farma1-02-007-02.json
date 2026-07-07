@@ -2,53 +2,358 @@
   "resumo_id": "s4-farma1-02-007-02",
   "no_pai_id": "s4-farma1-02-007",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": [
+    "s4-farma1-02-003-04"
+  ],
   "metadata": {
     "titulo": "Interações Farmacodinâmicas: Sinergia e Antagonismo",
+    "subtitulo": "Dois fármacos podem se afetar mesmo sem mudar a concentração um do outro?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 4,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-06",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "interacoes-medicamentosas",
+      "farmacodinamica",
+      "sinergia",
+      "antagonismo",
+      "aditividade",
+      "potenciacao",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Aditividade, potenciação, antagonismo no mesmo/diferente alvo",
-  "narrativa": [],
+  "resumo_conciso": "O bloco irmão sobre interações farmacocinéticas mostrou como um fármaco pode mudar quanto do outro chega ao alvo. Mas existe uma segunda forma de interação, mais sutil, em que a concentração de cada fármaco está exatamente como seria se ele estivesse sozinho — e ainda assim o efeito final muda, porque os dois convergem no mesmo alvo ou na mesma via fisiológica. É a interação farmacodinâmica. Quando os efeitos se somam na proporção esperada, é aditividade. Quando a soma final é maior do que a simples adição das partes previria, é potenciação (ou sinergismo). Quando um fármaco reduz ou anula o efeito do outro, é antagonismo farmacodinâmico — já visto em detalhe no bloco sobre antagonismo farmacológico, fisiológico e químico, aqui aplicado ao contexto de combinações terapêuticas reais. Essas três relações não são curiosidade acadêmica: são a lógica por trás de por que certas combinações de anti-hipertensivos são desenhadas de propósito, por que misturar depressores do sistema nervoso central é perigoso mesmo em doses individualmente seguras, e por que medir a concentração plasmática de um fármaco nunca é suficiente, sozinha, para prever o que vai acontecer quando ele encontra outro dentro do mesmo corpo. Este é o último bloco do módulo de interações — e, com ele, farmacocinética e farmacodinâmica finalmente se encontram numa única pergunta clínica.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você mediu, com todo cuidado, a concentração plasmática de dois fármacos num paciente e ambas estão exatamente dentro do valor esperado para as doses prescritas. Nenhum dos dois interferiu na absorção, no metabolismo ou na excreção do outro. Pela lógica do bloco anterior, você concluiria que não há interação. E, ainda assim, o paciente pode estar tendo uma queda de pressão perigosa, ou uma sedação profunda que nenhum dos dois fármacos causaria sozinho na mesma dose."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: interação sem nenhuma mudança de concentração"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O trajeto de cada fármaco foi perfeito. O que mudou não foi quanto fármaco chegou ao corpo, mas o que aconteceu quando cada um encontrou seu alvo. Dois fármacos podem atuar no mesmo receptor, em receptores diferentes que convergem para a mesma via fisiológica, ou em sistemas que se opõem — e o resultado final, no organismo, deixa de ser a soma simples do que cada um faria isolado."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse é exatamente o problema que a farmacodinâmica de combinações precisa resolver: como prever o efeito final de dois fármacos que convergem no mesmo alvo ou na mesma via, quando a concentração de cada um, isoladamente, não conta toda a história?"
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar o problema: interação farmacodinâmica é aquela em que a concentração de cada fármaco está normal, mas o efeito combinado no organismo não é simplesmente a soma esperada — porque os dois convergem, no alvo ou na via fisiológica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: comparando o efeito observado ao efeito esperado"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacologia resolveu isso com uma estratégia simples de enunciar: calcular qual seria o efeito esperado se os dois fármacos apenas se somassem, sem se influenciar, e comparar esse valor esperado ao efeito realmente observado quando os dois são usados juntos. A diferença entre o esperado e o observado é o que classifica a interação."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Se o efeito observado é igual ao esperado pela soma simples, a relação é de aditividade. Se o efeito observado é maior do que a soma simples previa, é potenciação — também chamada de sinergismo. Se o efeito observado é menor do que o esperado, incluindo a possibilidade de anular completamente o efeito de um dos fármacos, é antagonismo farmacodinâmico."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A régua é sempre a mesma: efeito observado versus efeito esperado pela soma simples. Igual à soma → aditividade. Maior que a soma → potenciação. Menor que a soma, ou anulado → antagonismo farmacodinâmico."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita cada uma dessas três relações"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A aditividade é feita, na maioria dos casos, de dois fármacos com o mesmo mecanismo de ação, atuando no mesmo tipo de receptor ou na mesma via, cada um contribuindo com sua própria fração de efeito. Dois anti-hipertensivos com mecanismos idênticos, em doses parciais, somam suas quedas de pressão de forma previsível — nada de novo emerge do encontro dos dois, além da soma das partes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A potenciação, em contraste, costuma nascer de dois mecanismos diferentes que convergem na mesma via fisiológica final, de tal forma que um fármaco amplifica a sensibilidade do sistema ao outro — não apenas soma seu próprio efeito, mas torna o efeito do parceiro maior do que seria sozinho. É a razão pela qual combinações de classes farmacológicas diferentes, cada uma em dose baixa, podem produzir um efeito terapêutico maior do que dobrar a dose de um único fármaco — com a vantagem adicional de reduzir os efeitos adversos específicos de cada classe."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O antagonismo farmacodinâmico, por sua vez, é feito de qualquer uma das três lógicas já detalhadas no bloco sobre antagonismo farmacológico, fisiológico e químico: competição pelo mesmo receptor, convergência de efeitos opostos em vias diferentes do mesmo sistema, ou neutralização química direta entre as moléculas. O que muda aqui não é o mecanismo — já visto — mas o contexto: em vez de um antagonista sendo usado deliberadamente para reverter um efeito indesejado, o antagonismo aparece como um efeito colateral indesejado de uma combinação terapêutica, reduzindo a eficácia de um dos fármacos sem que ninguém tenha planejado isso."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como funciona, em movimento: dois exemplos opostos"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere um paciente hipertenso em uso de um diurético tiazídico e um inibidor da enzima conversora de angiotensina, cada um em dose moderada. O diurético reduz volume circulante; o inibidor da ECA reduz a formação de angiotensina II, um potente vasoconstritor. Os dois mecanismos são diferentes, mas convergem na mesma via fisiológica final: a pressão arterial. Mais do que isso — o diurético, ao reduzir volume, ativa reflexamente o sistema renina-angiotensina, o que tornaria o corpo mais dependente da angiotensina II justamente no momento em que o segundo fármaco bloqueia essa via. O resultado é uma queda de pressão maior do que a soma das duas quedas isoladas previria: potenciação real, e por isso essa combinação é desenhada de propósito, com doses menores de cada fármaco do que seriam necessárias em monoterapia."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Agora considere o cenário oposto: um paciente em uso de um benzodiazepínico para ansiedade que passa a tomar, por conta própria, um opioide para dor lombar. Nenhum dos dois altera a farmacocinética do outro de forma relevante. Mas ambos deprimem o sistema nervoso central por vias diferentes — um potencializando a ação do GABA, o outro ativando receptores opioides que também suprimem o centro respiratório. As duas vias convergem no mesmo desfecho fisiológico final: depressão respiratória. O efeito combinado de depressão do sistema nervoso central é maior do que a soma das duas depressões isoladas seria em doses habitualmente seguras — de novo, potenciação, só que perigosa e não planejada, e é exatamente por isso que a combinação de depressores do sistema nervoso central é uma das interações farmacodinâmicas mais temidas na prática clínica."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Repare que os dois casos usam o mesmo mecanismo — convergência de vias diferentes no mesmo sistema, com amplificação além da soma simples. A diferença entre uma combinação terapêutica desenhada e um efeito adverso grave não está no tipo de interação, mas em ela ter sido antecipada e dosada, ou não."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa distinção se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Aditividade, potenciação e antagonismo farmacodinâmico só fazem sentido para quem já sabe que um fármaco tem um alvo e uma via de sinalização — a base construída em toda a farmacodinâmica deste módulo. E o antagonismo farmacodinâmico, especificamente, retoma sem repetir a classificação em farmacológico, fisiológico e químico já detalhada no bloco irmão sobre antagonismo: aqui, o mesmo trio de mecanismos reaparece não como ferramenta terapêutica deliberada, mas como um resultado a ser antecipado sempre que dois fármacos com potencial convergente forem combinados."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa distinção entre interação farmacocinética e farmacodinâmica também fecha o raciocínio aberto no bloco de visão geral do módulo: diante de qualquer combinação inesperada, a pergunta prática é sempre a mesma — a concentração mudou (trajeto) ou o efeito convergiu (alvo)? Combinações desenhadas propositalmente, como a de anti-hipertensivos de classes diferentes, usam a potenciação farmacodinâmica a favor do paciente. Combinações não planejadas, como a de dois depressores do sistema nervoso central, usam exatamente o mesmo mecanismo contra ele."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "sinergia e potenciação",
+      "origem": "sinergia, do grego synergía (syn = junto + érgon = trabalho, obra); potenciação, do latim potentia (poder, capacidade)",
+      "significado": "sinergia: 'trabalho conjunto'; potenciação: 'ato de tornar mais poderoso'",
+      "explicacao": "Synergía descrevia, na Grécia antiga, a cooperação entre pessoas trabalhando juntas para um resultado que nenhuma alcançaria sozinha — o mesmo sentido usado hoje em farmacologia para dois fármacos cujo efeito conjunto excede a soma das partes. Potentia, por sua vez, é a mesma raiz de 'potência' e 'potente': o verbo potenciar significa literalmente aumentar o poder de algo. Ambas as palavras entregam, na própria origem, exatamente o fenômeno que descrevem: uma cooperação (synergía) da qual emerge mais poder (potentia) do que a simples presença de duas partes separadas explicaria. É um raro caso em farmacologia onde o nome popular (sinergia) e o nome técnico (potenciação) contam a mesma história por caminhos etimológicos diferentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma analogia para fixar as três relações"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🎤",
+      "conteudo": "Pense em dois cantores dividindo o mesmo microfone num show. Se cada um canta sua própria linha de melodia com o volume de sempre, e o som final é exatamente a soma dos dois volumes individuais — nem mais, nem menos — isso é aditividade. Se os dois cantores encontram uma harmonia que faz a plateia ouvir um som muito mais cheio e potente do que a simples soma dos dois volumes sugeriria — as vozes se reforçando de um jeito que nenhuma sozinha conseguiria — isso é potenciação: o todo supera a soma das partes. E se um dos cantores está desafinado ou cantando em contratempo, atrapalhando a linha melódica do outro a ponto de o som final ficar pior do que se apenas um deles estivesse cantando sozinho — isso é antagonismo farmacodinâmico. A analogia quebra num ponto importante: no palco, a plateia consegue ouvir e corrigir o volume em tempo real; no corpo, a 'plateia' é o próprio organismo do paciente, que só revela se a combinação foi aditiva, potenciadora ou antagônica depois que o efeito já aconteceu — daí a importância de prever o tipo de interação antes de prescrever, e não apenas constatar depois."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma síntese para fechar o módulo e a farmacodinâmica inteira"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Voltando à pergunta que abriu a visão geral da farmacodinâmica — 'o que o fármaco faz ao corpo?' — o que este bloco final, sobre interações, acrescenta a essa pergunta original?",
+      "resposta": "A farmacodinâmica começou estudando um único fármaco encontrando um único alvo: afinidade, atividade intrínseca, agonismo, antagonismo. Este bloco mostra que, na prática clínica real, a pergunta quase nunca é sobre um fármaco isolado — é sobre o que acontece quando dois (ou mais) desses encontros farmacológicos acontecem ao mesmo tempo no mesmo organismo. A resposta depende de comparar o efeito observado ao efeito esperado pela soma simples: igual é aditividade, maior é potenciação, menor ou anulado é antagonismo farmacodinâmico — e este último reaproveita, sem repetir, as três lógicas de antagonismo (farmacológico, fisiológico, químico) já vistas antes. Tudo o que a farmacodinâmica ensinou sobre um fármaco sozinho — receptor, afinidade, ativação, bloqueio — continua valendo aqui; o que muda é que agora há dois fármacos, e o organismo não os trata como eventos separados. É esse encontro, e não mais nenhum fármaco isolado, que a prática clínica de fato precisa prever.",
+      "resposta_alt": null
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Três relações entre o efeito esperado e o efeito observado",
+      "descricao": "Esquema didático com um eixo horizontal representando 'efeito esperado pela soma simples' e, ao lado, três barras comparando esse valor esperado ao efeito realmente observado em cada uma das três relações. Barra 1 (aditividade): efeito observado igual ao esperado, mesma altura, rotulada 'aditividade'. Barra 2 (potenciação): efeito observado nitidamente maior que o esperado, com seta para cima destacada, rotulada 'potenciação (sinergismo)'. Barra 3 (antagonismo farmacodinâmico): efeito observado menor que o esperado, com seta para baixo, rotulada 'antagonismo farmacodinâmico'. Pequenos ícones de exemplo abaixo de cada barra: dois comprimidos idênticos para aditividade, dois comprimidos de classes diferentes com uma seta de amplificação para potenciação, dois comprimidos com uma barreira entre eles para antagonismo. Legendas curtas em português. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático moderno. Três painéis lado a lado, cada um com um gráfico de barras simples comparando 'efeito esperado' (barra cinza tracejada, mesma altura nos três painéis) contra 'efeito observado' (barra colorida sólida). Painel 1, rotulado 'ADITIVIDADE': barra observada com exatamente a mesma altura da esperada, cor azul neutra. Painel 2, rotulado 'POTENCIAÇÃO (SINERGISMO)': barra observada nitidamente mais alta que a esperada, cor verde, com seta grande apontando para cima ao lado. Painel 3, rotulado 'ANTAGONISMO FARMACODINÂMICO': barra observada mais baixa que a esperada, cor vermelha, com seta apontando para baixo. Abaixo de cada painel, dois pequenos ícones estilizados de comprimidos coloridos diferentes indicando dois fármacos distintos. Paleta de cores suaves e consistente, alto contraste, sem texturas fotorrealistas, texto apenas nos rótulos indicados, em português."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-02-007",
+        "titulo": "Interações Medicamentosas (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha a metade farmacodinâmica da bifurcação apresentada na visão geral do módulo: interação de trajeto (farmacocinética, bloco irmão) versus interação de efeito (farmacodinâmica, este bloco)."
+      },
+      {
+        "bloco_id": "s4-farma1-02-003-04",
+        "titulo": "Antagonismo Farmacológico, Fisiológico e Químico",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "contraste_necessario",
+        "explicacao": "O antagonismo farmacodinâmico discutido aqui reaproveita, sem repetir, as três lógicas de antagonismo (farmacológico, fisiológico, químico) detalhadas nesse bloco — aqui aplicadas ao contexto específico de combinações terapêuticas indesejadas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Farmacologia dos sistemas — esquemas de combinação anti-hipertensiva e poliquimioterapia",
+        "mecanismo_conexao": "A potenciação farmacodinâmica vista aqui na combinação diurético mais inibidor da ECA é o template usado para justificar praticamente toda combinação terapêutica deliberada estudada em farmacologia dos sistemas.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Overdose por associação de depressores do sistema nervoso central",
+        "mecanismo_conexao": "O reconhecimento de depressão respiratória por potenciação farmacodinâmica entre benzodiazepínicos e opioides, apresentado aqui como exemplo, é a base do raciocínio usado em toxicologia clínica para investigar óbitos e emergências por associação de sedativos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-02-007-02-fc01",
+      "pergunta": "Qual é a régua usada para classificar uma interação farmacodinâmica como aditividade, potenciação ou antagonismo?",
+      "resposta": "Compara-se o efeito observado quando os dois fármacos são usados juntos ao efeito esperado pela soma simples de cada um isoladamente. Se o observado é igual ao esperado, é aditividade. Se é maior que o esperado, é potenciação (sinergismo). Se é menor que o esperado, ou o efeito de um é anulado, é antagonismo farmacodinâmico.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farma1",
+        "farmacodinamica",
+        "aditividade",
+        "potenciacao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-007-02-fc02",
+      "pergunta": "Por que a combinação de um diurético tiazídico com um inibidor da ECA no tratamento da hipertensão é um exemplo de potenciação, e não apenas de aditividade?",
+      "resposta": "Porque o diurético, ao reduzir o volume circulante, ativa reflexamente o sistema renina-angiotensina, tornando a pressão arterial mais dependente da angiotensina II — exatamente a via que o inibidor da ECA bloqueia. Os dois mecanismos são diferentes, mas convergem e se amplificam mutuamente na mesma via fisiológica final (pressão arterial), produzindo uma queda de pressão maior do que a soma das duas quedas isoladas previria. Por isso a combinação é desenhada de propósito, com doses menores de cada fármaco.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farma1",
+        "potenciacao",
+        "anti-hipertensivos"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-007-02-fc03",
+      "pergunta": "Um paciente em uso crônico e estável de benzodiazepínico começa a tomar um opioide para dor lombar, ambos em doses habitualmente seguras isoladamente, e desenvolve depressão respiratória grave. A concentração plasmática de cada fármaco está dentro do esperado. Que tipo de interação é essa, e por que medir a concentração não bastaria para prever o risco?",
+      "resposta": "É uma interação farmacodinâmica por potenciação: o benzodiazepínico potencializa a ação do GABA e o opioide ativa receptores opioides, duas vias diferentes que convergem no mesmo desfecho fisiológico — supressão do centro respiratório — produzindo uma depressão respiratória maior do que a soma das duas isoladamente. Como a concentração de cada fármaco está normal, medir apenas a concentração plasmática não revela esse risco: é preciso saber que os alvos convergem na mesma via fisiológica final, informação que nenhuma dosagem sérica isolada fornece.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farma1",
+        "potenciacao",
+        "depressores-snc",
+        "seguranca"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-007-02-fc04",
+      "pergunta": "O antagonismo farmacodinâmico entre dois fármacos combinados usa mecanismos diferentes do antagonismo farmacológico, fisiológico e químico já estudado? Justifique.",
+      "resposta": "Não usa mecanismos diferentes — reaproveita exatamente as mesmas três lógicas (competição pelo mesmo receptor, convergência de efeitos opostos na mesma via fisiológica, ou neutralização química direta). O que muda é o contexto: no bloco sobre antagonismo, essas lógicas eram usadas deliberadamente para reverter um efeito indesejado (como a adrenalina na anafilaxia). No contexto de interações farmacodinâmicas entre fármacos combinados, o mesmo mecanismo aparece como efeito colateral não planejado, reduzindo a eficácia de um tratamento sem que essa fosse a intenção.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farma1",
+        "antagonismo",
+        "farmacodinamica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-007-02-fc05",
+      "pergunta": "Por que a etimologia de 'sinergia' (syn + érgon, 'trabalho junto') e de 'potenciação' (potentia, 'poder') descrevem, cada uma a seu modo, o mesmo fenômeno farmacológico?",
+      "resposta": "Sinergia descreve o processo — uma cooperação entre partes que trabalham juntas. Potenciação descreve o resultado — um aumento de poder além do que cada parte teria isoladamente. As duas palavras, vindas de línguas e campos diferentes (grego para trabalho conjunto, latim para capacidade/poder), convergem para descrever exatamente o que se observa quando dois fármacos produzem, juntos, um efeito maior do que a soma das partes explicaria.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farma1",
+        "etimologia",
+        "sinergia"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-02-007-02-fc06",
+      "pergunta": "Dois anti-hipertensivos idênticos em mecanismo de ação são administrados juntos, cada um em metade da dose plena, e a queda de pressão observada é exatamente igual à soma das duas quedas que cada um produziria isoladamente na mesma dose parcial. Que tipo de relação farmacodinâmica é essa?",
+      "resposta": "Aditividade. Como os dois fármacos compartilham o mesmo mecanismo de ação e o efeito observado corresponde exatamente à soma simples esperada — nem mais, nem menos — não há amplificação (potenciação) nem redução (antagonismo) do efeito combinado.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farma1",
+        "aditividade"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-02-007-02-caso01",
+      "titulo": "Sedação profunda após associação de benzodiazepínico e opioide",
+      "apresentacao": "Homem de 68 anos, em uso crônico e estável de clonazepam para transtorno de ansiedade, procura pronto-socorro por dor lombar intensa após esforço físico. É prescrito tramadol em dose habitual para controle da dor, sem ajuste da medicação prévia. Poucas horas após a primeira dose combinada, é levado novamente ao pronto-socorro por familiares, que o encontram sonolento, com respiração superficial e dificuldade de despertar. Gasometria mostra retenção de CO2 compatível com hipoventilação. Os níveis séricos estimados de ambos os fármacos, calculados a partir das doses administradas, estão dentro da faixa terapêutica esperada para cada um isoladamente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "O clonazepam potencializa a transmissão inibitória do GABA no sistema nervoso central; o tramadol, além de seu efeito analgésico opioide, também deprime o centro respiratório bulbar. As duas vias de ação, embora distintas, convergem no mesmo desfecho fisiológico: supressão da atividade do sistema nervoso central, incluindo o controle da respiração."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Não há alteração farmacocinética relevante: nenhuma das duas doses foi elevada, e a concentração plasmática de cada fármaco corresponde ao esperado. A convergência acontece inteiramente no nível do efeito farmacodinâmico, na mesma via fisiológica final."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A depressão respiratória combinada excede a soma das depressões que cada fármaco produziria isoladamente na mesma dose — potenciação farmacodinâmica entre dois depressores do sistema nervoso central, um mecanismo bem descrito e amplamente temido na prática clínica."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Sonolência profunda, respiração superficial, dificuldade de despertar e retenção de CO2 à gasometria — sinais clássicos de hipoventilação por depressão do centro respiratório."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem reconhecimento e intervenção, o quadro pode evoluir para parada respiratória. O manejo exige suporte ventilatório, suspensão de ambos os fármacos depressores e reavaliação cuidadosa antes de reintroduzir qualquer um dos dois, com preferência por analgesia não opioide para dor lombar em pacientes já em uso crônico de benzodiazepínicos."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra a potenciação farmacodinâmica sem nenhuma alteração de concentração: as doses estavam corretas, a farmacocinética de ambos os fármacos funcionou como esperado, e ainda assim o efeito combinado foi maior do que a soma das partes — exatamente porque as duas vias convergem no mesmo desfecho fisiológico. É o contraponto direto do caso do bloco irmão sobre interação farmacocinética (varfarina e antibiótico), reforçando que a pergunta 'a concentração mudou ou o efeito convergiu?' precisa ser feita sempre, mesmo quando os níveis séricos parecem perfeitamente normais.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica",
+        "medicina-de-emergencia"
+      ],
+      "diagnostico_revelado": "Depressão respiratória por potenciação farmacodinâmica entre benzodiazepínico e opioide, sem alteração farmacocinética de nenhum dos dois fármacos.",
+      "tratamento_resumido": "Suporte ventilatório imediato, suspensão temporária de ambos os depressores do sistema nervoso central, consideração de antagonista opioide se indicado clinicamente, e reavaliação da necessidade real da combinação antes de qualquer reintrodução, priorizando alternativas analgésicas não opioides."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-02-007-02-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "clinica"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 3 — Pharmacodynamics: Molecular Mechanisms of Drug Action; Capítulo 4 — Drug Interactions.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 66 — Important Drug Interactions and Their Mechanisms.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2020. Capítulo 57 — Drug Interactions.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

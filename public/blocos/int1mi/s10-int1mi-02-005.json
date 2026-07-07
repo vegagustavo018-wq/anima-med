@@ -5,54 +5,150 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "EPA-5 — Documentar o encontro clínico no prontuário",
+    "subtitulo": "Se você não estivesse de plantão amanhã, a sua nota sozinha seria suficiente para outro médico continuar o cuidado direito?",
     "semestre": 10,
     "disciplina": "Estágio em Medicina Interna",
+    "modulo": 2,
+    "topico": 5,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "int1mi",
-      "esqueleto"
+    "lentes": [
+      "epa_avaliacao",
+      "comunicacao",
+      "seguranca_paciente"
     ],
+    "tipo_conteudo": "competencia_epa",
+    "status": "publicado",
+    "data_criacao": "2026-07-06",
+    "data_revisao": "2026-07-06",
+    "autor": "Agente Produtor ANIMA",
     "nivel": "CORE",
-    "tipo": "conceito",
-    "formato_internato": "competencia_epa",
-    "epa_codigo": "EPA-5",
-    "epa_nivel_alvo": 4
+    "tempo_estudo_minutos": 9,
+    "palavras_chave": [
+      "EPA-5",
+      "evolução clínica",
+      "prontuário",
+      "copy-paste"
+    ],
+    "formato_internato": "competencia_epa"
   },
-  "resumo_conciso": "Evolução que comunica raciocínio, não só transcreve dados: a nota que outro médico entende",
-  "narrativa": [],
+  "resumo_conciso": "Uma evolução que só lista dados (temperatura, exames, medicações) sem comunicar o raciocínio por trás da conduta obriga o próximo médico a refazer o pensamento do zero. A EPA-5 mede se a sua nota transmite o PORQUÊ, não só o QUE.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Você não vai estar de plantão amanhã à noite quando o paciente que você conduziu hoje piorar. Quem estiver lá vai abrir o prontuário e ler a sua última evolução para entender o que está acontecendo e por quê. Se a sua nota for só uma lista de dados — sinais vitais, exames, medicações prescritas — sem nenhuma frase que explique o raciocínio ('penso que o paciente está evoluindo bem porque X, mantenho conduta Y por causa de Z, fico atento a W'), esse colega vai ter que reconstruir o seu pensamento a partir de fragmentos, sob pressão, no meio de uma intercorrência."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Documentar raciocínio, não só transcrever dados"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma evolução completa segue a lógica SOAP (subjetivo, objetivo, avaliação, plano), mas o elemento que mais separa uma nota mediana de uma nota excelente é a seção de avaliação: a sua interpretação clínica do que os dados significam, e não apenas a lista deles. 'Paciente afebril, PA 120x80, FC 78' é dado. 'Paciente sem sinais de resposta inflamatória sistêmica, hemodinamicamente estável, compatível com resposta adequada ao antibiótico até aqui' é raciocínio — e é essa segunda frase que permite ao próximo médico continuar o cuidado sem precisar reinterpretar tudo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A prática de copiar e colar a evolução do dia anterior, ajustando só alguns números, é uma das causas mais documentadas de erro em prontuário eletrônico — ela propaga informação desatualizada ou já resolvida, e progressivamente infla a nota com texto que ninguém mais lê com atenção. Cada evolução deve refletir a reavaliação do dia, não a reciclagem da nota anterior."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se você usar o recurso de copiar a evolução de ontem e só atualizar os valores dos exames de hoje, para ganhar tempo num plantão corrido?",
+      "resposta": "Informações que já foram resolvidas (uma queixa que passou, um plano que já foi executado) tendem a permanecer na nota copiada, criando confusão sobre o que ainda é ativo. Além disso, o raciocínio clínico do dia — que pode ter mudado mesmo que os números pareçam parecidos — deixa de ser capturado. A nota vira um registro de dados desatualizados em vez de um registro de pensamento clínico atual."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como é avaliada: revisão retrospectiva de prontuário (auditoria de qualidade da documentação, um dos itens do portfólio deste estágio) e feedback direto do residente sobre a clareza e utilidade da nota para continuidade do cuidado. Erros comuns do interno: notas excessivamente longas que diluem a informação relevante; ausência de raciocínio explícito na seção de avaliação; e reprodução de texto de dias anteriores sem atualização genuína."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s10-int1mi-02-004",
+        "titulo": "EPA-4 — Inserir e propor ordens médicas e prescrições",
+        "disciplina": "Estágio em Medicina Interna",
+        "semestre": 10,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "id": "s10-int1mi-03-009",
+        "titulo": "Sumário de Alta",
+        "tipo": "CASCATA_CAUSAL",
+        "descricao": "A mesma competência de comunicar raciocínio (não só dados) é exatamente o que se exige, num formato mais condensado, no sumário de alta."
+      },
+      {
+        "id": "s10-int1mi-02-007",
+        "titulo": "EPA-9 — Trabalhar em equipe interprofissional",
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "descricao": "Uma nota clara é também uma ferramenta de comunicação com toda a equipe interprofissional, não só com outros médicos."
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "fc-s10-int1mi-02-005-001",
+      "tipo": "por_que",
+      "pergunta": "Por que a seção de 'avaliação' (o raciocínio clínico) é o elemento que mais separa uma evolução mediana de uma excelente?",
+      "resposta": "Porque os dados brutos (sinais vitais, exames) já estão disponíveis em outras partes do prontuário eletrônico — o valor exclusivo da nota médica é a interpretação clínica desses dados: o que eles significam em conjunto, por que a conduta atual faz sentido, e o que preocupa para os próximos dias. Sem essa interpretação explícita, o próximo médico precisa refazer o raciocínio do zero a partir de dados soltos.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "internato",
+        "epa",
+        "epa-5",
+        "documentacao"
+      ]
+    },
+    {
+      "card_id": "fc-s10-int1mi-02-005-002",
+      "tipo": "armadilha",
+      "pergunta": "Pegadinha: copiar a evolução de ontem e atualizar só os números novos é uma forma legítima de economizar tempo num plantão corrido, já que a informação básica continua correta?",
+      "resposta": "Não. Essa prática (copy-forward) é uma causa documentada de erro em prontuário: informações já resolvidas tendem a permanecer na nota, criando confusão sobre o que ainda é ativo, e o raciocínio clínico do dia (que pode ter mudado mesmo com números parecidos) deixa de ser capturado genuinamente. A nota deve refletir a reavaliação do dia, não a reciclagem da anterior.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "internato",
+        "epa",
+        "epa-5",
+        "armadilha"
+      ]
+    }
+  ],
   "casos_clinicos": [],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo": "EPA-5 mede a competência transversal de documentar o raciocínio clínico no prontuário, aplicável a qualquer encontro clínico independente da doença — não é uma entidade clínica com fisiopatologia própria. Não há síndrome ou disfunção orgânica associada especificamente à qualidade da documentação médica."
+  },
   "midia": {
     "imagens": [],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "em_mudanca",
+  "estado_ciclo_vida": "revisado_pelo_autor",
+  "nivel_aceitacao": "publicado",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s10",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "Agente Produtor ANIMA",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "epa_avaliacao",
-    "comunicacao",
-    "seguranca_paciente"
+  "fontes": [
+    {
+      "tipo": "diretriz",
+      "titulo": "Core Entrustable Professional Activities for Entering Residency",
+      "autores": "Association of American Medical Colleges (AAMC)",
+      "ano": 2014
+    },
+    {
+      "tipo": "artigo",
+      "titulo": "Characterizing the Source of Text in Electronic Health Record Progress Notes",
+      "autores": "Wang MD, Khanna R, Najafi N",
+      "ano": 2017,
+      "publicacao": "JAMA Internal Medicine"
+    }
   ]
 }

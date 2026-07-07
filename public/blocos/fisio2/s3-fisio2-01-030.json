@@ -9,50 +9,182 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Difusão dos Gases — A Lei de Fick Aplicada ao Pulmão",
-    "semestre": 3,
+    "subtitulo": "A física molecular governando a hematose na barreira alvéolo-capilar.",
     "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "semestre": 3,
+    "tipo": "conceito",
     "tags": [
-      "fisio2",
-      "esqueleto"
+      "Fisiologia Respiratória",
+      "Lei de Fick",
+      "Difusão Pulmonar",
+      "Hematose",
+      "Barreira Alvéolo-Capilar"
     ],
+    "tempo_leitura_minutos": 10,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-02"
   },
-  "resumo_conciso": "Como O2 e CO2 atravessam a barreira alvéolo-capilar por gradiente",
-  "narrativa": [],
+  "resumo_conciso": "Compreenda como os gases respiratórios atravessam a barreira alvéolo-capilar passivamente por meio da Lei de Fick, analisando o impacto da área de superfície, espessura da membrana, gradiente de pressão e solubilidade molecular.",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "A Dança Silenciosa dos Gases"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que você está no nível molecular de um alvéolo pulmonar. O ar fresco acabou de entrar após a inspiração, preenchendo o espaço alveolar com moléculas de oxigênio agitadas, enquanto o capilar ao lado traz sangue venoso carregado de dióxido de carbono. Não existem bombas moleculares ativas nem consumo de ATP para transportar essas moléculas de um lado para o outro. Toda a troca de gases respiratórios ocorre por um processo puramente físico e passivo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Se o corpo humano não gasta nenhuma molécula de ATP para mover o oxigênio para dentro do sangue e o dióxido de carbono para fora, o que determina a velocidade e a direção desse movimento constante?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta está no movimento cinético desordenado das próprias moléculas de gás. Elas se movem constantemente, colidindo e se espalhando. Esse processo é chamado de difusão simples. No pulmão, as moléculas se movem individualmente a favor de seus gradientes de pressão parcial. O oxigênio difunde-se do alvéolo (onde sua pressão é alta) para o sangue capilar (onde é baixa), enquanto o dióxido de carbono faz exatamente o caminho oposto."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Difusão",
+      "origem": "Do latim 'diffundere'",
+      "significado": "Derramar em várias direções, espalhar.",
+      "explicacao": "Reflete o movimento caótico e espontâneo das partículas de uma região de maior concentração (ou pressão) para outra de menor concentração, dispersando-se passivamente no espaço disponível."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Os Determinantes Físicos: Desconstruindo a Lei de Fick"
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚪",
+      "conteudo": "Imagine uma multidão tentando passar de um salão lotado para um salão vazio através de uma parede divisória. A velocidade com que as pessoas cruzam depende de: quantas portas abertas existem (Área de Superfície, A), quão fina e fácil de transpor é essa parede (Espessura, T), o quão apertado e empurrado está o salão de origem em comparação ao destino (Gradiente de Pressão, ΔP), e o quão ágeis as pessoas são para atravessar o material da parede (Coeficiente de Solubilidade e Peso Molecular do gás, D)."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A Lei de Fick consolida essas variáveis físicas em uma equação elegante que dita a taxa de transferência gasosa (V): V = (A * D * ΔP) / T. Cada um desses componentes é um alvo de regulação fisiológica ou alteração patológica. Se aumentamos a área (A) ou o gradiente de pressão (ΔP), aumentamos a taxa de difusão. Se a membrana se torna mais espessa (T), a taxa de difusão cai drasticamente."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Nota crucial: Embora o CO2 tenha um gradiente de pressão muito menor entre o sangue venoso e o alvéolo (apenas cerca de 6 mmHg) se comparado ao O2 (cerca de 60 mmHg), ele se difunde cerca de 20 vezes mais rápido. Isso ocorre porque o CO2 é imensamente mais solúvel na barreira lipídica alvéolo-capilar do que o O2, o que resulta em um coeficiente de difusão (D) muito maior."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um indivíduo desenvolve uma fibrose pulmonar idiopática que triplica a espessura (T) da barreira alvéolo-capilar, mas seu gradiente de pressão de oxigênio (ΔP) permanece inalterado em repouso, o que acontecerá com a taxa de difusão do O2 e qual será o impacto clínico imediato?",
+      "resposta": "A taxa de difusão do O2 cairá para um terço do valor normal, pois a taxa de transferência é inversamente proporcional à espessura da barreira (T). Clinicamente, isso resultará em hipoxemia grave, especialmente durante o exercício físico, quando o menor tempo de trânsito do sangue nos capilares impede a oxigenação completa."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "A Barreira Alvéolo-Capilar em Corte Transversal",
+      "descricao": "Esquema mostrando a ultraestrutura da barreira alvéolo-capilar por onde ocorre a difusão dos gases, destacando a fina camada de surfactante, o epitélio alveolar, a membrana basal fundida, o endotélio capilar e o plasma até alcançar a hemácia.",
+      "prompt_ia": "A highly detailed, scientifically accurate medical illustration of the alveolar-capillary barrier in a human lung. Show a cross-section showing alveolar space filled with oxygen molecules, the ultra-thin barrier comprising epithelial cell layer, fused basement membrane, endothelial cell layer, capillary blood vessel, blood plasma, and a red blood cell. Use arrows to show O2 entering the erythrocyte and CO2 leaving. Soft professional colors, textbook style, high resolution.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s3-fisio2-01-030-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Como a solubilidade do gás influencia a taxa de difusão pulmonar na Lei de Fick?",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "Difusão",
+        "Solubilidade",
+        "Lei de Fick"
+      ],
+      "resposta": "A solubilidade determina o coeficiente de difusão (D). Quanto mais solúvel o gás no meio aquoso e lipídico da membrana, maior a facilidade de travessia. É por isso que o CO2 se difunde muito mais rápido que o O2, apesar do gradiente menor."
+    },
+    {
+      "card_id": "s3-fisio2-01-030-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria com a difusão pulmonar se a área de superfície (A) útil fosse reduzida pela metade, como no enfisema grave?",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "Enfisema",
+        "Área de Superfície",
+        "Fisiopatologia"
+      ],
+      "resposta": "De acordo com a Lei de Fick, a taxa de transferência gasosa é diretamente proporcional à área (A). Reduzir a área útil pela metade cortará a capacidade de difusão de O2 e CO2 pela metade, prejudicando severamente as trocas gasosas."
+    },
+    {
+      "card_id": "s3-fisio2-01-030-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença entre limitação por difusão e por perfusão na troca gasosa alveolar?",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "Limitação",
+        "Perfusão",
+        "Difusão"
+      ],
+      "resposta": "Na limitação por perfusão (ex: O2 em repouso), o gás atinge o equilíbrio de pressão entre o alvéolo e o capilar muito antes do fim do trajeto sanguíneo, dependendo do fluxo de sangue para aumentar a captação. Na limitação por difusão (ex: CO ou O2 em fibrose intensa), o equilíbrio não é alcançado, e a captação depende inteiramente das propriedades físicas da membrana."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-fisio2-01-030-caso01",
+      "titulo": "Falta de Ar Progressiva no Agricultor",
+      "apresentacao": "Seu João, 58 anos, agricultor aposentado, refere falta de ar progressiva há 2 anos, que piora significativamente a pequenos esforços como varrer o quintal. Nega tabagismo, mas relata anos de exposição a poeiras minerais e mofo na lavoura. No exame físico, apresenta estertores crepitantes do tipo velcro em bases pulmonares e baqueteamento digital. A espirometria mostra padrão restritivo e a gasometria arterial revela hipoxemia que se acentua expressivamente com o teste de caminhada de 6 minutos.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Inalação crônica de partículas inorgânicas e poeiras orgânicas gerando processo inflamatório crônico."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Interstício pulmonar e barreira alvéolo-capilar, que sofrem proliferação excessiva de colágeno (fibrose)."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Aumento patológico da espessura (T) da membrana, reduzindo sensivelmente a taxa de difusão gasosa de acordo com a Lei de Fick."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Instalação de dispneia progressiva de esforço e hipoxemia acentuada ao exercício físico."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Hipoxemia grave crônica limitante, necessitando de suporte de oxigênio suplementar para forçar o aumento do gradiente de pressão (ΔP)."
+        }
+      ],
+      "conexao_com_bloco": "Este caso demonstra perfeitamente como o aumento do termo 'T' (espessura) na equação da Lei de Fick afeta diretamente a taxa de difusão de oxigênio, levando à dessaturação acelerada no esforço quando o tempo de trânsito capilar é reduzido.",
+      "disciplinas_relacionadas": [
+        "Pneumologia",
+        "Patologia",
+        "Fisiopatologia"
+      ],
+      "diagnostico_revelado": "Fibrose Pulmonar Intersticial Difusa",
+      "tratamento_resumido": "Terapia farmacológica antifibrótica (como pirfenidona ou nintedanibe), suporte de oxigênio domiciliar de longo prazo e consideração de transplante pulmonar em casos avançados."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "molecular"
-  ]
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-fisio2-01-000",
+        "titulo": "Módulo 1 — Fisiologia Respiratória",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "É fundamental compreender a ventilação alveolar, pressões parciais gasosas e volumes pulmonares antes de analisar a transferência microscópica pela barreira."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Transporte de Gases no Sangue",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre_futuro": 3,
+        "mecanismo_conexao": "Após difundir-se com sucesso pela membrana pulmonar, o O2 necessita acoplar-se à hemoglobina para o transporte sistêmico, enquanto o CO2 segue formas de solubilização ou conversão em bicarbonato.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "ANALOGIA",
+        "topico": "Filtração Glomerular",
+        "explicacao": "A membrana de difusão alveolar assemelha-se à barreira de filtração glomerular renal, pois ambas dependem de espessura física e área de superfície para filtrar/passar substâncias eficientemente."
+      }
+    ]
+  }
 }

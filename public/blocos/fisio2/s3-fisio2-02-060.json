@@ -10,50 +10,190 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Clearance Renal — Visão Geral",
-    "semestre": 3,
+    "subtitulo": "A lógica matemática e fisiológica da depuração plasmática como espelho da função renal",
     "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "semestre": 3,
+    "tipo": "conceito",
     "tags": [
-      "fisio2",
-      "esqueleto"
+      "fisiologia renal",
+      "clearance",
+      "depuração",
+      "taxa de filtração glomerular",
+      "creatinina"
     ],
+    "tempo_leitura_minutos": 12,
     "nivel": "CORE",
-    "tipo": "conceito"
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-02"
   },
-  "resumo_conciso": "Como medir a função renal a partir do conceito de depuração plasmática",
-  "narrativa": [],
+  "resumo_conciso": "O clearance renal (ou depuração) quantifica a eficiência dos rins em remover substâncias do plasma sanguíneo por unidade de tempo, representando um volume virtual de plasma completamente limpo da substância.",
+  "narrativa": [
+    {
+      "tipo": "secao",
+      "titulo": "A Mente Clínica Diante de um Filtro Invisível"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Como médico, imagine que você precisa avaliar a função dos rins de um paciente sem poder olhar diretamente para eles. Os rins estão escondidos no espaço retroperitoneal, trabalhando silenciosamente. Como quantificar a taxa em que eles filtram e limpam o sangue a cada minuto apenas analisando o sangue que entra e a urina que sai?"
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Se uma substância hipotética atravessa livremente a barreira de filtração glomerular e, ao passar pelos túbulos renais, não sofre qualquer reabsorção de volta para o sangue e nem secreção adicional, o que a quantidade total dessa substância excretada na urina por minuto nos revela sobre o volume de plasma que os rins filtraram nesse mesmo minuto?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Pense com calma: se os túbulos não adicionaram nada à substância e nem retiraram nada dela após a filtração, toda a quantidade que aparece na urina deve ter vindo exclusivamente do plasma que foi filtrado originalmente. Portanto, se medirmos a quantidade de substância que sai na urina por minuto e soubermos qual era a concentração dela no sangue, podemos deduzir exatamente quantos mililitros de plasma tiveram que ser filtrados pelos glomérulos para fornecer essa quantidade. Esse é o princípio fundamental do clearance."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Clearance / Depuração",
+      "origem": "Do inglês 'clear' (limpar/desimpedir) e do latim 'depurare' (tornar puro, purificar).",
+      "significado": "O volume virtual de plasma do qual uma substância é completamente removida por unidade de tempo.",
+      "explicacao": "O termo expressa a capacidade purificadora dos rins. Não se trata de medir o volume de urina produzido, mas sim de calcular quanto volume de plasma foi 'limpo' pelos rins para gerar aquela quantidade de excreção urinária."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "A Esteira Seletora: Imagine uma fábrica de doces onde uma esteira transporta caixas contendo bombons de morango (plasma com a substância). No final da esteira, há uma máquina extratora (o rim) que retira os bombons das caixas e os joga em um cesto de descarte (a urina). Se encontrarmos 10 bombons no cesto após um minuto, e sabemos que cada caixa na esteira continha exatamente 2 bombons, podemos deduzir com absoluta certeza que a máquina esvaziou completamente 5 caixas naquele minuto para obter esses 10 bombons. O clearance é o número de caixas limpas por minuto (5 caixas/min), não o número de bombons coletados."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Traduzindo a Fisiologia em Matemática: A Equação"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para colocar essa lógica no papel, precisamos quantificar a 'quantidade' de substância que sai na urina por minuto. Essa taxa de excreção urinária é o produto da concentração da substância na urina (U) pelo volume de urina produzido por minuto (V). Portanto, Taxa de Excreção = U x V. Como essa quantidade veio do plasma, ela deve ser igual ao volume de plasma completamente limpo (C) multiplicado pela concentração da substância no plasma (P). Igualando as duas pontas: C x P = U x V. Isolando o Clearance (C), chegamos à equação clássica: C = (U x V) / P."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Atenção: O clearance é expresso em unidades de fluxo, tipicamente mililitros por minuto (mL/min). Ele representa um volume virtual de plasma que foi limpo, e não um volume físico real de urina ou sangue."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o fluxo plasmático renal de um paciente aumentar significativamente devido a uma vasodilatação arterial, mas a sua Taxa de Filtração Glomerular (TFG) permanecer rigorosamente constante, o clearance de inulina (uma substância que é apenas filtrada) irá aumentar, diminuir ou permanecer inalterado?",
+      "resposta": "O clearance de inulina permanecerá rigorosamente inalterado. Como a inulina é apenas filtrada (sem reabsorção ou secreção), seu clearance reflete exclusivamente a Taxa de Filtração Glomerular (TFG). Embora mais sangue esteja passando pelos rins por minuto (maior fluxo plasmático), a taxa de formação de ultrafiltrado glomerular não mudou. Portanto, a quantidade de inulina que entra no espaço de Bowman por minuto e que é excretada na urina permanece constante, mantendo o clearance inalterado."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Esquema Conceitual de Clearance Renal",
+      "descricao": "Diagrama explicativo ilustrando o fluxo plasmático que entra no glomérulo com uma concentração de substância, a filtração de parte desse plasma e a excreção da substância na urina, evidenciando o conceito de 'volume virtual' de plasma que foi completamente limpo.",
+      "prompt_ia": "A clear educational medical illustration showing a single nephron. On the left, the renal artery carrying red blood cells and yellow plasma containing blue solute molecules enters the glomerulus. Filtration occurs at the glomerular capillary. The renal tubule goes down and up, leading to a collecting duct where urine with blue molecules exits. Highlight a section of the incoming plasma vessel in glowing light blue with the label 'Virtual Volume of Cleared Plasma' to mathematically represent clearance (C = UV/P). Clean vector style, white background, high-contrast pedagogical labels in English.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s3-fisio2-02-060-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Por que a inulina é considerada o padrão-ouro para a determinação da Taxa de Filtração Glomerular (TFG) por meio do clearance?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "inulina",
+        "clearance",
+        "TFG"
+      ],
+      "resposta": "Porque a inulina é livremente filtrada pelos glomérulos e não sofre reabsorção, secreção, síntese ou metabolismo tubular. Portanto, a taxa em que ela é excretada na urina equivale exatamente à taxa em que foi filtrada, tornando seu clearance igual à TFG."
+    },
+    {
+      "card_id": "s3-fisio2-02-060-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "Se o clearance de uma substância X é maior do que o clearance da inulina no mesmo paciente, o que podemos afirmar sobre o processamento tubular dessa substância X?",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "secrecao",
+        "inulina",
+        "clearance"
+      ],
+      "resposta": "Podemos afirmar que a substância X sofreu secreção tubular ativa. Se o clearance de X supera a TFG (representada pelo clearance de inulina), significa que os túbulos adicionaram mais moléculas de X ao lúmen tubular após a filtração, limpando um volume maior de plasma por minuto do que apenas a filtração faria."
+    },
+    {
+      "card_id": "s3-fisio2-02-060-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Por que o clearance de creatinina endógena, embora prático na clínica, tende a superestimar levemente a verdadeira Taxa de Filtração Glomerular (TFG)?",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "creatinina",
+        "clinica",
+        "TFG"
+      ],
+      "resposta": "Porque a creatinina, além de ser livremente filtrada, sofre uma pequena quantidade de secreção tubular ativa pelos transportadores de cátions orgânicos (cerca de 10-20%). Isso faz com que a quantidade excretada na urina seja maior do que a filtrada, elevando ligeiramente o clearance calculado em relação à TFG real."
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-fisio2-02-060-caso01",
+      "titulo": "A Avaliação da Função Renal no Paciente Hipertenso",
+      "apresentacao": "Homem de 62 anos, engenheiro civil, hipertenso crônico de longa data com adesão irregular ao tratamento medicamentoso. Comparece para consulta de rotina sem queixas urinárias ou edema. Seus exames laboratoriais revelam uma creatinina sérica de 1.8 mg/dL (valor de referência prévio de 0.9 mg/dL). O médico assistente solicita uma coleta de urina de 24 horas para calcular formalmente o clearance de creatinina, o qual retorna em 45 mL/min.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A hipertensão arterial sistêmica sustentada gerou aumento da pressão de cisalhamento e estresse hemodinâmico crônico sobre as arteríolas renais."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Instala-se um quadro de nefrosclerose hipertensiva, caracterizado por hialinização arteriolar, perda progressiva de capilares glomerulares e esclerose do glomérulo."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A destruição dos glomérulos funcionantes reduz severamente a área de superfície de filtração disponível, levando a uma queda acentuada na Taxa de Filtração Glomerular (TFG) e, consequentemente, na depuração (clearance) de toxinas."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "A disfunção renal desenvolve-se de forma silenciosa e assintomática (azotemia sem uremia franca), manifestando-se clinicamente apenas pela elevação da creatinina sérica e queda correspondente no clearance estimado."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Caso a hipertensão não seja controlada de forma estrita, a perda de néfrons continuará em ciclo vicioso de hiperfiltração compensatória e esclerose secundária, culminando em Doença Renal Crônica terminal."
+        }
+      ],
+      "conexao_com_bloco": "O caso clínico ilustra de forma prática a aplicação do clearance de creatinina como uma ferramenta diagnóstica essencial para quantificar a perda de função de filtração glomerular no paciente com nefropatia hipertensiva crônica.",
+      "disciplinas_relacionadas": [
+        "Fisiopatologia",
+        "Nefrologia",
+        "Farmacologia Clínica"
+      ],
+      "diagnostico_revelado": "Nefropatia Hipertensiva com Doença Renal Crônica Estágio 3b",
+      "tratamento_resumido": "Controle pressórico rigoroso com IECA (Inibidor da Enzima Conversora de Angiotensina) ou BRA (Bloqueador do Receptor de Angiotensina) para proteção renal, associado a restrição de sódio dietético."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "funcao"
-  ]
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-fisio2-02-000",
+        "titulo": "Módulo 2 — Fisiologia Renal",
+        "disciplina": "Fisiologia II — Respiratória, Renal, Digestiva, Endócrina, Reprodutora, Neuro",
+        "semestre": 3,
+        "relevancia": "base_necessaria",
+        "explicacao": "É essencial dominar a anatomia funcional do néfron, o conceito de barreira de filtração glomerular e os mecanismos gerais de reabsorção e secreção tubular para compreender como o clearance reflete essas etapas combinadas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Estágios da Doença Renal Crônica",
+        "disciplina": "Nefrologia",
+        "semestre_futuro": 6,
+        "mecanismo_conexao": "O clearance de creatinina ou a TFG estimada por equações clínicas é a base matemática utilizada para estratificar a gravidade da insuficiência renal crônica em estágios funcionais.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Farmacocinética e Ajuste de Dose pelo Clearance",
+        "disciplina": "Farmacologia Clínica",
+        "semestre_futuro": 5,
+        "mecanismo_conexao": "A taxa de eliminação de fármacos excretados por via renal depende diretamente do clearance renal do paciente, exigindo ajustes de dose em pacientes com depuração reduzida para evitar toxicidade.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "ANALOGIA",
+        "topico": "Clearance Hepático de Fármacos",
+        "explicacao": "Assim como o rim limpa um volume virtual de plasma de substâncias por unidade de tempo via filtração e secreção, o fígado limpa o plasma de drogas através do metabolismo enzimático hepático e da excreção biliar, utilizando princípios matemáticos de depuração análogos."
+      }
+    ]
+  }
 }

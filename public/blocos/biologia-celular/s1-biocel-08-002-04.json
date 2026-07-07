@@ -1,54 +1,212 @@
 {
+  "metadata": {
+    "titulo": "Processamento do pré-mRNA (Cap, Cauda Poli-A, Splicing)",
+    "subtitulo": "Por que o RNA transcrito ainda não está pronto para sair do núcleo?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 12,
+    "nivel": "CORE",
+    "tags": [
+      "RNA",
+      "processamento",
+      "splicing",
+      "talassemia",
+      "biologia molecular"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "Após a transcrição, o transcrito primário ou pré-mRNA é uma molécula vulnerável e desorganizada. Para garantir que a informação genética seja protegida e lida corretamente pelos ribossomos, a célula realiza três transformações cruciais: a adição do cap 5', a poliadenilação na extremidade 3' e o splicing. Este processo permite não apenas a estabilidade do mRNA, mas também a expansão do proteoma através do splicing alternativo, onde diferentes combinações de exons criam proteínas diversas a partir de um único gene.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, vimos como a RNA polimerase II sintetiza o RNA a partir de um molde de DNA. Mas imagine que esse RNA é um manuscrito bruto, cheio de notas de rodapé irrelevantes e bordas frágeis que se desfariam antes mesmo de chegar ao citoplasma. A célula não pode permitir que essa mensagem vital seja corrompida."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para resolver isso, a natureza desenhou um sistema de edição. Primeiro, protegemos as extremidades: um 'cap' (boné) de 7-metilguanosina é adicionado ao terminal 5' para evitar a degradação por exonucleases e sinalizar o início da tradução. Na extremidade 3', uma cauda de adeninas é adicionada, atuando como um cronômetro para a vida do mRNA."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O passo mais fascinante, porém, é o splicing. O pré-mRNA contém trechos codificantes, chamados exons, e trechos não codificantes, os introns. O splicing é o processo de remoção precisa dos introns e união dos exons, garantindo que apenas a informação necessária chegue ao ribossomo."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a célula decide o que é lixo e o que é mensagem?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A maquinaria de splicing, composta pelo espliceossomo (um complexo de proteínas e snRNAs), reconhece sequências consensuais nas fronteiras intron-exon. O mecanismo envolve reações de transesterificação que cortam o intron na forma de um 'laço' ou lariat, unindo os exons adjacentes com precisão de um único nucleotídeo."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense no pré-mRNA como o roteiro de um filme. Mapeamento: O manuscrito bruto é o pré-mRNA; o Cap 5' é a capa protetora do roteiro; a cauda Poli-A é o número de páginas que indica a duração do filme; os exons são as cenas essenciais que compõem a história; os introns são as cenas deletadas que não devem aparecer no corte final; o espliceossomo é o editor de vídeo que corta e cola as cenas para gerar a versão final do filme."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O splicing alternativo é a prova de que a complexidade biológica não vem apenas do número de genes, mas da diversidade de formas como podemos editar a mesma fita de RNA original."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire. Imagine o núcleo como uma sala de edição frenética, onde cada molécula de mRNA é processada em tempo real para garantir que a proteína correta seja produzida no momento certo."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Espliceossomo",
+      "origem": "Inglês 'splice' + grego 'soma'",
+      "significado": "Corpo de emendar",
+      "explicacao": "Deriva do termo náutico 'to splice', que significa unir dois cabos através do entrelaçamento de suas fibras, refletindo a precisão mecânica do corte e costura molecular."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se o espliceossomo falhasse em reconhecer um sítio de splicing?",
+      "resposta": "O intron seria mantido no mRNA final. Isso resultaria na inclusão de sequências não codificantes que, ao serem traduzidas, criariam proteínas truncadas ou com sequências de aminoácidos erradas, levando quase certamente a uma proteína disfuncional ou tóxica para a célula."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Arquitetura do Processamento de mRNA",
+      "descricao": "Diagrama mostrando o pré-mRNA saindo da polimerase, a adição do Cap 5', o corte dos introns em formato de laço e a adição da cauda Poli-A.",
+      "prompt_ia": "Scientific illustration of eukaryotic mRNA processing. 5' end with a 7-methylguanosine cap, 3' end with a long poly-A tail. A pre-mRNA strand showing introns being looped out (lariat structure) by the spliceosome complex, and exons being joined together. Clean, minimalist vector style, high contrast, soft blue and purple color palette, pedagogical focus.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-08-002-04-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual a função biológica da cauda Poli-A no mRNA?",
+      "resposta": "Além de proteger o mRNA contra a degradação no citoplasma, a cauda Poli-A é essencial para a exportação nuclear e serve como ponto de ancoragem para proteínas de iniciação da tradução.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "mRNA",
+        "estabilidade"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-002-04-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se o cap 5' não fosse adicionado ao transcrito?",
+      "resposta": "O mRNA seria rapidamente degradado por exonucleases 5'-3' e não seria reconhecido pelo complexo de iniciação do ribossomo, impossibilitando a síntese proteica.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "tradução",
+        "proteção"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-002-04-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Qual a diferença fundamental entre splicing e splicing alternativo?",
+      "resposta": "O splicing é o processo constitutivo de remoção de introns. O splicing alternativo é um mecanismo regulatório onde diferentes combinações de exons são mantidas, permitindo que um único gene codifique múltiplas isoformas de proteínas.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "splicing",
+        "proteoma"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-002-04-fc04",
+      "tipo": "mecanismo",
+      "pergunta": "Como o espliceossomo garante a precisão do corte?",
+      "resposta": "Através de snRNPs (pequenos RNAs nucleares ribonucleoproteicos) que se ligam por complementaridade de bases a sequências específicas nos sítios doadores e receptores de splicing, posicionando os nucleotídeos para a reação de transesterificação.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "espliceossomo",
+        "snRNA"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-08-002-04-fc05",
+      "tipo": "clinico",
+      "pergunta": "Como uma mutação em um sítio de splicing pode causar uma patologia como a talassemia?",
+      "resposta": "A mutação impede a remoção de um intron ou causa a exclusão incorreta de um exon, resultando em uma cadeia de globina instável ou truncada que não consegue formar uma hemoglobina funcional, causando anemia.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "genética",
+        "talassemia"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-08-002-04-caso01",
+      "titulo": "Anemia e o erro no processamento",
+      "apresentacao": "Paciente de 12 anos apresenta palidez, fadiga crônica e esplenomegalia. Exames mostram hemácias microcíticas e hipocrômicas. Testes genéticos revelam uma mutação pontual em uma região intrônica do gene da beta-globina.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação em sítio de splicing intrônico."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "pré-mRNA da beta-globina."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "O espliceossomo não reconhece o sítio de splicing, resultando em retenção de um intron no mRNA maturado."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Produção insuficiente de cadeias beta-globina funcionais."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Precipitação de cadeias alfa em excesso, destruição de precursores eritroides e anemia hemolítica."
+        }
+      ],
+      "diagnostico_revelado": "Beta-talassemia por defeito de splicing",
+      "tratamento_resumido": "Transfusões de sangue periódicas, terapia de quelação de ferro e, em casos graves, transplante de medula óssea.",
+      "conexao_com_bloco": "Ilustra como a falha no mecanismo de splicing tem consequências diretas na viabilidade da proteína e na saúde do organismo.",
+      "disciplinas_relacionadas": [
+        "Genética",
+        "Hematologia",
+        "Biologia Celular"
+      ]
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-08-001-01",
+        "titulo": "Modelo de Watson-Crick e Pareamento de Bases",
+        "disciplina": "Biologia Celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "Sem entender a síntese do pré-mRNA pela RNA polimerase II, não é possível compreender por que ele precisa de maturação."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "topico": "Patologias por erro de splicing",
+        "disciplina": "Patologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "O entendimento molecular do splicing é a base para o diagnóstico de doenças genéticas associadas a mutações em sítios de splicing.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "ANALOGIA",
+        "topico": "Edição de vídeo",
+        "explicacao": "A edição de vídeo é a analogia perfeita para o splicing: o corte de cenas desnecessárias (introns) para criar o filme final (mRNA maduro)."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-08-002-04",
   "no_pai_id": "s1-biocel-08-002",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Processamento do pré-mRNA (Cap, Cauda Poli-A, Splicing)",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Maturação do transcrito; splicing alternativo e talassemias",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

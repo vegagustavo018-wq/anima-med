@@ -5,31 +5,161 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Óptica do Olho — Refração, Poder Dióptrico e Ponto Focal",
+    "subtitulo": "Como calcular o ponto focal e diagnosticar ametropias com base no comprimento axial e poder dióptrico?",
     "semestre": 6,
-    "disciplina": "Oftalmologia",
+    "disciplina": "oftal",
+    "sistema_corporal": "sensorial",
+    "regiao_anatomica": "olho",
     "profundidade_arvore": 4,
-    "importancia": 3,
+    "importancia": 4,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 9,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "oftal",
-      "esqueleto"
+      "optica-ocular",
+      "comprimento-axial",
+      "ponto-focal",
+      "miopia-axial",
+      "hipermetropia-axial",
+      "astigmatismo-corneal",
+      "emmetropia",
+      "lasik",
+      "conduta"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "mecanismo",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Córnea e cristalino como sistema convergente; emetropia",
-  "narrativa": [],
+  "resumo_conciso": "No bloco anterior, vimos o panorama da fisiologia. Agora, aprofundamos a óptica ocular e as ametropias. O principal desafio consiste em correlacionar o comprimento axial do olho ao poder dióptrico para localizar o ponto focal: se o foco cai antes da retina = miopia (olho longo, corrigido com lente divergente negativa); se cai atrás = hipermetropia (olho curto, lente convergente positiva); se existem dois focos por curvatura corneana irregular = astigmatismo (lentes cilíndricas). A conduta é óculos, lentes ou cirurgia a laser.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior, integramos os quatro pilares da fisiologia visual. O primeiro pilar — a óptica — determina se a imagem foca precisamente na fóvea. Quando o tamanho do olho e o poder de suas lentes estão em desequilíbrio, surgem as ametropias. Como a geometria de lentes convergentes explica a miopia, hipermetropia e astigmatismo, e como corrigi-los?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O Olho Emétrope e a Lei das Lentes"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um olho emétrope com comprimento axial de 24 mm e poder total de +60D foca raios paralelos exatamente na retina. A lei das lentes convergentes: 1/f = 1/do + 1/di. Para objetos no infinito (do → ∞), f = di. A distância focal do olho normal = comprimento axial."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "As Três Ametropias Básicas"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Classificação e correção",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Miopia (Olho Longo)",
+          "explicacao": "Comprimento axial > 24 mm ou córnea com curvatura excessiva. O foco cai ANTES da retina. Objetos distantes ficam embaçados. Corrige-se com lente divergente (negativa/côncava, ex: -3.00D) que afasta o ponto focal para trás."
+        },
+        {
+          "numero": 2,
+          "titulo": "Hipermetropia (Olho Curto)",
+          "explicacao": "Comprimento axial < 24 mm ou córnea plana. O foco teórico cai ATRÁS da retina. O cristalino jovem pode compensar com acomodação (por isso hipermetropes jovens enxergam de longe). Corrige-se com lente convergente (positiva/convexa, ex: +2.50D)."
+        },
+        {
+          "numero": 3,
+          "titulo": "Astigmatismo (Curvatura Irregular)",
+          "explicacao": "A córnea apresenta curvaturas distintas em meridianos perpendiculares (como a lateral de um ovo — mais curva verticalmente que horizontalmente). Resultado: dois pontos focais deslocados, gerando imagem embaçada em qualquer distância. Corrige-se com lentes cilíndricas (tóricas) que compensam o meridiano mais curvo."
+        }
+      ]
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Conduta terapêutica"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Óculos e lentes de contato são os tratamentos padrão. Para correção definitiva, a cirurgia refrativa a laser (LASIK: ablação do estroma corneal por excimer laser) remodela a curvatura da córnea, alterando seu poder dióptrico de forma permanente. Na miopia, aplaina-se a córnea (reduz potência); na hipermetropia, remove-se anel periférico (aumenta potência central)."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔍",
+      "conteudo": "A miopia é como uma lupa muito potente demais (+65D em vez de +60D): o foco cai no ar antes do papel (retina). A solução é colocar uma lente de vidro côncava (negativa) na frente que pré-diverge os raios antes de entrarem na lupa, compensando o excesso de convergência. A hipermetropia é a lupa fraca (+55D): o foco projetado passa pelo papel e ainda continua convergindo atrás. A solução é uma lente convexa (positiva) que pré-converge os raios antes, adiantando o foco."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s6-oftal-01-001",
+        "titulo": "O Olho como Câmera Óptica",
+        "disciplina": "oftal",
+        "semestre": 6,
+        "relevancia": "base_necessaria",
+        "explicacao": "Apresenta os índices de refração e o poder dióptrico total do olho."
+      }
+    ],
     "futuras": [],
     "laterais": []
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s6-oftal-01-021-fc01",
+      "pergunta": "Explique como o comprimento axial do olho determina se o paciente será míope ou hipermétrope.",
+      "resposta": "Se o comprimento axial for maior que o esperado para o poder dióptrico (olho longo), o foco cai antes da retina → miopia. Se for menor (olho curto), o foco cairia atrás da retina → hipermetropia. O olho emétrope tem comprimento axial de ~24 mm equilibrado com ~60D de poder.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "comprimento-axial",
+        "miopia",
+        "hipermetropia",
+        "emmetropia",
+        "optica"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-021-fc02",
+      "pergunta": "Qual tipo de lente corrige a miopia e qual corrige a hipermetropia? Justifique opticamente.",
+      "resposta": "Miopia: lente divergente (côncava/negativa), que afasta o ponto focal para trás, sobre a retina. Hipermetropia: lente convergente (convexa/positiva), que adianta o ponto focal para frente, sobre a retina.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "lente-negativa-miopia",
+        "lente-positiva-hipermetropia",
+        "correcao-optica",
+        "dioptrias"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-021-fc03",
+      "pergunta": "Descreva o mecanismo de ação da cirurgia LASIK na correção de miopia em termos de alteração do poder dióptrico da córnea.",
+      "resposta": "O excimer laser remove estroma corneal da zona óptica central, aplainando a curvatura da córnea. Isso reduz o poder de convergência (potência em dioptrias) da córnea, deslocando o ponto focal para trás, sobre a retina míope.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "tags": [
+        "lasik",
+        "ablacao-estromal",
+        "aplainamento-corneal",
+        "reducao-dioptrias",
+        "conduta"
+      ]
+    },
+    {
+      "card_id": "s6-oftal-01-021-fc04",
+      "pergunta": "Um paciente de 30 anos apresenta visão turva para longe (20/200) e nítida apenas a 30 cm. Com lentes de -4.00D, a visão distante normaliza. Qual o diagnóstico e por que o cristalino jovem não consegue compensar essa ametropia?",
+      "resposta": "O diagnóstico é miopia de -4.00D. O cristalino compensa hipermetropia (aumentando poder) mas não compensa miopia (já está em repouso, sem como reduzir seu poder abaixo do mínimo). Portanto a acomodação não ajuda na miopia.",
+      "tipo": "contrafactual",
+      "dificuldade": 2,
+      "tags": [
+        "miopia-diagnostico",
+        "acomodacao-limite",
+        "cristalino-compensacao",
+        "lente-negativa",
+        "conduta"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
     "imagens": [],
@@ -37,18 +167,26 @@
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "estado_ciclo_vida": "producao",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s6",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "gerado_por": "antigravity",
+    "data_geracao": "2026-07-06",
+    "revisado_por": "autorrevisao-antigravity",
+    "data_revisao": "2026-07-06",
+    "nivel_confianca": "revisado"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "type": "livro",
+      "citacao": "Kanski JJ, Bowling B. Oftalmologia Clínica. 8ª ed. Elsevier; 2016. Cap. 18 — Refração Clínica.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
-    "mecanismo/fisiopatologia",
-    "correlação com ciências básicas"
+    "mecanismo",
+    "clinica",
+    "conduta"
   ]
 }

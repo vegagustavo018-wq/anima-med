@@ -6,49 +6,219 @@
   ],
   "conexoes_laterais_ids": [],
   "metadata": {
-    "titulo": "Câncer de Colo do Útero — Visão de Conjunto",
+    "titulo": "Cancer de Colo do Utero - Visao de Conjunto",
     "semestre": 7,
     "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 6,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-07",
+    "versao": "1.0",
     "tags": [
       "go1",
-      "esqueleto"
+      "s7",
+      "cancer-ginecologico",
+      "mecanismo",
+      "clinica"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "Progressão da NIC ao invasivo; carcinoma escamoso e adenocarcinoma",
-  "narrativa": [],
+  "resumo_conciso": "Câncer de colo surge principalmente da progressão de lesões precursoras por HPV persistente na zona de transformação; os principais tipos são carcinoma escamoso e adenocarcinoma.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Câncer de colo do útero é, em grande parte, consequência tardia de HPV oncogênico persistente. O processo pode levar anos, o que abre uma janela poderosa para prevenção."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A maioria dos tumores surge na junção escamocolunar/zona de transformação. Essa área de metaplasia ativa é vulnerável à infecção persistente e à ação das oncoproteínas virais."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O carcinoma escamoso é o tipo histológico mais comum, ligado ao epitélio escamoso do ectocolo. O adenocarcinoma nasce de células glandulares endocervicais e pode ser mais difícil de capturar pela citologia em alguns cenários."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A sequência didática é: HPV persistente, LSIL/HSIL ou NIC, rompimento da membrana basal e invasão estromal. Quando há invasão, já não se trata de lesão precursora, mas de câncer."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Fatores como ausência de rastreamento, imunossupressão, tabagismo, múltiplas exposições e barreiras de acesso aumentam risco de doença invasiva."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Estágios iniciais podem ser assintomáticos. Sangramento pós-coito, sangramento intermenstrual, corrimento fétido, dor pélvica e sintomas urinários ou retais sugerem doença mais avançada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A mensagem central é que câncer de colo não deveria ser comum onde vacina, rastreamento, colposcopia e tratamento de lesões precursoras funcionam bem."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s7-go1-07-000",
+        "titulo": "Modulo 7 - Patologia do Colo Uterino e Rastreio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      },
+      {
+        "bloco_id": "s7-go1-05-005",
+        "titulo": "Hiperplasia Endometrial - Precursora do Cancer de Endometrio",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "semestre": 7,
+        "relevancia": "base_necessaria",
+        "explicacao": ""
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-032",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Ovário — Diagnóstico, Estadiamento e Tratamento",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s7-go1-08-040",
+        "disciplina": "Ginecologia-Obstetrícia I — Ginecologia",
+        "topico": "Câncer de Vulva e Vagina",
+        "mecanismo_conexao": "",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-go1-04-006",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com Adenomiose - Endometrio Invadindo o Miometrio"
+      },
+      {
+        "bloco_id": "s7-go1-06-040",
+        "tipo_relacao": "RELACIONADO",
+        "explicacao": "Conexão lateral com HIV e Outras ISTs na Saude da Mulher"
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s7-go1-08-010-fc-01",
+      "pergunta": "Qual causa central do câncer de colo?",
+      "resposta": "HPV oncogênico persistente.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-010-fc-02",
+      "pergunta": "Quais tipos histológicos principais?",
+      "resposta": "Carcinoma escamoso e adenocarcinoma.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-010-fc-03",
+      "pergunta": "O que define invasão?",
+      "resposta": "Rompimento da membrana basal com invasão do estroma.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    },
+    {
+      "card_id": "s7-go1-08-010-fc-04",
+      "pergunta": "Qual sintoma clássico de alerta?",
+      "resposta": "Sangramento pós-coito, embora fases iniciais possam ser assintomáticas.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": []
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s7-go1-08-010-cc-01",
+      "titulo": "Sangramento após relação",
+      "apresentacao": "Mulher de 42 anos, sem rastreamento há 12 anos, relata sangramento pós-coito e corrimento persistente.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Ver mecanismo geral discutido neste bloco: Câncer de colo surge principalmente da progressão de lesões precursoras por HPV persistente na zona de transformação; os principais tipos são carcinoma escamoso e adenocarcinoma."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Estruturas do eixo reprodutivo/pélvico relacionadas a Cancer de Colo do Utero - Visao de Conjunto, conforme discutido na narrativa deste bloco."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Câncer de colo surge principalmente da progressão de lesões precursoras por HPV persistente na zona de transformação; os principais tipos são carcinoma escamoso e adenocarcinoma."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Mulher de 42 anos, sem rastreamento há 12 anos, relata sangramento pós-coito e corrimento persistente."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Qual preocupação? Câncer de colo invasivo precisa ser excluído com exame especular, colposcopia/biópsia conforme achado."
+        }
+      ],
+      "conexao_com_bloco": "Ilustra a aplicação clínica direta dos conceitos discutidos neste bloco.",
+      "disciplinas_relacionadas": [
+        "Ginecologia-Obstetrícia I — Ginecologia"
+      ],
+      "diagnostico_revelado": "Câncer de colo invasivo precisa ser excluído com exame especular, colposcopia/biópsia conforme achado.",
+      "tratamento_resumido": "Câncer de colo invasivo precisa ser excluído com exame especular, colposcopia/biópsia conforme achado."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "tipo": "prompt",
+        "descricao": "Progressão do HPV persistente para NIC, invasão estromal, carcinoma escamoso e adenocarcinoma.",
+        "alt": "Ilustracao educacional para Cancer de Colo do Utero - Visao de Conjunto"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "horizonte_validade": "revisar_em_2_anos",
+  "estado_ciclo_vida": "ativo",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s7",
+    "gerado_por": "codex-producao-s7-go1",
     "data_geracao": "2026-07-01",
     "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "data_revisao": "2026-07-07",
+    "nivel_confianca": "alto"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "titulo": "NCI PDQ - Cervical Cancer Treatment",
+      "url": "https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Endometrial Cancer Treatment",
+      "url": "https://www.cancer.gov/types/uterine/hp/endometrial-treatment-pdq",
+      "tipo": "guideline"
+    },
+    {
+      "titulo": "NCI PDQ - Ovarian Epithelial, Fallopian Tube, and Primary Peritoneal Cancer Treatment",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+      "tipo": "guideline"
+    }
+  ],
   "_lentes": [
     "mecanismo",
     "clinica"

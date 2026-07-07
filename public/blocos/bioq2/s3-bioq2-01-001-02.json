@@ -5,48 +5,266 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Energia Livre de Gibbs (ΔG) e Espontaneidade",
+    "subtitulo": "Como saber se uma reação tem permissão energética para seguir?",
     "semestre": 3,
     "disciplina": "Bioquímica II — Metabolismo",
     "profundidade_arvore": 3,
     "importancia": 3,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.0",
     "tags": [
       "bioq2",
-      "esqueleto"
+      "delta-g",
+      "energia-livre",
+      "espontaneidade",
+      "termodinamica",
+      "core"
     ],
     "nivel": "CORE",
     "tipo": "conceito"
   },
-  "resumo_conciso": "ΔG negativo vs positivo; a diferença entre ΔG e ΔG°'; reação favorável",
-  "narrativa": [],
+  "resumo_conciso": "Energia livre de Gibbs, ΔG, é a medida prática da capacidade de uma reação realizar trabalho nas condições em que ela ocorre. ΔG negativo indica que a reação é energeticamente favorável; ΔG positivo indica que ela precisa ser acoplada a outra reação favorável; ΔG próximo de zero indica equilíbrio ou reversibilidade fácil. O ponto crucial é não confundir espontaneidade com velocidade: uma reação pode ser favorável e ainda assim lenta sem enzima.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine uma bola no alto de uma ladeira. Ela tem tendência a descer, mas pode estar presa por uma pedra. A direção favorável existe; o movimento pode precisar de empurrão inicial. Muitas reações bioquímicas funcionam assim: uma coisa é saber se a reação tem permissão energética, outra é saber se ela acontecerá rápido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A célula precisa dessa distinção porque vive cercada de reações possíveis. Algumas liberam energia livre; outras exigem pagamento; outras ficam tão próximas do equilíbrio que mudam de direção conforme a concentração de substratos e produtos. ΔG é a linguagem que organiza essa intuição."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Que problema ΔG resolve?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O problema é prever direção útil. Se uma célula precisa transformar A em B, ela precisa saber se essa transformação pode seguir sozinha nas condições reais ou se terá de ser acoplada à hidrólise de ATP, à oxidação de NADH ou a outra queda energética. Sem ΔG, a bioquímica vira tentativa e erro."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Regra crítica: ΔG fala de favorabilidade termodinâmica; enzimas falam de velocidade. Uma coisa não substitui a outra."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como interpretar o sinal?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando ΔG é negativo, a reação é exergônica e pode liberar energia livre. Quando ΔG é positivo, a reação é endergônica e precisa de acoplamento para acontecer no sentido desejado. Quando ΔG está perto de zero, a reação está próxima do equilíbrio e pequenas mudanças de concentração podem inverter ou ajustar o fluxo."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "espontaneidade",
+      "origem": "do latim spontaneus, aquilo que ocorre por impulso próprio",
+      "significado": "em termodinâmica, tendência de um processo seguir sem entrada líquida de energia externa",
+      "explicacao": "A palavra engana porque, no uso comum, espontâneo parece rápido. Em bioquímica, espontâneo quer dizer favorável, não veloz. Uma reação pode ter tendência a seguir e ainda precisar de enzima para vencer a barreira de ativação."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa: se ΔG é negativo, a ladeira desce; se a reação é lenta, falta caminho catalítico. A enzima abre uma estrada, mas não muda a altitude da ladeira por si só."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Qual é a diferença entre ΔG e ΔG°'?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "ΔG°' é a energia livre padrão bioquímica, medida em condições padronizadas, com pH 7 e concentrações de referência. Ela é útil para comparar reações, mas a célula não vive em condições padrão. O ΔG real depende das concentrações presentes naquele momento. Por isso uma reação com ΔG°' pouco favorável pode ser puxada para frente se o produto for removido rapidamente."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "E se o estudante confundisse ΔG negativo com reação rápida?",
+      "resposta": "Ele concluiria que qualquer reação favorável aconteceria imediatamente no corpo, o que é falso. Sem enzimas, muitas reações favoráveis são lentas demais para sustentar vida. A célula precisa tanto de permissão termodinâmica quanto de catálise."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "ladeira",
+      "conteudo": "Pense em uma ladeira com portões. ΔG é a inclinação: indica se a descida é favorável. A energia de ativação é o portão fechado no caminho. A enzima é quem abre um portão mais baixo, permitindo que a bola desça rápido. Acoplamento é amarrar a bola a outra que desce uma ladeira maior, puxando um processo que sozinho subiria. A analogia quebra porque moléculas não rolam em espaço físico simples; elas mudam ligações e distribuições eletrônicas."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "ΔG, barreira de ativação e enzima",
+      "descricao": "Esquema com perfil energético mostrando reagentes, produtos, ΔG negativo e energia de ativação menor com enzima.",
+      "prompt_ia": "Diagrama didático vetorial em português, fundo transparente. Gráfico de energia livre no eixo vertical e progresso da reação no eixo horizontal. Curva alta sem enzima e curva mais baixa com enzima, ambas indo dos mesmos reagentes aos mesmos produtos. Marcar ΔG como diferença entre reagentes e produtos; marcar energia de ativação. Incluir rótulos: 'favorabilidade' e 'velocidade não são a mesma coisa'.",
+      "origem": "ia",
+      "tipo_imagem": "esquema_didatico"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse conceito voltará em ATP, acoplamento, glicólise e ciclo de Krebs. Toda vez que uma via tiver uma etapa irreversível, pergunte: o ΔG real está muito negativo? Toda vez que uma etapa parecer impossível, pergunte: qual reação favorável está pagando a conta?"
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s3-bioq2-01-001",
+        "titulo": "Termodinâmica da Vida — Visão Geral",
+        "relevancia": "base_necessaria",
+        "explicacao": "A visão geral introduz a necessidade de medir a permissão energética das reações celulares."
+      },
+      {
+        "bloco_id": "s3-bioq2-01-001-01",
+        "titulo": "Primeira e Segunda Leis Aplicadas à Célula",
+        "relevancia": "base_necessaria",
+        "explicacao": "ΔG aplica as leis da termodinâmica à direção de reações bioquímicas concretas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "ΔG Depende das Concentrações — Por Que o Equilíbrio Importa",
+        "mecanismo_conexao": "O próximo bloco mostra por que o ΔG real muda conforme substratos e produtos se acumulam ou são removidos.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "topico": "Acoplamento de Reações — Como a Célula Paga o Impossível",
+        "mecanismo_conexao": "Reações com ΔG positivo podem seguir quando somadas a reações com ΔG negativo maior em módulo.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "topico": "Glicólise — Etapas Irreversíveis",
+        "mecanismo_conexao": "Etapas muito exergônicas funcionam como pontos de direção e regulação da via.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "ATP — A Moeda Energética Universal — Visão Geral",
+        "tipo_relacao": "APLICA",
+        "explicacao": "A hidrólise de ATP é útil porque fornece queda de energia livre acoplável."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s3-bioq2-01-001-02-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "O que significa ΔG negativo em uma reação bioquímica?",
+      "resposta": "Significa que, nas condições consideradas, a reação é termodinamicamente favorável no sentido escrito e pode liberar energia livre. Isso não garante que será rápida sem enzima.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "delta-g",
+        "espontaneidade"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-001-02-fc02",
+      "tipo": "comparacao",
+      "pergunta": "Compare ΔG e energia de ativação.",
+      "resposta": "ΔG mede a diferença de energia livre entre reagentes e produtos, indicando favorabilidade. Energia de ativação é a barreira para chegar ao estado de transição, indicando dificuldade cinética. Enzimas reduzem a barreira, mas não mudam o ΔG da reação.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "enzimas",
+        "energia-ativacao"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-001-02-fc03",
+      "tipo": "armadilha",
+      "pergunta": "Qual é a armadilha da palavra 'espontâneo' em termodinâmica?",
+      "resposta": "No uso comum, espontâneo parece rápido. Em termodinâmica, significa favorável sem entrada líquida de energia externa. Uma reação espontânea pode ser lenta se a barreira de ativação for alta.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "armadilha",
+        "espontaneidade"
+      ]
+    },
+    {
+      "card_id": "s3-bioq2-01-001-02-fc04",
+      "tipo": "contrafactual",
+      "pergunta": "O que aconteceria se enzimas alterassem o ΔG das reações que catalisam?",
+      "resposta": "Elas mudariam o equilíbrio termodinâmico, não apenas a velocidade, o que violaria o papel real da catálise. Enzimas aceleram ida e volta ao reduzir a barreira de ativação, mas não tornam uma reação desfavorável favorável por si mesmas.",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "contrafactual",
+        "enzimas"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s3-bioq2-01-001-02-caso01",
+      "titulo": "Lactato subindo quando a via precisa regenerar NAD+",
+      "apresentacao": "Durante exercício intenso, estudante sente queimação muscular e fadiga progressiva. A explicação completa envolve fisiologia do exercício, mas a pergunta bioquímica é: por que o piruvato é convertido em lactato mesmo sem essa ser a forma mais eficiente de extrair energia da glicose?",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Demanda rápida por ATP aumenta o fluxo glicolítico e exige regeneração contínua de NAD+ para manter a via funcionando."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A reação lactato desidrogenase conecta piruvato, lactato, NADH e NAD+ em uma etapa próxima do equilíbrio."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Não é disfunção inicial; é ajuste de fluxo. A necessidade de NAD+ torna favorável a conversão de piruvato em lactato em certas condições."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "O exercício intenso se associa a fadiga e acidose local sistêmica relativa, enquanto lactato aumenta como marcador de fluxo anaeróbio."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "A reação ajuda a sustentar glicólise por algum tempo, mas não substitui a produção aeróbica eficiente de ATP."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra que favorabilidade depende das condições reais. A direção de uma reação próxima do equilíbrio pode mudar conforme NADH, NAD+, piruvato e lactato se acumulam ou são consumidos.",
+      "disciplinas_relacionadas": [
+        "Bioquímica",
+        "Fisiologia",
+        "Medicina do Esporte"
+      ],
+      "diagnostico_revelado": "Aumento fisiológico de lactato durante exercício intenso, usado como correlação metabólica.",
+      "tratamento_resumido": "Repouso relativo, recuperação e condicionamento progressivo; avaliação clínica é necessária se houver sintomas desproporcionais ou doença associada."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s3-bioq2-01-001-02-img01",
+        "url": null,
+        "prompt_ia": "Ver narrativa.tipo=imagem 'ΔG, barreira de ativação e enzima'.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
   "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "nivel_aceitacao": "completo",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s3",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "codex-gpt-5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
     "nivel_confianca": "rascunho"
   },
-  "fontes": [],
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Nelson DL, Cox MM. Lehninger Principles of Biochemistry. 8th ed. W.H. Freeman; 2021. Seções de energia livre e termodinâmica bioquímica.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Berg JM, Tymoczko JL, Gatto GJ, Stryer L. Biochemistry. 9th ed. W.H. Freeman; 2019. Capítulos de bioenergética e enzimas.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "_lentes": [
     "mecanismo"
   ]

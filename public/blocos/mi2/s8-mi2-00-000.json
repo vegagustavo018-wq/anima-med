@@ -9,50 +9,401 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Medicina Interna II — Visão Geral",
+    "subtitulo": "Como pensar como clínico quando três sistemas diferentes podem produzir o mesmo cansaço?",
     "semestre": 8,
     "disciplina": "Medicina Interna II",
+    "sistema_corporal": "múltiplos (endócrino, digestório, urinário)",
+    "regiao_anatomica": null,
     "profundidade_arvore": 0,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.1",
     "tags": [
-      "mi2",
-      "esqueleto"
+      "medicina-interna",
+      "endocrinologia",
+      "gastroenterologia",
+      "nefrologia",
+      "raciocinio-clinico",
+      "visao-geral",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "disciplina",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Clínica médica de endocrino, gastro e nefrologia; raciocínio doença-a-doença",
-  "narrativa": [],
+  "resumo_conciso": "Medicina Interna II reúne três clínicas — endocrinologia, gastroenterologia e nefrologia — que, isoladas na sala de aula, parecem territórios distintos, mas que na beira do leito frequentemente descrevem o mesmo paciente. Um mesmo doente pode ter a glicemia alterada pelo pâncreas, a filtração comprometida pelo rim e a absorção intestinal afetada pelo tubo digestivo, e os três problemas podem nascer de uma única causa comum ou se alimentar um do outro em cascata. A disciplina existe porque a clínica médica cobrou da medicina um modo de pensar diferente daquele que resolve uma disciplina isolada: aqui, o objetivo não é memorizar mais uma lista de doenças, mas treinar o raciocínio doença-a-doença — reconhecer uma apresentação clínica, gerar hipóteses plausíveis, hierarquizá-las por probabilidade e gravidade, e revisá-las à luz de cada novo dado de exame físico ou laboratório. As três disciplinas foram agrupadas propositalmente: o eixo hormonal atua sobre o intestino (absorção de glicose, motilidade) e sobre o rim (concentração urinária, equilíbrio ácido-base); o intestino altera a nutrição que sustenta o metabolismo e pode ferir o rim por desidratação; o rim, por sua vez, devolve ao corpo os efeitos de qualquer desequilíbrio metabólico ou digestivo que ele não consiga compensar. Estudar os três juntos, e não em módulos estanques, é o que prepara o estudante para o paciente real — que nunca chega com o rótulo pronto de uma única especialidade.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine um paciente de 62 anos que chega à consulta com cansaço progressivo há três meses, sede incomum e perda de peso não intencional. Nenhum desses sintomas, isoladamente, aponta para um único órgão. O cansaço pode vir de anemia, de hipotireoidismo, de insuficiência renal crônica ou de má absorção intestinal. A sede pode ser diabetes, pode ser um distúrbio do sódio, pode ser doença renal perdendo a capacidade de concentrar urina. A perda de peso pode ser hipertireoidismo, pode ser síndrome disabsortiva, pode ser neoplasia digestiva. O mesmo conjunto de três queixas abre pelo menos dez caminhos diagnósticos plausíveis, atravessando três sistemas que, até aqui no currículo, foram estudados em gavetas separadas."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse é o problema que motiva a existência de Medicina Interna II como disciplina única, e não como três cursos isolados de Endocrinologia, Gastroenterologia e Nefrologia. Na vida real do consultório e da enfermaria, o paciente não chega com a disciplina já escrita na testa. Ele chega com uma queixa — cansaço, inchaço, dor abdominal, sede — e cabe ao médico decidir, a partir de dados incompletos e ambíguos, qual sistema (ou quais sistemas, simultaneamente) está falhando."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que não basta saber cada disciplina separadamente?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Até aqui, no curso, você estudou sistemas em blocos verticais: um semestre de fisiologia endócrina, outro de fisiologia digestiva, outro de fisiologia renal. Essa divisão é pedagogicamente necessária — ninguém aprende três sistemas complexos ao mesmo tempo do zero. Mas ela cria um risco silencioso: o estudante aprende a responder \"o que causa isso no sistema X\" mas nunca treinou responder \"dado este paciente inteiro, qual sistema (ou quais) está com o problema, e por quê\"."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O segundo problema, ainda mais sutil, é que os três sistemas não são independentes entre si — eles trocam sinais o tempo todo. O pâncreas endócrino regula a glicose que o intestino absorve; a insulina afeta a reabsorção renal de sódio; a diarreia crônica desidrata e pode precipitar lesão renal aguda; a doença renal crônica altera o metabolismo da vitamina D e do cálcio, gerando doença óssea que nenhuma das outras duas disciplinas, isoladamente, explicaria sozinha. Tratar os três sistemas como gavetas fechadas faz o estudante perder exatamente as conexões que mais aparecem na prática clínica real."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: o problema que esta disciplina resolve não é \"aprender mais doenças\". É treinar o raciocínio que decide, diante de sintomas ambíguos e sobrepostos, qual sistema — ou combinação de sistemas — está por trás do quadro do paciente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve esse problema, sem ainda nomear a disciplina"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução pedagógica e clínica é organizar o estudo não mais por órgão isolado, mas por **apresentação clínica** — o conjunto de sinais e sintomas com que o paciente realmente chega — e, a partir dela, construir um funil de hipóteses. Esse funil não é uma lista de diagnósticos decorados: é um processo ativo de gerar possibilidades plausíveis, ordená-las pela probabilidade (o que é mais comum) e pela gravidade (o que mata mais rápido se não for tratado), e depois usar cada novo dado — um exame físico, um resultado laboratorial, uma resposta a um tratamento inicial — para eliminar ou reforçar cada hipótese."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse processo é chamado, na educação médica, de **raciocínio clínico hipotético-dedutivo**, e é exatamente o eixo declarado desta disciplina: \"raciocínio doença-a-doença\". Em vez de estudar \"diabetes mellitus\" como capítulo isolado, o estudante estuda \"paciente com poliúria e polidipsia\" e, a partir daí, aprende a diferenciar diabetes mellitus de diabetes insipidus, de hipercalcemia, de doença renal com perda de concentração — todas causas reais e nada raras da mesma queixa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que é feita essa disciplina — os três territórios que a compõem"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Medicina Interna II reúne três blocos de conhecimento clínico, cada um com fisiopatologia própria e apresentações clínicas características. A **endocrinologia clínica** trata dos distúrbios hormonais que mais aparecem na prática do internista — diabetes mellitus e suas complicações agudas e crônicas, doenças da tireoide, distúrbios do eixo hipotálamo-hipófise-adrenal, distúrbios do metabolismo do cálcio e osso. A **gastroenterologia clínica** cobre doenças do esôfago ao reto — doença do refluxo, doença péptica, doenças inflamatórias intestinais, hepatopatias, pancreatite, síndromes disabsortivas — sempre perguntando por que a queixa (dor, diarreia, icterícia) aponta para um segmento específico do tubo digestivo ou para o fígado e pâncreas anexos. A **nefrologia clínica** trata da doença renal aguda e crônica, dos distúrbios hidroeletrolíticos e ácido-base, da hipertensão de causa renal e das glomerulopatias — sempre com o rim entendido não como órgão isolado, mas como regulador central do meio interno que todos os outros sistemas dependem."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por que justamente esses três, e não outra combinação? Porque, na prática do internista geral (diferente do especialista de órgão único), esses três sistemas são os que mais frequentemente se apresentam de forma sobreposta e ambígua no mesmo paciente adulto — sobretudo no paciente com múltiplas comorbidades, que é a regra, não a exceção, na medicina interna contemporânea. Um paciente diabético de longa data quase sempre acumula, com o tempo, comprometimento renal; um paciente com doença hepática crônica quase sempre desenvolve distúrbios metabólicos e eletrolíticos; um paciente com doença renal crônica quase sempre desenvolve alterações endócrinas do eixo cálcio-fósforo-vitamina D. A disciplina reflete a biologia real da comorbidade, não uma divisão arbitrária de currículo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O eixo desta disciplina não é a lista de doenças — é o raciocínio que, partindo de uma apresentação clínica ambígua, decide qual sistema (ou combinação de sistemas endócrino-digestório-renal) explica melhor o quadro do paciente, hierarquizando hipóteses por probabilidade e gravidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esse raciocínio funciona, em movimento"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Funil hipotético-dedutivo aplicado a uma apresentação clínica",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Captar a apresentação clínica bruta",
+          "explicacao": "Reunir sintomas, sinais e contexto do paciente sem ainda forçar um diagnóstico — por exemplo, cansaço, sede excessiva e perda de peso em três meses, num homem de 62 anos."
+        },
+        {
+          "numero": 2,
+          "titulo": "Gerar hipóteses plausíveis dos três territórios",
+          "explicacao": "Listar mentalmente as causas endócrinas (diabetes mellitus, hipertireoidismo, insuficiência adrenal), digestivas (síndrome disabsortiva, neoplasia gastrointestinal) e renais (doença renal crônica com perda de concentração urinária, diabetes insipidus nefrogênico) que produzem esse mesmo conjunto de sintomas."
+        },
+        {
+          "numero": 3,
+          "titulo": "Hierarquizar por probabilidade e gravidade",
+          "explicacao": "Diabetes mellitus tipo 2 é estatisticamente a hipótese mais provável nessa faixa etária com esses sintomas — embora essa hierarquia varie com epidemiologia local, comorbidades e história do paciente; neoplasia digestiva, embora menos provável, é grave o suficiente para não ser descartada sem exame dirigido. A hierarquização pondera as duas dimensões, não apenas a mais provável."
+        },
+        {
+          "numero": 4,
+          "titulo": "Buscar dados que discriminem entre hipóteses",
+          "explicacao": "Uma glicemia de jejum elevada e hemoglobina glicada alta confirmam diabetes; uma função renal alterada com urina diluída aponta para o rim; perda de peso desproporcional com alteração do hábito intestinal redireciona para investigação digestiva. Cada exame é escolhido porque discrimina entre hipóteses específicas, não porque é \"o exame padrão\"."
+        },
+        {
+          "numero": 5,
+          "titulo": "Revisar o funil e buscar a causa comum quando houver sobreposição",
+          "explicacao": "Se o paciente tiver, ao mesmo tempo, diabetes mal controlado E função renal reduzida, o raciocínio não para na primeira explicação — ele investiga se a doença renal é consequência direta do diabetes de longa data (nefropatia diabética), uma cascata causal única que explica os dois achados em vez de dois problemas independentes."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse funil não é exclusivo desta disciplina — é o método geral da medicina interna. O que a Medicina Interna II acrescenta é o conteúdo específico dos três territórios que mais geram esse tipo de sobreposição diagnóstica na prática adulta: hormônios, tubo digestivo e rim."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esta disciplina se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Medicina Interna II depende diretamente da fisiologia endócrina, digestiva e renal estudadas em semestres anteriores, e da semiologia geral que ensinou como colher história e exame físico de forma sistemática. Ela se articula constantemente com a farmacologia — porque cada droga usada em uma dessas três clínicas (hipoglicemiantes, inibidores de bomba de prótons, diuréticos) tem efeitos colaterais que atravessam para os outros dois sistemas, como a hipoglicemia induzida por insulina que mimetiza sintomas neurológicos, ou o diurético que corrige a volemia mas pode precipitar lesão renal aguda."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para frente, esta disciplina abre caminho direto para a prática do internato e da residência: o raciocínio treinado aqui — apresentação clínica ambígua, funil de hipóteses, discriminação por exames dirigidos — é exatamente o que se espera de um médico plantonista na emergência ou na enfermaria, onde o paciente nunca chega pré-rotulado por especialidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome da disciplina e por que \"Interna\""
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "medicina interna",
+      "origem": "do latim internus (o que está por dentro), traduzindo o inglês internal medicine, termo consolidado no século XIX quando a clínica médica se separou formalmente da cirurgia",
+      "significado": "a especialidade que cuida das doenças dos órgãos internos por meios não-cirúrgicos, integrando o diagnóstico e tratamento clínico do adulto",
+      "explicacao": "No século XIX, à medida que a medicina se profissionalizava, formou-se uma distinção prática entre quem tratava doenças por meio de intervenção manual externa (o cirurgião, que opera de fora para dentro) e quem tratava doenças por meio de raciocínio clínico, exame e medicamentos, cuidando do funcionamento dos órgãos internos sem abri-los. Esse segundo grupo passou a se chamar internista — praticante da medicina interna. O nome, portanto, não descreve um órgão específico, mas um método: o do clínico geral do adulto, que integra múltiplos sistemas internos em um raciocínio único. É por isso que a disciplina se chama Medicina Interna, e não \"Endocrinologia, Gastroenterologia e Nefrologia\" — o nome já anuncia que o método integrador é o objeto de estudo, não a soma das três partes."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔧",
+      "conteudo": "Pense num mecânico experiente que atende carros com um painel piscando \"verificar motor\", sem outro detalhe. Um mecânico iniciante, treinado em apenas um sistema do carro, tentaria resolver o alerta olhando só para a parte que ele conhece — só o motor, ou só a elétrica. O mecânico experiente sabe que esse mesmo alerta pode vir do sistema de combustível, do sistema elétrico ou do sistema de exaustão, porque os três compartilham sensores e se influenciam (um sensor de oxigênio sujo confunde a leitura de combustão; uma bateria fraca distorce sinais elétricos que parecem falha do motor). Ele levanta hipóteses das três áreas, prioriza pela mais provável e pela mais perigosa (superaquecimento é mais urgente que sensor sujo), e testa cada uma com ferramentas específicas até isolar a causa real — que às vezes é uma combinação das três, assim como o paciente com sintomas ambíguos corresponde ao carro com o alerta genérico, os três territórios (endócrino, digestivo, renal) correspondem aos três sistemas do carro que compartilham sinais, e o funil hipotético-dedutivo corresponde ao diagnóstico sistemático do mecânico experiente, que não se limita à sua especialidade original."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se um currículo médico ensinasse endocrinologia, gastroenterologia e nefrologia em módulos totalmente isolados, sem nunca integrar os três diante de um mesmo paciente, o que se perderia?",
+      "resposta": "Perder-se-ia exatamente a habilidade que mais importa na prática real: a de gerar e discriminar hipóteses concorrentes de sistemas diferentes diante de sintomas ambíguos. O estudante formado nesse currículo isolado saberia responder corretamente \"quais são as causas de hiperglicemia\" quando a pergunta já vem rotulada como endócrina, mas travaria diante de um paciente real com cansaço e sede, porque nunca treinou decidir, sozinho, que sistema investigar primeiro. Pior: perderia de vista as cascatas causais reais que atravessam os três sistemas — como a nefropatia diabética, que não é \"uma doença renal\" nem \"uma doença endócrina\" isoladamente, mas a consequência direta de anos de hiperglicemia mal controlada lesando os capilares glomerulares. Isolar as disciplinas produziria conhecimento fragmentado demais para o paciente real, que é sempre integrado."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Os três territórios de Medicina Interna II e seus pontos de sobreposição",
+      "descricao": "Diagrama de três círculos parcialmente sobrepostos (diagrama de Venn), cada um representando um dos territórios clínicos: endocrinologia (laranja), gastroenterologia (verde) e nefrologia (azul). Nas zonas de sobreposição entre dois círculos, exemplos concretos de condições ou mecanismos compartilhados: entre endócrino e digestivo, 'absorção intestinal de glicose e efeito incretínico'; entre endócrino e renal, 'nefropatia diabética e eixo cálcio-vitamina D'; entre digestivo e renal, 'desidratação por diarreia levando a lesão renal aguda'. No centro, onde os três se sobrepõem, um símbolo de paciente estilizado com a legenda 'paciente com comorbidades múltiplas'. Ao redor do diagrama, uma seta circular representando o funil hipotético-dedutivo: apresentação clínica → hipóteses → hierarquização → discriminação por exames → diagnóstico. Fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de infográfico médico moderno e limpo. Três círculos grandes parcialmente sobrepostos formando um diagrama de Venn: círculo laranja rotulado 'Endocrinologia', círculo verde rotulado 'Gastroenterologia', círculo azul rotulado 'Nefrologia'. Nas interseções de dois círculos, textos curtos em português: entre laranja e verde, 'absorção intestinal de glicose'; entre laranja e azul, 'nefropatia diabética'; entre verde e azul, 'desidratação e lesão renal aguda'. Na interseção central dos três círculos, um ícone simples de paciente (silhueta humana) com a legenda 'paciente com comorbidades múltiplas'. Ao redor de todo o diagrama, uma seta curva fina em cinza-escuro formando um ciclo com cinco pontos numerados e legendados em português: '1. Apresentação clínica', '2. Hipóteses', '3. Hierarquização', '4. Discriminação por exames', '5. Diagnóstico'. Tipografia sem serifa, cores suaves e pastéis para os círculos, alto contraste para o texto, sem elementos fotorrealistas. Sem direitos autorais aplicáveis."
+    }
+  ],
   "conexoes": {
     "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "futuras": [
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "medicina-interna",
+        "semestre_futuro": 8,
+        "topico": "Nefropatia diabética como consequência da hiperglicemia crônica",
+        "mecanismo_conexao": "A hiperglicemia sustentada glica proteínas da membrana basal glomerular e ativa vias que aumentam a pressão intraglomerular, lesando progressivamente o néfron. Esta visão geral anuncia essa cascata; o bloco específico de nefropatia diabética a desenvolve em detalhe.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 8,
+        "topico": "Hipoglicemiantes orais e seus efeitos renais e digestivos",
+        "mecanismo_conexao": "Drogas usadas no eixo endócrino (metformina, inibidores de SGLT2) têm mecanismo de ação e efeitos colaterais que atravessam diretamente para o rim e o tubo digestivo, ilustrando a integração dos três territórios também no tratamento.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "medicina-interna",
+        "semestre_futuro": 9,
+        "topico": "Abordagem ao paciente com múltiplas comorbidades no internato",
+        "mecanismo_conexao": "O funil hipotético-dedutivo apresentado aqui é a mesma ferramenta cognitiva usada, de forma mais complexa, na avaliação de pacientes polimórbidos durante os estágios clínicos do internato.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "medicina-interna",
+        "semestre_futuro": 8,
+        "topico": "Distúrbios hidroeletrolíticos como ponto de encontro entre os três sistemas",
+        "mecanismo_conexao": "Hiponatremia, hipercalemia e distúrbios ácido-base frequentemente têm causa dupla ou tripla (endócrina, digestiva e renal simultaneamente), exigindo o mesmo raciocínio integrador desta visão geral.",
+        "confianca": "consenso_didatico"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s7-mi1-00-000",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "Medicina Interna I (cardiologia, pneumologia, hematologia, reumatologia) usa o mesmo método de raciocínio doença-a-doença aplicado a outros três territórios clínicos; comparar os dois semestres reforça que o método, não o conteúdo, é o que se repete."
+      }
+    ]
   },
-  "flashcards": [],
+  "flashcards": [
+    {
+      "card_id": "s8-mi2-00-000-fc01",
+      "pergunta": "Por que Medicina Interna II agrupa endocrinologia, gastroenterologia e nefrologia numa única disciplina, em vez de ensiná-las separadamente até o fim?",
+      "resposta": "Porque, na prática do internista, esses três sistemas frequentemente se apresentam de forma sobreposta no mesmo paciente — sobretudo no paciente com múltiplas comorbidades, que é a regra na medicina adulta. Hormônios regulam absorção intestinal e função renal; o intestino sustenta a nutrição que alimenta o metabolismo; o rim compensa (ou não) qualquer desequilíbrio dos outros dois. Ensinar os três isoladamente treinaria o estudante a responder perguntas de disciplina única, mas não a decidir, diante de um paciente real com sintomas ambíguos, qual sistema (ou combinação deles) está por trás do quadro.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "medicina-interna",
+        "integracao-clinica",
+        "curriculo"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-00-000-fc02",
+      "pergunta": "Descreva as cinco etapas do funil hipotético-dedutivo aplicado a um paciente com cansaço, sede excessiva e perda de peso.",
+      "resposta": "1) Captar a apresentação clínica bruta, sem forçar diagnóstico prematuro. 2) Gerar hipóteses plausíveis dos três territórios (diabetes mellitus e hipertireoidismo no eixo endócrino; síndrome disabsortiva ou neoplasia no eixo digestivo; doença renal com perda de concentração urinária no eixo renal). 3) Hierarquizar as hipóteses por probabilidade estatística e por gravidade — uma hipótese rara mas letal não pode ser descartada só por ser improvável. 4) Buscar exames que discriminem entre as hipóteses específicas, e não exames genéricos. 5) Revisar o funil quando houver sobreposição, procurando ativamente uma causa comum única (como a nefropatia diabética) em vez de aceitar dois diagnósticos coincidentes sem conexão.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "raciocinio-clinico",
+        "funil-diagnostico",
+        "hipotetico-dedutivo"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-00-000-fc03",
+      "pergunta": "Um paciente de 65 anos, diabético há 15 anos, chega com edema de membros inferiores, função renal reduzida e proteinúria. Por que o raciocínio correto não deve tratar 'diabetes' e 'doença renal' como dois diagnósticos independentes e coincidentes?",
+      "resposta": "Porque a apresentação sugere fortemente uma cascata causal única — nefropatia diabética — em que anos de hiperglicemia mal controlada lesaram progressivamente os capilares glomerulares, levando à perda de proteína na urina e à redução da filtração renal. Tratar os dois achados como coincidência independente perderia a oportunidade de intervir na causa raiz (controle glicêmico rigoroso, bloqueio do sistema renina-angiotensina) que trata as duas manifestações ao mesmo tempo. Esse é exatamente o tipo de sobreposição entre os três territórios que esta disciplina foi desenhada para que o estudante reconheça ativamente, em vez de tratar cada achado como problema isolado.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "nefropatia-diabetica",
+        "cascata-causal",
+        "comorbidade"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-00-000-fc04",
+      "pergunta": "Se um estudante estudasse apenas 'quais são as causas de hiperglicemia' isoladamente, sem nunca treinar a apresentação clínica ambígua de um paciente real, o que ele perderia ao chegar à prática?",
+      "resposta": "Perderia a etapa mais difícil e mais clinicamente relevante do raciocínio: decidir, sozinho, diante de sintomas inespecíficos (cansaço, sede, perda de peso), que a hiperglicemia é sequer uma hipótese a considerar, e depois discriminá-la de outras causas plausíveis dos três territórios. Saber a resposta a uma pergunta já rotulada por disciplina é muito mais fácil do que gerar a pergunta certa a partir de um quadro clínico bruto — e é exatamente essa segunda habilidade que a prática médica exige e que esta disciplina treina deliberadamente.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "raciocinio-clinico",
+        "curriculo-integrado"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-00-000-fc05",
+      "pergunta": "Compare o objetivo de aprendizagem de Medicina Interna II com o de Medicina Interna I (cardiologia, pneumologia, hematologia, reumatologia), nos dois eixos: conteúdo e método.",
+      "resposta": "**Conteúdo:** Medicina Interna I cobre os territórios cardiovascular, respiratório, hematológico e reumatológico; Medicina Interna II cobre os territórios endócrino, digestivo e renal. São conjuntos de doenças distintos, com fisiopatologias próprias. **Método:** em ambas as disciplinas, o método ensinado é idêntico — o funil hipotético-dedutivo que parte de uma apresentação clínica ambígua, gera hipóteses plausíveis, hierarquiza por probabilidade e gravidade, e discrimina com exames dirigidos. A repetição do método em conteúdos diferentes é deliberada: reforça que o raciocínio clínico é transferível entre sistemas, e não uma habilidade aprendida e esquecida a cada disciplina.",
+      "tipo": "comparacao",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "medicina-interna-i",
+        "medicina-interna-ii",
+        "metodo-clinico"
+      ]
+    },
+    {
+      "card_id": "s8-mi2-00-000-fc06",
+      "pergunta": "Por que a disciplina se chama 'Medicina Interna' e não 'Endocrinologia, Gastroenterologia e Nefrologia'?",
+      "resposta": "Porque o nome 'medicina interna' (do latim internus, o que está por dentro) nasceu no século XIX para distinguir o clínico — que trata doenças dos órgãos internos por meio de raciocínio, exame e medicamentos — do cirurgião, que intervém manualmente de fora para dentro. O nome descreve um método integrador de cuidado clínico do adulto, não uma soma de especialidades de órgão. Chamar a disciplina de 'medicina interna' anuncia, desde o nome, que o objeto de estudo é o raciocínio que integra múltiplos sistemas internos, e não apenas o conteúdo isolado de cada um deles.",
+      "tipo": "etimologia",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "medicina-interna",
+        "etimologia",
+        "historia-da-medicina"
+      ]
+    }
+  ],
   "casos_clinicos": [],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s8-mi2-00-000-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
-  "procedencia": {
-    "gerado_por": "mapa-blueprint-s8",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
-    "nivel_confianca": "rascunho"
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
   },
-  "fontes": [],
-  "_lentes": [
-    "apresentacao_clinica",
-    "fisiopatologia"
-  ]
+  "horizonte_validade": "estavel",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Jameson JL, Fauci AS, Kasper DL, Hauser SL, Longo DL, Loscalzo J (eds). Harrison's Principles of Internal Medicine. 21st ed. McGraw Hill; 2022. Parte 1 — Introdução à Medicina Clínica.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Goldman L, Schafer AI (eds). Goldman-Cecil Medicine. 27th ed. Elsevier; 2024. Seções de Endocrinologia, Gastroenterologia e Nefrologia.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "paper",
+      "citacao": "Bowen JL. Educational strategies to promote clinical diagnostic reasoning. N Engl J Med. 2006;355(21):2217-2225.",
+      "pmid_doi": "10.1056/NEJMra054782",
+      "forca_evidencia": "B",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "procedencia": {
+    "gerado_por": "claude-sonnet-5",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "integrador-pipeline-qualidade",
+    "data_revisao": "2026-07-05",
+    "nivel_confianca": "estudo"
+  },
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "Achar que Medicina Interna II é apenas a soma de três disciplinas de órgão isoladas, sem eixo metodológico próprio.",
+      "correcao": "O eixo real da disciplina é o raciocínio clínico integrador — o funil hipotético-dedutivo aplicado a apresentações clínicas ambíguas que atravessam os três sistemas — e não apenas o conteúdo factual de cada território separadamente.",
+      "armadilha_em_flashcard": "sim"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "medicina interna",
+      "termo_es": "medicina interna",
+      "termo_en": "internal medicine",
+      "abreviatura": "MI"
+    },
+    {
+      "termo_pt": "raciocínio clínico",
+      "termo_es": "razonamiento clínico",
+      "termo_en": "clinical reasoning",
+      "abreviatura": null
+    },
+    {
+      "termo_pt": "doença renal crônica",
+      "termo_es": "enfermedad renal crónica",
+      "termo_en": "chronic kidney disease",
+      "abreviatura": "DRC / ERC / CKD"
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "revisado",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "claude-sonnet-5",
+      "mudanca": "Criação inicial do bloco raiz de Medicina Interna II.",
+      "motivo": "Produção inicial da disciplina no Semestre 8."
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-05",
+      "autor": "integrador-pipeline-qualidade",
+      "mudanca": "Corrigidos dois lapsos de idioma (inglês vazado em prosa em português) na narrativa: 'until aqui' → 'até aqui'; 'already escrita' → 'já escrita'. Atualizado estado_ciclo_vida de 'rascunho' para 'revisado' e procedencia.revisado_por preenchido, refletindo a aprovação do pipeline de 3 juízes + adversarial.",
+      "motivo": "Consolidar pareceres do pipeline de qualidade (3 juízes notas 8.7/8.3/8.3, adversarial severidade baixa) — aprovação com correção textual pontual."
+    }
+  ],
+  "caso_clinico": {
+    "status": "ausente_justificado",
+    "motivo_se_ausente": "Este é um bloco de visão geral de disciplina (profundidade 0), cuja função é apresentar o eixo metodológico e o escopo dos três territórios clínicos, não uma doença específica. Um caso clínico com cascata de 5 etapas exige uma causa e um diagnóstico específicos, que pertencem aos blocos-filhos de cada doença (ex.: diabetes mellitus tipo 2, nefropatia diabética, doença inflamatória intestinal). Forçar um caso aqui duplicaria conteúdo que será desenvolvido com mais precisão e evidência nos blocos filhos, violando a regra de granularidade um-tema-um-bloco."
+  }
 }

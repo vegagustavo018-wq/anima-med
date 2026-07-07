@@ -5,50 +5,417 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Acoplamento Excitação-Contração Cardíaco (CICR, DHPR-RyR2)",
+    "subtitulo": "Por que o coração precisa 'pedir emprestado' cálcio de fora para poder liberar o cálcio de dentro?",
     "semestre": 1,
     "disciplina": "histologia",
+    "sistema_corporal": "cardiovascular",
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 4,
+    "tempo_leitura_minutos": 12,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-06",
+    "versao": "1.1",
     "tags": [
-      "hist",
-      "esqueleto"
+      "fisiologia",
+      "histologia",
+      "miocardio",
+      "calcio",
+      "acoplamento"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "Cálcio induz liberação de cálcio; dependência do cálcio extracelular",
-  "narrativa": [],
+  "resumo_conciso": "No músculo esquelético, o sensor de voltagem empurra mecanicamente o canal de cálcio, sem precisar de nenhum cálcio vindo de fora. O coração não pode se dar a esse luxo: ele precisa ajustar continuamente a força de cada batimento conforme a demanda do corpo, e um sistema puramente mecânico e fixo não permitiria essa flexibilidade. A solução foi trocar o contato mecânico por uma cascata química amplificadora: uma pequena entrada de cálcio extracelular funciona como gatilho que abre o canal liberador de um reservatório interno muito maior — um mecanismo chamado liberação de cálcio induzida por cálcio (CICR). Essa dependência do cálcio extracelular, ausente no músculo esquelético, é o que permite ao coração regular sua força de contração continuamente, mas também o torna vulnerável a variações na concentração sanguínea de cálcio e ao alvo direto de classes importantes de fármacos cardiovasculares.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "No bloco anterior sobre acoplamento excitação-contração no músculo esquelético, você viu que o sensor de voltagem (DHPR) empurra mecanicamente o canal de cálcio (RyR1), sem depender de cálcio vindo de fora da célula — um sistema rápido, mas rígido, do tipo tudo-ou-nada. O coração enfrenta um problema diferente: ele precisa não apenas contrair, mas ajustar continuamente a intensidade de cada contração, batimento após batimento, conforme a demanda circulatória do corpo muda (repouso, exercício, febre, hemorragia). Um sistema puramente mecânico e fixo, como o do músculo esquelético, não oferece esse tipo de ajuste fino de intensidade. Como o coração resolve esse problema de regulação contínua?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que um contato mecânico fixo não serve ao coração?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Um acoplamento mecânico do tipo DHPR-RyR1 do músculo esquelético é essencialmente binário: o sensor empurra o canal, o canal abre, uma quantidade relativamente fixa de cálcio é liberada por evento. Isso funciona bem quando o músculo esquelético só precisa responder a comandos discretos e voluntários. Mas o coração precisa de um sistema onde a quantidade de cálcio liberada varie proporcionalmente à intensidade do estímulo — mais cálcio disponível deve significar contração mais forte, e vice-versa, permitindo ajuste fino e contínuo, batimento a batimento."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução da natureza foi trocar o contato mecânico direto por um mecanismo de amplificação química: uma pequena quantidade de cálcio, vinda de fora da célula, funciona como sinal de disparo — uma 'faísca' — que abre o canal liberador do reservatório interno de cálcio, muito maior. Quanto mais cálcio entra como faísca inicial, mais canais internos são ativados, e mais cálcio é liberado no total. Esse é um sistema graduado, não binário."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de nomear o mecanismo: fixe a lógica. O cálculo aqui não é 'abrir ou não abrir' — é 'quanto abrir'. E essa graduação só é possível porque a quantidade de cálcio liberado depende da quantidade de cálcio que entrou primeiro, criando um sistema de amplificação proporcional."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como essa amplificação funciona, em detalhe"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Quando o potencial de ação atinge os túbulos T do cardiomiócito, canais de cálcio voltagem-dependentes do tipo L — a mesma família de proteína DHPR do músculo esquelético, mas aqui funcionando de modo diferente — se abrem e permitem a entrada de uma quantidade modesta de cálcio vindo do meio extracelular. Essa quantidade sozinha não seria suficiente para ativar todas as miofibrilas do sarcômero cardíaco. Mas esse cálcio recém-chegado se difunde por uma distância mínima até encontrar os receptores de rianodina (RyR2) na membrana do retículo sarcoplasmático — proteínas quimicamente sensíveis ao cálcio, não apenas mecanicamente acopladas como no músculo esquelético."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Ao detectar esse cálcio extracelular recém-chegado, o RyR2 se abre e libera uma quantidade muito maior de cálcio, estocado previamente dentro do retículo sarcoplasmático. É esse cálcio liberado internamente, e não o cálcio extracelular original, que efetivamente ativa a maioria das interações actina-miosina no sarcômero cardíaco. O nome técnico desse fenômeno reflete exatamente essa cascata: liberação de cálcio induzida por cálcio."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A quantidade de cálcio que entra pelo DHPR não precisa ser grande — ela funciona como gatilho amplificado, não como fonte principal de cálcio contrátil. É por isso que, mesmo sendo pequena, uma variação na entrada extracelular de cálcio pode alterar significativamente a força de contração cardíaca."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Onde fisicamente esse contato acontece"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Para que essa amplificação química seja rápida e eficiente, o cálcio extracelular precisa alcançar o RyR2 em uma distância muito curta — se tivesse que se difundir por todo o citoplasma, o processo seria lento demais. A solução estrutural é a mesma lógica arquitetônica vista no músculo esquelético: os túbulos T mergulham profundamente na célula, criando estruturas chamadas díades (par de membranas próximas, em contraste com as tríades do esquelético), onde o DHPR e o RyR2 ficam a uma distância mínima um do outro, formando microdomínios onde a concentração local de cálcio dispara rapidamente após a entrada inicial."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🧯",
+      "conteudo": "Pense em um sistema automático de aspersores contra incêndio em um grande armazém. Um pequeno sensor de fumaça (o canal DHPR) detecta o início de um foco de fogo e libera uma quantidade mínima de água de um borrifador local (a pequena entrada de cálcio extracelular) — não o suficiente, sozinha, para apagar o incêndio. Mas essa água ativa um sensor de umidade conectado ao sistema hidráulico principal do prédio (o RyR2), que então abre as válvulas do reservatório central de água (o retículo sarcoplasmático), liberando um volume muito maior que efetivamente controla o incêndio inteiro. Mapeamento: sensor de fumaça = DHPR (detector de voltagem); borrifador local = pequena entrada de cálcio extracelular (o gatilho); sensor de umidade conectado ao reservatório = RyR2 (sensível quimicamente ao cálcio); reservatório central = retículo sarcoplasmático; volume de água liberado no total = cálcio que efetivamente ativa a contração. Quanto maior o sinal inicial do sensor de fumaça, mais água o reservatório central libera — exatamente a graduação que o coração precisa."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa dependência do cálcio extracelular torna o coração sensível a alterações na concentração sanguínea desse íon — hipocalcemia grave pode reduzir a força de contração cardíaca (efeito inotrópico negativo), e hipercalcemia grave pode causar arritmias e até parada em sístole. Essa mesma via é o alvo direto de uma classe inteira de medicamentos cardiovasculares: os bloqueadores de canal de cálcio, que reduzem a entrada de cálcio pelo DHPR e, com isso, reduzem a amplificação do CICR, diminuindo a força de contração (inotropismo negativo) e sendo usados no tratamento de hipertensão e certas arritmias."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Rianodina",
+      "origem": "do nome científico da planta Ryania speciosa, arbusto sul-americano de onde o alcaloide foi originalmente extraído",
+      "significado": "o receptor recebeu o nome do composto vegetal usado para identificá-lo em laboratório, não de sua função fisiológica",
+      "explicacao": "A rianodina foi originalmente estudada como inseticida natural extraído de Ryania speciosa. Pesquisadores descobriram que esse alcaloide se ligava especificamente a um canal de liberação de cálcio no retículo sarcoplasmático, modulando sua atividade em concentrações variáveis — e usaram esse composto como ferramenta de laboratório para isolar e caracterizar a proteína, que herdou seu nome. Décadas depois, entendeu-se que esse mesmo canal era a peça central do mecanismo de liberação de cálcio induzida por cálcio no coração."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta para fechar o raciocínio"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se o canal DHPR do cardiomiócito fosse completamente bloqueado por uma toxina, impedindo qualquer entrada de cálcio extracelular, o que aconteceria com a contração cardíaca, mesmo que o retículo sarcoplasmático estivesse cheio de cálcio estocado?",
+      "resposta": "O coração pararia de bater de forma eficaz, apesar de o reservatório interno de cálcio estar intacto e cheio. Isso acontece porque, no mecanismo de liberação de cálcio induzida por cálcio, o RyR2 não se abre espontaneamente sem o sinal inicial do cálcio extracelular — ele precisa detectar esse 'gatilho' antes de liberar o cálcio armazenado internamente. Sem a entrada pelo DHPR, o RyR2 permanece fechado, o cálcio interno nunca é liberado, e as miofibrilas não recebem o íon necessário para o deslizamento da actina sobre a miosina. Esse mecanismo é exatamente o que diferencia o coração do músculo esquelético: no esquelético, o reservatório interno pode ser esvaziado por acoplamento puramente mecânico, sem depender de cálcio externo; no coração, o reservatório interno é 'trancado' e só se abre mediante o sinal químico externo."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Complexo CICR na díade cardíaca",
+      "descricao": "Diagrama mostrando um túbulo T em contato próximo com o retículo sarcoplasmático, canais DHPR liberando pequena quantidade de cálcio extracelular que ativa os receptores RyR2, liberando grande quantidade de cálcio interno.",
+      "prompt_ia": "Diagrama científico vetorial, corte histológico de uma díade cardíaca. Membrana do túbulo T com canais DHPR do tipo L (azul), pequena seta indicando entrada modesta de cálcio extracelular. Membrana adjacente do retículo sarcoplasmático com receptores RyR2 (vermelho, estrutura tetramérica maior), seta grossa indicando liberação maciça de cálcio interno em resposta ao cálcio-gatilho. Legendas em português explicando 'gatilho' e 'amplificação'. Fundo transparente adaptável a tema escuro/claro, estilo didático limpo e científico."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-hist-04-001-07",
+        "titulo": "Acoplamento Excitação-Contração (DHPR-RyR1)",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "É essencial já ter entendido o mecanismo mecânico do músculo esquelético para perceber, por contraste, o que há de diferente e mais sofisticado no mecanismo químico e graduado do coração."
+      },
+      {
+        "bloco_id": "s1-hist-04-002-01",
+        "titulo": "O Cardiomiócito (Uninucleado, Ramificado)",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "complementar",
+        "explicacao": "Compreender a arquitetura celular do cardiomiócito individual ajuda a situar onde, dentro dessa célula específica, as díades e os túbulos T se organizam."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Bloqueadores de canal de cálcio (anti-hipertensivos e antiarrítmicos)",
+        "mecanismo_conexao": "Fármacos como verapamil e diltiazem inibem diretamente o DHPR (canal tipo L), reduzindo a entrada de cálcio extracelular e, consequentemente, a amplificação do CICR — diminuindo contratilidade cardíaca e frequência cardíaca em nós marca-passo.",
+        "confianca": "consenso_didatico"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "cardiologia",
+        "semestre_futuro": 6,
+        "topico": "Insuficiência cardíaca e disfunção do manejo de cálcio",
+        "mecanismo_conexao": "Na insuficiência cardíaca, alterações na expressão e função de proteínas do CICR (incluindo o RyR2 e a bomba SERCA2a) comprometem a liberação e recaptação eficiente de cálcio, reduzindo a força contrátil do miocárdio.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "RECONHECIMENTO_CLINICO",
+        "bloco_id_destino": null,
+        "disciplina": "cardiologia",
+        "semestre_futuro": 6,
+        "topico": "Taquicardia ventricular polimórfica catecolaminérgica",
+        "mecanismo_conexao": "Mutações no gene do RyR2 podem causar liberação espontânea e descontrolada de cálcio durante estresse ou exercício, gerando arritmias ventriculares potencialmente fatais em indivíduos jovens sem cardiopatia estrutural aparente.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s1-hist-04-001-07",
+        "tipo_relacao": "CONTRASTE",
+        "explicacao": "No músculo esquelético, o acoplamento é puramente eletromecânico e não depende de cálcio extracelular; no coração, o mecanismo é quimicamente amplificado e dependente do cálcio extracelular — a diferença central discutida neste bloco."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s1-hist-04-002-03-fc01",
+      "pergunta": "Por que o coração precisou desenvolver um mecanismo de acoplamento excitação-contração dependente de cálcio extracelular, em vez de usar o acoplamento puramente mecânico do músculo esquelético?",
+      "resposta": "Porque o coração precisa ajustar continuamente a intensidade de cada contração, batimento a batimento, conforme a demanda circulatória do corpo (repouso, exercício, febre, hemorragia). Um sistema mecânico fixo como o DHPR-RyR1 esquelético libera uma quantidade relativamente constante de cálcio a cada disparo, funcionando de forma quase binária. O mecanismo de liberação de cálcio induzida por cálcio (CICR) permite graduação: quanto mais cálcio extracelular entra como gatilho, mais canais RyR2 são ativados e mais cálcio interno é liberado — dando ao coração a capacidade de variar continuamente sua força contrátil (inotropismo) conforme a necessidade fisiológica do momento.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "CICR",
+        "cardiomiocito",
+        "calcio"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-002-03-fc02",
+      "pergunta": "Descreva a sequência completa do mecanismo de liberação de cálcio induzida por cálcio (CICR) no cardiomiócito, desde a despolarização do túbulo T até a ativação da contração.",
+      "resposta": "1) O potencial de ação despolariza a membrana do túbulo T do cardiomiócito. 2) Canais de cálcio voltagem-dependentes do tipo L (DHPR) se abrem, permitindo entrada modesta de cálcio do meio extracelular. 3) Esse cálcio recém-chegado se difunde por uma distância mínima, dentro da estrutura da díade, até alcançar os receptores de rianodina (RyR2) na membrana do retículo sarcoplasmático. 4) O RyR2, sensível quimicamente ao cálcio, detecta essa concentração local elevada e se abre. 5) Uma quantidade muito maior de cálcio, previamente estocada no retículo sarcoplasmático, é liberada no citosol, e é esse cálcio amplificado que efetivamente ativa a maioria das interações entre actina e miosina no sarcômero cardíaco.",
+      "tipo": "mecanismo",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "CICR",
+        "DHPR",
+        "RyR2"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-002-03-fc03",
+      "pergunta": "Se o canal DHPR do cardiomiócito fosse completamente inibido, impedindo qualquer entrada de cálcio extracelular, o que aconteceria com a contração cardíaca, mesmo com o retículo sarcoplasmático cheio de cálcio estocado?",
+      "resposta": "A contração falharia quase completamente, apesar do reservatório interno estar intacto. No mecanismo CICR, o RyR2 não se abre espontaneamente — ele depende de detectar o sinal de cálcio extracelular vindo pelo DHPR como gatilho. Sem esse gatilho, o cálcio interno permanece trancado no retículo, e as miofibrilas não recebem o íon necessário para a contração. Essa dependência total do sinal externo é o que diferencia fundamentalmente o coração do músculo esquelético, onde o acoplamento mecânico permite liberação de cálcio interno mesmo sem qualquer entrada extracelular.",
+      "tipo": "contrafactual",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "CICR",
+        "DHPR",
+        "contrafactual"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-002-03-fc04",
+      "pergunta": "Paciente com insuficiência renal crônica em diálise apresenta hipocalcemia grave não corrigida. Explique por que essa condição pode comprometer a contratilidade cardíaca, relacionando o mecanismo com o CICR.",
+      "resposta": "A hipocalcemia reduz a concentração de cálcio disponível no meio extracelular, diminuindo diretamente a quantidade de cálcio que consegue entrar pelo canal DHPR durante cada potencial de ação. Como o CICR depende dessa entrada extracelular como gatilho proporcional para ativar o RyR2 e liberar o cálcio interno do retículo sarcoplasmático, uma redução no cálcio extracelular disponível reduz a amplitude do sinal-gatilho, resultando em menor liberação de cálcio interno total e, consequentemente, menor força de contração (efeito inotrópico negativo). Isso explica por que hipocalcemia grave e não corrigida pode contribuir para disfunção contrátil cardíaca em pacientes renais crônicos, exigindo correção cuidadosa do cálcio sérico.",
+      "tipo": "clinico",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "hipocalcemia",
+        "CICR",
+        "clinico"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-002-03-fc05",
+      "pergunta": "Verdadeiro ou falso e justifique: 'A maior parte do cálcio que ativa a contração no cardiomiócito vem diretamente do meio extracelular através do DHPR.'",
+      "resposta": "Falso. A entrada de cálcio pelo DHPR é pequena e funciona apenas como gatilho — um sinal amplificador. A maior parte do cálcio que efetivamente ativa as interações entre actina e miosina vem do reservatório interno do retículo sarcoplasmático, liberado pelo RyR2 em resposta a esse gatilho extracelular. Essa é uma confusão frequente porque intuitivamente parece que 'o cálcio extracelular ativa a contração', quando na verdade o extracelular apenas dispara um mecanismo de amplificação interno muito maior — daí o nome liberação de cálcio induzida por cálcio.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "CICR",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-002-03-fc06",
+      "pergunta": "O receptor de rianodina (RyR2) recebeu esse nome a partir de um alcaloide vegetal usado como inseticida. O que essa origem revela sobre a forma como muitas proteínas de sinalização foram historicamente identificadas em laboratório?",
+      "resposta": "A rianodina foi originalmente estudada como inseticida natural extraído da planta Ryania speciosa. Pesquisadores descobriram, décadas antes de compreender o papel fisiológico central dessa proteína no coração, que esse composto se ligava especificamente ao canal e modulava sua atividade — usando-o como ferramenta farmacológica para isolar e purificar a proteína em laboratório. O nome revela um padrão recorrente: muitas proteínas de canais iônicos e receptores receberam seus nomes a partir de compostos químicos (frequentemente de origem vegetal, fúngica ou toxinas animais) usados para identificá-las experimentalmente, não a partir de sua função biológica original, que muitas vezes só foi esclarecida muito depois.",
+      "tipo": "etimologia",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "rianodina",
+        "etimologia",
+        "historia-da-farmacologia"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-002-03-fc07",
+      "pergunta": "Compare o acoplamento excitação-contração do músculo esquelético e do músculo cardíaco quanto à dependência de cálcio extracelular e à capacidade de graduar a força de contração.",
+      "resposta": "No músculo esquelético, o acoplamento é mecânico direto entre DHPR e RyR1: o sensor de voltagem empurra fisicamente o canal, liberando uma quantidade relativamente fixa de cálcio por disparo, sem depender de cálcio extracelular — um sistema rápido, mas pouco graduável, adequado a comandos voluntários discretos. No coração, o acoplamento é quimicamente amplificado (CICR): uma pequena entrada de cálcio extracelular pelo DHPR funciona como gatilho proporcional que ativa o RyR2, e a quantidade de cálcio interno liberado varia conforme a intensidade desse gatilho — permitindo ajuste fino e contínuo da força de contração (inotropismo), essencial para adaptar o débito cardíaco às necessidades circulatórias momento a momento.",
+      "tipo": "comparacao",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "comparacao",
+        "musculo-esqueletico",
+        "CICR"
+      ]
+    },
+    {
+      "card_id": "s1-hist-04-002-03-fc08",
+      "pergunta": "Conecte: por que bloqueadores de canal de cálcio como o verapamil (Farmacologia) reduzem tanto a força de contração quanto a frequência cardíaca (Fisiologia), atuando sobre o mesmo canal DHPR descrito neste bloco de Histologia?",
+      "resposta": "O verapamil inibe o canal DHPR (tipo L) tanto nos cardiomiócitos contráteis quanto nas células marca-passo do nó sinoatrial e nó atrioventricular, que também dependem de correntes de cálcio tipo L para gerar seus potenciais de ação característicos. Nos cardiomiócitos contráteis, a redução da entrada de cálcio pelo DHPR diminui o gatilho do mecanismo CICR descrito neste bloco, reduzindo a liberação de cálcio interno e, portanto, a força de contração (efeito inotrópico negativo). Nas células marca-passo, a mesma inibição do canal tipo L retarda a despolarização espontânea, reduzindo a frequência de disparo (efeito cronotrópico negativo) e retardando a condução através do nó atrioventricular (efeito dromotrópico negativo). É por isso que o verapamil é usado tanto para reduzir a pressão arterial quanto para controlar certas taquiarritmias supraventriculares — os dois efeitos nascem do mesmo alvo molecular.",
+      "tipo": "sintese_transdisciplinar",
+      "dificuldade": 5,
+      "nivel_alvo": 5,
+      "tags": [
+        "verapamil",
+        "DHPR",
+        "sintese"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-hist-04-002-03-caso01",
+      "titulo": "Síncope durante corrida em adolescente atleta",
+      "apresentacao": "Adolescente de 15 anos, atleta de corrida competitiva, apresenta episódio de síncope súbita durante uma prova, precedida por palpitações. Não há histórico de cardiopatia estrutural conhecida, e o ecocardiograma é normal. Durante teste ergométrico monitorizado, o paciente desenvolve taquicardia ventricular polimórfica no pico do esforço, que reverte espontaneamente com a interrupção do exercício. História familiar revela um tio materno que faleceu subitamente aos 20 anos durante atividade física.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação hereditária no gene que codifica o receptor de rianodina cardíaco (RYR2), tornando o canal hipersensível e propenso a abrir espontaneamente sob condições de estresse adrenérgico intenso."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O RyR2 na membrana do retículo sarcoplasmático dos cardiomiócitos — a mesma proteína descrita neste bloco como o canal amplificador central do mecanismo CICR."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Sob estímulo adrenérgico (exercício intenso, estresse emocional), o RyR2 mutado libera cálcio de forma espontânea e descontrolada, fora da sequência normal do acoplamento excitação-contração, gerando pós-despolarizações que disparam batimentos ectópicos."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Palpitações seguidas de síncope, tipicamente desencadeadas por esforço físico ou forte emoção, em paciente jovem sem alteração estrutural cardíaca aparente ao ecocardiograma."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem diagnóstico e manejo adequados, o risco de morte súbita cardíaca por taquicardia ventricular polimórfica sustentada ou fibrilação ventricular é significativo, especialmente durante atividade física intensa — a mesma condição familiar que provavelmente explica o óbito precoce do tio materno."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra a consequência clínica direta de uma disfunção no mesmo canal RyR2 que este bloco descreve como o amplificador central e regulado do cálcio cardíaco: quando esse canal, hipersensível por mutação, escapa do controle fisiológico normal do CICR sob estímulo adrenérgico, o resultado é liberação descontrolada de cálcio e arritmia potencialmente fatal, em vez da liberação graduada e proporcional que sustenta o batimento cardíaco normal.",
+      "disciplinas_relacionadas": [
+        "histologia",
+        "cardiologia",
+        "genetica",
+        "medicina_do_esporte"
+      ],
+      "diagnostico_revelado": "Taquicardia ventricular polimórfica catecolaminérgica (CPVT).",
+      "tratamento_resumido": "Restrição de atividade física competitiva intensa, betabloqueadores para reduzir o estímulo adrenérgico sobre o RyR2 mutado, consideração de cardiodesfibrilador implantável em casos de alto risco, e rastreamento familiar genético dado o padrão hereditário da condição [⚠️ VERIFICAR: indicações precisas de cardiodesfibrilador e esquemas terapêuticos devem ser confirmados em guideline de cardiologia/eletrofisiologia atualizado]."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s1-hist-04-002-03-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
+  "metricas_estudo": {
+    "vezes_lido": 0,
+    "ultima_leitura": null,
+    "flashcards_dominados": 0,
+    "tempo_total_estudo_minutos": 0,
+    "marcado_para_revisao": false,
+    "notas_do_usuario": "",
+    "auto_avaliacao": {
+      "explicar_para_leigo": null,
+      "prever_sintomas": null,
+      "aplicar_caso_novo": null,
+      "conexoes_claras": null
+    },
+    "diario_aprendizagem": ""
+  },
+  "horizonte_validade": "em_mudanca",
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Guyton AC, Hall JE. Tratado de Fisiologia Médica. 14ª ed. Elsevier; 2021. Capítulo sobre excitação e contração do músculo cardíaco.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Ross MH, Pawlina W. Histology: A Text and Atlas. 8th ed. Wolters Kluwer; 2020. Chapter 10 — Muscle Tissue.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-06"
+    }
+  ],
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "claude-sonnet-4.5",
+    "data_geracao": "2026-07-06",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "histofisiologia"
+  "concepcoes_erradas_frequentes": [
+    {
+      "confusao": "A maior parte do cálcio contrátil no coração vem diretamente do meio extracelular",
+      "correcao": "A maior parte vem do retículo sarcoplasmático, liberada pelo RyR2; o cálcio extracelular funciona apenas como gatilho proporcional",
+      "armadilha_em_flashcard": "sim"
+    },
+    {
+      "confusao": "O acoplamento excitação-contração é idêntico entre músculo esquelético e cardíaco",
+      "correcao": "O esquelético é mecânico e independente de cálcio extracelular; o cardíaco é quimicamente amplificado e dependente dele (CICR)",
+      "armadilha_em_flashcard": "nao"
+    }
+  ],
+  "glossario_trilingue": [
+    {
+      "termo_pt": "liberação de cálcio induzida por cálcio",
+      "termo_es": "liberación de calcio inducida por calcio",
+      "termo_en": "calcium-induced calcium release",
+      "abreviatura": "CICR"
+    },
+    {
+      "termo_pt": "receptor de rianodina",
+      "termo_es": "receptor de rianodina",
+      "termo_en": "ryanodine receptor",
+      "abreviatura": "RyR"
+    },
+    {
+      "termo_pt": "díade cardíaca",
+      "termo_es": "díada cardíaca",
+      "termo_en": "cardiac dyad",
+      "abreviatura": null
+    }
+  ],
+  "relevancia_regional": "global",
+  "contexto_ucp": false,
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo",
+  "nivel_dominio_minimo": 4,
+  "changelog": [
+    {
+      "versao": "1.0",
+      "data": "2026-07-05",
+      "autor": "gemini-3.1-flash-lite",
+      "mudanca": "Geração inicial do bloco",
+      "motivo": "Produção em massa S1"
+    },
+    {
+      "versao": "1.1",
+      "data": "2026-07-06",
+      "autor": "claude-sonnet-4.5",
+      "mudanca": "Reescrita completa da narrativa (socrática genuína, necessidade de graduação apresentada antes do mecanismo), nova analogia (sistema de aspersores contra incêndio), expansão de flashcards para 8 tipos variados, adição de caso clínico com cascata de 5 etapas (taquicardia ventricular polimórfica catecolaminérgica)",
+      "motivo": "Alinhamento com ANIMA_FILOSOFIA.md — narrativa anterior nomeava CICR/DHPR/RyR2 cedo, analogia genérica de museu, sem caso clínico"
+    }
   ]
 }

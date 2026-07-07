@@ -1,54 +1,212 @@
 {
+  "metadata": {
+    "titulo": "Via Ras/Raf/MEK/ERK (MAPK)",
+    "subtitulo": "Como a célula decide que é hora de se dividir?",
+    "disciplina": "biologia celular",
+    "semestre": 1,
+    "tempo_leitura_minutos": 10,
+    "nivel": "CORE",
+    "tags": [
+      "sinalização",
+      "câncer",
+      "MAPK",
+      "proliferação",
+      "transdução"
+    ],
+    "status": "completo",
+    "data_ultima_revisao": "2026-07-05"
+  },
+  "resumo_conciso": "A via das MAP quinases (Mitogen-Activated Protein Kinases) é a espinha dorsal da comunicação celular para o crescimento. Quando um fator de crescimento se liga ao seu receptor na superfície da célula, ele desencadeia uma cascata de fosforilação em cascata que transporta a informação do ambiente extracelular até o núcleo. O protagonista, Ras, atua como um interruptor molecular: quando ligado ao GTP, ele ativa uma série de quinases (Raf, MEK e ERK) que, por fim, alteram a transcrição gênica para preparar a célula para a mitose. A desregulação dessa via é um evento central na oncogênese, tornando o entendimento desse fluxo vital para a medicina moderna.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Imagine que a célula é uma cidade fortificada. Para que ela decida expandir seus muros — ou seja, proliferar —, ela precisa de um comando vindo de fora. No entanto, o sinal externo (um fator de crescimento) não pode entrar na célula. Ele precisa de um sistema de mensageiros que amplifique e traduza essa ordem de forma precisa. É aqui que entra a via MAPK."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A natureza resolveu esse problema criando uma cascata de fosforilação. Em vez de um único mensageiro, temos uma sucessão de proteínas que ativam umas às outras. Por que isso? Porque uma cascata permite controle, retroalimentação e amplificação. Um único sinal lá fora pode resultar em milhares de proteínas ativadas lá dentro."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O coração dessa via é uma proteína chamada Ras. Ela é uma GTPase pequena que, quando ancorada à face interna da membrana plasmática, atua como um interruptor binário. Quando recebe um sinal, ela troca GDP por GTP e 'acende'. Uma vez ligada, Ras recruta e ativa a Raf, que inicia a série de ativações de quinases."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como uma ordem externa se transforma em ação nuclear?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Após Ras ativar Raf, a sinalização segue para a MEK (MAPK/ERK quinase) e, finalmente, para a ERK (Extracellular signal-Regulated Kinase). A ERK é o 'mensageiro final' que transloca para o núcleo, onde fosforila fatores de transcrição, mudando o programa genético da célula para a síntese de proteínas necessárias ao ciclo celular."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🔑",
+      "conteudo": "Pense na via como um sistema de transmissão de correio em um reino. O fator de crescimento é o Rei (invisível fora do castelo). O Receptor de Membrana é o Mensageiro na muralha. Ras é o Capitão da Guarda que decide abrir o portão. Raf, MEK e ERK são os cavaleiros que passam a mensagem por relés até o trono (Núcleo). Mapeamento: Rei = Fator de Crescimento; Capitão = Ras; Relés = Raf/MEK/ERK; Trono = Genoma."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A via MAPK não é apenas uma linha; é um sistema de amplificação. A fosforilação é a 'moeda' de energia e informação que permite que a célula reaja em milissegundos a estímulos que, de outra forma, seriam silenciados."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Respire. Visualize Ras na membrana, passando o bastão para Raf, que passa para MEK, que passa para ERK. A fosforilação é o ato de adicionar um grupo fosfato para mudar a conformação e a função da próxima proteína na fila."
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "MAPK",
+      "origem": "grego/latim",
+      "significado": "Mitogen-Activated Protein Kinase",
+      "explicacao": "Mitógeno vem do grego 'mitos' (fio, referindo-se aos cromossomos na mitose) + 'gen' (origem). Ou seja, é uma enzima ativada por substâncias que originam a divisão celular."
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Se Ras não conseguisse hidrolisar o GTP de volta para GDP?",
+      "resposta": "A célula ficaria presa em um estado de sinalização constante, 'achando' que há fatores de crescimento o tempo todo. Isso levaria a uma proliferação descontrolada, uma característica clássica da transformação neoplásica e do desenvolvimento de tumores."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "A cascata de sinalização MAPK",
+      "descricao": "Esquema mostrando a membrana plasmática com o receptor, a proteína Ras ligada a GTP, e a sequência de ativação Raf -> MEK -> ERK, terminando com a entrada no núcleo.",
+      "prompt_ia": "Scientific diagram of the MAPK signaling pathway. Cell membrane at the top with a receptor (RTK). Ras protein attached to the membrane in red, passing a signal to a blue Raf protein, then a green MEK, and finally a yellow ERK protein. ERK is shown moving through a nuclear pore into the nucleus. Clean, minimalist, textbook style, high contrast, white background.",
+      "origem": "ia"
+    }
+  ],
+  "flashcards": [
+    {
+      "card_id": "s1-biocel-05-003-02-fc01",
+      "tipo": "mecanismo",
+      "pergunta": "Qual é a função do GTP na ativação da proteína Ras?",
+      "resposta": "O GTP atua como um interruptor alostérico. Quando Ras está ligado a GTP, ela assume uma conformação ativa que permite a interação e ativação da quinase Raf. A hidrólise de GTP para GDP desativa Ras, encerrando o sinal.",
+      "dificuldade": 2,
+      "nivel_alvo": 4,
+      "tags": [
+        "Ras",
+        "GTPase"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-02-fc02",
+      "tipo": "contrafactual",
+      "pergunta": "O que ocorreria se a enzima MEK sofresse uma mutação que a tornasse constitutivamente ativa?",
+      "resposta": "A via seria ativada independentemente do estímulo externo ou do estado da proteína Ras. Isso causaria uma sinalização proliferativa constante, podendo levar à formação de tumores, mesmo na ausência de fatores de crescimento.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "oncogênese",
+        "MEK"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-02-fc03",
+      "tipo": "comparacao",
+      "pergunta": "Por que a cascata de quinases é superior a um mecanismo de mensageiro único?",
+      "resposta": "A cascata permite a amplificação do sinal (um receptor ativado pode ativar várias moléculas de Ras, que ativam várias de Raf) e oferece múltiplos pontos de controle e integração com outras vias de sinalização celular.",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "sinalização",
+        "amplificação"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-02-fc04",
+      "tipo": "etimologia",
+      "pergunta": "Por que chamamos as proteínas da via de 'quinases'?",
+      "resposta": "O termo vem do grego 'kinein' (mover). Em bioquímica, quinases são enzimas que transferem grupos fosfato (frequentemente do ATP) para outras proteínas, 'movendo' o grupo fosfato para ativar ou desativar o alvo.",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "etimologia",
+        "quinase"
+      ]
+    },
+    {
+      "card_id": "s1-biocel-05-003-02-fc05",
+      "tipo": "clinico",
+      "pergunta": "Por que inibidores de BRAF são usados em certos tipos de melanoma?",
+      "resposta": "Muitos melanomas apresentam uma mutação específica no gene BRAF que mantém a proteína constitutivamente ativa. Inibidores dessa forma mutante bloqueiam a cascata MAPK, interrompendo a proliferação descontrolada das células cancerígenas.",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": [
+        "oncologia",
+        "BRAF"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s1-biocel-05-003-02-caso01",
+      "titulo": "O tumor que não para de crescer",
+      "apresentacao": "Paciente apresenta uma neoplasia cutânea agressiva. Testes genéticos revelam uma mutação que impede a hidrólise de GTP pela proteína Ras naquelas células.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Mutação no gene RAS que inibe a atividade GTPase intrínseca."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "Proteína Ras (interruptor molecular)."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Ras permanece permanentemente ligada ao GTP, em estado 'ligado' constante."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Proliferação celular incontrolável, formando massa tumoral."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "O sinal de mitose nunca é desligado, levando à progressão tumoral."
+        }
+      ],
+      "diagnostico_revelado": "Mutação ativadora de RAS (Oncogênica)",
+      "tratamento_resumido": "Inibição de alvos a jusante (downstream) na via MAPK e terapias de controle de ciclo celular.",
+      "conexao_com_bloco": "Ilustra a importância da regulação de Ras na prevenção do câncer.",
+      "disciplinas_relacionadas": [
+        "biologia celular",
+        "oncologia",
+        "genética"
+      ]
+    }
+  ],
+  "conexoes": {
+    "prerequisitos": [
+      {
+        "bloco_id": "s1-biocel-03-001",
+        "titulo": "Citoesqueleto — Panorama e Lógica dos Três Sistemas",
+        "disciplina": "biologia celular",
+        "semestre": 1,
+        "relevancia": "base_necessaria",
+        "explicacao": "A sinalização MAPK começa com a ativação de receptores de membrana, cujo entendimento é pré-requisito."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "topico": "Farmacologia do Câncer",
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "mecanismo_conexao": "O bloqueio de BRAF/MEK é a base das terapias alvo em diversos tumores sólidos.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "tipo_relacao": "CONTRASTE",
+        "topico": "Via PI3K/Akt",
+        "explicacao": "Enquanto MAPK foca em proliferação, PI3K/Akt foca em sobrevivência celular; ambas são frequentemente co-ativadas em cânceres."
+      }
+    ]
+  },
   "resumo_id": "s1-biocel-05-003-02",
   "no_pai_id": "s1-biocel-05-003",
   "nos_filhos_ids": [],
   "conexoes_laterais_ids": [],
-  "metadata": {
-    "titulo": "Via Ras/Raf/MEK/ERK (MAPK)",
-    "semestre": 1,
-    "disciplina": "biologia celular",
-    "profundidade_arvore": 3,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "biocel",
-      "esqueleto"
-    ],
-    "nivel": "CORE",
-    "tipo": "conceito"
-  },
-  "resumo_conciso": "Cascata de proliferação; mutações de RAS/BRAF em tumores",
-  "narrativa": [],
-  "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
-  },
-  "flashcards": [],
-  "casos_clinicos": [],
-  "midia": {
-    "imagens": [],
-    "videos": [],
-    "audios": []
-  },
-  "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s1",
-    "data_geracao": "2026-07-01",
-    "revisado_por": null,
-    "data_revisao": null,
+    "gerado_por": "gemini-3.1-flash-lite",
+    "data_geracao": "2026-07-05",
+    "revisado_por": "pendente",
     "nivel_confianca": "rascunho"
-  },
-  "fontes": [],
-  "_lentes": [
-    "bioquimica",
-    "correlacao_clinica"
-  ]
+  }
 }

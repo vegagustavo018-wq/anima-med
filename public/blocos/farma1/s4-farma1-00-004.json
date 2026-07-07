@@ -5,50 +5,329 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "As Duas Perguntas da Farmacologia: PK e PD",
+    "subtitulo": "Quando um fármaco falha, o problema está na viagem ou no encontro?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 2,
-    "importancia": 3,
-    "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "importancia": 5,
+    "dificuldade": 3,
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "farmacodinamica",
+      "raciocinio-clinico",
+      "core"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "O que o corpo faz ao fármaco (PK) x o que o fármaco faz ao corpo (PD)",
-  "narrativa": [],
+  "resumo_conciso": "O bloco-pai já apresentou que toda farmacologia se divide em duas perguntas — o que o corpo faz ao fármaco (farmacocinética) e o que o fármaco faz ao corpo (farmacodinâmica). Este bloco não repete essa divisão: ensina a usá-la como ferramenta diagnóstica. Diante de qualquer fármaco que não funcionou como esperado — dose maior sem efeito extra, efeito que demora demais para aparecer, resposta que varia de paciente para paciente —, existe um critério objetivo para saber de qual lado da fronteira PK/PD está o problema, sem inventar hipóteses às cegas. O critério prático é este: se o problema muda quando você altera a via de administração, a dose absoluta ou o tempo, geralmente é farmacocinética; se o problema persiste mesmo com a concentração do fármaco no local certo confirmada, é farmacodinâmica. Cada uma dessas perguntas tem, além disso, sua própria unidade de medida — a farmacocinética se mede em concentração plasmática ao longo do tempo; a farmacodinâmica se mede em intensidade de efeito por concentração local. Confundir as duas réguas é o erro mais comum de quem está começando a raciocinar clinicamente sobre fármacos, porque um número bom numa régua não garante nada na outra.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior já deixou claro que existem duas metades no estudo de qualquer fármaco: a jornada física dele dentro do corpo e a consequência funcional de ele chegar ao alvo. Essa divisão parece, à primeira vista, apenas organizacional — um jeito de separar capítulos de livro-texto. Mas ela esconde uma pergunta muito mais prática, a que todo clínico faz sem perceber toda vez que um medicamento não funciona como deveria: **em qual das duas metades está o problema?**"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa pergunta não tem resposta óbvia. Um paciente que dobra a dose de um anti-hipertensivo e não sente diferença alguma pode estar diante de um problema de absorção (a molécula não está entrando no sangue), de um problema de metabolismo acelerado (o fígado destrói o excesso antes que ele chegue ao alvo) ou de um problema de resposta do próprio receptor (o alvo já está saturado, e nenhuma quantidade extra de fármaco produz mais efeito). As três explicações são fisiologicamente muito diferentes, mas o sintoma observado — 'aumentei a dose e não mudou nada' — é idêntico nas três. Sem um critério para diferenciar, o raciocínio clínico trava."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que não basta saber que existem duas perguntas"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Saber que farmacocinética e farmacodinâmica existem, como o bloco anterior mostrou, é necessário mas insuficiente. Falta um instrumento para *localizar* onde, dentro dessas duas metades, um problema concreto está acontecendo. E esse instrumento não pode ser uma lista de sintomas decorados — precisa ser um critério que funcione mesmo diante de um fármaco nunca visto antes, porque é exatamente isso que a prática clínica exige o tempo todo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O critério existe, e é mais simples do que parece: cada uma das duas metades tem sua própria variável independente e sua própria unidade de medida. Isso significa que dá para testar cada uma isoladamente, manipulando exatamente a variável que pertence a ela."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: a pergunta real deste bloco não é 'o que são PK e PD' — isso o bloco anterior já respondeu. A pergunta é: dado um problema farmacológico concreto, como decidir de qual lado da fronteira ele está?"
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que esse critério é feito"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacocinética tem como variável central a **concentração do fármaco ao longo do tempo** — em geral medida no plasma, porque o plasma é o compartimento mais acessível para amostragem e costuma refletir, com atraso variável, a concentração no tecido-alvo. Absorção, distribuição, metabolismo e excreção são, cada um, um processo que muda essa concentração: sobe (absorção), redistribui (distribuição), destrói (metabolismo) ou remove (excreção). Toda pergunta genuinamente farmacocinética pode ser reformulada como 'o que está acontecendo com a quantidade de fármaco disponível, e quando'."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A farmacodinâmica tem como variável central a **intensidade do efeito produzido por uma dada concentração já presente no local de ação**. Ela não pergunta quanto fármaco chegou — pressupõe que uma certa quantidade já chegou — e pergunta o que essa quantidade específica provoca: quanto o receptor responde, se a resposta satura, se existe competição por esse mesmo alvo, se a via de sinalização downstream amplifica ou amortece o sinal recebido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A consequência prática dessa separação de variáveis é que existe um teste conceitual simples para localizar um problema: perguntar se ele se altera quando se manipula a via de administração, a velocidade de infusão, o horário da dose ou a função de órgãos que metabolizam e excretam fármacos (fígado, rim). Se a resposta clínica muda em função dessas manipulações, o problema mora do lado da concentração — é farmacocinética. Se a resposta clínica permanece igual mesmo depois de confirmado, por dosagem plasmática, que a concentração no local de ação está adequada, o problema mora do lado do encaixe e da transdução — é farmacodinâmica."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "O critério prático: farmacocinética se testa manipulando **como o fármaco chega** (via, dose, tempo, função hepática/renal); farmacodinâmica se testa **confirmando que o fármaco já chegou** e, mesmo assim, observando se o efeito esperado ocorre. Concentração confirmada e efeito ausente aponta para o alvo, não para a jornada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como esse critério funciona, passo a passo, diante de um problema real"
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Localizando a falha: paciente que não responde a uma dose habitual de um analgésico opioide",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Formular a pergunta certa",
+          "explicacao": "Antes de trocar o fármaco ou aumentar a dose às cegas, a pergunta correta não é 'por que não funcionou', mas 'a concentração no local de ação chegou a ser adequada, ou não'."
+        },
+        {
+          "numero": 2,
+          "titulo": "Testar o lado farmacocinético",
+          "explicacao": "Verifica-se a via de administração (via oral tem absorção variável; via intravenosa praticamente garante que o fármaco entrou na circulação), a função hepática (metabolismo de primeira passagem alterado por doença hepática muda drasticamente quanto fármaco sobra) e, quando disponível, a concentração plasmática dosada. Se a concentração está abaixo do esperado, o problema já está localizado: é farmacocinética, e a solução é ajustar via, dose ou intervalo — não trocar de fármaco."
+        },
+        {
+          "numero": 3,
+          "titulo": "Isolar o lado farmacodinâmico",
+          "explicacao": "Se a concentração plasmática está confirmadamente adequada e ainda assim não há efeito analgésico, a explicação muda de categoria: pode ser tolerância (uso crônico reduz a resposta do receptor a uma mesma concentração), variação genética no receptor-alvo, ou uso concomitante de um antagonista competitivo no mesmo sítio. Nenhuma dessas hipóteses tem a ver com a jornada da molécula — todas têm a ver com o que acontece no momento do encaixe."
+        },
+        {
+          "numero": 4,
+          "titulo": "Decidir a conduta a partir da localização",
+          "explicacao": "As condutas são opostas. Um problema farmacocinético se resolve otimizando a chegada do mesmo fármaco (mudar via, ajustar dose para a função renal/hepática do paciente). Um problema farmacodinâmico raramente se resolve aumentando a dose do mesmo fármaco — porque o receptor já está exposto à concentração que deveria funcionar — e sim trocando de classe farmacológica ou associando um mecanismo de ação diferente."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esse mesmo raciocínio se generaliza para qualquer especialidade: dose de anticoagulante que não atinge o efeito esperado, antibiótico que não erradica uma infecção, antidepressivo que demora para agir. A pergunta 'a concentração no alvo está confirmadamente adequada?' é o divisor de águas que evita meses de ajuste de dose às cegas quando o problema real é de resposta do alvo, ou troca desnecessária de fármaco quando o problema real é a molécula nunca ter chegado lá em quantidade suficiente."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse critério se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Este critério de localização é o que dá sentido prático aos dois blocos que vão detalhar cada metade separadamente. Quando o próximo bloco desta trilha abrir a farmacocinética em absorção, distribuição, metabolismo e excreção, cada um desses quatro processos vai ser, na prática, uma resposta possível para 'por que a concentração não chegou'. Quando o bloco seguinte abrir a farmacodinâmica em tipos de receptor, curva dose-resposta e eficácia versus potência, cada um desses conceitos vai ser uma resposta possível para 'por que o efeito não ocorreu apesar da concentração adequada'. Sem o critério de localização deste bloco, esses dois conjuntos de conteúdo ficariam soltos — dois capítulos de livro-texto sem ligação prática entre si."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vale registrar desde já uma implicação clínica que vai reaparecer com força em Farmacologia Clínica e em Terapêutica: interações medicamentosas também se classificam por esse mesmo critério. Uma interação é farmacocinética quando um fármaco altera a concentração do outro (por exemplo, inibindo a enzima hepática que o metaboliza) e é farmacodinâmica quando dois fármacos, cada um já em concentração adequada, competem ou se somam no mesmo alvo ou em alvos que convergem para o mesmo efeito final. É o mesmo critério de localização, aplicado a duas moléculas simultâneas em vez de uma só."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "farmacocinética e farmacodinâmica",
+      "origem": "pharmakon (grego, 'fármaco') + kinesis (grego, 'movimento') para o primeiro termo; pharmakon + dynamis (grego, 'força', 'poder') para o segundo",
+      "significado": "'o movimento do fármaco' e 'a força que o fármaco exerce'",
+      "explicacao": "As duas raízes gregas escolhidas não são acidente: kinesis é a mesma raiz de 'cinética' e 'cinema' — descreve algo em trajetória, em deslocamento, exatamente o que a farmacocinética estuda: a posição e a concentração do fármaco mudando no tempo e no espaço do corpo. Dynamis é a mesma raiz de 'dínamo' e 'dinâmica' — descreve força e capacidade de produzir efeito, exatamente o que a farmacodinâmica estuda: quanta força um encontro molécula-alvo consegue gerar. Os termos foram consolidados como disciplinas formais dentro da farmacologia ao longo do século XX, à medida que ficou tecnicamente possível dosar concentrações plasmáticas de fármacos e, separadamente, quantificar curvas de resposta em receptores isolados — dois avanços metodológicos independentes que, não por acaso, deram origem a dois vocabulários independentes."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Uma pergunta provocativa para fechar"
+    },
+    {
+      "tipo": "contrafactual",
+      "pergunta": "Um paciente toma um comprimido, e uma dosagem de sangue confirma que a concentração plasmática do fármaco está exatamente na faixa terapêutica esperada — mas o efeito clínico desejado não aparece. Isso já basta para afirmar que o problema é farmacodinâmico?",
+      "resposta": "Quase, mas não totalmente — e a ressalva importa. Concentração plasmática adequada é uma evidência forte a favor de farmacodinâmica, mas plasma não é sempre igual a concentração no local de ação. Existem situações em que a concentração plasmática está correta, mas o fármaco não atravessa uma barreira específica para alcançar o tecido-alvo (por exemplo, a barreira hematoencefálica, para fármacos que agem no sistema nervoso central) — e isso ainda é, tecnicamente, uma falha farmacocinética de distribuição, só que localizada, não sistêmica. Por isso o critério de localização precisa ser aplicado com precisão: a pergunta certa não é 'a concentração no sangue está adequada', é 'a concentração no local exato de ação está adequada'. Quando essa segunda pergunta pode ser respondida com sim, aí sim o problema está isolado do lado da farmacodinâmica."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "📮",
+      "conteudo": "Pense numa carta importante enviada para resolver um problema urgente com um funcionário público específico. Existem duas formas de essa carta falhar, e são completamente diferentes uma da outra. A primeira: a carta pode se perder nos Correios, chegar ao endereço errado, ficar retida na triagem, ou chegar tarde demais — falhas que acontecem **antes de a carta ser aberta**, puramente na logística da entrega. A segunda, radicalmente diferente: a carta chega certinha, na mesa certa, na mão do funcionário certo — e mesmo assim ele lê e decide não fazer nada, porque já recebeu cartas demais sobre o mesmo assunto e ficou insensível ao pedido, ou porque outra pessoa já está ocupando a atenção dele com um pedido concorrente. No primeiro caso, o problema está no correio (farmacocinética): a solução é reenviar por outra via, ou por um correio mais rápido. No segundo caso, reenviar a mesma carta pelo mesmo correio não resolve nada — o problema não é a entrega, é a reação do destinatário (farmacodinâmica): a solução exige um pedido diferente, ou uma pessoa diferente para escrever. A analogia quebra num ponto que merece atenção: nos Correios, uma vez entregue, a carta não pode 'competir' fisicamente com outra carta pela mesma leitura — mas no corpo, duas moléculas podem, sim, competir pelo mesmo receptor ao mesmo tempo, disputando o mesmo 'funcionário' simultaneamente. É uma diferença que a metáfora postal não captura e que vale lembrar como limite dela."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Árvore de decisão: localizando a falha entre PK e PD",
+      "descricao": "Fluxograma simples em formato de árvore de decisão, com um único ponto de partida no topo: uma caixa de pergunta 'O fármaco não fez o efeito esperado'. Uma seta desce para uma primeira caixa de decisão em formato de losango: 'A concentração no local de ação está confirmadamente adequada?'. Se a resposta for 'Não' ou 'Não sei', a seta vai para a esquerda, para uma caixa retangular rotulada 'Investigar FARMACOCINÉTICA' com ícones pequenos de via de administração, fígado (metabolismo) e rim (excreção). Se a resposta for 'Sim', a seta vai para a direita, para uma caixa retangular rotulada 'Investigar FARMACODINÂMICA' com ícones pequenos de receptor, curva dose-resposta e um segundo fármaco competindo pelo mesmo sítio. Nas duas caixas finais, uma pequena lista de exemplos de causa. Estilo de diagrama vetorial de livro-texto, cores suaves, contraste alto, setas e texto em português, fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama de fluxograma vetorial, estilo livro didático moderno, fundo transparente, cores suaves e alto contraste, sem texturas fotorrealistas. Estrutura de árvore de decisão vertical. Caixa retangular no topo: 'O fármaco não fez o efeito esperado'. Seta descendo para um losango de decisão: 'A concentração no local de ação está confirmadamente adequada?'. Duas setas saindo do losango: uma rotulada 'NÃO / NÃO SEI' apontando para a esquerda, outra rotulada 'SIM' apontando para a direita. À esquerda, caixa retangular azul 'FARMACOCINÉTICA' com ícones pequenos de um comprimido com trajeto tracejado, um fígado estilizado e um rim estilizado, e texto pequeno 'via, dose, metabolismo, excreção'. À direita, caixa retangular verde 'FARMACODINÂMICA' com ícones pequenos de um receptor em formato de fechadura, uma curva dose-resposta em miniatura, e texto pequeno 'tolerância, competição, saturação'. Legendas em português, setas nítidas, composição limpa e simétrica."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-00-001",
+        "titulo": "O Que É um Fármaco e o Encontro com o Corpo",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco pressupõe que o aluno já entende PK e PD como as duas metades complementares do encontro entre fármaco e alvo, apresentadas ali de forma panorâmica. Aqui, a mesma divisão é transformada em critério prático de localização de problemas."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-01-000",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Farmacocinética em detalhe: absorção, distribuição, metabolismo, excreção",
+        "mecanismo_conexao": "Cada processo detalhado nesse bloco futuro é, na prática, uma resposta possível para a pergunta 'por que a concentração não chegou ao alvo', formulada aqui como critério de localização.",
+        "confianca": "estabelecido"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-02-000",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Farmacodinâmica em detalhe: receptores, curva dose-resposta, eficácia e potência",
+        "mecanismo_conexao": "Cada conceito detalhado nesse bloco futuro é, na prática, uma resposta possível para a pergunta 'por que o efeito não ocorreu apesar da concentração adequada', formulada aqui como critério de localização.",
+        "confianca": "estabelecido"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia_clinica",
+        "semestre_futuro": 5,
+        "topico": "Classificação de interações medicamentosas em farmacocinéticas versus farmacodinâmicas",
+        "mecanismo_conexao": "O mesmo critério de localização usado aqui para um único fármaco se aplica, sem alteração de lógica, a pares de fármacos que interagem.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-00-004-fc01",
+      "pergunta": "Um paciente dobra a dose de um medicamento e não sente nenhuma diferença no efeito. Qual é a primeira pergunta prática que ajuda a decidir se o problema é farmacocinético ou farmacodinâmico?",
+      "resposta": "Perguntar se a concentração do fármaco no local exato de ação está confirmadamente adequada. Se não está (ou não se sabe), o problema provavelmente é farmacocinético — a dose extra não está chegando. Se está confirmadamente adequada e mesmo assim não há efeito extra, o problema é farmacodinâmico — o alvo já está saturado ou a resposta está bloqueada por outro motivo.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "farmacodinamica",
+        "raciocinio-clinico"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-00-004-fc02",
+      "pergunta": "Por que 'aumentar a dose' costuma ser a solução certa para um problema farmacocinético, mas costuma ser ineficaz para um problema farmacodinâmico?",
+      "resposta": "Porque aumentar a dose atua sobre a variável farmacocinética (a quantidade de fármaco disponível) — se o problema é que pouco fármaco está chegando ao alvo, mais dose de fato ajuda. Mas se o problema é farmacodinâmico (o alvo já recebe concentração adequada e não responde mais, por saturação, tolerância ou competição), aumentar ainda mais a quantidade de um fármaco que já está presente em concentração suficiente no local de ação não muda a resposta do receptor — o gargalo não é quantidade, é reação ao que já chegou.",
+      "tipo": "por_que",
+      "dificuldade": 3,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "farmacodinamica",
+        "dose"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-00-004-fc03",
+      "pergunta": "Uma dosagem plasmática mostra que a concentração de um fármaco está na faixa terapêutica esperada, mas o efeito clínico não aparece. Isso é suficiente para concluir que o problema é puramente farmacodinâmico?",
+      "resposta": "Não necessariamente. Concentração plasmática adequada não garante concentração adequada no local exato de ação — pode haver uma barreira de distribuição específica (por exemplo, a barreira hematoencefálica) impedindo o fármaco de alcançar o tecido-alvo mesmo com plasma correto. Isso ainda seria uma falha farmacocinética de distribuição, localizada, e não uma falha farmacodinâmica. O critério exige confirmar concentração no alvo, não apenas no plasma.",
+      "tipo": "armadilha",
+      "dificuldade": 4,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "distribuicao",
+        "armadilha-conceitual"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-00-004-fc04",
+      "pergunta": "Como se classifica uma interação medicamentosa em que um fármaco inibe a enzima hepática responsável por metabolizar um segundo fármaco, elevando a concentração deste último a níveis tóxicos?",
+      "resposta": "É uma interação farmacocinética, porque o primeiro fármaco altera a concentração disponível do segundo (ao bloquear seu metabolismo), sem interferir diretamente no encaixe do segundo fármaco com seu próprio alvo molecular. O mesmo critério de localização usado para um fármaco isolado — a variável alterada é concentração, não resposta do receptor — se aplica a pares de fármacos.",
+      "tipo": "mecanismo",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "interacao-medicamentosa",
+        "farmacocinetica",
+        "metabolismo"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-00-004-caso01",
+      "titulo": "Hipertensão que não cede apesar do aumento de dose",
+      "apresentacao": "Mulher de 62 anos, hipertensa há 8 anos, em uso de um anti-hipertensivo oral. Nas últimas duas consultas, a pressão arterial permanece elevada apesar de o médico ter dobrado a dose do mesmo fármaco. A paciente nega má adesão e afirma tomar o comprimido todos os dias, sempre junto com um grande copo de suco de um determinado fruto cítrico que aprecia muito no café da manhã.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "Certos compostos presentes nesse suco cítrico interferem em sistemas de transporte e metabolismo intestinal envolvidos na fração de fármaco que consegue entrar na circulação a partir do intestino, alterando de forma imprevisível quanto fármaco é absorvido."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "O epitélio intestinal e seus sistemas de transporte e metabolismo pré-sistêmico — exatamente o território da farmacocinética, não do receptor-alvo do anti-hipertensivo."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "A quantidade de fármaco que efetivamente alcança a circulação sistêmica, e depois o alvo vascular, está alterada de forma imprevisível — podendo estar reduzida (efeito insuficiente) a depender da interação específica droga-alimento envolvida."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Pressão arterial que não responde ao aumento de dose prescrito, criando a falsa impressão de que o fármaco 'parou de funcionar' no nível do receptor."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Se o médico aplicar o critério de localização — perguntar se a concentração do fármaco está de fato chegando à circulação, investigando hábitos alimentares e possíveis interações — descobre uma causa farmacocinética facilmente corrigível (orientar suspensão do suco, ou trocar para um fármaco sem essa interação), evitando o erro de aumentar ainda mais a dose ou trocar de classe terapêutica sem necessidade."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra exatamente o critério central deste bloco: diante de uma resposta clínica ausente, a pergunta 'a concentração está mesmo chegando ao alvo' precisa ser feita antes de qualquer suposição sobre falha do receptor. Aqui, uma causa puramente farmacocinética (interação droga-alimento alterando absorção) imitava um quadro que poderia ser mal interpretado como resistência farmacodinâmica.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica_medica",
+        "nutrologia"
+      ],
+      "diagnostico_revelado": "Interação farmacocinética droga-alimento reduzindo a concentração sistêmica efetiva do anti-hipertensivo.",
+      "tratamento_resumido": "Orientação alimentar para eliminar a interação, reavaliação da pressão arterial antes de qualquer novo ajuste de dose ou troca de classe terapêutica."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-00-004-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "mecanismo",
-    "etimologia"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Hilal-Dandan R, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 13th ed. McGraw-Hill; 2018. Capítulo 2 — Pharmacokinetics and Pharmacodynamics: The Dynamics of Drug Absorption, Elimination, and Therapeutic Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Trevor AJ. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 3 — Pharmacokinetics & Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Capítulos 2 e 10 — How Drugs Act: General Principles; Pharmacokinetics.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

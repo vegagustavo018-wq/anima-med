@@ -13,51 +13,350 @@
   "conexoes_laterais_ids": [],
   "metadata": {
     "titulo": "Farmacocinética — A Jornada do Fármaco no Corpo (Visão Geral)",
+    "subtitulo": "Por que o mesmo comprimido, na mesma dose, pode falhar num paciente e intoxicar outro?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 1,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
-    "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
+    "tempo_leitura_minutos": 14,
+    "status": "completo",
+    "data_criacao": "2026-07-05",
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
     "tags": [
       "farma1",
-      "esqueleto"
+      "farmacocinetica",
+      "adme",
+      "core",
+      "visao-geral"
     ],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": [
+      "expert"
+    ]
   },
-  "resumo_conciso": "ADME como problema logístico; concentração no alvo depende do trajeto",
-  "narrativa": [],
+  "resumo_conciso": "Um fármaco eficaz no tubo de ensaio pode não funcionar em nada dentro do corpo, porque entre o comprimido engolido e o receptor-alvo existe uma longa jornada logística: atravessar barreiras para entrar, se espalhar pelos compartimentos certos, ser transformado e finalmente ser eliminado. A farmacocinética é o estudo dessa jornada — o que o corpo faz com o fármaco, em oposição à farmacodinâmica, que estuda o que o fármaco faz com o corpo. A jornada tem quatro etapas obrigatórias, resumidas na sigla ADME: Absorção (entrar na circulação), Distribuição (chegar aos tecidos), Metabolismo (ser quimicamente alterado, sobretudo pelo fígado) e Excreção (ser removido, sobretudo pelo rim). Cada etapa é um ponto onde a quantidade de fármaco que realmente chega ao alvo pode aumentar, diminuir ou atrasar — e é exatamente aí que doença renal, doença hepática, interações medicamentosas e variação genética mudam o resultado clínico de uma mesma dose. Entender essa jornada como um todo, antes de estudar cada etapa isoladamente, é o que permite prever por que a mesma prescrição se comporta de forma diferente em pacientes diferentes.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "Dois pacientes recebem o mesmo antibiótico, na mesma dose, pela mesma via. Uma semana depois, um está curado e o outro está com o mesmo quadro infeccioso — ou pior, com efeitos tóxicos que o primeiro não teve. A molécula é idêntica. A dose é idêntica. O que mudou?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior desta disciplina já estabeleceu que a farmacologia estuda o diálogo entre fármaco e organismo em duas direções: o que o fármaco faz ao corpo (farmacodinâmica) e o que o corpo faz ao fármaco. Esta segunda direção é o que resolve o mistério dos dois pacientes — e é dela que este bloco trata."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: ter um alvo certo não basta"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Uma molécula pode ser perfeita em teoria — encaixar no receptor certo, bloquear a enzima certa, ativar o canal certo — e ainda assim fracassar completamente como medicamento. Isso acontece porque o alvo terapêutico quase nunca está na superfície do corpo. Ele está dentro: num neurônio protegido pela barreira hematoencefálica, numa célula cardíaca cercada de membranas, num tecido profundo a centímetros de distância do local onde o comprimido foi engolido."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Entre o momento em que o fármaco entra no corpo e o momento em que ele encontra seu alvo, existe uma distância física e química real. Essa distância não é um detalhe — é o problema central que a farmacocinética resolve. Não basta desenhar uma chave perfeita; é preciso garantir que a chave sobreviva à viagem até a fechadura, em quantidade suficiente, no tempo certo."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: farmacocinética existe porque há uma distância logística entre 'entrar no corpo' e 'agir no alvo'. Cada etapa dessa distância pode reduzir, atrasar ou até impedir que o fármaco chegue."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "A solução: tratar o corpo como um sistema de compartimentos com portões"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A forma de entender essa distância é enxergar o corpo não como um espaço único e homogêneo, mas como uma sequência de compartimentos separados por barreiras biológicas — principalmente membranas celulares. O fármaco precisa atravessar essas barreiras, uma a uma, para sair de onde foi administrado e chegar a onde precisa agir. Em cada barreira, uma fração do fármaco passa e uma fração fica para trás, se liga a outra coisa, ou é quimicamente alterada."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Essa jornada, quando mapeada, tem sempre a mesma lógica de quatro grandes movimentos: o fármaco precisa **entrar** na circulação sistêmica a partir do local de administração; precisa **se espalhar** dali para os tecidos onde vai agir (e também para tecidos onde não precisa agir, o que gera efeitos colaterais); em algum ponto, o corpo começa a **transformá-lo** quimicamente, geralmente para facilitar sua remoção; e, por fim, o que sobra precisa ser **removido** do organismo. Essas quatro etapas não são opcionais nem alternativas — todo fármaco absorvido passa pelas quatro, ainda que em velocidades e intensidades muito diferentes."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A concentração do fármaco no alvo — e portanto seu efeito clínico — depende do resultado líquido de quatro processos concorrentes: entrada, espalhamento, transformação e remoção. Mudar qualquer um deles muda o efeito, mesmo mantendo a dose administrada idêntica."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Do que essa jornada é feita"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Fisicamente, essa jornada é feita de membranas biológicas que o fármaco precisa atravessar (do intestino para o sangue, do sangue para o tecido, do tecido de volta para o sangue), de proteínas plasmáticas que podem se ligar a parte do fármaco e retê-lo em circulação, de enzimas — principalmente no fígado — capazes de quebrar ou modificar a molécula, e de órgãos excretores — principalmente o rim, mas também o fígado via bile, o pulmão e outras vias secundárias — que filtram o que sobra para fora do corpo."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada um desses componentes tem uma capacidade limitada. Uma membrana deixa passar mais um fármaco lipossolúvel do que um hidrossolúvel. Uma enzima hepática processa um número finito de moléculas por minuto. Um rim filtra numa taxa que depende da sua função, não da dose que foi prescrita. É a soma dessas capacidades limitadas, atuando em sequência, que determina quanto do fármaco administrado efetivamente chega — e permanece — no compartimento onde o alvo terapêutico está."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como a jornada funciona, em movimento"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Considere um comprimido tomado por via oral. Ele precisa se dissolver no estômago ou intestino, e a molécula dissolvida precisa atravessar o epitélio intestinal — a mesma barreira epitelial estudada em Histologia, agora vista sob a ótica de quem precisa cruzá-la para agir. Uma vez do outro lado, o fármaco cai numa veia que passa primeiro pelo fígado antes de alcançar a circulação geral: se o fígado for eficiente em metabolizá-lo, uma fração relevante pode ser destruída antes mesmo de circular pelo corpo — um fenômeno que os capítulos seguintes vão nomear e quantificar."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "O trajeto logístico do fármaco, do comprimido ao descarte",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Entrada na circulação",
+          "explicacao": "O fármaco sai do local de administração e atravessa a primeira barreira biológica até alcançar o sangue. Quanto dele consegue entrar, e a que velocidade, depende da via escolhida e das propriedades físico-químicas da molécula."
+        },
+        {
+          "numero": 2,
+          "titulo": "Espalhamento pelos tecidos",
+          "explicacao": "Uma vez no sangue, o fármaco se reparte entre diferentes compartimentos corporais — permanece em parte ligado a proteínas plasmáticas, em parte livre para atravessar novas membranas e alcançar tecidos, incluindo o tecido-alvo e tecidos onde não é necessário."
+        },
+        {
+          "numero": 3,
+          "titulo": "Transformação química",
+          "explicacao": "Enquanto circula, o fármaco passa repetidamente pelo fígado, onde enzimas começam a alterar sua estrutura — em geral tornando a molécula mais fácil de excretar. Esse processo pode ativar, inativar ou apenas modificar o composto original."
+        },
+        {
+          "numero": 4,
+          "titulo": "Remoção do organismo",
+          "explicacao": "O que sobra do fármaco original e de seus produtos de transformação é filtrado, sobretudo pelo rim, e eliminado do corpo. A partir daqui, a concentração no organismo só pode cair."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O ponto crucial é que essas quatro etapas acontecem simultaneamente, não em sequência estrita: enquanto uma parcela do fármaco ainda está sendo absorvida no intestino, outra já está sendo distribuída aos tecidos, e outra já está sendo metabolizada e excretada. A concentração do fármaco em qualquer momento é o resultado líquido dessa competição contínua entre processos que somam e processos que subtraem."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "farmacocinética",
+      "origem": "do grego phármakon (remédio, veneno) + kínēsis (movimento)",
+      "significado": "literalmente, 'o movimento do fármaco' — o estudo de como o fármaco se move através do corpo",
+      "explicacao": "O nome foi cunhado no século XX, quando pesquisadores perceberam que era possível — e clinicamente necessário — descrever matematicamente a trajetória de um fármaco no organismo ao longo do tempo, do mesmo modo que a física descreve o movimento de um corpo no espaço. Contrastando com a farmacodinâmica (dýnamis, força — o que o fármaco faz de força sobre o corpo), a farmacocinética (kínēsis, movimento) descreve o deslocamento do fármaco através do corpo. A sigla ADME (Absorção, Distribuição, Metabolismo, Excreção) é a tradução operacional dessa cinética: cada letra é uma parada na jornada, e cada parada terá seu próprio bloco de estudo detalhado a seguir."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que essa jornada se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Cada uma das quatro etapas depende de um órgão ou sistema já conhecido de outras disciplinas: a absorção depende do epitélio (Histologia) e da motilidade digestiva (Fisiologia); a distribuição depende do débito cardíaco e da perfusão tecidual (Fisiologia); o metabolismo depende de enzimas hepáticas cuja atividade varia por genética, idade e doença hepática; a excreção depende da função renal, mensurável pela taxa de filtração glomerular. A farmacocinética não cria órgãos novos — ela reaproveita a anatomia e a fisiologia que o aluno já estudou, agora sob a pergunta específica de 'o que isso faz com a concentração do fármaco?'."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "É essa mesma lógica que explica por que um paciente com insuficiência renal precisa de doses ajustadas, por que um paciente com cirrose hepática metaboliza fármacos de forma imprevisível, e por que duas pessoas de peso e idade semelhantes podem responder de modo diferente à mesma dose: a jornada logística que este bloco descreve não é igual para todos os corpos. Essa é a primeira ponte desta disciplina entre o princípio teórico e a decisão clínica de dose — os blocos seguintes vão transformar essa lógica qualitativa em parâmetros mensuráveis (meia-vida, clearance, biodisponibilidade) que orientam, na prática, quanto e a cada quanto tempo administrar um medicamento."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "📦",
+      "conteudo": "Pense na farmacocinética como a logística de entrega de uma encomenda internacional. **A absorção** é a saída da encomenda do centro de distribuição para o primeiro veículo de transporte — nem toda encomenda despachada chega ao veículo intacta ou no prazo. **A distribuição** é o trajeto até os diferentes bairros da cidade: a encomenda se espalha pela rede viária, algumas paradas em depósitos intermediários (proteínas plasmáticas) atrasam a entrega final. **O metabolismo** é a alfândega: um posto de controle (o fígado) que processa e frequentemente altera o conteúdo antes de liberar a passagem. **A excreção** é a devolução ao remetente do que não foi entregue ou já foi processado — o sistema de coleta de lixo (o rim) que garante que nada se acumule indefinidamente na cidade. A entrega só é bem-sucedida — o efeito terapêutico só ocorre — se as quatro etapas funcionarem em conjunto; e a analogia quebra num ponto importante: ao contrário de uma encomenda, o fármaco está sendo processado nas quatro etapas ao mesmo tempo, não uma depois da outra."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Antes de seguir para os blocos que detalham cada etapa: fixe que ADME não é uma lista de tópicos independentes, é uma jornada única e concorrente. A dose que o médico prescreve é apenas o ponto de partida; o que chega ao alvo é decidido por essa jornada inteira."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "O mapa da jornada ADME",
+      "descricao": "Diagrama esquemático horizontal mostrando o trajeto do fármaco desde o local de administração até a eliminação. Da esquerda para a direita: local de administração (ex.: trato gastrointestinal) com seta atravessando uma membrana rotulada 'Absorção'; em seguida um círculo central representando 'circulação sistêmica / sangue', com setas ramificando para diferentes tecidos representando 'Distribuição' (incluindo um tecido-alvo destacado e tecidos periféricos); uma seta da circulação passando por um ícone de fígado rotulado 'Metabolismo'; e por fim setas convergindo para um ícone de rim rotulado 'Excreção', com uma seta de saída do corpo. Setas tracejadas menores indicando que distribuição, metabolismo e excreção ocorrem simultaneamente, não em sequência estrita. Estilo esquemático de livro didático, cores diferenciando cada etapa, legendas em português, fundo neutro adaptativo ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Fluxo horizontal da esquerda para a direita com quatro estações claramente identificadas por cor e ícone: (1) 'ABSORÇÃO' — ícone de comprimido atravessando uma membrana intestinal ondulada, seta entrando num círculo central; (2) círculo central grande rotulado 'CIRCULAÇÃO SISTÊMICA (sangue)' com múltiplas setas ramificando para pequenos ícones de tecidos (cérebro, músculo, tecido-alvo destacado em cor diferente) representando 'DISTRIBUIÇÃO'; (3) seta saindo do círculo central passando por um ícone estilizado de fígado rotulado 'METABOLISMO', com uma pequena seta indicando transformação molecular; (4) seta final passando por um ícone estilizado de rim rotulado 'EXCREÇÃO', terminando numa seta de saída do sistema com o rótulo 'eliminado'. Setas tracejadas finas conectando os estágios 2, 3 e 4 entre si para indicar simultaneidade. Paleta de cores distintas e suaves para cada etapa, texto em português, sem elementos fotorrealistas, alto contraste, sem marcas d'água."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-00-000",
+        "titulo": "Farmacologia — O Que É e Por Que Existe",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "É preciso já ter entendido a distinção entre farmacodinâmica (o que o fármaco faz ao corpo) e farmacocinética (o que o corpo faz ao fármaco) para situar este bloco como o desenvolvimento do segundo lado desse diálogo."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 4,
+        "topico": "Vias de administração, absorção, distribuição, metabolismo, excreção e parâmetros cinéticos (blocos filhos)",
+        "mecanismo_conexao": "Cada uma das quatro etapas logísticas descritas aqui em visão panorâmica será detalhada em profundidade em blocos dedicados, incluindo os mecanismos moleculares e os parâmetros matemáticos que as quantificam.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "CASCATA_CAUSAL",
+        "bloco_id_destino": null,
+        "disciplina": "clinica",
+        "semestre_futuro": 6,
+        "topico": "Ajuste de dose em insuficiência renal e hepática",
+        "mecanismo_conexao": "A dependência da excreção pela função renal e do metabolismo pela função hepática, aqui estabelecida em termos gerais, é o fundamento direto dos protocolos de ajuste de dose em pacientes com disfunção desses órgãos.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "farmacologia",
+        "semestre_futuro": 5,
+        "topico": "Interações medicamentosas por competição enzimática ou de transportadores",
+        "mecanismo_conexao": "Muitas interações medicamentosas clinicamente relevantes ocorrem porque dois fármacos competem pela mesma etapa da jornada ADME (mesma enzima metabolizadora, mesmo transportador renal), um princípio que só faz sentido depois de entender a jornada como um sistema de capacidade limitada.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
     "laterais": []
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-000-fc01",
+      "pergunta": "Por que dois pacientes podem receber a mesma dose do mesmo fármaco, pela mesma via, e ter respostas clínicas completamente diferentes?",
+      "resposta": "Porque a dose administrada não é o que determina o efeito — é a concentração que efetivamente chega ao alvo terapêutico, e essa concentração é o resultado líquido de quatro processos que variam de pessoa para pessoa: quanto foi absorvido para a circulação, como foi distribuído entre os tecidos, quão rapidamente foi metabolizado e quão rapidamente foi excretado. Diferenças genéticas, função renal, função hepática e interações medicamentosas alteram qualquer uma dessas quatro etapas, produzindo concentrações-alvo diferentes a partir da mesma dose nominal.",
+      "tipo": "por_que",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "adme",
+        "variabilidade"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-000-fc02",
+      "pergunta": "Descreva a sigla ADME e explique por que essas quatro etapas ocorrem simultaneamente, e não em sequência estrita.",
+      "resposta": "ADME significa Absorção (entrada na circulação sistêmica a partir do local de administração), Distribuição (espalhamento do fármaco pelos compartimentos e tecidos corporais), Metabolismo (transformação química, majoritariamente hepática) e Excreção (remoção do organismo, majoritariamente renal). Elas ocorrem simultaneamente porque, enquanto uma fração do fármaco ainda está sendo absorvida no local de administração, outra fração já circulante está sendo distribuída aos tecidos, e uma terceira fração já está sendo metabolizada e excretada. A concentração do fármaco em qualquer instante é o resultado líquido dessa competição contínua entre processos de entrada e processos de saída, não o produto de uma linha de montagem sequencial.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": [
+        "farmacocinetica",
+        "adme",
+        "mecanismo"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-000-fc03",
+      "pergunta": "Se um fármaco fosse desenhado com encaixe molecular perfeito no receptor-alvo, mas fosse incapaz de atravessar qualquer membrana biológica, ele funcionaria como medicamento administrado por via oral?",
+      "resposta": "Não. Um encaixe molecular perfeito no alvo (farmacodinâmica ideal) é necessário mas não suficiente. Sem capacidade de atravessar o epitélio intestinal, o fármaco nunca alcançaria a circulação sistêmica — ficaria retido no lúmen intestinal e seria eliminado sem jamais chegar ao seu alvo. Isso demonstra que a farmacocinética é um filtro obrigatório: por melhor que seja a farmacodinâmica de uma molécula, uma jornada ADME impossível a torna clinicamente inútil por aquela via.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "farmacodinamica",
+        "absorcao"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-000-fc04",
+      "pergunta": "A palavra farmacocinética vem do grego phármakon + kínēsis. O que essa etimologia revela sobre a diferença entre farmacocinética e farmacodinâmica?",
+      "resposta": "Kínēsis significa 'movimento', enquanto o termo irmão farmacodinâmica usa dýnamis, 'força'. A distinção etimológica espelha exatamente a distinção conceitual da disciplina: a farmacodinâmica estuda a força que o fármaco exerce sobre o corpo (ação nos receptores, efeitos), enquanto a farmacocinética estuda o movimento do fármaco através do corpo (absorção, distribuição, metabolismo, excreção). Lembrar que kínēsis é movimento ajuda a fixar que este bloco trata do trajeto físico do fármaco, não do seu mecanismo de ação.",
+      "tipo": "etimologia",
+      "dificuldade": 1,
+      "nivel_alvo": 2,
+      "tags": [
+        "farmacocinetica",
+        "etimologia",
+        "farmacodinamica"
+      ]
+    },
+    {
+      "card_id": "s4-farma1-01-000-fc05",
+      "pergunta": "Por que um paciente com cirrose hepática avançada pode precisar de ajuste de dose mesmo para fármacos administrados por vias que não passam pelo fígado na absorção?",
+      "resposta": "Porque o fígado participa da jornada ADME principalmente na etapa de metabolismo, que ocorre continuamente enquanto o sangue circula por ele — independentemente da via de administração usada para o fármaco entrar no corpo. Um fígado cirrótico tem capacidade enzimática reduzida, de modo que o fármaco é metabolizado mais lentamente, permanece mais tempo em sua forma ativa na circulação e tende a se acumular. Esse raciocínio é a primeira ponte clínica desta disciplina: a mesma lógica logística que explica a jornada do fármaco explica também por que doença de órgão altera a dose segura.",
+      "tipo": "clinico",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": [
+        "farmacocinetica",
+        "metabolismo",
+        "insuficiencia-hepatica"
+      ]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-000-caso01",
+      "titulo": "Náuseas, visão amarelada e arritmia em paciente idoso após piora da função renal",
+      "apresentacao": "Homem de 78 anos, em uso crônico e estável de digoxina para fibrilação atrial, é internado por um quadro de gastroenterite com desidratação importante. Três dias depois, familiares notam que ele está confuso, com náuseas persistentes e queixando-se de que 'tudo parece amarelado'. O monitor cardíaco mostra extrassístoles ventriculares frequentes. Os exames revelam piora da função renal (creatinina elevada em relação ao basal) e nível sérico de digoxina acima da faixa terapêutica, sem que a dose do medicamento tenha sido alterada.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A desidratação da gastroenterite reduziu a perfusão renal, causando lesão renal aguda sobreposta à função basal do paciente idoso."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A etapa de excreção da jornada ADME — majoritariamente renal — que normalmente elimina a digoxina do organismo em ritmo previsível, deixou de operar na taxa habitual porque a filtração glomerular caiu."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a excreção comprometida, a digoxina — que continuava sendo absorvida e distribuída normalmente pelas outras três etapas da jornada — deixou de ser removida no mesmo ritmo em que entrava no organismo. A dose diária, antes equilibrada pela eliminação renal eficiente, passou a se acumular progressivamente no plasma."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Náuseas, confusão mental e a alteração visual característica (xantopsia, visão com tonalidade amarelada) são sinais clássicos de toxicidade por digoxina; as extrassístoles ventriculares refletem o efeito tóxico do fármaco acumulado sobre o tecido de condução cardíaco."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem correção, o acúmulo progressivo de digoxina pode evoluir para arritmias ventriculares graves e risco de morte súbita. A conduta é suspender a digoxina, corrigir a hidratação e a função renal, dosar o nível sérico seriadamente e, em intoxicação grave, considerar anticorpos antidigoxina (fragmentos Fab). Após recuperação da função renal, a dose pode ser reintroduzida em nível ajustado à nova taxa de depuração do paciente."
+        }
+      ],
+      "conexao_com_bloco": "O caso ilustra exatamente o que a visão geral da farmacocinética estabelece: a concentração do fármaco no organismo é o resultado líquido de quatro processos concorrentes (absorção, distribuição, metabolismo, excreção), e alterar qualquer um deles — aqui, a excreção renal — muda o efeito clínico mesmo mantendo a dose administrada idêntica. É a mesma dose de sempre; o que mudou foi a capacidade do corpo de completar a jornada ADME.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "clinica_medica",
+        "geriatria",
+        "cardiologia"
+      ],
+      "diagnostico_revelado": "Toxicidade por digoxina secundária à redução da depuração renal por lesão renal aguda.",
+      "tratamento_resumido": "Suspensão temporária da digoxina, correção da volemia e da função renal, monitorização cardíaca contínua, dosagem seriada do nível sérico e, se toxicidade grave com arritmia instável, uso de anticorpos antidigoxina (fragmentos Fab imunes)."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-000-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "farmacocinetica",
-    "mecanismo",
-    "etimologia"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC. Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw Hill; 2023. Chapter 2 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw Hill; 2021. Chapter 3 — Pharmacokinetics and Pharmacodynamics: Rational Dosing and the Time Course of Drug Action.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Chapter 8 — Absorption and Distribution of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }

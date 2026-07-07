@@ -2,53 +2,314 @@
   "resumo_id": "s4-farma1-01-002-01",
   "no_pai_id": "s4-farma1-01-002",
   "nos_filhos_ids": [],
-  "conexoes_laterais_ids": [],
+  "conexoes_laterais_ids": ["s4-farma1-01-002-02"],
   "metadata": {
     "titulo": "Mecanismos de Transporte Através da Membrana",
+    "subtitulo": "Por que algumas moléculas atravessam a célula sozinhas e outras precisam de carona?",
     "semestre": 4,
     "disciplina": "Farmacologia I — Princípios Gerais",
+    "sistema_corporal": null,
+    "regiao_anatomica": null,
     "profundidade_arvore": 3,
-    "importancia": 3,
+    "importancia": 5,
     "dificuldade": 2,
-    "tempo_leitura_minutos": 0,
-    "status": "esqueleto",
+    "tempo_leitura_minutos": 13,
+    "status": "completo",
     "data_criacao": "2026-07-01",
-    "data_ultima_revisao": "2026-07-01",
-    "versao": "0.0",
-    "tags": [
-      "farma1",
-      "esqueleto"
-    ],
+    "data_ultima_revisao": "2026-07-05",
+    "versao": "1.0",
+    "tags": ["farma1", "farmacocinetica", "absorcao", "transporte-de-membrana", "difusao", "core"],
     "nivel": "CORE",
-    "tipo": "conceito"
+    "tipo": "conceito",
+    "canmeds": ["expert"]
   },
-  "resumo_conciso": "Difusão passiva, transporte ativo, facilitado, pinocitose; lipossolubilidade",
-  "narrativa": [],
+  "resumo_conciso": "Toda molécula de fármaco que precisa sair de um compartimento e entrar em outro esbarra na mesma parede física: a bicamada lipídica da membrana celular. Como nem todo fármaco tem o mesmo tamanho, carga ou solubilidade, a natureza não resolveu esse problema com uma única porta, mas com um pequeno repertório de rotas físicas, cada uma compatível com um tipo diferente de molécula. A difusão passiva é a rota padrão: nenhuma proteína, nenhum gasto de energia, só a molécula se dissolvendo diretamente na gordura da membrana a favor do seu próprio gradiente de concentração — por isso funciona bem para moléculas pequenas e lipossolúveis, e mal para qualquer coisa carregada ou volumosa. Quando a molécula é pequena mas pouco lipossolúvel, ou grande demais para se dissolver na membrana, a difusão facilitada entra em cena: uma proteína carreadora especializada reconhece a molécula e a transporta a favor do gradiente, sem gasto de ATP, mas com um limite de velocidade que a difusão passiva não tem. Quando o fármaco precisa se mover contra o gradiente — de uma concentração baixa para uma alta — só resta o transporte ativo, que gasta energia (ATP direto ou indireto) para forçar essa travessia contra a corrente. E para partículas ou macromoléculas grandes demais para qualquer transportador, a célula recorre à pinocitose, engolfando o material numa vesícula de membrana. Saber qual desses quatro mecanismos um fármaco usa não é exercício de memorização: prevê se a absorção é saturável, se pode ser bloqueada por outro fármaco competidor, e se depende ou não de energia celular — perguntas que se repetem em toda a farmacocinética, da absorção intestinal à filtração renal.",
+  "narrativa": [
+    {
+      "tipo": "texto",
+      "conteudo": "O bloco anterior já situou o problema: para ser absorvido, todo fármaco precisa atravessar pelo menos uma membrana biológica, e essa travessia não é automática. Falta agora responder a uma pergunta mais concreta — fisicamente, por qual porta a molécula passa? A resposta não é uma porta única. É um pequeno conjunto de rotas, e cada fármaco usa a que for compatível com o seu próprio tamanho, carga e solubilidade."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O problema: uma bicamada de gordura no meio do caminho"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A membrana plasmática de qualquer célula epitelial é, em sua maior parte, uma bicamada lipídica: duas camadas de fosfolipídios com as caudas apolares voltadas para dentro e as cabeças polares voltadas para os dois meios aquosos que ela separa. Esse arranjo cria um núcleo hidrofóbico contínuo no meio da membrana — excelente para impedir que água e íons vazem livremente, péssimo para qualquer molécula que precise atravessá-la sem ajuda, a menos que ela própria seja compatível com gordura."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Isso gera uma tensão inevitável. Um fármaco precisa, ao mesmo tempo, ser suficientemente solúvel em água para circular no plasma e chegar até a membrana, e suficientemente solúvel em lipídio para atravessá-la. Nenhuma molécula é perfeita nos dois quesitos ao mesmo tempo — e é exatamente essa imperfeição que obriga a existência de mais de uma rota de travessia."
+    },
+    {
+      "tipo": "pausa",
+      "conteudo": "Pausa para fixar: a bicamada lipídica é uma barreira seletiva por natureza. Ela favorece moléculas pequenas e lipossolúveis e bloqueia moléculas grandes ou carregadas. Os quatro mecanismos que vêm a seguir existem porque nem todo fármaco se encaixa nessa preferência da membrana."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como se resolve: um repertório de rotas, não uma porta única"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A solução evolutiva foi oferecer caminhos diferentes para necessidades diferentes. Dois desses caminhos são passivos — a molécula se move sozinha, a favor do seu próprio gradiente de concentração, sem gasto de energia celular. Um caminho é ativo — a célula gasta energia para empurrar a molécula contra o gradiente, de onde há pouco para onde há muito. E um último caminho nem sequer trata a molécula como uma partícula individual atravessando um poro: trata-a como carga a ser engolfada inteira, membrana e tudo."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "Quatro rotas, um critério que as organiza: difusão passiva e difusão facilitada seguem o gradiente de concentração e não gastam energia; transporte ativo vai contra o gradiente e gasta energia; pinocitose nem usa um poro — engolfa o material inteiro."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Como cada mecanismo funciona"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A difusão passiva é a rota mais simples e, na prática, a mais usada pela maioria dos fármacos de baixo peso molecular. Não existe proteína carreadora, não existe gasto de ATP: a própria molécula, se for pequena e lipossolúvel o bastante, se dissolve na bicamada de um lado, atravessa e se redissolve no meio aquoso do outro lado. O motor inteiro dessa travessia é o gradiente de concentração — a molécula se move do lado mais concentrado para o lado menos concentrado, exatamente como um perfume se espalha de onde foi borrifado para o resto do ambiente, até as concentrações se igualarem."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Por depender só de solubilidade lipídica e do gradiente, a difusão passiva tem duas propriedades que a diferenciam de todas as outras rotas: não é saturável (não existe um número fixo de 'vagas' — quanto mais gradiente, mais rápida a difusão, dentro de certos limites físicos) e não é bloqueada por competição de outras moléculas parecidas, porque não há um sítio de ligação específico disputado por duas substâncias diferentes."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A difusão facilitada resolve um problema que a difusão passiva não consegue: e se a molécula for pequena, mas pouco lipossolúvel — hidrofílica demais para se dissolver na bicamada sozinha? Nesse caso, uma proteína carreadora específica, embutida na membrana, reconhece a molécula, muda de conformação e a libera do outro lado. O transporte ainda ocorre a favor do gradiente de concentração e não consome ATP — nisso, se parece com a difusão passiva. Mas depende de uma proteína específica, e isso muda tudo: existe um número finito dessas proteínas na membrana, então a rota é saturável (acima de certa concentração, todas as proteínas já estão ocupadas e a velocidade para de aumentar) e é sujeita a competição — duas moléculas parecidas podem disputar o mesmo carreador, e uma pode bloquear a outra."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "O transporte ativo entra quando o problema muda de natureza: não é mais 'a molécula não atravessa a gordura sozinha', é 'a molécula precisa ir para onde já tem mais dela, não menos'. Mover algo contra o próprio gradiente de concentração nunca é espontâneo — exige energia, fornecida diretamente pela hidrólise de ATP (transporte ativo primário) ou indiretamente, aproveitando o gradiente eletroquímico de outro íon que foi previamente bombeado com gasto de ATP (transporte ativo secundário, como o cotransporte de glicose acoplado ao gradiente de sódio mantido pela bomba Na⁺/K⁺-ATPase). Assim como a difusão facilitada, o transporte ativo usa proteínas carreadoras específicas — por isso também é saturável e sujeito a competição — mas, diferente dela, consegue concentrar o fármaco num compartimento além do que o gradiente permitiria sozinho."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A pinocitose, por fim, abandona a lógica de poro ou carreador: a membrana celular envolve fisicamente uma gotícula do líquido extracelular — com o fármaco dissolvido nela — e a internaliza inteira dentro de uma vesícula. É o mecanismo relevante para moléculas grandes demais para qualquer carreador de membrana, como algumas macromoléculas proteicas usadas como fármacos biológicos. É, na prática, a rota menos importante quantitativamente para a maioria dos fármacos pequenos, mas a única disponível para os maiores."
+    },
+    {
+      "tipo": "tabela_comparativa",
+      "titulo": "Os quatro mecanismos de transporte transmembrana lado a lado",
+      "colunas": ["Mecanismo", "Direção do gradiente", "Precisa de proteína carreadora", "Gasta energia (ATP)", "Saturável"],
+      "linhas": [
+        ["Difusão passiva", "A favor do gradiente", "Não", "Não", "Não"],
+        ["Difusão facilitada", "A favor do gradiente", "Sim", "Não", "Sim"],
+        ["Transporte ativo", "Contra o gradiente", "Sim", "Sim (direto ou indireto)", "Sim"],
+        ["Pinocitose", "Não se aplica (engolfamento)", "Não (vesícula de membrana)", "Sim", "Não se aplica"]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Vale registrar por que a difusão passiva domina, na prática, a absorção da maioria dos fármacos de moléculas pequenas: ela é fisicamente mais simples, não depende do número limitado de proteínas carreadoras que o corpo produz para suas próprias moléculas endógenas (glicose, aminoácidos, íons), e a maioria dos fármacos foi historicamente desenvolvida — ainda que nem sempre de forma deliberada — para ter alguma lipossolubilidade compatível com essa rota. [AVISO] Isso não significa que carreadores sejam irrelevantes: transportadores como a P-glicoproteína (que expulsa fármacos de volta para o lúmen intestinal) e transportadores de nucleosídeos e aminoácidos são mecanismos de transporte mediado clinicamente relevantes, mas o detalhamento de transportadores específicos de fármacos foge do escopo desta visão geral dos quatro mecanismos fundamentais."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Com o que esse mecanismo se articula"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Saber por qual mecanismo um fármaco atravessa a membrana ainda não é a história completa da absorção. Mesmo um fármaco que usa a rota mais simples — a difusão passiva — não atravessa a membrana o tempo todo, na mesma velocidade, em qualquer lugar do corpo: isso depende de quanto da molécula está, naquele instante, na forma quimicamente compatível com a bicamada lipídica. Fármacos ácidos e básicos fracos existem em equilíbrio entre uma forma neutra (lipossolúvel, capaz de se difundir) e uma forma ionizada (hidrofílica, presa no meio aquoso) — e é o pH do compartimento, comparado ao pKa da molécula, que decide essa proporção a cada momento. Esse é exatamente o recorte que o bloco irmão sobre ionização e a equação de Henderson-Hasselbalch aprofunda: aqui ficou definido *como* a molécula atravessa fisicamente a membrana; lá se define *se*, quimicamente, ela está apta a usar essa rota naquele instante."
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Esses mesmos quatro mecanismos reaparecem, com o mesmo raciocínio, em praticamente toda a farmacocinética: a distribuição do fármaco para os tecidos, a reabsorção tubular renal e até a passagem por barreiras especializadas como a barreira hematoencefálica usam a mesma lógica de rotas passivas, facilitadas, ativas e vesiculares — só muda a membrana específica sendo atravessada."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "O nome e sua origem"
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "difusão",
+      "origem": "do latim diffundere, de dis- (em várias direções) + fundere (derramar, espalhar)",
+      "significado": "literalmente, 'espalhar-se em várias direções'",
+      "explicacao": "O termo já era usado em física e química muito antes de entrar na farmacologia, para descrever qualquer processo em que partículas se movem espontaneamente de uma região de maior concentração para uma de menor concentração, até se distribuírem uniformemente. Quando aplicado à membrana celular, o adjetivo 'passiva' foi acrescentado depois, no século XX, justamente para diferenciar esse fenômeno espontâneo do 'transporte ativo' — termo cunhado quando fisiologistas perceberam que certas células conseguiam mover substâncias contra o gradiente, o que exigia uma palavra que sinalizasse gasto de trabalho celular. O par passivo/ativo na nomenclatura reflete diretamente o critério que mais importa clinicamente: se a travessia consome ou não energia do organismo."
+    },
+    {
+      "tipo": "analogia",
+      "icone": "🚇",
+      "conteudo": "Pense numa estação de metrô como a membrana celular, separando a rua (um lado da célula) da plataforma (o outro lado). **A difusão passiva** é a pessoa que entra por uma catraca aberta, sem cartão, sem fila, simplesmente andando na direção de onde há muita gente para onde há pouca — não precisa de ajuda de ninguém. **A difusão facilitada** é a pessoa que só consegue entrar passando o cartão num leitor automático: precisa de um dispositivo específico (o carreador), mas ainda se move na direção natural do fluxo de pessoas, sem que ninguém precise empurrá-la. **O transporte ativo** é o funcionário da estação empurrando fisicamente passageiros contra a maré, da plataforma lotada de volta para uma rua vazia — só acontece porque alguém gasta esforço (energia) fazendo isso, contra a tendência natural do movimento. **A pinocitose** é o trem inteiro sendo guinchado e erguido por um guindaste para dentro de um galpão junto com todos os passageiros — não é mais gente passando por porta nenhuma, é o compartimento inteiro sendo engolfado. A analogia quebra num ponto: na estação de metrô essas quatro formas de entrada são escolhas de projeto arquitetônico; na membrana celular, todas coexistem ao mesmo tempo, e cada molécula de fármaco 'escolhe' a rota compatível com seu próprio tamanho e carga, não por decisão, mas por compatibilidade física."
+    },
+    {
+      "tipo": "secao",
+      "titulo": "Por que isso importa clinicamente"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "Reconhecer o mecanismo de transporte de um fármaco tem consequência prática direta. Se dois fármacos usam o mesmo carreador de difusão facilitada ou de transporte ativo, um pode inibir a absorção do outro por competição — uma interação medicamentosa real, não uma hipótese teórica. Se a absorção de um fármaco depende de um transportador saturável, dobrar a dose não necessariamente dobra a quantidade absorvida, porque o número de carreadores disponíveis é finito — algo que nunca acontece com difusão passiva pura. E fármacos biológicos de alto peso molecular, que dependem de pinocitose ou de vias ainda mais especializadas, explicam por que a maioria deles não pode simplesmente ser formulada em comprimido: não existe rota passiva ou facilitada disponível para moléculas daquele tamanho atravessarem o epitélio intestinal em quantidade clinicamente relevante — por isso são administrados por via injetável."
+    },
+    {
+      "tipo": "imagem",
+      "titulo": "Os quatro mecanismos de transporte transmembrana lado a lado",
+      "descricao": "Esquema didático mostrando uma única membrana celular em corte central, dividida em quatro painéis lado a lado, cada um ilustrando um mecanismo diferente. Painel 1: molécula pequena atravessando livremente a bicamada lipídica, seta simples a favor do gradiente, rotulado 'DIFUSÃO PASSIVA'. Painel 2: molécula sendo carregada por uma proteína em forma de canal que muda de conformação, seta a favor do gradiente, rotulado 'DIFUSÃO FACILITADA'. Painel 3: molécula sendo empurrada por uma proteína carreadora contra o gradiente, com símbolo de ATP sendo consumido ao lado, rotulado 'TRANSPORTE ATIVO'. Painel 4: uma porção da membrana se invaginando e engolfando uma gotícula extracelular formando uma vesícula interna, rotulado 'PINOCITOSE'. Setas de gradiente de concentração (mais denso de um lado, menos denso do outro) em cada painel onde aplicável. Legendas em português, cores suaves diferenciadas por painel, fundo neutro adaptável ao tema do app.",
+      "prompt_ia": "Diagrama científico vetorial, fundo transparente, estilo de livro didático farmacológico moderno. Composição em quatro painéis horizontais lado a lado, cada um mostrando um corte transversal da mesma bicamada lipídica (cabeças polares como círculos, caudas apolares como linhas onduladas). Painel 1 rotulado 'DIFUSÃO PASSIVA': pequenos círculos representando moléculas atravessando livremente a bicamada, com gradiente de densidade maior à esquerda e menor à direita, seta simples indicando direção. Painel 2 rotulado 'DIFUSÃO FACILITADA': uma proteína transportadora em forma de canal embutida na membrana, molécula sendo conduzida através dela na mesma direção do gradiente. Painel 3 rotulado 'TRANSPORTE ATIVO': uma proteína carreadora em formato diferente (bomba), molécula sendo movida da região de baixa concentração para a de alta concentração, com um símbolo estilizado de ATP se transformando em ADP ao lado. Painel 4 rotulado 'PINOCITOSE': a membrana se curvando e envolvendo uma gotícula de líquido extracelular, formando uma vesícula fechada dentro da célula. Legendas em português abaixo de cada painel. Cores suaves e diferenciadas por painel, alto contraste, sem elementos fotorrealistas, sem marcas comerciais."
+    }
+  ],
   "conexoes": {
-    "prerequisitos": [],
-    "futuras": [],
-    "laterais": []
+    "prerequisitos": [
+      {
+        "bloco_id": "s4-farma1-01-002",
+        "titulo": "Absorção — Atravessar Barreiras Biológicas (Visão Geral)",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre": 4,
+        "relevancia": "base_necessaria",
+        "explicacao": "Este bloco detalha o primeiro dos três ângulos anunciados na visão geral da absorção: por qual rota física a molécula atravessa a membrana. É preciso já ter situado a absorção como o problema de atravessar uma barreira biológica antes de entrar no detalhe dos mecanismos."
+      },
+      {
+        "bloco_id": "s1-hist-02-001",
+        "titulo": "Tecido Epitelial — Visão Geral",
+        "disciplina": "histologia",
+        "semestre": 1,
+        "relevancia": "contexto_util",
+        "explicacao": "A bicamada lipídica e a polaridade apico-basal da célula epitelial, vistas em Histologia, são a estrutura física concreta sobre a qual os quatro mecanismos de transporte aqui descritos efetivamente acontecem."
+      }
+    ],
+    "futuras": [
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-01-002-02",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Ionização, pKa e a equação de Henderson-Hasselbalch",
+        "mecanismo_conexao": "A difusão passiva, descrita aqui como a rota física de travessia, só ocorre de fato quando a molécula está na forma neutra e lipossolúvel — condição que depende do equilíbrio entre pH do meio e pKa do fármaco, detalhado no bloco irmão.",
+        "confianca": "confirmada"
+      },
+      {
+        "tipo": "MECANISMO_COMPARTILHADO",
+        "bloco_id_destino": "s4-farma1-01-003",
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Distribuição do fármaco pelos compartimentos corporais",
+        "mecanismo_conexao": "Os mesmos quatro mecanismos de transporte reaparecem quando o fármaco, já absorvido, precisa atravessar novas membranas para se distribuir aos tecidos — incluindo barreiras especializadas como a barreira hematoencefálica.",
+        "confianca": "hipotese_pedagogica"
+      },
+      {
+        "tipo": "ALVO_TERAPEUTICO",
+        "bloco_id_destino": null,
+        "disciplina": "Farmacologia I — Princípios Gerais",
+        "semestre_futuro": 4,
+        "topico": "Interações medicamentosas por competição em transportadores",
+        "mecanismo_conexao": "Fármacos que compartilham o mesmo carreador de difusão facilitada ou transporte ativo podem competir entre si, reduzindo a absorção ou a eliminação um do outro — mecanismo direto de interações farmacocinéticas clinicamente relevantes.",
+        "confianca": "hipotese_pedagogica"
+      }
+    ],
+    "laterais": [
+      {
+        "bloco_id": "s4-farma1-01-002-02",
+        "tipo_relacao": "COMPLEMENTAR",
+        "explicacao": "Este bloco explica COMO a molécula atravessa fisicamente a membrana (a rota); o bloco irmão sobre ionização explica SE, quimicamente, a molécula está apta a usar a rota de difusão passiva naquele pH específico. São duas metades do mesmo evento de absorção."
+      }
+    ]
   },
-  "flashcards": [],
-  "casos_clinicos": [],
+  "flashcards": [
+    {
+      "card_id": "s4-farma1-01-002-01-fc01",
+      "pergunta": "Por que a difusão passiva não é saturável, enquanto a difusão facilitada e o transporte ativo são?",
+      "resposta": "Porque a difusão passiva depende apenas da solubilidade lipídica da molécula e do gradiente de concentração — não existe um número finito de 'vagas' físicas a serem ocupadas, então a velocidade de travessia aumenta continuamente com o gradiente (dentro dos limites físicos da membrana). Já a difusão facilitada e o transporte ativo dependem de um número limitado de proteínas carreadoras específicas na membrana: quando todas estão ocupadas transportando moléculas, a velocidade máxima é atingida e novas moléculas precisam esperar, mesmo que o gradiente de concentração continue alto. Esse platô de velocidade é a marca registrada de qualquer transporte mediado por carreador.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["farma1", "transporte-membrana", "saturabilidade"]
+    },
+    {
+      "card_id": "s4-farma1-01-002-01-fc02",
+      "pergunta": "Um fármaco precisa se mover de um compartimento de baixa concentração para um de alta concentração. Que tipo de mecanismo de transporte, necessariamente, ele precisa usar, e por quê?",
+      "resposta": "Necessariamente transporte ativo. Mover uma molécula contra o próprio gradiente de concentração nunca é um processo espontâneo — exige gasto de energia para vencer a tendência natural de equilíbrio das concentrações. Nem a difusão passiva nem a difusão facilitada conseguem fazer isso, porque ambas dependem do próprio gradiente como força motriz; sem gradiente favorável, elas simplesmente não têm 'combustível' para mover a molécula naquela direção. Só o transporte ativo, gastando ATP direta ou indiretamente, consegue empurrar a molécula contra a corrente.",
+      "tipo": "mecanismo",
+      "dificuldade": 2,
+      "nivel_alvo": 3,
+      "tags": ["farma1", "transporte-ativo", "gradiente-concentracao"]
+    },
+    {
+      "card_id": "s4-farma1-01-002-01-fc03",
+      "pergunta": "Se a proteína carreadora usada por um fármaco para absorção por difusão facilitada fosse completamente inibida por outro fármaco competidor, o que aconteceria com a absorção do primeiro fármaco, mesmo mantendo intacto o gradiente de concentração favorável?",
+      "resposta": "A absorção cairia drasticamente ou cessaria, apesar do gradiente continuar favorável. Isso porque a difusão facilitada depende inteiramente da proteína carreadora para atravessar a membrana — sem ela disponível (bloqueada por competição ou inibição), a molécula não consegue se dissolver sozinha na bicamada lipídica (é hidrofílica demais para isso, essa é justamente a razão de precisar de carreador). O gradiente de concentração continua existindo, mas fica sem 'veículo' para ser convertido em movimento real através da membrana. Isso ilustra por que interações medicamentosas por competição em transportadores são clinicamente relevantes, mesmo sem qualquer alteração na dose administrada.",
+      "tipo": "contrafactual",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["farma1", "difusao-facilitada", "interacao-medicamentosa"]
+    },
+    {
+      "card_id": "s4-farma1-01-002-01-fc04",
+      "pergunta": "Verdadeiro ou falso e justifique: 'Transporte ativo e transporte mediado por carreador são sinônimos, então difusão facilitada também deveria ser chamada de transporte ativo.'",
+      "resposta": "Falso. 'Transporte mediado por carreador' é a categoria mais ampla — inclui tanto a difusão facilitada quanto o transporte ativo, porque ambos usam proteínas carreadoras específicas. Mas o critério que separa os dois é o gasto de energia e a direção do movimento: a difusão facilitada usa carreador, mas se move a favor do gradiente de concentração e não gasta ATP; o transporte ativo usa carreador e se move contra o gradiente, exigindo gasto de energia direto ou indireto. Chamar a difusão facilitada de 'transporte ativo' ignora justamente o critério que dá nome à categoria — a presença ou ausência de gasto energético contra a corrente.",
+      "tipo": "armadilha",
+      "dificuldade": 3,
+      "nivel_alvo": 4,
+      "tags": ["farma1", "difusao-facilitada", "transporte-ativo", "armadilha-conceitual"]
+    }
+  ],
+  "casos_clinicos": [
+    {
+      "caso_id": "s4-farma1-01-002-01-caso01",
+      "titulo": "Sinais de intoxicação digitálica dias após início de um novo antiarrítmico",
+      "apresentacao": "Mulher de 70 anos, em uso crônico e estável de digoxina para fibrilação atrial, inicia amiodarona para controle de uma arritmia recorrente. Uma semana depois, procura atendimento com náuseas, mal-estar e visão com halos amarelados ao redor de luzes. O eletrocardiograma mostra extrassístoles ventriculares. O nível sérico de digoxina está acima da faixa terapêutica, apesar de a dose diária não ter sido alterada.",
+      "cascata": [
+        {
+          "etapa": "Causa",
+          "descricao": "A introdução da amiodarona, um inibidor conhecido da glicoproteína-P (P-gp), um transportador de membrana que normalmente expulsa a digoxina de volta para o lúmen intestinal e para o túbulo renal."
+        },
+        {
+          "etapa": "Estrutura Afetada",
+          "descricao": "A P-gp é uma proteína transportadora de membrana que realiza transporte ativo — usa energia para mover a digoxina contra o que seria seu acúmulo, restringindo sua absorção intestinal e acelerando sua excreção renal e biliar. A amiodarona ocupa e inibe essa mesma proteína carreadora."
+        },
+        {
+          "etapa": "Disfunção",
+          "descricao": "Com a P-gp inibida, uma fração maior da digoxina absorvida no intestino deixa de ser devolvida ao lúmen, e uma fração menor é excretada pelos túbulos renais. O resultado líquido é que mais digoxina entra e menos sai do organismo, mesmo com a dose administrada inalterada."
+        },
+        {
+          "etapa": "Sintoma",
+          "descricao": "Náuseas, mal-estar, alteração visual (xantopsia) e extrassístoles ventriculares são sinais clássicos de acúmulo de digoxina além da faixa terapêutica — o mesmo padrão de toxicidade que ocorreria se a dose tivesse sido aumentada diretamente."
+        },
+        {
+          "etapa": "Consequência",
+          "descricao": "Sem reconhecimento da interação, o acúmulo pode progredir para arritmias ventriculares graves. A conduta é reduzir a dose de digoxina (tipicamente à metade) ao iniciar amiodarona, ou trocar de antiarrítmico, além de monitorar o nível sérico de digoxina nas semanas seguintes à mudança de esquema terapêutico."
+        }
+      ],
+      "conexao_com_bloco": "O caso mostra, na prática clínica, exatamente a lógica descrita no bloco: quando duas moléculas competem pelo mesmo transportador de membrana — aqui, a P-glicoproteína, um transportador ativo saturável e sujeito a competição —, uma pode alterar drasticamente a disposição da outra, mesmo sem qualquer mudança na dose administrada. É uma interação farmacocinética por competição em transportador, prevista pela tabela comparativa de saturabilidade e competição do bloco.",
+      "disciplinas_relacionadas": [
+        "farmacologia",
+        "cardiologia",
+        "clinica_medica"
+      ],
+      "diagnostico_revelado": "Intoxicação digitálica por interação farmacocinética com amiodarona via inibição da glicoproteína-P.",
+      "tratamento_resumido": "Redução da dose de digoxina (comumente em cerca de 50%) ao associar amiodarona, monitorização do nível sérico de digoxina e do eletrocardiograma, e ajuste individualizado conforme resposta clínica."
+    }
+  ],
   "midia": {
-    "imagens": [],
+    "imagens": [
+      {
+        "id": "s4-farma1-01-002-01-img01",
+        "url": null,
+        "prompt_ia": "Ver prompt_ia no bloco narrativa.tipo=imagem acima.",
+        "status": "pendente"
+      }
+    ],
     "videos": [],
     "audios": []
   },
   "horizonte_validade": "estavel",
-  "estado_ciclo_vida": "rascunho",
-  "nivel_aceitacao": "minimo_viavel",
   "procedencia": {
-    "gerado_por": "mapa-blueprint-s4",
-    "data_geracao": "2026-07-01",
+    "gerado_por": "individual-anima-s4",
+    "data_geracao": "2026-07-05",
     "revisado_por": null,
     "data_revisao": null,
-    "nivel_confianca": "rascunho"
+    "nivel_confianca": "estudo"
   },
-  "fontes": [],
-  "_lentes": [
-    "molecular",
-    "mecanismo"
-  ]
+  "fontes": [
+    {
+      "tipo": "livro",
+      "citacao": "Brunton LL, Knollmann BC (eds). Goodman & Gilman's The Pharmacological Basis of Therapeutics. 14th ed. McGraw-Hill; 2023. Capítulo 5 — Pharmacokinetics: The Dynamics of Drug Absorption, Distribution, Metabolism, and Elimination.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology. 15th ed. McGraw-Hill; 2021. Capítulo 1 — Introduction: The Nature of Drugs and Drug Development.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    },
+    {
+      "tipo": "livro",
+      "citacao": "Rang HP, Ritter JM, Flower RJ, Henderson G. Rang and Dale's Pharmacology. 9th ed. Elsevier; 2019. Capítulo 8 — Absorption and Distribution of Drugs.",
+      "forca_evidencia": "A",
+      "data_acesso": "2026-07-05"
+    }
+  ],
+  "estado_ciclo_vida": "rascunho",
+  "nivel_aceitacao": "completo"
 }
