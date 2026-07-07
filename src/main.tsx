@@ -43,9 +43,18 @@ function pintarBoot() {
     '</div></div>'
 }
 
+function aguardarComTeto<T>(promessa: Promise<T>, tetoMs: number): Promise<T | 'timeout'> {
+  return Promise.race([
+    promessa,
+    new Promise<'timeout'>((resolve) => setTimeout(() => resolve('timeout'), tetoMs)),
+  ])
+}
+
 void (async () => {
   // Warm start (banco já povoado): pinta IMEDIATO e sincroniza em background.
-  // Cold start (banco vazio): espera só a 1ª ingestão, para não pintar um app sem conteúdo.
+  // Cold start (banco vazio): espera a 1ª ingestão, para não pintar um app sem conteúdo —
+  // mas nunca trava para sempre: erro ou demora excessiva ainda libera a tela (o app é
+  // reativo via useLiveQuery, então o conteúdo aparece assim que a ingestão termina).
   const jaTemDados = await db.blocos.count().catch(() => 0)
   if (jaTemDados > 0) {
     render()
@@ -54,7 +63,11 @@ void (async () => {
     else setTimeout(despertar, 1)
   } else {
     pintarBoot()
-    await bootstrap()
+    try {
+      await aguardarComTeto(bootstrap(), 20000)
+    } catch (e) {
+      void registrarEvento('boot_falhou', { motivo: String(e) })
+    }
     render()
   }
   registrarSW()
