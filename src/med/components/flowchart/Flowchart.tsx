@@ -12,10 +12,10 @@ interface Props {
   idsRealcados?: Set<string> | null
 }
 
-const LARGURA_NO = 156
-const ALTURA_NO = 56
-const GAP_X = 40
-const GAP_Y = 72
+const LARGURA_NO = 240
+const ALTURA_NO = 76
+const GAP_X = 90
+const GAP_Y = 28
 const MARGEM = 60
 
 const COR_STATUS: Record<string, { borda: string; opac: number }> = {
@@ -30,14 +30,14 @@ function centro(no: NoArvore) {
   return { cx: no.x + LARGURA_NO / 2, cy: no.y + ALTURA_NO / 2 }
 }
 
-// caminho ortogonal (PCB) do pai para o filho
+// caminho ortogonal (PCB) do pai para o filho — flui da esquerda para a direita
 function trilha(pai: NoArvore, filho: NoArvore): string {
   const p = centro(pai)
   const f = centro(filho)
-  const y1 = pai.y + ALTURA_NO // sai da base do pai
-  const y2 = filho.y // entra no topo do filho
-  const meio = (y1 + y2) / 2
-  return `M ${p.cx},${y1} L ${p.cx},${meio} L ${f.cx},${meio} L ${f.cx},${y2}`
+  const x1 = pai.x + LARGURA_NO // sai da lateral direita do pai
+  const x2 = filho.x // entra na lateral esquerda do filho
+  const meio = (x1 + x2) / 2
+  return `M ${x1},${p.cy} L ${meio},${p.cy} L ${meio},${f.cy} L ${x2},${f.cy}`
 }
 
 export function Flowchart({
@@ -170,10 +170,10 @@ export function Flowchart({
                 opacity={a.ativa ? 0.9 : 0.4}
                 filter={a.ativa ? 'url(#fcGlow)' : undefined}
               />
-              {/* pad na base do pai */}
+              {/* pad na lateral direita do pai */}
               <circle
-                cx={centro(a.pai).cx}
-                cy={a.pai.y + ALTURA_NO}
+                cx={a.pai.x + LARGURA_NO}
+                cy={centro(a.pai).cy}
                 r={a.ativa ? 4 : 3}
                 fill="var(--color-bg-base)"
                 stroke={a.ativa ? 'var(--color-accent)' : 'var(--color-border-accent)'}
@@ -269,18 +269,38 @@ export function Flowchart({
                   </g>
                 )}
 
-                {/* texto */}
-                <text
-                  textAnchor="middle"
-                  y={4}
-                  style={{
-                    font: `600 11.5px 'Inter', system-ui, sans-serif`,
-                    fill: fantasma ? 'var(--color-text-muted)' : 'var(--color-text-primary)',
-                    pointerEvents: 'none',
-                  }}
+                {/* texto — quebra de linha real via foreignObject, sem truncar título */}
+                <foreignObject
+                  x={-LARGURA_NO / 2 + 10}
+                  y={-ALTURA_NO / 2}
+                  width={LARGURA_NO - 20}
+                  height={ALTURA_NO}
+                  style={{ pointerEvents: 'none' }}
                 >
-                  {truncar(no.titulo, 26)}
-                </text>
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      height: '100%',
+                      textAlign: 'center',
+                    }}
+                  >
+                    <span
+                      style={{
+                        font: `600 13px 'Inter', system-ui, sans-serif`,
+                        lineHeight: 1.25,
+                        color: fantasma ? 'var(--color-text-muted)' : 'var(--color-text-primary)',
+                        display: '-webkit-box',
+                        WebkitLineClamp: 3,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                      }}
+                    >
+                      {no.titulo}
+                    </span>
+                  </div>
+                </foreignObject>
               </g>
             )
           })}
@@ -288,8 +308,4 @@ export function Flowchart({
       </svg>
     </div>
   )
-}
-
-function truncar(s: string, n: number): string {
-  return s.length > n ? s.slice(0, n - 1) + '…' : s
 }

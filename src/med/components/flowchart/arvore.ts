@@ -69,8 +69,12 @@ export interface LayoutResultado {
 }
 
 /**
- * Layout tidy-tree simples: folhas recebem x sequencial; pais centram sobre os filhos.
- * y = profundidade. Suporta floresta (várias raízes lado a lado).
+ * Layout tidy-tree horizontal: profundidade = coluna (x), folhas recebem y
+ * sequencial e pais centram sobre os filhos (y). Árvores da ANIMA tendem a ser
+ * rasas e largas (poucos ramos, muitas folhas) — colunas por profundidade
+ * evitam a explosão horizontal que um layout de cima-pra-baixo sofreria;
+ * o crescimento vai para a altura (scroll vertical), mais natural de navegar.
+ * Suporta floresta (várias raízes empilhadas).
  */
 export function calcularLayout(raizes: NoArvore[], cfg: LayoutConfig): LayoutResultado {
   let cursorFolha = 0
@@ -78,15 +82,15 @@ export function calcularLayout(raizes: NoArvore[], cfg: LayoutConfig): LayoutRes
 
   function posicionar(no: NoArvore): void {
     maxProf = Math.max(maxProf, no.profundidade)
-    no.y = no.profundidade * (cfg.alturaNo + cfg.gapY)
+    no.x = no.profundidade * (cfg.larguraNo + cfg.gapX)
     if (no.filhos.length === 0) {
-      no.x = cursorFolha * (cfg.larguraNo + cfg.gapX)
+      no.y = cursorFolha * (cfg.alturaNo + cfg.gapY)
       cursorFolha++
     } else {
       for (const f of no.filhos) posicionar(f)
       const primeiro = no.filhos[0]
       const ultimo = no.filhos[no.filhos.length - 1]
-      no.x = (primeiro.x + ultimo.x) / 2
+      no.y = (primeiro.y + ultimo.y) / 2
     }
   }
 
@@ -103,10 +107,10 @@ export function calcularLayout(raizes: NoArvore[], cfg: LayoutConfig): LayoutRes
   }
   raizes.forEach(coletar)
 
-  const maxX = Math.max(0, ...todos.map((n) => n.x)) + cfg.larguraNo
-  const altura = (maxProf + 1) * cfg.alturaNo + maxProf * cfg.gapY
+  const maxY = Math.max(0, ...todos.map((n) => n.y)) + cfg.alturaNo
+  const largura = (maxProf + 1) * cfg.larguraNo + maxProf * cfg.gapX
 
-  return { nos: todos, largura: maxX, altura }
+  return { nos: todos, largura, altura: maxY }
 }
 
 /** Achata a floresta numa lista de nós (para iterar). */
