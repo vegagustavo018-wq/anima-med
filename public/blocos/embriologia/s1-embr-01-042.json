@@ -13,7 +13,7 @@
       "desenvolvimento-embrionario"
     ],
     "status": "completo",
-    "data_ultima_revisao": "2026-07-06"
+    "data_ultima_revisao": "2026-07-08"
   },
   "resumo_conciso": "No início da segunda semana, a massa celular interna do blastocisto — até então um aglomerado relativamente homogêneo de células pluripotentes — se reorganiza em dois folhetos empilhados: o epiblasto e o hipoblasto, formando o disco embrionário bilaminar. Essa não é apenas mais uma divisão celular: é o primeiro momento em que o embrião ganha um 'topo' e um 'fundo' reconhecíveis, um eixo de orientação sem o qual nenhum plano corporal poderia se organizar depois. O epiblasto, voltado para a futura cavidade amniótica, reserva o potencial de originar todo o corpo do feto; o hipoblasto, voltado para a cavidade blastocística, assume papel de sinalização e suporte extraembrionário. A arquitetura de duas camadas empilhadas, e não uma massa uniforme, é o que permite que sinais químicos se propaguem de forma direcional pelo disco — condição indispensável para a gastrulação que vem a seguir.",
   "narrativa": [
@@ -77,6 +77,51 @@
       "explicacao": "Espelha exatamente a lógica do epiblasto: o nome indica apenas a posição ventral, abaixo, voltada para a cavidade do blastocisto. É um par de nomes que descreve geografia, não destino biológico — reforçando que a nomenclatura embriológica clássica nasceu da observação posicional antes da compreensão funcional completa."
     },
     {
+      "tipo": "secao",
+      "titulo": "Mas, no nível molecular, como uma célula 'sabe' se vai virar epiblasto ou hipoblasto?"
+    },
+    {
+      "tipo": "texto",
+      "conteudo": "A resposta simplificada — 'depende da posição' — é verdadeira, mas esconde uma etapa fascinante e bem mais caótica do que a imagem final de duas camadas perfeitamente empilhadas sugere. Antes de existir qualquer organização espacial, o embrioblasto passa por uma fase de indecisão molecular generalizada, onde a decisão é tomada célula a célula, de forma quase aleatória, e só depois é corrigida por comunicação química."
+    },
+    {
+      "tipo": "passo_a_passo",
+      "titulo": "Do caos genético à camada organizada: o mecanismo real por trás do disco bilaminar",
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "O padrão 'Sal e Pimenta'",
+          "explicacao": "Antes de qualquer camada se formar, as células do embrioblasto ativam genes diferentes de forma embaralhada, sem nenhum padrão espacial visível: algumas ligam o gene Nanog (que vai marcar o futuro epiblasto), outras ligam o gene Gata6 (que vai marcar o futuro hipoblasto). O resultado, ao microscópio, é literalmente um mosaico — como grãos de sal e pimenta misturados na mesma tigela — e não duas regiões distintas."
+        },
+        {
+          "numero": 2,
+          "titulo": "O maestro químico: FGF",
+          "explicacao": "As células que ligaram Nanog começam a secretar FGF (Fator de Crescimento de Fibroblastos) para o ambiente ao redor. As células que ligaram Gata6 são altamente sensíveis a esse sinal: para elas, o contato com FGF funciona como uma ordem direta de deslocamento."
+        },
+        {
+          "numero": 3,
+          "titulo": "A migração dirigida",
+          "explicacao": "Obedecendo ao comando do FGF, as células Gata6+ começam a escorregar por entre as vizinhas, migrando ativamente até se alinharem na borda do embrioblasto voltada para a blastocele — a cavidade preenchida por líquido. O contato direto com esse fluido, nessa borda, reforça e confirma a decisão química já em curso: um verdadeiro gatilho geográfico que consolida o destino celular."
+        },
+        {
+          "numero": 4,
+          "titulo": "A segregação final",
+          "explicacao": "O que começou como um mosaico aleatório de sal e pimenta se resolve em duas camadas nitidamente separadas: todo o 'sal' (Gata6) termina embaixo, formando o hipoblasto; toda a 'pimenta' (Nanog) permanece em cima, formando o epiblasto. É dessa reorganização — não de um plano espacial predeterminado — que nasce o primeiro eixo de orientação do corpo humano."
+        }
+      ]
+    },
+    {
+      "tipo": "etimologia",
+      "termo": "Nanog",
+      "origem": "mitologia irlandesa — Tír na nÓg",
+      "significado": "'terra da eterna juventude'",
+      "explicacao": "O gene que marca as futuras células do epiblasto foi batizado em homenagem à lenda irlandesa de uma terra onde ninguém envelhece. A referência é direta: enquanto o Nanog permanece ativo, a célula se mantém pluripotente, 'eternamente jovem', sem se comprometer com nenhum destino de tecido definitivo — um raro caso de nome embriológico que vem da mitologia, não do grego ou do latim."
+    },
+    {
+      "tipo": "highlight",
+      "conteudo": "A lição mais importante desse mecanismo não é decorar os nomes Nanog e Gata6, mas entender o princípio: a ordem visível do disco bilaminar emerge de um processo inicialmente caótico e reversível, corrigido por comunicação química entre células vizinhas — não de um plano espacial imposto desde o início."
+    },
+    {
       "tipo": "imagem",
       "titulo": "Esquema do disco bilaminar",
       "descricao": "Corte transversal do blastocisto implantado mostrando a camada superior de células colunares altas (epiblasto), voltada para a cavidade amniótica em formação, e a camada inferior de células cuboides (hipoblasto), voltada para a cavidade blastocística (futuro saco vitelino primário).",
@@ -134,6 +179,15 @@
       "dificuldade": 2,
       "nivel_alvo": 3,
       "tags": ["etimologia", "epiblasto", "hipoblasto"]
+    },
+    {
+      "card_id": "s1-embr-01-042-fc07",
+      "tipo": "mecanismo",
+      "pergunta": "Antes de se organizarem em camadas, como as células do embrioblasto expressam os genes Nanog e Gata6, e qual sinal resolve essa desordem inicial em epiblasto e hipoblasto?",
+      "resposta": "Inicialmente, as células expressam Nanog e Gata6 de forma embaralhada e sem padrão espacial — o chamado padrão 'sal e pimenta'. As células Nanog+ secretam FGF (Fator de Crescimento de Fibroblastos), que atua como sinal de migração sobre as células Gata6+, sensíveis a esse fator. Sob esse comando, as células Gata6+ migram até se alinharem na borda voltada para a blastocele, reforçadas pelo contato direto com o líquido dessa cavidade. O resultado é a segregação completa: Gata6 forma o hipoblasto (embaixo), Nanog forma o epiblasto (em cima).",
+      "dificuldade": 4,
+      "nivel_alvo": 5,
+      "tags": ["nanog", "gata6", "fgf", "mecanismo-molecular"]
     },
     {
       "card_id": "s1-embr-01-042-fc06",
