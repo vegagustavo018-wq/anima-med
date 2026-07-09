@@ -1,12 +1,14 @@
 import { db, getMeta, setMeta } from './database'
 
-// Alinhado à versão do Dexie (database.ts) — antes estava em 3 (defasado),
-// o que tornava o campo enganoso. É a versão de FORMA do payload de backup.
-const SCHEMA_VERSION = 5
+// Alinhado à versão do Dexie (database.ts). Deve SEMPRE acompanhar db.version(N):
+// v6 adicionou as tabelas de streak. É a versão de FORMA do payload de backup.
+const SCHEMA_VERSION = 6
 
 // Tabelas de DADOS DO ALUNO (sagrados). NÃO inclui `blocos`/`meta` (acervo/infra)
 // nem `eventos` (telemetria local, não autoral). Antes só progresso+duvidas eram
 // salvos — o resto se perdia silenciosamente num reset ou troca de aparelho.
+// v6: sessoesEstudo/diasEstudo/streakAtual — o histórico de ritmo e o RECORDE de
+// streak são irrecuperáveis; ficar de fora do backup era perda de dado silenciosa.
 const TABELAS_ALUNO = [
   'progresso',
   'duvidas',
@@ -17,16 +19,21 @@ const TABELAS_ALUNO = [
   'provas',
   'sinteses',
   'progressoQuestao',
+  'sessoesEstudo',
+  'diasEstudo',
+  'streakAtual',
 ] as const
 
 // Tabelas com PK auto-incremento (++id): no import, o id do backup NÃO é
 // confiável (colide com ids locais). Estas são inseridas sem id + dedup.
+// `streakAtual` também é ++id mas é SINGLETON — tratado à parte (merge por recorde).
 const TABELAS_INCREMENTAIS = new Set<string>([
   'duvidas',
   'checkins',
   'descobertas',
   'provas',
   'sinteses',
+  'sessoesEstudo',
 ])
 
 // Epoch em ms de uma data ISO; 0 se ausente/inválida (comparação numérica robusta).
@@ -145,6 +152,40 @@ export async function importarProgresso(json: unknown): Promise<ResultadoImport>
             })
           if (novos.length) await db.table(nome).bulkAdd(novos)
           restaurados += novos.length
+        } else if (nome === 'diasEstudo') {
+          // cache agregado por dia (chave=data). Merge por MAIOR atividade: nunca
+          // regride um dia local com mais estudo ao importar um backup mais pobre.
+          const locais = new Map(
+            (await db.table('diasEstudo').toArray()).map((d) => [
+              (d as { data: string }).data,
+              (d as { tempo_total_minutos?: number }).tempo_total_minutos ?? 0,
+            ])
+          )
+          const aGravar = (linhas as Record<string, unknown>[]).filter((d) => {
+            const localMin = locais.get((d as { data: string }).data)
+            return localMin === undefined || ((d as { tempo_total_minutos?: number }).tempo_total_minutos ?? 0) >= localMin
+          })
+          if (aGravar.length) await db.table('diasEstudo').bulkPut(aGravar)
+          restaurados += aGravar.length
+        } else if (nome === 'streakAtual') {
+          // SINGLETON (++id). Nunca perder o RECORDE histórico; adotar o estado
+          // atual mais recente (por ultima_sessao_data) e recorde = max(local, backup).
+          const bkp = linhas[linhas.length - 1] as Record<string, unknown> | undefined
+          if (!bkp) continue
+          const locaisArr = await db.table('streakAtual').toArray()
+          const local = locaisArr[0] as Record<string, unknown> | undefined
+          const recordeMax = Math.max(
+            Number((local?.recorde as number) ?? 0),
+            Number((bkp.recorde as number) ?? 0)
+          )
+          const base = tsEpoch(bkp.ultima_sessao_data as string) >= tsEpoch(local?.ultima_sessao_data as string)
+            ? bkp
+            : (local ?? bkp)
+          const { id: _bkpId, ...campos } = base
+          const merged: Record<string, unknown> = { ...campos, recorde: recordeMax }
+          if (local?.id !== undefined) merged.id = local.id // preserva a PK local do singleton
+          await db.table('streakAtual').put(merged)
+          restaurados += 1
         } else {
           // chave natural (diarios=data, sessaoConfig=chave): sobrescrever é o merge correto
           await db.table(nome).bulkPut(linhas)
