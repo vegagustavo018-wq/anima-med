@@ -5,8 +5,13 @@ import { type Qualidade } from '@core/srs/sm2'
 import { montarFilaEstudo } from '@core/anima/fila'
 import { useProgressoStore } from '@core/store/progressoStore'
 import { useSessaoConfigStore, PRESETS } from '@core/store/sessaoConfigStore'
-import { Pagina, FalaAnima, EstadoVazio } from '@core/components/ui/primitivos'
+import { useUIStore } from '@core/store/uiStore'
+import { Pagina, FalaAnima, EstadoVazio, BotaoCTA } from '@core/components/ui/primitivos'
 import { filaVazia, fimDeSessao, acertoDificil } from '@core/anima/voz'
+import { calcularEstado, contarLeeches } from '@core/anima/estado'
+import { detectarLacunas } from '@core/anima/lacunas'
+import { AnimaAtmosphere } from '@core/components/ui/AnimaAtmosphere'
+import { IconeNav } from '@med/components/navigation/icones'
 import type { BlocoConteudo, PresetSessao } from '@core/types/schema'
 
 type Fase = 'intro' | 'confianca' | 'produzir' | 'revelado' | 'fim'
@@ -25,6 +30,7 @@ const QUALIDADES: { q: Qualidade; label: string; cor: string }[] = [
 
 export function EstudarPage() {
   const navigate = useNavigate()
+  const { reduzirMovimento } = useUIStore()
   const { revisarBloco } = useProgressoStore()
   const { config, carregar: carregarConfigSessao, aplicarPreset } = useSessaoConfigStore()
   const [todos, setTodos] = useState<BlocoConteudo[] | null>(null)
@@ -35,6 +41,9 @@ export function EstudarPage() {
   const [producao, setProducao] = useState('')
   const [revisados, setRevisados] = useState(0)
   const [flashAnima, setFlashAnima] = useState<string | null>(null)
+  const [blocosDominados, setBlocosDominados] = useState(0)
+  const [leeches, setLeeches] = useState(0)
+  const [lacunas, setLacunas] = useState(0)
 
   useEffect(() => {
     ;(async () => {
@@ -47,6 +56,9 @@ export function EstudarPage() {
       setTodos(blocos)
     })()
     carregarConfigSessao()
+    calcularEstado().then((e) => setBlocosDominados(e.blocosDominados))
+    contarLeeches().then(setLeeches)
+    detectarLacunas().then((l) => setLacunas(l.length))
   }, [carregarConfigSessao])
 
   if (todos === null) return <Pagina largura={720}><p style={{ color: 'var(--color-text-muted)' }}>Montando a fila...</p></Pagina>
@@ -63,60 +75,233 @@ export function EstudarPage() {
       </Pagina>
     )
 
-  // ── Intro: escolher tamanho da sessão (micro-sessão de resgate) ──
+  // ── Intro: central de revisão (fila real + modos + memória ativa) ──
   if (fase === 'intro') {
     const teto = config?.teto_cards_dia
     const listaComTeto = teto ? todos.slice(0, teto) : todos
     return (
-      <Pagina largura={720}>
-        <div style={{ paddingTop: 40, textAlign: 'center' }}>
-          <div style={{ fontSize: 40, marginBottom: 20, color: 'var(--color-accent)' }}>⬡</div>
-          <p style={{ fontSize: 18, color: 'var(--color-text-primary)', marginBottom: 8 }}>
-            {todos.length} {todos.length === 1 ? 'bloco vencido' : 'blocos vencidos'}
-          </p>
-          <p style={{ fontSize: 14, color: 'var(--color-text-muted)', marginBottom: 24 }}>
-            Sem pressa. Até uma dose pequena mantém a corrente.
-          </p>
+      <Pagina largura={880}>
+        <div style={{ position: 'relative' }}>
+          <AnimaAtmosphere reduzirMovimento={reduzirMovimento} densidade="media" />
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            {/* Header */}
+            <div style={{ marginBottom: 24, paddingTop: 8 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 10, flexWrap: 'wrap' }}>
+                <h1
+                  style={{
+                    margin: 0,
+                    fontSize: 'clamp(24px, 3vw, 30px)',
+                    fontWeight: 700,
+                    letterSpacing: '-0.01em',
+                    color: 'var(--color-text-primary)',
+                  }}
+                >
+                  Revisão inteligente
+                </h1>
+                <span
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 6,
+                    padding: '4px 11px',
+                    borderRadius: 99,
+                    border: '1px solid var(--color-border-accent)',
+                    background: 'var(--color-accent-glow)',
+                    color: 'var(--color-accent)',
+                    fontSize: 11.5,
+                    fontWeight: 700,
+                  }}
+                >
+                  <IconeNav nome="revisar" tamanho={12} />
+                  {todos.length} {todos.length === 1 ? 'bloco vencido' : 'blocos vencidos'}
+                </span>
+              </div>
+              <p style={{ margin: 0, fontSize: 14.5, color: 'var(--color-text-secondary)', maxWidth: 520 }}>
+                A ANIMA organiza o que precisa voltar para a sua memória.
+              </p>
+            </div>
 
-          <div style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 28 }}>
-            {(Object.keys(PRESETS) as PresetSessao[]).map((p) => (
-              <button
-                key={p}
-                onClick={() => aplicarPreset(p)}
-                title={PRESETS[p].descricao}
+            {/* Card principal — Revisar agora */}
+            <div
+              style={{
+                position: 'relative',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: 28,
+                padding: '32px 36px',
+                borderRadius: 'var(--radius-xl)',
+                overflow: 'hidden',
+                marginBottom: 22,
+                background:
+                  'linear-gradient(135deg, color-mix(in srgb, var(--color-accent) 12%, var(--color-bg-card)) 0%, var(--color-bg-card) 40%, var(--color-bg-elevated) 100%)',
+                backdropFilter: 'blur(24px) saturate(140%)',
+                WebkitBackdropFilter: 'blur(24px) saturate(140%)',
+                border: '1px solid var(--color-border-accent)',
+                boxShadow: 'var(--shadow-card)',
+              }}
+            >
+              <div
+                aria-hidden="true"
                 style={{
-                  padding: '5px 12px',
-                  borderRadius: 99,
-                  border: `1px solid ${config?.preset === p ? 'var(--color-accent)' : 'var(--color-border)'}`,
-                  background: config?.preset === p ? 'var(--color-accent-glow)' : 'transparent',
-                  color: config?.preset === p ? 'var(--color-accent)' : 'var(--color-text-muted)',
-                  fontSize: 11,
-                  fontWeight: 600,
+                  position: 'absolute',
+                  top: '-40%',
+                  right: '-6%',
+                  width: 340,
+                  height: 340,
+                  background: 'radial-gradient(circle, var(--color-accent-glow) 0%, transparent 62%)',
+                  filter: 'blur(8px)',
+                  pointerEvents: 'none',
+                }}
+              />
+              <div style={{ position: 'relative', zIndex: 1, flex: 1, minWidth: 0 }}>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: 11,
+                    fontWeight: 700,
+                    letterSpacing: '0.14em',
+                    textTransform: 'uppercase',
+                    color: 'var(--color-accent)',
+                  }}
+                >
+                  Revisar agora
+                </p>
+                <p
+                  style={{
+                    margin: '12px 0 20px',
+                    fontSize: 14,
+                    color: 'var(--color-text-secondary)',
+                    lineHeight: 1.6,
+                    fontFamily: 'var(--font-serif)',
+                    maxWidth: 420,
+                  }}
+                >
+                  Sem pressa. Uma dose pequena mantém a corrente.
+                </p>
+                <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+                  <BotaoCTA onClick={() => iniciar(listaComTeto)}>
+                    Revisar {teto && teto < todos.length ? `até o teto (${teto})` : `tudo (${todos.length})`} →
+                  </BotaoCTA>
+                  {todos.length > 3 && (
+                    <button onClick={() => iniciar(todos.slice(0, 3))} className="anima-chip">
+                      Só 5 min (3)
+                    </button>
+                  )}
+                </div>
+              </div>
+              <CurvaEsquecimento reduzirMovimento={reduzirMovimento} />
+            </div>
+
+            {/* Modos de sessão — cards com descrição real (PRESETS) */}
+            <p style={rotuloSecao}>Modos de sessão</p>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))',
+                gap: 10,
+                marginBottom: 26,
+              }}
+            >
+              {(Object.keys(PRESETS) as PresetSessao[]).map((p) => {
+                const ativo = config?.preset === p
+                return (
+                  <button
+                    key={p}
+                    onClick={() => aplicarPreset(p)}
+                    style={{
+                      textAlign: 'left',
+                      padding: '13px 14px',
+                      borderRadius: 'var(--radius-lg)',
+                      border: `1px solid ${ativo ? 'var(--color-accent)' : 'var(--border-soft)'}`,
+                      background: ativo ? 'var(--color-accent-glow)' : 'var(--panel)',
+                      boxShadow: ativo ? 'var(--shadow-glow)' : 'none',
+                      cursor: 'pointer',
+                      transition: 'border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease',
+                    }}
+                  >
+                    <p style={{ margin: '0 0 4px', fontSize: 13, fontWeight: 700, color: ativo ? 'var(--color-accent)' : 'var(--color-text-primary)' }}>
+                      {PRESETS[p].label}
+                    </p>
+                    <p style={{ margin: 0, fontSize: 11.5, color: 'var(--color-text-muted)', lineHeight: 1.4 }}>
+                      {PRESETS[p].descricao}
+                    </p>
+                  </button>
+                )
+              })}
+            </div>
+
+            {/* Fila de revisão + Memória ativa */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 14 }}>
+              <button
+                onClick={() => navigate('/leech')}
+                style={{
+                  textAlign: 'left',
+                  padding: 18,
+                  borderRadius: 'var(--radius-lg)',
+                  border: '1px solid var(--border-soft)',
+                  background: 'var(--panel)',
+                  boxShadow: 'var(--shadow-card)',
                   cursor: 'pointer',
+                  transition: 'border-color 0.18s ease, transform 0.18s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--color-border-accent)'
+                  e.currentTarget.style.transform = 'translateY(-2px)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--border-soft)'
+                  e.currentTarget.style.transform = 'translateY(0)'
                 }}
               >
-                {PRESETS[p].label}
+                <p style={{ margin: '0 0 10px', fontSize: 12.5, fontWeight: 700, color: 'var(--color-text-primary)' }}>
+                  Fila de revisão
+                </p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <span
+                    aria-hidden="true"
+                    style={{
+                      width: 32,
+                      height: 32,
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      background: leeches > 0 ? 'color-mix(in srgb, var(--color-warning) 16%, transparent)' : 'var(--color-accent-glow)',
+                      color: leeches > 0 ? 'var(--color-warning)' : 'var(--color-accent)',
+                      flexShrink: 0,
+                    }}
+                  >
+                    <IconeNav nome="leech" tamanho={14} />
+                  </span>
+                  <div>
+                    <p style={{ margin: 0, fontSize: 18, fontWeight: 700, color: 'var(--color-text-primary)' }}>{leeches}</p>
+                    <p style={{ margin: 0, fontSize: 11, color: 'var(--color-text-muted)' }}>
+                      na enfermaria de sanguessugas
+                    </p>
+                  </div>
+                </div>
               </button>
-            ))}
-          </div>
 
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button onClick={() => iniciar(listaComTeto)} style={botaoPrimario}>
-              Revisar {teto && teto < todos.length ? `até o teto (${teto})` : `tudo (${todos.length})`}
-            </button>
-            {todos.length > 3 && (
-              <button onClick={() => iniciar(todos.slice(0, 3))} style={botaoSecundario}>
-                Só 5 min (3)
-              </button>
-            )}
+              <div
+                style={{
+                  padding: 18,
+                  borderRadius: 'var(--radius-lg)',
+                  border: '1px solid var(--border-soft)',
+                  background: 'var(--panel)',
+                  boxShadow: 'var(--shadow-card)',
+                }}
+              >
+                <p style={{ margin: '0 0 12px', fontSize: 12.5, fontWeight: 700, color: 'var(--color-text-primary)' }}>
+                  Memória ativa
+                </p>
+                <div style={{ display: 'flex', gap: 18 }}>
+                  <MiniMetrica valor={blocosDominados} rotulo="em domínio" />
+                  <MiniMetrica valor={lacunas} rotulo="lacunas" cor={lacunas > 0 ? 'var(--color-warning)' : undefined} />
+                </div>
+              </div>
+            </div>
           </div>
-
-          <button
-            onClick={() => navigate('/leech')}
-            style={{ marginTop: 24, background: 'none', border: 'none', color: 'var(--color-text-muted)', fontSize: 12, cursor: 'pointer', textDecoration: 'underline' }}
-          >
-            Ver enfermaria de sanguessugas
-          </button>
         </div>
       </Pagina>
     )
@@ -278,6 +463,84 @@ export function EstudarPage() {
         </div>
       )}
     </Pagina>
+  )
+}
+
+const rotuloSecao: React.CSSProperties = {
+  fontSize: 11,
+  fontWeight: 700,
+  letterSpacing: '0.11em',
+  textTransform: 'uppercase',
+  color: 'var(--color-text-muted)',
+  margin: '0 0 12px',
+}
+
+function MiniMetrica({ valor, rotulo, cor }: { valor: number; rotulo: string; cor?: string }) {
+  return (
+    <div>
+      <p style={{ margin: 0, fontSize: 22, fontWeight: 700, color: cor ?? 'var(--color-accent)', fontFamily: 'var(--font-mono)', lineHeight: 1 }}>
+        {valor}
+      </p>
+      <p style={{ margin: '4px 0 0', fontSize: 11, color: 'var(--color-text-muted)' }}>{rotulo}</p>
+    </div>
+  )
+}
+
+/**
+ * Curva de esquecimento — decoração SVG do card "Revisar agora": uma queda
+ * suave (memória sem reforço) interrompida por um degrau ascendente (o
+ * reforço que a revisão espaçada aplica). Puramente ilustrativo.
+ */
+function CurvaEsquecimento({ reduzirMovimento }: { reduzirMovimento: boolean }) {
+  return (
+    <svg
+      width={150}
+      height={110}
+      viewBox="0 0 150 110"
+      style={{ position: 'relative', zIndex: 1, flexShrink: 0 }}
+      aria-hidden="true"
+    >
+      <defs>
+        <linearGradient id="curvaFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="var(--color-accent)" stopOpacity="0.32" />
+          <stop offset="100%" stopColor="var(--color-accent)" stopOpacity="0" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M4 20 C 30 24, 46 46, 52 68 L 52 30 C 66 26, 78 34, 86 52 C 96 74, 112 84, 146 88"
+        fill="none"
+        stroke="var(--color-border-accent)"
+        strokeWidth={1.2}
+        strokeDasharray="2 3"
+        opacity={0.5}
+      />
+      <path
+        d="M4 20 C 30 24, 46 46, 52 68 L 52 30 C 66 26, 78 34, 86 52 C 96 74, 112 84, 146 88 L 146 108 L 4 108 Z"
+        fill="url(#curvaFill)"
+        stroke="none"
+      />
+      <path
+        d="M4 20 C 30 24, 46 46, 52 68"
+        fill="none"
+        stroke="var(--color-text-faint)"
+        strokeWidth={1.6}
+        strokeLinecap="round"
+      />
+      <path
+        d="M52 30 C 66 26, 78 34, 86 52 C 96 74, 112 84, 146 88"
+        fill="none"
+        stroke="var(--color-accent)"
+        strokeWidth={1.8}
+        strokeLinecap="round"
+        style={reduzirMovimento ? undefined : { filter: 'drop-shadow(0 0 4px var(--color-accent-glow))' }}
+      />
+      {/* Ponto de reforço — onde a revisão intercepta o esquecimento */}
+      <circle cx={52} cy={30} r={3.4} fill="var(--color-accent)">
+        {!reduzirMovimento && (
+          <animate attributeName="r" values="3.4;5;3.4" dur="2.4s" repeatCount="indefinite" />
+        )}
+      </circle>
+    </svg>
   )
 }
 

@@ -13,9 +13,9 @@ function pct(zonas: ZonaCorpo[], id: ZonaId): number {
 
 function corPorPercentual(p: number): { cor: string; opac: number } {
   if (p === 0) return { cor: '#3a4a63', opac: 0.35 }
-  if (p < 30) return { cor: '#2c7a7b', opac: 0.5 }
-  if (p < 70) return { cor: '#4fd1c5', opac: 0.75 }
-  return { cor: '#4fd1c5', opac: 1 }
+  if (p < 30) return { cor: 'var(--color-accent-dim)', opac: 0.5 }
+  if (p < 70) return { cor: 'var(--color-accent)', opac: 0.75 }
+  return { cor: 'var(--color-accent)', opac: 1 }
 }
 
 /**
@@ -47,8 +47,8 @@ export function CorpoIluminado({ zonas, reduzirMovimento, zonaFoco, onZonaClick 
     <svg viewBox="0 0 320 520" width="100%" height="100%" style={{ maxWidth: 340, margin: '0 auto', display: 'block' }} role="img" aria-label="Corpo bioluminescente — domínio por sistema">
       <defs>
         <radialGradient id="auraGrad" cx="50%" cy="42%" r="60%">
-          <stop offset="0%" stopColor="#4fd1c5" stopOpacity={0.05 + (auraPct / 100) * 0.15} />
-          <stop offset="100%" stopColor="#4fd1c5" stopOpacity="0" />
+          <stop offset="0%" stopColor="var(--color-accent)" stopOpacity={0.05 + (auraPct / 100) * 0.15} />
+          <stop offset="100%" stopColor="var(--color-accent)" stopOpacity="0" />
         </radialGradient>
         <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
           <feGaussianBlur stdDeviation="4" result="b" />

@@ -5,6 +5,7 @@ import type { NivelDominio } from '@core/types/schema'
 export type Tema = 'escuro' | 'claro' | 'oled' | 'sepia'
 export type FonteLeitura = 'padrao' | 'dislexia' | 'serifada'
 export type PaletaCor = 'padrao' | 'protanopia' | 'deuteranopia' | 'tritanopia' | 'alto-contraste'
+export type CorAcento = 'padrao' | 'rosa' | 'vermelho' | 'verde' | 'roxo' | 'laranja'
 export type PerfilSessao = 'pico' | 'manutencao' | 'exausto' | 'padrao'
 
 interface UIState {
@@ -28,6 +29,7 @@ interface UIState {
   tamanhoFonte: number // multiplicador 0.85–1.4
   larguraColuna: 'estreita' | 'normal' | 'larga'
   paleta: PaletaCor
+  corAcento: CorAcento
   perfilSessao: PerfilSessao
 
   setTema: (t: Tema) => void
@@ -42,6 +44,7 @@ interface UIState {
   setTamanhoFonte: (n: number) => void
   setLarguraColuna: (l: 'estreita' | 'normal' | 'larga') => void
   setPaleta: (p: PaletaCor) => void
+  setCorAcento: (c: CorAcento) => void
   setPerfilSessao: (p: PerfilSessao) => void
 }
 
@@ -61,6 +64,7 @@ export const useUIStore = create<UIState>()(
       tamanhoFonte: 1,
       larguraColuna: 'normal',
       paleta: 'padrao',
+      corAcento: 'padrao',
       perfilSessao: 'padrao',
 
       setTema: (tema) => set({ tema }),
@@ -76,6 +80,7 @@ export const useUIStore = create<UIState>()(
       setTamanhoFonte: (tamanhoFonte) => set({ tamanhoFonte }),
       setLarguraColuna: (larguraColuna) => set({ larguraColuna }),
       setPaleta: (paleta) => set({ paleta }),
+      setCorAcento: (corAcento) => set({ corAcento }),
       setPerfilSessao: (perfilSessao) => set({ perfilSessao }),
     }),
     {
@@ -93,6 +98,7 @@ export const useUIStore = create<UIState>()(
         tamanhoFonte: s.tamanhoFonte,
         larguraColuna: s.larguraColuna,
         paleta: s.paleta,
+        corAcento: s.corAcento,
         perfilSessao: s.perfilSessao,
       }),
     }

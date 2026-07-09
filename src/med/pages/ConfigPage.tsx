@@ -25,6 +25,8 @@ export function ConfigPage() {
     setLarguraColuna,
     paleta,
     setPaleta,
+    corAcento,
+    setCorAcento,
     perfilSessao,
     setPerfilSessao,
   } = useUIStore()
@@ -132,6 +134,41 @@ export function ConfigPage() {
               >
                 {t.l}
               </button>
+            ))}
+          </div>
+        </Linha>
+        <Linha rotulo="Cor de acento" desc="A cor que acende o organismo — independe do tema claro/escuro.">
+          <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+            {(
+              [
+                { v: 'padrao', l: 'Padrão', cor: 'var(--color-accent)' },
+                { v: 'rosa', l: 'Rosa', cor: '#e0568f' },
+                { v: 'vermelho', l: 'Vermelho', cor: '#e0524f' },
+                { v: 'verde', l: 'Verde', cor: '#3fae6f' },
+                { v: 'roxo', l: 'Roxo', cor: '#8f6fe0' },
+                { v: 'laranja', l: 'Laranja', cor: '#dd8c33' },
+              ] as const
+            ).map((c) => (
+              <button
+                key={c.v}
+                onClick={() => {
+                  setCorAcento(c.v)
+                  tocar('transicao')
+                }}
+                title={c.l}
+                aria-label={c.l}
+                aria-pressed={corAcento === c.v}
+                style={{
+                  width: 26,
+                  height: 26,
+                  borderRadius: '50%',
+                  background: c.cor,
+                  border: `2px solid ${corAcento === c.v ? 'var(--color-text-primary)' : 'transparent'}`,
+                  outlineOffset: 2,
+                  cursor: 'pointer',
+                  padding: 0,
+                }}
+              />
             ))}
           </div>
         </Linha>

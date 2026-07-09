@@ -123,3 +123,35 @@ export function achatar(raizes: NoArvore[]): NoArvore[] {
   raizes.forEach(rec)
   return out
 }
+
+/**
+ * Extrai só a subárvore enraizada em raizId (o próprio nó + todos os descendentes),
+ * usando os mesmos ponteiros no_pai_id que montarArvore já usa. Usado para escopar
+ * o fluxograma a uma única seção em vez do módulo inteiro.
+ */
+export function extrairSubarvore(previews: BlocoPreview[], raizId: string): BlocoPreview[] {
+  const porId = new Map<string, BlocoPreview>()
+  for (const p of previews) porId.set(p.resumo_id, p)
+
+  const filhosDe = new Map<string, string[]>()
+  for (const p of previews) {
+    const pai = p.no_pai_id
+    if (pai && porId.has(pai)) {
+      if (!filhosDe.has(pai)) filhosDe.set(pai, [])
+      filhosDe.get(pai)!.push(p.resumo_id)
+    }
+  }
+
+  const raiz = porId.get(raizId)
+  if (!raiz) return []
+
+  const coletados: BlocoPreview[] = []
+  const fila = [raizId]
+  while (fila.length) {
+    const id = fila.shift()!
+    const p = porId.get(id)
+    if (p) coletados.push(p)
+    for (const filhoId of filhosDe.get(id) ?? []) fila.push(filhoId)
+  }
+  return coletados
+}

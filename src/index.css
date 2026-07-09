@@ -1,27 +1,28 @@
 @import "tailwindcss";
 
-/* ── Deep Ocean Palette ─────────────────────────────────────── */
+/* ── Deep Ocean Palette — navy quase preto + teal bioluminescente ── */
 :root {
   /* Fundos */
-  --color-bg-base:       #0a0e1a;
-  --color-bg-elevated:   #111827;
-  --color-bg-card:       #1a2234;
-  --color-bg-hover:      #1e2a40;
+  --color-bg-base:       #050814;
+  --color-bg-elevated:   #0a1120;
+  --color-bg-card:       #0e1a2c;
+  --color-bg-hover:      #142438;
 
   /* Texto */
-  --color-text-primary:  #e8edf5;
-  --color-text-secondary:#9aa8c2;
-  --color-text-muted:    #7d8ca8; /* ~5:1 sobre o fundo base — passa WCAG AA (antes #4a5568 = 2.6:1) */
-  --color-text-faint:    #5a6885; /* só decorativo/não-informativo */
+  --color-text-primary:  #f4f7fb;
+  --color-text-secondary:#9aa8bc;
+  --color-text-muted:    #8191a9; /* ≥5:1 sobre o fundo base — passa WCAG AA */
+  --color-text-faint:    #66758b; /* só decorativo/não-informativo */
 
   /* Acento — bioluminescência */
-  --color-accent:        #4fd1c5;
-  --color-accent-dim:    #2c7a7b;
-  --color-accent-glow:   rgba(79, 209, 197, 0.15);
+  --color-accent:        #5eead4;
+  --color-accent-strong: #22d3ee; /* ciano vivo — só em gradientes/pontas de brilho */
+  --color-accent-dim:    #14a09a;
+  --color-accent-glow:   rgba(94, 234, 212, 0.15);
 
   /* Semântica */
   --color-success:       #68d391;
-  --color-warning:       #f6ad55;
+  --color-warning:       #fbbf24;
   --color-danger:        #fc8181;
   --color-info:          #63b3ed;
 
@@ -34,9 +35,9 @@
   --color-disc-farmaco:     #63b3ed;
   --color-disc-clinica:     #76e4f7;
 
-  /* Bordas */
-  --color-border:        #1e2a40;
-  --color-border-accent: #2c7a7b;
+  /* Bordas — teal muito sutil, translúcido (vidro sobre vidro) */
+  --color-border:        rgba(96, 245, 230, 0.14);
+  --color-border-accent: rgba(96, 245, 230, 0.38);
 
   /* Tipografia */
   --font-sans:    'Inter', system-ui, sans-serif;
@@ -48,6 +49,27 @@
   --radius-md:   8px;
   --radius-lg:   12px;
   --radius-xl:   16px;
+  --radius-2xl:  24px;
+
+  /* Superfícies (glass) — derivadas de --color-bg-*, nunca hex fixo, pra
+     acompanhar tema claro/oled/sépia/cor-de-acento automaticamente. */
+  --panel:        color-mix(in srgb, var(--color-bg-card) 76%, transparent);
+  --panel-strong: color-mix(in srgb, var(--color-bg-elevated) 94%, transparent);
+  --panel-soft:   color-mix(in srgb, white 3.5%, transparent);
+
+  /* Borda NEUTRA — padrão de repouso em elementos secundários (chips, botões
+     de rotina, itens de lista). O teal (--color-border/-accent) fica
+     reservado para hover/seleção/destaque — é isso que evita "borda verde
+     em tudo", que era o maior sintoma de "parece dashboard genérico". */
+  --border-soft: color-mix(in srgb, var(--color-text-faint) 22%, transparent);
+
+  --glow: color-mix(in srgb, var(--color-accent) 20%, transparent);
+  --accent-deep: var(--color-accent-dim);
+
+  --shadow-card: 0 16px 46px rgba(0,0,0,.40), 0 2px 10px rgba(0,0,0,.26), inset 0 1px 0 rgba(255,255,255,.05);
+  --shadow-card-hover: 0 26px 64px rgba(0,0,0,.46), 0 0 30px var(--glow), inset 0 1px 0 rgba(255,255,255,.08);
+  --shadow-glow: 0 0 34px var(--glow);
+  --inner-highlight: inset 0 1px 0 rgba(255,255,255,.07), inset 0 -1px 0 rgba(0,0,0,.22);
 }
 
 /* ── Reset & Base ───────────────────────────────────────────── */
@@ -76,11 +98,11 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(64% 54% at 8% 4%,   rgba(79, 209, 197, 0.30), transparent 60%),
-    radial-gradient(60% 52% at 96% 94%, rgba(159, 122, 234, 0.26), transparent 58%),
-    radial-gradient(54% 46% at 88% 6%,  rgba(99, 179, 237, 0.20), transparent 58%),
-    radial-gradient(58% 50% at 4% 96%,  rgba(104, 211, 145, 0.16), transparent 58%),
-    radial-gradient(46% 40% at 52% 42%, rgba(79, 209, 197, 0.12), transparent 66%);
+    radial-gradient(64% 54% at 8% 4%,   rgba(94, 234, 212, 0.20), transparent 60%),
+    radial-gradient(60% 52% at 96% 94%, rgba(139, 108, 224, 0.16), transparent 58%),
+    radial-gradient(54% 46% at 88% 6%,  rgba(34, 211, 238, 0.13), transparent 58%),
+    radial-gradient(58% 50% at 4% 96%,  rgba(45, 172, 150, 0.10), transparent 58%),
+    radial-gradient(46% 40% at 52% 42%, rgba(94, 234, 212, 0.07), transparent 66%);
 }
 /* O conteúdo do app fica acima da luz ambiente */
 #root { position: relative; z-index: 1; }
@@ -177,45 +199,6 @@ html[data-fonte="serifada"] body {
   font-family: var(--font-serif);
 }
 
-/* ── Bloco 10 — Paletas de acessibilidade ────────────────────── */
-html[data-paleta="protanopia"] {
-  --color-accent: #4d96e0;
-  --color-accent-dim: #2c5a8a;
-  --color-accent-glow: rgba(77, 150, 224, 0.18);
-  --color-success: #4d96e0;
-  --color-danger: #e0a63f;
-  --color-warning: #e0c93f;
-}
-html[data-paleta="deuteranopia"] {
-  --color-accent: #4fb8d6;
-  --color-accent-dim: #2c7488;
-  --color-accent-glow: rgba(79, 184, 214, 0.18);
-  --color-success: #4fb8d6;
-  --color-danger: #d68f3f;
-  --color-warning: #d6c23f;
-}
-html[data-paleta="tritanopia"] {
-  --color-accent: #e05f8f;
-  --color-accent-dim: #8a3a58;
-  --color-accent-glow: rgba(224, 95, 143, 0.18);
-  --color-success: #5fbf6f;
-  --color-danger: #e05f5f;
-  --color-warning: #e0965f;
-}
-html[data-paleta="alto-contraste"] {
-  --color-bg-base: #000000;
-  --color-bg-elevated: #0a0a0a;
-  --color-bg-card: #141414;
-  --color-bg-hover: #1f1f1f;
-  --color-text-primary: #ffffff;
-  --color-text-secondary: #e0e0e0;
-  --color-text-muted: #a0a0a0;
-  --color-accent: #00f5d4;
-  --color-accent-dim: #00b8a0;
-  --color-border: #4a4a4a;
-  --color-border-accent: #00b8a0;
-}
-
 /* ── Bloco 10 — Largura de coluna ─────────────────────────────── */
 html[data-largura="estreita"] .narrativa { max-width: 52ch; margin: 0 auto; }
 html[data-largura="larga"] .narrativa { max-width: 90ch; }
@@ -225,22 +208,66 @@ html[data-largura="larga"] .narrativa { max-width: 90ch; }
    Vidro translúcido que deixa a bioluminescência do fundo vazar por trás.
    ══════════════════════════════════════════════════════════════ */
 .anima-glass {
-  background: rgba(26, 34, 52, 0.55);
+  background: rgba(12, 23, 38, 0.72);
   -webkit-backdrop-filter: blur(16px) saturate(125%);
   backdrop-filter: blur(16px) saturate(125%);
-  border: 1px solid rgba(140, 160, 190, 0.12);
+  border: 1px solid var(--color-border);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 .anima-glass-forte {
-  background: rgba(17, 24, 39, 0.62);
+  background: rgba(14, 28, 46, 0.92);
   -webkit-backdrop-filter: blur(22px) saturate(130%);
   backdrop-filter: blur(22px) saturate(130%);
-  border: 1px solid rgba(140, 160, 190, 0.14);
+  border: 1px solid var(--color-border);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 /* Navegadores sem backdrop-filter: cai para superfície sólida (nunca vira vidro invisível) */
 @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
   .anima-glass, .anima-glass-forte { background: var(--color-bg-card); }
+}
+
+/* ── Texturas biotech (inspiradas no protótipo do AI Studio, portadas para os
+   tokens --color-*/--glow — nada de hex fixo, acompanham tema/cor de acento) ── */
+.anima-textura-neural {
+  background-image:
+    radial-gradient(color-mix(in srgb, var(--color-accent) 10%, transparent) 1px, transparent 1px),
+    radial-gradient(color-mix(in srgb, var(--color-accent-strong) 6%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+.anima-scanline {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    color-mix(in srgb, var(--color-accent) 6%, transparent) 50%,
+    transparent 100%
+  );
+  background-size: 100% 200%;
+  animation: animaVarredura 14s linear infinite;
+  pointer-events: none;
+}
+.anima-fagulha {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 10px var(--color-accent), 0 0 20px var(--glow);
+  animation: animaFagulha 8s ease-in-out infinite;
+}
+/* Hover "bio" — micro-elevação + escala + glow, easing do AI Studio. Aplicável
+   a botões/cards por className sem tocar no estilo inline de cada um. */
+.anima-bio-hover { transition: transform 0.2s cubic-bezier(0.16,1,0.3,1), box-shadow 0.2s cubic-bezier(0.16,1,0.3,1), border-color 0.2s ease; }
+.anima-bio-hover:hover { transform: translateY(-2px) scale(1.015); }
+.anima-bio-hover:active { transform: translateY(0) scale(0.985); }
+
+@keyframes animaVarredura { 0% { background-position: 0 0%; } 100% { background-position: 0 200%; } }
+@keyframes animaFagulha {
+  0%, 100% { opacity: 0; transform: scale(0.5) translate(0, 0); }
+  10%, 90% { opacity: 0.12; }
+  50% { opacity: 0.9; transform: scale(1.4) translate(24px, -32px); }
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -349,6 +376,315 @@ html[data-tema="sepia"] {
   --color-border: #322818;
   --color-border-accent: #8a6a35;
 }
+html[data-tema="claro"] {
+  --color-bg-base: #f6f7fb;
+  --color-bg-elevated: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-bg-hover: #edf0f7;
+
+  --color-text-primary: #1a2234;
+  --color-text-secondary: #4d5975;
+  --color-text-muted: #6d7893;
+  --color-text-faint: #9aa3ba;
+
+  /* mesmo verde-água do Deep Ocean, escurecido para manter contraste sobre fundo claro */
+  --color-accent: #0f8f83;
+  --color-accent-dim: #0b6a61;
+  --color-accent-glow: rgba(15, 143, 131, 0.14);
+
+  --color-success: #2f9e5b;
+  --color-warning: #b5760a;
+  --color-danger: #d0453f;
+  --color-info: #2b78c4;
+
+  --color-border: #dde2ee;
+  --color-border-accent: #b9c3d8;
+}
+/* Nebulosa ambiente (body::before) foi calibrada para fundo escuro — em fundo
+   claro a mesma opacidade fica "suja"; aqui ela é bem mais discreta. */
+html[data-tema="claro"] body::before {
+  background:
+    radial-gradient(64% 54% at 8% 4%,   rgba(15, 143, 131, 0.08), transparent 60%),
+    radial-gradient(60% 52% at 96% 94%, rgba(159, 122, 234, 0.07), transparent 58%),
+    radial-gradient(54% 46% at 88% 6%,  rgba(43, 120, 196, 0.06), transparent 58%),
+    radial-gradient(58% 50% at 4% 96%,  rgba(47, 158, 91, 0.05), transparent 58%);
+}
+
+/* ── Cor de acento — personalização estética, independente do tema claro/escuro.
+   Escolhida pelo usuário (Ajustes → Aparência). Cada cor é uma "pele" completa:
+   tinge fundo, cartões E acento juntos (não só um detalhe isolado) — por isso
+   cada cor tem uma variante escura (padrão, aplicada sobre o Deep Ocean) e uma
+   variante clara (aplicada junto com data-tema="claro").
+   A variante clara usa :where() em torno de [data-tema="claro"] para NÃO somar
+   especificidade — assim ela continua no mesmo patamar da variante escura, e
+   a Paleta de acessibilidade (abaixo, mais tarde no arquivo) sempre vence. ── */
+html[data-cor="rosa"] {
+  --color-accent: #e0568f;
+  --color-accent-dim: #8a3559;
+  --color-accent-glow: rgba(224, 86, 143, 0.16);
+  --color-bg-base: #170f14;
+  --color-bg-elevated: #1f131a;
+  --color-bg-card: #2a1721;
+  --color-bg-hover: #331b28;
+  --color-border: #331b28;
+  --color-border-accent: #6b2f47;
+}
+html:where([data-tema="claro"])[data-cor="rosa"] {
+  --color-accent: #c23d74;
+  --color-accent-dim: #8a3559;
+  --color-accent-glow: rgba(194, 61, 116, 0.14);
+  --color-bg-base: #fdf3f7;
+  --color-bg-elevated: #ffffff;
+  --color-bg-card: #fef9fb;
+  --color-bg-hover: #f8e7ee;
+  --color-border: #f3dce6;
+  --color-border-accent: #e3aec6;
+}
+
+html[data-cor="vermelho"] {
+  --color-accent: #e0524f;
+  --color-accent-dim: #8a332f;
+  --color-accent-glow: rgba(224, 82, 79, 0.16);
+  --color-bg-base: #170f0e;
+  --color-bg-elevated: #1f1312;
+  --color-bg-card: #2a1716;
+  --color-bg-hover: #331b1a;
+  --color-border: #331b1a;
+  --color-border-accent: #6b2f2c;
+}
+html:where([data-tema="claro"])[data-cor="vermelho"] {
+  --color-accent: #c53d3a;
+  --color-accent-dim: #8a332f;
+  --color-accent-glow: rgba(197, 61, 58, 0.14);
+  --color-bg-base: #fdf4f3;
+  --color-bg-elevated: #ffffff;
+  --color-bg-card: #fef9f9;
+  --color-bg-hover: #f8e8e7;
+  --color-border: #f3dcda;
+  --color-border-accent: #e0aca9;
+}
+
+html[data-cor="verde"] {
+  --color-accent: #3fae6f;
+  --color-accent-dim: #276b45;
+  --color-accent-glow: rgba(63, 174, 111, 0.16);
+  --color-bg-base: #0e1712;
+  --color-bg-elevated: #121f18;
+  --color-bg-card: #162a1f;
+  --color-bg-hover: #1a3326;
+  --color-border: #1a3326;
+  --color-border-accent: #2f6b47;
+}
+html:where([data-tema="claro"])[data-cor="verde"] {
+  --color-accent: #268049;
+  --color-accent-dim: #276b45;
+  --color-accent-glow: rgba(38, 128, 73, 0.14);
+  --color-bg-base: #f2faf5;
+  --color-bg-elevated: #ffffff;
+  --color-bg-card: #f8fdf9;
+  --color-bg-hover: #e7f5ec;
+  --color-border: #d9efe0;
+  --color-border-accent: #a9d6bb;
+}
+
+html[data-cor="roxo"] {
+  --color-accent: #8f6fe0;
+  --color-accent-dim: #56428a;
+  --color-accent-glow: rgba(143, 111, 224, 0.16);
+  --color-bg-base: #130f17;
+  --color-bg-elevated: #17131f;
+  --color-bg-card: #1e172a;
+  --color-bg-hover: #251b33;
+  --color-border: #251b33;
+  --color-border-accent: #4a2f6b;
+}
+html:where([data-tema="claro"])[data-cor="roxo"] {
+  --color-accent: #6f4fc2;
+  --color-accent-dim: #56428a;
+  --color-accent-glow: rgba(111, 79, 194, 0.14);
+  --color-bg-base: #f6f3fd;
+  --color-bg-elevated: #ffffff;
+  --color-bg-card: #fbf9fe;
+  --color-bg-hover: #ede7f8;
+  --color-border: #e2d9f3;
+  --color-border-accent: #c3aee3;
+}
+
+html[data-cor="laranja"] {
+  --color-accent: #dd8c33;
+  --color-accent-dim: #895820;
+  --color-accent-glow: rgba(221, 140, 51, 0.16);
+  --color-bg-base: #170f0a;
+  --color-bg-elevated: #1f150e;
+  --color-bg-card: #2a1c12;
+  --color-bg-hover: #332216;
+  --color-border: #332216;
+  --color-border-accent: #6b4520;
+}
+html:where([data-tema="claro"])[data-cor="laranja"] {
+  --color-accent: #b56a1a;
+  --color-accent-dim: #895820;
+  --color-accent-glow: rgba(181, 106, 26, 0.14);
+  --color-bg-base: #fdf6ee;
+  --color-bg-elevated: #ffffff;
+  --color-bg-card: #fefaf5;
+  --color-bg-hover: #f8ecd9;
+  --color-border: #f0e0c4;
+  --color-border-accent: #d9b072;
+}
+
+/* ── Bloco 10 — Paletas de acessibilidade (daltonismo/alto-contraste) ──────
+   Vem DEPOIS da cor de acento de propósito: se o usuário tem uma paleta de
+   acessibilidade ativa, ela deve sempre vencer a preferência estética. ── */
+html[data-paleta="protanopia"] {
+  --color-accent: #4d96e0;
+  --color-accent-dim: #2c5a8a;
+  --color-accent-glow: rgba(77, 150, 224, 0.18);
+  --color-success: #4d96e0;
+  --color-danger: #e0a63f;
+  --color-warning: #e0c93f;
+}
+html[data-paleta="deuteranopia"] {
+  --color-accent: #4fb8d6;
+  --color-accent-dim: #2c7488;
+  --color-accent-glow: rgba(79, 184, 214, 0.18);
+  --color-success: #4fb8d6;
+  --color-danger: #d68f3f;
+  --color-warning: #d6c23f;
+}
+html[data-paleta="tritanopia"] {
+  --color-accent: #e05f8f;
+  --color-accent-dim: #8a3a58;
+  --color-accent-glow: rgba(224, 95, 143, 0.18);
+  --color-success: #5fbf6f;
+  --color-danger: #e05f5f;
+  --color-warning: #e0965f;
+}
+html[data-paleta="alto-contraste"] {
+  --color-bg-base: #000000;
+  --color-bg-elevated: #0a0a0a;
+  --color-bg-card: #141414;
+  --color-bg-hover: #1f1f1f;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #a0a0a0;
+  --color-accent: #00f5d4;
+  --color-accent-dim: #00b8a0;
+  --color-border: #4a4a4a;
+  --color-border-accent: #00b8a0;
+}
+
+/* ── --color-accent-strong por pele/paleta — a "ponta viva" dos gradientes.
+   Definido em bloco único DEPOIS das peles e paletas: mesma especificidade,
+   posição posterior no arquivo = vence a herança do :root (ciano teal), e a
+   ordem interna (tema → cor → variante clara → paleta) espelha a precedência
+   das seções originais. ── */
+html[data-tema="sepia"]    { --color-accent-strong: #f0c078; }
+html[data-tema="claro"]    { --color-accent-strong: #0891b2; }
+html[data-cor="rosa"]      { --color-accent-strong: #f472b6; }
+html:where([data-tema="claro"])[data-cor="rosa"]     { --color-accent-strong: #db2777; }
+html[data-cor="vermelho"]  { --color-accent-strong: #fb7185; }
+html:where([data-tema="claro"])[data-cor="vermelho"] { --color-accent-strong: #e11d48; }
+html[data-cor="verde"]     { --color-accent-strong: #34d399; }
+html:where([data-tema="claro"])[data-cor="verde"]    { --color-accent-strong: #059669; }
+html[data-cor="roxo"]      { --color-accent-strong: #a78bfa; }
+html:where([data-tema="claro"])[data-cor="roxo"]     { --color-accent-strong: #7c3aed; }
+html[data-cor="laranja"]   { --color-accent-strong: #fbbf24; }
+html:where([data-tema="claro"])[data-cor="laranja"]  { --color-accent-strong: #d97706; }
+html[data-paleta="protanopia"]     { --color-accent-strong: #63b3ed; }
+html[data-paleta="deuteranopia"]   { --color-accent-strong: #67e8f9; }
+html[data-paleta="tritanopia"]     { --color-accent-strong: #f472b6; }
+html[data-paleta="alto-contraste"] { --color-accent-strong: #5ffbf1; }
+
+/* ── Chip de rotina (pílula de vidro com hover teal) ─────────── */
+.anima-chip {
+  padding: 7px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--color-bg-card) 55%, transparent);
+  -webkit-backdrop-filter: blur(12px) saturate(125%);
+  backdrop-filter: blur(12px) saturate(125%);
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+}
+.anima-chip:hover {
+  border-color: var(--color-border-accent);
+  color: var(--color-accent);
+  box-shadow: 0 0 14px var(--color-accent-glow);
+}
+
+/* ── Sidebar — item de navegação (hover/ativo via classe; NavLink inline não
+   consegue :hover). O indicador ativo é uma barra luminosa colada na borda
+   esquerda da sidebar, estilo Linear. ── */
+.anima-nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 1px 10px;
+  padding: 8px 11px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+}
+.anima-nav-item:hover {
+  background: color-mix(in srgb, var(--color-bg-hover) 70%, transparent);
+  color: var(--color-text-primary);
+}
+.anima-nav-item.ativo {
+  background: linear-gradient(90deg, var(--color-accent-glow) 0%, color-mix(in srgb, var(--color-accent) 5%, transparent) 55%, transparent 100%);
+  color: var(--color-accent);
+  font-weight: 600;
+  box-shadow: 0 0 20px -4px var(--color-accent-glow);
+}
+.anima-nav-item.ativo::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 22%;
+  height: 56%;
+  width: 2.5px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, var(--color-accent), var(--color-accent-strong));
+  box-shadow: 0 0 10px var(--color-accent);
+}
+.anima-nav-item .nav-icone { opacity: 0.8; transition: opacity 0.18s ease; }
+.anima-nav-item:hover .nav-icone, .anima-nav-item.ativo .nav-icone { opacity: 1; }
+
+/* ── Home premium — responsividade do hero (inline styles não fazem media query) ── */
+@media (max-width: 720px) {
+  .home-hero { padding: 26px 24px !important; }
+  .home-hero-art { display: none !important; }
+}
+
+/* Grade deliberada da Home — variação de tamanho/peso sem masonry irregular.
+   2 colunas base → 3 em telas largas → 1 no mobile. `.span-2` ocupa a linha toda
+   (base) ou 2/3 (largo); no mobile volta a 1 coluna. */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+.home-grid > .span-2 { grid-column: span 2; }
+@media (min-width: 1080px) {
+  .home-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .home-grid { grid-template-columns: 1fr; }
+  .home-grid > .span-2 { grid-column: span 1; }
+}
+
+/* Cintilação lentíssima dos pontos luminosos do fundo neural (respeitando a11y) */
+@keyframes cintilar {
+  0%, 100% { opacity: 0.18; }
+  50% { opacity: 0.55; }
+}
+html[data-reduzir-movimento="true"] .home-cintila { animation: none !important; }
 
 /* Fonte de dislexia baseada em evidência (Atkinson Hyperlegible, carregada via index.html) */
 html[data-fonte="dislexia"] body,

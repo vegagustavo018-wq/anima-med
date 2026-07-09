@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { StatusEstudo } from '@core/types/schema'
 import { calcularLayout, achatar, type NoArvore } from './arvore'
 
@@ -19,11 +19,16 @@ const GAP_Y = 28
 const MARGEM = 60
 
 const COR_STATUS: Record<string, { borda: string; opac: number }> = {
-  dominado: { borda: 'var(--color-accent)', opac: 1 },
-  revisando: { borda: 'var(--color-accent)', opac: 0.85 },
+  dominado: { borda: 'var(--color-success)', opac: 1 },
+  revisando: { borda: 'var(--color-success)', opac: 0.85 },
   aprendendo: { borda: 'var(--color-accent-dim)', opac: 0.7 },
   novo: { borda: 'var(--color-border-accent)', opac: 0.55 },
   fantasma: { borda: '#3a4a63', opac: 0.4 },
+}
+
+// já visitado ao menos uma vez → conta como "trilha percorrida" no caminho de progresso
+function percorrido(status: string): boolean {
+  return status === 'aprendendo' || status === 'revisando' || status === 'dominado'
 }
 
 function centro(no: NoArvore) {
@@ -50,6 +55,20 @@ export function Flowchart({
 }: Props) {
   const [zoom, setZoom] = useState(1)
 
+  // dispara a animação de "desenhar o caminho" logo após o primeiro render — usa
+  // useEffect puro (não requestAnimationFrame) porque rAF fica pausado em abas
+  // sem foco/visibilidade, o que travaria a trilha em abas de segundo plano.
+  const [montado, setMontado] = useState(reduzirMovimento)
+  useEffect(() => {
+    if (reduzirMovimento) {
+      setMontado(true)
+      return
+    }
+    setMontado(false)
+    const id = setTimeout(() => setMontado(true), 30)
+    return () => clearTimeout(id)
+  }, [raizes, reduzirMovimento])
+
   const layout = useMemo(
     () =>
       calcularLayout(raizes, {
@@ -64,13 +83,15 @@ export function Flowchart({
   const nos = useMemo(() => achatar(raizes), [raizes])
 
   // arestas (pai → filho)
-  const arestas: { pai: NoArvore; filho: NoArvore; ativa: boolean }[] = []
+  const arestas: { pai: NoArvore; filho: NoArvore; ativa: boolean; percorrida: boolean }[] = []
   for (const no of nos) {
     for (const filho of no.filhos) {
+      const stFilho = statusPorId[filho.id] ?? (filho.preview ? 'novo' : 'fantasma')
       arestas.push({
         pai: no,
         filho,
         ativa: no.id === atualId || filho.id === atualId,
+        percorrida: percorrido(stFilho),
       })
     }
   }
@@ -134,20 +155,20 @@ export function Flowchart({
       >
         <defs>
           <linearGradient id="fcLedAtivo" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#4fd1c5" stopOpacity="0.28" />
-            <stop offset="50%" stopColor="#2c7a7b" stopOpacity="0.4" />
-            <stop offset="100%" stopColor="#0d3536" stopOpacity="0.35" />
+            <stop offset="0%" stopColor="var(--color-accent)" stopOpacity="0.28" />
+            <stop offset="50%" stopColor="var(--color-accent-dim)" stopOpacity="0.4" />
+            <stop offset="100%" stopColor="color-mix(in srgb, var(--color-accent-dim) 55%, black)" stopOpacity="0.35" />
           </linearGradient>
           <radialGradient id="fcHalo" cx="50%" cy="50%" r="60%">
-            <stop offset="0%" stopColor="#4fd1c5" stopOpacity="0.3" />
-            <stop offset="70%" stopColor="#4fd1c5" stopOpacity="0.08" />
-            <stop offset="100%" stopColor="#4fd1c5" stopOpacity="0" />
+            <stop offset="0%" stopColor="var(--color-accent)" stopOpacity="0.3" />
+            <stop offset="70%" stopColor="var(--color-accent)" stopOpacity="0.08" />
+            <stop offset="100%" stopColor="var(--color-accent)" stopOpacity="0" />
           </radialGradient>
           <radialGradient id="fcPulso" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stopColor="#ffffff" stopOpacity="1" />
-            <stop offset="30%" stopColor="#a8ede8" stopOpacity="0.95" />
-            <stop offset="70%" stopColor="#4fd1c5" stopOpacity="0.8" />
-            <stop offset="100%" stopColor="#4fd1c5" stopOpacity="0" />
+            <stop offset="30%" stopColor="color-mix(in srgb, var(--color-accent) 45%, white)" stopOpacity="0.95" />
+            <stop offset="70%" stopColor="var(--color-accent)" stopOpacity="0.8" />
+            <stop offset="100%" stopColor="var(--color-accent)" stopOpacity="0" />
           </radialGradient>
           <filter id="fcGlow" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="2" result="b" />
@@ -160,15 +181,32 @@ export function Flowchart({
 
         <g transform={`translate(${MARGEM}, ${MARGEM})`}>
           {/* Trilhas */}
-          {arestas.map((a, i) => (
+          {arestas.map((a, i) => {
+            const corTrilha = a.ativa
+              ? 'var(--color-accent)'
+              : a.percorrida
+                ? 'var(--color-success)'
+                : 'var(--color-border-accent)'
+            return (
             <g key={i}>
               <path
                 d={trilha(a.pai, a.filho)}
                 fill="none"
-                stroke={a.ativa ? 'var(--color-accent)' : 'var(--color-border-accent)'}
-                strokeWidth={a.ativa ? 2.5 : 1.8}
-                opacity={a.ativa ? 0.9 : 0.4}
+                stroke={corTrilha}
+                strokeWidth={a.ativa ? 2.5 : a.percorrida ? 2.2 : 1.8}
+                opacity={a.ativa ? 0.9 : a.percorrida ? 0.85 : 0.35}
+                strokeDasharray={a.percorrida || a.ativa ? undefined : '3 4'}
                 filter={a.ativa ? 'url(#fcGlow)' : undefined}
+                pathLength={a.percorrida && !a.ativa ? 100 : undefined}
+                style={
+                  a.percorrida && !a.ativa
+                    ? {
+                        strokeDasharray: 100,
+                        strokeDashoffset: montado ? 0 : 100,
+                        transition: reduzirMovimento ? undefined : 'stroke-dashoffset 0.9s ease',
+                      }
+                    : undefined
+                }
               />
               {/* pad na lateral direita do pai */}
               <circle
@@ -176,8 +214,9 @@ export function Flowchart({
                 cy={centro(a.pai).cy}
                 r={a.ativa ? 4 : 3}
                 fill="var(--color-bg-base)"
-                stroke={a.ativa ? 'var(--color-accent)' : 'var(--color-border-accent)'}
+                stroke={corTrilha}
                 strokeWidth={1.5}
+                style={reduzirMovimento ? undefined : { transition: 'stroke 0.5s ease' }}
               />
               {/* pulso saltatório na aresta ativa */}
               {a.ativa && !reduzirMovimento && (
@@ -193,7 +232,8 @@ export function Flowchart({
                 </circle>
               )}
             </g>
-          ))}
+            )
+          })}
 
           {/* Nós */}
           {nos.map((no) => {
@@ -259,6 +299,7 @@ export function Flowchart({
                   strokeDasharray={fantasma || st === 'novo' ? '4 3' : undefined}
                   opacity={cor.opac}
                   filter={ativo ? 'url(#fcGlow)' : undefined}
+                  style={reduzirMovimento ? undefined : { transition: 'stroke 0.5s ease, fill 0.5s ease, opacity 0.5s ease' }}
                 />
 
                 {/* pinos laterais */}
@@ -266,6 +307,29 @@ export function Flowchart({
                   <g stroke={cor.borda} strokeWidth={1.6} opacity={cor.opac}>
                     <line x1={-LARGURA_NO / 2} y1={0} x2={-LARGURA_NO / 2 - 5} y2={0} />
                     <line x1={LARGURA_NO / 2} y1={0} x2={LARGURA_NO / 2 + 5} y2={0} />
+                  </g>
+                )}
+
+                {/* marca de concluído — canto superior direito, só em blocos dominados */}
+                {st === 'dominado' && (
+                  <g
+                    transform={`translate(${LARGURA_NO / 2 - 12}, ${-ALTURA_NO / 2 + 12})`}
+                    opacity={montado ? 1 : 0}
+                    style={
+                      reduzirMovimento
+                        ? undefined
+                        : { transition: 'opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s' }
+                    }
+                  >
+                    <circle r={8} fill="var(--color-success)" />
+                    <path
+                      d="M -3.5,0 L -1,2.5 L 3.5,-3"
+                      fill="none"
+                      stroke="var(--color-bg-base)"
+                      strokeWidth={1.6}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </g>
                 )}
 

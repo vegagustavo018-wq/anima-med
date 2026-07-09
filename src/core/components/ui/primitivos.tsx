@@ -80,35 +80,53 @@ export function Cartao({
   cor?: string
   style?: React.CSSProperties
 }) {
+  // Vidro fosco derivado dos tokens do tema ativo (nunca hex fixo) — em temas
+  // escuros fica um vidro navy/teal; no modo Claro vira um vidro claro legível,
+  // porque color-mix() sempre parte de --color-bg-card/--color-bg-elevated.
+  const GLASS_REPOUSO =
+    'linear-gradient(140deg, color-mix(in srgb, var(--color-accent) 10%, var(--color-bg-card) 90%) 0%, color-mix(in srgb, var(--color-bg-card) 90%, transparent) 42%, var(--color-bg-elevated) 100%)'
+  const GLASS_HOVER =
+    'linear-gradient(140deg, color-mix(in srgb, var(--color-accent) 16%, var(--color-bg-card) 84%) 0%, color-mix(in srgb, var(--color-bg-hover) 92%, transparent) 42%, var(--color-bg-hover) 100%)'
+
   const base: React.CSSProperties = {
     display: 'block',
     // Vidro fosco — sheen estático (não depende do backdrop-filter, que muitas
     // GPUs degradam ao vivo) + blur por cima quando o navegador consegue render.
-    background:
-      'linear-gradient(140deg, rgba(140,185,205,0.12) 0%, rgba(26,34,52,0.46) 42%, rgba(20,27,42,0.5) 100%)',
+    background: GLASS_REPOUSO,
     backdropFilter: 'blur(20px) saturate(135%)',
     WebkitBackdropFilter: 'blur(20px) saturate(135%)',
-    border: '1px solid rgba(150, 170, 200, 0.16)',
-    borderTop: cor ? `3px solid ${cor}` : '1px solid rgba(255, 255, 255, 0.10)',
+    // Longhands (não o shorthand `border`) para não conflitar com borderTop,
+    // que precisa de espessura/cor diferentes quando `cor` é passada.
+    borderLeft: '1px solid var(--color-border-accent)',
+    borderRight: '1px solid var(--color-border-accent)',
+    borderBottom: '1px solid var(--color-border-accent)',
+    borderTop: cor ? `3px solid ${cor}` : '1px solid var(--color-border-accent)',
     borderRadius: 'var(--radius-lg)',
-    boxShadow: '0 10px 36px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.09)',
-    padding: 18,
+    // Sombra em camadas (chão distante + contato próximo) + brilho interno = profundidade real
+    boxShadow: '0 12px 40px rgba(0,0,0,0.34), 0 2px 8px rgba(0,0,0,0.22), inset 0 1px 0 rgba(255,255,255,0.08)',
+    padding: 20,
     cursor: onClick || to ? 'pointer' : 'default',
     textAlign: 'left',
     textDecoration: 'none',
-    transition: 'border-color 0.18s, background 0.18s, transform 0.18s, box-shadow 0.18s',
+    transition:
+      'border-color 0.2s ease, background 0.2s ease, transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s ease',
     width: '100%',
     ...style,
   }
+  const interativo = !!(onClick || to)
   const hover = (e: React.MouseEvent<HTMLElement>, on: boolean) => {
-    e.currentTarget.style.background = on
-      ? 'linear-gradient(140deg, rgba(160,205,225,0.16) 0%, rgba(32,44,68,0.58) 42%, rgba(26,34,52,0.6) 100%)'
-      : 'linear-gradient(140deg, rgba(140,185,205,0.12) 0%, rgba(26,34,52,0.46) 42%, rgba(20,27,42,0.5) 100%)'
-    e.currentTarget.style.transform = on ? 'translateY(-2px)' : 'translateY(0)'
+    if (!interativo) return
+    e.currentTarget.style.background = on ? GLASS_HOVER : GLASS_REPOUSO
+    e.currentTarget.style.transform = on ? 'translateY(-3px)' : 'translateY(0)'
+    // No hover, todas as bordas ganham o teal do acento + glow suave
+    const borda = on ? 'var(--color-accent)' : 'var(--color-border-accent)'
+    e.currentTarget.style.borderLeftColor = borda
+    e.currentTarget.style.borderRightColor = borda
+    e.currentTarget.style.borderBottomColor = borda
+    if (!cor) e.currentTarget.style.borderTopColor = borda
     e.currentTarget.style.boxShadow = on
-      ? '0 14px 40px rgba(0,0,0,0.34), inset 0 1px 0 rgba(255,255,255,0.07)'
-      : '0 8px 32px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.05)'
-    if (cor) e.currentTarget.style.borderTopColor = cor
+      ? '0 20px 52px rgba(0,0,0,0.40), 0 0 22px var(--color-accent-glow), inset 0 1px 0 rgba(255,255,255,0.10)'
+      : '0 12px 40px rgba(0,0,0,0.34), 0 2px 8px rgba(0,0,0,0.22), inset 0 1px 0 rgba(255,255,255,0.08)'
   }
   if (to)
     return (
@@ -116,15 +134,23 @@ export function Cartao({
         {children}
       </Link>
     )
+  if (onClick)
+    return (
+      <button
+        onClick={onClick}
+        style={base}
+        onMouseEnter={(e) => hover(e, true)}
+        onMouseLeave={(e) => hover(e, false)}
+      >
+        {children}
+      </button>
+    )
+  // Sem onClick/to: não é interativo — <div>, nunca <button> (evita <button> aninhado
+  // quando o card só existe para agrupar controles próprios, como CartaoEnergia).
   return (
-    <button
-      onClick={onClick}
-      style={base}
-      onMouseEnter={(e) => hover(e, true)}
-      onMouseLeave={(e) => hover(e, false)}
-    >
+    <div style={base} onMouseEnter={(e) => hover(e, true)} onMouseLeave={(e) => hover(e, false)}>
       {children}
-    </button>
+    </div>
   )
 }
 
@@ -152,7 +178,7 @@ export function FalaAnima({ texto, grande = false }: { texto: string; grande?: b
         gap: 14,
         alignItems: 'flex-start',
         padding: grande ? '20px 24px' : '14px 18px',
-        background: 'rgba(79, 209, 197, 0.10)',
+        background: 'color-mix(in srgb, var(--color-accent) 10%, transparent)',
         backdropFilter: 'blur(14px) saturate(120%)',
         WebkitBackdropFilter: 'blur(14px) saturate(120%)',
         border: '1px solid var(--color-border-accent)',
@@ -203,6 +229,59 @@ export function Badge({ children, cor }: { children: ReactNode; cor?: string }) 
     >
       {children}
     </span>
+  )
+}
+
+// ── Botão CTA primário — sólido, cor de acento, para a ação principal de um card ──
+export function BotaoCTA({
+  children,
+  onClick,
+  to,
+  style,
+}: {
+  children: ReactNode
+  onClick?: () => void
+  to?: string
+  style?: React.CSSProperties
+}) {
+  const SOMBRA_REPOUSO =
+    '0 4px 18px var(--color-accent-glow), inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -2px 4px rgba(0,0,0,0.18)'
+  const SOMBRA_HOVER =
+    '0 10px 30px var(--color-accent-glow), 0 0 0 1px color-mix(in srgb, var(--color-accent) 40%, transparent), inset 0 1px 0 rgba(255,255,255,0.45), inset 0 -2px 4px rgba(0,0,0,0.18)'
+  const base: React.CSSProperties = {
+    position: 'relative',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 8,
+    padding: '11px 22px',
+    background: 'linear-gradient(135deg, color-mix(in srgb, var(--color-accent) 88%, white) 0%, var(--color-accent) 42%, var(--color-accent-dim) 130%)',
+    color: 'var(--color-bg-base)',
+    border: 'none',
+    borderRadius: 'var(--radius-md)',
+    fontSize: 13.5,
+    fontWeight: 700,
+    letterSpacing: '0.01em',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    boxShadow: SOMBRA_REPOUSO,
+    transition: 'transform 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s ease, filter 0.2s ease',
+    ...style,
+  }
+  const hover = (e: React.MouseEvent<HTMLElement>, on: boolean) => {
+    e.currentTarget.style.transform = on ? 'translateY(-2px)' : 'translateY(0)'
+    e.currentTarget.style.filter = on ? 'brightness(1.06)' : 'brightness(1)'
+    e.currentTarget.style.boxShadow = on ? SOMBRA_HOVER : SOMBRA_REPOUSO
+  }
+  if (to)
+    return (
+      <Link to={to} style={base} onMouseEnter={(e) => hover(e, true)} onMouseLeave={(e) => hover(e, false)}>
+        {children}
+      </Link>
+    )
+  return (
+    <button onClick={onClick} style={base} onMouseEnter={(e) => hover(e, true)} onMouseLeave={(e) => hover(e, false)}>
+      {children}
+    </button>
   )
 }
 

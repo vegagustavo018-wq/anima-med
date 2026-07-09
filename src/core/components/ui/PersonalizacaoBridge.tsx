@@ -7,7 +7,7 @@ import { useUIStore } from '@core/store/uiStore'
  * Componente sem renderização — só efeitos colaterais.
  */
 export function PersonalizacaoBridge() {
-  const { tema, fonte, paleta, larguraColuna, tamanhoFonte, reduzirMovimento } = useUIStore()
+  const { tema, fonte, paleta, corAcento, larguraColuna, tamanhoFonte, reduzirMovimento } = useUIStore()
 
   useEffect(() => {
     // 'escuro' é o padrão do :root (Deep Ocean) — sem atributo; os demais ativam overrides
@@ -22,6 +22,12 @@ export function PersonalizacaoBridge() {
   useEffect(() => {
     document.documentElement.dataset.paleta = paleta
   }, [paleta])
+
+  useEffect(() => {
+    // 'padrao' é a cor do tema ativo — sem atributo; as demais ativam overrides
+    if (corAcento === 'padrao') delete document.documentElement.dataset.cor
+    else document.documentElement.dataset.cor = corAcento
+  }, [corAcento])
 
   useEffect(() => {
     document.documentElement.dataset.largura = larguraColuna
